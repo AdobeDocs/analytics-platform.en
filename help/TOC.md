@@ -1,8 +1,8 @@
 ---
 git-repo: https://git.corp.adobe.com/adobedocs/experience-manager-cloud-service
 cloud: experience-cloud
-product: adobe experience manager
-sub-product: experience manager screens
+product: adobe analytics
+sub-product: 
 index: no
 user-guide-title: Adobe Contributor Guide
 user-guide-url: https://www.adobe.com
@@ -16,7 +16,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 
 ---
 
-# Experience Manager Screens Help {#using}
+# Customer Journey Analytics Help {#using}
 
 + [Introduction](introduction.md)
   
