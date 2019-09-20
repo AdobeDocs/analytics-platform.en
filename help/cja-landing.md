@@ -9,3 +9,4 @@ seo-description: [!UICONTROL Customer Journey Analytics] does this.
 
 This technical documentation guide provides self help assistance for [!UICONTROL Customer Journey Analytics]...
 
+Look at Audience Manager Guide for template.
