@@ -4,7 +4,7 @@ cloud: experience-cloud
 product: adobe analytics
 sub-product: 
 index: no
-user-guide-title: Adobe Contributor Guide
+user-guide-title: Customer Journey Analytics Guide
 user-guide-url: https://www.adobe.com
 solution-title: Experience Cloud
 solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
@@ -19,6 +19,8 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 # Customer Journey Analytics Help {#using}
 
 + [Customer Journey Analytics Product Documentation](cja-landing.md)
++ [Customer Journey Analytics overview](cja-overview.md)
 + [Getting Started](cja-getting-started.md)
+
 
   
