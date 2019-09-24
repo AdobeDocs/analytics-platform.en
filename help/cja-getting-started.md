@@ -7,5 +7,5 @@ seo-description: [!UICONTROL Customer Journey Analytics] Getting Started.
 
 # [!UICONTROL Customer Journey Analytics] Getting Started
 
-https://wiki.corp.adobe.com/display/ACA/Experience+Analytics+User+Guide
+
 
