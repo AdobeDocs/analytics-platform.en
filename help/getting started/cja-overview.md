@@ -12,11 +12,13 @@ seo-description: [!UICONTROL Customer Journey Analytics] overview.
 [!UICONTROL Customer Journey Analytics] lets you:
 
 * **See the customer in a journey context.** You can view and analyze data sequentially, spanning multiple channels such as call center, POS systems, and online properties and combine them into a single reporting view (Data Group).
-* **Make insights available to everyone.** Democratize data access and let more people make business decisions with data-derived insights.
+* **Make insights available to everyone.** Democratize data access and let more people make business decisions with data-derived insights. Anyone in the organization with repsonsibility for any aspect of the customer experience can make real decisions faster, based on more complete data.
 * **Harness the power of data science for your analysts.** [!UICONTROL Customer Journey Analytics] lets normal humans use data science to unlock deep insights and analysis.
 * **Visualize and interact with your datasets using ad-hoc reporting.** Workspace can import any Datasets in Platform that conform to some basic rules.
-* **View non-web data.** Because Dataset schemas can be custom, Workspace is no longer limited to a rigid definition of what a "hit" or event must be. Evars, props, uniques exceeded, and other Adobe Analytics limitations no longer apply.
-* **Exert greater control over your data manipulation.** Because ECP provides basic querying and ETL (Extract, Transform, Load) tools via Experience Cloud Query Service (EQS), you can now change data you've uploaded, create new Datasets, and then import them into Workspace.
+* **View non-web data.** Because Dataset schemas can be customized, Workspace is no longer limited to a rigid definition of what a "hit" or event must be. Evars, props, uniques exceeded, and other Adobe Analytics limitations no longer apply.
+* **Exert greater control over your data manipulation.** Because ECP provides basic querying and ETL (Extract, Transform, Load) tools via Experience Cloud Query Service (EQS), you can now change data you've uploaded, create new Datasets, and then import them into Workspace. Not needing to wait for new SQL queries to run means faster decision making and more immediate impact on your customers.
+
+![](assets/cja-capabalities.png)
 
 ## How does CJA differ from our traditional Adobe Analytics product?
 
@@ -36,7 +38,7 @@ Before you can start using [!UICONTROL Customer Journey Analytics], you need to 
 
 * Attribution IQ
 * Segmentation (now called "Filters")
-* All visualizations except Map
+* All Workspace visualizations except Map
 * Calculated Metrics
 * Project Sharing to other CJA users
 * Virtual Report Suites (now called "Views")
