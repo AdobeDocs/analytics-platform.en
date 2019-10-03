@@ -24,7 +24,6 @@ seo-description: [!UICONTROL Customer Journey Analytics] overview.
 
 |Functionality|Adobe Analytics|Customer Journey Analytics|
 |eVars, props|These variables are ...|blablabla|
-|
 
 ## Prerequisites
 
