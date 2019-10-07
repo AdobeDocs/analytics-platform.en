@@ -24,3 +24,9 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [CJA glossary](getting-started/cja-glossary.md)
     + [Frequently asked questions](getting-started/cja-faq.md)
     + [Getting Started](getting-started/cja-getting-started.md)
++ Connections {#cja-connections}
++ Projects {#cja-projects}
++ Data Views {#cja-dataviews}
++ Reporting Components {#cja-reporting}
++ Use Cases {#cja-usecases}
++ Privacy {#cja-privacy}
