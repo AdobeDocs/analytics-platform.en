@@ -18,7 +18,8 @@ Workflow:
 
 ## Step 1: Enable Adobe Experience Platform
 
-Your Experience Cloud organization must be first provisioned to work with AEP. (Add details here.)
+Your Experience Cloud organization must be first provisioned to work with the [!UICONTROL Adobe Experience Platform] (AEP). (Add details here.) The AEP is the centralized place where Adobe 
+customers can put all of *their* customer data for analysis.
 
 ## Step 2: Enable CJA
 
@@ -26,7 +27,9 @@ Not sure if this is still needed.
 
 ## Step 3: Prepare your data 
 
-Although the schema for data that can be imported into CJA is flexible, it must conform to some basic rules. It is best to make sure your data meets these requirements before uploading them into Platform.
+Data in AEP consists of data sets, such as email data sets, CRM datasets, POS data sets, the Adobe Analytics dataset, etc.. Each data sets consists of a schema and batches of data. 
+
+Although the schema for data that can be imported into CJA is flexible, it must conform to some basic rules. It is best to make sure your data meets these requirements before uploading them into AEP. 
 
 There are three types of data that are compatible with [!UICONTROL Customer Journey Analytics]:
 
