@@ -12,14 +12,13 @@ Workflow:
 1. Enable [!UICONTROL Adobe Experience Platform] (AEP).
 1. Enable CJA (is this step still needed?)
 1. Prepare your data.
-1. Create [!UICONTROL Analysis Workspace Data Group] (is this step still relevant?).
+1. Create [!UICONTROL Analysis Workspace Data Group].
 1. Upload your data into AEP datasets.
 1. Link datasets into [!UICONTROL Customer Journey Analytics] data groups.
 
 ## Step 1: Enable Adobe Experience Platform
 
-Your Experience Cloud organization must be first provisioned to work with the [!UICONTROL Adobe Experience Platform] (AEP). (Add details here.) The AEP is the centralized place where Adobe 
-customers can put all of *their* customer data for analysis.
+Your Experience Cloud organization must be first provisioned to work with the [!UICONTROL Adobe Experience Platform] (AEP). (Add details here.) The AEP is the centralized place where Adobe customers can put all of *their* customer data for analysis.
 
 ## Step 2: Enable CJA
 
