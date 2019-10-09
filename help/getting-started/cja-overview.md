@@ -8,6 +8,8 @@ seo-description: [!UICONTROL Customer Journey Analytics] overview.
 # [!UICONTROL Customer Journey Analytics] overview
 
 The wait is over! Imagine your favorite Analytics tool, Analysis Workspace, taking advantage of the power of [!UICONTROL Adobe Experience Platform] (AEP) and the myriad cross-channel datasets in it! 
+
+![](assets/cja-multi-flow.png)
  
 [!UICONTROL Customer Journey Analytics] (CJA) is a new Analytics capability that lets you use the power of Analysis Workspace for rapid insights to analyze the customer journey across channels, using any data available to you in Adobe Experience Platform (AEP). By now, you are familiar with Workspace, which allows reporting and exploration at the "speed of thought." Its ability to break down, filter, query, and visualize years' worth of data, often in seconds, is now being combined with the AEP's ability to hold all of your data with all kinds of schemas and types, coming from unique channels and sources. Using the **Experience Data Model (XDM)** (link) allows data to be uniformly represented and organized, ready for combination and exploration. **Experience Query Services (EQS)** allows you to use SQL-compatible tools and frameworks to query and manipulate all your data.
 

@@ -7,4 +7,4 @@ seo-description: Describes how to create a connection to an AEP dataset in [!UIC
 
 # Create a connection
 
-In order to do reporting on AEP datasets, you first have to establish a connection with 
+In order to report on AEP datasets, you first have to establish a connection between Workspace and the AEP.
