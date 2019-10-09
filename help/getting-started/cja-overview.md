@@ -7,7 +7,7 @@ seo-description: [!UICONTROL Customer Journey Analytics] overview.
 
 # [!UICONTROL Customer Journey Analytics] overview
 
-The wait is over! Imagine your favorite Analytics tool, Analysis Workspace, taking advantage of the power of [!UICONTROL Adobe Experience Platform] (AEP) and the myriad cross-channel datasets in it! 
+Imagine your favorite Analytics tool, Analysis Workspace, taking advantage of the power of [!UICONTROL Adobe Experience Platform] (AEP) and the myriad cross-channel datasets in it! 
 
 ![](assets/cja-multi-flow.png)
  
