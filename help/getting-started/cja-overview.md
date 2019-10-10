@@ -7,11 +7,11 @@ seo-description: [!UICONTROL Customer Journey Analytics] overview.
 
 # [!UICONTROL Customer Journey Analytics] overview
 
-Imagine your favorite Analytics tool, Analysis Workspace, taking advantage of the power of [!UICONTROL Adobe Experience Platform] (AEP) and the myriad cross-channel datasets in it! 
+Imagine your favorite Analytics tool, Analysis Workspace, taking advantage of the power of [!UICONTROL Adobe Experience Platform] and the myriad cross-channel datasets in it! 
 
 ![](assets/cja-multi-flow.png)
  
-[!UICONTROL Customer Journey Analytics] (CJA) is a new Analytics capability that lets you use the power of Analysis Workspace for rapid insights to analyze the customer journey across channels, using any data available to you in Adobe Experience Platform (AEP). By now, you are familiar with Workspace, which allows reporting and exploration at the "speed of thought." Its ability to break down, filter, query, and visualize years' worth of data, often in seconds, is now being combined with the AEP's ability to hold all of your data with all kinds of schemas and types, coming from unique channels and sources. Using the **Experience Data Model (XDM)** (link) allows data to be uniformly represented and organized, ready for combination and exploration. **Experience Query Services (EQS)** allows you to use SQL-compatible tools and frameworks to query and manipulate all your data.
+[!UICONTROL Customer Journey Analytics] (CJA) is a new Analytics capability that lets you use the power of Analysis Workspace for rapid insights to analyze the customer journey across channels, using any data available to you in Adobe Experience Platform (Platform). By now, you are familiar with Workspace, which allows reporting and exploration at the "speed of thought." Its ability to break down, filter, query, and visualize years' worth of data, often in seconds, is now being combined with Platform's ability to hold all of your data with all kinds of schemas and types, coming from unique channels and sources. Using the **Experience Data Model (XDM)** (link) allows data to be uniformly represented and organized, ready for combination and exploration. **Experience Query Services** allows you to use SQL-compatible tools and frameworks to query and manipulate all your data.
 
 ## Key use cases
 
@@ -26,9 +26,11 @@ Imagine your favorite Analytics tool, Analysis Workspace, taking advantage of th
 
 See also slide 10 in Trevor's deck.
 
+If you compare Customer Journey Analytics to BI stacks...
+
 ## Adobe Experience Platform and CJA
 
-Adobe Experience Platform (AEP) enables organizations to centralize and standardize customer data and content from any system and apply data science and machine learning to improve the design and delivery of rich, personalized experiences. For more detail on the platform, see [Adobe Experience Platform Architecture Overview](https://www.adobe.io/apis/experienceplatform/home/overview.html).
+Adobe Experience Platform lets you centralize and standardize customer data and content from any system and apply data science and machine learning to improve the design and delivery of personalized experiences. Customer data in the platform is stored as datasets,which consist of a schema and batches of data. For more detail on the platform, see [Adobe Experience Platform Architecture Overview](https://www.adobe.io/apis/experienceplatform/home/overview.html).
 
 ![](assets/cja-capabilities.png)
 
@@ -42,7 +44,7 @@ From Data Ingestion to direct SQL access, several components of the Experience P
 
 * [Identity Service](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/identity_services_architectural_overview/identity_services_architectural_overview.md):
 
-* [Data Science Workspace](https://www.adobe.io/apis/experienceplatform/home/data-science-workspace.html) in "developer" option: 
+* [Data Science Workspace](https://www.adobe.io/apis/experienceplatform/home/data-science-workspace.html) in "developer" option: you can use prebuilt artificial intelligence (AI) and machine-learning models in Adobe Experience Platform to influence various points of the customer journey. By unearthing hidden insights, you can make better predictions across the customer journey, suggest recommended best next steps, or automate cumbersome processes.
 
 ## How does CJA differ from our traditional Adobe Analytics product?
 
@@ -64,8 +66,9 @@ Do we want to include this?
 
 Before you can start using [!UICONTROL Customer Journey Analytics], you need to complete the following steps for your organization:
 
-* Available to Adobe Analytics Select, Prime, and Ultimate customers.
-* You need to enable Adobe Experience Platform (what do we link to?)
+* Make sure you are an Adobe Analytics Select, Prime, or Ultimate customers.
+* Make sure you are enabled for the Adobe Experience Platform (what do we link to?)
+* Make sure you have the Customer Journey Analytics SKU.
 
 ## Adobe Analytics features supported by [!UICONTROL Customer Journey Analytics]
 
@@ -97,9 +100,9 @@ The initial release of CJA includes many, but not all, of the features that you 
 
 ## User Access Permissions
 
-As a CJA user, you will have access to your organization's Platform datasets in AEP and CJA:
+As a CJA user, you will have access to your organization's Platform datasets in Platform and CJA:
 
 * No additional permission levels are currently needed
 * Once introduced, CJA permissions will be independent of existing Adobe Analytics permissions
-* Enabled users will be able to create or modify a connection, or add a dataset to AEP
+* Enabled users will be able to create or modify a connection, or add a dataset to Platform
 * Auto-enabling or enabled by Engineering and Customer Care?
