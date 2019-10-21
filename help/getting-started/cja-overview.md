@@ -36,6 +36,8 @@ Adobe Experience Platform lets you centralize and standardize customer data and 
 
 From Data Ingestion to direct SQL access, several components of the Experience Platform are central to CJA and act in conjunction with it:
 
+* Dataset: A platform dataset consists of a schema and rows of data that represent your customer data in the platform. For example, an email dataset schema might consist of a customer ID, email reason, validation timestamp, email opened, email sent, email delivered, validation data source, validation tracking code, etc. You can include the Adobe Analytics dataset and other Adobe solution datasets as part of your platform datasets. <!--how do they get the Adobe datasets into the platform?>
+
 * Data Lake: (This doesn't appear to be an official AEP term). [AEP Glossary](https://www.adobe.io/apis/experienceplatform/home/services/acp-glossary.html)
 
 * [Query Service](https://www.adobe.io/apis/experienceplatform/home/services/query-service/query-service.html#!end-user/markdown/query-service/qs-intro.md): Query Service lets you use standard SQL to retrieve data from Adobe Experience Platform, such as Adobe solution data, customer 1st-party data, or any other Platform data. It is a serverless tool that allows you to join any datasets in Experience Data Lake and capture the query results as a new dataset for use in reporting, Data Science Workspace, or for ingestion into Profile Service. You can use Query Service to build data analysis ecosystems, creating a picture of consumers across their various interaction channels. These channels might include Point-of-Sale systems, Web, Mobile, CRM systems, etc.
