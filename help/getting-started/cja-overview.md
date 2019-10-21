@@ -13,6 +13,53 @@ Imagine your favorite Analytics tool, Analysis Workspace, taking advantage of th
  
 [!UICONTROL Customer Journey Analytics] (CJA) is a new Analytics capability that lets you use the power of Analysis Workspace for rapid insights to analyze the customer journey across channels, using any data available to you in Adobe Experience Platform (Platform). By now, you are familiar with Workspace, which allows reporting and exploration at the "speed of thought." Its ability to break down, filter, query, and visualize years' worth of data, often in seconds, is now being combined with Platform's ability to hold all of your data with all kinds of schemas and types, coming from unique channels and sources. Using the **Experience Data Model (XDM)** (link) allows data to be uniformly represented and organized, ready for combination and exploration. **Experience Query Services** allows you to use SQL-compatible tools and frameworks to query and manipulate all your data.
 
+## What's new and different about Customer Journey Analytics?
+
+Compared with what you are used to in Adobe Analytics, a number of things are going to be different and new in CJA:
+
+* New concepts and terminology (link to terminology page)
+* New domain (analytics.adobe.com)
+* New features (see below)
+* Some features that are not supported yet (see below)
+
+CJA expands the scope of Analytics not just by offering easy-to-use cross-channel capabilities. It also removes some of the traditional limitations. The biggest practical improvements you will notice in CJA are:
+
+* Unlimited variables and events: you are no longer constrained by a maximum number of eVars, props, or events.
+* Unlimited uniques: The Adobe Analytics limit of x uniques is no longer relevant.
+* You can merge report suites without changes to re-implementation.
+* You can report on out-of-order data.
+* You can restate and fix historical data.
+* You can leverage the power of segmentation, fallout, flow, attribution, etc., on non-web datasets.
+* Some of the powerful capabilities found in Data Workbench are now available in Workspace, such as ...
+
+### Adobe Analytics features supported by [!UICONTROL Customer Journey Analytics]
+
+The initial release of CJA includes many, but not all, of the features that you are used to using in Adobe Analytics today. 
+
+* Attribution IQ
+* Segmentation (now called "Filters")
+* All Workspace visualizations except Map
+* Calculated Metrics
+* Workspace project sharing to other CJA users
+* Virtual Report Suites (now called "Views")
+* Creating new dataset connections from Platform UI and CJA UI
+* Classifications (now called "Lookup datasets")
+* Customer attributes (now called "Profile datasets") - allow onboarding of audiences from United Profile
+
+### Current limitations
+
+[!UICONTROL Customer Journey Analytics] currently does not provide support for the following Analytics features. However, we are actively working on bringing these features to you in the near future.
+
+* Segment/audience sharing to Profile or other EC solutions
+* PDF export, CSV export, scheduled reports, emailed reports
+* Marketing Channels dimensions
+* API access
+* Alerts and Intelligent Alerts
+* Report Builder
+* Anomaly Detection, Contribution Analysis
+* Segment Comparison (Segment IQ)
+* Segments, calc. metrics, date ranges, or projects that were created in the current Adobe Analytics tools
+
 ## Key use cases
 
 [!UICONTROL Customer Journey Analytics] lets you:
@@ -48,22 +95,6 @@ From Data Ingestion to direct SQL access, several components of the Experience P
 
 * [Data Science Workspace](https://www.adobe.io/apis/experienceplatform/home/data-science-workspace.html) in "developer" option: you can use prebuilt artificial intelligence (AI) and machine-learning models in Adobe Experience Platform to influence various points of the customer journey. By unearthing hidden insights, you can make better predictions across the customer journey, suggest recommended best next steps, or automate cumbersome processes.
 
-## How does CJA differ from our traditional Adobe Analytics product?
-
-CJA expands the scope of Analytics not just by offering easy-to-use cross-channel capabilities. It also removes some of the traditional limitations. The biggest practical improvements you will notice in CJA are:
-
-* Unlimited variables and events: you are no longer constrained by a maximum number of eVars, props, or events.
-* Unlimited uniques: The Adobe Analytics limit of x uniques is no longer relevant.
-* You can merge report suites without changes to re-implementation.
-* You can report on out-of-order data.
-* You can restate and fix historical data.
-* You can leverage the power of segmentation, fallout, flow, attribution, etc., on non-web datasets.
-* Some of the powerful capabilities found in Data Workbench are now available in Workspace, such as ...
-
-## Data Workbench functionality mapping
-
-Do we want to include this?
-
 ## Prerequisites
 
 Before you can start using [!UICONTROL Customer Journey Analytics], you need to complete the following steps for your organization:
@@ -71,34 +102,6 @@ Before you can start using [!UICONTROL Customer Journey Analytics], you need to 
 * Make sure you are an Adobe Analytics Select, Prime, or Ultimate customers.
 * Make sure you are enabled for the Adobe Experience Platform (what do we link to?)
 * Make sure you have the Customer Journey Analytics SKU.
-
-## Adobe Analytics features supported by [!UICONTROL Customer Journey Analytics]
-
-The initial release of CJA includes many, but not all, of the features that you are used to using in Adobe Analytics today. 
-
-* Attribution IQ
-* Segmentation (now called "Filters")
-* All Workspace visualizations except Map
-* Calculated Metrics
-* Workspace project sharing to other CJA users
-* Virtual Report Suites (now called "Views")
-* Creating new dataset connections from Platform UI and CJA UI
-* Classifications (now called "Lookup datasets")
-* Customer attributes (now called "Profile datasets") - allow onboarding of audiences from United Profile
-
-## Current limitations
-
-[!UICONTROL Customer Journey Analytics] currently does not provide support for the following features. However, we are actively working on bringing these features to you in the near future.
-
-* Segment/audience sharing to Profile or other EC solutions
-* PDF export, CSV export, scheduled reports, emailed reports
-* Marketing Channels dimensions
-* API access
-* Alerts and Intelligent Alerts
-* Report Builder
-* Anomaly Detection, Contribution Analysis
-* Segment Comparison (Segment IQ)
-* Segments, calc. metrics, date ranges, or projects that were created in the current Adobe Analytics tools
 
 ## User Access Permissions
 
