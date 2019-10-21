@@ -7,14 +7,14 @@ seo-description: [!UICONTROL Customer Journey Analytics] Getting Started.
 
 # [!UICONTROL Customer Journey Analytics] Getting Started
 
-Workflow:
+To implement Customer Journey Analytics, you need to follow this workflow:
 
 1. Enable [!UICONTROL Adobe Experience Platform] (Platform).
 1. Enable CJA (is this step still needed?)
 1. Prepare your data.
-1. Create [!UICONTROL Analysis Workspace Data Group].
-1. Upload your data into Platform datasets.
-1. Link datasets into [!UICONTROL Customer Journey Analytics] data groups.
+1. Create connections between platform datasets and Workspace.
+1. Create data views.
+1. Report on your cross-channel data in Workspace.
 
 ## Step 1: Enable Adobe Experience Platform
 
@@ -28,15 +28,13 @@ Not sure if this is still needed.
 
 Data in Platform consists of data sets, such as email data sets, CRM datasets, POS data sets, the Adobe Analytics dataset, etc.. Each data sets consists of a schema and batches of data. You can prepare your data in Platform or in CJA.
 
-Although the schema for data that can be imported into CJA is flexible, it must conform to some basic rules. It is best to make sure your data meets these requirements before uploading them into Platform. 
+Although the schema for datasets that can be imported into CJA is flexible, it must conform to some basic rules. It is best to make sure your data meets these requirements before uploading them into Platform. (Note that schema includes both metrics and dimensions.)
 
 There are three types of data that are compatible with [!UICONTROL Customer Journey Analytics]:
 
-* Event Data: Data that represents events in time (e.g., web visits, interactions, transactions, etc.).
-* Lookup Data: This data is used to lookup values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names.
-* Profile Data: Data that is applied to your visitors, users, or customers in the Event Data. For example, allows you to upload CRM data about your customers.
-
-Datasets in the ECP consist of 2 things: a schema (columns) and data fields (rows). 
+* **Event data**: Data that represents events in time (e.g., web visits, interactions, transactions, POS data, survey data, ad impression data, etc.). This is typical clickstream data, with a customer ID or a cookie ID, and a timestamp. With Event data, we allow you to use whatever ID you want.
+* **Lookup data**: This data is used to lookup values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names.
+* **Profile data**: Data that is applied to your visitors, users, or customers in the Event data. For example, allows you to upload CRM data about your customers.
 
 ### General data requirements
 
@@ -65,17 +63,20 @@ The following requirements apply to Lookup Data:
 
 * Each row must have a column that corresponds with a column in an Event Dataset. This will be the "join" column for the lookup. This column can be either a string or a number.
 
-### Profile rata requirements
+### Profile data requirements
 
-The following requirements apply to Profile Data:
+The following requirements apply to Profile data:
 
 * Each row must have a column that corresponds with the visitor or customer ID column present in one of the Event Datasets. This will be the "join" column for the profile data.
 
-## Step 4: Create Workspace data group
+## Step 4: Create connections between platform datasets and Workspace
 
-Is this still a step?
+See [Create a connection](/help/connections/create-connection.md).
 
-## Step 5: Upload data to the Platform
+## Step 5: Create data views
 
-Steps here.
+See [Create a data view](/help/data-views/create-dataview.md).
 
+## Step 6: Report on your cross-channel data in Workspace
+
+To follow.
