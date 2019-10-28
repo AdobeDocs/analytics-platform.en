@@ -43,8 +43,8 @@ A data view is similar to a virtual report suite in Analytics.
 
 ## Specify attribution settings on a data field
 
-EVars, props, and events in the traditional Adobe Analytics sense no longer exist in CJA. You have unlimited schema elements (dimensions, metrics, list fields ). All of the attribution settings that you used to apply to eVars and props during the data collection process are now applied at query time. 
+EVars, props, and events in the traditional Adobe Analytics sense no longer exist in CJA. Instead, you have unlimited schema elements (dimensions, metrics, list fields ). All of the attribution settings that you used to apply to eVars and props during the data collection process are now applied at query time. 
 
-(Take some of the Attribution IQ doc on settings etc. and put it here.)
+[Attribution IQ doc](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)]
 
 1. To specify and attribution setting, go to 
