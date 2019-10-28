@@ -7,7 +7,12 @@ seo-description: Describes how to manage connections to Platform datasets in [!U
 
 # Manage connections
 
-Once you have created one or more connections, you can manage them in the Connections Manager. You can delete a connection, rename it, or create a data view from it.
+Once you have created one or more connections, you can manage them in the Connections Manager. You can 
+
+* Delete a connection
+* Rename a connection 
+* Create a data view from a connection.
+* 
 
 ![](assets/connections-manager.png)
 
@@ -23,4 +28,4 @@ Once you have created one or more connections, you can manage them in the Connec
     |Rename|...|
     |Create Data View|...|
 
-1. You can also 
+1. You can also start or stop data streaming
