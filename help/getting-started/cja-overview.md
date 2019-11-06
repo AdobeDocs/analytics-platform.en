@@ -105,9 +105,17 @@ Before you can start using [!UICONTROL Customer Journey Analytics], you need to 
 
 ## User Access Permissions
 
-As a CJA user, you will have access to your organization's Platform datasets in Platform and CJA:
+To create connections, add datasets, etc., you need the following permissions in the [Admin Console](https://adminconsole.adobe.com/enterprise/):
 
-* No additional permission levels are currently needed
-* Once introduced, CJA permissions will be independent of existing Adobe Analytics permissions
-* Enabled users will be able to create or modify a connection, or add a dataset to Platform
-* Auto-enabling or enabled by Engineering and Customer Care?
+* To manage datasets in the Experience Platform, you must be part of a Platform Product Profile that gives you the "Manage Datasets" permission. For more information, see [Access control in Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+
+* To create a connection to a Platform dataset, you must be part of a Platform Product Profile that gives you the following permissions:
+
+    * View Schemas
+    * View Datasets
+    * Manage Identity Namespaces
+    * View Sandboxes
+
+* To access Customer Journey Analytics or make a connection, you will also need to be added to a CJA Product Profile in the [Admin Console](https://adminconsole.adobe.com/enterprise/). (More detail to follow).
+
+
