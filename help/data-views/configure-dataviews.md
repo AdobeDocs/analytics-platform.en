@@ -1,5 +1,7 @@
+---
 title: Configure data views and attribution
-description: Describes how to create a data view to a Platform dataset in [!UICONTROL Customer Journey Analytics] (CJA).
+description: Describes how to create a data view to a Platform dataset in [!UICONTROL Customer Journey Analytics] (CJA)
+---
 
 # Configure data views and attribution
 
