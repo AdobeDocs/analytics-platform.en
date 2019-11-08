@@ -31,7 +31,9 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 + Data Views {#cja-dataviews}
     + [Create a data view](data-views/create-dataview.md)
     + [Configure data views and attribution](data-views/configure-dataviews.md)
-+ Reporting Components {#cja-reporting}
++ Reporting {#cja-reporting}
+    + [Perform basic analysis](projects/perform-basic-analysis.md)
+    + [Perform advanced analysis](projects/perform-adv-analysis.md)
 + Use Cases {#cja-usecases}
 + Privacy {#cja-privacy}
     + [Privacy Overview](privacy/privacy-overview.md)
