@@ -1,13 +1,13 @@
 ---
 title: Create a data view
-description: Describes how to create a data view to a Platform dataset in [!UICONTROL Customer Journey Analytics] (CJA).
+description: Describes how to create a data view to a Platform dataset in Customer Journey Analytics (CJA).
 ---
 
 # Create a data view
 
 A data view is similar to a virtual report suite in Analytics. 
 
-1. In [!UICONTROL Customer Journey Analytics], go to the **[!UICONTROL Data Views]** tab.
+1. In Customer Journey Analytics, go to the **[!UICONTROL Data Views]** tab.
 
 1. Click **[!UICONTROL Create New Data View]** to configure the settings.
 

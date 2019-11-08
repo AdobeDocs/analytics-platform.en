@@ -1,6 +1,6 @@
 ---
-title: Perform advanced analysis in [!UICONTROL Customer Journey Analytics]
-description: Describes how to do advanced [!UICONTROL Customer Journey Analytics] analysis in Workspace.
+title: Perform advanced analysis in Customer Journey Analytics
+description: Describes how to do advanced Customer Journey Analytics analysis in Workspace.
 ---
 
 # Perform advanced analysis
