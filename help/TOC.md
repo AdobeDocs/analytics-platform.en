@@ -30,7 +30,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 + Workspace Projects {#cja-projects}
 + Data Views {#cja-dataviews}
     + [Create a data view](data-views/create-dataview.md)
-    + [Configure data views and attribution](data-views/configure-dataviews.md))
+    + [Configure data views and attribution](data-views/configure-dataviews.md)
 + Reporting Components {#cja-reporting}
 + Use Cases {#cja-usecases}
 + Privacy {#cja-privacy}

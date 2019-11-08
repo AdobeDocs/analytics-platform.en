@@ -9,6 +9,6 @@ EVars, props, and events in the traditional Adobe Analytics sense no longer exis
 
 [Attribution IQ doc](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)]
 
-1. To specify an attribution setting, go to 
-
 ## Specify attribution settings on a data field
+
+1. To specify an attribution setting, go to 
