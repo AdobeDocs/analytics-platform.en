@@ -1,8 +1,6 @@
 ---
-title: [!UICONTROL Customer Journey Analytics] FAQ
-seo-title: FAQ of [!UICONTROL Customer Journey Analytics]; Frequently asked questions for [!UICONTROL Customer Journey Analytics]
-description: [!UICONTROL Customer Journey Analytics] FAQ.
-seo-description: [!UICONTROL Customer Journey Analytics] FAQ.
+title: Customer Journey Analytics FAQ
+description: Customer Journey Analytics - Frequently Asked Questions.
 ---
 
 # Frequently asked questions
@@ -11,8 +9,8 @@ seo-description: [!UICONTROL Customer Journey Analytics] FAQ.
 |---|---|
 |Do you need Device Graph or Device Coop for CJA?|No, Private Device Graph or Device Coop are not required for Customer Journey Analytics. In fact, they are not yet supported.|
 |Do you need Experience Cloud ID (ECID) for CJA?|No, Customer Journey Analytics supports any ID in a dataset, whether ECID, or any other ID you choose.|
-|Can [!UICONTROL Customer Journey Analytics] "stitch" across devices or across datasets?|No. CJA is a "bring-your-own-ID" analytics system. Plans for a good stitching approach are in the works.|
-|If I am an existing [!DNL Data Workbench] customer, can I move to [!UICONTROL Customer Journey Analytics] right now?|It depends. If you rely heavily on the Unified Customer Process (UCP), you will want to wait until we have stitching implemented. If you already have hight customer authentication rates, or if you want all your data in one place, or would like to get rid of eVars, CJA might be a good fit.|
+|Can Customer Journey Analytics "stitch" across devices or across datasets?|No. CJA is a "bring-your-own-ID" analytics system. Plans for a good stitching approach are in the works.|
+|If I am an existing [!DNL Data Workbench] customer, can I move to Customer Journey Analytics right now?|It depends. If you rely heavily on the Unified Customer Process (UCP), you will want to wait until we have stitching implemented. If you already have hight customer authentication rates, or if you want all your data in one place, or would like to get rid of eVars, CJA might be a good fit.|
 |Can I share segments from CJA to AEP or other solutions?|Not yet. We’re looking at new, innovative ways to share segments from CJA to AEP in the future that don’t have such a long delay. That said, you can share the output of Query Services to Unified Profile as a potential workaround.|
 |How do you connect online data to offline data in CJA?|Customer Journey Analytics is a "bring your own ID" analytics system. As long as the person ID matches between datasets, CJA can connect segments, attribution, flow, fallout, etc. across datasets.|
 |How does CJA handle `Uniques Exceeded` limitations?|Customer Journey Analytics has no unique value limitations, so no need to worry about them!|

@@ -1,6 +1,6 @@
 ---
-title: Perform basic analysis in [!UICONTROL Customer Journey Analytics]
-description: Describes how to create a data view to a Platform dataset in [!UICONTROL Customer Journey Analytics] (CJA)
+title: Perform basic analysis in Customer Journey Analytics
+description: Describes how to create a data view to a Platform dataset in Customer Journey Analytics (CJA)
 ---
 
 # Perform basic analysis

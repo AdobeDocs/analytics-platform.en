@@ -1,8 +1,6 @@
 ---
 title: Manage connections
-seo-title: Manage connections in [!UICONTROL Customer Journey Analytics] (CJA).
 description: Describes how to manage connections to Platform datasets.
-seo-description: Describes how to manage connections to Platform datasets in [!UICONTROL Customer Journey Analytics].
 ---
 
 # Manage connections

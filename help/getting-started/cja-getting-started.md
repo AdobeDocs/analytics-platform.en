@@ -1,11 +1,9 @@
 ---
-title: [!UICONTROL Customer Journey Analytics] Getting Started
-seo-title: [!UICONTROL Customer Journey Analytics] Getting Started
-description: [!UICONTROL Customer Journey Analytics] Getting Started.
-seo-description: [!UICONTROL Customer Journey Analytics] Getting Started.
+title: Customer Journey Analytics Getting Started
+description: Customer Journey Analytics Getting Started.
 ---
 
-# [!UICONTROL Customer Journey Analytics] Getting Started
+# Customer Journey Analytics Getting Started
 
 To implement Customer Journey Analytics, you need to follow this workflow:
 
@@ -30,7 +28,7 @@ Data in Platform consists of data sets, such as email data sets, CRM datasets, P
 
 Although the schema for datasets that can be imported into CJA is flexible, it must conform to some basic rules. It is best to make sure your data meets these requirements before uploading them into Platform. (Note that schema includes both metrics and dimensions.)
 
-There are three types of data that are compatible with [!UICONTROL Customer Journey Analytics]:
+There are three types of data that are compatible with Customer Journey Analytics:
 
 * **Event data**: Data that represents events in time (e.g., web visits, interactions, transactions, POS data, survey data, ad impression data, etc.). This is typical clickstream data, with a customer ID or a cookie ID, and a timestamp. With Event data, we allow you to use whatever ID you want.
 * **Lookup data**: This data is used to lookup values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names.
