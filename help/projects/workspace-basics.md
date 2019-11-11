@@ -81,12 +81,10 @@ There are a lot of directions to go to deepen your understanding of Workspace. H
 * [Metrics in Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/apply-create-metrics.html): Learn more about what metrics are and how to use them in other parts of freeform tables.
 * [Introduction to segmentation](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/t-freeform-project-segment.html): Learn about what segments are and pull a basic report using a segment.
 * [Date ranges in Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/calendar-date-ranges/calendar.html): Learn about relative and rolling dates, and use them in workspace projects.
-* Sharing projects in Workspace: Show your colleague the awesome Workspace project you created.
-* [(Advanced) Panels in Workspace](c-panels/panels.md): Use advanced features in Workspace, such as Attribution and Segment Comparison.
+* [Sharing projects](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html) in Workspace: Show your colleague the awesome Workspace project you created.
 
 ### For analysts and admins looking to improve the quality of workspace in their organization
 
-* [Analysis Workspace permissions](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html): Assign users permissions to Workspace via the Adobe Admin Console.
-* [Create a solution design document](/help/implement/prepare/solution-design.md): Start planning how your organization collects additional dimensions or metrics specific to your site.
-* [Templates in Workspace](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md): Create templates so your colleagues can start with a project space tailored to their needs.
-* [Workspace curation](curate-share/curate.md): Create a project that limits available components, making workspace more accessible to those less familiar with the tool
+* [Analysis Workspace permissions](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html): Assign users permissions to Workspace via the Adobe Admin Console.
+* [Templates in Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html): Create templates so your colleagues can start with a project space tailored to their needs.
+* [Workspace curation](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html): Create a project that limits available components, making workspace more accessible to those less familiar with the tool
