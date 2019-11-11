@@ -27,15 +27,15 @@ A ranked report shows an aggregated total view of each dimension value, showing 
 A trended report shows an over-time view of metrics using the selected date range. These types of reports are useful for identifying trends over time, and can be used to gauge success or failure of business decisions made. For example, you could look at a page views report trended over time to see if a site redesign helped increase or decrease traffic.
 
 1. Make sure you are logged in to [analytics.adobe.com](https://analytics.adobe.com).
-3. In the top navigation bar, click **[!UICONTROL Workspace]**.
-4. Click **[!UICONTROL Create New Project]**.
-5. In the modal popup, make sure 'Blank Project' is selected, then click **[!UICONTROL Create]**.
-6. On the left, you should see a list of dimensions, metrics, segments, and date ranges. Locate the Page Views dimension, and drag it to the small space on the canvas labeled **[!UICONTROL Drop a Metric Here]**. Avoid dropping it in the space reserved for dimensions (at least for this exercise).
-7. Note that if the report suite has data, you should see a basic page views report trended over the current month. Analysis Workspace automatically brought in the 'Day' date range so you can see the trend of page views for the current month.
-8. Locate the Week date range (colored purple) in the list of date range components on the left. Click the date range title to expand and see all date range components, or use the search bar.
-9. Drag the Week date range on top of the Day date range header on the canvas to replace it.
-10. Note that your trended report is now aggregated by week instead of day.
-11. If you'd like to save your project, click **[!UICONTROL Project] > [!UICONTROL Save]** in the upper left menu.
+1. In the top navigation bar, click **[!UICONTROL Workspace]**.
+1. Click **[!UICONTROL Create New Project]**.
+1. In the modal popup, make sure 'Blank Project' is selected, then click **[!UICONTROL Create]**.
+1. On the left, you should see a list of dimensions, metrics, segments, and date ranges. Locate the Page Views dimension, and drag it to the small space on the canvas labeled **[!UICONTROL Drop a Metric Here]**. Avoid dropping it in the space reserved for dimensions (at least for this exercise).
+1. Note that if the report suite has data, you should see a basic page views report trended over the current month. Analysis Workspace automatically brought in the 'Day' date range so you can see the trend of page views for the current month.
+1. Locate the Week date range (colored purple) in the list of date range components on the left. Click the date range title to expand and see all date range components, or use the search bar.
+1. Drag the Week date range on top of the Day date range header on the canvas to replace it.
+1. Note that your trended report is now aggregated by week instead of day.
+1. If you'd like to save your project, click **[!UICONTROL Project] > [!UICONTROL Save]** in the upper left menu.
 
 ## Experiment with the tool
 
