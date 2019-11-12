@@ -74,7 +74,7 @@ Customer Journey Analytics lets you:
 Before you can start using Customer Journey Analytics, you need to complete the following steps for your organization:
 
 * Make sure you are an Adobe Analytics Select, Prime, or Ultimate customers.
-* Make sure you are enabled for the Adobe Experience Platform (what do we link to?)
+* Make sure you are enabled for the Adobe Experience Platform.
 * Make sure you have the Customer Journey Analytics SKU.
 
 ## User Access Permissions
