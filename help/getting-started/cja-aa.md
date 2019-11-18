@@ -49,7 +49,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 |Merchandising eVars|Merchandising eVars will only work with ADC-based datasets unless they strictly conform to the same XDM schema (similar to the product list limitations above).|
 |Bot Filtering|Needs to be planned by AEP for more general support - for ADC-based datasets, bot filtering is still applied.|
 |Processing Rules|Needs to be planned by AEP for more general support - for ADC-based datasets, processing rules are still applied.|
-|ID Stitching via Query Service	Partially|Currently, there is no way to automate this. Customers are limited to "one-time" stitches of the data.|
+|ID Stitching via Query Service|Currently, there is no way to automate this. Customers are limited to "one-time" stitches of the data.|
 
 ## Not currently supported, but planned
 
