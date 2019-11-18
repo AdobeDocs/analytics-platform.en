@@ -9,7 +9,7 @@ eVars, props, and events in the traditional Adobe Analytics sense no longer exis
 
 Keep this in mind before you apply attribution settings:
 
-* In the data views user interface, you specify the default attribution. You can later override these settings in Workspace projects (not sure if this latter functionality will be there right off the bat).
+* In the data views user interface, you specify the default attribution. At a later date, you will be able to override these settings in Workspace projects. However, this functionality is not currently available.
 
 * Attribution settings in Customer Journey Analytics are non-destructive and retroactive. In other words, you cannot do irreparable harm to your datasets in Customer Journey Analytics. Even if you accidentally delete something, you can always go back to Experience Platform and bring the dataset back in. (Keep in mind, however, that bringing the dataset back in will incur additional cost.)
 
@@ -19,12 +19,12 @@ Keep this in mind before you apply attribution settings:
 
 * If you wish to have a dimension "behave" like a traditional prop (traffic variable), you should configure it with "Same Hit" attribution by default.
 
-* If you wish to have a metric "behave" like a default metric, you shouldn't change anything (not clear what this means, but I wrote it down in my notes).
+* If you wish to have a metric "behave" like a default metric, you shouldn't change anything.
 
-For reference: [Attribution IQ doc](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)]
+For reference on attribution settings, see the [Attribution IQ doc](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html).
 
 ## Specify attribution settings on a data field
 
-To specify an attribution settings:
+To specify attribution settings:
 
 1. 
