@@ -32,7 +32,7 @@ Customer Journey Analytics expands the scope of Analytics not just by offering e
 
 ### Adobe Analytics features supported by Customer Journey Analytics
 
-The initial release of Customer Journey Analytics includes many, but not all, of the features that you are used to using in Adobe Analytics today. 
+The initial release of Customer Journey Analytics includes many, but not all, of the features that you are used to using in Adobe Analytics today. For a complete list, see [Customer Journey Analytics feature support](/help/getting-started/cja-aa.md).
 
 * Attribution IQ
 * Segments (now called "Filters")
@@ -47,6 +47,7 @@ The initial release of Customer Journey Analytics includes many, but not all, of
 ### Current limitations
 
 Customer Journey Analytics currently does not provide support for the following Analytics features. However, we are actively working on bringing these features to you in the near future.
+For a complete list, see [Customer Journey Analytics feature support](/help/getting-started/cja-aa.md).
 
 * Segment/audience sharing to Profile or other Experience Cloud solutions
 * PDF export, CSV export, scheduled reports, emailed reports
