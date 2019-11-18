@@ -21,9 +21,10 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 + [Customer Journey Analytics Product Documentation](getting-started/cja-landing.md)
 + Customer Journey Analytics overview {#cja-overview}
     + [Customer Journey Analytics overview](getting-started/cja-overview.md)
-    + [CJA glossary](getting-started/cja-glossary.md)
-    + [Frequently asked questions](getting-started/cja-faq.md)
     + [Getting Started](getting-started/cja-getting-started.md)
+    + [Frequently asked questions](getting-started/cja-faq.md)
+    + [Customer Journey Analytics feature support](getting-started/cja-aa.md)
+    + [CJA glossary](getting-started/cja-glossary.md)
 + Connections {#cja-connections}
     + [Create a connection](connections/create-connection.md)
     + [Manage connections](connections/manage-connection.md)
