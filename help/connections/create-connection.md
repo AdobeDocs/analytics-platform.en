@@ -20,7 +20,7 @@ In order to report on Platform datasets, you first have to establish a connectio
 
 1. The left rail shows all the datasets in Platform that you can pull from. Select the dataset(s) you want to pull into Customer Journey Analytics and click **[!UICONTROL Add]**.
 
-1. Next, for each dataset that you added to this connection, you have to let CJA know how it should be interpreting this data. There are 3 different dataset types that you can connect: [Event data, Profile data, and Lookup data](/help/getting-started/cja-getting-started.md).
+1. Next, for each dataset that you added to this connection, you have to let Customer Journey Analytics know how it should be interpreting this data. There are 3 different dataset types that you can connect: [Event data, Profile data, and Lookup data](/help/getting-started/cja-getting-started.md).
 
     |Dataset Type|Person ID|Timestamp|Key|Matching Key (from Event dataset)|
     |---|---|---|---|---|
