@@ -9,7 +9,7 @@ Imagine your favorite Analytics tool, Analysis Workspace, taking advantage of th
 
 ![](assets/cja-multi-flow.png)
  
-Customer Journey Analytics (CJA) is a new Analytics capability that lets you use the power of Analysis Workspace for rapid insights to analyze the customer journey across channels, using any data available to you in Adobe Experience Platform (Platform). By now, you are familiar with Workspace, which allows reporting and exploration at the "speed of thought." Its ability to break down, filter, query, and visualize years' worth of data, often in seconds, is now being combined with Platform's ability to hold all of your data with all kinds of schemas and types, coming from unique channels and sources. Using the **Experience Data Model (XDM)** (link) allows data to be uniformly represented and organized, ready for combination and exploration. **Experience Query Services** allows you to use SQL-compatible tools and frameworks to query and manipulate all your data.
+Customer Journey Analytics (Customer Journey Analytics) is a new Analytics capability that lets you use the power of Analysis Workspace for rapid insights to analyze the customer journey across channels, using any data available to you in Adobe Experience Platform (Platform). By now, you are familiar with Workspace, which allows reporting and exploration at the "speed of thought." Its ability to break down, filter, query, and visualize years' worth of data, often in seconds, is now being combined with Platform's ability to hold all of your data with all kinds of schemas and types, coming from unique channels and sources. Using the **Experience Data Model (XDM)** (link) allows data to be uniformly represented and organized, ready for combination and exploration. **Experience Query Services** allows you to use SQL-compatible tools and frameworks to query and manipulate all your data.
 
 ## What's new and different about Customer Journey Analytics?
 
@@ -20,7 +20,7 @@ Compared with what you are used to in Adobe Analytics, a number of things are go
 * New features (see below)
 * Some features that are not supported yet (see below)
 
-CJA expands the scope of Analytics not just by offering easy-to-use cross-channel capabilities. It also removes some of the traditional limitations. The biggest practical improvements you will notice in CJA are:
+Customer Journey Analytics expands the scope of Analytics not just by offering easy-to-use cross-channel capabilities. It also removes some of the traditional limitations. The biggest practical improvements you will notice in CJA are:
 
 * Unlimited variables and events: the concepts of eVars, props, and events no longer exist. You are dealing with dimensions and metrics. As a result, you are no longer constrained by a maximum number of eVars, props, or events.
 * Unlimited uniques: The Adobe Analytics limit of x uniques is no longer relevant.
@@ -32,17 +32,17 @@ CJA expands the scope of Analytics not just by offering easy-to-use cross-channe
 
 ### Adobe Analytics features supported by Customer Journey Analytics
 
-The initial release of CJA includes many, but not all, of the features that you are used to using in Adobe Analytics today. 
+The initial release of Customer Journey Analytics includes many, but not all, of the features that you are used to using in Adobe Analytics today. 
 
 * Attribution IQ
-* Segmentation (Note that segments are now called "Filters")
+* Segments (now called "Filters")
 * All Workspace visualizations except Map
 * Calculated Metrics
-* Workspace project sharing to other CJA users
+* Workspace project sharing to other Customer Journey Analytics users
 * Virtual Report Suites (now called "Views")
-* Creating new dataset connections from Platform UI and CJA UI
+* Creating new dataset connections from Platform UI and Customer Journey Analytics UI
 * Classifications (now called "Lookup datasets")
-* Customer attributes (now called "Profile datasets") - allow on-boarding of audiences from [Real-time Customer Profile](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/unified_profile_architectural_overview/unified_profile_architectural_overview.md)
+* Customer attributes, now called "Profile datasets". They allow on-boarding of audiences from [Real-time Customer Profile](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/unified_profile_architectural_overview/unified_profile_architectural_overview.md)
 
 ### Current limitations
 
@@ -90,13 +90,13 @@ To create connections, add datasets, etc., you need the following permissions in
     * Manage Identity Namespaces
     * View Sandboxes
 
-* To access Customer Journey Analytics or make a connection, you will also need to be added to a CJA Product Profile in the [Admin Console](https://adminconsole.adobe.com/enterprise/). (More detail to follow).
+* To access Customer Journey Analytics or make a connection, you will also need to be added to a Customer Journey Analytics Product Profile in the [Admin Console](https://adminconsole.adobe.com/enterprise/). (More detail to follow).
 
-## Adobe Experience Platform and CJA
+## Adobe Experience Platform and Customer Journey Analytics
 
 Adobe Experience Platform lets you centralize and standardize customer data and content from any system and apply data science and machine learning to improve the design and delivery of personalized experiences. Customer data in the platform is stored as datasets,which consist of a schema and batches of data. For more detail on the platform, see [Adobe Experience Platform Architecture Overview](https://www.adobe.io/apis/experienceplatform/home/overview.html).
 
-From Data Ingestion to direct SQL access, several components of the Experience Platform are central to CJA and act in conjunction with it:
+From Data Ingestion to direct SQL access, several components of the Experience Platform are central to Customer Journey Analytics and act in conjunction with it:
 
 * Dataset: A platform dataset consists of a schema and rows of data that represent your customer data in the platform. For example, an email dataset schema might consist of a customer ID, email reason, validation timestamp, email opened, email sent, email delivered, validation data source, validation tracking code, etc. You can include the Adobe Analytics dataset and other Adobe solution datasets as part of your platform datasets. <!--how do they get the Adobe datasets into the platform?>
 
