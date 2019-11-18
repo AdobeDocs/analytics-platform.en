@@ -1,11 +1,9 @@
 ---
 title: Customer Journey Analytics use cases
-description: Use cases for Customer Journey Analytics.
+description: Use cases for Customer Journey Analytics
 ---
 
 # Customer Journey Analytics use cases
-
-<!--flesh this out-->
 
 ## Report on full cross-channel customer journey for customers with high customer ID (join key) coverage
 
