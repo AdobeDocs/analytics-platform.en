@@ -7,7 +7,7 @@ getting-started-title: Getting Started
 getting-started-url: https://helpx.adobe.com/experience-cloud-core-services/get-started.html
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/analytics/how-to/adobe-launch-publishing-process.html
-git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.en
+git-repo: https://github.com/AdobeDocs/analytics-platform.en
 ---
 
 # Metadata for internal use
