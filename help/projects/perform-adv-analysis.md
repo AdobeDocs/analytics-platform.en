@@ -7,8 +7,6 @@ description: Describes how to do advanced Customer Journey Analytics analysis in
 
 Intro sentence here.
 
- ![](assets/cja-adv-analysis1.png)
+ ![Workspace screenshot 1](assets/cja-adv-analysis1.png)
 
- ![](assets/cja-adv-analysis2.png) 
-
- 
+ ![Workspace screenshot 2](assets/cja-adv-analysis2.png)

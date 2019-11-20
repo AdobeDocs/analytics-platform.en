@@ -5,7 +5,9 @@ description: Use cases for Customer Journey Analytics
 
 # Customer Journey Analytics use cases
 
-## Report on full cross-channel customer journey for customers with high customer ID (join key) coverage
+Adobe is currently working with customers to establish use cases. Check back regularly for updates.
+
+<!-- ## Report on full cross-channel customer journey for customers with high customer ID (join key) coverage
 
 More detail here.
 
@@ -31,4 +33,4 @@ Details
 
 ## Combine multiple report suites
 
-Details
+Details -->

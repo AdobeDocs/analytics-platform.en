@@ -7,8 +7,7 @@ description: Describes how to create a connection to a Platform dataset in Custo
 
 In order to report on Platform datasets, you first have to establish a connection between Workspace and datasets in Platform. A connection lets you integrate datasets from your platform into Analysis Workspace. 
 
->[!IMPORTANT]
->You can combine multiple Platform datasets into a single connection.
+>[!IMPORTANT] You can combine multiple Platform datasets into a single connection.
 
 1. Go to [https://www.analytics.adobe.com](https://www.analytics.adobe.com).
 
@@ -16,7 +15,7 @@ In order to report on Platform datasets, you first have to establish a connectio
 
 1. Click **[!UICONTROL Create new connection]** on the top right.
 
-    ![](assets/create-connection.png)
+  ![Create connection](assets/create-connection.png)
 
 1. The left rail shows all the datasets in Platform that you can pull from. Select the dataset(s) you want to pull into Customer Journey Analytics and click **[!UICONTROL Add]**.
 
@@ -39,7 +38,7 @@ In order to report on Platform datasets, you first have to establish a connectio
     |Size|The collective size of the datasets in the data connection.|
     |Datasets|The datasets that are included in this connection.|
     |Data Streaming|To begin streaming data for this connection, enable data streaming. When data streaming is enabled for this connection, your account is billed for the amount of data that this connection is streaming. (You can also enable data streaming in the Connections Manager.)|
-    
+
 1. Click **[!UICONTROL Save]**. When you save this connection, two things happen:
 
     * You pull in all of the historical data from Platform for all datasets that are in this connection.
