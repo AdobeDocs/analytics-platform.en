@@ -27,4 +27,8 @@ For reference on attribution settings, see the [Attribution IQ doc](https://docs
 
 To specify attribution settings:
 
+1. In Customer Journey Analytics, click the **[!UICONTROL Data Views]** tab.
+
+1. Click **[!UICONTROL +Add]**.
+
 1. 
