@@ -23,16 +23,20 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Frequently asked questions](getting-started/cja-faq.md)
     + [Customer Journey Analytics feature support](getting-started/cja-aa.md)
     + [CJA glossary](getting-started/cja-glossary.md)
++ Projects {#cja-reporting}
+    + [Introduction to Workspace](projects/workspace-basics.md)
+    + [Perform basic analysis](projects/perform-basic-analysis.md)
+    + [Perform advanced analysis](projects/perform-adv-analysis.md)
 + Connections {#cja-connections}
     + [Create a connection](connections/create-connection.md)
     + [Manage connections](connections/manage-connection.md)
 + Data Views {#cja-dataviews}
     + [Create a data view](data-views/create-dataview.md)
     + [Configure data views and attribution](data-views/configure-dataviews.md)
-+ Workspace Reporting {#cja-reporting}
-    + [Introduction to Workspace](projects/workspace-basics.md)
-    + [Perform basic analysis](projects/perform-basic-analysis.md)
-    + [Perform advanced analysis](projects/perform-adv-analysis.md)
++ Components {#cja-components}
+    + Filters {#cja-filters}
+        + [Filters overview](components/filters/filters-overview.md)
+        + [Create filters](components/filters/create-filters.md)
 + Use Cases {#cja-usecases}
     + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
 + Privacy {#cja-privacy}
