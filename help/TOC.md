@@ -33,8 +33,8 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 + Data Views {#cja-dataviews}
     + [Create a data view](data-views/create-dataview.md)
     + [Configure data views and attribution](data-views/configure-dataviews.md)
-+ Components (#cja-components)
-    + Filters (#cja-filters)
++ Components {#cja-components}
+    + Filters {#cja-filters}
         + [Filters overview](components/filters/filters-overview.md)
         + [Create filters](components/filters/create-filters.md)
 + Use Cases {#cja-usecases}
