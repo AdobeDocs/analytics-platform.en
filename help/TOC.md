@@ -37,6 +37,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + Filters {#cja-filters}
         + [Filters overview](components/filters/filters-overview.md)
         + [Create filters](components/filters/create-filters.md)
+        + [Manage filters](components/filters/manage-filters.md)
 + Use Cases {#cja-usecases}
     + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
 + Privacy {#cja-privacy}
