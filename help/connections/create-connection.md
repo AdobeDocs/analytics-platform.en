@@ -19,13 +19,13 @@ In order to report on Platform datasets, you first have to establish a connectio
 
 1. The left rail shows all the datasets in Platform that you can pull from. Select one or more dataset(s) you want to pull into Customer Journey Analytics and click **[!UICONTROL Add]**. (If you have a lot of datasets to choose from, you can search for the right one(s) using the search bar above the list of datasets.)
 
-1. Next, for each dataset that you added to this connection, Customer Journey Analytics automatically sets the dataset type for each specific dataset. There are 3 different dataset types: Event data, Profile data, and Lookup data.
+1. Next, for each dataset that you added to this connection, Customer Journey Analytics automatically sets the dataset type based on the data coming in. There are 3 different dataset types: Event data, Profile data, and Lookup data.
 
     |Dataset Type|Description|Timestamp|Schema|Person ID|
     |---|---|---|---|---|
-    |Event|Data that represents events in time (e.g., web visits, interactions, transactions, POS data, survey data, ad impression data, etc.). This is typical clickstream data, with a customer ID or a cookie ID, and a timestamp. With Event data, we allow you to use whatever ID you want. |Will be set to Timestamp.|The schema that this dataset type is based on.|N/A|
-    |Lookup|Analogous to a Classifications file. This data is used to lookup values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names.|N/A|The schema that this dataset type is based on.|N/A|
-    |Profile|Analogous to Customer Attributes - for non-changing and non-temporal attributes. Data that is applied to your visitors, users, or customers in the Event data. For example, allows you to upload CRM data about your customers. |N/A|The schema that this dataset type is based on.|You can pick which Person ID you want to include.|
+    |Event|Data that represents events in time (e.g., web visits, interactions, transactions, POS data, survey data, ad impression data, etc.). This is typical clickstream data, with a customer ID or a cookie ID, and a timestamp. With Event data, we allow you to use whatever ID you want. |Will be set to Timestamp.|The Platform schema that this dataset type is based on.|N/A|
+    |Lookup|Analogous to a Classifications file. This data is used to lookup values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names.|N/A|The Platform schema that this dataset type is based on.|N/A|
+    |Profile|Analogous to Customer Attributes - for non-changing and non-temporal attributes. Data that is applied to your visitors, users, or customers in the Event data. For example, allows you to upload CRM data about your customers. |N/A|The Platform schema that this dataset type is based on.|You can pick which Person ID you want to include. Each dataset defined in the Adobe Experience Platform has its own set of one or more Person IDs defined, such as Cookie ID, Stitched ID, User ID, Tracking Code, etc.<br>![Person ID](assets/person-id.png)**Note**: If you create a connection that includes datasets with different IDs, the reporting will reflect that. To really merge datasets, you need to be using the same Person ID.|
 
 1. Click **[!UICONTROL Next]**.
 
@@ -37,7 +37,7 @@ In order to report on Platform datasets, you first have to establish a connectio
     |Description|Add more detail to distinguish this connection from others.|
     |Size|The collective size of the datasets in the data connection.|
     |Datasets|The datasets that are included in this connection.|
-    |Data Streaming|To begin streaming data for this connection, enable data streaming. When data streaming is enabled for this connection, your account is billed for the amount of data that this connection is streaming. (You can also enable data streaming in the Connections Manager.)|
+    |Data Streaming|To begin streaming data for this connection, enable data streaming. When data streaming is enabled for this connection, your account is billed for the amount of data that this connection is streaming. (Note that you can also enable data streaming in the Connections Manager.)|
 
 1. Click **[!UICONTROL Save]**. When you save this connection, two things happen:
 

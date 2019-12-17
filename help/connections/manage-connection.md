@@ -10,6 +10,7 @@ Once you have created one or more connections, you can manage them in the Connec
 * Delete a connection
 * Rename a connection
 * Create a data view from a connection.
+* Start and stop data streaming.
 
 ![Connections manager](assets/connections-manager.png)
 
@@ -21,8 +22,9 @@ Once you have created one or more connections, you can manage them in the Connec
 
     |Action|Description|
     |---|---|
-    |Delete|...|
+    |Delete|Deleting a connection |
     |Rename|...|
     |Create Data View|...|
+    |Start or stop data streaming|
 
-4. You can also start or stop data streaming
+
