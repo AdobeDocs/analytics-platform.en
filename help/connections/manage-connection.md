@@ -7,8 +7,8 @@ description: Describes how to manage connections to Platform datasets.
 
 Once you have created one or more connections, you can manage them in the Connections Manager. You can 
 
-* Delete a connection
-* Rename a connection
+* Delete a connection.
+* Rename a connection.
 * Create a data view from a connection.
 * Start and stop data streaming.
 
@@ -22,9 +22,9 @@ Once you have created one or more connections, you can manage them in the Connec
 
     |Action|Description|
     |---|---|
-    |Delete|Deleting a connection |
-    |Rename|...|
-    |Create Data View|...|
-    |Start or stop data streaming|
+    |Delete|Deleting a connection does not delete the dataset, since the data is still in Adobe Experience Platform.|
+    |Rename|Renaming a connection...|
+    |Create Data View|This link takes you to the [data view builder](/help/data-views/create-dataview.md).|
+    |Start or stop data streaming|"Streaming" means that if any new batches are added to any of the datasets in the connection,this new data will be brought into Customer Journey Analytics for reporting.|
 
 
