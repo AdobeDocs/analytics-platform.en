@@ -26,6 +26,9 @@ Several features in CJA have been renamed to align with industry standards. Some
 * Virtual Report Suites are now known as 'Views'
 * Classifications are now known as 'Lookup datasets'
 * Customer attributes are now known as 'Profile datasets'
+* Hit containers are now known as 'Event' containers
+* Visit containers are now known as 'Session' containers
+* Visitor containers are now known as 'Person' containers
 
 ## Key use cases
 
