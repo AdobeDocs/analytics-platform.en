@@ -5,7 +5,7 @@ description: Describes how to create a connection to a Platform dataset in Custo
 
 # Create a connection
 
-In order to report on Platform datasets, you first have to establish a connection between Workspace and datasets in Platform. A connection lets you integrate datasets from your platform into Analysis Workspace. 
+In order to report on Platform datasets, you first have to establish a connection between Workspace and datasets in Platform. A connection lets you integrate datasets from your platform into Workspace.
 
 >[!IMPORTANT] You can combine multiple Platform datasets into a single connection.
 
@@ -17,15 +17,15 @@ In order to report on Platform datasets, you first have to establish a connectio
 
   ![Create connection](assets/create-connection.png)
 
-1. The left rail shows all the datasets in Platform that you can pull from. Select the dataset(s) you want to pull into Customer Journey Analytics and click **[!UICONTROL Add]**.
+1. The left rail shows all the datasets in Platform that you can pull from. Select one or more dataset(s) you want to pull into Customer Journey Analytics and click **[!UICONTROL Add]**. (If you have a lot of datasets to choose from, you can search for the right one(s) using the search bar above the list of datasets.)
 
-1. Next, for each dataset that you added to this connection, you have to let Customer Journey Analytics know how it should be interpreting this data. There are 3 different dataset types that you can connect: [Event data, Profile data, and Lookup data](/help/getting-started/cja-getting-started.md).
+1. Next, for each dataset that you added to this connection, Customer Journey Analytics automatically sets the dataset type for each specific dataset. There are 3 different dataset types: Event data, Profile data, and Lookup data.
 
-    |Dataset Type|Person ID|Timestamp|Key|Matching Key (from Event dataset)|
+    |Dataset Type|Description|Timestamp|Schema|Person ID|
     |---|---|---|---|---|
-    |Event|You can use any ID you want from the dropdown, and you are not restricted to the Analytics cookie ID or the ECID. If you specify your own ID on every hit, feel free to use that ID. |Will be set to Timestamp.|N/A|N/A|
-    |Lookup|Analogous to a Classifications file.|N/A|For example, tracking code.|The matching key in the Event dataset, e.g. tracking code.|
-    |Profile|Analogous to Customer Attributes - for non-changing and non-temporal attributes. You can pick which Person ID you want to include. |N/A|N/A|N/A|
+    |Event|Data that represents events in time (e.g., web visits, interactions, transactions, POS data, survey data, ad impression data, etc.). This is typical clickstream data, with a customer ID or a cookie ID, and a timestamp. With Event data, we allow you to use whatever ID you want. |Will be set to Timestamp.|The schema that this dataset type is based on.|N/A|
+    |Lookup|Analogous to a Classifications file. This data is used to lookup values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names.|N/A|The schema that this dataset type is based on.|N/A|
+    |Profile|Analogous to Customer Attributes - for non-changing and non-temporal attributes. Data that is applied to your visitors, users, or customers in the Event data. For example, allows you to upload CRM data about your customers. |N/A|The schema that this dataset type is based on.|You can pick which Person ID you want to include.|
 
 1. Click **[!UICONTROL Next]**.
 
