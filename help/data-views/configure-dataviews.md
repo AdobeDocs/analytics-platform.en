@@ -19,12 +19,14 @@ Keep this in mind before you apply attribution settings:
 
 * If you wish to have a metric "behave" like a default metric, you shouldn't change anything.
 
+* Attribution settings for metrics override attribution settings for dimensions.
+
 ## Specify component and attribution settings
 
-After you have [set and saved data view settings](/help/data-views/create-dataview.md) and added components, you are ready to specify  attribution settings, if you choose to do so.
+After you have [set and saved data view settings](/help/data-views/create-dataview.md) and added components, you are ready to specify  attribution settings, if you choose to do so. You can specify attribution/expiration/lookback settings for dimensions and metrics. If, for example, you want attribution for a dimension to persist, you will likely want to set a custom expiration time. For example, if you want a 'Tracking code' dimension (a campaign variable) set to 'Last Touch' attribution to persist for a week, add a custom expiration of 1 week.
 
 >[!IMPORTANT]
->If you do not 
+>You can choose not to set allocation/expiration. In that case, dimensions will behave like... . Metrics without attribution settings set will inherit the settings for the dimension that this metric is applied to.  
 
 ![](assets/edit-component.png)
 
@@ -65,3 +67,10 @@ Specifies a time period, or event, after which the dimension value expires (no l
 |Custom Time|Specify the custom minutes, hours, days, months, or quarters. Conversion events beyond the specified time period do not associate with the dimension or metric.|
 
 For more information, see the [Attribution IQ doc](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html).
+
+### Lookback window
+
+A lookback window is the amount of time a conversion should look back to include touch points. Attribution models that give more credit to first interactions see larger differences when viewing different lookback windows.
+
+* **Session:** Looks back up to the beginning of a the session where a conversion happened. Visit lookback windows are narrow, as they don't look beyond the session. Session lookback windows respect the modified visit definition in data views.
+* **Person (reporting window):** Looks at all sessions back up to the 1st of the month of the current date range. Person lookback windows are wide, as they can span many sessions. For example, if the report date range is September 15 - September 30, the person lookback date range includes September 1 - September 30.
