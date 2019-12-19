@@ -61,7 +61,7 @@ Specifies a time period, or event, after which the dimension value expires (no l
 |Setting|Definition|
 |---|---|
 |Session|Formerly known as the 'Visit' level. Conversion events beyond the page view or session do not associate with the dimension or metric.|
-|Person (Reporting Window|Formerly known as the 'Visitor' level. Conversion events not tied to this person do not associate with the dimension or metric.|
-|Custom Time|Specify the custom minutes, hours, days, months, or quarters. Conversion events beyond the specified time period do not associate with the dimension or metric.|)
+|Person (Reporting Window)|Formerly known as the 'Visitor' level. Conversion events not tied to this person do not associate with the dimension or metric.|
+|Custom Time|Specify the custom minutes, hours, days, months, or quarters. Conversion events beyond the specified time period do not associate with the dimension or metric.|
 
 For more information, see the [Attribution IQ doc](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html).
