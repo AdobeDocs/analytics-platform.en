@@ -5,7 +5,9 @@ description: Describes how to create a connection to a Platform dataset in Custo
 
 # Create a connection
 
-In order to report on Platform datasets, you first have to establish a connection between Workspace and datasets in Platform. A connection lets you integrate datasets from your platform into Workspace.
+A connection lets you integrate datasets from Adobe Experience Platform into Workspace. In order to report on Platform datasets, you first have to establish a connection between Workspace and datasets in Platform.
+
+Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) for a video overview.
 
 >[!IMPORTANT] You can combine multiple Platform datasets into a single connection.
 

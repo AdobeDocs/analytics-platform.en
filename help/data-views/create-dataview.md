@@ -9,6 +9,8 @@ A data view is similar to a virtual report suite in Analytics in that it is in s
 
 Workspace projects in Customer Journey Analytics are based on data views.
 
+Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/basic-configuration-for-data-views.html) for a video overview.
+
 ## Prerequisite
 
 Before you can create data views, you need to [set up one or more connections to Adobe Experience Platform datasets](/help/connections/create-connection.md).

@@ -7,6 +7,8 @@ description: Describes how to create a data view to a Platform dataset in Custom
 
 eVars, props, and events in the traditional Adobe Analytics sense no longer exist in Customer Journey Analytics. Instead, you have unlimited schema elements (dimensions, metrics, list fields). All of the attribution settings that you used to apply to eVars and props during the data collection process are now applied at query time - also known as report-time processing. 
 
+Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/attribution-settings-in-data-views.html) for a video overview.
+
 Keep this in mind before you apply attribution settings:
 
 * In the data views user interface, you specify the default attribution. **Note**: At a later date, you will be able to override these settings in Workspace projects. However, this functionality is not currently available.
