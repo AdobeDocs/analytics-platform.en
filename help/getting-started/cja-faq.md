@@ -15,6 +15,7 @@ description: Customer Journey Analytics - Frequently Asked Questions.
 |Can Customer Journey Analytics "stitch" across devices or across datasets?|No. Customer Journey Analytics is a "bring-your-own-ID" analytics system. Plans for a good stitching approach are in the works.|
 |Is stitching from anonymous behavior to authenticated behavior supported?|No, not yet.|
 |**Getting data into Customer Journey Analytics**||
+|What is the expected latency for Customer Journey Analytics on Platform?|<ul><li>Under normal load: < 60 minutes<br>**Note:** In case of an unusually high volume of data flow through the pipeline, it could take up to 24 hours.</li><li>Backfill data (up to 10 Billion events): < 4 weeks</li></ul>|
 |How do you connect online data to offline data in Customer Journey Analytics?|Customer Journey Analytics is a "bring your own ID" analytics system. As long as the person ID matches between datasets, Customer Journey Analytics can connect segments, attribution, flow, fallout, etc. across datasets.|
 |How do I bring my offline data into Customer Journey Analytics?|Customers must first bring any data to AEP before they can use it with Customer Journey Analytics. The Experience Platform's data on-boarding team can help provide recommendations or consulting for customers if needed.|
 |How do I get Analytics data into Customer Journey Analytics?|Analytics data can be connected to AEP through the Analytics Data Connector. Most Analytics fields are brought over in XDM format, but other fields are not yet available (like Marketing Channels dimensions).|
