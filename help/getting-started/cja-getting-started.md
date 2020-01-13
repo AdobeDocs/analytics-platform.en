@@ -9,9 +9,11 @@ To implement Customer Journey Analytics, you need to follow this workflow. Some 
 
 ## Prerequisites
 
-* Make sure you are an Adobe Analytics Select, Prime, or Ultimate customers.
-* Make sure you are provisioned for the Adobe Experience Platform.
-* Make sure you have the Customer Journey Analytics SKU.
+Customer Journey Analytics is available for customers who 
+
+* Are Adobe Analytics Select, Prime, or Ultimate customers
+* Are provisioned for the Adobe Experience Platform
+* Have purchased the Customer Journey Analytics SKU
 
 ## Workflow
 
