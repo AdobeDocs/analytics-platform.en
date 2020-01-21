@@ -42,6 +42,8 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
         + [Calculated metrics overview](components/calc-metrics/calc-metr-overview.md)
         + [Basic functions](components/calc-metrics/cm-functions.md)
         + [Advanced functions](components/calc-metrics/cm-adv-functions.md)
+    + Date Ranges {#cja-dateranges}
+        + [Date ranges overview](components/date-ranges/dateranges-overview.md)
 + Use Cases {#cja-usecases}
     + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
 + Privacy {#cja-privacy}
