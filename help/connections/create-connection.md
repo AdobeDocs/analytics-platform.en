@@ -11,7 +11,7 @@ Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja
 
 >[!IMPORTANT] You can combine multiple Platform datasets into a single connection.
 
-1. Go to [https://www.analytics.adobe.com](https://www.analytics.adobe.com).
+1. Go to [https://analytics.adobe.com](https://analytics.adobe.com).
 
 1. Click the **[!UICONTROL Connections]** tab.
 
