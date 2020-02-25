@@ -9,7 +9,7 @@ Adobe is currently working with customers to establish use cases. Check back reg
 
 <!-- ## Report on full cross-channel customer journey for customers with high customer ID (join key) coverage
 
-More detail here. 
+More detail here.
 
 ## Report on and visualize any event dataset in an interactive way
 
