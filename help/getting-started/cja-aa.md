@@ -11,7 +11,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 
 |Feature|Notes|
 |---|---|
-|Metrics|CJA leverages the Experience Data Model (XDM) and supports unlimited metrics and is not tied to the custom success events of traditional Analytics. Note that some standard metrics have been renamed: Visitors = People, Visits = Sessions, Hits = Events.|
+|Metrics|CJA leverages the Experience Data Model (XDM) and supports unlimited metrics and is not tied to the custom success events of traditional Analytics. Note that some standard metrics have been renamed from traditional Analytics: Visitors = People, Visits = Sessions, Hits = Events.|
 |Dimensions|CJA leverages XDM and supports unlimited dimensions and is not tied to the custom success events of traditional Analytics.|
 |List Variables/List Props|CJA leverages XDM and supports unlimited list variables|
 |Date Ranges|Custom Calendar support is planned.|
@@ -24,18 +24,18 @@ The following tables list which features in Adobe Analytics are supported, parti
 |Virtual Report Suites|Now called "Data Views".|
 |VRS Component Curation|Now part of Data Views.|
 |Report Time Processing|CJA relies on Report Time Processing exclusively.|
-|GDPR Deletion|Note that GDPR is now handled via AEP - CJA inherits whatever data changes AEP makes to underlying datasets.|
+|GDPR Deletion|Note that GDPR is now handled in coordination with Adobe Experience Platform - CJA inherits whatever data changes Experience Platform makes to underlying datasets.|
 
 
 ## Supported with caveats
 
 |Feature|Notes|
 |---|---|
-|Product Variable|The product variable is available only for ADC (Analytics Data Connector) datasets. For non-ADC datasets, the product variable (or its functionality) is not available unless customers put the product information in the identical schema location as ADC.|
+|Product Variable|The product variable currently available for reporting for data conforming to the Experience Event schema (specifically using the productListItems object).|
 |Visualizations|All visualizations are supported except for the Map visualization.|
 |AAM Audiences|If customers are using Analytics Data Connector datasets, this data will be part of the ADC data.|
 |Project Sharing|Project sharing is only supported between users of CJA - there is not project sharing between CJA and the traditional Analysis Workspace.|
-|Custom Sessionization|Support for all custom sessionization features except mobile background hits.|
+|Custom Sessionization|Support for all custom sessionization features other than mobile background hits.|
 |eVar persistence settings|eVars are no longer part of CJA. However, persistence settings are now part of Data Views and are available for all dimensions. Keep in mind that persistence is based on report time processing, not data collection processing. This means all persistence will be based on the reporting date range rather than the entirety of the data.|
 |Classifications|Now called "Lookup Datasets", they do not get automatically imported from traditional Analytics. They will have to be uploaded to AEP before they're available in CJA.|
 |Customer Attributes|Now called "Profile Datasets", they do not get automatically imported from Experience Cloud, but will have to be uploaded to AEP before they're available in CJA.|
@@ -47,9 +47,9 @@ The following tables list which features in Adobe Analytics are supported, parti
 |Out-of-the-box Analysis Workspace dimensions (e.g. Browser Type, Referrer Type, Marketing Channels, Visit Number etc.)|CJA does not provide these dimensions natively. For customers using the Analytics Data Connector (ADC), some of these dimensions are available, but not all. Please refer to our [documentation on which Analytics variables are supported via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md).|
 |Panels|Blank Panel, Attribution Panel, and Freeform Panel are fully supported. Segment Comparison is not supported.|
 |Merchandising eVars|Merchandising eVars will only work with ADC-based datasets unless they strictly conform to the same XDM schema (similar to the product list limitations above).|
-|Bot Filtering|Needs to be planned by AEP for more general support - for ADC-based datasets, bot filtering is still applied.|
-|Processing Rules|Needs to be planned by AEP for more general support - for ADC-based datasets, processing rules are still applied.|
-|ID Stitching via Query Service|Currently, there is no way to automate this. Customers are limited to "one-time" stitches of the data.|
+|Bot Filtering|For Analytics Data Connector (ADC)-based datasets, bot filtering is applied. General bot filtering logic for other datasets is not performed by the Experience Platform or CJA.|
+|Processing Rules|For ADC-based datasets, processing rules are still applied.|
+|Cross-Device Identity Stitching|Customers are limited to "one-time" stitches of the data via Query Service, or currently must apply this logic to data prior to Experience Platform data ingestion.|
 
 ## Not currently supported, but planned
 
@@ -64,7 +64,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 |Scheduled Reports/Projects|Support is planned.|
 |Alerts|Support is planned.|
 |Custom Calendars|Support is planned.|
-|Marketing Channels|Needs to be planned by AEP for more general support - even for datasets from ADC this is not supported.|
+|Marketing Channels|Support is planned.|
 |PDF Export|Support is planned.|
 |Reporting API Access|Support is planned - will only be available with API 2.0.|
 |ID Stitching via Device Graph|Support is planned.|
@@ -78,7 +78,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 |Advertising Cloud|Support is not yet planned.|
 |Report Builder (Excel plugin)|Support is not yet planned.|
 |Activity Map|Support is not yet planned.|
-|Classification Rule Builder|Support is not currently planned.|
+|Classification Rule Builder|Support is not yet planned.|
 |Summary Data Sources|Support is not yet planned.|
 |Real-Time Reporting|Support is not yet planned.|
 
@@ -86,7 +86,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 
 |Feature|Notes|
 |---|---|
-|People metric||
+|People metric using Cross-Device Coop||
 |Reports & Analytics Dashboards||
 |Reports & Analytics Bookmarks||
 |Reports & Analytics Targets||
