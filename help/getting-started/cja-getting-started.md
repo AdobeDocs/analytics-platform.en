@@ -5,7 +5,7 @@ description: Customer Journey Analytics Getting Started.
 
 # Customer Journey Analytics Getting Started
 
-To implement Customer Journey Analytics, you need to follow this workflow. Some tasks are performed in Adobe Experience Platform, and some in Customer Journey Analytics.
+To implement Customer Journey Analytics, you need to follow this workflow. Some initial tasks are performed in Adobe Experience Platform, and some in Customer Journey Analytics.
 
 ## Prerequisites
 
@@ -27,5 +27,7 @@ Customer Journey Analytics is available for customers who
 
 ## Prepare your data schema
 
+[Create a schema using the Schema Editor](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_editor_tutorial/schema_editor_tutorial.md
 
+)
 

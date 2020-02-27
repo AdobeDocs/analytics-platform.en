@@ -63,11 +63,10 @@ If you successfully create a workspace report but there's no data, there are a f
 Note that the following resources may refer to using Workspace in the traditional Adobe Analytics product, not in Customer Journey Analytics.
 
 * Blog posts:
-  * [Empowering Organizations with Smarter Analysis](https://blogs.adobe.com/digitalmarketing/analytics/adobe-analytics-fall-2016-release-empowering-organizations-smarter-analysis/)
-  * [New Adobe Analytics Capabilities Make Powerful Insights More Accessible](https://blogs.adobe.com/digitalmarketing/analytics/new-adobe-analytics-capabilities-make-powerful-insights-accessible/)
-  * [5 Tips to Maximize Your Productivity with Analysis Workspace](https://blogs.adobe.com/digitalmarketing/analytics/5-tips-maximize-productivity-analysis-workspace/)
-  * [Faster Insights with Analysis Workspace](https://blogs.adobe.com/digitalmarketing/analytics/faster-insights-with-the-analysis-workspace/)
-  * [Why You Should Be Using Analysis Workspace](https://blogs.adobe.com/digitalmarketing/analytics/why-you-should-be-using-analysis-workspace-in-adobe-analytics/)
+  * [Empowering Organizations with Smarter Analysis](https://theblog.adobe.com/adobe-analytics-fall-2016-release-empowering-organizations-smarter-analysis/)
+  * [Analysis Workspace: The Secret Sauce is Getting Tastier](https://theblog.adobe.com/analysis-workspace-secret-sauce-getting-tastier/)
+  * [Why You Should Be Using Analysis Workspace](https://theblog.adobe.com/why-you-should-be-using-analysis-workspace-in-adobe-analytics/)
+  * [5 Tips to Maximize Your Productivity with Analysis Workspace](https://theblog.adobe.com/5-tips-maximize-productivity-analysis-workspace/)
 
 ## Next steps
 
