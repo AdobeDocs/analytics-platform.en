@@ -52,7 +52,8 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Projects overview](components/projects/overview.md)
     + [Create a project](components/projects/create.md)
     + [Manage projects](components/projects/manage.md)
-+ Use Cases {#cja-usecases}
++ Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
++ [CJA documentation updates](doc-changes.md)
