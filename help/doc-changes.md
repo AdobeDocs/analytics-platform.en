@@ -7,7 +7,7 @@ description: Lists content updates for the Customer Journey Analytics documentat
 
 The following updates were made to the CJA documentation since its inception.
 
-|---|---|
-|Date|Update description|
-|December 2019|First draft of CJA documentation|
-|February 27, 2020|Updates to the [Customer Journey Analytics feature support](/help/getting-started/cja-aa.md) page.|
+| Date | Update description |
+| --- | --- |
+| February 27, 2020 | Updates to the [Customer Journey Analytics feature support](/help/getting-started/cja-aa.md) page. |
+| December 2019 | First draft of CJA documentation |
