@@ -11,8 +11,8 @@ To implement Customer Journey Analytics, you need to follow this workflow. Some 
 
 Customer Journey Analytics is available for customers who 
 
-* Are Adobe Analytics Select, Prime, or Ultimate customers
-* Are provisioned for the Adobe Experience Platform
+* Are Adobe Analytics [Select, Prime, or Ultimate](https://www.adobe.com/analytics/compare-adobe-analytics-packages.html) customers
+* Are provisioned for the [Adobe Experience Platform](https://www.adobe.com/experience-platform.html)
 * Have purchased the Customer Journey Analytics SKU
 
 ## Workflow
@@ -24,4 +24,8 @@ Customer Journey Analytics is available for customers who
 |**Step 3:Create connections between platform datasets and Customer Journey Analytics**|Customer Journey Analytics|See [Create a connection](/help/connections/create-connection.md).|
 |**Step 4: Create data views**|Customer Journey Analytics|See [Create a data view](/help/data-views/create-dataview.md).|
 |**Step 5: Report on your cross-channel data in Workspace**|Customer Journey Analytics|See [Perform basic analysis](/help/projects/perform-basic-analysis.md) and [Perform advanced analysis](/help/projects/perform-adv-analysis.md).|
+
+## Prepare your data schema
+
+
 

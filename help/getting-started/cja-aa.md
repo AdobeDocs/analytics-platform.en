@@ -21,9 +21,9 @@ The following tables list which features in Adobe Analytics are supported, parti
 |Project Curation|Full Support|
 |Project Linking|Full Support|
 |Date Comparisons|Full Support|
-|Virtual Report Suites|Now called "Data Views".|
+|Virtual Report Suites|Now called [Data Views](/help/data-views/create-dataview.md).|
 |VRS Component Curation|Now part of Data Views.|
-|Report Time Processing|CJA relies on Report Time Processing exclusively.|
+|Report Time Processing|CJA relies exclusively on Report Time Processing.|
 |GDPR Deletion|Note that GDPR is now handled in coordination with Adobe Experience Platform - CJA inherits whatever data changes Experience Platform makes to underlying datasets.|
 
 
@@ -59,7 +59,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 |Contribution Analysis|Support is planned.|
 |Segment IQ|Support is planned.|
 |Segment Publishing (sending segments from Workspace to the Experience Cloud)|Support is planned.|
-|User Permissions/Data Access Controls|All users in CJA have the same access controls - this means all users have access to all connections, data views, etc. Basically all users are admin level users in CJA. Support is planned for 2020.|
+|User Permissions/Data Access Controls|All users in CJA have the same access controls - this means all users have access to all connections, data views, etc. Basically, all users are admin-level users in CJA. Support is planned for 2020.|
 |CSV download|Support is planned.|
 |Scheduled Reports/Projects|Support is planned.|
 |Alerts|Support is planned.|
