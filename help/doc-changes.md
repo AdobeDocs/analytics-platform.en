@@ -3,7 +3,9 @@ title: CJA documentation updates
 description: Lists content updates for the Customer Journey Analytics documentation set since December, 2019. 
 ---
 
-# CJA documentation updates
+# Customer Journey Analytics documentation updates
+
+The following updates were made to the CJA documentation since its inception.
 
 |---|---|
 |Date|Update description|
