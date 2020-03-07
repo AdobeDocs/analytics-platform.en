@@ -61,6 +61,7 @@ If your connection only included the first table and not the second, pulling a r
 However, if you included both tables in your connection, attribution changes since `user_847` is in both datasets. A row from the second dataset attributes `metric_a` to 'Yellow' where they were previously unspecified:
 
 | string_color | metric_a |
+| --- | --- |
 | Yellow | 6 |
 | Red | 2 |
 | Blue | 3 |
