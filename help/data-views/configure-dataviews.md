@@ -28,7 +28,7 @@ Keep this in mind before you apply attribution settings:
 After you have [set and saved data view settings](/help/data-views/create-dataview.md) and added components, you are ready to specify  attribution settings, if you choose to do so. You can specify attribution/expiration/lookback settings for dimensions and metrics. If, for example, you want attribution for a dimension to persist, you will likely want to set a custom expiration time. For example, if you want a 'Tracking code' dimension (a campaign variable) set to 'Last Touch' attribution to persist for a week, add a custom expiration of 1 week.
 
 >[!IMPORTANT]
->You can choose not to set allocation/expiration. In that case, dimensions will behave like... . Metrics without attribution settings set will inherit the settings for the dimension that this metric is applied to.  
+>You can choose not to set allocation/expiration. In that case, dimensions will behave like props ("Same Touch" attribution model). Metrics without attribution settings set will inherit the settings for the dimension that this metric is applied to.  
 
 ![](assets/edit-component.png)
 
