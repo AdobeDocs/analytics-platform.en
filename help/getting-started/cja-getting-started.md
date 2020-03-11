@@ -9,7 +9,7 @@ To implement Customer Journey Analytics, you need to follow this workflow. Some 
 
 |Task|Where performed|Details|
 |---|---|---|
-|**Step 1: Get your data into Adobe Experience Platform|Adobe Experience Platform||
+|**Step 1: Get your data into Adobe Experience Platform**|Adobe Experience Platform||
 |**Step 2: Prepare your data schema**|Adobe Experience Platform|Use [Adobe Experience Data Model (XDM)](https://www.adobe.io/apis/experienceplatform/home/xdm.html) to standardize customer experience data and define schemas for customer experience management.|
 |**Step 3: Create a dataset based on the schema**|Adobe Experience Platform|Data in Platform consists of data sets, such as email data sets, CRM datasets, POS data sets, the Adobe Analytics dataset, etc.. Each data sets consists of a schema and batches of data. You can create a data set [in Experience Platform](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/creating_a_dataset_tutorial/creating_a_dataset_tutorial.md).<br>Although the schema for datasets that can be imported into Customer Journey Analytics is flexible, it must conform to some basic rules. It is best to make sure your data meets these requirements before uploading them into Platform. (Note that schema includes both metrics and dimensions.)<br>There are three types of data that are compatible with Customer Journey Analytics:<ul><li>**Event data**: Data that represents events in time (e.g., web visits, interactions, transactions, POS data, survey data, ad impression data, etc.). This is typical clickstream data, with a customer ID or a cookie ID, and a timestamp. With Event data, we allow you to use whatever ID you want.</li><li>**Lookup data**: This data is used to lookup values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names.</li><li>**Profile data**: Data that is applied to your visitors, users, or customers in the Event data. For example, allows you to upload CRM data about your customers.</li></ul>|
 |**Step 3:Create connections between platform datasets and Customer Journey Analytics**|Customer Journey Analytics|See [Create a connection](/help/connections/create-connection.md).|
@@ -28,7 +28,7 @@ Customer Journey Analytics is available for customers who
 
 [Create a schema using the Schema Editor](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_editor_tutorial/schema_editor_tutorial.md)
 
-# Step 1: Get your data into Adobe Experience Platform
+## Step 1: Get your data into Adobe Experience Platform
 
 Before you can leverage Experience Platform data in CJA, you have to ingest that data into Platform. There are several ways of doing this:
 
