@@ -10,7 +10,7 @@ description: Customer Journey Analytics - Frequently Asked Questions.
 |**Prerequisites**||
 |Do you need Device Graph or Device Coop for Customer Journey Analytics?|No, Private Device Graph or Device Coop are not required for Customer Journey Analytics. In fact, they are not yet supported.|
 |Do you need Experience Cloud ID (ECID) for Customer Journey Analytics?|No, Customer Journey Analytics supports any ID in a dataset, whether that's ECID or any other ID you choose.|
-|What if you need to ETL your data prior to Customer Journey Analytics?|Today, you need to work with an ETL partner (Unifi or Informatica) if you need to transform your data before putting it into AEP. If you need ETL after the data’s already been ingested, AEP Query Services provides some limited options.|
+|What if you need to ETL (Extract, Transform, Load) your data prior to Customer Journey Analytics?|Today, you need to work with an ETL partner (Unifi or Informatica) if you need to transform your data before putting it into AEP. If you need ETL after the data’s already been ingested, AEP Query Services provides some limited options.|
 |**Stitching**||
 |Can Customer Journey Analytics "stitch" across devices or across datasets?|No. Customer Journey Analytics is a "bring-your-own-ID" analytics system. Plans for a good stitching approach are in the works.|
 |Is stitching from anonymous behavior to authenticated behavior supported?|No, not yet.|

@@ -7,28 +7,22 @@ description: Customer Journey Analytics introduction
 
 Customer Journey Analytics is an Analytics capability that lets you use the power of Analysis Workspace with data from Adobe Experience Platform. It can break down, filter, query, and visualize years' worth of data, and is combined with Platform's ability to hold all kinds of data schemas and types. Using the **Experience Data Model (XDM)**, data can be uniformly represented and organized, ready for combination and exploration. **Experience Query Services** allows you to use SQL-compatible tools and frameworks to query and manipulate all your data.
 
-## Comparing CJA to Analysis Workspace
+## Comparing CJA to Traditional Adobe Analytics
 
 Customer Journey Analytics expands the scope of Analytics by offering easy-to-use cross-channel capabilities and removing limitations in previous versions of Adobe Analytics. Some notable improvements are:
 
 * **Unlimited variables and events**: The concepts of eVars, props, and events no longer exist. Data is primarily focused on dimensions and metrics. Data sets can have an unlimited amount of unique dimensions and metrics.
-* **Unlimited uniques**: Adobe Experience Platform is not constrained to any unique limitations, such as the 500k unique values in traditional report suites.
+* **Unlimited unique values**: Adobe Experience Platform is not constrained to any unique limitations, such as the 500k unique values in traditional report suites.
 * **Alter historical data**: Using Adobe Experience Platform, data can be removed or corrected.
-* **Cross-report suite data**: Existing implementations from multiple data sets can be combined in Platform.
+* **Cross-report-suite data**: Existing implementations from multiple data sets can be combined in Platform.
 
 The initial release of Customer Journey Analytics includes many of the features included in Analysis Workspace. For a complete list, see [Customer Journey Analytics feature support](cja-aa.md).
 
-### Terminology updates
+## Comparing CJA to Cross-Device Analytics
 
-Several features in CJA have been renamed to align with industry standards. Some updated names include:
+[Cross-Device Analytics](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) integrates with Adobe Experience Platform Identity Service, utilizing either the Co-op Graph or Private Graph, to identify how digital devices map to people. It is available for Adobe Analytics Ultimate customers.
 
-* Segments are now known as 'Filters'
-* Virtual Report Suites are now known as 'Views'
-* Classifications are now known as 'Lookup datasets'
-* Customer attributes are now known as 'Profile datasets'
-* Hit containers are now known as 'Event' containers
-* Visit containers are now known as 'Session' containers
-* Visitor containers are now known as 'Person' containers
+CJA integrates with Adobe Experience Platform datasets and enables cross-channel analysis in Analysis Workspace. Although CJA does not yet integrate with the Co-op or Private identity graphs, you can "bring your own ID" to join datasets together, and those datasets can go beyond digital data to include both online and offline touchpoints. CJA prerequisites are covered in more detail below.
 
 ## Key use cases
 
@@ -43,7 +37,7 @@ Customer Journey Analytics lets you:
 
 ## Prerequisites
 
-Before you can start using Customer Journey Analytics, the following steps must be completed:
+Before you can start using Customer Journey Analytics, the following prerequisites must be met:
 
 * Your organization has an active contract with Adobe Analytics for Select, Prime, or Ultimate with the Customer Journey Analytics add-on. If you are not sure what type of contract you have, or are not sure if you have the CJA add-on, contact your organization's Account Manager.
 * Your organization has been provisioned for Adobe Experience Platform.
@@ -59,6 +53,18 @@ To create connections, add datasets, etc., you need the following permissions in
   * Manage Identity Namespaces
   * View Sandboxes
 * To access Customer Journey Analytics or make a connection, you will also need to be added to a Customer Journey Analytics Product Profile in the [Admin Console](https://adminconsole.adobe.com/enterprise/).
+
+### Terminology updates
+
+Several features in CJA have been renamed to align with industry standards. Some updated names include:
+
+* Segments are now known as 'Filters'.
+* Virtual Report Suites are now known as 'Views'.
+* Classifications are now known as 'Lookup datasets'.
+* Customer attributes are now known as 'Profile datasets'.
+* Hit containers are now known as 'Event' containers.
+* Visit containers are now known as 'Session' containers.
+* Visitor containers are now known as 'Person' containers.
 
 ## Other capabilities built on Adobe Experience Platform
 
