@@ -23,7 +23,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Frequently asked questions](getting-started/cja-faq.md)
   + [Customer Journey Analytics feature support](getting-started/cja-aa.md)
   + [CJA glossary](getting-started/cja-glossary.md)
-+ Projects {#cja-reporting}
++ Workspace Projects {#cja-reporting}
   + [Introduction to Workspace](projects/workspace-basics.md)
   + [Perform basic analysis](projects/perform-basic-analysis.md)
   + [Perform advanced analysis](projects/perform-adv-analysis.md)

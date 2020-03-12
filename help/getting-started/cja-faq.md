@@ -10,7 +10,7 @@ description: Customer Journey Analytics - Frequently Asked Questions.
 |**Prerequisites**||
 |Do you need Device Graph or Device Coop for Customer Journey Analytics?|No, Private Device Graph or Device Coop are not required for Customer Journey Analytics. In fact, they are not yet supported.|
 |Do you need Experience Cloud ID (ECID) for Customer Journey Analytics?|No, Customer Journey Analytics supports any ID in a dataset, whether that's ECID or any other ID you choose.|
-|What if you need to ETL your data prior to Customer Journey Analytics?|Today, you need to work with an ETL partner (Unifi or Informatica) if you need to transform your data before putting it into AEP. If you need ETL after the data’s already been ingested, AEP Query Services provides some limited options.|
+|What if you need to ETL (Extract, Transform, Load) your data prior to Customer Journey Analytics?|Today, you need to work with an ETL partner (Unifi or Informatica) if you need to transform your data before putting it into AEP. If you need ETL after the data’s already been ingested, AEP Query Services provides some limited options.|
 |**Stitching**||
 |Can Customer Journey Analytics "stitch" across devices or across datasets?|No. Customer Journey Analytics is a "bring-your-own-ID" analytics system. Plans for a good stitching approach are in the works.|
 |Is stitching from anonymous behavior to authenticated behavior supported?|No, not yet.|
@@ -28,5 +28,5 @@ description: Customer Journey Analytics - Frequently Asked Questions.
 |Where are all my session and variable persistence settings now?|Customer Journey Analytics applies all of these settings at report time, and these settings now live in Data Views. Changes to these settings are now retroactive, and you can have multiple versions by using multiple Data Views!|
 |What happens to our existing segments/calculated metrics?|Customer Journey Analytics no longer uses eVars, props, or events and instead uses any AEP schema. This means none of the existing segments or calc metrics are compatible with Customer Journey Analytics.|
 |How does Customer Journey Analytics handle `Uniques Exceeded` limitations?|Customer Journey Analytics has no unique value limitations, so no need to worry about them!|
-|If I am an existing [!DNL Data Workbench] customer, can I move to Customer Journey Analytics right now?|It depends. If you rely heavily on the Unified Customer Process (UCP), you will want to wait until we have stitching implemented. If you already have hight customer authentication rates, or if you want all your data in one place, or would like to get rid of eVars, Customer Journey Analytics might be a good fit.|
+|If I am an existing [!DNL Data Workbench] customer, can I move to Customer Journey Analytics right now?|It depends. If you rely heavily on the Unified Customer Process (UCP), you will want to wait until we have stitching implemented. If you already have high customer authentication rates, or if you want all your data in one place, or would like to get rid of eVars, Customer Journey Analytics might be a good fit.|
  
