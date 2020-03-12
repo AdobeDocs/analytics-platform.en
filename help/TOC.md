@@ -30,6 +30,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 + Connections {#cja-connections}
   + [Create a connection](connections/create-connection.md)
   + [Manage connections](connections/manage-connection.md)
+  + [Combined datasets](connections/combined-dataset.md)
 + Data Views {#cja-dataviews}
   + [Create a data view](data-views/create-dataview.md)
   + [Configure data views and attribution](data-views/configure-dataviews.md)
