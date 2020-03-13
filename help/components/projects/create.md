@@ -5,4 +5,4 @@ description: Get started using Analysis Workspace by creating a project.
 
 # Create a project
 
-Content coming soon!!
+Content coming soon!
