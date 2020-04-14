@@ -13,7 +13,7 @@ Keep this in mind before you apply attribution settings:
 
 * In the data views user interface, you specify the default attribution. **Note**: At a later date, you will be able to override these settings in Workspace projects. However, this functionality is not currently available.
 
-* Attribution settings in Customer Journey Analytics are non-destructive and retroactive. In other words, you cannot do irreparable harm to your datasets in Customer Journey Analytics. Even if you accidentally delete something, you can always go back to Experience Platform and bring the dataset back in. (Keep in mind, however, that bringing the dataset back in will incur additional cost.)
+* Attribution settings in Customer Journey Analytics are non-destructive and retroactive. In other words, you cannot do irreparable harm to your datasets in Customer Journey Analytics. Even if you accidentally delete something, you can always go back to [!UICONTROL Experience Platform] and bring the dataset back in. (Keep in mind, however, that bringing the dataset back in will incur additional cost.)
 
 * If you wish to have a dimension "behave" like a traditional eVar (conversion variable), you should configure it with "Last Touch Visit" attribution by default.
 
