@@ -22,7 +22,7 @@ Once you have created one or more connections, you can manage them in the [!UICO
 
     |Action|Description|
     |---|---|
-    |[!UICONTROL Delete]|Deleting a connection does not delete the dataset, since the data is still in Adobe Experience Platform.|
+    |[!UICONTROL Delete]|Deleting a connection does not delete the dataset, since the data is still in [!DNL Adobe Experience Platform].|
     |[!UICONTROL Rename]|You can rename the connection with a more descriptive name.|
     |[!UICONTROL Create Data View]|This link takes you to the [data view builder](/help/data-views/create-dataview.md).|
     |[!UICONTROL Start or stop data streaming]|"Streaming" means that if any new batches are added to any of the datasets in the connection, this new data will be brought into [!UICONTROL Customer Journey Analytics] for reporting.|

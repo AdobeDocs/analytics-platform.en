@@ -13,7 +13,7 @@ Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja
 
 ## Prerequisite
 
-Before you can create data views, you need to [set up one or more connections to Adobe Experience Platform datasets](/help/connections/create-connection.md).
+Before you can create data views, you need to [set up one or more connections to Experience Platform] datasets](/help/connections/create-connection.md).
 
 ## Configure Settings
 
@@ -23,7 +23,7 @@ Before you can create data views, you need to [set up one or more connections to
 
     |Session Setting| Definition|
     |---|---|
-    |Connection|This field links the data view to the connection that you established earlier, which contains the Platform dataset/s.|
+    |Connection|This field links the data view to the connection that you established earlier, which contains the [!UICONTROL Experience Platform] dataset/s.|
     |Name|Giving the data view a name is mandatory.|
     |Description|A detailed description is not mandatory, but recommended.|
     |Add Tags|Tags let you organize your data views into categories.|
