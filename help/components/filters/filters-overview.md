@@ -12,7 +12,7 @@ Filters can be based on attributes (browser type, device, number of visits, coun
 You can build and save filters in the Filter Builder, or generate filters from a Fallout visualization (in Workspace). In addition, filters can be used together as stacked filters. 
 
 >[!IMPORTANT]
-Filters are known as 'segments' in Adobe Analytics. We renamed segments to filters because Adobe Experience Platform has a different definition of "segment". A segment in AEP refers to...
+>Filters are known as 'segments' in Adobe Analytics. We renamed segments to filters because Adobe Experience Platform has a different definition of "segment".
 
 Filtering includes the [Filter Builder](/help/components/filters/create-filters.md) to construct filters and run a pre-test, and the [Filter Manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
 
