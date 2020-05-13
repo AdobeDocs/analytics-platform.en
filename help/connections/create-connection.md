@@ -52,3 +52,7 @@ Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja
 1. Click **[!UICONTROL Save]**. 
 
 The next step in the workflow is to [create a data view](/help/data-views/create-dataview.md).
+
+## Adobe Experience Platform sandboxes
+
+Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. Experience Platform allows you to select from different sandboxes and you can create connections in CJA to those sandboxes.
