@@ -17,11 +17,11 @@ Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja
 
 1. Click **[!UICONTROL Create new connection]** on the top right.
 
-  ![Create connection](assets/create-connection.png)
+    ![Create connection](assets/create-connection.png)
 
 1. First, choose a sandbox in Experience Platform that contains the dataset/s you want to create a connection to. Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain data sets. Sandboxes are used to control access to data sets. You cannot access data across sandboxes. 
 
-1. Once you have selected the sandbox, the left rail shows all the datasets in in that sandbox that you can pull from. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**. (If you have a lot of datasets to choose from, you can search for the right one(s) using the search bar above the list of datasets.)
+1. Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**. (If you have a lot of datasets to choose from, you can search for the right one(s) using the search bar above the list of datasets.)
 
 1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in. There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
 
