@@ -113,15 +113,6 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
       + [View anomalies in Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
       + [Turn off anomaly detection](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection-turnoff.md)
       + [Statistical techniques used in anomaly detection](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
-    + Contribution Analysis {#contribution-analysis}
-      + [Contribution Analysis overview](analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md)
-      + [Run Contribution Analysis](analysis-workspace/virtual-analyst/contribution-analysis/run-contribution-analysis.md)
-      + [Statistical techniques used in Contribution Analysis](analysis-workspace/virtual-analyst/contribution-analysis/statistics-contribution-analysis.md)
-    + Intelligent Alerts {#intelligent-alerts}
-      + [Intelligent Alerts overview](analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)
-      + [Alert Builder](analysis-workspace/c-intelligent-alerts/alert-builder.md)
-      + [Alert Manager](analysis-workspace/c-intelligent-alerts/alert-manager.md)
-      + [Intelligent Alerts - use cases](analysis-workspace/c-intelligent-alerts/alerts-use-cases.md)
   + Workspace FAQs {#workspace-faq}
     + [Frequently asked questions](analysis-workspace/workspace-faq/faq.md)
     + [Optimize Analysis Workspace performance](analysis-workspace/workspace-faq/optimizing-performance.md)
