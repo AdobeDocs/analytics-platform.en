@@ -42,7 +42,7 @@ We are introducing the concept of "active panel" versus "inactive panel" with th
 
 
     >[!NOTE]
-    >Sometimes, a banner displays when loading a project (or switching to a report suite) where not all of the components included in the project are included in the report suite. The missing components will be listed. Follow [these instructions](/help/admin/admin-console/permissions/product-profile.md) to set permissions to the required metrics/dimensions.
+    >Sometimes, a banner displays when loading a project (or switching to a report suite) where not all of the components included in the project are included in the report suite. The missing components will be listed. Follow [these instructions](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/product-profile.html) to set permissions to the required metrics/dimensions.
 
     ![](assets/incompat-rs.png)
 

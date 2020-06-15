@@ -23,7 +23,7 @@ Attribution is recalculated at report runtime, so there is no difference between
 
 **Are attribution models available in other Analytics capabilities, such as Data Feeds or Data Warehouse?**
 
-No. Attribution models use report time processing, which is only available in Analysis Workspace. See [Report time processing](/help/components/vrs/vrs-report-time-processing.md) for more information.
+No. Attribution models use report time processing, which is only available in Analysis Workspace. See [Report time processing](/https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-report-time-processing.html) for more information.
 
 **Are attribution models only available if I'm using a virtual report suite with report time processing enabled?**
 

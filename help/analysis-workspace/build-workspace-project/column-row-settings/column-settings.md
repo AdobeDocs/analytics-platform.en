@@ -58,4 +58,4 @@ Analysis Workspace supports [attribution](../../attribution/overview.md) for alm
 
 >[!MORELIKETHIS]
 >
->* [Manage data sources](/help/analyze/analysis-workspace/visualizations/t-sync-visualization.md)
+>* [Manage data sources](/help/analysis-workspace/visualizations/t-sync-visualization.md)

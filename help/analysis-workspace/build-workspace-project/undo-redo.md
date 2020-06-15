@@ -1,7 +1,6 @@
 ---
-description: Changes and enhancements to the Undo option in Analysis Workspace .
+description: Changes and enhancements to the Undo option in Analysis Workspace
 title: Undo and redo settings
-uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
 ---
 
 # Undo and redo settings
@@ -16,7 +15,7 @@ uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
 
 * You can undo/redo changing the report suite.
 * An undo/redo message displays near the project name - it indicates when an undo or redo is in progress.
-* You can use these [hotkeys](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md):
+* You can use these [hotkeys](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md):
 
     * CTRL(CMD)+Z for Undo 
     * CTRL(CMD)+SHIFT+Z for Redo

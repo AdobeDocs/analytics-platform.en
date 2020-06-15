@@ -8,7 +8,7 @@ uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
 
 Row settings vary depending on which component you have dragged into the table.
 
-You can also use [right-click actions in a table](/help/analyze/analysis-workspace/visualizations/freeform-table.md) to manage selected row(s).
+You can also use [right-click actions in a table](/help/analysis-workspace/visualizations/freeform-table.md) to manage selected row(s).
 
 To access table row settings, click the Settings icon next to a dimension, segment, metric, time period, or a breakdown within each of these:
 

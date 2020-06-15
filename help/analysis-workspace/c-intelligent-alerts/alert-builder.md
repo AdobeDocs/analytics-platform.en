@@ -83,12 +83,12 @@ Set the alert's expiration date.
 
 You can add AND or OR rules by clicking the gear icon.
 
-## Preview Alerts {#section_10D75BA7B77E4C5FAF58A719C082E070}
+## Preview Alerts
 
 The interactive alert preview shows you how often, approximately, an alert will fire based on past experience.
 
 For example, if you set the time granularity to daily, the preview can tell you that the alert would have been triggered for a certain metric x times during the last 30 or 31 days.
 
-If you find that too many alerts would have been triggered, you can adjust the threshold in the [Alert Manager](/help/components/c-alerts/alert-manager.md).
+If you find that too many alerts would have been triggered, you can adjust the threshold in the [Alert Manager](https://docs.adobe.com/content/help/en/analytics/components/alerts/alert-manager.html).
 
 ![](assets/alert_preview.png)
