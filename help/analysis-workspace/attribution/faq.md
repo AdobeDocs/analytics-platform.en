@@ -21,10 +21,6 @@ The choice of attribution lookback depends on your use case. If conversions typi
 
 Attribution is recalculated at report runtime, so there is no difference between a prop or eVar (or any other dimension) for the sake of attribution modeling. Props can persist using any lookback window or attribution model, and eVar allocation/expiration settings are ignored.
 
-**Are attribution models available in other Analytics capabilities, such as Data Feeds or Data Warehouse?**
-
-No. Attribution models use report time processing, which is only available in Analysis Workspace. See [Report time processing](/https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-report-time-processing.html) for more information.
-
 **Are attribution models only available if I'm using a virtual report suite with report time processing enabled?**
 
 Attribution models are available outside of virtual report suites. While they use report time processing on the backend, attribution models are available to both standard report suites and virtual report suites.

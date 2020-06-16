@@ -58,7 +58,7 @@ This article familiarizes you with the Analysis Workspace interface elements and
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/analysis-workspace-components.md"  > Components</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/overview.md"  > Components</a> </td> 
    <td colname="col2"> <p>Dimensions, metrics, segments, and date ranges that you can drag into projects. </p> </td> 
   </tr> 
   <tr> 
@@ -144,11 +144,11 @@ The right-click menu lets you perform the following actions, depending on which 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > Add time period column</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/date-ranges/time-comparison.md"  > Add time period column</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > Compare time periods</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/date-ranges/time-comparison.md"  > Compare time periods</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 

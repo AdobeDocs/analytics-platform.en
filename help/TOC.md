@@ -35,10 +35,8 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Perform basic analysis](analysis-workspace/perform-basic-analysis.md)
   + [Perform advanced analysis](analysis-workspace/perform-adv-analysis.md)
   + [Analysis Workspace use cases](analysis-workspace/freeform-analysis-examples-use-cases.md)
-  + [What's New in Analysis Workspace](analysis-workspace/new-features-in-analysis-workspace.md)
   + Build a Workspace project {#build-workspace-project}
     + [Create project - overview](analysis-workspace/build-workspace-project/freeform-overview.md)
-    + [Create a Workspace project](analysis-workspace/build-workspace-project/t-freeform-project.md)
     + [Templates](analysis-workspace/build-workspace-project/starter-projects.md)
     + [Multiple report suites in Workspace](analysis-workspace/build-workspace-project/multiple-report-suites.md)
     + Column and row settings {#column-row-settings}
@@ -114,7 +112,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Administration requirements](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility in Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
 + Components {#cja-components}
-+ [Components overview](/components/analysis-workspace-components.md)
++ [Components overview](/components/overview.md)
   + Dimensions {#dimensions}
     + [Preview dimensions](components/dimensions/view-dimensions.md)
     + [Break down dimensions](components/dimensions/t-breakdown-fa.md)
