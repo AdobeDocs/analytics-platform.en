@@ -10,13 +10,13 @@ In Analysis Workspace, a Freeform Table is not merely a data table, but also an 
 You can customize the table in a variety of ways:
 
 * **Rows**
-  * Each dimension row can show up to 400 rows, before pagination occurs. You can fit more rows into a single screen by adjusting the project's [view density](help/analysis-workspace/build-workspace-project/view-density.md).
+  * Each dimension row can show up to 400 rows, before pagination occurs. You can fit more rows into a single screen by adjusting the project's [view density](/help/analysis-workspace/build-workspace-project/view-density.md).
   * Rows can be broken down by additional components. To breakdown many rows at once, simply select multiple rows and then drag the next component on top of the selected rows. Learn more about [breakdowns](/help/components/dimensions/t-breakdown-fa.md).
-  * Rows can be [filtered](help/analysis-workspace/build-workspace-project/pagination-filtering-sorting.md) to show a reduced set of items. Additional settings are available under [Row settings](help/analysis-workspace/build-workspace-project/column-row-settings/table-settings.md).
+  * Rows can be [filtered](/help/analysis-workspace/build-workspace-project/pagination-filtering-sorting.md) to show a reduced set of items. Additional settings are available under [Row settings](/help/analysis-workspace/build-workspace-project/column-row-settings/table-settings.md).
 
 * **Columns**
   * Components can be stacked within columns to create segmented metrics, cross-tab analysis and more.
-  * Each column's view can be adjusted under the [column settings](help/analysis-workspace/build-workspace-project/column-row-settings/column-settings.md).
+  * Each column's view can be adjusted under the [column settings](/help/analysis-workspace/build-workspace-project/column-row-settings/column-settings.md).
   * Several actions are available through the [right-click menu](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/using-the-right-click-menu.html). The menu provides different actions depending on if you click the table header, rows, or columns.
 
 ## Freeform Table builder

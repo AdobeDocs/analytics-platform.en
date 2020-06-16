@@ -2,8 +2,6 @@
 description: Create a project and add components (dimensions, metrics, segments, date ranges) to the freeform panel.
 keywords: Analysis Workspace
 title: Create a Workspace project
-topic: Reports and analytics
-uuid: c1def77a-a76e-4699-9feb-1ede5b70b7ba
 ---
 
 # Create a Workspace project
@@ -58,7 +56,7 @@ This article familiarizes you with the Analysis Workspace interface elements and
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/overview.md"  > Components</a> </td> 
+   <td colname="col1"><a href="/help/components/overview.md"  > Components</a> </td> 
    <td colname="col2"> <p>Dimensions, metrics, segments, and date ranges that you can drag into projects. </p> </td> 
   </tr> 
   <tr> 
@@ -144,11 +142,11 @@ The right-click menu lets you perform the following actions, depending on which 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/date-ranges/time-comparison.md"  > Add time period column</a> </td> 
+   <td colname="col1"><a href="/help/components/date-ranges/time-comparison.md"  > Add time period column</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/date-ranges/time-comparison.md"  > Compare time periods</a> </td> 
+   <td colname="col1"><a href="/help/components/date-ranges/time-comparison.md"  > Compare time periods</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
@@ -160,7 +158,7 @@ The right-click menu lets you perform the following actions, depending on which 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/dimensions/t-breakdown-fa.md"  > Breakdown</a> 
+   <td colname="col1"><a href="/help/components/dimensions/t-breakdown-fa.md"  > Breakdown</a> 
     <ul id="ul_18C83B8514AD4C1C86C071AA8402CB5C"> 
      <li id="li_6CA84ED293EA4940A7495DA9D9121264">Dimensions </li> 
      <li id="li_EA16EE017B2E4A6998918706938A21BF">Metrics </li> 
@@ -182,7 +180,7 @@ The right-click menu lets you perform the following actions, depending on which 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Create segment from selection</a> </td> 
+   <td colname="col1"><a href="/help/components/t-freeform-project-segment.md"  > Create segment from selection</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 

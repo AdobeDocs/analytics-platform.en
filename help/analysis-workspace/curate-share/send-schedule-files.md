@@ -20,7 +20,7 @@ You can share and curate projects and send project files (in PDF or CSV formats)
  <tbody> 
   <tr> 
    <td colname="col1"> Share Project </td> 
-   <td colname="col2"><a href="/help/analyze/analysis-workspace/curate-share/share-projects.md"  > More information</a> </td> 
+   <td colname="col2"><a href="/help/analysis-workspace/curate-share/share-projects.md"  > More information</a> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Get Project Link </td> 

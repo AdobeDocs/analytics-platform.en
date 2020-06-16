@@ -27,7 +27,7 @@ While some of the complexity factors cannot be prevented, think about opportunit
 * With operators, "equals" will be faster than "contains", and "equals any of" will be faster than "contains any of".
 * With many criteria, AND operators will be faster than a series of OR operators. Also, look for opportunities to reduce many OR statements into a single "equals any of" statement.
 
-In addition, [classifications](/help/components/c-classifications2/c-classifications.md) can help consolidate many values into concise groups from which you can then create segments. Segmentation on classification groups provides performance benefits over segments that contain many OR statements or "contains" criteria.
+In addition, [classifications](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html) can help consolidate many values into concise groups from which you can then create segments. Segmentation on classification groups provides performance benefits over segments that contain many OR statements or "contains" criteria.
 
 ## Range of data requested
 
@@ -39,7 +39,7 @@ Where possible, don't pull in more data than you need.
 
 Remember that date ranges (purple components) override the panel date range. As a result, if you are using different date ranges as columns (e.g. last month, last week and yesterday columns), the panel date range does not have to span all of the column date ranges. It can simply be set to yesterday, because the data ranges used in the freeform table will override the panel. For more information on working with date ranges in Analysis Workspace, watch [this video](https://www.youtube.com/watch?v=ybmv6EBmhn0) .
 
-Use [date comparison options](/help/analyze/analysis-workspace/components/calendar-date-ranges/time-comparison.md) to pull in the specific time periods of data you want to compare. For example, if you need to show last month's data compared to same month last year, rather than setting the panel to the last 13 months of data, simply use the compare time periods option to show year-over-year performance.
+Use [date comparison options](/help/components/date-ranges/time-comparison.md) to pull in the specific time periods of data you want to compare. For example, if you need to show last month's data compared to same month last year, rather than setting the panel to the last 13 months of data, simply use the compare time periods option to show year-over-year performance.
 
 ## Number of visualizations
 
