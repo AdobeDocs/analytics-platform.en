@@ -4,9 +4,11 @@ keywords: Analysis Workspace
 title: What's New in Analysis Workspace
 ---
 
-<!--# What's New in Analysis Workspace
+# What's New in Analysis Workspace in Customer Journey Analytics
 
-## April 2020
+[content to follow]
+
+<!--## April 2020
 
 New feature released on April 16, 2020.
 
