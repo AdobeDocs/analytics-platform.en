@@ -6,6 +6,8 @@ uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 
 # Flow overview
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 The flow feature shows customer paths through your websites and apps.
 
 It lets you:

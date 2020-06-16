@@ -6,6 +6,8 @@ uuid: d8539e0b-eaa5-4a3d-8282-a37d47e2fe96
 
 # Share menu
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 You can share and curate projects and send project files (in PDF or CSV formats) immediately or on a schedule.
 
 **[!UICONTROL Workplace]** > **[!UICONTROL Share]** 

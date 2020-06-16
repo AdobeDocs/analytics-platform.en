@@ -5,6 +5,8 @@ title: Frequently asked questions and troubleshooting Workspace
 
 # Frequently asked questions
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 | Question | Answer |
 |--- |--- |
 |What are the prerequisites for using Analysis Workspace?| Using Analysis Workspace requires a working Customer Journey Analytics implementation. Make sure your organization is sending data to the Adobe Experience Platform before using the tool.|

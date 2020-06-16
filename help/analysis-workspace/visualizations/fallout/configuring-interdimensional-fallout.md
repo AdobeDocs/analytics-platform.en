@@ -6,6 +6,8 @@ uuid: 17520727-2d06-4dc2-a66d-66e3350bdda3
 
 # Inter-dimensional fallout
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 Fallout in Analysis Workspace lets you to mix and match dimensions and metrics as touchpoints in funnels and workflows. This gives you more flexibility in defining the user steps you want to investigate.
 
 **Example**: In addition to, say, a Page dimension, you can add action-based dimension items to a Fallout visualization. This lets you visualize how pages and certain actions interplay in customers' paths.

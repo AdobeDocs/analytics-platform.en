@@ -6,6 +6,8 @@ uuid: 270a7ea9-6485-4c83-8220-5a2200bd7200
 
 # View anomalies in Analysis Workspace
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 You can view anomalies in a table or in a line chart.
 
 ## View anomalies in a table {#section_869A87B92B574A38B017A980ED8A29C5}

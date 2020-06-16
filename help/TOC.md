@@ -34,7 +34,6 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Analysis Workspace overview](analysis-workspace/home.md)
   + [Perform basic analysis](analysis-workspace/perform-basic-analysis.md)
   + [Perform advanced analysis](analysis-workspace/perform-adv-analysis.md)
-  + [Analysis Workspace use cases](analysis-workspace/freeform-analysis-examples-use-cases.md)
   + Build a Workspace project {#build-workspace-project}
     + [Create project - overview](analysis-workspace/build-workspace-project/freeform-overview.md)
     + [Templates](analysis-workspace/build-workspace-project/starter-projects.md)
@@ -60,7 +59,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
       + [Fallout overview](analysis-workspace/visualizations/fallout/fallout-flow.md)
       + [Configure a fallout visualization](analysis-workspace/visualizations/fallout/configuring-fallout.md)
       + [Inter-dimensional fallout](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-      + [Apply segments in fallout analysis](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+      + [Apply filters in fallout analysis](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
     + Flow {#flow}
       + [Flow overview](analysis-workspace/visualizations/c-flow/flow.md)
       + [Configure a flow visualization](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
@@ -102,7 +101,6 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + Anomaly Detection {#anomaly-detection}
       + [Anomaly Detection overview](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
       + [View anomalies in Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
-      + [Turn off anomaly detection](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection-turnoff.md)
       + [Statistical techniques used in anomaly detection](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
   + Workspace FAQs {#workspace-faq}
     + [Frequently asked questions](analysis-workspace/workspace-faq/faq.md)

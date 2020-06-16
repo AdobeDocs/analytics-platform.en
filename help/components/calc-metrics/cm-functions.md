@@ -5,6 +5,8 @@ description: The Calculated Metrics Builder lets you apply statistical and mathe
 
 # Reference - basic functions
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 The Calculated Metrics Builder lets you apply statistical and mathematical functions to build Advanced Calculated Metrics.
 
 Here is an alphabetical list of the functions and their definitions.

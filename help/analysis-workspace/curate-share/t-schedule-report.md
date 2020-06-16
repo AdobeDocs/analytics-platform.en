@@ -6,6 +6,8 @@ title: Send file - schedule a project for delivery
 
 # Send file - schedule a project for delivery
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 Send an Analysis Workspace project via email, or schedule it for delivery.
 
 1. [Create an Analysis Workspace project](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/t-freeform-project.html) and save it.

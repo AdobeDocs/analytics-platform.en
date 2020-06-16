@@ -5,7 +5,7 @@ description: Get started using Analysis Workspace by creating a project.
 
 # Create a project
 
-There are two methods to create a project in Analysis Workspace:
+There are two methods to [create a project](/help/analysis-workspace/home.md) in Analysis Workspace:
 
 * Click [!UICONTROL Projects] in the header, then click [!UICONTROL Create New Project].
 * Click [!UICONTROL Components] > [!UICONTROL Projects], then click ![Add](../assets/add.png) [!UICONTROL Add].

@@ -5,6 +5,8 @@ description: Describes how to use basic visualizations to analyze data in Custom
 
 # Perform basic analysis
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 After you have created connections and data views, analyze the data you have brought in using the power and flexibility of Analysis Workspace. Feel free to experiment and drag in dimensions and metrics, change dimension and metrics attribution settings, friendly names, time zone, session settings, etc.
 
 Here is a sample of basic visualizations in Workspace. For example, you can

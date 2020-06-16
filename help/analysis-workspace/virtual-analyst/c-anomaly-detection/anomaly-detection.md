@@ -6,6 +6,8 @@ uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
 
 # Anomaly Detection overview
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 You can view and analyze data anomalies contextually within Analysis Workspace.
 
 [Anomaly Detection on YouTube](https://www.youtube.com/watch?v=krXyQCjXoeU&index=63&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:53)
@@ -31,3 +33,9 @@ Analysis Workspace's anomaly detection algorithm includes
 
 * Support for hourly, weekly, and monthly granularity, in addition to the existing daily granularity.
 * Awareness of seasonality (such as "Black Friday") and holidays.
+
+## Turn off anomaly detection
+
+You can turn off anomaly detection at the column level by going to the column settings and un-checking **[!UICONTROL Anomalies]**.
+
+![](assets/turnoff_anomalies.png)

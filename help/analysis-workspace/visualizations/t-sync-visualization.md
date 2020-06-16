@@ -6,13 +6,15 @@ title: Manage data sources
 
 # Manage data sources
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 Synchronizing visualizations lets you control which data table or data source corresponds to a visualization.
 
  **Tip:** You can tell which visualizations are related by the color of the dot next to the title. Matching colors mean that visualizations are based on the same data source.
 
 Managing a data source lets you show the data source or lock the selection. These settings determine how the visualization changes (or doesn't change) when new data comes in.
 
-1. [Create a project](/help/analysis-workspace/build-workspace-project/t-freeform-project.md) with a data table and a [visualization](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+1. [Create a project](/help/analysis-workspace/home.md) with a data table and a [visualization](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 1. In the data table, select the cells (data source) you want to associate with the visualization.
 1. In the visualization, click the dot next to the title to bring up the **[!UICONTROL Data Source]** dialog. Select **[!UICONTROL Show Data Source]** or **[!UICONTROL Lock Selection]**.
 

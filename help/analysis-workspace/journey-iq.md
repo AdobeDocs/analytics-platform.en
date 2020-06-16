@@ -5,6 +5,8 @@ description: Understand the features that make up Journey IQ, a set of features 
 
 # Journey IQ
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 Journey IQ is a set of features that provide easy to use, fully customizable visualizations and settings to better understand the customer's experience. It enables you to measure each touch point in a customer's journey, even across channels. Use these features to better understand where to re-engage customers, keep them loyal, and personalize their experiences along the way.
 
 ## Features

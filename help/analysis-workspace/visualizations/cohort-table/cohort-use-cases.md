@@ -8,6 +8,8 @@ uuid: 5ec46f84-5702-4bc1-a796-874a3abe87c9
 
 # [!UICONTROL Cohort Analysis] use cases
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 Use case examples for [!UICONTROL Cohort Analysis].
 
 ## App engagement use case 

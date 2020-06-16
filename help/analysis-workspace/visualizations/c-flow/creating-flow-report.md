@@ -6,6 +6,8 @@ uuid: ff36dc09-6175-43ed-a82a-630d28bca806
 
 # Configure a flow visualization
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 Flow lets you track a path through your pages or dimensions, such as eVars:
 
 * Entry (dimensions only) 

@@ -8,6 +8,8 @@ uuid: 5574230f-8f35-43ea-88d6-cb4960ff0bf4
 
 # Configure a [!UICONTROL Cohort Analysis] report
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 Create a cohort and run a [!UICONTROL Cohort Analysis] report in Analysis Workspace.
 
 1. In Analysis Workspace, click the **[!UICONTROL Visualizations]** icon in the left rail and drag a **[!UICONTROL Cohort Table]** to the canvas.

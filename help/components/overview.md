@@ -25,7 +25,7 @@ To access the Components panel, click the **[!UICONTROL Components]** icon in th
 
 ![](assets/components.png)
 
-See [Create a freeform analysis project](/help/analysis-workspace/build-workspace-project/t-freeform-project.md) for information about using Components in a project.
+See [Create a project](/help/analysis-workspace/home.md) for information about using Components in a project.
 
 ## Component actions
 
