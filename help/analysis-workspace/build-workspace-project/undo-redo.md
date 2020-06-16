@@ -5,6 +5,8 @@ title: Undo and redo settings
 
 # Undo and redo settings
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 **[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Undo/Redo]**
 
 * The **[!UICONTROL Redo]** option (to redo an undo) is in the **[!UICONTROL Edit]** menu.

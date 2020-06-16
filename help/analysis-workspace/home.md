@@ -50,7 +50,3 @@ Highlight Flow, Fallout, Cohort, Map
 
 ### Step 8: Curate and Share
 
-## More information
-
-* See [What's New in Analysis Workspace](/help/analysis-workspace/new-features-in-analysis-workspace.md) for updates about features.
-* Other things

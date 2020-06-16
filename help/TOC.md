@@ -38,7 +38,6 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + Build a Workspace project {#build-workspace-project}
     + [Create project - overview](analysis-workspace/build-workspace-project/freeform-overview.md)
     + [Templates](analysis-workspace/build-workspace-project/starter-projects.md)
-    + [Multiple report suites in Workspace](analysis-workspace/build-workspace-project/multiple-report-suites.md)
     + Column and row settings {#column-row-settings}
       + [Column settings](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
       + [Row settings](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)

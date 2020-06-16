@@ -5,6 +5,8 @@ description: How different types of attribution divide credit between dimension 
 
 # Attribution models and lookback windows
 
+>[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 The concept of attribution in Adobe Analytics requires two components:
 
 * **Attribution model:** The model describes the distribution of conversions to the hits in a group. For example, first touch or last touch.
