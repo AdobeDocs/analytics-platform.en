@@ -109,7 +109,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Administration requirements](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility in Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
 + Components {#cja-components}
-+ [Components overview](components/overview.md)
+  + [Components overview](components/overview.md)
   + Dimensions {#dimensions}
     + [Preview dimensions](components/dimensions/view-dimensions.md)
     + [Break down dimensions](components/dimensions/t-breakdown-fa.md)
