@@ -53,5 +53,5 @@ Assume you are a marketing analyst for an outdoor gear retailer and you are task
 
    You have already broken down the data in a way that can result in recommendations and cross-sells for your merchandising teams to implement in other campaigns and realize even more revenue for your company. You can do further breakdowns until you get the results you are looking for.
 
-   Now you can [share](/help/analyze/analysis-workspace/curate-share/curate.md) the report with those merchandising teams.
+   Now you can [share](/help/analysis-workspace/curate-share/curate.md) the report with those merchandising teams.
 

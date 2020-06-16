@@ -9,8 +9,6 @@ Virtual Analyst, a set of features part of Adobe Analytics, uses predictive algo
 
 ## Features {#features}
 
-Virtual Analyst comprises the following features:
+Virtual Analyst in Customer Journey Analysis consists of [Anomaly Detection:](c-anomaly-detection/anomaly-detection.md), which provides a statistical method to determine how a given metric has changed in relation to previous data.
 
-* [Anomaly Detection:](c-anomaly-detection/anomaly-detection.md) Provides a statistical method to determine how a given metric has changed in relation to previous data.
-* [Contribution Analysis:](contribution-analysis/run-contribution-analysis.md) Help determine the most contributing factors to anomalies in your data.
-* [Intelligent Alerts:](../c-intelligent-alerts/intellligent-alerts.md) Proactively identifies and notifies you of anomalies in your data, leading to faster insights.
+Contribution Analysis and Intelligent Alerts are not yet available in Customer Journey Analysis.

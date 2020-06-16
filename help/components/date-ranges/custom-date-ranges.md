@@ -14,7 +14,7 @@ Create custom date ranges in Analysis Workspace, and save them as Time component
 
 A date range applies at the panel level. To add a date range to your project, click **Panels** > *`<select panel>`*, and specify a new date range.
 
-## Date range for "two months ago" {#section_C4109C57CB444BB2A79CC8082BD67294}
+## Date range for "two months ago"
 
 The following custom date range shows a date range for "two months ago," with a Summary Change visualization showing directional change.
 
@@ -28,7 +28,7 @@ You can drag this custom date range into a column alongside a custom, monthly ro
 
 ![](assets/date-range-two-months-table.png)
 
-## Use a 7-day rolling date range {#section_7EF63B2E9FF54D2E9144C4F76956A8DD}
+## Use a 7-day rolling date range
 
 A date range applies to the panel level. To add a date range to your project, click **Actions** > **Add Panel**, and specify a new date range.
 

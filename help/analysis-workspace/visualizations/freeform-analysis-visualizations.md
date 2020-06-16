@@ -12,24 +12,24 @@ YouTube Video: [Visualization Types in Analysis Workspace](https://www.youtube.c
 
 |Visualization name| Description|
 |---|---|
-|[Area](/help/analyze/analysis-workspace/visualizations/area.md)|like a line graph, but with a colored area below the line. Use an area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics.|
-|[Bar](/help/analyze/analysis-workspace/visualizations/bar.md)|Shows vertical bars representing various values across one or more metrics.|
-|[Bullet graph](/help/analyze/analysis-workspace/visualizations/bullet-graph.md)|Shows how a value you are interested in compares to or measures against other performance ranges (goals).|
-|[Cohort table](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)|A *`cohort`* is a group of people sharing common characteristics over a specified period. Cohort Analysis is useful, for example, when you want to learn how a cohort engages with a brand. You can easily spot changes in trends, then respond accordingly.|
-|[Donut](/help/analyze/analysis-workspace/visualizations/donut.md)|Similar to a pie chart, this visualization shows data as parts or segments of a whole.|
-|[Fallout](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md)|Fallout reports show where visitors left (fell out) and continued through (fell through) a predefined sequence of pages.|
-|[Flow](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md)|Shows customer paths through your websites and apps.|
-|[Freeform table](/help/analyze/analysis-workspace/visualizations/freeform-table.md)|A Freeform table is not merely a data table, but also an interactive visualization.|
-|[Histogram](/help/analyze/analysis-workspace/visualizations/histogram.md)|A histogram is similar to a bar chart, but it groups numbers into ranges (buckets).|
-|[Horizontal bar](/help/analyze/analysis-workspace/visualizations/horizontal-bar.md)|Shows horizontal bars representing various values across one or more metrics.|
-|[Line](/help/analyze/analysis-workspace/visualizations/line.md)|Represents metrics using a line in order to show how values change over a period of time. A line chart can be used only when time is used as a dimension.|
-|[Map](/help/analyze/analysis-workspace/visualizations/map-visualization.md)|Lets you build a visual map of any metric (including calculated metrics).|
-|[Scatterplot](/help/analyze/analysis-workspace/visualizations/scatterplot.md)|Shows the relationship between dimension values and up to three metrics.|
-|[Summary number](/help/analyze/analysis-workspace/visualizations/summary-number-change.md)|Depending on which cell is selected, this visualization shows totals and summaries. |
-|[Summary change](/help/analyze/analysis-workspace/visualizations/summary-number-change.md)|Depending on which cells are selected, this visualization compares cells to each other.|
-|[Text](/help/analyze/analysis-workspace/visualizations/text.md)|Lets you add user-defined text to your Workspace.|
-|[Treemap](/help/analyze/analysis-workspace/visualizations/treemap.md)|Displays hierarchical (tree-structured) data as a set of nested rectangles.|
-|[Venn](/help/analyze/analysis-workspace/visualizations/venn.md)|Lets you drag in up to 3 segments (from Components) and one metric to build a Venn diagram.|
+|[Area](/help/analysis-workspace/visualizations/area.md)|like a line graph, but with a colored area below the line. Use an area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics.|
+|[Bar](/help/analysis-workspace/visualizations/bar.md)|Shows vertical bars representing various values across one or more metrics.|
+|[Bullet graph](/help/analysis-workspace/visualizations/bullet-graph.md)|Shows how a value you are interested in compares to or measures against other performance ranges (goals).|
+|[Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)|A *`cohort`* is a group of people sharing common characteristics over a specified period. Cohort Analysis is useful, for example, when you want to learn how a cohort engages with a brand. You can easily spot changes in trends, then respond accordingly.|
+|[Donut](/help/analysis-workspace/visualizations/donut.md)|Similar to a pie chart, this visualization shows data as parts or segments of a whole.|
+|[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)|Fallout reports show where visitors left (fell out) and continued through (fell through) a predefined sequence of pages.|
+|[Flow](/help/analysis-workspace/visualizations/c-flow/flow.md)|Shows customer paths through your websites and apps.|
+|[Freeform table](/help/analysis-workspace/visualizations/freeform-table.md)|A Freeform table is not merely a data table, but also an interactive visualization.|
+|[Histogram](/help/analysis-workspace/visualizations/histogram.md)|A histogram is similar to a bar chart, but it groups numbers into ranges (buckets).|
+|[Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md)|Shows horizontal bars representing various values across one or more metrics.|
+|[Line](/help/analysis-workspace/visualizations/line.md)|Represents metrics using a line in order to show how values change over a period of time. A line chart can be used only when time is used as a dimension.|
+|[Map](/help/analysis-workspace/visualizations/map-visualization.md)|Lets you build a visual map of any metric (including calculated metrics).|
+|[Scatterplot](/help/analysis-workspace/visualizations/scatterplot.md)|Shows the relationship between dimension values and up to three metrics.|
+|[Summary number](/help/analysis-workspace/visualizations/summary-number-change.md)|Depending on which cell is selected, this visualization shows totals and summaries. |
+|[Summary change](/help/analysis-workspace/visualizations/summary-number-change.md)|Depending on which cells are selected, this visualization compares cells to each other.|
+|[Text](/help/analysis-workspace/visualizations/text.md)|Lets you add user-defined text to your Workspace.|
+|[Treemap](/help/analysis-workspace/visualizations/treemap.md)|Displays hierarchical (tree-structured) data as a set of nested rectangles.|
+|[Venn](/help/analysis-workspace/visualizations/venn.md)|Lets you drag in up to 3 segments (from Components) and one metric to build a Venn diagram.|
 
 ## Visualizations panel {#section_DC07F032FBEF4046A40F7B95C28DA018}
 
@@ -45,7 +45,7 @@ To access [!UICONTROL Visualization Settings], drag a visualization to the [!UIC
 
 >[!IMPORTANT]
 >
->Which visualization settings are visible depends on the visualization. Not all settings apply to all visualizations. In addition, some advanced settings appear **only** for specific visualizations, such as the [Histogram settings](/help/analyze/analysis-workspace/visualizations/histogram.md#section_09D774C584864D4CA6B5672DC2927477).
+>Which visualization settings are visible depends on the visualization. Not all settings apply to all visualizations. In addition, some advanced settings appear **only** for specific visualizations, such as the [Histogram settings](/help/analysis-workspace/visualizations/histogram.md#section_09D774C584864D4CA6B5672DC2927477).
 
 ![](assets/visualization_settings.png)
 

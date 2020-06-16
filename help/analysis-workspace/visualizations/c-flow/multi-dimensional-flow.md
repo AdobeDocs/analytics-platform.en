@@ -14,7 +14,7 @@ A dimension label at the top of each Flow column makes using multiple dimensions
 
 We will look at 2 use cases: an app use case and a web use case.
 
-## Use case one: app {#section_3D31D37B9C9F4134AE46C96291E41294}
+## Use case one: app
 
 The [!UICONTROL Action Name] dimension was added to the flow, with the top returned item being [!UICONTROL ItemAdded]:
 
@@ -44,7 +44,7 @@ This is what happens if you add another Action Name dimension onto the end of th
 
 This will allow for some deep insights and possible changes to the app you are analyzing.
 
-## Use case two: web {#section_8D55983FA0C84926995270052AE01CD8}
+## Use case two: web
 
 This use case shows how you can analyze which campaigns drive the most entries to a web site.
 

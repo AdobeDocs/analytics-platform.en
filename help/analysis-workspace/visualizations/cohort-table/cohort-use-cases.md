@@ -10,7 +10,7 @@ uuid: 5ec46f84-5702-4bc1-a796-874a3abe87c9
 
 Use case examples for [!UICONTROL Cohort Analysis].
 
-## App engagement use case {#section_ADEC6EE79F1846319B2E0D9544CC5E40}
+## App engagement use case 
 
 Suppose that you want to analyze how users who install your app engage with it over time. Do they install it and never use it? Do they use it for a while, then fall away? Or do they remain engaged over time?
 
@@ -24,7 +24,7 @@ You can create a six-month [!UICONTROL Cohort Analysis]:
 
 Visitors do not count as *`engaged`* in subsequent months unless they are having a session or at least launching the app. [!UICONTROL Cohort Analysis] would then show you patterns in usage where *`App Install`* always occurs on Month 0. You might notice that usage dips in Month 2, regardless of when users installed the app. (For those who installed the app in January 2015, Month 2 is March 2015. For those who installed the app in February 2015, Month 2 is April 2015, and so on.) This analysis allows you send an email or a push message to all users during the second month after they install the app to remind them to use the app.
 
-## Subscription use case {#section_FDECB16766CF415BB84AE46BA491FB5F}
+## Subscription use case 
 
 You work at Adobe.com and offer a free Creative Cloud subscription. The goal is for users to upgrade from the free version to the 30-day trial version or, ultimately, the paid version.
 

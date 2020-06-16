@@ -21,14 +21,14 @@ Here is a list of known limitations in Analysis Workspace and its related compon
 * [!UICONTROL Flow]: Entry/Exit dimensions, e.g. [!UICONTROL Entry page], cannot be used in Flow.
 * [!UICONTROL Cohort]: Non-integers cannot be used as Cohort criteria.
 
-## Panels
+<!--## Panels
 
-* Segment Comparison: The [!UICONTROL Everyone Else] segment does not get created if a segment template is used in the initial drop zone.
+* Segment Comparison: The [!UICONTROL Everyone Else] segment does not get created if a segment template is used in the initial drop zone.<-->
 
-## Components > Segments
+## Components > Filters
 
 * Certain metrics and dimensions are not segmentable, such as [!UICONTROL Occurrences], [!UICONTROL Unique Visitors], etc.
-* Certain components and operators are unavailable if a segment is created from Workspace (as opposed to being created from [!UICONTROL Components > Segments]). For example, IP Address.
+* Certain components and operators are unavailable if a filter is created from Workspace (as opposed to being created from [!UICONTROL Components > Filters]). For example, IP Address.
 
 ## Components > Calculated Metrics
 
@@ -39,10 +39,6 @@ Here is a list of known limitations in Analysis Workspace and its related compon
 ## Components > Date Ranges
 
 * Custom date ranges do not support [!UICONTROL This day last year], [!UICONTROL This day last month], etc.
-
-## Components > Virtual Reports Suites
-
-* When report time processing is enabled, certain components are not supported. For a full list, see [Report Time Processing](/help/components/vrs/vrs-report-time-processing.md).
 
 ## Components > Report Settings
 

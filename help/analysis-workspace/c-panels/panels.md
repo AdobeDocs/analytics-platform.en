@@ -5,20 +5,18 @@ title: Panels overview
 
 # Panels overview
 
-A panel is a collection of tables & visualizations. You can access panels from the top left icon in Workspace. Panels are helpful when you want to organize your projects according to time periods, business units, geography, etc. These six types of panels are available in Analysis Workspace:
+A panel is a collection of tables & visualizations. You can access panels from the top left icon in Workspace. Panels are helpful when you want to organize your projects according to time periods, business units, geography, etc. These four types of panels are available in Analysis Workspace for Customer Journey Analytics:
 
 * [Blank panel](blank-panel.md)
 * [Quick Insights panel](quickinsight.md)
-* [Analytics for Target panel](a4t-panel.md) (coming soon)
 * [Attribution panel](attribution.md)
 * [Freeform panel](freeform-panel.md)
-* [Segment Comparison panel](c-segment-comparison/segment-comparison.md)
 
-Quick Insights, Blank and Freeform panels are great places to start your analysis, while Analytics for Target, Attribution IQ and Segment Comparison lend themselves to more advanced analyses. A `"+"` button is available in projects so you can add blank panels at any time.
+Quick Insights, Blank and Freeform panels are great places to start your analysis, while the Attribution IQ panel lends itself to more advanced analyses. A `"+"` button is available in projects so you can add blank panels at any time.
 
 The default starting panel is the Freeform panel, but you can make the [blank panel](/help/analyze/analysis-workspace/c-panels/blank-panel.md) your default as well.
 
-## Drop-down Filters in Panels {#section_D2828EEDD52944528E87F470EAB581CF}
+## Drop-down filters in panels
 
 The panel drop zone has drop-down filtering capabilities. These filters let you interact with the project data in a controlled way so that you can do deep-dive analysis, simplify your projects, and/or share insights with others.
 

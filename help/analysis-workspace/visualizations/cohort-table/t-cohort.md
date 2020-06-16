@@ -42,11 +42,11 @@ Create a cohort and run a [!UICONTROL Cohort Analysis] report in Analysis Worksp
 
    Select cells (contiguous or noncontiguous), then right-click > **[!UICONTROL Create Segment From Selection]**.
 
-1. In the [Segment Builder](/help/components/c-segmentation/c-segmentation-workflow/seg-build.md), further edit the segment, then click **[!UICONTROL Save]**.
+1. In the [Filter Builder](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html), further edit the segment, then click **[!UICONTROL Save]**.
 
    The saved segment is available for use in the [!UICONTROL Segment] panel in [!UICONTROL Analysis Workspace].
 1. Name and save your cohort project.
-1. (Optional) [Curate and share](/help/analyze/analysis-workspace/curate-share/curate.md) the project components.
+1. (Optional) [Curate and share](/help/analysis-workspace/curate-share/curate.md) the project components.
 
    >[!NOTE]
    >

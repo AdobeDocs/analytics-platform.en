@@ -10,7 +10,7 @@ Anomaly detection in Analysis Workspace uses a series of advanced statistical te
 
 Depending on the date granularity used in the report, 3 different statistical techniques are used - specifically for hourly, daily, weekly/monthly anomaly detection. Each statistical technique is outlined below.
 
-## Anomaly detection for daily granularity {#section_758ACA3C0A6B4D399563ECABFB8316FA}
+## Anomaly detection for daily granularity
 
 For daily granularity reports, the algorithm considers several important factors to deliver the most accurate results possible. First, the algorithm determines which type of model to apply based on available data of which we select between one of two classes - a time-series-based model or an outlier-detection model (called functional filtering).
 
@@ -51,13 +51,13 @@ Notice the dramatic improvement of performance on Christmas Day and New Year's D
 
 ![](assets/anomaly_statistics.png)
 
-## Anomaly detection for hourly granularity {#section_014C9E9209AF43F8A03D5D46E3B3AEE7}
+## Anomaly detection for hourly granularity
 
 Hourly data relies on the same time series algorithm approach that the daily granularity algorithm does. However, it relies heavily on two trend patterns: the 24-hour cycle as well as the weekend/weekday cycle. To capture these two seasonal effects, the hourly algorithm constructs two separate models for a weekend and a weekday using the same approach outlined above.
 
 The training windows for hourly trends relies on a 336-hour lookback window.
 
-## Anomaly detection for weekly and monthly granularities {#section_5D421576BFBC4B24A58DFCC0A6407545}
+## Anomaly detection for weekly and monthly granularities
 
 Weekly and monthly trends do not exhibit the same weekly or daily trends found at daily or hourly granularities, so as such a separate algorithm is used. For weekly and monthly, a two-step outlier detection approach is used known as the Generalized Extreme Studentized Deviate (GESD) test. This test considers the maximum number of expected anomalies combined with the adjusted box-plot approach (a non-parametric method for outlier discovery) to determine the maximum number of outliers. The two steps are:
 

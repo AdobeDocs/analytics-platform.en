@@ -32,11 +32,11 @@ You can share and curate projects and send project files (in PDF or CSV formats)
   </tr> 
   <tr> 
    <td colname="col1"> Send File on Schedule </td> 
-   <td colname="col2"> <p>Specify the start date, the interval and frequency, and the end date. <a href="/help/analyze/analysis-workspace/curate-share/schedule-projects.md"  > More information</a> </p> </td> 
+   <td colname="col2"> <p>Specify the start date, the interval and frequency, and the end date. <a href="/help/analysis-workspace/curate-share/schedule-projects.md"  > More information</a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Curate Project Data </td> 
-   <td colname="col2"> <p><a href="/help/analyze/analysis-workspace/curate-share/curate.md"  > More information</a> </p> </td> 
+   <td colname="col2"> <p><a href="/help/analysis-workspace/curate-share/curate.md"  > More information</a> </p> </td> 
   </tr> 
  </tbody> 
 </table>

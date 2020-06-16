@@ -19,7 +19,7 @@ You can add recipients to one of three project roles. Project roles are tied to 
 |---|---|
 |Can edit|Recipients can Save changes to a project and function as co-owners.<br>This role is useful if you want to collaborate with colleagues on a project.|
 |Can duplicate|Recipients can Save As and have access to the left rail. Interactions are not limited.<br>This role is useful if you want to share a project to users who understand your organization’s data and how to use Analysis Workspace, but you do not want your saved project altered.|
-|Can view|Recipients cannot Save As and do not have access to the left rail. Interactions are also limited.<br>This role is useful if you want to share a project to users that are less familiar with your organization’s data structure, Analysis Workspace or Adobe Analytics generally. However, you still want them to consume data and insights in a safe environment.<br>Learn more about the [Can view project experience](/help/analyze/analysis-workspace/curate-share/view-only-projects.md).|
+|Can view|Recipients cannot Save As and do not have access to the left rail. Interactions are also limited.<br>This role is useful if you want to share a project to users that are less familiar with your organization’s data structure, Analysis Workspace or Adobe Analytics generally. However, you still want them to consume data and insights in a safe environment.<br>Learn more about the [Can view project experience](/help/analysis-workspace/curate-share/view-only-projects.md).|
 
 ### No role assigned
 

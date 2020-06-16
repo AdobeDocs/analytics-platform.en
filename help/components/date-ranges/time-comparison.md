@@ -8,7 +8,7 @@ uuid: ef18f9d9-b6ad-4859-b7c9-9750ca0df519
 
 Date Comparison in Analysis Workspace lets you take any column containing a date range and create a common date comparison, such as: year-over-year, quarter-over-quarter, month-over-month, etc.
 
-## Compare time periods {#section_C4E36BFE0F5C4378A74E705747C9DEE4}
+## Compare time periods
 
 Analysis requires context, and often that context is provided by a previous time period. For example, the question "How much better/worse are we doing than at this time last year?" is fundamental to understanding your business. Date Comparison automatically include a "difference" column, which shows the percentage change compared to a specified time period.
 
@@ -45,7 +45,7 @@ Analysis requires context, and often that context is provided by a previous time
 
    Note that in order to show the percentage change in the bar chart, you have to have the [!UICONTROL Percentages] setting checked in the [!UICONTROL Visualization Settings].
 
-## Add a time period column for comparison {#section_93CC2B4F48504125BEC104046A32EB93}
+## Add a time period column for comparison
 
 You can now add a time period to each column in a table, enabling you to add a time period that is different from the one your calendar is set to. This is another way you can compare dates.
 

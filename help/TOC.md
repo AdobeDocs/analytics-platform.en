@@ -23,6 +23,13 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Frequently asked questions](getting-started/cja-faq.md)
   + [Customer Journey Analytics feature support](getting-started/cja-aa.md)
   + [CJA glossary](getting-started/cja-glossary.md)
++ Connections {#cja-connections}
+  + [Create a connection](connections/create-connection.md)
+  + [Manage connections](connections/manage-connection.md)
+  + [Combined datasets](connections/combined-dataset.md)
++ Data Views {#cja-dataviews}
+  + [Create a data view](data-views/create-dataview.md)
+  + [Configure data views and attribution](data-views/configure-dataviews.md)
 + Workspace projects {#cja-workspace}
   + [Analysis Workspace overview](analysis-workspace/home.md)
   + [Perform basic analysis](analysis-workspace/perform-basic-analysis.md)
@@ -44,18 +51,6 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Color Palettes](analysis-workspace/build-workspace-project/color-palettes.md)
     + [View Density](analysis-workspace/build-workspace-project/view-density.md)
     + [Workspace Totals](analysis-workspace/build-workspace-project/workspace-totals.md)
-  + Components {#components}
-    + [Components overview](analysis-workspace/components/analysis-workspace-components.md)
-    + Dimensions {#dimensions}
-      + [Preview dimensions](analysis-workspace/components/dimensions/view-dimensions.md)
-      + [Break down dimensions](analysis-workspace/components/dimensions/t-breakdown-fa.md)
-      + [Time-parting dimensions](analysis-workspace/components/dimensions/time-parting-dimensions.md)
-    + [Metrics](analysis-workspace/components/apply-create-metrics.md)
-    + [Filters](analysis-workspace/components/t-freeform-project-segment.md)
-    + Calendar and date ranges {#calendar-date-ranges}
-      + [Calendar and date ranges overview](analysis-workspace/components/calendar-date-ranges/calendar.md)
-      + [Create custom date ranges](analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md)
-      + [Date comparison](analysis-workspace/components/calendar-date-ranges/time-comparison.md)
   + Visualizations {#visualizations}
     + [Visualizations overview](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
     + [Manage data sources](analysis-workspace/visualizations/t-sync-visualization.md)
@@ -105,7 +100,6 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Attribution models and lookback windows](analysis-workspace/attribution/models.md)
     + [Algorithmic attribution](analysis-workspace/attribution/algorithmic.md)
     + [FAQ](analysis-workspace/attribution/faq.md)
-  + [Segment IQ](analysis-workspace/segment-iq.md)
   + Virtual Analyst {#virtual-analyst}
     + [Virtual Analyst overview](analysis-workspace/virtual-analyst/overview.md)
     + Anomaly Detection {#anomaly-detection}
@@ -119,14 +113,13 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Analysis Workspace limitations](analysis-workspace/workspace-faq/aw-limitations.md)
     + [Administration requirements](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility in Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
-+ Connections {#cja-connections}
-  + [Create a connection](connections/create-connection.md)
-  + [Manage connections](connections/manage-connection.md)
-  + [Combined datasets](connections/combined-dataset.md)
-+ Data Views {#cja-dataviews}
-  + [Create a data view](data-views/create-dataview.md)
-  + [Configure data views and attribution](data-views/configure-dataviews.md)
 + Components {#cja-components}
++ [Components overview](/components/analysis-workspace-components.md)
+  + Dimensions {#dimensions}
+    + [Preview dimensions](components/dimensions/view-dimensions.md)
+    + [Break down dimensions](components/dimensions/t-breakdown-fa.md)
+    + [Time-parting dimensions](components/dimensions/time-parting-dimensions.md)
+  + [Metrics](components/apply-create-metrics.md)
   + Filters {#cja-filters}
     + [Filters overview](components/filters/filters-overview.md)
     + [Create a filter](components/filters/create-filters.md)
@@ -141,10 +134,9 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Date ranges overview](components/date-ranges/overview.md)
     + [Create a date range](components/date-ranges/create.md)
     + [Manage date ranges](components/date-ranges/manage.md)
-  + Projects {cja-projects}
-    + [Projects overview](components/projects/overview.md)
-    + [Create a project](components/projects/create.md)
-    + [Manage projects](components/projects/manage.md)
+    + [Calendar overview](components/date-ranges/calendar.md)
+    + [Create custom date ranges](/components/date-ranges/custom-date-ranges.md)
+    + [Date comparison](components/date-ranges/time-comparison.md)
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
 + Privacy {#cja-privacy}

@@ -14,13 +14,13 @@ It lets you:
 * Analyze where customers go before and after specified checkpoints, such as entry, a specific dimension, or exit 
 * Create segments by designating a specific point in a chosen path
 
->[!NOTE] For information on how the results of applying segments to Flow might differ between Analysis Workspace and Reports & Analytics/Ad Hoc Analysis, see [Segmentation as a Foundation for Flow & Fallout](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md).
+>[!NOTE] For information on how the results of applying segments to Flow might differ between Analysis Workspace and Reports & Analytics/Ad Hoc Analysis, see [Segmentation as a Foundation for Flow & Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md).
 
 [Flow Visualization on YouTube](https://www.youtube.com/watch?v=3R1HTM7y_RM&index=55&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)(4:56)
 
 ## Inter-Dimensional Flows {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
-You can show the [flow between dimensions](/help/analyze/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). For example, you might combine pages and departments in one diagram. In this case, your flow might go from the home page, to the Men page, then to the Shoes department.
+You can show the [flow between dimensions](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). For example, you might combine pages and departments in one diagram. In this case, your flow might go from the home page, to the Men page, then to the Shoes department.
 
 Each column could show a different dimension. Drag a dimension and drop in a drop zone to add that dimension to the diagram.
 
