@@ -1,9 +1,9 @@
 ---
-title: Use CJA with arrays of objects
+title: Using arrays of objects
 description: Understand how CJA reports on data hierarchies.
 ---
 
-# Use CJA with arrays of objects
+# Using arrays of objects
 
 Some platform schemas can have object arrays. One of the most common examples would be a shopping cart, which contain multiple products. Each product has a name, SKU, category, price, quantity, and any other dimensions you want to track. All of these facets have separate requirements, but must all fit into the same hit.
 
@@ -199,7 +199,7 @@ A product order exists without a warranty name tied to it, so the dimension valu
       "SKU": "1234", 
       "category": "Washing Machines", 
       "name": "LG Washing Machine 2000", 
-      "orders": 1, 
++      "orders": 1, 
       "revenue": 1600, 
       "units": 1,
       "order_id":"abc123", 
@@ -232,3 +232,30 @@ A product order exists without a warranty name tied to it, so the dimension valu
 +  "timestamp": 1534219229
 +}
 ```
+
+Note the orders that don't have a name tied to them. These are the orders attributed to the 'Unspecified' dimension value.
+
+### Combining metrics
+
+CJA does not natively combine similarly named metrics if they are on different object levels.
+
+| `product : category` | `product : revenue` | `product : warranty : revenue` |
+| --- | --- | --- |
+| `Washing Machines` | `1600` | `250` |
+| `Dryers` | `500` | `0` |
+| `Total` | `2100` | `250` |
+
+However, you can create a calculated metric that combines the desired metrics:
+
+Calculated metric "Total revenue": `[product : revenue] + [product : warranty : revenue]`
+
+Applying this calculated metric displays the desired results:
+
+| `product : warranty : name` | `Total revenue (calculated metric)` |
+| --- | --- |
+| `Washing Machines` | `1850` |
+| `Dryers` | `500` |
+| `Total` | `2350` |
+
+## Persistence examples
+
