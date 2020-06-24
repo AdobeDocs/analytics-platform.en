@@ -8,17 +8,17 @@ description: Customer Journey Analytics - Frequently Asked Questions.
 |Question|Answer|
 |---|---|
 |**Prerequisites**||
-|Do you need Device Graph or Device Coop for Customer Journey Analytics?|No, Private Device Graph or Device Coop are not required for Customer Journey Analytics. In fact, they are not yet supported.|
-|Do you need Experience Cloud ID (ECID) for Customer Journey Analytics?|No, Customer Journey Analytics supports any ID in a dataset, whether that's ECID or any other ID you choose.|
+|Do you need Device Graph or Device Coop for [!UICONTROL Customer Journey Analytics]?|No, Private Device Graph or Device Coop are not required for [!UICONTROL Customer Journey Analytics]. In fact, they are not yet supported.|
+|Do you need Experience Cloud ID (ECID) for [!UICONTROL Customer Journey Analytics]?|No, [!UICONTROL Customer Journey Analytics] supports any ID in a dataset, whether that's ECID or any other ID you choose.|
 |What if you need to ETL (Extract, Transform, Load) your data prior to Customer Journey Analytics?|Today, you need to work with an ETL partner (Unifi or Informatica) if you need to transform your data before putting it into AEP. If you need ETL after the data’s already been ingested, AEP Query Services provides some limited options.|
 |**Stitching**||
-|Can Customer Journey Analytics "stitch" across devices or across datasets?|No. Customer Journey Analytics is a "bring-your-own-ID" analytics system. Plans for a good stitching approach are in the works.|
+|Can [!UICONTROL Customer Journey Analytics] "stitch" across devices or across datasets?|No. [!UICONTROL Customer Journey Analytics] is a "bring-your-own-ID" analytics system. Plans for a good stitching approach are in the works.|
 |Is stitching from anonymous behavior to authenticated behavior supported?|No, not yet.|
-|**Getting data into Customer Journey Analytics**||
-|What is the expected latency for Customer Journey Analytics on Platform?|<ul><li>Under normal load: < 60 minutes<br>**Note:** In case of an unusually high volume of data flow through the pipeline, it could take up to 24 hours.</li><li>Backfill data (up to 10 Billion events): < 4 weeks</li></ul>|
-|How do you connect online data to offline data in Customer Journey Analytics?|Customer Journey Analytics is a "bring your own ID" analytics system. As long as the person ID matches between datasets, Customer Journey Analytics can connect segments, attribution, flow, fallout, etc. across datasets.|
-|How do I bring my offline data into Customer Journey Analytics?|Customers must first bring any data to AEP before they can use it with Customer Journey Analytics. The Experience Platform's data on-boarding team can help provide recommendations or consulting for customers if needed.|
-|How do I get Analytics data into Customer Journey Analytics?|Analytics data can be connected to AEP through the Analytics Data Connector. Most Analytics fields are brought over in XDM format, but other fields are not yet available (like Marketing Channels dimensions).|
+|**Getting data into [!UICONTROL Customer Journey Analytics]**||
+|What is the expected latency for [!UICONTROL Customer Journey Analytics] on [!UICONTROL Experience Platform]?|<ul><li>Under normal load: < 60 minutes<br>**Note:** In case of an unusually high volume of data flow through the pipeline, it could take up to 24 hours.</li><li>Backfill data (up to 10 Billion events): < 4 weeks</li></ul>|
+|How do you connect online data to offline data in [!UICONTROL Customer Journey Analytics]?|[!UICONTROL Customer Journey Analytics] is a "bring your own ID" analytics system. As long as the person ID matches between datasets, [!UICONTROL Customer Journey Analytics] can connect segments, attribution, flow, fallout, etc. across datasets.|
+|How do I bring my offline data into Customer Journey Analytics?|Customers must first bring any data to Experience Platform before they can use it with Customer Journey Analytics. The Experience Platform's data on-boarding team can help provide recommendations or consulting for customers if needed.|
+|How do I get Analytics data into Customer Journey Analytics?|Analytics data can be connected to Experience Platform through the Analytics Data Connector. Most Analytics fields are brought over in XDM format, but other fields are not yet available (like Marketing Channels dimensions).|
 |How long does it take to assemble dataset elements into a data view?| A few hours to get started, and a few days to backfill the last 13 months of data.|
 |Is it necessary to bring PII data to establish connections between the data?|No, you can use any ID, including a hash of a customer ID, which is not PII.|
 |**Traditional Analytics components**||

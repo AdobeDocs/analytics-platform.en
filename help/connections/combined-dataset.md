@@ -15,7 +15,7 @@ When you create a connection, CJA combines all schemas and datasets into a singl
 
 Consider the following example. You have two datasets, each with different fields containing different data.
 
-> [!NOTE] Adobe Experience Platform typically stores timestamp in Unix milliseconds. For readability in this example, date and time is used.
+>[!NOTE] Adobe Experience Platform typically stores timestamp in Unix milliseconds. For readability in this example, date and time is used.
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
@@ -54,8 +54,8 @@ If your connection only included the first table and not the second, pulling a r
 
 | string_color | metric_a |
 | --- | --- |
-| Blue | 5 |
 | Unspecified | 6 |
+| Blue | 3 |
 | Red | 2 |
 
 However, if you included both tables in your connection, attribution changes since `user_847` is in both datasets. A row from the second dataset attributes `metric_a` to 'Yellow' where they were previously unspecified:
@@ -63,5 +63,5 @@ However, if you included both tables in your connection, attribution changes sin
 | string_color | metric_a |
 | --- | --- |
 | Yellow | 6 |
-| Red | 2 |
 | Blue | 3 |
+| Red | 2 |

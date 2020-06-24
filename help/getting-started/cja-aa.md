@@ -17,6 +17,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Date Ranges | Custom Calendar support is planned. |
 | Calculated Metrics | Note that any existing calc metrics in the traditional Analysis Workspace will not be ported to CJA. |
 | Segments | Now called "Filters" - note that any existing segments in traditional Analysis Workspace will not be ported to CJA. |
+| Anomaly Detection | Full Support as of June 2020 |
 | Attribution IQ | Full Support |
 | Project Curation | Full Support |
 | Project Linking | Full Support |
@@ -24,7 +25,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Virtual Report Suites | Now called [Data Views](/help/data-views/create-dataview.md). |
 | VRS Component Curation | Now part of Data Views. |
 | Report Time Processing | CJA relies exclusively on Report Time Processing. |
-| GDPR Deletion | Note that GDPR is now handled in coordination with Adobe Experience Platform - CJA inherits whatever data changes Experience Platform makes to underlying datasets. |
+| GDPR Deletion | Note that GDPR is now handled in coordination with [!UICONTROL Experience Platform] - CJA inherits whatever data changes [!UICONTROL Experience Platform] makes to underlying datasets. |
 
 ## Supported with caveats
 
@@ -32,7 +33,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | --- | --- |
 | Product Variable | The product variable currently available for reporting for data conforming to the Experience Event schema (specifically using the productListItems object). |
 | Visualizations | All visualizations are supported except for the Map visualization. |
-| AAM Audiences | If customers are using Analytics Data Connector datasets, this data will be part of the ADC data. |
+| AAM Audiences | If customers are using [!UICONTROL Analytics Data Connector] datasets, this data will be part of the ADC data. |
 | Project Sharing | Project sharing is only supported between users of CJA - there is not project sharing between CJA and the traditional Analysis Workspace. |
 | Custom Sessionization | Support for all custom sessionization features other than mobile background hits. |
 | eVar persistence settings | eVars are no longer part of CJA. However, persistence settings are now part of Data Views and are available for all dimensions. Keep in mind that persistence is based on report time processing, not data collection processing. This means all persistence will be based on the reporting date range rather than the entirety of the data. |
@@ -44,17 +45,16 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Feature | Notes |
 | --- | --- |
 | Out-of-the-box Analysis Workspace dimensions (e.g. Browser Type, Referrer Type, Marketing Channels, Visit Number etc.) | CJA does not provide these dimensions natively. For customers using the Analytics Data Connector (ADC), some of these dimensions are available, but not all. Please refer to our [documentation on which Analytics variables are supported via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
-| Panels | Blank Panel, Attribution Panel, and Freeform Panel are fully supported. Segment Comparison is not supported. |
+| Panels | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. The Segment Comparison and Analytics for Target (A4T) panels are not supported. |
 | Merchandising eVars | Merchandising eVars will only work with ADC-based datasets unless they strictly conform to the same XDM schema (similar to the product list limitations above). |
-| Bot Filtering | For Analytics Data Connector (ADC)-based datasets, bot filtering is applied. General bot filtering logic for other datasets is not performed by the Experience Platform or CJA. |
+| Bot Filtering | For Analytics Data Connector (ADC)-based datasets, bot filtering is applied. General bot filtering logic for other datasets is not performed by the [!UICONTROL Experience Platform] or CJA. |
 | Processing Rules | For ADC-based datasets, processing rules are still applied. |
-| Cross-Device Identity Stitching | Customers are limited to "one-time" stitches of the data via Query Service, or currently must apply this logic to data prior to Experience Platform data ingestion. |
+| Cross-Device Identity Stitching | Customers are limited to "one-time" stitches of the data via Query Service, or currently must apply this logic to data prior to [!UICONTROL Experience Platform] data ingestion. |
 
 ## Not currently supported, but planned
 
 | Feature | Notes |
 | --- | --- |
-| Anomaly Detection | Support is planned. |
 | Contribution Analysis | Support is planned. |
 | Segment IQ | Support is planned. |
 | Segment Publishing (sending segments from Workspace to the Experience Cloud) | Support is planned. |
@@ -91,6 +91,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Reports & Analytics Targets |  |
 | Reports & Analytics Calendar Events |  |
 | Ad Hoc Analysis |  |
-| Data Warehouse Reporting | Adobe Experience Platform Query Service will be the new interface for these use cases in CJA. |
+| Data Warehouse Reporting | [!UICONTROL Experience Platform Query Service] will be the new interface for these use cases in CJA. |
 | Mobile Services |  |
 | Data Feeds |  |

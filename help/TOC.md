@@ -23,10 +23,6 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Frequently asked questions](getting-started/cja-faq.md)
   + [Customer Journey Analytics feature support](getting-started/cja-aa.md)
   + [CJA glossary](getting-started/cja-glossary.md)
-+ Workspace Projects {#cja-reporting}
-  + [Introduction to Workspace](projects/workspace-basics.md)
-  + [Perform basic analysis](projects/perform-basic-analysis.md)
-  + [Perform advanced analysis](projects/perform-adv-analysis.md)
 + Connections {#cja-connections}
   + [Create a connection](connections/create-connection.md)
   + [Manage connections](connections/manage-connection.md)
@@ -34,7 +30,91 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 + Data Views {#cja-dataviews}
   + [Create a data view](data-views/create-dataview.md)
   + [Configure data views and attribution](data-views/configure-dataviews.md)
++ Workspace projects {#cja-workspace}
+  + [Analysis Workspace overview](analysis-workspace/home.md)
+  + [Perform basic analysis](analysis-workspace/perform-basic-analysis.md)
+  + [Perform advanced analysis](analysis-workspace/perform-adv-analysis.md)
+  + Build a Workspace project {#build-workspace-project}
+    + [Create project - overview](analysis-workspace/build-workspace-project/freeform-overview.md)
+    + [Templates](analysis-workspace/build-workspace-project/starter-projects.md)
+    + Column and row settings {#column-row-settings}
+      + [Column settings](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
+      + [Row settings](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
+      + [Manual vs. dynamic rows](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
+    + [Undo and redo settings](analysis-workspace/build-workspace-project/undo-redo.md)
+    + [Hotkeys available in Analysis Workspace](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
+    + [Pagination, filtering and sorting tables](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
+    + [Color Palettes](analysis-workspace/build-workspace-project/color-palettes.md)
+    + [View Density](analysis-workspace/build-workspace-project/view-density.md)
+    + [Workspace Totals](analysis-workspace/build-workspace-project/workspace-totals.md)
+  + Visualizations {#visualizations}
+    + [Visualizations overview](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
+    + [Manage data sources](analysis-workspace/visualizations/t-sync-visualization.md)
+    + [Freeform table](analysis-workspace/visualizations/freeform-table.md)
+    + Cohort Table {#cohort-table}
+      + [What is cohort analysis?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+      + [Configure a cohort analysis report](analysis-workspace/visualizations/cohort-table/t-cohort.md)
+      + [Cohort analysis use cases](analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+    + Fallout {#fallout}
+      + [Fallout overview](analysis-workspace/visualizations/fallout/fallout-flow.md)
+      + [Configure a fallout visualization](analysis-workspace/visualizations/fallout/configuring-fallout.md)
+      + [Inter-dimensional fallout](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
+      + [Apply filters in fallout analysis](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+    + Flow {#flow}
+      + [Flow overview](analysis-workspace/visualizations/c-flow/flow.md)
+      + [Configure a flow visualization](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
+      + [Flow settings](analysis-workspace/visualizations/c-flow/flow-settings.md)
+      + [Inter-dimensional flows](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
+    + [Histogram](analysis-workspace/visualizations/histogram.md)
+    + [Venn](analysis-workspace/visualizations/venn.md)
+    + [Area and area stacked](analysis-workspace/visualizations/area.md)
+    + [Bar and bar stacked](analysis-workspace/visualizations/bar.md)
+    + [Bullet graph](analysis-workspace/visualizations/bullet-graph.md)
+    + [Donut](analysis-workspace/visualizations/donut.md)
+    + [Horizontal Bar and Horizontal Bar Stacked](analysis-workspace/visualizations/horizontal-bar.md)
+    + [Line](analysis-workspace/visualizations/line.md)
+    + [Scatterplot](analysis-workspace/visualizations/scatterplot.md)
+    + [Summary Number and Summary Change](analysis-workspace/visualizations/summary-number-change.md)
+    + [Text](analysis-workspace/visualizations/text.md)
+    + [Tree map](analysis-workspace/visualizations/treemap.md)
+  + Panels {#panels}
+    + [Panels overview](analysis-workspace/c-panels/panels.md)
+    + [Attribution panel](analysis-workspace/c-panels/attribution.md)
+    + [Blank panel](analysis-workspace/c-panels/blank-panel.md)
+    + [Freeform panel](analysis-workspace/c-panels/freeform-panel.md)
+    + [Quick Insights panel](analysis-workspace/c-panels/quickinsight.md)
+  + Curate or Share projects {#curate-share}
+    + [Curate Workspace projects](analysis-workspace/curate-share/curate.md)
+    + [Share Workspace projects](analysis-workspace/curate-share/share-projects.md)
+    + [View-only Workspace projects](analysis-workspace/curate-share/view-only-projects.md)
+    + [Download PDF or CSV files](analysis-workspace/curate-share/download-send.md)
+    + [Share and schedule project files](analysis-workspace/curate-share/send-schedule-files.md)
+    + [Send file - schedule a project for delivery](analysis-workspace/curate-share/t-schedule-report.md)
+    + [Scheduled projects manager](analysis-workspace/curate-share/schedule-projects.md)
+  + Attribution IQ {#attribution}
+    + [Attribution overview](analysis-workspace/attribution/overview.md)
+    + [Attribution models and lookback windows](analysis-workspace/attribution/models.md)
+    + [Algorithmic attribution](analysis-workspace/attribution/algorithmic.md)
+    + [FAQ](analysis-workspace/attribution/faq.md)
+  + Virtual Analyst {#virtual-analyst}
+    + [Virtual Analyst overview](analysis-workspace/virtual-analyst/overview.md)
+    + Anomaly Detection {#anomaly-detection}
+      + [Anomaly Detection overview](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
+      + [View anomalies in Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
+      + [Statistical techniques used in anomaly detection](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
+  + Workspace FAQs {#workspace-faq}
+    + [Frequently asked questions](analysis-workspace/workspace-faq/faq.md)
+    + [Optimize Analysis Workspace performance](analysis-workspace/workspace-faq/optimizing-performance.md)
+    + [Analysis Workspace limitations](analysis-workspace/workspace-faq/aw-limitations.md)
+    + [Administration requirements](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
+    + [Accessibility in Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
 + Components {#cja-components}
+  + [Components overview](components/overview.md)
+  + Dimensions {#dimensions}
+    + [Preview dimensions](components/dimensions/view-dimensions.md)
+    + [Break down dimensions](components/dimensions/t-breakdown-fa.md)
+    + [Time-parting dimensions](components/dimensions/time-parting-dimensions.md)
+  + [Metrics](components/apply-create-metrics.md)
   + Filters {#cja-filters}
     + [Filters overview](components/filters/filters-overview.md)
     + [Create a filter](components/filters/create-filters.md)
@@ -49,12 +129,12 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Date ranges overview](components/date-ranges/overview.md)
     + [Create a date range](components/date-ranges/create.md)
     + [Manage date ranges](components/date-ranges/manage.md)
-  + Projects {cja-projects}
-    + [Projects overview](components/projects/overview.md)
-    + [Create a project](components/projects/create.md)
-    + [Manage projects](components/projects/manage.md)
+    + [Calendar overview](components/date-ranges/calendar.md)
+    + [Create custom date ranges](components/date-ranges/custom-date-ranges.md)
+    + [Date comparison](components/date-ranges/time-comparison.md)
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
+  + [Using arrays of objects](use-cases/object-arrays.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
 + [CJA documentation updates](doc-changes.md)
