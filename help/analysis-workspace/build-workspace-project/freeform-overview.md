@@ -8,7 +8,9 @@ uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 
 # Create project - overview
 
->[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**
 
@@ -64,7 +66,9 @@ The top Projects menu looks like this:
 
 The submenus contain the following options.
 
->[!NOTE] Options marked by an asterisk (&#42;) display only with **saved** projects.
+>[!NOTE]
+>
+>Options marked by an asterisk (&#42;) display only with **saved** projects.
 
 |  Project  | Edit  | Insert  | Components  | Share  | Help  |
 |---|---|---|---|---|---|

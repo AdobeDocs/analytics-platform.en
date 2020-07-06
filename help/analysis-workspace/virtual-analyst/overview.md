@@ -5,7 +5,9 @@ description: Learn what features in Adobe Analytics contribute to the Virtual An
 
 # Virtual Analyst
 
->[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 Virtual Analyst, a set of features part of Adobe Analytics, uses predictive algorithms and machine learning to deliver insights into anomalies impacting your business. It lets you automate the most common and expensive data science workflows to identify what's driving unusual behaviors in your data.
 

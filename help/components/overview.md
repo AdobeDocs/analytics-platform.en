@@ -31,7 +31,9 @@ See [Create a project](/help/analysis-workspace/home.md) for information about u
 
 You can manage components (individually or by selecting more than one) in a number of ways. Right-click a component or click **[!UICONTROL Actions]** at the top of the component list.
 
->[!NOTE] These actions do not apply to Time components.
+>[!NOTE]
+>
+>These actions do not apply to Time components.
 
 | Component Action | Description |
 |--- |--- |

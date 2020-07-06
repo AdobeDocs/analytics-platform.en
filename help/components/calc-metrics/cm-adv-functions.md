@@ -5,7 +5,9 @@ description: Access these functions by checking Show Advanced in the Functions d
 
 # Reference - advanced functions
 
->[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 Access these functions by checking **[!UICONTROL Show Advanced]** in the **[!UICONTROL Functions]** drop-down list.
 
@@ -25,7 +27,9 @@ On the other hand, if you have two metrics that you are interested in, it may no
 
 Returns the value of its argument. Use NOT to make sure that a value is not equal to one particular value.
 
->[!NOTE] 0 (zero) means False, and any other value is True.
+>[!NOTE]
+>
+>0 (zero) means False, and any other value is True.
 
 ```
 AND(logical_test1,[logical_test2],...)
@@ -201,7 +205,9 @@ Returns the average of the last N rows.
 
 If N <= 0 it uses all previous rows. Since it's ordered by the dimension it's only useful on dimensions that have a natural order like date or path length.
 
->[!NOTE] This does not work as you might expect with rate metrics like revenue/visitor: it averages the rates instead of summing revenue over the last N and summing visitors over the last N and then dividing them. Instead, use
+>[!NOTE]
+>
+>This does not work as you might expect with rate metrics like revenue/visitor: it averages the rates instead of summing revenue over the last N and summing visitors over the last N and then dividing them. Instead, use
 
 ```
 cumul(revenue)/cumul(visitor)
@@ -444,7 +450,9 @@ Returns all items that do not contain the exact match of the value entered.
 
 Returns TRUE if any argument is TRUE, or returns FALSE if all arguments are FALSE.
 
->[!NOTE] 0 (zero) means False, and any other value is True.
+>[!NOTE]
+>
+>0 (zero) means False, and any other value is True.
 
 ```
 OR(logical_test1,[logical_test2],...)
@@ -685,7 +693,9 @@ The equation for Z-score is:
 
 where [!DNL x] is the raw score, [!DNL μ] is the mean of the population, and [!DNL σ] is the standard deviation of the population.
 
->[!NOTE] [!DNL μ] (mu) and[!DNL σ] (sigma) are automatically calculated from the metric.
+>[!NOTE]
+>
+>[!DNL μ] (mu) and[!DNL σ] (sigma) are automatically calculated from the metric.
 
 Z-score(metric)
 
@@ -710,5 +720,7 @@ Performs an n-tailed Z-test with Z-score of A.
 
 Returns the probability that the current row could be seen by chance in the column.
 
->[!NOTE] Assumes that the values are normally distributed.
+>[!NOTE]
+>
+>Assumes that the values are normally distributed.
 

@@ -9,7 +9,9 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
 Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) for a video overview.
 
->[!IMPORTANT] You can combine multiple [!DNL Experience Platform] datasets into a single connection.
+>[!IMPORTANT]
+>
+>You can combine multiple [!DNL Experience Platform] datasets into a single connection.
 
 1. Go to [https://analytics.adobe.com](https://analytics.adobe.com).
 

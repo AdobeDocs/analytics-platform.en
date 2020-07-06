@@ -6,7 +6,9 @@ uuid: caf033ef-d252-4f8a-802e-7edbbac5c8c0
 
 # Static vs. dynamic rows
 
->[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace tables generate "dynamic" rows when you drop a dimension into the table - meaning that all items that correspond to the dimension, for a given metric, are pulled into the table.
 

@@ -6,7 +6,9 @@ uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
 
 # Anomaly Detection overview
 
->[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 You can view and analyze data anomalies contextually within Analysis Workspace.
 
@@ -27,7 +29,9 @@ Examples of anomalies you might investigate include:
 
 Both Anomaly Detection and [Contribution Analysis](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) are core workflows in Analysis Workspace. You can run Contribution Analysis against any daily anomaly and embed the result in your Analysis Workspace project.
 
->[!IMPORTANT] Contribution Analysis is not yet available in Customer Journey Analytics.
+>[!IMPORTANT]
+>
+>Contribution Analysis is not yet available in Customer Journey Analytics.
 
 Analysis Workspace's anomaly detection algorithm includes
 
