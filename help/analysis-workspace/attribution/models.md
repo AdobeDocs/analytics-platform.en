@@ -5,7 +5,9 @@ description: How different types of attribution divide credit between dimension 
 
 # Attribution models and lookback windows
 
->[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 The concept of attribution in Adobe Analytics requires two components:
 
@@ -38,7 +40,9 @@ A lookback window is the amount of time a conversion should look back to include
 
 * **Custom lookback window:** Allows you to expand the attribution window beyond the reporting date range up to a maximum of 90 days. Custom lookback windows are evaluated on each conversion in the reporting period. For example, for a conversion occurring on Feb 20th, a lookback window of 10 days would evaluate all dimension touchpoints from Feb 10th to 20th in the attribution model.
 
->[!NOTE] **[!UICONTROL Custom lookback windows]** are currently in limited testing. See [Adobe Analytics feature releases](https://docs.adobe.com/content/help/en/analytics/landing/an-releases.html) for more information.
+>[!NOTE]
+>
+>**[!UICONTROL Custom lookback windows]** are currently in limited testing. See [Adobe Analytics feature releases](https://docs.adobe.com/content/help/en/analytics/landing/an-releases.html) for more information.
 
 ## Example
 
@@ -69,4 +73,6 @@ Depending on your lookback window and attribution model, channels receive differ
     * Social: 18.6%, getting $9.32
     * Paid Search: 13.8%, getting $6.92
 
->[!TIP] Other conversion events, such as orders or custom events, are also divided if credit belongs to more than one channel. For example, if two channels contribute to a custom event using a Linear attribution model, both channels get 0.5 of the custom event. These event fractions are summed across all visits, then rounded to the nearest integer for reporting.
+>[!NOTE]
+>
+>Other conversion events, such as orders or custom events, are also divided if credit belongs to more than one channel. For example, if two channels contribute to a custom event using a Linear attribution model, both channels get 0.5 of the custom event. These event fractions are summed across all visits, then rounded to the nearest integer for reporting.

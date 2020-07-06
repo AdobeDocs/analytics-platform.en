@@ -6,7 +6,9 @@ uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 
 # Optimize Analysis Workspace performance
 
->[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 Certain factors can influence the performance of a project within Analysis Workspace. It's important to know what those contributors are before you start building a project so that you can plan & build the project in the most optimal way. Below is a list of factors that will impact performance & best practices for optimizing your projects. Analysis Workspace performance is one of Adobe's top priorities and something we are continuing to improve each day.
 

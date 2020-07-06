@@ -15,7 +15,9 @@ When you create a connection, CJA combines all schemas and datasets into a singl
 
 Consider the following example. You have two datasets, each with different fields containing different data.
 
->[!NOTE] Adobe Experience Platform typically stores timestamp in Unix milliseconds. For readability in this example, date and time is used.
+>[!NOTE]
+>
+>Adobe Experience Platform typically stores timestamp in Unix milliseconds. For readability in this example, date and time is used.
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |

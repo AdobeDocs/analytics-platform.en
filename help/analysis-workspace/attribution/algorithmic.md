@@ -5,9 +5,13 @@ description: Details on the algorithmic attribution model.
 
 # Algorithmic attribution
 
->[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
->[!NOTE] **[!UICONTROL Algorithmic attribution]** is currently in limited testing. See [Adobe Analytics feature releases](https://docs.adobe.com/content/help/en/analytics/landing/an-releases.html) for more information.
+>[!NOTE]
+>
+>**[!UICONTROL Algorithmic attribution]** is currently in limited testing. See [Adobe Analytics feature releases](https://docs.adobe.com/content/help/en/analytics/landing/an-releases.html) for more information.
 
 The Algorithmic [attribution model](models.md) in Analysis Workspace differs from other models in that it uses statistical techniques to allocate credit across the dimension values in your report or freeform table. Like all other attribution models in Analysis Workspace, it can be used on any dimension or metric and supports unlimited segmentation and breakdowns and distributes 100% of conversions to the dimension(s) in the table (also known as "fractional" attribution).
 
@@ -18,4 +22,6 @@ At a high level, the attribution calculation of the conversion credit for each t
 * Shapley, Lloyd S. (1953). A value for n-person games. *Contributions to the Theory of Games, 2(28)*, 307-317.
 * Harsanyi, John C. (1963). A simplified bargaining model for the n-person cooperative game. *International Economic Review 4(2)*, 194-220.
 
->[!NOTE] The outcome of Algorithmic attribution only differs from other models when multiple touchpoints exist within the given lookback window. Conversions with a single touchpoint receive 100% credit regardless of attribution model.
+>[!NOTE]
+>
+>The outcome of Algorithmic attribution only differs from other models when multiple touchpoints exist within the given lookback window. Conversions with a single touchpoint receive 100% credit regardless of attribution model.

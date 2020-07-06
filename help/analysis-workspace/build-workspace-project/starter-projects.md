@@ -6,7 +6,9 @@ uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 
 # Templates
 
->[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 You can choose whether to create a project from:
 
@@ -108,7 +110,9 @@ These standard templates walk you through common terminology and steps for build
 
 ### People
 
->[!NOTE] The People template and its associated People metric is available for use only as part of the [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/data/people.html).
+>[!NOTE]
+>
+>The People template and its associated People metric is available for use only as part of the [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/data/people.html).
 
 This template is based on the People metric, which is a de-duplicated version of the Unique Visitors metric. The People metric provides a measure of how often consumers using multiple devices interact with your brand. The template lets you
 

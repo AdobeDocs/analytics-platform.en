@@ -19,7 +19,9 @@ Keep in mind that:
 
 ![](assets/segment-dropzone.png)
 
->[!NOTE] Filters created this way are internal to the project.
+>[!NOTE]
+>
+>Filters created this way are internal to the project.
 
 You can choose to make these filters public (global) by following these steps:
 
