@@ -1,10 +1,9 @@
 ---
-description: How to interact with dynamic and static items in tables.
-title: Dynamic vs Static items
-uuid: caf033ef-d252-4f8a-802e-7edbbac5c8c0
+title: Dynamic vs static dimension values
+description: How to interact with dynamic and static dimension values in tables.
 ---
 
-# Dynamic vs Static items in freeform tables
+# Dynamic vs static dimension values in freeform tables
 
 >[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
