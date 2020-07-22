@@ -27,7 +27,7 @@ YouTube Video: [Visualization Types in Analysis Workspace](https://www.youtube.c
 |[Histogram](/help/analysis-workspace/visualizations/histogram.md)|A histogram is similar to a bar chart, but it groups numbers into ranges (buckets).|
 |[Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md)|Shows horizontal bars representing various values across one or more metrics.|
 |[Line](/help/analysis-workspace/visualizations/line.md)|Represents metrics using a line in order to show how values change over a period of time. A line chart can be used only when time is used as a dimension.|
-|[Scatterplot](/help/analysis-workspace/visualizations/scatterplot.md)|Shows the relationship between dimension values and up to three metrics.|
+|[Scatterplot](/help/analysis-workspace/visualizations/scatterplot.md)|Shows the relationship between dimension items and up to three metrics.|
 |[Summary number](/help/analysis-workspace/visualizations/summary-number-change.md)|Depending on which cell is selected, this visualization shows totals and summaries. |
 |[Summary change](/help/analysis-workspace/visualizations/summary-number-change.md)|Depending on which cells are selected, this visualization compares cells to each other.|
 |[Text](/help/analysis-workspace/visualizations/text.md)|Lets you add user-defined text to your Workspace.|
