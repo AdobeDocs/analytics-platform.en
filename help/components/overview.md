@@ -12,7 +12,7 @@ Components are features in Customer Journey Analytics that can be used in report
 
 You can manage the following components:
 
-* [**Filters**](filters/filters-overview.md): Exclude parts of your data to focus on common dimension values
+* [**Filters**](filters/filters-overview.md): Exclude parts of your data to focus on common dimension items
 * [**Calculated metrics**](calc-metrics/calc-metr-overview.md): Use metrics and formulas as new components for use in reporting
 * [**Date ranges**](date-ranges/overview.md): Customize and refine the date ranges Analysis Workspace offers
 * [**Projects**](/help/analysis-workspace/home.md): Organize and maintain your projects in Analysis Workspace

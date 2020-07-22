@@ -60,7 +60,7 @@ The model describes the distribution of conversions to the events in a group. Fo
 
 ### Expiration
 
-Specifies a time period, or event, after which the dimension value expires (no longer receives credit for success events). You can set the attribution expiration at the session, person, or custom level.
+Specifies a time period, or event, after which the dimension item expires (no longer receives credit for success events). You can set the attribution expiration at the session, person, or custom level.
 
 |Setting|Definition|
 |---|---|
