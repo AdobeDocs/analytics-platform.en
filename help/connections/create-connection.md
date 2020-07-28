@@ -19,7 +19,7 @@ Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja
 
 1. Click **[!UICONTROL Create new connection]** on the top right.
 
-    ![Create connection](assets/create-connection.png)
+    ![Create connection](assets/create-connection0.png)
 
 1. Choose a sandbox in Experience Platform that contains the dataset/s to which you want to create a connection. 
 
@@ -33,6 +33,8 @@ Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja
 
 On the right-hand side, you can now configure the dataset you have added.
 
+   ![Configure dataset](assets/create-connection.png)
+
 1. **[!UICONTROL Dataset type]**: For each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in. 
 
     There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
@@ -45,19 +47,27 @@ On the right-hand side, you can now configure the dataset you have added.
 
 1. **[!UICONTROL Dataset ID]**: This ID is automatically generated.
 
-1. **[!UICONTROL Timestamp]**: add content here
+1. **[!UICONTROL Time stamp]**: add content here
 
-1. **[!UICONTROL Schema]**:
+1. **[!UICONTROL Schema]**: This is the schema based on which the dataset was created in Adobe Experience Platform.
 
-1. **[!UICONTROL Person ID]**: 
+1. **[!UICONTROL Person ID]**: Select a person ID from the available identities defined in the dataset schema in the Experience Platform. 
+
+    >[!IMPORTANT]
+    >
+    >If there are no person IDs to choose from, that means one or more person IDs have not been defined in the schema. View [this video](https://youtu.be/G_ttmGl_LRU) on how to define an identity in Experience Platform.
 
 1. Click **[!UICONTROL Next]** to go to the [!UICONTROL Enable Connection] dialog.
 
-    ![Enable connection](assets/create-connection2.png)
+### Identity Map
+
+
 
 ## Enable connection
 
-1. In the [!UICONTROL Create Connection] dialog, define these settings:
+![Enable connection](assets/create-connection2.png)
+
+1. To enable a connection, define these settings:
 
     |Field|Description|
     |---|---|
