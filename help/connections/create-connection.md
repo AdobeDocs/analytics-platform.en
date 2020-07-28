@@ -49,9 +49,9 @@ On the right-hand side, you can now configure the dataset you have added.
 
 1. **[!UICONTROL Time stamp]**: add content here
 
-1. **[!UICONTROL Schema]**: This is the schema based on which the dataset was created in Adobe Experience Platform.
+1. **[!UICONTROL Schema]**: This is the [schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/schema/composition.html) based on which the dataset was created in Adobe Experience Platform.
 
-1. **[!UICONTROL Person ID]**: Select a person ID from the available identities defined in the dataset schema in the Experience Platform. 
+1. **[!UICONTROL Person ID]**: Select a person ID from the dropdown list of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID. 
 
     >[!IMPORTANT]
     >
@@ -59,9 +59,20 @@ On the right-hand side, you can now configure the dataset you have added.
 
 1. Click **[!UICONTROL Next]** to go to the [!UICONTROL Enable Connection] dialog.
 
-### Identity Map
+### Use Identity Map as a Person ID
 
+Customer Journey Analytics now supports the ability to use the Identity Map for its Person ID. Identity Map is a map data structure that allows someone to upload key -> value pairs. The keys are identity namespaces and the value is a structure that holds the identity value. The Identity Map exists on each row/event uploaded and is populated for each row accordingly.
 
+The Identity Map is available for any dataset that uses a schema based on the ExperienceEvent XDM class. When you select such a dataset to be included in a CJA Connection, you have the option of selecting either a field as the primary ID or the Identity Map:
+
+![](assets/idmap1.png)
+
+If you select Identity Map, you get two additional configuration options:
+
+|Option|Description|
+|---|---|
+| [!UICONTROL Use Primary ID Namespace] | This instructs CJA, per row, to find the identity in the Identity Map that is marked with a primary=true attribute and use that as the Person ID for that row. This means that this is the primary key that will be used in Experience Platform for partitioning. It is also the prime candidate for usage as CJA's visitor ID (depending on how the dataset is configured in a CJA Connection).|
+| [!UICONTROL Namespace] | (This option is only available if you do not use the Primary ID Namespace.) Identity namespaces are a component of [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html) that serve as indicators of the context to which an identity relates. If you specify a namespace, CJA will search each row's Identity Map for this namespace key and use the identity under that namespace as the person ID for that row. Note that since CJA cannot do a full dataset scan of all rows to determine which namespaces are actually present, all possible namespaces are listed in the dropdown. You need to know which namespaces are specified in the data; this cannot be auto-detected.|
 
 ## Enable connection
 
@@ -69,7 +80,7 @@ On the right-hand side, you can now configure the dataset you have added.
 
 1. To enable a connection, define these settings:
 
-    |Field|Description|
+    |Option|Description|
     |---|---|
     |[!UICONTROL Name Connection]|Give the connection a descriptive name. The connection cannot be saved without a name.|
     |[!UICONTROL Description]|Add more detail to distinguish this connection from others.|
