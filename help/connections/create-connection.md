@@ -63,7 +63,7 @@ On the right-hand side, you can now configure the dataset you have added.
 
 Customer Journey Analytics now supports the ability to use the Identity Map for its Person ID. Identity Map is a map data structure that allows someone to upload key -> value pairs. The keys are identity namespaces and the value is a structure that holds the identity value. The Identity Map exists on each row/event uploaded and is populated for each row accordingly.
 
-The Identity Map is available for any dataset that uses a schema based on the ExperienceEvent XDM class. When you select such a dataset to be included in a CJA Connection, you have the option of selecting either a field as the primary ID or the Identity Map:
+The Identity Map is available for any dataset that uses a schema based on the [ExperienceEvent XDM](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html) class. When you select such a dataset to be included in a CJA Connection, you have the option of selecting either a field as the primary ID or the Identity Map:
 
 ![](assets/idmap1.png)
 
@@ -73,6 +73,15 @@ If you select Identity Map, you get two additional configuration options:
 |---|---|
 | [!UICONTROL Use Primary ID Namespace] | This instructs CJA, per row, to find the identity in the Identity Map that is marked with a primary=true attribute and use that as the Person ID for that row. This means that this is the primary key that will be used in Experience Platform for partitioning. It is also the prime candidate for usage as CJA's visitor ID (depending on how the dataset is configured in a CJA Connection).|
 | [!UICONTROL Namespace] | (This option is only available if you do not use the Primary ID Namespace.) Identity namespaces are a component of [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html) that serve as indicators of the context to which an identity relates. If you specify a namespace, CJA will search each row's Identity Map for this namespace key and use the identity under that namespace as the person ID for that row. Note that since CJA cannot do a full dataset scan of all rows to determine which namespaces are actually present, all possible namespaces are listed in the dropdown. You need to know which namespaces are specified in the data; this cannot be auto-detected.|
+
+### Identity Map edge cases
+
+This table shows the two configuration options when edge cases are present and how they are handled:
+
+|Option|No IDs are present in Identity Map|No IDs are marked as primary|Multiple IDs are marked as primary|Single ID is marked as primary|Invalid namespace with an ID marked as primary|
+|---|---|---|---|---|---|
+| **"Use Primary ID Namespace" checked** |The row is dropped by CJA.|The row is dropped by CJA, as no primary ID is specified.|All IDs marked as primary, under all namespaces, are extracted into a list. They are then alphabetically sorted; with this new sorting, the first namespace with its first ID is used as the Person ID.|The single ID marked as primary is used as the Person ID.|Even though the namespace may be invalid (not present in AEP), CJA will use the primary ID under that namespace as the Person ID.|
+|**Specific Identity Map namespace selected**|The row is dropped by CJA.|All IDs under the selected namespace are extracted into a list and the first is used as the Person ID.|All IDs under the selected namespace are extracted into a list and the first is used as the Person ID.|All IDs under the selected namespace are extracted into a list and the first is used as the Person ID.|All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. (Only a valid namespace can be selected at Connection creation time, so it is not possible for an invalid namespace/ID to be used as Person ID)|
 
 ## Enable connection
 
