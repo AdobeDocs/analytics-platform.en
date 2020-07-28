@@ -27,9 +27,13 @@ Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja
 
 1. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**.
 
-    (If you have a lot of datasets to choose from, you can search for the right one(s) using the search bar above the list of datasets.)
+    (If you have a lot of datasets to choose from, you can search for the right one(s) using the **[!UICONTROL Search datasets]** search bar above the list of datasets.)
 
-1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in. 
+## Configure dataset
+
+On the right-hand side, you can now configure the dataset you have added.
+
+1. **[!UICONTROL Dataset type]**: For each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in. 
 
     There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
 
@@ -39,9 +43,19 @@ Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja
     |[!UICONTROL Lookup]|Analogous to a Classifications file. This data is used to look up values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names.|N/A|Any built-in or custom schema that is based on an XDM class with the "Record" behavior, except for the "XDM Individual Profile" class.|N/A|
     |[!UICONTROL Profile]|Analogous to [!UICONTROL Customer Attributes] - for non-changing and non-temporal attributes. Data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. For example, allows you to upload CRM data about your customers. |N/A|Any built-in or custom schema that is based on the "XDM Individual Profile" class.|You can pick which Person ID you want to include. Each dataset defined in the [!DNL Experience Platform] has its own set of one or more Person IDs defined, such as Cookie ID, Stitched ID, User ID, Tracking Code, etc.<br>![Person ID](assets/person-id.png)**Note**: If you create a connection that includes datasets with different IDs, the reporting will reflect that. To really merge datasets, you need use the same Person ID.|
 
-1. Click **[!UICONTROL Next]** to go to the [!UICONTROL Create Connection] dialog.
+1. **[!UICONTROL Dataset ID]**: This ID is automatically generated.
 
-    ![Create connection](assets/create-connection2.png)
+1. **[!UICONTROL Timestamp]**: add content here
+
+1. **[!UICONTROL Schema]**:
+
+1. **[!UICONTROL Person ID]**: 
+
+1. Click **[!UICONTROL Next]** to go to the [!UICONTROL Enable Connection] dialog.
+
+    ![Enable connection](assets/create-connection2.png)
+
+## Enable connection
 
 1. In the [!UICONTROL Create Connection] dialog, define these settings:
 
