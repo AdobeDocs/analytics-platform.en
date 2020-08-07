@@ -33,6 +33,6 @@ On April 11, 2019, several changes were made to **[!CSV downloads]** (and **[!Co
 * Cohort Tables show raw values only; percentages are removed.
 * If a number is invalid, an empty cell is displayed.
 
->[!Note:]
+>[!NOTE]
 >
-> Numeric values that use a comma as the decimal separator will continue to be quoted in the exported CSV.
+>Numeric values that use a comma as the decimal separator will continue to be quoted in the exported CSV.
