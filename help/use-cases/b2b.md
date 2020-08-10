@@ -29,19 +29,23 @@ Creating your own schema for the [lookup](/help/getting-started/cja-glossary.md)
 
 ## 2. Create lookup data set (Experience Platform)
 
-Once the schema has been created, you need to create a dataset from that schema, in AEP. This lookup dataset contains account-level marketing information, such as: company name, total number of employees, domain name, what industry they belong to, annual revenue, whether they are current customers of the Experience Platform or not, which sales stage they are in, which team inside the account is using CJA, etc.
+Once the schema has been created, you need to [create a dataset]() from that schema, in Experience Platform. This lookup dataset contains account-level marketing information, such as: company name, total number of employees, domain name, what industry they belong to, annual revenue, whether they are current customers of the Experience Platform or not, which sales stage they are in, which team inside the account is using CJA, etc.
 
 ## 3. Combine datasets in a connection (Customer Journey Analytics)
 
-Select the key that will be used in your lookup table. Then select its corresponding dimension in your dataset that you will realize the lookup with.
-
-For this use case, we are combining 3 datasets into one CJA connection:
+For this example, we are combining 3 datasets into one CJA connection:
 
 |Dataset name|Description|AEP Schema class |Mixins|
 |---|---|---|---|
 |B2B Impression| Contains clickstream, event-level data at the account level. For example, it contains the email ID and corresponding account ID, as well as the marketing name, for running marketing ads. It also includes the impressions for those ads, per user. | Based on XDM ExperienceEvent schema class |The `emailID` is used as the primary identity and assigned a `Customer ID` namespace. ![Impressions](assets/impressions-mixins.png)|
 | B2B Profile | This profile dataset tells you more about the users in an account, such as their job title, which account they belong to, their LinkedIn profile, etc. | Based on XDM Individual Profile schema class |No need to select `emailID` as the primary ID in this schema. Make sure to enable **[!UICONTROL Profile]**; if you don't, CJA will not be able to connect the `emailID` in B2B Profile with the `emailID` in B2B Impression data. (This capability is called field-based stitching.) ![Profile](assets/profile-mixins.png)|
-| B2B Info | See "Create lookup data set" above. | B2BAccount (custom lookup schema class)||
+| B2B Info | See "Create lookup data set" above. | B2BAccount (custom lookup schema class)|The relationship between `accountID` and the B2B Impressions dataset has automatically been created by connecting the B2B Info dataset with the B2B Impression dataset in CJA, as described in the steps below. ![Lookup](assets/lookup-mixins.png) |
+
+Here is how you combine the datasets:
+
+1. In Customer Journey Analytics, select the Connections tab.
+1. Select the connections
+1. Select the key that will be used in your lookup table. Then select its corresponding dimension in your dataset that you will realize the lookup with.
 
 ## Analyze the data in Workspace
 
