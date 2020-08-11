@@ -77,4 +77,4 @@ For example, you can find answers to the answers posed in the introduction:
 * How many employees are mapped to a specific account ID?
 * What industry does an account ID belong to?
 
-![](assets/project-lookup)
+![](assets/project-lookup.png)
