@@ -39,8 +39,15 @@ Once the schema has been created, you need to create a lookup dataset from that 
 1. Name the dataset (in our example, B2B Info) and provide a description.
 1. Click **[!UICONTROL Finish]**.
 
+## 3. Ingest data into Experience Platform
 
-## 3. Combine datasets in a connection (Customer Journey Analytics)
+Instructions on how to [Map a CSV file to an XDM schema](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/map-a-csv-file.html) should help if you are using a CSV file.
+
+[Other methods](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) are available as well.
+
+On-boarding the data and establishing the lookup takes about 2 to 4 hours, depending on the size of the lookup table.
+
+## 4. Combine datasets in a connection (Customer Journey Analytics)
 
 For this example, we are combining 3 datasets into one CJA connection:
 
@@ -54,20 +61,18 @@ Here is how you combine the datasets:
 
 1. In Customer Journey Analytics, select the **[!UICONTROL Connections]** tab.
 1. Select the datasets (in our example, the three above) you want to combine.
-1. (Not sure this is where the step belongs...) For the B2B Info dataset, select the `accountID` key that will be used in your lookup table. Then select its matching key (corresponding dimension), also `accountID` in your event dataset.
+1. For the B2B Info dataset, select the `accountID` key that will be used in your lookup table. Then select its matching key (corresponding dimension), also `accountID` in your event dataset.
 1. Click **[!UICONTROL Next]**.
 1. Name and describe the connection and configure it according to [these instructions](/help/connections/create-connection.md).
-1. Click **[!UICONTROL Save]**.
+1. Click **[!UICONTROL Save]**. 
 
-Now the data will be ingested. On-boarding the data and establishing the lookup takes about 2 to 4 hours, depending on the size of the lookup table. 
-
-## Create a dataview from this connection
+## 5. Create a dataview from this connection
 
 Follow instructions on [creating dataviews](/help/data-views/create-dataview.md).
 
 * Add all the components (dimensions and metrics) that you need from the datasets.
 
-## Analyze the data in Workspace
+## 6. Analyze the data in Workspace
 
 You can now create Workspace projects based on the data from all 3 datasets.
 
