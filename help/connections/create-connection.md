@@ -13,6 +13,8 @@ Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja
 >
 >You can combine multiple [!DNL Experience Platform] datasets into a single connection.
 
+## Select sandbox and datasets
+
 1. Go to [https://analytics.adobe.com](https://analytics.adobe.com).
 
 1. Click the **[!UICONTROL Connections]** tab.
@@ -23,7 +25,11 @@ Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja
 
 1. Choose a sandbox in Experience Platform that contains the dataset/s to which you want to create a connection. 
 
-    Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain data sets. Sandboxes are used to control access to data sets. You cannot access data across sandboxes. Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from. 
+    Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain data sets. Sandboxes are used to control access to data sets.  Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from. 
+
+    >[!IMPORTANT]
+    >
+    >You cannot access data across sandboxes, i.e. you can only combine datasets within one sandbox. 
 
 1. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**.
 
