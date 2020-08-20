@@ -29,7 +29,7 @@ Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja
 
     >[!IMPORTANT]
     >
-    >You cannot access data across sandboxes, i.e. you can only combine datasets within one sandbox. 
+    >You cannot access data across sandboxes, i.e., you can only combine datasets that are located within the same sandbox. 
 
 1. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**.
 
