@@ -13,7 +13,7 @@ Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja
 
 ## Prerequisite
 
-Before you can create data views, you need to [set up one or more connections to Experience Platform] datasets](/help/connections/create-connection.md).
+Before you can create data views, you need to [set up one or more connections to Experience Platform datasets](/help/connections/create-connection.md).
 
 ## Configure Settings
 
@@ -36,7 +36,7 @@ Before you can create data views, you need to [set up one or more connections to
 
 ## Add Components 
 
-1. Now it's time to add components (dimensions, metrics) to the data view (similar to the curation experience in virtual report suites.) Notice that each of the fields in the datasets are now translated into dimensions or metrics. Drag dimensions and metrics into the panel or **[!UICONTROL Select All** to add all components.
+1. Now it's time to add components (dimensions, metrics) to the data view (similar to the curation experience in virtual report suites.) Notice that each of the fields in the datasets are now translated into dimensions or metrics. Drag dimensions and metrics into the panel or **[!UICONTROL Select All]** to add all components.
 
     ![](assets/add-all-components.png)
 
