@@ -135,7 +135,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Date comparison](components/date-ranges/time-comparison.md)
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
-  + [Using arrays of objects](use-cases/object-arrays.md)
+  + [Use arrays of objects](use-cases/object-arrays.md)
   + [(B2B) Add account-level data as a lookup dataset](use-cases/b2b.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
