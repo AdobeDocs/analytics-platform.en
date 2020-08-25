@@ -31,6 +31,12 @@ Creating your own schema for the [lookup](/help/getting-started/cja-glossary.md)
 
 Once the schema has been created, you need to create a lookup dataset from that schema, in Experience Platform. This lookup dataset contains account-level marketing information, such as: company name, total number of employees, domain name, what industry they belong to, annual revenue, whether they are current customers of the Experience Platform or not, which sales stage they are in, which team inside the account is using CJA, etc.
 
+>[!IMPORTANT]
+>
+>CJA does not support integers in lookup datasets. If you add the integer fields in your XDM schema for your lookup dataset, you will not able to use those integers as metrics or calculated metrics. For example, if annualRevenue or totalEmployees are defined as integers, they will show as “0” in reporting in CJA. However, if you assign them as strings, you can use them as lookup information.
+ 
+For example, annualRevenue or totalEmployees are defined as Integer in following example, that’s the reason, its showing “0” in CJA.
+
 1. In Adobe Experience Platform, go to **[!UICONTROL Data Management > Datasets]**.
 1. Click **[!UICONTROL + Create dataset]**.
 1. Click **[!UICONTROL Create dataset from schema]**.
@@ -66,9 +72,9 @@ Here is how you combine the datasets:
 1. Name and describe the connection and configure it according to [these instructions](/help/connections/create-connection.md).
 1. Click **[!UICONTROL Save]**. 
 
-## 5. Create a dataview from this connection
+## 5. Create a data view from this connection
 
-Follow instructions on [creating dataviews](/help/data-views/create-dataview.md).
+Follow instructions on [creating data views](/help/data-views/create-dataview.md).
 
 * Add all the components (dimensions and metrics) that you need from the datasets.
 
