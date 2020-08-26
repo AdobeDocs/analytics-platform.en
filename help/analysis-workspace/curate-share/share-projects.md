@@ -6,10 +6,6 @@ title: Share Workspace projects
 
 # Share Workspace projects
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 Sharing makes a project available to other Analysis Workspace users in your organization. Any [curation](curate.md) you have applied is reflected when recipients open the project. 
 
 ## Project roles {#Roles}
@@ -27,7 +23,7 @@ You can add recipients to one of three project roles. Project roles are tied to 
 
 ### No role assigned (Project link recipients)
 
-If a recipient is not assigned a role and receives a link to the project (**[!UICONTROL Share] > [!UICONTROL Get project link]**), they will be placed into a role by default. Admins receive **[!UICONTROL Can edit]** and Non-admins receive **[!UICONTROL Can duplicate]**.
+If a recipient is not assigned a role and receives a [link](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) to the project (**[!UICONTROL Share] > [!UICONTROL Get project link]**), they will be placed into a role by default. Admins receive **[!UICONTROL Can edit]** and Non-admins receive **[!UICONTROL Can duplicate]**.
 
 ### Multiple roles assigned
 
@@ -50,7 +46,7 @@ To add recipients to your shared project:
 1. (Optional) Set this page as the landing page for recipients.
    This setting does not persist - it is a singular action at the time of sharing. 
 1. Click Share. 
-  You can also click **[!UICONTROL Curate and Share]** to apply project curation automatically. If a project has already been shared, these buttons will say **[!UICONTROL Update]** and **[!UICONTROL Curate & Update]**. Learn more about [project curation](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-workspace/curate-share/curate.html).
+  You can also click **[!UICONTROL Curate and Share]** to apply project curation automatically. If a project has already been shared, these buttons will say **[!UICONTROL Update]** and **[!UICONTROL Curate & Update]**. Learn more about [project curation](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html).
 
 ![](assets/share-proj-modal.png)
 
@@ -63,7 +59,7 @@ All users can share projects to groups, which are a collection of recipients. In
 
 ## Share a project link {#Links} 
 
-You can get a link a project under **[!UICONTROL Share] > [!UICONTROL Get project link]**. When clicked, recipients will be required to log in before landing in the project. If the recipient has not been placed in a role, they will receive a default role. Admins receive **[!UICONTROL Can edit]** and Non-admins receive **[!UICONTROL Can duplicate]**.
+You can get a link a project under **[!UICONTROL Share] > [!UICONTROL Get project link]**. When clicked, recipients will be required to log in before landing in the project. If the recipient has not been placed in a role, they will receive a default role. Admins receive **[!UICONTROL Can edit]** and Non-admins receive **[!UICONTROL Can duplicate]**. [Learn more](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) about creating shareable links to Workspace projects.
 
 ## Share projects in the Project manager {#Manager} 
 
