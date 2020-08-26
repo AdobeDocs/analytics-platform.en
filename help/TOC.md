@@ -86,6 +86,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + Curate or Share projects {#curate-share}
     + [Curate Workspace projects](analysis-workspace/curate-share/curate.md)
     + [Share Workspace projects](analysis-workspace/curate-share/share-projects.md)
+    + [Create shareable links](analysis-workspace/curate-share/shareable-links.md)
     + [View-only Workspace projects](analysis-workspace/curate-share/view-only-projects.md)
     + [Download PDF or CSV files](analysis-workspace/curate-share/download-send.md)
     + [Share and schedule project files](analysis-workspace/curate-share/send-schedule-files.md)
