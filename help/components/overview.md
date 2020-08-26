@@ -8,7 +8,7 @@ description: Learn what components CJA offers, and how you can use them in repor
 Components are features in Customer Journey Analytics that can be used in reports, or complement reporting features. You can manage these components using the following steps:
 
 1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your Adobe ID credentials.
-2. Navigate to [!UICONTORL Components] > [!UICONTROL Components] in the header menu.
+2. Navigate to [!UICONTROL Components] > [!UICONTROL Components] in the header menu.
 
 You can manage the following components:
 
