@@ -12,7 +12,7 @@ The Line visualization represents metrics using a line in order to show how valu
 
 >[!IMPORTANT]
 >
->Some Line visualization settings, such as [!UICONTROL Show trendline], are currently in limited testing. [Learn more](/help/landing/an-releases.md)
+>Some Line visualization settings, such as [!UICONTROL Show trendline], are currently in limited testing. [Learn more](https://docs.adobe.com/content/help/en/analytics/landing/an-releases.html)
 
 Click on the gear icon in the top right of the Line visualization to access [**Visualization settings**](freeform-analysis-visualizations.md) available. Settings are categorized into:
 
