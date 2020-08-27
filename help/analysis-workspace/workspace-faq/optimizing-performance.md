@@ -6,10 +6,6 @@ uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 
 # Optimize Analysis Workspace performance
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 Certain factors can influence the performance of a project within Analysis Workspace. It's important to know what those contributors are before you start building a project so that you can plan & build the project in the most optimal way. Below is a list of factors that will impact performance & best practices for optimizing your projects. Analysis Workspace performance is one of Adobe's top priorities and something we are continuing to improve each day.
 
 ## Complexity of segment logic
@@ -35,19 +31,17 @@ In addition, [classifications](https://docs.adobe.com/content/help/en/analytics/
 
 ## Range of data requested
 
-The range of data requested throughout a project will influence Analysis Workspace performance.
+The range of data requested throughout a project will influence Analysis Workspace performance. 
 
-**Best practices for data range**
+**Best practices for date ranges**
 
-Where possible, don't pull in more data than you need.
+Where possible, don't pull in more data than you need. Narrow the panel calendar to the relevant dates for your analysis, or use date range components (purple components) in your freeform tables. Date ranges used in a table override the panel date range. For example, you can add last month, last week and yesterday to the table columns to request those specific ranges of data. For more information on working with date ranges in Analysis Workspace, watch [this video](https://www.youtube.com/watch?v=MIkT6FZ5gKk) .
 
-Remember that date ranges (purple components) override the panel date range. As a result, if you are using different date ranges as columns (e.g. last month, last week and yesterday columns), the panel date range does not have to span all of the column date ranges. It can simply be set to yesterday, because the data ranges used in the freeform table will override the panel. For more information on working with date ranges in Analysis Workspace, watch [this video](https://www.youtube.com/watch?v=ybmv6EBmhn0) .
-
-Use [date comparison options](/help/components/date-ranges/time-comparison.md) to pull in the specific time periods of data you want to compare. For example, if you need to show last month's data compared to same month last year, rather than setting the panel to the last 13 months of data, simply use the compare time periods option to show year-over-year performance.
+Minimize the number of year-over-year comparisons used in the project. When a year-over-year comparison is calculated, it looks across the full 13 months of data between the months of interest. This has the same impact as changing the panel date range to last 13 months.
 
 ## Number of visualizations
 
-The number of graph visualizations contained in one project will affect overall responsiveness of Analysis Workspace.
+The number of  visualizations contained in one project will affect overall responsiveness of Analysis Workspace. This is because each visualization, whether it be a table or graph, has a data source that needs to be requested.
 
 **Best practice for number of visualizations**
 
@@ -60,7 +54,7 @@ The type of visualization (e.g. fallout vs a freeform table) added to a project 
 * Range of data requested, as mentioned above
 * Number of segments applied; for instance, segments used as rows of a freeform table
 * Use of intricate segments
-* Static item rows or columns in freeform tables
+* [Static item](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.html) rows or columns in freeform tables
 * Filters applied to rows in freeform tables
 * Number of metrics included, especially calculated metrics that use segments
 
@@ -80,14 +74,14 @@ Don't try to add everything into one project, but rather create distinct project
 
 If more organization of projects is desired, remember that [direct linking](https://www.youtube.com/watch?v=6IOEewflG2U) to your project is an option. Create an internal index of projects so that stakeholders can more easily find what they need.
 
-If many panels are needed in one Workspace, collapse panels before saving and sharing. When a project is loaded, Analysis Workspace will only load content for the expanded panels. Collapsed panels will not be loaded until the user expands them. This approach helps in two ways:
+If many panels are needed in one project, collapse panels before saving and sharing. When a project is loaded, Analysis Workspace will only load content for the expanded panels. Collapsed panels will not be loaded until the user expands them. This approach helps in two ways:
 
 * Collapsed panels save on overall load time of a project
 * Collapsed panels are a great way to organize your projects in a logical way for the consumer of the report
 
 ## Report suite size
 
-The size of the report suite may seem like a driving factor, but in reality it only plays a small role in project performance due to how Adobe handles data processing
+The size of the report suite may seem like a driving factor, but in reality it only plays a small role in project performance due to how Adobe handles data processing. There can be exceptions to this rule; consult with your implementation team or an Adobe expert to determine if there are implementation improvements that can be made to improve overall experience in Adobe Analytics.
 
 ## Number of users concurrently accessing Analysis Workspace
 
