@@ -6,13 +6,17 @@ uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 
 # Line
 
+>[!NOTE]
+>
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 The Line visualization represents metrics using a line in order to show how values change over a period of time. A line chart can be used only when time is used as a dimension.
 
 ![Line visualization](assets/line-viz.png)
 
 >[!IMPORTANT]
 >
->Some Line visualization settings, such as [!UICONTROL Show trendline], are currently in limited testing. [Learn more](/help/landing/an-releases.md)
+>Some Line visualization settings, such as [!UICONTROL Show trendline], are currently in limited testing. [Learn more](https://docs.adobe.com/content/help/en/analytics/landing/an-releases.html)
 
 Click on the gear icon in the top right of the Line visualization to access [**Visualization settings**](freeform-analysis-visualizations.md) available. Settings are categorized into:
 
