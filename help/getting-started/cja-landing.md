@@ -16,6 +16,7 @@ Analytics Select, Prime, and Ultimate customers are eligible to purchase this ad
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>New or Featured Items</b> </p> <p> 
      <ul>
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions"> Updated user permissions requirements (as of Sept. 9, 2020) </a> </li>
       <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-usecases/object-arrays.html"> Use arrays of objects </a> </li>
       <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-usecases/b2b.html"> Add account-level data as a lookup dataset </a> </li>
       <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html"> Getting Started with Customer Journey Analytics </a> </li> 
