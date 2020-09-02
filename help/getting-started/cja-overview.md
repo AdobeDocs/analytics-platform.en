@@ -52,11 +52,15 @@ To create connections, add datasets, etc., you need the following permissions in
   * View Datasets
   * Manage Identity Namespaces
   * View Sandboxes
-* To access Customer Journey Analytics or make a connection, you will also need to be added to a Customer Journey Analytics Product Profile in the [Admin Console](https://adminconsole.adobe.com/enterprise/).
+* To access Customer Journey Analytics or make a connection, you will also need to be added as an Admin to a Customer Journey Analytics Product Profile in the [Admin Console](https://adminconsole.adobe.com/enterprise/). Admins have the following permissions:
+  * Create/update/delete Connections or Data Views
+  * Update/delete projects, filters, calc metrics, or segments created by other users
+  * Share a Workspace project to all users
+* Non-admins (users) in Customer Journey Analytics cannot view Data Views or Connections, but can create filters, projects, and calculated metrics.
 
 ### Terminology updates
 
-Several features in CJA have been renamed to align with industry standards. Some updated names include:
+Several features in CJA have been renamed, when compared to traditional Adobe Analytics, to align with industry standards. Some updated terminology includes:
 
 * Segments are now known as 'Filters'.
 * Virtual Report Suites are now known as 'Views'.
@@ -68,7 +72,7 @@ Several features in CJA have been renamed to align with industry standards. Some
 
 ## Other capabilities built on Adobe Experience Platform
 
-Customer Journey Analytics is one capability among many that rely on the Adobe Experience Platform. Several other capabilities, also built on Platform, let you get the most out of your data.
+Customer Journey Analytics is one capability among many that rely on the Adobe Experience Platform. Several other capabilities, also built on Experience Platform, let you get the most out of your data.
 
 Adobe Experience Platform lets you centralize and standardize customer data and content from any system and apply data science and machine learning to improve the design and delivery of personalized experiences. Customer data in the platform is stored as datasets,which consist of a schema and batches of data. For more detail on the platform, see [Adobe Experience Platform Architecture Overview](https://www.adobe.io/apis/experienceplatform/home/overview.html).
 
