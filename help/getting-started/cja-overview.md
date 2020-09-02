@@ -47,7 +47,7 @@ Before you can start using Customer Journey Analytics, the following prerequisit
 To create connections, add datasets, etc., you need the following permissions in the [Admin Console](https://adminconsole.adobe.com/enterprise/):
 
 * To manage datasets in the Experience Platform, you must be part of a Platform Product Profile that gives you the "Manage Datasets" permission. For more information, see [Access control in Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
-* To create a connection to a Platform dataset, you must be part of a Platform Product Profile that gives you the following permissions:
+* To create a connection to an Experience Platform dataset, you must be part of a Platform Product Profile that gives you the following permissions:
   * View Schemas
   * View Datasets
   * Manage Identity Namespaces
