@@ -52,7 +52,7 @@ To create connections, add datasets, etc., you need the following permissions in
   * View Datasets
   * Manage Identity Namespaces
   * View Sandboxes
-* To access Customer Journey Analytics or make a connection, you will also need to be added as an Admin to a Customer Journey Analytics Product Profile in the [Admin Console](https://adminconsole.adobe.com/enterprise/). Admins have the following permissions:
+* As of Sept. 9, 2020, to access Customer Journey Analytics or make a connection, you will also need to be added as an Admin to a Customer Journey Analytics Product Profile in the [Admin Console](https://adminconsole.adobe.com/enterprise/). Admins have the following permissions:
   * Create/update/delete Connections or Data Views
   * Update/delete projects, filters, calc metrics, or segments created by other users
   * Share a Workspace project to all users
