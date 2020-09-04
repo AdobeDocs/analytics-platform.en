@@ -55,7 +55,8 @@ To create connections, add datasets, etc., you need the following permissions in
   * Manage Schemas
   * View Identity Namespaces
   * View Datasets
-  For more information on Experience Platform permissions, see [Access control in Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+  
+For more information on Experience Platform permissions, see [Access control in Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
 
 ### User access
 
