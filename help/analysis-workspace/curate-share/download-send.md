@@ -6,6 +6,10 @@ uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 
 # Download PDF or CSV files from Workspace
 
+>[!NOTE]
+>
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 There are several different ways you can export data from Analysis Workspace, depending on what set of data you want to analyze outside of the tool and who needs to receive the information. Exported data can be in the form of copied data, CSV or PDF files. A PDF is typically preferred if you want visualizations included in the file, while a CSV (or copied data) is preferred if you simply want plain-text data.
 
 >[!IMPORTANT]
@@ -29,7 +33,7 @@ For project downloads, keep in mind:
 
 The right-click option **[!UICONTROL Copy to clipboard]** lets you quickly copy data from Workspace and paste it elsewhere. 
 
-* If you want the displayed table copied, right-click on the table header and choose **Copy displayed data to clipboard**. 
+* If you want the displayed table copied, right-click on the table header and choose **Copy data to clipboard**. 
 * If you want a subset of data copied, make a selection in the table and then right-click > **Copy selection to clipboard**.
 
 Additionally, the hotkey `Ctrl+C` copies your selection to the clipboard. Once copied, you can go into another tool and paste the information (or hit `Ctrl+V`).
@@ -40,15 +44,14 @@ Additionally, the hotkey `Ctrl+C` copies your selection to the clipboard. Once c
 
 The right-click option **[!UICONTROL Download data as CSV]** allows you to download a table of data or the data source of any visualization as a CSV.
 
-* From the header of any table, right-click **[!UICONTROL Download displayed data as CSV]**. This downloads the displayed data in the table as a CSV.
+* From the header of any table or visualization, right-click **[!UICONTROL Download data as CSV]**. This downloads the displayed data in the table or the underlying data source for a visualization as a CSV. Note: the Map visualization does not support this option.
 * If a selection is made in the table, the option will say **[!UICONTROL Download selection as CSV]**. Only the selection is downloaded with this option, as opposed to the full, displayed table.
-* From the header of any visualization, right-click **[!UICONTROL Download data as CSV]**. This  downloads the data source table for a visualization as a CSV. Note: the Map visualization does not support this option.
 
 ![](assets/download-data-viz.png)
 
 ## Download items as CSV {#download-items}
 
-If you want to analyze more than the visible 400 rows of data in a table, right-click the table header or any row and select **Download items as CSV (Dimension name)**. This option will export up to 50,000 dimension items for the selected dimension (based on the table sort), with filters and segments applied. If you chose this option from the top of the table, the first dimension in the table will be exported. While no limits are enforced in the freeform table, it is recommended that the Download items option be used in tables with less than 20 columns to ensure optimal performance.
+If you want to analyze more than the visible 400 rows of data in a table, right-click the table header or any row and select **Download items as CSV (Dimension name)**. This option will export up to 50,000 dimension items (based on the table sort) for the selected dimension, with filters and segments applied. If you chose this option from the top of the table, the first dimension in the table will be exported. While no limits are enforced in the freeform table, it is recommended that the Download items option be used in tables with less than 20 columns to ensure optimal performance.
 
 >[!TIP]
 >
