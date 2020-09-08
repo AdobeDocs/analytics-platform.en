@@ -138,6 +138,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
   + [Use arrays of objects](use-cases/object-arrays.md)
   + [(B2B) Add account-level data as a lookup dataset](use-cases/b2b.md)
+  + [Data ingestion use cases](use-cases/data-ingestion.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
 + [CJA documentation updates](doc-changes.md)
