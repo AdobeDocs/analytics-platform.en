@@ -5,7 +5,7 @@ description: Understand the different ways you can ingest data into Customer Jou
 
 # Data ingestion options for Customer Journey Analytics
 
-You have a number of options when it comes to ingesting data into Customer Journey Analytics. Some of them assume that you want to move traditional Adobe Analytics data over, some of them assume that you ingest data directly from Adobe Experience Platform. This reference provides high-level steps to follow.
+You have a number of options when it comes to ingesting data into Customer Journey Analytics. Some of them assume that you want to move traditional Adobe Analytics data over, some of them assume that you ingest data directly from Adobe Experience Platform. This reference provides high-level steps to follow, with links to more detailed information.
 
 ## Ingest data from traditional Adobe Analytics
 
@@ -27,15 +27,20 @@ This workflow utilizes the Adobe Analytics Data Connector and varies depending o
 
 ## Ingest data from the AEP Web SDK
 
-TBD
+You can do data collection via the Adobe Experience Platform Web SDK and the Adobe Experience Platform Edge Network, with or without the help of Launch.
 
-### Via Experience Edge
+1. 
+https://docs.adobe.com/content/help/en/experience-platform/edge/home.html
+https://docs.adobe.com/content/help/en/experience-platform/edge/get-started/quick-start-without-launch.html
+https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html
 
-TBD
+### Without Launch
+
+
 
 ### Via Launch
 
-TBD
+Launch is an extensible and open platform that lets you and Adobe Partners 
 
 ## Batch ingestion and Streaming ingestion
 
