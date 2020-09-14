@@ -24,27 +24,3 @@ This workflow utilizes the Adobe Analytics Data Connector and varies depending o
 1. Use [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/en/analytics/implementation/launch/overview.html) to implement code on your site for data collection, if you haven't already. Launch is a tag management solution that lets you deploy Analytics code alongside other tagging requirements. Launch offers integrations with other solutions and products, and lets you deploy custom code. All of these tasks can be done without relying on any development teams in your organization to update code on your site..
 1. Create an [Adobe Analytics source connector](https://docs.adobe.com/content/help/en/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) in Adobe Experience Platform. This source connector will ingest your Analytics data into Experience Platform in a standardized framework called [Experience Data Model (XDM) System](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html).
 1. Use [Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html) to create one or more connections and data views that will inform your cross-channel reporting.
-
-## Ingest data from the AEP Web SDK
-
-TBD
-
-### Via Experience Edge
-
-TBD
-
-### Via Launch
-
-TBD
-
-## Batch ingestion and Streaming ingestion
-
-TBD
-
-## Ingest Google Analytics data
-
-TBD
-
-## Ingest data via the Bulk Ingestion API
-
-TBD
