@@ -5,6 +5,9 @@ product: adobe analytics
 sub-product: customer journey
 index: yes
 user-guide-title: Customer Journey Analytics Guide
+user-guide-description: This guide provides self-help assistance for Customer Journey Analytics.
+breadcrumb-title: Customer Journey Analytics Guide
+breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 solution-title: Experience Cloud
 solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
 solution-image: assets/experience-cloud-logo-24.png
@@ -14,7 +17,7 @@ tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 ---
 
-# Customer Journey Analytics Help {#using}
+# Customer Journey Analytics Guide {#using}
 
 + [Customer Journey Analytics Product Documentation](getting-started/cja-landing.md)
 + Customer Journey Analytics overview {#cja-overview}
