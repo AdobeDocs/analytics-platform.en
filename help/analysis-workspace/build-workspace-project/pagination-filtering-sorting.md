@@ -6,15 +6,11 @@ uuid: 53263cec-c378-459b-9689-6adaeb66e5c9
 
 # Pagination, filtering and sorting tables
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+For an overview, watch this video tutorial:
 
-For an overview, watch this video on YouTube:
+[Pagination, Filtering and Sorting Tables in Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
 
-[Pagination, Filtering and Sorting Tables in Analysis Workspace](https://www.youtube.com/watch?v=2zxpRPCGspg)
-
-## Advanced filtering options
+## Advanced filtering options {#section_36E92E31442B4EBCB052073590C1F025}
 
 Clicking the filter icon, then Show Advanced, next to a dimension in a freeform table lets you filter using the following criteria:
 
