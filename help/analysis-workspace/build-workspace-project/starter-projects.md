@@ -76,7 +76,7 @@ These standard templates walk you through common terminology and steps for build
 
 * **Magento: Marketing and Commerce**: This template breaks down your ecommerce conversion by marketing channel attribution, as well as providing insight by search keyword, landing page, geographical location, and more. For a video overview, see:
 
->[!VIDEO](https://video.tv.adobe.com/v/28163/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28163/?quality=12)
 
 ### Media
 

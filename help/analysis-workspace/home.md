@@ -11,7 +11,7 @@ Analysis Workspace is a flexible browser tool that allows you to quickly build a
 
 If you have only a few minutes, watch this brief overview to see what is possible.
 
->[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
 ## Log in to Adobe Analytics {#login}
 
