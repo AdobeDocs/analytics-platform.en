@@ -23,7 +23,7 @@ In CJA, dimension items are only put in 'Long Tail' if an individual processing 
 
 If you want to reduce the 'Long Tail' dimension item, Adobe recommends any of the following:
 
-* Use a segment. Segments apply at the time each server processes a subset of data. Limiting the number of unique values they return reduces the 'Long Tail' dimension item.
+* Use a filter. Filters apply at the time each server processes a subset of data. Limiting the number of unique values they return reduces the 'Long Tail' dimension item.
 * Use a lookup dataset dimension. Lookup dataset dimensions combine event dataset dimension items, which limit the number of unique values returned.
 
 Overall, it is difficult to consume a report that contains more than 500K unique dimension items. If you apply a segment or a lookup dataset dimension, you can reduce the presence of 'Long Tail' while making your report easier to consume. Adobe plans to improve this experience as CJA is developed further.

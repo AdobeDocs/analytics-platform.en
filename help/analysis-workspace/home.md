@@ -31,7 +31,7 @@ With the tutorial complete, you are ready to begin building your first project. 
 
 ![](assets/create-new-project.png)
 
-You can also begin your analysis from pre-built **templates**, either Adobe-provided standard templates or custom templates that were created by your organization. There a several different templates available, depending on the analysis or use case you have in mind. [Learn more](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) about the different template options available.
+You can also begin your analysis from pre-built **templates**, either Adobe-provided standard templates or custom templates that were created by your organization. There a several different templates available, depending on the analysis or use case you have in mind. [Learn more](/help/analysis-workspace/build-workspace-project/starter-projects.md) about the different template options available.
 
 ## Build your analysis {#analysis}
 
@@ -39,23 +39,22 @@ In your Workspace project, **panels, tables, visualizations, and components** ar
 
 ### Components
 
-**Components** are dimensions, metrics, segments, or date ranges, all of which can be combined in a **[!UICONTROL Freeform table]** to start answering your business question. Be sure to familiarize yourself with each [component type](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html) before diving into your analysis. Once you've mastered component terminology, you can begin dragging and dropping to [build your analysis](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/t-freeform-project.html) in a **[!UICONTROL Freeform table]**.
+**Components** are dimensions, metrics, segments, or date ranges, all of which can be combined in a **[!UICONTROL Freeform table]** to start answering your business question. Be sure to familiarize yourself with each [component type](/) before diving into your analysis. Once you've mastered component terminology, you can begin dragging and dropping to [build your analysis](/help/analysis-workspace/build-workspace-project/freeform-overview.md) in a **[!UICONTROL Freeform table]**.
 
 ![](assets/build-components.png)
 
 ### Visualizations
 
-**Visualizations**, such as a bar or line chart, are then added on top of the data to visually bring it to life. On the far left rail, select the middle **[!UICONTROL Visualizations]** icon to see the full list of [visualizations](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html) available.
+**Visualizations**, such as a bar or line chart, are then added on top of the data to visually bring it to life. On the far left rail, select the middle **[!UICONTROL Visualizations]** icon to see the full list of [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) available.
 
 ![](assets/build-visualizations.png)
 
 ### Panels
 
-**Panels** are used to organize your analysis within a project and can contain many tables & visualizations. Many of the panels provided in Analysis Workspace generate a full set of analyses based on a few user inputs. On the far left rail, select the top **[!UICONTROL Panels]** icon to see a full list of [panels](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/panels.html) available.
+**Panels** are used to organize your analysis within a project and can contain many tables & visualizations. Many of the panels provided in Analysis Workspace generate a full set of analyses based on a few user inputs. On the far left rail, select the top **[!UICONTROL Panels]** icon to see a full list of [panels](/help/analysis-workspace/c-panels/panels.md) available.
 
 ![](assets/build-panels.png)
 
 ## Additional resources {#resources}
 
 * Adobe offers hundreds of [Analytics video training tutorials](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html).
-* See [What's New in Analysis Workspace](/help/analyze/analysis-workspace/new-features-in-analysis-workspace.md) for updates about new features.

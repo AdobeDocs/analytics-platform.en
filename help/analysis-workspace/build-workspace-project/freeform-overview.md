@@ -26,7 +26,7 @@ The Workspace project list page contains the following information:
 
 |  Element  | Description  |
 |---|---|
-| [Create New Project](/help/analysis-workspace/build-workspace-project/t-freeform-project.md)  | Click this link to start a new project from scratch.  |
+| Create New Project  | Click this link to [start a new project from scratch](/help/analysis-workspace/home.md).  |
 |  Manage Projects  |Clicking this link takes you to the Projects Component Manager ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Projects]**), which lists all your projects and lets you tag, share, delete, rename, approve, copy, and export projects to CSV.  |
 | Set as Landing Page | Turns this page into your Workspace landing page. |
 |  View Tutorials  |Takes you to the [Analysis Workspace video tutorials](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html).  |
@@ -84,7 +84,7 @@ The submenus contain the following options.
 
 ## Left Rail {#section_271295C26EC840ABB2A8E7EC0498B60E}
 
-The left rail has 3 icons, allowing you access to Panels, [Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), and Components (Dimensions, Metrics, Segments, Data Ranges) with one click:
+The left rail has 3 icons, allowing you access to Panels, [Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), and [Components](/help/components/overview.md) (Dimensions, Metrics, Segments, Data Ranges) with one click:
 
 ![](assets/panels.png) ![](assets/visualizations.png) ![](assets/components.png)
 
