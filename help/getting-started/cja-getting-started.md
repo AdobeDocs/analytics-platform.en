@@ -1,6 +1,6 @@
 ---
 title: Customer Journey Analytics Getting Started
-description: Customer Journey Analytics Getting Started.
+description: Understand the prerequisites and workflow required to implement Customer Journey Analytics.
 ---
 
 # Customer Journey Analytics Getting Started
