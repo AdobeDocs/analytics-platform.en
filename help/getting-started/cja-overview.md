@@ -1,6 +1,6 @@
 ---
 title: Customer Journey Analytics overview
-description: Customer Journey Analytics introduction
+description: Learn how Customer Journey Analytics lets you use Analysis Workspace with data from Experience Platform.
 ---
 
 # Customer Journey Analytics overview
