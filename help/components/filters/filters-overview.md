@@ -74,7 +74,7 @@ Session containers include values based on occurrence per session:
 
 The Event container defines which page events you would like to include or exclude from a filter. It is the most narrow of the containers available to let you identify specific clicks and page view where a condition is true, letting you view a single tracking code, or isolate behavior within a particular section of your site. You may also want to pinpoint a specific value when an action occurs, such as the marketing channel when an order was placed.
 
-Event containers include values based single page breakdowns:
+Event containers include values-based, single-page breakdowns:
 
 * Products
 
