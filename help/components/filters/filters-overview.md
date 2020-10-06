@@ -12,7 +12,7 @@ Filters can be based on attributes (browser type, device, number of visits, coun
 You can build and save filters in the Filter Builder, or generate filters from a Fallout visualization (in Workspace). In addition, filters can be used together as stacked filters. 
 
 >[!IMPORTANT]
->Filters are known as 'segments' in Adobe Analytics. We renamed segments to filters because Adobe Experience Platform has a different definition of "segment".
+>Filters are known as 'segments' in Adobe Analytics. We renamed segments to filters because Adobe Experience Platform has [a different definition of "segment"](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html).
 
 Filtering includes the [Filter Builder](/help/components/filters/create-filters.md) to construct filters and run a pre-test, and the [Filter Manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
 
@@ -24,9 +24,9 @@ Here is an example:
 
 ![](assets/sequential_fil.png)
 
-|Visit One|Visit Two|Visit Three|
-|---|---|---|
-|The visitor went to the main landing page (A), excluded the campaign page (B), and then viewed the Product page (C).|The visitor again went to the main landing page (A), excluded the campaign page (B), and went again to the Product page (C), and then to a new page (D).|The visitor entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product page (G).|
+| Visit One | Visit Two | Visit Three |
+| --- | --- | --- |
+| The visitor went to the main landing page (A), excluded the campaign page (B), and then viewed the Product page (C).|The visitor again went to the main landing page (A), excluded the campaign page (B), and went again to the Product page (C), and then to a new page (D). | The visitor entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product page (G). |
 
 ## Filter containers
 
@@ -45,9 +45,7 @@ The Person container includes every visit and page view for visitors within a sp
 Person containers can include values based on a visitor's overall history:
 
 * Days Before First Purchase
-
 * Original Entry Page
-
 * Original Referring Domains 
 
 ### Session container
@@ -55,19 +53,14 @@ Person containers can include values based on a visitor's overall history:
 The Session container lets you identify page interactions, campaigns, or conversions for a specific session. The Session container is the most commonly used container because it captures behaviors for the entire visit session once the rule is met and lets you define which sessions you want to include or exclude in building and applying a segment. It can help you answer theses questions:
 
 * How many visitors viewed the News and Sports section in the same session? 
-
 * Which pages contributed to a successful conversion to a sale?
 
 Session containers include values based on occurrence per session:
 
 * Session Number
-
 * Entry Page
-
 * Return Frequency
-
 * Participation Metrics
-    
 * Linearly allocated metrics 
 
 ### Event container
@@ -77,9 +70,6 @@ The Event container defines which page events you would like to include or exclu
 Event containers include values-based, single-page breakdowns:
 
 * Products
-
 * List Props
-
 * List dimensions
-
 * Merchandising dimensions (in context of events) 
