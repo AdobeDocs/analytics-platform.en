@@ -27,9 +27,13 @@ Break down your data in unlimited ways for your specific needs; build queries us
    >
    >The number of breakdowns to show in the table is limited to 200. This limit will increase for exporting breakdowns.
 
-[Dimensions in Analysis Workspace on YouTube](https://www.youtube.com/watch?v=P9W0hhIHhCs&index=12&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:54)
+**Video: Dimensions in Analysis Workspace**
 
-[Dimension Breakdowns on YouTube](https://www.youtube.com/watch?v=3mQ2HN7-lIc&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&index=13) (2:02)
+>[!VIDEO](https://video.tv.adobe.com/v/23971)
+
+**Video: Dimension Breakdowns**
+
+>[!VIDEO](https://video.tv.adobe.com/v/23969)
 
 ## Apply attribution models to breakdowns
 

@@ -43,5 +43,6 @@ You can manage components (individually or by selecting more than one) in a numb
 |Share|Applies only to segments.|
 |Delete|Applies only to segments.|
 
-[Creating Metrics, Segments, and Dates on YouTube](https://www.youtube.com/watch?v=XXJuNAte8E8&index=25&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (2:51)
+Watch the video on Creating Metrics, Segments, and Dates:
 
+>[!VIDEO](https://video.tv.adobe.com/v/23979)

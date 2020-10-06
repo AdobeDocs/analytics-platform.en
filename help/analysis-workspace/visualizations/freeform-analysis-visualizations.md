@@ -6,37 +6,33 @@ title: Visualizations overview
 
 # Visualizations overview
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 Workspace offers a number of visualizations that let you generate visual representations of your data, such as bar charts, donut charts, histograms, line charts, maps, scatterplots, and others. Each visualization has its own settings that you can manage. Click the name of the visualization for more detailed information.
 
-YouTube Video: [Visualization Types in Analysis Workspace](https://www.youtube.com/watch?v=b1zLEywRa6w&index=39&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (2:57)
+Video tutorial: [Visualization Types in Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/visualization-types.html) (2:57)
 
-|Visualization name| Description|
-|---|---|
-|[Area](/help/analysis-workspace/visualizations/area.md)|like a line graph, but with a colored area below the line. Use an area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics.|
-|[Bar](/help/analysis-workspace/visualizations/bar.md)|Shows vertical bars representing various values across one or more metrics.|
-|[Bullet graph](/help/analysis-workspace/visualizations/bullet-graph.md)|Shows how a value you are interested in compares to or measures against other performance ranges (goals).|
-|[Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)|A *`cohort`* is a group of people sharing common characteristics over a specified period. Cohort Analysis is useful, for example, when you want to learn how a cohort engages with a brand. You can easily spot changes in trends, then respond accordingly.|
-|[Donut](/help/analysis-workspace/visualizations/donut.md)|Similar to a pie chart, this visualization shows data as parts or segments of a whole.|
-|[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)|Fallout reports show where visitors left (fell out) and continued through (fell through) a predefined sequence of pages.|
-|[Flow](/help/analysis-workspace/visualizations/c-flow/flow.md)|Shows customer paths through your websites and apps.|
-|[Freeform table](/help/analysis-workspace/visualizations/freeform-table.md)|A Freeform table is not merely a data table, but also an interactive visualization.|
-|[Histogram](/help/analysis-workspace/visualizations/histogram.md)|A histogram is similar to a bar chart, but it groups numbers into ranges (buckets).|
-|[Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md)|Shows horizontal bars representing various values across one or more metrics.|
-|[Line](/help/analysis-workspace/visualizations/line.md)|Represents metrics using a line in order to show how values change over a period of time. A line chart can be used only when time is used as a dimension.|
-|[Scatterplot](/help/analysis-workspace/visualizations/scatterplot.md)|Shows the relationship between dimension items and up to three metrics.|
-|[Summary number](/help/analysis-workspace/visualizations/summary-number-change.md)|Depending on which cell is selected, this visualization shows totals and summaries. |
-|[Summary change](/help/analysis-workspace/visualizations/summary-number-change.md)|Depending on which cells are selected, this visualization compares cells to each other.|
-|[Text](/help/analysis-workspace/visualizations/text.md)|Lets you add user-defined text to your Workspace.|
-|[Treemap](/help/analysis-workspace/visualizations/treemap.md)|Displays hierarchical (tree-structured) data as a set of nested rectangles.|
-|[Venn](/help/analysis-workspace/visualizations/venn.md)|Lets you drag in up to 3 segments (from Components) and one metric to build a Venn diagram.|
+| Visualization name | Description |
+| --- | --- |
+| [Area](/help/analysis-workspace/visualizations/area.md) | Like a line graph, but with a colored area below the line. Use an area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics. |
+| [Bar](/help/analysis-workspace/visualizations/bar.md) | Shows vertical bars representing various values across one or more metrics. |
+| [Bullet graph](/help/analysis-workspace/visualizations/bullet-graph.md) | Shows how a value you are interested in compares to or measures against other performance ranges (goals). |
+| [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | A cohort is a group of people sharing common characteristics over a specified period. Cohort Analysis is useful, for example, when you want to learn how a cohort engages with a brand. You can easily spot changes in trends, then respond accordingly. |
+| [Donut](/help/analysis-workspace/visualizations/donut.md) | Similar to a pie chart, this visualization shows data as parts or segments of a whole. |
+| [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Fallout reports show where visitors left (fell out) and continued through (fell through) a predefined sequence of pages. |
+| [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) | Shows customer paths through your websites and apps. |
+| [Freeform table](/help/analysis-workspace/visualizations/freeform-table.md) | A Freeform table is not merely a data table, but also an interactive visualization. |
+| [Histogram](/help/analysis-workspace/visualizations/histogram.md) | A histogram is similar to a bar chart, but it groups numbers into ranges (buckets). |
+| [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md) | Shows horizontal bars representing various values across one or more metrics. |
+| [Line](/help/analysis-workspace/visualizations/line.md) | Represents metrics using a line in order to show how values change over a period of time. A line chart can be used only when time is used as a dimension. |
+| [Scatterplot](/help/analysis-workspace/visualizations/scatterplot.md) | Shows the relationship between dimension items and up to three metrics. |
+| [Summary number](/help/analysis-workspace/visualizations/summary-number-change.md) | Depending on which cell is selected, this visualization shows totals and summaries. |
+| [Summary change](/help/analysis-workspace/visualizations/summary-number-change.md) | Depending on which cells are selected, this visualization compares cells to each other. |
+| [Text](/help/analysis-workspace/visualizations/text.md) | Lets you add user-defined text to your Workspace.|
+| [Treemap](/help/analysis-workspace/visualizations/treemap.md) | Displays hierarchical (tree-structured) data as a set of nested rectangles. |
+| [Venn](/help/analysis-workspace/visualizations/venn.md) | Lets you drag in up to 3 segments (from Components) and one metric to build a Venn diagram. |
 
 ## Visualizations panel {#section_DC07F032FBEF4046A40F7B95C28DA018}
 
-To display the Visualizations panel, click **[!UICONTROL Visualizations]** in the side panel.
+To display the Visualizations panel, click **[!UICONTROL Visualizations]** in the left rail.
 
 ![Step Result](assets/visualizations.png)
 
@@ -53,15 +49,15 @@ To access [!UICONTROL Visualization Settings], drag a visualization to the [!UIC
 ![](assets/visualization_settings.png)
 
 | Setting | Description |
-|--- |--- |
-|Percentages|Displays values in percentages.|
-|100% Stacked|This setting on area stacked or bar stacked or horizontal bar stacked visualizations turns the chart into a "100% stacked" visualization. Example: ![](assets/stacked_100_percent.png)|
-|Legend Visible|Lets you hide the filter details text for the Summary Number/Summary Change visualization.|
-|Limit Max Items|Lets you limit the number of items that a visualization displays.|
-|Anchor Y Axis at Zero|If all the values plotted on the chart are considerably above zero, the chart default will make the bottom of the y-axis NON-ZERO. If you check this box, the y-axis will be forced to zero (and it will re-draw the chart).|
-|Normalization|Forces metrics to equal proportions.|
-|Display Dual Axis|Only applies if you have two metrics - you can have a y-axis on the left (for one metric) and on the right (for the other metric).|
-|Show Anomalies|Enhances line graphs and freeform tables to display data anomalies.|
+| --- | --- |
+| Percentages | Displays values in percentages. |
+| 100% Stacked | This setting on area stacked or bar stacked or horizontal bar stacked visualizations turns the chart into a "100% stacked" visualization. Example: ![](assets/stacked_100_percent.png) |
+| Legend Visible |Lets you hide the filter details text for the Summary Number/Summary Change visualization. |
+| Limit Max Items | Lets you limit the number of items that a visualization displays. |
+| Anchor Y Axis at Zero | If all the values plotted on the chart are considerably above zero, the chart default will make the bottom of the y-axis NON-ZERO. If you check this box, the y-axis will be forced to zero (and it will re-draw the chart). |
+| Normalization | Forces metrics to equal proportions. |
+| Display Dual Axis | Only applies if you have two metrics - you can have a y-axis on the left (for one metric) and on the right (for the other metric).|
+| Show Anomalies | Enhances line graphs and freeform tables to display data anomalies. |
 
 ## Create Visual icon {#section_9C11D9DEDC42413AA53E69A71A509DFC}
 
@@ -76,18 +72,18 @@ Settings that are contextual to a graph can be accessed when right-clicking next
 ![](assets/right-click_menu.png)
 
 | Setting | Description |
-|--- |--- |
-|Insert Copied Visualization/Panel|Lets you paste ("insert") that copied element into another place within the project, or into a completely different project.|
-|Copy Visualization/Panel|Lets you right-click and copy a visualization or panel.|
-|Duplicate Visualization/Panel|Makes an exact duplicate of the current visualization, which you can then modify.|
-|Collapse all Panels|Collapses all project panels.|
-|Collapse all Visualizations in Panel|Collapses all visualizations in this project panel.|
-|Expand all Panels|Expands all project panels.|
-|Expand all Visualizations in Panel|Expands all visualizations in this project panel.|
-|Edit Description|Add (or edit) a text description for the visualization/panel. This description appears in  Project  >  Project Info & Settings .|
-|Get Panel Link|Lets you direct someone to a specific panel within a project.|
-|Get Visualization Link|Lets you copy and share this link to send others directly to this visualization. Users will be required to log in.|
-|Start Over|(Works for Flow, Venn, Histogram) Deletes the configuration for the current visualization and opens a new panel where you can re-configure it.|
+| --- | --- |
+| Insert Copied Visualization/Panel | Lets you paste ("insert") that copied element into another place within the project, or into a completely different project. |
+| Copy Visualization/Panel | Lets you right-click and copy a visualization or panel. |
+| Duplicate Visualization/Panel | Makes an exact duplicate of the current visualization, which you can then modify. |
+| Collapse all Panels | Collapses all project panels. |
+| Collapse all Visualizations in Panel | Collapses all visualizations in this project panel. |
+| Expand all Panels | Expands all project panels. |
+| Expand all Visualizations in Panel | Expands all visualizations in this project panel. |
+| Edit Description | Add (or edit) a text description for the visualization/panel. This description appears in  Project  >  Project Info & Settings . |
+| Get Panel Link | Lets you direct someone to a specific panel within a project. |
+| Get Visualization Link | Lets you copy and share this link to send others directly to this visualization. Users will be required to log in. |
+| Start Over | (Works for Flow, Venn, Histogram) Deletes the configuration for the current visualization and opens a new panel where you can re-configure it. |
 
 ## Edit legend labels {#section_94F1988CB4B9434BA1D9C6034062C3DE}
 
@@ -105,4 +101,4 @@ To edit a legend label in a Line chart, for example,
 1. Enter the new label text.
 1. Press **[!UICONTROL Enter]** to save.
 
-Here is a [link to a video](https://www.youtube.com/watch?v=mry3vDrTml0&index=61&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) on this topic.
+Here is a [link to a video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) on this topic.
