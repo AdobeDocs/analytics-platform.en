@@ -52,7 +52,9 @@ When you first open a Workspace, templates are available in the left rail. Analy
 
 You can use these pre-populated templates as they are or adapt them to your needs (by adding or replacing metrics or visualizations, for example) and save them under a new name.
 
->[!VIDEO](https://video.tv.adobe.com/v/23960) (2:46)
+>[!VIDEO](https://video.tv.adobe.com/v/23960)
+
+*(2:46)*
 
 Here are available templates and the questions that each template helps answer.
 
