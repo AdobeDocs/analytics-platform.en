@@ -1,11 +1,11 @@
 ---
-title: Combined datasets
+title: Combined event datasets
 description: Learn how CJA creates a connection by combining datasets.
 ---
 
-# Combined datasets
+# Combined event datasets
 
-When you create a connection, CJA combines all schemas and datasets into a single dataset. This 'combined dataset' is what CJA uses for reporting. When you include multiple schemas or datasets in a connection:
+When you create a connection, CJA combines all schemas and datasets into a single dataset. This 'combined event dataset' is what CJA uses for reporting. When you include multiple schemas or datasets in a connection:
 
 * Schemas are combined. Duplicate schema fields are merged.
 * The 'Person ID' column of each dataset are merged into a single column, regardless of their name. This column is the foundation of identifying unique visitors in CJA.
@@ -13,9 +13,11 @@ When you create a connection, CJA combines all schemas and datasets into a singl
 
 ## Example
 
-Consider the following example. You have two datasets, each with different fields containing different data.
+Consider the following example. You have two event datasets, each with different fields containing different data.
 
->[!NOTE] Adobe Experience Platform typically stores timestamp in Unix milliseconds. For readability in this example, date and time is used.
+>[!NOTE]
+>
+>Adobe Experience Platform typically stores timestamp in Unix milliseconds. For readability in this example, date and time is used.
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
@@ -32,7 +34,7 @@ Consider the following example. You have two datasets, each with different field
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | `Triangle` | `3.1` |
 
-When you create a connection using these two datasets, the following table is used for reporting.
+When you create a connection using these two event datasets, the following table is used for reporting.
 
 | `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -46,7 +48,7 @@ When you create a connection using these two datasets, the following table is us
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
 
-This combined dataset is what is used in reporting. It does not matter which dataset a row comes from; CJA treats all data as if it is in the same dataset. If a matching Person ID appears in both datasets, they are considered the same unique visitor. If a matching Person ID appears in both datasets with a timestamp within 30 minutes, they are considered part of the same session.
+This combined event dataset is what is used in reporting. It does not matter which dataset a row comes from; CJA treats all data as if it is in the same dataset. If a matching Person ID appears in both datasets, they are considered the same unique visitor. If a matching Person ID appears in both datasets with a timestamp within 30 minutes, they are considered part of the same session.
 
 This concept also applies to attribution. It does not matter which dataset a row comes from; attribution works exactly as if all events came from a single dataset. Using the above tables as an example:
 

@@ -17,7 +17,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Date Ranges | Custom Calendar support is planned. |
 | Calculated Metrics | Note that any existing calc metrics in the traditional Analysis Workspace will not be ported to CJA. |
 | Segments | Now called "Filters" - note that any existing segments in traditional Analysis Workspace will not be ported to CJA. |
-| Anomaly Detection | Full Support as of June 2020 |
+| Anomaly Detection | Full Support as of September 2020 |
 | Attribution IQ | Full Support |
 | Project Curation | Full Support |
 | Project Linking | Full Support |
@@ -73,7 +73,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Feature | Notes |
 | --- | --- |
 | A4T | Support is not yet planned. |
-| Video Analytics | Support is not yet planned. |
+| Media Analytics | Support is not yet planned. |
 | Advertising Cloud | Support is not yet planned. |
 | Report Builder (Excel plugin) | Support is not yet planned. |
 | Activity Map | Support is not yet planned. |
@@ -83,14 +83,12 @@ The following tables list which features in Adobe Analytics are supported, parti
 
 ## Will never be supported
 
-| Feature | Notes |
-| --- | --- |
-| People metric using Cross-Device Coop |  |
-| Reports & Analytics Dashboards |  |
-| Reports & Analytics Bookmarks |  |
-| Reports & Analytics Targets |  |
-| Reports & Analytics Calendar Events |  |
-| Ad Hoc Analysis |  |
-| Data Warehouse Reporting | [!UICONTROL Experience Platform Query Service] will be the new interface for these use cases in CJA. |
-| Mobile Services |  |
-| Data Feeds |  |
+* People metric using Cross-Device Coop
+* Reports & Analytics Dashboards
+* Reports & Analytics Bookmarks
+* Reports & Analytics Targets
+* Reports & Analytics Calendar Events
+* Ad Hoc Analysis
+* Data Warehouse Reporting - [!UICONTROL Experience Platform Query Service] will be the new interface for these use cases in CJA.
+* Mobile Services
+* Data Feeds

@@ -5,7 +5,9 @@ description: Get answers to commonly asked questions around attribution.
 
 # Attribution FAQ
 
->[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 **What is the "None" line item when using attribution?**
 
@@ -68,7 +70,7 @@ Since marketing channel dimensions depend on a traditional visit definition (as 
 
 Some dimensions in Analytics can contain multiple values on a single hit. Common examples include list vars and the products variable.
 
-When attribution is applied to multi-value hits, all values in the same hit get the same credit. Since many values can receive this credit, the report total can be different than if you summed each individual line item. The report total is deduplicated, while each individual dimension value gets proper credit.
+When attribution is applied to multi-value hits, all values in the same hit get the same credit. Since many values can receive this credit, the report total can be different than if you summed each individual line item. The report total is deduplicated, while each individual dimension item gets proper credit.
 
 **How does attribution work with segmentation?**
 
@@ -78,4 +80,6 @@ For example, if you create a VRS with a "Display Hits" segment applied, you coul
 
 ![Display-only virtual report suite](assets/vrs-aiq-example.png)
 
->[!NOTE] If a segment suppresses hits containing your metric, those metric instances will not be attributed to any dimension. However, a similar report filter will simply hide some dimension values, without any impact on metrics processed per the attribution model. As a result, a segment can return lower values than a filter with a comparable definition.
+>[!NOTE]
+>
+>If a segment suppresses hits containing your metric, those metric instances will not be attributed to any dimension. However, a similar report filter will simply hide some dimension items, without any impact on metrics processed per the attribution model. As a result, a segment can return lower values than a filter with a comparable definition.

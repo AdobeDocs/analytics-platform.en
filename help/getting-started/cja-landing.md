@@ -1,9 +1,9 @@
 ---
-title: Customer Journey Analytics Product Documentation
+title: Customer Journey Analytics Guide
 description: Customer Journey Analytics landing page.
 ---
 
-# Customer Journey Analytics - Product Documentation
+# Customer Journey Analytics Guide
 
 This technical documentation guide provides self help assistance for Customer Journey Analytics. Customer Journey Analytics allows you to bring your customer data from any channel you choose — both online and offline — into Adobe Experience Platform, and then analyze this data just as you would your existing digital data using Analysis Workspace today. 
 
@@ -15,7 +15,10 @@ Analytics Select, Prime, and Ultimate customers are eligible to purchase this ad
  <tbody> 
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>New or Featured Items</b> </p> <p> 
-     <ul> 
+     <ul>
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions"> Updated user permissions requirements (as of Sept. 9, 2020) </a> </li>
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-usecases/object-arrays.html"> Use arrays of objects </a> </li>
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-usecases/b2b.html"> Add account-level data as a lookup dataset </a> </li>
       <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html"> Getting Started with Customer Journey Analytics </a> </li> 
       <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-faq.html"> Frequently Asked Questions</a> </li> 
       <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-glossary.html"> Customer Journey Analytics Glossary</a> </li> 

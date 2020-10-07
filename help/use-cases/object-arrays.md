@@ -1,9 +1,9 @@
 ---
-title: Using arrays of objects
+title: Use arrays of objects
 description: Understand how CJA reports on data hierarchies.
 ---
 
-# Using arrays of objects
+# Use arrays of objects
 
 Some platform schemas can have object arrays. One of the most common examples would be a shopping cart, which contain multiple products. Each product has a name, SKU, category, price, quantity, and any other dimensions you want to track. All of these facets have separate requirements, but must all fit into the same hit.
 
@@ -181,7 +181,7 @@ CJA looks at these parts of the hit to generate the report:
 
 Since the dryer did not include a warranty, it is not included in the table.
 
-Since you can combine any dimension with any metric, the following table shows how data would with unspecified dimension values:
+Since you can combine any dimension with any metric, the following table shows how data would with unspecified dimension items:
 
 | `product : warranty : name` | `product : orders` | `product : warranty : orders` |
 | --- | --- | --- |
@@ -189,7 +189,7 @@ Since you can combine any dimension with any metric, the following table shows h
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-A product order exists without a warranty name tied to it, so the dimension value attributes to 'Unspecified'. The same situation also applies to the product warranty order:
+A product order exists without a warranty name tied to it, so the dimension item attributes to 'Unspecified'. The same situation also applies to the product warranty order:
 
 ```diff
 {
@@ -233,7 +233,7 @@ A product order exists without a warranty name tied to it, so the dimension valu
 +}
 ```
 
-Note the orders that don't have a name tied to them. These are the orders attributed to the 'Unspecified' dimension value.
+Note the orders that don't have a name tied to them. These are the orders attributed to the 'Unspecified' dimension item.
 
 ### Combining metrics
 

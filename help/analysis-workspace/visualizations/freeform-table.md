@@ -5,7 +5,9 @@ description: Learn about Freeform tables and Freeform table builder
 
 # Freeform table
 
->[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 In Analysis Workspace, a Freeform Table is not merely a data table, but also an interactive visualization. You can drag and drop a combination of [components](/help/components/overview.md) into the rows and columns to create a custom table for your analysis. As each component is dropped, the table will update immediately so you can do rapid analysis.
 

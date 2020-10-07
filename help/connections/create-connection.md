@@ -9,7 +9,11 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
 Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) for a video overview.
 
->[!IMPORTANT] You can combine multiple [!DNL Experience Platform] datasets into a single connection.
+>[!IMPORTANT]
+>
+>You can combine multiple [!DNL Experience Platform] datasets into a single connection.
+
+## Select sandbox and datasets
 
 1. Go to [https://analytics.adobe.com](https://analytics.adobe.com).
 
@@ -17,33 +21,81 @@ Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja
 
 1. Click **[!UICONTROL Create new connection]** on the top right.
 
-    ![Create connection](assets/create-connection.png)
+    ![Create connection](assets/create-connection0.png)
 
 1. Choose a sandbox in Experience Platform that contains the dataset/s to which you want to create a connection. 
 
-    Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain data sets. Sandboxes are used to control access to data sets. You cannot access data across sandboxes. Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from. 
+    Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain data sets. Sandboxes are used to control access to data sets.  Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from. 
+
+    >[!IMPORTANT]
+    >
+    >You cannot access data across sandboxes, i.e., you can only combine datasets that are located within the same sandbox. 
 
 1. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**.
 
-    (If you have a lot of datasets to choose from, you can search for the right one(s) using the search bar above the list of datasets.)
+    (If you have a lot of datasets to choose from, you can search for the right one(s) using the **[!UICONTROL Search datasets]** search bar above the list of datasets.)
 
-1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in. 
+## Configure dataset
+
+On the right-hand side, you can now configure the dataset/s you have added.
+
+   ![Configure dataset](assets/create-connection.png)
+
+1. **[!UICONTROL Dataset type]**: For each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in. 
 
     There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
 
     |Dataset Type|Description|Timestamp|Schema|Person ID|
     |---|---|---|---|---|
-    |[!UICONTROL Event]|Data that represents events in time (e.g., web visits, interactions, transactions, POS data, survey data, ad impression data, etc.). For example, this could be typical clickstream data, with a customer ID or a cookie ID, and a timestamp. With Event data, you have flexibility as to which ID is used as the Person ID. |Is automatically set to the default timestamp field from event-based schemas in [UICONTROL Experience Platform].|Any built-in or custom schema that is based on an XDM class with the "Time Series" behavior. Examples include "XDM Experience Event" or "XDM Decision Event."|You can pick which Person ID you want to include. Each dataset schema defined in the Experience Platform can have its own set of one or more identities defined and associated with an Identity Namespace. Any of these can be used as the Person ID. Examples include Cookie ID, Stitched ID, User ID, Tracking Code, etc.|
-    |[!UICONTROL Lookup]|Analogous to a Classifications file. This data is used to look up values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names.|N/A|Any built-in or custom schema that is based on an XDM class with the "Record" behavior, except for the "XDM Individual Profile" class.|N/A|
-    |[!UICONTROL Profile]|Analogous to [!UICONTROL Customer Attributes] - for non-changing and non-temporal attributes. Data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. For example, allows you to upload CRM data about your customers. |N/A|Any built-in or custom schema that is based on the "XDM Individual Profile" class.|You can pick which Person ID you want to include. Each dataset defined in the [!DNL Experience Platform] has its own set of one or more Person IDs defined, such as Cookie ID, Stitched ID, User ID, Tracking Code, etc.<br>![Person ID](assets/person-id.png)**Note**: If you create a connection that includes datasets with different IDs, the reporting will reflect that. To really merge datasets, you need use the same Person ID.|
+    | [!UICONTROL Event] | Data that represents events in time (e.g., web visits, interactions, transactions, POS data, survey data, ad impression data, etc.). For example, this could be typical clickstream data, with a customer ID or a cookie ID, and a timestamp. With Event data, you have flexibility as to which ID is used as the Person ID. |Is automatically set to the default timestamp field from event-based schemas in [!UICONTROL Experience Platform]. | Any built-in or custom schema that is based on an XDM class with the "Time Series" behavior. Examples include "XDM Experience Event" or "XDM Decision Event." | You can pick which Person ID you want to include. Each dataset schema defined in the Experience Platform can have its own set of one or more identities defined and associated with an Identity Namespace. Any of these can be used as the Person ID. Examples include Cookie ID, Stitched ID, User ID, Tracking Code, etc. |
+    | [!UICONTROL Lookup] | (Analogous to a Classifications file in traditional Adobe Analytics.) This data is used to look up values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names. See [this use case](/help/use-cases/b2b.md) for an example. | N/A | Any built-in or custom schema that is based on an XDM class with the "Record" behavior, except for the "XDM Individual Profile" class.|N/A|
+    | [!UICONTROL Profile] | Analogous to [!UICONTROL Customer Attributes] - for non-changing and non-temporal attributes. Data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. For example, allows you to upload CRM data about your customers. | N/A | Any built-in or custom schema that is based on the "XDM Individual Profile" class.|You can pick which Person ID you want to include. Each dataset defined in the [!DNL Experience Platform] has its own set of one or more Person IDs defined, such as Cookie ID, Stitched ID, User ID, Tracking Code, etc.<br>![Person ID](assets/person-id.png)**Note**: If you create a connection that includes datasets with different IDs, the reporting will reflect that. To really merge datasets, you need use the same Person ID. |
 
-1. Click **[!UICONTROL Next]** to go to the [!UICONTROL Create Connection] dialog.
+1. **[!UICONTROL Dataset ID]**: This ID is automatically generated.
 
-    ![Create connection](assets/create-connection2.png)
+1. **[!UICONTROL Time stamp]**: add content here
 
-1. In the [!UICONTROL Create Connection] dialog, define these settings:
+1. **[!UICONTROL Schema]**: This is the [schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/schema/composition.html) based on which the dataset was created in Adobe Experience Platform.
 
-    |Field|Description|
+1. **[!UICONTROL Person ID]**: Select a person ID from the dropdown list of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID. 
+
+    >[!IMPORTANT]
+    >
+    >If there are no person IDs to choose from, that means one or more person IDs have not been defined in the schema. View [this video](https://youtu.be/G_ttmGl_LRU) on how to define an identity in Experience Platform.
+
+1. Click **[!UICONTROL Next]** to go to the [!UICONTROL Enable Connection] dialog.
+
+### Use Identity Map as a Person ID
+
+Customer Journey Analytics now supports the ability to use the Identity Map for its Person ID. Identity Map is a map data structure that allows someone to upload key -> value pairs. The keys are identity namespaces and the value is a structure that holds the identity value. The Identity Map exists on each row/event uploaded and is populated for each row accordingly.
+
+The Identity Map is available for any dataset that uses a schema based on the [ExperienceEvent XDM](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html) class. When you select such a dataset to be included in a CJA Connection, you have the option of selecting either a field as the primary ID or the Identity Map:
+
+![](assets/idmap1.png)
+
+If you select Identity Map, you get two additional configuration options:
+
+|Option|Description|
+|---|---|
+| [!UICONTROL Use Primary ID Namespace] | This instructs CJA, per row, to find the identity in the Identity Map that is marked with a primary=true attribute and use that as the Person ID for that row. This means that this is the primary key that will be used in Experience Platform for partitioning. It is also the prime candidate for usage as CJA's visitor ID (depending on how the dataset is configured in a CJA Connection).|
+| [!UICONTROL Namespace] | (This option is only available if you do not use the Primary ID Namespace.) Identity namespaces are a component of [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html) that serve as indicators of the context to which an identity relates. If you specify a namespace, CJA will search each row's Identity Map for this namespace key and use the identity under that namespace as the person ID for that row. Note that since CJA cannot do a full dataset scan of all rows to determine which namespaces are actually present, all possible namespaces are listed in the dropdown. You need to know which namespaces are specified in the data; this cannot be auto-detected.|
+
+### Identity Map edge cases
+
+This table shows the two configuration options when edge cases are present and how they are handled:
+
+|Option|No IDs are present in Identity Map|No IDs are marked as primary|Multiple IDs are marked as primary|Single ID is marked as primary|Invalid namespace with an ID marked as primary|
+|---|---|---|---|---|---|
+| **"Use Primary ID Namespace" checked** |The row is dropped by CJA.|The row is dropped by CJA, as no primary ID is specified.|All IDs marked as primary, under all namespaces, are extracted into a list. They are then alphabetically sorted; with this new sorting, the first namespace with its first ID is used as the Person ID.|The single ID marked as primary is used as the Person ID.|Even though the namespace may be invalid (not present in AEP), CJA will use the primary ID under that namespace as the Person ID.|
+|**Specific Identity Map namespace selected**|The row is dropped by CJA.|All IDs under the selected namespace are extracted into a list and the first is used as the Person ID.|All IDs under the selected namespace are extracted into a list and the first is used as the Person ID.|All IDs under the selected namespace are extracted into a list and the first is used as the Person ID.|All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. (Only a valid namespace can be selected at Connection creation time, so it is not possible for an invalid namespace/ID to be used as Person ID)|
+
+## Enable connection
+
+![Enable connection](assets/create-connection2.png)
+
+1. To enable a connection, define these settings:
+
+    |Option|Description|
     |---|---|
     |[!UICONTROL Name Connection]|Give the connection a descriptive name. The connection cannot be saved without a name.|
     |[!UICONTROL Description]|Add more detail to distinguish this connection from others.|

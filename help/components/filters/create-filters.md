@@ -19,7 +19,9 @@ Keep in mind that:
 
 ![](assets/segment-dropzone.png)
 
->[!NOTE] Filters created this way are internal to the project.
+>[!NOTE]
+>
+>Filters created this way are internal to the project.
 
 You can choose to make these filters public (global) by following these steps:
 
@@ -37,4 +39,6 @@ Several other methods exist for applying filters to a project:
 |Create filter from selection|Create an inline filter. Select rows, right-click the selection, then create an inline filter. This filter applies only to the open project and is not saved as an CJA filter. 1. Select rows.  2. Right-click the selection.  3. Click *Create filter from selection*.|
 |Components > New Filter|Displays the Filter Builder. See [Filter Builder](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html) for more information about filtering.|
 |Share > Share Project or Share > Curate Project Data|In [Curate and Share](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6), learn how filters that you apply to the project are available in shared analysis for the recipient.|
-|Use filters as dimensions|Video: [Using Segments as Dimensions in Analysis Workspace](https://www.youtube.com/watch?v=WmSdReKTWto&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&index=39)|
+|Use filters as dimensions|Video: Using Filters as Dimensions in Analysis Workspace|
+
+>[!VIDEO](https://video.tv.adobe.com/v/23974)

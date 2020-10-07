@@ -8,9 +8,7 @@ uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 
 # Create project - overview
 
->[!NOTE] You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
-**[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**
+ **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**
 
 You can create a robust Analytics project based on any combination of visualizations, report components, and data tables. It brings many of the table builder features from Ad Hoc Analysis into Analytics.
 
@@ -28,14 +26,18 @@ The Workspace project list page contains the following information:
 
 |  Element  | Description  |
 |---|---|
-| Project [Templates](/help/analysis-workspace/build-workspace-project/starter-projects.md)  | You can use these pre-populated project templates as they are or adapt them to your needs (by adding or replacing metrics or visualizations, for example) and save them under a new name.  |
-| [Create New Project](/help/analysis-workspace/home.md)  | Click this link to start a new project from scratch.  |
+| Create New Project  | Click this link to [start a new project from scratch](/help/analysis-workspace/home.md).  |
 |  Manage Projects  |Clicking this link takes you to the Projects Component Manager ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Projects]**), which lists all your projects and lets you tag, share, delete, rename, approve, copy, and export projects to CSV.  |
-|  View Tutorials  |Takes you to the [Analysis Workspace YouTube videos](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS).  |
+| Set as Landing Page | Turns this page into your Workspace landing page. |
+|  View Tutorials  |Takes you to the [Analysis Workspace video tutorials](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html).  |
 |  Name  | Name of the Workspace project.  |
-|  Created By  | The person who created this project (either you or someone who shared the project with you.)  |
+|  Owner  | The person who created this project (either you or someone who shared the project with you.)  |
+| Type | Indicates whether this is a Workspace Project or a [Mobile Scorecard](https://docs.adobe.com/content/help/en/analytics/analyze/mobapp/home.html). |
+| Project Role | Indicates whether you are the Owner, whether you can edit the project, or whether this is a Duplicate project. |
 |  Tags  |Tags that were applied to the project, either in the Projects Component Manager or under **[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]**.  |
 |  Last Modified  | Date and time when the project was last modified.  |
+| My Favorite Projects | To mark a project as a favorite, open the project and click the star next to its name. It will show up in this list the next time you open Workspace. |
+| Frequently Viewed Projects | Lists all projects that you open frequently, for ease of access. |
 
 ## Project Info & Settings {#section_63773D0B9E4543E88068ECECB9EEB4C6}
 
@@ -64,7 +66,9 @@ The top Projects menu looks like this:
 
 The submenus contain the following options.
 
->[!NOTE] Options marked by an asterisk (&#42;) display only with **saved** projects.
+>[!NOTE]
+>
+>Options marked by an asterisk (&#42;) display only with **saved** projects.
 
 |  Project  | Edit  | Insert  | Components  | Share  | Help  |
 |---|---|---|---|---|---|
@@ -80,7 +84,7 @@ The submenus contain the following options.
 
 ## Left Rail {#section_271295C26EC840ABB2A8E7EC0498B60E}
 
-The left rail has 3 icons, allowing you access to Panels, [Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), and [Components](/help/components/overview.md)(Dimensions, Metrics, Segments, Data Ranges) with one click:
+The left rail has 3 icons, allowing you access to Panels, [Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), and [Components](/help/components/overview.md) (Dimensions, Metrics, Segments, Data Ranges) with one click:
 
 ![](assets/panels.png) ![](assets/visualizations.png) ![](assets/components.png)
 

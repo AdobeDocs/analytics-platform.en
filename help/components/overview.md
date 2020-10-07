@@ -8,11 +8,11 @@ description: Learn what components CJA offers, and how you can use them in repor
 Components are features in Customer Journey Analytics that can be used in reports, or complement reporting features. You can manage these components using the following steps:
 
 1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your Adobe ID credentials.
-2. Navigate to [!UICONTORL Components] > [!UICONTROL Components] in the header menu.
+2. Navigate to [!UICONTROL Components] > [!UICONTROL Components] in the header menu.
 
 You can manage the following components:
 
-* [**Filters**](filters/filters-overview.md): Exclude parts of your data to focus on common dimension values
+* [**Filters**](filters/filters-overview.md): Exclude parts of your data to focus on common dimension items
 * [**Calculated metrics**](calc-metrics/calc-metr-overview.md): Use metrics and formulas as new components for use in reporting
 * [**Date ranges**](date-ranges/overview.md): Customize and refine the date ranges Analysis Workspace offers
 * [**Projects**](/help/analysis-workspace/home.md): Organize and maintain your projects in Analysis Workspace
@@ -31,7 +31,9 @@ See [Create a project](/help/analysis-workspace/home.md) for information about u
 
 You can manage components (individually or by selecting more than one) in a number of ways. Right-click a component or click **[!UICONTROL Actions]** at the top of the component list.
 
->[!NOTE] These actions do not apply to Time components.
+>[!NOTE]
+>
+>These actions do not apply to Time components.
 
 | Component Action | Description |
 |--- |--- |
@@ -41,5 +43,6 @@ You can manage components (individually or by selecting more than one) in a numb
 |Share|Applies only to segments.|
 |Delete|Applies only to segments.|
 
-[Creating Metrics, Segments, and Dates on YouTube](https://www.youtube.com/watch?v=XXJuNAte8E8&index=25&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (2:51)
+Watch the video on Creating Metrics, Segments, and Dates:
 
+>[!VIDEO](https://video.tv.adobe.com/v/23979)

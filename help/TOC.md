@@ -5,6 +5,9 @@ product: adobe analytics
 sub-product: customer journey
 index: yes
 user-guide-title: Customer Journey Analytics Guide
+user-guide-description: This guide provides self-help assistance for Customer Journey Analytics, Adobe's next-generation solution for cross-channel analytics, based on Adobe Experience Platform.
+breadcrumb-title: Customer Journey Analytics Guide
+breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 solution-title: Experience Cloud
 solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
 solution-image: assets/experience-cloud-logo-24.png
@@ -14,9 +17,9 @@ tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 ---
 
-# Customer Journey Analytics Help {#using}
+# Customer Journey Analytics Guide {#using}
 
-+ [Customer Journey Analytics Product Documentation](getting-started/cja-landing.md)
++ [Customer Journey Analytics Guide](getting-started/cja-landing.md)
 + Customer Journey Analytics overview {#cja-overview}
   + [Customer Journey Analytics overview](getting-started/cja-overview.md)
   + [Getting Started](getting-started/cja-getting-started.md)
@@ -26,7 +29,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 + Connections {#cja-connections}
   + [Create a connection](connections/create-connection.md)
   + [Manage connections](connections/manage-connection.md)
-  + [Combined datasets](connections/combined-dataset.md)
+  + [Combined event datasets](connections/combined-dataset.md)
 + Data Views {#cja-dataviews}
   + [Create a data view](data-views/create-dataview.md)
   + [Configure data views and attribution](data-views/configure-dataviews.md)
@@ -40,7 +43,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + Column and row settings {#column-row-settings}
       + [Column settings](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
       + [Row settings](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
-      + [Manual vs. dynamic rows](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
+      + [Dynamic vs. Static items](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
     + [Undo and redo settings](analysis-workspace/build-workspace-project/undo-redo.md)
     + [Hotkeys available in Analysis Workspace](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Pagination, filtering and sorting tables](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
@@ -86,6 +89,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + Curate or Share projects {#curate-share}
     + [Curate Workspace projects](analysis-workspace/curate-share/curate.md)
     + [Share Workspace projects](analysis-workspace/curate-share/share-projects.md)
+    + [Create shareable links](analysis-workspace/curate-share/shareable-links.md)
     + [View-only Workspace projects](analysis-workspace/curate-share/view-only-projects.md)
     + [Download PDF or CSV files](analysis-workspace/curate-share/download-send.md)
     + [Share and schedule project files](analysis-workspace/curate-share/send-schedule-files.md)
@@ -108,6 +112,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Analysis Workspace limitations](analysis-workspace/workspace-faq/aw-limitations.md)
     + [Administration requirements](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility in Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
+    + [Long-tail in Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
 + Components {#cja-components}
   + [Components overview](components/overview.md)
   + Dimensions {#dimensions}
@@ -134,7 +139,9 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Date comparison](components/date-ranges/time-comparison.md)
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
-  + [Using arrays of objects](use-cases/object-arrays.md)
+  + [Use arrays of objects](use-cases/object-arrays.md)
+  + [(B2B) Add account-level data as a lookup dataset](use-cases/b2b.md)
+  + [Data ingestion use cases](use-cases/data-ingestion.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
 + [CJA documentation updates](doc-changes.md)
