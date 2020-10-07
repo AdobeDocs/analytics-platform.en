@@ -17,7 +17,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Date Ranges | Custom Calendar support is planned. |
 | Calculated Metrics | Note that any existing calc metrics in the traditional Analysis Workspace will not be ported to CJA. |
 | Segments | Now called "Filters" - note that any existing segments in traditional Analysis Workspace will not be ported to CJA. |
-| Anomaly Detection | Full Support as of September 2020 |
+| Anomaly Detection | Full Support |
 | Attribution IQ | Full Support |
 | Project Curation | Full Support |
 | Project Linking | Full Support |
@@ -26,6 +26,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | VRS Component Curation | Now part of Data Views. |
 | Report Time Processing | CJA relies exclusively on Report Time Processing. |
 | GDPR Deletion | Note that GDPR is now handled in coordination with [!UICONTROL Experience Platform] - CJA inherits whatever data changes [!UICONTROL Experience Platform] makes to underlying datasets. |
+| User Permissions/Data Access Controls | CJA distinguishes between Adobe Admin Console product admins and users. Only product admins are able to 1) create/update/delete Connections or Data Views, 2) update/delete projects, filters, or calc metrics that were created by other users, and 3) share a Workspace project to all users |
 
 ## Supported with caveats
 
@@ -45,7 +46,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Feature | Notes |
 | --- | --- |
 | Out-of-the-box Analysis Workspace dimensions (e.g. Browser Type, Referrer Type, Marketing Channels, Visit Number etc.) | CJA does not provide these dimensions natively. For customers using the Analytics Data Connector (ADC), some of these dimensions are available, but not all. Please refer to our [documentation on which Analytics variables are supported via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
-| Panels | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. The Segment Comparison and Analytics for Target (A4T) panels are not supported. |
+| Panels | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. The Segment Comparison, Analytics for Target (A4T), and Media Concurrent Viewers panels are not supported. |
 | Merchandising eVars | Merchandising eVars will only work with ADC-based datasets unless they strictly conform to the same XDM schema (similar to the product list limitations above). |
 | Bot Filtering | For Analytics Data Connector (ADC)-based datasets, bot filtering is applied. General bot filtering logic for other datasets is not performed by the [!UICONTROL Experience Platform] or CJA. |
 | Processing Rules | For ADC-based datasets, processing rules are still applied. |
@@ -58,7 +59,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Contribution Analysis | Support is planned. |
 | Segment IQ | Support is planned. |
 | Segment Publishing (sending segments from Workspace to the Experience Cloud) | Support is planned. |
-| User Permissions/Data Access Controls | All users in CJA have the same access controls - this means all users have access to all connections, data views, etc. Basically, all users are admin-level users in CJA. Support is planned for 2020. |
 | CSV download | Support is planned. |
 | Scheduled Reports/Projects | Support is planned. |
 | Alerts | Support is planned. |
