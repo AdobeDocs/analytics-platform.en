@@ -53,7 +53,7 @@ On the right-hand side, you can now configure the dataset/s you have added.
 
 1. **[!UICONTROL Dataset ID]**: This ID is automatically generated.
 
-1. **[!UICONTROL Time stamp]**: add content here
+1. **[!UICONTROL Time stamp]**: For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in [!UICONTROL Experience Platform].
 
 1. **[!UICONTROL Schema]**: This is the [schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/schema/composition.html) based on which the dataset was created in Adobe Experience Platform.
 
