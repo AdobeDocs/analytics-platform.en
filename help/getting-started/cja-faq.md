@@ -20,7 +20,7 @@ description: Customer Journey Analytics - Frequently Asked Questions.
 | Can [!UICONTROL Customer Journey Analytics] "stitch" across devices or across datasets? | No. [!UICONTROL Customer Journey Analytics] is a "bring-your-own-ID" analytics system. Plans for a good stitching approach are in the works. |
 | Is stitching from anonymous behavior to authenticated behavior supported? | No, not yet. |
 
- ## Getting data into [!UICONTROL Customer Journey Analytics]
+## Getting data into [!UICONTROL Customer Journey Analytics]
 
 | Question | Answer |
 | --- | --- |
