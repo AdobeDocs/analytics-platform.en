@@ -34,7 +34,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | --- | --- |
 | Product Variable | The product variable currently available for reporting for data conforming to the Experience Event schema (specifically using the productListItems object). |
 | Visualizations | All visualizations are supported except for the Map visualization. |
-| AAM Audiences | If customers are using [!UICONTROL Analytics Data Connector] datasets, this data will be part of the ADC data. |
 | Project Sharing | Project sharing is only supported between users of CJA - there is not project sharing between CJA and the traditional Analysis Workspace. |
 | Custom Sessionization | Support for all custom sessionization features other than mobile background hits. |
 | eVar persistence settings | eVars are no longer part of CJA. However, persistence settings are now part of Data Views and are available for all dimensions. Keep in mind that persistence is based on report time processing, not data collection processing. This means all persistence will be based on the reporting date range rather than the entirety of the data. |
