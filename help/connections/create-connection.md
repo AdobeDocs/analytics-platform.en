@@ -53,7 +53,7 @@ On the right-hand side, you can now configure the dataset/s you have added.
 
 1. **[!UICONTROL Dataset ID]**: This ID is automatically generated.
 
-1. **[!UICONTROL Time stamp]**: add content here
+1. **[!UICONTROL Time stamp]**: For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in [!UICONTROL Experience Platform].
 
 1. **[!UICONTROL Schema]**: This is the [schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/schema/composition.html) based on which the dataset was created in Adobe Experience Platform.
 
@@ -107,7 +107,7 @@ This table shows the two configuration options when edge cases are present and h
 
     * If the cumulative size of the historical data for all datasets in the connection exceeds 1.5 Billion rows, an error message will indicate that you cannot import this amount of  historical data. However, if you were to add a dataset with 1 Billion rows of historical data, and import that data, and a week later, add another dataset of the same size and import its historical data, this would work.
     * We prioritize new data added to a dataset in the connection, so this data has the lowest latency.
-    * Any backfill (historical) data is imported at a slower rate.
+    * Any backfill (historical) data is imported at a slower rate (up to 13 months of data, irrespective of size).
 
 1. Click **[!UICONTROL Save]**. 
 
