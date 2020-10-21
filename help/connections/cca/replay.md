@@ -16,7 +16,7 @@ As soon as a hit is collected, CCA attempts to stitch it to known devices. Consi
 
 *Data as it appears the day it is collected:*
 
-| Timestamp | ECID | eVar1 or CustomerID | Explanation of hit | People metric (cumulative) |
+| Timestamp | Persistent ID | Transient ID | Explanation of hit | People metric (cumulative) |
 | --- | --- | --- | --- | --- |
 | `1` | `246` | - | Bob on his desktop computer, unauthenticated | `1` (246) |
 | `2` | `246` | `Bob` | Bob logs in on his desktop | `2` (246 and Bob) |
@@ -37,7 +37,7 @@ Approximately once a week, CCA recalculates historical data based on devices it 
 
 *The same data after replay:*
 
-| Timestamp | ECID | eVar1 or CustomerID | Explanation of hit | People metric (cumulative) using Field-based stitching |
+| Timestamp | Persistent ID | Transient ID | Explanation of hit | People metric (cumulative) using Field-based stitching |
 | --- | --- | --- | --- | --- |
 | `1` | `246` | - | Bob on his desktop computer, unauthenticated | `1` (Bob) |
 | `2` | `246` | `Bob` | Bob logs in on his desktop | `1` (Bob) |
