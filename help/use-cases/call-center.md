@@ -1,39 +1,41 @@
 ---
-title: Call center use case
-description: Learn how to create a dashboard that links call center and website data.
+title: Import call center and web data
+description: Learn how to create a dataset that links call center and website data.
 ---
 
-# Import call center and web data into CJA
+# Import call center and web data
 
-Introduction
+Customer Journey Analytics provides the valuable and robust capability to combine datasets from different sources into a single Workspace project. One challenge frequently encountered is the ability to reliably match up visitor data that use different identifiers. Use this guide to understand how your organization can stitch data from your website to data that originates from your call center.
 
 ## Prerequisites
 
-- Must have a common ID between both platforms. Could be a customer ID, or hashed email address or something. Bottom line is they need to be shared between platforms.
-- need CJA and platform
-- Might need to do some data cleansing. call center data might be messy. expose the points of interest before getting it into platform.
-- Excellent columns to have: date/time when call occurred, call reason, call center id, call center agent id, duration of call, outcome of call, (if possible) cost of call
-- For any event, it must be a numeric value. You can't currently create an event based on the presence of a value in a column. might be fixed later, talk to trevor.
+* The most important component to combining these two sets of data is a common identifier between each source of data. Examples include a customer ID, a hashed email, login username, or phone number.
+* Access to both Adobe Experience Platform and Customer Journey Analytics
+* Adobe recommends performing some basic data cleansing on your call center data prior to importing it into Platform.
+* Recommended call center columns include:
+  * The date/time when the call started
+  * Call reason
+  * Call center ID
+  * Call center agent ID
+  * Duration of call
+  * Outcome of call
+  * Cost of call (if available)
 
 ## Import web and call center data into Platform
 
-Link to platfrom docs on importing data into platform
+Begin importing data into Adobe Experience Platform. See [Create a schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html) and [Ingest data](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) in the Adobe Experience Platform documentation. Make sure that the person ID for both web and call center data are similarly formatted.
 
-Make sure they understand schema and XDM. Make sure both have person ID columns declared.
+## Stitch the person ID's together
 
-## Re-key customer ID's (or use field-based stitching when it comes out)
+Once you have successfully imported your web and call center data into Platform, you can stitch the identifiers together using Cross-channel Analytics. See [Cross-channel Analytics overview](/help/connections/cca/overview.md) for steps to enable CCA for these two datasets.
 
-Use query service to load the data, query the two person ID columns, and spit out a new version of both datasets with a stitched ID. Create a new combined dataset with the stitched column. Talk to Trevor about the specific query that is used.
+## Create a connection in CJA
 
-Ooooooorrrrr use field based stitching when it comes out
-
-## Create a connection
-
-Link to CJA docs on creating a connection. Make sure that they both use the same person ID.
+If CCA is set up correctly, a new stitched dataset is available for you to use. [Create a connection](/help/connections/create-connection.md) using this stitched dataset.
 
 ## Create a data view
 
-Link to docs on creating a data view.
+After creating a connection, you can [Create a data view](/help/data-views/create-dataview.md) for use in Analysis Workspace.
 
 ## Create visualizations
 

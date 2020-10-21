@@ -50,6 +50,5 @@ Once your organization meets all prerequisites, you can follow these steps to st
 1. The Adobe Account Manager enables Cross-channel Analytics upon receiving your request. Once enabled, a third [combined dataset](../combined-dataset.md) appears in Adobe Experience Platform containing a new stitched column.
 1. [Create a connection](../create-connection.md) in CJA using the newly generated dataset. Use the stitched field as the person ID.
 1. [Create a data view](/help/data-views/create-dataview.md) based on the connection.
-1. [Create a workspace project](/help/analysis-workspace/home.md) using the data view.
 
 Once the data view is set up, Analysis in CJA is just like any other analysis in CJA, except now the underlying data is stitched.

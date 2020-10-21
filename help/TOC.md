@@ -30,6 +30,10 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Create a connection](connections/create-connection.md)
   + [Manage connections](connections/manage-connection.md)
   + [Combined event datasets](connections/combined-dataset.md)
+  + Cross-channel Analytics {#cca}
+    + [Cross-channel Analytics overview](connections/cca/overview.md)
+    + [How replays work](connections/cca/replay.md)
+    + [Cross-channel Analytics FAQ](connections/cca/faq.md)
 + Data Views {#cja-dataviews}
   + [Create a data view](data-views/create-dataview.md)
   + [Configure data views and attribution](data-views/configure-dataviews.md)
@@ -141,6 +145,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
   + [Use arrays of objects](use-cases/object-arrays.md)
   + [(B2B) Add account-level data as a lookup dataset](use-cases/b2b.md)
+  + [Import call center and web data](use-cases/call-center.md)
   + [Data ingestion use cases](use-cases/data-ingestion.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
