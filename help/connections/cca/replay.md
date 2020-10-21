@@ -37,7 +37,7 @@ Approximately once a week, CCA recalculates historical data based on devices it 
 
 *The same data after replay:*
 
-| Timestamp | ECID | eVar1 or CustomerID | Explanation of hit | People metric (cumulative) using Device Graph | People metric (cumulative) using Field-based stitching |
+| Timestamp | ECID | eVar1 or CustomerID | Explanation of hit | People metric (cumulative) using Field-based stitching |
 | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | - | Bob on his desktop computer, unauthenticated | `1` (Bob) |
 | `2` | `246` | `Bob` | Bob logs in on his desktop | `1` (Bob) |
