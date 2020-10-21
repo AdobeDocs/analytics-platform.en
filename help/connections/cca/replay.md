@@ -16,16 +16,16 @@ As soon as a hit is collected, CCA attempts to stitch it to known devices. Consi
 
 *Data as it appears the day it is collected:*
 
-| Timestamp | ECID | eVar1 or CustomerID | Explanation of hit | People metric (cumulative) using Device Graph | People metric (cumulative) using Field-based stitching |
+| Timestamp | ECID | eVar1 or CustomerID | Explanation of hit | People metric (cumulative) |
 | --- | --- | --- | --- | --- | --- |
-| `1` | `246` | - | Bob on his desktop computer, unauthenticated | `1` (246) | `1` (246) |
-| `2` | `246` | `Bob` | Bob logs in on his desktop | `1` (246) | `2` (246 and Bob) |
-| `3` | `3579` | - | Bob on his mobile device, unauthenticated | `2` (246 and 3579) | `3` (246, Bob, and 3579) |
-| `4` | `3579` | `Bob` | Bob logs in on mobile | `2` (246 and 3579) | `3` (246, Bob, and 3579) |
-| `5` | `246` | - | Bob accesses your site on desktop again, unauthenticated | `2` (246 and 3579) | `3` (246, Bob, and 3579) |
-| `6` | `246` | `Bob` | Bob logs in again via desktop | `2` (246 and 3579) | `3` (246, Bob, and 3579) |
-| `7` | `3579` | - | Bob accesses your site again on mobile | `2` (246 and 3579) | `3` (246, Bob, and 3579) |
-| `8` | `3579` | `Bob` | Bob logs in again via mobile | `2` (246 and 3579) | `3` (246, Bob, and 3579) |
+| `1` | `246` | - | Bob on his desktop computer, unauthenticated | `1` (246) |
+| `2` | `246` | `Bob` | Bob logs in on his desktop | `2` (246 and Bob) |
+| `3` | `3579` | - | Bob on his mobile device, unauthenticated | `3` (246, Bob, and 3579) |
+| `4` | `3579` | `Bob` | Bob logs in on mobile | `3` (246, Bob, and 3579) |
+| `5` | `246` | - | Bob accesses your site on desktop again, unauthenticated | `3` (246, Bob, and 3579) |
+| `6` | `246` | `Bob` | Bob logs in again via desktop | `3` (246, Bob, and 3579) |
+| `7` | `3579` | - | Bob accesses your site again on mobile | `3` (246, Bob, and 3579) |
+| `8` | `3579` | `Bob` | Bob logs in again via mobile | `3` (246, Bob, and 3579) |
 
 Both unauthenticated and authenticated hits on new devices are counted as separate people (temporarily). Unauthenticated hits on recognized devices are live-stitched from that point forward.
 
@@ -39,14 +39,14 @@ Approximately once a week, CCA recalculates historical data based on devices it 
 
 | Timestamp | ECID | eVar1 or CustomerID | Explanation of hit | People metric (cumulative) using Device Graph | People metric (cumulative) using Field-based stitching |
 | --- | --- | --- | --- | --- | --- |
-| `1` | `246` | - | Bob on his desktop computer, unauthenticated | `1` (Cluster1) | `1` (Bob) |
-| `2` | `246` | `Bob` | Bob logs in on his desktop | `1` (Cluster1) | `1` (Bob) |
-| `3` | `3579` | - | Bob on his mobile device, unauthenticated | `1` (Cluster1) | `1` (Bob) |
-| `4` | `3579` | `Bob` | Bob logs in on mobile | `1` (Cluster1) | `1` (Bob) |
-| `5` | `246` | - | Bob accesses your site on desktop again, unauthenticated | `1` (Cluster1) | `1` (Bob) |
-| `6` | `246` | `Bob` | Bob logs in again via desktop | `1` (Cluster1) | `1` (Bob) |
-| `7` | `3579` | - | Bob accesses your site again on mobile | `1` (Cluster1) | `1` (Bob) |
-| `8` | `3579` | `Bob` | Bob logs in again via mobile | `1` (Cluster1) | `1` (Bob) |
+| `1` | `246` | - | Bob on his desktop computer, unauthenticated | `1` (Bob) |
+| `2` | `246` | `Bob` | Bob logs in on his desktop | `1` (Bob) |
+| `3` | `3579` | - | Bob on his mobile device, unauthenticated | `1` (Bob) |
+| `4` | `3579` | `Bob` | Bob logs in on mobile | `1` (Bob) |
+| `5` | `246` | - | Bob accesses your site on desktop again, unauthenticated | `1` (Bob) |
+| `6` | `246` | `Bob` | Bob logs in again via desktop | `1` (Bob) |
+| `7` | `3579` | - | Bob accesses your site again on mobile | `1` (Bob) |
+| `8` | `3579` | `Bob` | Bob logs in again via mobile | `1` (Bob) |
 
 ## Recap
 

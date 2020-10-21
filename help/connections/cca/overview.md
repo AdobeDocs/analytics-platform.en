@@ -43,10 +43,10 @@ Once your organization meets all prerequisites, you can follow these steps to st
 
 1. Import the desired data into Adobe Experience Platform. See [Create a schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html) and [Ingest data](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) in the Adobe Experience Platform documentation.
 1. Contact your Adobe Account Manager that includes the following:
-  * A request to enable Cross-channel Analytics
-  * The datasets that you want to combine
-  * The column name of the persistent ID for each dataset (Identifier that appears on every row)
-  * The column name of the transient ID for each dataset (The person identifier link between datasets)
+   * A request to enable Cross-channel Analytics
+   * The datasets that you want to combine
+   * The column name of the persistent ID for each dataset (Identifier that appears on every row)
+   * The column name of the transient ID for each dataset (The person identifier link between datasets)
 1. The Adobe Account Manager enables Cross-channel Analytics upon receiving your request. Once enabled, a third [combined dataset](../combined-dataset.md) appears in Adobe Experience Platform containing a new stitched column.
 1. [Create a connection](../create-connection.md) in CJA using the newly generated dataset. Use the stitched field as the person ID.
 1. [Create a data view](/help/data-views/create-dataview.md) based on the connection.
