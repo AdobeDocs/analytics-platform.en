@@ -93,22 +93,26 @@ This table shows the two configuration options when edge cases are present and h
 
 ![Enable connection](assets/create-connection2.png)
 
-1. To enable a connection, define these settings:
+1. To enable a connection, define these settings for the entire connection, i.e. all the datasets in the connection:
 
-    |Option|Description|
-    |---|---|
-    |[!UICONTROL Name Connection]|Give the connection a descriptive name. The connection cannot be saved without a name.|
-    |[!UICONTROL Description]|Add more detail to distinguish this connection from others.|
-    |[!UICONTROL Datasets]|The datasets that are included in this connection.|
-    |[!UICONTROL Automatically import all new datasets in this connection, beginning today.]| Select this option if you want to establish an ongoing connection, so that any new data batches that get added to the datasets in this connection automatically flow into [!UICONTROL Workspace].|
-    |[!UICONTROL Import all existing data]|When you select this option and save the connection, all of the existing (historical) data from [!DNL Experience Platform] for all datasets that are in this connection will be imported. In the future, all existing historical data for any new dataset(s) added to this saved connection will also be automatically imported. <br>**Note that, once this connection is saved, this setting cannot be changed.**|
+    | Option | Description |
+    | --- | --- |
+    | [!UICONTROL Name Connection] | Give the connection a descriptive name. The connection cannot be saved without a name. |
+    | [!UICONTROL Description] | Add more detail to distinguish this connection from others. |
+    | [!UICONTROL Datasets] | The datasets that are included in this connection. |
+    | [!UICONTROL Automatically import all new datasets in this connection, beginning today.] |  Select this option if you want to establish an ongoing connection, so that any new data batches that get added to the datasets in this connection automatically flow into [!UICONTROL Workspace]. |
+    | [!UICONTROL Import all existing data] | When you select this option and save the connection, all of the existing (historical) data from [!DNL Experience Platform] for all datasets in this connection will be imported or backfilled. In the future, all existing historical data for any new dataset(s) added to this saved connection will also be automatically imported. <br>**Note that, once this connection is saved, this setting cannot be changed.** |
+    | [!UICONTROL Average number of daily events] | You are required to specify the average number of daily events to be imported (new data **and** backfill data) for all the datasets in the connection. This is so that Adobe can allocate sufficient space for this data.<br>If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out.<!--Rohit to provide and make sure we include multiple datasets.--> |
 
-    **Keep in mind that:**
+1. Click **[!UICONTROL Save and create data view]**. For documentation, see [create a data view](/help/data-views/create-dataview.md).
 
-    * If the cumulative size of the historical data for all datasets in the connection exceeds 1.5 Billion rows, an error message will indicate that you cannot import this amount of  historical data. However, if you were to add a dataset with 1 Billion rows of historical data, and import that data, and a week later, add another dataset of the same size and import its historical data, this would work.
-    * We prioritize new data added to a dataset in the connection, so this data has the lowest latency.
-    * Any backfill (historical) data is imported at a slower rate (up to 13 months of data, irrespective of size).
+### Backfill historical data
 
-1. Click **[!UICONTROL Save]**. 
+**[!UICONTROL Import all existing data]** lets you backfill historical data. Keep this in mind:
 
-The next step in the workflow is to [create a data view](/help/data-views/create-dataview.md).
+* We prioritize new data added to a dataset in the connection, so this new data has the lowest latency.
+* Any backfill (historical) data is imported at a slower rate. The latency is influenced by how much historical data you have, combined with the **[!UICONTROL Average number of daily events]** setting you selected. For example, if you have more than one billion rows of data per day, plus 3 years of historical data, that could take multiple weeks to import. On the other hand, if you have less than a million rows per day and one week of historical data, that would take less than an hour.
+* Backfilling applies to the whole connection, not to each dataset individually.
+* The [Adobe Analytics Data Connector](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) imports up to 13 months of data, irrespective of size.
+
+<!--If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out. Rohit to provide and make sure we include multiple datasets.-->
