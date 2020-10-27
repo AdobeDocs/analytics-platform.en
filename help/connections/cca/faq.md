@@ -33,3 +33,9 @@ The number of persistent IDs is irrelevant in favor of the transient ID. A singl
 ## Cross-channel Analytics stitches unique visitors together. Can it stitch visits together?
 
 Yes. If an individual sends hits from two separate devices within your data view's visit timeout (typically 30 minutes), they are stitched into the same visit.
+
+<!-- Talk about SLA? Backfill approx. time based on volume -->
+
+<!-- GDPR question, how we handle it. How does CCA handle GDPR/CCPA requests? we do so in accordance with the law -->
+
+<!-- how does CCA handle data atlerations, such as GDPR/CCPA requests, or other alterations?  data in CJA reflects the current/latest dataset from Platform, Link to platform docs about editing/deleting data. -->

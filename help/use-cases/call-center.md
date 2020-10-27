@@ -60,11 +60,15 @@ The resulting Venn visualization shows the number of people in your dataset that
 
 ### Attribute call center events to web pages
 
-This freeform table lets you see the top pages that contribute to call center events.
+This freeform table lets you see the top pages that contribute to call center events. First, make sure that the desired dimensions and metrics have the correct attribution model:
 
-1. Go to **[!UICONTROL Data Views]** and click an existing data view to edit it.
+1. Go to **[!UICONTROL Data Views]** and click the desired data view to edit it.
 2. Click **[!UICONTROL Continue]** to navigate to component settings.
-3. 
+3. Drag the dimension that holds your web page names from available dimensions on the left to the components added area on the right. Alternatively, you can locate the page dimension that already exists under components added if you want to edit its attribution.
+   >[!NOTE]
+   >
+   >If you edit an existing dimension's attribution, all reports that rely on that dimension are changed to reflect the updated attribution model.
+4. Once you have the dimension selected, click **[!UICONTROL Use custom attribution model]**. 
 
 4. Drag the `page` dimension onto a Freeform Table visualization.
 5. 
@@ -73,7 +77,7 @@ This freeform table lets you see the top pages that contribute to call center ev
 6. import web data
 7. import call center data
 8. see how many visits are in both datasets (how do you determine when they're in both datasets?)
-9. attribute pages to calls when they happen in the same visit
+9.  attribute pages to calls when they happen in the same visit
 10. use target (AB testing) to test new versions of these pages so they reduce calls (using an eVar to determine A/B?)
 11. filter by specific call reason using workspace dropdowns
 12. visualize flow of pages > call reason 
