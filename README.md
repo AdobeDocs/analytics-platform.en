@@ -1,5 +1,9 @@
 # Contribute to Customer Journey Analytics documentation
 
+| EXL-PR | EXL | Preview | Activate | Published | Help |
+|--- |--- |--- |--- |--- |--- |
+| [![Build Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_pr-exl/lastBuild/) | [![Build Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_exl/lastBuild/lastBuild) | [Preview URL](https://experienceleague.corp.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/)| [Live URL](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en) | [Authoring Guide](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
+
 We welcome contributions from our community as well as from Adobe employees from outside the documentation teams.
 
 ## Adobe Open Source Code of Conduct
