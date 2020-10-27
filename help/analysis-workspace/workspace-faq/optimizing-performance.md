@@ -4,7 +4,7 @@ title: Analysis Workspace performance factors and optimization
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 ---
 
-# Analysis Workspace performance factors and optimization
+# Optimize Analysis Workspace performance
 
 Various factors can influence the performance of a project within Analysis Workspace. It's important to know what those contributors are before you start building a project so that you can plan and build the project in the most optimal way. This page includes a list of factors that will impact performance and recommended optimizations you can make to ensure peak performance in Analysis Workspace. 
 
