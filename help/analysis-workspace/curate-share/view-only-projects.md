@@ -1,10 +1,10 @@
 ---
 description: View-only projects in Workspace
 keywords: View-only projects
-title: View-only Workspace projects
+title: View-only projects
 ---
 
-# View-only Workspace projects
+# View-only projects
 
 >[!NOTE]
 >

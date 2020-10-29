@@ -1,10 +1,10 @@
 ---
 description: Curation lets you limit components before sharing a project.
 keywords: Analysis Workspace curation
-title: Curate Workspace projects
+title: Curate projects
 ---
 
-# Curate Workspace projects
+# Curate projects
 
 >[!NOTE]
 >

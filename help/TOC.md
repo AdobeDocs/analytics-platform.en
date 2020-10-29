@@ -39,6 +39,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Perform advanced analysis](analysis-workspace/perform-adv-analysis.md)
   + Build a Workspace project {#build-workspace-project}
     + [Create project - overview](analysis-workspace/build-workspace-project/freeform-overview.md)
+    + [Save projects](analysis-workspace/build-workspace-project/save-projects.md)
     + [Templates](analysis-workspace/build-workspace-project/starter-projects.md)
     + Column and row settings {#column-row-settings}
       + [Column settings](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
@@ -86,14 +87,14 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Blank panel](analysis-workspace/c-panels/blank-panel.md)
     + [Freeform panel](analysis-workspace/c-panels/freeform-panel.md)
     + [Quick Insights panel](analysis-workspace/c-panels/quickinsight.md)
-  + Curate or Share projects {#curate-share}
-    + [Curate Workspace projects](analysis-workspace/curate-share/curate.md)
-    + [Share Workspace projects](analysis-workspace/curate-share/share-projects.md)
+  + Curate or Share projects {#curate-share} 
+    + [Share menu](analysis-workspace/curate-share/send-schedule-files.md)
+    + [Curate projects](analysis-workspace/curate-share/curate.md)
+    + [Share projects](analysis-workspace/curate-share/share-projects.md)
     + [Create shareable links](analysis-workspace/curate-share/shareable-links.md)
-    + [View-only Workspace projects](analysis-workspace/curate-share/view-only-projects.md)
+    + [View-only projects](analysis-workspace/curate-share/view-only-projects.md)
     + [Download PDF or CSV files](analysis-workspace/curate-share/download-send.md)
-    + [Share and schedule project files](analysis-workspace/curate-share/send-schedule-files.md)
-    + [Send file - schedule a project for delivery](analysis-workspace/curate-share/t-schedule-report.md)
+    + [Schedule projects](analysis-workspace/curate-share/t-schedule-report.md)
     + [Scheduled projects manager](analysis-workspace/curate-share/schedule-projects.md)
   + Attribution IQ {#attribution}
     + [Attribution overview](analysis-workspace/attribution/overview.md)
