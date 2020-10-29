@@ -6,10 +6,6 @@ title: Curate projects
 
 # Curate projects
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 Curation lets you limit the components (dimensions, metrics, segments, date ranges) before sharing a project. When a recipient opens the project, they will see a limited set of components that you have curated for them. Curation is an optional but recommended step before sharing a project. 
 
 >[!NOTE]
@@ -35,7 +31,8 @@ When a recipient opens a curated project, they will only see the curated set of 
 
 ## Remove project curation
 
-To remove project curation and restore the full set of components in the left rail: 
+To remove project curation and restore the full set of components in the left rail:
+
 1. Click **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**. 
 1. Click **[!UICONTROL Remove Curation]**. 
 1. Click **[!UICONTROL Done]**.

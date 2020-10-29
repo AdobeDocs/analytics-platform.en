@@ -95,7 +95,6 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [View-only projects](analysis-workspace/curate-share/view-only-projects.md)
     + [Download PDF or CSV files](analysis-workspace/curate-share/download-send.md)
     + [Schedule projects](analysis-workspace/curate-share/t-schedule-report.md)
-    + [Scheduled projects manager](analysis-workspace/curate-share/schedule-projects.md)
   + Attribution IQ {#attribution}
     + [Attribution overview](analysis-workspace/attribution/overview.md)
     + [Attribution models and lookback windows](analysis-workspace/attribution/models.md)
