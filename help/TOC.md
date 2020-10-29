@@ -39,6 +39,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Perform advanced analysis](analysis-workspace/perform-adv-analysis.md)
   + Build a Workspace project {#build-workspace-project}
     + [Create project - overview](analysis-workspace/build-workspace-project/freeform-overview.md)
+    + [Save projects](analysis-workspace/build-workspace-project/save-projects.md)
     + [Templates](analysis-workspace/build-workspace-project/starter-projects.md)
     + Column and row settings {#column-row-settings}
       + [Column settings](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
