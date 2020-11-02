@@ -1,9 +1,9 @@
 ---
-description: List of known limitations in Analysis Workspace and its related components
-title: Known limitations in Analysis Workspace
+description: List of error messages in Analysis Workspace and its related components
+title: Error messages
 ---
 
-# Common error messages
+# Error messages
 
 You may encounter errors when interacting with Analysis Workspace that will also influence performance. Listed below are the most common error types, why they occur, and optimizations that can be made.
 
