@@ -1,7 +1,6 @@
 ---
 description: Column settings let you configure column formatting, some of which can be conditional.
 title: Column settings
-uuid: 151d66da-04f7-4d0f-985c-4fdd92bc1308
 ---
 
 # [!UICONTROL Column Settings]
@@ -43,13 +42,13 @@ Conditional formatting applies formatting to upper, midpoint, and lower limits t
 
 ## Use non-default attribution model {#attribution}
 
-Analysis Workspace supports [attribution](../../attribution/overview.md) for almost any metric. 
+Analysis Workspace supports [attribution](/help/analysis-workspace/attribution/overview.md) for almost any metric. 
 
 1. Click the Settings (gear) icon in a Freeform Table column.
 
    ![Attribution checkbox](assets/attribution-checkbox.png)
 
-1. Under **[!UICONTROL Data Settings]**, check **[!UICONTROL Use non-default attribution model]**. For more information on different attribution models, see [Attribution models](../../attribution/models.md).
+1. Under **[!UICONTROL Data Settings]**, check **[!UICONTROL Use non-default attribution model]**. For more information on different attribution models, see [Attribution models](/help/analysis-workspace/attribution/models.md).
 
    ![Select attribution model](assets/attribution-select.png)
 

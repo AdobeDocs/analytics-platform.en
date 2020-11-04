@@ -21,7 +21,7 @@ You can manage the following components:
 
 Components in Analysis Workspace consist of metrics, dimensions, segments, and time granularities that you can drag-and-drop onto a project. Custom components that you create are added to these panels, such as custom date ranges.
 
-To access the Components panel, click the **[!UICONTROL Components]** icon in the left rail. You can switch among Panels (Blank panel, [Freeform panel](/help/analysis-workspace/visualizations/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md), or [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) panel), [Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), and Components using the left-rail icons or by using [hotkeys](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
+To access the Components panel, click the **[!UICONTROL Components]** icon in the left rail. You can switch among Panels (Blank panel, [Freeform panel](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md), or [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) panel), [Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), and Components using the left-rail icons or by using [hotkeys](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
 ![](assets/components.png)
 

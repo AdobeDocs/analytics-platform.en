@@ -1,12 +1,10 @@
 ---
 description: Keyboard interactions, shortcut keys and point-and-click behaviors available in Analysis Workspace.
 keywords: Analysis Workspace
-title: Hotkeys (shortcuts) available in Analysis Workspace
-topic: Reports and analytics
-uuid: 1ee93ce3-acab-44f8-abdc-9a68ced35d32
+title: Hotkeys (Shortcuts)
 ---
 
-# Hotkeys (shortcuts) available in Analysis Workspace
+# Hotkeys (Shortcuts)
 
 Hotkeys (keyboard shortcuts) are available in Analysis Workspace for seamless navigation, analysis and democratization.
 
