@@ -1,7 +1,6 @@
 ---
 description: Column settings let you configure column formatting, some of which can be conditional.
 title: Column settings
-uuid: 151d66da-04f7-4d0f-985c-4fdd92bc1308
 ---
 
 # [!UICONTROL Column Settings]
