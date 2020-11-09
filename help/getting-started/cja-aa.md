@@ -39,6 +39,8 @@ The following tables list which features in Adobe Analytics are supported, parti
 | eVar persistence settings | eVars are no longer part of CJA. However, persistence settings are now part of Data Views and are available for all dimensions. Keep in mind that persistence is based on report time processing, not data collection processing. This means all persistence will be based on the reporting date range rather than the entirety of the data. |
 | Classifications | Now called "Lookup Datasets", they do not get automatically imported from traditional Analytics. They will have to be uploaded to AEP before they're available in CJA. |
 | Customer Attributes | Now called "Profile Datasets", they do not get automatically imported from Experience Cloud, but will have to be uploaded to AEP before they're available in CJA. |
+| Device, Browser, Technology dimensions | These dimensions are automatically included when an AEP dataset includes specific XDM schema fields and conforms to the XDM Experience Event class. |
+| Entries, Exits, and Timespent dimesions and metrics | Supported (Entries and Exits are now called Session Starts and Session Ends) and are calculated in a slightly different way. |
 
 ## Partial Support
 
@@ -59,6 +61,10 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Segment IQ | Support is planned. |
 | Segment Publishing (sending segments from Workspace to the Experience Cloud) | Support is planned. |
 | CSV download | Support is planned. |
+| Metric deduplication | Support is planned. |
+| Custom Calendars | Support is planned. |
+| Metric deduplication | Support is planned. |
+| Merchandising variable persistence | Support is planned. |
 | Scheduled Reports/Projects | Support is planned. |
 | Alerts | Support is planned. |
 | Custom Calendars | Support is planned. |

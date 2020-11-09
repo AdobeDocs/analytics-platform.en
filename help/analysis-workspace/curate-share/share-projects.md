@@ -1,10 +1,14 @@
 ---
 description: Project sharing and project roles in Workspace
 keywords: Analysis Workspace sharing
-title: Share Workspace projects
+title: Share projects
 ---
 
-# Share Workspace projects
+# Share projects
+
+>[!NOTE]
+>
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 Sharing makes a project available to other Analysis Workspace users in your organization. Any [curation](curate.md) you have applied is reflected when recipients open the project. 
 

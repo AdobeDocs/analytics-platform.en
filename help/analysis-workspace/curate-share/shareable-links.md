@@ -6,6 +6,10 @@ title: Create shareable links
 
 # Create shareable links
 
+>[!NOTE]
+>
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+
 Analysis Workspace offers many ways to share a project to your users, including the ability to get a link to a project or a specific part of a project. Users who receive a link are required to log in to Adobe Analytics before they can get to the project. 
 
 ## Get project link {#project-link} 

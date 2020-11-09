@@ -43,21 +43,22 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Perform advanced analysis](analysis-workspace/perform-adv-analysis.md)
   + Build a Workspace project {#build-workspace-project}
     + [Create project - overview](analysis-workspace/build-workspace-project/freeform-overview.md)
+    + [Save projects](analysis-workspace/build-workspace-project/save-projects.md)
     + [Templates](analysis-workspace/build-workspace-project/starter-projects.md)
-    + Column and row settings {#column-row-settings}
-      + [Column settings](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
-      + [Row settings](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
-      + [Dynamic vs. Static items](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
-    + [Undo and redo settings](analysis-workspace/build-workspace-project/undo-redo.md)
-    + [Hotkeys available in Analysis Workspace](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
-    + [Pagination, filtering and sorting tables](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
+    + [Hotkeys (Shortcuts)](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Color Palettes](analysis-workspace/build-workspace-project/color-palettes.md)
     + [View Density](analysis-workspace/build-workspace-project/view-density.md)
-    + [Workspace Totals](analysis-workspace/build-workspace-project/workspace-totals.md)
   + Visualizations {#visualizations}
     + [Visualizations overview](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
     + [Manage data sources](analysis-workspace/visualizations/t-sync-visualization.md)
-    + [Freeform table](analysis-workspace/visualizations/freeform-table.md)
+    + Freeform table {#freeform-table}
+      + [Freeform table](analysis-workspace/visualizations/freeform-table/freeform-table.md)
+      + Column and row settings {#column-row-settings}
+        + [Column settings](analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
+        + [Row settings](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
+        + [Dynamic vs. Static items](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+      + [Pagination, filtering and sorting tables](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
+      + [Workspace Totals](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
     + Cohort Table {#cohort-table}
       + [What is cohort analysis?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
       + [Configure a cohort analysis report](analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -90,15 +91,14 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Blank panel](analysis-workspace/c-panels/blank-panel.md)
     + [Freeform panel](analysis-workspace/c-panels/freeform-panel.md)
     + [Quick Insights panel](analysis-workspace/c-panels/quickinsight.md)
-  + Curate or Share projects {#curate-share}
-    + [Curate Workspace projects](analysis-workspace/curate-share/curate.md)
-    + [Share Workspace projects](analysis-workspace/curate-share/share-projects.md)
+  + Curate or Share projects {#curate-share} 
+    + [Share menu](analysis-workspace/curate-share/send-schedule-files.md)
+    + [Curate projects](analysis-workspace/curate-share/curate.md)
+    + [Share projects](analysis-workspace/curate-share/share-projects.md)
     + [Create shareable links](analysis-workspace/curate-share/shareable-links.md)
-    + [View-only Workspace projects](analysis-workspace/curate-share/view-only-projects.md)
+    + [View-only projects](analysis-workspace/curate-share/view-only-projects.md)
     + [Download PDF or CSV files](analysis-workspace/curate-share/download-send.md)
-    + [Share and schedule project files](analysis-workspace/curate-share/send-schedule-files.md)
-    + [Send file - schedule a project for delivery](analysis-workspace/curate-share/t-schedule-report.md)
-    + [Scheduled projects manager](analysis-workspace/curate-share/schedule-projects.md)
+    + [Schedule projects](analysis-workspace/curate-share/t-schedule-report.md)
   + Attribution IQ {#attribution}
     + [Attribution overview](analysis-workspace/attribution/overview.md)
     + [Attribution models and lookback windows](analysis-workspace/attribution/models.md)
@@ -113,6 +113,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + Workspace FAQs {#workspace-faq}
     + [Frequently asked questions](analysis-workspace/workspace-faq/faq.md)
     + [Optimize Analysis Workspace performance](analysis-workspace/workspace-faq/optimizing-performance.md)
+    + [Error messages](analysis-workspace/workspace-faq/error-messages.md)
     + [Analysis Workspace limitations](analysis-workspace/workspace-faq/aw-limitations.md)
     + [Administration requirements](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility in Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)

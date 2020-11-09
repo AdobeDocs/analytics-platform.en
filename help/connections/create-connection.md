@@ -102,7 +102,7 @@ This table shows the two configuration options when edge cases are present and h
     | [!UICONTROL Datasets] | The datasets that are included in this connection. |
     | [!UICONTROL Automatically import all new datasets in this connection, beginning today.] |  Select this option if you want to establish an ongoing connection, so that any new data batches that get added to the datasets in this connection automatically flow into [!UICONTROL Workspace]. |
     | [!UICONTROL Import all existing data] | When you select this option and save the connection, all of the existing (historical) data from [!DNL Experience Platform] for all datasets in this connection will be imported or backfilled. In the future, all existing historical data for any new dataset(s) added to this saved connection will also be automatically imported. See also [Backfill historical data](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) below.<br>**Note that, once this connection is saved, this setting cannot be changed.** |
-    | [!UICONTROL Average number of daily events] | You are required to specify the average number of daily events to be imported (new data **and** backfill data) for all the datasets in the connection. Select one option from the drop-down menu. This is so that Adobe can allocate sufficient space for this data.<br>If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out. |
+    | [!UICONTROL Average number of daily events] | You are required to specify the average number of daily events to be imported (new data **and** backfill data) for all the datasets in the connection. Select one option from the drop-down menu. This is so that Adobe can allocate sufficient space for this data.<br>If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out.<br>See "Calculate the average number of daily events" below. |
 
 1. Click **[!UICONTROL Save and create data view]**. For documentation, see [create a data view](/help/data-views/create-dataview.md).
 
@@ -110,10 +110,19 @@ This table shows the two configuration options when edge cases are present and h
 
 **[!UICONTROL Import all existing data]** lets you backfill historical data. Keep this in mind:
 
-* We have removed the backfill (historical data import) limitation. Previously, you could backfill a maximum of 2.5 billion rows on your own and otherwise required engineering involvement. Now, you can backfill data on your own, without any limitation.
+* We have removed the backfill (historical data import) limitation. Previously, you could backfill a maximum of 2.5 billion rows on your own and otherwise required engineering involvement. Now, you can backfill data on your own, without any limitations.
 * We prioritize new data added to a dataset in the connection, so this new data has the lowest latency.
 * Any backfill (historical) data is imported at a slower rate. The latency is influenced by how much historical data you have, combined with the **[!UICONTROL Average number of daily events]** setting you selected. For example, if you have more than one billion rows of data per day, plus 3 years of historical data, that could take multiple weeks to import. On the other hand, if you have less than a million rows per day and one week of historical data, that would take less than an hour.
 * Backfilling applies to the whole connection, not to each dataset individually.
 * The [Adobe Analytics Data Connector](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) imports up to 13 months of data, irrespective of size.
 
-<!--If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out. Rohit to provide and make sure we include multiple datasets.-->
+### Calculate the average number of daily events
+
+This calculation has to be done for every dataset in the connection.
+
+1. Go to [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) and create a new query.
+
+1. The query would look like this:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;` 
+
+* In this example, "analytics_demo_data" is the name of the dataset.
+* Perform the `Show Tables` query to show all the datasets that exist in AEP.

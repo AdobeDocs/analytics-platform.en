@@ -38,6 +38,6 @@ Adobe Analytics enhances attribution by letting you:
 Attribution IQ comprises the following features:
 
 * [Attribution panel](../c-panels/attribution.md): Take any dimension and metric, and quickly compare it with different attribution models.
-* [Apply attribution to a metric](../build-workspace-project/column-row-settings/column-settings.md): Use a non-default attribution on any metric in a project.
+* [Apply attribution to a metric](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md): Use a non-default attribution on any metric in a project.
 * [Apply attribution to a breakdown](/help/components/dimensions/t-breakdown-fa.md): Use a non-default attribution on a breakdown. 
 * [Compare attribution models](/help/components/apply-create-metrics.md): Quickly see how different attribution models compare for any metric.
