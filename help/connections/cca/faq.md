@@ -7,6 +7,7 @@ description: Frequently asked questions for Cross-channel Analytics
 
 ## How can I use CCA to see how people move from one device type to another?
 
+<!-- redo so its cross channel instead of cross device; use the dataset ID dimension. -->
 You can use a Flow visualization with the Mobile Device Type dimension.
 
 1. Log in [analytics.adobe.com](https://analytics.adobe.com) and create a blank Workspace project.
@@ -14,9 +15,9 @@ You can use a Flow visualization with the Mobile Device Type dimension.
 3. Click the Components tab on the left, and drag the dimension 'Mobile Device Type' to the center location labled 'Dimension or Item'.
 4. This flow report is interactive. Click any of the values to expand the flows to subsequent or previous pages. Use the right-click menu to expand or collapse columns. Different dimensions can also be used within the same flow report.
 
-## How far back does CCA stitch visitors?
+## How far back does CCA rekey visitors?
 
-Adobe keeps device stitching data for approximately 30 days. If a device is intitially not identified but is later identified within 30 days, CCA goes back and restates that device as belonging to identified person up to 30 days in the past. If some of a user's unidentified behavior falls outside the 30-day lookback window, that portion of the user's journey is not stitched.
+The lookback window for rekeying depends on your desired frequency of data [replay](replay.md). For example, if you set up CCA to replay data once every week, the lookback window for rekeying is 7 days. If you set up CCA to replay data every day, the lookback window for rekeying is 1 day.
 
 ## How are shared devices handled?
 
@@ -30,12 +31,10 @@ In some situations, an individual user can associate with a large number of pers
 
 The number of persistent IDs is irrelevant in favor of the transient ID. A single user can belong to any number of devices without impacting CCA's ability to stitch across devices.
 
-## Cross-channel Analytics stitches unique visitors together. Can it stitch visits together?
+## Once I contact my Account Manager with the desired information, how long does it take for the rekeyed dataset to become available?
 
-Yes. If an individual sends hits from two separate devices within your data view's visit timeout (typically 30 minutes), they are stitched into the same visit.
+Live stitching is available approximately 1 week after Adobe enables Cross-channel Analytics. Backfill availability depends on the amount of existing data. Small datasets (less than 1 million events per day) typically take a couple days, while large data sets (1 billion events per day) can take a week or more.
 
-<!-- Talk about SLA? Backfill approx. time based on volume -->
+## How does Cross-channel Analytics handle GDPR and CCPA requests?
 
-<!-- GDPR question, how we handle it. How does CCA handle GDPR/CCPA requests? we do so in accordance with the law -->
-
-<!-- how does CCA handle data atlerations, such as GDPR/CCPA requests, or other alterations?  data in CJA reflects the current/latest dataset from Platform, Link to platform docs about editing/deleting data. -->
+Adobe handles GDPR and CCPA requests in accordance to local and international laws. Adobe offers the [Privacy API]() to submit data access and deletion requests. The request applies to both the original and rekeyed datasets.
