@@ -9,7 +9,7 @@ The following updates were made to the CJA documentation since its inception.
 
 | Date | Update description |
 | --- | --- |
-| November 11, 2020 | Added a topic on |
+| November 11, 2020 | Added a topic on [Estimating the connection size](/help/connections/estimate-connection-size.md) for billing purposes.|
 | November 10, 2020 | Added a section on the implications of deleting data components to the [FAQ](/help/getting-started/cja-faq.md). |
 | November 2, 2020 | Updates to the [Customer Journey Analytics feature support](/help/getting-started/cja-aa.md) page. |
 | October 7, 2020 | Added a topic on [combined event datasets](/help/connections/combined-dataset.md). |
