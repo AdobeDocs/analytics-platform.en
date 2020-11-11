@@ -41,7 +41,7 @@ The number of events actually ingested in CJA depends upon your connection confi
 
 You may have noticed that the total number of events ingested is "7650", but the connection had only the event dataset "B2B Impression" with "3830 rows" in AEP. Why is there a discrepancy? Let's do some debugging.
 
-1. Break down this dimension by **[!UICONTROL Platform Dataset ID]** and you will notice two datasets with same size but different **[!UICONTROL Platform Dataset IDs]**. Each dataset has 3825 records. That means [!UICONTROL Customer Journey Analytics] ignored 5 records due to missing person IDs or BAVIDs:
+1. Break down this dimension by **[!UICONTROL Platform Dataset ID]** and you will notice two datasets with same size but different **[!UICONTROL Platform Dataset IDs]**. Each dataset has 3825 records. That means [!UICONTROL Customer Journey Analytics] ignored 5 records due to missing person IDs or BAVIDs (Big Visitor IDs):
 
     ![breakdown](assets/data-size2.png)
 
