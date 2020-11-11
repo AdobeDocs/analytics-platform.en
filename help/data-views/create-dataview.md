@@ -47,3 +47,7 @@ Before you can create data views, you need to [set up one or more connections to
 1. (Optional) You can rename a component to a friendly name or change its attribution settings by selecting it and editing its setting. Note that the underlying name is preserved. For more information, see [Configure data views and attribution](/help/data-views/configure-dataviews.md).
 
 1. The next steps is to [specify component and attribution settings](/help/data-views/configure-dataviews.md).
+
+## Delete data views
+
+If you delete a data view in [!UICONTROL Customer Journey Analytics], an error message will indicate that any Workspace projects that depend on this deleted data view will cease working. 
