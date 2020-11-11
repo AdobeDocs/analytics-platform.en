@@ -114,7 +114,7 @@ This table shows the two configuration options when edge cases are present and h
 * We prioritize new data added to a dataset in the connection, so this new data has the lowest latency.
 * Any backfill (historical) data is imported at a slower rate. The latency is influenced by how much historical data you have, combined with the **[!UICONTROL Average number of daily events]** setting you selected. For example, if you have more than one billion rows of data per day, plus 3 years of historical data, that could take multiple weeks to import. On the other hand, if you have less than a million rows per day and one week of historical data, that would take less than an hour.
 * Backfilling applies to the whole connection, not to each dataset individually.
-* The [Adobe Analytics Data Connector](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) imports up to 13 months of data, irrespective of size.
+* The [Adobe Analytics Source Connector](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) imports up to 13 months of data, irrespective of size.
 
 ### Calculate the average number of daily events
 
