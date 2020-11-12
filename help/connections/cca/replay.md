@@ -8,7 +8,9 @@ description: Understand the concept of "replay" in Cross-channel Analytics
 Cross-channel Analytics makes two passes on data on a given connection:
 
 * **Live-stitching**: CCA attempts to stitch each hit as it comes in. Net new devices to the dataset that have never logged in are typically not stitched at this level. Devices already recognized are stitched immediately.
-* **Replay**: Approximately once a week, CCA "replays" data based on unique identifiers it has learned. This stage is where new devices to the connection become stitched.
+* **Replay**: CCA "replays" data based on unique identifiers it has learned. This stage is where new devices to the connection become stitched. Adobe offers two replay intervals:
+  * Daily: Data replays daily with a 1-day lookback window. This option holds an advantage that replays are much more frequent, but visitors must authenticate the same day that they visit your site.
+  * Weekly: Data replays once a week with a 7-day lookback window. This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate.
 
 ## Step 1: Live-stitching
 

@@ -37,4 +37,4 @@ Live stitching is available approximately 1 week after Adobe enables Cross-chann
 
 ## How does Cross-channel Analytics handle GDPR and CCPA requests?
 
-Adobe handles GDPR and CCPA requests in accordance to local and international laws. Adobe offers the [Privacy API]() to submit data access and deletion requests. The request applies to both the original and rekeyed datasets.
+Adobe handles GDPR and CCPA requests in accordance to local and international laws. Adobe offers the [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) to submit data access and deletion requests. The requests apply to both the original and rekeyed datasets.
