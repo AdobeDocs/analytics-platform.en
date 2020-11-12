@@ -5,14 +5,14 @@ description: Report on what your current usage of Customer Journey Analytics is 
 
 # Estimate connection size
 
-You may need to know how many rows of data you currently have in [!UICONTROL Customer Journey Analytics]. The purpose of this topic is to show you how to report on what your current usage of [!UICONTROL Customer Journey Analytics] is, for billing purposes.
+You may need to know how many rows of data you currently have in [!UICONTROL Customer Journey Analytics]. The purpose of this topic is to show you how to report on your current usage of [!UICONTROL Customer Journey Analytics].
 
 1. In [!UICONTROL Customer Journey Analytics], click the **[!UICONTROL Connections]** tab.
 1. On the [!UICONTROL Edit connection] screen, select a connection for which you want to determine the usage/connection size.
 
     ![Edit connection](assets/edit-connection.png)
 
-1. Select a dataset that is your part of connection from the left rail. In this case, it is the "B2B Impression" dataset.
+1. Select a dataset that is your part of the connection from the left rail. In this case, it is the "B2B Impression" dataset.
 
     ![dataset](assets/dataset.png)
 
@@ -26,22 +26,22 @@ You may need to know how many rows of data you currently have in [!UICONTROL Cus
 
 ## Determine number of rows ingested
 
-The number of events actually ingested in CJA depends upon your connection configuration settings. In addition, if you selected the wrong Person ID or if this ID is not available for some rows in the datasets, then [!UICONTROL Customer Journey Analytics] will ignore those rows. This is how you find out the actual rows of events ingested once a connection has been saved.
+The number of events actually ingested in CJA depends upon your connection configuration settings. In addition, if you selected the wrong Person ID or if this ID is not available for some rows in the datasets, then [!UICONTROL Customer Journey Analytics] will ignore those rows. In order to determine the actual rows of events ingested, take the following steps:
 
 1. Once you save the connection, create a data view of the same connection without any filters.
-1. Create a Workspace project and select the correct data view. Create a freeform table and drag and drop the **[!UICONTROL Events]** metric with a **[!UICONTROL Year]** dimension. Choose the maximum date range from your date selection calendar. This will allow you to see the number of events being ingested into [!UICONTROL Customer Journey Analytics].
+1. Create a Workspace project and select the correct data view. Create a freeform table and drag and drop the **[!UICONTROL Events]** metric with a **[!UICONTROL Year]** dimension. Choose a large enough date range from your date selection calendar to encapsulate all of the data in your Connection. This will allow you to see the number of events being ingested into [!UICONTROL Customer Journey Analytics].
 
     ![Workspace project](assets/event-number.png)
 
     >[!NOTE]
     >
-    >This lets you see the number of events being ingested from your events dataset. It does not include profile and lookup type datasets. Follow steps 1-3 for profile and lookup datasets and add up the numbers to get the  total events for this connection.
+    >This lets you see the number of events being ingested from your events dataset. It does not include profile and lookup type datasets. Follow steps 1-3 for profile and lookup datasets and add up the numbers to get the  total number of rows for this connection.
 
-## Debug discrepancies
+## Diagnosing discrepancies
 
-You may have noticed that the total number of events ingested is "7650", but the connection had only the event dataset "B2B Impression" with "3830 rows" in AEP. Why is there a discrepancy? Let's do some debugging.
+In some cases, you may notice that the total number of events ingested by your Connection is different than the number of rows in the dataset in AEP. In this case the dataset "B2B Impression" has 7650 rows, but the dataset contains 3830 rows in AEP. There are several reasons why discrepancies can happen, and the following steps can be taken to diagnose:
 
-1. Break down this dimension by **[!UICONTROL Platform Dataset ID]** and you will notice two datasets with same size but different **[!UICONTROL Platform Dataset IDs]**. Each dataset has 3825 records. That means [!UICONTROL Customer Journey Analytics] ignored 5 records due to missing person IDs or BAVIDs (Big Visitor IDs):
+1. Break down this dimension by **[!UICONTROL Platform Dataset ID]** and you will notice two datasets with same size but different **[!UICONTROL Platform Dataset IDs]**. Each dataset has 3825 records. That means [!UICONTROL Customer Journey Analytics] ignored 5 records due to missing person IDs or missing timestamps:
 
     ![breakdown](assets/data-size2.png)
 
