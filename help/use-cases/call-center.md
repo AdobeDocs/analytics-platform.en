@@ -42,8 +42,8 @@ CJA requires a common identifier to generate a [combined dataset](../connections
 
 [Create a connection](/help/connections/create-connection.md) in CJA.
 
-* If CCA is used, a new stitched dataset is available for you to use. Use the newly created stiched ID field as the person ID.
-* Otherwise, you can select both original web and call center datasets for use in the connection. <!--reword, also validate if CCA spits out one or multiple datasets-->
+* If CCA is used, a new stitched dataset is available for you to use. Use the newly created stitched ID field as the person ID.
+* Otherwise, you can select both original web and call center datasets for use in the connection.
 
 ## Create a data view
 
@@ -59,8 +59,8 @@ The following visualizations can be used to gain insights from your stitched dat
 This visualization helps you understand how well CCA stitches data together.
 
 1. Create two filters. The variable used in these two filters is the same variable mentioned above that reflects the source of data of each event. See [Create a filter](/help/components/filters/create-filters.md) for more information.
-   * Person container where `data_source` equals `"Web"`
-   * Person container where `data_source` equals `"Call center"`
+   * Person container where Dataset ID equals your web data
+   * Person container where Dataset ID equals your call center data
 2. In Analysis Workspace, drag a [Venn](/help/analysis-workspace/visualizations/venn.md) visualization onto the workspace canvas.
 3. Drag the two newly created filters to the **[!UICONTROL Add Filter]** area, and the People metric to the **[!UICONTROL Add Metric]** area.
 
