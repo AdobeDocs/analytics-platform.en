@@ -77,7 +77,7 @@ This freeform table lets you see the top pages that contribute to call center ev
 
 The resulting report shows the top metric from call center data. <!-- Complement with donut visualization -->
 
-### Flow between web data and call center
+<!-- ### Flow between web data and call center
 
 call reason as an exit dimension, web page name for previous pages
 
@@ -93,7 +93,7 @@ step 3: call
 another good one
 
 step 1: all sessions
-step 2: 
+step 2: -->
 
 <!--  use target (AB testing) to test new versions of these pages so they reduce calls (using an eVar to determine A/B?)
   filter by specific call reason using workspace dropdowns
