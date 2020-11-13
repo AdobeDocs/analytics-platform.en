@@ -3,6 +3,8 @@ git-repo: https://github.com/adobedocs/analytics-platform.en
 cloud: experience-cloud
 product: adobe analytics
 sub-product: customer journey
+solution: Customer Journey Analytics
+type: Documentation
 index: yes
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: This guide provides self-help assistance for Customer Journey Analytics, Adobe's next-generation solution for cross-channel analytics, based on Adobe Experience Platform.
@@ -29,6 +31,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 + Connections {#cja-connections}
   + [Create a connection](connections/create-connection.md)
   + [Manage connections](connections/manage-connection.md)
+  + [Estimate connection size](connections/estimate-connection-size.md)
   + [Combined event datasets](connections/combined-dataset.md)
   + Cross-channel Analytics {#cca}
     + [Cross-channel Analytics overview](connections/cca/overview.md)
