@@ -256,6 +256,3 @@ Applying this calculated metric displays the desired results:
 | `Washing Machines` | `1850` |
 | `Dryers` | `500` |
 | `Total` | `2350` |
-
-## Persistence examples
-
