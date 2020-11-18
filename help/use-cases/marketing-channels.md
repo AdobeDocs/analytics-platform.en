@@ -14,7 +14,7 @@ If your organization uses the [Analytics Data Connector](https://docs.adobe.com/
 
 ## Marketing Channel schema elements
 
-Once you establish the Analytics Data Connector on a desired report suite, an XDM schema is created for you. This schema contains all Analytics dimensions and metrics as raw data. This raw data does not contain attribution or persistence. Instead, each hit runs through marketing channel processing rules and records the first rule it matches. You specify attribution and persistence when creating a data view in CJA.
+Once you establish the Analytics Data Connector on a desired report suite, an XDM schema is created for you. This schema contains all Analytics dimensions and metrics as raw data. This raw data does not contain attribution or persistence. Instead, each event runs through marketing channel processing rules and records the first rule it matches. You specify attribution and persistence when creating a data view in CJA.
 
 1. [Create a connection](/help/connections/create-connection.md) that includes a dataset based on the Analytics Data Connector.
 2. [Create a data view](/help/data-views/create-dataview.md) that includes the following dimensions:
@@ -31,14 +31,12 @@ Your marketing channel dimensions are now available for use in Analysis Workspac
 >
 >There are several fundamental data differences between report suite data and Platform data. Adobe highly recommends adjusting your report suite's marketing channel processing rules to help facilitate proper data collection in Platform.
 
-Since first and last touch channel dimensions are in essence the same dimension with different attribution models, you can recreate similar dimensions when [creating a data view](/help/data-views/create-dataview.md). You can create multiple dimensions based on the same schema element, giving them different attribution models and persistence.
+Marketing channel settings operate differently between Platform data and report suite data. Consider the following differences when setting up Marketing channels for CJA:
 
-When marketing channels run on a Platform dataset, they operate differently than in an Analytics report suite. Consider the following differences when setting up Marketing channels for Platform:
-
-* **Is First Page of Visit**: This rule criteria is common on several default marketing channel definitions. Any processing rule that contains this criteria is ignored in Platform. Sessions are determined at data query time instead of at the time of data collection, preventing this criteria from evaluating. Adobe recommends removing or editing rules that contain this criteria to prevent confusion.
+* **Is First Page of Visit**: This rule criteria is common on several default marketing channel definitions. Any processing rule that contains this criteria is ignored in Platform (other criteria in the same rule still apply). Sessions are determined at data query time instead of at the time of data collection, preventing Platform from using this specific rule criteria. Adobe recommends removing the 'Is First Page of Visit' criteria from each marketing channel processing rule.
 * **Overwrite Last-Touch Channel**: This setting in the Marketing Channel Manager normally prevents certain channels from getting last touch channel credit. Platform ignores this setting, allowing broad channels like 'Direct' or 'Internal' to attribute toward metrics in potentially undesired ways. Adobe recommends removing channels where you have 'Override Last-Touch Channel' unchecked.
   * You can delete the 'Direct' marketing channel in the Marketing Channel Manager, then rely on CJA's 'No value' dimension item for that channel. You can also rename this dimension item to 'Direct' or exclude the dimension item entirely when configuring a data view.
-  * Alternatively, you can create a marketing channel classification, classifying each value to itself except for channels that you want to exclude in CJA. You can then use this classification dimension when creating a connection instead of `channel.typeAtSource`.
+  * Alternatively, you can create a marketing channel classification, classifying each value to itself except for channels that you want to exclude in CJA. You can then use this classification dimension when creating a data view instead of `channel.typeAtSource`.
 * **Marketing Channel Expiration**: This engagement period setting determines the period of inactivity before a visitor can obtain a new first touch channel in report suite data. Platform uses its own attribution settings, so this setting is ignored entirely in CJA.
 
 ## Comparing data between CJA and traditional Analytics
