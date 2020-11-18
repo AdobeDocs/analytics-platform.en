@@ -151,6 +151,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [(B2B) Add account-level data as a lookup dataset](use-cases/b2b.md)
   + [Import call center and web data](use-cases/call-center.md)
   + [Data ingestion use cases](use-cases/data-ingestion.md)
+  + [Use Marketing channel dimensions](use-cases/marketing-channels.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
 + [CJA documentation updates](doc-changes.md)
