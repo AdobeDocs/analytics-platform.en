@@ -1,9 +1,9 @@
 ---
-title: Use Marketing channel dimensions in CJA via the Analytics Data Connector
+title: Use Marketing channel dimensions in Adobe Experience Platform
 description: Use the Analytics Data Connector to bring Marketing Channel processing rules into Adobe Experience Platform.
 ---
 
-# Use Marketing channel dimensions in CJA via the Analytics Data Connector
+# Use Marketing channel dimensions in Adobe Experience Platform
 
 If your organization uses the [Analytics Data Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/analytics.html) to bring report suite data into CJA, you can configure a connection in CJA to report on Marketing Channel dimensions.
 
