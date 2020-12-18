@@ -152,6 +152,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Import call center and web data](use-cases/call-center.md)
   + [Data ingestion use cases](use-cases/data-ingestion.md)
   + [Use Marketing channel dimensions](use-cases/marketing-channels.md)
+  + [Add global lookups to your datasets](use-cases/global-lookups.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
 + [CJA documentation updates](doc-changes.md)
