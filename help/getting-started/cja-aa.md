@@ -33,6 +33,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Feature | Notes |
 | --- | --- |
 | Product Variable | The product variable currently available for reporting for data conforming to the Experience Event schema (specifically using the productListItems object). |
+| Marketing Channels | Marketing Channels data now flows into CJA through the Analytics Data Connector. Marketing Channel rules must still be configured in traditional Adobe Analytics. Some rules are not supported. For more details, please see [CJA Marketing Channels documentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en#cja-usecases). |
 | Visualizations | All visualizations are supported except for the Map visualization. |
 | Project Sharing | Project sharing is only supported between users of CJA - there is not project sharing between CJA and the traditional Analysis Workspace. |
 | Custom Sessionization | Support for all custom sessionization features other than mobile background hits. |
@@ -68,10 +69,11 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Scheduled Reports/Projects | Support is planned. |
 | Alerts | Support is planned. |
 | Custom Calendars | Support is planned. |
-| Marketing Channels | Support is planned. |
 | PDF Export | Support is planned. |
 | Reporting API Access | Support is planned - will only be available with API 2.0. |
 | ID Stitching via Device Graph | Support is planned. |
+| Report Builder (Excel plugin) | Support is planned. |
+| Real-Time Reporting | Support is planned. |
 
 ## Support not yet planned
 
@@ -80,11 +82,9 @@ The following tables list which features in Adobe Analytics are supported, parti
 | A4T | Support is not yet planned. |
 | Media Analytics | Support is not yet planned. |
 | Advertising Cloud | Support is not yet planned. |
-| Report Builder (Excel plugin) | Support is not yet planned. |
 | Activity Map | Support is not yet planned. |
 | Classification Rule Builder | Support is not yet planned. |
 | Summary Data Sources | Support is not yet planned. |
-| Real-Time Reporting | Support is not yet planned. |
 
 ## Will never be supported
 
