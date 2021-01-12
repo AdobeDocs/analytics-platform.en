@@ -5,10 +5,6 @@ title: Accessibility in Analysis Workspace
 
 # Accessibility in Analysis Workspace
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 Learn about accessibility support in [!UICONTROL Analysis Workspace], the premier analysis tool for Adobe Analytics. 
 
 Accessibility refers to making products usable for people with visual, auditory, cognitive, motor, and other disabilities. Examples of accessibility features for software products include screen reader support, text equivalents for graphics, keyboard shortcuts, change of display colors to high contrast, and so on. 
@@ -19,11 +15,20 @@ Accessibility refers to making products usable for people with visual, auditory,
 
 Navigation in [!UICONTROL Analysis Workspace] works top > down, and left > right. The following navigational elements facilitate accessibility:
 
-* The `F6` key enables landmark shortcuts
-* The `Tab` key moves between individual elements. 
+* The `Tab` key enables landmark shortcuts, moving between larger sections within Workspace. In the left rail, `Tab` also enables you to move from one draggable option to the next.
+* The `left/right arrows` move between individual elements after `Tab` has highlighted it. 
+* The `F6` navigates to the first panel in the project and  moves between the visualizations within that panel. Then, it moves to the next panel in the project and repeats. 
 * We apply focus indicators so that sighted keyboard users have a clear indication of which UI element currently has focus. The indicator is a blue border around the selected element.
 
     ![Focus Indicator](assets/focus-indicator.png)
+
+### Keyboard navigation for the menu bar 
+
+1. Tab until you have reached the menu bar.
+1. Use left/right arrow keys to navigate to the menu you want.
+1. Press `Enter` to select the menu and show its options.
+1. Use up/down arrow keys to navigate to the menu option you want.
+1. Press `Enter` to select the option.
 
 ### Keyboard navigation for drag & drop interactions 
 
@@ -36,7 +41,7 @@ Navigation in [!UICONTROL Analysis Workspace] works top > down, and left > right
 
 ### Keyboard shortcuts (hotkeys) 
 
-[!UICONTROL Analysis Workspace] offers a rich set of [keyboard shortcuts](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) for a more seamless workflow. Some common shortcuts for navigation, analysis creation, and insight democratization are listed below. 
+[!UICONTROL Analysis Workspace] offers a rich set of [keyboard shortcuts](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) for a more seamless workflow. Some common shortcuts for navigation, analysis creation, and insight democratization are listed below. 
 
 #### Navigation
 
@@ -78,7 +83,7 @@ A screen reader reads text that appears on the computer screen. It also reads no
 
 [!UICONTROL Analysis Workspace] strives for WCAG 2.1 AA conformance, including requirements for color contrast. 
 
-In addition, users can set their own preferred color palette for a project under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md). 
+In addition, users can set their own preferred color palette for a project under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Project color palette](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html). 
 
 ## Required field validation in component builders 
 

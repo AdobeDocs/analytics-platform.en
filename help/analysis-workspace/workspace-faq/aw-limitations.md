@@ -5,10 +5,6 @@ title: Known limitations in Analysis Workspace
 
 # Known limitations in Analysis Workspace 
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 Here is a list of known limitations in Analysis Workspace and its related components: 
 
 ## Tables
@@ -25,14 +21,14 @@ Here is a list of known limitations in Analysis Workspace and its related compon
 * [!UICONTROL Flow]: Entry/Exit dimensions, e.g. [!UICONTROL Entry page], cannot be used in Flow.
 * [!UICONTROL Cohort]: Non-integers cannot be used as Cohort criteria.
 
-<!--## Panels
+## Panels
 
-* Segment Comparison: The [!UICONTROL Everyone Else] segment does not get created if a segment template is used in the initial drop zone.<-->
+* Segment Comparison: The [!UICONTROL Everyone Else] segment does not get created if a segment template is used in the initial drop zone.
 
-## Components > Filters
+## Components > Segments
 
 * Certain metrics and dimensions are not segmentable, such as [!UICONTROL Occurrences], [!UICONTROL Unique Visitors], etc.
-* Certain components and operators are unavailable if a filter is created from Workspace (as opposed to being created from [!UICONTROL Components > Filters]). For example, IP Address.
+* Adhoc segments created in the [panel dropzone](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/panels.html) will not appear in the left rail of Workspace or the Segment component manager, unless they are made public. This can be done by editing the segment and selecting **[!UICONTROL Make this segment public]**.
 
 ## Components > Calculated Metrics
 
@@ -43,6 +39,10 @@ Here is a list of known limitations in Analysis Workspace and its related compon
 ## Components > Date Ranges
 
 * Custom date ranges do not support [!UICONTROL This day last year], [!UICONTROL This day last month], etc.
+
+## Components > Virtual Reports Suites
+
+* When report time processing is enabled, certain components are not supported. For a full list, see [Report Time Processing](/help/components/vrs/vrs-report-time-processing.md).
 
 ## Components > Report Settings
 

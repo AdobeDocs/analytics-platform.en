@@ -6,10 +6,6 @@ uuid: fc117745-baf3-46fb-873d-9307092cc337
 
 # Configure a fallout visualization
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 You can specify the touchpoints to create a multi-dimensional fallout sequence. Commonly, a touchpoint is a page on your site. However, touchpoints are not limited to pages. For example, you can add events, such as units, as well as unique visitors and return visits. You can also add dimensions, such as a category, browser type, or internal search term.
 
 You can even add segments within a touchpoint. For example, you might want to compare segments, such as iOS and Android users. Drag the desired segments to the top of the fallout and information about those segments is added to the fallout report. If you want to show only those segments, can you remove the All Visits baseline.
@@ -62,7 +58,6 @@ You can do pathing on eVars, including merchandising eVars and [listVars](https:
 | Setting | Description |
 |--- |--- |
 |Fallout Container <ul><li>Visit</li><li>Visitor</li></ul>|Lets you switch between Visit and Visitor to analyze visitor pathing. The default is Visitor.  These settings help you understand visitor engagement at the visitor level (across visits), or constrain the analysis to a single visit.|
-|Show "All Visitors" as the first touchpoint|You can deselect this if you'd rather not have "All Visitors" as the first touchpoint.|
 
 When you **right-click a touchpoint**, the following options appear:
 
