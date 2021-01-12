@@ -5,23 +5,20 @@ title: Panels overview
 
 # Panels overview
 
-A [!UICONTROL panel] is a collection of tables and visualizations. You can access panels from the top left icon in Workspace or a [blank panel](blank-panel.md). Panels are helpful when you want to organize your projects according to time periods, report suites, or analysis use case. The following panel types are available in Analysis Workspace:
+A [!UICONTROL panel] is a collection of tables and visualizations. You can access panels from the top left icon in Workspace or a [blank panel](/help/analysis-workspace/c-panels/blank-panel.md). Panels are helpful when you want to organize your projects according to time periods, report suites, or analysis use case. The following panel types are available in Analysis Workspace:
 
 | Panel name | Description |
 | --- | --- |
-| [Blank panel](blank-panel.md) | Choose from available panels and visualizations to start your analysis. |
+| [Blank panel](/help/analysis-workspace/c-panels/blank-panel.md) | Choose from available panels and visualizations to start your analysis. |
 | [Quick Insights panel](quickinsight.md) | Quickly build a freeform table and an accompanying visualization in order to analyze and uncover insights faster. |
-| [Analytics for Target panel](a4t-panel.md) | Analyze Target activities and experiences in Analysis Workspace. |
 | [Attribution panel](attribution.md) | Quickly compare and visualize any number of attribution models using any dimension and conversion metric. |
 | [Freeform panel](freeform-panel.md) | Perform unlimited comparisons and breakdowns, then add visualizations to tell a rich data story. |
-| [Media Concurrent Viewers panel](media-concurrent-viewers.md) | Analyze concurrent viewers over time, with details on peak concurrency and the ability to break down and compare. |
-| [Segment Comparison panel](c-segment-comparison/segment-comparison.md) | Quickly compare two segments across all data points to automatically find relevant differences. |
 
 ![](assets/panel-overview.png)
 
 [!UICONTROL Quick Insights], [!UICONTROL Blank] and [!UICONTROL Freeform] panels are great places to start your analysis, while [!UICONTROL Analytics for Target], [!UICONTROL Attribution IQ], [!UICONTROL Media Concurrent Viewers] and [!UICONTROL Segment Comparison] lend themselves to more advanced analyses. A `"+"` button is available in projects so you can add blank panels at any time.
 
-The default starting panel is the [!UICONTROL Freeform] panel, but you can make the [blank panel](/help/analyze/analysis-workspace/c-panels/blank-panel.md) your default as well.
+The default starting panel is the [!UICONTROL Freeform] panel, but you can make the [blank panel](/help/analysis-workspace/c-panels/blank-panel.md) your default as well.
 
 ## Report suite {#report-suite}
 

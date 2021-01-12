@@ -1,8 +1,7 @@
 ---
 description: Create a cohort and run a cohort analysis report in Analysis Workspace.
 keywords: Analysis Workspace
-title: Run a cohort analysis report
-topic: Reports and analytics
+title: Configure a cohort analysis report
 uuid: 5574230f-8f35-43ea-88d6-cb4960ff0bf4
 ---
 
@@ -38,15 +37,15 @@ Create a cohort and run a [!UICONTROL Cohort Analysis] report in Analysis Worksp
    ![Step Result](assets/cohort-report.png)
 
    The report shows visitors who placed an order ( *`Included`* column), and who returned to your site in subsequent visits. The reduction in visits over time enables you to spot problems and take action.
-1. (Optional) Create a segment from a selection.
+1. (Optional) Create a filter from a selection.
 
-   Select cells (contiguous or noncontiguous), then right-click > **[!UICONTROL Create Segment From Selection]**.
+   Select cells (contiguous or noncontiguous), then right-click > **[!UICONTROL Create Filter From Selection]**.
 
-1. In the [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md), further edit the segment, then click **[!UICONTROL Save]**.
+1. In the [Filter Builder](/help/components/filters/manage-filters.md), further edit the segment, then click **[!UICONTROL Save]**.
 
-   The saved segment is available for use in the [!UICONTROL Segment] panel in [!UICONTROL Analysis Workspace].
+   The saved filter is available for use in the [!UICONTROL Filter] panel in [!UICONTROL Analysis Workspace].
 1. Name and save your cohort project.
-1. (Optional) [Curate and share](/help/analyze/analysis-workspace/curate-share/curate.md) the project components.
+1. (Optional) [Curate and share](/help/analysis-workspace/curate-share/curate.md) the project components.
 
    >[!NOTE]
    >

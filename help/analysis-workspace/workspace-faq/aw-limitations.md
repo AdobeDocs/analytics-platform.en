@@ -25,10 +25,10 @@ Here is a list of known limitations in Analysis Workspace and its related compon
 
 * Segment Comparison: The [!UICONTROL Everyone Else] segment does not get created if a segment template is used in the initial drop zone.
 
-## Components > Segments
+## Components > Filters
 
-* Certain metrics and dimensions are not segmentable, such as [!UICONTROL Occurrences], [!UICONTROL Unique Visitors], etc.
-* Adhoc segments created in the [panel dropzone](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/panels.html) will not appear in the left rail of Workspace or the Segment component manager, unless they are made public. This can be done by editing the segment and selecting **[!UICONTROL Make this segment public]**.
+* Certain metrics and dimensions cannot be filtered, such as [!UICONTROL Occurrences], [!UICONTROL Unique Visitors], etc.
+* Ad-hoc filters created in the [panel dropzone](/help/analysis-workspace/c-panels/panels.md) will not appear in the left rail of Workspace or the Filter component manager, unless they are made public. This can be done by editing the filter and selecting **[!UICONTROL Make this filter public]**.
 
 ## Components > Calculated Metrics
 
@@ -40,9 +40,6 @@ Here is a list of known limitations in Analysis Workspace and its related compon
 
 * Custom date ranges do not support [!UICONTROL This day last year], [!UICONTROL This day last month], etc.
 
-## Components > Virtual Reports Suites
-
-* When report time processing is enabled, certain components are not supported. For a full list, see [Report Time Processing](/help/components/vrs/vrs-report-time-processing.md).
 
 ## Components > Report Settings
 
