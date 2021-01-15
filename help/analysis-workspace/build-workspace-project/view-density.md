@@ -1,5 +1,5 @@
 ---
-description: Learn how to adjust the view density.
+description: Learn how to adjust the view density in Analysis Workspace.
 title: View Density
 ---
 

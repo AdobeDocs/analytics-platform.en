@@ -1,10 +1,10 @@
 ---
-description: null
-title: Color Palettes
+description: How to change the visualization color palette or specify your own custom color palette.
+title: Visualization color palette
 uuid: 18252889-8dc0-48fa-820f-df534156c22f
 ---
 
-# Visualization Color Palette
+# Visualization color palette
 
 >[!NOTE]
 >

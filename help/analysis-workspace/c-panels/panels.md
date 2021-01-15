@@ -20,14 +20,6 @@ A [!UICONTROL panel] is a collection of tables and visualizations. You can acces
 
 The default starting panel is the [!UICONTROL Freeform] panel, but you can make the [blank panel](/help/analysis-workspace/c-panels/blank-panel.md) your default as well.
 
-## Report suite {#report-suite}
-
-Tables and visualizations within a panel derive data from the [!UICONTROL report suite] selected in the top right of the panel. The report suite also determines what components are available in the left rail. Within a project, you can use one or [many report suites](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) depending on your analysis use cases. To apply a single report suite to all panels in a project, **right-click panel header > Apply report suite to all panels**.
-
-The list of report suites is sorted on relevancy, which Adobe defines based on how recently and frequently the suite has been used by the current user, and how frequently the suite is used within the organization.
-
-![](assets/panel-report-suite.png)
-
 ## Calendar {#calendar}
 
 The panel calendar controls the reporting range for tables and visualizations within a panel. 
@@ -42,15 +34,15 @@ The panel dropzone enables you to apply segment and drop-down filters to all tab
 
 ### Segment filters
 
-Drag and drop any segment from the left rail into the panel drop zone to begin filtering your panel.
+Drag and drop any Filters from the left rail into the panel drop zone to begin filtering your panel.
 
 ![](assets/segment-filter.png)
 
-### Ad-hoc segment filters
+### Ad-hoc filters
 
-Non-segment components can also be dragged directly into the dropzone to create ad-hoc segments, saving you the time and effort of going to the Segment Builder. Segments created in this way are automatically defined as hit-level segments. This definition can be modified by clicking the information icon (i) next to the segment, then the pencil-shaped edit icon and editing it in the Segment Builder. 
+Non-segment components can also be dragged directly into the dropzone to create ad-hoc filters, saving you the time and effort of going to the Filter Builder. Filters created in this way are automatically defined as hit-level filters. This definition can be modified by clicking the information icon (i) next to the filter, then the pencil-shaped edit icon and editing it in the Filter Builder. 
 
-Ad-hoc segments are local to the project and will not show up in your left rail unless you make them public.
+Ad-hoc filters are local to the project and will not show up in your left rail unless you make them public.
 
 ![](assets/adhoc-segment-filter.png)
 
@@ -82,11 +74,10 @@ The following settings are available:
 
 | Setting | Description |
 | --- | --- |
-| Insert Copied Panel/Visualization|Lets you paste ("insert") a copied panel or visualization to another place within the project, or into a completely different project.|
-| Copy Panel | Lets you right-click and copy a panel, so that you can insert it to another place within the project, or into a completely different project.|
-| Apply Report Suite to all panels | Lets you apply the active panel report suite to all panels in the project.|
-| Duplicate Panel | Makes an exact duplicate of the current panel, which you can then modify. |
-| Collapse/Expand all Panels | Collapses and expands all project panels. |
-| Collapse/Expand all Visualizations in Panel | Collapses and expands all visualizations in the current panel. |
-| Edit Description | Add (or edit) a text description for the panel. |
-| Get Panel Link | Lets you direct someone to a specific panel within a project. When the link is clicked, the recipient will be required to login before being directed to the exact panel linked to. |
+| [!UICONTROL Insert Copied Panel/Visualization] | Lets you paste ("insert") a copied panel or visualization to another place within the project, or into a completely different project.|
+| [!UICONTROL Copy Panel] | Lets you right-click and copy a panel, so that you can insert it to another place within the project, or into a completely different project.|
+| [!UICONTROL Duplicate Panel] | Makes an exact duplicate of the current panel, which you can then modify. |
+| [!UICONTROL Collapse/Expand all Panels] | Collapses and expands all project panels. |
+| [!UICONTROL Collapse/Expand all Visualizations in Panel] | Collapses and expands all visualizations in the current panel. |
+| [!UICONTROL Edit Description] | Add (or edit) a text description for the panel. |
+| [!UICONTROL Get Panel Link] | Lets you direct someone to a specific panel within a project. When the link is clicked, the recipient will be required to login before being directed to the exact panel linked to. |

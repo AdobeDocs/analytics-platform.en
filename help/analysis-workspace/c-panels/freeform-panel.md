@@ -1,5 +1,5 @@
 ---
-description: Learn about freeform panels
+description: Learn about freeform panels in Analysis Workspace.
 title: Freeform panel
 ---
 

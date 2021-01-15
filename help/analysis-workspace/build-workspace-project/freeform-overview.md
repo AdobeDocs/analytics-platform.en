@@ -1,8 +1,7 @@
 ---
-description: null
+description: Overview of Workspace projects with menu bar and settings
 keywords: Analysis Workspace
 title: Projects overview
-topic: Reports and analytics
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 ---
 
