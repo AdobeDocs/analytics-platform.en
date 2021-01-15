@@ -1,5 +1,5 @@
 ---
-description: Changes and enhancements to the Undo option in Analysis Workspace .
+description: Learn about the Undo and Redo options in Analysis Workspace.
 title: Undo and redo settings
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
 ---

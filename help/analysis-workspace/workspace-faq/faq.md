@@ -1,6 +1,6 @@
 ---
 description: Workspace FAQs
-title: Frequently asked questions and troubleshooting Workspace
+title: Frequently asked questions
 ---
 
 # Frequently asked questions
