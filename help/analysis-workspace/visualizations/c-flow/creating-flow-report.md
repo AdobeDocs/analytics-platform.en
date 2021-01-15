@@ -1,7 +1,6 @@
 ---
-description: null
+description: The Flow visualization lets you track a path through your pages or dimensions.
 title: Configure a flow visualization
-uuid: ff36dc09-6175-43ed-a82a-630d28bca806
 ---
 
 # Configure a flow visualization
