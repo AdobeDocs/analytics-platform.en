@@ -25,7 +25,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Virtual Report Suites | Now called [Data Views](/help/data-views/create-dataview.md). |
 | VRS Component Curation | Now part of Data Views. |
 | Report Time Processing | CJA relies exclusively on Report Time Processing. |
-| GDPR Deletion | Note that GDPR is now handled in coordination with [!UICONTROL Experience Platform] - CJA inherits whatever data changes [!UICONTROL Experience Platform] makes to underlying datasets. |
+| GDPR Deletion | Note that GDPR is now handled in coordination with [!UICONTROL Adobe Experience Platform] - CJA inherits whatever data changes [!UICONTROL Experience Platform] makes to underlying datasets. |
 | User Permissions/Data Access Controls | CJA distinguishes between Adobe Admin Console product admins and users. Only product admins are able to 1) create/update/delete Connections or Data Views, 2) update/delete projects, filters, or calc metrics that were created by other users, and 3) share a Workspace project to all users |
 
 ## Supported with caveats

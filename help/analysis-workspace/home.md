@@ -1,8 +1,7 @@
 ---
 keywords: Analysis Workspace
 title: Analysis Workspace overview
-topic: Reports and analytics
-uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
+description: Overview of Analysis Workspace capabilities
 ---
 
 # Analysis Workspace overview

@@ -1,5 +1,5 @@
 ---
-description: null
+description: Donut visualization shows data as parts or segments of a whole.
 title: Donut
 ---
 

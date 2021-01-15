@@ -1,5 +1,5 @@
 ---
-description: Visually represent your data with visualizations.
+description: Visually represent your data in Analysis Workspace.
 keywords: Analysis Workspace
 title: Visualizations overview
 ---
