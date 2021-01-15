@@ -1,7 +1,6 @@
 ---
-description: null
+description: Learn how to build a build a visual map of any metric in Analysis Workspace.
 title: Map
-uuid: 6038f336-62a3-4efa-8316-4d7792468db3
 ---
 
 # Map
