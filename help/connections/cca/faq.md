@@ -1,6 +1,6 @@
 ---
-title: Cross-channel Analytics FAQ
-description: Frequently asked questions for Cross-channel Analytics
+title: Cross-Channel Analytics FAQ
+description: Frequently asked questions for Cross-Channel Analytics
 ---
 
 # Frequently asked questions
@@ -34,8 +34,8 @@ The number of persistent IDs is irrelevant in favor of the transient ID. A singl
 
 ## Once I contact my Account Manager with the desired information, how long does it take for the rekeyed dataset to become available?
 
-Live stitching is available approximately 1 week after Adobe enables Cross-channel Analytics. Backfill availability depends on the amount of existing data. Small datasets (less than 1 million events per day) typically take a couple days, while large data sets (1 billion events per day) can take a week or more.
+Live stitching is available approximately 1 week after Adobe enables Cross-Channel Analytics. Backfill availability depends on the amount of existing data. Small datasets (less than 1 million events per day) typically take a couple days, while large data sets (1 billion events per day) can take a week or more.
 
-## How does Cross-channel Analytics handle GDPR and CCPA requests?
+## How does Cross-Channel Analytics handle GDPR and CCPA requests?
 
 Adobe handles GDPR and CCPA requests in accordance to local and international laws. Adobe offers the [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) to submit data access and deletion requests. The requests apply to both the original and rekeyed datasets.

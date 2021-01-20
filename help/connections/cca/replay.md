@@ -1,11 +1,11 @@
 ---
 title: How replays work
-description: Understand the concept of "replay" in Cross-channel Analytics
+description: Understand the concept of "replay" in Cross-Channel Analytics
 ---
 
 # How replays work
 
-Cross-channel Analytics makes two passes on data on a given connection:
+Cross-Channel Analytics makes two passes on data on a given connection:
 
 * **Live-stitching**: CCA attempts to stitch each hit as it comes in. Net new devices to the dataset that have never logged in are typically not stitched at this level. Devices already recognized are stitched immediately.
 * **Replay**: CCA "replays" data based on unique identifiers it has learned. This stage is where new devices to the connection become stitched. Adobe offers two replay intervals:

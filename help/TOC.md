@@ -33,10 +33,10 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Manage connections](connections/manage-connection.md)
   + [Estimate connection size](connections/estimate-connection-size.md)
   + [Combined event datasets](connections/combined-dataset.md)
-  + Cross-channel Analytics {#cca}
-    + [Cross-channel Analytics overview](connections/cca/overview.md)
+  + Cross-Channel Analytics {#cca}
+    + [Cross-Channel Analytics overview](connections/cca/overview.md)
     + [How replays work](connections/cca/replay.md)
-    + [Cross-channel Analytics FAQ](connections/cca/faq.md)
+    + [Cross-Channel Analytics FAQ](connections/cca/faq.md)
 + Data Views {#cja-dataviews}
   + [Create a data view](data-views/create-dataview.md)
   + [Configure data views and attribution](data-views/configure-dataviews.md)
