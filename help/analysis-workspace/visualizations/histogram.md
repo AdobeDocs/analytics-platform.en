@@ -1,7 +1,6 @@
 ---
-description: A histogram is a new visualization type in Analysis Workspace.
+description: A histogram is similar to a bar chart, but it groups numbers into ranges (buckets).
 title: Histogram
-uuid: 8a6bd2c4-da15-4f64-b889-ab9add685046
 ---
 
 # Histogram

@@ -44,8 +44,8 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Analysis Workspace overview](analysis-workspace/home.md)
   + [Perform basic analysis](analysis-workspace/perform-basic-analysis.md)
   + [Perform advanced analysis](analysis-workspace/perform-adv-analysis.md)
-  + Build a Workspace project {#build-workspace-project}
-    + [Create project - overview](analysis-workspace/build-workspace-project/freeform-overview.md)
+  + Projects {#build-workspace-project}
+    + [Projects overview](analysis-workspace/build-workspace-project/freeform-overview.md)
     + [Save projects](analysis-workspace/build-workspace-project/save-projects.md)
     + [Templates](analysis-workspace/build-workspace-project/starter-projects.md)
     + [Hotkeys (Shortcuts)](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
@@ -152,6 +152,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Import call center and web data](use-cases/call-center.md)
   + [Data ingestion use cases](use-cases/data-ingestion.md)
   + [Use Marketing channel dimensions](use-cases/marketing-channels.md)
+  + [Add global lookups to your datasets](use-cases/global-lookups.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
 + [CJA documentation updates](doc-changes.md)

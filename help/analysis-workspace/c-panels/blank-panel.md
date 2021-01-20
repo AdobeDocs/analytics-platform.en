@@ -1,5 +1,5 @@
 ---
-description: null
+description: How to use the Blank panel in Analysis Workspace.
 title: Blank panel
 ---
 
