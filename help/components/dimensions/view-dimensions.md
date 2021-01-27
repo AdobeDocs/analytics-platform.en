@@ -1,6 +1,6 @@
 ---
 description: Shows the top 5 values for non-time dimensions (and 15 for time dimensions).
-title: Preview dimensions
+title: How to preview dimensions in CJA Workspace
 ---
 
 # Preview dimensions
