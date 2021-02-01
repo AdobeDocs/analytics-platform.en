@@ -27,6 +27,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Report Time Processing | CJA relies exclusively on Report Time Processing. |
 | GDPR Deletion | Note that GDPR is now handled in coordination with [!UICONTROL Adobe Experience Platform] - CJA inherits whatever data changes [!UICONTROL Experience Platform] makes to underlying datasets. |
 | User Permissions/Data Access Controls | CJA distinguishes between Adobe Admin Console product admins and users. Only product admins are able to 1) create/update/delete Connections or Data Views, 2) update/delete projects, filters, or calc metrics that were created by other users, and 3) share a Workspace project to all users |
+| Cross-device/cross-channel stitching | See [Cross-Channel Analytics](/help/connections/cca/overview.md). |
 | Out-of-the-box Analysis Workspace dimensions (e.g. Browser Type, Referrer Type, Operating System etc.) | CJA provides these dimensions natively as long as the base XDM fields (such as user agent or device ID) are populated. For customers using the Analytics Data Connector (ADC), some of these dimensions are available, but not all. Please refer to our [documentation on which Analytics variables are supported via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | Reporting API Access | Currently available using the Analytics API 2.0. |
 
@@ -52,8 +53,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Panels | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. The Segment Comparison, Analytics for Target (A4T), and Media Concurrent Viewers panels are not supported. |
 | Merchandising eVars | The behavior of Merchandising eVars can be achieved using dimensions within an Object Array given a merchandising eVar is not set to use persistence. Currently, merchandising dimension persistence is not available. |
 | Bot Filtering | For Analytics Data Connector (ADC)-based datasets, bot filtering is applied. General bot filtering logic for other datasets is not performed by the [!UICONTROL Experience Platform] or CJA. |
-| Processing Rules | For ADC-based datasets, processing rules are still applied. |
-| Cross-Device Identity Stitching | CJA supports cross-device, cross-channel identity stitching in an ongoing basis, including periodic restatement of historical data. Currently, this can only be done using a single customer-set identity in combination with a single cookie ID. |
+| Processing Rules | For Analytics Data Connector-based datasets, processing rules are still applied. |
 | Media Analytics | Media data is available as part of the Analytics Data Connector. |
 
 ## Not currently supported, but planned
