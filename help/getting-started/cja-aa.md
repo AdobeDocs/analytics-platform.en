@@ -27,6 +27,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Report Time Processing | CJA relies exclusively on Report Time Processing. |
 | GDPR Deletion | Note that GDPR is now handled in coordination with [!UICONTROL Adobe Experience Platform] - CJA inherits whatever data changes [!UICONTROL Experience Platform] makes to underlying datasets. |
 | User Permissions/Data Access Controls | CJA distinguishes between Adobe Admin Console product admins and users. Only product admins are able to 1) create/update/delete Connections or Data Views, 2) update/delete projects, filters, or calc metrics that were created by other users, and 3) share a Workspace project to all users |
+| Cross-device/cross-channel stitching | See [Cross-Channel Analytics](/help/connections/cca/overview.md). |
 
 ## Supported with caveats
 
@@ -52,7 +53,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Merchandising eVars | Merchandising eVars will only work with ADC-based datasets unless they strictly conform to the same XDM schema (similar to the product list limitations above). |
 | Bot Filtering | For Analytics Data Connector (ADC)-based datasets, bot filtering is applied. General bot filtering logic for other datasets is not performed by the [!UICONTROL Experience Platform] or CJA. |
 | Processing Rules | For ADC-based datasets, processing rules are still applied. |
-| Cross-Device Identity Stitching | Customers are limited to "one-time" stitches of the data via Query Service, or currently must apply this logic to data prior to [!UICONTROL Experience Platform] data ingestion. |
 
 ## Not currently supported, but planned
 
