@@ -11,7 +11,7 @@ title: Pagination, filtering and sorting tables
 
 For an overview of pagination, filtering and sorting tables in Analysis Workspace, watch this video tutorial:
 
->[!VIDEO](https://publish.tv.adobe.com/bucket/1/category/2282/video/23968/)
+>[!VIDEO](https://video.tv.adobe.com/v/23968)
 
 ## Advanced filtering options {#section_36E92E31442B4EBCB052073590C1F025}
 

@@ -11,6 +11,8 @@ When you create a connection, CJA combines all schemas and datasets into a singl
 * The 'Person ID' column of each dataset are merged into a single column, regardless of their name. This column is the foundation of identifying unique visitors in CJA.
 * Rows are processed based on timestamp.
 
+The concept of combined datasets is similar to the concept of combining report suites in traditional Adobe Analytics.
+
 ## Example
 
 Consider the following example. You have two event datasets, each with different fields containing different data.
