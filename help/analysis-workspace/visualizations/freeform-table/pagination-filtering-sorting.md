@@ -39,7 +39,7 @@ Clicking the filter icon, then **[!UICONTROL Show Advanced]**, next to a dimensi
 
 1. In any Freeform table in a project, click the arrow next to the dimension name:
 
-Insert screenshot here.
+![](assets/sort-dimensions.png)
 
 * The down-arrow sorts in descending order and the up-arrow (default) in ascending order.
-* You can sort dimensions alphabetically or numerically. For example, you may have numbered steps in a workflow and may want to sort by the step number. You might sort a date-related dimension by date. Or you could sort a product name dimension alphabetically.
+* You can sort dimensions alphabetically or numerically. For example, you may have numbered steps in a workflow and may want to sort by the step number. You might sort a date-related dimension by date. Or you could sort data sources alphabetically, as in the screenshot above.
