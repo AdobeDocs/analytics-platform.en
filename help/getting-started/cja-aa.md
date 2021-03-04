@@ -12,8 +12,8 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Adobe Analytics Feature | Notes |
 | --- | --- |
 | Metrics | CJA leverages the Experience Data Model (XDM) and supports unlimited metrics and is not tied to the custom success events of traditional Analytics. Note that some standard metrics have been renamed from traditional Analytics: Visitors = People, Visits = Sessions, Hits = Events. |
-| Dimensions | CJA leverages XDM and supports unlimited dimensions and is not tied to the custom success events of traditional Analytics. |
-| List Variables/List Props | CJA leverages XDM and supports unlimited list variables |
+| Dimensions | CJA leverages XDM and supports unlimited dimensions and is not tied to the custom eVars or props of traditional Analytics. |
+| List Variables/List Props | CJA leverages XDM and supports unlimited string arrays which can be used similarly to listVars. |
 | Date Ranges | Custom Calendar support is planned. |
 | Calculated Metrics | Note that any existing calc metrics in the traditional Analysis Workspace will not be ported to CJA. |
 | Segments | Now called "Filters" - note that any existing segments in traditional Analysis Workspace will not be ported to CJA. |
@@ -73,6 +73,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | ID Stitching via Device Graph | Support is planned. |
 | Report Builder (Excel plugin) | Support is planned. |
 | Real-Time Reporting | Support is planned. |
+| Data Warehouse Reporting (100% row export) | Support is planned from the Analysis Workspace interface. [!UICONTROL Experience Platform Query Service] also provides an interface for these use cases in CJA. |
 
 ## Support not yet planned
 
@@ -83,6 +84,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Activity Map | Support is not yet planned. |
 | Classification Rule Builder | Support is not yet planned. |
 | Summary Data Sources | Support is not yet planned. |
+| Data Feeds | Support is not yet planned. |
 
 ## Will never be supported
 
@@ -92,6 +94,4 @@ The following tables list which features in Adobe Analytics are supported, parti
 * Reports & Analytics Targets
 * Reports & Analytics Calendar Events
 * Ad Hoc Analysis
-* Data Warehouse Reporting - [!UICONTROL Experience Platform Query Service] will be the new interface for these use cases in CJA.
 * Mobile Services
-* Data Feeds
