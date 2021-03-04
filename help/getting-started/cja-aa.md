@@ -9,7 +9,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 
 ## Fully supported features/components
 
-| Adobe Analytics Feature | Notes |
+| Adobe Analytics Feature | Notes on support |
 | --- | --- |
 | Metrics | CJA leverages the Experience Data Model (XDM) and supports unlimited metrics and is not tied to the custom success events of traditional Analytics. Note that some standard metrics have been renamed from traditional Analytics: Visitors = People, Visits = Sessions, Hits = Events. |
 | Dimensions | CJA leverages XDM and supports unlimited dimensions and is not tied to the custom eVars or props of traditional Analytics. |
@@ -93,5 +93,4 @@ The following tables list which features in Adobe Analytics are supported, parti
 * Reports & Analytics Bookmarks
 * Reports & Analytics Targets
 * Reports & Analytics Calendar Events
-* Ad Hoc Analysis
 * Mobile Services

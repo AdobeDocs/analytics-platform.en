@@ -317,10 +317,4 @@ As an example, let's say you have a three-item column:
 
 3
 
-The average of this column is 2. The variance for the column will be ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3. In Ad Hoc Analysis this will look like this:
-
-1 2/3
-
-2 2/3
-
-3 2/3
+The average of this column is 2. The variance for the column will be ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3.
