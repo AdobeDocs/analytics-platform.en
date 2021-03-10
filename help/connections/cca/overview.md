@@ -38,6 +38,8 @@ Cross-Channel Analytics is a groundbreaking and robust feature, but has limitati
 * Only event datasets are supported. Other datasets, such as lookup datasets, are not supported.
 * Custom ID maps used in your organization are not supported.
 * The Adobe Co-op graph and Private graph are not supported.
+* Cross-Channel Analytics does not transform the field used for stitching in any manner. Field-based stitching uses the value in the specified field as it exists in the unstitched dataset within data lake. For example, if sometimes the word 'Bob' appears in the field, and sometimes the word 'BOB' appears, these will be treated as two separate people.
+
 
 ## Enable Cross-Channel Analytics
 
