@@ -36,12 +36,12 @@ You can manage components (individually or by selecting more than one) in a numb
 >These actions do not apply to Time components.
 
 | Component Action | Description |
-|--- |--- |
-|Tag|Organize or manage components by applying tags to them. It then shows up in the respective component manager, such as  Analytics >  Components >  Segments, or  Analytics >  Components >  Projects|
-|Favorite|Add the component to your list of favorites. It then shows up in the respective component manager, such as  Analytics >  Components >  Segments, or  Analytics >  Components >  Projects.|
-|Approve|Approve the component to make it canonical. It then shows up in the respective component manager, such as  Analytics >  Components >  Segments, or  Analytics >  Components >  Projects|
-|Share|Applies only to segments.|
-|Delete|Applies only to segments.|
+| --- | --- |
+| Tag | Organize or manage components by applying tags to them. It then shows up in the respective component manager, such as [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Segments], or [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects] |
+| Favorite | Add the component to your list of favorites. It then shows up in the respective component manager, such as [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Segments], or [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects]. |
+| Approve | Approve the component to make it canonical. It then shows up in the respective component manager, such as [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Segments], or  [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects]|
+| Share | Applies only to segments. |
+| Delete | Applies only to segments. |
 
 Watch the video on Creating Metrics, Segments, and Dates:
 
@@ -49,12 +49,4 @@ Watch the video on Creating Metrics, Segments, and Dates:
 
 ## Component access permissions
 
-Admins can curate (via [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=en#manage-users-and-products)) which components are exposed to users in reporting. The following table shows how these component access permissions behave:
-
-| Curation type | Admin can see | Non-admin project owner (or edit role) can see | Non-admin duplicate role |
-| --- | --- | --- | --- |
-| **Components "hidden" from a data view** | All data view components available for reporting (hidden components require clicking "Show all") | Not available for reporting | Not available for reporting |
-| **Components added or removed from a data view** | Only components added to the data view (hidden or not hidden). Admins cannot report on fields or components that are not defined by the data view. | Only components added to the data view, or components owned by or shared with the user. Hidden components are not available (like VRS curation). | Only components added to the DV, are not hidden and have been included in the Project curation. | 
-| **Curated components in a Project** | All data view components available for reporting (hidden components require clicking "Show all") | All non-hidden data view components (requires clicking "show all") | Only curated components, plus any components owned or shared with the user |
-| **Curated Project using a data view with hidden components** | All data components available for reporting (hidden and non-curated components require clicking "Show all")| All non-curated project components, all non-hidden data view components, and any components owned by or shared with the user | Only curated components, plus any components owned by or shared with the user |
-
+In Analysis Workspace, Admins can [curate](/help/analysis-workspace/curate-share/curate.md) which components are exposed to users in reporting.
