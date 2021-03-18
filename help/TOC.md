@@ -113,6 +113,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
       + [Anomaly Detection overview](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
       + [View anomalies in Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
       + [Statistical techniques used in anomaly detection](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
+  + [User preferences](analysis-workspace/user-preferences.md)
   + Workspace FAQs {#workspace-faq}
     + [Frequently asked questions](analysis-workspace/workspace-faq/faq.md)
     + [Optimize Analysis Workspace performance](analysis-workspace/workspace-faq/optimizing-performance.md)
