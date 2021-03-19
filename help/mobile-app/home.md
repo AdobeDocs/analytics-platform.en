@@ -9,11 +9,11 @@ description: Product documentation and self-help for Customer Journey Analytics 
 
 To learn more about Customer Journey Analytics [!UICONTROL dashboards], refer to the following resources:
 
-* [Curator's guide](/help/analyze/mobile-app/curator.md): This guide is intended to help curators of data configure Scorecards for their executive users on [!UICONTROL dashboards]. Curators may be organizational administrators or persons in other roles who are responsible for setting up Scorecards.
+* [Curator's guide](/help/mobile-app/curator.md): This guide is intended to help curators of data configure Scorecards for their executive users on [!UICONTROL dashboards]. Curators may be organizational administrators or persons in other roles who are responsible for setting up Scorecards.
 
     To watch a video overview of this guide, see [Adobe Analytics dashboards Scorecard Builder](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/additional-tools/analytics-dashboards/adobe-analytics-dashboards-scorecard-builder.html).
 
 
-* [Executive user quick start guide](/help/analyze/mobile-app/executive.md): This guide is intended to help executive users read and interpret Scorecards on [!UICONTROL dashboards]. The app allows executive users to view a broad rendering of important summary data quickly and easily on their own mobile devices.
+* [Executive user quick start guide](/help/mobile-app/executive.md): This guide is intended to help executive users read and interpret Scorecards on [!UICONTROL dashboards]. The app allows executive users to view a broad rendering of important summary data quickly and easily on their own mobile devices.
 
     To see a video that highlights this information, see [Adobe Analytics dashboards In-App Experience](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/additional-tools/analytics-dashboards/adobe-analytics-dashboards-in-app-experience.html).
