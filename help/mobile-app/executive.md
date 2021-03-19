@@ -1,16 +1,16 @@
 ---
 description: Instructions for using the dashboards scorecards.
-title: Adobe Analytics dashboards executive guide
+title: Analytics dashboards executive guide
 ---
 
-# Adobe Analytics dashboards: executive user quick start guide
+# Analytics dashboards: executive user quick start guide
 
-The following information provides executive users with information on best practices for using and viewing Adobe Analytics dashboards. To see a video demonstrating this information, see [Adobe Analytics dashboards In-App Experience](https://youtu.be/QXqQ_PkArbA).
+The following information provides executive users with information on best practices for using and viewing Analytics dashboards. To see a video demonstrating this information, see [Analytics dashboards In-App Experience](https://youtu.be/QXqQ_PkArbA).
 
 
 ## Introduction
 
-Adobe Analytics dashboards provides anytime, anywhere insights from Adobe Analytics.  The app allows users mobile access to intuitive scorecards. Scorecards are a collection of key metrics and other components presented in a tiled layout that you can tap for more detailed breakdowns and trended reports. Dashboards is supported on both iOS and Android operating systems.
+Analytics dashboards provides anytime, anywhere insights from Customer Journey Analytics.  The app allows users mobile access to intuitive scorecards. Scorecards are a collection of key metrics and other components presented in a tiled layout that you can tap for more detailed breakdowns and trended reports. Dashboards is supported on both iOS and Android operating systems.
 
 ## More about this guide
 
@@ -20,8 +20,8 @@ This guide is intended to help executive users read and interpret Scorecards on 
 
 | Term | Definition |
 |--- |--- |
-| Consumer| Executive persona viewing key metrics and insights from Analytics on a mobile device|
-| Curator |Data literate persona who finds and distributes insights from Analytics and configures the Scorecards to be viewed by consumer |
+| Consumer| Executive persona viewing key metrics and insights from CJA on a mobile device|
+| Curator |Data literate persona who finds and distributes insights from CJA and configures the Scorecards to be viewed by consumer |
 | Curation | The act of creating or editing a mobile scorecard containing relevant metrics, dimensions and other components for the consumer |
 | Scorecard | A dashboards view containing one or more tiles |
 | Tile | A rendering for a metric within a Scorecard View |
@@ -37,22 +37,22 @@ To use the dashboards effectively, you will need to have your Scorecard curator 
 
 To access Scorecards on dashboards, ensure that: 
 
-* You have a valid login into Adobe Analytics
+* You have a valid login into Customer Journey Analytics
 * Your curator has correctly created mobile Scorecards and shared them with you
 
-### Downloand and install dashboards
+### Download and install dashboards
 
 To download and install the app, follow the steps according to the operating system on your device.
 
 **For executive users on iOS:**
 
-Click the following link (it is also available in Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) and follow the prompts to download, install, and open the app:
+Click the following link (it is also available in CJA under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) and follow the prompts to download, install, and open the app:
 
 [iOS link](https://apple.co/2zXq0aN)
 
 **For executive users on Android:**
 
-Click the following link (it is also available in Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) and follow the prompts to download, install, and open the app:
+Click the following link (it is also available in CJA under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) and follow the prompts to download, install, and open the app:
 
 [Android link](https://bit.ly/2LM38Oo)
 
