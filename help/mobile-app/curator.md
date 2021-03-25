@@ -11,7 +11,7 @@ The following information instructs curators of Adobe Analytics data on how to c
 
 ## Introduction
 
-Adobe Analytics dashboards provide anytime, anywhere insights based on your Customer Journey Analytics data. The app allows users mobile access to intuitive scorecards that you create and share from the Customer Journey Analytics desktop UI. Scorecards are a collection of key metrics and other components presented in a tiled layout that you can tap for more detailed breakdowns and trended reports. You can tailor Scorecards according to the data most important to you. Analytics dashboards are supported on both iOS and Android operating systems.
+Adobe Analytics dashboards provide anytime, anywhere insights based on your Customer Journey Analytics data. The app allows users mobile access to intuitive scorecards that you create and share from the Customer Journey Analytics desktop UI. Scorecards are a collection of key metrics and other components presented in a tiled layout that you can tap for more detailed breakdowns and trended data views. You can tailor Scorecards according to the data most important to you. Analytics dashboards are supported on both iOS and Android operating systems.
 
 ## More about this guide
 
@@ -99,11 +99,11 @@ To implement the Scorecard template:
 
     Each dimension added to the tile will show up in a drop-down list in the detailed view of the app. The executive user can then choose among the options listed in the drop-down list.
 
-4. To apply segments to individual tiles, drag a segment from the left panel and drop it directly on top of the tile. If you want to apply the segment to all the tiles in the Scorecard, drop the tile on top of the scorecard. Or, you can also apply segments by selecting segments in the filter menu beneath the date ranges. You [configure and apply filters for your Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) the same way you would in Adobe Analytics Workspace.
+4. To apply filters to individual tiles, drag a filter from the left panel and drop it directly on top of the tile. If you want to apply the filter to all the tiles in the Scorecard, drop the tile on top of the scorecard. Or, you can also apply filters by selecting filters in the filter menu beneath the date ranges. You [configure and apply filters for your Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) the same way you would in Adobe Analytics Workspace.
 
-    ![Build segments for filter](assets/segment_ui.png)
+    ![Build a filter](assets/segment_ui.png)
 
-5. Similarly, to remove a component that is applied to the entire Scorecard, click anywhere on the Scorecard outside of the tiles and then remove it by clicking the **x** that appears when you hover over the component, as shown below for the **First Time Visits** segment:
+5. Similarly, to remove a component that is applied to the entire Scorecard, click anywhere on the Scorecard outside of the tiles and then remove it by clicking the **x** that appears when you hover over the component, as shown below for the **First Time Visits** filter:
 
     ![Remove_components](assets/new_remove.png)
 
