@@ -11,7 +11,7 @@ The following information instructs curators of Adobe Analytics data on how to c
 
 ## Introduction
 
-Analytics dashboards provide anytime, anywhere insights based on your Customer Journey Analytics data. The app allows users mobile access to intuitive scorecards that you create and share from the Customer Journey Analytics desktop UI. Scorecards are a collection of key metrics and other components presented in a tiled layout that you can tap for more detailed breakdowns and trended reports. You can tailor Scorecards according to the data most important to you. Analytics dashboards are supported on both iOS and Android operating systems.
+Adobe Analytics dashboards provide anytime, anywhere insights based on your Customer Journey Analytics data. The app allows users mobile access to intuitive scorecards that you create and share from the Customer Journey Analytics desktop UI. Scorecards are a collection of key metrics and other components presented in a tiled layout that you can tap for more detailed breakdowns and trended data views. You can tailor Scorecards according to the data most important to you. Analytics dashboards are supported on both iOS and Android operating systems.
 
 ## More about this guide
 
@@ -19,13 +19,13 @@ This guide is intended to help curators of Customer Journey Analytics data confi
 
 ## Glossary of terms
 
-The following table describes the terms for understanding the audience, functions, and operation of the Customer Journey Analytics dashboards.
+The following table describes the terms for understanding the audience, functions, and operation of the Analytics dashboards.
 
 | Term | Definition |
-| --- | --- |
-| Consumer | Executive persona viewing key metrics and insights from CJA on a mobile device |
+|--- |--- |
+| Consumer| Executive persona viewing key metrics and insights from CJA on a mobile device |
 | Curator | Data literate persona who finds and distributes insights from CJA and configures the Scorecards to be viewed by consumer |
-| Curation |The act of creating or editing a mobile Scorecard containing relevant metrics, dimensions and other components for the consumer |
+| Curation|The act of creating or editing a mobile Scorecard containing relevant metrics, dimensions and other components for the consumer |
 | Scorecard | A dashboards view containing one or more tiles |
 | Tile | A rendering for a metric within a Scorecard View |
 | Breakdown | A secondary view accessible by tapping a tile in the Scorecard. This view expands on the metric displayed on the tile and optionally reports on additional breakdown dimensions. |
@@ -53,31 +53,31 @@ You can access the [!UICONTROL Blank Mobile Scorecard] template in one of the fo
 
 **Create a new project**
 
-1. Open CJA and click the **[!UICONTROL Workspace]** tab.
-2. Click **[!UICONTROL Create New Project]** and select the **[!UICONTROL Blank Mobile Scorecard]** project template.
-3. Click **[!UICONTROL Create]**.
+1. Open Customer Journey Analytics and click **Projects**.
+2. Click the **[!UICONTROL Create New Project]** button and select the **[!UICONTROL Blank Mobile Scorecard]** project template.
+3. Click the **[!UICONTROL Create]** button.
 
-![Scorecard template](assets/new_template.png)
+![Scorecard template](assets/new_template_cja.png)
 
 **Add a project**
 
-From the **[!UICONTROL Projects]** screen, under the **[!UICONTROL Components]** tab, click **[!UICONTROL Add]** and select **[!UICONTROL Mobile Scorecard]**.
+From the **[!UICONTROL Projects]** screen, under the **[!UICONTROL Components]** tab, click the **[!UICONTROL Add]** button and select **[!UICONTROL Mobile Scorecard]**.
 
 ![Add projects](assets/add_project.png)
 
-**Use [!DNL Analytics] tools**
+**Or**
 
-In [!DNL Analytics], click the **[!UICONTROL Tools]** menu and select **[!UICONTROL Analytics dashboards (Mobile App)]**. On the subsequent screen, click the **[!UICONTROL Create new scorecard]** button.
+From the **[!UICONTROL Tools]** menu select **[!UICONTROL Analytics dashboards (Mobile App)]**. On the subsequent screen, click the **[!UICONTROL Create new scorecard]** button.
 
 ### Configure the Scorecard with data and save it
 
 To implement the Scorecard template:
 
-1. Under **[!UICONTROL Properties]** (in the right-hand rail), specify a **[!UICONTROL Project report suite]** from which you want to use data.
+1. Under **[!UICONTROL Properties]** (in the right-hand rail), specify a **[!UICONTROL Project data view]** from which you want to use data.
 
-    ![Report suite selection](assets/properties_save.png)
+    ![Date view selection](assets/properties_save.png)
 
-1. To add a new tile to your Scorecard, drag a metric from the left panel and drop it into the **[!UICONTROL Drag and Drop Metrics Here]** zone. You can also insert a metric between two tiles using a similar workflow.
+2. To add a new tile to your Scorecard, drag a metric from the left panel and drop it into the **[!UICONTROL Drag and Drop Metrics Here]** zone. You can also insert a metric between two tiles using a similar workflow.
 
     ![Add tiles](assets/build_list.png)
 
@@ -85,13 +85,13 @@ To implement the Scorecard template:
     *From each tile, you can access a detailed view that displays additional information about the metric, such as top items for a list of related dimensions.*
 
 
-1. To add a related dimension to a metric, drag a dimension from the left panel and drop it onto a tile. For example, you can add appropriate dimensions (like **[!DNL DMA Region]**, in this example) to the **[!UICONTROL Unique Visitors]** metric by dragging and dropping it onto the tile; dimensions you add will appear under the breakdown section of the tile-specific **[!UICONTROL Properties]**. You can add multiple dimensions to each tile.
+3. To add a related dimension to a metric, drag a dimension from the left panel and drop it onto a tile. For example, you can add appropriate dimensions (like **[!DNL DMA Region]**, in this example) to the **[!UICONTROL Unique Visitors]** metric by dragging and dropping it onto the tile; dimensions you add will appear under the breakdown section of the tile-specific **[!UICONTROL Properties]**. You can add multiple dimensions to each tile.
 
     ![Add dimensions](assets/layer_dimensions.png)
 
-    You can also add a dimension to all tiles by dropping it onto the Scorecard canvas.
+    When you click on a tile in the Scorecard Builder, the right-hand rail displays the properties and characteristics associated with that tile. In this rail, you can provide a new **[!UICONTROL Title]** for the tile and alternatively configure the tile by specifying components instead of dragging and dropping them from the left-hand rail.
 
-    When you click on a tile in the Scorecard Builder, the right-hand rail displays the properties and characteristics associated with that tile. In this rail, you can provide a new **[!UICONTROL Title]** for the tile and alternatively configure the tile by specifying components instead of dragging and dropping them from the left-hand rail. 
+    ![Properties tile](assets/properties_tile.png)
 
     Also, if you click on tiles, a dynamic pop up will display how the Breakdown view appears to the executive user in the app. If no dimension has been applied to the tile, the breakdown dimension will be **hour** or **days**, depending on the default date range.
 
@@ -99,23 +99,35 @@ To implement the Scorecard template:
 
     Each dimension added to the tile will show up in a drop-down list in the detailed view of the app. The executive user can then choose among the options listed in the drop-down list.
 
-1. To apply segments to individual tiles, drag a segment from the left panel and drop it directly on top of the tile. If you want to apply the segment to all the tiles in the Scorecard, drop the tile on top of the scorecard. Or, you can also apply segments by selecting segments in the filter menu beneath the date ranges. You [configure and apply filters for your Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) the same way you would in Adobe Analytics Workspace. 
+4. To apply filters to individual tiles, drag a filter from the left panel and drop it directly on top of the tile. If you want to apply the filter to all the tiles in the Scorecard, drop the tile on top of the scorecard. Or, you can also apply filters by selecting filters in the filter menu beneath the date ranges. You [configure and apply filters for your Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) the same way you would in Adobe Analytics Workspace.
 
-    ![Build segments for filter](assets/segment_ui.png)
+    ![Build a filter](assets/segment_ui.png)
 
-1. Similarly, to remove a component that is applied to the entire Scorecard, click anywhere on the Scorecard outside of the tiles and then remove it by clicking the **x** that appears when you hover over the component, as shown below for the **[!DNL Mobile Customers]** segment:
+5. Similarly, to remove a component that is applied to the entire Scorecard, click anywhere on the Scorecard outside of the tiles and then remove it by clicking the **x** that appears when you hover over the component, as shown below for the **First Time Visits** filter:
 
     ![Remove_components](assets/new_remove.png)
 
-1. Under Scorecard **[!UICONTROL Properties]**, you also can optionally specify the following:
+6. Add and remove date range combinations that can be selected in your scorecard by selecting the date range drop down.
 
-    * A **[!UICONTROL Default date range]**. The ranges you specify here will be the same ones applied to the executive user’s first access to the Scorecard in their app.
+    ![New score card](assets/new_score_card.png)
 
-    * A **[!UICONTROL Comparison date range]**
+   Each new scorecard starts with 6 date range combinations focusing on the data from today and yesterday. You can remove unnecessary date ranges by clicking on the x, or you can edit each date range combination by clicking the pencil.
 
-    * Any **[!UICONTROL Segments]** to apply to the whole Scorecard
+    ![New score card2](assets/new_score_card2.png)
 
-1. To name the Scorecard, click the namespace in the upper-left of the screen and type the new name.
+   To create or change a primary date, use the drop down to select from available date ranges or drag and drop a date component from the right rail into the drop zone.
+
+    ![New score card3](assets/new_score_card3.png)
+
+   To create a comparison date, you can select from convenient pre-sets for common time comparisons in the drop-down menu. You can also drag and drop a date component from the right rail.
+
+    ![New score card4](assets/new_score_card4.png)
+
+   If the date range you want hasn’t been created yet, you can create a new one by clicking the calendar icon.
+
+    ![New score card4](assets/new_score_card5.png)
+
+7. This will take you to the date range builder where you can create and save a new date range component. To name the Scorecard, click the namespace in the upper-left of the screen and type the new name.
 
     ![Naming_Scorecards](assets/new_name.png)
 
@@ -133,7 +145,7 @@ To share the Scorecard with an executive user:
     * Specifying the recipients for the Scorecard
 
 3. Click **[!UICONTROL Share]**.
- 
+
 ![Share_Scorecards](assets/new_share.png)
 
 After you have shared a Scorecard, your recipients can access it on their Analytics dashboards. If you make subsequent changes to the Scorecard in the Scorecard Builder, they will be automatically updated in the shared Scorecard. Executive users will then see the changes after refreshing the Scorecard on their app.
@@ -148,12 +160,12 @@ In some cases, executive users may need some additional assistance to access and
 
 To assist executive users access your Scorecards on the app, ensure that:
 
-* The minimum mobile OS requirements on their devices are iOS version 10 or higher, or Android version 4.4 (KitKat) or higher 
+* The minimum mobile OS requirements on their devices are iOS version 10 or higher, or Android version 4.4 (KitKat) or higher
 * They have a valid login into Adobe Analytics
 * You have correctly created mobile Scorecards for them and have shared these Scorecards with them
-* They have access to Analysis Workspace and the report suite that the Scorecard is based on
+* They have access to Analysis Workspace and the data view that the Scorecard is based on
 * They have access to the Components that the Scorecard includes. Note that you can select an option when sharing your Scorecards to **[!UICONTROL Share embedded components]**.
- 
+
 ### Help executive users with the app
 
 To help executive users:
@@ -176,10 +188,10 @@ To help executive users:
 
     ![App welcome screen](assets/welcome.png)
 
-2. Help them access your Scorecard. After executive users sign into the app, the **[!UICONTROL Choose a company]** screen appears. This screen lists the login companies to which the executive user belongs. To help them get to the Scorecard: 
+2. Help them access your Scorecard. After executive users sign into the app, the **[!UICONTROL Choose a company]** screen appears. This screen lists the login companies to which the executive user belongs. To help them get to the Scorecard:
 
     * Tap the name of the login company or Experience Cloud Org that applies to the Scorecard you shared. The Scorecard list then shows all Scorecards that have been shared with the executive under that login company.
-    * Help them sort this list by **[!UICONTROL Most recently modified]**, if applicable. 
+    * Help them sort this list by **[!UICONTROL Most recently modified]**, if applicable.
     * Tap the name of the Scorecard to view it.
 
     ![Choose a company](assets/accesscard.png)
@@ -195,7 +207,7 @@ To help executive users:
 
     * Verify that the executive user can log into the right Analytics instance and that the Scorecard has been shared.
 
-3. Explain to the executive user how tiles appear in the Scorecards you share (the first Scorecard below is set in dark mode; see **[!UICONTROL Preferences]** below if you think your executive user prefers this viewing opt-on): 
+3. Explain to the executive user how tiles appear in the Scorecards you share (the first Scorecard below is set in dark mode; see **[!UICONTROL Preferences]** below if you think your executive user prefers this viewing option):
 
     ![Explain tiles](assets/newexplain.png)
 
@@ -203,7 +215,7 @@ To help executive users:
 
     Additional information on tiles:
 
-    * The granularity of the sparklines is dependent on the length of the date range: 
+    * The granularity of the sparklines is dependent on the length of the date range:
         * One day shows an hourly trend
         * More than one day and less than a year shows a daily trend
         * One year or more shows a weekly trend
@@ -214,23 +226,19 @@ To help executive users:
 4. Tap a tile to show how a detailed breakdown for the tile works.
 
     ![Breakdown view](assets/sparkline.png)
-    
+
     * Tap any point on a sparkline to see data associated with that point on the line.
 
     * A table is included to display data of dimensions added to the tile. Tap the down arrow to select dimensions. If no dimension was added to the tile, the table displays chart data.
 
-5. To change date ranges for your Scorecard:
- 
+5. To change date ranges for your Scorecard, tap the Date header and select the primary and comparison date range combination you want to view.
+
     ![Change dates](assets/changedate.png)
- 
-    * You can also change the date ranges within the Breakdown view shown above in the same way.
-    
-    * Depending on the interval you tap (**Day**, **Week**, **Month**, or **Year**), you will see two options for date ranges—either the present span of time or the one immediately preceding it. Tap one of these two options to select the first range. Under the **[!UICONTROL COMPARE TO]** list, tap one of the presented options to compare the data of this time period with the first date range you selected. Tap **[!UICONTROL Done]** in the upper right of the screen. The **[!UICONTROL Date Ranges]** field and the Scorecard tiles are updated with the new comparison data from the new ranges you selected.
 
 6. To leave feedback on this app:
 
-    1. Tap the settings icon in the upper right of the app screen. 
-    2. On the **[!UICONTROL Settings]** screen, tap the **[!UICONTROL Feedback]** option. 
+    1. Tap the settings icon in the upper right of the app screen.
+    2. On the **[!UICONTROL Settings]** screen, tap the **[!UICONTROL Feedback]** option.
     3. Tap to view the options for leaving feedback.
 
         ![Settings screen](assets/settings.png)
