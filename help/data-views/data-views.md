@@ -5,6 +5,8 @@ description:
 
 # What is a data view?
 
+
+
 A data view sits on top of a Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). A connection combines one or more datasets from Adobe Experience Platform and connects it to CJA. The data view specifies how you want to interpret elements of the data in the connection, such as metrics, dimensions, sessions, etc.. Data views are defined in preparation for reporting on the data in Workspace.
 
 If you have previously used traditional Adobe Analytics, a data view is similar to a virtual report suite in that it is a "filtered" view of the data.
@@ -45,13 +47,15 @@ The latest update to data views gives you a lot more flexibility in what you can
 ## Prerequisite
 
 * Before you can create data views, you need to [set up one or more connections to Experience Platform datasets](/help/connections/create-connection.md).
-* To create or manage a data view, you need the following permissions in Adobe Admin Console: 
+* To create or manage a data view, you need a [set of permissions in Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions). 
 
 ## View information about a component
 
 Click the (i) info icon in Workspace to view what schema field a component is based on, and its settings, such as a description.
 
 ## Data View Settings you can override in Workspace
+
+Some data view settings can be overridden in Analysis Workspace at the project level, others cannot.
 
 * Lookback window
 * Metric Attribution
@@ -64,10 +68,10 @@ Click the (i) info icon in Workspace to view what schema field a component is ba
 * Data view name
 * Dimension allocation
 
-## No value
-
-You can decide what to call this None/No value/Unspecified dimension and whether to make it visible to users in reporting. However, admins and users (for projects they own) can change the visibility setting in Workspace.
-
 ## Delete data views
 
 If you delete a data view in [!UICONTROL Customer Journey Analytics], an error message will indicate that any Workspace projects that depend on this deleted data view will cease working. 
+
+<!-->## No value
+
+You can decide what to call this None/No value/Unspecified dimension and whether to make it visible to users in reporting. However, admins and users (for projects they own) can change the visibility setting in Workspace.<-->
