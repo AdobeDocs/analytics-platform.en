@@ -1,6 +1,6 @@
 ---
 title: What is a data view in Customer Journey Analytics?
-description: 
+description: A data view specifies how you want to interpret elements of the data in the CJA connection, such as metrics, dimensions, sessions, etc..
 ---
 
 # What is a data view?
@@ -45,13 +45,15 @@ The latest update to data views gives you a lot more flexibility in what you can
 ## Prerequisite
 
 * Before you can create data views, you need to [set up one or more connections to Experience Platform datasets](/help/connections/create-connection.md).
-* To create or manage a data view, you need the following permissions in Adobe Admin Console: 
+* To create or manage a data view, you need a [set of permissions in Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions). 
 
 ## View information about a component
 
 Click the (i) info icon in Workspace to view what schema field a component is based on, and its settings, such as a description.
 
 ## Data View Settings you can override in Workspace
+
+Some data view settings can be overridden in Analysis Workspace at the project level, others cannot.
 
 * Lookback window
 * Metric Attribution
@@ -63,10 +65,6 @@ Click the (i) info icon in Workspace to view what schema field a component is ba
 * Metric formatting
 * Data view name
 * Dimension allocation
-
-## No value
-
-You can decide what to call this None/No value/Unspecified dimension and whether to make it visible to users in reporting. However, admins and users (for projects they own) can change the visibility setting in Workspace.
 
 ## Delete data views
 
