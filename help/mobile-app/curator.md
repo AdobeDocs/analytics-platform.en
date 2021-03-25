@@ -1,6 +1,6 @@
 ---
 description: Instructions for setting up the dashboards scorecards.
-title: Customer Journey Analytics curator guide
+title: Customer Journey Analytics dashboards curator guide
 ---
 
 # Curator’s guide for Analytics dashboards
