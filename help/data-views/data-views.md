@@ -69,5 +69,3 @@ Some data view settings can be overridden in Analysis Workspace at the project l
 ## Delete data views
 
 If you delete a data view in [!UICONTROL Customer Journey Analytics], an error message will indicate that any Workspace projects that depend on this deleted data view will cease working. 
-
-<!-->You can decide what to call this None/No value/Unspecified dimension and whether to make it visible to users in reporting. However, admins and users (for projects they own) can change the visibility setting in Workspace.<-->
