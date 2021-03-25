@@ -114,9 +114,9 @@ To use dashboards:
 
     * Depending on the interval you tap (**Day**, **Week**, **Month**, or **Year**), you will see two options for date ranges—either the present span of time or the one immediately preceding it. Tap one of these two options to select the first range. Under the **[!UICONTROL COMPARE TO]** list, tap one of the presented options to compare the data of this time period with the first date range you selected. Tap **[!UICONTROL Done]** in the upper right of the screen. The **[!UICONTROL Date Ranges]** field and the Scorecard tiles are updated with the new comparison data from the new ranges you selected.
 
-7. To apply a segment filter to your Scorecard, tap the filter dropdown and select a segment that has been configured by your curator. [Filters](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) in the app function the same way they do in Analytics Workspace.
+7. To apply a filter to your Scorecard, tap the filter dropdown and select a filter that has been configured by your curator. [Filters](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) in the app function the same way they do in Analytics Workspace.
 
-    ![Segment filter](assets/segment_filter.png)
+    ![Filter](assets/segment_filter.png)
 
 8. Get Scorecard updates. If a Scorecard does not include all of the metric or breakdowns that you may be interested in, please contact your Analytics team to have the Scorecard updated. Once updated, you can pull down the card on the screen to refresh it and load the recently-added data.
 

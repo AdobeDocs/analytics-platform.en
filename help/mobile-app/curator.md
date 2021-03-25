@@ -6,7 +6,6 @@ title: Customer Journey Analytics dashboards curator guide
 # Curator’s guide for Analytics dashboards
 
 The following information instructs curators of Adobe Analytics data on how to configure and present dashboards for executive users. To see a video demonstrating this information, see the Analytics dashboards Scorecard Builder video:
-The following information instructs curators of Adobe Analytics data on how to configure and present dashboards for executive users. To see a video demonstrating this information, see the Adobe Analytics dashboards Scorecard Builder video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/34544)
 
@@ -54,11 +53,11 @@ You can access the [!UICONTROL Blank Mobile Scorecard] template in one of the fo
 
 **Create a new project**
 
-1. Open Adobe Analytics and click the **[!UICONTROL Workspace]** tab.
+1. Open Customer Journey Analytics and click **Projects**.
 2. Click the **[!UICONTROL Create New Project]** button and select the **[!UICONTROL Blank Mobile Scorecard]** project template.
 3. Click the **[!UICONTROL Create]** button.
 
-![Scorecard template](assets/new_template.png)
+![Scorecard template](assets/new_template_cja.png)
 
 **Add a project**
 
@@ -74,9 +73,9 @@ From the **[!UICONTROL Tools]** menu select **[!UICONTROL Analytics dashboards (
 
 To implement the Scorecard template:
 
-1. Under **[!UICONTROL Properties]** (in the right-hand rail), specify a **[!UICONTROL Project report suite]** from which you want to use data.
+1. Under **[!UICONTROL Properties]** (in the right-hand rail), specify a **[!UICONTROL Project data view]** from which you want to use data.
 
-    ![Report suite selection](assets/properties_save.png)
+    ![Date view selection](assets/properties_save.png)
 
 2. To add a new tile to your Scorecard, drag a metric from the left panel and drop it into the **[!UICONTROL Drag and Drop Metrics Here]** zone. You can also insert a metric between two tiles using a similar workflow.
 
@@ -112,7 +111,7 @@ To implement the Scorecard template:
 
     ![New score card](assets/new_score_card.png)
 
-   Each new scorecard starts with 8 date range combinations focusing on the data from today and yesterday. You can remove unnecessary date ranges by clicking on the x, or you can edit each date range combination by clicking the pencil.
+   Each new scorecard starts with 6 date range combinations focusing on the data from today and yesterday. You can remove unnecessary date ranges by clicking on the x, or you can edit each date range combination by clicking the pencil.
 
     ![New score card2](assets/new_score_card2.png)
 
@@ -164,7 +163,7 @@ To assist executive users access your Scorecards on the app, ensure that:
 * The minimum mobile OS requirements on their devices are iOS version 10 or higher, or Android version 4.4 (KitKat) or higher
 * They have a valid login into Adobe Analytics
 * You have correctly created mobile Scorecards for them and have shared these Scorecards with them
-* They have access to Analysis Workspace and the report suite that the Scorecard is based on
+* They have access to Analysis Workspace and the data view that the Scorecard is based on
 * They have access to the Components that the Scorecard includes. Note that you can select an option when sharing your Scorecards to **[!UICONTROL Share embedded components]**.
 
 ### Help executive users with the app
