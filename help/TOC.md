@@ -38,6 +38,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [How replays work](connections/cca/replay.md)
     + [Cross-Channel Analytics FAQ](connections/cca/faq.md)
 + Data Views {#cja-dataviews}
+  + [Data views overview](data-views/data-views.md)
   + [Create a data view](data-views/create-dataview.md)
   + [Configure data views and attribution](data-views/configure-dataviews.md)
 + Workspace projects {#cja-workspace}
