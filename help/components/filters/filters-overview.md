@@ -73,3 +73,11 @@ Event containers include values-based, single-page breakdowns:
 * List Props
 * List dimensions
 * Merchandising dimensions (in context of events) 
+
+## Out-of-the-box filter template
+
+Traditional Analytics comes with a lot of out-of-the-box template segments (filters) and calculated metrics. Many of them do not apply in CJA, or will have to be renamed or recreated. Others will depend on a solution for context-aware variables in CJA.
+
+| Filter Name | Description |
+| --- | --- |
+| All Data |This is a required filter analogous to the "All Visits" segment in traditional Adobe Analtyics. It gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
