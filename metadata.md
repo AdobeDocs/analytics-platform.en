@@ -8,6 +8,7 @@ getting-started-url: https://helpx.adobe.com/experience-cloud-core-services/get-
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/analytics/how-to/adobe-launch-publishing-process.html
 git-repo: https://github.com/AdobeDocs/analytics-platform.en
+description: This file includes repo-level metadata that passes through to user guide TOC.md files in the repo.
 ---
 
 # Metadata for internal use

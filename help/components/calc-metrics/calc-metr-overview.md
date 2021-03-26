@@ -40,3 +40,12 @@ Here is a comparison of Calculated Metrics and Advanced Calculated Metrics capab
 |Calculated Metric Manager|<ul><li>Share metrics with others.</li><li>Approve and curate metrics.</li><li>Organize (tag) your metrics so people can find them.</li><li>Delete metrics.</li><li>Rename metrics.</li></ul>|
 |API for Calculated Metrics|Part of the Adobe Analytics 2.0 API set.|
 
+## Calculated Metrics templates in CJA
+
+| Calculated Metric Name | Calculated Metric description |
+| --- | --- |
+| Sessions Per Person | Average number of sessions per person |
+| Session Start Rate | The percent of time that any dimension item occurred on the first event of a session. |
+| Session End Rate | The percent of time that any dimension item occurred on the last event of a session. |
+| Time Spent per Person | The average amount of time a person spent on any given dimension item. |
+| Time Spent Per Session | The average amount of time a person spent per Session on any given dimension item. |
