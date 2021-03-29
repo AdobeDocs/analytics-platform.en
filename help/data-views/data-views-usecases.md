@@ -22,10 +22,14 @@ For example, when creating a data view, you could create an [!UICONTROL Orders] 
 1. You can further specify an attribution model for this metric, such as [!UICONTROL Last Touch], with a [!UICONTROL Lookback window] of [!UICONTROL Session].
    You can also create another [!UICONTROL Orders] metric from the same field and specify a different attribution model for it, such as [!UICONTROL First Touch], and a different [!UICONTROL Lookback window], such as [!UICONTROL 30 days].
 
-## Create multiple dimensions from one schema field
-
 ## Use integers as dimensions
 
-34:00
+Previously, integers would automatically be treated as metrics in CJA. Now, numerics (including custom events from Adobe Analytics) can be treated as dimensions. Here is an example:
 
-Including bucketing
+1. Drag the [!UICONTROL call_length_min] integer into the [!UICONTROL Dimensions] section under [!UICONTROL Included Components]:
+   ![](assets/integers.png)
+
+1. You can now add [!UICONTROL Value Bucketing] to present this dimension in a bucketed fashion in reporting. Otherwise, each instance of this dimension would appear as a line item in Workspace.
+   ![](assets/bucketing.png)
+
+<!-->Create multiple dimensions from one schema field<-->
