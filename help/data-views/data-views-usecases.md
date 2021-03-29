@@ -31,5 +31,3 @@ Previously, integers would automatically be treated as metrics in CJA. Now, nume
 
 1. You can now add [!UICONTROL Value Bucketing] to present this dimension in a bucketed fashion in reporting. Otherwise, each instance of this dimension would appear as a line item in Workspace.
    ![](assets/bucketing.png)
-
-<!-->Create multiple dimensions from one schema field<-->
