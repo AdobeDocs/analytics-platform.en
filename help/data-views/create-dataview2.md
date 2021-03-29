@@ -12,7 +12,7 @@ Creating a data view involves either creating metrics and dimensions from schema
 1. In Customer Journey Analytics, go to the  **Data Views**  tab.
 2. Click  **Add**  to create a new data view and configure its settings.
 
-![](assets/)
+![](assets/new-data-view.png)
 
 | Setting | Description/Use case |
 | --- | --- |
