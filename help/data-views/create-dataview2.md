@@ -5,32 +5,38 @@ description: Describes all the settings needed to create new data views.
 
 # Create a new data view
 
-Creating a data view involves either creating metrics and dimensions from schema elements or utilizing standard components. Creating metrics or dimensions gives you an enormous amount of flexibility. Previously, the assumption was that if you had datasets in Adobe Experience Platform, string fields were dimensions and numeric fields were metrics. In order to change any of these fields, you had to edit your schema in Platform. The data views UI now allows a more freeform definition of metrics and dimensions.
+>[!IMPORTANT]
+>
+>This functionality is currently in limited testing.
 
-## Configure Data Views settings and containers
+Creating a data view involves either creating metrics and dimensions from schema elements or utilizing standard components. Creating metrics or dimensions gives you an enormous amount of flexibility. Previously, the assumption was that if you had datasets in Adobe Experience Platform, string fields were used as dimensions and numeric fields were used as metrics. In order to change any of these fields, you had to edit your schema in Platform. The data views UI now allows a [more freeform definition of metrics and dimensions](/help/data-views/data-views.md).
 
-1. In Customer Journey Analytics, go to the  **Data Views**  tab.
-2. Click  **Add**  to create a new data view and configure its settings.
+## 1. Configure Data Views settings and containers
+
+1. In Customer Journey Analytics, go to the **[!UICONTROL Data Views]** tab.
+2. Click **[!UICONTROL Add]** to create a new data view and configure its settings.
 
 ![](assets/new-data-view.png)
 
 | Setting | Description/Use case |
 | --- | --- |
-| Connection | This field links the data view to the connection that you established earlier, which contains one or more Adobe Experience Platform dataset/s.|
-| Name | Giving the data view a name is mandatory. |
-| Description | A detailed description is not mandatory but is recommended. |
-| Time zone | Choose which time zone you want your data to be presented in. |
-| Tags | Tags let you organize your data views into categories. |
-| Containers | You can rename your containers here and this is how they will appear in any Workspace project that is based on this data view. Containers are used in filters and fallout/flow to define how broad or narrow the scope or context is. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
-|Person container name is… | Person (default). The Person container includes every visit and page view for visitors within a specified time frame. You can rename this to 'User' or any other term you prefer. |
-| Session container name is… | Session (default). The Session container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this to 'Visit' or any other term you prefer. |
-| Event container name is… | Event (default). The Event container defines which page events you would like to include or exclude from a filter. |
+| [!UICONTROL Connection] | This field links the data view to the connection that you established earlier, which contains one or more Adobe Experience Platform dataset/s.|
+| [!UICONTROL Name] | Giving the data view a name is mandatory. |
+| [!UICONTROL Description] | A detailed description is not mandatory but is recommended. |
+| [!UICONTROL Time zone] | Choose which time zone you want your data to be presented in. |
+| [!UICONTROL Tags] | Tags let you organize your data views into categories. |
+| [!UICONTROL Containers] | You can rename your containers here and this is how they will appear in any Workspace project that is based on this data view. Containers are used in filters and fallout/flow to define how broad or narrow the scope or context is. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
+| [!UICONTROL Person container name is…] | [!UICONTROL Person] (default). The [!UICONTROL Person] container includes every visit and page view for visitors within a specified time frame. You can rename this to 'User' or any other term you prefer. |
+| [!UICONTROL Session container name is…] | [!UICONTROL Session] (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this to 'Visit' or any other term you prefer. |
+| [!UICONTROL Event container name is…] | [!UICONTROL Event] (default). The [!UICONTROL Event] container defines which page events you would like to include or exclude from a filter. |
 
-Next, you are going to create metrics and dimensions from schema elements.
+Next, you can create metrics and dimensions from schema elements. You can also use Standard components.
 
-## Create metrics and dimensions from schema elements
+## 2. Create metrics and dimensions from schema elements
 
-1. In [!UICONTROL Customer Journey Aalytics] > [!UICONTROL Data Views], click the [!UICONTROL Components] tab.
+
+
+1. In [!UICONTROL Customer Journey Analytics] > [!UICONTROL Data Views], click the [!UICONTROL Components] tab.
 
 ![](assets/components-tab.png)
 
@@ -38,9 +44,13 @@ You can see the [!UICONTROL Connection] at the top left, which contains the data
 
 1. Now drag a schema field, such as [!UICONTROL pageTitle], from the left rail into the Metrics or Dimensions section. 
 
-   You can drag the same schema field into the dimensions or metrics well multiple times and configure the same dimension or metric in different ways. For example, from the **[!UICONTROL pageTitle]** field, you can create a dimension called "Product Pages", and another one "Error pages", etc. From the **[!UICONTROL pageTitle]**; field, you can also create metrics from a string value. For example,you could create one or more **[!UICONTROL Orders]** metrics with different attribution settings and different include/exclude values.
+   You can drag the same schema field into the dimensions or metrics sections multiple times and configure the same dimension or metric in different ways. For example, from the **[!UICONTROL pageTitle]** field, you can create a dimension called "Product Pages", and another one "Error pages", etc. From the **[!UICONTROL pageTitle]**; field, you can also create metrics from a string value. For example,you could create one or more **[!UICONTROL Orders]** metrics with different attribution settings and different include/exclude values.
 
    ![](assets/components-tab-3.png)
+
+   >[!NOTE]
+   >
+   >You can drag in whole schema field folders from the left rail and they will automatically be sorted into traditional sections. String fields will end up in the [!UICONTROL Dimensions] section and numerics in the [!UICONTROL Metrics] section. Or, you can click **[!UICONTROL Add all]** and all schema fields will be added.
 
 1. Once you select the component, you see a number of settings appear on the right. Configure the component using the settings described below.
 
@@ -59,8 +69,8 @@ You can see the [!UICONTROL Connection] at the top left, which contains the data
 | [!UICONTROL Dataset] | Required. A non-editable field showing which type of field the component came from (e.g. String, Integer, etc.). This field can contain multiple datasets, such as when you are combining multiple report suites. |
 | [!UICONTROL Schema type] | Refers to whether the component is a string, integer, etc. |
 | [!UICONTROL Component ID] | Required. The [CJA API](https://adobe.io/cja-apis/docs) uses this field to reference the component. You can click the edit icon and modify this component ID. However, changing this component ID breaks all existing Workspace projects that contain this component.<br>If you ever create another data view that uses a different field for a pageTitle dimension, you can rename it and make the dimension cross-data view compatible. |
-| Path | Required. A non-editable field showing the schema path that the component came from. |
-| Hide component in reporting | Default = off. Lets you curate the component out of the Data View when used in reporting. This does not impact permissions, just component curation. In other words, you can hide the component from non-Admins in reporting. Admins can still access it by clicking [!UICONTROL Show All Components] in an Analysis Workspace project. |
+| [!UICONTROL Path] | Required. A non-editable field showing the schema path that the component came from. |
+| [!UICONTROL Hide component in reporting] | Default = off. Lets you curate the component out of the Data View when used in reporting. This does not impact permissions, just component curation. In other words, you can hide the component from non-Admins in reporting. Admins can still access it by clicking [!UICONTROL Show All Components] in an Analysis Workspace project. |
 
 ### Configure Format settings
 
@@ -114,18 +124,20 @@ For example, you could create a dimension out of the pageTitle field, but call i
 
 [!UICONTROL No Value Options] settings are analogous to [!UICONTROL Unspecified] or [!UICONTROL None] values in reporting. In the data views UI, on a component-by-component basis, you can decide how you want these values to be treated in reporting. You can also rename [!UICONTROL No value] to something that better suits your environment, such as [!UICONTROL Null], [!UICONTROL Not set], or others.
 
-Important: When you change this field to a custom value, the custom value will be treated as a legitimate string value. Therefore, if you enter the value &quot;Red&quot; into this field, any instances of the string &quot;Red&quot; appearing in the data itself will also roll under the same line item that you have specified.
+>[!NOTE]
+>
+>When you change this field to a custom value, the custom value will be treated as a legitimate string value. Therefore, if you enter the value "Red" into this field, any instances of the string "Red" appearing in the data itself will also roll under the same line item that you have specified.
 
-Also note that whatever you specify in this field can be used for special UI treatment of the &quot;No Value&quot; line item in reporting as stated in the &quot;No Value Options&quot; setting. (Not sure what this means.)
+Also note that whatever you specify in this field can be used for special UI treatment of the [!UICONTROL No Value] line item in reporting as stated in the [!UICONTROL No Value Options] setting.
 
 ![](assets/no-value-options.png)
 
 | Setting | Description/Use case |
 | --- | --- |
-| If shown, call [!UICONTROL No value]… | This is where you can rename **[!UICONTROL No value]** to something else. |
-| Don't show **[!UICONTROL No value]** by default | Does not show this value in reporting. |
-| Show **[!UICONTROL No value]** by default | Does show this value in reporting. |
-| Treat **[!UICONTROL No value]** as a value | For example, if you had Mobile device types as the dimension, you could rename the **[!UICONTROL No value]** item to "Desktop". |
+| [!UICONTROL If shown, call No value]… | This is where you can rename **[!UICONTROL No value]** to something else. |
+| [!UICONTROL Don't show No value by default] | Does not show this value in reporting. |
+| [!UICONTROL Show No value by default] | Does show this value in reporting. |
+| [!UICONTROL Treat No value as a value] | For example, if you had Mobile device types as the dimension, you could rename the **[!UICONTROL No value]** item to "Desktop". |
 
 ### Configure Persistence settings
 
@@ -135,9 +147,9 @@ These settings are similar to eVar settings in traditional Adobe Analytics.
 
 | Setting | Description/Use case |
 | --- | --- |
-| Set persistence | Toggle key |
-| Allocation | Lets you specify the allocation model used on a dimension for persistence. Options are: Most recent, Original, Instance, All. If you want a value to persist (similar to eVars in traditional Analytics), this is where you'd set it. The only key difference is that the maximum persistence you can set is 90 days. Also, [!UICONTROL Never expire] is not an option. |
-| Expiration | Lets you specify the persistence window for a dimension. Options are: Session (default), Person, Time, Metric.You might need to be able to expire the dimension on a purchase (such as internal search terms or other merchandising use cases). &quot;Metric&quot; lets you specify any of the defined metrics as the expiration for this dimension (e.g., a &quot;Purchase&quot; metric). |
+| [!UICONTROL Set persistence] | Toggle key |
+| [!UICONTROL Allocation] | Lets you specify the allocation model used on a dimension for persistence. Options are: Most recent, Original, Instance, All. If you want a value to persist (similar to eVars in traditional Analytics), this is where you'd set it. The only key difference is that the maximum persistence you can set is 90 days. Also, [!UICONTROL Never expire] is not an option. |
+| [!UICONTROL Expiration] | Lets you specify the persistence window for a dimension. Options are: [!UICONTROL Session] (default), [!UICONTROL Person], [!UICONTROL Time], [!UICONTROL Metric]. You might need to be able to expire the dimension on a purchase (such as internal search terms or other merchandising use cases). [!UICONTROL Metric] lets you specify any of the defined metrics as the expiration for this dimension (e.g., a [!UICONTROL Purchase] metric). |
 
 ### Configure Value Bucketing settings
 
@@ -145,35 +157,35 @@ These settings are similar to eVar settings in traditional Adobe Analytics.
 
 | Setting | Description/Use case |
 | --- | --- |
-| Bucket value | Allows you to create a bucketed version of a numeric dimension. This lets you report on buckets of revenue or other numeric values as a dimension in reporting. You can create up to 5 buckets. |
-| Up to | Lets you specify the boundaries of the first numeric dimension bucket. This applies to numeric dimensions only. |
-| Between and up to | Lets you specify the boundaries of subsequent numeric dimension buckets. |
-| Add bucket | Lets you add another bucket to numeric dimension bucketing. |
+| [!UICONTROL Bucket value] | Allows you to create a bucketed version of a numeric dimension. This lets you report on buckets of revenue or other numeric values as a dimension in reporting. You can create up to 5 buckets. |
+| [!UICONTROL Up to] | Lets you specify the boundaries of the first numeric dimension bucket. This applies to numeric dimensions only. |
+| [!UICONTROL Between and up to] | Lets you specify the boundaries of subsequent numeric dimension buckets. |
+| [!UICONTROL Add bucket] | Lets you add another bucket to numeric dimension bucketing. |
 
-## Use Standard components
+### Use [!UICONTROL Standard components]
 
 Besides creating metrics and dimensions from schema elements, you can also use standard components in your data views.
 
-Standard components are components that are not generated from dataset schema fields but are instead system generated. Some system components are required in any Data View to facilitate reporting capabilities in Analysis Workspace while other system components are optional.
+[!UICONTROL Standard components] are components that are not generated from dataset schema fields but are instead system generated. Some system components are required in any Data View to facilitate reporting capabilities in Analysis Workspace while other system components are optional.
 
-![](RackMultipart20210326-4-374d6q_html_1100d8d54f8c09ac.png)
+![](assets/standard-components.png)
 
 Required standard components
 
 | Component Name | Dimension or Metric | Notes |
 | --- | --- | --- |
-| People | Metric | Formerly known as [!UICONTROL Unique Visitors] in traditional Analytics. This metric is based on the person ID specified in a Connection. |
-| Sessions | Metric | Formerly known as [!UICONTROL Visits] in traditional Analytics. This metric is based on the sessionization settings specified below. |
-| Events | Metric | Formerly known as [!UICONTROL Occurrences] in traditional Analytics. This metric represents the number of rows from all event datasets in a Connection. |
-| Day | Dimension | |
-| Week | Dimension | |
-| Month | Dimension | |
-| Quarter | Dimension | |
-| Year | Dimension | |
-| Hour | Dimension | |
-| Minute | Dimension | |
+| [!UICONTROL People] | Metric | Formerly known as [!UICONTROL Unique Visitors] in traditional Analytics. This metric is based on the person ID specified in a Connection. |
+| [!UICONTROL Sessions] | Metric | Formerly known as [!UICONTROL Visits] in traditional Analytics. This metric is based on the sessionization settings specified below. |
+| [!UICONTROL Events] | Metric | Formerly known as [!UICONTROL Occurrences] in traditional Analytics. This metric represents the number of rows from all event datasets in a Connection. |
+| [!UICONTROL Day] | Dimension | |
+| [!UICONTROL Week] | Dimension | |
+| [!UICONTROL Month] | Dimension | |
+| [!UICONTROL Quarter] | Dimension | |
+| [!UICONTROL Year] | Dimension | |
+| [!UICONTROL Hour] | Dimension | |
+| [!UICONTROL Minute] | Dimension | |
 
-## Optional Standard components
+### Optional Standard components
 
 Some system components are required in any Data View to facilitate reporting capabilities in Analysis Workspace while the ones below are optional.
 
@@ -183,7 +195,24 @@ Some system components are required in any Data View to facilitate reporting cap
 | [!UICONTROL Session Ends] | Metric | This metric counts the number of events that were the last event of a session. Similar to [!UICONTROL Session Starts], it can also be used in a filter definition to filter things down to the last event of every session. Note that this is different behavior from [!UICONTROL Exits] in that it always counts the last event of a session - not the last value present for a dimension in a session. |
 | [!UICONTROL Time Spent (seconds)] | Metric | The [!UICONTROL Time Spent] metric works similarly as in traditional Adobe Analytics - adding up the time between two different values for a dimension. However, using the Session Starts and Session Ends metric, customers can construct the [!UICONTROL Time Spent per Person] and [!UICONTROL Time Spent per Session] calculated metrics themselves (see OOTB filters and calc metrics below).  |
 | [!UICONTROL Time Spent per Event] | Dimension | Functionally, this is actually just a bucketing of the above metric. We supply default buckets, but allow you to change the buckets to whatever you like. |
-| Time Spent per Session | Dimension | |
-| Time Spent per Person | Dimension | |
-| Batch ID | Dimension | |
-| Dataset ID | Dimension | |
+| [!UICONTROL Time Spent per Session] | Dimension | |
+| [!UICONTROL Time Spent per Person] | Dimension | |
+| [!UICONTROL Batch ID] | Dimension | |
+| [!UICONTROL Dataset ID] | Dimension | |
+
+### Filter schema fields and dimensions/metrics
+
+You can filter schema fields in the left rail by the following data types:
+
+![](assets/filter-fields.png)
+
+You can also filter by datasets and by whether a schema field contains data or whether it is an identity:
+
+![](assets/filter-other.png)
+
+## 3. Add a global filter to you data view
+
+You can add filters (formerly called segments) that apply to your entire data view, similar to the filtered view of data in Virtual Report Suites (traditional Adobe Analytics).
+
+1. Click the [!UICONTROL Settings] tab in [!UICONTROL Data views].
+1. Drag a filter from the list in the left rail to the [!UICONTROL Add filters] field.
