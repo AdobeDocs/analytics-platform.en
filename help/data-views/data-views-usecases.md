@@ -5,6 +5,10 @@ description: Multiple use cases that show the flexibility and power of data view
 
 # Data views use cases
 
+>[!IMPORTANT]
+>
+>This functionality is currently in limited testing.
+
 These use cases that show the flexibility and power of data views in Customer Journey Analytics.
 
 ## Create an Orders metric from a pageTitle (string) schema field

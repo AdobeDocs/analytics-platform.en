@@ -5,6 +5,10 @@ description: A data view specifies how you want to interpret elements of the dat
 
 # What is a data view?
 
+>[!IMPORTANT]
+>
+>This functionality is currently in limited testing.
+
 A data view sits on top of a Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). A connection combines one or more datasets from Adobe Experience Platform and connects it to CJA. The data view specifies how you want to interpret elements of the data in the connection, such as metrics, dimensions, sessions, etc.. Data views are defined in preparation for reporting on the data in Workspace.
 
 If you have previously used traditional Adobe Analytics, a data view is similar to a virtual report suite in that it is a "filtered" view of the data.
