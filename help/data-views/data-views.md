@@ -7,7 +7,7 @@ description: A data view specifies how you want to interpret elements of the dat
 
 >[!IMPORTANT]
 >
->This functionality is currently in limited testing.
+>This functionality will be generally available on April 22, 2021.
 
 A data view sits on top of a Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). A connection combines one or more datasets from Adobe Experience Platform and connects it to CJA. The data view specifies how you want to interpret elements of the data in the connection, such as metrics, dimensions, sessions, etc.. Data views are defined in preparation for reporting on the data in Workspace.
 
@@ -30,15 +30,15 @@ The latest update to data views gives you a lot more flexibility in what you can
 
 * **You can edit the ID of a component** - this is used for cross-data-view compatibility. The component ID is what the reporting API uses to identify a specific metric or dimension. Because you can arbitrarily create many metrics or dimensions from one XDM field, we will give you the option to define your own component ID. As a result, a metric you use in one Workspace project can be compatible across data views (and the API), even if they are based on totally different fields from different connections or data views or from a different schema in XDM.
 
-* **You can specify the friendly component name that will appear in Analysis Workspace**. By default, this name is inherited from the schema display name, but you can now overwrite it for this specific Data View. (This is also how component curation works in Virtual Report Suites in traditional Adobe Analytics).
+* **You can specify the friendly component name that will appear in Analysis Workspace**. By default, this name is inherited from the schema display name, but you can now overwrite it for this specific data view. (This is also how component curation works in Virtual Report Suites in traditional Adobe Analytics).
 
 * **You can view more schema-related information about components** , such as: which dataset type (event, profile, lookup) it came from; which schema type (string, integer, etc.) it came from; and its schema path (the XDM field that it is based on).
 
 * **You can tag a component** to make searching for it in Workspace easier.
 
-* **You can hide a component in reporting**. Some metrics and dimensions settings in DV2 required a second metric or dimension for configuration (like metric deduplication or purchase deduplication for example). This allows you to define a metric or dimension that can be used in the settings of another metric or dimension without being exposed directly in reporting (such as purchase ID).
+* **You can hide a component in reporting**. Some metrics and dimensions settings require a second metric or dimension for configuration (like metric deduplication or purchase deduplication, for example). This allows you to define a metric or dimension that can be used in the settings of another metric or dimension without being exposed directly in reporting (such as purchase ID).
 
-* **You can apply formatting to a metric** , such as showing decimal, time, percent, or currency; specifying decimal places; showing upward trend as green or red; and specifying currency options.
+* **You can apply formatting to a metric**, such as showing decimal, time, percent, or currency; specifying decimal places; showing upward trend as green or red; and specifying currency options.
 
 * You can **create a metric or dimension based on only some of the values in the schema field**. For example, if you wanted an "errors" metric, you could create a metric from the page name field but only include pages that contain the word 'error'. The errors metric created from this is supported by filters, insertable into calculated metrics, and it works with attribution, flow, fallout, etc.
 
