@@ -7,9 +7,9 @@ description: Describes all the settings needed to create new data views.
 
 >[!IMPORTANT]
 >
->This functionality is currently in limited testing.
+>This functionality will be generally available on April 22, 2021.
 
-Creating a data view involves either creating metrics and dimensions from schema elements or utilizing standard components. Creating metrics or dimensions gives you an enormous amount of flexibility. Previously, the assumption was that if you had datasets in Adobe Experience Platform, string fields were used as dimensions and numeric fields were used as metrics. In order to change any of these fields, you had to edit your schema in Platform. The data views UI now allows a [more freeform definition of metrics and dimensions](/help/data-views/data-views.md).
+Creating a data view involves either creating metrics and dimensions from schema elements or utilizing standard components. Creating metrics or dimensions gives you an enormous amount of flexibility. Previously, the assumption was that if you had datasets in Adobe Experience Platform, string fields were used as dimensions and numeric fields were used as metrics. In order to change any of these fields, you had to edit your schema in Platform. The data views UI now allows a [more freeform definition of metrics and dimensions](/help/data-views/data-views.md). For more use cases, see [Data views use cases](/help/data-views/data-views-usecases.md).
 
 ## 1. Configure Data Views settings and containers
 
@@ -33,8 +33,6 @@ Creating a data view involves either creating metrics and dimensions from schema
 Next, you can create metrics and dimensions from schema elements. You can also use Standard components.
 
 ## 2. Create metrics and dimensions from schema elements
-
-
 
 1. In [!UICONTROL Customer Journey Analytics] > [!UICONTROL Data Views], click the [!UICONTROL Components] tab.
 
@@ -105,7 +103,7 @@ For example, you could create a dimension out of the pageTitle field, but call i
 
 | Setting | Description/Use case |
 | --- | --- |
-| [!UICONTROL Case sensitive] | Default = On. This setting is slightly different for Dimensions vs. Metrics.<ul><li>**Metric**: This setting applies only to the [!UICONTROL Include/Exclude Values] section. It allows you to say whether the filter you are applying should be case sensitive.</li><li>**Dimension** : This setting determines whether the data in this dimension should be aggregated in a case sensitive or case insensitive way. This changes the way reports/filters/attribution settings are run for a string field.</li></ul> |
+| [!UICONTROL Case sensitive] | Default = On. This setting applies only to the [!UICONTROL Include/Exclude Values] section. It allows you to say whether the include/exclude rule you are applying should be case sensitive. |
 | [!UICONTROL Match] | Lets you specify which values you would like to consider for reporting prior to attribution and segmentation (e.g., only use values containing the phrase "error"). You can specify: **[!UICONTROL If all criteria are met]**, or **[!UICONTROL If any criteria are met]**. |
 | [!UICONTROL Criteria] | Lets you specify the match logic that should be applied to a specific filter rule.<ul><li>**String**: Contains the phrase, Contains any term, Contains all terms, Does not contain any term, Does not contain the phrase, Equals, Does not equal, Starts with, Ends wit</li><li>**Double/Integer**: equals, does not equal, is greater than, is less than, is greater than or equal to, is less than or equal to</li><li>**Date**: equals, does not equal, is later than, is before, occurs within</li></ul> |
 | [!UICONTROL Match operand] | Lets you specify the match operand that the match operator should be applied to.<ul><li>**String**: Text field</li><li>**Double/Integer**: Text Field with up/down arrows for numeric values</li><li>**Date**: Day granularity selector (calendar)</li><li>**Date Time**: Date and time granularity selector</li></ul> |
@@ -124,10 +122,6 @@ For example, you could create a dimension out of the pageTitle field, but call i
 
 [!UICONTROL No Value Options] settings are analogous to [!UICONTROL Unspecified] or [!UICONTROL None] values in reporting. In the data views UI, on a component-by-component basis, you can decide how you want these values to be treated in reporting. You can also rename [!UICONTROL No value] to something that better suits your environment, such as [!UICONTROL Null], [!UICONTROL Not set], or others.
 
->[!NOTE]
->
->When you change this field to a custom value, the custom value will be treated as a legitimate string value. Therefore, if you enter the value "Red" into this field, any instances of the string "Red" appearing in the data itself will also roll under the same line item that you have specified.
-
 Also note that whatever you specify in this field can be used for special UI treatment of the [!UICONTROL No Value] line item in reporting as stated in the [!UICONTROL No Value Options] setting.
 
 ![](assets/no-value-options.png)
@@ -137,7 +131,7 @@ Also note that whatever you specify in this field can be used for special UI tre
 | [!UICONTROL If shown, call No value]… | This is where you can rename **[!UICONTROL No value]** to something else. |
 | [!UICONTROL Don't show No value by default] | Does not show this value in reporting. |
 | [!UICONTROL Show No value by default] | Does show this value in reporting. |
-| [!UICONTROL Treat No value as a value] | For example, if you had Mobile device types as the dimension, you could rename the **[!UICONTROL No value]** item to "Desktop". |
+| [!UICONTROL Treat No value as a value] | For example, if you had Mobile device types as the dimension, you could rename the **[!UICONTROL No value]** item to "Desktop". Note that when you change this field to a custom value, the custom value will be treated as a legitimate string value. Therefore, if you enter the value "Red" into this field, any instances of the string "Red" appearing in the data itself will also roll under the same line item that you have specified.|
 
 ### Configure Persistence settings
 
@@ -148,10 +142,12 @@ These settings are similar to eVar settings in traditional Adobe Analytics.
 | Setting | Description/Use case |
 | --- | --- |
 | [!UICONTROL Set persistence] | Toggle key |
-| [!UICONTROL Allocation] | Lets you specify the allocation model used on a dimension for persistence. Options are: Most recent, Original, Instance, All. If you want a value to persist (similar to eVars in traditional Analytics), this is where you'd set it. The only key difference is that the maximum persistence you can set is 90 days. Also, [!UICONTROL Never expire] is not an option. |
+| [!UICONTROL Allocation] | Lets you specify the allocation model used on a dimension for persistence. Options are: [!UICONTROL Most recent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL All]. If you want a value to persist (similar to eVars in traditional Analytics), this is where you'd set it. The only key difference is that the maximum persistence you can set is 90 days. Also, [!UICONTROL Never expire] is not an option. |
 | [!UICONTROL Expiration] | Lets you specify the persistence window for a dimension. Options are: [!UICONTROL Session] (default), [!UICONTROL Person], [!UICONTROL Time], [!UICONTROL Metric]. You might need to be able to expire the dimension on a purchase (such as internal search terms or other merchandising use cases). [!UICONTROL Metric] lets you specify any of the defined metrics as the expiration for this dimension (e.g., a [!UICONTROL Purchase] metric). |
 
 ### Configure Value Bucketing settings
+
+For example, a bucket of ‘between 5 and up to 10’ will appear as a line item ‘5 to 10’ in Workspace reporting.
 
  ![](assets/value-bucketing.png)
 
@@ -166,7 +162,7 @@ These settings are similar to eVar settings in traditional Adobe Analytics.
 
 Besides creating metrics and dimensions from schema elements, you can also use standard components in your data views.
 
-[!UICONTROL Standard components] are components that are not generated from dataset schema fields but are instead system generated. Some system components are required in any Data View to facilitate reporting capabilities in Analysis Workspace while other system components are optional.
+[!UICONTROL Standard components] are components that are not generated from dataset schema fields but are instead system generated. Some system components are required in any data view to facilitate reporting capabilities in Analysis Workspace, while other system components are optional.
 
 ![](assets/standard-components.png)
 

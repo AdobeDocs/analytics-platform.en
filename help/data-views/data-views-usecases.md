@@ -7,7 +7,7 @@ description: Multiple use cases that show the flexibility and power of data view
 
 >[!IMPORTANT]
 >
->This functionality is currently in limited testing.
+>This functionality will be generally available on April 22, 2021.
 
 These use cases that show the flexibility and power of data views in Customer Journey Analytics.
 
@@ -31,7 +31,12 @@ For example, when creating a data view, you could create an [!UICONTROL Orders] 
 Previously, integers would automatically be treated as metrics in CJA. Now, numerics (including custom events from Adobe Analytics) can be treated as dimensions. Here is an example:
 
 1. Drag the [!UICONTROL call_length_min] integer into the [!UICONTROL Dimensions] section under [!UICONTROL Included Components]:
+
    ![](assets/integers.png)
 
-1. You can now add [!UICONTROL Value Bucketing] to present this dimension in a bucketed fashion in reporting. Otherwise, each instance of this dimension would appear as a line item in Workspace.
+1. You can now add [!UICONTROL Value Bucketing] to present this dimension in a bucketed fashion in reporting. (Without bucketing, each instance of this dimension would appear as a line item in Workspace reporting.)
+
    ![](assets/bucketing.png)
+
+For more information on other data views settings, see [Create data views](/help/data-views/create-dataview2.md).
+For a conceptual overview of data views, see [Data views overview](/help/data-views/data-views.md).
