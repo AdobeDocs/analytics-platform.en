@@ -115,7 +115,6 @@ For example, you could create a dimension out of the pageTitle field, but call i
 
 | Setting | Description/Use case |
 | --- | --- |
-| [!UICONTROL Count values] | This lets you create a count of the number of times a Boolean field was set to `true`; as a metric. For example, the number of [!UICONTROL Page Views] where a Boolean field named `isPage` is set to `true`. |
 | [!UICONTROL Count instances] | Lets you specify whether a numeric or date type field used as a metric should count the times it was set rather than the value itself.<br> If you want to add up the instances of a numeric field and want to simply add up the number of times a field was *set* rather than the actual value inside.<br>This is useful for creating an [!UICONTROL Orders] metric from a [!UICONTROL Revenue] field, for example. If revenue was set, then we want to count 1 single order rather than the numeric revenue amount. |
 
 ### Configure [!UICONTROL No Value Options] settings
@@ -153,7 +152,7 @@ For example, a bucket of ‘between 5 and up to 10’ will appear as a line item
 
 | Setting | Description/Use case |
 | --- | --- |
-| [!UICONTROL Bucket value] | Allows you to create a bucketed version of a numeric dimension. This lets you report on buckets of revenue or other numeric values as a dimension in reporting. You can create up to 5 buckets. |
+| [!UICONTROL Bucket value] | Allows you to create a bucketed version of a numeric dimension. This lets you report on buckets of revenue or other numeric values as a dimension in reporting. |
 | [!UICONTROL Up to] | Lets you specify the boundaries of the first numeric dimension bucket. This applies to numeric dimensions only. |
 | [!UICONTROL Between and up to] | Lets you specify the boundaries of subsequent numeric dimension buckets. |
 | [!UICONTROL Add bucket] | Lets you add another bucket to numeric dimension bucketing. |
@@ -183,7 +182,7 @@ Required standard components
 
 ### Optional Standard components
 
-Some system components are required in any Data View to facilitate reporting capabilities in Analysis Workspace while the ones below are optional.
+Some system components are required in any data view to facilitate reporting capabilities in Analysis Workspace while the ones below are optional.
 
 | Component Name | Dimension or Metric | Notes |
 | --- | --- | --- |
