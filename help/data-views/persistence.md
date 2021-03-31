@@ -3,7 +3,7 @@ title: What is persistence in Customer Journey Analytics?
 description: Dimension persistence is a combination of allocation and expiration. Together, they determine what dimension values persist.
 ---
 
-## Persistence
+# Persistence
 
 Dimension persistence is a combination of allocation and expiration. Together, they determine what dimension values persist. Adobe highly recommends that you discuss within your organization how multiple values for each dimension are handled (allocation) and when dimension values stop persisting data (expiration).
 
