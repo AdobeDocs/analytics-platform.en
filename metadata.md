@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 solution-title: Adobe Analytics
 solution-hub-url: https://helpx.adobe.com/support/experience-cloud/core-services.html
 solution-image: help/assets/experience-cloud-logo-24.png

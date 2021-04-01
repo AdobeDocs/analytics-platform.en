@@ -1,6 +1,6 @@
 ---
 git-repo: https://github.com/adobedocs/analytics-platform.en
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe analytics
 sub-product: customer journey
 solution: Customer Journey Analytics
