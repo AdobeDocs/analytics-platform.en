@@ -25,7 +25,7 @@ Creating a data view involves either creating metrics and dimensions from schema
 | [!UICONTROL Description] | A detailed description is not mandatory but is recommended. |
 | [!UICONTROL Time zone] | Choose which time zone you want your data to be presented in. |
 | [!UICONTROL Tags] | Tags let you organize your data views into categories. |
-| [!UICONTROL Containers] | You can rename your containers here and this is how they will appear in any Workspace project that is based on this data view. Containers are used in filters and fallout/flow to define how broad or narrow the scope or context is. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
+| [!UICONTROL Containers] | You can rename your containers here and this is how they will appear in any Workspace project that is based on this data view. Containers are used in filters and fallout/flow, etc., to define how broad or narrow the scope or context is. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
 | [!UICONTROL Person container name is…] | [!UICONTROL Person] (default). The [!UICONTROL Person] container includes every visit and page view for visitors within a specified time frame. You can rename this to 'User' or any other term you prefer. |
 | [!UICONTROL Session container name is…] | [!UICONTROL Session] (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this to 'Visit' or any other term you prefer. |
 | [!UICONTROL Event container name is…] | [!UICONTROL Event] (default). The [!UICONTROL Event] container defines which page events you would like to include or exclude from a filter. |
@@ -38,11 +38,12 @@ Next, you can create metrics and dimensions from schema elements. You can also u
 
 ![](assets/components-tab.png)
 
-You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below.
+You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below. The components already present are the standard required components (system generated.)
 
 1. Now drag a schema field, such as [!UICONTROL pageTitle], from the left rail into the Metrics or Dimensions section. 
 
-   You can drag the same schema field into the dimensions or metrics sections multiple times and configure the same dimension or metric in different ways. For example, from the **[!UICONTROL pageTitle]** field, you can create a dimension called "Product Pages", and another one "Error pages", etc. From the **[!UICONTROL pageTitle]**; field, you can also create metrics from a string value. For example,you could create one or more **[!UICONTROL Orders]** metrics with different attribution settings and different include/exclude values.
+   You can drag the same schema field into the dimensions or metrics sections multiple times and configure the same dimension or metric in different ways. 
+   For example, from the **[!UICONTROL pageTitle]** field, you can create a dimension called "Product Pages", and another one "Error pages", etc., by renaming the **[!UICONTROL Component Name]** on the right. From the **[!UICONTROL pageTitle]**; field, you can also create metrics from a string value. For example,you could create one or more **[!UICONTROL Orders]** metrics with different attribution settings and different include/exclude values.
 
    ![](assets/components-tab-3.png)
 
@@ -127,10 +128,10 @@ Also note that whatever you specify in this field can be used for special UI tre
 
 | Setting | Description/Use case |
 | --- | --- |
-| [!UICONTROL If shown, call No value]… | This is where you can rename **[!UICONTROL No value]** to something else. |
+| [!UICONTROL If shown, call No value...] | This is where you can rename **[!UICONTROL No value]** to something else. |
 | [!UICONTROL Don't show No value by default] | Does not show this value in reporting. |
 | [!UICONTROL Show No value by default] | Does show this value in reporting. |
-| [!UICONTROL Treat No value as a value] | For example, if you had Mobile device types as the dimension, you could rename the **[!UICONTROL No value]** item to "Desktop". Note that when you change this field to a custom value, the custom value will be treated as a legitimate string value. Therefore, if you enter the value "Red" into this field, any instances of the string "Red" appearing in the data itself will also roll under the same line item that you have specified.|
+| [!UICONTROL Treat No value as a value] | This setting will replace blank values in the data with the text that you specified under [!UICONTROL If shown, call No value ...]. For example, if you had Mobile device types as the dimension, you could rename the **[!UICONTROL No value]** item to "Desktop". Note that when you change this field to a custom value, the custom value will be treated as a legitimate string value. Therefore, if you enter the value "Red" into this field, any instances of the string "Red" appearing in the data itself will also roll under the same line item that you have specified.|
 
 ### Configure Persistence settings
 
