@@ -137,7 +137,7 @@ Also note that whatever you specify in this field can be used for special UI tre
 
 ![](assets/persistence.png)
 
-These settings are similar to eVar settings in traditional Adobe Analytics.
+For more information, see the topic on [Persistence](/help/data-views/persistence.md).
 
 | Setting | Description/Use case |
 | --- | --- |
@@ -208,7 +208,7 @@ You can also filter by datasets and by whether a schema field contains data or w
 
 ## 3. Add a global filter to you data view
 
-You can add filters (formerly called segments) that apply to your entire data view, similar to the filtered view of data in Virtual Report Suites (traditional Adobe Analytics).
+You can add filters that apply to your entire data view. This filter will be applied to any report you run in Workspace.
 
 1. Click the [!UICONTROL Settings] tab in [!UICONTROL Data views].
 1. Drag a filter from the list in the left rail to the [!UICONTROL Add filters] field.
