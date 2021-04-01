@@ -7,29 +7,85 @@ description: Dimension persistence is a combination of allocation and expiration
 
 Dimension persistence is a combination of allocation and expiration. Together, they determine what dimension values persist. Adobe highly recommends that you discuss within your organization how multiple values for each dimension are handled (allocation) and when dimension values stop persisting data (expiration).
 
-* By default, a dimension value uses last allocation. New values overwrite persisted values.
+* By default, a dimension value uses ? allocation. 
 * By default, a dimension value uses an expiration of [!UICONTROL Session].
 
 ## Allocation
 
-Determines how CJA assigns credit for a success event if a variable receives multiple values before the event. Supported values include:
+Allocation applies a transformation to the underlying value you are using. Supported allocation models include:
 
-* Most Recent: The last eVar value always receives credit for success events until that eVar expires.
-* Original Value: The first eVar always receives credit for success events until that eVar expires.
-* Instance: ??
+* Most recent
+* Original
+* All
+* First known
+* Last known
 
-Note: Switching allocation to or from Linear prevents historical data from displaying. Mixing allocation types in the reporting interface can lead to misstated data in reports. For example, Linear allocation might divide revenue across a number of different eVar values. After changing back to Most Recent allocation, 100% of that revenue would be associated with the most recent single value. This association can lead to incorrect conclusions by users.
+### [!UICONTROL Most recent] allocation
 
-To avoid the likelihood of confusion in reporting, Analytics makes the historical data unavailable to the interface. It can be viewed if you decide to change the given eVar back to the initial allocation setting, although you should not change eVar allocation settings simply to access the historical data. Adobe recommends using a new eVar when new allocation settings are desired for data already being recorded, rather than changing allocation settings on an eVar that already has a significant amount of historical data built up.
+Here is a before-and-after example of [!UICONTROL Most recent] allocation:
+
+| Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
+| --- | --- | --- | --- | --- | --- |
+| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
+| original values |  | C | B |  | A |
+| Most recent allocation |  | C | B | B | A |
+
+### [!UICONTROL Original] allocation
+
+Here is a before-and-after example of [!UICONTROL Original] allocation:
+
+| Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
+| --- | --- | --- | --- | --- | --- |
+| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
+| original values |  | C | B |  | A |
+| Original allocation |  | C | C | C | C |
+
+### [!UICONTROL All] allocation
+
+This new dimension allocation can be applied to both array-based dimensions or single-value dimensions. It acts similarly to the [!UICONTROL Participation] attribution model for metrics. The difference is that individual values within the field can expire at different points. For example, let's say we have 5 events in a string field, with allocation set to "All" and expiration set to 5 mins. We would expect the following behavior:
+
+| Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
+| --- | --- | --- | --- | --- | --- |
+| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
+| original values | A | B | C |  | A |
+| after-persistence | A | A,B | A,B,C | B,C | A,C |
+
+Notice that the value of A persists until it reaches the 5-min mark, while B and C continue persisting into Hit 4 because 5 mins have not yet passed for those values. Note that this allocation will create a multi-valued dimension from a single-valued field. This model should also be supported on array-based dimensions:
+
+| Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
+| --- | --- | --- | --- | --- | --- |
+| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
+| original values | A,B | C | B,C |  | A |
+| after-persistence | A,B | A,B,C | A,B,C | B,C | A,B,C |
+
+### "First Known" and "Last Known" allocations
+
+These two new allocation models take the first or last observed value for a dimension within a specified persistence scope (session, person, or custom time period with lookback) and apply it to all events within the specified scope. Example:
+
+| Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
+| --- | --- | --- | --- | --- | --- |
+| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
+| original values |  | C | B |  | A |
+| first known | C | C | C | C | C |
+| last known | A | A | A | A | A |
+
+The first or last known values could be applied to just a session or at the person (reporting window) scope or at a custom, or time-based scope (essentially a person scope with a lookback window added).
 
 ## Expiration
 
-Dimension values expire after the time period that you specify. After the dimension value expires, it no longer receives credit for a metric. Dimensions can also be configured to expire on metrics. For example, if you have an internal promotion that expires at the end of a visit, the internal promotion receives credit only for purchases or registrations that occur during the visit in which they were activated.
+[!UICONTROL Expiration] lets you specify the persistence window for a dimension.
 
-There are two ways to expire an eVar:
+There are four ways to expire a dimension value:
 
-You can set the eVar to expire after a specified time period or event.
-You can use force the expiration of an eVar by resetting it, which is useful when repurposing a variable.
-For example, if you change the expiration of an eVar from 30 to 90 days, eVar values collected will continue to persist for the duration of the new expiration set (in this case, 90 days). The system simply looks at the current expiration setting and the last set timestamp of the eVar value collected to determine expiration. Only the Reset option expires values and does so immediately.
+* Session (default): Expires after a given session.
+* Person: ?
+* Time: You can set the dimension value to expire after a specified time period or event.
+* Metric: You can specify any of the defined metrics as the expiration end for this dimension (e.g. a "Purchase" metric).
+* Custom: 
 
-Another example: If an eVar is used in May to reflect internal promotions and expires after 21 days, and in June it is used to capture internal search keywords, then on June 1, you should force the expiration of, or reset, the variable. Doing so will help keep internal promotion values out of June’s reports.
+### What's the difference between Allocation and Attribution?
+
+**Allocation**: Think of allocation as "data transformation" of the dimension. Allocation happen before filtering. If you create a filter, it will key off of the transformed dimension.
+
+**Attribution**: How am I distributing the credit of a metric to the dimension that it is applied to? Attribution happens after filtering.
+

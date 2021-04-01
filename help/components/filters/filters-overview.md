@@ -80,4 +80,4 @@ Traditional Analytics comes with a lot of out-of-the-box template segments (filt
 
 | Filter Name | Description |
 | --- | --- |
-| All Data |This is a required filter analogous to the "All Visits" segment in traditional Adobe Analtyics. It gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
+| All Data |This is a required filter that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |

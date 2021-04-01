@@ -43,6 +43,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Create a data view 2](data-views/create-dataview2.md)
   + [Configure data views and attribution](data-views/configure-dataviews.md)
   + [Data views use cases](data-views/data-views-usecases.md)
+  + [Persistence](data-views/persistence.md)
 + Workspace projects {#cja-workspace}
   + [Analysis Workspace overview](analysis-workspace/home.md)
   + [Perform basic analysis](analysis-workspace/perform-basic-analysis.md)
