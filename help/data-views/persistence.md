@@ -42,13 +42,13 @@ Here is a before-and-after example of [!UICONTROL Original] allocation:
 
 ### [!UICONTROL All] allocation
 
-This new dimension allocation can be applied to both array-based dimensions or single value dimensions. It acts similarly to the "Participation" attribution model for metrics, with the notable difference that individual values within the field can expire at different points. For example, let's say we have 5 events in a string field, with allocation set to "All" and expiration set to 5 mins. We would expect the following behavior:
+This new dimension allocation can be applied to both array-based dimensions or single-value dimensions. It acts similarly to the [!UICONTROL Participation] attribution model for metrics. The difference is that individual values within the field can expire at different points. For example, let's say we have 5 events in a string field, with allocation set to "All" and expiration set to 5 mins. We would expect the following behavior:
 
 | Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
 | --- | --- | --- | --- | --- | --- |
 | timestamp (min) | 1 | 2 | 3 | 6 | 7 |
 | original values | A | B | C |  | A |
-| after-persistence (allocation) | A | A,B | A,B,C | B,C | A,C |
+| after-persistence | A | A,B | A,B,C | B,C | A,C |
 
 Notice that the value of A persists until it reaches the 5-min mark, while B and C continue persisting into Hit 4 because 5 mins have not yet passed for those values. Note that this allocation will create a multi-valued dimension from a single-valued field. This model should also be supported on array-based dimensions:
 
@@ -56,7 +56,7 @@ Notice that the value of A persists until it reaches the 5-min mark, while B and
 | --- | --- | --- | --- | --- | --- |
 | timestamp (min) | 1 | 2 | 3 | 6 | 7 |
 | original values | A,B | C | B,C |  | A |
-| after-persistence (allocation) | A,B | A,B,C | A,B,C | B,C | A,B,C |
+| after-persistence | A,B | A,B,C | A,B,C | B,C | A,B,C |
 
 ### "First Known" and "Last Known" allocations
 
