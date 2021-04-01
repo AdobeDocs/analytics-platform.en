@@ -1,5 +1,5 @@
 ---
-title: What is persistence in Customer Journey Analytics?
+title: What is dimension persistence in Customer Journey Analytics?
 description: Dimension persistence is a combination of allocation and expiration. Together, they determine what dimension values persist.
 ---
 

@@ -9,11 +9,11 @@ description: A data view specifies how you want to interpret elements of the dat
 >
 >This functionality will be generally available on April 22, 2021.
 
-A data view sits on top of a Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). A connection combines one or more datasets from Adobe Experience Platform and connects it to CJA. The data view specifies how you want to interpret elements of the data in the connection, such as metrics, dimensions, sessions, etc.. Data views are defined in preparation for reporting on the data in Workspace.
+A data view sits on top of a Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). A connection combines one or more datasets from Adobe Experience Platform and connects it to CJA. The data view specifies how you want to interpret elements of the data in the connection, such as metrics, dimensions, sessions, etc.. Data views are defined in preparation for reporting on the data in Workspace. Data views are retroactive and non-destructive. In other words, they will not change your underlying data permanently.
 
-If you have previously used traditional Adobe Analytics, a data view is similar to a virtual report suite in that it is a "filtered" view of the data.
+If you have previously used traditional Adobe Analytics, a data view is similar to a virtual report suite in that it can be a "filtered" view of the data.
 
-You can create different data views for the same connection, with different settings for visit timeout, attribution, etc… You can also create multiple data views for a single dataset. For example, you could have one data view where all dimensions are set to [!UICONTROL Last Touch], and, simultaneously, another data view (based on the same dataset) with all dimensions set to [!UICONTROL First Touch].
+You can create different data views for the same connection, with very different sets of components (dimensions/metrics). Or create data views with different settings for visit timeout, attribution, etc.. For example, you could have one data view where all dimensions are set to [!UICONTROL Last Touch], and, simultaneously, another data view (based on the same dataset) with all dimensions set to [!UICONTROL First Touch]. 
 
 Workspace projects in Customer Journey Analytics are based on data views.
 

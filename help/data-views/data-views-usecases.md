@@ -9,7 +9,7 @@ description: Multiple use cases that show the flexibility and power of data view
 >
 >This functionality will be generally available on April 22, 2021.
 
-These use cases that show the flexibility and power of data views in Customer Journey Analytics.
+These use cases show the flexibility and power of data views in Customer Journey Analytics.
 
 ## Create an Orders metric from a pageTitle (string) schema field
 
@@ -22,7 +22,7 @@ For example, when creating a data view, you could create an [!UICONTROL Orders] 
 1. Open the [!UICONTROL Include/Exclude Values] dialog on the right and specify the following:
    ![](assets/orders2.png)
 
-   The "confirmation" phrase indicates that this is an order. After reviewing all the page titles where those criteria are met, a "1" will be counted for each instance. The result is a new metric (not a calculated metric.) It works with Attribution IQ, filters, and everywhere else you can use standard metrics.
+   The "confirmation" phrase indicates that this is an order. After reviewing all the page titles where those criteria are met, a "1" will be counted for each instance. The result is a new metric (not a calculated metric.) A metric that has included/excluded values can be used everywhere any other metric can be used. It works with Attribution IQ, filters, and everywhere else you can use standard metrics.
 1. You can further specify an attribution model for this metric, such as [!UICONTROL Last Touch], with a [!UICONTROL Lookback window] of [!UICONTROL Session].
    You can also create another [!UICONTROL Orders] metric from the same field and specify a different attribution model for it, such as [!UICONTROL First Touch], and a different [!UICONTROL Lookback window], such as [!UICONTROL 30 days].
 
