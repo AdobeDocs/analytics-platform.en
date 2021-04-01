@@ -22,7 +22,7 @@ Allocation applies a transformation to the underlying value you are using. Suppo
 
 ### [!UICONTROL Most recent] allocation
 
-The last dimension value always receives credit for success events until that dimension value expires.
+Here is a before-and-after example of [!UICONTROL Most recent] allocation:
 
 | Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -32,7 +32,7 @@ The last dimension value always receives credit for success events until that di
 
 ### [!UICONTROL Original] allocation
 
-The first dimension value always receives credit for metrics until that dimension value expires.
+Here is a before-and-after example of [!UICONTROL Original] allocation:
 
 | Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -73,7 +73,7 @@ The first or last known values could be applied to just a session or at the pers
 
 ## Expiration
 
-[!UICONTROL Expiration] lets you specify the persistence window for a dimension.	
+[!UICONTROL Expiration] lets you specify the persistence window for a dimension.
 
 There are four ways to expire a dimension value:
 
