@@ -1,8 +1,8 @@
 ---
 title: Estimate connection size
 description: Report on your current usage of Customer Journey Analytics
+exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 ---
-
 # Estimate connection size
 
 You may need to know how many rows of data you currently have in [!UICONTROL Customer Journey Analytics]. The purpose of this topic is to show you how to report on your current usage of [!UICONTROL Customer Journey Analytics].

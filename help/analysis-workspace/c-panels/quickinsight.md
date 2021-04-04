@@ -1,8 +1,8 @@
 ---
 description: Quick Insights is a tool for new Workspace users that guides them in building data tables and visualizations
 title: Quick Insights panel
+exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 ---
-
 # Quick Insights panel
 
 >[!NOTE]
@@ -105,4 +105,3 @@ You will get a warning before adding anything directly to the table:
  ![](assets/qibuilder8.png)
 
 Otherwise, building directly will cause the table to now behave as a traditional Freeform table, without the helpful features for new users.
-

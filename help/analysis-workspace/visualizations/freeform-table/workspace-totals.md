@@ -1,8 +1,8 @@
 ---
 description: How Workspace totals are calculated.
 title: Workspace totals
+exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 ---
-
 # Workspace totals
 
 >[!NOTE]
@@ -40,4 +40,3 @@ Under **[!UICONTROL Column Settings]**, there are options to **[!UICONTROL Show 
 |When custom table filters are applied to a freeform table, do all of my calculated metrics and conditional formatting account for the filter?|Not currently. **[!UICONTROL Include Unspecified (None)]** will be accounted for, but custom table filters will not impact the following:<ul><li>The column max/min range that conditional formatting uses will look across all data.</li><li>Calculated metrics that leverage **[!UICONTROL Grand Total]** metric types.</li><li>Calculated metrics with functions that calculate across rows in a freeform table - i.e. Column Sum, Column max, Column min, Count, Mean, Median, Percentile, Quartile, Row Count, Standard Deviation, Variance, Cumulative, Cumulative Average, Regression variants, T-Score, T-Test, Z-Score, Z-Test.</li></ul>|
 |In Calculated Metrics, what does the **[!UICONTROL Grand Total]** metric type reflect?|**[!UICONTROL Grand Total]** continues to refer to the **[!UICONTROL Grand Total]**, and does not reflect filters applied to a table or the **[!UICONTROL Table Total]**.|
 |What total is shown when data is either copied and pasted from a freeform table or downloaded via CSV?|The total row will reflect the **[!UICONTROL Table Total]** only and respects the column **[!UICONTROL Show Totals]** setting.|
-

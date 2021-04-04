@@ -1,8 +1,8 @@
 ---
 title: Customer Journey Analytics feature support
 description: Customer Journey Analytics features compared with Adobe Analytics features set.
+exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 ---
-
 # Customer Journey Analytics feature support
 
 The following tables list which features in Adobe Analytics are supported, partially supported or not supported in Customer Journey Analytics (CJA). These lists will change over time as features are added to CJA.

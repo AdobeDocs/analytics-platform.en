@@ -1,8 +1,8 @@
 ---
 title: Manage connections
 description: Describes how to manage connections to Platform datasets.
+exl-id: 94311403-235c-420e-9a0d-475f7ee0bc42
 ---
-
 # Manage connections
 
 Once you have created one or more connections, you can manage them in the [!UICONTROL Connections] Manager. You can 

@@ -2,8 +2,8 @@
 description: Time parting takes the timestamp of collected hits and breaks it into more meaningful dimensions, such as "Hour of Day" or "Day of Week".
 title: Time-parting dimensions
 uuid: c9fa7921-aa57-483c-b2f9-da55013ada17
+exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 ---
-
 # Time-parting dimensions
 
 Time parting takes the timestamp of collected hits and breaks it into more meaningful dimensions, such as "Hour of Day" or "Day of Week".

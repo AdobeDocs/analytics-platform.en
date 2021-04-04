@@ -1,8 +1,8 @@
 ---
 title: Add global lookups to your datasets
 description: Use global lookups to augment reporting with useful dimensions in Customer Journey Analytics.
+exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 ---
-
 # Add global lookups to your datasets
 
 Global lookups enhance the ability of Customer Journey Analytics to report on some dimensions/attributes that are not useful by themselves but are useful when joined with other data. Examples include attributes of mobile devices, and attributes of OS and Browser dimensions, such as browser version numbers. A 'Global Lookup' is very similar to a lookup data set (known as classifications in traditional Adobe Analytics). However, global lookups are applicable across Experience Cloud organizations. Global lookups are automatically applied to all event datasets that contain certain XDM schema fields (see below for the specific fields.)
@@ -60,4 +60,3 @@ In order to report on the global lookup dimensions, you have to add them when yo
 You can then see the lookup data in Workspace:
 
 ![](assets/gl-reporting.png)
-

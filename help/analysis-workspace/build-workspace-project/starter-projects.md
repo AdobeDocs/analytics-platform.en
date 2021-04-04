@@ -2,8 +2,8 @@
 description: Use templates in Workspace and create custom templates.
 title: Templates
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
+exl-id: 464032a1-6dae-4df5-b4db-b277788e88c2
 ---
-
 # Templates
 
 >[!NOTE]
@@ -145,4 +145,4 @@ This template lets you see vital cross-device performance data. It is available 
 * **People-based segments**: Contains a segment dropdown that allows you to view device specific data. This panel encourages experimentation with segments to see how including or excluding device types affect reports.
 * **Analyzing the cross-device journey**: Provides flow and fallout reports based on device type.
 * **Cross-device attribution**: Combine the features of Journey IQ and Attribution IQ together.
-* **Other tips and tricks**: Helpful topics around CDA that lets you get more out of using it. 
+* **Other tips and tricks**: Helpful topics around CDA that lets you get more out of using it.

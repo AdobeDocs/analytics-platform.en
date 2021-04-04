@@ -1,8 +1,8 @@
 ---
 title: Use arrays of objects
 description: Understand how CJA reports on data hierarchies.
+exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 ---
-
 # Use arrays of objects
 
 Some platform schemas can have object arrays. One of the most common examples would be a shopping cart, which contain multiple products. Each product has a name, SKU, category, price, quantity, and any other dimensions you want to track. All of these facets have separate requirements, but must all fit into the same hit.

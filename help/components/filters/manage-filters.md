@@ -1,8 +1,8 @@
 ---
 title: Manage filters
 description: lean how to manage filters in Customer Journey Analytics
+exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 ---
-
 # Manage filters
 
 The Filter Manager offers many ways of curating segments, such as sharing, tagging, approving, copying, deleting, and marking as favorites.
@@ -130,5 +130,4 @@ Marking segments as favorites is another way to organize them for ease of use.
 
 1. In the Filter Manager, check the star next to any filter that you want to mark as a favorite. The star turns yellow when you select it.
 
-1. You can also filter on favorites under Filters > Other Filters > Favorites. 
-
+1. You can also filter on favorites under Filters > Other Filters > Favorites.

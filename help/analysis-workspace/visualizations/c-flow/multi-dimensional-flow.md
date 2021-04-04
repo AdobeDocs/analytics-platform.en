@@ -2,8 +2,8 @@
 description: An inter-dimensional flow lets you examine user paths across various dimensions.
 title: Inter-dimensional flows
 uuid: 51d08531-1c56-46c7-b505-bd8d5e6aa6c1
+exl-id: 459166b1-a522-45b6-9d2c-69e3409e442e
 ---
-
 # Inter-dimensional flows
 
 >[!NOTE]

@@ -2,8 +2,8 @@
 description: View-only projects in Workspace
 keywords: View-only projects
 title: View-only projects
+exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 ---
-
 # View-only projects
 
 >[!NOTE]

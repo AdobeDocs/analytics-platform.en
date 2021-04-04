@@ -1,8 +1,8 @@
 ---
 title: Calculated metrics overview
-description: Learn about 
+description: Learn about
+exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 ---
-
 # Calculated metrics overview
 
 >[!NOTE]
