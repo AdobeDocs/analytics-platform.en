@@ -38,7 +38,10 @@ Next, you can create metrics and dimensions from schema elements. You can also u
 
 ![](assets/components-tab.png)
 
-You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below. The components already present are the standard required components (system generated.)
+You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below. Keep in mind that:
+
+* The components already included are the standard required components (system generated.) 
+* We also apply the filter **[!UICONTROL Contains data]** by default, so that only Schema fields that contain data appear. If you are looking for a field that does not contain data, just remove the filter.
 
 1. Now drag a schema field, such as [!UICONTROL pageTitle], from the left rail into the Metrics or Dimensions section. 
 
@@ -166,35 +169,35 @@ Besides creating metrics and dimensions from schema elements, you can also use s
 
 ![](assets/standard-components.png)
 
-Required standard components
+Required standard components are added to your data view by default.
 
 | Component Name | Dimension or Metric | Notes |
 | --- | --- | --- |
-| [!UICONTROL People] | Metric | Formerly known as [!UICONTROL Unique Visitors] in traditional Analytics. This metric is based on the person ID specified in a Connection. |
-| [!UICONTROL Sessions] | Metric | Formerly known as [!UICONTROL Visits] in traditional Analytics. This metric is based on the sessionization settings specified below. |
-| [!UICONTROL Events] | Metric | Formerly known as [!UICONTROL Occurrences] in traditional Analytics. This metric represents the number of rows from all event datasets in a Connection. |
-| [!UICONTROL Day] | Dimension | |
-| [!UICONTROL Week] | Dimension | |
-| [!UICONTROL Month] | Dimension | |
-| [!UICONTROL Quarter] | Dimension | |
-| [!UICONTROL Year] | Dimension | |
-| [!UICONTROL Hour] | Dimension | |
-| [!UICONTROL Minute] | Dimension | |
+| [!UICONTROL People] | Metric | This metric is based on the person ID specified in a Connection. |
+| [!UICONTROL Sessions] | Metric | This metric is based on the sessionization settings specified below. |
+| [!UICONTROL Events] | Metric | This metric represents the number of rows from all event datasets in a Connection. |
+| [!UICONTROL Day] | Dimension | The ‘Day’ dimension reports the day that a given metric occurred. The first dimension item is the first day in the date range, and the last dimension item is the last day in the date range. |
+| [!UICONTROL Week] | Dimension | The ‘Week’ dimension reports the week that a given metric occurred. The first dimension item is the first week in the date range, and the last dimension item is the last week in the date range.|
+| [!UICONTROL Month] | Dimension | The Month dimension reports the month that a given metric occurred. The first dimension item is the first month in the date range, and the last dimension item is the last month in the date range. |
+| [!UICONTROL Quarter] | Dimension | The ‘Quarter’ dimension reports the quarter that a given metric occurred. The first dimension item is the first quarter in the date range, and the last dimension item is the last quarter in the date range. |
+| [!UICONTROL Year] | Dimension | The ‘Year’ dimension reports the year that a given metric occurred. The first dimension item is the first year in the date range, and the last dimension item is the most recent year in the date range. |
+| [!UICONTROL Hour] | Dimension | The ‘Hour’ dimension reports the hour that a given metric occurred (rounded down). The first dimension item is the first hour in the date range, and the last dimension item is the last hour in the date range. |
+| [!UICONTROL Minute] | Dimension | The ‘Minute’ dimension reports the minute that a given metric occurred (rounded down). The first dimension item is the first minute in the date range, and the last dimension item is the last minute in the date range. |
 
 ### Optional Standard components
 
-Some system components are required in any data view to facilitate reporting capabilities in Analysis Workspace while the ones below are optional.
+Optional Standard components are available under the **[!UICONTROL Standard Components]** tab.
 
 | Component Name | Dimension or Metric | Notes |
 | --- | --- | --- |
-| [!UICONTROL Session Starts] | Metric | This metric counts the number of events that were the first event of a session. When used in a filter definition (e.g. '[!UICONTROL Session Starts] exists'), it filters down to just the first event of every session. Note that this is different behavior from [!UICONTROL Entries] in that it always counts the first event of a session - not the first value present for a dimension in a session. |
-| [!UICONTROL Session Ends] | Metric | This metric counts the number of events that were the last event of a session. Similar to [!UICONTROL Session Starts], it can also be used in a filter definition to filter things down to the last event of every session. Note that this is different behavior from [!UICONTROL Exits] in that it always counts the last event of a session - not the last value present for a dimension in a session. |
-| [!UICONTROL Time Spent (seconds)] | Metric | The [!UICONTROL Time Spent] metric works similarly as in traditional Adobe Analytics - adding up the time between two different values for a dimension. However, using the Session Starts and Session Ends metric, customers can construct the [!UICONTROL Time Spent per Person] and [!UICONTROL Time Spent per Session] calculated metrics themselves (see OOTB filters and calc metrics below).  |
-| [!UICONTROL Time Spent per Event] | Dimension | Functionally, this is actually just a bucketing of the above metric. We supply default buckets, but allow you to change the buckets to whatever you like. |
-| [!UICONTROL Time Spent per Session] | Dimension | |
-| [!UICONTROL Time Spent per Person] | Dimension | |
-| [!UICONTROL Batch ID] | Dimension | |
-| [!UICONTROL Dataset ID] | Dimension | |
+| [!UICONTROL Session Starts] | Metric | This metric counts the number of events that were the first event of a session. When used in a filter definition (e.g. '[!UICONTROL Session Starts] exists'), it filters down to just the first event of every session. |
+| [!UICONTROL Session Ends] | Metric | This metric counts the number of events that were the last event of a session. Similar to [!UICONTROL Session Starts], it can also be used in a filter definition to filter things down to the last event of every session. |
+| [!UICONTROL Time Spent (seconds)] | Metric | The [!UICONTROL Time Spent] metric adds up the time between two different values for a dimension. |
+| [!UICONTROL Time Spent per Event] | Dimension | [!UICONTROL Time Spent per Event] buckets the [!UICONTROL Time Spent] metric into [!UICONTROL Event] buckets. |
+| [!UICONTROL Time Spent per Session] | Dimension | [!UICONTROL Time Spent per Session] buckets the [!UICONTROL Time Spent] metric into [!UICONTROL Session] buckets. |
+| [!UICONTROL Time Spent per Person] | Dimension | [!UICONTROL Time Spent per Person] buckets the [!UICONTROL Time Spent] metric into [!UICONTROL Person] buckets. |
+| [!UICONTROL Batch ID] | Dimension | Represents the Experience Platform batch that an [!UICONTROL Event] was part of. |
+| [!UICONTROL Dataset ID] | Dimension | Represents the Experience Platform dataset that an [!UICONTROL Event] was part of. |
 
 ### Filter schema fields and dimensions/metrics
 
@@ -202,9 +205,10 @@ You can filter schema fields in the left rail by the following data types:
 
 ![](assets/filter-fields.png)
 
-You can also filter by datasets and by whether a schema field contains data or whether it is an identity:
+You can also filter by datasets and by whether a schema field contains data or whether it is an identity. By default, we apply the **[!UICONTROL Contains data]** filter to all data views.
 
 ![](assets/filter-other.png)
+
 
 ## 3. Add a global filter to you data view
 
