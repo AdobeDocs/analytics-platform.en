@@ -2,8 +2,8 @@
 description: Learn how to create shareable links to projects or visualizations
 keywords: Analysis Workspace sharing
 title: Create shareable links
+exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 ---
-
 # Create shareable links
 
 >[!NOTE]

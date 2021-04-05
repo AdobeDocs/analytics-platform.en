@@ -1,8 +1,8 @@
 ---
 title: Date ranges overview
 description: Learn what date ranges are and how you can use them in reporting.
+exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
 ---
-
 # Date ranges overview
 
 >[!NOTE]

@@ -1,8 +1,8 @@
 ---
 description: The Area visualization is like a line graph, but with a colored area below the line.
 title: Area and area stacked
+exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 ---
-
 # Area and area stacked
 
 ## Area {#section_FDC4B6AA944F4F8AAAEAA5E17359F28A}
@@ -20,4 +20,3 @@ This visualization is like an Area Chart, but each series begins at the top of t
 A new visualization setting on area stacked visualizations turns the chart into a "100% stacked" visualization.
 
 ![](assets/areastacked100.png)
-

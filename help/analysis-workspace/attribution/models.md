@@ -1,8 +1,8 @@
 ---
 title: Attribution models and lookback windows
 description: How different types of attribution divide credit between dimension items.
+exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
 ---
-
 # Attribution models and lookback windows
 
 >[!NOTE]

@@ -2,8 +2,8 @@
 description: Displays hierarchical (tree-structured) data as a set of nested rectangles.
 title: Treemap
 uuid: 4e1ec255-d43e-46f2-ac62-296f15218799
+exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 ---
-
 # Treemap
 
 Displays hierarchical (tree-structured) data as a set of nested rectangles.

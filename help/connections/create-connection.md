@@ -1,8 +1,8 @@
 ---
 title: Create a connection
 description: Describes how to create a connection to a Platform dataset in Customer Journey Analytics.
+exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 ---
-
 # Create a connection
 
 A connection lets you integrate datasets from [!DNL Adobe Experience Platform] into [!UICONTROL Workspace]. In order to report on [!DNL Experience Platform] datasets, you first have to establish a connection between datasets in [!DNL Experience Platform] and [!UICONTROL Workspace].

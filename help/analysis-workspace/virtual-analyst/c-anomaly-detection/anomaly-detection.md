@@ -2,8 +2,8 @@
 description: You can view and analyze data anomalies contextually, within Analysis Workspace.
 title: Anomaly Detection overview
 uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
+exl-id: f706cdb9-bc80-42b9-9450-4f68bdb3fd85
 ---
-
 # Anomaly Detection overview
 
 You can view and analyze data anomalies contextually within Analysis Workspace.

@@ -1,8 +1,8 @@
 ---
 description: Instructions for setting up the dashboards scorecards.
 title: Customer Journey Analytics dashboards curator guide
+exl-id: 892e5789-8eec-43d9-99fe-8448aa8600b2
 ---
-
 # Curator’s guide for Analytics dashboards
 
 The following information instructs curators of Adobe Analytics data on how to configure and present dashboards for executive users. To see a video demonstrating this information, see the Analytics dashboards Scorecard Builder video:

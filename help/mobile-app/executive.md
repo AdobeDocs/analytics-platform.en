@@ -1,8 +1,8 @@
 ---
 description: Instructions for using the dashboards scorecards.
 title: Analytics dashboards executive guide
+exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 ---
-
 # Analytics dashboards: executive user quick start guide
 
 The following information provides executive users with information on best practices for using and viewing Analytics dashboards. To see a video demonstrating this information, see [Analytics dashboards In-App Experience](https://youtu.be/QXqQ_PkArbA).

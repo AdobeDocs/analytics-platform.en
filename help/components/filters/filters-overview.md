@@ -1,8 +1,8 @@
 ---
 title: Filters Overview
 description: Understand what filters are used for and how to create a simple filter.
+exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 ---
-
 # Filters overview
 
 Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of visitors based on characteristics or website interactions. Filters are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.

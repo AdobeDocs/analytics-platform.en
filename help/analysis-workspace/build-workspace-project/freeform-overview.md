@@ -3,8 +3,8 @@ description: Overview of Workspace projects with menu bar and settings
 keywords: Analysis Workspace
 title: Projects overview
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
+exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 ---
-
 # Projects overview
 
 Workspace projects allow you to combine data components, tables and visualizations to craft your analysis and share with anyone in your organization. Before starting your first project, learn about how to access, navigate and manage your projects.  

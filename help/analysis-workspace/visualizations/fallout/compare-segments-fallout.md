@@ -2,8 +2,8 @@
 description: You can create segments from a touchpoint, add segments as touchpoint, and compare key workflows across various segments in Analysis Workspace.
 keywords: fallout and segmentation;segments in fallout analysis;compare segments in fallout
 title: Apply filters in fallout analysis
+exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 ---
-
 # Apply filters in fallout analysis
 
 >[!NOTE]

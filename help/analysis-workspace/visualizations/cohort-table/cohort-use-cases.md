@@ -4,8 +4,8 @@ keywords: Analysis Workspace
 title: Cohort analysis use cases
 topic: Reports and analytics
 uuid: 5ec46f84-5702-4bc1-a796-874a3abe87c9
+exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 ---
-
 # [!UICONTROL Cohort Analysis] use cases
 
 >[!NOTE]

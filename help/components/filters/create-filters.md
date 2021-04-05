@@ -1,8 +1,8 @@
 ---
 title: Create Filters
 description: Understand the filter creation user interface.
+exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 ---
-
 # Create filters
 
 The Filter Builder provides a canvas to drag and drop metrics, dimensions, filters, and events to filter visitors based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple or complex filters that identify visitor attributes and actions across visits and page hits.

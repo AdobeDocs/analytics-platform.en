@@ -1,8 +1,8 @@
 ---
 title: What is a data view in Customer Journey Analytics?
 description: A data view specifies how you want to interpret elements of the data in the CJA connection, such as metrics, dimensions, sessions, etc..
+exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 ---
-
 # What is a data view?
 
 >[!IMPORTANT]
@@ -70,4 +70,4 @@ Some data view settings can be overridden in Analysis Workspace at the project l
 
 ## Delete data views
 
-If you delete a data view in [!UICONTROL Customer Journey Analytics], an error message will indicate that any Workspace projects that depend on this deleted data view will no longer work. 
+If you delete a data view in [!UICONTROL Customer Journey Analytics], an error message will indicate that any Workspace projects that depend on this deleted data view will no longer work.

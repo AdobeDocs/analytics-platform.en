@@ -1,8 +1,8 @@
 ---
 title: Reference - advanced functions
 description: Access these functions by checking Show Advanced in the Functions drop-down list.
+exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 ---
-
 # Reference - advanced functions
 
 >[!NOTE]
@@ -723,4 +723,3 @@ Returns the probability that the current row could be seen by chance in the colu
 >[!NOTE]
 >
 >Assumes that the values are normally distributed.
-

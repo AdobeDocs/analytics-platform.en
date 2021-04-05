@@ -1,8 +1,8 @@
 ---
 title: Analytics dashboards - Overview
 description: Product documentation and self-help for Customer Journey Analytics dashboards
+exl-id: 40e52441-e772-41a3-b2e3-51a3d00580d0
 ---
-
 # Analytics [!UICONTROL dashboards] - Overview
 
 **Analytics [!UICONTROL dashboards]** provide anytime, anywhere insights from Adobe Analytics, including Customer Journey Analytics. The app allows users mobile access to intuitive scorecards. Scorecards are a collection of key metrics and other components presented in a tiled layout that you can tap for more detailed breakdowns and trended data views. The mobile app is supported on both iOS and Android operating systems.

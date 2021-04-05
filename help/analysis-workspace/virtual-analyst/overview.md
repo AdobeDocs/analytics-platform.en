@@ -1,8 +1,8 @@
 ---
 title: Virtual Analyst
 description: Learn what features in Adobe Analytics contribute to the Virtual Analyst.
+exl-id: 5fb6ac39-d09d-49f0-ae1f-13f223e20800
 ---
-
 # Virtual Analyst
 
 >[!NOTE]

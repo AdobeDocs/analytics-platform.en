@@ -1,8 +1,8 @@
 ---
 description: You can download data from Analysis Workspace by copying it, or in PDF and CSV formats.
 title: Download PDF or CSV files
+exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 ---
-
 # Download PDF or CSV files
 
 >[!NOTE]
@@ -85,4 +85,3 @@ If you request more than one download at a time, you will receive a notification
 | Why is my downloaded PDF one page? | Workspace does not paginate downloaded PDFs at this time. |
 | Can I export more than 50,000 items with the “Download items as CSV” option? | While each download can contain up to 50,000 dimension items, you can change the sort of your table to retrieve longer tail items, or apply a filter to download more specific items. |
 | What does **[!UICONTROL Copy visualization]** do? | **[!UICONTROL Copy visualization]** is not an export option. It allows you to copy a visualization or panel from one place in Workspace to another. For example, from one panel to another in the same project, or from one project to another project. [Intra-linking video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |
-
