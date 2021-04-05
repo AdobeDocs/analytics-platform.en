@@ -2,8 +2,8 @@
 keywords: Analysis Workspace
 title: Analysis Workspace overview
 description: Overview of Analysis Workspace capabilities
+exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 ---
-
 # Analysis Workspace overview
 
 >[!NOTE]

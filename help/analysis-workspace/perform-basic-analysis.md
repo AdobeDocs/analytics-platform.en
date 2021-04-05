@@ -1,8 +1,8 @@
 ---
 title: Perform basic analysis in Customer Journey Analytics
 description: Describes how to use basic visualizations to analyze data in Customer Journey Analytics
+exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 ---
-
 # Perform basic analysis
 
 >[!NOTE]
@@ -21,5 +21,4 @@ Here is a sample of basic visualizations in Workspace. For example, you can
 
  ![](assets/cja-basic-analysis.png)
 
- ![](assets/cja-basic-analysis2.png) 
-
+ ![](assets/cja-basic-analysis2.png)

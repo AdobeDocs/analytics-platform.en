@@ -1,8 +1,8 @@
 ---
 title: What is Cohort Analysis?
 description: Learn about cohort analysis in Analysis Workspace
+exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 ---
-
 # What is [!UICONTROL Cohort Analysis]?
 
 A *`cohort`* is a group of people sharing common characteristics over a specified period. [!UICONTROL Cohort Analysis] is useful, for example, when you want to learn how a cohort engages with a brand. You can easily spot changes in trends, then respond accordingly. (Explanations of [!UICONTROL Cohort Analysis] are available on the web, such as at [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
@@ -63,4 +63,3 @@ Create cohorts based on a selected dimension, and not time-based cohorts, which 
 ![](assets/cohort-customizable-cohort-row.png)
 
 For instructions on how to set up and run a cohort report, go to [Configure a Cohort Analysis report](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
-

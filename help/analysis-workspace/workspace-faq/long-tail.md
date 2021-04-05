@@ -1,8 +1,8 @@
 ---
 title: Long Tail dimension item
 description: Explains the dimension item "Long Tail" and why it appears in reporting.
+exl-id: 262a219a-315a-4c9b-a400-48cff119d45d
 ---
-
 # Long Tail dimension item
 
 If you use a dimension that contains a large number of unique values, sometimes you can see a value in reporting labeled **[!UICONTROL Long Tail]**. This dimension item means that the reporting architecture CJA uses contained too many unique values for it to process.

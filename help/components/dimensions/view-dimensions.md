@@ -1,8 +1,8 @@
 ---
 description: Shows the top 5 values for non-time dimensions (and 15 for time dimensions).
 title: How to preview dimensions in CJA Workspace
+exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
 ---
-
 # Preview dimensions
 
 >[!NOTE]

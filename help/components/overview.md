@@ -1,8 +1,8 @@
 ---
 title: Components overview
 description: Learn what components CJA offers, and how you can use them in reporting.
+exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 ---
-
 # Components overview
 
 Components are features in Customer Journey Analytics that can be used in reports, or complement reporting features. You can manage these components using the following steps:

@@ -2,8 +2,8 @@
 description: In the calendar, you can specify dates and date ranges, or select a preset.
 title: Calendar and date ranges overview
 uuid: 3d7727ba-9070-4f7c-815f-c98baa4e3a2d
+exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
 ---
-
 # Calendar and date ranges overview
 
 In the calendar, you can specify dates and date ranges, or select a preset.

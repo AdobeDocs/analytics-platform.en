@@ -1,8 +1,8 @@
 ---
 title: How to set user preferences in Analysis Workspace
 description: You can set general and project preferences for users.
+exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 ---
-
 # User preferences
 
 >[!NOTE]

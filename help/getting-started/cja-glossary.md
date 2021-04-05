@@ -1,8 +1,8 @@
 ---
 title: Customer Journey Analytics glossary
 description: Customer Journey Analytics glossary.
+exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 ---
-
 # Customer Journey Analytics glossary
 
 Some Customer Journey Analytics terms differ from how they have traditionally been used in Adobe Analytics:

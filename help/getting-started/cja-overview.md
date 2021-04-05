@@ -1,8 +1,8 @@
 ---
 title: Customer Journey Analytics overview
 description: Learn how Customer Journey Analytics lets you use Analysis Workspace with data from Experience Platform.
+exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 ---
-
 # Customer Journey Analytics overview
 
 Customer Journey Analytics is an Analytics capability that lets you use the power of Analysis Workspace with data from Adobe Experience Platform. It can break down, filter, query, and visualize years' worth of data, and is combined with Platform's ability to hold all kinds of data schemas and types. Using the **Experience Data Model (XDM)**, data can be uniformly represented and organized, ready for combination and exploration. **Experience Query Services** allows you to use SQL-compatible tools and frameworks to query and manipulate all your data.

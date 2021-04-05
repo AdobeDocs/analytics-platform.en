@@ -1,8 +1,8 @@
 ---
 title: Create a data view
 description: Describes how to create a data view to a Platform dataset in Customer Journey Analytics (CJA).
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 ---
-
 # Create a data view
 
 A data view is similar to a virtual report suite in Analytics in that it is in sense a "filtered" view of the data. You can create different data views for the same connection, with different settings for visit timeout, attribution, etc.. You can create multiple data views for a single dataset. For example, you could have one data view where all dimensions are set to "Last Touch", and, simultaneously, another data view (based on the same dataset) with all dimensions set to "First Touch".
@@ -50,4 +50,4 @@ Before you can create data views, you need to [set up one or more connections to
 
 ## Delete data views
 
-If you delete a data view in [!UICONTROL Customer Journey Analytics], an error message will indicate that any Workspace projects that depend on this deleted data view will cease working. 
+If you delete a data view in [!UICONTROL Customer Journey Analytics], an error message will indicate that any Workspace projects that depend on this deleted data view will cease working.

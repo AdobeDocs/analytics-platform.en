@@ -1,8 +1,8 @@
 ---
 description: Learn how to adjust the view density in Analysis Workspace.
 title: View Density
+exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
 ---
-
 # View Density
 
 Adjusting the view density lets you see more data on the screen by reducing the vertical padding of the left rail, freeform tables and cohort tables.

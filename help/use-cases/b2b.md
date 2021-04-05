@@ -1,8 +1,8 @@
 ---
 title: (B2B) Add account-level data as a lookup dataset
 description: Learn how to add account-based data as a lookup dataset to CJA
+exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 ---
-
 # (B2B) Add account-level data as a lookup dataset
 
 This B2B use case shows you how to specify your data at an account level rather than a person level for analysis. Account-level analysis can answer questions such as

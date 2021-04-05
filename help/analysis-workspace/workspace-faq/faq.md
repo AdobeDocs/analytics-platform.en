@@ -1,8 +1,8 @@
 ---
 description: Workspace FAQs and troubleshooting tips.
 title: Frequently asked questions
+exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 ---
-
 # Frequently asked questions
 
 >[!NOTE]

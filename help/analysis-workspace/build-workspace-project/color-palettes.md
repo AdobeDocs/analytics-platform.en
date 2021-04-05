@@ -2,8 +2,8 @@
 description: How to change the visualization color palette or specify your own custom color palette.
 title: Visualization color palette
 uuid: 18252889-8dc0-48fa-820f-df534156c22f
+exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
 ---
-
 # Visualization color palette
 
 >[!NOTE]
@@ -32,4 +32,3 @@ Keep in mind:
 
 1. To specify your own palette, select **[!UICONTROL Custom Palette]** below the pre-set options.
 1. Specify up to 16 comma-separated hexadecimal values (for example, #00a4e4) for the colors you intend to use. If, for example, you want to use only four values, these colors will be automatically be repeated in visualizations that contain more colors.
-

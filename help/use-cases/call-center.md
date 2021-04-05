@@ -1,8 +1,8 @@
 ---
 title: Import call center and web data
 description: Learn how to create a dataset that links call center and website data.
+exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 ---
-
 # Import call center and web data
 
 Customer Journey Analytics provides the valuable and robust capability to combine datasets from different sources into a single Workspace project. Use this guide to understand how your organization can combine website data with call center data.
@@ -108,4 +108,3 @@ wanted to understand when someone interacts with a facet, whats the highest perc
 use sequential segmentation, but you lose the ability to use attribution IQ
 
 ## What to do when you've found insight -->
-

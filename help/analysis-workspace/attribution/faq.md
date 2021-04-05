@@ -1,8 +1,8 @@
 ---
 title: Attribution FAQ
 description: Get answers to commonly asked questions around attribution.
+exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
 ---
-
 # Attribution FAQ
 
 >[!NOTE]
@@ -46,4 +46,4 @@ The attribution panel supports all dimensions. Unsupported metrics include:
 
 **How does attribution work with filters?**
 
-Attribution always runs before filters, and segmentation runs before any other report filters are applied. 
+Attribution always runs before filters, and segmentation runs before any other report filters are applied.

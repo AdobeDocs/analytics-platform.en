@@ -1,8 +1,8 @@
 ---
 title: Dynamic vs static dimension items in freeform tables
 description: How to interact with dynamic and static dimension items in tables.
+exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 ---
-
 # Dynamic vs static dimension items in freeform tables
 
 >[!NOTE]
@@ -50,4 +50,3 @@ Dynamic and static rows behave differently in the freeform total row. By default
 
 * Dynamic rows are summed server-side and de-duplicate metrics such as visits or visitors
 * Static rows are summed client-side and do **not** de-duplicate metrics. To calculate the total row server-side, change the Row setting to **Show grand total**. [Learn more](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
-

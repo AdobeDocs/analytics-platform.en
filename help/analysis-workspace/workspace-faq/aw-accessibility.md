@@ -1,8 +1,8 @@
 ---
 description: Accessibility support features in Analysis Workspace
 title: Accessibility in Analysis Workspace
+exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 ---
-
 # Accessibility in Analysis Workspace
 
 Learn about accessibility support in [!UICONTROL Analysis Workspace], the premier analysis tool for Adobe Analytics. 
