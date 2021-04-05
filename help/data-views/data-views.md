@@ -15,7 +15,7 @@ A data view sits on top of a Customer Journey Analytics (CJA) [connection](/help
 >
 >Any settings that you select or change in a data view are retroactive and non-destructive. In other words, they will not change your underlying data permanently.
 
-You can create different data views for the same connection, with very different sets of components (dimensions/metrics). Or create data views with different settings for visit timeout, attribution, etc.. For example, you could have one data view where all dimensions are set to [!UICONTROL Last Touch], and, simultaneously, another data view (based on the same dataset) with all dimensions set to [!UICONTROL First Touch]. 
+You can create different data views for the same connection, with very different sets of components (dimensions/metrics). Or create data views with different settings for visit timeout, attribution, etc.. For example, you could have one data view where all dimensions are set to [!UICONTROL Last Touch], and simultaneously, another data view (based on the same dataset) with all dimensions set to [!UICONTROL First Touch]. 
 
 Workspace projects in Customer Journey Analytics are based on data views.
 
