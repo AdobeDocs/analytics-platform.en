@@ -24,19 +24,6 @@ The Map Visualization in Analysis Workspace
 1. Drag in a metric from the list of metrics (including calculated metrics).
 1. Specify the data source you want to draw from. (This dialog appears only if you have location tracking enabled for mobile app data.) 
 
-<table id="table_CD54B433464B4282A7524FB187016C47"> 
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p><b>Mobile Lat/Long</b> </p> </td> 
-   <td colname="col2"> <p>This option represents mobile app data. </p> <p>You will see this option only if you have enabled it for your report suite in <span class="ignoretag"> <span class="uicontrol"> Analytics </span>  &gt; <span class="uicontrol"> Admin </span>  &gt; <span class="uicontrol"> Report Suites </span>  &gt; <span class="uicontrol"> &lt;select report suite&gt; </span>  &gt; <span class="uicontrol"> Edit Settings </span>  &gt; <span class="uicontrol"> Mobile Management </span>  &gt; <span class="uicontrol"> Enable Location Tracking </span> </span>. </p> <p>This is the default setting (if location tracking is enabled). </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Geographic Dimension </b> </p> </td> 
-   <td colname="col2"> <p>This option represents geo segmentation data about visitor location based on the visitor's IP address. This data gets transformed into Country, Region, and City. Note that it does not go to the DMA or Zip Code level. </p> <p>Almost all report suites have this dimension enabled. If yours does not, contact Adobe Customer Care to have geographic reports enabled. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 1. Click **[!UICONTROL Build]**.
 
    The first view you will see is a World View with a bubble map, similar to this.

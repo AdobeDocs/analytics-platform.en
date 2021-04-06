@@ -12,7 +12,7 @@ Customer Journey Analytics is an Analytics capability that lets you use the powe
 Customer Journey Analytics expands the scope of Analytics by offering easy-to-use cross-channel capabilities and removing limitations in previous versions of Adobe Analytics. Some notable improvements are:
 
 * **Unlimited variables and events**: The concepts of eVars, props, and events no longer exist. Data is primarily focused on dimensions and metrics. Data sets can have an unlimited amount of unique dimensions and metrics.
-* **Unlimited unique values**: Adobe Experience Platform is not constrained to any unique limitations, such as the 500k unique values in traditional report suites.
+* **Unlimited unique values**: Adobe Experience Platform is not constrained to any unique limitations.
 * **Alter historical data**: Using Adobe Experience Platform, data can be removed or corrected.
 * **Cross-report-suite data**: Existing implementations from multiple data sets can be combined in Platform.
 
@@ -67,7 +67,7 @@ Non-product admins (users) in Customer Journey Analytics cannot view Data Views 
 Several features in CJA have been renamed, when compared to traditional Adobe Analytics, to align with industry standards. Some updated terminology includes:
 
 * Segments are now known as 'Filters'.
-* Virtual Report Suites are now known as 'Views'.
+* Virtual Report Suites are now known as 'Data views'.
 * Classifications are now known as 'Lookup datasets'.
 * Customer attributes are now known as 'Profile datasets'.
 * Hit containers are now known as 'Event' containers.

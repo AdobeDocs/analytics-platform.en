@@ -27,7 +27,6 @@ Invalid data means that Adobe cannot return data using the combination of dimens
 
 If you successfully created a workspace report but there's no data, there are a few things you can check:
 
-* Double check the report suite and make sure it is populated with data.
 * If you applied a segment in your report, the segment criteria might not match any data. Try removing the segment or adjusting the segment definition.
 * Check the date range in the upper right corner and make sure it's set to a value that you'd expect.
 * Navigate to your website and use the [Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html) to validate that data is being collected.

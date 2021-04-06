@@ -15,7 +15,7 @@ There are different save actions you can take under the **[!UICONTROL Project]**
 |---|---| 
 | **[!UICONTROL Save]** | Save changes to your project. If the project is shared, recipients of the project will also see the changes. When you first save your project, you are prompted to give the project a name, (optional) description and (optional) add tags. | 
 | **[!UICONTROL Save as]** | Create a duplicate of your project. The original project will not be affected. | 
-| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) that becomes available to your organization under **[!UICONTROL Project > New]** | 
+| **[!UICONTROL Save as template]** | Save your project as a custom template that becomes available to your organization under **[!UICONTROL Project > New]** | 
 
 ![](assets/save-project.png)
 

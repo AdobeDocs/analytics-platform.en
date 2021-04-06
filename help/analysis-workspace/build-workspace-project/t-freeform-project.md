@@ -6,7 +6,7 @@ title: Create a Workspace project
 
 # Create a Workspace project
 
-Create a project and add components (dimensions, metrics, segments, date ranges) to the freeform panel.
+Create a project and add components (dimensions, metrics, filters, date ranges) to the freeform panel.
 
 This article familiarizes you with the Analysis Workspace interface elements and shows how to create a project.
 
@@ -29,8 +29,7 @@ This article familiarizes you with the Analysis Workspace interface elements and
    You can choose whether to create a project from
 
 * A blank project (default). For instructions, see below.
-* A standard template. These templates are created by Adobe and ship out of the box. For instructions, see [Templates](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md) 
-* A custom template. These templates are created by users with admin rights. For instructions, see [Templates](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)
+* A custom template. These templates are created by users with admin rights.
 
    ![](assets/start_modal.png)
 
@@ -42,10 +41,6 @@ This article familiarizes you with the Analysis Workspace interface elements and
    A blank project displays, showing a freeform panel and a data table visualization.
 
    ![](assets/fa_project_new.png)
-
-   >[!NOTE]
-   >
-   >Sometimes, an "Incompatible Report Suite" message shows up when loading a project (or switching to a report suite) where not all of the components (metrics/dimensions) included in the project are included in the report suite. You can see a list of the components that are not compatible, so that you know why you are getting the message.
 
 <table id="table_3989E45D9D4241CBB2E58B29DA257B2F"> 
  <thead> 
@@ -82,7 +77,7 @@ This article familiarizes you with the Analysis Workspace interface elements and
    >
    >After you copy/save-as, the intra-links are now relative to the project they live within, not the original project they were copied from.
 
-## Add Components and Visualizations {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
+## Add components and visualizations {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
 
 1. Build your project by dragging *`components`* and *`visualizations`* to the project.
 
@@ -127,7 +122,7 @@ This article familiarizes you with the Analysis Workspace interface elements and
 
 1. Step
 
-## Use the Right-Click Menu to Customize Your Data {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
+## Use the right-click menu to customize your data {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
 
 The right-click menu lets you perform the following actions, depending on which cell in a table you right-click.
 
@@ -166,7 +161,7 @@ The right-click menu lets you perform the following actions, depending on which 
     <ul id="ul_18C83B8514AD4C1C86C071AA8402CB5C"> 
      <li id="li_6CA84ED293EA4940A7495DA9D9121264">Dimensions </li> 
      <li id="li_EA16EE017B2E4A6998918706938A21BF">Metrics </li> 
-     <li id="li_0405D339CD01405DB508A7D8D1A976B4">Segments </li> 
+     <li id="li_0405D339CD01405DB508A7D8D1A976B4">Filters </li> 
      <li id="li_819CE81C552F49BB9C1B83ED3B42C5F7">Time </li> 
     </ul> </td> 
    <td colname="col2"> </td> 
@@ -184,7 +179,7 @@ The right-click menu lets you perform the following actions, depending on which 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Create segment from selection</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Create filter from selection</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 

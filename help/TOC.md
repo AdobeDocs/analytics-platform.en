@@ -51,7 +51,6 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + Projects {#build-workspace-project}
     + [Projects overview](analysis-workspace/build-workspace-project/freeform-overview.md)
     + [Save projects](analysis-workspace/build-workspace-project/save-projects.md)
-    + [Templates](analysis-workspace/build-workspace-project/starter-projects.md)
     + [Hotkeys (Shortcuts)](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Color Palettes](analysis-workspace/build-workspace-project/color-palettes.md)
     + [View Density](analysis-workspace/build-workspace-project/view-density.md)

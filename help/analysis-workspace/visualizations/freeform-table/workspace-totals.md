@@ -11,7 +11,7 @@ exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 
 In Freeform tables, a total row appears at each breakdown level and can show two totals:
 
-* **[!UICONTROL Grand Total]** (gray 'out of' number) - this total represents all hits that have been collected, sometimes referred to as 'report suite total'. When a segment is applied either at the panel level or within the freeform table, this total adjusts to reflect all hits that match the segment criteria.
+* **[!UICONTROL Grand Total]** (gray 'out of' number) - this total represents all hits that have been collected. When a filter is applied either at the panel level or within the freeform table, this total adjusts to reflect all hits that match the segment criteria.
 * **[!UICONTROL Table Total]** (black number) - this total is typically equal to or a subset of the [!UICONTROL Grand Total]. It reflects any table filters applied within the freeform table, including the [!UICONTROL Include None] option.
 
 ![](assets/total-row.png)

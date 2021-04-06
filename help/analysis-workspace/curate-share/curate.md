@@ -14,8 +14,7 @@ Curation lets you limit the components (dimensions, metrics, segments, date rang
 ## Apply project curation
 
 1. Click **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**. 
-   The components that are used in the project will automatically be added. 
-   **Note**: If a project has multiple report suites, you will see a curate field for each report suite in the project. 
+   The components that are used in the project will automatically be added.  
 1. (Optional) To add more components, drag components you want to share from the left rail to the [!UICONTROL Curate Components] field.  
 1. Click **[!UICONTROL Done]**.
 
