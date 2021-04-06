@@ -212,7 +212,7 @@ You can also filter by datasets and by whether a schema field contains data or w
 
 ## 3. Add a global filter to you data view
 
-You can add filters that apply to your entire data view. This filter will be applied to any report you run in Workspace.
+You can add filters that apply to your entire data view. This filter will be applied to any report that you run in Workspace.
 
 1. Click the [!UICONTROL Settings] tab in [!UICONTROL Data views].
 1. Drag a filter from the list in the left rail to the [!UICONTROL Add filters] field.
