@@ -34,8 +34,6 @@ With the tutorial complete, you are ready to begin building your first project. 
 
 ![](assets/create-new-project.png)
 
-You can also begin your analysis from pre-built **templates**, either Adobe-provided standard templates or custom templates that were created by your organization. There a several different templates available, depending on the analysis or use case you have in mind. [Learn more](/help/analysis-workspace/build-workspace-project/starter-projects.md) about the different template options available.
-
 ## Build your analysis {#analysis}
 
 In your Workspace project, **panels, tables, visualizations, and components** are accessed from the left rail. These are your project building blocks.

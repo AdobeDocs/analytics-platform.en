@@ -19,7 +19,7 @@ The Workspace project list page contains the following information:
 
 |  Element  | Description  |
 |---|---|
-| [Create New Project](/help/analysis-workspace/home.md)  | Click this link to start a new project from scratch or from a [template](/help/analysis-workspace/build-workspace-project/starter-projects.md) created for you.  |
+| [Create New Project](/help/analysis-workspace/home.md)  | Click this link to start a new project from scratch.  |
 |  Manage Projects  |Clicking this link takes you to the Projects Component Manager ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Projects]**), which lists all your projects and lets you tag, share, delete, rename, approve, copy, and export projects to CSV.  |
 | Set as Landing Page | Turns this page into your Workspace landing page. |
 |  [View Tutorials](/help/analysis-workspace/home.md)  |Takes you to the Analysis Workspace video tutorials.  |
@@ -40,12 +40,12 @@ Within a project, the menu provides options for managing your project, adding co
 
 |  Menu item  | Description  |
 |---|---|
-|  Project  | Includes common actions for project management, including New, Open, Save, Save As, and [Save As template](/help/analysis-workspace/build-workspace-project/starter-projects.md). You can also refresh the entire project to retrieve the most recent data and definitions by clicking Refresh Project. [Download CSV and PDF](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) options enable you to export data from Workspace. [Project Info & Settings](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html?#info-settings) offers many options for managing your project.  |
+|  Project  | Includes common actions for project management, including New, Open, Save, Save As, and Save As template. You can also refresh the entire project to retrieve the most recent data and definitions by clicking Refresh Project. [Download CSV and PDF](/help/analysis-workspace/curate-share/download-send.md) options enable you to export data from Workspace. **Project Info & Settings** (see below) offers many options for managing your project.  |
 |  Edit  | Undo or redo your last action. Clear All will reset your project to a blank starting point. |
 |  Insert  | Insert new panels or visualizations from this menu. You can also insert new panels and visualizations from the left rail.  |
-|  [Components](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html)  | Create new segment, calculated metric, date range, or alert components from your project. You can also create new components from the left rail. If your component definitions have recently changed, Refresh Components will retrieve the latest definitions. |
-|  [Share](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/send-schedule-files.html)  | Curate, share and schedule PDF/CSV projects to recipients in your organiziation.  |
-|  Help  | Access help documentation, videos, and the Analytics [Experience League community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Manage the visibility of Workspace tips as well as the [debugger](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Find details about Workspace and factors that impact project [performance](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/workspace-faq/optimizing-performance.html).  |
+|  [Components](/help/components/overview.md)  | Create new filters, calculated metric, date range, or alert components from your project. You can also create new components from the left rail. If your component definitions have recently changed, Refresh Components will retrieve the latest definitions. |
+|  [Share](/help/analysis-workspace/curate-share/send-schedule-files.md)  | Curate, share and schedule PDF/CSV projects to recipients in your organization.  |
+|  Help  | Access help documentation, videos, and the Analytics [Experience League community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Manage the visibility of Workspace tips as well as the [debugger](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Find details about Workspace and factors that impact project [performance](/help/analysis-workspace/workspace-faq/optimizing-performance.md).  |
 |  Share button or Owner  | If you are in an Own or Edit for the project, the Share button in the top-right gives you one-click access to manage your project recipients. If you are in a Duplicate or View role for the project, you will see the project owner's name. |
 
 ### Project Info & Settings {#info-settings}
@@ -99,7 +99,7 @@ The following are common actions in the Projects manager, and can be taken on on
 
 |  Action  | Description  |
 |---|---|
-|  Add  | Create a new project from scratch or start from a [template](/help/analysis-workspace/build-workspace-project/starter-projects.md).  |
+|  Add  | Create a new project from scratch.  |
 |  Tag or Approve  | Choose “Tag” or “Approve” to organize your projects and make them easier to search for.  |
 |  [Share](/help/analysis-workspace/curate-share/share-projects.md)  | Make a project available to other Analysis Workspace users in your organization.  |
 |  Delete  | Delete your project.  |

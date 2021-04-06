@@ -14,7 +14,6 @@ uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
 
 * **[!UICONTROL New Project]** or **[!UICONTROL Open Existing Project]** clear the **[!UICONTROL Undo]** stack 
 
-* You can undo/redo changing the report suite.
 * An undo/redo message displays near the project name - it indicates when an undo or redo is in progress.
 * You can use these [hotkeys](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md):
 
@@ -29,7 +28,6 @@ uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
 * Contribution Analysis 
 * Segment Comparison 
 * Project name 
-* Report Suite selection 
 * Add/Remove visualization 
 * Collapse/Expand panel or visualization 
 * Insert using hotkeys (CTRL(CMD)+Z for Undo), (CTRL(CMD)+SHIFT+Z for Redo) 
