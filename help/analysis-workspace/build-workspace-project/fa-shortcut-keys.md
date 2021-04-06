@@ -32,7 +32,7 @@ Note: `CTRL` = Windows and `command` = Mac
 |Create an Alert|ctrl (or cmd) + shift + a|
 |Create Calculated Metric|ctrl (or cmd) + shift + c|
 |Create a Date Range|ctrl (or cmd) + shift + d|
-|Create a Segment|ctrl (or cmd) + shift + e|
+|Create a filter |ctrl (or cmd) + shift + e|
 |Clear All|alt + w|
 |Copy|ctrl (or cmd) + c|
 |Redo|ctrl (or cmd) + shift + z|
@@ -45,13 +45,10 @@ Note: `CTRL` = Windows and `command` = Mac
 
 |Action|Shortcut|
 |---|---|
-|New Analytics for Target Panel|alt + g|
 |New Attribution Panel|alt + e|
 |New Blank Panel|alt + b|
 |New Freeform Panel|alt + a|
-|New Media Concurrent Viewers Panel|alt + h|
 |New Quick Insights Panel|alt + f|
-|New Segment Comparison Panel|alt + c|
 |New Freeform Table|alt + 1|
 |New Line Graph|alt + 2|
 |New Bar Chart|alt + 3|

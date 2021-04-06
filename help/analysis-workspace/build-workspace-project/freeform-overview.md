@@ -73,7 +73,7 @@ Within a project, [panels](/help/analysis-workspace/c-panels/panels.md), tables,
 
 You can also access visualizations and panels from the [Blank Panel](/help/analysis-workspace/c-panels/blank-panel.md) as well. 
 
-Components (Dimensions, Metrics, Segments, Date Ranges) in the left rail relate to the active panel data view. The active panel will have a blue border around it, and the active data view will be listed at the top of the component rail.
+Components (Dimensions, Metrics, Filters, Date Ranges) in the left rail relate to the active panel data view. The active panel will have a blue border around it, and the active data view will be listed at the top of the component rail.
 
 ![](assets/left-rail.png)
 

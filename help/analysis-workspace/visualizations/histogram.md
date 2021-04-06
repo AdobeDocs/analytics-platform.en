@@ -53,7 +53,7 @@ To view or change the data source for the histogram chart, click the dot next to
 
 ![](assets/manage-data-source.png)
 
-Pre-built segments that show up in the table are internal segments and won't show up in the Segment selector. Click the "i" icon next to the segment name, then click **[!UICONTROL Make public]** to make the segment public.
+Pre-built filters that show up in the table are internal filters and won't show up in the filter selector. Click the "i" icon next to the filter name, then click **[!UICONTROL Make public]** to make the filter public.
 
 ![](assets/prebuilt_segments.png)
 

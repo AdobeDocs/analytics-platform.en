@@ -23,7 +23,7 @@ Disabled interactions in a view-only project include:
 * Freeform filtering 
 * Freeform # of visible rows 
 * Freeform row, column or visualization settings 
-* Panel segments 
+* Panel filters 
 * Edit, Insert & Component menus
 * Workspace tips
 

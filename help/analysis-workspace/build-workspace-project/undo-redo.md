@@ -26,7 +26,6 @@ uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
 * Clear All 
 * Time Period 
 * Contribution Analysis 
-* Segment Comparison 
 * Project name 
 * Add/Remove visualization 
 * Collapse/Expand panel or visualization 
@@ -38,7 +37,7 @@ uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
 * Freeform right-click options 
 * Selection 
 * Visualization legend selection 
-* Adding a segment to a panel 
+* Adding a filter to a panel 
 * Visualization settings on charts 
 * Editing legend labels 
 * Magic visualization 
@@ -56,9 +55,9 @@ uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
 
 * Project Info & Settings changes (Add Tags, Description Changes, Count Repeat Instances Setting) 
 * Set as Landing Page 
-* Add New (Segment/Metric/Date Range/Alert) 
+* Add New (Filter/Metric/Date Range/Alert) 
 * Share Project, Get Project Link, Send File (Now or Schedule) 
-* Create Segment for this path on Flow Visualization 
+* Create filter for this path on Flow Visualization 
 * Create Calculated Metric 
 * Create Date Range
 

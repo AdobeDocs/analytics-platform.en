@@ -60,9 +60,9 @@ Navigation in [!UICONTROL Analysis Workspace] works top > down, and left > right
 |Alt + 1 |New freeform table |
 |Ctrl + Shift + C |New calculated metric |
 |Ctrl + Shift + D |New date range |
-|Ctrl + Shift + E |New segment |
+|Ctrl + Shift + E |New filter |
 |Ctrl + Z |Undo |
-|Hold shift (in the panel segment dropzone) |Create a [dropdown filter](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
+|Hold shift (in the panel filter dropzone) |Create a [dropdown filter](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
 
 #### Democratization
 

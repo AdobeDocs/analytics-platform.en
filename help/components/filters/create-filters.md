@@ -7,7 +7,7 @@ exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 
 The Filter Builder provides a canvas to drag and drop metrics, dimensions, filters, and events to filter visitors based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple or complex filters that identify visitor attributes and actions across visits and page hits.
 
-You can create instant filters by dropping any component type (dimension, dimension item, event, metric, segment, segment template, date range) into the filter drop zone at the top of a panel.
+You can create instant filters by dropping any component type (dimension, dimension item, event, metric, filter, filter template, date range) into the filter drop zone at the top of a panel.
 
 Component types are auto-converted into filters. Alternatively, you can click the "+" sign in the **[!UICONTROL Add Filter]** drop box.
 

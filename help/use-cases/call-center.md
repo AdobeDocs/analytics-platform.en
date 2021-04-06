@@ -105,6 +105,6 @@ Create a bunch of filters - facets to their business. Filters were used because 
 
 wanted to understand when someone interacts with a facet, whats the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
 
-use sequential segmentation, but you lose the ability to use attribution IQ
+use sequential filters, but you lose the ability to use attribution IQ
 
 ## What to do when you've found insight -->

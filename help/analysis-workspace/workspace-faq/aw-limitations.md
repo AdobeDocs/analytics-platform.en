@@ -10,20 +10,16 @@ Here is a list of known limitations in Analysis Workspace and its related compon
 ## Tables
 
 * Date comparison columns cannot be added when either date ranges or metrics are used as rows of a table.
-* Create metric from selection is disabled when segments are used as rows of a table. Additionally, Create metric from selection should not be applied to date-aligned columns.
+* Create metric from selection is disabled when filters are used as rows of a table. Additionally, Create metric from selection should not be applied to date-aligned columns.
 * Conditional formatting for breakdown rows cannot use custom ranges.
 * Table total rows cannot be trended when Calculate totals by summing the row values setting is applied (typically used with Static row items).
 * [!UICONTROL Contribution Analysis] can be run at the [!UICONTROL daily] granularity _only_. It cannot be run against [!UICONTROL hourly], [!UICONTROL weekly], etc., data.
 
 ## Visualizations
 
-* Visualizations that leverage segmentation, such as [!UICONTROL Fallout], [!UICONTROL Flow], [!UICONTROL Cohort], and [!UICONTROL Histogram], cannot accept calculated metrics as inputs.
+* Visualizations that leverage filters, such as [!UICONTROL Fallout], [!UICONTROL Flow], [!UICONTROL Cohort], and [!UICONTROL Histogram], cannot accept calculated metrics as inputs.
 * [!UICONTROL Flow]: Entry/Exit dimensions, e.g. [!UICONTROL Entry page], cannot be used in Flow.
 * [!UICONTROL Cohort]: Non-integers cannot be used as Cohort criteria.
-
-## Panels
-
-* Segment Comparison: The [!UICONTROL Everyone Else] segment does not get created if a segment template is used in the initial drop zone.
 
 ## Components > Filters
 
@@ -34,7 +30,7 @@ Here is a list of known limitations in Analysis Workspace and its related compon
 
 * Calculated metrics cannot be used in certain visualizations. See 'Visualizations' above.
 * Calculated metrics cannot be used in the [!UICONTROL Attribution] panel, since calculated metrics themselves can include separate attribution models.
-* Certain components and operators are unavailable if a calculated metric is created from Workspace (as opposed to being created from [!UICONTROL Components > Segments]). For example, [!UICONTROL IP Address].
+* Certain components and operators are unavailable if a calculated metric is created from Workspace (as opposed to being created from [!UICONTROL Components > filters]). For example, [!UICONTROL IP Address].
 
 ## Components > Date Ranges
 

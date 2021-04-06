@@ -11,14 +11,11 @@ Filters can be based on attributes (browser type, device, number of visits, coun
 
 You can build and save filters in the Filter Builder, or generate filters from a Fallout visualization (in Workspace). In addition, filters can be used together as stacked filters. 
 
->[!IMPORTANT]
->Filters are known as 'segments' in Adobe Analytics. We renamed segments to filters because Adobe Experience Platform has [a different definition of "segment"](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html).
-
 Filtering includes the [Filter Builder](/help/components/filters/create-filters.md) to construct filters and run a pre-test, and the [Filter Manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
 
 ## Sequential filters
 
-Sequential filters let you identify visitors based on navigation and page view across your site, providing a filter of defined actions and interactions. Sequential segments help you identify what a visitor likes and what a visitor avoids. When building sequential filters, the THEN operator is used to define and order visitor navigation.
+Sequential filters let you identify visitors based on navigation and page view across your site, providing a filter of defined actions and interactions. Sequential filters help you identify what a visitor likes and what a visitor avoids. When building sequential filters, the THEN operator is used to define and order visitor navigation.
 
 Here is an example:
 
@@ -50,7 +47,7 @@ Person containers can include values based on a visitor's overall history:
 
 ### Session container
 
-The Session container lets you identify page interactions, campaigns, or conversions for a specific session. The Session container is the most commonly used container because it captures behaviors for the entire visit session once the rule is met and lets you define which sessions you want to include or exclude in building and applying a segment. It can help you answer theses questions:
+The Session container lets you identify page interactions, campaigns, or conversions for a specific session. The Session container is the most commonly used container because it captures behaviors for the entire visit session once the rule is met and lets you define which sessions you want to include or exclude in building and applying a filter. It can help you answer theses questions:
 
 * How many visitors viewed the News and Sports section in the same session? 
 * Which pages contributed to a successful conversion to a sale?
@@ -76,7 +73,7 @@ Event containers include values-based, single-page breakdowns:
 
 ## Out-of-the-box filter template
 
-Traditional Analytics comes with a lot of out-of-the-box template segments (filters) and calculated metrics. Many of them do not apply in CJA, or will have to be renamed or recreated. Others will depend on a solution for context-aware variables in CJA.
+Traditional Analytics comes with a lot of out-of-the-box template filters (filters) and calculated metrics. Many of them do not apply in CJA, or will have to be renamed or recreated. Others will depend on a solution for context-aware variables in CJA.
 
 | Filter Name | Description |
 | --- | --- |

@@ -45,7 +45,7 @@ To add recipients to your shared project:
    If there are unsaved changes, you will be prompted to save your project first. 
 1. Add recipients or groups of recipients. 
    Reference the help icon at the top for descriptions of each role. 
-1. (Optional) Share embedded project components (segments, calculated metrics, and date ranges) with all recipients. 
+1. (Optional) Share embedded project components (filters, calculated metrics, and date ranges) with all recipients. 
    After being shared, these components will appear in the Components drop-down of the recipient's Workspace. Note that this setting does not persist - it is a singular action at the time of sharing. 
 1. (Optional) Set this page as the landing page for recipients.
    This setting does not persist - it is a singular action at the time of sharing. 

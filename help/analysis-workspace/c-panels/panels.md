@@ -16,7 +16,7 @@ A [!UICONTROL panel] is a collection of tables and visualizations. You can acces
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL Quick Insights], [!UICONTROL Blank] and [!UICONTROL Freeform] panels are great places to start your analysis, while [!UICONTROL Analytics for Target], [!UICONTROL Attribution IQ], [!UICONTROL Media Concurrent Viewers] and [!UICONTROL Segment Comparison] lend themselves to more advanced analyses. A `"+"` button is available in projects so you can add blank panels at any time.
+[!UICONTROL Quick Insights], [!UICONTROL Blank] and [!UICONTROL Freeform] panels are great places to start your analysis, while [!UICONTROL Attribution IQ] lends itself to more advanced analyses. A `"+"` button is available in projects so you can add blank panels at any time.
 
 The default starting panel is the [!UICONTROL Freeform] panel, but you can make the [blank panel](/help/analysis-workspace/c-panels/blank-panel.md) your default as well.
 
@@ -30,9 +30,9 @@ Note: If a (purple) date range component is used within a table, visualization o
 
 ## Dropzone {#dropzone}
 
-The panel dropzone enables you to apply segment and drop-down filters to all tables and visualizations within a panel. You can apply one or many filters to a panel. The title above each filter can be modified by clicking the edit pencil, or you can right-click to remove it altogether.
+The panel dropzone enables you to apply filters and drop-down filters to all tables and visualizations within a panel. You can apply one or many filters to a panel. The title above each filter can be modified by clicking the edit pencil, or you can right-click to remove it altogether.
 
-### Segment filters
+### Filters
 
 Drag and drop any Filters from the left rail into the panel drop zone to begin filtering your panel.
 
@@ -40,7 +40,7 @@ Drag and drop any Filters from the left rail into the panel drop zone to begin f
 
 ### Ad-hoc filters
 
-Non-segment components can also be dragged directly into the dropzone to create ad-hoc filters, saving you the time and effort of going to the Filter Builder. Filters created in this way are automatically defined as hit-level filters. This definition can be modified by clicking the information icon (i) next to the filter, then the pencil-shaped edit icon and editing it in the Filter Builder. 
+Non-filter components can also be dragged directly into the dropzone to create ad-hoc filters, saving you the time and effort of going to the Filter Builder. Filters created in this way are automatically defined as hit-level filters. This definition can be modified by clicking the information icon (i) next to the filter, then the pencil-shaped edit icon and editing it in the Filter Builder. 
 
 Ad-hoc filters are local to the project and will not show up in your left rail unless you make them public.
 
@@ -48,16 +48,16 @@ Ad-hoc filters are local to the project and will not show up in your left rail u
 
 ### Drop-down filters {#dropdown-filter}
 
-In addition to segment filters, drop-down filters enable you to interact with the data in a controlled way. For example, you can add a drop-down filter for Mobile Device Types so that you can segment the panel by Tablet, Mobile Phone or Desktop. 
+In addition to filters, drop-down filters enable you to interact with the data in a controlled way. For example, you can add a drop-down filter for Mobile Device Types so that you can filter the panel by Tablet, Mobile Phone or Desktop. 
 
-Drop-down filters can be used to consolidate many projects into one as well. For example, if you have many versions of the same project with different Country segments applied, you can consolidate all versions into a single project and add a Country drop-down filter.
+Drop-down filters can be used to consolidate many projects into one as well. For example, if you have many versions of the same project with different Country filters applied, you can consolidate all versions into a single project and add a Country drop-down filter.
 
 ![](assets/dropdown-filter-intro.png)
 
 To create drop-down filters:
 
-1. To create a drop-down filter using [!UICONTROL Dimension items], such as values within the [!UICONTROL Marketing Channel] dimension, click the right-arrow icon next to your dimension in the left rail. This will expose all of the available items. Select one or many component items from the left rail and drop them into the panel dropzone **while holding the Shift key**. This will turn the components into a drop-down filter, rather than into a single segment. 
-1. To create a drop-down filter using other component such as metrics, segments, or date ranges, select from one component type in the left rail and drop into the panel dropzone **while holding down the Shift key**. 
+1. To create a drop-down filter using [!UICONTROL Dimension items], such as values within the [!UICONTROL Marketing Channel] dimension, click the right-arrow icon next to your dimension in the left rail. This will expose all of the available items. Select one or many component items from the left rail and drop them into the panel dropzone **while holding the Shift key**. This will turn the components into a drop-down filter, rather than into a single filter. 
+1. To create a drop-down filter using other component such as metrics, filters, or date ranges, select from one component type in the left rail and drop into the panel dropzone **while holding down the Shift key**. 
 1. Select one of the options from the dropdown to change the data in the panel. You can also choose to not filter any of the panel data by selecting **[!UICONTROL No filter]**. 
 
 ![](assets/create-dropdown.png)

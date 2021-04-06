@@ -13,7 +13,7 @@ exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
 >
 >**[!UICONTROL Algorithmic attribution]** is currently in limited testing. See [Adobe Analytics feature releases](https://docs.adobe.com/content/help/en/analytics/landing/an-releases.html) for more information.
 
-The Algorithmic [attribution model](models.md) in Analysis Workspace differs from other models in that it uses statistical techniques to allocate credit across the dimension items in your report or freeform table. Like all other attribution models in Analysis Workspace, it can be used on any dimension or metric and supports unlimited segmentation and breakdowns and distributes 100% of conversions to the dimension(s) in the table (also known as "fractional" attribution).
+The Algorithmic [attribution model](models.md) in Analysis Workspace differs from other models in that it uses statistical techniques to allocate credit across the dimension items in your report or freeform table. Like all other attribution models in Analysis Workspace, it can be used on any dimension or metric and supports unlimited filters and breakdowns and distributes 100% of conversions to the dimension(s) in the table (also known as "fractional" attribution).
 
 The algorithm used for attribution is based on the Harsanyi Dividend from cooperative game theory. The Harsanyi dividend is a generalization of the Shapley value solution (named after Lloyd Shapley, a Nobel Laureate economist) to distributing credit among players in a game with unequal contributions to the outcome.
 
