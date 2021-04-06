@@ -19,7 +19,7 @@ These extra dates are due to the visitor reporting lookback window. See [Data ap
 
 **When should I use a visit vs. visitor attribution lookback?**
 
-The choice of attribution lookback depends on your use case. If conversions typically take longer than a single visit, a visitor lookback is recommended. Creating a virtual report suite with a longer visit definition is also a potential solution.
+The choice of attribution lookback depends on your use case. If conversions typically take longer than a single visit, a visitor lookback is recommended. Creating a data view with a longer visit definition is also a potential solution.
 
 **How do props and eVars compare when using attribution?**
 
