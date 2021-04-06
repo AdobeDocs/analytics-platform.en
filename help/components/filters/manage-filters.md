@@ -5,7 +5,7 @@ exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 ---
 # Manage filters
 
-The Filter Manager offers many ways of curating segments, such as sharing, tagging, approving, copying, deleting, and marking as favorites.
+The Filter Manager offers many ways of curating filters, such as sharing, tagging, approving, copying, deleting, and marking as favorites.
 
 The Filter Manager shows you all the filters you own and that have been shared with you. Admin-level users can see all filters in the organization. This overview presents the user interface and the capabilities of the Filter Manager. 
 
@@ -32,7 +32,7 @@ Access the Filter Manager by going to **[!UICONTROL Customer Journey Analysis]**
 
 ## Plan filters
 
-Devoting some time to plan segments improves the chances that they will be useful for your organization and that their numbers will be kept in check.
+Devoting some time to plan filters improves the chances that they will be useful for your organization and that their numbers will be kept in check.
 
 * Consider the audience : Who will consume it? With whom will you share it? Which groups of people will use this filter and how should I tag it accordingly? This also means providing a good filter description. At minimum, the description should answer these questions:
 
@@ -50,7 +50,7 @@ Devoting some time to plan segments improves the chances that they will be usefu
 
 ### Tag filters
 
-In the Filter Manager, tagging filters allows you to organize them. All users can create tags for filters and apply one or more tags to a segment. However, you can see tags only for those filters that you own or that have been shared with you.
+In the Filter Manager, tagging filters allows you to organize them. All users can create tags for filters and apply one or more tags to a filter. However, you can see tags only for those filters that you own or that have been shared with you.
 
 What kinds of tags should you create? Here are some suggestions for useful tags:
 
@@ -72,7 +72,7 @@ To tag a filter:
 
     * enter a new tag name and press **[!UICONTROL Enter]**. 
 
-1. Click **[!UICONTROL Tag]** again to tag the segment. 
+1. Click **[!UICONTROL Tag]** again to tag the filter. 
 
 The tag should now appear in the Tags column. (Click the gear icon on the top right to manage your columns.)
 You can also filter on tags by going to **[!UICONTROL Filters > Tags]**. 
@@ -87,7 +87,7 @@ Here is how to flag a filter as approved:
     
 1. Click **[!UICONTROL Approve]** in the filter management task bar.
 
-1. Consider sharing the approved segment/s with your organization.
+1. Consider sharing the approved filter/s with your organization.
     
 1. Click **[!UICONTROL OK]**.
 
@@ -95,7 +95,7 @@ Here is how to flag a filter as approved:
 
     ![](assets/seg_approved.png)
 
-1. You can also unapprove an approved segment by clicking **[!UICONTROL Unapprove]**. 
+1. You can also unapprove an approved filter by clicking **[!UICONTROL Unapprove]**. 
 
 ### Share filters
 
@@ -125,7 +125,7 @@ To share a filter:
 
 ### Mark filters as favorites
 
-Marking segments as favorites is another way to organize them for ease of use.
+Marking filters as favorites is another way to organize them for ease of use.
 
 1. In the Filter Manager, check the star next to any filter that you want to mark as a favorite. The star turns yellow when you select it.
 

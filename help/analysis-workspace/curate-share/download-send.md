@@ -46,7 +46,7 @@ The right-click option **[!UICONTROL Download data as CSV]** allows you to downl
 
 ## Download items as CSV {#download-items}
 
-If you want to analyze more than the visible 400 rows of data in a table, right-click the table header or any row and select **Download items as CSV (Dimension name)**. This option will export up to 50,000 dimension items (based on the table sort) for the selected dimension, with filters and segments applied. If you chose this option from the top of the table, the first dimension in the table will be exported. While no limits are enforced in the freeform table, it is recommended that the Download items option be used in tables with less than 20 columns to ensure optimal performance.
+If you want to analyze more than the visible 400 rows of data in a table, right-click the table header or any row and select **Download items as CSV (Dimension name)**. This option will export up to 50,000 dimension items (based on the table sort) for the selected dimension, with filters and filters applied. If you chose this option from the top of the table, the first dimension in the table will be exported. While no limits are enforced in the freeform table, it is recommended that the Download items option be used in tables with less than 20 columns to ensure optimal performance.
 
 >[!TIP]
 >
@@ -60,11 +60,11 @@ You can multi-task within the project and even navigate to a new Workspace proje
 
 Features of the table will be applied to the downloaded file as follows:
 
-* All panel segments are applied as filters.
+* All panel filters are applied as filters.
 * Breakdowns **above** the selected dimension in the table are applied as filters above each column. 
 * Breakdowns **below** the selected dimension in the table are removed.
 
-In the example above, Page items are downloaded with the panel segment (New Visitors Customers) and components above (Marketing Channel = Email) applied as filters, and the components below (Mobile Device Type) removed from the downloaded CSV.
+In the example above, Page items are downloaded with the panel filter (New Visitors Customers) and components above (Marketing Channel = Email) applied as filters, and the components below (Mobile Device Type) removed from the downloaded CSV.
 
 ![](assets/downloaded-file.png)
 

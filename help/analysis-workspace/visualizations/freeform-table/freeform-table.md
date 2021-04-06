@@ -17,7 +17,7 @@ The quickest way to build a table is to drop components directly into a blank pr
 
 ## Freeform table builder
 
-If you prefer to add several components to your table first, then render the data, you can enable Freeform Table Builder. With the builder enabled, you can drag & drop in many dimensions, breakdowns, metrics and segments to build tables that answer more complex questions. Data will not update on-the-fly, it will update once you click **[!UICONTROL Build]**.
+If you prefer to add several components to your table first, then render the data, you can enable Freeform Table Builder. With the builder enabled, you can drag & drop in many dimensions, breakdowns, metrics and filters to build tables that answer more complex questions. Data will not update on-the-fly, it will update once you click **[!UICONTROL Build]**.
 
 ![](assets/table-builder.png)
 
@@ -32,7 +32,7 @@ You can interact with and customize a freeform table in a variety of ways:
   * Rows can be [filtered](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html) to show a reduced set of items. Additional settings are available under [Row settings](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.html).
 
 * **Columns**
-  * Components can be stacked within columns to create segmented metrics, cross-tab analysis and more.
+  * Components can be stacked within columns to create filtered metrics, cross-tab analysis and more.
   * Each column's view can be adjusted under the [column settings](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.html).
   * Several actions are available through the [right-click menu](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/using-the-right-click-menu.html). The menu provides different actions depending on if you click the table header, rows, or columns.
   

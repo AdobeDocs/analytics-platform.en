@@ -10,7 +10,7 @@ exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 >
 >You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
-Row settings vary depending on which component you have dragged into the table. To access table row settings, click the Settings icon next to a dimension, segment, metric, time period, or a breakdown within each of these:
+Row settings vary depending on which component you have dragged into the table. To access table row settings, click the Settings icon next to a dimension, filter, metric, time period, or a breakdown within each of these:
 
 ![](assets/row-settings.png)
 

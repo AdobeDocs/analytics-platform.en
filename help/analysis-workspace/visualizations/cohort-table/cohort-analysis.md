@@ -7,7 +7,7 @@ exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 
 A *`cohort`* is a group of people sharing common characteristics over a specified period. [!UICONTROL Cohort Analysis] is useful, for example, when you want to learn how a cohort engages with a brand. You can easily spot changes in trends, then respond accordingly. (Explanations of [!UICONTROL Cohort Analysis] are available on the web, such as at [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
 
-After creating a cohort report, you can curate its components (specific dimensions, metrics, and segments), then share the cohort report with anyone. See [Curate and Share](/help/analysis-workspace/curate-share/curate.md).
+After creating a cohort report, you can curate its components (specific dimensions, metrics, and filters), then share the cohort report with anyone. See [Curate and Share](/help/analysis-workspace/curate-share/curate.md).
 
 Examples of what you can do with [!UICONTROL Cohort Analysis]:
 
@@ -25,7 +25,7 @@ Examples of what you can do with [!UICONTROL Cohort Analysis]:
 >
 >[!UICONTROL Cohort Analysis]
 >
->does not support non-segmentable metrics (including calculated metrics), non-integer metrics (such as Revenue), or Occurrences. Only metrics that can be used in segments can be used in
+>does not support non-filterable metrics (including calculated metrics), non-integer metrics (such as Revenue), or Occurrences. Only metrics that can be used in filters can be used in
 >[!UICONTROL Cohort Analysis], and they can only be incremented by 1 at a time. 
 
 ## Cohort Analysis capabilities
@@ -34,13 +34,13 @@ The following capabilities allow for fine-tuned control over the cohorts you are
 
 ### [!UICONTROL Retention] Table
 
-A [!UICONTROL Retention] cohort report returns visitors: each data cell shows the raw number and percentage of visitors in the cohort who did the action during that time period. You can include up to 3 metrics and up to 10 segments.
+A [!UICONTROL Retention] cohort report returns visitors: each data cell shows the raw number and percentage of visitors in the cohort who did the action during that time period. You can include up to 3 metrics and up to 10 filters.
 
 ![](assets/retention-report.png)
 
 ### [!UICONTROL Churn] Table
 
-A [!UICONTROL Churn] cohort is the inverse of a retention table and shows the visitors who fell out or never met the return criteria for your cohort over time. You can include up to 3 metrics and up to 10 segments.
+A [!UICONTROL Churn] cohort is the inverse of a retention table and shows the visitors who fell out or never met the return criteria for your cohort over time. You can include up to 3 metrics and up to 10 filters.
 
 ![](assets/churn-report.png)
 

@@ -46,4 +46,4 @@ The attribution panel supports all dimensions. Unsupported metrics include:
 
 **How does attribution work with filters?**
 
-Attribution always runs before filters, and segmentation runs before any other report filters are applied.
+Attribution always runs before filters, and global filters run before any other report filters are applied.

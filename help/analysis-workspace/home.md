@@ -40,7 +40,7 @@ In your Workspace project, **panels, tables, visualizations, and components** ar
 
 ### Components
 
-**Components** are dimensions, metrics, segments, or date ranges, all of which can be combined in a **[!UICONTROL Freeform table]** to start answering your business question. Be sure to familiarize yourself with each [component type](/help/components/overview.md) before diving into your analysis. Once you've mastered component terminology, you can begin dragging and dropping to [build your analysis](/help/analysis-workspace/build-workspace-project/freeform-overview.md) in a **[!UICONTROL Freeform table]**.
+**Components** are dimensions, metrics, filters, or date ranges, all of which can be combined in a **[!UICONTROL Freeform table]** to start answering your business question. Be sure to familiarize yourself with each [component type](/help/components/overview.md) before diving into your analysis. Once you've mastered component terminology, you can begin dragging and dropping to [build your analysis](/help/analysis-workspace/build-workspace-project/freeform-overview.md) in a **[!UICONTROL Freeform table]**.
 
 ![](assets/build-components.png)
 

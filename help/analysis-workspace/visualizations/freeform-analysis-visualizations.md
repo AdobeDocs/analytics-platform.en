@@ -20,7 +20,7 @@ The following visualization types are available in Analysis Workspace:
 | [Bar](/help/analysis-workspace/visualizations/bar.md) | Shows vertical bars representing various values across one or more metrics. |
 | [Bullet graph](/help/analysis-workspace/visualizations/bullet-graph.md) | Shows how a value you are interested in compares to or measures against other performance ranges (goals). |
 | [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | A *`cohort`* is a group of people sharing common characteristics over a specified period. Cohort Analysis is useful for retention, churn or latency analysis. |
-| [Donut](/help/analysis-workspace/visualizations/donut.md) | Similar to a pie chart, this visualization shows data as parts or segments of a whole. |
+| [Donut](/help/analysis-workspace/visualizations/donut.md) | Similar to a pie chart, this visualization shows data as parts or filters of a whole. |
 | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Fallout reports show where visitors left (fell out) and continued through (fell through) a predefined sequence of pages. Can be set to eventual or exact sequences |
 | [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) | Shows exact customer paths through your websites and apps. |
 | [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | A Freeform table is not merely a data table, but also an interactive visualization. It is the foundation for data analysis in Workspace.|
@@ -32,7 +32,7 @@ The following visualization types are available in Analysis Workspace:
 | [Summary change](/help/analysis-workspace/visualizations/summary-number-change.md) | Shows the change between the selected cells as 1 large number/percent. |
 | [Text](/help/analysis-workspace/visualizations/text.md) | Lets you add user-defined text to your Workspace. Helpful for adding additional context to your analysis and insights, in addition to leveraging panel/visualization descriptions |
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | Displays hierarchical (tree-structured) data as a set of nested rectangles. |
-| [Venn](/help/analysis-workspace/visualizations/venn.md) | Uses circles to depict the metric overlap of up to 3 segments. |
+| [Venn](/help/analysis-workspace/visualizations/venn.md) | Uses circles to depict the metric overlap of up to 3 filters. |
 
 ## Settings {#settings}
 
@@ -90,6 +90,6 @@ Additional functionality for a visualization is available by right-clicking on t
 
 ## Create Visual icon {#quick-viz}
 
-If you are not sure which visualization to pick, click the **[!UICONTROL Create Visual]** icon in any table row (available on hover). This the the fastest way to add a visualization. Clicking it prompts Analysis Workspace to take an educated guess at which visualization would best fit your data. For example, if you have 1 row selected, it will create a trended line graph. If you have 3 segment rows selected, it will create a Venn diagram. 
+If you are not sure which visualization to pick, click the **[!UICONTROL Create Visual]** icon in any table row (available on hover). This the the fastest way to add a visualization. Clicking it prompts Analysis Workspace to take an educated guess at which visualization would best fit your data. For example, if you have 1 row selected, it will create a trended line graph. If you have 3 filter rows selected, it will create a Venn diagram. 
 
 ![](assets/quick-viz.png)

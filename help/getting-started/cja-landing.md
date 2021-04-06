@@ -7,7 +7,7 @@ exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 
 This technical documentation guide provides self help assistance for Customer Journey Analytics. Customer Journey Analytics allows you to bring your customer data from any channel you choose — both online and offline — into Adobe Experience Platform, and then analyze this data just as you would your existing digital data using Analysis Workspace today. 
 
-Customer Journey Analytics lets you control how you connect your online and offline data in Analysis Workspace on any common customer ID, finally allowing you to do attribution, segmentation, flow, fallout, etc. across your entire customer data set in Adobe Analytics.
+Customer Journey Analytics lets you control how you connect your online and offline data in Analysis Workspace on any common customer ID, finally allowing you to do attribution, filters, flow, fallout, etc. across your entire customer data set in Adobe Analytics.
 
 Analytics Select, Prime, and Ultimate customers are eligible to purchase this add-on product. Please contact your Adobe account team for further details. 
 

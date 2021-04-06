@@ -27,7 +27,7 @@ Dynamic dimension items have the row filter option, and do **not** have lock and
 
 Static dimension items do not change with time; they are fixed components that are always returned in a freeform table. Static dimension items are preferred when you want to always analyze the same item, whether it be specific campaigns or specific days in the week.
 
-Any time you manually select and drop specific component values (dimension, metric, segment, date range) into a table, the result is a static list of rows or columns. Static dimension items can also be created if you choose to:
+Any time you manually select and drop specific component values (dimension, metric, filter, date range) into a table, the result is a static list of rows or columns. Static dimension items can also be created if you choose to:
 
 * From rows, right-click > [!UICONTROL Display only selected rows]
 * From columns, right-click > [!UICONTROL Make item static]

@@ -17,4 +17,4 @@ You can curate, share and schedule PDF/CSV projects to recipients in your organi
 | [!UICONTROL Get Project Link] | Create a shareable  link for quick access to a project. Users will be required to log in. [Learn more](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) |
 | [!UICONTROL Send File now] | Send a project as a CSV or PDF immediately to specified recipients. |
 | [!UICONTROL Send File on Schedule] | Send a project as a CSV or PDF on a schedule to specified recipients. [Learn more](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html) |
-| [!UICONTROL Curate Project Data] | Limit the components (dimensions, metrics, segments, date ranges) available in a project. [Learn more](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html) |
+| [!UICONTROL Curate Project Data] | Limit the components (dimensions, metrics, filters, date ranges) available in a project. [Learn more](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html) |

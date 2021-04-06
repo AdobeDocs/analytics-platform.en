@@ -1,5 +1,5 @@
 ---
-description: Create a project and add components (dimensions, metrics, segments, date ranges) to the freeform panel.
+description: Create a project and add components (dimensions, metrics, filters, date ranges) to the freeform panel.
 keywords: Analysis Workspace
 title: Create a Workspace project
 ---
@@ -52,7 +52,7 @@ This article familiarizes you with the Analysis Workspace interface elements and
  <tbody> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/components/analysis-workspace-components.md"  > Components</a> </td> 
-   <td colname="col2"> <p>Dimensions, metrics, segments, and date ranges that you can drag into projects. </p> </td> 
+   <td colname="col2"> <p>Dimensions, metrics, filters, and date ranges that you can drag into projects. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > Visualizations</a> </td> 
@@ -83,7 +83,7 @@ This article familiarizes you with the Analysis Workspace interface elements and
 
    **Components**
 
-   The Component toolbar displays searchable dimensions, metrics, segments, and date ranges that you use most frequently.
+   The Component toolbar displays searchable dimensions, metrics, filters, and date ranges that you use most frequently.
 
 <table id="table_4626163E26DE46CB86391868BBA3AD32"> 
  <thead> 
@@ -102,8 +102,8 @@ This article familiarizes you with the Analysis Workspace interface elements and
    <td colname="col2"> <p>Apply at the project level. </p> <p><img  src="assets/metrics.png" id="image_7C874C72992E414CBEE6B90CEF7B9F3C" /> </p> <p> <span class="term"> Occurrences</span> is the default metric for the data table. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Segments (blue) </td> 
-   <td colname="col2"> <p>Draggable only at the panel level, but you can create inline segments in the data table. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>See <a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Segments </a> for more information. </p> </td> 
+   <td colname="col1"> Filters (blue) </td> 
+   <td colname="col2"> <p>Draggable only at the panel level, but you can create inline filters in the data table. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>See <a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Filters </a> for more information. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Date ranges and granularities (purple) </td> 
@@ -180,10 +180,6 @@ The right-click menu lets you perform the following actions, depending on which 
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Create filter from selection</a> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md"  > Run in segment comparison</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 

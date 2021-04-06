@@ -14,14 +14,14 @@ exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 
 Break down dimensions and dimension items in Analysis Workspace.
 
-Break down your data in unlimited ways for your specific needs; build queries using relevant metrics, dimensions, segments, time lines, and other analysis breakdown values.
+Break down your data in unlimited ways for your specific needs; build queries using relevant metrics, dimensions, filters, time lines, and other analysis breakdown values.
 
 1. [Create a project](/help/analysis-workspace/home.md) with a data table.
 1. In the data table, right-click a line item and select **[!UICONTROL Breakdown]** > *`<item>`*.
 
    ![Step Result](assets/fa_data_table_actions.png)
 
-   You can break down metrics by dimension items or audience segments across selected time periods. You can also drill down further to a more granular level.
+   You can break down metrics by dimension items or audience filters across selected time periods. You can also drill down further to a more granular level.
 
    >[!NOTE]
    >
