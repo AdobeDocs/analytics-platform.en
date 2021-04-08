@@ -5,7 +5,7 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 ---
 # Persistence
 
-Dimension persistence is a combination of allocation and expiration. Together, they determine how or whether dimension values persist from one event to the next. Dimension persistence is configured on a dimension within Data Views and is retroactive and non-destructive to the data it is applied to. Dimension persistence is an on-the-fly data transformation applied to a dimension that occurs before filtering or other analysis operations are done in reporting.
+Dimension persistence is a combination of allocation and expiration. Together, they determine how or whether dimension values persist from one event to the next. Dimension persistence is configured on a dimension within Data Views and is retroactive and non-destructive to the data it is applied to. Dimension persistence is an immediate data transformation applied to a dimension that occurs before filtering or other analysis operations are done in reporting.
 
 * By default, a dimension value does not have any persistence enabled. 
 * By default, when any allocation model is enabled fir a dimension, an expiration of [!UICONTROL Session] is used.
