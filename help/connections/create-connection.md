@@ -9,6 +9,16 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
 Click [here](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) for a video overview.
 
+To create a CJA Connection, you will need the following permissions:
+
+Adobe Experience Platform:
+1. Data Modeling: View Schemas, Manage Schemas
+1. Data Management: View Datasets, Manage Datasets
+1. Data Ingestion: Manage Sources
+
+Customer Journey Analytics
+1. Product Admin Access
+
 >[!IMPORTANT]
 >
 >You can combine multiple [!DNL Experience Platform] datasets into a single connection.
