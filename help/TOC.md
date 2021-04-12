@@ -157,6 +157,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + [Data ingestion use cases](use-cases/data-ingestion.md)
   + [Use Marketing channel dimensions](use-cases/marketing-channels.md)
   + [Add global lookups to your datasets](use-cases/global-lookups.md)
+  + [Set up Google Analytics reporting in CJA](use-cases/ga-to-cja.md)
 + Analytics dashboards {#cja-dashboards}
   + [Analytics dashboards - Overview](mobile-app/home.md)
   + [Curator guide](mobile-app/curator.md)
