@@ -1,8 +1,8 @@
 ---
 title: Set up Google Analytics reporting in Customer Journey Analytics
 description: 
+exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 ---
-
 # Set up Google Analytics reporting in Customer Journey Analytics
 
 
@@ -48,4 +48,3 @@ The following instructions are based on Universal Google Analytics.
 1. Import GCS events to Adobe Experience Platform and map to XDM schema
 
 BigQuery Export schema (https://support.google.com/analytics/answer/3437719?hl=en&ref_topic=3416089)
-
