@@ -40,7 +40,9 @@ Refer to [these instructions](https://support.google.com/analytics/answer/341609
 
    ![](assets/ga-bigquery.png)
    You need to create a SQL query to transform the Universal Analytics data into an Experience-Platform-compliant format. 
-   * View this video for instructions.
+   * View this video for instructions:
+
+   >[!VIDEO](https://video.tv.adobe.com/v/332634)
 
 1. Export Google Analytics events in JSON format to Google Cloud Storage and save them to a bucket.
 Refer to [these instructions](https://support.google.com/analytics/answer/3437719?hl=en&ref_topic=3416089).
