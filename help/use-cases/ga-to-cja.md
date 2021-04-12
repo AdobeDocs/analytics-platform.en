@@ -5,15 +5,7 @@ description:
 
 # Set up Google Analytics reporting in Customer Journey Analytics
 
-setting up the Google Cloud Storage Connector,
 
-configure Google Tag Manager
-
-BigQuery Export schema (https://support.google.com/analytics/answer/3437719?hl=en&ref_topic=3416089)
-
-1. Convert GA sessions to events in Big Query
-1. Export Google Analytics events to Google Cloud Storage
-1. Import GCS events to Adobe Experience Platform and map to XDM schema
 
 ## Prerequisites
 
@@ -33,18 +25,27 @@ How you bring Google Analytics data into Adobe Experience Platform depends on wh
 The following instructions are based on Universal Google Analytics.
 
 1. Connect your Google Analytics data to BigQuery and 
-Refer to [these instructions](https://support.google.com/analytics/answer/3416092?hl=en).
-1. (Universal Analytics customers only) Transform Google Analytics sessions to events in BigQuery. This makes the data compatible with Adobe Experience Platform. Refer to [these instructions](https://support.google.com/analytics/answer/3437618?hl=en). 
+   Refer to [these instructions](https://support.google.com/analytics/answer/3416092?hl=en).
+   
+1. (Universal Analytics customers only) Transform Google Analytics sessions to events in BigQuery. 
+   This makes the data compatible with Adobe Experience Platform. Refer to [these instructions](https://support.google.com/analytics/answer/3437618?hl=en). 
 
    Details: In BigQuery, your GA data will appear as a table:
 
    ![](assets/ga-bigquery.png)
-   You need to create a SQL query to transform the Universal Analytics data into an Experience-Platform-compliant format. 
-   * View this video for instructions:
+   You need to create a SQL query to transform the Universal Analytics data into an Experience-Platform-compliant format. View this video for instructions:
 
    >[!VIDEO](https://video.tv.adobe.com/v/332634)
 
 1. Export Google Analytics events in JSON format to Google Cloud Storage and save them to a bucket.
-Refer to [these instructions](https://support.google.com/analytics/answer/3437719?hl=en&ref_topic=3416089).
-1. Bring the data from Google Cloud Storage into Experience Platform. (get slide 10 video from Trevor.)
+   Refer to [these instructions](https://support.google.com/analytics/answer/3437719?hl=en&ref_topic=3416089).
+
+1. Bring the data from Google Cloud Storage into Experience Platform. 
+   View this video for instructions:
+
+   >[!VIDEO](https://video.tv.adobe.com/v/332641)
+
+1. Import GCS events to Adobe Experience Platform and map to XDM schema
+
+BigQuery Export schema (https://support.google.com/analytics/answer/3437719?hl=en&ref_topic=3416089)
 
