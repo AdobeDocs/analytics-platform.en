@@ -46,4 +46,3 @@ Refer to [these instructions](https://support.google.com/analytics/answer/341609
 Refer to [these instructions](https://support.google.com/analytics/answer/3437719?hl=en&ref_topic=3416089).
 1. Bring the data from Google Cloud Storage into Experience Platform. (get slide 10 video from Trevor.)
 
-## 
