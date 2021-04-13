@@ -1,5 +1,5 @@
 ---
-title: How to get Google Analytics data into Adobe Experience Platform for analysis in Customer Journey Analytics (CJA)
+title: Ingest Google Analytics data into Adobe Experience Platform
 description: Explains how to leverage Customer Journey Analytics (CJA) to ingest your Google Analytics and firebase data into Adobe Experience Platform. 
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 ---
@@ -34,7 +34,7 @@ How you bring Google Analytics data into Adobe Experience Platform depends on wh
 
 ### 1. Connect your Google Analytics data to BigQuery
 
-Note that the following instructions are based on Universal Google Analytics. They apply to historical data. For instructions regarding live streaming data, go to Bring live streaming data into AEP.
+Note that the following instructions are based on Universal Google Analytics. They apply to historical data. For instructions regarding live streaming data, go to [Bring live streaming data into AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=en#ingest-live-streaming-google-analytics-data).
 
 Refer to [these instructions](https://support.google.com/analytics/answer/3416092?hl=en).
 
@@ -44,9 +44,28 @@ Refer to [these instructions](https://support.google.com/analytics/answer/341609
 >
 >This step applies to Universal Analytics customers only
 
-GA data stores each record in their data as a user’s session rather than individual events. You need to create a SQL query to transform the Universal Analytics data into an Experience-Platform-compliant format. You apply the “unnest” function to the “hits” field in the GA schema. Here is the  SQL example you can use:
+GA data stores each record in their data as a user’s session rather than individual events. You need to create a SQL query to transform the Universal Analytics data into an Experience-Platform-compliant format. You apply the “unnest” function to the “hits” field in the GA schema. Here is the SQL example you can use:
 
-`SQL sample`
+`SELECT
+   *,
+   timestamp_seconds(`visitStartTime` + hit.time) AS `timestamp` 
+FROM
+   (
+      SELECT
+         fullVisitorId,
+         visitNumber,
+         visitId,
+         visitStartTime,
+         trafficSource,
+         socialEngagementType,
+         channelGrouping,
+         device,
+         geoNetwork,
+         hit 
+      FROM
+         `ga_data_full.ga_sessions_2017_06_*`,
+         UNNEST(hits) AS hit 
+   )`
 
 Once the query completes, save the complete results into a BigQuery table.
 
@@ -58,7 +77,7 @@ Refer to [these instructions](https://support.google.com/analytics/answer/343761
 
 ### 3. Export Google Analytics events in JSON format to Google Cloud Storage and save them to a bucket
 
-Next, you will import the Google Analytics events to Google Cloud Storage in JSON format. Then you bring it into the Experience Platform.
+Next, you will import the Google Analytics events to Google Cloud Storage in JSON format.
 
 Refer to [these instructions](https://support.google.com/analytics/answer/3437719?hl=en&ref_topic=3416089).
 
