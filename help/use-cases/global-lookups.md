@@ -16,7 +16,7 @@ Global lookup datasets automatically get applied at report time. If you are usin
 
 ## Use global lookups with custom datasets
 
-There needs to be a key in the event dataset that is compatible with the global lookup datasets. As long as you populate the right XDM fields by adding some of our standard [Adobe Experience Platform schema mixins](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=en#mixins), you can make custom datasets work with global lookups. 
+A key needs to be present in the event dataset that is compatible with the global lookup datasets. As long as you populate the right XDM fields by adding some of our standard [Adobe Experience Platform schema mixins](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=en#mixins), you can make custom datasets work with global lookups. 
 
 ## Available global lookup fields
 
