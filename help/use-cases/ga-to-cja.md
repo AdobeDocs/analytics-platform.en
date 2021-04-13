@@ -42,25 +42,23 @@ Refer to [these instructions](https://support.google.com/analytics/answer/341609
 >
 >This step applies to Universal Analytics customers only
 
- Transforming the data makes the data compatible with Adobe Experience Platform. 
- Refer to [these instructions](https://support.google.com/analytics/answer/3437618?hl=en). 
+GA data stores each record in their data as a user’s session rather than individual events. Transforming the data makes the data compatible with Adobe Experience Platform.
 
-   Details: In BigQuery, your GA data will appear as a table:
+Refer to [these instructions](https://support.google.com/analytics/answer/3437618?hl=en). 
 
-   ![](assets/ga-bigquery.png)
-   You need to create a SQL query to transform the Universal Analytics data into an Experience-Platform-compliant format. View this video for instructions:
+You need to create a SQL query to transform the Universal Analytics data into an Experience-Platform-compliant format. View this video for instructions:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/332634)
+>[!VIDEO](https://video.tv.adobe.com/v/332634)
 
 ## 3. Export Google Analytics events in JSON format to Google Cloud Storage and save them to a bucket
 
-   Refer to [these instructions](https://support.google.com/analytics/answer/3437719?hl=en&ref_topic=3416089).
+Refer to [these instructions](https://support.google.com/analytics/answer/3437719?hl=en&ref_topic=3416089).
 
 ## 4. Bring the data from Google Cloud Storage into Experience Platform
 
-   View this video for instructions:
+View this video for instructions:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/332641)
+>[!VIDEO](https://video.tv.adobe.com/v/332641)
 
 ## 5. Import GCS events to Adobe Experience Platform and map to XDM schema
 
