@@ -99,7 +99,7 @@ Mappings are very easy to change and you can even create derived or calculated f
 
 You can also capture live streaming events from Google Tag Manager directly to Adobe Experience Platform.
 
-### Add Custom Variables
+### 1. Add Custom Variables
 
 After signing in to the Google Tag Manager account, you need to add Custom Constant Variables related to Adobe org ID and dataset IDs. You probably already have variables in Google Tag Manager that are being sent to Google Analytic, such as the customer email, customer name, language, and customer logged-in status. You need to define 5 new custom variables:
 
@@ -113,7 +113,7 @@ Getting these values ensures that all of the Google Analytics data gets sent to 
 
 Once you have defined these custom variables, we can set up a trigger to send all the data you’re already sending to Google Analytics to the Experience Platform as well.
 
-### Set up a Trigger in Google Tag Manager
+### 2. Set up a Trigger in Google Tag Manager
 
 In this example, the "Account Creation" trigger has been defined, where the `pageUrl equals account-creation`. By adding some information to this trigger, you can ensure that when user successful authenticates and the account-creation page loads, data is sent to both Google Analytics and AEP.
 
@@ -121,11 +121,12 @@ For instructions, view this video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332668)
 
-### Next steps
+## Create a Connection in CJA to the Google Analytics dataset
 
 Once the Adobe Experience Platform has started receiving the live Google Analytics data, and you have backfilled the historical Google Analytics data from BigQuery, you are ready to jump into CJA and
+[create your first connection](/help/connections/create-connection.md). This connection will stitch the GA data together with all of your other customer data using a common "Customer ID”.
 
-1. [Create your first connection](/help/connections/create-connection.md) which will stitch the GA data together with all of your other customer data using a common "Customer ID”.
-1. Do some amazing analysis in Workspace, such as...
 
-*Is this where this topic should stop or do we need to go into detail about the connection?*
+## Do some amazing analysis in Workspace
+
+To follow
