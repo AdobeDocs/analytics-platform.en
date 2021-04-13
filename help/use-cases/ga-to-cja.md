@@ -27,7 +27,7 @@ How you bring Google Analytics data into Adobe Experience Platform depends on wh
 
 | If you use... | You also need this license... | And do this... |
 | --- | --- | --- |
-| **Universal Google Analytics** | Google Analytics 360 |  Perform steps 1 - 5 of the instructions below |
+| **Universal Analytics** | Google Analytics 360 |  Perform steps 1 - 5 of the instructions below |
 | **Google Analytics 4** | Free GA version or Google Analytics 360 | Perform steps 1 and 3-5 of the instructions below. No need for step 2. |
 
 ## Ingest historical data
@@ -44,7 +44,7 @@ Refer to [these instructions](https://support.google.com/analytics/answer/341609
 >
 >This step applies to Universal Analytics customers only
 
-GA data stores each record in their data as a user’s session rather than individual events. You need to create a SQL query to transform the Universal Analytics data into an Experience-Platform-compliant format. You apply the “unnest” function to the “hits” field in the GA schema. Here is the SQL example you can use:
+GA data stores each record in their data as a user’s session rather than individual events. You need to create a SQL query to transform the Universal Analytics data into an Experience-Platform-compliant format. You apply the “unnest” function to the “hits” field in the GA schema. Here is the  SQL example you can use:
 
 `SELECT
    *,
@@ -63,13 +63,13 @@ FROM
          geoNetwork,
          hit 
       FROM
-         `ga_data_full.ga_sessions_2017_06_*`,
+         `your_bq_table_2021_04_*`,
          UNNEST(hits) AS hit 
    )`
 
 Once the query completes, save the complete results into a BigQuery table.
 
-Refer to [these instructions](https://support.google.com/analytics/answer/3437618?hl=en). 
+Refer to [these instructions](https://support.google.com/analytics/answer/7029846?hl=en&ref_topic=9359001#zippy=%2Cold-export-schema%2Cuse-this-script-to-migrate-existing-bigquery-datasets-from-the-old-export-schema-to-the-new-one%2Cscript-migration-scriptsql). 
 
  Or view this video:
 
