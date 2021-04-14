@@ -38,5 +38,5 @@ Previously, integers would automatically be treated as metrics in CJA. Now, nume
 
    ![](assets/bucketing.png)
 
-For more information on other data views settings, see [Create data views](/help/data-views/create-dataview2.md).
+For more information on other data views settings, see [Create data views](/help/data-views/create-dataview.md).
 For a conceptual overview of data views, see [Data views overview](/help/data-views/data-views.md).
