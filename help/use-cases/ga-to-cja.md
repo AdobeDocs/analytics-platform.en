@@ -100,7 +100,25 @@ View this video for instructions:
 
 Next, you can map the GA event data into an existing dataset that you created previously, or create a new dataset, using whichever XDM schema you choose. Once you have selected the schema, the Experience Platform applies machine learning to automatically pre-map each of the fields in the Google Analytics data to your [XDM schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui). 
 
+![](assets/schema-map.png)
+
 Mappings are very easy to change and you can even create derived or calculated fields from the Google Analytics data. Once you have finished mapping the fields into your XDM schema, you can schedule this import on a recurring basis as well as apply error validation during the ingestion process. This ensures that there aren’t any issues with the data you have imported.
+
+**Timestamp calculated field**
+
+For the `timestamp` field in Google Analytics data, you have to create a special calculated field in the Experience Platform schema UI. Click **[!UICONTROL Add calculated field]** and wrap the `timestamp` string in a `date` function, like this:
+
+`date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
+
+You then need to save this calculated field to the timestamp data structure in the schema:
+
+![](assets/timestamp.png)
+
+**_id XDM calculated field**
+
+The `_id` schema field has to have a value in it - CJA does not care what the value is. You can just add a "1" to the field:
+
+![](assets/_id.png)
 
 ## Ingest live streaming Google Analytics data
 
