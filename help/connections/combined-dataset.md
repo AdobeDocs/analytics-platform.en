@@ -3,6 +3,7 @@ title: Combined event datasets
 description: Learn how CJA creates a connection by combining datasets.
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 ---
+
 # Combined event datasets
 
 When you create a connection, CJA combines all schemas and datasets into a single dataset. This 'combined event dataset' is what CJA uses for reporting. When you include multiple schemas or datasets in a connection:
