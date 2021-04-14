@@ -48,7 +48,7 @@ The latest update to data views gives you a lot more flexibility in what you can
 
 * You can **rename your containers** in a data view and have those renamed containers surface in any Workspace project that is based on that data view.
 
-## Prerequisite
+## Data views prerequisites
 
 * Before you can create data views, you need to [set up one or more connections to Experience Platform datasets](/help/connections/create-connection.md).
 * To create or manage a data view, you need a [set of permissions in Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions). 
