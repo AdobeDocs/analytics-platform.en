@@ -163,6 +163,9 @@ For instructions, view this video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332676)
 
-## Do some amazing analysis in Workspace
+## Next steps
 
-More content here.
+* Create a data view based on Google Analytics data
+  Next, you [create a data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#cja-dataviews) in CJA, based on the connection that contains the Google Analytics data.
+
+* Do some amazing analysis in [Workspace](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/home.html?lang=en#cja-workspace).
