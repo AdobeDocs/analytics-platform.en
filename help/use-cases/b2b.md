@@ -15,7 +15,7 @@ This B2B use case shows you how to specify your data at an account level rather 
 
 You accomplish all this by bringing in the account-level information as a [lookup](/help/getting-started/cja-glossary.md) dataset. 
 
-You first create a lookup schema in Adobe Experience Platform, then create a lookup table data set by ingesting .csv-based account-level data. Then you proceed to create a connection in Customer Journey Analytics (CJA0 that combines different datasets, including the lookup one you created. You then create a data view and finally are able to utilize all this data in Workspace.
+You first create a lookup schema in Adobe Experience Platform, then create a lookup table data set by ingesting .csv-based account-level data. Then you proceed to create a connection in Customer Journey Analytics (CJA0 that combines different datasets, including the lookup one you created. You subsequently create a data view and finally are able to utilize all this data in Workspace.
 
 >[!NOTE]
 >
