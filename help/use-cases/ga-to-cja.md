@@ -126,7 +126,6 @@ For instructions, view this video:
 Once the Adobe Experience Platform has started receiving the live Google Analytics data, and you have backfilled the historical Google Analytics data from BigQuery, you are ready to jump into CJA and
 [create your first connection](/help/connections/create-connection.md). This connection will stitch the GA data together with all of your other customer data using a common "Customer ID”.
 
-
 ## Do some amazing analysis in Workspace
 
-To follow
+More content here.
