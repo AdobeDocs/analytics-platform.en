@@ -73,7 +73,7 @@ This freeform table lets you see the top pages that contribute to call center ev
 1. Drag the dimension that holds your web page names onto a Freeform Table visualization.
 1. Replace the metric with the desired call center metric that you want to measure conversion.
 1. Click the gear icon near the metric header. Click **[!UICONTROL Use non-default attribution model]**.
-1. Set the desired [Attribution model](/help/data-views/configure-dataviews.md#Attribution-model).
+1. Set the desired [Attribution model](/help/data-views/create-dataview.md).
 
 The resulting report shows the top metric from call center data. <!-- Complement with donut visualization -->
 
