@@ -1,7 +1,7 @@
 ---
 title: How to create a new data view in Customer Journey Analytics.
 description: Describes all the settings needed to create new data views.
-exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 ---
 # Create a new data view
 
