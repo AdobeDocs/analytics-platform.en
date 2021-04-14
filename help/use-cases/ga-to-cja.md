@@ -79,7 +79,8 @@ Refer to [these instructions](https://support.google.com/analytics/answer/702984
 
 Next, you will export the Google Analytics events to Google Cloud Storage in JSON format. Just click **Export > Export to GCS**. Once there, the data is ready to be pulled into Adobe Experience Platform.
 
-Refer to [these instructions](https://support.google.com/analytics/answer/3437719?hl=en&ref_topic=3416089).
+Refer to [these instructions for Universal Analytics](https://support.google.com/analytics/answer/3437719?hl=en&ref_topic=3416089).
+Refer to [these instructions for Google Analytics 4](https://support.google.com/analytics/answer/7029846?hl=en).
 
 ### 4. Import the data from Google Cloud Storage into Experience Platform
 
@@ -91,10 +92,11 @@ Keep this in mind:
 * You can select an existing dataset, or create a new dataset (recommended).
 * Make sure to select the same schema for historical Google Analytics data and live streaming Google Analytics data, even if they are in separate datasets. You can subsequently merge the datasets in a [CJA connection](/help/connections/combined-dataset.md).
 
-
 View this video for instructions:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332641)
+
+If you want to schedule this import on a recurring basis, please refer to the Google documentation.
 
 ### 5. Import GCS events to Adobe Experience Platform and map to XDM schema
 
@@ -103,6 +105,10 @@ Next, you can map the GA event data into an existing dataset that you created pr
 ![](assets/schema-map.png)
 
 Mappings are very easy to change and you can even create derived or calculated fields from the Google Analytics data. Once you have finished mapping the fields into your XDM schema, you can schedule this import on a recurring basis as well as apply error validation during the ingestion process. This ensures that there aren’t any issues with the data you have imported.
+
+View this video for instructions:
+
+>[!VIDEO](https://video.tv.adobe.com/v/332641)
 
 **Timestamp calculated field**
 
@@ -126,13 +132,13 @@ You can also capture live streaming events from Google Tag Manager directly to A
 
 ### 1. Add Custom Variables
 
-After signing in to the Google Tag Manager account, you need to add Custom Constant Variables related to Adobe org ID and dataset IDs. You probably already have variables in Google Tag Manager that are being sent to Google Analytic, such as the customer email, customer name, language, and customer logged-in status. You need to define 5 new custom variables:
+After signing in to the Google Tag Manager account, you need to add some Custom Constant Variables related to Adobe. You probably already have variables in Google Tag Manager that are being sent to Google Analytic, such as the customer email, customer name, language, and customer logged-in status. You need to define 5 new custom variables:
 
 * Adobe Experience Cloud org ID
 * DCS Streaming endpoint
 * Experience Platform dataset ID
 * Schema reference
-* Page time stamp.
+* Page time stamp
 
 Getting these values ensures that all of the Google Analytics data gets sent to the correct dataset and has the right schema. If you don’t know your Experience Cloud Org or any of the other variables we just mentioned, your Adobe Account manager can help you track it down.
 
@@ -146,10 +152,16 @@ For instructions, view this video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332668)
 
+You can also refer to [Data Ingestion and Google Tag Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=en#module9).
+
 ## Create a Connection in CJA to the Google Analytics dataset
 
 Once the Adobe Experience Platform has started receiving the live Google Analytics data, and you have backfilled the historical Google Analytics data from BigQuery, you are ready to jump into CJA and
 [create your first connection](/help/connections/create-connection.md). This connection will stitch the GA data together with all of your other customer data using a common "Customer ID”.
+
+For instructions, view this video:
+
+>[!VIDEO](https://video.tv.adobe.com/v/332676)
 
 ## Do some amazing analysis in Workspace
 
