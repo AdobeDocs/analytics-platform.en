@@ -17,17 +17,17 @@ Row counts on high-cardinality dimensions may not be precisely reportable. When 
 
    ![](assets/high-cardinality.png)
 
-### 2. Calculated Metrics may return estimates
+### 2. Calculated Metrics may use estimates for some functions and for sort order
 
 When used with highly-cardinal dimensions, some Calculated Metric functions may return estimates, including: Column Maximum, Column Minimum, Row Count, Mean, Median, Percentile, Quartile, Standard Deviation, Variance, Regression Functions, and T and Z Functions. 
 
 In addition, sorting a table column using a calculated metric may be based on an estimate and may not always reflect the exact sort order. A warning message will appear to alert you that estimates may have been used.
 
-Be aware that even though calculated metrics may sometimes return estimates, the column totals are always accurate and are never based on estimates. Likewise, when using standard metrics, estimates are never used to sort a column and always reflect exact sort orders.
+Be aware that even though calculated metrics may sometimes return estimates, the column totals are always accurate and are never based on estimates. Likewise, when using standard metrics, estimates are never used and always reflect exact sort orders.
 
-## Where all dimension values are considered
+### Where all dimension values are considered
 
-Even though there are limitations to some calculated metrics and dimension row counts, be aware that the following capabilities always consider all unique values in any dimension. They consider them regardless of whether a dimension is highly cardinal or not:
+Even though there are limitations to some calculated metrics and dimension row counts, be aware that the following capabilities always consider all unique values in any dimension regardless of whether a dimension is highly cardinal or not:
 
 * Metric attribution and dimension allocation
 * Line-item searches applied to a Freeform table
@@ -42,7 +42,7 @@ In order to eliminate the warnings or estimates that may occur when using dimens
 
 * Add a filter to the column or panel impacted.
 * Apply a search to your Freeform table.
-* Apply a breakdown to the rows of interest, or using the highly-cardinal dimension as a breakdown dimension.
+* Apply a breakdown to the rows of interest, or use the highly-cardinal dimension as a breakdown dimension
 * Add include/exclude criteria to the dimension’s Data View configuration to narrow down the number of unique values present in the dimension.
 
 Using these techniques can often eliminate any undesirable estimations or warnings you experience when using high-cardinal dimensions.
