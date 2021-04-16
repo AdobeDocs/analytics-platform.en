@@ -13,7 +13,7 @@ Depending on the number of events in a specific CJA Connection, the following tw
 
 ### 1. Row counts may not be precisely reportable
 
-Row counts on high cardinality dimensions may not be precisely reportable. When this happens, Freeform tables will provide an indication as shown below:
+Row counts on high-cardinality dimensions may not be precisely reportable. When this happens, Freeform tables will provide an indication, as shown below:
 
    ![](assets/high-cardinality.png)
 
@@ -38,7 +38,7 @@ Even though there are limitations to some calculated metrics and dimension row c
 
 ## Best practices for working with high-cardinal dimensions
 
-In order to eliminate the warnings or estimates that may occur when using dimensions with high cardinality, we recommended that you narrow down the number of rows considered in your report using one of the following methods:
+In order to eliminate the warnings or estimates that may occur when using dimensions with high cardinality, we recommended that you narrow down the number of rows considered in your report, using one of the following methods:
 
 * Add a filter to the column or panel impacted.
 * Apply a search to your Freeform table.
