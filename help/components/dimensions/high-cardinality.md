@@ -17,7 +17,7 @@ Row counts on high cardinality dimensions may not be precisely reportable. When 
 
    ![](assets/high-cardinality.png)
 
-## 2. Calculated Metrics may return estimates
+### 2. Calculated Metrics may return estimates
 
 When used with highly-cardinal dimensions, some Calculated Metric functions may return estimates, including: Column Maximum, Column Minimum, Row Count, Mean, Median, Percentile, Quartile, Standard Deviation, Variance, Regression Functions, and T and Z Functions. 
 
@@ -25,7 +25,7 @@ In addition, sorting a table column using a calculated metric may be based on an
 
 Be aware that even though calculated metrics may sometimes return estimates, the column totals are always accurate and are never based on estimates. Likewise, when using standard metrics, estimates are never used to sort a column and always reflect exact sort orders.
 
-### Where all dimension values are considered
+## Where all dimension values are considered
 
 Even though there are limitations to some calculated metrics and dimension row counts, be aware that the following capabilities always consider all unique values in any dimension. They consider them regardless of whether a dimension is highly cardinal or not:
 
@@ -38,11 +38,11 @@ Even though there are limitations to some calculated metrics and dimension row c
 
 ## Best practices for working with high-cardinal dimensions
 
-In order to eliminate the warnings or estimates that may occur when using dimensions with high cardinality, we recommended that you narrow down the number of rows considered in your report using one of the following methods:
+To eliminate the warnings or estimates that may occur when using dimensions with high cardinality, we recommended that you narrow down the number of rows considered in your report, using one of the following methods:
 
 * Add a filter to the column or panel impacted.
 * Apply a search to your Freeform table.
-* Apply a breakdown to the rows of interest, or using the highly-cardinal dimension as a breakdown dimension
+* Apply a breakdown to the rows of interest, or using the highly-cardinal dimension as a breakdown dimension.
 * Add include/exclude criteria to the dimension’s Data View configuration to narrow down the number of unique values present in the dimension.
 
 Using these techniques can often eliminate any undesirable estimations or warnings you experience when using high-cardinal dimensions.
