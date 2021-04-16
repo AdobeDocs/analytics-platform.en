@@ -129,6 +129,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Preview dimensions](components/dimensions/view-dimensions.md)
     + [Break down dimensions](components/dimensions/t-breakdown-fa.md)
     + [Time-parting dimensions](components/dimensions/time-parting-dimensions.md)
+    + [Dimensions with very high cardinality](components/dimensions/high-cardinality.md)
   + [Metrics](components/apply-create-metrics.md)
   + Filters {#cja-filters}
     + [Filters overview](components/filters/filters-overview.md)
