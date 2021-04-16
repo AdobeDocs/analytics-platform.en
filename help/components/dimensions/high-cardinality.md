@@ -1,8 +1,8 @@
 ---
 title: Dimensions with very high cardinality in Customer Journey Analytics
 description: Describes best practices in dealing with high-cardinality dimensions in Customer Journey Analytics
+exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 ---
-
 # Dimensions with very high cardinality
 
 Customer Journey Analytics (CJA) does not place limits on the number of unique values or dimension items that can be reported on within a single dimension. However, in some circumstances, dimensions with an extremely large number of unique items - also known as high-cardinality dimensions - may impact what can be reported on. 
