@@ -42,7 +42,7 @@ In order to eliminate the warnings or estimates that may occur when using dimens
 
 * Add a filter to the column or panel impacted.
 * Apply a search to your Freeform table.
-* Apply a breakdown to the rows of interest, or use the highly-cardinal dimension as a breakdown dimension
+* Apply a breakdown to the rows of interest, or use the highly-cardinal dimension as a breakdown dimension.
 * Add include/exclude criteria to the dimension’s Data View configuration to narrow down the number of unique values present in the dimension.
 
 Using these techniques can often eliminate any undesirable estimations or warnings you experience when using high-cardinal dimensions.
