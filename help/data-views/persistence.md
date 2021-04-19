@@ -53,7 +53,7 @@ There are four ways to expire a dimension value:
 
 * Session (default): Expires after a given session.
 * Person: Expires at the end of your reporting window.
-* Time: You can set the dimension value to expire after a specified time period or event. This expiration option is only available for Original and Most Recent allocation models.
+* Time: You can set the dimension value to expire after a specified time period (up to 90 days). This expiration option is only available for Original and Most Recent allocation models. When using time based expiration, values previous to the start of your reporting window (up to 90 days) are considered.
 * Metric: You can specify any of the defined metrics as the expiration end for this dimension (e.g. a "Purchase" metric). This expiration is only available for Original and Most Recent allocation models.
 
 ### What's the difference between Allocation and Attribution?
