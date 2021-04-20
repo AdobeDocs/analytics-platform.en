@@ -93,10 +93,6 @@ You can map the GA event data into an existing dataset that you created previous
 
 Mappings are very easy to change and you can even create derived or calculated fields from the Google Analytics data. Once you have finished mapping the fields into your XDM schema, you can schedule this import on a recurring basis as well as apply error validation during the ingestion process. This ensures that there aren’t any issues with the data you have imported.
 
-View this video for instructions:
-
->[!VIDEO](https://video.tv.adobe.com/v/332641)
-
 **'Timestamp' calculated field**
 
 For the `timestamp` schema field in Google Analytics data, you have to create a special calculated field in the Experience Platform schema UI. Click **[!UICONTROL Add calculated field]** and wrap the `timestamp` string in a `date` function, like this:
