@@ -150,6 +150,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
   + [Use Marketing channel dimensions](use-cases/marketing-channels.md)
   + [Add global lookups to your datasets](use-cases/global-lookups.md)
   + [Ingest Google Analytics data into Adobe Experience Platform](use-cases/ga-to-cja.md)
+  + [Report on Google Analytics data in CJA](use-cases/ga-to-cja-reporting.md)
 + Analytics dashboards {#cja-dashboards}
   + [Analytics dashboards - Overview](mobile-app/home.md)
   + [Curator guide](mobile-app/curator.md)
