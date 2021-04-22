@@ -12,9 +12,10 @@ The following updates were made to the CJA documentation since its inception.
 | April 2021 | New topics on the [enhanced Data Views experience](/help/data-views/data-views.md). |
 | April 2021 | New topics on [ingesting Google Analytics data](/help/use-cases/ga-to-cja.md) and [analyzing that data](/help/use-cases/ga-to-cja-reporting.md) |
 | April 2021 | Added topic on [scheduled reports](/help/analysis-workspace/curate-share/t-schedule-report.md) in Workspace |
-| February 2021 | New topic on using [Marketing Channel dimensions in Adobe Experience Platform](/help/use-cases/marketing-channels.md) |
+| April 2021 | New topic on [high-cardinality dimensions in CJA](help/components/dimensions/high-cardinality.md) |
 | March 2021 | Added topic on support for [Analytics dashboards](/help/mobile-app/home.md) (mobile app) |
 | March 2021 | New topic on [user preferences](/help/analysis-workspace/user-preferences.md) in Workspace |
+| February 2021 | New topic on using [Marketing Channel dimensions in Adobe Experience Platform](/help/use-cases/marketing-channels.md) |
 | February 2021 | Published the new [CJA API](https://www.adobe.io/cja-apis/docs/) documentation |
 | January 2021 | New topic on [adding global lookups to your dataset](/help/use-cases/global-lookups.md) |
 | November 13, 2020 | New topics on [Cross-Channel Analytics](/help/connections/cca/overview.md), which allows you to re-key a dataset's person ID, which enables a seamless combination of multiple datasets. |
