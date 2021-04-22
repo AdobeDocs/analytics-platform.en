@@ -9,7 +9,7 @@ A data view sits on top of a Customer Journey Analytics (CJA) [connection](/help
 
 >[!NOTE]
 >
->Any settings that you select or change in a data view are retroactive and non-destructive. In other words, they will not change your underlying data permanently.
+>Any settings that you select or change in a data view are retroactive and non-destructive. In other words, they do not permanently change your underlying data .
 
 You can create different data views for the same connection, with very different sets of components (dimensions/metrics). Or create data views with different settings for visit timeout, attribution, etc.. For example, you could have one data view where all dimensions are set to [!UICONTROL Last Touch], and simultaneously, another data view (based on the same dataset) with all dimensions set to [!UICONTROL First Touch]. 
 
@@ -53,20 +53,20 @@ The latest update to data views gives you a lot more flexibility in what you can
 
 Some data view settings can be overridden in Analysis Workspace at the project level, others cannot.
 
-* Lookback window
-* Metric Attribution
-* Whether or not users see the 'No Value' line item in a report
+* [!UICONTROL Lookback window]
+* Metric attribution
+* Whether or not users see the [!UICONTROL No Value] line item in a report
 
 ## Data view settings you cannot override in Workspace
 
-* Component type
+* [!UICONTROL Component type]
 * Metric formatting
 * Data view name
 * Dimension allocation
 
 ## Delete data views
 
-If you delete a data view in [!UICONTROL Customer Journey Analytics], an error message will indicate that any Workspace projects that depend on this deleted data view will no longer work.
+If you delete a data view in [!UICONTROL Customer Journey Analytics], an error message will indicate that any [!UICONTROL Workspace] projects that depend on this deleted data view will no longer work.
 
 ## Next steps
 
