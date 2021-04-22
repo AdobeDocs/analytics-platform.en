@@ -5,10 +5,6 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78
 ---
 # Create a new data view
 
->[!IMPORTANT]
->
->This functionality will be generally available on April 22, 2021.
-
 Creating a data view involves either creating metrics and dimensions from schema elements or utilizing standard components. Creating metrics or dimensions gives you an enormous amount of flexibility. Previously, the assumption was that if you had datasets in Adobe Experience Platform, string fields were used as dimensions and numeric fields were used as metrics. In order to change any of these fields, you had to edit your schema in Platform. The data views UI now allows a [more freeform definition of metrics and dimensions](/help/data-views/data-views.md). For more use cases, see [Data views use cases](/help/data-views/data-views-usecases.md).
 
 ## 1. Configure Data Views settings and containers

@@ -5,10 +5,6 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 ---
 # What is a data view?
 
->[!IMPORTANT]
->
->This functionality will be generally available on April 22, 2021.
-
 A data view sits on top of a Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). A connection combines one or more datasets from Adobe Experience Platform and connects it to CJA. The data view specifies how you want to interpret elements of the data in the connection, such as metrics, dimensions, sessions, etc.. Data views are defined in preparation for reporting on the data in Workspace. 
 
 >[!NOTE]

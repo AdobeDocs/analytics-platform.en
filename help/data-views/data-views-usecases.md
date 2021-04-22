@@ -5,10 +5,6 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 ---
 # Data views use cases
 
->[!IMPORTANT]
->
->This functionality will be generally available on April 22, 2021.
-
 These use cases show the flexibility and power of data views in Customer Journey Analytics.
 
 ## Create an Orders metric from a pageTitle (string) schema field
