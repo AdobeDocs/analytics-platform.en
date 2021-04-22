@@ -143,7 +143,6 @@ Once the Adobe Experience Platform has started receiving the live Google Analyti
 
 ## Next steps
 
-* Create a data view based on Google Analytics data
-  Next, you [create a data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#cja-dataviews) in CJA, based on the connection that contains the Google Analytics data.
+* Create a [data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#cja-dataviews) based on the connection that contains Google Analytics data.
 
-* Do some amazing analysis in [Workspace](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/home.html?lang=en#cja-workspace). Check back later for some reporting use cases.
+* Do some amazing [analysis in Workspace](/help/use-cases/ga-to-cja-reporting.md).
