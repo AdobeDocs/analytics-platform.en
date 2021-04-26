@@ -165,7 +165,7 @@ Besides creating metrics and dimensions from schema elements, you can also use s
 
 ![](assets/standard-components.png)
 
-These required standard components are added to your data view by default.
+These required standard components are added to each data view by default.
 
 | Component Name | Dimension or Metric | Notes |
 | --- | --- | --- |
