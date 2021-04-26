@@ -29,7 +29,9 @@ The following tables list which features in Adobe Analytics are supported, parti
 | User Permissions/Data Access Controls | CJA distinguishes between Adobe Admin Console product admins and users. Only product admins are able to 1) create/update/delete Connections or Data Views, 2) update/delete projects, filters, or calc metrics that were created by other users, and 3) share a Workspace project to all users |
 | Cross-device/cross-channel stitching | See [Cross-Channel Analytics](/help/connections/cca/overview.md). |
 | Out-of-the-box Analysis Workspace dimensions (e.g. Browser Type, Referrer Type, Operating System etc.) | CJA provides these dimensions natively as long as the base XDM fields (such as user agent or device ID) are populated. For customers using the Analytics Data Connector (ADC), some of these dimensions are available, but not all. Please refer to our [documentation on which Analytics variables are supported via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
-| Reporting API Access | Currently available using the Analytics API 2.0. |
+| Reporting API Access | Now available using the [CJA API](https://www.adobe.io/cja-apis/docs/). |
+| Scheduled Reports/Projects | Full Support |
+| PDF Export | Full Support |
 
 ## Supported with caveats
 
@@ -67,9 +69,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Custom Calendars | Support is planned. |
 | Metric deduplication | Support is planned. |
 | Merchandising variable persistence | Support is planned. |
-| Scheduled Reports/Projects | Support is planned. |
 | Alerts | Support is planned. |
-| PDF Export | Support is planned. |
 | ID Stitching via Device Graph | Support is planned. |
 | Report Builder (Excel plugin) | Support is planned. |
 | Real-Time Reporting | Support is planned. |
