@@ -169,9 +169,9 @@ These required standard components are added to each data view by default.
 
 | Component Name | Dimension or Metric | Notes |
 | --- | --- | --- |
-| [!UICONTROL People] | Metric | This metric is based on the person ID specified in a Connection. |
+| [!UICONTROL People] | Metric | This metric is based on the person ID specified in a [!UICONTROL Connection]. |
 | [!UICONTROL Sessions] | Metric | This metric is based on the sessionization settings specified below. |
-| [!UICONTROL Events] | Metric | This metric represents the number of rows from all event datasets in a Connection. |
+| [!UICONTROL Events] | Metric | This metric represents the number of rows from all event datasets in a [!UICONTROL Connection]. |
 | [!UICONTROL Day] | Dimension | The ‘Day’ dimension reports the day that a given metric occurred. The first dimension item is the first day in the date range, and the last dimension item is the last day in the date range. |
 | [!UICONTROL Week] | Dimension | The ‘Week’ dimension reports the week that a given metric occurred. The first dimension item is the first week in the date range, and the last dimension item is the last week in the date range.|
 | [!UICONTROL Month] | Dimension | The Month dimension reports the month that a given metric occurred. The first dimension item is the first month in the date range, and the last dimension item is the last month in the date range. |
