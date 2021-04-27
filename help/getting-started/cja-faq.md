@@ -15,6 +15,8 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 | b | Do I need [!UICONTROL Experience Cloud ID] (ECID) for [!UICONTROL Customer Journey Analytics]? | No, [!UICONTROL Customer Journey Analytics] supports any ID in a dataset, whether that's [!UICONTROL ECID] or any other ID you choose. |
 | c | What if I need to ETL (Extract, Transform, Load) my data prior to [!UICONTROL Customer Journey Analytics]? | Customer Journey Analytics includes [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html) capabilities to help transform your data before putting it into Adobe Experience Platform data lake. If you need ETL after the data has already been ingested, [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html?lang=en#queries) provides some limited options, although there may be extra fees involved. |
 
+{style="table-layout:auto"}
+
 ## 2. Stitching data (Cross-Channel Analytics)
 
 | # | Question | Answer |
@@ -23,6 +25,8 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 | b | Is stitching from anonymous behavior to authenticated behavior supported? | Yes. [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) looks at user data from both authenticated and unauthenticated sessions to generate a stitched ID. |
 | c | How does 'replay' work in CCA? | CCA “replays” data based on unique identifiers it has learned. Replay causes new devices to the connection to become stitched. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=en#step-1%3A-live-stitching) |
 | d | How does stitching historical data (backfill) work in CCA? | When first turned on, Adobe provides a backfill of stitched data that goes back as far as the beginning of the previous month (up to 60 days.) In order to do this backfill, the transient ID must exist in the unstitched data that far back in time. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#enable-cross-channel-analytics) |
+
+{style="table-layout:auto"}
 
 ## 3. Getting data into [!UICONTROL Customer Journey Analytics]
 
@@ -36,6 +40,8 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 | f | How long does it take to assemble dataset elements into a data view? | A few hours to get started, and a few days to backfill the last 13 months of data. |
 | g | Is it necessary to bring PII data to establish connections between the data? | No, you can use any ID, including a hash of a customer ID, which is not PII. |
 
+{style="table-layout:auto"}
+
 ## 4. Traditional [!UICONTROL Adobe Analytics] components
 
 | # | Question | Answer |
@@ -45,7 +51,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 | c | Where are all my session and variable persistence settings now? | [!UICONTROL Customer Journey Analytics] applies all of these settings at report time, and these settings now live in Data Views. Changes to these settings are now retroactive, and you can have multiple versions by using multiple Data Views! |
 | d | What happens to our existing segments/calculated metrics? | [!UICONTROL Customer Journey Analytics] no longer uses eVars, props, or events and instead uses any AEP schema. This means none of the existing segments or calc metrics are compatible with [!UICONTROL Customer Journey Analytics]. |
 | e | How does [!UICONTROL Customer Journey Analytics] handle `Uniques Exceeded` limitations? | [!UICONTROL Customer Journey Analytics] has no unique value limitations, so no need to worry about them! |
-| f | If I am an existing [!DNL Data Workbench] customer, can I move to [!UICONTROL Customer Journey Analytics] right now? | It depends on your use case - please work with your Adobe Account team. Your current use cases may already be a good fit for Customer Journey Analytics. |
+| f | If I am an existing [!DNL Data Workbench] customer, can I move to [!UICONTROL Customer Journey Analytics] right now? | It depends on your use case - please work with your Adobe Account team. Your current use cases may already be a good fit for Customer Journey Analytics! |
+
+{style="table-layout:auto"}
 
 ## 5. Implications of deleting data components
 
