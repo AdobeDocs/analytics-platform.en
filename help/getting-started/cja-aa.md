@@ -37,7 +37,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 
 | Feature | Notes |
 | --- | --- |
-
 | Classifications | Now called "Lookup Datasets". Classifications used in Analytics can be imported to the Experience Platform and CJA using the Analytics Classifications Data Connector. Lookup datasets can also be uploaded to AEP directly and made available in CJA. |
 | Custom Sessionization | Support for all custom sessionization features other than mobile background hits. |
 | Customer Attributes | Now called "Profile Datasets", they do not get automatically imported from Experience Cloud, but will have to be uploaded to AEP before they're available in CJA. |
