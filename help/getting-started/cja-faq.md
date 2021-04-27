@@ -30,8 +30,8 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 
 ## 3. Getting data into [!UICONTROL Customer Journey Analytics]
 
-| # | Question | Answer |
-| --- | --- | --- |
+| Question | Answer |
+| --- | --- |
 | Can I combine data from different [!UICONTROL Adobe Experience Platform] sandboxes in one [!UICONTROL Customer Journey Analytics] connection? | No, you cannot access data across sandboxes. You can combine only datasets that are located within the same sandbox. [Learn more](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets) |
 | What is the expected latency for [!UICONTROL Customer Journey Analytics] on [!UICONTROL Adobe Experience Platform]? | <ul><li>Under normal load: < 60 minutes<br>**Note:** In case of an unusually high volume of data flow through the pipeline, it could take up to 24 hours.</li><li>Backfill data (up to 13 months of data, irrespective of size): < 4 weeks</li></ul> |
 | How do I connect online data to offline data in [!UICONTROL Customer Journey Analytics]? | As long as the person ID matches between datasets, [!UICONTROL Customer Journey Analytics] can connect filters, attribution, flow, fallout, etc. across datasets. |
