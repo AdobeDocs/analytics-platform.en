@@ -14,10 +14,6 @@ In traditional Adobe Analytics, these dimensions show up on their own, whereas i
 
 Global lookup datasets automatically get applied at report time. If you are using the [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#connectors) and you bring in a dimension for which Adobe provides a global lookup, we automatically apply this global lookup. If an event dataset contains [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en) fields, we can apply global lookups to it.
 
-## Use global lookups with custom datasets
-
-A key needs to be present in the event dataset that is compatible with the global lookup datasets. As long as you populate the right XDM fields by adding some of our standard [Adobe Experience Platform schema mixins](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=en#mixins), you can make custom datasets work with global lookups. 
-
 ## Available global lookup fields
 
 * `browser`
