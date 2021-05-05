@@ -10,10 +10,6 @@ For each schema location that Adobe is classifying, a global lookup dataset exis
 
 In traditional Adobe Analytics, these dimensions show up on their own, whereas in CJA, you have to actively include these dimensions when you create data views. When a user, in the Connections workflow, selects a dataset that is flagged as one with a key for global lookups, then the data views UI knows to include all the of the global lookup dimensions as available for reporting. The data views workflow knows to include these global lookup dimensions as available for the data view. The lookup files are automatically kept up to date and available, across all regions and for all accounts. They are stored in region-specific organizations associated with the customer.
 
-## Use global lookups with Adobe Data Connector datasets
-
-Global lookup datasets automatically get applied at report time. If you are using the [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#connectors) and you bring in a dimension for which Adobe provides a global lookup, we automatically apply this global lookup. If an event dataset contains [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en) fields, we can apply global lookups to it.
-
 ## Available global lookup fields
 
 * `browser`
