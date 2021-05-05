@@ -9,6 +9,10 @@ Global lookups enhance the ability of Customer Journey Analytics to report on so
 
 In traditional Adobe Analytics, these dimensions show up on their own, whereas in CJA, you have to actively include these dimensions when you create data views. In the Connections workflow, you select a dataset that is flagged as one with a key for global lookup. The Data Views UI automatically knows to include all the global lookup dimensions as available for reporting. The lookup files are automatically kept up to date and available, across all regions and for all accounts. They are stored in region-specific organizations associated with the customer.
 
+## Use global lookups with Adobe Data Connector datasets
+
+Global lookup datasets automatically get applied at report time. If you use the Analytics Data Connector and you bring in a dimension for which Adobe provides a global lookup, we automatically apply this global lookup. If an event dataset contains XDM fields, we can apply global lookups to it.
+
 ## Available global lookup fields
 
 * `browser`
