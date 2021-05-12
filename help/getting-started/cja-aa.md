@@ -56,7 +56,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Media Analytics | Media data is available as part of the Analytics Data Connector. |
 | Merchandising eVars | The behavior of Merchandising eVars can be achieved using dimensions within an Object Array given a merchandising eVar is not set to use persistence. Currently, merchandising dimension persistence is not available. |
 | Panels | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. The Segment Comparison, Analytics for Target (A4T), and Media Concurrent Viewers panels are not supported. |
-| Processing Rules | For Analytics Data Connector-based datasets, processing rules are still applied. |
+| Processing Rules | For Analytics Data Connector-based datasets, processing rules are still applied. [Data prep capabilities in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) can also be used as a replacement for processing rules for data that is going directly to Platform. |
 
 ## Not currently supported, but planned
 
