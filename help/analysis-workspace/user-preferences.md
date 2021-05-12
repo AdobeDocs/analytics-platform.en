@@ -5,10 +5,6 @@ exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 ---
 # User preferences
 
->[!NOTE]
->
->This feature is coming soon. General Availability is March 25, 2021.
-
 The [!UICONTROL Components] > [!UICONTROL User preferences] page lets you manage Analysis Workspace settings and its related components for your users. User preferences apply to *all* new projects or panels.
 
 ![User preferences](assets/user-preferences.png)
