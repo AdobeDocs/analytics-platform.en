@@ -15,9 +15,9 @@ You can create different data views for the same connection, with very different
 
 Workspace projects in Customer Journey Analytics are based on data views.
 
-## What's new in data views?
+## Data views capabilities
 
-The latest update to data views gives you a lot more flexibility in what you can do with data views. These enhancements let you **spontaneously change schema element settings in Data Views, without having to change the schema in Adobe Experience Platform or re-implementing your CJA environment**.
+Data views let you spontaneously change schema element settings, without having to change the schema in Adobe Experience Platform or re-implementing your CJA environment.
 
 * **You can change a component from a Metric to a Dimension and vice versa**. You can create metrics from string fields or create dimensions from numeric fields. This makes your life easier, because you don't have to create a numeric field in your XDM schema for every metric you want. Instead, you can just spontaneously create it in the data views dialog. Here are some examples:
   * **Create one or more and/or one dimensions from a single schema field**. It's a one-to-many relationship. For example, you could create one or more Revenue metrics and/or one or more Revenue dimensions from a single schema field.

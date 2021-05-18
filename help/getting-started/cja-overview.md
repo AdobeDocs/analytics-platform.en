@@ -58,6 +58,10 @@ To create connections, add datasets, etc., you need the following permissions in
   
 For more information on Experience Platform permissions, see [Access control in Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
 
+>[!NOTE]
+>
+>You cannot permission individual metrics or dimensions in Customer Journey Analytics, like you can in traditional Adobe Analytics. Metrics and dimensions can be modified in data views and are thus subject to change in CJA, which also changes reporting retroactively.
+
 ### User access
 
 Non-product admins (users) in Customer Journey Analytics cannot view Data Views or Connections, but can create filters, projects, and calculated metrics.
