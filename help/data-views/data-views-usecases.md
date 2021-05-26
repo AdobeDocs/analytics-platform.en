@@ -7,7 +7,7 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 
 These use cases show the flexibility and power of data views in Customer Journey Analytics.
 
-## Create an Orders metric from a pageTitle (string) schema field
+## 1. Create an Orders metric from a pageTitle (string) schema field
 
 For example, when creating a data view, you could create an [!UICONTROL Orders] metric from a [!UICONTROL pageTitle] schema field that is a string. Here are the steps:
 
@@ -22,7 +22,7 @@ For example, when creating a data view, you could create an [!UICONTROL Orders] 
 1. You can further specify an attribution model for this metric, such as [!UICONTROL Last Touch], with a [!UICONTROL Lookback window] of [!UICONTROL Session].
    You can also create another [!UICONTROL Orders] metric from the same field and specify a different attribution model for it, such as [!UICONTROL First Touch], and a different [!UICONTROL Lookback window], such as [!UICONTROL 30 days].
 
-## Use integers as dimensions
+## 2. Use integers as dimensions
 
 Previously, integers would automatically be treated as metrics in CJA. Now, numerics (including custom events from Adobe Analytics) can be treated as dimensions. Here is an example:
 
@@ -34,13 +34,30 @@ Previously, integers would automatically be treated as metrics in CJA. Now, nume
 
    ![](assets/bucketing.png)
 
-## Use numeric dimensions as "metrics" in flow diagrams
+## 3. Use numeric dimensions as "metrics" in flow diagrams
 
-You can use a numeric dimension to get “metrics” into your [!UICONTROL  Flow] visualization. The example below shows [!UICONTROL Marketing Channels] flowing into [!UICONTROL Orders]:
+You can use a numeric dimension to get “metrics” into your [!UICONTROL  Flow] visualization. 
+
+1. On the Data Views [Components](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) tab, drag the [!UICONTROL Marketing Channels] schema field into the [!UICONTROL Metrics] area under [!UICONTROL Included components]. 
+2. In Workspace reporting, this flow shows [!UICONTROL Marketing Channels] flowing into [!UICONTROL Orders]:
 
 ![](assets/flow.png)
 
-## Include or exclude metric values
+## 4. Do sub-event filtering
 
-For more information on other data views settings, see [Create data views](/help/data-views/create-dataview.md).
-For a conceptual overview of data views, see [Data views overview](/help/data-views/data-views.md).
+You can filter events to display only what you want to see. For example, use the include/exclude functionality in Data Views to focus only on products that generated sales of more than $50. So if you have an order that includes a $50 product purchase and a $25 product purchase, we would remove only the $25 product purchase, not the entire order.
+
+1. On the Data Views [Components](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) tab, drag the [!UICONTROL Orders] schema field into the [!UICONTROL Metrics] area under [!UICONTROL Included components].
+1. Select the metric and configure the following on the right side:
+   1. Under [!UICONTROL Format], select [!UICONTROL Currency].
+   1. Under [!UICONTROL Currency], select USD.
+   1. Under [!UICONTROL Include/Exclude Values], select the checkbox next to [!UICONTROL Set include/exclude values].
+   1. Under [!UICONTROL Match], select [!UICONTROL If all criteria are met].
+   1. Under [!UICONTROL Criteria], select [!UICONTROL is greater than or equal].
+   1. Specify "50" as the value.
+
+
+>[!More Like This]
+> 
+>For more information on other data views settings, see [Create data views](/help/data-views/create-dataview.md).
+>For a conceptual overview of data views, see [Data views overview](/help/data-views/data-views.md).
