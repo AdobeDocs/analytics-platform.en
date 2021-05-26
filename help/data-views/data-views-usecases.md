@@ -56,8 +56,5 @@ You can filter events to display only what you want to see. For example, use the
    1. Under [!UICONTROL Criteria], select [!UICONTROL is greater than or equal].
    1. Specify "50" as the value.
 
-
->[!More Like This]
-> 
->For more information on other data views settings, see [Create data views](/help/data-views/create-dataview.md).
->For a conceptual overview of data views, see [Data views overview](/help/data-views/data-views.md).
+For more information on other data views settings, see [Create data views](/help/data-views/create-dataview.md).
+For a conceptual overview of data views, see [Data views overview](/help/data-views/data-views.md).
