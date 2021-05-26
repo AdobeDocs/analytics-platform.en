@@ -45,7 +45,7 @@ You can use a numeric dimension to get “metrics” into your [!UICONTROL  Flow
 
 ## 4. Do sub-event filtering
 
-You can filter events to display only what you want to see. For example, use the include/exclude functionality in Data Views to focus only on products that generated sales of more than $50. So if you have an order that includes a $50 product purchase and a $25 product purchase, we would remove only the $25 product purchase, not the entire order.
+You can filter events to display only what you want to see. For example, use the include/exclude functionality in Data Views to focus only on products that generated sales of more than 50 Dollars. So if you have an order that includes a 50 Dollar product purchase and a 25 Dollar product purchase, we would remove only the 25 Dollar product purchase, not the entire order.
 
 1. On the Data Views [Components](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) tab, drag the [!UICONTROL Orders] schema field into the [!UICONTROL Metrics] area under [!UICONTROL Included components].
 1. Select the metric and configure the following on the right side:
