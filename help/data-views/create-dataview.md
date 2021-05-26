@@ -65,9 +65,9 @@ You can see the [!UICONTROL Connection] at the top left, which contains the data
 | [!UICONTROL Field Name] | The name of the schema field. |
 | [!UICONTROL Dataset type] | Required. A non-editable field showing which dataset type (event, lookup, or profile) the component came from. |
 | [!UICONTROL Dataset] | Required. A non-editable field showing which type of field the component came from (e.g. String, Integer, etc.). This field can contain multiple datasets. |
-| [!UICONTROL Schema type] | Refers to whether the component is a string, integer, etc. |
+| [!UICONTROL Schema Data Type] | Refers to whether the component is a string, integer, etc. |
 | [!UICONTROL Component ID] | Required. The [CJA API](https://adobe.io/cja-apis/docs) uses this field to reference the component. You can click the edit icon and modify this component ID. However, changing this component ID breaks all existing Workspace projects that contain this component.<br>If you ever create another data view that uses a different field for a pageTitle dimension, you can rename it and make the dimension cross-data view compatible. |
-| [!UICONTROL Path] | Required. A non-editable field showing the schema path that the component came from. |
+| [!UICONTROL Schema Path] | Required. A non-editable field showing the schema path that the component came from. |
 | [!UICONTROL Hide component in reporting] | Default = off. Lets you curate the component out of the Data View when used in reporting. This does not impact permissions, just component curation. In other words, you can hide the component from non-Admins in reporting. Admins can still access it by clicking [!UICONTROL Show All Components] in an Analysis Workspace project. |
 
 ### Configure Format settings
@@ -115,6 +115,7 @@ For example, you could create a dimension out of the pageTitle field, but call i
 
 | Setting | Description/Use case |
 | --- | --- |
+| [!UICONTROL Count values] | For Boolean metrics only, this setting allows you to specify whether you want to [!UICONTROL Count True], [!UICONTROL Count False], or [!UICONTROL Count True or False] as the metric value. The default is [!UICONTROL Count True]. |
 | [!UICONTROL Count instances] | Lets you specify whether a numeric or date type field used as a metric should count the times it was set rather than the value itself.<br> If you want to add up the instances of a numeric field and want to simply add up the number of times a field was *set* rather than the actual value inside.<br>This is useful for creating an [!UICONTROL Orders] metric from a [!UICONTROL Revenue] field, for example. If revenue was set, then we want to count 1 single order rather than the numeric revenue amount. |
 
 ### Configure [!UICONTROL No Value Options] settings
