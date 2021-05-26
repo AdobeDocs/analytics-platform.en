@@ -47,14 +47,36 @@ You can use a numeric dimension to get “metrics” into your [!UICONTROL  Flow
 
 You can filter events to display only what you want to see. For example, use the include/exclude functionality in Data Views to focus only on products that generated sales of more than 50 Dollars. So if you have an order that includes a 50 Dollar product purchase and a 25 Dollar product purchase, we would remove only the 25 Dollar product purchase, not the entire order.
 
-1. On the Data Views [Components](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) tab, drag the [!UICONTROL Orders] schema field into the [!UICONTROL Metrics] area under [!UICONTROL Included components].
+1. On the Data Views [Components](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) tab, drag the [!UICONTROL Revenue] schema field into the [!UICONTROL Metrics] area under [!UICONTROL Included components].
 1. Select the metric and configure the following on the right side:
-   1. Under [!UICONTROL Format], select [!UICONTROL Currency].
-   1. Under [!UICONTROL Currency], select USD.
-   1. Under [!UICONTROL Include/Exclude Values], select the checkbox next to [!UICONTROL Set include/exclude values].
-   1. Under [!UICONTROL Match], select [!UICONTROL If all criteria are met].
-   1. Under [!UICONTROL Criteria], select [!UICONTROL is greater than or equal].
-   1. Specify "50" as the value.
+   a. Under [!UICONTROL Format], select [!UICONTROL Currency].
+   b. Under [!UICONTROL Currency], select USD.
+   c. Under [!UICONTROL Include/Exclude Values], select the checkbox next to [!UICONTROL Set include/exclude values].
+   d. Under [!UICONTROL Match], select [!UICONTROL If all criteria are met].
+   e. Under [!UICONTROL Criteria], select [!UICONTROL is greater than or equal].
+   f. Specify "50" as the value.
+
+These new settings allow you to view only high-value revenue and filter out anything below $50.
+
+## 5. Utilize the [!UICONTROL No Value Options] setting
+
+Your company may have spent time training your users to expect "Unspecified" in reports. The default in Data Views is "No Value". You can now [rename "No Value" to "Unspecified"](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings) in the Data Views UI. 
+
+## 6. Use the [!UICONTROL Duplicate] feature
+
+Duplicating a metric and then modifying specific settings is an easy way to create multiple metrics or dimensions from a single schema field.
+
+Just select the Duplicate setting underneath the metric's or dimensions's name at the top right:
+
+![](assets/duplicate.png)
+
+## Create multiple metrics with different Attribution settings
+
+Using the [!UICONTROL Duplicate] feature mentioned above, create a number of Revenue metrics with different attribution settings like [!UICONTROL First Touch], [!UICONTROL Last Touch], and [!UICONTROL Algorithmic].
+
+Don't forget to rename each metric to reflect the differences, such as "Algorithmic Revenue":
+
+![](assets/algo-revenue.png)
 
 For more information on other data views settings, see [Create data views](/help/data-views/create-dataview.md).
 For a conceptual overview of data views, see [Data views overview](/help/data-views/data-views.md).
