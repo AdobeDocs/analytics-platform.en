@@ -8,13 +8,13 @@ exl-id: 464032a1-6dae-4df5-b4db-b277788e88c2
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 You can choose whether to create a project from:
 
 * **Blank project (default)**: For instructions, see [Create an Analysis Workspace Project](/help/analysis-workspace/home.md).
 * **Standard template**: These templates are created by Adobe and ship with the product.
-* **Custom template**: These templates can be created, shared, or deleted by users with admin rights or by non-admins, provided they have been granted the [!UICONTROL Analysis Workspace: Save as Template] permission in the Admin Console. [Learn more...](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/product-profile.html)
+* **Custom template**: These templates can be created, shared, or deleted by users with admin rights or by non-admins, provided they have been granted the [!UICONTROL Analysis Workspace: Save as Template] permission in the Admin Console. [Learn more...](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html)
 
 ![](assets/start_modal.png)
 

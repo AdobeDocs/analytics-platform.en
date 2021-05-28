@@ -23,7 +23,7 @@ You first create a lookup schema in Adobe Experience Platform, then create a loo
 
 ## 1. Create lookup schema (Experience Platform)
 
-Creating your own schema for the [lookup](/help/getting-started/cja-glossary.md) table ensures that the dataset used will be available in CJA with the correct setup (record type). Best practice is to [create a custom schema class](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) called “Lookup”, empty of any element, that can be re-used for all lookup tables.
+Creating your own schema for the [lookup](/help/getting-started/cja-glossary.md) table ensures that the dataset used will be available in CJA with the correct setup (record type). Best practice is to [create a custom schema class](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) called “Lookup”, empty of any element, that can be re-used for all lookup tables.
 
 ![](assets/create-new-class.png)
 
@@ -47,9 +47,9 @@ For example, annualRevenue or totalEmployees are defined as Integer in following
 
 ## 3. Ingest data into Experience Platform
 
-Instructions on how to [Map a CSV file to an XDM schema](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/map-a-csv-file.html) should help if you are using a CSV file.
+Instructions on how to [Map a CSV file to an XDM schema](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html) should help if you are using a CSV file.
 
-[Other methods](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) are available as well.
+[Other methods](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) are available as well.
 
 On-boarding the data and establishing the lookup takes about 2 to 4 hours, depending on the size of the lookup table.
 

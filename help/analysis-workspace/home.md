@@ -30,7 +30,7 @@ Once logged in, your first stop should be the Analysis Workspace Training Tutori
 
 ## Create a new project {#new-project}
 
-With the tutorial complete, you are ready to begin building your first project. The **new project modal** provides you with different options for starting your analysis. You can choose to start from a blank project or [blank mobile scorecard](https://docs.adobe.com/content/help/en/analytics/analyze/mobapp/curator.html), depending on whether you plan to share your analysis from the browser or the Adobe Analytics dashboards mobile app.
+With the tutorial complete, you are ready to begin building your first project. The **new project modal** provides you with different options for starting your analysis. You can choose to start from a blank project or [blank mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html), depending on whether you plan to share your analysis from the browser or the Adobe Analytics dashboards mobile app.
 
 ![](assets/create-new-project.png)
 
@@ -58,4 +58,4 @@ In your Workspace project, **panels, tables, visualizations, and components** ar
 
 ## Additional resources {#resources}
 
-* Adobe offers hundreds of [Analytics video training tutorials](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html).
+* Adobe offers hundreds of [Analytics video training tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html).
