@@ -7,7 +7,7 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 
 These use cases show the flexibility and power of data views in Customer Journey Analytics.
 
-## 1. Create an Orders metric from a pageTitle (string) schema field
+## 1. Create a metric from a string schema field
 
 For example, when creating a data view, you could create an [!UICONTROL Orders] metric from a [!UICONTROL pageTitle] schema field that is a string. Here are the steps:
 
@@ -21,6 +21,8 @@ For example, when creating a data view, you could create an [!UICONTROL Orders] 
    The "confirmation" phrase indicates that this is an order. After reviewing all the page titles where those criteria are met, a "1" will be counted for each instance. The result is a new metric (not a calculated metric.) A metric that has included/excluded values can be used everywhere any other metric can be used. It works with Attribution IQ, filters, and everywhere else you can use standard metrics.
 1. You can further specify an attribution model for this metric, such as [!UICONTROL Last Touch], with a [!UICONTROL Lookback window] of [!UICONTROL Session].
    You can also create another [!UICONTROL Orders] metric from the same field and specify a different attribution model for it, such as [!UICONTROL First Touch], and a different [!UICONTROL Lookback window], such as [!UICONTROL 30 days].
+
+Another example would be to use the Visitor ID, a dimension, as a metric to determine how many Visitor IDs your company has.
 
 ## 2. Use integers as dimensions
 
@@ -62,17 +64,9 @@ These new settings allow you to view only high-value revenue and filter out anyt
 
 Your company may have spent time training your users to expect "Unspecified" in reports. The default in Data Views is "No Value". You can now [rename "No Value" to "Unspecified"](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings) in the Data Views UI. 
 
-## 6. Use the [!UICONTROL Duplicate] feature
+## 6. Create multiple metrics with different [!UICONTROL Attribution] settings
 
-Duplicating a metric and then modifying specific settings is an easy way to create multiple metrics or dimensions from a single schema field.
-
-Just select the Duplicate setting underneath the metric's or dimensions's name at the top right:
-
-![](assets/duplicate.png)
-
-## Create multiple metrics with different Attribution settings
-
-Using the [!UICONTROL Duplicate] feature mentioned above, create a number of Revenue metrics with different attribution settings like [!UICONTROL First Touch], [!UICONTROL Last Touch], and [!UICONTROL Algorithmic].
+Using the [!UICONTROL Duplicate] feature at the top right, create a number of Revenue metrics with different attribution settings like [!UICONTROL First Touch], [!UICONTROL Last Touch], and [!UICONTROL Algorithmic].
 
 Don't forget to rename each metric to reflect the differences, such as "Algorithmic Revenue":
 
