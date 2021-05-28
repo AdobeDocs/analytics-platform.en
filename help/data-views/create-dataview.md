@@ -21,9 +21,9 @@ Creating a data view involves either creating metrics and dimensions from schema
 | [!UICONTROL Description] | A detailed description is not mandatory but is recommended. |
 | [!UICONTROL Time zone] | Choose which time zone you want your data to be presented in. |
 | [!UICONTROL Tags] | Tags let you organize your data views into categories. |
-| [!UICONTROL Containers] | You can rename your containers here and this is how they will appear in any Workspace project that is based on this data view. Containers are used in filters and fallout/flow, etc., to define how broad or narrow the scope or context is. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
-| [!UICONTROL Person container name is…] | [!UICONTROL Person] (default). The [!UICONTROL Person] container includes every visit and page view for visitors within a specified time frame. You can rename this to 'User' or any other term you prefer. |
-| [!UICONTROL Session container name is…] | [!UICONTROL Session] (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this to 'Visit' or any other term you prefer. |
+| [!UICONTROL Containers] | You can rename your containers here to determine how they appear in any Workspace project that is based on this data view. Containers are used in filters and fallout/flow, and so on, to define how broad or narrow the scope or context is. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
+| [!UICONTROL Person container name is…] | [!UICONTROL Person] (default). The [!UICONTROL Person] container includes every visit and page view for visitors within a specified time frame. You can rename this container to 'User' or any other term you prefer. |
+| [!UICONTROL Session container name is…] | [!UICONTROL Session] (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this container to 'Visit' or any other term you prefer. |
 | [!UICONTROL Event container name is…] | [!UICONTROL Event] (default). The [!UICONTROL Event] container defines which page events you would like to include or exclude from a filter. |
 
 Next, you can create metrics and dimensions from schema elements. You can also use Standard components.
@@ -37,7 +37,7 @@ Next, you can create metrics and dimensions from schema elements. You can also u
 You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below. Keep in mind that:
 
 * The components already included are the standard required components (system generated.) 
-* We also apply the filter **[!UICONTROL Contains data]** by default, so that only Schema fields that contain data appear. If you are looking for a field that does not contain data, just remove the filter.
+* Adobe applies the filter **[!UICONTROL Contains data]** by default, so that only Schema fields that contain data appear. If you are looking for a field that does not contain data, remove the filter.
 
 1. Now drag a schema field, such as [!UICONTROL pageTitle], from the left rail into the Metrics or Dimensions section. 
 
