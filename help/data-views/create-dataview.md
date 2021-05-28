@@ -111,11 +111,13 @@ For example, you could create a dimension out of the pageTitle field, but call i
 
 ### Configure Behavior settings
 
+Lets you specify how a metric should behave in reporting.
+
 ![](assets/behavior-settings.png)
 
 | Setting | Description/Use case |
 | --- | --- |
-| [!UICONTROL Count values] | For Boolean metrics only, this setting allows you to specify whether you want to [!UICONTROL Count True], [!UICONTROL Count False], or [!UICONTROL Count True or False] as the metric value. The default is [!UICONTROL Count True]. |
+| [!UICONTROL Count values] | For Boolean metrics only, this setting allows you to specify whether you want to [!UICONTROL Count True], [!UICONTROL Count False], or [!UICONTROL Count True or False] as the metric value. The default is [!UICONTROL Count True]. This gives you the actual value of a metric, such as “50” if there was an order value of 50. |
 | [!UICONTROL Count instances] | Lets you specify whether a numeric or date type field used as a metric should count the times it was set rather than the value itself.<br> If you want to add up the instances of a numeric field and want to simply add up the number of times a field was *set* rather than the actual value inside.<br>This is useful for creating an [!UICONTROL Orders] metric from a [!UICONTROL Revenue] field, for example. If revenue was set, then we want to count 1 single order rather than the numeric revenue amount. |
 
 ### Configure [!UICONTROL No Value Options] settings
@@ -196,6 +198,12 @@ Optional Standard components are available under the **[!UICONTROL Standard Comp
 | [!UICONTROL Batch ID] | Dimension | Represents the Experience Platform batch that an [!UICONTROL Event] was part of. |
 | [!UICONTROL Dataset ID] | Dimension | Represents the Experience Platform dataset that an [!UICONTROL Event] was part of. |
 
+## Use the [!UICONTROL Duplicate] feature
+
+Duplicating metrics or dimensions and then modifying specific settings is an easy way to create multiple metrics or dimensions from a single schema field. Just select the [!UICONTROL Duplicate] setting underneath the metric's or dimensions's name at the top right. Then modify the new metric or dimension and save it under a more descriptive name.
+
+![](assets/duplicate.png)
+
 ### Filter schema fields and dimensions/metrics
 
 You can filter schema fields in the left rail by the following data types:
@@ -206,8 +214,7 @@ You can also filter by datasets and by whether a schema field contains data or w
 
 ![](assets/filter-other.png)
 
-
-## 3. Add a global filter to you data view
+## Add a global filter to you data view
 
 You can add filters that apply to your entire data view. This filter will be applied to any report that you run in Workspace.
 
