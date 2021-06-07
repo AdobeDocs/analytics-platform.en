@@ -8,7 +8,7 @@ exl-id: f706cdb9-bc80-42b9-9450-4f68bdb3fd85
 
 You can view and analyze data anomalies contextually within Analysis Workspace.
 
-[Anomaly Detection video tutorial](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html) (4:53)
+[Anomaly Detection video tutorial](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html) (4:53)
 
 Anomaly Detection provides a statistical method to determine how a given metric has changed in relation to previous data.
 

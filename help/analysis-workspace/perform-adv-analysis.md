@@ -7,7 +7,7 @@ exl-id: 17f50618-54eb-4d60-9f5e-62aab9a3c49b
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 Advanced analysis leverages features like [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) diagrams, [Attribution IQ](/help/analysis-workspace/attribution/overview.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) diagrams, and [dimension breakdowns](/help/components/dimensions/t-breakdown-fa.md).
 

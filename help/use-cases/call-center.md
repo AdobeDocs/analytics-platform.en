@@ -24,7 +24,7 @@ Customer Journey Analytics provides the valuable and robust capability to combin
 
 ## Import web and call center data into Platform
 
-Import your data into Adobe Experience Platform. See [Create a schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html) and [Ingest data](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) in the Adobe Experience Platform documentation.
+Import your data into Adobe Experience Platform. See [Create a schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) and [Ingest data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) in the Adobe Experience Platform documentation.
 
 When importing data into Platform, following these tips can help increase insight in resulting reports:
 

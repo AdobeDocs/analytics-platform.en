@@ -5,12 +5,12 @@ exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 ---
 # Use Marketing channel dimensions in Adobe Experience Platform
 
-If your organization uses the [Analytics Data Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/analytics.html) to bring report suite data into CJA, you can configure a connection in CJA to report on Marketing Channel dimensions.
+If your organization uses the [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) to bring report suite data into CJA, you can configure a connection in CJA to report on Marketing Channel dimensions.
 
 ## Prerequisites
 
-* Report suite data must already be imported into Adobe Experience Platform using the [Analytics Data Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/analytics.html). Other sources of data are not supported, as Marketing channels rely on processing rules in an Analytics report suite.
-* Marketing channel processing rules must already be set up. See [Processing rules for Marketing Channels](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/c-rules.html) in the traditional Analytics Components guide.
+* Report suite data must already be imported into Adobe Experience Platform using the [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Other sources of data are not supported, as Marketing channels rely on processing rules in an Analytics report suite.
+* Marketing channel processing rules must already be set up. See [Processing rules for Marketing Channels](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/c-rules.html) in the traditional Analytics Components guide.
 
 ## Marketing Channel schema elements
 
@@ -18,8 +18,8 @@ Once you establish the Analytics Data Connector on a desired report suite, an XD
 
 1. [Create a connection](/help/connections/create-connection.md) that includes a dataset based on the Analytics Data Connector.
 2. [Create a data view](/help/data-views/create-dataview.md) that includes the following dimensions:
-   * **`channel.typeAtSource`**: Equivalent to the [Marketing channel](https://docs.adobe.com/content/help/en/analytics/components/dimensions/marketing-channel.html) dimension.
-   * **`channel._id`**: Equivalent to the [Marketing channel detail](https://docs.adobe.com/content/help/en/analytics/components/dimensions/marketing-detail.html)
+   * **`channel.typeAtSource`**: Equivalent to the [Marketing channel](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html) dimension.
+   * **`channel._id`**: Equivalent to the [Marketing channel detail](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-detail.html)
 3. Give each dimension the desired attribution model and persistence. If you want both first and last touch dimensions, drag each marketing channel dimension to the components area multiple times. Give each dimension the desired attribution model and persistence. Adobe also recommends giving each dimension a display name to make it easier for use in Workspace.
 4. Create the data view.
 

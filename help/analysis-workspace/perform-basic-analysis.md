@@ -7,7 +7,7 @@ exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 After you have created connections and data views, analyze the data you have brought in using the power and flexibility of Analysis Workspace. Feel free to experiment and drag in dimensions and metrics, change dimension and metrics attribution settings, friendly names, time zone, session settings, etc.
 
