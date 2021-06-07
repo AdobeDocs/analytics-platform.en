@@ -7,7 +7,7 @@ exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 There are several different ways you can export data from Analysis Workspace, depending on what set of data you want to analyze outside of the tool and who needs to receive the information. Exported data can be in the form of copied data, CSV or PDF files. A PDF is typically preferred if you want visualizations included in the file, while a CSV (or copied data) is preferred if you simply want plain-text data.
 
@@ -19,7 +19,7 @@ You can download a full project by going to **[!UICONTROL Project > Download as 
 
 For project downloads, keep in mind:
 
-* The project can be saved or unsaved when you request a project download. However, only saved projects can be [scheduled](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html). 
+* The project can be saved or unsaved when you request a project download. However, only saved projects can be [scheduled](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html). 
 * PDFs downloaded in the browser can take several minutes to export because the project is re-run on Adobe servers before rendering in PDF format. We recommend not leaving the project until the PDF downloads in your browser. However, you can continue to make changes to the project while you wait. If a PDF takes longer than 5 minutes to render, you will be prompted to email it instead.
 * PDF downloads are rendered as a single page with no pagination applied.
 * When a project is rendered to PDF, we render what is on the page. If a project has custom-sized visualizations and panels, you need to change them to be auto-sized (button in top-right corner) so that there will be no truncated content.
@@ -84,4 +84,4 @@ If you request more than one download at a time, you will receive a notification
 | --- | --- |
 | Why is my downloaded PDF one page? | Workspace does not paginate downloaded PDFs at this time. |
 | Can I export more than 50,000 items with the “Download items as CSV” option? | While each download can contain up to 50,000 dimension items, you can change the sort of your table to retrieve longer tail items, or apply a filter to download more specific items. |
-| What does **[!UICONTROL Copy visualization]** do? | **[!UICONTROL Copy visualization]** is not an export option. It allows you to copy a visualization or panel from one place in Workspace to another. For example, from one panel to another in the same project, or from one project to another project. [Intra-linking video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |
+| What does **[!UICONTROL Copy visualization]** do? | **[!UICONTROL Copy visualization]** is not an export option. It allows you to copy a visualization or panel from one place in Workspace to another. For example, from one panel to another in the same project, or from one project to another project. [Intra-linking video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |

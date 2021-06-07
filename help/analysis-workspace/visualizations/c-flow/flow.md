@@ -13,7 +13,7 @@ It lets you:
 * Analyze where customers go before and after specified checkpoints, such as entry, a specific dimension, or exit
 * Create filters by designating a specific point in a chosen path
 
-[Flow Visualization video tutorial](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
+[Flow Visualization video tutorial](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
 
 ## Inter-Dimensional Flows {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 

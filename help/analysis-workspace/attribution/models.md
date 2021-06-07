@@ -7,7 +7,7 @@ exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 The concept of attribution in Adobe Analytics requires two components:
 
@@ -42,7 +42,7 @@ A lookback window is the amount of time a conversion should look back to include
 
 >[!NOTE]
 >
->**[!UICONTROL Custom lookback windows]** are currently in limited testing. See [Adobe Analytics feature releases](https://docs.adobe.com/content/help/en/analytics/landing/an-releases.html) for more information.
+>**[!UICONTROL Custom lookback windows]** are currently in limited testing. See [Adobe Analytics feature releases](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html) for more information.
 
 ## Example
 
