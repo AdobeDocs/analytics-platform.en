@@ -72,5 +72,8 @@ You can search for connections using the Search bar at the top, underneath the [
 
 ## Sort connections
 
+jdkfjslfj
 
 ## Refresh a connection
+
+dhakhfakshf
