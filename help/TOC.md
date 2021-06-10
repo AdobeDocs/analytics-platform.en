@@ -23,7 +23,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
   + [CJA glossary](getting-started/cja-glossary.md)
 + Connections {#cja-connections}
   + [Create a connection](connections/create-connection.md)
-  + [Manage connections](connections/manage-connection.md)
+  + [Manage connections](connections/manage-connections.md)
   + [Estimate connection size](connections/estimate-connection-size.md)
   + [Combined event datasets](connections/combined-dataset.md)
   + Cross-Channel Analytics {#cca}
