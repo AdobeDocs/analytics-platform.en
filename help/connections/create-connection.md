@@ -9,6 +9,8 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
 Click [here](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en) for a video overview.
 
+## Required permissions
+
 To create a CJA Connection, you need the following permissions in [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
 
 Adobe Experience Platform:
@@ -25,7 +27,9 @@ Customer Journey Analytics
 
 ## Select sandbox and datasets
 
-1. Go to [https://analytics.adobe.com](https://analytics.adobe.com).
+1. Go to [https://analytics.adobe.com](https://analytics.adobe.com) and sign in with your Adobe ID.
+
+1. Click the [!DNL Customer Journey Analytics] icon.
 
 1. Click the **[!UICONTROL Connections]** tab.
 
@@ -45,7 +49,7 @@ Customer Journey Analytics
 
     (If you have a lot of datasets to choose from, you can search for the right one(s) using the **[!UICONTROL Search datasets]** search bar above the list of datasets.)
 
-## Configure dataset
+## 2. Configure dataset
 
 On the right-hand side, you can now configure the dataset/s you have added.
 
