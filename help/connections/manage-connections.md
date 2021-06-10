@@ -29,7 +29,7 @@ Click the info icon next to the connection name to view the following informatio
 
 ![View connection info](assets/conn-info.png)
 
-## View details about a connection
+## View connection detail
 
 The new Connections Detail page 
 
