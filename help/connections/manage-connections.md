@@ -1,7 +1,7 @@
 ---
 title: Manage connections
 description: Describes how to manage connections to Platform datasets.
---- 
+---
 # Manage connections
 
 Once Admin users have created one or more connections, they can manage them in the [!UICONTROL Connections] Manager. The latest update to the Connection experience adds two important capabilities:
