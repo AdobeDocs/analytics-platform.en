@@ -60,9 +60,9 @@ You can search for connections using the Search bar at the top, underneath the [
 
 You can sort connections by clicking each column header and sorting up or down.
 
-## View connection details
+## Connection Details page
 
-The new Connections Detail page gives you a very detailed view of the status of a connection.
+The new Connections Details page gives you a very detailed view of the status of a connection.
 
 It lets you:
 
@@ -73,42 +73,43 @@ It lets you:
 
 ![View connection detail](assets/conn-details.png)
 
-| Panel/Setting | Description |
+| Widget/Setting | Description |
 | --- | --- |
-| Dataset selector | Lets you pick one or all datasets in the connection. Defaults to [!UICONTROL All datasets]. |
-| Calendar |  |
-| [!UICONTROL Records available] panel | Represents the total number of rows ingested for the datasets, for the particular time period selected through the calendar. There is a latency of 1-2 hours to get the data to appear in reporting, once it is ingested.  |
-| [!UICONTROL Metrics] panel | Summarizes the records added/skipped/deleted, and the number of batches ingested. |
-| [!UICONTROL Records added] panel | How many rows were added in the selected time period. |
-| [!UICONTROL Records skipped] panel | How many rows were skipped in the selected time period. Reasons for skipping records include:... |
-| [!UICONTROL Records deleted] panel | How many rows were deleted in the selected time period. |
-| Dataset search box | You can search by dataset name or dataset ID. |
-| [!UICONTROL Datasets] | The datasets that are part of the connection. You can click the hyperlink to view all the datasets in the connection.  |
+| Dataset selector | Lets you pick one or all datasets in the connection. You cannot multi-select datasets. Defaults to [!UICONTROL All datasets]. |
+| Calendar/Date Ranges | The date range indicates when you ingested data into the connection. Presets include: [!UICONTROL Today], [!UICONTROL Yesterday], [!UICONTROL Last 7 days], [!UICONTROL Last 30 days]. You can also customize the date range. |
+| [!UICONTROL Records available] widget | Represents the total number of rows ingested **for the entire connection**, for the time period selected through the calendar. This count does not change when you change the dataset in the dataset selector. ( Note that there is a latency of 1-2 hours to get the data to appear in reporting, once it is ingested.)   |
+| [!UICONTROL Metrics] widget | Summarizes the records added/skipped/deleted, and the number of batches ingested, **for the dataset and date range you have selected**. |
+| [!UICONTROL Records added] widget | Indicates how many rows were added in the selected time period, **for the dataset and date range you have selected**. Updated every 10 minutes.|
+| [!UICONTROL Records skipped] widget | Indicates how many rows were skipped in the selected time period, **for the dataset and date range you have selected**. Reasons for skipping records include: Missing timestamps, missing person ID, etc. Updated every 10 minutes. |
+| [!UICONTROL Records deleted] widget | Indicates how many rows were deleted in the selected time period, **for the dataset and date range you have selected**. Someone might have deleted a dataset in Experience Platform, for example. Updated every 10 minutes. |
+| Dataset search box | You can search by dataset name or [!UICONTROL Dataset ID]. |
+| [!UICONTROL Datasets] | Shows the datasets that are part of the connection. You can click the hyperlink to view all the datasets in the connection.  |
 | [!UICONTROL Dataset ID] |  This ID is automatically generated. |
-| [!UICONTROL Batches] | How many data batches have been ingested into this connection. |
-| [!UICONTROL Last added] | The timestamp for the last added batch.  |
-| [!UICONTROL Dataset type] | This can be Event, Lookup, or Profile. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset)  |
-| **Right-hand rail if you are viewing an entire connection with multiple datasets** |  |
+| [!UICONTROL Batches] | Indicates how many data batches have been ingested into this dataset. |
+| [!UICONTROL Last added] | Shows the timestamp for the last added batch to this dataset.  |
+| [!UICONTROL Dataset type] | The dataset type for this dataset can be [!UICONTROL Event], [!UICONTROL Lookup], or [!UICONTROL Profile]. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset)  |
+| Schema |   |
+| **Right-hand rail if you are viewing an entire connection with all datasets** |  |
 | [!UICONTROL Refresh] | Refresh the connection to allow recently added records to be reflected.  |
-| [!UICONTROL Delete] | Delete this dataset???  |
-| [!UICONTROL Create data view] | This action creates a new data view based on this connection. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
-| [!UICONTROL Connection Name] | The friendly name of the connection. |
-| [!UICONTROL Connection description] | A more detailed description that ideally describes the purpose of this connection. |
-| [!UICONTROL Person ID] | This identity was defined in the dataset schema in the Experience Platform. The Person ID you chose during the creation of the connection. |
+| [!UICONTROL Delete] | Lets you delete this dataset???  |
+| [!UICONTROL Create data view] | Creates a new data view based on this connection. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
+| [!UICONTROL Connection Name] | Shows the friendly name of the connection. |
+| [!UICONTROL Connection description] | Shows a more detailed description that ideally describes the purpose of this connection. |
+| [!UICONTROL Person ID] |  Shows an identity that was defined in the dataset schema in the Experience Platform. This is the [!UICONTROL Person ID] you chose during the creation of the connection. If you create a connection that includes datasets with different IDs, the reporting will reflect that. To really merge datasets, you need use the same [!UICONTROL Person ID]. |
 | [!UICONTROL Sandbox] |  The [Adobe Experience Platform sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) from which this connection draws its datasets. This sandbox was selected when you first created the connection. It cannot be changed. |
 | [!UICONTROL Connection ID] | This ID is system generated. |
 | [!UICONTROL IMS Org ID] | Also known as the Experience Cloud ID (ECID). |
 | [!UICONTROL Data views using connection] | Lists all the data views that use this connection. |
-| [!UICONTROL Import new data] |  |
+| [!UICONTROL Import new data] | Indicates whether new batches of data should or should not be added to this connection.???? |
 | **Right-hand rail if you are viewing details about a single dataset** |  |
 | [!UICONTROL Dataset description] | Describes the parameters of each dataset in this connection. |
-| [!UICONTROL Records available] | Represents the total number of rows ingested for this dataset, for the particular time period selected through the calendar. There is a latency of 1-2 hours to get the data to appear in reporting, once it is ingested. |
+| [!UICONTROL Records available] | Represents the total number of rows ingested for this dataset, for the particular time period selected through the calendar. There is no latency in terms of getting the data to appear in reporting, once it is ingested. (The exception is that when you create a brand-new connection, there will be [latency](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#3.-getting-data-into-customer-journey-analytics). |
 | [!UICONTROL Records added] | How many rows were added in the selected time period. |
-| [!UICONTROL Records skipped] | How many rows were skipped in the selected time period. Reasons for skipping records include:... |
-| [!UICONTROL Record skipped errors] |  |
+| [!UICONTROL Records skipped] | How many rows were skipped during ingestion in the selected time period. |
+| [!UICONTROL Record skipped errors] | The reason why records were skipped is indicated here. They could include missing time stamps, missing Person ID, etc. |
 | [!UICONTROL Batches ingested] | How many data batches were ingested into this dataset???  |
 | [!UICONTROL Last added] | When the last batch was added. |
-| [!UICONTROL Dataset type] | This can be Event, Lookup, or Profile. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset)  |
+| [!UICONTROL Dataset type] | This can be [!UICONTROL Event], [!UICONTROL Lookup], or [!UICONTROL Profile]. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset)  |
 | [!UICONTROL Schema] | The Adobe Experience Platform schema that this dataset is based on. |
 | [!UICONTROL Dataset ID] | This ID is system generated. |
 
