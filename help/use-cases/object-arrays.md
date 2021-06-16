@@ -251,7 +251,7 @@ Calculated metric "Total revenue": `[product : revenue] + [product : warranty : 
 
 Applying this calculated metric displays the desired results:
 
-| `product : warranty : name` | `Total revenue (calculated metric)` |
+| `product : category` | `Total revenue (calculated metric)` |
 | --- | --- |
 | `Washing Machines` | `1850` |
 | `Dryers` | `500` |
