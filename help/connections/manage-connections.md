@@ -47,7 +47,7 @@ When you delete a connection in [!UICONTROL Customer Journey Analytics], an erro
 * Any data views that were created based on the deleted connection no longer work.
 * Similarly, any Workspace projects that depend on data views in the deleted connection will cease working.
 
-[Learn more](/help/getting-started/cja-deletion.md)
+[Learn more](/help/getting-started/cja-deletion.md) about deletion implications.
  
 ### Search for a connection or dataset
 
