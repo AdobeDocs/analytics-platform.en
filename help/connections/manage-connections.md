@@ -1,16 +1,16 @@
 ---
 title: Manage connections
-description: Describes how to manage connections to Platform datasets.
+description: Describes how to manage connections to Experience Platform datasets in Customer Journey Analytics (CJA).
 ---
 # Manage connections
 
-Once Admin users have created one or more connections, they can manage them in the [!UICONTROL Connections] Manager. The latest update to the Connection experience adds two important capabilities within the Connections Detail page:
+Once Admin users have [created one or more connections](/help/connections/create-connection.md), they can manage them in the [!UICONTROL Connections] Manager. The latest update to the Connection experience adds two important capabilities within the Connection Details page, described further down on this page:
 
 * It lets you check the **status of your connection's datasets and of the ingestion process**. This status check lets you know when your data is available so that you can go into Analysis Workspace and start analysis.
 
-* It lets you **identify any discrepancies in the ingestion process**. Are you missing any rows? If yes, what rows are missing and why? Did you misconfigure connections and cause missing data in CJA?
+* It lets you **identify any data discrepancies** due to misconfiguration. Are you missing any rows? If yes, what rows are missing and why? Did you misconfigure connections and cause missing data in CJA?
 
-## Connections Manager
+## Connections Manager {#connections-manager}
 
 The Connections Manager allows you to:
 
@@ -33,25 +33,22 @@ The Connections Manager allows you to:
 | [!UICONTROL Datasets] | The datasets that are part of the connection. You can click the hyperlink to view all the datasets in the connection. |
 | [!UICONTROL Sandbox] | The [Adobe Experience Platform sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) from which this connection draws its datasets. This sandbox was selected when you first created the connection. It cannot be changed.|
 | [!UICONTROL Owner] | The person who created the connection. |
-| [!UICONTROL Import Data Sets] | Lets you enable or disable what used to be called "data streaming."  To change this from |
+| [!UICONTROL Import Data Sets] | Lets you enable or disable what used to be called "data streaming." |
 | [!UICONTROL Date Created] | The date when the connection was first created. |
 | [!UICONTROL Last Modified] | The date when the connection was last updated. |
 
-### Delete connections
+### Delete connections {#connections-delete}
 
 1. Click the ellipsis (...) next to the connection name.
 1. Click [!UICONTROL Delete].
 
-Here are a few things to consider before you delete a connection:
+When you delete a connection in [!UICONTROL Customer Journey Analytics], an error message will indicate that:
 
-| If you... | This happens... |
-| --- | --- |
-| Delete a connection in [!UICONTROL Customer Journey Analytics] | An error message will indicate that:<ul><li>Any data views created for the deleted connection will no longer work.</li><li> Similarly, any Workspace projects that depend on data views in the deleted connection will cease working.</li></ul> |
-| Delete a dataset in [!UICONTROL Adobe Experience Platform] (AEP) | Deleting a dataset in AEP will stop data flow from that dataset to any connections that include that dataset. Any data from that dataset is not automatically deleted from associated CJA Connections. |
-| Delete a dataset in [!UICONTROL Customer Journey Analytics] | Currently, you cannot delete a dataset within a connection that has been saved. You would have to delete the whole connection and start over. (However, you can delete a dataset in [!UICONTROL Adobe Experience Platform].) |
-| Delete a batch from a dataset (in [!UICONTROL Adobe Experience Platform]) | If a batch is deleted from an [!UICONTROL Adobe Experience Platform] dataset, the same batch will be removed from any [!UICONTROL Customer Journey Analytics] connections that contain that specific batch. [!UICONTROL Customer Journey Analytics] is notified of batches that were deleted in [!UICONTROL Adobe Experience Platform]. |
-| Delete a batch **while it is being ingested** into [!UICONTROL Customer Journey Analytics] | If there is only one batch in the dataset, no data or partial data from that batch will appear in [!UICONTROL Customer Journey Analytics]. The ingestion will be rolled back. If, for example, there are 5 batches in the dataset and 3 of them have already been ingested when the dataset was deleted, data from those 3 batches will appear in [!UICONTROL Customer Journey Analytics]. |
+* Any data views that were created based on the deleted connection no longer work.
+* Similarly, any Workspace projects that depend on data views in the deleted connection will cease working.
 
+[Learn more](/help/getting-started/cja-deletion.md)
+ 
 ### Search for a connection or dataset
 
 You can search for connections using the Search bar at the top, underneath the [!UICONTROL Connections] title.
@@ -60,13 +57,14 @@ You can search for connections using the Search bar at the top, underneath the [
 
 You can sort connections by clicking each column header and sorting up or down.
 
-## Connection Details page
+## Connection Details page {#connection-detail}
 
 The new Connections Details page gives you a very detailed view of the status of a connection.
 
 It lets you:
 
-* Identify problems in the data ingestion stage.
+* Check the status of your connection's datasets and of the ingestion process.
+* Identify configuration problems that lead to skipped, or deleted records.
 * Start and stop importing new data. (Formerly known as "data streaming".)
 
  Here are the panels and settings explained:
