@@ -117,9 +117,9 @@ It lets you:
 
 ### Edit connection
 
-Allows Admins to edit the connection. Click [!UICONTROL Edit Connection] to get to this dialog. Here, you can do the following:
+Allows Admins to edit the connection. Select a connection, then click [!UICONTROL Edit Connection] to get to this dialog. Here, you can do the following:
 
 * Start and stop importing new data. This process was formerly known as "data streaming".
 * Rename a connection.
-* 
+* Other
 
