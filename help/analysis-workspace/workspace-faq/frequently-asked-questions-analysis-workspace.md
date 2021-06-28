@@ -14,7 +14,7 @@ System requirements for Analysis Workspace.
 
 | Requirement | Description |
 |--- |--- |
-| Product SKU | You must have Adobe Analytics Standard or Adobe Analytics Premium. If you have access only to Reports & Analytics as a standalone product, work with your account team to purchase the Adobe Analytics solution. |
+| Product SKU | Your organization must have an active contract with Adobe Analytics for Select, Prime, or Ultimate with the Customer Journey Analytics add-on. If you are not sure what type of contract you have, or are not sure if you have the CJA add-on, contact your organization's Account Manager. In addition, your organization must be provisioned for Adobe Experience Platform.|
 | Administrators | Have full access to Analysis Workspace. |
 | Users | To enable access to the Workspace tab in Analytics, administrators must create a product profile with the Analysis Workspace Access permission and add users to it in the [Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html). |
-| Browser | <ul><li>Preferred: Latest versions of Firefox, Chrome, Safari, or Edge. Latest version of Microsoft Internet Explorer 11. **Note:**  Adobe ended support for Internet Explorer 11 within Adobe Analytics on November 13, 2018. Please switch to Microsoft Edge or another supported browser, as soon as possible.</li><li>Cookies and JavaScript must be enabled.</li><li>1024 x 768 monitor resolution with 16-bit color depth (or higher).</li></ul> |
+| Browser | <ul><li>Preferred: Latest versions of Firefox, Chrome, Safari, or Edge.</li><li>Cookies and JavaScript must be enabled.</li><li>1024 x 768 monitor resolution with 16-bit color depth (or higher).</li></ul> |

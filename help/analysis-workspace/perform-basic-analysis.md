@@ -17,7 +17,7 @@ Here is a sample of basic visualizations in Workspace. For example, you can
 
 * Create a trended report of online versus in-store revenue that compares the two data sources over time.
 
-* Depict audience size by data sources, such as ad impression data, Adobe Analytics data, email data, POS data, call center data, and survey data.
+* Depict audience size by data sources, such as ad impression data, Customer Journey Analytics data, email data, POS data, call center data, and survey data.
 
  ![](assets/cja-basic-analysis.png)
 
