@@ -14,7 +14,7 @@ Attribution gives analysts the ability to customize how dimension items get cred
 1. A visitor to your site clicks a paid search link to one of your product pages. The add the product to the cart, but do not purchase it.
 2. The next day, the see a social media post from one of their friends, click the link, then complete the purchase.
 
-In some reports, you might want the order attributed to Paid search. In other reports, you might want the order attributed to Social. Attribution lets you control this aspect of reporting. It is available to all organizations on Adobe Analytics Ultimate, Prime, Select and Foundation. If you are not sure which type of contract you have with Adobe, contact your organization's Account Manager.
+In some reports, you might want the order attributed to Paid search. In other reports, you might want the order attributed to Social. Attribution lets you control this aspect of reporting.
 
 ## Value of Attribution IQ
 
@@ -22,7 +22,7 @@ A given customer journey isn't linear and often unpredictable. Each customer pro
 
 ![Attribution IQ problem](assets/attribution_iq_problem.png)
 
-Adobe Analytics enhances attribution by letting you:
+Customer Journey Analytics enhances attribution by letting you:
 
 * Define attribution beyond paid media: Any dimension, metric, channel or event can be applied to models (e.g. internal search), not just marketing campaigns.
 * Utilize unlimited attribution model comparison: dynamically compare as many models as you want.

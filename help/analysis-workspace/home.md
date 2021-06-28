@@ -16,9 +16,9 @@ If you have only a few minutes, watch this brief overview to see what is possibl
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## Log in to Adobe Analytics {#login}
+## Log in Customer Journey Analytics {#login}
 
-To start using Analysis Workspace, log in to Adobe Analytics by going to [experience.adobe.com/analytics](https://experience.adobe.com/analytics). You will land on the Workspace project list homepage, if a specific project has not previously been selected for you.
+To start using Analysis Workspace, log in to Customer Journey Analytics by going to [experience.adobe.com/analytics](https://experience.adobe.com/analytics). You will land on the Workspace project list homepage, if a specific project has not previously been selected for you.
 
 ![](assets/login-analytics.png)
 
@@ -30,7 +30,7 @@ Once logged in, your first stop should be the Analysis Workspace Training Tutori
 
 ## Create a new project {#new-project}
 
-With the tutorial complete, you are ready to begin building your first project. The **new project modal** provides you with different options for starting your analysis. You can choose to start from a blank project or [blank mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html), depending on whether you plan to share your analysis from the browser or the Adobe Analytics dashboards mobile app.
+With the tutorial complete, you are ready to begin building your first project. The **new project modal** provides you with different options for starting your analysis. You can choose to start from a blank project or [blank mobile scorecard](/help/mobile-app/curator.md), depending on whether you plan to share your analysis from the browser or the Customer Journey Analytics dashboards mobile app.
 
 ![](assets/create-new-project.png)
 

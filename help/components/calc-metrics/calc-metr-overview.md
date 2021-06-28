@@ -37,7 +37,7 @@ Here is a comparison of Calculated Metrics and Advanced Calculated Metrics capab
 |--- |--- |
 |Calculated Metric Builder|<ul><li>Create calculated and advanced calculated metrics using advanced allocation models.</li><li>Add filters inline to metric formulas.</li><li>Compare filters in the same report. For example, compare local visitors vs. international visitors.</li><li>Use statistical functions.</li><li> Provide detailed metric descriptions (show what it does, where to use it, where NOT to use it).</li><li>Copy definitions into new metrics.</li><li>Provide an inline metric preview.</li><li>Set metric polarity, which indicates whether it's good or bad if a given custom event (metric) goes up.</li><li>Tag metrics.</li></ul>|
 |Calculated Metric Manager|<ul><li>Share metrics with others.</li><li>Approve and curate metrics.</li><li>Organize (tag) your metrics so people can find them.</li><li>Delete metrics.</li><li>Rename metrics.</li></ul>|
-|API for Calculated Metrics|Part of the Adobe Analytics 2.0 API set.|
+|API for Calculated Metrics|Part of the CJA API set.|
 
 ## Calculated Metrics templates in CJA
 
