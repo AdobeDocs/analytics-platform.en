@@ -20,10 +20,11 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
   + [Getting Started](getting-started/cja-getting-started.md)
   + [Frequently asked questions](getting-started/cja-faq.md)
   + [Customer Journey Analytics feature support](getting-started/cja-aa.md)
+  + [Deletion implications](getting-started/cja-deletion.md)
   + [CJA glossary](getting-started/cja-glossary.md)
 + Connections {#cja-connections}
   + [Create a connection](connections/create-connection.md)
-  + [Manage connections](connections/manage-connection.md)
+  + [Manage connections](connections/manage-connections.md)
   + [Estimate connection size](connections/estimate-connection-size.md)
   + [Combined event datasets](connections/combined-dataset.md)
   + Cross-Channel Analytics {#cca}

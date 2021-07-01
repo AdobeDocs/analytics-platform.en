@@ -9,9 +9,9 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
 Click [here](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en) for a video overview.
 
-## Permissions needed
+## Required permissions
 
-To create a Customer Journey Analytics (CJA) Connection, you need the following permissions in [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
+To create a CJA Connection, you need the following permissions in [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
 
 Adobe Experience Platform:
 * Data Modeling: View Schemas, Manage Schemas
@@ -27,7 +27,9 @@ Customer Journey Analytics
 
 ## Select sandbox and datasets
 
-1. Go to [https://analytics.adobe.com](https://analytics.adobe.com).
+1. Go to [https://analytics.adobe.com](https://analytics.adobe.com) and sign in with your Adobe ID.
+
+1. Click the [!DNL Customer Journey Analytics] icon.
 
 1. Click the **[!UICONTROL Connections]** tab.
 
@@ -47,10 +49,7 @@ Customer Journey Analytics
 
     (If you have a lot of datasets to choose from, you can search for the right one(s) using the **[!UICONTROL Search datasets]** search bar above the list of datasets.)
 
-    CJA is based on Experience Platform datasets. While you can use any supported schema field type in Platform, not all fields types are supported in CJA. You can add datasets to CJA with schema field types other than strings or numerics, but CJA cannot display that data. In addition, only Strings are allowed in Lookup datasets at this time.
-    If you are looking for a field to add to a data view after adding the dataset to a Connection, the  default tag [!UICONTROL Contains data] is available for all fields in the datasets. This tag keeps data views more manageable since it includes only schema fields that have data in your datasets.
-
-## Configure dataset
+## 2. Configure dataset
 
 On the right-hand side, you can now configure the dataset/s you have added.
 
