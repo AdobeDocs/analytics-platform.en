@@ -5,11 +5,14 @@ mini-toc-levels: 3
 ---
 # Manage connections
 
-Once Admin users have [created one or more connections](/help/connections/create-connection.md), they can manage them in the [!UICONTROL Connections] Manager. The latest update to the Connection experience adds two important capabilities within the [Connection Details](https://experienceleague-review.corp.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#connection-detail) page, described further down on this page:
+Once Admin users have [created one or more connections](/help/connections/create-connection.md), they can manage them in the [!UICONTROL Connections] Manager. The latest update to the Connection experience adds two important capabilities within the Connection Details page, described further down on this page:
 
 * It lets you check the **status of your connection's datasets and of the ingestion process**. This status check lets you know when your data is available so that you can go into Analysis Workspace and start analysis.
 
 * It lets you **identify any data discrepancies** due to misconfiguration. Are you missing any rows? If yes, what rows are missing and why? Did you misconfigure connections and cause missing data in CJA?
+
+>[!NOTE]
+> This functionality will be generally available on July 26, 2021.
 
 ## Connections Manager {#connections-manager}
 
@@ -121,5 +124,3 @@ Allows Admins to edit the connection. Select a connection, then click [!UICONTRO
 
 * Start and stop importing new data. This process was formerly known as "data streaming".
 * Rename a connection.
-* Other
-
