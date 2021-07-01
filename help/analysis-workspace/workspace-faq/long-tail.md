@@ -15,7 +15,7 @@ If any individual server processing a subset of data encounters more than 500,00
 
 ## Differences between 'Long Tail' and 'Low-Traffic'
 
-In previous versions of Adobe Analytics, a different processing architecture was used. Data was processed at the time it was collected. Dimension items were placed under 'Low-Traffic' after a dimension reached 500K unique values, and applied more aggressive filtering at 1M unique values. Unique value count was reset at the beginning of each calendar month. Processed data was permanent; there was no way to get existing data out of 'Low-Traffic'.
+In previous versions of Analytics, a different processing architecture was used. Data was processed at the time it was collected. Dimension items were placed under 'Low-Traffic' after a dimension reached 500K unique values, and applied more aggressive filtering at 1M unique values. Unique value count was reset at the beginning of each calendar month. Processed data was permanent; there was no way to get existing data out of 'Low-Traffic'.
 
 In CJA, dimension items are only put in 'Long Tail' if an individual processing server contains more than 500K unique values. Processed data is not permanent, which means that you can reduce the 'Long Tail' dimension item by modifying your report.
 

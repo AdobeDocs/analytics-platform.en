@@ -5,7 +5,7 @@ exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 ---
 # Accessibility in Analysis Workspace
 
-Learn about accessibility support in [!UICONTROL Analysis Workspace], the premier analysis tool for Adobe Analytics. 
+Learn about accessibility support in [!UICONTROL Analysis Workspace], the premier analysis tool for Customer Journey Analytics. 
 
 Accessibility refers to making products usable for people with visual, auditory, cognitive, motor, and other disabilities. Examples of accessibility features for software products include screen reader support, text equivalents for graphics, keyboard shortcuts, change of display colors to high contrast, and so on. 
 

@@ -20,8 +20,8 @@ Creating a data view involves either creating metrics and dimensions from schema
 | [!UICONTROL Name] | Giving the data view a name is mandatory. |
 | [!UICONTROL Description] | A detailed description is not mandatory but is recommended. |
 | [!UICONTROL Time zone] | Choose which time zone you want your data to be presented in. |
-| [!UICONTROL Tags] | Tags let you organize your data views into categories. |
-| [!UICONTROL Containers] | You can rename your containers here to determine how they appear in any Workspace project that is based on this data view. Containers are used in filters and fallout/flow, and so on, to define how broad or narrow the scope or context is. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
+| [!UICONTROL Tags] | [!UICONTROL Tags] let you organize your data views into categories. |
+| [!UICONTROL Containers] | You can rename your containers here to determine how they appear in any Workspace project that is based on this data view. [!UICONTROL Containers] are used in filters and fallout/flow, and so on, to define how broad or narrow the scope or context is. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
 | [!UICONTROL Person container name is…] | [!UICONTROL Person] (default). The [!UICONTROL Person] container includes every visit and page view for visitors within a specified time frame. You can rename this container to 'User' or any other term you prefer. |
 | [!UICONTROL Session container name is…] | [!UICONTROL Session] (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this container to 'Visit' or any other term you prefer. |
 | [!UICONTROL Event container name is…] | [!UICONTROL Event] (default). The [!UICONTROL Event] container defines which page events you would like to include or exclude from a filter. |
@@ -65,7 +65,7 @@ You can see the [!UICONTROL Connection] at the top left, which contains the data
 | [!UICONTROL Field Name] | The name of the schema field. |
 | [!UICONTROL Dataset type] | Required. A non-editable field showing which dataset type (event, lookup, or profile) the component came from. |
 | [!UICONTROL Dataset] | Required. A non-editable field showing which type of field the component came from (e.g. String, Integer, etc.). This field can contain multiple datasets. |
-| [!UICONTROL Schema Data Type] | Refers to whether the component is a string, integer, etc. |
+| [!UICONTROL Schema Data Type] | Refers to whether the component is a string, integer, and so on.  While you can use any supported schema field type in Platform, not all fields types are supported in CJA. The following data types are supported: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String`, and `Boolean`. Note that only Strings are allowed in Lookup datasets at this time. |
 | [!UICONTROL Component ID] | Required. The [CJA API](https://adobe.io/cja-apis/docs) uses this field to reference the component. You can click the edit icon and modify this component ID. However, changing this component ID breaks all existing Workspace projects that contain this component.<br>If you ever create another data view that uses a different field for a pageTitle dimension, you can rename it and make the dimension cross-data view compatible. |
 | [!UICONTROL Schema Path] | Required. A non-editable field showing the schema path that the component came from. |
 | [!UICONTROL Hide component in reporting] | Default = off. Lets you curate the component out of the Data View when used in reporting. This does not impact permissions, just component curation. In other words, you can hide the component from non-Admins in reporting. Admins can still access it by clicking [!UICONTROL Show All Components] in an Analysis Workspace project. |
@@ -89,9 +89,9 @@ Format settings are for metrics only.
 
 | Setting | Description/Use case |
 | --- | --- |
-| [!UICONTROL Set attribution] | Lets you specify the attribution settings you want to apply to this metric by default when it is used. This default can be overridden in a Freeform Table or in a Calculated Metric. |
+| [!UICONTROL Set attribution] | Lets you specify the attribution settings you want to apply to this metric by default when it is used. This default can be overridden in a [!UICONTROL Freeform Table] or in a Calculated Metric. |
 | [!UICONTROL Attribution model] | Lets you specify a default attribution model - only active when you turn on the [!UICONTROL Use Non-default attribution model] setting. Defaults to [!UICONTROL Last Touch]. Options are: Last Touch, First Touch, Linear, Participation, Same Touch, U-Shaped, J Curve, Inverse J, Time Decay, Custom, Algorithmic. Some of these options create additional fields that need to be filled out - like Custom or Time Decay. You can create multiple metrics using the same field - this means you can have one [!UICONTROL Last touch] revenue metric and one [!UICONTROL First Touch] revenue metric, but based on the same revenue field in the schema. |
-| [!UICONTROL Lookback window] | Lets you specify a default lookback window to a metric - only active when you turn on the [!UICONTROL Use Non-default attribution model] setting. Options are: Person (Reporting Window), Session, Custom. When Custom is selected, we also give you the option to select any number of days/weeks/months/etc. (up to 90 days), just like Attribution IQ. You can have multiple metrics using the same schema field, but each with a separate lookback window. |
+| [!UICONTROL Lookback window] | Lets you specify a default lookback window to a metric - only active when you turn on the [!UICONTROL Use Non-default attribution model] setting. Options are: [!UICONTROL Person] (Reporting Window), [!UICONTROL Session], [!UICONTROL Custom]. When [!UICONTROL Custom] is selected, we also give you the option to select any number of days/weeks/months/etc. (up to 90 days), just like [!UICONTROL Attribution IQ]. You can have multiple metrics using the same schema field, but each with a separate lookback window. |
 
 ### Configure Include/Exclude Values settings
 
