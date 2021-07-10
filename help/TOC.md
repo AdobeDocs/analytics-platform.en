@@ -118,7 +118,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [Accessibility in Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
     + [Long-tail in Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
 + Report Builder {#cja-reportbuilder}
-  + [Report Builder Overview](report-builder/reportbuilder.md)
+  + [Report Builder Overview](report-builder/report-buider-overview.md)
   + [Report Builder Set Up](report-builder/report-builder-setup.md)
   + [Create a Data Block](report-builder/create-a-data-block.md)
   + [Report Builder Hub](report-builder/report-builder-hub.md)
