@@ -24,11 +24,11 @@ Report Builder for Customer Journey Analytics is available for Excel on the foll
 - Windows
 - Web browsers
 
->[!NOTE] This documentation is for Report Builder for Customer Journey Analytics. For information about Report Builder for Analytics on Windows, see [link to RB for Analytics]
+[!NOTE] This documentation is for Report Builder for Customer Journey Analytics. For information about Report Builder for Analytics on Windows, see [link to RB for Analytics]
 
 You can download Report Builder for Customer Journey Analytics from the Microsoft AppSource Store. [Link]
 
-# Report Builder Set Up
+__Report Builder Set Up
 
 You can quickly access Report Builder using the Excel Add-in menu.
 
@@ -56,7 +56,7 @@ Report Builder for Customer Journey Analytics is supported on the following oper
 
 You must install the Excel add-in to use Report Builder for Customer Journey Analytics. You can obtain the Report Builder add-in for Excel at the following sites. Once you install the add-in, you can access Report Builder from within an open Excel workbook.
 
-#### Download and install the Report Builder add-in
+### Download and install the Report Builder add-in
 
 **\<\< NEED to revisit this workflow when the process is established
 \>\>**
@@ -69,11 +69,11 @@ You must install the Excel add-in to use Report Builder for Customer Journey Ana
 
 - Browser \<\<Add-in Name>\> \_\_\_\_\_\_\_\_\_
 
-2.  Launch Excel.
+1.  Launch Excel.
 
-3.  From the Insert menu, select Office Add-ins.
+1.  From the Insert menu, select Office Add-ins.
 
-4.  Follow the instructions to upload and install the manifest.xml file.
+1.  Follow the instructions to upload and install the manifest.xml file.
 
 After installing the Report Builder add-in, the Report Builder icon is displayed in the Excel ribbon.
 
@@ -123,7 +123,7 @@ When you are logged in to Report Builder, you can switch between organizations.
 
 1.  Select an organization from the list of available organizations. Only organizations that you have access to are listed.
 
-# Create a Data Block
+__Create a Data Block
 
 Use the Report Builder hub to create a data block and configure its parameters.
 
@@ -135,17 +135,17 @@ Use the Report Builder hub to create a data block and configure its parameters.
 
  ![image file](./assets/image8.png)
 
-#### Data Block location
+## Data Block location
 
 The Data Block location defines where in the Excel worksheet to add your report.
 
  To specify the data block location, select a single cell in the worksheet or enter a cell address such as a3, \$a3, a\$3 or sheet1!a2. The cell specified is the upper-left corner of the data block when the data is retrieved.
 
-#### Data view
+## Data view
 
  The Data view allows you to choose a data view from a predefined list of data views or from a data view in a cell location.
 
-#### Date range
+## Date range
 
  The Date Range section allows you to choose a date range from a calendar control, from predefined or customized rolling date expression, or from date range located in cell values. For additional information about the data range, see \<\< link to date range section>\>.
 
@@ -183,7 +183,7 @@ The Report Builder Commands and Quick Edit panels are updated to reflect the cur
 
 ![image file](./assets/image12.png)
 
-# Report Builder Hub
+__Report Builder Hub
 
 The Report Builder hub is shown when you successfully log in to Report
 Builder. The hub is displayed on the right-side panel of the Excel
@@ -215,11 +215,11 @@ Commands are displayed based on the content of the selected cells.
 
 
 | Commands displayed      | Available when… | Purpose |
-| ------------------ | ------------------ | ------------------
+| ------------------ | ------------------ | ------------------ |
 | Create data block  | One or more cells is selected in the workbook. | Used to create a data block |
 | Edit data block | The selected cell or cells range is part of one data block only. | Used to edit a data block |
 | Refresh data block | The selection contains at least one datablock. The command will refresh only the datablocks in the selection. | Used to refresh one or more data blocks |
-| Refresh all data blocks | The workbook contains one or more datablocks. | Used to refresh ALL datablocks in the workbook.
+| Refresh all data blocks | The workbook contains one or more datablocks. | Used to refresh ALL datablocks in the workbook. |
 | Copy data block | The selected cell or cells range is part of one or more datablocks.| Used to copy a data block |
 | Paste data blocks | The previous action taken in Report Builder was Cut Data Block(s) or Copy Data Block(s) AND if the selected location has enough cell- area to paste the copied data blocks without overlapping with pre-existing data blocks | Used to paste a copied or cut data block |
 
@@ -303,7 +303,7 @@ The list of available metrics, dimensions, and filters is dependent on the selec
 
 ![image file](./assets/image21.png)
 
-# Work with Filters
+__Work with Filters
 
 You can add filters when you use the Create a new data block option or when you use the Quick Edit panel. For information about adding filters when you create a new data block, see \<\<link to Create a Data Block section>\>.
 
@@ -399,7 +399,7 @@ Use the Replace tab panel to replace one segment with another segment.
 
  ![image file](./assets/image31.png)
 
-# Select a Date Range
+__Select a Date Range
 
 \<\< ADD introductory statement indicating where Date Range can be changed in the user interface -- both in Create new data block and in Quick Edit panel \>\>
 
@@ -569,7 +569,7 @@ The date range can be specified in cells in the spreadsheet. The *Date range Fro
 
 ![](./assets/image41.png)
 
-# Dimension Search
+__Dimension Search
 
 Dimension search allows you to search for any dimension included in a data block except for the date unit dimension. You can also specify the number of items to return for each dimension. The dimension search operators match the search filters used in Adobe Analytics Workspace. You can enter search terms directly, or they can be referenced as cell values.
 
@@ -685,7 +685,7 @@ Use the Specific filtering type to choose an exact value dimension item. The ite
 
 1. To move an item in the list, click \... to display the move menu.
 
- ![](./assets/image51.jpg)
+ ![](./assets/image51.png)
 
 1. Apply your changes
 
@@ -722,7 +722,7 @@ From the Component's Dimension tab, you can click a Dimension \"right chevron\" 
 
 You can continue to drag and drop items to the Pivot table or click the Filter icon to further edit the list using the Dimension Filter From List option.
 
-# Report Builder Settings
+__Report Builder Settings
 
 The Settings pane allows you to configure application-level settings such as the language displayed by the UI or whether or not to work in off-line mode. The settings are applied immediately and they are set for all future sessions until they are changed.
 
