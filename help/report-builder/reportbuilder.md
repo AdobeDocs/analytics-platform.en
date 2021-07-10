@@ -24,7 +24,10 @@ Report Builder for Customer Journey Analytics is available for Excel on the foll
 - Windows
 - Web browsers
 
-[!NOTE] This documentation is for Report Builder for Customer Journey Analytics. For information about Report Builder for Analytics on Windows, see [link to RB for Analytics]
+>[!NOTE]
+>
+>This documentation is for Report Builder for Customer Journey Analytics. For information about Report Builder for Analytics on Windows, see [link to RB for Analytics]
+
 
 You can download Report Builder for Customer Journey Analytics from the Microsoft AppSource Store. [Link]
 
@@ -350,8 +353,8 @@ You can add or remove segments to selected data blocks using the Quick Edit mode
 
  You can conduct the following searches:
 
- - Search All the segments that are present in all the data blocks.
- - Search for segments in one or more data blocks.
+- Search All the segments that are present in all the data blocks.
+- Search for segments in one or more data blocks.
 
  ![image file](./assets/image26.png)
 
@@ -417,10 +420,10 @@ You have the option to exclude today on any selected date ranges.
 
 1. Change the date using the following:
 
- - The Calendar field
- - The preset drop down menu
- - The rolling date mode
- - The customize expression mode
+- The Calendar field
+- The preset drop down menu
+- The rolling date mode
+- The customize expression mode
 
   ![](./assets/image33.png)
 
@@ -468,10 +471,10 @@ When you create a new data block,
 
 1. Set the rolling dates using the following parameters:
 
- - Rolling yearly
- - Rolling daily
- - Start
- - End
+- Rolling yearly
+- Rolling daily
+- Start
+- End
 
 1. Click Next.
 
