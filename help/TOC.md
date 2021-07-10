@@ -118,7 +118,14 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [Accessibility in Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
     + [Long-tail in Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
 + Report Builder {#cja-reportbuilder}
-  + [Report Builder overview](report-builder/reportbuilder.md)
+  + [Report Builder Overview](report-builder/reportbuilder.md)
+  + [Report Builder Set Up](report-builder/report-builder-setup.md)
+  + [Create a Data Block](report-builder/create-a-data-block.md)
+  + [Report Builder Hub](report-builder/report-builder-hub.md)
+  + [Work with Filters](report-builder/work-with-filters.md)
+  + [Select a Data Range](report-builder/select-date-range.md)
+  + [Dimension Search](report-builder/dimension-search.md)
+  + [Report Builder Settings](report-builder/report-builder-settings.md)
 + Components {#cja-components}
   + [Components overview](components/overview.md)
   + Dimensions {#dimensions}
