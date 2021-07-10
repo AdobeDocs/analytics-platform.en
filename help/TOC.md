@@ -117,6 +117,8 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [Administration requirements](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility in Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
     + [Long-tail in Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
++ Report Builder {#cja-reportbuilder}
+  + [Report Builder overview](report-builder/reportbuilder.md)
 + Components {#cja-components}
   + [Components overview](components/overview.md)
   + Dimensions {#dimensions}
