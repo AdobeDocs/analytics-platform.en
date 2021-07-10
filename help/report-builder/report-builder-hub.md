@@ -18,7 +18,7 @@ window.
 
 Use the Report Builder hub to create, update, or delete data blocks. 
 
-### Commands panel
+## Commands panel
 
 After you create a data block, the Report Builder hub displays the Command panel and the Quick Edit panel.
 
@@ -46,7 +46,7 @@ Commands are displayed based on the content of the selected cells.
 | Copy data block | The selected cell or cells range is part of one or more datablocks.| Used to copy a data block |
 | Paste data blocks | The previous action taken in Report Builder was Cut Data Block(s) or Copy Data Block(s) AND if the selected location has enough cell- area to paste the copied data blocks without overlapping with pre-existing data blocks | Used to paste a copied or cut data block |
 
-### Quick Edit panel
+## Quick Edit panel
 
 When you select one or more data blocks in a spreadsheet, the Quick Edit panel is displayed. You can use the Quick Edit panel to change parameters across all the selected data blocks.
 
@@ -54,7 +54,7 @@ When you select one or more data blocks in a spreadsheet, the Quick Edit panel i
 
 You can select several distinct cell ranges by using the Ctrl key (Windows) or the Command key (macOS) as you click and drag. The changes made using the Quick Edit sections apply to all data blocks that are present in the selected ranges. 
 
-#### Data View
+### Data View
 
 If multiple data blocks are selected and they are not assigned to the same data view, the Data View link display shows *Multiple*.
 
@@ -66,18 +66,18 @@ You can choose a data view from a list of available data views.
 
 The list displayed depends on whether you are creating a new data block, editing an existing data block, or editing multiple data blocks.
 
-#### Date Range
+### Date Range
 
 If multiple data blocks are selected and they are not assigned to the same date range, the Date Range link displays *Multiple*.
 
-#### Filters
+### Filters
 
 The Filters link displays a summary list of the filters used by the selected data blocks.
 ![](./assets/image17.png)
 
 If multiple data blocks are selected and that are not assigned dto the same filters, the Filters link displays *Multiple*.
 
-### Components
+## Components
 
 When you create a new data block or edit an existing data block, the Components pane is displayed.
 
@@ -97,7 +97,7 @@ When you are editing a data block, if you make changes to a component and then s
 
 ![image file](./assets/image19.png)
 
-### Pivot Table
+## Pivot Table
 
 Use the Pivot Table to configure how the data block elements are organized and displayed in your report.
 
@@ -118,7 +118,7 @@ Pivot table at its preferred section.
 - A Date component is moved to the Column section.
 - A Filter component is moved to the Filters section.
 
-### Data Block Output
+## Data Block Output
 
 When you add, move, or remove items in the Pivot Table, the data block is pasted in the spreadsheet at the selected Data Block anchor location.
 
