@@ -9,29 +9,28 @@ type: Documentation
 
 # Dimension Search
 
-Dimension search allows you to search for any dimension included in a data block except for the date unit dimension. You can also specify the number of items to return for each dimension. The dimension search operators match the search filters used in Adobe Analytics Workspace. You can enter search terms directly, or they can be referenced as cell values.
+Dimension search allows you to search for any dimension included in a data block except for the date unit dimension. You can also specify the number of items to return for each dimension. The dimension search operators match the search filters used in Adobe Analytics Workspace. You can enter search terms directly or they can be referenced as cell values.
 
-You can search for data using the following types:
+You can search for data using the following filter types:
 
-- Most Popular \<\<may be renamed to dimension search>\>
-
+- Most Popular
 - Specific
 
-The search icon is displayed in the Pivot table next to a dimension name.
+To display the filter icon, click **...** in the Pivot table next to a component name.
 
 To set dimension search operators
 
-1.  Click the filter icon.
+1.  Click **...** in the Pivot table next to a component name.
 
- NEED Image
+   ![filter dimension](./assets/filter_dimension.png)
 
-1. Click the **Filter type** drop down menu to navigate to the Specific Filtering type.
+1. Select **Filter dimension** in the pop-up menu to display the Dimension search pane.
 
 1. Select the **Most popular** or **Specific** option.
 
-1. Choose the **From list** or the **From range of cells** option.
+   ![image files](./assets/dimension_search1.png)
 
-1. Select items from the Available Items list or select a range of cells.
+1. Select appropriate options based on the filter type chosen.
 
 1. Click **Apply** to add the filter.
 
@@ -39,39 +38,31 @@ A notification is shown to indicate that the filter has been added.
 
 Hovering above the row section displays a dimension with an applied filter.
 
- NEED Image>
-
 ## Most Popular Filtering
 
-\<\< need description >\>
+When you choose the Most Popular Filter option, you can retrieve data that matches any or all criteria that you specify.
 
-![image files](./assets/image42.png)
+![image files](./assets/most_popular_filter.png){ width=50% height=50% }
 
-### Page Number and Number of entries
+### Page and Rows Options
 
-Use the Page Number and Number of entries fields to enter positive and numerical (non floating point) values for filtering.
+Use the Page number and Rows fields to filter specific pages and rows.
 
 Default values
 
-- Starting rank: 1
-- Number of Entries: 10
+- Starting page: 1
+- Number of rows: 10
 
-Mininmum and maximum values
+Minimum and maximum values
 
-- Starting Rank: Min = 1, Max: 50 million
-- Number of Entries: Min = 1, Max: 50,000
+- Starting page: Min = 1, Max: 50 million
+- Number of rows: Min = 1, Max: 50,000
 
 ### Include \"No Value\"
 
-In Customer Journey Analytics, some dimensions collect a "no value" entry. This filter allows you to exclude these two values from reports. For example, a common example would be to create a classification such as the Product Name classification based on the Product SKU key. If a specific product sku has not been set up with its specific Product Name classification, its Product Name value is set to "no value".
+In Customer Journey Analytics, some dimensions collect a "no value" entry. This filter allows you to exclude these two values from reports. For example, you can create a classification such as the Product Name classification based on the Product SKU key. If a specific product SKU has not been set up with its specific Product Name classification, its Product Name value is set to "no value".
 
 You can select the Include "no value" option. You can also match the value if any or all criteria are met. The default value is **If any criteria are met**.
-
-This option is always visible but only enabled for a subset of dimensions.
-
-![](./assets/image43.png)
-
-![](./assets/image45.png)
 
 ### Match criteria
 
@@ -81,7 +72,7 @@ To set up match criteria
 
 1.  Select a match operator from the drop-down list.
 
- ![](./assets/image46.png)
+   ![](./assets/image46.png)
 
 1. Enter a value into the search term field.
 
@@ -93,9 +84,9 @@ You can include up to 10 search criteria components.
 
 ## Specific Filtering
 
-Use the Specific filtering type to choose an exact value dimension item. The items can be retrieved from a list or from a range of cells.
+Use the Specific filtering type to filter by an exact value. The items can be retrieved from a list or from a range of cells.
 
-![](./assets/image47.png)
+![](./assets/specific_filter.png){ width=50% height=50% }
 
 ### From list
 
@@ -133,29 +124,18 @@ Use the Specific filtering type to choose an exact value dimension item. The ite
 
 Select the From range of cells option to choose a range of cell that contain the list of dimensions items to match.
 
-![](./assets/image52.png)
+![](./assets/filter_range_of_cells.png){ width=50% height=50% }
 
 When you select a range of cells, consider the following restrictions:
 
 - The range must have at least one cell
 - The range cannot have more than 50,000 cells
-- The range has to to be in a single uninterrupted row, or column:
-
- NEED Image
-
-- A1:A100 => 1 column, 100 rows > valid
-- A1:B100 => 2 columns, 100 rows > invalid
-- A1: AA1 => 26 columns, 1 row > valid
-- A1: AA3 => 26 columns, 3 rows > invalid
-- A1:A10; A11:A20 => 1 column, 20 rows, but broken down into 2
-  distinct ranges > invalid
+- The range must be in a single uninterrupted row, or column:
 
 Your selection can contain empty cells or cells with values that don't match with a specific dimension item.
 
-### Specific Filtering outside of the Dimension Filtering Panel
+### Specific filtering to dimension types
 
-In addition to using the Specific Filter from List option, you can also \<\<specify Dimensions using the \_\_\_\_\_.\>\>
+In addition to using the Specific Filter from List option, you can also filter groups of Dimension items.
 
-From the Component's Dimension tab, you can click a Dimension \"right chevron\" icon to reveal the list of dimension items. Drag and drop these items into the Pivot table.\<\< It should add a Dimension entity of the same type to which a Dimension filter from list will be configured with the dropped items.\>\>
-
-You can continue to drag and drop items to the Pivot table or click the Filter icon to further edit the list using the Dimension Filter From List option.
+From the Dimension tab, click the chevron icon next to a dimension name to reveal the list of dimension items. You can drag and drop items into the Pivot table or double-click and item name to add it to the Pivot Table. Filters applied to the main dimension type in the Pivot Table are also applied to the dimension items.

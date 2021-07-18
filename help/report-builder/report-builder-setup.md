@@ -9,7 +9,7 @@ type: Documentation
 
 # Report Builder Set Up
 
-You can quickly access Report Builder in using the Excel Add-in menu.
+You can quickly access Report Builder using the Excel Add-in menu.
 
 ## Requirements
 
@@ -26,9 +26,7 @@ Report Builder for Customer Journey Analytics is supported on the following oper
 ### Browsers
 
 - Chrome Version \_\_\_
-
 - Firefox Version \_\_\_
-
 - Safari Version \_\_\_\_
 
 ## Excel Add-in
@@ -60,25 +58,22 @@ After installing the Report Builder add-in, the Report Builder icon is displayed
 
 ## Log in to Report Builder
 
-Be sure you installed the \<Report Builder for Excel add-in for your operating platform or browser.
+After you install the Report Builder for Excel add-in for your operating platform or browser, follow these steps to log in to Report Builder.
 
-1.  Open an Excel workbook.
+1. Open an Excel workbook.
 
- Need image
+1. Click the Report Builder icon to launch Report Builder.
 
-1.  Click the Report Builder icon to launch Report Builder.
+1. From the Adobe Report Builder toolbar, click **Login**.
 
- ![image file](./assets/image2.png)
+   ![image file](./assets/image3.png)
 
-1.  From the Adobe Report Builder toolbar, click **Login**.
+1. Enter your Adobe Experience ID account information. Your account information should match your Customer Journey Analytics credentials.
 
- ![image file](./assets/image3.png)
+ When you first log in, you are logged in to the default organization assigned to your profile. For information about changing to another organization, see [Switch organizations](#switch-organizations).
 
-1.  Enter your Adobe Experience ID account information. Your account   information should match your Customer Journey Analytics credentials.
+   ![login in](./assets/login1.png)
 
- When you log in, you are logged in to the default organization defined for your profile. For information about changing to another organization, see [link].
-
- ![image file](./assets/image4.png)
 
 ### Sign out
 
@@ -88,16 +83,16 @@ You can sign out from Report Builder from the user profile pop-up.
 
 2.  Click the avatar icon to display your user profile.
 
- ![image file](./assets/image5.png)
+   ![image file](./assets/sign_out.png)
 
 1.  Click Sign Out.
 
-### Switch organizations
+### Switch organizations {#switch-organizations}
 
-When you are logged in to Report Builder, you can switch between organizations.
+After you log in to Report Builder, you can switch between organizations.
 
 1.  Click the name of the organization that is displayed when you log in.
 
- ![image file](./assets/image6.png)
+ ![image file](./assets/switch_organizations.png)
 
 1.  Select an organization from the list of available organizations. Only organizations that you have access to are listed.

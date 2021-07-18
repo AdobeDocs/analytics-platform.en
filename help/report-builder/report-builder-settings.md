@@ -9,21 +9,20 @@ type: Documentation
 
 # Report Builder Settings
 
-The Settings pane allows you to configure application-level settings such as the language displayed by the UI or whether or not to work in off-line mode. The settings are applied immediately and they are set for all future sessions until they are changed.
+Use the Settings pane to configure application-level settings such as the language displayed by the UI or whether or not to work in off-line mode. The settings are applied immediately and they are set for all future sessions until they're changed.
 
 To change Report Builder settings
 
 1.  Click the Settings icon.
 
- Need image
-
 1. Make changes for off-line mode, as-of date, the language, or troubleshooting settings.
+
+1. Click Apply.
 
 1. Click Home to return to the Report Builder hub.
 
- ![image file](./assets/image53.png)
+ ![image file](./assets/settings1.png){ width=50% height=50% }
 
- ![image file](./assets/image54.png)
 
 ## Off-line mode
 
@@ -37,9 +36,9 @@ To turn off-line mode on
 
 1.  Select **Enable off-line mode**.
 
- NEED Image
-
 1. Enter a positive integer in the **Display metric data as** field.
+
+1. Click Apply.
 
 ## As of date
 
@@ -53,12 +52,12 @@ The As of date setting allows you to choose the date reference for Data Blocks w
 
 You can choose the language for the Report Builder UI. All supported Adobe Analytics languages are available.
 
-Choose a language from the drop-down menu to set the language displayed in the Report Builder hub.
+Choose a language from the drop-down menu to set the language displayed in the Report Builder UI.
 
 ![image file](./assets/image55.png)
 
 ## Troubleshooting
 
-Use the Troubleshooting setting to log all client/server data to local file. This option can help to resolve support tickets.
+Use the Troubleshooting setting to log all client/server data to a local file. This option can help to resolve support tickets.
 
-To turn on troubleshooting and send date to a log file, click **Log report builder request to local file**.
+To send date to a log file, click **Log report builder request to local file**.

@@ -9,38 +9,37 @@ type: Documentation
 
 # Select a Date Range
 
-\<\< ADD introductory statement indicating where Date Range can be changed in the user interface -- both in Create new data block and in Quick Edit panel \>\>
+Select the date range when you create a data block. You can then change the date range when you use the Edit data block panel or from the Quick Edit panel. The same process is used when you select the date range or when you change the date range at a later time.
 
-You can choose a date or date range for the data block using the following formats:
+Choose a date or date range for the data block using the following formats:
 
 - Static dates
-- Rolling dates using a date expression or a formula such as td
+- Rolling dates using a date expression or a formula such as ```td```
 - Using dates entered in the worksheet cells
 
 You have the option to exclude today on any selected date ranges.
 
-1.  Use the Create new data block panel or the Quick Edit panel to select a date range.
+1.  Use the Create data block panel, the Edit data block panel or the Quick Edit panel to select a date range.
 
- ![image file](./assets/image32.png)
+   ![image file](./assets/calendar1.png){ width=50% height=50% }
 
 1. Change the date using the following:
 
-- The Calendar field
-- The preset drop down menu
-- The rolling date mode
-- The customize expression mode
+   - The Calendar field
+   - The preset drop down menu
+   - The rolling date mode
+   - The customize expression mode
 
-  ![](./assets/image33.png)
 
-  ![](./assets/image37.png)
+   ![image file](./assets/calendar2.png){ width=50% height=50% }
+
+   ![image file](./assets/calendar3.png){ width=50% height=50% }
 
 ## Use the Calendar
 
 When you create a new data block, you select the date range using the calendar.
 
-1.  Select Calendar.
-
-  NEED Image
+1. Select Calendar.
 
 1. Click the calendar icon to display a monthly calendar.
 
@@ -52,17 +51,18 @@ When you create a new data block, you select the date range using the calendar.
 
  ![image file](./assets/image33.png)
 
- When you already have data blocks created, you can also reset the date range using the Date Range link in the Quick Edit menu.
+### Change the date range
+
+To change the date range after you created a data block, use the Date Range link in the Quick Edit menu.
 
 1.  Click the Date Range link to display the Calendar pane.
 
- NEED Image
+   ![image file](./assets/image39.png)
 
 1. Click the calendar icon to display a monthly calendar or enter a date range start and end period in the format: YYYY-MM-DD~~.~~
 
 1. Click Apply.
 
- ![image file](./assets/image39.png)
 
 ## Use Rolling Dates
 
@@ -72,18 +72,16 @@ When you create a new data block,
 
 1.  Select Use rolling dates.
 
- NEED Image
-
 1. Set the rolling dates using the following parameters:
 
-- Rolling yearly
-- Rolling daily
-- Start
-- End
+   - Rolling yearly
+   - Rolling daily
+   - Start
+   - End
 
 1. Click Next.
 
- ![image file](./assets/image34.png)
+    ![image file](./assets/calendar3.png){ width=50% height=50% }
 
 ## Use Custom Expressions
 
@@ -91,31 +89,29 @@ The custom expression option allows you to change the date range by building a c
 
 1.  Click Use rolling dates
 
- NEED Image
-
 1. Click Use custom expression.
 
  When the Use custom Express option is selected, the standard Rolling Date Range controls are disabled.
 
- ![image file](./assets/image40.png)
+   ![image file](./assets/custom_expression.png){ width=50% height=50% }
 
 1. Enter a custom expression.
 
- For a sample list of custom expressions, see \<\< link to expression list tables \>\>
+   For a sample list of custom expressions, see \<\< link to expression list tables \>\>
 
 1. Click Next.
 
-To create a custom formula,
+### Create a custom formula
 
 1. Enter a Date Reference.
 
 1. Add Date Operators to move the date to the past or future.
 
- You can enter a custom date expression that includes multiple operators, such as tm-11m-1d.
+ You can enter a custom date expression that includes multiple operators, such as ```tm-11m-1d```.
 
 ### Date References
 
-The following table lists several date reference examples.
+The following table lists date reference examples.
 
   | Date Reference | Type         | Description                |
   | -------------- | ------------ | -------------------------- |
@@ -128,7 +124,7 @@ The following table lists several date reference examples.
 
 ### Date Operators
 
-The following table lists several date operator examples.
+The following table lists date operator examples.
 
   | Date Operators | Unit     | Description                                  |
   | -------------- | -------- | -------------------------------------------- |
@@ -141,7 +137,7 @@ The following table lists several date operator examples.
 
 ### Date Expressions
 
-The following tables lists several date expression examples.
+The following tables lists date expression examples.
 
   | Date Expression | Meaning                              |
   | --------------- | ------------------------------------ |
@@ -155,11 +151,11 @@ The following tables lists several date expression examples.
 
 Choose the **Exclude today** option to exclude today from a selected date range. Choosing to include today may pull incomplete data for today.
 
-When selected, the Exclude Today option excludes the current day from all date range modes (calendar, rolling dates, or custom expressions).
+When selected, the Exclude Today option excludes the current day from all date range modes including calendar, rolling dates, or custom expressions.
 
 ## Valid date ranges
 
-The following date range requirements apply:
+The following date range requirements apply.
 
 - The start and end dates must be in the following format: YYYY-MM-DD
 
@@ -169,10 +165,8 @@ The following date range requirements apply:
 
 - You can create a static date range that is set for the future. For example, you may need to set a future date for a marketing campaign launch next week. This would create a workbook monitoring for the campaign ahead of time.
 
-- Date formats
-
 ## Use Date Range From Cell
 
 The date range can be specified in cells in the spreadsheet. The *Date range From cell* option lets you choose the data block start and end date from selected cells. When you select the From cell option, the Calendar Panel displays From and To fields.
 
-![](./assets/image41.png)
+![](./assets/date_from_cell.png){ width=50% height=50% }
