@@ -11,7 +11,7 @@ exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 
 Access these functions by checking **[!UICONTROL Show Advanced]** in the **[!UICONTROL Functions]** drop-down list.
 
-## Table Functions versus Row Functions 
+## Table Functions versus Row Functions
 
 A table function is one where the output is the same for every row of the table. A row function is one where the output is different for every row of the table.
 
@@ -66,7 +66,7 @@ This is how the "Approximate Customers" metric could be used in reporting:
 
 ## Uniques Exceeded
 
-Like Count() and RowCount(), Approximate Count Distinct() is subject to ["uniques exceeded" limits](https://marketing.adobe.com/resources/help/en_US/reference/metrics_uniques_high_numbers.html). If the "uniques exceeded" limit is reached within a particular month for a dimension, the value is counted as 1 dimension item.
+Like Count() and RowCount(), Approximate Count Distinct() is subject to ["uniques exceeded" limits](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html?lang=en). If the "uniques exceeded" limit is reached within a particular month for a dimension, the value is counted as 1 dimension item.
 
 ## Comparing Count Functions
 
@@ -91,7 +91,7 @@ ACOS(metric)
 Returns the arcsine, or inverse sine, of a number. The arcsine is the angle whose sine is number. The returned angle is given in radians in the range -pi/2 to pi/2. To express the arcsine in degrees, multiply the result by 180/PI( ).
 
 ```
-ASIN(metric) 
+ASIN(metric)
 ```
 
 |  Argument  |  |
@@ -128,27 +128,27 @@ ESTIMATE.EXP(metric_X, metric_Y)
 Returns the percentage of values in a student's t-distribution with n degrees of freedom that have a z-score less than x.
 
 ```
-cdf_t( -∞, n ) = 0 
-cdf_t(  ∞, n ) = 1 
-cdf_t( 3, 5 ) ? 0.99865 
-cdf_t( -2, 7 ) ? 0.0227501 
+cdf_t( -∞, n ) = 0
+cdf_t(  ∞, n ) = 1
+cdf_t( 3, 5 ) ? 0.99865
+cdf_t( -2, 7 ) ? 0.0227501
 cdf_t( x, ∞ ) ? cdf_z( x )
 ```
 
-## Cdf-Z 
+## Cdf-Z
 
 Returns the percentage of values in a normal distribution that have a z-score less than x.
 
 ```
-cdf_z( -∞ ) = 0 
-cdf_z( ∞ ) = 1 
-cdf_z( 0 ) = 0.5 
-cdf_z( 2 ) ? 0.97725 
-cdf_z( -3 ) ? 0.0013499 
- 
+cdf_z( -∞ ) = 0
+cdf_z( ∞ ) = 1
+cdf_z( 0 ) = 0.5
+cdf_z( 2 ) ? 0.97725
+cdf_z( -3 ) ? 0.0013499
+
 ```
 
-## Ceiling (Row) 
+## Ceiling (Row)
 
 Returns the smallest integer not less than a given value. For example, if you want to avoid reporting currency decimals for revenue and a product has $569.34, use the formula CEILING( *Revenue*) to round revenue up to the nearest dollar, or $570.
 
@@ -160,7 +160,7 @@ CEILING(metric)
 |---|---|
 |  *metric* | The metric that you want to round.  |
 
-## Cosine (Row) 
+## Cosine (Row)
 
 Returns the cosine of the given angle. If the angle is in degrees, multiply the angle by PI( )/180.
 
@@ -172,7 +172,7 @@ COS(metric)
 |---|---|
 |  *metric* | The angle in radians for which you want the cosine.  |
 
-## Cube Root 
+## Cube Root
 
 Returns the positive cube root of a number. The cube root of a number is the value of that number raised to the power of 1/3.
 
@@ -184,22 +184,22 @@ CBRT(metric)
 |---|---|
 |  *metric* | The metric for which you want the cube root.  |
 
-## Cumulative 
+## Cumulative
 
 Returns the sum of x for the last N rows (as ordered by the dimension, using hash values for string based fields).
 
 If N <= 0 it uses all previous rows. Since it's ordered by the dimension it's only useful on dimensions that have a natural order like date or path length.
 
 ```
-| Date | Rev  | cumul(0,Rev) | cumul(2,Rev) | 
-|------+------+--------------+--------------| 
-| May  | $500 | $500         | $500         | 
-| June | $200 | $700         | $700         | 
-| July | $400 | $1100        | $600         | 
- 
+| Date | Rev  | cumul(0,Rev) | cumul(2,Rev) |
+|------+------+--------------+--------------|
+| May  | $500 | $500         | $500         |
+| June | $200 | $700         | $700         |
+| July | $400 | $1100        | $600         |
+
 ```
 
-## Cumulative Average 
+## Cumulative Average
 
 Returns the average of the last N rows.
 
@@ -213,11 +213,11 @@ If N <= 0 it uses all previous rows. Since it's ordered by the dimension it's on
 cumul(revenue)/cumul(visitor)
 ```
 
-## Equal 
+## Equal
 
 Returns items that match exactly for a numeric or string value.
 
-## Exponential Regression_ Correlation Coefficient (Table) 
+## Exponential Regression_ Correlation Coefficient (Table)
 
 Returns the correlation coefficient, *r*, between two metric columns ( *metric_A* and *metric_B*) for the regression equation .
 
@@ -230,7 +230,7 @@ CORREL.EXP(metric_X, metric_Y)
 |  *metric_X* | A metric that you would like to correlate with *metric_Y*.  |
 |  *metric_Y* | A metric that you would like to correlate with *metric_X*.  |
 
-## Exponential Regression: Intercept (Table) 
+## Exponential Regression: Intercept (Table)
 
 Returns the intercept, *b*, between two metric columns ( *metric_X* and *metric_Y*) for
 
@@ -243,7 +243,7 @@ INTERCEPT.EXP(metric_X, metric_Y)
 |  *metric_X* | A metric that you would like to designate as the dependent data.  |
 |  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## Exponential Regression: Slope (Table) 
+## Exponential Regression: Slope (Table)
 
 Returns the slope, *a*, between two metric columns ( *metric_X* and *metric_Y*) for .
 
@@ -256,7 +256,7 @@ SLOPE.EXP(metric_X, metric_Y)
 |  *metric_X* | A metric that you would like to designate as the dependent data.  |
 |  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## Floor (Row) 
+## Floor (Row)
 
 Returns the largest integer not greater than a given value. For example, if you want to avoid reporting currency decimals for revenue and a product has $569.34, use the formula FLOOR( *Revenue*) to round revenue down to the nearest dollar, or $569.
 
@@ -268,15 +268,15 @@ FLOOR(metric)
 |---|---|
 |  *metric* | The metric you want to round.  |
 
-## Greater Than 
+## Greater Than
 
 Returns items whose numeric count is greater than the value entered.
 
-## Greater Than or Equal 
+## Greater Than or Equal
 
 Returns items whose numeric count is greater than or equal to the value entered.
 
-## Hyperbolic Cosine (Row) 
+## Hyperbolic Cosine (Row)
 
 Returns the hyperbolic cosine of a number.
 
@@ -288,7 +288,7 @@ COSH(metric)
 |---|---|
 |  *metric* | The angle in radians for which you want to find the hyperbolic cosine.  |
 
-## Hyperbolic Sine (Row) 
+## Hyperbolic Sine (Row)
 
 Returns the hyperbolic sine of a number.
 
@@ -300,7 +300,7 @@ SINH(metric)
 |---|---|
 |  *metric* | The angle in radians for which you want to find the hyperbolic sine.  |
 
-## Hyperbolic Tangent (Row) 
+## Hyperbolic Tangent (Row)
 
 Returns the hyperbolic tangent of a number.
 
@@ -312,7 +312,7 @@ TANH(metric)
 |---|---|
 |  *metric* | The angle in radians for which you want to find the hyperbolic tanget.  |
 
-## IF (Row) 
+## IF (Row)
 
 The IF function returns one value if a condition you specify evaluates to TRUE, and another value if that condition evaluates to FALSE.
 
@@ -326,31 +326,31 @@ IF(logical_test, [value_if_true], [value_if_false])
 |  *[value_if_true]* | The value that you want to be returned if the *logical_test* argument evaluates to TRUE. (This argument defaults to 0 if not included.)  |
 |  *[value_if_false]* | The value that you want to be returned if the *logical_test* argument evaluates to FALSE. (This argument defaults to 0 if not included.)  |
 
-## Less Than 
+## Less Than
 
 Returns items whose numeric count is less than the value entered.
 
-## Less Than or Equal 
+## Less Than or Equal
 
 Returns items whose numeric count is less than or equal to the value entered.
 
-## Linear regression_ Correlation Coefficient 
+## Linear regression_ Correlation Coefficient
 
 Y = a X + b. Returns the correlation coefficient
 
-## Linear regression_ Intercept 
+## Linear regression_ Intercept
 
 Y = a X + b. Returns b.
 
-## Linear regression_ Predicted Y 
+## Linear regression_ Predicted Y
 
 Y = a X + b. Returns Y.
 
-## Linear regression_ Slope 
+## Linear regression_ Slope
 
 Y = a X + b. Returns a.
 
-## Log Base 10 (Row) 
+## Log Base 10 (Row)
 
 Returns the base-10 logarithm of a number.
 
@@ -362,7 +362,7 @@ LOG10(metric)
 |---|---|
 |  *metric* | The positive real number for which you want the base-10 logarithm.  |
 
-## Log regression: Correlation coefficient (Table) 
+## Log regression: Correlation coefficient (Table)
 
 Returns the correlation coefficient, *r*, between two metric columns (*metric_X* and *metric_Y*) for the regression equation [!DNL Y = a ln(X) + b]. It is calculated using the CORREL equation.
 
@@ -375,7 +375,7 @@ CORREL.LOG(metric_X,metric_Y)
 |  *metric_X* | A metric that you would like to correlate with *metric_Y*.  |
 |  *metric_Y* | A metric that you would like to correlate with *metric_X*.  |
 
-## Log regression: Intercept (Table) 
+## Log regression: Intercept (Table)
 
 Returns the intercept *b* as the least squares regression between two metric columns (*metric_X* and *metric_Y*) for the regression equation [!DNL Y = a ln(X) + b]. It is calculated using the INTERCEPT equation.
 
@@ -388,7 +388,7 @@ INTERCEPT.LOG(metric_X, metric_Y)
 |  *metric_X* | A metric that you would like to designate as the dependent data.  |
 |  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## Log Regression: Predicted Y (Row) 
+## Log Regression: Predicted Y (Row)
 
 Calculates the predicted [!DNL y] values (metric_Y), given the known [!DNL x] values (metric_X) using the "least squares" method for calculating the line of best fit based on [!DNL Y = a ln(X) + b]. It is calculated using the ESTIMATE equation.
 
@@ -403,7 +403,7 @@ ESTIMATE.LOG(metric_X, metric_Y)
 |  *metric_X* | A metric that you would like to designate as the dependent data.  |
 |  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## Log regression: Slope (Table) 
+## Log regression: Slope (Table)
 
 Returns the slope, *a*, between two metric columns (*metric_X* and *metric_Y*) for the regression equation [!DNL Y = a ln(X) + b]. It is calculated using the SLOPE equation.
 
@@ -416,7 +416,7 @@ SLOPE.LOG(metric_A, metric_B)
 |  *metric_A* | A metric that you would like to designate as the dependent data.  |
 |  *metric_B* | A metric that you would like to designate as the independent data.  |
 
-## Natural Log 
+## Natural Log
 
 Returns the natural logarithm of a number. Natural logarithms are based on the constant *e* (2.71828182845904). LN is the inverse of the EXP function.
 
@@ -428,7 +428,7 @@ LN(metric)
 |---|---|
 |  *metric* | The positive real number for which you want the natural logarithm.  |
 
-## NOT 
+## NOT
 
 Returns 1 if the number is 0 or returns 0 if another number.
 
@@ -442,11 +442,11 @@ NOT(logical)
 
 Using NOT requires knowing if the expressions (<, >, =, <> , etc.) return 0 or 1 values.
 
-## Not equal 
+## Not equal
 
 Returns all items that do not contain the exact match of the value entered.
 
-## Or (Row) 
+## Or (Row)
 
 Returns TRUE if any argument is TRUE, or returns FALSE if all arguments are FALSE.
 
@@ -463,7 +463,7 @@ OR(logical_test1,[logical_test2],...)
 |  *logical_test1* | Required. Any value or expression that can be evaluated to TRUE or FALSE.  |
 |  *logical_test2* | Optional. Additional conditions that you want to evaluate as TRUE or FALSE  |
 
-## Pi 
+## Pi
 
 Returns the constant PI, 3.14159265358979, accurate to 15 digits.
 
@@ -473,7 +473,7 @@ PI()
 
 The [!DNL PI]function has no arguments.
 
-## Power regression: Correlation coefficient (Table) 
+## Power regression: Correlation coefficient (Table)
 
 Returns the correlation coefficient, *r*, between two metric columns (*metric_X* and *metric_Y*) for [!DNL Y = b*X].
 
@@ -486,7 +486,7 @@ CORREL.POWER(metric_X, metric_Y)
 |  *metric_X* | A metric that you would like to correlate with *metric_Y*.  |
 |  *metric_Y* | A metric that you would like to correlate with *metric_X*.  |
 
-## Power regression: Intercept (Table) 
+## Power regression: Intercept (Table)
 
 Returns the intercept, *b*, between two metric columns (*metric_X* and *metric_Y*) for [!DNL Y = b*X].
 
@@ -499,7 +499,7 @@ Returns the intercept, *b*, between two metric columns (*metric_X* and *metric_Y
 |  *metric_X* | A metric that you would like to designate as the dependent data.  |
 |  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## Power regression: Predicted Y (Row) 
+## Power regression: Predicted Y (Row)
 
 Calculates the predicted [!DNL y] values ( [!DNL metric_Y]), given the known [!DNL x] values ( [!DNL metric_X]) using the "least squares" method for calculating the line of best fit for [!DNL Y = b*X].
 
@@ -512,7 +512,7 @@ Calculates the predicted [!DNL y] values ( [!DNL metric_Y]), given the known [!D
 |  *metric_X* | A metric that you would like to designate as the dependent data.  |
 |  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## Power regression: Slope (Table) 
+## Power regression: Slope (Table)
 
 Returns the slope, *a*, between two metric columns (*metric_X* and *metric_Y*) for [!DNL Y = b*X].
 
@@ -525,7 +525,7 @@ SLOPE.POWER(metric_X, metric_Y)
 |  *metric_X* | A metric that you would like to designate as the dependent data.  |
 |  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## Quadratic regression: Correlation coefficient (Table) 
+## Quadratic regression: Correlation coefficient (Table)
 
 Returns the correlation coefficient, *r*, between two metric columns (*metric_X* and *metric_Y*) for [!DNL Y=(a*X+b)]****.
 
@@ -538,7 +538,7 @@ CORREL.QUADRATIC(metric_X, metric_Y)
 |  *metric_X* | A metric that you would like to correlate with *metric_Y*.  |
 |  *metric_Y* | A metric that you would like to correlate with *metric_X*.  |
 
-## Quadratic regression: Intercept (Table) 
+## Quadratic regression: Intercept (Table)
 
 Returns the intercept, *b*, between two metric columns (*metric_X* and *metric_Y*) for [!DNL Y=(a*X+b)]****.
 
@@ -551,7 +551,7 @@ INTERCEPT.POWER(metric_X, metric_Y)
 |  *metric_X* | A metric that you would like to designate as the dependent data.  |
 |  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## Quadratic regression: Predicted Y (Row) 
+## Quadratic regression: Predicted Y (Row)
 
 Calculates the predicted [!DNL y] values (metric_Y), given the known [!DNL x] values (metric_X) using the least squares method for calculating the line of best fit using [!DNL Y=(a*X+b)]**** .
 
@@ -564,7 +564,7 @@ ESTIMATE.QUADRATIC(metric_A, metric_B)
 |  *metric_A* | A metric that you would like to designate as the dependent data.  |
 |  *metric_B* | A metric that you would like to designate as the dependent data.  |
 
-## Quadratic regression: Slope (Table) 
+## Quadratic regression: Slope (Table)
 
 Returns the slope, *a*, between two metric columns (*metric_X* and metric_Y) for [!DNL Y=(a*X+b)]****.
 
@@ -577,7 +577,7 @@ SLOPE.QUADRATIC(metric_X, metric_Y)
 |  *metric_X* | A metric that you would like to designate as the dependent data.  |
 |  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## Reciprocal regression: Correlation coefficient (Table) 
+## Reciprocal regression: Correlation coefficient (Table)
 
 Returns the correlation coefficient, *r*, between two metric columns (*metric_X)* and *metric_Y*) for [!DNL Y = a/X+b].
 
@@ -590,7 +590,7 @@ CORREL.RECIPROCAL(metric_X, metric_Y)
 |  *metric_X* | A metric that you would like to correlate with *metric_Y*.  |
 |  *metric_Y* | A metric that you would like to correlate with *metric_X*.  |
 
-## Reciprocal regression: Intercept (Table) 
+## Reciprocal regression: Intercept (Table)
 
 Returns the intercept, *b*, between two metric columns (*metric_X* and *metric_Y*) for [!DNL Y = a/X+b].
 
@@ -603,7 +603,7 @@ INTERCEPT.RECIPROCAL(metric_A, metric_B)
 |  *metric_X* | A metric that you would like to designate as the dependent data.  |
 |  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## Reciprocal regression: Predicted Y (Row) 
+## Reciprocal regression: Predicted Y (Row)
 
 Calculates the predicted [!DNL y] values (metric_Y), given the known [!DNL x] values (metric_X) using the least squares method for calculating the line of best fit using [!DNL Y = a/X+b].
 
@@ -616,7 +616,7 @@ ESTIMATE.RECIPROCAL(metric_X, metric_Y)
 |  *metric_X* | A metric that you would like to designate as the dependent data.  |
 |  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## Reciprocal regression: Slope (Table) 
+## Reciprocal regression: Slope (Table)
 
 Returns the slope, *a*, between two metric columns (*metric_X* and *metric_Y*) for [!DNL Y = a/X+b].
 
@@ -629,7 +629,7 @@ SLOPE.RECIPROCAL(metric_X, metric_Y)
 |  *metric_X* | A metric that you would like to designate as the dependent data.  |
 |  *metric_Y* | A metric that you would like to designate as the independent data.  |
 
-## Sine (Row) 
+## Sine (Row)
 
 Returns the sine of the given angle. If the angle is in degrees, multiply the angle by PI( )/180.
 
@@ -641,11 +641,11 @@ SIN(metric)
 |---|---|
 |  *metric* | The angle in radians for which you want the sine.  |
 
-## T-Score 
+## T-Score
 
-Alias for Z-Score, namely the deviation from the mean divided by the standard deviation 
+Alias for Z-Score, namely the deviation from the mean divided by the standard deviation
 
-## T-Test 
+## T-Test
 
 Performs an m-tailed t-test with t-score of col and n degrees of freedom.
 
@@ -671,7 +671,7 @@ The return value is the probability of seeing the test statistic x given the deg
    if ( t_test( z-score(bouncerate), row-count, 2) < 0.01, 0, visits )
    ```
 
-## Tangent 
+## Tangent
 
 Returns the tangent of the given angle. If the angle is in degrees, multiply the angle by PI( )/180.
 
@@ -683,7 +683,7 @@ TAN (metric)
 |---|---|
 |  *metric* | The angle in radians for which you want the tangent.  |
 
-## Z-Score (Row) 
+## Z-Score (Row)
 
 Returns the Z-score, or normal score, based upon a normal distribution. The Z-score is the number of standard deviations an observation is from the mean. A Z-score of 0 (zero) means the score is the same as the mean. A Z-score can be positive or negative, indicating whether it is above or below the mean and by how many standard deviations.
 
@@ -699,22 +699,22 @@ where [!DNL x] is the raw score, [!DNL μ] is the mean of the population, and [!
 
 Z-score(metric)
 
-<table id="table_AEA3622A58F54EA495468A9402651E1B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Argument </th> 
-   <th colname="col2" class="entry"> Description </th> 
-  </tr> 
+<table id="table_AEA3622A58F54EA495468A9402651E1B">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Argument </th>
+   <th colname="col2" class="entry"> Description </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <i>metric</i> </td> 
-   <td colname="col2"> <p> Returns the value of its first non-zero argument. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <i>metric</i> </td>
+   <td colname="col2"> <p> Returns the value of its first non-zero argument. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
-## Z-Test 
+## Z-Test
 
 Performs an n-tailed Z-test with Z-score of A.
 
