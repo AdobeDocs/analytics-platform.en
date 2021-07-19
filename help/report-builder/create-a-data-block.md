@@ -18,17 +18,17 @@ Use the Report Builder hub to create a data block and configure data block param
 
    ![image file](./assets/create_data_block2.png)
 
-   ## Data Block location
+## Data Block location
 
    The Data Block location defines where in the Excel worksheet to add your report.
 
     To specify the data block location, select a single cell in the worksheet or enter a cell address such as a3, \$a3, a\$3 or sheet1!a2. The cell specified is the upper-left corner of the data block when the data is retrieved.
 
-   ## Data view
+## Data view
 
     The Data view allows you to choose a data view from a predefined list of data views or from a data view in a cell location.
 
-   ## Date range
+## Date range
 
    The Date Range section allows you to choose a date range from a calendar control, from predefined or customized rolling date expression, or from date range located in cell values. For additional information about the data range, see \<\< link to date range section>\>.
 
