@@ -16,7 +16,7 @@ Use the Report Builder hub to create a data block and configure data block param
 
 1.  Select a **Data Block location**, **Data view**, and a **Date range**.
 
- ![image file](./assets/create_data_block2.png)
+   ![image file](./assets/create_data_block2.png)
 
    ## Data Block location
 
@@ -42,7 +42,7 @@ Use the Report Builder hub to create a data block and configure data block param
 
    You can reorder components within each Table pane using drag and drop to move a component.
 
- ![image file](./assets/create_data_block3.png)
+   ![image file](./assets/create_data_block3.png)
 
 1. Arrange the items in the pivot table to customize the layout of your data block.
 
