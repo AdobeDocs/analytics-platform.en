@@ -135,7 +135,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [Manage calculated metrics](components/calc-metrics/manage.md)
     + [Basic functions](components/calc-metrics/cm-functions.md)
     + [Advanced functions](components/calc-metrics/cm-adv-functions.md)
-  + Date ranges {cja-date-ranges}
+  + Date ranges {#cja-date-ranges}
     + [Date ranges overview](components/date-ranges/overview.md)
     + [Create a date range](components/date-ranges/create.md)
     + [Manage date ranges](components/date-ranges/manage.md)
