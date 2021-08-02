@@ -27,10 +27,10 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Project Curation | Full Support |
 | Project Linking | Full Support |
 | Report Time Processing | CJA relies exclusively on Report Time Processing. |
-| Reporting API Access | Now available using the [CJA API](https://www.adobe.io/cja-apis/docs/). |
+| Reporting API Access | Available through the [CJA API](https://www.adobe.io/cja-apis/docs/). |
 | Scheduled Reports/Projects | Full Support |
 | Segments | Now called "Filters" - note that any existing segments in traditional Analysis Workspace will not be ported to CJA. |
-| User Permissions/Data Access Controls | CJA distinguishes between Adobe Admin Console product admins and users. Only product admins are able to 1) create/update/delete Connections or Data Views, 2) update/delete projects, filters, or calc metrics that were created by other users, and 3) share a Workspace project to all users |
+| User Permissions/Data Access Controls | CJA distinguishes between [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=en) product admins and users. Only product admins can <ul><li>Create/update/delete Connections or Data Views</li><li>Update/delete projects, filters, or calc metrics that were created by other users, and</li><li>Share a Workspace project to all users.</li></ul> |
 | Virtual Report Suites | Now called [Data Views](/help/data-views/create-dataview.md). |
 | VRS Component Curation | Now part of Data Views. |
 
