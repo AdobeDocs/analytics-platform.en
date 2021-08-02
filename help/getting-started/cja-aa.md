@@ -32,6 +32,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | User Permissions/Data Access Controls | CJA distinguishes between Adobe Admin Console product admins and users. Only product admins are able to 1) create/update/delete Connections or Data Views, 2) update/delete projects, filters, or calc metrics that were created by other users, and 3) share a Workspace project to all users |
 | Virtual Report Suites | Now called [Data Views](/help/data-views/create-dataview.md). |
 | VRS Component Curation | Now part of Data Views. |
+| A4T | Support is provided through fields in the [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). |
 
 ## Supported with caveats
 
@@ -79,7 +80,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 
 | Feature | Notes |
 | --- | --- |
-| A4T | Support is not yet planned. |
 | Activity Map | Support is not yet planned. |
 | Advertising Cloud | Support is not yet planned. |
 | Classification Rule Builder | Support is not yet planned. |
