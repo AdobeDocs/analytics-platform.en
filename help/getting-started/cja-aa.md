@@ -11,6 +11,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 
 | Adobe Analytics Feature | Notes on support |
 | --- | --- |
+| A4T | Support is provided through fields in the [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). |
 | Anomaly Detection | Full Support |
 | Attribution IQ | Full Support |
 | Calculated Metrics | Note that any existing calc metrics in the traditional Analysis Workspace will not be ported to CJA. |
@@ -32,7 +33,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | User Permissions/Data Access Controls | CJA distinguishes between Adobe Admin Console product admins and users. Only product admins are able to 1) create/update/delete Connections or Data Views, 2) update/delete projects, filters, or calc metrics that were created by other users, and 3) share a Workspace project to all users |
 | Virtual Report Suites | Now called [Data Views](/help/data-views/create-dataview.md). |
 | VRS Component Curation | Now part of Data Views. |
-| A4T | Support is provided through fields in the [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). |
 
 ## Supported with caveats
 
