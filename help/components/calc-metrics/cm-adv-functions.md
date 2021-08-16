@@ -66,7 +66,7 @@ This is how the "Approximate Customers" metric could be used in reporting:
 
 ## Uniques Exceeded
 
-Like Count() and RowCount(), Approximate Count Distinct() is subject to ["uniques exceeded" limits](https://marketing.adobe.com/resources/help/en_US/reference/metrics_uniques_high_numbers.html). If the "uniques exceeded" limit is reached within a particular month for a dimension, the value is counted as 1 dimension item.
+Like Count() and RowCount(), Approximate Count Distinct() is subject to ["uniques exceeded" limits](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html?lang=en). If the "uniques exceeded" limit is reached within a particular month for a dimension, the value is counted as 1 dimension item.
 
 ## Comparing Count Functions
 
