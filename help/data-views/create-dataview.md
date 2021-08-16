@@ -134,7 +134,7 @@ Also note that whatever you specify in this field can be used for special UI tre
 | [!UICONTROL If shown, call No value...] | This is where you can rename **[!UICONTROL No value]** to something else. |
 | [!UICONTROL Don't show No value by default] | Does not show this value in reporting. |
 | [!UICONTROL Show No value by default] | Does show this value in reporting. |
-| [!UICONTROL Treat No value as a value] | This setting will replace blank values in the data with the text that you specified under [!UICONTROL If shown, call No value ...]. For example, if you had Mobile device types as the dimension, you could rename the **[!UICONTROL No value]** item to "Desktop". Note that when you change this field to a custom value, the custom value will be treated as a legitimate string value. Therefore, if you enter the value "Red" into this field, any instances of the string "Red" appearing in the data itself will also roll under the same line item that you have specified.|
+| [!UICONTROL Treat No value as a value] | This setting replaces blank values in the data with the text that you specified under [!UICONTROL If shown, call No value ...]. For example, if you had Mobile device types as the dimension, you could rename the **[!UICONTROL No value]** item to "Desktop". Note that when you change this field to a custom value, the custom value is treated as a legitimate string value. Therefore, if you enter the value "Red" into this field, any instances of the string "Red" appearing in the data itself rolls under the same line item that you have specified.|
 
 ### Configure Persistence settings
 
