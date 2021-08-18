@@ -101,6 +101,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [Attribution overview](analysis-workspace/attribution/overview.md)
     + [Attribution models and lookback windows](analysis-workspace/attribution/models.md)
     + [Algorithmic attribution](analysis-workspace/attribution/algorithmic.md)
+    + [Attribution best practices](analysis-workspace/attribution/best-practices.md)
     + [FAQ](analysis-workspace/attribution/faq.md)
   + Virtual Analyst {#virtual-analyst}
     + [Virtual Analyst overview](analysis-workspace/virtual-analyst/overview.md)
