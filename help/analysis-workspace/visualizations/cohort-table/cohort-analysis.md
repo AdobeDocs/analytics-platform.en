@@ -17,7 +17,7 @@ Examples of what you can do with [!UICONTROL Cohort Analysis]:
 * Gain ideas for A/B testing in areas such as pricing, upgrade path, and so on.
 * View a [!UICONTROL Cohort Analysis] report within a Guided Analysis report.
 
-[!UICONTROL Cohort Analysis] is available for all Adobe Analytics customers with access rights to [!UICONTROL Analysis Workspace].
+[!UICONTROL Cohort Analysis] is available for all Customer Journey Analytics customers with access rights to [!UICONTROL Analysis Workspace].
 
 [Cohort Analysis video tutorial](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html) (4:36)
 
@@ -58,7 +58,7 @@ Measures the time that has elapsed before and after the inclusion event occurred
 
 ### [!UICONTROL Custom Dimension] Cohort
 
-Create cohorts based on a selected dimension, and not time-based cohorts, which are the default. Use dimensions such as [!UICONTROL marketing channel], [!UICONTROL campaign], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region], or any other dimension in Adobe Analytics to show how retention changes based on the different values of these dimensions.
+Create cohorts based on a selected dimension, and not time-based cohorts, which are the default. Use dimensions such as [!UICONTROL marketing channel], [!UICONTROL campaign], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region], or any other dimension in Customer Journey Analytics to show how retention changes based on the different values of these dimensions.
 
 ![](assets/cohort-customizable-cohort-row.png)
 

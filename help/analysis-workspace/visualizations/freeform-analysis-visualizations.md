@@ -6,9 +6,9 @@ exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 ---
 # Visualizations overview
 
-Workspace offers a number of visualizations that let you generate visual representations of your data, such as bar charts, donut charts, histograms, line charts, maps, scatterplots, and others. Most visualization types will be familiar to you if you use Adobe Analytics. However, Analysis Workspace provides visualization settings and many new or unique visualizations types with interactive capabilities.
+Workspace offers a number of visualizations that let you generate visual representations of your data, such as bar charts, donut charts, histograms, line charts, maps, scatterplots, and others. Most visualization types will be familiar to you if you use Customer Journey Analytics. However, Analysis Workspace provides visualization settings and many new or unique visualizations types with interactive capabilities.
 
-You can access visualizations from the top left icon in Workspace, a [blank panel](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html), or through the right-click menu in your workflow. 
+You can access visualizations from the top left icon in Workspace, a [blank panel](/help/analysis-workspace/c-panels/blank-panel.md), or through the right-click menu in your workflow. 
 
 ![](assets/viz-rail.png)
 

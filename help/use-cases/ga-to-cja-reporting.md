@@ -1,8 +1,8 @@
 ---
 title: Report on Google Analytics data in Customer Journey Analytics
 description: Shows useful reports on Google Analytics data in Customer Journey Analytics
+exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 ---
-
 # Report on Google Analytics data in Customer Journey Analytics
 
 Now that you have [ingested the Google Analytics data into Experience Platform and Customer Journey Analytics (CJA)](/help/use-cases/ga-to-cja.md), we will show you some useful scenarios for reporting on that data.

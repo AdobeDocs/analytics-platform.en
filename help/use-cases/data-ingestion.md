@@ -29,7 +29,7 @@ This workflow utilizes the Adobe Analytics Data Connector and varies depending o
 
 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) is a client-side JavaScript library that allows customers of Adobe Experience Cloud to interact with the various services in the Experience Cloud through the Adobe Experience Platform Edge Network. 
 
-1. [Configure the AEP Web SDK extension in Launch](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html?lang=en#configure-the-aep-web-sdk-extension) to send data to the Adobe Experience Cloud from web properties, through the Adobe Experience Platform Edge Network.
+1. [Configure the AEP Web SDK extension in Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=en) to send data to the Adobe Experience Cloud from web properties, through the Adobe Experience Platform Edge Network.
 1. Use [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) to create one or more connections and data views that will inform your cross-channel reporting.
 
 ## Ingest data with batch ingestion and streaming ingestion

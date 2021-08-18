@@ -44,7 +44,8 @@ How you bring Google Analytics data into Adobe Experience Platform depends on wh
 
 GA data stores each record in their data as a user’s session rather than individual events. You need to create a SQL query to transform the Universal Analytics data into an Experience-Platform-compliant format. You apply the “unnest” function to the “hits” field in the GA schema. Here is the  SQL example you can use:
 
-`SELECT
+```
+SELECT
    *,
    timestamp_seconds(`visitStartTime` + hit.time) AS `timestamp` 
 FROM
@@ -63,7 +64,8 @@ FROM
       FROM
          `your_bq_table_2021_04_*`,
          UNNEST(hits) AS hit 
-   )`
+   )
+```
 
 Once the query completes, save the complete results into a BigQuery table.
 

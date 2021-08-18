@@ -20,10 +20,11 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
   + [Getting Started](getting-started/cja-getting-started.md)
   + [Frequently asked questions](getting-started/cja-faq.md)
   + [Customer Journey Analytics feature support](getting-started/cja-aa.md)
+  + [Deletion implications](getting-started/cja-deletion.md)
   + [CJA glossary](getting-started/cja-glossary.md)
 + Connections {#cja-connections}
   + [Create a connection](connections/create-connection.md)
-  + [Manage connections](connections/manage-connection.md)
+  + [Manage connections](connections/manage-connections.md)
   + [Estimate connection size](connections/estimate-connection-size.md)
   + [Combined event datasets](connections/combined-dataset.md)
   + Cross-Channel Analytics {#cca}
@@ -88,7 +89,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [Blank panel](analysis-workspace/c-panels/blank-panel.md)
     + [Freeform panel](analysis-workspace/c-panels/freeform-panel.md)
     + [Quick Insights panel](analysis-workspace/c-panels/quickinsight.md)
-  + Curate or Share projects {#curate-share} 
+  + Curate, Share and Schedule projects {#curate-share} 
     + [Share menu](analysis-workspace/curate-share/send-schedule-files.md)
     + [Curate projects](analysis-workspace/curate-share/curate.md)
     + [Share projects](analysis-workspace/curate-share/share-projects.md)
@@ -100,6 +101,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [Attribution overview](analysis-workspace/attribution/overview.md)
     + [Attribution models and lookback windows](analysis-workspace/attribution/models.md)
     + [Algorithmic attribution](analysis-workspace/attribution/algorithmic.md)
+    + [Attribution best practices](analysis-workspace/attribution/best-practices.md)
     + [FAQ](analysis-workspace/attribution/faq.md)
   + Virtual Analyst {#virtual-analyst}
     + [Virtual Analyst overview](analysis-workspace/virtual-analyst/overview.md)
@@ -134,7 +136,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [Manage calculated metrics](components/calc-metrics/manage.md)
     + [Basic functions](components/calc-metrics/cm-functions.md)
     + [Advanced functions](components/calc-metrics/cm-adv-functions.md)
-  + Date ranges {cja-date-ranges}
+  + Date ranges {#cja-date-ranges}
     + [Date ranges overview](components/date-ranges/overview.md)
     + [Create a date range](components/date-ranges/create.md)
     + [Manage date ranges](components/date-ranges/manage.md)
