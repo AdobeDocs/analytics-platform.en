@@ -12,7 +12,7 @@ Picking the right attribution model for your organization depends on a number of
 >[!NOTE]
 >This analysis needs to happen before you pick an attribution model.
 
-This phase consists initially of understanding customer behavior and defining conversion metrics. Based on the conversion metrics, tools like [Data Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=en) (for raw data) or Analysis Workspace facilitate your understanding of
+This phase consists initially of understanding customer behavior and defining conversion metrics. Based on the conversion metrics, tools like Analysis Workspace and pulling in data sources from multiple channels (such as Impressions data) can facilitate your understanding of
 
 * How many customers are touching different marketing channels before converting?
 * The proportion/distribution of these behaviors. 
@@ -47,6 +47,3 @@ Because it is very hard to validate a large number of possible hypotheses and co
 ## Other considerations
 
 * You might need to use the services of a data scientist instead of relying on Analysis Workspace alone.
-* You can rely on raw data, as in Adobe data feeds.
-* Consider using [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en), for example, if you want to consider your Impressions data.
-
