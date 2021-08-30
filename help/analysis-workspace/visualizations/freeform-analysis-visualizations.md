@@ -10,7 +10,7 @@ Workspace offers a number of visualizations that let you generate visual represe
 
 You can access visualizations from the top left icon in Workspace, a [blank panel](/help/analysis-workspace/c-panels/blank-panel.md), or through the right-click menu in your workflow. 
 
-![](assets/viz-rail.png)
+![Visualization rail](assets/viz-rail.png)
 
 The following visualization types are available in Analysis Workspace:
 
@@ -38,7 +38,7 @@ The following visualization types are available in Analysis Workspace:
 
 Each visualization has its own settings that you can manage. To access [!UICONTROL Visualization Settings], click the [!UICONTROL Visualization Settings] gear icon.
 
-![](assets/settings.png)
+![Settings](assets/settings.png)
 
 | Setting | Description |
 | --- | --- |
@@ -64,18 +64,16 @@ To edit a legend label:
 1. Right-click one of the legend labels.
 1. Click **[!UICONTROL Edit Label]**.
 
-   ![](assets/edit-label.png)
+   ![Edit label](assets/edit-label.png)
 
 1. Enter the new label text.
 1. Press **[!UICONTROL Enter]** to save.
-
-Here is a [link to a video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) on this topic.
 
 ## Right-click menu {#right-click}
 
 Additional functionality for a visualization is available by right-clicking on the visualization header. Settings will vary by visualization. Some of the settings available are:
 
-![](assets/right-click.png)
+![Right click](assets/right-click.png)
 
 | Setting | Description |
 | --- | --- |
@@ -92,4 +90,4 @@ Additional functionality for a visualization is available by right-clicking on t
 
 If you are not sure which visualization to pick, click the **[!UICONTROL Create Visual]** icon in any table row (available on hover). This the the fastest way to add a visualization. Clicking it prompts Analysis Workspace to take an educated guess at which visualization would best fit your data. For example, if you have 1 row selected, it will create a trended line graph. If you have 3 filter rows selected, it will create a Venn diagram. 
 
-![](assets/quick-viz.png)
+![Quick visualization](assets/quick-viz.png)
