@@ -42,9 +42,9 @@ Adobe handles GDPR and CCPA requests in accordance to local and international la
 
 ## What happens if the Persistent ID field in one or more events is blank?
 
-If the `Persistent ID` field is blank on an event in a dataset being stitched with field-base stitching, CCA will fill in the `Stitched ID` for that event in one of two ways: 
-* If the `Transient ID` field is not blank, CCA will use the value in `Transient ID` as the `Stitched ID`.
-* If the `Transient ID` field is blank, CCA will also leave the `Stitched ID` blank. In this case, `Persistent ID`, `Transient ID`, and `Stitched ID` will all be blank on the event. Events such as this will be dropped from CJA in any CJA connection using the dataset being stitched where `Stitched ID` was chosen as the `Person ID`. 
+If the `Persistent ID` field is blank on an event in a dataset being stitched with field-base stitching, CCA fills in the `Stitched ID` for that event in one of two ways: 
+* If the `Transient ID` field is not blank, CCA uses the value in `Transient ID` as the `Stitched ID`.
+* If the `Transient ID` field is blank, CCA also leaves the `Stitched ID` blank. In this case, `Persistent ID`, `Transient ID`, and `Stitched ID` will all be blank on the event. Events such as this are dropped from CJA in any CJA connection using the dataset being stitched where `Stitched ID` was chosen as the `Person ID`. 
 
 ## How do metrics in CJA stitched datasets compare with similar metrics in CJA unstitched datasets and with traditional Adobe Analytics?
 
