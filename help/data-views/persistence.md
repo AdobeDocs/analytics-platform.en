@@ -20,7 +20,7 @@ Allocation applies a transformation to the underlying value you are using. Suppo
 
 ### [!UICONTROL Most recent] allocation
 
-Most recent allocation will persist the most recent (by timestamp) value present in the dimension. Any subsequent values that occur within the same Session will replace the previously persisting value. Note that if "Treat 'No Value' as a value" has been selected on this dimenion, the empty values will be replaced with 'No Value' prior to persistence being applied. Here is a before-and-after example of [!UICONTROL Most recent] allocation assuming a [!UICONTROL Session] is used for expiration and all events occur within a [!UICONTROL Session]:
+Most recent allocation persists the most recent (by timestamp) value present in the dimension. Any subsequent values that occur within the same Session replaces the previously persisting value. Note that if "Treat 'No Value' as a value" has been selected on this dimenion, the empty values are replaced with 'No Value' prior to persistence being applied. Here is a before-and-after example of [!UICONTROL Most recent] allocation assuming a [!UICONTROL Session] is used for expiration and all events occur within a [!UICONTROL Session]:
 
 | Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -29,7 +29,7 @@ Most recent allocation will persist the most recent (by timestamp) value present
 
 ### [!UICONTROL Original] allocation
 
-Original allocation will persist the original value (by timestamp) present within the dimension for an expiration period. Here is a before-and-after example of [!UICONTROL Original] allocation:
+Original allocation persists the original value (by timestamp) present within the dimension for an expiration period. Here is a before-and-after example of [!UICONTROL Original] allocation:
 
 | Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -53,7 +53,7 @@ There are four ways to expire a dimension value:
 
 * Session (default): Expires after a given session.
 * Person: Expires at the end of your reporting window.
-* Time: You can set the dimension value to expire after a specified time period (up to 90 days). This expiration option is only available for Original and Most Recent allocation models. When using time based expiration, values previous to the start of your reporting window (up to 90 days) are considered.
+* Time: You can set the dimension value to expire after a specified time period (up to 90 days). This expiration option is only available for Original and Most Recent allocation models. When using time-based expiration, values previous to the start of your reporting window (up to 90 days) are considered.
 * Metric: You can specify any of the defined metrics as the expiration end for this dimension (e.g. a "Purchase" metric). This expiration is only available for Original and Most Recent allocation models.
 
 ### What's the difference between Allocation and Attribution?
