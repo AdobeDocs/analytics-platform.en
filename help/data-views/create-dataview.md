@@ -3,7 +3,7 @@ title: How to create a new data view in Customer Journey Analytics.
 description: Describes all the settings needed to create new data views.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 ---
-# Create a new data view
+# Create a data view
 
 Creating a data view involves either creating metrics and dimensions from schema elements or utilizing standard components. Creating metrics or dimensions gives you an enormous amount of flexibility. Previously, the assumption was that if you had datasets in Adobe Experience Platform, string fields were used as dimensions and numeric fields were used as metrics. In order to change any of these fields, you had to edit your schema in Platform. The data views UI now allows a [more freeform definition of metrics and dimensions](/help/data-views/data-views.md). For more use cases, see [Data views use cases](/help/data-views/data-views-usecases.md).
 
@@ -117,9 +117,13 @@ Lets you specify how a metric should behave in reporting.
 
 | Setting | Description/Use case |
 | --- | --- |
-| [!UICONTROL Count values] | For Boolean metrics only, this setting allows you to specify whether you want to [!UICONTROL Count True], [!UICONTROL Count False], or [!UICONTROL Count True or False] as the metric value. The default is [!UICONTROL Count True]. This gives you the actual value of a metric, such as “50” if there was an order value of 50. |
+| [!UICONTROL Count values] | For Boolean metrics only, this setting allows you to specify whether you want to [!UICONTROL Count True], [!UICONTROL Count False], or [!UICONTROL Count True or False] as the metric value. The default is [!UICONTROL Count True]. This gives you the actual value of a metric, such as "50" if there was an order value of 50. |
 | [!UICONTROL Count instances] | Lets you specify whether a numeric or date type field used as a metric should count the times it was set rather than the value itself.<br> If you want to add up the instances of a numeric field and want to simply add up the number of times a field was *set* rather than the actual value inside.<br>This is useful for creating an [!UICONTROL Orders] metric from a [!UICONTROL Revenue] field, for example. If revenue was set, then we want to count 1 single order rather than the numeric revenue amount. |
-| [!UICONTROL Lower case] | *New* - For "string"-type dimensions. This setting lets you control whether Customer Journey Analytics treats dimension values as case sensitive. It allows for de-duplication of rows that have the same value, but a different case. If you check **[!UICONTROL Lower case]**, all instances of a dimension with the same value will be reported as lower case. This screenshot shows what happens if you do **not** check [!UICONTROL Lower case] versus if you **do** check the box. In the left table, notice how "liverpool", "Liverpool", and "LIVERPOOL" result in three separate line items in reporting. In the right table, those same values have been de-duplicated and fall under one line item:<br>![case-sensitive dimension](assets/case-sens-workspace.png) |
+| [!UICONTROL Lower case] | Used with string dimensions. De-duplicates rows that have the same value but different cases. If enabled, all instances of a dimension with the same value are reported as lower case. For example, your data set contains the values `"liverpool"`, `"Liverpool"`, and `"LIVERPOOL"` in a string dimension. If [!UICONTROL Lower case] is enabled, all three values are combined into `"liverpool"`. If disabled, all three values are treated as distinct values:<br>![case-sensitive dimension](assets/case-sens-workspace.png)<br>|
+
+>[!NOTE]
+>
+>If you enable [!UICONTROL Lower case] on a lookup dataset dimension, multiple lookup values can exist for the same identifier. If this conflict happens, CJA uses the first ASCII collated value (Uppercase values precede lowercase values). Adobe advises against using lookup datasets that contain the same value when [!UICONTROL Lower case] is enabled.
 
 ### Configure [!UICONTROL No Value Options] settings
 
