@@ -9,6 +9,11 @@ The following updates were made to the CJA documentation since its inception.
 
 | Date | Update description |
 | --- | --- |
+| September 2021 | New section on the [implications of merging report suites](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#6.-considerations-when-merging-report-suites-in-cja) in CJA. |
+| August 2021 | New section on enhanced [Connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en) experience in CJA. |
+| August 2021 | New section on [case sensitivity in Data View dimensions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-behavior-settings) |
+| June 2021 | New documentation on [previous project versions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=en#previous-version) in Workspace. |
+| April 2021 | New documentation on support for scheduled projects in Workspace. |
 | April 2021 | New topics on the [enhanced Data Views experience](/help/data-views/data-views.md). |
 | April 2021 | New topics on [ingesting Google Analytics data](/help/use-cases/ga-to-cja.md) and [analyzing that data](/help/use-cases/ga-to-cja-reporting.md) |
 | April 2021 | Added topic on [scheduled reports](/help/analysis-workspace/curate-share/t-schedule-report.md) in Workspace |
