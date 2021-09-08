@@ -69,3 +69,16 @@ When it comes to data deletion, we are concerned with 6 types of components: san
 | Delete a batch **while it is being ingested** into [!UICONTROL Customer Journey Analytics] | If there is only one batch in the dataset, no data or partial data from that batch will appear in [!UICONTROL Customer Journey Analytics]. The ingestion will be rolled back. If, for example, there are 5 batches in the dataset and 3 of them have already been ingested when the dataset was deleted, data from those 3 batches will appear in [!UICONTROL Customer Journey Analytics]. |
 | Delete a connection in [!UICONTROL Customer Journey Analytics] | An error message will indicate that:<ul><li>Any data views created for the deleted connection will no longer work.</li><li> Similarly, any Workspace projects that depend on data views in the deleted connection will cease working.</li></ul> |
 | Delete a data view in [!UICONTROL Customer Journey Analytics] | An error message will indicate that any Workspace projects that depend on this deleted data view will cease working. |
+
+## 6. Considerations when merging report suites in CJA
+
+If you plan to ingest Adobe Analytics data through the [Adobe Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en), consider these ramifications when merging 2 or more Adobe Analytics report suites.
+
+| Issue | Consideration |
+| --- | --- |
+| Variables | Variables such as [!UICONTROL eVars] may not line up across report suites. For example, eVar1 in report suite 1 may point to **[!UICONTROL Page]**. In report suite 2, eVar1 may point to **[!UICONTROL Internal Campaign]**, leading to mixed and inaccurate reporting. |
+| [!UICONTROL Sessions] and [!UICONTROL People] counts | They get de-duplicated across report suites. As a result, counts may not match. |
+| Metric deduplication | Deduplicates instances of a metric (for example, [!UICONTROL Orders]) if multiple rows have the same transaction ID (for example, [!UICONTROL Purchase ID]). This prevents over-counting of key metrics. As a result, metrics like [!UICONTROL Orders] may not add up across report suites. |
+| Currency | Currency conversion is not yet supported in CJA. If the report suites you are trying to merge use different base currencies, problems may arise. | 
+| [!UICONTROL Persistence]| [Persistence](/help/data-views/persistence.md) extends across report suites, which impacts [!UICONTROL filters], [!UICONTROL attribution], and so on. Numbers may not add up properly. |
+| [!UICONTROL Classifications] | [!UICONTROL Classifications] do not automatically get deduplicated when merging report suites. When combining multiple classifications files into a single [!UICONTROL lookup] data set, you could encounter problems. |
