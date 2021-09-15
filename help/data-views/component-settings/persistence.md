@@ -1,3 +1,15 @@
+### Configure Persistence settings
+
+![](assets/persistence.png)
+
+For more information, see the topic on [Persistence](/help/data-views/persistence.md).
+
+| Setting | Description/Use case |
+| --- | --- |
+| [!UICONTROL Set persistence] | Toggle key |
+| [!UICONTROL Allocation] | Lets you specify the allocation model used on a dimension for persistence. Options are: [!UICONTROL Most recent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL All]. If you want a value to persist, this is where you'd set it. The maximum persistence you can set is 90 days. Also, [!UICONTROL Never expire] is not an option. |
+| [!UICONTROL Expiration] | Lets you specify the persistence window for a dimension. Options are: [!UICONTROL Session] (default), [!UICONTROL Person], [!UICONTROL Time], [!UICONTROL Metric]. You might need to be able to expire the dimension on a purchase (such as internal search terms or other merchandising use cases). [!UICONTROL Metric] lets you specify any of the defined metrics as the expiration for this dimension (e.g., a [!UICONTROL Purchase] metric).<br>**Note**: You cannot set a custom expiration for a dimension when you select an allocation of [!UICONTROL All]. |
+
 ---
 title: What is dimension persistence in Customer Journey Analytics?
 description: Dimension persistence is a combination of allocation and expiration. Together, they determine how or whether dimension values persist from one event to the next.
