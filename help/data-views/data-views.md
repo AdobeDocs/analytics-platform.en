@@ -1,17 +1,17 @@
 ---
-title: What is a data view in Customer Journey Analytics?
+title: Data views overview
 description: A data view specifies how you want to interpret elements of the data in the CJA connection, such as metrics, dimensions, sessions, etc..
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 ---
-# What is a data view?
+# Data views overview
 
-A data view sits on top of a Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). A connection combines one or more datasets from Adobe Experience Platform and connects it to CJA. The data view specifies how you want to interpret elements of the data in the connection, such as metrics, dimensions, sessions, etc.. Data views are defined in preparation for reporting on the data in Workspace. 
+A data view is a container specific to Customer Journey Analytics that lets you determine how to interpret data from a [connection](/help/connections/create-connection.md). It specifies all dimensions and metrics available in Analysis Workspace and which columns those dimensions and metrics obtain their data from. Data views are defined in preparation for reporting in Analysis Workspace.
 
 >[!NOTE]
 >
 >Any settings that you select or change in a data view are retroactive and non-destructive. In other words, they do not permanently change your underlying data .
 
-You can create different data views for the same connection, with very different sets of components (dimensions/metrics). Or create data views with different settings for visit timeout, attribution, etc.. For example, you could have one data view where all dimensions are set to [!UICONTROL Last Touch], and simultaneously, another data view (based on the same dataset) with all dimensions set to [!UICONTROL First Touch]. 
+You can create different data views for the same connection, with very different sets of components (dimensions/metrics). Or create data views with different settings for visit timeout, attribution, etc.. For example, you could have one data view where all dimensions are set to [!UICONTROL Last Touch], and simultaneously, another data view (based on the same dataset) with all dimensions set to [!UICONTROL First Touch].
 
 Workspace projects in Customer Journey Analytics are based on data views.
 
@@ -72,4 +72,3 @@ If you delete a data view in [!UICONTROL Customer Journey Analytics], an error m
 
 * [Create data views](/help/data-views/create-dataview.md)
 * [Data views use cases](/help/data-views/data-views-usecases.md)
-* Details on how [persistence](/help/data-views/persistence.md) works

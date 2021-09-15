@@ -1,75 +1,56 @@
-### Configure Persistence settings
-
-![](assets/persistence.png)
-
-For more information, see the topic on [Persistence](/help/data-views/persistence.md).
-
-| Setting | Description/Use case |
-| --- | --- |
-| [!UICONTROL Set persistence] | Toggle key |
-| [!UICONTROL Allocation] | Lets you specify the allocation model used on a dimension for persistence. Options are: [!UICONTROL Most recent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL All]. If you want a value to persist, this is where you'd set it. The maximum persistence you can set is 90 days. Also, [!UICONTROL Never expire] is not an option. |
-| [!UICONTROL Expiration] | Lets you specify the persistence window for a dimension. Options are: [!UICONTROL Session] (default), [!UICONTROL Person], [!UICONTROL Time], [!UICONTROL Metric]. You might need to be able to expire the dimension on a purchase (such as internal search terms or other merchandising use cases). [!UICONTROL Metric] lets you specify any of the defined metrics as the expiration for this dimension (e.g., a [!UICONTROL Purchase] metric).<br>**Note**: You cannot set a custom expiration for a dimension when you select an allocation of [!UICONTROL All]. |
-
 ---
-title: What is dimension persistence in Customer Journey Analytics?
-description: Dimension persistence is a combination of allocation and expiration. Together, they determine how or whether dimension values persist from one event to the next.
+title: Persistence component settings
+description: Determine how or whether dimension values persist from one event to the next.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 ---
-# Persistence
 
-Dimension persistence is a combination of allocation and expiration. Together, they determine how or whether dimension values persist from one event to the next. Dimension persistence is configured on a dimension within Data Views and is retroactive and non-destructive to the data it is applied to. Dimension persistence is an immediate data transformation applied to a dimension that occurs before filtering or other analysis operations are done in reporting.
+# Persistence component settings
 
-* By default, a dimension value does not have any persistence enabled. 
-* By default, when any allocation model is enabled fir a dimension, an expiration of [!UICONTROL Session] is used.
+Persistence is the ability for a given dimension value to relate to a metric beyond the event it is set on. It uses a combination of allocation and expiration.
 
-## Allocation
+* **Allocation** lets you determine which value is kept when more than one dimension item can persist at a time in a single column.
+* **Expiration** lets you determine how long a dimension item persists beyond the event it is set on.
 
-Allocation applies a transformation to the underlying value you are using. Supported allocation models include:
+Persistence is only available on dimensions, and is retroactive to the data it is applied to. It is an immediate data transformation that happens before filtering or other analysis operations are applied.
 
-* Most recent
-* Original
-* All
+![Persistence](assets/persistence.png)
 
-### [!UICONTROL Most recent] allocation
+| Setting | Description |
+| --- | --- |
+| [!UICONTROL Set persistence] | Enable persistence for the dimension. If persistence is not enabled, the dimension only relates to metrics that exist in the same event. This setting is disabled by default. |
+| [!UICONTROL Allocation] | Lets you specify the allocation model used on a dimension for persistence. Options are: [!UICONTROL Most recent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL All]. |
+| [!UICONTROL Expiration] | Lets you specify the persistence window for a dimension. Options are: [!UICONTROL Session] (default), [!UICONTROL Person], [!UICONTROL Custom Time], [!UICONTROL Metric]. You might need to be able to expire the dimension on a purchase (such as internal search terms or other merchandising use cases). The maximum expiration time you can set is 90 days. If you select an allocation of [!UICONTROL All], only [!UICONTROL Session] or [!UICONTROL Person] expiration is available. |
 
-Most recent allocation persists the most recent (by timestamp) value present in the dimension. Any subsequent values that occur within the same Session replaces the previously persisting value. Note that if "Treat 'No Value' as a value" has been selected on this dimenion, the empty values are replaced with 'No Value' prior to persistence being applied. Here is a before-and-after example of [!UICONTROL Most recent] allocation assuming a [!UICONTROL Session] is used for expiration and all events occur within a [!UICONTROL Session]:
+## Allocation settings
 
-| Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
-| --- | --- | --- | --- | --- | --- |
-| dataset values |  | C | B |  | A |
-| Most recent allocation |  | C | B | B | A |
+Details around the available allocation settings.
 
-### [!UICONTROL Original] allocation
+* **Most Recent**: persists the most recent (by timestamp) value present in the dimension. Any subsequent values that occur within the dimension's expiration period replaces the previously persisting value. If "Treat 'No Value' as a value" is enabled on this dimension under [No value options](no-value-options.md), empty values overwrite previously persisted values. For example, consider the following table with [!UICONTROL Most recent] allocation and [!UICONTROL Session] expiration:
 
-Original allocation persists the original value (by timestamp) present within the dimension for an expiration period. Here is a before-and-after example of [!UICONTROL Original] allocation:
+  | Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Dataset values |  | C | B |  | A |
+  | Most recent allocation |  | C | B | B | A |
 
-| Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
-| --- | --- | --- | --- | --- | --- |
-| dataset values |  | C | B |  | A |
-| Original allocation |  | C | C | C | C |
+* **Original**: Persists the original value by timestamp present within the dimension for the duration of the expiration period. If this dimension has a value, it is not overwritten when a different value is seen on a subsequent event. For example, consider the following table with [!UICONTROL Original] allocation and [!UICONTROL Session] expiration:
 
-### [!UICONTROL All] allocation
+  | Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Dataset values |  | C | B |  | A |
+  | Original allocation |  | C | C | C | C |
 
-This dimension allocation can be applied to both array-based dimensions or single-value dimensions. It acts similarly to the [!UICONTROL Participation] attribution model for metrics. A key difference is that dimensions with All allocation can be used in Filter definitions. For example, let's say we have 5 events in a string field, with allocation set to "All" and expiration set to 5 mins:
+* **All**: Acts similarly to the [!UICONTROL Participation] attribution model for metrics. Persists all values equally so each get full credit for the metric in reporting. For example, consider the following table with [!UICONTROL All] allocation and [!UICONTROL Session] expiration:
 
-| Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
-| --- | --- | --- | --- | --- | --- |
-| dataset values | A | B | C |  | A |
-| after-persistence | A | A,B | A,B,C | A,B,C | A,B,C |
+  | Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Dataset values | A | B | C |  | A |
+  | All allocation | A | A,B | A,B,C | A,B,C | A,B,C |
 
-## Expiration
+## Expiration settings
 
-[!UICONTROL Expiration] lets you specify the persistence window for a dimension.
+Details around the available expiration settings.
 
-There are four ways to expire a dimension value:
-
-* Session (default): Expires after a given session.
-* Person: Expires at the end of your reporting window.
-* Time: You can set the dimension value to expire after a specified time period (up to 90 days). This expiration option is only available for Original and Most Recent allocation models. When using time-based expiration, values previous to the start of your reporting window (up to 90 days) are considered.
-* Metric: You can specify any of the defined metrics as the expiration end for this dimension (e.g. a "Purchase" metric). This expiration is only available for Original and Most Recent allocation models.
-
-### What's the difference between Allocation and Attribution?
-
-**Allocation**: Think of allocation as a data transformation to the dimension. Allocation happens before filtering. If you create a filter, it will key off of the transformed dimension.
-
-**Attribution**: How am I distributing the credit of a metric to the dimension that it is applied to? Attribution is not a data transformation, applies during data aggregation, and does not impact which data is included using a Filter.
+* **Session**: Expires after a given session. Default expiration window.
+* **Person**: Expires at the end of the reporting window.
+* **Time**: You can set the dimension value to expire after a specified time period (up to 90 days). This expiration option is only available for Original and Most Recent allocation models. When using time-based expiration, values previous to the start of your reporting window (up to 90 days) are considered.
+* **Metric**: When this metric is seen in a hit, immediately expire the persisted value in the dimension. You can use any metric as the expiration end for this dimension. This expiration option is only available for Original and Most Recent allocation settings.
