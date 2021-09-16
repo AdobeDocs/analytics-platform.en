@@ -3,7 +3,7 @@ title: Value bucketing component settings
 description: Combine numeric values in a dimension.
 ---
 
-# Value Bucketing component settings
+# [!UICONTROL Value Bucketing] component settings
 
 When creating or editing a data view, value bucketing allows you to combine numeric values based on a range. It is only available for dimensions using Integer or Double schema data types.
 

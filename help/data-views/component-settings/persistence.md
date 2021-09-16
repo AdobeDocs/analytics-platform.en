@@ -4,14 +4,14 @@ description: Determine how or whether dimension values persist from one event to
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 ---
 
-# Persistence component settings
+# [!UICONTROL Persistence] component settings
 
-Persistence is the ability for a given dimension value to relate to a metric beyond the event it is set on. It uses a combination of allocation and expiration.
+[!UICONTROL Persistence] is the ability for a given dimension value to relate to a metric beyond the event it is set on. It uses a combination of allocation and expiration.
 
 * **Allocation** lets you determine which value is kept when more than one dimension item can persist at a time in a single column.
 * **Expiration** lets you determine how long a dimension item persists beyond the event it is set on.
 
-Persistence is only available on dimensions, and is retroactive to the data it is applied to. It is an immediate data transformation that happens before filtering or other analysis operations are applied.
+[!UICONTROL Persistence] is available only on dimensions, and is retroactive to the data it is applied to. It is an immediate data transformation that happens before filtering or other analysis operations are applied.
 
 ![Persistence](../assets/persistence.png)
 
@@ -21,32 +21,32 @@ Persistence is only available on dimensions, and is retroactive to the data it i
 | [!UICONTROL Allocation] | Lets you specify the allocation model used on a dimension for persistence. Options are: [!UICONTROL Most recent], [!UICONTROL Original], [!UICONTROL Instance], [!UICONTROL All]. |
 | [!UICONTROL Expiration] | Lets you specify the persistence window for a dimension. Options are: [!UICONTROL Session] (default), [!UICONTROL Person], [!UICONTROL Custom Time], [!UICONTROL Metric]. You might need to be able to expire the dimension on a purchase (such as internal search terms or other merchandising use cases). The maximum expiration time you can set is 90 days. If you select an allocation of [!UICONTROL All], only [!UICONTROL Session] or [!UICONTROL Person] expiration is available. |
 
-## Allocation settings
+## [!UICONTROL Allocation] settings
 
 Details around the available allocation settings.
 
-* **Most Recent**: persists the most recent (by timestamp) value present in the dimension. Any subsequent values that occur within the dimension's expiration period replaces the previously persisting value. If "Treat 'No Value' as a value" is enabled on this dimension under [No value options](no-value-options.md), empty values overwrite previously persisted values. For example, consider the following table with [!UICONTROL Most recent] allocation and [!UICONTROL Session] expiration:
+* **[!UICONTROL Most Recent]**: persists the most recent (by timestamp) value present in the dimension. Any subsequent values that occur within the dimension's expiration period replaces the previously persisting value. If "Treat 'No Value' as a value" is enabled on this dimension under [No value options](no-value-options.md), empty values overwrite previously persisted values. For example, consider the following table with [!UICONTROL Most recent] allocation and [!UICONTROL Session] expiration:
 
   | Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
   | --- | --- | --- | --- | --- | --- |
   | Dataset values |  | C | B |  | A |
   | Most recent allocation |  | C | B | B | A |
 
-* **Original**: Persists the original value by timestamp present within the dimension for the duration of the expiration period. If this dimension has a value, it is not overwritten when a different value is seen on a subsequent event. For example, consider the following table with [!UICONTROL Original] allocation and [!UICONTROL Session] expiration:
+* **[!UICONTROL Original]**: Persists the original value by timestamp present within the dimension for the duration of the expiration period. If this dimension has a value, it is not overwritten when a different value is seen on a subsequent event. For example, consider the following table with [!UICONTROL Original] allocation and [!UICONTROL Session] expiration:
 
   | Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
   | --- | --- | --- | --- | --- | --- |
   | Dataset values |  | C | B |  | A |
   | Original allocation |  | C | C | C | C |
 
-* **All**: Acts similarly to the [!UICONTROL Participation] attribution model for metrics. Persists all values equally so each get full credit for the metric in reporting. For example, consider the following table with [!UICONTROL All] allocation and [!UICONTROL Session] expiration:
+* **[!UICONTROL All]**: Acts similarly to the [!UICONTROL Participation] attribution model for metrics. Persists all values equally so each get full credit for the metric in reporting. For example, consider the following table with [!UICONTROL All] allocation and [!UICONTROL Session] expiration:
 
   | Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
   | --- | --- | --- | --- | --- | --- |
   | Dataset values | A | B | C |  | A |
   | All allocation | A | A,B | A,B,C | A,B,C | A,B,C |
 
-## Expiration settings
+## [!UICONTROL Expiration] settings
 
 Details around the available expiration settings.
 

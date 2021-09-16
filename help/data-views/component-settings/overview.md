@@ -3,7 +3,7 @@ title: Component settings
 description: View core settings for a component.
 ---
 
-# Component Settings
+# Component settings
 
 Core settings that a component uses.
 

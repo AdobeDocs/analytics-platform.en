@@ -50,7 +50,17 @@ You can see the [!UICONTROL Connection] at the top left, which contains the data
    >
    >You can drag in whole schema field folders from the left rail and they are automatically sorted into traditional sections. String fields end up in the [!UICONTROL Dimensions] section and numerics in the [!UICONTROL Metrics] section. Or, you can click **[!UICONTROL Add all]** and all schema fields are added.
 
-1. Once you select the component, you see a number of settings appear on the right. Configure the component using the settings described below.
+1. Once you select the component, you see a number of settings appear on the right. Configure the component using the settings described in
+
+* [[!UICONTROL Component] settings overview](/help/data-views/component-settings/overview.md)
+* [[!UICONTROL Attribution] component settings](/help/data-views/component-settings/attribution.md)
+* [[!UICONTROL Behavior] component settings](/help/data-views/component-settings/behavior.md)
+* [[!UICONTROL Format] component settings](/help/data-views/component-settings/format.md)
+* [[!UICONTROL Include|exclude] component settings](/help/data-views/component-settings/include-exclude-values.md)
+* [[!UICONTROL Metric deduplication] component settings](/help/data-views/component-settings/metric-deduplication.md)
+* [[!UICONTROL No value] component settings](/help/data-views/component-settings/no-value-options.md)
+* [[!UICONTROL Persistence] component settings](/help/data-views/component-settings/persistence.md)
+[[!UICONTROL Value bucketing] component settings](/help/data-views/component-settings/value-bucketing.md)
 
 ## Use the [!UICONTROL Duplicate] feature
 
