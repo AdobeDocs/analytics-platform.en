@@ -44,7 +44,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [No value options](data-views/component-settings/no-value-options.md)
     + [Persistence](data-views/component-settings/persistence.md)
     + [Value bucketing](data-views/component-settings/value-bucketing.md)
-  + [Standard component reference](data-views/component-reference.md)]
+  + [Standard component reference](data-views/component-reference.md)
   + [Data views use cases](data-views/data-views-usecases.md)
 + Workspace projects {#cja-workspace}
   + [Analysis Workspace overview](analysis-workspace/home.md)
