@@ -39,7 +39,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [Attribution](data-views/component-settings/attribution.md)
     + [Behavior](data-views/component-settings/behavior.md)
     + [Format](data-views/component-settings/format.md)
-    + [Include exclude values](include-data-views/component-settings/include-exclude-values.md)
+    + [Include exclude values](data-views/component-settings/include-exclude-values.md)
     + [Metric deduplication](data-views/component-settings/metric-deduplication.md)
     + [No value options](data-views/component-settings/no-value-options.md)
     + [Persistence](data-views/component-settings/persistence.md)
