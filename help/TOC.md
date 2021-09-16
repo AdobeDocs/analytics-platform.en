@@ -34,8 +34,18 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 + Data Views {#cja-dataviews}
   + [Data views overview](data-views/data-views.md)
   + [Create a data view](data-views/create-dataview.md)
+  + Component Settings {#component-settings}
+    + [Component settings overview](data-views/component-settings/overview.md)
+    + [Attribution](data-views/component-settings/attribution.md)
+    + [Behavior](data-views/component-settings/behavior.md)
+    + [Format](data-views/component-settings/format.md)
+    + [Include exclude values](data-views/component-settings/include-exclude-values.md)
+    + [Metric deduplication](data-views/component-settings/metric-deduplication.md)
+    + [No value options](data-views/component-settings/no-value-options.md)
+    + [Persistence](data-views/component-settings/persistence.md)
+    + [Value bucketing](data-views/component-settings/value-bucketing.md)
+  + [Standard component reference](data-views/component-reference.md)
   + [Data views use cases](data-views/data-views-usecases.md)
-  + [Persistence](data-views/persistence.md)
 + Workspace projects {#cja-workspace}
   + [Analysis Workspace overview](analysis-workspace/home.md)
   + [Perform basic analysis](analysis-workspace/perform-basic-analysis.md)
