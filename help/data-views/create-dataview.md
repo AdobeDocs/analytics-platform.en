@@ -71,14 +71,14 @@ Next, you can create metrics and dimensions from schema elements. You can also u
 
 1. Once you select the component, a number of settings appear on the right. Configure the component using [Component settings](component-settings/overview.md). Available component settings depend on if the component is a dimension/metric and the schema data type. Settings include:
 
-   * [!UICONTROL Attribution](component-settings/attribution.md)
-   * [!UICONTROL Behavior](component-settings/behavior.md)
-   * [!UICONTROL Format](component-settings/format.md)
-   * [!UICONTROL Include exclude values](component-settings/include-exclude-values.md)
-   * [!UICONTROL Metric deduplication](component-settings/metric-deduplication.md)
-   * [!UICONTROL No value options](component-settings/no-value-options.md)
-   * [!UICONTROL Persistence](component-settings/persistence.md)
-   * [!UICONTROL Value bucketing](component-settings/value-bucketing.md)
+   * [[!UICONTROL Attribution]](component-settings/attribution.md)
+   * [[!UICONTROL Behavior]](component-settings/behavior.md)
+   * [[!UICONTROL Format]](component-settings/format.md)
+   * [[!UICONTROL Include exclude values]](component-settings/include-exclude-values.md)
+   * [[!UICONTROL Metric deduplication]](component-settings/metric-deduplication.md)
+   * [[!UICONTROL No value options]](component-settings/no-value-options.md)
+   * [[!UICONTROL Persistence]](component-settings/persistence.md)
+   * [[!UICONTROL Value bucketing]](component-settings/value-bucketing.md)
 
 If needed, you can use the following features:
 
