@@ -52,7 +52,7 @@ You can see the [!UICONTROL Connection] at the top left, which contains the data
 
 1. Once you select the component, you see a number of settings appear on the right. Configure the component using the settings described in
 
-* [!UICONTROL Attribution component settings](/help/data-views/component-settings/attribution.md)
+* [[!UICONTROL Attribution] component settings](/help/data-views/component-settings/attribution.md)
 * [[!UICONTROL Behavior] component settings](/help/data-views/component-settings/behavior.md)
 * [[!UICONTROL Format] component settings](/help/data-views/component-settings/format.md)
 
