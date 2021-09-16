@@ -1,8 +1,8 @@
 ---
 title: Attribution component settings
 description: Lets you set default attribution for a metric.
+exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 ---
-
 # Attribution component settings
 
 Attribution lets you set a default attribution model for a metric. You can override a given metric's attribution model while working in Analysis Workspace.
