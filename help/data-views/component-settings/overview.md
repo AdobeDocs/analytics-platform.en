@@ -7,7 +7,7 @@ description: View core settings for a component.
 
 Core settings that a component uses.
 
-![Component settings](assets/component-settings.png)
+![Component settings](../assets/component-settings.png)
 
 | Setting | Description/Use case |
 | --- | --- |

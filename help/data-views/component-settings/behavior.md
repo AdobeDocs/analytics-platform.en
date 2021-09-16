@@ -7,7 +7,7 @@ description: Specify how a dimension or metric behaves in reporting.
 
 Behavior settings are available on both dimensions and metrics. The available settings depend on the component type and schema data type.
 
-![Behavior settings](assets/behavior-settings.png)
+![Behavior settings](../assets/behavior-settings.png)
 
 ## Dimension behavior settings
 
@@ -15,7 +15,7 @@ Behavior settings are available on both dimensions and metrics. The available se
 | --- | --- |
 | [!UICONTROL Lower case] | De-duplicates rows that have the same value but different case. If enabled, all instances of a dimension with the same value are reported as lower case. For example, your data contains the values `"liverpool"`, `"Liverpool"`, and `"LIVERPOOL"` in a string dimension. If [!UICONTROL Lower case] is enabled, all three values are combined into `"liverpool"`. If disabled, all three values are treated as distinct. |
 
-![Case-sensitive dimension](assets/case-sens-workspace.png)
+![Case-sensitive dimension](../assets/case-sens-workspace.png)
 
 >[!NOTE]
 >

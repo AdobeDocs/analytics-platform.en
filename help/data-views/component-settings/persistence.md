@@ -13,7 +13,7 @@ Persistence is the ability for a given dimension value to relate to a metric bey
 
 Persistence is only available on dimensions, and is retroactive to the data it is applied to. It is an immediate data transformation that happens before filtering or other analysis operations are applied.
 
-![Persistence](assets/persistence.png)
+![Persistence](../assets/persistence.png)
 
 | Setting | Description |
 | --- | --- |

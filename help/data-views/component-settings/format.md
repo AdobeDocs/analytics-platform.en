@@ -7,7 +7,7 @@ description: Configure how a metric is formatted.
 
 Format lets you determine how a given metric is displayed.
 
-![Format settings](assets/format-settings.png)
+![Format settings](../assets/format-settings.png)
 
 | Setting | Description |
 | --- | --- |

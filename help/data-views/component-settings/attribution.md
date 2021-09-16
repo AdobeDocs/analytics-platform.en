@@ -7,7 +7,7 @@ description: Lets you set default attribution for a metric.
 
 Attribution lets you set a default attribution model for a metric. You can override a given metric's attribution model while working in Analysis Workspace.
 
-![Attribution](assets/attribution-settings.png)
+![Attribution](../assets/attribution-settings.png)
 
 | Setting | Description/Use case |
 | --- | --- |
