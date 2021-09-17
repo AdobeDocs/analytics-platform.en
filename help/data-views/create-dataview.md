@@ -54,12 +54,9 @@ Next, you can create metrics and dimensions from schema elements. You can also u
 1. Click **[!UICONTROL Add]** to create a data view, or click on an existing data view to edit it.
 1. Click the **[!UICONTROL Components]** tab.
 
-  ![Components tab](assets/components-tab.png)
+   ![Components tab](assets/components-tab.png)
 
-  You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below. Keep in mind that:
-
-    * The components already included are the standard required components (system generated).
-    * Adobe applies the filter **[!UICONTROL Contains data]** by default, so that only Schema fields that contain data appear. If you are looking for a field that does not contain data, remove the filter.
+   You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below. Note that the components already included are standard required components (system generated) for all data views. Adobe also applies the filter **[!UICONTROL Contains data]** by default, so that only Schema fields that contain data appear. If you want a field that does not contain data, remove this filter.
 
 1. Drag a schema field, such as `pageTitle`, from the left rail into the Metrics or Dimensions section.
 
