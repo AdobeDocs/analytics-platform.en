@@ -52,8 +52,6 @@ After creating a connection, you can [Create a data view](/help/data-views/creat
 * A page dimension with last touch and session persistence. You can connect call center metrics with the last page that a customer viewed before calling in.
 * A calls metric that uses a 'Call center reason' schema field to increase occurrences. Use [Metric deduplication](/help/data-views/component-settings/metric-deduplication.md) so it increases only once per session.
 
-<!-- Call metric - if a call column has data, increase the metric by 1 -->
-
 ## Create visualizations
 
 The following visualizations can be used to gain insights from your stitched dataset.
@@ -93,26 +91,25 @@ You can further increase insight with this table by splitting Calls by reason or
 
 ### Flow visualization
 
-Similar use case as the table above
+You can gain insight into the what a customer was trying to do before they used the call center channel. This flow visualization helps you understand the most frequent journeys a customer takes to reach your call center. This insight lets you determine the most effective improvements you can make to your site so customers are less likely to call in.
 
-1. Drag flow viz over
-2. Drag desired call reason dimension item (yellow) as the center one
-3. Replace the previous call reason with the website page dimension (orange)
-4. Go to flow settings and change the flow container to Session
-
-By understanding the call reason, they understand the intent, the thing the person was trying to do. By look at this flow visualization, you can understand the journey the customer takes to reach your call center, which can allow you to
+1. Click the [!UICONTROL Visualizations] tab on the left and drag a flow visualization onto the workspace canvas.
+2. Click the [!UICONTROL Components] tab on the left and locate the 'Call Reason' dimension.
+3. Click the right chevron next to this dimension. This action reveals individual dimension values.
+4. Drag the desired call reason dimension item to the center location of the flow visualization.
+5. The flow visualization automatically populates previous and next call reasons. Replace the previous call reason with the website page dimension.
+6. Click the gear icon in the upper right of the flow visualization and change the flow container to Session.
 
 ### Histogram
 
-How many of my customers that have called once; called twice; called 6+ times. Some of these people never visit the website.
+How many customers have called once, called twice, or called 6+ times? Some of these people never visit the website. Use the histogram visualization to determine how many people fall into each bucket. For people who never visit the website, see how we can encourage them to self serve.
 
-For people who never visit the website, see how we can encourage them to self serve.
+1. Click the [!UICONTROL Visualizations] tab on the left and drag a histogram visualization onto the workspace canvas.
+2. Click the [!UICONTROL Components] tab on the left and drag the calls metric to the histogram visualization.
+3. Click [!UICONTROL Show advanced settings] in the center of the visualization and customize the desired buckets.
+4. Click [!UICONTROL Build].
 
-1. Drag histogram metric over
-2. Drag calls as the metric
-3. Advanced settings
-4. 
-
+<!--
 ### Web to call, call to web
 
 ### Fallout
@@ -124,11 +121,10 @@ All sessions > page views metric > calls metric
 All sessions > calls metric > page views
 
 Orrr we could also use dataset ID
-=======
+
 step 1: all sessions
 step 2: 
 
-Orrr we could also use dataset ID
 
 ### Site sections that result in a call within 30 minutes
 
