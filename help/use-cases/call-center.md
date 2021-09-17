@@ -93,21 +93,21 @@ You can further increase insight with this table by splitting Calls by reason or
 
 You can gain insight into the what a customer was trying to do before they used the call center channel. This flow visualization helps you understand the most frequent journeys a customer takes to reach your call center. This insight lets you determine the most effective improvements you can make to your site so customers are less likely to call in.
 
-1. Click the [!UICONTROL Visualizations] tab on the left and drag a flow visualization onto the workspace canvas.
-2. Click the [!UICONTROL Components] tab on the left and locate the 'Call Reason' dimension.
+1. Click the **[!UICONTROL Visualizations]** tab on the left and drag a flow visualization onto the workspace canvas.
+2. Click the **[!UICONTROL Components]** tab on the left and locate the 'Call Reason' dimension.
 3. Click the right chevron next to this dimension. This action reveals individual dimension values.
 4. Drag the desired call reason dimension item to the center location of the flow visualization.
 5. The flow visualization automatically populates previous and next call reasons. Replace the previous call reason with the website page dimension.
-6. Click the gear icon in the upper right of the flow visualization and change the flow container to Session.
+6. Click the gear icon in the upper right of the flow visualization and change the flow container to **[!UICONTROL Session]**.
 
 ### Histogram
 
 How many customers have called once, called twice, or called 6+ times? Some of these people never visit the website. Use the histogram visualization to determine how many people fall into each bucket. For people who never visit the website, see how we can encourage them to self serve.
 
-1. Click the [!UICONTROL Visualizations] tab on the left and drag a histogram visualization onto the workspace canvas.
-2. Click the [!UICONTROL Components] tab on the left and drag the calls metric to the histogram visualization.
-3. Click [!UICONTROL Show advanced settings] in the center of the visualization and customize the desired buckets.
-4. Click [!UICONTROL Build].
+1. Click the **[!UICONTROL Visualizations]** tab on the left and drag a histogram visualization onto the workspace canvas.
+2. Click the **[!UICONTROL Components]** tab on the left and drag the calls metric to the histogram visualization.
+3. Click **[!UICONTROL Show advanced settings]** in the center of the visualization and customize the desired buckets.
+4. Click **[!UICONTROL Build]**.
 
 <!--
 ### Web to call, call to web
