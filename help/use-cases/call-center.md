@@ -73,30 +73,58 @@ The resulting Venn visualization shows the number of people in your dataset that
 This freeform table lets you see the top pages that contribute to call center events. First, make sure that the desired dimensions and metrics have the correct attribution model:
 
 1. Drag the dimension that holds your web page names onto a Freeform Table visualization.
-1. Replace the metric with the desired call center metric that you want to measure conversion.
+1. Replace the metric with the desired call center metric that you want to measure.
 1. Click the gear icon near the metric header. Click **[!UICONTROL Use non-default attribution model]**.
-1. Set the desired [Attribution model](/help/data-views/create-dataview.md).
+1. Set the desired [Attribution model](/help/analysis-workspace/attribution/models.md). For example, a Time Decay model with a half-life of 15 minutes, and a Lookback Window of Session. This attribution model gives credit to the pages leading up to the call to your call center.
 
-The resulting report shows the top metric from call center data.
+The resulting report shows the top pages that drive calls to your call center. <!-- use case behind what we use these pages for -->
 
-<!-- ### Flow between web data and call center
+<!-- Complement with donut visualization -->
 
-call reason as an exit dimension, web page name for previous pages
+You can further increase insight with this table by splitting Calls by reason or category.
+
+1. Click the right chevron under the 'Call Reason' dimension in the list of components. This action reveals individual dimension values.
+2. Drag the desired dimension value(s) under the 'Calls' metric, which filters that metric by each respective call reason.
+3. Repeat for each call reason that you would like to drill into. Use the 'All sessions' filter to view the aggregate total.
+
+<!-- screenshot -->
+
+### Flow visualization
+
+You can gain insight into the what a customer was trying to do before they used the call center channel. This flow visualization helps you understand the most frequent journeys a customer takes to reach your call center. This insight lets you determine the most effective improvements you can make to your site so customers are less likely to call in.
+
+1. Click the **[!UICONTROL Visualizations]** tab on the left and drag a flow visualization onto the workspace canvas.
+2. Click the **[!UICONTROL Components]** tab on the left and locate the 'Call Reason' dimension.
+3. Click the right chevron next to this dimension. This action reveals individual dimension values.
+4. Drag the desired call reason dimension item to the center location of the flow visualization.
+5. The flow visualization automatically populates previous and next call reasons. Replace the previous call reason with the website page dimension.
+6. Click the gear icon in the upper right of the flow visualization and change the flow container to **[!UICONTROL Session]**.
 
 ### Histogram
 
+How many customers have called once, called twice, or called 6+ times? Some of these people never visit the website. Use the histogram visualization to determine how many people fall into each bucket. For people who never visit the website, see how we can encourage them to self serve.
+
+1. Click the **[!UICONTROL Visualizations]** tab on the left and drag a histogram visualization onto the workspace canvas.
+2. Click the **[!UICONTROL Components]** tab on the left and drag the calls metric to the histogram visualization.
+3. Click **[!UICONTROL Show advanced settings]** in the center of the visualization and customize the desired buckets.
+4. Click **[!UICONTROL Build]**.
+
+<!--
+### Web to call, call to web
+
 ### Fallout
 
-step 1: all sessions
-step 2: purchase step 1
-step 3: call
+Fallout sessions - session
 
-another good one
+All sessions > page views metric > calls metric
+
+All sessions > calls metric > page views
+
+Orrr we could also use dataset ID
 
 step 1: all sessions
 step 2: 
 
-Orrr we could also use dataset ID
 
 ### Site sections that result in a call within 30 minutes
 

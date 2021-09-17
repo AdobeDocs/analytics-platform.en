@@ -48,6 +48,10 @@ At regular intervals (once a week or once a day depending on the chosen lookback
 | `6` | - | - | `Bob` | `Bob` | Bob makes another call to customer service | `1` (Bob) |
 | `7` | `246` | - | - | `Bob` | Bob visits your site on his desktop again, unauthenticated | `1` (Bob) |
 
+>[!NOTE]
+>
+>Data is only replayed for the website dataset. The call center dataset remains unchanged, but matches up when the correct person ID is used.
+
 ## Recap
 
 * CCA immediately stitches known devices, but does not immediately stitch new or unrecognized devices.
