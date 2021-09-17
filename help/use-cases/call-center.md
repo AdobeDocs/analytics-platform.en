@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 ---
 # Import call center and web data
 
-Customer Journey Analytics provides the valuable and robust capability to combine datasets from different sources into a single Workspace project. Use this guide to understand how your organization can combine website data with call center data.
+Customer Journey Analytics provides the valuable and robust capability to combine datasets from different sources into a single Workspace project. Use this guide to understand how your organization can combine website data with call center data. For example, you can understand what actions a customer takes, what content that they view, and what terms that they search for before they contact customer support. You can then determine the content and self-service tools to improve so customers can better resolve issues themselves without needing to call in.
 
 ## Prerequisites
 
@@ -47,8 +47,10 @@ CJA requires a common identifier to generate a [combined dataset](../connections
 
 ## Create a data view
 
-After creating a connection, you can [Create a data view](/help/data-views/create-dataview.md) for use in Analysis Workspace. <!-- page dimension last touch, session persistence -->
-<!-- create calls metric using call center reason (requires data views 2.0). any column that triggers once per call -->
+After creating a connection, you can [Create a data view](/help/data-views/create-dataview.md) for use in Analysis Workspace. Helpful components include:
+
+* A page dimension with last touch and session persistence. You can connect call center metrics with the last page that a customer viewed before calling in.
+* A calls metric that uses a 'Call center reason' schema field to increase occurrences. Use [Metric deduplication](/help/data-views/component-settings/metric-deduplication.md) so it increases only once per session.
 
 ## Create visualizations
 
@@ -75,14 +77,13 @@ This freeform table lets you see the top pages that contribute to call center ev
 1. Click the gear icon near the metric header. Click **[!UICONTROL Use non-default attribution model]**.
 1. Set the desired [Attribution model](/help/data-views/create-dataview.md).
 
-The resulting report shows the top metric from call center data. <!-- Complement with donut visualization -->
+The resulting report shows the top metric from call center data.
 
 <!-- ### Flow between web data and call center
 
 call reason as an exit dimension, web page name for previous pages
 
 ### Histogram
-
 
 ### Fallout
 
