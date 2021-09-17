@@ -1,8 +1,8 @@
 ---
 title: Customer Journey Analytics privacy overview
 description: Describes how privacy settings work in Customer Journey Analytics.
+exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 ---
-
 # Customer Journey Analytics privacy overview
 
 Generally speaking, any privacy-related settings in Customer Journey Analytics are inherited from Adobe Experience Platform.
@@ -15,4 +15,4 @@ Customer Journey Analytics will not subscribe to the General Data Protection Reg
 
 The California Consumer Privacy Act (CCPA) enhances privacy rights and consumer protection for residents of California, United States. This Act is set to become effective on January 1, 2020.
 The CCPA provides new data privacy rights to California residents, such as the right to access and delete their personal data, to know whether their personal data is sold or disclosed (and to whom), and to refuse the sale of their personal data.
-In anticipation of the CCPA, the Privacy Service will support requests to opt out from the selling of personal data. 
+In anticipation of the CCPA, the Privacy Service will support requests to opt out from the selling of personal data.

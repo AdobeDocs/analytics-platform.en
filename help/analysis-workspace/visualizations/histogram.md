@@ -1,14 +1,13 @@
 ---
-description: A histogram is a new visualization type in Analysis Workspace.
+description: A histogram is similar to a bar chart, but it groups numbers into ranges (buckets).
 title: Histogram
-uuid: 8a6bd2c4-da15-4f64-b889-ab9add685046
+exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 ---
-
 # Histogram
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 A histogram is similar to a bar chart, but it groups numbers into ranges (buckets). Analytics automates the "bucketing" of numbers into ranges, but you can change the settings in [Advanced Settings](#section_09D774C584864D4CA6B5672DC2927477).
 
@@ -39,7 +38,7 @@ To adjust your histogram settings, click the Settings ("gear") icon in the upper
 |  Starting Bucket  | Determines which bucket the histogram starts with. "1" is the default. You can set starting numbers from 0 to infinity (no negative numbers).  |
 |  Metric Buckets  | Lets you increase/decrease the number of data ranges (buckets.) The maximum number of buckets is 50.  |
 |  Metric Bucket Size  | Lets you set the size of each bucket. For example, you can change the bucket size from 1 page view to 2 page views.  |
-|  Counting Method  | Lets you choose among [Visitor](https://docs.adobe.com/content/help/en/analytics/components/metrics/unique-visitors.html), [Visit](https://docs.adobe.com/content/help/en/analytics/components/metrics/visits.html), or Hit Type. For example, page views per visit or page views per visitor or page views per hit. For Hit, "Occurrences" is used as the y-axis metric in a freeform table.  |
+|  Counting Method  | Lets you choose among [Visitor](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html), [Visit](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html), or Hit Type. For example, page views per visit or page views per visitor or page views per hit. For Hit, "Occurrences" is used as the y-axis metric in a freeform table.  |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
@@ -54,8 +53,8 @@ To view or change the data source for the histogram chart, click the dot next to
 
 ![](assets/manage-data-source.png)
 
-Pre-built segments that show up in the table are internal segments and won't show up in the Segment selector. Click the "i" icon next to the segment name, then click **[!UICONTROL Make public]** to make the segment public.
+Pre-built filters that show up in the table are internal filters and won't show up in the filter selector. Click the "i" icon next to the filter name, then click **[!UICONTROL Make public]** to make the filter public.
 
 ![](assets/prebuilt_segments.png)
 
-To explore more ways to manage Freeform data tables and other visualizations, such as doing data breakdowns, go [here](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html).
+To explore more ways to manage Freeform data tables and other visualizations, such as doing data breakdowns, go [here](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html).

@@ -2,13 +2,9 @@
 description: Synchronizing visualizations lets you control which data table or data source corresponds to a visualization.
 keywords: Analysis Workspace;Synchronize visualization with data source
 title: Manage data sources
+exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 ---
-
 # Manage data sources
-
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 Synchronizing visualizations lets you control which data table or data source corresponds to a visualization.
 
@@ -26,9 +22,9 @@ Managing a data source lets you show the data source or lock the selection. Thes
 
 | Element | Description |
 |--- |--- |
-|Linked Visualizations|If there are visualizations connected to a freeform or cohort table, the top left dot opens to list the connected visualizations and have a "show" checkbox option to show/hide the table.  Hovering highlights the linked visualization, and clicking it takes you to it.|
-|Show Data Source|Lets you show (by enabling the checkbox) or hide (by disabling) the data table that corresponds to the visualization.|
-|Lock Selection|Enable this setting to lock the visualization to the data currently selected in the corresponding data table. Once enabled, choose between:  <ul><li>**Selected Positions**: Choose this option if you want the visualization to stay locked on the positions that are selected in the corresponding data table. These positions will continue to be visualized, even if the specific items in these positions change. For example, choose this option if you want to show the top five campaign names in this visualization at all times, no matter which campaign names show up in the top five.</li> <li>**Selected Items**: Choose this option if you want the visualization to stay locked on the specific items currently selected in the corresponding data table. These items will continue to be visualized, even if they change their ranking among items in the table. For example, choose this option if you want to show the same five specific campaign names in this visualization at all times, no matter where those campaign names rank.</li></ul>|
+| [!UICONTROL Linked Visualizations] | If there are visualizations connected to a freeform or cohort table, the top left dot opens to list the connected visualizations and have a "show" checkbox option to show/hide the table.  Hovering highlights the linked visualization, and clicking it takes you to it. |
+| [!UICONTROL Show Data Source] | Lets you show (by enabling the checkbox) or hide (by disabling) the data table that corresponds to the visualization. |
+| [!UICONTROL Lock Selection] | Enable this setting to lock the visualization to the data currently selected in the corresponding data table. Once enabled, choose between:  <ul><li>**Selected Positions**: Choose this option if you want the visualization to stay locked on the positions that are selected in the corresponding data table. These positions will continue to be visualized, even if the specific items in these positions change. For example, choose this option if you want to show the top five campaign names in this visualization at all times, no matter which campaign names show up in the top five.</li> <li>**Selected Items**: Choose this option if you want the visualization to stay locked on the specific items currently selected in the corresponding data table. These items will continue to be visualized, even if they change their ranking among items in the table. For example, choose this option if you want to show the same five specific campaign names in this visualization at all times, no matter where those campaign names rank.</li></ul> |
 
 This architecture differs from the previous one in that Analysis Workspace no longer creates a duplicate hidden table that stores the locked selection for you. Now, the data source points to the table that you created the visualization from.
 

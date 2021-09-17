@@ -1,15 +1,14 @@
 ---
 keywords: Analysis Workspace
 title: Analysis Workspace overview
-topic: Reports and analytics
-uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
+description: Overview of Analysis Workspace capabilities
+exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 ---
-
 # Analysis Workspace overview
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=en#analysis-workspace). [Learn more...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace is a flexible browser tool that allows you to quickly build analyses and share insights. Using the drag-and-drop interface, you can craft your analysis, add visualizations to bring data to life, curate a dataset, share and schedule projects with anyone in your organization.
 
@@ -17,9 +16,9 @@ If you have only a few minutes, watch this brief overview to see what is possibl
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## Log in to Adobe Analytics {#login}
+## Log in Customer Journey Analytics {#login}
 
-To start using Analysis Workspace, log in to Adobe Analytics by going to [experience.adobe.com/analytics](https://experience.adobe.com/analytics). You will land on the Workspace project list homepage, if a specific project has not previously been selected for you.
+To start using Analysis Workspace, log in to Customer Journey Analytics by going to [experience.adobe.com/analytics](https://experience.adobe.com/analytics). You will land on the Workspace project list homepage, if a specific project has not previously been selected for you.
 
 ![](assets/login-analytics.png)
 
@@ -31,11 +30,9 @@ Once logged in, your first stop should be the Analysis Workspace Training Tutori
 
 ## Create a new project {#new-project}
 
-With the tutorial complete, you are ready to begin building your first project. The **new project modal** provides you with different options for starting your analysis. You can choose to start from a blank project or [blank mobile scorecard](https://docs.adobe.com/content/help/en/analytics/analyze/mobapp/curator.html), depending on whether you plan to share your analysis from the browser or the Adobe Analytics dashboards mobile app.
+With the tutorial complete, you are ready to begin building your first project. The **new project modal** provides you with different options for starting your analysis. You can choose to start from a blank project or [blank mobile scorecard](/help/mobile-app/curator.md), depending on whether you plan to share your analysis from the browser or the Customer Journey Analytics dashboards mobile app.
 
 ![](assets/create-new-project.png)
-
-You can also begin your analysis from pre-built **templates**, either Adobe-provided standard templates or custom templates that were created by your organization. There a several different templates available, depending on the analysis or use case you have in mind. [Learn more](/help/analysis-workspace/build-workspace-project/starter-projects.md) about the different template options available.
 
 ## Build your analysis {#analysis}
 
@@ -43,7 +40,7 @@ In your Workspace project, **panels, tables, visualizations, and components** ar
 
 ### Components
 
-**Components** are dimensions, metrics, segments, or date ranges, all of which can be combined in a **[!UICONTROL Freeform table]** to start answering your business question. Be sure to familiarize yourself with each [component type](/help/components/overview.md) before diving into your analysis. Once you've mastered component terminology, you can begin dragging and dropping to [build your analysis](/help/analysis-workspace/build-workspace-project/freeform-overview.md) in a **[!UICONTROL Freeform table]**.
+**Components** are dimensions, metrics, filters, or date ranges, all of which can be combined in a **[!UICONTROL Freeform table]** to start answering your business question. Be sure to familiarize yourself with each [component type](/help/components/overview.md) before diving into your analysis. Once you've mastered component terminology, you can begin dragging and dropping to [build your analysis](/help/analysis-workspace/build-workspace-project/freeform-overview.md) in a **[!UICONTROL Freeform table]**.
 
 ![](assets/build-components.png)
 
@@ -61,4 +58,4 @@ In your Workspace project, **panels, tables, visualizations, and components** ar
 
 ## Additional resources {#resources}
 
-* Adobe offers hundreds of [Analytics video training tutorials](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html).
+* Adobe offers hundreds of [Analytics video training tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html).

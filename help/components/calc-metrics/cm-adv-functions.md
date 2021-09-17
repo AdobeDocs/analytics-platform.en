@@ -1,13 +1,13 @@
 ---
 title: Reference - advanced functions
 description: Access these functions by checking Show Advanced in the Functions drop-down list.
+exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 ---
-
 # Reference - advanced functions
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 Access these functions by checking **[!UICONTROL Show Advanced]** in the **[!UICONTROL Functions]** drop-down list.
 
@@ -66,7 +66,7 @@ This is how the "Approximate Customers" metric could be used in reporting:
 
 ## Uniques Exceeded
 
-Like Count() and RowCount(), Approximate Count Distinct() is subject to ["uniques exceeded" limits](https://marketing.adobe.com/resources/help/en_US/reference/metrics_uniques_high_numbers.html). If the "uniques exceeded" limit is reached within a particular month for a dimension, the value is counted as 1 dimension item.
+Like Count() and RowCount(), Approximate Count Distinct() is subject to ["uniques exceeded" limits](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html?lang=en). If the "uniques exceeded" limit is reached within a particular month for a dimension, the value is counted as 1 dimension item.
 
 ## Comparing Count Functions
 
@@ -723,4 +723,3 @@ Returns the probability that the current row could be seen by chance in the colu
 >[!NOTE]
 >
 >Assumes that the values are normally distributed.
-

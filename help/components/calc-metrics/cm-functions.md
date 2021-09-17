@@ -1,13 +1,13 @@
 ---
 title: Reference - basic functions
-description: The Calculated Metrics Builder lets you apply statistical and mathematical functions to build Advanced Calculated Metrics. 
+description: The Calculated Metrics Builder lets you apply statistical and mathematical functions to build Advanced Calculated Metrics.
+exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 ---
-
 # Reference - basic functions
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 The Calculated Metrics Builder lets you apply statistical and mathematical functions to build Advanced Calculated Metrics.
 
@@ -317,10 +317,4 @@ As an example, let's say you have a three-item column:
 
 3
 
-The average of this column is 2. The variance for the column will be ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3. In Ad Hoc Analysis this will look like this:
-
-1 2/3
-
-2 2/3
-
-3 2/3
+The average of this column is 2. The variance for the column will be ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3.

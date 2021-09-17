@@ -2,15 +2,15 @@
 description: View-only projects in Workspace
 keywords: View-only projects
 title: View-only projects
+exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 ---
-
 # View-only projects
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
-You can share projects as "view-only" to recipients through the [Project share workflow](/help/analysis-workspace/curate-share/share-projects.md). Recipients placed in the Can View role will receive a more limited project experience. This may be desired if you are sharing a project to users that are less familiar with your organization’s data structure, Analysis Workspace or Adobe Analytics generally, but you still want them to consume data and insights in a safe environment. 
+You can share projects as "view-only" to recipients through the [Project share workflow](/help/analysis-workspace/curate-share/share-projects.md). Recipients placed in the Can View role will receive a more limited project experience. This may be desired if you are sharing a project to users that are less familiar with your organization’s data structure, Analysis Workspace or Customer Journey Analytics generally, but you still want them to consume data and insights in a safe environment. 
 
 ![](assets/view-only-project.png)
 
@@ -19,12 +19,11 @@ You can share projects as "view-only" to recipients through the [Project share w
 Disabled interactions in a view-only project include: 
 
 * Hidden left rail 
-* Report suite 
-* Panel calendar date range. Note: If you want to grant calendar control to recipients, add in a [drop-down filter with date ranges](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html). 
+* Panel calendar date range. Note: If you want to grant calendar control to recipients, add in a [drop-down filter with date ranges](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html). 
 * Freeform filtering 
 * Freeform # of visible rows 
 * Freeform row, column or visualization settings 
-* Panel segments 
+* Panel filters 
 * Edit, Insert & Component menus
 * Workspace tips
 

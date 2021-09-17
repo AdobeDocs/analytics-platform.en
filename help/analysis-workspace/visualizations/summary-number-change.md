@@ -2,13 +2,9 @@
 description: Use the Summary Number and Change visualizations to display important data points in a project.
 title: Summary Number and Summary Change
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
+exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 ---
-
 # Summary Number and Summary Change
-
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 ## Summary Number visualization {#summary-number}
 
@@ -19,7 +15,15 @@ Use the Summary Number visualization to highlight a large number that is importa
 * If more than one cell is selected, it shows the first cell selected.
 * If the column is selected, it picks the first cell value in the column.
 
-![Summary number](assets/summary-number.png)
+Click the **Visualization settings** gear in to the top right to configure the Summary Number settings: 
+
+| Setting | Definition |
+|--- |--- |
+| Percentages | Display percentages instead of raw numbers.|
+| Legend visible | Display information about the metric displayed.|
+| Abbreviate value | Choose to abbreviate values and show up to 3 decimal places.|
+| Summarize value by | Choose to display the max, min, mean, median, or sum for a selection of data.|
+
 
 Click the **Visualization settings** gear in to the top right to configure the Summary Number settings: 
 
@@ -30,9 +34,10 @@ Click the **Visualization settings** gear in to the top right to configure the S
 | Abbreviate value | Choose to abbreviate values and show up to 3 decimal places.|
 | Summarize value by | Choose to display the max, min, mean, median, or sum for a selection of data.|
 
+
 ## Summary Change visualization {#summary-change}
 
-Use the Summary Change visualization to show the delta (change) between two numbers. The green and red color of the Summary Change can be controlled through [custom event polarity](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
+Use the Summary Change visualization to show the delta (change) between two numbers. The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
 
 This visualization behaves in the following ways:
 
@@ -43,7 +48,9 @@ This visualization behaves in the following ways:
 * If a range of cells is selected, it compares the first to the last cells selected in the range.
 * If the column is selected, it compares the first value to itself, which shows a change of 0.
 
-![Summary change](assets/summary-change.png)
+
+![](assets/summary-change.png)
+
 
 Click the **Visualization settings** gear in to the top right to configure the Summary Change settings: 
 

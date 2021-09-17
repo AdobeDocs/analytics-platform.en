@@ -2,8 +2,8 @@
 description: Keyboard interactions, shortcut keys and point-and-click behaviors available in Analysis Workspace.
 keywords: Analysis Workspace
 title: Hotkeys (Shortcuts)
+exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 ---
-
 # Hotkeys (Shortcuts)
 
 Hotkeys (keyboard shortcuts) are available in Analysis Workspace for seamless navigation, analysis and democratization.
@@ -32,7 +32,7 @@ Note: `CTRL` = Windows and `command` = Mac
 |Create an Alert|ctrl (or cmd) + shift + a|
 |Create Calculated Metric|ctrl (or cmd) + shift + c|
 |Create a Date Range|ctrl (or cmd) + shift + d|
-|Create a Segment|ctrl (or cmd) + shift + e|
+|Create a filter |ctrl (or cmd) + shift + e|
 |Clear All|alt + w|
 |Copy|ctrl (or cmd) + c|
 |Redo|ctrl (or cmd) + shift + z|
@@ -45,13 +45,10 @@ Note: `CTRL` = Windows and `command` = Mac
 
 |Action|Shortcut|
 |---|---|
-|New Analytics for Target Panel|alt + g|
 |New Attribution Panel|alt + e|
 |New Blank Panel|alt + b|
 |New Freeform Panel|alt + a|
-|New Media Concurrent Viewers Panel|alt + h|
 |New Quick Insights Panel|alt + f|
-|New Segment Comparison Panel|alt + c|
 |New Freeform Table|alt + 1|
 |New Line Graph|alt + 2|
 |New Bar Chart|alt + 3|

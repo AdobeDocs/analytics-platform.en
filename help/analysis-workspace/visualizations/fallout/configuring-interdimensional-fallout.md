@@ -1,14 +1,9 @@
 ---
 description: Fallout in Analysis Workspace lets you to mix and match dimensions and metrics as touchpoints in funnels and workflows. This gives you more flexibility in defining the user steps you want to investigate.
 title: Inter-dimensional fallout
-uuid: 17520727-2d06-4dc2-a66d-66e3350bdda3
+exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
 ---
-
 # Inter-dimensional fallout
-
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 Fallout in Analysis Workspace lets you to mix and match dimensions and metrics as touchpoints in funnels and workflows. This gives you more flexibility in defining the user steps you want to investigate.
 
@@ -25,4 +20,3 @@ You can also add metrics to this mix. In this example, we have added the metric 
 In addition, you can combine different dimensions and metrics into AND checkpoints. Just drag another dimension or metric on top of an existing one:
 
 ![](assets/interdimensional-fallout3.png)
-

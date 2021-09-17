@@ -1,21 +1,20 @@
 ---
-description: You can create segments from a touchpoint, add segments as touchpoint, and compare key workflows across various segments in Analysis Workspace.
-keywords: fallout and segmentation;segments in fallout analysis;compare segments in fallout
-title: Apply segments in fallout analysis
-uuid: e87a33df-160e-4943-8d02-4d6609ae3bb1
+description: You can create filters from a touchpoint, add filters as touchpoint, and compare key workflows across various filters in Analysis Workspace.
+keywords: fallout and filters;filters in fallout analysis;compare filters in fallout
+title: Apply filters in fallout analysis
+exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 ---
-
 # Apply filters in fallout analysis
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
-You can create filters from a touchpoint, add segments as touchpoint, and compare key workflows across various filters in Analysis Workspace.
+You can create filters from a touchpoint, add filters as touchpoint, and compare key workflows across various filters in Analysis Workspace.
 
 >[!IMPORTANT]
 >
->Filters used as checkpoints in Fallout must use a container that is at a lower level than the overall context of the Fallout visualization. With a visitor-context Fallout, filters used as checkpoints must be visit or hit-based filters. With a visit-context Fallout, filters used as checkpoint must be hit-based segments. If you use an invalid combination, the fallout will be 100%. We have added a warning to the Fallout visualization that will display when you add an incompatible filter as a touchpoint. Certain invalid filter container combinations will lead to invalid Fallout diagrams, such as:
+>Filters used as checkpoints in Fallout must use a container that is at a lower level than the overall context of the Fallout visualization. With a visitor-context Fallout, filters used as checkpoints must be visit or hit-based filters. With a visit-context Fallout, filters used as checkpoint must be hit-based filters. If you use an invalid combination, the fallout will be 100%. We have added a warning to the Fallout visualization that will display when you add an incompatible filter as a touchpoint. Certain invalid filter container combinations will lead to invalid Fallout diagrams, such as:
 
 * Using a visitor-based filter as a touchpoint inside a visitor-context Fallout visualization
 * Using a visitor-based filter as a touchpoint inside a visit-context Fallout visualization
@@ -47,7 +46,7 @@ Or you can create an AND touchpoint by dragging the US users filter onto another
 
 You can compare an unlimited number of filters in the Fallout visualization.
 
-1. Select the segments you want to compare from the [!UICONTROL Filter] rail on the left. In our example, we have selected 2 segments: US Users and Non-US Users.
+1. Select the filters you want to compare from the [!UICONTROL Filter] rail on the left. In our example, we have selected 2 filters: US Users and Non-US Users.
 1. Drag them into the Filter drop zone at the top.
 
    ![](assets/segment-drop.png)

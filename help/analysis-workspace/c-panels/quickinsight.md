@@ -1,23 +1,23 @@
 ---
 description: Quick Insights is a tool for new Workspace users that guides them in building data tables and visualizations
 title: Quick Insights panel
+exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 ---
-
 # Quick Insights panel
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Quick Insights]** panel is currently in limited testing. [Learn more](https://docs.adobe.com/content/help/en/analytics/landing/an-releases.html)
+>**[!UICONTROL Quick Insights]** panel is currently in limited testing. [Learn more](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html)
 
 [!UICONTROL Quick Insights] provides guidance for non-analysts and new users of [!UICONTROL Analysis Workspace] to learn how to answer business questions quickly and easily. It is also a great tool for advanced users who want to answer a simple question quickly without having to build a table themselves.
 
-When you first start using this [!UICONTROL Analysis Workspace], you might wonder what visualizations would be most useful, which dimensions and metrics might facilitate insights, where to drag and drop items, where to create a segment, etc. 
+When you first start using this [!UICONTROL Analysis Workspace], you might wonder what visualizations would be most useful, which dimensions and metrics might facilitate insights, where to drag and drop items, where to create a filter, etc. 
 
-To help with this, and based on your own company's usage of data components in [!UICONTROL Analysis Workspace], [!UICONTROL Quick Insights] leverages an algorithm that will present you with the most popular dimensions, metrics, segments, and date ranges your company uses. In fact, you will see dimensions, metrics, and segments tagged as [!UICONTROL Popular] in the drop-down list, as shown here:
+To help with this, and based on your own company's usage of data components in [!UICONTROL Analysis Workspace], [!UICONTROL Quick Insights] leverages an algorithm that will present you with the most popular dimensions, metrics, filters, and date ranges your company uses. In fact, you will see dimensions, metrics, and filters tagged as [!UICONTROL Popular] in the drop-down list, as shown here:
 
 ![](assets/popular-tag.png)
 
@@ -25,7 +25,7 @@ To help with this, and based on your own company's usage of data components in [
 
 * Properly build a data table and an accompanying visualization in [!UICONTROL Analysis Workspace].
 * Learn the terminology and vocabulary for basic components and pieces of [!UICONTROL Analysis Workspace].
-* Do simple breakdowns of dimensions, add multiple metrics, or compare segments easily within a [!UICONTROL Freeform table].
+* Do simple breakdowns of dimensions, add multiple metrics, or compare filters easily within a [!UICONTROL Freeform table].
 * Change or try out various visualization types to find the find tool for your analysis quickly and intuitively.
 
 ## Basic key terminology
@@ -39,11 +39,11 @@ Following are some of the basic terms you need to be familiar with. Each data ta
 |[!UICONTROL Metric]|Metrics are quantitative information about visitor activity, such as views, click-throughs, reloads, average time spent, units, orders, revenue, and so on.|
 |[!UICONTROL Visualization]|Workspace offers [a number of visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to build visual representations of your data, such as bar charts, donut charts, histograms, line charts, maps, scatterplots, and others.|
 |[!UICONTROL Dimension Breakdown]|A dimension breakdown is a way to literally break down a dimension by other dimensions. In our example, you could break down US States by Mobile Devices to get the mobile device visits per state, or you could break Mobile Devices down by Mobile Device types, by Regions, by Internal Campaigns, etc..|
-|[!UICONTROL Segment]|Segments let you identify subsets of visitors based on characteristics or website interactions. For example, you can build [!UICONTROL Visitor] segments based on attributes: browser type, device, number of visits, country, gender, or based on interactions: campaigns, keyword search, search engine, or based on exits and entries: visitors from Facebook, a defined landing page, referring domain, or based on custom variables: form field, defined categories, customer ID.  |
+|[!UICONTROL filter]|filters let you identify subsets of visitors based on characteristics or website interactions. For example, you can build [!UICONTROL Visitor] filters based on attributes: browser type, device, number of visits, country, gender, or based on interactions: campaigns, keyword search, search engine, or based on exits and entries: visitors from Facebook, a defined landing page, referring domain, or based on custom variables: form field, defined categories, customer ID.  |
 
 ## Get started with Quick Insights
 
-1. Log in to Adobe Analytics using the credentials you have been provided with.
+1. Log in to Customer Journey Analytics using the credentials you have been provided with.
 1. Go to [!UICONTROL Workspace] and click **[!UICONTROL Create New Project]** and then click **[!UICONTROL Quick Insights]**. (You can also access this panel from the **[!UICONTROL Panel]** menu in the left rail.)
 
     ![](assets/qibuilder.png)
@@ -51,7 +51,7 @@ Following are some of the basic terms you need to be familiar with. Each data ta
     ![](assets/qi-panel.png)
 
 1. When you first start out, go through the short tutorial that teaches you some of the [!UICONTROL Quick Insights panel] basics. Or, click to **[!UICONTROL Skip Tutorial]**.
-1. Select your building blocks (also known as components): dimensions (orange), metrics (green), segments (blue), or date ranges (purple) You have to select at least one dimension and one metric for a table to be built automatically. 
+1. Select your building blocks (also known as components): dimensions (orange), metrics (green), filters (blue), or date ranges (purple) You have to select at least one dimension and one metric for a table to be built automatically. 
 
     ![](assets/qibuilder2.png)
 
@@ -90,7 +90,7 @@ Other useful hints will pop up in the [!UICONTROL Quick Insights Builder], some 
 
     ![](assets/qibuilder6.png)
 
-* **Add more segments**: You can add up to 2 more segments by using the AND or OR operators to add them the table. Look at what happens to the table when you add Mobile Users OR Loyal Visitors. They are next to each other, above the metrics. If you added Mobile Users AND Loyal Visitors, you would see results from both segments together, and they would be stacked on top of each other in the table.
+* **Add more filters**: You can add up to 2 more filters by using the AND or OR operators to add them the table. Look at what happens to the table when you add Mobile Users OR Loyal Visitors. They are next to each other, above the metrics. If you added Mobile Users AND Loyal Visitors, you would see results from both filters together, and they would be stacked on top of each other in the table.
 
     ![](assets/qibuilder7.png)
 
@@ -105,4 +105,3 @@ You will get a warning before adding anything directly to the table:
  ![](assets/qibuilder8.png)
 
 Otherwise, building directly will cause the table to now behave as a traditional Freeform table, without the helpful features for new users.
-

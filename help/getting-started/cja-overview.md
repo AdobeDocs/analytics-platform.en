@@ -1,8 +1,8 @@
 ---
 title: Customer Journey Analytics overview
 description: Learn how Customer Journey Analytics lets you use Analysis Workspace with data from Experience Platform.
+exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 ---
-
 # Customer Journey Analytics overview
 
 Customer Journey Analytics is an Analytics capability that lets you use the power of Analysis Workspace with data from Adobe Experience Platform. It can break down, filter, query, and visualize years' worth of data, and is combined with Platform's ability to hold all kinds of data schemas and types. Using the **Experience Data Model (XDM)**, data can be uniformly represented and organized, ready for combination and exploration. **Experience Query Services** allows you to use SQL-compatible tools and frameworks to query and manipulate all your data.
@@ -12,7 +12,7 @@ Customer Journey Analytics is an Analytics capability that lets you use the powe
 Customer Journey Analytics expands the scope of Analytics by offering easy-to-use cross-channel capabilities and removing limitations in previous versions of Adobe Analytics. Some notable improvements are:
 
 * **Unlimited variables and events**: The concepts of eVars, props, and events no longer exist. Data is primarily focused on dimensions and metrics. Data sets can have an unlimited amount of unique dimensions and metrics.
-* **Unlimited unique values**: Adobe Experience Platform is not constrained to any unique limitations, such as the 500k unique values in traditional report suites.
+* **Unlimited unique values**: Adobe Experience Platform is not constrained to any unique limitations.
 * **Alter historical data**: Using Adobe Experience Platform, data can be removed or corrected.
 * **Cross-report-suite data**: Existing implementations from multiple data sets can be combined in Platform.
 
@@ -20,7 +20,7 @@ The initial release of Customer Journey Analytics includes many of the features 
 
 ## Comparing CJA to Cross-Device Analytics
 
-[Cross-Device Analytics](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) integrates with Adobe Experience Platform Identity Service, utilizing either the Co-op Graph or Private Graph, to identify how digital devices map to people. It is available for Adobe Analytics Ultimate customers.
+[Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) integrates with Adobe Experience Platform Identity Service, utilizing either the Co-op Graph or Private Graph, to identify how digital devices map to people. It is available for Adobe Analytics Ultimate customers.
 
 CJA, on the other hand, integrates with Adobe Experience Platform datasets and enables cross-channel analysis in Analysis Workspace. Although CJA does not yet integrate with the Co-op or Private identity graphs, you can "bring your own ID" to join datasets together, and those datasets can go beyond digital data to include both online and offline touchpoints. CJA prerequisites are covered in more detail below.
 
@@ -46,9 +46,9 @@ Before you can start using Customer Journey Analytics, the following prerequisit
 
 To create connections, add datasets, etc., you need the following permissions in the [Admin Console](https://adminconsole.adobe.com/enterprise/):
 
-* As of Sept. 9, 2020, to access Customer Journey Analytics or make a connection, you will need to be added as an Admin to the **Customer Journey Analytics Product** in the [Admin Console](https://adminconsole.adobe.com/enterprise/). Product admins are granted the following permissions:
+* To access Customer Journey Analytics or make a connection, you will need to be added as an Admin to the **Customer Journey Analytics Product** in the [Admin Console](https://adminconsole.adobe.com/enterprise/). Product admins are granted the following permissions:
   * Create/update/delete Connections or Data Views
-  * Update/delete projects, filters, calc metrics, or segments created by other users
+  * Update/delete projects, filters, calc metrics, or filters created by other users
   * Share a Workspace project to all users
 * Becoming a product admin within Customer Journey Analytics alone is not enough to create create, update, or delete a Connection. To create a connection to an Experience Platform dataset, you also need Experience Platform permissions. Specifically, you must be part of an **Experience Platform Product Profile** that gives you the following permissions:
   * View Schemas
@@ -57,6 +57,10 @@ To create connections, add datasets, etc., you need the following permissions in
   * View Datasets
   
 For more information on Experience Platform permissions, see [Access control in Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+
+>[!NOTE]
+>
+>You cannot permission individual metrics or dimensions in Customer Journey Analytics, like you can in traditional Adobe Analytics. Metrics and dimensions can be modified in data views and are thus subject to change in CJA, which also changes reporting retroactively.
 
 ### User access
 
@@ -67,7 +71,7 @@ Non-product admins (users) in Customer Journey Analytics cannot view Data Views 
 Several features in CJA have been renamed, when compared to traditional Adobe Analytics, to align with industry standards. Some updated terminology includes:
 
 * Segments are now known as 'Filters'.
-* Virtual Report Suites are now known as 'Views'.
+* Virtual Report Suites are now known as 'Data views'.
 * Classifications are now known as 'Lookup datasets'.
 * Customer attributes are now known as 'Profile datasets'.
 * Hit containers are now known as 'Event' containers.

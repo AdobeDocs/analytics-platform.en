@@ -2,15 +2,15 @@
 description: Create custom date ranges in Analysis Workspace, and save them as Time components.
 keywords: Analysis Workspace
 title: Create custom date ranges
-topic: Reports and analytics
+feature: Reports & Analytics Basics
 uuid: c8873d41-454d-4f22-ad1f-38cacec5a3bc
+exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 ---
-
 # Create custom date ranges
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 Create custom date ranges in Analysis Workspace, and save them as Time components.
 

@@ -1,11 +1,11 @@
 ---
 title: Import call center and web data
 description: Learn how to create a dataset that links call center and website data.
+exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 ---
-
 # Import call center and web data
 
-Customer Journey Analytics provides the valuable and robust capability to combine datasets from different sources into a single Workspace project. Use this guide to understand how your organization can stitch data from your website to data that originates from your call center.
+Customer Journey Analytics provides the valuable and robust capability to combine datasets from different sources into a single Workspace project. Use this guide to understand how your organization can combine website data with call center data. For example, you can understand what actions a customer takes, what content that they view, and what terms that they search for before they contact customer support. You can then determine the content and self-service tools to improve so customers can better resolve issues themselves without needing to call in.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ Customer Journey Analytics provides the valuable and robust capability to combin
 
 ## Import web and call center data into Platform
 
-Begin importing data into Adobe Experience Platform. See [Create a schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html) and [Ingest data](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) in the Adobe Experience Platform documentation.
+Import your data into Adobe Experience Platform. See [Create a schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) and [Ingest data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) in the Adobe Experience Platform documentation.
 
 When importing data into Platform, following these tips can help increase insight in resulting reports:
 
@@ -36,7 +36,7 @@ When importing data into Platform, following these tips can help increase insigh
 CJA requires a common identifier to generate a [combined dataset](../connections/combined-dataset.md).
 
 * If your datasets already have a common identifier on every event across both datasets, you can skip this step and proceed to create a connection.
-* If either of your datasets have a common identifier on only some events, you can stitch data together using Cross-channel Analytics. See [Cross-channel Analytics overview](/help/connections/cca/overview.md) for steps to enable CCA for these two datasets.
+* If either of your datasets have a common identifier on only some events, you can stitch data together using Cross-Channel Analytics. See [Cross-Channel Analytics overview](/help/connections/cca/overview.md) for steps to enable CCA for these two datasets.
 
 ## Create a connection in CJA
 
@@ -47,8 +47,10 @@ CJA requires a common identifier to generate a [combined dataset](../connections
 
 ## Create a data view
 
-After creating a connection, you can [Create a data view](/help/data-views/create-dataview.md) for use in Analysis Workspace.
-<!-- create calls metric using call center reason (requires data views 2.0). any column that triggers once per call -->
+After creating a connection, you can [Create a data view](/help/data-views/create-dataview.md) for use in Analysis Workspace. Helpful components include:
+
+* A page dimension with last touch and session persistence. You can connect call center metrics with the last page that a customer viewed before calling in.
+* A calls metric that uses a 'Call center reason' schema field to increase occurrences. Use [Metric deduplication](/help/data-views/component-settings/metric-deduplication.md) so it increases only once per session.
 
 <!-- Call metric - if a call column has data, increase the metric by 1 -->
 
@@ -113,6 +115,8 @@ For people who never visit the website, see how we can encourage them to self se
 
 ### Web to call, call to web
 
+### Fallout
+
 Fallout sessions - session
 
 All sessions > page views metric > calls metric
@@ -120,3 +124,20 @@ All sessions > page views metric > calls metric
 All sessions > calls metric > page views
 
 Orrr we could also use dataset ID
+=======
+step 1: all sessions
+step 2: 
+
+Orrr we could also use dataset ID
+
+### Site sections that result in a call within 30 minutes
+
+Slide 4
+
+Create a bunch of filters - facets to their business. Filters were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really filters)
+
+wanted to understand when someone interacts with a facet, whats the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
+
+use sequential filters, but you lose the ability to use attribution IQ
+
+## What to do when you've found insight -->
