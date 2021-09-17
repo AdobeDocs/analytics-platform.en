@@ -1,8 +1,8 @@
 ---
 title: Metric deduplication component settings
 description: Count only the first occurence of a metric in reports.
+exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 ---
-
 # Metric deduplication component settings
 
 Metric deduplication lets you configure a metric to only count values non-repetitively.

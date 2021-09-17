@@ -1,8 +1,8 @@
 ---
 title: Include Exclude values component settings
 description: Conditionally include or exclude a dimension item depending on its value.
+exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 ---
-
 # Include Exclude values component settings
 
 Include Exclude values lets you create rules that depend on the value of a dimension item. Values that don't meet the criteria that you set are treated in Analysis Workspace as if they never existed, though the data still exists in the underlying dataset.

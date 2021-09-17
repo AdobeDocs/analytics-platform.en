@@ -1,8 +1,8 @@
 ---
 title: No value options component settings
 description: Determine how to handle a dimension if it is empty.
+exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 ---
-
 # No Value Options component settings
 
 No value options let you to determine how Analysis Workspace handles situations where an event in a dataset contains a metric but the dimension did not contain a value. You can choose the name of this dimension item, hide it entirely, or even treat it as an actual value.

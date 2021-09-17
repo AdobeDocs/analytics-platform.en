@@ -33,7 +33,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [Cross-Channel Analytics FAQ](connections/cca/faq.md)
 + Data Views {#cja-dataviews}
   + [Data views overview](data-views/data-views.md)
-  + [Create a data view](data-views/create-dataview.md)
+  + [Create or edit a data view](data-views/create-dataview.md)
   + Component Settings {#component-settings}
     + [Component settings overview](data-views/component-settings/overview.md)
     + [Attribution](data-views/component-settings/attribution.md)

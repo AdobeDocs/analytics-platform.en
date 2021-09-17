@@ -1,8 +1,8 @@
 ---
 title: Standard component reference
 description: Details and information on all standard components that you can add to any data view.
+exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 ---
-
 # Standard component reference
 
 Most dimensions and metrics in CJA are based on schema elements from your Adobe Experience Platform dataset. However, several components are available to add to a data view regardless of the connection that you use.
