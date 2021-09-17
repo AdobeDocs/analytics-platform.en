@@ -75,7 +75,7 @@ This freeform table lets you see the top pages that contribute to call center ev
 1. Drag the dimension that holds your web page names onto a Freeform Table visualization.
 1. Replace the metric with the desired call center metric that you want to measure.
 1. Click the gear icon near the metric header. Click **[!UICONTROL Use non-default attribution model]**.
-1. Set the desired [Attribution model](/help/data-views/configure-dataviews.md#Attribution-model). For example, a Time Decay model with a half-life of 15 minutes, and a Lookback Window of Session. This attribution model gives credit to the pages leading up to the call to your call center.
+1. Set the desired [Attribution model](/help/analysis-workspace/attribution/models.md). For example, a Time Decay model with a half-life of 15 minutes, and a Lookback Window of Session. This attribution model gives credit to the pages leading up to the call to your call center.
 
 The resulting report shows the top pages that drive calls to your call center. <!-- use case behind what we use these pages for -->
 
