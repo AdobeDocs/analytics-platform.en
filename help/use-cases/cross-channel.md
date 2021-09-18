@@ -1,8 +1,8 @@
 ---
 title: Cross Channel Journey Analysis
 description: Analyze and extract insights from customer interactions across the customer journey.
+exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 ---
-
 # Cross Channel Journey Analysis
 
 Have a single consolidated view of customer behavior across various channels by unifying data from various web, mobile, and offline properties. For example, you can use this consolidated view to analyze customer interactions across desktop and mobile to understand customer behavior and extract insights to optimize digital customer experiences. You can also analyze customer interactions across channels, including digital and offline channels such as support interactions and in-store purchases to better understand and optimize the customer journey.
