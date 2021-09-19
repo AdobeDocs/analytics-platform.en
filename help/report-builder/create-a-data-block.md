@@ -8,54 +8,75 @@ type: Documentation
 
 # Create a Data Block
 
-Use the Report Builder hub to create a data block and configure data block parameters.
+A *data block* is the table of data created by a single data request. A
+Report Builder workbook can contain multiple data blocks.
 
-1.  Click **Create a data block**.
+## Configure the data block
 
-   ![image file](./assets/create_data_block.png)
+Configure the initial data block parameters for the Data block
+location, Data views, and a Date range.
 
-1.  Select a **Data Block location**, **Data view**, and a **Date range**.
+To create a data block
 
-   ![image file](./assets/create_data_block2.png)
+1.  Click **Create data block**.
 
-    ***Data Block location***
+ ![](./assets/image7.png)
 
-   The Data Block location defines where in the Excel worksheet to add your report.
+1.  Set the **Data block location**.
 
-   To specify the data block location, select a single cell in the worksheet or enter a cell address such as a3, \$a3, a\$3 or sheet1!a2. The cell specified is the upper-left corner of the data block when the data is retrieved.
+ The data block location option defines the worksheet location where report builder adds the data to your worksheet.
 
-   ***Data view***
+ To specify the data block location, select a single cell in the worksheet or enter a cell address such as a3, \\\$a3, a\\\$3 or sheet1!a2. The cell specified will be the upper-left corner of the data block when the data is retrieved.
 
-    The Data view allows you to choose a data view from a predefined list of data views or from a data view in a cell location.
+1.  Choose the **Data view**.
 
-   ***Date range***
+ The Data views option allows you to choose a data view from a drop-down menu or to reference a data view from a cell location.
 
-   The Date Range section allows you to choose a date range from a calendar control, from predefined or customized rolling date expression, or from date range located in cell values. For additional information about the data range, see \<\< link to date range section>\>.
+1.  Set the **Date range**.
 
-1. Click **Next**.
+ The Date range option allows you to choose a date range. Date ranges may be fixed or rolling. For additional information about data range options, see << link to date range section >>.
 
-1. Add Dimensions, Metrics, Filters.
+ ![](./assets/image8.png)
 
-   Use the Search field to locate a component name. You can double-click the name in the Search field to add the component to the pivot table. You can also drag and drop the component from the component list to the pivot table.
+1.  Click **Next**.
 
-   Filters can be applied to the Filters pane or dropped on top of one of the metrics.
+ ![](./assets/image9.png)
 
-   You can reorder components within each Table pane using drag and drop to move a component.
+The Dimensions, Metrics, and Filters tabs are displayed above the Table builder pane.
 
-   ![image file](./assets/create_data_block3.png)
+## Build the data block
 
-1. Arrange the items in the pivot table to customize the layout of your data block.
+After you configure the initial data block parameters, select report
+components, and then customize the layout to build the data block.
 
-   The Report Builder pivot table feature allows you to drag and drop components to group them in a meaningful way.
+1.  Add Dimensions, Metrics, and Filters.
 
-1. Click **Finish**.
+ Scroll the component lists or use the **search** field to locate components. Drag and drop components to the Table pane or double-click a component name in the list to automatically add the component to the Table pane.
 
-   A processing message is displayed while the analytics data is retrieved.
+ Double-click a component to add it to a default section of the table.
 
-   ![image file](./assets/create_data_block4.png)
+ - Dimension components are added to the Row section or to the Column\
+    section if you have a dimension already in the columns.
 
-   The Data Block is retrieved and displayed in the spreadsheet.
+ - Date components are added to the Column section.
 
-   The Report Builder Commands and Quick Edit panels are updated to reflect the current selected cells.
+ - Filter components are added to the Filters section.
 
-   ![image file](./assets/create_data_block5.png)
+1.  Arrange the items in the Table pane to customize the layout of your
+    data block.
+
+ Drag and drop components in the Table pane to reorder components or right-click a component name and select from the options menu.
+
+ When you add components to the table, a preview of the data block is displayed at the Data block location in the worksheet. The layout of the data block preview automatically updates as you add, move, or remove items in the table.
+
+ ![](./assets/image10.png)
+
+3.  Click **Finish**.
+
+ A processing message is displayed while the analytics data is retrieved.
+
+ ![](./assets/image11.png)
+
+ Report Builder retrieves the data and displays the completed data  block in the worksheet.
+
+ ![](./assets/image12.png)

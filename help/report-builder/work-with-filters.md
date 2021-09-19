@@ -9,92 +9,263 @@ type: Documentation
 
 # Work with Filters in Report Builder
 
-You can add filters when you use the Create new data block option or when you use the Quick Edit panel. For information about adding filters when you create a new data block, see [Create a Data Block](./create-a-data-block.md).
+You can apply Filters when you create a new data block or when you
+select the **Edit data block** option from the COMMANDS panel.
 
-After a data block is created, you can use the Quick Edit panel to modify, remove, or replace filters. When you use the Quick Edit panel, you can also substitue filters. Select one or several data blocks in the worksheet to substitute or modify filters.
+### Apply filters to a data block
 
-When you select a range of cells in the spreadsheet, the Quick Edit panel Filter link is updated with the list of filters present in the data blocks that are included in the selection.
+To apply a filter to the entire data block, double-click a filter or
+drag and drop filters from the components list into the Filters section
+of the Table.
 
-## Modify filters applied to selected data blocks
+### Apply filters to individual metrics
 
-Click the filter link to launch the Quick Edit - filter Panel.
+To apply filters to individual metrics, drag and drop a filter onto a metric in the table. You can also click the **...** icon to the right of a metric in the Table pane and then select **Filter metric**. To view applied filters, hover over or select a metric in the Table pane. Metrics with applied filters display a filter icon.
 
-![image file](./assets/image22.png)
+![](./assets/image24.png)
 
- \<\< Need a current shot showing data with both hub screen shots as shown below \>\>*
+## Quick edit filters
 
-![](./assets/image23.png)
+You can use the Quick edit panel to add, remove, or replace filters for existing data blocks.
 
-Use the Quick Edit Filter panel to complete the following tasks:
+When you select a range of cells in the spreadsheet, the **Filters**
+link in the Quick edit panel displays a summary list of the filters used by the data blocks in that selection.
 
-- Add or remove a filter
-- Replace a filter
+To edit filters in the Quick edit panel
 
-## Add or Remove a Filter from a Data Block
+1.  Select a range of cells from one or multiple data blocks.
 
-You can add or remove filters to selected data blocks using the Quick Edit mode.
+ ![](./assets/image25.png)
 
-1.  Select a range of cells that intersects several data blocks.
+1.  Click the Filters link to launch the Quick edit - Filters panel.
 
- ![image file](./assets/image24.png)
+ ![](./assets/image26.png)
 
-1. Click Edit data block.
+### Add or remove a filter
 
- The filter Panel is displayed.
+1.  Select the **Add/Remove** tab in the Quick edit-filters panel.
 
- ![image file](./assets/filters.png)
+ All filters applied to the selected data blocks are listed in the Quick Edit-filters panel. Filters applied to all data blocks in the selection are listed under the **Applied to all selected data blocks** heading. Filters applied to some but not all data blocks are listed under the **Applied to 1 or more selected data blocks** heading.
 
- ![image file](./assets/image25new.png)
+ When multiple filters are present in the selected data blocks, you can search for specific filters using the **Filter list** search bar.
 
-1. Search for the filters that you want to add or remove.
+1.  Add filters by selecting filters from the **Add filter** drop down
+    menu.
 
- You can use the Add/Remove search field to search for a specific filter or enter a search term to conduct a broader search. The list of searchable filters is all filters accessible to your user account or filters that are present in one or more data blocks.
+ The list of searchable filters includes all filters accessible to the data views that are present in one or more of the selected data blocks as well as all the filters that are available globally in the organization.
 
- You can conduct the following searches:
+ Adding a filter applies the filter to all data blocks in the selection.
 
-- Search All the filters that are present in all the data blocks.
-- Search for filters in one or more data blocks.
+1.  To remove filters, click the delete icon **x** to the right of filters in the **Filters applied** list.
 
- ![image file](./assets/image26new.png)
+1.  Click **Apply** to save changes and return to the hub panel.
 
- In the screenshot above, \"USA\", \"Canada\" **and** \"Brazil\" filters were **all present** in **each** of the data blocks listed in the Quick edit mode.
+Report Builder displays a  message to confirm the applied filter changes.
 
- In the screenshot above, Mexico and Chile are present in some of the data blocks but they are not common all data blocks. Mexico and Chile maybe or may not be present in the same data block.
+### Replace a filter
 
-1. Verify the list of data blocks where the filter will be added to.
+1.  Select the **Replace** tab in the Quick edit-filters panel.
 
-1. To remove Click the delete icon \< x > to the right of a data block name to remove the data block.
+1.  Use the **Search list** search field to locate specific filters.
 
-1. Click Apply to add or remove one or more filters to either list.
+1.  Choose one or more filters that you want to replace.
 
-You can apply your changes when at least one filter is added to all the data blocks or at least one filter is removed from either list.
+1.  Search for one or more filters in the Replace with field.
 
-Click Cancel to revert and cancel out of adding or removing any selected filters.
+ Selecting a filter adds it to the **Replace with**... list.
 
-## Replace a filter
+1.  Click **Apply**.
 
-Use the Replace tab panel to replace one filter with another filter.
+ Report Builder updates the list of filters to reflect the replacement.
 
-1.  Click the Replace tab.
+## Filter Dimensions
 
-   ![image file](./assets/image27new.png)
+By default, each dimension item in the table returns the top 10 items
+for that dimension.
 
-1. Choose one or more filters that you want to replace. If multiple   filters are selected, all filters must be present in a given data block for the replacement to occur.
+To change the dimension items returned for each dimension
 
-   ![image file](./assets/image28new.png)
+1.  Select a data block and click Edit data block in the COMMANDS panel.
 
-1. Search for one or more filters that will replace the selected filters.
+1.  Click Next to display the Dimensions tab.
 
-   ![image file](./assets/image29new.png)
+1.  Click the **...** icon next to a component name in the table.
 
-   The filter is added to the Replace with... list.
+ ![](./assets/image27.png)
 
-   ![image file](./assets/image30new.png)
+1.  Select **Filter dimension** in the pop-up menu to display the
+    **Filter dimension** pane.
 
- In the screenshot above, \"Exclude BOT Traffic\", \"Mobile\" **and** \"North America\" filters were **all present** in **each** of the data blocks being edited.
+1.  Select **Most popular** or **Specific**.
 
-1. Click apply.
+ ![](./assets/image28.png)
 
-   The list of filters is updated to reflect the substitution/replacement.
+1.  Select appropriate options based on the filter type chosen.
 
-   ![image file](./assets/image31new.png)
+1.  Click **Apply** to add the filter.
+
+Report Builder displays a notification to confirm the added filter.
+
+To display applied filters, hover over a dimension. Dimensions with applied filters display a filter icon
+to the right of the Dimension name.
+
+## Filter type
+
+There are two ways to filter dimension items: Most popular and Specific.
+
+### Most popular
+
+The Most popular option allows you to dynamically filter dimension items
+based on metric values. Most popular filtering returns the highest
+ranked dimension items based on metric values. By default, the first 10
+dimensions items are listed, sorted by the first metric added to the
+data block.
+
+ ![image files](./assets/image29.png)
+
+###  Specific
+
+The Specific option allows you to create a fixed list of dimension items for each dimension.
+
+### Change the filter and sort order
+
+An arrow appears next to the metric used to filter and sort the data
+block. The direction of the arrow indicates whether the metric is sorted
+greatest to least or least to greatest.
+
+To change the sort direction, click the arrow next to the metric. 
+
+To change the metric used to filter and sort the data block,
+
+1. Hover over the desired metric component in the Table builder to
+display additional options.
+
+2. Click the arrow on the preferred metric. 
+
+ ![](./assets/image30.png)
+
+### Page and Rows options
+
+Use the **Page** and **Rows** fields to divide data into sequential groups or pages. This allows you to pull ranked row values other than the top-most values into your report. This feature is especially useful for pulling data beyond the 50,000 row limit.
+
+#### Page and Rows defaults
+
+ -   Page = 1
+ -   Rows = 10
+
+The Page and Rows default settings identify that each page has 10 rows
+of data. Page 1 returns the top 10 items, page 2 returns the next 10
+items, and so on.
+
+The table below lists examples of page and row values and the resulting
+output.
+
+| Page | Row    | Output               |
+|------|--------|----------------------|
+| 1    | 10     | Top 10 items         |
+| 2    | 10     | Items 11-20          |
+| 1    | 100    | Top 100 items        |
+| 2    | 100    | Items 101-200        |
+| 2    | 50,000 | Items 50,001-100,000 |
+
+#### Minimum and maximum values
+
+ -  Starting page: Min = 1, Max: 50 million
+ -  Number of rows: Min = 1, Max: 50,000
+
+### Include "No value"
+
+In Customer Journey Analytics, some dimensions collect a "no value"
+entry. This filter allows you to exclude these values from reports. For
+example, you can create a classification such as the Product Name
+classification based on the Product SKU key. If a specific product SKU
+has not been set up with its specific Product Name classification, its
+Product Name value is set to "no value".
+
+Include "**No value**" is selected by default. Deselect this option to
+exclude entries with no value.
+
+### Filter by Criteria
+
+You can filter dimension items based on whether all criteria are met or
+if any criteria are met.
+
+To set filtering criteria
+
+1.  Select an operator from the drop-down list.
+
+ ![](./assets/image31.png)
+
+1.  Enter a value into the search field.
+
+1.  Click Add row to confirm the selection and add another criteria
+    item.
+
+1.  Click the delete icon to remove a criteria item.
+
+You can include up to 10 criteria items.
+
+## Specific filtering
+
+Use the **Specific** filtering type to specify the exact dimension items
+to include in your filter. You can select items from a list or from a
+range of cells.
+
+ ![](./assets/image32.png)
+
+### From list
+
+1.  Select the **From list** option to search for and select dimension
+ items.
+
+ When you select the **From list** option, the list is populated with dimension items with the most events first.
+
+ ![](./assets/image33.png)
+
+ The **Available items** list is ordered from dimension items with the most events to those with the least.
+
+1.  Enter a search term in the **Add item** field to search the list.
+
+1.  To search for an item not included in the last 90 days of data,
+    click **Show items for the last 6 months** to extend the search.
+
+ ![](./assets/image34.png)
+
+ After data from the past six months loads, Report Builder updates the link to **Show items for last 18 months**.
+
+1.  Select a dimension item.
+
+ Selected dimension items are automatically added to the **Selected items** list.
+
+ ![](./assets/image35.png)
+
+ To delete an item from the list, click the delete icon to remove the  item from the list.
+
+ To move an item in the list, drag and drop the item or click ... to display the move menu.
+
+ ![](./assets/image36.png)
+
+1.  Click **Apply**
+
+### From range of cells
+
+Select the **From range of cells** option to choose a range of cell that
+contain the list of dimensions items to match.
+
+ ![](./assets/image37.png)
+
+When you select a range of cells, consider the following restrictions:
+
+ - The range must have at least one cell.
+ - The range can't have more than 50,000 cells.
+ - The range must be in a single uninterrupted row, or column.
+
+Your selection can contain empty cells or cells with values that don't
+match with a specific dimension item.
+
+### From the Dimensions tab in the Table builder
+
+From the **Dimensions** tab, click the chevron icon next to a dimension
+name to view the list of dimension items. You can drag and drop items
+onto the **Table** or double-click an item name to add it to the
+**Table** builder.

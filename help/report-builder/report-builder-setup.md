@@ -7,92 +7,123 @@ type: Documentation
 
 ---
 
-# Report Builder Set Up
 
 You can quickly access Report Builder using the Excel Add-in menu.
 
 ## Requirements
 
-Report Builder for Customer Journey Analytics is supported on the following operating systems and web browsers.
+Report Builder for Customer Journey Analytics is supported on the
+following operating systems and web browsers.
 
 ### macOS
 
-- macOS Version 10.x or later
+ - macOS Version 10.x or later
 
 ### Windows
 
-- Windows 10
+ - Windows 10, version 1903 or later
+
+For Windows, version 1903, you must install Microsoft Edge Webview2. To
+install the controller:
+
+1.  Go to <http://aka.ms/webview2installer>.
+
+1.  Select and download the Evergreen Standalone Installer.
+
+1.  Follow the installation prompts.
 
 ### Browsers
 
-- Chrome Version \_\_\_
-- Firefox Version \_\_\_
-- Safari Version \_\_\_\_
+ - Chrome Version ___
 
-## Excel Add-in
+ - Firefox Version ___
 
-You must install the Excel add-in to use Report Builder for Customer Journey Analytics. You can obtain the Report Builder add-in for Excel at the following sites. Once you install the add-in, you can access Report Builder from within an open Excel workbook.
+ - Safari Version ___
 
-### Download and install the Report Builder add-in
+### Excel
 
-**\<\< NEED to revisit this workflow when the process is established
-\>\>**
+ - Excel Version ___
 
-1.  Download the add-in for your system and save the manifest.xml file   to a local directory.
+## Report Builder Excel Add-in
 
-- macOS \<\< Add-in Name >\> the App Store
+You must install the Report Builder Excel Add-in to use Report Builder
+for Customer Journey Analytics. Once you install the Report Builder
+Excel Add-in, you can access Report Builder from within an open Excel
+workbook.
 
-- Windows \<\<Add-in Name>\> the Microsoft AppSource
+### Download and install the Report Builder Add-in
 
-- Browser \<\<Add-in Name>\> \_\_\_\_\_\_\_\_\_
+To download and install the Report Builder Add-in
 
-1.  Launch Excel.
+1.  Launch Excel and open a new workbook.
 
-1.  From the Insert menu, select Office Add-ins.
+1.  Select Insert > Get Add-ins.
 
-1.  Follow the instructions to upload and install the manifest.xml file.
+1.  In the Office Add-ins dialog, select the Store tab.
 
-After installing the Report Builder add-in, the Report Builder icon is displayed in the Excel ribbon.
+1.  Search for "Report Builder" and click Add.
 
-![image file](./assets/image1.png){ width=50% height=50% }
+1.  In the License terms and privacy policy dialog box, click Continue.
+
+**If the Store tab isn't displayed**
+
+1.  In Excel, select File > Account >Manage Settings.
+
+1.  Check the box next to "Enable optional connected experiences"
+
+1.  Restart Excel.
+
+**If your organization blocks access to the Microsoft Store**
+
+Reach out to your IT or security team to request approval for the Report Builder Add-in. After approval is granted, in the Office Add-ins dialog, select the Admin Managed tab.
+
+![](./assets/image1.png)
+
+After installing the Report Builder Add-in, the Report Builder icon is
+displayed in the Excel ribbon under the Home tab.
+
+![](./assets/image2.png)
 
 ## Log in to Report Builder
 
-After you install the Report Builder for Excel add-in for your operating platform or browser, follow these steps to log in to Report Builder.
+After you install the Report Builder for Excel Add-in for your operating
+platform or browser, follow these steps to log in to Report Builder.
 
-1. Open an Excel workbook.
+1.  Open an Excel workbook.
 
-1. Click the Report Builder icon to launch Report Builder.
+1.  Click the Report Builder icon to launch Report Builder.
 
-1. From the Adobe Report Builder toolbar, click **Login**.
+1.  From the Adobe Report Builder toolbar, click **Login**.
 
-   ![image file](./assets/image3.png)
+ ![](./assets/image3.png)
 
-1. Enter your Adobe Experience ID account information. Your account information should match your Customer Journey Analytics credentials.
+1.  Enter your Adobe Experience ID account information. Your account
+    information should match your Customer Journey Analytics
+    credentials.
 
- When you first log in, you are logged in to the default organization assigned to your profile. For information about changing to another organization, see [Switch organizations](#switch-organizations).
+ ![](./assets/image4.png)
 
-   ![login in](./assets/login1.png)
+### Switch organizations
 
+When you first log in, you are logged in to the default organization
+assigned to your profile.
 
-### Sign out
-
-You can sign out from Report Builder from the user profile pop-up.
-
-1.  Save changes to any open workbooks.
-
-2.  Click the avatar icon to display your user profile.
-
-   ![image file](./assets/sign_out.png)
-
-1.  Click Sign Out.
-
-### Switch organizations {#switch-organizations}
-
-After you log in to Report Builder, you can switch between organizations.
+To switch organizations:
 
 1.  Click the name of the organization that is displayed when you log in.
 
- ![image file](./assets/switch_organizations.png)
-
 1.  Select an organization from the list of available organizations. Only organizations that you have access to are listed.
+
+ ![](./assets/image5.png)
+
+### Sign out
+
+You can sign out from Report Builder from the user profile.
+
+1.  Save changes to any open workbooks.
+
+1.  Click the avatar icon to display your user profile.
+
+ ![](./assets/image6.png)
+
+1.  Click **Sign Out**.

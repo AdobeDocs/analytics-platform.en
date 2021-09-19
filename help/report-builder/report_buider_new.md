@@ -29,15 +29,16 @@ the following platforms:
  - Windows
  - Web browsers
 
-**NOTE**
 
-This documentation is for Report Builder for Customer Journey Analytics.
-For information about Report Builder for Analytics on Windows,
-see [Report Builder for Adobe
-Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html?lang=en).
+ >[!NOTE]
+ >
+ >This documentation is for Report Builder for Customer Journey Analytics.
+ For information about Report Builder for Analytics on Windows,
+ see [Report Builder for Adobe
+ Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html?lang=en).
 
-You can download Report Builder for Customer Journey Analytics from the
-[Microsoft Store](https://www.microsoft.com/en-us/store/apps/windows)
+ You can download Report Builder for Customer Journey Analytics from the
+ [Microsoft Store](https://www.microsoft.com/en-us/store/apps/windows).
 
 ## Report Builder Set Up
 

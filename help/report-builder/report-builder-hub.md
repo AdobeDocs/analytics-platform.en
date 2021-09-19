@@ -8,118 +8,63 @@ type: Documentation
 
 # Report Builder Hub
 
-The Report Builder hub is shown when you successfully log in to Report
-Builder. The hub is displayed on the right-side panel of the Excel
-window.
+Use the Report Builder hub to create, update, or delete data blocks.
 
-**\<\< NEED: screen shot showing data \>\>**
+The Report Builder hub contains the COMMANDS and QUICK EDIT panels.
 
-![image file](./assets/reportbuilder_hub1.png)
+![](./assets/image13.png)
 
-Use the Report Builder hub to create, update, or delete data blocks. 
+## COMMANDS panel
 
-## Commands panel
+Use the COMMANDS panel to access commands that are compatible with the
+selected cells or a previous action.
 
-After you create a data block, the Report Builder hub displays the Command panel and the Quick Edit panel. The Commands panel is used to access commands that are compatible with the selected cells or the previous action.
+![](./assets/image14.png)
 
-You can select several distinct cell ranges by using the Ctrl key
-(Windows) or the Command key (macOS) as you click and drag. The changes
-made using the Command panel apply to all the data blocks that are
-included in all the selected ranges.
+### Commands
 
-**\<\< NEED -- screenshot that shows part of the worksheet with one data
-block in the cell selection \>\>**
+| Commands displayed      | Available when…   | Purpose          |
+|------|------------------|--------|
+| Create data block | One or more cells is selected in the workbook. | Used to create a data block |
+| Edit data block | The selected cell or cells range is part of one data block only. | Used to edit a data block                       |
+| Refresh data block      | The selection contains at least one data block. The command will refresh only the data blocks in the selection. | Used to refresh one or more data blocks         |
+| Refresh all data blocks | The workbook contains one or more data blocks. | Used to refresh ALL data blocks in the workbook |
+| Copy data block   | The selected cell or cell range is part of one or more data blocks. | Used to copy a data block   |
+| Delete data block | The selected cell or cells range is part of one data block only. | Used to delete a data block |
 
-![image file](./assets/reportbuilder_hub1.png)
+## QUICK EDIT panel
 
-Commands are displayed based on the content of the selected cells.
+When you select one or more data blocks in a spreadsheet, Report Builder
+displays the QUICK EDIT panel. You can use the QUICK EDIT panel to
+change parameters in a single data block or to change parameters in
+multiple data blocks at the same time.
 
+![](./assets/image15.png)
 
-| Commands displayed      | Available when… | Purpose |
-| ------------------ | ------------------ | ------------------ |
-| Create data block  | One or more cells is selected in the workbook. | Used to create a data block |
-| Edit data block | The selected cell or cells range is part of one data block only. | Used to edit a data block |
-| Refresh data block | The selection contains at least one datablock. The command will refresh only the datablocks in the selection. | Used to refresh one or more data blocks |
-| Refresh all data blocks | The workbook contains one or more datablocks. | Used to refresh ALL datablocks in the workbook. |
-| Copy data block | The selected cell or cells range is part of one or more datablocks.| Used to copy a data block |
-| Paste data blocks | The previous action taken in Report Builder was Cut Data Block(s) or Copy Data Block(s) AND if the selected location has enough cell-area to paste the copied data blocks without overlapping with pre-existing data blocks. | Used to paste a copied or cut data block |
+The changes made using the Quick Edit sections apply to all data blocks
+that are present in the selected ranges.
 
-## Quick Edit panel
+### Data views
 
-When you select one or more data blocks in a spreadsheet, the Quick Edit panel is displayed. You can use the Quick Edit panel to change parameters across all the selected data blocks.
+Data blocks pull data from a selected Data view. If multiple data blocks
+are selected in a worksheet and they don't pull data from the same data
+view, the **Data views** link displays *Multiple*.
 
-![](./assets/reportbuilder_hub1.png)
+When you change the data view, all data blocks in the selection adopt
+the new data view. Components in the data block are matched to the new
+data view based on ID, for example, matching ```evars```). If a component isn't found in a data block, a warning message is displayed and the component is removed from the data block.
 
-You can select several distinct cell ranges by using the Ctrl key (Windows) or the Command key (macOS) as you click and drag. The changes made using the Quick Edit sections apply to all data blocks that are present in the selected ranges. 
+To change the data view, select a new data view from the drop-down menu.
 
-### Data View
+![](./assets/image16.png)
 
-If multiple data blocks are selected and they are not assigned to the same data view, the Data View link displays *Multiple*.
+### Date range
 
-When you change the data view, all data blocks in the selection adopt the new data view.
-
-You can choose a data view from a list of available data views.
-
-![](./assets/reportbuilder_hub2.png)
-
-The list displayed depends on whether you are creating a new data block, editing an existing data block, or editing multiple data blocks.
-
-### Date Range
-
-If multiple data blocks are selected and they are not assigned to the same date range, the Date Range link displays *Multiple*.
+**Data range** shows the date range for the selected data blocks. If
+multiple data blocks are selected with multiple date ranges, the **Data range** link displays *Multiple*.
 
 ### Filters
 
-The Filters link displays a summary list of the filters used by the selected data blocks.
-![](./assets/image17.png)
-
-If multiple data blocks are selected and they are not assigned to the same filters, the Filters link displays *Multiple*.
-
-## Components
-
-When you create a new data block or edit an existing data block, the Components pane is displayed.
-
-This Components tabs allows you to choose elements to include in the data block.
-
-- Dimensions
-- Metrics
-- Filters
-
-\<\< crop or get new screen shot with or w/o data \>\>
-
-![](./assets/reportbuilder_hub3.png)
-
-When you are editing a data block, if you make changes to a component and then switch to another component without saving the change, you're prompted to save or discard the changes.
-
-![image file](./assets/image19.png){ width=50% height=50% }
-
-## Pivot Table
-
-Use the Pivot Table to configure how the data block elements are organized and displayed in your report.
-
-![image file](./assets/image20.png)
-
-The pivot table allows you to easily organize data in a meaningful way:
-
-- Drag components to the pivot tables
-- Display components in rows and columns
-- Reuse the same metric multiple times
-- Move components to order them within pivot table lists
-
-Double click an item in the Components pane to add it to the
-Pivot table at its preferred section.
-
-- Dimension components are added to the Row section or to the Column
-  section if you have a dimension already in the columns.
-- Date components are added to the Column section.
-- Filter components are added to the Filters section.
-
-## Data Block Output
-
-When you add, move, or remove items in the Pivot Table, the data block is pasted in the spreadsheet at the selected Data Block anchor location.
-
-The list of available metrics, dimensions, and filters is dependent on the selected data view. Each time a new data view is selected, the Component tabs are updated to reflect the new list of available items.
-
-\<\< need new screen shot with data \>\>
-
-![image file](./assets/image21.png)
+The **Filters** link displays a summary list of the filters used by the
+selected data blocks. If multiple data blocks are selected with multiple
+filters applied, the **Filters** link displays *Multiple*.
