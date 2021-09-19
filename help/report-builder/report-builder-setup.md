@@ -7,6 +7,7 @@ type: Documentation
 
 ---
 
+# Report Builder Set Up
 
 You can quickly access Report Builder using the Excel Add-in menu.
 
@@ -17,11 +18,11 @@ following operating systems and web browsers.
 
 ### macOS
 
- - macOS Version 10.x or later
+- macOS Version 10.x or later
 
 ### Windows
 
- - Windows 10, version 1903 or later
+- Windows 10, version 1903 or later
 
 For Windows, version 1903, you must install Microsoft Edge Webview2. To
 install the controller:
@@ -34,15 +35,13 @@ install the controller:
 
 ### Browsers
 
- - Chrome Version ___
-
- - Firefox Version ___
-
- - Safari Version ___
+- Chrome Version ___
+- Firefox Version ___
+- Safari Version ___
 
 ### Excel
 
- - Excel Version ___
+- Excel Version ___
 
 ## Report Builder Excel Add-in
 

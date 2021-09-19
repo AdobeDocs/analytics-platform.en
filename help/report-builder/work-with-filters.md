@@ -12,13 +12,13 @@ type: Documentation
 You can apply Filters when you create a new data block or when you
 select the **Edit data block** option from the COMMANDS panel.
 
-### Apply filters to a data block
+## Apply filters to a data block
 
 To apply a filter to the entire data block, double-click a filter or
 drag and drop filters from the components list into the Filters section
 of the Table.
 
-### Apply filters to individual metrics
+## Apply filters to individual metrics
 
 To apply filters to individual metrics, drag and drop a filter onto a metric in the table. You can also click the **...** icon to the right of a metric in the Table pane and then select **Filter metric**. To view applied filters, hover over or select a metric in the Table pane. Metrics with applied filters display a filter icon.
 
@@ -123,7 +123,7 @@ data block.
 
  ![image files](./assets/image29.png)
 
-###  Specific
+### Specific
 
 The Specific option allows you to create a fixed list of dimension items for each dimension.
 
@@ -150,8 +150,8 @@ Use the **Page** and **Rows** fields to divide data into sequential groups or pa
 
 #### Page and Rows defaults
 
- -   Page = 1
- -   Rows = 10
+- Page = 1
+- Rows = 10
 
 The Page and Rows default settings identify that each page has 10 rows
 of data. Page 1 returns the top 10 items, page 2 returns the next 10
@@ -170,8 +170,8 @@ output.
 
 #### Minimum and maximum values
 
- -  Starting page: Min = 1, Max: 50 million
- -  Number of rows: Min = 1, Max: 50,000
+- Starting page: Min = 1, Max: 50 million
+- Number of rows: Min = 1, Max: 50,000
 
 ### Include "No value"
 
@@ -256,9 +256,9 @@ contain the list of dimensions items to match.
 
 When you select a range of cells, consider the following restrictions:
 
- - The range must have at least one cell.
- - The range can't have more than 50,000 cells.
- - The range must be in a single uninterrupted row, or column.
+- The range must have at least one cell.
+- The range can't have more than 50,000 cells.
+- The range must be in a single uninterrupted row, or column.
 
 Your selection can contain empty cells or cells with values that don't
 match with a specific dimension item.

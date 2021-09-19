@@ -14,26 +14,25 @@ block or use the QUICK EDIT panel.
 
 Use the following options to change a date range for a data block.
 
-  -   **Calendar**
+**Calendar**
 
  The Calendar allows you to create static or rolling
     dates using the following options:
 
-   -   Date range field
-   -   Calendar
-   -   Preset drop-down menu
-   -   Rolling date mode
-   -   Customize expressions
+- Date range field
+- Calendar
+- Preset drop-down menu
+- Rolling date mode
+- Customize expressions
 
 
-  -   **From cell**
+**From cell**
 
-   The From cell option allows you to reference dates
-    entered in worksheet cells.
+The From cell option allows you to reference dates entered in worksheet cells.
 
 You have the option to exclude today on any selected date range.
 
-![](./assets/image17.png)
+ ![](./assets/image17.png)
 
 ## Use the Calendar
 
@@ -115,7 +114,7 @@ building a custom expression or you can enter an arithmetic formula.
 
 1.  Enter a custom expression.
 
- For a sample list of custom expressions, see [link to expression list tables]()
+ For a sample list of custom expressions, see [Date expressions](url).
 
 1.  Use the date preview to verify the resulting date range is the
     desired range.
@@ -187,30 +186,21 @@ expressions.
 
 The following list describe valid date range formats.
 
- -   The start and end dates must be in the following format: YYYY-MM-DD
+- The start and end dates must be in the following format: YYYY-MM-DD
 
- -   The start date must be earlier to or equal to the end date. Both
-    dates can be set to the future.
+- The start date must be earlier to or equal to the end date. Both dates can be set to the future.
 
- -   When using rolling dates, the start date must be today or in the
-    past. It must be in the past if **Exclude today** is checked.
+- When using rolling dates, the start date must be today or in the past. It must be in the past if **Exclude today** is checked.
 
- -   You can create a static date range set for the future. For example,
-    you may need to set a future date for a marketing campaign launch
-    next week. This option creates a workbook monitoring for a campaign
-    ahead of time.
+- You can create a static date range set for the future. For example, you may need to set a future date for a marketing campaign launch next week. This option creates a workbook monitoring for a campaign ahead of time.
 
 ## Change the date range
 
-You can edit the date range of an existing data block by selecting Edit
-data block in the COMMANDS panel or by selecting the date range link in
-the QUICK EDIT panel.
+You can edit the date range of an existing data block by selecting Edit data block in the COMMANDS panel or by selecting the date range link in the QUICK EDIT panel.
 
-**Edit data block** — Allows you to edit multiple data block
-parameters, including date range, for a single data block.
+**Edit data block** — Allows you to edit multiple data block parameters, including date range, for a single data block.
 
-**Quick Edit: Date range** — Allows you to edit the date range of one
-or more data blocks.
+**Quick Edit: Date range** — Allows you to edit the date range of one or more data blocks.
 
 To edit the date range from the QUICK EDIT panel
 

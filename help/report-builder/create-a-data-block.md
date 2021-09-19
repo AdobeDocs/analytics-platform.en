@@ -55,12 +55,12 @@ components, and then customize the layout to build the data block.
 
  Double-click a component to add it to a default section of the table.
 
- - Dimension components are added to the Row section or to the Column\
+- Dimension components are added to the Row section or to the Column\
     section if you have a dimension already in the columns.
 
- - Date components are added to the Column section.
+- Date components are added to the Column section.
 
- - Filter components are added to the Filters section.
+- Filter components are added to the Filters section.
 
 1.  Arrange the items in the Table pane to customize the layout of your
     data block.
@@ -71,7 +71,7 @@ components, and then customize the layout to build the data block.
 
  ![](./assets/image10.png)
 
-3.  Click **Finish**.
+1.  Click **Finish**.
 
  A processing message is displayed while the analytics data is retrieved.
 
