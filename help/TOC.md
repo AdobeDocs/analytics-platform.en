@@ -33,9 +33,19 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [Cross-Channel Analytics FAQ](connections/cca/faq.md)
 + Data Views {#cja-dataviews}
   + [Data views overview](data-views/data-views.md)
-  + [Create a data view](data-views/create-dataview.md)
+  + [Create or edit a data view](data-views/create-dataview.md)
+  + Component Settings {#component-settings}
+    + [Component settings overview](data-views/component-settings/overview.md)
+    + [Attribution](data-views/component-settings/attribution.md)
+    + [Behavior](data-views/component-settings/behavior.md)
+    + [Format](data-views/component-settings/format.md)
+    + [Include exclude values](data-views/component-settings/include-exclude-values.md)
+    + [Metric deduplication](data-views/component-settings/metric-deduplication.md)
+    + [No value options](data-views/component-settings/no-value-options.md)
+    + [Persistence](data-views/component-settings/persistence.md)
+    + [Value bucketing](data-views/component-settings/value-bucketing.md)
+  + [Standard component reference](data-views/component-reference.md)
   + [Data views use cases](data-views/data-views-usecases.md)
-  + [Persistence](data-views/persistence.md)
 + Workspace projects {#cja-workspace}
   + [Analysis Workspace overview](analysis-workspace/home.md)
   + [Perform basic analysis](analysis-workspace/perform-basic-analysis.md)
@@ -89,7 +99,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [Blank panel](analysis-workspace/c-panels/blank-panel.md)
     + [Freeform panel](analysis-workspace/c-panels/freeform-panel.md)
     + [Quick Insights panel](analysis-workspace/c-panels/quickinsight.md)
-  + Curate or Share projects {#curate-share}
+  + Curate, Share and Schedule projects {#curate-share}
     + [Share menu](analysis-workspace/curate-share/send-schedule-files.md)
     + [Curate projects](analysis-workspace/curate-share/curate.md)
     + [Share projects](analysis-workspace/curate-share/share-projects.md)
@@ -101,6 +111,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [Attribution overview](analysis-workspace/attribution/overview.md)
     + [Attribution models and lookback windows](analysis-workspace/attribution/models.md)
     + [Algorithmic attribution](analysis-workspace/attribution/algorithmic.md)
+    + [Attribution best practices](analysis-workspace/attribution/best-practices.md)
     + [FAQ](analysis-workspace/attribution/faq.md)
   + Virtual Analyst {#virtual-analyst}
     + [Virtual Analyst overview](analysis-workspace/virtual-analyst/overview.md)
@@ -144,7 +155,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [Manage calculated metrics](components/calc-metrics/manage.md)
     + [Basic functions](components/calc-metrics/cm-functions.md)
     + [Advanced functions](components/calc-metrics/cm-adv-functions.md)
-  + Date ranges {cja-date-ranges}
+  + Date ranges {#cja-date-ranges}
     + [Date ranges overview](components/date-ranges/overview.md)
     + [Create a date range](components/date-ranges/create.md)
     + [Manage date ranges](components/date-ranges/manage.md)
@@ -155,6 +166,7 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
   + [Use arrays of objects](use-cases/object-arrays.md)
   + [(B2B) Add account-level data as a lookup dataset](use-cases/b2b.md)
+  + [Analyze data across channels](use-cases/cross-channel.md)
   + [Import call center and web data](use-cases/call-center.md)
   + [Data ingestion use cases](use-cases/data-ingestion.md)
   + [Use Marketing channel dimensions](use-cases/marketing-channels.md)
