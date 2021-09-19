@@ -143,11 +143,9 @@ assigned to your profile.
 
 To switch organizations:
 
-1.  Click the name of the organization that is displayed when you log
-    in.
+1.  Click the name of the organization that is displayed when you log in.
 
-1.  Select an organization from the list of available organizations.
-    Only organizations that you have access to are listed.
+1.  Select an organization from the list of available organizations. Only organizations that you have access to are listed.
 
  ![](./assets/image5.png)
 
@@ -828,13 +826,13 @@ Adobe Analytics languages are available.
 
 To select the language used in the Report Builder UI
 
-1.  Click Settings.
+ 1.  Click Settings.
 
-2.  Select a language from the **Language** drop down menu.
+ 1.  Select a language from the **Language** drop down menu.
 
- ![](./assets/image39.png)
+  ![](./assets/image39.png)
 
-3.  Click **Apply.**
+ 1.  Click **Apply.**
 
 ## Troubleshooting
 
