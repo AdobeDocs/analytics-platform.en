@@ -135,7 +135,6 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
   + [Report Builder Hub](report-builder/report-builder-hub.md)
   + [Work with Filters](report-builder/work-with-filters.md)
   + [Select a Data Range](report-builder/select-date-range.md)
-  + [Dimension Search](report-builder/dimension-search.md)
   + [Report Builder Settings](report-builder/report-builder-settings.md)
 + Components {#cja-components}
   + [Components overview](components/overview.md)
