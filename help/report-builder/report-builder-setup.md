@@ -2,7 +2,7 @@
 title: How to set up Report Builder in Customer Journey Analytics
 description: Describes how to set up Report Builder in CJA
 role: Data Engineer, Data Architect, Admin, User
-feature-set: Report Builder
+feature: Report Builder
 type: Documentation
 
 ---

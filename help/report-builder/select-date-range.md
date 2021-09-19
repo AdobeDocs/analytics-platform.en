@@ -2,7 +2,7 @@
 title: How to select a data range in Report Builder in CJA
 description: Describes how to use the calendar, rolling dates, and custom expressions in Report Builder for CJA
 role: Data Engineer, Data Architect, Admin, User
-feature-set: Report Builder
+feature: Report Builder
 type: Documentation
 
 ---

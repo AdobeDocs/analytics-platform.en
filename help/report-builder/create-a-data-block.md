@@ -2,7 +2,7 @@
 title: How to create a data block using Report Builder in CJA
 description: Describes how to create a data block.
 role: Data Engineer, Data Architect, Admin, User
-feature-set: Report Builder
+feature: Report Builder
 type: Documentation
 ---
 

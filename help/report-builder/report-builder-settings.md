@@ -2,7 +2,7 @@
 title: How to configure settings for Report Builder in CJA
 description: Describes how to set offline-mode, language, as-of date, and troubleshooting settings.
 role: Data Engineer, Data Architect, Admin, User
-feature-set: Report Builder
+feature: Report Builder
 type: Documentation
 
 ---

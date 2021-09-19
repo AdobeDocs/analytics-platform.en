@@ -2,7 +2,7 @@
 title: What is the Report Builder Hub in Customer Journey Analytics
 description: Describes the Report Builder Hub components
 role: Data Engineer, Data Architect, Admin, User
-feature-set: Report Builder
+feature: Report Builder
 type: Documentation
 ---
 

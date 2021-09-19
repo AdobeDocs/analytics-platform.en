@@ -2,7 +2,7 @@
 title: How to use Report Builder in Customer Journey Analytics
 description: Describes how to use ___
 role: Data Engineer, Data Architect, Admin, User
-feature-set: Report Builder
+feature: Report Builder
 type: Documentation
 
 ---
