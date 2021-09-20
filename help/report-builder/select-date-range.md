@@ -114,7 +114,7 @@ building a custom expression or you can enter an arithmetic formula.
 
 1.  Enter a custom expression.
 
- For a sample list of custom expressions, see [Date expressions](url).
+ For a sample list of custom expressions, see **Date expressions**.
 
 1.  Use the date preview to verify the resulting date range is the
     desired range.
