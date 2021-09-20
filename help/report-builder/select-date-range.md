@@ -212,5 +212,6 @@ To edit the date range from the QUICK EDIT panel
 
 1.  Click **Apply**.
 
+
 Report Builder applies the new date range to all data blocks in the
 selection.
