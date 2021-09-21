@@ -28,9 +28,7 @@ For Windows, version 1903, you must install Microsoft Edge Webview2. To
 install the controller:
 
 1.  Go to <http://aka.ms/webview2installer>.
-
 1.  Select and download the Evergreen Standalone Installer.
-
 1.  Follow the installation prompts.
 
 ### Browsers
@@ -78,8 +76,7 @@ Reach out to your IT or security team to request approval for the Report Builder
 
 ![](./assets/image1.png)
 
-After installing the Report Builder Add-in, the Report Builder icon is
-displayed in the Excel ribbon under the Home tab.
+After installing the Report Builder Add-in, the Report Builder icon is displayed in the Excel ribbon under the Home tab.
 
 ![](./assets/image2.png)
 
@@ -94,26 +91,26 @@ platform or browser, follow these steps to log in to Report Builder.
 
 1.  From the Adobe Report Builder toolbar, click **Login**.
 
- ![](./assets/image3.png)
+    ![](./assets/image3.png)
 
 1.  Enter your Adobe Experience ID account information. Your account
     information should match your Customer Journey Analytics
     credentials.
 
- ![](./assets/image4.png)
+    ![](./assets/image4.png)
 
 ### Switch organizations
 
 When you first log in, you are logged in to the default organization
 assigned to your profile.
 
-To switch organizations:
+To switch organizations
 
 1.  Click the name of the organization that is displayed when you log in.
 
 1.  Select an organization from the list of available organizations. Only organizations that you have access to are listed.
 
- ![](./assets/image5.png)
+    ![](./assets/image5.png)
 
 ### Sign out
 
@@ -123,6 +120,6 @@ You can sign out from Report Builder from the user profile.
 
 1.  Click the avatar icon to display your user profile.
 
- ![](./assets/image6.png)
+    ![](./assets/image6.png)
 
 1.  Click **Sign Out**.

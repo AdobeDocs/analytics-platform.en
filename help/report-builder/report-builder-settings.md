@@ -22,7 +22,7 @@ To change Report Builder settings
 
 1.  Click **Apply**.
 
- ![](./assets/image38.png)
+    ![](./assets/image38.png)
 
 ## Off-line mode
 
@@ -54,7 +54,7 @@ To select the language used in the Report Builder UI
 
  1.  Select a language from the **Language** drop down menu.
 
-  ![](./assets/image39.png)
+     ![](./assets/image39.png)
 
  1.  Click **Apply.**
 
