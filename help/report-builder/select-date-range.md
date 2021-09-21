@@ -77,27 +77,25 @@ dates.
 
 1.  Select a rolling expression for your start and or end date.
 
- ![](./assets/image19.png)
+    ![](./assets/image19.png)
 
- **Start of** — Allows you to select the beginning of a day, week, month, quarter, or year.
+    **Start of** — Allows you to select the beginning of a day, week, month, quarter, or year.
 
- **End of** — Allows you to select the end of a day, week, month, quarter, or year.
+    **End of** — Allows you to select the end of a day, week, month, quarter, or year.
 
- **Fixed day** — Allows you to fix a start or end date while the other date is rolling.
+    **Fixed day** — Allows you to fix a start or end date while the other date is rolling.
 
 1.  Choose day, week, month, quarter, or year as the rolling period.
 
- ![](./assets/image20.png)
+    ![](./assets/image20.png)
 
-1.  Add or subtract days, weeks, months, quarters, or years from your
-    rolling date.
+1.  Add or subtract days, weeks, months, quarters, or years from your rolling date.
 
- ![](./assets/image21.png)
+    ![](./assets/image21.png)
 
 1.  Click Next to define the data range.
 
-Use the date preview to confirm the resulting date range is the desired
-range.
+    Use the date preview to confirm the resulting date range is the desired range.
 
 ### Custom expressions
 
@@ -108,13 +106,13 @@ building a custom expression or you can enter an arithmetic formula.
 
 1.  Select **Use custom expression**.
 
- When you select the **Use custom expression** option, the standard rolling date range controls are disabled.
+    When you select the **Use custom expression** option, the standard rolling date range controls are disabled.
 
- ![](./assets/image22.png)
+    ![](./assets/image22.png)
 
 1.  Enter a custom expression.
 
- For a sample list of custom expressions, see **Date expressions**.
+    For a sample list of custom expressions, see **Date expressions**.
 
 1.  Use the date preview to verify the resulting date range is the
     desired range.
