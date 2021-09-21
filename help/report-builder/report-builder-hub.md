@@ -19,7 +19,7 @@ The Report Builder hub contains the COMMANDS and QUICK EDIT panels.
 Use the COMMANDS panel to access commands that are compatible with the
 selected cells or a previous action.
 
-![](./assets/image14.png)
+![](./assets/hub1.png)
 
 ### Commands
 
@@ -39,10 +39,9 @@ displays the QUICK EDIT panel. You can use the QUICK EDIT panel to
 change parameters in a single data block or to change parameters in
 multiple data blocks at the same time.
 
-![](./assets/image15.png)
+![](./assets/hub2.png)
 
-The changes made using the Quick Edit sections apply to all data blocks
-that are present in the selected ranges.
+The changes made using the Quick Edit sections apply to all selected data blocks.
 
 ### Data views
 
