@@ -140,6 +140,8 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
     + [Filters overview](components/filters/filters-overview.md)
     + [Create a filter](components/filters/create-filters.md)
     + [Manage filters](components/filters/manage-filters.md)
+    + [Quick filters](components/filters/quick-filters.md)
+    + [Ad-hoc filters](components/filters/ad-hoc-filters.md)
   + Calculated Metrics {#cja-calcmetrics}
     + [Calculated metrics overview](components/calc-metrics/calc-metr-overview.md)
     + [Create a calculated metric](components/calc-metrics/create.md)
