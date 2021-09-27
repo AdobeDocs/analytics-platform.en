@@ -14,7 +14,7 @@ You can create quick filters within a project to bypass the complexity of the fu
 * Do not accommodate nested containers, or sequential rules.
 * Do work in panels with multiple report suites
 
-For a comparison of what quick filters can do vs. full-fledged component-list filters, go [here](help/components/filters/filters-overview.md). 
+For a comparison of what quick filters can do vs. full-fledged component-list filters, go [here](/help/components/filters/filters-overview.md). 
 
 >[!IMPORTANT]
 > Quick filters are currently in limited testing and are not generally available yet.
