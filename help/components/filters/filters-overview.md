@@ -13,6 +13,17 @@ You can build and save filters in the Filter Builder, or generate filters from a
 
 Filtering includes the [Filter Builder](/help/components/filters/create-filters.md) to construct filters and run a pre-test, and the [Filter Manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
 
+## Filter types
+
+You can create different types of filters in Workspace, depending on how complex they need to be, whether they should apply to this project only, etc. Here is a summary of filter types:
+
+| Filter type | Created where? | Applicable where? | When to use |
+| --- | --- | --- | --- |
+| Component-list filter | Click +, which takes you to the [Filter Builder](/help/components/filters/create-filters.md) | All your Workspace projects | For more complex filters, sequential filters |
+| Quick filter | [Quick filter builder](/help/components/filters/quick-filters.md) | Project only, but can save and add to your segment list. | Flexibility to add/edit one or more rules |
+| Ad-hoc project filter | [Drag and drop into segment drop zone in a project](/help/components/filters/ad-hoc-filters.md) | Project only, but can save and add to your filter list. | For single-rule filters |  
+|  - Calculated metrics-based filter | [Calculated metric builder](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | To individual calculated metric | Apply filter/s within your metric definition |
+
 ## Sequential filters
 
 Sequential filters let you identify visitors based on navigation and page view across your site, providing a filter of defined actions and interactions. Sequential filters help you identify what a visitor likes and what a visitor avoids. When building sequential filters, the THEN operator is used to define and order visitor navigation.
