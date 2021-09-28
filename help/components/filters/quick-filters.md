@@ -77,9 +77,6 @@ Notice how the filter's side bar changes from striped blue to blue. It now appea
 
 1. Hover over the quick filter and select the info ("i") icon.
 1. Select **[!UICONTROL Save filter]**
-
-   ![](assets/save-quick-seg.png)
-
 1. Leave the name as is or rename the filter.
 
    Go back to Workspace and notice how the filter now has a blue sidebar. This indicates it can no longer be edited/opened in the Quick Filter Builder. And by saving it, it becomes part of the component list.
@@ -94,7 +91,7 @@ After you have applied the filter, you can choose to add it to your filter compo
 
    ![](assets/project-only.png)
 
-1. Select the checkbox next to **[!UICONTROL Make this filter available to all your projects and add it to your component list.]**
+1. Select the checkbox next to **[!UICONTROL Make available to all your projects and add to your component list.]**
 1. Click **[!UICONTROL Save]**.
 1. The filter now appears in your filter component list for all your projects.
 1. You can also [share the filter](/help/components/filters/manage-filters.md) with other people in your organization.
