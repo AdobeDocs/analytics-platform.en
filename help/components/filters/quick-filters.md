@@ -21,7 +21,7 @@ For a comparison of what quick filters can do vs. full-fledged component-list fi
 
 ## Prerequisites
 
-Users need the [!UICONTROL Filter Creation] permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) to be able to create quick filters.
+Users need the [!UICONTROL Segment Creation] permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) to be able to create quick filters.
 
 ## Create quick filters
 
@@ -31,9 +31,9 @@ In a Freeform table, click the filter+ icon in the panel header:
 
 | Setting | Description |
 | --- | --- |
-| Name | The default name of a filter is a combination of the rule names in the filter. You can rename the filter. |
+| Name | The default name of a filter is a combination of the rule names in the filter. You can rename the filter to a more friendly name. |
 | Include/exclude | You can either include or exclude components in your filter definition, but not both. |
-| Hit/Visit/Visitor container | Quick filters include one [filter container](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=en#section_AF2A28BE92474DB386AE85743C71B2D6) only that lets you include a dimension/metric/date range in (or exclude it from) the filter. [!UICONTROL Visitor] contains overarching data specific for the visitor across visits and page views. A [!UICONTROL Visit] container lets you set rules to break down the visitor’s data based on visits, and a [!UICONTROL Hit] container lets you break down visitor information based on individual page views. The default container is [!UICONTROL Hit]. |
+| Hit/Visit/Visitor container | Quick filters include one [filter container](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) only that lets you include a dimension/metric/date range in (or exclude it from) the filter. [!UICONTROL Visitor] contains overarching data specific for the visitor across visits and page views. A [!UICONTROL Visit] container lets you set rules to break down the visitor’s data based on visits, and a [!UICONTROL Hit] container lets you break down visitor information based on individual page views. The default container is [!UICONTROL Hit]. |
 | Components (Dimension/metric/date range) | Define up to 3 rules by adding components dimensions and/or metrics and/or date ranges and their values. There are 3 ways to find the right component:<ul><li>Start typing and the [!UICONTROL Quick Filter] builder automatically finds the appropriate component.</li><li>Use the drop-down list to find the component.</li><li>Drag and drop components from the left rail.</li></ul>  |
 | Operator | Use the drop-down menu to find standard operators and [!UICONTROL Distinct Count] operators. [Learn more](https://experienceleague.adobe.com/docs/analytics/components/filteration/segment-reference/seg-operators.html?lang=en) |
 | Plus (+) sign | Add another rule |
@@ -77,9 +77,6 @@ Notice how the filter's side bar changes from striped blue to blue. It now appea
 
 1. Hover over the quick filter and select the info ("i") icon.
 1. Select **[!UICONTROL Save filter]**
-
-   ![](assets/save-quick-seg.png)
-
 1. Leave the name as is or rename the filter.
 
    Go back to Workspace and notice how the filter now has a blue sidebar. This indicates it can no longer be edited/opened in the Quick Filter Builder. And by saving it, it becomes part of the component list.
@@ -94,7 +91,7 @@ After you have applied the filter, you can choose to add it to your filter compo
 
    ![](assets/project-only.png)
 
-1. Select the checkbox next to **[!UICONTROL Make this filter available to all your projects and add it to your component list.]**
+1. Select the checkbox next to **[!UICONTROL Make available to all your projects and add to your component list.]**
 1. Click **[!UICONTROL Save]**.
 1. The filter now appears in your filter component list for all your projects.
 1. You can also [share the filter](/help/components/filters/manage-filters.md) with other people in your organization.
