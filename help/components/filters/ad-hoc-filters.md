@@ -3,8 +3,8 @@ description: Use ad-hoc filters in Analysis Workspace.
 title: Ad-hoc project filters
 feature: Workspace Basics
 role: User, Admin
+exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
 ---
-
 # Ad-hoc project filters
 
 Here is a video on creating ad-hoc project filters:
@@ -46,4 +46,4 @@ You can choose to save these filters by following these steps:
 
 ## What are project-only filters?
 
-Project-only filters are either quick filters or ad-hoc Workspace project filters. When editing/opening them in the filter builder then the project-only box will show up. If they APPLY a quick filter in the builder but don’t check the make available box, then it is still a project-only filter but it can no longer be opened in the QS builder. If they check the box and SAVE it is now a component-list filter. 
+Project-only filters are either quick filters or ad-hoc Workspace project filters. When editing/opening them in the filter builder then the project-only box will show up. If they APPLY a quick filter in the builder but don’t check the make available box, then it is still a project-only filter but it can no longer be opened in the QS builder. If they check the box and SAVE it is now a component-list filter.

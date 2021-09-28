@@ -3,8 +3,8 @@ description: Use quick filters in Analysis Workspace.
 title: Quick filters
 feature: Workspace Basics
 role: User, Admin
+exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 ---
-
 # Quick filters
 
 You can create quick filters within a project to bypass the complexity of the full [Filter Builder](/help/components/filters/create-filters.md). Quick filters
@@ -101,4 +101,4 @@ After you have applied the filter, you can choose to add it to your filter compo
 
 ## What are project-only filters?
 
-Project-only filters are either quick filters or ad-hoc Workspace project filters. When editing/opening them in the [!UICONTROL Filter Builder], the project-only box will show up. If you APPLY a quick filter in the builder but don’t check the make available box, then it is still a project-only filter but it can no longer be opened in the [!UICONTROL Quick Filter Builder]. If you check the box and click **[!UICONTROL SAVE]**, it is now a component-list filter. 
+Project-only filters are either quick filters or ad-hoc Workspace project filters. When editing/opening them in the [!UICONTROL Filter Builder], the project-only box will show up. If you APPLY a quick filter in the builder but don’t check the make available box, then it is still a project-only filter but it can no longer be opened in the [!UICONTROL Quick Filter Builder]. If you check the box and click **[!UICONTROL SAVE]**, it is now a component-list filter.
