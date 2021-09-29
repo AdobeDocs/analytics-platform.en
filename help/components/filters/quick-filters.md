@@ -9,10 +9,10 @@ exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 
 You can create quick filters within a project to bypass the complexity of the full [Filter Builder](/help/components/filters/create-filters.md). Quick filters
 
-* Apply to specific projects only (you can change this). 
+* Apply only to projects they were created in (you can change this). 
 * Allow for up to 3 rules
 * Do not accommodate nested containers, or sequential rules.
-* Do work in panels with multiple report suites
+* Do work in projects with multiple report suites
 
 For a comparison of what quick filters can do vs. full-fledged component-list filters, go [here](/help/components/filters/filters-overview.md). 
 
