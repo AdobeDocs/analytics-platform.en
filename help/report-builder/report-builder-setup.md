@@ -78,7 +78,7 @@ Reach out to your IT or security team to request approval for the Report Builder
 
 After installing the Report Builder Add-in, the Report Builder icon is displayed in the Excel ribbon under the Home tab.
 
-![](./assets/image2.png)
+![](./assets/rb_app_icon.png)
 
 ## Log in to Report Builder
 
@@ -91,13 +91,15 @@ platform or browser, follow these steps to log in to Report Builder.
 
 1.  From the Adobe Report Builder toolbar, click **Login**.
 
-    ![](./assets/image3.png)
+    ![](./assets/rb_login.png)
 
 1.  Enter your Adobe Experience ID account information. Your account
     information should match your Customer Journey Analytics
     credentials.
 
     ![](./assets/image4.png)
+
+After you log in, your login icon and organization will appear at the top of the panel
 
 ### Switch organizations
 

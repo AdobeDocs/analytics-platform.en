@@ -133,8 +133,8 @@ breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
   + [Report Builder Set Up](report-builder/report-builder-setup.md)
   + [Create a Data Block](report-builder/create-a-data-block.md)
   + [Report Builder Hub](report-builder/report-builder-hub.md)
+  + [Select a Date Range](report-builder/select-date-range.md)
   + [Work with Filters](report-builder/work-with-filters.md)
-  + [Select a Data Range](report-builder/select-date-range.md)
   + [Report Builder Settings](report-builder/report-builder-settings.md)
 + Components {#cja-components}
   + [Components overview](components/overview.md)

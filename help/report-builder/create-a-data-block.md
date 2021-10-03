@@ -20,7 +20,7 @@ To create a data block
 
 1.  Click **Create data block**.
 
-    ![](./assets/image7.png)
+    ![](./assets/creat_db.png)
 
 1.  Set the **Data block location**.
 
@@ -28,7 +28,7 @@ To create a data block
 
     To specify the data block location, select a single cell in the worksheet or enter a cell address such as a3, \\\$a3, a\\\$3 or sheet1!a2. The cell specified will be the upper-left corner of the data block when the data is retrieved.
 
-1.  Choose the **Data view**.
+1.  Choose the **Data views**.
 
     The Data views option allows you to choose a data view from a drop-down menu or to reference a data view from a cell location.
 
@@ -36,13 +36,15 @@ To create a data block
 
     The Date range option allows you to choose a date range. Date ranges may be fixed or rolling. For additional information about data range options, see << link to date range section >>.
 
-    ![](./assets/image8.png)
-
 1.  Click **Next**.
 
-    ![](./assets/image9.png)
+    ![](./assets/choose_date_data_view.png)
 
-The Dimensions, Metrics, and Filters tabs are displayed above the Table builder pane.
+    After you configure the data block, you can select dimensions, metrics, and filters to build your data block. The Dimensions, Metrics, and Filters tabs are displayed above the Table builder pane.
+<!--
+    ![](./assets/image9.png)
+  -->
+
 
 ## Build the data block
 

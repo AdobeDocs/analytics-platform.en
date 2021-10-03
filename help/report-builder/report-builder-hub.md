@@ -59,8 +59,8 @@ To change the data view, select a new data view from the drop-down menu.
 
 ### Date range
 
-**Data range** shows the date range for the selected data blocks. If
-multiple data blocks are selected with multiple date ranges, the **Data range** link displays *Multiple*.
+**Date range** shows the date range for the selected data blocks. If
+multiple data blocks are selected with multiple date ranges, the **Date range** link displays *Multiple*.
 
 ### Filters
 
