@@ -15,6 +15,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Attribution IQ | Full Support |
 | Calculated Metrics | Full Support; Note that any existing calculated metrics in the traditional Analysis Workspace will not be ported to CJA. |
 | Cross-device/cross-channel stitching | Full Support; See [Cross-Channel Analytics](/help/connections/cca/overview.md). |
+| CSV download | Full Support |
 | Custom Calendars | Full Support |
 | Date Comparisons | Full Support | 
 | Date Ranges | All date range functionality is supported. |
@@ -71,7 +72,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | --- | --- |
 | Alerts | Support is planned. |
 | Contribution Analysis | Support is planned. |
-| CSV download | Support is planned. |
 | Data Warehouse Reporting (100% row export) | Support is planned from the Analysis Workspace interface. [!UICONTROL Experience Platform Query Service] also provides an interface for these use cases in CJA. |
 | ID Stitching via Device Graph | Support is planned. |
 | Merchandising variable persistence | Support is planned. |
