@@ -16,8 +16,7 @@ The Report Builder hub contains the COMMANDS and QUICK EDIT panels.
 
 ## COMMANDS panel
 
-Use the COMMANDS panel to access commands that are compatible with the
-selected cells or a previous action.
+Use the COMMANDS panel to access commands that are compatible with the selected cells or a previous action.
 
 ![](./assets/hub1.png)
 
