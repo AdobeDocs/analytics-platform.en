@@ -20,7 +20,7 @@ To create a data block
 
 1.  Click **Create data block**.
 
-    ![](./assets/creat_db.png)
+    ![](./assets/create_db.png)
 
 1.  Set the **Data block location**.
 
