@@ -38,7 +38,7 @@ To create a data block
 
 1.  Click **Next**.
 
-    ![](./assets/choose_date_data_view.png)
+    ![](./assets/choose_date_data_view2.png)
 
     After you configure the data block, you can select dimensions, metrics, and filters to build your data block. The Dimensions, Metrics, and Filters tabs are displayed above the Table builder pane.
 <!--

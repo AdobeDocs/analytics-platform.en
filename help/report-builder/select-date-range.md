@@ -108,7 +108,7 @@ building a custom expression or you can enter an arithmetic formula.
 
     When you select the **Use custom expression** option, the standard rolling date range controls are disabled.
 
-    ![](./assets/image22.png)
+    ![](./assets/custom_expression.png)
 
 1.  Enter a custom expression.
 

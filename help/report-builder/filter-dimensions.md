@@ -195,7 +195,8 @@ match with a specific dimension item.
 
 ### From the Dimensions tab in the Table builder
 
-From the **Dimensions** tab, click the chevron icon next to a dimension
-name to view the list of dimension items. You can drag and drop items
-onto the **Table** or double-click an item name to add it to the
-**Table** builder.
+From the **Dimensions** tab, click the chevron icon next to a dimension name to view the list of dimension items.
+
+ ![](./assets/dimensions_chevron.png)
+
+You can drag and drop items onto the **Table** or double-click an item name to add it to the **Table** builder.
