@@ -25,9 +25,11 @@ The following tables list which features in Adobe Analytics are supported, parti
 | List Variables/List Props | Full Support; CJA leverages XDM and supports unlimited string arrays which can be used similarly to listVars. |
 | Metrics | Full Support; CJA leverages the Experience Data Model (XDM) and supports unlimited metrics and is not tied to the custom success events of traditional Analytics. Note that some standard metrics have been renamed from traditional Analytics: Visitors = People, Visits = Sessions, Hits = Events. |
 | Metric deduplication | Full Support |
+| Panels | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. |
 | PDF Export | Full Support |
 | Project Curation | Full Support |
 | Project Linking | Full Support |
+| Report Builder (Excel plugin) | Full Support (October 2021) |
 | Report Time Processing | Full Support; CJA relies exclusively on Report Time Processing. |
 | Reporting API Access | Full Support; Available through the [CJA API](https://www.adobe.io/cja-apis/docs/). |
 | Scheduled Reports/Projects | Full Support |
@@ -74,7 +76,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | ID Stitching via Device Graph | Support is planned. |
 | Merchandising variable persistence | Support is planned. |
 | Real-Time Reporting | Support is planned. |
-| Report Builder (Excel plugin) | Support is planned. |
 | Segment IQ | Support is planned. |
 | Segment Publishing (sending segments from Workspace to the Experience Cloud) | Support is planned. |
 
