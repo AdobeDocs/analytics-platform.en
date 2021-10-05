@@ -29,7 +29,7 @@ You can use the Quick edit panel to add, remove, or replace filters for existing
 
 When you select a range of cells in the spreadsheet, the **Filters** link in the Quick edit panel displays a summary list of the filters used by the data blocks in that selection.
 
-To edit filters in the Quick edit panel
+To edit filters using the Quick edit panel
 
 1.  Select a range of cells from one or multiple data blocks.
 
@@ -40,6 +40,8 @@ To edit filters in the Quick edit panel
     ![](./assets/quick_edit_filters.png)
 
 ### Add or remove a filter
+
+You can add or remove filters using the Add/Remove options.
 
 1.  Select the **Add/Remove** tab in the Quick edit-filters panel.
 

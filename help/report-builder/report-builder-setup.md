@@ -93,11 +93,9 @@ After you install the Report Builder for Excel Add-in for your operating platfor
 
 After you log in, your login icon and organization will appear at the top of the panel
 
-### Switch organizations
+## Switch organizations
 
 When you first log in, you are logged in to the default organization assigned to your profile.
-
-To switch organizations
 
 1.  Click the name of the organization that is displayed when you log in.
 
@@ -105,7 +103,7 @@ To switch organizations
 
     ![](./assets/image5.png)
 
-### Sign out
+## Sign out
 
 You can sign out from Report Builder from the user profile.
 

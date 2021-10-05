@@ -46,7 +46,7 @@ To enter dates directly into the date range field
 
 ### Calendar
 
-To select dates using the calendar.
+To select dates using the calendar
 
 1.  Click the calendar icon to display a monthly calendar.
 

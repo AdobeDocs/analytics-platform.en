@@ -8,13 +8,11 @@ type: Documentation
 
 # Create a Data Block
 
-A *data block* is the table of data created by a single data request. A sReport Builder workbook can contain multiple data blocks.
+A *data block* is the table of data created by a single data request. A Report Builder workbook can contain multiple data blocks. When you create a data block, first configure the data block and then build the data block.
 
 ## Configure the data block
 
 Configure the initial data block parameters for the Data block location, Data views, and a Date range.
-
-To create a data block
 
 1.  Click **Create data block**.
 
@@ -46,7 +44,7 @@ To create a data block
 
 ## Build the data block
 
-After you configure the initial data block parameters, select report components, and then customize the layout to build the data block.
+To build the data block, select report components, and then customize the layout.
 
 1.  Add Dimensions, Metrics, and Filters.
 

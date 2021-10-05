@@ -52,3 +52,5 @@ To select the language used in the Report Builder UI
 ## Troubleshooting
 
 Use the Troubleshooting setting to log all client/server data to a local file. Use this option to help resolve support tickets.
+
+To enable the Troubleshooting option, select **Log report builder request to local file**.

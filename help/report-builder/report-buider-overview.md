@@ -14,9 +14,7 @@ Report Builder is a Microsoft Excel Add-in that allows you to easily create, edi
 With Report Builder for Customer Journey Analytics, you can:
 
 - Reference existing worksheet cells to get the perfect row order, date range, or filter
-
 - Create custom dates using calendar, cell references, or date math
-
 - Design your tables and visualizations with familiar Excel formatting tools
 
 Report Builder for Customer Journey Analytics is available for Excel on the following platforms:
