@@ -13,8 +13,7 @@ You can quickly access Report Builder using the Excel Add-in menu.
 
 ## Requirements
 
-Report Builder for Customer Journey Analytics is supported on the
-following operating systems and web browsers.
+Report Builder for Customer Journey Analytics is supported on the following operating systems and web browsers.
 
 ### macOS
 
@@ -24,8 +23,7 @@ following operating systems and web browsers.
 
 - Windows 10, version 1903 or later
 
-For Windows, version 1903, you must install Microsoft Edge Webview2. To
-install the controller:
+For Windows, version 1903, you must install Microsoft Edge Webview2. To install the controller:
 
 1.  Go to <http://aka.ms/webview2installer>.
 1.  Select and download the Evergreen Standalone Installer.
@@ -43,10 +41,7 @@ install the controller:
 
 ## Report Builder Excel Add-in
 
-You must install the Report Builder Excel Add-in to use Report Builder
-for Customer Journey Analytics. Once you install the Report Builder
-Excel Add-in, you can access Report Builder from within an open Excel
-workbook.
+You must install the Report Builder Excel Add-in to use Report Builder for Customer Journey Analytics. Once you install the Report Builder Excel Add-in, you can access Report Builder from within an open Excel workbook.
 
 ### Download and install the Report Builder Add-in
 
@@ -82,8 +77,7 @@ After installing the Report Builder Add-in, the Report Builder icon is displayed
 
 ## Log in to Report Builder
 
-After you install the Report Builder for Excel Add-in for your operating
-platform or browser, follow these steps to log in to Report Builder.
+After you install the Report Builder for Excel Add-in for your operating platform or browser, follow these steps to log in to Report Builder.
 
 1.  Open an Excel workbook.
 
@@ -93,9 +87,7 @@ platform or browser, follow these steps to log in to Report Builder.
 
     ![](./assets/rb_login.png)
 
-1.  Enter your Adobe Experience ID account information. Your account
-    information should match your Customer Journey Analytics
-    credentials.
+1.  Enter your Adobe Experience ID account information. Your account information should match your Customer Journey Analytics credentials.
 
     ![](./assets/image4.png)
 
@@ -103,8 +95,7 @@ After you log in, your login icon and organization will appear at the top of the
 
 ### Switch organizations
 
-When you first log in, you are logged in to the default organization
-assigned to your profile.
+When you first log in, you are logged in to the default organization assigned to your profile.
 
 To switch organizations
 

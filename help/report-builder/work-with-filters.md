@@ -9,14 +9,11 @@ type: Documentation
 
 # Work with Filters in Report Builder
 
-You can apply Filters when you create a new data block or when you
-select the **Edit data block** option from the COMMANDS panel.
+You can apply Filters when you create a new data block or when you select the **Edit data block** option from the COMMANDS panel.
 
 ## Apply filters to a data block
 
-To apply a filter to the entire data block, double-click a filter or
-drag and drop filters from the components list into the Filters section
-of the Table.
+To apply a filter to the entire data block, double-click a filter or drag and drop filters from the components list into the Filters section of the Table.
 
 ## Apply filters to individual metrics
 
@@ -30,41 +27,39 @@ To apply filters to individual metrics, drag and drop a filter onto a metric in 
 
 You can use the Quick edit panel to add, remove, or replace filters for existing data blocks.
 
-When you select a range of cells in the spreadsheet, the **Filters**
-link in the Quick edit panel displays a summary list of the filters used by the data blocks in that selection.
+When you select a range of cells in the spreadsheet, the **Filters** link in the Quick edit panel displays a summary list of the filters used by the data blocks in that selection.
 
 To edit filters in the Quick edit panel
 
 1.  Select a range of cells from one or multiple data blocks.
 
- ![](./assets/select_multiple_dbs.png)
+    ![](./assets/select_multiple_dbs.png)
 
 1.  Click the Filters link to launch the Quick edit - Filters panel.
 
- ![](./assets/quick_edit_filters.png)
+    ![](./assets/quick_edit_filters.png)
 
 ### Add or remove a filter
 
 1.  Select the **Add/Remove** tab in the Quick edit-filters panel.
 
- All filters applied to the selected data blocks are listed in the Quick Edit-filters panel. Filters applied to all data blocks in the selection are listed under the **Applied to all selected data blocks** heading. Filters applied to some but not all data blocks are listed under the **Applied to 1 or more selected data blocks** heading.
+    All filters applied to the selected data blocks are listed in the Quick Edit-filters panel. Filters applied to all data blocks in the selection are listed under the **Applied to all selected data blocks** heading. Filters applied to some but not all data blocks are listed under the **Applied to 1 or more selected data blocks** heading.
 
- When multiple filters are present in the selected data blocks, you can search for specific filters using the **Add Filter** search field.
+    When multiple filters are present in the selected data blocks, you can search for specific filters using the **Add Filter** search field.
 
- ![](./assets/add_filter.png)
+    ![](./assets/add_filter.png)
 
-1.  Add filters by selecting filters from the **Add filter** drop down
-    menu.
+1.  Add filters by selecting filters from the **Add filter** drop down menu.
 
- The list of searchable filters includes all filters accessible to the data views that are present in one or more of the selected data blocks as well as all the filters that are available globally in the organization.
+    The list of searchable filters includes all filters accessible to the data views that are present in one or more of the selected data blocks as well as all the filters that are available globally in the organization.
 
- Adding a filter applies the filter to all data blocks in the selection.
+    Adding a filter applies the filter to all data blocks in the selection.
 
 1.  To remove filters, click the delete icon **x** to the right of filters in the **Filters applied** list.
 
 1.  Click **Apply** to save changes and return to the hub panel.
 
-Report Builder displays a  message to confirm the applied filter changes.
+    Report Builder displays a message to confirm the applied filter changes.
 
 ### Replace a filter
 
@@ -86,4 +81,4 @@ You can replace an existing filter with another filter to change how the data is
 
 1.  Click **Apply**.
 
- Report Builder updates the list of filters to reflect the replacement.
+    Report Builder updates the list of filters to reflect the replacement.

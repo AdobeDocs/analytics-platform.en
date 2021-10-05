@@ -19,8 +19,7 @@ With Report Builder for Customer Journey Analytics, you can:
 
 - Design your tables and visualizations with familiar Excel formatting tools
 
-Report Builder for Customer Journey Analytics is available for Excel on
-the following platforms:
+Report Builder for Customer Journey Analytics is available for Excel on the following platforms:
 
 - macOS
 - Windows

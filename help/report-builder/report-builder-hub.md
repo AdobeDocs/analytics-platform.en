@@ -33,10 +33,7 @@ Use the COMMANDS panel to access commands that are compatible with the selected 
 
 ## QUICK EDIT panel
 
-When you select one or more data blocks in a spreadsheet, Report Builder
-displays the QUICK EDIT panel. You can use the QUICK EDIT panel to
-change parameters in a single data block or to change parameters in
-multiple data blocks at the same time.
+When you select one or more data blocks in a spreadsheet, Report Builder displays the QUICK EDIT panel. You can use the QUICK EDIT panel to change parameters in a single data block or to change parameters in multiple data blocks at the same time.
 
 ![](./assets/hub2.png)
 
@@ -44,13 +41,9 @@ The changes made using the Quick Edit sections apply to all selected data block
 
 ### Data views
 
-Data blocks pull data from a selected Data view. If multiple data blocks
-are selected in a worksheet and they don't pull data from the same data
-view, the **Data views** link displays *Multiple*.
+Data blocks pull data from a selected Data view. If multiple data blocks are selected in a worksheet and they don't pull data from the same data view, the **Data views** link displays *Multiple*.
 
-When you change the data view, all data blocks in the selection adopt
-the new data view. Components in the data block are matched to the new
-data view based on ID, for example, matching ```evars```). If a component isn't found in a data block, a warning message is displayed and the component is removed from the data block.
+When you change the data view, all data blocks in the selection adopt the new data view. Components in the data block are matched to the new data view based on ID, for example, matching ```evars```). If a component isn't found in a data block, a warning message is displayed and the component is removed from the data block.
 
 To change the data view, select a new data view from the drop-down menu.
 
@@ -58,11 +51,8 @@ To change the data view, select a new data view from the drop-down menu.
 
 ### Date range
 
-**Date range** shows the date range for the selected data blocks. If
-multiple data blocks are selected with multiple date ranges, the **Date range** link displays *Multiple*.
+**Date range** shows the date range for the selected data blocks. If multiple data blocks are selected with multiple date ranges, the **Date range** link displays *Multiple*.
 
 ### Filters
 
-The **Filters** link displays a summary list of the filters used by the
-selected data blocks. If multiple data blocks are selected with multiple
-filters applied, the **Filters** link displays *Multiple*.
+The **Filters** link displays a summary list of the filters used by the selected data blocks. If multiple data blocks are selected with multiple filters applied, the **Filters** link displays *Multiple*.

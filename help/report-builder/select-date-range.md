@@ -9,15 +9,13 @@ type: Documentation
 
 # Select a Date Range
 
-To change the date range of an existing data block, select Edit a data
-block or use the QUICK EDIT panel.
+To change the date range of an existing data block, select Edit a data block or use the QUICK EDIT panel.
 
 Use the following options to change a date range for a data block.
 
 **Calendar**
 
- The Calendar allows you to create static or rolling
-    dates using the following options:
+ The Calendar allows you to create static or rolling dates using the following options:
 
 - Date range field
 - Calendar
@@ -36,8 +34,7 @@ You have the option to exclude today on any selected date range.
 
 ## Use the Calendar
 
-When you use the **Calendar**, the date range field displays the current date range for the data block request. You can enter dates directly into the
-date range field or use a data range selection option.
+When you use the **Calendar**, the date range field displays the current date range for the data block request. You can enter dates directly into the date range field or use a data range selection option.
 
 ### Date range field
 
@@ -57,21 +54,17 @@ To select dates using the calendar.
 
 1.  Click an end date.
 
-To set a date range in reverse, click the end date first and then click
-the start date.
+To set a date range in reverse, click the end date first and then click the start date.
 
 ![](./assets/image18.png)
 
 ### Preset drop down menu
 
-The preset drop-down menu includes a standard set of preset date ranges
-and date range components for a data view that you saved or a data view
-that was shared with you.
+The preset drop-down menu includes a standard set of preset date ranges and date range components for a data view that you saved or a data view that was shared with you.
 
 ### Rolling dates
 
-The rolling dates option allows you to select a date range using rolling
-dates.
+The rolling dates option allows you to select a date range using rolling dates.
 
 1.  Select **Use rolling dates**.
 
@@ -99,8 +92,7 @@ dates.
 
 ### Custom expressions
 
-The custom expression option allows you to change the date range by
-building a custom expression or you can enter an arithmetic formula.
+The custom expression option allows you to change the date range by building a custom expression or you can enter an arithmetic formula.
 
 1.  Select **Use rolling dates**.
 
@@ -114,8 +106,7 @@ building a custom expression or you can enter an arithmetic formula.
 
     For a sample list of custom expressions, see **Date expressions**.
 
-1.  Use the date preview to verify the resulting date range is the
-    desired range.
+1.  Use the date preview to verify the resulting date range is the desired range.
 
 #### Create a custom expression
 
@@ -123,8 +114,7 @@ building a custom expression or you can enter an arithmetic formula.
 
 1.  Add **Date operators** to move the date to the past or future.
 
-You can enter a custom date expression that includes multiple operators,
-such as ```tm-11m-1d```.
+You can enter a custom date expression that includes multiple operators, such as ```tm-11m-1d```.
 
 #### Date references
 
@@ -165,10 +155,7 @@ The following table lists date expression examples.
 
 ## Date range from cell
 
-The date range can be specified in worksheet cells. Use the **Date range
-from cell** option to choose the data block start and end date from
-selected cells. When you select the **From cell** option, the panel
-displays **From** and **To** fields where you can enter a cell location.
+The date range can be specified in worksheet cells. Use the **Date range from cell** option to choose the data block start and end date from selected cells. When you select the **From cell** option, the panel displays **From** and **To** fields where you can enter a cell location.
 
 ![](./assets/image23.png)
 
@@ -176,9 +163,7 @@ displays **From** and **To** fields where you can enter a cell location.
 
 Choose the **Exclude today** option to exclude today from a selected date range. Choosing to include today may pull incomplete data for today.
 
-When selected, the **Exclude today** option excludes the current day
-from all date range modes including calendar, rolling dates, or custom
-expressions.
+When selected, the **Exclude today** option excludes the current day from all date range modes including calendar, rolling dates, or custom expressions.
 
 ## Valid date ranges
 
@@ -211,5 +196,4 @@ To edit the date range from the QUICK EDIT panel
 1.  Click **Apply**.
 
 
-Report Builder applies the new date range to all data blocks in the
-selection.
+Report Builder applies the new date range to all data blocks in the selection.

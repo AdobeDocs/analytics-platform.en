@@ -8,13 +8,11 @@ type: Documentation
 
 # Create a Data Block
 
-A *data block* is the table of data created by a single data request. A
-Report Builder workbook can contain multiple data blocks.
+A *data block* is the table of data created by a single data request. A sReport Builder workbook can contain multiple data blocks.
 
 ## Configure the data block
 
-Configure the initial data block parameters for the Data block
-location, Data views, and a Date range.
+Configure the initial data block parameters for the Data block location, Data views, and a Date range.
 
 To create a data block
 
@@ -48,8 +46,7 @@ To create a data block
 
 ## Build the data block
 
-After you configure the initial data block parameters, select report
-components, and then customize the layout to build the data block.
+After you configure the initial data block parameters, select report components, and then customize the layout to build the data block.
 
 1.  Add Dimensions, Metrics, and Filters.
 
@@ -57,13 +54,11 @@ components, and then customize the layout to build the data block.
 
     Double-click a component to add it to a default section of the table.
 
-    - Dimension components are added to the Row section or to the Column\
-        section if you have a dimension already in the columns.
+    - Dimension components are added to the Row section or to the Column section if you have a dimension already in the columns.
     - Date components are added to the Column section.
     - Filter components are added to the Filters section.
 
-1.  Arrange the items in the Table pane to customize the layout of your
-    data block.
+1.  Arrange the items in the Table pane to customize the layout of your data block.
 
     Drag and drop components in the Table pane to reorder components or right-click a component name and select from the options menu.
 
@@ -77,6 +72,6 @@ components, and then customize the layout to build the data block.
 
     ![](./assets/image11.png)
 
-    Report Builder retrieves the data and displays the completed data  block in the worksheet.
+    Report Builder retrieves the data and displays the completed data block in the worksheet.
 
     ![](./assets/image12.png)
