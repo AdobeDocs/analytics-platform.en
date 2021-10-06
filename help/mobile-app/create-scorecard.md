@@ -11,6 +11,9 @@ The following information instructs curators of Adobe Analytics data on how to c
 
 >[!VIDEO](https://video.tv.adobe.com/v/34544)
 
+>[!NOTE]
+>Scorecard screen shots for this page were taken from the Adobe Analytics UI, not from CJA. The UIs are almost identical.
+
 An Adobe Analytics scorecard displays key data visualizations for executive users in a tiled layout, as shown below:
 
 ![Example scorecard](assets/intro_scorecard.png)
@@ -110,7 +113,7 @@ Or, click the [!UICONTROL Visualizations] icon in the left rail and drag and dro
 
 Use the Summary Number visualization to highlight a large number that is important in a project. 
 
-![Summary number](assets/sparkline.png)
+![Summary number](assets/summary-number.png)
 
 ### [!UICONTROL Donut]
 
@@ -147,11 +150,11 @@ When you click a tile in the Scorecard Builder, the right-hand rail displays the
 
 ![Properties tile](assets/properties_tile.png)
 
-## View Drill ins (breakdows)
+## View Drill ins (breakdowns)
 
-When you click on tiles, a dynamic pop up displays how the Drill ins (Breakdown) view appears to the executive user in the app. If no dimension has been applied to the tile, the breakdown dimension will be **hour** or **days**, depending on the default date range.
+When you click on tiles, a dynamic pop up displays how the Drill ins (Breakdown) view appears to the executive user in the app. You can break down dimensions and dimension items to break down your data for your specific needs. If no dimension has been applied to the tile, the breakdown dimension will be **hour** or **days**, depending on the default date range.
 
-Breakdowns refine your analysis by literally breaking down metrics and dimensions by other metrics and dimensions, such as in this retail example:
+Breakdowns refine your analysis by literally breaking down dimensions by other metrics and dimensions, such as in this retail example:
 
 * Unique Visitors metric broken down by Ad Platform (AMO ID)
 * Visits broken down by Product Category (Retail)
