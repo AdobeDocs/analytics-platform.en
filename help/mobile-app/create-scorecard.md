@@ -120,7 +120,7 @@ Similar to a pie chart, this visualization shows data as parts or segments of a 
 
 **[!UICONTROL Line] visualization**
 
-The Line visualization represents metrics using a line in order to show how values change over a period of time. A  line chart shows dimensions over time but works with any visualization. You are visualizing the product category dimension in this example.
+The Line visualization represents metrics using a line in order to show how values change over a period of time. A line chart shows dimensions over time but works with any visualization. You are visualizing the product category dimension in this example.
 
 ![Line visualization](assets/line.png)
 
