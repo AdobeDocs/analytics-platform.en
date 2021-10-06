@@ -11,7 +11,7 @@ exl-id: 7c5fa374-fa39-4bbc-9bd7-0ef17914d593
 
 To learn more about Adobe Analytics [!UICONTROL dashboards], refer to the following resources:
 
-* [Curator resources](/help/analyze/mobile-app/curator.md): Intended to help curators of data configure scorecards for their executive users on [!UICONTROL dashboards]. Curators may be organizational administrators or persons in other roles who are responsible for setting up Scorecards:
+* [Curator resources](/help/mobile-app/curator.md): Intended to help curators of data configure scorecards for their executive users on [!UICONTROL dashboards]. Curators may be organizational administrators or persons in other roles who are responsible for setting up Scorecards:
 
   * [Create scorecards](/help/mobile-app/create-scorecard.md)
   * [Assist executives with app setup and using the app](/help/mobile-app/set-up-execs.md)
