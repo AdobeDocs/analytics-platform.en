@@ -119,7 +119,6 @@ To use dashboards:
 
 Tap the option and choose a sub-category of the bug. In the form for reporting a bug, provide your email address in the top field and your description of the bug in the field below it. A screen shot of your account info is automatically attached to the message, but you can delete this if you want by tapping the **X** in the attachment image. You also have options for taking a screen recording, adding more screenshots, or attaching files. To send the report, tap the paper plane icon in the upper right of the form.
 
-
 ![Report bug](assets/newbug.png)
 
 **To suggest an improvement**:
