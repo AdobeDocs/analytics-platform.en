@@ -3,8 +3,8 @@ description: How to create an Adobe Analytics dashboards scorecard
 title: Create a scorecard
 feature: Analytics Dashboards
 role: User, Admin
+exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 ---
-
 # Create a scorecard
 
 The following information instructs curators of Adobe Analytics data on how to configure and present dashboards for executive users. To start with, you can view the Adobe Analytics dashboards Scorecard Builder video:
