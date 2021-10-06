@@ -176,7 +176,9 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Report on Google Analytics data in CJA](use-cases/ga-to-cja-reporting.md)
 + Analytics dashboards {#cja-dashboards}
   + [Analytics dashboards - Overview](mobile-app/home.md)
-  + [Curator guide](mobile-app/curator.md)
+  + [Curator tasks](mobile-app/curator.md)
+  + [Create a scorecard](mobile-app/create-scorecard.md)
+  + [Set up executives to use dashboards](mobile-app/set-up-execs.md)
   + [Executive user quick start guide](mobile-app/executive.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
