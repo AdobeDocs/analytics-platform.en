@@ -39,15 +39,12 @@ To display applied filters, hover over a dimension. Dimensions with applied filt
 
 There are two ways to filter dimension items: Most popular and Specific.
 
-### Most popular
+## Most popular
 
 The Most popular option allows you to dynamically filter dimension items based on metric values. Most popular filtering returns the highest ranked dimension items based on metric values. By default, the first 10 dimensions items are listed, sorted by the first metric added to the data block.
 
  ![image files](./assets/image29.png)
 
-### Specific
-
-The Specific option allows you to create a fixed list of dimension items for each dimension.
 
 ### Page and Rows options
 
@@ -116,7 +113,7 @@ To change the metric used to filter and sort the data block,
 
 ## Specific filtering
 
-Use the **Specific** filtering type to specify the exact dimension items to include in your filter. You can select items from a list or from a range of cells.
+The Specific option allows you to create a fixed list of dimension items for each dimension. Use the **Specific** filtering type to specify the exact dimension items to include in your filter. You can select items from a list or from a range of cells.
 
  ![](./assets/image32.png)
 

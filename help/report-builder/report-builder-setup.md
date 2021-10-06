@@ -18,26 +18,23 @@ Report Builder for Customer Journey Analytics is supported on the following oper
 ### macOS
 
 - macOS Version 10.x or later
+- All Excel Versions
 
 ### Windows
 
-- Windows 10, version 1903 or later
+- Windows 10, version 1904 or later
+- Excel Version 2106 or later
 
-For Windows, version 1903, you must install Microsoft Edge Webview2. To install the controller:
+  All Windows desktop Excel users must install Microsoft Edge Webview2 to use the add-in. To install the controller:
 
-1.  Go to <http://aka.ms/webview2installer>.
-1.  Select and download the Evergreen Standalone Installer.
-1.  Follow the installation prompts.
+  1.  Go to <http://aka.ms/webview2installer>.
+  1.  Select and download the Evergreen Standalone Installer.
+  1.  Follow the installation prompts.
 
-### Browsers
+### Web Office
 
-- Chrome Version ___
-- Firefox Version ___
-- Safari Version ___
+- Supports all browsers and versions
 
-### Excel
-
-- Excel Version ___
 
 ## Report Builder Excel Add-in
 
