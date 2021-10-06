@@ -3,8 +3,8 @@ description: How to set up users to use the Analytics mobile app
 title: Set up executives to use dashboards
 feature: Analytics Dashboards
 role: User, Admin
+exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 ---
-
 # Set up executive users to use dashboards
 
 In some cases, executive users may need some additional assistance to access and use the app. This section provides information to help curators provide that assistance.
@@ -104,5 +104,4 @@ If the executive user logs in and sees a message saying that nothing has been sh
 *  The executive user may have selected the wrong Analytics instance, or
 *  The scorecard may not have been shared with the executive user. 
 
-Verify that the executive user can log into the right Adobe Analytics instance and that the scorecard has been shared. 
-
+Verify that the executive user can log into the right Adobe Analytics instance and that the scorecard has been shared.
