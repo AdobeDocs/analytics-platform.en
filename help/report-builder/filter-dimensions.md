@@ -86,7 +86,7 @@ To set filtering criteria
 
 1.  Select an operator from the drop-down list.
 
- ![](./assets/image31.png)
+    ![](./assets/image31.png)
 
 1.  Enter a value into the search field.
 
@@ -94,7 +94,7 @@ To set filtering criteria
 
 1.  Click the delete icon to remove a criteria item.
 
-You can include up to 10 criteria items.
+    You can include up to 10 criteria items.
 
 ### Change the filter and sort order
 
@@ -115,39 +115,41 @@ To change the metric used to filter and sort the data block,
 
 The Specific option allows you to create a fixed list of dimension items for each dimension. Use the **Specific** filtering type to specify the exact dimension items to include in your filter. You can select items from a list or from a range of cells.
 
- ![](./assets/image32.png)
+![](./assets/image32.png)
 
 ### From list
 
 1.  Select the **From list** option to search for and select dimension items.
 
- When you select the **From list** option, the list is populated with dimension items with the most events first.
+    When you select the **From list** option, the list is populated with dimension items with the most events first.
 
- ![](./assets/image33.png)
+    ![](./assets/image33.png)
 
- The **Available items** list is ordered from dimension items with the most events to those with the least.
+    The **Available items** list is ordered from dimension items with the most events to those with the least.
 
 1.  Enter a search term in the **Add item** field to search the list.
 
 1.  To search for an item not included in the last 90 days of data, click **Show items for the last 6 months** to extend the search.
 
- ![](./assets/image34.png)
+    ![](./assets/image34.png)
 
- After data from the past six months loads, Report Builder updates the link to **Show items for last 18 months**.
+    After data from the past six months loads, Report Builder updates the link to **Show items for last 18 months**.
 
 1.  Select a dimension item.
 
- Selected dimension items are automatically added to the **Selected items** list.
+    Selected dimension items are automatically added to the **Selected items** list.
 
- ![](./assets/image35.png)
+    ![](./assets/image35.png)
 
- To delete an item from the list, click the delete icon to remove the item from the list.
+    To delete an item from the list, click the delete icon to remove the item from the list.
 
- To move an item in the list, drag and drop the item or click ... to display the move menu.
+    To move an item in the list, drag and drop the item or click ... to display the move menu.
 
- ![](./assets/image36.png)
+    ![](./assets/image36.png)
 
 1.  Click **Apply**
+
+    Report Builder updates the list to show the specific filtering you applied.
 
 ### From range of cells
 
