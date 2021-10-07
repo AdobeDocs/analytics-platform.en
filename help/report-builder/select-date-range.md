@@ -4,9 +4,8 @@ description: Describes how to use the calendar, rolling dates, and custom expres
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-
+exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 ---
-
 # Select a Date Range
 
 To change the date range of an existing data block, select Edit a data block or use the QUICK EDIT panel.

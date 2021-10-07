@@ -4,8 +4,8 @@ description: Describes the Report Builder Hub components
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
+exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 ---
-
 # Report Builder Hub
 
 Use the Report Builder hub to create, update, or delete data blocks.

@@ -4,8 +4,8 @@ description: Describes how to create a data block.
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
+exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 ---
-
 # Create a Data Block
 
 A *data block* is the table of data created by a single data request. A Report Builder workbook can contain multiple data blocks. When you create a data block, first configure the data block and then build the data block.

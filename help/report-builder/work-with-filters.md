@@ -4,9 +4,8 @@ description: Describes how to use filters in Report Builder for CJA
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-
+exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 ---
-
 # Work with Filters in Report Builder
 
 You can apply Filters when you create a new data block or when you select the **Edit data block** option from the COMMANDS panel.

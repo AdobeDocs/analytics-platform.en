@@ -4,9 +4,8 @@ description: Describes how to use filters in Report Builder for CJA
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-
+exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 ---
-
 # Filter Dimensions
 
 By default, each dimension item in the table returns the top 10 items for that dimension.

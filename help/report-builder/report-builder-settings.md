@@ -4,9 +4,8 @@ description: Describes how to set offline-mode, language, as-of date, and troubl
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-
+exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
 ---
-
 # Report Builder Settings
 
 Use the **Settings** pane to configure application-level settings such as the language displayed by the UI or whether or not to work in off-line mode. The settings are applied immediately and they are set for all future sessions until they're changed.
