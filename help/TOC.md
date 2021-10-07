@@ -98,7 +98,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Blank panel](analysis-workspace/c-panels/blank-panel.md)
     + [Freeform panel](analysis-workspace/c-panels/freeform-panel.md)
     + [Quick Insights panel](analysis-workspace/c-panels/quickinsight.md)
-  + Curate, Share and Schedule projects {#curate-share} 
+  + Curate, Share and Schedule projects {#curate-share}
     + [Share menu](analysis-workspace/curate-share/send-schedule-files.md)
     + [Curate projects](analysis-workspace/curate-share/curate.md)
     + [Share projects](analysis-workspace/curate-share/share-projects.md)
@@ -127,6 +127,15 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Administration requirements](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility in Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
     + [Long-tail in Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
++ Report Builder {#cja-reportbuilder}
+  + [Report Builder Overview](report-builder/report-buider-overview.md)
+  + [Report Builder Set Up](report-builder/report-builder-setup.md)
+  + [Create a Data Block](report-builder/create-a-data-block.md)
+  + [Report Builder Hub](report-builder/report-builder-hub.md)
+  + [Select a Date Range](report-builder/select-date-range.md)
+  + [Work with Filters](report-builder/work-with-filters.md)
+  + [Filter Dimensions](report-builder/filter-dimensions.md)
+  + [Report Builder Settings](report-builder/report-builder-settings.md)
 + Components {#cja-components}
   + [Components overview](components/overview.md)
   + Dimensions {#dimensions}
