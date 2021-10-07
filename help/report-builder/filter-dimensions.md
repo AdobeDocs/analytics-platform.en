@@ -19,13 +19,13 @@ To change the dimension items returned for each dimension
 
 1.  Click the **...** icon next to a component name in the table.
 
- ![](./assets/image27.png)
+    ![](./assets/image27.png)
 
 1.  Select **Filter dimension** in the pop-up menu to display the **Filter dimension** pane.
 
 1.  Select **Most popular** or **Specific**.
 
- ![](./assets/image28.png)
+    ![](./assets/image28.png)
 
 1.  Select appropriate options based on the filter type chosen.
 
@@ -35,7 +35,7 @@ To change the dimension items returned for each dimension
 
 To display applied filters, hover over a dimension. Dimensions with applied filters display a filter icon to the right of the Dimension name.
 
-## Filter type
+## Filter Type
 
 There are two ways to filter dimension items: Most popular and Specific.
 
@@ -108,7 +108,7 @@ To change the metric used to filter and sort the data block,
 
 2. Click the arrow on the preferred metric. 
 
- ![](./assets/image30.png)
+   ![](./assets/image30.png)
 
 
 ## Specific filtering
