@@ -11,6 +11,9 @@ The following information instructs curators of Adobe Analytics data on how to c
 
 >[!VIDEO](https://video.tv.adobe.com/v/34544)
 
+>[!NOTE]
+>Scorecard screen shots for this page were taken from the Adobe Analytics UI, not from CJA. The UIs are almost identical.
+
 An Adobe Analytics scorecard displays key data visualizations for executive users in a tiled layout, as shown below:
 
 ![Example scorecard](assets/intro_scorecard.png)
@@ -106,32 +109,31 @@ Or, click the [!UICONTROL Visualizations] icon in the left rail and drag and dro
 
 ![Visualizations](assets/vizs.png)
 
-**[!UICONTROL Summary Number]**
+### [!UICONTROL Summary Number]
 
 Use the Summary Number visualization to highlight a large number that is important in a project. 
 
-![Summary number](assets/sparkline.png)
+![Summary number](assets/summary-number.png)
 
-**[!UICONTROL Donut] visualization**
+### [!UICONTROL Donut]
 
 Similar to a pie chart, this visualization shows data as parts or segments of a whole. Use a donut graph when comparing percentages of a total. For example, let's say you want to see which ad platform contributed to the total number of unique visitors:
 
 ![Donut visualization](assets/donut-viz.png)
 
-**[!UICONTROL Line] visualization**
+### [!UICONTROL Line]
 
-The Line visualization represents metrics using a line in order to show how values change over a period of time. A  line chart shows dimensions over time but works with any visualization. You are visualizing the product category dimension in this example.
+The Line visualization represents metrics using a line in order to show how values change over a period of time. A line chart shows dimensions over time but works with any visualization. You are visualizing the product category dimension in this example.
 
 ![Line visualization](assets/line.png)
 
-
-**[!UICONTROL Horizontal Bar] visualization**
+### [!UICONTROL Horizontal Bar]
 
 This visualization shows horizontal bars representing various values across one or more metrics. For example, to easily see what your top products are, use [!UICONTROL Horizontal Bar] for your preferred visualization.
 
 ![horizontal bar](assets/horizontal.png)
 
-**Remove [!UICONTROL Unspecified]**
+### Remove [!UICONTROL Unspecified] dimension item
 
 If you want to remove [!UICONTROL Unspecified] dimension items from your data, do the following:
 
@@ -148,9 +150,11 @@ When you click a tile in the Scorecard Builder, the right-hand rail displays the
 
 ![Properties tile](assets/properties_tile.png)
 
-When you click on tiles, a dynamic pop up displays how the Drill ins (Breakdown) view appears to the executive user in the app. If no dimension has been applied to the tile, the breakdown dimension will be **hour** or **days**, depending on the default date range.
+## View Drill ins (breakdowns)
 
-Breakdowns refine your analysis by literally breaking down metrics and dimensions by other metrics and dimensions, such as in this retail example:
+When you click on tiles, a dynamic pop up displays how the Drill ins (Breakdown) view appears to the executive user in the app. You can break down dimensions and dimension items to break down your data for your specific needs. If no dimension has been applied to the tile, the breakdown dimension will be **hour** or **days**, depending on the default date range.
+
+Breakdowns refine your analysis by literally breaking down dimensions by other metrics and dimensions, such as in this retail example:
 
 * Unique Visitors metric broken down by Ad Platform (AMO ID)
 * Visits broken down by Product Category (Retail)
