@@ -33,7 +33,6 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 | Question | Answer |
 | --- | --- |
 | Can I combine data from different [!UICONTROL Adobe Experience Platform] sandboxes in one [!UICONTROL Customer Journey Analytics] connection? | No, you cannot access data across sandboxes. You can combine only datasets that are located within the same sandbox. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets) |
-| What is the expected latency for [!UICONTROL Customer Journey Analytics] on [!UICONTROL Adobe Experience Platform]? | <ul><li>Under normal load: < 60 minutes<br>**Note:** In case of an unusually high volume of data flow through the pipeline, it could take up to 24 hours.</li><li>Backfill data (up to 13 months of data, irrespective of size): < 4 weeks</li></ul> |
 | How do I connect online data to offline data in [!UICONTROL Customer Journey Analytics]? | As long as the person ID matches between datasets, [!UICONTROL Customer Journey Analytics] can connect filters, attribution, flow, fallout, etc. across datasets. |
 | How do I bring my offline data into [!UICONTROL Customer Journey Analytics]? | Your entitlement to Customer Journey Analytics allows you to ingest data into Experience Platform. You can then create connections to that data and data views in [!UICONTROL Customer Journey Analytics], for reporting in Analysis Workspace. The Experience Platform's data on-boarding team can help provide recommendations or consulting for you, if needed. |
 | How do I get [!UICONTROL Adobe Analytics] data into [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Adobe Analytics] data can be connected to Experience Platform through the [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Most [!UICONTROL Adobe Analytics] fields are brought over in XDM format, but other fields are not yet available. |
@@ -42,7 +41,17 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 
 {style="table-layout:auto"}
 
-## 4. Traditional [!UICONTROL Adobe Analytics] components
+## 4. Latency considerations
+
+>[!NOTE]
+>There is no fixed data size in CJA and thus Adobe cannot commit to a standard ingestion time. We are actively working to reduce these latencies through new updates and ingestion optimization.
+
+| Question | Answer |
+| --- | --- |
+| What is the expected latency for [!UICONTROL Customer Journey Analytics] on [!UICONTROL Adobe Experience Platform]? | <ul><li>Live data or events: Processed and ingested within 90 minutes, once data is available in AEP.</li><li>Batch size > 50 million rows: longer than 90 mins.</li><li>Small backfills - For example, a lookup dataset of 10 million rows: within 24 hours<li>Large backfills - For example, 500 billion rows: 30 days</li></ul> |
+
+
+## 5. Traditional [!UICONTROL Adobe Analytics] components
 
 | Question | Answer |
 | --- | --- |
@@ -55,7 +64,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 
 {style="table-layout:auto"}
 
-## 5. Implications of deleting data components
+## 6. Implications of deleting data components
 
 When it comes to data deletion, we are concerned with 6 types of components: sandbox, schema, dataset, connection, data view, and Workspace project. Here are some possible scenarios around deleting any of these components:
 
@@ -70,7 +79,7 @@ When it comes to data deletion, we are concerned with 6 types of components: san
 | Delete a connection in [!UICONTROL Customer Journey Analytics] | An error message will indicate that:<ul><li>Any data views created for the deleted connection will no longer work.</li><li> Similarly, any Workspace projects that depend on data views in the deleted connection will cease working.</li></ul> |
 | Delete a data view in [!UICONTROL Customer Journey Analytics] | An error message will indicate that any Workspace projects that depend on this deleted data view will cease working. |
 
-## 6. Considerations when merging report suites in CJA
+## 7. Considerations when merging report suites in CJA
 
 If you plan to ingest Adobe Analytics data through the [Adobe Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en), consider these ramifications when merging 2 or more Adobe Analytics report suites.
 
