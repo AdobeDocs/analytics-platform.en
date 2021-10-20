@@ -38,6 +38,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 | How do I get [!UICONTROL Adobe Analytics] data into [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Adobe Analytics] data can be connected to Experience Platform through the [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Most [!UICONTROL Adobe Analytics] fields are brought over in XDM format, but other fields are not yet available. |
 | How long does it take to assemble dataset elements into a data view? | A few hours to get started, and a few days to backfill the last 13 months of data. |
 | Is it necessary to bring PII data to establish connections between the data? | No, you can use any ID, including a hash of a customer ID, which is not PII. |
+| What are the limits for ingesting past or future dates/timestamps in CJA event datasets? |<ul><li>Regarding past dates/timestamps: Event data up to 10 years old.</li><li>Regarding future dates/timestamps: Event data (predictive) up to 1 month in the future.</li></ul> |
 
 {style="table-layout:auto"}
 
