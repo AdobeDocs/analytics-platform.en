@@ -6,7 +6,7 @@ title: Use functions
 
 Functions let you filter/sort your data and do statistical analysis.
 
-For a list of all functions, refer to [Basic Functions](/help/components/c-calcmetrics/cm-functions.md) and [Advanced Functions](/help/components/c-calcmetrics/cm-adv-functions.md).
+For a list of all functions, refer to [Basic Functions](/help/components/calc-metrics/cm-functions.md) and [Advanced Functions](/help/components/calc-metrics/cm-adv-functions.md).
 
 >[!NOTE]
 >

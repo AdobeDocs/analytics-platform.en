@@ -11,7 +11,7 @@ There are several ways to get to the Calculated Metric Builder:
 * In Analysis Workspace, open a project and click  **[!UICONTROL + New]** > **[!UICONTROL Create Metric]** .
 * In [!DNL Analytics], go to **[!UICONTROL Components]** > **[!UICONTROL Calculated Metrics]**.
 
-* Click **[!UICONTROL + Add]** at the top of the [Calculated Metric Manager](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md), or 
+* Click **[!UICONTROL + Add]** at the top of the [Calculated Metric Manager](/help/components/calc-metrics/cm-workflow/cm-manager.md), or 
 
 * Go to **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, open any report and click the Metrics icon  ![](assets/metrics_icon.png) to bring up the Metrics rail, then click **[!UICONTROL Add]**.
 
@@ -76,10 +76,6 @@ There are several ways to get to the Calculated Metric Builder:
   <tr> 
    <td colname="col2"> <span class="uicontrol"> Preview </span> </td> 
    <td colname="col3"> <p>Provides a quick read on any possible errors. The preview covers the last 90 days. This is a way of initially gauging whether you have selected the right components for your metric. An unexpected result would mean you need to take a second look at the metric definition. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <span class="uicontrol"> Product Compatibility </span> </td> 
-   <td colname="col3"> <p>Product compatibility shows you whether the metric is compatible with <a href="https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/current-data.html"  > Current Data </a>, with Fully Processed Data, or only with Marketing Channel reports (first-touch allocation). <p>Note:  Current Data does not support all metrics. Metrics that contain segments or functions are not compatible with current data. <a href="/help/components/c-calcmetrics/cm-compatibility.md"  > More... </a> </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <span class="uicontrol"> Add </span> </td> 
