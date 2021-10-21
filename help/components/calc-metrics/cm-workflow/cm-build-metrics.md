@@ -26,7 +26,7 @@ There are several ways to get to the Calculated Metric Builder:
 | Format | Choices include Decimal, Time, Percent, and Currency. |
 | Decimal Places | Shows how many decimal places will be shown in the report. The maximum number of decimal places you can specify is 10. |
 | Show Upward Trend As... | This metric polarity setting shows whether Analytics should consider an upward trend in the metric as good (green) or bad (red). As a result, the report's graph will show as green or red when it's going up. |
-| Currency | 
+| Currency | The base currency for this data view. |
 | Tags | Tagging is a good way to organize metrics. All users can create tags and apply one or more tags to a metric. However, you can see tags only for those segments that you own or that have been shared with you. What kinds of tags should you create? Here are some suggestions for useful tags:<ul><li>Tags based on team names, such as Social Marketing, Mobile Marketing.</li><li>Project tags (analysis tags), such as Entry-page analysis.</li><li>Category tags: Men's; geography.</li><li>Workflow tags: To be approved; Curated for (a specific business unit)</li></ul> |
 | Summary | The [!UICONTROL Summary] formula updates anytime you make a change to the metric definition. This formula also shows up in the metrics rail on the left when you hover over a metric and click the icon. |
 | Definition | This is where you drag in metrics/calculated metrics, filters, and/or functions to build the calculated metric. If you drag in a calculated metric, it will expand its metric definition automatically. You can nest definitions with containers. However, unlike segment containers, these containers function like a math expression and determine the order of operations. |
