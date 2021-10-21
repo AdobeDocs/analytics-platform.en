@@ -88,7 +88,7 @@ There are several ways to get to the Calculated Metric Builder:
   </tr> 
   <tr> 
    <td colname="col2"> Gear icon ( <span class="uicontrol"> Metric Type </span>, <span class="uicontrol"> Attribution </span>) </td> 
-   <td colname="col3"> <p>Selecting the gear icon next to a metric lets you specify the <a href="/help/components/c-calcmetrics/cm-workflow/c-build-metrics/m-metric-type-alloc.md"  > metric type and attribution models </a>. </p> </td> 
+   <td colname="col3"> <p>Selecting the gear icon next to a metric lets you specify the <a href="/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md"  > metric type and attribution models </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <span class="uicontrol"> + New </span> </td> 
@@ -122,7 +122,7 @@ There are several ways to get to the Calculated Metric Builder:
   </tr> 
   <tr> 
    <td colname="col2"> <p>List of Functions </p> </td> 
-   <td colname="col3"> <p>(Advanced calculated metrics only) Functions are divided into two lists: <a href="/help/components/c-calcmetrics/cm-reference/cm-functions.md"  > Basic </a> (used most often) and <a href="/help/components/c-calcmetrics/cm-reference/cm-adv-functions.md"  > Advanced </a>. </p> </td> 
+   <td colname="col3"> <p>(Advanced calculated metrics only) Functions are divided into two lists: <a href="/help/components/calc-metrics/cm-functions.md"  > Basic </a> (used most often) and <a href="/help/components/calc-metrics/cm-adv-functions.md"  > Advanced </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Data view selector </p> </td> 
