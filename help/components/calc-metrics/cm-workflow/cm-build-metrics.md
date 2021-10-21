@@ -17,116 +17,28 @@ There are several ways to get to the Calculated Metric Builder:
 
 ![](assets/cm_builder_ui.png)
 
-## UI Components {#section_9382AEEBA4244DD6A9F6C1DD3F6D076B}
+## UI Components {#ui-components}
 
-<table id="table_60A82936321047D1A335331BF83B0972"> 
- <thead> 
-  <tr> 
-   <th colname="col2" class="entry"> Field </th> 
-   <th colname="col3" class="entry"> Description </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col2"> <span class="uicontrol"> Title </span> </td> 
-   <td colname="col3"> <p>Naming the metric is mandatory. You cannot save the metric unless it is named. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <span class="uicontrol"> Description </span> </td> 
-   <td colname="col3"> <p>Give it a user-friendly description to show what it's used for and to distinguish it from similar ones. </p> <p>The description also appears within a report. It's best NOT to put the formula into the description - instead, describe what this metric should and should not be used for. (The formula is generated as you build the metric, underneath the Summary heading. As a result, there is no need to add the formula to the description.) </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <span class="uicontrol"> Format </span> </td> 
-   <td colname="col3"> <p>Choices include Decimal, Time, Percent, and Currency. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <span class="uicontrol"> Decimal Places </span> </td> 
-   <td colname="col3"> <p>Shows how many decimal places will be shown in the report. The maximum number of decimal places you can specify is 10. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <span class="uicontrol"> Show Upward Trend As... </span> </td> 
-   <td colname="col3"> <p>This metric polarity setting shows whether Analytics should consider an upward trend in the metric as good (green) or bad (red). As a result, the report's graph will show as green or red when it's going up. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <span class="uicontrol"> Tags </span> </td> 
-   <td colname="col3"> <p>Tagging is a good way to organize metrics. All users can create tags and apply one or more tags to a metric. However, you can see tags only for those segments that you own or that have been shared with you. What kinds of tags should you create? Here are some suggestions for useful tags: 
-     <ul id="ul_9A6CE5F179424687A39F2D5C1A953258"> 
-      <li id="li_A8815F2D8D284874AD701A7B103D82A3">Tags based on <b>team names</b>, such as Social Marketing, Mobile Marketing. </li> 
-      <li id="li_A51A4515A541488E9D90296A955E9F4F"><b>Project</b> tags (analysis tags), such as Entry-page analysis. </li> 
-      <li id="li_B4605470A7094026AC168420B64BBCC3"><b>Category</b> tags: Men's; geography. </li> 
-      <li id="li_B6EAB0F2A96C41209C4EC97B9E64390B"><b>Workflow</b> tags: To be approved; Curated for (a specific business unit) </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <span class="uicontrol"> Summary </span> </td> 
-   <td colname="col3"> <p>The <span class="uicontrol"> Summary </span> formula updates anytime you make a change to the metric definition. This formula also shows up in the metrics rail on the left when you hover over a metric and click the <img placement="inline"  src="assets/i_icon.png" id="image_BDA0EAF89C19440CB02AE248BA3F968E" /> icon. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <span class="uicontrol"> Definition </span> </td> 
-   <td colname="col3"> <p>This is where you drag in metrics/calculated metrics, segments, and/or functions to build the calculated metric. </p> <p> 
-     <ul id="ul_B13401A266354DC594C6176025DB61CB"> 
-      <li id="li_01776C32C7C5440AA1F847096CBED92B">If you drag in a calculated metric, it will expand its metric definition automatically. </li> 
-      <li id="li_A483D352522E4572AB43042473053359">You can nest definitions with containers. However, unlike segment containers, these containers function like a math expression and determine the order of operations. </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <span class="uicontrol"> Operator </span> </td> 
-   <td colname="col3"> <p>Divided by ( <img placement="inline"  src="assets/divided_icon.png" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" /> ) is the default operator, plus there are the +, -, and x operators. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <span class="uicontrol"> Preview </span> </td> 
-   <td colname="col3"> <p>Provides a quick read on any possible errors. The preview covers the last 90 days. This is a way of initially gauging whether you have selected the right components for your metric. An unexpected result would mean you need to take a second look at the metric definition. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <span class="uicontrol"> Add </span> </td> 
-   <td colname="col3"> <p>For all types of calculated metrics, you can add containers and static numbers to the definition. For advanced calculated metrics, you can also add segments and functions. </p> <p> 
-     <ul id="ul_607C1B303F334062BC620317667DE490"> 
-      <li id="li_53462789B8AF4F1AA9B45565D37CF22B">Containers function like a math expression and determine the order of operations. So anything in a container will get processed before the next operation. </li> 
-      <li id="li_401A9E0D8B3B468990289DBF66A06F63">Dragging a segment onto a container segments everything in that container. (Advanced calculated metrics only) </li> 
-      <li id="li_F191B200D7A944F9ADC0573A9A82A6DA">You can stack multiple segments in a container. </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> Gear icon ( <span class="uicontrol"> Metric Type </span>, <span class="uicontrol"> Attribution </span>) </td> 
-   <td colname="col3"> <p>Selecting the gear icon next to a metric lets you specify the <a href="/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md"  > metric type and attribution models </a>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <span class="uicontrol"> + New </span> </td> 
-   <td colname="col3"> <p>Lets you create a new component, such as a new filter (which takes you to the <a href="/help/components/filters/create-filters.md"  > Filter Builder </a>.) </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <p>Search Components </p> </td> 
-   <td colname="col3"> <p>This search bar lets you search for dimensions, metrics, segments (advanced calculated metrics only), and functions (advanced calculated metrics only). </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <p>List of Dimensions </p> </td> 
-   <td colname="col3"> <p>Rather than leaving the Calculated Metric Builder in order to build a simple segment (in the Segment Builder), e.g. "Page = Homepage", you can drag in Page and select Homepage directly from the Calculated Metric Builder. </p> <p>This results in a much more streamlined workflow for creating segmented calculated metrics. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <p>List of Metrics </p> </td> 
-   <td colname="col3"> <p>Metrics come in 3 categories: </p> 
-    <ul id="ul_7BF50F4964EF45858FBA1634FBFA45CF"> 
-     <li id="li_90F2312927A6499CA1CE04F8FFC912CF">Standard metrics ( <img placement="inline"  src="assets/met_icon.png" id="image_65A80F54D73443E78542FE0B31CC3F20" />) </li> 
-     <li id="li_A3F59083E79B4AC780D6F8CEDFFD20C9">Calculated metrics ( <img placement="inline"  src="assets/calc_met_icon.png" id="image_C5674AB9B9EB4DA9A56782D15822C319" />) </li> 
-     <li id="li_8735E76637ED4C3F983731A66E04C93E">Metrics templates ( <img placement="inline"  src="assets/cm_template_icon.png" width="25px" id="image_D236601511CC4DD3828F223431E27E88" />) - at the bottom of the list. </li> 
-    </ul> <p>When you hover over a metric, you can see the Info icon to the right of it: <img placement="inline"  src="assets/info.png" width="150px" id="image_5A65E772A68A4B94ACAD6552CCF21F5F" />. Clicking this icon gives you the following information: </p> 
-    <ul id="ul_DF35DDB9FBFA40C8A93FA0F2286A0BBE"> 
-     <li id="li_4215AA9BF93F4C8B941002A7A4D2F50B">The formula of how it is calculated. </li> 
-     <li id="li_6A8E39EB6DCE4377B0B594B6D4FC0294">A preview trend of the metric. </li> 
-     <li id="li_44C1595E4BE64ED69D1DB3BB6655ED55">An edit (pencil) icon at the top right that will take you to the Calculated Metrics Builder where you can edit this calculated metric. </li> 
-    </ul> <p><img placement="break" align="center"  src="assets/info2.png" width="200px" id="image_7D5B2F026A034118BE4DA81B9215A883" /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <p>List of Filters </p> </td> 
-   <td colname="col3"> <p>(Advanced calculated metrics only) As an Admin, this list shows all filters created in your login company. If you are a non-Admin user, this list shows filters you own and those shared with you. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <p>List of Functions </p> </td> 
-   <td colname="col3"> <p>(Advanced calculated metrics only) Functions are divided into two lists: <a href="/help/components/calc-metrics/cm-functions.md"  > Basic </a> (used most often) and <a href="/help/components/calc-metrics/cm-adv-functions.md"  > Advanced </a>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <p>Data view selector </p> </td> 
-   <td colname="col3"> <p>Lets you switch to a different data view. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Field | Description |
+| --- | --- |
+| Title | Naming the metric is mandatory. You cannot save the metric unless it is named. |
+| Description | Give it a user-friendly description to show what it's used for and to distinguish it from similar ones. The description also appears within a report. It's best NOT to put the formula into the description - instead, describe what this metric should and should not be used for. (The formula is generated as you build the metric, underneath the Summary heading. As a result, there is no need to add the formula to the description.) |
+| Format | Choices include Decimal, Time, Percent, and Currency. |
+| Decimal Places | Shows how many decimal places will be shown in the report. The maximum number of decimal places you can specify is 10. |
+| Show Upward Trend As... | This metric polarity setting shows whether Analytics should consider an upward trend in the metric as good (green) or bad (red). As a result, the report's graph will show as green or red when it's going up. |
+| Currency | The base currency for this data view. |
+| Tags | Tagging is a good way to organize metrics. All users can create tags and apply one or more tags to a metric. However, you can see tags only for those segments that you own or that have been shared with you. What kinds of tags should you create? Here are some suggestions for useful tags:<ul><li>Tags based on team names, such as Social Marketing, Mobile Marketing.</li><li>Project tags (analysis tags), such as Entry-page analysis.</li><li>Category tags: Men's; geography.</li><li>Workflow tags: To be approved; Curated for (a specific business unit)</li></ul> |
+| Summary | The [!UICONTROL Summary] formula updates anytime you make a change to the metric definition. This formula also shows up in the metrics rail on the left when you hover over a metric and click the icon. |
+| Definition | This is where you drag in metrics/calculated metrics, filters, and/or functions to build the calculated metric. If you drag in a calculated metric, it will expand its metric definition automatically. You can nest definitions with containers. However, unlike segment containers, these containers function like a math expression and determine the order of operations. |
+| Operator | [!UICONTROL Divided by] is the default operator, plus there are the +, -, and x operators.|
+| Preview | Provides a quick read on any possible errors. The preview covers the last 90 days. This is a way of initially gauging whether you have selected the right components for your metric. An unexpected result would mean you need to take a second look at the metric definition. |
+| Add | For all types of calculated metrics, you can add containers and static numbers to the definition. For advanced calculated metrics, you can also add filters and functions.<ul><li>Containers function like a math expression and determine the order of operations. So anything in a container will get processed before the next operation.</li><li>Dragging a segment onto a container segments everything in that container. (Advanced calculated metrics only)</li><li>You can stack multiple filters in a container.</li></ul> |
+| Gear icon (Metric Type, Attribution) | Selecting the gear icon next to a metric lets you specify the metric type and attribution models. |
+| + New | Lets you create a new component, such as a new filter (which takes you to the  Filter Builder .)|
+| Search Components | This search bar lets you search for dimensions, metrics, segments (advanced calculated metrics only), and functions (advanced calculated metrics only). |
+| List of Dimensions | Rather than leaving the Calculated Metric Builder in order to build a simple filter (in the Filter Builder), e.g. "Page = Homepage", you can drag in Page and select Homepage directly from the Calculated Metric Builder. This results in a much more streamlined workflow for creating filtered calculated metrics.|
+| List of Metrics | Metrics come in 3 categories:<ul><li>Standard metrics</li><li>Calculated metrics</li><li>Metrics templates - at the bottom of the list.</li></ul>When you hover over a metric, you can see the Info icon to the right of it. Clicking this icon gives you the following information:<ul><li>The formula of how it is calculated.</li><li>A preview trend of the metric.</li><li>An edit (pencil) icon at the top right that will take you to the Calculated Metrics Builder where you can edit this calculated metric.</li></ul> |
+| List of Filters | (Advanced calculated metrics only) As an Admin, this list shows all filters created in your login company. If you are a non-Admin user, this list shows filters you own and those shared with you. |
+| List of Functions | (Advanced calculated metrics only) Functions are divided into two lists: Basic (used most often) and Advanced .|
+| Data view selector | This selector (at the top right) lets you switch to a different data view. |
+
