@@ -1,14 +1,12 @@
 ---
 description: Shows how to build a simple "Page Views per Visits" metric.
 title: Build a simple "Page Views per Visits" metric
-uuid: 0730e51c-1f8f-473b-8825-d72911f2944c
-exl-id: 2d1c4677-b07c-4eca-97b7-e5e4594daee1
 ---
 # Build a simple "Page Views per Visits" metric
 
 Shows how to build a simple "Page Views per Visits" metric.
 
-For a detailed description of the UI components, see [Building Metrics](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
+For a detailed description of the UI components, see [Building Metrics](/help/components/c-calcmetrics/cm-workflow/c-build-metrics/cm-build-metrics.md).
 
 Here's how to build a simple "Page Views per Visits" metric.
 
@@ -25,4 +23,4 @@ Here's how to build a simple "Page Views per Visits" metric.
 1. Product compatibility shows you whether the metric is compatible with [Current Data](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/current-data.html) or only with Fully Processed Data.
 1. Click **[!UICONTROL Save]**.
 1. Notice that the **[!UICONTROL Summary]** formula updates anytime you make a change to the metric definition.
-1. You are now automatically taken to the [Calculated Metric Manager](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md), which is similar to the Segment Manager. It lets you share, approve, (re-)tag, rename, or delete metrics.
+1. You are now automatically taken to the [Calculated Metric Manager](/help/components/c-calcmetrics/cm-workflow/cm-manager.md), which is similar to the Filter Manager. It lets you share, approve, (re-)tag, rename, or delete metrics.

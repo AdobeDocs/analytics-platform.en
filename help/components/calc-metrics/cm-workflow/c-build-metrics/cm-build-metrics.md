@@ -92,11 +92,11 @@ There are several ways to get to the Calculated Metric Builder:
   </tr> 
   <tr> 
    <td colname="col2"> Gear icon ( <span class="uicontrol"> Metric Type </span>, <span class="uicontrol"> Attribution </span>) </td> 
-   <td colname="col3"> <p>Selecting the gear icon next to a metric lets you specify the <a href="/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md"  > metric type and attribution models </a>. </p> </td> 
+   <td colname="col3"> <p>Selecting the gear icon next to a metric lets you specify the <a href="/help/components/c-calcmetrics/cm-workflow/c-build-metrics/m-metric-type-alloc.md"  > metric type and attribution models </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <span class="uicontrol"> + New </span> </td> 
-   <td colname="col3"> <p>Lets you create a new component, such as a new segment (which takes you to the <a href="/help/components/segmentation/segmentation-workflow/seg-build.md"  > Segment Builder </a>.) </p> </td> 
+   <td colname="col3"> <p>Lets you create a new component, such as a new filter (which takes you to the <a href="/help/components/filters/create-filters.md"  > Filter Builder </a>.) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Search Components </p> </td> 
@@ -121,16 +121,16 @@ There are several ways to get to the Calculated Metric Builder:
     </ul> <p><img placement="break" align="center"  src="assets/info2.png" width="200px" id="image_7D5B2F026A034118BE4DA81B9215A883" /> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p>List of Segments </p> </td> 
-   <td colname="col3"> <p>(Advanced calculated metrics only) As an Admin, this list shows all segments created in your login company. If you are a non-Admin user, this list shows segments you own and those shared with you. <a href="https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-rights.html"  > More... </a> </p> </td> 
+   <td colname="col2"> <p>List of Filters </p> </td> 
+   <td colname="col3"> <p>(Advanced calculated metrics only) As an Admin, this list shows all filters created in your login company. If you are a non-Admin user, this list shows filters you own and those shared with you. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>List of Functions </p> </td> 
    <td colname="col3"> <p>(Advanced calculated metrics only) Functions are divided into two lists: <a href="/help/components/c-calcmetrics/cm-reference/cm-functions.md"  > Basic </a> (used most often) and <a href="/help/components/c-calcmetrics/cm-reference/cm-adv-functions.md"  > Advanced </a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p>Report Suite selector </p> </td> 
-   <td colname="col3"> <p>Lets you switch to a different report suite. </p> </td> 
+   <td colname="col2"> <p>Data view selector </p> </td> 
+   <td colname="col3"> <p>Lets you switch to a different data view. </p> </td> 
   </tr> 
  </tbody> 
 </table>
