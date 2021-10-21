@@ -153,8 +153,21 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Operators](components/filters/operators.md)
   + Calculated Metrics {#cja-calcmetrics}
     + [Calculated metrics overview](components/calc-metrics/calc-metr-overview.md)
-    + [Create a calculated metric](components/calc-metrics/create.md)
-    + [Manage calculated metrics](components/calc-metrics/manage.md)
+    + Calculated Metrics workflow {#cm-workflow}
+      + [Calculated metrics workflow](components/calc-metrics/cm-workflow/cm-workflow.md)
+      + [Find metrics](components/calc-metrics/cm-workflow/cm-finding.md)
+      + [Build Metrics](components/calc-metrics/cm-workflow/cm-build-metrics.md)
+      + [Metric Type and Attribution](components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
+      + [Build a simple "Page Views per Visits" metric](components/calc-metrics/cm-workflow/cm-pvv.md)
+      + [Filtered metrics](components/calc-metrics/cm-workflow/metrics-with-segments.md)
+      + [Stack and replace segments](components/calc-metrics/cm-workflow/cm-stack-seg.md)
+      + [Filtered and weighted metrics](components/calc-metrics/cm-workflow/cm-weighted-metric.md)
+      + [Use functions](components/calc-metrics/cm-workflow/cm-using-functions.md)
+      + [Participation Metric](components/calc-metrics/cm-workflow/participation-metric.md)
+      + [Tag calculated metrics](components/calc-metrics/cm-workflow/cm-tagging.md)
+      + [Approve calculated metrics](components/calc-metrics/cm-workflow/cm-approving.md)
+      + [Share calculated metrics](components/calc-metrics/cm-workflow/cm-sharing.md)
+      + [Calculated Metric Manager](components/calc-metrics/cm-workflow/cm-manager.md)
     + [Basic functions](components/calc-metrics/cm-functions.md)
     + [Advanced functions](components/calc-metrics/cm-adv-functions.md)
   + Date ranges {#cja-date-ranges}
