@@ -162,7 +162,6 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Filtered metrics](components/calc-metrics/cm-workflow/metrics-with-segments.md)
       + [Stack and replace segments](components/calc-metrics/cm-workflow/cm-stack-seg.md)
       + [Filtered and weighted metrics](components/calc-metrics/cm-workflow/cm-weighted-metric.md)
-      + [Order Assists Metric](components/calc-metrics/cm-workflow/cm-orders-participation.md)
       + [Use functions](components/calc-metrics/cm-workflow/cm-using-functions.md)
       + [Participation Metric](components/calc-metrics/cm-workflow/participation-metric.md)
       + [Tag calculated metrics](components/calc-metrics/cm-workflow/cm-tagging.md)
