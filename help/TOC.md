@@ -154,7 +154,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Calculated Metrics {#cja-calcmetrics}
     + [Calculated metrics overview](components/calc-metrics/calc-metr-overview.md)
     + Calculated Metrics workflow {#cm-workflow}
-      + [Calculated metrics workflow](cja-calcmetrics/cm-workflow/cm-workflow.md)
+      + [Calculated metrics workflow](calcmetrics/cm-workflow/cm-workflow.md)
       + [Find metrics](cja-calcmetrics/cm-workflow/cm-finding.md)
       + [Build Metrics](cja-calcmetrics/cm-workflow/cm-build-metrics.md)
       + [Metric Type and Attribution](cja-calcmetrics/cm-workflow/m-metric-type-alloc.md)
