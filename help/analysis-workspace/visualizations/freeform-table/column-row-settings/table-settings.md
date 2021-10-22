@@ -25,7 +25,7 @@ Row settings vary depending on which component you have dragged into the table. 
 
 To change the number of rows that are displayed:
 
-1. Click the number next to Rows at the tops of the table.
+1. Click the number next to [!UICONTROL Rows] at the tops of the table.
 
    ![](assets/row-number.png)
 
