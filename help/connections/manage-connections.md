@@ -110,8 +110,7 @@ It lets you:
 | [!UICONTROL Backfill data] | Backfill (historical) data is tracked in 3 states: [!UICONTROL In queue], [!UICONTROL In progress] (with progress percentage indicated), and [!UICONTROL Complete]. |
 | [!UICONTROL Created by] | Name of the person who create the connection. |
 | [!UICONTROL Last modified] | Date and time of last change to the connection. |
-| [!UICONTROL Last modified by] | 
-
+| [!UICONTROL Last modified by] | Person who last modified the connection. |
 | **Right-hand rail at the dataset level** |  |
 | [!UICONTROL Person ID] | Shows an identity that was defined in the dataset schema in the Experience Platform. This is the Person ID you chose during the creation of the connection. If you create a connection that includes datasets with different IDs, the reporting will reflect that. To really merge datasets, you need use the same Person ID across datasets. |
 | [!UICONTROL Records available] | Represents the total number of rows ingested for this dataset, for the particular time period selected through the calendar. There is no latency in terms of getting the data to appear in reporting, once it is added. (The exception is that when you create a brand-new connection, there will be [latency](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#3.-getting-data-into-customer-journey-analytics). |
