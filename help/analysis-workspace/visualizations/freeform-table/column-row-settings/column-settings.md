@@ -7,6 +7,10 @@ exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 
 [!UICONTROL Column Settings] let you configure column formatting, some of which can be conditional.
 
+View a video on row and column settings here:
+
+[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
+
 ## Edit [!UICONTROL Column Settings] {#edit-column-settings}
 
 To access [!UICONTROL Column Settings], drag a Freeform Table to the project, then click the gear icon in the column heading.
