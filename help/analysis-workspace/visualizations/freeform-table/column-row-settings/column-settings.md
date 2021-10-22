@@ -9,7 +9,7 @@ exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 
 View a video on row and column settings here:
 
-[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
 
 ## Edit [!UICONTROL Column Settings] {#edit-column-settings}
 

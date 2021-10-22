@@ -12,7 +12,7 @@ exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 
 View a video on row and column settings here:
 
-[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
 
 Row settings vary depending on which component you have dragged into the table. To access table row settings, click the [!UICONTROL Settings] icon next to a dimension, filter, metric, time period, or a breakdown within each of these:
 
