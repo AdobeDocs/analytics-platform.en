@@ -11,6 +11,7 @@ When you create a connection, CJA combines all schemas and datasets into a singl
 * Schemas are combined. Duplicate schema fields are merged.
 * The 'Person ID' column of each dataset are merged into a single column, regardless of their name. This column is the foundation of identifying unique visitors in CJA.
 * Rows are processed based on timestamp.
+* Events are resolved down to the millisecond level.
 
 ## Example
 
