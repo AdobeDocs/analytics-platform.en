@@ -32,3 +32,14 @@ Project preferences apply to new projects and new panels created in Analysis Wor
 |  | [Panel Type](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html) | <ul><li>Freeform (default)</li><li>Blank</li><li>Quick Insights</li></ul> |
 |  | Number format | <ul><li>1,000.00 (default)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV separator | <ul><li>Comma (default)</li><li>Semicolon</li><li>Colon</li><li>Pipe</li><li>Period</li><li>Space</li><li>Tab</li></ul> |
+
+## [!UICONTROL Dark theme]
+
+If you prefer to have a dark background for your Customer Journey Analytics user interface, you can toggle to [!UICONTROL Dark theme].
+
+1. Click the Experience Cloud user icon at the top right.
+
+   ![dark-theme](assets/dark-theme.png)
+
+1. Move the **[!UICONTROL Dark theme]** toggle to the right.
+
