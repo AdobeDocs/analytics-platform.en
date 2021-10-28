@@ -28,6 +28,8 @@ Note: If a (purple) date range component is used within a table, visualization o
 
 ![](assets/panel-calendar.png)
 
+You can apply a minute-level date range under the advanced settings of your panel calendar. If you are reporting on a date range that spans many days, start time applies to the first day and end time applies to the last day in your range.
+
 ## Dropzone {#dropzone}
 
 The panel dropzone enables you to apply filters and drop-down filters to all tables and visualizations within a panel. You can apply one or many filters to a panel. The title above each filter can be modified by clicking the edit pencil, or you can right-click to remove it altogether.
