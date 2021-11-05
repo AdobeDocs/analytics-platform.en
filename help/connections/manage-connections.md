@@ -108,19 +108,19 @@ It lets you:
 | [!UICONTROL Data views using connection] | Lists all the data views that use this connection. |
 | [!UICONTROL Import new data] | (On/Off) Indicates whether new batches of data should or should not be added to the historical (backfill) data. |
 | [!UICONTROL Backfill data] | Backfill (historical) data is tracked in 3 states: [!UICONTROL In queue], [!UICONTROL In progress] (with progress percentage indicated), and [!UICONTROL Complete]. |
-| [!UICONTROL Created by] | Name of the person who create the connection. |
-| [!UICONTROL Last modified] | Date and time of last change to the connection. |
-| [!UICONTROL Last modified by] | Person who last modified the connection. |
+| [!UICONTROL Created by] | Shows the name of the person who create the connection. |
+| [!UICONTROL Last modified] | Shows the date and time of last change to the connection. |
+| [!UICONTROL Last modified by] | Shows the person who last modified the connection. |
 | **Right-hand rail at the dataset level** |  |
 | [!UICONTROL Person ID] | Shows an identity that was defined in the dataset schema in the Experience Platform. This is the Person ID you chose during the creation of the connection. If you create a connection that includes datasets with different IDs, the reporting will reflect that. To really merge datasets, you need use the same Person ID across datasets. |
 | [!UICONTROL Records available] | Represents the total number of rows ingested for this dataset, for the particular time period selected through the calendar. There is no latency in terms of getting the data to appear in reporting, once it is added. (The exception is that when you create a brand-new connection, there will be [latency](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#3.-getting-data-into-customer-journey-analytics). |
-| [!UICONTROL Records added] | How many rows were added in the selected time period. **Note**: Data for **[!UICONTROL Records added]** includes only event data at this time, not profile or lookup data. |
-| [!UICONTROL Records deleted] | How many records were deleted during the selected time period. **Note**: Data for **[!UICONTROL Records deleted]** includes only event data at this time, not profile or lookup data. |
-| [!UICONTROL Batches added] | How many data batches were added into this dataset.  |
-| [!UICONTROL Records skipped] | How many rows were skipped during ingestion in the selected time period. **Note**: Data for **[!UICONTROL Records skipped]** includes only event data at this time, not profile or lookup data. |
-| [!UICONTROL Last added] | When the last batch was added. |
+| [!UICONTROL Records added] | Indicates how many rows were added in the selected time period. **Note**: Data for **[!UICONTROL Records added]** includes only event data at this time, not profile or lookup data. |
+| [!UICONTROL Records deleted] | Indicates how many records were deleted during the selected time period. **Note**: Data for **[!UICONTROL Records deleted]** includes only event data at this time, not profile or lookup data. |
+| [!UICONTROL Batches added] | Indicates how many data batches were added into this dataset.  |
+| [!UICONTROL Records skipped] | Indicates how many rows were skipped during ingestion in the selected time period. **Note**: Data for **[!UICONTROL Records skipped]** includes only event data at this time, not profile or lookup data. |
+| [!UICONTROL Last added] | Indicates when the last batch was added. |
 | [!UICONTROL Dataset type] | Either [!UICONTROL Event], [!UICONTROL Lookup], or [!UICONTROL Profile]. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset)  |
-| [!UICONTROL Schema] | The Adobe Experience Platform schema that this dataset is based on. |
+| [!UICONTROL Schema] | Shows the Adobe Experience Platform schema that this dataset is based on. |
 | [!UICONTROL Dataset ID] | This ID is system generated in Adobe Experience Platform. |
 
 ### Edit connection
