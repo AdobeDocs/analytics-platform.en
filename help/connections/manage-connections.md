@@ -28,6 +28,8 @@ The Connections Manager allows you to:
 
 ![](assets/conn-manager.png)
 
+### Connection Manager settings
+
 | Setting | Description |
 | --- | --- |
 | [!UICONTROL Name] | The connection's friendly name. When you click the hyperlinked name, you get to the Connection details page described below.|
@@ -81,6 +83,8 @@ It lets you:
 
 ![](assets/conn-details.png)
 
+### Connection Details settings
+
 | Widget/Setting | Description |
 | --- | --- |
 | Dataset selector | Lets you pick one or all datasets in the connection. You cannot multi-select datasets. Defaults to [!UICONTROL All datasets]. |
@@ -88,7 +92,7 @@ It lets you:
 | [!UICONTROL Records of event data available] widget | Represents the total number of event dataset rows available for reporting, **for the entire connection**. This count is independent of any calendar settings. It changes if you select a dataset from the dataset selector or by selecting a dataset in the table. ( Note that there is a latency of 1-2 hours to get the data to appear in reporting, once it is added.) |
 | [!UICONTROL Metrics] widget | Summarizes the event records added/skipped/deleted, and the number of batches added, **for the dataset and date range you have selected**. |
 | [!UICONTROL Records added] widget | Indicates how many rows were added in the selected time period, **for the dataset and date range you have selected**. Updated every 10 minutes. **Note**: Data for **[!UICONTROL Records added]** includes only event data at this time, not profile or lookup data. |
-| [!UICONTROL Records skipped] widget | Indicates how many rows were skipped in the selected time period, **for the dataset and date range you have selected**. Reasons for skipping records include: Missing timestamps, missing or invalid person ID, etc. Updated every 10 minutes.<p>Invalid person IDs (undefined, all zeros) cannot be attributed to any specific user or person. They cannot be ingested into the system and result in error-prone ingestion and reporting processes. To fix invalid person IDs, you have 3 options:<ul><li>Use stitching to populate the undefined or all-zero user IDs with valid user IDs.</li><li>Blank out the user ID, which will them also be skipped during ingestion (preferable to invalid or all-zero user IDs).</li><li>Fix any invalid user IDs in your system before ingesting the data.</li></ul><p>**Note**: Data for **[!UICONTROL Records skipped]** includes only event data at this time, not profile or lookup data. |
+| [!UICONTROL Records skipped] widget | Indicates how many rows were skipped in the selected time period, **for the dataset and date range you have selected**. Reasons for skipping records include: Missing timestamps, missing or invalid person ID, etc. Updated every 10 minutes.<p>Invalid person IDs (such as "undefined", or "00000000", or any combination of numbers and letters in a [!UICONTROL Person ID] that appears in an event more than 1 million times in a given month) cannot be attributed to any specific user or person. They cannot be ingested into the system and result in error-prone ingestion and reporting. To fix invalid person IDs, you have 3 options:<ul><li>Use [Cross-Channel Analytics](/help/connections/cca/overview.md) to populate the undefined or all-zero user IDs with valid user IDs.</li><li>Blank out the user ID, which will them also be skipped during ingestion (preferable to invalid or all-zero user IDs).</li><li>Fix any invalid user IDs in your system before ingesting the data.</li></ul><p>**Note**: Data for **[!UICONTROL Records skipped]** includes only event data at this time, not profile or lookup data. |
 | [!UICONTROL Records deleted] widget | Indicates how many rows were deleted in the selected time period, **for the dataset and date range you have selected**. Someone might have deleted a dataset in Experience Platform, for example. Updated every 10 minutes. **Note**: Data for **[!UICONTROL Records deleted]** includes only event data at this time, not profile or lookup data. |
 | Dataset search box | You can search by dataset name or [!UICONTROL Dataset ID]. |
 | [!UICONTROL Datasets] | Shows the datasets that are part of the connection. You can click the hyperlink to view all the datasets in the connection.  |
@@ -97,7 +101,11 @@ It lets you:
 | [!UICONTROL Last added] | Shows the timestamp for the last added batch to this dataset.  |
 | [!UICONTROL Dataset type] | The dataset type for this dataset can be [!UICONTROL Event], [!UICONTROL Lookup], or [!UICONTROL Profile]. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset)  |
 | Schema | The Adobe Experience Platform schema that the datasets in this connection are based on.  |
-| **Right-hand rail at the connection level** |  |
+
+### Right-hand rail settings at connection level
+
+| Setting | Description |
+| --- | --- |
 | [!UICONTROL Refresh] | Refresh the connection to allow recently added records to be reflected.  |
 | [!UICONTROL Delete] | Delete this connection.  |
 | [!UICONTROL Create data view] | Create a new data view based on this connection. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
@@ -111,13 +119,17 @@ It lets you:
 | [!UICONTROL Created by] | Shows the name of the person who create the connection. |
 | [!UICONTROL Last modified] | Shows the date and time of last change to the connection. |
 | [!UICONTROL Last modified by] | Shows the person who last modified the connection. |
-| **Right-hand rail at the dataset level** |  |
+
+### Right-hand rail settings at dataset level
+
+| Setting | Description |
+| --- | --- |
 | [!UICONTROL Person ID] | Shows an identity that was defined in the dataset schema in the Experience Platform. This is the Person ID you chose during the creation of the connection. If you create a connection that includes datasets with different IDs, the reporting will reflect that. To really merge datasets, you need use the same Person ID across datasets. |
 | [!UICONTROL Records available] | Represents the total number of rows ingested for this dataset, for the particular time period selected through the calendar. There is no latency in terms of getting the data to appear in reporting, once it is added. (The exception is that when you create a brand-new connection, there will be [latency](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#3.-getting-data-into-customer-journey-analytics). |
 | [!UICONTROL Records added] | Indicates how many rows were added in the selected time period. **Note**: Data for **[!UICONTROL Records added]** includes only event data at this time, not profile or lookup data. |
 | [!UICONTROL Records deleted] | Indicates how many records were deleted during the selected time period. **Note**: Data for **[!UICONTROL Records deleted]** includes only event data at this time, not profile or lookup data. |
 | [!UICONTROL Batches added] | Indicates how many data batches were added into this dataset.  |
-| [!UICONTROL Records skipped] | Indicates how many rows were skipped during ingestion in the selected time period.<p>Invalid person IDs (undefined, all zeros) cannot be attributed to any specific user or person. They cannot be ingested into the system and result in error-prone ingestion and reporting processes. To fix invalid person IDs, you have 3 options:<ul><li>Use stitching to populate the undefined or all-zero user IDs with valid user IDs.</li><li>Blank out the user ID, which will them also be skipped during ingestion (preferable to invalid or all-zero user IDs).</li><li>Fix any invalid user IDs in your system before ingesting the data.</li></ul><p>**Note**: Data for **[!UICONTROL Records skipped]** includes only event data at this time, not profile or lookup data.|
+| [!UICONTROL Records skipped] | Indicates how many rows were skipped during ingestion in the selected time period.<p>Reasons for skipping records include: Missing timestamps, missing or invalid person ID, etc. Updated every 10 minutes.<p>Invalid person IDs (such as "undefined", or "00000000", or any combination of numbers and letters in a [!UICONTROL Person ID] that appears in an event more than 1 million times in a given month) cannot be attributed to any specific user or person. They cannot be ingested into the system and result in error-prone ingestion and reporting. To fix invalid person IDs, you have 3 options:<ul><li>Use [Cross-Channel Analytics](/help/connections/cca/overview.md) to populate the undefined or all-zero user IDs with valid user IDs.</li><li>Blank out the user ID, which will them also be skipped during ingestion (preferable to invalid or all-zero user IDs).</li><li>Fix any invalid user IDs in your system before ingesting the data.</li></ul><p>**Note**: Data for **[!UICONTROL Records skipped]** includes only event data at this time, not profile or lookup data. |
 | [!UICONTROL Last added] | Indicates when the last batch was added. |
 | [!UICONTROL Dataset type] | Either [!UICONTROL Event], [!UICONTROL Lookup], or [!UICONTROL Profile]. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset)  |
 | [!UICONTROL Schema] | Shows the Adobe Experience Platform schema that this dataset is based on. |
