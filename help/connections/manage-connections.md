@@ -135,7 +135,7 @@ It lets you:
 | [!UICONTROL Schema] | Shows the Adobe Experience Platform schema that this dataset is based on. |
 | [!UICONTROL Dataset ID] | This ID is system generated in Adobe Experience Platform. |
 
-### Edit connection
+## Edit connection
 
 Allows Admins to edit the connection. Select a connection, then click [!UICONTROL Edit Connection] to get to this dialog. Here, you can do the following:
 
