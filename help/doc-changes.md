@@ -9,6 +9,7 @@ The following updates were made to the CJA documentation since its inception.
 
 | Date | Update description |
 | --- | --- |
+| November 2021 | Updated documentation for [[!UICONTROL Records skipped]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#connection-details-settings) on the Connections Details page. |
 | October 2021 | Documentation for [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/report-buider-overview.html#) in CJA. |
 | October 2021 | Customer Journey Analytics [Audit Log](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) API documentation |
 | October 2021 | Documented [Visualizations for Analytics dashboards](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=en#apply-visualizations) |
