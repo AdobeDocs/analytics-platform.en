@@ -26,7 +26,7 @@ The Connections Manager allows you to:
 * Rename a connection.
 * Create a data view from a connection.
 
-![Manage connections](assets/conn-manager.png)
+![](assets/conn-manager.png)
 
 | Setting | Description |
 | --- | --- |
@@ -79,7 +79,7 @@ It lets you:
 
  Here are the widgets and settings explained:
 
-![View connection detail](assets/conn-details.png)
+![](assets/conn-details.png)
 
 | Widget/Setting | Description |
 | --- | --- |
