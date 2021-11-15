@@ -51,13 +51,13 @@ Cross-Channel Analytics is a groundbreaking and robust feature, but has limitati
 Once your organization meets all prerequisites and understands its limitations, you can follow these steps to start using it in CJA.
 
 1. Import the desired data into Adobe Experience Platform. See [Create a schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) and [Ingest data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) in the Adobe Experience Platform documentation.
-1. Contact your Adobe Account Manager that includes the following:
+1. Contact your Adobe Technical Account Manager with the following information:
    * A request to enable Cross-Channel Analytics
    * The dataset ID for the dataset that you want to rekey
    * The column name of the persistent ID for the desired dataset (Identifier that appears on every row)
    * The column name of the transient ID for desired dataset (The person identifier link between datasets)
    * Your preference of [replay](replay.md) frequency and lookback length. Options include a replay once a week with a 7-day lookback window, or a replay every day with a 1-day lookback window.
-1. The Adobe Account Manager will work with Adobe engineering to enable Cross-Channel Analytics upon receiving your request. Once enabled, a new rekeyed dataset that contains a new person ID column appears in Adobe Experience Platform. Your Adobe Account Manager can provide the new dataset ID and person ID column name.
+1. The Adobe Technical Account Manager will work with Adobe engineering to enable Cross-Channel Analytics upon receiving your request. Once enabled, a new rekeyed dataset that contains a new person ID column appears in Adobe Experience Platform. Your Adobe Technical Account Manager can provide the new dataset ID and person ID column name.
 1. When first turned on, Adobe will provide a backfill of stitched data that goes back as far as the beginning of the previous month (up to 60 days.) In order to do this backfill, the transient ID must exist in the unstitched data back that far in time.
 1. [Create a connection](../create-connection.md) in CJA using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
 1. [Create a data view](/help/data-views/create-dataview.md) based on the connection.
