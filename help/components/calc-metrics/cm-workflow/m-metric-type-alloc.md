@@ -1,6 +1,7 @@
 ---
-description: Learn about 
+description: Learn about
 title: Metric Type and Attribution
+exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
 ---
 # Metric Type and Attribution
 
@@ -19,4 +20,3 @@ Selecting the gear icon next to a metric lets you specify the metric type and th
 
 >[!IMPORTANT]
 >For a full list of non-default attribution models and lookback windows supported, see [Attribution models and lookback windows](/help/analysis-workspace/attribution/models.md).
-

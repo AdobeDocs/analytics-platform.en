@@ -1,6 +1,7 @@
 ---
 description: The Calculated Metrics Builder provides a canvas to drag and drop Dimensions, Metrics, Filters, and Functions to create custom metrics based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple calculated metrics or complex advanced calculated metrics.
 title: Build Metrics
+exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 ---
 # Build Metrics
 
@@ -42,4 +43,3 @@ There are several ways to get to the Calculated Metric Builder:
 | List of Filters | (Advanced calculated metrics only) As an Admin, this list shows all filters created in your login company. If you are a non-Admin user, this list shows filters you own and those shared with you. |
 | List of Functions | (Advanced calculated metrics only) Functions are divided into two lists: Basic (used most often) and Advanced .|
 | Data view selector | This selector (at the top right) lets you switch to a different data view. |
-

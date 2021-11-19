@@ -1,7 +1,7 @@
 ---
 description: Shows how to stack and replace filters within the Calculated Metric Builder.
 title: Stack and replace filters
-
+exl-id: a396599c-2033-40a7-90b5-f9c84106c328
 ---
 # Stack and replace filters
 
