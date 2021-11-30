@@ -26,7 +26,7 @@ Report Builder for Customer Journey Analytics is supported on the following oper
 
   All Windows desktop Excel users must install Microsoft Edge Webview2 to use the add-in. To install the controller:
 
-  1.  Go to <http://aka.ms/webview2installer>.
+  1.  Go to <https://aka.ms/webview2installer>.
   1.  Select and download the Evergreen Standalone Installer.
   1.  Follow the installation prompts.
 
