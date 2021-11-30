@@ -2,6 +2,7 @@
 title: Add global lookups to your datasets
 description: Use global lookups to augment reporting with useful dimensions in Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
+solution: Customer Journey Analytics
 ---
 # Add global lookups to your datasets
 

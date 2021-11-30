@@ -2,6 +2,7 @@
 title: Cross-Channel Analytics overview
 description: Re-key visitor ID's from multiple datasets to stitch visitors together.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
+solution: Customer Journey Analytics
 ---
 # Cross-Channel Analytics overview
 

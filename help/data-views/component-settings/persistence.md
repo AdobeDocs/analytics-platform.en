@@ -2,6 +2,7 @@
 title: Persistence component settings
 description: Determine how or whether dimension values persist from one event to the next.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
+solution: Customer Journey Analytics
 ---
 
 # [!UICONTROL Persistence] component settings

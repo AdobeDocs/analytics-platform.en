@@ -1,6 +1,7 @@
 ---
 title: Journey IQ
 description: Understand the features that make up Journey IQ, a set of features that are a part of Adobe Analytics.
+solution: Customer Journey Analytics
 ---
 
 # Journey IQ

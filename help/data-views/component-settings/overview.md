@@ -2,6 +2,7 @@
 title: Component settings
 description: View core settings for a component.
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
+solution: Customer Journey Analytics
 ---
 # Component settings
 

@@ -4,6 +4,7 @@ title: Adobe Analytics dashboards curator guide
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 3538361d-68bf-4d67-ae14-55691909db6f
+solution: Customer Journey Analytics
 ---
 # Curator tasks
 

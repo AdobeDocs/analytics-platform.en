@@ -4,6 +4,7 @@ title: Set up executives to use dashboards
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
+solution: Customer Journey Analytics
 ---
 # Set up executive users to use dashboards
 

@@ -4,6 +4,7 @@ title: Create a scorecard
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
+solution: Customer Journey Analytics
 ---
 # Create a scorecard
 

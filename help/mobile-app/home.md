@@ -4,6 +4,7 @@ description: Product documentation and self-help for Adobe Analytics dashboards
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 7c5fa374-fa39-4bbc-9bd7-0ef17914d593
+solution: Customer Journey Analytics
 ---
 # Adobe Analytics [!UICONTROL dashboards] - Overview
 

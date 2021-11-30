@@ -2,6 +2,7 @@
 title: (B2B) Add account-level data as a lookup dataset
 description: Learn how to add account-based data as a lookup dataset to CJA
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
+solution: Customer Journey Analytics
 ---
 # (B2B) Add account-level data as a lookup dataset
 

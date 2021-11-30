@@ -2,6 +2,7 @@
 title: Include Exclude values component settings
 description: Conditionally include or exclude a dimension item depending on its value.
 exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
+solution: Customer Journey Analytics
 ---
 # Include Exclude values component settings
 

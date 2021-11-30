@@ -2,6 +2,7 @@
 title: How replays work
 description: Understand the concept of "replay" in Cross-Channel Analytics
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
+solution: Customer Journey Analytics
 ---
 # How replays work
 
