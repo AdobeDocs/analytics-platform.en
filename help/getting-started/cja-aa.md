@@ -2,6 +2,7 @@
 title: Customer Journey Analytics feature support
 description: Customer Journey Analytics features compared with Adobe Analytics features set.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
+solution: Customer Journey Analytics
 ---
 # Customer Journey Analytics feature support
 

@@ -4,6 +4,7 @@ title: Adobe Analytics dashboards executive guide
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
+solution: Customer Journey Analytics
 ---
 # Executive user quick start guide
 

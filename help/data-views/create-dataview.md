@@ -2,6 +2,7 @@
 title: Create or edit a data view
 description: All settings that you can adjust to create or edit a data view.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
+solution: Customer Journey Analytics
 ---
 # Create or edit a data view
 

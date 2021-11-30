@@ -2,6 +2,7 @@
 title: Customer Journey Analytics Guide
 description: Customer Journey Analytics landing page.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
+solution: Customer Journey Analytics
 ---
 # Customer Journey Analytics Guide
 
@@ -16,8 +17,8 @@ Analytics Select, Prime, and Ultimate customers are eligible to purchase this ad
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>New or Featured Items</b> </p> <p> 
      <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#connection-detail"> Documentation on enhanced Connection management capabilities </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en#cja-dataviews"> Documentation on enhanced Data Views capabilities </a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#connection-detail"> How to use the enhanced Connection management capabilities </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en#cja-dataviews"> How to use the enhanced Data Views capabilities </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=en#cja-usecases"> Documentation on ingesting Google Analytics data into Adobe Experience Platform </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=en#cja-usecases"> Documentation on analyzing Google Analytics data in CJA </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#cja-connections"> Cross-Channel Analytics (stitching IDs in Customer Journey Analytics) </a> </li>

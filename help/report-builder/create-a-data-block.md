@@ -5,6 +5,7 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
+solution: Customer Journey Analytics
 ---
 # Create a Data Block
 

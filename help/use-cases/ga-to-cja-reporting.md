@@ -2,6 +2,7 @@
 title: Report on Google Analytics data in Customer Journey Analytics
 description: Shows useful reports on Google Analytics data in Customer Journey Analytics
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
+solution: Customer Journey Analytics
 ---
 # Report on Google Analytics data in Customer Journey Analytics
 

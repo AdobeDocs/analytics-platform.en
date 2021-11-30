@@ -5,6 +5,7 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
+solution: Customer Journey Analytics
 ---
 # Report Builder Hub
 

@@ -2,6 +2,7 @@
 title: Perform basic analysis in Customer Journey Analytics
 description: Describes how to use basic visualizations to analyze data in Customer Journey Analytics
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
+solution: Customer Journey Analytics
 ---
 # Perform basic analysis
 

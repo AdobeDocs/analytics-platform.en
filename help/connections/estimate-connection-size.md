@@ -1,7 +1,8 @@
 ---
-title: Estimate connection size
+title: How to estimate CJA connection size
 description: Report on your current usage of Customer Journey Analytics
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
+solution: Customer Journey Analytics
 ---
 # Estimate connection size
 

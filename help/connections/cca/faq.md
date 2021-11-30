@@ -2,6 +2,7 @@
 title: Cross-Channel Analytics FAQ
 description: Frequently asked questions for Cross-Channel Analytics
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
+solution: Customer Journey Analytics
 ---
 # Frequently asked questions
 

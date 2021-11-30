@@ -2,6 +2,7 @@
 title: Customer Journey Analytics use cases
 description: Use cases for Customer Journey Analytics
 exl-id: 90746eb0-99df-463a-8f01-330fd460a4a8
+solution: Customer Journey Analytics
 ---
 # Customer Journey Analytics use cases
 

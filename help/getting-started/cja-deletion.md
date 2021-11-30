@@ -2,6 +2,7 @@
 title: Deletion implications
 description: What happens when you delete connections, datasets, or batches in Customer Journey Analytics or Adobe Experience Platform.
 exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
+solution: Customer Journey Analytics
 ---
 # Deletion implications
 

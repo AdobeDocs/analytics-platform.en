@@ -1,8 +1,9 @@
 ---
-title: Manage connections
+title: How to manage connections in Customer Journey Analytics
 description: Describes how to manage connections to Experience Platform datasets in Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
+solution: Customer Journey Analytics
 ---
 # Manage connections
 

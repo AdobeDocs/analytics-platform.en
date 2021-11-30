@@ -5,6 +5,7 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
+solution: Customer Journey Analytics
 ---
 # Filter Dimensions
 
