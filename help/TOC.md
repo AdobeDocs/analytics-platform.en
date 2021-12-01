@@ -26,6 +26,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Manage connections](connections/manage-connections.md)
   + [Estimate connection size](connections/estimate-connection-size.md)
   + [Combined event datasets](connections/combined-dataset.md)
+  + [Standard lookups](connections/standard-lookups.md)
   + Cross-Channel Analytics {#cca}
     + [Cross-Channel Analytics overview](connections/cca/overview.md)
     + [How replays work](connections/cca/replay.md)
@@ -185,7 +186,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Import call center and web data](use-cases/call-center.md)
   + [Data ingestion use cases](use-cases/data-ingestion.md)
   + [Use Marketing channel dimensions](use-cases/marketing-channels.md)
-  + [Add global lookups to your datasets](use-cases/global-lookups.md)
   + [Ingest Google Analytics data into Adobe Experience Platform](use-cases/ga-to-cja.md)
   + [Report on Google Analytics data in CJA](use-cases/ga-to-cja-reporting.md)
 + Analytics dashboards {#cja-dashboards}

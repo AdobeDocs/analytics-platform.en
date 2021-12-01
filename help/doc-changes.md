@@ -34,7 +34,7 @@ The following updates were made to the CJA documentation since its inception.
 | March 2021 | New topic on [user preferences](/help/analysis-workspace/user-preferences.md) in Workspace. |
 | February 2021 | New topic on using [Marketing Channel dimensions in Adobe Experience Platform](/help/use-cases/marketing-channels.md). |
 | February 2021 | Published the new [CJA API](https://www.adobe.io/cja-apis/docs/) documentation. |
-| January 2021 | New topic on [adding global lookups to your dataset](/help/use-cases/global-lookups.md). |
+| January 2021 | New topic on [adding standard lookups to your dataset](/help/connections/standard-lookups.md). |
 | November 13, 2020 | New topics on [Cross-Channel Analytics](/help/connections/cca/overview.md), which allows you to rekey a dataset's person ID, and enables a seamless combination of multiple datasets. |
 | November 13, 2020 | A new use case on [importing call center and web data](/help/use-cases/call-center.md) was added. |
 | November 11, 2020 | Added a topic on [Estimating the connection size](/help/connections/estimate-connection-size.md).|
