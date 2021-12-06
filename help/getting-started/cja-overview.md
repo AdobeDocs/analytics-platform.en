@@ -55,12 +55,11 @@ To create connections, add datasets, etc., you need the following permissions in
   * Create/update/delete Connections or Data Views
   * Update/delete projects, filters, calc metrics, or filters created by other users
   * Share a Workspace project to all users
-* Becoming a product admin within Customer Journey Analytics alone is not enough to create, update, or delete a Connection. To create a connection to an Experience Platform dataset, you also need Experience Platform permissions. Specifically, you must be part of an **Experience Platform Product Profile** that gives you the following permissions:
+* Becoming a product admin within Customer Journey Analytics alone is not enough to create create, update, or delete a Connection. To create a connection to an Experience Platform dataset, you also need Experience Platform permissions. Specifically, you must be part of an **Experience Platform Product Profile** that gives you the following permissions:
   * View Schemas
   * Manage Schemas
+  * View Identity Namespaces
   * View Datasets
-  * Manage Datasets
-  * Manage Sources
   
 For more information on Experience Platform permissions, see [Access control in Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
 
