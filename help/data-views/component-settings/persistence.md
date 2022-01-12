@@ -49,12 +49,12 @@ Details around the available allocation settings.
 
 * **[!UICONTROL First Known]** and **[!UICONTROL Last Known]**: (Jan 19, 2022 ) These two allocation models satisfy "entry" and "exit" dimension use cases. They take the first or last observed value for a dimension within a specified persistence scope (session, person, or custom time period with lookback) and apply it to all events within the specified scope. Example:
 
-| Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
-| --- | --- | --- | --- | --- | --- |
-| Timestamp (min) | 1 | 2 | 3 | 6 | 7 |
-| Original values |  | C | B |  | A |
-| First known | C | C | C | C | C |
-| Last known | A | A | A | A | A | 
+  | Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Timestamp (min) | 1 | 2 | 3 | 6 | 7 |
+  | Original values |  | C | B |  | A |
+  | First known | C | C | C | C | C |
+  | Last known | A | A | A | A | A | 
 
 ## [!UICONTROL Expiration] settings
 
