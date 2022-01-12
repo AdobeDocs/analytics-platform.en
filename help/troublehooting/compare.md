@@ -7,4 +7,3 @@ solution: Customer Journey Analytics
 
 # Compare your AA data to CJA data
 
-Content to follow.
