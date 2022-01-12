@@ -55,3 +55,15 @@ Details around the available expiration settings.
 * **Person**: Expires at the end of the reporting window.
 * **Time**: You can set the dimension value to expire after a specified time period (up to 90 days). This expiration option is only available for Original and Most Recent allocation models. When using time-based expiration, values previous to the start of your reporting window (up to 90 days) are considered.
 * **Metric**: When this metric is seen in a hit, immediately expire the persisted value in the dimension. You can use any metric as the expiration end for this dimension. This expiration option is only available for Original and Most Recent allocation settings.
+
+## [!UICONTROL Binding Dimension]
+
+A dropdown that lets you bind the persistence of a dimension value to dimension values in another dimension. Valid dropdown options include other dimensions included in the data view.
+
+This setting is typically used in object arrays and is most commonly used for measuring things like product finding methods, internal search results, impressions of internal promotions, or content or product recommendations. In previous versions of Adobe Analytics, this concept is known as conversion syntax merchandising.
+
+## [!UICONTROL Binding Metric]
+
+A dropdown that lets you choose a metric that acts as a binding trigger. Valid dropdown options include metrics included in the data view.
+
+This setting only appears when the Binding Dimension is lower in the object array than the component. When the binding metric is present in an event, dimension values are copied from the event-level dimension down to the lower schema level of the binding dimension. In previous versions of Adobe Analytics, a similar but more limited concept of this is known as product syntax merchandising.
