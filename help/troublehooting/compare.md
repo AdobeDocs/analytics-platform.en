@@ -5,6 +5,5 @@ role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 ---
 
-# Compare your AA data to CJA data
+# Compare your Adobe Analytics data to CJA data
 
-Content to follow.
