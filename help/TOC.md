@@ -194,6 +194,8 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Create a scorecard](mobile-app/create-scorecard.md)
   + [Set up executives to use dashboards](mobile-app/set-up-execs.md)
   + [Executive user quick start guide](mobile-app/executive.md)
++ Troubleshooting {#troubleshooting}
+  + [Compare your Adobe Analytics data to CJA data](troubleshooting/compare.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
 + [CJA documentation updates](doc-changes.md)
