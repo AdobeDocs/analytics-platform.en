@@ -21,7 +21,6 @@ Here are some steps to follow to compare your original Adobe Analytics data with
 
 * Make sure the report suite that you selected in Analytics matches the report suite that was ingested into Adobe Experience Platform.
 
-
 ## Step 1: Run the Occurrences metric in Adobe Analytics
 
 The [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=en) metric shows the number of hits where a given dimension was set or persisted.
@@ -42,7 +41,7 @@ Total Records by timestamps should match with Occurrences, provided that no reco
 >
 >This works for regular mid values datasets only, not stitched dataset (via [Cross-Channel Analytics](/help/connections/cca/overview.md)). Please note that accounting for the Person ID being used in CJA is critical for making the comparison work. That may not always be easy to replicate in AA, especially if Cross-Channel Analytics has been turned on. 
 
-1. In Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), run the following Total Records by timestamps query:
+1. In Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), run the following [!UICONTROL Total Records by timestamps] query:
 
 ```
 SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \ 
@@ -57,7 +56,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
 ```
 
-1. In [Analytics Data Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en ), identify from the raw data whether some rows might be dropped by by the Analytics Source connector. 
+1. In [Analytics Data Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en ), identify from the raw data whether some rows might have been dropped by the Analytics Source connector. 
 
    The [Analytics Source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) might drop rows during the transformation to XDM schema. There can be multiple reasons for the whole row to be unfit for transformation. If any of the following Analytics fields have these values, the whole row will be dropped. 
 
@@ -70,18 +69,16 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
    | Hit_source | 0,3,5,7,8,9,10 |
    | Page_event | 53,63 |
 
-1. If the connector dropped rows, subtract those rows from the Occurrences metric. The resulting number should match the number of events in the AEP datasets.
+1. If the connector dropped rows, subtract those rows from the [!UICONTROL Occurrences] metric. The resulting number should match the number of events in the Adobe Experience Platform datasets.
 
 ## Why records might be dropped or skipped during ingestion from AEP
 
-CJA [Connections](/help/connections/create-connection.md) allow you to bring and join multiple datasets together based on a common Person ID across the datasets. On the backend, we apply deduplication: full outer join or union on event datasets based on timestamps and then inner join on profile and lookup dataset, based on the Person ID. 
+CJA [Connections](/help/connections/create-connection.md) allow you to bring and join multiple datasets together based on a common Person ID across the datasets. On the backend, we apply deduplication: full outer join or union on event datasets based on timestamps, and then inner join on profile and lookup dataset, based on the Person ID. 
 
 Here are some of the reasons why records might be skipped while ingesting data from AEP. 
 
-* **Missing Timestamps** – If timestamps are missing from event datasets, those records will be totally ignored or skipped during ingestion. because they would allow dataset to union together.  
+* **Missing Timestamps** – If timestamps are missing from event datasets, those records will be totally ignored or skipped during ingestion. 
  
-* **Missing Person IDs** – Missing person ids (from the events dataset and/or from profile/lookup dataset)cause those records to be ignored or skipped. The reason is that there are no common IDs or matching keys to join the records. 
+* **Missing Person IDs** – Missing Person IDs (from the events dataset and/or from profile/lookup dataset) cause those records to be ignored or skipped. The reason is that there are no common IDs or matching keys to join the records. 
  
-* **Invalid Person IDs** – With invalid IDs, the system cannot find a valid common ID among the datasets to join. In some cases, the person ID column has invalid Person IDs such as “undefined”, or “00000000".  
- 
-* **Large Person ID** – A Person ID with any combination of numbers and letters that appears in an event more than 1 million times per month cannot be attributed to any specific user or person. It will be categorized as invalid. Those records cannot be ingested into the system and result in error-prone ingestion and reporting.
+* **Invalid or Large Person IDs** – With invalid IDs, the system cannot find a valid common ID among the datasets to join. In some cases, the person ID column has invalid Person IDs such as “undefined”, or “00000000". A Person ID (with any combination of numbers and letters) that appears in an event more than 1 million times per month cannot be attributed to any specific user or person. It will be categorized as invalid. Those records cannot be ingested into the system and result in error-prone ingestion and reporting. 
