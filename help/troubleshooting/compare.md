@@ -3,8 +3,8 @@ title: Compare your AA data to CJA data
 description: Learn how to compare your Adobe Analytics data to data in Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
+exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 ---
-
 # Compare your Adobe Analytics data to CJA data
 
 Let's assume you ingested Adobe Analytics data into AEP via the Analytics Source Connector, and then created a CJA connection using this dataset. 
@@ -84,6 +84,4 @@ Here are some of the reasons why records might be skipped while ingesting data f
  
 * **Invalid Person IDs** – With invalid IDs, the system cannot find a valid common ID among the datasets to join. In some cases, the person ID column has invalid Person IDs such as “undefined”, or “00000000".  
  
-* **Large Person ID** – A Person ID with any combination of numbers and letters that appears in an event more than 1 million times per month cannot be attributed to any specific user or person. It will be categorized as invalid. Those records cannot be ingested into the system and result in error-prone ingestion and reporting. 
-
- 
+* **Large Person ID** – A Person ID with any combination of numbers and letters that appears in an event more than 1 million times per month cannot be attributed to any specific user or person. It will be categorized as invalid. Those records cannot be ingested into the system and result in error-prone ingestion and reporting.
