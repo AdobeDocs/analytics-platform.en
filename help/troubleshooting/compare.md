@@ -40,7 +40,7 @@ Total Records by timestamps should match with Occurrences, provided that no reco
 
 >[!NOTE]
 >
->This works for regular mid values datasets only, not stitched dataset (via [Cross-Channel Analytics](\help/connections/cca/overview.md)). Please note that accounting for the Person ID being used in CJA is critical for making the comparison work. That may not always be easy to replicate in AA, especially if Cross-Channel Analytics has been turned on. 
+>This works for regular mid values datasets only, not stitched dataset (via [Cross-Channel Analytics](/help/connections/cca/overview.md)). Please note that accounting for the Person ID being used in CJA is critical for making the comparison work. That may not always be easy to replicate in AA, especially if Cross-Channel Analytics has been turned on. 
 
 1. In Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), run the following Total Records by timestamps query:
 
@@ -74,7 +74,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
 ## Why records might be dropped or skipped during ingestion from AEP
 
-CJA [Connections](\help/connections/create-connection.md) allow you to bring and join multiple datasets together based on a common Person ID across the datasets. On the backend, we apply deduplication: full outer join or union on event datasets based on timestamps and then inner join on profile and lookup dataset, based on the Person ID. 
+CJA [Connections](/help/connections/create-connection.md) allow you to bring and join multiple datasets together based on a common Person ID across the datasets. On the backend, we apply deduplication: full outer join or union on event datasets based on timestamps and then inner join on profile and lookup dataset, based on the Person ID. 
 
 Here are some of the reasons why records might be skipped while ingesting data from AEP. 
 
