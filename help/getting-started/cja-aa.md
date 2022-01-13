@@ -25,13 +25,14 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Out-of-the-box Analysis Workspace dimensions (e.g. Browser Type, Referrer Type, Operating System etc.) | CJA provides these dimensions natively as long as the base XDM fields (such as user agent or device ID) are populated. For customers using the Analytics Data Connector (ADC), some of these dimensions are available, but not all. Please refer to our [documentation on which Analytics variables are supported via ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | GDPR Deletion | Full Support; note that GDPR is now handled in coordination with [!UICONTROL Adobe Experience Platform]. CJA inherits whatever data changes [!UICONTROL Experience Platform] makes to underlying datasets. |
 | List Variables/List Props | Full Support; CJA leverages XDM and supports unlimited string arrays which can be used similarly to listVars. |
+| Merchandising variable persistence | Full Support (January 2022) |
 | Metrics | Full Support; CJA leverages the Experience Data Model (XDM) and supports unlimited metrics and is not tied to the custom success events of traditional Analytics. Note that some standard metrics have been renamed from traditional Analytics: Visitors = People, Visits = Sessions, Hits = Events. |
 | Metric deduplication | Full Support |
 | Panels | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. |
 | PDF Export | Full Support |
 | Project Curation | Full Support |
 | Project Linking | Full Support |
-| Report Builder (Excel plugin) | Full Support (October 2021) |
+| Report Builder (Excel plugin) | Full Support |
 | Report Time Processing | Full Support; CJA relies exclusively on Report Time Processing. |
 | Reporting API Access | Full Support; Available through the [CJA API](https://www.adobe.io/cja-apis/docs/). |
 | Scheduled Reports/Projects | Full Support |
@@ -73,9 +74,8 @@ The following tables list which features in Adobe Analytics are supported, parti
 | --- | --- |
 | Alerts | Support is planned. |
 | Contribution Analysis | Support is planned. |
-| Data Warehouse Reporting (100% row export) | Support is planned from the Analysis Workspace interface. [!UICONTROL Experience Platform Query Service] also provides an interface for these use cases in CJA. |
+| Data Warehouse Reporting (100% row export) | Support is planned from the Analysis Workspace interface. Adobe Experience Platform [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) also provides an interface for these use cases in CJA. |
 | ID Stitching via Device Graph | Support is planned. |
-| Merchandising variable persistence | Support is planned. |
 | Real-Time Reporting | Support is planned. |
 | Segment IQ | Support is planned. |
 | Segment Publishing (sending segments from Workspace to the Experience Cloud) | Support is planned. |
