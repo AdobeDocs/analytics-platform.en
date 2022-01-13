@@ -7,6 +7,8 @@ exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 ---
 # Compare your Adobe Analytics data to CJA data
 
+As your organization adopts CJA, you may notice some differences in data between Adobe Analytics and CJA. This is normal and can occur for several reasons. CJA is designed to allow you to improve upon some of the limitations on your data in AA. However, unexpected/unintended discrepancies can occur. This article is designed to help you diagnose and solve for those differences so that you and your team can use CJA unimpeded by concerns about data integrity.
+
 Let's assume you ingested Adobe Analytics data into AEP via the Analytics Source Connector, and then created a CJA connection using this dataset. 
 
 ![data flow](assets/compare.png)
