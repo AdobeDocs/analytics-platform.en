@@ -21,7 +21,6 @@ Here are some steps to follow to compare your original Adobe Analytics data with
 
 * Make sure the report suite that you selected in Analytics matches the report suite that was ingested into Adobe Experience Platform.
 
-
 ## Step 1: Run the Occurrences metric in Adobe Analytics
 
 The [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=en) metric shows the number of hits where a given dimension was set or persisted.
