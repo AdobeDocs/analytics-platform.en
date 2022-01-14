@@ -78,21 +78,23 @@ Next, you can create metrics and dimensions from schema elements. You can also u
    * [[!UICONTROL Persistence]](component-settings/persistence.md)
    * [[!UICONTROL Value bucketing]](component-settings/value-bucketing.md)
 
-If needed, you can use the following features:
+## Duplicate metrics or dimensions
 
-* **[!UICONTROL Duplicate]**: Duplicating metrics or dimensions and then modifying specific settings is an easy way to create multiple metrics or dimensions from a single schema field. Select the [!UICONTROL Duplicate] setting underneath the metric's or dimensions's name at the top right. Modify the new dimension or metric and save it under a more descriptive name.
+Duplicating metrics or dimensions and then modifying specific settings is an easy way to create multiple metrics or dimensions from a single schema field. Select the [!UICONTROL Duplicate] setting underneath the metric's or dimensions's name at the top right. Modify the new dimension or metric and save it under a more descriptive name.
 
-  ![Duplicate](assets/duplicate.png)
+![Duplicate](assets/duplicate.png)
 
-* **[!UICONTROL Filter]**: You can filter schema fields in the left rail by the following data types:
+## Filter schema fields or datasets
 
-  ![Filter fields](assets/filter-fields.png)
+You can filter schema fields in the left rail by the following data types:
 
-  You can also filter by datasets and by whether a schema field contains data or whether it is an identity. By default, Adobe initially applies the **[!UICONTROL Contains data]** filter to all data views.
+![Filter fields](assets/filter-fields.png)
 
-  ![Filter other](assets/filter-other.png)
+You can also filter by datasets and by whether a schema field contains data or whether it is an identity. By default, Adobe initially applies the **[!UICONTROL Contains data]** filter to all data views.
 
-## Settings
+![Filter other](assets/filter-other.png)
+
+## Settings tab
 
 1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and go to the **[!UICONTROL Data Views]** tab.
 1. Click **[!UICONTROL Add]** to create a data view, or click on an existing data view to edit it.
