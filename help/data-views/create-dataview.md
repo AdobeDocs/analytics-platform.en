@@ -15,7 +15,7 @@ Creating a data view involves either creating metrics and dimensions from schema
 
 ![New data view](assets/new-data-view.png)
 
-### Settings
+### Data view settings
 
 Provides overarching settings for the data view.
 
@@ -23,7 +23,7 @@ Provides overarching settings for the data view.
 | --- | --- |
 | [!UICONTROL Connection] | This field links the data view to the connection that you established earlier, which contains one or more Adobe Experience Platform datasets. |
 | [!UICONTROL Name] | Required. The name of the data view. This value appears in the top-right dropdown in Analysis Workspace. |
-| [!UICONTROL Description] | Optional. Adobe recommends a detailed description so users understand why the data view exists and who it is designed for. |
+| [!UICONTROL Description] | Optional. Adobe recommends a detailed description so that users understand why the data view exists and who it is designed for. |
 
 ### Containers
 
