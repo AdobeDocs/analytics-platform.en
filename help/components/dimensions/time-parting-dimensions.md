@@ -3,7 +3,7 @@ description: Time parting takes the timestamp of collected hits and breaks it in
 title: Time-parting dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 ---
-# Time-parting dimensions
+# Time-parting dimensions in Analysis Workspace
 
 Time parting takes the timestamp of collected hits and breaks it into more meaningful dimensions, such as "Hour of Day" or "Day of Week".
 
@@ -13,8 +13,6 @@ Time-parting dimensions are based on the time zone of the data view. These dimen
 * Are there days of the week, or hours of the day, on which conversion is higher on my site or app? 
 * How do my weekend sales compare to my weekday sales? 
 * Does a certain marketing campaign generate higher conversions in the morning, or in the afternoon?
-
-## Time-parting dimensions in Analysis Workspace
 
 | Dimension | Example Values |
 |--- |--- |
