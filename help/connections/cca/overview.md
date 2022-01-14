@@ -21,7 +21,7 @@ When you combine datasets with similar person IDs, attribution is carried over a
 
 >[!IMPORTANT]
 >
->Please be aware that any change to the global event dataset schema has to be applied also in the new stitched dataset schema, otherwise it will break the stitched dataset.
+>Failure to meet all prerequisites can result in the inability to create a CCA connection or poor results when combining datasets.
 
 Before using Cross-Channel Analytics, make sure that your organization is prepared with the following:
 
@@ -35,7 +35,7 @@ Before using Cross-Channel Analytics, make sure that your organization is prepar
 
 >[!IMPORTANT]
 >
->Failure to meet all prerequisites can result in the inability to create a CCA connection or poor results when combining datasets.
+>Please be aware that any change to the global event dataset schema has to be applied also in the new stitched dataset schema, otherwise it will break the stitched dataset.
 
 Cross-Channel Analytics is a groundbreaking and robust feature, but has limitations on how it can be used.
 
