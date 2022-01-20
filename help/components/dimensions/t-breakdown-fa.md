@@ -38,3 +38,12 @@ Break down your data in unlimited ways for your specific needs; build queries us
 Any breakdown within a table can also have any attribution model applied to it. This attribution model can be the same or different from the parent column. For example, you can analyze linear Orders on your Marketing Channels dimension but apply U-Shaped Orders to the specific tracking codes within a Channel. To edit the attribution model applied to a breakdown, hover over the breakdown model and click **[!UICONTROL Edit]**:
 
 ![Breakdown settings](assets/breakdown_settings.png)
+
+This is the expected behavior when applying attribution models to breakdowns or editing them:
+
+* If you apply an attribution when no other attributions exist, then the attribution applies to the entire column tree.
+
+* If you add a breakdown after an attribution has been applied, it will use the default for the given breakdown that was added (if that dimension has a default). Otherwise it will use the breakdown from the parent column. Some dimensions have a default allocation. For example, Time dimensions and Referrer use Same Touch. The Product dimension uses Last Touch. Other dimensions don’t have a default, and will use the parent column allocation.
+
+* If there are already attributions in the column tree, changing the attribution only impacts the one you are editing.
+
