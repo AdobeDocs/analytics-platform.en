@@ -47,3 +47,16 @@ This is the expected behavior when applying attribution models to breakdowns or 
 
 * If there are already attributions in the column tree, changing the attribution only impacts the one you are editing.
 
+## Videos
+
+Adding dimensions and metrics to your project in Analysis Workspace:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30606)
+
+Working with dimensions in a Freeform Table:
+
+>[!VIDEO](https://video.tv.adobe.com/v/40179)
+
+Dimension breakdowns by position:
+
+>[!VIDEO](https://video.tv.adobe.com/v/24033)
