@@ -99,10 +99,10 @@ If you select Identity Map, you get two additional configuration options:
 
 This table shows the two configuration options when edge cases are present and how they are handled:
 
-|Option|No IDs are present in Identity Map|No IDs are marked as primary|Multiple IDs are marked as primary|Single ID is marked as primary|Invalid namespace with an ID marked as primary|
+| Option | No IDs are present in Identity Map | No IDs are marked as primary | Multiple IDs are marked as primary | Single ID is marked as primary | Invalid namespace with an ID marked as primary |
 |---|---|---|---|---|---|
-| **"Use Primary ID Namespace" checked** |The row is dropped by CJA.|The row is dropped by CJA, as no primary ID is specified.|All IDs marked as primary, under all namespaces, are extracted into a list. They are then alphabetically sorted; with this new sorting, the first namespace with its first ID is used as the Person ID.|The single ID marked as primary is used as the Person ID.|Even though the namespace may be invalid (not present in AEP), CJA will use the primary ID under that namespace as the Person ID.|
-|**Specific Identity Map namespace selected**|The row is dropped by CJA.|All IDs under the selected namespace are extracted into a list and the first is used as the Person ID.|All IDs under the selected namespace are extracted into a list and the first is used as the Person ID.|All IDs under the selected namespace are extracted into a list and the first is used as the Person ID.|All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. (Only a valid namespace can be selected at Connection creation time, so it is not possible for an invalid namespace/ID to be used as Person ID)|
+| **[!UICONTROL Use Primary ID Namespace] checked** | The row is dropped by CJA. | The row is dropped by CJA, as no primary ID is specified. | All IDs marked as primary, under all namespaces, are extracted into a list. They are then alphabetically sorted; with this new sorting, the first namespace with its first ID is used as the Person ID. | The single ID marked as primary is used as the Person ID. | Even though the namespace may be invalid (not present in AEP), CJA will use the primary ID under that namespace as the Person ID. |
+| **[!UICONTROL Specific Identity Map namespace] selected** | The row is dropped by CJA. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. (Only a valid namespace can be selected at Connection creation time, so it is not possible for an invalid namespace/ID to be used as Person ID) |
 
 ## Enable connection
 
@@ -137,7 +137,12 @@ This calculation has to be done for every dataset in the connection.
 
 1. Go to [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) and create a new query.
 
-1. The query would look like this:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;` 
+1. The query would look like this:
+    
+    ```
+    Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;
+
+    ```
 
 * In this example, "analytics_demo_data" is the name of the dataset.
 * Perform the `Show Tables` query to show all the datasets that exist in AEP.
