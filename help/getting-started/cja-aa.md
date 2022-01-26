@@ -92,10 +92,8 @@ The following tables list which features in Adobe Analytics are supported, parti
 | --- | --- |
 | Activity Map | Support is not yet planned. |
 | Advertising Cloud | Support is not yet planned. |
-| Classification Rule Builder | Support is not yet planned. |
 | Currency Conversion | Support is not yet planned. |
 | Data Feeds | Support is not yet planned. |
-| Real Time Reports | Support is not yet planned. |
 | Summary Data Sources | Support is not yet planned. |
 | Transaction ID Data Sources | Support is not yet planned. |
 
