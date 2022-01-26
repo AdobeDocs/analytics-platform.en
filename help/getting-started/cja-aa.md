@@ -63,8 +63,8 @@ The following tables list which features in Adobe Analytics are supported, parti
 
 | Feature | Notes |
 | --- | --- |
-| Bot Filtering | For Analytics Source Connector-based datasets, bot filtering is applied. General bot filtering logic for other datasets is not performed by the [!UICONTROL Experience Platform] or CJA. |
-| Media Analytics | Media data is available as part of the Analytics Data Connector. |
+| Bot Filtering | For [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)-based datasets, bot filtering is applied. General bot filtering logic for other datasets is not performed by the [!UICONTROL Experience Platform] or CJA. |
+| Media Analytics | Media data is available as part of the Analytics Source Connector. |
 | Panels | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. The Segment Comparison, Analytics for Target (A4T), and Media Concurrent Viewers panels are not supported. |
 | Processing Rules | For Analytics Data Connector-based datasets, processing rules are still applied. [Data prep capabilities in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) can also be used as a replacement for processing rules for data that is going directly to Platform. |
 
@@ -92,10 +92,8 @@ The following tables list which features in Adobe Analytics are supported, parti
 | --- | --- |
 | Activity Map | Support is not yet planned. |
 | Advertising Cloud | Support is not yet planned. |
-| Classification Rule Builder | Support is not yet planned. |
 | Currency Conversion | Support is not yet planned. |
 | Data Feeds | Support is not yet planned. |
-| Real Time Reports | Support is not yet planned. |
 | Summary Data Sources | Support is not yet planned. |
 | Transaction ID Data Sources | Support is not yet planned. |
 
