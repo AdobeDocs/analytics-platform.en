@@ -73,17 +73,17 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Feature | Notes |
 | --- | --- |
 | Alerts | Support is planned. |
+| Classification Rule Builder | Will work slightly differently in CJA, using string manipulations at report time rather than lookup datasets. |
 | Contribution Analysis | Support is planned. |
 | Data Warehouse Reporting (100% row export) | Support is planned from the Analysis Workspace interface. Adobe Experience Platform [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) also provides an interface for these use cases in CJA. |
 | ID Stitching via Device Graph | Support is planned. |
+| Lift and Confidence Reporting | Support is planned. |
+| Processing Rules, VISTA Rules, Marketing Channels Processing Rules | Support planned, but will work at query-time rather than during data collection for more flexible and retroactive and non-destructive data manipulations. |
+| Project Templates | Support is planned. |
 | Real-Time Reporting | Support is planned. |
 | Segment IQ | Support is planned. |
 | Segment Publishing (sending segments from Workspace to the Experience Cloud) | Support is planned. Will be called "Audience Publishing" in CJA. |
 | New vs. Repeat Session Reporting | Support is planned with some caveats. |
-| Lift and Confidence Reporting | Support is planned. |
-| Classification Rule Builder | Will work slightly differently in CJA using on-the-fly string manipulations at report time rather than lookup datasets. |
-| Processing Rules, VISTA Rules, Marketing Channels Processing Rules | Support planned, but will work at query-time rather than during data collection for more flexible and retroactive and non-destructive data manipulations. |
-| Project Templates | Support is planned. |
 
 ## Support not yet planned
 
