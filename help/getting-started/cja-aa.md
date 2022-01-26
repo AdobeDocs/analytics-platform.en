@@ -78,7 +78,12 @@ The following tables list which features in Adobe Analytics are supported, parti
 | ID Stitching via Device Graph | Support is planned. |
 | Real-Time Reporting | Support is planned. |
 | Segment IQ | Support is planned. |
-| Segment Publishing (sending segments from Workspace to the Experience Cloud) | Support is planned. |
+| Segment Publishing (sending segments from Workspace to the Experience Cloud) | Support is planned. Will be called "Audience Publishing" in CJA. |
+| New vs. Repeat Session Reporting | Support is planned with some caveats. |
+| Lift and Confidence Reporting | Support is planned. |
+| Classification Rule Builder | Will work slightly differently in CJA using on-the-fly string manipulations at report time rather than lookup datasets. |
+| Processing Rules, VISTA Rules, Marketing Channels Processing Rules | Support planned, but will work at query-time rather than during data collection for more flexible and retroactive and non-destructive data manipulations. |
+| Project Templates | Support is planned. |
 
 ## Support not yet planned
 
@@ -89,6 +94,9 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Classification Rule Builder | Support is not yet planned. |
 | Data Feeds | Support is not yet planned. |
 | Summary Data Sources | Support is not yet planned. |
+| Transaction ID Data Sources | Support is not yet planned. |
+| Currency Conversion | Support is not yet planned. |
+| Real Time Reports | Support is not yet planned. |
 
 ## Will never be supported
 
