@@ -118,7 +118,7 @@ You can also capture live streaming events from Google Tag Manager directly to A
 
 ### 1. Add Custom Variables
 
-After signing in to the Google Tag Manager account, you need to add some Custom Constant Variables related to Adobe. You probably already have variables in Google Tag Manager that are being sent to Google Analytic, such as the customer email, customer name, language, and customer logged-in status. You need to define 5 new custom variables:
+After signing in to the Google Tag Manager account, you need to add some Custom Constant Variables related to Adobe. You probably already have variables in Google Tag Manager that are being sent to Google Analytics, such as the customer email, customer name, language, and customer logged-in status. You need to define 5 new custom variables:
 
 * Adobe Experience Cloud org ID
 * DCS Streaming endpoint
