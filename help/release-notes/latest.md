@@ -14,5 +14,4 @@ description: Latest CJA release notes
 {style="table-layout:auto"}
 
 >[!MORELIKETHIS]
->
-* [Customer Journey Analytics documentation updates](/help/doc-changes.md)
+>[Customer Journey Analytics documentation updates](/help/doc-changes.md)
