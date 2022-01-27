@@ -199,3 +199,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
 + [CJA documentation updates](doc-changes.md)
++ Release Notes {#releases}
+  + [Latest release](release-notes/latest.md)
+  + [Previous releases](release-notes/previous.md)
+  
