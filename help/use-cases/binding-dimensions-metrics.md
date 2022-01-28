@@ -1,8 +1,8 @@
 ---
 title: Using binding dimensions and metrics in CJA
 description: Attribute dimensions to object arrays for complex persistence analysis.
+exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 ---
-
 # Using binding dimensions and metrics in CJA
 
 Customer Journey Analytics offers several ways to persist dimension values beyond the hit that they are set on. One of the persistence methods that Adobe offers is known as Binding. In previous versions of Adobe Analytics, this concept was known as merchandising.
