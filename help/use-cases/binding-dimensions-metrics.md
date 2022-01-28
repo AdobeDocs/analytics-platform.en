@@ -185,15 +185,15 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
 
 If you use a traditional allocation model with search term, all three products attribute revenue to only a single search term. For example, if you used first allocation with the search term dimension:
 
-search_term | revenue
---- | ---
-boxing gloves | $204.97
+| search_term | revenue |
+| --- | --- |
+| boxing gloves | $204.97 |
 
 If you used last allocation with the search term dimension, all three products still attribute revenue to a single search term:
 
-search_term | revenue
---- | ---
-shoes | $204.97
+| search_term | revenue |
+| --- | --- |
+| shoes | $204.97 |
 
 While this example includes only one visitor, many visitors who search for different things can misattribute search terms to different products, making it difficult to determine what the best search results actually are.
 
@@ -216,8 +216,8 @@ Setting the search term dimension to this persistence model executes the followi
 
 In Analysis Workspace, the resulting report would look similar to the following:
 
-search_term | revenue
---- | ---
-boxing gloves | $89.99
-tennis racket | $34.99
-shoes | $79.99
+| search_term | revenue |
+| --- | --- |
+| boxing gloves | $89.99 |
+| tennis racket | $34.99 |
+| shoes | $79.99 |
