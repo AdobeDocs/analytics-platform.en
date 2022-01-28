@@ -182,6 +182,7 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
             }
         ]
     }
+    ```
 
 If you use a traditional allocation model with search term, all three products attribute revenue to only a single search term. For example, if you used first allocation with the search term dimension:
 
