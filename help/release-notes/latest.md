@@ -1,8 +1,8 @@
 ---
 title: View the current Customer Journey Analytics release notes
 description: Latest CJA release notes
+exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 ---
-
 # Current Customer Journey Analytics release notes
 
 | Feature | Description | Targeted Date |

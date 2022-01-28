@@ -1,8 +1,8 @@
 ---
 title: View previous Customer Journey Analytics release notes
 description: Previous CJA release notes
+exl-id: 8647ebfc-59cf-44ab-8869-11e892eab84e
 ---
-
 # Previous Customer Journey Analytics release notes
 
 ## 2021 Release Notes
