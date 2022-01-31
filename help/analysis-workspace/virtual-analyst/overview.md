@@ -1,6 +1,7 @@
 ---
 title: Virtual Analyst
 description: Learn what features in Customer Journey Analytics comprise Virtual Analyst.
+feature: Anomaly Detection
 exl-id: 5fb6ac39-d09d-49f0-ae1f-13f223e20800
 ---
 # Virtual Analyst

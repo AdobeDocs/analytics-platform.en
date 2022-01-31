@@ -2,6 +2,7 @@
 description: Project sharing and project roles in Workspace
 keywords: Analysis Workspace sharing
 title: Share projects
+feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 ---
 # Share projects

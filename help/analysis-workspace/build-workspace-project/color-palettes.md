@@ -1,7 +1,7 @@
 ---
 description: How to change the visualization color palette or specify your own custom color palette.
 title: Visualization color palette
-uuid: 18252889-8dc0-48fa-820f-df534156c22f
+feature: CJA Workspace basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
 ---
 # Visualization color palette
@@ -20,7 +20,7 @@ You can change the visualization color palette used in Workspace by choosing a d
 
 Keep in mind:
 
-* There are five pre-set color palettes to choose from. The default palette and the one below have been optimized for optimal contrast and are both more accessible for those who are color blind.
+* There are five pre-set color palettes to choose from. The default palette and the one below have been optimized for contrast and are both more accessible for those who are color blind.
 * The third to the fifth color palettes below the top two have been optimized for color harmony.
 
 ## Change your color palette:

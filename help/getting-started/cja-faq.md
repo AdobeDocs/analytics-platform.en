@@ -3,6 +3,7 @@ title: Customer Journey Analytics FAQ
 description: Customer Journey Analytics - Frequently Asked Questions.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
+feature: FAQ
 ---
 # Frequently asked questions
 

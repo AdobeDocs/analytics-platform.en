@@ -3,6 +3,7 @@ title: Ingest Google Analytics data into Adobe Experience Platform
 description: Explains how to leverage Customer Journey Analytics (CJA) to ingest your Google Analytics data into Adobe Experience Platform. 
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
+feature: Use Cases
 ---
 
 # Ingest Google Analytics data into Adobe Experience Platform

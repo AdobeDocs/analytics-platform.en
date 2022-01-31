@@ -1,7 +1,7 @@
 ---
 description: Row settings vary depending on which component you have dragged into the table.
 title: Row settings
-uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
+feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 ---
 # Row settings

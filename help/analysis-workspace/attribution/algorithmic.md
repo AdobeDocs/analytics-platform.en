@@ -1,6 +1,7 @@
 ---
 title: Algorithmic attribution
 description: Details on the algorithmic attribution model.
+feature: Attribution
 exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
 ---
 # Algorithmic attribution

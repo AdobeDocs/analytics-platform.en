@@ -3,6 +3,7 @@ title: Standard component reference
 description: Details and information on all standard components that you can add to any data view.
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
+feature: Data Views
 ---
 # Standard component reference
 

@@ -1,6 +1,7 @@
 ---
 description: You can curate, share and schedule PDF/CSV projects to recipients in your organization.
 title: Share menu
+feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
 ---
 # Share menu

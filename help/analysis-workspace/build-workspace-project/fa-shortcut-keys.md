@@ -1,6 +1,7 @@
 ---
 description: Keyboard interactions, shortcut keys and point-and-click behaviors available in Analysis Workspace.
 keywords: Analysis Workspace
+feature: CJA Workspace Basics
 title: Hotkeys (Shortcuts)
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 ---

@@ -3,6 +3,7 @@ title: Use Marketing channel dimensions in Adobe Experience Platform
 description: Use the Analytics Data Connector to bring Marketing Channel processing rules into Adobe Experience Platform.
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
+feature: Use Cases
 ---
 # Use Marketing channel dimensions in Adobe Experience Platform
 

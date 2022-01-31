@@ -1,6 +1,7 @@
 ---
 description: Learn how to specify the touchpoints to create a multi-dimensional fallout sequence.
 title: Configure a fallout visualization
+feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 ---
 # Configure a fallout visualization

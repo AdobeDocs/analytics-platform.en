@@ -3,6 +3,7 @@ title: Behavior component settings
 description: Specify how a dimension or metric behaves in reporting.
 exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
+feature: Data Views
 ---
 # Behavior component settings
 

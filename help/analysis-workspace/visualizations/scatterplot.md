@@ -1,6 +1,7 @@
 ---
 title: Scatterplot
 description: A visualization that shows the relationship between up to three metrics.
+feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 ---
 # Scatterplot

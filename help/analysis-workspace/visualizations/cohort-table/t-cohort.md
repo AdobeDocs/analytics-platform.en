@@ -2,7 +2,7 @@
 description: Create a cohort and run a cohort analysis report in Analysis Workspace.
 keywords: Analysis Workspace
 title: Configure a cohort analysis report
-uuid: 5574230f-8f35-43ea-88d6-cb4960ff0bf4
+feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
 ---
 # Configure a [!UICONTROL Cohort Analysis] report

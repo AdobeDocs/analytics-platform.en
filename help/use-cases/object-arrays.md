@@ -3,6 +3,7 @@ title: Use arrays of objects
 description: Understand how CJA reports on data hierarchies.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
+feature: Use Cases
 ---
 # Use arrays of objects
 

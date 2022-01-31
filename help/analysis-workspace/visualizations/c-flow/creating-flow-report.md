@@ -1,6 +1,7 @@
 ---
 description: The Flow visualization lets you track a path through your pages or dimensions.
 title: Configure a flow visualization
+feature: Visualizations
 exl-id: b379f1f0-e51a-44ec-91e1-b6479901c945
 ---
 # Configure a flow visualization

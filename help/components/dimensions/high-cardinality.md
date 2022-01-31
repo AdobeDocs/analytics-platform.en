@@ -1,6 +1,7 @@
 ---
 title: Dimensions with very high cardinality in Customer Journey Analytics
 description: Describes best practices in dealing with high-cardinality dimensions in Customer Journey Analytics
+feature: Dimensions
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 ---
 # Dimensions with very high cardinality

@@ -1,6 +1,7 @@
 ---
 title: Create a date range
 description: Create a date range for use in reporting.
+feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 ---
 # Create a date range
