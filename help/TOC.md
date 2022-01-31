@@ -202,5 +202,6 @@ breadcrumb-title: Customer Journey Analytics Guide
 + [CJA documentation updates](doc-changes.md)
 + Release Notes {#releases}
   + [Latest release](release-notes/latest.md)
-  + [Previous releases](release-notes/previous.md)
+  + [2021 releases](release-notes/2021.md)
+  + [2020 releases](release-notes/2020.md)
   
