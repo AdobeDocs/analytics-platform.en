@@ -68,9 +68,9 @@ You can bind dimension items within an object array to another dimension. When t
 
 If you wanted to look at revenue by color without a binding dimension, the dimension `product.color` persists and incorrectly attributes credit to the dryer's color:
 
-product.color | revenue
---- | ---
-neon orange | 2099
+| product.color | revenue |
+| --- | --- |
+| neon orange | 2099 |
 
 You can go into the Data View Manager and bind product color to product name:
 
@@ -78,10 +78,10 @@ You can go into the Data View Manager and bind product color to product name:
 
 When you set this persistence model, Adobe takes note of the product name whenever product color is set. When it recognizes the same product name in a subsequent event for this visitor, the product color is brought over as well. The same data when you bind product color to product name would look similar to the following:
 
-product.color | revenue
---- | ---
-white | 1600
-neon orange | 499
+| product.color | revenue |
+| --- | --- |
+| white | 1600 |
+| neon orange | 499 |
 
 ## Example 2: Use binding metrics to tie search term to a product purchase
 
