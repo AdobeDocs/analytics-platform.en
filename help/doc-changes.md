@@ -10,8 +10,9 @@ The following updates were made to the CJA documentation since its inception.
 
 | Date | Update description |
 | --- | --- |
+| January 2022 | New use case for [Using binding dimensions and metrics in CJA](/help/use-cases/binding-dimensions-metrics.md) |
 | January 2022 | Added new feature documentation on [binding dimensions and metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension) and on new [[!UICONTROL First Known] and [!UICONTROL Last Known] allocation settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#allocation-settings) |
-| January 2022 | Added an article on [comparing your Adobe Analytics data to Analytics data in CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html) |
+| January 2022 | New article on [comparing your Adobe Analytics data to Analytics data in CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html) |
 | November 2021 | Updated documentation for [[!UICONTROL Records skipped]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#connection-details-settings) on the Connections Details page. |
 | October 2021 | Documentation for [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/report-buider-overview.html#) in CJA. |
 | October 2021 | Customer Journey Analytics [Audit Log](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) API documentation |
