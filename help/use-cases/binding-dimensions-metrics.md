@@ -9,7 +9,81 @@ Customer Journey Analytics offers several ways to persist dimension values beyon
 
 While you can use binding dimensions with top-level event data, this concept is best used when working with [Arrays of objects](object-arrays.md). You can attribute a dimension to one part of an object array without applying it to all of the attributes in a given event. For example, you can attribute a search term to one product in your shopping cart object array without binding that search term to the entire event.
 
-## Example 2: Using binding metrics to tie search term to a product purchase
+## Example 1: Use binding dimensions to attribute additional product attributes to a purchase
+
+You can bind dimension items within an object array to another dimension. When the bound dimension item appears, CJA recalls the bound dimension and includes it in the event for you. Consider the following customer journey:
+
+1. A visitor views a product page on a washing machine.
+
+    ```json
+    {
+        "PersonID": "1",
+        "product_views": 1,
+        "product": [
+            {
+                "name": "Washing Machine 2000",
+                "color": "white",
+                "type": "front loader",
+            },
+        ],
+        "timestamp": 1534219229
+    }
+    ```
+
+1. The visitor then views a product page on a dryer.
+
+    ```json
+    {
+        "PersonID": "1",
+        "product_views": 1,
+        "product": [
+            {
+                "name": "Dryer 2000",
+                "color": "neon orange",
+            },
+        ],
+        "timestamp": 1534219502
+    }
+    ```
+
+1. Ultimately they make a purchase. The color of each product wasn't included in the purchase event.
+
+    ```json
+    {
+        "PersonID": "1",
+        "orders": 1,
+        "product": [
+            {
+                "name": "Washing Machine 2000",
+                "price": 1600,
+            },
+            {
+                "name": "Dryer 2000",
+                "price": 499
+            }
+        ],
+        "timestamp": 1534219768
+    }
+    ```
+
+If you wanted to look at revenue by color without a binding dimension, the dimension `product.color` persists and incorrectly attributes credit to the dryer's color:
+
+product.color | revenue
+--- | ---
+neon orange | 2099
+
+You can go into the Data View Manager and bind product color to product name:
+
+![Binding dimension](assets/binding-dimension.png)
+
+When you set this persistence model, Adobe takes note of the product name whenever product color is set. When it recognizes the same product name in a subsequent event for this visitor, the product color is brought over as well. The same data when you bind product color to product name would look similar to the following:
+
+product.color | revenue
+--- | ---
+white | 1600
+neon orange | 499
+
+## Example 2: Use binding metrics to tie search term to a product purchase
 
 One of the most common merchandising methods in Adobe Analytics has been to bind a search term to a product so each search term gets credit for it's appropriate product. Consider the following customer journey:
 
@@ -198,11 +272,7 @@ If you used last allocation with the search term dimension, all three products s
 
 While this example includes only one visitor, many visitors who search for different things can misattribute search terms to different products, making it difficult to determine what the best search results actually are.
 
-With a binding dimension, Adobe takes note of the dimension item that it is bound to. When that same binding value is seen in a subsequent event, it brings over the dimension item so that you can attribute the desired metric to it. In this example, we can set the binding dimension for search_term to product name:
-
-![Binding dimension](assets/binding-dimension.png)
-
-When we set this dimension in the Data View manager, we are also required to set a binding metric because the binding dimension is in an object array. A binding metric acts as a trigger for a binding dimension, so it only binds itself on events where the binding metric is present. In this example implementation, the search results page always includes a search term dimension and a searches metric. We can bind search terms to product name whenever the Searches metric is present.
+With a binding dimension, Adobe takes note of the dimension item that it is bound to. When that same binding value is seen in a subsequent event, it brings over the dimension item so that you can attribute the desired metric to it. In this example, we can set the binding dimension for search_term to product name. When we set this dimension in the Data View manager, we are also required to set a binding metric because the binding dimension is in an object array. A binding metric acts as a trigger for a binding dimension, so it only binds itself on events where the binding metric is present. In this example implementation, the search results page always includes a search term dimension and a searches metric. We can bind search terms to product name whenever the Searches metric is present.
 
 ![Binding metric](assets/binding-metric.png)
 
