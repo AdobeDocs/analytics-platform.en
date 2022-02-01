@@ -3,6 +3,7 @@ title: Data ingestion options for Customer Journey Analytics
 description: Understand the different ways you can ingest data into Customer Journey Analytics
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
+feature: Use Cases
 ---
 # Data ingestion options for Customer Journey Analytics
 

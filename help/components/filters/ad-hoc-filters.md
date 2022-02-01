@@ -1,7 +1,7 @@
 ---
 description: Use ad-hoc filters in Analysis Workspace.
 title: Ad-hoc project filters
-feature: Workspace Basics
+feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
 ---

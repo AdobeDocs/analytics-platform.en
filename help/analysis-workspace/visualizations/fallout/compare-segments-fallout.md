@@ -2,6 +2,7 @@
 description: You can create filters from a touchpoint, add filters as touchpoint, and compare key workflows across various filters in Analysis Workspace.
 keywords: fallout and filters;filters in fallout analysis;compare filters in fallout
 title: Apply filters in fallout analysis
+feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 ---
 # Apply filters in fallout analysis

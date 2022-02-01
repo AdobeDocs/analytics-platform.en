@@ -1,12 +1,13 @@
 ---
 title: Component settings
-description: View core settings for a component.
+description: View core settings for a data view component.
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
+feature: Data Views
 ---
 # Component settings
 
-Core settings that a component uses.
+Core settings that a data view component uses.
 
 ![Component settings](../assets/component-settings.png)
 

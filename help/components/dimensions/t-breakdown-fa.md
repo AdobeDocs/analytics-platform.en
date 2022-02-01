@@ -2,7 +2,9 @@
 description: Break down dimensions and dimension items in Analysis Workspace.
 keywords: Analysis Workspace
 title: Break down dimensions
+feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
+solution: Customer Journey Analytics
 ---
 # Break down dimensions in Workspace
 

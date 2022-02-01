@@ -1,6 +1,7 @@
 ---
 title: Manage date ranges
 description: Share, rename, or delete date ranges in Analysis Workspace.
+feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 ---
 # Manage date ranges

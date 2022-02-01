@@ -2,6 +2,7 @@
 title: Using binding dimensions and metrics in CJA
 description: Attribute dimensions to object arrays for complex persistence analysis.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
+feature: Use Cases
 ---
 # Using binding dimensions and metrics in CJA
 

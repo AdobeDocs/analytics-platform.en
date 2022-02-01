@@ -2,6 +2,7 @@
 description: Send an Analysis Workspace project via email or schedule it for delivery.
 keywords: Analysis Workspace
 title: Schedule projects
+feature: Curate and Share
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 ---
 # Schedule projects

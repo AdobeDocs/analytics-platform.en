@@ -3,6 +3,7 @@ title: Add standard lookups to your datasets
 description: Use standard lookups to augment reporting with useful dimensions in Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
+feature: Connections
 ---
 # Add standard lookups to your datasets
 

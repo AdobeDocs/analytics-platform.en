@@ -1,6 +1,7 @@
 ---
 title: Calculated metrics overview
 description: Learn about
+feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 ---
 # Calculated metrics overview

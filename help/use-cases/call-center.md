@@ -3,6 +3,7 @@ title: Import call center and web data
 description: Learn how to create a dataset that links call center and website data.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
+feature: Use Cases
 ---
 # Import call center and web data
 

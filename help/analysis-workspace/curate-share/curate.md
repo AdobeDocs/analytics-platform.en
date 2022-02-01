@@ -2,6 +2,7 @@
 description: Curation lets you limit components before sharing a project.
 keywords: Analysis Workspace curation
 title: Curate projects
+feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 ---
 # Curate projects

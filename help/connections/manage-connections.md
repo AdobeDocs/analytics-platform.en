@@ -4,6 +4,7 @@ description: Describes how to manage connections to Experience Platform datasets
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
+feature: Connections
 ---
 # Manage connections
 

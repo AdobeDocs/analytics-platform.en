@@ -1,6 +1,7 @@
 ---
 description: Fallout visualizations show where visitors left (fell out) and continued through (fell through) a predefined sequence of pages.
 title: Fallout overview
+feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 ---
 # Fallout overview

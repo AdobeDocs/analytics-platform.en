@@ -1,6 +1,7 @@
 ---
 title: Attribution overview
 description: The concept of attributing credit of a success event to multiple dimension items.
+Feature: Attribution
 exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
 ---
 # Attribution overview
