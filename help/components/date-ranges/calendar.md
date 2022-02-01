@@ -2,6 +2,7 @@
 description: In the calendar, you can specify dates and date ranges, or select a preset.
 title: Calendar and date ranges overview
 feature: Calendar
+solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
 ---
 # Calendar and date ranges overview
