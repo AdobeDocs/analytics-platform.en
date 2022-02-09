@@ -199,9 +199,11 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Compare your Adobe Analytics data to CJA data](troubleshooting/compare.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
-+ [CJA documentation updates](doc-changes.md)
 + Release Notes {#releases}
   + [Latest release](release-notes/latest.md)
+  + [2022 releases](release-notes/2022.md)
   + [2021 releases](release-notes/2021.md)
   + [2020 releases](release-notes/2020.md)
+  + [CJA releases](release-notes/releases.md)
+  + [CJA documentation updates](release-notes/doc-changes.md)
   
