@@ -8,7 +8,7 @@ feature: Release Notes
 
 ## Key features
 
-| Feature | Description | Targeted Date |
+| Feature | Description | [Targeted Date](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
 | No new features this month| N/A | N/A |
 
