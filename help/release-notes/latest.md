@@ -14,8 +14,8 @@ feature: Release Notes
 
 ## Fixes
 
-* Fix # 1
-* Fix # 2
+* Added support for fields of type `string array[]`.
+* Fixed an issue that resulted in [!UICONTROL Fallout] reports not being visible.
 
 >[!MORELIKETHIS]
 >[Customer Journey Analytics documentation updates](/help/release-notes/doc-changes.md)
