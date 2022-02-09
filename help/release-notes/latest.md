@@ -17,7 +17,5 @@ feature: Release Notes
 * Fix # 1
 * Fix # 2
 
-{style="table-layout:auto"}
-
 >[!MORELIKETHIS]
->[Customer Journey Analytics documentation updates](/help/doc-changes.md)
+>[Customer Journey Analytics documentation updates](/help/release-notes/doc-changes.md)
