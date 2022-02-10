@@ -185,7 +185,7 @@ You can preview how the scorecard will look and function once it is published in
 
 1. To interact with the preview, you can:
 
-    * Left click to simulate taping on the phone screen.
+    * Left click to simulate tapping on the phone screen.
     
     * Use your computer's scroll function to simulate scrolling the phone screen with your finger.
     
