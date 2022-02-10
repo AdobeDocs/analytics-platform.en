@@ -173,6 +173,23 @@ Similarly, to remove a component that is applied to the entire Scorecard, click 
 
 ## Preview scorecard {#preview}
 
+You can preview how the scorecard will look and function once it is published in the Analytics dashboards app. 
+
+1. Click **[!UICONTROL Preview]** in the upper right hand corner of the screen.
+
+    ![Preview_scorecards](assets/preview.png)
+
+1. To view what the scorecard will look like on different devices, select a device from the [!UICONTROL Device preview] drop-down menu.
+
+    ![Device_preview](assets/device-preview.png)
+
+1. To interact with the preview, you can:
+
+    * Left click to simulate taping on the phone screen.
+    
+    * Use your computer's scroll function to simulate scrolling the phone screen with your finger.
+    
+    * Click and hold to simulate pressing and holding your finger on the phone screen. This is useful for interacting with the visualizations in the detailed view.
 
 ## Name a scorecard {#name}
 
