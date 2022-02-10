@@ -6,7 +6,7 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 ---
-# Create a scorecard
+# Create a mobile scorecard
 
 The following information instructs curators of Adobe Analytics data on how to configure and present dashboards for executive users. To start with, you can view the Adobe Analytics dashboards Scorecard Builder video:
 
@@ -28,11 +28,11 @@ To create the Scorecard, you need to do the following:
 1. Access the [!UICONTROL Blank Mobile Scorecard] template.
 2. Configure the scorecard with data and save it.
 
-## Access the [!UICONTROL Blank Mobile Scorecard] template
+## Access the [!UICONTROL Blank Mobile Scorecard] template {#template}
 
 You can access the [!UICONTROL Blank Mobile Scorecard] template either by creating a new project, or from the Tools menu.
 
-### Create a new project
+### Create a new project {#create}
 
 1. Open Adobe Analytics and click the **[!UICONTROL Workspace]** tab.
 1. Click **[!UICONTROL Create project]** and select the **[!UICONTROL Blank mobile scorecard]** project template.
@@ -45,7 +45,7 @@ You can access the [!UICONTROL Blank Mobile Scorecard] template either by creati
 1. From the **[!UICONTROL Tools]** menu, select **[!UICONTROL Analytics dashboards (Mobile App)]**.
 1. On the subsequent screen, click **[!UICONTROL Create new scorecard]**.
 
-## Configure the scorecard with data and save it
+## Configure the scorecard with data and save it {#configure}
 
 To implement the Scorecard template:
 
@@ -60,7 +60,7 @@ To implement the Scorecard template:
 
 1. From each tile, you can access a detailed view that displays additional information about the metric, such as top items for a list of related dimensions.
 
-## Add dimensions or metrics
+## Add dimensions or metrics (#dimsmetrics)
 
 To add a related dimension to a metric, drag a dimension from the left panel and drop it onto a tile. 
 
@@ -68,7 +68,7 @@ For example, you can add appropriate dimensions (like **[!DNL Marketing Channel]
 
 ![Add dimensions](assets/layer_dimensions.png)
 
-## Apply segments
+## Apply segments {#segments}
 
 To apply segments to individual tiles, drag a segment from the left panel and drop it directly on top of the tile. 
 
@@ -76,7 +76,7 @@ If you want to apply the segment to all the tiles in the Scorecard, drop the til
 
 ![Build segments for filter](assets/segment_ui.png)
 
-## Add date ranges
+## Add date ranges {#dates}
 
 Add and remove date range combinations that can be selected in your scorecard by selecting the date range drop down.
 
@@ -100,7 +100,7 @@ If the date range you want hasn’t been created yet, you can create a new one b
 
 This will take you to the date range builder where you can create and save a new date range component. 
 
-## Apply visualizations
+## Apply visualizations {#viz}
 
 Analytics dashboards offer four visualizations that give you great insight into dimension items and metrics. Change to a different visualization by changing the [!UICONTROL chart type] of a tile's [!UICONTROL Properties]. Just select the right tile and then change the chart type.
 
@@ -145,13 +145,13 @@ If you want to remove [!UICONTROL Unspecified] dimension items from your data, d
 
 1. Click the icon next to **[!UICONTROL Unspecified]** to remove unspecified data from your reporting. (You can also remove any other dimension item.)
 
-## View and configure tile properties
+## View and configure tile properties {#tiles}
 
 When you click a tile in the Scorecard Builder, the right-hand rail displays the properties and characteristics associated with that tile. In this rail, you can provide a new **[!UICONTROL Title]** for the tile and alternatively configure the tile by specifying components instead of dragging and dropping them from the left-hand rail.
 
 ![Properties tile](assets/properties_tile.png)
 
-## View Drill ins (breakdowns)
+## View Drill ins (breakdowns) {#breakdowns}
 
 When you click on tiles, a dynamic pop up displays how the Drill ins (Breakdown) view appears to the executive user in the app. You can break down dimensions and dimension items to break down your data for your specific needs. If no dimension has been applied to the tile, the breakdown dimension will be **hour** or **days**, depending on the default date range.
 
@@ -165,19 +165,22 @@ Breakdowns refine your analysis by literally breaking down dimensions by other m
 
 Each dimension added to the tile will show up in a drop-down list in the detailed view of the app. The executive user can then choose among the options listed in the drop-down list.
 
-## Remove components
+## Remove components {#remove}
 
 Similarly, to remove a component that is applied to the entire Scorecard, click anywhere on the Scorecard outside of the tiles and then remove it by clicking the **x** that appears when you hover over the component, as shown below for the **First Time Visits** segment:
 
 ![Remove_components](assets/new_remove.png)
 
-## Name a scorecard
+## Preview scorecard {#preview}
+
+
+## Name a scorecard {#name}
 
 To name the Scorecard, click the namespace in the upper-left of the screen and type the new name.
 
 ![Naming_Scorecards](assets/new_name.png)
 
-## Share a scorecard
+## Share a scorecard {#share}
 
 To share the Scorecard with an executive user:
 
