@@ -14,10 +14,18 @@ breadcrumb-title: Customer Journey Analytics Guide
 # Customer Journey Analytics Guide {#using}
 
 + [Customer Journey Analytics Guide](getting-started/cja-landing.md)
++ Release Notes {#releases}
+  + [Latest release](release-notes/latest.md)
+  + [2022 releases](release-notes/2022.md)
+  + [2021 releases](release-notes/2021.md)
+  + [2020 releases](release-notes/2020.md)
+  + [CJA releases](release-notes/releases.md)
+  + [CJA documentation updates](release-notes/doc-changes.md)
 + Customer Journey Analytics overview {#cja-overview}
   + [Customer Journey Analytics overview](getting-started/cja-overview.md)
   + [Getting Started](getting-started/cja-getting-started.md)
   + [Frequently asked questions](getting-started/cja-faq.md)
+  + [Prepare to migrate from Adobe Analytics to Customer Journey Analytics](getting-started/aa-to-cja.md)
   + [Customer Journey Analytics feature support](getting-started/cja-aa.md)
   + [Deletion implications](getting-started/cja-deletion.md)
   + [CJA glossary](getting-started/cja-glossary.md)
@@ -199,11 +207,5 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Compare your Adobe Analytics data to CJA data](troubleshooting/compare.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
-+ Release Notes {#releases}
-  + [Latest release](release-notes/latest.md)
-  + [2022 releases](release-notes/2022.md)
-  + [2021 releases](release-notes/2021.md)
-  + [2020 releases](release-notes/2020.md)
-  + [CJA releases](release-notes/releases.md)
-  + [CJA documentation updates](release-notes/doc-changes.md)
+
   
