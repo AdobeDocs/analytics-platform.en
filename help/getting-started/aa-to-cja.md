@@ -27,7 +27,7 @@ In datasets like Adobe Analytics, an identity may not exist on every row of data
 
 ### 2. Align your variables
 
-The most straightforward migration of Adobe Analytics data into Customer Journey Analytics is to ingest a global report suite into Experience Platform using the [Adobe Analytics Source Connector](). This connector maps your Adobe Analytics variables directly to an XDM schema and dataset in AEP, which can in turn be easily connected to CJA. 
+The most straightforward migration of Adobe Analytics data into Customer Journey Analytics is to ingest a global report suite into Experience Platform using the [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en). This connector maps your Adobe Analytics variables directly to an XDM schema and dataset in AEP, which can in turn be easily connected to CJA. 
 
 A full global report suite may not always be feasible for an implementation. If you are planning to bring multiple report suites into Customer Journey Analytics, you must plan ahead to bring variables into alignment across those report suites. 
 
