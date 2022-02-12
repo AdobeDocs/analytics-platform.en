@@ -3,8 +3,8 @@ title: Migrate from Adobe Analytics to Customer Journey Analytics
 description: Steps to migrate from Adobe Analytics to Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
+exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 ---
-
 # Prepare to migrate from Adobe Analytics to Customer Journey Analytics
 
 Before you migrate your data from Adobe Analytics to Customer Journey Analytics, explore these considerations to prepare your data and to become aware of critical differences between the two technologies.
