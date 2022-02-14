@@ -51,15 +51,15 @@ feature: FAQ
 
 | Question | Answer |
 | --- | --- |
-| What is the expected latency for [!UICONTROL Customer Journey Analytics] on [!UICONTROL Adobe Experience Platform]? | <ul><li>Live data or events: Processed and ingested within 90 minutes, once data is available in AEP.</li><li>Batch size > 50 million rows: longer than 90 mins.</li><li>Small backfills - For example, a lookup dataset of 10 million rows: within 24 hours<li>Large backfills - For example, 500 billion rows: 30 days</li></ul> |
+| What is the expected latency for [!UICONTROL Customer Journey Analytics] on [!UICONTROL Adobe Experience Platform]? | <ul><li>Live data or events: Processed and ingested within 90 minutes, once data is available in AEP. (Batch size > 50 million rows: longer than 90 mins.)</li><li>Small backfills - For example, a lookup dataset of 10 million rows: within 24 hours<li>Large backfills - For example, 500 billion rows: 30 days</li></ul> |
 
 
 ## 5. Traditional [!UICONTROL Adobe Analytics] components
 
 | Question | Answer |
 | --- | --- |
-| Can I share/publish filters (segments) from Customer Journey Analytics to Experience Platform Unified Profile, or other Experience Cloud applications? | Not yet, but we are actively working to deliver this capability. |
-| What happened to my old eVar setting? | eVars, props, and events in the traditional Adobe Analytics sense no longer exist in [!UICONTROL Customer Journey Analytics]. You have unlimited schema elements (dimensions, metrics, list fields). So all of the attribution settings you used to apply during the data collection process are now applied at query time. |
+| Can I share/publish [!UICONTROL filters] ([!UICONTROL segments]) from [!DNL Customer Journey Analytics] to Experience Platform Unified Profile, or other Experience Cloud applications? | Not yet, but we are actively working to deliver this capability. |
+| What happened to my old [!UICONTROL eVar] setting? | [!UICONTROL eVars], [!UICONTROL props], and [!UICONTROL events] in the traditional Adobe Analytics sense no longer exist in [!UICONTROL Customer Journey Analytics]. You have unlimited schema elements (dimensions, metrics, list fields). So all of the attribution settings you used to apply during the data collection process are now applied at query time. |
 | Where are all my session and variable persistence settings now? | [!UICONTROL Customer Journey Analytics] applies all of these settings at report time, and these settings now live in Data Views. Changes to these settings are now retroactive, and you can have multiple versions by using multiple Data Views! |
 | What happens to our existing segments/calculated metrics? | [!UICONTROL Customer Journey Analytics] no longer uses eVars, props, or events and instead uses any AEP schema. This means none of the existing segments or calc metrics are compatible with [!UICONTROL Customer Journey Analytics]. |
 | How does [!UICONTROL Customer Journey Analytics] handle `Uniques Exceeded` limitations? | [!UICONTROL Customer Journey Analytics] has no unique value limitations, so no need to worry about them! |
