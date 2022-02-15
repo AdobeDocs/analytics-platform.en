@@ -26,9 +26,9 @@ The initial release of Customer Journey Analytics includes many of the features 
 
 ## Comparing CJA to Cross-Device Analytics
 
-[Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) integrates with Adobe Experience Platform Identity Service, utilizing either the Co-op Graph or Private Graph, to identify how digital devices map to people. It is available for Adobe Analytics Ultimate customers.
+[Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) integrates with [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en), utilizing either the Co-op Graph or Private Graph, to identify how digital devices map to people. It is available for Adobe Analytics Ultimate customers.
 
-CJA, on the other hand, integrates with Adobe Experience Platform datasets and enables cross-channel analysis in Analysis Workspace. Although CJA does not yet integrate with the Co-op or Private identity graphs, you can "bring your own ID" to join datasets together, and those datasets can go beyond digital data to include both online and offline touchpoints. CJA prerequisites are covered in more detail below.
+CJA, on the other hand, integrates with Adobe Experience Platform datasets and enables cross-channel analysis in Analysis Workspace. Although CJA does not yet integrate with the Co-op or Private identity graphs, you can "bring your own ID" to join datasets together. Those datasets can go beyond digital data to include both online and offline touchpoints. CJA prerequisites are covered in more detail below.
 
 ## Key use cases
 
