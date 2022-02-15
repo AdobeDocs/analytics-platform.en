@@ -95,8 +95,6 @@ Here are a couple of videos to guide you:
 
 * [Move your Calculated Metrics from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
 
-### 
-
 ## Next steps
 
 After moving to CJA, if you notice any data discrepancies, you can compare your original Adobe Analytics data with the Adobe Analytics data that is now in Customer Journey Analytics. [Learn more](help/troubleshooting/compare.md)
