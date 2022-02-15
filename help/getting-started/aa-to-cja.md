@@ -97,4 +97,4 @@ Here are a couple of videos to guide you:
 
 ## Next steps
 
-After moving to CJA, if you notice any data discrepancies, you can compare your original Adobe Analytics data with the Adobe Analytics data that is now in Customer Journey Analytics. [Learn more](help/troubleshooting/compare.md)
+After moving to CJA, if you notice any data discrepancies, you can compare your original Adobe Analytics data with the Adobe Analytics data that is now in Customer Journey Analytics. [Learn more](/help/troubleshooting/compare.md)
