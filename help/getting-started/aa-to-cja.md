@@ -60,7 +60,7 @@ This method greatly expands possibilities for data collection: There is no longe
 
 **Drawbacks to using Experience Platform SDKs**
 
-The following Adobe Analytics components are not supported:
+The following Adobe Analytics features or components are not supported:
 
 * Marketing Channels
 * Bot Filtering
@@ -71,15 +71,15 @@ The following Adobe Analytics components are not supported:
 
 ### Get comfortable with Report-time Processing
 
-The reporting in Adobe Analytics relies on a significant amount of data pre-processing to generate results like the persistence that you see in eVars. Customer Journey Analytics runs those calculations at report run time.
+The reporting in Adobe Analytics relies on a significant amount of data pre-processing to generate results like the persistence that you see in [!UICONTROL eVars]. Customer Journey Analytics runs those calculations at report run time.
 
-Report time processing opens the ability to apply settings that are retroactive and create multiple versions of variable persistence without needing to change how the underlying data is collected. 
+[!UICONTROL Report time processing] opens the ability to apply settings that are retroactive and create multiple versions of variable persistence without needing to change how the underlying data is collected. 
 
 This shift will result in some differences in how data is reported, especially for any variables that may have a long expiration window. You can begin by evaluating how report-time processing may impact your reporting using a [virtual report suite](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html). 
 
 ### Identify critical Segments and Calculated Metrics
 
-Adobe Analytics segments (called filters in CJA) and calculated metrics are not compatible with Customer Journey Analytics. In many cases, these components can be rebuilt in CJA using the new schemas and data available. 
+Adobe Analytics segments (called [!UICONTROL filters] in CJA) and calculated metrics are not compatible with Customer Journey Analytics. In many cases, these components can be rebuilt in CJA using the new schemas and data available. 
 
 To make the transition as smooth as possible for users when they transition between the systems, plan ahead by
 
@@ -94,3 +94,7 @@ Here are a couple of videos to guide you:
 * [Move Adobe Analytics segments to Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=en)
 
 * [Move your Calculated Metrics from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+
+## Next steps
+
+After moving to CJA, if you notice any data discrepancies, you can compare your original Adobe Analytics data with the Adobe Analytics data that is now in Customer Journey Analytics. [Learn more](/help/troubleshooting/compare.md)
