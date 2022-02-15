@@ -27,7 +27,7 @@ In datasets like Adobe Analytics, an identity may not exist on every row of data
 
 ### 2. Align your variables
 
-The most straightforward migration of Adobe Analytics data into Customer Journey Analytics is to ingest a global report suite into Experience Platform using the [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en). This connector maps your Adobe Analytics variables directly to an XDM schema and dataset in AEP, which can in turn be easily connected to CJA. 
+The most straightforward migration of Adobe Analytics data into Customer Journey Analytics is to ingest a [global report suite](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=en) into Experience Platform using the [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en). This connector maps your Adobe Analytics variables directly to an XDM schema and dataset in AEP, which can in turn be easily connected to CJA. 
 
 A full global report suite may not always be feasible for an implementation. If you are planning to bring multiple report suites into Customer Journey Analytics, you must plan ahead to bring variables into alignment across those report suites. 
 
@@ -71,7 +71,7 @@ The following Adobe Analytics features or components are not supported:
 
 ### Get comfortable with Report-time Processing
 
-The reporting in Adobe Analytics relies on a significant amount of data pre-processing to generate results like the persistence that you see in [!UICONTROL eVars]. Customer Journey Analytics runs those calculations at report run time.
+The reporting in Adobe Analytics relies on a significant amount of data pre-processing to generate results like the persistence that you see in [!UICONTROL eVars]. By contrast, Customer Journey Analytics runs those calculations at report run time.
 
 [!UICONTROL Report time processing] opens the ability to apply settings that are retroactive and create multiple versions of variable persistence without needing to change how the underlying data is collected. 
 
@@ -94,6 +94,14 @@ Here are a couple of videos to guide you:
 * [Move Adobe Analytics segments to Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=en)
 
 * [Move your Calculated Metrics from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+
+### Other considerations
+
+* Using the power of CJA data views, you have a lot more flexibility in the definition of metrics and dimensions within Customer Journey Analytics. For example, you can use the value of a dimension to become the definition of a metric. [Learn more](/help/data-views/data-views-usecases.md)
+
+* If you have defined a custom calendar in Adobe Analytics, you will have similar calendar capabilities within CJA. You need to ensure that your calendar is properly defined.
+
+* In Customer Journey Analytics, you can define a custom visit/session timeout as well as define a metric that will start a new session. You can create data views with different session definitions to get insights above and beyond what was possible in Adobe Analytics. This capability may be particularly beneficial for mobile datasets.
 
 ## Next steps
 
