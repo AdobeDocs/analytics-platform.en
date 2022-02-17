@@ -55,7 +55,7 @@ Details around the available allocation settings.
   | Timestamp (min) | 1 | 2 | 3 | 6 | 7 |
   | Original values |  | C | B |  | A |
   | First known | C | C | C | C | C |
-  | Last known | A | A | A | A | A | 
+  | Last known | A | A | A | A | A |
 
 ## [!UICONTROL Expiration] settings
 
@@ -63,7 +63,7 @@ Details around the available expiration settings.
 
 * **Session**: Expires after a given session. Default expiration window.
 * **Person**: Expires at the end of the reporting window.
-* **Time**: You can set the dimension value to expire after a specified time period (up to 90 days). This expiration option is only available for Original and Most Recent allocation models. When using time-based expiration, values previous to the start of your reporting window (up to 90 days) are considered.
+* **Custom Time**: Expires after a specified time period (up to 90 days). This expiration option is only available for Original and Most Recent allocation models. When using time-based expiration, values previous to the start of your reporting window (up to 90 days) are considered.
 * **Metric**: When this metric is seen in a hit, immediately expire the persisted value in the dimension. You can use any metric as the expiration end for this dimension. This expiration option is only available for Original and Most Recent allocation settings.
 
 ## [!UICONTROL Binding Dimension]

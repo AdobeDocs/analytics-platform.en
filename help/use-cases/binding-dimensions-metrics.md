@@ -77,7 +77,7 @@ You can go into the Data View Manager and bind product color to product name:
 
 ![Binding dimension](assets/binding-dimension.png)
 
-When you set this persistence model, Adobe takes note of the product name whenever product color is set. When it recognizes the same product name in a subsequent event for this visitor, the product color is brought over as well. The same data when you bind product color to product name would look similar to the following:
+When you set this persistence model, CJA takes note of the product name whenever product color is set. When it recognizes the same product name in a subsequent event for this visitor, the product color is brought over as well. The same data when you bind product color to product name would look similar to the following:
 
 | product.color | revenue |
 | --- | --- |
@@ -88,7 +88,7 @@ When you set this persistence model, Adobe takes note of the product name whenev
 
 One of the most common merchandising methods in Adobe Analytics has been to bind a search term to a product so each search term gets credit for it's appropriate product. Consider the following customer journey:
 
-1. A visitor arrives to your site and searches for "boxing gloves".
+1. A visitor arrives to your site and searches for "boxing gloves". The searches metric increments by one, and the top three search results are displayed.
 
     ```json
     {
@@ -99,24 +99,18 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
         "product": [
             {
                 "name": "Beginner gloves",
-                "color": "Red",
-                "price": "25.69"
             },
             {
                 "name": "Tier 3 gloves",
-                "color": "Black",
-                "price": "89.99"
             },
             {
                 "name": "Professional gloves",
-                "color": "Blue",
-                "price": "224.99"
             }
         ]
     }
     ```
 
-1. They find a pair of gloves that they like, and add it to their cart.
+2. They find a pair of gloves that they like, and add it to their cart.
 
     ```json
     {
@@ -126,14 +120,12 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
         "product": [
             {
                 "name": "Tier 3 gloves",
-                "color": "Black",
-                "price": "89.99"
             }
         ]
     }
     ```
 
-1. The visitor then searches for "tennis racket".
+3. The visitor then searches for "tennis racket". The searches metric increments by one, and the top three search results are displayed.
 
     ```json
     {
@@ -144,21 +136,18 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
         "product": [
             {
                 "name": "Shock absorb racket",
-                "price": "34.99"
             },
             {
                 "name": "Women's open racket",
-                "price": "49.99"
             },
             {
                 "name": "Extreme racket",
-                "price": "134.99"
             }
         ]
     }
     ```
 
-1. They find a racket that they like, and add it to their cart.
+4. They find a racket that they like, and add it to their cart.
 
     ```json
     {
@@ -168,18 +157,15 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
         "product": [
             {
                 "name": "Tier 3 gloves",
-                "color": "Black",
-                "price": "89.99"
             },
             {
                 "name": "Shock absorb racket",
-                "price": "34.99"
             }
         ]
     }
     ```
 
-1. The visitor searches a third time for "shoes".
+5. The visitor searches a third time for "shoes". The searches metric increments by one, and the top three search results are displayed.
 
     ```json
     {
@@ -190,24 +176,18 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
         "product": [
             {
                 "name": "Men's walking shoes",
-                "color": "Grey",
-                "price": "54.95"
             },
             {
                 "name": "Tennis shoes",
-                "color": "White",
-                "price": "42.59"
             },
             {
                 "name": "Skate shoes",
-                "color": "Black",
-                "price": "79.99"
             }
         ]
     }
     ```
 
-1. They find a pair of shoes that they like, and add it to their cart.
+6. They find a pair of shoes that they like, and add it to their cart.
 
     ```json
     {
@@ -217,23 +197,18 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
         "product": [
             {
                 "name": "Tier 3 gloves",
-                "color": "Black",
-                "price": "89.99"
             },
             {
                 "name": "Shock absorb racket",
-                "price": "34.99"
             },
             {
                 "name": "Skate shoes",
-                "color": "Black",
-                "price": "79.99"
             }
         ]
     }
     ```
 
-1. The visitor goes through the checkout process and purchases these three items.
+7. The visitor goes through the checkout process and purchases these three items.
 
     ```json
     {
@@ -243,7 +218,6 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
         "product": [
             {
                 "name": "Tier 3 gloves",
-                "color": "Black",
                 "price": "89.99"
             },
             {
@@ -252,20 +226,19 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
             },
             {
                 "name": "Skate shoes",
-                "color": "Black",
                 "price": "79.99"
             }
         ]
     }
     ```
 
-If you use a traditional allocation model with search term, all three products attribute revenue to only a single search term. For example, if you used first allocation with the search term dimension:
+If you use an allocation model that does not include a binding dimension with search term, all three products attribute revenue to only a single search term. For example, if you used Original allocation with the search term dimension:
 
 | search_term | revenue |
 | --- | --- |
 | boxing gloves | $204.97 |
 
-If you used last allocation with the search term dimension, all three products still attribute revenue to a single search term:
+If you used Most Recent allocation with the search term dimension, all three products still attribute revenue to a single search term:
 
 | search_term | revenue |
 | --- | --- |
@@ -273,18 +246,20 @@ If you used last allocation with the search term dimension, all three products s
 
 While this example includes only one visitor, many visitors who search for different things can misattribute search terms to different products, making it difficult to determine what the best search results actually are.
 
-With a binding dimension, Adobe takes note of the dimension item that it is bound to. When that same binding value is seen in a subsequent event, it brings over the dimension item so that you can attribute the desired metric to it. In this example, we can set the binding dimension for search_term to product name. When we set this dimension in the Data View manager, we are also required to set a binding metric because the binding dimension is in an object array. A binding metric acts as a trigger for a binding dimension, so it only binds itself on events where the binding metric is present. In this example implementation, the search results page always includes a search term dimension and a searches metric. We can bind search terms to product name whenever the Searches metric is present.
+CJA automatically detects the relationship between the selected dimension and the binding dimension. If the binding dimension is in an object array while the selected dimension is at a higher level, a binding metric is required. A binding metric acts as a trigger for a binding dimension, so it only binds itself on events where the binding metric is present.
+
+In this example implementation, the search results page always includes a search term dimension and a searches metric. We can bind search terms to product name whenever the Searches metric is present.
 
 ![Binding metric](assets/binding-metric.png)
 
 Setting the search term dimension to this persistence model executes the following logic:
 
-* When search_term is in an event, check for the presence of product name.
+* When the search term dimension is set, check for the presence of product name.
 * If product name is not there, do nothing.
 * If product name is there, check for the presence of the Searches metric.
 * If the Searches metric is not there, do nothing.
-* If the Searches metric is there, bind the search term to all product names. It acts as though it at the same level as product name for that event. In this example, it is treated as product.search_term.
-* If the same product name is seen in a subsequent event, the bound search term exists there as well.
+* If the Searches metric is there, bind the search term to all product names in that event. It copies itself down to the same level as product name for that event. In this example, it is treated as product.search_term.
+* If the same product name is seen in a subsequent event, the bound search term is carried forward to that event as well.
 
 In Analysis Workspace, the resulting report would look similar to the following:
 
@@ -293,3 +268,137 @@ In Analysis Workspace, the resulting report would look similar to the following:
 | boxing gloves | $89.99 |
 | tennis racket | $34.99 |
 | shoes | $79.99 |
+
+## Example 3: Bind video search term to user profile
+
+You can bind a search term to a user profile so persistence between profiles remains completely separated. For example, your organization runs a streaming service where an account can have multiple profiles. The visitor has a child account and an adult account.
+
+1. The account logs in under the child account and searches for a kid's TV show. Note that the `"AccountID"` is `2` to represent the child profile.
+
+    ```json
+    {
+        "PersonID": "7078",
+        "AccountID": "2",
+        "Searches": "1",
+        "search_term": "kids TV show"
+    }
+    ```
+
+1. They find the show "Orangey" and play it so their child can watch it.
+
+    ```json
+    {
+        "PersonID": "7078",
+        "AccountID": "2",
+        "ShowName": "Orangey",
+        "VideoStarts": "1"
+    }
+    ```
+
+1. Later that evening, the parent switches to their profile and searches for some new adult content to watch. Note that the `"AccountID"` is `1` to represent the adult profile. Both profiles belong to the same account, represented by the same `"PersonID"`.
+
+    ```json
+    {
+        "PersonID": "7078",
+        "AccountID": "1",
+        "Searches": "1",
+        "search_term": "inappropriate adult movie"
+    }
+    ```
+
+1. The find the show "Game of Dethrones" and enjoy their evening watching it.
+
+    ```json
+    {
+        "PersonID": "7078",
+        "AccountID": "1",
+        "ShowName": "Game of Dethrones",
+        "VideoStarts": "1"
+    }
+    ```
+
+1. The next day, they continue the TV show "Orangey" for their child. They do not need to search since they are now already aware of the show.
+
+    ```json
+    {
+        "PersonID": "7078",
+        "AccountID": "2",
+        "ShowName": "Orangey",
+        "VideoStarts": "1"
+    }
+    ```
+
+If you use an allocation model without a binding dimension, the `"inappropriate adult movie"` search term is attributed to the last view of the kid's TV show. However, if you bound `search_term` to `AccountID`, each profile's searches would be isolated to their own profile, attributed to the correct shows that they search for.
+
+## Example 4: Evaluate browse vs. search behavior in a retail setting
+
+1. A visitor performs a search for `"camera"`. Note that no products are set on this page.
+
+    ```json
+    {
+        "search_term": "camera",
+        "product_finding_method": "search"
+    }
+    ```
+
+1. They click on a camera that they like and add it to their cart.
+
+    ```json
+    {
+        "Product": [
+            {
+                "name": "DSLR Camera"
+            }
+        ],
+        "CartAdd": "1"
+    }
+    ```
+
+1. The visitor then browses into the men's belts category without performing a search. Note that no products are set on this page.
+
+    ```json
+    {
+        "category": "Men's belts",
+        "product_finding_method": "browse"
+    }
+    ```
+
+1. They click on abelt that they like and add it to their cart.
+
+    ```json
+    {
+        "Product": [
+            {
+                "name": "Ratchet belt"
+            }
+        ],
+        "CartAdd": "1"
+    }
+    ```
+
+1. They go through the checkout process and purchase these two items.
+
+    ```json
+    {
+        "Product": [
+            {
+                "name": "DSLR Camera",
+                "price": "399.99"
+            },
+            {
+                "name": "Ratchet belt",
+                "price": "19.99"
+            }
+        ],
+        "Purchase": "1"
+    }
+    ```
+
+If persistence is set to most recent allocation without a binding dimension, all $419.98 of revenue is attributed to the `browse` finding method. If persistence is set using original allocation without a binding dimension, all $419.98 of revenue is attributed to the `search` finding method.
+
+However, if you bind `product_finding_method` to the Cart Adds metric, the resulting report attributes each product to the correct finding method.
+
+| Product finding method | Revenue |
+| --- | --- |
+| search | 399.99 |
+| browse | 19.99 |
