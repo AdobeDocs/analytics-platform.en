@@ -35,7 +35,7 @@ Analytics Select, Prime, and Ultimate customers are eligible to purchase this ad
     </ul> <p class="head"> <b>Adobe Experience Platform Resources</b> </p> 
     <ul> 
      <li><a href="https://www.adobe.com/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 
-     <li> <a href="https://www.adobe.io/apis/experienceplatform/home/tutorials.html" format="https" scope="external"> Adobe Experience Platform Tutorials</a> </li> 
+     <li> <a href="https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html" format="https" scope="external"> Adobe Experience Platform Tutorials</a> </li> 
      <li><a href="https://www.adobe.io/apis/experienceplatform/home/api-reference.html" format="https" scope="external"> API Reference</a> </li> 
      <li><a href="https://www.adobe.com/experience-platform/documentation-and-developer-resources.html" format="https" scope="external"> Documentation and Developer Resources</a> </li> 
     </ul> </td> 
