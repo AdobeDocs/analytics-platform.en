@@ -147,6 +147,11 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Report Builder Settings](report-builder/report-builder-settings.md)
 + Components {#cja-components}
   + [Components overview](components/overview.md)
+  + Annotations {#annotations}
+    + [Annotations overview](analysis-workspace/components/annotations/overview.md)
+    + [Create annotations](analysis-workspace/components/annotations/create-annotations.md)
+    + [Manage annotations](analysis-workspace/components/annotations/manage-annotations.md)
+    + [View annotations](analysis-workspace/components/annotations/view-annotations.md)
   + Dimensions {#dimensions}
     + [Preview dimensions](components/dimensions/view-dimensions.md)
     + [Break down dimensions](components/dimensions/t-breakdown-fa.md)
