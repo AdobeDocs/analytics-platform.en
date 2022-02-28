@@ -7,7 +7,7 @@ solution: Customer Journey Analytics
 type: Documentation
 index: yes
 user-guide-title: Customer Journey Analytics Guide
-user-guide-description: This guide provides self-help assistance for Customer Journey Analytics, Adobe's next-generation solution for cross-channel analytics, based on Adobe Experience Platform.
+user-guide-description: This guide provides support for Customer Journey Analytics, Adobe's next-generation solution for cross-channel analytics, based on Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
 ---
 
