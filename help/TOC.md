@@ -7,7 +7,7 @@ solution: Customer Journey Analytics
 type: Documentation
 index: yes
 user-guide-title: Customer Journey Analytics Guide
-user-guide-description: This guide provides self-help assistance for Customer Journey Analytics, Adobe's next-generation solution for cross-channel analytics, based on Adobe Experience Platform.
+user-guide-description: This guide provides support for Customer Journey Analytics, Adobe's next-generation solution for cross-channel analytics, based on Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
 ---
 
@@ -147,6 +147,11 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Report Builder Settings](report-builder/report-builder-settings.md)
 + Components {#cja-components}
   + [Components overview](components/overview.md)
+  + Annotations {#annotations}
+    + [Annotations overview](components/annotations/overview.md)
+    + [Create annotations](components/annotations/create-annotations.md)
+    + [Manage annotations](components/annotations/manage-annotations.md)
+    + [View annotations](components/annotations/view-annotations.md)
   + Dimensions {#dimensions}
     + [Preview dimensions](components/dimensions/view-dimensions.md)
     + [Break down dimensions](components/dimensions/t-breakdown-fa.md)
