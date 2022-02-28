@@ -9,7 +9,9 @@ feature: Connections
 
 A connection lets you integrate datasets from [!DNL Adobe Experience Platform] into [!UICONTROL Workspace]. In order to report on [!DNL Experience Platform] datasets, you first have to establish a connection between datasets in [!DNL Experience Platform] and [!UICONTROL Workspace].
 
-Click [here](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en) for a video overview.
+Here is a video overview:
+
+>[!VIDEO](https://video.tv.adobe.com/v/32549/?quality=12)
 
 ## Required permissions
 

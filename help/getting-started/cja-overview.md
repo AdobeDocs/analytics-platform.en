@@ -13,9 +13,11 @@ The high-level CJA architecture is shown here:
 
 ![architecture](assets/cja-architecture.png)
 
+For a video on 
+
 ## Comparing CJA to Traditional Adobe Analytics
 
-Customer Journey Analytics expands the scope of Analytics by offering easy-to-use cross-channel capabilities and removing limitations in previous versions of Adobe Analytics. Some notable improvements are:
+Customer Journey Analytics expands the scope of Adobe Analytics by offering easy-to-use cross-channel capabilities and removing limitations in previous versions of Adobe Analytics. Some notable improvements are:
 
 * **Unlimited variables and events**: The concepts of eVars, props, and events no longer exist. Data is primarily focused on dimensions and metrics. Data sets can have an unlimited amount of unique dimensions and metrics.
 * **Unlimited unique values**: Adobe Experience Platform is not constrained to any unique limitations.
@@ -62,11 +64,11 @@ To create connections, add datasets, etc., you need the following permissions in
   * View Identity Namespaces
   * View Datasets
   
-For more information on Experience Platform permissions, see [Access control in Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+For more information on Experience Platform permissions, see [Access control in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en).
 
 >[!NOTE]
 >
->You cannot permission individual metrics or dimensions in Customer Journey Analytics, like you can in traditional Adobe Analytics. Metrics and dimensions can be modified in data views and are thus subject to change in CJA, which also changes reporting retroactively.
+>You cannot permission individual metrics or dimensions in Customer Journey Analytics, like you can in traditional Adobe Analytics. Metrics and dimensions can be modified in [data views](/help/data-views/data-views.md) and are thus subject to change in CJA, which also changes reporting retroactively.
 
 ### User access
 
@@ -96,3 +98,14 @@ From Data Ingestion to direct SQL access, several components of the Experience P
 * [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en):
 * [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en):
 * [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en) in "developer" option: you can use prebuilt artificial intelligence (AI) and machine-learning models in Adobe Experience Platform to influence various points of the customer journey. By unearthing hidden insights, you can make better predictions across the customer journey, suggest recommended best next steps, or automate cumbersome processes.
+
+## Videos
+
+* Working with data in Customer Journey Analytics:
+
+  >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
+
+* Architecture and Integrations of Customer Journey Analytics:
+
+  >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
+  
