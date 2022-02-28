@@ -148,10 +148,10 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Components {#cja-components}
   + [Components overview](components/overview.md)
   + Annotations {#annotations}
-    + [Annotations overview](analysis-workspace/components/annotations/overview.md)
-    + [Create annotations](analysis-workspace/components/annotations/create-annotations.md)
-    + [Manage annotations](analysis-workspace/components/annotations/manage-annotations.md)
-    + [View annotations](analysis-workspace/components/annotations/view-annotations.md)
+    + [Annotations overview](components/annotations/overview.md)
+    + [Create annotations](components/annotations/create-annotations.md)
+    + [Manage annotations](components/annotations/manage-annotations.md)
+    + [View annotations](components/annotations/view-annotations.md)
   + Dimensions {#dimensions}
     + [Preview dimensions](components/dimensions/view-dimensions.md)
     + [Break down dimensions](components/dimensions/t-breakdown-fa.md)
