@@ -13,7 +13,9 @@ The high-level CJA architecture is shown here:
 
 ![architecture](assets/cja-architecture.png)
 
-For a video on 
+Here is a video overview of Customer Journey Analytics:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
 
 ## Comparing CJA to Traditional Adobe Analytics
 
