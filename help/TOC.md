@@ -194,7 +194,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
   + [Use arrays of objects](use-cases/object-arrays.md)
-  + [Using binding dimensions and metrics](use-cases/binding-dimensions-metrics.md)
+  + [Use binding dimensions and metrics](use-cases/binding-dimensions-metrics.md)
   + [(B2B) Add account-level data as a lookup dataset](use-cases/b2b.md)
   + [Analyze data across channels](use-cases/cross-channel.md)
   + [Import call center and web data](use-cases/call-center.md)
