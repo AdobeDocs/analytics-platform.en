@@ -13,10 +13,10 @@ You have a number of options when it comes to ingesting data into Customer Journ
 
 This workflow utilizes the Adobe Analytics Data Connector and varies depending on whether you use DTM or Launch as a Tag Manager.
 
-### Via Launch
+### Via tags in Adobe Experience Platform (formerly called Launch)
 
 1. [Create a Data Layer](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/data-layer.html), if you haven't already. A data layer is a framework of JavaScript objects on your site that contains all variable values used in your implementation. It allows greater control and easier maintenance in your implementation.
-1. Use [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html) to implement code on your site for data collection, if you haven't already. Launch is a tag management solution that lets you deploy Analytics code alongside other tagging requirements. Launch offers integrations with other solutions and products, and lets you deploy custom code. All of these tasks can be done without relying on any development teams in your organization to update code on your site..
+1. Use [Adobe Experience Platform tags](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html) to implement code on your site for data collection, if you haven't already. This tag management solution lets you deploy Analytics code alongside other tagging requirements. Tags offer integrations with other solutions and products, and let you deploy custom code. All of these tasks can be done without relying on any development teams in your organization to update code on your site..
 1. Create an [Adobe Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) in Adobe Experience Platform. This source connector will ingest your Analytics data into Experience Platform in a standardized framework called [Experience Data Model (XDM) System](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 1. Use [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) to create one or more connections and data views that will inform your cross-channel reporting.
 
@@ -24,7 +24,7 @@ This workflow utilizes the Adobe Analytics Data Connector and varies depending o
 
 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) is a client-side JavaScript library that allows customers of Adobe Experience Cloud to interact with the various services in the Experience Cloud through the Adobe Experience Platform Edge Network. 
 
-1. [Configure the AEP Web SDK extension in Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=en) to send data to the Adobe Experience Cloud from web properties, through the Adobe Experience Platform Edge Network.
+1. [Configure the AEP Web SDK extension in tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=en) to send data to the Adobe Experience Cloud from web properties, through the Adobe Experience Platform Edge Network.
 1. Use [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) to create one or more connections and data views that will inform your cross-channel reporting.
 
 ## Ingest data with batch ingestion and streaming ingestion
