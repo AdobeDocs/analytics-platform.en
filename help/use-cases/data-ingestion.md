@@ -25,7 +25,7 @@ This workflow utilizes the Adobe Analytics Data Connector and varies depending o
 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) is a client-side JavaScript library that allows customers of Adobe Experience Cloud to interact with the various services in the Experience Cloud through the Adobe Experience Platform Edge Network. 
 
 1. [Configure the AEP Web SDK extension in tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=en) to send data to the Adobe Experience Cloud from web properties, through the Adobe Experience Platform Edge Network.
-1. Use [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) to create one or more connections and data views that will inform your cross-channel reporting.
+1. Use [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) to create one or more [connections](/help/connections/create-connection.md) and [data views](/help/data-views/data-views.md) that will inform your cross-channel reporting.
 
 ## Ingest data with batch ingestion and streaming ingestion
 
@@ -34,12 +34,12 @@ Adobe Experience Platform brings data from multiple sources together in order to
 ### Batch ingestion
 
 1. Set up [Batch Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=en#batch) to allow you to ingest data into Adobe Experience Platform as batch files. Data being ingested can be the profile data from a flat file in a CRM system (such as a parquet file), or data that conforms to a known schema in the Experience Data Model (XDM) registry.
-1. Use [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) to create one or more connections and data views that will inform your cross-channel reporting.
+1. Use [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) to create one or more [connections](/help/connections/create-connection.md) and [data views](/help/data-views/data-views.md) that will inform your cross-channel reporting.
 
 ### Streaming ingestion
 
 1. Set up [Streaming ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=en#streaming) to send data from client and server-side devices to Experience Platform in real time.
-1. Use [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) to create one or more connections and data views that will inform your cross-channel reporting.
+1. Use [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) to create one or more [connections](/help/connections/create-connection.md) and [data views](/help/data-views/data-views.md) that will inform your cross-channel reporting.
 
 ## Bring in Google Analytics data to analyze in Customer Journey Analytics
 
@@ -49,4 +49,4 @@ Review this tutorial on how to [Analyze Google Analytics Data using Customer Jou
 
 1. [Use Bulk Data Insertion API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md) to submit server-side collection data to Adobe Analytics. It lets you submit CSV-formatted files containing event data.
 1. [Create an Adobe Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) to bring this consumer data into Adobe Experience Platform.
-1. Use [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) to create one or more connections and data views that will inform your cross-channel reporting.
+1. Use [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) to create one or more [connections](/help/connections/create-connection.md) and [data views](/help/data-views/data-views.md) that will inform your cross-channel reporting.
