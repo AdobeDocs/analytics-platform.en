@@ -42,6 +42,22 @@ Editing an annotation means that you can adjust date ranges, colors, scope, or w
 
 Both of these options land you back in the Annotations Builder. There, you can make the necessary adjustments and save the new version.
 
+## Share annotations
+
+When sharing annotations or working with annotations that were shared with you, keep this in mind:
+
+* Let's say you create a project with project-only annotations and then you share the project with another user. These annotations will be displayed, but they cannot be edited or deleted by anyone you share the project with. 
+
+* If you save an annotation and share it directly with a user, they can edit/delete the annotation only if they have admin rights.
+
+* To recap, if the project is shared with you, it will show up only in that project. If the annotation is shared directly with you, it will show up in all projects where that annotation can be displayed. 
+
+## Annotations and time zones
+
+All annotations are created with a timestamp, but no 'hour' or 'timezone' information. At report time, the timezone of the panel’s data view is always applied. So an annotation created for Christmas Day happens on December 25th - no matter what report suite timezone you are in. 
+
+Another example is New Year's Day. Every hour, a different timezone sets off fireworks as the new year starts. At 10pm US Mountain Time, the US east coast is setting off fire works because it is already 12am Eastern Time.
+
 ## Other annotations tasks
 
 The Annotations manager lets Administrators edit, add, tag, delete, rename, approve, copy, export, and filter annotations. It is not visible to non-Admin users. 

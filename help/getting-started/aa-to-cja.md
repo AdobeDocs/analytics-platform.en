@@ -1,13 +1,14 @@
 ---
-title: Migrate from Adobe Analytics to Customer Journey Analytics
-description: Steps to migrate from Adobe Analytics to Customer Journey Analytics
+title: Adobe Analytics to Customer Journey Analytics evolution
+description: Steps to move data from Adobe Analytics to Customer Journey Analytics
+role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 ---
-# Prepare to migrate from Adobe Analytics to Customer Journey Analytics
+# Adobe Analytics to Customer Journey Analytics evolution
 
-Before you migrate your data from Adobe Analytics to Customer Journey Analytics, explore these considerations to prepare your data and to become aware of critical differences between the two technologies.
+As your organization evolves to move data from Adobe Analytics to Customer Journey Analytics, explore these steps to prepare your data and to become aware of critical differences between the two technologies. This article is aimed at an administrator audience.
 
 ## Prepare your data
 
@@ -51,7 +52,7 @@ As [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform
 
 This method greatly expands possibilities for data collection: There is no longer a limitation on the number of fields or the need to map data elements to props, eVars, and events like in Analytics. You can use unlimited schema elements of different types and represent them in multiple ways using CJA [Data Views](/help/data-views/data-views.md). Speed of data availability increases when sent directly to Adobe Experience Platform, as the time for data processing through Adobe Analytics is removed. 
 
-**Advantages of using Experience Platform SDKs**
+**Advantages of using Experience Platform SDKs:**
 
 * Flexible schema to define any fields you need
 * Not reliant on Adobe Analytics nomenclature (prop, eVar, event, etc.)
@@ -99,7 +100,7 @@ Here are a couple of videos to guide you:
 
 * Using the power of CJA data views, you have a lot more flexibility in the definition of metrics and dimensions within Customer Journey Analytics. For example, you can use the value of a dimension to become the definition of a metric. [Learn more](/help/data-views/data-views-usecases.md)
 
-* If you have defined a custom calendar in Adobe Analytics, you will have similar calendar capabilities within CJA. You need to ensure that your calendar is properly defined.
+* If you have defined a custom calendar in Adobe Analytics, you will have similar [custom calendar capabilities](/help/components/date-ranges/custom-date-ranges.md) within CJA. You need to ensure that your calendar is properly defined.
 
 * In Customer Journey Analytics, you can define a custom visit/session timeout as well as define a metric that will start a new session. You can create data views with different session definitions to get insights above and beyond what was possible in Adobe Analytics. This capability may be particularly beneficial for mobile datasets.
 
