@@ -8,7 +8,7 @@ exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 ---
 # Adobe Analytics to Customer Journey Analytics evolution
 
-As your organization evolves to move data from Adobe Analytics to Customer Journey Analytics, explore these steps to prepare your data and to become aware of critical differences between the two technologies. This article is aimed at an administrator audience.
+As your organization evolves to use Customer Journey Analytics, explore these steps to prepare your data and to become aware of critical differences between the two technologies. This article is aimed at an administrator audience.
 
 ## Prepare your data
 
@@ -28,7 +28,7 @@ In datasets like Adobe Analytics, an identity may not exist on every row of data
 
 ### 2. Align your variables
 
-The most straightforward migration of Adobe Analytics data into Customer Journey Analytics is to ingest a [global report suite](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=en) into Experience Platform using the [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en). This connector maps your Adobe Analytics variables directly to an XDM schema and dataset in AEP, which can in turn be easily connected to CJA. 
+The most straightforward method of transforming Adobe Analytics data into Customer Journey Analytics data is to ingest a [global report suite](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=en) into Experience Platform using the [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en). This connector maps your Adobe Analytics variables directly to an XDM schema and dataset in Experience Platform, which can in turn be easily connected to Customer Journey Analytics. 
 
 A full global report suite may not always be feasible for an implementation. If you are planning to bring multiple report suites into Customer Journey Analytics, you must plan ahead to bring variables into alignment across those report suites. 
 
