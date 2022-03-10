@@ -7,37 +7,34 @@ feature: Connections
 ---
 # Estimate connection size
 
-You may need to know how many rows of data you currently have in [!UICONTROL Customer Journey Analytics]. The purpose of this topic is to show you how to report on your current usage of [!UICONTROL Customer Journey Analytics].
+You may need to know how many rows of data you currently have in [!UICONTROL Customer Journey Analytics]. To get an accurate account of your organization's event data records (data rows) usage, do the following **for each of the connections created by your organization**.
 
-1. In [!UICONTROL Customer Journey Analytics], click the **[!UICONTROL Connections]** tab.
-1. On the [!UICONTROL Edit connection] screen, select a connection for which you want to determine the usage/connection size.
+1. In [!UICONTROL Customer Journey Analytics], click the **[!UICONTROL Connections]** tab. 
 
-    ![Edit connection](assets/edit-connection.png)
+    You can now see a list of all your current connections.
 
-1. Select a dataset that is your part of the connection from the left rail. In this case, it is the "B2B Impression" dataset.
+1. Click each connection name to get to the Connections Manager.
 
-    ![dataset](assets/dataset.png)
+1. Add up the **[!UICONTROL Records of event data available]** for all connections created. (Depending on the size of your connection, the number may take awhile to appear.)
 
-1. Click the blue (i) icon (info) next to its name. You will notice the dataset has 3.8k rows/events. In addition, for the exact number of rows, click **[!UICONTROL Edit in Experience Platform]** below the preview table. This will redirect you to the datasets in [!UICONTROL Adobe Experience Platform].
+    ![event data](assets/event-data.png)
 
-    ![AEP dataset info](assets/data-size.png)
+1. Once you have a sum of all event data rows, look up the "Rows of Data" entitlement in the Customer Journey Analytics contract that your company signed with Adobe. 
 
-1. Notice the **[!UICONTROL Total records]** for this dataset amount to 3.83k records, with the size of the data being 388.59 KB.
+    This gives you the maximum number of rows of data authorized in the Sales Order. If the number of rows of data that resulted from Step 3 is larger than this number, you are incurring an overage.
 
-1. Repeat steps 1-5 for other datasets in your connection and add up the number of records/rows. The final aggregated number will be the usage metric of your connection. This is the number of rows of the datasets of your connection which you are going to ingest from [!UICONTROL Adobe Experience Platform]. 
+1. To remedy this situation, you have several options:
 
-## Determine number of rows ingested
+    * Change your [data retention settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#set-rolling-window-for-connection-data-retention).
+    * [Delete any unused connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components).
+    * [Delete a dataset in AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components).
+    * Contact your Adobe Account Manager to license additional capacity. 
 
-The number of events actually ingested in [!UICONTROL Customer Journey Analytics] depends upon your connection configuration settings. In addition, if you selected the wrong Person ID or if this ID is not available for some rows in the datasets, then [!UICONTROL Customer Journey Analytics] will ignore those rows. In order to determine the actual rows of events ingested, take the following steps:
+## Regarding usage overages
 
-1. Once you save the connection, create a data view of the same connection without any filters.
-1. Create a Workspace project and select the correct data view. Create a freeform table and drag and drop the **[!UICONTROL Events]** metric with a **[!UICONTROL Year]** dimension. Choose a large enough date range from your date selection calendar to encapsulate all of the data in your connection. This allows you to see the number of events being ingested into [!UICONTROL Customer Journey Analytics].
+Usage limits are strictly monitored and enforced by Adobe, on a daily basis. "Rows of data" means the daily average rows of data available for analysis within Customer Journey Analytics. 
 
-    ![Workspace project](assets/event-number.png)
-
-    >[!NOTE]
-    >
-    >This lets you see the number of events being ingested from your events dataset. It does not include profile and lookup type datasets. Follow steps 1-3 under "Estimate connection size" for profile and lookup datasets and add up the numbers to get the  total number of rows for this connection.
+Let's say your contract entitlement limits the number of rows to 1 Million. Suppose that on Day 1 of using Customer Journey Analytics, you upload 2 Million rows of data. On Day 2, you delete 1 Million rows and keep your usage at that committed maximum. You would still incur overusage fees for Day 1.
 
 ## Diagnose discrepancies
 
@@ -47,6 +44,6 @@ In some cases, you may notice that the total number of events ingested by your c
 
     ![breakdown](assets/data-size2.png)
 
-1. In addition, if we check in [!UICONTROL Adobe Experience Platform], there is no dataset with Id "5f21c12b732044194bffc1d0", hence someone deleted this particular dataset from [!UICONTROL Adobe Experience Platform] when the initial connection was being created. Later it got added to [!UICONTROL Customer Journey Analytics] again, but a different [!UICONTROL Platform Dataset ID] was generated by [!UICONTROL Adobe Experience Platform]. 
+1. In addition, if we check in [!UICONTROL Adobe Experience Platform], there is no dataset with Id "5f21c12b732044194bffc1d0", hence someone deleted this particular dataset from [!UICONTROL Adobe Experience Platform] when the initial connection was being created. Later it got added to Customer Journey Analytics again, but a different [!UICONTROL Platform Dataset ID] was generated by [!UICONTROL Adobe Experience Platform]. 
 
 Read more about the [implications of dataset and connection deletion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components) in [!UICONTROL Customer Journey Analytics] and [!UICONTROL Adobe Experience Platform].

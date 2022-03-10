@@ -1,6 +1,6 @@
 ---
 title: Adobe Analytics to Customer Journey Analytics evolution
-description: Steps to move data from Adobe Analytics to Customer Journey Analytics
+description: Steps to transform Adobe Analytics data into Customer Journey Analytics data
 role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
