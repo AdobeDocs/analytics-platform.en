@@ -11,7 +11,8 @@ The following updates were made to the CJA documentation since its inception.
 
 | Date | Update description |
 | --- | --- |
-| February 2022 | [Prepare to migrate from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=en) |
+| March | Significantly updated content on [estimating connection size](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/estimate-connection-size.html?lang=en). |
+| February 2022 | [Adobe Analytics to Customer Journey Analytics evolution](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=en) |
 | January 2022 | New use case for [Using binding dimensions and metrics in CJA](/help/use-cases/binding-dimensions-metrics.md) |
 | January 2022 | Added new feature documentation on [binding dimensions and metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension) and on new [[!UICONTROL First Known] and [!UICONTROL Last Known] allocation settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#allocation-settings) |
 | January 2022 | New article on [comparing your Adobe Analytics data to Analytics data in CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html) |
