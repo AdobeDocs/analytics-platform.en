@@ -32,9 +32,9 @@ You may need to know how many rows of data you currently have in [!UICONTROL Cus
 
 ## Regarding usage overages
 
-Usage limits are strictly monitored and enforced by Adobe, on a daily basis. "Rows of data" means the daily average rows of data available for analysis within Customer Journey Analytics. 
+Usage limits are regularly monitored and enforced by Adobe. “Rows of data” means the daily average rows of data available for analysis within Customer Journey Analytics.
 
-Let's say your contract entitlement limits the number of rows to 1 Million. Suppose that on Day 1 of using Customer Journey Analytics, you upload 2 Million rows of data. On Day 2, you delete 1 Million rows and keep your usage at that committed maximum for the remainder of your License Term. Depending on your contractual terms, you may still incur prorated overusage fees for Day 1.
+For example, let’s say your contract entitles you to one million rows of data. Suppose that on day 1 of using Customer Journey Analytics, you upload two million rows of data. On day 2, you delete 1 million rows and keep your usage at that committed maximum (i.e., one million row of data) for the remainder of your License Term. Depending on your contractual terms, you may still incur prorated over-usage fees for day 1, since you exceeded your "rows of data" license entitlement.
 
 ## Diagnose discrepancies
 
