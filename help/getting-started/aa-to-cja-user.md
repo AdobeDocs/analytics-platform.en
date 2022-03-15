@@ -18,7 +18,7 @@ A lot of what you are familiar with on the reporting side has not changed. You c
 
 ## New architecture
 
-Architecturally, Customer Journey Analytics gets its data from Adobe Experience Platform. Experience Platform lets you centralize and standardize customer data and content from any system or channel and applies data science and machine learning to improve the design and delivery of personalized experiences. 
+Customer Journey Analytics gets its data from Adobe Experience Platform. Experience Platform lets you centralize and standardize customer data and content from any system or channel and applies data science and machine learning to improve the design and delivery of personalized experiences. 
 
 Customer data in the platform is stored as datasets, which consist of a schema and batches of data. For more detail on the platform, see [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
 
@@ -28,10 +28,26 @@ Your CJA Admin will establish connections to the data in Platform, and builds da
 
 Several features in CJA have been renamed and re-architected, when compared to traditional Adobe Analytics, to align with industry standards. Some updated terminology includes segments, virtual report suites, classifications, customer attributes, and container names. Familiar concepts like eVars and props no longer exist, along with the limitations they imposed.
 
+### eVars and props
+
+[!UICONTROL eVars], [!UICONTROL props], and [!UICONTROL events] in the traditional Adobe Analytics sense no longer exist in [!UICONTROL Customer Journey Analytics]. You have unlimited schema elements (dimensions, metrics, list fields). So all of the attribution settings you used to apply during the data collection process are now applied at query time.
+
 ### Segments are now 'Filters'
 
+[!UICONTROL Customer Journey Analytics] no longer uses eVars, props, or events and instead uses any AEP schema. This means none of the existing segments are compatible with [!UICONTROL Customer Journey Analytics]. In addition, "segments" have been renamed to "filters".
+
+For the time being, you cannot share/publish [!UICONTROL filters] ([!UICONTROL segments]) from [!DNL Customer Journey Analytics] to Experience Platform Unified Profile, or other Experience Cloud applications. This functionality is currently being developed.
+
+### Calculated metrics
+
+[!UICONTROL Customer Journey Analytics] no longer uses eVars, props, or events and instead uses any AEP schema. This means none of the existing calculated metrics are compatible with [!UICONTROL Customer Journey Analytics]. 
+
+### Session and variable persistence settings
+
+[!UICONTROL Customer Journey Analytics] applies all of these settings at report time, and these settings now live in Data Views. Changes to these settings are now retroactive, and you can have multiple versions by using multiple Data Views! 
 
 ### Virtual Report Suites are now 'Data views'
+
 
 
 ### Classifications are now 'Lookup datasets'
@@ -45,13 +61,6 @@ Several features in CJA have been renamed and re-architected, when compared to t
 
 ### Visitor containers are now 'Person' containers
 
-## FAQs regarding Adobe Analytics components
+### `Uniques Exceeded` limitations
 
-| Question | Answer |
-| --- | --- |
-| Can I share/publish [!UICONTROL filters] ([!UICONTROL segments]) from [!DNL Customer Journey Analytics] to Experience Platform Unified Profile, or other Experience Cloud applications? | Not yet, but we are actively working to deliver this capability. |
-| What happened to my old [!UICONTROL eVar] setting? | [!UICONTROL eVars], [!UICONTROL props], and [!UICONTROL events] in the traditional Adobe Analytics sense no longer exist in [!UICONTROL Customer Journey Analytics]. You have unlimited schema elements (dimensions, metrics, list fields). So all of the attribution settings you used to apply during the data collection process are now applied at query time. |
-| Where are all my session and variable persistence settings now? | [!UICONTROL Customer Journey Analytics] applies all of these settings at report time, and these settings now live in Data Views. Changes to these settings are now retroactive, and you can have multiple versions by using multiple Data Views! |
-| What happens to our existing segments/calculated metrics? | [!UICONTROL Customer Journey Analytics] no longer uses eVars, props, or events and instead uses any AEP schema. This means none of the existing segments or calc metrics are compatible with [!UICONTROL Customer Journey Analytics]. |
-| How does [!UICONTROL Customer Journey Analytics] handle `Uniques Exceeded` limitations? | [!UICONTROL Customer Journey Analytics] has no unique value limitations, so no need to worry about them! |
-| If I am an existing [!DNL Data Workbench] customer, can I move to [!UICONTROL Customer Journey Analytics] right now? | It depends on your use case - please work with your Adobe Account team. Your current use cases may already be a good fit for Customer Journey Analytics! |
+[!UICONTROL Customer Journey Analytics] has no unique value limitations, so no need to worry about them!
