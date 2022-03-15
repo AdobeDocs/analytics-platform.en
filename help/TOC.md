@@ -32,7 +32,6 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Connections {#cja-connections}
   + [Create a connection](connections/create-connection.md)
   + [Manage connections](connections/manage-connections.md)
-  + [Estimate connection size](connections/estimate-connection-size.md)
   + [Combined event datasets](connections/combined-dataset.md)
   + [Standard lookups](connections/standard-lookups.md)
   + Cross-Channel Analytics {#cca}
