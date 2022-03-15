@@ -146,9 +146,3 @@ Allows Admins to edit the connection. Select a connection, then click [!UICONTRO
 * Refresh the dataset/s.
 * Remove dataset/s from the connections.
 
-## Set rolling window for [!UICONTROL Connection] data retention
-
->[!IMPORTANT]
->Please contact Customer Care or your Adobe account manager to have this setting implemented. It is not yet available via the CJA UI.
-
-This setting lets you define CJA data retention as a rolling window in months (3 months, 6 months, etc.), at a [!UICONTROL connection] level (not at a [!UICONTROL dataset] level). Data retention is based on event dataset timestamps and applies to event datasets only. No data retention setting exists for profile or lookup datasets since there are no applicable timestamps. The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost. 
