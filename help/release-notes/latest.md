@@ -8,7 +8,7 @@ feature: Release Notes
 
 >[!IMPORTANT]
 >
->These release notes contain pre-release information that is subject to change.
+>These notes contain pre-release information that is subject to change.
 
 **Last update**: March 17, 2022
 
