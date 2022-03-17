@@ -1,9 +1,10 @@
 ---
 title: Filters Overview
 description: Understand what filters are used for and how to create a simple filter.
+feature: Workspace Basics
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 ---
-# Filters overview
+# Filters overview {#overview}
 
 Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of visitors based on characteristics or website interactions. Filters are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
 
@@ -13,7 +14,7 @@ You can build and save filters in the Filter Builder, or generate filters from a
 
 Filtering includes the [Filter Builder](/help/components/filters/create-filters.md) to construct filters and run a pre-test, and the [Filter Manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
 
-## Filter types
+## Filter types {#types}
 
 You can create different types of filters in Workspace and the Filter Builder, depending on how complex they need to be, whether they should apply to this project only, etc. Here is a summary of filter types:
 
@@ -25,7 +26,7 @@ You can create different types of filters in Workspace and the Filter Builder, d
 | Filters in fallout analysis |  [Fallout visualization](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) in Analysis Workspace | To individual fallout visualizations | Create filters from a touchpoint, add filters as touchpoint, and compare key workflows across various filters |
 | Calculated metrics-based filter | [Calculated metric builder](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | To individual calculated metric | Apply filter/s within your metric definition |
 
-## Sequential filters
+## Sequential filters {#sequential}
 
 Sequential filters let you identify visitors based on navigation and page view across your site, providing a filter of defined actions and interactions. Sequential filters help you identify what a visitor likes and what a visitor avoids. When building sequential filters, the THEN operator is used to define and order visitor navigation.
 
@@ -37,7 +38,7 @@ Here is an example:
 | --- | --- | --- |
 | The visitor went to the main landing page (A), excluded the campaign page (B), and then viewed the Product page (C).|The visitor again went to the main landing page (A), excluded the campaign page (B), and went again to the Product page (C), and then to a new page (D). | The visitor entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product page (G). |
 
-## Filter containers
+## Filter containers {#containers}
 
 Filters are based on a Person-, Session- and Event-level hierarchy using a nested container model. The nested containers allow you to define person attributes and actions based on rules between and within the containers. 
 
@@ -48,7 +49,7 @@ A Filter sets conditions to filter a visitor based on his or her attributes or i
 
 The container architecture employed in the Filter Builder defines Person as the outermost container, containing overarching data specific for the visitor across visits and page views. A nested Session container lets you set rules to break down the visitor's data based on sessions, and a nested Event container lets you break down visitor information based on individual page views. Each container lets you report across a visitor's history, interactions broken down by sessions, or break down individual events. 
 
-### Person container
+### Person container {#person}
 
 The Person container includes every visit and page view for visitors within a specified time frame. A filter at the Person level returns the page that meets the condition plus all other pages viewed by the visitor (and only constrained by defined date ranges). As the most broadly-defined container, reports generated at the Person container level will return page views across all visits and lets you generate a multi-visit analysis. Consequently, the Person container is the most susceptible to change based on defined date ranges.
 Person containers can include values based on a visitor's overall history:
@@ -57,7 +58,7 @@ Person containers can include values based on a visitor's overall history:
 * Original Entry Page
 * Original Referring Domains 
 
-### Session container
+### Session container {#session}
 
 The Session container lets you identify page interactions, campaigns, or conversions for a specific session. The Session container is the most commonly used container because it captures behaviors for the entire visit session once the rule is met and lets you define which sessions you want to include or exclude in building and applying a filter. It can help you answer theses questions:
 
@@ -72,7 +73,7 @@ Session containers include values based on occurrence per session:
 * Participation Metrics
 * Linearly allocated metrics 
 
-### Event container
+### Event container {#event}
 
 The Event container defines which page events you would like to include or exclude from a filter. It is the most narrow of the containers available to let you identify specific clicks and page view where a condition is true, letting you view a single tracking code, or isolate behavior within a particular section of your site. You may also want to pinpoint a specific value when an action occurs, such as the marketing channel when an order was placed.
 
@@ -83,7 +84,7 @@ Event containers include values-based, single-page breakdowns:
 * List dimensions
 * Merchandising dimensions (in context of events) 
 
-## Out-of-the-box filter template
+## Out-of-the-box filter template {#template}
 
 Traditional Analytics comes with a lot of out-of-the-box template filters (filters) and calculated metrics. Many of them do not apply in CJA, or will have to be renamed or recreated. Others will depend on a solution for context-aware variables in CJA.
 
