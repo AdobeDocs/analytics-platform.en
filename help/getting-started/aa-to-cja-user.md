@@ -8,9 +8,7 @@ feature: CJA Basics
 
 # CJA User Guide for Adobe Analytics users
 
-Congratulations, your company has moved at least some of its data to Customer Journey Analytics! In starting to work with Customer Journey Analytics, you will notice some big differences and some similarities. This page aims to explain those things that haven't changed, as well as some of the major differences.
-
-We will also tell you how you can get more information on new concepts, and further steps to make YOUR customer journey easier and more successful.
+Congratulations, your company is starting to work Customer Journey Analytics! As a user of Adobe Analytics, you already have great head start. In working with Customer Journey Analytics, you will notice some big differences and some similarities. This page aims to explain those things that haven't changed, as well as some of the major differences. We will also tell you how you can get more information on new concepts, and further steps to make YOUR customer journey easier and more successful.
 
 ## What hasn't changed
 
