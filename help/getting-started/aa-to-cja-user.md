@@ -8,11 +8,17 @@ feature: CJA Basics
 
 # CJA User Guide for Adobe Analytics users
 
+>[!NOTE]
+>
+>This page is under construction.
+
 Congratulations, your company is starting to work Customer Journey Analytics! As a user of Adobe Analytics, you already have great head start. In working with Customer Journey Analytics, you will notice some big differences and some similarities. This page aims to explain those things that haven't changed, as well as some of the major differences. We will also tell you how you can get more information on new concepts, and further steps to make YOUR customer journey easier and more successful.
 
 ## What hasn't changed
 
-A lot of what you are familiar with on the reporting side has not changed. You can still use the power of Analysis Workspace to analyze your data, plus Adobe Analytics dashboards and a new version of Report Builder. Workspace and dashboards work essentially the same as they did in traditional Adobe Analytics. Report Builder has a new interface and now runs on PCs, Mac computers, and the web version of Excel. Reporting-wise, what's different is that you have access to a lot more cross-channel data to analyze. Here is an Workspace example of 
+A lot of what you are familiar with on the reporting side has not changed. You can still use the power of Analysis Workspace to analyze your data. You also have the same version of Adobe Analytics dashboards at your disposal. Workspace and dashboards work essentially the same as they did in traditional Adobe Analytics. Report Builder has a new interface and now runs on PCs, Mac computers, and the web version of Excel. Reporting-wise, what's different is that you have access to a lot more cross-channel data to analyze. Here is an example of some multi-channel visualizations:
+
+![multi-channel](assets/cross-channel.png)
 
 ## New architecture
 
@@ -20,7 +26,7 @@ Customer Journey Analytics gets its data from Adobe Experience Platform. Experie
 
 Customer data in the platform is stored as datasets, which consist of a schema and batches of data. For more detail on the platform, see [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
 
-Your CJA Admin will establish connections to the data in Platform, and builds data views within those connections. Think of data views as similar to virtual report suites. Data views are the basis of reporting in Customer Journey Analytics.
+Your CJA Admin has established [connections](/help/connections/create-connection.md) to data sets in Platform. They have then built [data views](/help/data-views/data-views.md) within those connections. Think of data views as similar to virtual report suites. Data views are the basis of reporting in Customer Journey Analytics.
 
 ## New concepts and terminology
 
