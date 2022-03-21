@@ -44,7 +44,7 @@ You can
 | Selection box | Clicking this box next to one or more projects displays the project management actions you can perform: Delete, Tag, Pin, Approve, Share, Rename, Copy, and Export to CSV. You may not have permissions to perform all of these actions. |
 | [!UICONTROL Favorites] | Favoriting a project puts a star by it and tags it as a favorite that you can filter on.  |
 | [!UICONTROL Name] | The name of the project. |
-| Info (i) icon | Clicking the info icon shows the following info about this project: Type, Project Role, Owner, Description, and who it is shared with. It also indicates who can [edit or duplicate](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/curate-share/share-projects.html) this project. |
+| Info (i) icon | Clicking the info icon shows the following info about this project: Type, Project Role, Owner, Description, and who it is shared with. It also indicates who can [edit or duplicate](/help/analysis-workspace/curate-share/share-projects.md) this project. |
 | Ellipsis (...) | Clicking the ellipsis next to a project displays the project management actions you can perform: Delete, Tag, Pin, Approve, Share, Rename, Copy, and Export to CSV. Note that you may not have permissions to perform all of these actions. |
 | [!UICONTROL Type] | Indicates whether this type is a Workspace project or a Mobile scorecard. |
 | [!UICONTROL Tags] | You can tag reports to organize them into groups. |
@@ -54,7 +54,7 @@ You can
 | [!UICONTROL Shared with] | Who this project was shared with. |
 | [!UICONTROL Last Modified] | When this project was last modified. |
 | [!UICONTROL Last opened] | When this project was last opened by you. |
-| [!UICONTROL Scheduled] | Set to [!UICONTROL On] when a project is scheduled or **[!UICONTROL Off]** when it is not. Clicking the **[!UICONTROL On]** link lets you see information about the scheduled project. You can also [edit the project schedule](/help/analyze/analysis-workspace/curate-share/t-schedule-report.md) if you are the project owner. |
+| [!UICONTROL Scheduled] | Set to [!UICONTROL On] when a project is scheduled or **[!UICONTROL Off]** when it is not. Clicking the **[!UICONTROL On]** link lets you see information about the scheduled project. You can also [edit the project schedule](/help/analysis-workspace/curate-share/t-schedule-report.md) if you are the project owner. |
 | [!UICONTROL Project ID] | The project ID can be used for debugging projects. |
 | [!UICONTROL Longest Date Range] | Longer date ranges increase project complexity and may increase processing and load times. |
 | [!UICONTROL Number of Queries] | A higher number of project queries increases project complexity and may increase processing and load times. |
