@@ -24,6 +24,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Customer Journey Analytics overview {#cja-overview}
   + [Customer Journey Analytics overview](getting-started/cja-overview.md)
   + [Getting Started](getting-started/cja-getting-started.md)
+  + [Customer Journey Analytics landing page](getting-started/landing.md)
   + [Frequently asked questions](getting-started/cja-faq.md)
   + [Adobe Analytics to Customer Journey Analytics evolution](getting-started/aa-to-cja.md)
   + [Customer Journey Analytics feature support](getting-started/cja-aa.md)
