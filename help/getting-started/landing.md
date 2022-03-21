@@ -26,8 +26,6 @@ You can
 
 [!UICONTROL Projects] serves as the [!UICONTROL Workspace] home page. Any Workspace projects show up here, including Mobile scorecards. **[!UICONTROL Projects]** are things that you have built or that someone else has built and shared with you. [!UICONTROL Projects] also refers to blank projects and blank mobile scorecards.
 
-![Landing all](assets/landing-all.png)
-
 >[!NOTE]
 >
 >Several of the following settings persist (are remembered) both throughout the session and across sessions. Examples: Which tab you are on, which filters were selected, which columns were selected, and the column sort direction. Search results are not persisted, however.
