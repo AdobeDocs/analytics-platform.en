@@ -32,7 +32,7 @@ You can
 
 | UI element | Definition |
 | --- | --- |
-| ... More | Lets you [!UICONTROL View Tutorials], and [Edit user preferences](/help/analyze/analysis-workspace/user-preferences.md). |
+| ... More | Lets you [!UICONTROL View Tutorials], and [Edit user preferences](/help/analysis-workspace/user-preferences.md). |
 | **[!UICONTROL Create new]** modal is back | When you click **[!UICONTROL Create new]** in Workspace, you once again get the choice between a [!UICONTROL Blank project] and a [!UICONTROL Blank mobile scorecard]. You can also choose from any templates your company has created. | 
 | [!UICONTROL Show less/more] | Toggles between not showing and showing the banner: ![Top banner](assets/top-banner.png) |
 | [!UICONTROL Blank project] | Creates a blank [Workspace project](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=en) for you to populate. |
