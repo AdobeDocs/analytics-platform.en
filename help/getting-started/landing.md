@@ -58,7 +58,7 @@ You can
 | [!UICONTROL Scheduled] | Set to [!UICONTROL On] when a project is scheduled or **[!UICONTROL Off]** when it is not. Clicking the **[!UICONTROL On]** link lets you see information about the scheduled project. You can also [edit the project schedule](/help/analysis-workspace/curate-share/t-schedule-report.md) if you are the project owner. |
 | [!UICONTROL Project ID] | The project ID can be used for debugging projects. |
 | [!UICONTROL Longest Date Range] | Longer date ranges increase project complexity and may increase processing and load times. |
-| [!UICONTROL Number of Queries] | A higher number of project queries increases project complexity and may increase processing and load times. |
+| [!UICONTROL Number of Queries] | The total number of requests made to Analytics when the project loads. A higher number of project queries increases project complexity and may increase processing and load times. This data is available only after a project has loaded or a scheduled project was sent.  |
 | Customize table icon | (Top right) If you want to add or remove columns from the list of projects, you can do so by selecting or deselecting them. |
 | < (Back button) | This button in a Workspace project takes you back to your most recent landing page configuration. Whatever page configuration you had when you left the landing page will persist when you return. |
 
