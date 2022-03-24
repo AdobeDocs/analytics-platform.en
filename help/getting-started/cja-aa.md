@@ -16,7 +16,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Anomaly Detection | Full Support |
 | Attribution IQ | Full Support |
 | Calculated Metrics | Full Support; Note that any existing calculated metrics in the traditional Analysis Workspace will not be ported to CJA. |
-| Calendar events | Calendar events have been implemented as [Annotations](/help/components/annotations/overview.md) in Workspace. |
+| Calendar events | Full Support. Calendar events have been implemented as [Annotations](/help/components/annotations/overview.md) in Workspace. |
 | Cross-device/cross-channel stitching | Full Support; See [Cross-Channel Analytics](/help/connections/cca/overview.md). |
 | CSV download | Full Support |
 | Custom Calendars | Full Support |
