@@ -6,9 +6,9 @@ feature: Release Notes
 ---
 # Current Customer Journey Analytics release notes (March 2022)
 
->[!IMPORTANT]
+<!-->>[!IMPORTANT]
 >
->These release notes contain pre-release information that is subject to change.
+>These release notes contain pre-release information that is subject to change.-->
 
 **Last update**: March 23, 2022
 
