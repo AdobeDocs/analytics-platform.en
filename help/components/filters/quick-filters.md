@@ -9,7 +9,7 @@ exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 
 You can create quick filters within a project to bypass the complexity of the full [Filter Builder](/help/components/filters/create-filters.md). Quick filters
 
-* Apply as [project-only segments](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html?lang=en#what-are-project-only-filters).
+* Apply as [project-only segments](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html).
 * Allow for up to 3 rules
 * Do not accommodate nested containers, or sequential rules.
 
@@ -93,7 +93,7 @@ After you have applied the filter, you can choose to add it to your filter compo
 1. The filter now appears in your filter component list for all your projects.
 1. You can also [share the filter](/help/components/filters/manage-filters.md) with other people in your organization.
 
-## What are project-only filters? 
+## What are project-only filters? {#project-only}
 
 Project-only filters are filters that only apply to the current project they were created in. They are not available in other projects and cannot be shared to other users. They are intended for quick exploration of your data without having to create and save a filter in the left rail. Project-only filters can be created in the panel drop zone either with Quick filters or [ad-hoc filters](/help/components/filters/ad-hoc-filters.md). 
 

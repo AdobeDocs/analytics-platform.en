@@ -7,7 +7,7 @@ exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
 ---
 # Ad-hoc project filters
 
-Ad-hoc project filters allow you to drag and drop any component directly into the panel drop zone to create a filter. The filter becomes a [project-level filter](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html?#what-are-project-only-segments) local to the current project. 
+Ad-hoc project filters allow you to drag and drop any component directly into the panel drop zone to create a filter. The filter becomes a [project-level filter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html) local to the current project. 
 
 Here is a video on creating ad-hoc project filters:
 
