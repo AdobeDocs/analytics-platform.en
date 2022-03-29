@@ -9,6 +9,10 @@ feature: Data Views
 
 Creating a data view involves either creating metrics and dimensions from schema elements or utilizing standard components. Most schema elements can be either a dimension or a metric depending on your business's requirements. Once you drag a schema element into a data view, options appear on the right where you can adjust how the dimension or metric operates in CJA.
 
+Here is a video on the topic:
+
+>[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
+
 ## Configure a data view
 
 1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and go to the **[!UICONTROL Data Views]** tab.
