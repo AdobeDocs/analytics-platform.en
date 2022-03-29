@@ -12,7 +12,7 @@ feature: CJA Basics
 >
 >This page is under construction.
 
-Congratulations, your company is starting to work with Customer Journey Analytics! As a user who is familiar with Adobe Analytics, you already have great head start. In working with Customer Journey Analytics, you will notice some big differences and some similarities. This page aims to explain those things that haven't changed, as well as some of the major differences. We will also tell you how you can get more information on new concepts, and further steps to make YOUR customer journey easier and more successful.
+Congratulations, your company is starting employ Customer Journey Analytics! As a user who is familiar with Adobe Analytics, you already have great head start. In working with Customer Journey Analytics, you will notice some big differences and some similarities. This page aims to explain those things that haven't changed, as well as some of the major differences. We will also tell you how you can get more information on new concepts, and further steps to make YOUR customer journey easier and more successful.
 
 ## What hasn't changed
 
@@ -22,7 +22,7 @@ A lot of what you are familiar with on the reporting side has not changed.
 * You also have the same version of [Adobe Analytics dashboards](/help/mobile-app/home.md) at your disposal. Workspace and dashboards work the same as they did in traditional Adobe Analytics. 
 * [Report Builder](/help/report-builder/report-buider-overview.md) has a new interface and now runs on PCs, Macs, and the web version of Excel. 
 
-When it comes to reporting, what's different is that you have access to a lot more cross-channel data to analyze. Here is an example of some multi-channel visualizations that include a number of cross-channel data sources:
+When it comes to reporting, what's different is that you have access to a lot more cross-channel data to analyze. Here is an example of some visualizations that include cross-channel data sources:
 
 ![multi-channel-visualizations](assets/cross-channel.png)
 
@@ -32,7 +32,7 @@ Customer Journey Analytics gets its data from Adobe Experience Platform. Experie
 
 Customer data in the platform is stored as datasets, which consist of a schema and batches of data. For more detail on the platform, see [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
 
-Your CJA Admin has established [connections](/help/connections/create-connection.md) to data sets in Platform. They have then built [data views](/help/data-views/data-views.md) within those connections. Think of data views as similar to virtual report suites. Data views are the basis of reporting in Customer Journey Analytics.
+Your CJA Admin has established [connections](/help/connections/create-connection.md) to data sets in Platform. They have then built [data views](/help/data-views/data-views.md) within those connections. Think of data views as similar to virtual report suites. Data views are the basis of reporting in Customer Journey Analytics. The concept of a report suite no longer exists.
 
 ## New concepts and terminology
 
@@ -66,17 +66,31 @@ For the time being, you cannot share/publish [!UICONTROL filters] ([!UICONTROL s
 * If you want to move Adobe Analytics calculated metrics to Customer Journey Analytics, view [this video](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en).
 * Otherwise, recreate the calculated metrics in Customer Journey Analytics.
 
-### Session and variable persistence settings
-
-[!UICONTROL Customer Journey Analytics] applies all of these settings at report time, and these settings now live in [data views](help/data-views/component-settings/persistence.md). Changes to these settings are now retroactive, and you can have multiple versions by using multiple data views! 
-
 ### Virtual report suites are now 'data views'
 
 Data views take the concept of virtual report suites as they exist today and expand it to [enable additional controls on the data](/help/data-views/create-dataview.md) made available by connections. This makes timezone and session time-out intervals configurable. You can also apply attribution and expiration properties for individual dimensions dynamically. Note that these are applied retroactively on all data.
 
+**What you need to do**:
+
+* Familiarize yourself with the many use cases around data views.
+* Notice that in Workspace, the reports suite selector that you are used to now lets you choose from the data views that your Admin has shared with you:
+
+   ![data-view-selector](assets/data-views.png)
+
 ### Cross-report-suite data
 
-Existing implementations from multiple data sets can be combined in Experience Platform.
+Existing implementations from multiple data sets can be combined in Experience Platform. The connections and data views that are based on these data sets can combine data that previously existed in separate report suites. 
+
+**What you need to do**:
+
+* 
+
+### Session and variable persistence settings
+
+[!UICONTROL Customer Journey Analytics] applies all of these settings at report time, and these settings now live in [data views](help/data-views/component-settings/persistence.md). Changes to these settings are now retroactive, and you can have multiple versions by using multiple data views! 
+
+**What you need to do**:
+
 
 ### Classifications are now 'Lookup datasets'
 
@@ -85,11 +99,15 @@ Existing implementations from multiple data sets can be combined in Experience P
 
 ### Containers have been renamed 
 
-You specify a container for [every data view you create](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers). Note that you can rename any container to fit your organization's needs.
-
+You specify a container for [every data view you create](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers). 
 * **Hit containers are now 'Event' containers**. The [!UICONTROL Person] container includes every session and event for visitors within the specified time frame. 
 * **Visit containers are now 'Session' containers**. The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session.
 * **Visitor containers are now [!UICONTROL Person] containers**. The [!UICONTROL Person] container includes every session and event for visitors within the specified time frame.
+
+**What you need to do**:
+
+You have the option to rename any container to fit your organization's needs.
+
 
 ### `Uniques Exceeded` limitations
 
