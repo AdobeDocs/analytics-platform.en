@@ -83,7 +83,6 @@ Existing implementations from multiple data sets can be combined in Experience P
 
 **What you need to do**:
 
-* 
 
 ### Session and variable persistence settings
 
