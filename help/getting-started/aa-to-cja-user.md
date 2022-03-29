@@ -16,9 +16,15 @@ Congratulations, your company is starting to work with Customer Journey Analytic
 
 ## What hasn't changed
 
-A lot of what you are familiar with on the reporting side has not changed. You can still use the power of Analysis Workspace to analyze your data. You also have the same version of Adobe Analytics dashboards at your disposal. Workspace and dashboards work essentially the same as they did in traditional Adobe Analytics. Report Builder has a new interface and now runs on PCs, Mac computers, and the web version of Excel. Reporting-wise, what's different is that you have access to a lot more cross-channel data to analyze. Here is an example of some multi-channel visualizations:
+A lot of what you are familiar with on the reporting side has not changed. 
 
-![multi-channel](assets/cross-channel.png)
+* You can still use the power of [Analysis Workspace](/help/analysis-workspace/home.md) to analyze your data. 
+* You also have the same version of [Adobe Analytics dashboards](/help/mobile-app/home.md) at your disposal. Workspace and dashboards work the same as they did in traditional Adobe Analytics. 
+* [Report Builder](/help/report-builder/report-buider-overview.md) has a new interface and now runs on PCs, Macs, and the web version of Excel. 
+
+When it comes to reporting, what's different is that you have access to a lot more cross-channel data to analyze. Here is an example of some multi-channel visualizations that include a number of cross-channel data sources:
+
+![multi-channel-visualizations](assets/cross-channel.png)
 
 ## New architecture
 
