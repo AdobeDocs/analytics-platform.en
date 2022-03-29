@@ -70,11 +70,13 @@ For the time being, you cannot share/publish [!UICONTROL filters] ([!UICONTROL s
 
 [!UICONTROL Customer Journey Analytics] applies all of these settings at report time, and these settings now live in [data views](help/data-views/component-settings/persistence.md). Changes to these settings are now retroactive, and you can have multiple versions by using multiple data views! 
 
-### Virtual Report Suites are now 'Data views'
+### Virtual report suites are now 'data views'
 
-Data views take the concept of virtual report suites as they exist today and expand it to [enable additional controls on the data]() made available by connections. This makes timezone and session time-out intervals configurable. You can also apply attribution and expiration properties for individual dimensions dynamically. Note that these are applied retroactively on all data.
+Data views take the concept of virtual report suites as they exist today and expand it to [enable additional controls on the data](/help/data-views/create-dataview.md) made available by connections. This makes timezone and session time-out intervals configurable. You can also apply attribution and expiration properties for individual dimensions dynamically. Note that these are applied retroactively on all data.
 
+### Cross-report-suite data
 
+Existing implementations from multiple data sets can be combined in Experience Platform.
 
 ### Classifications are now 'Lookup datasets'
 
@@ -88,8 +90,6 @@ You specify a container for [every data view you create](https://experienceleagu
 * **Hit containers are now 'Event' containers**. The [!UICONTROL Person] container includes every session and event for visitors within the specified time frame. 
 * **Visit containers are now 'Session' containers**. The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session.
 * **Visitor containers are now [!UICONTROL Person] containers**. The [!UICONTROL Person] container includes every session and event for visitors within the specified time frame.
-
-
 
 ### `Uniques Exceeded` limitations
 
