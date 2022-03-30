@@ -9,7 +9,7 @@ exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 
 You can create quick filters within a project to bypass the complexity of the full [Filter Builder](/help/components/filters/create-filters.md). Quick filters
 
-* Apply as [project-only segments](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html).
+* Apply as [project-only filters](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=en#project-only).
 * Allow for up to 3 rules
 * Do not accommodate nested containers, or sequential rules.
 
@@ -21,7 +21,7 @@ Here is a video on quick filters (note that it uses the term "quick segments" in
 
 ## Prerequisites {#prereqs}
 
-Anyone can create a Quick Segment. However, you need the Segment Creation permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) to be able to save a quick segments or to open it in the Segment Builder.
+Anyone can create a quick filter. However, you need the Filter Creation permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) to be able to save a quick filters or to open it in the Filter Builder.
 
 ## Create quick filters {#create}
 
@@ -101,7 +101,7 @@ After you have applied the filter, you can choose to add it to your filter compo
 
 Project-only filters are filters that only apply to the current project they were created in. They are not available in other projects and cannot be shared to other users. They are intended for quick exploration of your data without having to create and save a filter in the left rail. Project-only filters can be created in the panel drop zone either with Quick filters or [ad-hoc filters](/help/components/filters/ad-hoc-filters.md). 
 
-If you open a project-only filter in the [!UICONTROL Filter Builder], a project-only notification appears. If you do not check "Make this filter available.." and click **[!UICONTROL APPLY]**, the segment remains a project-only segment. 
+If you open a project-only filter in the [!UICONTROL Filter Builder], a project-only notification appears. If you do not check "Make this filter available.." and click **[!UICONTROL APPLY]**, the segment remains a project-only filter. 
 
 >[!NOTE]
 >
