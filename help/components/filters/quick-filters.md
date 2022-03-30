@@ -21,7 +21,7 @@ Here is a video on quick filters (note that it uses the term "quick segments" in
 
 ## Prerequisites {#prereqs}
 
-Anyone can create a Quick Segment. However, you need the Segment Creation permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) to be able to save a quick segments or to open it in the Segment Builder.
+Anyone can create a quick filter. However, you need the Filter Creation permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) to be able to save a quick filters or to open it in the Filter Builder.
 
 ## Create quick filters {#create}
 
