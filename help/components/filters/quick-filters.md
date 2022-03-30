@@ -9,7 +9,7 @@ exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 
 You can create quick filters within a project to bypass the complexity of the full [Filter Builder](/help/components/filters/create-filters.md). Quick filters
 
-* Apply as [project-only segments](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html).
+* Apply as [project-only filters](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=en#project-only).
 * Allow for up to 3 rules
 * Do not accommodate nested containers, or sequential rules.
 

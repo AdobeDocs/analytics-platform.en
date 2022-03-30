@@ -38,7 +38,7 @@ Your CJA Admin has established [connections](/help/connections/create-connection
 
 Several features in CJA have been renamed and re-architected, when compared to traditional Adobe Analytics, to align with industry standards. Some updated terminology includes segments, virtual report suites, classifications, customer attributes, and container names. Familiar concepts like eVars and props no longer exist, along with the limitations they imposed.
 
-### No more eVars and props
+## No more eVars and props
 
 [!UICONTROL eVars], [!UICONTROL props], and [!UICONTROL events] in the traditional Adobe Analytics sense no longer exist in [!UICONTROL Customer Journey Analytics]. You have unlimited schema elements (dimensions, metrics, list fields). So all of the attribution settings you used to apply during the data collection process are now applied at query time.
 
@@ -46,7 +46,7 @@ Several features in CJA have been renamed and re-architected, when compared to t
 
 * Familiarize yourself with the many ways you can 
 
-### Segments are now 'Filters'
+## Segments are now 'Filters'
 
 [!UICONTROL Customer Journey Analytics] no longer uses eVars, props, or events and instead uses any AEP schema. This means none of the existing segments are compatible with [!UICONTROL Customer Journey Analytics]. In addition, "segments" have been renamed to "filters".
 
@@ -57,7 +57,7 @@ For the time being, you cannot share/publish [!UICONTROL filters] ([!UICONTROL s
 * If you want to move existing Adobe Analytics segments to Customer Journey Analytics, view [this video](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=en).
 * Otherwise, recreate the filters in Customer Journey Analytics.
 
-### Calculated metrics
+## Calculated metrics
 
 [!UICONTROL Customer Journey Analytics] no longer uses eVars, props, or events and instead uses any AEP schema. This means none of the existing calculated metrics are compatible with [!UICONTROL Customer Journey Analytics]. 
 
@@ -66,7 +66,7 @@ For the time being, you cannot share/publish [!UICONTROL filters] ([!UICONTROL s
 * If you want to move Adobe Analytics calculated metrics to Customer Journey Analytics, view [this video](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en).
 * Otherwise, recreate the calculated metrics in Customer Journey Analytics.
 
-### Virtual report suites are now 'data views'
+## Virtual report suites are now 'data views'
 
 Data views take the concept of virtual report suites as they exist today and expand it to [enable additional controls on the data](/help/data-views/create-dataview.md) made available by connections. This makes timezone and session time-out intervals configurable. You can also apply attribution and expiration properties for individual dimensions dynamically. Note that these are applied retroactively on all data.
 
@@ -78,26 +78,25 @@ Data views take the concept of virtual report suites as they exist today and exp
 
 * Familiarize yourself with the many [use cases around data views](/help/data-views/data-views-usecases.md).
 
-### Cross-report-suite data
+## Cross-report-suite data
 
 Existing implementations from multiple data sets can be combined in Experience Platform. The connections and data views that are based on these data sets can combine data that previously existed in separate report suites. 
 
 **What you need to do**:
 
-
-### Session and variable persistence settings
+## Session and variable persistence settings
 
 [!UICONTROL Customer Journey Analytics] applies all of these settings at report time, and these settings now live in [data views](help/data-views/component-settings/persistence.md). Changes to these settings are now retroactive, and you can have multiple versions by using multiple data views! 
 
 **What you need to do**:
 
 
-### Classifications are now 'Lookup datasets'
+## Classifications are now 'Lookup datasets'
 
-### Customer attributes are now 'Profile datasets'
+## Customer attributes are now 'Profile datasets'
 
 
-### Containers have been renamed 
+## Containers have been renamed 
 
 You specify a container for [every data view you create](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers). 
 * **Hit containers are now 'Event' containers**. The [!UICONTROL Person] container includes every session and event for visitors within the specified time frame. 
@@ -109,6 +108,6 @@ You specify a container for [every data view you create](https://experienceleagu
 You have the option to rename any container to fit your organization's needs.
 
 
-### `Uniques Exceeded` limitations
+## `Uniques Exceeded` limitations
 
 [!UICONTROL Customer Journey Analytics] has no unique value limitations, so no need to worry about them!
