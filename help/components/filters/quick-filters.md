@@ -15,6 +15,10 @@ You can create quick filters within a project to bypass the complexity of the fu
 
 For a comparison of what quick filters can do vs. full-fledged component-list filters, go [here](/help/components/filters/filters-overview.md).
 
+Here is a video on quick filters (note that it uses the term "quick segments" instead.) However, the functionality is the same.
+
+>[!VIDEO](https://video.tv.adobe.com/v/341466/?quality=12&learn=on)
+
 ## Prerequisites {#prereqs}
 
 Anyone can create a Quick Segment. However, you need the Segment Creation permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) to be able to save a quick segments or to open it in the Segment Builder.
