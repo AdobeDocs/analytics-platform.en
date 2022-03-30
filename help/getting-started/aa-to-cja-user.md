@@ -18,8 +18,8 @@ Congratulations, your company is starting employ Customer Journey Analytics! As 
 
 A lot of what you are familiar with on the reporting side has not changed. 
 
-* You can still use the power of [Analysis Workspace](/help/analysis-workspace/home.md) to analyze your data. 
-* You also have the same version of [Adobe Analytics dashboards](/help/mobile-app/home.md) at your disposal. Workspace and dashboards work the same as they did in traditional Adobe Analytics. 
+* You can still use the power of [Analysis Workspace](/help/analysis-workspace/home.md) to analyze your data. Workspace works the same as it did in traditional Adobe Analytics.
+* You also have the same version of [Adobe Analytics dashboards](/help/mobile-app/home.md) at your disposal. Dashboards (a.k.a. Mobile App) works the same as it did in traditional Adobe Analytics. 
 * [Report Builder](/help/report-builder/report-buider-overview.md) has a new interface and now runs on PCs, Macs, and the web version of Excel. 
 
 When it comes to reporting, what's different is that you have access to a lot more cross-channel data to analyze. Here is an example of some visualizations that include cross-channel data sources:
@@ -72,10 +72,11 @@ Data views take the concept of virtual report suites as they exist today and exp
 
 **What you need to do**:
 
-* Familiarize yourself with the many use cases around data views.
 * Notice that in Workspace, the reports suite selector that you are used to now lets you choose from the data views that your Admin has shared with you:
 
    ![data-view-selector](assets/data-views.png)
+
+* Familiarize yourself with the many [use cases around data views](/help/data-views/data-views-usecases.md).
 
 ### Cross-report-suite data
 
