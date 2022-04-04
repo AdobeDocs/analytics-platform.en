@@ -12,7 +12,7 @@ feature: CJA Basics
 >
 >This page is under construction.
 
-Congratulations, your company is starting employ Customer Journey Analytics! As a user who is familiar with Adobe Analytics, you already have great head start. In working with Customer Journey Analytics, you will notice some big differences and some similarities. This page aims to explain those things that haven't changed, as well as some of the major differences. We will also tell you how you can get more information on new concepts, and further steps to make YOUR customer journey easier and more successful.
+Your company is starting employ Customer Journey Analytics. As a user who is familiar with Adobe Analytics, you already have great head start. In working with Customer Journey Analytics, you will notice some big differences and some similarities. This page aims to explain those things that haven't changed, as well as some of the major differences. We will also tell you how you can get more information on new concepts, and further steps to make YOUR customer journey easier and more successful.
 
 ## What hasn't changed
 
@@ -38,13 +38,25 @@ Your CJA Admin has established [connections](/help/connections/create-connection
 
 Several features in CJA have been renamed and re-architected, when compared to traditional Adobe Analytics, to align with industry standards. Some updated terminology includes segments, virtual report suites, classifications, customer attributes, and container names. Familiar concepts like eVars and props no longer exist, along with the limitations they imposed.
 
-## No more eVars and props
+## (Virtual) report suites are now 'data views'
 
-[!UICONTROL eVars], [!UICONTROL props], and [!UICONTROL events] in the traditional Adobe Analytics sense no longer exist in [!UICONTROL Customer Journey Analytics]. You have unlimited schema elements (dimensions, metrics, list fields). So all of the attribution settings you used to apply during the data collection process are now applied at query time.
+[!UICONTROL Data views] take the concept of virtual report suites as they exist today and expand it to [enable additional controls on the data](/help/data-views/create-dataview.md) made available by connections. This makes timezone and session time-out intervals configurable. You can also apply attribution and expiration properties for individual dimensions dynamically. Note that these are applied retroactively on all data.
 
 **What you need to do**:
 
-* Familiarize yourself with the many ways you can 
+* Notice that in Workspace, the reports suite selector that you are used to now lets you choose from the data views that your Admin has shared with you:
+
+   ![data-view-selector](assets/data-views.png)
+
+* Familiarize yourself with the many [use cases around data views](/help/data-views/data-views-usecases.md).
+
+## No more eVars and props
+
+[!UICONTROL eVars], [!UICONTROL props], and [!UICONTROL events] in the traditional Adobe Analytics sense no longer exist in [!UICONTROL Customer Journey Analytics]. You have unlimited schema elements (dimensions, metrics, list fields). So all of the attribution settings you used to apply during the data collection process are now applied at query time. Your CJA Admin has create data views
+
+**What you need to do**:
+
+* Familiarize yourself with the many ways these schema elements can be used to drill down into your data.
 
 ## Segments are now 'Filters'
 
@@ -66,17 +78,6 @@ For the time being, you cannot share/publish [!UICONTROL filters] ([!UICONTROL s
 * If you want to move Adobe Analytics calculated metrics to Customer Journey Analytics, view [this video](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en).
 * Otherwise, recreate the calculated metrics in Customer Journey Analytics.
 
-## Virtual report suites are now 'data views'
-
-Data views take the concept of virtual report suites as they exist today and expand it to [enable additional controls on the data](/help/data-views/create-dataview.md) made available by connections. This makes timezone and session time-out intervals configurable. You can also apply attribution and expiration properties for individual dimensions dynamically. Note that these are applied retroactively on all data.
-
-**What you need to do**:
-
-* Notice that in Workspace, the reports suite selector that you are used to now lets you choose from the data views that your Admin has shared with you:
-
-   ![data-view-selector](assets/data-views.png)
-
-* Familiarize yourself with the many [use cases around data views](/help/data-views/data-views-usecases.md).
 
 ## Cross-report-suite data
 
@@ -90,8 +91,9 @@ Existing implementations from multiple data sets can be combined in Experience P
 
 **What you need to do**:
 
-
 ## Classifications are now 'Lookup datasets'
+
+
 
 ## Customer attributes are now 'Profile datasets'
 
