@@ -53,7 +53,7 @@ Customer Journey Analytics
 
     (If you have a lot of datasets to choose from, you can search for the right one(s) using the **[!UICONTROL Search datasets]** search bar above the list of datasets.)
 
-## 2. Configure dataset
+## Configure dataset
 
 On the right-hand side, you can now configure the dataset/s you have added.
 

@@ -14,8 +14,9 @@ Once Admin users have [created one or more connections](/help/connections/create
 
 * It lets you **identify any data discrepancies** due to misconfiguration. Are you missing any rows? If yes, what rows are missing and why? Did you misconfigure connections and cause missing data in CJA?
 
->[!NOTE]
-> This functionality will be generally available on September 20, 2021.
+Here is a video about the new Connections Manager:
+
+>[!VIDEO](https://video.tv.adobe.com/v/342097/?quality=12&learn=on)
 
 ## Connections Manager {#connections-manager}
 
