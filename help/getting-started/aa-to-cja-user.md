@@ -87,7 +87,7 @@ Existing implementations from multiple data sets can be combined in Experience P
 
 ## Session and variable persistence settings
 
-[!UICONTROL Customer Journey Analytics] applies all of these settings at report time, and these settings now live in [data views](help/data-views/component-settings/persistence.md). Changes to these settings are now retroactive, and you can have multiple versions by using multiple data views! 
+[!UICONTROL Customer Journey Analytics] applies all of these settings at report time, and these settings now live in [data views](/help/data-views/component-settings/persistence.md). Changes to these settings are now retroactive, and you can have multiple versions by using multiple data views! 
 
 **What you need to do**:
 
