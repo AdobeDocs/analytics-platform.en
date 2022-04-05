@@ -11,7 +11,7 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
 Here is a video overview:
 
->[!VIDEO](https://video.tv.adobe.com/v/331788/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/35111/?quality=12&learn=on)
 
 ## Required permissions
 
