@@ -4,8 +4,8 @@ description: What to consider from a user's perspective when your company moves 
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
+exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 ---
-
 # CJA User Guide for Adobe Analytics users
 
 >[!NOTE]
