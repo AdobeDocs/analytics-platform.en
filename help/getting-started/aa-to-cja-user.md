@@ -12,7 +12,7 @@ exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 >
 >This page is under construction.
 
-Your company is starting to employ Customer Journey Analytics. As a user who is familiar with Adobe Analytics, you already have great head start. In working with Customer Journey Analytics, you will notice some big differences and some similarities. This page aims to explain those things that haven't changed, as well as some of the major differences. We will also tell you how you can get more information on new concepts, and further steps to make YOUR customer journey easier and more successful.
+Your company is starting to employ Customer Journey Analytics. As a user who is familiar with Adobe Analytics, you already have a great head start. In working with Customer Journey Analytics, you will notice some big differences and some similarities. This page aims to explain those things that haven't changed, as well as some of the major differences. We will also tell you how you can get more information on new concepts, and further steps to make YOUR customer journey easier and more successful.
 
 ## What hasn't changed
 
@@ -22,7 +22,7 @@ A lot of what you are familiar with on the reporting side has not changed.
 * You also have the same version of [Adobe Analytics dashboards](/help/mobile-app/home.md) at your disposal. Dashboards (a.k.a. Mobile App) works the same as it did in traditional Adobe Analytics. 
 * [Report Builder](/help/report-builder/report-buider-overview.md) has a new interface and now runs on PCs, Macs, and the web version of Excel. 
 
-When it comes to reporting, what's different is that you have access to a lot more cross-channel data to analyze. Here is an example of some visualizations that include cross-channel data sources:
+When it comes to reporting, **what's different** is that you have access to a lot more cross-channel data to analyze. Here is an example of some visualizations that include cross-channel data sources:
 
 ![multi-channel-visualizations](assets/cross-channel.png)
 
