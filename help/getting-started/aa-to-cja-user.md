@@ -24,7 +24,7 @@ When it comes to reporting, **what's different** is that you have access to a lo
 
 ![multi-channel-visualizations](assets/cross-channel.png)
 
-## New architecture
+## New architecture {#architecture}
 
 Customer Journey Analytics gets its data from Adobe Experience Platform. Experience Platform lets you centralize and standardize customer data and content from any system or channel and applies data science and machine learning to improve the design and delivery of personalized experiences. 
 
@@ -32,11 +32,11 @@ Customer data in the platform is stored as datasets, which consist of a schema a
 
 Your CJA Admin has established [connections](/help/connections/create-connection.md) to data sets in Platform. They have then built [data views](/help/data-views/data-views.md) within those connections. Think of data views as similar to virtual report suites. Data views are the basis of reporting in Customer Journey Analytics. The concept of a report suite no longer exists.
 
-## Report suites
+## Report suites {#report-suites}
 
 Your report suite data can be brought into Experience Platform via the Adobe Analytics Source Connector or the Web SDK, especially if your organization is still on the Adobe Analytics platform and adding CJA/AEP. You will typically source datasets that are report-suite specific using the Analytics schema.
 
-## (Virtual) report suites are now 'data views'
+## (Virtual) report suites are now 'data views' {#data-views}
 
 [!UICONTROL Data views] take the concept of virtual report suites as they exist today and expand it to [enable additional controls on the data](/help/data-views/create-dataview.md) made available by connections. This makes timezone and session time-out intervals configurable. You can also apply attribution and expiration properties for individual dimensions dynamically. Note that these are applied retroactively on all data.
 
@@ -48,7 +48,7 @@ Your report suite data can be brought into Experience Platform via the Adobe Ana
 
 * Familiarize yourself with the many [use cases around data views](/help/data-views/data-views-usecases.md).
 
-## No more eVars and props
+## eVars and props
 
 [!UICONTROL eVars], [!UICONTROL props], and [!UICONTROL events] in the traditional Adobe Analytics sense no longer exist in [!UICONTROL Customer Journey Analytics]. You have unlimited schema elements (dimensions, metrics, list fields). So all of the attribution settings you used to apply during the data collection process are now applied at query time. Your CJA Admin has create data views
 
