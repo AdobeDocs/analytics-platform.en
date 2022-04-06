@@ -8,11 +8,9 @@ exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 ---
 # CJA User Guide for Adobe Analytics users
 
->[!NOTE]
->
->This page is under construction.
+Your company is starting to employ Customer Journey Analytics. As a user who is familiar with Adobe Analytics, you already have a great head start. In working with Customer Journey Analytics, you will notice some similarities and some big differences. This page aims to explain those things that haven't changed, as well as some of the major differences. We will also tell you how you can get more information on new concepts, and further steps to make YOUR customer journey easier and more successful.
 
-Your company is starting to employ Customer Journey Analytics. As a user who is familiar with Adobe Analytics, you already have a great head start. In working with Customer Journey Analytics, you will notice some big differences and some similarities. This page aims to explain those things that haven't changed, as well as some of the major differences. We will also tell you how you can get more information on new concepts, and further steps to make YOUR customer journey easier and more successful.
+Several features in CJA have been renamed and re-architected, when compared to traditional Adobe Analytics, to align with industry standards. Some updated terminology includes segments, virtual report suites, classifications, customer attributes, and container names. Familiar concepts like eVars and props no longer exist, along with the limitations they imposed.
 
 ## What hasn't changed
 
@@ -34,9 +32,13 @@ Customer data in the platform is stored as datasets, which consist of a schema a
 
 Your CJA Admin has established [connections](/help/connections/create-connection.md) to data sets in Platform. They have then built [data views](/help/data-views/data-views.md) within those connections. Think of data views as similar to virtual report suites. Data views are the basis of reporting in Customer Journey Analytics. The concept of a report suite no longer exists.
 
-## New concepts and terminology
+## Bringing your Adobe Analytics data into CJA
 
-Several features in CJA have been renamed and re-architected, when compared to traditional Adobe Analytics, to align with industry standards. Some updated terminology includes segments, virtual report suites, classifications, customer attributes, and container names. Familiar concepts like eVars and props no longer exist, along with the limitations they imposed.
+Your Adobe Administrator can move your existing Analytics data 
+
+## Report suites
+
+Your report suite data can be brought into Experience Platform [via the Adobe Analytics Source Connector or the Web SDK](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=en#4.-decide-on-using-analytics-source-connector-vs.-experience-platform-sdks). especially if someone is still on the AA platform and adding CJA/AEP. They typically source datasets that are report-suite specific using the AA schema.
 
 ## (Virtual) report suites are now 'data views'
 
@@ -44,7 +46,7 @@ Several features in CJA have been renamed and re-architected, when compared to t
 
 **What you need to do**:
 
-* Notice that in Workspace, the reports suite selector that you are used to now lets you choose from the data views that your Admin has shared with you:
+* Notice that in Workspace, the report suite selector that you are used to now lets you choose from the data views that your Admin has shared with you:
 
    ![data-view-selector](assets/data-views.png)
 
