@@ -32,13 +32,9 @@ Customer data in the platform is stored as datasets, which consist of a schema a
 
 Your CJA Admin has established [connections](/help/connections/create-connection.md) to data sets in Platform. They have then built [data views](/help/data-views/data-views.md) within those connections. Think of data views as similar to virtual report suites. Data views are the basis of reporting in Customer Journey Analytics. The concept of a report suite no longer exists.
 
-## Bringing your Adobe Analytics data into CJA
-
-Your Adobe Administrator can move your existing Analytics data 
-
 ## Report suites
 
-Your report suite data can be brought into Experience Platform [via the Adobe Analytics Source Connector or the Web SDK](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=en#4.-decide-on-using-analytics-source-connector-vs.-experience-platform-sdks). especially if someone is still on the AA platform and adding CJA/AEP. They typically source datasets that are report-suite specific using the AA schema.
+Your report suite data can be brought into Experience Platform via the Adobe Analytics Source Connector or the Web SDK, especially if your organization is still on the Adobe Analytics platform and adding CJA/AEP. You will typically source datasets that are report-suite specific using the Analytics schema.
 
 ## (Virtual) report suites are now 'data views'
 
