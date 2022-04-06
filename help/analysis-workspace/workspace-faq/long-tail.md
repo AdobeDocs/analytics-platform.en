@@ -1,6 +1,7 @@
 ---
 title: Long Tail dimension item
 description: Explains the dimension item "Long Tail" and why it appears in reporting.
+feature: FAQ
 exl-id: 262a219a-315a-4c9b-a400-48cff119d45d
 ---
 # Long Tail dimension item

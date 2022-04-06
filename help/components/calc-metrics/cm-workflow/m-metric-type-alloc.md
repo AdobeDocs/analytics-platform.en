@@ -1,6 +1,7 @@
 ---
 description: Learn about
 title: Metric Type and Attribution
+feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
 ---
 # Metric Type and Attribution

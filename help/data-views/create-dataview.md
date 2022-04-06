@@ -3,19 +3,24 @@ title: Create or edit a data view
 description: All settings that you can adjust to create or edit a data view.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
+feature: Data Views
 ---
 # Create or edit a data view
 
 Creating a data view involves either creating metrics and dimensions from schema elements or utilizing standard components. Most schema elements can be either a dimension or a metric depending on your business's requirements. Once you drag a schema element into a data view, options appear on the right where you can adjust how the dimension or metric operates in CJA.
 
-## Configure a data view
+Here is a video on the topic:
+
+>[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
+
+## Configure a data view {#configure}
 
 1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and go to the **[!UICONTROL Data Views]** tab.
 2. Click **[!UICONTROL Add]** to create a data view, or click on an existing data view to edit it.
 
 ![New data view](assets/new-data-view.png)
 
-### Settings
+### Data view settings {#settings}
 
 Provides overarching settings for the data view.
 
@@ -23,11 +28,11 @@ Provides overarching settings for the data view.
 | --- | --- |
 | [!UICONTROL Connection] | This field links the data view to the connection that you established earlier, which contains one or more Adobe Experience Platform datasets. |
 | [!UICONTROL Name] | Required. The name of the data view. This value appears in the top-right dropdown in Analysis Workspace. |
-| [!UICONTROL Description] | Optional. Adobe recommends a detailed description so users understand why the data view exists and who it is designed for. |
+| [!UICONTROL Description] | Optional. Adobe recommends a detailed description so that users understand why the data view exists and who it is designed for. |
 
-### Containers
+### Containers {#containers}
 
-Designates the name of containers for the data view. Container names are frequently used in [Filters](/help/components/filters/filters-overview.md#Filter-containers).
+Designates the name of containers for the data view. Container names are frequently used in [filters](/help/components/filters/filters-overview.md#Filter-containers).
 
 | Setting | Description |
 | --- | --- |
@@ -35,7 +40,7 @@ Designates the name of containers for the data view. Container names are frequen
 | [!UICONTROL Session container name] | [!UICONTROL Session] (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this container to 'Visit' or any other term your organization prefers. |
 | [!UICONTROL Event container name] | [!UICONTROL Event] (default). The [!UICONTROL Event] container defines individual events in a dataset. If your organization uses a different term (for example, "Hits" or "Page Views"), you can rename the container here. |
 
-### Calendar
+### Calendar {#calendar}
 
 Indicates the calendar format that you want the data view to follow. You can have multiple data views based on the same [Connection](/help/connections/create-connection.md) and give them different calendar types or time zones. These data views can allow teams that use different calendar types to accommodate their respective needs with the same underlying data.
 
@@ -47,7 +52,7 @@ Indicates the calendar format that you want the data view to follow. You can hav
 | [!UICONTROL First day of current year] | Visible for custom calendar types. Specify what day of the year that you want the current year to start. The calendar automatically formats the first day of each week based on this value. |
 | [!UICONTROL Year in which the "extra" week occurs] | With most 364-day calendars (52 weeks of 7 days each), each year accumulates leftover days until they form an extra week. This extra week is then added to the last month of that year. Specify which year that you want the extra week added to. |
 
-## Set a data view's components
+## Set a data view's components {#set-components}
 
 Next, you can create metrics and dimensions from schema elements. You can also use Standard components.
 
@@ -78,34 +83,34 @@ Next, you can create metrics and dimensions from schema elements. You can also u
    * [[!UICONTROL Persistence]](component-settings/persistence.md)
    * [[!UICONTROL Value bucketing]](component-settings/value-bucketing.md)
 
-If needed, you can use the following features:
+## Duplicate metrics or dimensions {#duplicate}
 
-* **[!UICONTROL Duplicate]**: Duplicating metrics or dimensions and then modifying specific settings is an easy way to create multiple metrics or dimensions from a single schema field. Select the [!UICONTROL Duplicate] setting underneath the metric's or dimensions's name at the top right. Modify the new dimension or metric and save it under a more descriptive name.
+Duplicating metrics or dimensions and then modifying specific settings is an easy way to create multiple metrics or dimensions from a single schema field. Select the [!UICONTROL Duplicate] setting underneath the metric's or dimensions's name at the top right. Modify the new dimension or metric and save it under a more descriptive name.
 
-  ![Duplicate](assets/duplicate.png)
+![Duplicate](assets/duplicate.png)
 
-* **[!UICONTROL Filter]**: You can filter schema fields in the left rail by the following data types:
+## Filter schema fields or datasets {#filter}
 
-  ![Filter fields](assets/filter-fields.png)
+You can filter schema fields in the left rail by the following data types:
 
-  You can also filter by datasets and by whether a schema field contains data or whether it is an identity. By default, Adobe initially applies the **[!UICONTROL Contains data]** filter to all data views.
+![Filter fields](assets/filter-fields.png)
 
-  ![Filter other](assets/filter-other.png)
+You can also filter by datasets and by whether a schema field contains data or whether it is an identity. By default, Adobe initially applies the **[!UICONTROL Contains data]** filter to all data views.
 
-## Settings
+![Filter other](assets/filter-other.png)
+
+## Settings tab {#settings-tab}
 
 1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and go to the **[!UICONTROL Data Views]** tab.
 1. Click **[!UICONTROL Add]** to create a data view, or click on an existing data view to edit it.
 1. Click the **[!UICONTROL Settings]** tab.
 
-### Global filter
+### Global filter {#global-filter}
 
 You can add filters that apply to an entire data view. This filter is applied to any report that you run in Workspace. Drag a filter from the list in the left rail to the [!UICONTROL Add filters] field.
 
-### Session settings
+### Session settings {#sessions}
 
-Determine the time period of inactivity between events before a session expires and a new one is started.
-
-A time period is required. You can optionally also force a new session to start when an event contains a certain metric.
+Determine the time period of inactivity between events before a session expires and a new one is started. A time period is required. You can optionally also force a new session to start when an event contains a certain metric.
 
 Once all desired settings are specified, click **[!UICONTROL Save and finish]**.

@@ -3,6 +3,7 @@ title: CJA documentation updates
 description: Lists content updates for the Customer Journey Analytics documentation set since December 2019.
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
+feature: Release Notes
 ---
 # Customer Journey Analytics - documentation updates
 
@@ -10,8 +11,11 @@ The following updates were made to the CJA documentation since its inception.
 
 | Date | Update description |
 | --- | --- |
+| March 2022 | Significantly updated content on [estimating connection size](/help/getting-started/cja-faq.md). |
+| February 2022 | [Adobe Analytics to Customer Journey Analytics evolution](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=en) |
+| January 2022 | New use case for [Using binding dimensions and metrics in CJA](/help/use-cases/binding-dimensions-metrics.md) |
 | January 2022 | Added new feature documentation on [binding dimensions and metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension) and on new [[!UICONTROL First Known] and [!UICONTROL Last Known] allocation settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#allocation-settings) |
-| January 2022 | Added an article on [comparing your Adobe Analytics data to Analytics data in CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html) |
+| January 2022 | New article on [comparing your Adobe Analytics data to Analytics data in CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html) |
 | November 2021 | Updated documentation for [[!UICONTROL Records skipped]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#connection-details-settings) on the Connections Details page. |
 | October 2021 | Documentation for [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/report-buider-overview.html#) in CJA. |
 | October 2021 | Customer Journey Analytics [Audit Log](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) API documentation |
@@ -26,7 +30,7 @@ The following updates were made to the CJA documentation since its inception.
 | August 2021 | New section on the enhanced [Connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en) experience in CJA. |
 | August 2021 | New section on [case sensitivity in Data View dimensions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-behavior-settings). |
 | June 2021 | New documentation on [previous project versions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=en#previous-version) in Workspace. |
-| April 2021 | New topic on [persistence](data-views/component-settings/persistence.md). |
+| April 2021 | New topic on [persistence](/help/data-views/component-settings/persistence.md). |
 | April 2021 | New documentation on support for scheduled projects in Workspace. |
 | April 2021 | New topics on the [enhanced Data Views experience](/help/data-views/data-views.md). |
 | April 2021 | New topics on [ingesting Google Analytics data](/help/use-cases/ga-to-cja.md) and [analyzing that data](/help/use-cases/ga-to-cja-reporting.md). |
@@ -39,7 +43,6 @@ The following updates were made to the CJA documentation since its inception.
 | January 2021 | New topic on [adding standard lookups to your dataset](/help/connections/standard-lookups.md). |
 | November 13, 2020 | New topics on [Cross-Channel Analytics](/help/connections/cca/overview.md), which allows you to rekey a dataset's person ID, and enables a seamless combination of multiple datasets. |
 | November 13, 2020 | A new use case on [importing call center and web data](/help/use-cases/call-center.md) was added. |
-| November 11, 2020 | Added a topic on [Estimating the connection size](/help/connections/estimate-connection-size.md).|
 | November 10, 2020 | Added a section on the implications of deleting data components to the [FAQ](/help/getting-started/cja-faq.md). |
 | November 2, 2020 | Updates to the [Customer Journey Analytics feature support](/help/getting-started/cja-aa.md) page. |
 | November 2020 | Added content on [removing backfill limitations](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#backfill-historical-data) for connections. |

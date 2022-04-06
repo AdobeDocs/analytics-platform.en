@@ -3,6 +3,7 @@ title: What are components in Customer Journey Analytics?
 description: Learn what components CJA offers, and how you can use them in reporting.
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
+feature: Components
 ---
 # Components overview
 
@@ -13,6 +14,7 @@ Components are features in Customer Journey Analytics that can be used in report
 
 You can manage the following components:
 
+* [**Annotations**](/help/components/annotations/overview.md): Communicate contextual data nuances and insights to your organization. **This feature is currently in [limited testing](/help/release-notes/releases.md).**
 * [**Filters**](filters/filters-overview.md): Exclude parts of your data to focus on common dimension items
 * [**Calculated metrics**](calc-metrics/calc-metr-overview.md): Use metrics and formulas as new components for use in reporting
 * [**Date ranges**](date-ranges/overview.md): Customize and refine the date ranges Analysis Workspace offers

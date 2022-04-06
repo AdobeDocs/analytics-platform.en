@@ -1,7 +1,7 @@
 ---
 description: This visualization shows horizontal bars representing various values across one or more metrics.
 title: Horizontal Bar and Horizontal Bar Stacked
-uuid: 3730929d-42e6-4543-b12a-d002f86ac82d
+feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 ---
 # Horizontal Bar and Horizontal Bar Stacked

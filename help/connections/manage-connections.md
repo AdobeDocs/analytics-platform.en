@@ -4,6 +4,7 @@ description: Describes how to manage connections to Experience Platform datasets
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
+feature: Connections
 ---
 # Manage connections
 
@@ -13,8 +14,9 @@ Once Admin users have [created one or more connections](/help/connections/create
 
 * It lets you **identify any data discrepancies** due to misconfiguration. Are you missing any rows? If yes, what rows are missing and why? Did you misconfigure connections and cause missing data in CJA?
 
->[!NOTE]
-> This functionality will be generally available on September 20, 2021.
+Here is a video about the new Connections Manager:
+
+>[!VIDEO](https://video.tv.adobe.com/v/342097/?quality=12&learn=on)
 
 ## Connections Manager {#connections-manager}
 
@@ -145,9 +147,3 @@ Allows Admins to edit the connection. Select a connection, then click [!UICONTRO
 * Refresh the dataset/s.
 * Remove dataset/s from the connections.
 
-## Set rolling window for [!UICONTROL Connection] data retention
-
->[!IMPORTANT]
->Please contact Customer Care or your Adobe account manager to have this setting implemented. It is not yet available via the CJA UI.
-
-This setting lets you define CJA data retention as a rolling window in months (3 months, 6 months, etc.), at a [!UICONTROL connection] level (not at a [!UICONTROL dataset] level). Data retention is based on event dataset timestamps and applies to event datasets only. No data retention setting exists for profile or lookup datasets since there are no applicable timestamps. The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost. 

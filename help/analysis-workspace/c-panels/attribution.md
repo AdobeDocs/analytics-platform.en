@@ -1,6 +1,7 @@
 ---
 title: Attribution panel
 description: How to use and interpret the attribution panel in Analysis Workspace.
+feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 ---
 # Attribution panel

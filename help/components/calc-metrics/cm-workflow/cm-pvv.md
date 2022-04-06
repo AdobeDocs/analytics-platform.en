@@ -1,13 +1,14 @@
 ---
 description: Shows how to build a simple "Page Views per Visits" metric.
 title: Build a simple "Page Views per Visits" metric
+feature: Calculated Metrics
 exl-id: 46c83a1f-cb2d-4d5d-af4f-e1d2e4566743
 ---
 # Build a simple "Page Views per Visits" metric
 
 Shows how to build a simple "Page Views per Visits" metric.
 
-For a detailed description of the UI components, see [Building Metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+For a detailed description of the UI components, see [Build Metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
 Here's how to build a simple "Page Views per Visits" metric.
 

@@ -3,6 +3,7 @@ title: Data views overview
 description: A data view specifies how you want to interpret elements of the data in the CJA connection, such as metrics, dimensions, sessions, etc..
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
+feature: Data Views
 ---
 # Data views overview
 
@@ -16,7 +17,7 @@ You can create different data views for the same connection, with very different
 
 Workspace projects in Customer Journey Analytics are based on data views.
 
-## Data views capabilities
+## Data views capabilities {#capabilities}
 
 Data views let you spontaneously change schema element settings, without having to change the schema in Adobe Experience Platform or re-implementing your CJA environment.
 
@@ -45,12 +46,12 @@ Data views let you spontaneously change schema element settings, without having 
 
 * You can **rename your containers** in a data view and have those renamed containers surface in any Workspace project that is based on that data view.
 
-## Data views prerequisites
+## Data views prerequisites {#prerequisites}
 
 * Before you can create data views, you need to [set up one or more connections to Experience Platform datasets](/help/connections/create-connection.md).
 * To create or manage a data view, you need a [set of permissions in Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions). 
 
-## Data view settings you can override in Workspace
+## Data view settings you can override in Workspace {#settings-override}
 
 Some data view settings can be overridden in Analysis Workspace at the project level, others cannot.
 
@@ -58,14 +59,14 @@ Some data view settings can be overridden in Analysis Workspace at the project l
 * Metric attribution
 * Whether or not users see the [!UICONTROL No Value] line item in a report
 
-## Data view settings you cannot override in Workspace
+## Data view settings you cannot override in Workspace {#settings-no-override}
 
 * [!UICONTROL Component type]
 * Metric formatting
 * Data view name
 * Dimension allocation
 
-## Delete data views
+## Delete data views {#delete}
 
 If you delete a data view in [!UICONTROL Customer Journey Analytics], an error message will indicate that any [!UICONTROL Workspace] projects that depend on this deleted data view will no longer work.
 

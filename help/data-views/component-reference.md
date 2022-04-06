@@ -3,6 +3,7 @@ title: Standard component reference
 description: Details and information on all standard components that you can add to any data view.
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
+feature: Data Views
 ---
 # Standard component reference
 
@@ -33,13 +34,23 @@ These required standard components are added to each data view by default. They 
 
 Optional Standard components are available under **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > **[!UICONTROL Components]** tab > **[!UICONTROL Standard Components]** tab.
 
-| Component Name | Dimension or Metric | Notes |
+| Component Name | Dimension or Metric | Notes and values |
 | --- | --- | --- |
+| [!UICONTROL AM/PM] | Time-parting dimension | AM or PM |
+| [!UICONTROL Batch ID] | Dimension | Represents the Experience Platform batch that an [!UICONTROL Event] was part of. |
+| [!UICONTROL Dataset ID] | Dimension | Represents the Experience Platform dataset that an [!UICONTROL Event] was part of. |
+| [!UICONTROL Day of Month] | Time-parting dimension | 1-31 |
+| [!UICONTROL Day of Week]| Time-parting dimension | Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday |
+| [!UICONTROL Day of Year] | Time-parting dimension | 1-366 |
+| [!UICONTROL Hour of Day] | Time-parting dimension | 0-23 |
+|[!UICONTROL  Month of Year] | Time-parting dimension | January - December |
+| [!UICONTROL Person ID] | Dimension | Each dataset schema defined in the Experience Platform can have its own set of one or more identities defined and associated with an Identity Namespace. Any of these can be used as the Person ID. Examples include Cookie ID, Stitched ID, User ID, Tracking Code, etc. The [!UICONTROL Person ID] dimension is the foundation of combining datasets and identifying unique visitors in CJA.<p>Possible use cases include:<ul><li>Creating a filter on a specific person ID value to filter everything down to that user's behavior.</li><li>Debugging: making sure that the data for a specific cookie ID (or a specific customer ID) is there.</li><li>Identifying the users who called in to a call center.</li></ul>  |
+| [!UICONTROL Person ID namespace] | Dimension | Which type of ID the [!UICONTROL Person ID] consists of. Examples: `email address`, `cookie ID`, `Analytics ID`, etc. |
+| [!UICONTROL Quarter of Year] | Time-parting dimension | Q1, Q2, Q3, Q4 |
 | [!UICONTROL Session Starts] | Metric | The number of events that were the first event of a session. When used in a filter definition (e.g. '[!UICONTROL Session Starts] exists'), it filters down to just the first event of every session. |
 | [!UICONTROL Session Ends] | Metric | The number of events that were the last event of a session. Similar to [!UICONTROL Session Starts], it can also be used in a filter definition to filter things down to the last event of every session. |
 | [!UICONTROL Time Spent (seconds)] | Metric | Sums the time between two different values for a dimension. |
 | [!UICONTROL Time Spent per Event] | Dimension | Buckets the [!UICONTROL Time Spent] metric into [!UICONTROL Event] buckets. |
 | [!UICONTROL Time Spent per Session] | Dimension | Buckets the [!UICONTROL Time Spent] metric into [!UICONTROL Session] buckets. |
 | [!UICONTROL Time Spent per Person] | Dimension | Buckets the [!UICONTROL Time Spent] metric into [!UICONTROL Person] buckets. |
-| [!UICONTROL Batch ID] | Dimension | Represents the Experience Platform batch that an [!UICONTROL Event] was part of. |
-| [!UICONTROL Dataset ID] | Dimension | Represents the Experience Platform dataset that an [!UICONTROL Event] was part of. |
+| [!UICONTROL Weekend]/[!UICONTROL Weekday] | Time-parting dimension | Weekend or Weekday |

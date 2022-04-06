@@ -1,12 +1,13 @@
 ---
 title: Component settings
-description: View core settings for a component.
+description: View core settings for a data view component.
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
+feature: Data Views
 ---
 # Component settings
 
-Core settings that a component uses.
+Core settings that a data view component uses.
 
 ![Component settings](../assets/component-settings.png)
 
@@ -23,3 +24,7 @@ Core settings that a component uses.
 | [!UICONTROL Component ID] | Required. The [CJA API](https://adobe.io/cja-apis/docs) uses this field to reference the component. Each component in a data view must be unique. Adobe automatically generates an ID for each component; however, you can click the edit icon and modify the component ID. Changing the component ID breaks all existing Workspace projects that contain this component. While each component needs a unique ID in a single data view, you can use the same component ID in other data views. If you use the same component ID in other data views, you can make Workspace projects compatible across data views. |
 | [!UICONTROL Schema Path] | Required. A non-editable field showing the schema path that the component came from. |
 | [!UICONTROL Hide component in reporting] | Lets you curate the component out of the data view for non-admins. Admins can still access it by clicking [!UICONTROL Show All Components] in an Analysis Workspace project. |
+
+Here is a video on component settings in data views:
+
+>[!VIDEO](https://video.tv.adobe.com/v/333112/?quality=12)

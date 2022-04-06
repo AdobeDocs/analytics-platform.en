@@ -2,7 +2,7 @@
 cloud: Experience Cloud
 git-repo: https://github.com/AdobeDocs/analytics-platform.en
 description: This file includes repo-level metadata that passes through to user guide TOC.md files in the repo.
-feature-set: Analytics
+feature-set: Customer Journey Analytics
 ---
 
 # Metadata for internal use

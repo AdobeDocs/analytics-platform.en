@@ -1,6 +1,7 @@
 ---
 description: Settings for the Flow visualization in Workspace
 title: Flow settings
+feature: Visualizations
 exl-id: 85de8ee7-b79f-4ac4-9601-a4e7f6fb3b2a
 ---
 # Flow settings

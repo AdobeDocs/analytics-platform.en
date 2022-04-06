@@ -7,24 +7,33 @@ solution: Customer Journey Analytics
 type: Documentation
 index: yes
 user-guide-title: Customer Journey Analytics Guide
-user-guide-description: This guide provides self-help assistance for Customer Journey Analytics, Adobe's next-generation solution for cross-channel analytics, based on Adobe Experience Platform.
+user-guide-description: This guide provides support for Customer Journey Analytics, Adobe's next-generation solution for cross-channel analytics, based on Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
 ---
 
 # Customer Journey Analytics Guide {#using}
 
 + [Customer Journey Analytics Guide](getting-started/cja-landing.md)
++ Release Notes {#releases}
+  + [Latest release](release-notes/latest.md)
+  + [2022 releases](release-notes/2022.md)
+  + [2021 releases](release-notes/2021.md)
+  + [2020 releases](release-notes/2020.md)
+  + [CJA releases](release-notes/releases.md)
+  + [CJA documentation updates](release-notes/doc-changes.md)
 + Customer Journey Analytics overview {#cja-overview}
   + [Customer Journey Analytics overview](getting-started/cja-overview.md)
   + [Getting Started](getting-started/cja-getting-started.md)
+  + [Customer Journey Analytics landing page](getting-started/landing.md)
   + [Frequently asked questions](getting-started/cja-faq.md)
+  + [Adobe Analytics to Customer Journey Analytics evolution](getting-started/aa-to-cja.md)
+  + [User Guide for new Customer Journey Analytics users](getting-started/aa-to-cja-user.md)
   + [Customer Journey Analytics feature support](getting-started/cja-aa.md)
   + [Deletion implications](getting-started/cja-deletion.md)
   + [CJA glossary](getting-started/cja-glossary.md)
 + Connections {#cja-connections}
   + [Create a connection](connections/create-connection.md)
   + [Manage connections](connections/manage-connections.md)
-  + [Estimate connection size](connections/estimate-connection-size.md)
   + [Combined event datasets](connections/combined-dataset.md)
   + [Standard lookups](connections/standard-lookups.md)
   + Cross-Channel Analytics {#cca}
@@ -139,6 +148,11 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Report Builder Settings](report-builder/report-builder-settings.md)
 + Components {#cja-components}
   + [Components overview](components/overview.md)
+  + Annotations {#annotations}
+    + [Annotations overview](components/annotations/overview.md)
+    + [Create annotations](components/annotations/create-annotations.md)
+    + [Manage annotations](components/annotations/manage-annotations.md)
+    + [View annotations](components/annotations/view-annotations.md)
   + Dimensions {#dimensions}
     + [Preview dimensions](components/dimensions/view-dimensions.md)
     + [Break down dimensions](components/dimensions/t-breakdown-fa.md)
@@ -181,6 +195,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
   + [Use arrays of objects](use-cases/object-arrays.md)
+  + [Use binding dimensions and metrics](use-cases/binding-dimensions-metrics.md)
   + [(B2B) Add account-level data as a lookup dataset](use-cases/b2b.md)
   + [Analyze data across channels](use-cases/cross-channel.md)
   + [Import call center and web data](use-cases/call-center.md)
@@ -198,4 +213,5 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Compare your Adobe Analytics data to CJA data](troubleshooting/compare.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
-+ [CJA documentation updates](doc-changes.md)
+
+  

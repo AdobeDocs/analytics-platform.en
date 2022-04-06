@@ -1,7 +1,7 @@
 ---
 description: There are two ways to use metrics in Analysis Workspace.
 title: Metrics
-uuid: 9927491a-ca0b-4e1a-9069-8736149d051b
+feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 ---
 # Metrics
