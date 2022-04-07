@@ -14,7 +14,7 @@ Several features in CJA are renamed and redesigned to align with industry standa
 
 ## What hasn't changed
 
-A lot of what you are familiar with on the reporting side has not changed.
+Much of what you are familiar with on the reporting side has not changed.
 
 * You can still use the power of [Analysis Workspace](/help/analysis-workspace/home.md) to analyze your data. Workspace operates the same as it does in traditional Adobe Analytics.
 * The same version of [Adobe Analytics dashboards](/help/mobile-app/home.md) is available, and works similarly between CJA and traditional Analytics.
@@ -90,11 +90,11 @@ You can also have multiple data views based on the same connection. For example,
 
 ## Changes to the concept of Customer attributes
 
-"Customer attributes" are now known as "Profile datasets". Profile datasets contain data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. For example, it allows you to upload CRM data about your customers. You can pick which Person ID you want to include. Each dataset defined in [!DNL Experience Platform] has its own set of one or more Person IDs defined, such as Cookie ID, Stitched ID, User ID, Tracking Code, etc.
+"Customer attributes" are now known as "Profile datasets". Profile datasets contain data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. For example, it allows you to upload CRM data about your customers. You can pick which Person ID you want to include. Each dataset defined in [!DNL Experience Platform] has its own set of one or more Person IDs defined.
 
 ## Changes to how Adobe identifies visitors
 
-CJA expands the concepts of identities beyond ECIDs to include any ID you want to use, including Customer ID, Cookie ID, Stitched ID, User ID, Tracking Code, and so on. Using a common namespace ID across datasets, or using [Cross-Channel Analytics](/help/connections/cca/overview.md) helps link people together across different datasets. Any user setting up a Workspace project in CJA needs to understand the IDs used across the datasets. See the following video that highlights the use of identities in Customer Journey Analytics:
+CJA expands the concepts of identities beyond ECIDs to include any ID you want to use, including Customer ID, Cookie ID, Stitched ID, User ID, Tracking Code, and so on. Using a common namespace ID across datasets, or using [Cross-Channel Analytics](/help/connections/cca/overview.md) helps link people together across different datasets. Any user setting up a Workspace project in CJA must understand the IDs used across the datasets. See the following video that highlights the use of identities in Customer Journey Analytics:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
