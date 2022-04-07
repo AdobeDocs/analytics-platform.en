@@ -13,7 +13,7 @@ You have a number of options when it comes to ingesting data into Customer Journ
 
 This workflow utilizes the Adobe Analytics Data Connector and varies depending on whether you use DTM or Launch as a Tag Manager.
 
-### Via tags in Adobe Experience Platform (formerly called Launch)
+### Via tags in Adobe Experience Platform (formerly called [!UICONTROL Launch])
 
 1. [Create a Data Layer](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/data-layer.html), if you haven't already. A data layer is a framework of JavaScript objects on your site that contains all variable values used in your implementation. It allows greater control and easier maintenance in your implementation.
 1. Use [Adobe Experience Platform tags](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html) to implement code on your site for data collection, if you haven't already. This tag management solution lets you deploy Analytics code alongside other tagging requirements. Tags offer integrations with other solutions and products, and let you deploy custom code. All of these tasks can be done without relying on any development teams in your organization to update code on your site..
