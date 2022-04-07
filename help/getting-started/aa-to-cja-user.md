@@ -60,7 +60,7 @@ Adobe has renamed the "segments" component to "filters" to better align with ind
 
 [!UICONTROL Customer Journey Analytics] no longer uses eVars, props, or events and instead uses any Platform schema element. This change means that none of the existing segments are compatible with [!UICONTROL Customer Journey Analytics]. If you want to move existing Adobe Analytics segments to Customer Journey Analytics, see the following video:
 
-[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
 
 While you cannot yet share or publish [!UICONTROL filters] ([!UICONTROL segments]) from [!DNL Customer Journey Analytics] to Experience Platform Unified Profile, this functionality is under development.
 
@@ -74,7 +74,7 @@ In addition to the concept of segments changing, segment containers are also upd
 
 Calculated metrics are similarly named between traditional Analytics and CJA. However, [!UICONTROL Customer Journey Analytics] no longer uses eVars, props, or events and instead uses any Platform schema element. This fundamental change means that none of the existing calculated metrics are compatible with [!UICONTROL Customer Journey Analytics]. If you want to move Adobe Analytics calculated metrics to Customer Journey Analytics, see the following video:
 
-[!VIDEO](https://video.tv.adobe.com/v/31788/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31788/?quality=12)
 
 ## Changes to variable attribution and expiration settings
 
