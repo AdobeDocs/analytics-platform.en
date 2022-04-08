@@ -40,7 +40,7 @@ Use this method for fields that use a delimiter to separate multiple string valu
 
 For use with fields that contain URLs. Using the example URL `https://example.com/store/index.html?cid=campaign#cart`, the following options are available:
 
-* **[!UICONTROL Get protocol]**: Get the URL's protocol. For example, `"https://`.
+* **[!UICONTROL Get protocol]**: Get the URL's protocol. For example, `"https://"`.
 * **[!UICONTROL Get host]**: Get the URL's host. For example, `"example.com"`.
 * **[!UICONTROL Get path]**: Get the URL's path. For example, `"store/index.html"`.
 * **[!UICONTROL Get query string value]** Get the value from a single query string. Place the desired query string parameter in the **[!UICONTROL Query key]** field. If the above URL is used with the `"cid"` query key, the output is `"campaign"`.
