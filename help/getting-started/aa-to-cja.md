@@ -106,6 +106,8 @@ Here are a couple of videos to guide you:
 
 * In Customer Journey Analytics, you can define a custom visit/session timeout as well as define a metric that will start a new session. You can create data views with different session definitions to get insights above and beyond what was possible in Adobe Analytics. This capability may be particularly beneficial for mobile datasets.
 
+* Consider providing a data dictionary for your users – or extend the SDR to include the Experience Platform field name for schema elements.
+
 ## Next steps
 
 After moving to CJA, if you notice any data discrepancies, you can compare your original Adobe Analytics data with the Adobe Analytics data that is now in Customer Journey Analytics. [Learn more](/help/troubleshooting/compare.md)
