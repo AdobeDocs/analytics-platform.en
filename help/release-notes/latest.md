@@ -10,10 +10,6 @@ feature: Release Notes
 >
 >This page contains pre-release information that is subject to change.
 
->[!IMPORTANT]
->
->These release notes contain pre-release information that is subject to change.
-
 **Last update**: April 11, 2022
 
 ## Key features
