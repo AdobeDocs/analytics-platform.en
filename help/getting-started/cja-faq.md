@@ -51,7 +51,7 @@ feature: FAQ
 
 | Question | Answer |
 | --- | --- |
-| What is the expected latency for [!UICONTROL Customer Journey Analytics] on [!UICONTROL Adobe Experience Platform]? | <ul><li>Live data or events: Processed and ingested within 90 minutes, once data is available in AEP. (Batch size > 50 million rows: longer than 90 mins.)</li><li>Small backfills - For example, a lookup dataset of 10 million rows: within 24 hours<li>Large backfills - For example, 500 billion rows: 30 days</li></ul> |
+| What is the expected latency for [!UICONTROL Customer Journey Analytics] on [!UICONTROL Adobe Experience Platform]? | <ul><li>Live data or events: Processed and ingested within 90 minutes, once data is available in AEP. (Batch size > 50 million rows: longer than 90 mins.)</li><li>Small backfills - For example, a lookup dataset of 10 million rows: within 7 days<li>Large backfills - For example, 500 billion rows: 30 days</li></ul> |
 
 ## 5. Set rolling window for [!UICONTROL Connection] data retention {#data-retention}
 
