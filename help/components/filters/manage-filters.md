@@ -11,7 +11,7 @@ The Filter Manager shows you all the filters you own and that have been shared w
 
 Access the Filter Manager by going to **[!UICONTROL Customer Journey Analysis]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]** in the top navigation.
 
-## Filter Manager UI
+## Filter Manager UI {#ui}
 
 ![](assets/filter-manager-ui.png)
 
@@ -30,7 +30,7 @@ Access the Filter Manager by going to **[!UICONTROL Customer Journey Analysis]**
 |  13  | Approved icon  | Indicates that this filter has been approved by an Administrator.  |
 |  14  | Other Filters  | Lets you see filters by Tags, Data Views, Owners, and Other (Show All, Mine, Shared with Me, Approved, Favorites.)  |
 
-## Plan filters
+## Plan filters {#plan}
 
 Devoting some time to plan filters improves the chances that they will be useful for your organization and that their numbers will be kept in check.
 
@@ -48,7 +48,7 @@ Devoting some time to plan filters improves the chances that they will be useful
 
 * Define your filters with view to a filter library that gives business users the ability to stack and reuse filter pieces or components in a modular fashion. What "modules" do you need to define to make this library a reality? 
 
-### Tag filters
+### Tag filters {#tag}
 
 In the Filter Manager, tagging filters allows you to organize them. All users can create tags for filters and apply one or more tags to a filter. However, you can see tags only for those filters that you own or that have been shared with you.
 
@@ -77,7 +77,7 @@ To tag a filter:
 The tag should now appear in the Tags column. (Click the gear icon on the top right to manage your columns.)
 You can also filter on tags by going to **[!UICONTROL Filters > Tags]**. 
 
-### Approve filters
+### Approve filters {#approve}
 
 Within the Filter Manager, you can set up a workflow that includes approving filter for various levels of application, for specific departments or groups, and consistent with reporting policies.
 
@@ -97,7 +97,7 @@ Here is how to flag a filter as approved:
 
 1. You can also unapprove an approved filter by clicking **[!UICONTROL Unapprove]**. 
 
-### Share filters
+### Share filters {#share}
 
 Depending on your permissions, you can share filters with your whole organization, groups, or individual users. 
 
@@ -123,7 +123,7 @@ To share a filter:
 
 1. You can filter on filters shared with you by going to Filters > Other Filters > Shared with Me. 
 
-### Mark filters as favorites
+### Mark filters as favorites {#favorites}
 
 Marking filters as favorites is another way to organize them for ease of use.
 
