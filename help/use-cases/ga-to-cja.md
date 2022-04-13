@@ -23,7 +23,7 @@ In order to accomplish these tasks, you need the following access and permission
 
 * Access to Adobe Experience Platform
 * Access to Universal Google Analytics (Google Analytics 360 version) or Google Analytics 4 (free version or Google Analytics 360 version)
-* Access to Customer Journey Analytics and its [Admin permissions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions).
+* Access to Customer Journey Analytics and its [Admin permissions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html#admin-access-permissions).
 
 How you bring Google Analytics data into Adobe Experience Platform depends on which version of Google Analytics you are using:
 
@@ -91,7 +91,7 @@ For instructions, view this video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332676)
 
-You can map the GA event data into an existing dataset that you created previously, or create a new dataset, using whichever XDM schema you choose. Once you have selected the schema, the Experience Platform applies machine learning to automatically pre-map each of the fields in the Google Analytics data to your [XDM schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui). 
+You can map the GA event data into an existing dataset that you created previously, or create a new dataset, using whichever XDM schema you choose. Once you have selected the schema, the Experience Platform applies machine learning to automatically pre-map each of the fields in the Google Analytics data to your [XDM schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui). 
 
 ![](assets/schema-map.png)
 
@@ -135,7 +135,7 @@ Once you have defined these custom variables, we can set up a trigger to send al
 
 In this example, the "Account Creation" trigger has been defined, where the `pageUrl equals account-creation`. By adding some information to this trigger, you can ensure that when user successful authenticates and the account-creation page loads, data is sent to both Google Analytics and AEP.
 
-You can also refer to [Data Ingestion and Google Tag Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=en#module9).
+You can also refer to [Data Ingestion and Google Tag Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html#module9).
 
 For instructions, view this video:
 
@@ -147,6 +147,6 @@ Once the Adobe Experience Platform has started receiving the live Google Analyti
 
 ## Next steps
 
-* Create a [data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#cja-dataviews) based on the connection that contains Google Analytics data.
+* Create a [data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#cja-dataviews) based on the connection that contains Google Analytics data.
 
 * Do some amazing [analysis in Workspace](/help/use-cases/ga-to-cja-reporting.md).

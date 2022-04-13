@@ -34,7 +34,7 @@ Now let’s look at which web site pages drove the incoming calls at the call ce
 We do this by
 
 * Using a calculated metric to filter the data down to only sessions that ended with a call center call.
-* Using the “participation” model in CJA’s [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=en#cja-workspace).
+* Using the “participation” model in CJA’s [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#cja-workspace).
 
 You can easily see which pages most frequently participate in a session that ends in a call. You can see that the "Shopping Cart" and "Checkout Information" pages drove most of the calls. Since you have also included the firebase mobile app data, you can even see page errors and app crashes generating the calls. This is a really important data point if you want to deliver great web and mobile app experiences.
 
