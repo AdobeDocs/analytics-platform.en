@@ -12,7 +12,7 @@ In some cases, executive users may need some additional assistance to access and
 
 ## Ensure app users have Adobe Analytics access
 
-1. Set up new users in the [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=en).
+1. Set up new users in the [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html).
 
 1. To be able to share scorecards, you must grant app users permissions to access scorecard components such as Analysis Workspace, the data views that scorecards are based on, as well as filters, metrics and dimensions.
 

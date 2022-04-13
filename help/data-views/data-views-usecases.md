@@ -42,7 +42,7 @@ Previously, integers would automatically be treated as metrics in CJA. Now, nume
 
 You can use a numeric dimension to get “metrics” into your [!UICONTROL  Flow] visualization. 
 
-1. On the Data Views [Components](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) tab, drag the [!UICONTROL Marketing Channels] schema field into the [!UICONTROL Metrics] area under [!UICONTROL Included components]. 
+1. On the Data Views [Components](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings) tab, drag the [!UICONTROL Marketing Channels] schema field into the [!UICONTROL Metrics] area under [!UICONTROL Included components]. 
 2. In Workspace reporting, this flow shows [!UICONTROL Marketing Channels] flowing into [!UICONTROL Orders]:
 
 ![](assets/flow.png)
@@ -53,7 +53,7 @@ This capability is specifically applicable to array-based fields. The include/ex
 
 For example, use the include/exclude functionality in Data Views to focus only on products that generated sales of more than 50 Dollars. So if you have an order that includes a 50 Dollar product purchase and a 25 Dollar product purchase, we would remove only the 25 Dollar product purchase, not the entire order.
 
-1. On the Data Views [Components](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) tab, drag the [!UICONTROL Revenue] schema field into the [!UICONTROL Metrics] area under [!UICONTROL Included components].
+1. On the Data Views [Components](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings) tab, drag the [!UICONTROL Revenue] schema field into the [!UICONTROL Metrics] area under [!UICONTROL Included components].
 1. Select the metric and configure the following on the right side:
    a. Under [!UICONTROL Format], select [!UICONTROL Currency].
    b. Under [!UICONTROL Currency], select USD.
@@ -66,7 +66,7 @@ These new settings allow you to view only high-value revenue and filter out anyt
 
 ## 5. Utilize the [!UICONTROL No Value Options] setting
 
-Your company may have spent time training your users to expect "Unspecified" in reports. The default in Data Views is "No Value". You can now [rename "No Value" to "Unspecified"](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings) in the Data Views UI.
+Your company may have spent time training your users to expect "Unspecified" in reports. The default in Data Views is "No Value". You can now [rename "No Value" to "Unspecified"](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-no-value-options-settings) in the Data Views UI.
 
 Another example would be a dimension for a membership program registration. In this case, you could rename "No Value" to "No Membership Program Registration."
 

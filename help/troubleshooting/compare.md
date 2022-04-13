@@ -9,7 +9,7 @@ exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 
 As your organization adopts CJA, you may notice some differences in data between Adobe Analytics and CJA. This is normal and can occur for several reasons. CJA is designed to allow you to improve upon some of the limitations on your data in AA. However, unexpected/unintended discrepancies can occur. This article is designed to help you diagnose and solve for those differences so that you and your team can use CJA unimpeded by concerns about data integrity.
 
-Let's assume you ingested Adobe Analytics data into AEP via the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en), and then created a CJA connection using this dataset. 
+Let's assume you ingested Adobe Analytics data into AEP via the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html), and then created a CJA connection using this dataset. 
 
 ![data flow](assets/compare.png)
 
@@ -25,7 +25,7 @@ Here are some steps to follow to compare your original Adobe Analytics data with
 
 ## Step 1: Run the Occurrences metric in Adobe Analytics
 
-The [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=en) metric shows the number of hits where a given dimension was set or persisted.
+The [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html) metric shows the number of hits where a given dimension was set or persisted.
 
 1. In Analytics > [!UICONTROL Workspace], drag the date range you want to report on as a dimension into a [!UICONTROL Freeform] table.
 
@@ -58,7 +58,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
 ```
 
-1. In [Analytics Data Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en ), identify from the raw data whether some rows might have been dropped by the Analytics Source connector. 
+1. In [Analytics Data Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html ), identify from the raw data whether some rows might have been dropped by the Analytics Source connector. 
 
    The [Analytics Source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) might drop rows during the transformation to XDM schema. There can be multiple reasons for the whole row to be unfit for transformation. If any of the following Analytics fields have these values, the whole row will be dropped. 
 
