@@ -52,6 +52,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Metric deduplication](data-views/component-settings/metric-deduplication.md)
     + [No value options](data-views/component-settings/no-value-options.md)
     + [Persistence](data-views/component-settings/persistence.md)
+    + [Substring](data-views/component-settings/substring.md)
     + [Value bucketing](data-views/component-settings/value-bucketing.md)
   + [Standard component reference](data-views/component-reference.md)
   + [Data views use cases](data-views/data-views-usecases.md)

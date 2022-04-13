@@ -60,7 +60,49 @@ Trim white space or special characters from the string.
 Apply regular expressions to a dimension to retrieve the desired value.
 
 * **[!UICONTROL Regex]**: The regular expression formula.
-* **[!UICONTROL Output format]**: 
+* **[!UICONTROL Output format]**: An optional field that lets you add text or reorder the regex sub-group output. If this field is blank, the string output is the evaluated regex expression.
 * **[!UICONTROL Case sensitive]**: A checkbox where, if enabled, forces the regular expression to be case sensitive.
 
-If the input does not match the regular expression, [No value options](no-value-options.md) apply.
+CJA uses a subset of the Perl regex syntax. If the input does not match the regular expression and the **[!UICONTROL Output format]** is blank, [No value options](no-value-options.md) apply. The following expressions are supported:
+
+| Expression | Description |
+| --- | --- |
+| `a` | A single character `a`. |
+| `a|b` | A single character `a` or `b`. |
+| `[abc]` | A single character `a`, `b`, or `c`. |
+| `[^abc]` | Any single character except `a`, `b`, or `c`. |
+| `[a-z]` | Any single character in the range of `a`-`z`. |
+| `[a-zA-Z0-9]` | Any single character in the range of `a`-`z`, `A`-`Z`, or digits `0`-`9`. |
+| `^` | Matches the beginning of the line. |
+| `$` | Matches the end of the line. |
+| `\A` | Start of string. |
+| `\z` | End of string. |
+| `.` | Matches any character. |
+| `\s` | Any whitespace character. |
+| `\S` | Any non-whitespace character. |
+| `\d` | Any digit. |
+| `\D` | Any non-digit. |
+| `\w` | Any letter, number, or underscore. |
+| `\W` | Any non-word character. |
+| `\b` | Any word boundary. |
+| `\B` | Any character that is not a word boundary. |
+| `\<` | Start of word. |
+| `\>` | End of word. |
+| `(...)` | Capture everything enclosed. |
+| `(?:...)` | Non-marking capture. Prevents the match from being referenced in the output string. |
+| `a?` | Zero or one of `a`. |
+| `a*` | Zero or more of `a`. |
+| `a+` | One ore more of `a`. |
+| `a{3}` | Exactly 3 of `a`. |
+| `a{3,}` | 3 or more of `a`. |
+| `a{3,6}` | Between 3 and 6 of `a`. |
+
+Output placeholders are also supported. You can use these sequences in the **[!UICONTROL Output format]** any number of times and in any order to achieve the desired string output.
+
+| Output placeholder sequence | Description |
+| --- | --- |
+| `$&` | Outputs what matched the whole expression. |
+| `$n` | Outputs what matched the nth sub-expression. For example, `$1` outputs the first sub-expression. |
+| ``$` `` | Outputs the text between the end of the last match found (or the start of the text if no previous match was found), and the start of the current match. |
+| `$+` | Outputs what matched the last marked sub-expression in the regular expression. |
+| `$$` | Outputs the string character `"$"`. |
