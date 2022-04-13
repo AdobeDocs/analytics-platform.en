@@ -22,7 +22,7 @@ Take a part of a string based on its position to the beginning or end of a strin
 * **[!UICONTROL String]**: Match a character or sequence of characters to indicate the beginning or end of a string. This dropdown also reveals additional options:
   * **[!UICONTROL Match]**: The string to match. If the input has no match with this field, [No value options](no-value-options.md) apply.
   * **[!UICONTROL Index]**: The **[!UICONTROL Match]** criteria can be present multiple times in a string. This integer determines which match to start or end the output, depending on the method. For example, an index of `1` represents the first match. If the index is higher than the number of matches available, [No value options](no-value-options.md) apply.
-  * **[!UICONTROL Include String]**: A checkbox where, if enabled, includes the **[!UICONTROL Match]** string in the output.
+  * **[!UICONTROL Include String]**: A checkbox that includes the **[!UICONTROL Match]** string in the output if enabled.
 * **[!UICONTROL Length]**: An integer that specifies the character count to include after the starting position of the output. Only available under the **[!UICONTROL To]** dropdown.
 
 ## Delimiter
@@ -43,7 +43,7 @@ For use with fields that contain URLs. Using the example URL `https://example.co
 * **[!UICONTROL Get protocol]**: Get the URL's protocol. For example, `"https://"`.
 * **[!UICONTROL Get host]**: Get the URL's host. For example, `"example.com"`.
 * **[!UICONTROL Get path]**: Get the URL's path. For example, `"store/index.html"`.
-* **[!UICONTROL Get query string value]** Get the value from a single query string. Place the desired query string parameter in the **[!UICONTROL Query key]** field. If the above URL is used with the `"cid"` query key, the output is `"campaign"`.
+* **[!UICONTROL Get query string value]**: Get the value from a single query string. Place the desired query string parameter in the **[!UICONTROL Query key]** field. If the above URL is used with the `"cid"` query key, the output is `"campaign"`.
 * **[!UICONTROL Get hash value]**: Get the URL's hash value. For example, `"cart"`.
 
 If the input is not a valid URL or if the desired URL component is not present, [No value options](no-value-options.md) apply.
@@ -52,16 +52,16 @@ If the input is not a valid URL or if the desired URL component is not present, 
 
 Trim white space or special characters from the string.
 
-* **[!UICONTROL Trim whitespaces]**: A checkbox where, if enabled, removes all whitespace at the beginning and end of the string.
-* **[!UICONTROL Trim special characters]**: A checkbox where, if enabled, reveals a **[!UICONTROL Special characters]** input field. All characters in this field are stripped from the output. Multi-byte characters are not supported.
+* **[!UICONTROL Trim whitespaces]**: A checkbox that removes all whitespace at the beginning and end of the string if enabled.
+* **[!UICONTROL Trim special characters]**: A checkbox that reveals a **[!UICONTROL Special characters]** input field if enabled. All characters in this field are stripped from the output. Multi-byte characters are not supported.
 
 ## Regex
 
 Apply regular expressions to a dimension to retrieve the desired value.
 
 * **[!UICONTROL Regex]**: The regular expression formula.
-* **[!UICONTROL Output format]**: An optional field that lets you add text or reorder the regex sub-group output. If this field is blank, the string output is the evaluated regex expression.
-* **[!UICONTROL Case sensitive]**: A checkbox where, if enabled, forces the regular expression to be case sensitive.
+* **[!UICONTROL Output format]**: An optional field that lets you add text or reorder the regex subgroup output. If this field is blank, the string output is the evaluated regex expression.
+* **[!UICONTROL Case sensitive]**: A checkbox that forces the regular expression to be case-sensitive if enabled.
 
 CJA uses a subset of the Perl regex syntax. If the input does not match the regular expression and the **[!UICONTROL Output format]** is blank, [No value options](no-value-options.md) apply. The following expressions are supported:
 
@@ -81,7 +81,7 @@ CJA uses a subset of the Perl regex syntax. If the input does not match the regu
 | `\s` | Any whitespace character. |
 | `\S` | Any non-whitespace character. |
 | `\d` | Any digit. |
-| `\D` | Any non-digit. |
+| `\D` | Any non digit. |
 | `\w` | Any letter, number, or underscore. |
 | `\W` | Any non-word character. |
 | `\b` | Any word boundary. |
@@ -102,7 +102,7 @@ Output placeholders are also supported. You can use these sequences in the **[!U
 | Output placeholder sequence | Description |
 | --- | --- |
 | `$&` | Outputs what matched the whole expression. |
-| `$n` | Outputs what matched the nth sub-expression. For example, `$1` outputs the first sub-expression. |
+| `$n` | Outputs what matched the nth sub expression. For example, `$1` outputs the first sub expression. |
 | ``$` `` | Outputs the text between the end of the last match found (or the start of the text if no previous match was found), and the start of the current match. |
-| `$+` | Outputs what matched the last marked sub-expression in the regular expression. |
+| `$+` | Outputs what matched the last marked sub expression in the regular expression. |
 | `$$` | Outputs the string character `"$"`. |
