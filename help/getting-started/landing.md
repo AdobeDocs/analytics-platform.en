@@ -36,8 +36,8 @@ You can
 | ... More | Lets you [!UICONTROL View Tutorials], and [Edit user preferences](/help/analysis-workspace/user-preferences.md). |
 | **[!UICONTROL Create new]** modal is back | When you click **[!UICONTROL Create new]** in Workspace, you once again get the choice between a [!UICONTROL Blank project] and a [!UICONTROL Blank mobile scorecard]. You can also choose from any templates your company has created. | 
 | [!UICONTROL Show less/more] | Toggles between not showing and showing the banner: ![Top banner](assets/top-banner.png) |
-| [!UICONTROL Blank project] | Creates a blank [Workspace project](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=en) for you to populate. |
-| [!UICONTROL Blank mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=en) for you to populate. |
+| [!UICONTROL Blank project] | Creates a blank [Workspace project](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) for you to populate. |
+| [!UICONTROL Blank mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) for you to populate. |
 | [!UICONTROL Open Training Tutorial] | Opens the Workspace training tutorial that guides new users through building a project in a step-by-step fashion.|
 | [!UICONTROL Open release notes] | Opens the latest Adobe Experience Cloud release notes. |
 | Filter icon | You can filter on tags, report suites, owners, types, and other filters (Mine, Shared with me, Favorites, and Approved)  |

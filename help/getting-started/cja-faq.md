@@ -15,7 +15,7 @@ feature: FAQ
 | --- | --- |
 | Do I need [!UICONTROL Private Device Graph] or [!UICONTROL Device Coop] for [!UICONTROL Customer Journey Analytics]? | No, [!UICONTROL Private Device Graph] or [!UICONTROL Device Coop] are not required for [!UICONTROL Customer Journey Analytics]. In fact, they are not yet supported. |
 | Do I need [!UICONTROL Experience Cloud ID] (ECID) for [!UICONTROL Customer Journey Analytics]? | No, [!UICONTROL Customer Journey Analytics] supports any ID in a dataset, whether that's [!UICONTROL ECID] or any other ID you choose. |
-| What if I need to ETL (Extract, Transform, Load) my data prior to [!UICONTROL Customer Journey Analytics]? | Customer Journey Analytics includes [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html) capabilities to help transform your data before putting it into Adobe Experience Platform data lake. If you need ETL after the data has already been ingested, [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html?lang=en#queries) provides some limited options, although there may be extra fees involved. |
+| What if I need to ETL (Extract, Transform, Load) my data prior to [!UICONTROL Customer Journey Analytics]? | Customer Journey Analytics includes [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html) capabilities to help transform your data before putting it into Adobe Experience Platform data lake. If you need ETL after the data has already been ingested, [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html#queries) provides some limited options, although there may be extra fees involved. |
 
 {style="table-layout:auto"}
 
@@ -25,8 +25,8 @@ feature: FAQ
 | --- | --- |
 | Can [!UICONTROL Customer Journey Analytics] "stitch" across devices or across datasets? | Yes. [!UICONTROL Customer Journey Analytics] has a stitching solution called [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) (CCA). It lets you re-key a dataset’s person ID, which enables a seamless combination of multiple datasets. |
 | Is stitching from anonymous behavior to authenticated behavior supported? | Yes. [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) looks at user data from both authenticated and unauthenticated sessions to generate a stitched ID. |
-| How does 'replay' work in CCA? | CCA “replays” data based on unique identifiers it has learned. Replay causes new devices to the connection to become stitched. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=en#step-1%3A-live-stitching) |
-| How does stitching historical data (backfill) work in CCA? | When first turned on, Adobe provides a backfill of stitched data that goes back as far as the beginning of the previous month (up to 60 days.) In order to do this backfill, the transient ID must exist in the unstitched data that far back in time. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#enable-cross-channel-analytics) |
+| How does 'replay' work in CCA? | CCA “replays” data based on unique identifiers it has learned. Replay causes new devices to the connection to become stitched. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html#step-1%3A-live-stitching) |
+| How does stitching historical data (backfill) work in CCA? | When first turned on, Adobe provides a backfill of stitched data that goes back as far as the beginning of the previous month (up to 60 days.) In order to do this backfill, the transient ID must exist in the unstitched data that far back in time. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#enable-cross-channel-analytics) |
 
 {style="table-layout:auto"}
 
@@ -79,7 +79,7 @@ When it comes to data deletion, we are concerned with 6 types of components: san
 
 ## 7. Considerations when merging report suites in CJA {#merge-reportsuite}
 
-If you plan to ingest Adobe Analytics data through the [Adobe Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en), consider these ramifications when merging 2 or more Adobe Analytics report suites.
+If you plan to ingest Adobe Analytics data through the [Adobe Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html), consider these ramifications when merging 2 or more Adobe Analytics report suites.
 
 | Issue | Consideration |
 | --- | --- |
@@ -124,9 +124,9 @@ You may need to know how many rows of data you currently have in [!UICONTROL Cus
 
 1. To remedy this situation, you have several options:
 
-    * Change your [data retention settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=en#set-rolling-window-for-connection-data-retention).
-    * [Delete any unused connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components).
-    * [Delete a dataset in AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components).
+    * Change your [data retention settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#set-rolling-window-for-connection-data-retention).
+    * [Delete any unused connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
+    * [Delete a dataset in AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
     * Contact your Adobe Account Manager to license additional capacity. 
 
 ## 10. Regarding usage overages {#overage}
@@ -145,4 +145,4 @@ In some cases, you may notice that the total number of events ingested by your c
 
 1. In addition, if we check in [!UICONTROL Adobe Experience Platform], there is no dataset with Id "5f21c12b732044194bffc1d0", hence someone deleted this particular dataset from [!UICONTROL Adobe Experience Platform] when the initial connection was being created. Later it got added to Customer Journey Analytics again, but a different [!UICONTROL Platform Dataset ID] was generated by [!UICONTROL Adobe Experience Platform]. 
 
-Read more about the [implications of dataset and connection deletion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components) in [!UICONTROL Customer Journey Analytics] and [!UICONTROL Adobe Experience Platform].
+Read more about the [implications of dataset and connection deletion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components) in [!UICONTROL Customer Journey Analytics] and [!UICONTROL Adobe Experience Platform].

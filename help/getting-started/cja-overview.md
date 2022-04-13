@@ -30,7 +30,7 @@ The initial release of Customer Journey Analytics includes many of the features 
 
 ## Comparing CJA to Cross-Device Analytics
 
-[Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) integrates with [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en), utilizing either the Co-op Graph or Private Graph, to identify how digital devices map to people. It is available for Adobe Analytics Ultimate customers.
+[Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) integrates with [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html), utilizing either the Co-op Graph or Private Graph, to identify how digital devices map to people. It is available for Adobe Analytics Ultimate customers.
 
 CJA, on the other hand, integrates with Adobe Experience Platform datasets and enables cross-channel analysis in Analysis Workspace. Although CJA does not yet integrate with the Co-op or Private identity graphs, you can "bring your own ID" to join datasets together. Those datasets can go beyond digital data to include both online and offline touchpoints. CJA prerequisites are covered in more detail below.
 
@@ -66,7 +66,7 @@ To create connections, add datasets, etc., you need the following permissions in
   * View Identity Namespaces
   * View Datasets
   
-For more information on Experience Platform permissions, see [Access control in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en).
+For more information on Experience Platform permissions, see [Access control in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
 
 >[!NOTE]
 >
@@ -92,14 +92,14 @@ Several features in CJA have been renamed, when compared to traditional Adobe An
 
 Customer Journey Analytics is one capability among many that rely on the Adobe Experience Platform. Several other capabilities, also built on Experience Platform, let you get the most out of your data.
 
-Adobe Experience Platform lets you centralize and standardize customer data and content from any system and apply data science and machine learning to improve the design and delivery of personalized experiences. Customer data in the platform is stored as datasets,which consist of a schema and batches of data. For more detail on the platform, see [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
+Adobe Experience Platform lets you centralize and standardize customer data and content from any system and apply data science and machine learning to improve the design and delivery of personalized experiences. Customer data in the platform is stored as datasets,which consist of a schema and batches of data. For more detail on the platform, see [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html).
 
 From Data Ingestion to direct SQL access, several components of the Experience Platform are central to Customer Journey Analytics and act in conjunction with it:
 
-* [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en): Use standard SQL to retrieve data from Adobe Experience Platform, such as Adobe solution data, customer 1st-party data, or any other Platform data. It is a server-less tool that allows you to join any datasets and capture the query results as a new dataset for use in reporting, Data Science Workspace, or for ingestion into Profile Service. You can use Query Service to build data analysis ecosystems, creating a picture of consumers across their various interaction channels. These channels might include Point-of-Sale systems, Web, Mobile, CRM systems, etc.
-* [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en):
-* [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en):
-* [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en) in "developer" option: you can use prebuilt artificial intelligence (AI) and machine-learning models in Adobe Experience Platform to influence various points of the customer journey. By unearthing hidden insights, you can make better predictions across the customer journey, suggest recommended best next steps, or automate cumbersome processes.
+* [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html): Use standard SQL to retrieve data from Adobe Experience Platform, such as Adobe solution data, customer 1st-party data, or any other Platform data. It is a server-less tool that allows you to join any datasets and capture the query results as a new dataset for use in reporting, Data Science Workspace, or for ingestion into Profile Service. You can use Query Service to build data analysis ecosystems, creating a picture of consumers across their various interaction channels. These channels might include Point-of-Sale systems, Web, Mobile, CRM systems, etc.
+* [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html):
+* [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html):
+* [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html) in "developer" option: you can use prebuilt artificial intelligence (AI) and machine-learning models in Adobe Experience Platform to influence various points of the customer journey. By unearthing hidden insights, you can make better predictions across the customer journey, suggest recommended best next steps, or automate cumbersome processes.
 
 ## Videos
 

@@ -30,7 +30,7 @@ You have access to a lot more cross-channel data to analyze. For example, you ca
 
 CJA gets its data from Adobe Experience Platform. Experience Platform lets you centralize and standardize customer data and content from any system or channel and applies data science and machine learning to improve the design and delivery of personalized experiences.
 
-Customer data in the Experience Platform is stored as datasets, which consist of a [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=en) and batches of data. For more detail on the platform, see [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
+Customer data in the Experience Platform is stored as datasets, which consist of a [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html) and batches of data. For more detail on the platform, see [Adobe Experience Platform Architecture Overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html).
 
 Your CJA Admin establishes [connections](/help/connections/create-connection.md) to data sets in Experience Platform. They then build [data views](/help/data-views/data-views.md) using those connections. Data views are conceptually similar to virtual report suites, and are the basis of reporting in CJA. Since Experience Platform sources all data for reporting, report suites no longer exist as a container for data.
 

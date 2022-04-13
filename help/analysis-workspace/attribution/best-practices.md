@@ -39,7 +39,7 @@ Let's say your hypothesis is "My First-touch channel has more impact on conversi
 
 **Example 2** 
 
-Your hypothesis might be: "In our industry (such as travel industry), the attribution window is 60 or 90 days, not 30 days, because customers do a lot of research before buying a product. You would then change your [lookback window](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=en#lookback-windows) to 90 days. 
+Your hypothesis might be: "In our industry (such as travel industry), the attribution window is 60 or 90 days, not 30 days, because customers do a lot of research before buying a product. You would then change your [lookback window](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#lookback-windows) to 90 days. 
 
 ## Step 3: Use Algorithmic attribution
 

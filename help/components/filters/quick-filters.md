@@ -9,7 +9,7 @@ exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 
 You can create quick filters within a project to bypass the complexity of the full [Filter Builder](/help/components/filters/create-filters.md). Quick filters
 
-* Apply as [project-only filters](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=en#project-only).
+* Apply as [project-only filters](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html#project-only).
 * Allow for up to 3 rules
 * Do not accommodate nested containers, or sequential rules.
 
@@ -21,7 +21,7 @@ Here is a video on quick filters (note that it uses the term "quick segments" in
 
 ## Prerequisites {#prereqs}
 
-Anyone can create a quick filter. However, you need the Filter Creation permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) to be able to save a quick filters or to open it in the Filter Builder.
+Anyone can create a quick filter. However, you need the Filter Creation permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools) to be able to save a quick filters or to open it in the Filter Builder.
 
 ## Create quick filters {#create}
 
@@ -33,7 +33,7 @@ In a Freeform table, click the filter+ icon in the panel header:
 | --- | --- |
 | [!UICONTROL Name] | The default name of a filter is a combination of the rule names in the filter. You can rename the filter to a more friendly name. |
 | [!UICONTROL Include/exclude] | You can either include or exclude components in your filter definition, but not both. |
-| [!UICONTROL Hit/Visit/Visitor] container | Quick filters include one [filter container](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) only that lets you include a dimension/metric/date range in (or exclude it from) the filter. [!UICONTROL Visitor] contains overarching data specific for the visitor across visits and page views. A [!UICONTROL Visit] container lets you set rules to break down the visitor’s data based on visits, and a [!UICONTROL Hit] container lets you break down visitor information based on individual page views. The default container is [!UICONTROL Hit]. |
+| [!UICONTROL Hit/Visit/Visitor] container | Quick filters include one [filter container](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html#filter-containers) only that lets you include a dimension/metric/date range in (or exclude it from) the filter. [!UICONTROL Visitor] contains overarching data specific for the visitor across visits and page views. A [!UICONTROL Visit] container lets you set rules to break down the visitor’s data based on visits, and a [!UICONTROL Hit] container lets you break down visitor information based on individual page views. The default container is [!UICONTROL Hit]. |
 | [!UICONTROL Components] (Dimension/metric/date range) | Define up to 3 rules by adding components (dimensions, metrics, date ranges, or dimension values). There are 3 ways to find the right component:<ul><li>Start typing and the [!UICONTROL Quick Filter] builder automatically finds the appropriate component.</li><li>Use the drop-down list to find the component.</li><li>Drag and drop components from the left rail.</li></ul>  |
 | [!UICONTROL Operator] | Use the drop-down menu to find standard operators and [!UICONTROL Distinct Count] operators. See [Filter operators](operators.md). |
 | Plus (+) sign | Add another rule |
