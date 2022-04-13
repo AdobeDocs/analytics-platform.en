@@ -81,7 +81,7 @@ CJA uses a subset of the Perl regex syntax. If the input does not match the regu
 | `\s` | Any whitespace character. |
 | `\S` | Any non-whitespace character. |
 | `\d` | Any digit. |
-| `\D` | Any non digit. |
+| `\D` | Any non-digit. |
 | `\w` | Any letter, number, or underscore. |
 | `\W` | Any non-word character. |
 | `\b` | Any word boundary. |
