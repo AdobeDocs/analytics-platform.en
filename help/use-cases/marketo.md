@@ -3,8 +3,8 @@ title: Ingest B2B data into AEP and report in CJA
 description: Learn how to bring Marketo data into CJA
 solution: Customer Journey Analytics
 feature: Use Cases
+exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 ---
-
 # Ingest Marketo B2B data into AEP and report in CJA
 
 You can leverage the newly-available Marketo B2B datasets in Adobe Experience Platform (AEP) to provide valuable analytics and reporting solutions to B2B marketers. Then report on these datasets in Customer Journey Analytics (CJA.)
