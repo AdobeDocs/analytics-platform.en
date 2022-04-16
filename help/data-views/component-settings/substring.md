@@ -3,6 +3,7 @@ title: Substring component settings
 description: Use a subset of a string as dimension items.
 solution: Customer Journey Analytics
 feature: Data Views
+exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 ---
 # [!UICONTROL Substring] component settings
 
