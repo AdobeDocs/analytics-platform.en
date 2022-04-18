@@ -18,7 +18,8 @@ Analytics Select, Prime, and Ultimate customers are eligible to purchase this ad
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>New or Featured Items</b> </p> <p> 
      <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html"> Prepare to migrate from Adobe Analytics to Customer Journey Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html"> Adobe Analytics to Customer Journey Analytics evolution </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja-user.html"> CJA User Guide for Adobe Analytics users </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/binding-dimensions-metrics.html"> Using binding dimensions and metrics in CJA </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html"> Use Marketing channel dimensions in Adobe Experience Platform
  </a> </li>
