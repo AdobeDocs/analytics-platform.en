@@ -59,7 +59,7 @@ Here are the data elements that need to be present:
 * `audienceMembershipIdList` string field: The audience ID
 * Add a friendly name for the audience (`audienceMembershipIdName`), such as
 
-   ![Friendly audience name](assets/audience-name)
+   ![Friendly audience name](assets/audience-name.png)
 
 ## Step 5: Create a connection in CJA to this Profile dataset
 
