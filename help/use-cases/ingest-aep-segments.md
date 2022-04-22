@@ -11,7 +11,6 @@ feature: Use Cases
 >
 >This topic is under construction.
 
-
 (Brandon, fyi,  'Unified Profile' is an obsolete term for 'Real-time Customer Profile' - according to the AEP doc manager. You won't find any doc on UP in the AEP doc set.) 
 
 This use case explores an interim, manual way of bringing Adobe Experience Platform (AEP) audiences into CJA. These audiences might have been created in the AEP Segment Builder, or Adobe Audience Manager, or other tools, and are stored in Real-time Customer Profile (RTCP). The audiences consist of lists of Person IDs, Profile IDs, etc. and we want to bring them into CJA Workspace for analysis.
