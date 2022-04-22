@@ -70,7 +70,6 @@ Add `audienceMembershipIdName` and `personID` to the dataview.
 You can now report on `audienceMembershipIdName` and `personID` in Workspace.
 Screenshot would be great.
 
----
 To do:
 
 write up more steps for when you are dealing with people who are members of multiple audiences.
