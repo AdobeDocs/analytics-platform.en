@@ -3,8 +3,8 @@ title: Ingest AEP audiences into Customer Journey Analytics
 description: Explains how to ingest AEP audiences into Customer Journey Analytics for further analysis.
 solution: Customer Journey Analytics
 feature: Use Cases
+exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 ---
-
 # Ingest AEP audiences into Customer Journey Analytics (CJA)
 
 >[!NOTE]
@@ -77,7 +77,3 @@ Screenshot would be great.
 To do:
 
 write up more steps for when you are dealing with people who are members of multiple audiences.
-
-
-
-
