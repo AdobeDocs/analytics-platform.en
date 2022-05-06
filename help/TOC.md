@@ -199,7 +199,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Use binding dimensions and metrics](use-cases/binding-dimensions-metrics.md)
   + [(B2B) Add account-level data as a lookup dataset](use-cases/b2b.md)
   + [Ingest Marketo Engage data into AEP and report in CJA](use-cases/marketo.md)
-  + [Ingest AEM audiences into CJA](use-cases/ingest-aep-segments.md)
+  + [Ingest AEP audiences into CJA](use-cases/ingest-aep-segments.md)
   + [Analyze data across channels](use-cases/cross-channel.md)
   + [Import call center and web data](use-cases/call-center.md)
   + [Data ingestion use cases](use-cases/data-ingestion.md)
