@@ -36,7 +36,7 @@ Several other methods exist for applying filters to a project:
 
 | Action | Description |
 |--- |--- |
-|Create filter from selection|Create an inline filter. Select rows, right-click the selection, then create an inline filter. This filter applies only to the open project and is not saved as a CJA filter. 1. Select rows.  2. Right-click the selection.  3. Click *Create filter from selection*.|
+|Create filter from selection|Create an inline filter. This filter applies only to the open project and is not saved as a CJA filter.<p> 1. Select which table rows you want to be part of the filter.  2. Right-click the selection.  3. Click *Create filter from selection*.|
 |Components > New Filter|Displays the Filter Builder. See [Filter Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) for more information about filtering.|
 |Share > Share Project or Share > Curate Project Data|In [Curate and Share](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6), learn how filters that you apply to the project are available in shared analysis for the recipient.|
 |Use filters as dimensions|Video: Using Filters as Dimensions in Analysis Workspace|
