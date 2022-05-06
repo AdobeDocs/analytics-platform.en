@@ -7,31 +7,33 @@ exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 ---
 # Ingest AEP audiences into Customer Journey Analytics (CJA)
 
->[!NOTE]
->
->This topic is under construction.
-
 This use case explores an interim, manual way of bringing Adobe Experience Platform (AEP) audiences into CJA. These audiences might have been created in the AEP Segment Builder, or Adobe Audience Manager, or other tools, and are stored in Real-time Customer Profile (RTCP). The audiences consist of a set of Profile IDs, along with any applicable attributes/events/etc. and we want to bring them into CJA Workspace for analysis.
 
 ## Prerequisites
 
-* Access to Adobe Experience Platform (AEP), specifically Real-time Customer Profile.  Also access to create/manage AEP schemas and datasets.
-* Access to AEP Query Service (and the ability to write SQL) or a different tool to perform some light transformations
-* Access to Customer Journey Analytics (need to be a CJA product admin, in order to create/modify CJA connections and data views)
+* Access to Adobe Experience Platform (AEP), specifically Real-time Customer Profile.
+* Access to create/manage AEP schemas and datasets.
+* Access to AEP Query Service (and the ability to write SQL) or a different tool to perform some light transformations.
+* Access to Customer Journey Analytics. You need to be a CJA product admin in order to create/modify CJA connections and data views.
 * Ability to use the Adobe APIs (Segmentation, optionally others)
 
 ## Step 1: Choose audience(s) in Real-time Customer Profile {#audience}
 
-Adobe Experience Platform [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCP) lets you see a holistic view of each individual customer by combining data from multiple channels, including online, offline, CRM, and third party. You likely already have audiences in RTCP that may have come from various sources. Pick one or more audiences to ingest into CJA.
+Adobe Experience Platform [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCP) lets you see a holistic view of each individual customer by combining data from multiple channels, including online, offline, CRM, and third party. 
+
+You likely already have audiences in RTCP that may have come from various sources. Pick one or more audiences to ingest into CJA.
 
 ## Step 2: Create a Profile Union dataset for the export
 
 In order to export the audience to a dataset that can eventually be added to a connection in CJA, you need to create a dataset whose schema is a Profile [Union schema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=en#understanding-union-schemas).
+
 Union schemas are composed of multiple schemas that share the same class and have been enabled for Profile. The union schema enables you to see an amalgamation of all of the fields contained within schemas sharing the same class. Real-time Customer Profile uses the union schema to create a holistic view of each individual customer.
 
 ## Step 3: Export an audience to the Profile Union dataset via API call {#export}
 
-Before you can bring an audience into CJA, you need to export it to an AEP dataset. This can only be done using the Segmentation API, and specifically the [Export Jobs API Endpoint](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=en). You can create an export job using the audience ID of your choice, and put the results in the Profile Union AEP dataset you created in Step 2.  Although you can export various attributes/events for the audience, you only need to export the specific profile ID field that matches the person ID field used in the CJA connection you will be leveraging (see below in Step 5).
+Before you can bring an audience into CJA, you need to export it to an AEP dataset. This can only be done using the Segmentation API, and specifically the [Export Jobs API Endpoint](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=en). 
+
+You can create an export job using the audience ID of your choice, and put the results in the Profile Union AEP dataset you created in Step 2. Although you can export various attributes/events for the audience, you only need to export the specific profile ID field that matches the person ID field used in the CJA connection you will be leveraging (see below in Step 5).
 
 ## Step 4: Edit the export output 
 
@@ -61,13 +63,15 @@ Here are the data elements that need to be present:
    
 * Add other audience metadata if you desire.
 
-## Step 5: Add this Profile dataset to an existing connection in CJA (BG: you could create a new one, but 99% of the time customers are going to want to add it to an existing connection where they have their data already; the audience ids just "enrich" the existing data in CJA)
+## Step 5: Add this Profile dataset to an existing connection in CJA
+
+You could create a new connection, but most customers will want to add it to an existing connection. The audience IDs "enrich" the existing data in CJA.
 
 [Create a connection](/help/connections/create-connection.md)
 
 ## Step 6: Modify existing (or create new) CJA data view
 
-Add `audienceMembershipId`, `audienceMembershipIdName` and `personID` to the dataview.
+Add `audienceMembershipId`, `audienceMembershipIdName` and `personID` to the data view.
 
 ## Step 7: Report in Workspace
 
