@@ -61,9 +61,9 @@ On the right-hand side, you can now configure the dataset/s you have added.
 
 1. **[!UICONTROL Dataset type]**: For each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in. 
 
->[!IMPORTANT]
->
->    You need to add at least one event dataset as part of a connection.
+    >[!IMPORTANT]
+    >
+    >You need to add at least one event dataset as part of a connection.
 
 
     There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
