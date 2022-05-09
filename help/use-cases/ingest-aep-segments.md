@@ -37,7 +37,9 @@ You can create an export job using the audience ID of your choice, and put the r
 
 ## Step 4: Edit the export output 
 
-The results of the export job need to be transformed into a separate Profile dataset in order to be ingested into CJA.  This transformation can be done with AEP Query Service, or another transformation tool of your choice.  We only need the Profile ID (that will match the Person ID in CJA) and one or more audience ID(s) to do the reporting in CJA. The standard export job, however, contains more data and so we need to edit this output to remove extraneous data, as well as move some things around.  Also, you need to create a schema/dataset first before you add the transformed data to it.
+The results of the export job need to be transformed into a separate Profile dataset in order to be ingested into CJA.  This transformation can be done with [AEP Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en), or another transformation tool of your choice. We only need the Profile ID (that will match the Person ID in CJA) and one or more audience ID(s) to do the reporting in CJA.
+
+The standard export job, however, contains more data and so we need to edit this output to remove extraneous data, as well as move some things around.  Also, you need to create a schema/dataset first before you add the transformed data to it.
 
 Here is an example of the export output in the Profile union dataset, **before** any editing:
 
@@ -65,9 +67,7 @@ Here are the data elements that need to be present:
 
 ## Step 5: Add this Profile dataset to an existing connection in CJA
 
-You could create a new connection, but most customers will want to add it to an existing connection. The audience IDs "enrich" the existing data in CJA.
-
-[Create a connection](/help/connections/create-connection.md)
+You could [create a new connection](/help/connections/create-connection.md), but most customers will want to add the Profile dataset to an existing connection. The audience IDs "enrich" the existing data in CJA.
 
 ## Step 6: Modify existing (or create new) CJA data view
 
