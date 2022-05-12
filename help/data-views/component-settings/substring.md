@@ -108,6 +108,8 @@ Output placeholders are also supported. You can use these sequences in the **[!U
 | `$+` | Outputs what matched the last marked sub expression in the regular expression. |
 | `$$` | Outputs the string character `"$"`. |
 
-Here is a video on Binding Dimensions:
+## Video on binding dimensions
+
+Here is a video on binding dimensions:
 
 >[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
