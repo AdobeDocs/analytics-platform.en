@@ -18,7 +18,8 @@ Attribution AI supports 3 Experience Platform schemas: Experience Event, Adobe A
 
 Some of the steps are performed in Adobe Experience Platform prior to working with the output in CJA.
 
-### Download Attribution 
+### Download Attribution AI scores
+
 1. In Experience Platform, download Attribution AI scores, as described [here](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/getting-started.html?lang=en#downloading-attribution-ai-scores).
 1. In Experience Platform, create an Attribution AI instance by selecting and mapping data, defining events, and training your data, as described [here](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html).
 1. In CJA, 
