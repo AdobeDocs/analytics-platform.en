@@ -4,5 +4,7 @@ title: Integrate Customer AI with CJA
 role: Admin
 solution: Customer Journey Analytics
 ---
+
 # Integrate Customer AI with CJA
 
+bkbkbkb
