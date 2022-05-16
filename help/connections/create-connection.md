@@ -39,7 +39,7 @@ A new Connections workflow is being launched in Customer Journey Analytics (CJA)
     | Key | For lookup datasets only (such as _id). |
     | Matching Key | For lookup datasets only (such as _id). |
     | Import new data | Set to On or Off. |
-    | Backfill data	|  |
+    | Backfill data |  |
     | Backfill status | Indicates whether any backfill data is processing. |
 
 ## Add and configure datasets {#add-dataset}
@@ -57,7 +57,7 @@ The new workflow lets you add an Experience Platform dataset when you create a c
     | Setting | Description |
     | --- | --- |
     | Person ID | Select a person ID from the dropdown list of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID.<p>If there are no person IDs to choose from, that means one or more person IDs have not been defined in the schema. View this video on how to define an identity in Experience Platform. |
-    | Timestamp	| For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. |
+    | Timestamp | For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. |
     | Import new data | Select this option if you want to establish an ongoing connection, so that any new data batches that get added to the datasets in this connection automatically flow into Workspace. Can be set to On or Off. |
     | Dataset backfill | Click **[!UICONTROL Request backfill]** to backfill historical data.<ul><li>You can backfill each dataset individually.</li><li>We prioritize new data added to a dataset in the connection, so this new data has the lowest latency.</li><li>Any backfill (historical) data is imported at a slower rate. The latency is influenced by how much historical data you have.</li><li>The Adobe Analytics Source Connector imports up to 13 months of data, irrespective of size.</li></ul> |
     | Backfill status | Possible status indicators are:<ul><li>Success</li><li>X backfill(s) processing</li><li>Off</li></ul> |
