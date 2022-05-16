@@ -40,7 +40,7 @@ A new Connections workflow is being launched in Customer Journey Analytics (CJA)
     | Matching Key | For lookup datasets only (such as _id). |
     | Import new data | Set to On or Off. |
     | Backfill data	|  |
-    | Backfill status: Indicates whether any backfill data is processing. |
+    | Backfill status | Indicates whether any backfill data is processing. |
 
 ## Add and configure datasets {#add-dataset}
 
