@@ -7,88 +7,93 @@ feature: Connections
 ---
 # Create a connection
 
-A connection lets you integrate datasets from [!DNL Adobe Experience Platform] into [!UICONTROL Workspace]. In order to report on [!DNL Experience Platform] datasets, you first have to establish a connection between datasets in [!DNL Experience Platform] and [!UICONTROL Workspace].
+A new Connections workflow is being launched in Customer Journey Analytics (CJA) in May 2022. Here is an overview of the new capabilities:
 
-Here is a video overview:
+* You can enable a rolling data retention window when you create the connection.
+* You can add to and remove datasets from a connection. (Removing a dataset removes it from the connection and impacts any associated data views and underlying Analysis Workspace projects.)
+* You can enable and request backfill data per dataset.
+* You can edit datasets, for example to request another backfill.
+* You can import existing data per dataset.
 
->[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12&learn=on)
+## Create and configure the connection {#create-connection}
 
-## Required permissions
+1. In CJA, click the Connections tab.
+1. Click Create new connection.
 
-To create a CJA Connection, you need the following permissions in [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
+    ![Connection settings](assets/create-conn1.png)
 
-Adobe Experience Platform:
-* Data Modeling: View Schemas, Manage Schemas
-* Data Management: View Datasets, Manage Datasets
-* Data Ingestion: Manage Sources
+1. Configure the connection settings.
 
-Customer Journey Analytics
-* Product Admin Access
+    | Setting | Description |
+    | --- | --- |
+    | Connection name | Enter a unique name for the connection. |
+    | Connection description | Describe the purpose of this connection. |
+    | Sandbox | Choose a sandbox in Experience Platform that contains the dataset/s to which you want to create a connection.<p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as “data silos” that contain data sets. Sandboxes are used to control access to data sets.<p>Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from.  |
+    | Enable rolling data window | This setting lets you define CJA data retention as a rolling window in months (1 month, 3 months, 6 months, etc.), at the connection level.<p>Data retention is based on event dataset timestamps and applies to event datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. However, if your connection includes any profile or lookup datasets (besides one or more event datasets), that data will be retained for the same time period.<p> The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost. |
+    | Add datasets (see below) | Add datasets if no datasets appear in your dataset listing. |
+    | Dataset name | Select one or more dataset(s) you want to pull into Customer Journey Analytics and click **[!UICONTROL Add]**.<p>(If you have a lot of datasets to choose from, you can search for the right one(s) using the Search datasets search bar above the list of datasets.) |
+    | Last updated | For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. "N/A" means that this dataset contains no data. |
+    | Schema | This is the [schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) based on which the dataset was created in Adobe Experience Platform. |
+    | Dataset type | For each dataset that you added to this connection, Customer Journey Analytics automatically sets the dataset type based on the data coming in. There are 3 different dataset types: Event data, Profile data, and Lookup data. See the table below for an explanation of dataset types. |
+    | Person ID | Select a person ID from the dropdown list of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID.<p>IMPORTANT: If there are no person IDs to choose from, that means one or more person IDs have not been defined in the schema. View [this video](https://www.youtube.com/watch?v=G_ttmGl_LRU) on how to define an identity in Experience Platform. |
+    | Key | For lookup datasets only (such as _id). |
+    | Matching Key | For lookup datasets only (such as _id). |
+    | Import new data | Set to On or Off. |
+    | Backfill data	|  |
+    | Backfill status: Indicates whether any backfill data is processing. |
+
+## Add and configure datasets {#add-dataset}
+
+The new workflow lets you add an Experience Platform dataset when you create a connection. 
+
+1. In the Connection settings dialog, click **[!UICONTROL Add datasets]**.
+1. Select one or more datasets and click **[!UICONTROL Next]**. 
+
+    Note that at least one event dataset needs to be part of the connection.
+1. Now configure the datasets one by one.
+
+    ![Configure datasets](assets/add-dataset.png)
+
+    | Setting | Description |
+    | --- | --- |
+    | Person ID | Select a person ID from the dropdown list of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID.<p>If there are no person IDs to choose from, that means one or more person IDs have not been defined in the schema. View this video on how to define an identity in Experience Platform. |
+    | Timestamp	| For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. |
+    | Import new data | Select this option if you want to establish an ongoing connection, so that any new data batches that get added to the datasets in this connection automatically flow into Workspace. Can be set to On or Off. |
+    | Dataset backfill | Click **[!UICONTROL Request backfill]** to backfill historical data.<ul><li>You can backfill each dataset individually.</li><li>We prioritize new data added to a dataset in the connection, so this new data has the lowest latency.</li><li>Any backfill (historical) data is imported at a slower rate. The latency is influenced by how much historical data you have.</li><li>The Adobe Analytics Source Connector imports up to 13 months of data, irrespective of size.</li></ul> |
+    | Backfill status | Possible status indicators are:<ul><li>Success</li><li>X backfill(s) processing</li><li>Off</li></ul> |
+    | Dataset ID | This ID is automatically generated. |
+    | Description | The description given to this dataset when it was created. |
+    | Dataset size | The dataset’s size. |
+    | Schema | This is the schema based on which the dataset was created in Adobe Experience Platform. |
+    | Dataset | The name of the dataset. |
+    | Preview: `<dataset name>` | Previews the dataset with date, my ID and Identifier columns. |
+    | Remove | Remove this dataset from the connection. |
+
+## Connection preview {#preview}
+
+To preview the connection that you have created, click **[!UICONTROL Connection preview]** in the Connection settings dialog.
+
+![Connection preview](assets/create-conn4.png)
+
+This preview contains a number of columns listing the connection configuration. What column types are shown depends on your individual datasets.
+
+## Dataset types {#dataset-types}
+
+For each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in. 
 
 >[!IMPORTANT]
 >
->You can combine multiple [!DNL Experience Platform] datasets into a single connection.
+>You need to add at least one event dataset as part of a connection.
 
-## Select sandbox and datasets
+There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
 
-1. Go to [https://analytics.adobe.com](https://analytics.adobe.com) and sign in with your Adobe ID.
+|Dataset Type|Description|Timestamp|Schema|Person ID|
+|---|---|---|---|---|
+| [!UICONTROL Event] | Data that represents events in time (e.g., web visits, interactions, transactions, POS data, survey data, ad impression data, etc.). For example, this could be typical clickstream data, with a customer ID or a cookie ID, and a timestamp. With Event data, you have flexibility as to which ID is used as the Person ID. |Is automatically set to the default timestamp field from event-based schemas in [!UICONTROL Experience Platform]. | Any built-in or custom schema that is based on an XDM class with the "Time Series" behavior. Examples include "XDM Experience Event" or "XDM Decision Event." | You can pick which Person ID you want to include. Each dataset schema defined in the Experience Platform can have its own set of one or more identities defined and associated with an Identity Namespace. Any of these can be used as the Person ID. Examples include Cookie ID, Stitched ID, User ID, Tracking Code, etc. |
+| [!UICONTROL Lookup] | This data is used to look up values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names. See [this use case](/help/use-cases/b2b.md) for an example. | N/A | Any built-in or custom schema that is based on an XDM class with the "Record" behavior, except for the "XDM Individual Profile" class. | N/A |
+| [!UICONTROL Profile] | Data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. For example, allows you to upload CRM data about your customers. | N/A | Any built-in or custom schema that is based on the "XDM Individual Profile" class. | You can pick which Person ID you want to include. Each dataset defined in the [!DNL Experience Platform] has its own set of one or more Person IDs defined, such as Cookie ID, Stitched ID, User ID, Tracking Code, etc.<br>![Person ID](assets/person-id.png)**Note**: If you create a connection that includes datasets with different IDs, the reporting will reflect that. To really merge datasets, you need use the same Person ID. |
 
-1. Click the [!DNL Customer Journey Analytics] icon.
-
-1. Click the **[!UICONTROL Connections]** tab.
-
-1. Click **[!UICONTROL Create new connection]** on the top right.
-
-    ![Create connection](assets/create-connection0.png)
-
-1. Choose a sandbox in Experience Platform that contains the dataset/s to which you want to create a connection. 
-
-    Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain data sets. Sandboxes are used to control access to data sets.  Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from. 
-
-    >[!IMPORTANT]
-    >
-    >You cannot access data across sandboxes, i.e., you can only combine datasets that are located within the same sandbox. 
-
-1. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**.
-
-    (If you have a lot of datasets to choose from, you can search for the right one(s) using the **[!UICONTROL Search datasets]** search bar above the list of datasets.)
-
-## Configure dataset
-
-On the right-hand side, you can now configure the dataset/s you have added.
-
-   ![Configure dataset](assets/create-connection.png)
-
-1. **[!UICONTROL Dataset type]**: For each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in. 
-
-    >[!IMPORTANT]
-    >
-    >You need to add at least one event dataset as part of a connection.
-
-
-    There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
-
-    |Dataset Type|Description|Timestamp|Schema|Person ID|
-    |---|---|---|---|---|
-    | [!UICONTROL Event] | Data that represents events in time (e.g., web visits, interactions, transactions, POS data, survey data, ad impression data, etc.). For example, this could be typical clickstream data, with a customer ID or a cookie ID, and a timestamp. With Event data, you have flexibility as to which ID is used as the Person ID. |Is automatically set to the default timestamp field from event-based schemas in [!UICONTROL Experience Platform]. | Any built-in or custom schema that is based on an XDM class with the "Time Series" behavior. Examples include "XDM Experience Event" or "XDM Decision Event." | You can pick which Person ID you want to include. Each dataset schema defined in the Experience Platform can have its own set of one or more identities defined and associated with an Identity Namespace. Any of these can be used as the Person ID. Examples include Cookie ID, Stitched ID, User ID, Tracking Code, etc. |
-    | [!UICONTROL Lookup] | This data is used to look up values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names. See [this use case](/help/use-cases/b2b.md) for an example. | N/A | Any built-in or custom schema that is based on an XDM class with the "Record" behavior, except for the "XDM Individual Profile" class. | N/A |
-    | [!UICONTROL Profile] | Data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. For example, allows you to upload CRM data about your customers. | N/A | Any built-in or custom schema that is based on the "XDM Individual Profile" class. | You can pick which Person ID you want to include. Each dataset defined in the [!DNL Experience Platform] has its own set of one or more Person IDs defined, such as Cookie ID, Stitched ID, User ID, Tracking Code, etc.<br>![Person ID](assets/person-id.png)**Note**: If you create a connection that includes datasets with different IDs, the reporting will reflect that. To really merge datasets, you need use the same Person ID. |
-
-1. **[!UICONTROL Dataset ID]**: This ID is automatically generated.
-
-1. **[!UICONTROL Time stamp]**: For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in [!UICONTROL Experience Platform].
-
-1. **[!UICONTROL Schema]**: This is the [schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) based on which the dataset was created in Adobe Experience Platform.
-
-1. **[!UICONTROL Person ID]**: Select a person ID from the dropdown list of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID. 
-
-    >[!IMPORTANT]
-    >
-    >If there are no person IDs to choose from, that means one or more person IDs have not been defined in the schema. View [this video](https://youtu.be/G_ttmGl_LRU) on how to define an identity in Experience Platform.
-
-1. Click **[!UICONTROL Next]** to go to the [!UICONTROL Enable Connection] dialog.
-
-### Use Identity Map as a Person ID
+## Use Identity Map as a Person ID {#id-map}
 
 Customer Journey Analytics now supports the ability to use the Identity Map for its Person ID. Identity Map is a map data structure that allows someone to upload key -> value pairs. The keys are identity namespaces and the value is a structure that holds the identity value. The Identity Map exists on each row/event uploaded and is populated for each row accordingly.
 
@@ -103,7 +108,7 @@ If you select Identity Map, you get two additional configuration options:
 | [!UICONTROL Use Primary ID Namespace] | This instructs CJA, per row, to find the identity in the Identity Map that is marked with a primary=true attribute and use that as the Person ID for that row. This means that this is the primary key that will be used in Experience Platform for partitioning. It is also the prime candidate for usage as CJA's visitor ID (depending on how the dataset is configured in a CJA Connection).|
 | [!UICONTROL Namespace] | (This option is only available if you do not use the Primary ID Namespace.) Identity namespaces are a component of [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html) that serve as indicators of the context to which an identity relates. If you specify a namespace, CJA will search each row's Identity Map for this namespace key and use the identity under that namespace as the person ID for that row. Note that since CJA cannot do a full dataset scan of all rows to determine which namespaces are actually present, all possible namespaces are listed in the dropdown. You need to know which namespaces are specified in the data; this cannot be auto-detected.|
 
-### Identity Map edge cases
+### Identity Map edge cases {#id-map-edge}
 
 This table shows the two configuration options when edge cases are present and how they are handled:
 
@@ -111,33 +116,6 @@ This table shows the two configuration options when edge cases are present and h
 |---|---|---|---|---|---|
 | **[!UICONTROL Use Primary ID Namespace] checked** | The row is dropped by CJA. | The row is dropped by CJA, as no primary ID is specified. | All IDs marked as primary, under all namespaces, are extracted into a list. They are then alphabetically sorted; with this new sorting, the first namespace with its first ID is used as the Person ID. | The single ID marked as primary is used as the Person ID. | Even though the namespace may be invalid (not present in AEP), CJA will use the primary ID under that namespace as the Person ID. |
 | **[!UICONTROL Specific Identity Map namespace] selected** | The row is dropped by CJA. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. (Only a valid namespace can be selected at Connection creation time, so it is not possible for an invalid namespace/ID to be used as Person ID) |
-
-## Enable connection
-
-![Enable connection](assets/create-connection2.png)
-
-1. To enable a connection, define these settings for the entire connection, i.e. all the datasets in the connection:
-
-    | Option | Description |
-    | --- | --- |
-    | [!UICONTROL Name Connection] | Give the connection a descriptive name. The connection cannot be saved without a name. |
-    | [!UICONTROL Description] | Add more detail to distinguish this connection from others. |
-    | [!UICONTROL Datasets] | The datasets that are included in this connection. |
-    | [!UICONTROL Automatically import all new datasets in this connection, beginning today.] |  Select this option if you want to establish an ongoing connection, so that any new data batches that get added to the datasets in this connection automatically flow into [!UICONTROL Workspace]. |
-    | [!UICONTROL Import all existing data] | When you select this option and save the connection, all of the existing (historical) data from [!DNL Experience Platform] for all datasets in this connection will be imported or backfilled. In the future, all existing historical data for any new dataset(s) added to this saved connection will also be automatically imported. See also [Backfill historical data](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) below.<br>**Note that, once this connection is saved, this setting cannot be changed.** |
-    | [!UICONTROL Average number of daily events] | You are required to specify the average number of daily events to be imported (new data **and** backfill data) for all the datasets in the connection. Select one option from the drop-down menu. This is so that Adobe can allocate sufficient space for this data.<br>If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) to find out.<br>See "Calculate the average number of daily events" below. |
-
-1. Click **[!UICONTROL Save and create data view]**. For documentation, see [create a data view](/help/data-views/create-dataview.md).
-
-### Backfill historical data
-
-**[!UICONTROL Import all existing data]** lets you backfill historical data. Keep this in mind:
-
-* We have removed the backfill (historical data import) limitation. Previously, you could backfill a maximum of 2.5 billion rows on your own and otherwise required engineering involvement. Now, you can backfill data on your own, without any limitations.
-* We prioritize new data added to a dataset in the connection, so this new data has the lowest latency.
-* Any backfill (historical) data is imported at a slower rate. The latency is influenced by how much historical data you have, combined with the **[!UICONTROL Average number of daily events]** setting you selected. For example, if you have more than one billion rows of data per day, plus 3 years of historical data, that could take multiple weeks to import. On the other hand, if you have less than a million rows per day and one week of historical data, that would take less than an hour.
-* Backfilling applies to the whole connection, not to each dataset individually.
-* The [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) imports up to 13 months of data, irrespective of size.
 
 ### Calculate the average number of daily events
 

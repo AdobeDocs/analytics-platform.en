@@ -32,6 +32,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Deletion implications](getting-started/cja-deletion.md)
   + [CJA glossary](getting-started/cja-glossary.md)
 + Connections {#cja-connections}
+  + [Connections overview](connections/overview.md)
   + [Create a connection](connections/create-connection.md)
   + [Manage connections](connections/manage-connections.md)
   + [Combined event datasets](connections/combined-dataset.md)
