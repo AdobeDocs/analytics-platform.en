@@ -3,8 +3,8 @@ title: CJA Connections overview
 description: Learn about connections in Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Connections
+exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 ---
-
 # Connections overview
 
 A connection lets you integrate datasets from [!DNL Adobe Experience Platform] into [!UICONTROL Workspace]. In order to report on [!DNL Experience Platform] datasets, you first have to establish a connection between datasets in [!DNL Experience Platform] and [!UICONTROL Workspace].
@@ -28,4 +28,3 @@ Customer Journey Analytics
 >[!IMPORTANT]
 >
 >You can combine multiple [!DNL Experience Platform] datasets into a single connection.
-
