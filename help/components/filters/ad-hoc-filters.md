@@ -1,20 +1,20 @@
 ---
-description: Use ad-hoc filters in Analysis Workspace.
-title: Ad-hoc project filters
+description: Use ad hoc filters in Analysis Workspace.
+title: Ad hoc project filters
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
 ---
-# Ad-hoc project filters
+# Ad hoc project filters
 
-Ad-hoc project filters allow you to drag and drop any component directly into the panel drop zone to create a filter. The filter becomes a [project-level filter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html) local to the current project. 
+Ad hoc project filters allow you to drag and drop any component directly into the panel drop zone to create a filter. The filter becomes a [project-level filter](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html) local to the current project. 
 
-Here is a video on creating ad-hoc project filters:
+Here is a video on creating ad hoc project filters:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
 
-1. 1. Drop any component type (dimension, dimension item, event, metric, segment, segment template, date range) into the filter drop zone at the top of a panel. Component types are auto-converted into ad-hoc filters or [Quick filters](/help/components/filters/quick-filters.md) if compatible.
+1. 1. Drop any component type (dimension, dimension item, event, metric, segment, segment template, date range) into the filter drop zone at the top of a panel. Component types are auto-converted into ad hoc filters or [Quick filters](/help/components/filters/quick-filters.md) if compatible.
 
    Here is an example of how to create a filter for the Twitter referring domain:
 
@@ -31,7 +31,7 @@ Keep in mind:
 * For full dimensions and events, Analysis Workspace creates "exists" hit filters. Examples: `Hit where eVar1 exists` or `Hit where event1 exists`.
 * If "unspecified" or "none" is dropped in the filter drop zone, it is automatically converted to a "does not exist" filter so that it is treated correctly in filtering.
 
-## Save ad-hoc project filters {#ad-hoc-save}
+## Save ad hoc project filters {#ad-hoc-save}
 
 You can choose to save these filters by following these steps:
 

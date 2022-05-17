@@ -99,7 +99,7 @@ After you have applied the filter, you can choose to add it to your filter compo
 
 ## What are project-only filters? {#project-only}
 
-Project-only filters are filters that only apply to the current project they were created in. They are not available in other projects and cannot be shared to other users. They are intended for quick exploration of your data without having to create and save a filter in the left rail. Project-only filters can be created in the panel drop zone either with Quick filters or [ad-hoc filters](/help/components/filters/ad-hoc-filters.md). 
+Project-only filters are filters that only apply to the current project they were created in. They are not available in other projects and cannot be shared to other users. They are intended for quick exploration of your data without having to create and save a filter in the left rail. Project-only filters can be created in the panel drop zone either with Quick filters or [ad hoc filters](/help/components/filters/ad-hoc-filters.md). 
 
 If you open a project-only filter in the [!UICONTROL Filter Builder], a project-only notification appears. If you do not check "Make this filter available.." and click **[!UICONTROL APPLY]**, the segment remains a project-only filter. 
 
