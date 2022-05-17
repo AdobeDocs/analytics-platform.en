@@ -18,8 +18,8 @@ feature: Release Notes
 | ----------- | ---------- | ----- |
 | New Connection edit and creation UI | This streamlined experience lets you backfill data at the dataset level, enable a rolling data retention window, add to and remove datasets from a connection. [Learn more](/help/connections/create-connection.md) | May 18, 2022 |
 | Report Builder for CJA updates | Includes features such as scheduling and data block manager. [Learn more] | May 18, 2022 |
-| Customer AI Integration | Lets you ingest Customer AI models scores in CJA for further analysis in CJA Analysis workspace. [Learn more] | May 25, 2022 |
-| Attribution AI Integration | Lets you ingest the Attribution AI models scores in CJA for further analysis in CJA Analysis workspace. [Learn more] | May 25, 2022 |
+| Customer AI Integration | Lets you ingest Customer AI models scores in CJA for further analysis in CJA Analysis workspace. [Learn more - to follow] | May 25, 2022 |
+| Attribution AI Integration | Lets you ingest the Attribution AI models scores in CJA for further analysis in CJA Analysis workspace. [Learn more - to follow] | May 25, 2022 |
 
 {style="table-layout:auto"}
 
