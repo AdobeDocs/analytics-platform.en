@@ -6,6 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 ---
+
 # Manage Data Blocks in Report Builder
 
 You can view and manage all data blocks in a workbook using the Data
@@ -16,7 +17,7 @@ data blocks.
 
 ![image](./assets/image52.png)
 
-### View Data Blocks
+## View Data Blocks
 
 Click **Manage** to view a list of all data blocks in a workbook.
 
@@ -27,7 +28,7 @@ The Data Block Manager lists all data blocks present in a workbook. 
 
 ![image](./assets/image52.png)
 
-### Sort the Data Blocks list
+## Sort the Data Blocks list
 
 You can sort the data block list by a displayed column. For example, you
 can sort the data block list by Report Suites, Filters, Date Range, and
@@ -37,7 +38,7 @@ To sort the data block list, click a column heading.
 
 ![image](./assets/image54.png)
 
-### Search the Data Block list
+## Search the Data Block list
 
 Use the Search field to locate anything in the data block table. For
 example, you could search for metrics contained in the data blocks or
@@ -46,7 +47,7 @@ modified, or the last run date.
 
 ![image](./assets/image55.png)
 
-### Edit multiple Data Blocks
+## Edit multiple Data Blocks
 
 You can edit the data view, date range, or the filters applied to one or
 more data blocks. You can also use the replace option.
@@ -69,7 +70,7 @@ or more data blocks.
 
  ![image](./assets/image59.png)
 
-### Refresh Data Blocks
+## Refresh Data Blocks
 
 Click the refresh icon to refresh the data blocks in the
 list.
@@ -82,18 +83,18 @@ refreshed data blocks.
 
 ![image](./assets/image512.png)
 
-### Delete a Data Block
+## Delete a Data Block
 
 Click the trash can icon to delete a selected data block.
 
-### Group Data Blocks
+## Group Data Blocks
 
 Click the column titles to group data blocks or select a column name
 from the **Group by** *Name* list.
 
 ![image](./assets/image514.png)
 
-### Modify the Data Block Manager view
+## Modify the Data Block Manager view
 
 You can modify which columns are visible in the Data Block Manager
 window.
