@@ -147,6 +147,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Select a Date Range](report-builder/select-date-range.md)
   + [Work with Filters](report-builder/work-with-filters.md)
   + [Filter Dimensions](report-builder/filter-dimensions.md)
+  + [Manage Data Blocks](report-builder/manage-reportbuilder.md)
   + [Report Builder Settings](report-builder/report-builder-settings.md)
 + Components {#cja-components}
   + [Components overview](components/overview.md)
@@ -217,5 +218,3 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Compare your Adobe Analytics data to CJA data](troubleshooting/compare.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
-
-  
