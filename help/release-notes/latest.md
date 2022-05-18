@@ -6,10 +6,6 @@ feature: Release Notes
 ---
 # Current Customer Journey Analytics (CJA) release notes (May 2022)
 
->[!NOTE]
->
->This page contains pre-release information that is subject to change.
-
 **Last update**: May 18, 2022
 
 ## Key features
