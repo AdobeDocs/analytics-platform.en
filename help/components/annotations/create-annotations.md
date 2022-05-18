@@ -7,10 +7,6 @@ exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
 ---
 # Create annotations
 
->[!NOTE]
->
->This feature is currently in limited testing.
-
 1. To create annotations, you have several ways to get started:
 
 | Creation method | Details |

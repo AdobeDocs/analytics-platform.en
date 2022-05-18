@@ -7,10 +7,6 @@ exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
 ---
 # View annotations
 
->[!NOTE]
->
->This feature is currently in limited testing.
-
 Annotations manifest slightly differently, depending on whether they span a single day or a date range.
 
 ## View annotations in Line charts or Tables
