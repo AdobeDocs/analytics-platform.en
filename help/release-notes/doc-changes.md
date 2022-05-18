@@ -11,6 +11,7 @@ The following updates were made to the CJA documentation since its inception.
 
 | Date | Update description |
 | --- | --- |
+| May 2022 | New article on [ingesting Adobe Experience Platform audiences into CJA](/help/use-cases/ingest-aep-segments.md) |
 | April 2022 | Documentation on [dimension substrings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html). |
 | April 2022 | New [CJA User Guide for Adobe Analytics users](/help/getting-started/aa-to-cja-user.md). |
 | March 2022 | New [CJA Annotations API documentation](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/). |
@@ -59,3 +60,5 @@ The following updates were made to the CJA documentation since its inception.
 | April 14, 2020| Updates to the latest UI in the [Create Connections](/help/connections/create-connection.md) topic. |
 | February 27, 2020 | Updates to the [Customer Journey Analytics feature support](/help/getting-started/cja-aa.md) page. |
 | December 2019 | First draft of CJA documentation |
+
+{style="table-layout:auto"}

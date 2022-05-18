@@ -107,3 +107,9 @@ Output placeholders are also supported. You can use these sequences in the **[!U
 | ``$` `` | Outputs the text between the end of the last match found (or the start of the text if no previous match was found), and the start of the current match. |
 | `$+` | Outputs what matched the last marked sub expression in the regular expression. |
 | `$$` | Outputs the string character `"$"`. |
+
+## Video on binding dimensions
+
+Here is a video on binding dimensions:
+
+>[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)

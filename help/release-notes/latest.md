@@ -4,22 +4,24 @@ description: Latest CJA release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 ---
-# Current Customer Journey Analytics (CJA) release notes (April 2022)
+# Current Customer Journey Analytics (CJA) release notes (May 2022)
 
->[!NOTE]
->
->This page contains pre-release information that is subject to change.
-
-**Last update**: April 19, 2022
+**Last update**: May 18, 2022
 
 ## Key features
 
 | Feature | Description | [Targeted Date](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Dimension substrings | Provides multiple methods to extract the desired part of a string for use as dimension items. This feature also allows you to treat a string dimension as an array if the string contains delimited values. [Learn more](../data-views/component-settings/substring.md) | April 20, 2022 |
-| Data prep for Analytics Source Connector | The [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) is now integrated with the [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) capabilities provided by Adobe Experience Platform. Adobe Real-Time Customer Data Platform (RTCDP), CJA and Adobe Journey Optimizer (AJO) customers can now extend the Analytics field group with additional field groups. They can also leverage 100+ Data Prep operators to enrich the Analytics data during ingestion into Adobe Experience Platform (AEP). RTCDP Customers can now enable multiple Data Prep-enabled report suites for Profile.<p>CJA customers who ingest multiple report suites via the Analytics Source Connector now have a means to deconflict column differences between report suites. For example, if "Search Term" is stored in `eVar1` in one report suite and in `eVar2` in another report suite, using Data Prep you can extend the Analytics field group with a new column that merges the values from the two eVars. | April 27, 2022 |
+| New Connection edit and creation UI | This streamlined experience lets you backfill data at the dataset level, enable a rolling data retention window, add to and remove datasets from a connection. [Learn more](/help/connections/create-connection.md) | May 18, 2022 |
+| Report Builder for CJA updates | Includes features such as scheduling and data block manager. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) | May 18, 2022 |
+| Customer AI Integration | Lets you ingest Customer AI models scores in CJA for further analysis in CJA Analysis workspace. [Learn more - to follow] | May 25, 2022 |
+| Attribution AI Integration | Lets you ingest the Attribution AI models scores in CJA for further analysis in CJA Analysis workspace. [Learn more - to follow] | May 25, 2022 |
 
 {style="table-layout:auto"}
+
+### CJA Fixes
+
+AN-279234; AN-284839; AN-285417
 
 >[!MORELIKETHIS]
 >[Customer Journey Analytics documentation updates](/help/release-notes/doc-changes.md)
