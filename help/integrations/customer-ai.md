@@ -7,6 +7,10 @@ solution: Customer Journey Analytics
 
 # Integrate Customer AI with CJA
 
+>[!NOTE]
+>
+>This page is under construction.
+
 [Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en), as part of Adobe Experience Platform Intelligent Services, provides marketers with the power to generate customer predictions at the individual level.
 
 With the help of influential factors, Customer AI can tell you what a customer is likely to do and why. Additionally, marketers can benefit from Customer AI predictions and insights to personalize customer experiences by serving the most appropriate offers and messaging.
