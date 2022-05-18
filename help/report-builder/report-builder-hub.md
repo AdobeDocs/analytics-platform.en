@@ -9,11 +9,17 @@ solution: Customer Journey Analytics
 ---
 # Report Builder Hub
 
-Use the Report Builder hub to create, update, or delete data blocks.
+Use the Report Builder hub to create, update, delete, and manage data
+blocks.
 
-The Report Builder hub contains the COMMANDS and QUICK EDIT panels.
+The Report Builder hub contains the  Create and Manage buttons, the COMMANDS list, and the QUICK EDIT panels.
 
-![](./assets/image13.png)
+<img src="./assets/hub51.png" width="50%"/>
+
+
+## Create and Manage buttons
+
+Use the Create or Manage buttons to create new data blocks or to manage existing data blocks.
 
 ## COMMANDS panel
 
