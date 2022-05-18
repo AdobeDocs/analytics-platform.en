@@ -44,7 +44,7 @@ In CJA, you can now [create one or more connections](/help/connections/create-co
 
 Each prediction, such as "Likelihood to upgrade account" equates to one dataset.
 
-Here is an example of a XDM schema that CJA would bring in as part of an existing dataset or a new dataset:
+Here is an example of a XDM schema that CJA would bring in as part of an existing or new dataset:
 
 ![CAI schema](assets/cai-schema.png)
 
@@ -52,4 +52,4 @@ Here is an example of a XDM schema that CJA would bring in as part of an existin
 
 ### Step 5: Create data views based on these connections
 
-In CJA, you can now proceed to create data views with the dimensions that were brought in as 
+In CJA, you can now proceed to create data views with the dimensions that were brought in as part of the connection you established. 
