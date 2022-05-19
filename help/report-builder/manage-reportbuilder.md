@@ -48,15 +48,15 @@ For example, you can replace an existing filter with a new filter in one or more
 
  You can select the top-level check box to select all data blocks or you can select individual data blocks.
 
- ![image](./assets/image56.png)
+  ![image](./assets/image56.png)
 
 1.  Click the edit icon to display the Quick edit window.
 
- ![image](./assets/image58.png)
+  ![image](./assets/image58.png)
 
 1.  Select a filter link to update data views, date ranges, or filters.
 
- ![image](./assets/image59.png)
+  ![image](./assets/image59.png)
 
 ## Refresh Data Blocks
 
@@ -75,9 +75,9 @@ Click the trash can icon to delete a selected data block.
 
 ## Group Data Blocks
 
-Click the column titles to group data blocks or select a column name from the **Group by** *Name* list.
+You can group data blocks using the **Group by** drop-down menu or you can click a column title. To sort data blocks by column, click the column title. To group data blocks by groups, select a group name from the **Group by** drop-down menu. For example, the screenshot below shows data blocks grouped by Sheet. It shows data blocks grouped by Sheet1 and Sheet2.  This is useful, for example, in the filter-replacing use case. If you have multiple filters applied to each data block, it is helpful to create a group containing all the data blocks that you want to replace. Then you can easily select and edit them all at once.
 
-![image](./assets/image514.png)
+![image](./assets/group-data-blocks.png)
 
 ## Modify the Data Block Manager view
 
