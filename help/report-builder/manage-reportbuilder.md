@@ -44,19 +44,17 @@ You can edit the data view, date range, or the filters applied to one or more da
 
 For example, you can replace an existing filter with a new filter in one or more data blocks.
 
-1.  Select the data blocks that you want to update.
+1. Select the data blocks that you want to update. You can select the top-level check box to select all data blocks or you can select individual data blocks.
 
- You can select the top-level check box to select all data blocks or you can select individual data blocks.
+   ![image](./assets/image56.png)
 
-  ![image](./assets/image56.png)
+1. Click the edit icon to display the Quick edit window.
 
-1.  Click the edit icon to display the Quick edit window.
+   ![image](./assets/image58.png)
 
-  ![image](./assets/image58.png)
+1. Select a filter link to update data views, date ranges, or filters.
 
-1.  Select a filter link to update data views, date ranges, or filters.
-
-  ![image](./assets/image59.png)
+   ![image](./assets/image59.png)
 
 ## Refresh Data Blocks
 
