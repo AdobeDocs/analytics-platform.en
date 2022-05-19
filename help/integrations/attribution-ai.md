@@ -26,30 +26,21 @@ Attribution AI integrates with Customer Journey Analytics (CJA) to the extent th
 
 Some of the steps are performed in Adobe Experience Platform prior to working with the output in CJA. The output consists of a dataset with an applied Attribution AI model.
 
-### Step 1: Download Attribution AI scores
-
-In Adobe Experience Platform, download Attribution AI scores, as described [here](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/getting-started.html?lang=en#downloading-attribution-ai-scores).
-
-### Step 2: Create an Attribution AI instance
+### Step 1: Create an Attribution AI instance
 
 In Experience Platform, create an Attribution AI instance by selecting and mapping data, defining events, and training your data, as described [here](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html).
 
-### Step 3: Set up a CJA connection to Attribution AI datasets
+### Step 2: Set up a CJA connection to Attribution AI datasets
 
 In CJA, you can now [create one or more connections](/help/connections/create-connection.md) to Experience Platform datasets that have been instrumented for Attribution AI. These datasets appears with the "Attribution AI Scores" prefix, as shown here:
 
 ![AAI scores](assets/aai-scores.png)
 
->[!IMPORTANT]
->
->You can add profile and lookup datasets, as well as call center and CRM data to the connection. However, Adobe does not recommend adding Adobe Analytics datasets to datasets with Attribution AI scores in the same connection.
-
-
-### Step 4: Create data views based on these connections
+### Step 3: Create data views based on these connections
 
 In CJA, [create one or more data views](/help/data-views/create-dataview.md) that contain the Attribution AI XDM fields. (Would be great to have a screenshot here.)
 
-### Step 5: Report on AAI data in CJA Workspace 
+### Step 4: Report on AAI data in CJA Workspace 
 
 In a CJA Workspace project, you can pull in metrics like "AAI Orders", and dimensions like "AAI Campaign Name" or "AAI Marketing Channel", for example. 
 
@@ -69,7 +60,7 @@ So when should you use Attribution AI data versus [Attribution IQ](/help/analysi
 | Functionality | Attribution AI | Attribution IQ |
 | --- | --- | --- |
 | Does fractional attribution | Yes | No |
-| Allows users to adjust model | No | Yes |
+| Allows users to adjust model | Yes | Yes |
 | Does attribution across channels (Note: AAI does not use the same stitched data that CJA does.) | Yes | Yes |
 | Includes incremental and influenced scores | Yes | No |
 | Does ML modeling | Yes | Yes |

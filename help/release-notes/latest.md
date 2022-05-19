@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Customer Journey Analytics (CJA) release notes (May 2022)
 
-**Last update**: May 18, 2022
+**Last update**: May 19, 2022
 
 ## Key features
 
@@ -14,8 +14,8 @@ feature: Release Notes
 | ----------- | ---------- | ----- |
 | New Connection edit and creation UI | This streamlined experience lets you backfill data at the dataset level, enable a rolling data retention window, add to and remove datasets from a connection. [Learn more](/help/connections/create-connection.md) | May 18, 2022 |
 | Report Builder for CJA updates | Includes features such as scheduling and data block manager. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) | May 18, 2022 |
-| Customer AI Integration | Lets you ingest Customer AI models scores in CJA for further analysis in CJA Analysis workspace. [Learn more - to follow] | May 25, 2022 |
-| Attribution AI Integration | Lets you ingest the Attribution AI models scores in CJA for further analysis in CJA Analysis workspace. [Learn more - to follow] | May 25, 2022 |
+| Customer AI Integration | Lets you ingest Customer AI models scores in CJA for further analysis in CJA Analysis workspace. [Learn more](/help/integrations/customer-ai.md) | May 25, 2022 |
+| Attribution AI Integration | Lets you ingest the Attribution AI models scores in CJA for further analysis in CJA Analysis workspace. [Learn more](/help/integrations/attribution-ai.md) | May 25, 2022 |
 
 {style="table-layout:auto"}
 
