@@ -7,7 +7,7 @@ feature: Connections
 ---
 # Create a connection
 
-A new Connections workflow is being launched in Customer Journey Analytics (CJA) in May 2022. Here is an overview of the new capabilities:
+A new Connections workflow was recently launched in Customer Journey Analytics (CJA). Here is an overview of the new capabilities:
 
 * You can enable a rolling data retention window when you create the connection.
 * You can add to and remove datasets from a connection. (Removing a dataset removes it from the connection and impacts any associated data views and underlying Analysis Workspace projects.)
