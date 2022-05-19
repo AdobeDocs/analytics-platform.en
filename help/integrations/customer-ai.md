@@ -9,7 +9,7 @@ exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 
 >[!NOTE]
 >
->This page is under construction.
+>This functionality will be released on May 25, 2022.
 
 [Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en), as part of Adobe Experience Platform Intelligent Services, provides marketers with the power to generate customer predictions at the individual level.
 
