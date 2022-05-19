@@ -3,6 +3,7 @@ description: Find out how AEP Attribution AI integrates with Workspace in CJA.
 title: Integrate Attribution AI with CJA
 role: Admin
 solution: Customer Journey Analytics
+exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 ---
 # Integrate Attribution AI with CJA
 

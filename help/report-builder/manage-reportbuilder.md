@@ -5,8 +5,8 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
+exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
 ---
-
 # Manage Data Blocks in Report Builder
 
 You can view and manage all data blocks in a workbook using the Data Block Manager. The Data Block Manager provides search, filter, and sort capabilities that allow you to quickly locate specific data blocks. After selecting one or more data blocks, you can edit, delete, or refresh the selected data blocks.
