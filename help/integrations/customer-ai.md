@@ -56,4 +56,11 @@ Here is an example of a XDM schema that CJA would bring in as part of an existin
 
 ### Step 5: Create data views based on these connections
 
-In CJA, you can now proceed to create data views with the dimensions that were brought in as part of the connection you established.
+In CJA, you can now proceed to [create data views](/help/data-views/create-dataview.md) with the dimensions (such as score, score date, probability, and so on) that were brought in as part of the connection you established. 
+
+### Step 6: Report on CAI scores in Workspace
+
+Here is an example of a Workspace project with CAI data that shows score dates in a stacked bar chart:
+
+![Score buckets](assets/workspace-scores.png)
+
