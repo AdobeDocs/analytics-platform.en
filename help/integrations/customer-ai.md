@@ -3,8 +3,8 @@ description: Find out how AEP Customer AI integrates with Workspace in CJA.
 title: Integrate Customer AI with CJA
 role: Admin
 solution: Customer Journey Analytics
+exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 ---
-
 # Integrate Customer AI with CJA
 
 >[!NOTE]
@@ -63,3 +63,4 @@ In CJA, you can now proceed to [create data views](/help/data-views/create-datav
 Here is an example of a Workspace project with CAI data that shows score dates in a stacked bar chart:
 
 ![Score buckets](assets/workspace-scores.png)
+
