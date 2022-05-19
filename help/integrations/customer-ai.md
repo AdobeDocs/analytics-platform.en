@@ -3,8 +3,8 @@ description: Find out how AEP Customer AI integrates with Workspace in CJA.
 title: Integrate Customer AI with CJA
 role: Admin
 solution: Customer Journey Analytics
+exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 ---
-
 # Integrate Customer AI with CJA
 
 >[!NOTE]
@@ -56,4 +56,4 @@ Here is an example of a XDM schema that CJA would bring in as part of an existin
 
 ### Step 5: Create data views based on these connections
 
-In CJA, you can now proceed to create data views with the dimensions that were brought in as part of the connection you established. 
+In CJA, you can now proceed to create data views with the dimensions that were brought in as part of the connection you established.
