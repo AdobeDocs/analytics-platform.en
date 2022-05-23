@@ -13,14 +13,28 @@ exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en), as part of Adobe Experience Platform Intelligent Services, is a multi-channel, algorithmic attribution service that calculates the influence and incremental impact of customer interactions against specified outcomes. With Attribution AI, marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customer journeys. 
 
-Attribution AI supports two categories of scores: algorithmic and rule-based. Algorithmic scores include incremental and influenced scores. 
-
-* **Influenced scores** divide 100% of the conversion credit among marketing channels.
-* **Incremental scores** first take into account a conversion baseline that you would have achieved even without marketing. This baseline depends on AI observations of patterns, seasonality, and so on, due to existing brand recognition, loyalty, and word of mouth. The remaining credit is divided among marketing channels.
-
-Rule-based scores include [!UICONTROL First touch], [!UICONTROL Last touch], [!UICONTROL Linear], [!UICONTROL U-shaped], and [!UICONTROL Time-Decay]. Attribution AI supports 3 Experience Platform schemas: Experience Event, Adobe Analytics, and Consumer Experience Event.
-
 Attribution AI integrates with Customer Journey Analytics (CJA) to the extent that Attribution AI runs models against data and then CJA imports the output of those models as a data set, which can then be integrated with the rest of your CJA data sets. Attribution AI-enabled datasets can be then be leveraged in data views and reporting in CJA. 
+
+Attribution AI supports 3 Experience Platform schemas: Experience Event, Adobe Analytics, and Consumer Experience Event.
+
+Attribution AI supports two categories of scores: algorithmic and rule-based. 
+
+## Algorithmic scores
+
+Algorithmic scores include incremental and influenced scores. 
+
+* **[!UICONTROL Influenced] scores** divide 100% of the conversion credit among marketing channels.
+* **[!UICONTROL Incremental] scores** first take into account a conversion baseline that you would have achieved even without marketing. This baseline depends on AI observations of patterns, seasonality, and so on, due to existing brand recognition, loyalty, and word of mouth. The remaining credit is divided among marketing channels.
+
+## Rule-based scores
+
+Rule-based scores include 
+
+* **[!UICONTROL First touch]** gives 100% credit to the touch point first seen in the attribution lookback window.
+* **[!UICONTROL Last touch]** gives 100% credit to the touch point occurring most recently before conversion.
+* **[!UICONTROL Linear]** gives equal credit to every touch point seen leading up to a conversion.
+* **[!UICONTROL U-shaped]** gives 40% credit to the first interaction, 40% credit to the last interaction, and divides the remaining 20% to any touch points in between. For conversions with a single touch point, 100% credit is given. For conversions with two touch points, 50% credit is given to both.
+* **[!UICONTROL Time-Decay]** follows an exponential decay with a custom half-life parameter, where the default is 7 days. The weight of each channel depends on the amount of time that passed between the touch point initiation and the eventual conversion. The formula used to determine credit is `2^(-t/halflife)`, where `t` is the amount of time between a touch point and a conversion. All touch points are then normalized to 100%.
 
 ## Workflow
 
@@ -54,9 +68,15 @@ Here we see a Workspace project with AAI data that shows orders with influenced 
 
 ![AAI Project](assets/aai-project2.png)
 
+**Marketing performance**
+
+Compare and contrast touchpoint attribution among different attribution models:
+
+![Compare](assets/compare.png)
+
 **Channel interaction**
 
-Understand channel interaction to see which channel can be most effectively used with other channels:
+Understand channel interaction to see which channel can be most effectively used with other channels, using a Venn diagram:
 
 ![Marketing channel overlap](assets/mc-overlap.png)
 
