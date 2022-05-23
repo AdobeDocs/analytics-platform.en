@@ -15,6 +15,8 @@ A new Connections workflow was recently launched in Customer Journey Analytics (
 * You can edit datasets, for example to request another backfill.
 * You can import existing data per dataset.
 
+>[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+
 ## Create and configure the connection {#create-connection}
 
 1. In CJA, click the **[!UICONTROL Connections]** tab.
