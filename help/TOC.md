@@ -217,6 +217,8 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Use Marketing channel dimensions](use-cases/marketing-channels.md)
   + [Ingest Google Analytics data into Adobe Experience Platform](use-cases/ga-to-cja.md)
   + [Report on Google Analytics data in CJA](use-cases/ga-to-cja-reporting.md)
++ Labs {#labs}
+  + [Labs User Guide](labs/labs.md)
 + Troubleshooting {#troubleshooting}
   + [Compare your Adobe Analytics data to CJA data](troubleshooting/compare.md)
 + Privacy {#cja-privacy}
