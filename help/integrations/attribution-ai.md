@@ -46,12 +46,34 @@ In a CJA Workspace project, you can pull in metrics like "AAI Orders", and dimen
 
 ![AAI dimensions](assets/aai-dims.png)
 
-Here we see a Workspace project with AAI data that shows orders with influenced and incremental scores.
+Here we see a Workspace project with AAI data that shows orders with influenced and incremental scores. Drill down to any dimension to understand attribution by: campaign, product group, user segment, geography, and so on.
 
 ![AAI Project](assets/aai-project.png)
 
 ![AAI Project](assets/aai-project2.png)
 
+Understand channel interaction to see which channel can be most effectively used with other channels:
+
+![Marketing channel overlap](assets/mc-overlap.png)
+
+This table shows the top paths to conversion (de-duplicated) to help you design and optimize touchpoints:
+
+![Top channels](assets/top-channels.png)
+
+Here, we see the lead time to conversion when a touchpoint is in the mix. It helps with optimizing lead time:
+
+![Lead time](assets/lead-time.png)
+
+## New CJA metrics
+
+| Metric | Description |
+| --- | --- |
+| [!UICONTROL Acquisition Rate] | For each channel, among the conversion paths it touched, the percentage of the channel being the Starter. |
+| [!UICONTROL Player rate] | For each channel, among the conversion paths it touched, the percentage of the channel being a Player. |
+| [!UICONTROL Closer rate] | For each channel, among the conversion paths it touched, the percentage of the channel being the Closer. |
+| [!UICONTROL AAI AVG Days Away from Order] | For each channel, the average number of days since the order. |
+| [!UICONTROL AAI AVG Total Days in Sales Process] | For each channel, the average total days of the conversion paths it touched. |
+| [!UICONTROL AVG Touches Away From Order] | For each channel, the average touches away from order. |
 
 ## Differences between Attribution AI and Attribution IQ
 
