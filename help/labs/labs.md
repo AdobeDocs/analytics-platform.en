@@ -1,7 +1,6 @@
 ---
 title: Labs User Guide
 description: Preview prototype projects for Customer Journey Analytics
-feature: Labs
 role: Admin
 ---
 
