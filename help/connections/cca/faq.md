@@ -59,3 +59,7 @@ Certain metrics in CJA are similar to metrics in traditional Analytics, but othe
 | **Events** = count of rows in the stitched data in CJA. Generally this should be close to **Occurrences** in traditional Adobe Analytics. Note, however, the FAQ above regarding rows with a blank `Persistent ID`.| **Events** = count of rows in the unstitched data in CJA. Generally this should be close to **Occurrences** in traditional Adobe Analytics. Note, however, that if any events have a blank `Person ID` in the unstitched data in AEP data lake, these events will be dropped (not included) in CJA. | **Occurrences**: See [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). | **Occurrences**: See [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
 
 Other metrics may be similar in CJA and traditional Adobe Analytics. For example, the total count for Adobe Analytics [custom events](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html) (events 1-100) should generally be very close in traditional Adobe Analytics and CJA (whether stitched or unstitched). Note, however, this may not always be true due to [differences in capabilities](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-aa.html)  such as event de-duplication between CJA vs. traditional Adobe Analytics.
+
+## Can CCA use Identity Map fields?
+
+No, CCA cannot currently use identityMap fields.
