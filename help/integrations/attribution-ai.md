@@ -13,7 +13,7 @@ exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en), as part of Adobe Experience Platform Intelligent Services, is a multi-channel, algorithmic attribution service that calculates the influence and incremental impact of customer interactions against specified outcomes. With Attribution AI, marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customer journeys. 
 
-Attribution AI integrates with Customer Journey Analytics (CJA) to the extent that Attribution AI runs models against data and then CJA imports the output of those models as a data set, which can then be integrated with the rest of your CJA data sets. Attribution AI-enabled datasets can be then be leveraged in data views and reporting in CJA. 
+Attribution AI integrates with Customer Journey Analytics (CJA) to the extent that Attribution AI runs models against customers' marketing touchpoints and conversion datasources. CJA then imports the output of those models as a data set, or it can be integrated with the rest of your CJA data sets. Attribution AI-enabled datasets can be then be leveraged in data views and reporting in CJA. 
 
 Attribution AI supports 3 Experience Platform schemas: Experience Event, Adobe Analytics, and Consumer Experience Event.
 
@@ -46,7 +46,7 @@ In Experience Platform, create an Attribution AI instance by selecting and mappi
 
 ### Step 2: Set up a CJA connection to Attribution AI datasets
 
-In CJA, you can now [create one or more connections](/help/connections/create-connection.md) to Experience Platform datasets that have been instrumented for Attribution AI. These datasets appears with the "Attribution AI Scores" prefix, as shown here:
+In CJA, you can now [create one or more connections](/help/connections/create-connection.md) to Experience Platform datasets that have been instrumented for Attribution AI. These datasets appear with the "Attribution AI Scores" prefix, as shown here:
 
 ![AAI scores](assets/aai-scores.png)
 
@@ -59,6 +59,11 @@ In CJA, [create one or more data views](/help/data-views/create-dataview.md) tha
 In a CJA Workspace project, you can pull in metrics like "AAI Orders", and dimensions like "AAI Campaign Name" or "AAI Marketing Channel", for example. 
 
 ![AAI dimensions](assets/aai-dims.png)
+
+>[!IMPORTANT]
+>
+>These dimensions and metrics are not natively named in this way. These are "friendly names". The [naming convention in Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) follows the schema path. We recommend renaming the long schema path names in AAI to short, more user-friendly names (dimensions/metrics) in CJA. You can do so in **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > **[!UICONTROL Components]** tab > **[!UICONTROL Schema fields]** -> Click on a schema field -> **[!UICONTROL Component name]**.
+
 
 **Orders with influenced and incremental scores**
 
@@ -92,30 +97,18 @@ Here, we see the lead time to conversion when a touchpoint is in the mix. It hel
 
 ![Lead time](assets/lead-time.png)
 
-## New CJA metrics
-
-| Metric | Description |
-| --- | --- |
-| [!UICONTROL Acquisition Rate] | For each channel, among the conversion paths it touched, the percentage of the channel being the Starter. |
-| [!UICONTROL Player rate] | For each channel, among the conversion paths it touched, the percentage of the channel being a Player. |
-| [!UICONTROL Closer rate] | For each channel, among the conversion paths it touched, the percentage of the channel being the Closer. |
-| [!UICONTROL AAI AVG Days Away from Order] | For each channel, the average number of days since the order. |
-| [!UICONTROL AAI AVG Total Days in Sales Process] | For each channel, the average total days of the conversion paths it touched. |
-| [!UICONTROL AVG Touches Away From Order] | For each channel, the average touches away from order. |
-
-{style="table-layout:auto"}
-
 ## Differences between Attribution AI and Attribution IQ
 
 So when should you use Attribution AI data versus [Attribution IQ](/help/analysis-workspace/attribution/overview.md), a native CJA capability? This table shows some of the differences in functionality:
 
 | Functionality | Attribution AI | Attribution IQ |
 | --- | --- | --- |
-| Does fractional attribution | Yes | No |
+| Does incremental attribution | Yes | No |
 | Allows users to adjust model | Yes | Yes |
 | Does attribution across channels (Note: AAI does not use the same stitched data that CJA does.) | Yes | Yes |
-| Includes incremental and influenced scores | Yes | No |
+| Includes influenced scores | Yes | Yes |
 | Does ML modeling | Yes | Yes |
-| Does ML modeling with predictions | Yes | No |
+| Region-based attribution models | Yes | Yes |
+| Can include marketing touchpoints in model | Yes | No |
 
 {style="table-layout:auto"}
