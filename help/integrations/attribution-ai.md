@@ -109,6 +109,6 @@ So when should you use Attribution AI data versus [Attribution IQ](/help/analysi
 | Includes influenced scores | Yes | Yes |
 | Does ML modeling | Yes | Yes |
 | Region-based attribution models | Yes | Yes |
-| Can include marketing touchpoints in model | Yes | No |
+| Can configure marketing touchpoints in model | Yes | No |
 
 {style="table-layout:auto"}
