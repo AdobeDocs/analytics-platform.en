@@ -2,8 +2,8 @@
 title: Labs User Guide
 description: Preview prototype projects for Customer Journey Analytics
 role: Admin
+exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 ---
-
 # [!UICONTROL Labs] User Guide
 
 >[!NOTE]
@@ -66,4 +66,3 @@ To launch and evaluate a prototype:
 
 * Some prototypes within [!UICONTROL Labs] become Customer Journey Analytics features, others may not. Your feedback drives the decision, so review the prototypes and let Adobe know how valuable you find them.
 * Labs is available to all SKU entitlements.
-
