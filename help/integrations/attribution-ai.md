@@ -7,10 +7,6 @@ exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 ---
 # Integrate Attribution AI with CJA
 
->[!NOTE]
->
->This functionality will be released on May 25, 2022.
-
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en), as part of Adobe Experience Platform Intelligent Services, is a multi-channel, algorithmic attribution service that calculates the influence and incremental impact of customer interactions against specified outcomes. With Attribution AI, marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customer journeys. 
 
 Attribution AI integrates with Customer Journey Analytics (CJA) to the extent that Attribution AI runs models against customers' marketing touchpoints and conversion datasources. CJA then imports the output of those models as a data set, or it can be integrated with the rest of your CJA data sets. Attribution AI-enabled datasets can be then be leveraged in data views and reporting in CJA. 

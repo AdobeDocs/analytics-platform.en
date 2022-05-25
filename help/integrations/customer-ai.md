@@ -7,10 +7,6 @@ exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 ---
 # Integrate Customer AI with CJA
 
->[!NOTE]
->
->This functionality will be released on May 25, 2022.
-
 [Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en), as part of Adobe Experience Platform Intelligent Services, provides marketers with the power to generate customer predictions at the individual level.
 
 With the help of influential factors, Customer AI can tell you what a customer is likely to do and why. Additionally, marketers can benefit from Customer AI predictions and insights to personalize customer experiences by serving the most appropriate offers and messaging.
@@ -35,7 +31,11 @@ Once you have prepared your data and have all your credentials and schemas in pl
 
 ### Step 2: Set up a CJA connection to Customer AI datasets
 
-In CJA, you can now [create one or more connections](/help/connections/create-connection.md) to Experience Platform datasets that have been instrumented for Customer AI. Each prediction, such as "Likelihood to upgrade account", equates to one dataset. These datasets appears with the "Customer AI Scores" prefix, as shown here:
+In CJA, you can now [create one or more connections](/help/connections/create-connection.md) to Experience Platform datasets that have been instrumented for Customer AI. Each prediction, such as "Likelihood to upgrade account", equates to one dataset. These datasets appears with the "Customer AI Scores in EE Format – name_of_application" prefix.
+
+>[!IMPORTANT]
+>
+>Each Customer AI instance has two output datasets if the toggle is turned on to enable scores for CJA during the configuration in Step 1. One output dataset appears in Profile XDM format and one in Experience Event XDM format.
 
 ![CAI scores](assets/cai-scores.png)
 
