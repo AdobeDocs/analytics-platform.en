@@ -57,21 +57,31 @@ In CJA, you can now proceed to [create data views](/help/data-views/create-datav
 
 In CJA Workspace, you can now create a new project and pull in visualizations. 
 
+**Trend propensity scores**
+
 Here is an example of a Workspace project with CAI data that trends propensity scores for a segment of users over time, in ​a stacked bar chart:
 
 ![Score buckets](assets/workspace-scores.png)
+
+**Table with reason codes**
 
 Here is a table that shows reason codes for why a segment has high or low propensity​:
 
 ![Reason codes](assets/reason-codes.png)
 
+**Entry flow for customer propensity**
+
 This flow diagram shows the entry flow for customer propensity over different scoring runs​:
 
 ![Entry flow](assets/flow.png)
 
+**Distribution of propensity scores**
+
 This bar chart shows the distribution of propensity scores​:
 
 ![Distribution](assets/distribution.png)
+
+**Propensity overlaps**
 
 This Venn diagram shows the propensity overlaps over different scoring runs:
 

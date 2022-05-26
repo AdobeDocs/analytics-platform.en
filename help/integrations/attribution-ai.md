@@ -48,7 +48,7 @@ In CJA, you can now [create one or more connections](/help/connections/create-co
 
 ### Step 3: Create data views based on these connections
 
-In CJA, [create one or more data views](/help/data-views/create-dataview.md) that contain the Attribution AI XDM fields. (Would be great to have a screenshot here.)
+In CJA, [create one or more data views](/help/data-views/create-dataview.md) that contain the Attribution AI XDM fields.
 
 ### Step 4: Report on AAI data in CJA Workspace 
 
@@ -58,7 +58,7 @@ In a CJA Workspace project, you can pull in metrics like "AAI Orders", and dimen
 
 >[!IMPORTANT]
 >
->These dimensions and metrics are not natively named in this way. These are "friendly names". The [naming convention in Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) follows the schema path. We recommend renaming the long schema path names in AAI to short, more user-friendly names (dimensions/metrics) in CJA. You can do so in **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > **[!UICONTROL Components]** tab > **[!UICONTROL Schema fields]** -> Click on a schema field -> **[!UICONTROL Component name]**.
+>These dimensions and metrics are not natively named in this way. These are "friendly names". The [naming convention in Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) follows the schema path. We recommend renaming the long AAI schema path names to short, more user-friendly names (dimensions/metrics) in CJA. You can do so in **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > **[!UICONTROL Components]** tab > **[!UICONTROL Schema fields]** -> Click on a schema field -> **[!UICONTROL Component name]**.
 
 
 **Orders with influenced and incremental scores**
