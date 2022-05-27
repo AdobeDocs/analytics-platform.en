@@ -201,9 +201,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Create a scorecard](mobile-app/create-scorecard.md)
   + [Set up executives to use dashboards](mobile-app/set-up-execs.md)
   + [Executive user quick start guide](mobile-app/executive.md)
-+ Integrations {#integrations}
-  + [Integrate Attribution AI with CJA](integrations/attribution-ai.md)
-  + [Integrate Customer AI with CJA](integrations/customer-ai.md)
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
   + [Use arrays of objects](use-cases/object-arrays.md)
