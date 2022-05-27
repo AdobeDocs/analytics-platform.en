@@ -40,15 +40,27 @@ Some of the steps are performed in Adobe Experience Platform prior to working wi
 
 In Experience Platform, create an Attribution AI instance by selecting and mapping data, defining events, and training your data, as described [here](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html).
 
+![AAI instance](assets/aai-instance.png)
+
 ### Step 2: Set up a CJA connection to Attribution AI datasets
 
 In CJA, you can now [create one or more connections](/help/connections/create-connection.md) to Experience Platform datasets that have been instrumented for Attribution AI. These datasets appear with the "Attribution AI Scores" prefix, as shown here:
 
 ![AAI scores](assets/aai-scores.png)
 
+![Create connection](assets/aai-create-connection.png)
+
 ### Step 3: Create data views based on these connections
 
 In CJA, [create one or more data views](/help/data-views/create-dataview.md) that contain the Attribution AI XDM fields.
+
+Here are the XDM schema fields for touchpoints:
+
+![Touchpoint XDM fields](assets/touchpoint-fields.png)
+
+And here are the XDM schema fields for conversion:
+
+![Conversion XDM fields](assets/conversion-fields.png)
 
 ### Step 4: Report on AAI data in CJA Workspace 
 
@@ -60,6 +72,7 @@ In a CJA Workspace project, you can pull in metrics like "AAI Orders", and dimen
 >
 >These dimensions and metrics are not natively named in this way. These are "friendly names". The [naming convention in Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) follows the schema path. We recommend renaming the long AAI schema path names to short, more user-friendly names (dimensions/metrics) in CJA. You can do so in **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > **[!UICONTROL Components]** tab > **[!UICONTROL Schema fields]** -> Click on a schema field -> **[!UICONTROL Component name]**.
 
+![Change dimension names](assets/change-name.png)
 
 **Orders with influenced and incremental scores**
 
