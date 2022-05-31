@@ -23,7 +23,7 @@ Annotations that are displayed in Mobile Scorecards are created in Workspace usi
 
 1. Turn on annotations. To turn annotations on, see [Turn annotations on or off](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=en#turn-annotations-on-or-off).
 
-1. Create an annotation and assign it to _global projects. To create an annotation in Workspace, see [Create Annotations](help/components/annotations/create-annotations.md).
+1. Create an annotation and assign it to _global projects. To create an annotation in Workspace, see [Create Annotations](create-annotations.md).
 
 1. Select **Show annotations** to display the annotation in Mobile Scorecards.
 
