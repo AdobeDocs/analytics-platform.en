@@ -195,6 +195,12 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Calendar overview](components/date-ranges/calendar.md)
     + [Create custom date ranges](components/date-ranges/custom-date-ranges.md)
     + [Date comparison](components/date-ranges/time-comparison.md)
++ Analytics dashboards {#cja-dashboards}
+  + [Analytics dashboards - Overview](mobile-app/home.md)
+  + [Curator tasks](mobile-app/curator.md)
+  + [Create a scorecard](mobile-app/create-scorecard.md)
+  + [Set up executives to use dashboards](mobile-app/set-up-execs.md)
+  + [Executive user quick start guide](mobile-app/executive.md)
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
   + [Use arrays of objects](use-cases/object-arrays.md)
@@ -208,12 +214,8 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Use Marketing channel dimensions](use-cases/marketing-channels.md)
   + [Ingest Google Analytics data into Adobe Experience Platform](use-cases/ga-to-cja.md)
   + [Report on Google Analytics data in CJA](use-cases/ga-to-cja-reporting.md)
-+ Analytics dashboards {#cja-dashboards}
-  + [Analytics dashboards - Overview](mobile-app/home.md)
-  + [Curator tasks](mobile-app/curator.md)
-  + [Create a scorecard](mobile-app/create-scorecard.md)
-  + [Set up executives to use dashboards](mobile-app/set-up-execs.md)
-  + [Executive user quick start guide](mobile-app/executive.md)
++ Labs {#labs}
+  + [Labs User Guide](labs/labs.md)
 + Troubleshooting {#troubleshooting}
   + [Compare your Adobe Analytics data to CJA data](troubleshooting/compare.md)
 + Privacy {#cja-privacy}

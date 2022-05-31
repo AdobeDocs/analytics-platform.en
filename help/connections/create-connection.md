@@ -7,13 +7,15 @@ feature: Connections
 ---
 # Create a connection
 
-A new Connections workflow is being launched in Customer Journey Analytics (CJA) in May 2022. Here is an overview of the new capabilities:
+A new Connections workflow was recently launched in Customer Journey Analytics (CJA). Here is an overview of the new capabilities:
 
 * You can enable a rolling data retention window when you create the connection.
 * You can add to and remove datasets from a connection. (Removing a dataset removes it from the connection and impacts any associated data views and underlying Analysis Workspace projects.)
 * You can enable and request backfill data per dataset.
 * You can edit datasets, for example to request another backfill.
 * You can import existing data per dataset.
+
+>[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
 
 ## Create and configure the connection {#create-connection}
 
@@ -29,7 +31,7 @@ A new Connections workflow is being launched in Customer Journey Analytics (CJA)
     | **[!UICONTROL Connection name]** | Enter a unique name for the connection. |
     | **[!UICONTROL Connection description]** | Describe the purpose of this connection. |
     | **[!UICONTROL Sandbox]** | Choose a sandbox in Experience Platform that contains the dataset/s to which you want to create a connection.<p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as “data silos” that contain data sets. Sandboxes are used to control access to data sets.<p>Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from.  |
-    | **[!UICONTROL Enable rolling data window]** | This setting lets you define CJA data retention as a rolling window in months (1 month, 3 months, 6 months, etc.), at the connection level.<p>Data retention is based on event dataset timestamps and applies to event datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. However, if your connection includes any profile or lookup datasets (besides one or more event datasets), that data will be retained for the same time period.<p> The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost. |
+    | **[!UICONTROL Enable rolling data window]** | This checkbox, if checked, lets you define CJA data retention as a rolling window in months (1 month, 3 months, 6 months, etc.), at the connection level.<p>Data retention is based on event dataset timestamps and applies to event datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. However, if your connection includes any profile or lookup datasets (besides one or more event datasets), that data will be retained for the same time period.<p> The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost.<p>If you leave the default (unchecked), the retention period will be superseded by the Adobe Experience Platform data retention setting. If you have 25 months' worth of data in Experience Platform, CJA will get 25 months of data through backfill. If you deleted 10 of those months in Platform, CJA would retain the remaining 15 months. |
     | **[!UICONTROL Add datasets]** (see below) | Add datasets if no datasets appear in your dataset listing. |
     | **[!UICONTROL Dataset name]** | Select one or more dataset(s) you want to pull into Customer Journey Analytics and click **[!UICONTROL Add]**.<p>(If you have a lot of datasets to choose from, you can search for the right one(s) using the Search datasets search bar above the list of datasets.) |
     | **[!UICONTROL Last updated]** | For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. "N/A" means that this dataset contains no data. |

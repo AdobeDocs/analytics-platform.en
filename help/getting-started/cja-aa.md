@@ -31,6 +31,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Merchandising eVars | Full Support via [binding dimensions and binding metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) (January 2022) |
 | Metrics | Full Support; CJA leverages the Experience Data Model (XDM) and supports unlimited metrics and is not tied to the custom success events of traditional Analytics. Note that some standard metrics have been renamed from traditional Analytics: Visitors = People, Visits = Sessions, Hits = Events. |
 | Metric deduplication | Full Support |
+| Mobile Scorecard/Dashboards | Full Support |
 | Panels | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. |
 | PDF Export | Full Support |
 | Project Curation | Full Support |
