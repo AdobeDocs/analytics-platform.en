@@ -156,6 +156,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create annotations](components/annotations/create-annotations.md)
     + [Manage annotations](components/annotations/manage-annotations.md)
     + [View annotations](components/annotations/view-annotations.md)
+    + [Mobile Scorecard annotations](components/annotations/mobile-annotations.md)
   + Dimensions {#dimensions}
     + [Preview dimensions](components/dimensions/view-dimensions.md)
     + [Break down dimensions](components/dimensions/t-breakdown-fa.md)
