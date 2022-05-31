@@ -42,7 +42,7 @@ When viewing a __donut, a summary of annotations applied to a metric is located 
 ![](assets/ann-mobile-summary.png)
 
 
-##  Mobile Scorecard Annotation Considerations
+## Mobile Scorecard Annotation Considerations
 
 * If an annotation is applied to a category and a user switches from that category view, the annotation disappears. Annotations are displayed only in an associated category.
 
