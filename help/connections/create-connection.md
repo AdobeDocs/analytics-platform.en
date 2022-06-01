@@ -7,7 +7,7 @@ feature: Connections
 ---
 # Create a connection
 
-A new Connections workflow was recently launched in Customer Journey Analytics (CJA). Here is an overview of the new capabilities:
+A new Connections workflow was recently launched in Customer Journey Analytics (CJA). The new connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with assistive workflow.  We provided detailed dataset selection, configuration, and review experience with critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more to reduce the risk of wrong connection configuration. Here is an overview of the new capabilities:
 
 * You can enable a rolling data retention window when you create the connection.
 * You can add to and remove datasets from a connection. (Removing a dataset removes it from the connection and impacts any associated data views and underlying Analysis Workspace projects.)
@@ -41,7 +41,7 @@ A new Connections workflow was recently launched in Customer Journey Analytics (
     | **[!UICONTROL Key]** | For lookup datasets only (such as _id). |
     | **[!UICONTROL Matching Key]** | For lookup datasets only (such as _id). |
     | **[!UICONTROL Import new data]** | Set to On or Off. |
-    | **[!UICONTROL Backfill data]** |  |
+    | **[!UICONTROL Backfill data]** | You can request to backfill the data in a dataset based on event timestamps. For example, you can request to backfill the last 7 days worth of data, configure the right Person ID and test your connection for correct configuration. If everything looks good, you can backfill all the remaining data with ease.<p>In addition, you can enable the import of new data by dataset. For example, you can enable the import of new data for lookup data only.  |
     | **[!UICONTROL Backfill status]** | Indicates whether any backfill data is processing. |
 
     {style="table-layout:auto"}
@@ -71,7 +71,7 @@ The new workflow lets you add an Experience Platform dataset when you create a c
     | **[!UICONTROL Schema]** | This is the schema based on which the dataset was created in Adobe Experience Platform. |
     | **[!UICONTROL Dataset]** | The name of the dataset. |
     | **[!UICONTROL Preview]**: `<dataset name>` | Previews the dataset with date, my ID and Identifier columns. |
-    | **[!UICONTROL Remove]** | Remove this dataset from the connection. |
+    | **[!UICONTROL Remove]** | You can delete or remove the dataset and change the Person ID without deleting the whole connection. This reduces the costs involved in data ingestion and the cumbersome process of recreating the whole connection and associated data views. |
 
     {style="table-layout:auto"}
 
