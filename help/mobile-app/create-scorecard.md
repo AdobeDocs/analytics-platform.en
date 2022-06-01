@@ -10,7 +10,7 @@ solution: Customer Journey Analytics
 
 The following information instructs curators of Adobe Analytics data on how to configure and present dashboards for executive users. To start with, you can view the Adobe Analytics dashboards Scorecard Builder video:
 
->[!VIDEO](https://video.tv.adobe.com/v/34544)
+>[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
 >Scorecard screen shots for this page were taken from the Adobe Analytics UI, not from CJA. The UIs are almost identical.
