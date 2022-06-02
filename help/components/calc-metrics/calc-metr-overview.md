@@ -1,6 +1,6 @@
 ---
 title: Calculated metrics overview
-description: Learn about
+description: Learn about filtered metrics that are derived at report run time.
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 ---
