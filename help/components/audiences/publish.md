@@ -47,9 +47,6 @@ This topic discusses how to publish audiences discovered in Customer Journey Ana
    | Estimated to return | A summary number...  |
    | Preview metrics |  |
 
-
-
-
    {style="table-layout:auto"}
 
 
