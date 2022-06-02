@@ -14,9 +14,6 @@ Publishing audiences provides a clear way to take action on insights found withi
 * Using the audience for a journey in Adobe Journey Optimizer.
 * Exporting the audience to a 3rd-party through an AEP destination
 
-
-
-
 ## Key terminology
 
 **Audience**: A set or list of identities that have both a namespace and a specific ID related to that namespace. Audiences are transportable from the Adobe Experience Platform and applications that sit on top of it (such as CJA). Audiences can contain mixed namespaces.
@@ -27,7 +24,7 @@ Publishing audiences provides a clear way to take action on insights found withi
 
 ## Permissions
 
-Admins are automatically granted the [!UICONTROL Audience Publishing] permission in Adobe Admin  Console. They can grant this permission to individual users.
+Admins are automatically granted the [!UICONTROL Audience Publishing] permission in Adobe Admin Console. They can grant this permission to individual users.
 
 ## Next steps
 
