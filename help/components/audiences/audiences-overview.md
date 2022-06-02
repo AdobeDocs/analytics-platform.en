@@ -12,7 +12,7 @@ Publishing audiences provides a clear way to take action on insights found withi
 * Sending emails to this audience.
 * Sending push messages to this audience.
 * Using the audience for a journey in Adobe Journey Optimizer.
-* Exporting the audience to a 3rd-party through an AEP destination
+* Exporting the audience to a 3rd-party through an Experience Platform destination.
 
 ## Key terminology
 
@@ -28,5 +28,7 @@ Admins are automatically granted the [!UICONTROL Audience Publishing] permission
 
 ## Next steps
 
+* [Create and publish audiences](/help/components/audiences/publish.md)
+* [Manage audiences](/help/components/audiences/manage.md)
 
 
