@@ -9,7 +9,7 @@ description: Learn how to publish audiences from Customer Journey Analytics
 >
 >This functionality is currently in [limited testing](/help/release-notes/releases.md).
 
-This topic discusses how to publish audiences discovered in Customer Journey Analytics (CJA) to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) in Adobe Experience Platform for customer targeting and personalization. 
+This topic discusses how to create and publish audiences discovered in Customer Journey Analytics (CJA) to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) in Adobe Experience Platform for customer targeting and personalization. 
 
 Read this [overview](/help/components/audiences/audiences-overview.md) to familiarize yourself with the concept of CJA audiences.
 
@@ -41,7 +41,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
    | Refresh lookback window | Specifies how far back in your data window you want to go when creating this audience. The max. is 90 days. |
    | [!UICONTROL One-time date range] | Date range when you want the one-time audience to be published. |
    | [!UICONTROL Filter] | Filters are the main input to the audience. You can add up to 20 filters. These filters can be joined with `And` or `Or` operators.  |
-   | [!UICONTROL View sample IDs] | A sample of IDs in this audience. Use the search bar to search for sample IDs.<p>![](assets/sample-ids.png |
+   | [!UICONTROL View sample IDs] | A sample of IDs in this audience. Use the search bar to search for sample IDs. |
 
    {style="table-layout:auto"}
 
@@ -66,7 +66,23 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 1. If everything looks good, click **[!UICONTROL Publish]**.
 
+   If everything went well, you will receive a confirmation message that the audience was published. 
+
+1. Click **[!UICONTROL View audience in AEP]** within the same message and you will be taken to the Segment UI in Adobe Experience Platform. See below for more information.
+
+## Use CJA audiences in Experience Platform
+
+You can view CJA audiences in Platform by going to **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
+
+You can drag CJA audiences into the segment definition for AEP segments.
+
+![](assets/audiences-aep.png)
+
+If you opt to export this Audience to AEP Data lake, it will appear as a dataset conforming to the XDM Individual Profile Schema Class:
+
+![](assets/aep-datalake.png)
+
+
 ## Next steps
 
 * To manage this audience, go to the [Management UI](/help/components/audiences/manage.md).
-* To work with this audience in Adobe Experience Platform, go here.
