@@ -66,6 +66,10 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 1. If everything looks good, click **[!UICONTROL Publish]**.
 
+   If everything went well, you will receive a confirmation message that the audience was published. 
+
+1. Click **[!UICONTROL View audience in AEP]** within the same message and you will be taken to the Segment UI in Adobe Experience Platform. See below for more information.
+
 ## Use CJA audiences in Experience Platform
 
 You can view CJA audiences in Platform by going to **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
