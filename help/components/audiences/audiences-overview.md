@@ -5,6 +5,10 @@ description: Learn about the concept of audience publishing in Customer Journey 
 
 # CJA Audience publishing overview
 
+>[!NOTE]
+>
+>This functionality is currently in [limited testing](/help/release-notes/releases.md).
+
 You can now publish audiences discovered in Customer Journey Analytics (CJA) to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) in Adobe Experience Platform for customer targeting and personalization. With Real-time Customer Profile, you can see a holistic view of each individual customer by combining data from multiple channels, including online, offline, CRM, and third party. Profile allows you to consolidate your customer data into a unified view offering an actionable, timestamped account of every customer interaction.
 
 Publishing audiences provides a clear way to take action on insights found within CJA. These actions might include:
