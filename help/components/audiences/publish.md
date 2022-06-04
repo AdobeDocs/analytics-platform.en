@@ -1,8 +1,8 @@
 ---
 title: Create and publish audiences to Real-time Customer Profile
 description: Learn how to publish audiences from Customer Journey Analytics
+exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 ---
-
 # Create and publish audiences
 
 >[!NOTE]

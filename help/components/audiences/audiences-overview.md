@@ -1,8 +1,8 @@
 ---
 title: CJA Audiences publishing overview
 description: Learn about the concept of audience publishing in Customer Journey Analytics
+exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 ---
-
 # CJA Audience publishing overview
 
 >[!NOTE]
@@ -34,5 +34,3 @@ Admins are automatically granted the [!UICONTROL Audience Publishing] permission
 
 * [Create and publish audiences](/help/components/audiences/publish.md)
 * [Manage audiences](/help/components/audiences/manage.md)
-
-
