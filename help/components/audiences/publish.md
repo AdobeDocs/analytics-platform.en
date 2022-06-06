@@ -59,18 +59,20 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
    | [!UICONTROL Estimated audience return] | This setting is useful for retargeting customers in this audience that come back to your site. (In other words, that are seen in this dataset again.) <p>Here, you can select the time frame (next 7 days, next 2 weeks, next month) for the estimated number of customers who may return. |
    | [!UICONTROL Estimated to return] | This number gives you an estimated number of returning customers over the time frame that you selected from the drop-down list. We look at the historical churn rate for this audience to predict this number. |
    | [!UICONTROL Preview metrics] | This setting allows you to look at specific metrics to see whether this audience contributes a disproportionate amount to this metric, such as '[!UICONTROL Revenue]' or '[!UICONTROL Average time on site]'. It gives you the aggregate count of the metric, as well as the percentage of the total it represents. You can select any metric that is available in your data view. |
-   | Namespaces included | The specific namespaces that are associated with the people in your audience. Examples include ECID, CRM ID, email addresses, etc. |
-   | Sandbox | The Experience Platform sandbox that this audience resides in. When you publish this audience to Platform, you can only work with it within the confines of this sandbox. |
+   | [!UICONTROL Namespaces included] | The specific namespaces that are associated with the people in your audience. Examples include ECID, CRM ID, email addresses, etc. |
+   | [!UICONTROL Sandbox] | The [Experience Platform sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) in which this audience resides. When you publish this audience to Platform, you can only work with it within the confines of this sandbox. |
 
    {style="table-layout:auto"}
 
-1. If everything looks good, click **[!UICONTROL Publish]**.
+1. Double-check your audience configuration and click **[!UICONTROL Publish]**.
 
    If everything went well, you will receive a confirmation message that the audience was published. 
 
-1. Click **[!UICONTROL View audience in AEP]** within the same message and you will be taken to the Segment UI in Adobe Experience Platform. See below for more information.
+1. Click **[!UICONTROL View audience in AEP]** within the same message and you will be taken to the [Segment UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) in Adobe Experience Platform. See below for more information.
 
 ## Use CJA audiences in Experience Platform
+
+CJA now takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile. RTCP then examines each namespace/ID combination and looks for a profile that it may be part of. If it finds one, it will add the namespace and ID to the other IDs in this profile as a segment membership attribute. Now, for example, "user@adobe.com" can be targeted across all his devices and channels. If not profile is found, a new one is created.
 
 You can view CJA audiences in Platform by going to **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
 
