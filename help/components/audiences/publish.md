@@ -66,13 +66,13 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 1. Double-check your audience configuration and click **[!UICONTROL Publish]**.
 
-   If everything went well, you will receive a confirmation message that the audience was published. 
+   If everything went well, you will receive a confirmation message that the audience was published. It takes only minute or two for this audience to show up in Experience Platform. (Even for audiences with millions of members, it should take less than 5 minutes.)
 
 1. Click **[!UICONTROL View audience in AEP]** within the same message and you will be taken to the [Segment UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) in Adobe Experience Platform. See below for more information.
 
 ## Use CJA audiences in Experience Platform
 
-CJA now takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile. RTCP then examines each namespace/ID combination and looks for a profile that it may be part of. If it finds one, it will add the namespace and ID to the other IDs in this profile as a segment membership attribute. Now, for example, "user@adobe.com" can be targeted across all his devices and channels. If not profile is found, a new one is created.
+CJA now takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). RTCP then examines each namespace/ID combination and looks for a profile that it may be part of. A profile is basically a cluster of linked namespaces, IDs and devices. If it finds a profile, it will add the namespace and ID to the other IDs in this profile as a segment membership attribute. Now, for example, "user@adobe.com" can be targeted across all his devices and channels. If not profile is found, a new one is created.
 
 You can view CJA audiences in Platform by going to **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
 
