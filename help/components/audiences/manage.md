@@ -19,8 +19,6 @@ Managing previously created audiences lets you
 
 ## Management UI
 
-screenshot
-
 | UI setting | Definition |
 | --- | --- |
 | Hide/Show filters | Lets you show or hide the following filters in the left rail: <ul><li>Data view</li><li>Owner</li><li>Refresh frequency</li><li>Tags</li></ul> |
