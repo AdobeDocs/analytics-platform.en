@@ -14,7 +14,7 @@ Here is a video on creating ad hoc project filters:
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
 
-1. 1. Drop any component type (dimension, dimension item, event, metric, segment, segment template, date range) into the filter drop zone at the top of a panel. Component types are auto-converted into ad hoc filters or [Quick filters](/help/components/filters/quick-filters.md) if compatible.
+1. Drop any component type (dimension, dimension item, event, metric, segment, segment template, date range) into the filter drop zone at the top of a panel. Component types are auto-converted into ad hoc filters or [Quick filters](/help/components/filters/quick-filters.md) if compatible.
 
    Here is an example of how to create a filter for the Twitter referring domain:
 
