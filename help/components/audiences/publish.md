@@ -9,7 +9,7 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 >
 >This functionality is currently in [limited testing](/help/release-notes/releases.md).
 
-This topic discusses how to create and publish audiences discovered in Customer Journey Analytics (CJA) to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) in Adobe Experience Platform for customer targeting and personalization. 
+This topic discusses how to create and publish audiences identified in Customer Journey Analytics (CJA) to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) in Adobe Experience Platform for customer targeting and personalization. 
 
 Read this [overview](/help/components/audiences/audiences-overview.md) to familiarize yourself with the concept of CJA audiences.
 
@@ -36,9 +36,9 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
    | [!UICONTROL Name] | The name of the audience. |
    | [!UICONTROL Tags] | Any tags that you want assigned to the audience for organizational purposes. You can use a pre-existing tag or enter a new one.|
    | [!UICONTROL Description] | Add a good description of the audience, to differentiate it from others. |
-   | [!UICONTROL Refresh frequency] | The frequency at which you want to refresh the audience.<ul><li>You can choose to create a one-time audience (default) that needs no refreshing, which would be helpful for specific one-time campaigns, for example.</li><li>You can select other refresh intervals. For the 4-hour frequency, there is a limit of 150 audiences, since this refresh rate is very processing intensive. For other intervals, there is no maximum number of audiences.</li></ul> |
+   | [!UICONTROL Refresh frequency] | The frequency at which you want to refresh the audience.<ul><li>You can choose to create a one-time audience (default) that needs no refreshing. For example, this could be helpful for specific, one-time campaigns.</li><li>You can select other refresh intervals. For the 4-hour frequency, there is a limit of 150 audiences, since this refresh rate is very processing intensive. For other intervals, there is no maximum number of audiences.</li></ul> |
    | Expiration date | When the audience will stop refreshing. The default is 1 year from the creation date. Expiring audiences are treated similarly to expiring scheduled reports - the admin gets an email a month before the audience expires. |
-   | Refresh lookback window | Specifies how far back in your data window you want to go when creating this audience. The max. is 90 days. |
+   | Refresh lookback window | Specifies how far back in your data window you want to go when creating this audience. The max is 90 days. |
    | [!UICONTROL One-time date range] | Date range when you want the one-time audience to be published. |
    | [!UICONTROL Filter] | Filters are the main input to the audience. You can add up to 20 filters. These filters can be joined with `And` or `Or` operators.  |
    | [!UICONTROL View sample IDs] | A sample of IDs in this audience. Use the search bar to search for sample IDs. |
@@ -47,7 +47,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 1. Interpret the data preview.
 
-   The audience preview appears in the right rail. It allows for advanced analysis of the audience you have created.
+   The audience preview appears in the right rail. It allows for a summarized analysis of the audience you have created.
 
    ![](assets/data-preview.png)
 
@@ -72,7 +72,8 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 ## Use CJA audiences in Experience Platform
 
-CJA now takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). RTCP then examines each namespace/ID combination and looks for a profile that it may be part of. A profile is basically a cluster of linked namespaces, IDs and devices. If it finds a profile, it will add the namespace and ID to the other IDs in this profile as a segment membership attribute. Now, for example, "user@adobe.com" can be targeted across all his devices and channels. If no profile is found, a new one is created.
+
+CJA now takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). RTCP then examines each namespace/ID combination and looks for a profile that it may be part of. A profile is basically a cluster of linked namespaces, IDs and devices. If it finds a profile, it will add the namespace and ID to the other IDs in this profile as a segment membership attribute. Now, for example, "user@adobe.com" can be targeted across all their devices and channels. If a profile is not found, a new one is created.
 
 You can view CJA audiences in Platform by going to **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
 
