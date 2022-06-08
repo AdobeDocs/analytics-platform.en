@@ -21,6 +21,7 @@ Adobe Experience Platform:
 * Data Modeling: View Schemas, Manage Schemas
 * Data Management: View Datasets, Manage Datasets
 * Data Ingestion: Manage Sources
+* View Identity Namespaces
 
 Customer Journey Analytics
 * Product Admin Access
