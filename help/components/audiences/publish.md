@@ -36,7 +36,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
    | [!UICONTROL Name] | The name of the audience. |
    | [!UICONTROL Tags] | Any tags that you want assigned to the audience for organizational purposes. You can use a pre-existing tag or enter a new one.|
    | [!UICONTROL Description] | Add a good description of the audience, to differentiate it from others. |
-   | [!UICONTROL Refresh frequency] | The frequency at which you want to refresh the audience.<ul><li>You can choose to create a one-time audience (default) that needs no refreshing. For example, this could be helpful for specific, one-time campaigns.</li><li>You can select other refresh intervals. For the 4-hour frequency, there is a limit of 150 audiences, since this refresh rate is very processing intensive. For other intervals, there is no maximum number of audiences.</li></ul> |
+   | [!UICONTROL Refresh frequency] | The frequency at which you want to refresh the audience.<ul><li>You can choose to create a one-time audience (default) that needs no refreshing. For example, this could be helpful for specific, one-time campaigns.</li><li>You can select other refresh intervals. For the 4-hour frequency, there is a limit of 75 or 150 audiences, depending on your CJA entitlement. For other intervals, there is no maximum number of audiences.</li></ul> |
    | Expiration date | When the audience will stop refreshing. The default is 1 year from the creation date. Expiring audiences are treated similarly to expiring scheduled reports - the admin gets an email a month before the audience expires. |
    | Refresh lookback window | Specifies how far back in your data window you want to go when creating this audience. The max is 90 days. |
    | [!UICONTROL One-time date range] | Date range when you want the one-time audience to be published. |
@@ -80,11 +80,6 @@ You can view CJA audiences in Platform by going to **[!UICONTROL Segments]** > *
 You can drag CJA audiences into the segment definition for AEP segments.
 
 ![](assets/audiences-aep.png)
-
-If you opt to export this Audience to AEP Data lake, it will appear as a dataset conforming to the XDM Individual Profile Schema Class:
-
-![](assets/aep-datalake.png)
-
 
 ## Next steps
 
