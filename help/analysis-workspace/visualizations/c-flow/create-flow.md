@@ -95,7 +95,6 @@ To drill down further into the data, you have several options:
 | [!UICONTROL Collapse entire column] | Hide all nodes in a column. |
 
 >[!MORELIKETHIS]
->
-* [Flow overview](/help/analysis-workspace/visualizations/c-flow/flow.md)
+>[Flow overview](/help/analysis-workspace/visualizations/c-flow/flow.md)
 
 
