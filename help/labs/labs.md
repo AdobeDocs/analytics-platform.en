@@ -62,6 +62,11 @@ To launch and evaluate a prototype:
 
 1. Click **[!UICONTROL Submit]** to return to the main Previews portal.
 
+## CJA Labs prototypes
+
+* Natural-language insight generator: Provides a natural-language summary of any data that you are analyzing in a freeform table.
+* Visualization recommender: Recommends visualizations that pair well with your data.
+
 ## Additional information
 
 * Some prototypes within [!UICONTROL Labs] become Customer Journey Analytics features, others may not. Your feedback drives the decision, so review the prototypes and let Adobe know how valuable you find them.
