@@ -4,24 +4,21 @@ description: Latest CJA release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 ---
-# Current Customer Journey Analytics (CJA) release notes (May 2022)
+# Current Customer Journey Analytics (CJA) release notes (June 2022)
 
-**Last update**: May 19, 2022
+**Last update**: June 10, 2022
 
 ## Key features
 
 | Feature | Description | [Targeted Date](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| New Connection edit and creation UI | This streamlined experience lets you backfill data at the dataset level, enable a rolling data retention window, add to and remove datasets from a connection. [Learn more](/help/connections/create-connection.md) | May 18, 2022 |
-| Report Builder for CJA updates | Includes features such as scheduling and data block manager. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) | May 18, 2022 |
-| Customer AI Integration | Lets you ingest Customer AI models scores in CJA for further analysis in CJA Analysis workspace. Learn more - coming soon | TBD |
-| Attribution AI Integration | Lets you ingest the Attribution AI models scores in CJA for further analysis in CJA Analysis workspace. Learn more - coming soon | TBD |
+| Audience publishing to Real-time Customer Profile | Allows you to publish audiences discovered in CJA to AEP/RTCDP for customer targeting and personalization. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=en)| June 15, 2022 |
+| New Flow visualization UI | Provides additional functionality to our Flow visualization to make it more powerful and capable. Learn more (to follow) | June 15, 2022 |
+| Support for numeric fields as lookup keys and lookup values | Useful if you want to classify string values with a numeric field such as a COGS or margin on a product SKU. Allowing metrics from lookups helps you get these data points into reporting. Learn more (to follow) | June 15, 2022 |
+| Analytics labs in CJA | Support Labs in CJA so you can explore prototypes with cross-channel data. [Learn more](/help/labs/labs.md)| June 15, 2022 |
+| Share annotations in Mobile scorecards | You can display annotations that are created in Workspace—in Mobile Scorecards. This allows you to share contextual data nuances and insights about your organization and campaigns directly within Mobile Scorecard projects, viewable in the Analytics dashboards mobile app. Learn more (to follow) | June 15, 2022 |
 
 {style="table-layout:auto"}
-
-### CJA Fixes
-
-AN-279234; AN-284839; AN-285417
 
 >[!MORELIKETHIS]
 >[Customer Journey Analytics documentation updates](/help/release-notes/doc-changes.md)
