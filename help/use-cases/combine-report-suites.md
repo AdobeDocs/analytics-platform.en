@@ -30,3 +30,36 @@ Without the use of Data Prep to resolve the schema differences between **Dataset
 | eVar1 => a mix of search terms and business units |
 | eVar2 => a mix of customer categories and search terms |
 
+This situation will result in meaningless reports for eVar1 and eVar2:
+
+- The eVar fields will contain a mixture of values with different semantic meanings.
+- Search terms will be distributed between eVar1 and eVar2.
+- It will not be possible to use different attribution models for search terms, business units, and customer categories.
+
+## Using AEP Data Prep to resolve schema differences between report suites for use in CJA
+
+AEP's Data Prep functionality is integrated with ADC and can be used to resolve the schema differences described in the scenario above, resulting in eVars with consistent meanings in the CJA data view. What follows is a description of how this might be accomplished. The naming conventions used below can be customized to suit your needs.
+
+Before creating the source connection dataflows for Report Suite A and Report Suite B, create a custom field group in AEP (we'll call it **Unified Fields** in our example) which contains the following fields:
+
+| Unified Fields custom field group |
+| --- |
+| Search term |
+| Business unit |
+| Customer category|
+
+Create a new schema in AEP (we'll call it **Unified Schema** in our example.) Add the following field groups to the schema:
+
+| Field groups for Unified Schema |
+| --- |
+| XDM Experience Event |
+| Adobe Analytics Experience Event Template |
+| Unified Fields |
+
+When creating the source connection dataflow for Report Suite A, select **Unified Schema** for use in the dataflow. Add custom mappings as follows:
+
+| Report Suite A source field | Destination field from Unified Fields field group | 
+| --- | --- |
+| _experience.analytics.customDimensions.eVars.eVar1 | <path>.Search_term | 
+| _experience.analytics.customDimensions.eVars.eVar2 | <path>.Search_term |
+  
