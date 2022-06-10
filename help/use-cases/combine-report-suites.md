@@ -56,10 +56,92 @@ Create a new schema in AEP (we'll call it **Unified Schema** in our example.) A
 | Adobe Analytics Experience Event Template |
 | Unified Fields |
 
-When creating the source connection dataflow for Report Suite A, select **Unified Schema** for use in the dataflow. Add custom mappings as follows:
+When creating the source connection dataflow for **Report Suite A**, select **Unified Schema** for use in the dataflow. Add custom mappings as follows:
 
 | Report Suite A source field | Destination field from Unified Fields field group | 
 | --- | --- |
-| _experience.analytics.customDimensions.eVars.eVar1 | <path>.Search_term | 
-| _experience.analytics.customDimensions.eVars.eVar2 | <path>.Search_term |
+| \_experience.analytics.customDimensions.eVars.eVar1 | _\<path>_.Search_term | 
+| \_experience.analytics.customDimensions.eVars.eVar2 | _\<path>_.Customer_category |
   
+Note: The XDM path for your destination fields will depend on how you set up your custom field group.
+
+When creating the source connection dataflow for **Report Suite B**, again select **Unified Schema** for use in the dataflow. The workflow will show that two fields have a descriptor name conflict. This is because the descriptors for eVar1 and eVar2 are different in Report Suite B than they were in Report Suite A. But we already know this so we can safely ignore the conflict and use custom mappings as follows:
+
+| Report Suite B source field	| Destination field from Unified Fields field group | 
+| --- | --- |
+| \_experience.analytics.customDimensions.eVars.eVar1	| _\<path>_.Business_unit | 
+| _experience.analytics.customDimensions.eVars.eVar2	| _\<path>_.Search_term | 
+
+Now Create an **All Report Suites** connection for CJA, combining Dataset A and Dataset B.
+
+Create a **Global view** data view in CJA. Ignore the original eVar fields and include only the fields from the Unified Fields field group.
+
+Global View data view in CJA: 
+
+| Source field | Include in data view? |
+| --- | --- | 
+| \_experience.analytics.customDimensions.eVars.eVar1 | No |
+| \_experience.analytics.customDimensions.eVars.eVar2 | No |
+| _\<path>_.Search_term | Yes |
+| _\<path>_.Customer_category | Yes |
+| _\<path>_.Business_unit | Yes | 
+
+In essence you have now mapped eVar1 and eVar2 from the source report suites to three new fields. Note that another advantage of using Data Prep mappings is that the destination fields are now based on semantically meaningful names (Search term, Business Unit, Customer category) instead of the less meaningful eVar names (eVar1, eVar2.)
+
+Note: The Unified Fields custom field group, and associated field mappings can be added to existing ADC dataflows and datasets, however this will impact going-forward data only.
+
+## More than just report suites
+
+The capabilities of Data Prep to combine datasets with different schemas goes beyond Analytics report suites. Suppose you have a two datasets containing the following data:
+
+| Dataset A = Analytics report suite via ADC | 
+| --- |
+| eVar1 => Customer Category |
+
+| Dataset B = Call center data | 
+| --- |
+| Some_field => Customer Category | 
+
+Using Data Prep you can combine the Customer Category in eVar 1 in the Analytics data with the Customer Category in Some_field in the call center data. Here is one way you might do that. Again, the naming convention can be altered to suit your needs.
+
+Create a custom field group:
+
+| Customer Info custom field group |
+| --- |
+| Customer_category | 
+
+Create a schema in AEP. Add the following field groups to the schema:
+
+| Field groups for Extended Schema | 
+| --- | 
+| XDM Experience Event | 
+| Adobe Analytics Experience Event Template | 
+| Customer Info | 
+
+When creating the dataflow for **Dataset A**, select **Extended Schema** as your schema. Add custom mappings as follows:
+
+| Dataset A source field | Destination field from Customer Info field group |
+| --- | --- |
+| \_experience.analytics.customDimensions.eVars.eVar2 | _\<path>_.Customer_category | 
+
+When creating the dataflow for **Dataset B**, again select **Extended Schema** as your schema. Add custom mappings as follows:
+
+| Dataset B source field | Destination field from Customer Info field group |
+| --- | --- |
+| _\<path>_.Some_field | _\<path>_.Customer_category |
+
+Create a CJA connection which combines Dataset A and Dataset B. Create a data view in CJA, using the CJA connection you just created. Ignore the original eVar fields and include only the fields from the Customer Info field group.
+
+Data view in CJA:
+
+| Source field	| Include in data view? | 
+| ---  | --- |
+| \_experience.analytics.customDimensions.eVars.eVar1	| No |
+| \_experience.analytics.customDimensions.eVars.eVar2	| No |
+| _\<path>_.Customer_category |	Yes |
+  
+## Data Prep vs. Component ID
+
+As described above, Data Prep allows you to map different fields together across multiple Adobe Analytics report suites. This is helpful in CJA when you want to combine data from multiple datasets into a single CJA connection. However, if you intend to keep the report suites in separate CJA connections but you want to use one set of reports across those those connections and data views, changing the underlying Component ID in CJA provides a way to make reports compatible even if schemas are different. See Component Settings for more information.
+
+Changing the Component ID is a CJA-only function and does not impact data from ADC that is sent to RTCDP.
