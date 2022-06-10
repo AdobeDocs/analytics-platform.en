@@ -3,6 +3,7 @@ description: Use the flow visualization in a Workspace project.
 title: Configure a flow visualization
 feature: Visualizations
 role: User, Admin
+exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 ---
 # Configure a flow visualization
 
@@ -96,5 +97,3 @@ To drill down further into the data, you have several options:
 
 >[!MORELIKETHIS]
 >[Flow overview](/help/analysis-workspace/visualizations/c-flow/flow.md)
-
-
