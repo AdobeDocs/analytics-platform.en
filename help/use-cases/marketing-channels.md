@@ -1,16 +1,18 @@
 ---
 title: Use Marketing channel dimensions in Adobe Experience Platform
 description: Use the Analytics Data Connector to bring Marketing Channel processing rules into Adobe Experience Platform.
+exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
+solution: Customer Journey Analytics
+feature: Use Cases
 ---
-
 # Use Marketing channel dimensions in Adobe Experience Platform
 
-If your organization uses the [Analytics Data Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/analytics.html) to bring report suite data into CJA, you can configure a connection in CJA to report on Marketing Channel dimensions.
+If your organization uses the [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) to bring report suite data into CJA, you can configure a connection in CJA to report on Marketing Channel dimensions.
 
 ## Prerequisites
 
-* Report suite data must already be imported into Adobe Experience Platform using the [Analytics Data Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/analytics.html). Other sources of data are not supported, as Marketing channels rely on processing rules in an Analytics report suite.
-* Marketing channel processing rules must already be set up. See [Processing rules for Marketing Channels](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/c-rules.html) in the traditional Analytics Components guide.
+* Report suite data must already be imported into Adobe Experience Platform using the [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Other sources of data are not supported, as Marketing channels rely on processing rules in an Analytics report suite.
+* Marketing channel processing rules must already be set up. See [Processing rules for Marketing Channels](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/c-rules.html) in the traditional Analytics Components guide.
 
 ## Marketing Channel schema elements
 
@@ -18,8 +20,8 @@ Once you establish the Analytics Data Connector on a desired report suite, an XD
 
 1. [Create a connection](/help/connections/create-connection.md) that includes a dataset based on the Analytics Data Connector.
 2. [Create a data view](/help/data-views/create-dataview.md) that includes the following dimensions:
-   * **`channel.typeAtSource`**: Equivalent to the [Marketing channel](https://docs.adobe.com/content/help/en/analytics/components/dimensions/marketing-channel.html) dimension.
-   * **`channel._id`**: Equivalent to the [Marketing channel detail](https://docs.adobe.com/content/help/en/analytics/components/dimensions/marketing-detail.html)
+   * **`channel.typeAtSource`**: Equivalent to the [Marketing channel](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html) dimension.
+   * **`channel._id`**: Equivalent to the [Marketing channel detail](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-detail.html)
 3. Give each dimension the desired attribution model and persistence. If you want both first and last touch dimensions, drag each marketing channel dimension to the components area multiple times. Give each dimension the desired attribution model and persistence. Adobe also recommends giving each dimension a display name to make it easier for use in Workspace.
 4. Create the data view.
 
@@ -31,9 +33,13 @@ Your marketing channel dimensions are now available for use in Analysis Workspac
 >
 >There are several fundamental data differences between report suite data and Platform data. Adobe highly recommends adjusting your report suite's marketing channel processing rules to help facilitate proper data collection in Platform.
 
+>[!NOTE]
+>
+>To maximize effectiveness of Marketing Channels for Attribution IQ and Customer Journey Analytics, we have published some [revised best practices](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html).
+
 Marketing channel settings operate differently between Platform data and report suite data. Consider the following differences when setting up Marketing channels for CJA:
 
-* **Is First Page of Visit**: This rule criteria is common on several default marketing channel definitions. Any processing rule that contains this criteria is ignored in Platform (other criteria in the same rule still apply). Sessions are determined at data query time instead of at the time of data collection, preventing Platform from using this specific rule criteria. Adobe recommends removing the 'Is First Page of Visit' criteria from each marketing channel processing rule.
+* **Is First Page of Visit**: This rule criteria is common on several default marketing channel definitions. Any processing rule that contains this criteria is ignored in Platform (other criteria in the same rule still apply). Sessions are determined at data query time instead of at the time of data collection, preventing Platform from using this specific rule criteria. Adobe recommends re-evaluating any marketing channel processing rules containing the 'Is First Page of Visit' criteria, opting for alternative approaches that achieve your goals.
    
    ![First page of visit](assets/first-page-of-visit.png)
 

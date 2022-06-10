@@ -1,13 +1,14 @@
 ---
 title: Create a date range
 description: Create a date range for use in reporting.
+feature: Calendar
+exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 ---
-
 # Create a date range
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 You can create a custom date range using either of the following two methods:
 

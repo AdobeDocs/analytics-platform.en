@@ -1,8 +1,10 @@
 ---
 title: How replays work
 description: Understand the concept of "replay" in Cross-Channel Analytics
+exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
+solution: Customer Journey Analytics
+feature: Cross-Channel Analytics
 ---
-
 # How replays work
 
 Cross-Channel Analytics makes two passes on data on a given connection:
@@ -47,6 +49,10 @@ At regular intervals (once a week or once a day depending on the chosen lookback
 | `5` | `3579` | `Bob` | - | `Bob` | Bob logs in via mobile | `1` (Bob) |
 | `6` | - | - | `Bob` | `Bob` | Bob makes another call to customer service | `1` (Bob) |
 | `7` | `246` | - | - | `Bob` | Bob visits your site on his desktop again, unauthenticated | `1` (Bob) |
+
+>[!NOTE]
+>
+>Data is only replayed for the website dataset. The call center dataset remains unchanged, but matches up when the correct person ID is used.
 
 ## Recap
 

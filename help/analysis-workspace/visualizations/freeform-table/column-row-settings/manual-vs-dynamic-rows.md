@@ -1,13 +1,14 @@
 ---
 title: Dynamic vs static dimension items in freeform tables
-description: How to interact with dynamic and static dimension items in tables.
+description: How to interact with dynamic and static dimension items in tables
+feature: Visualizations
+exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 ---
-
 # Dynamic vs static dimension items in freeform tables
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 In Freeform tables, the rows and columns can contain various component values in them. These values can be dynamic (change with time) or static (do not change with time), depending on the analysis that you want to build.
 
@@ -27,7 +28,7 @@ Dynamic dimension items have the row filter option, and do **not** have lock and
 
 Static dimension items do not change with time; they are fixed components that are always returned in a freeform table. Static dimension items are preferred when you want to always analyze the same item, whether it be specific campaigns or specific days in the week.
 
-Any time you manually select and drop specific component values (dimension, metric, segment, date range) into a table, the result is a static list of rows or columns. Static dimension items can also be created if you choose to:
+Any time you manually select and drop specific component values (dimension, metric, filter, date range) into a table, the result is a static list of rows or columns. Static dimension items can also be created if you choose to:
 
 * From rows, right-click > [!UICONTROL Display only selected rows]
 * From columns, right-click > [!UICONTROL Make item static]
@@ -49,5 +50,4 @@ Dimension items from different dimensions can be added to the same table. The ro
 Dynamic and static rows behave differently in the freeform total row. By default:
 
 * Dynamic rows are summed server-side and de-duplicate metrics such as visits or visitors
-* Static rows are summed client-side and do **not** de-duplicate metrics. To calculate the total row server-side, change the Row setting to **Show grand total**. [Learn more](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
-
+* Static rows are summed client-side and do **not** de-duplicate metrics. To calculate the total row server-side, change the Row setting to **Show grand total**. [Learn more](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)

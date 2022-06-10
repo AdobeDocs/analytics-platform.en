@@ -1,17 +1,18 @@
 ---
 description: Learn how to specify the touchpoints to create a multi-dimensional fallout sequence.
 title: Configure a fallout visualization
+feature: Visualizations
+exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 ---
-
 # Configure a fallout visualization
 
 You can specify the touchpoints to create a multi-dimensional fallout sequence. Commonly, a touchpoint is a page on your site. However, touchpoints are not limited to pages. For example, you can add events, such as units, as well as unique visitors and return visits. You can also add dimensions, such as a category, browser type, or internal search term.
 
-You can even add segments within a touchpoint. For example, you might want to compare segments, such as iOS and Android users. Drag the desired segments to the top of the fallout and information about those segments is added to the fallout report. If you want to show only those segments, can you remove the All Visits baseline.
+You can even add filters within a touchpoint. For example, you might want to compare filters, such as iOS and Android users. Drag the desired filters to the top of the fallout and information about those filters is added to the fallout report. If you want to show only those filters, can you remove the All Visits baseline.
 
 There is no limitation on the number of steps you can add or the number of dimensions used.
 
-You can do pathing on eVars, including merchandising eVars and [listVars](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) (variables that can have multiple values per hit, such as products, listVars, merchandising eVars and list props). For example, suppose someone is looking at shoes,shirt on one page, and on the next page they're looking at shirt,socks. The next product flow report from shoes will be shirt and socks, NOT shirt.
+You can do pathing on eVars, including merchandising eVars and [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) (variables that can have multiple values per hit, such as products, listVars, merchandising eVars and list props). For example, suppose someone is looking at shoes,shirt on one page, and on the next page they're looking at shirt,socks. The next product flow report from shoes will be shirt and socks, NOT shirt.
 
 1. Drag a [!UICONTROL Fallout] visualization from the Visualizations drop-down into a [!UICONTROL Freeform Table].
 
@@ -31,7 +32,7 @@ You can do pathing on eVars, including merchandising eVars and [listVars](https:
 
    >[!NOTE]
    >
-   >Multiple Segments are joined with AND, but multiple items such as dimension items and metrics are joined with OR.
+   >Multiple filters are joined with AND, but multiple items such as dimension items and metrics are joined with OR.
 
    ![](assets/multiple_obj_touchpoint.png)
 
@@ -67,4 +68,4 @@ When you **right-click a touchpoint**, the following options appear:
 |Trend all touchpoints (%)|Trends all the touchpoint percentages in the fallout (except "All Visits", if it's included), on the same chart.|
 |Break down fallthrough at this touchpoint|View what visitors did between two touchpoints (this touchpoint and the next touchpoint) if they continued to the next touchpoint. This creates a freeform table showing your dimensions. You can replace dimensions and other elements of the table.|
 |Break down fallout at this touchpoint|View what people who did not make it through the funnel did immediately after the selected step.|
-|Create segment from touchpoint|Create a new segment from the selected touchpoint.|
+|Create filter from touchpoint|Create a new filter from the selected touchpoint.|

@@ -1,17 +1,17 @@
 ---
 title: Manage filters
 description: lean how to manage filters in Customer Journey Analytics
+exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 ---
-
 # Manage filters
 
-The Filter Manager offers many ways of curating segments, such as sharing, tagging, approving, copying, deleting, and marking as favorites.
+The Filter Manager offers many ways of curating filters, such as sharing, tagging, approving, copying, deleting, and marking as favorites.
 
 The Filter Manager shows you all the filters you own and that have been shared with you. Admin-level users can see all filters in the organization. This overview presents the user interface and the capabilities of the Filter Manager. 
 
 Access the Filter Manager by going to **[!UICONTROL Customer Journey Analysis]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]** in the top navigation.
 
-## Filter Manager UI
+## Filter Manager UI {#ui}
 
 ![](assets/filter-manager-ui.png)
 
@@ -21,7 +21,6 @@ Access the Filter Manager by going to **[!UICONTROL Customer Journey Analysis]**
 |  2  | Check boxes  | Check a filter in order to manage it.  |
 |  4  | Favorites  | Clicking the star next to a filter turns the star yellow and marks the filter as a favorite.  |
 |  5  | Title and description  | Provided in the Filter Builder. To edit the title and description, click the title link - this takes you back to the Filter Builder.  |
-|  6  | Report Suites  | This column indicates in which report suite the filter was last saved.  |
 |  7  | Owner  | Indicates who owns the filter. As a non-Admin, you can see only filters you own or those that were shared with you.  |
 |  8  | Tags (not checked in column selector, hence column not appearing)  | Tags that were applied to the filter, either by you or by people who shared the filter with you.  |
 |  9  | Shared with  | Lists individuals or groups (Admin only) or All (Admin only) that you shared the filter with.  |
@@ -29,11 +28,11 @@ Access the Filter Manager by going to **[!UICONTROL Customer Journey Analysis]**
 |  11  | Column selector  | (Top right) Lets you select which columns to display in the Filter Manager.  |
 |  12  | Shared icon  | Indicates that this filter is shared by you or with you.  |
 |  13  | Approved icon  | Indicates that this filter has been approved by an Administrator.  |
-|  14  | Other Filters  | Lets you see filters by Tags, Report Suites, Owners, and Other (Show All, Mine, Shared with Me, Approved, Favorites.)  |
+|  14  | Other Filters  | Lets you see filters by Tags, Data Views, Owners, and Other (Show All, Mine, Shared with Me, Approved, Favorites.)  |
 
-## Plan filters
+## Plan filters {#plan}
 
-Devoting some time to plan segments improves the chances that they will be useful for your organization and that their numbers will be kept in check.
+Devoting some time to plan filters improves the chances that they will be useful for your organization and that their numbers will be kept in check.
 
 * Consider the audience : Who will consume it? With whom will you share it? Which groups of people will use this filter and how should I tag it accordingly? This also means providing a good filter description. At minimum, the description should answer these questions:
 
@@ -49,9 +48,9 @@ Devoting some time to plan segments improves the chances that they will be usefu
 
 * Define your filters with view to a filter library that gives business users the ability to stack and reuse filter pieces or components in a modular fashion. What "modules" do you need to define to make this library a reality? 
 
-### Tag filters
+### Tag filters {#tag}
 
-In the Filter Manager, tagging filters allows you to organize them. All users can create tags for filters and apply one or more tags to a segment. However, you can see tags only for those filters that you own or that have been shared with you.
+In the Filter Manager, tagging filters allows you to organize them. All users can create tags for filters and apply one or more tags to a filter. However, you can see tags only for those filters that you own or that have been shared with you.
 
 What kinds of tags should you create? Here are some suggestions for useful tags:
 
@@ -73,12 +72,12 @@ To tag a filter:
 
     * enter a new tag name and press **[!UICONTROL Enter]**. 
 
-1. Click **[!UICONTROL Tag]** again to tag the segment. 
+1. Click **[!UICONTROL Tag]** again to tag the filter. 
 
 The tag should now appear in the Tags column. (Click the gear icon on the top right to manage your columns.)
 You can also filter on tags by going to **[!UICONTROL Filters > Tags]**. 
 
-### Approve filters
+### Approve filters {#approve}
 
 Within the Filter Manager, you can set up a workflow that includes approving filter for various levels of application, for specific departments or groups, and consistent with reporting policies.
 
@@ -88,7 +87,7 @@ Here is how to flag a filter as approved:
     
 1. Click **[!UICONTROL Approve]** in the filter management task bar.
 
-1. Consider sharing the approved segment/s with your organization.
+1. Consider sharing the approved filter/s with your organization.
     
 1. Click **[!UICONTROL OK]**.
 
@@ -96,9 +95,9 @@ Here is how to flag a filter as approved:
 
     ![](assets/seg_approved.png)
 
-1. You can also unapprove an approved segment by clicking **[!UICONTROL Unapprove]**. 
+1. You can also unapprove an approved filter by clicking **[!UICONTROL Unapprove]**. 
 
-### Share filters
+### Share filters {#share}
 
 Depending on your permissions, you can share filters with your whole organization, groups, or individual users. 
 
@@ -124,11 +123,10 @@ To share a filter:
 
 1. You can filter on filters shared with you by going to Filters > Other Filters > Shared with Me. 
 
-### Mark filters as favorites
+### Mark filters as favorites {#favorites}
 
-Marking segments as favorites is another way to organize them for ease of use.
+Marking filters as favorites is another way to organize them for ease of use.
 
 1. In the Filter Manager, check the star next to any filter that you want to mark as a favorite. The star turns yellow when you select it.
 
-1. You can also filter on favorites under Filters > Other Filters > Favorites. 
-
+1. You can also filter on favorites under Filters > Other Filters > Favorites.

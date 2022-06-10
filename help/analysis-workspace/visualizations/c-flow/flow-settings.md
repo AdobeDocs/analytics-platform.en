@@ -1,8 +1,9 @@
 ---
 description: Settings for the Flow visualization in Workspace
 title: Flow settings
+feature: Visualizations
+exl-id: 85de8ee7-b79f-4ac4-9601-a4e7f6fb3b2a
 ---
-
 # Flow settings
 
 | Setting | Description |
@@ -16,7 +17,7 @@ title: Flow settings
 | --- | --- |
 | Focus on this node | Change the focus to the selected node. The focus node appears at the center of the Flow diagram. |
 | Start Over | Returns you to the Freeform diagram builder, where you can build a new Flow diagram. |
-| Create Segment from this point in flow | Create a segment. This takes you into the Segment Builder, where you can configure the new segment. |
+| Create filter from this point in flow | Create a filter. This takes you into the filter Builder, where you can configure the new filter. |
 | Breakdown | Break the node down by available Dimensions, Metrics, or Time. |
 | Trend | Create a trended diagram for the node. |
 | Expand entire column | Expand a column to show all nodes. By default, only the top five nodes display. |

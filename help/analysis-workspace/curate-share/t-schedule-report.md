@@ -2,13 +2,14 @@
 description: Send an Analysis Workspace project via email or schedule it for delivery.
 keywords: Analysis Workspace
 title: Schedule projects
+feature: Curate and Share
+exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 ---
-
 # Schedule projects
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 From the Workspace **Share menu**, you can send Analysis Workspace projects via email to selected recipients. Files can be sent in CSV or PDF format. 
 
@@ -23,7 +24,7 @@ To send a file immediately to recipients via email:
 1. Click **Send Now**.
 1. (Optional) Click **Show scheduling options** to specify a delivery schedule.
 
-![Send file now](assets/send-file-now.png)
+![Send file now](assets/send-file-no-scheduling-options.JPG)
 
 ## Send file on schedule
 
@@ -37,15 +38,13 @@ To send a file on a recurring schedule to recipients via email:
 1. Specify the delivery frequency. Each frequency allows for different customizations. 
 1. Click **Send on schedule**.
 
-![](assets/send-on-schedule.png)
+![](assets/send-file.JPG)
 
 ## Scheduled Projects manager
 
 Scheduled Analysis Workspace projects can be managed under **Analytics > Components > Scheduled Projects**.
 
 In the Scheduled Projects Manager, you can edit and delete recurring project schedules. Search for a schedule in the search bar or by using the filter options in the left rail. You can filter by tag, approved schedules, owners and more.
-
-![](assets/scheduled-project-manager.png)
 
 The following are common actions in the Scheduled Projects manager:
 
@@ -58,4 +57,4 @@ The following are common actions in the Scheduled Projects manager:
 |**View expired schedules**|Navigate to the left rail > Other filters > Expired to see schedules that have expired. Click the title of the schedule to setup a new deliery schedule.|
 |**View schedule ID**|Navigate to column options in the top right and add the Schedule ID column to the table. The scheduled ID is often useful for debugging.|
 
-The Scheduled Projects Manager shows the items that a specific user has created. If the user account is disabled in the application, all scheduled deliveries stop. Scheduled project ownership can be **transferred** to a new user under **Admin > Analytics Users & Assets > Transfer Assets**.
+The Scheduled Projects Manager shows the items that a specific user has created. If the user account is disabled in the application, all scheduled deliveries stop.

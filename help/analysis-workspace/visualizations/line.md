@@ -1,9 +1,9 @@
 ---
 description: Use the line visualization to depict trended (time-based) data sets
 title: Line
-uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
+feature: Visualizations
+exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 ---
-
 # Line
 
 The Line visualization represents metrics using a line in order to show how values change over a period of time. A line chart can be used only when time is used as a dimension.

@@ -1,8 +1,9 @@
 ---
 description: Lets you see how a value you are interested in compares to or measures against other performance ranges (goals).
 title: Bullet graph
+feature: Visualizations
+exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 ---
-
 # Bullet graph
 
 Lets you see how a value you are interested in compares to or measures against other performance ranges (goals).

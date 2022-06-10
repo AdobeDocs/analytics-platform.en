@@ -1,9 +1,10 @@
 ---
 description: In the calendar, you can specify dates and date ranges, or select a preset.
 title: Calendar and date ranges overview
-uuid: 3d7727ba-9070-4f7c-815f-c98baa4e3a2d
+feature: Calendar
+solution: Customer Journey Analytics
+exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
 ---
-
 # Calendar and date ranges overview
 
 In the calendar, you can specify dates and date ranges, or select a preset.
@@ -16,7 +17,7 @@ The first click on a calendar starts a date range selection. The second click co
 
 You can also drag dates (and time dimensions) into a Workspace project. You can select specific days, weeks, months, years, or a rolling date.
 
-[Using Date Ranges and Calendar in Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html) (4:07)
+[Using Date Ranges and Calendar in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html) (4:07)
 
 | Setting | Description |
 | --- | --- |

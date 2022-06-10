@@ -1,13 +1,14 @@
 ---
 description: You can download data from Analysis Workspace by copying it, or in PDF and CSV formats.
 title: Download PDF or CSV files
+feature: Curate and Share
+exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 ---
-
 # Download PDF or CSV files
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 There are several different ways you can export data from Analysis Workspace, depending on what set of data you want to analyze outside of the tool and who needs to receive the information. Exported data can be in the form of copied data, CSV or PDF files. A PDF is typically preferred if you want visualizations included in the file, while a CSV (or copied data) is preferred if you simply want plain-text data.
 
@@ -19,7 +20,7 @@ You can download a full project by going to **[!UICONTROL Project > Download as 
 
 For project downloads, keep in mind:
 
-* The project can be saved or unsaved when you request a project download. However, only saved projects can be [scheduled](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html). 
+* The project can be saved or unsaved when you request a project download. However, only saved projects can be [scheduled](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html). 
 * PDFs downloaded in the browser can take several minutes to export because the project is re-run on Adobe servers before rendering in PDF format. We recommend not leaving the project until the PDF downloads in your browser. However, you can continue to make changes to the project while you wait. If a PDF takes longer than 5 minutes to render, you will be prompted to email it instead.
 * PDF downloads are rendered as a single page with no pagination applied.
 * When a project is rendered to PDF, we render what is on the page. If a project has custom-sized visualizations and panels, you need to change them to be auto-sized (button in top-right corner) so that there will be no truncated content.
@@ -46,7 +47,7 @@ The right-click option **[!UICONTROL Download data as CSV]** allows you to downl
 
 ## Download items as CSV {#download-items}
 
-If you want to analyze more than the visible 400 rows of data in a table, right-click the table header or any row and select **Download items as CSV (Dimension name)**. This option will export up to 50,000 dimension items (based on the table sort) for the selected dimension, with filters and segments applied. If you chose this option from the top of the table, the first dimension in the table will be exported. While no limits are enforced in the freeform table, it is recommended that the Download items option be used in tables with less than 20 columns to ensure optimal performance.
+If you want to analyze more than the visible 400 rows of data in a table, right-click the table header or any row and select **Download items as CSV (Dimension name)**. This option will export up to 50,000 dimension items (based on the table sort) for the selected dimension, with filters and filters applied. If you chose this option from the top of the table, the first dimension in the table will be exported. While no limits are enforced in the freeform table, it is recommended that the Download items option be used in tables with less than 20 columns to ensure optimal performance.
 
 >[!TIP]
 >
@@ -60,11 +61,11 @@ You can multi-task within the project and even navigate to a new Workspace proje
 
 Features of the table will be applied to the downloaded file as follows:
 
-* All panel segments are applied as filters.
+* All panel filters are applied as filters.
 * Breakdowns **above** the selected dimension in the table are applied as filters above each column. 
 * Breakdowns **below** the selected dimension in the table are removed.
 
-In the example above, Page items are downloaded with the panel segment (New Visitors Customers) and components above (Marketing Channel = Email) applied as filters, and the components below (Mobile Device Type) removed from the downloaded CSV.
+In the example above, Page items are downloaded with the panel filter (New Visitors Customers) and components above (Marketing Channel = Email) applied as filters, and the components below (Mobile Device Type) removed from the downloaded CSV.
 
 ![](assets/downloaded-file.png)
 
@@ -84,5 +85,4 @@ If you request more than one download at a time, you will receive a notification
 | --- | --- |
 | Why is my downloaded PDF one page? | Workspace does not paginate downloaded PDFs at this time. |
 | Can I export more than 50,000 items with the “Download items as CSV” option? | While each download can contain up to 50,000 dimension items, you can change the sort of your table to retrieve longer tail items, or apply a filter to download more specific items. |
-| What does **[!UICONTROL Copy visualization]** do? | **[!UICONTROL Copy visualization]** is not an export option. It allows you to copy a visualization or panel from one place in Workspace to another. For example, from one panel to another in the same project, or from one project to another project. [Intra-linking video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |
-
+| What does **[!UICONTROL Copy visualization]** do? | **[!UICONTROL Copy visualization]** is not an export option. It allows you to copy a visualization or panel from one place in Workspace to another. For example, from one panel to another in the same project, or from one project to another project. [Intra-linking video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |

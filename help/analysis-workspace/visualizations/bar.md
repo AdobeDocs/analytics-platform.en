@@ -1,8 +1,9 @@
 ---
 description: The Bar visualization shows vertical bars representing various values across one or more metrics.
 title: Bar and bar stacked
+feature: Visualizations
+exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 ---
-
 # Bar and bar stacked
 
 ## Bar {#section_2E96E55D4E8E488CBCA6A3508DDF3918}
@@ -22,4 +23,3 @@ This visualization is like a bar chart, but with the series bars stacked on top 
 A new visualization setting on bar stacked visualizations turns the chart into a "100% stacked" visualization:
 
 ![](assets/stacked_100_percent.png)
-

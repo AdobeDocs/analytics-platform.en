@@ -1,8 +1,10 @@
 ---
 title: Cross-Channel Analytics overview
 description: Re-key visitor ID's from multiple datasets to stitch visitors together.
+exl-id: 69763313-de27-4487-8e32-8277f1f693d8
+solution: Customer Journey Analytics
+feature: Cross-Channel Analytics
 ---
-
 # Cross-Channel Analytics overview
 
 **Journey IQ: Cross-Channel Analytics** is a feature that allows you to re-key a dataset's person ID, which enables a seamless combination of multiple datasets. CCA looks at user data from both authenticated and unauthenticated sessions to generate a stitched ID. Using Cross-Channel Analytics, you can answer questions such as:
@@ -32,25 +34,41 @@ Before using Cross-Channel Analytics, make sure that your organization is prepar
 
 ## Limitations
 
+>[!IMPORTANT]
+>
+>Please be aware that any change to the global event dataset schema has to be applied also in the new stitched dataset schema, otherwise it will break the stitched dataset.
+>
+>Also, if you remove the source dataset, the stitched dataset stops processing and gets removed by the system.
+
 Cross-Channel Analytics is a groundbreaking and robust feature, but has limitations on how it can be used.
 
 * Current rekeying capabilities are limited to one step (persistent ID to transient ID). Multiple-step rekeying (for example, persistent ID to a transient ID, then to another transient ID) is not supported.
 * Only event datasets are supported. Other datasets, such as lookup datasets, are not supported.
 * Custom ID maps used in your organization are not supported.
 * The Adobe Co-op graph and Private graph are not supported.
+* Cross-Channel Analytics does not transform the field used for stitching in any manner. Field-based stitching uses the value in the specified field as it exists in the unstitched dataset within data lake. The stiching process is case sensitive. For example, if sometimes the word 'Bob' appears in the field, and sometimes the word 'BOB' appears, these will be treated as two separate people.
+* Given field-based stitching is case-sensitive, for Analytics datasets generated through the Analytics data connector, Adobe recommends reviewing any VISTA rules or processing rules that apply to the transient ID field to ensure that none of these rules are introducing new forms of the same ID. For example, you should ensure that no VISTA or processing rules are introducing lowercasing to the transient ID field on only a portion of the events.
+* Field-based stitching does not combine or concatenate fields. 
+* The transient ID field should contain a single type of ID (i.e. IDs from a single namespace). For instance, the transient ID field should not contain a combination of login IDs and email IDs.
+* If multiple events occur with the same timestamp for the same persistent ID, but with different values in the transient ID field, field-based stitching will choose based on alphabetical order. So if persistent ID A has two events with the same timestamp and one of the events specifies Bob and the other specifies Ann, field-based stitching will choose Ann.
+* Cross-Channel Analytics keeps track of each persistent ID value for 1 year (TTL = 1 year). If a device has no activity for more than one year and then starts having activity once again, the new events will be associated with an anonymous person until the user is re-identified (such as via a new login).
+* If a device is shared by multiple people and the total number of transitions between users exceeds 50.000, CCA stops stitching data for that device.
+
 
 ## Enable Cross-Channel Analytics
 
 Once your organization meets all prerequisites and understands its limitations, you can follow these steps to start using it in CJA.
 
-1. Import the desired data into Adobe Experience Platform. See [Create a schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html) and [Ingest data](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) in the Adobe Experience Platform documentation.
-1. Contact your Adobe Account Manager that includes the following:
+1. Import the desired data into Adobe Experience Platform. See [Create a schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) and [Ingest data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) in the Adobe Experience Platform documentation.
+1. Contact Adobe Customer Support with the following information:
    * A request to enable Cross-Channel Analytics
    * The dataset ID for the dataset that you want to rekey
    * The column name of the persistent ID for the desired dataset (Identifier that appears on every row)
    * The column name of the transient ID for desired dataset (The person identifier link between datasets)
-   * Your preference of [replay](replay.md) frequency and lookback length. Options include a replay once a week with a 7-day lookback window, or a replay every day with a 1-day lookback window.
-1. The Adobe Account Manager enables Cross-Channel Analytics upon receiving your request. Once enabled, a new rekeyed dataset appears in Adobe Experience Platform containing a new person ID column. Your Adobe Account Manager can provide the new dataset ID and person ID column name.
+   * Your preference of [replay](replay.md) frequency and lookback length. Options include a replay once a week with a 7-day lookback window, or a replay every day with a 1-day lookback window
+   * Sandbox name.
+1. The Adobe Customer Support will work with Adobe engineering to enable Cross-Channel Analytics upon receiving your request. Once enabled, a new rekeyed dataset that contains a new person ID column appears in Adobe Experience Platform. Adobe Customer Support can provide the new dataset ID and person ID column name.
+1. When first turned on, Adobe will provide a backfill of stitched data that goes back as far as the beginning of the previous month (up to 60 days.) In order to do this backfill, the transient ID must exist in the unstitched data back that far in time.
 1. [Create a connection](../create-connection.md) in CJA using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
 1. [Create a data view](/help/data-views/create-dataview.md) based on the connection.
 

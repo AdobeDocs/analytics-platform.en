@@ -1,45 +1,62 @@
 ---
 git-repo: https://github.com/adobedocs/analytics-platform.en
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe analytics
 sub-product: customer journey
 solution: Customer Journey Analytics
 type: Documentation
 index: yes
 user-guide-title: Customer Journey Analytics Guide
-user-guide-description: This guide provides self-help assistance for Customer Journey Analytics, Adobe's next-generation solution for cross-channel analytics, based on Adobe Experience Platform.
+user-guide-description: This guide provides support for Customer Journey Analytics, Adobe's next-generation solution for cross-channel analytics, based on Adobe Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
-breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-solution-title: Experience Cloud
-solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
-solution-image: assets/experience-cloud-logo-24.png
-getting-started-title: Experience League
-getting-started-url: https://landing.adobe.com/experience-league/
-tutorials-title: Tutorials
-tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 ---
 
 # Customer Journey Analytics Guide {#using}
 
 + [Customer Journey Analytics Guide](getting-started/cja-landing.md)
++ Release Notes {#releases}
+  + [Latest release](release-notes/latest.md)
+  + [2022 releases](release-notes/2022.md)
+  + [2021 releases](release-notes/2021.md)
+  + [2020 releases](release-notes/2020.md)
+  + [CJA releases](release-notes/releases.md)
+  + [CJA documentation updates](release-notes/doc-changes.md)
 + Customer Journey Analytics overview {#cja-overview}
   + [Customer Journey Analytics overview](getting-started/cja-overview.md)
   + [Getting Started](getting-started/cja-getting-started.md)
+  + [Customer Journey Analytics landing page](getting-started/landing.md)
   + [Frequently asked questions](getting-started/cja-faq.md)
+  + [Adobe Analytics to Customer Journey Analytics evolution](getting-started/aa-to-cja.md)
+  + [User Guide for new Customer Journey Analytics users](getting-started/aa-to-cja-user.md)
   + [Customer Journey Analytics feature support](getting-started/cja-aa.md)
+  + [Deletion implications](getting-started/cja-deletion.md)
   + [CJA glossary](getting-started/cja-glossary.md)
 + Connections {#cja-connections}
+  + [Connections overview](connections/overview.md)
   + [Create a connection](connections/create-connection.md)
-  + [Manage connections](connections/manage-connection.md)
-  + [Estimate connection size](connections/estimate-connection-size.md)
+  + [Manage connections](connections/manage-connections.md)
   + [Combined event datasets](connections/combined-dataset.md)
+  + [Standard lookups](connections/standard-lookups.md)
   + Cross-Channel Analytics {#cca}
     + [Cross-Channel Analytics overview](connections/cca/overview.md)
     + [How replays work](connections/cca/replay.md)
     + [Cross-Channel Analytics FAQ](connections/cca/faq.md)
 + Data Views {#cja-dataviews}
-  + [Create a data view](data-views/create-dataview.md)
-  + [Configure data views and attribution](data-views/configure-dataviews.md)
+  + [Data views overview](data-views/data-views.md)
+  + [Create or edit a data view](data-views/create-dataview.md)
+  + Component Settings {#component-settings}
+    + [Component settings overview](data-views/component-settings/overview.md)
+    + [Attribution](data-views/component-settings/attribution.md)
+    + [Behavior](data-views/component-settings/behavior.md)
+    + [Format](data-views/component-settings/format.md)
+    + [Include exclude values](data-views/component-settings/include-exclude-values.md)
+    + [Metric deduplication](data-views/component-settings/metric-deduplication.md)
+    + [No value options](data-views/component-settings/no-value-options.md)
+    + [Persistence](data-views/component-settings/persistence.md)
+    + [Substring](data-views/component-settings/substring.md)
+    + [Value bucketing](data-views/component-settings/value-bucketing.md)
+  + [Standard component reference](data-views/component-reference.md)
+  + [Data views use cases](data-views/data-views-usecases.md)
 + Workspace projects {#cja-workspace}
   + [Analysis Workspace overview](analysis-workspace/home.md)
   + [Perform basic analysis](analysis-workspace/perform-basic-analysis.md)
@@ -47,7 +64,6 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
   + Projects {#build-workspace-project}
     + [Projects overview](analysis-workspace/build-workspace-project/freeform-overview.md)
     + [Save projects](analysis-workspace/build-workspace-project/save-projects.md)
-    + [Templates](analysis-workspace/build-workspace-project/starter-projects.md)
     + [Hotkeys (Shortcuts)](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Color Palettes](analysis-workspace/build-workspace-project/color-palettes.md)
     + [View Density](analysis-workspace/build-workspace-project/view-density.md)
@@ -73,7 +89,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
       + [Apply filters in fallout analysis](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
     + Flow {#flow}
       + [Flow overview](analysis-workspace/visualizations/c-flow/flow.md)
-      + [Configure a flow visualization](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
+      + [Configure a flow visualization](analysis-workspace/visualizations/c-flow/create-flow.md)
       + [Flow settings](analysis-workspace/visualizations/c-flow/flow-settings.md)
       + [Inter-dimensional flows](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
     + [Histogram](analysis-workspace/visualizations/histogram.md)
@@ -94,7 +110,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Blank panel](analysis-workspace/c-panels/blank-panel.md)
     + [Freeform panel](analysis-workspace/c-panels/freeform-panel.md)
     + [Quick Insights panel](analysis-workspace/c-panels/quickinsight.md)
-  + Curate or Share projects {#curate-share} 
+  + Curate, Share and Schedule projects {#curate-share}
     + [Share menu](analysis-workspace/curate-share/send-schedule-files.md)
     + [Curate projects](analysis-workspace/curate-share/curate.md)
     + [Share projects](analysis-workspace/curate-share/share-projects.md)
@@ -106,6 +122,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Attribution overview](analysis-workspace/attribution/overview.md)
     + [Attribution models and lookback windows](analysis-workspace/attribution/models.md)
     + [Algorithmic attribution](analysis-workspace/attribution/algorithmic.md)
+    + [Attribution best practices](analysis-workspace/attribution/best-practices.md)
     + [FAQ](analysis-workspace/attribution/faq.md)
   + Virtual Analyst {#virtual-analyst}
     + [Virtual Analyst overview](analysis-workspace/virtual-analyst/overview.md)
@@ -113,6 +130,7 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
       + [Anomaly Detection overview](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
       + [View anomalies in Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
       + [Statistical techniques used in anomaly detection](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
+  + [User preferences](analysis-workspace/user-preferences.md)
   + Workspace FAQs {#workspace-faq}
     + [Frequently asked questions](analysis-workspace/workspace-faq/faq.md)
     + [Optimize Analysis Workspace performance](analysis-workspace/workspace-faq/optimizing-performance.md)
@@ -121,38 +139,88 @@ tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
     + [Administration requirements](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility in Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
     + [Long-tail in Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
++ Report Builder {#cja-reportbuilder}
+  + [Report Builder Overview](report-builder/report-buider-overview.md)
+  + [Report Builder Set Up](report-builder/report-builder-setup.md)
+  + [Create a Data Block](report-builder/create-a-data-block.md)
+  + [Report Builder Hub](report-builder/report-builder-hub.md)
+  + [Select a Date Range](report-builder/select-date-range.md)
+  + [Work with Filters](report-builder/work-with-filters.md)
+  + [Filter Dimensions](report-builder/filter-dimensions.md)
+  + [Manage Data Blocks](report-builder/manage-reportbuilder.md)
+  + [Report Builder Settings](report-builder/report-builder-settings.md)
 + Components {#cja-components}
   + [Components overview](components/overview.md)
+  + Annotations {#annotations}
+    + [Annotations overview](components/annotations/overview.md)
+    + [Create annotations](components/annotations/create-annotations.md)
+    + [Manage annotations](components/annotations/manage-annotations.md)
+    + [View annotations](components/annotations/view-annotations.md)
+  + Audiences {#audiences}
+    + [Audiences overview](components/audiences/audiences-overview.md)
+    + [Create and publish audiences](components/audiences/publish.md)
+    + [Manage audiences](components/audiences/manage.md)
   + Dimensions {#dimensions}
     + [Preview dimensions](components/dimensions/view-dimensions.md)
     + [Break down dimensions](components/dimensions/t-breakdown-fa.md)
     + [Time-parting dimensions](components/dimensions/time-parting-dimensions.md)
+    + [Dimensions with very high cardinality](components/dimensions/high-cardinality.md)
   + [Metrics](components/apply-create-metrics.md)
   + Filters {#cja-filters}
     + [Filters overview](components/filters/filters-overview.md)
     + [Create a filter](components/filters/create-filters.md)
     + [Manage filters](components/filters/manage-filters.md)
+    + [Quick filters](components/filters/quick-filters.md)
+    + [Ad hoc filters](components/filters/ad-hoc-filters.md)
+    + [Operators](components/filters/operators.md)
   + Calculated Metrics {#cja-calcmetrics}
     + [Calculated metrics overview](components/calc-metrics/calc-metr-overview.md)
-    + [Create a calculated metric](components/calc-metrics/create.md)
-    + [Manage calculated metrics](components/calc-metrics/manage.md)
+    + Calculated Metrics workflow {#cm-workflow}
+      + [Calculated metrics workflow](components/calc-metrics/cm-workflow/cm-workflow.md)
+      + [Find metrics](components/calc-metrics/cm-workflow/cm-finding.md)
+      + [Build Metrics](components/calc-metrics/cm-workflow/cm-build-metrics.md)
+      + [Metric Type and Attribution](components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
+      + [Build a simple "Page Views per Visits" metric](components/calc-metrics/cm-workflow/cm-pvv.md)
+      + [Filtered metrics](components/calc-metrics/cm-workflow/metrics-with-segments.md)
+      + [Stack and replace segments](components/calc-metrics/cm-workflow/cm-stack-seg.md)
+      + [Filtered and weighted metrics](components/calc-metrics/cm-workflow/cm-weighted-metric.md)
+      + [Use functions](components/calc-metrics/cm-workflow/cm-using-functions.md)
+      + [Participation Metric](components/calc-metrics/cm-workflow/participation-metric.md)
+      + [Tag calculated metrics](components/calc-metrics/cm-workflow/cm-tagging.md)
+      + [Approve calculated metrics](components/calc-metrics/cm-workflow/cm-approving.md)
+      + [Share calculated metrics](components/calc-metrics/cm-workflow/cm-sharing.md)
+      + [Calculated Metric Manager](components/calc-metrics/cm-workflow/cm-manager.md)
     + [Basic functions](components/calc-metrics/cm-functions.md)
     + [Advanced functions](components/calc-metrics/cm-adv-functions.md)
-  + Date ranges {cja-date-ranges}
+  + Date ranges {#cja-date-ranges}
     + [Date ranges overview](components/date-ranges/overview.md)
     + [Create a date range](components/date-ranges/create.md)
     + [Manage date ranges](components/date-ranges/manage.md)
     + [Calendar overview](components/date-ranges/calendar.md)
     + [Create custom date ranges](components/date-ranges/custom-date-ranges.md)
     + [Date comparison](components/date-ranges/time-comparison.md)
++ Analytics dashboards {#cja-dashboards}
+  + [Analytics dashboards - Overview](mobile-app/home.md)
+  + [Curator tasks](mobile-app/curator.md)
+  + [Create a scorecard](mobile-app/create-scorecard.md)
+  + [Set up executives to use dashboards](mobile-app/set-up-execs.md)
+  + [Executive user quick start guide](mobile-app/executive.md)
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
   + [Use arrays of objects](use-cases/object-arrays.md)
+  + [Use binding dimensions and metrics](use-cases/binding-dimensions-metrics.md)
   + [(B2B) Add account-level data as a lookup dataset](use-cases/b2b.md)
+  + [Ingest Marketo Engage data into AEP and report in CJA](use-cases/marketo.md)
+  + [Ingest AEP audiences into CJA](use-cases/ingest-aep-segments.md)
+  + [Analyze data across channels](use-cases/cross-channel.md)
   + [Import call center and web data](use-cases/call-center.md)
   + [Data ingestion use cases](use-cases/data-ingestion.md)
   + [Use Marketing channel dimensions](use-cases/marketing-channels.md)
-  + [Add global lookups to your datasets](use-cases/global-lookups.md)
+  + [Ingest Google Analytics data into Adobe Experience Platform](use-cases/ga-to-cja.md)
+  + [Report on Google Analytics data in CJA](use-cases/ga-to-cja-reporting.md)
++ Labs {#labs}
+  + [Labs User Guide](labs/labs.md)
++ Troubleshooting {#troubleshooting}
+  + [Compare your Adobe Analytics data to CJA data](troubleshooting/compare.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
-+ [CJA documentation updates](doc-changes.md)

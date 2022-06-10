@@ -2,24 +2,20 @@
 description: Curation lets you limit components before sharing a project.
 keywords: Analysis Workspace curation
 title: Curate projects
+feature: Curate and Share
+exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 ---
-
 # Curate projects
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
-Curation lets you limit the components (dimensions, metrics, segments, date ranges) before sharing a project. When a recipient opens the project, they will see a limited set of components that you have curated for them. Curation is an optional but recommended step before sharing a project. 
+Curation lets you limit the components (dimensions, metrics, filters, date ranges) before sharing a project. When a recipient opens the project, they will see a limited set of components that you have curated for them. Curation is an optional but recommended step before sharing a project. 
 
 >[!NOTE]
-> Product profiles are the primary mechanism governing which components a user can see. They are managed through the Adobe Experience Cloud Admin Console. Curation is a secondary filter. 
+> Product profiles are the primary mechanism governing which components a user can see. They are managed through the [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). Curation is a secondary filter. 
 
 ## Apply project curation
 
 1. Click **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**. 
-   The components that are used in the project will automatically be added. 
-   **Note**: If a project has multiple report suites, you will see a curate field for each report suite in the project. 
+   The components that are used in the project will automatically be added.  
 1. (Optional) To add more components, drag components you want to share from the left rail to the [!UICONTROL Curate Components] field.  
 1. Click **[!UICONTROL Done]**.
 
@@ -41,23 +37,17 @@ To remove project curation and restore the full set of components in the left ra
 1. Click **[!UICONTROL Remove Curation]**. 
 1. Click **[!UICONTROL Done]**.
 
-## Virtual Report Suite (VRS) curation
+## Component curation options
 
-To apply curation at a report-suite level, so that it applies to many projects at once, you can [curate components in a Virtual Report suite (VRS)](https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-components.html). 
-
->[!NOTE]
-> VRS curation is always applied before project curation. This means that even if your curated project includes certain components, they will be filtered out if the curated VRS does not include them.
-
-## Show All components option
-
-In a curated project or VRS, the recipient will be presented with the option to **[!UICONTROL Show All]** components in the left rail. [!UICONTROL Show All] reveals different sets of components, depending on:
+In a curated project, the recipient will be presented with the option to **[!UICONTROL Show All]** components in the left rail. [!UICONTROL Show All] reveals different sets of components, depending on:
 
 * The user’s permission level (admin or non-admin)
 * Project role (owner/editor or not)
-* Type of curation applied (VRS or project)
+* Type of curation applied (at the project level)
 
-|Curation Type|Admins|Non-Admin project owner or edit role|Non-Admin duplicate or view role|
-|---|---|---|---|
-|Curated VRS|All non-curated VRS components|Non-curated VRS components that this role owns or that have been shared with them|Non-curated VRS components that this role owns or that have been shared with them|
-|Curated Project|All non-curated project components|All non-curated project components|Non-curated project components that this role owns or that have been shared with them|
-|Curated Project in a Curated VRS| All non-curated components, shown under **[!UICONTROL Non-Curated Project Components]** and **[!UICONTROL Non-Curated VRS Components]**| All non-curated project components AND non-curated VRS components that this role owns or that have been shared with them|Non-curated VRS and project components that this role owns or that have been shared with them|
+| Curation type | Admin can see | Non-admin project owner (or edit role) can see | Non-admin duplicate role can see |
+| --- | --- | --- | --- |
+| **Components "hidden" from a data view** | All data view components available for reporting (hidden components require clicking "Show all") | Not available for reporting | Not available for reporting |
+| **Components added or removed from a data view** | Only components added to the data view (hidden or not hidden). Admins cannot report on fields or components that are not defined by the data view. | Only components added to the data view, or components owned by or shared with the user. Hidden components are not available (like VRS curation). | Only components added to the DV, are not hidden and have been included in the Project curation. | 
+| **Curated components in a Project** | All data view components available for reporting (hidden components require clicking "Show all") | All non-hidden data view components (requires clicking "show all") | Only curated components, plus any components owned or shared with the user |
+| **Curated Project using a data view with hidden components** | All data components available for reporting (hidden and non-curated components require clicking "Show all")| All non-curated project components, all non-hidden data view components, and any components owned by or shared with the user | Only curated components, plus any components owned by or shared with the user |

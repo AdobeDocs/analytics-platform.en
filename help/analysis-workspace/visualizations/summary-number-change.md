@@ -1,9 +1,9 @@
 ---
 description: Use the Summary Number and Change visualizations to display important data points in a project.
 title: Summary Number and Summary Change
-uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
+feature: Visualizations
+exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 ---
-
 # Summary Number and Summary Change
 
 ## Summary Number visualization {#summary-number}
@@ -37,7 +37,7 @@ Click the **Visualization settings** gear in to the top right to configure the S
 
 ## Summary Change visualization {#summary-change}
 
-Use the Summary Change visualization to show the delta (change) between two numbers. The green and red color of the Summary Change can be controlled through [custom event polarity](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
+Use the Summary Change visualization to show the delta (change) between two numbers. The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
 
 This visualization behaves in the following ways:
 

@@ -1,11 +1,12 @@
 ---
 description: Accessibility support features in Analysis Workspace
 title: Accessibility in Analysis Workspace
+feature: FAQ
+exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 ---
-
 # Accessibility in Analysis Workspace
 
-Learn about accessibility support in [!UICONTROL Analysis Workspace], the premier analysis tool for Adobe Analytics. 
+Learn about accessibility support in [!UICONTROL Analysis Workspace], the premier analysis tool for Customer Journey Analytics. 
 
 Accessibility refers to making products usable for people with visual, auditory, cognitive, motor, and other disabilities. Examples of accessibility features for software products include screen reader support, text equivalents for graphics, keyboard shortcuts, change of display colors to high contrast, and so on. 
 
@@ -41,7 +42,7 @@ Navigation in [!UICONTROL Analysis Workspace] works top > down, and left > right
 
 ### Keyboard shortcuts (hotkeys) 
 
-[!UICONTROL Analysis Workspace] offers a rich set of [keyboard shortcuts](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) for a more seamless workflow. Some common shortcuts for navigation, analysis creation, and insight democratization are listed below. 
+[!UICONTROL Analysis Workspace] offers a rich set of [keyboard shortcuts](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) for a more seamless workflow. Some common shortcuts for navigation, analysis creation, and insight democratization are listed below. 
 
 #### Navigation
 
@@ -60,9 +61,9 @@ Navigation in [!UICONTROL Analysis Workspace] works top > down, and left > right
 |Alt + 1 |New freeform table |
 |Ctrl + Shift + C |New calculated metric |
 |Ctrl + Shift + D |New date range |
-|Ctrl + Shift + E |New segment |
+|Ctrl + Shift + E |New filter |
 |Ctrl + Z |Undo |
-|Hold shift (in the panel segment dropzone) |Create a [dropdown filter](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
+|Hold shift (in the panel filter dropzone) |Create a [dropdown filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
 
 #### Democratization
 
@@ -83,7 +84,7 @@ A screen reader reads text that appears on the computer screen. It also reads no
 
 [!UICONTROL Analysis Workspace] strives for WCAG 2.1 AA conformance, including requirements for color contrast. 
 
-In addition, users can set their own preferred color palette for a project under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Project color palette](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html). 
+In addition, users can set their own preferred color palette for a project under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Project color palette](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html). 
 
 ## Required field validation in component builders 
 

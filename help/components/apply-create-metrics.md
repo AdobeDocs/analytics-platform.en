@@ -1,9 +1,9 @@
 ---
 description: There are two ways to use metrics in Analysis Workspace.
 title: Metrics
-uuid: 9927491a-ca0b-4e1a-9069-8736149d051b
+feature: Metrics
+exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 ---
-
 # Metrics
 
 There are two ways to use metrics in Analysis Workspace.
@@ -22,7 +22,7 @@ To make it easier to quickly create calculated metrics, **[!UICONTROL Create met
 
 ![](assets/calc_metrics.png)
 
-[Calculated Metrics: Implementation-less metrics](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
+[Calculated Metrics: Implementation-less metrics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
 
 ## Compare metrics with different attribution models
 

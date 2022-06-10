@@ -1,17 +1,19 @@
 ---
 title: Combined event datasets
 description: Learn how CJA creates a connection by combining datasets.
+exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
+solution: Customer Journey Analytics
+feature: Connections
 ---
 
 # Combined event datasets
 
-When you create a connection, CJA combines all schemas and datasets into a single dataset. This 'combined event dataset' is what CJA uses for reporting. When you include multiple schemas or datasets in a connection:
+When you create a connection, Customer Journey Analytics (CJA) combines all schemas and datasets into a single dataset. This 'combined event dataset' is what CJA uses for reporting. When you include multiple schemas or datasets in a connection:
 
 * Schemas are combined. Duplicate schema fields are merged.
 * The 'Person ID' column of each dataset are merged into a single column, regardless of their name. This column is the foundation of identifying unique visitors in CJA.
 * Rows are processed based on timestamp.
-
-The concept of combined datasets is similar to the concept of combining report suites in traditional Adobe Analytics.
+* Events are resolved down to the millisecond level.
 
 ## Example
 

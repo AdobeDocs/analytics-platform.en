@@ -1,13 +1,14 @@
 ---
 description: Workspace FAQs and troubleshooting tips.
 title: Frequently asked questions
+feature: FAQ
+exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 ---
-
 # Frequently asked questions
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 | Question | Answer |
 |--- |--- |
@@ -27,7 +28,6 @@ Invalid data means that Adobe cannot return data using the combination of dimens
 
 If you successfully created a workspace report but there's no data, there are a few things you can check:
 
-* Double check the report suite and make sure it is populated with data.
-* If you applied a segment in your report, the segment criteria might not match any data. Try removing the segment or adjusting the segment definition.
+* If you applied a filter in your report, the filter criteria might not match any data. Try removing the filter or adjusting the filter definition.
 * Check the date range in the upper right corner and make sure it's set to a value that you'd expect.
-* Navigate to your website and use the [Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html) to validate that data is being collected.
+* Navigate to your website and use the [Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) to validate that data is being collected.

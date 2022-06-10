@@ -2,15 +2,16 @@
 description: Visually represent your data in Analysis Workspace.
 keywords: Analysis Workspace
 title: Visualizations overview
+feature: Visualizations
+exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 ---
-
 # Visualizations overview
 
-Workspace offers a number of visualizations that let you generate visual representations of your data, such as bar charts, donut charts, histograms, line charts, maps, scatterplots, and others. Most visualization types will be familiar to you if you use Adobe Analytics. However, Analysis Workspace provides visualization settings and many new or unique visualizations types with interactive capabilities.
+Workspace offers a number of visualizations that let you generate visual representations of your data, such as bar charts, donut charts, histograms, line charts, maps, scatterplots, and others. Most visualization types will be familiar to you if you use Customer Journey Analytics. However, Analysis Workspace provides visualization settings and many new or unique visualizations types with interactive capabilities.
 
-You can access visualizations from the top left icon in Workspace, a [blank panel](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html), or through the right-click menu in your workflow. 
+You can access visualizations from the top left icon in Workspace, a [blank panel](/help/analysis-workspace/c-panels/blank-panel.md), or through the right-click menu in your workflow. 
 
-![](assets/viz-rail.png)
+![Visualization rail](assets/viz-rail.png)
 
 The following visualization types are available in Analysis Workspace:
 
@@ -20,7 +21,7 @@ The following visualization types are available in Analysis Workspace:
 | [Bar](/help/analysis-workspace/visualizations/bar.md) | Shows vertical bars representing various values across one or more metrics. |
 | [Bullet graph](/help/analysis-workspace/visualizations/bullet-graph.md) | Shows how a value you are interested in compares to or measures against other performance ranges (goals). |
 | [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | A *`cohort`* is a group of people sharing common characteristics over a specified period. Cohort Analysis is useful for retention, churn or latency analysis. |
-| [Donut](/help/analysis-workspace/visualizations/donut.md) | Similar to a pie chart, this visualization shows data as parts or segments of a whole. |
+| [Donut](/help/analysis-workspace/visualizations/donut.md) | Similar to a pie chart, this visualization shows data as parts or filters of a whole. |
 | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Fallout reports show where visitors left (fell out) and continued through (fell through) a predefined sequence of pages. Can be set to eventual or exact sequences |
 | [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) | Shows exact customer paths through your websites and apps. |
 | [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | A Freeform table is not merely a data table, but also an interactive visualization. It is the foundation for data analysis in Workspace.|
@@ -32,13 +33,13 @@ The following visualization types are available in Analysis Workspace:
 | [Summary change](/help/analysis-workspace/visualizations/summary-number-change.md) | Shows the change between the selected cells as 1 large number/percent. |
 | [Text](/help/analysis-workspace/visualizations/text.md) | Lets you add user-defined text to your Workspace. Helpful for adding additional context to your analysis and insights, in addition to leveraging panel/visualization descriptions |
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | Displays hierarchical (tree-structured) data as a set of nested rectangles. |
-| [Venn](/help/analysis-workspace/visualizations/venn.md) | Uses circles to depict the metric overlap of up to 3 segments. |
+| [Venn](/help/analysis-workspace/visualizations/venn.md) | Uses circles to depict the metric overlap of up to 3 filters. |
 
 ## Settings {#settings}
 
 Each visualization has its own settings that you can manage. To access [!UICONTROL Visualization Settings], click the [!UICONTROL Visualization Settings] gear icon.
 
-![](assets/settings.png)
+![Settings](assets/settings.png)
 
 | Setting | Description |
 | --- | --- |
@@ -64,18 +65,16 @@ To edit a legend label:
 1. Right-click one of the legend labels.
 1. Click **[!UICONTROL Edit Label]**.
 
-   ![](assets/edit-label.png)
+   ![Edit label](assets/edit-label.png)
 
 1. Enter the new label text.
 1. Press **[!UICONTROL Enter]** to save.
-
-Here is a [link to a video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) on this topic.
 
 ## Right-click menu {#right-click}
 
 Additional functionality for a visualization is available by right-clicking on the visualization header. Settings will vary by visualization. Some of the settings available are:
 
-![](assets/right-click.png)
+![Right click](assets/right-click.png)
 
 | Setting | Description |
 | --- | --- |
@@ -90,6 +89,6 @@ Additional functionality for a visualization is available by right-clicking on t
 
 ## Create Visual icon {#quick-viz}
 
-If you are not sure which visualization to pick, click the **[!UICONTROL Create Visual]** icon in any table row (available on hover). This the the fastest way to add a visualization. Clicking it prompts Analysis Workspace to take an educated guess at which visualization would best fit your data. For example, if you have 1 row selected, it will create a trended line graph. If you have 3 segment rows selected, it will create a Venn diagram. 
+If you are not sure which visualization to pick, click the **[!UICONTROL Create Visual]** icon in any table row (available on hover). This the the fastest way to add a visualization. Clicking it prompts Analysis Workspace to take an educated guess at which visualization would best fit your data. For example, if you have 1 row selected, it will create a trended line graph. If you have 3 filter rows selected, it will create a Venn diagram. 
 
-![](assets/quick-viz.png)
+![Quick visualization](assets/quick-viz.png)

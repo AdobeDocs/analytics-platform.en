@@ -1,20 +1,21 @@
 ---
 title: Attribution overview
 description: The concept of attributing credit of a success event to multiple dimension items.
+Feature: Attribution
+exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
 ---
-
 # Attribution overview
 
 >[!NOTE]
 >
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
+>You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
 
 Attribution gives analysts the ability to customize how dimension items get credit for success events. For example:
 
 1. A visitor to your site clicks a paid search link to one of your product pages. The add the product to the cart, but do not purchase it.
 2. The next day, the see a social media post from one of their friends, click the link, then complete the purchase.
 
-In some reports, you might want the order attributed to Paid search. In other reports, you might want the order attributed to Social. Attribution lets you control this aspect of reporting. It is available to all organizations on Adobe Analytics Ultimate, Prime, Select and Foundation. If you are not sure which type of contract you have with Adobe, contact your organization's Account Manager.
+In some reports, you might want the order attributed to Paid search. In other reports, you might want the order attributed to Social. Attribution lets you control this aspect of reporting.
 
 ## Value of Attribution IQ
 
@@ -22,13 +23,13 @@ A given customer journey isn't linear and often unpredictable. Each customer pro
 
 ![Attribution IQ problem](assets/attribution_iq_problem.png)
 
-Adobe Analytics enhances attribution by letting you:
+Customer Journey Analytics enhances attribution by letting you:
 
 * Define attribution beyond paid media: Any dimension, metric, channel or event can be applied to models (e.g. internal search), not just marketing campaigns.
 * Utilize unlimited attribution model comparison: dynamically compare as many models as you want.
 * Avoid implementation changes: With report time processing and context-aware sessions, customer journey context can be built in and applied at run time.
 * Construct the session that best matches your attribution scenario.
-* Break down attribution by segments: Easily compare the performance of your marketing channels across any important segment (e.g. New vs. Repeat customers, Product X vs. Product Y, Loyalty level or CLV).
+* Break down attribution by filters: Easily compare the performance of your marketing channels across any important filter (e.g. New vs. Repeat customers, Product X vs. Product Y, Loyalty level or CLV).
 * Inspect channel cross-over and multi-touch analysis: Use Venn Diagrams and Histograms, and trend attribution results.
 * Analyze key marketing sequences visually: explore paths that led to conversion visually with multi-node flow and fallout visualizations.
 * Build calculated metrics: use any number of attribution allocation methods.
