@@ -142,6 +142,6 @@ Data view in CJA:
   
 ## Data Prep vs. Component ID
 
-As described above, Data Prep allows you to map different fields together across multiple Adobe Analytics report suites. This is helpful in CJA when you want to combine data from multiple datasets into a single CJA connection. However, if you intend to keep the report suites in separate CJA connections but you want to use one set of reports across those those connections and data views, changing the underlying Component ID in CJA provides a way to make reports compatible even if schemas are different. See Component Settings for more information.
+As described above, Data Prep allows you to map different fields together across multiple Adobe Analytics report suites. This is helpful in CJA when you want to combine data from multiple datasets into a single CJA connection. However, if you intend to keep the report suites in separate CJA connections but you want to use one set of reports across those those connections and data views, changing the underlying Component ID in CJA provides a way to make reports compatible even if schemas are different. See [Component Settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) for more information.
 
 Changing the Component ID is a CJA-only function and does not impact data from ADC that is sent to RTCDP.
