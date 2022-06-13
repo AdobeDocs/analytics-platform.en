@@ -101,9 +101,21 @@ There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profil
 
 {style="table-layout:auto"}
 
+## Use numeric fields as lookup keys and lookup values {#numeric}
+
+This functionality is useful you want to classify string values with a numeric field, such as a COGS or margin, on a product SKU. It allows numeric values to be part of lookups, either as keys or as values. In your lookup schema, you might have numeric values tied to, for example, your product names, COGS, campaign marketing cost, or margins. Here is an example lookup schema in Adobe Experience Platform:
+
+![Lookup schema](assets/schema.png)
+
+We now support bringing in these values as metrics or dimensions into CJA reporting. When you set up your connection and pull in lookup datasets, you can edit the datasets to select the [!UICONTROL Key] and [!UICONTROL Matching Key]:
+
+![Edit-dataset](assets/lookup-dataset.png)
+
+When you set up a data view based on this connection, you add the numeric values as components to the data view. Any project based on this data view can then report on these numeric values.
+
 ## Use Identity Map as a Person ID {#id-map}
 
-Customer Journey Analytics now supports the ability to use the Identity Map for its Person ID. Identity Map is a map data structure that allows someone to upload key -> value pairs. The keys are identity namespaces and the value is a structure that holds the identity value. The Identity Map exists on each row/event uploaded and is populated for each row accordingly.
+Customer Journey Analytics supports the ability to use the Identity Map for its Person ID. Identity Map is a map data structure that allows you to upload key -> value pairs. The keys are identity namespaces and the value is a structure that holds the identity value. The Identity Map exists on each row/event uploaded and is populated for each row accordingly.
 
 The Identity Map is available for any dataset that uses a schema based on the [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) class. When you select such a dataset to be included in a CJA Connection, you have the option of selecting either a field as the primary ID or the Identity Map:
 
