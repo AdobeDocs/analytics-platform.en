@@ -88,7 +88,7 @@ Global View data view in CJA:
 
 In essence you have now mapped eVar1 and eVar2 from the source report suites to three new fields. Note that another advantage of using Data Prep mappings is that the destination fields are now based on semantically meaningful names (Search term, Business Unit, Customer category) instead of the less meaningful eVar names (eVar1, eVar2.)
 
-Note: The Unified Fields custom field group, and associated field mappings can be added to existing ADC dataflows and datasets, however this will impact going-forward data only.
+Note: The Unified Fields custom field group, and associated field mappings can be added to existing ADC dataflows and datasets at any time, however this will impact going-forward data only.
 
 ## More than just report suites
 
