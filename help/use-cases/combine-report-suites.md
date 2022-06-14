@@ -34,7 +34,7 @@ This situation will result in meaningless reports for eVar1 and eVar2:
 
 - The eVar fields will contain a mixture of values with different semantic meanings.
 - Search terms will be distributed between eVar1 and eVar2.
-- It will not be possible to use different attribution models for search terms, business units, and customer categories.
+- It will not be possible to use different attribution models for each of search terms, business units, and customer categories.
 
 ## Using AEP Data Prep to resolve schema differences between report suites for use in CJA
 
