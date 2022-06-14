@@ -23,7 +23,7 @@ Further, suppose you perform the following actions:
 - Create a CJA connection called **All Report Suites** that combines Dataset A and Dataset B.
 - Create a CJA data view called **Global View** that is based on the All Report Suites connection.
 
-Without the use of Data Prep to resolve the schema differences between **Dataset A** and **Dataset B**, the eVars in the Global View data view will contain a mixture of values:
+Without the use of Data Prep to resolve the schema differences between Dataset A and Dataset B, the eVars in the Global View data view will contain a mixture of values:
 
 | Global View data view in CJA |
 | --- |
