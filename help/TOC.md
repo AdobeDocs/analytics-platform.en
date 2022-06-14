@@ -90,7 +90,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + Flow {#flow}
       + [Flow overview](analysis-workspace/visualizations/c-flow/flow.md)
       + [Configure a flow visualization](analysis-workspace/visualizations/c-flow/create-flow.md)
-      + [Flow settings](analysis-workspace/visualizations/c-flow/flow-settings.md)
       + [Inter-dimensional flows](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
     + [Histogram](analysis-workspace/visualizations/histogram.md)
     + [Venn](analysis-workspace/visualizations/venn.md)
@@ -156,6 +155,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create annotations](components/annotations/create-annotations.md)
     + [Manage annotations](components/annotations/manage-annotations.md)
     + [View annotations](components/annotations/view-annotations.md)
+    + [Mobile annotations](components/annotations/mobile-annotations.md)
   + Audiences {#audiences}
     + [Audiences overview](components/audiences/audiences-overview.md)
     + [Create and publish audiences](components/audiences/publish.md)

@@ -18,7 +18,7 @@ Much of what you are familiar with on the reporting side has not changed.
 
 * You can still use the power of [Analysis Workspace](/help/analysis-workspace/home.md) to analyze your data. Workspace operates the same as it does in traditional Adobe Analytics.
 * The same version of [Adobe Analytics dashboards](/help/mobile-app/home.md) is available, and works similarly between CJA and traditional Analytics.
-* [Report Builder](/help/report-builder/report-buider-overview.md) has a new interface and runs on MS Windows, iOS, and the web version of Excel. (Before this version of Report Builder, you couldn’t use in on Mac unless you ran it on VMware.) This version doesn’t support traditional AA data request yet.
+* [Report Builder](/help/report-builder/report-buider-overview.md) has a new interface and runs on MS Windows, MacOS, and the web version of Excel. (Before this version of Report Builder, you couldn’t use in on Mac unless you ran it on VMware.) This version doesn’t support traditional AA data request yet.
 
 ## Changes to reporting
 

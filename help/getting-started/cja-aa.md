@@ -15,6 +15,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | --- | --- |
 | Anomaly Detection | Full Support |
 | Attribution IQ | Full Support |
+| Audience Publishing | Full Support. Called Segment Publishing (sending segments from Workspace to the Experience Cloud) in AA. [Audience Publishing](/help/components/audiences/audiences-overview.md) sends audiences to Real-time Customer Profile in experience Platform. |
 | Calculated Metrics | Full Support; Note that any existing calculated metrics in the traditional Analysis Workspace will not be ported to CJA. |
 | Calendar events | Full Support. Calendar events have been implemented as [Annotations](/help/components/annotations/overview.md) in Workspace. |
 | Classification Rule Builder | Full support. Called [substrings](/help/data-views/component-settings/substring.md) in CJA. Uses string manipulations at report time rather than lookup datasets. |
@@ -91,7 +92,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Project Templates | Support is planned. |
 | Real-Time Reporting | Support is planned. |
 | Segment IQ | Support is planned. |
-| Segment Publishing (sending segments from Workspace to the Experience Cloud) | Support is planned. Will be called "Audience Publishing" in CJA. |
 | New vs. Repeat Session Reporting | Support is planned with some caveats. |
 
 {style="table-layout:auto"}
