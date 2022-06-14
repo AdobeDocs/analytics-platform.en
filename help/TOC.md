@@ -207,6 +207,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Executive user quick start guide](mobile-app/executive.md)
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
+  + [Combine report suites with different schemas](use-cases/combine-report-suites.md)
   + [Use arrays of objects](use-cases/object-arrays.md)
   + [Use binding dimensions and metrics](use-cases/binding-dimensions-metrics.md)
   + [(B2B) Add account-level data as a lookup dataset](use-cases/b2b.md)
