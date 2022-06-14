@@ -155,6 +155,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create annotations](components/annotations/create-annotations.md)
     + [Manage annotations](components/annotations/manage-annotations.md)
     + [View annotations](components/annotations/view-annotations.md)
+    + [Mobile annotations](components/annotations/mobile-annotations.md)
   + Audiences {#audiences}
     + [Audiences overview](components/audiences/audiences-overview.md)
     + [Create and publish audiences](components/audiences/publish.md)
