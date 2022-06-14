@@ -11,9 +11,12 @@ The following updates were made to the CJA documentation since its inception.
 
 | Date | Update description |
 | --- | --- |
+| June 2022 | New article on [sharing annotations in Mobile scorecards](/help/components/annotations/mobile-annotations.md)  |
+| June 2022 | New article on [Analytics Labs in CJA](/help/labs/labs.md)  |
+| June 2022 | New section on [support for numeric fields as lookup keys and lookup values](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric)  |
+| June 2022 | Updates to the [Flow visualization workflow](/help/analysis-workspace/visualizations/c-flow/create-flow.md) |
+| June 2022 | New documentation on [Audience publishing to Real-time Customer Profile](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html) |
 | May 2022 | Significantly updated article on [creating connections](/help/connections/create-connection.md) in CJA. |
-| May 2022 | New article on integrating CJA with Attribution AI (link to follow) in Adobe Experience Platform. |
-| May 2022 | New article on integrating CJA with Customer AI in Adobe Experience Platform (link to follow). |
 | May 2022 | New article on how to [manage data blocks in CJA Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) |
 | May 2022 | New article on [ingesting Adobe Experience Platform audiences into CJA](/help/use-cases/ingest-aep-segments.md) |
 | April 2022 | Documentation on [dimension substrings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html). |
