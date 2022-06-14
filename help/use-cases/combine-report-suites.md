@@ -13,7 +13,7 @@ Suppose your company wants to bring data from two different report suites into A
 | Report Suite A | Report Suite B |
 | --- | --- |
 | eVar1 => Search term | eVar1 => Business unit |
-| eVar 2 => Customer category	| eVar2 => Search term |
+| eVar2 => Customer category | eVar2 => Search term |
 
 For the sake of simplicity we will say these are the only defined eVars for both report suites.
 
@@ -139,7 +139,7 @@ Data view in CJA:
 |---|---|
 | \_experience.analytics.customDimensions.eVars.eVar1 | No |
 | \_experience.analytics.customDimensions.eVars.eVar2 | No |
-| _\<path>_.Customer_category |	Yes |
+| _\<path>_.Customer_category | Yes |
   
 ## Data Prep vs. Component ID
 
