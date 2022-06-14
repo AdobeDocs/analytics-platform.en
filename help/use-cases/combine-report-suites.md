@@ -1,4 +1,5 @@
 # Combining Report Ruites Having Different Schemas
+
 ## Overview
 
 The [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) provides a means to bring report suite data from Adobe Analytics into the Adobe Experience Platform for use by AEP applications such as RTCDP and CJA. Each report suite brought into AEP is configured as an individual source connection dataflow, and each dataflow lands as a dataset within the AEP data lake. (The Analytics Source Connector will create one dataset per report suite.)
@@ -67,10 +68,10 @@ Note: The XDM path for your destination fields will depend on how you set up you
 
 When creating the source connection dataflow for **Report Suite B**, again select **Unified Schema** for use in the dataflow. The workflow will show that two fields have a descriptor name conflict. This is because the descriptors for eVar1 and eVar2 are different in Report Suite B than they were in Report Suite A. But we already know this so we can safely ignore the conflict and use custom mappings as follows:
 
-| Report Suite B source field	| Destination field from Unified Fields field group | 
-| --- | --- |
-| \_experience.analytics.customDimensions.eVars.eVar1	| _\<path>_.Business_unit | 
-| _experience.analytics.customDimensions.eVars.eVar2	| _\<path>_.Search_term | 
+| Report Suite B source field | Destination field from Unified Fields field group |
+|---|---|
+| \_experience.analytics.customDimensions.eVars.eVar1 | _\<path>_.Business_unit |
+| _experience.analytics.customDimensions.eVars.eVar2 | _\<path>_.Search_term |
 
 Now Create an **All Report Suites** connection for CJA, combining Dataset A and Dataset B.
 
@@ -134,10 +135,10 @@ Create a CJA connection which combines Dataset A and Dataset B. Create a data vi
 
 Data view in CJA:
 
-| Source field	| Include in data view? | 
-| ---  | --- |
-| \_experience.analytics.customDimensions.eVars.eVar1	| No |
-| \_experience.analytics.customDimensions.eVars.eVar2	| No |
+| Source field | Include in data view? | 
+|---|---|
+| \_experience.analytics.customDimensions.eVars.eVar1 | No |
+| \_experience.analytics.customDimensions.eVars.eVar2 | No |
 | _\<path>_.Customer_category |	Yes |
   
 ## Data Prep vs. Component ID
