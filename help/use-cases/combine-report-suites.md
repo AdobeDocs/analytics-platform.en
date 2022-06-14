@@ -38,7 +38,7 @@ This situation will result in meaningless reports for eVar1 and eVar2:
 
 ## Using AEP Data Prep to resolve schema differences between report suites for use in CJA
 
-AEP's Data Prep functionality is integrated with ADC and can be used to resolve the schema differences described in the scenario above, resulting in eVars with consistent meanings in the CJA data view. What follows is a description of how this might be accomplished. The naming conventions used below can be customized to suit your needs.
+AEP's Data Prep functionality is integrated with the Analytics Source Connector and can be used to resolve the schema differences described in the scenario above, resulting in eVars with consistent meanings in the CJA data view. What follows is a description of how this might be accomplished. The naming conventions used below can be customized to suit your needs.
 
 Before creating the source connection dataflows for Report Suite A and Report Suite B, create a custom field group in AEP (we'll call it **Unified Fields** in our example) which contains the following fields:
 
