@@ -106,13 +106,13 @@ Using Data Prep you can combine the Customer Category in eVar 1 in the Analytics
 
 Create a custom field group:
 
-| Customer Info custom field group |
+| "Customer Info" custom field group |
 | --- |
 | Customer_category | 
 
 Create a schema in AEP. Add the following field groups to the schema:
 
-| Field groups for Extended Schema | 
+| Field groups for "Extended Schema" | 
 | --- | 
 | XDM Experience Event | 
 | Adobe Analytics Experience Event Template | 
