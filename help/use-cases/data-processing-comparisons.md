@@ -1,0 +1,1 @@
+# Comparing data processing between Adobe Analytics and Customer Journey Analytics reporting tools
