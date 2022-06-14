@@ -3,11 +3,11 @@ title: Combine report suites with different schemas
 description: Learn how to use Data Prep to combine report suites with different schemas
 ---
 
-# Combine Report Suites with Different Schemas
+# Combine Report Suites with different schemas
 
-The [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) provides a means to bring report suite data from Adobe Analytics into the Adobe Experience Platform for use by AEP applications, such as Real-time Customer Data Platform and Customer Journey Analytics (CJA). Each report suite brought into AEP is configured as an individual source connection dataflow, and each dataflow lands as a dataset within the AEP data lake. The Analytics Source Connector creates one dataset per report suite.
+The [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) brings report suite data from Adobe Analytics into the Adobe Experience Platform (AEP) for use by AEP applications, such as Real-time Customer Data Platform and Customer Journey Analytics (CJA). Each report suite brought into AEP is configured as an individual source connection dataflow, and each dataflow lands as a dataset within the AEP data lake. The Analytics Source Connector creates one dataset per report suite.
 
-CJA customers use [connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en) to integrate datasets from AEP data lake into CJA's Analysis Workspace. However, when combining report suites within a connection, schema differences between report suites need to be resolved using AEP's [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) functionality in order to ensure Adobe Analytics variables such as props and eVars have a consistent meaning in CJA.
+CJA customers use [connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en) to integrate datasets from AEP data lake into CJA's Analysis Workspace. However, when combining report suites within a connection, schema differences between report suites need to be resolved using AEP's [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) functionality. The purpose is to ensure that Adobe Analytics variables such as props and eVars have a consistent meaning in CJA.
 
 ## Schema differences between report suites are problematic
 
@@ -15,8 +15,8 @@ Suppose your company wants to bring data from two different report suites into A
 
 | Report Suite A | Report Suite B |
 | --- | --- |
-| eVar1 => Search term | eVar1 => Business unit |
-| eVar2 => Customer category | eVar2 => Search term |
+| eVar1 = Search term | eVar1 = Business unit |
+| eVar2 = Customer category | eVar2 = Search term |
 
 For the sake of simplicity, let's say these are the only defined eVars for both report suites.
 
@@ -24,8 +24,8 @@ Further, suppose you perform the following actions:
 
 - Create an Analytics source connection (without use of data prep) that ingests **Report Suite A** into AEP data lake as **Dataset A**.
 - Create an Analytics source connection (without use of data prep) that ingests **Report Suite B** into AEP data lake as **Dataset B**.
-- Create a CJA connection called **All Report Suites** that combines Dataset A and Dataset B.
-- Create a CJA data view called **Global View** that is based on the All Report Suites connection.
+- Create a [CJA connection](/help/connections/create-connection.md) called **All Report Suites** that combines Dataset A and Dataset B.
+- Create a [CJA data view](/help/data-views/create-dataview.md) called **Global View** that is based on the All Report Suites connection.
 
 Without the use of Data Prep to resolve the schema differences between Dataset A and Dataset B, the eVars in the Global View data view will contain a mixture of values:
 
@@ -42,9 +42,9 @@ This situation results in meaningless reports for eVar1 and eVar2:
 
 ## Use AEP Data Prep to resolve schema differences between report suites
 
-AEP's Data Prep functionality is integrated with the Analytics Source Connector and can be used to resolve the schema differences described in the scenario above. This results in eVars with consistent meanings in the CJA data view. (The naming conventions used below can be customized to suit your needs.)
+The Experience Platform Data Prep functionality is integrated with the Analytics Source Connector and can be used to resolve the schema differences described in the scenario above. This results in eVars with consistent meanings in the CJA data view. (The naming conventions used below can be customized to suit your needs.)
 
-1. Before creating the source connection dataflows for Report Suite A and Report Suite B, create a custom field group in AEP (we'll call it **Unified Fields** in our example) which contains the following fields:
+1. Before creating the source connection dataflows for Report Suite A and Report Suite B, [create a custom field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail.) in AEP (we'll call it **Unified Fields** in our example) which contains the following fields:
 
    | "Unified Fields" custom field group |
    | --- |
@@ -52,7 +52,7 @@ AEP's Data Prep functionality is integrated with the Analytics Source Connector 
    | Business unit |
    | Customer category|
 
-1. Create a new schema in AEP (we'll call it **Unified Schema** in our example.) Add the following field groups to the schema:
+1. [Create a new schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) in AEP (we'll call it **Unified Schema** in our example.) Add the following field groups to the schema:
 
    | Field groups for "Unified Schema" |
    | --- |
@@ -82,7 +82,7 @@ AEP's Data Prep functionality is integrated with the Analytics Source Connector 
    | \_experience.analytics.customDimensions.eVars.eVar1 | _\<path>_.Business_unit |
    | _experience.analytics.customDimensions.eVars.eVar2 | _\<path>_.Search_term |
 
-1. Now Create an **All Report Suites** connection for CJA, combining Dataset A and Dataset B.
+1. Now create an **All Report Suites** connection for CJA, combining Dataset A and Dataset B.
 
 1. Create a **Global view** data view in CJA. 
 
@@ -100,9 +100,9 @@ AEP's Data Prep functionality is integrated with the Analytics Source Connector 
 
    You have now mapped eVar1 and eVar2 from the source report suites to three new fields. Note that another advantage of using Data Prep mappings is that the destination fields are now based on semantically meaningful names (Search term, Business Unit, Customer category) instead of the less meaningful eVar names (eVar1, eVar2.)
 
- >[!NOTE]
- >
- >The Unified Fields custom field group, and associated field mappings can be added to existing Analytics Source Connector dataflows and datasets at any time. However, this  impacts going-forward data only.
+   >[!NOTE]
+   >
+   >The Unified Fields custom field group, and associated field mappings can be added to existing Analytics Source Connector dataflows and datasets at any time. However, this impacts going-forward data only.
 
 ## More than just report suites
 
