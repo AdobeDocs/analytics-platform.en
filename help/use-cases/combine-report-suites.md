@@ -88,13 +88,13 @@ Global View data view in CJA:
 
 In essence you have now mapped eVar1 and eVar2 from the source report suites to three new fields. Note that another advantage of using Data Prep mappings is that the destination fields are now based on semantically meaningful names (Search term, Business Unit, Customer category) instead of the less meaningful eVar names (eVar1, eVar2.)
 
-Note: The Unified Fields custom field group, and associated field mappings can be added to existing ADC dataflows and datasets at any time, however this will impact going-forward data only.
+Note: The Unified Fields custom field group, and associated field mappings can be added to existing Analytics Source Connector dataflows and datasets at any time, however this will impact going-forward data only.
 
 ## More than just report suites
 
 The capabilities of Data Prep to combine datasets with different schemas goes beyond Analytics report suites. Suppose you have a two datasets containing the following data:
 
-| Dataset A = Analytics report suite via ADC | 
+| Dataset A = Analytics report suite via Analytics Source Connector | 
 | --- |
 | eVar1 => Customer Category |
 
@@ -144,4 +144,4 @@ Data view in CJA:
 
 As described above, Data Prep allows you to map different fields together across multiple Adobe Analytics report suites. This is helpful in CJA when you want to combine data from multiple datasets into a single CJA connection. However, if you intend to keep the report suites in separate CJA connections but you want to use one set of reports across those those connections and data views, changing the underlying Component ID in CJA provides a way to make reports compatible even if schemas are different. See [Component Settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) for more information.
 
-Changing the Component ID is a CJA-only function and does not impact data from ADC that is sent to RTCDP.
+Changing the Component ID is a CJA-only function and does not impact data from the Analytics Source Connector that is sent to Unified Profile and RTCDP.
