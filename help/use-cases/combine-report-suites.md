@@ -104,7 +104,6 @@ AEP's Data Prep functionality is integrated with the Analytics Source Connector 
  >
  >The Unified Fields custom field group, and associated field mappings can be added to existing Analytics Source Connector dataflows and datasets at any time. However, this  impacts going-forward data only.
 
-
 ## More than just report suites
 
 The capabilities of Data Prep to combine datasets with different schemas goes beyond Analytics report suites. Suppose you have a two datasets containing the following data:
@@ -164,3 +163,4 @@ Using Data Prep, you can combine the Customer Category in eVar 1 in the Analytic
 As described above, Data Prep allows you to map different fields together across multiple Adobe Analytics report suites. This is helpful in CJA when you want to combine data from multiple datasets into a single CJA connection. However, if you intend to keep the report suites in separate CJA connections but you want to use one set of reports across those those connections and data views, changing the underlying Component ID in CJA provides a way to make reports compatible even if schemas are different. See [Component Settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) for more information.
 
 Changing the Component ID is a CJA-only function and does not impact data from the Analytics Source Connector that is sent to Real-time Customer Profile and RTCDP.
+
