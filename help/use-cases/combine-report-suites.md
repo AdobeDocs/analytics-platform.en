@@ -42,7 +42,7 @@ AEP's Data Prep functionality is integrated with the Analytics Source Connector 
 
 Before creating the source connection dataflows for Report Suite A and Report Suite B, create a custom field group in AEP (we'll call it **Unified Fields** in our example) which contains the following fields:
 
-| Unified Fields custom field group |
+| "Unified Fields" custom field group |
 | --- |
 | Search term |
 | Business unit |
@@ -50,7 +50,7 @@ Before creating the source connection dataflows for Report Suite A and Report Su
 
 Create a new schema in AEP (we'll call it **Unified Schema** in our example.) Add the following field groups to the schema:
 
-| Field groups for Unified Schema |
+| Field groups for "Unified Schema" |
 | --- |
 | XDM Experience Event |
 | Adobe Analytics Experience Event Template |
