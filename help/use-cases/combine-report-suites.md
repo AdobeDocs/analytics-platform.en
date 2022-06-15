@@ -44,7 +44,14 @@ This situation results in meaningless reports for eVar1 and eVar2:
 
 The Experience Platform Data Prep functionality is integrated with the Analytics Source Connector and can be used to resolve the schema differences described in the scenario above. This results in eVars with consistent meanings in the CJA data view. (The naming conventions used below can be customized to suit your needs.)
 
-1. Before creating the source connection dataflows for Report Suite A and Report Suite B, [create a custom field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail.) in AEP (we'll call it **Unified Fields** in our example) which contains the following fields:
+1. Before creating the source connection dataflows for Report Suite A and Report Suite B, [Create a new schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) in AEP (we'll call it **Unified Schema** in our example.) Add the following to the schema:
+
+   | "Unified Schema" |
+   | --- |
+   | **XDM ExperienceEvent** class |
+   | **Adobe Analytics ExperienceEvent Template** field group |
+
+1. Add another field group to the schema or [create a custom field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) and add it to the schema. We'll create a new field group and call it **Unified Fields**. Then we'll add the following fields to the new field group:
 
    | "Unified Fields" custom field group |
    | --- |
@@ -52,12 +59,7 @@ The Experience Platform Data Prep functionality is integrated with the Analytics
    | Business unit |
    | Customer category|
 
-1. [Create a new schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) in AEP (we'll call it **Unified Schema** in our example.) Add the following to the schema:
-
-   | "Unified Schema" |
-   | --- |
-   | **XDM ExperienceEvent** class |
-   | **Adobe Analytics ExperienceEvent Template** field group |
+1. 
    | **Unified Fields** field group |
 
    When creating the source connection dataflow for **Report Suite A**, select **Unified Schema** for use in the dataflow. 
