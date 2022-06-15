@@ -124,9 +124,7 @@ Using Data Prep, you can combine the Customer Category in eVar 1 in the Analytic
    | --- |
    | Customer_category | 
 
-1. Create the dataflow for **Dataset A**, selecting **Extended Schema** as your schema. 
-
-1. Add custom mappings to the dataflow as follows:
+1. Create the dataflow for **Dataset A**, selecting **Extended Schema** as your schema. Add custom mappings to the dataflow as follows:
 
    | Dataset A source field | Destination field from Customer Info field group |
    | --- | --- |
