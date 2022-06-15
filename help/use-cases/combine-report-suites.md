@@ -59,9 +59,7 @@ The Experience Platform Data Prep functionality is integrated with the Analytics
    | Business unit |
    | Customer category|
 
-   When creating the source connection dataflow for **Report Suite A**, select **Unified Schema** for use in the dataflow. 
-   
-1. Add custom mappings as follows:
+1.   When creating the source connection dataflow for **Report Suite A**, select **Unified Schema** for use in the dataflow. Add custom mappings as follows:
 
    | Report Suite A source field | Destination field from Unified Fields field group | 
    | --- | --- |
@@ -72,9 +70,7 @@ The Experience Platform Data Prep functionality is integrated with the Analytics
    >
    >The XDM path for your destination fields will depend on how you set up your custom field group.
 
-1. When creating the source connection dataflow for **Report Suite B**, again select **Unified Schema** for use in the dataflow. 
-
-   The workflow shows that two fields have a descriptor name conflict. This is because the descriptors for eVar1 and eVar2 are different in Report Suite B than they were in Report Suite A. But we already know this, so we can safely ignore the conflict and use custom mappings as follows:
+1. When creating the source connection dataflow for **Report Suite B**, again select **Unified Schema** for use in the dataflow. The workflow shows that two fields have a descriptor name conflict. This is because the descriptors for eVar1 and eVar2 are different in Report Suite B than they were in Report Suite A. But we already know this, so we can safely ignore the conflict and use custom mappings as follows:
 
    | Report Suite B source field | Destination field from Unified Fields field group |
    |---|---|
@@ -83,9 +79,7 @@ The Experience Platform Data Prep functionality is integrated with the Analytics
 
 1. Now create an **All Report Suites** connection for CJA, combining Dataset A and Dataset B.
 
-1. Create a **Global view** data view in CJA. 
-
-   Ignore the original eVar fields and include only the fields from the Unified Fields field group.
+1. Create a **Global view** data view in CJA. Ignore the original eVar fields and include only the fields from the Unified Fields field group.
 
    Global View data view in CJA: 
 
