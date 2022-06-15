@@ -91,7 +91,7 @@ The Experience Platform Data Prep functionality is integrated with the Analytics
    | _\<path>_.Customer_category | Yes |
    | _\<path>_.Business_unit | Yes | 
 
-   You have now mapped eVar1 and eVar2 from the source report suites to three new fields. Note that another advantage of using Data Prep mappings is that the destination fields are now based on semantically meaningful names (Search term, Business Unit, Customer category) instead of the less meaningful eVar names (eVar1, eVar2.)
+You have now mapped eVar1 and eVar2 from the source report suites to three new fields. Note that another advantage of using Data Prep mappings is that the destination fields are now based on semantically meaningful names (Search term, Business Unit, Customer category) instead of the less meaningful eVar names (eVar1, eVar2.)
 
    >[!NOTE]
    >
@@ -111,36 +111,38 @@ The capabilities of Data Prep to combine datasets with different schemas goes be
 
 Using Data Prep, you can combine the Customer Category in eVar 1 in the Analytics data with the Customer Category in Some_field in the call center data. Here is one way you might do that. Again, the naming convention can be altered to suit your needs.
 
-Create a schema in AEP. Add the following to the schema:
+1. Create a schema in AEP. Add the following to the schema:
 
    |"Extended Schema" | 
    | --- | 
    | **XDM Experience Event** class | 
    | **Adobe Analytics Experience Event Template** field group | 
 
-Create a new field group and add it to the schema. Add fields to the field group:
+1. Create a new field group and add it to the schema. Add fields to the field group:
 
    | "Customer Info" custom field group |
    | --- |
    | Customer_category | 
 
-Create the dataflow for **Dataset A**, selecting **Extended Schema** as your schema. 
+1. Create the dataflow for **Dataset A**, selecting **Extended Schema** as your schema. 
 
-Add custom mappings to the dataflow as follows:
+1. Add custom mappings to the dataflow as follows:
 
    | Dataset A source field | Destination field from Customer Info field group |
    | --- | --- |
    | \_experience.analytics.customDimensions.eVars.eVar2 | _\<path>_.Customer_category | 
 
-Create the dataflow for **Dataset B**, again selecting **Extended Schema** as your schema. 
+1. Create the dataflow for **Dataset B**, again selecting **Extended Schema** as your schema. 
 
-Add custom mappings as follows:
+1. Add custom mappings as follows:
 
    | Dataset B source field | Destination field from Customer Info field group |
    | --- | --- |
    | _\<path>_.Some_field | _\<path>_.Customer_category |
 
-Create a CJA connection which combines Dataset A and Dataset B. Create a data view in CJA, using the CJA connection you just created. Ignore the original eVar fields and include only the fields from the Customer Info field group.
+1. Create a CJA connection which combines Dataset A and Dataset B. 
+
+1. Create a data view in CJA, using the CJA connection you just created. Ignore the original eVar fields and include only the fields from the Customer Info field group.
 
    Data view in CJA:
 
