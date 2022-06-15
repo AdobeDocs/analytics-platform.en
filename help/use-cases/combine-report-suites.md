@@ -59,7 +59,7 @@ Add another field group to the schema or [create a custom field group](https://e
    | Business unit |
    | Customer category|
 
-When creating the source connection dataflow for **Report Suite A**, select **Unified Schema** for use in the dataflow. Add custom mappings to the dataflow as follows:
+Create the source connection dataflow for **Report Suite A**, selecting **Unified Schema** for use in the dataflow. Add custom mappings to the dataflow as follows:
 
    | Report Suite A source field | Destination field from Unified Fields field group | 
    | --- | --- |
@@ -70,7 +70,7 @@ When creating the source connection dataflow for **Report Suite A**, select **Un
    >
    >The XDM path for your destination fields will depend on how you set up your custom field group.
 
-When creating the source connection dataflow for **Report Suite B**, again select **Unified Schema** for use in the dataflow. The workflow shows that two fields have a descriptor name conflict. This is because the descriptors for eVar1 and eVar2 are different in Report Suite B than they were in Report Suite A. But we already know this, so we can safely ignore the conflict and use custom mappings as follows:
+Create the source connection dataflow for **Report Suite B**, again selecting **Unified Schema** for use in the dataflow. The workflow shows that two fields have a descriptor name conflict. This is because the descriptors for eVar1 and eVar2 are different in Report Suite B than they were in Report Suite A. But we already know this, so we can safely ignore the conflict and use custom mappings as follows:
 
    | Report Suite B source field | Destination field from Unified Fields field group |
    |---|---|
