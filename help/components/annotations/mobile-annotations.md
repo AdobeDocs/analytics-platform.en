@@ -21,11 +21,11 @@ For information on creating annotations, see [Create Annotations](create-annotat
 
 1. Create an annotation and make sure it is shared to all your projects. To create an annotation in Workspace,  see [Create Annotations](create-annotations.md).
 
-1. Select **Show annotations** to display the annotation in Mobile Scorecards.
+1. Select **[!UICONTROL Show annotations]** to display the annotation in Mobile Scorecards.
 
    ![](assets/show-annotations.png)
 
-1. Confirm that show annotations is selected, go to **Project** > **Project info and settings**.
+1. Confirm that show annotations is selected, go to **[!UICONTROL Project]** > **[!UICONTROL Project info and settings]**.
 
    ![](assets/project-info-settings.png)
 
@@ -43,6 +43,6 @@ Annotation colors are selected when the annotation is created in workspace. Gray
 
 | Date | Appearance |
 | --- | --- |
-| **Single day** |  ![](assets/single-day-mobile-annotations.png)<br></br> |
-| **Date range** |  ![](assets/date-range.png)|
-| **Overlapping annotations** | ![](assets/overlapping-annotations.png)<br></br>To view annotation details in the Analytics dashboards app, tap an annotation icon. <br></br>When viewing an annotation in a chart, you can swipe left and right to navigate all annotations present in the chart. When viewing an annotation in the table, swipe left and right to navigate all annotations associated with that row item in the table. <br></br>![](assets/swipe-multiple-annotations.png) <br></br>In charts that do not have a time-based *x axis*, such as the donut or horizontal bar charts, annotations that apply to the chart can be viewed by tapping the icon located in the lower right-hand corner.<br></br> ![](assets/charts-without-timebase.png)|
+| **[!UICONTROL Single da]y** |  ![](assets/single-day-mobile-annotations.png)<br></br> |
+| **[!UICONTROL Date range]** |  ![](assets/date-range.png)|
+| **[!UICONTROL Overlapping annotations]** | ![](assets/overlapping-annotations.png)<br></br>To view annotation details in the Analytics dashboards app, tap an annotation icon. <br></br>When viewing an annotation in a chart, you can swipe left and right to navigate all annotations present in the chart. When viewing an annotation in the table, swipe left and right to navigate all annotations associated with that row item in the table. <br></br>![](assets/swipe-multiple-annotations.png) <br></br>In charts that do not have a time-based *x axis*, such as the donut or horizontal bar charts, annotations that apply to the chart can be viewed by tapping the icon located in the lower right-hand corner.<br></br> ![](assets/charts-without-timebase.png)|
