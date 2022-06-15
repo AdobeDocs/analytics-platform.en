@@ -1,8 +1,8 @@
 ---
 title: Combine report suites with different schemas
 description: Learn how to use Data Prep to combine report suites with different schemas
+exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 ---
-
 # Combine Report Suites with different schemas
 
 The [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) brings report suite data from Adobe Analytics into the Adobe Experience Platform (AEP) for use by AEP applications, such as Real-time Customer Data Platform and Customer Journey Analytics (CJA). Each report suite brought into AEP is configured as an individual source connection dataflow, and each dataflow lands as a dataset within the AEP data lake. The Analytics Source Connector creates one dataset per report suite.
@@ -163,4 +163,3 @@ Using Data Prep, you can combine the Customer Category in eVar 1 in the Analytic
 As described above, Data Prep allows you to map different fields together across multiple Adobe Analytics report suites. This is helpful in CJA when you want to combine data from multiple datasets into a single CJA connection. However, if you intend to keep the report suites in separate CJA connections but you want to use one set of reports across those those connections and data views, changing the underlying Component ID in CJA provides a way to make reports compatible even if schemas are different. See [Component Settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) for more information.
 
 Changing the Component ID is a CJA-only function and does not impact data from the Analytics Source Connector that is sent to Real-time Customer Profile and RTCDP.
-
