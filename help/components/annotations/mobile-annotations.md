@@ -6,11 +6,8 @@ solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
 ---
-# Share Annotations in Mobile Scorecards
 
->[!NOTE]
->
->This feature is currently in [limited testing](/help/release-notes/releases.md).
+# Share Annotations in Mobile Scorecards
 
 You can display annotations that are created in Workspace—in Mobile Scorecards. This allows you to share contextual data nuances and insights about your organization and campaigns directly within Mobile Scorecard projects, viewable in the Analytics dashboards mobile app.
 
@@ -20,17 +17,17 @@ To surface annotations in mobile scorecards, create the annotation first from Wo
 
 For information on creating annotations, see [Create Annotations](create-annotations.md). Annotations are turned off in mobile scorecards by default and must be enabled for each scorecard that you want to surface in mobile scorecards.
 
-1. Turn on annotations. To turn annotations on, see [Turn annotations on or off](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=en#turn-annotations-on-or-off).
+1. Turn on annotations. To turn annotations on, see [Turn annotations on or off](overview.md#annotations-on-off).
 
 1. Create an annotation and make sure it is shared to all your projects. To create an annotation in Workspace,  see [Create Annotations](create-annotations.md).
 
 1. Select **Show annotations** to display the annotation in Mobile Scorecards.
 
- ![](assets/show-annotations.png)
+   ![](assets/show-annotations.png)
 
 1. Confirm that show annotations is selected, go to **Project** > **Project info and settings**.
 
- ![](assets/project-info-settings.png)
+   ![](assets/project-info-settings.png)
 
 ## View annotations in Mobile Scorecards
 
