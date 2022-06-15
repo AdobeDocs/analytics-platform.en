@@ -59,7 +59,7 @@ Add another field group to the schema or [create a custom field group](https://e
    | Business unit |
    | Customer category|
 
-When creating the source connection dataflow for **Report Suite A**, select **Unified Schema** for use in the dataflow. Add custom mappings as follows:
+When creating the source connection dataflow for **Report Suite A**, select **Unified Schema** for use in the dataflow. Add custom mappings to the dataflow as follows:
 
    | Report Suite A source field | Destination field from Unified Fields field group | 
    | --- | --- |
