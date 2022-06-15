@@ -68,7 +68,7 @@ The Experience Platform Data Prep functionality is integrated with the Analytics
   
    >[!NOTE]
    >
-   >The XDM path for your destination fields will depend on how you set up your custom field group.
+   >The XDM path for your destination fields will depend on how you structure your custom field group.
 
 1. Create the source connection dataflow for **Report Suite B**, again selecting **Unified Schema** for use in the dataflow. The workflow will show that two fields have a descriptor name conflict. This is because the descriptors for eVar1 and eVar2 are different in Report Suite B than they were in Report Suite A. But we already know this, so we can safely ignore the conflict and use custom mappings as follows:
 
