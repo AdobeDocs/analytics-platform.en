@@ -111,37 +111,36 @@ The capabilities of Data Prep to combine datasets with different schemas goes be
 
 Using Data Prep, you can combine the Customer Category in eVar 1 in the Analytics data with the Customer Category in Some_field in the call center data. Here is one way you might do that. Again, the naming convention can be altered to suit your needs.
 
-1. Create a custom field group:
+Create a schema in AEP. Add the following to the schema:
+
+   |"Extended Schema" | 
+   | --- | 
+   | **XDM Experience Event** class | 
+   | **Adobe Analytics Experience Event Template** field group | 
+
+Create a new field group and add it to the schema. Add fields to the field group:
 
    | "Customer Info" custom field group |
    | --- |
    | Customer_category | 
 
-1. Create a schema in AEP. Add the following to the schema:
+When creating the dataflow for **Dataset A**, select **Extended Schema** as your schema. 
 
-   |"Extended Schema" | 
-   | --- | 
-   | **XDM Experience Event** class | 
-   | **Adobe Analytics Experience Event Template** field groupo | 
-   | **Customer Info** field group | 
-
-1. When creating the dataflow for **Dataset A**, select **Extended Schema** as your schema. 
-
-1. Add custom mappings as follows:
+Add custom mappings to the dataflow as follows:
 
    | Dataset A source field | Destination field from Customer Info field group |
    | --- | --- |
    | \_experience.analytics.customDimensions.eVars.eVar2 | _\<path>_.Customer_category | 
 
-1. When creating the dataflow for **Dataset B**, again select **Extended Schema** as your schema. 
+When creating the dataflow for **Dataset B**, again select **Extended Schema** as your schema. 
 
-1. Add custom mappings as follows:
+Add custom mappings as follows:
 
    | Dataset B source field | Destination field from Customer Info field group |
    | --- | --- |
    | _\<path>_.Some_field | _\<path>_.Customer_category |
 
-   Create a CJA connection which combines Dataset A and Dataset B. Create a data view in CJA, using the CJA connection you just created. Ignore the original eVar fields and include only the fields from the Customer Info field group.
+Create a CJA connection which combines Dataset A and Dataset B. Create a data view in CJA, using the CJA connection you just created. Ignore the original eVar fields and include only the fields from the Customer Info field group.
 
    Data view in CJA:
 
