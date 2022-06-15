@@ -81,7 +81,7 @@ Now create an **All Report Suites** connection for CJA, combining Dataset A and 
 
 Create a **Global view** data view in CJA. Ignore the original eVar fields and include only the fields from the Unified Fields field group.
 
-   Global View data view in CJA: 
+   **Global View** data view in CJA: 
 
    | Source field | Include in data view? |
    | --- | --- | 
@@ -124,7 +124,7 @@ Create a new field group and add it to the schema. Add fields to the field group
    | --- |
    | Customer_category | 
 
-When creating the dataflow for **Dataset A**, select **Extended Schema** as your schema. 
+Create the dataflow for **Dataset A**, selecting **Extended Schema** as your schema. 
 
 Add custom mappings to the dataflow as follows:
 
@@ -132,7 +132,7 @@ Add custom mappings to the dataflow as follows:
    | --- | --- |
    | \_experience.analytics.customDimensions.eVars.eVar2 | _\<path>_.Customer_category | 
 
-When creating the dataflow for **Dataset B**, again select **Extended Schema** as your schema. 
+Create the dataflow for **Dataset B**, again selecting **Extended Schema** as your schema. 
 
 Add custom mappings as follows:
 
