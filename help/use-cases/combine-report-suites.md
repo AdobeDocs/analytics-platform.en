@@ -52,13 +52,13 @@ The Experience Platform Data Prep functionality is integrated with the Analytics
    | Business unit |
    | Customer category|
 
-1. [Create a new schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) in AEP (we'll call it **Unified Schema** in our example.) Add the following field groups to the schema:
+1. [Create a new schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) in AEP (we'll call it **Unified Schema** in our example.) Add the following to the schema:
 
-   | Field groups for "Unified Schema" |
+   | "Unified Schema" |
    | --- |
-   | XDM Experience Event |
-   | Adobe Analytics Experience Event Template |
-   | Unified Fields |
+   | **XDM ExperienceEvent** class |
+   | **Adobe Analytics ExperienceEvent Template** field group |
+   | **Unified Fields** field group |
 
    When creating the source connection dataflow for **Report Suite A**, select **Unified Schema** for use in the dataflow. 
    
@@ -124,13 +124,13 @@ Using Data Prep, you can combine the Customer Category in eVar 1 in the Analytic
    | --- |
    | Customer_category | 
 
-1. Create a schema in AEP. Add the following field groups to the schema:
+1. Create a schema in AEP. Add the following to the schema:
 
-   | Field groups for "Extended Schema" | 
+   |"Extended Schema" | 
    | --- | 
-   | XDM Experience Event | 
-   | Adobe Analytics Experience Event Template | 
-   | Customer Info | 
+   | **XDM Experience Event** class | 
+   | **Adobe Analytics Experience Event Template** field groupo | 
+   | **Customer Info** field group | 
 
 1. When creating the dataflow for **Dataset A**, select **Extended Schema** as your schema. 
 
