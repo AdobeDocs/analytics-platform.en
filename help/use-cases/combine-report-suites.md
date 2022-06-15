@@ -59,9 +59,6 @@ The Experience Platform Data Prep functionality is integrated with the Analytics
    | Business unit |
    | Customer category|
 
-1. 
-   | **Unified Fields** field group |
-
    When creating the source connection dataflow for **Report Suite A**, select **Unified Schema** for use in the dataflow. 
    
 1. Add custom mappings as follows:
