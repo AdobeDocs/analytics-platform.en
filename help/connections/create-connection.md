@@ -103,7 +103,7 @@ There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profil
 
 ## Use numeric fields as lookup keys and lookup values {#numeric}
 
-This functionality is useful you want to classify string values with a numeric field, such as a COGS or margin, on a product SKU. It allows numeric values to be part of lookups, either as keys or as values. In your lookup schema, you might have numeric values tied to, for example, your product names, COGS, campaign marketing cost, or margins. Here is an example lookup schema in Adobe Experience Platform:
+This functionality is useful if you want to add a numeric field such as a cost or margin to a string-based key field. It allows numeric values to be part of lookups, either as keys or as values. In your lookup schema, you might have numeric values tied to, for example, your product names, COGS, campaign marketing cost, or margins. Here is an example lookup schema in Adobe Experience Platform:
 
 ![Lookup schema](assets/schema.png)
 

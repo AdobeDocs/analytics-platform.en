@@ -5,10 +5,6 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 ---
 # Create and publish audiences
 
->[!NOTE]
->
->This functionality is currently in [limited testing](/help/release-notes/releases.md).
-
 This topic discusses how to create and publish audiences identified in Customer Journey Analytics (CJA) to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) in Adobe Experience Platform for customer targeting and personalization. 
 
 Read this [overview](/help/components/audiences/audiences-overview.md) to familiarize yourself with the concept of CJA audiences.
@@ -54,8 +50,8 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
    | Preview setting | Description |
    | --- | --- |
    | [!UICONTROL Data preview] window | The date range for the audience. |
-   | [!UICONTROL Total people] | A summary number of the total number of people in this audience. It can go as high as 100 Million people. If your audience exceeds 100 Million people, you must reduce the audience size before you can publish it. |
-   | [!UICONTROL Audience size limit] | Shows how far from the 100 Million limit this audience is. |
+   | [!UICONTROL Total people] | A summary number of the total number of people in this audience. It can go as high as 200 Million people. If your audience exceeds 200 Million people, you must reduce the audience size before you can publish it. |
+   | [!UICONTROL Audience size limit] | Shows how far from the 200 Million limit this audience is. |
    | [!UICONTROL Estimated audience return] | This setting is useful for retargeting customers in this audience that come back to your site. (In other words, that are seen in this dataset again.) <p>Here, you can select the time frame (next 7 days, next 2 weeks, next month) for the estimated number of customers who may return. |
    | [!UICONTROL Estimated to return] | This number gives you an estimated number of returning customers over the time frame that you selected from the drop-down list. We look at the historical churn rate for this audience to predict this number. |
    | [!UICONTROL Preview metrics] | This setting allows you to look at specific metrics to see whether this audience contributes a disproportionate amount to this metric, such as '[!UICONTROL Revenue]' or '[!UICONTROL Average time on site]'. It gives you the aggregate count of the metric, as well as the percentage of the total it represents. You can select any metric that is available in your data view. |
