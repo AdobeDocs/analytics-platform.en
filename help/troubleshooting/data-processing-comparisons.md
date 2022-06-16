@@ -1,14 +1,14 @@
 # Comparing data processing across Adobe Analytics (AA) and CJA reporting features
 
-The data processing steps which are performed for Adobe Analytics and CJA and the timing of those steps vary from Analytics feature to Analytics feature. The table below defines terminology for the different types of processing logic applied for Adobe Analytics and CJA:
+The data processing steps which are performed for Adobe Analytics and CJA and the timing of those steps varies from Analytics feature to Analytics feature. The table below defines terminology for the different types of processing logic that are applied to Adobe Analytics and CJA:
 
 | Term                   | Definition                                                                                                      | Notes                                                                                       |
 |------------------------|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | Processing time logic  | Logic that is performed when data is being processed, before being stored for reporting and analytics purposes. | This logic is 'baked into' historical data and generally cannot easily be changed.          |
-| Report time logic      | Logic that is performed at the time a report is run.                                                            | This logic can be applied to historical data at report runtime in a non-destructive manner. |
-| Hit-level logic        | Logic applied at a row-by-row level                                                                             | Processing rules, VISTA, certain marketing channel rules                                    |
-| Visit-level logic      | Logic applied at the visit level                                                                                | Visit definition                                                                            |
-| Visitor-level logic    | Logic applied at the visitor level                                                                              | Cross-device/cross-channel visitor stitching                                                |
+| Report time logic      | Logic that is performed at the time a report is run.                                                            | This logic can be applied to future and historical data at report runtime in a non-destructive manner. |
+| Hit-level logic        | Logic applied at a row-by-row level                                                                             | Examples: processing rules, VISTA, certain marketing channel rules                               |
+| Visit-level logic      | Logic applied at the visit level                                                                                | Example: visit or session definition                                                                            |
+| Visitor-level logic    | Logic applied at the visitor level                                                                              | Example: Cross-device/cross-channel visitor stitching                                                |
 | Segment (filter) logic | Evaluation of hit/visit/visitor (event/session/person) segment (filter) rules                                   | (CJA terminology is in parentheses)                                                         |
 | Attribution logic      | Logic to calculate attribution                                                                                  | Example: eVar persistence                                                                   |
 
