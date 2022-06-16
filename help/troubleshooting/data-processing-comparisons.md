@@ -10,6 +10,7 @@ The table below defines terminology for the different types of processing logic 
 | Visit-level logic      | Logic applied at the visit level                                                                                | Example: visit and session definition                                                                            |
 | Visitor-level logic    | Logic applied at the visitor level                                                                              | Example: Cross-device/cross-channel visitor stitching                                                |
 | Segment (filter) logic | Evaluation of hit/visit/visitor (event/session/person) segment (filter) rules                                   | (CJA terminology is in parentheses)                                                         |
+| Calculated metrics | Evaluation of customer-created custom metrics which can be based on complex formulas including segments and filters | Example: # of people who bought red shoes |
 | Attribution logic      | Logic to calculate attribution                                                                                  | Example: eVar persistence                                                                   |
 
 Over time, Adobe Analytics and now Customer Journey Analytics have improved their flexibility by allowing visit and visitor-level data logic to be performed at report runtime. 
