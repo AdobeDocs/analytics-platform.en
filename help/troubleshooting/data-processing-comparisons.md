@@ -1,4 +1,4 @@
-# Comparing data processing across Adobe Analytics (AA) and CJA reporting features
+# Comparing data processing across Adobe Analytics and CJA reporting features
 
 The table below defines terminology for the different types of processing logic that are applied to Adobe Analytics and CJA:
 
