@@ -1,6 +1,18 @@
 # Comparing data processing across Adobe Analytics (AA) and CJA reporting features
 
-The data processing steps which are performed for Adobe Analytics and CJA vary from Analytics feature to Analytics feature. Over time, Adobe Analytics and now Customer Journey Analytics have improved their flexibility by allowing visit and visitor-level data logic to be performed at report runtime. Report-time processing allows business logic to be applied in a non-destructive manner both forward and backwards in time. Where available, report time processing applies generally to the latter processing steps. 
+The data processing steps which are performed for Adobe Analytics and CJA and the timing of those steps vary from Analytics feature to Analytics feature. The table below defines terminology for the different types of processing logic applied for Adobe Analytics and CJA:
+
+| Term                   | Definition                                                                                                      | Notes                                                                                       |
+|------------------------|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| Processing time logic  | Logic that is performed when data is being processed, before being stored for reporting and analytics purposes. | This logic is 'baked into' historical data and generally cannot easily be changed.          |
+| Report time logic      | Logic that is performed at the time a report is run.                                                            | This logic can be applied to historical data at report runtime in a non-destructive manner. |
+| Hit-level logic        | Logic applied at a row-by-row level                                                                             | Processing rules, VISTA, certain marketing channel rules                                    |
+| Visit-level logic      | Logic applied at the visit level                                                                                | Visit definition                                                                            |
+| Visitor-level logic    | Logic applied at the visitor level                                                                              | Cross-device/cross-channel visitor stitching                                                |
+| Segment (filter) logic | Evaluation of hit/visit/visitor (event/session/person) segment (filter) rules                                   | (CJA terminology is in parentheses)                                                         |
+| Attribution logic      | Logic to calculate attribution                                                                                  | Example: eVar persistence                                                                   |
+
+Over time, Adobe Analytics and now Customer Journey Analytics have improved their flexibility by allowing visit and visitor-level data logic to be performed at report runtime. 
 
 The table below provides a summary of the types of data processing for each each Analytics feature, and when the data processing is applied:
 
