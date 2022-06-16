@@ -1,6 +1,6 @@
 # Comparing data processing across Adobe Analytics (AA) and CJA reporting features
 
-The data processing steps which are performed for Adobe Analytics and CJA and the timing of those steps varies from Analytics feature to Analytics feature. The table below defines terminology for the different types of processing logic that are applied to Adobe Analytics and CJA:
+The table below defines terminology for the different types of processing logic that are applied to Adobe Analytics and CJA:
 
 | Term                   | Definition                                                                                                      | Notes                                                                                       |
 |------------------------|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
@@ -14,7 +14,7 @@ The data processing steps which are performed for Adobe Analytics and CJA and th
 
 Over time, Adobe Analytics and now Customer Journey Analytics have improved their flexibility by allowing visit and visitor-level data logic to be performed at report runtime. 
 
-The table below provides a summary of the types of data processing for each each Analytics feature, and when the data processing is applied:
+The data processing steps which are performed for Adobe Analytics and CJA and the timing of those steps varies from Analytics feature to Analytics feature. The table below provides a summary of the types of data processing for each each Analytics feature, and when the data processing is applied:
 
 | Analytics feature                                                                                    | Applied at processing time                                                                                                                        | Applied at report time                                                                                                   | Not available                                                                                                                                                       | Notes                                                                                                                                                                                                                                                                                                       |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
