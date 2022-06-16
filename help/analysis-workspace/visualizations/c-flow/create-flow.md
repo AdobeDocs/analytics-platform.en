@@ -7,10 +7,6 @@ exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
 ---
 # Configure a flow visualization
 
->[!NOTE]
->
->This new version of the [!UICONTROL Flow] visualization is currently in limited testing. 
-
 The updated Flow visualization allows you to understand the journey stemming from or leading up to a specific conversion event on your website or your app. It traces a path through your dimensions (and dimension items) or metrics. Flow lets you configure the start or end of the path you are interested in, or analyze all those paths that flow through a dimension or dimension item. 
 
 The new [!UICONTROL flow] experience enhances your workflow in several ways:

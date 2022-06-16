@@ -6,10 +6,6 @@ exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 ---
 # [!UICONTROL Labs] User Guide
 
->[!NOTE]
->
->This functionality is currently in [limited testing](/help/release-notes/releases.md).
-
 [!UICONTROL Labs] allows for faster prototyping of early-stage ideas. It is a combination of tools and processes that accelerates development transparently, with a customer focus. It allows users to engage with emerging technologies, to discover valuable insights, and to influence future feature development and priorities. You can use Labs to get early access to Customer Journey Analytics (CJA) innovations and to evaluate upcoming features within the context of your own business use cases and data.
 
 ## Requirements
