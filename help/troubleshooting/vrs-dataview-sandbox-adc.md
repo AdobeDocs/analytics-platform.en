@@ -52,10 +52,12 @@ For more information, see: [Sandboxes overview](https://experienceleague.adobe.c
 An AEP sandbox:
 
 * Provides a means to partition a single AEP instance into separate virtual environments (dev, test, stage, production, etc.) to help develop and evolve digital experience applications.
+* Can be thought of as a container which holds all the data and applications for a given environment.
 
 An AEP sandbox does not:
 
-* Provide similar functions as a virtual report suite, CJA connection or data view.
+* Provide similar functions as virtual report suites, CJA connections or data views.
 * Allow you to connect or combine CJA data from different sandboxes.
+* On its own combine report suites with or without other datasets. However, the datasets within a sandbox can be combined within a CJA connection.
 
 Further, the Analytics Source connector sends report suite data _into_ a specific sandbox. Each report suite may be configured as a source for a single sandbox. See the [Analytics Source Connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) for more details.
