@@ -11,6 +11,7 @@ The following updates were made to the CJA documentation since its inception.
 
 | Date | Update description |
 | --- | --- |
+| June 2022 | New article on [combining report suites with different schemas](/help/use-cases/combine-report-suites.md) |
 | June 2022 | New article on [sharing annotations in Mobile scorecards](/help/components/annotations/mobile-annotations.md)  |
 | June 2022 | New article on [Analytics Labs in CJA](/help/labs/labs.md)  |
 | June 2022 | New section on [support for numeric fields as lookup keys and lookup values](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric)  |
