@@ -43,7 +43,7 @@ A data view:
 * Is based on the report-time processing capabilities of CJA.
 * Allows users to create a custom definition for "session."
 * Is applied at report runtime. This is _after_ the Source Connector (Adobe Analytics or other) has written data to a dataset in the AEP data lake, and _after_ the data has been ingested into CJA via a CJA connection.
-* Allows for an unlimited number of variables.
+* Allows for an unlimited number of variables although curation can limit which variables are exposed to users
 * Allows for custom naming of Event, Session & Person containers.
 * Supports custom calendar options.
 
