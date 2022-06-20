@@ -45,7 +45,7 @@ A data views does not:
 
 * Directly provide a means for combining report suites or other datasets. However, because a data view sits on top of a CJA connection and a connection may be used to combine together multiple report suites and/or other datasets, the combined data from the CJA connection is available for use in all data views based on that connection.
 
-# AEP sandbox
+# AEP sandboxes
 
 For more information, see: [Sandboxes overview](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en).
 
@@ -55,6 +55,7 @@ An AEP sandbox:
 
 An AEP sandbox does not:
 
-* Provide similar functions as a CJA connection or data view.
+* Provide similar functions as a virtual report suite, CJA connection or data view.
 * Allow you to connect or combine CJA data from different sandboxes.
 
+Further, the Analytics Source connector sends report suite data _into_ a specific sandbox. Each report suite may be configured as a source for a single sandbox. See the [Analytics Source Connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) for more details.
