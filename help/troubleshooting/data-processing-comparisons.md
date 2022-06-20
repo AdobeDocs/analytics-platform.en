@@ -1,8 +1,8 @@
 ---
 title: Compare data processing across Adobe Analytics and CJA reporting features
 description: Understand the differences in data processing for the various reporting features
+exl-id: 9d20ef55-2caf-43f8-86e4-c66a490c6892
 ---
-
 # Compare data processing across Adobe Analytics and CJA reporting features
 
 Understanding the differences in data processing for the various reporting features can be helpful in understanding which metrics are available where and why they may differ. 
@@ -46,4 +46,3 @@ The data processing steps which are performed for Adobe Analytics and CJA and th
 | [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en) reporting  | <ul><li>Processing rules</li><li>VISTA rules</li><li>Hit-level [marketing channel rules](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en)</li><li>[Connection](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en) settings</li><li>Field-based stitching (see note)</li></ul>  | <ul><li>Session definition</li><li>[Data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) settings</li><li>Attribution logic</li><li>Calculated metrics</li><li>Filter logic</li></ul> | <ul><li>Visit-level marketing channel rules</li></ul>  | <ul><li>Must use a stitched dataset in order to take advantage of field-based stitching.</li></ul> | 
 
 {style="table-layout:auto"}
-
