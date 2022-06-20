@@ -57,7 +57,6 @@ An AEP sandbox:
 An AEP sandbox does not:
 
 * Provide similar functions as virtual report suites, CJA connections or data views.
-* Allow you to connect or combine CJA data from different sandboxes.
 * On its own combine report suites with or without other datasets. However, the datasets within a sandbox can be combined within a CJA connection.
 
 Further:
