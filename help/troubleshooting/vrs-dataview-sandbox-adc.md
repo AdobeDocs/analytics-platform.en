@@ -6,7 +6,7 @@ Adobe provides a variety of means to create virtual reporting environments and s
 * CJA data views
 * AEP sandboxes
 
-# Adobe Analytics Virtual Report Suites (VRS)
+## Adobe Analytics Virtual Report Suites (VRS)
 
 For more information, see: [Virtual report suites overview](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en).
 
@@ -29,7 +29,7 @@ A virtual report suite is (does) not:
 * Available as a source for dataflows into AEP via the Analytics Source Connector. Only full (non-virtual) report suites are available for use with the Analytics Source Connector.
 
 
-# CJA data views
+## CJA data views
 
 For more information, see: [Data views overview](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en).
 
@@ -51,7 +51,7 @@ A data view does not:
 
 * Directly provide a means for combining report suites or other datasets. Instead, datasets are combined with in a CJA connection. The combined data from the CJA connection is available for use in all data views based on that connection.
 
-# AEP sandboxes
+## AEP sandboxes
 
 For more information, see: [Sandboxes overview](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en).
 
