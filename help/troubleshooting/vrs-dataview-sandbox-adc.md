@@ -1,6 +1,6 @@
 # Virtual report suites, data views, AEP sandboxes and the Analytics Source Connector
 
-Adobe Analytics, CJA and AEP provide a variety of means to create virtual reporting and sandbox environments. It is useful to understand the similarities and differences between:
+Adobe Analytics, CJA and AEP provide a variety of means to create virtual reporting and sandbox environments. It is useful to understand the similarities and differences between the following and how they relate to the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en):
 
 * Virtual Report Suites in Adobe Analytics
 * Data views in CJA
