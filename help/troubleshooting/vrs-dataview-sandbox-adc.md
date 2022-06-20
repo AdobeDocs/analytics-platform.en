@@ -60,4 +60,7 @@ An AEP sandbox does not:
 * Allow you to connect or combine CJA data from different sandboxes.
 * On its own combine report suites with or without other datasets. However, the datasets within a sandbox can be combined within a CJA connection.
 
-Further, the Analytics Source connector sends report suite data _into_ a specific sandbox. Each report suite may be configured as a source for a single sandbox. See the [Analytics Source Connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) for more details.
+Further:
+
+* Data from different sandboxes cannot be combined within CJA.
+* The Analytics Source connector sends report suite data _into_ a specific sandbox. Each report suite may be configured as a source for a single sandbox. See the [Analytics Source Connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) for more details.
