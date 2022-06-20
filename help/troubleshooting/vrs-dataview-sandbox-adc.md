@@ -16,9 +16,11 @@ A VRS:
 * Can be applied to both historical and new data in a non-destructive manner.
 * Allows you to create one or many virtual views on top of an Adobe Analytics report suite for for use by different business teams.
 * May be used to control access to and curate different kinds of data for different users in Adobe Analytics.
-* Provides optional [report-time processing](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en) capabilities for Adobe Analytics.
+* Provides optional [report-time processing](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en) capabilities for Adobe Analytics. In this case, a VRS may be used to create a custom definition for "visit".
 * Is applied at report runtime. This is _after_ the data has been collected and stored within Adobe Analytics.
 * Is required for [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en) in Adobe Analytics.
+* Has available the same number of variables for use as a standard Analytics Report Suite (250 eVars, 250 props, 1000 events), although VRS curation can limit which variables are exposed to users
+* Supports custom calendar options
 
 A virtual report suite is (does) not:
 
@@ -39,7 +41,11 @@ A data view:
 * May be used to control access to and curate different kinds of data for different users in CJA.
 * Provides powerful non-destructive options for transforming and enhancing data coming into CJA through a CJA connection.
 * Is based on the report-time processing capabilities of CJA.
+* Allows users to create a custom definition for "session."
 * Is applied at report runtime. This is _after_ the Source Connector (Adobe Analytics or other) has written data to a dataset in the AEP data lake, and _after_ the data has been ingested into CJA via a CJA connection.
+* Allows for an unlimited number of variables.
+* Allows for custom naming of Event, Session & Person containers.
+* Supports custom calendar options.
 
 A data views does not:
 
