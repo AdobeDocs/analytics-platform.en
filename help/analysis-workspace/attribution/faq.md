@@ -6,10 +6,6 @@ exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
 ---
 # Attribution FAQ
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 **What is the "None" line item when using attribution?**
 
 The 'None' line item is a catch-all item that represents all conversions that happened without any touch points within the lookback window. Try including a longer time range in your reporting window.

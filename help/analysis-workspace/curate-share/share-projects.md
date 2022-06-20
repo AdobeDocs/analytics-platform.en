@@ -7,10 +7,6 @@ exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 ---
 # Share projects
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 Sharing makes a project available to other Analysis Workspace users in your organization. Any [curation](curate.md) you have applied is reflected when recipients open the project. 
 
 ## Project roles {#Roles}

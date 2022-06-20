@@ -6,10 +6,6 @@ exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
 ---
 # Share menu
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 You can curate, share and schedule PDF/CSV projects to recipients in your organization within the Workspace **Share menu**.
 
 | Menu option | Description |

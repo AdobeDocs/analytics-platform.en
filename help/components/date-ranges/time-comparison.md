@@ -6,10 +6,6 @@ exl-id: 08113536-658f-486b-ac56-6c531240c3c2
 ---
 # Date comparison
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 Date Comparison in Analysis Workspace lets you take any column containing a date range and create a common date comparison, such as: year-over-year, quarter-over-quarter, month-over-month, etc.
 
 ## Compare time periods

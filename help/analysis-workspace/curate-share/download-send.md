@@ -6,10 +6,6 @@ exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 ---
 # Download PDF or CSV files
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 There are several different ways you can export data from Analysis Workspace, depending on what set of data you want to analyze outside of the tool and who needs to receive the information. Exported data can be in the form of copied data, CSV or PDF files. A PDF is typically preferred if you want visualizations included in the file, while a CSV (or copied data) is preferred if you simply want plain-text data.
 
 ## Download project as CSV or PDF {#download-project}

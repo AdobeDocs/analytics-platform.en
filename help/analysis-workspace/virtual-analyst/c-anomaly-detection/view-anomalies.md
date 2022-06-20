@@ -6,10 +6,6 @@ exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
 ---
 # View anomalies in Analysis Workspace
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 You can view anomalies in a table or in a line chart.
 
 ## View anomalies in a table {#section_869A87B92B574A38B017A980ED8A29C5}

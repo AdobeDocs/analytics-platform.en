@@ -6,10 +6,6 @@ exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 ---
 # Histogram
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 A histogram is similar to a bar chart, but it groups numbers into ranges (buckets). Analytics automates the "bucketing" of numbers into ranges, but you can change the settings in [Advanced Settings](#section_09D774C584864D4CA6B5672DC2927477).
 
 ## Build a histogram {#section_74647707CC984A1CB6D3097F43A30B45}
