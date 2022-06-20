@@ -13,13 +13,13 @@ For more information, see: [Virtual report suites overview](https://experiencele
 A virtual report suite:
 
 * Can be based on Adobe Analytics segments.
-* Configuration can be applied to historical data.
+* Can be applied to historical data.
 * Allows you to create one or many virtual views on top of a report suite for for use by different users in Adobe Analytics.
 * May be used to control access to and curate different kinds of data for different users.
 * Provides optional report-time processing capabilities for Adobe Analytics.
 * Is required for Cross-Device Analytics in Adobe Analytics.
 
-A virtual report suite does not or is not:
+A virtual report suite is (does) not:
 
 * Provide a means to combine report suites together.
 * Available in Adobe Analytics Data Warehouse.
