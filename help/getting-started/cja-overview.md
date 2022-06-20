@@ -26,7 +26,7 @@ Customer Journey Analytics expands the scope of Adobe Analytics by offering easy
 * **Alter historical data**: Using Adobe Experience Platform, data can be removed or corrected.
 * **Cross-report-suite data**: Existing implementations from multiple data sets can be combined in Platform.
 
-The initial release of Customer Journey Analytics includes many of the features included in Analysis Workspace. For a complete list, see [Customer Journey Analytics feature support](/help/aa-vs-cja/cja-aa.md).
+The initial release of Customer Journey Analytics includes many of the features included in Analysis Workspace. For a complete list, see [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md).
 
 ## Comparing CJA to Cross-Device Analytics
 
