@@ -1,22 +1,28 @@
-# How Adobe Analytics virtual report suites, CJA data views, AEP sandboxes and the Analytics Source Connector
+# Adobe Analytics virtual report suites, CJA data views, AEP sandboxes and the Analytics Source Connector
 
-# Overview
-Adobe Analytics, CJA and AEP provide a variety of means to create virtual environments. The discussion below compares Adobe Analytics virtual report suites, CJA data views, and AEP sandboxes.
+Adobe Analytics, CJA and AEP provide a variety of means to create virtual reporting and sandbox environments. It is useful to understand the similarities and differences 
+
+
+The discussion below compares Adobe Analytics virtual report suites, CJA data views, and AEP sandboxes.
 
 # Adobe Analytics Virtual Report Suite (VRS)
-For more information, see: Virtual report suites overview.
+
+For more information, see: ]Virtual report suites overview](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en).
 
 A virtual report suite:
 
-Can be based on Adobe Analytics segments.
-Configuration can be applied to historical data.
-Allows you to create one or many virtual views on top of a report suite for for use by different users in Adobe Analytics.
-May be used to control access to and curate different kinds of data for different users.
-Provides optional report-time processing capabilities for Adobe Analytics.
-Is required for Cross-Device Analytics in Adobe Analytics.
-A virtual report suite does note:
+* Can be based on Adobe Analytics segments.
+* Configuration can be applied to historical data.
+* Allows you to create one or many virtual views on top of a report suite for for use by different users in Adobe Analytics.
+* May be used to control access to and curate different kinds of data for different users.
+* Provides optional report-time processing capabilities for Adobe Analytics.
+* Is required for Cross-Device Analytics in Adobe Analytics.
 
-Provide a means to combine report suites together.
+A virtual report suite does not or is not:
+
+* Provide a means to combine report suites together.
+* Available in Adobe Analytics Data Warehouse.
+* Available to 
 
 ## VRS and the Analytics Source Connector
 
