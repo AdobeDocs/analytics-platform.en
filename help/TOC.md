@@ -223,6 +223,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Labs User Guide](labs/labs.md)
 + Troubleshooting {#troubleshooting}
   + [Compare your Adobe Analytics data to CJA data](troubleshooting/compare.md)
-  + [Compare data processing across reporting tools](troubleshooting/data-processing-comparisons.md)
+  + [Compare data processing across Adobe Analytics and CJA](troubleshooting/data-processing-comparisons.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
