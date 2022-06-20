@@ -1,0 +1,1 @@
+# How virtual report suites, data views and sandboxes relate to the Analytics Source Connector
