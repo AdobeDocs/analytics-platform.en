@@ -19,8 +19,8 @@ A VRS:
 * Provides optional [report-time processing](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en) capabilities for Adobe Analytics. In this case, a VRS may be used to create a custom definition for "visit".
 * Is applied at report runtime. This is _after_ the data has been collected and stored within Adobe Analytics.
 * Is required for [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en) in Adobe Analytics.
-* Has available the same number of variables for use as a standard Analytics Report Suite (250 eVars, 250 props, 1000 events), although VRS curation can limit which variables are exposed to users
-* Supports custom calendar options
+* Has available the same number of variables for use as a standard Analytics Report Suite (250 eVars, 250 props, 1000 events), although VRS curation can limit which variables are exposed to users.
+* Supports custom calendar options.
 
 A virtual report suite is (does) not:
 
