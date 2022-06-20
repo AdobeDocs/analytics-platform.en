@@ -39,11 +39,11 @@ A data view:
 * May be used to control access to and curate different kinds of data for different users in CJA.
 * Provides powerful non-destructive options for transforming and enhancing data coming into CJA through a CJA connection.
 * Is based on the report-time processing capabilities of CJA.
-* Is applied at report runtime. This is _after_ the Analytics Source Conector has written the report suite to a dataset in the AEP data lake, and _after_ the data has been ingested into CJA via a CJA connection.
+* Is applied at report runtime. This is _after_ the Source Connector (Adobe Analytics or other) has written data to a dataset in the AEP data lake, and _after_ the data has been ingested into CJA via a CJA connection.
 
 A data views does not:
 
-* Directly provide a means for combining report suites or other datasets. However, because a data view sits on top of a CJA connection, and a connection may be used to combine multiple report suites and AEP datasets, the combined data from the CJA connection is available for use in the data view.
+* Directly provide a means for combining report suites or other datasets. However, because a data view sits on top of a CJA connection and a connection may be used to combine together multiple report suites and/or other datasets, the combined data from the CJA connection is available for use in all data views based on that connection.
 
 # AEP sandbox
 
