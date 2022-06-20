@@ -6,10 +6,6 @@ exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 ---
 # Frequently asked questions
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 | Question | Answer |
 |--- |--- |
 | **What are the prerequisites for using Analysis Workspace?** | Using Analysis Workspace requires a working Customer Journey Analytics implementation. Make sure your organization is sending data to the Adobe Experience Platform before using the tool.|

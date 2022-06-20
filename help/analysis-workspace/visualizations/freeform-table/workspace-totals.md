@@ -6,10 +6,6 @@ exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 ---
 # Workspace totals
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 In Freeform tables, a total row appears at each breakdown level and can show two totals:
 
 * **[!UICONTROL Grand Total]** (gray 'out of' number) - this total represents all hits that have been collected. When a filter is applied either at the panel level or within the freeform table, this total adjusts to reflect all hits that match the filter criteria.

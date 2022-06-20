@@ -6,10 +6,6 @@ exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 ---
 # Pagination, filtering and sorting tables
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 For an overview of pagination, filtering and sorting tables in Analysis Workspace, watch this video tutorial:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23968)

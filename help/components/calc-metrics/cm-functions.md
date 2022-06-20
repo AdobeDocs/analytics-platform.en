@@ -6,10 +6,6 @@ exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 ---
 # Reference - basic functions
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 The Calculated Metrics Builder lets you apply statistical and mathematical functions to build Advanced Calculated Metrics.
 
 Here is an alphabetical list of the functions and their definitions.

@@ -8,10 +8,6 @@ solution: Customer Journey Analytics
 ---
 # Break down dimensions in Workspace
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 Break down dimensions and dimension items in Analysis Workspace.
 
 Break down your data in unlimited ways for your specific needs; build queries using relevant metrics, dimensions, filters, time lines, and other analysis breakdown values.
@@ -25,7 +21,7 @@ Break down your data in unlimited ways for your specific needs; build queries us
 
    >[!NOTE]
    >
-   >The number of breakdowns to show in the table is limited to 200. This limit will increase for exporting breakdowns.
+   >The number of breakdowns to show in the table is limited to 200. This limit increases for exporting breakdowns.
 
 **Video: Dimensions in Analysis Workspace**
 

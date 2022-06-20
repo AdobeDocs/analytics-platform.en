@@ -7,7 +7,7 @@ feature: FAQ
 ---
 # Frequently asked questions
 
-[!UICONTROL Customer Journey Analytics] (CJA) is our next-generation analytics product. Following are answers to frequently asked questions about CJA. For more information, review [Customer Journey Analytics feature support](/help/getting-started/cja-aa.md).
+[!UICONTROL Customer Journey Analytics] (CJA) is our next-generation analytics product. Following are answers to frequently asked questions about CJA. For more information, review [Customer Journey Analytics feature support](/help/aa-vs-cja/cja-aa.md).
 
 ## 1. Prerequisites {#prerequisites}
 

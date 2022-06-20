@@ -6,10 +6,6 @@ exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 ---
 # Row settings
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 View a video on row and column settings here:
 
 >[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
