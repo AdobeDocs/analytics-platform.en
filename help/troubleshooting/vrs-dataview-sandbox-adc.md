@@ -49,7 +49,7 @@ A data view:
 
 A data view does not:
 
-* Directly provide a means for combining report suites or other datasets. However, because a data view sits on top of a CJA connection and a connection may be used to combine multiple report suites and/or other datasets, the combined data from the CJA connection is available for use in all data views based on that connection.
+* Directly provide a means for combining report suites or other datasets. Instead, datasets are combined with in a CJA connection. The combined data from the CJA connection is available for use in all data views based on that connection.
 
 # AEP sandboxes
 
