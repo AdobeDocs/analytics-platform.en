@@ -17,14 +17,14 @@ A VRS:
 * Allows you to create one or many virtual views on top of an Adobe Analytics report suite for for use by different business teams.
 * May be used to control access to and curate different kinds of data for different users in Adobe Analytics.
 * Provides optional [report-time processing](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en) capabilities for Adobe Analytics.
-* Is applied at report runtime. This is _after__ the data has been collected and stored within Adobe Analytics.
+* Is applied at report runtime. This is _after_ the data has been collected and stored within Adobe Analytics.
 * Is required for [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en) in Adobe Analytics.
 
 A virtual report suite is (does) not:
 
 * Provide a means to combine report suites together.
 * Available in Adobe Analytics Data Warehouse.
-* Available as an source for dataflows into AEP via the Analytics Source Connector. Only full (non-virtual) report suites are available for use with the Analytics Source Connector.
+* Available as a source for dataflows into AEP via the Analytics Source Connector. Only full (non-virtual) report suites are available for use with the Analytics Source Connector.
 
 
 # CJA data views
@@ -39,7 +39,7 @@ A data view:
 * May be used to control access to and curate different kinds of data for different users in CJA.
 * Provides powerful non-destructive options for transforming and enhancing data coming into CJA through a CJA connection.
 * Is based on the report-time processing capabilities of CJA.
-* Is applied at report runtime. This is _after_ the Analytics Source Conector has written the report suite to a dataset in the AEP data lake, and after the data has been ingested into CJA via a CJA connection.
+* Is applied at report runtime. This is _after_ the Analytics Source Conector has written the report suite to a dataset in the AEP data lake, and _after__ the data has been ingested into CJA via a CJA connection.
 
 A data views does not:
 
