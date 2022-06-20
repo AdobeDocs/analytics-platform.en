@@ -43,13 +43,13 @@ A data view:
 * Is based on the report-time processing capabilities of CJA.
 * Allows users to create a custom definition for "session."
 * Is applied at report runtime, similar to filter evaluation. This is _after_ the Source Connector (Adobe Analytics or other) has written data to a dataset in the AEP data lake, and _after_ the data has been ingested into CJA via a CJA connection.
-* Allows for an unlimited number of variables although curation can limit which variables are exposed to users
+* Allows for an unlimited number of variables, although curation can limit which variables are exposed to users
 * Allows for custom naming of Event, Session & Person containers.
 * Supports custom calendar options.
 
 A data views does not:
 
-* Directly provide a means for combining report suites or other datasets. However, because a data view sits on top of a CJA connection and a connection may be used to combine together multiple report suites and/or other datasets, the combined data from the CJA connection is available for use in all data views based on that connection.
+* Directly provide a means for combining report suites or other datasets. However, because a data view sits on top of a CJA connection and a connection may be used to combine multiple report suites and/or other datasets, the combined data from the CJA connection is available for use in all data views based on that connection.
 
 # AEP sandboxes
 
