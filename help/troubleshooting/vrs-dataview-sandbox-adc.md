@@ -1,6 +1,6 @@
 # Virtual report suites, data views, AEP sandboxes and the Analytics Source Connector
 
-Adobe Analytics, CJA and AEP provide a variety of means to create virtual reporting and sandbox environments. It is useful to understand the similarities and differences between the following and how they relate to the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en):
+Adobe Analytics, CJA and AEP provide a variety of means to create virtual reporting environments and sandbox environments. It is useful to understand the similarities and differences between the following and how they relate to the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en):
 
 * Virtual Report Suites in Adobe Analytics
 * Data views in CJA
@@ -13,17 +13,17 @@ For more information, see: [Virtual report suites overview](https://experiencele
 A virtual report suite:
 
 * Can be based on Adobe Analytics segments.
-* Can be applied to historical data.
-* Allows you to create one or many virtual views on top of a report suite for for use by different users in Adobe Analytics.
+* Can be applied to historical data in a non-destructive manner.
+* Allows you to create one or many virtual views on top of an Adobe Analytics report suite for for use by different users.
 * May be used to control access to and curate different kinds of data for different users.
-* Provides optional report-time processing capabilities for Adobe Analytics.
-* Is required for Cross-Device Analytics in Adobe Analytics.
+* Provides optional [report-time processing](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en) capabilities for Adobe Analytics.
+* Is required for [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en) in Adobe Analytics.
 
 A virtual report suite is (does) not:
 
 * Provide a means to combine report suites together.
 * Available in Adobe Analytics Data Warehouse.
-* Available to 
+* Available as an entity for dataflows into AEP via the Analytics Source Connector. 
 
 ## VRS and the Analytics Source Connector
 
