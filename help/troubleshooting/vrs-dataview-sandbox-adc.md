@@ -3,7 +3,7 @@
 # Overview
 Adobe Analytics, CJA and AEP provide a variety of means to create virtual environments. The discussion below compares Adobe Analytics virtual report suites, CJA data views, and AEP sandboxes.
 
-#. Adobe Analytics Virtual Report Suite (VRS)
+# Adobe Analytics Virtual Report Suite (VRS)
 For more information, see: Virtual report suites overview.
 
 A virtual report suite:
@@ -20,7 +20,7 @@ Provide a means to combine report suites together.
 
 ## VRS and the Analytics Source Connector
 
-See PLATIR-21499 - Not able to find Virtual Adobe Analytics report in AEP Adobe Analytics Sources CLOSED
+* See PLATIR-21499 - Not able to find Virtual Adobe Analytics report in AEP Adobe Analytics Sources CLOSED
 
 #. CJA data view
 For more information, see: Data views overview.
