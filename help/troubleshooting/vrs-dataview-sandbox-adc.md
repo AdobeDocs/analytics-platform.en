@@ -1,0 +1,1 @@
+# How Adobe Analytics virtual report suites, CJA data views and AEP sandboxes relate to the Analytics Source Connector
