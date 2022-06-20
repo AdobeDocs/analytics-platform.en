@@ -27,7 +27,7 @@ A virtual report suite is (does) not:
 * Available as an source for dataflows into AEP via the Analytics Source Connector. Only full (non-virtual) report suites are available for use with the Analytics Source Connector.
 
 
-#. CJA data views
+# CJA data views
 
 For more information, see: [Data views overview](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en).
 
