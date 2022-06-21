@@ -78,6 +78,10 @@ You can drag CJA audiences into the segment definition for AEP segments.
 
 ![](assets/audiences-aep.png)
 
+## What happens if a user is no longer a member of an audience in CJA?
+
+In this case, an exit event is sent to Experience Platform from CJA.
+
 ## Next steps
 
 * To manage this audience, go to the [Management UI](/help/components/audiences/manage.md).
