@@ -68,14 +68,19 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 ## Use CJA audiences in Experience Platform
 
+CJA now takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). CJA sends the audience over to Experience Platform with the primary identity set to whatever was selected as the person ID when the connection was configured.
 
-CJA now takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). RTCP then examines each namespace/ID combination and looks for a profile that it may be part of. A profile is basically a cluster of linked namespaces, IDs and devices. If it finds a profile, it will add the namespace and ID to the other IDs in this profile as a segment membership attribute. Now, for example, "user@adobe.com" can be targeted across all their devices and channels. If a profile is not found, a new one is created.
+RTCP then examines each namespace/ID combination and looks for a profile that it may be part of. A profile is basically a cluster of linked namespaces, IDs and devices. If it finds a profile, it will add the namespace and ID to the other IDs in this profile as a segment membership attribute. Now, for example, "user@adobe.com" can be targeted across all their devices and channels. If a profile is not found, a new one is created.
 
 You can view CJA audiences in Platform by going to **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
 
 You can drag CJA audiences into the segment definition for AEP segments.
 
 ![](assets/audiences-aep.png)
+
+## What happens if a user is no longer a member of an audience in CJA?
+
+In this case, an exit event is sent to Experience Platform from CJA.
 
 ## Next steps
 
