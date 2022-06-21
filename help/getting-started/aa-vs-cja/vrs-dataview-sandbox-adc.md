@@ -1,8 +1,8 @@
 ---
 title: Virtual Report Suites, Data Views, AEP Sandboxes and the Analytics Source Connector
 description: Learn about virtual reporting environments and sandbox environments.
+exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 ---
-
 # Virtual Report Suites, Data Views, AEP Sandboxes and the Analytics Source Connector
 
 Adobe provides a variety of means to create virtual reporting environments and sandbox environments. It is useful to understand the similarities and differences between the following features and how these features relate to the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en):
