@@ -1,0 +1,28 @@
+# AAID, ECID, and the Analytics Source Connector
+
+Adobe Analytics data contains multiple identity fields. Three important identity fields are given special treatment by the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en):
+
+* **AAID**. AAID is the primary device identifier in Adobe Analytics and is guaranteed to exist on every event passed through the Analytics Source Connector. AAID is sometimes referred to as the "Legacy Analytics ID" or "s\_vi cookie id", although an AAID is created even if the s\_vi cookie is not present. AAID is represented by the post\_visid\_high/post\_visid\_low columns in Adobe Analytics data feeds. The AAID field on a given event contains a single identity which may be one of several different types as described here: Order of Operations for Analytics IDs. (Within an entire report suite, AAID may contain a mix of types across events. The type is indicated in the [post\_]visid\_type column in Analytics data feeds.) 
+* **ECID**. ECID (Experience Cloud ID), also sometimes referred to as MCID (Marketing Cloud ID), is a separate device identifier field which is populated in Adobe Analytics when Adobe Analytics is implemented using the Experience Cloud Identity Service. ECID is represented by the mcvisid column in Adobe Analytics data feeds. If an ECID exists on an event, AAID may be based on ECID depending on whether the Analytics grace period is configured. See also: Analytics and Experience Cloud ID Requests.
+* **AACUSTOMID**. AACUSTOMID is a separate identifier field which is populated in Adobe Analytics based on use of the s.VisitorID variable in the Analytics implementation. AACUSTOMID is represented by the cust_visid column in Adobe Analytics data feeds. If AACUSTOMID is present, AAID will be based on AACUSTOMID. (AACUSTOMID trumps all other identifiers as defined by the order of operations mentioned above.) 
+
+The Analytics Source Connector passes through all three of these identities as:
+
+endUserIDs.\_experience.aaid.id
+endUserIDs.\_experience.mcid.id
+endUserIDs.\_experience.aacustomid.id
+
+These fields are not marked as identities. Rather, the same identities are copied into XDM's identityMap as key value pairs as follows:
+
+{ “key”: “AAID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false>} ] }
+{ “key”: “ECID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }
+{ “key”: “AACUSTOMID”, “value”: [ { “id”: “<identity>”, “primary”: false } ] }
+
+Within identityMap:
+
+* If ECID is present it is marked as the primary identity for the event. Note that in this case AAID may be based on ECID per the discussion above.
+Otherwise, AAID is marked as the primary identity for the event.
+* AACUSTOMID is never marked as the Primary ID for the event. However, if AACUSTOMID is present then AAID is based on AACUSTOMID as per the discussion above.
+
+As far as CJA is concerned, the definition of Primary ID is only important if the end user decides to use the Primary ID as the Person ID. Doing so is not mandatory, however. The user can choose some other identity column as the Person ID.
+
