@@ -14,6 +14,8 @@ Cross-Channel Analytics makes two passes on data on a given connection:
   * Daily: Data replays every day with a 24-hour lookback window. This option holds an advantage that replays are much more frequent, but unauthenticated visitors must authenticate the same day that they visit your site.
   * Weekly: Data replays once a week with a 7-day lookback window. This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, data less than a week old is not stitched.
 
+Data beyond the lookback window is not replayed. A visitor must authenticate within a given lookback window in order for an unauthenticated visit and authenticated visit to be identified together. Once a device is recognized, it is live-stitched from that point forward.
+
 ## Step 1: Live-stitching
 
 CCA attempts to stitch each event upon collection to known devices and channels. Consider the following example, where Bob uses two different channels.
