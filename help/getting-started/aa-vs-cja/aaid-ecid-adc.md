@@ -14,9 +14,9 @@ The Analytics Source Connector passes through all three of these identities to A
 
 These fields are not marked as identities. Rather, the same identities are copied into XDM's identityMap as key value pairs as follows:
 
-* { “key”: “AAID”, “value”: [ { “id”: “_<identity>_”, “primary”: _<true or false>_} ] }
-* { “key”: “ECID”, “value”: [ { “id”: “_<identity>_”, “primary”: _<true or false>_ } ] }
-* { “key”: “AACUSTOMID”, “value”: [ { “id”: “_<identity>_”, “primary”: **false** } ] }
+* { “key”: “AAID”, “value”: [ { “id”: “_\<identity\>_”, “primary”: _\<true or false\>_} ] }
+* { “key”: “ECID”, “value”: [ { “id”: “_\<identity\>_”, “primary”: _\<true or false\>_ } ] }
+* { “key”: “AACUSTOMID”, “value”: [ { “id”: “_\<identity\>_”, “primary”: **false** } ] }
 
 Within identityMap:
 
