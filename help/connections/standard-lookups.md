@@ -8,7 +8,7 @@ feature: Connections
 # Add standard lookups to your datasets
 
 >[!IMPORTANT]
->Standard Lookups are only available for Analytics Data Connector data sources in CJA. You can use them with standard Adobe Analytics implementations, or the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html), or the Experience Platform data collection APIs.
+>Standard Lookups are only available for Analytics Source Connector data sources in CJA. You can use them with standard Adobe Analytics implementations, or the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html), or the Experience Platform data collection APIs.
 
 Standard lookups (also known as Adobe-supplied lookups) enhance the ability of Customer Journey Analytics to report on some dimensions/attributes that are not useful by themselves but are useful when joined with other data. Examples include attributes of mobile devices, and attributes of OS and Browser dimensions, such as browser version numbers. A 'Standard Lookup' is similar to a lookup data set. Standard lookups are applicable across Experience Cloud organizations. They are automatically applied to all event datasets that contain certain XDM schema fields (see below for the specific fields.) A standard lookup dataset exists for each schema location that Adobe is classifying.
 
@@ -16,7 +16,7 @@ In traditional Adobe Analytics, these dimensions show up on their own, whereas i
 
 ## Use standard lookups with Adobe Data Connector datasets
 
-Standard lookup datasets automatically get applied at report time. If you use the Analytics Data Connector and you bring in a dimension for which Adobe provides a standard lookup, we automatically apply this standard lookup. If an event dataset contains XDM fields, we can apply standard lookups to it.
+Standard lookup datasets automatically get applied at report time. If you use the Analytics Source Connector and you bring in a dimension for which Adobe provides a standard lookup, we automatically apply this standard lookup. If an event dataset contains XDM fields, we can apply standard lookups to it.
 
 <!--
 ### Specific IDs that need to be populated

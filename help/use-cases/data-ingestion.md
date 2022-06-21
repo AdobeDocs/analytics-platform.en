@@ -11,7 +11,7 @@ You have a number of options when it comes to ingesting data into Customer Journ
 
 ## Ingest data from traditional Adobe Analytics
 
-This workflow utilizes the Adobe Analytics Data Connector and varies depending on whether you use DTM or Launch as a Tag Manager.
+This workflow utilizes the Adobe Analytics Source Connector and varies depending on whether you use DTM or Launch as a Tag Manager.
 
 ### Via tags in Adobe Experience Platform (formerly called [!UICONTROL Launch])
 
