@@ -7,10 +7,6 @@ exl-id: ea2ea8d6-8327-4168-b81a-f4945b572cbb
 ---
 # Administration requirements
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 System requirements for Analysis Workspace.
 
 | Requirement | Description |

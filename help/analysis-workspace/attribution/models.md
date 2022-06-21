@@ -6,10 +6,6 @@ exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
 ---
 # Attribution models and lookback windows
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 The concept of attribution in Customer Journey Analytics requires two components:
 
 * **Attribution model:** The model describes the distribution of conversions to the hits in a group. For example, first touch or last touch.

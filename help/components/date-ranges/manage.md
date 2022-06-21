@@ -6,10 +6,6 @@ exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 ---
 # Manage date ranges
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 Use the date range manager to share, rename, or delete date ranges. To reach the date manager:
 
 1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.

@@ -6,10 +6,6 @@ exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 ---
 # Create shareable links
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 Analysis Workspace offers many ways to share a project to your users, including the ability to get a link to a project or a specific part of a project. Users who receive a link are required to log in to Customer Journey Analytics before they can get to the project. 
 
 ## Get project link {#project-link} 

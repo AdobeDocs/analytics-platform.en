@@ -1,7 +1,7 @@
 ---
 title: Compare data processing across Adobe Analytics and CJA reporting features
 description: Understand the differences in data processing for the various reporting features
-exl-id: 9d20ef55-2caf-43f8-86e4-c66a490c6892
+exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 ---
 # Compare data processing across Adobe Analytics and CJA reporting features
 

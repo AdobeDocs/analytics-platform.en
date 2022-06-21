@@ -6,10 +6,6 @@ exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
 ---
 # Algorithmic attribution
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 Here is a video overview of Algorithmic Attribution:
 
 >[!VIDEO](https://video.tv.adobe.com/v/36205/?quality=12)

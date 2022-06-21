@@ -6,10 +6,6 @@ exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
 ---
 # Attribution overview
 
->[!NOTE]
->
->You are viewing the documentation for Analysis Workspace in Customer Journey Analytics. Its feature set differs slightly from [Analysis Workspace in traditional Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Learn more...](/help/getting-started/cja-aa.md)
-
 Attribution gives analysts the ability to customize how dimension items get credit for success events. For example:
 
 1. A visitor to your site clicks a paid search link to one of your product pages. The add the product to the cart, but do not purchase it.
