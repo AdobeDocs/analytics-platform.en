@@ -1,4 +1,3 @@
-
 ---
 title: Processing Rules, VISTA and classifications vs. Data Prep for the Analytics Source Connector
 description: Learn about data transformation using processing rules and VISTA vs. using Data Prep
