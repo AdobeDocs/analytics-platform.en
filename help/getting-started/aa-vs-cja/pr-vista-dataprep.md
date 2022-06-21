@@ -3,9 +3,9 @@ title: Processing Rules, VISTA and classifications vs. Data Prep for the Analyti
 description: Learn about data transformation using processing rules and VISTA vs. using Data Prep
 ---
 
-# Adobe Analytics Processing Rules, VISTA and classifications vs. Data Prep for the Analytics Source Connector
+# Processing rules, VISTA and classifications versus Data Prep
 
-[Processing Rules and VISTA rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/processing-rule-order.html?lang=en) provide a means to transform and manipulate data which is passed into Adobe Analytics [data collection](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=en). These transformations occur as a part of Adobe's data processing before the data is stored for reporting and analytics purposes in Adobe Analytics. 
+Adobe Analytics [processing rules and VISTA rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/processing-rule-order.html?lang=en) provide a means to transform and manipulate data which is passed into Adobe Analytics [data collection](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=en). These transformations occur as a part of Adobe's data processing before the data is stored for reporting and analytics purposes in Adobe Analytics. 
 
 [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) is a tool that lets you apply row-based mappings and transformations to data ingested into [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=en). Subsequently, the data is made available to Experience Platform applications including CJA and others. Data prep is integrated with many of the Platform [source connectors](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en), as well as with the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en). This connector provides a way to ingest report suite data from Adobe Analytics into Platform. 
 
