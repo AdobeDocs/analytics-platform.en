@@ -1,6 +1,12 @@
-# Processing Rules and VISTA vs Data Prep for the Analytics Source Connector
+# Adobe Analytics Processing Rules and VISTA vs Data Prep for the Analytics Source Connector
 
-[Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) is a tool that allows you to apply row-based mappings and transformations to data ingested into AEP before the data lands in data lake or is sent to Unified Profile and RTCDP. Data prep is integrated with many of the AEP source connectors and is now also integrated with the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) As far as ADC is concerned, you can think of Data Prep as a mapping/transformation tool that can be applied to ADC data before it lands in AEP. In some sense it is sort of like (but not exactly the same as) VISTA rules and processing rules in Adobe Analytics. To be clear, data that comes through ADC already has VISTA rules and processing rules applied. But ADC can be used to further manipulate the data (after processing rules and VISTA) before it lands in AEP if necessary.
+[Processing Rules and VISTA rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/processing-rule-order.html?lang=en) provide a means to transform and manipulate data which is passed into Adobe Analytics [data collection](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=en). These transformations occur as a part of Adobe's data processing before the data is stored for reporting and analytics purposes. 
+
+
+[Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) is a tool that allows you to apply row-based mappings and transformations to data ingested into [AEP](https://experienceleague.adobe.com/docs/experience-platform.html?lang=en) before the data lands in data lake or is sent to Unified Profile and RTCDP. Data prep is integrated with many of the AEP source connectors and is now also integrated with the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) 
+
+
+As far as ADC is concerned, you can think of Data Prep as a mapping/transformation tool that can be applied to ADC data before it lands in AEP. In some sense it is sort of like (but not exactly the same as) VISTA rules and processing rules in Adobe Analytics. To be clear, data that comes through ADC already has VISTA rules and processing rules applied. But ADC can be used to further manipulate the data (after processing rules and VISTA) before it lands in AEP if necessary.
 
 Data prep can be used for a number of a number of purposes:
 
