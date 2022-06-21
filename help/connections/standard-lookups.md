@@ -14,7 +14,7 @@ Standard lookups (also known as Adobe-supplied lookups) enhance the ability of C
 
 In traditional Adobe Analytics, these dimensions show up on their own, whereas in CJA, you have to actively include these dimensions when you create data views. In the Connections workflow, you select a dataset that is flagged as one with a key for standard lookup. The Data Views UI automatically knows to include all the standard lookup dimensions as available for reporting. The lookup files are automatically kept up to date and available, across all regions and for all accounts. They are stored in region-specific organizations associated with the customer.
 
-## Use standard lookups with Adobe Data Connector datasets
+## Use standard lookups with Adobe Source Connector datasets
 
 Standard lookup datasets automatically get applied at report time. If you use the Analytics Source Connector and you bring in a dimension for which Adobe provides a standard lookup, we automatically apply this standard lookup. If an event dataset contains XDM fields, we can apply standard lookups to it.
 
