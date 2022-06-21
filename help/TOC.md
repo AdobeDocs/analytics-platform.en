@@ -32,6 +32,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Customer Journey Analytics feature support](getting-started/aa-vs-cja/cja-aa.md)
     + [Compare data processing across Adobe Analytics and CJA](getting-started/aa-vs-cja/data-processing-comparisons.md)
     + [Virtual reporting environments and sandbox environments](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
+    + [Adobe Analytics Processing Rules, VISTA and classifications vs. Data Prep for the Analytics Source Connector](getting-started/aa-vs-cja/pr-vista-dataprep.md)
   + [Deletion implications](getting-started/cja-deletion.md)
   + [CJA glossary](getting-started/cja-glossary.md)
 + Connections {#cja-connections}
