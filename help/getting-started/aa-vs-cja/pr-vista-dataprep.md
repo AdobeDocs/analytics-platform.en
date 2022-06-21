@@ -1,8 +1,8 @@
 ---
 title: Processing Rules, VISTA and classifications vs. Data Prep for the Analytics Source Connector
 description: Learn about data transformation using processing rules and VISTA vs. using Data Prep
+exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 ---
-
 # Processing rules, VISTA and classifications versus Data Prep
 
 Adobe Analytics [processing rules and VISTA rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/processing-rule-order.html?lang=en) provide a means to transform and manipulate data which is passed into Adobe Analytics [data collection](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=en). These transformations occur as a part of Adobe's data processing before the data is stored for reporting and analytics purposes in Adobe Analytics. 
@@ -24,4 +24,3 @@ Data Prep has crossover with [classifications](https://experienceleague.adobe.co
 For example, in a delimited field you can use Data Prep to split that field into multiple individual fields without the use of classifications. Generally, classifications are a way to add metadata to a field by uploading a lookup file that is supplied outside the stream of incoming Analytics hits. 
 
 For example, you can upload a classification file which groups SKUs into ‘size’, ‘brand’, ‘color’, etc. Another difference between classifications and Data Prep is that classifications apply to data _both historically and going forward_. Data Prep mappings, on the other hand, are applied _forward_ to data from the time the mapping is created.
-
