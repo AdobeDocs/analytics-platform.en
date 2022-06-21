@@ -38,6 +38,12 @@ The number of persistent IDs is irrelevant in favor of the transient ID. A singl
 
 Live stitching is available approximately 1 week after Adobe enables Cross-Channel Analytics. Backfill availability depends on the amount of existing data. Small datasets (less than 1 million events per day) typically take a couple days, while large data sets (1 billion events per day) can take a week or more.
 
+## What is the difference between Cross-Device Analytics (a feature in traditional Analytics) and Cross-Channel Analytics?
+
+[Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) is a feature specific to traditional Adobe Analytics that allows you to understand how people operate across devices. It offers two workflows to link device data together: field-based stitching and the device graph.
+
+[Cross-Channel Analytics](../connections/cca/overview.md) is a feature specific to CJA that allows you to understand how people operate across both devices and channels. It re-key's a dataset's person ID, allowing that dataset to be seamlessly combined with other datasets. This feature operates in design somewhat similarly to CDA's field-based stitching, but implementation is different do to differing data architecture between traditional Analytics and CJA.
+
 ## How does Cross-Channel Analytics handle GDPR and CCPA requests?
 
 Adobe handles GDPR and CCPA requests in accordance to local and international laws. Adobe offers the [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) to submit data access and deletion requests. The requests apply to both the original and rekeyed datasets.
