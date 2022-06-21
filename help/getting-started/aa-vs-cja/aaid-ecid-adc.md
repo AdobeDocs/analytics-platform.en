@@ -8,15 +8,15 @@ Adobe Analytics data contains multiple identity fields. Three important identity
 
 The Analytics Source Connector passes through all three of these identities as:
 
-endUserIDs.\_experience.aaid.id
-endUserIDs.\_experience.mcid.id
-endUserIDs.\_experience.aacustomid.id
+* endUserIDs.\_experience.aaid.id
+* endUserIDs.\_experience.mcid.id
+* endUserIDs.\_experience.aacustomid.id
 
 These fields are not marked as identities. Rather, the same identities are copied into XDM's identityMap as key value pairs as follows:
 
-{ “key”: “AAID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false>} ] }
-{ “key”: “ECID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }
-{ “key”: “AACUSTOMID”, “value”: [ { “id”: “<identity>”, “primary”: false } ] }
+* { “key”: “AAID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false>} ] }
+* { “key”: “ECID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }
+* { “key”: “AACUSTOMID”, “value”: [ { “id”: “<identity>”, “primary”: false } ] }
 
 Within identityMap:
 
