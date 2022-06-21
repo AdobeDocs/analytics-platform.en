@@ -6,7 +6,7 @@ Adobe Analytics data contains multiple identity fields. Three important identity
 * **ECID** (Experience Cloud ID), also sometimes referred to as MCID (Marketing Cloud ID), is a separate device identifier field which is populated in Adobe Analytics when Adobe Analytics is implemented using the [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=en). ECID is represented by the **_mcvisid_** column in Adobe Analytics data feeds. If an ECID exists on an event, AAID may be based on ECID depending on whether the Analytics [grace period](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=en) is configured. See also: [Analytics and Experience Cloud ID Requests](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=en).
 * **AACUSTOMID** is a separate identifier field which is populated in Adobe Analytics based on use of the s.VisitorID variable in the Analytics implementation. AACUSTOMID is represented by the **_cust_visid_** column in Adobe Analytics data feeds. If AACUSTOMID is present, AAID will be based on AACUSTOMID. (AACUSTOMID trumps all other identifiers as defined by the order of operations mentioned above.) 
 
-The Analytics Source Connector passes through all three of these identities to AEP in XDM form as:
+The Analytics Source Connector passes through these identities to AEP in XDM form as:
 
 * endUserIDs.\_experience.aaid.id
 * endUserIDs.\_experience.mcid.id
