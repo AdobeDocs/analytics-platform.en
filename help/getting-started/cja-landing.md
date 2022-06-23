@@ -27,12 +27,13 @@ Analytics Select, Prime, and Ultimate customers are eligible to purchase this ad
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html#cja-usecases"> Ingest Google Analytics data into Adobe Experience Platform </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html#cja-usecases"> Analyze Google Analytics data in CJA </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#cja-connections"> Cross-Channel Analytics (stitching IDs in Customer Journey Analytics) </a> </li>
+   <td colname="col2" valign="top"><p class="head"> <b>Getting Started</b> </p> 
+      <ul> 
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html"> Getting Started with Customer Journey Analytics </a> </li> 
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html"> Frequently Asked Questions</a> </li> 
-   <td colname="col2" valign="top"> <p class="head"><b>Release Notes</b> </p> 
-    <ul> 
-     <li>See the latest <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html" format="https" scope="external"> Customer Journey Analytics Notes</a> for new features and fixes. </li>
-    <td colname="col2" valign="top"> <p class="head"><b>CJA API</b> </p> 
+   </ul> <p class="head"><b>Release Notes</b> </p> 
+     <li>See the latest <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html" format="https" scope="external"> Customer Journey Analytics Release Notes</a> for new features and fixes. </li>
+    <td colname="col3" valign="top"> <p class="head"><b>CJA API</b> </p> 
     <ul> 
      <li>See all <a href="https://developer.adobe.com/cja-apis/docs/" format="https" scope="external"> Customer Journey Analytics APIs</a>. </li>
       <li>See the latest <a href="https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API" format="https" scope="external"> Customer Journey Analytics Reporting API</a>. </li>
