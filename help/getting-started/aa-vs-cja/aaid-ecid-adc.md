@@ -1,4 +1,4 @@
-# AAID, ECID, and the Analytics Source Connector
+# AAID, ECID, AACUSTOMID and the Analytics Source Connector
 
 Adobe Analytics data contains multiple identity fields. Three important identity fields are given special treatment by the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en):
 
