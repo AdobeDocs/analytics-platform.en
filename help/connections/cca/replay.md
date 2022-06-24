@@ -14,6 +14,8 @@ Cross-Channel Analytics makes two passes on data on a given connection:
   * Daily: Data replays every day with a 24-hour lookback window. This option holds an advantage that replays are much more frequent, but unauthenticated visitors must authenticate the same day that they visit your site.
   * Weekly: Data replays once a week with a 7-day lookback window. This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, data less than a week old is not stitched.
 
+Data beyond the lookback window is not replayed. A visitor must authenticate within a given lookback window for an unauthenticated visit and authenticated visit to be identified together. Once a device is recognized, it is live-stitched from that point forward.
+
 ## Step 1: Live-stitching
 
 CCA attempts to stitch each event upon collection to known devices and channels. Consider the following example, where Bob uses two different channels.
@@ -24,10 +26,10 @@ CCA attempts to stitch each event upon collection to known devices and channels.
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | - | - | `246` | Bob visits your site on his desktop, unauthenticated | `1` (246) |
 | `2` | `246` | `Bob` | - | `Bob` | Bob logs in on desktop | `2` (246 and Bob) |
-| `3` | - | - | `Bob` | `Bob` | Bob makes a call to customer service | `2` (246 and Bob) |
+| `3` | - | - | `Bob` | `Bob` | Bob calls customer service | `2` (246 and Bob) |
 | `4` | `3579` | - | - | `3579` | Bob accesses your site on his mobile device, unauthenticated | `3` (246, Bob, and 3579) |
 | `5` | `3579` | `Bob` | - | `Bob` | Bob logs in via mobile | `3` (246, Bob, and 3579) |
-| `6` | - | - | `Bob` | `Bob` | Bob makes another call to customer service | `3` (246, Bob, and 3579) |
+| `6` | - | - | `Bob` | `Bob` | Bob calls customer service again | `3` (246, Bob, and 3579) |
 | `7` | `246` | - | - | `Bob` | Bob visits your site on his desktop again, unauthenticated | `3` (246, Bob, and 3579) |
 
 Both unauthenticated and authenticated events on new devices are counted as separate people (temporarily). Unauthenticated events on recognized devices are live-stitched.
@@ -44,10 +46,10 @@ At regular intervals (once a week or once a day depending on the chosen lookback
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | - | - | `Bob` | Bob visits your site on his desktop, unauthenticated | `1` (Bob) |
 | `2` | `246` | `Bob` | - | `Bob` | Bob logs in on desktop | `1` (Bob) |
-| `3` | - | - | `Bob` | `Bob` | Bob makes a call to customer service | `1` (Bob) |
+| `3` | - | - | `Bob` | `Bob` | Bob calls customer service | `1` (Bob) |
 | `4` | `3579` | - | - | `Bob` | Bob accesses your site on his mobile device, unauthenticated | `1` (Bob) |
 | `5` | `3579` | `Bob` | - | `Bob` | Bob logs in via mobile | `1` (Bob) |
-| `6` | - | - | `Bob` | `Bob` | Bob makes another call to customer service | `1` (Bob) |
+| `6` | - | - | `Bob` | `Bob` | Bob calls customer service again | `1` (Bob) |
 | `7` | `246` | - | - | `Bob` | Bob visits your site on his desktop again, unauthenticated | `1` (Bob) |
 
 >[!NOTE]
