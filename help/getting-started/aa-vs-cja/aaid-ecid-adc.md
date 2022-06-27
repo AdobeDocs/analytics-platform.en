@@ -1,8 +1,8 @@
 ---
 title: AAID, ECID, AACUSTOMID and the Analytics Source Connector
 description: Learn how the Analytics Source Connector deals with Adobe Analytics identity fields.
+exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
 ---
-
 # AAID, ECID, AACUSTOMID and the Analytics Source Connector
 
 Adobe Analytics data contains multiple identity fields. Three important identity fields are given special treatment by the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en): AAID, ECID, AACUSTOMID.
@@ -44,4 +44,3 @@ Otherwise, AAID is marked as the primary identity for the event.
 * AACUSTOMID is never marked as the Primary ID for the event. However, if AACUSTOMID is present, then AAID is based on AACUSTOMID as per the discussion above.
 
 As far as CJA is concerned, the definition of Primary ID is only important if the end user decides to use the Primary ID as the Person ID. Doing so is not mandatory, however. The user may choose some other identity column as the Person ID.
-
