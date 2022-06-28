@@ -19,8 +19,7 @@ The following panel types are available in Analysis Workspace for [!UICONTROL Cu
 | [Attribution panel](attribution.md) | Quickly compare and visualize any number of attribution models using any dimension and conversion metric. |
 | [Freeform panel](freeform-panel.md) | Perform unlimited comparisons and breakdowns, then add visualizations to tell a rich data story. |
 | [Media Concurrent Viewers panel](media-concurrent-viewers.md) | Analyze concurrent viewers over time, with details on peak concurrency and the ability to break down and compare. |
-| [Media Playback Timespent panel](media-playback-time-spent.md) | Analyze playback time spent to understand where peak concurrency occurred or where drop-oﬀs happened. |
-
+| [Media Playback Timespent panel](media-playback-timespent/media-playback-time-spent.md) | Analyze playback time spent to understand where peak concurrency occurred or where drop-oﬀs happened. |
 
 ![](assets/panel-overview.png)
 
