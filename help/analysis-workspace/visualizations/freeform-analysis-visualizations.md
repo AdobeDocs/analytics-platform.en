@@ -89,6 +89,6 @@ Additional functionality for a visualization is available by right-clicking on t
 
 ## Create Visual icon {#quick-viz}
 
-If you are not sure which visualization to pick, click the **[!UICONTROL Create Visual]** icon in any table row (available on hover). This the the fastest way to add a visualization. Clicking it prompts Analysis Workspace to take an educated guess at which visualization would best fit your data. For example, if you have 1 row selected, it will create a trended line graph. If you have 3 filter rows selected, it will create a Venn diagram. 
+If you are not sure which visualization to pick, click the **[!UICONTROL Create Visual]** icon in any table row (available on hover). This is the fastest way to add a visualization. Clicking it prompts Analysis Workspace to take an educated guess at which visualization would best fit your data. For example, if you have 1 row selected, it will create a trended line graph. If you have 3 filter rows selected, it will create a Venn diagram. 
 
 ![Quick visualization](assets/quick-viz.png)

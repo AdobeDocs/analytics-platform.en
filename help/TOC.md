@@ -33,6 +33,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Compare data processing across Adobe Analytics and CJA](getting-started/aa-vs-cja/data-processing-comparisons.md)
     + [Virtual reporting environments and sandbox environments](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
     + [Processing Rules, VISTA and classifications versus Data Prep](getting-started/aa-vs-cja/pr-vista-dataprep.md)
+    + [AAID, ECID, AACUSTOMID and the Analytics Source Connector](getting-started/aa-vs-cja/aaid-ecid-adc.md)
   + [Deletion implications](getting-started/cja-deletion.md)
   + [CJA glossary](getting-started/cja-glossary.md)
 + Connections {#cja-connections}
@@ -234,3 +235,4 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Compare your Adobe Analytics data to CJA data](troubleshooting/compare.md)
 + Privacy {#cja-privacy}
   + [Privacy Overview](privacy/privacy-overview.md)
++ [CJA API](https://developer.adobe.com/cja-apis/docs/)
