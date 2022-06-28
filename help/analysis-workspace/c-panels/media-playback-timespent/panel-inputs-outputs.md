@@ -7,6 +7,11 @@ exl-id: 4c0380ff-f55c-48a7-a4b2-1a291511e4d9
 ---
 # Media Playback Time Spent Panel Inputs and Outputs {#Inputs-and-outputs}
 
+>[!NOTE]
+>
+>This feature is currently in [limited testing](/help/release-notes/releases.md).
+
+
 You can customize your Media Playback Time Spent panel using the following input and output settings.
 
 ## Panel Inputs {#Input}
