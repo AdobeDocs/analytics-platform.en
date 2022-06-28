@@ -33,7 +33,7 @@ The Analytics Source Connector passes these identities through to Adobe Experien
 
 These fields are not marked as identities. Rather, the same identities are copied into XDM's **_identityMap_** as key value pairs as follows:
 
-* `{ “key”: “AAID”, “value”: [ { “id”: “<em><identity></em>”, “primary”: <true or false>} ] }`
+* `{ “key”: “AAID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false>} ] }`
 * `{ “key”: “ECID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
 * `{ “key”: “AACUSTOMID”, “value”: [ { “id”: “<identity>”, “primary”: **false** } ] }`
 
