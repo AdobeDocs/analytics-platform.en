@@ -5,6 +5,10 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 ---
 # Create and publish audiences
 
+>[!NOTE]
+>
+>This feature is currently in [limited testing](/help/release-notes/releases.md).
+
 This topic discusses how to create and publish audiences identified in Customer Journey Analytics (CJA) to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) in Adobe Experience Platform for customer targeting and personalization. 
 
 Read this [overview](/help/components/audiences/audiences-overview.md) to familiarize yourself with the concept of CJA audiences.
