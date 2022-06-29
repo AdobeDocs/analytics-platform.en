@@ -7,6 +7,11 @@ exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 ---
 # Media Concurrent Viewers panel
 
+>[!NOTE]
+>
+>This feature is currently in [limited testing](/help/release-notes/releases.md).
+
+
 You can analyze concurrent viewers to understand where peak concurrency occurred or where drop-offs happened to provide valuable insight into the quality of content and viewer engagement, and to help with troubleshooting or planning for volume or scale.
 
 In Analysis Workspace, Concurrent Viewers is the number of unique visitors viewing your media stream(s) at a specific point in time, regardless of the number of sessions.

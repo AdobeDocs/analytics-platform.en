@@ -7,6 +7,10 @@ exl-id: be5d5557-ef5f-4a13-8d4c-0a64a8163412
 ---
 # Media Playback Time Spent FAQs
 
+>[!NOTE]
+>
+>This feature is currently in [limited testing](/help/release-notes/releases.md).
+
 
 |Question|Answer|
 |---|---|
