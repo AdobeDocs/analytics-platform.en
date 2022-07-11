@@ -15,7 +15,7 @@ Adobe provides a variety of means to create virtual reporting environments and s
 
 For more information, see: [Virtual report suites overview](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en).
 
-A VRS:
+A virtual report suite:
 
 * Can be based on Adobe Analytics segments.
 * Can be applied to both historical and new data in a non-destructive manner.
