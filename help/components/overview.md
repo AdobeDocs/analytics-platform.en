@@ -14,7 +14,8 @@ Components are features in Customer Journey Analytics that can be used in report
 
 You can manage the following components:
 
-* [**Annotations**](/help/components/annotations/overview.md): Communicate contextual data nuances and insights to your organization. **This feature is currently in [limited testing](/help/release-notes/releases.md).**
+* [**Annotations**](/help/components/annotations/overview.md): Communicate contextual data nuances and insights to your organization.
+* [**Audiences**](/help/components/audiences/audiences-overview.md): Create and publish audiences discovered in Customer Journey Analytics (CJA) to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCP) in Adobe Experience Platform for customer targeting and personalization.
 * [**Filters**](filters/filters-overview.md): Exclude parts of your data to focus on common dimension items
 * [**Calculated metrics**](calc-metrics/calc-metr-overview.md): Use metrics and formulas as new components for use in reporting
 * [**Date ranges**](date-ranges/overview.md): Customize and refine the date ranges Analysis Workspace offers
