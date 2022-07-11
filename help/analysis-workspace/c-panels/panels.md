@@ -6,7 +6,7 @@ exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 ---
 # Panels overview
 
-A [!UICONTROL panel] is a collection of tables and visualizations. You can access panels from the top left icon in Workspace or a [blank panel](/help/analysis-workspace/c-panels/blank-panel.md). Panels are helpful when you want to organize your projects according to time periods, data views, or analysis use case. 
+A [!UICONTROL panel] is a collection of tables and visualizations. You can access panels from the top left icon in Workspace or a [blank panel](/help/analysis-workspace/c-panels/blank-panel.md). Panels are helpful when you want to organize your projects according to time periods, data views, or analysis use case.
 
 ## Panel types
 
@@ -18,6 +18,8 @@ The following panel types are available in Analysis Workspace for [!UICONTROL Cu
 | [Quick Insights panel](quickinsight.md) | Quickly build a freeform table and an accompanying visualization in order to analyze and uncover insights faster. |
 | [Attribution panel](attribution.md) | Quickly compare and visualize any number of attribution models using any dimension and conversion metric. |
 | [Freeform panel](freeform-panel.md) | Perform unlimited comparisons and breakdowns, then add visualizations to tell a rich data story. |
+| [Media Concurrent Viewers panel](media-concurrent-viewers.md) | Analyze concurrent viewers over time, with details on peak concurrency and the ability to break down and compare. |
+| [Media Playback Timespent panel](media-playback-timespent/media-playback-time-spent.md) | Analyze playback time spent to understand where peak concurrency occurred or where drop-oﬀs happened. |
 
 ![](assets/panel-overview.png)
 
@@ -27,7 +29,7 @@ The default starting panel is the [!UICONTROL Freeform] panel, but you can make 
 
 ## Calendar {#calendar}
 
-The panel calendar controls the reporting range for tables and visualizations within a panel. 
+The panel calendar controls the reporting range for tables and visualizations within a panel.
 
 Note: If a (purple) date range component is used within a table, visualization or panel dropzone, it will override the panel calendar.
 
@@ -47,7 +49,7 @@ Drag and drop any Filters from the left rail into the panel drop zone to begin f
 
 ### Ad hoc filters
 
-Non-filter components can also be dragged directly into the dropzone to create ad hoc filters, saving you the time and effort of going to the Filter Builder. Filters created in this way are automatically defined as hit-level filters. This definition can be modified by clicking the information icon (i) next to the filter, then the pencil-shaped edit icon and editing it in the Filter Builder. 
+Non-filter components can also be dragged directly into the dropzone to create ad hoc filters, saving you the time and effort of going to the Filter Builder. Filters created in this way are automatically defined as hit-level filters. This definition can be modified by clicking the information icon (i) next to the filter, then the pencil-shaped edit icon and editing it in the Filter Builder.
 
 Ad hoc filters are local to the project and will not show up in your left rail unless you make them public.
 
@@ -55,7 +57,7 @@ Ad hoc filters are local to the project and will not show up in your left rail u
 
 ### Drop-down filters {#dropdown-filter}
 
-In addition to filters, drop-down filters enable you to interact with the data in a controlled way. For example, you can add a drop-down filter for Mobile Device Types so that you can filter the panel by Tablet, Mobile Phone or Desktop. 
+In addition to filters, drop-down filters enable you to interact with the data in a controlled way. For example, you can add a drop-down filter for Mobile Device Types so that you can filter the panel by Tablet, Mobile Phone or Desktop.
 
 Drop-down filters can be used to consolidate many projects into one as well. For example, if you have many versions of the same project with different Country filters applied, you can consolidate all versions into a single project and add a Country drop-down filter.
 
@@ -63,9 +65,9 @@ Drop-down filters can be used to consolidate many projects into one as well. For
 
 To create drop-down filters:
 
-1. To create a drop-down filter using [!UICONTROL Dimension items], such as values within the [!UICONTROL Marketing Channel] dimension, click the right-arrow icon next to your dimension in the left rail. This will expose all of the available items. Select one or many component items from the left rail and drop them into the panel dropzone **while holding the Shift key**. This will turn the components into a drop-down filter, rather than into a single filter. 
-1. To create a drop-down filter using other component such as metrics, filters, or date ranges, select from one component type in the left rail and drop into the panel dropzone **while holding down the Shift key**. 
-1. Select one of the options from the dropdown to change the data in the panel. You can also choose to not filter any of the panel data by selecting **[!UICONTROL No filter]**. 
+1. To create a drop-down filter using [!UICONTROL Dimension items], such as values within the [!UICONTROL Marketing Channel] dimension, click the right-arrow icon next to your dimension in the left rail. This will expose all of the available items. Select one or many component items from the left rail and drop them into the panel dropzone **while holding the Shift key**. This will turn the components into a drop-down filter, rather than into a single filter.
+1. To create a drop-down filter using other component such as metrics, filters, or date ranges, select from one component type in the left rail and drop into the panel dropzone **while holding down the Shift key**.
+1. Select one of the options from the dropdown to change the data in the panel. You can also choose to not filter any of the panel data by selecting **[!UICONTROL No filter]**.
 
 ![](assets/create-dropdown.png)
 
@@ -73,7 +75,7 @@ To create drop-down filters:
 
 ## Right-click menu {#right-click}
 
-Additional functionality for a panel is available by right-clicking on the panel header. 
+Additional functionality for a panel is available by right-clicking on the panel header.
 
 ![](assets/right-click-menu.png)
 

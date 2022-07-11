@@ -33,6 +33,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Compare data processing across Adobe Analytics and CJA](getting-started/aa-vs-cja/data-processing-comparisons.md)
     + [Virtual reporting environments and sandbox environments](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
     + [Processing Rules, VISTA and classifications versus Data Prep](getting-started/aa-vs-cja/pr-vista-dataprep.md)
+    + [AAID, ECID, AACUSTOMID and the Analytics Source Connector](getting-started/aa-vs-cja/aaid-ecid-adc.md)
   + [Deletion implications](getting-started/cja-deletion.md)
   + [CJA glossary](getting-started/cja-glossary.md)
 + Connections {#cja-connections}
@@ -113,6 +114,11 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Blank panel](analysis-workspace/c-panels/blank-panel.md)
     + [Freeform panel](analysis-workspace/c-panels/freeform-panel.md)
     + [Quick Insights panel](analysis-workspace/c-panels/quickinsight.md)
+    + [Media Concurrent Viewers panel](analysis-workspace/c-panels/media-concurrent-viewers.md)
+    + Media Playback Time Spent {#media-playback-timespent}
+      + [Overview](analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
+      + [Input and Output Settings](analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
+      + [FAQs](analysis-workspace/c-panels/media-playback-timespent/faqs.md)
   + Curate, Share and Schedule projects {#curate-share}
     + [Share menu](analysis-workspace/curate-share/send-schedule-files.md)
     + [Curate projects](analysis-workspace/curate-share/curate.md)
