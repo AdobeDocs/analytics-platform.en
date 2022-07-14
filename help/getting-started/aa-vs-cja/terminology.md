@@ -1,4 +1,4 @@
-# Comparing terminology for data passed through ADC
+# Comparing Terminology for Analytics Data Passed Through the Analytics Source Connector
 
 | Related Terms | Adobe Analytics | Adobe Analytics Data Feeds | Data Lake | CJA | Notes |
 |---|---|---|---|---|---|
