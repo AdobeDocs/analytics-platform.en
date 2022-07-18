@@ -95,8 +95,11 @@ Three components facilitate this reporting:
 
 * 2 metrics: New sessions, Return sessions
 
-1.	Go into data view editor.
-2.	Click the **[!UICONTROL Components]** > **[!UICONTROL Optional Standard components]** tab in left rail.
+To access these components:
+
+1. Go into the data view editor.
+1. Click the **[!UICONTROL Components]** > **[!UICONTROL Optional Standard components]** tab in left rail.
+1. Drag them into your data view.
 
 95%-99% of the time, new sessions will be reported accurately. The only exceptions are:
 
