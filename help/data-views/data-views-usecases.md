@@ -81,7 +81,7 @@ Don't forget to rename each metric to reflect the differences, such as "Algorith
 For more information on other data views settings, see [Create data views](/help/data-views/create-dataview.md).
 For a conceptual overview of data views, see [Data views overview](/help/data-views/data-views.md).
 
-## New vs. Repeat session reporting {#new-repeat}
+## 7. New vs. Repeat session reporting {#new-repeat}
 
 You can determine whether a session is indeed the first-ever session for a user or not, based on the reporting window that you defined for this data view and a 13-month lookback window. This reporting lets you determine, for example:
 
@@ -91,9 +91,9 @@ You can determine whether a session is indeed the first-ever session for a user 
 
 Three components facilitate this reporting: 
 
-* 1 dimension: New vs. Returning sessions
+* 1 dimension: [Session type](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - This dimension has two values: 1) [!UICONTROL New] and 2) [!UICONTROL Returning]. The [!UICONTROL New] line item includes all of the behavior (i.e. metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they fall into the ‘Not applicable’ bucket for this dimension.
 
-* 2 metrics: New sessions, Return sessions
+* 2 metrics: [New sessions, Return sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). A new session is defined as a person’s defined first session within the reporting window. Return sessions is the number of sessions that were not a person’s first-ever session.
 
 To access these components:
 
@@ -103,7 +103,7 @@ To access these components:
 
 95%-99% of the time, new sessions will be reported accurately. The only exceptions are:
 
-* When a session occurred before the 13-month lookback window. This session will be ignored.
+* When a first session occurred before the 13-month lookback window. This session will be ignored.
 
 * When a session spans both the lookback window and the reporting window. Let’s say you run a report from June 1 to June 15, 2022. The lookback window would encompass May 1, 2021 to May 31, 2022. If a session were to start on May 30, 2022 and end on June 1, 2022, because the session is included in the lookback window, all sessions in the reporting window get counted as returning sessions. 
 
