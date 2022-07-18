@@ -11,6 +11,7 @@ The following updates were made to the CJA documentation since its inception.
 
 | Date | Update description |
 | --- | --- |
+| July 2022 | New vs. Repeat Session Reporting documentation. |
 | June 2022 | New article on [AAID, ECID, AACUSTOMID and the Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html) |
 | June 2022 | New article on [Adobe Analytics processing rules, VISTA and classifications vs. Data Prep for the Analytics Source Connector](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md) |
 | June 2022 | New article on [virtual reporting environments and sandbox environments](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md) |

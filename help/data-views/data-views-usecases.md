@@ -9,7 +9,7 @@ feature: Data Views
 
 These use cases show the flexibility and power of data views in Customer Journey Analytics.
 
-## 1. Create a metric from a string schema field
+## 1. Create a metric from a string schema field {#string}
 
 For example, when creating a data view, you could create an [!UICONTROL Orders] metric from a [!UICONTROL pageTitle] schema field that is a string. Here are the steps:
 
@@ -26,7 +26,7 @@ For example, when creating a data view, you could create an [!UICONTROL Orders] 
 
 Another example would be to use the Visitor ID, a dimension, as a metric to determine how many Visitor IDs your company has.
 
-## 2. Use integers as dimensions
+## 2. Use integers as dimensions {#integers}
 
 Previously, integers would automatically be treated as metrics in CJA. Now, numerics (including custom events from Adobe Analytics) can be treated as dimensions. Here is an example:
 
@@ -38,7 +38,7 @@ Previously, integers would automatically be treated as metrics in CJA. Now, nume
 
    ![](assets/bucketing.png)
 
-## 3. Use numeric dimensions as "metrics" in flow diagrams
+## 3. Use numeric dimensions as "metrics" in flow diagrams {#numeric}
 
 You can use a numeric dimension to get “metrics” into your [!UICONTROL  Flow] visualization. 
 
@@ -47,7 +47,7 @@ You can use a numeric dimension to get “metrics” into your [!UICONTROL  Flow
 
 ![](assets/flow.png)
 
-## 4. Do sub-event filtering
+## 4. Do sub-event filtering {#sub-event}
 
 This capability is specifically applicable to array-based fields. The include/exclude functionality lets you do filtering at the sub-event level, whereas filters (segments) built in the filter builder only give you filtering at the event level. So you can do sub-event filtering by using include/exclude in Data Views, and then reference that new metric/dimension in a filter at the event level.
 
@@ -64,13 +64,13 @@ For example, use the include/exclude functionality in Data Views to focus only o
 
 These new settings allow you to view only high-value revenue and filter out anything below $50.
 
-## 5. Utilize the [!UICONTROL No Value Options] setting
+## 5. Utilize the [!UICONTROL No Value Options] setting {#no-value}
 
 Your company may have spent time training your users to expect "Unspecified" in reports. The default in Data Views is "No Value". You can now [rename "No Value" to "Unspecified"](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-no-value-options-settings) in the Data Views UI.
 
 Another example would be a dimension for a membership program registration. In this case, you could rename "No Value" to "No Membership Program Registration."
 
-## 6. Create multiple metrics with different [!UICONTROL Attribution] settings
+## 6. Create multiple metrics with different [!UICONTROL Attribution] settings {#attribution}
 
 Using the [!UICONTROL Duplicate] feature at the top right, create a number of Revenue metrics with different attribution settings like [!UICONTROL First Touch], [!UICONTROL Last Touch], and [!UICONTROL Algorithmic].
 
@@ -80,3 +80,27 @@ Don't forget to rename each metric to reflect the differences, such as "Algorith
 
 For more information on other data views settings, see [Create data views](/help/data-views/create-dataview.md).
 For a conceptual overview of data views, see [Data views overview](/help/data-views/data-views.md).
+
+## New vs. Repeat session reporting {#new-repeat}
+
+You can determine whether a session is indeed the first-ever session for a user or not, based on the reporting window that you defined for this data view and a 13-month lookback window. This reporting lets you determine, for example:
+
+* What percentage of your orders are coming from new vs. repeat sessions?
+
+* For a given marketing channel, or a specific campaign, are you targeting first-time users or return users? How did these choices influence conversion rates?
+
+Three components facilitate this reporting: 
+
+* 1 dimension: New vs. Returning sessions
+
+* 2 metrics: New sessions, Return sessions
+
+1.	Go into data view editor.
+2.	Click the **[!UICONTROL Components]** > **[!UICONTROL Optional Standard components]** tab in left rail.
+
+95%-99% of the time, new sessions will be reported accurately. The only exceptions are:
+
+* When a session occurred before the 13-month lookback window. This session will be ignored.
+
+* When a session spans both the lookback window and the reporting window. Let’s say you run a report from June 1 to June 15, 2022. The lookback window would encompass May 1, 2021 to May 31, 2022. If a session were to start on May 30, 2022 and end on June 1, 2022, because the session is included in the lookback window, all sessions in the reporting window get counted as returning sessions. 
+
