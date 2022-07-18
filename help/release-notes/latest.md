@@ -8,6 +8,10 @@ feature: Release Notes
 
 **Last update**: July 13, 2022
 
+>[!NOTE]
+>
+>This page contains pre-release information and is subject to change.
+
 ## Key features
 
 | Feature | Description | [Targeted Date](/help/release-notes/releases.md) |
