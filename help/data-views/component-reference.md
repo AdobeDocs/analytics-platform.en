@@ -42,9 +42,9 @@ Optional Standard components are available under **[!UICONTROL Data views]** > *
 | [!UICONTROL Day of Month] | Time-parting dimension | 1-31 |
 | [!UICONTROL Day of Week]| Time-parting dimension | Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday |
 | [!UICONTROL Day of Year] | Time-parting dimension | 1-366 |
-| [!UICONTROL First-time session] | Metric | A person's defined first session within the reporting window |
 | [!UICONTROL Hour of Day] | Time-parting dimension | 0-23 |
 |[!UICONTROL  Month of Year] | Time-parting dimension | January - December |
+| [!UICONTROL New session] | Metric | A person's defined first session within the reporting window |
 | [!UICONTROL Person ID] | Dimension | Each dataset schema defined in the Experience Platform can have its own set of one or more identities defined and associated with an Identity Namespace. Any of these can be used as the Person ID. Examples include Cookie ID, Stitched ID, User ID, Tracking Code, etc. The [!UICONTROL Person ID] dimension is the foundation of combining datasets and identifying unique visitors in CJA.<p>Possible use cases include:<ul><li>Creating a filter on a specific person ID value to filter everything down to that user's behavior.</li><li>Debugging: making sure that the data for a specific cookie ID (or a specific customer ID) is there.</li><li>Identifying the users who called in to a call center.</li></ul>  |
 | [!UICONTROL Person ID namespace] | Dimension | Which type of ID the [!UICONTROL Person ID] consists of. Examples: `email address`, `cookie ID`, `Analytics ID`, etc. |
 | [!UICONTROL Quarter of Year] | Time-parting dimension | Q1, Q2, Q3, Q4 |
