@@ -3,8 +3,8 @@ title: CJA Access Control
 description: Learn about access control requirements for creating connections, adding datasets, creating data views, etc.
 solution: Customer Journey Analytics
 feature: CJA Basics
+exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 ---
-
 # CJA Access Control
 
 To create connections, add datasets, and so on, you need the following permissions in the [Admin Console](https://adminconsole.adobe.com/enterprise/):
