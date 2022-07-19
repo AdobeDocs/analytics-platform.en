@@ -15,7 +15,7 @@ To access and perform tasks in Customer Journey Analytics, you must be added as 
 
 ## Required Adobe Experience Platform permissions
 
-Becoming a product admin within Customer Journey Analytics alone is not enough to create, update, or delete a Connection. To create a connection to an Experience Platform dataset, you also need Experience Platform permissions. Specifically, you must be part of an **Experience Platform Product Profile** that gives you the following permissions:
+Becoming a product admin in Customer Journey Analytics alone is not enough to create, update, or delete a connection. To create a connection to an Experience Platform dataset, you also need Experience Platform permissions. Specifically, you must be part of an **Experience Platform Product Profile** that gives you the following permissions:
 
 * View Schemas
 * Manage Schemas
