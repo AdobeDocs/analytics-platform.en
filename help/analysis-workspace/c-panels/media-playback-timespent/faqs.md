@@ -7,11 +7,6 @@ exl-id: be5d5557-ef5f-4a13-8d4c-0a64a8163412
 ---
 # Media Playback Time Spent FAQs
 
->[!NOTE]
->
->This feature is currently in [limited testing](/help/release-notes/releases.md).
-
-
 |Question|Answer|
 |---|---|
 |Where is the Freeform table? How can I see the data source?|<p></p><p>The Freeform table is not available in this view. To download the data source, right-click the line chart and download the CSV ﬁle.</p>|

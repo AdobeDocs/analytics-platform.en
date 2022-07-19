@@ -7,11 +7,6 @@ exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 ---
 # Media Playback Time Spent panel
 
->[!NOTE]
->
->This feature is currently in [limited testing](/help/release-notes/releases.md).
-
-
 You can analyze playback time spent to understand where peak concurrency occurred or where drop-oﬀs happened to provide valuable insight into the quality of content and viewer engagement, and to help with troubleshooting or planning for volume or scale.
 
 In Analysis Workspace, Playback Time Spent is the amount of time spent viewing your media stream(s) at a specific point in time, and includes pause, buffer, and time to start.
