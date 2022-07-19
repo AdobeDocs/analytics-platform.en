@@ -46,10 +46,6 @@ Before you can start using Customer Journey Analytics, the following prerequisit
 * Your organization has an active contract with Adobe Analytics for Select, Prime, or Ultimate with the Customer Journey Analytics add-on. If you are not sure what type of contract you have, or are not sure if you have the CJA add-on, contact your organization's Account Manager.
 * Your organization has been provisioned for Adobe Experience Platform.
 
-## Access Control
-
-Please refer to the [Access Control](help/getting-started/cja-access-control.md) topic.
-
 ## Terminology updates
 
 Several features in CJA have been renamed, when compared to traditional Adobe Analytics, to align with industry standards. Some updated terminology includes:
