@@ -17,7 +17,10 @@ feature: Release Notes
 | Feature | Description | [Targeted Date](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
 | Support for numeric fields as lookup keys and lookup values | Useful if you want to classify string values with a numeric field such as a COGS or margin on a product SKU. Allowing metrics from lookups helps you get these data points into reporting. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) | July 20, 2022 |
+| Media Concurrent Viewer panel | Understand where peak concurrency occurred or where drop-offs happened. Get valuable insight into the quality of content and viewer engagement, and help with troubleshooting or planning for volume and scale. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html) | July 30, 2022 |
+| Media Playback Time Spent panel | Media Playback Time Spent provides valuable insight into viewer engagement and enables media organizations to derive deeper, more granular insights with minute-by-minute user engagement through advanced time spent analysis with day-parting capabilities. You can observe the amount of time spent viewing your media streams at a specific point in time. You can split the playback duration by different granularities, including new 5 minute, 15 minute, and 30-minute granularities.  [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) | July 30, 2022 |
 | First vs. Repeat Session Reporting | You can now discover if a particular session was a user's first-ever session. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | August 17, 2022 |
+
 
 ## Fixes
 

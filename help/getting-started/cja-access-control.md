@@ -3,8 +3,8 @@ title: CJA Access Control
 description: Learn about access control requirements for creating connections, adding datasets, creating data views, etc.
 solution: Customer Journey Analytics
 feature: CJA Basics
+exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 ---
-
 # CJA Access Control
 
 To access and perform tasks in Customer Journey Analytics, you must be added as an Admin to the **Customer Journey Analytics Product Profile** in the [Admin Console](https://adminconsole.adobe.com/enterprise/). Product admins are granted the following permissions:
@@ -31,3 +31,4 @@ You cannot grant or deny permissions on individual metrics or dimensions in Cust
 ## User access
 
 Non-product admins (users) in Customer Journey Analytics cannot view data views or connections, but can create filters, projects, and calculated metrics.
+
