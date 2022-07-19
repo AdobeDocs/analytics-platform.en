@@ -83,6 +83,10 @@ For a conceptual overview of data views, see [Data views overview](/help/data-vi
 
 ## 7. New vs. Repeat session reporting {#new-repeat}
 
+>[!NOTE]
+>
+>This functionality is currently in limited testing.
+
 You can determine whether a session is indeed the first-ever session for a user or not, based on the reporting window that you defined for this data view and a 13-month lookback window. This reporting lets you determine, for example:
 
 * What percentage of your orders are coming from new vs. repeat sessions?
