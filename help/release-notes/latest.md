@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Customer Journey Analytics (CJA) release notes (July 2022)
 
-**Last update**: July 13, 2022
+**Last update**: July 19, 2022
 
 >[!NOTE]
 >
@@ -16,8 +16,8 @@ feature: Release Notes
 
 | Feature | Description | [Targeted Date](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| First vs. Repeat Session Reporting | You can now discover if a particular session was a user's first-ever session. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | July 20, 2022 |
 | Support for numeric fields as lookup keys and lookup values | Useful if you want to classify string values with a numeric field such as a COGS or margin on a product SKU. Allowing metrics from lookups helps you get these data points into reporting. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) | July 20, 2022 |
+| First vs. Repeat Session Reporting | You can now discover if a particular session was a user's first-ever session. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | August 17, 2022 |
 
 ## Fixes
 
