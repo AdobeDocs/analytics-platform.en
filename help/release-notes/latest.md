@@ -8,10 +8,6 @@ feature: Release Notes
 
 **Last update**: July 19, 2022
 
->[!NOTE]
->
->This page contains pre-release information and is subject to change.
-
 ## Key features
 
 | Feature | Description | [Targeted Date](/help/release-notes/releases.md) |
@@ -21,6 +17,7 @@ feature: Release Notes
 | Media Playback Time Spent panel | Media Playback Time Spent provides valuable insight into viewer engagement and enables media organizations to derive deeper, more granular insights with minute-by-minute user engagement through advanced time spent analysis with day-parting capabilities. You can observe the amount of time spent viewing your media streams at a specific point in time. You can split the playback duration by different granularities, including new 5 minute, 15 minute, and 30-minute granularities.  [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) | July 30, 2022 |
 | First vs. Repeat Session Reporting | You can now discover if a particular session was a user's first-ever session. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | August 17, 2022 |
 
+{style="table-layout:auto"}
 
 ## Fixes
 
@@ -28,9 +25,11 @@ AN-288455; AN-288828; AN-289323
 
 ## Important notices for CJA Administrators
 
-| Notice | Added or Updated | Description |
+| Notice | Notice added or Updated | Description |
 | --- | --- | --- |
-| Improved IP-to-geolocation mapping | July 11, 2022 | Adobe's vendor for IP lookups, Digital Element, is upgrading to a new improved dataset (NetAcuity Pulse) for IP-to-geolocation mapping. Adobe Analytics will adopt this new dataset in the October, 2022, timeframe. The new database will be more accurate than previous versions. Some IP-to-geo mappings will change/improve when the new database is adopted.<p> CJA data provided through the Analytics Source Connector will also automatically take advantage of the new mappings. |
+| **Improved IP-to-geolocation mapping** | July 11, 2022 | Adobe's vendor for IP lookups, Digital Element, is upgrading to a new improved dataset (NetAcuity Pulse) for IP-to-geolocation mapping. Adobe Analytics will adopt this new dataset in the **October, 2022**, timeframe. The new database will be more accurate than previous versions. Some IP-to-geo mappings will change/improve when the new database is adopted.<p> CJA data provided through the Analytics Source Connector will also automatically take advantage of the new mappings. |
+
+{style="table-layout:auto"}
 
 >[!MORELIKETHIS]
 >[Customer Journey Analytics documentation updates](/help/release-notes/doc-changes.md)
