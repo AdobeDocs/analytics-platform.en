@@ -3,6 +3,7 @@ description: Explains what factors influence the consistency of metrics and audi
 title: Consistency of metrics and audience membership counts between Real-time CDP and CJA
 role: Admin
 feature: CJA Basics
+exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
 ---
 
 # Consistency of metrics and audience membership counts between Real-time CDP and CJA
