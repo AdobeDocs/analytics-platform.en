@@ -3,13 +3,10 @@ description: Explains what factors influence the consistency of metrics and audi
 title: Consistency of metrics and audience membership counts between Real-time CDP and CJA
 role: Admin
 feature: CJA Basics
+exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
 ---
-<<<<<<< Updated upstream
 
-# Consistency of metrics between Real-time CDP and CJA
-=======
 # Consistency of metrics and audience membership counts between Real-time CDP and CJA
->>>>>>> Stashed changes
 
 In real-world scenarios, consistency of metrics and audience membership counts across Real-time Customer Data Platform (Real-time CDP) and Customer Journey Analytics (CJA) cannot be guaranteed. This document explains why.
 
