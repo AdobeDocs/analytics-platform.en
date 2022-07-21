@@ -35,9 +35,9 @@ Similarly, Real-time CDP applies [merge policies](https://experienceleague.adobe
 
 Real-time CDP requires point-in-time profile stitching using the latest ID graph.
 
-* Real-time CDP is designed to assemble profile information in real-time for activation.
+* Real-time CDP is designed to assemble profile information in real time for activation.
 
-* It can accommodate in real-time all changes to the set identifiers for a given user.
+* It can accommodate in real time all changes to the set identifiers for a given user.
 
 * The lookback window is controlled by the segment definition.
 
