@@ -13,11 +13,11 @@ In real-world scenarios, consistency of metrics across Real-time Customer Data P
 
 CDP and CJA do not share the same definition of a person today. CJA does not yet use [Identity Graph](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) to inform its definition of a person. Real-time CDP relies entirely on the information in the Identity Graph to build a merged profile.
 
-CJA uses a method called [Field-Based Stitching](/help/connections/cca/overview.md) which extracts identifiers from datasets in the data lake and applies custom logic to link them together. In the intermediate future, CJA is expected to start making use of [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) exports to the data lake, allowing for a shared notion of identity across CDP and CJA.
+CJA uses a method called [Field-Based Stitching](/help/connections/cca/overview.md) which extracts identifiers from datasets in the data lake and applies custom logic to link them together. In the intermediate future, CJA is expected to start making use of [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) exports to the data lake, allowing for a shared notion of identity across Real-time CDP and CJA.
 
 >[!IMPORTANT]
 >
->Making Adobe Experience Platform Identity Service the identity source of truth for all AEP (Adobe Experience Platform) applications does not automatically make metrics consistent across applications. Read on to learn why.
+>Making Adobe Experience Platform Identity Service the identity source of truth for all Adobe Experience Platform applications does not automatically make metrics consistent across applications. Read on to learn why.
 
 ## Application data flexibility
 
