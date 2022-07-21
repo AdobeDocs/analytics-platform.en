@@ -11,6 +11,8 @@ The following updates were made to the CJA documentation since its inception.
 
 | Date | Update description |
 | --- | --- |
+| July 2022 | [Media Playback Time Spent panel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) documentation. |
+| July 2022 | [Media Concurrent Viewer panel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html) documentation. |
 | July 2022 | [New vs. Repeat Session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) reporting documentation.  |
 | June 2022 | New article on [AAID, ECID, AACUSTOMID and the Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html) |
 | June 2022 | New article on [Adobe Analytics processing rules, VISTA and classifications vs. Data Prep for the Analytics Source Connector](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md) |
