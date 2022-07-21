@@ -65,7 +65,7 @@ Even if the datasets in Real-time CDP and CJA are the same, Real-time CDP may on
 
 ## Differences in GDPR (General Data Protection Regulation) processing
 
-Data processing logic for GDPR and data hygiene across UPS and data lake is quite different. We are working towards a single approach.
+Data processing logic for GDPR and data hygiene across Real-time CDP and data lake is quite different. We are working towards a single approach.
 
 ## Differences in data ingestion latency
 
