@@ -27,7 +27,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [CJA Access Control](getting-started/cja-access-control.md)
   + [Customer Journey Analytics landing page](getting-started/landing.md)
   + [Frequently asked questions](getting-started/cja-faq.md)
-  + [Consistency of metrics between Real-time CDP and CJA](getting-started/consistency-rcdp-cja.md)
+  + [Consistency of metrics and audience membership counts between Real-time CDP and CJA](getting-started/consistency-rcdp-cja.md)
   + [Adobe Analytics to Customer Journey Analytics evolution](getting-started/aa-to-cja.md)
   + [User Guide for new Customer Journey Analytics users](getting-started/aa-to-cja-user.md)
   + Compare Adobe Analytics and Customer Journey Analytics {#compare-aa-cja}

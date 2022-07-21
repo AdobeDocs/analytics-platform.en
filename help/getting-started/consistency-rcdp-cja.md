@@ -1,13 +1,14 @@
 ---
-description: Explains what factors influence the consistency of metrics between Real-time Customer Data Platform (Real-time CDP) and CJA.
-title: Consistency of metrics between Real-time CDP and CJA
+description: Explains what factors influence the consistency of metrics and audience membership counts between Real-time Customer Data Platform (Real-time CDP) and CJA.
+title: Consistency of metrics and audience membership counts between Real-time CDP and CJA
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
 ---
-# Consistency of metrics between Real-time CDP and CJA
 
-In real-world scenarios, consistency of metrics across Real-time Customer Data Platform (Real-time CDP) and Customer Journey Analytics (CJA) cannot be guaranteed. This document explains why.
+# Consistency of metrics and audience membership counts between Real-time CDP and CJA
+
+In real-world scenarios, consistency of metrics and audience membership counts across Real-time Customer Data Platform (Real-time CDP) and Customer Journey Analytics (CJA) cannot be guaranteed. This document explains why.
 
 ## CJA does not yet use Identity Graph
 
