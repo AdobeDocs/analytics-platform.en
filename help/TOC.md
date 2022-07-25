@@ -24,6 +24,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Customer Journey Analytics overview {#cja-overview}
   + [Customer Journey Analytics overview](getting-started/cja-overview.md)
   + [Getting Started](getting-started/cja-getting-started.md)
+  + [Consistency of metrics and audience membership counts between Real-time CDP and CJA](getting-started/consistency-rcdp-cja.md)
   + [CJA Access Control](getting-started/cja-access-control.md)
   + [Customer Journey Analytics landing page](getting-started/landing.md)
   + [Frequently asked questions](getting-started/cja-faq.md)
