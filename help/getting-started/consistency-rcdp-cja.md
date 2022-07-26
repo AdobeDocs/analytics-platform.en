@@ -8,13 +8,16 @@ exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
 
 # Consistency of metrics and audience membership counts between Real-time CDP and CJA
 
-In real-world scenarios, consistency of metrics and audience membership counts across Real-time Customer Data Platform (Real-time CDP) and Customer Journey Analytics (CJA) cannot be guaranteed. This document explains why.
+In real-world scenarios, consistency of metrics and audience membership counts across Real-time Customer Data Platform (Real-time CDP) and Customer Journey Analytics (CJA) cannot be guaranteed. This document explains why. 
+
+When comparing audience membership counts between Real-time CDP and CJA, it is important to keep in mind the different purposes of these two tools. Real-time CDP uses customer profile data to target digital experiences to individual consumers, while CJA is designed to help users understand patterns in key business metrics and segments. While audience publishing from CJA to Real-time CDP allows a user of these tools to easily and natively "activate" an insight, taking advantage of learnings obtained in CJA, these tools nevertheless serve fundamentally different purposes. 
 
 ## Differences in identity configurations
 
 Real-time CDP and CJA do not share the same definition of a person today. Real-time CDP relies entirely on the information in the [Identity Graph](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) to build a merged profile.
 
 CJA can be configured to use [Cross-Channel Analytics](/help/connections/cca/overview.md) which extracts identifiers from datasets in the data lake and applies custom logic to link them together.
+
 In the future, CJA will be able to use Identity Graph.
 
 ## Differences in dataset configuration 
