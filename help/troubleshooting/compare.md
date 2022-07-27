@@ -68,8 +68,8 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
    | In_data_only | Not 0 |
    | Exclude_hit | Not 0 |
    | Bot_id | Not 0 |
-   | Hit_source | 0,3,5,7,8,9,10 |
-   | Page_event | 53,63 |
+   | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
+   | Page_event | 53, 63 |
    
    For more information about hit\_source see: [Data column reference](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en).
 
