@@ -64,7 +64,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
    | Analytics field | Values that cause it to be dropped |
    | --- | --- |
-   | Opt_out | `y, Y` |
+   | Opt_out | y, Y |
    | In_data_only | Not 0 |
    | Exclude_hit | Not 0 |
    | Bot_id | Not 0 |
