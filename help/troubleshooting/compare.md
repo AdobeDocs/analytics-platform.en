@@ -62,7 +62,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
    The [Analytics Source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) might drop rows during the transformation to XDM schema. There can be multiple reasons for the whole row to be unfit for transformation. If any of the following Analytics fields have these values, the whole row will be dropped. 
 
-   | Analytics field | Values that cause it to be dropped |
+   | Analytics field | Values that cause a row to be dropped |
    | --- | --- |
    | Opt_out | y, Y |
    | In_data_only | Not 0 |
