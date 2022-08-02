@@ -62,15 +62,17 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
    The [Analytics Source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) might drop rows during the transformation to XDM schema. There can be multiple reasons for the whole row to be unfit for transformation. If any of the following Analytics fields have these values, the whole row will be dropped. 
 
-   | Analytics field | Values that cause it to be dropped |
+   | Analytics field | Values that cause a row to be dropped |
    | --- | --- |
-   | Opt_out | `y, Y` |
+   | Opt_out | y, Y |
    | In_data_only | Not 0 |
    | Exclude_hit | Not 0 |
    | Bot_id | Not 0 |
-   | Hit_source | 0,3,5,7,8,9,10 |
-   | Page_event | 53,63 |
-
+   | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
+   | Page_event | 53, 63 |
+   
+   For more information about hit\_source see: [Data column reference](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en). For more information about page\_event see: [Page Event Lookup](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=en).
+   
 1. If the connector dropped rows, subtract those rows from the [!UICONTROL Occurrences] metric. The resulting number should match the number of events in the Adobe Experience Platform datasets.
 
 ## Why records might be dropped or skipped during ingestion from AEP
