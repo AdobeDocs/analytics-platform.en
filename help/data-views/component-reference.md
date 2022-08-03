@@ -30,6 +30,8 @@ These required standard components are added to each data view by default. They 
 | [!UICONTROL Quarter] | Dimension | The quarter that a given event happened. The first dimension item is the first quarter in the date range, and the last dimension item is the last quarter in the date range. |
 | [!UICONTROL Year] | Dimension | The year that a given event happened. The first dimension item is the first year in the date range, and the last dimension item is the most recent year in the date range. |
 
+{style="table-layout:auto"}
+
 ## Optional standard components {#optional}
 
 Optional Standard components are available under **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > **[!UICONTROL Components]** tab > **[!UICONTROL Standard Components]** tab.
@@ -58,3 +60,4 @@ Optional Standard components are available under **[!UICONTROL Data views]** > *
 | [!UICONTROL Time Spent per Person] | Dimension | Buckets the [!UICONTROL Time Spent] metric into [!UICONTROL Person] buckets. |
 | [!UICONTROL Weekend]/[!UICONTROL Weekday] | Time-parting dimension | Weekend or Weekday |
 
+{style="table-layout:auto"}
