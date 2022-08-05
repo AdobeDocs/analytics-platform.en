@@ -5,10 +5,6 @@ exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 ---
 # Manage audiences created in Customer Journey Analytics
 
->[!NOTE]
->
->This feature is currently in [limited testing](/help/release-notes/releases.md).
-
 Managing previously created audiences lets you
 
 * **Schedule or de-schedule** automatic audience refresh/update. The maximum expiration on the schedule is 1 year. 
