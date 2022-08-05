@@ -11,6 +11,7 @@ The following updates were made to the CJA documentation since its inception.
 
 | Date | Update description |
 | --- | --- |
+| August 2022 | New documentation on [Audience publishing to Real-time Customer Profile](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html) |
 | July 2022 | [Media Playback Time Spent panel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) documentation. |
 | July 2022 | [Media Concurrent Viewer panel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html) documentation. |
 | July 2022 | [New vs. Repeat Session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) reporting documentation.  |

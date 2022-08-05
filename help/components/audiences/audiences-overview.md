@@ -29,7 +29,11 @@ Publishing audiences provides a clear way to activate and to take action on insi
 
 ## Permissions
 
-Admins are automatically granted the [!UICONTROL Audience Publishing] permission in Adobe Admin Console. They can grant this permission to individual users.
+* Admins are automatically granted the **[!UICONTROL Audience Publishing]** permission in Adobe Admin Console. 
+
+* Admins can grant this permission to individual users.
+
+* Admins also need the **[!UICONTROL Manage Profiles]** permission in Adobe Experience Platform.
 
 ## Next steps
 
