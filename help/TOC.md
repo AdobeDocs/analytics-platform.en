@@ -32,6 +32,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [User Guide for new Customer Journey Analytics users](getting-started/aa-to-cja-user.md)
   + Compare Adobe Analytics and Customer Journey Analytics {#compare-aa-cja}
     + [Customer Journey Analytics feature support](getting-started/aa-vs-cja/cja-aa.md)
+    + [Compare terminology for Analytics data passed through the Analytics Source Connector](getting-started/aa-vs-cja/terminology.md)
     + [Compare data processing across Adobe Analytics and CJA](getting-started/aa-vs-cja/data-processing-comparisons.md)
     + [Virtual reporting environments and sandbox environments](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
     + [Processing Rules, VISTA and classifications versus Data Prep](getting-started/aa-vs-cja/pr-vista-dataprep.md)
