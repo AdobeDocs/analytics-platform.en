@@ -22,8 +22,11 @@ Core settings that a data view component uses.
 | [!UICONTROL Dataset] | A non-editable field showing which dataset that the component originated from. This field can contain multiple datasets. |
 | [!UICONTROL Schema Type] | A non-editable field showing the data type of the component.  While you can use any supported schema field type in Platform, not all fields types are supported in CJA. The following data types are supported: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String`, and `Boolean`. Only the `String` schema data type is allowed in Lookup datasets at this time. |
 | [!UICONTROL Component ID] | Required. The [CJA API](https://adobe.io/cja-apis/docs) uses this field to reference the component. Each component in a data view must be unique. Adobe automatically generates an ID for each component; however, you can click the edit icon and modify the component ID. Changing the component ID breaks all existing Workspace projects that contain this component. While each component needs a unique ID in a single data view, you can use the same component ID in other data views. If you use the same component ID in other data views, you can make Workspace projects compatible across data views. |
-| [!UICONTROL Schema Path] | Required. A non-editable field showing the schema path that the component came from. |
+| [!UICONTROL Path] | Required. A non-editable field showing the schema path that the component came from. |
+| [!UICONTROL Data Usage Labels] | Any data usage labels assigned to this component in Adobe Experience Platform. Learn more | 
 | [!UICONTROL Hide component in reporting] | Lets you curate the component out of the data view for non-admins. Admins can still access it by clicking [!UICONTROL Show All Components] in an Analysis Workspace project. |
+
+{style="table-layout:auto"}
 
 Here is a video on component settings in data views:
 

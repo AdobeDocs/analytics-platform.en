@@ -30,6 +30,8 @@ Provides overarching settings for the data view.
 | [!UICONTROL Name] | Required. The name of the data view. This value appears in the top-right dropdown in Analysis Workspace. |
 | [!UICONTROL Description] | Optional. Adobe recommends a detailed description so that users understand why the data view exists and who it is designed for. |
 
+{style="table-layout:auto"}
+
 ### Containers {#containers}
 
 Designates the name of containers for the data view. Container names are frequently used in [filters](/help/components/filters/filters-overview.md#Filter-containers).
@@ -39,6 +41,8 @@ Designates the name of containers for the data view. Container names are frequen
 | [!UICONTROL Person container name] | [!UICONTROL Person] (default). The [!UICONTROL Person] container includes every session and event for visitors within the specified time frame. If your organization uses a different term (for example, "Visitor" or "User"), you can rename the container here. |
 | [!UICONTROL Session container name] | [!UICONTROL Session] (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this container to 'Visit' or any other term your organization prefers. |
 | [!UICONTROL Event container name] | [!UICONTROL Event] (default). The [!UICONTROL Event] container defines individual events in a dataset. If your organization uses a different term (for example, "Hits" or "Page Views"), you can rename the container here. |
+
+{style="table-layout:auto"}
 
 ### Calendar {#calendar}
 
@@ -51,6 +55,8 @@ Indicates the calendar format that you want the data view to follow. You can hav
 | [!UICONTROL First month of the year] and [!UICONTROL First day of week] | Visible for the Gregorian calendar type. Specify what month you want the calendar year to start on, and what day you want each week to start on. |
 | [!UICONTROL First day of current year] | Visible for custom calendar types. Specify what day of the year that you want the current year to start. The calendar automatically formats the first day of each week based on this value. |
 | [!UICONTROL Year in which the "extra" week occurs] | With most 364-day calendars (52 weeks of 7 days each), each year accumulates leftover days until they form an extra week. This extra week is then added to the last month of that year. Specify which year that you want the extra week added to. |
+
+{style="table-layout:auto"}
 
 ## Set a data view's components {#set-components}
 

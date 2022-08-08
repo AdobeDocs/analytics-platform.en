@@ -18,3 +18,5 @@ Format lets you determine how a given metric is displayed.
 | [!UICONTROL Currency] | If the format is Currency, determines which currency you want the metric to display in. This option does not apply any currency conversion; it is just for UI formatting. |
 | [!UICONTROL Show upward trend as] | Lets you specify if an upward trend on this metric is good (green) or bad (red). |
 | [!UICONTROL True value] and [!UICONTROL False value] | Only visible on Boolean schema data types. Lets you customize the dimension item label for `true` and `false` values. |
+
+{style="table-layout:auto"}

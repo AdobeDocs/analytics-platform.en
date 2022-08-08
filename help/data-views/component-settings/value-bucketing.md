@@ -22,3 +22,5 @@ If you would like the flexibility of reporting on both a bucketed and non-bucket
 | [!UICONTROL Including] [!UICONTROL and less than] | Boundaries of subsequent buckets. |
 | [!UICONTROL Greater than or equal to] | The lower boundary of the last dimension bucket. |
 | [!UICONTROL Add bucket] | Lets you add another bucket to numeric dimension bucketing. You can add up to 20 buckets in a single dimension. |
+
+{style="table-layout:auto"}
