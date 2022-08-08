@@ -103,11 +103,10 @@ To access these components:
 
 1. Go into the data view editor.
 1. Click the **[!UICONTROL Components]** > **[!UICONTROL Optional Standard components]** tab in left rail.
-1. Drag them into your data view.
+1. Drag these components into your data view.
 
-95%-99% of the time, new sessions will be reported accurately. The only exceptions are:
+95%-99% of the time, new sessions are reported accurately. The only exceptions are:
 
 * When a first session occurred before the 13-month lookback window. This session will be ignored.
 
-* When a session spans both the lookback window and the reporting window. Let’s say you run a report from June 1 to June 15, 2022. The lookback window would encompass May 1, 2021 to May 31, 2022. If a session were to start on May 30, 2022 and end on June 1, 2022, because the session is included in the lookback window, all sessions in the reporting window get counted as returning sessions. 
-
+* When a session spans both the lookback window and the reporting window. Let’s say you run a report from June 1 to June 15, 2022. The lookback window would encompass May 1, 2021 to May 31, 2022. If a session were to start on May 30, 2022 and end on June 1, 2022, because the session is included in the lookback window, all sessions in the reporting window get counted as return sessions. 
