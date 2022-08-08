@@ -17,6 +17,8 @@ Behavior settings are available on both dimensions and metrics. The available se
 | --- | --- |
 | [!UICONTROL Lower case] | De-duplicates rows that have the same value but different case. If enabled, all instances of a dimension with the same value are reported as lower case. For example, your data contains the values `"liverpool"`, `"Liverpool"`, and `"LIVERPOOL"` in a string dimension. If [!UICONTROL Lower case] is enabled, all three values are combined into `"liverpool"`. If disabled, all three values are treated as distinct. |
 
+{style="table-layout:auto"}
+
 ![Case-sensitive dimension](../assets/case-sens-workspace.png)
 
 >[!NOTE]
@@ -30,5 +32,7 @@ Behavior settings are available on both dimensions and metrics. The available se
 | [!UICONTROL Count values] | Visible on Integer and Double schema data types. Increase the metric by the specified amount. For example, increases a metric by 50 if the value of the column is `50`. |
 | [!UICONTROL Count instances] | Visible on Integer and Double schema data types. Increase the metric by one, regardless of the value. The presence of any value increases the metric. For example, increases a metric by 1 if the value of the column is `50`. |
 | [!UICONTROL Values to count] | Visible on Boolean schema data types. Lets you determine if the metric increases by counting `true`, `false`, or both. |
+
+{style="table-layout:auto"}
 
 You can generate both an 'Orders' and 'Revenue' metric in Analysis Workspace using the same event dataset column with different behaviors. Drag the 'Revenue' dataset column into the data view twice and set one to 'Count values' and the other to 'Count instances'. The 'Orders' metric counts instances, while the 'Revenue' metric counts values.
