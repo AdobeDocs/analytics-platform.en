@@ -5,7 +5,7 @@ description:
 
 # CJA support for Adobe Experience Platform Data Governance
 
-The integration between CJA and [Adobe Experience Platform Data Governance]( https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) allows for labeling of sensitive CJA data and enforcement of privacy policies. 
+The integration between CJA and [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) allows for labeling of sensitive CJA data and enforcement of privacy policies. 
 
 Privacy labels and policies that were created on datasets consumed by Experience Platform can be surfaced in the CJA data views workflow. These labels stop or warn users who create metrics and/or dimensions from sensitive fields. 
 
@@ -15,9 +15,9 @@ This integration allows you to manage compliance more easily. Data stewards in y
 
 ## Labeling and policies in Adobe Experience Platform
 
-When you create a dataset in Experience Platform, you can create [data usage labels]( https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) for some or all of the elements in the dataset. Until now, these labels were not exposed in CJA. With this release, you can view these labels in CJA. Of special interest to CJA is the C8 label, which says “Data cannot be used for measurement of your organization’s websites or apps”.
+When you create a dataset in Experience Platform, you can create [data usage labels](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) for some or all of the elements in the dataset. Until now, these labels were not exposed in CJA. With this release, you can view these labels in CJA. Of special interest to CJA is the C8 label, which says “Data cannot be used for measurement of your organization’s websites or apps”.
 
-Labeling in itself does not mean that these data usage labels are enforced. That’s what policies are used for. You create your policies via the [Policy Service API]( https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=en) in Experience Platform.
+Labeling in itself does not mean that these data usage labels are enforced. That’s what policies are used for. You create your policies via the [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=en) in Experience Platform.
 
 Policies have two components: the data label and a marketing action which data consumers can take within the context of restricted data usage policies. In the context of CJA, two Adobe-defined [marketing actions](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=en#appendix ) are important:
 
