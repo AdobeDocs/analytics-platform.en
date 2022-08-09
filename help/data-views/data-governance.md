@@ -32,13 +32,12 @@ Policies have two components: the data label and a marketing action which data c
 
 * Analytics – using data for analytics purposes, such as measuring, analyzing, and reporting on consumer usage of your organization’s sites or apps.
 
-* Exporting data to a third party - that is, out of the Adobe environment.
+* Exporting data - that is, out of the Adobe environment.
 
 You tie labels and marketing actions together with a policy and then turn on the policy. The policy takes the label and the marketing action and says: enforce this restriction. Two Adobe-defined policies are surfaced in CJA and affect reporting and download/sharing:
 
-* Enforce Analytics policy
-* Enforce Download policy
-
+* [!UICONTROL Enforce Analytics] policy
+* [!UICONTROL Enforce Download] policy
 
 ### View data labels in CJA data views
 
@@ -87,7 +86,7 @@ On individual components, the message would be similar to this:
 
 ### How the [!UICONTROL Enforce Download] policy affects Workspace projects
 
-If this policy is turned on, any download (such as emailing or sharing pdfs) of Workspace projects will hash the sensitive fields. You can still do analysis on these fields in Workspace, but if you try to email or otherwise share a project, the blocked fields will appear as hashed items in the .pdf file.
+If this policy is turned on, any export or download (such as emailing or sharing pdfs) of Workspace projects will hash the sensitive fields. You can still do analysis on these fields in Workspace, but if you try to email or otherwise share a project, the blocked fields will appear as hashed items in the .pdf file.
 
 Add a screenshot here.
 
