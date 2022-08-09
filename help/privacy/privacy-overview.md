@@ -9,7 +9,7 @@ Generally speaking, any data governance-related settings in Customer Journey Ana
 
 ## Data Governance
 
-CJA supports Data Governance labels and policies that are set up in Adobe Experience Platform. For more information, see [CJA support for Adobe Experience Platform Data Governance](/help/data-views/data-governance.md).
+CJA supports Data Governance labels and policies that are set up in Adobe Experience Platform. For more information, see CJA support for Adobe Experience Platform Data Governance.
 
 ## GDPR
 
