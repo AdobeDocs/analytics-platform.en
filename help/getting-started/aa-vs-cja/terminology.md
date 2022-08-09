@@ -2,8 +2,8 @@
 title: Compare terminology for Analytics data passed through the Analytics Source Connector
 description: Some terminology differences
 solution: Customer Journey Analytics
+exl-id: f0f9aa1e-f9d2-4dcb-bbe9-7960412c094b
 ---
-
 # Compare terminology for Analytics data passed through the Analytics Source Connector
 
 Some terminology differences exist between Adobe Analytics, Data Feeds, Analytics Source Connector/Data Lake, and CJA. This topic aims to highlight and clarify those differences.
