@@ -4,11 +4,11 @@ description: Learn how data labels and policies defined in AEP affect reporting 
 mini-toc-levels: 3
 ---
 
+# CJA support for Adobe Experience Platform Data Governance
+
 >[!NOTE]
 >
 >This functionality is currently in [limited testing](/help/release-notes/releases.md).
-
-# CJA support for Adobe Experience Platform Data Governance
 
 The integration between CJA and [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) allows for labeling of sensitive CJA data and enforcement of privacy policies. 
 
