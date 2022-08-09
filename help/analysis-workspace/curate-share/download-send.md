@@ -53,7 +53,7 @@ You can multi-task within the project and even navigate to a new Workspace proje
 
 ![](assets/download-items.png)
 
-### Downloaded items file 
+### Downloaded items file {#items-file}
 
 Features of the table will be applied to the downloaded file as follows:
 
@@ -65,7 +65,7 @@ In the example above, Page items are downloaded with the panel filter (New Visit
 
 ![](assets/downloaded-file.png)
 
-### Download notifications
+### Download notifications {#notifications}
 
 As the file downloads, you will see an informational notification with the progress. At any time, you can cancel the download by clicking **[!UICONTROL Cancel download]**. Closing the toast **will not** cancel the download. 
 
@@ -74,6 +74,10 @@ Once the file completes, you will see a completion notification and the file wil
 If you request more than one download at a time, you will receive a notification that each additional download will be queued until the prior download completes.
 
 ![](assets/toast.png)
+
+## Download sensitive data {#sensitive}
+
+If the Enforce Download data governance policy is turned on, any download (such as emailing or sharing pdfs) of Workspace projects will hash the data fields labeled as sensitive. You can still do analysis on these fields in Workspace, but if you try to email or otherwise share a project, the blocked fields will appear as hashed items in the .pdf file.
 
 ## FAQ {#faq}
 

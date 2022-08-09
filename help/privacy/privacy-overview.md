@@ -1,11 +1,15 @@
 ---
-title: Customer Journey Analytics privacy overview
-description: Describes how privacy settings work in Customer Journey Analytics.
+title: Customer Journey Analytics and Data Governance
+description: Describes how data governance works in Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 ---
-# Customer Journey Analytics privacy overview
+# Customer Journey Analytics and Data Governance
 
-Generally speaking, any privacy-related settings in Customer Journey Analytics are inherited from Adobe Experience Platform.
+Generally speaking, any data governance-related settings in Customer Journey Analytics are inherited from Adobe Experience Platform.
+
+## Data Governance
+
+CJA supports Data Governance labels and policies that are set up in Adobe Experience Platform. For more information, see [CJA support for Adobe Experience Platform Data Governance](/help/data-views/data-governance.md).
 
 ## GDPR
 

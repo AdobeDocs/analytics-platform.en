@@ -238,5 +238,5 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Troubleshooting {#troubleshooting}
   + [Compare your Adobe Analytics data to CJA data](troubleshooting/compare.md)
 + Privacy {#cja-privacy}
-  + [Privacy Overview](privacy/privacy-overview.md)
+  + [Data Governance](privacy/privacy-overview.md)
 + [CJA API](https://developer.adobe.com/cja-apis/docs/)
