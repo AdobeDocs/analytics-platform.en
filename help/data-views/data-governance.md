@@ -28,9 +28,9 @@ Data labels that were created in Experience Platform are shown in three location
 
 | Location | Description |
 | --- | --- |
-| Info button on a schema field | Clicking this button indicates which Data Usage Labels currently apply to a field:<p>![](assets/data-label-left.png) |
-| Right rail under [Component settings](/help/data-views/component-settings/overview.md) | Any Data Usage Labels are listed here:<p>![](assets/data-label-right.png) |
-| Add Data Labels as a column | You can add Data Labels as a column to the Included Components columns in data views. Just click the column selector icon and select Data Usage Labels:<p>![](assets/data-label-column.png) |
+| Info button on a schema field | Clicking this button indicates which [!UICONTROL Data Usage Labels] currently apply to a field:<p>![](assets/data-label-left.png) |
+| Right rail under [Component settings](/help/data-views/component-settings/overview.md) | Any [!UICONTROL Data Usage Labels] are listed here:<p>![](assets/data-label-right.png) |
+| Add Data Labels as a column | You can add [!UICONTROL Data Labels] as a column to the [!UICONTROL Included Components] columns in data views. Just click the column selector icon and select **[!UICONTROL Data Usage Labels]**:<p>![](assets/data-label-column.png) |
 
 {style="table-layout:auto"}
 
