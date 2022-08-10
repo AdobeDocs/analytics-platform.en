@@ -20,13 +20,13 @@ feature: Release Notes
 | **CJA Report Builder support for Data Governance labels and policies** | To follow. | August 17, 2022 |
 | **Experiment Panel for CJA (Generic Lift and Confidence)** | This new Workspace panel allows customers to analyze the results of A/B tests in CJA. More information to follow. | August 17, 2022 |
 | **Date field support in CJA** | Allows CJA to report on date and datetime fields. | August 17, 2022 |
-| **Cross-region support for Analytics Source Connector** | Allows you to to use the existing Analytics Source Connector UI to select a report suite that is in another region (but in the same organization) and be able to ingest that report suite.  | August 24, 2022 |
+| **Cross-region support for Analytics Source Connector** | You can now ingest report suites from any region (United States, United Kingdom, or Singapore). However, these report suites have to be mapped to the same organization as the Experience Platform Sandbox instance in which the source connection is being created. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) | August 24, 2022 |
 
 {style="table-layout:auto"}
 
 ## Fixes
 
-TBD
+AN-297141
 
 ## Important notices for CJA Administrators
 
