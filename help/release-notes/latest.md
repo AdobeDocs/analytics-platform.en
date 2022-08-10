@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Customer Journey Analytics (CJA) release notes (August 2022)
 
-**Last update**: August 8, 2022
+**Last update**: August 10, 2022
 
 ## Key features
 
@@ -18,8 +18,9 @@ feature: Release Notes
 | **First vs. Repeat Session Reporting** | You can now discover if a particular session was a user's first-ever session. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | August 17, 2022 |
 | **CJA support for Data Governance labels and policies** | Automates the integration between CJA and Adobe Experience Platform privacy labels and policies. Data labels created on datasets consumed by Platform are surfaced in CJA data views to stop or warn users who create metrics and/or dimensions from sensitive fields. Additionally, when data is exported from CJA (via reporting, export, API, etc.) additional warnings or labels will be added to notify users that a report contains sensitive information that needs to be treated in a specific way. | August 17, 2022 |
 | **CJA Report Builder support for Data Governance labels and policies** | To follow. | August 17, 2022 |
-| **Experiment Panel for CJA (Generic Lift and Confidence)** | Allows customers to analyze the results of A/B tests in CJA. | August 17, 2022 |
-| **Date field support in CJA** | Allowing CJA to report on date and datetime fields. | August 17, 2022 |
+| **Experiment Panel for CJA (Generic Lift and Confidence)** | This new Workspace panel allows customers to analyze the results of A/B tests in CJA. More information to follow. | August 17, 2022 |
+| **Date field support in CJA** | Allows CJA to report on date and datetime fields. | August 17, 2022 |
+| **Cross-region support for Analytics Source Connector** | Allows you to to use the existing Analytics Source Connector UI to select a report suite that is in another region (but in the same organization) and be able to ingest that report suite.  | August 24, 2022 |
 
 {style="table-layout:auto"}
 
