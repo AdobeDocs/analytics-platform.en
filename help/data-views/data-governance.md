@@ -2,8 +2,8 @@
 title: CJA support for Adobe Experience Platform Data Governance
 description: Learn how data labels and policies defined in AEP affect reporting in CJA.
 mini-toc-levels: 3
+exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 ---
-
 # CJA support for Adobe Experience Platform Data Governance
 
 >[!NOTE]
