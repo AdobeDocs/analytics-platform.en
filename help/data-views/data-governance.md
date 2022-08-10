@@ -50,7 +50,7 @@ Again, click the Filter icon in the left rail and under Data Governance, click P
 
 ![](assets/filter-policies.png)
 
-Click **[!UICONTROL Apply]** to see which policies that are enabled _for this data view?_
+Click **[!UICONTROL Apply]** to see which policies that are enabled.
 
 ## How the [!UICONTROL Enforce Analytics] policy affects Workspace projects
 
