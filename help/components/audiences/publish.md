@@ -9,7 +9,7 @@ This topic discusses how to create and publish audiences identified in Customer 
 
 Read this [overview](/help/components/audiences/audiences-overview.md) to familiarize yourself with the concept of CJA audiences.
 
-## Create audience
+## Create audience {#create}
 
 1. To create audiences, you have three ways to get started:
 
@@ -50,8 +50,8 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
    | Preview setting | Description |
    | --- | --- |
    | [!UICONTROL Data preview] window | The date range for the audience. |
-   | [!UICONTROL Total people] | A summary number of the total number of people in this audience. It can go as high as 200 Million people. If your audience exceeds 200 Million people, you must reduce the audience size before you can publish it. |
-   | [!UICONTROL Audience size limit] | Shows how far from the 200 Million limit this audience is. |
+   | [!UICONTROL Total people] | A summary number of the total number of people in this audience. It can go as high as 20 Million people. If your audience exceeds 20 Million people, you must reduce the audience size before you can publish it. |
+   | [!UICONTROL Audience size limit] | Shows how far from the 20 Million limit this audience is. |
    | [!UICONTROL Estimated audience return] | This setting is useful for retargeting customers in this audience that come back to your site. (In other words, that are seen in this dataset again.) <p>Here, you can select the time frame (next 7 days, next 2 weeks, next month) for the estimated number of customers who may return. |
    | [!UICONTROL Estimated to return] | This number gives you an estimated number of returning customers over the time frame that you selected from the drop-down list. We look at the historical churn rate for this audience to predict this number. |
    | [!UICONTROL Preview metrics] | This setting allows you to look at specific metrics to see whether this audience contributes a disproportionate amount to this metric, such as '[!UICONTROL Revenue]' or '[!UICONTROL Average time on site]'. It gives you the aggregate count of the metric, as well as the percentage of the total it represents. You can select any metric that is available in your data view. |
@@ -66,7 +66,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 1. Click **[!UICONTROL View audience in AEP]** within the same message and you will be taken to the [Segment UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) in Adobe Experience Platform. See below for more information.
 
-## Use CJA audiences in Experience Platform
+## Use CJA audiences in Experience Platform {#audiences-aep}
 
 CJA now takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). CJA sends the audience over to Experience Platform with the primary identity set to whatever was selected as the person ID when the connection was configured.
 
@@ -78,9 +78,13 @@ You can drag CJA audiences into the segment definition for AEP segments.
 
 ![](assets/audiences-aep.png)
 
-## What happens if a user is no longer a member of an audience in CJA?
+## What happens if a user is no longer a member of an audience in CJA? {#no-member}
 
 In this case, an exit event is sent to Experience Platform from CJA.
+
+## What happens if you delete an audience in CJA? {#delete}
+
+When a CJA Audience is deleted, that audience will no longer show up in the Experience Platform UI. However, no profiles associated with that audience are actually deleted in Platform.
 
 ## Next steps
 
