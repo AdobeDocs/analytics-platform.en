@@ -83,10 +83,6 @@ For a conceptual overview of data views, see [Data views overview](/help/data-vi
 
 ## 7. New vs. Repeat session reporting {#new-repeat}
 
->[!NOTE]
->
->This functionality is currently in limited testing.
-
 You can determine whether a session is indeed the first-ever session for a user or not, based on the reporting window that you defined for this data view and a 13-month lookback window. This reporting lets you determine, for example:
 
 * What percentage of your orders are coming from new vs. repeat sessions?
@@ -110,3 +106,19 @@ To access these components:
 * When a first session occurred before the 13-month lookback window. This session will be ignored.
 
 * When a session spans both the lookback window and the reporting window. Let’s say you run a report from June 1 to June 15, 2022. The lookback window would encompass May 1, 2021 to May 31, 2022. If a session were to start on May 30, 2022 and end on June 1, 2022, because the session is included in the lookback window, all sessions in the reporting window get counted as return sessions. 
+
+## Use the Date and Date-Time functionality {#date}
+
+>[!NOTE]
+>
+>This functionality is currently in [limited testing](/help/release-notes/releases.md).
+
+Example use cases:
+
+* Date: A travel company is collecting the departure date for trips as a field in their data. They would like to have a report which compares the [!UICONTROL Day of Week] for all departure dates collected to understand which is most popular. They would like to do the same for [!UICONTROL Month of Year].
+
+* Date-Time: A retail company is collecting the time for each of their in-store point-of-sale (POS) purchases. Over a given month, they would like to understand the busiest shopping periods by [!UICONTROL Hour of Day].
+
+>[!MORELIKETHIS]
+>[Date and Date-Time in the Format component setting](/help/data-views/component-settings/format.md)
+
