@@ -21,6 +21,10 @@ For more information, see [Customer Journey Analytics and Data Governance](https
 
 ## Viewing restricted data in Report Builder
 
+>[!NOTE]
+>
+>This functionality is currently in [limited testing](/help/release-notes/releases.md).
+
 Two Adobe-defined policies are surfaced in CJA that affect reporting, downloading, and sharing:
 
 * Enforce Analytics policy
