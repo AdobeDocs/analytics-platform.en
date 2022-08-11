@@ -9,7 +9,9 @@ exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 >
 >This functionality is currently in [limited testing](/help/release-notes/releases.md).
 
-When you create a dataset in Experience Platform, you can create [data usage labels](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) for some or all of the elements in the dataset. Until now, these labels were not exposed in CJA. With this release, you can view these labels in CJA. Of special interest to CJA are these labels:
+When you create a dataset in Experience Platform, you can create [data usage labels](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) for some or all of the elements in the dataset. Until now, these labels were not exposed in CJA. With this release, you can view these labels and policies in CJA. 
+
+Of special interest to CJA are these labels:
 
 * The `C8` label - **[!UICONTROL No measurement]**. This label signifies that data cannot be used for analytics on your organization’s websites or apps.
 
@@ -30,13 +32,13 @@ Data labels that were created in Experience Platform are shown in three location
 | --- | --- |
 | Info button on a schema field | Clicking this button indicates which [!UICONTROL Data Usage Labels] currently apply to a field:<p>![](assets/data-label-left.png) |
 | Right rail under [Component settings](/help/data-views/component-settings/overview.md) | Any [!UICONTROL Data Usage Labels] are listed here:<p>![](assets/data-label-right.png) |
-| Add Data Labels as a column | You can add [!UICONTROL Data Labels] as a column to the [!UICONTROL Included Components] columns in data views. Just click the column selector icon and select **[!UICONTROL Data Usage Labels]**:<p>![](assets/data-label-column.png) |
+| Add Data Labels as a column | You can add [!UICONTROL Data Usage Labels] as a column to the [!UICONTROL Included Components] columns in data views. Just click the column selector icon and select **[!UICONTROL Data Usage Labels]**:<p>![](assets/data-label-column.png) |
 
 {style="table-layout:auto"}
 
 ## Filter on Data Governance labels in data views
 
-In the data views editor, click the Filter icon in the left trail and filter the data views components by data governance label/s:
+In the data views editor, click the Filter icon in the left trail and filter the data views components by **[!UICONTROL Data Governance]** and type of **[!UICONTROL Label]**:
 
 ![](assets/filter-labels.png)
 
@@ -46,35 +48,21 @@ Click **[!UICONTROL Apply]** to see which components have labels attached to the
 
 You can check to see if a policy is turned on that blocks the use of certain CJA data view elements for analytics or export purposed. 
 
-Again, click the Filter icon in the left rail and under Data Governance, click Policies:
+Again, click the Filter icon in the left rail and under **[!UICONTROL Data Governance]**, click **[!UICONTROL Policies]**:
 
 ![](assets/filter-policies.png)
 
 Click **[!UICONTROL Apply]** to see which policies that are enabled.
 
-## How the [!UICONTROL Enforce Analytics] policy affects Workspace projects
+## How enabled policies affect data views
 
-If this policy is turned on, those schema fields that have certain data labels (such as C8) associated with them cannot be used for analytics purposes within CJA Workspace. 
+If the **[!UICONTROL Enforce Analytics]** or **[!UICONTROL Enforce Download]** policies are turned on, those schema components that have certain data labels (such as C8 or C12) associated with them cannot be added to data views. 
 
-For reporting, this means that 
+These components are greyed out in the left rail [!UICONTROL Schema fields] list:
 
-* You cannot add these fields to data views, and they are greyed out in the left rail [!UICONTROL Schema fields] list. 
-* You cannot save a data view that has blocked fields in it.
+![](assets/component-greyed.png)
 
-If you try to perform Workspace analysis on data views that contain items prohibited for analytics, you will get a notice similar to this:
+You also cannot save a data view that has blocked fields in it.
 
-![](assets/policy-enforce.png)
-
-On individual components, the message would be similar to this:
-
-![](assets/policy-enforce2.png)
-
-## How the [!UICONTROL Enforce Download] policy affects Workspace projects
-
-If this policy is turned on, any export or download (such as emailing or sharing pdfs) of Workspace projects will hash the sensitive fields. You can still do analysis on these fields in Workspace, but if you try to email or otherwise share a project, the blocked fields will appear as hashed items in the .pdf file.
-
-Add a screenshot here.
-
-## View labels in Report Builder
-
-See _this section_ for more information. (link to Christine's doc)
+>[!MORELIKETHIS]
+>[Download sensitive data](/help/analysis-workspace/curate-share/download-send.md)
