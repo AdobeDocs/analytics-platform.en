@@ -9,7 +9,15 @@ Generally speaking, any data governance-related settings in Customer Journey Ana
 
 ## Data Governance
 
-CJA supports Data Governance labels and policies that are set up in Adobe Experience Platform. For more information, see CJA support for Adobe Experience Platform Data Governance.
+The integration between CJA and [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) allows for labeling of sensitive CJA data and enforcement of privacy policies. 
+
+Privacy labels and policies that were created on datasets consumed by Experience Platform can be surfaced in the CJA data views workflow. These labels stop or warn users who create metrics and/or dimensions from sensitive fields. 
+
+In addition, when data is exported from CJA (via reporting, export, API, etc.), warnings or labels are added to notify users that a report contains sensitive information that needs to be treated in a specific way.
+
+This integration allows you to manage compliance more easily. Data stewards in your organization can set policies to restrict usage. As a result, your CJA users can more confidently use data, knowing that it complies with policies defined by data stewards. 
+
+[Learn more](/help/data-views/data-governance.md)
 
 ## GDPR
 
@@ -17,6 +25,6 @@ Customer Journey Analytics will not subscribe to the General Data Protection Reg
 
 ## CCPA
 
-The California Consumer Privacy Act (CCPA) enhances privacy rights and consumer protection for residents of California, United States. This Act is set to become effective on January 1, 2020.
+The California Consumer Privacy Act (CCPA) enhances privacy rights and consumer protection for residents of California, United States. This Act became effective on January 1, 2020.
 The CCPA provides new data privacy rights to California residents, such as the right to access and delete their personal data, to know whether their personal data is sold or disclosed (and to whom), and to refuse the sale of their personal data.
 In anticipation of the CCPA, the Privacy Service will support requests to opt out from the selling of personal data.

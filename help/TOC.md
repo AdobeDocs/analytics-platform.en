@@ -65,7 +65,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Value bucketing](data-views/component-settings/value-bucketing.md)
   + [Standard component reference](data-views/component-reference.md)
   + [Data views use cases](data-views/data-views-usecases.md)
-  + [CJA support for Adobe Experience Platform Data Governance](data-views/data-governance.md)
+  + [Labels and policies](data-views/data-governance.md)
 + Workspace projects {#cja-workspace}
   + [Analysis Workspace overview](analysis-workspace/home.md)
   + [Perform basic analysis](analysis-workspace/perform-basic-analysis.md)
@@ -162,6 +162,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Work with Filters](report-builder/work-with-filters.md)
   + [Filter Dimensions](report-builder/filter-dimensions.md)
   + [Manage Data Blocks](report-builder/manage-reportbuilder.md)
+  + [Restricted Labels](report-builder/restricted-labels.md)
   + [Report Builder Settings](report-builder/report-builder-settings.md)
 + Components {#cja-components}
   + [Components overview](components/overview.md)
