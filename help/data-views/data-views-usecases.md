@@ -107,7 +107,7 @@ To access these components:
 
 * When a session spans both the lookback window and the reporting window. Let’s say you run a report from June 1 to June 15, 2022. The lookback window would encompass May 1, 2021 to May 31, 2022. If a session were to start on May 30, 2022 and end on June 1, 2022, because the session is included in the lookback window, all sessions in the reporting window get counted as return sessions. 
 
-## Use the Date and Date-Time functionality
+## Use the Date and Date-Time functionality {#date}
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ To access these components:
 
 Example use cases:
 
-* Date: A travel company is collecting the departure date for trips as a field in their data. They would like to have a report which compares the [!UICONTROL Day of Week] for all Departure dates collected to understand which is most popular. They would like to do the same for [!UICONTROL Month of Year].
+* Date: A travel company is collecting the departure date for trips as a field in their data. They would like to have a report which compares the [!UICONTROL Day of Week] for all departure dates collected to understand which is most popular. They would like to do the same for [!UICONTROL Month of Year].
 
 * Date-Time: A retail company is collecting the time for each of their in-store point-of-sale (POS) purchases. Over a given month, they would like to understand the busiest shopping periods by [!UICONTROL Hour of Day].
 
