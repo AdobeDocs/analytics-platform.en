@@ -17,6 +17,8 @@ In addition, when data is exported from CJA (via reporting, export, API, etc.), 
 
 This integration allows you to manage compliance more easily. Data stewards in your organization can set policies to restrict usage. As a result, your CJA users can more confidently use data, knowing that it complies with policies defined by data stewards. 
 
+[Learn more](/help/data-views/data-governance.md)
+
 ## GDPR
 
 Customer Journey Analytics will not subscribe to the General Data Protection Regulation (GDPR) Central Service directly and will instead inherit all dataset changes made in Experience Platform. We depend on Platform Data Lake to enforce GDPR deletion requests and notify us when they’ve been completed on Pipeline. We listen to Pipeline and synchronize all changes to affected batches in Customer Journey Analytics for event datasets. Profile and lookup datasets affected by GDPR deletion requests will be completely re-ingested after each delete request. We can guarantee deletion requests are executed within 7 days of a deletion event in Data Lake.
