@@ -30,7 +30,7 @@ Two Adobe-defined policies are surfaced in CJA that affect reporting, downloadin
 * Enforce Analytics policy
 * Enforce Download policy
 
-Components that are affected by these policies are grayed out. When you hover over a component that has a policy applied, a note is displayed to indicate the following: **Policies have been applied to this field prohibiting use of this data.** For more information see [Labels and policies]( https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-governance.html).
+Components that are affected by these policies are grayed out. When you hover over a component that has a policy applied, a note is displayed to indicate the following: **Policies have been applied to this field prohibiting use of this data.** For more information see [Labels and policies](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-governance.html).
 
 ![](assets/rb-restricted-label.png)
 
