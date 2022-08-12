@@ -10,11 +10,11 @@ feature: Panels
 >
 >This functionality is currently in [limited testing](/help/release-notes/releases.md).
 
-The [!UICONTROL Experimentation] panel lets you analyze the results of A/B tests in CJA. It provides results for generic Lift and Confidence metrics. You can analyze data from other tools such as Target, Adobe Journey Optimizer, and third-party tools that has been brought into Adobe Experience Platform.
+The [!UICONTROL Experimentation] panel lets you evaluate the lift and confidence of any A/B experiment from any source - online, offline, from Adobe solutions, Adobe Journey Optimizer, and even BYO data..
 
 >[!IMPORTANT]
 >
->A4T data cannot be analyzed in the [!UICONTROL Experimentation] panel at this point.
+>A4T data cannot be evaluated in the [!UICONTROL Experimentation] panel at this point.
 
 ## Configure the panel
 
