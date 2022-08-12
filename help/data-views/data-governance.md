@@ -66,3 +66,7 @@ You also cannot save a data view that has blocked fields in it.
 
 >[!MORELIKETHIS]
 >[Download sensitive data](/help/analysis-workspace/curate-share/download-send.md)
+
+>[!MORELIKETHIS]
+>[What are restricted labels in Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=en)
+
