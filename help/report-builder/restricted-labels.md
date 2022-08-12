@@ -5,8 +5,8 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
+exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
 ---
-
 # Restricted labels in Report Builder
 
 Generally data governance-related settings in Customer Journey Analytics are inherited from Adobe Experience Platform. The integration between CJA and Adobe Experience Platform Data Governance allows for labeling of sensitive CJA data and enforcement of privacy policies.
