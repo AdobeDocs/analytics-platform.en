@@ -25,6 +25,10 @@ Once you establish the Analytics Source Connector on a desired report suite, an 
 3. Give each dimension the desired attribution model and persistence. If you want both first and last touch dimensions, drag each marketing channel dimension to the components area multiple times. Give each dimension the desired attribution model and persistence. Adobe also recommends giving each dimension a display name to make it easier for use in Workspace.
 4. Create the data view.
 
+>[!NOTE]
+>
+> The Analytics Source Connector requires that both `channel.typeAtSource` (Marketing Channel) and `channel._id` (Marketing Channel Detail) be populated, otherwise neither is carried over to the XDM ExperienceEvent. If the Marketing Channel Detail is blank in the source report suite, this results in a blank `channel._id` and the Analytics Source Connector will blank out `channel.typeAtSource` as well. This may result in reporting differences between Adobe Analytics and Customer Journey Analytics.
+
 Your marketing channel dimensions are now available for use in Analysis Workspace.
 
 ## Processing and architecture differences
