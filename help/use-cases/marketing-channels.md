@@ -25,6 +25,10 @@ Once you establish the Analytics Source Connector on a desired report suite, an 
 3. Give each dimension the desired attribution model and persistence. If you want both first and last touch dimensions, drag each marketing channel dimension to the components area multiple times. Give each dimension the desired attribution model and persistence. Adobe also recommends giving each dimension a display name to make it easier for use in Workspace.
 4. Create the data view.
 
+>[!NOTE]
+>
+>XXXX
+
 Your marketing channel dimensions are now available for use in Analysis Workspace.
 
 ## Processing and architecture differences
