@@ -27,7 +27,7 @@ Once you establish the Analytics Source Connector on a desired report suite, an 
 
 >[!NOTE]
 >
->XXXX
+> In the Analytics Source Connector, both `channel.typeAtSource` and `channel._id` must be populated. 
 
 Your marketing channel dimensions are now available for use in Analysis Workspace.
 
