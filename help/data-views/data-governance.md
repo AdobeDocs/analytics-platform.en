@@ -5,10 +5,6 @@ exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 ---
 # Labels and policies
 
->[!NOTE]
->
->This functionality is currently in [limited testing](/help/release-notes/releases.md).
-
 When you create a dataset in Experience Platform, you can create [data usage labels](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) for some or all of the elements in the dataset. Until now, these labels were not exposed in CJA. With this release, you can view these labels and policies in CJA. 
 
 Of special interest to CJA are these labels:

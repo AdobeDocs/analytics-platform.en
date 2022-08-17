@@ -19,11 +19,7 @@ This integration allows you to manage compliance more easily. Data stewards in y
 
 For more information, see [Customer Journey Analytics and Data Governance](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-privacy/privacy-overview.html)
 
-## Viewing restricted data in Report Builder
-
->[!NOTE]
->
->This functionality is currently in [limited testing](/help/release-notes/releases.md).
+## View restricted data in Report Builder
 
 Two Adobe-defined policies are surfaced in CJA that affect reporting, downloading, and sharing:
 
@@ -34,7 +30,7 @@ Components that are affected by these policies are grayed out. When you hover ov
 
 ![](assets/rb-restricted-label.png)
 
-## Updating reports containing restricted data
+## Update reports containing restricted data
 
 In cases where a user created a Report Builder report with data elements that are later restricted, when the report is refreshed, an error message is displayed.
 
