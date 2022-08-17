@@ -14,7 +14,7 @@ The [!UICONTROL Experimentation] panel lets you evaluate the lift and confidence
 
 >[!IMPORTANT]
 >
->A4T data cannot be evaluated in the [!UICONTROL Experimentation] panel at this point.
+>At this point, [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) data cannot be evaluated in the [!UICONTROL Experimentation] panel.
 
 ## Configure the panel
 
