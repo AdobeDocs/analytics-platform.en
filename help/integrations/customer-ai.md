@@ -55,7 +55,7 @@ In CJA, you can now proceed to [create data views](/help/data-views/create-datav
 
 ### Step 4: Report on CAI scores in Workspace
 
-In CJA Workspace, you can now create a new project and pull in visualizations. 
+In CJA Workspace, create a new project and pull in visualizations. 
 
 **Trend propensity scores**
 
