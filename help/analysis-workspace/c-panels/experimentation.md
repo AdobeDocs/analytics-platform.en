@@ -18,7 +18,7 @@ The **[!UICONTROL Experimentation]** panel lets you compare different user exper
 
 ## Access Control
 
-The Experimentation panel is available to all CJA users. No Admin rights or other permissions are required. However, the setup requires labels in data views that only Admins can assign.
+The Experimentation panel is available to all Customer Journey Analytics (CJA) users. No Admin rights or other permissions are required. However, the setup requires labels in data views that only Admins can assign.
 
 ## Terminology
 
@@ -32,25 +32,30 @@ The Experimentation panel is available to all CJA users. No Admin rights or othe
 
 * **Conversion Metric**: The metric that a user is comparing variations with. The variation with the most desirable outcome for the conversion metric (whether highest or lowest) is declared the "winner" of an experiment.
 
-## Step 1: Create connection
+## Step 1: Create connection to experiment dataset/s
 
-After your experiment data has been ingested into Adobe Experience Platform, [create a connection in CJA](/help/connections/create-connection.md) to this experiment dataset.
+After your experiment data has been [ingested](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=en) into Adobe Experience Platform, [create a connection in CJA](/help/connections/create-connection.md) to one or more experiment dataset/s.
 
-## Step 2: Add context-aware labels in data views
+## Step 2: Add context labels in data views
 
-In CJA data views settings, admins can add context labels to a dimension or metric and other CJA services can use these labels for their purposes. Two pre-defined labels are used for the Experimentation panel:
+In CJA data views settings, admins can add [context labels](/help/data-views/component-settings/overview.md) to a dimension or metric and CJA services like [!UICONTROL Experimentation] panel can use these labels for their purposes. Two pre-defined labels are used for the Experimentation panel:
 
-* Experiment
-* Variant
+* [!UICONTROL Experiment]
+* [!UICONTROL Variant]
 
-In your data view that contains experimentation data, pick two dimension, one with the experimentation data and one with the variant data. Then label those dimensions with the Experiment and the Variant labels.
+In your data view that contains experimentation data, pick two dimension, one with the experimentation data and one with the variant data. Then label those dimensions with the **[!UICONTROL Experiment]** and the **[!UICONTROL Variant]** labels.
 
-[](assets/context-label.png)
+![context label](assets/context-label.png)
 
 Without these labels present, the Experiment panel does not work.
 
 ## Step 3: Configure the Experiment panel
 
+1. In CJA Workspace, drag the Experimentation panel into a project.
+
+   ![experiment panel](assets/experiment.png]
+
+1. 
 
 
 

@@ -17,7 +17,8 @@ Core settings that a data view component uses.
 | [!UICONTROL Component Name] | Required. Lets you specify the friendly name that appears in Analysis Workspace. You can rename a component to give it a name specific to the data view. |
 | [!UICONTROL Description] | Optional, but recommended. Provides information on the component to other users. |
 | [!UICONTROL Tags] | Optional. Lets you tag the component with custom or out-of-the-box tags for easier searching/filtering in the Analysis Workspace UI. |
-| [!UICONTROL Field Name] | The name of the schema field. |
+| [!UICONTROL Context labels] | You can label specific dimensions and/or metrics for specific use cases in reporting. Examples include media panels for CJA, the new Experiment Panel, as well as reporting templates.  |
+| [!UICONTROL Schema field name] | The name of the schema field. |
 | [!UICONTROL Dataset type] | Required. A non-editable field showing which dataset type (event, lookup, or profile) the component came from. |
 | [!UICONTROL Dataset] | A non-editable field showing which dataset that the component originated from. This field can contain multiple datasets. |
 | [!UICONTROL Schema Type] | A non-editable field showing the data type of the component.  While you can use any supported schema field type in Platform, not all fields types are supported in CJA. The following data types are supported: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String`, and `Boolean`. Only the `String` schema data type is allowed in Lookup datasets at this time. |
