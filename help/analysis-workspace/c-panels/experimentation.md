@@ -53,9 +53,8 @@ Without these labels present, the Experiment panel does not work.
 
 1. In CJA Workspace, drag the Experimentation panel into a project.
 
-   ![experiment panel](assets/experiment.png]
+  ![experiment panel](assets/experiment.png)
 
-1. 
 
 
 
