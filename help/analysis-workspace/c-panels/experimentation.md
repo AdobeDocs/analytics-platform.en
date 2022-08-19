@@ -2,8 +2,8 @@
 description: Learn about how you can analyze the results of A/B tests in the CJA Experimentation panel.
 title: Experimentation panel
 feature: Panels
+exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 ---
-
 # Experimentation panel
 
 >[!NOTE]
@@ -54,7 +54,3 @@ Without these labels present, the Experiment panel does not work.
 1. In CJA Workspace, drag the Experimentation panel into a project.
 
   ![experiment panel](assets/experiment.png)
-
-
-
-
