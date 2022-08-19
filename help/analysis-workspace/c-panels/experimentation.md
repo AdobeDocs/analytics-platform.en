@@ -2,8 +2,8 @@
 description: Learn about how you can analyze the results of A/B tests in the CJA Experimentation panel.
 title: Experimentation panel
 feature: Panels
+exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 ---
-
 # Experimentation panel
 
 >[!NOTE]
@@ -73,5 +73,6 @@ For each success metric you selected, one freeform table and one conversion rate
 ## Statistical methodology behind Experimentation panel
 
 To follow.
+
 
 
