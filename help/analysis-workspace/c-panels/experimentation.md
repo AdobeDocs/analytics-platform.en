@@ -21,6 +21,7 @@ The **[!UICONTROL Experimentation]** panel lets analysts compare different user 
 The Experimentation panel is available to use by all Customer Journey Analytics (CJA) users. No Admin rights or other permissions are required. However, the setup (steps 1 and 2 below) requires actions that only Admins can perform.
 
 ## Step 1: Create connection to experiment dataset/s
+
 The recommended data schema is that the experiment data is in an Object array containing the experiment and variant data in two separate dimensions. If you have your experiment data in a single dimension with experiment and variant data in a delimited string, you can use the [substring](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html?lang=en#) setting in data views to split them into two for use in the panel.
 
 After your experiment data has been [ingested](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=en) into Adobe Experience Platform, [create a connection in CJA](/help/connections/create-connection.md) to one or more experiment dataset/s.
@@ -55,7 +56,7 @@ Without these labels present, the Experiment panel does not work, since there wi
    | **[!UICONTROL Control Variant]** | One of two or more alterations in an end user's experience that are being compared for the purpose of identifying the better alternative. One variant must be selected as the control, and only one variant can be considered to be the control variant. This setting is pre-populated with the dimensions that have been labeled with the  **[!UICONTROL Variant]** label in data views. This setting pulls up the variant data that is associated with this experiment. |
    | **[!UICONTROL Success Metrics]** | The metric or metrics that a user is comparing variants with. The variant with the most desirable outcome for the conversion metric (whether highest or lowest) is declared the "best performing variant" of an experiment. You can add up to 5 metrics. |
    | **[!UICONTROL Normalizing Metric]** | The basis ([!UICONTROL People], [!UICONTROL Sessions], or [!UICONTROL Events]) on which a test will be run. For example, a test may compare the conversion rates of several variations where **[!UICONTROL Conversion rate]** is calculated as **[!UICONTROL Conversions per session]** or **[!UICONTROL Conversions per person]**. |
-      | **[!UICONTROL Date Range]** | The date range is automatically set based on the first hit received in CJA for the experiment selected. This can be modified to restrict or expand the date range to a more specific timeframe if needed.
+   | **[!UICONTROL Date Range]** | The date range is automatically set based on the first hit received in CJA for the experiment selected. This can be modified to restrict or expand the date range to a more specific timeframe if needed. |
 
 
 1. Click **[!UICONTROL Build]**.
