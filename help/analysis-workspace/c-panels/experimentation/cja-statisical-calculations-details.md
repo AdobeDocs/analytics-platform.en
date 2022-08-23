@@ -4,6 +4,7 @@ This page documents the detailed statistical calculations used in CJA's Experime
 
 
 ## Conversion Rate
+
 The conversion rate or **mean**, *μ<sub>ν</sub>* for each variant *ν* in an Experiment is defined as a ratio of the sum of the metric to the number of units assigned to that metric, *N<sub>ν</sub>*:
 <p style="text-align:center;"><img width=15% src="img/mean_definition.png" alt="metric-mean"></p>
 Here, 
@@ -23,12 +24,14 @@ Wherever needed, the sample standard deviation is used, with the expression
 
 
 ## Lift
+
 The lift between a variant  *ν*, and the control variant  *ν<sub>0</sub>* is the relative "delta" in conversion rates, defined as 
 <p style="text-align:center;"><img width=15% src="img/lift_definition.png" alt="metric-mean"></p>
 where the individual conversion rates are as defined above.
 
 
 ## Confidence Sequences
+
 While not displayed in the CJA Experimentation panel, the confidence sequence for an individual variant *ν* is central to the statistical methodology used by Adobe, and so is defined here (reproduced from [Waudby-Smith et al.](
 https://doi.org/10.48550/arXiv.2103.06476)). 
 
@@ -54,6 +57,7 @@ Where:
 
 
 ## Confidence
+
 The confidence used by Adobe is an "anytime valid" confidence, which is obtained by inverting the confidence sequence for the average treatment effect. 
 
 To be precise, we note that in a two sample *t* test for the difference in means between two variants, there is a 1:1 mapping between the *p*-value for this test, and the confidence interval for the difference in means. By analogy, an anytime valid *p*-value can be obtained by inverting the (anytime valid) confidence sequence for the average treatment effect estimator:
@@ -82,10 +86,12 @@ Finally, the **anytime valid *confidence*** is
 
 
 ## Declaring an Experiment to be Conclusive
+
 For an Experiment with two arms, the CJA Experimentation panel displays a message stating that an Experiment is **conclusive** when the anytime valid confidence exceeds 95% (i.e., the anytime valid *p*-value is below 5%). 
 
 When more than two variants are present, the Bonferonni correction is applied. For an experiment with *K* treatments, and a single baseline (control) treatment, there are *K-1* independent hypothesis tests. The Bonferonni correction means that we reject the null hypothesis that the control and a given variant have equal means, if the anytime valid *p*-value is below a threshold of 0.05/(K-1). 
 
 
 ## Best performing arm
+
 When an experiment is declared conclusive, the best performing arm is displayed. This is the arm with the best performance (highest mean or conversion rate), among the Set that includes the control, and all arms that have a *p*-value that is below the Bonferonni threshold. 
