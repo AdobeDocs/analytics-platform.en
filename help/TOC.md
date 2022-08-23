@@ -117,8 +117,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Panels overview](analysis-workspace/c-panels/panels.md)
     + [Attribution panel](analysis-workspace/c-panels/attribution.md)
     + [Blank panel](analysis-workspace/c-panels/blank-panel.md)
-    + Experimentation {#experimentation}
-      + [Experimentation panel](analysis-workspace/c-panels/experimentation/experimentation.md)
+    + [Experimentation panel](analysis-workspace/c-panels/experimentation.md)
     + [Freeform panel](analysis-workspace/c-panels/freeform-panel.md)
     + [Quick Insights panel](analysis-workspace/c-panels/quickinsight.md)
     + [Media Concurrent Viewers panel](analysis-workspace/c-panels/media-concurrent-viewers.md)
