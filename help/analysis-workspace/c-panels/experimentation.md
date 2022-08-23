@@ -66,7 +66,7 @@ You also get a text summary that indicates whether the experiment is conclusive 
 
 >[!NOTE]
 >
->Lift and Confidence are also advanced calculated metric functions in CJA, so you can build your own lift and confidence metrics. 
+>Lift and Confidence are also [advanced calculated metric functions](/help/components/calc-metrics/cm-adv-functions.md) in CJA, so you can build your own lift and confidence metrics. 
 
 ![experiment output](assets/exp-output1.png)   
 
