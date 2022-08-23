@@ -58,7 +58,6 @@ Without these labels present, the Experiment panel does not work, since there wi
    | **[!UICONTROL Normalizing Metric]** | The basis ([!UICONTROL People], [!UICONTROL Sessions], or [!UICONTROL Events]) on which a test will be run. For example, a test may compare the conversion rates of several variations where **[!UICONTROL Conversion rate]** is calculated as **[!UICONTROL Conversions per session]** or **[!UICONTROL Conversions per person]**. |
    | **[!UICONTROL Date Range]** | The date range is automatically set based on the first hit received in CJA for the experiment selected. This can be modified to restrict or expand the date range to a more specific timeframe if needed. |
 
-
 1. Click **[!UICONTROL Build]**.
 
 ## Step 4: Interpret the panel output
@@ -73,7 +72,7 @@ The text summary and summary numbers are only generated for the first success me
 >
 >Lift and Confidence are also advanced calculated metric functions in CJA, so you can build your own lift and confidence metrics. 
 
-![experiment output](../assets/exp-output1.png)   
+![experiment output](../assets/exp-output1.png)
 
 For each success metric you selected, one freeform table and one conversion rate trend will be shown:
 
@@ -81,16 +80,11 @@ For each success metric you selected, one freeform table and one conversion rate
 
 The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTROL Control Variant] performance:
 
-
 ![experiment output](../assets/exp-output3.png)
 >[!NOTE]
 >
 >This panel currently does not support analysis of A/A tests.
 
-
 ## Statistical methodology
 
 To follow.
-
-
-
