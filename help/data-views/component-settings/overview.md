@@ -17,7 +17,7 @@ Core settings that a data view component uses.
 | [!UICONTROL Component Name] | Required. Lets you specify the friendly name that appears in Analysis Workspace. You can rename a component to give it a name specific to the data view. |
 | [!UICONTROL Description] | Optional, but recommended. Provides information on the component to other users. |
 | [!UICONTROL Tags] | Optional. Lets you tag the component with custom or out-of-the-box tags for easier searching/filtering in the Analysis Workspace UI. |
-| [!UICONTROL Context labels] | You can label specific dimensions and/or metrics for specific use cases in reporting. Examples include media panels for CJA, the new Experiment Panel, as well as reporting templates. Removing a context label may impact specific panels or reports where the component is required. |
+| [!UICONTROL Context labels] | Optional. A dropdown of available system-defined labels that can be applied to a component. These labels may be required to define a set of components used for reporting in Analysis Workspace projects or panels. |
 | [!UICONTROL Schema field name] | The name of the schema field. |
 | [!UICONTROL Dataset type] | Required. A non-editable field showing which dataset type (event, lookup, or profile) the component came from. |
 | [!UICONTROL Dataset] | A non-editable field showing which dataset that the component originated from. This field can contain multiple datasets. |
