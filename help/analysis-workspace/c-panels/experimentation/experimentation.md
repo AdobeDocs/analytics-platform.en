@@ -10,7 +10,7 @@ exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 >
 >This functionality is currently in [limited testing](/help/release-notes/releases.md).
 
-The **[!UICONTROL Experimentation]** panel lets analysts compare different user experience, marketing, or messaging variations to determine which is best at driving a specific outcome. You can evaluate the lift and confidence of any A/B experiment from any experimentation platform - online, offline, from Adobe solutions, Adobe Journey Optimizer, and even BYO (bring-your-own) data. 
+The **[!UICONTROL Experimentation]** panel lets analysts compare different user experience, marketing, or messaging variations to determine which is best at driving a specific outcome. You can evaluate the lift and confidence of any A/B experiment from any experimentation platform - online, offline, from Adobe solutions, Adobe Journey Optimizer, and even BYO (bring-your-own) data.
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ The Experimentation panel is available to use by all Customer Journey Analytics 
 
 ## Step 1: Create connection to experiment dataset/s
 
-After your experiment data has been [ingested](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=en) into Adobe Experience Platform, [create a connection in CJA](/help/connections/create-connection.md) to one or more experiment dataset/s.
+After your experiment data has been [ingested](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) into Adobe Experience Platform, [create a connection in CJA](/help/connections/create-connection.md) to one or more experiment dataset/s.
 
 ## Step 2: Add context labels in data views
 
@@ -60,15 +60,15 @@ Without these labels present, the Experiment panel does not work, since there wi
 
 ## Step 4: Interpret the panel output
 
-The Experimentation panel returns a rich set of data and visualizations to help you better understand how your experiments are performing. At the top of the panel, a summary line is provided to remind you of the panel settings you selected. At any time, you can edit the panel by clicking the edit pencil at the top right. 
+The Experimentation panel returns a rich set of data and visualizations to help you better understand how your experiments are performing. At the top of the panel, a summary line is provided to remind you of the panel settings you selected. At any time, you can edit the panel by clicking the edit pencil at the top right.
 
-You also get a text summary that indicates whether the experiment is conclusive or not, and summarizes the outcome. Conclusiveness is based on statistical significance. (See "Statistical methodology" below.) You can see summary numbers for the best performing variant with the highest lift and confidence. 
+You also get a text summary that indicates whether the experiment is conclusive or not, and summarizes the outcome. Conclusiveness is based on statistical significance. (See "Statistical methodology" below.) You can see summary numbers for the best performing variant with the highest lift and confidence.
 
 >[!NOTE]
 >
->Lift and Confidence are also advanced calculated metric functions in CJA, so you can build your own lift and confidence metrics. 
+>Lift and Confidence are also advanced calculated metric functions in CJA, so you can build your own lift and confidence metrics.
 
-![experiment output](assets/exp-output1.png)   
+![experiment output](assets/exp-output1.png)
 
 For each success metric you selected, one freeform table and one conversion rate trend will be shown:
 
@@ -84,11 +84,11 @@ The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTRO
 
 ## Adobe's statistical methodology
 
-To provide easily interpretable and safe statistical inference, Adobe has adopted a statistical methodology based on [Anytime Valid Confidence Sequences](https://doi.org/10.48550/arXiv.2103.06476). 
+To provide easily interpretable and safe statistical inference, Adobe has adopted a statistical methodology based on [Anytime Valid Confidence Sequences](https://doi.org/10.48550/arXiv.2103.06476).
 
-A Confidence Sequence is a "sequential" analog of a Confidence Interval. To understand what a confidence sequence is, imagine repeating your experiments one hundred times, and calculating an estimate of the mean business metric (e.g. open rate of an email) and its associated 95%-Confidence Sequence for *every new user* that enters the experiment. A 95% Confidence Sequence will include the "true" value of the business metric in 95 out of the 100 experiments that you ran. (A 95% Confidence Interval could only be calculated once per experiment in order to give the same 95% coverage guarantee; not with every single new user). Confidence Sequences therefore allow you to continuously monitor experiments, without increasing False Positive error rates, i.e. they allow "peeking" at results. 
+A Confidence Sequence is a "sequential" analog of a Confidence Interval. To understand what a confidence sequence is, imagine repeating your experiments one hundred times, and calculating an estimate of the mean business metric (e.g. open rate of an email) and its associated 95%-Confidence Sequence for *every new user* that enters the experiment. A 95% Confidence Sequence will include the "true" value of the business metric in 95 out of the 100 experiments that you ran. (A 95% Confidence Interval could only be calculated once per experiment in order to give the same 95% coverage guarantee; not with every single new user). Confidence Sequences therefore allow you to continuously monitor experiments, without increasing False Positive error rates, i.e. they allow "peeking" at results.
 
-### Interpreting the results 
+### Interpreting the results
 
 1. **Experiment is Conclusive**: Every time you view the experimentation report, Adobe analyzes the data that has accumulated in the experiment up to this point and will declare an experiment to be “Conclusive” when the anytime valid confidence crosses a threshold of 95% for *at least one* of the variants (with a Bonferonni correction applied when there are more than two arms, to correct for multiple hypothesis testing).  
 
@@ -96,8 +96,8 @@ A Confidence Sequence is a "sequential" analog of a Confidence Interval. To unde
 
 3. **Conversion Rate**: The conversion rate that is shown is a ratio of the success metric value, to the normalizing metric value. Note that this may sometimes be larger than 1, if the metric is not binary (1 or 0 for each unit in the experiment)
 
-4. **Lift**: The Experiment report summary shows the Lift over Baseline, which is a measure of the percentage improvement in conversion rate of a given variant over the baseline. Defined precisely, it is the difference in performance between a given variant and the baseline, divided by the performance of the baseline, expressed as a percentage. 
+4. **Lift**: The Experiment report summary shows the Lift over Baseline, which is a measure of the percentage improvement in conversion rate of a given variant over the baseline. Defined precisely, it is the difference in performance between a given variant and the baseline, divided by the performance of the baseline, expressed as a percentage.
 
-5. **Confidence**: The Anytime Valid Confidence that is shown, is a probabilistic measure of how much evidence there is that a given variant is the same as the control variant. A higher confidence indicates less evidence for the assumption that control and non-control variant have equal performance. More precisely, the confidence that is displayed is a probability (expressed as a percentage) that we would have observed a smaller difference in conversion rates between a given variant and the control, if in reality there is no difference in the true underlying conversion rates. In terms of *p*-values, the confidence displayed is 1 - *p*-value. 
- 
+5. **Confidence**: The Anytime Valid Confidence that is shown, is a probabilistic measure of how much evidence there is that a given variant is the same as the control variant. A higher confidence indicates less evidence for the assumption that control and non-control variant have equal performance. More precisely, the confidence that is displayed is a probability (expressed as a percentage) that we would have observed a smaller difference in conversion rates between a given variant and the control, if in reality there is no difference in the true underlying conversion rates. In terms of *p*-values, the confidence displayed is 1 - *p*-value.
+
 Note however that a full description of results should consider all available evidence (i.e. experiment design, sample sizes, conversion rates, confidence etc.), and not just the declaration of conclusive or not. Even when a result is not yet “conclusive”, there can still be compelling evidence for one variant being different from another (e.g. confidence intervals are nearly non-overlapping). Ideally, decision making should be informed by all statistical evidence, interpreted on a continuous spectrum.
