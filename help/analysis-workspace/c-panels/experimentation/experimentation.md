@@ -35,7 +35,7 @@ In CJA data views settings, admins can add [context labels](/help/data-views/com
 
 In your data view that contains experimentation data, pick two dimensions, one with the experimentation data and one with the variant data. Then label those dimensions with the **[!UICONTROL Experiment]** and the **[!UICONTROL Variant]** labels.
 
-![context label](assets/context-label.png)
+![context label](../assets/context-label.png)
 
 Without these labels present, the Experiment panel does not work, since there will be no experiments to work with.
 
@@ -43,7 +43,7 @@ Without these labels present, the Experiment panel does not work, since there wi
 
 1. In CJA Workspace, drag the Experimentation panel into a project.
 
-  ![experiment panel](assets/experiment.png)
+  ![experiment panel](../assets/experiment.png)
 
    >[!IMPORTANT]
    >If the necessary setup in CJA data views has not been completed, you will receive a message to that effect before you can proceed.
@@ -73,16 +73,16 @@ The text summary and summary numbers are only generated for the first success me
 >
 >Lift and Confidence are also advanced calculated metric functions in CJA, so you can build your own lift and confidence metrics. 
 
-![experiment output](assets/exp-output1.png)   
+![experiment output](../assets/exp-output1.png)   
 
 For each success metric you selected, one freeform table and one conversion rate trend will be shown:
 
-![experiment output](assets/exp-output2.png)
+![experiment output](../assets/exp-output2.png)
 
 The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTROL Control Variant] performance:
 
 
-![experiment output](assets/exp-output3.png)
+![experiment output](../assets/exp-output3.png)
 >[!NOTE]
 >
 >This panel currently does not support analysis of A/A tests.
