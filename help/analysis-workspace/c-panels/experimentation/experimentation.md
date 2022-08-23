@@ -22,6 +22,8 @@ The Experimentation panel is available to use by all Customer Journey Analytics 
 
 ## Step 1: Create connection to experiment dataset/s
 
+The recommended data schema is that the experiment data is in an Object array containing the experiment and variant data in two separate dimensions. If you have your experiment data in a single dimension with experiment and variant data in a delimited string, you can use the [substring](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html?lang=en#) setting in data views to split them into two for use in the panel.
+
 After your experiment data has been [ingested](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=en) into Adobe Experience Platform, [create a connection in CJA](/help/connections/create-connection.md) to one or more experiment dataset/s.
 
 ## Step 2: Add context labels in data views
@@ -31,9 +33,9 @@ In CJA data views settings, admins can add [context labels](/help/data-views/com
 * [!UICONTROL Experiment]
 * [!UICONTROL Variant]
 
-In your data view that contains experimentation data, pick two dimension, one with the experimentation data and one with the variant data. Then label those dimensions with the **[!UICONTROL Experiment]** and the **[!UICONTROL Variant]** labels.
+In your data view that contains experimentation data, pick two dimensions, one with the experimentation data and one with the variant data. Then label those dimensions with the **[!UICONTROL Experiment]** and the **[!UICONTROL Variant]** labels.
 
-![context label](assets/context-label.png)
+![context label](../assets/context-label.png)
 
 Without these labels present, the Experiment panel does not work, since there will be no experiments to work with.
 
@@ -41,7 +43,7 @@ Without these labels present, the Experiment panel does not work, since there wi
 
 1. In CJA Workspace, drag the Experimentation panel into a project.
 
-  ![experiment panel](assets/experiment.png)
+  ![experiment panel](../assets/experiment.png)
 
    >[!IMPORTANT]
    >If the necessary setup in CJA data views has not been completed, you will receive a message to that effect before you can proceed.
@@ -54,33 +56,35 @@ Without these labels present, the Experiment panel does not work, since there wi
    | **[!UICONTROL Control Variant]** | One of two or more alterations in an end user's experience that are being compared for the purpose of identifying the better alternative. One variant must be selected as the control, and only one variant can be considered to be the control variant. This setting is pre-populated with the dimensions that have been labeled with the  **[!UICONTROL Variant]** label in data views. This setting pulls up the variant data that is associated with this experiment. |
    | **[!UICONTROL Success Metrics]** | The metric or metrics that a user is comparing variants with. The variant with the most desirable outcome for the conversion metric (whether highest or lowest) is declared the "best performing variant" of an experiment. You can add up to 5 metrics. |
    | **[!UICONTROL Normalizing Metric]** | The basis ([!UICONTROL People], [!UICONTROL Sessions], or [!UICONTROL Events]) on which a test will be run. For example, a test may compare the conversion rates of several variations where **[!UICONTROL Conversion rate]** is calculated as **[!UICONTROL Conversions per session]** or **[!UICONTROL Conversions per person]**. |
+   | **[!UICONTROL Date Range]** | The date range is automatically set based on the first hit received in CJA for the experiment selected. This can be modified to restrict or expand the date range to a more specific timeframe if needed. |
 
 1. Click **[!UICONTROL Build]**.
 
 ## Step 4: Interpret the panel output
 
-The Experimentation panel returns a rich set of data and visualizations to help you better understand how your experiments are performing. At the top of the panel, a summary line is provided to remind you of the panel settings you selected. At any time, you can edit the panel by clicking the edit pencil at the top right. 
+The Experimentation panel returns a rich set of data and visualizations to help you better understand how your experiments are performing. A global filter is added to account for People or Sessions that are exposed to multiple variations. This filter cannot be edited or removed. At the top of the panel, a summary line is provided to remind you of the panel settings you selected. At any time, you can edit the panel by clicking the edit pencil at the top right. 
 
-You also get a text summary that indicates whether the experiment is conclusive or not, and summarizes the outcome. Conclusiveness is based on statistical significance. (See "Statistical methodology" below.) You can see summary numbers for the best performing variant with the highest lift and confidence. 
+You also get a text summary that indicates whether the experiment is conclusive or not, and summarizes the outcome. Conclusiveness is based on statistical significance. (See "Statistical methodology" below.) The best performing variant is only provided for an experiment that is conclusive and is selected based on the conversion rate of the significant variants. You can see summary numbers for the best performing variant with the highest lift and confidence. 
+
+The text summary and summary numbers are only generated for the first success metric picked in the panel input.
 
 >[!NOTE]
 >
 >Lift and Confidence are also advanced calculated metric functions in CJA, so you can build your own lift and confidence metrics. 
 
-![experiment output](assets/exp-output1.png)   
+![experiment output](../assets/exp-output1.png)
 
 For each success metric you selected, one freeform table and one conversion rate trend will be shown:
 
-![experiment output](assets/exp-output2.png)
+![experiment output](../assets/exp-output2.png)
 
 The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTROL Control Variant] performance:
 
-![experiment output](assets/exp-output3.png)
-
+![experiment output](../assets/exp-output3.png)
+>[!NOTE]
+>
+>This panel currently does not support analysis of A/A tests.
 
 ## Statistical methodology
 
 To follow.
-
-
-
