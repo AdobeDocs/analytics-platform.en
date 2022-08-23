@@ -5,6 +5,7 @@ This article describes the statistical calculations used by the Experimentation 
 This article describes how A/B tests work, and provides an intuitive introduction to Adobe's ***Any Time Valid Confidence Sequences***. For expert users, the technical details and references are included at the end. 
 
 ## A/B testing and Causality
+
 A/B tests are often described as a "gold standard" in evaluating the causal impact of some type of "intervention." They are randomized trials, which in the context of online testing, means that we expose some randomly selected users to a given variation of a website, message or email, and another randomly selected set of users to some other **variant** or **treatment**. After exposure, we then measure the outcome **metric(s)** we are interested in (e.g. opens of emails, subscriptions, or purchases). 
 
 As illustrated in the image below, the fact that we randomly assigned users to each variant group means that on average the groups will share the same characteristics. Thus, any difference in outcomes can be interpreted as being due to the differences in the variants received, i.e. we are able to establish a **causal** link between our interventions and the outcomes we are interested in. This allows you to make rigorous, explainable, data driven decisions in optimizing your business goals, and so A/B testing is a fundamental part of the toolkit of any modern personalization practitioner. 
@@ -14,7 +15,8 @@ As illustrated in the image below, the fact that we randomly assigned users to e
 
 Now, an important question is whether any observed differences are "real effects", or arise due to randomness. Intuitively, if there is only a small difference in the outcome metrics between groups, then this could have been observed by chance, while larger differences are more likely to be "real". The technical term here is that our measurements are *estimates* of the true values of the mean for each variant group. Statistical inference techniques give us ways to quantify the amount of uncertainty in our estimates - this is where the concepts of **p-values** and **Confidence Intervals** arise, but to understand these, we should first understand Statistical Errors. 
 
-## Statistical Testing and Controlling Errors 
+## Statistical Testing and Controlling Errors
+
 Many statistical inferencing methodologies are designed to control two types of errors: **False Positives** (Type-I errors), and **False Negatives** (Type-II Errors). These are illustrated in the table below. 
 
 
