@@ -54,10 +54,7 @@ Without these labels present, the Experiment panel does not work, since there wi
    | **[!UICONTROL Control Variant]** | One of two or more alterations in an end user's experience that are being compared for the purpose of identifying the better alternative. One variant must be selected as the control, and only one variant can be considered to be the control variant. This setting is pre-populated with the dimensions that have been labeled with the  **[!UICONTROL Variant]** label in data views. This setting pulls up the variant data that is associated with this experiment. |
    | **[!UICONTROL Success Metrics]** | The metric or metrics that a user is comparing variants with. The variant with the most desirable outcome for the conversion metric (whether highest or lowest) is declared the "best performing variant" of an experiment. You can add up to 5 metrics. |
    | **[!UICONTROL Normalizing Metric]** | The basis ([!UICONTROL People], [!UICONTROL Sessions], or [!UICONTROL Events]) on which a test will be run. For example, a test may compare the conversion rates of several variations where **[!UICONTROL Conversion rate]** is calculated as **[!UICONTROL Conversions per session]** or **[!UICONTROL Conversions per person]**. |
-<<<<<<< Updated upstream:help/analysis-workspace/c-panels/experimentation.md
-=======
    | **[!UICONTROL Date Range]** | The date range is automatically set, based on the first hit received in CJA for the experiment selected. You can restrict or expand the date range to a more specific timeframe if needed. |
->>>>>>> Stashed changes:help/analysis-workspace/c-panels/experimentation/experimentation.md
 
 1. Click **[!UICONTROL Build]**.
 
@@ -79,16 +76,11 @@ For each success metric you selected, one freeform table and one conversion rate
 
 The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTROL Control Variant] performance:
 
-<<<<<<< Updated upstream:help/analysis-workspace/c-panels/experimentation.md
 ![experiment output](assets/exp-output3.png)
-
-=======
-![experiment output](../assets/exp-output3.png)
 
 >[!NOTE]
 >
 >This panel currently does not support analysis of A/A tests.
->>>>>>> Stashed changes:help/analysis-workspace/c-panels/experimentation/experimentation.md
 
 ## Adobe's statistical methodology
 
@@ -107,13 +99,6 @@ A Confidence Sequence is a "sequential" analog of a Confidence Interval. To unde
 
 4. **Lift**: The Experiment report summary shows the Lift over Baseline, which is a measure of the percentage improvement in conversion rate of a given variant over the baseline. Defined precisely, it is the difference in performance between a given variant and the baseline, divided by the performance of the baseline, expressed as a percentage. 
 
-<<<<<<< Updated upstream:help/analysis-workspace/c-panels/experimentation.md
-To follow.
-
-
-
-=======
 5. **Confidence**: The Anytime Valid Confidence that is shown, is a probabilistic measure of how much evidence there is that a given variant is the same as the control variant. A higher confidence indicates less evidence for the assumption that control and non-control variant have equal performance. More precisely, the confidence that is displayed is a probability (expressed as a percentage) that we would have observed a smaller difference in conversion rates between a given variant and the control, if in reality there is no difference in the true underlying conversion rates. In terms of *p*-values, the confidence displayed is 1 - *p*-value. 
  
 Note however that a full description of results should consider all available evidence (i.e. experiment design, sample sizes, conversion rates, confidence etc.), and not just the declaration of conclusive or not. Even when a result is not yet “conclusive”, there can still be compelling evidence for one variant being different from another (e.g. confidence intervals are nearly non-overlapping). Ideally, decision making should be informed by all statistical evidence, interpreted on a continuous spectrum.
->>>>>>> Stashed changes:help/analysis-workspace/c-panels/experimentation/experimentation.md
