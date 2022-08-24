@@ -32,3 +32,9 @@ You cannot grant or deny permissions on individual metrics or dimensions in Cust
 
 Non-product admins (users) in Customer Journey Analytics cannot view data views or connections, but can create filters, projects, and calculated metrics.
 
+## Workspace project curation
+
+For more information on how to limit components (dimensions, metrics, segments, date ranges) at the project level, see [Curate projects](/help/analysis-workspace/curate-share/curate.md).
+
+
+
