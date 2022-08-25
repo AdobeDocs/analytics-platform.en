@@ -11,6 +11,8 @@ The following updates were made to the CJA documentation since its inception.
 
 | Date | Update description |
 | --- | --- |
+| August 2022 | Adobe Experience Platform article on [Cross-region support for Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) |
+| August 2022 | Significantly updated article on [CJA access control](/help/getting-started/cja-access-control.md) |
 | August 2022 | New article on [CJA support for Data Governance labels and policies](/help/data-views/data-governance.md) |
 | August 2022 | New section on [Date field support in CJA](/help/data-views/data-views-usecases.md#date) |
 | August 2022 | New article on [Comparing terminology for Analytics data passed through the Analytics Source Connector](/help/getting-started/aa-vs-cja/terminology.md) |
