@@ -1,6 +1,6 @@
 ---
 title: CJA Access Control
-description: Learn about access control requirements for the three levels of access in CJA.
+description: Learn about ways to implement access control in CJA.
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
