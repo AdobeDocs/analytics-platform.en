@@ -83,7 +83,7 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin C
 | **[!UICONTROL Audit Logs Access]** | Currently, [audit logs](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) are available only via the API. This permission is for a future UI that is under development.  |
 | **[!UICONTROL Reporting Usage Admin]** | Lets users view and delete any report running in their company. (Reporting usage functionality is not yet released.)  |
 | **[!UICONTROL Reporting Usage View]** | Lets users see all of the concurrent reporting requests. (Reporting usage functionality is not yet released.) |
-| **[!UICONTROL Calculated Metrics Creation]** | Lets users create [calculated metrics](/). |
+| **[!UICONTROL Calculated Metrics Creation]** | Lets users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Filter Creation]** | Lets users create [filters](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Labs Access]** | Lets users access the [Labs](/help/labs/labs.md) tab in CJA. |
 | **[!UICONTROL Annotation Creation]** | Lets users create [annotations](/help/components/annotations/overview.md). |
