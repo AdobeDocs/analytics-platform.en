@@ -10,6 +10,8 @@ mini-toc-levels: 3
 
 Customer Journey Analytics (CJA) is governed by three levels of access or three roles: Product Admin role, Product Profile Admin role, and user-level access. This topic explains these roles in more detail. 
 
+In addition, we discuss more granular ways to limit access, such as Workspace curation and row-level as well as value-level access control.
+
 ## Product Admin role
 
 Product Admins have permissions to complete any task necessary within CJA. You must be added as an Product Admin to the **Customer Journey Analytics Product Profile** in the [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL Admins] tab > [!UICONTROL Add Admin]. Product admins are granted the following permissions:
@@ -70,7 +72,7 @@ Users who have access to a data view can only work with the metrics and dimensio
 
 Here is a healthcare-related example: Let's say you create a metric called "Hypertension" in a data view, from a dataset that includes this data. The fact that it's a metric would allow you to see the aggregate value of this metric, but not the individual patients who fall under it.
 
-## CJA permissions
+## CJA permissions in Admin Console
 
 The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin Console](https://adminconsole.adobe.com/enterprise/). You can add users to specific product profiles. Then you assign rights to specific data views and specify which permissions the users in a product profile have. Here are the CJA-specific permissions:
 
@@ -80,7 +82,7 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin C
 | --- | --- |
 | **[!UICONTROL Data Views]** | If you toggle **[!UICONTROL Auto-Include]** to **[!UICONTROL On]**, users that are part of this product profile can view all existing and newly created data views. If this setting is set to **[!UICONTROL Off]**, you can select specific data views that users have access to.  |
 | **[!UICONTROL Reporting Tools]**: |   |
-| **[!UICONTROL Audit Logs Access]** | Currently, [audit logs](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) are available only via the API. This permission is for a future UI that is under development.  |
+| **[!UICONTROL Audit Logs Access]** | Currently, [audit logs](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) are available only via the API. This permission enforces the permission check on the API and an upcoming audit logs UI.  |
 | **[!UICONTROL Reporting Usage Admin]** | Lets users view and delete any report running in their company. (Reporting usage functionality is not yet released.)  |
 | **[!UICONTROL Reporting Usage View]** | Lets users see all of the concurrent reporting requests. (Reporting usage functionality is not yet released.) |
 | **[!UICONTROL Calculated Metrics Creation]** | Lets users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). |
