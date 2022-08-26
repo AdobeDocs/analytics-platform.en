@@ -31,7 +31,7 @@ For more information on Experience Platform permissions, see [Access control in 
 
 A product profile is a set of permissions. Product Profile Admins can
 
-* Create and manage individual product profiles, such as adding new users.
+* Create and manage individual product profiles, such as adding new users or managing user groups and their associated product profiles.
 
 * In CJA, edit data views that are part of a product profile that they manage. They cannot create new data views.
 
