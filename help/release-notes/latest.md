@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Customer Journey Analytics (CJA) release notes (August 2022)
 
-**Last update**: August 23, 2022
+**Last update**: August 25, 2022
 
 ## Key features
 
@@ -18,7 +18,7 @@ feature: Release Notes
 | **CJA support for Data Governance labels and policies** | Automates the integration between CJA and Adobe Experience Platform privacy labels and policies. Data labels created on datasets consumed by Platform are surfaced in CJA data views to stop or warn users who create metrics and/or dimensions from sensitive fields. Additionally, when data is exported from CJA (via Workspace or Report Builder reporting, export, API, etc.) additional warnings or labels will be added to notify users that a report contains sensitive information that needs to be treated in a specific way. [Learn more](/help/data-views/data-governance.md) | August 17, 2022 |
 | **Date field support in CJA** | Allows CJA to report on date and date-time fields. [Learn more](/help/data-views/data-views-usecases.md#date) | August 17, 2022 |
 | **Cross-region support for Analytics Source Connector** | You can now ingest report suites from any region (United States, United Kingdom, or Singapore). However, these report suites have to be mapped to the same organization as the Experience Platform Sandbox instance in which the source connection is being created. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) | August 24, 2022 |
-| **First vs. Repeat Session Reporting** | You can now discover if a particular session was a user's first-ever session. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | August 24, 2022 |
+| **First Session Reporting** | You can now discover if a particular session was a user's first-ever session. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | August 24, 2022 |
 
 {style="table-layout:auto"}
 
