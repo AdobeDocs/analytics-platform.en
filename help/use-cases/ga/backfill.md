@@ -1,14 +1,14 @@
 ---
-title: Ingest Google Analytics data into Adobe Experience Platform
+title: Ingest Google Analytics historical data into Adobe Experience Platform
 description: Explains how to leverage Customer Journey Analytics (CJA) to ingest your Google Analytics data into Adobe Experience Platform. 
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 ---
 
-# Ingest Google Analytics data into Adobe Experience Platform
+# Ingest Google Analytics historical data into Adobe Experience Platform
 
-This page focuses on how to ingest your Google Analytics historical data into Adobe Experience Platform as a dataset, allowing you to reference that dataset in a Data View within Customer Journey Analytics. You can combine the steps on this page with [Configuring a live Google Analytics implementation](overview.md#configure), which generates a recurring dataset. Combine this historical dataset with your current implementation's dataset to get a seamless view of data in Customer Journey Analytics with both current and backfilled data.
+This page focuses on how to ingest your Google Analytics historical data into Adobe Experience Platform as a dataset, allowing you to reference that dataset in a Data View within Customer Journey Analytics. You can combine the steps on this page with [Configuring a live Google Analytics implementation](streaming.md), which generates a recurring dataset. Combine this historical dataset with your current implementation's dataset to get a seamless view of data in Customer Journey Analytics with both current and backfilled data.
 
 ## Prerequisites
 
@@ -77,7 +77,7 @@ You can map the GA event data into an existing dataset that you created previous
 
 ![Schema map](assets/schema-map.png)
 
-Mappings are easy to change and you can create derived or calculated fields from your data. Once you have finished mapping the fields into your XDM schema, you can schedule this import on a recurring basis as well as apply error validation during the ingestion process. This validation ensures that there aren’t any issues with the data you have imported.
+Once you are finished mapping the fields into your XDM schema, you can schedule this import on a recurring basis as well as apply error validation during the ingestion process. This validation ensures that there aren't any issues with the data you have imported.
 
 ## Required XDM fields
 
@@ -97,11 +97,5 @@ Certain XDM fields in Platform require the correct format in order for data to b
 
 ## Next steps
 
-* Create a [data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#cja-dataviews) based on the connection that contains Google Analytics data.
-
-* Do some amazing [analysis in Workspace](/help/use-cases/ga-to-cja-reporting.md).
-
-Datasets in Adobe Experience Platform consist of a schema and the data itself. You can either create a custom schema yourself, or map the desired export fields to XDM fields. Adobe plans to alleviate this tedious step in the future by creating a Field Group with all Google Analytics data columns included.
-
-
-See [BigQuery Export schema](https://support.google.com/analytics/answer/7029846) for more information around translating a Universal Analytics schema into a GA4 schema.
+* If you have current data that you want to stream into Adobe Experience Platform, see [Set up streaming for Google Analytics data](streaming.md).
+* If you want to begin reporting on backfilled data, see [Create a connection](/help/connections/create-connection.md).

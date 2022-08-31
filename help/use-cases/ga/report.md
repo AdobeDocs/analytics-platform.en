@@ -7,61 +7,56 @@ feature: Use Cases
 ---
 # Report on Google Analytics data in Customer Journey Analytics
 
-Now that you have [ingested the Google Analytics data into Experience Platform and Customer Journey Analytics (CJA)](/help/use-cases/ga-to-cja.md), we will show you some useful scenarios for reporting on that data.
+Once you have data available in Customer Journey Analytics, the following examples provide useful scenarios for reporting on that data.
 
 ## Visualize web data and app data as combined datasets
 
 This Venn diagram shows the overlap of users on your website (from your Google Analytics data) and on your mobile app (from your Firebase data) and from your call center. You can also see the top performing products - not just on the web, but also in the mobile app. You can even get the total the revenue from both, using a calculated metric. Notice how the top products tell a different story when you look at the combined revenue. Without the combined datasets, you would never have known that the "Twill cap" was such a strong performer.
 
-![](assets/combined-datasets.png)
+![Combined datasets](../assets/combined-datasets.png)
 
-## Identify call reasons and reduce call volume 
+## Identify call reasons and reduce call volume
 
-To verify that you have been getting a lot of calls, you can trend our call center time spent for over the period of the last 2 months. It’s easy to see the increasing trend. This is worrisome, since every minute your call center reps are on the phone costs you money. This can definitely impact your bottom line.
+You can trend call center time spent over the last 2 months to determine call volume. The following example shows this data trended over the last 2 months. Note that there is an increasing trend, which can impact your bottom line.
 
-Let’s look at the top reasons causing the increased calls to call center. Notice that "Credit Card Denied", “Remove Credit card", and “Damaged product” are the top reasons. This can already hint at ways to improve the experience online. You can also trend those call reasons and see which have contributed the most to the overall spike. It’s interesting to see that customers with "Damaged Product" have spent more than 3 minutes per call.
+![Call volume](../assets/call-volume.png)
 
-![](assets/call-volume.png)
+Using the dimension 'Call reason' can hint at ways to improve the web experience, preventing visitors from calling in the first place. The above example shows that "Damage product" has an average call time of nearly 3 minutes per call, giving your organization a precise way to improve the customer experience and drive down call center costs.
 
-Let’s look further and see which products are causing most of the calls to your call center and how many customers made those calls. The bubble chart indicates that 20,000 people called, spent more than 4hrs 30 mins and returned 33 units of the "Men's short Sleeve Tee" product. 
+You can view which products cause most of the calls to your call center and how many customers made those calls. The bubble chart shows that 20,000 people called, spent more than 4hrs 30 mins and returned 33 units of the "Men's short Sleeve Tee" product.
 
-We can break that insight down and see why those people returned the product by dragging in the dimension "Call Reason". As you can see, the reason this product is getting so many calls is due to "Damaged Product". The next step would be to contact the quality control department and see why customers have been receiving damaged T-shirts.
+![Call reason](../assets/call-reason.png)
 
-![](assets/call-reason.png)
+Applying a dimension breakdown of 'Call reason", note that it is "Damaged Product". The next step would be to contact the quality control department and see why customers have been receiving damaged T-shirts.
 
-Now let’s look at which web site pages drove the incoming calls at the call center. This lets you know where under-performing experiences are on the web site are and help your Product Managers solve those challenges.
+You can look at which website pages drove calls to the call center. This report lets you know where less-optimal experiences are on the web site and help your Product Managers solve those challenges. The following example uses a calculated metric to filter the data down to only sessions that ended with a call center call. It also uses the "participation" model in CJA’s [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#cja-workspace).
 
-We do this by
+Note that in the following example that the "Shopping Cart" and "Checkout Information" pages drove most of the calls.
 
-* Using a calculated metric to filter the data down to only sessions that ended with a call center call.
-* Using the “participation” model in CJA’s [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#cja-workspace).
+![Contributing pages](../assets/contributing-pages.png)
 
-You can easily see which pages most frequently participate in a session that ends in a call. You can see that the "Shopping Cart" and "Checkout Information" pages drove most of the calls. Since you have also included the firebase mobile app data, you can even see page errors and app crashes generating the calls. This is a really important data point if you want to deliver great web and mobile app experiences.
+The cohort table allows you to see how long it typically takes for users to call the call center after having visited the website. The following example indicates that the average time for this example dataset is between 3 and 4 weeks.
 
-![](assets/contributing-pages.png)
-
-Finally, using the cohort table in Analysis Workspace, it’s easy to see how long it typically takes for users to call our call center after having visited the website. Here you can see the average time is between 3 and 4 weeks. 
-
-![](assets/cohort.png)
+![Cohort](../assets/cohort.png)
 
 ## Use advanced marketing attribution
 
-CJA allows you to use sophisticated attribution models on your cross-channel data. In the following example, you can see a comparison of applying Last touch, first touch, u-shaped, and algorithmic attribution of revenue to the Google Analytics Channel Grouping dimension. 
+CJA allows you to use sophisticated attribution models on cross-channel data. In the following example, you can see a comparison of applying Last touch, first touch, u-shaped, and algorithmic attribution of revenue to the Google Analytics Channel Grouping dimension.
 
-![](assets/mktg-attribution.png)
+![Marketing attribution](../assets/mktg-attribution.png)
 
-Using a calculated metric, you can apply that attribution to your web revenue, mobile app revenue, and even remove product returns. As a result, you can see true net revenue for each marketing channel. 
+Using a calculated metric, you can apply that attribution to your web revenue, mobile app revenue, and even remove product returns. As a result, you can see true net revenue for each marketing channel.
 
-![](assets/calc-metric.png)
+![Calculated metric](../assets/calc-metric.png)
 
-Attribution IQ also lets you easily filter your data. You can see attribution against only specific sets of users, such as those who are using more than one device.
+Attribution IQ also lets you filter your data. You can see attribution against only specific sets of users, such as those who are using more than one device.
 
-![](assets/filter.png)
+![Filter](../assets/filter.png)
 
-Last, you can also attribute your Web and App revenue to your Google Ad Content. You will notice that you gained more revenue from the mobile app being driven by our online Google Ads than from the web. By sorting ads by web and app revenue, you get a very different picture of what your top performing Google ads were. 
+You can also attribute your Web and App revenue to your Google Ad Content. Note that this dataset's example gained more revenue from the mobile app being driven by online Google Ads than from the web. By sorting ads by web and app revenue, you get a different picture of what your top performing Google ads were.
 
-![](assets/google-ad.png)
+![Google ad](../assets/google-ad.png)
 
-Without CJA, you could not have known that your online ads were having any impact to products purchased on your mobile app. Now you can see that mobile app revenue from Google Ads represents an additional $14k - $5k, compared to the web alone.
+Combining datasets in CJA allows you to see in this example that online ads were having any impact to products purchased on your mobile app. The following visualization shows that mobile app revenue from Google Ads represents an additional $14k - $15k, compared to the web alone.
 
-![](assets/google-ad2.png)
+![Google ad 2](../assets/google-ad2.png)
