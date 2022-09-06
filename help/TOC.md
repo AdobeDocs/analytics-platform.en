@@ -103,6 +103,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Area and area stacked](analysis-workspace/visualizations/area.md)
     + [Bar and bar stacked](analysis-workspace/visualizations/bar.md)
     + [Bullet graph](analysis-workspace/visualizations/bullet-graph.md)
+    + [Combo chart](analysis-workspace/visualizations/combo-charts.md)
     + [Donut](analysis-workspace/visualizations/donut.md)
     + [Histogram](analysis-workspace/visualizations/histogram.md)
     + [Horizontal Bar and Horizontal Bar Stacked](analysis-workspace/visualizations/horizontal-bar.md)
