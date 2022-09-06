@@ -97,7 +97,7 @@ Three components facilitate this reporting:
 
    * [New sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). A new session is defined as a person's defined first session within the reporting window. 
 
-   * [Return sessions]((https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional)) Return sessions is the number of sessions that were not a person's first-ever session.
+   * [Return sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Return sessions is the number of sessions that were not a person's first-ever session.
 
 To access these components:
 
