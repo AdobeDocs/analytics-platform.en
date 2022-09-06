@@ -89,11 +89,15 @@ You can determine whether a session is indeed the first-ever session for a user 
 
 * For a given marketing channel, or a specific campaign, are you targeting first-time users? How does this choice influence conversion rates?
 
-Two components facilitate this reporting: 
+Three components facilitate this reporting: 
 
 * 1 dimension: [Session type](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - This dimension has two values: 1) [!UICONTROL New] and 2) [!UICONTROL Returning]. The [!UICONTROL New] line item includes all of the behavior (i.e. metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they fall into the 'Not applicable' bucket for this dimension.
 
-* 1 metrics: [New sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). A new session is defined as a person's defined first session within the reporting window. 
+* 2 metrics: 
+
+   * [New sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). A new session is defined as a person's defined first session within the reporting window. 
+
+   * [Return sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Return sessions is the number of sessions that were not a person's first-ever session.
 
 To access these components:
 
