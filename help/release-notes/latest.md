@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Customer Journey Analytics (CJA) release notes (August 2022)
 
-**Last update**: August 25, 2022
+**Last update**: September 6, 2022
 
 ## Key features
 
@@ -19,6 +19,7 @@ feature: Release Notes
 | **Date field support in CJA** | Allows CJA to report on date and date-time fields. [Learn more](/help/data-views/data-views-usecases.md#date) | August 17, 2022 |
 | **Cross-region support for Analytics Source Connector** | You can now ingest report suites from any region (United States, United Kingdom, or Singapore). However, these report suites have to be mapped to the same organization as the Experience Platform Sandbox instance in which the source connection is being created. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) | August 24, 2022 |
 | **First Session Reporting** | You can now discover if a particular session was a user's first-ever session. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | August 24, 2022 |
+| **Repeat Session Reporting** | Discover if a particular session was a user's return session. [Learn more]((https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat)) | September 8, 2022 |
 
 {style="table-layout:auto"}
 
