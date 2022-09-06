@@ -13,6 +13,7 @@ The Filter builder lets you compare and constrain values using selected operator
 | --- | --- |
 | equals | Returns items that match exactly for a numeric or string value. If using wildcard characters, use the "matches" operator. |
 | does not equal | Returns all items that do not contain the exact match of the value entered.  If using wildcard characters, use the "does not match" operator. |
+| equals any of | Returns any items that contain the match of the substring values entered, delimited by a comma. |
 | contains | Returns items that compare to the substrings of the values entered. For example, if the rule for a string dimension contains `"Search"`, it matches any page that has the substring `"Search"` in it, including `"Search Results"`, `"Search"`, and `"Searching"`. This operator is case-sensitive. |
 | does not contain | All items that match the entered value are excluded from results. For example, if the rule for a string dimension does not contain `"Search"`, then it excludes any page that has the substring `"Search"` in it, including `"Search Results"`, `"Search"`, and `"Searching"`. |
 | contains all of | Returns items that include all substrings (separated by a space) in any order. For example, entering `"Search Results"` with this operator would match `"Search Results"` and `"Results of Search"`, but not `"Search"` or `"Results"` independently. This operator supports up to 100 words delimited by spaces. |
