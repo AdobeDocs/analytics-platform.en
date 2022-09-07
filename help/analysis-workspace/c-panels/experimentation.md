@@ -35,7 +35,7 @@ In your data view that contains experimentation data, pick two dimension, one wi
 
 ![context label](assets/context-label.png)
 
-Without these labels present, the Experiment panel does not work, since there will be no experiments to work with.
+Without these labels present, the Experiment panel does not work, since there are no experiments to work with.
 
 ## Step 3: Configure the Experiment panel
 
@@ -64,13 +64,9 @@ The Experimentation panel returns a rich set of data and visualizations to help 
 
 You also get a text summary that indicates whether the experiment is conclusive or not, and summarizes the outcome. Conclusiveness is based on statistical significance. (See "Statistical methodology" below.) You can see summary numbers for the best performing variant with the highest lift and confidence.
 
->[!NOTE]
->
->Lift and Confidence are also [advanced calculated metric functions](/help/components/calc-metrics/cm-adv-functions.md) in CJA, so you can build your own lift and confidence metrics. 
+For each success metric you selected, one freeform table and one conversion rate trend will be shown.
 
 ![experiment output](assets/exp-output1.png)
-
-For each success metric you selected, one freeform table and one conversion rate trend will be shown.
 
 The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTROL Control Variant] performance:
 
@@ -79,6 +75,10 @@ The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTRO
 >[!NOTE]
 >
 >This panel currently does not support analysis of A/A tests.
+
+>[!NOTE]
+>
+>Lift and Confidence are also [advanced calculated metric functions](/help/components/calc-metrics/cm-adv-functions.md) in CJA, so you can build your own lift and confidence metrics. 
 
 ## Step 5: Interpret the results
 
