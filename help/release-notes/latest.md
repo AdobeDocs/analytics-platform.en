@@ -14,7 +14,7 @@ feature: Release Notes
 | ----------- | ---------- | ----- |
 | **Cross-region support for Analytics Source Connector** | You can now ingest report suites from any region (United States, United Kingdom, or Singapore). However, these report suites have to be mapped to the same organization as the Experience Platform Sandbox instance in which the source connection is being created. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) | August 24, 2022 |
 | **First Session Reporting** | Discover if a particular session was a user's first-ever session. [Learn more](/help/data-views/data-views-usecases.md) | August 24, 2022 |
-| **Repeat Session Reporting** | Discover if a particular session was a user's return session. [Learn more](/help/data-views/data-views-usecases.md)  | September 8, 2022 |
+| **Return Session Reporting** | Discover if a particular session was a user's return session. [Learn more](/help/data-views/data-views-usecases.md)  | September 13, 2022 |
 | **Experiment Panel for CJA (Generic Lift and Confidence)** | This new Workspace panel allows CJA users to evaluate the lift and confidence of any A/B experiment from any source - online, offline, from Adobe solutions, Adobe Journey Optimizer, and even BYO data. [Learn more](/help/analysis-workspace/c-panels/experimentation.md) | [Limited release](/help/release-notes/releases.md) starting September 14, 2022 |
 | **Combo Charts visualization in Workspace** |  Combo charts let you compare metrics more easily and intuitively within Workspace. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/visualizations/combo-charts.html?lang=en)  | September 14, 2022 |
 
