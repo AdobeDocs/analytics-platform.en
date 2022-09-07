@@ -17,8 +17,6 @@ feature: Release Notes
 | **Repeat Session Reporting** | Discover if a particular session was a user's return session. [Learn more](/help/data-views/data-views-usecases.md)  | September 8, 2022 |
 | **Experiment Panel for CJA (Generic Lift and Confidence)** | This new Workspace panel allows CJA users to evaluate the lift and confidence of any A/B experiment from any source - online, offline, from Adobe solutions, Adobe Journey Optimizer, and even BYO data. [Learn more](/help/analysis-workspace/c-panels/experimentation.md) | [Limited release](/help/release-notes/releases.md) starting September 14, 2022 |
 | **Combo Charts visualization in Workspace** |  Combo charts let you compare metrics more easily and intuitively within Workspace. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/visualizations/combo-charts.html?lang=en)  | September 14, 2022 |
-| **Customer AI Integration** | Lets you ingest Customer AI models scores in CJA for further analysis in CJA Analysis workspace. Learn more - coming soon | October 3, 2022  |
-| **Attribution AI Integration** | Lets you ingest the Attribution AI models scores in CJA for further analysis in CJA Analysis workspace. Learn more - coming soon | October 3, 2022 |
 
 {style="table-layout:auto"}
 
