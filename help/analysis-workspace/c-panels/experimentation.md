@@ -28,8 +28,8 @@ After your experiment data has been [ingested](https://experienceleague.adobe.co
 
 In CJA data views settings, admins can add [context labels](/help/data-views/component-settings/overview.md) to a dimension or metric and CJA services like [!UICONTROL Experimentation] panel can use these labels for their purposes. Two pre-defined labels are used for the Experimentation panel:
 
-* [!UICONTROL Experiment]
-* [!UICONTROL Variant]
+* [!UICONTROL Experimentation Experiment]
+* [!UICONTROL Experimentation Variant]
 
 In your data view that contains experimentation data, pick two dimension, one with the experimentation data and one with the variant data. Then label those dimensions with the **[!UICONTROL Experiment]** and the **[!UICONTROL Variant]** labels.
 
