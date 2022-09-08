@@ -22,6 +22,8 @@ The Experimentation panel is available to use by all Customer Journey Analytics 
 
 ## Step 1: Create connection to experiment dataset/s
 
+The recommended data schema is for the experiment data to be in an [Object array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) that contains the experiment and variant data in two separate dimensions. If you have your experiment data in a single dimension with experiment and variant data in a delimited string, you can use the [substring](/help/data-views/component-settings/substring.md) setting in data views to split them into two for use in the panel.
+
 After your experiment data has been [ingested](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) into Adobe Experience Platform, [create a connection in CJA](/help/connections/create-connection.md) to one or more experiment dataset/s.
 
 ## Step 2: Add context labels in data views
@@ -70,7 +72,7 @@ For each success metric you selected, one freeform table and one conversion rate
 
 The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTROL Control Variant] performance:
 
-![experiment output](assets/exp-output2.png)
+![line chart output](assets/exp-output2.png)
 
 >[!NOTE]
 >
