@@ -1,5 +1,5 @@
 ---
-description: Learn about how you can analyze the results of A/B tests in the CJA Experimentation panel.
+description: Learn how you can analyze the results of A/B tests in the CJA Experimentation panel.
 title: Experimentation panel
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
@@ -21,6 +21,8 @@ The **[!UICONTROL Experimentation]** panel lets analysts compare different user 
 The Experimentation panel is available to use by all Customer Journey Analytics (CJA) users. No Admin rights or other permissions are required. However, the setup (steps 1 and 2 below) requires actions that only Admins can perform.
 
 ## Step 1: Create connection to experiment dataset/s
+
+The recommended data schema is for the experiment data to be in an [Object array]() that contains the experiment and variant data in two separate dimensions. If you have your experiment data in a single dimension with experiment and variant data in a delimited string, you can use the substring setting in data views to split them into two for use in the panel.
 
 After your experiment data has been [ingested](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) into Adobe Experience Platform, [create a connection in CJA](/help/connections/create-connection.md) to one or more experiment dataset/s.
 
