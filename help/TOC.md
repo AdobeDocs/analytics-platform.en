@@ -224,6 +224,11 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Set up executives to use dashboards](mobile-app/set-up-execs.md)
   + [Executive user quick start guide](mobile-app/executive.md)
 + Use cases {#cja-usecases}
+  + Google Analytics data {#ga}
+    + [Migrate data from Google Analytics to CJA overview](use-cases/ga/overview.md)
+    + [Ingest Google Analytics historical data into Platform](use-cases/ga/backfill.md)
+    + [Configure streaming Google Analytics data into Platform](use-cases/ga/streaming.md)
+    + [Report on Google Analytics data in CJA](use-cases/ga/report.md)
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
   + [Combine report suites with different schemas](use-cases/combine-report-suites.md)
   + [Use arrays of objects](use-cases/object-arrays.md)
