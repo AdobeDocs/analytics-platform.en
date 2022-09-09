@@ -1,5 +1,5 @@
 ---
-description: Learn about how you can analyze the results of A/B tests in the CJA Experimentation panel.
+description: Learn how you can analyze the results of A/B tests in the CJA Experimentation panel.
 title: Experimentation panel
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
@@ -80,7 +80,7 @@ The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTRO
 
 >[!NOTE]
 >
->Lift and Confidence are also [advanced calculated metric functions](/help/components/calc-metrics/cm-adv-functions.md) in CJA, so you can build your own lift and confidence metrics. 
+>Lift and Confidence are also [advanced calculated metric functions](/help/components/calc-metrics/cm-adv-functions.md) in CJA, so you can build your own lift and confidence metrics.
 
 ## Step 5: Interpret the results
 
