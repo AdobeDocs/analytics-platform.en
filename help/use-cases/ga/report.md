@@ -35,7 +35,7 @@ The following example shows that the "Shopping Cart" and "Checkout Information" 
 
 ![Contributing pages](../assets/contributing-pages.png)
 
-The cohort table allows you to see how long it typically takes for users to call the call center after having visited the website. The following example indicates that the average time for this example dataset is between 3 and 4 weeks.
+The cohort table allows you to see how long it typically takes for users to call the call center after having visited the website. The following example indicates that the average time for this example dataset is between three to four weeks.
 
 ![Cohort](../assets/cohort.png)
 
