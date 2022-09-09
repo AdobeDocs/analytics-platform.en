@@ -36,7 +36,7 @@ Before using Cross-Channel Analytics, make sure that your organization is prepar
 
 >[!IMPORTANT]
 >
->Please be aware that any change to the global event dataset schema has to be applied also in the new stitched dataset schema, otherwise it will break the stitched dataset.
+>Any change to the global event dataset schema has to be applied also in the new stitched dataset schema, otherwise it will break the stitched dataset.
 >
 >Also, if you remove the source dataset, the stitched dataset stops processing and gets removed by the system.
 
@@ -45,7 +45,7 @@ Cross-Channel Analytics is a groundbreaking and robust feature, but has limitati
 * Current rekeying capabilities are limited to one step (persistent ID to transient ID). Multiple-step rekeying (for example, persistent ID to a transient ID, then to another transient ID) is not supported.
 * Only event datasets are supported. Other datasets, such as lookup datasets, are not supported.
 * Custom ID maps used in your organization are not supported.
-* The Adobe Co-op graph and Private graph are not supported.
+* The Cross-Device Private graph is not supported.
 * Cross-Channel Analytics does not transform the field used for stitching in any manner. Field-based stitching uses the value in the specified field as it exists in the unstitched dataset within data lake. The stiching process is case sensitive. For example, if sometimes the word 'Bob' appears in the field, and sometimes the word 'BOB' appears, these will be treated as two separate people.
 * Given field-based stitching is case-sensitive, for Analytics datasets generated through the Analytics Source Connector, Adobe recommends reviewing any VISTA rules or processing rules that apply to the transient ID field to ensure that none of these rules are introducing new forms of the same ID. For example, you should ensure that no VISTA or processing rules are introducing lowercasing to the transient ID field on only a portion of the events.
 * Field-based stitching does not combine or concatenate fields. 
