@@ -13,6 +13,7 @@ The following updates were made to the CJA documentation since its inception.
 
 | Date | Update description |
 | --- | --- |
+| September 2022 | New use case on [Migrating Google Analytics data to CJA](/help/use-cases/ga/overview.md). |
 | September 2022 | New topic on [Combo charts](/help/analysis-workspace/visualizations/combo-charts.md) in Workspace. |
 | September 2022 | New topic on [Experimentation panel](/help/analysis-workspace/c-panels/experimentation.md) in Workspace. |
 | August 2022 | Adobe Experience Platform article on [Cross-region support for Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). |
@@ -68,7 +69,7 @@ The following updates were made to the CJA documentation since its inception.
 | April 2021 | New topic on [persistence](/help/data-views/component-settings/persistence.md). |
 | April 2021 | New documentation on support for scheduled projects in Workspace. |
 | April 2021 | New topics on the [enhanced Data Views experience](/help/data-views/data-views.md). |
-| April 2021 | New topics on [ingesting Google Analytics data](/help/use-cases/ga-to-cja.md) and [analyzing that data](/help/use-cases/ga-to-cja-reporting.md). |
+| April 2021 | New topics on [ingesting Google Analytics data](/help/use-cases/ga/overview.md) and [analyzing that data](/help/use-cases/ga/report.md). |
 | April 2021 | Added topic on [scheduled reports](/help/analysis-workspace/curate-share/t-schedule-report.md) in Workspace. |
 | April 2021 | New topic on [high-cardinality dimensions in CJA](/help/components/dimensions/high-cardinality.md). |
 | March 2021 | Added topic on support for [Analytics dashboards](/help/mobile-app/home.md) (mobile app). |
