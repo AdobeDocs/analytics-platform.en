@@ -47,6 +47,8 @@ The following updates were made to the CJA documentation since its inception.
 | January 2022 | Added new feature documentation on [binding dimensions and metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) and on new [[!UICONTROL First Known] and [!UICONTROL Last Known] allocation settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#allocation-settings) |
 | January 2022 | New article on [comparing your Adobe Analytics data to Analytics data in CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html) |
 
+{style="table-layout:auto"}
+
 ## 2021
 
 | November 2021 | Updated documentation for [[!UICONTROL Records skipped]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html) on the Connections Details page. |
@@ -74,6 +76,8 @@ The following updates were made to the CJA documentation since its inception.
 | February 2021 | New topic on using [Marketing Channel dimensions in Adobe Experience Platform](/help/use-cases/marketing-channels.md). |
 | February 2021 | Published the new [CJA API](https://www.adobe.io/cja-apis/docs/) documentation. |
 | January 2021 | New topic on [adding standard lookups to your dataset](/help/connections/standard-lookups.md). |
+
+{style="table-layout:auto"}
 
 ## 2020
 
