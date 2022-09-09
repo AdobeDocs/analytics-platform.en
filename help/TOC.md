@@ -240,8 +240,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Import call center and web data](use-cases/call-center.md)
   + [Data ingestion use cases](use-cases/data-ingestion.md)
   + [Use Marketing channel dimensions](use-cases/marketing-channels.md)
-  + [Ingest Google Analytics data into Adobe Experience Platform](use-cases/ga-to-cja.md)
-  + [Report on Google Analytics data in CJA](use-cases/ga-to-cja-reporting.md)
 + Labs {#labs}
   + [Labs User Guide](labs/labs.md)
 + Troubleshooting {#troubleshooting}
