@@ -78,10 +78,6 @@ The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTRO
 >
 >This panel currently does not support analysis of A/A tests.
 
->[!NOTE]
->
->Lift and Confidence are also [advanced calculated metric functions](/help/components/calc-metrics/cm-adv-functions.md) in CJA, so you can build your own lift and confidence metrics.
-
 ## Step 5: Interpret the results
 
 1. **Experiment is Conclusive**: Every time you view the experimentation report, Adobe analyzes the data that has accumulated in the experiment up to this point and will declare an experiment to be "Conclusive" when the anytime valid confidence crosses a threshold of 95% for *at least one* of the variants (with a Bonferonni correction applied when there are more than two arms, to correct for multiple hypothesis testing).  
