@@ -22,20 +22,22 @@ The Experimentation panel is available to use by all Customer Journey Analytics 
 
 ## Step 1: Create connection to experiment dataset/s
 
+The recommended data schema is for the experiment data to be in an [Object array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) that contains the experiment and variant data in two separate dimensions. If you have your experiment data in a single dimension with experiment and variant data in a delimited string, you can use the [substring](/help/data-views/component-settings/substring.md) setting in data views to split them into two for use in the panel.
+
 After your experiment data has been [ingested](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) into Adobe Experience Platform, [create a connection in CJA](/help/connections/create-connection.md) to one or more experiment dataset/s.
 
 ## Step 2: Add context labels in data views
 
 In CJA data views settings, admins can add [context labels](/help/data-views/component-settings/overview.md) to a dimension or metric and CJA services like [!UICONTROL Experimentation] panel can use these labels for their purposes. Two pre-defined labels are used for the Experimentation panel:
 
-* [!UICONTROL Experiment]
-* [!UICONTROL Variant]
+* [!UICONTROL Experimentation Experiment]
+* [!UICONTROL Experimentation Variant]
 
 In your data view that contains experimentation data, pick two dimension, one with the experimentation data and one with the variant data. Then label those dimensions with the **[!UICONTROL Experiment]** and the **[!UICONTROL Variant]** labels.
 
 ![context label](assets/context-label.png)
 
-Without these labels present, the Experiment panel does not work, since there will be no experiments to work with.
+Without these labels present, the Experiment panel does not work, since there are no experiments to work with.
 
 ## Step 3: Configure the Experiment panel
 
@@ -44,7 +46,7 @@ Without these labels present, the Experiment panel does not work, since there wi
   ![experiment panel](assets/experiment.png)
 
    >[!IMPORTANT]
-   >If the necessary setup in CJA data views has not been completed, you will receive a message to that effect before you can proceed.
+   >If the necessary setup in CJA data views has not been completed, you will receive this message before you can proceed: "[!UICONTROL Please configure the experiment and variant dimensions in Data Views]".
 
 1. Configure the panel input settings.
 
@@ -58,39 +60,31 @@ Without these labels present, the Experiment panel does not work, since there wi
 
 1. Click **[!UICONTROL Build]**.
 
-## Step 4: Interpret the panel output
+## Step 4: View the panel output
 
 The Experimentation panel returns a rich set of data and visualizations to help you better understand how your experiments are performing. At the top of the panel, a summary line is provided to remind you of the panel settings you selected. At any time, you can edit the panel by clicking the edit pencil at the top right.
 
 You also get a text summary that indicates whether the experiment is conclusive or not, and summarizes the outcome. Conclusiveness is based on statistical significance. (See "Statistical methodology" below.) You can see summary numbers for the best performing variant with the highest lift and confidence.
 
->[!NOTE]
->
->Lift and Confidence are also [advanced calculated metric functions](/help/components/calc-metrics/cm-adv-functions.md) in CJA, so you can build your own lift and confidence metrics. 
+For each success metric you selected, one freeform table and one conversion rate trend will be shown.
 
 ![experiment output](assets/exp-output1.png)
 
-For each success metric you selected, one freeform table and one conversion rate trend will be shown:
-
-![experiment output](assets/exp-output2.png)
-
 The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTROL Control Variant] performance:
 
-![experiment output](assets/exp-output3.png)
+![line chart output](assets/exp-output2.png)
 
 >[!NOTE]
 >
 >This panel currently does not support analysis of A/A tests.
 
-## Adobe's statistical methodology
+>[!NOTE]
+>
+>Lift and Confidence are also [advanced calculated metric functions](/help/components/calc-metrics/cm-adv-functions.md) in CJA, so you can build your own lift and confidence metrics. 
 
-To provide easily interpretable and safe statistical inference, Adobe has adopted a statistical methodology based on [Anytime Valid Confidence Sequences](https://doi.org/10.48550/arXiv.2103.06476).
+## Step 5: Interpret the results
 
-A Confidence Sequence is a "sequential" analog of a Confidence Interval. To understand what a confidence sequence is, imagine repeating your experiments one hundred times, and calculating an estimate of the mean business metric (e.g. open rate of an email) and its associated 95%-Confidence Sequence for *every new user* that enters the experiment. A 95% Confidence Sequence will include the "true" value of the business metric in 95 out of the 100 experiments that you ran. (A 95% Confidence Interval could only be calculated once per experiment in order to give the same 95% coverage guarantee; not with every single new user). Confidence Sequences therefore allow you to continuously monitor experiments, without increasing False Positive error rates, i.e. they allow "peeking" at results.
-
-### Interpreting the results
-
-1. **Experiment is Conclusive**: Every time you view the experimentation report, Adobe analyzes the data that has accumulated in the experiment up to this point and will declare an experiment to be “Conclusive” when the anytime valid confidence crosses a threshold of 95% for *at least one* of the variants (with a Bonferonni correction applied when there are more than two arms, to correct for multiple hypothesis testing).  
+1. **Experiment is Conclusive**: Every time you view the experimentation report, Adobe analyzes the data that has accumulated in the experiment up to this point and will declare an experiment to be "Conclusive" when the anytime valid confidence crosses a threshold of 95% for *at least one* of the variants (with a Bonferonni correction applied when there are more than two arms, to correct for multiple hypothesis testing).  
 
 2. **Best Performing Variant**: When an experiment is declared to be conclusive, the variant with the highest conversion rate is labeled as the "best performing variant". Note that this variant must either be the control or baseline variant, or one of the variants that crosses the 95% anytime valid confidence threshold (with Bonferonni corrections applied).
 
@@ -100,4 +94,12 @@ A Confidence Sequence is a "sequential" analog of a Confidence Interval. To unde
 
 5. **Confidence**: The Anytime Valid Confidence that is shown, is a probabilistic measure of how much evidence there is that a given variant is the same as the control variant. A higher confidence indicates less evidence for the assumption that control and non-control variant have equal performance. More precisely, the confidence that is displayed is a probability (expressed as a percentage) that we would have observed a smaller difference in conversion rates between a given variant and the control, if in reality there is no difference in the true underlying conversion rates. In terms of *p*-values, the confidence displayed is 1 - *p*-value.
 
-Note however that a full description of results should consider all available evidence (i.e. experiment design, sample sizes, conversion rates, confidence etc.), and not just the declaration of conclusive or not. Even when a result is not yet “conclusive”, there can still be compelling evidence for one variant being different from another (e.g. confidence intervals are nearly non-overlapping). Ideally, decision making should be informed by all statistical evidence, interpreted on a continuous spectrum.
+>[!NOTE]
+>
+>A full description of results should consider all available evidence (i.e. experiment design, sample sizes, conversion rates, confidence etc.), and not just the declaration of conclusive or not. Even when a result is not yet "conclusive", there can still be compelling evidence for one variant being different from another (e.g. confidence intervals are nearly non-overlapping). Ideally, decision making should be informed by all statistical evidence, interpreted on a continuous spectrum.
+
+## Adobe's statistical methodology
+
+To provide easily interpretable and safe statistical inference, Adobe has adopted a statistical methodology based on [Anytime Valid Confidence Sequences](https://doi.org/10.48550/arXiv.2103.06476).
+
+A Confidence Sequence is a "sequential" analog of a Confidence Interval. To understand what a confidence sequence is, imagine repeating your experiments one hundred times, and calculating an estimate of the mean business metric (e.g. open rate of an email) and its associated 95%-Confidence Sequence for *every new user* that enters the experiment. A 95% Confidence Sequence will include the "true" value of the business metric in 95 out of the 100 experiments that you ran. (A 95% Confidence Interval could only be calculated once per experiment in order to give the same 95% coverage guarantee; not with every single new user). Confidence Sequences therefore allow you to continuously monitor experiments, without increasing False Positive error rates, i.e. they allow "peeking" at results.
