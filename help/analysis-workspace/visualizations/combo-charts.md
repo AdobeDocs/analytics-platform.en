@@ -7,23 +7,17 @@ exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
 ---
 # Combo chart
 
->[!NOTE]
->
->This functionality is currently in [limited testing](/help/release-notes/releases.md).
+The [!UICONTROL Combo chart] visualization makes it easy to quickly build a comparison visualization without having to build a table first. You can easily view trends in your data in a line/bar combination.
 
-The [!UICONTROL Combo chart] visualization makes it easy to quickly build a comparison visualization without having to build a table first. You can easily view trends in your data in a line/bar combination. 
+Use a [!UICONTROL Combo chart] to:
 
-Use a [!UICONTROL Combo chart] to 
-
-* Compare this week's orders to orders at the same time last month (and last year) - all within a few clicks. 
-
-* Quickly analyze and compare multiple metrics (like [!UICONTROL Unique Visitors] and [!UICONTROL Revenue]) against one another on the same chart. 
-
+* Compare this week's orders to orders at the same time last month (and last year) - all within a few clicks.
+* Quickly analyze and compare multiple metrics (like [!UICONTROL Unique Visitors] and [!UICONTROL Revenue]) against one another on the same chart.
 * Analyze a metric against a function (such as [!UICONTROL Cumulative Average]) over a time horizon.
 
-Keep in mind that you can
+Keep in mind that you can:
 
-* Add multiple comparisons in a single [!UICONTROL Combo chart]. 
+* Add multiple comparisons in a single [!UICONTROL Combo chart].
 * If you add one or more comparisons, they have to be of the same type, such as [!UICONTROL Time comparison].
 * You can add up to 5 comparisons.
 * You can apply up to 3 filters (segments) to a metric.
@@ -32,7 +26,7 @@ Keep in mind that you can
 
 1. From the Visualizations drop-down list in the left rail, drag the [!UICONTROL Combo chart] visualization into a blank panel.
 
-   ![](assets/combo-chart-build.png)
+   ![Build](assets/combo-chart-build.png)
 
 1. From the drop-down lists, select a dimension for the X-axis and a metric for the Y-axis.
 
@@ -40,9 +34,9 @@ Keep in mind that you can
 
    | Line comparison type | Definition |
    | --- | --- |
-   | **[!UICONTROL Time comparison]** | The most common type of comparison - comparing this time period to 4 weeks ago, for example. If you selected [!UICONTROL Time comparison], make a secondary selection as to which time period you want to compare.<p>![](assets/combo-time-period.png) |
-   | **[!UICONTROL Function]** | You could introduce a function like [!UICONTROL Average] into the comparison. See a list of supported functions below.<p>![](assets/combo-functions.png) |
-   | **[!UICONTROL Secondary metric]** | You could, for example, compare [!UICONTROL Revenue] to another metric.<p>![](assets/combo-2metrics.png) |
+   | **[!UICONTROL Time comparison]** | The most common type of comparison - comparing this time period to 4 weeks ago, for example. If you selected [!UICONTROL Time comparison], make a secondary selection as to which time period you want to compare.<p>![Time period](assets/combo-time-period.png) |
+   | **[!UICONTROL Function]** | You could introduce a function like [!UICONTROL Average] into the comparison. See a list of supported functions below.<p>![Functions](assets/combo-functions.png) |
+   | **[!UICONTROL Secondary metric]** | You could, for example, compare [!UICONTROL Revenue] to another metric.<p>![Two metrics](assets/combo-2metrics.png) |
 
    {style="table-layout:auto"}
 
@@ -50,9 +44,9 @@ Keep in mind that you can
 
    The output will look similar to this:
 
-   ![](assets/combo-output.png)
+   ![Output](assets/combo-output.png)
 
-   The current period is shown in the bar chart, and the comparison period is represented by the line chart. The dots on the line chart are known as "bar bells". 
+   The current period is shown in the bar chart, and the comparison period is represented by the line chart. The dots on the line chart are known as "bar bells".
 
 ## Supported functions
 
@@ -72,17 +66,17 @@ If you choose **[!UICONTROL Function]** as the [!UICONTROL Line comparison type]
 
 Here is an example of the cumulative average of the Revenue metric:
 
-![](assets/combo-cumul-avg.png)
+![Cumulative average](assets/combo-cumul-avg.png)
 
 Here is an example of a combo chart with both Cumulative average and Mean functions:
 
-![](assets/combo-two-functions.png)
+![Two functions](assets/combo-two-functions.png)
 
 ## Combo chart settings
 
 Click the gear icon on the top right of a combo chart to change its settings.
 
-![](assets/combo-settings.png)
+![Settings](assets/combo-settings.png)
 
 | Setting | Definition |
 | --- | --- |
