@@ -23,9 +23,9 @@ feature: FAQ
 
 | Question | Answer |
 | --- | --- |
-| Can [!UICONTROL Customer Journey Analytics] "stitch" across devices or across datasets? | Yes. [!UICONTROL Customer Journey Analytics] has a stitching solution called [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) (CCA). It lets you re-key a dataset’s person ID, which enables a seamless combination of multiple datasets. |
+| Can [!UICONTROL Customer Journey Analytics] "stitch" across devices or across datasets? | Yes. [!UICONTROL Customer Journey Analytics] has a stitching solution called [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) (CCA). It lets you re-key a dataset's person ID, which enables a seamless combination of multiple datasets. |
 | Is stitching from anonymous behavior to authenticated behavior supported? | Yes. [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) looks at user data from both authenticated and unauthenticated sessions to generate a stitched ID. |
-| How does 'replay' work in CCA? | CCA “replays” data based on unique identifiers it has learned. Replay causes new devices to the connection to become stitched. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html#step-1%3A-live-stitching) |
+| How does 'replay' work in CCA? | CCA "replays" data based on unique identifiers it has learned. Replay causes new devices to the connection to become stitched. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html#step-1%3A-live-stitching) |
 | How does stitching historical data (backfill) work in CCA? | When first turned on, Adobe provides a backfill of stitched data that goes back as far as the beginning of the previous month (up to 60 days.) In order to do this backfill, the transient ID must exist in the unstitched data that far back in time. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#enable-cross-channel-analytics) |
 | What is the expected behavior for non-stitched profile data set records? | **Example scenario**: You join 2 datasets in a CJA connection by using `CRMid` as the Person ID. One is a Web Event dataset with `CRMid` in all records. The other dataset is a CRM profile data set. 40% of the CRM data set has `CRMid` present in the Web event data set. The other 60% is not present in the Web event dataset - do these records appear in reporting in Analysis Workspace?<p> **Answer**: Profile rows that have no events tied to them are stored in CJA. However, you cannot view them in Analysis Workspace until an event tied to that ID appears. |
 
@@ -56,10 +56,7 @@ feature: FAQ
 
 ## 5. Set rolling window for [!UICONTROL Connection] data retention {#data-retention}
 
->[!IMPORTANT]
->Please contact Customer Care or your Adobe account manager to have this setting implemented. It is not yet available via the CJA UI.
-
-This setting lets you define CJA data retention as a rolling window in months (3 months, 6 months, etc.), at a [!UICONTROL connection] level (not at a [!UICONTROL dataset] level). Data retention is based on event dataset timestamps and applies to event datasets only. No data retention setting exists for profile or lookup datasets since there are no applicable timestamps.
+The [**[!UICONTROL Enable rolling data window]** setting](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection) lets you define CJA data retention as a rolling window in months (3 months, 6 months, etc.). It is set at a [!UICONTROL connection] level, not at a [!UICONTROL dataset] level. Data retention is based on event dataset timestamps and applies to event datasets only. No data retention setting exists for profile or lookup datasets since there are no applicable timestamps.
 
 The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost. 
 
@@ -132,9 +129,9 @@ You may need to know how many rows of data you currently have in [!UICONTROL Cus
 
 ## 10. Regarding usage overages {#overage}
 
-Usage limits are regularly monitored and enforced by Adobe. “Rows of data” means the daily average rows of data available for analysis within Customer Journey Analytics.
+Usage limits are regularly monitored and enforced by Adobe. "Rows of data" means the daily average rows of data available for analysis within Customer Journey Analytics.
 
-For example, let’s say your contract entitles you to one million rows of data. Suppose that on day 1 of using Customer Journey Analytics, you upload two million rows of data. On day 2, you delete 1 million rows and keep your usage at that committed maximum (i.e., one million row of data) for the remainder of your License Term. Depending on your contractual terms, you may still incur prorated over-usage fees for day 1, since you exceeded your "rows of data" license entitlement.
+For example, let's say your contract entitles you to one million rows of data. Suppose that on day 1 of using Customer Journey Analytics, you upload two million rows of data. On day 2, you delete 1 million rows and keep your usage at that committed maximum (i.e., one million row of data) for the remainder of your License Term. Depending on your contractual terms, you may still incur prorated over-usage fees for day 1, since you exceeded your "rows of data" license entitlement.
 
 ## 11. Diagnose data discrepancies {#discrepancies}
 
