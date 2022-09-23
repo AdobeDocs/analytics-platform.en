@@ -223,13 +223,16 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Create a scorecard](mobile-app/create-scorecard.md)
   + [Set up executives to use dashboards](mobile-app/set-up-execs.md)
   + [Executive user quick start guide](mobile-app/executive.md)
++ Platform integrations {#integrations}
+  + [Integrate Platform solutions with CJA overview](/help/integrations/overview.md)
+  + [Integrate Journey Optimizer data with CJA](/help/integrations/ajo.md)
 + Use cases {#cja-usecases}
+  + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
   + Google Analytics data {#ga}
     + [Migrate data from Google Analytics to CJA overview](use-cases/ga/overview.md)
     + [Ingest Google Analytics historical data into Platform](use-cases/ga/backfill.md)
     + [Configure streaming Google Analytics data into Platform](use-cases/ga/streaming.md)
     + [Report on Google Analytics data in CJA](use-cases/ga/report.md)
-  + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)
   + [Combine report suites with different schemas](use-cases/combine-report-suites.md)
   + [Use arrays of objects](use-cases/object-arrays.md)
   + [Use binding dimensions and metrics](use-cases/binding-dimensions-metrics.md)
