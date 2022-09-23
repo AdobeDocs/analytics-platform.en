@@ -8,6 +8,8 @@ feature: Release Notes
 
 **Last update**: September 14, 2022
 
+Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
+
 ## Related resources
 
 * [Previous CJA release notes for 2022](/help/release-notes/2022.md)
