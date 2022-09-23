@@ -223,8 +223,8 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Create a scorecard](mobile-app/create-scorecard.md)
   + [Set up executives to use dashboards](mobile-app/set-up-execs.md)
   + [Executive user quick start guide](mobile-app/executive.md)
-+ Platform integrations {#integrations}
-  + [Integrate Platform solutions with CJA overview](/help/integrations/overview.md)
++ Adobe integrations {#integrations}
+  + [Integrate Adobe solutions with CJA overview](/help/integrations/overview.md)
   + [Integrate Journey Optimizer data with CJA](/help/integrations/ajo.md)
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](use-cases/cja-usecases.md)

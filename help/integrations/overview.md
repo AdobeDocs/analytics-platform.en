@@ -1,9 +1,9 @@
 ---
-title: Integrate Adobe Experience Platform solutions with Customer Journey Analytics
-description: Learn how to integrate data from other Adobe Experience Platform solutions and services.
+title: Integrate Adobe solutions with Customer Journey Analytics
+description: Learn how to integrate data from other Adobe solutions and services.
 ---
 
-# Integrate Adobe Experience Platform solutions with Customer Journey Analytics
+# Integrate Adobe solutions with Customer Journey Analytics
 
 Adobe offers many products and solutions that tap into data hosted on Adobe Experience Platform. You can use these guides to learn about the overarching workflows of getting that data into Analysis Workspace to run advanced reports.
 
