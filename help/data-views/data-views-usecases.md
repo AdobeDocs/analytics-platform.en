@@ -81,23 +81,23 @@ Don't forget to rename each metric to reflect the differences, such as "Algorith
 For more information on other data views settings, see [Create data views](/help/data-views/create-dataview.md).
 For a conceptual overview of data views, see [Data views overview](/help/data-views/data-views.md).
 
-## 7. New session reporting {#new-repeat}
+## 7. New session and return session reporting {#new-repeat}
 
-You can determine whether a session is indeed the first-ever session for a user or not, based on the reporting window that you defined for this data view and a 13-month lookback window. This reporting lets you determine, for example:
+You can determine whether a session is indeed the first-ever session for a user or a return session, based on the reporting window that you defined for this data view and a 13-month lookback window. This reporting lets you determine, for example:
 
-* What percentage of your orders are coming from new sessions?
+* What percentage of your orders are coming from new or return sessions?
 
-* For a given marketing channel, or a specific campaign, are you targeting first-time users? How does this choice influence conversion rates?
+* For a given marketing channel, or a specific campaign, are you targeting first-time users or return users? How does this choice influence conversion rates?
 
-One metric facilitates this reporting: 
+One dimension and two metrics facilitates this reporting: 
 
-<!--* 1 dimension: [Session type](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - This dimension has two values: 1) [!UICONTROL New] and 2) [!UICONTROL Returning]. The [!UICONTROL New] line item includes all of the behavior (i.e. metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they fall into the 'Not applicable' bucket for this dimension.-->
+* [Session type](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - This dimension has two values: 1) [!UICONTROL New] and 2) [!UICONTROL Returning]. The [!UICONTROL New] line item includes all of the behavior (i.e. metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they fall into the 'Not applicable' bucket for this dimension.
 
-* [New sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). A new session is defined as a person's defined first session within the reporting window. 
+* [New sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). The new sessions metric is defined as a person's defined first session within the reporting window. 
 
-   <!--* [Return sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Return sessions is the number of sessions that were not a person's first-ever session.-->
+* [Return sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) The return sessions metric is the number of sessions that were not a person's first-ever session.-->
 
-To access this component:
+To access these component:
 
 1. Go into the data view editor.
 1. Click the **[!UICONTROL Components]** > **[!UICONTROL Optional Standard components]** tab in left rail.
