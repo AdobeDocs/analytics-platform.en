@@ -36,7 +36,7 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 
 | Notice | Notice added or Updated | Description |
 | --- | --- | --- |
-| **Improved IP-to-geolocation mapping** | September 9, 2022 | Adobe's vendor for IP lookups, Digital Element, is upgrading to a new improved dataset (NetAcuity Pulse) for IP-to-geolocation mapping. Adobe Analytics will adopt this new dataset on **October 5, 2022**. The new database will be more accurate than previous versions. Some IP-to-geo mappings will change/improve when the new database is adopted.<p> CJA data provided through the [!UICONTROL Analytics Source Connector] will also automatically take advantage of the new mappings. |
+| **Improved IP-to-geolocation mapping** | September 29, 2022 | Adobe's vendor for IP lookups, Digital Element, is upgrading to a new improved dataset (NetAcuity Pulse) for IP-to-geolocation mapping. Adobe Analytics will adopt this new dataset in **January of 2023**. The new database will be more accurate than previous versions. Some IP-to-geo mappings will change/improve when the new database is adopted.<p> CJA data provided through the [!UICONTROL Analytics Source Connector] will also automatically take advantage of the new mappings. |
 
 {style="table-layout:auto"}
 
