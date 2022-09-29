@@ -36,8 +36,9 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 
 | Notice | Notice added or Updated | Description |
 | --- | --- | --- |
+| **Default landing page** | September 29, 2023 | The [new landing page](/help/getting-started/landing.md) that was introduced earlier this year will become the default experience for all users in **January 2023**. The current page will be deprecated and everyone will be required to use the new experience. |
 | **Improved IP-to-geolocation mapping** | September 29, 2022 | Adobe's vendor for IP lookups, Digital Element, is upgrading to a new improved dataset (NetAcuity Pulse) for IP-to-geolocation mapping. Adobe Analytics has postponed the adoption of this new dataset to **January of 2023**. The new database will be more accurate than previous versions. Some IP-to-geo mappings will change/improve when the new database is adopted.<p> CJA data provided through the [!UICONTROL Analytics Source Connector] will also automatically take advantage of the new mappings. |
-| Anomaly detection auto-run conditions | Today, Anomaly detection auto-runs on all columns of time-series freeform tables. To ensure data is available for analysis and projects load faster, Adobe will change how Anomaly detection auto-runs. Starting **October 26, 2022**, Anomaly detection will auto-run only on the first metric column in a table. You can configure column settings to run anomaly detection on other columns, if needed. |
+| **[!UICONTROL Anomaly detection] auto-run conditions** | September 29, 2022 | Today, [!UICONTROL Anomaly detection] auto-runs on all columns of time-series freeform tables. To ensure data is available for analysis and projects load faster, Adobe will change how [!UICONTROL Anomaly detection] auto-runs. Starting **October 26, 2022**, Anomaly detection will auto-run only on the first metric column in a table. You can configure column settings to run [!UICONTROL Anomaly detection] on other columns, if needed. |
 
 {style="table-layout:auto"}
 
