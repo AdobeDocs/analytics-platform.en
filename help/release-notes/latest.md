@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Customer Journey Analytics (CJA) release notes (October 2022)
 
-**Last update**: September 28, 2022
+**Last update**: September 29, 2022
 
 Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -24,6 +24,7 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 
 | Feature | Description | [Targeted Date](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
+| **Experimentation Panel** | This new Workspace panel allows CJA users to evaluate the lift and confidence of any A/B experiment from any source - online, offline, from Adobe solutions, Adobe Journey Optimizer, and even BYO data. [Learn more](/help/analysis-workspace/c-panels/experimentation.md) | October 5, 2022 |
 | **[!UICONTROL Key metric summary] visualization** |  The [!UICONTROL Key metric summary] visualization lets you see how an important metrics is trending within a single timeframe. It also lets you compare metric performance across two timeframes. Learn more  | Phased rollout starting October 5, 2022 |
 | **Date field support in CJA** | Allows CJA to report on date and date-time fields. [Learn more](/help/data-views/data-views-usecases.md#date) | October 5, 2022 |
 | **Mobile app: Custom detail views**| Custom detail views allow you to be even more targeted about what information you share with your audience, by letting them focus on what's most important. You can alter the layout of the detail view associated with each scorecard tile and you can add text to better explain what the end user may see in the data. (Documentation link to follow)| October 5, 2022 |  
