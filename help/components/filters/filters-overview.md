@@ -3,6 +3,7 @@ title: Filters Overview
 description: Understand what filters are used for and how to create a simple filter.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 ---
+
 # Filters overview {#overview}
 
 Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of visitors based on characteristics or website interactions. Filters are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
@@ -12,6 +13,8 @@ Filters can be based on attributes (browser type, device, number of visits, coun
 You can build and save filters in the Filter Builder, or generate filters from a Fallout visualization (in Workspace). In addition, filters can be used together as stacked filters. 
 
 Filtering includes the [Filter Builder](/help/components/filters/create-filters.md) to construct filters and run a pre-test, and the [Filter Manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
+
+The maximum number of filters you can create per IMS organization is 50,000.
 
 ## Filter types {#types}
 
