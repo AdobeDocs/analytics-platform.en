@@ -35,6 +35,8 @@ You can create the following metrics in a data view to achieve approximate parit
 | Messages successfully sent | The number of messages successfully sent | Use the schema string element `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` with the following settings:<br>Component type: Metric<br>Include exclude values: Equals `sent` |
 | Sync failures | The total number of messages that failed to sync | Use the schema string element `_experience.customerJourneyManagement.messageDeliveryfeedback.messageFailure.category` with the following settings:<br>Component type: Metric<br>Include exclude values: Equals `sync` |
 
+{style="table-layout:auto"}
+
 ## Configure Calculated metrics using Journey Optimizer metrics
 
 Once you have configured the desired dimensions and metrics for the Journey Optimizer dataset, you can also configure [Calculated metrics](/help/components/calc-metrics/calc-metr-overview.md) for additional insights around that data. These calculated metrics are based on the above metrics created in the Data View Manager.
@@ -42,6 +44,8 @@ Once you have configured the desired dimensions and metrics for the Journey Opti
 | Calculated metric | Description | Formula |
 | --- | --- | --- |
 | Total messages sent | The total number of messages sent, successful or failed | `[Messages successfully sent]` + `[Bounces]` + `[Sync failures]` |
+
+{style="table-layout:auto"}
 
 ## Differences in reporting between Journey Optimizer and Customer Journey Analytics
 
