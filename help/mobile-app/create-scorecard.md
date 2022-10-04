@@ -49,7 +49,7 @@ You can access the [!UICONTROL Blank Mobile Scorecard] template either by creati
 
 To implement the Scorecard template:
 
-1. Under **[!UICONTROL Properties]** (in the right-hand rail), specify a **[!UICONTROL Project report suite]** from which you want to use data.
+1. Under **[!UICONTROL Properties]** (in the right-hand rail), specify a **[!UICONTROL Project report suite]** from which you want to use data. Report suites are data views in CJA.
 
     ![Report suite selection](assets/properties_save.png)
 
@@ -62,19 +62,19 @@ To implement the Scorecard template:
 
 ## Add dimensions or metrics (#dimsmetrics)
 
-To add a related dimension to a metric, drag a dimension from the left panel and drop it onto a tile. 
+To add a related dimension to a metric, drag a dimension from the left panel and drop it onto a tile.
 
 For example, you can add appropriate dimensions (like **[!DNL Marketing Channel]**, in this example) to the **[!UICONTROL Unique Visitors]** metric by dragging and dropping it onto the tile. Dimensions breakdowns appear under the [!UICONTROL Drill Ins] (breakdown) section of the tile-specific **[!UICONTROL Properties]**. You can add multiple dimensions to each tile.
 
 ![Add dimensions](assets/layer_dimensions.png)
 
-## Apply segments {#segments}
+## Apply filters {#filters}
 
-To apply segments to individual tiles, drag a segment from the left panel and drop it directly on top of the tile. 
+To apply filters to individual tiles, drag a filter (segments are filters in CJA) from the left panel and drop it directly on top of the tile.
 
-If you want to apply the segment to all the tiles in the Scorecard, drop the tile on top of the scorecard. Or, you can also apply segments by selecting segments in the filter menu beneath the date ranges. You [configure and apply filters for your Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) the same way you would in Adobe Analytics Workspace.
+If you want to apply the filter to all the tiles in the Scorecard, drop the tile on top of the scorecard. Or, you can also apply filters by selecting filters in the filter menu beneath the date ranges. You [configure and apply filters for your Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) the same way you would in Adobe Analytics Workspace.
 
-![Build segments for filter](assets/segment_ui.png)
+![Build filters](assets/segment_ui.png)
 
 ## Add date ranges {#dates}
 
@@ -98,7 +98,7 @@ If the date range you want hasn’t been created yet, you can create a new one b
 
 ![New score card5](assets/new_score_card5.png)
 
-This will take you to the date range builder where you can create and save a new date range component. 
+This will take you to the date range builder where you can create and save a new date range component.
 
 ## Apply visualizations {#viz}
 
@@ -112,13 +112,13 @@ Or, click the [!UICONTROL Visualizations] icon in the left rail and drag and dro
 
 ### [!UICONTROL Summary Number]
 
-Use the Summary Number visualization to highlight a large number that is important in a project. 
+Use the Summary Number visualization to highlight a large number that is important in a project.
 
 ![Summary number](assets/summary-number.png)
 
 ### [!UICONTROL Donut]
 
-Similar to a pie chart, this visualization shows data as parts or segments of a whole. Use a donut graph when comparing percentages of a total. For example, let's say you want to see which ad platform contributed to the total number of unique visitors:
+Similar to a pie chart, this visualization shows data as parts of a whole. Use a donut graph when comparing percentages of a total. For example, let's say you want to see which ad platform contributed to the total number of unique visitors:
 
 ![Donut visualization](assets/donut-viz.png)
 
@@ -147,15 +147,15 @@ If you want to remove [!UICONTROL Unspecified] dimension items from your data, d
 
 ## View and configure tile properties {#tiles}
 
-When you click a tile in the Scorecard Builder, the right-hand rail displays the properties and characteristics associated with that tile. In this rail, you can provide a new **[!UICONTROL Title]** for the tile and alternatively configure the tile by specifying components instead of dragging and dropping them from the left-hand rail.
+When you click a tile in the Scorecard Builder, the right-hand rail displays the properties and characteristics associated with that tile and its detail slide. In this rail, you can provide a new **Title** for the tile and alternatively configure the tile by applying segments.
 
-![Properties tile](assets/properties_tile.png)
+![Properties tile](assets/properties-tile-new.png)
 
-## View Drill ins (breakdowns) {#breakdowns}
+## View detail slides {#view-detail-slides}
 
-When you click on tiles, a dynamic pop up displays how the Drill ins (Breakdown) view appears to the executive user in the app. You can break down dimensions and dimension items to break down your data for your specific needs. If no dimension has been applied to the tile, the breakdown dimension will be **hour** or **days**, depending on the default date range.
+When you click on tiles, a dynamic pop-up window displays how the detail slide appears to the executive user in the app. You can add dimensions to break down your data for your specific needs. If no dimension has been applied, the breakdown dimension will be **hour** or **days**, depending on the default date range.
 
-Breakdowns refine your analysis by literally breaking down dimensions by other metrics and dimensions, such as in this retail example:
+Breakdowns refine your analysis by literally breaking down metrics by dimension items such as the following:
 
 * Unique Visitors metric broken down by Ad Platform (AMO ID)
 * Visits broken down by Product Category (Retail)
@@ -165,15 +165,39 @@ Breakdowns refine your analysis by literally breaking down dimensions by other m
 
 Each dimension added to the tile will show up in a drop-down list in the detailed view of the app. The executive user can then choose among the options listed in the drop-down list.
 
+## Customize detail slides {#customize-detail-slide}
+
+Custom detail slides allow you to be even more targeted about what information you share with your audience. You can modify the layout for each detail slide and add text to better explain what the end user may see in the data. You can also change the chart type using the drop-down menu.
+
+![Custom detail slide](assets/custom-detail-slide.png)
+
+### Change the slide layout
+
+Change the slide layout to focus on the most important information. For example, you can change the layout to show just a chart or just a table. To change the slide layout, select one of the pre-designed formats.
+
+![Slide layout](assets/layout.png)
+
+You can also change the slide layout by dragging and dropping visualization components from the left-hand rail onto the canvas. Each detail slide may only accommodate two visualizations at a time.
+
+![Slide layout change](assets/slide-layout-change.png)
+
+### Add descriptive text to a slide
+
+You can add text to provide meaningful information about what is contained in the charts or nuances about the data.
+
+To add text to a detail slide, select a layout that shows the T symbol, or drag and drop the Text visualization component over from the left rail. The text editor will automatically open when adding a new text visualization or choosing a slide layout with text. The Text editor provides all standard options for formatting your text. You can apply text styles such as paragraph, headings, and subheadings, and apply bold and italicized font. You can justify text, add bulleted and numbered lists, and add links. When you're finished editing, select the minimize button in the upper-right corner of the text editor to close it. To edit text you already added, select the pencil icon to open the text editor again.
+
+![Slide layout change](assets/add-descriptive-text.png)
+
 ## Remove components {#remove}
 
-Similarly, to remove a component that is applied to the entire Scorecard, click anywhere on the Scorecard outside of the tiles and then remove it by clicking the **x** that appears when you hover over the component, as shown below for the **First Time Visits** segment:
+Similarly, to remove a component that is applied to the entire Scorecard, click anywhere on the Scorecard outside of the tiles and then remove it by clicking the **x** that appears when you hover over the component, as shown below for the **First Time Visits**:
 
 ![Remove_components](assets/new_remove.png)
 
 ## Preview scorecard {#preview}
 
-You can preview how the scorecard will look and function once it is published in the Analytics dashboards app. 
+You can preview how the scorecard will look and function once it is published in the Analytics dashboards app.
 
 1. Click **[!UICONTROL Preview]** in the upper right hand corner of the screen.
 
@@ -186,9 +210,9 @@ You can preview how the scorecard will look and function once it is published in
 1. To interact with the preview, you can:
 
     * Left click to simulate tapping on the phone screen.
-    
+
     * Use your computer's scroll function to simulate scrolling the phone screen with your finger.
-    
+
     * Click and hold to simulate pressing and holding your finger on the phone screen. This is useful for interacting with the visualizations in the detailed view.
 
 ## Name a scorecard {#name}
