@@ -6,10 +6,6 @@ exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 ---
 # Experimentation panel
 
->[!NOTE]
->
->This functionality is currently in [limited testing](/help/release-notes/releases.md).
-
 The **[!UICONTROL Experimentation]** panel lets analysts compare different user experience, marketing, or messaging variations to determine which is best at driving a specific outcome. You can evaluate the lift and confidence of any A/B experiment from any experimentation platform - online, offline, from Adobe solutions, Adobe Journey Optimizer, and even BYO (bring-your-own) data.
 
 >[!IMPORTANT]
