@@ -109,7 +109,11 @@ To access this component:
 
 * When a session spans both the lookback window and the reporting window. Let's say you run a report from June 1 to June 15, 2022. The lookback window would encompass May 1, 2021 to May 31, 2022. If a session were to start on May 30, 2022 and end on June 1, 2022, because the session is included in the lookback window, all sessions in the reporting window get counted as return sessions. 
 
+<<<<<<< Updated upstream
 <!--## Use the Date and Date-Time functionality {#date}
+=======
+## 8. Use the Date and Date-Time functionality {#date}
+>>>>>>> Stashed changes
 
 Schemas in Adobe Experience Platform contain [!UICONTROL Date] and [!UICONTROL Date-Time] fields. CJA data views now support these fields. When you drag these fields into a data view as a dimension, you can specify their [format](/help/data-views/component-settings/format.md). This format setting determines how the fields are displayed in reporting. For example:
 

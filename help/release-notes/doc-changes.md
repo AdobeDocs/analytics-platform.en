@@ -13,6 +13,9 @@ The following updates were made to the CJA documentation since its inception.
 
 | Date | Update description |
 | --- | --- |
+| October 2022 | New topic on [Key metric summary](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=en) visualization. |
+| October 2022 | New section on [date and date-time functionality in data views](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#date) |
+| October 2022 | Mobile app: New topic on [custom detail views](https://experienceleague.corp.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en#view-detail-slides). |
 | September 2022 | New use case on [Migrating Google Analytics data to CJA](/help/use-cases/ga/overview.md). |
 | September 2022 | New topic on [Combo charts](/help/analysis-workspace/visualizations/combo-charts.md) in Workspace. |
 | September 2022 | New topic on [Experimentation panel](/help/analysis-workspace/c-panels/experimentation.md) in Workspace. |
