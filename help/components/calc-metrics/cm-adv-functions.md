@@ -157,6 +157,23 @@ CEILING(metric)
 |---|---|
 |  *metric* | The metric that you want to round.  |
 
+## Confidence
+
+[!UICONTROL Confidence] is a probabilistic measure of how much evidence there is that a given variant is the same as the control variant. A higher confidence indicates less evidence for the assumption that control and non-control variant have equal performance. 
+
+```
+fx Confidence (normalizing-container, success-metric, control, significance-threshold)
+```
+
+| Argument | Description |
+| --- | --- |
+| Normalizing Container | The basis (People, Sessions, or Events) on which a test will be run. |
+| Success Metric | The metric or metrics that a user is comparing variants with. |
+| Control | The variant that all other variants in the experiment are being compared with. Enter the name of the control variant dimension item. |
+| Significance-threshold | The threshold in this function is set to a default of 95%. |
+
+{style="table-layout:auto"}
+
 ## Cosine (Row)
 
 Returns the cosine of the given angle. If the angle is in degrees, multiply the angle by PI( )/180.
@@ -330,6 +347,22 @@ Returns items whose numeric count is less than the value entered.
 ## Less Than or Equal
 
 Returns items whose numeric count is less than or equal to the value entered.
+
+## Lift
+
+Returns the Lift a particular variant had in conversions over a control variant. It is the difference in performance between a given variant and the baseline, divided by the performance of the baseline, expressed as a percentage. 
+
+```
+fx Lift (normalizing-container, success-metric, control)
+```
+
+| Argument | Description |
+| --- | --- |
+| Normalizing Container | The basis (People, Sessions, or Events) on which a test will be run. |
+| Success Metric | The metric or metrics that a user is comparing variants with. |
+| Control | The variant that all other variants in the experiment are being compared with. Enter the name of the control variant dimension item. |
+
+{style="table-layout:auto"}
 
 ## Linear regression_ Correlation Coefficient
 
