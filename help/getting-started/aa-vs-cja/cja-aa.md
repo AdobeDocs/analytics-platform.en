@@ -28,6 +28,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Device, Browser, Referrer, Technology dimensions | These dimensions are automatically included when an AEP dataset includes specific XDM schema fields and conforms to the XDM Experience Event class. Please refer to our [documentation on which Analytics variables are supported via ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en).<p>If you don't use Adobe Source Connector to populate data from Adobe Analytics into CJA, but instead use Experience Platform Web SDK data collection, Device and dimensions based on the Device lookup are not currently supported. They will be supported in the near future. |
 | Dimensions | Full Support; CJA leverages XDM and supports unlimited dimensions. CJA is not tied to the custom eVars or props of traditional Adobe Analytics. |
 | GDPR Deletion | Full Support; note that GDPR is now handled in coordination with [!UICONTROL Adobe Experience Platform]. CJA inherits whatever data changes [!UICONTROL Experience Platform] makes to underlying datasets. |
+| Lift and Confidence Reporting | Full Support via [Experimentation panel](/help/analysis-workspace/c-panels/experimentation.md) |
 | List Variables/List Props | Full Support; CJA leverages XDM and supports unlimited string arrays which can be used similarly to listVars. |
 | Merchandising variable persistence | Full Support via [binding dimensions and binding metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | Merchandising eVars | Full Support via [binding dimensions and binding metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
@@ -54,7 +55,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 
 | Feature | Notes |
 | --- | --- |
-| A4T | Support is provided through fields in the [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). |
+| A4T | Support is provided through fields in the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). |
 | Classifications | Now called "Lookup Datasets". Classifications used in Analytics can be imported to the Experience Platform and CJA using the Analytics Classifications Source Connector. Lookup datasets can also be uploaded to AEP directly and made available in CJA. |
 | Custom Sessionization | Support for all custom sessionization features except mobile background hits. |
 | Customer Attributes | Now called "Profile Datasets", they do not get automatically imported from Experience Cloud, but will have to be uploaded to AEP before they are available in CJA. |
@@ -64,7 +65,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | GeoSegmentation dimensions | All GeoSegmentation/geography collected into Adobe Analytics flows into CJA through the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Implementations that do not use the Analytics Source Connector, such as those that rely on AEP Web SDK for digital data collection, will not have the full slate of geographical lookups performed automatically: Country and state are supported globally, city and zip are not.|
 | IP Obfuscation | For CJA customers using the Analytics Source Connector to populate data from Adobe Analytics into CJA: IP obfuscation settings applied in Adobe Analytics flow through to your CJA data. You can control these settings in Adobe Analytics as needed.<p>For CJA customers using Adobe Experience Platform Web SDK to populate data into Platform and CJA directly: You can use Data Prep for Data Collection in Platform to configure rules that will obfuscate the IP address based on your company's requirements. |
 | Marketing Channels | Marketing Channels data flows into CJA through the Analytics Source Connector. Marketing Channel rules must still be configured in traditional Adobe Analytics. Some rules are not supported. For more details, please see [CJA Marketing Channels documentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html#cja-usecases). |
-| New vs. Repeat Session Reporting | Supported on August 17, 2022, [with a 13-month lookback window](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat). |
+| New vs. Repeat Session Reporting | Supported [with a 13-month lookback window](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat). |
 | Product Variable | Within the Experience Platform, users can use array of Object type fields within a dataset schema to satisfy this use case. Within CJA, customers have the ability to use any number of product variables and are not restricted to a single variable as in Adobe Analytics. |
 | Project Sharing | Project sharing is only supported between users of CJA - there is not project sharing between CJA and the traditional Analysis Workspace. |
 | Visualizations | All visualizations are supported except for the Map visualization. |
@@ -89,7 +90,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Contribution Analysis | Support is planned. |
 | Data Warehouse Reporting (100% row export) | Support is planned from the Analysis Workspace interface. Adobe Experience Platform [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) also provides an interface for these use cases in CJA. |
 | ID Stitching via Device Graph | Support is planned. |
-| Lift and Confidence Reporting | Support is planned. |
 | Processing Rules, VISTA Rules, Marketing Channels Processing Rules | Support planned, but will work at query-time rather than during data collection for more flexible and retroactive and non-destructive data manipulations. |
 | Project Templates | Support is planned. |
 | Real-Time Reporting | Support is planned. |
