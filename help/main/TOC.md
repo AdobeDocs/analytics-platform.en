@@ -226,6 +226,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Adobe integrations {#integrations}
   + [Integrate Adobe solutions with CJA overview](/help/integrations/overview.md)
   + [Integrate Journey Optimizer data with CJA](/help/integrations/ajo.md)
+  + [Integrate Customer AI data with CJA](/help/integrations/customer-ai.md)
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](../use-cases/cja-usecases.md)
   + Google Analytics data {#ga}
