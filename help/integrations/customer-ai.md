@@ -1,6 +1,6 @@
 ---
-description: Find out how AEP Customer AI integrates with Workspace in CJA.
-title: Integrate Customer AI with CJA
+description: Find out how AEP Customer AI data integrates with Workspace in CJA.
+title: Integrate Customer AI data with CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
@@ -25,15 +25,13 @@ Customer AI integrates with Customer Journey Analytics (CJA) to the extent that 
 * **Look at the distribution of propensity**. Use case: I'd like to understand the distribution of the propensity scores to I can be more precise with my segments. ​Example: a retailer wants to run a specific promotion for $50 off a product. They may want to run only a very limited promotion due to budget, etc. They analyze the data and decide to target only the top 80%+​ of their customers.
 * **Look at the propensity to accomplish an action for a particular cohort over time**. Use case: I'd like to track a specific cohort over time. This is similar to the first one, but you can track a specific cohort over time.​ Hospitality example: A marketer can track their bronze tier versus their silver tier, or silver tier versus their gold tier over time. Then they can see each cohort's propensity for booking the hotel over time. ​
 
-## Workflow
-
 Some of the steps are performed in Adobe Experience Platform prior to working with the output in CJA.
 
-### Step 1: Configure a Customer AI instance
+## Step 1: Configure a Customer AI instance
 
 Once you have prepared your data and have all your credentials and schemas in place, start by following the [Configure a Customer AI Instance](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en) guide in Adobe Experience Platform. 
 
-### Step 2: Set up a CJA connection to Customer AI datasets
+## Step 2: Set up a CJA connection to Customer AI datasets
 
 In CJA, you can now [create one or more connections](/help/connections/create-connection.md) to Experience Platform datasets that have been instrumented for Customer AI. Each prediction, such as "Likelihood to upgrade account", equates to one dataset. These datasets appears with the "Customer AI Scores in EE Format – name_of_application" prefix.
 
@@ -51,13 +49,13 @@ Here is an example of an XDM schema that CJA would bring in as part of an existi
 
 (Note that the example is a profile dataset; the same set of schema object would be part of an Experience Event dataset that CJA would grab. The Experience Event dataset would include timestamps as the score date.) Every customer scored in this model would have a score, a scoreDate, etc. associated with them.
 
-### Step 3: Create data views based on these connections
+## Step 3: Create data views based on these connections
 
 In CJA, you can now proceed to [create data views](/help/data-views/create-dataview.md) with the dimensions (such as score, score date, probability, and so on) and metrics that were brought in as part of the connection you established. 
 
 ![Create dataview](assets/create-dataview.png)
 
-### Step 4: Report on CAI scores in Workspace
+## Step 4: Report on CAI scores in Workspace
 
 In CJA Workspace, create a new project and pull in visualizations. 
 
