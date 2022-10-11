@@ -40,7 +40,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | VRS Component Curation | Full Support; Now part of Data Views. |
 | Streaming Media Analytics | Media data are available using the Analytics Data Connector as part of the Media Concurrent Viewers panel and the Media Playback Time Spent panel in Workspace. |
 
-
 {style="table-layout:auto"}
 
 ## Supported in a new way
