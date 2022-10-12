@@ -226,8 +226,6 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Adobe integrations {#integrations}
   + [Integrate Adobe solutions with CJA overview](/help/integrations/overview.md)
   + [Integrate Journey Optimizer data with CJA](/help/integrations/ajo.md)
-+ Tools {#tools}
-  + [Audit logs](tools/audit-log.md)
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](../use-cases/cja-usecases.md)
   + Google Analytics data {#ga}
@@ -249,6 +247,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Labs User Guide](../labs/labs.md)
 + Troubleshooting {#troubleshooting}
   + [Compare your Adobe Analytics data to CJA data](../troubleshooting/compare.md)
-+ Privacy {#cja-privacy}
++ Data Governance {#cja-privacy}
+  + [Audit logs](../privacy/audit-log.md)
   + [Data Governance](../privacy/privacy-overview.md)
 + [CJA API](https://developer.adobe.com/cja-apis/docs/)
