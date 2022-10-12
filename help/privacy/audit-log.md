@@ -17,22 +17,22 @@ The following table outlines which actions on which component types are recorded
 
 | Component Type | Actions |
 | --- | --- |
-| Annotation |<ul><li>Create</li><li>Delete</li><li>Edit</li></ul>|
-| Audience | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li><li>Export</li><li>Refresh</li></ul> |
-| Calculated Metric | <ul><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Share</li><li>Unapprove</li><li>Unshare</li></ul> |
+| Annotation |<ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul>|
+| Audience | <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Export</li><li>Refresh</li></ul> |
+| Calculated Metric | <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Share</li><li>Unapprove</li><li>Unshare</li></ul> |
 | Connection | <ul><li>Delete</li><li>Edit</li></ul> |
 | Data Group | No actions were listed - Is a data group the same as a dataset? |
-| Data View | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul> |
-| Date Range | <ul><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Share</li><li>Unapprove</li><li>Unshare</li></ul>  |
-| Feature Access | No actions were listed - also how do you define feature access?  |
+| Data View | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li><li>Export</li></ul> |
+| Date Range | <ul><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Login failed</li><li>Share</li><li>Unapprove</li><li>Unshare</li></ul>  |
+| Feature Access | <ul><li>Login_successful</li></ul> How do you define feature access?  |
 | Filter | <ul><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Share</li><li>Unapprove</li><li>Unshare</li></ul>  |
-| IMS Org | <ul><li>Delete</li><li>Edit</li></ul> |
-| Mobile | No actions were listed - also how do you define Mobile? |
+| IMS Org | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul> |
+| Mobile | <ul><li>Refresh</li></ul> How do you define Mobile? |
 | Project | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li><li>Share</li><li>Unshare</li></ul> |
-| Report | <ul><li>API_Request</li></ul> |
-| Scheduled Project | <ul><li>Create</li><li>Delete</li><li>Edit</li></ul> |
-| User | <ul><li>Delete</li><li>Edit</li></ul> |
-| User Group | <ul><li>Create</li><li>Delete</li><li>Edit</li></ul> |
+| Report | <ul><li>API_Request</li><li>Transfer</li></ul> |
+| Scheduled Project | <ul><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Unapprove</li></ul> |
+| User | <ul><li>Delete</li><li>Edit</li><li>Share</li><li>Unshare</li></ul> |
+| User Group | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -48,7 +48,7 @@ In CJA, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Audit Logs]**.
 
 ### Filter audit logs
 
-Select the funnel icon () to display a list of filter controls to help narrow results. Only the last 1,000 records are displayed, irrespective of the various filters selected.
+Select the funnel icon (![filter](assets/filter-icon.png)) to display a list of filter controls to help narrow results. Only the last 1,000 records are displayed, irrespective of the various filters selected.
 
 ![filters](assets/filters.png)
 
@@ -57,11 +57,11 @@ The following filters are available for audit events in the UI:
 | Filter | Description |
 | --- | --- |
 | Date Range |  |
-| Action |  |
-| User ID |  |
-| Email |  |
+| Action | You can filter on the following actions:  |
+| User ID | Filter on a specific user by their user ID. |
+| Email | Filter on a specific email address. |
 | Component ID |  |
-| Component Type |  |
+| Component Type | Filter on one or more component types: <ul> |
 
 {style="table-layout:auto"}
 
