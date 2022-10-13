@@ -75,4 +75,4 @@ You can download audit logs in CSV or JSON formats. Any filters applied or colum
 
 ## Manage audit logs in the API
 
-To follow
+All actions that you can perform in the UI can also be done using API calls. See the [CJA API reference document](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) for more information.
