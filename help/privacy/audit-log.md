@@ -57,11 +57,22 @@ The following filters are available for audit events in the UI:
 | Filter | Description |
 | --- | --- |
 | Date Range |  |
-| Action | You can filter on the following actions:  |
+| Action | You can filter on the following actions: <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Edit</li><li>Export</li><li>Login_failed</li><li>Login_successful</li><li>Logout</li><li>Org_change</li><li>Refresh</li><li>Share</li><li>Transfer</li><li>Unapprove</li><li>Unshare</li></ul> |
 | User ID | Filter on a specific user by their user ID. |
 | Email | Filter on a specific email address. |
-| Component ID |  |
-| Component Type | Filter on one or more component types: <ul> |
+| Component ID | Filter on a specific Component ID. [**I don't see the component ID listed as a column.**] |
+| Component Type | Filter on one or more component type/s: <ul><li>Annotation</li><li>Audience</li><li>Calculated Metric</li><li>Connection</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobile</li><li>Project</li><li>Report</li><li>Scheduled_Project</li><li>User</li><li>User_Group</li></ul> |
 
 {style="table-layout:auto"}
 
+## Download audit logs
+
+You can download audit logs in CSV or JSON formats. Any filters applied or columns selected are reflected in the downloaded files.
+
+1. Click **[!UICONTROL Download]** at the top right of the screen.
+1. Specify the format. 
+1. Click **[!UICONTROL Download]** again.
+
+## Manage audit logs in the API
+
+To follow
