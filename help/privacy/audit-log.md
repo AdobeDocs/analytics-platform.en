@@ -11,40 +11,43 @@ In a basic sense, an audit log tells **who** performed **what** action, and **wh
 
 This topic covers audit logs in CJA, including how to view and manage them in the UI.
 
-## Event types captured by audit logs
-
-The following table outlines which actions on which component types are recorded by audit logs:
-
-| Component Type | Actions |
-| --- | --- |
-| Annotation |<ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul>|
-| Audience | <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Export</li><li>Refresh</li></ul> |
-| Calculated Metric | <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Share</li><li>Unapprove</li><li>Unshare</li></ul> |
-| Connection | <ul><li>Delete</li><li>Edit</li></ul> |
-| Data Group | No actions were listed - Is a data group the same as a dataset? |
-| Data View | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li><li>Export</li></ul> |
-| Date Range | <ul><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Login failed</li><li>Share</li><li>Unapprove</li><li>Unshare</li></ul>  |
-| Feature Access | <ul><li>Login_successful</li></ul> How do you define feature access?  |
-| Filter | <ul><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Share</li><li>Unapprove</li><li>Unshare</li></ul>  |
-| IMS Org | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul> |
-| Mobile | <ul><li>Refresh</li></ul> How do you define Mobile? |
-| Project | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li><li>Share</li><li>Unshare</li></ul> |
-| Report | <ul><li>API_Request</li><li>Transfer</li></ul> |
-| Scheduled Project | <ul><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Unapprove</li></ul> |
-| User | <ul><li>Delete</li><li>Edit</li><li>Share</li><li>Unshare</li></ul> |
-| User Group | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul> |
-
-{style="table-layout:auto"}
-
 ## Access to audit logs
 
 When the feature is enabled for your organization, audit logs are automatically collected as activity occurs. You do not need to manually enable log collection.
 
-In order to view and export audit logs, you must have been granted the **[!UICONTROL View User Activity Log]** access control permission??? To learn how to manage individual permissions for CJA features, please refer to the [access control documentation](/help/getting-started/cja-access-control.md).
+In order to view and export audit logs, you must have been granted the **[!UICONTROL View User Activity Log]** access control permission??? in Adobe Console. To learn how to manage individual permissions for CJA features, please refer to the [access control documentation](/help/getting-started/cja-access-control.md).
 
-## Manage audit logs in the UI
+## View audit logs in the UI
 
 In CJA, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Audit Logs]**.
+
+The audit log for today and yesterday are shown by default.
+
+![audit log](assets/audit_ui.png)
+
+You can select which columns are visible by going to the column selector at the top right.
+
+## View information about individual log entries
+
+Double click the info (i) button next to a description.
+
+![audit log](assets/info-button-audit.png)
+
+The following items are shown:
+
+| Item | Description |
+| --- | --- |
+| Action Name |  |
+| Description |  |
+| User Name |  |
+| Component Type|  |
+| IMS Org ID |  |
+| User ID |  |
+| Date Created |  |
+| Email |  |
+| Component ID |  |
+| Log ID |  |
+| User Type |
 
 ### Filter audit logs
 
@@ -56,12 +59,37 @@ The following filters are available for audit events in the UI:
 
 | Filter | Description |
 | --- | --- |
-| Date Range |  |
-| Action | You can filter on the following actions: <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Edit</li><li>Export</li><li>Login_failed</li><li>Login_successful</li><li>Logout</li><li>Org_change</li><li>Refresh</li><li>Share</li><li>Transfer</li><li>Unapprove</li><li>Unshare</li></ul> |
-| User ID | Filter on a specific user by their user ID. |
-| Email | Filter on a specific email address. |
-| Component ID | Filter on a specific Component ID. [**I don't see the component ID listed as a column.**] |
-| Component Type | Filter on one or more component type/s: <ul><li>Annotation</li><li>Audience</li><li>Calculated Metric</li><li>Connection</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobile</li><li>Project</li><li>Report</li><li>Scheduled_Project</li><li>User</li><li>User_Group</li></ul> |
+| [!UICONTROL Date Range] | Filter on a different date range by selecting a different date or selecting a date range by dragging the cursor across multiple dates. By default, today's and yesterday's date are selected. |
+| [!UICONTROL Action] | Filter on one or more of the following actions: <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Edit</li><li>Export</li><li>Login_failed</li><li>Login_successful</li><li>Logout</li><li>Org_change</li><li>Refresh</li><li>Share</li><li>Transfer</li><li>Unapprove</li><li>Unshare</li></ul> |
+| [!UICONTROL User ID] | Filter on a specific user by their user ID. The user ID can be found by selecting the info (i) button next to a user name.|
+| [!UICONTROL Email] | Filter on a specific user's email address. The email can be found by selecting the info (i) button next to a user name.|
+| [!UICONTROL Component ID] | Filter on a specific Component ID. The user ID can be found by selecting the info (i) button for a desired component. |
+| [!UICONTROL Component Type] | Filter on one or more component type/s: <ul><li>Annotation</li><li>Audience</li><li>Calculated Metric</li><li>Connection</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobile</li><li>Project</li><li>Report</li><li>Scheduled_Project</li><li>User</li><li>User_Group</li></ul> |
+
+{style="table-layout:auto"}
+
+## Event types captured by audit logs
+
+The following table outlines which actions on which component types are recorded by audit logs:
+
+| Component Type | Actions |
+| --- | --- |
+| [!UICONTROL Annotation] |<ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul>|
+| [!UICONTROL Audience] | <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Export</li><li>Refresh</li></ul> |
+| [!UICONTROL Calculated Metric] | <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Share</li><li>Unapprove</li><li>Unshare</li></ul> |
+| [!UICONTROL Connection] | <ul><li>Delete</li><li>Edit</li></ul> |
+|[!UICONTROL  Data Group] | No actions were listed - Is a data group the same as a dataset? |
+| [!UICONTROL Data View] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li><li>Export</li></ul> |
+| [!UICONTROL Date Range] | <ul><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Login failed</li><li>Share</li><li>Unapprove</li><li>Unshare</li></ul>  |
+| [!UICONTROL Feature Access] | <ul><li>Login_successful</li></ul> How do you define feature access?  |
+| [!UICONTROL Filter] | <ul><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Share</li><li>Unapprove</li><li>Unshare</li></ul>  |
+| [!UICONTROL IMS Org] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul> |
+| [!UICONTROL Mobile] | <ul><li>Refresh</li></ul> How do you define Mobile? |
+| [!UICONTROL Project] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li><li>Share</li><li>Unshare</li></ul> |
+| [!UICONTROL Report] | <ul><li>API_Request</li><li>Transfer</li></ul> |
+| [!UICONTROL Scheduled Project] | <ul><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Unapprove</li></ul> |
+| [!UICONTROL User] | <ul><li>Delete</li><li>Edit</li><li>Share</li><li>Unshare</li></ul> |
+| [!UICONTROL User Group] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul> |
 
 {style="table-layout:auto"}
 
