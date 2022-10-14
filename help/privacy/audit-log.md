@@ -46,8 +46,8 @@ The following items are shown:
 | User Name | The user taking the action. |
 | Component Type | Possible component types include: <ul><li>Annotation</li><li>Audience</li><li>Calculated Metric</li><li>Connection</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobile</li><li>Project</li><li>Report</li><li>Scheduled_Project</li><li>User</li><li>User_Group</li></ul> |
 | IMS Org ID | A unique ID that is given to your instance when you first log in to Adobe Experience Cloud. It should be in the format: xxx@AdobeOrg. |
-| User ID |  |
-| Date Created |  |
+| User ID | A unique ID identifying the user who took this action. |
+| Date Created | When this action was taken. |
 | Email | The email of the user taking the action. |
 | Component ID | A unique ID that identifies the component being actioned upon. |
 | Log ID | A unique ID identifying this log entry. |
