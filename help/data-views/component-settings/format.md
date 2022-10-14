@@ -15,8 +15,8 @@ Format lets you determine how a given metric is displayed.
 | --- | --- |
 | **[!UICONTROL Format]** | Lets you specify the formatting of a metric as Decimal, Time, Percent, or Currency. |
 | **[!UICONTROL Decimal Places]** | Not visible on Integer schema data types. Lets you specify the number of decimal places a metric displays. |
-| **[!UICONTROL Date]** | Lets you determine how you want the date-time field displayed when used as a dimension in reporting. Learn more |
-| **[!UICONTROL Date-Time]** | Lets you determine how you want the date-time field displayed when used as a dimension in reporting. Learn more |
+| **[!UICONTROL Date]** | Lets you determine how you want the date-time field displayed when used as a dimension in reporting. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#date) |
+| **[!UICONTROL Date-Time]** | Lets you determine how you want the date-time field displayed when used as a dimension in reporting. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#date) |
 | **[!UICONTROL Currency]** | If the format is Currency, determines which currency you want the metric to display in. This option does not apply any currency conversion; it is just for UI formatting. |
 | **[!UICONTROL Show upward trend as]** | Lets you specify if an upward trend on this metric is good (green) or bad (red). |
 | **[!UICONTROL True value]** and **[!UICONTROL False value]** | Only visible on Boolean schema data types. Lets you customize the dimension item label for `true` and `false` values. |
