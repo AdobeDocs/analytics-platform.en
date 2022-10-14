@@ -5,6 +5,10 @@ description: Learn how to view and manage CJA audit logs.
 
 # Audit logs
 
+>[!NOTE]
+>
+>This functionality is currently in [limited testing](/help/release-notes/releases.md).
+
 To increase the transparency and visibility of activities performed in the system, Customer Journey Analytics (CJA) allows you to audit user activity for various services and capabilities in the form of "audit logs". These logs form an audit trail that can help with troubleshooting issues, and help your business effectively comply with corporate data stewardship policies and regulatory requirements, such as the Health Insurance Portability and Accountability Act (HIPAA).
 
 In a basic sense, an audit log tells **who** performed **what** action, and **when**. Each action recorded in a log contains metadata that indicates the action type, date and time, the email ID of the user who performed the action, and additional attributes relevant to the action type.
@@ -37,17 +41,17 @@ The following items are shown:
 
 | Item | Description |
 | --- | --- |
-| Action Name |  |
-| Description |  |
-| User Name |  |
-| Component Type|  |
-| IMS Org ID |  |
+| Action Name | Here is the list of possible actions: <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Edit</li><li>Export</li><li>Login_failed</li><li>Login_successful</li><li>Logout</li><li>Org_change</li><li>Refresh</li><li>Share</li><li>Transfer</li><li>Unapprove</li><li>Unshare</li></ul> |
+| Description | A summary of the action, component type (with ID) and other values. |
+| User Name | The user taking the action. |
+| Component Type | Possible component types include: <ul><li>Annotation</li><li>Audience</li><li>Calculated Metric</li><li>Connection</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobile</li><li>Project</li><li>Report</li><li>Scheduled_Project</li><li>User</li><li>User_Group</li></ul> |
+| IMS Org ID | A unique ID that is given to your instance when you first log in to Adobe Experience Cloud. It should be in the format: xxx@AdobeOrg. |
 | User ID |  |
 | Date Created |  |
-| Email |  |
-| Component ID |  |
-| Log ID |  |
-| User Type |
+| Email | The email of the user taking the action. |
+| Component ID | A unique ID that identifies the component being actioned upon. |
+| Log ID | A unique ID identifying this log entry. |
+| User Type | Possible types include: IMS, what else? |
 
 ### Filter audit logs
 
