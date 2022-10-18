@@ -9,6 +9,10 @@ feature: CJA Workspace Basics
 
 Folders in Workspace Projects is a folder management system located on the Workspace landing page.
 
+>[!NOTE]
+>
+>This feature is currently in limited release. Some screens may change.
+
 Folders in Workspace Projects helps users organize and categorize their projects for better retrieval and access. In addition, a shared Company Folder allows Admins to easily create and share content with all Workspace users. 
 
 When you have a long list of projects, navigating to a specific project has its challenges. With the folders feature, you can create folders and sub-folders to manage your projects, making it easier to find projects when you need them. 
@@ -20,8 +24,6 @@ When you log in to Workspace, the landing page displays projects you own or proj
 ![](/help/analysis-workspace/build-workspace-project/assets/landing-page.png)
 
 ## About the Company folder
-
-The Company Folder is a shared-access folder for projects that Admins can share with all users.
 
 As an Admin, you can quickly share projects with all users and group projects into subfolders for a user group. For example, if you have a set of projects that you want your marketers to use to start their research, you can create a Marketing folder within the Company Folder---then place those projects within the Marketing folder. This quickly provides direct access to shared projects and it makes it easier for the Marketing team to know where to begin.
 
