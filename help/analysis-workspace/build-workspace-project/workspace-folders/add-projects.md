@@ -9,6 +9,10 @@ feature: CJA Workspace Basics
 
 You can add projects to a folder in the table view or from within a folder.
 
+>[!NOTE]
+>
+>This feature is currently in limited release. Some screens may change.
+
 ## From the table view
 
 Add projects to a folder from the table view on the home page.

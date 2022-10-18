@@ -9,6 +9,10 @@ feature: CJA Workspace Basics
 
 You can add a new folder or a subfolder to the list of projects and folders on your Workspace landing page.
 
+>[!NOTE]
+>
+>This feature is currently in limited release. Some screens may change.
+
 ## Create a new folder
 
 To create a new folder,
