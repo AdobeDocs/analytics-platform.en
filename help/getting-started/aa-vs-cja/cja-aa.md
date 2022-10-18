@@ -15,59 +15,54 @@ The following tables list which features in Adobe Analytics are supported, parti
 | --- | --- |
 | Anomaly Detection | Full Support |
 | Attribution IQ | Full Support |
-| Audience Publishing | Full Support. Called Segment Publishing (sending segments from Workspace to the Experience Cloud) in AA. [Audience Publishing](/help/components/audiences/audiences-overview.md) sends audiences to Real-time Customer Profile in Experience Platform. |
 | Calculated Metrics | Full Support; Note that any existing calculated metrics in the traditional Analysis Workspace will not be ported to CJA. |
 | Calendar events | Full Support. Calendar events have been implemented as [Annotations](/help/components/annotations/overview.md) in Workspace. |
-| Classification Rule Builder | Full support. Called [substrings](/help/data-views/component-settings/substring.md) in CJA. Uses string manipulations at report time rather than lookup datasets. |
-| Cross-device/cross-channel stitching | Full Support; See [Cross-Channel Analytics](/help/connections/cca/overview.md). |
 | CSV download | Full Support |
 | Custom Calendars | Full Support |
 | Date Comparisons | Full Support | 
 | Date Ranges | All date range functionality is supported. |
-| Daylight Savings Time | Full Support |
-| Device, Browser, Referrer, Technology dimensions | These dimensions are automatically included when an AEP dataset includes specific XDM schema fields and conforms to the XDM Experience Event class. Please refer to our [documentation on which Analytics variables are supported via ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en).<p>If you don't use Adobe Source Connector to populate data from Adobe Analytics into CJA, but instead use Experience Platform Web SDK data collection, Device and dimensions based on the Device lookup are not currently supported. They will be supported in the near future. |
 | Dimensions | Full Support; CJA leverages XDM and supports unlimited dimensions. CJA is not tied to the custom eVars or props of traditional Adobe Analytics. |
 | GDPR Deletion | Full Support; note that GDPR is now handled in coordination with [!UICONTROL Adobe Experience Platform]. CJA inherits whatever data changes [!UICONTROL Experience Platform] makes to underlying datasets. |
+| Lift and Confidence Reporting | Full Support via [Experimentation panel](/help/analysis-workspace/c-panels/experimentation.md) |
 | List Variables/List Props | Full Support; CJA leverages XDM and supports unlimited string arrays which can be used similarly to listVars. |
-| Merchandising variable persistence | Full Support via [binding dimensions and binding metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | Merchandising eVars | Full Support via [binding dimensions and binding metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | Metrics | Full Support; CJA leverages the Experience Data Model (XDM) and supports unlimited metrics and is not tied to the custom success events of traditional Analytics. Note that some standard metrics have been renamed from traditional Analytics: Visitors = People, Visits = Sessions, Hits = Events. |
-| Metric deduplication | Full Support |
 | Mobile Scorecard/Dashboards | Full Support |
 | Panels | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. |
 | PDF Export | Full Support |
 | Project Curation | Full Support |
 | Project Linking | Full Support |
-| Report Builder (Excel plugin) | Full Support |
 | Report Time Processing | Full Support; CJA relies exclusively on Report Time Processing. |
 | Reporting API Access | Full Support; Available through the [CJA API](https://www.adobe.io/cja-apis/docs/). |
 | Scheduled Reports/Projects | Full Support |
 | Segments | Full Support; Now called "Filters" - note that any existing segments in traditional Analysis Workspace will not be ported to CJA. |
-| Streaming Media Analytics | Media data will be available July 30, 2022 as part of the Media Concurrent Viewers panel and the Media Playback Time Spent panel in Workspace. |
-| User Permissions/Data Access Controls | Full Support; CJA distinguishes between [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) product admins and users. Only product admins can <ul><li>Create/update/delete Connections or Data Views</li><li>Update/delete projects, filters, or calc metrics that were created by other users, and</li><li>Share a Workspace project to all users.</li></ul> |
 | Virtual Report Suites | Full Support; Now called [Data Views](/help/data-views/create-dataview.md). |
 | VRS Component Curation | Full Support; Now part of Data Views. |
+| Streaming Media Analytics | Media data are available using the Analytics Data Connector as part of the Media Concurrent Viewers panel and the Media Playback Time Spent panel in Workspace. |
 
 {style="table-layout:auto"}
 
-## Supported with caveats
+## Supported in a new way
 
 | Feature | Notes |
 | --- | --- |
-| A4T | Support is provided through fields in the [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). |
+| Audience Publishing (Segment Publishing) | Supported if licensed with Adobe's Customer Data Platform or Journey Optimizer products. [Audience Publishing](/help/components/audiences/audiences-overview.md) sends audiences to Real-time Customer Profile in Experience Platform. |
 | Classifications | Now called "Lookup Datasets". Classifications used in Analytics can be imported to the Experience Platform and CJA using the Analytics Classifications Source Connector. Lookup datasets can also be uploaded to AEP directly and made available in CJA. |
+| Classification Rule Builder | Supported using [substrings](/help/data-views/component-settings/substring.md) in CJA. Uses string manipulations at report time rather than lookup datasets. |
 | Custom Sessionization | Support for all custom sessionization features except mobile background hits. |
+| Merchandising variable persistence | Full Support via [binding dimensions and binding metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | Customer Attributes | Now called "Profile Datasets", they do not get automatically imported from Experience Cloud, but will have to be uploaded to AEP before they are available in CJA. |
-| [!UICONTROL Device], [!UICONTROL Browser], [!UICONTROL Referrer], [!UICONTROL Technology] dimensions | These dimensions are automatically included when an AEP dataset includes specific XDM schema fields and conforms to the XDM Experience Event class. Please refer to our [documentation on which Analytics variables are supported via Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html). For CJA customers who are not using the Source Connector to populate data from Adobe Analytics into CJA, but are instead using AEP Web SDK data collection, [!UICONTROL Device] and dimensions based on the Device lookup are not currently supported, but will be in the near future. |
+| Metric deduplication | Now configured on metrics within Data Views. Metric deduplication happens at the person or session level rather than the Dataset, Data View, or Connection level. |
 | Entries, Exits, and Time spent dimensions and metrics | Supported (Entries and Exits are now called Session Starts and Session Ends) and are calculated in a slightly different way. |
 | eVar persistence settings | eVars are no longer part of CJA. However, persistence settings are now part of Data Views and are available for all dimensions. Keep in mind that persistence is based on report time processing, not data collection processing. Dimensions set within Data Views are limited to a 90 day max persistence and do not support unlimited persistence. |
-| GeoSegmentation dimensions | All GeoSegmentation/geography collected into Adobe Analytics flows into CJA through the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Implementations that do not use the Analytics Source Connector, such as those that rely on AEP Web SDK for digital data collection, will not have the full slate of geographical lookups performed automatically: Country and state are supported globally, city and zip are not.|
 | IP Obfuscation | For CJA customers using the Analytics Source Connector to populate data from Adobe Analytics into CJA: IP obfuscation settings applied in Adobe Analytics flow through to your CJA data. You can control these settings in Adobe Analytics as needed.<p>For CJA customers using Adobe Experience Platform Web SDK to populate data into Platform and CJA directly: You can use Data Prep for Data Collection in Platform to configure rules that will obfuscate the IP address based on your company's requirements. |
-| Marketing Channels | Marketing Channels data flows into CJA through the Analytics Source Connector. Marketing Channel rules must still be configured in traditional Adobe Analytics. Some rules are not supported. For more details, please see [CJA Marketing Channels documentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html#cja-usecases). |
-| New vs. Repeat Session Reporting | Supported on August 17, 2022, [with a 13-month lookback window](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat). |
+| New vs. Repeat Session Reporting | Formerly accomplished using the Visit Number dimension. New vs. Repeat sessions are supported [with a 13-month lookback window](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat). |
 | Product Variable | Within the Experience Platform, users can use array of Object type fields within a dataset schema to satisfy this use case. Within CJA, customers have the ability to use any number of product variables and are not restricted to a single variable as in Adobe Analytics. |
 | Project Sharing | Project sharing is only supported between users of CJA - there is not project sharing between CJA and the traditional Analysis Workspace. |
 | Visualizations | All visualizations are supported except for the Map visualization. |
+| Report Builder (Excel plugin) | Supported with a new Office 365 plugin for Excel. |
+| User Permissions/Data Access Controls | CJA distinguishes between [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) product admins, product profile admins, and users. Only product admins can Create/update/delete Connections, Projects, Filters, or Calculated Metrics that were created by other users, while product admins and product profile admins can edit Data Views. Addtional user permissions are available for things like creating calculated metrics, filter, or annotations. |
+| Processing Rules, VISTA Rules, Marketing Channels Processing Rules | Supported using Adobe Experience Platform Data Prep functionality for both WebSDK based datasets as well as data from the Analytics Data Connector. |
 
 {style="table-layout:auto"}
 
@@ -75,9 +70,14 @@ The following tables list which features in Adobe Analytics are supported, parti
 
 | Feature | Notes |
 | --- | --- |
+| Marketing Channels | Marketing Channels data flows into CJA through the Analytics Source Connector. Marketing Channel rules must still be configured in traditional Adobe Analytics and some rules are not supported. For more details, please see [CJA Marketing Channels documentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html#cja-usecases). Additionally, for WebSDK implementations, plugins are available for defining marketing channels client-side. Future support for report-time marketing channels processing rules is planned.|
+| Cross-device/cross-channel stitching | Supported for datasets containing identity information directly (aka "field-based" stitching); Graph-based stitching is not yet supported, but planned. See [Cross-Channel Analytics](/help/connections/cca/overview.md). |
 | Bot Filtering | For [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-based datasets, bot filtering is applied. General bot filtering logic for other datasets is not performed by the [!UICONTROL Experience Platform] or CJA. |
+| Device, Browser, Referrer, Technology dimensions | Supported for [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-based datasets. Please refer to our [documentation on which Analytics variables are supported via ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en).<p>If you don't use Adobe Source Connector to populate data from Adobe Analytics into CJA, but instead use Experience Platform Web SDK data collection, Device and dimensions based on the Device lookup are not currently supported. Future support is planned. |
+| GeoSegmentation dimensions | All GeoSegmentation/geography collected into Adobe Analytics flows into CJA through the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Implementations that do not use the Analytics Source Connector, such as those that rely on AEP Web SDK for digital data collection, will not have the full slate of geographical lookups performed automatically: Country and state are supported globally, city and zip are not.|
 | Panels | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. The Segment Comparison and Analytics for Target (A4T) panels are not supported. |
 | Processing Rules | For Analytics Source Connector-based datasets, processing rules are still applied. [Data prep capabilities in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) can also be used as a replacement for processing rules for data that is going directly to Platform. |
+| A4T | Partial support is provided through fields in the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Support for A4T friendly names on Target Activities and Experiences is planned.|
 
 {style="table-layout:auto"}
 
@@ -89,11 +89,14 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Contribution Analysis | Support is planned. |
 | Data Warehouse Reporting (100% row export) | Support is planned from the Analysis Workspace interface. Adobe Experience Platform [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) also provides an interface for these use cases in CJA. |
 | ID Stitching via Device Graph | Support is planned. |
-| Lift and Confidence Reporting | Support is planned. |
-| Processing Rules, VISTA Rules, Marketing Channels Processing Rules | Support planned, but will work at query-time rather than during data collection for more flexible and retroactive and non-destructive data manipulations. |
 | Project Templates | Support is planned. |
 | Real-Time Reporting | Support is planned. |
 | Segment IQ | Support is planned. |
+| Currency Conversion | Support is planned. |
+| Data Feeds | Support is planned via AEP destinations. |
+| Transaction ID Data Sources | Support is planned. |
+| Migrating Projects/Filters/Calculated Metrics from AA to CJA | Support is planned. |
+| Summary level data sources | Support is planned. |
 
 {style="table-layout:auto"}
 
@@ -103,10 +106,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | --- | --- |
 | Activity Map | Support is not yet planned. |
 | Advertising Cloud | Support is not yet planned. |
-| Currency Conversion | Support is not yet planned. |
-| Data Feeds | Support is not yet planned. |
 | Summary Data Sources | Support is not yet planned. |
-| Transaction ID Data Sources | Support is not yet planned. |
 
 {style="table-layout:auto"}
 

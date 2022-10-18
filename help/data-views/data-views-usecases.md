@@ -109,11 +109,7 @@ To access these component:
 
 * When a session spans both the lookback window and the reporting window. Let's say you run a report from June 1 to June 15, 2022. The lookback window would encompass May 1, 2021 to May 31, 2022. If a session were to start on May 30, 2022 and end on June 1, 2022, because the session is included in the lookback window, all sessions in the reporting window get counted as return sessions. 
 
-## Use the Date and Date-Time functionality {#date}
-
->[!NOTE]
->
->This functionality is currently in limited testing.
+## 8. Use the Date and Date-Time functionality {#date}
 
 Schemas in Adobe Experience Platform contain [!UICONTROL Date] and [!UICONTROL Date-Time] fields. CJA data views now support these fields. When you drag these fields into a data view as a dimension, you can specify their [format](/help/data-views/component-settings/format.md). This format setting determines how the fields are displayed in reporting. For example:
 
@@ -121,7 +117,7 @@ Schemas in Adobe Experience Platform contain [!UICONTROL Date] and [!UICONTROL D
 
 * For the Date-Time format, if you select **[!UICONTROL Minute of Day]** with the format **[!UICONTROL Hour:Minute]**, your output might look like: 20:20.
 
-### Example use cases:
+### Date and Date-Time use cases
 
 * Date: A travel company is collecting the departure date for trips as a field in their data. They would like to have a report which compares the [!UICONTROL Day of Week] for all departure dates collected to understand which is most popular. They would like to do the same for [!UICONTROL Month of Year].
 
