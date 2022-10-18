@@ -7,8 +7,7 @@ feature: CJA Workspace Basics
 
 # Remove a Project From a Folder
 
-To remove a project from a folder, you can move the project to another
-location or delete the project.
+To remove a project from a folder, you can move the project to another location or delete the project.
 
 >[!NOTE]
 >
@@ -16,8 +15,7 @@ location or delete the project.
 
 ## Move a project
 
-1.  From within a project folder, select the **...** ellipsis next to
-    the project name.
+1.  From within a project folder, select the **...** ellipsis next to the project name.
 
     ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
@@ -35,11 +33,9 @@ location or delete the project.
 
 ## Delete a project from a project folder
 
-When you delete a project from a folder, the project is deleted
-entirely.
+When you delete a project from a folder, the project is deleted entirely.
 
-1.  From within a project folder, select the **...** ellipsis next to
-    the project name.
+1.  From within a project folder, select the **...** ellipsis next to the project name.
 
     ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
