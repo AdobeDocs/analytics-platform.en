@@ -7,15 +7,13 @@ feature: CJA Workspace Basics
 
 # Save a New Project to a Folder
 
-To save a new project to a specific folder, select the folder name in
-the Save project dialogue window.
+To save a new project to a specific folder, select the folder name in the Save project dialogue window.
 
 1.  In Workspace, create a new project.
 
     ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
 
-1.  In the **Project** > **Save** dialogue, select a folder name from
-    the Folder drop-down menu.
+1.  In the **Project** > **Save** dialogue, select a folder name from the Folder drop-down menu.
 
     ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
 

@@ -7,8 +7,7 @@ feature: CJA Workspace Basics
 
 # Create folders
 
-You can add a new folder or a subfolder to the list of projects and
-folders on your Workspace landing page.
+You can add a new folder or a subfolder to the list of projects and folders on your Workspace landing page.
 
 ## Create a new folder
 
@@ -32,8 +31,7 @@ To create a new folder,
 
 ## Create a subfolder
 
-Subfolders allow you to provide additional levels of project management
-and organization.
+Subfolders allow you to provide additional levels of project management and organization.
 
 To create a subfolder when you have an existing folder open,
 
