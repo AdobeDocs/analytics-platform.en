@@ -76,7 +76,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + Folders in Workspace {#workspace-folders}
       + [About Folders in Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
       + [Create Folders](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
-      + [Add Projects](../analysis-workspace/build-workspace-project/workspace-folders/add-folders.md)
+      + [Add Projects](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
       + [Remove a Project](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
       + [Save a New Project](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
     + [Hotkeys (Shortcuts)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
