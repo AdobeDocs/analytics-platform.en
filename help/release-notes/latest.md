@@ -4,7 +4,7 @@ description: Latest CJA release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 ---
-# Customer Journey Analytics (CJA) release notes (October 2022)
+# Customer Journey Analytics (CJA) release notes (October/November 2022)
 
 **Last update**: October 18, 2022
 
@@ -22,14 +22,11 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 
 ## Key features and updates
 
-| Feature | Description | [Targeted Date](/help/release-notes/releases.md) |
-| ----------- | ---------- | ----- |
-| **Folders in Workspace Projects** | Folders in Workspace Projects helps users organize and categorize their projects using folders for better retrieval and access. A shared Company Folder allows Admins to easily create and share content with all Workspace users [Learn more](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md) | October 19, 2022 |
-| **Experimentation Panel** | This new Workspace panel allows CJA users to evaluate the lift and confidence of any A/B experiment from any source - online, offline, from Adobe solutions, Adobe Journey Optimizer, and even BYO data. [Learn more](/help/analysis-workspace/c-panels/experimentation.md) | October 5, 2022 |
-| **[!UICONTROL Key metric summary] visualization** |  The [!UICONTROL Key metric summary] visualization lets you see how an important metrics is trending within a single timeframe. It also lets you compare metric performance across two timeframes. Learn more  | Phased rollout starting October 5, 2022 |
-| **Date field support in CJA** | Allows CJA to report on date and date-time fields. [Learn more](/help/data-views/data-views-usecases.md#date) | October 5, 2022 |
-| **Mobile app: Custom detail views**| Custom detail views allow you to be even more targeted about what information you share with your audience, by letting them focus on what's most important. You can alter the layout of the detail view associated with each scorecard tile and you can add text to better explain what the end user may see in the data. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=en)| October 5, 2022 |
-| **Case-insensitive multi-value variables** | For case-insensitive multi-value variables, the values stored in `mvvar1` - `mvvar3` will no longer be automatically lowercased. Instead, data passed through the Analytics Source Connector to Adobe Experience Platform and CJA will reflect the original case that was passed in from the page. | October 24, 2022 |
+| Feature | Description | [Start of Rollout](/help/release-notes/releases.md) | [General Availability](/help/release-notes/releases.md)
+| ----------- | ---------- | ----- | --- |
+| **[!UICONTROL Key metric summary] visualization** |  The [!UICONTROL Key metric summary] visualization lets you see how an important metrics is trending within a single timeframe. It also lets you compare metric performance across two timeframes. [Learn more](/help/analysis-workspace/visualizations/key-metric.md)  | October 5, 2022 | October 19, 2022 |
+| **Case-insensitive multi-value variables** | For case-insensitive multi-value variables, the values stored in `mvvar1` - `mvvar3` will no longer be automatically lowercased. Instead, data passed through the Analytics Source Connector to Adobe Experience Platform and CJA will reflect the original case that was passed in from the page. | N/A | October 24, 2022 |
+| **CJA Audit Log** | Customer Journey Analytics (CJA) allows you to audit user activity for various services and capabilities in the form of "audit logs". These logs form an audit trail that can help with troubleshooting issues, and help your business effectively comply with corporate data stewardship policies and regulatory requirements, such as the Health Insurance Portability and Accountability Act (HIPAA).  | N/A | October 26, 2022|
 
 {style="table-layout:auto"}
 
