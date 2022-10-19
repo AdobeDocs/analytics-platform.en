@@ -49,9 +49,9 @@ The following items are shown:
 | User ID | A unique ID identifying the user who took this action. |
 | Date Created | When this action was taken. |
 | Email | The email of the user taking the action. |
-| Component ID | A unique ID that identifies the component being actioned upon. |
+| Component ID | A unique ID that identifies the component that is being actioned upon. |
 | Log ID | A unique ID identifying this log entry. |
-| User Type | Possible types include: IMS, what else? |
+| User Type | Possible types include: IMS, OKTA |
 
 ### Filter audit logs
 
