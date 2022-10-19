@@ -19,7 +19,7 @@ This topic covers audit logs in CJA, including how to view and manage them in th
 
 When the feature is enabled for your organization, audit logs are automatically collected as activity occurs. You do not need to manually enable log collection.
 
-In order to view and export audit logs, you must have been granted the **[!UICONTROL View User Activity Log]** access control permission??? in Adobe Console. To learn how to manage individual permissions for CJA features, please refer to the [access control documentation](/help/getting-started/cja-access-control.md).
+In order to view and export audit logs, you must have been granted the **[!UICONTROL Audit Logs Access]** access control permission in Adobe Console. To learn how to manage individual permissions for CJA features, please refer to the [access control documentation](/help/getting-started/cja-access-control.md).
 
 ## View audit logs in the UI
 
@@ -78,21 +78,18 @@ The following table outlines which actions on which component types are recorded
 
 | Component Type | Actions |
 | --- | --- |
-| [!UICONTROL Annotation] |<ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul>|
-| [!UICONTROL Audience] | <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Export</li><li>Refresh</li></ul> |
-| [!UICONTROL Calculated Metric] | <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Share</li><li>Unapprove</li><li>Unshare</li></ul> |
-| [!UICONTROL Connection] | <ul><li>Delete</li><li>Edit</li></ul> |
-|[!UICONTROL  Data Group] | No actions were listed - Is a data group the same as a dataset? |
-| [!UICONTROL Data View] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li><li>Export</li></ul> |
-| [!UICONTROL Date Range] | <ul><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Login failed</li><li>Share</li><li>Unapprove</li><li>Unshare</li></ul>  |
-| [!UICONTROL Feature Access] | <ul><li>Login_successful</li></ul> How do you define feature access?  |
-| [!UICONTROL Filter] | <ul><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Share</li><li>Unapprove</li><li>Unshare</li></ul>  |
+| [!UICONTROL Annotation] |<ul><li>Create</li><li>Delete</li><li>Edit</li></ul>|
+| [!UICONTROL Audience] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li><li>Export</li><li>Refresh</li></ul> |
+| [!UICONTROL Calculated Metric] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul> |
+| [!UICONTROL Connection] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul> |
+| [!UICONTROL Data View] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul> |
+| [!UICONTROL Date Range] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul>  |
+| [!UICONTROL Filter] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul>  |
 | [!UICONTROL IMS Org] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul> |
-| [!UICONTROL Mobile] | <ul><li>Refresh</li></ul> How do you define Mobile? |
-| [!UICONTROL Project] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li><li>Share</li><li>Unshare</li></ul> |
-| [!UICONTROL Report] | <ul><li>API_Request</li><li>Transfer</li></ul> |
-| [!UICONTROL Scheduled Project] | <ul><li>Approve</li><li>Create</li><li>Delete</li><li>Edit</li><li>Unapprove</li></ul> |
-| [!UICONTROL User] | <ul><li>Delete</li><li>Edit</li><li>Share</li><li>Unshare</li></ul> |
+| [!UICONTROL Project] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul> |
+| [!UICONTROL Report] | <ul><li>API_Request</li></ul> |
+| [!UICONTROL Scheduled Project] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul> |
+| [!UICONTROL User] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul> |
 | [!UICONTROL User Group] | <ul><li>API_Request</li><li>Create</li><li>Delete</li><li>Edit</li></ul> |
 
 {style="table-layout:auto"}
