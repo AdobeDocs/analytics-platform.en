@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Customer Journey Analytics (CJA) release notes (October/November 2022)
 
-**Last update**: October 18, 2022
+**Last update**: October 19, 2022
 
 Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -22,11 +22,11 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 
 ## Key features and updates
 
-| Feature | Description | [Start of Rollout](/help/release-notes/releases.md) | [General Availability](/help/release-notes/releases.md)
+| Feature | Description | [Start of Rollout](/help/release-notes/releases.md) | [General Availability](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
 | **[!UICONTROL Key metric summary] visualization** |  The [!UICONTROL Key metric summary] visualization lets you see how an important metrics is trending within a single timeframe. It also lets you compare metric performance across two timeframes. [Learn more](/help/analysis-workspace/visualizations/key-metric.md)  | October 5, 2022 | October 19, 2022 |
 | **Case-insensitive multi-value variables** | For case-insensitive multi-value variables, the values stored in `mvvar1` - `mvvar3` will no longer be automatically lowercased. Instead, data passed through the Analytics Source Connector to Adobe Experience Platform and CJA will reflect the original case that was passed in from the page. | N/A | October 24, 2022 |
-| **CJA Audit Log** | Customer Journey Analytics (CJA) allows you to audit user activity for various services and capabilities in the form of "audit logs". These logs form an audit trail that can help with troubleshooting issues, and help your business effectively comply with corporate data stewardship policies and regulatory requirements, such as the Health Insurance Portability and Accountability Act (HIPAA).  | N/A | October 26, 2022|
+| **CJA Audit Log** | Customer Journey Analytics (CJA) lets you audit user activity for various services and capabilities in the form of "audit logs". These logs form an audit trail that can help with troubleshooting issues, and help your business effectively comply with corporate data stewardship policies and regulatory requirements, such as the Health Insurance Portability and Accountability Act (HIPAA).  | N/A | October 26, 2022|
 
 {style="table-layout:auto"}
 
