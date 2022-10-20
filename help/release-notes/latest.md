@@ -16,7 +16,8 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 | ----------- | ---------- | ----- | --- |
 | **[!UICONTROL Key metric summary] visualization** |  The [!UICONTROL Key metric summary] visualization lets you see how an important metrics is trending within a single timeframe. It also lets you compare metric performance across two timeframes. [Learn more](/help/analysis-workspace/visualizations/key-metric.md)  | October 5, 2022 | October 19, 2022 |
 | **Case-insensitive multi-value variables** | For case-insensitive multi-value variables, the values stored in `mvvar1` - `mvvar3` will no longer be automatically lowercased. Instead, data passed through the Analytics Source Connector to Adobe Experience Platform and CJA will reflect the original case that was passed in from the page. | N/A | October 24, 2022 |
-| **CJA Audit Log** | Customer Journey Analytics (CJA) lets you audit user activity for various services and capabilities in the form of "audit logs". These logs form an audit trail that can help with troubleshooting issues, and help your business effectively comply with corporate data stewardship policies and regulatory requirements, such as the Health Insurance Portability and Accountability Act (HIPAA). These logs were previously only available via the Audit Logs API. [Learn more] | N/A | October 26, 2022|
+| **CJA Audit Log** | Customer Journey Analytics (CJA) lets you audit user activity for various services and capabilities in the form of "audit logs". These logs form an audit trail that can help with troubleshooting issues, and help your business effectively comply with corporate data stewardship policies and regulatory requirements, such as the Health Insurance Portability and Accountability Act (HIPAA). These logs were previously only available via the Audit Logs API. [Documentation to follow] | N/A | October 26, 2022|
+| **CJA HIPAA readiness** | Description to follow | N/A | October 26, 2022 |
 
 {style="table-layout:auto"}
 
@@ -31,7 +32,7 @@ AN-302367; AN-302562
 
 ## Important notices for CJA Administrators
 
-| Notice | Notice added or Updated | Description |
+| Notice | Notice added or updated | Description |
 | --- | --- | --- |
 | **Default landing page** | September 29, 2023 | The [new landing page](/help/getting-started/landing.md) that was introduced earlier this year will become the default experience for all users in **January 2023**. The current page will be deprecated and everyone will be required to use the new experience. |
 | **Improved IP-to-geolocation mapping** | September 29, 2022 | Adobe's vendor for IP lookups, Digital Element, is upgrading to a new improved dataset (NetAcuity Pulse) for IP-to-geolocation mapping. Adobe Analytics has postponed the adoption of this new dataset to **January of 2023**. The new database will be more accurate than previous versions. Some IP-to-geo mappings will change/improve when the new database is adopted.<p> CJA data provided through the [!UICONTROL Analytics Source Connector] will also automatically take advantage of the new mappings. |
