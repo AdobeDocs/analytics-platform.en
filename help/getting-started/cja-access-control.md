@@ -82,7 +82,7 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin C
 | --- | --- |
 | **[!UICONTROL Data Views]** | If you toggle **[!UICONTROL Auto-Include]** to **[!UICONTROL On]**, users that are part of this product profile can view all existing and newly created data views. If this setting is set to **[!UICONTROL Off]**, you can select specific data views that users have access to.  |
 | **[!UICONTROL Reporting Tools]**: |   |
-| **[!UICONTROL Audit Logs Access]** |  This permission enforces the permission check on the [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) and the [audit logs UI](/help/privacy/audit-log.md).  |
+| **[!UICONTROL Audit Logs Access]** |  This permission enforces the permission check on the [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) and the upcoming audit logs UI.  |
 | **[!UICONTROL Reporting Usage Admin]** | Lets users view and delete any report running in their company. (Reporting usage functionality is not yet released.)  |
 | **[!UICONTROL Reporting Usage View]** | Lets users see all of the concurrent reporting requests. (Reporting usage functionality is not yet released.) |
 | **[!UICONTROL Calculated Metrics Creation]** | Lets users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). |
