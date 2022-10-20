@@ -10,16 +10,6 @@ feature: Release Notes
 
 Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
-## Related resources
-
-* [Previous CJA release notes for 2022](/help/release-notes/2022.md)
-
-* [Adobe Analytics release notes](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=en)
-
-* [Media Analytics release notes](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html)
-
-* [Adobe Experience Cloud release notes](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
-
 ## Key features and updates
 
 | Feature | Description | [Start of Rollout](/help/release-notes/releases.md) | [General Availability](/help/release-notes/releases.md) |
@@ -49,5 +39,15 @@ AN-302367; AN-302562
 
 {style="table-layout:auto"}
 
->[!MORELIKETHIS]
->[Customer Journey Analytics documentation updates](/help/release-notes/doc-changes.md)
+
+## Related resources
+
+* [Previous CJA release notes for 2022](/help/release-notes/2022.md)
+
+* [Adobe Analytics release notes](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=en)
+
+* [Media Analytics release notes](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html)
+
+* [Adobe Experience Cloud release notes](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
+
+* [Customer Journey Analytics documentation updates](/help/release-notes/doc-changes.md)
