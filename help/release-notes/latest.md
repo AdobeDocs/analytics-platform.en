@@ -26,9 +26,18 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 | ----------- | ---------- | ----- | --- |
 | **[!UICONTROL Key metric summary] visualization** |  The [!UICONTROL Key metric summary] visualization lets you see how an important metrics is trending within a single timeframe. It also lets you compare metric performance across two timeframes. [Learn more](/help/analysis-workspace/visualizations/key-metric.md)  | October 5, 2022 | October 19, 2022 |
 | **Case-insensitive multi-value variables** | For case-insensitive multi-value variables, the values stored in `mvvar1` - `mvvar3` will no longer be automatically lowercased. Instead, data passed through the Analytics Source Connector to Adobe Experience Platform and CJA will reflect the original case that was passed in from the page. | N/A | October 24, 2022 |
-| **CJA Audit Log** | Customer Journey Analytics (CJA) lets you audit user activity for various services and capabilities in the form of "audit logs". These logs form an audit trail that can help with troubleshooting issues, and help your business effectively comply with corporate data stewardship policies and regulatory requirements, such as the Health Insurance Portability and Accountability Act (HIPAA). These logs were previously only available via the Audit Logs API. | N/A | October 26, 2022|
+| **CJA Audit Log** | Customer Journey Analytics (CJA) lets you audit user activity for various services and capabilities in the form of "audit logs". These logs form an audit trail that can help with troubleshooting issues, and help your business effectively comply with corporate data stewardship policies and regulatory requirements, such as the Health Insurance Portability and Accountability Act (HIPAA). These logs were previously only available via the Audit Logs API. [Learn more] | N/A | October 26, 2022|
 
 {style="table-layout:auto"}
+
+## Fixes
+
+* Fixed an issue where recent MacOS versions were incorrectly named as "Macintosh". With this fix, the OS dimension will begin using "MacOS" version numbering, starting with MacOS 11. (AN-301834)
+
+### Other Fixes
+
+AN-302367; AN-302562
+
 
 ## Important notices for CJA Administrators
 
