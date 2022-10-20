@@ -47,7 +47,7 @@ Another level of access control can be used at the Workspace reporting level. Yo
 
 ## Grant access to individual metrics or dimensions
 
-You cannot grant or deny permissions on individual metrics or dimensions in Customer Journey Analytics like you can in traditional Adobe Analytics. Metrics and dimensions can be modified in [data views](/help/data-views/data-views.md) and are thus subject to change in CJA. Changing them also retroactively changes reporting.
+You cannot grant or deny permissions for individual metrics or dimensions in Customer Journey Analytics like you can in traditional Adobe Analytics. Metrics and dimensions can be modified in [data views](/help/data-views/data-views.md) and are thus subject to change in CJA. Changing them also retroactively changes reporting.
 
 ## Use cases
 
@@ -82,7 +82,7 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin C
 | --- | --- |
 | **[!UICONTROL Data Views]** | If you toggle **[!UICONTROL Auto-Include]** to **[!UICONTROL On]**, users that are part of this product profile can view all existing and newly created data views. If this setting is set to **[!UICONTROL Off]**, you can select specific data views that users have access to.  |
 | **[!UICONTROL Reporting Tools]**: |   |
-| **[!UICONTROL Audit Logs Access]** |  This permission enforces the permission check on the [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) and the [audit logs UI](/help/privacy/audit-log.md).  |
+| **[!UICONTROL Audit Logs Access]** |  This permission enforces the permission check on the [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) and the upcoming audit logs UI.  |
 | **[!UICONTROL Reporting Usage Admin]** | Lets users view and delete any report running in their company. (Reporting usage functionality is not yet released.)  |
 | **[!UICONTROL Reporting Usage View]** | Lets users see all of the concurrent reporting requests. (Reporting usage functionality is not yet released.) |
 | **[!UICONTROL Calculated Metrics Creation]** | Lets users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). |
