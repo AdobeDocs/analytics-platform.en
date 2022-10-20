@@ -47,7 +47,7 @@ Another level of access control can be used at the Workspace reporting level. Yo
 
 ## Grant access to individual metrics or dimensions
 
-You cannot grant or deny permissions on individual metrics or dimensions in Customer Journey Analytics like you can in traditional Adobe Analytics. Metrics and dimensions can be modified in [data views](/help/data-views/data-views.md) and are thus subject to change in CJA. Changing them also retroactively changes reporting.
+You cannot grant or deny permissions for individual metrics or dimensions in Customer Journey Analytics like you can in traditional Adobe Analytics. Metrics and dimensions can be modified in [data views](/help/data-views/data-views.md) and are thus subject to change in CJA. Changing them also retroactively changes reporting.
 
 ## Use cases
 
