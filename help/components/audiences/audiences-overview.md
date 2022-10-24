@@ -31,6 +31,10 @@ Publishing audiences provides a clear way to activate and to take action on insi
 
 * Admins also need the **[!UICONTROL Manage Profiles]** permission in Adobe Experience Platform.
 
+## Data Governance and Consent
+
+When you publish an audience in CJA, the Data Governance labels and policies attached to the fields used in the audience are recorded.  When the audience is activated in any Adobe Experience App, all associated Data Governance labels and policies are available for that audience and appropriate enforcement can be applied.  [Learn more about consent](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=en#consent-policy)
+
 ## Next steps
 
 * [Create and publish audiences](/help/components/audiences/publish.md)
