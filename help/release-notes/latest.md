@@ -29,7 +29,6 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 
 AN-302367; AN-302562
 
-
 ## Important notices for CJA Administrators
 
 | Notice | Notice added or updated | Description |
