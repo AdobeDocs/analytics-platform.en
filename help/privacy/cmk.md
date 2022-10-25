@@ -10,7 +10,7 @@ hidefromtoc: true
 >
 >This functionality will be available in November 2022.
 
-Customer Journey Analytics (CJA) provides the option for Healthcare Shield and Privacy & Security Shield customers to utilize an Azure Customer Managed Key (CMK) to be applied to your CJA data.  Note that this process is separate from [Adobe Experience Platform CMK setup](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).  
+Customer Journey Analytics (CJA) provides the option for [Healthcare Shield](https://www.adobe.com/trust/compliance/hipaa-ready.html) and Privacy & Security Shield customers to utilize an Azure Customer Managed Key (CMK) to be applied to your CJA data.  Note that this process is separate from [Adobe Experience Platform CMK setup](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).  
 
 >[!NOTE]
 >
