@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Customer Journey Analytics (CJA) release notes (October/November 2022)
 
-**Last update**: October 19, 2022
+**Last update**: October 25, 2022
 
 Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -16,8 +16,9 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 | ----------- | ---------- | ----- | --- |
 | **[!UICONTROL Key metric summary] visualization** |  The [!UICONTROL Key metric summary] visualization lets you see how an important metrics is trending within a single timeframe. It also lets you compare metric performance across two timeframes. [Learn more](/help/analysis-workspace/visualizations/key-metric.md)  | October 5, 2022 | October 19, 2022 |
 | **Case-insensitive multi-value variables** | For case-insensitive multi-value variables, the values stored in `mvvar1` - `mvvar3` will no longer be automatically lowercased. Instead, data passed through the Analytics Source Connector to Adobe Experience Platform and CJA will reflect the original case that was passed in from the page. | N/A | October 24, 2022 |
-| **CJA Audit Log** | Customer Journey Analytics (CJA) lets you audit user activity for various services and capabilities in the form of "audit logs". These logs form an audit trail that can help with troubleshooting issues, and help your business effectively comply with corporate data stewardship policies and regulatory requirements, such as the Health Insurance Portability and Accountability Act (HIPAA). These logs were previously only available via the Audit Logs API. [Documentation to follow] | N/A | October 26, 2022|
+| **CJA Audit Log** | Customer Journey Analytics (CJA) lets you audit user activity for various services and capabilities in the form of "audit logs". These logs form an audit trail that can help with troubleshooting issues, and help your business effectively comply with corporate data stewardship policies and regulatory requirements, such as the Health Insurance Portability and Accountability Act (HIPAA). These logs were previously only available via the Audit Logs API. [Learn more](/help/privacy/audit-log.md) | N/A | October 26, 2022|
 | **HIPAA readiness** | Adobe now supports receiving, using, maintaining, or transmitting Protected Health Information in Customer Journey Analytics and other Experience Platform-based applications for Healthcare Shield customer only. Healthcare Shield is for healthcare customers that are either a Covered Entity or Business Associate in the US only. [Learn More](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den) | N/A | November 7, 2022 |
+| **Password protection for scheduled projects** | This feature is part of HIPAA readiness and applies only to Healthcare Shield customers. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password) | N/A/ | November 7, 2022. |
 
 {style="table-layout:auto"}
 
