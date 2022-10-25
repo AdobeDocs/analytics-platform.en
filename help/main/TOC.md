@@ -256,4 +256,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Compare your Adobe Analytics data to CJA data](../troubleshooting/compare.md)
 + Data Governance {#cja-privacy}
   + [Data Governance](../privacy/privacy-overview.md)
+  + [Audit logs](../privacy/audit-log.md)
+  + [Customer Managed Keys](../privacy/cmk.md)
 + [CJA API](https://developer.adobe.com/cja-apis/docs/)
