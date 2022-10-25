@@ -89,6 +89,7 @@ Prior to the time for which a project is scheduled, the project's owner will rec
 
 ![email](assets/email-password.png)
 
+1. Log back into Customer Journey Analytics.
 1. Click **[!UICONTROL View Scheduled Project]**.
 1. In the **[!UICONTROL Edit scheduled project]** dialog, enter and re-enter a password.
 1. Let (only) the recipients of the scheduled project know about this password.
