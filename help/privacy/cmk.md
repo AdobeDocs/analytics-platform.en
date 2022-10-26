@@ -16,6 +16,8 @@ Customer Journey Analytics (CJA) provides the option for [Healthcare Shield](htt
 >
 >Customer Managed Keys are currently available only for organizations that have purchased the [Healthcare Shield or Privacy & Security Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den) add-on offering.
 
+## Set up CMK for CJA
+
 Follow these steps to set up CMK for CJA:
 
 1. Ensure that you are entitled to Adobe CJA CMK by checking with your Adobe Account team.
