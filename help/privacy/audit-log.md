@@ -21,7 +21,7 @@ When the feature is enabled for your organization, audit logs are automatically 
 
 In order to view and export audit logs, you must have been granted the **[!UICONTROL Audit Logs Access]** access control permission in Adobe Console. To learn how to manage individual permissions for CJA features, please refer to the [access control documentation](/help/getting-started/cja-access-control.md).
 
-## View audit logs in the UI
+## View the audit log in the UI
 
 In CJA, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Audit Logs]**.
 
