@@ -1,6 +1,8 @@
 ---
 title: Audit logs
 description: Learn how to view and manage CJA audit logs.
+hide: true
+hidefromtoc: true
 ---
 
 # Audit logs
