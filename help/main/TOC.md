@@ -257,4 +257,5 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Data Governance {#cja-privacy}
   + [Data Governance](../privacy/privacy-overview.md)
   + [Audit Log](../privacy/audit-log.md)
+  + [Customer Managed Keys](../privacy/cmk.md)
 + [CJA API](https://developer.adobe.com/cja-apis/docs/)
