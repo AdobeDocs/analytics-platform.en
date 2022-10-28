@@ -24,5 +24,5 @@ Follow these steps to set up CMK for CJA:
 1. Ensure that, in Azure, you are an administrator with a privileged role such as Application Administrator, Cloud Application Administrator, or Global Administrator. [Learn more from Microsoft](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference)
 1. Create a new Azure Key Vault to be used only with CJA. [Learn more from Microsoft](https://learn.microsoft.com/en-us/azure/key-vault/general/)
 1. Grant the Adobe Azure App access to your key in the key vault. This is the Adobe Application ID: 251e3919-1940-4296-bb8b-6b9a5e8a4805. [Learn More from Microsoft](https://learn.microsoft.com/en-us/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault)
-1. Create an Adobe Customer Care ticket requesting CMK setup. Include the Azure URI in your ticket.
+1. Create an Adobe Customer Care ticket requesting CMK setup. Include the Azure URI in your ticket. The URI can be found in the Key Identifier field of your Azure Key. 
 1. Adobe Customer Care will confirm the completion of the CMK application on your CJA data.
