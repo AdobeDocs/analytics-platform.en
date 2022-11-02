@@ -1,8 +1,6 @@
 ---
 title: Customer Managed Keys
 description: Learn how to set up Customer Managed Keys for CJA.
-hide: true
-hidefromtoc: true
 ---
 # Customer Managed Keys
 
