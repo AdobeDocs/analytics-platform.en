@@ -1,6 +1,7 @@
 ---
 title: Customer Managed Keys
 description: Learn how to set up Customer Managed Keys for CJA.
+exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
 ---
 # Customer Managed Keys
 

@@ -5,8 +5,8 @@ title: Folders overview
 feature: CJA Workspace Basics
 hide: yes
 hidefromtoc: yes
+exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 ---
-
 # About Folders in Workspace Projects
 
 Folders in Workspace Projects is a folder management system located on the Workspace landing page.

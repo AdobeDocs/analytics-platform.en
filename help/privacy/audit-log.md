@@ -1,8 +1,8 @@
 ---
 title: Audit logs
 description: Learn how to view and manage CJA audit logs.
+exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 ---
-
 # Audit logs
 
 To increase the transparency and visibility of activities performed in the system, Customer Journey Analytics (CJA) allows you to audit user activity for various services and capabilities in the form of "audit logs". These logs form an audit trail that can help with troubleshooting issues, and help your business effectively comply with corporate data stewardship policies and regulatory requirements, such as the Health Insurance Portability and Accountability Act (HIPAA).
