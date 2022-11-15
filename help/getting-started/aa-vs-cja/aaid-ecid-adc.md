@@ -37,7 +37,7 @@ These fields are not marked as identities. Rather, the same identities are copie
 * `{ “key”: “ECID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
 * `{ “key”: “AACUSTOMID”, “value”: [ { “id”: “<identity>”, “primary”: false } ] }`
 
-The items in brackets 
+The items in <> brackets represent the place were actual values would appear.
 
 Within identityMap:
 
