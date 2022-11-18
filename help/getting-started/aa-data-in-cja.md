@@ -15,7 +15,7 @@ Adobe Analytics customers can easily leverage their report suites in the Adobe E
 
 As you get ready to start using Adobe Analytics report suites in AEP and CJA, there are several things you should consider doing to prepare your data for a seamless move to Customer Journey Analytics. Please review the following page for more information:
 
-* [Adobe Analytics to Customer Journey Analytics evolution](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=en)
+* [Adobe Analytics to Customer Journey Analytics evolution](/help/getting-started/aa-to-cja-user.md)
 
 ## Set up report suites for ingestion into the Adobe Experience Platform and CJA
 
