@@ -43,7 +43,8 @@ Analytics Select, Prime, and Ultimate customers are eligible to purchase this ad
      <li><a href="https://www.adobe.com/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 
      <li> <a href="https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html" format="https" scope="external"> Adobe Experience Platform Tutorials</a> </li> 
      <li><a href="https://www.adobe.io/apis/experienceplatform/home/api-reference.html" format="https" scope="external"> API Reference</a> </li> 
-     <li><a href="https://www.adobe.com/experience-platform/documentation-and-developer-resources.html" format="https" scope="external"> Documentation and Developer Resources</a> </li> 
+     <li><a href="https://www.adobe.com/experience-platform/documentation-and-developer-resources.html" format="https" scope="external"> Documentation and Developer Resources</a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html" format="https" scope="external"> Adobe Analytics source connector for report-suite datas</a> </li>
     </ul> </td> 
   </tr> 
  </tbody> 
