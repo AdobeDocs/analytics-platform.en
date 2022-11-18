@@ -64,6 +64,7 @@ This method greatly expands possibilities for data collection: There is no longe
 * Not reliant on Adobe Analytics nomenclature (prop, eVar, event, etc.)
 * No character limit concerns (100 chars for props)
 * Faster data availability in Adobe Experience Platform to power [real-time personalization use cases](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=en)
+* [First-party device IDs](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=en) for enhanced accuracy of visitor identification
 
 **Drawbacks to using Experience Platform SDKs**
 
