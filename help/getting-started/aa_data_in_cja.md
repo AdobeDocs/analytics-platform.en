@@ -31,6 +31,7 @@ Once you have prepared your data you are ready to start configuring report suite
 
 Customer Journey Analytics and Adobe Analytics have a number of similarities. For example, both CJA and Adobe Analytics offer the power of Analysis Workspace for freeform speed-of-thought analysis. However, since CJA is an application within the Adobe Experience Platform and utilizes AEP for data ingestion, CJA and Adobe Analytics differ in  a number of important ways. The following articles are helpful for understanding these differences:
 
+* [Compare your Adobe Analytics data to CJA data](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html?lang=en)
 * [Customer Journey Analytics feature support](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/cja-aa.html?lang=en)
 * [Compare terminology for Analytics data passed through the Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/terminology.html?lang=en)
 * [Compare data processing across Adobe Analytics and CJA reporting features](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/data-processing-comparisons.html?lang=en)
