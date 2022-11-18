@@ -21,7 +21,7 @@ As you get ready to start using Adobe Analytics report suites in AEP and CJA, th
 
 Once you have prepared your data your data you are ready to start configuring report suites for use in AEP and CJA. 
 
-1. Create a dataflow for each report suite you wish to use in AEP and CJA.
+1. *Create a dataflow for each report suite you wish to use in AEP and CJA.* The [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en) is a tool which allows you to create "dataflows" which forward Adobe Analytics data into AEP.
 2. Use dataprep to help you combine report suites in CJA.
 3. Create one or more CJA connections
 4. Create one or more CJA data views
