@@ -9,17 +9,17 @@ exl-id: tbd
 
 # Utilizing Adobe Analytics report suite data in Customer Journey Analytics
 
-Adobe Analytics customers can easily leverage their report suites in the Adobe Experience Platform and Customer Journey Analytics using the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). The following information explains how to do so.
+Adobe Analytics customers can easily leverage their report suites in the Adobe Experience Platform and Customer Journey Analytics using the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). The following discussion explains how to do so.
 
 ## Preparation
 
-As you get ready to start using Adobe Analytics report suites in AEP and CJA, there are some steps you should consider to prepare your data for a seamless move to Customer Journey Analytics. This page explains how:
+As you get ready to start using Adobe Analytics report suites in AEP and CJA, there are several ideas you should consider to prepare your data for a seamless move to Customer Journey Analytics. Please review the following page for more information:
 
-[Adobe Analytics to Customer Journey Analytics evolution](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=en)
+* [Adobe Analytics to Customer Journey Analytics evolution](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=en)
 
-## Configure a report suite for ingestion into the Adobe Experience Platform
+## Set up report suites for ingestion into the Adobe Experience Platform and CJA
 
-Intro
+Once you have prepared your data your data you are ready to start configuring report suites for use in AEP and CJA. 
 
 1. Create a dataflow for each report suite you wish to use in AEP and CJA.
 2. Use dataprep to help you combine report suites in CJA.
