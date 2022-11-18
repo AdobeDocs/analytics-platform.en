@@ -52,7 +52,7 @@ Adobe has published [updated best practices for Marketing Channel implementation
 
 ### 4. Decide on using Analytics Source Connector vs. Experience Platform SDKs {#connector-vs-sdk}
 
-For information on using the Analytics Source Connector, see [Create an Adobe Analytics source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en).
+Adobe Analytics customers can easily leverage their report suites in the Adobe Experience Platform and Customer Journey Analytics using the Analytics Source Connector. For information on using the Analytics Source Connector, see [Create an Adobe Analytics source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en).
 
 As [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) data collection evolves, you will likely migrate to either the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html) or [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html) with the Adobe Experience Platform Edge Network. While a typical implementation of the SDKs will send data into Adobe Analytics, a new opportunity presents itself for sending data directly to Adobe Experience Platform. It can then be ingested into Customer Journey Analytics, while also maintaining data sent to Adobe Analytics. 
 
