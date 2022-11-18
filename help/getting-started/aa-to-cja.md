@@ -63,7 +63,7 @@ This method greatly expands possibilities for data collection: There is no longe
 * Flexible schema to define any fields you need
 * Not reliant on Adobe Analytics nomenclature (prop, eVar, event, etc.)
 * No character limit concerns (100 chars for props)
-* Faster data availability in Adobe Experience Platform
+* Faster data availability in Adobe Experience Platform to power [real-time personalization use cases](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=en)
 
 **Drawbacks to using Experience Platform SDKs**
 
