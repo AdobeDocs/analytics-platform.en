@@ -33,7 +33,7 @@ Customer Journey Analytics and Adobe Analytics have a number of similarities. Fo
 
 * [Compare your Adobe Analytics data to CJA data](/help/troubleshooting/compare.md)
 * [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md)
-* [Compare terminology for Analytics data passed through the Analytics Source Connector](/help/getting-started/aa-vs-cja/cja-aa.md)
+* [Compare terminology for Analytics data passed through the Analytics Source Connector](help/getting-started/aa-vs-cja/terminology.md)
 * [Compare data processing across Adobe Analytics and CJA reporting features](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)
 * [Virtual Report Suites, Data Views, AEP Sandboxes and the Analytics Source Connector](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
 * [Processing rules, VISTA and classifications versus Data Prep](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)
