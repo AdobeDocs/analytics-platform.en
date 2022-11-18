@@ -9,7 +9,7 @@ exl-id: tbd
 
 # Utilizing Adobe Analytics report suite data in Customer Journey Analytics
 
-Adobe Analytics customers can easily leverage their report suites in the Adobe Experience Platform and Customer Journey Analytics using the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en).
+Adobe Analytics customers can easily leverage their report suites in the Adobe Experience Platform and Customer Journey Analytics using the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). The following information explains how to do so.
 
 ## Preparation
 
@@ -19,7 +19,7 @@ Adobe Analytics customers can easily leverage their report suites in the Adobe E
 
 tbd
 
-## Similarities and differences between Adobe Analytics and Customer Journey Analytics
+## Comparing Adobe Analytics and Customer Journey Analytics
 
 Customer Journey Analytics and Adobe Analytics have a number of similarities. For example, both CJA and Adobe Analytics offer the power of Analysis Workspace for freeform speed-of-thought analysis. However, since CJA is an application within the Adobe Experience Platform and utilizes AEP for data ingestion, CJA and Adobe Analytics differ in  a number of important ways. The following articles are helpful for understanding these differences:
 
