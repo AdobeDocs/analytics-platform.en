@@ -18,7 +18,7 @@ Analytics Select, Prime, and Ultimate customers are eligible to purchase this ad
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>New or Featured Items</b> </p> <p> 
      <ul>
-       <li> Utilizing Adobe Analytics report suite data in Customer Journey Analytics</li><li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=en"> Combine Report Suites with different schemas </a> </li>
+       <li> href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/tbd.html?lang=en"> Utilizing Adobe Analytics report suite data in Customer Journey Analytics</li><li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=en"> Combine Report Suites with different schemas </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/pr-vista-dataprep.html?lang=en"> Processing rules, VISTA and classifications versus Data Prep </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/data-processing-comparisons.html?lang=en"> Compare data processing across Adobe Analytics and CJA reporting features </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/vrs-dataview-sandbox-adc.html?lang=en"> Virtual report suites, data views, AEP sandboxes and the Analytics Source Connector </a> </li>
