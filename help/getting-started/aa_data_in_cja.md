@@ -19,9 +19,9 @@ As you get ready to start using Adobe Analytics report suites in AEP and CJA, th
 
 ## Set up report suites for ingestion into the Adobe Experience Platform and CJA
 
-Once you have prepared your data your data you are ready to start configuring report suites for use in AEP and CJA. 
+Once you have prepared your data you are ready to start configuring report suites for use in AEP and CJA. 
 
-1. **Create a dataflow for each report suite you wish to use in AEP and CJA.** The [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en) is the tool which allows you to create "dataflows" which forward Adobe Analytics report suite data into AEP. You will use the source connector to create one dataflow for each report suite you want to use in AEP. The dataflow creates a copy of your report suite data that will be formatted in [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=en) for consumption by AEP applications including CJA. Each report suite configured with a dataflow via the source connector is stored as a separate dataset in the AEP data lake. 
+1. **Create a dataflow for each report suite you wish to use in AEP and CJA.** The [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en) is the tool which allows you to create "dataflows" which forward Adobe Analytics report suite data into AEP. You will use the source connector to create one dataflow for each report suite you want to use in AEP. The dataflow creates a copy of your report suite that will be formatted in [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=en) for consumption by AEP applications including CJA. Each report suite configured with a dataflow via the source connector is stored as a separate dataset in the AEP data lake. 
 
 Schema...
 Filters applied during ADC...
