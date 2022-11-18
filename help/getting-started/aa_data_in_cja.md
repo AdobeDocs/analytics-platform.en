@@ -13,13 +13,21 @@ Adobe Analytics customers can easily leverage their report suites in the Adobe E
 
 ## Preparation
 
+As you get ready to start using Adobe Analytics report suites in AEP and CJA, there are some steps you should consider to prepare your data for a seamless move to Customer Journey Analytics. This page explains how:
+
 [Adobe Analytics to Customer Journey Analytics evolution](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=en)
 
 ## Configure a report suite for ingestion into the Adobe Experience Platform
 
-tbd
+Intro
 
-## Comparing Adobe Analytics and Customer Journey Analytics
+1. Create a dataflow for each report suite you wish to use in AEP and CJA.
+2. Use dataprep to help you combine report suites in CJA.
+3. Create one or more CJA connections
+4. Create one or more CJA data views
+
+
+## Comparing Customer Journey Analytics and Adobe Analytics
 
 Customer Journey Analytics and Adobe Analytics have a number of similarities. For example, both CJA and Adobe Analytics offer the power of Analysis Workspace for freeform speed-of-thought analysis. However, since CJA is an application within the Adobe Experience Platform and utilizes AEP for data ingestion, CJA and Adobe Analytics differ in  a number of important ways. The following articles are helpful for understanding these differences:
 
