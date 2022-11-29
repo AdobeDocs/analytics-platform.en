@@ -27,7 +27,6 @@ Once you have prepared your data you are ready to start configuring report suite
 1. **Create one or more CJA connections.** Once the datasets for your report suites are available in AEP Data Lake, you can create one or more [CJA connections](/help/connections/overview.md) to bring those datasets into CJA. Within a connection, report suite data can be combined with other types of data, allowing you to create a true cross-channel view of customer experiences.
 1. **Create one or more CJA data views.** A [data view](/help/data-views/data-views.md) is a container specific to Customer Journey Analytics that lets you determine how to interpret data from a CJA connection. Data views have many powerful [configuration options](/help/data-views/create-dataview.md) for customizing the data which is presented to your users within [Analysis Workspace](/help/analysis-workspace/home.md).
 
-
 ## Comparing Customer Journey Analytics and Adobe Analytics
 
 Customer Journey Analytics and Adobe Analytics have a number of similarities. For example, both CJA and Adobe Analytics offer the power of Analysis Workspace for freeform speed-of-thought analysis. However, since CJA is an application within the Adobe Experience Platform and utilizes AEP for data ingestion, CJA and Adobe Analytics differ in  a number of important ways. The following articles are helpful for understanding these differences:
