@@ -59,7 +59,7 @@ Cross-Channel Analytics is a groundbreaking and robust feature, but has limitati
 
 Once your organization meets all prerequisites and understands its limitations, you can follow these steps to start using it in CJA.
 
-1. Import the desired data into Adobe Experience Platform. For Adobe Analytics data, see  see [Utilizing Adobe Analytics report suite data in Customer Journey Analytics](/help/getting-started/aa-data-in-cja.md). For other types of data, see [Create a schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) and [Ingest data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) in the Adobe Experience Platform documentation.
+1. Import the desired data into Adobe Experience Platform. For Adobe Analytics data, see  see [Utilizing Adobe Analytics report suite data in Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). For other types of data, see [Create a schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) and [Ingest data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) in the Adobe Experience Platform documentation.
 1. Contact Adobe Customer Support with the following information:
    * A request to enable Cross-Channel Analytics
    * The dataset ID for the dataset that you want to rekey

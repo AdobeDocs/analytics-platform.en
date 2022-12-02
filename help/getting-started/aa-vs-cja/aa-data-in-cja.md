@@ -4,7 +4,6 @@ description: How to configure Adobe Analytics report suites for ingestion into A
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-exl-id: tbd?
 ---
 
 # Utilizing Adobe Analytics report suite data in Customer Journey Analytics
