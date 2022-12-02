@@ -58,9 +58,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
 ```
 
-1. In [Analytics Data Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html ), identify from the raw data whether some rows might have been dropped by the Analytics Source connector. 
+1. In [Analytics Data Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html ), identify from the raw data whether some rows might have been filtered out by the Analytics Source connector. 
 
-   The [Analytics Source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) might drop rows during the transformation to XDM schema. There can be multiple reasons for the whole row to be unfit for transformation. If any of the following Analytics fields have these values, the whole row will be dropped. 
+   The [Analytics Source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) might filter certain rows during the transformation to XDM schema. There can be multiple reasons for the whole row to be unfit for transformation. If any of the following Analytics fields have these values, the whole row will be filtered out. 
 
    | Analytics field | Values that cause a row to be dropped |
    | --- | --- |
@@ -73,9 +73,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
    
    For more information about hit\_source see: [Data column reference](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en). For more information about page\_event see: [Page Event Lookup](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=en).
    
-1. If the connector dropped rows, subtract those rows from the [!UICONTROL Occurrences] metric. The resulting number should match the number of events in the Adobe Experience Platform datasets.
+1. If the connector filtered rows, subtract those rows from the [!UICONTROL Occurrences] metric. The resulting number should match the number of events in the Adobe Experience Platform datasets.
 
-## Why records might be dropped or skipped during ingestion from AEP
+## Why records might be filtered or skipped during ingestion from AEP
 
 CJA [Connections](/help/connections/create-connection.md) allow you to bring and join multiple datasets together based on a common Person ID across the datasets. On the backend, we apply deduplication: full outer join or union on event datasets based on timestamps, and then inner join on profile and lookup dataset, based on the Person ID. 
 
