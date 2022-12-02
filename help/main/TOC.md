@@ -31,7 +31,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Adobe Analytics to Customer Journey Analytics evolution](../getting-started/aa-to-cja.md)
   + [User Guide for new Customer Journey Analytics users](../getting-started/aa-to-cja-user.md)
   + Compare Adobe Analytics and Customer Journey Analytics {#compare-aa-cja}
-    + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa_data_in_cja.md)
+    + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
     + [Customer Journey Analytics feature support](../getting-started/aa-vs-cja/cja-aa.md)
     + [Compare terminology for Analytics data passed through the Analytics Source Connector](../getting-started/aa-vs-cja/terminology.md)
     + [Compare data processing across Adobe Analytics and CJA](../getting-started/aa-vs-cja/data-processing-comparisons.md)
