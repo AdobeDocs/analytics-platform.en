@@ -3,7 +3,7 @@ description: Learn about the different save options, including autosave, save as
 title: Save projects
 feature: CJA Workspace Basics
 role: User, Admin
-exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
+exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
 ---
 # Save projects
 

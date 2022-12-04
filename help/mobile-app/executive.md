@@ -3,7 +3,7 @@ description: Instructions for using the dashboards scorecards.
 title: Adobe Analytics dashboards executive guide
 feature: Analytics Dashboards
 role: User, Admin
-exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
+exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
 ---
 # Executive user quick start guide
@@ -144,4 +144,3 @@ Tap the option and provide your email address in the top field and your question
 | Breakdown | A secondary view accessible by tapping a tile in the Scorecard. This view expands on the metric displayed on the tile and optionally reports on additional breakdown dimensions. |
 | Date Range | The primary date range for dashboards reporting |
 | Comparison Date Range|The Date Range that is compared with the primary date range |
-

@@ -1,7 +1,7 @@
 ---
 title: Create or edit a data view
 description: All settings that you can adjust to create or edit a data view.
-exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 ---
@@ -120,4 +120,3 @@ You can add filters that apply to an entire data view. This filter is applied to
 Determine the time period of inactivity between events before a session expires and a new one is started. A time period is required. You can optionally also force a new session to start when an event contains a certain metric.
 
 Once all desired settings are specified, click **[!UICONTROL Save and finish]**.
-

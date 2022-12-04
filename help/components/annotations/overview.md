@@ -4,7 +4,7 @@ description: How to use annotations in Workspace.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
-exl-id: 722d7636-f619-479a-97f1-3da23e8f7f83
+exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
 ---
 # Annotations overview
 

@@ -3,7 +3,7 @@ description: Lets you easily visualize comparison data in Analysis Workspace, su
 title: Combo charts visualization
 feature: Visualizations
 role: User, Admin
-exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
+exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 ---
 # Combo chart
 
