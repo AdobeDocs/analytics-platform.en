@@ -241,7 +241,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Ingest Google Analytics historical data into Platform](../use-cases/ga/backfill.md)
     + [Configure streaming Google Analytics data into Platform](../use-cases/ga/streaming.md)
     + [Report on Google Analytics data in CJA](../use-cases/ga/report.md)
-  + Data ingestion {data-ingestion}
+  + Data ingestion {#data-ingestion}
     + [Data ingestion use cases](../use-cases/data-ingestion/data-ingestion.md)
     + [Ingest Marketo Engage data into AEP and report in CJA](../use-cases/data-ingestion/marketo.md)
     + [Ingest AEP audiences into CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
