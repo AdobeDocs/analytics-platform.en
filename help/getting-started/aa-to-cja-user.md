@@ -18,7 +18,7 @@ Much of what you are familiar with on the reporting side has not changed.
 
 * You can still use the power of [Analysis Workspace](/help/analysis-workspace/home.md) to analyze your data. Workspace operates the same as it does in traditional Adobe Analytics.
 * The same version of [Adobe Analytics dashboards](/help/mobile-app/home.md) is available, and works similarly between CJA and traditional Analytics.
-* [Report Builder](/help/report-builder/report-buider-overview.md) has a new interface and runs on MS Windows, MacOS, and the web version of Excel. (Before this version of Report Builder, you couldn’t use in on Mac unless you ran it on VMware.) This version doesn’t support traditional AA data request yet.
+* [Report Builder](/help/report-builder/report-buider-overview.md) has a new interface and runs on MS Windows, MacOS, and the web version of Excel. (Before this version of Report Builder, you couldn't use in on Mac unless you ran it on VMware.) This version doesn't support traditional AA data request yet.
 
 ## Changes to reporting
 
@@ -48,7 +48,7 @@ Notice that the report suite selector in the top right now lets you choose from 
 
 ![data-view-selector](assets/data-views.png)
 
-See [Use cases around data views](/help/data-views/data-views-usecases.md) for more information around this concept.
+See [Use cases around data views](/help/use-cases/data-views/data-views-usecases.md) for more information around this concept.
 
 ## Changes to the concept of eVars and props
 
@@ -62,7 +62,7 @@ With this flexibility, you may run into situations in which a single schema fiel
 
 Adobe has renamed the "segments" component to "filters" to better align with industry standards and provide better distinction with segments in Adobe Experience Platform.
 
-[!UICONTROL Customer Journey Analytics] no longer uses eVars, props, or events and instead uses the Experience Platform schema field name to which they’ve been mapped. This change means that none of the existing segments in Adobe Analytics are compatible with [!UICONTROL Customer Journey Analytics]. If you want to move existing Adobe Analytics segments to Customer Journey Analytics, see the following video:
+[!UICONTROL Customer Journey Analytics] no longer uses eVars, props, or events and instead uses the Experience Platform schema field name to which they've been mapped. This change means that none of the existing segments in Adobe Analytics are compatible with [!UICONTROL Customer Journey Analytics]. If you want to move existing Adobe Analytics segments to Customer Journey Analytics, see the following video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
 
@@ -90,7 +90,7 @@ You can also have multiple data views based on the same connection. For example,
 
 ## Changes to the concept of classifications
 
-"Classifications" are now known as "Lookup datasets". Lookup datasets are used to look up values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names. See [Add account-level data as a lookup dataset](/help/use-cases/b2b.md) for an example use case.
+"Classifications" are now known as "Lookup datasets". Lookup datasets are used to look up values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names. See [Add account-level data as a lookup dataset](/help/use-cases/b2b/b2b.md) for an example use case.
 
 ## Changes to the concept of customer attributes
 

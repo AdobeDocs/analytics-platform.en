@@ -43,7 +43,7 @@ The standard export job, however, contains more data and so we need to edit this
 
 Here is an example of the export output in the Profile union dataset, **before** any editing:
 
-![Unedited output](assets/export-unedited.png)
+![Unedited output](../assets/export-unedited.png)
 
 Note the following:
 
@@ -52,7 +52,7 @@ Note the following:
 
 This is the format of the Profile dataset that you can send into CJA.
 
-![Edited output](assets/export-edited.png)
+![Edited output](../assets/export-edited.png)
 
 Here are the data elements that need to be present:
 
@@ -61,7 +61,7 @@ Here are the data elements that need to be present:
 * `audienceMembershipId` string field: The audience ID from the export.  NOTE: This field can be named whatever you want (from your own schema).
 * Add a friendly name for the audience (`audienceMembershipIdName`), such as
 
-   ![Friendly audience name](assets/audience-name.png)
+   ![Friendly audience name](../assets/audience-name.png)
    
 * Add other audience metadata if you desire.
 

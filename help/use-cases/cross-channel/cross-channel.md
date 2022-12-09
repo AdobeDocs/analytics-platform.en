@@ -11,7 +11,7 @@ Have a single consolidated view of customer behavior across various channels by 
 
 ## Architecture
 
-![Cross channel architecture](assets/cross-channel-architecture.svg)
+![Cross channel architecture](../assets/cross-channel-architecture.svg)
 
 ## Implementation Steps
 
