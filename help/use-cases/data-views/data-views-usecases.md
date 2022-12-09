@@ -117,6 +117,8 @@ Schemas in Adobe Experience Platform contain [!UICONTROL Date] and [!UICONTROL D
 
 * For the Date-Time format, if you select **[!UICONTROL Minute of Day]** with the format **[!UICONTROL Hour:Minute]**, your output might look like: 20:20.
 
+We currently support dates after Jan 1, 1900 (with the single exception of Jan 1, 1970) and date-time values after Jan 1, 2000 00:00:00.
+
 ### Date and Date-Time use cases
 
 * Date: A travel company is collecting the departure date for trips as a field in their data. They would like to have a report which compares the [!UICONTROL Day of Week] for all departure dates collected to understand which is most popular. They would like to do the same for [!UICONTROL Month of Year].
