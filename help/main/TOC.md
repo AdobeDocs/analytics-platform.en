@@ -245,16 +245,18 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Data ingestion use cases](../use-cases/data-ingestion/data-ingestion.md)
     + [Ingest Marketo Engage data into AEP and report in CJA](../use-cases/data-ingestion/marketo.md)
     + [Ingest AEP audiences into CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
-  + Data views {data-views}
+  + Data views {#data-views}
     + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
-  + [Combine report suites with different schemas](../use-cases/combine-report-suites.md)
-  + [Use arrays of objects](../use-cases/object-arrays.md)
   + B2B {#b2b}
-  + [Add account-level data as a lookup dataset](../use-cases/b2b.md)
-  + [Analyze data across channels](../use-cases/cross-channel.md)
-  + [Import call center and web data](../use-cases/call-center.md)
-  + [Use Marketing channel dimensions](../use-cases/marketing-channels.md)
+  + [Add account-level data as a lookup dataset](../use-cases/b2b/b2b.md)
+  + Cross-channel data {#cross-channel}
+    + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
+    + [Import call center and web data](../use-cases/cross-channel/call-center.md)
+  + Adobe Analytics data {#aa-data}
+    + [Use Marketing channel dimensions](../use-cases/aa-data/marketing-channels.md)
+    + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
+  + [Use arrays of objects](../use-cases/object-arrays.md)
 + Labs {#labs}
   + [Labs User Guide](../labs/labs.md)
 + Troubleshooting {#troubleshooting}

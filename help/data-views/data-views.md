@@ -73,4 +73,4 @@ If you delete a data view in [!UICONTROL Customer Journey Analytics], an error m
 ## Next steps
 
 * [Create data views](/help/data-views/create-dataview.md)
-* [Data views use cases](/help/data-views/data-views-usecases.md)
+* [Data views use cases](/help/use-cases/data-views/data-views-usecases.md)

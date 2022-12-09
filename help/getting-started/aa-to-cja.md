@@ -38,7 +38,7 @@ A full global report suite may not always be feasible for an implementation. If 
 
 If you have avoided moving to a global report suite due to issues with [!UICONTROL Uniques Exceeded] or [!UICONTROL Low Traffic], know that CJA has no [cardinality limits on a dimension](/help/components/dimensions/high-cardinality.md). It allows for any unique value to appear and be counted.
 
-Here is a use case on [combining report suites with different schemas](/help/use-cases/combine-report-suites.md).
+Here is a use case on [combining report suites with different schemas](/help/use-cases/aa-date/combine-report-suites.md).
 
 ### 3. (Re)Configure your Marketing Channels {#marketing-channels}
 
@@ -105,7 +105,7 @@ Here are a couple of videos to guide you:
 
 ### Other considerations
 
-* Using the power of CJA data views, you have a lot more flexibility in the definition of metrics and dimensions within Customer Journey Analytics. For example, you can use the value of a dimension to become the definition of a metric. [Learn more](/help/data-views/data-views-usecases.md)
+* Using the power of CJA data views, you have a lot more flexibility in the definition of metrics and dimensions within Customer Journey Analytics. For example, you can use the value of a dimension to become the definition of a metric. [Learn more](/help/use-cases/data-views/data-views-usecases.md)
 
 * If you have defined a custom calendar in Adobe Analytics, you will have similar [custom calendar capabilities](/help/components/date-ranges/custom-date-ranges.md) within CJA. You need to ensure that your calendar is properly defined.
 
