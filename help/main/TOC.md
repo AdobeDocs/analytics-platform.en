@@ -65,7 +65,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Substring](../data-views/component-settings/substring.md)
     + [Value bucketing](../data-views/component-settings/value-bucketing.md)
   + [Standard component reference](../data-views/component-reference.md)
-  + [Data views use cases](../data-views/data-views-usecases.md)
   + [Labels and policies](../data-views/data-governance.md)
 + Workspace projects {#cja-workspace}
   + [Analysis Workspace overview](../analysis-workspace/home.md)
@@ -242,15 +241,19 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Ingest Google Analytics historical data into Platform](../use-cases/ga/backfill.md)
     + [Configure streaming Google Analytics data into Platform](../use-cases/ga/streaming.md)
     + [Report on Google Analytics data in CJA](../use-cases/ga/report.md)
+  + Data ingestion {data-ingestion}
+    + [Data ingestion use cases](../use-cases/data-ingestion/data-ingestion.md)
+    + [Ingest Marketo Engage data into AEP and report in CJA](../use-cases/data-ingestion/marketo.md)
+    + [Ingest AEP audiences into CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
+  + Data views {data-views}
+    + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
+    + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
   + [Combine report suites with different schemas](../use-cases/combine-report-suites.md)
   + [Use arrays of objects](../use-cases/object-arrays.md)
-  + [Use binding dimensions and metrics](../use-cases/binding-dimensions-metrics.md)
-  + [(B2B) Add account-level data as a lookup dataset](../use-cases/b2b.md)
-  + [Ingest Marketo Engage data into AEP and report in CJA](../use-cases/marketo.md)
-  + [Ingest AEP audiences into CJA](../use-cases/ingest-aep-segments.md)
+  + B2B {#b2b}
+  + [Add account-level data as a lookup dataset](../use-cases/b2b.md)
   + [Analyze data across channels](../use-cases/cross-channel.md)
   + [Import call center and web data](../use-cases/call-center.md)
-  + [Data ingestion use cases](../use-cases/data-ingestion.md)
   + [Use Marketing channel dimensions](../use-cases/marketing-channels.md)
 + Labs {#labs}
   + [Labs User Guide](../labs/labs.md)
