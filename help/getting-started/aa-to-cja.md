@@ -38,7 +38,7 @@ A full global report suite may not always be feasible for an implementation. If 
 
 If you have avoided moving to a global report suite due to issues with [!UICONTROL Uniques Exceeded] or [!UICONTROL Low Traffic], know that CJA has no [cardinality limits on a dimension](/help/components/dimensions/high-cardinality.md). It allows for any unique value to appear and be counted.
 
-Here is a use case on [combining report suites with different schemas](/help/use-cases/aa-date/combine-report-suites.md).
+Here is a use case on [combining report suites with different schemas](/help/use-cases/aa-data/combine-report-suites.md).
 
 ### 3. (Re)Configure your Marketing Channels {#marketing-channels}
 

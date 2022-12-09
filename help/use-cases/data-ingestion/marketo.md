@@ -34,12 +34,12 @@ One use case you might explore is: How many web page visits by leads did we have
 
 1. Create a [filter](/help/components/filters/create-filters.md) for web page views as follows - Event Type = web.webpagedetails.pageViews : 
 
-   ![](assets/marketo-filter.png)
+   ![](../assets/marketo-filter.png)
 
 1. Into the Freeform table, pull in the filter you created - Web Page Views, then pull in the Month date range. This gives you Web page visits by leads each month:
 
-   ![](assets/marketo-freeform.png)
+   ![](../assets/marketo-freeform.png)
 
 1. Or pull in the following dimensions: Person Key or Work Email Address. This gives you the Web page visits by each lead:
 
-   ![](assets/marketo-freeform2.png)
+   ![](../assets/marketo-freeform2.png)
