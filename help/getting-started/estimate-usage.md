@@ -15,7 +15,7 @@ To understand your CJA usage, you can use 3 methods:
 
 To manage your CJA usage:
 
-* Define a rolling data window. (See below.)
+* Define a rolling data window. (See **Define a rolling data window** below.)
 
 ## Estimate connection size {#estimate-size}
 
@@ -52,7 +52,7 @@ You may need to know how many rows of event data you currently have in [!UICONTR
 
 ## Create a Workspace project using all your event data {#workspace-event-data}
 
-1. Before you create the project in Workspace, [create a data view](/help/data-views/create-dataview.md) that pulls in data from ALL your connections and has no filters applied. In other words, it includes all your data.
+1. Before you create the project in Workspace, [create a data view](/help/data-views/create-dataview.md) for each of your connections and has no filters applied. 
 
 1. In Workspace, create a new project and pull in all events (from the **[!UICONTROL Metrics]** dropdown) leading up to the first Friday of the month, starting with the first day of your current CJA contract.
 
