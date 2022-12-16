@@ -57,8 +57,8 @@ You may need to know how many rows of event data you currently have in [!UICONTR
 
    ![Events](assets/events-usage.png)
 
-1. 
+1. do this
 
 ## Create a report in the CJA API {#api-report}
 
-Use the [CJA reporting API] to run a report on all your event data
+Use the [CJA reporting API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) to run a report on all your event data.
