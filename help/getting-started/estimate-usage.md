@@ -3,8 +3,8 @@ title: Estimate and manage your CJA usage
 description: Shows two methods of estimating usage and one method of managing it.
 role: Admin
 feature: CJA Basics
+exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
 ---
-
 # Estimate and manage your CJA usage
 
 To understand your CJA usage, you can use 3 methods:
@@ -62,6 +62,7 @@ You may need to know how many rows of event data you currently have in [!UICONTR
 
 1. Depending on your needs, you can drill down by dataset, etc. 
 
+
 ## Create an automated report in the CJA API {#api-report}
 
 1. Use the [CJA reporting API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) to run a report on all your event data, **for every connection**. Set this up so that the report runs 
@@ -82,3 +83,4 @@ The main benefit is that you store or report only on data that is applicable and
 If you leave the default (unchecked), the retention period will be superseded by the Adobe Experience Platform data retention setting. If you have 25 months' worth of data in Experience Platform, CJA will get 25 months of data through backfill. If you deleted 10 of those months in Platform, CJA would retain the remaining 15 months. 
 
 Data retention is based on event dataset timestamps and applies to event datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. However, if your connection includes any profile or lookup datasets (besides one or more event datasets), that data will be retained for the same time period.
+
