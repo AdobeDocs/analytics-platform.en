@@ -7,14 +7,15 @@ feature: CJA Basics
 
 # Estimate and manage your CJA usage
 
-To understand your CJA usage, you can use 2 methods:
+To understand your CJA usage, you can use 3 methods:
 
-* Add up the event data rows for each connection. (See **Estimate connection size** below)
-* Use Analysis Workspace to report on last month's events. (See **Create a Workspace project using all your event data** below.)
+* Add up the event data rows for each connection. (See **Estimate connection size** below) This is an easy way to see your event row data, per connection, for a specific timestamp. 
+* Use Analysis Workspace to report on last month's events. (See **Create a Workspace project using all your event data** below.) This allows you to do some deeper analysis of your usage data, as well as the history of your usage.
+* Use the CJA API to create an automated report. (See **Create a report in the CJA API** below.)
 
 To manage your CJA usage:
 
-* Use the CJA API. (See **Create a report in the CJA API** below.)
+* Define a rolling data window. (See below.)
 
 ## Estimate connection size {#estimate-size}
 
@@ -53,12 +54,31 @@ You may need to know how many rows of event data you currently have in [!UICONTR
 
 1. Before you create the project in Workspace, [create a data view](/help/data-views/create-dataview.md) that pulls in data from ALL your connections and has no filters applied. In other words, it includes all your data.
 
-1. In Workspace, create a new project and pull in all events (from the **[!UICONTROL Metrics]** dropdown) for the previous month.
+1. In Workspace, create a new project and pull in all events (from the **[!UICONTROL Metrics]** dropdown) leading up to the first Friday of the month, starting with the first day of your current CJA contract.
 
    ![Events](assets/events-usage.png)
 
-1. do this
+   This will give you a good idea of how your usage is trending month to month.
 
-## Create a report in the CJA API {#api-report}
+1. Depending on your needs, you can drill down by dataset, etc. 
 
-Use the [CJA reporting API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) to run a report on all your event data.
+## Create an automated report in the CJA API {#api-report}
+
+1. Use the [CJA reporting API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) to run a report on all your event data, **for every connection**. Set this up so that the report runs 
+
+   * on every third Friday of every month.
+   * going back to the first day of your current CJA contract.
+
+   This will give you a good idea of how your usage is trending month to month. It will give you the total number of rows on all of your CJA connections.
+
+1. Use Excel to further customize this report.
+
+## Define a rolling data window {#rolling}
+
+To manage your usage, the [connections UI](/help/connections/create-connection.md) lets you define CJA data retention as a rolling window in months (1 month, 3 months, 6 months, etc.), at the connection level.
+
+The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost.
+
+If you leave the default (unchecked), the retention period will be superseded by the Adobe Experience Platform data retention setting. If you have 25 months' worth of data in Experience Platform, CJA will get 25 months of data through backfill. If you deleted 10 of those months in Platform, CJA would retain the remaining 15 months. 
+
+Data retention is based on event dataset timestamps and applies to event datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. However, if your connection includes any profile or lookup datasets (besides one or more event datasets), that data will be retained for the same time period.
