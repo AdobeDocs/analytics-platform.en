@@ -3,8 +3,8 @@ title: Estimate and manage your CJA usage
 description: Shows two methods of estimating usage and one method of managing it.
 role: Admin
 feature: CJA Basics
+exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
 ---
-
 # Estimate and manage your CJA usage
 
 To understand your CJA usage, you can use 2 methods:
