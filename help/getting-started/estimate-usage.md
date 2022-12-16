@@ -9,12 +9,12 @@ feature: CJA Basics
 
 To understand your CJA usage, you can use 2 methods:
 
-* Add up the event data for each connection (see **Estimate connection size** below)
-* Use Analysis Workspace to...
+* Add up the event data rows for each connection. (See **Estimate connection size** below)
+* Use Analysis Workspace to report on last month's events. (See **Create a Workspace project using all your event data** below.)
 
 To manage your CJA usage:
 
-* Use the CJA API 
+* Use the CJA API. (See **Create a report in the CJA API** below.)
 
 ## Estimate connection size {#estimate-size}
 
@@ -30,9 +30,13 @@ You may need to know how many rows of event data you currently have in [!UICONTR
 
 1. Click each connection name to get to the Connections Manager.
 
-1. Add up the **[!UICONTROL Records of event data available]** for all connections created. (Depending on the size of your connection, the number may take awhile to appear.)
+1. Add up the **[!UICONTROL Records of event data available]** for every connection your organization has created. (Depending on the size of your connection, the number may take awhile to appear.)
 
     ![event data](assets/event-data.png)
+
+   >[!CAUTION]
+   >
+   >   This count applies to event data only, not to profile or lookup data. If you have profile and lookup data, the count will be slightly higher. However, there is currently no way to report on profile and lookup data usage in the user interface. This functionality is slated for 2023.
 
 1. Once you have a sum of all event data rows, look up the "Rows of Data" entitlement in the Customer Journey Analytics contract that your company signed with Adobe. 
 
@@ -44,3 +48,17 @@ You may need to know how many rows of event data you currently have in [!UICONTR
     * [Delete any unused connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
     * [Delete a dataset in AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
     * Contact your Adobe Account Manager to license additional capacity. 
+
+## Create a Workspace project using all your event data {#workspace-event-data}
+
+1. Before you create the project in Workspace, [create a data view](/help/data-views/create-dataview.md) that pulls in data from ALL your connections and has no filters applied. In other words, it includes all your data.
+
+1. In Workspace, create a new project and pull in all events (from the **[!UICONTROL Metrics]** dropdown) for the previous month.
+
+   ![Events](assets/events-usage.png)
+
+1. 
+
+## Create a report in the CJA API {#api-report}
+
+Use the [CJA reporting API] to run a report on all your event data
