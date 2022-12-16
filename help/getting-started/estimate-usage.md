@@ -1,6 +1,6 @@
 ---
 title: Estimate and manage your CJA usage
-description: 
+description: Shows two methods of estimating usage and one method of managing it.
 role: Admin
 feature: CJA Basics
 ---
