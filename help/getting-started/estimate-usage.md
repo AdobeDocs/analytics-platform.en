@@ -52,9 +52,9 @@ You may need to know how many rows of event data you currently have in [!UICONTR
 
 ## Create a Workspace project using all your event data {#workspace-event-data}
 
-1. Before you create the project in Workspace, [create a data view](/help/data-views/create-dataview.md) for each of your connections and has no filters applied. 
+1. Before you create the project in Workspace, [create a data view](/help/data-views/create-dataview.md) for each of your connections, without any filters applied. 
 
-1. In Workspace, create a new project and pull in all events (from the **[!UICONTROL Metrics]** dropdown) leading up to the first Friday of the month, starting with the first day of your current CJA contract.
+1. In Workspace, create new projects based on each of the data views and pull in all events (from the **[!UICONTROL Metrics]** dropdown) leading up to the first Friday of the month, starting with the first day of your current CJA contract.
 
    ![Events](assets/events-usage.png)
 
