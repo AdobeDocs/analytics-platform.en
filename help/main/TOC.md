@@ -29,7 +29,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Customer Journey Analytics landing page](../getting-started/landing.md)
   + [Adobe Analytics to Customer Journey Analytics evolution](../getting-started/aa-to-cja.md)
   + [User Guide for new Customer Journey Analytics users](../getting-started/aa-to-cja-user.md)
-  + [Estimate and manage CJA usage](../getting-started/estimate-usage.md)
+  + [View and manage CJA usage](../getting-started/estimate-usage.md)
   + [Frequently asked questions](../getting-started/cja-faq.md)
   + Compare Adobe Analytics and Customer Journey Analytics {#compare-aa-cja}
     + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
