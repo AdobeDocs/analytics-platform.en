@@ -56,7 +56,11 @@ You may need to know how many rows of event data you currently have in [!UICONTR
 
 This method allows you to do some deeper analysis of your usage data, as well as the history of your usage.
 
-1. Before you create the project in Workspace, [create a data view](/help/data-views/create-dataview.md) for each of your connections, without any filters applied. 
+1. Before you create the project in Workspace, [create a data view](/help/data-views/create-dataview.md) for each of your connections, without any filters applied.
+
+>[!WARNING]
+>
+>    Do not create a new connection that encompasses all your data just for measuring usage, as that would effectively double your usage. 
 
 1. In Workspace, create new projects based on each of the data views and pull in all events (from the **[!UICONTROL Metrics]** dropdown) leading up to the first Friday of the month, starting with the first day of your current CJA contract.
 
