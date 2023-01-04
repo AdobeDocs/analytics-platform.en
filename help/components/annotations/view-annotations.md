@@ -3,7 +3,7 @@ title: View annotations
 description: How to view annotations in Workspace.
 role: User, Admin
 feature: Components
-exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
+exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
 ---
 # View annotations
 

@@ -45,17 +45,17 @@ Marketing channel settings operate differently between Platform data and report 
 
 * **Is First Page of Visit**: This rule criteria is common on several default marketing channel definitions. Any processing rule that contains this criteria is ignored in Platform (other criteria in the same rule still apply). Sessions are determined at data query time instead of at the time of data collection, preventing Platform from using this specific rule criteria. Adobe recommends re-evaluating any marketing channel processing rules containing the 'Is First Page of Visit' criteria, opting for alternative approaches that achieve your goals.
    
-   ![First page of visit](assets/first-page-of-visit.png)
+   ![First page of visit](../assets/first-page-of-visit.png)
 
 * **Override Last-Touch Channel**: This setting in the Marketing Channel Manager normally prevents certain channels from getting last touch channel credit. Platform ignores this setting, allowing broad channels like 'Direct' or 'Internal' to attribute toward metrics in potentially undesired ways. Adobe recommends removing channels where you have 'Override Last-Touch Channel' unchecked.
   * You can delete the 'Direct' marketing channel in the Marketing Channel Manager, then rely on CJA's 'No value' dimension item for that channel. You can also rename this dimension item to 'Direct' or exclude the dimension item entirely when configuring a data view.
   * Alternatively, you can create a marketing channel classification, classifying each value to itself except for channels that you want to exclude in CJA. You can then use this classification dimension when creating a data view instead of `channel.typeAtSource`.
 
-   ![Override last touch channel](assets/override-last-touch-channel.png)
+   ![Override last touch channel](../assets/override-last-touch-channel.png)
 
 * **Marketing Channel Expiration**: This engagement period setting determines the period of inactivity before a visitor can obtain a new first touch channel in report suite data. Platform uses its own attribution settings, so this setting is ignored entirely in CJA.
 
-   ![Marketing channel expiration](assets/marketing-channel-expiration.png)
+   ![Marketing channel expiration](../assets/marketing-channel-expiration.png)
 
 ## Comparing data between CJA and traditional Analytics
 

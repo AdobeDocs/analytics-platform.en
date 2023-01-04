@@ -3,7 +3,7 @@ description: Use the flow visualization in a Workspace project.
 title: Configure a flow visualization
 feature: Visualizations
 role: User, Admin
-exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
+exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 ---
 # Configure a flow visualization
 
@@ -146,4 +146,4 @@ Expected Flow Output:
  
 However, if **[!UICONTROL Limit to first/last occurrence]** is *enabled*, only the last occurrence of [!UICONTROL Add to cart] would be included in the analysis.
 Expected Flow Output:
-“Products” (1) <— “Add to cart” (1) 
+“Products” (1) <— “Add to cart” (1)

@@ -35,7 +35,7 @@ When importing data into Platform, following these tips can help increase insigh
 
 ## Stitch the person ID's together
 
-CJA requires a common identifier to generate a [combined dataset](../connections/combined-dataset.md).
+CJA requires a common identifier to generate a [combined dataset](/help/connections/combined-dataset.md).
 
 * If your datasets already have a common identifier on every event across both datasets, you can skip this step and proceed to create a connection.
 * If either of your datasets have a common identifier on only some events, you can stitch data together using Cross-Channel Analytics. See [Cross-Channel Analytics overview](/help/connections/cca/overview.md) for steps to enable CCA for these two datasets.

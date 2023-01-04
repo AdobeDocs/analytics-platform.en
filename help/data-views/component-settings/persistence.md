@@ -72,7 +72,7 @@ Details around the available expiration settings.
 
 A dropdown that lets you bind the persistence of a dimension value to dimension values in another dimension. Valid dropdown options include other dimensions included in the data view.
 
-See [Using binding dimensions and metrics in CJA](../../use-cases/binding-dimensions-metrics.md) for examples around how to effectively use binding dimensions.
+See [Using binding dimensions and metrics in CJA](../../use-cases/data-views/binding-dimensions-metrics.md) for examples around how to effectively use binding dimensions.
 
 ## [!UICONTROL Binding Metric]
 
@@ -80,4 +80,4 @@ A dropdown that lets you choose a metric that acts as a binding trigger. Valid d
 
 This setting only appears when the Binding Dimension is lower in the object array than the component. When the binding metric is present in an event, dimension values are copied from the event-level dimension down to the lower schema level of the binding dimension.
 
-See the second example under [Using binding dimensions and metrics in CJA](../../use-cases/binding-dimensions-metrics.md) for more information around how to effectively use binding metrics.
+See the second example under [Using binding dimensions and metrics in CJA](../../use-cases/data-views/binding-dimensions-metrics.md) for more information around how to effectively use binding metrics.

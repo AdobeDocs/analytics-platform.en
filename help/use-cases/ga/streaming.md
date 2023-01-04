@@ -1,6 +1,7 @@
 ---
 title: Configure streaming Google Analytics data into Adobe Experience Platform
 description: Learn how to set up your implementation to send a Google data layer into Adobe Experience Platform
+exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
 ---
 # Configure streaming Google Analytics data into Adobe Experience Platform
 

@@ -9,7 +9,7 @@ feature: Use Cases
 
 Customer Journey Analytics offers several ways to persist dimension values beyond the hit that they are set on. One of the persistence methods that Adobe offers is known as Binding. In previous versions of Adobe Analytics, this concept was known as merchandising.
 
-While you can use binding dimensions with top-level event data, this concept is best used when working with [Arrays of objects](object-arrays.md). You can attribute a dimension to one part of an object array without applying it to all of the attributes in a given event. For example, you can attribute a search term to one product in your shopping cart object array without binding that search term to the entire event.
+While you can use binding dimensions with top-level event data, this concept is best used when working with [Arrays of objects](/help/use-cases/object-arrays.md). You can attribute a dimension to one part of an object array without applying it to all of the attributes in a given event. For example, you can attribute a search term to one product in your shopping cart object array without binding that search term to the entire event.
 
 ## Example 1: Use binding dimensions to attribute additional product attributes to a purchase
 
@@ -74,7 +74,7 @@ If you wanted to look at revenue by color without a binding dimension, the dimen
 
 You can go into the Data View Manager and bind product color to product name:
 
-![Binding dimension](assets/binding-dimension.png)
+![Binding dimension](../assets/binding-dimension.png)
 
 When you set this persistence model, CJA takes note of the product name whenever product color is set. When it recognizes the same product name in a subsequent event for this visitor, the product color is brought over as well. The same data when you bind product color to product name would look similar to the following:
 
@@ -247,7 +247,7 @@ While this example includes only one visitor, many visitors who search for diffe
 
 You can bind search terms to product name whenever the Searches metric is present to correctly attribute search term to revenue.
 
-![Binding metric](assets/binding-metric.png)
+![Binding metric](../assets/binding-metric.png)
 
 In Analysis Workspace, the resulting report would look similar to the following:
 
@@ -336,7 +336,7 @@ If you use Most Recent allocation with Person expiration, the `"grownup movie"` 
 
 However, if you bound `search_term` to `ProfileID`, each profile's searches would be isolated to their own profile, attributed to the correct shows that they search for.
 
-![Visitor binding](assets/binding-visitor.png)
+![Visitor binding](../assets/binding-visitor.png)
 
 Analysis Workspace would correctly attribute the second episode of Orangey to the search term `"kids show"` without taking searches from other profiles into account.
 

@@ -27,10 +27,12 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Consistency of metrics and audience membership counts between Real-time CDP and CJA](../getting-started/consistency-rcdp-cja.md)
   + [CJA Access Control](../getting-started/cja-access-control.md)
   + [Customer Journey Analytics landing page](../getting-started/landing.md)
-  + [Frequently asked questions](../getting-started/cja-faq.md)
   + [Adobe Analytics to Customer Journey Analytics evolution](../getting-started/aa-to-cja.md)
   + [User Guide for new Customer Journey Analytics users](../getting-started/aa-to-cja-user.md)
+  + [View and manage CJA usage](../getting-started/estimate-usage.md)
+  + [Frequently asked questions](../getting-started/cja-faq.md)
   + Compare Adobe Analytics and Customer Journey Analytics {#compare-aa-cja}
+    + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
     + [Customer Journey Analytics feature support](../getting-started/aa-vs-cja/cja-aa.md)
     + [Compare terminology for Analytics data passed through the Analytics Source Connector](../getting-started/aa-vs-cja/terminology.md)
     + [Compare data processing across Adobe Analytics and CJA](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -64,7 +66,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Substring](../data-views/component-settings/substring.md)
     + [Value bucketing](../data-views/component-settings/value-bucketing.md)
   + [Standard component reference](../data-views/component-reference.md)
-  + [Data views use cases](../data-views/data-views-usecases.md)
   + [Labels and policies](../data-views/data-governance.md)
 + Workspace projects {#cja-workspace}
   + [Analysis Workspace overview](../analysis-workspace/home.md)
@@ -231,6 +232,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Executive user quick start guide](../mobile-app/executive.md)
 + Adobe integrations {#integrations}
   + [Integrate Adobe solutions with CJA overview](/help/integrations/overview.md)
+  + [Integrate Adobe Analytics with Customer Journey Analytics](/help/integrations/aa.md)
   + [Integrate Journey Optimizer data with CJA](/help/integrations/ajo.md)
   + [Integrate Customer AI data with CJA](/help/integrations/customer-ai.md)
 + Use cases {#cja-usecases}
@@ -240,16 +242,22 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Ingest Google Analytics historical data into Platform](../use-cases/ga/backfill.md)
     + [Configure streaming Google Analytics data into Platform](../use-cases/ga/streaming.md)
     + [Report on Google Analytics data in CJA](../use-cases/ga/report.md)
-  + [Combine report suites with different schemas](../use-cases/combine-report-suites.md)
+  + Data ingestion {#data-ingestion}
+    + [Data ingestion use cases](../use-cases/data-ingestion/data-ingestion.md)
+    + [Ingest Marketo Engage data into AEP and report in CJA](../use-cases/data-ingestion/marketo.md)
+    + [Ingest AEP audiences into CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
+  + Data views {#data-views}
+    + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
+    + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
+  + B2B {#b2b}
+  + [Add account-level data as a lookup dataset](../use-cases/b2b/b2b.md)
+  + Cross-channel data {#cross-channel}
+    + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
+    + [Import call center and web data](../use-cases/cross-channel/call-center.md)
+  + Adobe Analytics data {#aa-data}
+    + [Use Marketing channel dimensions](../use-cases/aa-data/marketing-channels.md)
+    + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
   + [Use arrays of objects](../use-cases/object-arrays.md)
-  + [Use binding dimensions and metrics](../use-cases/binding-dimensions-metrics.md)
-  + [(B2B) Add account-level data as a lookup dataset](../use-cases/b2b.md)
-  + [Ingest Marketo Engage data into AEP and report in CJA](../use-cases/marketo.md)
-  + [Ingest AEP audiences into CJA](../use-cases/ingest-aep-segments.md)
-  + [Analyze data across channels](../use-cases/cross-channel.md)
-  + [Import call center and web data](../use-cases/call-center.md)
-  + [Data ingestion use cases](../use-cases/data-ingestion.md)
-  + [Use Marketing channel dimensions](../use-cases/marketing-channels.md)
 + Labs {#labs}
   + [Labs User Guide](../labs/labs.md)
 + Troubleshooting {#troubleshooting}
@@ -257,4 +265,5 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Data Governance {#cja-privacy}
   + [Data Governance](../privacy/privacy-overview.md)
   + [Audit Log](../privacy/audit-log.md)
+  + [Customer Managed Keys](../privacy/cmk.md)
 + [CJA API](https://developer.adobe.com/cja-apis/docs/)

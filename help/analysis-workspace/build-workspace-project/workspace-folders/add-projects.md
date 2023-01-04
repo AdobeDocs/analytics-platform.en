@@ -5,8 +5,8 @@ title: Add Folders in Workspace
 feature: CJA Workspace Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 ---
-
 # Add Projects to Folders
 
 You can add projects to a folder in the table view or from within a folder.

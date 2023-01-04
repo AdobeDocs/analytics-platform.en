@@ -5,8 +5,8 @@ title: Create Folders
 feature: CJA Workspace Basics
 hide: yes
 hidefromtoc: yes
+exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
 ---
-
 # Create folders
 
 You can add a new folder or a subfolder to the list of projects and folders on your Workspace landing page.

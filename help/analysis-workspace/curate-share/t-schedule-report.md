@@ -78,12 +78,12 @@ After your company has purchased the Healthcare Shield SKU and has been enabled 
 
 The password requirements conform to the Adobe standard, requiring a minimum of 8 characters with at least one number and one special character. 
 
-### New scheduled project
+### Password-protect a new scheduled project
 
 1. After you have saved your project, go to **[!UICONTROL Share]** > **[!UICONTROL Send file now]**, or [!UICONTROL Share] > **[!UICONTROL Send file on schedule]**.
 1. Follow the instructions above, under [Send file now](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) or [Send file on schedule](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
 
-### Existing scheduled project 
+### Password-protect an existing scheduled project 
 
 Prior to the time for which a project is scheduled, the project's owner will receive an email similar to this:
 
