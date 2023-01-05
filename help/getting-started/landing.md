@@ -15,7 +15,7 @@ The landing page for Customer Journey Analytics features a project manager home 
 
 After you log in to Adobe Experience Cloud and Customer Journey Analytics, enable the [!UICONTROL New landing page - Beta] toggle button in the lower left corner. Access to the toggle button is user specific per organization, not company specific.
 
-![Landing](assets/landing.png)
+![Landing](assets/landing-all2.png)
 
 You can
 
