@@ -4,9 +4,9 @@ description: Latest CJA release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 ---
-# Customer Journey Analytics (CJA) release notes (October/November 2022)
+# Current Customer Journey Analytics (CJA) release notes (January 2023)
 
-**Last update**: October 25, 2022
+**Last update**: January 5, 2023
 
 Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -14,29 +14,27 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 
 | Feature | Description | [Start of Rollout](/help/release-notes/releases.md) | [General Availability](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **[!UICONTROL Key metric summary] visualization** |  The [!UICONTROL Key metric summary] visualization lets you see how an important metrics is trending within a single timeframe. It also lets you compare metric performance across two timeframes. [Learn more](/help/analysis-workspace/visualizations/key-metric.md)  | October 5, 2022 | October 19, 2022 |
-| **Case-insensitive multi-value variables** | For case-insensitive multi-value variables, the values stored in `mvvar1` - `mvvar3` will no longer be automatically lowercased. Instead, data passed through the Analytics Source Connector to Adobe Experience Platform and CJA will reflect the original case that was passed in from the page. ASC/CJA columns `_experience.analytics.customDimensions.lists.list1.list[]` - `_experience.analytics.customDimensions.lists.list3.list[]` are impacted by this change.| N/A | October 24, 2022 |
-| **CJA Audit Log** | Customer Journey Analytics (CJA) lets you audit user activity for various services and capabilities in the form of "audit logs". These logs form an audit trail that can help with troubleshooting issues, and help your business effectively comply with corporate data stewardship policies and regulatory requirements, such as the Health Insurance Portability and Accountability Act (HIPAA). These logs were previously only available via the Audit Logs API. [Learn more](/help/privacy/audit-log.md) | N/A | October 26, 2022 |
-| **HIPAA readiness** | Adobe now supports receiving, using, maintaining, or transmitting Protected Health Information in Customer Journey Analytics and other Experience Platform-based applications for Healthcare Shield customer only. Healthcare Shield is for healthcare customers that are either a Covered Entity or Business Associate in the US only. [Learn More](https://www.adobe.com/trust/compliance/hipaa-ready.html) | N/A | November 7, 2022 |
-| **Password protection for scheduled projects** | This feature is part of HIPAA readiness and applies only to Healthcare Shield customers. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password) | N/A/ | November 7, 2022. |
+| **Folders in Workspace** | Folders help you organize and categorize your projects for better retrieval and access. In addition, a shared **[!UICONTROL Company]** folder allows Admins to easily create and share content with all Workspace users. [Learn more](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html) | N/A | January 11, 2023 |
+| **Default landing page** |The [new landing page](/help/getting-started/landing.md) that was introduced earlier in 2022 will become the default experience for all users on **January 11, 2023**. The legacy landing page will be deprecated and everyone will be required to use the new experience. | N/A | January 11, 2023 |
+| **Schedule workbooks in Report Builder** | In Customer Journey Analytics, you can create schedules to send workbooks at regular intervals. Now recipients can receive the latest updates to your workbooks on a regular basis. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/schedule-reportbuilder.html) | N/A | January 11, 2023 |
+| **Auto-save new projects** | Analysis Workspace now auto-saves newly created projects. If for any reason you unexpectedly lose access to a newly created project before manually saving it, a recovery version of your project is now available. Previously, projects were auto-saved only after they were initially saved manually. [Learn more](/help/analysis-workspace/build-workspace-project/save-projects.md) | N/A | January 11, 2023 |
+| **Enhanced user preferences** | You can now configure additional preferences at the user level (in [!UICONTROL Components] > [!UICONTROL Preferences]). When you set user preference, your selections span across your projects, tables, and visualizations. The Preferences page now contains the following new tabs, each containing many new configuration options:<ul><li>Freeform table</li><li>Visualizations>/li></ul>. In addition, more preferences are now available on the **[!UICONTROL General]** and **[!UICONTROL Project]** tabs.<p>Previously, many of these preferences were configurable only for individual projects, tables, and visualizations. [Learn more](/help/analysis-workspace/user-preferences.md) | N/A | January 11, 2023 |
 
 {style="table-layout:auto"}
 
 ## Fixes
 
-* Fixed an issue where recent MacOS versions were incorrectly named as "Macintosh". With this fix, the OS dimension will begin using "MacOS" version numbering, starting with MacOS 11. (AN-301834)
+TBD
 
 ### Other Fixes
 
-AN-302367; AN-302562; AN-304036
+TBD
 
 ## Important notices for CJA Administrators
 
 | Notice | Notice added or updated | Description |
 | --- | --- | --- |
-| **Default landing page** | September 29, 2023 | The [new landing page](/help/getting-started/landing.md) that was introduced earlier this year will become the default experience for all users in **January 2023**. The current page will be deprecated and everyone will be required to use the new experience. |
-| **Improved IP-to-geolocation mapping** | September 29, 2022 | Adobe's vendor for IP lookups, Digital Element, is upgrading to a new improved dataset (NetAcuity Pulse) for IP-to-geolocation mapping. Adobe Analytics has postponed the adoption of this new dataset to **January of 2023**. The new database will be more accurate than previous versions. Some IP-to-geo mappings will change/improve when the new database is adopted.<p> CJA data provided through the [!UICONTROL Analytics Source Connector] will also automatically take advantage of the new mappings. |
-| **[!UICONTROL Anomaly detection] auto-run conditions** | September 29, 2022 | Today, [!UICONTROL Anomaly detection] auto-runs on all columns of time-series freeform tables. To ensure data is available for analysis and projects load faster, Adobe will change how [!UICONTROL Anomaly detection] auto-runs. Starting **October 26, 2022**, Anomaly detection will auto-run only on the first metric column in a table. You can configure column settings to run [!UICONTROL Anomaly detection] on other columns, if needed. |
+| **Improved IP-to-geolocation mapping** | September 29, 2022 | Adobe's vendor for IP lookups, Digital Element, is upgrading to a new improved dataset (NetAcuity Pulse) for IP-to-geolocation mapping. Adobe Analytics has postponed the adoption of this new dataset to **January 11, 2023**. The new database will be more accurate than previous versions. Some IP-to-geo mappings will change/improve when the new database is adopted.<p> CJA data provided through the [!UICONTROL Analytics Source Connector] will also automatically take advantage of the new mappings. |
 
 {style="table-layout:auto"}
 
