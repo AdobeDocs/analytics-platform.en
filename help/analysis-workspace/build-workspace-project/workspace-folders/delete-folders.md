@@ -2,7 +2,7 @@
 description: Learn how to delete folders in Workspace
 keywords: Analysis Workspace
 title: Delete Folders in Workspace
-feature: Workspace Basics
+feature: CJA Workspace Basics
 ---
 
 # Delete Folders 
