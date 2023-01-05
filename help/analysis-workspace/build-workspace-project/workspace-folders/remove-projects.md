@@ -5,7 +5,7 @@ title: Remove projects from folders
 feature: CJA Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 ---
-## Remove a Project from a Folder
+# Remove a Project from a Folder
 
 To remove a project from a folder, you can move the project to another location or delete the project.
 
