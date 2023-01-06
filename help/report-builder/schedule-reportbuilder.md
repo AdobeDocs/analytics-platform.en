@@ -25,7 +25,7 @@ Use the Schedule task button in the Report Builder hub to quickly create a sched
 
 1.  Click Schedule Workbook.
 
-    ![alt description](./assets/schedule-workbook.png){width="75%"}
+    ![alt description](./assets/schedule-workbook.png){width="25%"}
 
     The scheduling pane displays some pre-defined information about the workbook such as the workbook name and the last date that the workbook was modified.
 
