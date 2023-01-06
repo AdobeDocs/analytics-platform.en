@@ -5,7 +5,6 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-exl-id: 
 ---
 
 # Schedule Workbooks
