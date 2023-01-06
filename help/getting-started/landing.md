@@ -18,7 +18,7 @@ The landing page for Customer Journey Analytics brings together both [!DNL Analy
 | Expand [!UICONTROL Projects] table to full screen | To expand the table, just click the hamburger menu icon. This action will collapse the left-rail tabs. | ![Expand table](assets/landing-collapse2.png) |
 | Customize column width | Previously, the column width was fixed. Now you can adjust it by dragging the column separator. | ![Column width](assets/column-width.png)  |
 | Reorder pinned items | To move pinned items up and down, click the ellipsis next to the pinned item and select **[!UICONTROL Move up]** or **[!UICONTROL Move down]**. | ![Move pinned items](assets/move-up-down.png) |
-| New table columns | Click the [!UICONTROL Customize table] icon at the top right of the table. New table columns include: <ul><li>**[!UICONTROL Scheduled]**: Set to [!UICONTROL On] when a project is scheduled or [!UICONTROL Off] when it is not. Clicking the [!UICONTROL On] link lets you see information about the scheduled project. You can also [edit the project schedule](/help/analyze/analysis-workspace/curate-share/t-schedule-report.md) if you are the project owner.</li><li>**[!UICONTROL Project ID]**: The project ID can be used for debugging projects.</li><li>**[!UICONTROL Longest Date Range]**: Longer date ranges increase project complexity and may increase processing and load times. </li><li>**[!UICONTROL Number of Queries]**: The total number of requests made to Analytics when the project loads. A higher number of project queries increases project complexity and may increase processing and load times. This data is available only after a project has loaded or a scheduled project was sent. </li></ul> | ![New columns](assets/new-columns.png)  |
+| New table columns | Click the [!UICONTROL Customize table] icon at the top right of the table. New table columns include: <ul><li>**[!UICONTROL Scheduled]**: Set to [!UICONTROL On] when a project is scheduled or [!UICONTROL Off] when it is not. Clicking the [!UICONTROL On] link lets you see information about the scheduled project. You can also [edit the project schedule](../analysis-workspace/curate-share/t-schedule-report.md) if you are the project owner.</li><li>**[!UICONTROL Project ID]**: The project ID can be used for debugging projects.</li><li>**[!UICONTROL Longest Date Range]**: Longer date ranges increase project complexity and may increase processing and load times. </li><li>**[!UICONTROL Number of Queries]**: The total number of requests made to Analytics when the project loads. A higher number of project queries increases project complexity and may increase processing and load times. This data is available only after a project has loaded or a scheduled project was sent. </li></ul> | ![New columns](assets/new-columns.png)  |
 | Single click to open a report | Previously, you had to double click. |  |
 | New links to **[!UICONTROL Reports & Analytics]** reports | <ul><li>**[!UICONTROL Reports]** > **[!UICONTROL Audience]** > **[!UICONTROL Bots]**</li><li>**[!UICONTROL Reports]** > **[!UICONTROL Audience]** > **[!UICONTROL Bot Pages]**<li>**[!UICONTROL Reports]** > **[!UICONTROL Engagement]** > **[!UICONTROL Real-Time]**</li></ul> | ![New links](assets/report-links.png) |
 | New out-of-the-box reports | <ul><li>**[!UICONTROL Reports]** > **[!UICONTROL Most popular]** > **[!UICONTROL Next page]**</li><li>**[!UICONTROL Reports]** > **[!UICONTROL Most popular]** > **[!UICONTROL Previous page]**</li><li>**[!UICONTROL Reports]** > **[!UICONTROL Engagement]** > **[!UICONTROL Page analysis]** > **[!UICONTROL Page summary]**</li></ul>Note that these reports are in [!UICONTROL Workspace] format and require configuration and build. The output consists of a panel of high-level metrics, trended data, [!UICONTROL Flow] visualization, and more. You can modify these reports and change dimensions, dimension items, etc. These reports are also available as panels under Workspace panels. | ![Next page](assets/next-page.png) |
@@ -26,13 +26,6 @@ The landing page for Customer Journey Analytics brings together both [!DNL Analy
 | Also available in Customer Journey Analytics | This landing page, in a modified form, is also available in CJA. |  |
 
 {style="table-layout:auto"}
-
-## Top menu structure {#top-menu}
-
-![Top menu](assets/top-menus.png)
-
-* Top Analytics menu: Most reports are now in the [!UICONTROL Reports] menu in the left rail.
-* The left rail has three tabs: [!UICONTROL Projects], [!UICONTROL Reports], and [!UICONTROL Learning].
 
 ### Terminology 
 
@@ -42,7 +35,7 @@ The landing page for Customer Journey Analytics brings together both [!DNL Analy
 
 ## Navigate the [!UICONTROL Projects] tab {#navigate-projects}
 
-[!UICONTROL Projects] serves as the [!UICONTROL Workspace] home page. The Projects tab displays the Company folder, any personal folders you created, your projects, and Mobile scorecards. Use this page to view, create, and modify folders, projects, and mobile scorecards. For more information, see [About Folders in Analytics](/help/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).
+[!UICONTROL Projects] serves as the [!UICONTROL Workspace] home page. The Projects tab displays the Company folder, any personal folders you created, your projects, and Mobile scorecards. Use this page to view, create, and modify folders, projects, and mobile scorecards. For more information, see [About Folders in Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).
 
 ![Landing all](assets/landing-all2.png)
 
@@ -52,7 +45,7 @@ The landing page for Customer Journey Analytics brings together both [!DNL Analy
 
 | UI element | Definition |
 | --- | --- |
-| Edit preferences | Lets you [!UICONTROL View Tutorials], and [Edit user preferences](/help/analyze/analysis-workspace/user-preferences.md). |
+| Edit preferences | Lets you [!UICONTROL View Tutorials], and [Edit user preferences](/analysis-workspace/user-preferences.md). |
 | [!UICONTROL Create new] | Opens the project modal where you can create a Workspace project or a Mobile scorecard or open a company template.  |
 | [!UICONTROL Show less<br> Show more] | Toggles between not showing and showing the banner: ![Top banner](assets/top-banner.png) |
 | [!UICONTROL Workspace project] | Creates a blank [Workspace project](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) for you to  design and build. |
@@ -73,7 +66,7 @@ The landing page for Customer Journey Analytics brings together both [!DNL Analy
 | [!UICONTROL Report Suite] | Identifies the Report Suites that are associated with the project.<br>Tables and visualizations within a panel derive data from the report suite selected in the top right of the panel. The report suite also determines what components are available in the left rail. Within a project, you can use one or many report suites depending on your analysis use cases. The list of report suites is sorted on relevance. Adobe defines relevance based on how recently and frequently the suite has been used by the current user, and how frequently the suite is used within the organization. |
 | [!UICONTROL Owner] | Identifies the person who created the project. |
 | [!UICONTROL Last opened] | Identifies the date you last opened the project. |
-| Customize table icon | Selects which columns to view in the table. To add or remove columns from the list of projects, click the column icon (![Landing all](/help/analyze/assets/select-column.png) ) in the top-right, then select or deselect column titles.|
+| Customize table icon | Selects which columns to view in the table. To add or remove columns from the list of projects, click the column icon (![Landing all](assets/select-column.png) ) in the top-right, then select or deselect column titles.|
 | SHOW: Folders & Projects or All Projects | Changes the view setting on the table to show folders and projects according to your folder organization **or** show all of your projects in an unorganized list. |
 | < (Back button) | Returns you to your most recent landing page configuration in a Workspace project or a report. The page configuration you had when you left the landing page will persist when you return. |
 
