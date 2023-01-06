@@ -45,7 +45,7 @@ The landing page for Customer Journey Analytics brings together both [!DNL Analy
 
 | UI element | Definition |
 | --- | --- |
-| Edit preferences | Lets you [!UICONTROL View Tutorials], and [Edit user preferences](/analysis-workspace/user-preferences.md). |
+| Edit preferences | Lets you [!UICONTROL View Tutorials], and [Edit user preferences](/help/analysis-workspace/user-preferences.md). |
 | [!UICONTROL Create new] | Opens the project modal where you can create a Workspace project or a Mobile scorecard or open a company template.  |
 | [!UICONTROL Show less<br> Show more] | Toggles between not showing and showing the banner: ![Top banner](assets/top-banner.png) |
 | [!UICONTROL Workspace project] | Creates a blank [Workspace project](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) for you to  design and build. |
