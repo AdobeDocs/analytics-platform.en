@@ -7,13 +7,11 @@ exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 ---
 # Customer Journey Analytics landing page
 
-The landing page for Customer Journey Analytics brings together both [!DNL Analysis Workspace] and [!DNL Reports & Analytics] in a single interface and access point under the [!DNL Workspace] umbrella. It features a project manager home page and a learning section to help you with getting started more effectively.
+The landing page for Customer Journey Analytics highlights [!DNL Analysis Workspace] and features a project manager home page and a learning section to help you manage customer journey data more effectively.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
 
 ## New landing page features {#new-features}
-
-<!-- Check with Travis about the Reports & Analytics content on the page -->
 
 | Feature | Description | Screenshot |
 | --- | --- | --- |
