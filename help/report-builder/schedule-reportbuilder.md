@@ -25,11 +25,11 @@ Use the Schedule task button in the Report Builder hub to quickly create a sched
 
 1.  Click Schedule Workbook.
 
-    ![alt description](./assets/schedule-workbook.png){width="25%"}
+    ![alt description](./assets/schedule-workbook.png){width="45%"}
 
     The scheduling pane displays some pre-defined information about the workbook such as the workbook name and the last date that the workbook was modified.
 
-    ![alt description](./assets/schedule-pane.png){width="75%"}
+    ![alt description](./assets/schedule-pane.png){width="45%"}
 
 1.  (Optional) Enter a file name.
 
@@ -43,37 +43,37 @@ Use the Schedule task button in the Report Builder hub to quickly create a sched
 
     When you make this selection, you're prompted to enter a password to open the file. This is helpful if you have concerns about data security and you want to password protect the workbook. Protecting the file with a password requires you to select **.zip compression**. The password must be at least 8 characters and contain a number and a special character.
 
-    ![alt description](./assets/zip-compression.png){width="75%"}
+    ![alt description](./assets/zip-compression.png){width="45%"}
 
 1.  Enter **Recipients**. You can enter the name of a person that is recognized in your organization, or you can enter an email address of a person inside or outside of your organization.
 
 1.  Enter the **Subject** of the email and a description for your recipients. The subject defaults to the workbook file name but you can modify the subject if needed. You can add details in the description section.
 
-    ![alt description](./assets/recipients-subject.png){width="75%"}
+    ![alt description](./assets/recipients-subject.png){width="45%"}
 
 1.  Set up the scheduling options to set the date and time that you want the workbook emailed to your recipients.
 
-    ![alt description](./assets/schedule-options.png){width="75%"}
+    ![alt description](./assets/schedule-options.png){width="45%"}
 
     Choose the start and end date and time frames. This can be today's date or a date in the future.
 
     Choose the **Frequency** from the drop-down menu. You can set the frequency to be hourly, daily, weekly, monthly, or yearly on a specific day. For example, you can set up a schedule to send the workbook on the first Sunday night of the month so that your recipients will have the email in their inbox first thing on Monday morning.
 
-    ![alt description](./assets/frequency.png){width="75%"}
+    ![alt description](./assets/frequency.png){width="45%"}
 
 1.  After you set the schedule, click **Send on schedule**.
 
-    ![alt description](./assets/send-on-schedule.png){width="75%"}
+    ![alt description](./assets/send-on-schedule.png){width="45%"}
 
     You'll see a confirmation toast at the bottom of the Report Builder hub and the scheduled workbook is listed under the Workbooks tab.
 
-    ![alt description](./assets/confirmation-toast.png){width="75%"}
+    ![alt description](./assets/confirmation-toast.png){width="45%"}
 
 ## Send the workbook one-time only
 
 If you want to send out the workbook only once, un-check **Show scheduling options** and click **Send Now**.
 
-![alt description](./assets/send-now.png){width="75%"}
+![alt description](./assets/send-now.png){width="45%"}
 
 ## View and edit scheduled workbooks
 
@@ -83,7 +83,7 @@ You can view and manage all scheduled workbooks in one place under the Workbooks
 
 1.  Select a workbook. Several tools are displayed that allow you to edit the workbook, change the schedule, pause and restart the schedule, or delete the schedule.
 
-    ![alt description](./assets/edit-icons.png){width="75%"}
+    ![alt description](./assets/edit-icons.png){width="45%"}
 
 1.  (Optional) Click the pencil icon to edit the workbook schedule.
 
@@ -101,7 +101,7 @@ A green checkmark indicates that the workbook was sent successfully. An exclamat
 
 You can choose which columns to display in the history tab by clicking the columns setting icon to the right of the search bar.
 
-![alt description](./assets/history.png){width="90%"}
+![alt description](./assets/history.png){width="50%"}
 
 
 
