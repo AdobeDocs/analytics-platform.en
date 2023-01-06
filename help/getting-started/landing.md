@@ -13,6 +13,8 @@ The landing page for Customer Journey Analytics brings together both [!DNL Analy
 
 ## New landing page features {#new-features}
 
+<!-- Check with Travis about the Reports & Analytics content on the page -->
+
 | Feature | Description | Screenshot |
 | --- | --- | --- |
 | Expand [!UICONTROL Projects] table to full screen | To expand the table, just click the hamburger menu icon. This action will collapse the left-rail tabs. | ![Expand table](assets/landing-collapse2.png) |
