@@ -21,15 +21,15 @@ Use the Schedule task button in the Report Builder hub to quickly create a sched
 
 1.  Click the Schedule button in the Report Builder hub.
 
-    ![](./assets/schedule-button.png)
+    ![](./assets/schedule-button.png){width="55%"}
 
 1.  Click Schedule Workbook or the plus button in the upper-left to create a new scheduled workbook.
 
-    ![alt description](./assets/schedule-workbook.png){width="45%"}
+    ![alt description](./assets/schedule-workbook.png){width="55%"}
 
     The scheduling pane displays some pre-defined information about the workbook such as the workbook name and the last date that the workbook was modified.
 
-    ![alt description](./assets/schedule-pane.png){width="45%"}
+    ![alt description](./assets/schedule-pane.png){width="55%"}
 
 1.  (Optional) Enter a file name.
 
@@ -43,13 +43,13 @@ Use the Schedule task button in the Report Builder hub to quickly create a sched
 
     When you make this selection, you're prompted to enter a password to open the file. This is helpful if you have concerns about data security and you want to password protect the workbook. Protecting the file with a password requires you to select **.zip compression**. The password must be at least 8 characters and contain a number and a special character.
 
-    ![alt description](./assets/zip-compression.png){width="45%"}
+    ![alt description](./assets/zip-compression.png){width="55%"}
 
 1.  Enter **Recipients**. You can enter the name of a person that is recognized in your organization, or you can enter an email address of a person inside or outside of your organization.
 
 1.  Enter the **Subject** of the email and a description for your recipients. The subject defaults to the workbook file name but you can modify the subject if needed. You can add details in the description section.
 
-    ![alt description](./assets/recipients-subject.png){width="45%"}
+    ![alt description](./assets/recipients-subject.png){width="55%"}
 
 1.  Set up the scheduling options to set the date and time that you want the workbook emailed to your recipients.
 
@@ -57,15 +57,15 @@ Use the Schedule task button in the Report Builder hub to quickly create a sched
 
     Choose the **Frequency** from the drop-down menu. You can set the frequency to be hourly, daily, weekly, monthly, or yearly on a specific day. For example, you can set up a schedule to send the workbook on the first Sunday night of the month so that your recipients will have the email in their inbox first thing on Monday morning.
 
-    ![alt description](./assets/frequency.png){width="45%"}
+    ![alt description](./assets/frequency.png){width="55%"}
 
 1.  After you set the schedule, click **Send on schedule**.
 
-    ![alt description](./assets/send-on-schedule.png){width="45%"}
+    ![alt description](./assets/send-on-schedule.png){width="55%"}
 
     You'll see a confirmation toast at the bottom of the Report Builder hub and the scheduled workbook is listed under the Workbooks tab.
 
-    ![alt description](./assets/confirmation-toast.png){width="45%"}
+    ![alt description](./assets/confirmation-toast.png){width="55%"}
 
 ## Send the workbook one-time only
 
@@ -75,7 +75,7 @@ You can also send out the workbook only once.
 
 1.  Click **Send Now**.
 
-    ![alt description](./assets/send-now.png){width="45%"}
+    ![alt description](./assets/send-now.png){width="55%"}
 
 ## View and edit scheduled workbooks
 
@@ -85,7 +85,7 @@ You can view and manage all scheduled workbooks in one place under the Workbooks
 
 1.  Select a workbook. Several tools are displayed that allow you to edit the workbook, change the schedule, pause and restart the schedule, or delete the schedule.
 
-    ![alt description](./assets/edit-icons.png){width="45%"}
+    ![alt description](./assets/edit-icons.png){width="55%"}
 
 *  (Optional) Click the pencil icon to edit the workbook schedule.
 
@@ -103,17 +103,17 @@ A green checkmark indicates that the workbook was sent successfully. An exclamat
 
 You can choose which columns to display in the history tab by clicking the columns setting icon to the right of the search bar.
 
-![alt description](./assets/history.png){width="50%"}
+![alt description](./assets/history.png){width="55%"}
 
 You can filter down the history to see only that of a single scheduled workbooks by going to the workbooks tab, selecting the workbook and clicking the history icon. 
 
 You can also view the history of a specific workbook from the Workbooks tab. On the Workbooks tab, select the workbook and then click the history icon.
 
-![alt description](./assets/history2.png){width="50%"}
+![alt description](./assets/history2.png){width="55%"}
 
 The workbook filter will then appear at the top of the history. To view the history of all scheduled tasks again, click the x next to the filter. 
 
-![alt description](./assets/history3.png){width="50%"}
+![alt description](./assets/history3.png){width="55%"}
 
 
 
