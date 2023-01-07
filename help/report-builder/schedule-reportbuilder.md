@@ -73,9 +73,9 @@ You can also send out the workbook only once.
 
 1.  Un-check **Show scheduling options** 
 
-1.  Click **Send Now**.
+    ![alt description](./assets/send-now.png){width="40%"}
 
-    ![alt description](./assets/send-now.png){width="55%"}
+1.  Click **Send Now**.
 
 ## View and edit scheduled workbooks
 
