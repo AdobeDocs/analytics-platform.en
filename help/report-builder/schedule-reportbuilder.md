@@ -75,7 +75,7 @@ You can also send out the workbook only once.
 
 1.  Click **Send Now**.
 
-    ![alt description](./assets/send-now.png){width="55%"}
+    ![alt description](./assets/send-now.png){width="40%"}
 
 ## View and edit scheduled workbooks
 
