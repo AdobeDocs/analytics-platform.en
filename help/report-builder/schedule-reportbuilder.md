@@ -23,7 +23,7 @@ Use the Schedule task button in the Report Builder hub to quickly create a sched
 
     ![](./assets/schedule-button.png)
 
-1.  Click Schedule Workbook.
+1.  Click Schedule Workbook or the plus button in the upper-left to create a new scheduled workbook.
 
     ![alt description](./assets/schedule-workbook.png){width="45%"}
 
@@ -53,8 +53,6 @@ Use the Schedule task button in the Report Builder hub to quickly create a sched
 
 1.  Set up the scheduling options to set the date and time that you want the workbook emailed to your recipients.
 
-    ![alt description](./assets/schedule-options.png){width="45%"}
-
     Choose the start and end date and time frames. This can be today's date or a date in the future.
 
     Choose the **Frequency** from the drop-down menu. You can set the frequency to be hourly, daily, weekly, monthly, or yearly on a specific day. For example, you can set up a schedule to send the workbook on the first Sunday night of the month so that your recipients will have the email in their inbox first thing on Monday morning.
@@ -71,9 +69,13 @@ Use the Schedule task button in the Report Builder hub to quickly create a sched
 
 ## Send the workbook one-time only
 
-If you want to send out the workbook only once, un-check **Show scheduling options** and click **Send Now**.
+You can also send out the workbook only once.
 
-![alt description](./assets/send-now.png){width="45%"}
+1.  Un-check **Show scheduling options** 
+
+1.  Click **Send Now**.
+
+    ![alt description](./assets/send-now.png){width="45%"}
 
 ## View and edit scheduled workbooks
 
@@ -85,13 +87,13 @@ You can view and manage all scheduled workbooks in one place under the Workbooks
 
     ![alt description](./assets/edit-icons.png){width="45%"}
 
-1.  (Optional) Click the pencil icon to edit the workbook schedule.
+*  (Optional) Click the pencil icon to edit the workbook schedule.
 
-1.  (Optional) Click the clock icon to view a history of each scheduled task.
+*  (Optional) Click the clock icon to view a history of each scheduled task.
 
-1.  (Optional) Click the pause icon to pause and restart the distribution schedule. This is helpful if you need to modify the workbook before the workbook is sent. Click the pause icon again when you want to restart the distribution.
+*  (Optional) Click the pause icon to pause and restart the distribution schedule. This is helpful if you need to modify the workbook before the workbook is sent. Click the pause icon again when you want to restart the distribution.
 
-1.  (Optional) Click the trash can to delete the schedule.
+*  (Optional) Click the trash can to delete the schedule.
 
 ## Review the status of scheduled tasks
 
@@ -102,6 +104,16 @@ A green checkmark indicates that the workbook was sent successfully. An exclamat
 You can choose which columns to display in the history tab by clicking the columns setting icon to the right of the search bar.
 
 ![alt description](./assets/history.png){width="50%"}
+
+You can filter down the history to see only that of a single scheduled workbooks by going to the workbooks tab, selecting the workbook and clicking the history icon. 
+
+You can also view the history of a specific workbook from the Workbooks tab. On the Workbooks tab, select the workbook and then click the history icon.
+
+![alt description](./assets/history2.png){width="50%"}
+
+The workbook filter will then appear at the top of the history. To view the history of all scheduled tasks again, click the x next to the filter. 
+
+![alt description](./assets/history3.png){width="50%"}
 
 
 
