@@ -171,6 +171,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Work with Filters](../report-builder/work-with-filters.md)
   + [Filter Dimensions](../report-builder/filter-dimensions.md)
   + [Manage Data Blocks](../report-builder/manage-reportbuilder.md)
+  + [Schedule Workbooks](../report-builder/schedule-reportbuilder.md)
   + [Restricted Labels](../report-builder/restricted-labels.md)
   + [Report Builder Settings](../report-builder/report-builder-settings.md)
 + Components {#cja-components}
