@@ -3,17 +3,11 @@ description: Learn about saving projects to folders in Workspace
 keywords: Analysis Workspace
 title: Saving projects to folders
 feature: CJA Workspace Basics
-hide: yes
-hidefromtoc: yes
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
 ---
 # Save a New Project to a Folder
 
 To save a new project to a specific folder, select the folder name in the Save project dialogue window.
-
->[!NOTE]
->
->This feature is currently in Beta. Some screens may change.
 
 1.  In Workspace, create a new project.
 
