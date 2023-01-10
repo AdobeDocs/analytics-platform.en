@@ -11,7 +11,7 @@ You can manage settings for Analysis Workspace and its related components for al
 
 ## Update preferences
 
-1. In Customer Journey Analytics, select [!UICONTROL **Components**] **>** [!UICONTROL **Preferences**].
+1. In Customer Journey Analytics, go to the [!UICONTROL **Project**] landing page, then select [!UICONTROL **Preferences**].
 
    ![User preferences](assets/user-preferences.png) 
 
