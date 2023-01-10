@@ -149,11 +149,6 @@ Click the linked section titles for more information and context about the avail
 | **[Histogram](/help/analysis-workspace/visualizations/histogram.md)** | | |
 | | Number of buckets | Choose the number of data ranges (buckets) in the visualization. The maximum number of buckets is 50. <p>For more information, see [Histogram](/help/analysis-workspace/visualizations/histogram.md).</p> |
 | | Counting method | Choose from the following options: <ul><li>Hit</li><li>Visit</li><li>Visitor</li></ul> <p>For example, when used in conjunction with page views, you could choose page views per visitor, page views for visit, or page views per hit. For Hit, "Occurrences" is used as the y-axis metric in a freeform table.</p> |
-| **Map** | | |
-| | Plotting dimension | <ul><li>Mobile latitude/longitude</li><li>Geographic dimension</li></ul> |
-| | Map type | <ul><li>Bubbles</li><li>Heat map</li></ul> |
-| | Color theme | Choose from Coral, Reds, Greens, Blues, Heatmap, and Positive/Negative. |
-| | Map style | Choose from Basic, Streets, Bright, Light, Dark, and Satellite. |
 | **[Summary Change](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
 | | Value | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Percent change</li><li>Raw difference</li></ul>  |
 | | Percentages | Displays values in percentages for the Summary Change visualizations. |
