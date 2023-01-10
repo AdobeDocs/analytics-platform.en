@@ -3,19 +3,13 @@ description: Learn how to create folders and subfolders in Workspace
 keywords: Analysis Workspace
 title: Create Folders
 feature: CJA Workspace Basics
-hide: yes
-hidefromtoc: yes
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
 ---
 # Create folders
 
 You can add a new folder or a subfolder to the list of projects and folders on your Workspace landing page.
 
->[!NOTE]
->
->This feature is currently in Beta. Some screens may change.
-
-## Create a new folder
+## Create a new folder {#create-new-folder}
 
 To create a new folder,
 
@@ -23,7 +17,7 @@ To create a new folder,
 
 1.  Enter a Name for the new folder.
 
-1.  Select tags from the drop-down menu.
+1.  Select tags from the drop-down menu or add net-new tags.
 
     ![](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
 
@@ -35,7 +29,7 @@ To create a new folder,
 
     ![](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
-## Create a subfolder
+## Create a subfolder {#create-subfolder}
 
 Subfolders allow you to provide additional levels of project management and organization.
 
