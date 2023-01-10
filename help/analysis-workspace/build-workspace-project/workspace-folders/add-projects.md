@@ -3,19 +3,13 @@ description: Learn how to add folders in Workspace
 keywords: Analysis Workspace
 title: Add Folders in Workspace
 feature: CJA Workspace Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 ---
 # Add Projects to Folders
 
 You can add projects to a folder in the table view or from within a folder.
 
->[!NOTE]
->
->This feature is currently in Beta. Some screens may change.
-
-## From the table view
+## From the table view {#table-view}
 
 Add projects to a folder from the table view on the home page.
 
@@ -41,7 +35,7 @@ Add projects to a folder from the table view on the home page.
 
     ![](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
-## From inside a folder
+## From inside a folder {#inside-folder}
 
 You can also add projects from inside a folder using the ellipses link.
 
@@ -66,4 +60,8 @@ You can also add projects from inside a folder using the ellipses link.
 1.  Click **Add** to add the projects to the folder.
 
     ![](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
-Only Admins can add projects to the Company Folder or create a net new project and save it to the Company Folder
+
+
+>[!NOTE]
+>
+>Only Admins can add projects to the Company Folder or create a new project and save it to the Company Folder
