@@ -15,6 +15,8 @@ You can create multiple schedules for a single workbook. For example, you can se
 
 The Schedule feature also allows you to set up password protection for a workbook and edit previously scheduled workbooks.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on)
+
 ## Schedule a workbook
 
 Use the Schedule task button in the Report Builder hub to quickly create a schedule so that you can automatically distribute a workbook Excel file (.xlsx) to an individual or a group.
