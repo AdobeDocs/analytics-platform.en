@@ -33,7 +33,7 @@ General preferences apply to your CJA experience in the browser.
 | --- | --- |
 | Landing page | Choose what page displays as the default page when you access Adobe Analytics: <ul><li>Project list (default)</li><li>Blank project</li><li>Specific project selected from a list</li></ul> |
 | Show tips | Displays tips in a blue box in the lower-right area of Analysis Workspace. <p>This option is enabled by default.</p> |
-| <span class="preview">Components displayed in left rail groups</span> | Choose how many of each component to display in the Components menu in the left rail. <p>If you choose 0, the component is no longer accessible from the left rail of your workspaces.</p><p>By default, 5 components display for each of the following:</p> <ul><li>Dimensions</li><li>Metrics</li><li>Filters</li><li>Date ranges</li></ul> <p>For more information about Components in Analysis Workspace, see [Components overview](/help/analysis-workspace/components/analysis-workspace-components.md).</p> |
+| <span class="preview">Components displayed in left rail groups</span> | Choose how many of each component to display in the Components menu in the left rail. <p>If you choose 0, the component is no longer accessible from the left rail of your workspaces.</p><p>By default, 5 components display for each of the following:</p> <ul><li>Dimensions</li><li>Metrics</li><li>Filters</li><li>Date ranges</li></ul> <p>For more information about Components in Analysis Workspace, see [Components overview](/help/components/overview.md).</p> |
 
 ## Project preferences
 
@@ -55,7 +55,7 @@ Click the linked preference titles for more information and context about each p
 |  | Count repeat instances | Specifies whether repeat instances are counted in reports. For example, this setting (when activated) treats multiple consecutive page views to the same page as multiple page views. With it off, they count as a single page view. <p>**Note:** This setting affects only certain metrics (such as Single Page Visits) and it does not apply to Flow or Fallout visualizations.</p> |
 |  | Number format | <ul><li>1,000.00 (default)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV separator character | <ul><li>Comma (default)</li><li>Semicolon</li><li>Colon</li><li>Pipe</li><li>Period</li><li>Space</li><li>Tab</li></ul> |
-|  | Show annotations | Choose whether annotations are visible in your projects. For more information about annotations, see [Annotations overview](/help/analysis-workspace/components/annotations/overview.md). |
+|  | Show annotations | Choose whether annotations are visible in your projects. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md). |
 
 
 ## Freeform table preferences
@@ -85,7 +85,7 @@ Click the linked section titles for more information and context about the avail
 | | Background | Determines if a cell shows/hides all cell formatting, including the bar graph and conditional formatting <ul><li>Bar graph</li> Shows a horizontal bar graph representing the cell's value relative to the total for the column. <li>Conditional formatting</li>For more information about conditional formatting, see "Conditional formatting" in [Column Settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)</ul> |
 | | Cell preview | Shows a preview of how each cell appears with the currently selected formatting options applied. |
 | **[Row](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
-| | Breakdown by position | Select this option if you want the breakdown to remain with the position of the item rather than with the item itself. For more information about breakdowns, see [Break down dimensions](/help/analysis-workspace/components/dimensions/t-breakdown-fa.md). |
+| | Breakdown by position | Select this option if you want the breakdown to remain with the position of the item rather than with the item itself. For more information about breakdowns, see [Break down dimensions](/help/components/dimensions/t-breakdown-fa.md). |
 | | Percentage calculation | <ul><li>Column</li><li>Row</li></ul> |
 
 ## Visualizations preferences
@@ -149,7 +149,7 @@ Click the linked section titles for more information and context about the avail
 | **[Histogram](/help/analysis-workspace/visualizations/histogram.md)** | | |
 | | Number of buckets | Choose the number of data ranges (buckets) in the visualization. The maximum number of buckets is 50. <p>For more information, see [Histogram](/help/analysis-workspace/visualizations/histogram.md).</p> |
 | | Counting method | Choose from the following options: <ul><li>Hit</li><li>Visit</li><li>Visitor</li></ul> <p>For example, when used in conjunction with page views, you could choose page views per visitor, page views for visit, or page views per hit. For Hit, "Occurrences" is used as the y-axis metric in a freeform table.</p> |
-| **[Map](/help/analysis-workspace/visualizations/map-visualization.md)** | | |
+| **Map** | | |
 | | Plotting dimension | <ul><li>Mobile latitude/longitude</li><li>Geographic dimension</li></ul> |
 | | Map type | <ul><li>Bubbles</li><li>Heat map</li></ul> |
 | | Color theme | Choose from Coral, Reds, Greens, Blues, Heatmap, and Positive/Negative. |
