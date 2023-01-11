@@ -7,7 +7,7 @@ feature: Use Cases
 ---
 # Use arrays of objects
 
-Some platform schemas can have object arrays. One of the most common examples would be a shopping cart, which contain multiple products. Each product has a name, SKU, category, price, quantity, and any other dimensions you want to track. All of these facets have separate requirements, but must all fit into the same hit.
+Some platform schemas can have object arrays. CJA supports ingestion and reporting of object arrays within event, lookup, and profile data. One of the most common examples would be a shopping cart, which contain multiple products. Each product has a name, SKU, category, price, quantity, and any other dimensions you want to track. All of these facets have separate requirements, but must all fit into the same hit.
 
 In previous versions of Adobe Analytics, this feat was accomplished using the `products` variable. It was a concatenated string separated by semicolons (`;`) to separate facets of a product, while commas (`,`) delineated products. It was the only variable with limited support of "object arrays". Multi-value variables such as list vars could support the equivalent of arrays, but they could not support "object arrays". CJA expands on this concept by supporting arbitrarily deep hierarchies within a single row of data, a feature unavailable in any previous version of Adobe Analytics.
 
