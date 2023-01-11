@@ -5,8 +5,8 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
+exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
 ---
-
 # Schedule Workbooks
 
 After you saved your workbook and completed your analysis, you can easily share your workbook with others on your team using the scheduling feature. The Schedule feature allows you to create a schedule that automatically refreshes the data in the workbook and emails the Excel workbook .xlsx file as an attachment to your specified audience at a specific date and time. Setting up a schedule provides recipients with regular updates&ndash;automatically. You can also use the schedule feature to send out the workbook once without scheduling automatic updates.
@@ -116,6 +116,3 @@ You can also view the history of a specific workbook from the Workbooks tab. On 
 The workbook filter will then appear at the top of the history. To view the history of all scheduled tasks again, click the x next to the filter. 
 
 ![alt description](./assets/history3.png){width="55%"}
-
-
-
