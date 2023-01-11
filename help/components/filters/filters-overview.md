@@ -64,12 +64,12 @@ Person containers can include values based on a visitor's overall history:
 
 The Session container lets you identify page interactions, campaigns, or conversions for a specific session. The Session container is the most commonly used container because it captures behaviors for the entire visit session once the rule is met and lets you define which sessions you want to include or exclude in building and applying a filter. It can help you answer theses questions:
 
-* How many visitors viewed the News and Sports section in the same session? 
+* How many sessions engaged with both Web and Call Center data sources?
 * Which pages contributed to a successful conversion to a sale?
 
 Session containers include values based on occurrence per session:
 
-* Session Number
+* Session Type
 * Entry Page
 * Return Frequency
 * Participation Metrics
