@@ -3,8 +3,8 @@ description: Learn how to delete folders in Workspace
 keywords: Analysis Workspace
 title: Delete Folders in Workspace
 feature: CJA Workspace Basics
+exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
 ---
-
 # Delete Folders 
 
 You can delete folders that you create.
@@ -22,4 +22,3 @@ You can delete folders that you create.
     A confirmation notification indicates that the folder was deleted.
 
     ![](/help/analysis-workspace/build-workspace-project/assets/deleted-folder.png)
-
