@@ -96,7 +96,7 @@ Yes, it will.
 
 ### Does CJA send the audience data over as pipeline events or a flat file that also goes to data lake?
 
-It streams the data into the unified profile via pipeline, this data is also collected into a system dataset in the data lake.
+It streams the data into RTCP via pipeline, and this data is also collected into a system dataset in the data lake.
 
 ### What identities does CJA send over?
 
