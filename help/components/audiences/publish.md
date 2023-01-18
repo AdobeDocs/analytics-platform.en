@@ -32,7 +32,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
    | [!UICONTROL Name] | The name of the audience. |
    | [!UICONTROL Tags] | Any tags that you want assigned to the audience for organizational purposes. You can use a pre-existing tag or enter a new one.|
    | [!UICONTROL Description] | Add a good description of the audience, to differentiate it from others. |
-   | [!UICONTROL Refresh frequency] | The frequency at which you want to refresh the audience.<ul><li>You can choose to create a one-time audience (default) that needs no refreshing. For example, this could be helpful for specific, one-time campaigns.</li><li>You can select other refresh intervals. For all refresh frequencies, there is a limit of 75 to 150 audiences, depending on your CJA entitlement.</li></ul> |
+   | [!UICONTROL Refresh frequency] | The frequency at which you want to refresh the audience.<ul><li>You can choose to create a one-time audience (default) that needs no refreshing. For example, this could be helpful for specific, one-time campaigns.</li><li>You can select other refresh intervals. For the 4-hour refresh frequency, there is a limit of 75 to 150 audience refreshes, depending on your CJA entitlement.</li></ul> |
    | Expiration date | When the audience will stop refreshing. The default is 1 year from the creation date. Expiring audiences are treated similarly to expiring scheduled reports - the admin gets an email a month before the audience expires. |
    | Refresh lookback window | Specifies how far back in your data window you want to go when creating this audience. The max is 90 days. |
    | [!UICONTROL One-time date range] | Date range when you want the one-time audience to be published. |
@@ -78,7 +78,7 @@ You can drag CJA audiences into the segment definition for AEP segments.
 
 ![](assets/audiences-aep.png)
 
-## FAQs
+## FAQs {#faq}
 
 Frequently asked questions on audience publishing.
 
@@ -86,7 +86,7 @@ Frequently asked questions on audience publishing.
 
 In this case, an exit event is sent to Experience Platform from CJA.
 
-### What happens if you delete an audience in CJA? {#delete}
+### What happens if you delete an audience in CJA?
 
 When a CJA Audience is deleted, that audience will no longer show up in the Experience Platform UI. However, no profiles associated with that audience are actually deleted in Platform.
 
