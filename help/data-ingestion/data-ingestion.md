@@ -42,7 +42,7 @@ See [Ingest and use batch data](./batch.md) for more information.
 
 ## Ingest and use streaming data
 
-You havea relevant a data source like a CRM system, ERP system or any other source which provides details that can help you to better understand customer behaviour and analyze customer interactions. That data source is able to communicate over HTTP or public cloud streaming infrastructure but for which Adobe currently does not provide a source connector. Ingesting this streaming data into Adobe Experience Platform in real-time allows you to use, combine and analyze it with data from other channels and data sources in Customer Journey Analytics.
+You have a relevant data source like a CRM system, ERP system or any other source which provides details that can help you to better understand customer behaviour and analyze customer interactions. That data source is able to communicate over HTTP or public cloud streaming infrastructure but for which Adobe currently does not provide a source connector. Ingesting this streaming data into Adobe Experience Platform in real-time allows you to use, combine and analyze it with data from other channels and data sources in Customer Journey Analytics.
 
 See [Ingest and use streaming data](./streaming.md) for more information.
 
