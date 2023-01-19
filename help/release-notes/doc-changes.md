@@ -17,6 +17,8 @@ The following updates were made to the CJA documentation since its inception.
 | Folders | Dedicated pages for [Folders management](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).  |
 | User preferences | Many additional user preferences are now available in [Preferences](/help/analysis-workspace/user-preferences.md).  |
 | Auto-save for projects | Updated content to include auto-save functionality in [Save projects](/help/analysis-workspace/build-workspace-project/save-projects.md).  |
+| Landing page | New landing page updates [landing page](/help/getting-started/landing.md).  |
+| Schedule Workbooks | Dedicated page to describe how to [Schedule Workbooks](/help/report-builder/schedule-reportbuilder.md) in Report Builder	 .  |
 
 ## 2022
 
