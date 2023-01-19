@@ -518,7 +518,7 @@ To create your connection:
 
         -   Set **[!UICONTROL Import all new data]** and **[!UICONTROL Dataset backfill existing data]** according to your preferences.
 
-        ![Configure datasets](./assets/cja-connections-3.png)
+        ![Configure datasets](./assets/cja-connections-3b.png)
 
     -   Select **[!UICONTROL Add datasets]**.
 
