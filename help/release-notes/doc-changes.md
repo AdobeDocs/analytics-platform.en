@@ -9,6 +9,15 @@ feature: Release Notes
 
 The following updates were made to the CJA documentation since its inception.
 
+## 2023 {#23}
+
+| Feature | Description |
+| --- | --- |
+| **January 2023** | |
+| Folders | Dedicated pages for [Folders management](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).  |
+| User preferences | Many additional user preferences are now available in [Preferences](/help/analysis-workspace/user-preferences.md).  |
+| Auto-save for projects | Updated content to include auto-save functionality in [Save projects](/help/analysis-workspace/build-workspace-project/save-projects.md).  |
+
 ## 2022
 
 | Date | Update description |
