@@ -3,8 +3,8 @@ title: Ingest and use streaming data
 description: Explain how to ingest and use streaming data in Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
+exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
 ---
-
 # Ingest and use streaming data
 
 This quick start guide explains how you can ingest streaming data into Adobe Experience Platform and then use that data in Customer Journey Analytics.
@@ -341,4 +341,3 @@ See [Analysis Workspace overview](../analysis-workspace/home.md) for more inform
 >[!SUCCESS]
 >
 >You have completed all the steps. Starting by defining what loyalty data you want to collect (schema) and where to store it (dataset) in Adobe Experience Platform, you configured an HTTP API source connector to stream loyalty data directly into the dataset. Your data view definition allowed you to specify which dimension and metrics to use and finally you created your first project visualizing and analyzing your data.
-

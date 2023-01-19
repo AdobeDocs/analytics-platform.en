@@ -3,8 +3,8 @@ title: Ingest and use data from traditional Adobe Analytics
 description: Explain how to ingest data from traditional Adobe Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
+exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 ---
-
 # Ingest and use data from traditional Adobe Analytics
 
 This quick start guide explains how you can use the data collected by Adobe Analytics in Customer Journey Analytics.
@@ -195,11 +195,5 @@ See [Analysis Workspace overview](../analysis-workspace/home.md) for more inform
 
 >[!SUCCESS]
 >
->You have completed all the steps. Starting by setting up the Adobe Analytics data source connector and configuring that connector for your report suite, your Adobe Analytics data is automatically uploaded into Adobe Experience Platform. You defined a connection in Customer Journey Analytics to use the ingested Adobe Analytics data and other data. Your data view definition allowed you to specify which dimension and metrics to use and finally you created your first project visualizing and analyzing your data.
-
-
-
-
-
-
+>You have completed all the steps. Starting by setting up the Adobe Analytics data source connector and configuring that connector for your report suite, your Adobe Analytics data is automatically uploaded into Adobe Experience Platform. You defined a connection in Customer Journey Analytics to make use of the ingested Adobe Analytics data and other data. Your data view definition allowed you to specify which dimension and metrics to use and finally you created your first project visualizing and analyzing your data.
 

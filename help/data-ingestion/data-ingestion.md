@@ -3,8 +3,8 @@ title: Data Ingestion Overview
 description: Understand the different ways that you can ingest data into Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
+exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 ---
-
 # Data Ingestion Overview
 
 You have a number of options when ingesting data into Customer Journey Analytics. Some of them assume that you want to move traditional Adobe Analytics data over, some of them assume that you use data ingested into Adobe Experience Platform.
@@ -63,4 +63,3 @@ See [Ingest and use streaming data](./streaming.md) for more information.
 You have data available from a source that is supported by a source connector. Source connectors are configurable configurations that allow you to ingest data from Adobe, first-party and third-party application into Adobe Experience Platform. See [Source connectors overview](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en) for an overview of available source connectors. Using the source connector you can easily ingest data from the source into Adobe Experience Platform and then use, combine and analyze it with data from other channels and data sources in Customer Journey Analytics.
 
 See [Ingest and use data using source connectors](./sources.md) for more information.
-
