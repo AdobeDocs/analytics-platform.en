@@ -3,8 +3,8 @@ title: Ingest and use batch data
 description: Explain how to ingest and use batch data in Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
+exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
 ---
-
 # Ingest and use batch data
 
 This quick start guide explains how you can ingest batch data into Adobe Experience Platform and then use that data in Customer Journey Analytics.

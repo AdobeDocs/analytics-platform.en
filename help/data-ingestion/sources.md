@@ -1,10 +1,10 @@
 ---
 title: Ingest and use data using source connectors
-description: Explain how to ingest and use data using source connectors in Customer Journey Analytics 
+description: Explain how to ingest and use data using source connectors in Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
+exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 ---
-
 # Ingest and use data using source connectors.
 
 This quick start guide explains how you can ingest data into Adobe Experience Platform using a source connector to a data provider and then use that data in Customer Journey Analytics.
