@@ -1,6 +1,6 @@
 ---
 title: Ingest data via the Adobe Experience Platform Web SDK and the Edge Network
-description: Explain how to ingest data into Customner Journey Analytics via the Adobe Experience Platform Web SDK and the Edge Network
+description: Explain how to ingest data into Customer Journey Analytics via the Adobe Experience Platform Web SDK and the Edge Network
 solution: Customer Journey Analytics
 feature: CJA Basics
 ---
@@ -11,39 +11,39 @@ This quick start guide explains how you can ingest website tracking data directl
 
 To accomplish this, you need to:
 
--   **Setup a schema and dataset** in Adobe Experience Platform to define the model (schema) of the data you want to collect and where to actually collect the data (dataset).
+-   **Set up a schema and dataset** in Adobe Experience Platform to define the model (schema) of the data that you want to collect and where to actually collect the data (dataset).
 
--   **Setup a datastream** to configure the Adobe Experience Platform Edge Network to route your collected data to the dataset you configured in Adobe Experience Platform.
+-   **Set up a datastream** to configure the Adobe Experience Platform Edge Network to route your collected data to the dataset you configured in Adobe Experience Platform.
 
--   **Use Tags** to easily configure rules and data elements against the data in your data layer on your website and ensure that the data is sent to the datastream configured on the Adobe Experience Platform Edge Network.
+-   **Use Tags** to easily configure rules and data elements against the data in your data layer on your website. Then ensure that the data is sent to the datastream configured on the Adobe Experience Platform Edge Network.
 
 -   **Deploy and validate**. Have an environment where you can iterate on the development of tags and once everything is validated, publish it live on your production environment.
 
 -   **Set up a connection** in Customer Journey Analytics. This connection should (at least) include your Adobe Experience Platform dataset.
 
--   **Set up a data view** in Customer Journey Analytics to define metrics and dimension you want to use in Analysis Workspace.
+-   **Set up a data view** in Customer Journey Analytics to define metrics and dimension that you want to use in Analysis Workspace.
 
--   **Set up a project** in Customer Journey Analytics to build your reports and visualisations.
+-   **Set up a project** in Customer Journey Analytics to build your reports and visualizations.
 
 >[!NOTE]
 >
->This is a simplified guide on how to ingest data collected from your site into Adobe Experience Platform and use in Customer Journey Analytics.  It is higly recommended to study the additional information when referred to. 
+>This is a simplified guide on how to ingest data collected from your site into Adobe Experience Platform and use in Customer Journey Analytics. It is highly recommended to study the additional information when referred to. 
 
 
-## Setup a schema and dataset
+## Set up a schema and dataset
 
-To ingest data into Adobe Experience Platform, you first need to define which data you want to collect. All data ingested into Adobe Experience Platform must conform to a standard, denormalized structure in order for it be recognized and acted upon by downstream capabilities and features. Experience Data Model (XDM) is the standard framework that provides this structure in the form of schemas. 
+To ingest data into Adobe Experience Platform, you first need to define which data you want to collect. All data ingested into Adobe Experience Platform must conform to a standard, denormalized structure for it be recognized and acted upon by downstream capabilities and features. Experience Data Model (XDM) is the standard framework that provides this structure in the form of schemas. 
 
-Once you have defined a schema, you will use one or more datasets to store and manage the collection of data. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). 
+Once you have defined a schema, you use one or more datasets to store and manage the collection of data. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). 
 
 All data that is ingested into Adobe Experience Platform must conform to a pre-defined schema before it can be persisted as a dataset.
 
-### Setup a schema
+### Set up a schema
 
-You want to track some minimal data from profiles visiting your website, e.g. page name, identification, etc.. 
+You want to track some minimal data from profiles visiting your website, for example page name, identification. 
 For this, you first need to define a schema that models this data.
 
-To setup your schema:
+To set up your schema:
 
 1.  In the Adobe Experience Platform UI, in the left rail, select **[!UICONTROL Schemas]** within [!UICONTROL DATA MANAGEMENT].
 
@@ -88,7 +88,7 @@ To setup your schema:
 
     ![Identification Object](./assets/identification-field.png)
 
-    This will add identification capabilities to your schema. In your case, you want to identify profiles visiting your site using the Experience Cloud Id and email address. There are a lot of other attributes available to track your visitor's identification (e.g. customer id, loyalty id, etc.).
+    This adds identification capabilities to your schema. In your case, you want to identify profiles visiting your site using the Experience Cloud Id and email address. There are many other attributes available to track your visitor's identification (for example customer id, loyalty id).
 
     Select **[!UICONTROL Apply]** to add this object to your schema.
 
@@ -96,23 +96,23 @@ To setup your schema:
 
     ![Specifiy ECID as identity](./assets/specify-identity.png)
 
-    You are specifying the Experience Cloud Identity as the primary identity the Adobe Experience Platform Identity service can use to combine (stitch) the behaviour of profiles with the same ECID.
+    You are specifying the Experience Cloud Identity as the primary identity the Adobe Experience Platform Identity service can use to combine (stitch) the behavior of profiles with the same ECID.
 
-    Select **[!UICONTROL Apply]**. You will see a fingerprint icon appear in the ecid attribute.
+    Select **[!UICONTROL Apply]**. You see that a fingerprint icon appears in the ecid attribute.
 
 7.  Select the **[!UICONTROL email]** field in the identification object you just added, and select **[!UICONTROL Identity]** and **[!UICONTROL Email]** from the [!UICONTROL Identity namespace] list in the [!UICONTROL Field Properties] panel. 
 
     ![Specifiy email as identity](./assets/specify-email-identity.png)
 
-    You are specifying the email address as another identity the Adobe Experience Platform Identity service can use to combine (stitch) the behaviour of profiles.
+    You are specifying the email address as another identity the Adobe Experience Platform Identity service can use to combine (stitch) the behavior of profiles.
 
-    Select **[!UICONTROL Apply]**. You will see a fingerprint icon appear in the email attribute.
+    Select **[!UICONTROL Apply]**. You see that a fingerprint icon appears in the email attribute.
 
     Select **[!UICONTROL Save]**.
 
 8.  Select the root element of your schema displaying the name of the schema, then select the **[!UICONTROL Profile]** switch.
 
-    You will be prompted to enable the schema for profile. Once enabled, when data is ingested into datasets based on this schema, that data will be merged into the Real-Time Customer Profile. 
+    You are prompted to enable the schema for profile. Once enabled, when data is ingested into datasets based on this schema, that data is merged into the Real-Time Customer Profile. 
     
     See [Enable the schema for use in Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) for more information.
 
@@ -126,7 +126,7 @@ To setup your schema:
 
 You have created a minimal schema that models the data you can capture from your website. The schema allows profiles to be identified using the Experience Cloud Identity and email address. By enabling the schema for profile, you ensure data captured from your website is added to the Real-Time Customer Profile.
 
-Next to behavior data, you can also capture profile attribute data from your site (e.g. details of profiles subscribing to a newsletter). 
+Next to behavior data, you can also capture profile attribute data from your site (for example details of profiles subscribing to a newsletter). 
 
 To capture this profile data, you would:
 
@@ -142,11 +142,11 @@ To capture this profile data, you would:
 
 See [Create and edit schemas in the UI](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html) for more information on adding and removing field groups and individual fields to a schema.
 
-### Setup a dataset
+### Set up a dataset
 
-With your schema you have defined your data model. You now have to define the construct to store and manage that data. This is done through datasets.
+With your schema, you have defined your data model. You now have to define the construct to store and manage that data. This is done through datasets.
 
-To setup your dataset:
+To set up your dataset:
 
 1.  In the Adobe Experience Platform UI, in the left rail, select **[!UICONTROL Datasets]** within [!UICONTROL DATA MANAGEMENT].
 
@@ -158,7 +158,7 @@ To setup your dataset:
 
     ![Create dataset from schema](./assets/create-dataset-from-schema.png)
 
-4.  Select the schema you created earlier and select **[!UICONTROL Next]**.
+4.  Select the schema that you created earlier and select **[!UICONTROL Next]**.
 
 5.  Name your dataset and (optional) provide a description.
 
@@ -168,23 +168,23 @@ To setup your dataset:
 
 7.  Select the **[!UICONTROL Profile]** switch.
 
-    You will be prompted to enable the dataset for profile. Once enabled, the dataset will enrich real-time customer profiles with its ingested data.
+    You are prompted to enable the dataset for profile. Once enabled, the dataset enriches real-time customer profiles with its ingested data.
 
     >[!IMPORTANT]
     >
-    >    You can only enable a dataset for profile when the schema, to which the dataset adheres to, is also enabled for profile.
+    >    You can only enable a dataset for profile when the schema, to which the dataset adheres, is also enabled for profile.
 
     ![Enable schema for profile](./assets/aepwebsdk-dataset-profile.png)
 
 See [Datasets UI guide](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html) for much more information on how to view, preview, create, delete a dataset. And how to enable a dataset for Real-Time Customer Profile.
 
-## Setup a datastream
+## Set up a datastream
 
 A datastream represents the server-side configuration when implementing the Adobe Experience Platform Web and Mobile SDKs. When collecting data with the Adobe Experience Platform SDKs, data is sent to the Adobe Experience Platform Edge Network. It is the datastream that determines to which service(s) that data is forwarded.
 
 In your setup, you want the data you collect from the website to be sent to your dataset in Adobe Experience Platform.
 
-To setup your datastream:
+To set up your datastream:
 
 1.  In the Adobe Experience Platform UI, select **[!UICONTROL Datastreams]** from [!UICONTROL DATA COLLECTION] in the left rail.
 
@@ -239,7 +239,7 @@ Select your newly created tag from the list of [!UICONTROL Tag Properties] to op
 
 #### **Extensions**
 
-You need to add the Adobe Platform Web SDK extension to your tag to ensure you can send data to Adobe Experience Platform (via your datastream).
+Add the Adobe Platform Web SDK extension to your tag to ensure you can send data to Adobe Experience Platform (via your datastream).
 
 To create and configure the Adobe Experience Platform Web SDK extension:
 
@@ -259,7 +259,7 @@ To create and configure the Adobe Experience Platform Web SDK extension:
 
 See [Configure the Adobe Experience Platform Web SDK extension](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html) for more information.
 
-You also want to setup the Experience Cloud ID Service extension so you can easily make use of the Experience Cloud ID Service. The Experience Cloud ID Service identifies vistors across all Adobe Experience Cloud solutions.
+You also want to set up the Experience Cloud ID Service extension so you can easily use of the Experience Cloud ID. The Experience Cloud ID Service identifies visitors across all Adobe Experience Cloud solutions.
 
 To create and configure the Experience Cloud ID Service extension:
 
@@ -277,9 +277,9 @@ To create and configure the Experience Cloud ID Service extension:
 
 #### **Data Elements**
 
-Data elements are the building blocks for your data dictionary (or data map). Use data elements to collect, organize, and deliver data across marketing and ad technology. You will set up data elements in your tag that read from your data layer and can be used to deliver data into Adobe Experience Platform.
+Data elements are the building blocks for your data dictionary (or data map). Use data elements to collect, organize, and deliver data across marketing and ad technology. You set up data elements in your tag that read from your data layer and can be used to deliver data into Adobe Experience Platform.
 
-There are different types of data elements. You will first set up a data element to capture the page name visitors are viewing on your site.
+There are different types of data elements. You first set up a data element to capture the page name visitors are viewing on your site.
 
 To define a page name data element:
 
@@ -289,7 +289,7 @@ To define a page name data element:
 
 3.  In the [!UICONTROL Create Data Element] dialog:
 
-    -   Name your data element, e.g. `Page Name`.
+    -   Name your data element, for example `Page Name`.
 
     -   Select **[!UICONTROL Core]** from the [!UICONTROL Extension] list.
 
@@ -299,7 +299,7 @@ To define a page name data element:
 
         ![Create Date Element using Page Info](./assets/create-dataelement-1.png)
 
-        Alternatively you could have used the value from a variable of your data layer, e.g. `pageName` and the [!UICONTROL JavaScript Variable] data element type to define the data element.
+        Alternatively you could have used the value from a variable of your data layer, for example `pageName` and the [!UICONTROL JavaScript Variable] data element type to define the data element.
 
         ![Create Data Element using Javascript Variable](./assets/create-dataelement-2.png)
 
@@ -315,7 +315,7 @@ To define an ECID data element:
 
 3.  In the [!UICONTROL Create Data Element] dialog:
 
-    -   Name your data element, e.g. `ECID`.
+    -   Name your data element, for example `ECID`.
 
     -   Select **[!UICONTROL Experience Cloud ID Service]** from the [!UICONTROL Extension] list.
 
@@ -325,7 +325,7 @@ To define an ECID data element:
 
     -   Select **[!UICONTROL Save]**.
 
-Finally, you now want to map any of your specific data elements to the schema you defined earlier. You need to define another data element which provides a representation of your XDM schema.
+Finally, you now want to map any of your specific data elements to the schema you defined earlier. You define another data element which provides a representation of your XDM schema.
 
 To define an XDM object data element:
 
@@ -335,7 +335,7 @@ To define an XDM object data element:
 
 3.  In the [!UICONTROL Create Data Element] dialog:
 
-    -   Name your data element, e.g. `XDM - Page View`.
+    -   Name your data element, for example `XDM - Page View`.
 
     -   Select **[!UICONTROL Adobe Experience Platform Web SDK]** from the [!UICONTROL Extension] list.
 
@@ -345,7 +345,7 @@ To define an XDM object data element:
 
     -   Select your schema from the [!UICONTROL Schema] list.
 
-    -   Map the `identification > core > ecid` attribute, defined in your schema, to the ECID data element. Select the cilinder icon to easily pick the ECID data element from your list of data elements.
+    -   Map the `identification > core > ecid` attribute, defined in your schema, to the ECID data element. Select the cylinder icon to easily pick the ECID data element from your list of data elements.
 
         ![Pick ECID Data Element](./assets/pick-ecid-dataelement.png)
 
@@ -361,7 +361,7 @@ To define an XDM object data element:
 
 #### **Rules**
 
-Tags in Adobe Experience Platform follow a rule-based system. They look for user interaction and associated data. When the criteria outlined in your rules are met, the rule triggers the extension, script, or client-side code you identified. You can use rules to send data (like an XDM object) into Addobe Experience Platform using the Adobe Experience Platform Web SDK extension.
+Tags in Adobe Experience Platform follow a rule-based system. They look for user interaction and associated data. When the criteria outlined in your rules are met, the rule triggers the extension, script, or client-side code you identified. You can use rules to send data (like an XDM object) into Adobe Experience Platform using the Adobe Experience Platform Web SDK extension.
 
 To define a rule:
 
@@ -371,7 +371,7 @@ To define a rule:
 
 3.  In the [!UICONTROL Create Rule] dialog:
 
-    -   Name the rule, e.g. `Page View`.
+    -   Name the rule, for example `Page View`.
 
     -   Select **[!UICONTROL + Add]** underneath [!UICONTROL Events]. 
     
@@ -397,7 +397,7 @@ To define a rule:
 
         -   Select **[!UICONTROL web.webpagedetails.pageViews]** from the [!UICONTROL Type] list.
 
-        -   Select the cilinder icon next to  [!UICONTROL XDM data] and Select **[!UICONTROL XDM - Page View]** from the list of data elements.
+        -   Select the cylinder icon next to  [!UICONTROL XDM data] and Select **[!UICONTROL XDM - Page View]** from the list of data elements.
 
             ![Rule - Action Configuration](./assets/action-pageview-xdm.png)
 
@@ -411,7 +411,7 @@ To define a rule:
 
 This is just an example of defining a rule that sends XDM data, containing values from other data elements, to Adobe Experience Platform. 
 
-You can use rules in a variety of ways in your tag to manipulate variables (making use of your data elements). 
+You can use rules in various ways in your tag to manipulate variables (using your data elements). 
 
 See [Rules](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) for more information.
 
@@ -425,7 +425,7 @@ To build and publish your tag:
 
 2.  Select **[!UICONTROL Select a working library]**, followed by **[!UICONTROL Add Library…]**.
 
-3.  In the [!UICONTROL Create Libray] dialog:
+3.  In the [!UICONTROL Create Library] dialog:
 
     -   Name the library.
 
@@ -437,13 +437,13 @@ To build and publish your tag:
 
     -   Select **[!UICONTROL Save & Build to Development]**.
 
-    This will save and build the tag for your development environment. A green dot indicates a successful build of your tag on your development environment.
+    This saves and builds the tag for your development environment. A green dot indicates a successful build of your tag on your development environment.
 
 4.  You can select **[!UICONTROL ...]** to rebuild the library or move the library to a staging or production environment.
 
     ![Publish - Build Library](./assets/build-library.png)
 
-Adobe Experience Platform Tags support simple to complex publishing workflows that should accomodate your deployment of the Adobe Experience Platform Web SDK. 
+Adobe Experience Platform Tags support simple to complex publishing workflows that should accommodate your deployment of the Adobe Experience Platform Web SDK. 
 
 See [Publishing overview](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) for more information.
 
@@ -474,13 +474,13 @@ See [Environments](https://experienceleague.adobe.com/docs/experience-platform/t
 
 ## Deploy and validate
 
-You can now deploy the code on the development version of your website inside the `<head>` tag. When deployed, your website will start collecting data into Adobe Experience Platform.
+You can now deploy the code on the development version of your website inside the `<head>` tag. When deployed, your website starts collecting data into Adobe Experience Platform.
 
 Validate your implementation, correct it where necessary, and once correct, deploy it to your staging and production environment using the publishing workflow feature of Tags.
 
-## Setup a connection
+## Set up a connection
 
-To use the Adobe Experience Platform data in Customer Journey Analytics, you create a connection that includes the data resulting from setting up your schema, dataset and workflow. 
+To use the Adobe Experience Platform data in Customer Journey Analytics, you create a connection that includes the data resulting from setting up your schema, dataset, and workflow. 
 
 A connection lets you integrate datasets from Adobe Experience Platform into Workspace. In order to report on  these datasets, you first have to establish a connection between datasets in Adobe Experience Platform and Workspace.
 
@@ -494,15 +494,15 @@ To create your connection:
 
     Name and describe your connection in [!UICONTROL Connection Settings].
 
-    Select the correct sandbox from the [!UICONTROL Sandbox] list in [!UICONTROL Data settings] and select the number of daily events from the [!UICONTROL Avergage number of daily events] list.
+    Select the correct sandbox from the [!UICONTROL Sandbox] list in [!UICONTROL Data settings] and select the number of daily events from the [!UICONTROL Average number of daily events] list.
 
     ![Connection Settings](./assets/cja-connections-1.png)
     
-    Select **[!UICONTROL Add datsets]**. 
+    Select **[!UICONTROL Add datasets]**. 
     
     In the [!UICONTROL Select datasets] step in [!UICONTROL Add datasets]:
     
-    -   Select the dataset you created earlier (`Example dataset`) and any other dataset you want to include in your connection.
+    -   Select the dataset that you created earlier (`Example dataset`) and any other dataset you want to include in your connection.
 
         ![Add datasets](./assets/cja-connections-2b.png)
 
@@ -514,7 +514,7 @@ To create your connection:
 
         -   Select a [!UICONTROL Person ID] from the available identities defined in the dataset schemas in Adobe Experience Platform.
     
-        -   Select the correct data source from the [!UICONTROL Data source type] list. If you specify **[!UICONTROL Other]** then add a description for your data source.
+        -   Select the correct data source from the [!UICONTROL Data source type] list. If you specify **[!UICONTROL Other]**, then add a description for your data source.
 
         -   Set **[!UICONTROL Import all new data]** and **[!UICONTROL Dataset backfill existing data]** according to your preferences.
 
@@ -526,7 +526,7 @@ To create your connection:
 
 See [Connections overview](../connections/overview.md) for more information on how to create and manage a connection and how to select and combine datasets.
 
-## Setup a data view
+## Set up a data view
 
 A data view is a container specific to Customer Journey Analytics that lets you determine how to interpret data from a connection. It specifies all dimensions and metrics available in Analysis Workspace and which columns those dimensions and metrics obtain their data from. Data views are defined in preparation for reporting in Analysis Workspace.
 
@@ -548,7 +548,7 @@ To create your data view:
 
 4.  In the [!UICONTROL Components] step:
 
-    Add any schema field and/or standard component you want to include to the [!UICONTROL METRICS] or [!UICONTROL DIMENSIONS] component boxes.
+    Add any schema field and/or standard component that you want to include to the [!UICONTROL METRICS] or [!UICONTROL DIMENSIONS] component boxes.
 
     ![Data view components](./assets/cja-dataview-2.png)
 
@@ -563,9 +563,9 @@ To create your data view:
 See [Data views overview](../data-views/data-views.md) for more information on how to create and edit a data view, what components are available for you to use in your data view and how to use filter and sessions settings.
 
 
-## Setup a project
+## Set up a project
 
-Analysis Workspace is a flexible browser tool that allows you to quickly build analyses and share insights based on your data. You use Workspace projects to combine data components, tables and visualizations to craft your analysis and share with anyone in your organization.
+Analysis Workspace is a flexible browser tool that allows you to quickly build analyses and share insights based on your data. You use Workspace projects to combine data components, tables, and visualizations to craft your analysis and share with anyone in your organization.
 
 To create your project:
 
@@ -585,12 +585,12 @@ To create your project:
 
     ![Workspace Select Data view](./assets/cja-projects-3.png).
 
-5.  Start dragging and dropping dimensions and metrics on the [!UICONTROL Freeform table] in the [!UICONTROL Panel] to create your first report. As an example, drag `Program Points Balance` and `Page View` as metrics and `email` as dimension to get a quick overview of profiles that have visited your website and also are part of the loyalty program collecting loyalty points.
+5.  Start dragging and dropping dimensions and metrics on the [!UICONTROL Freeform table] in the [!UICONTROL Panel] to create your first report. As an example, drag `Program Points Balance` and `Page View` as metrics and `email` as dimension to get a quick overview of profiles that have visited your website and are part of the loyalty program collecting loyalty points.
 
     ![Workspace - First Report](./assets/cja-projects-5.png)
 
-See [Analysis Workspace overview](../analysis-workspace/home.md) for more information on how to create projects and build your analysis using components, visualization and panels.
+See [Analysis Workspace overview](../analysis-workspace/home.md) for more information on how to create projects and build your analysis using components, visualizations, and panels.
 
 >[!SUCCESS]
 >
->You have completed all the steps. Starting by defining what data you want to collect (schema) and where to store it (dataset) in Adobe Experience Platform, you configured a datastream on the Edge Network to ensure data can be forwarded to that dataset. Then you defined and deployed your tag containing the extensions (Adobe Experience Platform Web SDK, Experience Cloud ID Service), data elements and rules to capture data from your website and send that data to your datastream. You defined a connection in Customer Journey Analytics to make use of your website tracking data and other data. Your data view definition allowed you to specify which dimension and metrics to use and finally you created your first project visualizing and analyzing your data.
+>You have completed all the steps. Starting by defining what data you want to collect (schema) and where to store it (dataset) in Adobe Experience Platform, you configured a datastream on the Edge Network to ensure that data can be forwarded to that dataset. Then you defined and deployed your tag containing the extensions (Adobe Experience Platform Web SDK, Experience Cloud ID Service), data elements, and rules to capture data from your website and send that data to your datastream. You defined a connection in Customer Journey Analytics to use your website tracking data and other data. Your data view definition allowed you to specify which dimension and metrics to use and finally you created your first project visualizing and analyzing your data.

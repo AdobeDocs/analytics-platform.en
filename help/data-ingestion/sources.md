@@ -11,37 +11,37 @@ This quick start guide explains how you can ingest data into Adobe Experience Pl
 
 To accomplish this, you need to:
 
--   **Setup a schema and dataset** in Adobe Experience Platform to define the model (schema) of the data you want to collect and where to actually collect the data (dataset).
+-   **Set up a schema and dataset** in Adobe Experience Platform to define the model (schema) of the data that you want to collect and where to actually collect the data (dataset).
 
 -   **Use a source connector** in Adobe Experience Platform to get your data into the dataset configured.
 
 -   **Set up a connection** in Customer Journey Analytics. This connection should (at least) include your Adobe Experience Platform dataset.
 
--   **Set up a data view** in Customer Journey Analytics to define metrics and dimension you want to use in Analysis Workspace.
+-   **Set up a data view** in Customer Journey Analytics to define metrics and dimension that you want to use in Analysis Workspace.
 
--   **Set up a project** in Customer Journey Analytics to build your reports and visualisations.
+-   **Set up a project** in Customer Journey Analytics to build your reports and visualizations.
 
 
 
 >[!NOTE]
 >
->This is a simplified guide on how to ingest data using a source connector into Adobe Experience Platform and use it in Customer Journey Analytics.  It is higly recommended to study the additional information when referred to.
+>This is a simplified guide on how to ingest data using a source connector into Adobe Experience Platform and use it in Customer Journey Analytics. It is highly recommended to study the additional information when referred to.
 
 
-## Setup a schema and dataset
+## Set up a schema and dataset
 
-To ingest data into Adobe Experience Platform, you first need to define which data you want to collect. All data ingested into Adobe Experience Platform must conform to a standard, denormalized structure in order for it be recognized and acted upon by downstream capabilities and features. Experience Data Model (XDM) is the standard framework that provides this structure in the form of schemas. 
+To ingest data into Adobe Experience Platform, you first need to define which data you want to collect. All data ingested into Adobe Experience Platform must conform to a standard, denormalized structure for it be recognized and acted upon by downstream capabilities and features. Experience Data Model (XDM) is the standard framework that provides this structure in the form of schemas. 
 
-Once you have defined a schema, you will use one or more datasets to store and manage the collection of data. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). 
+Once you have defined a schema, you use one or more datasets to store and manage the collection of data. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). 
 
 All data that is ingested into Adobe Experience Platform must conform to a pre-defined schema before it can be persisted as a dataset.
 
-### Setup a schema
+### Set up a schema
 
-For this quick start we assume you want to collect some loyalty data, e.g. loyalty id, loyalty points and loyalty status.
+For this quick start, you want to collect some loyalty data, for example loyalty id, loyalty points, and loyalty status.
 For this, you first need to define a schema that models this data.
 
-To setup your schema:
+To set up your schema:
 
 1.  In the Adobe Experience Platform UI, in the left rail, select **[!UICONTROL Schemas]** within [!UICONTROL DATA MANAGEMENT].
 
@@ -86,7 +86,7 @@ To setup your schema:
 
     ![Identification Object](./assets/identifcation-loyalty-field.png)
 
-    This will add identification capabilities to your schema. In your case, you want to identify loyalty information using the email address in your batch data.
+    This adds identification capabilities to your schema. In your case, you want to identify loyalty information using the email address in your batch data.
 
     Select **[!UICONTROL Apply]** to add this object to your schema.
 
@@ -94,13 +94,13 @@ To setup your schema:
 
     ![Specifiy email as identity](./assets/specify-email-loyalty-id.png)
 
-    You are specifying the email address as the identity the Adobe Experience Platform Identity service can use to combine (stitch) the behaviour of profiles.
+    You are specifying the email address as the identity the Adobe Experience Platform Identity service can use to combine (stitch) the behavior of profiles.
 
-    Select **[!UICONTROL Apply]**. You will see a fingerprint icon appear in the email attribute.
+    Select **[!UICONTROL Apply]**. You see that a fingerprint icon appears in the email attribute.
 
 7.  Select the root level of your schema (with the schema name), then select the **[!UICONTROL Profile]** switch.
 
-    You will be prompted to enable the schema for profile. Once enabled, when data is ingested into datasets based on this schema, that data will be merged into the Real-Time Customer Profile. 
+    You are prompted to enable the schema for profile. Once enabled, when data is ingested into datasets based on this schema, that data is merged into the Real-Time Customer Profile. 
     
     See [Enable the schema for use in Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) for more information.
 
@@ -112,15 +112,15 @@ To setup your schema:
 
 8.  Select **[!UICONTROL Save]** to save your schema.
 
-You have created a minimal schema that models the loyalty data you can ingest into Adobe Experience Platform. The schema allows profiles to be identified using the email address. By enabling the schema for profile, you ensure data from your streaming source is added to the Real-Time Customer Profile.
+You have created a minimal schema that models the loyalty data you can ingest into Adobe Experience Platform. The schema allows profiles to be identified using the email address. By enabling the schema for profile, you ensure that data from your streaming source is added to the Real-Time Customer Profile.
 
 See [Create and edit schemas in the UI](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html) for more information on adding and removing field groups and individual fields to a schema.
 
-### Setup a dataset
+### Set up a dataset
 
-With your schema you have defined your data model. You now have to define the construct to store and manage that data. This is done through datasets.
+With your schema, you have defined your data model. You now have to define the construct to store and manage that data. This is done through datasets.
 
-To setup your dataset:
+To set up your dataset:
 
 1.  In the Adobe Experience Platform UI, in the left rail, select **[!UICONTROL Datasets]** within [!UICONTROL DATA MANAGEMENT].
 
@@ -132,7 +132,7 @@ To setup your dataset:
 
     ![Create dataset from schema](./assets/create-dataset-from-schema.png)
 
-4.  Select the schema you created earlier and select **[!UICONTROL Next]**.
+4.  Select the schema that you created earlier and select **[!UICONTROL Next]**.
 
 5.  Name your dataset and (optional) provide a description.
 
@@ -142,7 +142,7 @@ To setup your dataset:
 
 7.  Select the **[!UICONTROL Profile]** switch.
 
-    You will be prompted to enable the dataset for profile. Once enabled, the dataset will enrich real-time customer profiles with its ingested data.
+    You are prompted to enable the dataset for profile. Once enabled, the dataset enriches real-time customer profiles with its ingested data.
 
     >[!IMPORTANT]
     >
@@ -165,15 +165,15 @@ To set up a source connector:
 
     -   **[!UICONTROL Authentication]**. You provide authentication details to access the source of data.
 
-    -   **[!UICONTROL Select data]**: You select the source data you want to ingest.
+    -   **[!UICONTROL Select data]**: You select the source data that you want to ingest.
 
-    -   **[!UICONTROL Dataflow detai]**: You provide additional details on the dataflow, i.e. name and which dataset to use.
+    -   **[!UICONTROL Dataflow detail]**: You provide additional details on the dataflow, i.e. name and which dataset to use.
 
-    -   **[!UICONTROL Mapping]**: You map the incoming source data fields to attributes in the schema associated with the dataset you selected.
+    -   **[!UICONTROL Mapping]**: You map the incoming source data fields to attributes in the schema associated with the dataset that you selected.
 
     -   **[!UICONTROL Scheduling]**: If available, you can schedule the ingestion of data.
 
-    -   **[!UICONTROL Review]**: Before finishing the setup, you will review the definition of the source connector.
+    -   **[!UICONTROL Review]**: You see a review of the definition of the source connector.
 
     Each connector provides detailed documentation.
 
@@ -192,9 +192,9 @@ See [Ingest and use streaming data](./streaming.md) how to use the HTTP API sour
 See [Source Connectors overview](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#terms-and-conditions) for an overview of source connectors including links to more information for each connector.
 
 
-## Setup a connection
+## Set up a connection
 
-To use the Adobe Experience Platform data in Customer Journey Analytics, you create a connection that includes the data resulting from setting up your schema, dataset and workflow. 
+To use the Adobe Experience Platform data in Customer Journey Analytics, you create a connection that includes the data resulting from setting up your schema, dataset, and workflow. 
 
 A connection lets you integrate datasets from Adobe Experience Platform into Workspace. In order to report on  these datasets, you first have to establish a connection between datasets in Adobe Experience Platform and Workspace.
 
@@ -208,15 +208,15 @@ To create your connection:
 
     Name and describe your connection in [!UICONTROL Connection Settings].
 
-    Select the correct sandbox from the [!UICONTROL Sandbox] list in [!UICONTROL Data settings] and select the number of daily events from the [!UICONTROL Avergage number of daily events] list.
+    Select the correct sandbox from the [!UICONTROL Sandbox] list in [!UICONTROL Data settings] and select the number of daily events from the [!UICONTROL Average number of daily events] list.
 
     ![Connection Settings](./assets/cja-connections-1.png)
     
-    Select **[!UICONTROL Add datsets]**. 
+    Select **[!UICONTROL Add datasets]**. 
     
     In the [!UICONTROL Select datasets] step in [!UICONTROL Add datasets]:
     
-    -   Select the dataset you created earlier (`Example Loyalty Dataset`) and any other dataset you want to include in your connection.
+    -   Select the dataset that you created earlier (`Example Loyalty Dataset`) and any other dataset you want to include in your connection.
 
         ![Add datasets](./assets/cja-connections-2.png)
 
@@ -228,7 +228,7 @@ To create your connection:
 
         -   Select a [!UICONTROL Person ID] from the available identities defined in the dataset schemas in Adobe Experience Platform.
     
-        -   Select the correct data source from the [!UICONTROL Data source type] list. If you specify **[!UICONTROL Other]** then add a description for your data source.
+        -   Select the correct data source from the [!UICONTROL Data source type] list. If you specify **[!UICONTROL Other]**, then add a description for your data source.
 
         -   Set **[!UICONTROL Import all new data]** and **[!UICONTROL Dataset backfill existing data]** according to your preferences.
 
@@ -240,7 +240,7 @@ To create your connection:
 
 See [Connections overview](../connections/overview.md) for more information on how to create and manage a connection and how to select and combine datasets.
 
-## Setup a data view
+## Set up a data view
 
 A data view is a container specific to Customer Journey Analytics that lets you determine how to interpret data from a connection. It specifies all dimensions and metrics available in Analysis Workspace and which columns those dimensions and metrics obtain their data from. Data views are defined in preparation for reporting in Analysis Workspace.
 
@@ -262,7 +262,7 @@ To create your data view:
 
 4.  In the [!UICONTROL Components] step:
 
-    Add any schema field and/or standard component you want to include to the [!UICONTROL METRICS] or [!UICONTROL DIMENSIONS] component boxes.
+    Add any schema field and/or standard component that you want to include to the [!UICONTROL METRICS] or [!UICONTROL DIMENSIONS] component boxes.
 
     ![Data view components](./assets/cja-dataview-2.png)
 
@@ -277,9 +277,9 @@ To create your data view:
 See [Data views overview](../data-views/data-views.md) for more information on how to create and edit a data view, what components are available for you to use in your data view and how to use filter and sessions settings.
 
 
-## Setup a project
+## Set up a project
 
-Analysis Workspace is a flexible browser tool that allows you to quickly build analyses and share insights based on your data. You use Workspace projects to combine data components, tables and visualizations to craft your analysis and share with anyone in your organization.
+Analysis Workspace is a flexible browser tool that allows you to quickly build analyses and share insights based on your data. You use Workspace projects to combine data components, tables, and visualizations to craft your analysis and share with anyone in your organization.
 
 To create your project:
 
@@ -299,12 +299,12 @@ To create your project:
 
     ![Workspace Select Data view](./assets/cja-projects-3.png).
 
-5.  Start dragging and dropping dimensions and metrics on the [!UICONTROL Freeform table] in the [!UICONTROL Panel] to create your first report. As an example, drag `Program Points Balance` and `Page View` as metrics and `email` as dimension to get a quick overview of profiles that have visited your website and also are part of the loyalty program collecting loyalty points.
+5.  Start dragging and dropping dimensions and metrics on the [!UICONTROL Freeform table] in the [!UICONTROL Panel] to create your first report. As an example, drag `Program Points Balance` and `Page View` as metrics and `email` as dimension to get a quick overview of profiles that have visited your website and are part of the loyalty program collecting loyalty points.
 
     ![Workspace - First Report](./assets/cja-projects-5.png)
 
-See [Analysis Workspace overview](../analysis-workspace/home.md) for more information on how to create projects and build your analysis using components, visualization and panels.
+See [Analysis Workspace overview](../analysis-workspace/home.md) for more information on how to create projects and build your analysis using components, visualizations, and panels.
 
 >[!SUCCESS]
 >
->You have completed all the steps. Starting by defining what loyalty data you want to collect (schema) and where to store it (dataset) in Adobe Experience Platform, you configured the appropriate source connector to provide you with the loyalty data. You defined a connection in Customer Journey Analytics to make use of the ingested loyalty data and other data. Your data view definition allowed you to specify which dimension and metrics to use and finally you created your first project visualizing and analyzing your data.
+>You have completed all the steps. Starting by defining what loyalty data you want to collect (schema) and where to store it (dataset) in Adobe Experience Platform, you configured the appropriate source connector to provide you with the loyalty data. You defined a connection in Customer Journey Analytics to use the ingested loyalty data and other data. Your data view definition allowed you to specify which dimension and metrics to use and finally you created your first project visualizing and analyzing your data.
