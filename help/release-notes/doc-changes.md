@@ -9,6 +9,13 @@ feature: Release Notes
 
 The following updates were made to the CJA documentation since its inception.
 
+## 2023
+
+| Date | Update description |
+| --- | --- |
+| **January 2023** |  |
+| TBD | TBD |
+
 ## 2022
 
 | Date | Update description |
