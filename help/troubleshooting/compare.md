@@ -41,7 +41,7 @@ Total Records by timestamps should match with Occurrences, provided that no reco
 
 >[!NOTE]
 >
->This works for regular mid values datasets only, not stitched dataset (via [Cross-Channel Analytics](/help/connections/cca/overview.md)). Please note that accounting for the Person ID being used in CJA is critical for making the comparison work. That may not always be easy to replicate in AA, especially if Cross-Channel Analytics has been turned on. 
+>This works for regular mid values datasets only, not stitched dataset (via [Cross-Channel Analytics](/help/cca/overview.md)). Please note that accounting for the Person ID being used in CJA is critical for making the comparison work. That may not always be easy to replicate in AA, especially if Cross-Channel Analytics has been turned on. 
 
 1. In Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), run the following [!UICONTROL Total Records by timestamps] query:
 
@@ -85,4 +85,4 @@ Here are some of the reasons why records might be skipped while ingesting data f
  
 * **Missing Person IDs** – Missing Person IDs (from the events dataset and/or from profile/lookup dataset) cause those records to be ignored or skipped. The reason is that there are no common IDs or matching keys to join the records. 
  
-* **Invalid or Large Person IDs** – With invalid IDs, the system cannot find a valid common ID among the datasets to join. In some cases, the person ID column has invalid Person IDs such as “undefined”, or “00000000". A Person ID (with any combination of numbers and letters) that appears in an event more than 1 million times per month cannot be attributed to any specific user or person. It will be categorized as invalid. Those records cannot be ingested into the system and result in error-prone ingestion and reporting. 
+* **Invalid or Large Person IDs** – With invalid IDs, the system cannot find a valid common ID among the datasets to join. In some cases, the person ID column has invalid Person IDs such as "undefined", or "00000000". A Person ID (with any combination of numbers and letters) that appears in an event more than 1 million times per month cannot be attributed to any specific user or person. It will be categorized as invalid. Those records cannot be ingested into the system and result in error-prone ingestion and reporting. 

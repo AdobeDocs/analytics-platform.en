@@ -42,7 +42,7 @@ Live stitching is available approximately one week after Adobe enables Cross-Cha
 
 [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) is a feature specific to traditional Adobe Analytics that allows you to understand how people operate across devices. It offers two workflows to link device data together: field-based stitching and the device graph.
 
-[Cross-Channel Analytics](../overview.md) is a feature specific to CJA that allows you to understand how people operate across both devices and channels. It re-key's a dataset's person ID, allowing that dataset to be seamlessly combined with other datasets. This feature operates in design similarly to CDA's field-based stitching, but implementation is different do to differing data architecture between traditional Analytics and CJA.
+[Cross-Channel Analytics](/help/cca/overview.md) is a feature specific to CJA that allows you to understand how people operate across both devices and channels. It re-key's a dataset's person ID, allowing that dataset to be seamlessly combined with other datasets. This feature operates in design similarly to CDA's field-based stitching, but implementation is different do to differing data architecture between traditional Analytics and CJA.
 
 ## How does Cross-Channel Analytics handle GDPR and CCPA requests?
 

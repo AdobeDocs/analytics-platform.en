@@ -18,7 +18,7 @@ Have a single consolidated view of customer behavior across various channels by 
 1. [Create schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) for data to be ingested.
 1. [Create datasets](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) for data to be ingested.
 1. [Ingest data into Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html).
-1. Use a common namespace ID across datasets, or use [Cross-Channel Analytics](/help/connections/cca/overview.md) to link people together. Note that Customer Journey Analytics does not currently use the Experience Platform Profile or Identity services for stitching.
+1. Use a common namespace ID across datasets, or use [Cross-Channel Analytics](/help/cca/overview.md) to link people together. Note that Customer Journey Analytics does not currently use the Experience Platform Profile or Identity services for stitching.
 1. Perform any custom data preparation to ensure a common key across time series datasets to be ingested into Customer Journey Analytics.
 1. Give lookup data a primary ID that can join to a field in the event data. Counts as rows in licensing.
 1. Set the same primary ID for profile data as the primary ID of the event data.
