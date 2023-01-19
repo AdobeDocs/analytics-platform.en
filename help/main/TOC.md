@@ -41,6 +41,14 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [AAID, ECID, AACUSTOMID and the Analytics Source Connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
   + [Deletion implications](../getting-started/cja-deletion.md)
   + [CJA glossary](../getting-started/cja-glossary.md)
++ Data Ingestion {#cja-data-ingestion}
+  + [Data Ingestion Overview](../data-ingestion/data-ingestion.md)
+  + Ingest and use quick start guides{#ingest-use-guides}
+    + [Adobe Analytics](../data-ingestion/analytics.md)
+    + [Adobe Experience Platform Web SDK and Edge Network](../data-ingestion/aepwebsdk.md)
+    + [Batch data](../data-ingestion/batch.md)
+    + [Streaming data](../data-ingestion/streaming.md)
+    + [Source connectors](../data-ingestion/sources.md)
 + Connections {#cja-connections}
   + [Connections overview](../connections/overview.md)
   + [Create a connection](../connections/create-connection.md)
@@ -245,7 +253,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Configure streaming Google Analytics data into Platform](../use-cases/ga/streaming.md)
     + [Report on Google Analytics data in CJA](../use-cases/ga/report.md)
   + Data ingestion {#data-ingestion}
-    + [Data ingestion use cases](../use-cases/data-ingestion/data-ingestion.md)
     + [Ingest Marketo Engage data into AEP and report in CJA](../use-cases/data-ingestion/marketo.md)
     + [Ingest AEP audiences into CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
   + Data views {#data-views}
