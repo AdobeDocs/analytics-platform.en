@@ -2,7 +2,7 @@
 title: Data Ingestion Overview
 description: Understand the different ways you can ingest data into Customer Journey Analytics
 solution: Customer Journey Analytics
-feature: Data Ingestion
+feature: CJA Basics
 ---
 
 # Data Ingestion Overview
@@ -26,13 +26,13 @@ This section of the documentation provides quick start guides for a number of sc
 
 You already have Adobe Analytics deployed and want to ingest this data in Adobe Experience Platform and use, combine and analyze it with data from other channels and data sources in Customer Journey Analytics.
 
-See [Ingest and use data from tradional Adobe Analytics](./ingest-analytics.md) for more information.
+See [Ingest and use data from tradional Adobe Analytics](./analytics.md) for more information.
 
 ## Ingest and use data via the Adobe Experience Platform Web SDK and the Edge Network
 
 You want to analyze your website with Adobe technology, potentially migrating from another solution or start   tracking your visitor's behavior. You want to follow Adobe's best practices for implementation, which is using the Adobe Experience Platform SDKs and Edge Network, to ingest the data. Then you can use, combine and analyze the ingested data with data from other channels and data sources in Customer Journey Analytics.
 
-See [Ingest and use data via the Adobe Experience Platform Web SDK and the Edge Network](./ingest-aepwebsdk.md) for more information.
+See [Ingest and use data via the Adobe Experience Platform Web SDK and the Edge Network](./aepwebsdk.md) for more information.
 
 ## Ingest and use batch data
 

@@ -2,7 +2,7 @@
 title: Ingest and use data from traditional Adobe Analytics
 description: Explain how to ingest data from traditional Adobe Analytics
 solution: Customer Journey Analytics
-feature: Data Ingestion
+feature: CJA Basics
 ---
 
 # Ingest and use data from traditional Adobe Analytics

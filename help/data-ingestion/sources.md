@@ -2,7 +2,7 @@
 title: Ingest and use data using source connectors
 description: Explain how to ingest and use data using source connectors in Customer Journey Analytics 
 solution: Customer Journey Analytics
-feature: Data Ingestion
+feature: CJA Basics
 ---
 
 # Ingest and use data using source connectors.
