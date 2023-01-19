@@ -55,10 +55,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Manage connections](../connections/manage-connections.md)
   + [Combined event datasets](../connections/combined-dataset.md)
   + [Standard lookups](../connections/standard-lookups.md)
-  + Cross-Channel Analytics {#cca}
-    + [Cross-Channel Analytics overview](../connections/cca/overview.md)
-    + [How replays work](../connections/cca/replay.md)
-    + [Cross-Channel Analytics FAQ](../connections/cca/faq.md)
+  + [Cross-Channel Analytics](../connections/cca.md)
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
@@ -171,18 +168,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Administration requirements](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility in Analysis Workspace](../analysis-workspace/workspace-faq/aw-accessibility.md)
     + [Long-tail in Analysis Workspace](../analysis-workspace/workspace-faq/long-tail.md)
-+ Report Builder {#cja-reportbuilder}
-  + [Report Builder Overview](../report-builder/report-buider-overview.md)
-  + [Report Builder Set Up](../report-builder/report-builder-setup.md)
-  + [Create a Data Block](../report-builder/create-a-data-block.md)
-  + [Report Builder Hub](../report-builder/report-builder-hub.md)
-  + [Select a Date Range](../report-builder/select-date-range.md)
-  + [Work with Filters](../report-builder/work-with-filters.md)
-  + [Filter Dimensions](../report-builder/filter-dimensions.md)
-  + [Manage Data Blocks](../report-builder/manage-reportbuilder.md)
-  + [Schedule Workbooks](../report-builder/schedule-reportbuilder.md)
-  + [Restricted Labels](../report-builder/restricted-labels.md)
-  + [Report Builder Settings](../report-builder/report-builder-settings.md)
 + Components {#cja-components}
   + [Components overview](../components/overview.md)
   + Annotations {#annotations}
@@ -240,11 +225,31 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Create a mobile scorecard](../mobile-app/create-scorecard.md)
   + [Set up executives to use dashboards](../mobile-app/set-up-execs.md)
   + [Executive user quick start guide](../mobile-app/executive.md)
++ Report Builder {#cja-reportbuilder}
+  + [Report Builder Overview](../report-builder/report-buider-overview.md)
+  + [Report Builder Set Up](../report-builder/report-builder-setup.md)
+  + [Create a Data Block](../report-builder/create-a-data-block.md)
+  + [Report Builder Hub](../report-builder/report-builder-hub.md)
+  + [Select a Date Range](../report-builder/select-date-range.md)
+  + [Work with Filters](../report-builder/work-with-filters.md)
+  + [Filter Dimensions](../report-builder/filter-dimensions.md)
+  + [Manage Data Blocks](../report-builder/manage-reportbuilder.md)
+  + [Schedule Workbooks](../report-builder/schedule-reportbuilder.md)
+  + [Restricted Labels](../report-builder/restricted-labels.md)
+  + [Report Builder Settings](../report-builder/report-builder-settings.md)
++ Cross-Channel Analytics {#cca}
+  + [Cross-Channel Analytics overview](../cca/overview.md)
+  + [How replays work](../cca/replay.md)
+  + [Cross-Channel Analytics FAQ](../cca/faq.md)
 + Adobe integrations {#integrations}
   + [Integrate Adobe solutions with CJA overview](/help/integrations/overview.md)
   + [Integrate Adobe Analytics with Customer Journey Analytics](/help/integrations/aa.md)
   + [Integrate Journey Optimizer data with CJA](/help/integrations/ajo.md)
   + [Integrate Customer AI data with CJA](/help/integrations/customer-ai.md)
++ Data Governance {#cja-privacy}
+  + [Data Governance](../privacy/privacy-overview.md)
+  + [Audit Log](../privacy/audit-log.md)
+  + [Customer Managed Keys](../privacy/cmk.md)
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](../use-cases/cja-usecases.md)
   + Google Analytics data {#ga}
@@ -271,8 +276,4 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Labs User Guide](../labs/labs.md)
 + Troubleshooting {#troubleshooting}
   + [Compare your Adobe Analytics data to CJA data](../troubleshooting/compare.md)
-+ Data Governance {#cja-privacy}
-  + [Data Governance](../privacy/privacy-overview.md)
-  + [Audit Log](../privacy/audit-log.md)
-  + [Customer Managed Keys](../privacy/cmk.md)
 + [CJA API](https://developer.adobe.com/cja-apis/docs/)
