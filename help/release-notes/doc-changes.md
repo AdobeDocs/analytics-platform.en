@@ -14,7 +14,7 @@ The following updates were made to the CJA documentation since its inception.
 | Feature | Description |
 | --- | --- |
 | **January 2023** | |
-| Quick start guides | New documentation section on how to [ingest and use data](/help/data-ingestion/data-ingestion.md) in CJA.
+| Quick start guides | New documentation section on how to [ingest and use data](/help/data-ingestion/data-ingestion.md) in CJA.  |
 | Folders | Dedicated pages for [Folders management](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).  |
 | User preferences | Many additional user preferences are now available in [Preferences](/help/analysis-workspace/user-preferences.md).  |
 | Auto-save for projects | Updated content to include auto-save functionality in [Save projects](/help/analysis-workspace/build-workspace-project/save-projects.md).  |
