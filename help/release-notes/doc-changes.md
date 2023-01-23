@@ -14,7 +14,6 @@ The following updates were made to the CJA documentation since its inception.
 | Feature | Description |
 | --- | --- |
 | **January 2023** | |
-| Update to CJA Audiences doc | New documentation on [what happens after a new audience is created](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | Data ingestion quick start guides | New documentation section on how to [ingest and use data](/help/data-ingestion/data-ingestion.md) in CJA.  |
 | Workspace Folders | Dedicated pages for [Folders management](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).  |
 | Workspace User preferences | Many additional user preferences are now available in [Preferences](/help/analysis-workspace/user-preferences.md).  |
