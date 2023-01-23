@@ -9,7 +9,19 @@ feature: Release Notes
 
 The following updates were made to the CJA documentation since its inception.
 
-## 2022
+## 2023 {#23}
+
+| Feature | Description |
+| --- | --- |
+| **January 2023** | |
+| Data ingestion quick start guides | New documentation section on how to [ingest and use data](/help/data-ingestion/data-ingestion.md) in CJA.  |
+| Workspace Folders | Dedicated pages for [Folders management](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).  |
+| Workspace User preferences | Many additional user preferences are now available in [Preferences](/help/analysis-workspace/user-preferences.md).  |
+| Auto-save for Workspace projects | Updated content to include auto-save functionality in [Save projects](/help/analysis-workspace/build-workspace-project/save-projects.md).  |
+| Landing page | New landing page updates [landing page](/help/getting-started/landing.md).  |
+| Schedule Workbooks | Dedicated page to describe how to [Schedule Workbooks](/help/report-builder/schedule-reportbuilder.md) in Report Builder.  |
+
+## 2022 {#22}
 
 | Date | Update description |
 | --- | --- |
@@ -67,7 +79,7 @@ The following updates were made to the CJA documentation since its inception.
 
 {style="table-layout:auto"}
 
-## 2021
+## 2021 {#21}
 
 | Date | Update description |
 | --- | --- |
@@ -108,17 +120,17 @@ The following updates were made to the CJA documentation since its inception.
 
 {style="table-layout:auto"}
 
-## 2020
+## 2020 {#20}
 
 | Date | Update description |
 | --- | --- |
-| November 13, 2020 | New topics on [Cross-Channel Analytics](/help/connections/cca/overview.md), which allows you to rekey a dataset's person ID, and enables a seamless combination of multiple datasets. |
+| November 13, 2020 | New topics on [Cross-Channel Analytics](/help/cca/overview.md), which allows you to rekey a dataset's person ID, and enables a seamless combination of multiple datasets. |
 | November 13, 2020 | A new use case on [importing call center and web data](/help/use-cases/cross-channel/call-center.md) was added. |
 | November 10, 2020 | Added a section on the implications of deleting data components to the [FAQ](/help/getting-started/cja-faq.md). |
 | November 2, 2020 | Updates to the [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md) page. |
 | November 2020 | Added content on [removing backfill limitations](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) for connections. |
 | October 7, 2020 | Added a topic on [combined event datasets](/help/connections/combined-dataset.md). |
-| September 15, 2020 | Added a topic on [data ingestion](/help/use-cases/data-ingestion/data-ingestion.md). |
+| September 15, 2020 | Added a topic on [data ingestion](/help/data-ingestion/data-ingestion.md). |
 | September 2, 2020 | Updated section on [user permissions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). |
 | August 7, 2020| New topic on [B2B use case - lookup dataset](/help/use-cases/b2b/b2b.md) added. |
 | July 2020| Added information on [Identity Map option for Person ID](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html). |
