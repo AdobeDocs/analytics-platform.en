@@ -78,7 +78,7 @@ After you have created an audience, Adobe creates an Experience Platform streami
 
 ## Use CJA audiences in Experience Platform {#audiences-aep}
 
-CJA now takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). CJA sends the audience over to Experience Platform with the primary identity set to whatever was selected as the person ID when the connection was configured.
+CJA takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). CJA sends the audience over to Experience Platform with the primary identity set, according to what was selected as the [!UICONTROL Person ID] when the connection was configured.
 
 RTCP then examines each namespace/ID combination and looks for a profile that it may be part of. A profile is basically a cluster of linked namespaces, IDs and devices. If it finds a profile, it will add the namespace and ID to the other IDs in this profile as a segment membership attribute. Now, for example, "user@adobe.com" can be targeted across all their devices and channels. If a profile is not found, a new one is created.
 
