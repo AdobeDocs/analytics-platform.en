@@ -92,33 +92,47 @@ You can drag CJA audiences into the segment definition for AEP segments.
 
 Frequently asked questions on audience publishing.
 
-### What happens if a user is no longer a member of an audience in CJA?
++++**What happens if a user is no longer a member of an audience in CJA?**
 
 In this case, an exit event is sent to Experience Platform from CJA.
 
-### What happens if you delete an audience in CJA?
++++
+
++++**What happens if you delete an audience in CJA?**
 
 When a CJA Audience is deleted, that audience will no longer show up in the Experience Platform UI. However, no profiles associated with that audience are actually deleted in Platform.
 
-### If a corresponding profile does not exist in RTCDP, will a new profile be created?
++++
+
++++**If a corresponding profile does not exist in RTCDP, will a new profile be created?**
 
 Yes, it will.
 
-### Does CJA send the audience data over as pipeline events or a flat file that also goes to data lake?
++++
 
-It streams the data into RTCP via pipeline, and this data is also collected into a system dataset in the data lake.
++++**Does CJA send the audience data over as pipeline events or a flat file that also goes to data lake?**
 
-### What identities does CJA send over?
+CJA streams the data into RTCP via pipeline, and this data is also collected into a system dataset in the data lake.
 
-Whichever identity/namespace pairs that were used in the Connection setup. Specifically, the step when a user selects the field they want to use as their "person ID".
++++
 
-### What is chosen as the primary identity?
++++**What identities does CJA send over?**
+
+Whichever identity/namespace pairs that were used in the [Connection setup](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection). Specifically, the step when a user selects the field they want to use as their "Person ID".
+
++++
+
++++**Which ID is chosen as the primary identity?**
 
 See above. We only send one identity per CJA "person".
 
-### Does RTCP process the CJA messages as well? Can CJA add identities to a profile identity graph through audience sharing?
++++
+
++++**Does RTCP process the CJA messages as well? Can CJA add identities to a profile identity graph through audience sharing?**
 
 No. We only send one identity per "person", so there would be no graph edges for RTCP to consume. 
+
++++
 
 ## Next steps
 
