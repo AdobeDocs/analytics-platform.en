@@ -14,14 +14,14 @@ The following updates were made to the CJA documentation since its inception.
 | Feature | Description |
 | --- | --- |
 | **January 2023** | |
-| Quick start guides | New documentation section on how to [ingest and use data](/help/data-ingestion/data-ingestion.md) in CJA.  |
-| Folders | Dedicated pages for [Folders management](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).  |
-| User preferences | Many additional user preferences are now available in [Preferences](/help/analysis-workspace/user-preferences.md).  |
-| Auto-save for projects | Updated content to include auto-save functionality in [Save projects](/help/analysis-workspace/build-workspace-project/save-projects.md).  |
+| Data ingestion quick start guides | New documentation section on how to [ingest and use data](/help/data-ingestion/data-ingestion.md) in CJA.  |
+| Workspace Folders | Dedicated pages for [Folders management](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).  |
+| Workspace User preferences | Many additional user preferences are now available in [Preferences](/help/analysis-workspace/user-preferences.md).  |
+| Auto-save for Workspace projects | Updated content to include auto-save functionality in [Save projects](/help/analysis-workspace/build-workspace-project/save-projects.md).  |
 | Landing page | New landing page updates [landing page](/help/getting-started/landing.md).  |
 | Schedule Workbooks | Dedicated page to describe how to [Schedule Workbooks](/help/report-builder/schedule-reportbuilder.md) in Report Builder.  |
 
-## 2022
+## 2022 {#22}
 
 | Date | Update description |
 | --- | --- |
@@ -79,7 +79,7 @@ The following updates were made to the CJA documentation since its inception.
 
 {style="table-layout:auto"}
 
-## 2021
+## 2021 {#21}
 
 | Date | Update description |
 | --- | --- |
@@ -120,7 +120,7 @@ The following updates were made to the CJA documentation since its inception.
 
 {style="table-layout:auto"}
 
-## 2020
+## 2020 {#20}
 
 | Date | Update description |
 | --- | --- |
