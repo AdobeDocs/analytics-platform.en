@@ -66,6 +66,16 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 1. Click **[!UICONTROL View audience in AEP]** within the same message and you will be taken to the [Segment UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) in Adobe Experience Platform. See below for more information.
 
+## What happens after an audience is created {#after-audience-created}
+
+After you have created an audience, Adobe creates an Experience Platform streaming segment for each new CJA Audience that's created. 
+
+* The AEP segment shares the same name/description as the CJA Audience, but the name will be appended with the CJA Audience ID to ensure that it is unique.
+
+* If the CJA Audience name/description changes, the AEP segment name/description reflects that change as well.
+
+* If a CJA Audience is deleted by a user, the AEP segment is NOT deleted, in case the CJA Audience is later undeleted.
+
 ## Use CJA audiences in Experience Platform {#audiences-aep}
 
 CJA now takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). CJA sends the audience over to Experience Platform with the primary identity set to whatever was selected as the person ID when the connection was configured.
