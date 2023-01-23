@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Customer Journey Analytics (CJA) release notes (January 2023)
 
-**Last update**: January 13, 2023
+**Last update**: January 23, 2023
 
 Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -14,6 +14,7 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 
 | Feature | Description | [Start of Rollout](/help/release-notes/releases.md) | [General Availability](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
+| **Update to CJA Audiences** | After you have created an audience, [Adobe creates an Experience Platform streaming segment for each new CJA Audience](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). | N/A | January 23, 2023 |
 | **Folders in Workspace** | Folders help you organize and categorize your projects for better retrieval and access. In addition, a shared **[!UICONTROL Company]** folder allows Admins to easily create and share content with all Workspace users. [Learn more](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html) | N/A | January 11, 2023 |
 | **Default landing page** |The [new landing page](/help/getting-started/landing.md) that was introduced earlier in 2022 will become the default experience for all users on **January 11, 2023**. The legacy landing page will be deprecated and everyone will be required to use the new experience. | N/A | January 11, 2023 |
 | **Project Manager page deprecated** | With the release of the new landing page, we have deprecated the **[!UICONTROL Project Manager]** as listed under **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Components]**. The new landing page has all of the functionality of the old Project Manager page and more. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#deprecate-pm-page) | N/A | January 11, 2023 |
