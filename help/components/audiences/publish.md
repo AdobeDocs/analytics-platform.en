@@ -68,13 +68,13 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 ## What happens after an audience is created {#after-audience-created}
 
-After you have created an audience, Adobe creates an Experience Platform streaming segment for each new CJA Audience that's created. 
+After you have created an audience, Adobe creates an Experience Platform streaming segment for each new CJA audience. 
 
-* The AEP segment shares the same name/description as the CJA Audience, but the name will be appended with the CJA Audience ID to ensure that it is unique.
+* The AEP segment shares the same name/description as the CJA audience, but the name will be appended with the CJA audience ID to ensure that it is unique.
 
-* If the CJA Audience name/description changes, the AEP segment name/description reflects that change as well.
+* If the CJA audience name/description changes, the AEP segment name/description reflects that change as well.
 
-* If a CJA Audience is deleted by a user, the AEP segment is NOT deleted, in case the CJA Audience is later undeleted.
+* If a CJA audience is deleted by a user, the AEP segment is NOT deleted. The reason is that the CJA audience may later get undeleted.
 
 ## Use CJA audiences in Experience Platform {#audiences-aep}
 
