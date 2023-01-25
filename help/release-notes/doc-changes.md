@@ -20,6 +20,7 @@ The following updates were made to the CJA documentation since its inception.
 | Auto-save for Workspace projects | Updated content to include auto-save functionality in [Save projects](/help/analysis-workspace/build-workspace-project/save-projects.md).  |
 | Landing page | New landing page updates [landing page](/help/getting-started/landing.md).  |
 | Schedule Workbooks | Dedicated page to describe how to [Schedule Workbooks](/help/report-builder/schedule-reportbuilder.md) in Report Builder.  |
+| Object array support for profile and lookup datasets | Updated [Use arrays of objects](/help/use-cases/object-arrays.md) and [Ingest AEP audiences](/help/use-cases/data-ingestion/ingest-aep-segments.md) to reflect object array support for profile and lookup datasets. |
 
 ## 2022 {#22}
 
