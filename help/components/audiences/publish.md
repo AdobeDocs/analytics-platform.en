@@ -32,7 +32,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
    | [!UICONTROL Name] | The name of the audience. |
    | [!UICONTROL Tags] | Any tags that you want assigned to the audience for organizational purposes. You can use a pre-existing tag or enter a new one.|
    | [!UICONTROL Description] | Add a good description of the audience, to differentiate it from others. |
-   | [!UICONTROL Refresh frequency] | The frequency at which you want to refresh the audience.<ul><li>You can choose to create a one-time audience (default) that needs no refreshing. For example, this could be helpful for specific, one-time campaigns.</li><li>You can select other refresh intervals. For all refresh frequencies, there is a limit of 75 or 150 audiences, depending on your CJA entitlement.</li></ul> |
+   | [!UICONTROL Refresh frequency] | The frequency at which you want to refresh the audience.<ul><li>You can choose to create a one-time audience (default) that needs no refreshing. For example, this could be helpful for specific, one-time campaigns.</li><li>You can select other refresh intervals. For the 4-hour refresh frequency, there is a limit of 75 to 150 audience refreshes, depending on your CJA entitlement.</li></ul> |
    | Expiration date | When the audience will stop refreshing. The default is 1 year from the creation date. Expiring audiences are treated similarly to expiring scheduled reports - the admin gets an email a month before the audience expires. |
    | Refresh lookback window | Specifies how far back in your data window you want to go when creating this audience. The max is 90 days. |
    | [!UICONTROL One-time date range] | Date range when you want the one-time audience to be published. |
@@ -68,7 +68,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 ## Use CJA audiences in Experience Platform {#audiences-aep}
 
-CJA now takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). CJA sends the audience over to Experience Platform with the primary identity set to whatever was selected as the person ID when the connection was configured.
+CJA takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). CJA sends the audience over to Experience Platform with the primary identity set, according to what was selected as the [!UICONTROL Person ID] when the connection was configured.
 
 RTCP then examines each namespace/ID combination and looks for a profile that it may be part of. A profile is basically a cluster of linked namespaces, IDs and devices. If it finds a profile, it will add the namespace and ID to the other IDs in this profile as a segment membership attribute. Now, for example, "user@adobe.com" can be targeted across all their devices and channels. If a profile is not found, a new one is created.
 
@@ -78,13 +78,51 @@ You can drag CJA audiences into the segment definition for AEP segments.
 
 ![](assets/audiences-aep.png)
 
-## What happens if a user is no longer a member of an audience in CJA? {#no-member}
+## FAQs {#faq}
+
+Frequently asked questions on audience publishing.
+
++++**What happens if a user is no longer a member of an audience in CJA?**
 
 In this case, an exit event is sent to Experience Platform from CJA.
 
-## What happens if you delete an audience in CJA? {#delete}
++++
+
++++**What happens if you delete an audience in CJA?**
 
 When a CJA Audience is deleted, that audience will no longer show up in the Experience Platform UI. However, no profiles associated with that audience are actually deleted in Platform.
+
++++
+
++++**If a corresponding profile does not exist in RTCDP, will a new profile be created?**
+
+Yes, it will.
+
++++
+
++++**Does CJA send the audience data over as pipeline events or a flat file that also goes to data lake?**
+
+CJA streams the data into RTCP via pipeline, and this data is also collected into a system dataset in the data lake.
+
++++
+
++++**What identities does CJA send over?**
+
+Whichever identity/namespace pairs that were used in the [Connection setup](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection). Specifically, the step when a user selects the field they want to use as their "Person ID".
+
++++
+
++++**Which ID is chosen as the primary identity?**
+
+See above. We only send one identity per CJA "person".
+
++++
+
++++**Does RTCP process the CJA messages as well? Can CJA add identities to a profile identity graph through audience sharing?**
+
+No. We only send one identity per "person", so there would be no graph edges for RTCP to consume. 
+
++++
 
 ## Next steps
 

@@ -16,7 +16,7 @@ When comparing audience membership counts between Real-time CDP and CJA, it is i
 
 Real-time CDP and CJA do not share the same definition of a person today. Real-time CDP relies entirely on the information in the [Identity Graph](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) to build a merged profile.
 
-CJA can be configured to use [Cross-Channel Analytics](/help/connections/cca/overview.md) which extracts identifiers from datasets in the data lake and applies custom logic to link them together.
+CJA can be configured to use [Cross-Channel Analytics](/help/cca/overview.md) which extracts identifiers from datasets in the data lake and applies custom logic to link them together.
 
 In the future, CJA will be able to use Identity Graph.
 
