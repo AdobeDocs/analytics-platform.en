@@ -98,7 +98,7 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Column settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
         + [Row settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
         + [Dynamic vs. Static items](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-      + [Pagination, filtering and sorting tables](../analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
+      + [Pagination, filtering and sorting tables](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
       + [Workspace Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
     + Cohort Table {#cohort-table}
       + [What is cohort analysis?](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
