@@ -14,6 +14,7 @@ The following updates were made to the CJA documentation since its inception.
 | Feature | Description |
 | --- | --- |
 | **January 2023** | |
+| Filter and sort tables | Updated content (including adding procedures and explaining available options) in the [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) article. Renamed this article from "Pagination, filtering and sorting tables." |
 | Data ingestion quick start guides | New documentation section on how to [ingest and use data](/help/data-ingestion/data-ingestion.md) in CJA.  |
 | Workspace Folders | Dedicated pages for [Folders management](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).  |
 | Workspace User preferences | Many additional user preferences are now available in [Preferences](/help/analysis-workspace/user-preferences.md).  |
