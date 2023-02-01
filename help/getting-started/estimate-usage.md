@@ -93,5 +93,5 @@ The main benefit is that you store or report only on data that is applicable and
 
 If you leave the default (unchecked), the retention period will be superseded by the Adobe Experience Platform data retention setting. If you have 25 months' worth of data in Experience Platform, CJA will get 25 months of data through backfill. If you deleted 10 of those months in Platform, CJA would retain the remaining 15 months. 
 
-Data retention is based on event dataset timestamps and applies to event datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. However, if your connection includes any profile or lookup datasets (besides one or more event datasets), that data will be retained for the same time period.
+Data retention is based on event dataset timestamps and applies to event datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. If your connection includes any profile or lookup datasets, since they are joined with event datasets, the data is retained in CJA based on your data retention settings on the event dataset timestamps.
 
