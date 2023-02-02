@@ -19,4 +19,4 @@ Metric deduplication lets you configure a metric to only count values non-repeti
 
    >[!CAUTION]
    >
-   >   Deduplication at a _person_ scope is evaluated by complete months in UTC time. A partial month reporting window may not display all first or last instances, if some occurred within the full month but outside of the reporting dates.
+   >   Deduplication at a _person_ scope is evaluated by complete months in UTC time. A partial-month reporting window may not display all first or last instances, if some occurred within the full month but outside of the reporting dates.
