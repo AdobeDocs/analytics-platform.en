@@ -20,7 +20,8 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 
 {style="table-layout:auto"}
 
-## Fixes
+## Fixes in Customer Journey Analytics
+
 
 
 ## Important notices for CJA Administrators
