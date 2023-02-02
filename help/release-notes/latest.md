@@ -4,9 +4,9 @@ description: Latest CJA release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 ---
-# Current Customer Journey Analytics (CJA) release notes (January 2023)
+# Current Customer Journey Analytics (CJA) release notes (February 2023)
 
-**Last update**: January 24, 2023
+**Last update**: February 2, 2023
 
 Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -14,25 +14,20 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 
 | Feature | Description | [Start of Rollout](/help/release-notes/releases.md) | [General Availability](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **Object array support for profile and lookup datasets** | Profile datasets and lookup datasets now support object arrays for use in CJA. | January 11, 2023 | January 19, 2023 |
-| **Folders in Workspace** | Folders help you organize and categorize your projects for better retrieval and access. In addition, a shared **[!UICONTROL Company]** folder allows Admins to easily create and share content with all Workspace users. [Learn more](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html) | N/A | January 11, 2023 |
-| **Default landing page** |The [new landing page](/help/getting-started/landing.md) that was introduced earlier in 2022 will become the default experience for all users on **January 11, 2023**. The legacy landing page will be deprecated and everyone will be required to use the new experience. | N/A | January 11, 2023 |
-| **Project Manager page deprecated** | With the release of the new landing page, we have deprecated the **[!UICONTROL Project Manager]** as listed under **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Components]**. The new landing page has all of the functionality of the old Project Manager page and more. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#deprecate-pm-page) | N/A | January 11, 2023 |
-| **Schedule workbooks in Report Builder** | In Customer Journey Analytics, you can create schedules to send workbooks at regular intervals. Now recipients can receive the latest updates to your workbooks on a regular basis. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/schedule-reportbuilder.html) | N/A | January 11, 2023 |
-| **Auto-save new projects** | Analysis Workspace now auto-saves newly created projects. If for any reason you unexpectedly lose access to a newly created project before manually saving it, a recovery version of your project is now available. Previously, projects were auto-saved only after they were initially saved manually. [Learn more](/help/analysis-workspace/build-workspace-project/save-projects.md) | N/A | January 11, 2023 |
-| **Enhanced user preferences** | You can now configure additional preferences at the user level (in [!UICONTROL Components] > [!UICONTROL Preferences]). When you set user preference, your selections span across your projects, tables, and visualizations. The Preferences page now contains the following new tabs, each containing many new configuration options:<ul><li>Freeform table</li><li>Visualizations>/li></ul>. In addition, more preferences are now available on the **[!UICONTROL General]** and **[!UICONTROL Project]** tabs.<p>Previously, many of these preferences were configurable only for individual projects, tables, and visualizations. [Learn more](/help/analysis-workspace/user-preferences.md) | N/A | January 11, 2023 |
+|  **Comparison date ranges in Mobile Scorecards** |  With Mobile Scorecards, you can toggle the **[!UICONTROL Include comparison dates]** setting to view or hide comparison dates. | N/A/ | February 8, 2023 |
+| **Calendar updates in Workspace** |<ul><li>Anchor Panel Dates: You can make the date range components relative to the panel calendar. [Learn more](/help/analysis-workspace/components/calendar-date-ranges/calendar.md#relative-panel-dates)</li><li>Calendar styling updates: The calendar styles throughout the UI have been upgraded to present a more consistent and easy-to-use workflow.</li><li>Calendar formula updates: If you use relative dates, all calendar formulas will reflect the start of the panel date range. [Learn more](/help/analysis-workspace/components/calendar-date-ranges/calendar.md#formula-relative-dates) | N/A |  February 8, 2023 |
+| **Row/column filtering for Adobe Analytics Source Connector streaming** | The Analytics Source Connector in Adobe Experience Platform now allows for filtering of Analytics data which is used to populate profiles in [Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en). Row-level filtering helps reduce the number of events associated with profiles. Column level-filtering helps reduce the richness of the events themselves, thus enabling you to optimize the use of profile entitlements. This filtering applies only to data sent to Real-Time Customer Profile and [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en). **Filtering does not impact the data which is sent to Data Lake for use in applications such as Customer Journey Analytics**. | N/A | February 22, 2023 |
 
 {style="table-layout:auto"}
 
 ## Fixes
 
-AN-287349; AN-301684; AN-305491; AN-305769; AN-307912
 
 ## Important notices for CJA Administrators
 
 | Notice | Notice added or updated | Description |
 | --- | --- | --- |
-| **Improved IP-to-geolocation mapping** | September 29, 2022 | Adobe's vendor for IP lookups, Digital Element, is upgrading to a new improved dataset (NetAcuity Pulse) for IP-to-geolocation mapping. Adobe Analytics has postponed the adoption of this new dataset to **January 11, 2023**. The new database will be more accurate than previous versions. Some IP-to-geo mappings will change/improve when the new database is adopted.<p> CJA data provided through the [!UICONTROL Analytics Source Connector] will also automatically take advantage of the new mappings. |
+| No current notices | N/A | N/A |
 
 {style="table-layout:auto"}
 
