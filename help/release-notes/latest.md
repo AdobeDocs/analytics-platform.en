@@ -28,6 +28,7 @@ AN-309106
 | --- | --- | --- |
 | No current notices | N/A | N/A |
 
+{style="table-layout:auto"}
 
 ## Related resources
 
