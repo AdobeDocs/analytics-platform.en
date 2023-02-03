@@ -17,7 +17,7 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 |  **Comparison date ranges in Mobile Scorecards** |  With Mobile Scorecards, you can toggle the **[!UICONTROL Include comparison dates]** setting to view or hide comparison dates. | N/A/ | February 8, 2023 |
 | **Calendar updates in Workspace** |<ul><li>Anchor Panel Dates: You can make the date range components relative to the panel calendar. [Learn more](/help/analysis-workspace/components/calendar-date-ranges/calendar.md#relative-panel-dates)</li><li>Calendar styling updates: The calendar styles throughout the UI have been upgraded to present a more consistent and easy-to-use workflow.</li><li>Calendar formula updates: If you use relative dates, all calendar formulas will reflect the start of the panel date range. [Learn more](/help/analysis-workspace/components/calendar-date-ranges/calendar.md#formula-relative-dates)</li></ul> | N/A |  February 8, 2023 |
 | **Row/column filtering for Adobe Analytics Source Connector streaming** | The Analytics Source Connector in Adobe Experience Platform now allows for filtering of Analytics data which is used to populate profiles in [Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en).<p>Row-level filtering helps reduce the number of events associated with profiles. Column-level filtering helps reduce the richness of the events themselves, thus enabling you to optimize the use of profile entitlements. This filtering applies only to data sent to Real-Time Customer Profile and [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en).<p>**Filtering does not impact the data which is sent to Data Lake for use in applications such as Customer Journey Analytics**. | N/A | February 22, 2023 |
-
+  
 ## Fixes in Customer Journey Analytics
 
 AN-309106
@@ -32,12 +32,8 @@ AN-309106
 
 ## Related resources
 
-* [Previous CJA release notes for 2022](/help/release-notes/2022.md)
-
+* [Previous CJA release notes for 2023](/help/release-notes/2023.md)
 * [Adobe Analytics release notes](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=en)
-
 * [Media Analytics release notes](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html)
-
 * [Adobe Experience Cloud release notes](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
-
 * [Customer Journey Analytics documentation updates](/help/release-notes/doc-changes.md)
