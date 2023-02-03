@@ -59,21 +59,21 @@ The following hit is a JSON object that represents a purchase a customer made of
 
 When creating a data view, the following dimensions and metric are available (based on schema):
 
-* **Dimensions:**
-  * ID
-  * product : SKU
-  * product : name
-  * product : order_id
-  * product : warranty : coverage
-  * prodcut : warranty : length
-  * product : warranty : name
-  * product : warranty : type
-* **Metrics:**
-  * product : orders
-  * product : units
-  * product : revenue
-  * product : warranty
-  * product : warranty : revenue
+*   **Dimensions:**
+    * ID
+    * product : SKU
+    * product : name
+    * product : order_id
+    * product : warranty : coverage
+    * prodcut : warranty : length
+    * product : warranty : name
+    * product : warranty : type
+*   **Metrics:**
+    * product : orders
+    * product : units
+    * product : revenue
+    * product : warranty
+    * product : warranty : revenue
 
 ### Same hit examples (reporting behavior)
 

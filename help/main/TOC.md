@@ -104,11 +104,11 @@ breadcrumb-title: Customer Journey Analytics Guide
             +   Column and row settings {#column-row-settings}
                 + [Column settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
                 + [Row settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
-            +   [Dynamic vs. Static items](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+                + [Dynamic vs. Static items](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
 
-        +   [Pagination, filtering and sorting tables](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+            +   [Pagination, filtering and sorting tables](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
 
-        +   [Workspace Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+            +   [Workspace Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
 
         +   Cohort Table {#cohort-table}
             + [What is cohort analysis?](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
@@ -177,7 +177,7 @@ breadcrumb-title: Customer Journey Analytics Guide
             + [Anomaly Detection overview](../analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
             + [View anomalies in Analysis Workspace](../analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
             + [Statistical techniques used in anomaly detection](../analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
-        +   [User preferences](../analysis-workspace/user-preferences.md)
+    +   [User preferences](../analysis-workspace/user-preferences.md)
 
     +   Workspace FAQs {#workspace-faq}
         + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)
@@ -298,21 +298,22 @@ breadcrumb-title: Customer Journey Analytics Guide
     +   Adobe Analytics data {#aa-data}
         + [Use Marketing channel dimensions](../use-cases/aa-data/marketing-channels.md)
         + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
-
-+   Frequently Asked Questions {#cja-faqs}
-    + [Consistency of metrics and audience membership counts between Real-time CDP and CJA](../getting-started/consistency-rcdp-cja.md)
-    + [Deletion implications](../getting-started/cja-deletion.md)
-    + [Use arrays of objects](../use-cases/object-arrays.md)
-    + [Frequently asked questions](../getting-started/cja-faq.md)
+    +   Complex data {#complex-data}
+        + [Use arrays of objects](../use-cases/object-arrays.md)
+        
++   [Frequently asked questions](../getting-started/cja-faq.md)
 
 +   Administration {#cja-admin}
     + [CJA Access Control](../getting-started/cja-access-control.md)
     + [View and manage CJA usage](../getting-started/estimate-usage.md)
+    + [Deletion implications](../getting-started/cja-deletion.md)
 
 +   Labs {#labs}
     + [Labs User Guide](../labs/labs.md)
 
 +   Troubleshooting {#troubleshooting}
     + [Compare your Adobe Analytics data to CJA data](../troubleshooting/compare.md)
+    + [Consistency of metrics and audience membership counts between Real-time CDP and CJA](../getting-started/consistency-rcdp-cja.md)
+
 +   [CJA glossary](../getting-started/cja-glossary.md)
 +   [CJA API](https://developer.adobe.com/cja-apis/docs/)
