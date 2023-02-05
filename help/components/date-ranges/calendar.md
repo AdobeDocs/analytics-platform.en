@@ -11,7 +11,7 @@ In the calendar, you can specify dates and date ranges, or select a preset.
 
 Calendar selections apply at the panel level, but you have the option to apply them to all panels. When you click a date range in Workspace, the interface displays the current calendar month and the previous calendar month. You can adjust these two calendars by clicking the right and left arrows in each respective upper corner.
 
-![Calendar](assets/aw_calendar2.png)
+![Calendar](assets/aw_calendar2.png){width="60%"}
 
 The first click on a calendar starts a date range selection. The second click completes a date range selection, which becomes highlighted. If the `Shift` key is held down (or right-click is used), it appends to the currently selected range.
 
