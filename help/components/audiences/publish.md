@@ -68,7 +68,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 ## What happens after an audience is created {#after-audience-created}
 
-After you have created an audience, Adobe creates an Experience Platform streaming segment for each new CJA audience.
+After you have created an audience, Adobe creates an Experience Platform streaming segment for each new CJA audience. An AEP streaming segment will only be created if the organization is set up for streaming segmentation.
 
 * The AEP segment shares the same name/description as the CJA audience, but the name will be appended with the CJA audience ID to ensure that it is unique.
 * If the CJA audience name/description changes, the AEP segment name/description reflects that change as well.
