@@ -24,12 +24,14 @@ breadcrumb-title: Customer Journey Analytics Guide
 +   [Customer Journey Analytics overview](../getting-started/cja-overview.md)
 
 +   Getting Started {#cja-getting-started}
-    + [Landing page](../getting-started/landing.md)
     + [Quick start guide](../getting-started/cja-getting-started.md)
+    + [Landing page](../getting-started/landing.md)
+    + [Frequently asked questions](../getting-started/cja-faq.md)
 
 +   Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
-    +   [Evolution](../getting-started/aa-to-cja.md)
-    +   Comparison {#cja-aa-comparison}
+    +   [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
+    +   [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
+    +   Comparison with Adobe Analytics {#cja-aa-comparison}
         + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
         + [Customer Journey Analytics feature support](../getting-started/aa-vs-cja/cja-aa.md)
         + [Compare terminology for Analytics data passed through the Analytics Source Connector](../getting-started/aa-vs-cja/terminology.md)
@@ -37,9 +39,6 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Virtual reporting environments and sandbox environments](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
         + [Processing Rules, VISTA and classifications versus Data Prep](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
         + [AAID, ECID, AACUSTOMID and the Analytics Source Connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
-
-    +   Similarities and Differences {#cja-aa-differences}
-        + [User Guide for new Customer Journey Analytics users](../getting-started/aa-to-cja-user.md)
 
 +   Data Ingestion {#cja-data-ingestion}
     +   [Data Ingestion Overview](../data-ingestion/data-ingestion.md)
@@ -300,13 +299,11 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
     +   Complex data {#complex-data}
         + [Use arrays of objects](../use-cases/object-arrays.md)
-        
-+   [Frequently asked questions](../getting-started/cja-faq.md)
 
 +   Administration {#cja-admin}
-    + [CJA Access Control](../getting-started/cja-access-control.md)
-    + [View and manage CJA usage](../getting-started/estimate-usage.md)
-    + [Deletion implications](../getting-started/cja-deletion.md)
+    + [Access Control](../admin/cja-access-control.md)
+    + [View and manage usage](../admin/estimate-usage.md)
+    + [Deletion implications](../admin/cja-deletion.md)
 
 +   Labs {#labs}
     + [Labs User Guide](../labs/labs.md)
