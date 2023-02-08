@@ -74,6 +74,19 @@ After you have created an audience, Adobe creates an Experience Platform streami
 * If the CJA audience name/description changes, the AEP segment name/description reflects that change as well.
 * If a CJA audience is deleted by a user, the AEP segment is NOT deleted. The reason is that the CJA audience may later get undeleted.
 
+## Latency considerations {#latency}
+
+At several points prior to, during and after audience publishing, latencies can occur. Here is an overview of possible latencies.
+
+![](assets/latency-diagram.png)
+
+| Latency point | Latency duration |
+| --- | --- |
+| Data ingestion into Data Lake | Up to 30 minutes |
+| Data ingestion from Experience Platform into CJA | Up to 60 minutes |
+| Audience publishing to Real-time Customer Profile | Less than 5 minutes (depending on audience size) |
+| Refresh frequency for audiences |<ul><li>One-time refresh (latency of less than 5 minutes)</li><li>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate) |
+
 ## Use CJA audiences in Experience Platform {#audiences-aep}
 
 CJA takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). CJA sends the audience over to Experience Platform with the primary identity set, according to what was selected as the [!UICONTROL Person ID] when the connection was configured.
