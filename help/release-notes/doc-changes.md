@@ -14,7 +14,7 @@ The following updates were made to the CJA documentation since its inception.
 | Feature | Description |
 | --- | --- |
 | **February 2023** | |
-| Update to Audiences documentation | After you have created an audience, Adobe creates an Experience Platform [streaming segment for each new CJA Audience](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created).
+| Update to Audiences documentation | After you have created an audience, Adobe creates an Experience Platform [streaming segment for each new CJA Audience](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | **January 2023** | |
 | Filter and sort tables | Updated content (including adding procedures and explaining available options) in the [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) article. Renamed this article from "Pagination, filtering and sorting tables." |
 | Data ingestion quick start guides | New documentation section on how to [ingest and use data](/help/data-ingestion/data-ingestion.md) in CJA.  |
