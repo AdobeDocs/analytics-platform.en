@@ -66,9 +66,9 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 1. Click **[!UICONTROL View audience in AEP]** within the same message and you will be taken to the [Segment UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) in Adobe Experience Platform. See below for more information.
 
-## What happens after an audience is created {#after-audience-created}
+## What happens after an audience is created? {#after-audience-created} 
 
-After you have created an audience, Adobe creates an Experience Platform streaming segment for each new CJA audience. An AEP streaming segment will only be created if the organization is set up for streaming segmentation.
+After you have created an audience, Adobe creates an Experience Platform streaming segment for each new CJA audience. An AEP streaming segment will only be created if your organization is set up for streaming segmentation.
 
 * The AEP segment shares the same name/description as the CJA audience, but the name will be appended with the CJA audience ID to ensure that it is unique.
 * If the CJA audience name/description changes, the AEP segment name/description reflects that change as well.
