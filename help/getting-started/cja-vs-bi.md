@@ -50,3 +50,20 @@ Although the reporting engine is not as general purpose as other, more familiar 
 
 This specific design of CJA's reporting engine facilitates the data being readily available and at high speed for ongoing analysis and exploration, and therefor allowing to progressively gain insights and understanding of customer journeys.
 
+## Visualizations
+
+The reporting engine is fundamental for CJA to allow you to progressively interact with and act on all the customer journey data within that reporting engine. CJA comes with an extensive set of  components that empower you to do this visually and through drag-and-drop rather than by composing SQL-type of queries. 
+
+Progressively is a key concept here: contrary to most visualizations in typical BI tools, the visualization components in CJA allow you to continuously breakdown your data in unlimited ways for your specific needs: build queries using relevant metrics, dimensions, filters, time lines, and other analysis breakdown values. 
+Built-in with these visualization components are smart capabilities like 
+
+-   virtual analyst, a set of features that use predictive algorithms and machine learning to deliver insights into what is driving unusual behaviors in your data
+
+-   advanced analysis features specifically focused on customer journey insights, like flow diagrams, attribution IQ, fallout diagrams and dimension breakdowns.
+
+-   segmentation capability at every step of your progressive exploration: whenever you think it makes sense you can publish your audience back into Experience Platform and from there to any of the supported destinations, 
+
+-   sessionization, which is fully customizable: you determine when a session starts and ends.
+
+
+The dashboards you build in CJA can be easily 
