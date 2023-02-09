@@ -78,14 +78,13 @@ After you have created an audience, Adobe creates an Experience Platform streami
 
 At several points prior to, during and after audience publishing, latencies can occur. Here is an overview of possible latencies.
 
-![](assets/latency-diagram.png)
-
 | Latency point | Latency duration |
 | --- | --- |
 | Data ingestion into Data Lake | Up to 30 minutes |
 | Data ingestion from Experience Platform into CJA | Up to 60 minutes |
-| Audience publishing to Real-time Customer Profile | Less than 5 minutes (depending on audience size) |
+| Audience publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | Around 60 minutes |
 | Refresh frequency for audiences |<ul><li>One-time refresh (latency of less than 5 minutes)</li><li>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate) |
+| Creating destination in AEP: Activating the new segment into Adobe Target | Currently, this can take up to 24 hrs, depending on the audience update interval and segment evaluation type |
 
 ## Use CJA audiences in Experience Platform {#audiences-aep}
 
