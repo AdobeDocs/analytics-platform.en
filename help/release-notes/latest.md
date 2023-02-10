@@ -35,7 +35,7 @@ AN-309106
 
 ## Related resources
 
-* [Previous CJA release notes for 2023](2023.md)
+* [Previous CJA release notes for 2023](/help/release-notes/2023.md)
 * [Adobe Analytics release notes](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=en)
 * [Media Analytics release notes](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html)
 * [Adobe Experience Cloud release notes](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
