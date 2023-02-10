@@ -13,7 +13,6 @@ To implement Customer Journey Analytics, you need to follow this workflow. Some 
 
 Customer Journey Analytics is available for customers who 
 
-* Are Adobe Analytics [Select, Prime, or Ultimate](https://www.adobe.com/analytics/compare-adobe-analytics-packages.html) customers, and 
 * Are provisioned for the [Adobe Experience Platform](https://www.adobe.com/experience-platform.html), and 
 * Have purchased the Customer Journey Analytics SKU
 
