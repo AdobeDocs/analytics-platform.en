@@ -100,6 +100,16 @@ If the date range you want hasn’t been created yet, you can create a new one b
 
 This will take you to the date range builder where you can create and save a new date range component.
 
+### Show or Hide comparison date ranges {#show-comparison-dates}
+
+To include comparison date ranges, toggle the **Include comparison dates** setting.
+
+![Include comparison dates](assets/include-comparison-dates.png)
+
+The setting is *on* by default. Toggle it to *off* if you don't want to view comparison dates.
+
+![Deselected comparison date setting](assets/no-comparison-dates.png)
+
 ## Apply visualizations {#viz}
 
 Analytics dashboards offer four visualizations that give you great insight into dimension items and metrics. Change to a different visualization by changing the [!UICONTROL chart type] of a tile's [!UICONTROL Properties]. Just select the right tile and then change the chart type.

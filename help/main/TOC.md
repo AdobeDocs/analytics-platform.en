@@ -314,3 +314,4 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 +   [CJA glossary](../getting-started/cja-glossary.md)
 +   [CJA API](https://developer.adobe.com/cja-apis/docs/)
++   
