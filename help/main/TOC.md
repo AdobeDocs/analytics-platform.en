@@ -13,6 +13,8 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 # Customer Journey Analytics Guide {#using}
 
++   [Customer Journey Analytics Guide](../getting-started/cja-landing.md)
+
 +   Release Notes {#releases}
     + [Latest release](../release-notes/latest.md)
     + [2023 releases](../release-notes/2023.md)
