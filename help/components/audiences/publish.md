@@ -84,7 +84,7 @@ At several points prior to, during and after audience publishing, latencies can 
 | Data ingestion from Experience Platform into CJA | Up to 60 minutes |
 | Audience publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | Around 60 minutes |
 | Refresh frequency for audiences |<ul><li>One-time refresh (latency of less than 5 minutes)</li><li>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate) |
-| Creating destination in AEP: Activating the new segment into Adobe Target | Currently, this can take up to 24 hrs, depending on the audience update interval and segment evaluation type |
+| Creating destination in AEP: Activating the new segment | 1-2 hours |
 
 ## Use CJA audiences in Experience Platform {#audiences-aep}
 
