@@ -18,7 +18,7 @@ Customer Journey Analytics is  developed by Adobe with the sole purpose to empow
 
 This section of the documentation explains the fundamental differences between CJA and BI tools, first by looking at the general workflow used to accomplish the objective mentioned above: understanding that customer journey. Then it provides more details on how data is stored, collected and queried differently between CJA and BI tools. Finally it will explain the differences in visualization capabilities.
 
-## Traditional BI Workflow
+## Traditional BI workflow
 
 The problem with the traditional approach to analyzing customer journey is that it is not customer centric. Each team is collecting data in siloes and analyzing and optimizing experiences or journeys based on the data they have access to. 
 ![Typical BI workflow](./assets/biworkflow.png)
