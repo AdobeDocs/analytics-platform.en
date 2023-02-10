@@ -38,15 +38,15 @@ You can use CJA to ask questions using the visual analysis workspace environment
 
 ## Data
 
-CJA is based on the data that is ingested in Adobe Experience Platform as datasets. You can use an Adobe Analytics dataset coming from Adobe Analytics data streaming into Adobe Experience Platform through the Analytics source connector. Or you can use a CRM dataset resulting from configuring a Microsoft Dynamics source connector to your Microsoft Dynamics instance. See Data Ingestion Overview for more information on how to ingest data into Adobe Experience Platform and use it in Customer Journey Analytics.
+CJA is based on the data that is ingested in Adobe Experience Platform as datasets. You can use an Adobe Analytics dataset coming from Adobe Analytics data streaming into Adobe Experience Platform through the Analytics source connector. Or you can use a CRM dataset resulting from configuring a Microsoft Dynamics source connector to your Microsoft Dynamics instance. See the [Data Ingestion](../data-ingestion/data-ingestion.md) section for more information on how to ingest data into Adobe Experience Platform and use it in Customer Journey Analytics.
 
-Technically, CJA does not directly use datasets from AEP, but replicates all data from datasets that are defined in a collection (See Collection for more information). It stores the data in a distributed reporting engine that makes extensive use of caching. That engine is fine-tuned for responsive queries on individual-level time series data, so perfectly optimized for individual customer related queries. The reporting engine stores data in column oriented, bitmap indices that permit rapid on-the-fly calculation of aggregate metrics. It has an extensive filtering engine that permits powerful segmentation/audience analysis. And it has a core understanding of the sequence among data points that is particularly useful in analyzing behavior across those data points (the order that things occurred) and for assigning attribution using various, complex models.
+Technically, CJA does not directly use datasets from AEP, but replicates all data from datasets that are defined in a connection (See [Connection](../connections/overview.md) section for more information). It stores the data in a distributed reporting engine that makes extensive use of caching. That engine is fine-tuned for responsive queries on individual-level time series data, so perfectly optimized for individual customer related queries. The reporting engine stores data in column oriented, bitmap indices that permit rapid on-the-fly calculation of aggregate metrics. It has an extensive filtering engine that permits powerful segmentation/audience analysis. And it has a core understanding of the sequence among data points that is particularly useful in analyzing behavior across those data points (the order that things occurred) and for assigning attribution using various, complex models.
 
 The reporting engine works on partially-ordered, hierarchical datasets (e.g. person -> sessions -> events), and all data for a particular top level object (individual profiles) resides on a single processing node for accurate results. This partitioning allows for fast application of complex pathing and filters.
 
 One of the reporting engine biggest differences from traditional SQL and NoSQL databases is its ability to determine predicates based on sequence-oriented relationships at a fundamental level. These fundamental querying operations can powerfully look at the record stream, which is composed of many interleaved (and even nested) sequences, and perform a query against all of these intertwined streams of data with the efficiency of a single, contiguous sequence operation. 
 
-Although the reporting engine is not as general purpose as other, more familiar big data systems, it is specifically designed to answer queries spanning millions or even billions of records (time-series data or experience events), generally in under a second. Unlike other big data systems, it doesn't do this by sampling the data or by precomputing the answers to all questions it thinks you may ask, but it is instead able to compute the answers quickly enough to support interactive querying use cases.
+Although the reporting engine is not as general purpose as other, more familiar big data systems, it is specifically designed to answer queries spanning millions or even billions of records (time-series data / experience events), generally in under a second. Unlike other big data systems, it doesn't do this by sampling the data or by precomputing the answers to all questions it thinks you may ask, but it is instead able to compute the answers quickly enough to support interactive querying use cases.
 
 This specific design of CJA's reporting engine facilitates the data being readily available and at high speed for ongoing analysis and exploration, and therefor allowing to progressively gain insights and understanding of customer journeys.
 
@@ -55,15 +55,18 @@ This specific design of CJA's reporting engine facilitates the data being readil
 The reporting engine is fundamental for CJA to allow you to progressively interact with and act on all the customer journey data within that reporting engine. CJA comes with an extensive set of  components that empower you to do this visually and through drag-and-drop rather than by composing SQL-type of queries. 
 
 Progressively is a key concept here: contrary to most visualizations in typical BI tools, the visualization components in CJA allow you to continuously breakdown your data in unlimited ways for your specific needs: build queries using relevant metrics, dimensions, filters, time lines, and other analysis breakdown values. 
+
 Built-in with these visualization components are smart capabilities like 
 
--   virtual analyst, a set of features that use predictive algorithms and machine learning to deliver insights into what is driving unusual behaviors in your data
+-   virtual analyst, a set of features that use predictive algorithms and machine learning to deliver insights into what is driving unusual behaviors in your data.
 
--   advanced analysis features specifically focused on customer journey insights, like flow diagrams, attribution IQ, fallout diagrams and dimension breakdowns.
+-   advanced analysis features specifically focused on customer journey insights, like flow diagrams, attribution IQ, fallout diagrams and dimension breakdowns,
 
 -   segmentation capability at every step of your progressive exploration: whenever you think it makes sense you can publish your audience back into Experience Platform and from there to any of the supported destinations, 
 
 -   sessionization, which is fully customizable: you determine when a session starts and ends.
 
 
-The dashboards you build in CJA can be easily 
+The dashboards you build in CJA can be easily curated to other individuals in the organization for continous exploration and also be shared to those who are only interested in the final reports and/or visualizations.
+
+Comparing the visualization capabilities of CJA to those of BI tools is not straightforward due to the diversity of visualizations between all solutions available is 
