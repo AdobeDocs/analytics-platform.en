@@ -310,7 +310,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 +   Troubleshooting {#troubleshooting}
     + [Compare your Adobe Analytics data to CJA data](../troubleshooting/compare.md)
-    + [Consistency of metrics and audience membership counts between Real-time CDP and CJA](../getting-started/consistency-rcdp-cja.md)
+    + [Consistency of metrics and audience membership counts between Real-time CDP and CJA](../getting-started/cja-faq.md)
 
 +   [CJA glossary](../getting-started/cja-glossary.md)
 
