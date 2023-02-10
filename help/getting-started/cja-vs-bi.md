@@ -52,21 +52,25 @@ This specific design of CJA's reporting engine facilitates the data being readil
 
 ## Visualizations
 
-The reporting engine is fundamental for CJA to allow you to progressively interact with and act on all the customer journey data within that reporting engine. CJA comes with an extensive set of  components that empower you to do this visually and through drag-and-drop rather than by composing SQL-type of queries. 
+The reporting engine is fundamental for CJA to allow you to progressively interact with and act on all the customer journey data within that reporting engine. CJA comes with an extensive set of components that empower you to do this visually and through drag-and-drop rather than by composing SQL-type of queries. 
 
 Progressively is a key concept here: contrary to most visualizations in typical BI tools, the visualization components in CJA allow you to continuously breakdown your data in unlimited ways for your specific needs: build queries using relevant metrics, dimensions, filters, time lines, and other analysis breakdown values. 
 
 Built-in with these visualization components are smart capabilities like 
 
--   virtual analyst, a set of features that use predictive algorithms and machine learning to deliver insights into what is driving unusual behaviors in your data.
+-   virtual analyst, a set of features that use predictive algorithms and machine learning to deliver insights into what is driving unusual behaviors in your data,
 
 -   advanced analysis features specifically focused on customer journey insights, like flow diagrams, attribution IQ, fallout diagrams and dimension breakdowns,
 
 -   segmentation capability at every step of your progressive exploration: whenever you think it makes sense you can publish your audience back into Experience Platform and from there to any of the supported destinations, 
 
--   sessionization, which is fully customizable: you determine when a session starts and ends.
+-   sessionization, which is fully customizable: you determine when a session, as part of a channel in a customer journey, starts and ends.
 
 
-The dashboards you build in CJA can be easily curated to other individuals in the organization for continous exploration and also be shared to those who are only interested in the final reports and/or visualizations.
+The dashboards you build in CJA can be easily curated to other individuals in the organization for continous exploration and also be shared in various formats to those who are only interested in the final reports and/or visualizations.
 
-Comparing the visualization capabilities of CJA to those of BI tools is not straightforward due to the diversity of visualizations between all solutions available is 
+Comparing the visualization capabilities of CJA to those of BI tools is not straightforward due to the diversity of visualizations between all solutions available in this domain. It is fair to say that some BI tools do offer more advanced visualizations than what CJA offers. CJA however does offer a number of visualizations focusing very specifically on the customer journey and do allow for continuous breakdown. These kind of interactive customer journey visualizations are often not found in BI solutions.
+
+## Summary
+
+< Here I have to come up with a summary, e.g. showing table that does compare CJA vs BI on a couple of line items; still in progress...>
