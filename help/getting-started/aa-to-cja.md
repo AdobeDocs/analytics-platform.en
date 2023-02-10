@@ -52,7 +52,7 @@ Adobe has published [updated best practices for Marketing Channel implementation
 
 ### 4. Decide on using Analytics Source Connector vs. Experience Platform SDKs {#connector-vs-sdk}
 
-Adobe Analytics customers can easily leverage their report suites in the Adobe Experience Platform and Customer Journey Analytics using the Analytics Source Connector. For information on using the Analytics Source Connector, see [Create an Adobe Analytics source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en).
+Adobe Analytics customers can easily leverage their report suites in the Adobe Experience Platform and Customer Journey Analytics using the Analytics Source Connector. For information on using the Analytics Source Connector, see the quick start guide on how to [ingest data from Adobe Analytics and use it in CJA](../data-ingestion/analytics.md). Also see [Create an Adobe Analytics source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) for more information.
 
 As [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) data collection evolves, you will likely migrate to either the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html) or [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html) with the Adobe Experience Platform Edge Network. While a typical implementation of the SDKs will send data into Adobe Analytics, a new opportunity presents itself for sending data directly to Adobe Experience Platform. It can then be ingested into Customer Journey Analytics, while also maintaining data sent to Adobe Analytics. 
 
@@ -70,10 +70,10 @@ This method greatly expands possibilities for data collection: There is no longe
 
 The following Adobe Analytics features or components are not supported:
 
-* Marketing Channels
 * Bot Filtering
 * Geo, Domain, Device Lookups
-* Analytics for Target (A4T)
+* Streaming Media Measurement
+* Livestream or Livestream triggers
 
 ## Prepare for critical differences
 

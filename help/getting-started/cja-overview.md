@@ -26,6 +26,11 @@ Customer Journey Analytics expands the scope of Adobe Analytics by offering easy
 * **Alter historical data**: Using Adobe Experience Platform, data can be removed or corrected.
 * **Cross-report-suite data**: Existing implementations from multiple data sets can be combined in Platform.
 
+>[!TIP]
+>
+>If you have been using Adobe Analytics and want to use your Adobe Analytics data in Customer Journey Analytics, see [Ingest and use data from traditional Adobe Analytics](../data-ingestion/analytics.md) quick start guide as part of the [Data Ingestion](../data-ingestion/data-ingestion.md) section.
+
+
 The initial release of Customer Journey Analytics includes many of the features included in Analysis Workspace. For a complete list, see [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md).
 
 ## Key use cases
