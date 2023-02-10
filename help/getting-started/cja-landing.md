@@ -25,7 +25,7 @@ Analytics Select, Prime, and Ultimate customers are eligible to purchase this ad
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=en"> Compare data processing across Adobe Analytics and CJA reporting features </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=en"> Virtual report suites, data views, AEP sandboxes and the Analytics Source Connector </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html"> Adobe Analytics to Customer Journey Analytics evolution </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.htm"> CJA User Guide for Adobe Analytics users </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.html"> CJA User Guide for Adobe Analytics users </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#connection-detail"> Use the enhanced Connection management capabilities </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html#cja-dataviews"> Use the enhanced Data Views capabilities </a> </li>
    <td colname="col2" valign="top"><p class="head"> <b>Getting Started</b> </p> 
