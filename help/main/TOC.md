@@ -22,9 +22,8 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [CJA releases](../release-notes/releases.md)
     + [CJA documentation updates](../release-notes/doc-changes.md)
 
-+   [Customer Journey Analytics overview](../getting-started/cja-overview.md)
-
-+   Getting Started {#cja-getting-started}
++   Getting Started {#cja-overview}
+    + [Customer Journey Analytics overview](../getting-started/cja-overview.md)
     + [Quick start guide](../getting-started/cja-getting-started.md)
     + [Landing page](../getting-started/landing.md)
     + [Frequently asked questions](../getting-started/cja-faq.md)
