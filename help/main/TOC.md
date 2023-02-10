@@ -313,4 +313,5 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Consistency of metrics and audience membership counts between Real-time CDP and CJA](../getting-started/consistency-rcdp-cja.md)
 
 +   [CJA glossary](../getting-started/cja-glossary.md)
+
 +   [CJA API](https://developer.adobe.com/cja-apis/docs/)
