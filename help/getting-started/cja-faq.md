@@ -211,7 +211,7 @@ It depends on your use case - please work with your Adobe Account team. Your cur
 
 ## 9. Estimate connection size {#estimate-size}
 
-Refer to [Estimate and manage usage](/help/getting-started/estimate-usage.md).
+Refer to [Estimate and manage usage](/help/admin/estimate-usage.md).
 
 ## 10. Regarding usage overages {#overage}
 

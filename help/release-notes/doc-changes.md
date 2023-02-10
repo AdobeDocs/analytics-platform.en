@@ -32,7 +32,7 @@ The following updates were made to the CJA documentation since its inception.
 | Date | Update description |
 | --- | --- |
 | **December 2022** |  |
-| December 16, 2022 | New topic on [measuring and managing your CJA data usage](/help/getting-started/estimate-usage.md). |
+| December 16, 2022 | New topic on [measuring and managing your CJA data usage](/help/admin/estimate-usage.md). |
 | **October 2022** | |
 | October 2022 | New topic on [password protection of scheduled projects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | October 2022 | New topic on [Customer Managed Keys](/help/privacy/cmk.md). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
@@ -47,7 +47,7 @@ The following updates were made to the CJA documentation since its inception.
 | September 2022 | New topic on [Experimentation panel](/help/analysis-workspace/c-panels/experimentation.md) in Workspace. |
 | **August 2022** | |
 | August 2022 | Adobe Experience Platform article on [Cross-region support for Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). |
-| August 2022 | Significantly updated article on [CJA access control](/help/getting-started/cja-access-control.md). |
+| August 2022 | Significantly updated article on [CJA access control](/help/admin/cja-access-control.md). |
 | August 2022 | New article on [CJA support for Data Governance labels and policies](/help/data-views/data-governance.md). |
 | August 2022 | New article on [Comparing terminology for Analytics data passed through the Analytics Source Connector](/help/getting-started/aa-vs-cja/terminology.md). |
 | August 2022 | New documentation on [Audience publishing to Real-time Customer Profile](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html). |
