@@ -16,7 +16,7 @@ In order to accomplish these tasks, you need the following access and permission
 
 * Access to Adobe Experience Platform
 * Access to Google Analytics (GA Standard or GA 360)
-* [Admin Access](/help/getting-started/cja-access-control.md) to Customer Journey Analytics
+* [Admin Access](/help/admin/cja-access-control.md) to Customer Journey Analytics
 
 ## Set up a BigQuery Export
 

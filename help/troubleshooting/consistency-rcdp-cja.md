@@ -34,16 +34,16 @@ Real-time CDP offers a different set of data manipulation tools. It applies [mer
 
 Even if the datasets in Real-time CDP and CJA are the same, Real-time CDP may only keep a very limited window of history. By contrast, CJA likely has years' worth of data. In addition:
 
-* CJA and Real-time CDP customers can set custom retention windows for data, independent of each other. 
+*   CJA and Real-time CDP customers can set custom retention windows for data, independent of each other. 
 
-* Real-time CDP and CJA have different logic for ingesting data. CJA ignores records without a person ID or timestamp and has strict limits to the number of records a single profile/person may have.
+*   Real-time CDP and CJA have different logic for ingesting data. CJA ignores records without a person ID or timestamp and has strict limits to the number of records a single profile/person may have.
 
-* Real-time CDP customers get 7 days of access to data in the lake, primarily to facilitate data onboarding into profile and for ad-hoc querying.
+*   Real-time CDP customers get 7 days of access to data in the lake, primarily to facilitate data onboarding into profile and for ad-hoc querying.
 
-* There are no TTLs for the data in the lake for CJA customers. CJA users however can themselves set a custom retention window in CJA when creating a connection.
+*   There are no TTLs for the data in the lake for CJA customers. CJA users however can themselves set a custom retention window in CJA when creating a connection.
 
-* Profile Store in Real-time CDP allows for customer-configurable TTLs. Customers can change this TTL to whatever they need to stay within their license entitlements.
+*   Profile Store in Real-time CDP allows for customer-configurable TTLs. Customers can change this TTL to whatever they need to stay within their license entitlements.
 
 ## Differences in data ingestion latency
 
-CJa does not yet have the real-time capabilities of Real-time CDP and as a result, CJA reporting includes some latency before data is available for reporting or audience creation. Real-time CDP processes data through different systems that have different latency.
+CJA does not yet have the real-time capabilities of Real-time CDP and as a result, CJA reporting includes some latency before data is available for reporting or audience creation. Real-time CDP processes data through different systems that have different latency.

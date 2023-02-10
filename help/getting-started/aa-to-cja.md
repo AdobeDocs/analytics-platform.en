@@ -1,12 +1,12 @@
 ---
-title: Adobe Analytics to Customer Journey Analytics evolution
+title: Evolution from Adobe Analytics
 description: Steps to transform Adobe Analytics data into Customer Journey Analytics data
 role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 ---
-# Adobe Analytics to Customer Journey Analytics evolution
+# Evolution from Adobe Analytics
 
 As your organization evolves to use Customer Journey Analytics, explore these steps to prepare your data and to become aware of critical differences between the two technologies. This article is aimed at an administrator audience.
 
@@ -32,9 +32,9 @@ The most straightforward method of transforming Adobe Analytics data into Custom
 
 A full global report suite may not always be feasible for an implementation. If you are planning to bring multiple report suites into Customer Journey Analytics, you have 2 options:
 
-* Plan ahead to bring variables into alignment across those report suites. For example, eVar1 in report suite 1 may point to [!UICONTROL Page]. In report suite 2, eVar1 may point to [!UICONTROL Internal Campaign]. When brought into CJA, these variables will mix into a single eVar1 dimension, leading to potentially confusing and inaccurate reporting.
+*   Plan ahead to bring variables into alignment across those report suites. For example, eVar1 in report suite 1 may point to [!UICONTROL Page]. In report suite 2, eVar1 may point to [!UICONTROL Internal Campaign]. When brought into CJA, these variables will mix into a single eVar1 dimension, leading to potentially confusing and inaccurate reporting.
 
-* Use the [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) feature to map variables. While it makes it easier if all report suites use the same common variable design, it's not required if you use the new Experience Platform [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html#mapping) feature. It allows you to reference a variable by its mapped value, which is at the datastream (or property) level.
+*   Use the [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) feature to map variables. While it makes it easier if all report suites use the same common variable design, it's not required if you use the new Experience Platform [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html#mapping) feature. It allows you to reference a variable by its mapped value, which is at the datastream (or property) level.
 
 If you have avoided moving to a global report suite due to issues with [!UICONTROL Uniques Exceeded] or [!UICONTROL Low Traffic], know that CJA has no [cardinality limits on a dimension](/help/components/dimensions/high-cardinality.md). It allows for any unique value to appear and be counted.
 
@@ -44,9 +44,9 @@ Here is a use case on [combining report suites with different schemas](/help/use
 
 Traditional Adobe Analytics Marketing Channel settings do not perform the same in CJA. This is for two reasons:
 
-* The level of processing on the Adobe Analytics data ingested into Adobe Experience Platform, and 
+*   The level of processing on the Adobe Analytics data ingested into Adobe Experience Platform, and 
 
-* The report-time nature of Customer Journey Analytics  
+*   The report-time nature of Customer Journey Analytics  
 
 Adobe has published [updated best practices for Marketing Channel implementation](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html). These updated recommendations  help you make the most of the capabilities already in Adobe Analytics with Attribution IQ. They will also set you up for success when transitioning to Customer Journey Analytics.
 
@@ -91,27 +91,27 @@ Adobe Analytics segments (called [!UICONTROL filters] in CJA) and calculated met
 
 To make the transition as smooth as possible for users when they transition between the systems, plan ahead by
 
-1. Identifying the most critical of these components.
+1.  Identifying the most critical of these components.
 
-1. Documenting their definitions, and 
+2.  Documenting their definitions, and 
 
-1. Identifying what fields will be required in the data to replicate them in CJA as [Filters](/help/components/filters/filters-overview.md) and [Calculated Metrics](/help/components/calc-metrics/calc-metr-overview.md).
+3.  Identifying what fields will be required in the data to replicate them in CJA as [Filters](/help/components/filters/filters-overview.md) and [Calculated Metrics](/help/components/calc-metrics/calc-metr-overview.md).
 
 Here are a couple of videos to guide you:
 
-* [Move Adobe Analytics segments to Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html)
+*   [Move Adobe Analytics segments to Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html)
 
-* [Move your Calculated Metrics from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+*   [Move your Calculated Metrics from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
 
 ### Other considerations
 
-* Using the power of CJA data views, you have a lot more flexibility in the definition of metrics and dimensions within Customer Journey Analytics. For example, you can use the value of a dimension to become the definition of a metric. [Learn more](/help/use-cases/data-views/data-views-usecases.md)
+*   Using the power of CJA data views, you have a lot more flexibility in the definition of metrics and dimensions within Customer Journey Analytics. For example, you can use the value of a dimension to become the definition of a metric. [Learn more](/help/use-cases/data-views/data-views-usecases.md)
 
-* If you have defined a custom calendar in Adobe Analytics, you will have similar [custom calendar capabilities](/help/components/date-ranges/custom-date-ranges.md) within CJA. You need to ensure that your calendar is properly defined.
+*   If you have defined a custom calendar in Adobe Analytics, you will have similar [custom calendar capabilities](/help/components/date-ranges/custom-date-ranges.md) within CJA. You need to ensure that your calendar is properly defined.
 
-* In Customer Journey Analytics, you can define a custom visit/session timeout as well as define a metric that will start a new session. You can create data views with different session definitions to get insights above and beyond what was possible in Adobe Analytics. This capability may be particularly beneficial for mobile datasets.
+*   In Customer Journey Analytics, you can define a custom visit/session timeout as well as define a metric that will start a new session. You can create data views with different session definitions to get insights above and beyond what was possible in Adobe Analytics. This capability may be particularly beneficial for mobile datasets.
 
-* Consider providing a data dictionary for your users – or extend the SDR to include the Experience Platform field name for schema elements.
+*   Consider providing a data dictionary for your users – or extend the SDR to include the Experience Platform field name for schema elements.
 
 ## Next steps
 

@@ -1,12 +1,12 @@
 ---
-title: CJA Access Control
+title: Customer Journey Analytics Access Control
 description: Learn about ways to implement access control in CJA.
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 ---
-# CJA Access Control
+# Customer Journey Analytics Access Control
 
 Customer Journey Analytics (CJA) is governed by three levels of access or three roles: Product Admin role, Product Profile Admin role, and user-level access. This topic explains these roles in more detail. 
 
@@ -33,9 +33,9 @@ For more information on Experience Platform permissions, see [Access control in 
 
 A product profile is a set of permissions. Product Profile Admins can
 
-* Create and manage individual product profiles, such as adding new users or managing user groups and their associated product profiles.
+*   Create and manage individual product profiles, such as adding new users or managing user groups and their associated product profiles.
 
-* In CJA, edit data views that are part of a product profile that they manage. They cannot create new data views.
+*   In CJA, edit data views that are part of a product profile that they manage. They cannot create new data views.
 
 ## User-level access
 
