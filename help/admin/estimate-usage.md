@@ -1,16 +1,16 @@
 ---
-title: Estimate and manage your CJA usage
+title: View and manage your Customer Journey Analytics usage
 description: Shows two methods of estimating usage and one method of managing it.
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
 ---
-# View and manage your CJA usage
+# View and manage your Customer Journey Analytics usage
 
 To view your CJA usage, you can use several methods:
 
-* Add up the event data rows for each connection. See [Estimate connection size](#estimate size) below. This is an easy way to see your event row data, per connection, for a specific timestamp.
-* View your usage in three ways, each of which is described in more detail below:
+*   Add up the event data rows for each connection. See [Estimate connection size](#estimate size) below. This is an easy way to see your event row data, per connection, for a specific timestamp.
+*   View your usage in three ways, each of which is described in more detail below:
     * Use Analysis Workspace to report on last month's events.
     * Use Report Builder to report on last month's events.
     * Use the CJA API to create an automated report. 
@@ -27,25 +27,25 @@ You may need to know how many rows of event data you currently have in [!UICONTR
 >
 >Do this on the first Friday of every month, since Adobe runs your latest usage report on that day.  
 
-1. In [!UICONTROL Customer Journey Analytics], click the **[!UICONTROL Connections]** tab. 
+1.  In [!UICONTROL Customer Journey Analytics], click the **[!UICONTROL Connections]** tab. 
 
     You can now see a list of all your current connections.
 
-1. Click each connection name to get to the Connections Manager.
+1.  Click each connection name to get to the Connections Manager.
 
-1. Add up the **[!UICONTROL Records of event data available]** for every connection your organization has created. (Depending on the size of your connection, the number may take awhile to appear.)
+1.  Add up the **[!UICONTROL Records of event data available]** for every connection your organization has created. (Depending on the size of your connection, the number may take awhile to appear.)
 
-    ![event data](assets/event-data.png)
+    ![event data](./assets/event-data.png)
 
-   >[!CAUTION]
-   >
-   >   This count applies to event data only, not to profile or lookup data. If you have profile and lookup data, the count will be slightly higher. However, there is currently no way to report on profile and lookup data usage in the user interface. This functionality is slated for 2023.
+    >[!CAUTION]
+    >
+    >   This count applies to event data only, not to profile or lookup data. If you have profile and lookup data, the count will be slightly higher. However, there is currently no way to report on profile and lookup data usage in the user interface. This functionality is slated for 2023.
 
-1. Once you have a sum of all event data rows, look up the "Rows of Data" entitlement in the Customer Journey Analytics contract that your company signed with Adobe. 
+1.  Once you have a sum of all event data rows, look up the "Rows of Data" entitlement in the Customer Journey Analytics contract that your company signed with Adobe. 
 
     This gives you the maximum number of rows of data authorized in the Sales Order. If the number of rows of data that resulted from Step 3 is larger than this number, you are incurring an overage.
 
-1. To remedy this situation, you have several options:
+1.  To remedy this situation, you have several options:
 
     * Change your [data retention settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#set-rolling-window-for-connection-data-retention).
     * [Delete any unused connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
@@ -62,13 +62,13 @@ This method allows you to do some deeper analysis of your usage data, as well as
 >
 >    Do not create a new connection that encompasses all your data just for measuring usage, as that would effectively double your usage. 
 
-1. In Workspace, create new projects based on each of the data views and pull in all events (from the **[!UICONTROL Metrics]** dropdown) leading up to the first Friday of the month, starting with the first day of your current CJA contract.
+1.  In Workspace, create new projects based on each of the data views and pull in all events (from the **[!UICONTROL Metrics]** dropdown) leading up to the first Friday of the month, starting with the first day of your current CJA contract.
 
-   ![Events](assets/events-usage.png)
+    ![Events](./assets/events-usage.png)
 
-   This will give you a good idea of how your usage is trending month to month.
+    This will give you a good idea of how your usage is trending month to month.
 
-1. Depending on your needs, you can drill down by dataset, etc. 
+1.  Depending on your needs, you can drill down by dataset, etc. 
 
 ## Create a data block in Report Builder {#arb}
 
@@ -76,14 +76,14 @@ In Report Builder, [create one data block](/help/report-builder/create-a-data-bl
 
 ## Create an automated report in the CJA API {#api-report}
 
-1. Use the [CJA reporting API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) to run a report on all your event data, **for every connection**. Set this up so that the report runs 
+1.  Use the [CJA reporting API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) to run a report on all your event data, **for every connection**. Set this up so that the report runs 
 
-   * on every first Friday of every month.
-   * going back to the first day of your current CJA contract.
+    * on every first Friday of every month.
+    * going back to the first day of your current CJA contract.
 
-   This will give you a good idea of how your usage is trending month to month. It will give you the total number of rows on all of your CJA connections.
+    This will give you a good idea of how your usage is trending month to month. It will give you the total number of rows on all of your CJA connections.
 
-1. Use Excel to further customize this report.
+1.  Use Excel to further customize this report.
 
 ## Manage your usage by defining a rolling data window {#rolling}
 
