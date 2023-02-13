@@ -28,3 +28,6 @@ source,destination
 /docs/analytics-platform/using/cja-overview/cja-deletion.html,/docs/analytics-platform/using/cja-admin/cja-deletion.html
 /docs/analytics-platform/using/cja-overview/estimate-usage.html,/docs/analytics-platform/using/cja-admin/estimate-usage.html
 /docs/analytics-platform/using/cja-overview/consistency-rcdp-cja.html,/docs/analytics-platform/using/troubleshooting/consistency-rcdp-cja.html
+/docs/analytics-platform/using/cja-usecases/object-arrays.html,/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html
+/docs/analytics-platform/using/cja-usecases/b2b.html,docs/analytics-platform/using/cja-usecases/b2b/b2b.html
+/docs/analytics-platform/using/cja-overview/cja-aa.html,docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/cja-aa.html
