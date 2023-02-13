@@ -84,4 +84,4 @@ For example, you can find answers to the answers posed in the introduction:
 * How many employees are mapped to a specific account ID?
 * What industry does an account ID belong to?
 
-![project-lookup2](https://git.corp.adobe.com/storage/user/5902/files/348183a8-343c-497e-b270-4fc02b32cb9e)
+![project-lookup2](assets/analyze.png)
