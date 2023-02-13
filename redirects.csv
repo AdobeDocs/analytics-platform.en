@@ -8,7 +8,7 @@ source,destination
 /docs/analytics/analyze/analysis-workspace/build-workspace-project/undo-redo.html,/docs/analytics-platform/using/cja-workspace/build-workspace-project/fa-shortcut-keys.html
 /docs/analytics-platform/using/cja-dataviews/persistence.html,/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html
 /docs/analytics-platform/using/cja-usecases/global-lookups.html,/docs/analytics-platform/using/connections/standard-lookups.html
-/docs/analytics-platform/using/cja-overview/cja-aa.html,/docs/analytics-platform/using/cja-overview/compare-aa-cja/cja-aa.html
+/docs/analytics-platform/using/cja-overview/cja-aa.html,docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/cja-aa.html
 /docs/analytics-platform/using/cja-usecases/ga-to-cja.html,/docs/analytics-platform/using/cja-usecases/ga/overview.html
 /docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html,/docs/analytics-platform/using/cja-usecases/ga/reporting.html
 /docs/analytics-platform/using/cja-usecases/marketing-channels.html,/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html
@@ -28,3 +28,5 @@ source,destination
 /docs/analytics-platform/using/cja-overview/cja-deletion.html,/docs/analytics-platform/using/cja-admin/cja-deletion.html
 /docs/analytics-platform/using/cja-overview/estimate-usage.html,/docs/analytics-platform/using/cja-admin/estimate-usage.html
 /docs/analytics-platform/using/cja-overview/consistency-rcdp-cja.html,/docs/analytics-platform/using/troubleshooting/consistency-rcdp-cja.html
+/docs/analytics-platform/using/cja-usecases/object-arrays.html,/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html
+/docs/analytics-platform/using/cja-usecases/b2b.html,docs/analytics-platform/using/cja-usecases/b2b/b2b.html

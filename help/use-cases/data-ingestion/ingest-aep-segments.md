@@ -82,6 +82,6 @@ You can now report on `audienceMembershipId`, `audienceMembershipIdName` and `pe
 * You should  perform this process on a regular cadence, so that audience data is constantly refreshed within CJA.
 * You can import multiple audiences within a single CJA connection. This adds additional complexity to the process, but it is possible. For this to work, you need to make a few modifications to the above process:
    1. Perform this process for each desired audience in your audience collection within RTCP.
-   1. CJA supports arrays/object arrays in profile datasets. Using an [array of objects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en) for the audienceMembershipId or audienceMembershipIdName is the best option. 
+   1. CJA supports arrays/object arrays in profile datasets. Using an [array of objects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html) for the audienceMembershipId or audienceMembershipIdName is the best option. 
    1. In your data view, create a new dimension using the Substring transformation on the `audienceMembershipId` field to convert the comma-separated values string to an array. NOTE: there is currently a limit of 10 values in the array.
    1. You can now report on this new dimension `audienceMembershipIds` within CJA Workspace.
