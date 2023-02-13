@@ -24,7 +24,7 @@ source,destination
 /docs/analytics-platform/using/cja-connections/cca/overview.html,/docs/analytics-platform/using/cca/overview.html
 /docs/analytics-platform/using/cja-connections/cca/replay.html,/docs/analytics-platform/using/cca/replay.html
 /docs/analytics-platform/using/cja-connections/cca/faq.html,/docs/analytics-platform/using/cca/faq.html
-/docs/analytics-platform/using/cja-overview/cja-access-control.html,/docs/analytics-platform/cja-admin/cja-access-control.html
-/docs/analytics-platform/using/cja-overview/cja-deletion.html,/docs/analytics-platform/cja-admin/cja-deletion.html
-/docs/analytics-platform/using/cja-overview/estimate-usage.html,/docs/analytics-platform/cja-admin/estimate-usage.html
-/docs/analytics-platform/using/cja-overview/consistency-rcdp-cja.html,/docs/analytics-platform/troubleshooting/consistency-rcdp-cja.html
+/docs/analytics-platform/using/cja-overview/cja-access-control.html,/docs/analytics-platform/using/cja-admin/cja-access-control.html
+/docs/analytics-platform/using/cja-overview/cja-deletion.html,/docs/analytics-platform/using/cja-admin/cja-deletion.html
+/docs/analytics-platform/using/cja-overview/estimate-usage.html,/docs/analytics-platform/using/cja-admin/estimate-usage.html
+/docs/analytics-platform/using/cja-overview/consistency-rcdp-cja.html,/docs/analytics-platform/using/troubleshooting/consistency-rcdp-cja.html
