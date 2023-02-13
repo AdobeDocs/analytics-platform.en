@@ -62,7 +62,11 @@ The Scheduled Projects Manager shows the items that a specific user has created.
 
 >[!NOTE]
 >
+<<<<<<< Updated upstream
 >The option to password-protect a scheduled project appears only for CJA customers who have purchased the [Healthcare Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den) add-on product. 
+=======
+>The option to password-protect a scheduled project appears only for CJA customers who have purchased the [Healthcare Shield](https://business.adobe.com/solutions/experience-cloud-for-healthcare.html) add-on product. 
+>>>>>>> Stashed changes
 
 Adobe uses the password to encrypt scheduled projects, whether they are sent in .pdf or .csv formats.
 
