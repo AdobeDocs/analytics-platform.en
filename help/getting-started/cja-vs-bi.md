@@ -16,7 +16,7 @@ This section of the documentation explains the fundamental differences between C
 
 ## Traditional BI workflow
 
-A frequent obstacle with traditional approaches to analyzing customer journeys is that it is not customer-centric. Each team collects data in siloes, analyzing and optimizing experiences based on the data that they have access to.
+A frequent obstacle with traditional approaches to analyzing customer journeys is that it is not customer centric. Each team collects data in siloes, analyzing and optimizing experiences based on the data that they have access to.
 
 ![Typical BI workflow](./assets/biworkflow.png)
 
