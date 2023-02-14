@@ -36,15 +36,15 @@ You can use CJA to ask questions using the visual analysis workspace environment
 
 CJA uses a powerful proprietary architecture that distributes analysis across hundreds or even thousands of servers to display data in Analysis Workspace within seconds. Some notable properties of this processing architecture include:
 
--   **Optimized for individual customer-related queries**: Technically, CJA stores the data in a distributed reporting engine that makes extensive use of caching. That engine is fine tuned for responsive queries on individual-level event data, and as such perfectly optimized for customer-related queries. The reporting engine stores data in column-oriented bitmap indices that permit rapid on-the-fly calculation of aggregate metrics. It has an extensive filtering engine that permits powerful segmentation/audience analysis. And it has a core understanding of the sequence among data points that is useful in analyzing behavior across those data points (the order that things occurred) and for assigning attribution using various, complex models.
+* **Optimized for individual customer-related queries**: Technically, CJA stores the data in a distributed reporting engine that makes extensive use of caching. That engine is fine tuned for responsive queries on individual-level event data, and as such perfectly optimized for customer-related queries. The reporting engine stores data in column-oriented bitmap indices that permit rapid on-the-fly calculation of aggregate metrics. It has an extensive filtering engine that permits powerful segmentation/audience analysis. And it has a core understanding of the sequence among data points that is useful in analyzing behavior across those data points (the order that things occurred) and for assigning attribution using various, complex models.
 
--   **Fast application of complex pathing and filters**: The reporting engine works on partially ordered, hierarchical datasets (for example, person -> sessions -> events). All data for a top-level object (individual profiles) resides on a single processing node for accurate results. This partitioning allows for fast application of complex pathing and filters. Complex operations such as sessionization, attribution, stateful persistence of data attributes, and complex data manipulation options are executed at scale with fast reporting time. In the BI world, those types of operations typically require new OLAP cubes to be created for each use case. CJA's reporting engine allows unfettered access to the entire dataset on every query, resulting in fully correlated data without requiring any cubing ahead of time.
+* **Fast application of complex pathing and filters**: The reporting engine works on partially ordered, hierarchical datasets (for example, person -> sessions -> events). All data for a top-level object (individual profiles) resides on a single processing node for accurate results. This partitioning allows for fast application of complex pathing and filters. Complex operations such as sessionization, attribution, stateful persistence of data attributes, and complex data manipulation options are executed at scale with fast reporting time. In the BI world, those types of operations typically require new OLAP cubes to be created for each use case. CJA's reporting engine allows unfettered access to the entire dataset on every query, resulting in fully correlated data without requiring any cubing ahead of time.
 
--   **Efficient query of complex data streams**: One of the reporting engine's biggest differences from traditional SQL and NoSQL databases is its ability to determine predicates based on sequence-oriented relationships at a fundamental level. These fundamental querying operations can look at the record stream, which is composed of many interleaved (and even nested) sequences. They perform a query against all of these intertwined streams of data with the efficiency of a single, contiguous sequence operation.
+* **Efficient query of complex data streams**: One of the reporting engine's biggest differences from traditional SQL and NoSQL databases is its ability to determine predicates based on sequence-oriented relationships at a fundamental level. These fundamental querying operations can look at the record stream, which is composed of many interleaved (and even nested) sequences. They perform a query against all of these intertwined streams of data with the efficiency of a single, contiguous sequence operation.
 
--   **Designed to rapidly answer large queries**: The reporting engine is not as general purpose as traditional big data systems. Howevever, it is specifically designed to answer queries spanning millions or even billions of records (event data / experience events), generally in under a second. Unlike other big data systems, it doesn't do this by sampling the data or by precomputing the answers to all questions it thinks you may ask. Instead, it is able to compute the answers quickly enough to support interactive querying use cases. This specific design of CJA's reporting engine facilitates the data being readily available and at high speed for ongoing analysis and exploration, therefore allowing you to progressively gain insights and understanding of customer journeys.
+* **Designed to rapidly answer large queries**: The reporting engine is not as general purpose as traditional big data systems. Howevever, it is specifically designed to answer queries spanning millions or even billions of records (event data / experience events), generally in under a second. Unlike other big data systems, it doesn't do this by sampling the data or by precomputing the answers to all questions it thinks you may ask. Instead, it is able to compute the answers quickly enough to support interactive querying use cases. This specific design of CJA's reporting engine facilitates the data being readily available and at high speed for ongoing analysis and exploration, therefore allowing you to progressively gain insights and understanding of customer journeys.
 
--   **Act as a headless BI solution**: You define your dimensions, metrics, filters in one place, and then any CJA client (including our public CJA API) can access those components. This abstracts complex queries away from end users and guarantees that results are the same, no matter which reporting or visualization client you use. 
+* **Act as a headless BI solution**: You define your dimensions, metrics, filters in one place, and then any CJA client (including our public CJA API) can access those components. This abstracts complex queries away from end users and guarantees that results are the same, no matter which reporting or visualization client you use. 
 
 ## CJA's unique visualization capabilities
 
@@ -54,24 +54,25 @@ The reporting engine is fundamental for CJA to allow you to progressively intera
 
 Built into these visualization components are smart capabilities like:
 
--   **Virtual analyst features** such as [Anomaly Detection](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) that use predictive algorithms and machine learning to deliver insights into what is driving unusual behaviors in your data.
+* **Virtual analyst features** such as [Anomaly Detection](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) that use predictive algorithms and machine learning to deliver insights into what is driving unusual behaviors in your data.
 
--   **Advanced analysis features** that are specifically focused on customer journey insights, like flow diagrams, attribution IQ, fallout diagrams, and dimension breakdowns. Examples of out-of-the-box visualizations are:
+* **Advanced analysis features** that are specifically focused on customer journey insights, like flow diagrams, attribution IQ, fallout diagrams, and dimension breakdowns. Examples of out-of-the-box visualizations are:
 
-    -   customer retention analysis via cohort / latency tables, where you simply drag-and-drop metrics / dimensions in a builder and you're done in less than 30 seconds,
+    * Customer retention analysis via cohort / latency tables, where you simply drag-and-drop metrics / dimensions in a builder and you're done in less than 30 seconds,
 
-    -   fallout / flow visualizations. set up in less than a minute
+    * Fallout / flow visualizations. set up in less than a minute
     
-    -   attribution models like first touch, last touch, participation, time decay, even custom ones that take a few clicks to set up,
+    * Attribution models like first touch, last touch, participation, time decay, even custom ones that take a few clicks to set up,
 
--   **Segmentation capability at every step of your progressive exploration**: whenever you think it makes sense, you can publish your audience back into Experience Platform and from there to any of the supported destinations, 
+*  **Segmentation capability at every step of your progressive exploration**: whenever you think it makes sense, you can publish your audience back into Experience Platform and from there to any of the supported destinations, 
 
--   **Sessionization** that is fully customizable: you determine when a session, as part of a channel in a customer journey, starts and ends.
+*  **Sessionization** that is fully customizable: you determine when a session, as part of a channel in a customer journey, starts and ends.
 
--   **Curation and Democratization**: The dashboards created in CJA can be:
-    - curated to other individuals in the organization for continuous exploration, 
-    - exported to Excel using a dedicated plug-in, 
-    - shared in various formats, including PDF and through a dedicated mobile app, to those who are interested in the final reports and/or visualizations. 
+*  **Curation and Democratization**: The dashboards created in CJA can be:
+
+    * Curated to other individuals in the organization for continuous exploration, 
+    * Exported to Excel using a dedicated plug-in, 
+    * Shared in various formats, including PDF and through a dedicated mobile app, to those who are interested in the final reports and/or visualizations. 
 
 Comparing CJA's visualization capabilities to what BI tools offer is difficult due to the variety of visualizations available. Some BI tools have more advanced visualizations, but CJA focuses on interactive and interoperable customer journey visualizations that allow you to break down the data within seconds while not 'charging' you for every additional query.
 
