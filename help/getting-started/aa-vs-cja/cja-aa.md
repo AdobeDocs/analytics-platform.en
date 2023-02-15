@@ -77,7 +77,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | GeoSegmentation dimensions | All GeoSegmentation/geography collected into Adobe Analytics flows into CJA through the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Implementations that do not use the Analytics Source Connector, such as those that rely on AEP Web SDK for digital data collection, will not have the full slate of geographical lookups performed automatically: Country and state are supported globally, city and zip are not.|
 | Panels | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. The Segment Comparison and Analytics for Target (A4T) panels are not supported. |
 | Processing Rules | For Analytics Source Connector-based datasets, processing rules are still applied. [Data prep capabilities in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) can also be used as a replacement for processing rules for data that is going directly to Platform. |
-| A4T | Partial support is provided through fields in the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Support for A4T friendly names on Target Activities and Experiences is planned.|
+| A4T | Partial support is provided through fields in the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Support for A4T-friendly names on Target Activities and Experiences is planned.|
 
 {style="table-layout:auto"}
 
@@ -96,7 +96,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Data Feeds | Support is planned via AEP destinations. |
 | Transaction ID Data Sources | Support is planned. |
 | Migrating Projects/Filters/Calculated Metrics from AA to CJA | Support is planned. |
-| Summary level data sources | Support is planned. |
+| Summary-level data sources | Support is planned. |
 
 {style="table-layout:auto"}
 
@@ -106,7 +106,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | --- | --- |
 | Activity Map | Support is not yet planned. |
 | Advertising Cloud | Support is not yet planned. |
-| Summary Data Sources | Support is not yet planned. |
 
 {style="table-layout:auto"}
 
