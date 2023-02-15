@@ -56,23 +56,23 @@ Built into these visualization components are smart capabilities like:
 
 * **Virtual analyst features** such as [Anomaly Detection](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) that use predictive algorithms and machine learning to deliver insights into what is driving unusual behaviors in your data.
 
-* **Advanced analysis features** that are specifically focused on customer journey insights, like flow diagrams, attribution IQ, fallout diagrams, and dimension breakdowns. Examples of out-of-the-box visualizations are:
+*   **Advanced analysis features** that are specifically focused on customer journey insights, like [flow diagrams](/help/analysis-workspace/visualizations/c-flow/flow.md), [attribution IQ](/help/analysis-workspace/attribution/overview.md), [fallout diagrams](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [dimension breakdowns](/help/components/dimensions/t-breakdown-fa.md). Examples of out-of-the-box visualizations are:
 
-    * Customer retention analysis via cohort / latency tables, where you simply drag-and-drop metrics / dimensions in a builder and you're done in less than 30 seconds,
+    *   [Customer retention analysis via cohort / latency tables](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md), where you simply drag-and-drop metrics / dimensions in a builder and you're done in less than 30 seconds,
 
-    * Fallout / flow visualizations. set up in less than a minute
+    *   [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md) / [flow](/help/analysis-workspace/visualizations/c-flow/create-flow.md) visualizations. set up in less than a minute
     
-    * Attribution models like first touch, last touch, participation, time decay, even custom ones that take a few clicks to set up,
+    *   [Attribution models](/help/analysis-workspace/attribution/algorithmic.md) like first touch, last touch, participation, time decay, even custom ones that take a few clicks to set up,
 
-*  **Segmentation capability at every step of your progressive exploration**: whenever you think it makes sense, you can publish your audience back into Experience Platform and from there to any of the supported destinations, 
+*   **Segmentation capability at every step of your progressive exploration**: whenever you think it makes sense, you can publish your audience back into Experience Platform and from there to any of the supported destinations, 
 
-*  **Sessionization** that is fully customizable: you determine when a session, as part of a channel in a customer journey, starts and ends.
+*   **Sessionization** that is fully [customizable](/help/data-views/component-settings/persistence.md): you determine when a session, as part of a channel in a customer journey, starts and ends.
 
-*  **Curation and Democratization**: The dashboards created in CJA can be:
+*   **Curation and Democratization**: The dashboards created in CJA can be:
 
-    * Curated to other individuals in the organization for continuous exploration, 
-    * Exported to Excel using a dedicated plug-in, 
-    * Shared in various formats, including PDF and through a dedicated mobile app, to those who are interested in the final reports and/or visualizations. 
+    * [Curated](/help/analysis-workspace/curate-share/curate.md) to other individuals in the organization for continuous exploration, 
+    * Exported to Excel using [Report Builder](/help/report-builder/report-buider-overview.md) (a dedicated plug-in), 
+    * [Shared](/help/analysis-workspace/curate-share/share-projects.md) in various formats, including [PDF](/help/analysis-workspace/curate-share/download-send.md), [CSV](/help/analysis-workspace/curate-share/download-send.md) and through a [dedicated mobile app](/help/mobile-app/home.md), to those who are interested in the final reports and/or visualizations. 
 
 Comparing CJA's visualization capabilities to what BI tools offer is difficult due to the variety of visualizations available. Some BI tools have more advanced visualizations, but CJA focuses on interactive and interoperable customer journey visualizations that allow you to break down the data within seconds while not 'charging' you for every additional query.
 
