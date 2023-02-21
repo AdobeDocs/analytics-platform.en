@@ -29,6 +29,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Quick start guide](../getting-started/cja-getting-started.md)
     + [Landing page](../getting-started/landing.md)
     + [Frequently asked questions](../getting-started/cja-faq.md)
+    + [Compare CJA to BI solutions](../getting-started/cja-vs-bi.md)
 
 +   Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
     +   [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
