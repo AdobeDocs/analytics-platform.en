@@ -68,9 +68,15 @@ In a CJA Workspace project, you can pull in metrics like "AAI Orders", and dimen
 
 ![AAI dimensions](assets/aai-dims.png)
 
->[!IMPORTANT]
->
->These dimensions and metrics are not natively named in this way. These are "friendly names". The [naming convention in Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) follows the schema path. We recommend renaming the long AAI schema path names to short, more user-friendly names (dimensions/metrics) in CJA. You can do so in **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > **[!UICONTROL Components]** tab > **[!UICONTROL Schema fields]** -> Click on a schema field -> **[!UICONTROL Component name]**.
+The raw score output in AAI has a nested schema, where the path to fields can be long enough to take up most of the spaces in tables or visualizations. For conciseness, [!UICONTROL Display Name] is automatically generated and leveraged in CJA following the rules below:
+
+* All fields have an "AAI" prefix
+* For touchpoint fields:
+   * For fields that are part of the score XDM, they show up in CJA as `AAI T {field name}`
+   * For fields that are included as passThrough column, they will show up in CJA as `AAI T PT {field name}`
+* For conversion fields:
+   * For fields that are part of the score XDM, they will show up in CJA as `AAI C {field name}`
+   * For fields that are included as passThrough column, they will show up in CJA as `AAI C PT {field name}`
 
 ![Change dimension names](assets/change-name.png)
 
