@@ -54,7 +54,7 @@ You can create the following metrics in a data view to achieve approximate parit
 | Metric | Description | Schema element | Component settings |
 | --- | --- | --- | --- |
 | Bounces | The number of messages that bounced, including both immediate bounces and bounces after delivery. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric<br>Include exclude values: If any criteria are met<br>Equals: `bounce`, Equals: `denylist` |
-| Bounces After Delivery | Some email services report emails delivered, then bounce them later. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.category` | Component type: Metric<br>Include exclude values: Equals `async` |
+| Bounce After Delivery | Some email services report emails delivered, then bounce them later. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.category` | Component type: Metric<br>Include exclude values: Equals `async` |
 | Email Clicks | The count of clicks within messages. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `click` |
 | Email Opens | The number of opened messages. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `open` |
 | Errors | The number of messages that errored out. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric<br>Include exclude values: Equals `error` |
@@ -71,7 +71,7 @@ Once you have configured the desired dimensions and metrics for the Journey Opti
 
 | Calculated metric | Description | Formula |
 | --- | --- | --- |
-| Messages Sent | The total number of messages sent, successful or failed. | `[Sends] + [Bounces] - [Bounces After Delivery]` |
-| Delivered | The number of emails delivered to customers. | `[Sends] - [Bounces After Delivery]` |
+| Messages Sent | The total number of messages sent, successful or failed. | `[Sends] + [Bounces] - [Bounce After Delivery]` |
+| Delivered | The number of emails delivered to customers. | `[Sends] - [Bounce After Delivery]` |
 
 {style="table-layout:auto"}
