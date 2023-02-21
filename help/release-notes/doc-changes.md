@@ -13,6 +13,11 @@ The following updates were made to the CJA documentation since its inception.
 
 | Feature | Description |
 | --- | --- |
+| **February 2023** | |
+| Update to Audiences documentation | New section on [latency considerations](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
+| Update to Audiences documentation | After you have created an audience, Adobe creates an Experience Platform [streaming segment for each new CJA Audience](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
+| Workspace calendars and date ranges | Updated content to describe relative date ranges, formula calculation updates, and calendar UI changes. See [About relative panel date ranges](/help/components/date-ranges/calendar.md#relative-panel-dates). |
+| Mobile scorecards | New documentation section to describe how to show and hide comparison date ranges. See [Show comparison date ranges](/help/mobile-app/create-scorecard.md#show-comparison-dates) in CJA.  |
 | **January 2023** | |
 | Filter and sort tables | Updated content (including adding procedures and explaining available options) in the [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) article. Renamed this article from "Pagination, filtering and sorting tables." |
 | Data ingestion quick start guides | New documentation section on how to [ingest and use data](/help/data-ingestion/data-ingestion.md) in CJA.  |
@@ -28,7 +33,7 @@ The following updates were made to the CJA documentation since its inception.
 | Date | Update description |
 | --- | --- |
 | **December 2022** |  |
-| December 16, 2022 | New topic on [measuring and managing your CJA data usage](/help/getting-started/estimate-usage.md). |
+| December 16, 2022 | New topic on [measuring and managing your CJA data usage](/help/admin/estimate-usage.md). |
 | **October 2022** | |
 | October 2022 | New topic on [password protection of scheduled projects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | October 2022 | New topic on [Customer Managed Keys](/help/privacy/cmk.md). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
@@ -43,7 +48,7 @@ The following updates were made to the CJA documentation since its inception.
 | September 2022 | New topic on [Experimentation panel](/help/analysis-workspace/c-panels/experimentation.md) in Workspace. |
 | **August 2022** | |
 | August 2022 | Adobe Experience Platform article on [Cross-region support for Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). |
-| August 2022 | Significantly updated article on [CJA access control](/help/getting-started/cja-access-control.md). |
+| August 2022 | Significantly updated article on [CJA access control](/help/admin/cja-access-control.md). |
 | August 2022 | New article on [CJA support for Data Governance labels and policies](/help/data-views/data-governance.md). |
 | August 2022 | New article on [Comparing terminology for Analytics data passed through the Analytics Source Connector](/help/getting-started/aa-vs-cja/terminology.md). |
 | August 2022 | New documentation on [Audience publishing to Real-time Customer Profile](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html). |
@@ -52,7 +57,7 @@ The following updates were made to the CJA documentation since its inception.
 | July 2022 | [Media Concurrent Viewer panel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html) documentation. |
 | July 2022 | [First Session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) reporting documentation.  |
 | **June 2022** | |
-| June 2022 | New article on [AAID, ECID, AACUSTOMID and the Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html) |
+| June 2022 | New article on [AAID, ECID, AACUSTOMID and the Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html) |
 | June 2022 | New article on [Adobe Analytics processing rules, VISTA and classifications vs. Data Prep for the Analytics Source Connector](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
 | June 2022 | New article on [virtual reporting environments and sandbox environments](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md). |
 | June 2022 | New article on [comparing data processing across Adobe Analytics and CJA reporting features](/help/getting-started/aa-vs-cja/data-processing-comparisons.md). |
@@ -73,7 +78,7 @@ The following updates were made to the CJA documentation since its inception.
 | March 2022 | New documentation on [Annotations in Workspace](/help/components/annotations/overview.md). |
 | March 2022 | Significantly updated content on [estimating connection size](/help/getting-started/cja-faq.md). |
 | **February 2022** | |
-| February 2022 | A new guide aimed at Administrators who are moving from Adobe Analytics to CJA: [Adobe Analytics to Customer Journey Analytics evolution](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html) |
+| February 2022 | A new guide aimed at Administrators who are moving from Adobe Analytics to CJA: [Adobe Analytics to Customer Journey Analytics evolution](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=en) |
 | **January 2022** | |
 | January 2022 | New use case for [Using binding dimensions and metrics in CJA](/help/use-cases/data-views/binding-dimensions-metrics.md) |
 | January 2022 | Added new feature documentation on [binding dimensions and metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) and on new [[!UICONTROL First Known] and [!UICONTROL Last Known] allocation settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#allocation-settings) |

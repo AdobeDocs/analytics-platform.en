@@ -66,13 +66,29 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 1. Click **[!UICONTROL View audience in AEP]** within the same message and you will be taken to the [Segment UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) in Adobe Experience Platform. See below for more information.
 
-## What happens after an audience is created {#after-audience-created}
+## What happens after an audience is created? {#after-audience-created} 
 
-After you have created an audience, Adobe creates an Experience Platform streaming segment for each new CJA audience. An AEP streaming segment will only be created if the organization is set up for streaming segmentation.
+After you have created an audience, Adobe creates an Experience Platform streaming segment for each new CJA audience. An AEP streaming segment will only be created if your organization is set up for streaming segmentation.
 
 * The AEP segment shares the same name/description as the CJA audience, but the name will be appended with the CJA audience ID to ensure that it is unique.
 * If the CJA audience name/description changes, the AEP segment name/description reflects that change as well.
 * If a CJA audience is deleted by a user, the AEP segment is NOT deleted. The reason is that the CJA audience may later get undeleted.
+
+## Latency considerations {#latency}
+
+At several points prior to, during and after audience publishing, latencies can occur. Here is an overview of possible latencies.
+
+![](assets/latency-diagram.png)
+
+| # | Latency point | Latency duration |
+| --- | --- | --- |
+| 1 | Data ingestion into Data Lake | Up to 30 minutes |
+| 2 | Data ingestion from Experience Platform into CJA | Up to 60 minutes |
+| 3 | Audience publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | Around 60 minutes |
+| 4 | Refresh frequency for audiences |<ul><li>One-time refresh (latency of less than 5 minutes)</li><li>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate) |
+| 5 | Creating destination in AEP: Activating the new segment | 1-2 hours |
+
+{style="table-layout:auto"}
 
 ## Use CJA audiences in Experience Platform {#audiences-aep}
 
