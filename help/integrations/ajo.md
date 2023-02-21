@@ -29,21 +29,21 @@ After a connection is created, you can create one or more [Data Views](/help/dat
 
 You can create the following dimensions in a data view to achieve approximate parity with similar dimensions in Journey Optimizer. See [Component settings](/help/data-views/component-settings/overview.md) in the Data View Manager for details around dimension customization options.
 
-| Dimension | Schema element |
-| --- | --- |
-| Journey Name | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` |
-| Journey Name & Version | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` |
-| Journey Node Name | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` |
-| Journey Node Type | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` |
-| Campaign name | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` |
-| Channel | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` |
-| Push Title | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.push.title` |
-| Email Subject | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.email.subject` |
-| Link Label | `_experience.customerJourneyManagement.`<br>`messageInteraction.label` |
-| Experiment Name | `_experience.customerJourneyManagement.`<br>`entities.experiment.experimentName`<br>Context Labels: Experimentation Experiment |
-| Treatment Name | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName`<br>Context Labels: Experimentation Variant |
-| Email Delivery Failure Reason | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` |
-| Email Delivery Exclusion Reason | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` |
+| Dimension | Schema element | Component settings |
+| --- | --- | --- |
+| Journey Name | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Component type: Dimension |
+| Journey Name & Version | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | Component type: Dimension |
+| Journey Node Name | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Component type: Dimension |
+| Journey Node Type | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | Component type: Dimension |
+| Campaign name | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | Component type: Dimension |
+| Channel | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | Component type: Dimension |
+| Push Title | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.push.title` | Component type: Dimension |
+| Email Subject | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.email.subject` | Component type: Dimension |
+| Link Label | `_experience.customerJourneyManagement.`<br>`messageInteraction.label` | Component type: Dimension |
+| Experiment Name | `_experience.customerJourneyManagement.`<br>`entities.experiment.experimentName` | Component type: Dimension<br>Context Labels: Experimentation Experiment |
+| Treatment Name | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | Component type: Dimension<br>Context Labels: Experimentation Variant |
+| Email Delivery Failure Reason | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Component type: Dimension |
+| Email Delivery Exclusion Reason | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Component type: Dimension |
 
 {style="table-layout:auto"}
 
