@@ -12,7 +12,7 @@ Publishing audiences provides a clear way to activate and to take action on insi
 * Using the audience for a journey in Adobe Journey Optimizer.
 * Exporting the audience to a 3rd-party through an Experience Platform destination.
 * Enriching the Real-time customer profile with useful attributes derived from event-based data in CJA.
-* Doing all this with minimal latency after publishing the audience (a couple of minutes)
+* Doing all this with minimal latency after publishing the audience. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency)
 * Publishing one-time audiences or recurring audiences
 
 ## Key terminology
