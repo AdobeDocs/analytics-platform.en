@@ -68,11 +68,7 @@ In a CJA Workspace project, you can pull in metrics like "AAI Orders", and dimen
 
 ![AAI dimensions](assets/aai-dims.png)
 
->[!IMPORTANT]
->
->These dimensions and metrics are not natively named in this way. These are "friendly names". The [naming convention in Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) follows the schema path. We recommend renaming the long AAI schema path names to short, more user-friendly names (dimensions/metrics) in CJA. You can do so in **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > **[!UICONTROL Components]** tab > **[!UICONTROL Schema fields]** -> Click on a schema field -> **[!UICONTROL Component name]**.
 
-![Change dimension names](assets/change-name.png)
 
 **Orders with influenced and incremental scores**
 
