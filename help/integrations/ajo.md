@@ -21,35 +21,57 @@ Once Journey Optimizer data is in Adobe Experience Platform, you can [Create a c
 
 After a connection is created, you can create one or more [Data Views](/help/data-views/create-dataview.md) to configure the desired dimensions and metrics available in Customer Journey Analytics.
 
-You can create the following metrics in a data view to achieve approximate parity with similar metrics in Journey Optimizer. See [Component settings](/help/data-views/component-settings/overview.md) in the Data View Manager for details around how to customize dimensions and metrics.
+>![NOTE]
+>
+>Data discrepancies between AJO and CJA is typically between 1-2%. Larger discrepancies is possible for data collected within the last two hours. Use date ranges excluding today to mitigate discrepancies involving processing time.
 
-| Metric | Description | Data View settings |
-| --- | --- | --- |
-| Bounces | The number of messages that bounced | Use the schema string element `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` with the following settings:<br>Component type: Metric<br>Include exclude values: If any criteria are met<br>Equals: `bounce`<br>Equals: `denylist` |
-| Errors | The number of messages that errored out | Use the schema string element `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` with the following settings:<br>Component type: Metric<br>Include exclude values: Equals `error` |
-| Excludes | The number of messages excluded | Use the schema string element `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` with the following settings:<br>Component type: Metric<br>Include exclude values: Equals `exclude` |
-| Unsubscribes | The count of unsubscribes | Use the schema string element `_experience.customerJourneyManagement.messageInteraction.interactionType` with the following settings:<br>Component type: Metric<br>Include exclude values: Equals `unsubscribe` |
-| Clicks | The count of clicks within messages | Use the schema string element `_experience.customerJourneyManagement.messageInteraction.interactionType` with the following settings:<br>Component type: Metric<br>Include exclude values: Equals `click` |
-| Opens | The number of opened messages | Use the schema string element `_experience.customerJourneyManagement.messageInteraction.interactionType` with the following settings:<br>Component type: Metric<br>Include exclude values: Equals `open` |
-| Spam complaints | The count of spam complaints | Use the schema string element `_experience.customerJourneyManagement.messageInteraction.interactionType` with the following settings:<br>Component type: Metric<br>Include exclude values: Equals `spam_complaint` |
-| Messages successfully sent | The number of messages successfully sent | Use the schema string element `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` with the following settings:<br>Component type: Metric<br>Include exclude values: Equals `sent` |
-| Sync failures | The total number of messages that failed to sync | Use the schema string element `_experience.customerJourneyManagement.messageDeliveryfeedback.messageFailure.category` with the following settings:<br>Component type: Metric<br>Include exclude values: Equals `sync` |
+### Configure dimensions in the data view
+
+You can create the following dimensions in a data view to achieve approximate parity with similar dimensions in Journey Optimizer. See [Component settings](/help/data-views/component-settings/overview.md) in the Data View Manager for details around dimension customization options.
+
+| Dimension | Schema element |
+| --- | --- |
+| Journey Name | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` |
+| Journey Name & Version | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` |
+| Journey Node Name | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` |
+| Journey Node Type | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` |
+| Campaign name | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` |
+| Channel | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` |
+| Push Title | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.push.title` |
+| Email Subject | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.email.subject` |
+| Link Label | `_experience.customerJourneyManagement.`<br>`messageInteraction.label` |
+| Experiment Name | `_experience.customerJourneyManagement.`<br>`entities.experiment.experimentName`<br>Context Labels: Experimentation Experiment |
+| Treatment Name | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName`<br>Context Labels: Experimentation Variant |
+| Email Delivery Failure Reason | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` |
+| Email Delivery Exclusion Reason | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` |
 
 {style="table-layout:auto"}
 
-## Configure Calculated metrics using Journey Optimizer metrics
+### Configure metrics in the data view
+
+You can create the following metrics in a data view to achieve approximate parity with similar metrics in Journey Optimizer. See [Component settings](/help/data-views/component-settings/overview.md) in the Data View Manager for details around metrics customization options.
+
+| Metric | Description | Schema element | Component settings |
+| --- | --- | --- | --- |
+| Bounces | The number of messages that bounced, including both immediate bounces and bounces after delivery. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric<br>Include exclude values: If any criteria are met<br>Equals: `bounce`, Equals: `denylist` |
+| Bounces After Delivery | Some email services report emails delivered, then bounce them later. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.category` | Component type: Metric<br>Include exclude values: Equals `async` |
+| Email Clicks | The count of clicks within messages. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `click` |
+| Email Opens | The number of opened messages. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `open` |
+| Errors | The number of messages that errored out. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric<br>Include exclude values: Equals `error` |
+| Excludes | The number of messages excluded. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric<br>Include exclude values: Equals `exclude` |
+| Sends | The number of messages that email providers accepted. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `sent` |
+| Spam Complaints | The count of spam complaints. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `spam_complaint` |
+| Unsubscribes | The count of unsubscribes. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `unsubscribe` |
+
+{style="table-layout:auto"}
+
+### Configure calculated metrics in Analysis Workspace
 
 Once you have configured the desired dimensions and metrics for the Journey Optimizer dataset, you can also configure [Calculated metrics](/help/components/calc-metrics/calc-metr-overview.md) for additional insights around that data. These calculated metrics are based on the above metrics created in the Data View Manager.
 
 | Calculated metric | Description | Formula |
 | --- | --- | --- |
-| Total messages sent | The total number of messages sent, successful or failed | `[Messages successfully sent]` + `[Bounces]` + `[Sync failures]` |
+| Messages Sent | The total number of messages sent, successful or failed. | `[Sends] + [Bounces] - [Bounces After Delivery]` |
+| Delivered | The number of emails delivered to customers. | `[Sends] - [Bounces After Delivery]` |
 
 {style="table-layout:auto"}
-
-## Differences in reporting between Journey Optimizer and Customer Journey Analytics
-
-Data discrepancies between products is typically between 1-2%. Larger discrepancies between products can potentially be attributed to the following:
-
-* Processing time for incoming data can be slightly different between products, especially for data collected within the last two hours. Use date ranges excluding today to mitigate discrepancies involving processing time.
-* The calculated metric 'Total messages sent' does not include the 'Retries' metric. Data for the 'Retries' metric is not included in the Dataset, showing potentially lower numbers in CJA reporting versus AJO reporting. However, retry data is converged into the 'Messages successfully sent' or 'Bounces' metric. Use date ranges a week or older to mitigate discrepancies with the 'Total messages sent' metric between products.
