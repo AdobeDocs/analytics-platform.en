@@ -68,7 +68,15 @@ In a CJA Workspace project, you can pull in metrics like "AAI Orders", and dimen
 
 ![AAI dimensions](assets/aai-dims.png)
 
+The raw score output in AAI has a nested schema, where the path to fields can be long enough to take up most of the spaces in tables or visualizations. For conciseness, [!UICONTROL Display Name] is automatically generated and leveraged in CJA following the rules below:
 
+* All fields have an "AAI" prefix
+* For touchpoint fields:
+   * For fields that are part of the score XDM, they show up in CJA as `AAI T {field name}`
+   * For fields that are included as passThrough column, they will show up in CJA as `AAI T PT {field name}`
+* For conversion fields:
+   * For fields that are part of the score XDM, they will show up in CJA as `AAI C {field name}`
+   * For fields that are included as passThrough column, they will show up in CJA as `AAI C PT {field name}`
 
 **Orders with influenced and incremental scores**
 
