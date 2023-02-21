@@ -23,7 +23,7 @@ After a connection is created, you can create one or more [Data Views](/help/dat
 
 >![NOTE]
 >
->Data discrepancies between AJO and CJA is typically between 1-2%. Larger discrepancies is possible for data collected within the last two hours. Use date ranges excluding today to mitigate discrepancies involving processing time.
+>Data discrepancies between AJO and CJA are typically between 1-2%. Larger discrepancies are possible for data collected within the last two hours. Use date ranges excluding today to mitigate discrepancies involving processing time.
 
 ### Configure dimensions in the data view
 
@@ -71,7 +71,7 @@ Once you have configured the desired dimensions and metrics for the Journey Opti
 
 | Calculated metric | Description | Formula |
 | --- | --- | --- |
-| Messages Sent | The total number of messages sent, successful or failed. | `[Sends] + [Bounces] - [Bounce After Delivery]` |
+| Messages Sent | The total number of messages sent. Includes successful or failed messages. | `[Sends] + [Bounces] - [Bounce After Delivery]` |
 | Delivered | The number of emails delivered to customers. | `[Sends] - [Bounce After Delivery]` |
 
 {style="table-layout:auto"}
