@@ -78,8 +78,6 @@ The raw score output in AAI has a nested schema, where the path to fields can be
    * For fields that are part of the score XDM, they will show up in CJA as `AAI C {field name}`
    * For fields that are included as passThrough column, they will show up in CJA as `AAI C PT {field name}`
 
-![Change dimension names](assets/change-name.png)
-
 **Orders with influenced and incremental scores**
 
 Here we see a Workspace project with AAI data that shows orders with influenced and incremental scores. Drill down to any dimension to understand attribution by: campaign, product group, user segment, geography, and so on.
