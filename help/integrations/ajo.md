@@ -71,7 +71,7 @@ Once you have configured the desired dimensions and metrics for the Journey Opti
 
 | Calculated metric | Description | Formula |
 | --- | --- | --- |
-| Messages Sent | The total number of messages sent. Includes successful or failed messages. | `[Sends] + [Bounces] - [Bounce After Delivery]` |
-| Messages Delivered | The number of emails delivered to customers. | `[Sends] - [Bounce After Delivery]` |
+| Messages Sent | The total number of messages sent. Includes successful or failed messages. | `[Sends] + [Bounces] - [Bounces After Delivery]` |
+| Messages Delivered | The number of emails delivered to customers. | `[Sends] - [Bounces After Delivery]` |
 
 {style="table-layout:auto"}
