@@ -4,8 +4,8 @@ description: Compare Customer Journey Analytics to BI solutions
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
+exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
 ---
-
 # Compare CJA to BI solutions
 
 With the current focus on customer experience, brands require advanced solutions to better understand the holistic customer journey. Understanding this full customer journey allows you to analyze and gain valuable insights into how online and offline channels engage customers and lead to increasing conversion, retention, and loyalty. A customer journey in this context can be the straightforward online order of a meal at a sushi food chain. Or the purchase of a new car, where the customer combines online research with visits to the dealer showroom, and a final in-person purchase.
@@ -79,5 +79,4 @@ Comparing CJA's visualization capabilities to what BI tools offer is difficult d
 
 ## Summary
 
-CJA differs from BI tools in how it integrates a highly optimized customer-journey-focused reporting engine seamlessly with user-friendly tools and components to perform analysis and build reports and advanced visualizations. All from within one single UI, without you having to move back and forth between query engine and visualization environment. 
-
+CJA differs from BI tools in how it integrates a highly optimized customer-journey-focused reporting engine seamlessly with user-friendly tools and components to perform analysis and build reports and advanced visualizations. All from within one single UI, without you having to move back and forth between query engine and visualization environment.
