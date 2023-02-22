@@ -87,7 +87,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | --- | --- |
 | Alerts | Support is planned. |
 | Contribution Analysis | Support is planned. |
-| Data Warehouse Reporting (100% row export) | Support is planned from the Analysis Workspace interface. Adobe Experience Platform [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) also provides an interface for these use cases in CJA. |
+| Data Warehouse Reporting | Support is planned from the Analysis Workspace interface. Adobe Experience Platform [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) also provides an interface for these use cases in CJA. |
 | ID Stitching via Device Graph | Support is planned. |
 | Project Templates | Support is planned. |
 | Real-Time Reporting | Support is planned. |
