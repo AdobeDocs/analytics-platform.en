@@ -59,7 +59,7 @@ You can create the following metrics in a data view to achieve approximate parit
 | Email Opens | The number of opened messages. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `open` |
 | Errors | The number of messages that errored out. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric<br>Include exclude values: Equals `error` |
 | Excludes | The number of messages excluded. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric<br>Include exclude values: Equals `exclude` |
-| Sends | The number of messages that email providers accepted. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `sent` |
+| Sends | The number of messages that email providers accepted. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric<br>Include exclude values: Equals `sent` |
 | Spam Complaints | The count of spam complaints. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `spam_complaint` |
 | Unsubscribes | The count of unsubscribes. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `unsubscribe` |
 
