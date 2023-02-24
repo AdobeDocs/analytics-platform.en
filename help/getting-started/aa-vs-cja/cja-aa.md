@@ -52,6 +52,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Custom Sessionization | Support for all custom sessionization features except mobile background hits. |
 | Merchandising variable persistence | Full Support via [binding dimensions and binding metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | Customer Attributes | Now called "Profile Datasets", they do not get automatically imported from Experience Cloud, but will have to be uploaded to AEP before they are available in CJA. |
+| Data Feeds | First generation data export of datasets is available through the [AEP Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) and through [AEP Destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). These options provide hit/row level export of all data collected or ingested into AEP Data Lake. Post process data columns are not available because post columns are computed at query time. Export of post columns is available through reporting. |
 | Metric deduplication | Now configured on metrics within Data Views. Metric deduplication happens at the person or session level rather than the Dataset, Data View, or Connection level. |
 | Entries, Exits, and Time spent dimensions and metrics | Supported (Entries and Exits are now called Session Starts and Session Ends) and are calculated in a slightly different way. |
 | eVar persistence settings | eVars are no longer part of CJA. However, persistence settings are now part of Data Views and are available for all dimensions. Keep in mind that persistence is based on report time processing, not data collection processing. Dimensions set within Data Views are limited to a 90 day max persistence and do not support unlimited persistence. |
@@ -93,7 +94,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Real-Time Reporting | Support is planned. |
 | Segment IQ | Support is planned. |
 | Currency Conversion | Support is planned. |
-| Data Feeds | Support is planned via AEP destinations. |
 | Transaction ID Data Sources | Support is planned. |
 | Migrating Projects/Filters/Calculated Metrics from AA to CJA | Support is planned. |
 | Summary-level data sources | Support is planned. |
