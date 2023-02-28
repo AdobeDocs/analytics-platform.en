@@ -14,10 +14,8 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 
 | Feature | Description | [Start of Rollout](/help/release-notes/releases.md) | [General Availability](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| Customer AI Integration  | You can ingest Customer AI model scores from Adobe Experience Platform into CJA for further analysis in CJA Analysis Workspace. Learn more | TBD | March 20, 2023 |
-| Attribution AI Integration  | You can ingest Attribution AI model scores from Adobe Experience Platform into CJA for further analysis in CJA Analysis Workspace. Learn more | TBD | March 20, 2023 |
-| Data Dictionary |  The Data Dictionary in Analysis Workspace helps both users and administrators keep track of and better understand the components in their Analytics environment. Learn more | March 8, 2023 |  March 22, 2023 |
-| Sequential Data Stories in Mobile Dashboards | TBD | N/A | March 8, 2023 |
+| Data Dictionary in Analysis Workspace | The Data Dictionary helps both users and administrators keep track of and better understand the components (dimensions, metrics) in their CJA environment. Learn more | March 8, 2023 | March 22, 2023 |
+| Data Stories in Mobile Dashboards | Data stories let you add multiple customizable detail views to tiles in Mobile Scorecard projects. Use data stories to dive deeper into key drivers, related metrics, and different steps along the customer journey. You can easily swipe through these views to understand the whole story behind your key metrics. Learn more | N/A | March 8, 2023 |
 
 {style="table-layout:auto"}
   
