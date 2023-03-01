@@ -13,6 +13,8 @@ The following updates were made to the CJA documentation since its inception.
 
 | Feature | Description |
 | --- | --- |
+| **March 2023** | |
+| Feature support | Updated [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md) with a table of features available in CJA but not available or supported in AA. |
 | **February 2023** | |
 | Compare CJA to BI solutions | New document on a [comparison](../getting-started/cja-vs-bi.md) of Customer Journey Analytics to typical BI solutions. | 
 | Update to Audiences documentation | New section on [latency considerations](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
