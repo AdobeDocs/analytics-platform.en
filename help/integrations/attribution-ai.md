@@ -4,12 +4,13 @@ title: Integrate Attribution AI with CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
+mini-toc-levels: 3
 ---
 # Integrate Attribution AI with CJA
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en), as part of Adobe Experience Platform Intelligent Services, is a multi-channel, algorithmic attribution service that calculates the influence and incremental impact of customer interactions against specified outcomes. With Attribution AI, marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customer journeys. 
 
-Attribution AI integrates with Customer Journey Analytics (CJA) to the extent that Attribution AI runs models against customers' marketing touchpoints and conversion datasources. CJA then imports the output of those models as a data set, or it can be integrated with the rest of your CJA data sets. Attribution AI-enabled datasets can be then be leveraged in data views and reporting in CJA. 
+Attribution AI integrates with Customer Journey Analytics (CJA) to the extent that Attribution AI runs models against customers' marketing touchpoints and conversion datasources. CJA then imports the output of those models as a data set, or it can be integrated with the rest of your CJA data sets. Attribution AI-enabled datasets can then be leveraged in data views and reporting in CJA. 
 
 Attribution AI supports 3 Experience Platform schemas: Experience Event, Adobe Analytics, and Consumer Experience Event.
 
@@ -68,11 +69,15 @@ In a CJA Workspace project, you can pull in metrics like "AAI Orders", and dimen
 
 ![AAI dimensions](assets/aai-dims.png)
 
->[!IMPORTANT]
->
->These dimensions and metrics are not natively named in this way. These are "friendly names". The [naming convention in Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) follows the schema path. We recommend renaming the long AAI schema path names to short, more user-friendly names (dimensions/metrics) in CJA. You can do so in **[!UICONTROL Data views]** > **[!UICONTROL Edit data view]** > **[!UICONTROL Components]** tab > **[!UICONTROL Schema fields]** -> Click on a schema field -> **[!UICONTROL Component name]**.
+The raw score output in AAI has a nested schema, where the path to fields can be long enough to take up most of the spaces in tables or visualizations. For conciseness, [!UICONTROL Display Name] is automatically generated and leveraged in CJA following the rules below:
 
-![Change dimension names](assets/change-name.png)
+* All fields have an "AAI" prefix
+* For touchpoint fields:
+   * For fields that are part of the score XDM, they show up in CJA as `AAI T {field name}`
+   * For fields that are included as passThrough column, they will show up in CJA as `AAI T PT {field name}`
+* For conversion fields:
+   * For fields that are part of the score XDM, they will show up in CJA as `AAI C {field name}`
+   * For fields that are included as passThrough column, they will show up in CJA as `AAI C PT {field name}`
 
 **Orders with influenced and incremental scores**
 

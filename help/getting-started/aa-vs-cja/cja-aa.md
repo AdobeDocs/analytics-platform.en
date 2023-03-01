@@ -52,6 +52,7 @@ The following tables list which features in Adobe Analytics (AA) are supported, 
 | Custom Sessionization | Support for all custom sessionization features except mobile background hits. |
 | Merchandising variable persistence | Full Support via [binding dimensions and binding metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | Customer Attributes | Now called "Profile Datasets", they do not get automatically imported from Experience Cloud, but will have to be uploaded to AEP before they are available in CJA. |
+| Data Feeds | First generation data export of datasets is available through the [AEP Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) and through [AEP Destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). These options provide hit/row level export of all data collected or ingested into AEP Data Lake. Post process data columns are not available because post columns are computed at query time. Export of post columns is available through reporting. |
 | Metric deduplication | Now configured on metrics within Data Views. Metric deduplication happens at the person or session level rather than the Dataset, Data View, or Connection level. |
 | Entries, Exits, and Time spent dimensions and metrics | Supported (Entries and Exits are now called Session Starts and Session Ends) and are calculated in a slightly different way. |
 | eVar persistence settings | eVars are no longer part of CJA. However, persistence settings are now part of Data Views and are available for all dimensions. Keep in mind that persistence is based on report time processing, not data collection processing. Dimensions set within Data Views are limited to a 90 day max persistence and do not support unlimited persistence. |
@@ -77,7 +78,7 @@ The following tables list which features in Adobe Analytics (AA) are supported, 
 | GeoSegmentation dimensions | All GeoSegmentation/geography collected into Adobe Analytics flows into CJA through the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Implementations that do not use the Analytics Source Connector, such as those that rely on AEP Web SDK for digital data collection, will not have the full slate of geographical lookups performed automatically: Country and state are supported globally, city and zip are not.|
 | Panels | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. The Segment Comparison and Analytics for Target (A4T) panels are not supported. |
 | Processing Rules | For Analytics Source Connector-based datasets, processing rules are still applied. [Data prep capabilities in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) can also be used as a replacement for processing rules for data that is going directly to Platform. |
-| A4T | Partial support is provided through fields in the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Support for A4T friendly names on Target Activities and Experiences is planned.|
+| A4T | Partial support is provided through fields in the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Support for A4T-friendly names on Target Activities and Experiences is planned.|
 
 {style="table-layout:auto"}
 
@@ -87,16 +88,15 @@ The following tables list which features in Adobe Analytics (AA) are supported, 
 | --- | --- |
 | Alerts | Support is planned. |
 | Contribution Analysis | Support is planned. |
-| Data Warehouse Reporting (100% row export) | Support is planned from the Analysis Workspace interface. Adobe Experience Platform [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) also provides an interface for these use cases in CJA. |
+| Data Warehouse Reporting | Support is planned from the Analysis Workspace interface. Adobe Experience Platform [[!UICONTROL Query Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) also provides an interface for these use cases in CJA. |
 | ID Stitching via Device Graph | Support is planned. |
 | Project Templates | Support is planned. |
 | Real-Time Reporting | Support is planned. |
 | Segment IQ | Support is planned. |
 | Currency Conversion | Support is planned. |
-| Data Feeds | Support is planned via AEP destinations. |
 | Transaction ID Data Sources | Support is planned. |
 | Migrating Projects/Filters/Calculated Metrics from AA to CJA | Support is planned. |
-| Summary level data sources | Support is planned. |
+| Summary-level data sources | Support is planned. |
 
 {style="table-layout:auto"}
 
@@ -106,7 +106,6 @@ The following tables list which features in Adobe Analytics (AA) are supported, 
 | --- | --- |
 | Activity Map | Support is not yet planned. |
 | Advertising Cloud | Support is not yet planned. |
-| Summary Data Sources | Support is not yet planned. |
 
 {style="table-layout:auto"}
 
