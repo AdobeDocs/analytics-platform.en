@@ -14,23 +14,27 @@ If you have only a few minutes, watch this brief overview to see what is possibl
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## Log in Customer Journey Analytics {#login}
+## Log in to Customer Journey Analytics {#login}
 
-To start using Analysis Workspace, log in to Customer Journey Analytics by going to [experience.adobe.com/analytics](https://experience.adobe.com/analytics). You will land on the Workspace project list homepage, if a specific project has not previously been selected for you.
+To start using Analysis Workspace, log in to Customer Journey Analytics by going to [experience.adobe.com/analytics](https://experience.adobe.com/analytics). You will land on the Projects page, if a specific project has not previously been selected for you.
 
-![](assets/login-analytics.png)
+![](assets/create-new-project.png)
 
-## Use the Training tutorial {#training-tutorial}
+## Use the Training Tutorial template {#training-tutorial}
 
-Once logged in, your first stop should be the Analysis Workspace Training Tutorial, which walks you through common terminology and steps for building your first analysis in Workspace. To begin the tutorial, click **[!UICONTROL Create New Project]** and then select **Training Tutorial** within the new project modal.
+Once logged in, your first stop can be the Analysis Workspace Training Tutorial template, which walks you through common terminology and steps for building your first analysis in Workspace. To begin the tutorial, 
+
+1. Click the **[!UICONTROL Learning]** tab on the left.
+1. Click **[!UICONTROL Open Tutorial]**.
 
 ![](assets/training-tutorial.png)
 
 ## Create a new project {#new-project}
 
-With the tutorial complete, you are ready to begin building your first project. The **new project modal** provides you with different options for starting your analysis. You can choose to start from a blank project or [blank mobile scorecard](/help/mobile-app/curator.md), depending on whether you plan to share your analysis from the browser or the Customer Journey Analytics dashboards mobile app.
+After completing the tutorial, you are ready to begin building your first project. On the [!UICONTROL Projects] tab, you can choose to start from
 
-![](assets/create-new-project.png)
+* [!UICONTROL Blank project] if you plan to share your analysis from the browser, or 
+* [[!UICONTROL Blank mobile scorecard]](/help/mobile-app/curator.md), if you plan to share your analysis from the Customer Journey Analytics dashboards mobile app.
 
 ## Build your analysis {#analysis}
 
