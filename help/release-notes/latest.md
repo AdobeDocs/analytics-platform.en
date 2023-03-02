@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Customer Journey Analytics (CJA) release notes (March 2023)
 
-**Last update**: February 27, 2023
+**Last update**: March 2, 2023
 
 Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -21,7 +21,7 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
   
 ## Fixes in Customer Journey Analytics
 
-To follow
+AN-309975; AN-311779; AN-313095; 
 
 ## Important notices for CJA Administrators
 
