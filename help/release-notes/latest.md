@@ -21,7 +21,7 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
   
 ## Fixes in Customer Journey Analytics
 
-AN-309975; AN-311779; AN-313095; 
+AN-309729; AN-309975; AN-311779; AN-313095; 
 
 ## Important notices for CJA Administrators
 
