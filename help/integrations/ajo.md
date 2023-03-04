@@ -17,6 +17,14 @@ Adobe Experience Platform serves as the central data source and link between Jou
 
 Once Journey Optimizer data is in Adobe Experience Platform, you can [Create a connection](/help/connections/create-connection.md) based on your Journey Optimizer Dataset. Select the Dataset that you sent to Platform.
 
+| Dataset | Dataset type | Connection settings | Description |
+| --- | --- | --- | --- |
+| AJO Message Feedback Event Dataset | Event | Person ID: `IdentityMap` | Contains message delivery events, such as '[!UICONTROL Sends]' and '[!UICONTROL Bounces]'. |
+| AJO Email Tracking Experience Event Dataset | Event | Person ID: `IdentityMap` | Contains email tracking events such as '[!UICONTROL Opens]', '[!UICONTROL Clicks]', and '[!UICONTROL Unsubscribes]'. |
+| AJO Push Tracking Experience Event Dataset | Event | Person ID: `IdentityMap` | Contains push tracking events such as '[!UICONTROL App Launches]'. |
+| Journey Step Events | Event | Persion ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contains events showing which profiles participated in each node of the journey. |
+| AJO Entity Dataset | Record | Key: `_id`<br>Matching Key: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contains classifications that associate Journey and Campaign metadata to all AJO event data. |
+
 ## Configure the Data view to accommodate Journey Optimizer dimensions and metrics
 
 After a connection is created, you can create one or more [Data Views](/help/data-views/create-dataview.md) to configure the desired dimensions and metrics available in Customer Journey Analytics.
