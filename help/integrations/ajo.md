@@ -22,7 +22,7 @@ Once Journey Optimizer data is in Adobe Experience Platform, you can [Create a c
 | AJO Message Feedback Event Dataset | Event | Person ID: `IdentityMap` | Contains message delivery events, such as '[!UICONTROL Sends]' and '[!UICONTROL Bounces]'. |
 | AJO Email Tracking Experience Event Dataset | Event | Person ID: `IdentityMap` | Contains email tracking events such as '[!UICONTROL Opens]', '[!UICONTROL Clicks]', and '[!UICONTROL Unsubscribes]'. |
 | AJO Push Tracking Experience Event Dataset | Event | Person ID: `IdentityMap` | Contains push tracking events such as '[!UICONTROL App Launches]'. |
-| Journey Step Events | Event | Persion ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contains events showing which profiles participated in each node of the journey. |
+| Journey Step Events | Event | Person ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contains events showing which profiles participated in each node of the journey. |
 | AJO Entity Dataset | Record | Key: `_id`<br>Matching Key: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contains classifications that associate Journey and Campaign metadata to all AJO event data. |
 
 ## Configure the Data view to accommodate Journey Optimizer dimensions and metrics
