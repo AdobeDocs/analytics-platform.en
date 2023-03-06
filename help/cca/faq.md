@@ -34,7 +34,7 @@ In some situations, an individual user can associate with many persistent IDs. E
 
 The number of persistent IDs is irrelevant in favor of the transient ID. A single user can belong to any number of devices without impacting CCA's ability to stitch across devices.
 
-## Once I contact my Account Manager with the desired information, how long does it take for the rekeyed dataset to become available?
+## Once I contact my Adobe Account Team with the desired information, how long does it take for the rekeyed dataset to become available?
 
 Live stitching is available approximately one week after Adobe enables Cross-Channel Analytics. Backfill availability depends on the amount of existing data. Small datasets (less than 1 million events per day) typically take a couple days, while large data sets (1 billion events per day) can take a week or more.
 
