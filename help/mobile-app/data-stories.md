@@ -14,7 +14,7 @@ For example, if you focus on web traffic, your most important metric may be visi
 
 Watch the video to learn more about using data stories and view examples in Analytics Workspace.
 
->[[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
 
 ## Create a data story {#create-data-story}
 
