@@ -16,14 +16,14 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 | ----------- | ---------- | ----- | --- |
 | **Data Dictionary in Analysis Workspace** | The Data Dictionary helps both users and administrators keep track of and better understand the components (dimensions, metrics) in their CJA environment. Learn more | March 8, 2023 | March 22, 2023 |
 | **Data Stories in Mobile Dashboards** | Data Stories let you add multiple customizable detail views to tiles in Mobile Scorecard projects. Use data stories to dive deeper into key drivers, related metrics, and different steps along the customer journey. You can easily swipe through these views to understand the whole story behind your key metrics. Learn more | N/A | March 8, 2023 |
-| **Expiration dates for scheduled projects** |  You can set maximum expiration dates for scheduled projects to up to one year, regardless of schedule frequency. |  N/A |  March 8, 2023 |
+| **Expiration dates for scheduled projects** |  You can set maximum expiration dates for scheduled projects to up to one year, regardless of schedule frequency. [Learn more](/help/analysis-workspace/curate-share/t-schedule-report.md) |  N/A |  March 8, 2023 |
 | **Link sharing for projects (no login required) - Private beta access only** | You can now share read-only links to Analysis Workspace projects with people who don't have access to CJA. You can share project links with people outside of your organization, or those within your organization who are not provisioned for CJA. Learn more (to follow)<p>To join the private beta, contact your Adobe Account Team. | March 15, 2023 (Private beta) | April 2023 |
 
 {style="table-layout:auto"}
   
 ## Fixes in Customer Journey Analytics
 
-AN-309729; AN-309975; AN-311779; AN-313095; 
+AN-309729; AN-309975; AN-311779; AN-313095
 
 ## Important notices for CJA Administrators
 
