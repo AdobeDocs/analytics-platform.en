@@ -203,6 +203,12 @@ To add text to a detail slide, select a layout that shows the `T` symbol, or dra
 
 ![Slide layout change](assets/add-descriptive-text.png)
 
+## Remove components {#remove}
+
+Similarly, to remove a component that is applied to the entire Scorecard, click anywhere on the Scorecard outside of the tiles and then remove it by clicking the **x** that appears when you hover over the component, as shown below for the **First Time Visits**:
+
+![Remove_components](assets/new_remove.png)
+
 ## Create data stories {#create-data-story}
 
 A data story is a collection of supporting data points, business context, and related metrics built around a central theme or metric. 
@@ -248,7 +254,7 @@ Data stories allow you to customize everything so you can share information that
 
 **To customize individual slides**
 
-You can change the visualization for individual slides. For example, you can change a horizontal bar to a doughnut graph for a specific slide. You can also change the layout. See [Customize detail slides](#customize-detail-slide).
+You can change the visualization for individual slides in a data story. For example, you can change a horizontal bar to a doughnut graph for a specific slide. You can also change the layout. See [Customize detail slides](#customize-detail-slide).
 
 ### Preview a data story {#preview-data-story}
 
@@ -262,13 +268,7 @@ To move between the tile and slides, tap the navigation bar.
 ![Create a data story](assets/data-story5.png)
 ![Create a data story](assets/data-story-nav.png){width="45%"}
 
-You can also navigate back and forth by using the arrows on your keyboard or by grabbing a component and holding it to the left or right of your screen to scroll.
-
-## Remove components {#remove}
-
-Similarly, to remove a component that is applied to the entire Scorecard, click anywhere on the Scorecard outside of the tiles and then remove it by clicking the **x** that appears when you hover over the component, as shown below for the **First Time Visits**:
-
-![Remove_components](assets/new_remove.png)
+You can also navigate back and forth by using the arrows on your keyboard or by selecting a component and holding it to the left or right of your screen to scroll.
 
 ## Preview scorecards {#preview}
 
