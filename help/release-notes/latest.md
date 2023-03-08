@@ -29,7 +29,7 @@ AN-309729; AN-309975; AN-311779; AN-313095
 
 | Notice | Notice added or updated | Description |
 | --- | --- | --- |
-| No current notices | N/A | N/A |
+| Analytics Source Connector availability | February 15, 2023 |  On February 28, 2023, the Analytics Source Connector was made available in the new Adobe Experience Platform data center located in Canada. |
 
 {style="table-layout:auto"}
 
