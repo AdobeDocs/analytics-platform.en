@@ -15,7 +15,7 @@ Following is a list of each calculated metric that is provided by Adobe, with it
 >
 >You can:
 > * Add default calculated metrics for Streaming Media, as described in [Calculated metrics](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/variables/calculated-metrics.html) 
-> * Create custom calculated metrics from existing Metrics, as described in [Calculated and advanced calculated (derived) metrics](/help/components/c-calcmetrics/cm-overview.md).
+> * Create custom calculated metrics from existing Metrics, as described in [Calculated and advanced calculated (derived) metrics](/help/components/calc-metrics/cm-adv-functions.md).
 
 
 | Calculated metric name | Function | Formula |

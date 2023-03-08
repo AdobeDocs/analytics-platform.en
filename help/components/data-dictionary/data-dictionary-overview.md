@@ -44,7 +44,7 @@ Following are some of the ways Analytics administrators can use the Data Diction
 
   Similarly, any updates made to component descriptions in the Report Suite are reflected in Analysis Workspace.
 
-  For more information about adding component descriptions in either Analysis Workspace or in a Report Suite, see [Add component descriptions](/help/analyze/analysis-workspace/components/add-component-descriptions.md).
+  For more information about adding component descriptions in either Analysis Workspace or in a Report Suite, see [Add component descriptions](/help/components/add-component-descriptions.md).
 
 ## Access the Data Dictionary
 
