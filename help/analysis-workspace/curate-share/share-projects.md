@@ -65,7 +65,7 @@ To share a specific project role with users or groups in your organization:
 
    **Can duplicate:** Recipients can **[!UICONTROL Save as]** and have access to the left rail. Project interactions are not limited in this role. This role is useful if you want to share a project to users who understand your organization's data and how to use Analysis Workspace, but you do not want your project altered.
 
-   **Can view:** Recipients cannot **[!UICONTROL Save]** or **[!UICONTROL Save as]** and do not have access to the left rail. Project interactions are also limited. This role is useful if you want to share a project to users that are less familiar with your organization's data structure, Analysis Workspace or Customer Journey Analytics generally. However, you still want them to consume data and insights in a safe environment. Learn more about the [Can view project experience](/help/analyze/analysis-workspace/curate-share/view-only-projects.md).
+   **Can view:** Recipients cannot **[!UICONTROL Save]** or **[!UICONTROL Save as]** and do not have access to the left rail. Project interactions are also limited. This role is useful if you want to share a project to users that are less familiar with your organization's data structure, Analysis Workspace or Customer Journey Analytics generally. However, you still want them to consume data and insights in a safe environment. Learn more about the [Can view project experience](/help/analysis-workspace/curate-share/view-only-projects.md).
 
 1. Choose whether to enable the following options when sharing the project:
 
@@ -85,7 +85,7 @@ When sharing a link as described in this section, consider the following:
 
 * Recipients who use the link are required to log in to Customer Journey Analytics before gaining access to the project. 
 
-* If a recipient is not assigned a role and receives a [link](help/analysis-workspace/curate-share/shareable-links.md) to the project (**[!UICONTROL Share] > [!UICONTROL Get project link]**), they are given a role by default. Admins receive **[!UICONTROL Can edit]** and Non-admins receive **[!UICONTROL Can duplicate]**.
+* If a recipient is not assigned a role and receives a [link](/help/analysis-workspace/curate-share/shareable-links.md) to the project (**[!UICONTROL Share] > [!UICONTROL Get project link]**), they are given a role by default. Admins receive **[!UICONTROL Can edit]** and Non-admins receive **[!UICONTROL Can duplicate]**.
 
 To share the project link with users in your organization:
 
@@ -134,7 +134,7 @@ To share a public link to an Analysis Workspace project:
    
      Require people with the link to authenticate via SSO prior to gaining access to the shared project. Select this option if you want the project to be accessible only to users within your organization.
 
-     CJA administrators can set this preference for the company, as described in [Preferences](/help/analyze/analysis-workspace/user-preferences.md). You might encounter the following scenarios, depending on how the administrator configured this option:
+     CJA administrators can set this preference for the company, as described in [Preferences](/help/analysis-workspace/user-preferences.md). You might encounter the following scenarios, depending on how the administrator configured this option:
      
      * If this option is not visible your CJA administrator did not enable this feature. 
 
