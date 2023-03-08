@@ -169,13 +169,29 @@ Click the linked section titles for more information and context about the avail
 | | Limit max items | Reduces the number of items on the X-axis in the Scatter visualization. This can be useful if you have a large data set. |
 | | Anchor y-axis at zero | If all the values plotted on the chart are considerably above zero, the chart default will make the bottom of the y-axis NON-ZERO. If you check this box, the y-axis will be forced to zero (and it will re-draw the chart). |
 
+## Company preferences
+
+>[!AVAILABILITY]
+>
+>The Public Access Links functionality described in this section is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
+
+You can update company preferences that apply to all users and projects within your organization. For information about how to access these preferences, see [Update preferences](#update-preferences). 
+
+| Section | Preference | Options |
+| --- | --- | --- |
+| **Public Access Links** <!-- Double check the names of all these settings for what they are actually called --> | | |
+| | Disable all public access links | <p>Disables all existing public access links and prevents users in your organization from creating new links. This means that users cannot share Analysis Workspace projects with people who don't have an Adobe Customer Journey Analytics account. Users can share projects only with other Customer Journey Analytics users within your organization.</p> <p>When public links are disabled:</p> <ul><li><p>Users are unable to create public access links</p><p>The "Share public link" option is removed from the Share menu. This means that users can no longer share projects with people who don't have an Analysis Workspace account in your organization as described in [Share a public link with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>Any existing public links are disabled</p></li><p>If public links are disabled and then re-enabled, all previously deactivated links are not automatically reactivated. In this case, users must manually reactivate them for each project from the Share project dialog box.</p> |
+| | Require Experience Cloud authentication | <p>When this option is enabled, only recipients who have a federated ID and can log in to Adobe Experience Cloud can access shared public links.</p> <p>After this option is enabled, any time a user creates a link to an Analysis Workspace project, the "Require Experience Cloud authentication" option is enabled in the share dialog and it cannot be disabled by the user who is sharing the link. (For information about how users can share projects with users outside the organization, see [Share a public link with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md).)</p> <p>Consider the following when enabling this option:</p><ul><li><p>When you enable this option, all currently active public links that don't have Experience Cloud enabled are deactivated.</p></li> <li><p>If this option is enabled and then later disabled, all previously deactivated links are not automatically reactivated. In this case, users must manually reactivate them from the Share project dialog box.</p></li> <li><p>This option is available only if SSO is implemented in your organization. For information about how system administrators can enable SSO for your organization, see [Set up identity and Single Sign-On](https://helpx.adobe.com/enterprise/using/set-up-identity.html){target=_blank}.</p><p>If SSO is configured for your organization, check to see if any kind of auto-account creation is implemented in the console. Typically, a system administrator would set this up, as described in [Enable automatic account creation](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>If your organization is in an industry that requires HIPAA compliance, this option is automatically enabled and cannot be disabled.</p></li></ul>  |
+
+{style="table-layout:auto"}
+
 ## Restore default preferences
 
 You can restore all your user preferences to the system defaults. This does not affect administrator preferences under the Company tab.
 
 This action cannot be undone.
 
-1. In Adobe Analytics, select [!UICONTROL **Components**] **>** [!UICONTROL **Preferences**].
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] **>** [!UICONTROL **Preferences**].
 
    ![User preferences](assets/user-preferences.png)
 
