@@ -193,6 +193,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 +   Components {#cja-components}
     +   [Components overview](../components/overview.md)
+    +   [Add component descriptions](../components/add-component-descriptions.md)
     +   Annotations {#annotations}
         + [Annotations overview](../components/annotations/overview.md)
         + [Create annotations](../components/annotations/create-annotations.md)
@@ -233,6 +234,7 @@ breadcrumb-title: Customer Journey Analytics Guide
             + [Approve calculated metrics](../components/calc-metrics/cm-workflow/cm-approving.md)
             + [Share calculated metrics](../components/calc-metrics/cm-workflow/cm-sharing.md)
             + [Calculated Metric Manager](../components/calc-metrics/cm-workflow/cm-manager.md)
+        +   [Default calculated metrics](../components/calc-metrics/default-calcmetrics.md)
         +   [Basic functions](../components/calc-metrics/cm-functions.md)
         +   [Advanced functions](../components/calc-metrics/cm-adv-functions.md)
     +   Date ranges {#cja-date-ranges}
@@ -242,7 +244,11 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Calendar overview](../components/date-ranges/calendar.md)
         + [Create custom date ranges](../components/date-ranges/custom-date-ranges.md)
         + [Date comparison](../components/date-ranges/time-comparison.md)
-
+    +   Data Dictionary {#data-dictionary}
+        + [Data Dictionary overview](../components/data-dictionary/data-dictionary-overview.md)
+        + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
+        + [Edit component entries in the Data Dictionary](../components/data-dictionary/edit-entries-data-dictionary.md)
+        + [Monitor Data Dictionary health](../components/data-dictionary/monitor-data-dictionary-health.md)
 +   Analytics dashboards {#cja-dashboards}
     + [Analytics dashboards - Overview](../mobile-app/home.md)
     + [Curator tasks](../mobile-app/curator.md)
