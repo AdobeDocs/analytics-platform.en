@@ -50,7 +50,7 @@ You may need to know how many rows of event data you currently have in [!UICONTR
     * Change your [data retention settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#set-rolling-window-for-connection-data-retention).
     * [Delete any unused connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
     * [Delete a dataset in AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
-    * Contact your Adobe Account Manager to license additional capacity. 
+    * Contact your Adobe Account Team to license additional capacity. 
 
 ## Create a Workspace project using all your event data {#workspace-event-data}
 
