@@ -14,7 +14,7 @@
 
 ## Data Dictionary filter criteria {#dd-filter-criteria}
 
-1. (Optional) Select the **Filter** icon ![Data Dictionary Filter icon](/help/analyze/analysis-workspace/components/data-dictionary/assets/data-dictionary-filter-icon.png), then select any of the following filter options to filter the list of components:
+1. (Optional) Select the **Filter** icon ![Data Dictionary Filter icon](/help/components/data-dictionary/assets/data-dictionary-filter-icon.png), then select any of the following filter options to filter the list of components:
 
    |Option | Function |
    |---------|----------|
