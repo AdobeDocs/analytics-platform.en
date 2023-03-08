@@ -219,7 +219,7 @@ Watch the video to learn more about creating data stories in mobile scorecard pr
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
 
-**To create a data story**
+**To create a data story** {#data-story-create}
 
 Build your data story by adding multiple detail slides to a tile.
 
