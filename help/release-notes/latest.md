@@ -17,6 +17,7 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 
 | Data Dictionary in Analysis Workspace | The Data Dictionary helps both users and administrators keep track of and better understand the components (dimensions, metrics) in their CJA environment. Learn more | March 8, 2023 | March 22, 2023 |
 | Data Stories in Mobile Dashboards | Data Stories let you add multiple customizable detail views to tiles in Mobile Scorecard projects. Use data stories to dive deeper into key drivers, related metrics, and different steps along the customer journey. You can easily swipe through these views to understand the whole story behind your key metrics. Learn more | N/A | March 8, 2023 |
+
 {style="table-layout:auto"}
   
 ## Fixes in Customer Journey Analytics
