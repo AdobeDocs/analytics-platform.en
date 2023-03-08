@@ -243,7 +243,8 @@ Data stories allow you to customize everything so you can share information that
 1.  To apply a change only to the title, hold the Shift key to apply the change.
     ![Create a data story](assets/data-story4.png)
 
-    Note: Slides inherit components from the tile, but tiles don’t inherit components from slides.
+>[!NOTE]
+>Slides inherit components from the tile, but tiles don’t inherit components from slides.
 
 **To customize individual slides**
 
