@@ -15,6 +15,9 @@ The following updates were made to the CJA documentation since its inception.
 | --- | --- |
 | **March 2023** | |
 | Feature support | Updated [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md) with a table of features available in CJA but not available or supported in AA. |
+| Default calculated metrics | Added content explaining the [default calculated metrics provided by Adobe](/help/components/calc-metrics/default-calcmetrics.md). |
+| Data Dictionary | <p>Added new documentation for the Data Dictionary, including an [Overview](/help/components/data-dictionary/data-dictionary-overview.md), [Viewing](/help/components/data-dictionary/view-data-dictionary.md), [Editing](/help/components/data-dictionary/edit-entries-data-dictionary.md), and [Monitoring](/help/components/data-dictionary/monitor-data-dictionary-health.md) the Data Dictionary.</p><p>Information in [Adding component descriptions](/help/components/add-component-descriptions.md) was updated to account for Data Dictionary functionality.</p>  |
+| Link sharing for projects (no login required) | <p>Updated existing documentation to explain how to share a read-only link of a project with people who do not have access to Analysis Workspace.</p> <p>Updated user documentation includes [Share projects](/help/analysis-workspace/curate-share/share-projects.md) and [Create shareable links](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>Options for administrators were added to [Preferences](/help/analysis-workspace/user-preferences.md).</p>  |
 | **February 2023** | |
 | Compare CJA to BI solutions | New document on a [comparison](../getting-started/cja-vs-bi.md) of Customer Journey Analytics to typical BI solutions. | 
 | Update to Audiences documentation | New section on [latency considerations](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
