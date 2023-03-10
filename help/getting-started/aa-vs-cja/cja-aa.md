@@ -9,7 +9,7 @@ feature: CJA Basics
 
 The following tables list which features in Adobe Analytics (AA) are supported, partially supported or not supported in Customer Journey Analytics (CJA), and which features of CJA are not supported or available in AA. These lists will change over time as features are added to CJA.
 
-## Fully supported features/components
+## Fully supported features/components {#full-support}
 
 | Adobe Analytics Feature | Notes on support |
 | --- | --- |
@@ -42,7 +42,7 @@ The following tables list which features in Adobe Analytics (AA) are supported, 
 
 {style="table-layout:auto"}
 
-## Supported in a new way
+## Supported in a new way {#new-support}
 
 | Feature | Notes |
 | --- | --- |
@@ -67,7 +67,7 @@ The following tables list which features in Adobe Analytics (AA) are supported, 
 
 {style="table-layout:auto"}
 
-## Partial Support
+## Partial Support {#partial}
 
 | Feature | Notes |
 | --- | --- |
@@ -82,7 +82,7 @@ The following tables list which features in Adobe Analytics (AA) are supported, 
 
 {style="table-layout:auto"}
 
-## Not currently supported, but planned
+## Not currently supported, but planned {#planned}
 
 | Feature | Notes |
 | --- | --- |
@@ -100,7 +100,7 @@ The following tables list which features in Adobe Analytics (AA) are supported, 
 
 {style="table-layout:auto"}
 
-## Support not yet planned
+## Support not yet planned {#not-planned}
 
 | Feature | Notes |
 | --- | --- |
@@ -109,7 +109,7 @@ The following tables list which features in Adobe Analytics (AA) are supported, 
 
 {style="table-layout:auto"}
 
-## Will never be supported
+## Will never be supported {#never}
 
 * People metric using Cross-Device Coop
 * Reports & Analytics Dashboards
@@ -117,7 +117,7 @@ The following tables list which features in Adobe Analytics (AA) are supported, 
 * Reports & Analytics Targets
 * Mobile Services
 
-## CJA features not available in Adobe Analytics
+## CJA features not available in Adobe Analytics {#cja-not-aa}
 
 The following table lists features that are available in Customer Journey Analytics (CJA), but are not supported in Adobe Analytics (AA).
 
