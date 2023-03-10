@@ -14,6 +14,7 @@ The following updates were made to the CJA documentation since its inception.
 | Feature | Description |
 | --- | --- |
 | **March 2023** | |
+| Create data stories in mobile scorecards | A [data story](/help/mobile-app/create-scorecard.md#create-data-stories) is a collection of supporting data points, business context, and related metrics built around a central theme or metric. |
 | Feature support | Updated [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md) with a table of features available in CJA but not available or supported in AA. |
 | Default calculated metrics | Added content explaining the [default calculated metrics provided by Adobe](/help/components/calc-metrics/default-calcmetrics.md). |
 | Data Dictionary | <p>Added new documentation for the Data Dictionary, including an [Overview](/help/components/data-dictionary/data-dictionary-overview.md), [Viewing](/help/components/data-dictionary/view-data-dictionary.md), [Editing](/help/components/data-dictionary/edit-entries-data-dictionary.md), and [Monitoring](/help/components/data-dictionary/monitor-data-dictionary-health.md) the Data Dictionary.</p><p>Information in [Adding component descriptions](/help/components/add-component-descriptions.md) was updated to account for Data Dictionary functionality.</p>  |
