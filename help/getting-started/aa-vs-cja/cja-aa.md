@@ -115,7 +115,6 @@ The following tables list which features in Adobe Analytics (AA) are supported, 
 * Reports & Analytics Dashboards
 * Reports & Analytics Bookmarks
 * Reports & Analytics Targets
-* Mobile Services
 
 ## CJA features not available in Adobe Analytics {#cja-not-aa}
 
