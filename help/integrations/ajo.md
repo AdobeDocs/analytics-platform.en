@@ -29,9 +29,10 @@ Once Journey Optimizer data is in Adobe Experience Platform, you can [Create a c
 
 After a connection is created, you can create one or more [Data Views](/help/data-views/create-dataview.md) to configure the desired dimensions and metrics available in Customer Journey Analytics.
 
->![NOTE]
+>[!NOTE]
 >
 >Data discrepancies between AJO and CJA are typically less than 1-2%. Larger discrepancies are possible for data collected within the last two hours. Use date ranges excluding today to mitigate discrepancies involving processing time.
+
 
 ### Configure dimensions in the data view
 
