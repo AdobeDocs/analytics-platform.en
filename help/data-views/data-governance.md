@@ -9,11 +9,15 @@ When you create a dataset in Experience Platform, you can create [data usage lab
 
 Of special interest to CJA are these labels:
 
-* The `C8` label - **[!UICONTROL No measurement]**. This label signifies that data cannot be used for analytics on your organization’s websites or apps.
+* The `C8` label - **[!UICONTROL No measurement]**. This label signifies that data cannot be used for analytics on your organization's websites or apps.
 
 * The `C12` label - **[!UICONTROL No General Data Export]**. Schema fields labeled this way cannot be exported or downloaded from CJA (via reporting, export, API, etc.)
 
-Labeling in itself does not mean that these data usage labels are enforced. That’s what policies are used for. You create your policies via the [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=en) in Experience Platform.
+>[!NOTE]
+>
+>Data usage labels are not yet supported on stitched datasets.
+
+Labeling in itself does not mean that these data usage labels are enforced. That's what policies are used for. You create your policies via the [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=en) in Experience Platform.
 
 Two Adobe-defined policies are surfaced in CJA and affect reporting and download/sharing:
 
