@@ -5,9 +5,9 @@ exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 ---
 # Labels and policies
 
-When you create a dataset in Experience Platform, you can create [data usage labels](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) for some or all of the elements in the dataset. Until now, these labels were not exposed in CJA. With this release, you can view these labels and policies in CJA. 
+When you create a dataset in Experience Platform, you can create [data usage labels](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) for some or all of the elements in the dataset. You can view these labels and policies in CJA. 
 
-These labels are of special interest to CJA:
+The following labels are of special interest to CJA:
 
 * The `C8` label - **[!UICONTROL No measurement]**. This label signifies that data cannot be used for analytics on your organization's websites or apps.
 
@@ -38,7 +38,7 @@ Data labels that were created in Experience Platform are shown in three location
 
 ## Filter on Data Governance labels in data views
 
-In the data views editor, click the Filter icon in the left trail and filter the data views components by **[!UICONTROL Data Governance]** and type of **[!UICONTROL Label]**:
+In the data views editor, click the [!UICONTROL filter] icon in the left trail and filter the data views components by **[!UICONTROL Data Governance]** and type of **[!UICONTROL Label]**:
 
 ![](assets/filter-labels.png)
 
@@ -48,7 +48,7 @@ Click **[!UICONTROL Apply]** to see which components have labels attached to the
 
 You can check to see if a policy is turned on that blocks the use of certain CJA data view elements for analytics or export purposed. 
 
-Again, click the Filter icon in the left rail and under **[!UICONTROL Data Governance]**, click **[!UICONTROL Policies]**:
+Again, click the [!UICONTROL filter] icon in the left rail and under **[!UICONTROL Data Governance]**, click **[!UICONTROL Policies]**:
 
 ![](assets/filter-policies.png)
 
