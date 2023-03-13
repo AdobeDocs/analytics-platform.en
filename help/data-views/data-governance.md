@@ -15,7 +15,7 @@ These labels are of special interest to CJA:
 
 >[!NOTE]
 >
->Data usage labels are not yet supported on stitched datasets.
+>Data usage labels are not automatically propagated to stitched datasets. They can, however, be added manually.
 
 Labeling in itself does not mean that these data usage labels are enforced. That's what policies are used for. You create your policies via the [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=en) in Experience Platform.
 
