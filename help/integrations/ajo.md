@@ -25,6 +25,9 @@ Once Journey Optimizer data is in Adobe Experience Platform, you can [Create a c
 | Journey Step Events | Event | Person ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contains events showing which profiles participated in each node of the journey. |
 | AJO Entity Dataset | Lookup | Key: `_id`<br>Matching Key: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contains classifications that associate Journey and Campaign metadata to all AJO event data. |
 
+{style="table-layout:auto"}
+
+
 ## Configure the Data view to accommodate Journey Optimizer dimensions and metrics
 
 After a connection is created, you can create one or more [Data Views](/help/data-views/create-dataview.md) to configure the desired dimensions and metrics available in Customer Journey Analytics.

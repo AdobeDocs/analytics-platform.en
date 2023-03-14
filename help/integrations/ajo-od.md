@@ -67,3 +67,5 @@ You can create the following metrics in a data view to achieve approximate parit
 | Offers Send | The number of offers sent to the profile. | `_experience.decisioning.`<br/>`propositionEventType.send` | Component type: Metric |
 | Offers Trigger | The number of offers chosen to be displayed by the client SDK. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Component type: Metric |
 | Offers Unsubscribe | The number of offers requested by profile not to be shown in the future. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Component type: Metric |
+
+{style="table-layout:auto"}
