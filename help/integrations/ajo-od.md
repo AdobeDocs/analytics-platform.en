@@ -25,7 +25,7 @@ Once DM data is in Adobe Experience Platform, you can can create a [Connection](
 | AJO Message Feedback Event Dataset | Event | Person ID: `IdentityMap` | Contains message delivery events. |
 | AJO Email Tracking Experience Event Dataset | Event | Person ID: `IdentityMap` | Contains email tracking events. |
 | AJO Push Tracking Experience Event Dataset | Event | Person ID: `IdentityMap` | Contains push tracking events. |
-| AJO Entity Dataset | Record | Key: `_id`<br>Matching Key: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contains classifications that associate Journey and Campaign metadata to all AJO event data. |
+| AJO Entity Dataset | Lookup | Key: `_id`<br>Matching Key: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contains classifications that associate Journey and Campaign metadata to all AJO event data. |
 
 {style="table-layout:auto"}
 
