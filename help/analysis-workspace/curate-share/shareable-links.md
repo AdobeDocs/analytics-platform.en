@@ -14,13 +14,13 @@ To share a link to the full project, go to **[!UICONTROL Share > Get project lin
 
 ![](assets/get-project-link.png)
 
-## Get public link
+## Get a read-only link to share with anyone
 
 {{release-limited-testing-section}}
 
-You can share a view-only link to Analysis Workspace projects with people who don't have access to Adobe Analytics.
+You can share a read-only link to Analysis Workspace projects with people who don't have access to Customer Journey Analytics.
 
-For more information, see "Share a public link with anyone (no login required)" in the article [Share projects](/help/analysis-workspace/curate-share/share-projects.md).
+For more information, see "Share a project with anyone (no login required)" in the article [Share projects](/help/analysis-workspace/curate-share/share-projects.md).
 
 ## Get panel or visualization link {#panel-link} 
 
