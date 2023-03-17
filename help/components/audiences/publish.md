@@ -76,14 +76,15 @@ After you have created an audience, Adobe creates an Experience Platform streami
 
 ## Latency considerations {#latency}
 
-At several points prior to, during and after audience publishing, latencies can occur. Here is an overview of possible latencies.
+At several points prior to, during, and after audience publishing, latencies can occur. Here is an overview of possible latencies.
 
-![](assets/latency-diagram.png)
+![latency from AEP to CJA](assets/latency-diagram.png)
 
 | # | Latency point | Latency duration |
 | --- | --- | --- |
-| 1 | Data ingestion into Data Lake | Up to 30 minutes |
-| 2 | Data ingestion from Experience Platform into CJA | Up to 60 minutes |
+| Not shown | Adobe Analytics to Analytics Source Connector (A4T) | Up to 30 minutes |
+| 1 | Data ingestion into Data Lake (from Analytics Source Connector or other sources) | Up to 90 minutes |
+| 2 | Data ingestion from Experience Platform Data Lake into CJA | Up to 90 minutes |
 | 3 | Audience publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | Around 60 minutes |
 | 4 | Refresh frequency for audiences |<ul><li>One-time refresh (latency of less than 5 minutes)</li><li>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate) |
 | 5 | Creating destination in AEP: Activating the new segment | 1-2 hours |
@@ -124,7 +125,7 @@ Yes, it will.
 
 +++
 
-+++**Does CJA send the audience data over as pipeline events or a flat file that also goes to data lake?**
++++**Does CJA send the audience data over as pipeline events or as a flat file that also goes to data lake?**
 
 CJA streams the data into RTCP via pipeline, and this data is also collected into a system dataset in the data lake.
 
@@ -132,7 +133,7 @@ CJA streams the data into RTCP via pipeline, and this data is also collected int
 
 +++**What identities does CJA send over?**
 
-Whichever identity/namespace pairs that were used in the [Connection setup](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection). Specifically, the step when a user selects the field they want to use as their "Person ID".
+Whichever identity/namespace pairs that were specified in the [Connection setup](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection). Specifically, the step when a user selects the field they want to use as their "Person ID".
 
 +++
 
