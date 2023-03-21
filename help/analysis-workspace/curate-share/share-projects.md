@@ -116,7 +116,7 @@ You can grant [read-only access](/help/analysis-workspace/curate-share/view-only
 >
 >* Projects with more than 14 expanded visualizations can't be shared with people who don't have access to CJA.
 
-To share a public link to an Analysis Workspace project:
+To share an Analysis Workspace project with anyone:
 
 1. Open the Analysis Workspace project that you want to share.
 
