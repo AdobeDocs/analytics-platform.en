@@ -59,6 +59,7 @@ You can create the following metrics in a data view to achieve approximate parit
 
 | Metric | Description | Schema element | Component settings |
 | --- | --- | --- | --- |
+| Event Type (rename to refer to a specific event, e.g. `Feedback` for `message.feedback`) [1] | Number of specifc type of event | `eventType` | Component type: Metric<br/>**[!UICONTROL Set Include Exclude Values]**: On<br/>**[!UICONTROL Match]**: [!UICONTROL If all criteria are met]<br/>**[!UICONTROL Criteria]**: **[!UICONTROL Equals]** `message.feedback` | 
 | Decision Option Score | Calcuated value for a decsion option in the context of a single scope. | `_experience.decisioning.`<br/>`propositionDetails.selections.score` | Component type: Metric |
 | Fallback Decision Option Score | Calcuated value for a fallback decision option in the context of a single scope. | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | Component type: Metric |
 | Offers Dismiss | The number of offers dismissed or rejected without any other direct interaction. | `_experience.decisioning.`<br/>`propositionEventType.display` | Component type: Metric |
@@ -69,3 +70,4 @@ You can create the following metrics in a data view to achieve approximate parit
 | Offers Unsubscribe | The number of offers requested by profile not to be shown in the future. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Component type: Metric |
 
 {style="table-layout:auto"}
+[1] You can define multiple metrics for the various event types available. See [Include Exclude values component settings](/help/data-views/component-settings/include-exclude-values.md) for more information.
