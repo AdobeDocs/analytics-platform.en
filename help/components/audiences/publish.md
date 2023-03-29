@@ -149,6 +149,19 @@ No. We only send one identity per "person", so there would be no graph edges for
 
 +++
 
++++**What time of day do daily, weekly, and monthly refreshes occur? What day of the week do weekly refreshes occur?**
+
+The timing of the refresh is based on when the original audience was published and anchors to that time of day (and day of week or month).
+
++++
+
++++**Can the daily, weekly, and monthly time of refresh be configured by users?**
+
+No, they cannot be configured by users.
+
++++
+
+
 ## Next steps
 
 * To manage this audience, go to the [Management UI](/help/components/audiences/manage.md).
