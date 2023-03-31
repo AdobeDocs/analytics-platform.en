@@ -17,7 +17,7 @@ Adobe Experience Platform serves as the central data source and link between AJO
 
 ## Create a connection
 
-Once DM data is in Adobe Experience Platform, you can can create a [Connection](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en) based on your DM datasets. Select and configure the following datasets:
+Once AJO-DM data is in Adobe Experience Platform, you can can create a [Connection](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en) based on your AJO-DM datasets. Select and configure the following datasets:
 
 | Dataset | Dataset type | Connection settings | Description |
 | --- | --- | --- | --- |
@@ -39,7 +39,7 @@ After a connection is created, you can create one or more [Data Views](https://e
 
 ### Configure dimensions
 
-You can create the following dimensions in a data view to achieve approximate parity with similar dimensions in DM. See [Component settings](/help/data-views/component-settings/overview.md) in the Data View Manager for details around dimension customization options.
+You can create the following dimensions in a data view to achieve approximate parity with similar dimensions in AJO-DM. See [Component settings](/help/data-views/component-settings/overview.md) in the Data View Manager for details around dimension customization options.
 
 | Dimension | Schema element | Component settings |
 | --- | --- | --- |
@@ -55,7 +55,7 @@ You can create the following dimensions in a data view to achieve approximate pa
 
 ### Configure metrics
 
-You can create the following metrics in a data view to achieve approximate parity with similar metrics in Journey Optimizer. See [Component settings](/help/data-views/component-settings/overview.md) in the Data View Manager for details around metrics customization options.
+You can create the following metrics in a data view to achieve approximate parity with similar metrics in AJO-DM. See [Component settings](/help/data-views/component-settings/overview.md) in the Data View Manager for details around metrics customization options.
 
 | Metric | Description | Schema element | Component settings |
 | --- | --- | --- | --- |
