@@ -278,6 +278,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Integrate Adobe solutions with CJA overview](/help/integrations/overview.md)
     + [Integrate Adobe Analytics with Customer Journey Analytics](/help/integrations/aa.md)
     + [Integrate Journey Optimizer data with CJA](/help/integrations/ajo.md)
+    + [Integrate Decision Management data with CJA](/help/integrations/ajo-od.md)
     + [Integrate Customer AI data with CJA](/help/integrations/customer-ai.md)
 
 +   Data Governance {#cja-privacy}
