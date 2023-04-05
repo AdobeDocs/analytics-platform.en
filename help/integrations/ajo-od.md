@@ -72,4 +72,5 @@ You can create the following metrics in a data view to achieve approximate parit
 | Offers Unsubscribe | The number of offers requested by profile not to be shown in the future. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Component type: Metric |
 
 {style="table-layout:auto"}
+
 [1] You can define multiple metrics for the various event types available. See [Include Exclude values component settings](/help/data-views/component-settings/include-exclude-values.md) for more information.
