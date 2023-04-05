@@ -24,7 +24,7 @@ Each column could show a different dimension. Drag a dimension and drop in a dro
 
 ## Configure a flow visualization
 
-For information about how to confgure a flow visualization, see [Configure a flow visualization](/help/analyze/analysis-workspace/visualizations/c-flow/create-flow.md).
+For information about how to confgure a flow visualization, see [Configure a flow visualization](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 
 ## Export Flow Diagrams as Part of Project .CSV Files {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 
