@@ -12,17 +12,21 @@ The **[!UICONTROL Experimentation]** panel lets analysts compare different user 
 >
 >At this point, [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) data brought into Adobe Experience Platform via the Analytics Source Connector **cannot** be analyzed in the [!UICONTROL Experimentation] panel. We expect a resolution to this issue in 2023.
 
-## Access Control
+## Access Control {#access}
 
 The Experimentation panel is available to use by all Customer Journey Analytics (CJA) users. No Admin rights or other permissions are required. However, the setup (steps 1 and 2 below) requires actions that only Admins can perform.
 
-## Step 1: Create connection to experiment dataset/s
+## New functions in Calculated Metrics {#functions}
+
+Two new advanced functions were added: [!UICONTROL Lift] and [!UICONTROL Confidence]. For more information, see [Reference - advanced functions](/help/components/calc-metrics/cm-adv-functions.md).
+
+## Step 1: Create connection to experiment dataset/s {#connection}
 
 The recommended data schema is for the experiment data to be in an [Object array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) that contains the experiment and variant data in two separate dimensions. If you have your experiment data in a single dimension with experiment and variant data in a delimited string, you can use the [substring](/help/data-views/component-settings/substring.md) setting in data views to split them into two for use in the panel.
 
 After your experiment data has been [ingested](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) into Adobe Experience Platform, [create a connection in CJA](/help/connections/create-connection.md) to one or more experiment dataset/s.
 
-## Step 2: Add context labels in data views
+## Step 2: Add context labels in data views {#contect-labels}
 
 In CJA data views settings, admins can add [context labels](/help/data-views/component-settings/overview.md) to a dimension or metric and CJA services like [!UICONTROL Experimentation] panel can use these labels for their purposes. Two pre-defined labels are used for the Experimentation panel:
 
@@ -35,7 +39,7 @@ In your data view that contains experimentation data, pick two dimension, one wi
 
 Without these labels present, the Experiment panel does not work, since there are no experiments to work with.
 
-## Step 3: Configure the Experiment panel
+## Step 3: Configure the Experiment panel {#configure}
 
 1. In CJA Workspace, drag the Experimentation panel into a project.
 
@@ -56,7 +60,7 @@ Without these labels present, the Experiment panel does not work, since there ar
 
 1. Click **[!UICONTROL Build]**.
 
-## Step 4: View the panel output
+## Step 4: View the panel output {#view}
 
 The Experimentation panel returns a rich set of data and visualizations to help you better understand how your experiments are performing. At the top of the panel, a summary line is provided to remind you of the panel settings you selected. At any time, you can edit the panel by clicking the edit pencil at the top right.
 
@@ -74,7 +78,7 @@ The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTRO
 >
 >This panel currently does not support analysis of A/A tests.
 
-## Step 5: Interpret the results
+## Step 5: Interpret the results {#interpret}
 
 1. **Experiment is Conclusive**: Every time you view the experimentation report, Adobe analyzes the data that has accumulated in the experiment up to this point and will declare an experiment to be "Conclusive" when the anytime valid confidence crosses a threshold of 95% for *at least one* of the variants (with a Bonferonni correction applied when there are more than two arms, to correct for multiple hypothesis testing).  
 
@@ -90,7 +94,7 @@ The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTRO
 >
 >A full description of results should consider all available evidence (i.e. experiment design, sample sizes, conversion rates, confidence etc.), and not just the declaration of conclusive or not. Even when a result is not yet "conclusive", there can still be compelling evidence for one variant being different from another (e.g. confidence intervals are nearly non-overlapping). Ideally, decision making should be informed by all statistical evidence, interpreted on a continuous spectrum.
 
-## Adobe's statistical methodology
+## Adobe's statistical methodology {#statistics}
 
 To provide easily interpretable and safe statistical inference, Adobe has adopted a statistical methodology based on [Anytime Valid Confidence Sequences](https://doi.org/10.48550/arXiv.2103.06476).
 
@@ -98,6 +102,20 @@ A Confidence Sequence is a "sequential" analog of a Confidence Interval. To unde
 
 A 95% Confidence Sequence will include the "true" value of the business metric in 95 out of the 100 experiments that you ran. (A 95% Confidence Interval could only be calculated once per experiment in order to give the same 95% coverage guarantee; not with every single new user). Confidence Sequences therefore allow you to continuously monitor experiments, without increasing False Positive error rates, i.e. they allow "peeking" at results.
 
-## New functions in Calculated Metrics
+## Interpret non-randomized dimensions {#non-randomized}
 
-Two new advanced functions were added: [!UICONTROL Lift] and [!UICONTROL Confidence]. For more information, see [Reference - advanced functions](/help/components/calc-metrics/cm-adv-functions.md).
+CJA allows analysts to select any dimension as the "experiment". But how do you interpret an analysis where the dimension chosen as the experiment is not one for which visitors are randomized?
+
+For example, consider an ad that a visitor sees. You may be interested in measuring the change in some metric (e.g., average revenue) if you decide to show visitors "ad B" instead of "ad A". The causal effect of showing ad B in place of ad A is of central importance in arriving at the marketing decision. This causal effect may be measured as the average revenue over the whole population, if we replaced the status quo of showing ad A with the alternate strategy of showing ad B. 
+
+A/B testing is the gold standard within the industry for objectively measuring the effects of such interventions. The critical reason why an A/B test gives rise to a causal estimate is due to the randomization of visitors to receive one of the possible variants. 
+
+Now consider a dimension that is not achieved by randomization, for example, the US state of the visitor. Let's say that our visitors primarily come from two states, New York and California. The average revenue of sales of a winter clothing brand can be different in the two states due to the differences in the regional weather. In such a situation, the weather may be the true causal factor behind winter clothing sales, and not the fact that the geographical states of visitors are different.
+
+The experimentation panel in Customer Journey Analytics lets you analyze data as average revenue difference by states of the visitors. In such a situation, the output does not have a causal interpretation. However, such an analysis may still be of interest. It provides an estimate (along with measures of uncertainty) of the difference in average revenue by states of the visitors. This is also referred to as "Statistical Hypothesis Testing". The output of this analysis may be interesting, but not necessarily actionable, since we have not and sometimes cannot randomize visitors to one of the possible values of the dimension. 
+
+The following illustration contrasts these situations:
+
+![randomized experiment](assets/randomize.png)
+
+When you want to measure the impact of intervention X on outcome Y, it is possible that the real cause of both is the confounding factor C. If the data is not achieved by randomizing visitors on X, the impact is harder to measure, and the analysis will explicitly account for C. Randomization breaks the dependence of X on C, allowing us to measure the effect of X on Y without having to worry about other variables. 
