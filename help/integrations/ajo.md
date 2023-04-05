@@ -15,7 +15,9 @@ Adobe Experience Platform serves as the central data source and link between Jou
 
 ## Create a connection in Customer Journey Analytics
 
-Once Journey Optimizer data is in Adobe Experience Platform, you can [Create a connection](/help/connections/create-connection.md) based on your Journey Optimizer Dataset. Select the Dataset that you sent to Platform.
+Once Journey Optimizer data is in Adobe Experience Platform, you can [Create a connection](/help/connections/create-connection.md) based on your Journey Optimizer datasets. Or you can add Journey Optimizer datasets to an existing connection. 
+
+Select and configure the following datasets:
 
 | Dataset | Dataset type | Connection settings | Description |
 | --- | --- | --- | --- |

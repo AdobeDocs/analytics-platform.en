@@ -14,6 +14,7 @@ The following updates were made to the CJA documentation since its inception.
 | Feature | Description |
 | --- | --- |
 | **March 2023** | |
+| Integrate Decision Management data | Added content explaining how to [integrate Adobe Journey Optimizer Decision Management data in CJA](/help/integrations/ajo-od.md). |
 | Create data stories in mobile scorecards | A [data story](/help/mobile-app/create-scorecard.md#create-data-stories) is a collection of supporting data points, business context, and related metrics built around a central theme or metric. |
 | Feature support | Updated [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md) with a table of features available in CJA but not available or supported in AA. |
 | Default calculated metrics | Added content explaining the [default calculated metrics provided by Adobe](/help/components/calc-metrics/default-calcmetrics.md). |
