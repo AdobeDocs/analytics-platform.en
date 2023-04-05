@@ -7,13 +7,7 @@ exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 ---
 # Configure a flow visualization
 
-The updated Flow visualization allows you to understand the journey stemming from or leading up to a specific conversion event on your website or your app. It traces a path through your dimensions (and dimension items) or metrics. Flow lets you configure the start or end of the path you are interested in, or analyze all those paths that flow through a dimension or dimension item. 
-
-The new [!UICONTROL flow] experience enhances your workflow in several ways:
-
-* You can now choose to start or end your path with the combination of a metric and a pathing dimension.
-* It contains [!UICONTROL Advanced Settings] to let you further customize the [!UICONTROL flow].
-* The new “Build” button saves time in analysis by allowing you to configure the journey all at once, then query, then automatically build out multiple columns and nodes at once​.
+Flow visualizations allow you to understand the journey stemming from or leading up to a specific conversion event on your website or your app. It traces a path through your dimensions (and dimension items) or metrics. Flow lets you configure the start or end of the path you are interested in, or analyze all those paths that flow through a dimension or dimension item. 
 
 ![new Flow UI](assets/new-flow.png)
 
@@ -113,7 +107,7 @@ When using this option, keep in mind that:
 * If used with a **[!UICONTROL Starts with]** flow, only the first occurrence that matches the start criteria is included. 
 * If used with an **[!UICONTROL Ends with]** flow, only the last occurrence that matches the end criteria will be included. 
 * The series used differs based on the container. If using the **[!UICONTROL Visit]** container, the series of hits will be the session. If using the **[!UICONTROL Visitor]** container, the series of hits will be all the hits for a given user in the provided date range. 
-* The **[!UICONTROL Limit to first/last occurrence]** option can be configured in the advanced settings when using a Metric or Dimension Item in the “Starts with” or “Ends with” fields.
+* The **[!UICONTROL Limit to first/last occurrence]** option can be configured in the advanced settings when using a Metric or Dimension Item in the "Starts with" or "Ends with" fields.
  
 Example series of hits:
 
@@ -125,14 +119,14 @@ Home > Products > Add to cart > Products > Add to Cart > Billing > Order Confirm
 * [!UICONTROL Page] pathing dimension
 * [!UICONTROL Visit] container
  
-If “Limit to first/last occurrence” is disabled, then this single series of hits would count 2 occurrences of “Add to Cart”.
+If "Limit to first/last occurrence" is disabled, then this single series of hits would count 2 occurrences of "Add to Cart".
 Expected Flow Output:
-“Add to Cart” (2) —> “Products” (1)
-                  -> “Billing” (1)
+"Add to Cart" (2) —> "Products" (1)
+                  -> "Billing" (1)
  
-However, if “Limit to first/last occurrence” is enabled, only the first occurrence of “Add to cart” would be included in the analysis.
+However, if "Limit to first/last occurrence" is enabled, only the first occurrence of "Add to cart" would be included in the analysis.
 Expected Flow Output:
-“Add to Cart” (1) —> “Products” (1)
+"Add to Cart" (1) —> "Products" (1)
  
 ### Consider the same series of hits but using the following settings:
 
@@ -140,10 +134,10 @@ Expected Flow Output:
 * [!UICONTROL Page] pathing dimension
 * [!UICONTROL Visit] container
  
-If **[!UICONTROL Limit to first/last occurrence]** is *disabled*, then this single series of hits would count 2 occurrences of “Add to Cart”.
+If **[!UICONTROL Limit to first/last occurrence]** is *disabled*, then this single series of hits would count 2 occurrences of "Add to Cart".
 Expected Flow Output:
-“Products” (2) <— “Add to cart” (2)
+"Products" (2) <— "Add to cart" (2)
  
 However, if **[!UICONTROL Limit to first/last occurrence]** is *enabled*, only the last occurrence of [!UICONTROL Add to cart] would be included in the analysis.
 Expected Flow Output:
-“Products” (1) <— “Add to cart” (1)
+"Products" (1) <— "Add to cart" (1)

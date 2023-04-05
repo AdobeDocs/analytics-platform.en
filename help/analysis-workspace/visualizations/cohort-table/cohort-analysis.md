@@ -24,10 +24,7 @@ Examples of what you can do with [!UICONTROL Cohort Analysis]:
 
 >[!IMPORTANT]
 >
->[!UICONTROL Cohort Analysis]
->
->does not support non-filterable metrics (including calculated metrics), non-integer metrics (such as Revenue), or Occurrences. Only metrics that can be used in filters can be used in
->[!UICONTROL Cohort Analysis], and they can only be incremented by 1 at a time. 
+>[!UICONTROL Cohort Analysis] does not support non-filterable metrics (including calculated metrics), non-integer metrics (such as Revenue), or Occurrences. Only metrics that can be used in filters can be used in [!UICONTROL Cohort Analysis], and they can only be incremented 1 at a time. 
 
 ## Cohort Analysis capabilities
 
