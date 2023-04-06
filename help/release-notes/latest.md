@@ -4,9 +4,9 @@ description: Latest CJA release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 ---
-# Current Customer Journey Analytics (CJA) release notes (March 2023)
+# Current Customer Journey Analytics (CJA) release notes (April 2023)
 
-**Last update**: March 10, 2023
+**Last update**: April 6, 2023
 
 Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -14,23 +14,21 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 
 | Feature | Description | [Start of Rollout](/help/release-notes/releases.md) | [General Availability](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **Data Dictionary in Analysis Workspace** | The Data Dictionary helps both users and administrators keep track of and better understand the components (dimensions, metrics) in their CJA environment. [Learn more](/help/components/data-dictionary/data-dictionary-overview.md) | March 8, 2023 | March 29, 2023 |
-| **Data Stories in Mobile Dashboards** | Data Stories let you add multiple customizable detail views to tiles in Mobile Scorecard projects. Use data stories to dive deeper into key drivers, related metrics, and different steps along the customer journey. You can easily swipe through these views to understand the whole story behind your key metrics. [Learn more](/help/mobile-app/create-scorecard.md#create-data-story) | N/A | March 8, 2023 |
-| **Expiration dates for scheduled projects** |  You can set maximum expiration dates for scheduled projects to up to one year, regardless of schedule frequency. [Learn more](/help/analysis-workspace/curate-share/t-schedule-report.md) |  N/A |  March 8, 2023 |
+| **Row/column filtering for Analytics Source Connector streaming** | The Analytics Source Connector in Adobe Experience Platform now allows for filtering of Analytics data which is used to populate profiles in [Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en). Row-level filtering helps reduce the number of events associated with profiles. Column-level filtering helps reduce the richness of the events themselves, thus enabling you to optimize the use of profile entitlements. This filtering applies only to data sent to Real-Time Customer Profile and [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en). **Filtering does not impact the data which is sent to Data Lake for use in applications such as Customer Journey Analytics**. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en#filtering-for-profile) | N/A | March 29, 2023 |
+| **Data Dictionary in Analysis Workspace** | The Data Dictionary helps both users and administrators keep track of and better understand the components (dimensions, metrics) in their CJA environment. [Learn more](/help/components/data-dictionary/data-dictionary-overview.md) | March 8, 2023 | **Temporarily unavailable** |
 | **Link sharing for projects (no login required) - Private beta access only** | You can now share read-only links to Analysis Workspace projects with people who don't have access to CJA. You can share project links with people outside of your organization, or those within your organization who are not provisioned for CJA. [Learn more](/help/analysis-workspace/curate-share/share-projects.md)<p>To join the private beta, contact your Adobe Account Team. | April 26, 2023 | June 2023 |
-| **Panel date range updates** |  In Workspace, we added the following improvements:<ul><li>Starting with the February release, dimension items and data previews are based on the panel date range and not the last 90 days. </li><li>All dimension items listed are based on data within the panel date range. If a dimension item has data outside the date range, you can show additional data beyond the date range at the bottom of the list.</li><li>Dimensions that don't have data can be displayed in the left rail. Click the show more options to view dimension items with data outside the panel date range.</li><li>Data previews in the segment and calculated metric builders are based on the panel date range unless accessed from the component managers, which don't have an associated panel and are still based on the last 90 days.</li><li>Data previews display data or components based on the panel date range.</li></ul>| N/A | February 8, 2023 |
 
 {style="table-layout:auto"}
   
 ## Fixes in Customer Journey Analytics
 
-AN-309729; AN-309975; AN-311779; AN-313095
+AN-313118; AN-313390; AN-314135; AN-316381; AN-316811
 
 ## Important notices for CJA Administrators
 
 | Notice | Notice added or updated | Description |
 | --- | --- | --- |
-| Analytics Source Connector availability | February 15, 2023 |  On February 28, 2023, the Analytics Source Connector was made available in the new Adobe Experience Platform data center located in Canada. |
+| N/A | N/A | N/A |
 
 {style="table-layout:auto"}
 
