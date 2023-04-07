@@ -166,13 +166,6 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Download PDF or CSV files](../analysis-workspace/curate-share/download-send.md)
         + [Schedule projects](../analysis-workspace/curate-share/t-schedule-report.md)
 
-    +   Attribution IQ {#attribution}
-        + [Attribution overview](../analysis-workspace/attribution/overview.md)
-        + [Attribution models and lookback windows](../analysis-workspace/attribution/models.md)
-        + [Algorithmic attribution](../analysis-workspace/attribution/algorithmic.md)
-        + [Attribution best practices](../analysis-workspace/attribution/best-practices.md)
-        + [FAQ](../analysis-workspace/attribution/faq.md)
-
     +   Virtual Analyst {#virtual-analyst}
         +   [Virtual Analyst overview](../analysis-workspace/virtual-analyst/overview.md)
         +   Anomaly Detection {#anomaly-detection}

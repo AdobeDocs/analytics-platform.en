@@ -29,7 +29,7 @@ You can view which products cause most of the calls to your call center and how 
 
 Applying a dimension breakdown of 'Call reason", the example shows a "Damaged Product" dimension item. The next step would be to contact the quality control department and see why customers have been receiving damaged T-shirts.
 
-You can look at which website pages drove calls to the call center. This report lets you know where less-optimal experiences are on the web site and help your Product Managers solve those challenges. The following example uses a calculated metric to filter the data down to only sessions that ended with a call center call. It also uses the "participation" model in CJA’s [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#cja-workspace).
+You can look at which website pages drove calls to the call center. This report lets you know where less-optimal experiences are on the web site and help your Product Managers solve those challenges. The following example uses a calculated metric with a participation attribution model to filter the data down to only sessions that ended with a call center call.
 
 The following example shows that the "Shopping Cart" and "Checkout Information" pages drives most of the calls.
 
