@@ -14,7 +14,7 @@ source,destination
 /docs/analytics-platform/using/cja-usecases/marketing-channels.html,/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html
 /docs/analytics-platform/using/cja-usecases/cross-channel.html,/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel.html
 /docs/analytics-platform/using/cja-usecases/call-center.html,/docs/analytics-platform/using/cja-usecases/cross-channel/call-center.html
-/docs/analytics-platform/using/cja-usecases/data-ingestion.html?lang=en,/docs/analytics-platform/using/cja-usecases/data-ingestion/data-ingestion.html
+/docs/analytics-platform/using/cja-usecases/data-ingestion.html,/docs/analytics-platform/using/cja-usecases/data-ingestion/data-ingestion.html
 /docs/analytics-platform/using/cja-usecases/marketo.html,/docs/analytics-platform/using/cja-usecases/data-ingestion/marketo.html
 /docs/analytics-platform/using/cja-usecases/ingest-aep-segments.html,/docs/analytics-platform/using/cja-usecases/data-ingestion/ingest-aep-segments.html
 /docs/analytics-platform/using/cja-dataviews/data-views-usecases.html,/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases.html
@@ -30,3 +30,8 @@ source,destination
 /docs/analytics-platform/using/cja-overview/consistency-rcdp-cja.html,/docs/analytics-platform/using/troubleshooting/consistency-rcdp-cja.html
 /docs/analytics-platform/using/cja-usecases/object-arrays.html,/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html
 /docs/analytics-platform/using/cja-usecases/b2b.html,/docs/analytics-platform/using/cja-usecases/b2b/b2b.html
+/docs/analytics-platform/using/cja-workspace/attribution/overview.html,/docs/analytics-platform/using/cja-dataviews/component-settings/attribution.html
+/docs/analytics-platform/using/cja-workspace/attribution/models.html,/docs/analytics-platform/using/cja-dataviews/component-settings/attribution.html
+/docs/analytics-platform/using/cja-workspace/attribution/algorithmic.html,/docs/analytics-platform/using/cja-dataviews/component-settings/attribution.html
+/docs/analytics-platform/using/cja-workspace/attribution/best-practices.html,/docs/analytics-platform/using/cja-dataviews/component-settings/attribution.html
+/docs/analytics-platform/using/cja-workspace/attribution/faq.html,/docs/analytics-platform/using/cja-dataviews/component-settings/attribution.html

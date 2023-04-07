@@ -13,14 +13,14 @@ Here is a video on the topic:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
-## Configure a data view {#configure}
+## Configure a data view
 
 1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and go to the **[!UICONTROL Data Views]** tab.
 2. Click **[!UICONTROL Add]** to create a data view, or click on an existing data view to edit it.
 
 ![New data view](assets/new-data-view.png)
 
-### Data view settings {#settings}
+### Data view settings
 
 Provides overarching settings for the data view.
 
@@ -32,7 +32,7 @@ Provides overarching settings for the data view.
 
 {style="table-layout:auto"}
 
-### Containers {#containers}
+### Containers
 
 Designates the name of containers for the data view. Container names are frequently used in [filters](/help/components/filters/filters-overview.md#Filter-containers).
 
@@ -44,7 +44,7 @@ Designates the name of containers for the data view. Container names are frequen
 
 {style="table-layout:auto"}
 
-### Calendar {#calendar}
+### Calendar
 
 Indicates the calendar format that you want the data view to follow. You can have multiple data views based on the same [Connection](/help/connections/create-connection.md) and give them different calendar types or time zones. These data views can allow teams that use different calendar types to accommodate their respective needs with the same underlying data.
 
@@ -58,7 +58,7 @@ Indicates the calendar format that you want the data view to follow. You can hav
 
 {style="table-layout:auto"}
 
-## Set a data view's components {#set-components}
+## Set a data view's components
 
 Next, you can create metrics and dimensions from schema elements. You can also use Standard components.
 
@@ -89,13 +89,13 @@ Next, you can create metrics and dimensions from schema elements. You can also u
    * [[!UICONTROL Persistence]](component-settings/persistence.md)
    * [[!UICONTROL Value bucketing]](component-settings/value-bucketing.md)
 
-## Duplicate metrics or dimensions {#duplicate}
+## Duplicate metrics or dimensions
 
 Duplicating metrics or dimensions and then modifying specific settings is an easy way to create multiple metrics or dimensions from a single schema field. Select the [!UICONTROL Duplicate] setting underneath the metric's or dimensions's name at the top right. Modify the new dimension or metric and save it under a more descriptive name.
 
 ![Duplicate](assets/duplicate.png)
 
-## Filter schema fields or datasets {#filter}
+## Filter schema fields or datasets
 
 You can filter schema fields in the left rail by the following data types:
 
@@ -105,17 +105,17 @@ You can also filter by datasets and by whether a schema field contains data or w
 
 ![Filter other](assets/filter-other.png)
 
-## Settings tab {#settings-tab}
+## Settings tab
 
 1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and go to the **[!UICONTROL Data Views]** tab.
 1. Click **[!UICONTROL Add]** to create a data view, or click on an existing data view to edit it.
 1. Click the **[!UICONTROL Settings]** tab.
 
-### Global filter {#global-filter}
+### Global filter
 
 You can add filters that apply to an entire data view. This filter is applied to any report that you run in Workspace. Drag a filter from the list in the left rail to the [!UICONTROL Add filters] field.
 
-### Session settings {#sessions}
+### Session settings
 
 Determine the time period of inactivity between events before a session expires and a new one is started. A time period is required. You can optionally also force a new session to start when an event contains a certain metric.
 
