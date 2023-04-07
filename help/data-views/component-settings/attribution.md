@@ -52,7 +52,7 @@ A lookback window is the amount of time a conversion should look back to include
 * **60 Days**: Looks back up to 60 days from when the conversion happened.
 * **90 Days**: Looks back up to 90 days from when the conversion happened.
 * **Session**: Looks back up to the beginning of the session where a conversion happened. Session lookback windows respect the modified [Session timeout](../create-dataview.md#session-settings).
-* **Person (Reporting Window)**: Looks at all visits back up to the first of the month of the current date range. For example, if the report date range is September 15 - September 30, the visitor lookback date range includes September 1 - September 30. If you use this lookback window, you can occasionally see dimension items are attributed to dates outside of your reporting window.
+* **Person (Reporting Window)**: Looks at all visits back up to the first of the month of the current date range. For example, if the report date range is September 15 - September 30, the visitor lookback date range includes September 1 - September 30. If you use this lookback window, you can occasionally see that dimension items are attributed to dates outside of your reporting window.
 * **Custom Time:** Allows you to set a custom lookback window from when a conversion happened. You can specify the number of minutes, hours, days, weeks, months, or quarters. For example, if a conversion happened on February 20, a lookback window of five days would evaluate all dimension touchpoints from February 15 to February 20 in the attribution model.
 
 ## Example
