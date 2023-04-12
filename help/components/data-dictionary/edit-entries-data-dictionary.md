@@ -1,8 +1,9 @@
 ---
-description: The Data Dictionary in Analysis Workspace allows users to catalogue and keep track of the various components in Analysis Workspace, including their intended use, which are approved, which are duplicates, and so forth. 
+description: The Data Dictionary in Analysis Workspace allows users to catalogue and keep track of the various components in Analysis Workspace, including their intended use, which are approved, which are duplicates, and so forth.
 title: Edit entries in the Data Dictionary
 feature: Components
 role: Admin
+exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
 ---
 # Edit component entries in the Data Dictionary
 
