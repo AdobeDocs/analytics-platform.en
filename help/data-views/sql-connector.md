@@ -230,7 +230,7 @@ You can use:
   
 -   `SELECT COUNT(DISTINCT dimension)` or `SELECT APPROX_COUNT_DISTINCT(dimension)` to count the approximate distinct values of a dimension. See details in [Counting Distincts](#counting-distincts).
   
--   [Inline Calculations](#inline-calculations) to combining metrics on the fly and/or doing math on them.
+-   [Inline Calculations](#inline-calculations) to combine metrics on the fly and/or doing math on them.
 
 #### Counting Distincts
 
