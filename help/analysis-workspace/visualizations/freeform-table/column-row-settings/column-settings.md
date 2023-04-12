@@ -48,13 +48,13 @@ Conditional formatting applies formatting to upper, midpoint, and lower limits t
 
 ## Use non-default attribution model {#attribution}
 
-Analysis Workspace supports [attribution](/help/analysis-workspace/attribution/overview.md) for almost any metric. 
+Allows you to override the default attribution model set in [Data views](/help/data-views/component-settings/attribution.md).
 
 1. Click the Settings (gear) icon in a Freeform Table column.
 
    ![Attribution checkbox](assets/attribution-checkbox.png)
 
-1. Under **[!UICONTROL Data Settings]**, check **[!UICONTROL Use non-default attribution model]**. For more information on different attribution models, see [Attribution models](/help/analysis-workspace/attribution/models.md).
+2. Under **[!UICONTROL Data Settings]**, check **[!UICONTROL Use non-default attribution model]**. For more information on different attribution models, see [Attribution models](/help/data-views/component-settings/attribution.md).
 
    ![Select attribution model](assets/attribution-select.png)
 

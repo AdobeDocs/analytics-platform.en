@@ -111,11 +111,11 @@ Here, we see the lead time to conversion when a touchpoint is in the mix. It hel
 
 ![Lead time](assets/lead-time.png)
 
-## Differences between Attribution AI and Attribution IQ
+## Differences between Attribution AI and CJA's attribution capabilites
 
-So when should you use Attribution AI data versus [Attribution IQ](/help/analysis-workspace/attribution/overview.md), a native CJA capability? This table shows some of the differences in functionality:
+The following table shows some of the differences in functionality:
 
-| Functionality | Attribution AI | Attribution IQ |
+| Functionality | Attribution AI | CJA attribution |
 | --- | --- | --- |
 | Does incremental attribution | Yes | No |
 | Allows users to adjust model | Yes | Yes |

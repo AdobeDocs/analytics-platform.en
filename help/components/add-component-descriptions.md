@@ -3,6 +3,7 @@ description: Administrators can add descriptions for components using either the
 title: Add component descriptions
 feature: Components
 role: Admin
+exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
 ---
 # Add component descriptions
 
