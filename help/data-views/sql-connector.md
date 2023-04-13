@@ -21,8 +21,8 @@ The main benefits are:
 
 To use this functionality, you have to 
 
-* Enable the [!UICONTROL CJA SQL Connector] in your Experience Platform organization. 
-* Configure the functionality for the relevant product profiles, user groups and/or individual users. [Rob, do you know which specific permissions aare needed?] <br/>Refer to [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=en) documentation for more information.
+- Enable the [!UICONTROL CJA SQL Connector] in your Experience Platform organization. 
+- Configure the functionality for the relevant product profiles, user groups and/or individual users. [Rob, do you know which specific permissions aare needed?] <br/>Refer to [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=en) documentation for more information.
 
 ## Usage
 
@@ -218,21 +218,21 @@ The dimensions available to select are any of the dimensions available by defaul
 
 The metrics available to select are: 
 
-* any of the metrics available by default,
+- any of the metrics available by default,
   
-* defined in the data view,
+- defined in the data view,
   
-* calculated metrics that are compatible with the Data View that the user has access to.  
+- calculated metrics that are compatible with the Data View that the user has access to.  
  
 You select a metric by its ID wrapped in a `SUM(metric)` expression just like you would do with other SQL sources.
 
 You can use:
 
-* `SELECT COUNT(*)` or `COUNT(1)` to get the occurrences metric.
+- `SELECT COUNT(*)` or `COUNT(1)` to get the occurrences metric.
   
-* `SELECT COUNT(DISTINCT dimension)` or `SELECT APPROX_COUNT_DISTINCT(dimension)` to count the approximate distinct values of a dimension. See details in [Counting Distincts](#counting-distincts).
+- `SELECT COUNT(DISTINCT dimension)` or `SELECT APPROX_COUNT_DISTINCT(dimension)` to count the approximate distinct values of a dimension. See details in [Counting Distincts](#counting-distincts).
   
-* [Inline Calculations](#inline-calculations) to combine metrics on the fly and/or doing math on them.
+- [Inline Calculations](#inline-calculations) to combine metrics on the fly and/or doing math on them.
 
 #### Counting Distincts
 
@@ -273,11 +273,11 @@ You can apply additional to metric expressions in your `SELECT` instead of havin
 The `timestamp` special column is used to provide the date ranges for the query. A date range can be defined with a `BETWEEN` expression or a pair of `timestamp` `>`, `>=`, `<`, `<=` checks `AND`ed together.
 The `timestamp` is optional and if no full range is provided, defaults are used:
 
-* If only a minimum is provided (`timestamp > X` or ` timestamp >= X`), the range is from X to now.
+- If only a minimum is provided (`timestamp > X` or ` timestamp >= X`), the range is from X to now.
   
-* If only a max is provided (`timestamp < X` or `timestamp <= X`), the range is from X-30 days to X.
+- If only a max is provided (`timestamp < X` or `timestamp <= X`), the range is from X-30 days to X.
   
-* If nothing is provided the range is from now-30 days to now.
+- If nothing is provided the range is from now-30 days to now.
 
 The timestamp range is converted to a date-range global filter in the RankedRequest.
 The timestamp field can also be used in Date-Time functions to parse, truncate the event timestamp.
@@ -309,11 +309,15 @@ By default, the query sorts the results by the first selected metric in descendi
 
 You can also flip the order by using `-` (minus) in front of the metric. Both statements below result in the same ordering:
 
-```sql
-ORDER BY metric1 ASC
 ```
-```sql
+sql
+ORDER BY metric1 ASC
+
+```
+```
+sql
 ORDER BY -metric1 DESC
+
 ```
 
 ### General Function Support
