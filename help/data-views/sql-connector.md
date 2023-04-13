@@ -6,21 +6,23 @@ feature: Data Views
 ---
 # SQL Connector
 
-The Customer Journey Analytics (CJA) SQL Connector for Data Views enables SQL access to the [Data Views](./data-views.md) you have defined in CJA. Data engineers and analysts, more familiar with Power BI and/or Tableau, can now create reporting and dashboards based on the same data views that CJA users are using when creating their Analysis Workspace projects.
+The Customer Journey Analytics (CJA) SQL Connector for Data Views enables SQL access to the [Data Views](./data-views.md) you have defined in CJA. Data engineers and analysts who are more familiar with Power BI and/or Tableau can now create reporting and dashboards based on the same data views that CJA users are using when creating their Analysis Workspace projects.
 
-Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)  is the SQL interface to data available in the data lake of Experience Platform. With the CJA SQL Connector for Data Views enabled, the functionality of Query Service is extended to see your CJA Data Views as tables / views in a Query Service session. As a result, BI tools (like Power BI and/or Tableau), that use Query Service as their PostgresSQL interface, benefit seamlessly from this extended functionality.
+Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) is the SQL interface to data available in the data lake of Experience Platform. With the [!UICONTROL CJA SQL Connector for Data Views] enabled, the functionality of Query Service is extended to see your CJA Data Views as tables or views in a Query Service session. As a result, BI tools (like Power BI and/or Tableau) that use Query Service as their PostgresSQL interface benefit seamlessly from this extended functionality.
 
 The main benefits are:
 
--   No need to recreate an equivalent representation of CJA Data Views within the BI tool itself.  <br/>
+-   No need to recreate an equivalent representation of CJA data views within the BI tool itself.  <br/>
     Without the CJA SQL Connector, such a representation would typically be created using Query Service accessing datasets in the Adobe Experience Platform data lake.
 
--   Greater consistency in the reporting and analysis between BI tools and CJA.
+-   Greater consistency in reporting and analysis between BI tools and CJA.
 
->[!NOTE]
->
->To use this functionality, you have to enable the CJA SQL Connector in your Experience Platform organization. Once enabled, configure the functionality for the relevant product profiles, user groups and/or individual users. <br/>Refer to [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=en) documentation for more information.
+## Prerequisites
 
+To use this functionality, you have to 
+
+- Enable the [!UICONTROL CJA SQL Connector] in your Experience Platform organization. 
+- Configure the functionality for the relevant product profiles, user groups and/or individual users. [Rob, do you know which specific permissions aare needed?] <br/>Refer to [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=en) documentation for more information.
 
 ## Usage
 
@@ -61,7 +63,7 @@ In the Experience Platform UI:
 
 ### BI Tools
 
-Currently the CJA SQL Connector is supported for Power BI and Tableau.
+Currently, the CJA SQL Connector is supported for Power BI and Tableau.
 
 +++ Power BI
 
@@ -137,11 +139,11 @@ Currently the CJA SQL Connector is supported for Power BI and Tableau.
 
         7.  Select **[!UICONTROL **Sign In**]**.
 
-    4.  The CJA Data Views show up as tables in the **[!UICONTROL **Table**]** list. Data View tables are prefixed with `dv_`.
+    4.  CJA data views show up as tables in the **[!UICONTROL **Table**]** list. Data view tables are prefixed with `dv_`.
    
     5.  Drag the tables that you want to use on the canvas.
 
-    You can now work with the data from the Data View tables to build your reports and visualizations.
+    You can now work with the data from the data view tables to build your reports and visualizations.
 
     See [Connect Tableau to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=en) for more information.
 
@@ -149,9 +151,9 @@ Currently the CJA SQL Connector is supported for Power BI and Tableau.
 
 ## Functionality
 
-By default your Data Views have a table-safe name generated from their friendly name. For example, the Data View named [!UICONTROL My Web Data] has the view name `dv_my_web_data`.  
+By default, your data views have a table-safe name generated from their friendly name. For example, the data view named [!UICONTROL My Web Data] has the view name `dv_my_web_data`.  
 
-If you want to use the Data View IDs as the table names, you can add the optional `CJA_USE_IDS` setting to your database name when connecting. For example, `prod:all?CJA_USE_IDS` shows your Data Views with names like `dv_ABC123`.
+If you want to use the data view IDs as the table names, you can add the optional `CJA_USE_IDS` setting to your database name when connecting. For example, `prod:all?CJA_USE_IDS` shows your data views with names like `dv_ABC123`.
 
 ### List Data Views
 
@@ -180,7 +182,7 @@ prod:all=> \dv
 
 ### Nested versus flattened
 
-By default the schema of your Data Views use nested structures, just like the original XDM schemas. The integration also supports the `FLATTEN` option. You can use this option to force the schema for the Data Views (and any other table in the session) to be flattened. Flattening allows for easier use in BI tools that don't support structured schemas. See [Working with nested data structures in Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) for more information.
+By default, the schema of your data views uses nested structures, just like the original XDM schemas. The integration also supports the `FLATTEN` option. You can use this option to force the schema for the data views (and any other table in the session) to be flattened. Flattening allows for easier use in BI tools that don't support structured schemas. See [Working with nested data structures in Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) for more information.
 
 ### Supported SQL
 
@@ -210,31 +212,31 @@ See Patterns table below for an overview of patterns and examples.
 
 ### Dimensions
 
-The dimensions available to select are any of the dimensions available by default or defined in the Data View. You select a dimension by its ID.
+The dimensions available to select are any of the dimensions available by default or defined in the data view. You select a dimension by its ID.
 
 ### Metrics
 
 The metrics available to select are: 
 
--   any of the metrics available by default,
+- any of the metrics available by default,
   
--   defined in the Data View,
+- defined in the data view,
   
--   calculated metrics that are compatible with the Data View that the user has access to.  
+- calculated metrics that are compatible with the Data View that the user has access to.  
  
 You select a metric by its ID wrapped in a `SUM(metric)` expression just like you would do with other SQL sources.
 
 You can use:
 
--   `SELECT COUNT(*)` or `COUNT(1)` to get the occurrences metric.
+- `SELECT COUNT(*)` or `COUNT(1)` to get the occurrences metric.
   
--   `SELECT COUNT(DISTINCT dimension)` or `SELECT APPROX_COUNT_DISTINCT(dimension)` to count the approximate distinct values of a dimension. See details in [Counting Distincts](#counting-distincts).
+- `SELECT COUNT(DISTINCT dimension)` or `SELECT APPROX_COUNT_DISTINCT(dimension)` to count the approximate distinct values of a dimension. See details in [Counting Distincts](#counting-distincts).
   
--   [Inline Calculations](#inline-calculations) to combine metrics on the fly and/or doing math on them.
+- [Inline Calculations](#inline-calculations) to combine metrics on the fly and/or doing math on them.
 
 #### Counting Distincts
 
-Due to the underlying nature of how CJA works, the only dimension you can get an exact distinct count for is the `adobe_personid` dimension. The following SQL statements `SELECT COUNT(DISTINCT adobe_personid)` or `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` returns the value of the default visitors metric which is the count of distinct people. For other dimensions, an approximate distinct count is returned.
+Due to the underlying nature of how CJA works, the only dimension you can get an exact distinct count for is the `adobe_personid` dimension. The following SQL statements `SELECT COUNT(DISTINCT adobe_personid)` or `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` return the value of the default visitors metric which is the count of distinct people. For other dimensions, an approximate distinct count is returned.
 
 #### Conditional Metrics
 
@@ -271,12 +273,11 @@ You can apply additional to metric expressions in your `SELECT` instead of havin
 The `timestamp` special column is used to provide the date ranges for the query. A date range can be defined with a `BETWEEN` expression or a pair of `timestamp` `>`, `>=`, `<`, `<=` checks `AND`ed together.
 The `timestamp` is optional and if no full range is provided, defaults are used:
 
--   If only a minimum is provided (`timestamp > X` or ` timestamp >= X`), the range is from X to now.
+- If only a minimum is provided (`timestamp > X` or ` timestamp >= X`), the range is from X to now.
   
--   If only a max is provided (`timestamp < X` or `timestamp <= X`), the range is from X-30 days to X.
+- If only a max is provided (`timestamp < X` or `timestamp <= X`), the range is from X-30 days to X.
   
--   If nothing is provided the range is from now-30 days to now.
-
+- If nothing is provided the range is from now-30 days to now.
 
 The timestamp range is converted to a date-range global filter in the RankedRequest.
 The timestamp field can also be used in Date-Time functions to parse, truncate the event timestamp.
@@ -292,28 +293,32 @@ The `filterId` special column is optional and is used to apply an externally def
 
 ### WHERE Clause
 
-The WHERE clause handling is done in three steps:
+The WHERE clause is handled in three steps:
 
-1.  Finding the date range from the `timestamp` special field.
+1.  Find the date range from the `timestamp` special field.
   
-2.  Finding any externally defined `filterId`s to include in the filtering.
+1.  Find any externally defined `filterId`s to include in the filtering.
 
-3.  Turn the remaining expressions into ad-hoc filters.
+1.  Turn the remaining expressions into ad-hoc filters.
 
-
-The handing is done by parsing the first level of `AND`s in the `WHERE` clause. Each top-level `AND`ed expression must match one of the above. Anything deeper than the first level of `AND`s, or, if the `WHERE` clause uses `OR`s at the top level, is handled as an ad-hoc filter.
+The handling is done by parsing the first level of `AND`s in the `WHERE` clause. Each top-level `AND`ed expression must match one of the above. Anything deeper than the first level of `AND`s, or, if the `WHERE` clause uses `OR`s at the top level, is handled as an ad-hoc filter.
 
 ### ORDER BY
 
-By default the query sorts the results by the first selected metric in descending order. You can overwrite the default sorting order by specifying `ORDER BY ... ASC` or `ORDER BY ... DESC`. If you use `ORDER BY`, you must specify `ORDER BY` on the first selected metric.  
+By default, the query sorts the results by the first selected metric in descending order. You can overwrite the default sorting order by specifying `ORDER BY ... ASC` or `ORDER BY ... DESC`. If you use `ORDER BY`, you must specify `ORDER BY` on the first selected metric.  
 
 You can also flip the order by using `-` (minus) in front of the metric. Both statements below result in the same ordering:
 
-```sql
-ORDER BY metric1 ASC
 ```
-```sql
+sql
+ORDER BY metric1 ASC
+
+```
+
+```
+sql
 ORDER BY -metric1 DESC
+
 ```
 
 ### General Function Support
