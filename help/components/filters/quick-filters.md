@@ -50,13 +50,13 @@ To create a quick filter:
    | [!UICONTROL Name] | The default name of a filter is a combination of the rule names in the filter. You can rename the filter to a more friendly name. |
    | [!UICONTROL Include/exclude] | You can either include or exclude components in your filter definition, but not both. |
    | [!UICONTROL Hit/Visit/Visitor] container | Quick filters include one [filter container](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html#filter-containers) only that lets you include a dimension/metric/date range in (or exclude it from) the filter. [!UICONTROL Visitor] contains overarching data specific for the visitor across visits and page views. A [!UICONTROL Visit] container lets you set rules to break down the visitor's data based on visits, and a [!UICONTROL Hit] container lets you break down visitor information based on individual page views. The default container is [!UICONTROL Hit]. |
-   | [!UICONTROL Components] (Dimension/metric/date range) | Define up to 3 rules by adding components (dimensions, metrics, date ranges, or dimension values). There are 3 ways to find the right component:<ul><li>Start typing and the [!UICONTROL Quick Filter] builder automatically finds the appropriate component.</li><li>Use the drop-down list to find the component.</li><li>Drag and drop components from the left rail.</li></ul>  |
+   | [!UICONTROL Components] (Dimension/metric/date range) | Define up to 3 rules by adding components (dimensions, metrics, date ranges, or dimension values). There are 3 ways to find the right component:<ul><li>Start typing and the quick filter builder automatically finds the appropriate component.</li><li>Use the drop-down list to find the component.</li><li>Drag and drop components from the left rail.</li></ul>  |
    | [!UICONTROL Operator] | Use the drop-down menu to find standard operators and [!UICONTROL Distinct Count] operators. See [Filter operators](operators.md). |
    | Plus (+) sign | Add another rule |
    | AND/OR qualifiers | You can add "AND" or "OR" qualifiers to the rules, but you cannot mix "AND" and "OR" in a single filter definition. |
-   | [!UICONTROL Apply] | Apply this filter to the panel. If the filter contains no data, you will be asked if you want to continue. |
-   | [!UICONTROL Open builder] | Opens the Filter Builder. Once you save or apply the filter in the Filter Builder, it is no longer considered a "Quick Filter". It becomes part of the component-list filter library. <p>**Note:** This option is available only to users with the Filter Creation permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools).</p> |
-   | [!UICONTROL Cancel] | Cancel this quick filter - don't apply it. |
+   | [!UICONTROL Apply] | Apply this filter to the panel. If the filter contains no data, you are asked if you want to continue. |
+   | [!UICONTROL Open builder] | Opens the Filter Builder. After you save or apply the filter in the Filter Builder, it is no longer considered a "Quick Filter". It becomes part of the component-list filter library. <p>To make the component available across all of your projects and in the left rail, select the option [!UICONTROL **Make this filter available to all your projects and add it to your component list**].</p><p>For more information, see the section [Save a quick filter as a component-list filter](#save-a-quick-filter-as-a-component-list-filter) in this article.</p><p>**Note:** Only users with the Filter Creation permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools) can open the Filter Builder.</p> |
+   | [!UICONTROL Cancel] | Cancel this quick filter (don't apply it). |
    | [!UICONTROL Date range] | The validator uses the panel date range for its data lookup. But any date range applied in a quick filter overrides the panel date range at the top of the panel.  |
    | Preview (top right) | Lets you see whether you have a valid filter and how broad the filter is. Represents the breakdown of the data set you can expect to see when you apply this filter. You might get a notice that indicates that this filter has no data. In this case, you can proceed or change the filter definition. |
 
@@ -95,7 +95,7 @@ You can save filters either from the Quick Filter Builder or from the [!UICONTRO
 1. (Optional) Rename the filter.
 1. Select **[!UICONTROL Save]**.
 
-   The filter now appears in your component list in the left rail. Also, note that the filter's side bar changes from striped blue to a lighter blue, indicating that it can no longer be edited or opened in the quick filter builder.
+   The filter now appears in your component list in the left rail. Also, note that the filter's side bar changes from light blue to a darker blue, indicating that it can no longer be edited or opened in the quick filter builder.
 
 ### Save in the Filter Builder {#save3}
 
@@ -103,7 +103,7 @@ You can save filters either from the Quick Filter Builder or from the [!UICONTRO
 1. Select **[!UICONTROL Save filter]**
 1. (Optional) Rename the filter, then select [!UICONTROL **Apply**].
 
-   Go back to Workspace and note that the filter's side bar changes from striped blue to a lighter blue, indicating that it can no longer be edited or opened in the quick filter builder. And by saving it, it becomes part of the component list.
+   Go back to Workspace and note that the filter's side bar changes from light blue to a darker blue, indicating that it can no longer be edited or opened in the quick filter builder. And by saving it, it becomes part of the component list.
 
    ![Filter component list](assets/quick-seg4.png)
 
@@ -125,26 +125,4 @@ After you apply the filter, you can choose to add it to your filter component li
 The following example of a filter combines dimensions and metrics:
 
 ![Filter definition example](assets/quick-seg2.png)
-
-The filter appears at the top. Notice its blue-striped sidebar, as opposed to the blue sidebar for component-level filters in the filter library on the left.
-
-![Filter component locations](assets/quick-seg3.png)
-
-## What are project-only filters? {#project-only}
-
-(Delete this section)
-
-Project-only filters are filters that only apply to the current project they were created in. They are not available in other projects and cannot be shared to other users. They are intended for quick exploration of your data without having to create and save a filter in the left rail. Project-only filters can be created in the panel drop zone either with Quick filters or [ad hoc filters](/help/components/filters/ad-hoc-filters.md). 
-
-If you open a project-only filter in the [!UICONTROL Filter Builder], a project-only notification appears. If you do not check "Make this filter available.." and click **[!UICONTROL APPLY]**, the segment remains a project-only filter. 
-
->[!NOTE]
->
->If you apply a Quick filter from the Filter Builder, it can no longer be opened in the [!UICONTROL Quick Filter Builder]. 
-
-![Project only unchecked](assets/project-only-unchecked.png)
-
-If you check "Make this filter available.." and click **[!UICONTROL SAVE]**, the filter becomes available in the left rail component list for use in other projects. It can also be shared with other users from the Filter Manager.
-
-![Project only checked](assets/project-only-checked.png)
 
