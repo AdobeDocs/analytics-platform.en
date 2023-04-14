@@ -15,6 +15,7 @@ The following updates were made to the CJA documentation since its inception.
 | --- | --- |
 | **April 2023** |  |
 | Update to Experimentation panel documentation | Added a section on [interpreting non-randomized dimensions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
+| Project filters (Ad hoc and quick filters) | Streamlined docmentation about project filters and removed duplicated information. The steps for creating ad hoc filters are now combined with the steps for [creating quick filters](/help/components/filters/quick-filters.md).|
 | **March 2023** | |
 | Integrate Decision Management data | Added content explaining how to [integrate Adobe Journey Optimizer Decision Management data in CJA](/help/integrations/ajo-od.md). |
 | Create data stories in mobile scorecards | A [data story](/help/mobile-app/create-scorecard.md#create-data-stories) is a collection of supporting data points, business context, and related metrics built around a central theme or metric. |
