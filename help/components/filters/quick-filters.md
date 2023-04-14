@@ -86,7 +86,7 @@ You can choose to save quick filters as component-list filters. Advantages of co
 * Availablility across all your Workspace projects
 * Support more complex filters as well as sequential filters
 
-You can save filters either from the Quick Filter Builder or from the [!UICONTROL Filter Builder].
+You can save filters either from the quick filter builder or from the [!UICONTROL Filter Builder].
 
 ### Save in the quick filter builder {#save2}
 
@@ -111,12 +111,16 @@ After you apply the filter, you can choose to add it to your filter component li
 
 1. Hover over the saved filter and select the pencil icon.
 
+1. Select [!UICONTROL **Open builder**].
+
 1. At the top of the Filter Builder, notice this dialog:
 
-   ![Filter dialog](assets/project-only.png)
+   ![Filter dialog](assets/project-only-filter-dialog.png)
 
-1. Select the checkbox next to **[!UICONTROL Make available to all your projects and add to your component list.]**
+1. Select the checkbox next to **[!UICONTROL Make this filtr available to all your projects and add it to your component list.]**
+
 1. Select **[!UICONTROL Save]**.
+   
    The filter now appears in your filter component list for all your projects.
    You can also [share the filter](/help/components/filters/manage-filters.md) with other people in your organization.
 
