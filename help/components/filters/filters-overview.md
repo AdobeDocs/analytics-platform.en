@@ -12,20 +12,13 @@ Filters can be based on attributes (browser type, device, number of visits, coun
 
 You can build and save filters in the Filter Builder, or generate filters from a Fallout visualization (in Workspace). In addition, filters can be used together as stacked filters. 
 
-Filtering includes the [Filter Builder](/help/components/filters/create-filters.md) to construct filters and run a pre-test, and the [Filter Manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
+Filtering includes the [Filter Builder](/help/components/filters/filter-builder.md) to construct filters and run a pre-test, and the [Filter Manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
 
 The maximum number of filters you can create per IMS organization is 50,000.
 
 ## Filter types {#types}
 
-You can create different types of filters in Workspace and the Filter Builder, depending on how complex they need to be, whether they should apply to this project only, etc. Here is a summary of filter types:
-
-| Filter type | Created where? | Applicable where? | When to use |
-| --- | --- | --- | --- |
-| Component-list filter | Click +, which takes you to the [Filter Builder](/help/components/filters/create-filters.md) | All your Workspace projects | For more complex filters, sequential filters |
-| Quick filter | [Quick filter builder](/help/components/filters/quick-filters.md) | Project only, but can save and add to your segment list. | Can be used for ad hoc single-rule filters (with drag-and-drop), or to add/edit multiple rules (by clicking the Filter icon) |  
-| Filters in fallout analysis |  [Fallout visualization](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) in Analysis Workspace | To individual fallout visualizations | Create filters from a touchpoint, add filters as touchpoint, and compare key workflows across various filters |
-| Calculated metrics-based filter | [Calculated metric builder](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | To individual calculated metric | Apply filter/s within your metric definition |
+For information about the available types of filters available and how to create them, see [Create filters](/help/components/filters/create-filters.md). 
 
 ## Sequential filters {#sequential}
 

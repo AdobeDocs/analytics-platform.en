@@ -205,9 +205,10 @@ breadcrumb-title: Customer Journey Analytics Guide
     +   [Metrics](../components/apply-create-metrics.md)
     +   Filters {#cja-filters}
         + [Filters overview](../components/filters/filters-overview.md)
-        + [Create a filter](../components/filters/create-filters.md)
-        + [Manage filters](../components/filters/manage-filters.md)
+        + [Create filters](../components/filters/create-filters.md)
         + [Quick filters](../components/filters/quick-filters.md)
+        + [Filter builder](../components/filters/filter-builder.md)
+        + [Manage filters](../components/filters/manage-filters.md)
         + [Operators](../components/filters/operators.md)
     +   Calculated Metrics {#cja-calcmetrics}
         +   [Calculated metrics overview](../components/calc-metrics/calc-metr-overview.md)
