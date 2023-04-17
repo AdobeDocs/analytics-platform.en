@@ -16,7 +16,7 @@ You can access the Filter builder in any of the following ways:
 
 * **Analytics top navigation**: Click **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]**.
 * **[!UICONTROL Analysis Workspace]**: With a project open in Analysis Workspace, select **[!UICONTROL + Components]** > **[!UICONTROL Create filter]**.
-* **[!UICONTROL Reports & Analytics]**: Click **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, open an existing report and click the **Filter** icon  ![](assets/segment_icon.png) in the left navigation, then click **[!UICONTROL Add]**.
+* **[!UICONTROL Reports & Analytics]**: Click **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, open an existing report and click the **Filter** icon in the left navigation, then click **[!UICONTROL Add]**.
 * **[!UICONTROL Report Builder]**: [Add or edit filters in Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/data-requests/segmentation.html).
 
 ## Builder criteria overview {#section_F61C4268A5974C788629399ADE1E6E7C}
@@ -27,9 +27,9 @@ You can add rule definitions and containers to define your filters. (For informa
 
 1. **[!UICONTROL Title]**: Name the filter.
 1. **[!UICONTROL Description]**: Provide a description for the filter. 
-1. **[!UICONTROL Tags]**: [Tag the filter](/help/components/segmentation/segmentation-workflow/seg-workflow.md) you are creating by picking from a list of existing tags or creating a new tag.
-1. **[!UICONTROL Definitions]**: This is where you [build and configure filters](/help/components/segmentation/segmentation-workflow/seg-workflow.md), add rules, and nest and sequence containers. 
-1. **[!UICONTROL Show]**: (Top Container selector.) Lets you select the top-level [container](/help/components/segmentation/seg-overview.md) ( [!UICONTROL Person], [!UICONTROL Session], [!UICONTROL Event]). The default top-level container is the Event container.
+1. **[!UICONTROL Tags]**: [Tag the filter](/help/components/filters/manage-filters.md) you are creating by picking from a list of existing tags or creating a new tag.
+1. **[!UICONTROL Definitions]**: This is where you [build and configure filters](/help/components/filters/filters-overview.md), add rules, and nest and sequence containers. 
+1. **[!UICONTROL Show]**: (Top Container selector.) Lets you select the top-level [container](/help/components/filters/filters-overview.md) ( [!UICONTROL Person], [!UICONTROL Session], [!UICONTROL Event]). The default top-level container is the Event container.
 1. **[!UICONTROL Options]**: (gear) icon
 
    * **[!UICONTROL + Add container]**: Lets you add a new container (below the top-level container) to the filter definition.
@@ -53,12 +53,12 @@ You can add rule definitions and containers to define your filters. (For informa
       |  Repeating  | X  | X  | X  | -  | X  | -  |
       |  Instance  | X  | X  | - | - | X | - |
       |  Non-repeating instance  | X | - | - | -  | X  | -  |
-1. **[!UICONTROL And/Or/Then]**: Assigns the [!UICONTROL AND/OR/THEN] operators between containers or rules. The THEN operator lets you [define sequential filters](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
+1. **[!UICONTROL And/Or/Then]**: Assigns the [!UICONTROL AND/OR/THEN] operators between containers or rules. The THEN operator lets you [define sequential filters](/help/components/filters/filters-overview.md).
 1. **[!UICONTROL Metric]**: (Green sidebar) Metric that was dragged and dropped from the Metrics list.
 1. **[!UICONTROL Comparison]** operator: You can compare and constrain values using selected operators.
 1. **[!UICONTROL Value]**: The value you entered or selected for the dimension or filter or metric.
 1. **[!UICONTROL X]**: (Delete) Lets you delete this part of the filter definition.
-1. **[!UICONTROL Experience Cloud publishing]**: Publishing an Adobe Analytics filter to the Experience Cloud lets you use the filter for marketing activity in [!DNL Audience Manager] and in other activation channels. [Learn more...](/help/components/segmentation/segmentation-workflow/seg-publish.md)
+1. **[!UICONTROL Experience Cloud publishing]**: Publishing an Adobe Analytics filter to the Experience Cloud lets you use the filter for marketing activity in [!DNL Audience Manager] and in other activation channels. [Learn more...](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
 1. **[!UICONTROL Audience library]**: Adobe's audience services manage the translation of visitor data into audience filters. As such, creating and managing audiences is similar to creating and using filters, with the added ability to share the audience filter to the Experience Cloud. [Learn more...](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
 1. **[!UICONTROL Search]**: Searches the list of dimensions, filters, or metrics.
 1. **[!UICONTROL Dimensions]**: (List) Click the header to expand.
@@ -66,7 +66,7 @@ You can add rule definitions and containers to define your filters. (For informa
 1. **[!UICONTROL Filters]**: Click the header to expand.
 1. **[!UICONTROL Report suite selector]**: Lets you select the report suite that this filter will be saved under. You can still utilize the filter in all report suites.
 1. **[!UICONTROL Filter Preview]**: Lets you preview the key metrics to see whether you have a valid filter and how broad the filter is. Represents the breakdown of the data set you can expect to see if you apply this filter. Shows 3 concentric circles and a list to show the number and percentage of matches for [!UICONTROL Event], [!UICONTROL Person], and [!UICONTROL Session] for a filter run against a data set. This chart is updated immediately after you create or make changes to your filter definition.
-1. **[!UICONTROL Product Compatibility]**: Provides a list of which Adobe Analytics products (Analysis Workspace, [!UICONTROL Reports & Analytics], Data Warehouse) with which the filter you created is compatible. Most filters are compatible with all products. However, not all operators and dimensions are compatible with all Analytics products, especially [Data Warehouse](/help/components/segmentation/seg-reference/seg-compatibility.md). This chart is updated immediately after you make changes to your filter definition.
+1. **[!UICONTROL Product Compatibility]**: Provides a list of which Adobe Analytics products (Analysis Workspace, [!UICONTROL Reports & Analytics], Data Warehouse) with which the filter you created is compatible. Most filters are compatible with all products. However, not all operators and dimensions are compatible with all Analytics products, especially [Data Warehouse](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-compatibility.html). This chart is updated immediately after you make changes to your filter definition.
 1. **[!UICONTROL Save]** or **[!UICONTROL Cancel]**: Saves or cancels the filter. After clicking **[!UICONTROL Save]**, you are taken to the Filter Manager where you can manage the filter.
 
 Filters with embedded date ranges continue to operate differently in Analysis Workspace versus [!UICONTROL Reports & Analytics]: In Workspace, a filter with an embedded date range overrides the panel date range. By contrast, [!UICONTROL Reports & Analytics] gives you the intersection of the report date range and the filter's embedded date range.
@@ -77,18 +77,18 @@ Filters with embedded date ranges continue to operate differently in Analysis Wo
 
    ![](assets/drag_n_drop_dimension.png)
 
-1. Set the [operator](/help/components/segmentation/seg-reference/seg-operators.md) from the drop-down menu.
+1. Set the [operator](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-operators.html) from the drop-down menu.
 1. Enter or select a value for the item selected.
 1. Add additional containers if needed, using **[!UICONTROL And]**, **[!UICONTROL Or]**, or **[!UICONTROL Then]** rules.
 1. After placing the containers and setting the rules, see the results of the filter in the validation chart at the top right. The validator indicates the percentage and absolute number of page views, visits, and unique visitors that match the filter you created.
-1. Under **[!UICONTROL Tags]**, [tag](/help/components/segmentation/segmentation-workflow/seg-tag.md) the container by selecting an existing tag or creating a new one.
+1. Under **[!UICONTROL Tags]**, [tag](/help/components/filters/manage-filters.md) the container by selecting an existing tag or creating a new one.
 1. Click **[!UICONTROL Save]** to save the filter.
 
-   You are taken to the [Filter Manager](/help/components/segmentation/segmentation-workflow/seg-manage.md), where you can tag, share, and manage your filter in multiple ways.
+   You are taken to the [Filter manager](/help/components/filters/manage-filters.md), where you can tag, share, and manage your filter in multiple ways.
 
 ## Add containers {#section_1C38F15703B44474B0718CEF06639EFD}
 
-You can [build a framework of containers](/help/components/segmentation/seg-overview.md) and then place logic rules and operators between.
+You can [build a framework of containers](/help/components/filters/filters-overview.md) and then place logic rules and operators between.
 
 1. Click **[!UICONTROL Options > Add container]**.
 
