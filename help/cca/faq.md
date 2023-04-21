@@ -36,7 +36,7 @@ The number of persistent IDs is irrelevant in favor of the transient ID. A singl
 
 ## Once I contact my Adobe Account Team with the desired information, how long does it take for the rekeyed dataset to become available?
 
-Live stitching is available approximately one week after Adobe enables Cross-Channel Analytics. Backfill availability depends on the amount of existing data. Small datasets (less than 1 million events per day) typically take a couple days, while large data sets (1 billion events per day) can take a week or more.
+Live stitching is available approximately one week after Adobe enables Cross-Channel Analytics. Backfill availability depends on the amount of existing data. Small datasets (less than 1 million events per day) typically take a couple days, while large datasets (1 billion events per day) can take a week or more.
 
 ## What is the difference between Cross-Device Analytics (a feature in traditional Analytics) and Cross-Channel Analytics?
 
