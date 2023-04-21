@@ -72,7 +72,7 @@ To create an Adobe Analytics source connector:
     ![Review](./assets/review.png)
 
 
-Once the connection is created, the dataflow is automatically created to populate a dataset with the Adobe Analytics data from your report suite, including the ingestion of up to 13 months of historical data.
+Once the connection is created, the dataflow is automatically created to populate a dataset with the Adobe Analytics data from your report suite, including the ingestion of up to 13 months of historical data for production sandboxes. (Note that beginning April 26, 2023, the backfill in non-production sandboxes is limited to 3 months.)
 
 When the initial ingestion completes, your Adobe Analytics report suite data is ready to be used by Customer Journey Analytics.
 
