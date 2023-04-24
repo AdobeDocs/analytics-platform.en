@@ -273,7 +273,7 @@ You can apply additional to metric expressions in your `SELECT` instead of havin
 The `timestamp` special column is used to provide the date ranges for the query. A date range can be defined with a `BETWEEN` expression or a pair of `timestamp` `>`, `>=`, `<`, `<=` checks `AND`ed together.
 The `timestamp` is optional and if no full range is provided, defaults are used:
 
-- If only a minimum is provided (`timestamp > X` or ` timestamp >= X`), the range is from X to now.
+-   If only a minimum is provided (`timestamp > X` or ` timestamp >= X`), the range is from X to now.
   
 - If only a max is provided (`timestamp < X` or `timestamp <= X`), the range is from X-30 days to X.
   
