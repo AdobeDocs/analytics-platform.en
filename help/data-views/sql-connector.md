@@ -218,21 +218,21 @@ The dimensions available to select are any of the dimensions available by defaul
 
 The metrics available to select are: 
 
-- any of the metrics available by default,
+-   any of the metrics available by default,
   
-- defined in the data view,
+-   defined in the data view,
   
-- calculated metrics that are compatible with the Data View that the user has access to.  
+-   calculated metrics that are compatible with the Data View that the user has access to.  
  
 You select a metric by its ID wrapped in a `SUM(metric)` expression just like you would do with other SQL sources.
 
 You can use:
 
-- `SELECT COUNT(*)` or `COUNT(1)` to get the occurrences metric.
+-   `SELECT COUNT(*)` or `COUNT(1)` to get the occurrences metric.
   
-- `SELECT COUNT(DISTINCT dimension)` or `SELECT APPROX_COUNT_DISTINCT(dimension)` to count the approximate distinct values of a dimension. See details in [Counting Distincts](#counting-distincts).
+-   `SELECT COUNT(DISTINCT dimension)` or `SELECT APPROX_COUNT_DISTINCT(dimension)` to count the approximate distinct values of a dimension. See details in [Counting Distincts](#counting-distincts).
   
-- [Inline Calculations](#inline-calculations) to combine metrics on the fly and/or doing math on them.
+-   [Inline Calculations](#inline-calculations) to combine metrics on the fly and/or doing math on them.
 
 #### Counting Distincts
 
@@ -275,9 +275,9 @@ The `timestamp` is optional and if no full range is provided, defaults are used:
 
 -   If only a minimum is provided (`timestamp > X` or ` timestamp >= X`), the range is from X to now.
   
-- If only a max is provided (`timestamp < X` or `timestamp <= X`), the range is from X-30 days to X.
+-   If only a max is provided (`timestamp < X` or `timestamp <= X`), the range is from X-30 days to X.
   
-- If nothing is provided the range is from now-30 days to now.
+-   If nothing is provided the range is from now-30 days to now.
 
 The timestamp range is converted to a date-range global filter in the RankedRequest.
 The timestamp field can also be used in Date-Time functions to parse, truncate the event timestamp.
@@ -297,9 +297,9 @@ The WHERE clause is handled in three steps:
 
 1.  Find the date range from the `timestamp` special field.
   
-1.  Find any externally defined `filterId`s to include in the filtering.
+2.  Find any externally defined `filterId`s to include in the filtering.
 
-1.  Turn the remaining expressions into ad-hoc filters.
+3.  Turn the remaining expressions into ad-hoc filters.
 
 The handling is done by parsing the first level of `AND`s in the `WHERE` clause. Each top-level `AND`ed expression must match one of the above. Anything deeper than the first level of `AND`s, or, if the `WHERE` clause uses `OR`s at the top level, is handled as an ad-hoc filter.
 
@@ -309,16 +309,12 @@ By default, the query sorts the results by the first selected metric in descendi
 
 You can also flip the order by using `-` (minus) in front of the metric. Both statements below result in the same ordering:
 
-```
-sql
+```sql
 ORDER BY metric1 ASC
-
 ```
 
-```
-sql
+```sql
 ORDER BY -metric1 DESC
-
 ```
 
 ### General Function Support
