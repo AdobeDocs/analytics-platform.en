@@ -32,7 +32,7 @@ When you create or edit a custom field, you use the custom field interface.
 |  | Name | Description
 |---------|----------|--------|
 | 1 | **Selector** | Select and drag and drop your ![Function](assets/Smock_Function_18_N.svg) function, ![Function template](assets/Smock_FileTemplate_18_N.svg) function template, ![Schema field](assets/Smock_Folder_18_N.svg) schema field, or standard field on to the rule builder. <br/>You can search for function, function templates, schema, and standard fields using the Search box. <br/>You can filter the selected object list by selecting Filter and specify filters in the Filter field by dialog. You can easily remove filters using the x for each filter. | 
-| 2 | **Rule builder** | Build your custom field sequentially using one or more rules. Every rule is always associated with only one function. The function type determines the interface of the rule<br/>See the [Rule interface](#rule-interface) for more information. |
+| 2 | **Rule builder** | Build your custom field sequentially using one or more rules. A rule is a specific implementation of a function and is therefor always associated with only one function. The function type determines the interface of the rule.<br/>See the [Rule interface](#rule-interface) for more information. |
 | 3 | **[!UICONTROL **Field Settings**]** | Define the name and description of your custom field. | 
 | 4 | **[!UICONTROL **Final Output**]** | Shows an on-the-fly updated preview of  output values, based on data over the last 30 days and the changes you make to the custom field in the Rule builder. |
 
@@ -185,12 +185,12 @@ In case your site receives the following sample events, containing Referrer and 
 
 Event | Referrer | Page URL | Marketing Channel |
 |:----:|----|----|----|
-| 1 | `https://facebook.com` | <`https://site.com/home`> | Natural Social |
-| 2 | <`https://abc.com`> | <`https://site.com/?cid=ds_12345678`> | Display |
-| 3 | |  <`https://site.com/?cid=em_12345678`> | Email |
-| 4 | <`https://google.com`> | <`https://site.com/?cid=ps_abc098765`> | Paid Search |
-| 5 | <`https://google.com`> | <`https://site.com/?cid=em_765544332`> | Email |
-| 6 | <`https://google.com`> |  | Natural Search |
+| 1 | `https://facebook.com` | `https://site.com/home` | Natural Social |
+| 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | Display |
+| 3 | |  `https://site.com/?cid=em_12345678` | Email |
+| 4 | `https://google.com` | `https://site.com/?cid=ps_abc098765` | Paid Search |
+| 5 | `https://google.com` | `https://site.com/?cid=em_765544332` | Email |
+| 6 | `https://google.com` |  | Natural Search |
 
 {style="table-layout:auto"}
 
@@ -198,20 +198,20 @@ Event | Referrer | Page URL | Marketing Channel |
 
 | Referrer | Page URL |
 |----|----|
-| <`https://facebook.com`> | <`https://site.com/home`> 
-| <`https://abc.com`> | <`https://site.com/?cid=ds_12345678`> 
-|  | <`https://site.com/?cid=em_12345678`>
-| <`https://google.com`> | <`https://site.com/?cid=ps_abc098765`> 
-| <`https://google.com`> | <`https://site.com/?cid=em_765544332`>
-| <`https://google.com`> | 
+| `https://facebook.com` | `https://site.com/home` |
+| `https://abc.com` | `https://site.com/?cid=ds_12345678` |
+|  | `https://site.com/?cid=em_12345678` |
+| `https://google.com` | `https://site.com/?cid=ps_abc098765` |
+| `https://google.com` | `https://site.com/?cid=em_765544332` |
+| `https://google.com` | 
 
 {style="table-layout:auto"}
 
 ### Custom Field
 
-You define a [!UICONTROL Marketing Channel] custom field. You use the **[!UICONTROL CASE WHEN]** rule in Rule Builder. These rules create values for the [!UICONTROL Marketing Channel] custom field based on existing values for both the `Page URL` and `Referring URL` field.
+You define a **[!UICONTROL Marketing Channel]** custom field. You use the **[!UICONTROL CASE WHEN]** functions to define rules that create values for the [!UICONTROL Marketing Channel] custom field based on existing values for both the `Page URL` and `Referring URL` field.
 
-Note the usage of function **[!UICONTROL **URL PARSE**]** to fetch the values for `Page Url` and `Referring Url` before the **[!UICONTROL **CASE WHEN**]** rules are applied.
+Note the usage of the function **[!UICONTROL **URL PARSE**]** to define rules to fetch the values for `Page Url` and `Referring Url` before the **[!UICONTROL **CASE WHEN**]** rules are applied.
 
 ![Concatenate](assets/case-when-1.png)
 
@@ -421,7 +421,7 @@ The desired report should look like:
 
 ### Custom field
 
-You define a new Origin - Destination custom field. You use the [!UICONTROL CONCATENATE] function to concatenate the [!UICONTROL Original] and [!UICONTROL Destination] fields using the `-` [!UICONTROL Delimiter].
+You define a new **[!UICONTROL **Origin - Destination**]** custom field. You use the **[!UICONTROL CONCATENATE]** function to define a rule to concatenate the [!UICONTROL Original] and [!UICONTROL Destination] fields using the `-` [!UICONTROL Delimiter].
 
 ![Concatenate](assets/concatenate.png)
 
@@ -488,7 +488,7 @@ You have received some malformed values for your external marketing channels rep
 
 ### Custom Field
 
-You define a new Email Marketing custom field. You use the **[!UICONTROL FIND AND REPLACE ]**function to find and replace all occurrences of `email%20marketing` with `email marketing`.
+You define a new **[!UICONTROL **Email Marketing**]** custom field. You use the **[!UICONTROL FIND AND REPLACE ]**function to define a rule to find and replace all occurrences of `email%20marketing` with `email marketing`.
 
 ![Concatenate](assets/find-and-replace.png)
 
@@ -569,7 +569,7 @@ You are collecting Hotel ID in a dimension but would like to create a Hotel Name
 
 ### Custom field
 
-You define a new Hotel Name custom field. You use the **[!UICONTROL **LOOKUP**]** function to define a rule where you can look up values of the **[!UICONTROL **Hotel ID**]** field and replace with new values for your Hotel Name custom field.
+You define a new **[!UICONTROL **Hotel Name**]** custom field. You use the **[!UICONTROL **LOOKUP**]** function to define a rule where you can look up values of the **[!UICONTROL **Hotel ID**]** field and replace with new values for your Hotel Name custom field.
 
 ![Lookup 1](assets/lookup-1.png)
 
@@ -599,17 +599,17 @@ Assumptions:
 |---|
 | Home Page | 
 | Flight Search | 
-| <`http://www.expedia.ca/Hotel-Search`> |
-| <`https://www.expedia.com/Package-Search`> |
+| `http://www.expedia.ca/Hotel-Search` |
+| `https://www.expedia.com/Package-Search` |
 | Deals & Offers |
-| <`http://www.expedia.ca/user/reviews`> | 
-| <`https://www.expedia.com.br/Generate-Quote/preview`> |
+| `http://www.expedia.ca/user/reviews` | 
+| `https://www.expedia.com.br/Generate-Quote/preview` |
 
 {style="table-layout:auto"}
 
 ### Custom field
 
-YOu define a new Page Name custom field. You use the **[!UICONTROL **LOOKUP**]** function to define a rule where you can look up values of your existing **[!UICONTROL **Page Name**]** field and replace with new values for your Page Name custom field.
+YOu define a new **[!UICONTROL **Page Name**]** custom field. You use the **[!UICONTROL **LOOKUP**]** function to define a rule where you can look up values of your existing **[!UICONTROL **Page Name**]** field and replace with new values for your Page Name custom field.
 
 ![Lookup 2](assets/lookup-2.png)
 
@@ -662,7 +662,7 @@ You are collecting multiple variations of Product Names in both lower and upper 
 
 ### Custom field
 
-You create a new Collected Product Names custom field. You use the ![lowercase](../assets/Smock_Function_18_N.svg) **[!UICONTROL **Lowercase**]** function to convert all values from original **[!UICONTROL **Collected Product Names**]** field into lowercase values for new Collected Product Names custom field.
+You create a new **[!UICONTROL **Collected Product Names**]** custom field. You use the ![lowercase](../assets/Smock_Function_18_N.svg) **[!UICONTROL **Lowercase**]** function to define a rule to convert all values from original **[!UICONTROL **Collected Product Names**]** field into lowercase values for new **[!UICONTROL **Collected Product Names**]** custom field.
 
 >[!WARNING]
 >
@@ -746,7 +746,7 @@ Your desired report:
 
 ### Custom field
 
-You define a new Cross Channel Interaction custom field. You use the **[!UICONTROL **MERGE FIELDS**]** rule to merge values from **[!UICONTROL **Page Name**]** field and **[!UICONTROL **Call Reason**]** field into the Cross Channel Interaction custom field.
+You define a new **[!UICONTROL **Cross Channel Interaction**]** custom field. You use the **[!UICONTROL **MERGE FIELDS**]** function to define a rule to merge values from **[!UICONTROL **Page Name**]** field and **[!UICONTROL **Call Reason**]** field into the new **[!UICONTROL **Cross Channel Interaction**]** custom field.
 
 >[!WARNING]
 >
@@ -792,14 +792,14 @@ You want to grab a potion of a URL and use that as a unique page identifier to a
 
 | URL | 
 |----|
-| <`https://business.adobe.com/products/analytics/adobe-analytics-benefits.html`> | 
-| <`https://business.adobe.com/products/analytics/adobe-analytics.html`> | 
-| <`https://business.adobe.com/products/experience-platform/customer-journey-analytics.html`> | 
-| <`https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`> | 
+| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` | 
+| `https://business.adobe.com/products/analytics/adobe-analytics.html` | 
+| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` | 
+| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` | 
 
 ### Custom field.
 
-You create a Page Identified custom field. You use the **[!UICONTROL **REGEX REPLACE**]** function in a rule to replace values from the **[!UICONTROL **URL**]** field with new values for the Page Identifier custom field using the proper **[!UICONTROL **Regex expression**]** and **[!UICONTROL **Output format**]** setting.
+You create a **[!UICONTROL **Page Identified**]** custom field. You use the **[!UICONTROL **REGEX REPLACE**]** function to define a rule to replace values from the **[!UICONTROL **URL**]** field with new values for the Page Identifier custom field using the proper **[!UICONTROL **Regex expression**]** and **[!UICONTROL **Output format**]** setting.
 
 >[!WARNING]
 >
@@ -860,7 +860,7 @@ Each response from the survey is collected in a delimited list.
 
 ### Custom field
 
-You define a new Responses (split) custom field. You use the **[!UICONTROL **SPLIT**]** function to split the **[!UICONTROL **Responses**]** field values into an array of values for the new Responses (split) custom field using the `,` as the delimiter.
+You define a new **[!UICONTROL **Responses (split)**]** custom field. You use the **[!UICONTROL **SPLIT**]** function to define a rule to split the **[!UICONTROL **Responses**]** field values into an array of values for the new **[!UICONTROL **Responses (split)**]** custom field using the `,` as the delimiter.
 
 >[!WARNING]
 >
@@ -909,8 +909,8 @@ Each response from the survey is collected in a delimited list.
 
 ### Custom field
 
-You define a new Responses (first value) custom field. You use the **[!UICONTROL **SPLIT**]** function to get the first value from the **[!UICONTROL **Responses**]** field values into new Responses (first value) custom field using the `,` as the delimiter and `1` as the index.
-You define a new Responses (second value) custom field. You use the **[!UICONTROL **SPLIT**]** function to get the second value from the **[!UICONTROL **Responses**]** field values into new Responses (second value) custom field using the `,` as the delimiter and `2` as the index.
+You define a new **[!UICONTROL **Responses (first value)**]** custom field. You use the **[!UICONTROL **SPLIT**]** function to define a rule to get the first value from the **[!UICONTROL **Responses**]** field values into the new **[!UICONTROL **Responses (first value)**]** custom field using the `,` as the delimiter and `1` as the index.
+You define a new **[!UICONTROL **Responses (second value)**]** custom field. You use the **[!UICONTROL **SPLIT**]** function to define a rule get the second value from the **[!UICONTROL **Responses**]** field values into the new **[!UICONTROL **Responses (second value)**]** custom field using the `,` as the delimiter and `2` as the index.
 
 >[!WARNING]
 >
@@ -965,7 +965,7 @@ You collect product data which includes hidden whitespace characters. These hidd
 
 ### Custom field
 
-You define a new Product ID custom field. You use the **[!UICONTROL **TRIM**]** function to trim whitespace from the **Product ID** field values into the new Product ID custom field.
+You define a new **[!UICONTROL **Product ID**]** custom field. You use the **[!UICONTROL **TRIM**]** function to define a rule to trim whitespace from the **Product ID** field values into the new **[!UICONTROL **Product ID**]** custom field.
 
 >[!WARNING]
 >
@@ -997,12 +997,11 @@ You collect data that includes some erroneous special characters at the end of t
 
 ### Custom rule
 
-You define a new Page Name custom field. You use the **[!UICONTROL **TRIM**]** function to **[!UICONTROL **Trim**]** special characters from the **[!UICONTROL **Page Name**]** field values into the new Page Name custom field.
+You define a new **[!UICONTROL **Page Name**]** custom field. You use the **[!UICONTROL **TRIM**]** function to **[!UICONTROL **Trim**]** special characters from the **[!UICONTROL **Page Name**]** field values into the new **[!UICONTROL **Page Name**]** custom field.
 
 >[!WARNING]
 >
 >Screenshot pending availability in the UI...
-
 
 
 ### Data After
@@ -1032,7 +1031,7 @@ You store data, where the first two letters of a storeID contain the abbreviatio
 
 ### Custom field
 
-You define a new Store ID field. You use the **[!UICONTROL **TRIM**]** function to truncate the first two characters of the **[!UICONTROL **Store ID**]** values into the new Store ID custom field.
+You define a new **[!UICONTROL **Store ID**]** field. You use the **[!UICONTROL **TRIM**]** function to define a rule to truncate the first two characters of the **[!UICONTROL **Store ID**]** values into the new **[!UICONTROL **Store ID**]** custom field.
 
 Pending availability in the UI.
 
@@ -1052,7 +1051,7 @@ Pending availability in the UI.
 
 <!-- URL PARSE -->
 
-+++###URL Parse
++++### URL Parse
 
 
 Parse out different parts of a URL including the host, path, or query parameters.
@@ -1073,16 +1072,16 @@ You only want use the referring domain from the referring URL as part of a marke
 
 | Referring URL |
 |----|
-| <`https://www.google.com/`> |
-| <`https://duckduckgo.com/`> | 
-| <`https://t.co/`> |
-| <`https://l.facebook.com/`>| 
+| `https://www.google.com/` |
+| `https://duckduckgo.com/` | 
+| `https://t.co/` |
+| `https://l.facebook.com/`| 
 
 {style="table-layout:auto"}
 
 ### Custom field
 
-You define a new Referring Domain custom field. You use the **[!UICONTROL **URL PARSE**]** function to fetch the host from the **Referring URL** and store that in the new Referrer Domain custom field.
+You define a new **[!UICONTROL **Referring Domain**]** custom field. You use the **[!UICONTROL **URL PARSE**]** function to define a rule to fetch the host from the **Referring URL** and store that in the new **[!UICONTROL **Referrer Domain**]** custom field.
 
 ![Url Parse 1](assets/url-parse-1.png)
 
@@ -1106,15 +1105,15 @@ You want to use the value of the `cid` parameter of a query string in a Page URL
 
 | Page URL |
 |----|
-| <`https://www.adobe.com/?cid=abc123`> |
-| <`https://www.adobe.com/?em=email1234&cid=def123`> | 
-| <`https://www.adobe.com/landingpage?querystring1=test&test2=1234&cid=xyz123`> | 
+| `https://www.adobe.com/?cid=abc123` |
+| `https://www.adobe.com/?em=email1234&cid=def123` | 
+| `https://www.adobe.com/landingpage?querystring1=test&test2=1234&cid=xyz123` | 
 
 {style="table-layout:auto"}
 
 ### Screenshot
 
-You define a new Query String CID custom field. You use the **[!UICONTROL **URL PARSE**]** function in the Rule Builder to fetch the value of the query string parameter in the Page URL, specifying `cid` as the query parameter. The value is stored in the new Query String CID custom field.
+You define a new **[!UICONTROL **Query String CID**]** custom field. You use the **[!UICONTROL **URL PARSE**]** function to define a rule to fetch the value of the query string parameter in the Page URL, specifying `cid` as the query parameter. The value is stored in the new **[!UICONTROL **Query String CID**]** custom field.
 
 ![Url Parse 2](assets/url-parse-2.png)
 
