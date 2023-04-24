@@ -22,7 +22,7 @@ Example use cases are:
 -   Define a custom Marketing Channel field that determines the proper marketing channel based on one or more conditions (for example URL parameter, page URL, page name).
 
 
-## Custom field interface {#custom-field-interface}
+## Custom field interface
 
 When you create or edit a custom field, you use the custom field interface.
 
@@ -72,7 +72,7 @@ When you define a rule in the Rule builder, you use the rule interface.
 
 4.  Select **[!UICONTROL **Create custom field**]** from the left rail.
    
-5.  To define your custom field, use the **[!UICONTROL **Create custom field**]** interface. See [Custom field interface](#custom-field-interface).
+5.  To define your custom field, use the [!UICONTROL Create custom field] interface. See [Custom field interface](#custom-field-interface).
 
     To save your new custom field, select **[!UICONTROL **Save**]**.
 
@@ -122,7 +122,7 @@ When you define a rule in the Rule builder, you use the rule interface.
     - Select **[!UICONTROL **Continue**]** to delete the custom field.
 
 
-## Function Templates {#function-template}
+## Function Templates
 
 To quickly create a custom field for specific use cases, function templates are available. These function templates can be accessed from the Selector area in the Custom field interface or are presented upon first use in the [!UICONTROL Start with a field template] wizard.
 
