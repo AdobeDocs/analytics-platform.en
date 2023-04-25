@@ -101,7 +101,7 @@ Click the linked section titles for more information and context about the avail
 | **General Defaults** | | |
 | | Percentages | Displays values in percentages for all visualizations. |
 | | Legend visible | Lets you hide the detailed legend text for all visualizations.  |
-| | Limit max items | Reduces the number of items on the X-axis for all visualizations. This can be useful if you have a large data set.  |
+| | Limit max items | Reduces the number of items on the X-axis for all visualizations. This can be useful if you have a large dataset.  |
 | | Display dual axis (when applicable) | Only applies if you have two metrics - you can have a y-axis on the left (for one metric) and on the right (for the other metric). This is helpful when plotted metrics are of very different magnitudes.  |
 | | Normalization (when applicable) | Forces metrics to equal proportions. This is helpful when plotted metrics are of very different magnitudes.  |
 | | Anchor Y-axis at zero | If all the values plotted on the chart are considerably above zero, the chart default will make the bottom of the y-axis NON-ZERO. If you check this box, the y-axis will be forced to zero (and it will re-draw the chart).  |
@@ -109,7 +109,7 @@ Click the linked section titles for more information and context about the avail
 | **[Line](/help/analysis-workspace/visualizations/line.md)** | | |
 | | Percentages  | Displays values in percentages for the Line visualizations. |
 | | Legend visible | Lets you hide the detailed legend text for the Line visualization. |
-| | Limit max items | Reduces the number of items on the X-axis in the Line visualization. This can be useful if you have a large data set. |
+| | Limit max items | Reduces the number of items on the X-axis in the Line visualization. This can be useful if you have a large dataset. |
 | | Display dual axis (when applicable) | Only applies if you have two metrics - you can have a y-axis on the left (for one metric) and on the right (for the other metric). This is helpful when plotted metrics are of very different magnitudes. |
 | | Normalization (when applicable) | Forces metrics to equal proportions. This is helpful when plotted metrics are of very different magnitudes. |
 | | Show x-axis | Displays the x-axis on the Line chart. |
@@ -160,13 +160,13 @@ Click the linked section titles for more information and context about the avail
 | | Abbreviate value | In the [!UICONTROL **Summary Number**] section |
 | **[Treemap](/help/analysis-workspace/visualizations/treemap.md)** | | |
 | | Percentages | Displays values in percentages for the Treemap visualizations. |
-| | Limit max items | Reduces the number of items on the X-axis in the Treemap visualization. This can be useful if you have a large data set. |
+| | Limit max items | Reduces the number of items on the X-axis in the Treemap visualization. This can be useful if you have a large dataset. |
 | **[Venn](/help/analysis-workspace/visualizations/venn.md)** | | |
 | | Legend visible | Lets you hide the detailed legend text for the Venn visualization. |
 | **[Scatter](/help/analysis-workspace/visualizations/scatterplot.md)** | | |
 | | Percentages | Displays values in percentages for the Scatter visualizations. |
 | | Legend visible | Lets you hide the detailed legend text for the Scatter visualization. |
-| | Limit max items | Reduces the number of items on the X-axis in the Scatter visualization. This can be useful if you have a large data set. |
+| | Limit max items | Reduces the number of items on the X-axis in the Scatter visualization. This can be useful if you have a large dataset. |
 | | Anchor y-axis at zero | If all the values plotted on the chart are considerably above zero, the chart default will make the bottom of the y-axis NON-ZERO. If you check this box, the y-axis will be forced to zero (and it will re-draw the chart). |
 
 ## Company preferences

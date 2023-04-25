@@ -29,7 +29,7 @@ You can configure the Media Average Minute Audience panel using these input sett
 | Setting | Description |
 |---------|------------|
 | Panel date range | The panel date range default is Today. You may edit it to view a single day or many months at a time. <br></br> This visualization is limited to 1440 rows of data (for example, 24-hours at minute-level granularity). If a date range and granularity combination results in more than 1440 rows, the granularity is automatically updated to accommodate the full date range. |
-| Drag a segment here (or any other components) | Like other panels, this setting filters your selections based on segments you’ve created. This is a great way to look at specific platforms, live streams, or other common media segments. |
+| Drag a segment here (or any other components) | Like other panels, this setting filters your selections based on segments you've created. This is a great way to look at specific platforms, live streams, or other common media segments. |
 | Calculate metric for | This setting enables you to choose whether you want to see the average minute audience for a specific piece of content, by selecting *specific content*, or if you want to see the average minute audience for a specific period of time, by selecting *custom time period*. <br></br>Specific content works only if the duration has been updated using Classifications. If the duration is unavailable, or if you want to view the average minute audience for a time series with multiple pieces of content or content without a specific assigned duration (like during a live stream or event), then you should select custom time period. This setting changes the workflow and report output. |
 
 ### Specific content
@@ -38,9 +38,9 @@ You can configure the Media Average Minute Audience panel using these input sett
 |---------|------------|
 | Reporting dimensions | When you choose specific content, you can select the report output to use either the video name or content ID fields to show the content and its associated average minute audience for the time period selected. |
 | Filter content by (optional) | You can filter the specific content depending on the view you want or the way your data is structured. |
-| Show, season, episode | Selecting “Show, season, episode” displays your available shows in the dropdown, which you can filter using a search (or by dragging and dropping the show name from the left column). You can end your selection there to see all the seasons of your show, or you can filter by individual seasons and then by individual episodes. This setting shows the data for those shows, seasons, or episodes for the selected time period. |
+| Show, season, episode | Selecting "Show, season, episode" displays your available shows in the drop-down list, which you can filter using a search (or by dragging and dropping the show name from the left column). You can end your selection there to see all the seasons of your show, or you can filter by individual seasons and then by individual episodes. This setting shows the data for those shows, seasons, or episodes for the selected time period. |
 | Custom dimension | If your show name is under a custom dimension, you can find it either by searching in the dimension (optional) drop down or by using the left column search. The dimension item automatically populates based on that selection and is treated as an episode. |
-| None | You can choose *None* to show all the video names that have average minute audience data for the selection you’ve chosen. |
+| None | You can choose *None* to show all the video names that have average minute audience data for the selection you've chosen. |
 
 ### Specific content advanced settings
 
@@ -55,9 +55,9 @@ You can configure the Media Average Minute Audience panel using these input sett
 |---------|------------|
 | Granularity | The default granularity is 5-minute, but you can choose any of the granularities that are used as the denominator for the time series within your overall time period selection made in the calendar selection. For example, selecting 12:00 pm to 12:30 pm with a 5-minute granularity will return the average minute audience over the full half hour as well as six rows with the average minute audience for each 5-minute period. These rows are used as the datapoints for the time series chart. |
 | Filter content by (optional) | You can filter the specific content depending on the view you want or the way your data is structured. |
-| Show, season, episode | Selecting *Show, season, episode* displays your available shows in the dropdown, which you can filter via search (or by dragging and dropping the show name from the left column). You can end your selection there to see all the seasons of your show, or you can filter by individual seasons and then by individual episodes. This setting shows the data for those shows, seasons, or episodes for the selected time period. |
+| Show, season, episode | Selecting *Show, season, episode* displays your available shows in the drop-down list, which you can filter via search (or by dragging and dropping the show name from the left column). You can end your selection there to see all the seasons of your show, or you can filter by individual seasons and then by individual episodes. This setting shows the data for those shows, seasons, or episodes for the selected time period. |
 | Custom dimension | If your show name is under a custom dimension, you can find it either by searching in the dimension (optional) drop down or by using the left column search. The dimension item automatically populates based on that selection and is treated as an episode. |
-| None | You can choose *None* to show all the video names over the time period you’ve chosen. |
+| None | You can choose *None* to show all the video names over the time period you've chosen. |
 
 ### Custom time period advanced settings
 
