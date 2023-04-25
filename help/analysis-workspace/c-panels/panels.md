@@ -6,7 +6,7 @@ exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 ---
 # Panels overview
 
-A [!UICONTROL panel] is a collection of tables and visualizations. You can access panels from the top left icon in Workspace or a [blank panel](/help/analysis-workspace/c-panels/blank-panel.md). Panels are helpful when you want to organize your projects according to time periods, data views, or analysis use case.
+A [!UICONTROL panel] is a collection of tables and visualizations. You can access panels from the top-left icon in Workspace or a [blank panel](/help/analysis-workspace/c-panels/blank-panel.md). Panels are helpful when you want to organize your projects according to time periods, data views, or analysis use case.
 
 ## Panel types
 
@@ -75,9 +75,9 @@ Select one of the options from the drop-down list to change the data in the pane
 
 ![](assets/create-dropdown.png)
 
-Right clicking a drop-down filter provides the following options:
+Right-clicking a drop-down filter provides the following options:
 
-* **[!UICONTROL Add label]**: When you add a drop-down filter to a project, a label is automatically set to the component name. If you delete the label, you can re-add it with this option.
+* **[!UICONTROL Add label]**: When you add a drop-down filter to a project, a label is automatically set to the component name. If you delete the label, you can add it again with this option.
 * **[!UICONTROL Delete label]**: Remove the text above a drop-down filter.
 * **[!UICONTROL Delete drop-down filter]**: Removes the drop-down filter from the panel. 
 
@@ -95,9 +95,9 @@ To create a dynamic drop-down filter:
 
 * Drag and drop a single dimension into the panel dropzone **while holding `[Shift]`**.
 * Dynamic drop-down filters are not available for metrics, filters, or date ranges.
-* Right click a drop-down filter and select **[!UICONTROL Delete filter]** to delete it.
+* Right-click a drop-down filter and select **[!UICONTROL Delete filter]** to delete it.
 
-Right clicking a dynamic drop-down filter provides the same options as static drop-down filters.
+Right-clicking a dynamic drop-down filter provides the same options as static drop-down filters.
 
 ## Right-click menu {#right-click}
 
@@ -109,8 +109,8 @@ The following settings are available:
 
 | Setting | Description |
 | --- | --- |
-| [!UICONTROL Insert Copied Panel/Visualization] | Lets you paste ("insert") a copied panel or visualization to another place within the project, or into a completely different project.|
-| [!UICONTROL Copy Panel] | Lets you right-click and copy a panel, so that you can insert it to another place within the project, or into a completely different project.|
+| [!UICONTROL Insert Copied Panel/Visualization] | Lets you paste ("insert") a copied panel or visualization to another place within the project, or into a different project.|
+| [!UICONTROL Copy Panel] | Lets you right-click and copy a panel, so that you can insert it to another place within the project, or into a different project.|
 | [!UICONTROL Duplicate Panel] | Makes an exact duplicate of the current panel, which you can then modify. |
 | [!UICONTROL Collapse/Expand all Panels] | Collapses and expands all project panels. |
 | [!UICONTROL Collapse/Expand all Visualizations in Panel] | Collapses and expands all visualizations in the current panel. |
