@@ -7,7 +7,7 @@ role: User, Admin
 
 # Intelligent Captions
 
-Intelligent captions use data science to provide valuable natural-language insights for Workspace visualizations. The initial release provides auto-generated insights for the [Line](line.md) visualization. Typical insights include 
+Intelligent captions use data science to provide valuable natural-language insights for Workspace visualizations. The initial release provides auto-generated insights for the [Line](line.md) visualization. Typical insights include ...
 
 Intelligent captions are geared towards:
 
@@ -21,4 +21,6 @@ Here is a sample of what the captions could look like:
 ![Captions](assets/captions.png)
 
 ## Configure intelligent captions
+
+
 
