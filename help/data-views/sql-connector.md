@@ -6,9 +6,9 @@ feature: Data Views
 ---
 # SQL Connector
 
-The Customer Journey Analytics (CJA) SQL Connector for Data Views enables SQL access to the [Data Views](./data-views.md) you have defined in CJA. Data engineers and analysts who are more familiar with Power BI and/or Tableau can now create reporting and dashboards based on the same data views that CJA users are using when creating their Analysis Workspace projects.
+The Customer Journey Analytics (CJA) SQL Connector for Data Views enables SQL access to the [data views](./data-views.md) you have defined in CJA. Data engineers and analysts who are more familiar with Power BI and/or Tableau can now create reporting and dashboards based on the same data views that CJA users are using when creating their Analysis Workspace projects.
 
-Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) is the SQL interface to data available in the data lake of Experience Platform. With the [!UICONTROL CJA SQL Connector for Data Views] enabled, the functionality of Query Service is extended to see your CJA Data Views as tables or views in a Query Service session. As a result, BI tools (like Power BI and/or Tableau) that use Query Service as their PostgresSQL interface benefit seamlessly from this extended functionality.
+Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) is the SQL interface to data available in the data lake of Experience Platform. With the [!UICONTROL CJA SQL Connector for Data Views] enabled, the functionality of Query Service is extended to see your CJA data views as tables or views in a Query Service session. As a result, BI tools (like Power BI and/or Tableau) that use Query Service as their PostgresSQL interface benefit seamlessly from this extended functionality.
 
 The main benefits are:
 
@@ -67,7 +67,7 @@ Currently, the CJA SQL Connector is supported for Power BI and Tableau.
 
 +++ Power BI
 
-1.  In the Experience Platform UI, look up the details of your PostgresSQL credentials.
+1.  In the Adobe Experience Platform UI, look up the details of your PostgresSQL credentials.
 
     1.  Select **[!UICONTROL **Queries**]** from the left rail (under **[!UICONTROL **DATA MANAGEMENT**]**).
 
@@ -97,7 +97,7 @@ Currently, the CJA SQL Connector is supported for Power BI and Tableau.
     5.  After successful login, the CJA Data View tables appear in Power BI's **[!UICONTROL **Navigator**]**. Data View tables are identified by using `_dv_` in their names.
 
 
-    6.  Select the Data View tables that you want to use and select **[!UICONTROL **Load**]**.
+    6.  Select the data view tables that you want to use and select **[!UICONTROL **Load**]**.
 
     All dimensions and metrics associated with one or more selected tables appear in the right pane, ready to be used in your visualizations.
 
@@ -212,7 +212,7 @@ See Patterns table below for an overview of patterns and examples.
 
 ### Dimensions
 
-The dimensions available to select are any of the dimensions available by default or defined in the data view. You select a dimension by its ID.
+You can select any of the dimensions available by default or defined in the data view. You select a dimension by its ID.
 
 ### Metrics
 
