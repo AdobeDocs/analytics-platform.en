@@ -20,7 +20,12 @@ Here is a sample of what the captions could look like:
 
 ![Captions](assets/captions.png)
 
-## Configure intelligent captions
+## Launch intelligent captions {#launch}
 
+To launch auto-generated captions for a line visualization, click the **[!UICONTROL Intelligent captions]** icon at the top right of the visualization.
+
+![launch intelligent captions](assets/intell-caps-1.png)
+
+Natural-language insights are now being generated.
 
 
