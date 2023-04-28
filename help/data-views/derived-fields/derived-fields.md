@@ -29,7 +29,7 @@ When you create or edit a custom field, you use the custom field interface.
 ![Custom field dialog](assets/custom-field-dialog.png)
 
 
-|  | Name | Description
+|  | Name | Description |
 |---------|----------|--------|
 | 1 | **Selector** | You use the selector area to select and drag and drop your ![Function](assets/Smock_Function_18_N.svg) function,![Function template](assets/Smock_FileTemplate_18_N.svg) function template,![Schema field](assets/Smock_Folder_18_N.svg) schema field, or![Standard field](assets/Smock_DragHandle_18_N.svg)standard field on to the rule builder. <br/>Use the drop-down to select between [!UICONTROL Functions], [!UICONTROL Function templates], [!UICONTROL Schema fields], and [!UICONTROL Standard fields].<br/>You can search for function, function templates, schema, and standard fields using the Search box. <br/>You can filter the selected object list by selecting ![Filter](assets/Smock_Filter_18_N.svg) Filter and specify filters in the [!UICONTROL Filter fields by] dialog. You can easily remove filters using ![Close](assets/CrossSize75.svg) for each filter. | 
 | 2 | **Rule builder** | You build your custom field sequentially using one or more rules. A rule is a specific implementation of a function and is therefore always associated with only one function. You create a rule by dragging and dropping a function into the Rule Builder. The function type determines the interface of the rule.<br/>See the [Rule interface](#rule-interface) for more information. <br/>You can insert a function at the start, end, or in between rules already available in the Rule Builder. The last rule in the Rule Builder determines the final output of the custom field. |
@@ -45,18 +45,16 @@ When you access the Custom field interface for the first time, the [!UICONTROL S
 
 Your Custom field dialog is populated with rules (and functions) required or useful for the type of field that you selected. See [Function templates](#function-templates) for more information on the available templates.
 
-{style="table-layout:auto"}
-
 ## Rule interface
 
 When you define a rule in the Rule builder, you use the rule interface.
 
 ![Rule Interface](assets/rule-interface.png)
 
-|  | Name | Description
+|  | Name | Description |
 |---------|----------|--------|
-| A | **Rule Name** | By default the rule name is **Rule X** (X referring to a sequence number). To edit the name of a rule, select its name and type in the new name, for example `Query Parameter`.
-| B | **Function Name** | The selected function name for the rule, for example **URL PARSE**. When the function is the last in the sequence of functions and determines the final output values, the function name is followed by **FINAL OUTPUT**, for example **URL PARSE - FINAL OUTPUT**. <br/>To show a popup with more information on the function, select ![Help](assets/Smock_HelpOutline_18_N.svg).
+| A | **Rule Name** | By default the rule name is **Rule X** (X referring to a sequence number). To edit the name of a rule, select its name and type in the new name, for example `Query Parameter`. |
+| B | **Function Name** | The selected function name for the rule, for example **URL PARSE**. When the function is the last in the sequence of functions and determines the final output values, the function name is followed by **FINAL OUTPUT**, for example **URL PARSE - FINAL OUTPUT**. <br/>To show a popup with more information on the function, select ![Help](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Rule Description** | You can optionally add a description to a rule.<br/>Select ![More](assets/More.svg), then select **[!UICONTROL **Add Description**]** to add a description or **[!UICONTROL **Edit Description**]** to edit an existing description.<br/>Use the editor to enter a description. You can use the toolbar to format the text (using style selector, bold, italic, underline, right, left, centered, color, number list, bullet list) and adding links to external information. <br/>To finish editing the description, click outside of the editor. |
 | D | **Function Area** | Defines the logic of the function. The interface depends on the type of function. See [Custom field functions](custom-field-functions.md) on detailed information for each of the functions supported. |
 
@@ -257,7 +255,7 @@ You want to define rules to identify various marketing channels, by applying cas
 
 In case your site receives the following sample events, containing Referrer and Page URL, these events should be identified as follows:
 
-Event | Referrer | Page URL | Marketing Channel |
+| Event | Referrer | Page URL | Marketing Channel |
 |:----:|----|----|----|
 | 1 | `https://facebook.com` | `https://site.com/home` | Natural Social |
 | 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | Display |
@@ -425,11 +423,11 @@ You define a `Trip Duration (bucketed)` custom field. You create the following *
 |short trip|
 |long trip|
 |short trip|
-|medium trip
-|medium trip
-|long trip
-|medium trip
-|short trip
+|medium trip|
+|medium trip|
+|long trip|
+|medium trip|
+|short trip|
 |short trip|
 |short trip|
 |long trip|
@@ -621,435 +619,6 @@ You define a `Page Name (updated)` custom field. You use the **[!UICONTROL **LOO
 
 +++
 
-
-<!-- LOWERCASE
-
-+++###Lowercase
-
-Converts an entire string to lowercase value.
-
-## Inputs / Operators / Outputs
-
-| Input Data Type | Input | Included Operators | Output |
-|---|---|---|---|
-| <ul><li>String</li></ul> | <ul><li>Sing field</li></ul> | <p>N/A</p> | <p>New custom field</p> |
-
-{style="table-layout:auto"}
-
-## Use case 1
-
-You are collecting multiple variations of Product Names in both lower and upper case. These variations are fragmenting your reporting.
-
-
-### Data before
-
-| Collected Product Names | Product Views |
-|----|----|
-| Tennis racket | 35 |
-| Tennis Racket | 33 |
-| tennis racket | 21 |
-| Baseball bat | 15 |
-| Baseball Bat | 12 |
-| baseball bat | 10 |
-
-{style="table-layout:auto"}
-
-### Custom field
-
-You create a new **[!UICONTROL **Collected Product Names**]** custom field. You use the ![lowercase](../assets/Smock_Function_18_N.svg) **[!UICONTROL **Lowercase**]** function to define a rule to convert all values from original **[!UICONTROL **Collected Product Names**]** field into lowercase values for new **[!UICONTROL **Collected Product Names**]** custom field.
-
->[!WARNING]
->
->Screenshot is pending availability...
-
-
-### Data after
-
-| Collected Product Names<br/>(custom field) | Product Views
-|----|----|
-| tennis racket | 89 |
-| baseball bat | 37 |
-
-{style="table-layout:auto"}
-
-+++
-
--->
-
-<!-- MERGE FIELDS
-
-+++###Merge Fields
-
-Takes values from two different fields and include their respective values in a single dimension. The rule first checks to see if the first value is set. If not, then it uses the second value and so on.
-
-## Inputs / Operators / Outputs
-
-| Input Data Type | Input | Included Operators | Output |
-|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>Values from two or more fields</li></ul> | <p>N/A</p> | <p>New custom field</p> |
-
-{style="table-layout:auto"}
-
-## Use case
-
-You want to create a dimension made up of the Page Name field and the Call Reason field with the intent of analyzing the journey across channels (in this case web and call center).
-
-Your current reports:
-
-**Dimension 1 - Page Name**
-
-| Page Name | Sessions | Visitors |
-|---|---|---|
-| help page | 250 | 200 |
-| home page | 500 | 250 |
-| product detail page | 300 | 200 |
-
-{style="table-layout:auto"}
-
-**Dimension 2 - Call Reason**
-
-| Call Reason | Sessions | Visitors |
-|---|---|---|
-| questions about my order | 275 | 250 |
-| make a change to my order | 120 | 145 |
-| problem with ordering | 100 | 95 |
-
-{style="table-layout:auto"}
-
-Your desired report:
-
-| Cross Channel Interactions | Sessions | Visitors |
-|---|---|-----|
-| home page | 500 | 250 |
-| product detail page | 300 | 200 |
-| questions about my order | 275 | 250 |
-| help page | 250 | 200 |
-| make a change to my order | 120 | 145 |
-| problem with ordering | 100 | 95 |
-
-{style="table-layout:auto"}
-
-### Data before
-
-| Page Name | Call Reason |
-|----|----|
-| help page | questions about my order |
-| home page | make a change to my order |
-| product detail page | problem with ordering |
-
-{style="table-layout:auto"}
-
-### Custom field
-
-You define a new **[!UICONTROL **Cross Channel Interaction**]** custom field. You use the **[!UICONTROL **MERGE FIELDS**]** function to define a rule to merge values from **[!UICONTROL **Page Name**]** field and **[!UICONTROL **Call Reason**]** field into the new **[!UICONTROL **Cross Channel Interaction**]** custom field.
-
->[!WARNING]
->
->Screenshot pending availability in the UI...
-
-
-### Data after
-
-|Cross Channel Interaction<br/>(custom field) |
-|---|
-| help page |
-| home page |
-| product detail page |
-| questions about my order |
-| make a change to my order |
-| problem with ordering |
-
-{style="table-layout:auto"}
-
-+++
-
--->
-
-
-<!-- REGEX REPLACE
-
-+++###Regex Replace
-
-Replaces a field or portion of a field based on a regular expression.
-
-## Inputs / Operators / Outputs
-
-| Input Data Type | Input | Included Operators | Output |
-|---|---|---|---|
-| <ul><li>String</li></ul> | <ul><li>Sing field</li><li>Regex definition</li><li>Output definition</li></ul> | <p>N/A</p> | <p>New custom field</p> |
-
-{style="table-layout:auto"}
-
-## Use case
-
-You want to grab a potion of a URL and use that as a unique page identifier to analyze traffic. You want to use the regular expression `[^/]+(?=/$|$)` with the output pattern `$1` to match the end of a URL.
-
-
-### Data before
-
-| URL | 
-|----|
-| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` | 
-| `https://business.adobe.com/products/analytics/adobe-analytics.html` | 
-| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` | 
-| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` | 
-
-### Custom field.
-
-You create a **[!UICONTROL **Page Identified**]** custom field. You use the **[!UICONTROL **REGEX REPLACE**]** function to define a rule to replace values from the **[!UICONTROL **URL**]** field with new values for the Page Identifier custom field using the proper **[!UICONTROL **Regex expression**]** and **[!UICONTROL **Output format**]** setting.
-
->[!WARNING]
->
->Screenshot pending availability in the UI...
-
-
-### Data after
-
-| Page Identifier<br/>(custom field) |
-|----|
-| adobe-analytics-benefits.html |
-| adobe-analytics.html |
-| customer-journey-analytics.html |
-| adobe-experience-platform.html |
-
-+++
-
--->
-
-<!-- SPLIT
-
-+++###Split
-
-Splits up a value based on a delimiter.
-
-## Inputs / Operators / Outputs
-
-| Input Data Type | Input | Included Operators | Output |
-|---|---|---|---|
-| <ul><li>String</li></ul> | <ul><li>Sing field</li><li>Delimiter</li><li>Start from the left or the right (and associated index) or convert to an array with all values</li></ul> | <p>N/A</p> | <p>New custom field</p> |
-
-{style="table-layout:auto"}
-
-## Use case 1
-
-You collect survey responses into a delimited string in a single dimension. You want each value in the string to be a unique dimension in a responses report.
-
-Each response from the survey is collected in a delimited list.
-
-| Responses |
-|---|
-| it was great,made perfect sense,will recommend to others |
-| it was great,somewhat confusing,will recommend to others |
-| it was not great,very confusing,will not recommend to others |
-
-{style="table-layout:auto"}
-
-
-### Data before
-
-| Responses | Events |
-|----|----|
-| it was great,made perfect sense,will recommend to others | 1 |
-| it was great,somewhat confusing,will recommend to others | 1 |
-| it was not great,very confusing,will not recommend to others | 1 |
-
-{style="table-layout:auto"}
-
-
-### Custom field
-
-You define a new **[!UICONTROL **Responses (split)**]** custom field. You use the **[!UICONTROL **SPLIT**]** function to define a rule to split the **[!UICONTROL **Responses**]** field values into an array of values for the new **[!UICONTROL **Responses (split)**]** custom field using the `,` as the delimiter.
-
->[!WARNING]
->
->Screenshot pending availability in the UI...
-
-
-
-### Data after
-
-| Responses (split)<br/>(custom field) | Events |
-|---|---|
-| it was great | 2 |
-| will recommend to others | 2 |
-| it was not great | 1 |
-| made perfect sense | 1 |
-| somewhat confusing | 1 |
-| very confusing | 1 |
-| will not recommend to others | 1 |
-
-
-## Use case 2
-
-You collect survey responses into a delimited string in a single dimension. You want the first and second value in the string to be reported in their own dimension in a responses report.
-
-Each response from the survey is collected in a delimited list.
-
-| Responses |
-|---|
-| it was great,made perfect sense,will recommend to others |
-| it was great,somewhat confusing,will recommend to others |
-| it was not great,very confusing,will not recommend to others |
-
-{style="table-layout:auto"}
-
-
-### Data before
-
-| Responses | Events |
-|----|----|
-| it was great,made perfect sense,will recommend to others | 1 |
-| it was great,somewhat confusing,will recommend to others | 1 |
-| it was not great,very confusing,will not recommend to others | 1 |
-
-{style="table-layout:auto"}
-
-
-### Custom field
-
-You define a new **[!UICONTROL **Responses (first value)**]** custom field. You use the **[!UICONTROL **SPLIT**]** function to define a rule to get the first value from the **[!UICONTROL **Responses**]** field values into the new **[!UICONTROL **Responses (first value)**]** custom field using the `,` as the delimiter and `1` as the index.
-You define a new **[!UICONTROL **Responses (second value)**]** custom field. You use the **[!UICONTROL **SPLIT**]** function to define a rule get the second value from the **[!UICONTROL **Responses**]** field values into the new **[!UICONTROL **Responses (second value)**]** custom field using the `,` as the delimiter and `2` as the index.
-
->[!WARNING]
->
->Screenshot pending availability in the UI...
-
-
-
-### Data after
-
-| Responses (first value)<br/>(custom field) | Events |
-|---|---|
-| it was great | 2 |
-| it was not great | 1 |
-
-| Responses (second value)<br/>(custom field) | Events |
-|---|---|
-| will recommend to others | 2 |
-| will not recommend to others | 1 |
-
-{style="table-layout:auto"}
-
-+++
-
--->
-
-<!-- TRIM
-
-+++###TRIM
-
-Trim whitespace or special characters from the beginning or the end of a string, specifying the position and number of characters.
-
-## Inputs / Operators / Outputs
-
-| Input Data Type | Input | Included Operators | Output |
-|---|---|---|---|
-| <ul><li>String</li></ul> | <ul> <li>Single Field</li> <li>Flag to trim whitespace</li> <li>Flag to trim special characters<ul> <li>Input of special characters</li> </ul> </li> <li>Flag to trim from left<ul> <li>From<ul> <li>Start string</li> <li>Position<ul> <li>Position #</li> </ul> </li> <li>String<ul> <li>String value</li> <li>Index</li> <li>Flag to include string</li> </ul> </li> </ul> </li> <li>To<ul> <li>Start string</li> <li>Position<ul> <li>Position #</li> </ul> </li> <li>String<ul> <li>String value</li> <li>Index</li> <li>Flag to include string</li> </ul> </li> <li>Length</li> </ul> </li> </ul> </li> <li>Flag to trim from right<ul> <li>From<ul> <li>Start string</li> <li>Position<ul> <li>Position #</li> </ul> </li> <li>String<ul> <li>String value</li> <li>Index</li> <li>Flag to include string</li> </ul> </li> </ul> </li> <li>To<ul> <li>Start string</li> <li>Position<ul> <li>Position #</li> </ul> </li> <li>String<ul> <li>String value</li> <li>Index</li> <li>Flag to include string</li> </ul> </li> <li>Length</li> </ul> </li> </ul> </li> </ul> | <p>N/A</p> | <p>New custom field</p> |
-
-{style="table-layout:auto"}
-
-## Use case 1
-
-You collect product data which includes hidden whitespace characters. These hidden whitespace characters fragment the reporting. You want to trim any excess whitespace.
-
-### Data before
-
-| Product ID | Events |
-|----|----|
-| "prod12356" | 1 |
-| "prod12356" | 1 |
-| "prod12356 " | 1 |
-
-{style="table-layout:auto"}
-
-### Custom field
-
-You define a new **[!UICONTROL **Product ID**]** custom field. You use the **[!UICONTROL **TRIM**]** function to define a rule to trim whitespace from the **Product ID** field values into the new **[!UICONTROL **Product ID**]** custom field.
-
->[!WARNING]
->
->Screenshot pending availability in the UI...
-
-
-### Data after
-
-| Product ID<br/>(custom field) | AFTER:<br/>Events |
-|---|---|
-| "prod12356" | 3 |
-
-
-## Use case 2
-
-You collect data that includes some erroneous special characters at the end of the Page Name field which must be removed.
-
-### Data before
-
-| Page Name | Events |
-|----|----|
-| homepage# | 1 |
-| homepage? | 1 |
-| homepage% | 1 |
-| homepage& | 1 |
-| homepage/ | 1 |
-
-{style="table-layout:auto"}
-
-### Custom field
-
-You define a new **[!UICONTROL **Page Name**]** custom field. You use the **[!UICONTROL **TRIM**]** function to **[!UICONTROL **Trim**]** special characters from the **[!UICONTROL **Page Name**]** field values into the new **[!UICONTROL **Page Name**]** custom field.
-
->[!WARNING]
->
->Screenshot pending availability in the UI...
-
-
-### Data after
-
-| Page Name<br/>(custom field) | Events |
-|---|---|
-| home page | 5 |
-
-
-## Use case 3
-
-You store data, where the first two letters of a storeID contain the abbreviation for the state where that store is located. You only want to use these two state characters in your reports.
-
-### Data before
-
-| Store ID | Events |
-|----|----|
-| CA293842 | 1 |
-| CA423402 | 1 |
-| UT123418 | 1 |
-| UT189021 | 1 |
-| ID028930 | 1 |
-| OR234223 | 1 |
-| NV22342 | 1 |
-
-{style="table-layout:auto"}
-
-### Custom field
-
-You define a new **[!UICONTROL **Store ID**]** field. You use the **[!UICONTROL **TRIM**]** function to define a rule to truncate the first two characters of the **[!UICONTROL **Store ID**]** values into the new **[!UICONTROL **Store ID**]** custom field.
-
-Pending availability in the UI.
-
-
-| Store ID<br/>(custom field) | Events |
-|---|---|
-| CA | 2 |
-| UT | 2 |
-| ID | 1 |
-| OR | 1 |
-| NV | 1 |
-
-{style="table-layout:auto"}
-
-+++
-
--->
-
-
 <!-- URL PARSE -->
 
 +++ URL Parse
@@ -1087,7 +656,7 @@ You define a  `Referring Domain` custom field. You use the **[!UICONTROL **URL P
 
 ### Data after
 
-Referrer Domain |
+| Referrer Domain |
 |----|
 | www.google.com |
 | duckduckgo.com |
