@@ -9,18 +9,19 @@ hidefromtoc: yes
 
 # Derived fields
 
+{{release-limited-testing}}
+
 Derived fields are an important aspect of the real-time reporting functionality in Customer Journey Analytics (CJA). A derived (custom) field allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. You can then use that derived field as a component (metric or dimension) in [Workspace](../../analysis-workspace/home.md) or even further define as a component in [Data view](../data-views.md). 
 
 Derived fields can save a significant amount of time and effort, compared to transforming or manipulating your data in other locations outside of CJA. Such as [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en), or within your own Extract Transform Load (ETL) / Extract Load Transform (ELT) processes.
 
-Derived fields are defined as custom fields within [Data views](../data-views.md), are based on a set of functions and applied to available standard and/or schema fields.
+Derived fields are defined as custom fields within [Data views](../data-views.md), are based on a set of functions defined as rules, and applied to available standard and/or schema fields.
 
 Example use cases are:
 
 -   Define a custom Page Name field that corrects improper collected page name values to correct page name values. 
 
 -   Define a custom Marketing Channel field that determines the proper marketing channel based on one or more conditions (for example URL parameter, page URL, page name).
-
 
 ## Custom field interface
 
@@ -31,7 +32,7 @@ When you create or edit a custom field, you use the custom field interface.
 
 |  | Name | Description |
 |---------|----------|--------|
-| 1 | **Selector** | You use the selector area to select and drag and drop your ![Function](assets/Smock_Function_18_N.svg) function,![Function template icon](assets/Smock_FileTemplate_18_N.svg) function template,![Schema field icon](assets/Smock_Folder_18_N.svg) schema field, or![Standard field icon](assets/Smock_DragHandle_18_N.svg)standard field on to the rule builder. <br/>Use the drop-down to select between [!UICONTROL Functions], [!UICONTROL Function templates], [!UICONTROL Schema fields], and [!UICONTROL Standard fields].<br/>You can search for function, function templates, schema, and standard fields using the Search box. <br/>You can filter the selected object list by selecting ![Filter icon](assets/Smock_Filter_18_N.svg) Filter and specify filters in the [!UICONTROL Filter fields by] dialog. You can easily remove filters using ![Close icon](assets/CrossSize75.svg) for each filter. | 
+| 1 | **Selector** | You use the selector area to select and drag and drop your ![Function](assets/Smock_Function_18_N.svg) function,![Function template icon](assets/Smock_FileTemplate_18_N.svg) function template,![Schema field icon](assets/Smock_Folder_18_N.svg) schema field, or![Standard field icon](assets/Smock_DragHandle_18_N.svg)standard field on to the rule builder. <br/>Use the drop-down to select between [!UICONTROL Functions], [!UICONTROL Function templates], [!UICONTROL Schema fields], and [!UICONTROL Standard fields].<br/>You can search for function, function templates, schema, and standard fields using the ![Search  icon](assets/Smock_Search_18_N.svg) Search box. <br/>You can filter the selected object list by selecting ![Filter icon](assets/Smock_Filter_18_N.svg) Filter and specify filters in the [!UICONTROL Filter fields by] dialog. You can easily remove filters using ![Close icon](assets/CrossSize75.svg) for each filter. | 
 | 2 | **Rule builder** | You build your custom field sequentially using one or more rules. A rule is a specific implementation of a function and is therefore always associated with only one function. You create a rule by dragging and dropping a function into the Rule Builder. The function type determines the interface of the rule.<br/>See the [Rule interface](#rule-interface) for more information. <br/>You can insert a function at the start, end, or in between rules already available in the Rule Builder. The last rule in the Rule Builder determines the final output of the custom field. |
 | 3 | **[!UICONTROL **Field Settings**]** | You can name and describe your custom field and inspect its field type. | 
 | 4 | **[!UICONTROL **Final Output**]** | This area shows an on-the-fly updated preview of output values, based on data over the last 30 days and the changes you make to the custom field in the Rule builder. |
