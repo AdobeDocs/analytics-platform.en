@@ -32,7 +32,7 @@ When clicking the date range in the modal window, you have several options:
 
 * **Calendar**: Select the start and end date.
 * **Use rolling dates**: Check this box if you want the date range to change as time goes on. Do not check this box if you want your date range to remain static.
-* **Select preset**: Use this dropdown if you want a custom date range based on a range that Adobe offers by default. When you select a preset, you can further customize the date range to suit your needs. It does not affect the preset that Adobe offers.
+* **Select preset**: Use this drop-down selection if you want a custom date range based on a range that Adobe offers by default. When you select a preset, you can further customize the date range to suit your needs. It does not affect the preset that Adobe offers.
 
 ## Rolling date ranges
 

@@ -113,7 +113,7 @@ You can grant [read-only access](/help/analysis-workspace/curate-share/view-only
 >
 >* The ability to share a project in this way can be disabled by the CJA administrator, as described in [Preferences](/help/analysis-workspace/user-preferences.md). If you can't share a project as described in this section, your CJA administrator has disabled this ability.
 >
->* Projects with more than 14 expanded visualizations can't be shared with people who don't have access to CJA.
+>* Projects with more than 50 expanded visualizations can't be shared with people who don't have access to CJA.
 >
 >* Users you share with can view any filters that were applied to the project during [curation](curate.md). 
 > 
@@ -130,6 +130,10 @@ To share an Analysis Workspace project with anyone:
    <!-- Add screen shot of new modal -->
 
 1. Enable the **[!UICONTROL Link is active]** option if it is not already enabled.
+
+   Selecting this option creates a link to the project that can be shared with anyone. You can disable access to the project at any time by disabling this option.
+
+   The owner of the project is also the owner of this link. Link ownership can be transferred to another user only when project ownership is transferred, as described in [Transfer user assets or set account expirations](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) in the Analytics Admin guide.
 
 1. Choose whether to enable the following security option (this option can be controlled by your CJA administrator): 
 

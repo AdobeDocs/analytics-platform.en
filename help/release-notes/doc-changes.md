@@ -13,10 +13,14 @@ The following updates were made to the CJA documentation since its inception.
 
 | Feature | Description |
 | --- | --- |
+| **April 2023** |  |
+| Filter documentation | Added article about using the [Filter builder](/help/components/filters/filter-builder.md). <p>Streamlined documentation in [Create filters](/help/components/filters/create-filters.md) and [Filters overview](/help/components/filters/filters-overview.md).</p>|
+| Update to Experimentation panel documentation | Added a section on [interpreting non-randomized dimensions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
+| Project filters (Ad hoc and quick filters) | Streamlined docmentation about project filters and removed duplicated information. The steps for creating ad hoc filters are now combined with the steps for [creating quick filters](/help/components/filters/quick-filters.md).|
 | **March 2023** | |
 | Integrate Decision Management data | Added content explaining how to [integrate Adobe Journey Optimizer Decision Management data in CJA](/help/integrations/ajo-od.md). |
 | Create data stories in mobile scorecards | A [data story](/help/mobile-app/create-scorecard.md#create-data-stories) is a collection of supporting data points, business context, and related metrics built around a central theme or metric. |
-| Feature support | Updated [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md) with a table of features available in CJA but not available or supported in AA. |
+| Updated feature support | Updated [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md) with a table of features available in CJA but not available or supported in AA. |
 | Default calculated metrics | Added content explaining the [default calculated metrics provided by Adobe](/help/components/calc-metrics/default-calcmetrics.md). |
 | Data Dictionary | <p>Added new documentation for the Data Dictionary, including an [Overview](/help/components/data-dictionary/data-dictionary-overview.md), [Viewing](/help/components/data-dictionary/view-data-dictionary.md), [Editing](/help/components/data-dictionary/edit-entries-data-dictionary.md), and [Monitoring](/help/components/data-dictionary/monitor-data-dictionary-health.md) the Data Dictionary.</p><p>Information in [Adding component descriptions](/help/components/add-component-descriptions.md) was updated to account for Data Dictionary functionality.</p>  |
 | Link sharing for projects (no login required) | <p>Updated existing documentation to explain how to share a read-only link of a project with people who do not have access to Analysis Workspace.</p> <p>Updated user documentation includes [Share projects](/help/analysis-workspace/curate-share/share-projects.md) and [Create shareable links](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>Options for administrators were added to [Preferences](/help/analysis-workspace/user-preferences.md).</p>  |

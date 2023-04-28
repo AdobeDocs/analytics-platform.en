@@ -15,6 +15,10 @@ Freeform tables in Analysis Workspace are the foundation for interactive data an
 ## Filter tables {#section_36E92E31442B4EBCB052073590C1F025}
 
  Filters in Analysis Workspace help you surface the most important information.
+
+>[!NOTE]
+>
+> Only dynamic dimension items can be filtered as described in this section. Static dimension items cannot be filtered. For more information, see [Dynamic vs static dimension items in freeform tables](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
  
  To filter data in Freeform tables:
  
