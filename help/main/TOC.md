@@ -75,6 +75,7 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Substring](../data-views/component-settings/substring.md)
         + [Value bucketing](../data-views/component-settings/value-bucketing.md)
     +   [Standard component reference](../data-views/component-reference.md)
+    +   [Derived fields](../data-views/derived-fields/derived-fields.md)
     +   [Labels and policies](../data-views/data-governance.md)
 
 
