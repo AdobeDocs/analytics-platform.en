@@ -45,8 +45,8 @@ Total Records by timestamps should match with Occurrences, provided that no reco
 
 1. In Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), run the following [!UICONTROL Total Records by timestamps] query:
 
-```
-SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \ 
+        ```
+        SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \ 
         Count(_id) AS Records 
         FROM  {dataset} \ 
         WHERE timestamp>=from_utc_timestamp('{fromDate}','UTC') \ 
@@ -56,7 +56,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         GROUP BY Day \ 
         ORDER BY Day; 
 
-```
+        ```
 
 1. In [Analytics Data Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html ), identify from the raw data whether some rows might have been filtered out by the Analytics Source connector. 
 

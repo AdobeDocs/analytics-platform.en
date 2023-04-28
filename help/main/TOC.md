@@ -206,10 +206,10 @@ breadcrumb-title: Customer Journey Analytics Guide
     +   [Metrics](../components/apply-create-metrics.md)
     +   Filters {#cja-filters}
         + [Filters overview](../components/filters/filters-overview.md)
-        + [Create a filter](../components/filters/create-filters.md)
-        + [Manage filters](../components/filters/manage-filters.md)
+        + [Create filters](../components/filters/create-filters.md)
         + [Quick filters](../components/filters/quick-filters.md)
-        + [Ad hoc filters](../components/filters/ad-hoc-filters.md)
+        + [Filter builder](../components/filters/filter-builder.md)
+        + [Manage filters](../components/filters/manage-filters.md)
         + [Operators](../components/filters/operators.md)
     +   Calculated Metrics {#cja-calcmetrics}
         +   [Calculated metrics overview](../components/calc-metrics/calc-metr-overview.md)
@@ -273,7 +273,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Integrate Adobe Analytics with Customer Journey Analytics](/help/integrations/aa.md)
     + [Integrate Journey Optimizer data with CJA](/help/integrations/ajo.md)
     + [Integrate Decision Management data with CJA](/help/integrations/ajo-od.md)
-    + [Integrate Customer AI data with CJA](/help/integrations/customer-ai.md)
 
 +   Data Governance {#cja-privacy}
     + [Data Governance](../privacy/privacy-overview.md)
