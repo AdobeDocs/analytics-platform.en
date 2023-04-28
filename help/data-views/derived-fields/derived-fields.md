@@ -609,11 +609,11 @@ You have collected URLs instead of the friendly page name for several pages. Thi
 |---|
 | Home Page | 
 | Flight Search | 
-| `http://www.expedia.ca/Hotel-Search` |
-| `https://www.expedia.com/Package-Search` |
+| `http://www.adobetravel.ca/Hotel-Search` |
+| `https://www.adobetravel.com/Package-Search` |
 | Deals & Offers |
-| `http://www.expedia.ca/user/reviews` | 
-| `https://www.expedia.com.br/Generate-Quote/preview` |
+| `http://www.adobetravel.ca/user/reviews` | 
+| `https://www.adobetravel.com.br/Generate-Quote/preview` |
 
 {style="table-layout:auto"}
 
