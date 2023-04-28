@@ -158,7 +158,7 @@ For each supported function, find below:
 
 Combines two or more fields, custom fields, or user-entered values into a single field with defined delimiters.
 
-## Inputs / Operators / Outputs
+## Inputs / Operators / Outputs {#concatenate-io}
 
 | Input Data Type | Input | Included Operators | Output |
 |---|---|---|---|
@@ -167,7 +167,7 @@ Combines two or more fields, custom fields, or user-entered values into a single
 {style="table-layout:auto"}
 
 
-## Use case
+## Use case {#concatenate-uc}
 
 You currently collect origin and destination airport codes as separate fields. You would like to take the two fields and combine them into a single dimension separated by a hyphen (-). So you can analyze the combination of origin and destination to identify top routes booked.
 
@@ -196,7 +196,7 @@ The desired report should look like:
 {style="table-layout:auto"}
 
 
-### Data before
+### Data before {#concatenate-uc-databefore}
 
 | Origin | Destination |
 |----|----|
@@ -208,13 +208,13 @@ The desired report should look like:
 
 {style="table-layout:auto"}
 
-### Custom field
+### Custom field {#concatenate-customfield}
 
 You define a new **[!UICONTROL **Origin - Destination**]** custom field. You use the **[!UICONTROL CONCATENATE]** function to define a rule to concatenate the [!UICONTROL Original] and [!UICONTROL Destination] fields using the `-` [!UICONTROL Delimiter].
 
 ![Concatenate](assets/concatenate.png)
 
-### After
+### Data after {#concatenate-dataafter}
 
 | Origin - Destination<br/>(custom field) |
 |---|
@@ -234,7 +234,7 @@ You define a new **[!UICONTROL **Origin - Destination**]** custom field. You use
 
 Applies conditionals, based on defined criteria from one or more fields. These criteria are then used to define the values in a new custom field, based on the sequence of the conditions.
 
-## Inputs / Operators / Outputs
+## Inputs / Operators / Outputs {#casewhen-io}
 
 | Input Data Type | Input | Included Operators | Output |
 |---|---|---|---|
@@ -243,7 +243,7 @@ Applies conditionals, based on defined criteria from one or more fields. These c
 {style="table-layout:auto"}
 
 
-## Use case 1
+## Use case 1 {#casewhen-uc1}
 
 You want to define rules to identify various marketing channels, by applying cascading logic to set a marketing channel field to the proper value:
 
@@ -268,7 +268,7 @@ In case your site receives the following sample events, containing Referrer and 
 
 {style="table-layout:auto"}
 
-### Data before
+### Data before {#casewhen-uc1-databefore}
 
 | Referrer | Page URL |
 |----|----|
@@ -281,7 +281,7 @@ In case your site receives the following sample events, containing Referrer and 
 
 {style="table-layout:auto"}
 
-### Custom field
+### Custom field {#casewhen-uc1-customfield}
 
 You define a new `Marketing Channel` custom field. You use the **[!UICONTROL CASE WHEN]** functions to define rules that create values for the based on existing values for both the `Page URL` and `Referring URL` field.
 
@@ -289,7 +289,7 @@ Note the usage of the function **[!UICONTROL **URL PARSE**]** to define rules to
 
 ![Concatenate](assets/case-when-1.png)
 
-### Data after
+### Data after {#casewhen-uc1-dataafter}
 
 | Marketing Channel |
 |----|
@@ -303,7 +303,7 @@ Note the usage of the function **[!UICONTROL **URL PARSE**]** to define rules to
 {style="table-layout:auto"}
 
 
-## Use case 2
+## Use case 2 {#casewhen-uc2}
 
 You have collected several different variations of search within your Product Finding Methods dimension. To understand the overall performance of search vs. browse, you must spend a great deal of time combining the results manually.
 
@@ -321,7 +321,7 @@ search-redirect | search |
 {style="table-layout:auto"}
 
 
-### Data before
+### Data before {#casewhen-uc2-databefore}
 
 | Product Finding Methods |
 |----|
@@ -337,13 +337,13 @@ search-redirect | search |
 
 {style="table-layout:auto"}
 
-### Custom field
+### Custom field {#casewhen-uc2-customfield}
 
 You define a `Product Finding Methods (new)` custom field. You create the following **[!UICONTROL **CASE WHEN**]** rules in Rule Builder. These rules apply logic to all possible variations of the old **[!UICONTROL **Product Finding Methods**]** field values for `search` and `browse` using the **[!UICONTROL Contains the phrase]** criterion.
 
 ![Case When 2](assets/case-when-2.png)
 
-### Data after
+### Data after {#casewhen-uc2-dataafter}
 
 | Product Finding Methods (new) |
 |----|
@@ -360,7 +360,7 @@ You define a `Product Finding Methods (new)` custom field. You create the follow
 {style="table-layout:auto"}
 
 
-## Use case 3
+## Use case 3 {#casewhen-uc3}
 
 As a travel company, you would like to bucket trip duration for booked trips so you can report on bucketed lengths of trips. 
 
@@ -393,7 +393,7 @@ Your desired report should look like:
 
 {style="table-layout:auto"}
 
-### Data before
+### Data before {#casewhen-uc3-databefore}
 
 | Trip Duration |
 |---:|
@@ -412,14 +412,14 @@ Your desired report should look like:
 
 {style="table-layout:auto"}
 
-### Custom field
+### Custom field {#casewhen-uc3-customfield}
 
 You define a `Trip Duration (bucketed)` custom field. You create the following **[!UICONTROL **CASE WHEN**]** rule in Rule Builder. This rule applies logic to bucket the old **[!UICONTROL **Trip Duration**]** field values into three values: `short trip`, `medium  trip`, and `long trip`.
 
 ![Case When 3](assets/case-when-3.png)
 
 
-### Data after
+### Data after {#casewhen-uc3-dataafter}
 
 | Trip Duration (bucketed) |
 |---|
@@ -445,7 +445,7 @@ You define a `Trip Duration (bucketed)` custom field. You create the following *
 
 Finds all values in a selected field and replaces those values with a different value in a new custom field.
 
-## Inputs / Operators / Outputs
+## Inputs / Operators / Outputs {#findreplace-io}
 
 | Input Data Type | Input | Included Operators | Output |
 |---|---|---|---|
@@ -454,7 +454,7 @@ Finds all values in a selected field and replaces those values with a different 
 {style="table-layout:auto"}
 
 
-## Use case
+## Use case {#findreplace-uc}
 
 You have received some malformed values for your external marketing channels report, for example `email%20 marketing` instead of `email marketing`. These malformed values fracture your reporting and make it more difficult to see how email is performing. You want to replace `email%20marketing` with `email marketing`.
 
@@ -474,7 +474,7 @@ You have received some malformed values for your external marketing channels rep
 | email marketing | 524 |
 
 
-### Data before
+### Data before {#findreplace-uc-databefore}
 
 | External Marketing |
 |----|
@@ -486,13 +486,13 @@ You have received some malformed values for your external marketing channels rep
 
 {style="table-layout:auto"}
 
-### Custom field
+### Custom field {#findreplace-uc-customfield}
 
 You define a `Email Marketing (updated)` custom field. You use the **[!UICONTROL FIND AND REPLACE]** function to define a rule to find and replace all occurrences of `email%20marketing` with `email marketing`.
 
 ![Concatenate](assets/find-and-replace.png)
 
-### Data after
+### Data after {#findreplace-uc-dataafter}
 
 | External Marketing<br/>(custom field) |
 |----|
@@ -513,7 +513,7 @@ You define a `Email Marketing (updated)` custom field. You use the **[!UICONTROL
 
 Defines a set of lookup values that are replaced by corresponding values.
 
-## Inputs / Operators / Outputs
+## Inputs / Operators / Outputs {#lookup-io}
 
 | Input Data Type | Input | Included Operators | Output |
 |---|---|---|---|
@@ -522,7 +522,7 @@ Defines a set of lookup values that are replaced by corresponding values.
 {style="table-layout:auto"}
 
 
-## Use case 1
+## Use case 1 {#lookup-uc1}
 
 You do have a CSV-file that includes a key column for `hotelID` and one or more additional columns associated with the `hotelID`: `city`, `rooms`, `hotel name`.
 You are collecting Hotel ID in a dimension but would like to create a Hotel Name dimension derived from the `hotelID` in the CSV file.
@@ -558,7 +558,7 @@ You are collecting Hotel ID in a dimension but would like to create a Hotel Name
 
 {style="table-layout:auto"}
 
-### Data before
+### Data before {#lookup-uc1-databefore}
 
 | Hotel ID |
 |----|
@@ -569,13 +569,13 @@ You are collecting Hotel ID in a dimension but would like to create a Hotel Name
 {style="table-layout:auto"}
 
 
-### Custom field
+### Custom field {#lookup-uc1-customfield}
 
 You define a `Hotel Name` custom field. You use the **[!UICONTROL **LOOKUP**]** function to define a rule where you can look up values of the **[!UICONTROL **Hotel ID**]** field and replace with new values.
 
 ![Lookup 1](assets/lookup-1.png)
 
-### Data after
+### Data after {#lookup-uc1-dataafter}
 
 | Hotel Name |
 |----|
@@ -586,11 +586,11 @@ You define a `Hotel Name` custom field. You use the **[!UICONTROL **LOOKUP**]** 
 {style="table-layout:auto"}
 
 
-## Use case 2
+## Use case 2 {#lookup-uc2}
 
 You have collected URLs instead of the friendly page name for several pages. This mixed collection of values breaks the reporting.
 
-### Data
+### Data before {#lookup-uc2-databefore}
 
 | Page Name |
 |---|
@@ -604,13 +604,13 @@ You have collected URLs instead of the friendly page name for several pages. Thi
 
 {style="table-layout:auto"}
 
-### Custom field
+### Custom field {#lookup-uc2-customfield}
 
 You define a `Page Name (updated)` custom field. You use the **[!UICONTROL **LOOKUP**]** function to define a rule where you can look up values of your existing **[!UICONTROL **Page Name**]** field and replace with updated correct values.
 
 ![Lookup 2](assets/lookup-2.png)
 
-### Data after
+### Data after {#lookup-uc2-dataafter}
 
 | Page Name (updated) |
 |---|
@@ -630,7 +630,7 @@ You define a `Page Name (updated)` custom field. You use the **[!UICONTROL **LOO
 
 Parses out different parts of a URL including protocol, host, path, or query parameters.
 
-## Inputs / Operators / Outputs
+## Inputs / Operators / Outputs {#urlparse-io}
 
 | Input Data Type | Input | Included Operators | Output |
 |---|---|---|---|
@@ -639,11 +639,11 @@ Parses out different parts of a URL including protocol, host, path, or query par
 {style="table-layout:auto"}
 
 
-## Use case 1
+## Use case 1 {#urlparse-uc1}
 
 You only want use the referring domain from the referring URL as part of a marketing channel's set of rules.
 
-### Data before
+### Data before {#urlparse-uc1-databefore}
 
 | Referring URL |
 |----|
@@ -654,13 +654,13 @@ You only want use the referring domain from the referring URL as part of a marke
 
 {style="table-layout:auto"}
 
-### Custom field
+### Custom field {#urlparse-uc1-customfield}
 
 You define a  `Referring Domain` custom field. You use the **[!UICONTROL **URL PARSE**]** function to define a rule to fetch the host from the **Referring URL** and store that in the new custom field.
 
 ![Url Parse 1](assets/url-parse-1.png)
 
-### Data after
+### Data after {#urlparse-uc1-dataafter}
 
 | Referrer Domain |
 |----|
@@ -672,11 +672,11 @@ You define a  `Referring Domain` custom field. You use the **[!UICONTROL **URL P
 {style="table-layout:auto"}
 
 
-## Use case 2
+## Use case 2 {#urlparse-uc2}
 
 You want to use the value of the `cid` parameter of a query string in a Page URL as part of the output of a derived tracking code report.
 
-### Data before
+### Data before {#urlparse-uc2-databefore}
 
 | Page URL |
 |----|
@@ -686,13 +686,13 @@ You want to use the value of the `cid` parameter of a query string in a Page URL
 
 {style="table-layout:auto"}
 
-### Custom field
+### Custom field {#urlparse-uc2-customfield}
 
 You define a `Query String CID` custom field. You use the **[!UICONTROL **URL PARSE**]** function to define a rule to fetch the value of the query string parameter in the Page URL, specifying `cid` as the query parameter. The output value is stored in the new custom field.
 
 ![Url Parse 2](assets/url-parse-2.png)
 
-### Data after
+### Data after {#urlparse-uc2-dataafter}
 
 | Query String CID |
 |----|
