@@ -166,6 +166,7 @@ Combines two or more fields, custom fields, or user-entered values into a single
 
 {style="table-layout:auto"}
 
+
 ## Use case
 
 You currently collect origin and destination airport codes as separate fields. You would like to take the two fields and combine them into a single dimension separated by a hyphen (-). So you can analyze the combination of origin and destination to identify top routes booked.
@@ -241,6 +242,7 @@ Applies conditionals, based on defined criteria from one or more fields. These c
 
 {style="table-layout:auto"}
 
+
 ## Use case 1
 
 You want to define rules to identify various marketing channels, by applying cascading logic to set a marketing channel field to the proper value:
@@ -299,6 +301,7 @@ Note the usage of the function **[!UICONTROL **URL PARSE**]** to define rules to
 | Natural Search |
 
 {style="table-layout:auto"}
+
 
 ## Use case 2
 
@@ -450,6 +453,7 @@ Finds all values in a selected field and replaces those values with a different 
 
 {style="table-layout:auto"}
 
+
 ## Use case
 
 You have received some malformed values for your external marketing channels report, for example `email%20 marketing` instead of `email marketing`. These malformed values fracture your reporting and make it more difficult to see how email is performing. You want to replace `email%20marketing` with `email marketing`.
@@ -517,6 +521,7 @@ Defines a set of lookup values that are replaced by corresponding values.
 
 {style="table-layout:auto"}
 
+
 ## Use case 1
 
 You do have a CSV-file that includes a key column for `hotelID` and one or more additional columns associated with the `hotelID`: `city`, `rooms`, `hotel name`.
@@ -576,7 +581,7 @@ You define a `Hotel Name` custom field. You use the **[!UICONTROL **LOOKUP**]** 
 |----|
 | SLC Downtown |
 | LA Airport |
- Market Street |
+| Market Street |
 
 {style="table-layout:auto"}
 
@@ -632,6 +637,7 @@ Parses out different parts of a URL including protocol, host, path, or query par
 | <ul><li>String</li></ul> | <ul><li>Sing field</li><li>Parsing option<ul><li>Get protocol</li><li>Get host</li><li>Get path</li><li>Get query value<ul><li>Query param</li></ul></li><li>Get hash value</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>New custom field</p> |
 
 {style="table-layout:auto"}
+
 
 ## Use case 1
 
