@@ -104,7 +104,7 @@ Currently, the CJA SQL Connector is supported for Power BI and Tableau.
         3.  You are prompted for **[!UICONTROL **Username**]** and **[!UICONTROL **Password**]**. Use the equivalent parameters from Experience Platform Queries [!UICONTROL Credentials].
 
 
-    5.  After successful login, the CJA Data View tables appear in Power BI's **[!UICONTROL **Navigator**]**. Data View tables are identified by using `dv` in their names.
+    5.  After successful login, the CJA Data View tables appear in Power BI's **[!UICONTROL **Navigator**]**. Data View tables are identified by using `dv_` in their names.
 
 
     6.  Select the data view tables that you want to use and select **[!UICONTROL **Load**]**.
@@ -139,7 +139,7 @@ Currently, the CJA SQL Connector is supported for Power BI and Tableau.
 
         3.  Paste **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Database**]** text field.
 
-            Add `?FLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:all?FLATTEN` for example.
+            Add `?%3FFLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:all?%3FFLATTEN` for example.
 
         4.  Select **[!UICONTROL **Username and Password**]** from **[!UICONTROL **Authentication**]** list.
 
@@ -161,11 +161,15 @@ Currently, the CJA SQL Connector is supported for Power BI and Tableau.
 
 See [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=en) for an overview of and more information on the various tools available.
 
+To prevent expiring credentials, administrators can grant non-expiring credentials to maintain a connection between AEP and their BI tool of choice.
+
 ## Functionality
 
 By default, your data views have a table-safe name generated from their friendly name. For example, the data view named [!UICONTROL My Web Data] has the view name `dv_my_web_data`.  
 
 If you want to use the data view IDs as the table names, you can add the optional `CJA_USE_IDS` setting to your database name when connecting. For example, `prod:all?CJA_USE_IDS` shows your data views with names like `dv_ABC123`.
+
+Any DULE settings you might have configured in they have in CJA will carry down into the BI Tool when connected.
 
 ### List Data Views
 
