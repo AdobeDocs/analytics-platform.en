@@ -36,6 +36,8 @@ When you create or edit a custom field, you use the custom field interface.
 | 3 | **[!UICONTROL **Field Settings**]** | You can name and describe your custom field and inspect its field type. | 
 | 4 | **[!UICONTROL **Final Output**]** | This area shows an on-the-fly updated preview of output values, based on data over the last 30 days and the changes you make to the custom field in the Rule builder. |
 
+{style="table-layout:auto"}
+
 When you access the Custom field interface for the first time, the [!UICONTROL Start with a field template] wizard is shown. 
 
 ![Custom field wizard](assets/field-template-dialog.png)
@@ -119,13 +121,15 @@ When you define a rule in the Rule builder, you use the rule interface.
 To quickly create a custom field for specific use cases, function templates are available. These function templates can be accessed from the Selector area in the Custom field interface or are presented upon first use in the [!UICONTROL Start with a field template] wizard.
 
 
-+++ Marketing channels
+### Marketing channels
 
 This template is configured to use the [!UICONTROL URL PARSE] and [!UICONTROL CASE WHEN] functions multiple times to get appropriate values from a URL. Logic is then applied on these values to associate the URL to a specific marketing channel.
 
-![Marketing channel template](assets/marketing-channel-template.png)
++++ Details
 
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Marketing channel template](assets/marketing-channel-template.png)
 
 +++
 
@@ -142,7 +146,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 ## Function reference
 
-For each supported function, find below:
+For each supported function, find details below:
 
 -   inputs, operators and, outputs
 
@@ -154,7 +158,9 @@ For each supported function, find below:
 
 <!-- Concatenate -->
 
-+++ Concatenate
+### Concatenate
+
++++ Details
 
 Combines two or more fields, custom fields, or user-entered values into a single field with defined delimiters.
 
@@ -230,9 +236,11 @@ You define a new **[!UICONTROL **Origin - Destination**]** custom field. You use
 
 <!-- CASE WHEN -->
 
-+++ Case When
+### Case When
 
 Applies conditionals, based on defined criteria from one or more fields. These criteria are then used to define the values in a new custom field, based on the sequence of the conditions.
+
++++ Details
 
 ## Inputs / Operators / Outputs {#casewhen-io}
 
@@ -441,9 +449,11 @@ You define a `Trip Duration (bucketed)` custom field. You create the following *
 
 <!-- FIND AND REPLACE -->
 
-+++ Find and Replace
+### Find and Replace
 
 Finds all values in a selected field and replaces those values with a different value in a new custom field.
+
++++ Details
 
 ## Inputs / Operators / Outputs {#findreplace-io}
 
@@ -509,9 +519,12 @@ You define a `Email Marketing (updated)` custom field. You use the **[!UICONTROL
 
 <!-- LOOKUP -->
 
-+++ Lookup
+### Lookup
 
 Defines a set of lookup values that are replaced by corresponding values.
+
++++ Details
+
 
 ## Inputs / Operators / Outputs {#lookup-io}
 
@@ -626,9 +639,11 @@ You define a `Page Name (updated)` custom field. You use the **[!UICONTROL **LOO
 
 <!-- URL PARSE -->
 
-+++ URL Parse
+### URL Parse
 
 Parses out different parts of a URL including protocol, host, path, or query parameters.
+
++++ Details
 
 ## Inputs / Operators / Outputs {#urlparse-io}
 
