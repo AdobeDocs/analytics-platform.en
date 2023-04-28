@@ -31,7 +31,7 @@ When you create or edit a custom field, you use the custom field interface.
 
 |  | Name | Description |
 |---------|----------|--------|
-| 1 | **Selector** | You use the selector area to select and drag and drop your ![Function](assets/Smock_Function_18_N.svg) function,![Function template](assets/Smock_FileTemplate_18_N.svg) function template,![Schema field](assets/Smock_Folder_18_N.svg) schema field, or![Standard field](assets/Smock_DragHandle_18_N.svg)standard field on to the rule builder. <br/>Use the drop-down to select between [!UICONTROL Functions], [!UICONTROL Function templates], [!UICONTROL Schema fields], and [!UICONTROL Standard fields].<br/>You can search for function, function templates, schema, and standard fields using the Search box. <br/>You can filter the selected object list by selecting ![Filter](assets/Smock_Filter_18_N.svg) Filter and specify filters in the [!UICONTROL Filter fields by] dialog. You can easily remove filters using ![Close](assets/CrossSize75.svg) for each filter. | 
+| 1 | **Selector** | You use the selector area to select and drag and drop your ![Function](assets/Smock_Function_18_N.svg) function,![Function template icon](assets/Smock_FileTemplate_18_N.svg) function template,![Schema field icon](assets/Smock_Folder_18_N.svg) schema field, or![Standard field icon](assets/Smock_DragHandle_18_N.svg)standard field on to the rule builder. <br/>Use the drop-down to select between [!UICONTROL Functions], [!UICONTROL Function templates], [!UICONTROL Schema fields], and [!UICONTROL Standard fields].<br/>You can search for function, function templates, schema, and standard fields using the Search box. <br/>You can filter the selected object list by selecting ![Filter icon](assets/Smock_Filter_18_N.svg) Filter and specify filters in the [!UICONTROL Filter fields by] dialog. You can easily remove filters using ![Close icon](assets/CrossSize75.svg) for each filter. | 
 | 2 | **Rule builder** | You build your custom field sequentially using one or more rules. A rule is a specific implementation of a function and is therefore always associated with only one function. You create a rule by dragging and dropping a function into the Rule Builder. The function type determines the interface of the rule.<br/>See the [Rule interface](#rule-interface) for more information. <br/>You can insert a function at the start, end, or in between rules already available in the Rule Builder. The last rule in the Rule Builder determines the final output of the custom field. |
 | 3 | **[!UICONTROL **Field Settings**]** | You can name and describe your custom field and inspect its field type. | 
 | 4 | **[!UICONTROL **Final Output**]** | This area shows an on-the-fly updated preview of output values, based on data over the last 30 days and the changes you make to the custom field in the Rule builder. |
@@ -40,7 +40,7 @@ When you create or edit a custom field, you use the custom field interface.
 
 When you access the Custom field interface for the first time, the [!UICONTROL Start with a field template] wizard is shown. 
 
-![Custom field wizard](assets/field-template-dialog.png)
+![Custom field template wizard dialog](assets/field-template-dialog.png)
 
 1. Select the template that best describes the type of field you are trying to create. 
 2. Select the **[!UICONTROL **Select**]** button to continue.
@@ -56,8 +56,8 @@ When you define a rule in the Rule builder, you use the rule interface.
 |  | Name | Description |
 |---------|----------|--------|
 | A | **Rule Name** | By default the rule name is **Rule X** (X referring to a sequence number). To edit the name of a rule, select its name and type in the new name, for example `Query Parameter`. |
-| B | **Function Name** | The selected function name for the rule, for example **URL PARSE**. When the function is the last in the sequence of functions and determines the final output values, the function name is followed by **FINAL OUTPUT**, for example **URL PARSE - FINAL OUTPUT**. <br/>To show a popup with more information on the function, select ![Help](assets/Smock_HelpOutline_18_N.svg). |
-| C | **Rule Description** | You can optionally add a description to a rule.<br/>Select ![More](assets/More.svg), then select **[!UICONTROL **Add Description**]** to add a description or **[!UICONTROL **Edit Description**]** to edit an existing description.<br/>Use the editor to enter a description. You can use the toolbar to format the text (using style selector, bold, italic, underline, right, left, centered, color, number list, bullet list) and adding links to external information. <br/>To finish editing the description, click outside of the editor. |
+| B | **Function Name** | The selected function name for the rule, for example [!DNL URL PARSE]. When the function is the last in the sequence of functions and determines the final output values, the function name is followed by [!DNL FINAL OUTPUT], for example [!DNL URL PARSE - FINAL OUTPUT]. <br/>To show a popup with more information on the function, select ![Help icon](assets/Smock_HelpOutline_18_N.svg). |
+| C | **Rule Description** | You can optionally add a description to a rule.<br/>Select ![More icon](assets/More.svg), then select **[!UICONTROL **Add Description**]** to add a description or **[!UICONTROL **Edit Description**]** to edit an existing description.<br/>Use the editor to enter a description. You can use the toolbar to format the text (using style selector, bold, italic, underline, right, left, centered, color, number list, bullet list) and adding links to external information. <br/>To finish editing the description, click outside of the editor. |
 | D | **Function Area** | Defines the logic of the function. The interface depends on the type of function. See [Function reference](#function-reference) on detailed information for each of the functions supported. |
 
 {style="table-layout:auto"}
@@ -87,7 +87,7 @@ When you define a rule in the Rule builder, you use the rule interface.
 
 4.  Select **[!UICONTROL **Custom fields >**]** container.
 
-5.  Hover over the custom field that you want to edit, and select ![Edit](assets/Smock_Edit_18_N.svg).
+5.  Hover over the custom field that you want to edit, and select ![Edit icon](assets/Smock_Edit_18_N.svg).
 
 6.  To edit your custom field, use the [!UICONTROL Edit custom field] interface. See [Custom field interface](#custom-field-interface).
 
@@ -107,7 +107,7 @@ When you define a rule in the Rule builder, you use the rule interface.
 
 4.  Select **[!UICONTROL **Custom fields >**]** container.
 
-5.  Hover over the custom field that you want to delete, and select ![Edit](assets/Smock_Edit_18_N.svg).
+5.  Hover over the custom field that you want to delete, and select ![Edit icon](assets/Smock_Edit_18_N.svg).
 
 6.  In the Use **[!UICONTROL **Edit custom field**]** interface, select Delete.
 
@@ -123,13 +123,13 @@ To quickly create a custom field for specific use cases, function templates are 
 
 ### Marketing channels
 
-This template is configured to use the [!UICONTROL URL PARSE] and [!UICONTROL CASE WHEN] functions multiple times to get appropriate values from a URL. Logic is then applied on these values to associate the URL to a specific marketing channel.
+This template is configured to use the [Url Parse](#dnl-url-parse) and [Case When](#dnl-case-when) functions multiple times to get appropriate values from a URL. Logic is then applied on these values to associate the URL to a specific marketing channel.
 
 +++ Details
 
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
-![Marketing channel template](assets/marketing-channel-template.png)
+![Marketing channel template rule builder](assets/marketing-channel-template.png)
 
 +++
 
@@ -158,11 +158,11 @@ For each supported function, find details below:
 
 <!-- Concatenate -->
 
-### Concatenate
-
-+++ Details
+### [!DNL Concatenate]
 
 Combines two or more fields, custom fields, or user-entered values into a single field with defined delimiters.
+
++++ Details
 
 ## Inputs / Operators / Outputs {#concatenate-io}
 
@@ -218,7 +218,7 @@ The desired report should look like:
 
 You define a new **[!UICONTROL **Origin - Destination**]** custom field. You use the **[!UICONTROL CONCATENATE]** function to define a rule to concatenate the [!UICONTROL Original] and [!UICONTROL Destination] fields using the `-` [!UICONTROL Delimiter].
 
-![Concatenate](assets/concatenate.png)
+![[!DNL Concatenate] rule](assets/concatenate.png)
 
 ### Data after {#concatenate-dataafter}
 
@@ -236,7 +236,7 @@ You define a new **[!UICONTROL **Origin - Destination**]** custom field. You use
 
 <!-- CASE WHEN -->
 
-### Case When
+### [!DNL Case When]
 
 Applies conditionals, based on defined criteria from one or more fields. These criteria are then used to define the values in a new custom field, based on the sequence of the conditions.
 
@@ -295,7 +295,7 @@ You define a new `Marketing Channel` custom field. You use the **[!UICONTROL CAS
 
 Note the usage of the function **[!UICONTROL **URL PARSE**]** to define rules to fetch the values for `Page Url` and `Referring Url` before the **[!UICONTROL **CASE WHEN**]** rules are applied.
 
-![Concatenate](assets/case-when-1.png)
+![[!DNL Case when] rule 1](assets/case-when-1.png)
 
 ### Data after {#casewhen-uc1-dataafter}
 
@@ -349,7 +349,7 @@ search-redirect | search |
 
 You define a `Product Finding Methods (new)` custom field. You create the following **[!UICONTROL **CASE WHEN**]** rules in Rule Builder. These rules apply logic to all possible variations of the old **[!UICONTROL **Product Finding Methods**]** field values for `search` and `browse` using the **[!UICONTROL Contains the phrase]** criterion.
 
-![Case When 2](assets/case-when-2.png)
+![[!DNL Case When] rule 2](assets/case-when-2.png)
 
 ### Data after {#casewhen-uc2-dataafter}
 
@@ -424,7 +424,7 @@ Your desired report should look like:
 
 You define a `Trip Duration (bucketed)` custom field. You create the following **[!UICONTROL **CASE WHEN**]** rule in Rule Builder. This rule applies logic to bucket the old **[!UICONTROL **Trip Duration**]** field values into three values: `short trip`, `medium  trip`, and `long trip`.
 
-![Case When 3](assets/case-when-3.png)
+![[!DNL Case When] rule 3](assets/case-when-3.png)
 
 
 ### Data after {#casewhen-uc3-dataafter}
@@ -449,7 +449,7 @@ You define a `Trip Duration (bucketed)` custom field. You create the following *
 
 <!-- FIND AND REPLACE -->
 
-### Find and Replace
+### [!DNL Find and Replace]
 
 Finds all values in a selected field and replaces those values with a different value in a new custom field.
 
@@ -500,7 +500,7 @@ You have received some malformed values for your external marketing channels rep
 
 You define a `Email Marketing (updated)` custom field. You use the **[!UICONTROL FIND AND REPLACE]** function to define a rule to find and replace all occurrences of `email%20marketing` with `email marketing`.
 
-![Concatenate](assets/find-and-replace.png)
+![[!DNL Find and Replace] rule](assets/find-and-replace.png)
 
 ### Data after {#findreplace-uc-dataafter}
 
@@ -519,7 +519,7 @@ You define a `Email Marketing (updated)` custom field. You use the **[!UICONTROL
 
 <!-- LOOKUP -->
 
-### Lookup
+### [!DNL Lookup]
 
 Defines a set of lookup values that are replaced by corresponding values.
 
@@ -586,7 +586,7 @@ You are collecting Hotel ID in a dimension but would like to create a Hotel Name
 
 You define a `Hotel Name` custom field. You use the **[!UICONTROL **LOOKUP**]** function to define a rule where you can look up values of the **[!UICONTROL **Hotel ID**]** field and replace with new values.
 
-![Lookup 1](assets/lookup-1.png)
+![[!DNL Lookup] rule 1](assets/lookup-1.png)
 
 ### Data after {#lookup-uc1-dataafter}
 
@@ -621,7 +621,7 @@ You have collected URLs instead of the friendly page name for several pages. Thi
 
 You define a `Page Name (updated)` custom field. You use the **[!UICONTROL **LOOKUP**]** function to define a rule where you can look up values of your existing **[!UICONTROL **Page Name**]** field and replace with updated correct values.
 
-![Lookup 2](assets/lookup-2.png)
+![[!DNL Lookup] rule 2](assets/lookup-2.png)
 
 ### Data after {#lookup-uc2-dataafter}
 
@@ -639,7 +639,7 @@ You define a `Page Name (updated)` custom field. You use the **[!UICONTROL **LOO
 
 <!-- URL PARSE -->
 
-### URL Parse
+### [!DNL URL Parse]
 
 Parses out different parts of a URL including protocol, host, path, or query parameters.
 
@@ -673,7 +673,7 @@ You only want use the referring domain from the referring URL as part of a marke
 
 You define a  `Referring Domain` custom field. You use the **[!UICONTROL **URL PARSE**]** function to define a rule to fetch the host from the **Referring URL** and store that in the new custom field.
 
-![Url Parse 1](assets/url-parse-1.png)
+![[!DNL Url Parse] rule 1](assets/url-parse-1.png)
 
 ### Data after {#urlparse-uc1-dataafter}
 
@@ -705,7 +705,7 @@ You want to use the value of the `cid` parameter of a query string in a Page URL
 
 You define a `Query String CID` custom field. You use the **[!UICONTROL **URL PARSE**]** function to define a rule to fetch the value of the query string parameter in the Page URL, specifying `cid` as the query parameter. The output value is stored in the new custom field.
 
-![Url Parse 2](assets/url-parse-2.png)
+![[!DNL Url Parse] rule 2](assets/url-parse-2.png)
 
 ### Data after {#urlparse-uc2-dataafter}
 
