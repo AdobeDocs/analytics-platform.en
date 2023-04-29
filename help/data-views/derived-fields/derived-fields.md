@@ -5,8 +5,8 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: yes
 hidefromtoc: yes
+exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 ---
-
 # Derived fields
 
 {{release-limited-testing}}
