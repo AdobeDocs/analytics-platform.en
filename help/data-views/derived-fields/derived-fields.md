@@ -147,14 +147,21 @@ To use the template, you have to specify the correct parameters for each functio
 
 ## Function reference
 
-For each supported function, find details below:
+For each supported function, find details below on:
 
--   inputs, operators and, outputs
+-   specifications: 
+    - input data type: type of data supported,
+    - input: possible values for input,
+    - included operators: operatotors supported for this function (if any),
+    - limit: maximum number of rules with this function you can use in a derived field,
+    - output.
 
 -   use cases, including:
     - data before defining the custom field
     - how to define the custom field
     - data after defining the custom field
+
+-   dependencies (optional)
 
 
 <!-- Concatenate -->
@@ -165,11 +172,11 @@ Combines two or more fields, custom fields, or user-entered values into a single
 
 +++ Details
 
-## Inputs / Operators / Outputs {#concatenate-io}
+## Specifications {#concatenate-io}
 
-| Input Data Type | Input | Included Operators | Output |
-|---|---|---|---|
-| <p>String</p> | <ul><li>Two or more values to combine<ul><li>Fields</li><li>Derived value from a previous rule</li><li>User-entered value</li></ul></li><li>Delimiters<ul><li>Input or selection of a delimiter for each value</li></ul></li> </ul> | <p>N/A</p>| <p>New custom field</p> |
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|:--:|---|
+| <p>String</p> | <ul><li>Two or more values to combine<ul><li>Fields</li><li>Derived value from a previous rule</li><li>User-entered value</li></ul></li><li>Delimiters<ul><li>Input or selection of a delimiter for each value</li></ul></li> </ul> | <p>N/A</p>| <p>2</p> | <p>New custom field</p> |
 
 {style="table-layout:auto"}
 
@@ -194,7 +201,7 @@ Imagine the following bookings occur:
 The desired report should look like:
 
 | Origin / Destination | Bookings |
-|---|---|
+|----|---:|
 | SLC-MCO | 2 |
 | SLC-LAX | 1 |
 | SLC-SEA | 1 |
@@ -206,7 +213,7 @@ The desired report should look like:
 ### Data before {#concatenate-uc-databefore}
 
 | Origin | Destination |
-|----|----|
+|----|---:|
 | SLC | MCO |
 | SLC | LAX |
 | SLC | SEA |
@@ -243,11 +250,11 @@ Applies conditionals, based on defined criteria from one or more fields. These c
 
 +++ Details
 
-## Inputs / Operators / Outputs {#casewhen-io}
+## Specifications {#casewhen-io}
 
-| Input Data Type | Input | Included Operators | Output |
-|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date/Date-Time</li></ul> | <ul><li>Input Fields</li><li>Criteria</li></ul> | <p><u>Strings</u></p><ul><li>Equals</li><li>Equals any term</li><li>Contains the phrase</li><li>Contains any term</li><li>Contains all terms</li><li>Starts with</li><li>Starts with any term</li><li>Ends with</li><li>Ends with any term</li><li>Does not equal</li><li>Does not equal any term</li><li>Does not contain the phrase</li><li>Does not contain any term</li><li>Does not contain all terms</li><li>Does not start with</li><li>Does not start with any term</li><li>Does not end with</li><li>Does not end with any term</li><li>Is set</li><li>Is not set</li></ul><p><u>Numeric</u></p><ul><li>Equals</li><li>Does not equal</li><li>Is greater than</li><li>Is greater than or equal to</li><li>Is less than</li><li>Is less than or equal to</li><li>Is set</li><li>Is not set</li></ul><p><u>Dates</u></p><ul><li>Equals</li><li>Does not equal</li><li>Is later than</li><li>Is later than or equal to</li><li>Is before</li><li>Is before or equal to</li><li>Is set</li><li>Is not set</li></ul> | <p>New custom field</p> |
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|:---:|---|
+| <ul><li>String</li><li>Numeric</li><li>Date/Date-Time</li></ul> | <ul><li>Input Fields</li><li>Criteria</li></ul> | <p><u>Strings</u></p><ul><li>Equals</li><li>Equals any term</li><li>Contains the phrase</li><li>Contains any term</li><li>Contains all terms</li><li>Starts with</li><li>Starts with any term</li><li>Ends with</li><li>Ends with any term</li><li>Does not equal</li><li>Does not equal any term</li><li>Does not contain the phrase</li><li>Does not contain any term</li><li>Does not contain all terms</li><li>Does not start with</li><li>Does not start with any term</li><li>Does not end with</li><li>Does not end with any term</li><li>Is set</li><li>Is not set</li></ul><p><u>Numeric</u></p><ul><li>Equals</li><li>Does not equal</li><li>Is greater than</li><li>Is greater than or equal to</li><li>Is less than</li><li>Is less than or equal to</li><li>Is set</li><li>Is not set</li></ul><p><u>Dates</u></p><ul><li>Equals</li><li>Does not equal</li><li>Is later than</li><li>Is later than or equal to</li><li>Is before</li><li>Is before or equal to</li><li>Is set</li><li>Is not set</li></ul> | <p>5</p> |<p>New custom field</p> |
 
 {style="table-layout:auto"}
 
@@ -267,7 +274,7 @@ You want to define rules to identify various marketing channels, by applying cas
 In case your site receives the following sample events, containing Referrer and Page URL, these events should be identified as follows:
 
 | Event | Referrer | Page URL | Marketing Channel |
-|:----:|----|----|----|
+|:--:|----|----|----|
 | 1 | `https://facebook.com` | `https://site.com/home` | Natural Social |
 | 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | Display |
 | 3 | |  `https://site.com/?cid=em_12345678` | Email |
@@ -419,8 +426,6 @@ Your desired report should look like:
 | 21 | 
 | 8 | 
 
-{style="table-layout:auto"}
-
 ### Custom field {#casewhen-uc3-customfield}
 
 You define a `Trip Duration (bucketed)` custom field. You create the following **[!UICONTROL **CASE WHEN**]** rule in Rule Builder. This rule applies logic to bucket the old **[!UICONTROL **Trip Duration**]** field values into three values: `short trip`, `medium  trip`, and `long trip`.
@@ -445,6 +450,32 @@ You define a `Trip Duration (bucketed)` custom field. You create the following *
 |long trip|
 |long trip|
 
+
+## Dependencies
+
+The following dependencies do apply when selecting and setting values.
+
+
+|  | Dataset dependencies |
+|:---:|----|
+| <span style='color: red'>A</span> | Values you _select_ within the same [!UICONTROL If], [!UICONTROL Else If] construct (using [!UICONTROL And] or [!UICONTROL Or]) in a rule must originate from the same dataset. |
+| <span style='color: red'>B</span> | All the values you _set_ within constructs and across the rule must originate from the same dataset. |
+| <span style='color: blue'>C</span> | The values you _select_ across [!UICONTROL If], [!UICONTROL Else If] constructs in the rule do _not_ have to originate from the same dataset. |
+
+{style="table-layout:auto"}
+
+![Case When Dataset Dependencies](assets/case-when-datasets.png)
+
+
+|  | Type dependencies |
+|:---:|----|
+| <span style='color: red'>D</span> | The types of value you _set_ across the rule need to be the same. | 
+| <span style='color: blue'>E</span> | The types of value you _select_ within a construct or across constructs in a rule can be of any type (string, numeric, dates). |
+
+{style="table-layout:auto"}
+
+![Case When Type Dependencies](assets/case-when-types.png)
+
 +++
 
 
@@ -456,11 +487,11 @@ Finds all values in a selected field and replaces those values with a different 
 
 +++ Details
 
-## Inputs / Operators / Outputs {#findreplace-io}
+## Specifications {#findreplace-io}
 
-| Input Data Type | Input | Included Operators | Output |
-|---|---|---|---|
-| <p>String</p> | <ul><li><span>'When to replace' field criteria</span></li><li><span>'Replace with' field value</span><ul><li><span>User-entered</span></li><li><span>Separate field</span></li></ul></li></ul> | <p><u>Strings</u></p><ul><li>Find All and Replace All</li></ul> | <p>New custom field</p> |
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|:---:|---|
+| <p>String</p> | <ul><li><span>'When to replace' field criteria</span></li><li><span>'Replace with' field value</span><ul><li><span>User-entered</span></li><li><span>Separate field</span></li></ul></li></ul> | <p><u>Strings</u></p><ul><li>Find All and Replace All</li></ul> | <p>1</p> | <p>New custom field</p> |
 
 {style="table-layout:auto"}
 
@@ -472,16 +503,16 @@ You have received some malformed values for your external marketing channels rep
 **Original Report**
 
 | External Marketing Channels | Sessions |
-|---|---|
+|---|--:|
 | email marketing | 500 |
-| email%20marketing| 24 |
+| email %20marketing| 24 |
 
 {style="table-layout:auto"}
 
 **Preferred Report**
 
 | External Marketing Channels | Sessions |
-|---|---|
+|---|--:|
 | email marketing | 524 |
 
 
@@ -527,11 +558,11 @@ Defines a set of lookup values that are replaced by corresponding values.
 +++ Details
 
 
-## Inputs / Operators / Outputs {#lookup-io}
+## Specifications {#lookup-io}
 
-| Input Data Type | Input | Included Operators | Output |
-|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>Sing field</li><li>Lookup file<ul><li>Key Column</li><li>New Field Column</li></ul></li></ul> | <p>N/A</p> | <p>New custom field</p> |
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|:---:|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>Sing field</li><li>Lookup file<ul><li>Key Column</li><li>New Field Column</li></ul></li></ul> | <p>N/A</p> | <p>5</p> | <p>New custom field</p> |
 
 {style="table-layout:auto"}
 
@@ -646,11 +677,11 @@ Parses out different parts of a URL including protocol, host, path, or query par
 
 +++ Details
 
-## Inputs / Operators / Outputs {#urlparse-io}
+## Specifications {#urlparse-io}
 
-| Input Data Type | Input | Included Operators | Output |
-|---|---|---|---|
-| <ul><li>String</li></ul> | <ul><li>Sing field</li><li>Parsing option<ul><li>Get protocol</li><li>Get host</li><li>Get path</li><li>Get query value<ul><li>Query param</li></ul></li><li>Get hash value</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>New custom field</p> |
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|:---:|---|
+| <ul><li>String</li></ul> | <ul><li>Sing field</li><li>Parsing option<ul><li>Get protocol</li><li>Get host</li><li>Get path</li><li>Get query value<ul><li>Query param</li></ul></li><li>Get hash value</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>5</p> | <p>New custom field</p> |
 
 {style="table-layout:auto"}
 
