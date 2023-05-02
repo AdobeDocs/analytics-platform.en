@@ -455,11 +455,10 @@ You define a `Trip Duration (bucketed)` custom field. You create the following *
 
 The following dependencies do apply when selecting and setting values.
 
-
 |  | Dataset dependencies |
 |:---:|----|
 | <span style='color: red'>A</span> | Values you _select_ within the same [!UICONTROL If], [!UICONTROL Else If] construct (using [!UICONTROL And] or [!UICONTROL Or]) in a rule must originate from the same dataset. |
-| <span style='color: red'>B</span> | All the values you _set_ within constructs and across the rule must originate from the same dataset. |
+| <span style='color: red'>B</span> | All the values you _set_ across a rule must originate from the same dataset. |
 | <span style='color: blue'>C</span> | The values you _select_ across [!UICONTROL If], [!UICONTROL Else If] constructs in the rule do _not_ have to originate from the same dataset. |
 
 {style="table-layout:auto"}
@@ -469,8 +468,8 @@ The following dependencies do apply when selecting and setting values.
 
 |  | Type dependencies |
 |:---:|----|
-| <span style='color: red'>D</span> | The types of value you _set_ across the rule need to be the same. | 
-| <span style='color: blue'>E</span> | The types of value you _select_ within a construct or across constructs in a rule can be of any type (string, numeric, dates). |
+| <span style='color: red'>D</span> | The value types that you _set_ across a rule must be the same. | 
+| <span style='color: blue'>E</span> | The value types that you _select_ within a construct or across constructs in a rule can be of any type (string, numeric, dates). |
 
 {style="table-layout:auto"}
 
