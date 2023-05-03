@@ -5,8 +5,6 @@ exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 ---
 # Compare data processing across Adobe Analytics and Customer Journey Analytics.
 
-<!--
-
 You often need the ability to process data before it is useful for reporting. You can process that data at several stages in the journey that spans from collecting data to generating your report or visualization.
 
 In Adobe Analytics most of that processing of data occurs immediately after collecting the data. Functionalties like VISTA Rules, Processing Rules, Marketing Channels Processing Rules are available to support this **collection-time processing**. 
@@ -19,9 +17,6 @@ In Adobe Analytics, report-time processing commonly represents a smaller amount 
 In contrast, Customer Journey Analytics (CJA) is designed to require minimal upfront collection-time processing before data being is organized and stored. The underlying architecture of CJA is more designed to work with the stored data at report-time and offers its powerful report-time processing functionality not only in  Workspace but also, even more importantly, through the definition of components in your Data Views. 
 
 ![CJA report-time processing](../assets/cja-processing.png)
-
--->
-
 
 Understanding the differences in data processing for the various reporting features can be helpful in understanding which metrics are available where and why they may differ. 
 
