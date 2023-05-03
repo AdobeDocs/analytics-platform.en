@@ -31,10 +31,11 @@ Once logged in, your first stop can be the Analysis Workspace Training Tutorial 
 
 ## Create a new project {#new-project}
 
-After completing the tutorial, you are ready to begin building your first project. On the [!UICONTROL Projects] tab, you can choose to start from
+After completing the tutorial, you are ready to begin building your first project. On the [!UICONTROL Projects] tab, you can choose to start from any of the following:
 
 * [!UICONTROL Blank project] if you plan to share your analysis from the browser, or 
 * [[!UICONTROL Blank mobile scorecard]](/help/mobile-app/curator.md), if you plan to share your analysis from the Customer Journey Analytics dashboards mobile app.
+* [[!UICONTROL Guided Analysis]](../guided-analysis/overview.md) for those who have purchased the Product Analytics add-on. Guided Analysis simplifies reporting to guide you to actionable insights.
 
 ## Build your analysis {#analysis}
 

@@ -185,6 +185,23 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Long-tail in Analysis Workspace](../analysis-workspace/workspace-faq/long-tail.md)
 
 
+
++   Analytics dashboards {#cja-dashboards}
+    + [Analytics dashboards - Overview](../mobile-app/home.md)
+    + [Curator tasks](../mobile-app/curator.md)
+    + [Create a mobile scorecard](../mobile-app/create-scorecard.md)
+    + [Set up executives to use dashboards](../mobile-app/set-up-execs.md)
+    + [Executive user quick start guide](../mobile-app/executive.md)
+
++   Guided Analysis {#guided-analysis}
+    +   [Overview](../guided-analysis/overview.md)
+    +   [Interface](../guided-analysis/interface.md)
+    +   Analysis types {#analysis-types}
+        + [Overview](../guided-analysis/analysis-types/overview.md)
+        + [Funnel](../guided-analysis/analysis-types/funnel.md)
+        + [Trends](../guided-analysis/analysis-types/trends.md)
+        + [User growth](../guided-analysis/analysis-types/user-growth.md)
+
 +   Components {#cja-components}
     +   [Components overview](../components/overview.md)
     +   [Add component descriptions](../components/add-component-descriptions.md)
@@ -243,12 +260,6 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
         + [Edit component entries in the Data Dictionary](../components/data-dictionary/edit-entries-data-dictionary.md)
         + [Monitor Data Dictionary health](../components/data-dictionary/monitor-data-dictionary-health.md)
-+   Analytics dashboards {#cja-dashboards}
-    + [Analytics dashboards - Overview](../mobile-app/home.md)
-    + [Curator tasks](../mobile-app/curator.md)
-    + [Create a mobile scorecard](../mobile-app/create-scorecard.md)
-    + [Set up executives to use dashboards](../mobile-app/set-up-execs.md)
-    + [Executive user quick start guide](../mobile-app/executive.md)
 
 +   Report Builder {#cja-reportbuilder}
     + [Report Builder Overview](../report-builder/report-buider-overview.md)

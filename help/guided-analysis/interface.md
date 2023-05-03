@@ -8,7 +8,12 @@ asdf
 
 ## Left rail
 
+asdf
+
 ## Chart
+
+asdf
 
 ## Table
 
+asdf
