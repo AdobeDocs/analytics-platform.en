@@ -453,7 +453,7 @@ You define a `Trip Duration (bucketed)` custom field. You create the following *
 
 ## Constraints
 
-CJA uses a nested container model for its functionality. This nested container model determines the constraints when using the rule builder. The default nested container model CJA uses is structured like illustrated below:
+CJA uses a flexible nested container structure modeled after Adobe Experience Platform's [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en) (Experience Data Model) for its functionality. This container model, albeit flexible by nature, imposes some constraints when using the rule builder. The default nested container model CJA uses is structured like illustrated below:
 
 <p align="center">
 <img src="./assets/containers.png" width="70%" valign="middle">
