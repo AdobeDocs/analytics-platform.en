@@ -33,7 +33,7 @@ When you create or edit a custom field, you use the custom field interface.
 |  | Name | Description |
 |---------|----------|--------|
 | 1 | **Selector** | You use the selector area to select and drag and drop your ![Function](assets/Smock_Function_18_N.svg) function,![Function template icon](assets/Smock_FileTemplate_18_N.svg) function template,![Schema field icon](assets/Smock_Folder_18_N.svg) schema field, or![Standard field icon](assets/Smock_DragHandle_18_N.svg)standard field on to the rule builder. <br/>Use the drop-down to select between [!UICONTROL Functions], [!UICONTROL Function templates], [!UICONTROL Schema fields], and [!UICONTROL Standard fields].<br/>You can search for function, function templates, schema, and standard fields using the ![Search  icon](assets/Smock_Search_18_N.svg) Search box. <br/>You can filter the selected object list by selecting ![Filter icon](assets/Smock_Filter_18_N.svg) Filter and specify filters in the [!UICONTROL Filter fields by] dialog. You can easily remove filters using ![Close icon](assets/CrossSize75.svg) for each filter. | 
-| 2 | **Rule builder** | You build your custom field sequentially using one or more rules. A rule is a specific implementation of a function and is therefore always associated with only one function. You create a rule by dragging and dropping a function into the Rule Builder. The function type determines the interface of the rule.<br/>See the [Rule interface](#rule-interface) for more information. <br/>You can insert a function at the start, end, or in between rules already available in the Rule Builder. The last rule in the Rule Builder determines the final output of the custom field. |
+| 2 | **Rule builder** | You build your custom field sequentially using one or more rules. A rule is a specific implementation of a function and is therefore always associated with only one function. You create a rule by dragging and dropping a function into the Rule builder. The function type determines the interface of the rule.<br/>See the [Rule interface](#rule-interface) for more information. <br/>You can insert a function at the start, end, or in between rules already available in the Rule builder. The last rule in the Rule builder determines the final output of the custom field. |
 | 3 | **[!UICONTROL **Field Settings**]** | You can name and describe your custom field and inspect its field type. | 
 | 4 | **[!UICONTROL **Final Output**]** | This area shows an on-the-fly updated preview of output values, based on data over the last 30 days and the changes you make to the custom field in the Rule builder. |
 
@@ -161,7 +161,7 @@ For each supported function, find details below on:
     - how to define the custom field
     - data after defining the custom field
 
--   dependencies (optional)
+-   constraints (optional)
 
 
 <!-- Concatenate -->
@@ -355,7 +355,7 @@ search-redirect | search |
 
 ### Custom field {#casewhen-uc2-customfield}
 
-You define a `Product Finding Methods (new)` custom field. You create the following **[!UICONTROL **CASE WHEN**]** rules in Rule Builder. These rules apply logic to all possible variations of the old **[!UICONTROL **Product Finding Methods**]** field values for `search` and `browse` using the **[!UICONTROL Contains the phrase]** criterion.
+You define a `Product Finding Methods (new)` custom field. You create the following **[!UICONTROL **CASE WHEN**]** rules in Rule builder. These rules apply logic to all possible variations of the old **[!UICONTROL **Product Finding Methods**]** field values for `search` and `browse` using the **[!UICONTROL Contains the phrase]** criterion.
 
 ![[!DNL Case When] rule 2](assets/case-when-2.png)
 
@@ -428,7 +428,7 @@ Your desired report should look like:
 
 ### Custom field {#casewhen-uc3-customfield}
 
-You define a `Trip Duration (bucketed)` custom field. You create the following **[!UICONTROL **CASE WHEN**]** rule in Rule Builder. This rule applies logic to bucket the old **[!UICONTROL **Trip Duration**]** field values into three values: `short trip`, `medium  trip`, and `long trip`.
+You define a `Trip Duration (bucketed)` custom field. You create the following **[!UICONTROL **CASE WHEN**]** rule in Rule builder. This rule applies logic to bucket the old **[!UICONTROL **Trip Duration**]** field values into three values: `short trip`, `medium  trip`, and `long trip`.
 
 ![[!DNL Case When] rule 3](assets/case-when-3.png)
 
@@ -451,29 +451,25 @@ You define a `Trip Duration (bucketed)` custom field. You create the following *
 |long trip|
 
 
-## Dependencies
+## Constraints
 
-The following dependencies do apply when selecting and setting values.
+CJA uses a nested container model for its functionality. This nested container model determines the constraints when using the rule builder. The default nested container model CJA uses is structured like illustrated below:
 
-|  | Dataset dependencies |
+<p align="center">
+<img src="./assets/containers.png" width="70%" valign="middle">
+</p>
+
+See [Containers](../create-dataview.md#containers) and [Filter containers](../../components/filters/filters-overview.md#filter-containers) for more background information.
+
+The following container constraints do apply and are enforced when _selecting_ and _setting_ values.
+
+|  |  Constraints |
 |:---:|----|
-| <span style='color: red'>A</span> | Values you _select_ within the same [!UICONTROL If], [!UICONTROL Else If] construct (using [!UICONTROL And] or [!UICONTROL Or]) in a rule must originate from the same dataset. |
-| <span style='color: red'>B</span> | All the values you _set_ across a rule must originate from the same dataset. |
-| <span style='color: blue'>C</span> | The values you _select_ across [!UICONTROL If], [!UICONTROL Else If] constructs in the rule do _not_ have to originate from the same dataset. |
+| **<span style='color: red'>A</span>** | Values you _select_ within the same [!UICONTROL If], [!UICONTROL Else If] construct (using [!UICONTROL And] or [!UICONTROL Or]) in a rule must originate from the same container and can be of any type (string ![String](assets/Smock_ABC_18_N.svg), numeric ![Numeric](assets/Smock_123_18_N.svg), and so forth). <br/>![Dependency A](assets/dependency-a.png)|
+| **<span style='color: red'>B</span>** | All the values you _set_ across a rule must be from the same container and have the same type or a custom value of the same type. <br/> ![Dependency B](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | The values you _select_ across [!UICONTROL If], [!UICONTROL Else If] constructs in the rule do _not_ have to originate from the same container and do _not_ have to be of the same type. <br/> ![Dependency C](assets/dependency-c.png)  |
 
 {style="table-layout:auto"}
-
-![Case When Dataset Dependencies](assets/case-when-datasets.png)
-
-
-|  | Type dependencies |
-|:---:|----|
-| <span style='color: red'>D</span> | The value types that you _set_ across a rule must be the same. | 
-| <span style='color: blue'>E</span> | The value types that you _select_ within a construct or across constructs in a rule can be of any type (string, numeric, dates). |
-
-{style="table-layout:auto"}
-
-![Case When Type Dependencies](assets/case-when-types.png)
 
 +++
 
@@ -561,7 +557,7 @@ Defines a set of lookup values that are replaced by corresponding values.
 
 | Input Data Type | Input | Included Operators | Limit | Output |
 |---|---|---|:---:|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>Sing field</li><li>Lookup file<ul><li>Key Column</li><li>New Field Column</li></ul></li></ul> | <p>N/A</p> | <p>5</p> | <p>New custom field</p> |
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>Single field</li><li>Lookup file<ul><li>Key Column</li><li>New Field Column</li></ul></li></ul> | <p>N/A</p> | <p>5</p> | <p>New custom field</p> |
 
 {style="table-layout:auto"}
 
@@ -680,7 +676,7 @@ Parses out different parts of a URL including protocol, host, path, or query par
 
 | Input Data Type | Input | Included Operators | Limit | Output |
 |---|---|---|:---:|---|
-| <ul><li>String</li></ul> | <ul><li>Sing field</li><li>Parsing option<ul><li>Get protocol</li><li>Get host</li><li>Get path</li><li>Get query value<ul><li>Query param</li></ul></li><li>Get hash value</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>5</p> | <p>New custom field</p> |
+| <ul><li>String</li></ul> | <ul><li>Single field</li><li>Parsing option<ul><li>Get protocol</li><li>Get host</li><li>Get path</li><li>Get query value<ul><li>Query param</li></ul></li><li>Get hash value</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>5</p> | <p>New custom field</p> |
 
 {style="table-layout:auto"}
 
