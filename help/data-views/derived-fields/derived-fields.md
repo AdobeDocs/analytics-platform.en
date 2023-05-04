@@ -161,7 +161,7 @@ For each supported function, find details below on:
     - how to define the custom field
     - data after defining the custom field
 
--   dependencies (optional)
+-   constraints (optional)
 
 
 <!-- Concatenate -->
@@ -463,11 +463,11 @@ See [Containers](../create-dataview.md#containers) and [Filter containers](../..
 
 The following container constraints do apply and are enforced when _selecting_ and _setting_ values.
 
-|  | Dataset dependencies |
+|  |  Constraints |
 |:---:|----|
 | **<span style='color: red'>A</span>** | Values you _select_ within the same [!UICONTROL If], [!UICONTROL Else If] construct (using [!UICONTROL And] or [!UICONTROL Or]) in a rule must originate from the same container and can be of any type (string ![String](assets/Smock_ABC_18_N.svg), numeric ![Numeric](assets/Smock_123_18_N.svg), and so forth). <br/>![Dependency A](assets/dependency-a.png)|
 | **<span style='color: red'>B</span>** | All the values you _set_ across a rule must be from the same container and have the same type or a custom value of the same type. <br/> ![Dependency B](assets/dependency-b.png) |
-| <span style='color: blue'>C</span> | The values you _select_ across [!UICONTROL If], [!UICONTROL Else If] constructs in the rule do _not_ have to originate from the same container and do not have to be of the same type. <br/> ![Dependency C](assets/dependency-c.png)  |
+| **<span style='color: blue'>C</span>** | The values you _select_ across [!UICONTROL If], [!UICONTROL Else If] constructs in the rule do _not_ have to originate from the same container and do _not_ have to be of the same type. <br/> ![Dependency C](assets/dependency-c.png)  |
 
 {style="table-layout:auto"}
 
