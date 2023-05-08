@@ -7,7 +7,7 @@ role: User, Admin
 
 # Intelligent Captions
 
-Intelligent captions use data science to provide valuable natural-language insights for Workspace visualizations. The initial release provides auto-generated insights for the [Line](line.md) visualization. Typical insights include ...
+Intelligent captions use data science to provide valuable natural-language insights for Workspace visualizations. The initial release provides auto-generated insights for the [Line](line.md) visualization. Analysts need these insights to be able to provide context to users with whom they might be sharing  their projects.
 
 Intelligent captions are geared towards:
 
@@ -15,10 +15,6 @@ Intelligent captions are geared towards:
 * Analysts who need narratives to share with other users.
 
 Captions are available to all CJA users and do not require special permissions. 
-
-Here is a sample of what the captions could look like:
-
-![Captions](assets/captions.png)
 
 ## Launch intelligent captions {#launch}
 
@@ -28,4 +24,18 @@ To launch auto-generated captions for a line visualization, click the **[!UICONT
 
 Natural-language insights are now being generated.
 
+## View and interpret captions {#view}
+
+Here is a sample of what the captions could look like:
+
+![Captions](assets/captions.png)
+
+
+## Additional tasks {#tasks}
+
+* You can **copy the captions to a clipboard** and paste them into a Powerpoint or other tool.
+
+* You can **edit the captions, such as hiding or unhiding** a particular category of insights. For example, if you don't want the insight about the minimum order, you can just hide it and click apply and it will not show again.
+
+* You can **export captions via PDFs**, as long as the project is saved with the captions generated.
 
