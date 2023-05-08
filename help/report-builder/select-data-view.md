@@ -20,7 +20,7 @@ To select a data view from a cell, first build a data block and assign multiple 
 
 1. Click the from cell icon.
 
-   ![Cell icon](./assets/cell-icon.png)
+   ![Cell icon](/help/report-builder/assets/cell-icon.png)
 
 1. Select a cell location to add the data views to the selected cell.
 
@@ -30,7 +30,7 @@ To select a data view from a cell, first build a data block and assign multiple 
 
 1. Select the data views that you want to assign to the cell.
 
-   ![Select data view](./assets/select-data-view.png)
+   ![Cell icon](/help/report-builder/assets/select-data-view.png)
 
 1. Click Apply.
 
@@ -44,11 +44,11 @@ To select a data view from a cell, first build a data block and assign multiple 
 
 1. Click the **Data views from cell link**.
 
-   ![Select data view](./assets/select-data-view.png)
+   ![Select data view](/help/report-builder/assets/select-data-view.png)
 
    The Select data view from cell pane displays a drop-down menu listing the data views that you selected previously (Step 5).
 
-   ![Add data view from cell](./assets/add-data-view-cell.png)
+   ![Add data view from cell](/help/report-builder/assets/add-data-view-cell.png)
 
 1. Select a different data view from the drop-down list.
 
