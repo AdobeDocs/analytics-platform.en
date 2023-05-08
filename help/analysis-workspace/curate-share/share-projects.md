@@ -119,7 +119,7 @@ You can grant [read-only access](/help/analysis-workspace/curate-share/view-only
 > 
 >* Users you share with can change the project date range. The date range you set for the project is shown by default.
 >
->* A project might become inaccessible if too many users try to access it at the same time.
+>* A project might become inaccessible if many users attempt to access a given link at the same time. By default, more than 190 people can access a single link every 5 minutes. If your organization reaches this limit, wait 5 minutes and then try accessing the link again.
 
 To share an Analysis Workspace project with anyone:
 
