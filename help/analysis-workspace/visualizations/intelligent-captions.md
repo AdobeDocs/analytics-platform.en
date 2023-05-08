@@ -7,7 +7,11 @@ role: User, Admin
 
 # Intelligent Captions
 
-Intelligent captions use data science to provide valuable natural-language insights for Workspace visualizations. The initial release provides auto-generated insights for the [Line](line.md) visualization. Analysts need these insights to be able to provide context to users with whom they might be sharing  their projects.
+{{release-limited-testing}}
+
+Intelligent captions use data science to provide valuable natural-language insights for Workspace visualizations. The initial release provides auto-generated insights for the [Line](line.md) visualization. (Other visualizations will follow.)
+
+Analysts need these insights to be able to provide context to users with whom they might be sharing their projects.
 
 Intelligent captions are geared towards:
 
@@ -31,11 +35,21 @@ Here is a sample of what the captions could look like:
 ![Captions](assets/captions.png)
 
 
-## Additional tasks {#tasks}
+## Copy to clipboard {#copy}
 
-* You can **copy the captions to a clipboard** and paste them into a Powerpoint or other tool.
+You can copy the captions to a clipboard and paste them into a Powerpoint or other tool. Find the **[!UICONTROL Copy captions to clipboard]** icon at the top right of the captions dialog.
 
-* You can **edit the captions, such as hiding or unhiding** a particular category of insights. For example, if you don't want the insight about the minimum order, you can just hide it and click apply and it will not show again.
+## Edit captions {#edit}
 
-* You can **export captions via PDFs**, as long as the project is saved with the captions generated.
+You can edit the captions, such as hiding or unhiding a particular category of insights. For example, if you don't want the insight about the minimum order, you can just hide it and click apply and it will not show again. 
+
+1. Click **[!UICONTROL Edit intelligent captions display]** icon next to the clipboard icon.
+
+1. In the edit dialog, click the eye icon next to the insight you would like to hide.
+
+1. Click **[!UICONTROL Apply]**.
+
+## Export captions {#export}
+
+You can **export captions via PDF**, as long as the project is saved with the captions generated.
 

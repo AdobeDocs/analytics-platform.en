@@ -6,6 +6,10 @@ exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 ---
 # Line
 
+>[!NOTE]
+>
+>The Line visualization will soon feature [intelligent captions](/help/analysis-workspace/visualizations/intelligent-captions.md).
+
 The Line visualization represents metrics using a line in order to show how values change over a period of time. A line chart can be used only when time is used as a dimension.
 
 ![Line visualization](assets/line-viz.png)
