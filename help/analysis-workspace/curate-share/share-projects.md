@@ -118,6 +118,8 @@ You can grant [read-only access](/help/analysis-workspace/curate-share/view-only
 >* Users you share with can view any filters that were applied to the project during [curation](curate.md). 
 > 
 >* Users you share with can change the project date range. The date range you set for the project is shown by default.
+>
+>* A project might become inaccessible if too many users try to access it at the same time.
 
 To share an Analysis Workspace project with anyone:
 
