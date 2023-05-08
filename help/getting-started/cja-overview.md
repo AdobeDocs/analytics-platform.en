@@ -21,10 +21,10 @@ Here is a video overview of Customer Journey Analytics:
 
 Customer Journey Analytics expands the scope of Adobe Analytics by offering easy to use cross-channel capabilities and removing limitations in previous versions of Adobe Analytics. Some notable improvements are:
 
-* **Unlimited variables and events**: The concepts of eVars, props, and events no longer exist. Data is primarily focused on dimensions and metrics. Data sets can have an unlimited number of unique dimensions and metrics.
+* **Unlimited variables and events**: The concepts of eVars, props, and events no longer exist. Data is primarily focused on dimensions and metrics. Datasets can have an unlimited number of unique dimensions and metrics.
 * **Unlimited unique values**: Adobe Experience Platform is not constrained to any unique limitations.
 * **Alter historical data**: Using Adobe Experience Platform, data can be removed or corrected.
-* **Cross-report-suite data**: Existing implementations from multiple data sets can be combined in Platform.
+* **Cross-report-suite data**: Existing implementations from multiple datasets can be combined in Platform.
 
 >[!TIP]
 >

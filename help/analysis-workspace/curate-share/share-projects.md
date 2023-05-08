@@ -113,11 +113,13 @@ You can grant [read-only access](/help/analysis-workspace/curate-share/view-only
 >
 >* The ability to share a project in this way can be disabled by the CJA administrator, as described in [Preferences](/help/analysis-workspace/user-preferences.md). If you can't share a project as described in this section, your CJA administrator has disabled this ability.
 >
->* Projects with more than 14 expanded visualizations can't be shared with people who don't have access to CJA.
+>* Projects with more than 50 expanded visualizations can't be shared with people who don't have access to CJA.
 >
 >* Users you share with can view any filters that were applied to the project during [curation](curate.md). 
 > 
 >* Users you share with can change the project date range. The date range you set for the project is shown by default.
+>
+>* A project might become inaccessible if many users attempt to access a given link at the same time. By default, more than 190 people can access a single link every 5 minutes. If your organization reaches this limit, wait 5 minutes and then try accessing the link again.
 
 To share an Analysis Workspace project with anyone:
 

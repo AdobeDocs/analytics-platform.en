@@ -1,5 +1,5 @@
 ---
-description: Use the line visualization to depict trended (time-based) data sets
+description: Use the line visualization to depict trended (time-based) datasets
 title: Line
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
@@ -46,9 +46,9 @@ All regression model trendlines are fit using ordinary least squares:
 
 | Model | Description |
 | --- | --- |
-| Linear | Creates a best-fit straight line for simple linear data sets and is useful when the data increases or decreases at a steady rate. Equation: `y = a + b * x` |
+| Linear | Creates a best-fit straight line for simple linear datasets and is useful when the data increases or decreases at a steady rate. Equation: `y = a + b * x` |
 | Logarithmic | Creates a best-fit curved line and is useful when the rate of change in the data increases or decreases quickly and then levels out. A logarithmic trendline can use negative and positive values. Equation: `y = a + b * log(x)` |
 | Exponential | Creates a curved line and is useful when data rises or falls at constantly increasing rates. This option should not be used if your data contains zero or negative values. Equation: `y = a + e^(b * x)` |
-| Power | Creates a curved line and is useful for data sets that compare measurements that increase at a specific rate. This option should not be used if your data contains zero or negative values. Equation: `y = a * x^b` |
-| Quadratic | Finds the best-fit for a data set shaped like a parabola (concave up or down). Equation: `y = a + b * x + c * x^2` |
+| Power | Creates a curved line and is useful for datasets that compare measurements that increase at a specific rate. This option should not be used if your data contains zero or negative values. Equation: `y = a * x^b` |
+| Quadratic | Finds the best-fit for a dataset shaped like a parabola (concave up or down). Equation: `y = a + b * x + c * x^2` |
 | Moving average | Creates a smooth trendline based on a set of averages. Also known as a rolling average, a moving average uses a specific number of data points (determined by your 'Periods' selection), averages them, and uses the average as a point in the line. Examples include 7 day moving average or 4 week moving average.|
