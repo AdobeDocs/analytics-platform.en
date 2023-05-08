@@ -63,7 +63,7 @@ To use dashboards:
 
     You can sort the scorecard list according to scorecard title, organization name, or most recently viewed. You can even search for a specific scorecard.
 
-    ![Choose a company](assets/nextseq.png)
+    ![Choose a company](assets/mobile-home-screen.png)
 
     If you log in and see a message saying that nothing has been shared, verify the following with your curator:
 
