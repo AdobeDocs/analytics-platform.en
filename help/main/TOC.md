@@ -249,13 +249,12 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create a mobile scorecard](../mobile-app/create-scorecard.md)
     + [Set up executives to use dashboards](../mobile-app/set-up-execs.md)
     + [Executive user quick start guide](../mobile-app/executive.md)
-
 +   Report Builder {#cja-reportbuilder}
     + [Report Builder Overview](../report-builder/report-buider-overview.md)
     + [Report Builder Set Up](../report-builder/report-builder-setup.md)
     + [Create a Data Block](../report-builder/create-a-data-block.md)
     + [Report Builder Hub](../report-builder/report-builder-hub.md)
-    + [Select a Data View](../report-builder/select-data-view.md)
+    + [Select a Data View](../report-builder/report-builder-hub.md)
     + [Select a Date Range](../report-builder/select-date-range.md)
     + [Work with Filters](../report-builder/work-with-filters.md)
     + [Filter Dimensions](../report-builder/filter-dimensions.md)

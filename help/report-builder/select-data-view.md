@@ -17,8 +17,9 @@ Selecting a data view from a cell makes it easy to refresh data blocks using dif
 To select a data view from a cell, first build a data block and assign multiple data views to a cell outside of your data block. Then, use the data view from cell panel to refresh your data blocks from different data views.
 
 1. Create a data block.
+   For information about creating a data block, see [Create a Data Block](/help/report-builder/create-a-data-block.md).
 
-1. Click the from cell icon.
+1. Click the *cell icon* in the *Data views* section.
 
    ![Cell icon](/help/report-builder/assets/cell-icon.png)
 
@@ -32,9 +33,9 @@ To select a data view from a cell, first build a data block and assign multiple 
 
    ![Cell icon](/help/report-builder/assets/select-data-view.png)
 
-1. Click Apply.
+1. Click **Apply**.
 
-   When you create your data block, you can refresh the data using a different data view from the cell.
+   When you finish your data block, you can refresh your data block using a different data view from the selected cell.
 
    **Change the data view from the cell**
 
@@ -46,14 +47,14 @@ To select a data view from a cell, first build a data block and assign multiple 
 
    ![Select data view](/help/report-builder/assets/select-data-view.png)
 
-   The Select data view from cell pane displays a drop-down menu listing the data views that you selected previously (Step 5).
+   The Select data view from cell pane displays a drop-down menu listing the data views that you selected previously in Step 5.
 
    ![Add data view from cell](/help/report-builder/assets/add-data-view-cell.png)
 
 1. Select a different data view from the drop-down list.
 
-1. (Optional) Select Refresh data block(s) upon change.
+1. (Optional) **Select Refresh data block(s)** upon change.
 
-1. Click Apply.
+1. Click **Apply**.
 
    Report Builder refreshes the data block with chosen data view.
