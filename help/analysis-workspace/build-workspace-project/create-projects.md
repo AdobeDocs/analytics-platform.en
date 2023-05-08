@@ -1,7 +1,7 @@
 ---
-description: Learn the basics of creating a project in Analysis Workspace
+description: Learn how to create a project in Analysis Workspace
 title: Create projects
-feature: Workspace Basics
+feature: CJA Workspace Basics
 role: User, Admin
 ---
 # Create projects
