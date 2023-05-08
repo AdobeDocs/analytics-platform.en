@@ -13,11 +13,11 @@ Core settings that a data view component uses.
 
 | Setting | Description/Use case |
 | --- | --- |
-| [!UICONTROL Component type] | Required. Allows you to change a component from Metric to Dimension or vice versa. Changing this dropdown shifts the component to its respective included components area. |
+| [!UICONTROL Component type] | Required. Allows you to change a component from Metric to Dimension or vice versa. Changing this drop-down selection shifts the component to its respective included components area. |
 | [!UICONTROL Component Name] | Required. Lets you specify the friendly name that appears in Analysis Workspace. You can rename a component to give it a name specific to the data view. |
 | [!UICONTROL Description] | Optional, but recommended. Provides information on the component to other users. |
 | [!UICONTROL Tags] | Optional. Lets you tag the component with custom or out-of-the-box tags for easier searching/filtering in the Analysis Workspace UI. |
-| [!UICONTROL Context labels] | Optional. A dropdown of available system-defined labels that can be applied to a component. These labels may be required to define a set of components used for reporting in Analysis Workspace projects or panels. |
+| [!UICONTROL Context labels] | Optional. A drop-down list of available system-defined labels that can be applied to a component. These labels may be required to define a set of components used for reporting in Analysis Workspace projects or panels. |
 | [!UICONTROL Schema field name] | The name of the schema field. |
 | [!UICONTROL Dataset type] | Required. A non-editable field showing which dataset type (event, lookup, or profile) the component came from. |
 | [!UICONTROL Dataset] | A non-editable field showing which dataset that the component originated from. This field can contain multiple datasets. |

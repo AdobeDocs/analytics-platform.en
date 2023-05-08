@@ -75,6 +75,7 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Substring](../data-views/component-settings/substring.md)
         + [Value bucketing](../data-views/component-settings/value-bucketing.md)
     +   [Standard component reference](../data-views/component-reference.md)
+    +   [Derived fields](../data-views/derived-fields/derived-fields.md)
     +   [Labels and policies](../data-views/data-governance.md)
 
 
@@ -85,6 +86,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
     +   Projects {#build-workspace-project}
         +   [Projects overview](../analysis-workspace/build-workspace-project/freeform-overview.md)
+        +   [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md)
         +   [Save projects](../analysis-workspace/build-workspace-project/save-projects.md)
         +   Folders in Workspace {#workspace-folders}
             + [About Folders in Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -272,7 +274,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Integrate Adobe Analytics with Customer Journey Analytics](/help/integrations/aa.md)
     + [Integrate Journey Optimizer data with CJA](/help/integrations/ajo.md)
     + [Integrate Decision Management data with CJA](/help/integrations/ajo-od.md)
-    + [Integrate Customer AI data with CJA](/help/integrations/customer-ai.md)
 
 +   Data Governance {#cja-privacy}
     + [Data Governance](../privacy/privacy-overview.md)
