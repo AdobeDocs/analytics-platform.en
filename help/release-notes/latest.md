@@ -4,7 +4,7 @@ description: Latest CJA release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 ---
-# Current Customer Journey Analytics (CJA) release notes (April 2023)
+# Current Customer Journey Analytics (CJA) release notes (May 2023)
 
 **Last update**: May 5, 2023
 
