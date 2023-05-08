@@ -35,7 +35,7 @@ Following are some of the key features available in Analysis Workspace:
 
 **Panels** are used to organize your analysis within a project and can contain many tables & visualizations. Many of the panels provided in Analysis Workspace generate a full set of analyses based on a few user inputs. On the far left rail, select the top **[!UICONTROL Panels]** icon to see a full list of panels available.
 
-To learn more about panels, see [Panels overview](help/analysis-workspace/c-panels/panels.md).
+To learn more about panels, see [Panels overview](/help/analysis-workspace/c-panels/panels.md).
 
 ![](assets/build-panels.png)
 
@@ -43,7 +43,7 @@ To learn more about panels, see [Panels overview](help/analysis-workspace/c-pane
 
 **Visualizations**, such as a bar or line chart, can be used to visually bring data to life. On the far left rail, select the middle **[!UICONTROL Visualizations]** icon to see the full list of visualizations available. 
 
-To learn more about visualizations, see [Visualizations overview](help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+To learn more about visualizations, see [Visualizations overview](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 
 ![](assets/build-visualizations.png)
 
@@ -81,7 +81,7 @@ To start using Analysis Workspace, log in to Adobe Analytics by going to [experi
 
 ### Create a project {#new-project}
 
-An analysis in Analysis Workspace is referred to as a [project](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md).  
+An analysis in Analysis Workspace is referred to as a [project](/help/analysis-workspace/build-workspace-project/freeform-overview.md).  
 
 You can create a project in Analysis Workspace as described in [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md).
 
