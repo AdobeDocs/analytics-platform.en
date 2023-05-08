@@ -13,6 +13,9 @@ The following updates were made to the CJA documentation since its inception.
 
 | Feature | Description |
 | --- | --- |
+| **May 2023** | |
+| Analysis Workspace overview | Updated [Analysis Workspace overview](/help/analysis-workspace/home.md) to include more general overview information and links to relevant content. |
+| Create projects | Created a new article that explains in detail how to [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md) in Analysis Workspace. |
 | **April 2023** |  |
 | Video about using filters as dimensions | <p>Updated the video about using filters as dimension. This video is linked from the [Create filters](/help/components/filters/create-filters.md) page.</p> <p>Following is a direct link to the video: [Use filters as dimensions in Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p>|
 | Filter documentation | Added article about using the [Filter builder](/help/components/filters/filter-builder.md). <p>Streamlined documentation in [Create filters](/help/components/filters/create-filters.md) and [Filters overview](/help/components/filters/filters-overview.md).</p>|
