@@ -49,9 +49,9 @@ You can access the [!UICONTROL Blank Mobile Scorecard] template either by creati
 
 To implement the Scorecard template:
 
-1. Under **[!UICONTROL Properties]** (in the right-hand rail), specify a **[!UICONTROL Project report suite]** from which you want to use data. Report suites are data views in CJA.
+1. Under **[!UICONTROL Properties]** (in the right-hand rail), specify a **[!UICONTROL Project data view]** from which you want to use data.
 
-    ![Report suite selection](assets/properties_save.png)
+    ![data view selection](assets/properties_save.png)
 
 1. To add a new tile to your Scorecard, drag a metric from the left panel and drop it into the **[!UICONTROL Drag and Drop Metrics Here]** zone. You can also insert a metric between two tiles using a similar workflow.
 
@@ -94,7 +94,7 @@ To create a comparison date, you can select from convenient pre-sets for common 
 
 ![New score card4](assets/new_score_card4.png)
 
-If the date range you want hasn’t been created yet, you can create a new one by clicking the calendar icon.
+If the date range you want hasn't been created yet, you can create a new one by clicking the calendar icon.
 
 ![New score card5](assets/new_score_card5.png)
 
@@ -250,7 +250,7 @@ Data stories allow you to customize everything so you can share information that
     ![Create a data story](assets/data-story4.png)
 
 >[!NOTE]
->Slides inherit components from the tile, but tiles don’t inherit components from slides.
+>Slides inherit components from the tile, but tiles don't inherit components from slides.
 
 **To customize individual slides**
 
