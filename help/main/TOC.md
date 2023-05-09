@@ -86,6 +86,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
     +   Projects {#build-workspace-project}
         +   [Projects overview](../analysis-workspace/build-workspace-project/freeform-overview.md)
+        +   [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md)
         +   [Save projects](../analysis-workspace/build-workspace-project/save-projects.md)
         +   Folders in Workspace {#workspace-folders}
             + [About Folders in Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -137,6 +138,7 @@ breadcrumb-title: Customer Journey Analytics Guide
         +   [Donut](../analysis-workspace/visualizations/donut.md)
         +   [Histogram](../analysis-workspace/visualizations/histogram.md)
         +   [Horizontal Bar and Horizontal Bar Stacked](../analysis-workspace/visualizations/horizontal-bar.md)
+        +   [Intelligent captions](../analysis-workspace/visualizations/intelligent-captions.md)
         +   [Key metric summary](../analysis-workspace/visualizations/key-metric.md)
         +   [Line](../analysis-workspace/visualizations/line.md)
         +   [Scatterplot](../analysis-workspace/visualizations/scatterplot.md)
