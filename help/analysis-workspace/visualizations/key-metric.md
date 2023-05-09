@@ -31,7 +31,7 @@ This visualization addresses a variety of common use cases, including:
 
 1. Configure the visualization by selecting a metric, a primary date range, and a comparison date range and a segment (if desired):
 
-   ![](assets/key-metric-config.png)
+   ![key metric configuration](assets/key-metric-config.png)
 
    | Configuration setting | Definition |
    | --- | --- |
@@ -56,7 +56,7 @@ Please note:
 
 * From here, you can hover over the line graphs to see the statistics for individual days:
 
-![](assets/key-metric-output2.png)
+![statistics](assets/key-metric-output2.png)
 
 ## Visualization settings
 
@@ -83,7 +83,7 @@ After building the visualization, you can still edit the original configuration.
 
 1. Click the pencil icon in the top right corner of the visualization (next to the settings gear icon).
 
-   ![](assets/edit-icon.png)
+   ![edit](assets/edit-icon.png)
 
    You are now taken back to the original configuration view. 
 
