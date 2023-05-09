@@ -33,7 +33,7 @@ To identify health issues in your Data Dictionary:
 
    ![Data Dictionary admin view](assets/data-dictionary-admin.png)
 
-1. Ensure that the correct Report Suite is selected in the drop-down menu.
+1. Ensure that the correct data view is selected in the drop-down menu.
 
 1. On the [!UICONTROL **Dictionary health**] tab, select [!UICONTROL **View**] next to any of the following options:
 

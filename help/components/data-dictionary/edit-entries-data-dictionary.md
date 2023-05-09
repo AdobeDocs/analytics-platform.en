@@ -7,7 +7,7 @@ exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
 ---
 # Edit component entries in the Data Dictionary
 
-Customer Journey Analytics administrators can edit component entries in the Data Dictionary for a given Report Suite. Any changes made are visible to all users of the Report Suite.
+Customer Journey Analytics administrators can edit component entries in the Data Dictionary for a given data view. Any changes made are visible to all users of the data view.
 
 To edit a component in the Data Dictionary:
 
@@ -19,7 +19,7 @@ To edit a component in the Data Dictionary:
 
    ![Data Dictionary admin view](assets/data-dictionary-admin.png)
 
-1. Ensure that the correct Report Suite is selected in the drop-down menu. By default, the report suite that you are already in is displayed. 
+1. Ensure that the correct data view is selected in the drop-down menu. By default, the data view that you are already in is displayed. 
 
 1. (Optional) In the search field, begin typing the name of the component you want to edit.
 

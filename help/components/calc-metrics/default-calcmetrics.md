@@ -12,7 +12,7 @@ Following is a list of each calculated metric that is provided by Adobe, with it
 
 >[!NOTE]
 >
->In addition to the default calculated metrics described on this page, you can also add additional calculated metrics to a report suite.  
+>In addition to the default calculated metrics described on this page, you can also add additional calculated metrics to a data view.  
 >
 >You can:
 > * Add default calculated metrics for Streaming Media, as described in [Calculated metrics](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/variables/calculated-metrics.html) 
