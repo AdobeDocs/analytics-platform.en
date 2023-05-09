@@ -50,7 +50,7 @@
 
    {style="table-layout:auto"}
 
-   ## Components sort options {#components-sort-options}
+## Components sort options {#components-sort-options}
 
    |Option | Function |
    |---------|----------|
@@ -60,4 +60,3 @@
 
    {style="table-layout:auto"}
 
-   
