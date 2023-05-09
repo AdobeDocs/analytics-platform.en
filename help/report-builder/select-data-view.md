@@ -4,7 +4,6 @@ description: Describes how to select data views
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-exl-id: 
 solution: Customer Journey Analytics
 ---
 
