@@ -50,6 +50,82 @@ Watch the video on Creating Metrics, Filters, and Dates:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23979)
 
+## Manage components {#actions}
+
+You can manage components directly in the left rail. 
+
+1. Right-click a component.
+
+   Or
+   
+   Select a component, then select the **Action** (3-dot) icon at the top of the component list.
+
+   >[!TIP]
+   >
+   >   You can select multiple components by holding Shift, or by holding Command (on Mac) or Ctrl (on Windows).
+
+
+   ![](assets/component-actions.png)
+
+   | Component action | Description |
+   |--- |--- |
+   | [!UICONTROL **Tag**] | Organize or manage components by applying tags to them. You can then search by tag in the left rail by clicking the filter or typing #. Tags also act as filters in the component managers. |
+   | [!UICONTROL **Favorite**] | Add the component to your list of favorites. Like tags, you can search by Favorites in the left rail and filter by them in the component managers. |
+   | [!UICONTROL **Approve**] | Mark components as Approved to signal to your users that the component is organization-approved. Like tags, you can search by Approved in the left rail and filter by them in the component managers. |
+   | [!UICONTROL **Share**] | Share components to users in your organization. This option is available for custom components only, such as filters or calculated metrics. |
+   | [!UICONTROL **Delete**] | Delete components that you no longer need. This option is available for custom components only, such as filters or calculated metrics. |
+
+Custom components can also be managed through their respective Component managers. For example, the [Manage filters](/help/components/filters/manage-filters.md).
+
+## Search, filter, and sort the component list
+
+You can search, filter, and sort the component list in the left rail of Analysis Workspace to quickly locate a particular component. 
+
+### Search the component list
+
+1. Select the **Components** icon ![Components icon](assets/components-icon.png) in the left rail.
+
+1. In the search field, begin typing the name of the component you want to use in your project.
+
+   The type of component can be identified by both color and icon. **Dimensions** ![Dimension icon](assets/dimension-icon.png) are orange, **Filters** ![Filter icon](assets/segment-icon.png) are blue, **Date ranges** ![Date range icon](assets/date-range-icon.png) are purple, and **Metrics** ![Metric icon](assets/default-metric-icon.png) are green. The Adobe icon ![Adobe icon](assets/default-calc-metric-icon.png) indicates either a calculated metric template or a filter template, and the calculator icon ![Calculator icon](assets/calculated-metric-icon-created.png) indicated a calculated metric that was created by an Analytics administrator in your organization. 
+
+1. Select the component when it appears in the drop-down list.
+
+### Filter the component list
+
+1. Select the **Components** icon ![Components icon](assets/components-icon.png) in the left rail.
+
+1. Select the **Filter** icon ![Data Dictionary Filter icon](assets/components-filter-icon.png).
+
+   Or
+
+   Type the pound sign (#) in the search field.
+
+1. Select any of the following filter options to filter the list of components:
+
+   |Option | Function |
+   |---------|----------|
+   | [!UICONTROL **Approved**] | Show only components that are marked as Approved by an administrator. |
+   | [!UICONTROL **Favorites**] | Show only components that are in your list of Favorites. For information about adding components to your list of favorites, see [Manage components](#manage-components). |
+   | [!UICONTROL **Dimensions**] | Show only components that are Dimensions. |
+   | [!UICONTROL **Metrics**] | Show only components that are Metrics. |
+   | [!UICONTROL **Filters**] | Show only components that are Filters. |
+   | [!UICONTROL **Date ranges**] | Show only components that are Date Ranges. |
+   | [!UICONTROL **Show all**] | Show all components. This option is available only for administrators. |
+   | [!UICONTROL **Unapproved**] | Show only components that are not yet marked as Approved by an administrator. As an administrator, this is helpful when identifying components that require your review and approval. This option is available only for administrators. |
+
+1. (Optional) To further hone the list, you can sort the component list, as described in [Sort the component list](#sort-the-component-list).
+
+### Sort the component list
+
+1. (Optional) Apply any filters to the component list, as described in [Filter the component list](#filter-the-component-list).
+
+1. Select the **Components** icon ![Components icon](assets/components-icon.png) in the left rail.
+
+1. Select the **Sort** icon ![Sort components icon](assets/component-sort-icon.png), then select any of the following filter options to sort the list of components:
+
+   {{components-sort-options}}
+
 ## Component access permissions
 
 In Analysis Workspace, Admins can [curate](/help/analysis-workspace/curate-share/curate.md) which components are exposed to users in reporting.
