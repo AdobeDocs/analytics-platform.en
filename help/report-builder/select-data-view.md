@@ -10,7 +10,9 @@ solution: Customer Journey Analytics
 
 # Select a data view
 
-You can select a data view from the drop-down list or select a data view from a cell and automatically update your data block with a new data view. 
+You can select a data view from the drop-down list or select a data view from a cell and automatically update your data block with a new data view.
+
+**Select data view from cell**
 
 Selecting a data view from a cell makes it easy to refresh data blocks using different data views. If your organization has multiple data views that are similar or identical to each other in structure, instead of creating completely new reports with separate data blocks, you can refresh data blocks with a data view selected from a cell. This is also helpful if you have complicated data block formats that include customized components and layouts.
 
@@ -41,15 +43,7 @@ To select a data view from a cell, first build a data block and assign multiple 
 
 1. Click the data view cell location that you chose in Step 3.
 
-   The Quick edit pane shows the *Data views from cell link*.
-
-1. Click the **Data views from cell link**.
-
-   ![Select data view](/help/report-builder/assets/select-data-view.png)
-
-   The Select data view from cell pane displays a drop-down menu listing the data views that you selected previously in Step 5.
-
-   ![Add data view from cell](/help/report-builder/assets/add-data-view-cell.png)
+   A drop-down menu listing the data views that you selected previously in Step 5 is displayed.
 
 1. Select a different data view from the drop-down list.
 
