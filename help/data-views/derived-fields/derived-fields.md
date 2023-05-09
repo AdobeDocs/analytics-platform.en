@@ -13,7 +13,7 @@ badgeDerivedFields: label="New Feature" type="Positive"
 
 {{release-limited-testing}}
 
->[!WARNING]
+>[!NOTE]
 >
 >Pending final updates, you might see [!UICONTROL Custom field] instead of [!UICONTROL Derived field] across the user interface.
 
