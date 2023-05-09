@@ -25,7 +25,7 @@ The following image and accompanying table explain some of the main areas in Ana
 | A | **Far left rail:** Contains tabs for adding panels, visualizations, and components to Analysis Workspace. Also contains the Data Dictionary icon that is used to open the Data Dictionary. |
 | B | **Left rail:** Depending on which tab is selected in the far left rail, this area contains individual panels, visualizations, or components. |
 | C | **Canvas:** This is the main area where you drag content from the left rails to build your project. The project dynamically updates as you add panels, visualizations, and components to the canvas. | 
-| D | **Report suite drop-down menu:** For each panel in Analysis Workspace, the report suite drop-down menu allows you to choose the report suite that you want to use as your data source. | 
+| D | **Data view drop-down menu:** For each panel in Analysis Workspace, the data view drop-down menu allows you to choose the data view that you want to use as your data source. | 
 
 ## Features in Analysis Workspace {#analysis}
 
