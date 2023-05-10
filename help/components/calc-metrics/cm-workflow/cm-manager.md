@@ -17,7 +17,7 @@ The Calculated Metric Manager shows you all the segments you own and that have b
 | UI Feature  | Description  |
 | --- | --- |
 | Calculated Metrics Management Tool Bar  | Once you have checked a metric, this tool bar appears. Most management tasks can be completed from this tool bar.  |
-| Show/Hide Filters  | Clicking Show Filters brings up the filter menu. You can filter by Tags, Report Suites, Owners, Show All (Admin only), Shared with Me, Mine, Favorites, and Approved.  |
+| Show/Hide Filters  | Clicking Show Filters brings up the filter menu. You can filter by Tags, Data Views, Owners, Show All (Admin only), Shared with Me, Mine, Favorites, and Approved.  |
 | Check boxes  | Check a custom metric in order to manage it.  |
 | Favorites  | Clicking the star next to a metric turns the star yellow and marks the metric as a favorite.  |
 | Filter titles and descriptions  | Provided in the Calculated Metric Builder. To edit the title and description, click the title link - this takes you back to the Calculated Metric Builder.  |

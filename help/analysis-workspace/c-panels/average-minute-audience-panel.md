@@ -15,7 +15,7 @@ Media Analytics customers can use the average minute audience panel to better 
 In Analysis Workspace, average minute audience is the time spent viewing your media stream divided by the duration of the content or the total selection of the period and selected granularity.
 
 The Media Average Minute Audience panel provides average minute audience analytics by the specific content selected if the duration is made available using Classifications.
-The Average Minute Audience panel also provides analytics over a selected time period that can be filtered by specific content—whether or not the duration is available using Classifications. To access the Media Average Minute Audience Panel, navigate to a report suite with Media Analytics components enabled. Then, click the panel icon on the far-left and drag the panel into your Analysis Workspace project.
+The Average Minute Audience panel also provides analytics over a selected time period that can be filtered by specific content—whether or not the duration is available using Classifications. To access the Media Average Minute Audience Panel, navigate to a data view with Media Analytics components enabled. Then, click the panel icon on the far-left and drag the panel into your Analysis Workspace project.
 
 <!-- For more information, see the Media Average Minute Audience introduction video:
 << replace with AMA video when available >> -->
