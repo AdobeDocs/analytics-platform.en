@@ -110,7 +110,7 @@ breadcrumb-title: Customer Journey Analytics Guide
                 + [Row settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
                 + [Dynamic vs. Static items](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
 
-            +   [Pagination, filtering and sorting tables](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+            +   [Filter and sort tables](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
 
             +   [Workspace Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
 
