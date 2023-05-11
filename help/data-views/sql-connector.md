@@ -5,6 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: yes
 hidefromtoc: yes
+badgeCJASQLConnector: label="New Feature" type="Positive"
 ---
 # SQL Connector
 
