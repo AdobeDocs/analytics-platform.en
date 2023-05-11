@@ -16,32 +16,14 @@ The following sections describe how to create a project and start adding the key
 
 1. In Adobe Analytics, select [!UICONTROL **Workspace**].
 
-1. Choose whether to create a blank project or to create a project from a template:
+1. On the [!UICONTROL **Workspace**] tab, select the [!UICONTROL **Projects**] tab on the left side of the page, then select [!UICONTROL **Create project**].
 
-   +++Create a blank project
+1. Choose whether to create a blank project or a blank mobile scorecard
 
-   1. On the [!UICONTROL **Workspace**] tab, select the [!UICONTROL **Projects**] tab on the left side of the page, then select [!UICONTROL **Create project**].
+   * **Blank project** if you plan to share your analysis from the browser 
+   * [**Blank mobile scorecard**](/help/mobile-app/curator.md) if you plan to share your analysis from the Adobe Analytics dashboards mobile app.
 
-   1. Choose whether to create a blank project or a blank mobile scorecard
-
-      * **Blank project** if you plan to share your analysis from the browser 
-      * [**Blank mobile scorecard**](/help/mobile-app/curator.md) if you plan to share your analysis from the Adobe Analytics dashboards mobile app.
-
-   1. Select [!UICONTROL **Create**].
-
-   +++
-
-   +++Create a project from a template
-   
-      1. On the [!UICONTROL **Workspace**] tab, select the [!UICONTROL **Reports**] tab on the left side of the page.
-
-      1. Search for or navigate to the template you want to use, then select it when it appears.
-
-          A set of standard templates is available by default. In addition, your organization might have created custom templates for you to choose from.
-
-          <!-- (I don't know if you can create a project from a template in CJA... Might need to delete this section. Also update table in "Projects overview") For more information, see [Get started with Reports & Analytics](/help/analyze/reports-analytics/getting-started.md). -->
-
-   +++
+1. Select [!UICONTROL **Create**].
 
 1. Next, you need to add panels, visualizations, and components to your project. First, add panels to your project in Analysis Workspace, as described in [Add panels to the project](#add-panels-to-the-project). You can then add visualizations to any panels. Finally, you can add components to any panels or visualizations.
 
