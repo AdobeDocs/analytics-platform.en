@@ -3,6 +3,8 @@ title: SQL Connector
 description: Learn how you can use Query Service, Power BI and/or Tableau to access Data Views using the SQL Connector.
 solution: Customer Journey Analytics
 feature: Data Views
+hide: yes
+hidefromtoc: yes
 ---
 # SQL Connector
 
