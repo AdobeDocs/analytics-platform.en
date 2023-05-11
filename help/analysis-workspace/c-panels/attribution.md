@@ -6,7 +6,18 @@ exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 ---
 # Attribution panel
 
-The [!UICONTROL Attribution] panel is an easy way to build an analysis comparing various attribution models. It is a feature in [Attribution IQ](../attribution/overview.md) that gives you a dedicated workspace to use and compare attribution models.
+The [!UICONTROL Attribution] panel is an easy way to build an analysis comparing various attribution models. It is a feature that gives you a dedicated workspace to use and compare attribution models.
+
+Customer Journey Analytics enhances attribution by letting you:
+
+* Define attribution beyond paid media: Any dimension, metric, channel or event can be applied to models (e.g. internal search), not just marketing campaigns.
+* Utilize unlimited attribution model comparison: dynamically compare as many models as you want.
+* Avoid implementation changes: With report time processing and context-aware sessions, customer journey context can be built in and applied at run time.
+* Construct the session that best matches your attribution scenario.
+* Break down attribution by filters: Easily compare the performance of your marketing channels across any important filter (e.g. New vs. Repeat customers, Product X vs. Product Y, Loyalty level or CLV).
+* Inspect channel cross-over and multi-touch analysis: Use Venn Diagrams and Histograms, and trend attribution results.
+* Analyze key marketing sequences visually: explore paths that led to conversion visually with multi-node flow and fallout visualizations.
+* Build calculated metrics: use any number of attribution allocation methods.
 
 ## Create an attribution panel
 
@@ -19,7 +30,7 @@ The [!UICONTROL Attribution] panel is an easy way to build an analysis comparing
 
    ![Select dimension and metric](assets/attribution_panel2.png)
 
-1. Select the [attribution models and lookback window](../attribution/models.md) you want to compare.
+1. Select the attribution models and lookback window that you want to compare.
 
 1. The Attribution panel returns a rich set of data and visualizations that compare attribution for the selected dimension and metric.
 

@@ -62,9 +62,9 @@ When first turned on, Adobe provides a backfill of stitched data that goes back 
 +++
 
 
-+++**What is the expected behavior for non-stitched profile data set records?**
++++**What is the expected behavior for non-stitched profile dataset records?**
 
-**Example scenario**: You join 2 datasets in a CJA connection by using `CRMid` as the Person ID. One is a Web Event dataset with `CRMid` in all records. The other dataset is a CRM profile data set. 40% of the CRM data set has `CRMid` present in the Web event data set. The other 60% is not present in the Web event dataset - do these records appear in reporting in Analysis Workspace?<p> **Answer**: Profile rows that have no events tied to them are stored in CJA. However, you cannot view them in Analysis Workspace until an event tied to that ID appears.
+**Example scenario**: You join 2 datasets in a CJA connection by using `CRMid` as the Person ID. One is a Web Event dataset with `CRMid` in all records. The other dataset is a CRM profile dataset. 40% of the CRM dataset has `CRMid` present in the Web event dataset. The other 60% is not present in the Web event dataset - do these records appear in reporting in Analysis Workspace?<p> **Answer**: Profile rows that have no events tied to them are stored in CJA. However, you cannot view them in Analysis Workspace until an event tied to that ID appears.
 
 +++
 
@@ -162,7 +162,7 @@ If you plan to ingest Adobe Analytics data through the [Adobe Analytics source c
 | Metric deduplication | Deduplicates instances of a metric (for example, [!UICONTROL Orders]) if multiple rows have the same transaction ID (for example, [!UICONTROL Purchase ID]). This prevents over-counting of key metrics. As a result, metrics like [!UICONTROL Orders] may not add up across report suites. |
 | Currency | Currency conversion is not yet supported in CJA. If the report suites you are trying to merge use different base currencies, problems may arise. | 
 | [!UICONTROL Persistence]| [Persistence](../data-views/component-settings/persistence.md) extends across report suites, which impacts [!UICONTROL filters], [!UICONTROL attribution], and so on. Numbers may not add up properly. |
-| [!UICONTROL Classifications] | [!UICONTROL Classifications] do not automatically get deduplicated when merging report suites. When combining multiple classifications files into a single [!UICONTROL lookup] data set, you could encounter problems. |
+| [!UICONTROL Classifications] | [!UICONTROL Classifications] do not automatically get deduplicated when merging report suites. When combining multiple classifications files into a single [!UICONTROL lookup] dataset, you could encounter problems. |
 
 
 ## 8. Traditional [!UICONTROL Adobe Analytics] components

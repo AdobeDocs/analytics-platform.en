@@ -56,14 +56,12 @@ Built into these visualization components are smart capabilities like:
 
 *   **Virtual analyst features** such as [Anomaly Detection](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) that use predictive algorithms and machine learning to deliver insights into what is driving unusual behaviors in your data.
 
-*   **Advanced analysis features** that are specifically focused on customer journey insights, like [flow diagrams](/help/analysis-workspace/visualizations/c-flow/flow.md), [attribution IQ](/help/analysis-workspace/attribution/overview.md), [fallout diagrams](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [dimension breakdowns](/help/components/dimensions/t-breakdown-fa.md). Examples of out-of-the-box visualizations are:
+*   **Advanced analysis features** that are specifically focused on customer journey insights, like [flow diagrams](/help/analysis-workspace/visualizations/c-flow/flow.md), [Attribution panel](/help/analysis-workspace/c-panels/attribution.md), [fallout diagrams](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [dimension breakdowns](/help/components/dimensions/t-breakdown-fa.md). Examples of out-of-the-box visualizations are:
 
     *   [Customer retention analysis via cohort / latency tables](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md), where you simply drag-and-drop metrics / dimensions in a builder and you're done in less than 30 seconds,
 
     *   [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md) / [flow](/help/analysis-workspace/visualizations/c-flow/create-flow.md) visualizations. Set up in less than a minute.
     
-    *   [Attribution models](/help/analysis-workspace/attribution/algorithmic.md) like first touch, last touch, participation, time decay, even custom ones that take a few clicks to set up.
-
 *   **Segmentation capability at every step of your progressive exploration**: whenever you think it makes sense, you can publish your audience back into Experience Platform and from there to any of the supported destinations. 
 
 *   **Sessionization** that is fully [customizable](/help/data-views/component-settings/persistence.md): you determine when a session, as part of a channel in a customer journey, starts and ends.

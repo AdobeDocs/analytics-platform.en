@@ -22,7 +22,7 @@ The [!UICONTROL Annotations] manager shows you all the annotations you own that 
 | UI Element | Description |
 | --- | --- | 
 | [!UICONTROL Title and Description] | Provided in the Annotations Builder. To edit the title and description, click the title link - this takes you back to the Annotations Builder.  |
-| [!UICONTROL Report Suite] | The report suite(s) that this annotation applies to.  | 
+| [!UICONTROL Data view] | The data view(s) that this annotation applies to.  | 
 | [!UICONTROL Owner] | Indicates who owns the annotation. As a non-Admin, you can see only annotations that you own or those that were shared with you. |
 | [!UICONTROL Applied Date Range] | The date or date range that this annotation applies to. |
 | [!UICONTROL Shared with] | Lists how many individuals or groups that you shared the annotation with. Click for more detail. |
@@ -32,7 +32,7 @@ The [!UICONTROL Annotations] manager shows you all the annotations you own that 
 
 ## Edit annotations
 
-Editing an annotation means that you can adjust date ranges, colors, scope, or whether or not it applies to all report suites or projects. You can edit annotations in two ways:
+Editing an annotation means that you can adjust date ranges, colors, scope, or whether or not it applies to all data views or projects. You can edit annotations in two ways:
 
 * In a line chart, hover over the annotation and click the pencil icon within the popover.
 
@@ -52,7 +52,7 @@ When sharing annotations or working with annotations that were shared with you, 
 
 ## Annotations and time zones
 
-All annotations are created with a timestamp, but no 'hour' or 'timezone' information. At report time, the timezone of the panel’s data view is always applied. So an annotation created for Christmas Day happens on December 25th - no matter what report suite timezone you are in. 
+All annotations are created with a timestamp, but no 'hour' or 'timezone' information. At report time, the timezone of the panel's data view is always applied. So an annotation created for Christmas Day happens on December 25th - no matter what data view timezone you are in. 
 
 Another example is New Year's Day. Every hour, a different timezone sets off fireworks as the new year starts. At 10pm US Mountain Time, the US east coast is setting off fire works because it is already 12am Eastern Time.
 
@@ -70,6 +70,6 @@ Just select one or more of the annotations and the Task bar appears.
 | Rename | Renaming an annotation renames it in all projects that it was applied to. |
 | Copy | Creates a distinct copy with its own annotation ID, but with the same name and definition.|
 | Export to CSV | Export the annotation definition to a .csv file.|
-| Filter (left rail) | Filter by tags, report suite, owners, and other filters (Mine, Approved, Favorites, Shared with me, and Show All).|
+| Filter (left rail) | Filter by tags, data view, owners, and other filters (Mine, Approved, Favorites, Shared with me, and Show All).|
 
 {style="table-layout:auto"}

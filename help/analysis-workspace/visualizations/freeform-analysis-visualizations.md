@@ -9,9 +9,7 @@ exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 
 Workspace offers a number of visualizations that let you generate visual representations of your data, such as bar charts, donut charts, histograms, line charts, maps, scatterplots, and others. Most visualization types will be familiar to you if you use Customer Journey Analytics. However, Analysis Workspace provides visualization settings and many new or unique visualizations types with interactive capabilities.
 
-You can access visualizations from the top left icon in Workspace, a [blank panel](/help/analysis-workspace/c-panels/blank-panel.md), or through the right-click menu in your workflow. 
-
-![Visualization rail](assets/viz-rail.png)
+## Visualization types
 
 The following visualization types are available in Analysis Workspace:
 
@@ -34,6 +32,26 @@ The following visualization types are available in Analysis Workspace:
 | [Text](/help/analysis-workspace/visualizations/text.md) | Lets you add user-defined text to your Workspace. Helpful for adding additional context to your analysis and insights, in addition to leveraging panel/visualization descriptions |
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | Displays hierarchical (tree-structured) data as a set of nested rectangles. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md) | Uses circles to depict the metric overlap of up to 3 filters. |
+
+## Add visualizations to a panel
+
+1. Open the Analysis Workspace project where you want to add a visualization.
+
+1. Use any of the following methods to add the visualization:
+
+   * In the left rail, select the **Visualizations** icon <!-- add icon -->, then drag a visualization to the panel where you want to add it. 
+
+     ![](assets/viz-rail.png)
+
+   * On the panel where you want to add the visualization, select the **Plus** icon, then choose the icon that represents the visualization that you want to add. Hover over the icon for each visualization to see its name.
+
+     ![Button for adding a visualization](assets/visualization-add-to-panel.png)
+
+   * Add a [blank panel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html), then choose the visualization that you want to add.
+
+     ![Blank panel](assets/blank_panel.png)
+
+   * Right-click an existing panel in your Analysis Workspace project, then select [!UICONTROL **Duplicate visualization**] or [!UICONTROL **Copy visualization**].
 
 ## Customize visualization settings
 
@@ -62,7 +80,7 @@ Each visualization has its own settings that you can manage. To access [!UICONTR
 | Setting | Description |
 | --- | --- |
 | Visualization Type | Change the type of visual used to depict the data. |
-| Granularity | For trended visualizations, you can change the time granularity (day, week, month, etc.) from this dropdown. This change also applies to the data source table. |
+| Granularity | For trended visualizations, you can change the time granularity (day, week, month, etc.) from this drop-down list. This change also applies to the data source table. |
 | Percentages | Displays values in percentages. |
 | 100% Stacked | This setting on area stacked, bar stacked or horizontal bar stacked visualizations turns the chart into a "100% stacked" visualization. Example: ![Stacked 100%](assets/stacked_100_percent.png) |
 | Legend Visible | Lets you hide the detailed legend text for the Summary Number/Summary Change visualization. |
