@@ -6,13 +6,13 @@ feature: Data Views
 ---
 # SQL Connector
 
-The Customer Journey Analytics (CJA) SQL Connector for Data Views enables SQL access to the [data views](./data-views.md) you have defined in CJA. Data engineers and analysts who are more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools) can now create reporting and dashboards based on the same data views that CJA users are using when creating their Analysis Workspace projects.
+The [!DNL Customer Journey Analytics (CJA) SQL Connector] enables SQL access to the [data views](./data-views.md) that you have defined in CJA. Your data engineers and analysts might be more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that CJA users are using when creating their Analysis Workspace projects.
 
-Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) is the SQL interface to data available in the data lake of Experience Platform. With the [!DNL CJA SQL Connector for Data views] enabled, the functionality of Query Service is extended to see your CJA data views as tables or views in a Query Service session. As a result, business intelligence tools that use Query Service as their PostgresSQL interface benefit seamlessly from this extended functionality.
+Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) is the SQL interface to data available in the data lake of Experience Platform. With the [!DNL CJA SQL Connector] enabled, the functionality of [!DNL Query Service] is extended to see your CJA data views as tables or views in a [!DNL Query Service] session. As a result, business intelligence tools that use [!DNL Query Service] as their PostgresSQL interface benefit seamlessly from this extended functionality.
 
 The main benefits are:
 
--   No need to recreate an equivalent representation of CJA data views within the BI tool itself. <br/>See [Data view](data-views.md) for more information on the functionality of Data views to understand what needs to be recreated.<br/>
+-   No need to recreate an equivalent representation of CJA data views within the BI tool itself. <br/>See [Data view](data-views.md) for more information on the functionality of Data views to understand what must be recreated.<br/>
 
 -   Greater consistency in reporting and analysis between BI tools and CJA.
   
@@ -24,16 +24,18 @@ To use this functionality, you have to
 
 -   Enable the [!UICONTROL CJA SQL Connector] in your Experience Platform organization. 
 
--   Configure the functionality for the relevant product profiles, user groups and/or individual users.
-  
-    Users need to have access to 
-    - Adobe Experience Platform Query Service, 
-    - Custom Journey Analytics Workspace, and
-    - curated access to the Data views they want to use.
+-   Configure the functionality for the relevant product profiles, user groups and/or individual users.<br/>
+    Users must have access to:
+    - Experience Platform Query Service, 
+    - CJA  Workspace projects, and
+    - CJA Data views they want to use.
+
+-   Use expiring on non-expiring credentials to connect BI tools to the CJA SQL Connector. See [Credentials guide](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) for more information on setting expiring credentials or non-expiring credentials.
+
 
 ## Usage
 
-To use the CJA SQL Connector functionality, you can either use SQL directly or use the drag and drop experience available in the specific BI tool. 
+To use the [!DNL CJA SQL Connector] functionality, you can either use SQL directly or use the drag and drop experience available in the specific BI tool. 
 
 ### SQL
 
@@ -101,7 +103,9 @@ Currently, the CJA SQL Connector is supported for Power BI and Tableau.
         
             Add `?FLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:all?FLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) for more information.
 
-        3.  You are prompted for **[!UICONTROL **Username**]** and **[!UICONTROL **Password**]**. Use the equivalent parameters from Experience Platform Queries [!UICONTROL Credentials].
+        3.  When prompted for **[!UICONTROL **Data Connectivity**]** mode, select **[!UICONTROL **DirectQuery**]** to ensure that the data structures are flattened properly.
+
+        4.  You are prompted for **[!UICONTROL **Username**]** and **[!UICONTROL **Password**]**. Use the equivalent parameters from Experience Platform Queries [!UICONTROL Credentials].
 
 
     5.  After successful login, the CJA Data View tables appear in Power BI's **[!UICONTROL **Navigator**]**. Data View tables are identified by using `dv_` in their names.
@@ -139,7 +143,7 @@ Currently, the CJA SQL Connector is supported for Power BI and Tableau.
 
         3.  Paste **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Database**]** text field.
 
-            Add `?%3FFLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:all?%3FFLATTEN` for example.
+            Add `%3FFLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:all%3FFLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) for more information.
 
         4.  Select **[!UICONTROL **Username and Password**]** from **[!UICONTROL **Authentication**]** list.
 
@@ -161,15 +165,17 @@ Currently, the CJA SQL Connector is supported for Power BI and Tableau.
 
 See [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=en) for an overview of and more information on the various tools available.
 
-To prevent expiring credentials, administrators can grant non-expiring credentials to maintain a connection between AEP and their BI tool of choice.
-
 ## Functionality
 
 By default, your data views have a table-safe name generated from their friendly name. For example, the data view named [!UICONTROL My Web Data] has the view name `dv_my_web_data`.  
 
 If you want to use the data view IDs as the table names, you can add the optional `CJA_USE_IDS` setting to your database name when connecting. For example, `prod:all?CJA_USE_IDS` shows your data views with names like `dv_ABC123`.
 
-Any DULE settings you might have configured in they have in CJA will carry down into the BI Tool when connected.
+### Data governance
+
+The data governance-related settings in Customer Journey Analytics are inherited from Adobe Experience Platform. The integration between CJA and Adobe Experience Platform Data Governance allows for labeling of sensitive CJA data and enforcement of privacy policies.
+
+Privacy labels and policies that were created on datasets consumed by Experience Platform can be surfaced in the CJA data views workflow. Therefore, data queried using the CJA SQL Connector show appropriate warnings or errors when not complying with the privacy labels and policies defined.
 
 ### List Data Views
 
