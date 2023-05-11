@@ -23,7 +23,7 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 | **Delete rows containing dynamic dimensions from a Freeform table** | In a Freeform table in Analysis Workspace, you can now quickly delete specific rows that contain dynamic dimensions using the x icon. When doing so, a "Does not equal" filter rule is automatically applied.<p>Previously, the only way to delete rows that contained dynamic dimensions was to manually create a rule in the Filter dialog. [Learn more](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | N/A | May 10, 2023 |
 | **New button to add a visualization within a panel** | A new button is now available at the bottom of each panel in Analysis Workspace, allowing you to quickly add a visualization. <p>Previously, the only methods for adding a visualization to a panel were to drag a visualization from the left rail, duplicate or copy an existing visualization, or create a blank panel. [Learn more](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | N/A | May 17, 2023 |
 | **Deep Linking (Mobile App)** | Allows users to send links to scorecards that will lead them directly to the scorecard project in the app. This makes it even easier to share projects and boost engagement from a less technical audience. | N/A | May 17, 2023 |
-| **Intelligent Captions** | Enrich storytelling for users with natural-language summaries of a Line visualization. | May 17, 2023 | June 1, 2023 | 
+| **Intelligent Captions** | Enrich storytelling for users with natural-language summaries of a [!UICONTROL Line] visualization. | May 17, 2023 | June 1, 2023 | 
 
 {style="table-layout:auto"}
   
@@ -36,6 +36,12 @@ AN-316412; AN-317105; AN-318122; AN-317353
 | Notice | Notice added or updated | Description |
 | --- | --- | --- |
 | N/A | N/A | N/A |
+
+## End-of-life (EOL) notices {#eol}
+
+| EOL Product or Feature | Date added or updated | Description |
+| --- | --- | --- |
+| **Migration to AdobeIO OAuth Server-to-Server credentials** | May 11, 2023 |  Adobe Analytics API, CJA API, and Livestream customers using AdobeIO JWT credentials must migrate to AdobeIO OAuth Server-to-Server credentials by **January 1, 2025**. AdobeIO will not allow new JWT credentials to be created beginning May 1, 2024. Customers using JWT must create a new OAuth Server-to-Server credential or migrate their existing JWT credential to an OAuth Server-to-Server credential. Customers must also update their client applications to use the new OAuth Server-to-Server credentials. <ul><li>[Migrating from Service Account (JWT) credentials](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[Using the new OAuth Server-to-Server credentials](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[FAQs](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul>![](assets/jwt.png) |
 
 {style="table-layout:auto"}
 
