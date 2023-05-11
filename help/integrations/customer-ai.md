@@ -4,12 +4,12 @@ title: Integrate Customer AI data with CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
+hide: yes
+hide-from-toc: yes
 ---
 # Integrate Customer AI data with CJA
 
->[!NOTE]
->
->This functionality is currently in [limited testing](/help/release-notes/releases.md) and not generally available.
+{{release-limited-testing}}
 
 [Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en), as part of Adobe Experience Platform Intelligent Services, provides marketers with the power to generate customer predictions at the individual level.
 
