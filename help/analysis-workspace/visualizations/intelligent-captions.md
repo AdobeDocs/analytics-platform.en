@@ -56,7 +56,7 @@ You can **export captions via PDF**, as long as the project is saved with the ca
 
 ## Toggle captions off {#toggle}
 
-If you would rather not have intelligent captions generated, you can toggle this feature off by going to the Line settings gear icon and unchecking **[!UICONTROL Show intelligent captions]**.
+If you would rather not have intelligent captions generated, you can toggle this feature off by going to the Visualization preferences and unchecking **[!UICONTROL Show intelligent captions]**.
 
 ![caption settings](assets/toggle-captions.png)
 
