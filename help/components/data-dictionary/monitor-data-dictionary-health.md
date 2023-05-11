@@ -1,8 +1,9 @@
 ---
-description: Administrators are responsible for monitoring Data Dictionary health. This includes whether components are gathering data, are approved, contain descriptions, and are free from duplicates. 
+description: Administrators are responsible for monitoring Data Dictionary health. This includes whether components are gathering data, are approved, contain descriptions, and are free from duplicates.
 title: Monitor Data Dictionary health
 feature: Components
 role: Admin
+exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
 ---
 # Monitor Data Dictionary health
 
@@ -32,7 +33,7 @@ To identify health issues in your Data Dictionary:
 
    ![Data Dictionary admin view](assets/data-dictionary-admin.png)
 
-1. Ensure that the correct Report Suite is selected in the drop-down menu.
+1. Ensure that the correct data view is selected in the drop-down menu.
 
 1. On the [!UICONTROL **Dictionary health**] tab, select [!UICONTROL **View**] next to any of the following options:
 

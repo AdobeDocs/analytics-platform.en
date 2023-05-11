@@ -1,18 +1,19 @@
 ---
-description: Administrators can add descriptions for components using either the Report Suite.
+description: Administrators can add descriptions for components using the data view.
 title: Add component descriptions
 feature: Components
 role: Admin
+exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
 ---
 # Add component descriptions
 
 Descriptions help users know how to best use the various components when building projects in Analysis Workspace or when viewing reports. 
 
-Customer Journey Analytics administrators can add descriptions for components (Dimensions, Metrics, Filters, and Date Ranges) either within the Report Suite or using the Data Dictionary directly within Analysis Workspace. 
+Customer Journey Analytics administrators can add descriptions for components (Dimensions, Metrics, Filters, and Date Ranges) either within the data view or using the Data Dictionary directly within Analysis Workspace. 
 
-## Add descriptions to components in a Report Suite
+## Add descriptions to components in a Data View
 
-The following video describes how to add dimension and metric descriptions in a Report Suite:
+The following video describes how to add dimension and metric descriptions in a data view:
 
 >[!VIDEO](https://video.tv.adobe.com/v/25453/?quality=12)
 

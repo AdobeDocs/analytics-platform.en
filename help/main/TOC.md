@@ -76,6 +76,7 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Value bucketing](../data-views/component-settings/value-bucketing.md)
     +   [Standard component reference](../data-views/component-reference.md)
     +   [SQL Connector](../data-views/sql-connector.md)
+    +   [Derived fields](../data-views/derived-fields/derived-fields.md)
     +   [Labels and policies](../data-views/data-governance.md)
 
 
@@ -86,6 +87,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
     +   Projects {#build-workspace-project}
         +   [Projects overview](../analysis-workspace/build-workspace-project/freeform-overview.md)
+        +   [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md)
         +   [Save projects](../analysis-workspace/build-workspace-project/save-projects.md)
         +   Folders in Workspace {#workspace-folders}
             + [About Folders in Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -109,7 +111,7 @@ breadcrumb-title: Customer Journey Analytics Guide
                 + [Row settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
                 + [Dynamic vs. Static items](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
 
-            +   [Pagination, filtering and sorting tables](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+            +   [Filter and sort tables](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
 
             +   [Workspace Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
 
@@ -137,6 +139,7 @@ breadcrumb-title: Customer Journey Analytics Guide
         +   [Donut](../analysis-workspace/visualizations/donut.md)
         +   [Histogram](../analysis-workspace/visualizations/histogram.md)
         +   [Horizontal Bar and Horizontal Bar Stacked](../analysis-workspace/visualizations/horizontal-bar.md)
+        +   [Intelligent captions](../analysis-workspace/visualizations/intelligent-captions.md)
         +   [Key metric summary](../analysis-workspace/visualizations/key-metric.md)
         +   [Line](../analysis-workspace/visualizations/line.md)
         +   [Scatterplot](../analysis-workspace/visualizations/scatterplot.md)
@@ -166,13 +169,6 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [View-only projects](../analysis-workspace/curate-share/view-only-projects.md)
         + [Download PDF or CSV files](../analysis-workspace/curate-share/download-send.md)
         + [Schedule projects](../analysis-workspace/curate-share/t-schedule-report.md)
-
-    +   Attribution IQ {#attribution}
-        + [Attribution overview](../analysis-workspace/attribution/overview.md)
-        + [Attribution models and lookback windows](../analysis-workspace/attribution/models.md)
-        + [Algorithmic attribution](../analysis-workspace/attribution/algorithmic.md)
-        + [Attribution best practices](../analysis-workspace/attribution/best-practices.md)
-        + [FAQ](../analysis-workspace/attribution/faq.md)
 
     +   Virtual Analyst {#virtual-analyst}
         +   [Virtual Analyst overview](../analysis-workspace/virtual-analyst/overview.md)
@@ -213,10 +209,10 @@ breadcrumb-title: Customer Journey Analytics Guide
     +   [Metrics](../components/apply-create-metrics.md)
     +   Filters {#cja-filters}
         + [Filters overview](../components/filters/filters-overview.md)
-        + [Create a filter](../components/filters/create-filters.md)
-        + [Manage filters](../components/filters/manage-filters.md)
+        + [Create filters](../components/filters/create-filters.md)
         + [Quick filters](../components/filters/quick-filters.md)
-        + [Ad hoc filters](../components/filters/ad-hoc-filters.md)
+        + [Filter builder](../components/filters/filter-builder.md)
+        + [Manage filters](../components/filters/manage-filters.md)
         + [Operators](../components/filters/operators.md)
     +   Calculated Metrics {#cja-calcmetrics}
         +   [Calculated metrics overview](../components/calc-metrics/calc-metr-overview.md)
@@ -256,12 +252,12 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create a mobile scorecard](../mobile-app/create-scorecard.md)
     + [Set up executives to use dashboards](../mobile-app/set-up-execs.md)
     + [Executive user quick start guide](../mobile-app/executive.md)
-
 +   Report Builder {#cja-reportbuilder}
     + [Report Builder Overview](../report-builder/report-buider-overview.md)
     + [Report Builder Set Up](../report-builder/report-builder-setup.md)
     + [Create a Data Block](../report-builder/create-a-data-block.md)
     + [Report Builder Hub](../report-builder/report-builder-hub.md)
+    + [Select a Data View](../report-builder/select-data-view.md)
     + [Select a Date Range](../report-builder/select-date-range.md)
     + [Work with Filters](../report-builder/work-with-filters.md)
     + [Filter Dimensions](../report-builder/filter-dimensions.md)
@@ -279,7 +275,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Integrate Adobe solutions with CJA overview](/help/integrations/overview.md)
     + [Integrate Adobe Analytics with Customer Journey Analytics](/help/integrations/aa.md)
     + [Integrate Journey Optimizer data with CJA](/help/integrations/ajo.md)
-    + [Integrate Customer AI data with CJA](/help/integrations/customer-ai.md)
+    + [Integrate Decision Management data with CJA](/help/integrations/ajo-od.md)
 
 +   Data Governance {#cja-privacy}
     + [Data Governance](../privacy/privacy-overview.md)

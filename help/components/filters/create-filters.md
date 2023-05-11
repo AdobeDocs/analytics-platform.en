@@ -5,40 +5,22 @@ exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 ---
 # Create filters
 
-The Filter Builder provides a canvas to drag and drop metrics, dimensions, filters, and events to filter visitors based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple or complex filters that identify visitor attributes and actions across visits and page hits.
+You can create different types of filters in Workspace, depending on how complex they need to be, whether they should apply to the current project only or to all projects, and so forth. 
 
-You can create instant filters by dropping any component type (dimension, dimension item, event, metric, filter, filter template, date range) into the filter drop zone at the top of a panel.
+Following is a summary of the filter types that are available, with links to information about how to create them:
 
-Component types are auto-converted into filters. Alternatively, you can click the "+" sign in the **[!UICONTROL Add Filter]** drop box.
+| Filter type | Created where? | Applicable where? | When to use |
+| --- | --- | --- | --- |
+| Component-list filter | Click +, which takes you to the [Filter Builder](/help/components/filters/filter-builder.md) | All your Workspace projects | For more complex filters, sequential filters |
+| Quick filter | [Quick filter builder](/help/components/filters/quick-filters.md) | Project only, but can save and add to your segment list. | Can be used for ad hoc single-rule filters (with drag-and-drop), or to add/edit multiple rules (by clicking the Filter icon) |  
+| Filters in fallout analysis |  [Fallout visualization](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) in Analysis Workspace | To individual fallout visualizations | Create filters from a touchpoint, add filters as touchpoint, and compare key workflows across various filters |
+| Calculated metrics-based filter | [Calculated metric builder](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md) | To individual calculated metric | Apply filter/s within your metric definition |
 
-Keep in mind that:
-
-* You **cannot** drop the following component types into the filter zone: calculated metrics and dimensions/metrics from which you cannot build filters.
-* For full dimensions and events, Analysis Workspace creates "exists" hit filters. Examples: "Hit where eVar1 exists" or "hit where event1 exists".
-* If "unspecified" or "none" is dropped in the filter drop zone, it is automatically converted to a "does not exist" filter so that it is treated correctly.
-
-![](assets/segment-dropzone.png)
-
->[!NOTE]
->
->Filters created this way are internal to the project.
-
-You can choose to make these filters public (global) by following these steps:
-
-1. Hover over the filter in the drop zone and click the "i" icon.
-1. In the information panel that displays, click **[!UICONTROL Make public]**.
-
-   ![](assets/segment-info.png)
-
-## Other methods for applying filters
-
-Several other methods exist for applying filters to a project:
+When applyinfilters to a freeform project, several other methods are also available:
 
 | Action | Description |
 | --- | --- |
 | Create filter from selection | Create an inline filter. This filter applies only to the open project and is not saved as a CJA filter.<p> 1. Select which table rows you want to be part of the filter.  2. Right-click the selection.  3. Click *Create filter from selection*. |
-| Workspace [!UICONTROL Components] > [!UICONTROL New Filter] | Displays the Filter Builder. See [Filter Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) for more information about filtering. |
-| Share > Share Project or Share > Curate Project Data | In [Curate and Share](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6), learn how filters that you apply to the project are available in shared analysis for the recipient.|
-| Use filters as dimensions | See video below: Using Filters as Dimensions in Analysis Workspace|
-
->[!VIDEO](https://video.tv.adobe.com/v/23974)
+| Workspace [!UICONTROL Components] > [!UICONTROL New Filter] | Displays the Filter Builder. See [Filter Builder](/help/components/filters/filter-builder.md) for more information about filtering. |
+| Share > Share Project or Share > Curate Project Data | In [Share projects](/help/analysis-workspace/curate-share/share-projects.md) or [Curate projects](/help/analysis-workspace/curate-share/curate.md), learn how filters that you apply to the project are available in shared analysis for the recipient.|
+| Use filters as dimensions | The following video demonstrates how to use filters as dimensions:  <p>[Use filters as dimensions in Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)</p>|

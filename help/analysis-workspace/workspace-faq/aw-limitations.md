@@ -25,7 +25,7 @@ Here is a list of known limitations in Analysis Workspace and its related compon
 ## Components > Filters
 
 * Certain metrics and dimensions cannot be filtered, such as [!UICONTROL Occurrences], [!UICONTROL Unique Visitors], etc.
-* Ad hoc filters created in the [panel dropzone](/help/analysis-workspace/c-panels/panels.md) will not appear in the left rail of Workspace or the Filter component manager, unless they are made public. This can be done by editing the filter and selecting **[!UICONTROL Make this filter public]**.
+* Ad hoc filters created in the [panel dropzone](/help/analysis-workspace/c-panels/panels.md) are a type of quick filter. They do not appear in the left rail of Workspace or the Filter component manager unless they are made public. For more information, see [Quick filters](/help/components/filters/quick-filters.md).
 
 ## Components > Calculated Metrics
 
@@ -42,6 +42,3 @@ Here is a list of known limitations in Analysis Workspace and its related compon
 
 * Some of the settings on the [!UICONTROL Report Settings] page do not apply. Analysis Workspace uses only the [!UICONTROL Language/Currency/Encoding] settings at the bottom: [!UICONTROL Thousands separator], [!UICONTROL Scheduled Report Encoding], and [!UICONTROL CSV Separator Character].
 
-## Attribution IQ
-
-* A subset of metrics is not supported in [!UICONTROL Attribution IQ]. For a full list, see the [Attribution IQ FAQ](../attribution/faq.md).

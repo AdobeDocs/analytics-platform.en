@@ -1,8 +1,9 @@
 ---
-description: The Data Dictionary in Analysis Workspace allows users to catalogue and keep track of the various components in Analysis Workspace, including their intended use, which are approved, which are duplicates, and so forth. 
+description: The Data Dictionary in Analysis Workspace allows users to catalogue and keep track of the various components in Analysis Workspace, including their intended use, which are approved, which are duplicates, and so forth.
 title: View the Data Dictionary
 feature: Components
 role: User, Admin
+exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
 ---
 # View component information in the Data Dictionary
 
@@ -20,7 +21,7 @@ To view information about a component in the Data Dictionary:
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 
-1. Ensure that the Report Suite that contains the component you want to view is selected in the drop-down menu. By default, the report suite that you are already in is displayed.
+1. Ensure that the data view that contains the component you want to view is selected in the drop-down menu. By default, the data view that you are already in is displayed.
 
 1. (Optional) In the search field, begin typing the name of the component you want to view.
 
@@ -28,10 +29,14 @@ To view information about a component in the Data Dictionary:
 
 {{dd-filter-criteria}}
 
+1. (Optional) Select the **Sort** icon ![Sort components icon](assets/component-sort-icon.png), then select any of the following filter options to sort the list of components:
+
+   {{components-sort-options}}
+
 1. From the list of components, select the component you want to view.
 
    The following information about the component is displayed:
 
    {{dd-component-information}}
 
-1. (Optional) Drag a component from the Data Dictionary into Analysis Workspace. 
+1. (Optional) Drag a component from the Data Dictionary into Analysis Workspace.

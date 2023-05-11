@@ -15,16 +15,16 @@ exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 
 ## From the Left/Right
 
-Take a part of a string based on its position to the beginning or end of a string. **[!UICONTROL From the Left]** and **[!UICONTROL From the Right]** methods provide two dropdowns: **[!UICONTROL From]** (where the output starts) and **[!UICONTROL To]** (where the output ends).
+Take a part of a string based on its position to the beginning or end of a string. **[!UICONTROL From the Left]** and **[!UICONTROL From the Right]** methods provide two drop-down lists: **[!UICONTROL From]** (where the output starts) and **[!UICONTROL To]** (where the output ends).
 
 * **[!UICONTROL String Start]**: The start of the string.
 * **[!UICONTROL String End]**: The end of the string.
 * **[!UICONTROL Position]**: A static number of characters from the left or right, depending on the method.
-* **[!UICONTROL String]**: Match a character or sequence of characters to indicate the beginning or end of a string. This dropdown also reveals additional options:
+* **[!UICONTROL String]**: Match a character or sequence of characters to indicate the beginning or end of a string. This drop-down list also reveals additional options:
   * **[!UICONTROL Match]**: The string to match. If the input has no match with this field, [No value options](no-value-options.md) apply.
   * **[!UICONTROL Index]**: The **[!UICONTROL Match]** criteria can be present multiple times in a string. This integer determines which match to start or end the output, depending on the method. For example, an index of `1` represents the first match. If the index is higher than the number of matches available, [No value options](no-value-options.md) apply.
   * **[!UICONTROL Include String]**: A checkbox that includes the **[!UICONTROL Match]** string in the output if enabled.
-* **[!UICONTROL Length]**: An integer that specifies the character count to include after the starting position of the output. Only available under the **[!UICONTROL To]** dropdown.
+* **[!UICONTROL Length]**: An integer that specifies the character count to include after the starting position of the output. Only available under the **[!UICONTROL To]** drop-down list.
 
 ## Delimiter
 

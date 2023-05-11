@@ -91,7 +91,7 @@ It lets you:
 | Widget/Setting | Description |
 | --- | --- |
 | Dataset selector | Lets you pick one or all datasets in the connection. You cannot multi-select datasets. Defaults to [!UICONTROL All datasets]. |
-| Calendar/Date Ranges | The date range indicates when you added data to the connection. All standard calendar presets are included. You can customize the date range, but no custom date ranges show up in the dropdown. |
+| Calendar/Date Ranges | The date range indicates when you added data to the connection. All standard calendar presets are included. You can customize the date range, but no custom date ranges show up in the drop-down list. |
 | [!UICONTROL Records of event data available] widget | Represents the total number of event dataset rows available for reporting, **for the entire connection**. This count is independent of any calendar settings. It changes if you select a dataset from the dataset selector or by selecting a dataset in the table. ( Note that there is a latency of 1-2 hours to get the data to appear in reporting, once it is added.) |
 | [!UICONTROL Metrics] widget | Summarizes the event records added/skipped/deleted, and the number of batches added, **for the dataset and date range you have selected**. |
 | [!UICONTROL Records added] widget | Indicates how many rows were added in the selected time period, **for the dataset and date range you have selected**. Updated every 10 minutes. **Note**: Data for **[!UICONTROL Records added]** includes only event data at this time, not profile or lookup data. |
