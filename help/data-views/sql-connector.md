@@ -8,6 +8,8 @@ hidefromtoc: yes
 ---
 # SQL Connector
 
+{{release-limited-testing}}
+
 The [!DNL Customer Journey Analytics (CJA) SQL Connector] enables SQL access to the [data views](./data-views.md) that you have defined in CJA. Your data engineers and analysts might be more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that CJA users are using when creating their Analysis Workspace projects.
 
 Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) is the SQL interface to data available in the data lake of Experience Platform. With the [!DNL CJA SQL Connector] enabled, the functionality of [!DNL Query Service] is extended to see your CJA data views as tables or views in a [!DNL Query Service] session. As a result, business intelligence tools that use [!DNL Query Service] as their PostgresSQL interface benefit seamlessly from this extended functionality.
