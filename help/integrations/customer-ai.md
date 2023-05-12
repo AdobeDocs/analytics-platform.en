@@ -4,8 +4,6 @@ title: Integrate Customer AI data with CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-hide: yes
-hide-from-toc: yes
 ---
 # Integrate Customer AI data with CJA
 
@@ -20,19 +18,19 @@ Customer AI relies on individual behavioral data and profile data for propensity
 Customer AI can integrate with Customer Journey Analytics (CJA) to the extent that Customer AI-enabled datasets can be leveraged in data views and reporting in CJA. You can:
 
 * **Track propensity scores for a segment of users over time**.  
-  * Use case: understand likelihood of customers in a specific segment to convert.  
+  * Use case: Understand the likelihood of customers in a specific segment to convert.  
   * Example: A marketer at a hotel chain wants to understand what is the likelihood of a hotel customer to purchase a show ticket at the hotel's concert venue. 
 * **Analyze which success events or attributes are associated with propensity scores**.  
-  * Use case: understand the attributes or success events associated with propensity scores.  
+  * Use case: Understand the attributes or success events associated with propensity scores.  
   * Example: A marketer at a hotel chain wants to understand how purchases of show tickets at a hotel's concert venue are associated with propensity scores.
 * **Follow the entry flow for customer propensity over different scoring runs**.  
-  * Use case: understand people who were initially low-propensity users and, over time, became high-propensity users.
+  * Use case: Understand people who were initially low-propensity users and, over time, became high-propensity users.
   * Example: A marketer at a hotel chain wants to understand which hotel customers initially were identified as customers with low propensity to purchase a show ticket, but over time became customers with high propensity to purchase a show ticket.
 * **Look at the distribution of propensity**. 
-  * Use case: understand the distribution of propensity scores to be more precise in defining segments. 
+  * Use case: Understand the distribution of propensity scores to be more precise in defining segments. 
   * Example: A retailer wants to run a specific promotion for $50 off a product. They may want to run only a very limited promotion due to budget, etc. They analyze the data and decide to target only the top 80%+ of their customers.
 * **Look at the propensity to accomplish an action for a particular cohort over time**. 
-  * Use case: track a specific cohort over time. 
+  * Use case: Track a specific cohort over time. 
   * Example:  A marketer at a hotel chain wants to track their bronze tier versus their silver tier, or silver tier versus their gold tier, over time. So they they can see each cohort's propensity for booking the hotel over time.
 
 To actually integrate Customer AI data with CJA, follow these steps:
