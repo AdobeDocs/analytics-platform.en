@@ -13,11 +13,6 @@ badgeDerivedFields: label="New Feature" type="Positive"
 
 {{release-limited-testing}}
 
->[!NOTE]
->
->Pending final updates, you might see [!UICONTROL Custom field] instead of [!UICONTROL Derived field] across the user interface.
-
-
 Derived fields are an important aspect of the real-time reporting functionality in Customer Journey Analytics (CJA). A derived field allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. You can then use that derived field as a component (metric or dimension) in [Workspace](../../analysis-workspace/home.md) or even further define the derived field as a component in [Data view](../data-views.md). 
 
 Derived fields can save a significant amount of time and effort, compared to transforming or manipulating your data in other locations outside of CJA. Such as [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en), or within your own Extract Transform Load (ETL) / Extract Load Transform (ELT) processes.
