@@ -19,7 +19,7 @@ Customer AI can integrate with Customer Journey Analytics (CJA) to the extent th
 
 * **Track propensity scores for a segment of users over time**.  
   * Use case: Understand the likelihood of customers in a specific segment to convert.  
-  * Example: A marketer at a hotel chain wants to understand what is the likelihood of a hotel customer to purchase a show ticket at the hotel's concert venue. 
+  * Example: A marketer at a hotel chain wants to understand the likelihood of a hotel customer to purchase a show ticket at the hotel's concert venue. 
 * **Analyze which success events or attributes are associated with propensity scores**.  
   * Use case: Understand the attributes or success events associated with propensity scores.  
   * Example: A marketer at a hotel chain wants to understand how purchases of show tickets at a hotel's concert venue are associated with propensity scores.
@@ -31,7 +31,7 @@ Customer AI can integrate with Customer Journey Analytics (CJA) to the extent th
   * Example: A retailer wants to run a specific promotion for $50 off a product. They may want to run only a very limited promotion due to budget, etc. They analyze the data and decide to target only the top 80%+ of their customers.
 * **Look at the propensity to accomplish an action for a particular cohort over time**. 
   * Use case: Track a specific cohort over time. 
-  * Example:  A marketer at a hotel chain wants to track their bronze tier versus their silver tier, or silver tier versus their gold tier, over time. So they they can see each cohort's propensity for booking the hotel over time.
+  * Example:  A marketer at a hotel chain wants to track their bronze tier versus their silver tier, or silver tier versus their gold tier, over time. They can see each cohort's propensity for booking the hotel over time.
 
 To actually integrate Customer AI data with CJA, follow these steps:
 
