@@ -311,6 +311,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Access Control](../admin/cja-access-control.md)
     + [View and manage usage](../admin/estimate-usage.md)
     + [Deletion implications](../admin/cja-deletion.md)
+    + [Optimize CJA performance](../admin/cja-performance.md)
 
 +   Labs {#labs}
     + [Labs User Guide](../labs/labs.md)
