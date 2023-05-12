@@ -35,7 +35,9 @@ To use this functionality, you have to
     - CJA  Workspace projects, and
     - CJA Data views they want to use.
 
--   Use expiring on non-expiring credentials to connect BI tools to the CJA SQL Connector. See [Credentials guide](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) for more information on setting expiring credentials or non-expiring credentials.
+-   Use expiring on non-expiring credentials to connect BI tools to the CJA SQL Connector. Thr [Credentials guide](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) provides more information on setting expiring credentials or non-expiring credentials.
+
+See [Access Control](../admin/cja-access-control.md) in the CJA Administration section for additional information.
 
 
 ## Usage
