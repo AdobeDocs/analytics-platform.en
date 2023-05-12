@@ -9,7 +9,7 @@ role: User, Admin
 
 {{release-limited-testing}}
 
-Intelligent captions use data science to provide valuable natural-language insights for Workspace visualizations. The initial release provides auto-generated insights for the [Line](line.md) visualization. (Other visualizations will follow.)
+Intelligent captions use advanced Machine Learning and Generative AI to provide valuable natural-language insights for Workspace visualizations. The initial release provides auto-generated insights for the [Line](line.md) visualization. (Other visualizations will follow.) 
 
 Intelligent captions are geared towards:
 
@@ -24,7 +24,7 @@ To launch auto-generated captions for a line visualization, click the **[!UICONT
 
 ![launch intelligent captions](assets/intell-caps-1.png)
 
-Natural-language insights are now being generated.
+Natural-language insights are now being generated. Captions will be generated every time the underlying selected data changes in the table powering the visualization. Also, if there are multiple metrics in the table, captions are only generated for the first metric or the metric currently selected by the user.
 
 If you save the project at this point, and re-load it later, the captions are auto-updated with new data. The same applies to scheduled projects and PDF files exported from this project.
 
@@ -59,7 +59,3 @@ You can **export captions via PDF**, as long as the project is saved with the ca
 If you would rather not have intelligent captions generated, you can toggle this feature off by going to the Visualization preferences and unchecking **[!UICONTROL Show intelligent captions]**.
 
 ![caption settings](assets/toggle-captions.png)
-
-## Reorder captions {#reorder}
-
-You can reorder how the captions are displayed by dragging a caption to a new position.
