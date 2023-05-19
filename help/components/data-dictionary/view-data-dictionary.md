@@ -21,13 +21,17 @@ To view information about a component in the Data Dictionary:
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 
-1. Ensure that the Report Suite that contains the component you want to view is selected in the drop-down menu. By default, the report suite that you are already in is displayed.
+1. Ensure that the data view that contains the component you want to view is selected in the drop-down menu. By default, the data view that you are already in is displayed.
 
 1. (Optional) In the search field, begin typing the name of the component you want to view.
 
    The type of component can be identified by both color and icon. **Dimensions** ![Dimension icon](assets/dimension-icon.png) are orange, **Segments** ![Segment icon](assets/segment-icon.png) are blue, **Date ranges** ![Date range icon](assets/date-range-icon.png) are purple, and **Metrics** ![Metric icon](assets/default-metric-icon.png) are green. The Adobe icon ![Adobe icon](assets/default-calc-metric-icon.png) indicates either a calculated metric template or a segment template, and the calculator icon ![Calculator icon](assets/calculated-metric-icon-created.png) indicated a calculated metric that was created by an Analytics administrator in your organization. 
 
 {{dd-filter-criteria}}
+
+1. (Optional) Select the **Sort** icon ![Sort components icon](assets/component-sort-icon.png), then select any of the following filter options to sort the list of components:
+
+   {{components-sort-options}}
 
 1. From the list of components, select the component you want to view.
 

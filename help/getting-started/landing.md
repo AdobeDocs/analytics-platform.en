@@ -44,7 +44,7 @@ The landing page for Customer Journey Analytics highlights [!DNL Analysis Worksp
 | [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) for you to design and build. |
 | [!UICONTROL Open Training Tutorial] | Opens the Workspace training tutorial that guides you through the process of building a new starter project in a step-by-step tutorial.|
 | [!UICONTROL Open release notes] | Opens the Adobe Analytics section of the latest Adobe Experience Cloud release notes. |
-| Filter icon | Filters by tags, report suites, owners, types, and other filters (Mine, Shared with me, Favorites, and Approved)  |
+| Filter icon | Filters by tags, data views, owners, types, and other filters (Mine, Shared with me, Favorites, and Approved)  |
 | Search bar | Searches all columns in the table. |
 | Selection box | Selects one or more projects to display the project management actions you can perform: **Delete**, **Share**, **Rename**, **Copy**, **Unpin**, **Move Up**, **Move Down**, **Tag**, **Approve**, **Export CSV**, and **Move to**. You may not have permissions to perform all listed actions. |
 | [!UICONTROL Favorites] | Adds a star next to a favorite project or folder that can be used as a filter. |
@@ -55,7 +55,7 @@ The landing page for Customer Journey Analytics highlights [!DNL Analysis Worksp
 | [!UICONTROL Type] | Indicates whether this type is a Workspace project, a Mobile scorecard, or a folder. |
 | [!UICONTROL Tags] | Tags projects to organize them into groups. |
 | [!UICONTROL Project Role] | Identifies the project roles: whether you are the project Owner and whether you have permissions to Edit or Duplicate the project.  |
-| [!UICONTROL Report Suite] | Identifies the Report Suites that are associated with the project.<br>Tables and visualizations within a panel derive data from the report suite selected in the top right of the panel. The report suite also determines what components are available in the left rail. Within a project, you can use one or many report suites depending on your analysis use cases. The list of report suites is sorted on relevance. Adobe defines relevance based on how recently and frequently the suite has been used by the current user, and how frequently the suite is used within the organization. |
+| [!UICONTROL Data View] | Identifies the data views that are associated with the project.<br>Tables and visualizations within a panel derive data from the data view selected in the top right of the panel. The data view also determines what components are available in the left rail. Within a project, you can use one or many data views depending on your analysis use cases. The list of data views is sorted on relevance. Adobe defines relevance based on how recently and frequently the suite has been used by the current user, and how frequently the suite is used within the organization. |
 | [!UICONTROL Owner] | Identifies the person who created the project. |
 | [!UICONTROL Last opened] | Identifies the date you last opened the project. |
 | Customize table icon | Selects which columns to view in the table. To add or remove columns from the list of projects, click the column icon (![Landing all](assets/select-column.png) ) in the top-right, then select or deselect column titles.|

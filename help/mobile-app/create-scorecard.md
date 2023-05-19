@@ -1,6 +1,6 @@
 ---
-description: How to create an Adobe Analytics dashboards scorecard
-title: Create a scorecard
+description: How to create and share Adobe Analytics dashboards scorecards
+title: Create and share scorecards
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
@@ -8,7 +8,7 @@ solution: Customer Journey Analytics
 ---
 # Create a mobile scorecard
 
-The following information instructs curators of Adobe Analytics data on how to configure and present dashboards for executive users. To start with, you can view the Adobe Analytics dashboards Scorecard Builder video:
+The following information instructs curators of Adobe Analytics data on how to configure and present dashboards for executive users. To start with, you can view the Adobe Analytics dashboards scorecard builder video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343458)
 
@@ -19,11 +19,11 @@ An Adobe Analytics scorecard displays key data visualizations for executive user
 
 ![Example scorecard](assets/intro_scorecard.png)
 
-As a curator of this scorecard, you can use the Scorecard Builder to configure which tiles appear on the scorecard for your executive consumer. You also configure how the detailed views, or the breakdowns, can be adjusted once the tiles are tapped. The Scorecard Builder interface is shown below:
+As a curator of this scorecard, you can use the scorecard builder to configure which tiles appear on the scorecard for your executive consumer. You also configure how the detailed views, or the breakdowns, can be adjusted once the tiles are tapped. The scorecard builder interface is shown below:
 
 ![Scorecard Builder](assets/scorecard_builder.png)
 
-To create the Scorecard, you need to do the following:
+To create the scorecard, you need to do the following:
 
 1. Access the [!UICONTROL Blank Mobile Scorecard] template.
 2. Configure the scorecard with data and save it.
@@ -47,13 +47,13 @@ You can access the [!UICONTROL Blank Mobile Scorecard] template either by creati
 
 ## Configure the scorecard with data and save it {#configure}
 
-To implement the Scorecard template:
+To implement the scorecard template:
 
-1. Under **[!UICONTROL Properties]** (in the right-hand rail), specify a **[!UICONTROL Project report suite]** from which you want to use data. Report suites are data views in CJA.
+1. Under **[!UICONTROL Properties]** (in the right-hand rail), specify a **[!UICONTROL Project data view]** from which you want to use data.
 
-    ![Report suite selection](assets/properties_save.png)
+    ![data view selection](assets/properties_save.png)
 
-1. To add a new tile to your Scorecard, drag a metric from the left panel and drop it into the **[!UICONTROL Drag and Drop Metrics Here]** zone. You can also insert a metric between two tiles using a similar workflow.
+1. To add a new tile to your scorecard, drag a metric from the left panel and drop it into the **[!UICONTROL Drag and Drop Metrics Here]** zone. You can also insert a metric between two tiles using a similar workflow.
 
     ![Add tiles](assets/build_list.png)
 
@@ -72,7 +72,7 @@ For example, you can add appropriate dimensions (like **[!DNL Marketing Channel]
 
 To apply filters to individual tiles, drag a filter (segments are filters in CJA) from the left panel and drop it directly on top of the tile.
 
-If you want to apply the filter to all the tiles in the Scorecard, drop the tile on top of the scorecard. Or, you can also apply filters by selecting filters in the filter menu beneath the date ranges. You [configure and apply filters for your Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) the same way you would in Adobe Analytics Workspace.
+If you want to apply the filter to all the tiles in the scorecard, drop the tile on top of the scorecard. Or, you can also apply filters by selecting filters in the filter menu beneath the date ranges. You [configure and apply filters for your scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) the same way you would in Adobe Analytics Workspace.
 
 ![Build filters](assets/segment_ui.png)
 
@@ -94,7 +94,7 @@ To create a comparison date, you can select from convenient pre-sets for common 
 
 ![New score card4](assets/new_score_card4.png)
 
-If the date range you want hasn’t been created yet, you can create a new one by clicking the calendar icon.
+If the date range you want hasn't been created yet, you can create a new one by clicking the calendar icon.
 
 ![New score card5](assets/new_score_card5.png)
 
@@ -157,7 +157,7 @@ If you want to remove [!UICONTROL Unspecified] dimension items from your data, d
 
 ## View and configure tile properties {#tiles}
 
-When you click a tile in the Scorecard Builder, the right-hand rail displays the properties and characteristics associated with that tile and its detail slide. In this rail, you can provide a new **Title** for the tile and alternatively configure the tile by applying filters. Segments are filters in CJA.
+When you click a tile in the scorecard builder, the right-hand rail displays the properties and characteristics associated with that tile and its detail slide. In this rail, you can provide a new **Title** for the tile and alternatively configure the tile by applying filters. Segments are filters in CJA.
 
 ![Properties tile](assets/properties-tile-new.png)
 
@@ -205,7 +205,7 @@ To add text to a detail slide, select a layout that shows the `T` symbol, or dra
 
 ## Remove components {#remove}
 
-Similarly, to remove a component that is applied to the entire Scorecard, click anywhere on the Scorecard outside of the tiles and then remove it by clicking the **x** that appears when you hover over the component, as shown below for the **First Time Visits**:
+Similarly, to remove a component that is applied to the entire scorecard, click anywhere on the scorecard outside of the tiles and then remove it by clicking the **x** that appears when you hover over the component, as shown below for the **First Time Visits**:
 
 ![Remove_components](assets/new_remove.png)
 
@@ -250,7 +250,7 @@ Data stories allow you to customize everything so you can share information that
     ![Create a data story](assets/data-story4.png)
 
 >[!NOTE]
->Slides inherit components from the tile, but tiles don’t inherit components from slides.
+>Slides inherit components from the tile, but tiles don't inherit components from slides.
 
 **To customize individual slides**
 
@@ -292,17 +292,17 @@ You can preview how the scorecard will look and function once it is published in
 
 ## Name scorecards {#name}
 
-To name the Scorecard, click the namespace in the upper-left of the screen and type the new name.
+To name the scorecard, click the namespace in the upper-left of the screen and type the new name.
 
 ![Naming_Scorecards](assets/new_name.png)
 
 ## Share scorecards {#share}
 
-To share the Scorecard with an executive user:
+To share the scorecard with an executive user:
 
 1. Click the **[!UICONTROL Share]** menu and select **[!UICONTROL Share scorecard]**.
 
-1. In the **[!UICONTROL Share mobile scorecard]** form, complete the fields by:
+1. In the **[!UICONTROL Share Mobile Scorecard]** form, complete the fields by:
 
     * Providing the name of the scorecard
     * Providing a description of the scorecard
@@ -313,6 +313,25 @@ To share the Scorecard with an executive user:
 
 ![Share_Scorecards](assets/new_share.png)
 
-After you have shared a scorecard, your recipients can access it on their Analytics dashboards. If you make subsequent changes to the scorecard in the Scorecard Builder, they will be automatically updated in the shared scorecard. Executive users will then see the changes after refreshing the Scorecard on their app.
+After you have shared a scorecard, your recipients can access it on their Analytics dashboards. If you make subsequent changes to the scorecard in the scorecard builder, they will be automatically updated in the shared scorecard. Executive users will then see the changes after refreshing the scorecard on their app.
 
 If you update the scorecard by adding new components, you may want to share the scorecard again (and check the **[!UICONTROL Share embedded components]** option) in order to make sure that your executive users have access to these changes.
+
+### Share scorecards using a shareable link
+
+Using a shareable link makes it easy to share a scorecard in an email, document, or text message app. The shareable link lets recipients open the scorecard on their desktop or on the dashboards mobile app. Shareable deep linking makes it even easier to share projects and boost engagement with your stakeholders.
+
+To share a scorecard using a shareable link
+
+1. Click the **[!UICONTROL Share]** menu and select **[!UICONTROL Share scorecard]**.
+
+   ![Share_Scorecards](assets/share-scorecard.png)
+
+1. Copy the link and paste it into an email, document, or IM app.
+
+   When a recipient uses a desktop app or browser to open the link, the mobile scorecard project will open in Workspace.
+
+   When a recipient opens the link on a mobile device, the scorecard will open directly in the Analytics dashboards app.
+
+   If a recipient hasn't downloaded the mobile app, they'll be directed to the app listing in the App Store or Google Play Store where they can download it.
+

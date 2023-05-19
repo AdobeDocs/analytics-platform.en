@@ -7,7 +7,7 @@ exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
 ---
 # Edit component entries in the Data Dictionary
 
-Customer Journey Analytics administrators can edit component entries in the Data Dictionary for a given Report Suite. Any changes made are visible to all users of the Report Suite.
+Customer Journey Analytics administrators can edit component entries in the Data Dictionary for a given data view. Any changes made are visible to all users of the data view.
 
 To edit a component in the Data Dictionary:
 
@@ -19,13 +19,17 @@ To edit a component in the Data Dictionary:
 
    ![Data Dictionary admin view](assets/data-dictionary-admin.png)
 
-1. Ensure that the correct Report Suite is selected in the drop-down menu. By default, the report suite that you are already in is displayed. 
+1. Ensure that the correct data view is selected in the drop-down menu. By default, the data view that you are already in is displayed. 
 
 1. (Optional) In the search field, begin typing the name of the component you want to edit.
 
    The type of component can be identified by both color and icon. **Dimensions** ![Dimension icon](assets/dimension-icon.png) are orange, **Segments** ![Segment icon](assets/segment-icon.png) are blue, **Date ranges** ![Date range icon](assets/date-range-icon.png) are purple, and **Metrics** ![Metric icon](assets/default-metric-icon.png) are green. The Adobe icon ![Adobe icon](assets/default-calc-metric-icon.png) indicates either a calculated metric template or a segment template, and the calculator icon ![Calculator icon](assets/calculated-metric-icon-created.png) indicated a calculated metric that was created by an Analytics administrator in your organization. 
 
 {{dd-filter-criteria}}
+
+1. (Optional) Select the **Sort** icon ![Sort components icon](assets/component-sort-icon.png), then select any of the following filter options to sort the list of components:
+
+   {{components-sort-options}}
 
 1. From the list of components, select the component you want to edit.
 

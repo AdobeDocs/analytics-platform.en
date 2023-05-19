@@ -13,8 +13,15 @@ The following updates were made to the CJA documentation since its inception.
 
 | Feature | Description |
 | --- | --- |
+| **May 2023** | |
+| Analysis Workspace overview | Updated [Analysis Workspace overview](/help/analysis-workspace/home.md) to include more general overview information and links to relevant content. |
+| Create projects | Created a new article that explains in detail how to [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md) in Analysis Workspace. |
+| Sort components in the left rail | Added information about sorting the list of components in the left rail.See the "Search, filter, and sort the component list" section in [Components overview](/help/components/overview.md). |
+| Delete rows containing dynamic dimensions from a Freeform table | Added information about how to quickly delete specific rows that contain dynamic dimensions using the x icon. See the "Quickly exclude specific rows from a table" section in [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).|
+| Button to add a visualization within a panel | Added information about a new button at the bottom of each panel in Analysis Workspace that allows you to quickly add a visualization. See the "Add visualizations to a panel" section in [Visualizations overview](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
+| Intelligent captions documentation | Enrich storytelling for users with [natural-language summaries](/help/analysis-workspace/visualizations/intelligent-captions.md) of a Line visualization. |
 | **April 2023** |  |
-| Video about using filters as dimensions | <p>Updated the video about using filters as dimension. This video is linked from the [Create filters](/help/components/filters/create-filters.md) page.</p> <p>Following is a direct link to the video: [Use filters as dimensions in Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p>|
+| Video about using filters as dimensions | Updated the video about using filters as dimension. <p>This video is linked from the [Create filters](/help/components/filters/create-filters.md) page.</p> <p>Following is a direct link to the video: [Use filters as dimensions in Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p>|
 | Filter documentation | Added article about using the [Filter builder](/help/components/filters/filter-builder.md). <p>Streamlined documentation in [Create filters](/help/components/filters/create-filters.md) and [Filters overview](/help/components/filters/filters-overview.md).</p>|
 | Update to Experimentation panel documentation | Added a section on [interpreting non-randomized dimensions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
 | Project filters (Ad hoc and quick filters) | Streamlined docmentation about project filters and removed duplicated information. The steps for creating ad hoc filters are now combined with the steps for [creating quick filters](/help/components/filters/quick-filters.md).|

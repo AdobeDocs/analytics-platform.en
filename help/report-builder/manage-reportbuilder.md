@@ -26,7 +26,7 @@ The Data Block Manager lists all data blocks present in a workbook. 
 
 ## Sort the Data Blocks list
 
-You can sort the data block list by a displayed column. For example, you can sort the data block list by Report Suites, Filters, Date Range, and other variables.
+You can sort the data block list by a displayed column. For example, you can sort the data block list by data views, Filters, Date Range, and other variables.
 
 To sort the data block list, click a column heading.
 
@@ -34,7 +34,7 @@ To sort the data block list, click a column heading.
 
 ## Search the Data Block list
 
-Use the Search field to locate anything in the data block table. For example, you could search for metrics contained in the data blocks or report suite. You can also search for dates appearing in the date range, date modified, or last run date columns.
+Use the Search field to locate anything in the data block table. For example, you could search for metrics contained in the data blocks or data view. You can also search for dates appearing in the date range, date modified, or last run date columns.
 
 ![image](./assets/image55.png)
 
