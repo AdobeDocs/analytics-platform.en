@@ -4,6 +4,8 @@ description:
 ---
 # Guide Analysis interface
 
+{{release-limited-testing}}
+
 The interface for a Guided Analysis project, regardless of analysis type, comprises of the following main UI elements:
 
 * **Query rail**: Use this rail on the left of your project to build out your analysis.
@@ -39,4 +41,5 @@ Several options above the chart that allow you to customize how the chart and ta
 
 * **View type**: A drop-down selector that lets you present data for a given [Analysis type](analysis-types/overview.md) in a different way. Each analysis type has at least two view types.
 * **Chart settings**: Fine-tune what your chart looks like and which events you want it to use. Available options depend on the view type selected.
-* **Date range**: A calendar picker that allows you to determine the date range of the report. Some analysis types also allow interval
+* **Date range**: A calendar picker that allows you to determine the date range of the report. Some analysis types also allow intervals, such as daily, weekly, or monthly.
+* **Insights**: Provides contextual insights depending on the report that you view. You can show or hide these insights using the light bulb icon in the top right.
