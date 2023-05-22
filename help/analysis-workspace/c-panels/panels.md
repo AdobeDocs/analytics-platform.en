@@ -49,7 +49,7 @@ Drag and drop any Filters from the left rail into the panel drop zone to begin f
 
 ### Ad hoc filters 
 
-Non-filter components can also be dragged directly into the dropzone to create ad hoc filters, saving you the time and effort of going to the Filter Builder. Filters created in this way are automatically defined as hit-level filters. This definition can be modified by clicking the information icon (i) next to the filter, then the pencil-shaped edit icon and editing it in the Filter Builder.
+Non-filter components can also be dragged directly into the dropzone to create ad hoc filters, saving you the time and effort of going to the Filter Builder. Filters created in this way are automatically defined as event-level filters. This definition can be modified by clicking the information icon (i) next to the filter, then the pencil-shaped edit icon and editing it in the Filter Builder.
 
 Ad hoc filters are a type of quick filter, and are local to the project. They do not show up in the left rail unless you make them public.
 

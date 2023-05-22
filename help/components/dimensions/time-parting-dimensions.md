@@ -1,12 +1,12 @@
 ---
-description: Time parting takes the timestamp of collected hits and breaks it into more meaningful dimensions, such as "Hour of Day" or "Day of Week".
+description: Time parting takes the timestamp of collected events and breaks it into more meaningful dimensions, such as "Hour of Day" or "Day of Week".
 title: Time-parting dimensions
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 ---
 # Time-parting dimensions in Analysis Workspace
 
-Time parting takes the timestamp of collected hits and breaks it into more meaningful dimensions, such as "Hour of Day" or "Day of Week".
+Time parting takes the timestamp of collected events and breaks it into more meaningful dimensions, such as "Hour of Day" or "Day of Week".
 
 Time-parting dimensions are based on the time zone of the data view. These dimensions are available in Analysis Workspace and can help to answer the following questions:
 

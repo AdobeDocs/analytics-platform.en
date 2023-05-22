@@ -56,7 +56,7 @@ Without these labels present, the Experiment panel does not work, since there ar
    | **[!UICONTROL Control Variant]** | One of two or more alterations in an end user's experience that are being compared for the purpose of identifying the better alternative. One variant must be selected as the control, and only one variant can be considered to be the control variant. This setting is pre-populated with the dimensions that have been labeled with the  **[!UICONTROL Variant]** label in data views. This setting pulls up the variant data that is associated with this experiment. |
    | **[!UICONTROL Success Metrics]** | The metric or metrics that a user is comparing variants with. The variant with the most desirable outcome for the conversion metric (whether highest or lowest) is declared the "best performing variant" of an experiment. You can add up to 5 metrics. |
    | **[!UICONTROL Normalizing Metric]** | The basis ([!UICONTROL People], [!UICONTROL Sessions], or [!UICONTROL Events]) on which a test will be run. For example, a test may compare the conversion rates of several variations where **[!UICONTROL Conversion rate]** is calculated as **[!UICONTROL Conversions per session]** or **[!UICONTROL Conversions per person]**. |
-   | **[!UICONTROL Date Range]** | The date range is automatically set, based on the first hit received in CJA for the experiment selected. You can restrict or expand the date range to a more specific timeframe if needed. |
+   | **[!UICONTROL Date Range]** | The date range is automatically set, based on the first event received in CJA for the experiment selected. You can restrict or expand the date range to a more specific timeframe if needed. |
 
 1. Click **[!UICONTROL Build]**.
 
