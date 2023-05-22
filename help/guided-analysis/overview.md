@@ -1,5 +1,5 @@
 ---
-title:
+title: Guided Analysis overview
 description:
 ---
 # Guided Analysis overview

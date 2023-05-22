@@ -43,3 +43,16 @@ Several options above the chart that allow you to customize how the chart and ta
 * **Chart settings**: Fine-tune what your chart looks like and which events you want it to use. Available options depend on the view type selected.
 * **Date range**: A calendar picker that allows you to determine the date range of the report. Some analysis types also allow intervals, such as daily, weekly, or monthly.
 * **Insights**: Provides contextual insights depending on the report that you view. You can show or hide these insights using the light bulb icon in the top right.
+
+## Project menu
+
+[Screenshot of project menu]
+
+Commands in the top-right of the project that provide overarching actions.
+
+* **Data view selector**: Change the data view that this project uses. When you change the data view, available components in the query rail also change.
+* **Save**: Saves the project. If you're saving a new project, a modal window appears requesting a name and description.
+* **Save as**: Saves the project separately from the current project, creating a copy. A modal window appears requesting a new name and description.
+* **Open in Workspace**: Recreates the current Guided analysis project in Analysis Workspace. The workspace project is created in a new tab, preventing interruption while working on your Guided analysis project. Use this command when Guided Analysis doesn't quite give you the flexibility or specific insight that you're looking for. For example, you want a [Trends](analysis-types/trends.md) report that uses Sessions for one segment, and People for another segment.
+* **Download PNG**: Downloads the chart graphic as a `.png`. The query rail and table are not included in the graphic.
+* **Download SVG**: Downloads the chart graphic as a `.svg`. The query rail and table are not included in the graphic.
