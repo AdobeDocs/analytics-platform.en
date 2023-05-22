@@ -11,7 +11,7 @@ You can create filters from a touchpoint, add filters as touchpoint, and compare
 
 >[!IMPORTANT]
 >
->Filters used as checkpoints in Fallout must use a container that is at a lower level than the overall context of the Fallout visualization. With a visitor-context Fallout, filters used as checkpoints must be visit or hit-based filters. With a visit-context Fallout, filters used as checkpoint must be hit-based filters. If you use an invalid combination, the fallout will be 100%. We have added a warning to the Fallout visualization that will display when you add an incompatible filter as a touchpoint. Certain invalid filter container combinations will lead to invalid Fallout diagrams, such as:
+>Filters used as checkpoints in Fallout must use a container that is at a lower level than the overall context of the Fallout visualization. With a visitor-context Fallout, filters used as checkpoints must be visit or event-based filters. With a visit-context Fallout, filters used as checkpoint must be event-based filters. If you use an invalid combination, the fallout will be 100%. We have added a warning to the Fallout visualization that will display when you add an incompatible filter as a touchpoint. Certain invalid filter container combinations will lead to invalid Fallout diagrams, such as:
 
 * Using a visitor-based filter as a touchpoint inside a visitor-context Fallout visualization
 * Using a visitor-based filter as a touchpoint inside a visit-context Fallout visualization

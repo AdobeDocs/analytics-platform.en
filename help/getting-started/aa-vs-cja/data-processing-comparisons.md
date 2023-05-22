@@ -35,7 +35,7 @@ The table below defines terminology for the different types of processing logic 
 | Hit-level logic | Logic applied at a row-by-row level. | Examples: Processing rules, VISTA, certain marketing channel rules. |
 | Visit-level logic | Logic applied at the visit level. | Examples: Visit and session definition. |
 | Visitor-level logic | Logic applied at the visitor level. | Example: Cross-device/cross-channel visitor stitching. |
-| Segment (filter) logic | Evaluation of hit/visit/visitor (event/session/person) segment (filter) rules. | Example: People who bought red shoes. |
+| Segment (filter) logic | Evaluation of event/visit/visitor (event/session/person) segment (filter) rules. | Example: People who bought red shoes. |
 | Calculated metrics | Evaluation of customer-created custom metrics which can be based on complex formulas including segments and filters. | Example: # of people who bought red shoes. |
 | Attribution logic | Logic to calculate attribution. | Example: eVar persistence. |
 | Component Settings | Applying customizations to metrics or dimensions, like attribution, behaviour, format, and others | Example: value bucketing to combine numeric values based on a range |

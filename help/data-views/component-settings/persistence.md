@@ -66,7 +66,7 @@ Details around the available expiration settings.
 * **Session**: Expires after a given session. Default expiration window.
 * **Person**: Expires at the end of the reporting window.
 * **Custom Time**: Expires after a specified time period (up to 90 days). This expiration option is only available for Original and Most Recent allocation models. When using time-based expiration, values previous to the start of your reporting window (up to 90 days) are considered.
-* **Metric**: When this metric is seen in a hit, immediately expire the persisted value in the dimension. You can use any metric as the expiration end for this dimension. This expiration option is only available for Original and Most Recent allocation settings.
+* **Metric**: When this metric is seen in a event, immediately expire the persisted value in the dimension. You can use any metric as the expiration end for this dimension. This expiration option is only available for Original and Most Recent allocation settings.
 
 ## [!UICONTROL Binding Dimension]
 
