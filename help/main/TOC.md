@@ -180,7 +180,6 @@ breadcrumb-title: Customer Journey Analytics Guide
 
     +   Workspace FAQs {#workspace-faq}
         + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)
-        + [Optimize Analysis Workspace performance](../analysis-workspace/workspace-faq/optimizing-performance.md)
         + [Error messages](../analysis-workspace/workspace-faq/error-messages.md)
         + [Analysis Workspace limitations](../analysis-workspace/workspace-faq/aw-limitations.md)
         + [Administration requirements](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
@@ -191,22 +190,27 @@ breadcrumb-title: Customer Journey Analytics Guide
 +   Components {#cja-components}
     +   [Components overview](../components/overview.md)
     +   [Add component descriptions](../components/add-component-descriptions.md)
+
     +   Annotations {#annotations}
         + [Annotations overview](../components/annotations/overview.md)
         + [Create annotations](../components/annotations/create-annotations.md)
         + [Manage annotations](../components/annotations/manage-annotations.md)
         + [View annotations](../components/annotations/view-annotations.md)
         + [Mobile annotations](../components/annotations/mobile-annotations.md)
+
     +   Audiences {#audiences}
         + [Audiences overview](../components/audiences/audiences-overview.md)
         + [Create and publish audiences](../components/audiences/publish.md)
         + [Manage audiences](../components/audiences/manage.md)
+
     +   Dimensions {#dimensions}
         + [Preview dimensions](../components/dimensions/view-dimensions.md)
         + [Break down dimensions](../components/dimensions/t-breakdown-fa.md)
         + [Time-parting dimensions](../components/dimensions/time-parting-dimensions.md)
         + [Dimensions with very high cardinality](../components/dimensions/high-cardinality.md)
+
     +   [Metrics](../components/apply-create-metrics.md)
+
     +   Filters {#cja-filters}
         + [Filters overview](../components/filters/filters-overview.md)
         + [Create filters](../components/filters/create-filters.md)
@@ -214,6 +218,7 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Filter builder](../components/filters/filter-builder.md)
         + [Manage filters](../components/filters/manage-filters.md)
         + [Operators](../components/filters/operators.md)
+
     +   Calculated Metrics {#cja-calcmetrics}
         +   [Calculated metrics overview](../components/calc-metrics/calc-metr-overview.md)
         +   Calculated Metrics workflow {#cm-workflow}
@@ -234,6 +239,7 @@ breadcrumb-title: Customer Journey Analytics Guide
         +   [Default calculated metrics](../components/calc-metrics/default-calcmetrics.md)
         +   [Basic functions](../components/calc-metrics/cm-functions.md)
         +   [Advanced functions](../components/calc-metrics/cm-adv-functions.md)
+
     +   Date ranges {#cja-date-ranges}
         + [Date ranges overview](../components/date-ranges/overview.md)
         + [Create a date range](../components/date-ranges/create.md)
@@ -241,17 +247,20 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Calendar overview](../components/date-ranges/calendar.md)
         + [Create custom date ranges](../components/date-ranges/custom-date-ranges.md)
         + [Date comparison](../components/date-ranges/time-comparison.md)
+
     +   Data Dictionary {#data-dictionary}
         + [Data Dictionary overview](../components/data-dictionary/data-dictionary-overview.md)
         + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
         + [Edit component entries in the Data Dictionary](../components/data-dictionary/edit-entries-data-dictionary.md)
         + [Monitor Data Dictionary health](../components/data-dictionary/monitor-data-dictionary-health.md)
+
 +   Analytics dashboards {#cja-dashboards}
     + [Analytics dashboards - Overview](../mobile-app/home.md)
     + [Curator tasks](../mobile-app/curator.md)
     + [Create a mobile scorecard](../mobile-app/create-scorecard.md)
     + [Set up executives to use dashboards](../mobile-app/set-up-execs.md)
     + [Executive user quick start guide](../mobile-app/executive.md)
+
 +   Report Builder {#cja-reportbuilder}
     + [Report Builder Overview](../report-builder/report-buider-overview.md)
     + [Report Builder Set Up](../report-builder/report-builder-setup.md)
@@ -285,25 +294,31 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 +   Use cases {#cja-usecases}
     +   [Customer Journey Analytics use cases](../use-cases/cja-usecases.md)
+
     +   Google Analytics data {#ga}
         + [Migrate data from Google Analytics to CJA overview](../use-cases/ga/overview.md)
         + [Ingest Google Analytics historical data into Platform](../use-cases/ga/backfill.md)
         + [Configure streaming Google Analytics data into Platform](../use-cases/ga/streaming.md)
         + [Report on Google Analytics data in CJA](../use-cases/ga/report.md)
+
     +   Data ingestion {#data-ingestion}
         + [Ingest Marketo Engage data into AEP and report in CJA](../use-cases/data-ingestion/marketo.md)
         + [Ingest AEP audiences into CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
     +   Data views {#data-views}
         + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
         + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
+
     +   B2B {#b2b}
         + [Add account-level data as a lookup dataset](../use-cases/b2b/b2b.md)
+
     +   Cross-channel data {#cross-channel}
         + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
         + [Import call center and web data](../use-cases/cross-channel/call-center.md)
+
     +   Adobe Analytics data {#aa-data}
         + [Use Marketing channel dimensions](../use-cases/aa-data/marketing-channels.md)
         + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
+
     +   Complex data {#complex-data}
         + [Use arrays of objects](../use-cases/object-arrays.md)
 
@@ -311,7 +326,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Access Control](../admin/cja-access-control.md)
     + [View and manage usage](../admin/estimate-usage.md)
     + [Deletion implications](../admin/cja-deletion.md)
-    + [Optimize CJA performance](../admin/cja-performance.md)
+    + [Optimize CJA performance](../admin/optimizing-performance.md)
 
 +   Labs {#labs}
     + [Labs User Guide](../labs/labs.md)
