@@ -6,7 +6,7 @@ description: Learn about the overall structure of the Guided analysis project UI
 
 {{release-limited-testing}}
 
-The interface for a Guided Analysis project, regardless of analysis type, comprises of the following main UI elements:
+The interface for a Guided Analysis project, regardless of analysis type, comprises the following main UI elements:
 
 * **Query rail**: Use this rail on the left of your project to build out your analysis.
 * **Chart**: Once you select the desired events, people, or steps, a chart is shown on the right that visualizes the data.
@@ -19,13 +19,13 @@ The interface for a Guided Analysis project, regardless of analysis type, compri
 
 [Screenshot of query rail]
 
-The query rail is where you configure the desired components that make up a report. Different analysis types share several query options; if two analysis types share the same query options, they carry over when switching analysis types. See [Analysis types](analysis-types/overview.md) for more information around query options for each respective analysis type.
+The query rail is where you configure the desired components that make up a report. Different analysis types share several query options; if two analysis types share query options, they carry over when switching analysis types. See [Analysis types](analysis-types/overview.md) for more information around query options for each respective analysis type.
 
 ## Chart
 
 [Screenshot of chart]
 
-A visualization of the data returned based on your input from the query rail and settings. Which visualization you see is dependent on the view type above the chart. Available view types depend on the [Analysis type](analysis-types/overview.md) above the query rail.
+A visualization of the data returned based on your input from the query rail and settings. Which visualization you see depends on the view type above the chart. Available view types depend on the [Analysis type](analysis-types/overview.md) above the query rail.
 
 ## Table
 
@@ -51,8 +51,8 @@ Several options above the chart that allow you to customize how the chart and ta
 Commands in the top-right of the project that provide overarching actions.
 
 * **Data view selector**: Change the data view that this project uses. When you change the data view, available components in the query rail also change.
-* **Save**: Saves the project. If you're saving a new project, a modal window appears requesting a name and description.
-* **Save as**: Saves the project separately from the current project, creating a copy. A modal window appears requesting a new name and description.
+* **Save**: Saves the project. If you're saving a new project, a modal window appears that requests a name and description.
+* **Save as**: Saves the project separately from the current project, creating a copy. A modal window appears that requests a new name and description.
 * **Open in Workspace**: Recreates the current Guided analysis project in Analysis Workspace. The workspace project is created in a new tab, preventing interruption while working on your Guided analysis project. Use this command when Guided Analysis doesn't quite give you the flexibility or specific insight that you're looking for. For example, you want a [Trends](analysis-types/trends.md) report that uses Sessions for one segment, and People for another segment.
 * **Download PNG**: Downloads the chart graphic as a `.png`. The query rail and table are not included in the graphic.
 * **Download SVG**: Downloads the chart graphic as a `.svg`. The query rail and table are not included in the graphic.

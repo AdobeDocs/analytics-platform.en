@@ -6,11 +6,11 @@ description: A project type in Customer Journey Analytics that lets product team
 
 {{release-limited-testing}}
 
-Guided Analysis is a reporting format that allows product teams to quickly self-serve their data needs to help them make more data-driven product decisions. Cross-functional teams can connect in real-time to use and understand these reports.
+Guided Analysis is a reporting format that allows product teams to quickly self-serve their data needs so that they can make more data-driven product decisions. Cross-functional teams can connect in real time to use and understand these reports.
 
 Similar to Analysis Workspace and Mobile scorecards, a Guided analysis report uses data from a [Data view](../data-views/data-views.md), which references data in Adobe Experience Platform through a [Connection](../connections/overview.md). All reports created in Guided Analysis can seamlessly transfer to Analysis Workspace for additional research.
 
-Guided Analysis reports currently feature three analysis types: [Funnel](analysis-types/funnel.md), [Trends](analysis-types/trends.md), and [User growth](analysis-types/user-growth.md). Each of these analysis types have multiple view types, which provide additional insights to each of these reports.
+Guided Analysis reports currently feature three analysis types: [Funnel](analysis-types/funnel.md), [Trends](analysis-types/trends.md), and [User growth](analysis-types/user-growth.md). Each of these analysis types has multiple view types, which provide additional insights to each of these reports.
 
 ## Provisioning
 
