@@ -14,7 +14,7 @@
 
 ## Data Dictionary filter criteria {#dd-filter-criteria}
 
-1. (Optional) Select the **Filter** icon ![Data Dictionary Filter icon](/help/components/data-dictionary/assets/data-dictionary-filter-icon.png), then select any of the following filter options to filter the list of components:
+1. (Optional) Select the **Filter** icon ![Data Dictionary Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), then select any of the following filter options to filter the list of components:
 
    |Option | Function |
    |---------|----------|
@@ -52,7 +52,7 @@
 
 ## Components sort options {#components-sort-options}
 
-   |Option | Function |
+   | Option | Function |
    |---------|----------|
    | [!UICONTROL **Recommended**] | Sorts components with those that are recommended at the top of the list. Components that are used most frequently and most recently by you or by others in your organization are shown higher in the list. |
    | [!UICONTROL **Alphabetical**] | Sorts components alphabetically. |
