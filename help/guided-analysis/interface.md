@@ -1,12 +1,12 @@
 ---
-title:
-description:
+title: Guided analysis interface
+description: Learn about the overall structure of the Guided analysis project UI.
 ---
 # Guide Analysis interface
 
 {{release-limited-testing}}
 
-The interface for a Guided Analysis project, regardless of analysis type, comprises of the following main UI elements:
+The interface for a Guided analysis project, regardless of analysis type, comprises of the following main UI elements:
 
 * **Query rail**: Use this rail on the left of your project to build out your analysis.
 * **Chart**: Once you select the desired events, people, or steps, a chart is shown on the right that visualizes the data.
@@ -53,6 +53,6 @@ Commands in the top-right of the project that provide overarching actions.
 * **Data view selector**: Change the data view that this project uses. When you change the data view, available components in the query rail also change.
 * **Save**: Saves the project. If you're saving a new project, a modal window appears requesting a name and description.
 * **Save as**: Saves the project separately from the current project, creating a copy. A modal window appears requesting a new name and description.
-* **Open in Workspace**: Recreates the current Guided analysis project in Analysis Workspace. The workspace project is created in a new tab, preventing interruption while working on your Guided analysis project. Use this command when Guided Analysis doesn't quite give you the flexibility or specific insight that you're looking for. For example, you want a [Trends](analysis-types/trends.md) report that uses Sessions for one segment, and People for another segment.
+* **Open in Workspace**: Recreates the current Guided analysis project in Analysis Workspace. The workspace project is created in a new tab, preventing interruption while working on your Guided analysis project. Use this command when Guided analysis doesn't quite give you the flexibility or specific insight that you're looking for. For example, you want a [Trends](analysis-types/trends.md) report that uses Sessions for one segment, and People for another segment.
 * **Download PNG**: Downloads the chart graphic as a `.png`. The query rail and table are not included in the graphic.
 * **Download SVG**: Downloads the chart graphic as a `.svg`. The query rail and table are not included in the graphic.

@@ -192,7 +192,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Set up executives to use dashboards](../mobile-app/set-up-execs.md)
     + [Executive user quick start guide](../mobile-app/executive.md)
 
-+   Guided Analysis {#guided-analysis}
++   Guided analysis {#guided-analysis}
     +   [Overview](../guided-analysis/overview.md)
     +   [Interface](../guided-analysis/interface.md)
     +   Analysis types {#analysis-types}

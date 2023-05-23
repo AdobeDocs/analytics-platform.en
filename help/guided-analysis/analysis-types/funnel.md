@@ -19,8 +19,23 @@ The **Funnel** [Analysis type](overview.md) provides a visual representation of 
 
 The query rail allows you to configure the following components:
 
-* **Steps**:
+* **Steps**: The event touch points that you want to track. Each bar in the chart represents a step. You can include up to 10 steps in a report.
+* **People**: Sets the segments that you want to measure in your report. Each segment selected here splits each step into multiple bars. Each color represents a different segment. Up to 3 segments are supported.
 
-## Visualization options
+## View types
 
+Funnel offers the following view types. You can change the view type using the drop-down menu in the top-left of the chart.
 
+* **Friction**: Compare conversion rates between steps.
+
+## Chart settings
+
+Funnel offers the following chart settings. You can make adjustments to the chart settings using the menu between the view type and calendar selector.
+
+* **Metric**: Sets the metric that you want to measure. Options include Sessions and Users.
+* **Chart type**: Sets the type of visualization that you want to use. The only option is currently Steps.
+* **Conversion from**: Determines the percentage calculation from step to step. Options include First step and Previous step.
+
+## Date range
+
+The starting and ending date of the project. Date range presets are available for your convenience, or you can use the calendar selector to set the exact desired date. Date intervals are not available for this analysis type.
