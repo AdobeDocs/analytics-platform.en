@@ -29,7 +29,7 @@ To view information about a component in the Data Dictionary:
 
 {{dd-filter-criteria}}
 
-1. (Optional) Select the **Sort** icon ![Sort components icon](assets/component-sort-icon.png), then select any of the following filter options to sort the list of components:
+1. (Optional) Select the **Sort** icon ![Sort components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), then select any of the following filter options to sort the list of components:
    
    {{components-sort-options}}
 
@@ -39,4 +39,4 @@ To view information about a component in the Data Dictionary:
 
    {{dd-component-information}}
 
-2. (Optional) Drag a component from the Data Dictionary into Analysis Workspace.
+1. (Optional) Drag a component from the Data Dictionary into Analysis Workspace.
