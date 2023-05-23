@@ -21,6 +21,6 @@ Data which is collected by and stored in Adobe Analytics can be transformed by e
 
 Data Prep has crossover with [classifications](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html?lang=en) in some situations. 
 
-For example, in a delimited field you can use Data Prep to split that field into multiple individual fields without the use of classifications. Generally, classifications are a way to add metadata to a field by uploading a lookup file that is supplied outside the stream of incoming Analytics hits. 
+For example, in a delimited field you can use Data Prep to split that field into multiple individual fields without the use of classifications. Generally, classifications are a way to add metadata to a field by uploading a lookup file that is supplied outside the stream of incoming Analytics events. 
 
 For example, you can upload a classification file which groups SKUs into ‘size’, ‘brand’, ‘color’, etc. Another difference between classifications and Data Prep is that classifications apply to data _both historically and going forward_. Data Prep mappings, on the other hand, are applied _forward_ to data from the time the mapping is created.

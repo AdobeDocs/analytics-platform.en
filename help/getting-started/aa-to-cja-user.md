@@ -70,7 +70,7 @@ While you cannot yet share or publish [!UICONTROL filters] ([!UICONTROL segments
 
 In addition to the concept of segments changing, segment containers are also updated.
 
-* **Hit containers are now [!UICONTROL Event] containers**. The [!UICONTROL Event] container lets you break down visitor information based on individual page views/hits. 
+* **Hit containers are now [!UICONTROL Event] containers**. The [!UICONTROL Event] container lets you break down visitor information based on individual events. 
 * **Visit containers are now [!UICONTROL Session] containers**. The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session.
 * **Visitor containers are now [!UICONTROL Person] containers**. The [!UICONTROL Person] container includes every session and event for a visitor within the specified time frame.
 

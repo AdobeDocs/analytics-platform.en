@@ -26,7 +26,7 @@ You can quickly exclude specific rows from the table without needing to open the
 
 >[!NOTE]
 >
->When you exclude rows as described in this section, a [!UICONTROL **Does not equal**] rule is automatically applied in the [**[!UICONTROL Advanced filtering]**](#apply-a-simple-or-advanced-filter) dialog.
+>When you exclude rows as described in this section, a [!UICONTROL **Always exclude items**] rule is automatically applied in the advanced filter dialog. (You can view the applied rule by selecting the Filter icon, then [**[!UICONTROL Show advanced]**](#apply-a-simple-or-advanced-filter-to-a-table).)
 
 To quickly exclude specific rows from a Freeform table:
 
@@ -51,7 +51,7 @@ To quickly exclude specific rows from a Freeform table:
     | [!UICONTROL **Search word or phrase**] | Specify a word or phrase that you want to filter by. Only rows that contain the word or exact phrase specified are shown. |
     | [!UICONTROL **Include unspecified (none)**] | Select this option to show data in the table that does not fall into any of the dimensions of the table. <!--what is this?--> |
 
- 1. (Optional) To filter by different criteria or by multiple criteria, select [!UICONTROL **Advanced filtering**]. 
+ 1. (Optional) To filter by different criteria or by multiple criteria, select [!UICONTROL **Show advanced**]. 
 
     The following options are available
 
@@ -64,13 +64,13 @@ To quickly exclude specific rows from a Freeform table:
 
  1. Select [!UICONTROL **Apply**] to filter the data.
 
-    The **Filter** icon ![Blue filter icon filtered table](assets/table-filter-blue-icon.png) turns blue when a filter is applied to the table. 
+    The **Filter** icon ![Blue filter icon filtered table](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) turns blue when a filter is applied to the table. 
 
 ## Sort tables
 
 You can sort the data of a Freeform table by any column in Analysis Workspace that is either a Dimension or a Metric. 
 
-A down arrow icon ![Down arrow icon sorted table column](assets/table-sort-arrow-icon.png) is visible in the header of the column that data is currently being sorted by. 
+A down arrow icon ![Down arrow icon sorted table column](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) is visible in the header of the column that data is currently being sorted by. 
 
 1. In any Freeform table in Analysis Workspace, click the arrow next to the name of the Dimension or Metric.
 

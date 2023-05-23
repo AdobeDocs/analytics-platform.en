@@ -15,7 +15,7 @@ There are several ways to get to the Calculated Metric Builder:
 
 * Click **[!UICONTROL + Add]** at the top of the [Calculated Metric Manager](/help/components/calc-metrics/cm-workflow/cm-manager.md), or 
 
-* Go to **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, open any report and click the Metrics icon  ![](assets/metrics_icon.png) to bring up the Metrics rail, then click **[!UICONTROL Add]**.
+* Go to **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, open any report and click the Metrics icon  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) to bring up the Metrics rail, then click **[!UICONTROL Add]**.
 
 ![](assets/cm_builder_ui.png)
 

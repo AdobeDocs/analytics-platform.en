@@ -12,7 +12,7 @@ exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 | **What are the Administration and access requirements for Analysis Workspace?** | See [Administration Requirements](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md).|
 | **Will using Analysis Workspace affect data collection?** | Since Analysis Workspace is a reporting tool, it has no impact on data collection. There are no repercussions to indiscriminately dragging components into a project to see what works. Drag different combinations of dimensions and metrics into your workspace project to see what is available to you. If you accidentally drag an invalid component to your workspace project or would like to go back a step, press ctrl+Z (Windows) or cmd+Z (Mac) to undo the last action made. You can also start with a clean slate by clicking *[!UICONTROL Project] > [!UICONTROL New]* in the upper left menu.|
 | **How do I implement Analysis Workspace?** | No special implementation is required. Analysis Workspace is available to all companies Customer Journey Analytics. However, standard permissions to content (such as project components) apply, and for curating and sharing projects. See [Administration and Access Requirements](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
-| **How can I optimize performance of Analysis Workspace?** | See [Optimizing Performance](/help/analysis-workspace/workspace-faq/optimizing-performance.md). |
+| **How can I optimize performance of Analysis Workspace?** | See [Optimizing Performance](/help/admin/optimizing-performance.md). |
 
 ## Troubleshooting
 
