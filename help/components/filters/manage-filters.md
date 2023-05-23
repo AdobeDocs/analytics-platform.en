@@ -119,9 +119,9 @@ To share a filter:
 
 1. In the filter management tool bar, click **[!UICONTROL Share]**.
 
-1. If you are an Admin, you can select All or choose from Groups and Users in your organization. As a non-Admin, you can see only individual users. Use the Search field to search for groups or users. Click **[!UICONTROL Share]**. The Shared icon appears next to the filter: ![](assets/share_icon.png)
+2. If you are an Admin, you can select All or choose from Groups and Users in your organization. As a non-Admin, you can see only individual users. Use the Search field to search for groups or users. Click **[!UICONTROL Share]**. The Shared icon appears next to the filter: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 
-1. You can filter on filters shared with you by going to Filters > Other Filters > Shared with Me. 
+3. You can filter on filters shared with you by going to Filters > Other Filters > Shared with Me. 
 
 ### Mark filters as favorites {#favorites}
 
