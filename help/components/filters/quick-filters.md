@@ -35,7 +35,7 @@ To create a quick filter:
       >
       > Consider the following when creating a quick filter ad hoc (drag-and-drop):
       > * The following component types are not supported: calculated metrics and dimensions, as well as metrics from which you cannot build filters.
-      > * For full dimensions and events, Analysis Workspace creates "exists" hit filters. Examples: `Hit where eVar1 exists` or `Hit where event1 exists`.
+      > * For full dimensions and events, Analysis Workspace creates "exists" event filters. Examples: `Hit where eVar1 exists` or `Hit where event1 exists`.
       > * If "unspecified" or "none" is dropped in the filter drop zone, it is automatically converted to a "does not exist" filter so that it is treated correctly in filtering.
 
 

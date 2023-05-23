@@ -1,12 +1,12 @@
 ---
-description: The Filter builder provides a canvas to drag and drop Metric Dimensions, Filters, and Events to filter visitors based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple or complex filters that identify visitor attributes and actions across visits and page hits.
+description: The Filter builder provides a canvas to drag and drop Metric Dimensions, Filters, and Events to filter visitors based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple or complex filters that identify visitor attributes and actions across visits and events.
 title: Build filters
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
 ---
 # Filter builder
 
-The [!UICONTROL Filter builder] lets you build simple or complex filters that identify visitor attributes and actions across visits and page hits. It provides a canvas to drag and drop metric dimensions, events, or other filters in order to filter visitors based on hierarchy logic, rules, and operators.
+The [!UICONTROL Filter builder] lets you build simple or complex filters that identify visitor attributes and actions across visits and events. It provides a canvas to drag and drop metric dimensions, events, or other filters in order to filter visitors based on hierarchy logic, rules, and operators.
 
 For information about how to create quick filters that apply only to the project where they are created, see [Quick filters](/help/components/filters/quick-filters.md).
 

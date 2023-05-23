@@ -9,7 +9,7 @@ feature: Cross-Channel Analytics
 
 Cross-Channel Analytics makes two passes on data on a given connection:
 
-* **Live-stitching**: CCA attempts to stitch each hit as it comes in. Net new devices to the dataset that have never logged in are typically not stitched at this level. Devices already recognized are stitched immediately.
+* **Live-stitching**: CCA attempts to stitch each event as it comes in. Net new devices to the dataset that have never logged in are typically not stitched at this level. Devices already recognized are stitched immediately.
 * **Replay**: CCA "replays" data based on unique identifiers it has learned. This stage is where new devices to the connection become stitched. Adobe offers two replay intervals:
   * Daily: Data replays every day with a 24-hour lookback window. This option holds an advantage that replays are much more frequent, but unauthenticated visitors must authenticate the same day that they visit your site.
   * Weekly: Data replays once a week with a 7-day lookback window. This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, data less than a week old is not stitched.
@@ -22,7 +22,7 @@ CCA attempts to stitch each event upon collection to known devices and channels.
 
 *Data as it appears the day it is collected:*
 
-| Timestamp | Web dataset Persistent ID | Web dataset Transient ID | Call center person ID | Person ID used | Explanation of hit | People metric (cumulative) |
+| Timestamp | Web dataset Persistent ID | Web dataset Transient ID | Call center person ID | Person ID used | Explanation of event | People metric (cumulative) |
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | - | - | `246` | Bob visits your site on his desktop, unauthenticated | `1` (246) |
 | `2` | `246` | `Bob` | - | `Bob` | Bob logs in on desktop | `2` (246 and Bob) |
@@ -42,7 +42,7 @@ At regular intervals (once a week or once a day depending on the chosen lookback
 
 *The same data after replay:*
 
-| Timestamp | Web dataset Persistent ID | Web dataset Transient ID | Call center person ID | Person ID used | Explanation of hit | People metric (cumulative) |
+| Timestamp | Web dataset Persistent ID | Web dataset Transient ID | Call center person ID | Person ID used | Explanation of event | People metric (cumulative) |
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | - | - | `Bob` | Bob visits your site on his desktop, unauthenticated | `1` (Bob) |
 | `2` | `246` | `Bob` | - | `Bob` | Bob logs in on desktop | `1` (Bob) |

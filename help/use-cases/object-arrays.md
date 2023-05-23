@@ -11,9 +11,9 @@ Some platform schemas can have object arrays. CJA supports ingestion and reporti
 
 In previous versions of Adobe Analytics, this feat was accomplished using the `products` variable. It was a concatenated string separated by semicolons (`;`) to separate facets of a product, while commas (`,`) delineated products. It was the only variable with limited support of "object arrays". Multi-value variables such as list vars could support the equivalent of arrays, but they could not support "object arrays". CJA expands on this concept by supporting arbitrarily deep hierarchies within a single row of data, a feature unavailable in any previous version of Adobe Analytics.
 
-## Same hit example
+## Same event example
 
-The following hit is a JSON object that represents a purchase a customer made of a washing machine and dryer.
+The following event is a JSON object that represents a purchase a customer made of a washing machine and dryer.
 
 ```json
 {
@@ -75,9 +75,9 @@ When creating a data view, the following dimensions and metric are available (ba
     * product : warranty
     * product : warranty : revenue
 
-### Same hit examples (reporting behavior)
+### Same event examples (reporting behavior)
 
-Using just the above hit, the following tables show Workspace reports with some dimension and metric combinations.
+Using just the above event, the following tables show Workspace reports with some dimension and metric combinations.
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
@@ -137,7 +137,7 @@ If you wanted to report on just warranty revenue, your project would look simila
 | `extended` | `50` |
 | `Total` | `250` |
 
-CJA looks at these parts of the hit to generate the report:
+CJA looks at these parts of the event to generate the report:
 
 ```diff
 {

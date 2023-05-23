@@ -106,10 +106,10 @@ When using this option, keep in mind that:
 * **[!UICONTROL Limit to first/last occurrence]** counts only the first/last occurrence in the series. All other occurrences of the **[!UICONTROL Starts with]** or **[!UICONTROL Ends with]** criteria are discarded. 
 * If used with a **[!UICONTROL Starts with]** flow, only the first occurrence that matches the start criteria is included. 
 * If used with an **[!UICONTROL Ends with]** flow, only the last occurrence that matches the end criteria will be included. 
-* The series used differs based on the container. If using the **[!UICONTROL Visit]** container, the series of hits will be the session. If using the **[!UICONTROL Visitor]** container, the series of hits will be all the hits for a given user in the provided date range. 
+* The series used differs based on the container. If using the **[!UICONTROL Visit]** container, the series of events will be the session. If using the **[!UICONTROL Visitor]** container, the series of events will be all the events for a given user in the provided date range. 
 * The **[!UICONTROL Limit to first/last occurrence]** option can be configured in the advanced settings when using a Metric or Dimension Item in the "Starts with" or "Ends with" fields.
  
-Example series of hits:
+Example series of events:
 
 Home > Products > Add to cart > Products > Add to Cart > Billing > Order Confirmation
  
@@ -119,7 +119,7 @@ Home > Products > Add to cart > Products > Add to Cart > Billing > Order Confirm
 * [!UICONTROL Page] pathing dimension
 * [!UICONTROL Visit] container
  
-If "Limit to first/last occurrence" is disabled, then this single series of hits would count 2 occurrences of "Add to Cart".
+If "Limit to first/last occurrence" is disabled, then this single series of events would count 2 occurrences of "Add to Cart".
 Expected Flow Output:
 "Add to Cart" (2) —> "Products" (1)
                   -> "Billing" (1)
@@ -128,13 +128,13 @@ However, if "Limit to first/last occurrence" is enabled, only the first occurren
 Expected Flow Output:
 "Add to Cart" (1) —> "Products" (1)
  
-### Consider the same series of hits but using the following settings:
+### Consider the same series of events but using the following settings:
 
 * Ends with [!UICONTROL Add to cart] (Dimension Item)
 * [!UICONTROL Page] pathing dimension
 * [!UICONTROL Visit] container
  
-If **[!UICONTROL Limit to first/last occurrence]** is *disabled*, then this single series of hits would count 2 occurrences of "Add to Cart".
+If **[!UICONTROL Limit to first/last occurrence]** is *disabled*, then this single series of events would count 2 occurrences of "Add to Cart".
 Expected Flow Output:
 "Products" (2) <— "Add to cart" (2)
  
