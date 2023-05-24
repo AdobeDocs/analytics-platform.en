@@ -21,7 +21,7 @@ You can trend call center time spent over the last two months to determine call 
 
 ![Call volume](../assets/call-volume.png)
 
-Using the dimension 'Call reason' can hint at ways to improve the web experience, preventing visitors from calling in the first place. The above example shows that "Damage product" has an average call time of nearly 3 minutes per call, giving your organization a precise way to improve the customer experience and drive down call center costs.
+Using the dimension 'Call reason' can hint at ways to improve the web experience, preventing persons from calling in the first place. The above example shows that "Damage product" has an average call time of nearly 3 minutes per call, giving your organization a precise way to improve the customer experience and drive down call center costs.
 
 You can view which products cause most of the calls to your call center and how many customers made those calls. The bubble chart shows that 20,000 people called, spent more than 4 hours 30 minutes and returned 33 units of the "Men's short Sleeve Tee" product.
 

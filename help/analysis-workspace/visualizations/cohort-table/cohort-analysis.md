@@ -31,13 +31,13 @@ The following capabilities allow for fine-tuned control over the cohorts you are
 
 ### [!UICONTROL Retention] Table
 
-A [!UICONTROL Retention] cohort report returns visitors: each data cell shows the raw number and percentage of visitors in the cohort who did the action during that time period. You can include up to 3 metrics and up to 10 filters.
+A [!UICONTROL Retention] cohort report returns persons: each data cell shows the raw number and percentage of persons in the cohort who did the action during that time period. You can include up to 3 metrics and up to 10 filters.
 
 ![](assets/retention-report.png)
 
 ### [!UICONTROL Churn] Table
 
-A [!UICONTROL Churn] cohort is the inverse of a retention table and shows the visitors who fell out or never met the return criteria for your cohort over time. You can include up to 3 metrics and up to 10 filters.
+A [!UICONTROL Churn] cohort is the inverse of a retention table and shows the persons who fell out or never met the return criteria for your cohort over time. You can include up to 3 metrics and up to 10 filters.
 
 ![](assets/churn-report.png)
 

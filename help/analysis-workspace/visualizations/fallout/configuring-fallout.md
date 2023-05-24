@@ -6,7 +6,7 @@ exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 ---
 # Configure a fallout visualization
 
-You can specify the touchpoints to create a multi-dimensional fallout sequence. Commonly, a touchpoint is a page on your site. However, touchpoints are not limited to pages. For example, you can add events, such as units, as well as unique visitors and return visits. You can also add dimensions, such as a category, browser type, or internal search term.
+You can specify the touchpoints to create a multi-dimensional fallout sequence. Commonly, a touchpoint is a page on your site. However, touchpoints are not limited to pages. For example, you can add events, such as units, as well as unique persons and return visits. You can also add dimensions, such as a category, browser type, or internal search term.
 
 You can even add filters within a touchpoint. For example, you might want to compare filters, such as iOS and Android users. Drag the desired filters to the top of the fallout and information about those filters is added to the fallout report. If you want to show only those filters, can you remove the All Visits baseline.
 
@@ -20,7 +20,7 @@ You can do pathing on eVars, including merchandising eVars and [listVars](https:
 
    ![](assets/fallout1.png)
 
-   Hover over a touchpoint to see the fallout and other information about that level, such as the name of the touchpoint, the visitor count at that point, and see the success rate for that touchpoint (as well as compare the success rate to other touchpoints.)
+   Hover over a touchpoint to see the fallout and other information about that level, such as the name of the touchpoint, the person count at that point, and see the success rate for that touchpoint (as well as compare the success rate to other touchpoints.)
 
    The circled numbers in the gray portion of the bar show the fallout between touchpoints (not the overall fallout to that point). The Touchpoint % shows the successful fallthrough from the previous step to the current step in the fallout report.
 
@@ -57,7 +57,7 @@ You can do pathing on eVars, including merchandising eVars and [listVars](https:
 
 | Setting | Description |
 |--- |--- |
-|Fallout Container <ul><li>Visit</li><li>Visitor</li></ul>|Lets you switch between Visit and Visitor to analyze visitor pathing. The default is Visitor.  These settings help you understand visitor engagement at the visitor level (across visits), or constrain the analysis to a single visit.|
+|Fallout Container <ul><li>Visit</li><li>Visitor</li></ul>|Lets you switch between Visit and Visitor to analyze person pathing. The default is Visitor.  These settings help you understand person engagement at the person level (across visits), or constrain the analysis to a single visit.|
 
 When you **right-click a touchpoint**, the following options appear:
 
@@ -66,6 +66,6 @@ When you **right-click a touchpoint**, the following options appear:
 |Trend touchpoint|See trend data for a touchpoint in a line graph, with some pre-built anomaly detection data.|
 |Trend touchpoint (%)|Trends the total fallout percentage.|
 |Trend all touchpoints (%)|Trends all the touchpoint percentages in the fallout (except "All Visits", if it's included), on the same chart.|
-|Break down fallthrough at this touchpoint|View what visitors did between two touchpoints (this touchpoint and the next touchpoint) if they continued to the next touchpoint. This creates a freeform table showing your dimensions. You can replace dimensions and other elements of the table.|
+|Break down fallthrough at this touchpoint|View what persons did between two touchpoints (this touchpoint and the next touchpoint) if they continued to the next touchpoint. This creates a freeform table showing your dimensions. You can replace dimensions and other elements of the table.|
 |Break down fallout at this touchpoint|View what people who did not make it through the funnel did immediately after the selected step.|
 |Create filter from touchpoint|Create a new filter from the selected touchpoint.|

@@ -14,7 +14,7 @@ CJA processes reports at the time they are run, distributing the combined datase
 
 If any individual server aggregates a result set which is over a size threshold, then it will truncate the results before sending them back. This keeps the network traffic and aggregation within bounds to allow for quick reporting.  Because it truncates the results with only the view of its own data, it is possible (though unlikely) that the items shown in Analysis Workspace have incorrect metric values.
 
-The server chooses which items to discard based on the metric used for sorting.  If this is a calculated metric, it may not be obvious how to sort it, and so results may be less accurate.  For example, when calculating "Revenue per visitor", the total amount of revenue and total number of visitors are returned and aggregated before doing the division. As a result, each node much choose which items to remove, without really knowing how their results will affect the overall sorting.
+The server chooses which items to discard based on the metric used for sorting.  If this is a calculated metric, it may not be obvious how to sort it, and so results may be less accurate.  For example, when calculating "Revenue per person", the total amount of revenue and total number of persons are returned and aggregated before doing the division. As a result, each node much choose which items to remove, without really knowing how their results will affect the overall sorting.
 
 ## Differences between 'Long Tail' and 'Low-Traffic'
 

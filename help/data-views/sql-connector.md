@@ -265,7 +265,7 @@ You can use:
 
 #### Counting Distincts
 
-Due to the underlying nature of how CJA works, the only dimension you can get an exact distinct count for is the `adobe_personid` dimension. The following SQL statements `SELECT COUNT(DISTINCT adobe_personid)` or `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` return the value of the default visitors metric which is the count of distinct people. For other dimensions, an approximate distinct count is returned.
+Due to the underlying nature of how CJA works, the only dimension you can get an exact distinct count for is the `adobe_personid` dimension. The following SQL statements `SELECT COUNT(DISTINCT adobe_personid)` or `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` return the value of the default persons metric which is the count of distinct people. For other dimensions, an approximate distinct count is returned.
 
 #### Conditional Metrics
 

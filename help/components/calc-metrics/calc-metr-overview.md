@@ -11,7 +11,7 @@ Calculated and Advanced Calculated (or Derived) Metrics are custom metrics that 
 You can
 
 * Create filtered metrics that are derived at report run time, without having to change the implementation. These can be viewed historically because they are based on filters.
-* (Advanced Calculated Metrics only) Filter on metrics. For example, you can create a metric for "New visitors", with a count of people for whom this is the first session.
+* (Advanced Calculated Metrics only) Filter on metrics. For example, you can create a metric for "New persons", with a count of people for whom this is the first session.
 * (Advanced Calculated Metrics only) Incorporate statistical functions to help you better describe your data. For example, you can count the number of items in a report or add in the number of standard deviations for each item.
 
 ## Calculated metrics versus advanced calculated metrics
@@ -32,7 +32,7 @@ Here is a comparison of Calculated Metrics and Advanced Calculated Metrics capab
 
 | Tool | Capabilities |
 |--- |--- |
-|Calculated Metric Builder|<ul><li>Create calculated and advanced calculated metrics using advanced allocation models.</li><li>Add filters inline to metric formulas.</li><li>Compare filters in the same report. For example, compare local visitors vs. international visitors.</li><li>Use statistical functions.</li><li> Provide detailed metric descriptions (show what it does, where to use it, where NOT to use it).</li><li>Copy definitions into new metrics.</li><li>Provide an inline metric preview.</li><li>Set metric polarity, which indicates whether it's good or bad if a given custom event (metric) goes up.</li><li>Tag metrics.</li></ul>|
+|Calculated Metric Builder|<ul><li>Create calculated and advanced calculated metrics using advanced allocation models.</li><li>Add filters inline to metric formulas.</li><li>Compare filters in the same report. For example, compare local persons vs. international persons.</li><li>Use statistical functions.</li><li> Provide detailed metric descriptions (show what it does, where to use it, where NOT to use it).</li><li>Copy definitions into new metrics.</li><li>Provide an inline metric preview.</li><li>Set metric polarity, which indicates whether it's good or bad if a given custom event (metric) goes up.</li><li>Tag metrics.</li></ul>|
 |Calculated Metric Manager|<ul><li>Share metrics with others.</li><li>Approve and curate metrics.</li><li>Organize (tag) your metrics so people can find them.</li><li>Delete metrics.</li><li>Rename metrics.</li></ul>|
 |API for Calculated Metrics|Part of the CJA API set.|
 

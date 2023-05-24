@@ -38,7 +38,7 @@ Designates the name of containers for the data view. Container names are frequen
 
 | Setting | Description |
 | --- | --- |
-| [!UICONTROL Person container name] | [!UICONTROL Person] (default). The [!UICONTROL Person] container includes every session and event for visitors within the specified time frame. If your organization uses a different term (for example, "Visitor" or "User"), you can rename the container here. |
+| [!UICONTROL Person container name] | [!UICONTROL Person] (default). The [!UICONTROL Person] container includes every session and event for persons within the specified time frame. If your organization uses a different term (for example, "Visitor" or "User"), you can rename the container here. |
 | [!UICONTROL Session container name] | [!UICONTROL Session] (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this container to 'Visit' or any other term your organization prefers. |
 | [!UICONTROL Event container name] | [!UICONTROL Event] (default). The [!UICONTROL Event] container defines individual events in a dataset. If your organization uses a different term (for example, "Hits" or "Page Views"), you can rename the container here. |
 

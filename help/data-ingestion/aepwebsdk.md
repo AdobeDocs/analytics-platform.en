@@ -88,7 +88,7 @@ To set up your schema:
 
     ![Identification Object](./assets/identification-field.png)
 
-    This adds identification capabilities to your schema. In your case, you want to identify profiles visiting your site using the Experience Cloud Id and email address. There are many other attributes available to track your visitor's identification (for example customer id, loyalty id).
+    This adds identification capabilities to your schema. In your case, you want to identify profiles visiting your site using the Experience Cloud Id and email address. There are many other attributes available to track your person's identification (for example customer id, loyalty id).
 
     Select **[!UICONTROL Apply]** to add this object to your schema.
 
@@ -259,7 +259,7 @@ To create and configure the Adobe Experience Platform Web SDK extension:
 
 See [Configure the Adobe Experience Platform Web SDK extension](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html) for more information.
 
-You also want to set up the Experience Cloud ID Service extension so you can easily use of the Experience Cloud ID. The Experience Cloud ID Service identifies visitors across all Adobe Experience Cloud solutions.
+You also want to set up the Experience Cloud ID Service extension so you can easily use of the Experience Cloud ID. The Experience Cloud ID Service identifies persons across all Adobe Experience Cloud solutions.
 
 To create and configure the Experience Cloud ID Service extension:
 
@@ -279,7 +279,7 @@ To create and configure the Experience Cloud ID Service extension:
 
 Data elements are the building blocks for your data dictionary (or data map). Use data elements to collect, organize, and deliver data across marketing and ad technology. You set up data elements in your tag that read from your data layer and can be used to deliver data into Adobe Experience Platform.
 
-There are different types of data elements. You first set up a data element to capture the page name visitors are viewing on your site.
+There are different types of data elements. You first set up a data element to capture the page name persons are viewing on your site.
 
 To define a page name data element:
 

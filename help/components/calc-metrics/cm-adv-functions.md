@@ -221,10 +221,10 @@ If N <= 0 it uses all previous rows. Since it's ordered by the dimension it's on
 
 >[!NOTE]
 >
->This does not work as you might expect with rate metrics like revenue/visitor: it averages the rates instead of summing revenue over the last N and summing visitors over the last N and then dividing them. Instead, use
+>This does not work as you might expect with rate metrics like revenue/person: it averages the rates instead of summing revenue over the last N and summing persons over the last N and then dividing them. Instead, use
 
 ```
-cumul(revenue)/cumul(visitor)
+cumul(revenue)/cumul(person)
 ```
 
 ## Equal

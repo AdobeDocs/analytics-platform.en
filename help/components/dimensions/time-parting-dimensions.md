@@ -10,7 +10,7 @@ Time parting takes the timestamp of collected events and breaks it into more mea
 
 Time-parting dimensions are based on the time zone of the data view. These dimensions are available in Analysis Workspace and can help to answer the following questions:
 
-* Across a large date range, what is the most popular time of day for visitors to access my site or app? 
+* Across a large date range, what is the most popular time of day for persons to access my site or app? 
 * Are there days of the week, or hours of the day, on which conversion is higher on my site or app? 
 * How do my weekend sales compare to my weekday sales? 
 * Does a certain marketing campaign generate higher conversions in the morning, or in the afternoon?

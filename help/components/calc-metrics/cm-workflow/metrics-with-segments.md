@@ -15,7 +15,7 @@ In the Calculated metric builder, you can apply filters within your metric defin
 Let's say you want to compare different aspects of a "German Visitors" filter to those of an "International Visitors" filter. You can create metrics that will give you insights such as:
 
 * How does content browsing behavior compare between the two groups? (Another example would be: How does the conversion rate compare between the two filters?) 
-* As a percentage of total visitors, how many German visitors browse certain pages, versus International visitors? 
+* As a percentage of total persons, how many German persons browse certain pages, versus International persons? 
 * Where are the biggest differences in terms of which content is accessed by these different filters?
 
 1. If you don't have a comparable filter, create an adhoc segment right in the Calculated Metric Builder called "German Visitors", where "Countries" equals "Germany". Just drag the Countries dimension into the Definition canvas and select Germany as the value:

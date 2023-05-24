@@ -48,7 +48,7 @@ Flow visualizations allow you to understand the journey stemming from or leading
    | **[!UICONTROL Limit to first/last occurrence]** | Limit paths to those that start/end with the first/last occurrence of a dimension/item/metric. See the section below entitled "Example scenario for 'limit to first/last occurrence'" for a more detailed explanation. |
    | **[!UICONTROL Number of Columns]** | Determines how many columns you want in your Flow diagram. |
    | **[!UICONTROL Items expanded per Column]** | How many items you want in each column. |
-   | **[!UICONTROL Flow Container]** | <ul><li>Visit</li><li>Visitor</li></ul> Lets you switch between Visit and Visitor to analyze visitor pathing. These settings help you understand visitor engagement at the visitor level (across visits), or constrain the analysis to a single visit.  |
+   | **[!UICONTROL Flow Container]** | <ul><li>Visit</li><li>Visitor</li></ul> Lets you switch between Visit and Visitor to analyze person pathing. These settings help you understand person engagement at the person level (across visits), or constrain the analysis to a single visit.  |
 
 1. Click **[!UICONTROL Build]**.
 

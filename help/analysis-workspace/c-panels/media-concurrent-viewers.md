@@ -9,7 +9,7 @@ exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 
 You can analyze concurrent viewers to understand where peak concurrency occurred or where drop-offs happened to provide valuable insight into the quality of content and viewer engagement, and to help with troubleshooting or planning for volume or scale.
 
-In Analysis Workspace, Concurrent Viewers is the number of unique visitors viewing your media stream(s) at a specific point in time, regardless of the number of sessions.
+In Analysis Workspace, Concurrent Viewers is the number of unique persons viewing your media stream(s) at a specific point in time, regardless of the number of sessions.
 
 The Media Concurrent Viewers panel enables analysis of concurrent viewers over time, with details on peak concurrency and the ability to break down and compare.  To access the Media Concurrent Viewers panel, navigate to a data view with Media Analytics components enabled. Then, click the panel icon on the far-left and drag the panel into your Analysis Workspace project.
 
@@ -53,7 +53,7 @@ The only metric that can be used in this panel is Concurrent Viewers:
 
 |Metric|Description|
 |---|---|
-|Concurrent Viewers| Number of unique visitors viewing your media stream(s) at a specific point in time, regardless of the number of sessions.<br><br>This is different than Concurrent Viewer reporting in the Reports section, which uses Concurrent Active Sessions.  Using unique visitors accounts for removal of unwanted 'spikes' at show boundaries (where sessions are ending and starting at the same time).|
+|Concurrent Viewers| Number of unique persons viewing your media stream(s) at a specific point in time, regardless of the number of sessions.<br><br>This is different than Concurrent Viewer reporting in the Reports section, which uses Concurrent Active Sessions.  Using unique persons accounts for removal of unwanted 'spikes' at show boundaries (where sessions are ending and starting at the same time).|
 
 A Freeform table is not available in this view.  In order to view the data source, you may right-click on the line chart and download as a .csv file.  Series breakdowns will be included.
 
@@ -70,8 +70,8 @@ A Freeform table is not available in this view.  In order to view the data sourc
 |How do I compare date ranges?|To compare date ranges in a single visualization, use the series breakdowns by dragging 2 or more date ranges.  These date ranges will override the panel date range.|
 |How do I change the visualization type?|This panel only allows for the line visualization for the time series.|
 |Can I run anomaly detection?|No.  Anomaly detection is not available for this panel.|
-|Why use unique visitors instead of active sessions?|Using unique visitors enables removal of unwanted spikes at show boundaries (where sessions are ending and starting at the same time).|
+|Why use unique persons instead of active sessions?|Using unique persons enables removal of unwanted spikes at show boundaries (where sessions are ending and starting at the same time).|
 |What does it mean to have concurrent viewers at higher granularity than minute?|With a granularity larger than a minute, concurrent viewers is the sum of unique concurrent viewers for all minutes within that time range.  For example, at hour-level granularity concurrent viewers is the sum of unique concurrent viewers for all minutes within the hour.|
-|Does the workspace panel show the same information as the Concurrent Viewers Report?|No.  In Analysis Workspace, Concurrent viewers is defined as the number of unique visitors viewing your media stream at a specific point in time, regardless of the number of sessions.<br><br>This is different than Concurrent Viewer reporting in the Reports section, which uses Concurrent Active Sessions.  Using unique visitors accounts for removal of unwanted spikes at show boundaries—where sessions are ending and starting at the same time.|
+|Does the workspace panel show the same information as the Concurrent Viewers Report?|No.  In Analysis Workspace, Concurrent viewers is defined as the number of unique persons viewing your media stream at a specific point in time, regardless of the number of sessions.<br><br>This is different than Concurrent Viewer reporting in the Reports section, which uses Concurrent Active Sessions.  Using unique persons accounts for removal of unwanted spikes at show boundaries—where sessions are ending and starting at the same time.|
 
 <!-- For more information about Media Concurrent Viewers, visit [MA doc page]( https://url). -->

@@ -6,9 +6,9 @@ exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 
 # Filters overview {#overview}
 
-Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of visitors based on characteristics or website interactions. Filters are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
+Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of persons based on characteristics or website interactions. Filters are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
 
-Filters can be based on attributes (browser type, device, number of visits, country, gender), interactions (campaigns, keyword search, search engine), exits and entries (visitors from Facebook, a defined landing page, referring domain), custom variables (form field, defined categories, customer ID), and other criteria.
+Filters can be based on attributes (browser type, device, number of visits, country, gender), interactions (campaigns, keyword search, search engine), exits and entries (persons from Facebook, a defined landing page, referring domain), custom variables (form field, defined categories, customer ID), and other criteria.
 
 You can build and save filters in the Filter Builder, or generate filters from a Fallout visualization (in Workspace). In addition, filters can be used together as stacked filters. 
 
@@ -22,7 +22,7 @@ For information about the available types of filters available and how to create
 
 ## Sequential filters {#sequential}
 
-Sequential filters let you identify visitors based on navigation and page view across your site, providing a filter of defined actions and interactions. Sequential filters help you identify what a visitor likes and what a visitor avoids. When building sequential filters, the THEN operator is used to define and order visitor navigation.
+Sequential filters let you identify persons based on navigation and page view across your site, providing a filter of defined actions and interactions. Sequential filters help you identify what a person likes and what a person avoids. When building sequential filters, the THEN operator is used to define and order person navigation.
 
 Here is an example:
 
@@ -30,7 +30,7 @@ Here is an example:
 
 | Visit One | Visit Two | Visit Three |
 | --- | --- | --- |
-| The visitor went to the main landing page (A), excluded the campaign page (B), and then viewed the Product page (C).|The visitor again went to the main landing page (A), excluded the campaign page (B), and went again to the Product page (C), and then to a new page (D). | The visitor entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product page (G). |
+| The person went to the main landing page (A), excluded the campaign page (B), and then viewed the Product page (C).|The person again went to the main landing page (A), excluded the campaign page (B), and went again to the Product page (C), and then to a new page (D). | The person entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product page (G). |
 
 ## Filter containers {#containers}
 
@@ -39,14 +39,14 @@ Filters are based on a Person-, Session- and Event-level hierarchy using a neste
 >[!NOTE]
 >The Person container was formerly known as the Visitor container. The Session container was called the Visit container, and the Event container used to be the Hit container.
 
-A Filter sets conditions to filter a visitor based on his or her attributes or interactions with your site. To set conditions in a filter, you set rules to filter visitors based on visitor characteristics and/or navigation traits. To further break down visitor data, you can filter based on specific visits and/or page view hits for each visitor. The Filter Builder provides a simple architecture to build these subsets and apply rules as nested, hierarchical Person, Session, or Event containers.
+A Filter sets conditions to filter a person based on his or her attributes or interactions with your site. To set conditions in a filter, you set rules to filter persons based on person characteristics and/or navigation traits. To further break down person data, you can filter based on specific visits and/or page view hits for each person. The Filter Builder provides a simple architecture to build these subsets and apply rules as nested, hierarchical Person, Session, or Event containers.
 
-The container architecture employed in the Filter Builder defines Person as the outermost container, containing overarching data specific for the visitor across visits and page views. A nested Session container lets you set rules to break down the visitor's data based on sessions, and a nested Event container lets you break down visitor information based on individual page views. Each container lets you report across a visitor's history, interactions broken down by sessions, or break down individual events. 
+The container architecture employed in the Filter Builder defines Person as the outermost container, containing overarching data specific for the person across visits and page views. A nested Session container lets you set rules to break down the person's data based on sessions, and a nested Event container lets you break down person information based on individual page views. Each container lets you report across a person's history, interactions broken down by sessions, or break down individual events. 
 
 ### Person container {#person}
 
-The Person container includes every visit and page view for visitors within a specified time frame. A filter at the Person level returns the page that meets the condition plus all other pages viewed by the visitor (and only constrained by defined date ranges). As the most broadly-defined container, reports generated at the Person container level will return page views across all visits and lets you generate a multi-visit analysis. Consequently, the Person container is the most susceptible to change based on defined date ranges.
-Person containers can include values based on a visitor's overall history:
+The Person container includes every visit and page view for persons within a specified time frame. A filter at the Person level returns the page that meets the condition plus all other pages viewed by the person (and only constrained by defined date ranges). As the most broadly-defined container, reports generated at the Person container level will return page views across all visits and lets you generate a multi-visit analysis. Consequently, the Person container is the most susceptible to change based on defined date ranges.
+Person containers can include values based on a person's overall history:
 
 * Days Before First Purchase
 * Original Entry Page

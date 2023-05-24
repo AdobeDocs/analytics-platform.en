@@ -128,7 +128,7 @@ Use the Summary Number visualization to highlight a large number that is importa
 
 ### [!UICONTROL Donut]
 
-Similar to a pie chart, this visualization shows data as parts of a whole. Use a donut graph when comparing percentages of a total. For example, let's say you want to see which ad platform contributed to the total number of unique visitors:
+Similar to a pie chart, this visualization shows data as parts of a whole. Use a donut graph when comparing percentages of a total. For example, let's say you want to see which ad platform contributed to the total number of unique persons:
 
 ![Donut visualization](assets/donut-viz.png)
 
@@ -213,7 +213,7 @@ Similarly, to remove a component that is applied to the entire scorecard, click 
 
 A data story is a collection of supporting data points, business context, and related metrics built around a central theme or metric. 
 
-For example, if you focus on web traffic, your most important metric may be visits, but you may also be interested in new visitors, unique visitors, and you may want to see data broken down by web page or by what device type the traffic is coming from. Data stories in mobile scorecard projects let you put your most important metrics front and center while telling the whole story behind the metrics with multiple detail slides. 
+For example, if you focus on web traffic, your most important metric may be visits, but you may also be interested in new persons, unique persons, and you may want to see data broken down by web page or by what device type the traffic is coming from. Data stories in mobile scorecard projects let you put your most important metrics front and center while telling the whole story behind the metrics with multiple detail slides. 
 
 Watch the video to learn more about creating data stories in mobile scorecard projects in Analysis Workspace.
 

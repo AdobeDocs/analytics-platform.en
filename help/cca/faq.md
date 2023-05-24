@@ -18,7 +18,7 @@ You can use a Flow visualization with the Dataset ID dimension.
 
 If you would like to rename dataset ID dimension items, you can use a lookup dataset.
 
-## How far back does CCA rekey visitors?
+## How far back does CCA rekey persons?
 
 The lookback window for rekeying depends on your desired frequency of data [replay](replay.md). For example, if you set up CCA to replay data once every week, the lookback window for rekeying is seven days. If you set up CCA to replay data every day, the lookback window for rekeying is one day.
 
@@ -61,7 +61,7 @@ Certain metrics in CJA are similar to metrics in traditional Analytics, but othe
 
 | **CJA stitched data** | **CJA unstitched data** | **Traditional Adobe Analytics** | **Analytics Ultimate with CDA** |
 | ----- | ----- | ----- | ----- |
-| **People** = Count of distinct `Person ID`s where `Stitched ID` is chosen as `Person ID`. **People** may be higher or lower than **Unique Visitors** in traditional Adobe Analytics, depending on the outcome of the stitching process. | **People** = Count of distinct `Person ID`s based on the column selected as `Person ID`. **People** in Adobe Source Connector datasets is similar to **Unique Visitors** in traditional Adobe Analytics if `endUserIDs._experience.aaid.id` is chosen as `Person ID` in CJA. | **Unique Visitors** = Count of distinct visitor IDs. **Unique Visitors** may not be the same as the count of distinct **ECID**s.| See [People](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html).  |
+| **People** = Count of distinct `Person ID`s where `Stitched ID` is chosen as `Person ID`. **People** may be higher or lower than **Unique Visitors** in traditional Adobe Analytics, depending on the outcome of the stitching process. | **People** = Count of distinct `Person ID`s based on the column selected as `Person ID`. **People** in Adobe Source Connector datasets is similar to **Unique Visitors** in traditional Adobe Analytics if `endUserIDs._experience.aaid.id` is chosen as `Person ID` in CJA. | **Unique Visitors** = Count of distinct person IDs. **Unique Visitors** may not be the same as the count of distinct **ECID**s.| See [People](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html).  |
 | **Sessions**: Defined based on the session settings in the CJA data view. The stitching process may combine individual sessions from multiple devices into a single session. | **Sessions**: Defined based on the session settings specified in the CJA data view.  | **Visits**: See [Visits](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html). | **Visits**: Defined based on the session settings specified in the [CDA virtual report suite](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html). |
 | **Events** = count of rows in the stitched data in CJA. This metric is typically close to **Occurrences** in traditional Adobe Analytics. Note, however, the FAQ above regarding rows with a blank `Persistent ID`.| **Events** = count of rows in the unstitched data in CJA. This metric is typically close to **Occurrences** in traditional Adobe Analytics. Note, however, that if any events have a blank `Person ID` in the unstitched data in Experience Platform data lake, these events are not included in CJA. | **Occurrences**: See [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). | **Occurrences**: See [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
 
