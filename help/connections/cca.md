@@ -1,6 +1,6 @@
 ---
 title: Cross-Channel Analytics
-description: Learn how re-key visitor ID's from multiple datasets to stitch visitors together.
+description: Learn how re-key person ID's from multiple datasets to stitch persons together.
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 5fb30b64-d305-4de4-ab84-66195ceb8386

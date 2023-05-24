@@ -23,8 +23,8 @@ Under **[!UICONTROL Column Settings]**, there are options to **[!UICONTROL Show 
 
 [Static row](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) totals behave differently, and are controlled under **[!UICONTROL Row Settings]**.
 
-* **[!UICONTROL Show sum of current rows as the total]** - this shows a client-side sum of the rows in the table which means the total will **not** de-duplicate metrics like visits or visitors.
-* **[!UICONTROL Show Grand Total]** - this shows a server-side sum, which means the total will de-duplicate metrics like visits or visitors.
+* **[!UICONTROL Show sum of current rows as the total]** - this shows a client-side sum of the rows in the table which means the total will **not** de-duplicate metrics like visits or persons.
+* **[!UICONTROL Show Grand Total]** - this shows a server-side sum, which means the total will de-duplicate metrics like visits or persons.
 
 ![](assets/static-rows.png)
 

@@ -34,8 +34,8 @@ The table below defines terminology for the different types of processing logic 
 | Report-time processing | Logic that is performed at the time a report is run. | This logic can be applied to future and historical data at report runtime in a non-destructive manner. |
 | Hit-level logic | Logic applied at a row-by-row level. | Examples: Processing rules, VISTA, certain marketing channel rules. |
 | Visit-level logic | Logic applied at the visit level. | Examples: Visit and session definition. |
-| Visitor-level logic | Logic applied at the visitor level. | Example: Cross-device/cross-channel visitor stitching. |
-| Segment (filter) logic | Evaluation of event/visit/visitor (event/session/person) segment (filter) rules. | Example: People who bought red shoes. |
+| Visitor-level logic | Logic applied at the person level. | Example: Cross-device/cross-channel person stitching. |
+| Segment (filter) logic | Evaluation of event/visit/person (event/session/person) segment (filter) rules. | Example: People who bought red shoes. |
 | Calculated metrics | Evaluation of customer-created custom metrics which can be based on complex formulas including segments and filters. | Example: # of people who bought red shoes. |
 | Attribution logic | Logic to calculate attribution. | Example: eVar persistence. |
 | Component Settings | Applying customizations to metrics or dimensions, like attribution, behaviour, format, and others | Example: value bucketing to combine numeric values based on a range |
@@ -43,7 +43,7 @@ The table below defines terminology for the different types of processing logic 
 
 {style="table-layout:auto"}
 
-Over time, Adobe Analytics and now Customer Journey Analytics have improved their flexibility by allowing visit and visitor-level data logic to be performed at report runtime. 
+Over time, Adobe Analytics and now Customer Journey Analytics have improved their flexibility by allowing visit and person-level data logic to be performed at report runtime. 
 
 ## Types of data processing {#types}
 

@@ -9,7 +9,7 @@ feature: Data Views
 
 Attribution gives you the ability to customize how dimension items get credit for success events. For example:
 
-1. A visitor to your site clicks a paid search link to one of your product pages. They add the product to their cart, but do not purchase it.
+1. A person to your site clicks a paid search link to one of your product pages. They add the product to their cart, but do not purchase it.
 2. The next day, the see a social media post from one of their friends. They click the link, then complete the purchase.
 
 In some reports, you might want the order attributed to Paid search. In other reports, you might want the order attributed to Social. Attribution lets you control this aspect of reporting.
@@ -52,15 +52,15 @@ A lookback window is the amount of time a conversion should look back to include
 * **60 Days**: Looks back up to 60 days from when the conversion happened.
 * **90 Days**: Looks back up to 90 days from when the conversion happened.
 * **Session**: Looks back up to the beginning of the session where a conversion happened. Session lookback windows respect the modified [Session timeout](../create-dataview.md#session-settings).
-* **Person (Reporting Window)**: Looks at all visits back up to the first of the month of the current date range. For example, if the report date range is September 15 - September 30, the visitor lookback date range includes September 1 - September 30. If you use this lookback window, you can occasionally see that dimension items are attributed to dates outside of your reporting window.
+* **Person (Reporting Window)**: Looks at all visits back up to the first of the month of the current date range. For example, if the report date range is September 15 - September 30, the person lookback date range includes September 1 - September 30. If you use this lookback window, you can occasionally see that dimension items are attributed to dates outside of your reporting window.
 * **Custom Time:** Allows you to set a custom lookback window from when a conversion happened. You can specify the number of minutes, hours, days, weeks, months, or quarters. For example, if a conversion happened on February 20, a lookback window of five days would evaluate all dimension touchpoints from February 15 to February 20 in the attribution model.
 
 ## Example
 
 Consider the following example:
 
-1. On September 15, a visitor arrives to your site through a paid search advertisement, then leaves.
-2. On September 18, the visitor arrives to your site again through a social media link they got from a friend. They add several items to their cart, but do not purchase anything.
+1. On September 15, a person arrives to your site through a paid search advertisement, then leaves.
+2. On September 18, the person arrives to your site again through a social media link they got from a friend. They add several items to their cart, but do not purchase anything.
 3. On September 24, your marketing team sends them an email with a coupon for some of the items in their cart. They apply the coupon, but visit several other sites to see if any other coupons are available. They find another through a display ad, then ultimately make a purchase for $50.
 
 Depending on your lookback window and attribution model, channels receive different credit. The following are some notable examples:

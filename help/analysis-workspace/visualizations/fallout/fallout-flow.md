@@ -1,12 +1,12 @@
 ---
-description: Fallout visualizations show where visitors left (fell out) and continued through (fell through) a predefined sequence of pages.
+description: Fallout visualizations show where persons left (fell out) and continued through (fell through) a predefined sequence of pages.
 title: Fallout overview
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 ---
 # Fallout overview
 
-Fallout visualizations provide more options to build your fallout reports. Fallout reports show where visitors left (fell out) and continued through (fell through) a predefined sequence of pages.
+Fallout visualizations provide more options to build your fallout reports. Fallout reports show where persons left (fell out) and continued through (fell through) a predefined sequence of pages.
 
 Fallout visualizations let you
 
@@ -18,7 +18,7 @@ Fallout visualizations let you
 
 Fallout displays conversion and fallout rates between each step or touchpoint in a sequence.
 
-For example, you can track a visitor's fallout points during a purchase process. Just select a beginning touchpoint and a conclusion touchpoint, and add intermediate touchpoints to create a website navigation path. But you can also do multi-dimensional fallouts.
+For example, you can track a person's fallout points during a purchase process. Just select a beginning touchpoint and a conclusion touchpoint, and add intermediate touchpoints to create a website navigation path. But you can also do multi-dimensional fallouts.
 
 A fallout visualization is useful for analyzing:
 

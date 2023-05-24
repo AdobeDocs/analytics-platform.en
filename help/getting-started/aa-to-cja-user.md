@@ -70,9 +70,9 @@ While you cannot yet share or publish [!UICONTROL filters] ([!UICONTROL segments
 
 In addition to the concept of segments changing, segment containers are also updated.
 
-* **Hit containers are now [!UICONTROL Event] containers**. The [!UICONTROL Event] container lets you break down visitor information based on individual events. 
+* **Hit containers are now [!UICONTROL Event] containers**. The [!UICONTROL Event] container lets you break down person information based on individual events. 
 * **Visit containers are now [!UICONTROL Session] containers**. The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session.
-* **Visitor containers are now [!UICONTROL Person] containers**. The [!UICONTROL Person] container includes every session and event for a visitor within the specified time frame.
+* **Visitor containers are now [!UICONTROL Person] containers**. The [!UICONTROL Person] container includes every session and event for a person within the specified time frame.
 
 ## Changes to the concept of calculated metrics
 
@@ -94,7 +94,7 @@ You can also have multiple data views based on the same connection. For example,
 
 ## Changes to the concept of customer attributes
 
-"Customer attributes" are now known as "Profile datasets". Profile datasets contain data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. For example, it allows you to upload CRM data about your customers. You can pick which Person ID you want to include. Each dataset defined in [!DNL Experience Platform] has its own set of one or more Person IDs defined.
+"Customer attributes" are now known as "Profile datasets". Profile datasets contain data that is applied to your persons, users, or customers in the [!UICONTROL Event] data. For example, it allows you to upload CRM data about your customers. You can pick which Person ID you want to include. Each dataset defined in [!DNL Experience Platform] has its own set of one or more Person IDs defined.
 
 ## Changes to how Adobe identifies visitors
 
