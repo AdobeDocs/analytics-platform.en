@@ -15,7 +15,7 @@ While you can use binding dimensions with top-level event data, this concept is 
 
 You can bind dimension items within an object array to another dimension. When the bound dimension item appears, CJA recalls the bound dimension and includes it in the event for you. Consider the following customer journey:
 
-1. A person views a product page on a washing machine.
+1. A visitor views a product page on a washing machine.
 
     ```json
     {
@@ -31,7 +31,7 @@ You can bind dimension items within an object array to another dimension. When t
     }
     ```
 
-1. The person then views a product page on a dryer.
+1. The visitor then views a product page on a dryer.
 
     ```json
     {
@@ -46,7 +46,7 @@ You can bind dimension items within an object array to another dimension. When t
     }
     ```
 
-1. Ultimately they make a purchase. The color of each product wasn't included in the purchase event.
+1. Ultimately they make a purchase. The color of each product was not included in the purchase event.
 
     ```json
     {
@@ -72,7 +72,7 @@ If you wanted to look at revenue by color without a binding dimension, the dimen
 | --- | --- |
 | neon orange | 2099 |
 
-You can go into the Data View Manager and bind product color to product name:
+You can go into the data view manager and bind product color to product name:
 
 ![Binding dimension](../assets/binding-dimension.png)
 
@@ -87,7 +87,7 @@ When you set this persistence model, CJA takes note of the product name whenever
 
 One of the most common merchandising methods in Adobe Analytics has been to bind a search term to a product so each search term gets credit for it's appropriate product. Consider the following customer journey:
 
-1. A person arrives to your site and searches for "boxing gloves". The searches metric increments by one, and the top three search results are displayed.
+1. A visitor arrives to your site and searches for "boxing gloves". The searches metric increments by one, and the top three search results are displayed.
 
     ```json
     {
@@ -124,7 +124,7 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
     }
     ```
 
-3. The person then searches for "tennis racket". The searches metric increments by one, and the top three search results are displayed.
+3. The visitor then searches for "tennis racket". The searches metric increments by one, and the top three search results are displayed.
 
     ```json
     {
@@ -164,7 +164,7 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
     }
     ```
 
-5. The person searches a third time for "shoes". The searches metric increments by one, and the top three search results are displayed.
+5. The visitor searches a third time for "shoes". The searches metric increments by one, and the top three search results are displayed.
 
     ```json
     {
@@ -207,7 +207,7 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
     }
     ```
 
-7. The person goes through the checkout process and purchases these three items.
+7. The visitor goes through the checkout process and purchases these three items.
 
     ```json
     {
@@ -231,13 +231,13 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
     }
     ```
 
-If you use an allocation model that does not include a binding dimension with search term, all three products attribute revenue to only a single search term. For example, if you used Original allocation with the search term dimension:
+If you use an allocation model that does not include a binding dimension with search term, all three products attribute revenue to only a single search term. For example, if you used [!UICONTROL Original] allocation with the search term dimension:
 
 | search_term | revenue |
 | --- | --- |
 | boxing gloves | $204.97 |
 
-If you used Most Recent allocation with the search term dimension, all three products still attribute revenue to a single search term:
+If you used [!UICONTROL Most Recent] allocation with the search term dimension, all three products still attribute revenue to a single search term:
 
 | search_term | revenue |
 | --- | --- |
@@ -270,7 +270,7 @@ Setting the search term dimension to this persistence model executes the followi
 
 ## Example 3: Bind video search term to user profile
 
-You can bind a search term to a user profile so persistence between profiles remains completely separated. For example, your organization runs a streaming service where an overarching account can have multiple profiles. The person has a child profile and an adult profile.
+You can bind a search term to a user profile so persistence between profiles remains completely separated. For example, your organization runs a streaming service where an overarching account can have multiple profiles. The visitor has a child profile and an adult profile.
 
 1. The account logs in under the child profile and searches for a kid's TV show. Note that the `"ProfileID"` is `2` to represent the child profile.
 
@@ -349,7 +349,7 @@ Analysis Workspace would correctly attribute the second episode of Orangey to th
 
 You can bind values to dimensions set on previous events. When you set a variable with a binding dimension, CJA takes into account the persisted value. If this behavior is undesired, you can adjust the binding dimension's persistence settings. Consider the following example where `product_finding_method` is set on an event, then bound to the Cart Adds metric on the following event.
 
-1. A person performs a search for `"camera"`. Note that no products are set on this page.
+1. A visitor performs a search for `"camera"`. Note that no products are set on this page.
 
     ```json
     {
@@ -371,7 +371,7 @@ You can bind values to dimensions set on previous events. When you set a variabl
     }
     ```
 
-1. The person then browses into the men's belts category without performing a search. Note that no products are set on this page.
+1. The visitor then browses into the men's belts category without performing a search. Note that no products are set on this page.
 
     ```json
     {
