@@ -45,5 +45,5 @@ Available time comparison options include the previous period, 13 weeks prior, 5
 
 Sets the desired date range. There are two important components to this setting:
 
-* **Interval**: The date granularity that you want to view data in. Valid options include Hourly, Daily, Weekly, Monthly, and Quarterly. The same date range can have different intervals which affect the number of data points in the chart and the number of columns in the table. For example, viewing a report spanning three days with daily granularity would show only three data points, while a report spanning three days with hourly granularity would show 72 data points.
-* **Date**: The starting and ending date of the project. Date range presets are available for your convenience, or you can use the calendar selector to set the exact desired date.
+* **Interval**: The date granularity that you want to view data in. Valid options include Hourly, Daily, Weekly, Monthly, and Quarterly. The same date range can have different intervals which affect the number of data points in the chart and the number of columns in the table. For example, viewing an analysis spanning three days with daily granularity would show only three data points, while an analysis spanning three days with hourly granularity would show 72 data points.
+* **Date**: The starting and ending date. Date range presets are available for your convenience, or you can use the calendar selector to set the exact desired date.

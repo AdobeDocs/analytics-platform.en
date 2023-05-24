@@ -38,4 +38,4 @@ Funnel offers the following chart settings. You can adjust the chart settings us
 
 ## Date range
 
-The starting and ending date of the project. Date range presets are available for your convenience, or you can use the calendar selector to set the exact desired date. 
+The starting and ending date. Date range presets are available for your convenience, or you can use the calendar selector to set the exact desired date. 
