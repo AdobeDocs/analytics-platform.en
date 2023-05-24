@@ -336,7 +336,7 @@ If you use Most Recent allocation with Person expiration, the `"grownup movie"` 
 
 However, if you bound `search_term` to `ProfileID`, each profile's searches would be isolated to their own profile, attributed to the correct shows that they search for.
 
-![Visitor binding](../assets/binding-person.png)
+![Visitor binding](../assets/binding-visitor.png)
 
 Analysis Workspace would correctly attribute the second episode of Orangey to the search term `"kids show"` without taking searches from other profiles into account.
 
