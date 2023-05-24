@@ -19,8 +19,8 @@ The **Trends** [Analysis type](overview.md) provides valuable insight around the
 
 The query rail allows you to configure the following components:
 
-* **Events**: Sets the events that you want to measure in your report. Each event selected here is represented as a colored line or set of bars, depending on chart type. A row representing the trended event is added to the table. Up to five events are supported.
-* **People**: Sets the segments that you want to measure in your report. Each segment selected here doubles the number of lines in the chart and rows in the table. Each set of events is represented for each segment. Up to five segments are supported.
+* **Events**: The events that you want to measure in your report. Each event selected here is represented as a colored line or set of bars, depending on chart type. A row representing the trended event is added to the table. Up to five events are supported.
+* **People**: The segments that you want to measure in your report. Each segment selected here doubles the number of lines in the chart and rows in the table. Each set of events is represented for each segment. Up to five segments are supported.
 
 ## View types
 
@@ -32,8 +32,8 @@ Trends offer the following view types. You can change the view type using the dr
 
 Trends offer the following chart settings. You can adjust the chart settings using the menu between the view type and calendar selector.
 
-* **Metric**: Sets the metric that you want to measure. Options include Events, Sessions, Users, Events per session, and Events per user.
-* **Chart type**: Sets the type of visualization that you want to use. Options include Line, Bar, Stacked bar, and Stacked area.
+* **Metric**: The metric that you want to measure. Options include Events, Sessions, Users, Events per session, and Events per user.
+* **Chart type**: The type of visualization that you want to use. Options include Line, Bar, Stacked bar, and Stacked area.
 
 ## Apply time comparison
 

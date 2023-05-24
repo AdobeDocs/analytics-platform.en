@@ -27,8 +27,8 @@ Use cases for this analysis type include:
 
 The query rail allows you to configure the following components:
 
-* **Events**: Sets the event that you want to measure. Since this analysis type is user-based, a user can touch the event once within the set date granularity to be counted as an active user. Only one event is supported.
-* **People**: Sets the segment that you want to measure. Only one segment is supported.
+* **Events**: The event that you want to measure. Since this analysis type is user-based, a user can touch the event once within the set date granularity to be counted as an active user. Only one event is supported.
+* **People**: The segment that you want to measure. Only one segment is supported.
 
 ## View types
 
@@ -40,12 +40,12 @@ User growth offers the following view types. You can change the view type using 
 
 User growth offers the following chart settings. You can adjust the chart settings using the menu between the view type and calendar selector.
 
-* **Metric**: Sets the metric that you want to measure. Options include Number of users and Percentage of users.
-* **Chart type**: Sets the type of visualization that you want to use. Options include Stacked bar and Stacked area.
+* **Metric**: The metric that you want to measure. Options include Number of users and Percentage of users.
+* **Chart type**: The type of visualization that you want to use. Options include Stacked bar and Stacked area.
 
 ## Date range
 
-Sets the desired date range. There are two important components to this setting:
+The desired date range. There are two important components to this setting:
 
 * **Interval**: The date granularity that you want to view data in. Valid options include Hourly, Daily, Weekly, Monthly, and Quarterly. The same date range can have different intervals which affect the number of data points in the chart and the number of columns in the table. For example, viewing an analysis spanning three days with daily granularity would show only three data points, while an analysis spanning three days with hourly granularity would show 72 data points.
 * **Date**: The starting and ending date. Date range presets are available for your convenience, or you can use the calendar selector to set the exact desired date.
