@@ -19,8 +19,8 @@ The **Trends** [Analysis type](overview.md) provides valuable insight around the
 
 The query rail allows you to configure the following components:
 
-* **Events**: The events that you want to measure in your report. Each event selected here is represented as a colored line or set of bars, depending on chart type. A row representing the trended event is added to the table. Up to five events are supported.
-* **People**: The segments that you want to measure in your report. Each segment selected here doubles the number of lines in the chart and rows in the table. Each set of events is represented for each segment. Up to five segments are supported.
+* **Events**: The events that you want to measure in your report. Each event selected here is represented as a colored line or set of bars, depending on chart type. A row representing the trended event is added to the table. You can incldue up to five events.
+* **People**: The segments that you want to measure in your report. Each segment selected here doubles the number of lines in the chart and rows in the table. Each set of events is represented for each segment. You can include up to five segments.
 
 ## View types
 

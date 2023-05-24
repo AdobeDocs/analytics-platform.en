@@ -27,8 +27,8 @@ Use cases for this analysis type include:
 
 The query rail allows you to configure the following components:
 
-* **Events**: The event that you want to measure. Since this analysis type is user-based, a user can touch the event once within the set date granularity to be counted as an active user. Only one event is supported.
-* **People**: The segment that you want to measure. Only one segment is supported.
+* **Events**: The event that you want to measure. Since this analysis type is user-based, a user can touch the event once within the set date granularity to be counted as an active user. You can include only one event.
+* **People**: The segment that you want to measure. You can include only one segment.
 
 ## View types
 
