@@ -19,8 +19,8 @@ The **Trends** [Analysis type](overview.md) provides valuable insight around the
 
 The query rail allows you to configure the following components:
 
-* **Events**: Sets the events that you want to measure in your report. Each event selected here is represented as a colored line or set of bars, depending on chart type. A row representing the trended event is added to the table. Up to five events are supported.
-* **People**: Sets the segments that you want to measure in your report. Each segment selected here doubles the number of lines in the chart and rows in the table. Each set of events is represented for each segment. Up to five segments are supported.
+* **Events**: The events that you want to measure in your report. Each event selected here is represented as a colored line or set of bars, depending on chart type. A row representing the trended event is added to the table. You can incldue up to five events.
+* **People**: The segments that you want to measure in your report. Each segment selected here doubles the number of lines in the chart and rows in the table. Each set of events is represented for each segment. You can include up to five segments.
 
 ## View types
 
@@ -32,8 +32,8 @@ Trends offer the following view types. You can change the view type using the dr
 
 Trends offer the following chart settings. You can adjust the chart settings using the menu between the view type and calendar selector.
 
-* **Metric**: Sets the metric that you want to measure. Options include Events, Sessions, Users, Events per session, and Events per user.
-* **Chart type**: Sets the type of visualization that you want to use. Options include Line, Bar, Stacked bar, and Stacked area.
+* **Metric**: The metric that you want to measure. Options include Events, Sessions, Users, Events per session, and Events per user.
+* **Chart type**: The type of visualization that you want to use. Options include Line, Bar, Stacked bar, and Stacked area.
 
 ## Apply time comparison
 
@@ -45,5 +45,5 @@ Available time comparison options include the previous period, 13 weeks prior, 5
 
 Sets the desired date range. There are two important components to this setting:
 
-* **Interval**: The date granularity that you want to view data in. Valid options include Hourly, Daily, Weekly, Monthly, and Quarterly. The same date range can have different intervals which affect the number of data points in the chart and the number of columns in the table. For example, viewing a report spanning three days with daily granularity would show only three data points, while a report spanning three days with hourly granularity would show 72 data points.
-* **Date**: The starting and ending date of the project. Date range presets are available for your convenience, or you can use the calendar selector to set the exact desired date.
+* **Interval**: The date granularity that you want to view data in. Valid options include Hourly, Daily, Weekly, Monthly, and Quarterly. The same date range can have different intervals which affect the number of data points in the chart and the number of columns in the table. For example, viewing an analysis spanning three days with daily granularity would show only three data points, while an analysis spanning three days with hourly granularity would show 72 data points.
+* **Date**: The starting and ending date. Date range presets are available for your convenience, or you can use the calendar selector to set the exact desired date.

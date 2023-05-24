@@ -32,10 +32,10 @@ Funnel offers the following view types. You can change the view type using the d
 
 Funnel offers the following chart settings. You can adjust the chart settings using the menu between the view type and calendar selector.
 
-* **Metric**: Sets the metric that you want to measure. Options include Sessions and Users.
-* **Chart type**: Sets the type of visualization that you want to use. The only option is Steps.
+* **Metric**: The metric that you want to measure. Options include Sessions and Users.
+* **Chart type**: The type of visualization that you want to use. The only option is Steps.
 * **Conversion from**: Determines the percentage calculation from step to step. Options include calculating conversion from First step or Previous step.
 
 ## Date range
 
-The starting and ending date of the project. Date range presets are available for your convenience, or you can use the calendar selector to set the exact desired date. 
+The starting and ending date. Date range presets are available for your convenience, or you can use the calendar selector to set the exact desired date. 
