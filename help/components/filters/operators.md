@@ -31,7 +31,7 @@ The Filter builder lets you compare and constrain values using selected operator
 
 ## Distinct Count operators
 
-You can segment on a distinct count of items within a dimension. For example, you can create filters for visitors who viewed more than 5 distinct products or visits where more than 5 distinct pages were seen.
+You can segment on a distinct count of items within a dimension. For example, you can create filters for persons who viewed more than 5 distinct products or visits where more than 5 distinct pages were seen.
 
 | Operator | Description |
 | --- | --- |

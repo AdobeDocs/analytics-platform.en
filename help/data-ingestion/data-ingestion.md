@@ -42,7 +42,7 @@ See [Ingest and use data from traditional Adobe Analytics](./analytics.md) for m
 
 ## Ingest and use data via the Adobe Experience Platform Web SDK and the Edge Network
 
-You want to analyze your website with Adobe technology, potentially migrating from another solution or start   tracking your visitor's behavior. You want to follow Adobe's best practices for implementation, which is using the Adobe Experience Platform SDKs and Edge Network, to ingest the data. Then you can use, combine, and analyze the ingested data with data from other channels and data sources in Customer Journey Analytics.
+You want to analyze your website with Adobe technology, potentially migrating from another solution or start tracking your person's behavior. You want to follow Adobe's best practices for implementation, which is using the Adobe Experience Platform SDKs and Edge Network, to ingest the data. Then you can use, combine, and analyze the ingested data with data from other channels and data sources in Customer Journey Analytics.
 
 See [Ingest and use data via the Adobe Experience Platform Web SDK and the Edge Network](./aepwebsdk.md) for more information.
 

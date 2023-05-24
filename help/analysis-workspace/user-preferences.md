@@ -154,7 +154,7 @@ Click the linked section titles for more information and context about the avail
 | | Show comparison | Show comparison data. When hidden, both the comparison line chart and summary change objects will be hidden from view. |
 | | Number value options | In the [!UICONTROL **Key Metric Summary**] section <ul><li>Show percent change</li><li>Show raw difference</li>Raw difference between the total value of the metric in the primary date range and the secondary date range</ul> |
 | **[Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** | | |
-| | Container | Lets you switch between Visit and Visitor to analyze visitor pathing. The default is Visitor. These settings help you understand visitor engagement at the visitor level (across visits), or constrain the analysis to a single visit. <p>The following options are available:</p> <ul><li>Visit</li><li>Visitor</li></ul> |
+| | Container | Lets you switch between Visit and Visitor to analyze visitor pathing. The default is Visitor. These settings help you understand person engagement at the person level (across sessions), or constrain the analysis to a single session. <p>The following options are available:</p> <ul><li>Visit</li><li>Visitor</li></ul> |
 | **[Flow](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** | | |
 | | Container | In the [!UICONTROL **Flow**] section <ul><li>Visit</li><li>Visitor</li></ul> |
 | | Wrap labels | Normally, the labels on the Flow elements are truncated to save screen real estate, but you can make the entire label visible by checking this box. Default = unchecked. |
@@ -166,7 +166,7 @@ Click the linked section titles for more information and context about the avail
 | | 100% stacked | This setting on area stacked, bar stacked or horizontal bar stacked visualizations turns the chart into a "100% stacked" visualization. <p>For more infomration, see [Bar and bar stacked](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histogram](/help/analysis-workspace/visualizations/histogram.md)** | | |
 | | Number of buckets | Choose the number of data ranges (buckets) in the visualization. The maximum number of buckets is 50. <p>For more information, see [Histogram](/help/analysis-workspace/visualizations/histogram.md).</p> |
-| | Counting method | Choose from the following options: <ul><li>Hit</li><li>Visit</li><li>Visitor</li></ul> <p>For example, when used in conjunction with page views, you could choose page views per visitor, page views for visit, or page views per event. For Hit, "Occurrences" is used as the y-axis metric in a freeform table.</p> |
+| | Counting method | Choose from the following options: <ul><li>Hit</li><li>Visit</li><li>Visitor</li></ul> <p>For example, when used in conjunction with page views, you could choose page views per person, page views for visit, or page views per event. For Hit, "Occurrences" is used as the y-axis metric in a freeform table.</p> |
 | **[Summary Change](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
 | | Value | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Percent change</li><li>Raw difference</li></ul>  |
 | | Percentages | Displays values in percentages for the Summary Change visualizations. |

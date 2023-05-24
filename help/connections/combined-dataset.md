@@ -11,7 +11,7 @@ feature: Connections
 When you create a connection, Customer Journey Analytics (CJA) combines all schemas and datasets into a single dataset. This 'combined event dataset' is what CJA uses for reporting. When you include multiple schemas or datasets in a connection:
 
 * Schemas are combined. Duplicate schema fields are merged.
-* The 'Person ID' column of each dataset are merged into a single column, regardless of their name. This column is the foundation of identifying unique visitors in CJA.
+* The 'Person ID' column of each dataset are merged into a single column, regardless of their name. This column is the foundation of identifying unique persons in CJA.
 * Rows are processed based on timestamp.
 * Events are resolved down to the millisecond level.
 
@@ -52,7 +52,7 @@ When you create a connection using these two event datasets, the following table
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
 
-This combined event dataset is what is used in reporting. It does not matter which dataset a row comes from; CJA treats all data as if it is in the same dataset. If a matching Person ID appears in both datasets, they are considered the same unique visitor. If a matching Person ID appears in both datasets with a timestamp within 30 minutes, they are considered part of the same session.
+This combined event dataset is what is used in reporting. It does not matter which dataset a row comes from; CJA treats all data as if it is in the same dataset. If a matching Person ID appears in both datasets, they are considered the same unique person. If a matching Person ID appears in both datasets with a timestamp within 30 minutes, they are considered part of the same session.
 
 This concept also applies to attribution. It does not matter which dataset a row comes from; attribution works exactly as if all events came from a single dataset. Using the above tables as an example:
 

@@ -53,7 +53,7 @@ Marketing channel settings operate differently between Platform data and report 
 
    ![Override last touch channel](../assets/override-last-touch-channel.png)
 
-* **Marketing Channel Expiration**: This engagement period setting determines the period of inactivity before a visitor can obtain a new first touch channel in report suite data. Platform uses its own attribution settings, so this setting is ignored entirely in CJA.
+* **Marketing Channel Expiration**: This engagement period setting determines the period of inactivity before a person can obtain a new first touch channel in report suite data. Platform uses its own attribution settings, so this setting is ignored entirely in CJA.
 
    ![Marketing channel expiration](../assets/marketing-channel-expiration.png)
 
@@ -65,4 +65,4 @@ Because the architecture of Adobe Experience Platform is different than a tradit
 * Double check that your connection uses the same report suite as traditional Analytics. If your CJA connection contains multiple report suites with their own Marketing channel processing rules, there is not an easy way to compare it with traditional Analytics. You would want to create a separate connection for each report suite to compare data.
 * Make sure that you compare the same date ranges, and that the time zone setting in your data view is the same as the report suite's time zone.
 * Use a custom attribution model when viewing report suite data. For example, use the [Marketing channel](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html) dimension with metrics that use a non-default attribution model. Adobe advises against comparing the default dimensions [First touch channel](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html) or [Last touch channel](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html), because they rely on attribution collected in the report suite. CJA does not rely on a report suite's attribution data; instead, it is calculated when a CJA report is run.
-* Some metrics do not have a reasonable comparison due to architectural differences between report suite data and Platform data. Examples include visits/sessions, visitors/people, and occurrences/events.
+* Some metrics do not have a reasonable comparison due to architectural differences between report suite data and Platform data. Examples include visits/sessions, persons/people, and occurrences/events.

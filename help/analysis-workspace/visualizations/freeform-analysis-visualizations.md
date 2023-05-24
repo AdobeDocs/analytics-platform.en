@@ -20,10 +20,10 @@ The following visualization types are available in Analysis Workspace:
 | [Bullet graph](/help/analysis-workspace/visualizations/bullet-graph.md) | Shows how a value you are interested in compares to or measures against other performance ranges (goals). |
 | [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | A *`cohort`* is a group of people sharing common characteristics over a specified period. Cohort Analysis is useful for retention, churn or latency analysis. |
 | [Donut](/help/analysis-workspace/visualizations/donut.md) | Similar to a pie chart, this visualization shows data as parts or filters of a whole. |
-| [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Fallout reports show where visitors left (fell out) and continued through (fell through) a predefined sequence of pages. Can be set to eventual or exact sequences |
+| [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Fallout reports show where persons left (fell out) and continued through (fell through) a predefined sequence of pages. Can be set to eventual or exact sequences |
 | [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) | Shows exact customer paths through your websites and apps. |
 | [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | A Freeform table is not merely a data table, but also an interactive visualization. It is the foundation for data analysis in Workspace.|
-| [Histogram](/help/analysis-workspace/visualizations/histogram.md) | A histogram buckets visitors, visits or events into buckets based on a metric volume. |
+| [Histogram](/help/analysis-workspace/visualizations/histogram.md) | A histogram buckets persons, visits or events into buckets based on a metric volume. |
 | [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md) | Shows horizontal bars representing various values across one or more metrics. |
 | [Line](/help/analysis-workspace/visualizations/line.md) | Represents metrics using a line in order to show how values change over a period of time. A line chart uses time along the x-axis. |
 | [Scatterplot](/help/analysis-workspace/visualizations/scatterplot.md) | Shows the relationship between dimension items and up to three metrics. |
