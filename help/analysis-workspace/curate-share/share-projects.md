@@ -105,7 +105,7 @@ You can grant [read-only access](/help/analysis-workspace/curate-share/view-only
 
 * People outside your organization 
 
-* People within your organization who are not provisioned with Customer Journey Analytics  
+* People within your organization who do not have access to Customer Journey Analytics  
 
 >[!NOTE]
 >
@@ -120,6 +120,8 @@ You can grant [read-only access](/help/analysis-workspace/curate-share/view-only
 >* Users you share with can change the project date range. The date range you set for the project is shown by default.
 >
 >* A project might become inaccessible if many users attempt to access a given link at the same time. By default, more than 190 people can access a single link every 5 minutes. If your organization reaches this limit, wait 5 minutes and then try accessing the link again.
+>
+>* If your organization licenses Healthcare Shield, you can share projects only with users who have authenticated either by Single Sign On (SSO) or Adobe ID; you cannot share projects with unauthenticated users. It is your responsibility to use this feature in compliance with your company's internal data governance policies and only share project links that contain Personal Health Information (PHI) with users who have the appropriate permissions.
 
 To share an Analysis Workspace project with anyone:
 
@@ -147,7 +149,7 @@ To share an Analysis Workspace project with anyone:
      
      * If this option is not visible, your CJA administrator did not enable this feature. 
 
-     * If this option is enabled and dimmed, your CJA administrator requires Experience Cloud authentication for anyone accessing Analysis Workspace projects. 
+     * If this option is enabled and you can't disable it, this means that your CJA administrator requires Experience Cloud authentication for anyone accessing Analysis Workspace projects. This is always the case for organizations who license Healthcare Shield. 
 
 1. Next to the **[!UICONTROL Share with anyone (no login required)]** field, click the **Copy link** icon ![Copy link icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)) to copy the link to your system clipboard. 
 
