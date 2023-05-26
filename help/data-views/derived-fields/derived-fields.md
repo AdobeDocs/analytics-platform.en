@@ -228,7 +228,7 @@ The desired report should look like:
 
 You define a new [!UICONTROL Origin - Destination] derived field. You use the [!UICONTROL CONCATENATE] function to define a rule to concatenate the [!UICONTROL Original] and [!UICONTROL Destination] fields using the `-` [!UICONTROL Delimiter].
 
-![[Concatenate rule](assets/concatenate.png)
+![Concatenate rule](assets/concatenate.png)
 
 ### Data after {#concatenate-dataafter}
 
@@ -651,7 +651,7 @@ You have collected URLs instead of the friendly page name for several pages. Thi
 
 You define a `Page Name (updated)` derived field. You use the [!UICONTROL LOOKUP] function to define a rule where you can look up values of your existing [!UICONTROL Page Name] field and replace with updated correct values.
 
-![DNL Lookup rule 2](assets/lookup-2.png)
+![Lookup rule 2](assets/lookup-2.png)
 
 ### Data after {#lookup-uc2-dataafter}
 
