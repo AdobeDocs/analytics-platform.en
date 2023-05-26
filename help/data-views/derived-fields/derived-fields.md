@@ -751,7 +751,7 @@ You define a `Query String CID` derived field. You use the [!UICONTROL URL PARSE
 
 ## Limitations
 
-The following limitations apply to the Derived field functionality:
+The following limitations apply to the Derived field functionality in general:
 
 - You can use a maximum of 100 different schema fields (not including standard fields) when defining rules for a derived field.
-- You can have a maximum of 100 derived field per CJA connection.
+- You can have a maximum of 100 derived fields per CJA connection.
