@@ -34,7 +34,7 @@ When you create or edit a derived field, you use the derived field interface.
 
 |  | Name | Description |
 |---------|----------|--------|
-| 1 | **Selector** | You use the selector area to select and drag and drop your ![Function](assets/Smock_Function_18_N.svg) function,![Function template icon](assets/Smock_FileTemplate_18_N.svg) function template,![Schema field icon](assets/Smock_Folder_18_N.svg) schema field, or![Standard field icon](assets/Smock_DragHandle_18_N.svg)standard field on to the rule builder. <br/>Use the drop-down to select between [!UICONTROL Functions], [!UICONTROL Function templates], [!UICONTROL Schema fields], and [!UICONTROL Standard fields].<br/>You can search for function, function templates, schema, and standard fields using the ![Search  icon](assets/Smock_Search_18_N.svg) Search box. <br/>You can filter the selected object list by selecting ![Filter icon](assets/Smock_Filter_18_N.svg) Filter and specify filters in the [!UICONTROL Filter fields by] dialog. You can easily remove filters using ![Close icon](assets/CrossSize75.svg) for each filter. | 
+| 1 | **Selector** | You use the selector area to select and drag and drop your function, function template, schema field, or standard field on to the rule builder. <br/>Use the drop-down to select between: <br/>![Function](assets/Smock_Function_18_N.svg) [!UICONTROL Functions] - lists available [functions](#function-reference), </br>![Function template icon](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Function templates] - lists available [function templates](#function-templates), <br/>![Schema field icon](assets/Smock_Folder_18_N.svg)  [!UICONTROL Schema fields] - lists fields available from dataset categories (event, profile, lookup) and previously defined derived fields, and <br/>![Standard field icon](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Standard fields] - standard available fields (like Platform Dataset ID). Only string and numeric standard fields are displayed in the selector. If the function supports other data types, standard fields with these other data types can be selected for values or fields within the rule interface.<br/>You can search for function, function templates, schema, and standard fields using the ![Search  icon](assets/Smock_Search_18_N.svg) Search box. <br/>You can filter the selected object list by selecting ![Filter icon](assets/Smock_Filter_18_N.svg) Filter and specify filters in the [!UICONTROL Filter fields by] dialog. You can easily remove filters using ![Close icon](assets/CrossSize75.svg) for each filter. | 
 | 2 | **Rule builder** | You build your derived field sequentially using one or more rules. A rule is a specific implementation of a function and is therefore always associated with only one function. You create a rule by dragging and dropping a function into the rule builder. The function type determines the interface of the rule.<br/>See the [Rule interface](#rule-interface) for more information. <br/>You can insert a function at the start, end, or in between rules already available in the rule builder. The last rule in the rule builder determines the final output of the derived field. |
 | 3 | **[!UICONTROL **Field Settings**]** | You can name and describe your derived field and inspect its field type. | 
 | 4 | **[!UICONTROL **Final Output**]** | This area shows an on-the-fly updated preview of output values, based on data over the last 30 days and the changes you make to the derived field in the rule builder. |
@@ -59,9 +59,9 @@ When you define a rule in the rule builder, you use the rule interface.
 |  | Name | Description |
 |---------|----------|--------|
 | A | **Rule Name** | By default the rule name is **Rule X** (X referring to a sequence number). To edit the name of a rule, select its name and type in the new name, for example `Query Parameter`. |
-| B | **Function Name** | The selected function name for the rule, for example [!DNL URL PARSE]. When the function is the last in the sequence of functions and determines the final output values, the function name is followed by [!DNL - FINAL OUTPUT], for example [!DNL URL PARSE - FINAL OUTPUT]. <br/>To show a popup with more information on the function, select ![Help icon](assets/Smock_HelpOutline_18_N.svg). |
+| B | **Function Name** | The selected function name for the rule, for example [!UICONTROL URL PARSE]. When the function is the last in the sequence of functions and determines the final output values, the function name is followed by [!UICONTROL - FINAL OUTPUT], for example [!UICONTROL URL PARSE - FINAL OUTPUT]. <br/>To show a popup with more information on the function, select ![Help icon](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Rule Description** | You can optionally add a description to a rule.<br/>Select ![More icon](assets/More.svg), then select **[!UICONTROL **Add Description**]** to add a description or **[!UICONTROL **Edit Description**]** to edit an existing description.<br/>Use the editor to enter a description. You can use the toolbar to format the text (using style selector, bold, italic, underline, right, left, centered, color, number list, bullet list) and adding links to external information. <br/>To finish editing the description, click outside of the editor. |
-| D | **Function Area** | Defines the logic of the function. The interface depends on the type of function. See [Function reference](#function-reference) on detailed information for each of the functions supported. |
+| D | **Function Area** | Defines the logic of the function. The interface depends on the type of function. The dropdown for [!UICONTROL Field] or [!UICONTROL Value] shows all categories of fields (rules, standard fields, fields) available, based on the type of input the function expects. See [Function reference](#function-reference) on detailed information for each of the functions supported. |
 
 {style="table-layout:auto"}
 
@@ -155,7 +155,7 @@ For each supported function, find details below on:
     - input data type: type of data supported,
     - input: possible values for input,
     - included operators: operators supported for this function (if any),
-    - limit: maximum number of rules (with this function) you can use in a derived field,
+    - limitations: limitations that apply for this specific function,
     - output.
 
 -   use cases, including:
@@ -168,7 +168,7 @@ For each supported function, find details below on:
 
 <!-- Concatenate -->
 
-### [!DNL Concatenate]
+### Concatenate
 
 Combines two or more fields, derived fields, or user-entered values into a single field with defined delimiters.
 
@@ -176,9 +176,9 @@ Combines two or more fields, derived fields, or user-entered values into a singl
 
 ## Specifications {#concatenate-io}
 
-| Input Data Type | Input | Included Operators | Limit | Output |
-|---|---|---|:--:|---|
-| <p>String</p> | <ul><li>Two or more values to combine<ul><li>Fields</li><li>Derived value from a previous rule</li><li>User-entered value</li></ul></li><li>Delimiters<ul><li>Input or selection of a delimiter for each value</li></ul></li> </ul> | <p>N/A</p>| <p>2</p> | <p>New derived field</p> |
+| Input Data Type | Input | Included Operators | Limitations | Output |
+|---|---|---|---|---|
+| <p>String</p> | <ul><li>For each [!UICONTROL Value]:<ul><li>Rule</li><li>Standard field</li><li>Field</li><li>User-entered input</li></ul></li><li>For each [!UICONTROL Delimiter]:<ul><li>User-entered input</li></ul></li> </ul> | <p>N/A</p>| <p>2 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -228,7 +228,7 @@ The desired report should look like:
 
 You define a new [!UICONTROL Origin - Destination] derived field. You use the [!UICONTROL CONCATENATE] function to define a rule to concatenate the [!UICONTROL Original] and [!UICONTROL Destination] fields using the `-` [!UICONTROL Delimiter].
 
-![[!DNL Concatenate] rule](assets/concatenate.png)
+![[Concatenate rule](assets/concatenate.png)
 
 ### Data after {#concatenate-dataafter}
 
@@ -246,7 +246,7 @@ You define a new [!UICONTROL Origin - Destination] derived field. You use the [!
 
 <!-- CASE WHEN -->
 
-### [!DNL Case When]
+### Case When
 
 Applies conditionals, based on defined criteria from one or more fields. These criteria are then used to define the values in a new derived field, based on the sequence of the conditions.
 
@@ -254,12 +254,11 @@ Applies conditionals, based on defined criteria from one or more fields. These c
 
 ## Specifications {#casewhen-io}
 
-| Input Data Type | Input | Included Operators | Limit | Output |
-|---|---|---|:---:|---|
-| <ul><li>String</li><li>Numeric</li><li>Date/Date-Time</li></ul> | <ul><li>Input Fields</li><li>Criteria</li></ul> | <p><u>Strings</u></p><ul><li>Equals</li><li>Equals any term</li><li>Contains the phrase</li><li>Contains any term</li><li>Contains all terms</li><li>Starts with</li><li>Starts with any term</li><li>Ends with</li><li>Ends with any term</li><li>Does not equal</li><li>Does not equal any term</li><li>Does not contain the phrase</li><li>Does not contain any term</li><li>Does not contain all terms</li><li>Does not start with</li><li>Does not start with any term</li><li>Does not end with</li><li>Does not end with any term</li><li>Is set</li><li>Is not set</li></ul><p><u>Numeric</u></p><ul><li>Equals</li><li>Does not equal</li><li>Is greater than</li><li>Is greater than or equal to</li><li>Is less than</li><li>Is less than or equal to</li><li>Is set</li><li>Is not set</li></ul><p><u>Dates</u></p><ul><li>Equals</li><li>Does not equal</li><li>Is later than</li><li>Is later than or equal to</li><li>Is before</li><li>Is before or equal to</li><li>Is set</li><li>Is not set</li></ul> | <p>5</p> |<p>New derived field</p> |
+| Input Data Type | Input | Included Operators | Limitations | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>For each [!UICONTROL If], [!UICONTROL Else If] container:</p><ul><li>[!UICONTROL Value]</li><ul><li>Rule</li><li>Standard field</li><li>Field</li></ul><li>[!UICONTROL Criterion] (see included operators, based on selected value type)</li></ul></li><li>For each [!UICONTROL Then set value to], [!UICONTROL Otherwise set value to]:</p><ul><li>[!UICONTROL Value]</li><ul><li>Rule</li><li>Standard field</li><li>Field</li></ul></ul></li></ul> | <p>Strings</p><ul><li>Equals</li><li>Equals any term</li><li>Contains the phrase</li><li>Contains any term</li><li>Contains all terms</li><li>Starts with</li><li>Starts with any term</li><li>Ends with</li><li>Ends with any term</li><li>Does not equal</li><li>Does not equal any term</li><li>Does not contain the phrase</li><li>Does not contain any term</li><li>Does not contain all terms</li><li>Does not start with</li><li>Does not start with any term</li><li>Does not end with</li><li>Does not end with any term</li><li>Is set</li><li>Is not set</li></ul><p>Numeric</p><ul><li>Equals</li><li>Does not equal</li><li>Is greater than</li><li>Is greater than or equal to</li><li>Is less than</li><li>Is less than or equal to</li><li>Is set</li><li>Is not set</li></ul><p>Dates</p><ul><li>Equals</li><li>Does not equal</li><li>Is later than</li><li>Is later than or equal to</li><li>Is before</li><li>Is before or equal to</li><li>Is set</li><li>Is not set</li></ul> | <ul><li>5 functions per derived field</li><li>200 operators per derived field. An example of one single operator is 'Referring Domain contains google'. </li></ul> |<p>New derived field</p> |
 
 {style="table-layout:auto"}
-
 
 ## Use case 1 {#casewhen-uc1}
 
@@ -288,7 +287,7 @@ In case your site receives the following sample events, containing [!UICONTROL R
 
 ### Data before {#casewhen-uc1-databefore}
 
-| [!UICONTROL Referrer]| [!DNL Page URL] |
+| [!DNL Referrer]| [!DNL Page URL] |
 |----|----|
 | `https://facebook.com` | `https://site.com/home` |
 | `https://abc.com` | `https://site.com/?cid=ds_12345678` |
@@ -305,7 +304,7 @@ You define a new `Marketing Channel` derived field. You use the [!UICONTROL CASE
 
 Note the usage of the function [!UICONTROL URL PARSE] to define rules to fetch the values for `Page Url` and `Referring Url` before the [!UICONTROL CASE WHEN] rules are applied.
 
-![[!DNL Case when] rule 1](assets/case-when-1.png)
+![Case when rule 1](assets/case-when-1.png)
 
 ### Data after {#casewhen-uc1-dataafter}
 
@@ -359,7 +358,7 @@ Your site collects the following values for your [!DNL Product Finding Methods] 
 
 You define a `Product Finding Methods (new)` derived field. You create the following [!UICONTROL CASE WHEN] rules in rule builder. These rules apply logic to all possible variations of the old [!UICONTROL Product Finding Methods] field values for `search` and `browse` using the [!UICONTROL Contains the phrase] criterion.
 
-![[!DNL Case When] rule 2](assets/case-when-2.png)
+![Case When rule 2](assets/case-when-2.png)
 
 ### Data after {#casewhen-uc2-dataafter}
 
@@ -432,7 +431,7 @@ Your desired report should look like:
 
 You define a `Trip Duration (bucketed)` derived field. You create the following [!UICONTROL CASE WHEN] rule in rule builder. This rule applies logic to bucket the old [!UICONTROL Trip Duration] field values into three values: `short trip`, `medium  trip`, and `long trip`.
 
-![[!DNL Case When] rule 3](assets/case-when-3.png)
+![Case When rule 3](assets/case-when-3.png)
 
 
 ### Data after {#casewhen-uc3-dataafter}
@@ -480,7 +479,7 @@ The following constraints do apply and are enforced when *selecting* and *settin
 
 <!-- FIND AND REPLACE -->
 
-### [!DNL Find and Replace]
+### Find and Replace
 
 Finds all values in a selected field and replaces those values with a different value in a new derived field.
 
@@ -488,9 +487,9 @@ Finds all values in a selected field and replaces those values with a different 
 
 ## Specifications {#findreplace-io}
 
-| Input Data Type | Input | Included Operators | Limit | Output |
-|---|---|---|:---:|---|
-| <p>String</p> | <ul><li><span>'When to replace' field criteria</span></li><li><span>'Replace with' field value</span><ul><li><span>User-entered</span></li><li><span>Separate field</span></li></ul></li></ul> | <p><u>Strings</u></p><ul><li>Find All and Replace All</li></ul> | <p>1</p> | <p>New derived field</p> |
+| Input Data Type | Input | Included Operators | Limitations | Output |
+|---|---|---|---|---|
+| <p>String</p> |<ul><li>For criteria:<ul><li>[!UICONTROL Value]<ul><li>Rule</li><li>Standard field</li><li>Field</li></ul></li></ul></li><li>For each [!UICONTROL Find all], [!UICONTROL and replace all with]:<ul><li>[!UICONTROL Value]</li><ul><li>User-entered input</li></ul></li></ul></ul> | <p>Strings</p><ul><li>[!UICONTROL Find all], [!UICONTROL and replace all with]</li></ul> | <p>5 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -531,7 +530,7 @@ You have received some malformed values for your external marketing channels rep
 
 You define an `Email Marketing (updated)` derived field. You use the [!UICONTROL FIND AND REPLACE] function to define a rule to find and replace all occurrences of `email%20marketing` with `email marketing`.
 
-![[!DNL Find and Replace] rule](assets/find-and-replace.png)
+![Find and Replace rule](assets/find-and-replace.png)
 
 ### Data after {#findreplace-uc-dataafter}
 
@@ -550,7 +549,7 @@ You define an `Email Marketing (updated)` derived field. You use the [!UICONTROL
 
 <!-- LOOKUP -->
 
-### [!DNL Lookup]
+### Lookup
 
 Defines a set of lookup values that are replaced by corresponding values.
 
@@ -559,9 +558,9 @@ Defines a set of lookup values that are replaced by corresponding values.
 
 ## Specifications {#lookup-io}
 
-| Input Data Type | Input | Included Operators | Limit | Output |
-|---|---|---|:---:|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>Single field</li><li>Lookup file<ul><li>Key Column</li><li>New Field Column</li></ul></li></ul> | <p>N/A</p> | <p>5</p> | <p>New derived field</p> |
+| Input Data Type | Input | Included Operators | Limitations | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>For [!UICONTROL Field to apply lookup]:<ul><li>Rule</li><li>Standard field</li><li>Field</li></ul></li><li>For [!UICONTROL When value equals] and [!UICONTROL Replace values with]:</p><ul><li>User-entered input</li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -617,7 +616,7 @@ You are collecting [!DNL Hotel ID] in a dimension but would like to create a [!D
 
 You define a `Hotel Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule where you can look up values of the [!UICONTROL Hotel ID] field and replace with new values.
 
-![[!DNL Lookup] rule 1](assets/lookup-1.png)
+![Lookup rule 1](assets/lookup-1.png)
 
 ### Data after {#lookup-uc1-dataafter}
 
@@ -652,7 +651,7 @@ You have collected URLs instead of the friendly page name for several pages. Thi
 
 You define a `Page Name (updated)` derived field. You use the [!UICONTROL LOOKUP] function to define a rule where you can look up values of your existing [!UICONTROL Page Name] field and replace with updated correct values.
 
-![[!DNL Lookup] rule 2](assets/lookup-2.png)
+![DNL Lookup rule 2](assets/lookup-2.png)
 
 ### Data after {#lookup-uc2-dataafter}
 
@@ -670,7 +669,7 @@ You define a `Page Name (updated)` derived field. You use the [!UICONTROL LOOKUP
 
 <!-- URL PARSE -->
 
-### [!DNL URL Parse]
+### URL Parse
 
 Parses out different parts of a URL including protocol, host, path, or query parameters.
 
@@ -679,8 +678,8 @@ Parses out different parts of a URL including protocol, host, path, or query par
 ## Specifications {#urlparse-io}
 
 | Input Data Type | Input | Included Operators | Limit | Output |
-|---|---|---|:---:|---|
-| <ul><li>String</li></ul> | <ul><li>Single field</li><li>Parsing option<ul><li>Get protocol</li><li>Get host</li><li>Get path</li><li>Get query value<ul><li>Query param</li></ul></li><li>Get hash value</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>5</p> | <p>New derived field</p> |
+|---|---|---|---|---|
+| <ul><li>String</li></ul> | <ul><li>For [!UICONTROL Field]:</li><ul><li>Rule</li><li>Standard field</li><li>Field</li></ul><li>For [!UICONTROL Option]:<ul><li>[!UICONTROL Get protocol]</li><li>[!UICONTROL Get host]</li><li>[!UICONTROL Get path]</li><li>[!UICONTROL Get query string value]<ul><li>[!UICONTROL Query parameter]:<ul><li>User-entered input</li></ul></li></ul></li><li>[!UICONTROL Get hash value]</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -704,7 +703,7 @@ You only want use the referring domain from the referring URL as part of a marke
 
 You define a  `Referring Domain` derived field. You use the [!UICONTROL URL PARSE] function to define a rule to fetch the host from the [!UICONTROL Referring URL] field and store that in the new derived field.
 
-![[!DNL Url Parse] rule 1](assets/url-parse-1.png)
+![ Url Parse rule 1](assets/url-parse-1.png)
 
 ### Data after {#urlparse-uc1-dataafter}
 
@@ -736,7 +735,7 @@ You want to use the value of the `cid` parameter of a query string in a [!DNL Pa
 
 You define a `Query String CID` derived field. You use the [!UICONTROL URL PARSE] function to define a rule to fetch the value of the query string parameter in the [!UICONTROL Page URL] field, specifying `cid` as the query parameter. The output value is stored in the new derived field.
 
-![[!DNL Url Parse] rule 2](assets/url-parse-2.png)
+![Url Parse rule 2](assets/url-parse-2.png)
 
 ### Data after {#urlparse-uc2-dataafter}
 
@@ -749,3 +748,10 @@ You define a `Query String CID` derived field. You use the [!UICONTROL URL PARSE
 {style="table-layout:auto"}
 
 +++
+
+## Limitations
+
+The following limitations apply to the Derived field functionality:
+
+- You can use a maximum of 100 different schema fields (not including standard fields) when defining rules for a derived field.
+- You can have a maximum of 100 derived field per CJA connection.
