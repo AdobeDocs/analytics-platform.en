@@ -5,8 +5,8 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
+exl-id: 802a8f0b-10c2-4adc-a4ec-25f3d28f3002
 ---
-
 # Select a data view
 
 You can select a data view from the drop-down list or select a data view from a cell and automatically update your data block with a new data view.
