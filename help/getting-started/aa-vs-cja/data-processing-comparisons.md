@@ -39,7 +39,7 @@ The table below defines terminology for the different types of processing logic 
 | Calculated metrics | Evaluation of customer-created custom metrics which can be based on complex formulas including segments and filters. | Example: # of people who bought red shoes. |
 | Attribution logic | Logic to calculate attribution. | Example: eVar persistence. |
 | Component Settings | Applying customizations to metrics or dimensions, like attribution, behaviour, format, and others | Example: value bucketing to combine numeric values based on a range |
-| Custom fields | Logic applies to schema or standard fields as part of defining components in a Data view. | Example: creating a new marketing channel dimension |
+| Derived fields | Logic applies to schema or standard fields as part of defining components in a Data view. | Example: creating a new marketing channel dimension |
 
 {style="table-layout:auto"}
 
