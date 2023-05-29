@@ -78,7 +78,7 @@ After you have created an audience, Adobe creates an Experience Platform streami
 
 At several points prior to, during, and after audience publishing, latencies can occur. Here is an overview of possible latencies.
 
-![latency from AEP to CJA](assets/latency-diagram.png)
+![Latency from AEP to CJA](assets/latency-diagram.png)
 
 | # | Latency point | Latency duration |
 | --- | --- | --- |
