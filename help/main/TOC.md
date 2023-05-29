@@ -234,19 +234,19 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Manage filters](../components/filters/manage-filters.md)
         + [Operators](../components/filters/operators.md)
 
-    +   Calculated Metrics {#cja-calcmetrics}
+    +   Calculated metrics {#cja-calcmetrics}
         +   [Calculated metrics overview](../components/calc-metrics/calc-metr-overview.md)
-        +   Calculated Metrics workflow {#cm-workflow}
+        +   Calculated metrics workflow {#cm-workflow}
             + [Calculated metrics workflow](../components/calc-metrics/cm-workflow/cm-workflow.md)
             + [Find metrics](../components/calc-metrics/cm-workflow/cm-finding.md)
-            + [Build Metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
-            + [Metric Type and Attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-            + [Build a simple "Page Views per Visits" metric](../components/calc-metrics/cm-workflow/cm-pvv.md)
+            + [Build metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+            + [Metric type and attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
+            + [Build a "Page Views per Visits" metric](../components/calc-metrics/cm-workflow/cm-pvv.md)
+            + [Build a "Participation" metric](../components/calc-metrics/cm-workflow/participation-metric.md)
             + [Filtered metrics](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
             + [Stack and replace segments](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
             + [Filtered and weighted metrics](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
             + [Use functions](../components/calc-metrics/cm-workflow/cm-using-functions.md)
-            + [Participation Metric](../components/calc-metrics/cm-workflow/participation-metric.md)
             + [Tag calculated metrics](../components/calc-metrics/cm-workflow/cm-tagging.md)
             + [Approve calculated metrics](../components/calc-metrics/cm-workflow/cm-approving.md)
             + [Share calculated metrics](../components/calc-metrics/cm-workflow/cm-sharing.md)

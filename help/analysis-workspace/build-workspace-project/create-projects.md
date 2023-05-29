@@ -3,6 +3,7 @@ description: Learn how to create a project in Analysis Workspace
 title: Create projects
 feature: CJA Workspace Basics
 role: User, Admin
+exl-id: f5ea0a1f-5dd6-4c73-b316-33c15ca5443c
 ---
 # Create projects
 
@@ -86,4 +87,3 @@ To add a component:
 As you create an analysis in Analysis Workspace, your work is [automatically saved](/help/analysis-workspace/build-workspace-project/save-projects.md). 
 
 When you finish building out the project and it's gathering actionable insights, the project is ready to be consumed by others. You can share the project with users and groups in your organization, or even with people outside your organization. For information about sharing a project, see [Share projects](/help/analysis-workspace/curate-share/share-projects.md).
-

@@ -1,6 +1,7 @@
 ---
 title: User growth
 description: Track the growth of your product's user base.
+exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 ---
 # User growth
 

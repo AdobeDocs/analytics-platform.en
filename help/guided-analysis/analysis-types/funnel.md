@@ -1,6 +1,7 @@
 ---
 title: Funnel
 description: Identify areas of friction across a sequence of steps.
+exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 ---
 # Funnel
 
@@ -38,4 +39,4 @@ Funnel offers the following chart settings. You can adjust the chart settings us
 
 ## Date range
 
-The starting and ending date. Date range presets are available for your convenience, or you can use the calendar selector to set the exact desired date. 
+The starting and ending date. Date range presets are available for your convenience, or you can use the calendar selector to set the exact desired date.

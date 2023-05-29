@@ -6,6 +6,7 @@ feature: Data Views
 hide: yes
 hidefromtoc: yes
 badgeCJASQLConnector: label="New Feature" type="Positive"
+exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
 ---
 # SQL Connector
 
@@ -388,4 +389,3 @@ These functions can be used on dimensions in the `SELECT`, `WHERE` clause, or in
 | [DATE_TRUNC(granularity, date, or date-time)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Generate a dynamic dimension identity on the passed in field.<br/>Supported string granularities are: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`', `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`, or `'MINUTE'`. |
 
 {style="table-layout:auto"}
-
