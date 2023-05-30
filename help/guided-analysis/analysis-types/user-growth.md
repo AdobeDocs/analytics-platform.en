@@ -20,7 +20,7 @@ Use cases for this analysis type include:
 
 * **Performance evaluation**: User growth allows you to assess the overall performance of your product in terms of acquiring new users. By tracking growth trends, you can better understand if your product is attracting and retaining users at a desired pace.
 * **User retention and churn:** User growth provides a clear visualization around periods of high or low user retention. Recognizing these periods of high or low retention can help you make product decisions to encourage high retention or help minimize churn.
-* **Campaign assessment**: Viewing user growth specific to a specific campaign can help you understand not only how much traffic it generated, but also how well the campaign helped users remain engaged.
+* **Campaign assessment**: Viewing user growth around a specific campaign can help you understand not only how much traffic it generated, but also how well the campaign helped users remain engaged.
 
 [Screenshot of user growth]
 
@@ -28,8 +28,8 @@ Use cases for this analysis type include:
 
 The query rail allows you to configure the following components:
 
-* **Events**: The event that you want to measure. Since this analysis type is user-based, a user can touch the event once within the set date granularity to be counted as an active user. You can include only one event.
-* **People**: The segment that you want to measure. You can include only one segment.
+* **Events**: The event that you want to measure. Since this analysis type is user-based, a user can touch the event once within the set date granularity to be counted as an active user. You can include only one event in a query.
+* **People**: The segment that you want to measure. You can include only one segment in a query.
 
 ## View types
 
