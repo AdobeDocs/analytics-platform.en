@@ -7,7 +7,11 @@ feature: Data Views
 ---
 # Attribution component settings
 
-Attribution gives you the ability to customize how dimension items get credit for success events. For example:
+Attribution gives you the ability to customize how dimension items get credit for success events. 
+
+![](../assets/attribution-settings.png)
+
+For example:
 
 1. A person to your site clicks a paid search link to one of your product pages. They add the product to their cart, but do not purchase it.
 2. The next day, the see a social media post from one of their friends. They click the link, then complete the purchase.
@@ -16,7 +20,7 @@ In some reports, you might want the order attributed to Paid search. In other re
 
 This data view component setting lets you set a default attribution model for a metric. You can override a given metric's attribution model while working in Analysis Workspace.
 
-![Attribution](../assets/attribution-settings.png)
+
 
 If your organization requires that a metric has multiple attribution settings, you can do one of the following:
 
@@ -39,7 +43,7 @@ An attribution model determines which dimension items get credit for a metric wh
 | ![Inverse J](../assets/attribution-models/inverse_j.png) | Inverse J | Gives 60% credit to the first touch point, 20% credit to the last touch point, and divides the remaining 20% to any touch points in between. For conversions with a single touch point, 100% credit is given. For conversions with two touch points, 75% credit is given to the first interaction, and 25% credit is given to the last. Similar to J-Shaped, this attribution model favors the first and last interactions, but more heavily favors the first interaction. |
 | ![Time Decay](../assets/attribution-models/time_decay.png) | Time Decay | Follows an exponential decay with a custom half-life parameter, where the default is 7 days. The weight of each channel depends on the amount of time that passed between the touch point initiation and the eventual conversion. The formula used to determine credit is `2^(-t/halflife)`, where `t` is the amount of time between a touch point and a conversion. All touch points are then normalized to 100%. Ideal for scenarios where you want to measure attribution against a specific and significant event. The longer a conversion happens after this event, the less credit is given. |
 | ![Custom](../assets/attribution-models/custom.png) | Custom | Allows you to specify the weights that you want to give to first touch point, last touch point, and any touch points in between. Values specified are normalized to 100% even if the custom numbers entered do not add to 100. For conversions with a single touch point, 100% credit is given. For interactions with two touch points, the middle parameter is ignored. The first and last touch points are then normalized to 100%, and credit is assigned accordingly. This model is ideal for analysts who want full control over their attribution model and have specific needs that other attribution models do not fulfill. |
-| ![Algorithmic](../assets/attribution-models/algorithmic.png) | Algorithmic | Uses statistical techniques to dynamically determine the optimal allocation of credit for the selected metric. The algorithm used for attribution is based on the Harsanyi Dividend from cooperative game theory. The Harsanyi dividend is a generalization of the Shapley value solution (named after Lloyd Shapley, a Nobel Laureate economist) to distributing credit among players in a game with unequal contributions to the outcome.<br>At a high level, attribution is calculated as a coalition of players to which a surplus must be equitably distributed. Each coalition's surplus distribution is determined according to the surplus that was previously created by each subcoalition (or previously participating dimension items) recursively. For more details, see John Harsanyi’s and Lloyd Shapley’s original papers:<br>Shapley, Lloyd S. (1953). A value for n-person games. *Contributions to the Theory of Games, 2(28)*, 307-317.<br>Harsanyi, John C. (1963). A simplified bargaining model for the n-person cooperative game. *International Economic Review 4(2)*, 194-220. |
+| ![Algorithmic](../assets/attribution-models/algorithmic.png) | Algorithmic | Uses statistical techniques to dynamically determine the optimal allocation of credit for the selected metric. The algorithm used for attribution is based on the Harsanyi Dividend from cooperative game theory. The Harsanyi dividend is a generalization of the Shapley value solution (named after Lloyd Shapley, a Nobel Laureate economist) to distributing credit among players in a game with unequal contributions to the outcome.<br>At a high level, attribution is calculated as a coalition of players to which a surplus must be equitably distributed. Each coalition's surplus distribution is determined according to the surplus that was previously created by each subcoalition (or previously participating dimension items) recursively. For more details, see John Harsanyi's and Lloyd Shapley's original papers:<br>Shapley, Lloyd S. (1953). A value for n-person games. *Contributions to the Theory of Games, 2(28)*, 307-317.<br>Harsanyi, John C. (1963). A simplified bargaining model for the n-person cooperative game. *International Economic Review 4(2)*, 194-220. |
 
 {style="table-layout:auto"}
 
