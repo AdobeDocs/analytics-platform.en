@@ -9,6 +9,8 @@ feature: Data Views
 
 Metric deduplication lets you configure a metric to only count values non-repetitively.
 
+![Metric deduplication](../assets/metric-deduplication.png)
+
 | Setting | Description |
 | --- | --- |
 | [!UICONTROL Metric deduplication] | A checkbox that allows you to enable metric deduplication. Disabled by default. |

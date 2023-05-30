@@ -9,9 +9,9 @@ feature: Data Views
 
 When creating or editing a data view, value bucketing allows you to combine numeric values based on a range. It is only available for dimensions using Integer or Double schema data types.
 
-Value bucketing is valuable when you want to group ranges together instead of treating every unique number as a separate dimension item. For example, a bucket of 'Between 5 and up to 10' appears as a line item '5 to 10' in Analysis Workspace.
-
 ![Value bucketing](../assets/value-bucketing.png)
+
+Value bucketing is valuable when you want to group ranges together instead of treating every unique number as a separate dimension item. For example, a bucket of 'Between 5 and up to 10' appears as a line item '5 to 10' in Analysis Workspace.
 
 If you would like the flexibility of reporting on both a bucketed and non-bucketed dimension, drag two copies of the component into the available dimensions list. Enable bucketing on one dimension, and disable it on the other.
 

@@ -9,9 +9,9 @@ exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 
 [!UICONTROL Substring] component settings allow you to perform multiple string manipulation methods to obtain the desired dimension items in reports.
 
-[!UICONTROL Substring] is available only on dimensions, and is retroactive to the data it is applied to. It is an immediate data transformation that happens before filtering or other analysis operations are applied.
-
 ![Substring settings](../assets/substring-settings.png)
+
+[!UICONTROL Substring] is available only on dimensions, and is retroactive to the data it is applied to. It is an immediate data transformation that happens before filtering or other analysis operations are applied.
 
 ## From the Left/Right
 
