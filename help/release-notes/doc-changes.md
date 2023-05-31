@@ -13,6 +13,8 @@ The following updates were made to the CJA documentation since its inception.
 
 | Feature | Description |
 | --- | --- |
+| **June 2023** | |
+| Calculated metrics updates | Updates were made to various articles related to calculated metrics, including updating screen shots and steps in procedures. These changes were made to bring documentation inline with current CJA functionality. |
 | **May 2023** | |
 | Analysis Workspace overview | Updated [Analysis Workspace overview](/help/analysis-workspace/home.md) to include more general overview information and links to relevant content. |
 | Create projects | Created a new article that explains in detail how to [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md) in Analysis Workspace. |
