@@ -29,7 +29,7 @@ You can configure the Media Average Minute Audience panel using these input sett
 | Setting | Description |
 |---------|------------|
 | Panel date range | The panel date range default is Today. You may edit it to view a single day or many months at a time. <br></br> This visualization is limited to 1440 rows of data (for example, 24-hours at minute-level granularity). If a date range and granularity combination results in more than 1440 rows, the granularity is automatically updated to accommodate the full date range. |
-| Drag a segment here (or any other components) | Like other panels, this setting filters your selections based on segments you've created. This is a great way to look at specific platforms, live streams, or other common media segments. |
+| Drag a filter here (or any other component) | Like other panels, this setting filters your selections based on filters you've created. This is a great way to look at specific platforms, live streams, or other common media segments. |
 | Calculate metric for | This setting enables you to choose whether you want to see the average minute audience for a specific piece of content, by selecting *specific content*, or if you want to see the average minute audience for a specific period of time, by selecting *custom time period*. <br></br>Specific content works only if the duration has been updated using Classifications. If the duration is unavailable, or if you want to view the average minute audience for a time series with multiple pieces of content or content without a specific assigned duration (like during a live stream or event), then you should select custom time period. This setting changes the workflow and report output. |
 
 ### Specific content

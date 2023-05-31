@@ -61,7 +61,7 @@ Navigation in [!UICONTROL Analysis Workspace] works top > down, and left > right
 | `[Alt + 1]` | New freeform table |
 | `[Ctrl + Shift + C]` | New calculated metric |
 | `[Ctrl + Shift + D]` | New date range |
-| `[Ctrl + Shift + E]` | New segment |
+| `[Ctrl + Shift + E]` | New filter |
 | `[Ctrl + Z]` | Undo |
 | `[Component drag + Shift]` | Create a drop-down filter |
 
