@@ -69,7 +69,7 @@ To share a specific project role with users or groups in your organization:
 
 1. Choose whether to enable the following options when sharing the project:
 
-   * **Share embedded project components:** Shares segments, calculated metrics, and date ranges with all recipients. After being shared, these components will appear in the Components drop-down of the recipient's Workspace. This setting does not persist - it is a one-time action at the time of sharing.
+   * **Share embedded project components:** Shares filters, calculated metrics, and date ranges with all recipients. After being shared, these components will appear in the Components drop-down of the recipient's Workspace. This setting does not persist - it is a one-time action at the time of sharing.
 
    * **Set as landing page for recipients:** Sets this page as the landing page for recipients. This setting does not persist - it is a one-time action at the time of sharing.
  

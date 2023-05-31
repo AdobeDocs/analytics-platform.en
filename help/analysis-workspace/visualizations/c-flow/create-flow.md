@@ -92,7 +92,7 @@ Above each column, a filter appears when you hover over it. By clicking the filt
 |--- |--- |
 | [!UICONTROL Focus on this node] | Change the focus to the selected node. The focus node appears at the center of the Flow diagram. |
 | [!UICONTROL Start Over] | Returns you to the Freeform diagram builder, where you can build a new Flow diagram. |
-| [!UICONTROL Create Segment from this point in flow] | Create a segment. This takes you into the Segment Builder, where you can configure the new segment. |
+| [!UICONTROL Create Filter from this point in flow] | Create a filter. This takes you into the Filber builder, where you can configure the new filter. |
 | [!UICONTROL Breakdown] | Break the node down by available Dimensions, Metrics, or Time. |
 | [!UICONTROL Trend] | Create a trended diagram for the node. |
 | [!UICONTROL Expand entire column] | Expand a column to show all nodes. By default, only the top five nodes display. |

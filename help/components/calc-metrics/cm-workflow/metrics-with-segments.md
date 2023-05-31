@@ -1,6 +1,6 @@
 ---
-description: Segmenting on individual metrics allows you to make metric comparisons within the same report.
-title: Segmented metrics
+description: Filtering on individual metrics allows you to make metric comparisons within the same report.
+title: Filtered metrics
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
 ---
@@ -18,20 +18,30 @@ Let's say you want to compare different aspects of a "German Visitors" filter to
 * As a percentage of total persons, how many German persons browse certain pages, versus International persons? 
 * Where are the biggest differences in terms of which content is accessed by these different filters?
 
-1. If you don't have a comparable filter, create an adhoc segment right in the Calculated Metric Builder called "German Visitors", where "Countries" equals "Germany". Just drag the Countries dimension into the Definition canvas and select Germany as the value:
+Build and save a metric called "German Visitors" and a metric called "International Visitors":
+
+1. Create an adhoc filter in the Calculated metric builder called "German Visitors", where "Countries" equals "Germany". Drag the Countries dimension into the Definition canvas and select [!UICONTROL **Germany**] as the value:
 
    ![](assets/segment-from-dimension.png)
 
    >[!NOTE]
    >
-   >You can also do this in the [Filter Builder](/help/components/filters/create-filters.md), but we have simplified the workflow by making dimensions available in the Calculated Metric Builder. "Adhoc" means that the segment is not visible in the **[!UICONTROL Filters]** list in the left rail. You can however, make it public by hovering over the "i" icon next to it and clicking **[!UICONTROL Make public]**.
+   >You can also do this in the [Filter Builder](/help/components/filters/create-filters.md), but we have simplified the workflow by making dimensions available in the Calculated metric builder. "Adhoc" means that the filter is not visible in the **[!UICONTROL Filters]** list in the left rail. You can however, make it public by hovering over the "i" icon next to it and clicking **[!UICONTROL Make public]**.
 
-1. If you don't have a comparable filter, create a filter called "International Visitors" where "Countries" does not equal "Germany." 
-1. Build and save a metric called "German Visitors" by dragging the Germany filter into the Definition canvas and dragging the Unique Visitors metric within it:
+1. Drag the Germany filter into the Definition canvas and drag the Unique Visitors metric within it:
 
    ![](assets/german-visitors.png)
 
-1. Repeat Step 3 with the International Visitors segment and the Unique Visitors metric to create an International Visitors metric.
+1. Select [!UICONTROL **Save**] to save the calculated metric.
+
+1. Create an adhoc filter in the Calculated metric builder called "international Visitors", where "Countries" does not equal "Germany".
+
+   Drag the Countries dimension into the Definition canvas, select [!UICONTROL **Germany**] as the value, then select [!UICONTROL **does not equal**] as the operator. 
+
+1. Drag the Unique Visitors metric within it.
+
+1. Select [!UICONTROL **Save**] to save the calculated metric.
+
 1. In Analysis Workspace, drag the **[!UICONTROL Page]** Dimension into a Freeform Table and drag the 2 new calculated metrics next to each other to the top:
 
    ![](assets/workspace-pages.png)

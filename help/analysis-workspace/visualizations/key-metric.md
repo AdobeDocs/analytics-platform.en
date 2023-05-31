@@ -29,7 +29,7 @@ This visualization addresses a variety of common use cases, including:
 
 1. Drag the **[!UICONTROL Key metric summary]** visualization from the **[!UICONTROL Visualizations]** menu in the left rail into a panel.
 
-1. Configure the visualization by selecting a metric, a primary date range, and a comparison date range and a segment (if desired):
+1. Configure the visualization by selecting a metric, a primary date range, and a comparison date range and a filter (if desired):
 
    ![key metric configuration](assets/key-metric-config.png)
 
@@ -38,7 +38,7 @@ This visualization addresses a variety of common use cases, including:
    | **[!UICONTROL Metric]** | Select the metric you want to examine. All metrics are supported. |
    | **[!UICONTROL Primary date range]** | The current date range for the freeform table.  |
    | **[!UICONTROL Comparison date range]** | The date range to which you want to compare the primary date range. |
-   | **[!UICONTROL Segment (optional)]** | Any segment that you are specifically interested in for this summary.  |
+   | **[!UICONTROL Filter (optional)]** | Any filter that you are specifically interested in for this summary.  |
 
    {style="table-layout:auto"}
 
@@ -87,4 +87,4 @@ After building the visualization, you can still edit the original configuration.
 
    You are now taken back to the original configuration view. 
 
-1. Change the metric, primary date range, comparison date range, or segment as preferred.
+1. Change the metric, primary date range, comparison date range, or filter as preferred.

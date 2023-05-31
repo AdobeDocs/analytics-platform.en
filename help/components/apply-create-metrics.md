@@ -16,7 +16,7 @@ You can either drag a standard metric, calculated metric, or calculated metric t
 >
 >While this is seemingly simple, the use of metrics is rather powerful. You can add metrics to a report by dragging the appropriate metric to the metrics section of a table. You can also break down dimensions by metrics, giving you fine-grained control over the table view. Furthermore, you can insert a metric as a dimension and a dimension as a metric to create an overtime report. Play around with the various components and see what you can do. The possibilities are endless.
 
-Or you can click **[!UICONTROL Components]** > **[!UICONTROL New Metric]**. This will take you to the [Calculated Metric Builder](/help/components/calc-metrics/calc-metr-overview.md), where you can build custom metrics from existing metrics.
+Or you can click **[!UICONTROL Components]** > **[!UICONTROL New Metric]**. This will take you to the [Calculated metric builder](/help/components/calc-metrics/calc-metr-overview.md), where you can build custom metrics from existing metrics.
 
 To make it easier to quickly create calculated metrics, **[!UICONTROL Create metric from selection]** has been added to the column right-click menu in Freeform Tables. This option displays when one or more header column cells are selected.
 
