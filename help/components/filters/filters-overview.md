@@ -26,15 +26,34 @@ Sequential filters let you identify persons based on navigation and page view ac
 
 Here is an example:
 
-![](assets/sequential_fil.png)
+<!--![](assets/sequential_fil.png)-->
 
-| Visit One | Visit Two | Visit Three |
+| Session One | Session Two | Session Three |
 | --- | --- | --- |
-| The person went to the main landing page (A), excluded the campaign page (B), and then viewed the Product page (C).|The person again went to the main landing page (A), excluded the campaign page (B), and went again to the Product page (C), and then to a new page (D). | The person entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product page (G). |
+| The person went to the main landing page A, excluded the campaign page B, and then viewed the Product page C.| The person again went to the main landing page A, excluded the campaign page B, and went again to the Product page C, and then to a new page D. | The person entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product page G. |
 
 ## Filter containers {#containers}
 
 Filters are based on a Person-, Session- and Event-level hierarchy using a nested container model. The nested containers allow you to define person attributes and actions based on rules between and within the containers. 
+
+
+<table style="table-layout: fixed; border: none;">
+
+<tr>
+<td style="background-color: #E5E4E2;" colspan="3" width="200" height="100"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg"/> Person</td>
+</tr>
+
+<tr>
+<td style="background-color: #E5E4E2;" width="200"></td>
+<td style="background-color: #D3D3D3;" colspan="2" width="200" height="100"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Visit_18_N.svg"/> Session</td>
+</tr>
+
+<tr>
+<td style="background-color: #E5E4E2;" width="200" height="100"></td>
+<td style="background-color: #D3D3D3;" width="200" height="100"></td>
+<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg"/> Event</td>
+</tr>
+</table>
 
 >[!NOTE]
 >The Person container was formerly known as the Visitor container. The Session container was called the Visit container, and the Event container used to be the Hit container.

@@ -28,7 +28,7 @@ The main benefits are:
 
 To use this functionality, you have to 
 
--   Enable the [!UICONTROL CJA SQL Connector] in your Experience Platform organization. 
+<!---   Enable the [!UICONTROL CJA SQL Connector] in your Experience Platform organization. -->
 
 -   Configure the functionality for the relevant product profiles, user groups and/or individual users.<br/>
     Users must have access to:
@@ -83,7 +83,7 @@ See [Query Editor UI guide](https://experienceleague.adobe.com/docs/experience-p
 
 ### BI Tools
 
-Currently, the CJA SQL Connector is supported for Power BI and Tableau.
+Currently, the CJA SQL Connector is supported and tested for Power BI and Tableau only. Other BI tools using the PSQL interface might work as well but are not yet supported officially.
 
 +++ Power BI
 
@@ -218,9 +218,9 @@ By default, the schema of your data views uses nested structures, just like the 
 
 See [Query Service SQL reference](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html?lang=en) for the full reference on what type of SQL is supported.
 
-See Patterns table below for an overview of patterns and examples.
+See table below for examples of the SQL you can use.
 
-+++Patterns
++++ Examples
 
 | Pattern | Example |
 |---|---|
