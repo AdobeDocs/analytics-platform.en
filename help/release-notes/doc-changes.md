@@ -14,7 +14,7 @@ The following updates were made to the CJA documentation since its inception.
 | Feature | Description |
 | --- | --- |
 | **June 2023** | |
-| Calculated metrics updates | Updates were made to various articles related to calculated metrics, including updating screen shots and steps in procedures. These changes were made to bring documentation inline with current CJA functionality. |
+| Calculated metrics updates | The following updates were made to calculated metrics documentation in order to align it with current CJA functionality: <ul><li>Updated the list of [default calculated metrics](/help/components/calc-metrics/default-calcmetrics.md) available in CJA</li><li>Updated screen shots and procedures in various calculated metrics articles </li></ul> |
 | **May 2023** | |
 | Deep Linking (Mobile App) documentation | Allows users to send links to scorecards that will lead them directly to the scorecard project in the app. This makes it even easier to share projects and boost engagement from a less technical audience. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
 | Doc on "Select data view from cell" in Report Builder | This feature allows users to select the data view for a data block from a cell. This is helpful if you create a workbook and you have multiple data views that have similar data construction and you want to be able to reuse a workbook multiple times, with different data views. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) |
