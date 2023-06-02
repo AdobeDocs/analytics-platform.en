@@ -123,6 +123,10 @@ You can grant [read-only access](/help/analysis-workspace/curate-share/view-only
 >
 >* If your organization licenses Healthcare Shield, you can share projects only with users who have authenticated either by Single Sign On (SSO) or Adobe ID; you cannot share projects with unauthenticated users. It is your responsibility to use this feature in compliance with your company's internal data governance policies and only share project links that contain Personal Health Information (PHI) with users who have the appropriate permissions.
 
+The following video demonstration and accompanying documentation describe the options associated with sharing a link with anyone:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+
 To share an Analysis Workspace project with anyone:
 
 1. Open the Analysis Workspace project that you want to share.
@@ -143,7 +147,7 @@ To share an Analysis Workspace project with anyone:
 
    * **[!UICONTROL Require Experience Cloud authentication]:** 
    
-     When this option is enabled, only users who can log in to the Adobe Experience Cloud organization where the project that you are sharing was created can access the project.
+     When this option is enabled, the only users who can access the project are those who can log in to the Adobe Experience Cloud organization where the project that you are sharing was created. However, users you share with do not need to have access to Adobe Analytics.
 
      CJA administrators can configure this preference for the company, as described in [Preferences](/help/analysis-workspace/user-preferences.md). You might encounter the following scenarios, depending on how the administrator configured this option:
      
