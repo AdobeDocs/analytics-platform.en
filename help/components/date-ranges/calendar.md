@@ -1,5 +1,5 @@
 ---
-description: In the calendar, you can specify dates and date ranges, or select a preset.
+description: How to specify dates and date ranges, or select a preset.
 title: Calendar and date ranges overview
 feature: Calendar
 solution: Customer Journey Analytics
@@ -7,7 +7,7 @@ exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
 ---
 # Calendar and date ranges overview
 
-In the calendar, you can specify dates and date ranges, or select a preset.
+Using the calendar, you can specify dates and date ranges, or select a preset. Date ranges are a type of component you can use in Workspace projects. They allow you to see data trended over time or see when events happen the most. Date ranges are color coded in purple. Custom date ranges allow you to customize the dates you see in Workspace projects. 
 
 Calendar selections apply at the panel level, but you have the option to apply them to all panels. When you click a date range in Workspace, the interface displays the current calendar month and the previous calendar month. You can adjust these two calendars by clicking the right and left arrows in each respective upper corner.
 
