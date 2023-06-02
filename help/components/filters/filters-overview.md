@@ -74,9 +74,9 @@ The container architecture employed in the Filter Builder defines Person as the 
 The Person container includes every visit and page view for persons within a specified time frame. A filter at the Person level returns the page that meets the condition plus all other pages viewed by the person (and only constrained by defined date ranges). As the most broadly defined container, reports generated at the Person container level returns page views across all visits and lets you generate a multi-visit analysis. Therefore, the Person container is the most susceptible to change based on defined date ranges.
 Person containers can include values based on a person's overall history:
 
-* Days Before First Purchase
-* Original Entry Page
-* Original Referring Domains 
+- Days Before First Purchase
+- Original Entry Page
+- Original Referring Domains 
 
 ### Session container {#session}
 
