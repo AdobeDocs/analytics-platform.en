@@ -1,10 +1,10 @@
 ---
 description: You can download data from Analysis Workspace by copying it, or in PDF and CSV formats.
-title: Download PDF or CSV files
+title: Download project data
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 ---
-# Download PDF or CSV files
+# Download project data
 
 There are several ways to export data from Analysis Workspace. The method you choose depends on what set of data you want to analyze and who needs to access it. 
 

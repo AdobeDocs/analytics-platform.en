@@ -1,12 +1,12 @@
 ---
 description: Send an Analysis Workspace project via email or schedule it for delivery.
 keywords: Analysis Workspace
-title: Schedule projects
+title: Send project data to others
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 ---
-# Schedule projects
+# Send project data to others
 
 From the Workspace **[!UICONTROL Share]** menu, you can send Analysis Workspace projects via email to selected recipients. Files can be sent in CSV or PDF format. 
 
