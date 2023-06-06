@@ -8,7 +8,7 @@ exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 ---
 # Send project data to others
 
-From the Workspace **[!UICONTROL Share]** menu, you can send Analysis Workspace projects via email to selected recipients. Files can be sent in CSV or PDF format. 
+You can export Analysis Workspace project data and send it to selected recipients via email. You can send a file one time, or you can configure files to be sent on a schedule. Files can be sent in CSV or PDF format. 
 
 ## Send file now {#now}
 
@@ -68,7 +68,7 @@ The following are common actions in the Scheduled Projects manager:
 |**[!UICONTROL Delete schedule]**|Select the scheduled project in the list and then click Delete from the menu. This will delete the selected schedule for the project; the project itself will not be deleted.|
 |**[!UICONTROL Add tags]**|Select the scheduled project in the list and then choose "Tag" or "Approve" to organize your schedules and make them easier to search for.|
 |**[!UICONTROL View failed schedules]**|Navigate to the left rail > Other filters > Failed to see schedules that have failed.|
-|**[!UICONTROL View expired schedules]**|Navigate to the left rail > Other filters > Expired to see schedules that have expired. Click the title of the schedule to setup a new deliery schedule.|
+|**[!UICONTROL View expired schedules]**|Navigate to the left rail > Other filters > Expired to see schedules that have expired. Click the title of the schedule to setup a new delivery schedule.|
 |**[!UICONTROL View schedule ID]**|Navigate to column options in the top right and add the Schedule ID column to the table. The scheduled ID is often useful for debugging.|
 
 The Scheduled Projects Manager shows the items that a specific user has created. If the user account is disabled in the application, all scheduled deliveries stop.
@@ -81,32 +81,30 @@ The Scheduled Projects Manager shows the items that a specific user has created.
 
 Adobe uses the password to encrypt scheduled projects, whether they are sent in .pdf or .csv formats.
 
-After your company has purchased the Healthcare Shield SKU and has been enabled for it, the prompt to create a password for a scheduled project pops up under two circumstances:
+After your company has purchased the Healthcare Shield SKU and has been enabled for it, the prompt to create a password for a scheduled project is displayed in the following circumstances:
 
 * When someone creates a new scheduled project.
 
-* When an existing scheduled project is about to be sent. The currently scheduled project will be disabled until password protection is in place. The owner of the scheduled project will receive an email to this effect. 
+* When an existing scheduled project is about to be sent. The currently scheduled project is disabled until password protection is in place. The owner of the scheduled project receives an email informing them of this requirement. 
 
 ![password protection](assets/password.png)
 
 ### Password requirements
 
-The password requirements conform to the Adobe standard, requiring a minimum of 8 characters with at least one number and one special character. 
+The password requirements conform to the Adobe standards, requiring a minimum of 8 characters with at least one number and one special character. 
 
 ### Password-protect a new scheduled project
 
-1. After you have saved your project, go to **[!UICONTROL Share]** > **[!UICONTROL Send file now]**, or [!UICONTROL Share] > **[!UICONTROL Send file on schedule]**.
+1. After you save your project, go to **[!UICONTROL Share]** > **[!UICONTROL Send file now]**, or **[!UICONTROL Share]** > **[!UICONTROL Send file on schedule]**.
 1. Follow the instructions above, under [Send file now](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) or [Send file on schedule](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
 
 ### Password-protect an existing scheduled project 
 
-Prior to the time for which a project is scheduled, the project's owner will receive an email similar to this:
+Before a project is scheduled, the project owner receives an email similar to this:
 
 ![email](assets/email-password.png)
 
-1. Log back into Customer Journey Analytics.
-1. Click **[!UICONTROL View Scheduled Project]**.
+1. Log in to Customer Journey Analytics.
+1. Select **[!UICONTROL View Scheduled Project]**.
 1. In the **[!UICONTROL Edit scheduled project]** dialog, enter and re-enter a password.
-1. Let (only) the recipients of the scheduled project know about this password.
-
-
+1. Let the recipients of the scheduled project know about this password. Do not distribute the password to people who are not recipients of the scheduled project.
