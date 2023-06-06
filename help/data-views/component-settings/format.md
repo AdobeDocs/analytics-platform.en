@@ -47,7 +47,7 @@ To enable the conversion of a currency for a metric:
    
 -   Set up your CJA connection to contain at least one event dataset that holds a currency code dimension for every event containing a currency metric. That currency code dimension uses an alphabetic currency code conforming to the [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard for representing currencies. For example USD for $, EUR for &euro;, GBP for £. 
   
--   You have applied the [!UICONTROL Currency Code] context label to one or more dimensions that define currency codes available in your dataset.
+-   You have (optionally) applied the [!UICONTROL Currency Code] context label to one or more dimensions that define currency codes available in your dataset.
 
     To apply the [!UICONTROL Currency Code] context label, in the [!UICONTROL Components] tab of your Data view:
 
@@ -59,15 +59,18 @@ To enable the conversion of a currency for a metric:
 
     Repeat these steps in case that you have more dimensions holding currency codes you want to use for currency conversion.
 
-Once you have applied the [!UICONTROL Currency Code] context label to at least one dimension, that you can define how to convert and display a currency for a metric. 
+>[!NOTE]
+>
+>The metric you select for currency conversion must have a numeric type (Double, Long, Integer, Short, Byte).
 
-The metric you select must have a numeric type (Double, Long, Integer, Short, Byte).
+
+To define how to convert and display a currency for a metric:
 
 1.  Enter the number of **[!UICONTROL Decimal places]**.
 
 2.  Select **[!UICONTROL Convert Concurrency]**.
 
-3.  Select the appropriate dimension from the **[!UICONTROL Currency code dimension]** list. This list shows all dimensions that have the [!UICONTROL Currency Code] context label applied.
+3.  Based on the applied context label, the appropriate dimension from the **[!UICONTROL Currency code dimension]** list is automatically selected. You can select any other dimension, including dimensions to which you additionally applied the Currency code context label.
 
 4.  Select a currency from the **[!UICONTROL Convert and display currency in]** list.
 
