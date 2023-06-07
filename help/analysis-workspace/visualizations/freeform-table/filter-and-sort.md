@@ -68,11 +68,11 @@ To quickly exclude specific rows from a Freeform table:
 
 ## Sort tables
 
-You can sort the data of a Freeform table by any column in Analysis Workspace that is either a Dimension or a Metric. 
+You can sort the data of a Freeform table by any column in Analysis Workspace that is either a dimension or a metric. 
 
 A down arrow icon ![Down arrow icon sorted table column](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) is visible in the header of the column that data is currently being sorted by. 
 
-1. In any Freeform table in Analysis Workspace, click the arrow next to the name of the Dimension or Metric.
+1. In any Freeform table in Analysis Workspace, click the arrow next to the name of the dimension or metric.
 
    Consider the following when sorting:
 
