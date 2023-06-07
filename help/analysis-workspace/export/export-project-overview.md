@@ -8,7 +8,7 @@ feature: Curate and Share
 
 Customer Journey Analytics allows you to export data. You might want to export data for a number of reasons, such as storing large amounts of historical data or analyzing raw data in third-party tools.
 
-The following sections describe supported file types, as well as the various methods available for exporting. 
+The following sections describe supported file types, the various methods available for exporting, and the advantages of each method. 
 
 ## Supported file types
 
@@ -20,11 +20,11 @@ You can export data as a PDF or CSV file.
 
 ## Methods of exporting data
 
-There are various methods of exporting project data from Analysis Workspace. Each method has unique advantages.
+There are various methods of exporting project data from Analysis Workspace. When choosing an export method, consider the type of data and who needs to access it. 
 
 |Export method | Advantages | 
 |---------|----------|
 | [Download data to your workstation](/help/analysis-workspace/export/download-send.md) | Use this method if you want to: <ul><li>Download data to your personal workstation.</li><li>Export data ad hoc only (this type of data export cannot be scheduled).</li> | 
-| [Send data to other users](/help/analysis-workspace/export/t-schedule-report.md) | Use this method if you want to: <ul><li>Send data to other users in your organization.</li><li>Send exported data ad hoc or on a schedule.</li>  | 
-| [Send data to a cloud application](/help/analysis-workspace/export/export-cloud.md) | Use this method if you want to: <ul><li>Store large amounts of historical data</br>This type of data can be used to detect trends in order to gain business intelligence, and ultimately lead to better business decision-making.</li><li>Export tables that contain thousands or millions of rows.</li><li>Store data in a cloud destination, such as Google Cloud Platform, Microsoft Azure, Amazon S3, Snowflake, or Adobe Exprience Platform. </li><li>Send exported data ad hoc or on a schedule.</li><li> <!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
+| [Send data to other users](/help/analysis-workspace/export/t-schedule-report.md) | Use this method if you want to: <ul><li>Send exported data to other users in your organization.</li><li>Send exported data ad hoc or on a schedule.</li>  | 
+| [Send data to a cloud application](/help/analysis-workspace/export/export-cloud.md) | Use this method if you want to: <ul><li>Export data to a shared location, such as Google Cloud Platform, Microsoft Azure, Amazon S3, Snowflake, or Adobe Experience Platform.</li><li>Send exported data ad hoc or on a schedule.</li><li>Store large amounts of historical data.</br>This type of data can be used to detect long-term trends in order to gain business intelligence, and ultimately lead to better business decision-making.</li><li>Export full tables that contain thousands or millions of rows.</li><li> <!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 

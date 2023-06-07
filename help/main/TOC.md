@@ -171,7 +171,9 @@ breadcrumb-title: Customer Journey Analytics Guide
     +   Export project data {#export-project}
         + [Download project data](../analysis-workspace/export/download-send.md)
         + [Send project data to others](../analysis-workspace/export/t-schedule-report.md)
-        + [Export project data to the cloud](../analysis-workspace/export/export-cloud.md)
+        + Export project data to the cloud {#cloud}
+          + [Export project data to the cloud](../analysis-workspace/export/cloud/export-cloud.md)
+          + [Configure cloud export locations](../analysis-workspace/export/cloud/cloud-export-accounts.md)
 
     +   Virtual Analyst {#virtual-analyst}
         +   [Virtual Analyst overview](../analysis-workspace/virtual-analyst/overview.md)

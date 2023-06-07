@@ -6,9 +6,9 @@ exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 ---
 # Download project data
 
-There are several ways to export data from Analysis Workspace. The method you choose depends on what set of data you want to analyze and who needs to access it. 
-
 Exported data can be in the form of copied data, CSV, or PDF. A PDF is typically preferred if you want visualizations included in the file. CSV and copied data is preferred if you simply want plain-text data.
+
+Other methods of exporting data are also available, as described in [Export project data overview](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Download a project as CSV or PDF {#download-project}
 

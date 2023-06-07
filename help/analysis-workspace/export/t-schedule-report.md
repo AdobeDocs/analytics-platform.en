@@ -8,7 +8,9 @@ exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 ---
 # Send project data to others
 
-You can export Analysis Workspace project data and send it to selected recipients via email. You can send a file ad hoc, or you can configure files to be sent on a schedule. Files can be sent in CSV or PDF format. 
+You can export Analysis Workspace project data and send it to selected recipients via email. You can send a file ad hoc, or you can configure files to be sent on a schedule. Files can be sent in CSV or PDF format.
+
+Other methods of exporting data are also available, as described in [Export project data overview](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Send file now {#now}
 
