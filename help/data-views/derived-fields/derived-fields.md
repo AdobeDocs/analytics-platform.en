@@ -118,6 +118,11 @@ When you define a rule in the rule builder, you use the rule interface.
     
     - Select **[!UICONTROL **Continue**]** to delete the derived field.
 
+>[!NOTE]
+>
+>Derived fields are managed at a Connection level in CJA. Any change made to a derived field in any of the Data views associated with that Connection applies across all these associated Data views.
+
+
 
 ## Function templates
 
