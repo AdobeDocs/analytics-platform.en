@@ -39,10 +39,6 @@ General preferences apply to your CJA experience in the browser.
 
 ## IMS Organization preferences
 
->[!AVAILABILITY]
->
->The Public Access Links functionality described in this section is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
-
 You can update company preferences that apply to all users and projects within your organization. For information about how to access these preferences, see [Update preferences](#update-preferences). 
 
 | Section | Preference | Options |
