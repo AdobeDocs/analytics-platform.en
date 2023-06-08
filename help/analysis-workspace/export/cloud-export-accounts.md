@@ -12,33 +12,25 @@ This process consists of configuring the account (such as Amazon S3, Google Clou
 
 ## Configure the account
 
-<!-- similar to the following documentation I wrote on Data Feeds -->
+You need to configure Customer Journey Analytics with the necessary information to access your cloud destination account.
 
-1. Log in to [experiencecloud.adobe.com](https://experiencecloud.adobe.com) using your Adobe ID credentials.
-1. Select the 9-square icon in the upper-right, then select [!UICONTROL **Analytics**].
-1. In the top navigation bar, go to [!UICONTROL **Admin**] > [!UICONTROL **Data feeds**].
-1. Select [!UICONTROL **Add**]. 
+<!-- These steps are based on the documentation that I wrote on Data Feeds -->
 
-    ![Add data feed](assets/datafeed-add.png)
-
-    A page displays with three main categories: [!UICONTROL **Feed information**], [!UICONTROL **Destination**], and [!UICONTROL **Data column definitions**].
-1. In the [!UICONTROL **Feed Information**] section, complete the following fields:
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+1. On the [!UICONTROL Exports] page, select the [!UICONTROL **Location accounts**] tab.
+1. Select [!UICONTROL **Add account**]. <!-- add screenshot? -->
    
-   | Field | Function | 
+   The Activate location account dialog displays.
+1. In the _____ section, specify the following information:
+   <!-- Not sure exactly what the dialog box will look like and what fields will be here. -->
+   |Field | Function | 
    |---------|----------|
-   | [!UICONTROL **Name**] | The name of the data feed. Must be unique within the selected report suite, and can be up to 255 characters in length. | 
-   | [!UICONTROL **Report suite**] | The report suite the data feed is based on. If multiple data feeds are created for the same report suite, they must have different column definitions. Only source report suites support data feeds; virtual report suites are not supported. |
-   | [!UICONTROL **Email when complete**] | The email address to be notified when a feed finishes processing. The email address must be properly formatted. |
-   | [!UICONTROL **Feed interval**] | Select **Daily** for backfill or historical data. Daily feeds contain a full day's worth of data, from midnight to midnight in the report suite's time zone.  Select **Hourly** for continuing data (Daily is also available for continuing feeds if you prefer). Hourly feeds contain a single hour's worth of data. |
-   | [!UICONTROL **Delay processing**] | Wait a given amount of time before processing a data feed file. A delay can be useful to give mobile implementations an opportunity for offline devices to come online and send data. It can also be used to accommodate your organization's server-side processes in managing previously processed files. In most cases, no delay is needed. A feed can be delayed by up to 120 minutes. |
-   | [!UICONTROL **Start & end dates**] | The start date indicates the first date you want a data feed. Set this date in the past to immediately begin processing data feeds for historical data. Feeds continue processing until they reach the end date. The start and end dates are based on the report suite's time zone. |
-   | [!UICONTROL **Continuous feed**] | This checkbox removes the end date, allowing a feed to run indefinitely. When a feed finishes processing historical data, a feed waits for data to finish collecting for a given hour or day. Once the current hour or day concludes, processing begins after the specified delay. |
-   
-1. In the [!UICONTROL **Destination**] section, in the [!UICONTROL **Type**] drop-down menu, select the destination where you want the data to be sent. 
+   | A1 | B1 | 
+   | A2 | B2 |
+   | A3 | B3 | 
+1. In the ___ section, select the cloud account type where you want the data to be sent. 
 
-   ![Data feed destination drop-down menu](assets/datafeed-destinations-dropdown.png)
-
-   Use any of the following destination types when creating a data feed. For configuration instructions, expand the destination type. (Additional [legacy destinations](#legacy-destinations) are also available, but are not recommended.)
+   Use any of the following cloud account types when configuring data export to the cloud. For configuration instructions, expand the cloud account type. 
 
    +++Amazon S3
 
@@ -274,6 +266,12 @@ This process consists of configuring the account (such as Amazon S3, Google Clou
    
    +++
 
+   +++Snowflake
+
+   <!-- info goes here -->
+
+   +++
+
 1. In the  [!UICONTROL **Data Column Definitions**] section, select the latest [!UICONTROL **All Adobe Columns**] template in the dropdown, then complete the following fields:
    
    |Field | Function | 
@@ -281,13 +279,14 @@ This process consists of configuring the account (such as Amazon S3, Google Clou
    | [!UICONTROL **Remove escaped characters**] | When collecting data, some characters (such as newlines) can cause issues. Check this box if you would like these characters removed from feed files. |
    | [!UICONTROL **Compression format**] | The type of compression used. **Gzip** outputs files in `.tar.gz` format. **Zip** outputs files in `.zip` format. | 
    | [!UICONTROL **Packaging type**] | Select **Multiple files** for most data feeds. This option paginates your data into uncompressed 2GB chunks. (If multiple files is selected and uncompressed data for the reporting window is less than 2GB, one file is sent.) Selecting **Single file** outputs the `hit_data.tsv` file in a single, potentially massive file. |
-   | [!UICONTROL **Manifest**] | hether or not Adobe should deliver a [manifest file](c-df-contents/datafeeds-contents.md#feed-manifest) to the destination when no data is collected for a feed interval. If you select **Manifest File**, you receive a manifest file similar to the following when no data is collected:<p>`text`</p><p>`Datafeed-Manifest-Version: 1.0`</p><p>`Lookup-Files: 0`</p><p>`Data-Files: 0`</p><p> `Total-Records: 0`</p> | 
+   | [!UICONTROL **Manifest**] | Whether or not Adobe should deliver a [manifest file](c-df-contents/datafeeds-contents.md#feed-manifest) to the destination when no data is collected for a feed interval. If you select **Manifest File**, you receive a manifest file similar to the following when no data is collected:<p>`text`</p><p>`Datafeed-Manifest-Version: 1.0`</p><p>`Lookup-Files: 0`</p><p>`Data-Files: 0`</p><p> `Total-Records: 0`</p> | 
    | [!UICONTROL **Column templates**] | When creating many data feeds, Adobe recommends creating a column template. Selecting a column template automatically includes the specified columns in the template. Adobe also provides several templates by default. |
    | [!UICONTROL **Available columns**] | All available data columns in Adobe Analytics. Click [!UICONTROL Add all] to include all columns in a data feed. |
    | [!UICONTROL **Included columns**] | The columns to include in a data feed. Click [!UICONTROL Remove all] to remove all columns from a data feed. |
    | [!UICONTROL **Download CSV**] | Downloads a CSV file containing all included columns. |
 
-1. Select [!UICONTROL **Save**] in the top-right.
+1. Select [!UICONTROL **Add**].
 
+1. Continue with [Configure the location](#configure-the-location).
 
 ## Configure the location
