@@ -60,7 +60,6 @@ You can create the following dimensions in a data view to achieve approximate pa
 | Email Delivery Exclusion Reason | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Component type: Dimension |
 | Element Label | `_experience.decisioning.propositionAction.label` | Component type: Dimension |
 
-
 {style="table-layout:auto"}
 
 ### Configure metrics in the data view
@@ -83,7 +82,6 @@ You can create the following metrics in a data view to achieve approximate parit
 | Inbound Clicks | The count of Web or InApp message clicks | Use the schema string element `_experience.decisioning.propositionEventType.interact` |
 | InApp Triggers | The number of times the decisioning engine suggested the message should be displayed. The Mobile SDK could override the decision reducing the number of actual displays. | Use the schema string element `_experience.decisioning.propositionEventType.trigger` |
 | InApp Dismissals | The number of times an InApp message is dismissed. | Use the schema string element `_experience.decisioning.propositionEventType.dismiss` |
-
 
 {style="table-layout:auto"}
 
