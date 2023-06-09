@@ -51,10 +51,12 @@ A new Connections workflow was recently launched in Customer Journey Analytics (
 The new workflow lets you add an Experience Platform dataset when you create a connection. 
 
 1. In the Connection settings dialog, click **[!UICONTROL Add datasets]**.
-1. Select one or more datasets and click **[!UICONTROL Next]**. 
 
-    Note that at least one event dataset needs to be part of the connection.
-1. Now configure the datasets one by one.
+2. Select one or more datasets and click **[!UICONTROL Next]**.
+   
+   Note that at least one event dataset needs to be part of the connection.
+
+3. Now configure the datasets one by one.
 
     ![Configure datasets](assets/add-dataset.png)
 
