@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Customer Journey Analytics (CJA) release notes (June 2023)
 
-**Last update**: June 6, 2023
+**Last update**: June 9, 2023
 
 Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -20,7 +20,7 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 | **PowerBI & Tableau access to CJA data views** | The Customer Journey Analytics (CJA) SQL Connector enables SQL access to data views that you have defined in CJA. Data engineers and analysts more familiar with Power BI, Tableau, or other business intelligence and visualization tools can now create reports and dashboards based on the same data views that CJA users are using for their Analysis Workspace projects. [Learn more](/help/data-views/sql-connector.md)|  | June 30, 2023 |
 | **Experience Edge geo lookups** | You will be able to build reports using geolocation data in CJA once Experience Edge Geo Lookups are enabled for your datastream. |  | June 30, 2023 |
 | **Expanded lookup support to profile and lookup data** | You will be able to add lookup datasets to not only event datasets, but also to profile and lookup datasets.  | June 21, 2023 | July 12, 2023 |
-| **Support for currency conversion** | CJA will support currency conversion as part of formatting a metric component in a data view. | June 21, 2023 | July 19, 2023 |
+| **Support for currency conversion** | CJA will support currency conversion as part of formatting a metric component in a data view. | June 7, 2023 | June 21, 2023 |
 
 {style="table-layout:auto"}
 
