@@ -1,12 +1,12 @@
 ---
-description: Send an Analysis Workspace project to a cloud location.
+description: Configure the cloud export account and location where project data can be sent.
 keywords: Analysis Workspace
 title: Configure cloud export locations
 feature: Curate and Share
 ---
 # Configure cloud export locations
 
-Before you can export data to a cloud destination as described in [Export project data to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to configure the location where you want the data to be sent. 
+Before you can export full table data to a cloud destination as described in [Export project data to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to configure the location where you want the data to be sent. 
 
 This process consists of configuring the account (such as Amazon S3, Google Cloud Platform, and so forth) and the location within the account (such as a folder within the account).
 
@@ -34,11 +34,11 @@ You need to configure Customer Journey Analytics with the necessary information 
 
    +++Amazon S3
 
-   You can send feeds directly to Amazon S3 buckets. This destination type requires only your Amazon S3 account and the location (bucket). 
+   You can send project data to Amazon S3 buckets. This destination type requires only your Amazon S3 account and the location (bucket). 
 
    Adobe Analytics uses cross-account authentication to upload files from Adobe Analytics to the specified location in your Amazon S3 instance.
 
-   To configure an Amazon S3 bucket as the destination for a data feed:
+   To configure an Amazon S3 bucket as the destination for data export:
 
    1. In the Adobe Analytics admin console, in the [!UICONTROL **Destination**] section, select [!UICONTROL **Amazon S3**].
 
@@ -290,3 +290,7 @@ You need to configure Customer Journey Analytics with the necessary information 
 1. Continue with [Configure the location](#configure-the-location).
 
 ## Configure the location
+
+1. 
+
+1. You can now export data from Analysis Workspace to the account and location that you configured. For information about how to export data to the cloud, see [Export project data to the cloud](/help/analysis-workspace/export/export-cloud.md).
