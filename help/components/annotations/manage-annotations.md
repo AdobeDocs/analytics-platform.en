@@ -65,7 +65,7 @@ Just select one or more of the annotations and the Task bar appears.
 | Task | Description |
 | --- | --- |
 | Add | Takes you to the Annotations builder where you can create new annotations. |
-| Tag | All users can create tags for annotations and apply one or more tags to an annotation. However, you can see tags only for those segments that you own. What kinds of tags should you create? Here are some suggestions for useful tags:<ul><li>Tags based on team names, such as Social Marketing, Mobile Marketing</li><li>Project tags (analysis tags), such as Entry-page analysis</li><li>Category tags: Men's; geography</li><li>Workflow tags: Curated for (a specific business unit); Approved</li></ul>|
+| Tag | All users can create tags for annotations and apply one or more tags to an annotation. However, you can see tags only for those filters that you own. What kinds of tags should you create? Here are some suggestions for useful tags:<ul><li>Tags based on team names, such as Social Marketing, Mobile Marketing</li><li>Project tags (analysis tags), such as Entry-page analysis</li><li>Category tags: Men's; geography</li><li>Workflow tags: Curated for (a specific business unit); Approved</li></ul>|
 | Delete | Deleting an annotation removes it from any project in your organization. |
 | Rename | Renaming an annotation renames it in all projects that it was applied to. |
 | Copy | Creates a distinct copy with its own annotation ID, but with the same name and definition.|

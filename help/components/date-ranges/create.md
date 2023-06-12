@@ -6,7 +6,7 @@ exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 ---
 # Create a date range
 
-You can create a custom date range using either of the following two methods:
+You can create a date range using either of the following two methods:
 
 * Directly in a workspace project by clicking the '`+`' button next to the list of date range components on the left
 * Within the date range manager

@@ -17,7 +17,7 @@ You can manage the following components:
 * [**Annotations**](/help/components/annotations/overview.md): Communicate contextual data nuances and insights to your organization.
 * [**Filters**](filters/filters-overview.md): Exclude parts of your data to focus on common dimension items
 * [**Calculated metrics**](calc-metrics/calc-metr-overview.md): Use metrics and formulas as new components for use in reporting
-* [**Date ranges**](date-ranges/overview.md): Customize and refine the date ranges Analysis Workspace offers
+* [**Date ranges**](date-ranges/create.md): Customize and refine the date ranges Analysis Workspace offers
 * [**Projects**](/help/analysis-workspace/home.md): Organize and maintain your projects in Analysis Workspace
 
 ## Analysis Workspace components
