@@ -5,7 +5,7 @@ exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 ---
 # CJA Audience publishing overview
 
-You can now create and publish audiences discovered in Customer Journey Analytics (CJA) to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCP) in Adobe Experience Platform for customer targeting and personalization. 
+You can now create and publish audiences discovered in Customer Journey Analytics (CJA) to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCDP) in Adobe Experience Platform for customer targeting and personalization. 
 
 Publishing audiences provides a clear way to activate and to take action on insights found within CJA. These actions might include:
 
@@ -13,7 +13,9 @@ Publishing audiences provides a clear way to activate and to take action on insi
 * Exporting the audience to a 3rd-party through an Experience Platform destination.
 * Enriching the Real-time customer profile with useful attributes derived from event-based data in CJA.
 * Doing all this with minimal latency after publishing the audience. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency)
-* Publishing one-time audiences or recurring audiences
+* Publishing one-time audiences or recurring audiences.
+
+The audiences you create in CJA do not have to be based on datasets enabled for profile. You can ingest historical data into Experience Platform without enabling associated datasets and schemas for profile. Then use these datasets to discover relevant audiences in CJA and publish these audiences to RTCDP in Experience Platform for activation purposes.
 
 ## Key terminology
 
