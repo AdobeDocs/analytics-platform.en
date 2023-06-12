@@ -13,7 +13,6 @@ The following updates were made to the CJA documentation since its inception.
 
 | Feature | Description |
 | --- | --- |
-
 | **June 2023** | | 
 | PowerBI & Tableau access to CJA data views | The Customer Journey Analytics (CJA) SQL Connector enables SQL access to data views that you have defined in CJA. [Learn more](/help/data-views/sql-connector.md)|
 | Adobe Journey Optimizer data views | CJA Admins have access to some extra data views in CJA, entitled "AJO Data view (Sandbox-name)". [Learn more](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html). | 
