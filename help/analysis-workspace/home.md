@@ -55,7 +55,7 @@ Components in Analysis Workspace consist of the following:
 
 * Metrics
 
-* Segments
+* Filters
 
 * Date ranges
 

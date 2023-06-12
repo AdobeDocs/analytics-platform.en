@@ -26,4 +26,4 @@ Here's how to build a simple "Page Views per Visits" metric.
 
    Notice that the **[!UICONTROL Summary]** formula updates anytime you make a change to the metric definition.
 
-1. (Optional) To share, approve, (re-)tag, rename, or delete a metric, you can go to the [Calculated Metrics page](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+1. (Optional) Share the metric with other users in your organization, as described in [Share calculated metrics](/help/components/calc-metrics/cm-workflow/cm-sharing.md).

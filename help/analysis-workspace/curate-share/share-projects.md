@@ -48,7 +48,7 @@ When sharing a specific project role with users and groups in your organization,
 
 * A user who is placed in multiple roles always get the highest experience. This might occur if a user is added both as an individual and as part of a group. For example, if a user is given the **[!UICONTROL Can edit]** role as an individual and the **[!UICONTROL Can view]** role as a member of a group, they will receive a **[!UICONTROL Can edit]** project experience.
 
-* Admins placed in the **[!UICONTROL Can duplicate]** or **[!UICONTROL Can view]** role receive those limited experiences when they open a project. If desired, an Admin can increase their role to **[!UICONTROL Can edit]** at anytime through **[!UICONTROL Components] > [!UICONTROL Projects]**. 
+* Admins placed in the **[!UICONTROL Can duplicate]** or **[!UICONTROL Can view]** role receive those limited experiences when they open a project. An Admin can change their role to **[!UICONTROL Can edit]** by sharing the project with themselves and granting the Edit role, as described in the following procedure. 
 
 To share a specific project role with users or groups in your organization:
 
@@ -69,7 +69,7 @@ To share a specific project role with users or groups in your organization:
 
 1. Choose whether to enable the following options when sharing the project:
 
-   * **Share embedded project components:** Shares segments, calculated metrics, and date ranges with all recipients. After being shared, these components will appear in the Components drop-down of the recipient's Workspace. This setting does not persist - it is a one-time action at the time of sharing.
+   * **Share embedded project components:** Shares filters, calculated metrics, and date ranges with all recipients. After being shared, these components will appear in the Components drop-down of the recipient's Workspace. This setting does not persist - it is a one-time action at the time of sharing.
 
    * **Set as landing page for recipients:** Sets this page as the landing page for recipients. This setting does not persist - it is a one-time action at the time of sharing.
  
@@ -99,8 +99,6 @@ To share the project link with users in your organization:
 
 ## Share a project with anyone (no login required) {#share-public-link}
 
-{{release-limited-testing-section}}
-
 You can grant [read-only access](/help/analysis-workspace/curate-share/view-only-projects.md) to Analysis Workspace projects to people who don't have access to Customer Journey Analytics. This can include:
 
 * People outside your organization 
@@ -123,6 +121,10 @@ You can grant [read-only access](/help/analysis-workspace/curate-share/view-only
 >
 >* If your organization licenses Healthcare Shield, you can share projects only with users who have authenticated either by Single Sign On (SSO) or Adobe ID; you cannot share projects with unauthenticated users. It is your responsibility to use this feature in compliance with your company's internal data governance policies and only share project links that contain Personal Health Information (PHI) with users who have the appropriate permissions.
 
+The following video demonstration and accompanying documentation describe the options associated with sharing a link with anyone:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+
 To share an Analysis Workspace project with anyone:
 
 1. Open the Analysis Workspace project that you want to share.
@@ -143,7 +145,7 @@ To share an Analysis Workspace project with anyone:
 
    * **[!UICONTROL Require Experience Cloud authentication]:** 
    
-     When this option is enabled, only users who can log in to the Adobe Experience Cloud organization where the project that you are sharing was created can access the project.
+     When this option is enabled, the only users who can access the project are those who can log in to the Adobe Experience Cloud organization where the project that you are sharing was created. However, users you share with do not need to have access to Adobe Analytics.
 
      CJA administrators can configure this preference for the company, as described in [Preferences](/help/analysis-workspace/user-preferences.md). You might encounter the following scenarios, depending on how the administrator configured this option:
      
