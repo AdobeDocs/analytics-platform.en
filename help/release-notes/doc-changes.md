@@ -9,10 +9,12 @@ feature: Release Notes
 
 The following updates were made to the CJA documentation since its inception.
 
-## 2023 {#23}
+## 2023
 
 | Feature | Description |
 | --- | --- |
+| **June 2023** | | 
+| Currency conversion | Updated documentation for [currency conversion](../data-views/component-settings/format.md#currency) support. | 
 | **May 2023** | |
 | Deep Linking (Mobile App) documentation | Allows users to send links to scorecards that will lead them directly to the scorecard project in the app. This makes it even easier to share projects and boost engagement from a less technical audience. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
 | Doc on "Select data view from cell" in Report Builder | This feature allows users to select the data view for a data block from a cell. This is helpful if you create a workbook and you have multiple data views that have similar data construction and you want to be able to reuse a workbook multiple times, with different data views. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) |
@@ -24,6 +26,8 @@ The following updates were made to the CJA documentation since its inception.
 | Delete rows containing dynamic dimensions from a Freeform table | Added information about how to quickly delete specific rows that contain dynamic dimensions using the x icon. See the "Quickly exclude specific rows from a table" section in [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).|
 | Button to add a visualization within a panel | Added information about a new button at the bottom of each panel in Analysis Workspace that allows you to quickly add a visualization. See the "Add visualizations to a panel" section in [Visualizations overview](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
 | Intelligent captions documentation | Enrich storytelling for users with [natural-language summaries](/help/analysis-workspace/visualizations/intelligent-captions.md) of a Line visualization. |
+| Derived fields | Added documentation for [derived fields](../data-views/derived-fields/derived-fields.md) functionality. | 
+
 | **April 2023** |  |
 | Video about using filters as dimensions | Updated the video about using filters as dimension. <p>This video is linked from the [Create filters](/help/components/filters/create-filters.md) page.</p> <p>Following is a direct link to the video: [Use filters as dimensions in Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p>|
 | Filter documentation | Added article about using the [Filter builder](/help/components/filters/filter-builder.md). <p>Streamlined documentation in [Create filters](/help/components/filters/create-filters.md) and [Filters overview](/help/components/filters/filters-overview.md).</p>|
@@ -52,7 +56,7 @@ The following updates were made to the CJA documentation since its inception.
 | Schedule Workbooks | Dedicated page to describe how to [Schedule Workbooks](/help/report-builder/schedule-reportbuilder.md) in Report Builder.  |
 | Object array support for profile and lookup datasets | Updated [Use arrays of objects](/help/use-cases/object-arrays.md) and [Ingest AEP audiences](/help/use-cases/data-ingestion/ingest-aep-segments.md) to reflect object array support for profile and lookup datasets. |
 
-## 2022 {#22}
+## 2022
 
 | Date | Update description |
 | --- | --- |
@@ -105,17 +109,17 @@ The following updates were made to the CJA documentation since its inception.
 | February 2022 | A new guide aimed at Administrators who are moving from Adobe Analytics to CJA: [Adobe Analytics to Customer Journey Analytics evolution](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=en) |
 | **January 2022** | |
 | January 2022 | New use case for [Using binding dimensions and metrics in CJA](/help/use-cases/data-views/binding-dimensions-metrics.md) |
-| January 2022 | Added new feature documentation on [binding dimensions and metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) and on new [[!UICONTROL First Known] and [!UICONTROL Last Known] allocation settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#allocation-settings) |
+| January 2022 | Added new feature documentation on [binding dimensions and metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) and on new [[!UICONTROL First Known] and [!UICONTROL Last Known] allocation settings](/help/data-views/component-settings/persistence.md#allocation-settings) |
 | January 2022 | New article on [comparing your Adobe Analytics data to Analytics data in CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html) |
 
 {style="table-layout:auto"}
 
-## 2021 {#21}
+## 2021
 
 | Date | Update description |
 | --- | --- |
 | **November 2021** | |
-| November 2021 | Updated documentation for [[!UICONTROL Records skipped]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html) on the Connections Details page. |
+| November 2021 | Updated documentation for [[!UICONTROL Records skipped]](help/connections/manage-connections.md) on the Connections Details page. |
 | **October 2021** | |
 | October 2021 | Documentation for [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/report-buider-overview.html#) in CJA. |
 | October 2021 | Customer Journey Analytics [Audit Log](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) API documentation |
@@ -151,7 +155,7 @@ The following updates were made to the CJA documentation since its inception.
 
 {style="table-layout:auto"}
 
-## 2020 {#20}
+## 2020
 
 | Date | Update description |
 | --- | --- |

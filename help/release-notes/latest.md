@@ -24,6 +24,7 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 | **New button to add a visualization within a panel** | A new button is now available at the bottom of each panel in Analysis Workspace, allowing you to quickly add a visualization. <p>Previously, the only methods for adding a visualization to a panel were to drag a visualization from the left rail, duplicate or copy an existing visualization, or create a blank panel. [Learn more](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | N/A | May 17, 2023 |
 | **Deep Linking (Mobile App)** | Allows users to send links to scorecards that will lead them directly to the scorecard project in the app. This makes it even easier to share projects and boost engagement from a less technical audience. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) | N/A | May 17, 2023 |
 | **Intelligent Captions** | Enrich storytelling for users with natural-language summaries of a [!UICONTROL Line] visualization. [Learn more](/help/analysis-workspace/visualizations/intelligent-captions.md)| May 17, 2023 | June 1, 2023 | 
+| **Currency conversion support** | Currency conversion is supported as part of formatting a metric component in a Data view. [Learn more](../data-views/component-settings/format.md#currency) | June 7, 2023 | June 21, 2023 | 
 
 {style="table-layout:auto"}
   
