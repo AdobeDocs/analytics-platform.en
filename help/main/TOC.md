@@ -244,22 +244,21 @@ breadcrumb-title: Customer Journey Analytics Guide
             + [Build a "Page Views per Visits" metric](../components/calc-metrics/cm-workflow/cm-pvv.md)
             + [Build a "Participation" metric](../components/calc-metrics/cm-workflow/participation-metric.md)
             + [Filtered metrics](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
-            + [Stack and replace segments](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
+            + [Stack and replace filters](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
             + [Filtered and weighted metrics](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
             + [Use functions](../components/calc-metrics/cm-workflow/cm-using-functions.md)
             + [Tag calculated metrics](../components/calc-metrics/cm-workflow/cm-tagging.md)
             + [Approve calculated metrics](../components/calc-metrics/cm-workflow/cm-approving.md)
             + [Share calculated metrics](../components/calc-metrics/cm-workflow/cm-sharing.md)
-            + [Calculated Metric Manager](../components/calc-metrics/cm-workflow/cm-manager.md)
+            + [Calculated metric manager](../components/calc-metrics/cm-workflow/cm-manager.md)
         +   [Default calculated metrics](../components/calc-metrics/default-calcmetrics.md)
         +   [Basic functions](../components/calc-metrics/cm-functions.md)
         +   [Advanced functions](../components/calc-metrics/cm-adv-functions.md)
 
-    +   Date ranges {#cja-date-ranges}
-        + [Date ranges overview](../components/date-ranges/overview.md)
+    +   Calendar and date ranges {#cja-date-ranges}
+        + [Calendar and date ranges overview](../components/date-ranges/calendar.md)
         + [Create a date range](../components/date-ranges/create.md)
         + [Manage date ranges](../components/date-ranges/manage.md)
-        + [Calendar overview](../components/date-ranges/calendar.md)
         + [Create custom date ranges](../components/date-ranges/custom-date-ranges.md)
         + [Date comparison](../components/date-ranges/time-comparison.md)
 

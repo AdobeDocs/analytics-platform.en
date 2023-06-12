@@ -1,5 +1,5 @@
 ---
-description: In the calendar, you can specify dates and date ranges, or select a preset.
+description: How to specify dates and date ranges, or select a preset.
 title: Calendar and date ranges overview
 feature: Calendar
 solution: Customer Journey Analytics
@@ -7,7 +7,7 @@ exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
 ---
 # Calendar and date ranges overview
 
-In the calendar, you can specify dates and date ranges, or select a preset.
+Using the calendar, you can specify dates and date ranges, or select a preset. Date ranges are a type of component you can use in Workspace projects. They allow you to see data trended over time or see when events happen the most. Date ranges are color coded in purple. Custom date ranges allow you to customize the dates you see in Workspace projects. 
 
 Calendar selections apply at the panel level, but you have the option to apply them to all panels. When you click a date range in Workspace, the interface displays the current calendar month and the previous calendar month. You can adjust these two calendars by clicking the right and left arrows in each respective upper corner.
 
@@ -35,7 +35,7 @@ To use relative panel date ranges
 
 1.  Select the **Workspace** tab.
 1.  Select **Blank project**.
-1.  Add dimensions, metrics, and segments from the left rail. 
+1.  Add dimensions, metrics, and filters from the left rail. 
 1.  Click the panel date range field to toggle the relative panel date range setting.
 1.  Select **Make date range components relative to panel calendar**.
     *   Select the option to make the date range components relative to the panel calendar.
@@ -55,19 +55,19 @@ Keep in mind the following guidelines when using relative panel date ranges.
 
 ### Formulas and relative date ranges {#formula-relative-dates}
 
-If you have relative dates selected, all date formulas will use the panel’s start date as the starting point.
+If you have relative dates selected, all date formulas will use the panel's start date as the starting point.
 
 ### Custom calendars and relative date ranges {#custom-calendar-formulas}
 
 When you use a week-based custom calendar and you add months or years, the formula calculates the offset of the day in the given period. The actual date may be different because of the offset. The formula chooses the day landing in the same place in the custom calendar. For example, the third Friday of the third week in a custom calendar.
 
-### About segments that use rolling dates and relative panel date ranges {#segments-relative-dates}
+### About filters that use rolling dates and relative panel date ranges {#segments-relative-dates}
 
-If you build a segment or use a segment with a rolling date, for example, the Last 7 Days or the Last 2 Weeks, and you click on the segment preview, it will start the rolling date from *Today* instead of the panel start date. As a result the preview for the segment will not match when you actually use the segment in the table. The preview is impacted, not the segment itself. 
+If you build a filter or use a filter with a rolling date, for example, the Last 7 Days or the Last 2 Weeks, and you click on the filter preview, it will start the rolling date from *Today* instead of the panel start date. As a result the preview for the filter will not match when you actually use the filter in the table. The preview is impacted, not the filter itself. 
 
 ## Guidelines for panel date ranges and previews {#guidelines-panel-dates}
 
 *   Starting with the February release, component and data previews will be based on the panel date range and not the last 90 days. 
 *   All components listed in the left rail will be available based on the panel date range. 
-*   All date previews in the segment and calculated metric builders will be based on the panel date range (unless accessed from the component managers, which do not have an associated panel, they will still be based on the last 90 days). 
+*   All date previews in the filter and calculated metric builders will be based on the panel date range (unless accessed from the component managers, which do not have an associated panel, they will still be based on the last 90 days). 
 *   Any data previews will display data or components based on the panel date range.

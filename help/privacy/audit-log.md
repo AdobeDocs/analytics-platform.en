@@ -35,19 +35,49 @@ Double click the info (i) button next to a description.
 
 The following items are shown:
 
-| Item | Description |
-| --- | --- |
-| Action Name | Here is the list of possible actions: <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Edit</li><li>Export</li><li>Login_failed</li><li>Login_successful</li><li>Logout</li><li>Org_change</li><li>Refresh</li><li>Share</li><li>Transfer</li><li>Unapprove</li><li>Unshare</li></ul> |
-| Description | A summary of the action, component type (with ID) and other values. |
-| User Name | The user taking the action. |
-| Component Type | Possible component types include: <ul><li>Annotation</li><li>Audience</li><li>Calculated Metric</li><li>Connection</li><li>Data_Group</li><li>Data_View (this component type includes dimensions and metrics)</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobile</li><li>Project</li><li>Report</li><li>Scheduled_Project</li><li>User</li><li>User_Group</li></ul> |
-| IMS Org ID | A unique ID that is given to your instance when you first log in to Adobe Experience Cloud. It should be in the format: xxx@AdobeOrg. |
-| User ID | A unique ID identifying the user who took this action. |
-| Date Created | When this action was taken. |
-| Email | The email of the user taking the action. |
-| Component ID | A unique ID that identifies the component that is being actioned upon. |
-| Log ID | A unique ID identifying this log entry. |
-| User Type | Possible types include: IMS, OKTA |
+* **[!UICONTROL Action Name]**: The action taken. Possible values include:
+  * API_REQUEST
+  * APPROVE
+  * CREATE
+  * DELETE
+  * EDIT
+  * EXPORT
+  * ORG_CHANGE
+  * REFRESH
+  * SHARE
+  * TRANSFER
+  * UNAPPROVE
+  * UNSHARE
+* **[!UICONTROL Date Created]**: The date and time that the action was taken.
+* **[!UICONTROL Description]**: A summary of the action.
+* **[!UICONTROL User Name]**: The user that took the action.
+* **[!UICONTROL Email]**: The email address of the user that took the action.
+* **[!UICONTROL Component Name]**: The component that the user took action on.
+* **[!UICONTROL Component Type]**: The type of component. Possible values include:
+  * ANNOTATION
+  * AUDIENCE
+  * CALCULATED_METRIC
+  * CONNECTION
+  * DATA_GROUP
+  * DATA_VIEW
+  * DATASET_STITCHING
+  * DATE_RANGE
+  * FEATURE_ACCESS
+  * FILTER
+  * IMS_ORG
+  * MOBILE
+  * PROJECT
+  * REPORT
+  * SCHEDULED_PROJECT
+  * USER
+  * USER_GROUP
+* **[!UICONTROL Component ID]**: The ID of the component that the user took action on.
+* **[!UICONTROL IMS Org ID]**: The organization's IMS ID, in the format of `ABC123@AdobeOrg`.
+* **[!UICONTROL Log ID]**: A unique ID identifying this log entry.
+* **[!UICONTROL User ID]**: The unique ID identifying the user that took the action.
+* **[!UICONTROL User Type]**: The authentication type used. Valid values include:
+  * IMS
+  * OKTA
 
 ### Filter audit logs
 
@@ -60,11 +90,11 @@ The following filters are available for audit events in the UI:
 | Filter | Description |
 | --- | --- |
 | [!UICONTROL Date Range] | Filter on a different date range by selecting a different date or selecting a date range by dragging the cursor across multiple dates. By default, today's and yesterday's date are selected. |
-| [!UICONTROL Action] | Filter on one or more of the following actions: <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Edit</li><li>Export</li><li>Login_failed</li><li>Login_successful</li><li>Logout</li><li>Org_change</li><li>Refresh</li><li>Share</li><li>Transfer</li><li>Unapprove</li><li>Unshare</li></ul> |
+| [!UICONTROL Action] | Filter on any action name listed above. |
 | [!UICONTROL User ID] | Filter on a specific user by their user ID. The user ID can be found by selecting the info (i) button next to a user name.|
 | [!UICONTROL Email] | Filter on a specific user's email address. The email can be found by selecting the info (i) button next to a user name.|
 | [!UICONTROL Component ID] | Filter on a specific Component ID. The user ID can be found by selecting the info (i) button for a desired component. |
-| [!UICONTROL Component Type] | Filter on one or more component type/s: <ul><li>Annotation</li><li>Audience</li><li>Calculated Metric</li><li>Connection</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobile</li><li>Project</li><li>Report</li><li>Scheduled_Project</li><li>User</li><li>User_Group</li></ul> |
+| [!UICONTROL Component Type] | Filter on any component type listed above. |
 
 {style="table-layout:auto"}
 

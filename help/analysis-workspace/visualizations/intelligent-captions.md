@@ -7,8 +7,6 @@ exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
 ---
 # Intelligent Captions
 
-{{release-limited-testing}}
-
 Intelligent captions use advanced Machine Learning and Generative AI to provide valuable natural-language insights for Workspace visualizations. The initial release provides auto-generated insights for the [Line](line.md) visualization. (Other visualizations will follow.) 
 
 Intelligent captions are geared towards:
@@ -24,9 +22,13 @@ To launch auto-generated captions for a line visualization, click the **[!UICONT
 
 ![launch intelligent captions](assets/intell-caps-1.png)
 
-Natural-language insights are now being generated. Captions will be generated every time the underlying selected data changes in the table powering the visualization. Also, if there are multiple metrics in the table, captions are only generated for the first metric or the metric currently selected by the user.
+Natural-language insights are now being generated. 
 
-If you save the project at this point, and re-load it later, the captions are auto-updated with new data. The same applies to scheduled projects and PDF files exported from this project.
+* Captions are generated every time the underlying selected data changes in the table powering the visualization. 
+
+* If there are multiple metrics in the table, captions are only generated for the first metric or the metric currently selected by the user.
+
+* If you save the project at this point, and re-load it later, the captions are auto-updated with new data. The same applies to scheduled projects and PDF files exported from this project.
 
 ## View and interpret captions {#view}
 

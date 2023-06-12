@@ -15,8 +15,10 @@ From the Workspace **[!UICONTROL Share]** menu, you can send Analysis Workspace 
 To send a file immediately to recipients via email:
 
 1. Click **[!UICONTROL Share] > [!UICONTROL Export file]**.
-1. Specify the file type (CSV or PDF).
-1. (Optional) Add a description that will be included in the email to explain the file being received. 
+1. Specify the file type:
+   * [!UICONTROL **CSV**]: Choose this option if you want plain-text data.
+   * [!UICONTROL **PDF**]: Choose this option if you want the downloaded file to contain all the displayed (visible) tables and visualizations in the project.
+1. (Optional) Add a description to include in the email to explain the file being received. 
 1. Add recipients or groups. Email addresses can also be entered. 
 1. (Only for Healthcare Shield customers) Provide a password. See the section Password-protect a scheduled report. 
 1. Click **[!UICONTROL Send Now]**.

@@ -18,7 +18,7 @@ Keep this in mind:
 
 * Annotations can be tied to a single date or to a date range.
 
-* They can apply to your entire dataset or to specified metrics, dimensions, or segments.
+* They can apply to your entire dataset or to specified metrics, dimensions, or filters.
 
 * They can apply to the project in which they were created (default) or to all projects.
 
@@ -26,7 +26,7 @@ Keep this in mind:
 
 ## Permissions
 
-By default, only Admins can create annotations. Users have rights to view annotations like they do with other other Analytics components (such as segments, calculated metrics, etc.).
+By default, only Admins can create annotations. Users have rights to view annotations like they do with other other Analytics components (such as filters, calculated metrics, etc.).
 
 However, Admins can give the [!UICONTROL Annotation Creation] permission (Analytics Tools) to users via the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html).
 
