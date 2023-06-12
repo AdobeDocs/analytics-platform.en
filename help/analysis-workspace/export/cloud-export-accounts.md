@@ -20,17 +20,27 @@ You need to configure Customer Journey Analytics with the necessary information 
 1. On the [!UICONTROL Exports] page, select the [!UICONTROL **Location accounts**] tab.
 1. Select [!UICONTROL **Add account**]. <!-- add screenshot? -->
    
-   The Activate location account dialog displays.
-1. In the _____ section, specify the following information:
-   <!-- Not sure exactly what the dialog box will look like and what fields will be here. -->
+   The Add account dialog displays.
+1. Specify the following information:
    |Field | Function | 
    |---------|----------|
-   | A1 | B1 | 
-   | A2 | B2 |
-   | A3 | B3 | 
-1. In the ___ section, select the cloud account type where you want the data to be sent. 
+   | [!UICONTROL **Location account name**] | B1 | 
+   | [!UICONTROL **Location account description**] | B2 |
+   | [!UICONTROL **Account type**] | B3 | 
+1. In the [!UICONTROL **Account properties**] section, specify information specific to the account type that you selected.  
 
-   Use any of the following cloud account types when configuring data export to the cloud. For configuration instructions, expand the cloud account type. 
+   For configuration instructions, expand the section below that corresponds to the [!UICONTROL **Account type**] that you selected. 
+
+   +++Amazon S3 Role ARN
+
+      Specify the following information to configure an Amazon S3 Role ARN account:
+
+      |Field | Function | 
+      |---------|----------|
+      | [!UICONTROL **roleARN**] | B1 | 
+      | [!UICONTROL **userARN**] | B2 | 
+
+   +++
 
    +++Amazon S3
 
