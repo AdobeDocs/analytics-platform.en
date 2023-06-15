@@ -74,6 +74,8 @@ A drop-down list that lets you bind the persistence of a dimension value to dime
 
 See [Using binding dimensions and metrics in CJA](../../use-cases/data-views/binding-dimensions-metrics.md) for examples around how to effectively use binding dimensions.
 
+>[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
+
 ## [!UICONTROL Binding Metric]
 
 A drop-down list that lets you choose a metric that acts as a binding trigger. Valid options include metrics included in the data view.
