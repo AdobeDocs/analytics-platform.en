@@ -109,9 +109,3 @@ Output placeholders are also supported. You can use these sequences in the **[!U
 | `$$` | Outputs the string character `"$"`. |
 
 {style="table-layout:auto"}
-
-## Video on binding dimensions
-
-Here is a video on binding dimensions:
-
->[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
