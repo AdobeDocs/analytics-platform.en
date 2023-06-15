@@ -110,10 +110,11 @@ You need to configure Customer Journey Analytics with the necessary information 
 
 1. Select [!UICONTROL **Save**].
 
-1. Continue with [Configure the location](#configure-the-location).
+1. Continue with [Add a location](#add-a-location).
 
 ## Add a location
 
+1. You need to add an account before you can add a location. [Add an account](#add-an-account) if you haven't already.
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 1. On the [!UICONTROL Exports] page, select the [!UICONTROL **Locations**] tab.
 1. Select [!UICONTROL **Add location**]. <!-- add screenshot? -->
@@ -126,7 +127,7 @@ You need to configure Customer Journey Analytics with the necessary information 
    | [!UICONTROL **Location description**] | Provide a short description of the account to help differentiate it from other accounts of the same account type. |
    | [!UICONTROL **Location accounts**] | Select the location account that you created in [Add an account](#add-an-account). | 
 
-1. In the [!UICONTROL **Account properties**] section, specify information specific to the account type of your location account.  
+1. In the [!UICONTROL **Location properties**] section, specify information specific to the account type of your location account.  
 
    For configuration instructions, expand the section below that corresponds to the account type that you selected in the [!UICONTROL **Location accounts**] field. 
 
