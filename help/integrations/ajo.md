@@ -58,6 +58,7 @@ You can create the following dimensions in a data view to achieve approximate pa
 | Treatment Name | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | Component type: Dimension<br>Context Labels: Experimentation Variant |
 | Email Delivery Failure Reason | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Component type: Dimension |
 | Email Delivery Exclusion Reason | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Component type: Dimension |
+| Element Label | `_experience.decisioning.propositionAction.label` | Component type: Dimension |
 
 {style="table-layout:auto"}
 
@@ -76,6 +77,11 @@ You can create the following metrics in a data view to achieve approximate parit
 | Sends | The number of messages that email providers accepted. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric<br>Include exclude values: Equals `sent` |
 | Spam Complaints | The count of spam complaints. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `spam_complaint` |
 | Unsubscribes | The count of unsubscribes. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `unsubscribe` |
+| Edge Sends | The number of times the edge network sends a message to either the Web or Mobile SDK | Use the schema string element `_experience.decisioning.propositionEventType.send` |
+| Inbound Displays | The number of times a Web or InApp message is shown to the user | Use the schema string element `_experience.decisioning.propositionEventType.display` |
+| Inbound Clicks | The count of Web or InApp message clicks | Use the schema string element `_experience.decisioning.propositionEventType.interact` |
+| InApp Triggers | The number of times the decisioning engine suggested the message should be displayed. The Mobile SDK could override the decision reducing the number of actual displays. | Use the schema string element `_experience.decisioning.propositionEventType.trigger` |
+| InApp Dismissals | The number of times an InApp message is removed from the UI by the SDK | Use the schema string element `_experience.decisioning.propositionEventType.dismiss` |
 
 {style="table-layout:auto"}
 
