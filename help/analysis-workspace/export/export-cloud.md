@@ -22,15 +22,15 @@ Exporting full table data to the cloud allows you to:
   
 * Export full tables that contain thousands or millions of rows. Other export methods allow a maximum of 50,000 rows.
 
-* Breakdown a variable by more than Workspace limits (5 breakdowns) <!-- does this apply to the other export methods also? -->
+* Break down a variable by more than the current Workspace limitations (5 breakdowns). <!-- does this apply to the other export methods also? -->
 
-* Supports calculated metrics
+* Include calculated metrics in the exported data.
 
-* Data output is structured as concatenated values (like Data Warehouse for Adobe Analytics).
+* Structure data output as concatenated values (like Data Warehouse for Adobe Analytics).
 
-* Send exported data ad hoc or on a schedule. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md))
+* Send exported data ad hoc or on a schedule. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
 
-* Export files in CSV or PDF format. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md))
+* Export files in CSV or PDF format. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
 
 ## Export full tables from Analysis Workspace
 
@@ -60,3 +60,29 @@ To export a full table from Analysis Workspace:
    |  | B3 | 
 
 1. Select ...
+
+## Manage existing full-table exports
+
+After you export a full table as described in the sections above, the exports are available on the [!UICONTROL Exports] page. 
+
+You can edit, re-export, duplicate, tag, pause, or delete existing exports:
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. On the [!UICONTROL **Exports**] page, select one or more existing exports.
+
+   <!-- add screenshot? -->
+
+1. Select one of the following options:
+
+   |Option | Function | 
+   |---------|----------|
+   | Edit | B1 | 
+   | Export now | B2 | 
+   | Duplicate | B3 | 
+   | Tag | B3 | 
+   | Pause | B3 | 
+   | Delete | B3 | 
+
+
+
