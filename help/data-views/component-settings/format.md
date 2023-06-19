@@ -45,7 +45,7 @@ To display a currency for a metric:
 
 To enable the conversion of a currency for a metric:
    
--   Set up your CJA connection to contain at least one event dataset that holds a currency code dimension for every event containing a currency metric. That currency code dimension uses an alphabetic currency code conforming to the [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard for representing currencies. For example USD for $, EUR for &euro;, GBP for £. 
+-   Set up your Customer Journey Analytics connection to contain at least one event dataset that holds a currency code dimension for every event containing a currency metric. That currency code dimension uses an alphabetic currency code conforming to the [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard for representing currencies. For example USD for $, EUR for &euro;, GBP for £. 
   
 -   You have (optionally) applied the [!UICONTROL Currency Code] context label to one or more dimensions that define currency codes available in your dataset.
 

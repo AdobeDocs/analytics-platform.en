@@ -1,5 +1,5 @@
 ---
-title: How to create a data block using Report Builder in CJA
+title: How to create a data block using Report Builder in Customer Journey Analytics
 description: Describes how to create a data block.
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder

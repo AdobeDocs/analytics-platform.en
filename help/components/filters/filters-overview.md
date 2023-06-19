@@ -106,7 +106,7 @@ Event containers include values-based, single-page breakdowns:
 
 ## Out-of-the-box filter template {#template}
 
-Traditional Analytics comes with numerous out-of-the-box template filters (filters) and calculated metrics. Many of them do not apply in CJA, or have to be renamed or recreated. Others depend on a solution for context-aware variables in CJA.
+Traditional Analytics comes with numerous out-of-the-box template filters (filters) and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
 
 | Filter Name | Description |
 | --- | --- |

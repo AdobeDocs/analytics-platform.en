@@ -25,4 +25,4 @@ To specify the metric type when building a calculated metric:
 
 ## Attribution
 
-For information about attribution in CJA, see [Attribution component settings](/help/data-views/component-settings/attribution.md).
+For information about attribution in Customer Journey Analytics, see [Attribution component settings](/help/data-views/component-settings/attribution.md).

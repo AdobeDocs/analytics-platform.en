@@ -41,7 +41,7 @@ The cohort table allows you to see how long it typically takes for users to call
 
 ## Use advanced marketing attribution
 
-CJA allows you to use sophisticated attribution models on cross-channel data. In the following example, you can see a comparison of applying Last touch, first touch, u-shaped, and algorithmic attribution of revenue to the Google Analytics Channel Grouping dimension.
+Customer Journey Analytics allows you to use sophisticated attribution models on cross-channel data. In the following example, you can see a comparison of applying Last touch, first touch, u-shaped, and algorithmic attribution of revenue to the Google Analytics Channel Grouping dimension.
 
 ![Marketing attribution](../assets/mktg-attribution.png)
 
@@ -57,6 +57,6 @@ You can also attribute your Web and App revenue to your Google Ad Content. This 
 
 ![Google ad](../assets/google-ad.png)
 
-Combining datasets in CJA allows you to see in this example that online ads were having any impact to products purchased on your mobile app. The following visualization shows that mobile app revenue from Google Ads represents an extra $14k - $15k, compared to the web alone.
+Combining datasets in Customer Journey Analytics allows you to see in this example that online ads were having any impact to products purchased on your mobile app. The following visualization shows that mobile app revenue from Google Ads represents an extra $14k - $15k, compared to the web alone.
 
 ![Google ad 2](../assets/google-ad2.png)

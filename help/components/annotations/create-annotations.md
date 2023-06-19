@@ -20,7 +20,7 @@ However, Admins can give the [!UICONTROL Annotation Creation] permission (Analyt
 | **Right-click a point in a [!UICONTROL Line] graph.** | The [!UICONTROL Annotation builder] opens. Note that, by default, annotations created this way are visible only in the project where they were created. But you can make them available to all projects. Also notice that the date/s and any metric, etc., have already been populated.<p>![](assets/annotate-line.png) |
 | **In Workspace, go to [!UICONTROL Components] > [!UICONTROL Create annotation].** | The [!UICONTROL Annotation builder] opens. |
 | **Use this hotkey** to open the Annotation builder: (PC) `ctrl` `shift` + o, (Mac) `shift` + `command` + o | Note that by using the hotkey to create an annotation, you create a single-day annotation for the current date, without any pre-selected scope (metrics or dimensions). |
-| **Use the [CJA Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The CJA Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
+| **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
 
 1. Fill in the [!UICONTROL Annotation builder] elements.
 

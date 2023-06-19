@@ -14,7 +14,7 @@ Intelligent captions are geared towards:
 * Analysts who need narratives to share with other users. Analysts need these insights to be able to provide context to their users.
 * Business users who want to quickly discover high-level takeaways.
 
-Captions are available to all CJA users and do not require special permissions. 
+Captions are available to all Customer Journey Analytics users and do not require special permissions. 
 
 ## Launch intelligent captions {#launch}
 

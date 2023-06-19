@@ -16,7 +16,7 @@ It lets you:
 
 [Flow Visualization video tutorial](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
 
-## Inter-Dimensional Flows {#section_7AA325E432C846B0AC51E70CCE79B4C0}
+## Inter-Dimensional Flows {#in}
 
 You can show the [flow between dimensions](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). For example, you might combine pages and departments in one diagram. In this case, your flow might go from the home page, to the Men page, then to the Shoes department.
 

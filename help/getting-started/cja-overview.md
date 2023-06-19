@@ -3,13 +3,13 @@ title: Customer Journey Analytics overview
 description: Learn how Customer Journey Analytics lets you use Analysis Workspace with data from Experience Platform.
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Customer Journey Analytics Basics
 ---
 # Customer Journey Analytics overview
 
 Customer Journey Analytics is an Analytics capability that lets you use the power of Analysis Workspace with data from Adobe Experience Platform. It can break down, filter, query, and visualize years' worth of data, and is combined with Platform's ability to hold all kinds of data schemas and types. Using the **Experience Data Model (XDM)**, data can be uniformly represented and organized, ready for combination and exploration. **Experience Query Services** allows you to use SQL-compatible tools and frameworks to query and manipulate all your data.
 
-The high-level CJA architecture is shown here:
+The high-level Customer Journey Analytics architecture is shown here:
 
 ![architecture](assets/cja-architecture.png)
 
@@ -17,7 +17,7 @@ Here is a video overview of Customer Journey Analytics:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
 
-## Comparing CJA to Traditional Adobe Analytics
+## Comparing Customer Journey Analytics to Traditional Adobe Analytics
 
 Customer Journey Analytics expands the scope of Adobe Analytics by offering easy to use cross-channel capabilities and removing limitations in previous versions of Adobe Analytics. Some notable improvements are:
 
@@ -47,7 +47,7 @@ Customer Journey Analytics lets you:
 
 Before you can start using Customer Journey Analytics, the following prerequisites must be met:
 
-* Your organization has an active contract with Adobe Analytics for Select, Prime, or Ultimate with the Customer Journey Analytics add-on. If you are not sure what type of contract you have, or are not sure if you have the CJA add-on, contact your Adobe Account Team.
+* Your organization has an active contract with Adobe Analytics for Select, Prime, or Ultimate with the Customer Journey Analytics add-on. If you are not sure what type of contract you have, or are not sure if you have the Customer Journey Analytics add-on, contact your Adobe Account Team.
 * Your organization has been provisioned for Adobe Experience Platform.
 * You can also purchase Customer Journey Analytics as a standalone product, without the need for Adobe Analytics.
 
@@ -57,7 +57,7 @@ Refer to the [Access Control](/help/admin/cja-access-control.md) topic.
 
 ## Terminology updates
 
-Several features in CJA have been renamed, when compared to traditional Adobe Analytics, to align with industry standards. Some updated terminology includes:
+Several features in Customer Journey Analytics have been renamed, when compared to traditional Adobe Analytics, to align with industry standards. Some updated terminology includes:
 
 * Segments are now known as 'Filters'.
 * Virtual Report Suites are now known as 'Data views'.

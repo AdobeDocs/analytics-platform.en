@@ -6,11 +6,11 @@ exl-id: 262a219a-315a-4c9b-a400-48cff119d45d
 ---
 # Long-tail dimension item
 
-When using a dimension that contains a large number of unique values, sometimes you a warning that says **[!UICONTROL Results Truncated]**.  This means that the reporting architecture CJA uses contained too many unique values for it to process efficiently. As a result. it removed the items that it deemed  least important.
+When using a dimension that contains a large number of unique values, sometimes you a warning that says **[!UICONTROL Results Truncated]**.  This means that the reporting architecture Customer Journey Analytics uses contained too many unique values for it to process efficiently. As a result. it removed the items that it deemed  least important.
 
-## CJA processing architecture and unique values
+## Customer Journey Analytics processing architecture and unique values
 
-CJA processes reports at the time they are run, distributing the combined dataset to a number of servers. Data per processing server is grouped by Person ID, meaning that a single processing server contains all data for a given person. Once the server finishes processing, it hands its subset of processed data to an aggregator server. All subsets of processed data are combined and returned in the form of a Workspace report.
+Customer Journey Analytics processes reports at the time they are run, distributing the combined dataset to a number of servers. Data per processing server is grouped by Person ID, meaning that a single processing server contains all data for a given person. Once the server finishes processing, it hands its subset of processed data to an aggregator server. All subsets of processed data are combined and returned in the form of a Workspace report.
 
 If any individual server aggregates a result set which is over a size threshold, then it will truncate the results before sending them back. This keeps the network traffic and aggregation within bounds to allow for quick reporting.  Because it truncates the results with only the view of its own data, it is possible (though unlikely) that the items shown in Analysis Workspace have incorrect metric values.
 
@@ -20,7 +20,7 @@ The server chooses which items to discard based on the metric used for sorting. 
 
 In previous versions of Adobe Analytics, a different processing architecture was used. Data was processed at the time it was collected. Dimension items were placed under 'Low-Traffic' after a dimension reached 500K unique values, and applied more aggressive filtering at 1M unique values. The "Unique value" count was reset at the beginning of each calendar month. Processed data was permanent; there was no way to get existing data out of 'Low-Traffic'.
 
-In CJA, dimension items are only truncated if the results of a report are too large. Processed data is not permanent, which means that you can reduce or eliminate the truncation by modifying your report.
+In Customer Journey Analytics, dimension items are only truncated if the results of a report are too large. Processed data is not permanent, which means that you can reduce or eliminate the truncation by modifying your report.
 
 ## Reduce the 'Long Tail' dimension item
 

@@ -68,7 +68,7 @@ For detailed information about the various options available in the Data Diction
 
 Customer Journey Analytics administrators are responsible for maintaining a healthy Data Dictionary for their organization, as described in [Monitor Data Dictionary Health](/help/components/data-dictionary/monitor-data-dictionary-health.md).
 
-As part of this process, CJA administrators can edit information about each component in the data dictionary, as described in [Edit component entries in the Data Dictionary](/help/components/data-dictionary/edit-entries-data-dictionary.md).
+As part of this process, Customer Journey Analytics administrators can edit information about each component in the data dictionary, as described in [Edit component entries in the Data Dictionary](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 
 ## Move, minimize, or close the Data Dictionary
 
