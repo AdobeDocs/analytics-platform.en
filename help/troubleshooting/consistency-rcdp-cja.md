@@ -2,7 +2,7 @@
 description: Explains what factors influence the consistency of metrics and audience membership counts between Real-time Customer Data Platform (Real-time CDP) and Customer Journey Analytics.
 title: Consistency of metrics and audience membership counts between Real-time CDP and Customer Journey Analytics
 role: Admin
-feature: Customer Journey Analytics Basics
+feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
 ---
 

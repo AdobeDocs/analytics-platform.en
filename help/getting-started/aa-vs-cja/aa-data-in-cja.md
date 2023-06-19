@@ -3,7 +3,7 @@ title: Utilizing Adobe Analytics report suite data in Customer Journey Analytics
 description: How to configure Adobe Analytics report suites for ingestion into Adobe Experience Platform and Customer Journey Analytics
 role: User
 solution: Customer Journey Analytics
-feature: Customer Journey Analytics Basics
+feature: CJA Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
 ---
 # Utilizing Adobe Analytics report suite data in Customer Journey Analytics

@@ -3,7 +3,7 @@ title: Customer Journey Analytics overview
 description: Learn how Customer Journey Analytics lets you use Analysis Workspace with data from Experience Platform.
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
-feature: Customer Journey Analytics Basics
+feature: CJA Basics
 ---
 # Customer Journey Analytics overview
 

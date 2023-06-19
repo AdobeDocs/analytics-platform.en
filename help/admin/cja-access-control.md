@@ -2,7 +2,7 @@
 title: Customer Journey Analytics Access Control
 description: Learn about ways to implement access control in Customer Journey Analytics.
 solution: Customer Journey Analytics
-feature: Customer Journey Analytics Basics
+feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 ---
