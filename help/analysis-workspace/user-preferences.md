@@ -11,9 +11,13 @@ You can manage settings for Analysis Workspace and its related components for al
 
 ## Update preferences
 
-1. In Customer Journey Analytics, go to the [!UICONTROL **Project**] landing page, then select [!UICONTROL **Preferences**].
+1. In Customer Journey Analytics, go to the [!UICONTROL **Projects**] landing page, then select [!UICONTROL **Edit preferences**].
 
    ![User preferences](assets/user-preferences.png) 
+
+   Or
+
+   Product Administrators can update IMS Organization preferences by going to the [!UICONTROL **Components**] tab, then selecting [!UICONTROL **Preferences**].
 
 1. For information about the available preferences on each tab, continue with any of the following sections in this article:
 
