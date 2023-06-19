@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Customer Journey Analytics (CJA) release notes (June 2023)
 
-**Last update**: June 15, 2023
+**Last update**: June 19, 2023
 
 Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -19,7 +19,7 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 | **Derived fields** | This represents the initial release of Derived fields. A derived field allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. You can further define the derived field as a component (metric or dimension) in data views and then use the derived field as a component in Workspace.<p>This release supports a marketing channels template and the following functions:</p><ul><li>Concatenate</li><li>Case When</li><li>Find & Replace</li><li>Lookup</li><li>URL Parse</li></ul> <p>[Learn more](/help/data-views/derived-fields/derived-fields.md)</p> | May 10, 2023 | June 14, 2023 | 
 | **PowerBI & Tableau access to CJA data views** | The Customer Journey Analytics (CJA) SQL Connector enables SQL access to data views that you have defined in CJA. Data engineers and analysts more familiar with Power BI, Tableau, or other business intelligence and visualization tools can now create reports and dashboards based on the same data views that CJA users are using for their Analysis Workspace projects. [Learn more](/help/data-views/sql-connector.md)|  | June 30, 2023 |
 | **Experience Edge geo lookups** | You will be able to build reports using geolocation data in CJA once Experience Edge Geo Lookups are enabled for your datastream. |  | June 30, 2023 |
-| **Expanded lookup support to profile and lookup data** | You will be able to add lookup datasets to not only event datasets, but also to profile and lookup datasets.  | June 21, 2023 | July 12, 2023 |
+| **Expanded lookup support to profile and lookup data** | You will be able to add lookup datasets to not only event datasets, but also to profile and lookup datasets.  | June 28, 2023 | July 12, 2023 |
 | **Currency conversion support** | Currency conversion is supported as part of formatting a metric component in a Data view. [Learn more](../data-views/component-settings/format.md#currency) | June 7, 2023 | June 21, 2023 | 
 
 {style="table-layout:auto"}
