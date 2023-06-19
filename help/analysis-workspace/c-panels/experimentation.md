@@ -10,7 +10,7 @@ The **[!UICONTROL Experimentation]** panel lets analysts compare different user 
 
 >[!IMPORTANT]
 >
->At this point, [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) data brought into Adobe Experience Platform via the Analytics Source Connector **cannot** be analyzed in the [!UICONTROL Experimentation] panel. We expect a resolution to this issue in 2023.
+>At this point, [Adobe Analytics for Target|https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en] (A4T) data *cannot* be analyzed in the Experimentation panel. 
 
 ## Access Control {#access}
 
@@ -22,7 +22,7 @@ Two new advanced functions were added: [!UICONTROL Lift] and [!UICONTROL Confide
 
 ## Step 1: Create connection to experiment dataset/s {#connection}
 
-The recommended data schema is for the experiment data to be in an [Object array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) that contains the experiment and variant data in two separate dimensions. If you have your experiment data in a single dimension with experiment and variant data in a delimited string, you can use the [substring](/help/data-views/component-settings/substring.md) setting in data views to split them into two for use in the panel.
+The recommended data schema is for the experiment data to be in an [Object array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) that contains the experiment and variant data in two separate dimensions. Both dimensions need to be in a **single** object array. If you have your experiment data in a single dimension with experiment and variant data in a delimited string, you can use the [substring](/help/data-views/component-settings/substring.md) setting in data views to split them into two for use in the panel.
 
 After your experiment data has been [ingested](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) into Adobe Experience Platform, [create a connection in CJA](/help/connections/create-connection.md) to one or more experiment dataset/s.
 
@@ -80,9 +80,9 @@ The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTRO
 
 ## Step 5: Interpret the results {#interpret}
 
-1. **Experiment is Conclusive**: Every time you view the experimentation report, Adobe analyzes the data that has accumulated in the experiment up to this point and will declare an experiment to be "Conclusive" when the anytime valid confidence crosses a threshold of 95% for *at least one* of the variants (with a Bonferonni correction applied when there are more than two arms, to correct for multiple hypothesis testing).  
+1. **Experiment is Conclusive**: Every time you view the experimentation report, Adobe analyzes the data that has accumulated in the experiment up to this point and will declare an experiment to be "Conclusive" when the anytime valid confidence crosses a threshold of 95% for *at least one* of the variants (with a Benjamini-Hochberg correction applied when there are more than two arms, to correct for multiple hypothesis testing).  
 
-2. **Best Performing Variant**: When an experiment is declared to be conclusive, the variant with the highest conversion rate is labeled as the "best performing variant". Note that this variant must either be the control or baseline variant, or one of the variants that crosses the 95% anytime valid confidence threshold (with Bonferonni corrections applied).
+2. **Best Performing Variant**: When an experiment is declared to be conclusive, the variant with the highest conversion rate is labeled as the "best performing variant". Note that this variant must either be the control or baseline variant, or one of the variants that crosses the 95% anytime valid confidence threshold (with Benjamini-Hochberg corrections applied).
 
 3. **Conversion Rate**: The conversion rate that is shown is a ratio of the success metric value, to the normalizing metric value. Note that this may sometimes be larger than 1, if the metric is not binary (1 or 0 for each unit in the experiment)
 
