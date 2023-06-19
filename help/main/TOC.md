@@ -7,13 +7,13 @@ solution: Customer Journey Analytics
 type: Documentation
 index: yes
 user-guide-title: Customer Journey Analytics Guide
-user-guide-description: Learn about Customer Journey Analytics (CJA) and how to use Analysis Workspace with data from Experience Platform.
+user-guide-description: Learn about Adobe Customer Journey Analytics and how to use Analysis Workspace with data from Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
 ---
 
-# Customer Journey Analytics Guide {#using}
+# Adobe Customer Journey Analytics Guide {#using}
 
-+   [Customer Journey Analytics Guide](../getting-started/cja-landing.md)
++   [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
 
 +   Release Notes {#releases}
     + [Latest release](../release-notes/latest.md)
@@ -21,15 +21,15 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [2022 releases](../release-notes/2022.md)
     + [2021 releases](../release-notes/2021.md)
     + [2020 releases](../release-notes/2020.md)
-    + [CJA releases](../release-notes/releases.md)
-    + [CJA documentation updates](../release-notes/doc-changes.md)
+    + [Customer Journey Analytics releases](../release-notes/releases.md)
+    + [Customer Journey Analytics documentation updates](../release-notes/doc-changes.md)
 
 +   Getting Started {#cja-overview}
     + [Customer Journey Analytics overview](../getting-started/cja-overview.md)
     + [Quick start guide](../getting-started/cja-getting-started.md)
     + [Landing page](../getting-started/landing.md)
     + [Frequently asked questions](../getting-started/cja-faq.md)
-    + [Compare CJA to BI solutions](../getting-started/cja-vs-bi.md)
+    + [Compare Customer Journey Analytics to BI solutions](../getting-started/cja-vs-bi.md)
 
 +   Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
     +   [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
@@ -38,7 +38,7 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
         + [Customer Journey Analytics feature support](../getting-started/aa-vs-cja/cja-aa.md)
         + [Compare terminology for Analytics data passed through the Analytics Source Connector](../getting-started/aa-vs-cja/terminology.md)
-        + [Compare data processing across Adobe Analytics and CJA](../getting-started/aa-vs-cja/data-processing-comparisons.md)
+        + [Compare data processing across Adobe Analytics and Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
         + [Virtual reporting environments and sandbox environments](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
         + [Processing Rules, VISTA and classifications versus Data Prep](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
         + [AAID, ECID, AACUSTOMID and the Analytics Source Connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
@@ -288,11 +288,11 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Cross-Channel Analytics FAQ](../cca/faq.md)
 
 +   Adobe integrations {#integrations}
-    + [Integrate Adobe solutions with CJA overview](/help/integrations/overview.md)
+    + [Integrate Adobe solutions with Customer Journey Analytics overview](/help/integrations/overview.md)
     + [Integrate Adobe Analytics with Customer Journey Analytics](/help/integrations/aa.md)
-    + [Integrate Journey Optimizer data with CJA](/help/integrations/ajo.md)
-    + [Integrate Decision Management data with CJA](/help/integrations/ajo-od.md)
-    + [Integrate Customer AI with CJA](/help/integrations/customer-ai.md)
+    + [Integrate Journey Optimizer data with Customer Journey Analytics](/help/integrations/ajo.md)
+    + [Integrate Decision Management data with Customer Journey Analytics](/help/integrations/ajo-od.md)
+    + [Integrate Customer AI with Customer Journey Analytics](/help/integrations/customer-ai.md)
 
 +   Data Governance {#cja-privacy}
     + [Data Governance](../privacy/privacy-overview.md)
@@ -303,14 +303,14 @@ breadcrumb-title: Customer Journey Analytics Guide
     +   [Customer Journey Analytics use cases](../use-cases/cja-usecases.md)
 
     +   Google Analytics data {#ga}
-        + [Migrate data from Google Analytics to CJA overview](../use-cases/ga/overview.md)
+        + [Migrate data from Google Analytics to Customer Journey Analytics overview](../use-cases/ga/overview.md)
         + [Ingest Google Analytics historical data into Platform](../use-cases/ga/backfill.md)
         + [Configure streaming Google Analytics data into Platform](../use-cases/ga/streaming.md)
-        + [Report on Google Analytics data in CJA](../use-cases/ga/report.md)
+        + [Report on Google Analytics data in Customer Journey Analytics](../use-cases/ga/report.md)
 
     +   Data ingestion {#data-ingestion}
-        + [Ingest Marketo Engage data into AEP and report in CJA](../use-cases/data-ingestion/marketo.md)
-        + [Ingest AEP audiences into CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
+        + [Ingest Marketo Engage data into Adobe Experience Platform and report in Customer Journey Analytics](../use-cases/data-ingestion/marketo.md)
+        + [Ingest Adobe Experience Platform audiences into Customer Journey Analytics](../use-cases/data-ingestion/ingest-aep-segments.md)
     +   Data views {#data-views}
         + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
         + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
@@ -333,15 +333,15 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Access Control](../admin/cja-access-control.md)
     + [View and manage usage](../admin/estimate-usage.md)
     + [Deletion implications](../admin/cja-deletion.md)
-    + [Optimize CJA performance](../admin/optimizing-performance.md)
+    + [Optimize Customer Journey Analytics performance](../admin/optimizing-performance.md)
 
 +   Labs {#labs}
     + [Labs User Guide](../labs/labs.md)
 
 +   Troubleshooting {#troubleshooting}
-    + [Compare your Adobe Analytics data to CJA data](../troubleshooting/compare.md)
-    + [Consistency of metrics and audience membership counts between Real-time CDP and CJA](../troubleshooting/consistency-rcdp-cja.md)
+    + [Compare your Adobe Analytics data to Customer Journey Analytics data](../troubleshooting/compare.md)
+    + [Consistency of metrics and audience membership counts between Real-time CDP and Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
 
-+   [CJA glossary](../getting-started/cja-glossary.md)
++   [Customer Journey Analytics glossary](../getting-started/cja-glossary.md)
 
-+   [CJA API](https://developer.adobe.com/cja-apis/docs/)
++   [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)

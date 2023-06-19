@@ -24,4 +24,4 @@ No value options let you to determine how Analysis Workspace handles situations 
 
 ## Blog post
 
-Here is a related blog post about [handling "no value" in CJA](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+Here is a related blog post about [handling "no value" in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).

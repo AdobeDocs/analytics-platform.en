@@ -64,7 +64,7 @@ Apply regular expressions to a dimension to retrieve the desired value.
 * **[!UICONTROL Output format]**: An optional field that lets you add text or reorder the regex subgroup output. If this field is blank, the string output is the evaluated regex expression.
 * **[!UICONTROL Case sensitive]**: A checkbox that forces the regular expression to be case-sensitive if enabled.
 
-CJA uses a subset of the Perl regex syntax. If the input does not match the regular expression and the **[!UICONTROL Output format]** is blank, [No value options](no-value-options.md) apply. The following expressions are supported:
+Customer Journey Analytics uses a subset of the Perl regex syntax. If the input does not match the regular expression and the **[!UICONTROL Output format]** is blank, [No value options](no-value-options.md) apply. The following expressions are supported:
 
 | Expression | Description |
 | --- | --- |

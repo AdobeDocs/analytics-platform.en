@@ -12,38 +12,38 @@ exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
 
 {{release-limited-testing}}
 
-The [!DNL Customer Journey Analytics (CJA) SQL Connector] enables SQL access to the [data views](./data-views.md) that you have defined in CJA. Your data engineers and analysts might be more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that CJA users are using when creating their Analysis Workspace projects.
+The [!DNL Customer Journey Analytics SQL Connector] enables SQL access to the [data views](./data-views.md) that you have defined in Customer Journey Analytics. Your data engineers and analysts might be more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that Customer Journey Analytics users are using when creating their Analysis Workspace projects.
 
-Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) is the SQL interface to data available in the data lake of Experience Platform. With the [!DNL CJA SQL Connector] enabled, the functionality of [!DNL Query Service] is extended to see your CJA data views as tables or views in a [!DNL Query Service] session. As a result, business intelligence tools that use [!DNL Query Service] as their PostgresSQL interface benefit seamlessly from this extended functionality.
+Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) is the SQL interface to data available in the data lake of Experience Platform. With the [!DNL Customer Journey Analytics SQL Connector] enabled, the functionality of [!DNL Query Service] is extended to see your Customer Journey Analytics data views as tables or views in a [!DNL Query Service] session. As a result, business intelligence tools that use [!DNL Query Service] as their PostgresSQL interface benefit seamlessly from this extended functionality.
 
 The main benefits are:
 
--   No need to recreate an equivalent representation of CJA data views within the BI tool itself. <br/>See [Data view](data-views.md) for more information on the functionality of Data views to understand what must be recreated.<br/>
+-   No need to recreate an equivalent representation of Customer Journey Analytics data views within the BI tool itself. <br/>See [Data view](data-views.md) for more information on the functionality of Data views to understand what must be recreated.<br/>
 
--   Greater consistency in reporting and analysis between BI tools and CJA.
+-   Greater consistency in reporting and analysis between BI tools and Customer Journey Analytics.
   
--   Combine CJA data with other data sources already available in BI tools.
+-   Combine Customer Journey Analytics data with other data sources already available in BI tools.
 
 ## Prerequisites
 
 To use this functionality, you have to 
 
-<!---   Enable the [!UICONTROL CJA SQL Connector] in your Experience Platform organization. -->
+<!---   Enable the [!UICONTROL Customer Journey Analytics SQL Connector] in your Experience Platform organization. -->
 
 -   Configure the functionality for the relevant product profiles, user groups and/or individual users.<br/>
     Users must have access to:
     - Experience Platform Query Service, 
-    - CJA  Workspace projects, and
-    - CJA Data views they want to use.
+    - Customer Journey Analytics  Workspace projects, and
+    - Customer Journey Analytics Data views they want to use.
 
--   Use expiring on non-expiring credentials to connect BI tools to the CJA SQL Connector. Thr [Credentials guide](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) provides more information on setting expiring credentials or non-expiring credentials.
+-   Use expiring on non-expiring credentials to connect BI tools to the Customer Journey Analytics SQL Connector. Thr [Credentials guide](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) provides more information on setting expiring credentials or non-expiring credentials.
 
-See [Access Control](../admin/cja-access-control.md) in the CJA Administration section for additional information.
+See [Access Control](../admin/cja-access-control.md) in the Customer Journey Analytics Administration section for additional information.
 
 
 ## Usage
 
-To use the [!DNL CJA SQL Connector] functionality, you can either use SQL directly or use the drag and drop experience available in the specific BI tool. 
+To use the [!DNL Customer Journey Analytics SQL Connector] functionality, you can either use SQL directly or use the drag and drop experience available in the specific BI tool. 
 
 ### SQL
 
@@ -83,7 +83,7 @@ See [Query Editor UI guide](https://experienceleague.adobe.com/docs/experience-p
 
 ### BI Tools
 
-Currently, the CJA SQL Connector is supported and tested for Power BI and Tableau only. Other BI tools using the PSQL interface might work as well but are not yet supported officially.
+Currently, the Customer Journey Analytics SQL Connector is supported and tested for Power BI and Tableau only. Other BI tools using the PSQL interface might work as well but are not yet supported officially.
 
 +++ Power BI
 
@@ -116,7 +116,7 @@ Currently, the CJA SQL Connector is supported and tested for Power BI and Tablea
         4.  You are prompted for **[!UICONTROL **Username**]** and **[!UICONTROL **Password**]**. Use the equivalent parameters from Experience Platform Queries [!UICONTROL Credentials].
 
 
-    5.  After successful login, the CJA Data View tables appear in Power BI's **[!UICONTROL **Navigator**]**. Data View tables are identified by using `dv_` in their names.
+    5.  After successful login, the Customer Journey Analytics Data View tables appear in Power BI's **[!UICONTROL **Navigator**]**. Data View tables are identified by using `dv_` in their names.
 
 
     6.  Select the data view tables that you want to use and select **[!UICONTROL **Load**]**.
@@ -161,7 +161,7 @@ Currently, the CJA SQL Connector is supported and tested for Power BI and Tablea
 
         7.  Select **[!UICONTROL **Sign In**]**.
 
-    4.  CJA data views show up as tables in the **[!UICONTROL **Table**]** list. Data view tables are prefixed with `dv_`.
+    4.  Customer Journey Analytics data views show up as tables in the **[!UICONTROL **Table**]** list. Data view tables are prefixed with `dv_`.
    
     5.  Drag the tables that you want to use on the canvas.
 
@@ -181,9 +181,9 @@ If you want to use the data view IDs as the table names, you can add the optiona
 
 ### Data governance
 
-The data governance-related settings in Customer Journey Analytics are inherited from Adobe Experience Platform. The integration between CJA and Adobe Experience Platform Data Governance allows for labeling of sensitive CJA data and enforcement of privacy policies.
+The data governance-related settings in Customer Journey Analytics are inherited from Adobe Experience Platform. The integration between Customer Journey Analytics and Adobe Experience Platform Data Governance allows for labeling of sensitive Customer Journey Analytics data and enforcement of privacy policies.
 
-Privacy labels and policies that were created on datasets consumed by Experience Platform can be surfaced in the CJA data views workflow. Therefore, data queried using the CJA SQL Connector show appropriate warnings or errors when not complying with the privacy labels and policies defined.
+Privacy labels and policies that were created on datasets consumed by Experience Platform can be surfaced in the Customer Journey Analytics data views workflow. Therefore, data queried using the Customer Journey Analytics SQL Connector show appropriate warnings or errors when not complying with the privacy labels and policies defined.
 
 ### List Data Views
 
@@ -231,7 +231,7 @@ See table below for examples of the SQL you can use.
 | Metric totals | <pre>SELECT SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'</pre> |
 | Multi-dimension<br/>breakdowns<br/>and top-distincts | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY 1, 2<br/>ORDER BY 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>FROM dv1</pre> |
 | Sub select:<br/>Additional result<br/>filtering | <pre>SELECT dim1, m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'</br>  GROUP BY dim1<br/>)<br/>WHERE dim1 in ('A', 'B')</pre> |
-| Sub select:<br/>Joining with<br/>dataset not in<br/>CJA | <pre>SELECT b.key, a.dim1, a.m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  GROUP BY dim1<br/>) a<br/>LEFT JOIN lookups b ON a.dim1 = b.key</pre> |
+| Sub select:<br/>Joining with<br/>dataset not in<br/>Customer Journey Analytics | <pre>SELECT b.key, a.dim1, a.m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  GROUP BY dim1<br/>) a<br/>LEFT JOIN lookups b ON a.dim1 = b.key</pre> |
 | Sub select:<br/>Querying across<br/>data-views | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  GROUP BY dim1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FROM dv2<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  GROUP BY dim2<br/>GROUP BY key<br/>ORDER BY total</pre> |
 | Sub select: <br/>Layered source, <br/>filtering, <br/>and aggregation | Layered using subselects:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  SELECT \_.dim1,\_.m1<br/>  FROM (<br/>    SELECT \* FROM dv1<br/>    WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  ) \_<br/>  WHERE \_.dim1 in ('A', 'B', 'C')<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>Layers using CTE WITH:<br/><pre>WITH rows AS (<br/>  WITH \_ AS (<br/>    SELECT * FROM data_ares<br/>    WHERE \`timestamp\` BETWEEN '2021-01-01' AND '2021-02-01'<br/>  )<br/>  SELECT _.item, _.units FROM _<br/>  WHERE _.item IS NOT NULL<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>FROM rows WHERE rows.item in ('A', 'B', 'C')<br/>GROUP BY rows.item</pre> |
 | Selects where the<br/>metrics come before<br/> or are mixed with<br/>the dimensions | <pre>SELECT SUM(metric1) AS m1, dim1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY 2</pre> |
@@ -266,7 +266,7 @@ You can use:
 
 #### Counting Distincts
 
-Due to the underlying nature of how CJA works, the only dimension you can get an exact distinct count for is the `adobe_personid` dimension. The following SQL statements `SELECT COUNT(DISTINCT adobe_personid)` or `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` return the value of the default persons metric which is the count of distinct people. For other dimensions, an approximate distinct count is returned.
+Due to the underlying nature of how Customer Journey Analytics works, the only dimension you can get an exact distinct count for is the `adobe_personid` dimension. The following SQL statements `SELECT COUNT(DISTINCT adobe_personid)` or `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` return the value of the default persons metric which is the count of distinct people. For other dimensions, an approximate distinct count is returned.
 
 #### Conditional Metrics
 

@@ -45,6 +45,6 @@ Within identityMap:
 Otherwise, AAID is marked as the primary identity for the event.
 * AACUSTOMID is never marked as the Primary ID for the event. However, if AACUSTOMID is present, then AAID is based on AACUSTOMID as per the discussion above.
 
-## CJA and Primary ID
+## Customer Journey Analytics and Primary ID
 
-As far as CJA is concerned, the definition of Primary ID is only important if you decide to use the Primary ID as the Person ID. Doing so is not mandatory, however. You may choose some other identity column as the Person ID.
+As far as Customer Journey Analytics is concerned, the definition of Primary ID is only important if you decide to use the Primary ID as the Person ID. Doing so is not mandatory, however. You may choose some other identity column as the Person ID.

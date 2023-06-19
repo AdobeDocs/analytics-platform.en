@@ -7,7 +7,7 @@ feature: Data Views
 ---
 # Standard component reference
 
-Most dimensions and metrics in CJA are based on schema elements from your Adobe Experience Platform dataset. However, several components are available to add to a data view regardless of the connection that you use.
+Most dimensions and metrics in Customer Journey Analytics are based on schema elements from your Adobe Experience Platform dataset. However, several components are available to add to a data view regardless of the connection that you use.
 
 [!UICONTROL Standard components] are components that are not generated from dataset schema fields but are instead system generated. Some system components are required to facilitate reporting capabilities in Analysis Workspace, while other system components are optional.
 
@@ -48,7 +48,7 @@ Optional Standard components are available under **[!UICONTROL Data views]** > *
 |[!UICONTROL  Month of Year] | Time-parting dimension | January - December |
 | [!UICONTROL First-time Sessions] | Metric | A person's defined first session within the reporting window. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) |
 | [!UICONTROL Return Sessions] | Metric | The number of sessions that were not a person's first-time session. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) |
-| [!UICONTROL Person ID] | Dimension | Each dataset schema defined in the Experience Platform can have its own set of one or more identities defined and associated with an Identity Namespace. Any of these can be used as the Person ID. Examples include Cookie ID, Stitched ID, User ID, Tracking Code, etc. The [!UICONTROL Person ID] dimension is the foundation of combining datasets and identifying unique persons in CJA.<p>Possible use cases include:<ul><li>Creating a filter on a specific person ID value to filter everything down to that user's behavior.</li><li>Debugging: making sure that the data for a specific cookie ID (or a specific customer ID) is there.</li><li>Identifying the users who called in to a call center.</li></ul>  |
+| [!UICONTROL Person ID] | Dimension | Each dataset schema defined in the Experience Platform can have its own set of one or more identities defined and associated with an Identity Namespace. Any of these can be used as the Person ID. Examples include Cookie ID, Stitched ID, User ID, Tracking Code, etc. The [!UICONTROL Person ID] dimension is the foundation of combining datasets and identifying unique persons in Customer Journey Analytics.<p>Possible use cases include:<ul><li>Creating a filter on a specific person ID value to filter everything down to that user's behavior.</li><li>Debugging: making sure that the data for a specific cookie ID (or a specific customer ID) is there.</li><li>Identifying the users who called in to a call center.</li></ul>  |
 | [!UICONTROL Person ID namespace] | Dimension | Which type of ID the [!UICONTROL Person ID] consists of. Examples: `email address`, `cookie ID`, `Analytics ID`, etc. |
 | [!UICONTROL Quarter of Year] | Time-parting dimension | Q1, Q2, Q3, Q4 |
 | [!UICONTROL Repeat session] | Metric | The number of sessions that were not a person's first-ever session. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) |

@@ -7,11 +7,11 @@ exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 ---
 # Dimensions with very high cardinality
 
-Customer Journey Analytics (CJA) does not place limits on the number of unique values or dimension items that can be reported on within a single dimension. However, in some circumstances, dimensions with an extremely large number of unique items - also known as high-cardinality dimensions - may impact what can be reported on. 
+Customer Journey Analytics (Customer Journey Analytics) does not place limits on the number of unique values or dimension items that can be reported on within a single dimension. However, in some circumstances, dimensions with an extremely large number of unique items - also known as high-cardinality dimensions - may impact what can be reported on. 
 
 ## Limitations
 
-Depending on the number of events in a specific CJA Connection, the following two limitations may occur in conjunction with high-cardinality dimensions: 
+Depending on the number of events in a specific Customer Journey Analytics Connection, the following two limitations may occur in conjunction with high-cardinality dimensions: 
 
 ### 1. Row counts may not be precisely reportable
 

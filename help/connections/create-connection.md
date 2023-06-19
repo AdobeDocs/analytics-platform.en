@@ -7,7 +7,7 @@ feature: Connections
 ---
 # Create a connection
 
-A new Connections workflow was recently launched in Customer Journey Analytics (CJA). The new connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with assistive workflow. You provided detailed dataset selection, configuration, and review experience with critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more to reduce the risk of wrong connection configuration. Here is an overview of the new capabilities:
+A new Connections workflow was recently launched in Customer Journey Analytics. The new connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with assistive workflow. You provided detailed dataset selection, configuration, and review experience with critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more to reduce the risk of wrong connection configuration. Here is an overview of the new capabilities:
 
 * You can enable a rolling data retention window when you create the connection.
 * You can add to and remove datasets from a connection. (Removing a dataset removes it from the connection and impacts any associated data views and underlying Analysis Workspace projects.)
@@ -19,7 +19,7 @@ A new Connections workflow was recently launched in Customer Journey Analytics (
 
 ## Create and configure the connection {#create-connection}
 
-1. In CJA, click the **[!UICONTROL Connections]** tab.
+1. In Customer Journey Analytics, click the **[!UICONTROL Connections]** tab.
 1. Click **[!UICONTROL Create new connection]**.
 
     ![Connection settings](assets/create-conn1.png)
@@ -31,7 +31,7 @@ A new Connections workflow was recently launched in Customer Journey Analytics (
     | **[!UICONTROL Connection name]** | Enter a unique name for the connection. |
     | **[!UICONTROL Connection description]** | Describe the purpose of this connection. |
     | **[!UICONTROL Sandbox]** | Choose a sandbox in Experience Platform that contains the dataset/s to which you want to create a connection.<p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.<p>Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from.  |
-    | **[!UICONTROL Enable rolling data window]** | This checkbox, if checked, lets you define CJA data retention as a rolling window in months (1 month, 3 months, 6 months, and so on), at the connection level.<p>Data retention is based on event dataset timestamps and applies to event datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. However, if your connection includes any profile or lookup datasets (besides one or more event datasets), that data is retained for the same time period.<p> The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost.<p>If you leave the default (unchecked), the retention period is superseded by the Adobe Experience Platform data retention setting. If you have 25 months' worth of data in Experience Platform, CJA gets 25 months of data through backfill. If you deleted 10 of those months in Platform, CJA would retain the remaining 15 months. |
+    | **[!UICONTROL Enable rolling data window]** | This checkbox, if checked, lets you define Customer Journey Analytics data retention as a rolling window in months (1 month, 3 months, 6 months, and so on), at the connection level.<p>Data retention is based on event dataset timestamps and applies to event datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. However, if your connection includes any profile or lookup datasets (besides one or more event datasets), that data is retained for the same time period.<p> The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost.<p>If you leave the default (unchecked), the retention period is superseded by the Adobe Experience Platform data retention setting. If you have 25 months' worth of data in Experience Platform, Customer Journey Analytics gets 25 months of data through backfill. If you deleted 10 of those months in Platform, Customer Journey Analytics would retain the remaining 15 months. |
     | **[!UICONTROL Add datasets]** (see below) | Add datasets if no datasets appear in your dataset listing. |
     | **[!UICONTROL Dataset name]** | Select one or more datasets that you want to pull into Customer Journey Analytics and click **[!UICONTROL Add]**.<p>(If you have many datasets to choose from, you can search for the right one(s) using the Search datasets search bar above the list of datasets.) |
     | **[!UICONTROL Last updated]** | For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. "N/A" means that this dataset contains no data. |
@@ -108,7 +108,7 @@ This lookup functionality is useful if you want to add a numeric field such as a
 
 ![Lookup schema](assets/schema.png)
 
-You now support bringing in these values as metrics or dimensions into CJA reporting. When you set up your connection and pull in lookup datasets, you can edit the datasets to select the [!UICONTROL Key] and [!UICONTROL Matching Key]:
+You now support bringing in these values as metrics or dimensions into Customer Journey Analytics reporting. When you set up your connection and pull in lookup datasets, you can edit the datasets to select the [!UICONTROL Key] and [!UICONTROL Matching Key]:
 
 ![Edit-dataset](assets/lookup-dataset.png)
 
@@ -118,7 +118,7 @@ When you set up a data view based on this connection, you add the numeric values
 
 Customer Journey Analytics supports the ability to use the Identity Map for its Person ID. Identity Map is a map data structure that allows you to upload key -> value pairs. The keys are identity namespaces and the value is a structure that holds the identity value. The Identity Map exists on each row/event uploaded and is populated for each row accordingly.
 
-The Identity Map is available for any dataset that uses a schema based on the [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) class. When you select such a dataset to be included in a CJA Connection, you have the option of selecting either a field as the primary ID or the Identity Map:
+The Identity Map is available for any dataset that uses a schema based on the [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) class. When you select such a dataset to be included in a Customer Journey Analytics Connection, you have the option of selecting either a field as the primary ID or the Identity Map:
 
 ![](assets/idmap1.png)
 
@@ -126,8 +126,8 @@ If you select Identity Map, you get two additional configuration options:
 
 |Option|Description|
 |---|---|
-| **[!UICONTROL Use Primary ID Namespace]** | This option instructs CJA, per row, to find the identity in the Identity Map that is marked with a primary=true attribute and use that as the Person ID for that row. This identity is the primary key that is used in Experience Platform for partitioning. And this identity is also the prime candidate for usage as CJA's person ID (depending on how the dataset is configured in a CJA Connection).|
-| **[!UICONTROL Namespace]**| (This option is only available if you do not use the Primary ID Namespace.) Identity namespaces are a component of [Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html) that serve as indicators of the context to which an identity relates. If you specify a namespace, CJA searches each row's Identity Map for this namespace key and use the identity under that namespace as the person ID for that row. Since CJA cannot do a full dataset scan of all rows to determine which namespaces are present, all possible namespaces are displayed in the drop-down list. You must know which namespaces are specified in the data; these namespaces are not auto-detected.|
+| **[!UICONTROL Use Primary ID Namespace]** | This option instructs Customer Journey Analytics, per row, to find the identity in the Identity Map that is marked with a primary=true attribute and use that as the Person ID for that row. This identity is the primary key that is used in Experience Platform for partitioning. And this identity is also the prime candidate for usage as Customer Journey Analytics person ID (depending on how the dataset is configured in a Customer Journey Analytics Connection).|
+| **[!UICONTROL Namespace]**| (This option is only available if you do not use the Primary ID Namespace.) Identity namespaces are a component of [Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html) that serve as indicators of the context to which an identity relates. If you specify a namespace, Customer Journey Analytics searches each row's Identity Map for this namespace key and use the identity under that namespace as the person ID for that row. Since Customer Journey Analytics cannot do a full dataset scan of all rows to determine which namespaces are present, all possible namespaces are displayed in the drop-down list. You must know which namespaces are specified in the data; these namespaces are not auto-detected.|
 
 {style="table-layout:auto"}
 
@@ -137,8 +137,8 @@ This table shows the two configuration options when edge cases are present and h
 
 | Option | No IDs are present in Identity Map | Multiple IDs, none marked as primary | Multiple IDs are marked as primary | Single ID, marked as primary or not | Invalid namespace with an ID marked as primary |
 |---|---|---|---|---|---|
-| **[!UICONTROL Use Primary ID Namespace] checked** | The row is dropped by CJA. | The row is dropped by CJA, as no primary ID is specified. | All IDs marked as primary, under all namespaces, are extracted into a list. They are then alphabetically sorted; with the new sorting, the first namespace with its first ID is used as the Person ID. | The single ID is used as the Person ID. | Even though the namespace may be invalid (not present in AEP), CJA uses the primary ID under that namespace as the Person ID. |
-| **[!UICONTROL Specific Identity Map namespace] selected** | The row is dropped by CJA. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. (Only a valid namespace can be selected at Connection creation time, so it is not possible for an invalid namespace/ID to be used as Person ID) |
+| **[!UICONTROL Use Primary ID Namespace] checked** | The row is dropped by Customer Journey Analytics. | The row is dropped by Customer Journey Analytics, as no primary ID is specified. | All IDs marked as primary, under all namespaces, are extracted into a list. They are then alphabetically sorted; with the new sorting, the first namespace with its first ID is used as the Person ID. | The single ID is used as the Person ID. | Even though the namespace may be invalid (not present in Adobe Experience Platform), Customer Journey Analytics uses the primary ID under that namespace as the Person ID. |
+| **[!UICONTROL Specific Identity Map namespace] selected** | The row is dropped by Customer Journey Analytics. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. | All IDs under the selected namespace are extracted into a list and the first is used as the Person ID. (Only a valid namespace can be selected at Connection creation time, so it is not possible for an invalid namespace/ID to be used as Person ID) |
 
 {style="table-layout:auto"}
 
@@ -156,4 +156,4 @@ This calculation is done for every dataset in the connection.
 
     In this example, "analytics_demo_data" is the name of the dataset.
 
-2. To show all the datasets that exist in AEP, perform the `Show Tables` query .
+2. To show all the datasets that exist in Adobe Experience Platform, perform the `Show Tables` query .

@@ -33,7 +33,7 @@ You can manage settings for Analysis Workspace and its related components for al
 
 ## General preferences
 
-General preferences apply to your CJA experience in the browser. For information about how to access these preferences, see [Update preferences](#update-preferences). 
+General preferences apply to your Customer Journey Analytics experience in the browser. For information about how to access these preferences, see [Update preferences](#update-preferences). 
 
 | Preference | Options |
 | --- | --- |

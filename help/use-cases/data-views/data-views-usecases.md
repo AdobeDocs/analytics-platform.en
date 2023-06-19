@@ -28,7 +28,7 @@ Another example would be to use the Visitor ID, a dimension, as a metric to dete
 
 ## 2. Use integers as dimensions {#integers}
 
-Previously, integers would automatically be treated as metrics in CJA. Now, numerics (including custom events from Adobe Analytics) can be treated as dimensions. Here is an example:
+Previously, integers would automatically be treated as metrics in Customer Journey Analytics. Now, numerics (including custom events from Adobe Analytics) can be treated as dimensions. Here is an example:
 
 1. Drag the [!UICONTROL call_length_min] integer into the [!UICONTROL Dimensions] section under [!UICONTROL Included Components]:
 
@@ -111,7 +111,7 @@ To access these component:
 
 ## 8. Use the Date and Date-Time functionality {#date}
 
-Schemas in Adobe Experience Platform contain [!UICONTROL Date] and [!UICONTROL Date-Time] fields. CJA data views now support these fields. When you drag these fields into a data view as a dimension, you can specify their [format](/help/data-views/component-settings/format.md). This format setting determines how the fields are displayed in reporting. For example:
+Schemas in Adobe Experience Platform contain [!UICONTROL Date] and [!UICONTROL Date-Time] fields. Customer Journey Analytics data views now support these fields. When you drag these fields into a data view as a dimension, you can specify their [format](/help/data-views/component-settings/format.md). This format setting determines how the fields are displayed in reporting. For example:
 
 * For the Date format, if you select **[!UICONTROL Day]** with the format **[!UICONTROL Month, Day, Year]**, an example output in reporting might look like: August 23, 2022.
 

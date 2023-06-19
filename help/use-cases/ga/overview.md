@@ -13,13 +13,13 @@ Workflows are provided for both historical data and current data collection. You
 
 Ingesting historical (backfill) data involves exporting data from Google and importing that data into Adobe Experience Platform. See [Ingest Google Analytics data in Adobe Experience Platform](backfill.md).
 
-Once you successfully bring historical data into Platform, you can either [Configure streaming current data](streaming.md), or immediately start reporting on backfilled data in CJA by [Creating a connection](/help/connections/create-connection.md).
+Once you successfully bring historical data into Platform, you can either [Configure streaming current data](streaming.md), or immediately start reporting on backfilled data in Customer Journey Analytics by [Creating a connection](/help/connections/create-connection.md).
 
 ## Configure an existing Google Analytics implementation for Adobe Experience Platform {#configure}
 
 Ingesting current (streaming) data involves sending data to Adobe Experience Edge, which then forwards that data to Adobe Experience Platform. See [Set up streaming Google Analytics data in Adobe Experience Platform](streaming.md).
 
-## Configure a Connection and Data View in CJA
+## Configure a Connection and Data View in Customer Journey Analytics
 
 Once you successfully ingest historical data and/or configure data collection to Adobe Experience Platform, you can [Create a connection](/help/connections/create-connection.md) to allow Customer Journey Analytics to reference that data.
 

@@ -19,7 +19,7 @@ The following video describes how to add dimension and metric descriptions in a 
 
 ## Add descriptions to components in Analysis Workspace (using the Data Dictionary) {#add-descriptions}
 
-The Data Dictionary in Analysis Workspace helps both users and administrators keep track of and better understand the components in their CJA environment. This includes the ability for CJA administrators to add component descriptions directly within Analysis Workspace. 
+The Data Dictionary in Analysis Workspace helps both users and administrators keep track of and better understand the components in their Customer Journey Analytics environment. This includes the ability for Customer Journey Analytics administrators to add component descriptions directly within Analysis Workspace. 
 
 For information about adding a component description in the data dictionary, see [Edit component entries in the Data Dictionary](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 

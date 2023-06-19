@@ -10,8 +10,8 @@ Managing previously created audiences lets you
 * **Schedule or de-schedule** automatic audience refresh/update. The maximum expiration on the schedule is 1 year. 
 * **Renew an audience refresh schedule** when it is about to expire. Expiring audiences are treated similarly to expiring scheduled reports - the admin gets an email a month before the schedule expires.
 * View the **refresh interval** and the **last time an audience was updated**
-* Gain insight into the **amount of time it took to produce an audience** from Customer Journey Analytics (CJA), and the amount of time it took to have the audience appear in Real-time Customer Profile for activation purposes.
-* See whether the audiences in CJA are **being actively used by Real-time Customer Profile** or (ideally) any Experience Platform applications that consume the audiences created by CJA.
+* Gain insight into the **amount of time it took to produce an audience** from Customer Journey Analytics, and the amount of time it took to have the audience appear in Real-time Customer Profile for activation purposes.
+* See whether the audiences in Customer Journey Analytics are **being actively used by Real-time Customer Profile** or (ideally) any Experience Platform applications that consume the audiences created by Customer Journey Analytics.
 
 ## Management UI
 

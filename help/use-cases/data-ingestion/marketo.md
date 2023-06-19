@@ -1,25 +1,25 @@
 ---
-title: Ingest Marketo Engage data into AEP and report in CJA
-description: Learn how to bring Marketo Engage data into CJA
+title: Ingest Marketo Engage data into Adobe Experience Platform and report in Customer Journey Analytics
+description: Learn how to bring Marketo Engage data into Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 ---
-# Ingest Marketo Engage data into AEP and report in CJA
+# Ingest Marketo Engage data into Adobe Experience Platform and report in Customer Journey Analytics
 
-You can leverage the newly-available Marketo Engage datasets in Adobe Experience Platform (AEP) to provide valuable analytics and reporting solutions to B2B marketers. Then report on these datasets in Customer Journey Analytics (CJA.)
+You can leverage the newly-available Marketo Engage datasets in Adobe Experience Platform (Adobe Experience Platform) to provide valuable analytics and reporting solutions to B2B marketers. Then report on these datasets in Adobe Customer Journey Analytics.
 
 ## Step 1: Map Marketo source data fields to their XDM targets
 
 Map the [Persons](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#persons) and [Activities](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#activities) objects to their respective XDM schema target fields.
 
-## Step 2: Ingest Marketo data into AEP
+## Step 2: Ingest Marketo data into Adobe Experience Platform
 
 Use the [Marketo Engage connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=en) to bring data from Marketo to Experience Platform and keep this data up to date using Platform-connected applications.
 
-## Step 3: Set up a connection to this dataset in CJA
+## Step 3: Set up a connection to this dataset in Customer Journey Analytics
 
-In order to report on Experience Platform datasets, you first have to establish a connection between datasets in Experience Platform and CJA. Find more information under [Create a connection](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en).
+In order to report on Experience Platform datasets, you first have to establish a connection between datasets in Experience Platform and Customer Journey Analytics. Find more information under [Create a connection](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en).
 
 ## Step 4: Create one or more data views
 
@@ -30,7 +30,7 @@ A [data view](/help/data-views/data-views.md) is a container specific to Custome
 One use case you might explore is: How many web page visits by leads did we have in April-June 2020?
 
 1. Open [Analytics Workspace](/help/analysis-workspace/home.md) and create a new project. 
-   Customers with B2B/B2P CDP can conduct B2C-style analysis in CJA. B2B objects are not yet available.
+   Customers with B2B/B2P CDP can conduct B2C-style analysis in Customer Journey Analytics. B2B objects are not yet available.
 
 1. Create a [filter](/help/components/filters/create-filters.md) for web page views as follows - Event Type = web.webpagedetails.pageViews : 
 
