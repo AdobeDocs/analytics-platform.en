@@ -10,7 +10,7 @@ The **[!UICONTROL Experimentation]** panel lets analysts compare different user 
 
 >[!IMPORTANT]
 >
->At this point, [Adobe Analytics for Target|https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en] (A4T) data *cannot* be analyzed in the Experimentation panel. 
+>At this point, [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en) (A4T) data *cannot* be analyzed in the Experimentation panel. 
 
 ## Access Control {#access}
 
