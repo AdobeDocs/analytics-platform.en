@@ -69,7 +69,7 @@ You can edit, re-export, duplicate, tag, pause, or delete existing exports:
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. On the [!UICONTROL **Exports**] page, select one or more existing exports.
+1. On the [!UICONTROL **Exports**] tab, select one or more existing exports.
 
    <!-- add screenshot? -->
 
@@ -78,10 +78,29 @@ You can edit, re-export, duplicate, tag, pause, or delete existing exports:
    |Option | Function | 
    |---------|----------|
    | Edit | B1 | 
-   | Export now | B2 | 
+   | Export now | Runs the selected export and includes the most recent data. | 
    | Duplicate | B3 | 
    | Tag | B3 | 
    | Pause | B3 | 
+   | Delete | B3 | 
+
+## Manage export logs
+
+You can edit, re-export, duplicate, tag, pause, or delete existing exports:
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. Select the [!UICONTROL **Logs**] tab, then select one or more existing logs.
+
+   <!-- add screenshot? -->
+
+1. Select one of the following options:
+
+   |Option | Function | 
+   |---------|----------|
+   | Retry | Re-runs the export of the selected log, using data from the export as it was when the log was originally generated.  | 
+   | Create ticket | B2 | 
+   | Open project | B3 | 
    | Delete | B3 | 
 
 
