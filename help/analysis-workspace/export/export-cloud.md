@@ -99,9 +99,9 @@ You can edit, re-export, duplicate, tag, pause, or delete existing exports:
    |Option | Function | 
    |---------|----------|
    | Retry | Re-runs the export associated with the selected log, using the data as it was on the day it was originally exported. This is useful when selecting a log that shows a failed export or if the log was accidentally deleted.  | 
-   | Create ticket | B2 | 
-   | Open project | B3 | 
-   | Delete | B3 | 
+   | Create ticket <!-- waiting to hear from Marijka. Might change this to "Report issue" and use a toast --> | Reports the issue to Adobe Support. This options displays only when there was a failure or problem with the log. <!-- what kind of problem? --> | 
+   | Open project | Opens the project that contains the data associated with the selected log. | 
+   | Delete | Deletes the selected log. | 
 
 
 
