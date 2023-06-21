@@ -78,7 +78,7 @@ You can edit, re-export, duplicate, tag, pause, or delete existing exports:
    |Option | Function | 
    |---------|----------|
    | Edit | B1 | 
-   | Export now | Runs the selected export and includes the most recent data. | 
+   | Export now | Runs the selected export using the most recent data. This is useful if you want to re-export data that you previously exported ad hoc, or if you set up an export to run on a schedule and you don't want to wait for the next scheduled export. | 
    | Duplicate | B3 | 
    | Tag | B3 | 
    | Pause | B3 | 
@@ -98,7 +98,7 @@ You can edit, re-export, duplicate, tag, pause, or delete existing exports:
 
    |Option | Function | 
    |---------|----------|
-   | Retry | Re-runs the export of the selected log, using data from the export as it was when the log was originally generated.  | 
+   | Retry | Re-runs the export associated with the selected log, using the data as it was on the day it was originally exported. This is useful when selecting a log that shows a failed export or if the log was accidentally deleted.  | 
    | Create ticket | B2 | 
    | Open project | B3 | 
    | Delete | B3 | 
