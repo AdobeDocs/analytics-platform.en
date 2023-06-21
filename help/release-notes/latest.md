@@ -20,7 +20,7 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 | **Currency conversion support** | Currency conversion is supported as part of formatting a metric component in a Data view. [Learn more](../data-views/component-settings/format.md#currency) | June 7, 2023 | June 21, 2023 | 
 | **PowerBI & Tableau access to Customer Journey Analytics data views** | The Adobe Customer Journey Analytics SQL Connector enables SQL access to data views that you have defined in Customer Journey Analytics. Data engineers and analysts more familiar with Power BI, Tableau, or other business intelligence and visualization tools can now create reports and dashboards based on the same data views that Customer Journey Analytics users are using for their Analysis Workspace projects. [Learn more](/help/data-views/sql-connector.md)|  | June 30, 2023 |
 | **Expanded lookup support to profile and lookup data** | You will be able to add lookup datasets to not only event datasets, but also to profile and lookup datasets.  | June 28, 2023 | July 12, 2023 |
-| **Experience Edge geo lookups** | You will be able to build reports using geolocation data in Customer Journey Analytics once Experience Edge Geo Lookups are enabled for your datastream. |  | July 31, 2023 |
+| **Experience Edge geo lookups** | You will be able to build reports using geolocation data in Customer Journey Analytics once Experience Edge Geo Lookups are enabled for your datastream. |  | July 26, 2023 |
 
 {style="table-layout:auto"}
 
