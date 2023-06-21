@@ -78,7 +78,7 @@ You can edit, re-export, duplicate, tag, pause, or delete existing exports:
    |Option | Function | 
    |---------|----------|
    | Edit | B1 | 
-   | Export now | Runs the selected export using the most recent data. This is useful if you want to re-export data that you previously exported ad hoc, or if you set up an export to run on a schedule and you don't want to wait for the next scheduled export. | 
+   | Export now | Runs the selected export using the most recent data. This is useful if you want to re-export data that you previously exported ad hoc, or if you set up an export to run on a schedule and you want run the export before the next scheduled export. | 
    | Duplicate | B3 | 
    | Tag | B3 | 
    | Pause | B3 | 
