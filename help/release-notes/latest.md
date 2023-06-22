@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (June 2023)
 
-**Last update**: June 21, 2023
+**Last update**: June 22, 2023
 
 Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -50,7 +50,7 @@ AN-318343; AN-319453
 
 | Notice | Notice added or updated | Description |
 | --- | --- | --- |
-| N/A | N/A | N/A |
+| Changes to how Customer Journey Analytics processes data | June 22, 2023| We recently changed how we process data in Customer Journey Analytics.<p>**Old way:**<ul><li>Live data or events: Processed and ingested within 90 minutes, once data is available in Adobe Experience Platform. (Batch size > 50 million rows: longer than 90 mins.)</li><li>Small backfills - For example, a lookup dataset of 10 million rows: within 7 days<li>Large backfills - For example, 500 billion rows: 30 days</li></ul>**New way (as of June, 2023)**<ul><li>Any event data with a timestamp less than 24 hours old is streamed in.</li><li>Any event data with a timestamp more than 24 hours old (even if it's in the same batch as newer data) is considered backfill and will be ingested at a lower priority.</li></ul> |
 
 ## End-of-life (EOL) notices {#eol}
 

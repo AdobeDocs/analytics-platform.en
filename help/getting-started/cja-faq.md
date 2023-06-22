@@ -126,7 +126,13 @@ No, you can use any ID, including a hash of a customer ID, which is not PII.
 
 +++**What is the expected latency for [!UICONTROL Customer Journey Analytics] data on [!UICONTROL Adobe Experience Platform]?**
 
+We recently changed how we process data in Customer Journey Analytics.
+
+**Old way:**
 <ul><li>Live data or events: Processed and ingested within 90 minutes, once data is available in Adobe Experience Platform. (Batch size > 50 million rows: longer than 90 mins.)</li><li>Small backfills - For example, a lookup dataset of 10 million rows: within 7 days<li>Large backfills - For example, 500 billion rows: 30 days</li></ul>
+
+**New way (as of June, 2023)**
+<ul><li>Any event data with a timestamp less than 24 hours old is streamed in.</li><li>Any event data with a timestamp more than 24 hours old (even if it's in the same batch as newer data) is considered backfill and will be ingested at a lower priority.</li></ul>
 
 +++
 
@@ -142,14 +148,14 @@ When it comes to data deletion, we are concerned with 6 types of components: san
 
 | If you... | This happens... |
 | --- | --- |
-| Delete a sandbox in [!UICONTROL Adobe Experience Platform] | Deleting a sandbox will stop data flow to any [!UICONTROL Customer Journey Analytics] connections to datasets in that sandbox. Currently, [!UICONTROL Connections] in Customer Journey Analytics tied to the deleted sandbox will not automatically be deleted. |
+| Delete a sandbox in [!UICONTROL Adobe Experience Platform] | Deleting a sandbox will stop data flow to any [!UICONTROL Customer Journey Analytics] connections to datasets in that sandbox. Currently, [!UICONTROL Connections] in Customer Journey Analytics tied to the deleted sandbox are not automatically deleted. |
 | Delete a schema in [!UICONTROL Adobe Experience Platform], but not the dataset/s associated with this schema | [!UICONTROL Adobe Experience Platform] does not allow for the deletion of [!UICONTROL schemas] that have one or more [!UICONTROL datasets] associated with them. However, an Admin with the appropriate set of rights can delete the datasets first and then delete the schema. |
-| Delete a dataset in [!UICONTROL Adobe Experience Platform] data lake | Deleting a dataset in Adobe Experience Platform data lake will stop data flow from that dataset to any Customer Journey Analytics Connections that include that dataset. Any data from that dataset is automatically deleted from associated Customer Journey Analytics Connections. |
+| Delete a dataset in [!UICONTROL Adobe Experience Platform] data lake | Deleting a dataset in Adobe Experience Platform data lake stops data flow from that dataset to any Customer Journey Analytics Connections that include that dataset. Any data from that dataset is automatically deleted from associated Customer Journey Analytics Connections. |
 | Delete a dataset in [!UICONTROL Customer Journey Analytics] | Contact your Adobe Account Team to set in motion the process for deleting a dataset within a connection that has been saved. |
 | Delete a batch from a dataset (in [!UICONTROL Adobe Experience Platform]) | If a batch is deleted from an [!UICONTROL Adobe Experience Platform] dataset, the same batch will be removed from any Customer Journey Analytics Connections that contain that specific batch.  Customer Journey Analytics is notified of batch deletions in [!UICONTROL Adobe Experience Platform]. |
-| Delete a batch **while it is being ingested** into [!UICONTROL Customer Journey Analytics] | If there is only one batch in the dataset, no data or partial data from that batch will appear in [!UICONTROL Customer Journey Analytics]. The ingestion will be rolled back. If, for example, there are 5 batches in the dataset and 3 of them have already been ingested when the dataset was deleted, data from those 3 batches will appear in [!UICONTROL Customer Journey Analytics]. |
-| Delete a connection in [!UICONTROL Customer Journey Analytics] | An error message will indicate that:<ul><li>Any data views created for the deleted connection will no longer work.</li><li> Similarly, any Workspace projects that depend on data views in the deleted connection will cease working.</li></ul> |
-| Delete a data view in [!UICONTROL Customer Journey Analytics] | An error message will indicate that any Workspace projects that depend on this deleted data view will cease working. |
+| Delete a batch **while it is being ingested** into [!UICONTROL Customer Journey Analytics] | If there is only one batch in the dataset, no data or partial data from that batch will appear in [!UICONTROL Customer Journey Analytics]. The ingestion will be rolled back. If, for example, there are 5 batches in the dataset and 3 of them have already been ingested when the dataset was deleted, data from those 3 batches appears in [!UICONTROL Customer Journey Analytics]. |
+| Delete a connection in [!UICONTROL Customer Journey Analytics] | An error message indicates that:<ul><li>Any data views created for the deleted connection will no longer work.</li><li> Similarly, any Workspace projects that depend on data views in the deleted connection will cease working.</li></ul> |
+| Delete a data view in [!UICONTROL Customer Journey Analytics] | An error message indicates that any Workspace projects that depend on this deleted data view will cease working. |
 
 ## 7. Considerations when merging report suites in Customer Journey Analytics {#merge-reportsuite}
 
@@ -164,16 +170,13 @@ If you plan to ingest Adobe Analytics data through the [Adobe Analytics source c
 | [!UICONTROL Persistence]| [Persistence](../data-views/component-settings/persistence.md) extends across report suites, which impacts [!UICONTROL filters], [!UICONTROL attribution], and so on. Numbers may not add up properly. |
 | [!UICONTROL Classifications] | [!UICONTROL Classifications] do not automatically get deduplicated when merging report suites. When combining multiple classifications files into a single [!UICONTROL lookup] dataset, you could encounter problems. |
 
-
 ## 8. [!UICONTROL Adobe Analytics] components
 
-
-+++**Can I share/publish [!UICONTROL filters] ([!UICONTROL segments]) from [!DNL Customer Journey Analytics] to Experience Platform Unified Profile, or other Experience Cloud applications?**
++++**Can I share/publish [!UICONTROL filters] from [!DNL Customer Journey Analytics] to Experience Platform Real-Time CDP, or other Experience Cloud applications?**
 
 Not yet, but we are actively working to deliver this capability.
 
 +++
-
 
 +++**What happened to my old [!UICONTROL eVar] setting?**
 
@@ -181,13 +184,11 @@ Not yet, but we are actively working to deliver this capability.
 
 +++
 
-
 +++**Where are all my session and variable persistence settings now?**
 
-[!UICONTROL Customer Journey Analytics] applies all of these settings at report time, and these settings now live in Data Views. Changes to these settings are now retroactive, and you can have multiple versions by using multiple Data Views!
+[!UICONTROL Customer Journey Analytics] applies all of these settings at report time, and these settings now live in data views. Changes to these settings are now retroactive, and you can have multiple versions by using multiple data views!
 
 +++
-
 
 +++**What happens to our existing segments/calculated metrics?**
 
@@ -195,13 +196,11 @@ Not yet, but we are actively working to deliver this capability.
 
 +++
 
-
 +++**How does [!UICONTROL Customer Journey Analytics] handle `Uniques Exceeded` limitations?**
 
 [!UICONTROL Customer Journey Analytics] has no unique value limitations, so no need to worry about them! 
 
 +++
-
 
 +++**If I am an existing [!DNL Data Workbench] customer, can I move to [!UICONTROL Customer Journey Analytics] right now?**
 
@@ -223,10 +222,10 @@ For example, let's say your contract entitles you to one million rows of data. S
 
 In some cases, you may notice that the total number of events ingested by your connection is different than the number of rows in the dataset in [!UICONTROL Adobe Experience Platform]. In this example, the dataset "B2B Impression" has 7650 rows, but the dataset contains 3830 rows in [!UICONTROL Adobe Experience Platform]. There are several reasons why discrepancies can happen, and the following steps can be taken to diagnose:
 
-1.  Break down this dimension by **[!UICONTROL Platform Dataset ID]** and you will notice two datasets with same size but different **[!UICONTROL Platform Dataset IDs]**. Each dataset has 3825 records. That means [!UICONTROL Customer Journey Analytics] ignored 5 records due to missing person IDs or missing timestamps:
+1.  Break down this dimension by **[!UICONTROL Platform Dataset ID]** and you will notice two datasets with the same size but different **[!UICONTROL Platform Dataset IDs]**. Each dataset has 3825 records. That means [!UICONTROL Customer Journey Analytics] ignored 5 records due to missing person IDs or missing timestamps:
 
     ![breakdown](assets/data-size2.png)
 
-2.  In addition, if we check in [!UICONTROL Adobe Experience Platform], there is no dataset with Id "5f21c12b732044194bffc1d0", hence someone deleted this particular dataset from [!UICONTROL Adobe Experience Platform] when the initial connection was being created. Later it got added to Customer Journey Analytics again, but a different [!UICONTROL Platform Dataset ID] was generated by [!UICONTROL Adobe Experience Platform]. 
+2.  In addition, if we check in [!UICONTROL Adobe Experience Platform], there is no dataset with Id "5f21c12b732044194bffc1d0", hence someone deleted this particular dataset from [!UICONTROL Adobe Experience Platform] when the initial connection was created. Later, it got added to Customer Journey Analytics again, but a different [!UICONTROL Platform Dataset ID] was generated by [!UICONTROL Adobe Experience Platform]. 
 
 Read more about the [implications of dataset and connection deletion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components) in [!UICONTROL Customer Journey Analytics] and [!UICONTROL Adobe Experience Platform].
