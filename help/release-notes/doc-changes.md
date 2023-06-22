@@ -144,7 +144,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | April 2021 | New documentation on support for scheduled projects in Workspace. |
 | April 2021 | New topics on the [enhanced Data Views experience](/help/data-views/data-views.md). |
 | April 2021 | New topics on [ingesting Google Analytics data](/help/use-cases/ga/overview.md) and [analyzing that data](/help/use-cases/ga/report.md). |
-| April 2021 | Added topic on [scheduled reports](/help/analysis-workspace/curate-share/t-schedule-report.md) in Workspace. |
+| April 2021 | Added topic on [scheduled reports](/help/analysis-workspace/export/t-schedule-report.md) in Workspace. |
 | April 2021 | New topic on [high-cardinality dimensions in Customer Journey Analytics](/help/components/dimensions/high-cardinality.md). |
 | **March 2021** | |
 | March 2021 | Added topic on support for [Analytics dashboards](/help/mobile-app/home.md) (mobile app). |
