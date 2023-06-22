@@ -1,25 +1,25 @@
 ---
-title: Compare your AA data to CJA data
+title: Compare your Adobe Analytics data to Customer Journey Analytics data
 description: Learn how to compare your Adobe Analytics data to data in Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 ---
-# Compare your Adobe Analytics data to CJA data
+# Compare your Adobe Analytics data to Customer Journey Analytics data
 
-As your organization adopts CJA, you may notice some differences in data between Adobe Analytics and CJA. This is normal and can occur for several reasons. CJA is designed to allow you to improve upon some of the limitations on your data in AA. However, unexpected/unintended discrepancies can occur. This article is designed to help you diagnose and solve for those differences so that you and your team can use CJA unimpeded by concerns about data integrity.
+As your organization adopts Customer Journey Analytics, you may notice some differences in data between Adobe Analytics and Customer Journey Analytics. This is normal and can occur for several reasons. Customer Journey Analytics is designed to allow you to improve upon some of the limitations on your data in AA. However, unexpected/unintended discrepancies can occur. This article is designed to help you diagnose and solve for those differences so that you and your team can use Customer Journey Analytics unimpeded by concerns about data integrity.
 
-Let's assume you ingested Adobe Analytics data into AEP via the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html), and then created a CJA connection using this dataset. 
+Let's assume you ingested Adobe Analytics data into Adobe Experience Platform via the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html), and then created a Customer Journey Analytics connection using this dataset. 
 
 ![data flow](assets/compare.png)
 
-Next, you created a data view and while subsequently reporting on this data on CJA, you noticed discrepancies with the reporting results in Adobe Analytics.
+Next, you created a data view and while subsequently reporting on this data on Customer Journey Analytics, you noticed discrepancies with the reporting results in Adobe Analytics.
 
 Here are some steps to follow to compare your original Adobe Analytics data with the Adobe Analytics data that is now in Customer Journey Analytics.
 
 ## Prerequisites
 
-* Make sure the Analytics dataset in AEP contains data for the date range you are investigating.
+* Make sure the Analytics dataset in Adobe Experience Platform contains data for the date range you are investigating.
 
 * Make sure the report suite that you selected in Analytics matches the report suite that was ingested into Adobe Experience Platform.
 
@@ -33,7 +33,7 @@ The [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/m
 
 1. Save this project so that you can use it in the comparison.
 
-## Step 2: Compare the results to [!UICONTROL Total records by timestamps] in CJA
+## Step 2: Compare the results to [!UICONTROL Total records by timestamps] in Customer Journey Analytics
 
 Now compare the [!UICONTROL Occurrences] in Analytics to the Total records by timestamps in Customer Journey Analytics.
 
@@ -41,7 +41,7 @@ Total Records by timestamps should match with Occurrences, provided that no reco
 
 >[!NOTE]
 >
->This works for regular mid values datasets only, not stitched dataset (via [Cross-Channel Analytics](/help/cca/overview.md)). Please note that accounting for the Person ID being used in CJA is critical for making the comparison work. That may not always be easy to replicate in AA, especially if Cross-Channel Analytics has been turned on. 
+>This works for regular mid values datasets only, not stitched dataset (via [Cross-Channel Analytics](/help/cca/overview.md)). Please note that accounting for the Person ID being used in Customer Journey Analytics is critical for making the comparison work. That may not always be easy to replicate in Adobe Analytics, especially if Cross-Channel Analytics has been turned on. 
 
 1. In Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), run the following [!UICONTROL Total Records by timestamps] query:
 
@@ -75,11 +75,11 @@ Total Records by timestamps should match with Occurrences, provided that no reco
    
 1. If the connector filtered rows, subtract those rows from the [!UICONTROL Occurrences] metric. The resulting number should match the number of events in the Adobe Experience Platform datasets.
 
-## Why records might be filtered or skipped during ingestion from AEP
+## Why records might be filtered or skipped during ingestion from Adobe Experience Platform
 
-CJA [Connections](/help/connections/create-connection.md) allow you to bring and join multiple datasets together based on a common Person ID across the datasets. On the backend, we apply deduplication: full outer join or union on event datasets based on timestamps, and then inner join on profile and lookup dataset, based on the Person ID. 
+Customer Journey Analytics [Connections](/help/connections/create-connection.md) allow you to bring and join multiple datasets together based on a common Person ID across the datasets. On the backend, we apply deduplication: full outer join or union on event datasets based on timestamps, and then inner join on profile and lookup dataset, based on the Person ID. 
 
-Here are some of the reasons why records might be skipped while ingesting data from AEP. 
+Here are some of the reasons why records might be skipped while ingesting data from Adobe Experience Platform. 
 
 * **Missing Timestamps** – If timestamps are missing from event datasets, those records will be totally ignored or skipped during ingestion. 
  

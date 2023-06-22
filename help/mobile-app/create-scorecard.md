@@ -13,7 +13,7 @@ The following information instructs curators of Adobe Analytics data on how to c
 >[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
->Scorecard screen shots for this page were taken from the Adobe Analytics UI, not from CJA. The UIs are almost identical.
+>Scorecard screen shots for this page were taken from the Adobe Analytics UI, not from Customer Journey Analytics. The UIs are almost identical.
 
 An Adobe Analytics scorecard displays key data visualizations for executive users in a tiled layout, as shown below:
 
@@ -70,7 +70,7 @@ For example, you can add appropriate dimensions (like **[!DNL Marketing Channel]
 
 ## Apply filters {#filters}
 
-To apply filters to individual tiles, drag a filter (segments are filters in CJA) from the left panel and drop it directly on top of the tile.
+To apply filters to individual tiles, drag a filter (segments are filters in Customer Journey Analytics) from the left panel and drop it directly on top of the tile.
 
 If you want to apply the filter to all the tiles in the scorecard, drop the tile on top of the scorecard. Or, you can also apply filters by selecting filters in the filter menu beneath the date ranges. You [configure and apply filters for your scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) the same way you would in Adobe Analytics Workspace.
 
@@ -157,7 +157,7 @@ If you want to remove [!UICONTROL Unspecified] dimension items from your data, d
 
 ## View and configure tile properties {#tiles}
 
-When you click a tile in the scorecard builder, the right-hand rail displays the properties and characteristics associated with that tile and its detail slide. In this rail, you can provide a new **Title** for the tile and alternatively configure the tile by applying filters. Segments are filters in CJA.
+When you click a tile in the scorecard builder, the right-hand rail displays the properties and characteristics associated with that tile and its detail slide. In this rail, you can provide a new **Title** for the tile and alternatively configure the tile by applying filters. Segments are filters in Customer Journey Analytics.
 
 ![Properties tile](assets/properties-tile-new.png)
 

@@ -1,25 +1,25 @@
 ---
 title: Audit logs
-description: Learn how to view and manage CJA audit logs.
+description: Learn how to view and manage Customer Journey Analytics audit logs.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 ---
 # Audit logs
 
-To increase the transparency and visibility of activities performed in the system, Customer Journey Analytics (CJA) allows you to audit user activity for various services and capabilities in the form of "audit logs". These logs form an audit trail that can help with troubleshooting issues, and help your business effectively comply with corporate data stewardship policies and regulatory requirements, such as the Health Insurance Portability and Accountability Act (HIPAA).
+To increase the transparency and visibility of activities performed in the system, Adobe Customer Journey Analytics allows you to audit user activity for various services and capabilities in the form of "audit logs". These logs form an audit trail that can help with troubleshooting issues, and help your business effectively comply with corporate data stewardship policies and regulatory requirements, such as the Health Insurance Portability and Accountability Act (HIPAA).
 
 In a basic sense, an audit log tells **who** performed **what** action, and **when**. Each action recorded in a log contains metadata that indicates the action type, date and time, the email ID of the user who performed the action, and additional attributes relevant to the action type.
 
-This topic covers audit logs in CJA, including how to view and manage them in the UI.
+This topic covers audit logs in Customer Journey Analytics, including how to view and manage them in the UI.
 
 ## Access to audit logs
 
 When the feature is enabled for your organization, audit logs are automatically collected as activity occurs. You do not need to manually enable log collection.
 
-In order to view and export audit logs, you must have been granted the **[!UICONTROL Audit Logs Access]** access control permission in Adobe Console. To learn how to manage individual permissions for CJA features, please refer to the [access control documentation](../admin/cja-access-control.md).
+In order to view and export audit logs, you must have been granted the **[!UICONTROL Audit Logs Access]** access control permission in Adobe Console. To learn how to manage individual permissions for Customer Journey Analytics features, please refer to the [access control documentation](../admin/cja-access-control.md).
 
 ## View the audit log in the UI
 
-In CJA, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Audit Logs]**.
+In Customer Journey Analytics, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Audit Logs]**.
 
 The audit log for today and yesterday are shown by default.
 
@@ -35,19 +35,49 @@ Double click the info (i) button next to a description.
 
 The following items are shown:
 
-| Item | Description |
-| --- | --- |
-| Action Name | Here is the list of possible actions: <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Edit</li><li>Export</li><li>Login_failed</li><li>Login_successful</li><li>Logout</li><li>Org_change</li><li>Refresh</li><li>Share</li><li>Transfer</li><li>Unapprove</li><li>Unshare</li></ul> |
-| Description | A summary of the action, component type (with ID) and other values. |
-| User Name | The user taking the action. |
-| Component Type | Possible component types include: <ul><li>Annotation</li><li>Audience</li><li>Calculated Metric</li><li>Connection</li><li>Data_Group</li><li>Data_View (this component type includes dimensions and metrics)</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobile</li><li>Project</li><li>Report</li><li>Scheduled_Project</li><li>User</li><li>User_Group</li></ul> |
-| IMS Org ID | A unique ID that is given to your instance when you first log in to Adobe Experience Cloud. It should be in the format: xxx@AdobeOrg. |
-| User ID | A unique ID identifying the user who took this action. |
-| Date Created | When this action was taken. |
-| Email | The email of the user taking the action. |
-| Component ID | A unique ID that identifies the component that is being actioned upon. |
-| Log ID | A unique ID identifying this log entry. |
-| User Type | Possible types include: IMS, OKTA |
+* **[!UICONTROL Action Name]**: The action taken. Possible values include:
+  * API_REQUEST
+  * APPROVE
+  * CREATE
+  * DELETE
+  * EDIT
+  * EXPORT
+  * ORG_CHANGE
+  * REFRESH
+  * SHARE
+  * TRANSFER
+  * UNAPPROVE
+  * UNSHARE
+* **[!UICONTROL Date Created]**: The date and time that the action was taken.
+* **[!UICONTROL Description]**: A summary of the action.
+* **[!UICONTROL User Name]**: The user that took the action.
+* **[!UICONTROL Email]**: The email address of the user that took the action.
+* **[!UICONTROL Component Name]**: The component that the user took action on.
+* **[!UICONTROL Component Type]**: The type of component. Possible values include:
+  * ANNOTATION
+  * AUDIENCE
+  * CALCULATED_METRIC
+  * CONNECTION
+  * DATA_GROUP
+  * DATA_VIEW
+  * DATASET_STITCHING
+  * DATE_RANGE
+  * FEATURE_ACCESS
+  * FILTER
+  * IMS_ORG
+  * MOBILE
+  * PROJECT
+  * REPORT
+  * SCHEDULED_PROJECT
+  * USER
+  * USER_GROUP
+* **[!UICONTROL Component ID]**: The ID of the component that the user took action on.
+* **[!UICONTROL IMS Org ID]**: The organization's IMS ID, in the format of `ABC123@AdobeOrg`.
+* **[!UICONTROL Log ID]**: A unique ID identifying this log entry.
+* **[!UICONTROL User ID]**: The unique ID identifying the user that took the action.
+* **[!UICONTROL User Type]**: The authentication type used. Valid values include:
+  * IMS
+  * OKTA
 
 ### Filter audit logs
 
@@ -60,11 +90,11 @@ The following filters are available for audit events in the UI:
 | Filter | Description |
 | --- | --- |
 | [!UICONTROL Date Range] | Filter on a different date range by selecting a different date or selecting a date range by dragging the cursor across multiple dates. By default, today's and yesterday's date are selected. |
-| [!UICONTROL Action] | Filter on one or more of the following actions: <ul><li>API_Request</li><li>Approve</li><li>Create</li><li>Edit</li><li>Export</li><li>Login_failed</li><li>Login_successful</li><li>Logout</li><li>Org_change</li><li>Refresh</li><li>Share</li><li>Transfer</li><li>Unapprove</li><li>Unshare</li></ul> |
+| [!UICONTROL Action] | Filter on any action name listed above. |
 | [!UICONTROL User ID] | Filter on a specific user by their user ID. The user ID can be found by selecting the info (i) button next to a user name.|
 | [!UICONTROL Email] | Filter on a specific user's email address. The email can be found by selecting the info (i) button next to a user name.|
 | [!UICONTROL Component ID] | Filter on a specific Component ID. The user ID can be found by selecting the info (i) button for a desired component. |
-| [!UICONTROL Component Type] | Filter on one or more component type/s: <ul><li>Annotation</li><li>Audience</li><li>Calculated Metric</li><li>Connection</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobile</li><li>Project</li><li>Report</li><li>Scheduled_Project</li><li>User</li><li>User_Group</li></ul> |
+| [!UICONTROL Component Type] | Filter on any component type listed above. |
 
 {style="table-layout:auto"}
 
@@ -100,4 +130,4 @@ You can download audit logs in CSV or JSON formats. Any filters applied or colum
 
 ## Manage audit logs in the API
 
-All actions that you can perform in the UI can also be done using API calls. See the [CJA API reference document](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) for more information.
+All actions that you can perform in the UI can also be done using API calls. See the [Customer Journey Analytics API reference document](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) for more information.

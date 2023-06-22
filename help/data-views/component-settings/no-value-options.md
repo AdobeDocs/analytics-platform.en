@@ -11,6 +11,8 @@ No value options let you to determine how Analysis Workspace handles situations 
 
 ![No value options](../assets/no-value-options.png)
 
+## Settings {#settings}
+
 | Setting | Description |
 | --- | --- |
 | [!UICONTROL If shown, call "No value"] | A text field that lets you rename the **[!UICONTROL No value]** dimension item to something else. |
@@ -19,3 +21,7 @@ No value options let you to determine how Analysis Workspace handles situations 
 | [!UICONTROL Treat No value as a value] | Replaces blank values in the data with the text that you specified under [!UICONTROL If shown, call "No value"]. For example, if you had Mobile device types as the dimension, you could rename the **[!UICONTROL No value]** item to "Desktop". When you change this field to a custom value, the custom value is treated as a legitimate string value. Therefore, if you enter the value "Red" into this field, any instances of the string "Red" appearing in the data itself rolls under the same line item that you have specified. |
 
 {style="table-layout:auto"}
+
+## Blog post
+
+Here is a related blog post about [handling "no value" in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).

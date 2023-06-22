@@ -6,7 +6,7 @@ exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 ---
 # [!UICONTROL Labs] User Guide
 
-[!UICONTROL Labs] allows for faster prototyping of early-stage ideas. It is a combination of tools and processes that accelerates development transparently, with a customer focus. It allows users to engage with emerging technologies, to discover valuable insights, and to influence future feature development and priorities. You can use Labs to get early access to Customer Journey Analytics (CJA) innovations and to evaluate upcoming features within the context of your own business use cases and data.
+[!UICONTROL Labs] allows for faster prototyping of early-stage ideas. It is a combination of tools and processes that accelerates development transparently, with a customer focus. It allows users to engage with emerging technologies, to discover valuable insights, and to influence future feature development and priorities. You can use Labs to get early access to Adobe Customer Journey Analytics innovations and to evaluate upcoming features within the context of your own business use cases and data.
 
 ## Requirements
 
@@ -20,7 +20,7 @@ To access [!UICONTROL Labs]:
 
 1. If you do not already have access to [!UICONTROL Workspace] and [!UICONTROL Labs], ask your administrator for permissions.
 
-1. In CJA, click the **[!UICONTROL Labs]** tab.
+1. In Customer Journey Analytics, click the **[!UICONTROL Labs]** tab.
 
 ## Evaluate a prototype
 
@@ -58,7 +58,7 @@ To launch and evaluate a prototype:
 
 1. Click **[!UICONTROL Submit]** to return to the main Previews portal.
 
-## CJA Labs prototypes
+## Customer Journey Analytics Labs prototypes
 
 * Natural-language insight generator: Provides a natural-language summary of any data that you are analyzing in a freeform table.
 * Visualization recommender: Recommends visualizations that pair well with your data.

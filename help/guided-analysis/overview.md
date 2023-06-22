@@ -13,10 +13,6 @@ Similar to Analysis Workspace and Mobile scorecards, a Guided analysis report us
 
 Guided analysis reports currently feature three analysis types: [Funnel](analysis-types/funnel.md), [Trends](analysis-types/trends.md), and [User growth](analysis-types/user-growth.md). Each of these analysis types has multiple view types, which provide additional insights to each of these reports.
 
-## Provisioning
-
-Guided analysis is a paid add-on to Customer Journey Analytics. If your organization would like to start using this feature, contact your Adobe Account Team.
-
 ## Interface
 
 The interface for Guided analysis, regardless of analysis type, comprises the following main UI elements:
@@ -40,7 +36,9 @@ Guided analysis contains the following interface parts:
 
 {style="table-layout:auto"}
 
-## Permissions
+## Provisioning
+
+Guided analysis is part of Adobe Product Analytics, which is a paid add-on to Customer Journey Analytics. If your organization would like to start using this feature, contact your Adobe Account Team.
 
 Adobe plans to provide permissions specific to Guided analysis in the future.
 

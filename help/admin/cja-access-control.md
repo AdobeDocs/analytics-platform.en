@@ -1,6 +1,6 @@
 ---
 title: Customer Journey Analytics Access Control
-description: Learn about ways to implement access control in CJA.
+description: Learn about ways to implement access control in Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
@@ -8,13 +8,13 @@ mini-toc-levels: 3
 ---
 # Customer Journey Analytics Access Control
 
-Customer Journey Analytics (CJA) is governed by three levels of access or three roles: Product Admin role, Product Profile Admin role, and user-level access. This topic explains these roles in more detail. 
+Customer Journey Analytics is governed by three levels of access or three roles: Product Admin role, Product Profile Admin role, and user-level access. This topic explains these roles in more detail. 
 
 In addition, we discuss more granular ways to limit access, such as Workspace curation and row-level as well as value-level access control.
 
 ## Product Admin role
 
-Product Admins have permissions to complete any task necessary within CJA. You must be added as an Product Admin to the **Customer Journey Analytics Product Profile** in the [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL Admins] tab > [!UICONTROL Add Admin]. Product admins are granted the following permissions:
+Product Admins have permissions to complete any task necessary within Customer Journey Analytics. You must be added as an Product Admin to the **Customer Journey Analytics Product Profile** in the [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL Admins] tab > [!UICONTROL Add Admin]. Product admins are granted the following permissions:
 
 * Create/update/delete connections or data views
 * Update/delete projects, filters, calculated metrics, audiences, annotations, or filters created by other users
@@ -35,7 +35,7 @@ A product profile is a set of permissions. Product Profile Admins can
 
 *   Create and manage individual product profiles, such as adding new users or managing user groups and their associated product profiles.
 
-*   In CJA, edit data views that are part of a product profile that they manage. They cannot create new data views.
+*   In Customer Journey Analytics, edit data views that are part of a product profile that they manage. They cannot create new data views.
 
 ## User-level access
 
@@ -47,7 +47,7 @@ Another level of access control can be used at the Workspace reporting level. Yo
 
 ## Grant access to individual metrics or dimensions
 
-You cannot grant or deny permissions for individual metrics or dimensions in Customer Journey Analytics like you can in traditional Adobe Analytics. Metrics and dimensions can be modified in [data views](/help/data-views/data-views.md) and are thus subject to change in CJA. Changing them also retroactively changes reporting.
+You cannot grant or deny permissions for individual metrics or dimensions in Customer Journey Analytics like you can in traditional Adobe Analytics. Metrics and dimensions can be modified in [data views](/help/data-views/data-views.md) and are thus subject to change in Customer Journey Analytics. Changing them also retroactively changes reporting.
 
 ## Use cases
 
@@ -61,7 +61,7 @@ A third party that your company works with has a team lead that can be made Prod
 
 Let's say you wanted to give users access to data from one day only. Here is how you would limit access to those specific rows:
 
-1. Create a filter in CJA where **[!UICONTROL Day]** equals the date you want them to have data access to.
+1. Create a filter in Customer Journey Analytics where **[!UICONTROL Day]** equals the date you want them to have data access to.
 1. In [!UICONTROL Data views] > [!UICONTROL Settings], add that filter to the data view.
 1. Save the data view and it auto-applies the filter to the dataset. Any rows that don't fit the filter definition are now automatically excluded from the edited data view.
 1. Create a new Product profile in Admin Console, add users to it and limit their access to this data view.
@@ -72,9 +72,9 @@ Users who have access to a data view can only work with the metrics and dimensio
 
 Here is a healthcare-related example: Let's say you create a metric called "Hypertension" in a data view, from a dataset that includes this data. The fact that it's a metric would allow you to see the aggregate value of this metric, but not the individual patients who fall under it.
 
-## CJA permissions in Admin Console
+## Customer Journey Analytics permissions in Admin Console
 
-The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin Console](https://adminconsole.adobe.com/enterprise/). You can add users to specific product profiles. Then you assign rights to specific data views and specify which permissions the users in a product profile have. Here are the CJA-specific permissions:
+The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin Console](https://adminconsole.adobe.com/enterprise/). You can add users to specific product profiles. Then you assign rights to specific data views and specify which permissions the users in a product profile have. Here are the Customer Journey Analytics-specific permissions:
 
 ![admin console permissions](assets/permissions.png)
 
@@ -87,7 +87,7 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin C
 | **[!UICONTROL Reporting Usage View]** | Lets users see all of the concurrent reporting requests. |
 | **[!UICONTROL Calculated Metrics Creation]** | Lets users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Filter Creation]** | Lets users create [filters](/help/components/filters/filters-overview.md). |
-| **[!UICONTROL Labs Access]** | Lets users access the [Labs](/help/labs/labs.md) tab in CJA. |
+| **[!UICONTROL Labs Access]** | Lets users access the [Labs](/help/labs/labs.md) tab in Customer Journey Analytics. |
 | **[!UICONTROL Annotation Creation]** | Lets users create [annotations](/help/components/annotations/overview.md). |
 | **[!UICONTROL Audience Creation]** | Lets users create [audiences](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL Audience View]** | Lets users view [audiences](/help/components/audiences/audiences-overview.md). |

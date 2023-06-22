@@ -1,17 +1,17 @@
 ---
 title: Labels and policies
-description: Learn how data labels and policies defined in AEP affect data views and reporting in CJA.
+description: Learn how data labels and policies defined in Adobe Experience Platform affect data views and reporting in Customer Journey Analytics.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 ---
 # Labels and policies
 
-When you create a dataset in Experience Platform, you can create [data usage labels](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) for some or all of the elements in the dataset. You can view these labels and policies in CJA. 
+When you create a dataset in Experience Platform, you can create [data usage labels](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) for some or all of the elements in the dataset. You can view these labels and policies in Customer Journey Analytics. 
 
-The following labels are of special interest to CJA:
+The following labels are of special interest to Customer Journey Analytics:
 
 * The `C8` label - **[!UICONTROL No measurement]**. This label signifies that data cannot be used for analytics on your organization's websites or apps.
 
-* The `C12` label - **[!UICONTROL No General Data Export]**. Schema fields labeled this way cannot be exported or downloaded from CJA (via reporting, export, API, etc.)
+* The `C12` label - **[!UICONTROL No General Data Export]**. Schema fields labeled this way cannot be exported or downloaded from Customer Journey Analytics (via reporting, export, API, etc.)
 
 >[!NOTE]
 >
@@ -19,12 +19,12 @@ The following labels are of special interest to CJA:
 
 Labeling in itself does not mean that these data usage labels are enforced. That's what policies are used for. You create your policies via the [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=en) in Experience Platform.
 
-Two Adobe-defined policies are surfaced in CJA and affect reporting and download/sharing:
+Two Adobe-defined policies are surfaced in Customer Journey Analytics and affect reporting and download/sharing:
 
 * **[!UICONTROL Enforce Analytics]** policy
 * **[!UICONTROL Enforce Download]** policy
 
-## View data labels in CJA data views
+## View data labels in Customer Journey Analytics data views
 
 Data labels that were created in Experience Platform are shown in three locations in the data views user interface:
 
@@ -46,7 +46,7 @@ Click **[!UICONTROL Apply]** to see which components have labels attached to the
 
 ## Filter on Data Governance policies in data views
 
-You can check to see if a policy is turned on that blocks the use of certain CJA data view elements for analytics or export purposed. 
+You can check to see if a policy is turned on that blocks the use of certain Customer Journey Analytics data view elements for analytics or export purposed. 
 
 Again, click the [!UICONTROL filter] icon in the left rail and under **[!UICONTROL Data Governance]**, click **[!UICONTROL Policies]**:
 

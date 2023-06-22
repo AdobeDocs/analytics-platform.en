@@ -1,5 +1,5 @@
 ---
-description: Learn how you can analyze the results of A/B tests in the CJA Experimentation panel.
+description: Learn how you can analyze the results of A/B tests in the Customer Journey Analytics Experimentation panel.
 title: Experimentation panel
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
@@ -10,11 +10,11 @@ The **[!UICONTROL Experimentation]** panel lets analysts compare different user 
 
 >[!IMPORTANT]
 >
->At this point, [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) data brought into Adobe Experience Platform via the Analytics Source Connector **cannot** be analyzed in the [!UICONTROL Experimentation] panel. We expect a resolution to this issue in 2023.
+>At this point, [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en) (A4T) data *cannot* be analyzed in the Experimentation panel. 
 
 ## Access Control {#access}
 
-The Experimentation panel is available to use by all Customer Journey Analytics (CJA) users. No Admin rights or other permissions are required. However, the setup (steps 1 and 2 below) requires actions that only Admins can perform.
+The Experimentation panel is available to use by all Customer Journey Analytics users. No Admin rights or other permissions are required. However, the setup (steps 1 and 2 below) requires actions that only Admins can perform.
 
 ## New functions in Calculated Metrics {#functions}
 
@@ -22,13 +22,13 @@ Two new advanced functions were added: [!UICONTROL Lift] and [!UICONTROL Confide
 
 ## Step 1: Create connection to experiment dataset/s {#connection}
 
-The recommended data schema is for the experiment data to be in an [Object array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) that contains the experiment and variant data in two separate dimensions. If you have your experiment data in a single dimension with experiment and variant data in a delimited string, you can use the [substring](/help/data-views/component-settings/substring.md) setting in data views to split them into two for use in the panel.
+The recommended data schema is for the experiment data to be in an [Object array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) that contains the experiment and variant data in two separate dimensions. Both dimensions need to be in a **single** object array. If you have your experiment data in a single dimension with experiment and variant data in a delimited string, you can use the [substring](/help/data-views/component-settings/substring.md) setting in data views to split them into two for use in the panel.
 
-After your experiment data has been [ingested](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) into Adobe Experience Platform, [create a connection in CJA](/help/connections/create-connection.md) to one or more experiment dataset/s.
+After your experiment data has been [ingested](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) into Adobe Experience Platform, [create a connection in Customer Journey Analytics](/help/connections/create-connection.md) to one or more experiment dataset/s.
 
 ## Step 2: Add context labels in data views {#contect-labels}
 
-In CJA data views settings, admins can add [context labels](/help/data-views/component-settings/overview.md) to a dimension or metric and CJA services like [!UICONTROL Experimentation] panel can use these labels for their purposes. Two pre-defined labels are used for the Experimentation panel:
+In Customer Journey Analytics data views settings, admins can add [context labels](/help/data-views/component-settings/overview.md) to a dimension or metric and Customer Journey Analytics services like [!UICONTROL Experimentation] panel can use these labels for their purposes. Two pre-defined labels are used for the Experimentation panel:
 
 * [!UICONTROL Experimentation Experiment]
 * [!UICONTROL Experimentation Variant]
@@ -41,12 +41,12 @@ Without these labels present, the Experiment panel does not work, since there ar
 
 ## Step 3: Configure the Experiment panel {#configure}
 
-1. In CJA Workspace, drag the Experimentation panel into a project.
+1. In Customer Journey Analytics Workspace, drag the Experimentation panel into a project.
 
   ![experiment panel](assets/experiment.png)
 
    >[!IMPORTANT]
-   >If the necessary setup in CJA data views has not been completed, you will receive this message before you can proceed: "[!UICONTROL Please configure the experiment and variant dimensions in Data Views]".
+   >If the necessary setup in Customer Journey Analytics data views has not been completed, you will receive this message before you can proceed: "[!UICONTROL Please configure the experiment and variant dimensions in Data Views]".
 
 1. Configure the panel input settings.
 
@@ -56,7 +56,7 @@ Without these labels present, the Experiment panel does not work, since there ar
    | **[!UICONTROL Control Variant]** | One of two or more alterations in an end user's experience that are being compared for the purpose of identifying the better alternative. One variant must be selected as the control, and only one variant can be considered to be the control variant. This setting is pre-populated with the dimensions that have been labeled with the  **[!UICONTROL Variant]** label in data views. This setting pulls up the variant data that is associated with this experiment. |
    | **[!UICONTROL Success Metrics]** | The metric or metrics that a user is comparing variants with. The variant with the most desirable outcome for the conversion metric (whether highest or lowest) is declared the "best performing variant" of an experiment. You can add up to 5 metrics. |
    | **[!UICONTROL Normalizing Metric]** | The basis ([!UICONTROL People], [!UICONTROL Sessions], or [!UICONTROL Events]) on which a test will be run. For example, a test may compare the conversion rates of several variations where **[!UICONTROL Conversion rate]** is calculated as **[!UICONTROL Conversions per session]** or **[!UICONTROL Conversions per person]**. |
-   | **[!UICONTROL Date Range]** | The date range is automatically set, based on the first event received in CJA for the experiment selected. You can restrict or expand the date range to a more specific timeframe if needed. |
+   | **[!UICONTROL Date Range]** | The date range is automatically set, based on the first event received in Customer Journey Analytics for the experiment selected. You can restrict or expand the date range to a more specific timeframe if needed. |
 
 1. Click **[!UICONTROL Build]**.
 
@@ -80,9 +80,9 @@ The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTRO
 
 ## Step 5: Interpret the results {#interpret}
 
-1. **Experiment is Conclusive**: Every time you view the experimentation report, Adobe analyzes the data that has accumulated in the experiment up to this point and will declare an experiment to be "Conclusive" when the anytime valid confidence crosses a threshold of 95% for *at least one* of the variants (with a Bonferonni correction applied when there are more than two arms, to correct for multiple hypothesis testing).  
+1. **Experiment is Conclusive**: Every time you view the experimentation report, Adobe analyzes the data that has accumulated in the experiment up to this point and will declare an experiment to be "Conclusive" when the anytime valid confidence crosses a threshold of 95% for *at least one* of the variants (with a Benjamini-Hochberg correction applied when there are more than two arms, to correct for multiple hypothesis testing).  
 
-2. **Best Performing Variant**: When an experiment is declared to be conclusive, the variant with the highest conversion rate is labeled as the "best performing variant". Note that this variant must either be the control or baseline variant, or one of the variants that crosses the 95% anytime valid confidence threshold (with Bonferonni corrections applied).
+2. **Best Performing Variant**: When an experiment is declared to be conclusive, the variant with the highest conversion rate is labeled as the "best performing variant". Note that this variant must either be the control or baseline variant, or one of the variants that crosses the 95% anytime valid confidence threshold (with Benjamini-Hochberg corrections applied).
 
 3. **Conversion Rate**: The conversion rate that is shown is a ratio of the success metric value, to the normalizing metric value. Note that this may sometimes be larger than 1, if the metric is not binary (1 or 0 for each unit in the experiment)
 
@@ -104,7 +104,7 @@ A 95% Confidence Sequence will include the "true" value of the business metric i
 
 ## Interpret non-randomized dimensions {#non-randomized}
 
-CJA allows analysts to select any dimension as the "experiment". But how do you interpret an analysis where the dimension chosen as the experiment is not one for which persons are randomized?
+Customer Journey Analytics allows analysts to select any dimension as the "experiment". But how do you interpret an analysis where the dimension chosen as the experiment is not one for which persons are randomized?
 
 For example, consider an ad that a person sees. You may be interested in measuring the change in some metric (e.g., average revenue) if you decide to show persons "ad B" instead of "ad A". The causal effect of showing ad B in place of ad A is of central importance in arriving at the marketing decision. This causal effect may be measured as the average revenue over the whole population, if we replaced the status quo of showing ad A with the alternate strategy of showing ad B. 
 
@@ -119,3 +119,7 @@ The following illustration contrasts these situations:
 ![randomized experiment](assets/randomize.png)
 
 When you want to measure the impact of intervention X on outcome Y, it is possible that the real cause of both is the confounding factor C. If the data is not achieved by randomizing persons on X, the impact is harder to measure, and the analysis will explicitly account for C. Randomization breaks the dependence of X on C, allowing us to measure the effect of X on Y without having to worry about other variables. 
+
+## Use calculated metrics in the Experimentation panel
+
+Refer to this blog post for information on [using derived metrics in the Experimentation panel](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).

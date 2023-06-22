@@ -1,11 +1,11 @@
 ---
-title: Use binding dimensions and metrics in CJA
+title: Use binding dimensions and metrics in Customer Journey Analytics
 description: Attribute dimensions to object arrays for complex persistence analysis.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 ---
 
-# Use binding dimensions and metrics in CJA
+# Use binding dimensions and metrics in Customer Journey Analytics
 
 Customer Journey Analytics offers several ways to persist dimension values beyond the hit that they are set on. One of the persistence methods that Adobe offers is known as Binding. In previous versions of Adobe Analytics, this concept was known as merchandising.
 
@@ -13,7 +13,7 @@ While you can use binding dimensions with top-level event data, this concept is 
 
 ## Example 1: Use binding dimensions to attribute additional product attributes to a purchase
 
-You can bind dimension items within an object array to another dimension. When the bound dimension item appears, CJA recalls the bound dimension and includes it in the event for you. Consider the following customer journey:
+You can bind dimension items within an object array to another dimension. When the bound dimension item appears, Customer Journey Analytics recalls the bound dimension and includes it in the event for you. Consider the following customer journey:
 
 1. A visitor views a product page on a washing machine.
 
@@ -76,7 +76,7 @@ You can go into the data view manager and bind product color to product name:
 
 ![Binding dimension](../assets/binding-dimension.png)
 
-When you set this persistence model, CJA takes note of the product name whenever product color is set. When it recognizes the same product name in a subsequent event for this person, the product color is brought over as well. The same data when you bind product color to product name would look similar to the following:
+When you set this persistence model, Customer Journey Analytics takes note of the product name whenever product color is set. When it recognizes the same product name in a subsequent event for this person, the product color is brought over as well. The same data when you bind product color to product name would look similar to the following:
 
 | product.color | revenue |
 | --- | --- |
@@ -257,7 +257,7 @@ In Analysis Workspace, the resulting report would look similar to the following:
 | tennis racket | $34.99 |
 | shoes | $79.99 |
 
-CJA automatically detects the relationship between the selected dimension and the binding dimension. If the binding dimension is in an object array while the selected dimension is at a higher level, a binding metric is required. A binding metric acts as a trigger for a binding dimension, so it only binds itself on events where the binding metric is present. In the above example, the search results page always includes a search term dimension and a searches metric.
+Customer Journey Analytics automatically detects the relationship between the selected dimension and the binding dimension. If the binding dimension is in an object array while the selected dimension is at a higher level, a binding metric is required. A binding metric acts as a trigger for a binding dimension, so it only binds itself on events where the binding metric is present. In the above example, the search results page always includes a search term dimension and a searches metric.
 
 Setting the search term dimension to this persistence model executes the following logic:
 
@@ -347,7 +347,7 @@ Analysis Workspace would correctly attribute the second episode of Orangey to th
 
 ## Example 4: Evaluate browse vs. search behavior in a retail setting
 
-You can bind values to dimensions set on previous events. When you set a variable with a binding dimension, CJA takes into account the persisted value. If this behavior is undesired, you can adjust the binding dimension's persistence settings. Consider the following example where `product_finding_method` is set on an event, then bound to the Cart Adds metric on the following event.
+You can bind values to dimensions set on previous events. When you set a variable with a binding dimension, Customer Journey Analytics takes into account the persisted value. If this behavior is undesired, you can adjust the binding dimension's persistence settings. Consider the following example where `product_finding_method` is set on an event, then bound to the Cart Adds metric on the following event.
 
 1. A visitor performs a search for `"camera"`. Note that no products are set on this page.
 

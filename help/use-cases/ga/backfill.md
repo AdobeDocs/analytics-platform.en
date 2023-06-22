@@ -1,6 +1,6 @@
 ---
 title: Ingest Google Analytics historical data into Adobe Experience Platform
-description: Explains how to use Customer Journey Analytics (CJA) to ingest your Google Analytics data into Adobe Experience Platform. 
+description: Explains how to use Adobe Customer Journey Analytics to ingest your Google Analytics data into Adobe Experience Platform. 
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -71,7 +71,7 @@ In Google Cloud Platform, navigate to **Export > Export to GCS**. Once the data 
 
 >[!TIP]
 >
->If you plan to import both historical and live streaming Google Analytics data, make sure that you use the same schema for both datasets. You can merge the datasets in a CJA using a [Combined dataset](/help/connections/combined-dataset.md).
+>If you plan to import both historical and live streaming Google Analytics data, make sure that you use the same schema for both datasets. You can merge the datasets in a Customer Journey Analytics using a [Combined dataset](/help/connections/combined-dataset.md).
 
 You can map the GA event data into an existing dataset that you created previously, or create a dataset, using whichever XDM schema you choose. Once you have selected the schema, the Experience Platform applies machine learning to automatically pre-map each of the fields in the Google Analytics data to your [XDM schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui).
 
@@ -91,7 +91,7 @@ Certain XDM fields in Platform require the correct format in order for data to b
 
    ![Timestamp](../assets/timestamp.png)
 
-* **`_id`**: This field must have a value in it - CJA does not care what the value is. You can add a "1" to the field:
+* **`_id`**: This field must have a value in it - Customer Journey Analytics does not care what the value is. You can add a "1" to the field:
 
    ![ID](../assets/_id.png)
 

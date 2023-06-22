@@ -11,13 +11,13 @@ Frequently asked questions around Guided analysis.
 
 +++**Is Guided analysis available to everyone?**
 
-No; Guided analysis is a paid add-on to CJA. If you would like to start using this add-on, contact your Adobe Account Team.
+No; Guided analysis is a paid add-on to Customer Journey Analytics. If you would like to start using this add-on, contact your Adobe Account Team.
 
 +++
 
 +++**What implementation changes are required to use Guided analysis?**
 
-If you are already using Analysis Workspace in CJA, no additional implementation changes are needed. Guided analysis uses the same data views and connections as Analysis Workspace. The process to onboard and use any project type is identical for all of CJA, including Guided analysis.
+If you are already using Analysis Workspace in Customer Journey Analytics, no additional implementation changes are needed. Guided analysis uses the same data views and connections as Analysis Workspace. The process to onboard and use any project type is identical for all of Customer Journey Analytics, including Guided analysis.
 
 +++
 

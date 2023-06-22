@@ -16,7 +16,7 @@ Some Customer Journey Analytics terms differ from how they have traditionally be
 | Experience Cloud organization | Login company | See [Organizations and account linking](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | N/A | Report Suite | Report suites in the traditional Adobe Analytics sense no longer exist. Instead, you create (virtual) [data views](/help/data-views/create-dataview.md) from the Platform datasets that you established connections to. |
 | Filter | Segment | Segments are now filters. Filters in Customer Journey Analytics behave the same as segments. Only the terminology has changed. |
-| Data view | Virtual report suite | In Adobe Analytics, a virtual report suite is a filtered view of a parent report suite. The main difference between a virtual report suite and a data view in CJA is that the virtual report suite is a subset of a "base" or "parent" report suite and, as such, inherits some of its settings. Since parent/base report suites no longer exist, you define data views with their own settings. |
+| Data view | Virtual report suite | In Adobe Analytics, a virtual report suite is a filtered view of a parent report suite. The main difference between a virtual report suite and a data view in Customer Journey Analytics is that the virtual report suite is a subset of a "base" or "parent" report suite and, as such, inherits some of its settings. Since parent/base report suites no longer exist, you define data views with their own settings. |
 
 ## Adobe Experience Platform glossary
 

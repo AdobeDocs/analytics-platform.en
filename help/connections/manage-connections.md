@@ -1,6 +1,6 @@
 ---
 title: How to manage connections in Customer Journey Analytics
-description: Describes how to manage connections to Experience Platform datasets in Customer Journey Analytics (CJA).
+description: Describes how to manage connections to Experience Platform datasets in Customer Journey Analytics (Customer Journey Analytics).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
@@ -12,7 +12,7 @@ Once Admin users have [created one or more connections](/help/connections/create
 
 * It lets you check the **status of your connection's datasets and of the ingestion process**. This status check lets you know when your data is available so that you can go into Analysis Workspace and start analysis.
 
-* It lets you **identify any data discrepancies** due to misconfiguration. Are you missing any rows? If yes, what rows are missing and why? Did you misconfigure connections and cause missing data in CJA?
+* It lets you **identify any data discrepancies** due to misconfiguration. Are you missing any rows? If yes, what rows are missing and why? Did you misconfigure connections and cause missing data in Customer Journey Analytics?
 
 Here is a video about the new Connections Manager:
 

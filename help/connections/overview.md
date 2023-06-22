@@ -1,5 +1,5 @@
 ---
-title: CJA Connections overview
+title: Customer Journey Analytics Connections overview
 description: Learn about connections in Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Connections
@@ -15,7 +15,7 @@ Here is a video overview:
 
 ## Required permissions
 
-To create a CJA Connection, you need the following permissions in [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
+To create a Customer Journey Analytics Connection, you need the following permissions in [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
 
 Adobe Experience Platform:
 * Data Modeling: View Schemas, Manage Schemas

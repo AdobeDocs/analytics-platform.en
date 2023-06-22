@@ -48,7 +48,7 @@ When sharing a specific project role with users and groups in your organization,
 
 * A user who is placed in multiple roles always get the highest experience. This might occur if a user is added both as an individual and as part of a group. For example, if a user is given the **[!UICONTROL Can edit]** role as an individual and the **[!UICONTROL Can view]** role as a member of a group, they will receive a **[!UICONTROL Can edit]** project experience.
 
-* Admins placed in the **[!UICONTROL Can duplicate]** or **[!UICONTROL Can view]** role receive those limited experiences when they open a project. If desired, an Admin can increase their role to **[!UICONTROL Can edit]** at anytime through **[!UICONTROL Components] > [!UICONTROL Projects]**. 
+* Admins placed in the **[!UICONTROL Can duplicate]** or **[!UICONTROL Can view]** role receive those limited experiences when they open a project. An Admin can change their role to **[!UICONTROL Can edit]** by sharing the project with themselves and granting the Edit role, as described in the following procedure. 
 
 To share a specific project role with users or groups in your organization:
 
@@ -99,8 +99,6 @@ To share the project link with users in your organization:
 
 ## Share a project with anyone (no login required) {#share-public-link}
 
-{{release-limited-testing-section}}
-
 You can grant [read-only access](/help/analysis-workspace/curate-share/view-only-projects.md) to Analysis Workspace projects to people who don't have access to Customer Journey Analytics. This can include:
 
 * People outside your organization 
@@ -109,11 +107,11 @@ You can grant [read-only access](/help/analysis-workspace/curate-share/view-only
 
 >[!NOTE]
 >
->Consider the following when sharing an Analysis Workspace project with people who don't have access to CJA:
+>Consider the following when sharing an Analysis Workspace project with people who don't have access to Customer Journey Analytics:
 >
->* The ability to share a project in this way can be disabled by the CJA administrator, as described in [Preferences](/help/analysis-workspace/user-preferences.md). If you can't share a project as described in this section, your CJA administrator has disabled this ability.
+>* The ability to share a project in this way can be disabled by the Customer Journey Analytics administrator, as described in [Preferences](/help/analysis-workspace/user-preferences.md). If you can't share a project as described in this section, your Customer Journey Analytics administrator has disabled this ability.
 >
->* Projects with more than 50 expanded visualizations can't be shared with people who don't have access to CJA.
+>* Projects with more than 50 expanded visualizations can't be shared with people who don't have access to Customer Journey Analytics.
 >
 >* Users you share with can view any filters that were applied to the project during [curation](curate.md). 
 > 
@@ -143,17 +141,17 @@ To share an Analysis Workspace project with anyone:
 
    The owner of the project is also the owner of this link. Link ownership can be transferred to another user only when project ownership is transferred, as described in [Transfer user assets or set account expirations](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) in the Analytics Admin guide.
 
-1. Choose whether to enable the following security option (this option can be controlled by your CJA administrator): 
+1. Choose whether to enable the following security option (this option can be controlled by your Customer Journey Analytics administrator): 
 
    * **[!UICONTROL Require Experience Cloud authentication]:** 
    
      When this option is enabled, the only users who can access the project are those who can log in to the Adobe Experience Cloud organization where the project that you are sharing was created. However, users you share with do not need to have access to Adobe Analytics.
 
-     CJA administrators can configure this preference for the company, as described in [Preferences](/help/analysis-workspace/user-preferences.md). You might encounter the following scenarios, depending on how the administrator configured this option:
+     Customer Journey Analytics administrators can configure this preference for the company, as described in [Preferences](/help/analysis-workspace/user-preferences.md). You might encounter the following scenarios, depending on how the administrator configured this option:
      
-     * If this option is not visible, your CJA administrator did not enable this feature. 
+     * If this option is not visible, your Customer Journey Analytics administrator did not enable this feature. 
 
-     * If this option is enabled and you can't disable it, this means that your CJA administrator requires Experience Cloud authentication for anyone accessing Analysis Workspace projects. This is always the case for organizations who license Healthcare Shield. 
+     * If this option is enabled and you can't disable it, this means that your Customer Journey Analytics administrator requires Experience Cloud authentication for anyone accessing Analysis Workspace projects. This is always the case for organizations who license Healthcare Shield. 
 
 1. Next to the **[!UICONTROL Share with anyone (no login required)]** field, click the **Copy link** icon ![Copy link icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)) to copy the link to your system clipboard. 
 

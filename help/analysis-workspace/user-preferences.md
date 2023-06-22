@@ -11,9 +11,13 @@ You can manage settings for Analysis Workspace and its related components for al
 
 ## Update preferences
 
-1. In Customer Journey Analytics, go to the [!UICONTROL **Project**] landing page, then select [!UICONTROL **Preferences**].
+1. In Customer Journey Analytics, go to the [!UICONTROL **Projects**] landing page, then select [!UICONTROL **Edit preferences**].
 
    ![User preferences](assets/user-preferences.png) 
+
+   Or
+
+   Product Administrators can update IMS Organization preferences by going to the [!UICONTROL **Components**] tab, then selecting [!UICONTROL **Preferences**].
 
 1. For information about the available preferences on each tab, continue with any of the following sections in this article:
 
@@ -29,7 +33,7 @@ You can manage settings for Analysis Workspace and its related components for al
 
 ## General preferences
 
-General preferences apply to your CJA experience in the browser.
+General preferences apply to your Customer Journey Analytics experience in the browser. For information about how to access these preferences, see [Update preferences](#update-preferences). 
 
 | Preference | Options |
 | --- | --- |
@@ -38,10 +42,6 @@ General preferences apply to your CJA experience in the browser.
 | Components displayed in left rail groups | Choose how many of each component to display in the Components menu in the left rail. <p>If you choose 0, the component is no longer accessible from the left rail of your workspaces.</p><p>By default, 5 components display for each of the following:</p> <ul><li>Dimensions</li><li>Metrics</li><li>Filters</li><li>Date ranges</li></ul> <p>For more information about Components in Analysis Workspace, see [Components overview](/help/components/overview.md).</p> |
 
 ## IMS Organization preferences
-
->[!AVAILABILITY]
->
->The Public Access Links functionality described in this section is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
 
 You can update company preferences that apply to all users and projects within your organization. For information about how to access these preferences, see [Update preferences](#update-preferences). 
 

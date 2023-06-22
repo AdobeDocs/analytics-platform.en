@@ -7,7 +7,7 @@ feature: Data Views
 ---
 # Create or edit a data view
 
-Creating a data view involves either creating metrics and dimensions from schema elements or utilizing standard components. Most schema elements can be either a dimension or a metric depending on your business's requirements. Once you drag a schema element into a data view, options appear on the right where you can adjust how the dimension or metric operates in CJA.
+Creating a data view involves either creating metrics and dimensions from schema elements or utilizing standard components. Most schema elements can be either a dimension or a metric depending on your business's requirements. Once you drag a schema element into a data view, options appear on the right where you can adjust how the dimension or metric operates in Customer Journey Analytics.
 
 Here is a video on the topic:
 

@@ -1,12 +1,12 @@
 ---
-description: Factors that impact CJA and Workspace performance and optimizations you can make
-title: Optimize CJA and Analysis Workspace performance
+description: Factors that impact Customer Journey Analytics and Workspace performance and optimizations you can make
+title: Optimize Customer Journey Analytics and Analysis Workspace performance
 feature: FAQ
 exl-id: ad00e476-6f19-462b-ba53-d72ddd949802
 ---
-# Optimize CJA and [!UICONTROL Analysis Workspace] performance
+# Optimize Customer Journey Analytics and [!UICONTROL Analysis Workspace] performance
 
-Various factors can influence overall CJA performance as well as the performance of a project within Analysis Workspace. In Workspace, you might get an error message that says 
+Various factors can influence overall Customer Journey Analytics performance as well as the performance of a project within Analysis Workspace. In Workspace, you might get an error message that says 
 
 `This query is too complex. Please review best practices for building Analysis Workspace queries.`
 
@@ -14,7 +14,7 @@ These best practices discuss which factors might lead to this error and how to s
 
 ## Query factors {#query}
 
-These are the most common query factors that influence overall CJA performance:
+These are the most common query factors that influence overall Customer Journey Analytics performance:
 
 | Factor | Definition | Influenced by | Optimization |
 | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ These are the most common query factors that influence overall CJA performance:
 | **Visualization complexity** (filters, metrics, filters) | The type of visualization (e.g. fallout vs a freeform table) added to a project by itself does not influence project performance very much. It is the complexity of the visualization that adds to processing time. | Factors that add complexity to a visualization include:<ul><li>Range of data requested</li><li>Number of filters applied; for instance, filters used as rows of a freeform table</li><li>Use of complex filters</li><li>[Static item](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) rows or columns in freeform tables</li><li>Filters applied to rows in freeform tables</li><li>Number of metrics included, especially calculated metrics that use filters</li></ul>|
 | **Data center capacity** | The amount of reporting capacity you and other customers share within an Adobe data center. | This is impacted by the number of concurrent queries made by your organization and other organizations within your data center. | Your organization is entitled to a set capacity and if the system is under a light load, Adobe will shift more capacity to you, above and beyond your entitled allowance. |
 | **Number of concurrent queries** | The number of queries that are being requested by your organization at the same time. Each organization is entitled to a minimum of 5 concurrent queries. If a report is taking a long time, typically it is due to the fact that it is in a queue with other reports. This means your organization is trying to run many concurrent requests against a specific data view. | Queries can come from API requests, reporting UIs (Analysis Workspace, Report Builder, etc.), scheduled projects, scheduled alerts, and concurrent users making reporting requests. | Spread your requests and schedules for the data view more evenly throughout the day. Also, shift your requests to off-peak times when possible. Monday mornings, Tuesday mornings, and the first of each month are peak reporting times. |
-| **Connection size** | The amount of data collected into your Connection. |  | Consult with your implementation team or CJA expert to determine if there are implementation improvements that can be made to improve overall experience in CJA. |
+| **Connection size** | The amount of data collected into your Connection. |  | Consult with your implementation team or Customer Journey Analytics expert to determine if there are implementation improvements that can be made to improve overall experience in Customer Journey Analytics. |
 | **Complexity of dimension settings** | Highly complex dimensions can have a significant impact on project performance, specifically dimensions or metrics based on complex custom fields. | | Reduce the number of custom fields or create separate dimensions. |
 | **Dimensions with a lot of unique values** | Also known as high-cardinality dimensions, these dimensions may impact reporting performance. | See [high-cardinality dimensions](/help/components/dimensions/high-cardinality.md) | See [high-cardinality dimensions](/help/components/dimensions/high-cardinality.md) |
 
