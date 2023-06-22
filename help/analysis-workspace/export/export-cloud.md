@@ -6,13 +6,13 @@ feature: Curate and Share
 ---
 # Export project data to the cloud
 
-You can export full table data from Analysis Workspace and send it to designated cloud destinations. 
+You can export full-table data from Analysis Workspace and send it to designated cloud destinations. 
 
-## Advantages of exporting full table data to the cloud
+## Advantages of exporting full-table data to the cloud
 
 There are various methods of exporting data, as described in [Export project data overview](/help/analysis-workspace/export/export-project-overview.md). 
 
-Exporting full table data to the cloud allows you to: 
+Exporting full-table data to the cloud allows you to: 
 
 * Export data to a shared location, such as Google Cloud Platform, Microsoft Azure, Amazon S3, Snowflake, or Adobe Experience Platform.
 
@@ -61,7 +61,7 @@ To export a full table from Analysis Workspace:
 
 1. Select ...
 
-## Manage existing full-table exports
+## Manage existing exports
 
 After you export a full table as described in the sections above, the exports are available on the [!UICONTROL Exports] page. 
 
@@ -77,16 +77,15 @@ You can edit, re-export, duplicate, tag, pause, or delete existing exports:
 
    |Option | Function | 
    |---------|----------|
-   | Edit | B1 | 
-   | Export now | Runs the selected export using the most recent data. This is useful if you want to re-export data that you previously exported ad hoc, or if you set up an export to run on a schedule and you want run the export before the next scheduled export. | 
-   | Duplicate | B3 | 
-   | Tag | B3 | 
-   | Pause | B3 | 
-   | Delete | B3 | 
+   | [!UICONTROL **Edit**] | Allows you to edit the selected export, including the properties, format, scheduling, and location information. </br>This option is not available when selecting multiple exports. | 
+   | [!UICONTROL **Export now**] | Runs the selected export using the most recent data. This is useful if you want to re-export data that you previously exported ad hoc, or if you set up an export to run on a schedule and you want to run the export before the next scheduled export. </br>This option is not available when selecting multiple exports. | 
+   | [!UICONTROL **Duplicate**] | Duplicates the selected export. </br>This option is not available when selecting multiple exports. | 
+   | [!UICONTROL **Tag**] |  |  
+   | [!UICONTROL **Delete**] | Deletes the selected exports. | 
 
 ## Manage export logs
 
-You can edit, re-export, duplicate, tag, pause, or delete existing exports:
+Export logs provide details about each export. There are various options available for managing export logs.
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
@@ -98,10 +97,10 @@ You can edit, re-export, duplicate, tag, pause, or delete existing exports:
 
    |Option | Function | 
    |---------|----------|
-   | Retry | Re-runs the export associated with the selected log, using the data as it was on the day it was originally exported. This is useful when selecting a log that shows a failed export or if the log was accidentally deleted.  | 
-   | Create ticket <!-- waiting to hear from Marijka. Might change this to "Report issue" and use a toast --> | Reports the issue to Adobe Support. This options displays only when there was a failure or problem with the log. <!-- what kind of problem? --> | 
-   | Open project | Opens the project that contains the data associated with the selected log. | 
-   | Delete | Deletes the selected log. | 
+   | [!UICONTROL **Retry**] | Re-runs the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. </br>This option is not available when selecting multiple exports. | 
+   | [!UICONTROL **Create ticket**] | Opens a dialog that allows you to specify details about any issues you encountered in the selected logs. Selecting [!UICONTROL **Submit**] in the dialog creates a ticket for Adobe Customer Care that includes your feedback along with basic information about the selected logs. Adobe Customer Care responds by email to any tickets you create. | 
+   | [!UICONTROL **Open project**] | Opens the project that contains the data associated with the selected log. </br>This option is not available when selecting multiple exports. | 
+   | [!UICONTROL **Delete**] | Deletes the selected logs. This does not delete the export associated with the selected logs. | 
 
 
 
