@@ -240,6 +240,8 @@ breadcrumb-title: Customer Journey Analytics Guide
 
     +   Exports {#exports}
         + [Configure cloud export locations](../components/exports/cloud-export-accounts.md)
+        + [Manage exports](../components/exports/manage-exports.md)
+        + [Manage export logs](../components/exports/manage-export-logs.md)
 
     +   Calculated metrics {#cja-calcmetrics}
         +   [Calculated metrics overview](../components/calc-metrics/calc-metr-overview.md)
