@@ -124,7 +124,7 @@ No, you can use any ID, including a hash of a customer ID, which is not PII.
 >[!NOTE]
 >There is no fixed data size in Customer Journey Analytics and thus Adobe cannot commit to a standard ingestion time. We are actively working to reduce these latencies through new updates and ingestion optimization.
 
-+++**What is the expected latency for [!UICONTROL Customer Journey Analytics] on [!UICONTROL Adobe Experience Platform]?**
++++**What is the expected latency for [!UICONTROL Customer Journey Analytics] data on [!UICONTROL Adobe Experience Platform]?**
 
 <ul><li>Live data or events: Processed and ingested within 90 minutes, once data is available in Adobe Experience Platform. (Batch size > 50 million rows: longer than 90 mins.)</li><li>Small backfills - For example, a lookup dataset of 10 million rows: within 7 days<li>Large backfills - For example, 500 billion rows: 30 days</li></ul>
 
@@ -165,7 +165,7 @@ If you plan to ingest Adobe Analytics data through the [Adobe Analytics source c
 | [!UICONTROL Classifications] | [!UICONTROL Classifications] do not automatically get deduplicated when merging report suites. When combining multiple classifications files into a single [!UICONTROL lookup] dataset, you could encounter problems. |
 
 
-## 8. Traditional [!UICONTROL Adobe Analytics] components
+## 8. [!UICONTROL Adobe Analytics] components
 
 
 +++**Can I share/publish [!UICONTROL filters] ([!UICONTROL segments]) from [!DNL Customer Journey Analytics] to Experience Platform Unified Profile, or other Experience Cloud applications?**
@@ -177,7 +177,7 @@ Not yet, but we are actively working to deliver this capability.
 
 +++**What happened to my old [!UICONTROL eVar] setting?**
 
-[!UICONTROL eVars], [!UICONTROL props], and [!UICONTROL events] in the traditional Adobe Analytics sense no longer exist in [!UICONTROL Customer Journey Analytics]. You have unlimited schema elements (dimensions, metrics, list fields). So all of the attribution settings you used to apply during the data collection process are now applied at query time.
+[!UICONTROL eVars], [!UICONTROL props], and [!UICONTROL events] in the Adobe Analytics sense no longer exist in [!UICONTROL Customer Journey Analytics]. You have unlimited schema elements (dimensions, metrics, list fields). So all of the attribution settings you used to apply during the data collection process are now applied at query time.
 
 +++
 
