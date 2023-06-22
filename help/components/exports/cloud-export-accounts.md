@@ -2,7 +2,7 @@
 description: Configure the cloud export account and location where project data can be sent.
 keywords: Analysis Workspace
 title: Configure cloud export locations
-feature: Curate and Share
+feature: Components
 ---
 # Configure cloud export locations
 

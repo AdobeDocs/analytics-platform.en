@@ -172,9 +172,7 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Export project data overview](../analysis-workspace/export/export-project-overview.md)
         + [Download project data](../analysis-workspace/export/download-send.md)
         + [Send project data to others](../analysis-workspace/export/t-schedule-report.md)
-        + Export project data to the cloud {#cloud}
-          + [Export project data to the cloud](../analysis-workspace/export/export-cloud.md)
-          + [Configure cloud export locations](../analysis-workspace/export/cloud-export-accounts.md)
+        + [Export project data to the cloud](../analysis-workspace/export/export-cloud.md)
 
     +   Virtual Analyst {#virtual-analyst}
         +   [Virtual Analyst overview](../analysis-workspace/virtual-analyst/overview.md)
@@ -239,6 +237,9 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Filter builder](../components/filters/filter-builder.md)
         + [Manage filters](../components/filters/manage-filters.md)
         + [Operators](../components/filters/operators.md)
+
+    +   Exports {#exports}
+        + [Configure cloud export locations](../components/exports/cloud-export-accounts.md)
 
     +   Calculated metrics {#cja-calcmetrics}
         +   [Calculated metrics overview](../components/calc-metrics/calc-metr-overview.md)
