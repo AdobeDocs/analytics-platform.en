@@ -77,7 +77,7 @@ You can edit, re-export, duplicate, tag, pause, or delete existing exports:
 
    |Option | Function | 
    |---------|----------|
-   | [!UICONTROL **Edit**] | Allows you to edit the selected export, including the properties, format, scheduling, and location information. </br>This option is not available when selecting multiple exports. | 
+   | [!UICONTROL **Edit**] | Allows you to edit the selected export, including the export's properties, format, scheduling, and location information. </br>This option is not available when selecting multiple exports. | 
    | [!UICONTROL **Export now**] | Runs the selected export using the most recent data. This is useful if you want to re-export data that you previously exported ad hoc, or if you set up an export to run on a schedule and you want to run the export before the next scheduled export. </br>This option is not available when selecting multiple exports. | 
    | [!UICONTROL **Duplicate**] | Duplicates the selected export. </br>This option is not available when selecting multiple exports. | 
    | [!UICONTROL **Tag**] |  |  

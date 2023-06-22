@@ -14,8 +14,6 @@ This process consists of adding and configuring the account (such as Amazon S3, 
 
 You need to configure Customer Journey Analytics with the necessary information to access your cloud destination account.
 
-<!-- These steps are based on the documentation that I wrote on Data Feeds -->
-
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 1. On the [!UICONTROL Exports] page, select the [!UICONTROL **Location accounts**] tab.
 1. Select [!UICONTROL **Add account**]. <!-- add screenshot? -->
