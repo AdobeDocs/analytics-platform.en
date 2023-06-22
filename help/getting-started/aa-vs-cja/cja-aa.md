@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
 ---
-# Customer Journey Analytics feature support
+# Adobe Customer Journey Analytics feature support
 
-The following tables list which features in Adobe Analytics are supported, partially supported or not supported in Customer Journey Analytics (Customer Journey Analytics), and which features of Customer Journey Analytics are not supported or available in Adobe Analytics. These lists will change over time as features are added to Customer Journey Analytics.
+The following tables list which features in Adobe Analytics are supported, partially supported or not supported in Customer Journey Analytics, and which features of Customer Journey Analytics are not supported or available in Adobe Analytics. These lists will change over time as features are added to Customer Journey Analytics.
 
 ## Fully supported features/components {#full-support}
 
@@ -50,6 +50,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Classifications | Now called "Lookup Datasets". Classifications used in Analytics can be imported to the Experience Platform and Customer Journey Analytics using the Analytics Classifications Source Connector. Lookup datasets can also be uploaded to Experience Platform directly and made available in Customer Journey Analytics. |
 | Classification Rule Builder | Supported using [substrings](/help/data-views/component-settings/substring.md) in Customer Journey Analytics. Uses string manipulations at report time rather than lookup datasets. |
 | Custom Sessionization | Support for all custom sessionization features except mobile background events. |
+| Currency Conversion | Supported as part of [formatting a metric component](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/format.html?lang=en#currency) in a data view. |
 | Merchandising variable persistence | Full Support via [binding dimensions and binding metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | Customer Attributes | Now called "Profile Datasets", they do not get automatically imported from Experience Cloud, but must be uploaded to Experience Platform before they are available in Customer Journey Analytics. |
 | Data Feeds | First-generation data export of datasets is available through the [Experience Platform Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) and through [Experience Platform Destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). These options provide event/row level export of all data collected or ingested into Experience Platform Data Lake. Post process data columns are not available because post columns are computed at query time. Export of post columns is available through reporting. |
@@ -93,7 +94,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Project Templates | Support is planned. |
 | Real-Time Reporting | Support is planned. |
 | Segment IQ | Support is planned. |
-| Currency Conversion | Support is planned. |
 | Transaction ID Data Sources | Support is planned. |
 | Migrating Projects/Filters/Calculated Metrics from Adobe Analytics to Customer Journey Analytics | Support is planned. |
 | Summary-level data sources | Support is planned. |
@@ -109,7 +109,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 
 {style="table-layout:auto"}
 
-## Never support {#never}
+## Never supported {#never}
 
 * People metric using Cross-Device Coop
 * Reports & Analytics Dashboards
@@ -118,7 +118,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 
 ## Adobe Customer Journey Analytics features not available in Adobe Analytics {#cja-not-aa}
 
-The following table lists features that are available in Customer Journey Analytics , but are not supported in Adobe Analytics.
+The following table lists features that are available in Customer Journey Analytics, but are not supported in Adobe Analytics.
 
 | Feature | More Details |
 | --- | --- |
