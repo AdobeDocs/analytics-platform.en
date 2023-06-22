@@ -8,7 +8,7 @@ feature: Release Notes
 
 **Last update**: June 21, 2023
 
-Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
+Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
 ## Release highlights {#highlights}
 
@@ -20,7 +20,7 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 | **Currency conversion support** | Currency conversion is supported as part of formatting a metric component in a Data view. [Learn more](../data-views/component-settings/format.md#currency) | June 7, 2023 | June 21, 2023 | 
 | **PowerBI & Tableau access to Customer Journey Analytics data views** | The Adobe Customer Journey Analytics SQL Connector enables SQL access to data views that you have defined in Customer Journey Analytics. Data engineers and analysts more familiar with Power BI, Tableau, or other business intelligence and visualization tools can now create reports and dashboards based on the same data views that Customer Journey Analytics users are using for their Analysis Workspace projects. [Learn more](/help/data-views/sql-connector.md)|  | June 30, 2023 |
 | **Expanded lookup support to profile and lookup data** | You will be able to add lookup datasets to not only event datasets, but also to profile and lookup datasets.  | June 28, 2023 | July 12, 2023 |
-| **Experience Edge geo lookups** | You will be able to build reports using geolocation data in Customer Journey Analytics once Experience Edge Geo Lookups are enabled for your datastream. |  | July 26, 2023 |
+| **Experience Edge geo lookups** | You will be able to build reports using geolocation data in Customer Journey Analytics once Adobe Experience Edge geo lookups are enabled for your datastream. |  | July 26, 2023 |
 
 {style="table-layout:auto"}
 
@@ -28,8 +28,8 @@ Customer Journey Analytics releases operate on a [continuous delivery model](rel
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Journey Optimizer data views** | Customer Journey Analytics Admins have access to some extra data views in Customer Journey Analytics, entitled "AJO Data view (Sandbox-name)". These data views are used to power the reports in Adobe Journey Optimizer. They can also be used to perform deeper analysis of Adobe Journey Optimizer activities in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html). | | May 25, 2023 |
-| **Backfill for non-production sandboxes** | When creating an Analytics Source Connector data flow in a non-production sandbox,  the backfill in non-production sandboxes will be limited to 3 months. It will remain at 13 months for production sandboxes. | N/A | April 26, 2023 | 
+| **Adobe Journey Optimizer data views** | Customer Journey Analytics admins have access to some extra data views in Customer Journey Analytics, entitled "AJO Data view (Sandbox-name)". These data views are used to power the reports in Adobe Journey Optimizer. They can also be used to perform deeper analysis of Adobe Journey Optimizer activities in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html). | | May 25, 2023 |
+| **Backfill for non-production sandboxes** | When creating an Analytics Source Connector data flow in a non-production sandbox, the backfill in non-production sandboxes will be limited to 3 months. It will remain at 13 months for production sandboxes. | N/A | April 26, 2023 | 
 | **Link sharing for projects (no login required)** | You can now share read-only links to Analysis Workspace projects with people who don't have access to Adobe Analytics. This includes sharing with people outside of your organization, or those within your organization who are not provisioned for Adobe Analytics. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en#share-public-link) <p>This functionality is enabled by default and can be disabled by the system administrator. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html?lang=en#ims-organization-preferences)</p> | May 3, 2023 | June 6, 2023 |
 | **Updated Home screen for the Analytics dashboards app (Mobile App)** | The new updated Home screen allows you to view all of your scorecards in one consolidated scorecard list.  If you have access to more than one organization under one login, all scorecards from your organizations will be available in a single list. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) | N/A | May 10, 2023 | 
 | **Report Builder for Customer Journey Analytics - Select data view from cell** | This feature allows users to select the data view for a data block from a cell. This is helpful if you create a workbook and you have multiple data views that have similar data construction and you want to be able to reuse a workbook multiple times, with different data views. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) | N/A | May 24, 2023 |
