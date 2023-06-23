@@ -126,13 +126,12 @@ No, you can use any ID, including a hash of a customer ID, which is not PII.
 
 +++**What is the expected latency for [!UICONTROL Customer Journey Analytics] data on [!UICONTROL Adobe Experience Platform]?**
 
-We recently changed how we process data in Customer Journey Analytics.
+We recently changed how we process data in Customer Journey Analytics:
 
-**Old way:**
+<ul><li>Any event data with a timestamp less than 24 hours old is streamed in.</li><li>Any event data with a timestamp more than 24 hours old (even if it's in the same batch as newer data) is considered backfill and will be ingested at a lower priority.</li></ul>
+
 <ul><li>Live data or events: Processed and ingested within 90 minutes, once data is available in Adobe Experience Platform. (Batch size > 50 million rows: longer than 90 mins.)</li><li>Small backfills - For example, a lookup dataset of 10 million rows: within 7 days<li>Large backfills - For example, 500 billion rows: 30 days</li></ul>
 
-**New way (as of June, 2023)**
-<ul><li>Any event data with a timestamp less than 24 hours old is streamed in.</li><li>Any event data with a timestamp more than 24 hours old (even if it's in the same batch as newer data) is considered backfill and will be ingested at a lower priority.</li></ul>
 
 +++
 
