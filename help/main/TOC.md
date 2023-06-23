@@ -168,11 +168,11 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
         + [View-only projects](../analysis-workspace/curate-share/view-only-projects.md)
 
-    +   Export project data {#export}
-        + [Export project data overview](../analysis-workspace/export/export-project-overview.md)
-        + [Download project data](../analysis-workspace/export/download-send.md)
-        + [Send project data to others](../analysis-workspace/export/t-schedule-report.md)
-        + [Export project data to the cloud](../analysis-workspace/export/export-cloud.md)
+    +   Export CJA data {#export}
+        + [Export CJA data overview](../analysis-workspace/export/export-project-overview.md)
+        + [Download CJA data](../analysis-workspace/export/download-send.md)
+        + [Send CJA data to others](../analysis-workspace/export/t-schedule-report.md)
+        + [Export CJA data to the cloud](../analysis-workspace/export/export-cloud.md)
 
     +   Virtual Analyst {#virtual-analyst}
         +   [Virtual Analyst overview](../analysis-workspace/virtual-analyst/overview.md)

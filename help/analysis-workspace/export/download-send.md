@@ -1,19 +1,18 @@
 ---
 description: You can download data from Analysis Workspace by copying it, or in PDF and CSV formats.
-title: Download project data
+title: Download Customer Journey Analytics data
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 ---
-# Download project data
+# Download Customer Journey Analytics data
 
-Exported data can be in the form of copied data, CSV, or PDF. A PDF is typically preferred if you want visualizations included in the file. CSV and copied data is preferred if you simply want plain-text data.
+You can download Customer Journey Analytics data to your personal workstation. This can be in the form of copied data, CSV, or PDF. A PDF is typically preferred if you want visualizations included in the downloaded file. CSV and copied data is preferred if you simply want plain-text data.
 
-Other methods of exporting data are also available, as described in [Export project data overview](/help/analysis-workspace/export/export-project-overview.md).
+Other methods of exporting Customer Journey Analytics data are also available, as described in [Export overview](/help/analysis-workspace/export/export-project-overview.md).
 
-## Download a project as CSV or PDF {#download-project}
+## Download as CSV or PDF {#download-project}
 
-
-1. Do either of the following, depending on what format you want to download the project in:
+1. Do either of the following, depending on what format you want the download to be in:
 
    * **PDF:** Select **[!UICONTROL Project]** > **[!UICONTROL Download PDF]**.
   
@@ -21,11 +20,11 @@ Other methods of exporting data are also available, as described in [Export proj
 
    * **CSV:** Select **[!UICONTROL Project]** > **[!UICONTROL Download CSV]**. 
 
-     Choose this option if you want plain-text data.
+     Choose this option if you want the downloaded file to be plain-text.
 
    ![](assets/download-project.png)
 
-1. (Conditional) If you chose to download a PDF, a message is shown after the project is ready to be downloaded. Click [!UICONTROL **Download**].
+1. (Conditional) If you chose to download a PDF, a message is shown after the project is ready to be downloaded. Select [!UICONTROL **Download**].
 
 For project downloads, keep in mind:
 
@@ -34,9 +33,9 @@ For project downloads, keep in mind:
 * PDF downloads are rendered as a single page with no pagination applied.
 * When a project is rendered to PDF, we render what is on the page. If a project has custom-sized visualizations and panels, you need to change them to be auto-sized (button in top-right corner) so that there will be no truncated content.
 
-## Copy data to clipboard (hotkey: Ctrl+C) {#copy-data}
+## Copy to clipboard (hotkey: Ctrl+C) {#copy-data}
 
-The right-click option **[!UICONTROL Copy to clipboard]** lets you quickly copy data from Workspace and paste it in a third-party tool. 
+The right-click option **[!UICONTROL Copy to clipboard]** lets you quickly copy Customer Journey Analytics data from Workspace and paste it in a third-party tool. 
 
 * If you want the displayed table copied, right-click the table header and choose **Copy data to clipboard**. 
 * If you want a subset of data copied, make a selection in the table and then right-click > **Copy selection to clipboard**.
@@ -48,11 +47,11 @@ The right-click option **[!UICONTROL Copy to clipboard]** lets you quickly copy 
 
 ![](assets/copy-selection.png)
 
-## Download data as CSV {#download-data}
+## Download as CSV {#download-data}
 
-The right-click option **[!UICONTROL Download data as CSV]** allows you to download a table of data or the data source of any visualization as a CSV.
+The right-click option **[!UICONTROL Download data as CSV]** allows you to download a table of Customer Journey Analytics data or the data source of any visualization as a CSV.
 
-* From the header of any table or visualization, right-click and choose **[!UICONTROL Download data as CSV]**. This downloads the displayed data in the table or the underlying data source for a visualization as a CSV. 
+* From the header of any table or visualization, right-click and choose **[!UICONTROL Download data as CSV]**. This downloads the displayed Customer Journey Analytics data in the table or the underlying data source for a visualization as a CSV. 
 
   >[!NOTE]
   >

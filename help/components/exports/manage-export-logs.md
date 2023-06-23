@@ -1,7 +1,7 @@
 ---
-description: Manage export logs
+description: Manage logs for existing exports
 keywords: Analysis Workspace
-title: Export project data to the cloud
+title: Manage export logs
 feature: Components
 ---
 # Manage export logs

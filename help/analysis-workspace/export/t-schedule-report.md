@@ -1,20 +1,20 @@
 ---
-description: Send an Analysis Workspace project via email or schedule it for delivery.
+description: Send an Analysis Workspace project by email or schedule it for delivery.
 keywords: Analysis Workspace
-title: Send project data to others
+title: Send project to others by email
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 ---
-# Send project data to others
+# Send Customer Journey Analytics data to others by email
 
-You can export Analysis Workspace project data and send it to selected recipients via email. You can send a file ad hoc, or you can configure files to be sent on a schedule. Files can be sent in CSV or PDF format.
+You can export Customer Journey Analytics data and send it to selected recipients by email. You can send files ad hoc, or you can configure files to be sent on a schedule. Files can be sent in CSV or PDF format.
 
-Other methods of exporting data are also available, as described in [Export project data overview](/help/analysis-workspace/export/export-project-overview.md).
+Other methods of exporting Customer Journey Analytics data are also available, as described in [Export project data overview](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Send file now {#now}
 
-To send a file immediately to recipients via email:
+To send a file immediately to recipients by email:
 
 1. Click **[!UICONTROL Share] > [!UICONTROL Export file]**.
 1. Specify the file type:
@@ -30,7 +30,7 @@ To send a file immediately to recipients via email:
 
 ## Send file on schedule {#schedule}
 
-To send a file on a recurring schedule to recipients via email:
+To send a file on a recurring schedule to recipients by email:
 
 1. Click **[!UICONTROL Share] > [!UICONTROL Schedule file export]**.
 1. Specify the file type (CSV or PDF).

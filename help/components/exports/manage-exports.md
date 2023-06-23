@@ -1,14 +1,14 @@
 ---
-description: Manage exports
+description: Manage existing exports
 keywords: Analysis Workspace
-title: Export project data to the cloud
+title: Manage exports
 feature: Components
 ---
 # Manage exports
 
 After you export a full table as described in [Export project data to the cloud](/help/analysis-workspace/export/export-cloud.md), the exports are available on the [!UICONTROL Exports] tab on the [!UICONTROL Exports] page. 
 
-You can edit, re-export, duplicate, tag, pause, or delete existing exports:
+You can edit, re-export, duplicate, tag, or delete existing exports:
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 

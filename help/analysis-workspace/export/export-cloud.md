@@ -1,20 +1,22 @@
 ---
-description: Send an Analysis Workspace project to a cloud location.
+description: Export an Analysis Workspace project to a cloud location.
 keywords: Analysis Workspace
 title: Export project data to the cloud
 feature: Curate and Share
 ---
-# Export project data to the cloud
+# Export Customer Journey Analytics data to the cloud
 
-You can export full-table data from Analysis Workspace and send it to designated cloud destinations. 
+You can export full-table data from Customer Journey Analytics and send it to designated cloud destinations. 
 
-## Advantages of exporting full-table data to the cloud
+Other methods of exporting Customer Journey Analytics data are also available, as described in [Export project data overview](/help/analysis-workspace/export/export-project-overview.md).
+
+## Advantages of exporting to the cloud
 
 There are various methods of exporting data, as described in [Export project data overview](/help/analysis-workspace/export/export-project-overview.md). 
 
-Exporting full-table data to the cloud allows you to: 
+Exporting Customer Journey Analytics data to the cloud allows you to: 
 
-* Export data to a shared location, such as Google Cloud Platform, Microsoft Azure, Amazon S3, Snowflake, or Adobe Experience Platform.
+* Export to a shared location, such as Google Cloud Platform, Microsoft Azure, Amazon S3, Snowflake, or Adobe Experience Platform.
 
 * Store large amounts of historical data.
 
@@ -24,11 +26,11 @@ Exporting full-table data to the cloud allows you to:
 
 * Break down a variable by more than the current Workspace limitations (5 breakdowns). <!-- does this apply to the other export methods also? -->
 
-* Include calculated metrics in the exported data.
+* Include calculated metrics in the exported Customer Journey Analytics data.
 
 * Structure data output as concatenated values (like Data Warehouse for Adobe Analytics).
 
-* Send exported data ad hoc or on a schedule. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
+* Export ad hoc or on a schedule. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
 
 * Export files in CSV or PDF format. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
 
@@ -63,5 +65,7 @@ To export a full table from Analysis Workspace:
 
 ## Manage exports
 
-After full-table data is exported from Analysis Workspace, you can manage any existing exports, as described in [Manage exports](/help/components/exports/manage-exports.md).
+After data is exported from Analysis Workspace, you can edit, re-export, duplicate, tag, or delete existing exports, as described in [Manage exports](/help/components/exports/manage-exports.md). 
+
+You can also retry or log support tickets for failed exports, as described in [Manage export logs](/help/components/exports/manage-export-logs.md).
 

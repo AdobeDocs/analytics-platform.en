@@ -1,12 +1,12 @@
 ---
-description: Configure the cloud export account and location where project data can be sent.
+description: Configure the cloud export account and location where project data can be sent
 keywords: Analysis Workspace
 title: Configure cloud export locations
 feature: Components
 ---
 # Configure cloud export locations
 
-Before you can export full table data to a cloud destination as described in [Export project data to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to add and configure the location where you want the data to be sent. 
+Before you can export full-table data to a cloud destination as described in [Export project data to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to add and configure the location where you want the data to be sent. 
 
 This process consists of adding and configuring the account (such as Amazon S3, Google Cloud Platform, and so forth) and the location within the account (such as a folder within the account).
 
