@@ -1,16 +1,16 @@
 ---
 description: Send an Analysis Workspace project by email or schedule it for delivery.
 keywords: Analysis Workspace
-title: Send project to others by email
+title: Send Customer Journey Analytics data to others by email
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 ---
-# Send Customer Journey Analytics data to others by email
+# Send Customer Journey Analytics data to others through email
 
-You can export Customer Journey Analytics data and send it to selected recipients by email. You can send files ad hoc, or you can configure files to be sent on a schedule. Files can be sent in CSV or PDF format.
+You can export Customer Journey Analytics data by sending it to selected recipients through email. You can send files ad hoc, or you can configure files to be sent on a schedule. Files can be sent in CSV or PDF format.
 
-Other methods of exporting Customer Journey Analytics data are also available, as described in [Export project data overview](/help/analysis-workspace/export/export-project-overview.md).
+Other methods of exporting Customer Journey Analytics data are also available, as described in [Export overview](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Send file now {#now}
 

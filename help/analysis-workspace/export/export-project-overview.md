@@ -1,12 +1,12 @@
 ---
-description: Understand the various methods available for exporting data from Analysis Workspace.
+description: Understand the various methods available for exporting from Analysis Workspace.
 keywords: Analysis Workspace
 title: Export project data overview
 feature: Curate and Share
 ---
 # Export overview
 
-Customer Journey Analytics allows you to export Customer Journey Analytics data. You might want to export from Customer Journey Analytics for a number of reasons, such as storing large amounts of historical data or analyzing raw data in third-party tools.
+You can export Customer Journey Analytics data from Analysis Workspace. You might want to export Customer Journey Analytics data for a number of reasons, such as to store large amounts of historical data or to analyze raw data in third-party tools.
 
 The following sections describe supported file types, the various methods available for exporting, and the advantages of each method. 
 
@@ -14,7 +14,7 @@ The following sections describe supported file types, the various methods availa
 
 You can export Customer Journey Analytics data as a PDF or CSV file. 
 
- * **PDF:** Provides an easy way to share visual data with stakeholders. PDF files contain all the displayed (visible) tables and visualizations in the project.
+* **PDF:** Provides an easy way to share visual data with stakeholders. PDF files contain all the displayed (visible) tables and visualizations in the project.
 
 * **CSV:** Allows you to view raw data in a spreadsheet application, such as Excel. CSV files contain plain-text data.
 

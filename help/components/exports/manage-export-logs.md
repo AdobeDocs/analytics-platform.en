@@ -6,7 +6,7 @@ feature: Components
 ---
 # Manage export logs
 
-After you export a full table as described in [Export project data to the cloud](/help/analysis-workspace/export/export-cloud.md), the export logs are available on the [!UICONTROL Logs] tab on the [!UICONTROL Exports] page. 
+After you export a full table as described in [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md), the export logs are available on the [!UICONTROL Logs] tab on the [!UICONTROL Exports] page. 
 
 Export logs provide details about each export. There are various options available for managing export logs.
 
