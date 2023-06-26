@@ -668,6 +668,63 @@ You define a `Page Name (updated)` derived field. You use the [!UICONTROL LOOKUP
 
 +++
 
+<!-- MERGE -->
+
+### Merge Fields
+
+Merges values from two different fields into a new derived field.
+
++++ Details
+
+## Specification {#merge-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>For [!UICONTROL Field]:</li><ul><li>Rule</li><li>Standard field</li><li>Field</li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+## Use case {#mergefields-uc1}
+
+You would like to create a new dimentsion made up from the page name field and the call reason field with the intent of analyzing the journey across channels.
+
+### Data before {#mergefields-uc-databefore}
+
+| Page Name | Session | Visitors |
+|---|--:|--:|
+| help page | 250 | 200 |
+| home page | 500 | 250 |
+| product detail page | 300 | 200 |
+
+{style="table-layout:auto"}
+
+| Call Reason | Session | Visitors |
+|---|--:|--:|
+| questions about my order | 275 | 250 |
+| make a change to my order | 150 | 145 |
+| problem with ordering | 100 | 95 |
+
+{style="table-layout:auto"}
+
+### Derived field {#mergefield-uc-derivedfield}
+
+You define a  `Cross Channel Interactions` derived field. You use the [!UICONTROL MERGE FIELDS] function to define a rule to merge the values from the [!UICONTROL Page Name] field and [!UICONTROL Call Reason] field and store that in the new derived field.
+
+### Data after {#mergefields-uc-dataafter}
+
+| Cross Channel Interactions | Sessions | Visitors |
+|---|--:|--:|
+| home page | 500 | 250 |
+| product detail page | 300 | 200 |
+| questions about my order | 275 | 250 |
+| help page | 250 | 200 |
+| make a change to my order | 150 | 145 |
+| problem with ordering | 100 | 95 |
+
+{style="table-layout:auto"}
+
++++
+
 <!-- URL PARSE -->
 
 ### URL Parse
@@ -754,6 +811,6 @@ You define a `Query String CID` derived field. You use the [!UICONTROL URL PARSE
 
 The following limitations apply to the Derived field functionality in general:
 
-- You can use a maximum of 10 different schema fields (not including standard fields) when defining rules for a derived field. 
-  - From this maximum of 10 different schema fields, only a maximum of 3 lookup schema or profile schema fields are allowed.
+- You can use a maximum of ten different schema fields (not including standard fields) when defining rules for a derived field. 
+  - From this maximum of ten different schema fields, only a maximum of three lookup schema or profile schema fields are allowed.
 - You can have a maximum of 100 derived fields per Customer Journey Analytics connection.
