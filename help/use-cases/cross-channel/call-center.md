@@ -35,14 +35,14 @@ When importing data into Platform, following these tips can help increase insigh
 
 ## Stitch the person ID's together
 
-CJA requires a common identifier to generate a [combined dataset](/help/connections/combined-dataset.md).
+Customer Journey Analytics requires a common identifier to generate a [combined dataset](/help/connections/combined-dataset.md).
 
 * If your datasets already have a common identifier on every event across both datasets, you can skip this step and proceed to create a connection.
 * If either of your datasets have a common identifier on only some events, you can stitch data together using Cross-Channel Analytics. See [Cross-Channel Analytics overview](/help/cca/overview.md) for steps to enable CCA for these two datasets.
 
-## Create a connection in CJA
+## Create a connection in Customer Journey Analytics
 
-[Create a connection](/help/connections/create-connection.md) in CJA.
+[Create a connection](/help/connections/create-connection.md) in Customer Journey Analytics.
 
 * If CCA is used, a new stitched dataset is available for you to use. Use the newly created stitched ID field as the person ID.
 * Otherwise, you can select both original web and call center datasets for use in the connection.

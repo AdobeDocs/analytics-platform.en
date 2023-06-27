@@ -1,5 +1,5 @@
 ---
-title: How to configure settings for Report Builder in CJA
+title: How to configure settings for Report Builder in Customer Journey Analytics
 description: Describes how to set offline-mode, language, as-of date, and troubleshooting settings.
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder

@@ -28,7 +28,7 @@ Another example would be to use the Visitor ID, a dimension, as a metric to dete
 
 ## 2. Use integers as dimensions {#integers}
 
-Previously, integers would automatically be treated as metrics in CJA. Now, numerics (including custom events from Adobe Analytics) can be treated as dimensions. Here is an example:
+Previously, integers would automatically be treated as metrics in Customer Journey Analytics. Now, numerics (including custom events from Adobe Analytics) can be treated as dimensions. Here is an example:
 
 1. Drag the [!UICONTROL call_length_min] integer into the [!UICONTROL Dimensions] section under [!UICONTROL Included Components]:
 
@@ -93,9 +93,9 @@ One dimension and two metrics facilitates this reporting:
 
 * [Session type](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - This dimension has two values: 1) [!UICONTROL New] and 2) [!UICONTROL Returning]. The [!UICONTROL New] line item includes all of the behavior (i.e. metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they fall into the 'Not applicable' bucket for this dimension.
 
-* [New sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). The new sessions metric is defined as a person's defined first session within the reporting window. 
+* [First-time Sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). The First-time Sessions metric is defined as a person's defined first session within the reporting window. 
 
-* [Return sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) The return sessions metric is the number of sessions that were not a person's first-ever session.-->
+* [Return Sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) The Return Sessions metric is the number of sessions that were not a person's first-time session.-->
 
 To access these component:
 
@@ -111,7 +111,7 @@ To access these component:
 
 ## 8. Use the Date and Date-Time functionality {#date}
 
-Schemas in Adobe Experience Platform contain [!UICONTROL Date] and [!UICONTROL Date-Time] fields. CJA data views now support these fields. When you drag these fields into a data view as a dimension, you can specify their [format](/help/data-views/component-settings/format.md). This format setting determines how the fields are displayed in reporting. For example:
+Schemas in Adobe Experience Platform contain [!UICONTROL Date] and [!UICONTROL Date-Time] fields. Customer Journey Analytics data views now support these fields. When you drag these fields into a data view as a dimension, you can specify their [format](/help/data-views/component-settings/format.md). This format setting determines how the fields are displayed in reporting. For example:
 
 * For the Date format, if you select **[!UICONTROL Day]** with the format **[!UICONTROL Month, Day, Year]**, an example output in reporting might look like: August 23, 2022.
 

@@ -1,15 +1,15 @@
 ---
 title: Use arrays of objects
-description: Understand how CJA reports on data hierarchies.
+description: Understand how Customer Journey Analytics reports on data hierarchies.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
 ---
 # Use arrays of objects
 
-Some platform schemas can have object arrays. CJA supports ingestion and reporting of object arrays within event, lookup, and profile data. One of the most common examples would be a shopping cart, which contain multiple products. Each product has a name, SKU, category, price, quantity, and any other dimensions you want to track. All of these facets have separate requirements, but must all fit into the same hit.
+Some platform schemas can have object arrays. Adobe Customer Journey Analytics supports ingestion and reporting of object arrays within event, lookup, and profile data. One of the most common examples would be a shopping cart, which contain multiple products. Each product has a name, SKU, category, price, quantity, and any other dimensions you want to track. All of these facets have separate requirements, but must all fit into the same hit.
 
-In previous versions of Adobe Analytics, this feat was accomplished using the `products` variable. It was a concatenated string separated by semicolons (`;`) to separate facets of a product, while commas (`,`) delineated products. It was the only variable with limited support of "object arrays". Multi-value variables such as list vars could support the equivalent of arrays, but they could not support "object arrays". CJA expands on this concept by supporting arbitrarily deep hierarchies within a single row of data, a feature unavailable in any previous version of Adobe Analytics.
+In previous versions of Adobe Analytics, this feat was accomplished using the `products` variable. It was a concatenated string separated by semicolons (`;`) to separate facets of a product, while commas (`,`) delineated products. It was the only variable with limited support of "object arrays". Multi-value variables such as list vars could support the equivalent of arrays, but they could not support "object arrays". Customer Journey Analytics expands on this concept by supporting arbitrarily deep hierarchies within a single row of data, a feature unavailable in any previous version of Adobe Analytics.
 
 ## Same event example
 
@@ -85,7 +85,7 @@ Using just the above event, the following tables show Workspace reports with som
 | `LG Dryer 2000` | `1` | `500` |
 | `Total` | `1` | `2100` |
 
-CJA selectively looks at the dimension and metrics of the object based on the table.
+Customer Journey Analytics selectively looks at the dimension and metrics of the object based on the table.
 
 ```diff
 {
@@ -137,7 +137,7 @@ If you wanted to report on just warranty revenue, your project would look simila
 | `extended` | `50` |
 | `Total` | `250` |
 
-CJA looks at these parts of the event to generate the report:
+Customer Journey Analytics looks at these parts of the event to generate the report:
 
 ```diff
 {
@@ -239,7 +239,7 @@ Note the orders that don't have a name tied to them. These are the orders attrib
 
 ### Combining metrics
 
-CJA does not natively combine similarly named metrics if they are on different object levels.
+Customer Journey Analytics does not natively combine similarly named metrics if they are on different object levels.
 
 | `product : category` | `product : revenue` | `product : warranty : revenue` |
 | --- | --- | --- |

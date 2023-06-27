@@ -1,6 +1,6 @@
 ---
 title: Data views overview
-description: A data view specifies how you want to interpret elements of the data in the CJA connection, such as metrics, dimensions, sessions, etc..
+description: A data view specifies how you want to interpret elements of the data in the Customer Journey Analytics connection, such as metrics, dimensions, sessions, etc..
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
@@ -19,7 +19,7 @@ Workspace projects in Customer Journey Analytics are based on data views.
 
 ## Data views capabilities {#capabilities}
 
-Data views let you spontaneously change schema element settings, without having to change the schema in Adobe Experience Platform or re-implementing your CJA environment.
+Data views let you spontaneously change schema element settings, without having to change the schema in Adobe Experience Platform or re-implementing your Customer Journey Analytics environment.
 
 * **You can change a component from a Metric to a Dimension and vice versa**. You can create metrics from string fields or create dimensions from numeric fields. This makes your life easier, because you don't have to create a numeric field in your XDM schema for every metric you want. Instead, you can just spontaneously create it in the data views dialog. Here are some examples:
   * **Create one or more and/or one dimensions from a single schema field**. It's a one-to-many relationship. For example, you could create one or more Revenue metrics and/or one or more Revenue dimensions from a single schema field.

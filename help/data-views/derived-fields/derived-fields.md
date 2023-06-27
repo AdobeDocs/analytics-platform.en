@@ -3,27 +3,23 @@ title: Derived fields
 description: A derived field specifies report-time manipulation of schema fields and/or standard components through a set of available functions and function templates.
 solution: Customer Journey Analytics
 feature: Data Views
-hide: yes
-hidefromtoc: yes
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
 ---
 
 # Derived fields
 
-{{release-limited-testing}}
+Derived fields are an important aspect of the real-time reporting functionality in Adobe Customer Journey Analytics. A derived field allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. You can then use that derived field as a component (metric or dimension) in [Workspace](../../analysis-workspace/home.md) or even further define the derived field as a component in [Data view](../data-views.md). 
 
-Derived fields are an important aspect of the real-time reporting functionality in Customer Journey Analytics (CJA). A derived field allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. You can then use that derived field as a component (metric or dimension) in [Workspace](../../analysis-workspace/home.md) or even further define the derived field as a component in [Data view](../data-views.md). 
-
-Derived fields can save a significant amount of time and effort, compared to transforming or manipulating your data in other locations outside of CJA. Such as [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en), or within your own Extract Transform Load (ETL) / Extract Load Transform (ELT) processes.
+Derived fields can save a significant amount of time and effort, compared to transforming or manipulating your data in other locations outside of Customer Journey Analytics. Such as [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en), or within your own Extract Transform Load (ETL) / Extract Load Transform (ELT) processes.
 
 Derived fields are defined within [Data views](../data-views.md), are based on a set of functions defined as rules, and applied to available standard and/or schema fields.
 
 Example use cases are:
 
--   Define a derived Page Name field that corrects improper collected page name values to correct page name values. 
+- Define a derived Page Name field that corrects improper collected page name values to correct page name values. 
 
--   Define a derived Marketing Channel field that determines the proper marketing channel based on one or more conditions (for example URL parameter, page URL, page name).
+- Define a derived Marketing Channel field that determines the proper marketing channel based on one or more conditions (for example URL parameter, page URL, page name).
 
 ## Derived field interface
 
@@ -67,56 +63,61 @@ When you define a rule in the rule builder, you use the rule interface.
 
 ## Create a derived field
 
-1.  Select an existing Data view or create a Data view. See [Data views](../data-views.md) for more information.
+1. Select an existing Data view or create a Data view. See [Data views](../data-views.md) for more information.
 
-2.  Select the **[!UICONTROL **Components**]** tab of the Data view.
+2. Select the **[!UICONTROL **Components**]** tab of the Data view.
 
-3.  Select **[!UICONTROL **Create derived field**]** from the left rail.
+3. Select **[!UICONTROL **Create derived field**]** from the left rail.
    
-4.  To define your derived field, use the [!UICONTROL Create derived field] interface. See [Derived field interface](#derived-field-interface).
+4. To define your derived field, use the [!UICONTROL Create derived field] interface. See [Derived field interface](#derived-field-interface).
 
     To save your new derived field, select **[!UICONTROL **Save**]**.
 
-5.  Your new derived field is added to the [!UICONTROL Derived fields >] container, as part of **[!UICONTROL **Schema fields**]** in the left rail of your Data view.
+5. Your new derived field is added to the [!UICONTROL Derived fields >] container, as part of **[!UICONTROL **Schema fields**]** in the left rail of your Data view.
 
 
 ## Edit a derived field
 
-1.  Select an existing Data view. See [Data views](../data-views.md) for more information.
+1. Select an existing Data view. See [Data views](../data-views.md) for more information.
 
-2.  Select the **[!UICONTROL **Components**]** tab of the Data view.
+2. Select the **[!UICONTROL **Components**]** tab of the Data view.
 
-3.  Select **[!UICONTROL **Schema fields**]** tab in the [!UICONTROL Connection] pane on the left.
+3. Select **[!UICONTROL **Schema fields**]** tab in the [!UICONTROL Connection] pane on the left.
 
-4.  Select **[!UICONTROL **Derived fields >**]** container.
+4. Select **[!UICONTROL **Derived fields >**]** container.
 
-5.  Hover over the derived field that you want to edit, and select ![Edit icon](assets/Smock_Edit_18_N.svg).
+5. Hover over the derived field that you want to edit, and select ![Edit icon](assets/Smock_Edit_18_N.svg).
 
-6.  To edit your derived field, use the [!UICONTROL Edit derived field] interface. See [Derived field interface](#derived-field-interface).
+6. To edit your derived field, use the [!UICONTROL Edit derived field] interface. See [Derived field interface](#derived-field-interface).
 
-    -   Select **[!UICONTROL **Save**]** to save your updated derived field.
+   - Select **[!UICONTROL **Save**]** to save your updated derived field.
 
-    -   Select **[!UICONTROL **Cancel**]** to cancel any changes you made to the derived field.
+   - Select **[!UICONTROL **Cancel**]** to cancel any changes you made to the derived field.
 
-    -   Select **[!UICONTROL **Save As**]** to save the derived field as a new derived field. The new derived field has the same name as the original edited derived field with `(copy)` added to it.
+   - Select **[!UICONTROL **Save As**]** to save the derived field as a new derived field. The new derived field has the same name as the original edited derived field with `(copy)` added to it.
 
 ## Delete a derived field
 
-1.  Select an existing Data view. See [Data views](../data-views.md) for more information.
+1. Select an existing Data view. See [Data views](../data-views.md) for more information.
 
-2.  Select the **[!UICONTROL **Components**]** tab of the Data view.
+2. Select the **[!UICONTROL **Components**]** tab of the Data view.
 
-3.  Select **[!UICONTROL **Schema fields**]** tab in [!UICONTROL Connection] pane.
+3. Select **[!UICONTROL **Schema fields**]** tab in [!UICONTROL Connection] pane.
 
-4.  Select **[!UICONTROL **Derived fields >**]** container.
+4. Select **[!UICONTROL **Derived fields >**]** container.
 
-5.  Hover over the derived field that you want to delete, and select ![Edit icon](assets/Smock_Edit_18_N.svg).
+5. Hover over the derived field that you want to delete, and select ![Edit icon](assets/Smock_Edit_18_N.svg).
 
-6.  In the Use **[!UICONTROL **Edit derived field**]** interface, select Delete.
+6. In the Use **[!UICONTROL **Edit derived field**]** interface, select Delete.
 
     A [!UICONTROL Delete component] dialog asks you to confirm the deletion. Consider any external references there might exist to the derived field outside of the Data view. 
     
-    - Select **[!UICONTROL **Continue**]** to delete the derived field.
+   - Select **[!UICONTROL **Continue**]** to delete the derived field.
+
+>[!NOTE]
+>
+>Derived fields are managed at a Connection level in Customer Journey Analytics. Any change made to a derived field in any of the Data views associated with that Connection applies across all these associated Data views.
+
 
 
 ## Function templates
@@ -151,19 +152,19 @@ To use the template, you have to specify the correct parameters for each functio
 
 For each supported function, find details below on:
 
--   specifications: 
-    - input data type: type of data supported,
-    - input: possible values for input,
-    - included operators: operators supported for this function (if any),
-    - limitations: limitations that apply for this specific function,
-    - output.
+- specifications: 
+  - input data type: type of data supported,
+  - input: possible values for input,
+  - included operators: operators supported for this function (if any),
+  - limitations: limitations that apply for this specific function,
+  - output.
 
--   use cases, including:
-    - data before defining the derived field,
-    - how to define the derived field,
-    - data after defining the derived field.
+- use cases, including:
+  - data before defining the derived field,
+  - how to define the derived field,
+  - data after defining the derived field.
 
--   constraints (if applicable).
+- constraints (if applicable).
 
 
 <!-- Concatenate -->
@@ -454,9 +455,9 @@ You define a `Trip Duration (bucketed)` derived field. You create the following 
 
 ## Constraints
 
-CJA uses a nested container structure, modeled after Adobe Experience Platform's [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en) (Experience Data Model). See [Containers](../create-dataview.md#containers) and [Filter containers](../../components/filters/filters-overview.md#filter-containers) for more background information. This container model, albeit flexible by nature, imposes some constraints when using the rule builder. 
+Customer Journey Analytics uses a nested container structure, modeled after Adobe Experience Platform's [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en) (Experience Data Model). See [Containers](../create-dataview.md#containers) and [Filter containers](../../components/filters/filters-overview.md#filter-containers) for more background information. This container model, albeit flexible by nature, imposes some constraints when using the rule builder. 
 
-CJA uses the following default container model:
+Customer Journey Analytics uses the following default container model:
 
 <p align="center">
 <img src="./assets/containers.png" width="50%" valign="middle">
@@ -753,5 +754,6 @@ You define a `Query String CID` derived field. You use the [!UICONTROL URL PARSE
 
 The following limitations apply to the Derived field functionality in general:
 
-- You can use a maximum of 100 different schema fields (not including standard fields) when defining rules for a derived field.
-- You can have a maximum of 100 derived fields per CJA connection.
+- You can use a maximum of 10 different schema fields (not including standard fields) when defining rules for a derived field. 
+  - From this maximum of 10 different schema fields, only a maximum of 3 lookup schema or profile schema fields are allowed.
+- You can have a maximum of 100 derived fields per Customer Journey Analytics connection.

@@ -3,19 +3,19 @@ title: Customer Journey Analytics and Data Governance
 description: Describes how data governance works in Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 ---
-# Customer Journey Analytics and Data Governance
+# Adobe Customer Journey Analytics and Data Governance
 
 Generally speaking, any data governance-related settings in Customer Journey Analytics are inherited from Adobe Experience Platform.
 
 ## Data Governance
 
-The integration between CJA and [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) allows for labeling of sensitive CJA data and enforcement of privacy policies. 
+The integration between Adobe Customer Journey Analytics and [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) allows for labeling of sensitive Customer Journey Analytics data and enforcement of privacy policies. 
 
-Privacy labels and policies that were created on datasets consumed by Experience Platform can be surfaced in the CJA data views workflow. These labels stop or warn users who create metrics and/or dimensions from sensitive fields. 
+Privacy labels and policies that were created on datasets consumed by Experience Platform can be surfaced in the Customer Journey Analytics data views workflow. These labels stop or warn users who create metrics and/or dimensions from sensitive fields. 
 
-In addition, when data is exported from CJA (via reporting, export, API, etc.), warnings or labels are added to notify users that a report contains sensitive information that needs to be treated in a specific way.
+In addition, when data is exported from Customer Journey Analytics (via reporting, export, API, etc.), warnings or labels are added to notify users that a report contains sensitive information that needs to be treated in a specific way.
 
-This integration allows you to manage compliance more easily. Data stewards in your organization can set policies to restrict usage. As a result, your CJA users can more confidently use data, knowing that it complies with policies defined by data stewards. 
+This integration allows you to manage compliance more easily. Data stewards in your organization can set policies to restrict usage. As a result, your Customer Journey Analytics users can more confidently use data, knowing that it complies with policies defined by data stewards. 
 
 [Learn more](/help/data-views/data-governance.md)
 

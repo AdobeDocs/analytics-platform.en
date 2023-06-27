@@ -23,7 +23,7 @@ Behavior settings are available on both dimensions and metrics. The available se
 
 >[!NOTE]
 >
->If you enable [!UICONTROL Lower case] on a lookup dataset dimension, multiple lookup values can exist for the same identifier. If this conflict happens, CJA uses the first ASCII collated value (Uppercase values precede lowercase values). Adobe advises against using lookup datasets that contain the same value when [!UICONTROL Lower case] is enabled.
+>If you enable [!UICONTROL Lower case] on a lookup dataset dimension, multiple lookup values can exist for the same identifier. If this conflict happens, Customer Journey Analytics uses the first ASCII collated value (Uppercase values precede lowercase values). Adobe advises against using lookup datasets that contain the same value when [!UICONTROL Lower case] is enabled.
 
 ## Metric behavior settings
 

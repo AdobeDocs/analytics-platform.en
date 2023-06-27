@@ -45,7 +45,7 @@ Once downloaded and installed, executive users can sign into the app using their
 
 ![App welcome screen](assets/welcome.png)
 
-## Use dashboards
+## Use dashboards {#use-dashboards}
 
 To use dashboards:
 

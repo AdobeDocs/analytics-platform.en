@@ -56,7 +56,7 @@ Cross-Channel Analytics is a groundbreaking and robust feature, but has limitati
 
 ## Enable Cross-Channel Analytics
 
-Once your organization meets all prerequisites and understands its limitations, you can follow these steps to start using it in CJA.
+Once your organization meets all prerequisites and understands its limitations, you can follow these steps to start using it in Customer Journey Analytics.
 
 1. Import the desired data into Adobe Experience Platform. For Adobe Analytics data, see  see [Utilizing Adobe Analytics report suite data in Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). For other types of data, see [Create a schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) and [Ingest data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) in the Adobe Experience Platform documentation.
 1. Contact Adobe Customer Support with the following information:
@@ -68,9 +68,9 @@ Once your organization meets all prerequisites and understands its limitations, 
    * Sandbox name.
 1. The Adobe Customer Support will work with Adobe engineering to enable Cross-Channel Analytics upon receiving your request. Once enabled, a new rekeyed dataset that contains a new person ID column appears in Adobe Experience Platform. Adobe Customer Support can provide the new dataset ID and person ID column name.
 1. When first turned on, Adobe will provide a backfill of stitched data that goes back as far as the beginning of the previous month (up to 60 days.) In order to do this backfill, the transient ID must exist in the unstitched data back that far in time.
-1. [Create a connection](/help/connections/create-connection.md) in CJA using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
+1. [Create a connection](/help/connections/create-connection.md) in Customer Journey Analytics using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
 1. [Create a data view](/help/data-views/create-dataview.md) based on the connection.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-Once the data view is set up, Analysis in CJA is just like any other analysis in CJA, except now the data operates across channels and devices.
+Once the data view is set up, analysis in Customer Journey Analytics is just like any other analysis in Customer Journey Analytics, except now the data operates across channels and devices.
