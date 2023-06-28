@@ -41,7 +41,7 @@ Total Records by timestamps should match with Occurrences, provided that no reco
 
 >[!NOTE]
 >
->This works for regular mid values datasets only, not stitched dataset (via [Cross-Channel Analytics](/help/cca/overview.md)). Please note that accounting for the Person ID being used in Customer Journey Analytics is critical for making the comparison work. That may not always be easy to replicate in Adobe Analytics, especially if Cross-Channel Analytics has been turned on. 
+>This works for regular mid values datasets only, not stitched dataset (via [Cross-Channel Analytics](/help/cca/overview.md)). Please note that accounting for the Person ID being used in Customer Journey Analytics is critical for making the comparison work. That may not always be easy to replicate in Adobe Analytics, especially if Stitching has been turned on. 
 
 1. In Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), run the following [!UICONTROL Total Records by timestamps] query:
 
@@ -58,7 +58,7 @@ Total Records by timestamps should match with Occurrences, provided that no reco
 
         ```
 
-1. In [Analytics Data Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html ), identify from the raw data whether some rows might have been filtered out by the Analytics Source connector. 
+1. In [Analytics Data Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html), identify from the raw data whether some rows might have been filtered out by the Analytics Source connector. 
 
    The [Analytics Source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) might filter certain rows during the transformation to XDM schema. There can be multiple reasons for the whole row to be unfit for transformation. If any of the following Analytics fields have these values, the whole row will be filtered out. 
 

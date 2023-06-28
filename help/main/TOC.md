@@ -282,6 +282,12 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Restricted Labels](../report-builder/restricted-labels.md)
     + [Report Builder Settings](../report-builder/report-builder-settings.md)
 
++   Stitching {#stitching}
+    + [Overview](../stitching/overview.md)
+    + [How stitching works](../stitching/explained.md)
+    + [Create and manage stitched datasets](../stitching/stitching-ui.md)
+    + [Frequently Asked Questions](../stitching/faq.md)  
+
 +   Cross-Channel Analytics {#cca}
     + [Cross-Channel Analytics overview](../cca/overview.md)
     + [How replays work](../cca/replay.md)
