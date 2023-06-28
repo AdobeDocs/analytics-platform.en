@@ -21,7 +21,7 @@ If you would like to rename dataset ID dimension items, you can use a lookup dat
 
 ## How far back does stitching replay visitors?
 
-The lookback window for rekeying depends on your desired frequency of data [replay](stitching-explained.md). For example, if you set up stitching to replay data once every week, the lookback window for rekeying is seven days. If you set up stitching to replay data every day, the lookback window for rekeying is one day.
+The lookback window for rekeying depends on your desired frequency of data [replay](explained.md). For example, if you set up stitching to replay data once every week, the lookback window for rekeying is seven days. If you set up stitching to replay data every day, the lookback window for rekeying is one day.
 
 ## How are shared devices handled?
 

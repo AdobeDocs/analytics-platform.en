@@ -50,7 +50,7 @@ Once your organization meets all prerequisites and understands the [limitations]
    * The dataset ID for the dataset that you want to rekey.
    * The column name of the persistent ID for the desired dataset (Identifier that appears on every row).
    * The column name of the transient ID for desired dataset (The person identifier link between datasets).
-   * Your preference of [replay](stitching-explained.md) frequency and lookback length. Options include a replay once a week with a 7-day lookback window, or a replay every day with a 1-day lookback window.
+   * Your preference of [replay](explained.md) frequency and lookback length. Options include a replay once a week with a 7-day lookback window, or a replay every day with a 1-day lookback window.
    * Sandbox name.
 
 
