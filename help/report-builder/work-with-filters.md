@@ -84,3 +84,13 @@ You can replace an existing filter with another filter to change how the data is
 1.  Click **Apply**.
 
     Report Builder updates the list of filters to reflect the replacement.
+
+### Change filters for multiple data blocks from the cell
+
+If you have multiple data blocks in your report, you can apply the same filters defined in the cell to multiple data blocks.
+
+1.	Create a data block and define a data view from a cell. See [Create a Data Block](./create-a-data-block.md).
+1.	Create another data block if one doesn’t exist and click **Filters** to define filters.
+1.	Click **Create filter from cell** and choose the cell previously defined with the filters you want to apply. 
+1.	Click **Apply** to apply the filter to one or more data blocks.
+
