@@ -1,7 +1,6 @@
 ---
 title: How stitching works
 description: Understand the concept of stitching
-exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Stitching
 ---

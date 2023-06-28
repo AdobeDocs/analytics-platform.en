@@ -1,7 +1,6 @@
 ---
 title: Stitching overview
 description:  Overview of stitching.
-exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Stitching
 ---
