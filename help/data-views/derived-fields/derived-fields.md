@@ -754,5 +754,6 @@ You define a `Query String CID` derived field. You use the [!UICONTROL URL PARSE
 
 The following limitations apply to the Derived field functionality in general:
 
-- You can use a maximum of 10 different schema fields (not including standard fields) when defining rules for a derived field.
+- You can use a maximum of 10 different schema fields (not including standard fields) when defining rules for a derived field. 
+  - From this maximum of 10 different schema fields, only a maximum of 3 lookup schema or profile schema fields are allowed.
 - You can have a maximum of 100 derived fields per Customer Journey Analytics connection.
