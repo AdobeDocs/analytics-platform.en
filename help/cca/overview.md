@@ -4,6 +4,8 @@ description: Re-key person ID's from multiple datasets to stitch persons togethe
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
+hide: yes
+hidefromtoc: yes
 ---
 # Cross-Channel Analytics overview
 

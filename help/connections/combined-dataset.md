@@ -71,3 +71,28 @@ However, if you included both tables in your connection, attribution changes sin
 | Yellow | 6 |
 | Blue | 3 |
 | Red | 2 |
+
+## Cross-channel analysis
+
+The next level of combining datasets is cross-channel analysis, where datasets from different channels are combined, based on a common identifier (person ID). Cross-channel analysis can benefit from stitching functionality, allowing you to rekey a dataset's person ID so the dataset is properly updated to enable a seamless combination of multiple datasets. Stitching looks at user data from both authenticated and unauthenticated sessions to generate a stitched ID.
+
+Cross-channel analysis allows you to answer questions such as:
+
+* How many people begin their experience in one channel, then finish it in another?
+* How many people interact with my brand? How many and what types of devices do they use? How do they overlap?
+* How often do people begin a task on a mobile device and then later move to a desktop PC to complete the task? Do campaign click-throughs that land on one device, lead to conversion somewhere else?
+* How does my understanding of campaign effectiveness change if I consider cross-device journeys? How does my funnel analysis change?
+* What are the most common paths users take from one device to another? Where do they drop out? Where do they succeed?
+* How does the behavior of users with multiple devices differ from the users with a single device?
+
+
+For a more information on cross-channel analysis, refer to the specific use case:
+
+* [Cross-channel analysis](../use-cases/cross-channel/cross-channel.md)
+
+For a more in-depth discussion stitching functionality, go to:
+
+* [Stitching overview](/help/stitching/overview.md)
+* [How stitching works](../stitching/explained.md)
+* [Frequently Asked Questions](/help/stitching/faq.md)
+
