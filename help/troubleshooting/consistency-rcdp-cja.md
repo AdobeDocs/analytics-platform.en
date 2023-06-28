@@ -16,7 +16,7 @@ When comparing audience membership counts between Real-time CDP and Customer Jou
 
 Real-time CDP and Customer Journey Analytics do not share the same definition of a person today. Real-time CDP relies entirely on the information in the [Identity Graph](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) to build a merged profile.
 
-Customer Journey Analytics can be configured to use [Cross-Channel Analytics](/help/cca/overview.md) which extracts identifiers from datasets in the data lake and applies custom logic to link them together.
+Customer Journey Analytics can be configured to use [Stitching](../stitching/overview.md) which extracts identifiers from datasets in the data lake and applies custom logic to link them together.
 
 In the future, Customer Journey Analytics will be able to use Identity Graph.
 
@@ -34,15 +34,15 @@ Real-time CDP offers a different set of data manipulation tools. It applies [mer
 
 Even if the datasets in Real-time CDP and Customer Journey Analytics are the same, Real-time CDP may only keep a very limited window of history. By contrast, Customer Journey Analytics likely has years' worth of data. In addition:
 
-*   Customer Journey Analytics and Real-time CDP customers can set custom retention windows for data, independent of each other. 
+* Customer Journey Analytics and Real-time CDP customers can set custom retention windows for data, independent of each other. 
 
-*   Real-time CDP and Customer Journey Analytics have different logic for ingesting data. Customer Journey Analytics ignores records without a person ID or timestamp and has strict limits to the number of records a single profile/person may have.
+* Real-time CDP and Customer Journey Analytics have different logic for ingesting data. Customer Journey Analytics ignores records without a person ID or timestamp and has strict limits to the number of records a single profile/person may have.
 
-*   Real-time CDP customers get 7 days of access to data in the lake, primarily to facilitate data onboarding into profile and for ad-hoc querying.
+* Real-time CDP customers get 7 days of access to data in the lake, primarily to facilitate data onboarding into profile and for ad-hoc querying.
 
-*   There are no TTLs for the data in the lake for Customer Journey Analytics customers. Customer Journey Analytics users however can themselves set a custom retention window in Customer Journey Analytics when creating a connection.
+* There are no TTLs for the data in the lake for Customer Journey Analytics customers. Customer Journey Analytics users however can themselves set a custom retention window in Customer Journey Analytics when creating a connection.
 
-*   Profile Store in Real-time CDP allows for customer-configurable TTLs. Customers can change this TTL to whatever they need to stay within their license entitlements.
+* Profile Store in Real-time CDP allows for customer-configurable TTLs. Customers can change this TTL to whatever they need to stay within their license entitlements.
 
 ## Differences in data ingestion latency
 

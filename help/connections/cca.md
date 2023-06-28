@@ -4,6 +4,8 @@ description: Learn how re-key person ID's from multiple datasets to stitch perso
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 5fb30b64-d305-4de4-ab84-66195ceb8386
+hide: yes
+hidefromtoc: yes
 ---
 # Cross-Channel Analytics 
 

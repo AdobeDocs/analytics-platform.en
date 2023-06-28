@@ -98,7 +98,7 @@ You can also have multiple data views based on the same connection. For example,
 
 ## Changes to how Adobe identifies visitors
 
-Customer Journey Analytics expands the concepts of identities beyond ECIDs to include any ID you want to use, including Customer ID, Cookie ID, Stitched ID, User ID, Tracking Code, and so on. Using a common namespace ID across datasets, or using [Cross-Channel Analytics](/help/cca/overview.md) helps link people together across different datasets. Any user setting up a Workspace project in Customer Journey Analytics must understand the IDs used across the datasets. See the following video that highlights the use of identities in Customer Journey Analytics:
+Customer Journey Analytics expands the concepts of identities beyond ECIDs to include any ID you want to use, including Customer ID, Cookie ID, Stitched ID, User ID, Tracking Code, and so on. Using a common namespace ID across datasets, or using [Stitching](../stitching/overview.md) helps link people together across different datasets. Any user setting up a Workspace project in Customer Journey Analytics must understand the IDs used across the datasets. See the following video that highlights the use of identities in Customer Journey Analytics:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
