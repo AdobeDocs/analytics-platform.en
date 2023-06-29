@@ -92,8 +92,6 @@ For each dataset that you add to this connection, [!UICONTROL Customer Journey A
 >
 >You must add at least one event dataset as part of a connection.
 
-![Add dataset dialog](assets/add-dataset.png)
-
 There are three different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
 
 |Dataset Type|Description|Timestamp|Schema|Person ID|
@@ -144,7 +142,7 @@ This table shows the two configuration options when edge cases are present and h
 
 {style="table-layout:auto"}
 
-## Calculate the average number of daily events
+## Calculate the average number of daily events {#average-number}
 
 This calculation is done for every dataset in the connection.
 
