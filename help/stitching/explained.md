@@ -123,5 +123,5 @@ When you receive a privacy request, the row containing the original user informa
 
 * Stitching immediately stitches known devices, but does not immediately stitch new or unrecognized devices.
 * Data is replayed at regular intervals, and changes historical data in the connection based on devices it has learned to identify.
-* Live stitching and replay stitching are performed on one dataset. The result is a new elevated dataset that is better suited to be used when combining with other datasets (for example, call-center data) to perform cross-channel analysis.
+* Live stitching and replay stitching are performed on one dataset. The result is a new elevated dataset that is better suited to be used when combined with other datasets (for example, call-center data) to perform cross-channel analysis.
 * Privacy requests remove identities that were spread to unauthenticated rows.

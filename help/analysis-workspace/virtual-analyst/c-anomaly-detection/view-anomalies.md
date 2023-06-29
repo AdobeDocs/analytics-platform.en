@@ -8,7 +8,7 @@ exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
 
 You can view anomalies in a table or in a line chart.
 
-## View anomalies in a table {#section_869A87B92B574A38B017A980ED8A29C5}
+## View anomalies in a table {#table}
 
 You can view anomalies in a time-series Freeform Table.
 
@@ -26,9 +26,9 @@ You can view anomalies in a time-series Freeform Table.
 
 1. Select the gray triangle in the upper-right corner of a row to view details about the anomaly. This shows the extent (as a percentage) to which the actual value diverges either above or below the expected value.
 
-## View anomalies in a line chart {#section_7C1192AFDB4345A8A2CCFB3AE0C47D82}
+## View anomalies in a line chart {#line-chart}
 
-Line charts are the only visualization that allows you to view anomalies.
+A Line chart is the only visualization that allows you to view anomalies.
 
 To view anomalies in a line chart:
 
