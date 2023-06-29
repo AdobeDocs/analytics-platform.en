@@ -18,7 +18,7 @@ Analytics Select, Prime, and Ultimate customers are eligible to purchase this ad
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>New or Featured Items</b> </p> <p> 
      <ul>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cca/overview.html#cja-connections"> Cross-Channel Analytics (stitching IDs in Customer Journey Analytics) </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/stitching/overview.html"> Cross-channel analysis (stitching IDs in Customer Journey Analytics) </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=en">Utilizing Adobe Analytics report suite data in Customer Journey Analytics </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=en"> Combine Report Suites with different schemas </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html?lang=en"> Processing rules, VISTA and classifications versus Data Prep </a> </li>
