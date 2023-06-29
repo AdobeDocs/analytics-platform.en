@@ -92,8 +92,6 @@ For each dataset that you add to this connection, [!UICONTROL Customer Journey A
 >
 >You must add at least one event dataset as part of a connection.
 
-![Add dataset dialog](assets/add-dataset.png)
-
 There are three different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
 
 |Dataset Type|Description|Timestamp|Schema|Person ID|
