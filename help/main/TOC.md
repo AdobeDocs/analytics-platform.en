@@ -250,7 +250,6 @@ breadcrumb-title: Customer Journey Analytics Guide
             + [Find metrics](../components/calc-metrics/cm-workflow/cm-finding.md)
             + [Build metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
             + [Metric type and attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-            + [Build a "Page Views per Visits" metric](../components/calc-metrics/cm-workflow/cm-pvv.md)
             + [Build a "Participation" metric](../components/calc-metrics/cm-workflow/participation-metric.md)
             + [Filtered metrics](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
             + [Stack and replace filters](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
@@ -290,6 +289,12 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Schedule Workbooks](../report-builder/schedule-reportbuilder.md)
     + [Restricted Labels](../report-builder/restricted-labels.md)
     + [Report Builder Settings](../report-builder/report-builder-settings.md)
+
++   Stitching {#stitching}
+    + [Overview](../stitching/overview.md)
+    + [How stitching works](../stitching/explained.md)
+    + [Create and manage stitched datasets](../stitching/stitching-ui.md)
+    + [Frequently Asked Questions](../stitching/faq.md)  
 
 +   Cross-Channel Analytics {#cca}
     + [Cross-Channel Analytics overview](../cca/overview.md)

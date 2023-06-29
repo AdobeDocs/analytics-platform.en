@@ -38,3 +38,6 @@ source,destination
 /docs/analytics-platform/using/cja-overview/aa-to-cja.html,/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html
 /docs/analytics-platform/using/cja-overview/aa-to-cja-user.html,/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.html
 /docs/analytics-platform/using/cja-workspace/workspace-faq/optimizing-performance.html,/docs/analytics-platform/using/cja-admin/optimizing-performance.html
+/docs/analytics-platform/using/cca/overview.html,/docs/analytics-platform/using/stitching/overview.html
+/docs/analytics-platform/using/cca/replay.html,/docs/analytics-platform/using/stitching/explained.html
+/docs/analytics-platform/using/cca/faq.html,/docs/analytics-platform/using/stitching/faq.html
