@@ -195,11 +195,11 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 +   Guided analysis {#guided-analysis}
     +   [Overview](../guided-analysis/overview.md)
-    +   Analysis types {#analysis-types}
-        + [Overview](../guided-analysis/analysis-types/overview.md)
-        + [Funnel](../guided-analysis/analysis-types/funnel.md)
-        + [Trends](../guided-analysis/analysis-types/trends.md)
-        + [User growth](../guided-analysis/analysis-types/user-growth.md)
+    +   View types {#types}
+        + [Overview](../guided-analysis/types/overview.md)
+        + [Funnel](../guided-analysis/types/funnel.md)
+        + [Trends](../guided-analysis/types/trends.md)
+        + [User growth](../guided-analysis/types/user-growth.md)
     +   [FAQ](../guided-analysis/faq.md)
 
 +   Components {#cja-components}
