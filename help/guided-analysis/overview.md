@@ -40,13 +40,11 @@ Guided analysis contains the following interface parts:
 
 Guided analysis is part of Adobe Product Analytics, which is a paid add-on to Customer Journey Analytics. If your organization would like to start using this feature, contact your Adobe Account Team.
 
-Adobe plans to provide permissions specific to Guided analysis in the future.
-
-<!-- Once your organization is provisioned to use Guided analysis, product profile administrators can grant access to it in the Adobe Admin Console.
+Once your organization is provisioned to use Guided analysis, product profile administrators can grant access to it in the Adobe Admin Console.
 
 1. Log in to the [Adobe admin console](https://adminconsole.adobe.com).
 1. Select **[!UICONTROL Customer Journey Analytics]** in the list of products.
 1. Select the desired product profile to edit permissions.
 1. Click the **[!UICONTROL Permissions]** tab, then click **[!UICONTROL Edit]** under [!UICONTROL Reporting Tools].
-1. Drag **[!UICONTROL Guided analysis]** from the list of [!UICONTROL Available Permission Items] to the list of [!UICONTROL Included Permission Items].
-1. Click **[!UICONTROL Save]**. -->
+1. Click the plus icon next to **[!UICONTROL Guided Analysis Access]** in list of [!UICONTROL Available Permission Items] to add it to the list of [!UICONTROL Included Permission Items].
+1. Click **[!UICONTROL Save]**.
