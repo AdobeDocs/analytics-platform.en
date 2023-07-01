@@ -13,8 +13,8 @@ Guided analysis categorizes view types into **Analysis types**. The following an
 
 | Analysis type | View type | Description |
 | --- | --- | --- |
-| Impact | [Release](release.md) | |
-| Impact | [First use](first-use.md) | |
+| Impact | [Release](release.md) | Compare performance across equal periods pre- and post-release. |
+| Impact | [First use](first-use.md) | Measure the impact of first-time feature use on key indicators. |
 | Funnel | [Friction](friction.md) | Compare conversion rates between steps. |
 | Funnel | [Conversion trends](conversion-trends.md) | Track changes in conversion rates over time. |
 | User growth | [Active](active.md) | Measure the growth of your user base. |
