@@ -2,6 +2,7 @@
 title: Audit logs
 description: Learn how to view and manage Customer Journey Analytics audit logs.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
+feature: Privacy
 ---
 # Audit logs
 

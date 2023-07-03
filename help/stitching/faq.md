@@ -2,7 +2,7 @@
 title: Stitching FAQ
 description: Frequently asked questions for Stitching
 solution: Customer Journey Analytics
-feature: Stitching
+feature: Stitching, Cross-Channel Analysis
 ---
 # Frequently asked questions
 

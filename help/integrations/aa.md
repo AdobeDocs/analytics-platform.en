@@ -2,6 +2,7 @@
 title: Integrate Adobe Analytics with Customer Journey Analytics
 description: Integrate Adobe Analytics with Customer Journey Analytics
 exl-id: 0a9998df-a538-4a84-95a9-98706bd99ac1
+feature: Platform Integration
 ---
 # Integrate Adobe Analytics with Customer Journey Analytics
 

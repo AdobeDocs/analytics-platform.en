@@ -2,6 +2,7 @@
 title: Analysis types overview
 description: See the different ways that Guided analysis shows data.
 exl-id: 567f8ee2-5da8-429f-80d1-93d3a0cf6151
+feature: Guided Analysis
 ---
 # Analysis types overview
 
