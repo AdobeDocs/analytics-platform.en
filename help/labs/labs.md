@@ -3,6 +3,7 @@ title: Labs User Guide
 description: Preview prototype projects for Customer Journey Analytics
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
+feature: Labs
 ---
 # [!UICONTROL Labs] User Guide
 

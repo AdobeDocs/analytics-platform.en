@@ -2,7 +2,7 @@
 title: Derived fields
 description: A derived field specifies report-time manipulation of schema fields and/or standard components through a set of available functions and function templates.
 solution: Customer Journey Analytics
-feature: Data Views
+feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
 ---

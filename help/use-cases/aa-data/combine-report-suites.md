@@ -2,6 +2,7 @@
 title: Combine report suites with different schemas
 description: Learn how to use Data Prep to combine report suites with different schemas
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
+feature: Use Cases
 ---
 # Combine Report Suites with different schemas
 

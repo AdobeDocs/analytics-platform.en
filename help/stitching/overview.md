@@ -2,7 +2,7 @@
 title: Stitching overview
 description:  Overview of stitching.
 solution: Customer Journey Analytics
-feature: Stitching
+feature: Stitching, Cross-Channel Analysis
 ---
 # Stitching overview
 

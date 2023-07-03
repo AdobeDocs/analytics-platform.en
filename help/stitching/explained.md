@@ -2,7 +2,7 @@
 title: How stitching works
 description: Understand the concept of stitching
 solution: Customer Journey Analytics
-feature: Stitching
+feature: Stitching, Cross-Channel Analysis
 ---
 # How stitching works
 
