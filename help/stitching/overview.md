@@ -50,22 +50,22 @@ Once your organization meets all prerequisites and understands the [limitations]
    * A request to enable stitching.
    * The dataset ID for the dataset that you want to rekey.
    * The column name of the persistent ID for the desired dataset (Identifier that appears on every row).
-   * The column name of the transient ID for desired dataset (The person identifier link between datasets).
+   * The column name of the transient ID for desired dataset (the person identifier, which also acts as link between datasets in the context of a connection).
    * Your preference of [replay](explained.md) frequency and lookback length. Options include a replay once a week with a 7-day lookback window, or a replay every day with a 1-day lookback window.
    * Sandbox name.
 
 
-2. The Adobe Customer Support works with Adobe engineering to enable stitching upon receiving your request. Once enabled, a new rekeyed dataset that contains a new person ID column appears in Adobe Experience Platform. Adobe Customer Support can provide the new dataset ID and person ID column name.
+2. The Adobe Customer Support works with Adobe engineering to enable stitching upon receiving your request. Once enabled, a new rekeyed dataset that contains a new Stitched ID column appears in Adobe Experience Platform. Adobe Customer Support can provide the new dataset's ID.
    
-3. When first turned on, Adobe provides a backfill of stitched data that goes back as far as the beginning of the previous month (up to 60 days.) To do this backfill, the transient ID must exist in the unstitched data back that far in time.
+3. When first turned on, Adobe provides a backfill of stitched data that goes back 30 days.
    
-4. [Create a connection](/help/connections/create-connection.md) in Customer Journey Analytics using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
+4. If you want to use the new stitched dataset in a cross-channel analysis, you need to add it to a [connection](../connections/overview.md) in Customer Journey Analytics together with any other needed datasets. Choose the correct person ID for each dataset.
    
 5. [Create a data view](/help/data-views/create-dataview.md) based on the connection.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-Once the data view is set up, the cross-channel analysis in Customer Journey Analytics is just like any other analysis in Customer Journey Analytics, except now the data operates across channels and devices.
+Once the data view is set up, you can run your Customer Journey Analytics reporting analysis across channels and devices.
 
 <!-- Uncomment once stitching UI is available (for limited testing)..
 
