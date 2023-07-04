@@ -1,7 +1,7 @@
 ---
 description: Use quick filters in Analysis Workspace for Customer Journey Analytics
 title: Quick filters
-feature: CJA Workspace Basics
+feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 ---

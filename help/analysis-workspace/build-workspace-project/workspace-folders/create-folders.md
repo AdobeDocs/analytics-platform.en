@@ -2,7 +2,7 @@
 description: Learn how to create folders and subfolders in Workspace
 keywords: Analysis Workspace
 title: Create Folders
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
 ---
 # Create folders
