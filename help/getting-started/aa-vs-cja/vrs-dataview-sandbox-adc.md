@@ -2,7 +2,7 @@
 title: Virtual Report Suites, Data Views, Adobe Experience Platform Sandboxes and the Analytics Source Connector
 description: Learn about virtual reporting environments and sandbox environments.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
-feature: CJA Basics
+feature: Basics
 ---
 # Virtual Report Suites, Data Views, Adobe Experience Platform Sandboxes and the Analytics Source Connector
 

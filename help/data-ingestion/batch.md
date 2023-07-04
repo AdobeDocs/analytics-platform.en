@@ -2,7 +2,7 @@
 title: Ingest and use batch data
 description: Explain how to ingest and use batch data in Customer Journey Analytics
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
 ---
 # Ingest and use batch data

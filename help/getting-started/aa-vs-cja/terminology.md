@@ -3,7 +3,7 @@ title: Compare terminology for Analytics data passed through the Analytics Sourc
 description: Some terminology differences
 solution: Customer Journey Analytics
 exl-id: f0f9aa1e-f9d2-4dcb-bbe9-7960412c094b
-feature: CJA Basics
+feature: Basics
 ---
 # Compare terminology for Analytics data passed through the Analytics Source Connector
 
