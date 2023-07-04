@@ -37,6 +37,6 @@ When establishing this workflow, make sure that you take the following points in
 * Analyzing data across channels requires the same ID namespace on every record.
 * The union process of unifying disparate datasets requires a common primary person/entity key across the datasets.
 * Secondary key-based unions are currently not supported.
-* The stitching process allows for rekeying identities in rows based on subsequent transient ID records, such as an authentication ID. This allows for resolving disparate records to a single ID for analysis at the person level rather than at the device or cookie level.
+* The stitching process allows for rekeying identities in rows based on transient ID (such as an authentication ID) info from records sharing same persistent ID.This allows for resolving disparate records to a single stitched ID for analysis at the person level, rather than at the device or cookie level.
 * Objects and attributes of the same XDM field merge into one dimension in Customer Journey Analytics. To  merge multiple attributes from various datasets into the same Customer Journey Analytics dimension, the datasets should reference the same XDM field or schema.
 

@@ -8,15 +8,15 @@ feature: Stitching, Cross-Channel Analysis
 
 Stitching makes a minimum of two passes on data in a given dataset:
 
-* **Live stitching**: attempts to stitch each hit as it comes in. Net new devices to the dataset that have never logged in are typically not stitched at this level. Devices already recognized are stitched immediately.
+* **Live stitching**: attempts to stitch each hit (event) as it comes in. Hits from devices that are "new" to the dataset (have never authenticated) are typically not stitched at this level. Hits from devices already recognized are stitched immediately.
 
-* **Replay stitching**: "replays" data based on unique identifiers it has learned. This stage is where new devices to the connection become stitched. Adobe offers two replay intervals:
+* **Replay stitching**: "replays" data based on unique identifiers (transient IDs) it has learned. This stage is where hits from previously unknown devices (persistent IDs) become stitched (to transient IDs). Adobe offers two replay intervals:
     * **Daily**: Data replays every day with a 24-hour lookback window. This option holds an advantage that replays are much more frequent, but unauthenticated visitors must authenticate the same day that they visit your site.
-    * **Weekly**: Data replays once a week with a 7-day lookback window. This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, data less than a week old is not stitched.
+    * **Weekly**: Data replays once a week with a 7-day lookback window. This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, unstitched data less than a week old is not reprocessed until the next weekly replay.
 
 * **Privacy (optional)**: When privacy-related requests are received, in addition to removing the requested identity, any stitching of that identity across unauthenticated events must be undone.
 
-Data beyond the lookback window is not replayed. A visitor must authenticate within a given lookback window for an unauthenticated visit and authenticated visit to be identified together. Once a device is recognized, it is live stitched from that point forward. Privacy requests are processed across stitched data regardless of time.
+Data beyond the lookback window is not replayed. A visitor must authenticate within a given lookback window for an unauthenticated visit and authenticated visit to be identified together. Once a device is recognized, it is live stitched from that point forward.
 
 ## Step 1: Live stitching
 
@@ -121,7 +121,7 @@ When you receive a privacy request, the row containing the original user informa
 
 ## Summary
 
-* Stitching immediately stitches known devices, but does not immediately stitch new or unrecognized devices.
+* Stitching immediately stitches events from known devices, but does not immediately stitch events from new or unrecognized devices.
 * Data is replayed at regular intervals, and changes historical data in the connection based on devices it has learned to identify.
 * Live stitching and replay stitching are performed on one dataset. The result is a new elevated dataset that is better suited to be used when combined with other datasets (for example, call-center data) to perform cross-channel analysis.
 * Privacy requests remove identities that were spread to unauthenticated rows.
