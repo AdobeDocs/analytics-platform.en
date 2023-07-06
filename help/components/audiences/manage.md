@@ -2,6 +2,7 @@
 title: Manage audiences created in Customer Journey Analytics
 description: Learn how to manage audiences in Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
+feature: Audiences
 ---
 # Manage audiences created in Customer Journey Analytics
 

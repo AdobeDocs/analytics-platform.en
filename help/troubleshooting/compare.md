@@ -4,6 +4,7 @@ description: Learn how to compare your Adobe Analytics data to data in Customer 
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
+feature: Troubleshooting
 ---
 # Compare your Adobe Analytics data to Customer Journey Analytics data
 

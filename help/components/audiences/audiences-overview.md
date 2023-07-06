@@ -2,6 +2,7 @@
 title: Customer Journey Analytics Audiences publishing overview
 description: Learn about the concept of audience publishing in Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
+feature: Audiences
 ---
 # Customer Journey Analytics Audience publishing overview
 

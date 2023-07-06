@@ -2,6 +2,7 @@
 title: Guided analysis FAQ
 description: Frequently asked questions around Guided analysis.
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
+feature: Guided Analysis
 ---
 # Guided analysis FAQ
 

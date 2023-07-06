@@ -2,6 +2,7 @@
 title: Trends
 description: Find patterns and changes in user engagement over time.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
+feature: Guided Analysis
 ---
 # Trends
 

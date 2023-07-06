@@ -2,6 +2,7 @@
 title: Customer Managed Keys
 description: Learn how to set up Customer Managed Keys for Customer Journey Analytics.
 exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
+feature: Privacy
 ---
 # Customer Managed Keys
 

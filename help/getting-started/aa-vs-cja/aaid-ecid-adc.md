@@ -2,6 +2,7 @@
 title: AAID, ECID, AACUSTOMID and the Analytics Source Connector
 description: Learn how the Analytics Source Connector deals with Adobe Analytics identity fields.
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
+feature: Basics
 ---
 # AAID, ECID, AACUSTOMID and the Analytics Source Connector
 
@@ -33,9 +34,9 @@ The Analytics Source Connector passes these identities through to Adobe Experien
 
 These fields are not marked as identities. Rather, the same identities are copied into XDM's **_identityMap_** as key value pairs as follows:
 
-* `{ “key”: “AAID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
-* `{ “key”: “ECID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
-* `{ “key”: “AACUSTOMID”, “value”: [ { “id”: “<identity>”, “primary”: false } ] }`
+* `{ "key": "AAID", "value": [ { "id": "<identity>", "primary": <true or false> } ] }`
+* `{ "key": "ECID", "value": [ { "id": "<identity>", "primary": <true or false> } ] }`
+* `{ "key": "AACUSTOMID", "value": [ { "id": "<identity>", "primary": false } ] }`
 
 The items in <> brackets represent places where actual values would appear.
 

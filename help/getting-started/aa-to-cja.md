@@ -3,7 +3,7 @@ title: Evolution from Adobe Analytics
 description: Steps to transform Adobe Analytics data into Customer Journey Analytics data
 role: Admin
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 ---
 # Evolution from Adobe Analytics
