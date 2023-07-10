@@ -676,6 +676,8 @@ Merges values from two different fields into a new derived field.
 
 +++ Details
 
+{{release-limited-testing-section}}
+
 ## Specification {#merge-io}
 
 | Input Data Type | Input | Included Operators | Limit | Output |
@@ -724,6 +726,93 @@ You define a  `Cross Channel Interactions` derived field. You use the [!UICONTRO
 {style="table-layout:auto"}
 
 +++
+
+<!-- SPLIT -->
+
+### Split
+
+Splits values into a new derived field.
+
++++ Details
+
+{{release-limited-testing-section}}
+
+## Specification {#split-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li></ul> | <ul><li>For [!UICONTROL Field]:</li><ul><li>Rule</li><li>Standard field</li><li>Field</li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+## Use case 1 {#split-uc1}
+
+You collect survey responses into a delimited list in a single dimension. You would like each value in the list to be a unique value in the responses report.
+
+### Data before {#split-uc1-databefore}
+
+| Responses | Events |
+|---|--:|
+| it was great,made perfect sense,will recommed to others | 1 |
+| it was great,somewhat confusing,will recommend to others | 1 |
+| it was not great,very confusing,will not recommned to others | 1 |
+
+{style="table-layout:auto"}
+
+### Derived field {#split-u1-derivedfield}
+
+You create a  `Satisfaction Responses` derived field. You use the [!UICONTROL SPLIT] function to define a rule to convert the values from the [!UICONTROL Responses] field from the left using `,` as the delimiter. *Need more information to complete this section*.
+
+### Data after {#split-uc1-dataafter}
+
+| Satisfaction Responses | Events |
+|---|--:|
+| it was great | 2 |
+| will recommend to others | 2 |
+| it was not great | 1 |
+| made perfect sense | 1 |
+| somewhat confusing | 1 |
+| very confusing | 1 |
+| will not recommend to others | 1 |
+
+{style="table-layout:auto"}
+
+## Use case 2 {#split-uc2}
+
+You collect survey responses into a delimited list in a single dimension. You would like the responses from the first value in the list into its own dimension. You would like to put the last value in the list into its own dimension.
+
+### Data before {#split-uc2-databefore}
+
+| Responses | Events |
+|---|--:|
+| it was great,made perfect sense,will recommed to others | 1 |
+| it was great,somewhat confusing,will recommend to others | 1 |
+| it was not great,very confusing,will not recommned to others | 1 |
+
+{style="table-layout:auto"}
+
+### Derived field {#split-u2-derivedfield}
+
+You create a  `First Response` derived field. You use the [!UICONTROL SPLIT] function to define a rule to convert the values from the [!UICONTROL Responses] field to an array using `,` as the delimiter. *Need more information to complete this section*.
+
+### Data after {#split-uc2-dataafter}
+
+| First Response | Events |
+|---|--:|
+| it was great | 2 |
+| it was not great | 1 |
+
+{style="table-layout:auto"}
+
+| Second Response | Events |
+|---|--:|
+| will recommend to others | 2 |
+| will not recommend to others | 1 |
+
+{style="table-layout:auto"}
+
++++
+
 
 <!-- URL PARSE -->
 
