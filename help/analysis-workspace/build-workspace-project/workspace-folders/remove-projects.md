@@ -2,7 +2,7 @@
 description: Learn how to remove projects from folders
 keywords: Analysis Workspace
 title: Remove projects from folders
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 ---
 # Remove a Project from a Folder

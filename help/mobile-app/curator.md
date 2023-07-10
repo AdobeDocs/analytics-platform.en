@@ -1,6 +1,6 @@
 ---
 description: What are dashboards scorecards and
-title: Adobe Analytics dashboards curator guide
+title: Analytics dashboards curator guide
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 892e5789-8eec-43d9-99fe-8448aa8600b2

@@ -1,5 +1,5 @@
 ---
-description: How to set up users to use the Analytics mobile app
+description: How to set up users to use the Adobe Analytics dashboard mobile app
 title: Set up executives to use dashboards
 feature: Analytics Dashboards
 role: User, Admin
@@ -21,25 +21,29 @@ In some cases, executive users may need some additional assistance to access and
 To ensure that executive users have access to your scorecards on the app, make sure that:
 
 * The minimum mobile OS requirements on their devices are iOS version 10 or higher, or Android version 4.4 (KitKat) or higher
-* They have a valid login into Adobe Analytics.
+* They have a valid login into Customer Journey Analytics.
 * You have correctly created mobile scorecards for them and have shared these scorecards with them.
 * They have access to the Components that the scorecard includes. Note that you can select an option when sharing your scorecards to **[!UICONTROL Share embedded components]**.
 
 ## Help executives download and install app
 
+>[!NOTE]
+>
+>Although the mobile app is named Adobe Analytics dashboard in the app store, the app can be equally used with Customer Journey Analytics mobile scorecards. 
+
 **For executive users on iOS:**
 
-Click the following link (it is also available in Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) and follow the prompts to download, install, and open the app:
+Click the following link (it is also available in Customer Journey Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (mobile opp)]**) and follow the prompts to download, install, and open the app:
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **For executive users on Android:**
 
-Click the following link (it is also available in Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) and follow the prompts to download, install, and open the app:
+Click the following link (it is also available in Customer Journey Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (mobile app)]**) and follow the prompts to download, install, and open the app:
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-Once downloaded and installed, executive users can sign into the app using their existing Adobe Analytics credentials; we support both Adobe and Enterprise/Federated IDs.
+Once downloaded and installed, executive users can sign into the app using their existing Customer Journey Analytics credentials; we support both Adobe and Enterprise/Federated IDs.
 
 ![App welcome screen](assets/welcome.png)
 
@@ -102,7 +106,7 @@ If the executive user logs in and sees a message saying that nothing has been sh
 
 ![Nothing shared](assets/nothing.png)
 
-*  The executive user may have selected the wrong Analytics instance, or
-*  The scorecard may not have been shared with the executive user. 
+* The executive user may have selected the wrong Customer Journey Analytics sandbox, or
+* The scorecard may not have been shared with the executive user. 
 
-Verify that the executive user can log into the right Adobe Analytics instance and that the scorecard has been shared.
+Verify that the executive user can log into the right Customer Journey Analytics sandbox and that the scorecard has been shared.

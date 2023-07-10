@@ -2,7 +2,7 @@
 title: View and manage your Customer Journey Analytics usage
 description: Shows two methods of estimating usage and one method of managing it.
 role: Admin
-feature: CJA Basics
+feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
 ---
 # View and manage your Customer Journey Analytics usage

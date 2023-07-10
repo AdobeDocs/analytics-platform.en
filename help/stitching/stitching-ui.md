@@ -2,7 +2,7 @@
 title: Stitching
 description: Understand how to create and manage stitched datasets
 solution: Customer Journey Analytics
-feature: Stitching
+feature: Stitching, Cross-Channel Analysis
 hide: yes
 hidefromtoc: yes
 ---

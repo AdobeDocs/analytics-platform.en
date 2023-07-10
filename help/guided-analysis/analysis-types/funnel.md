@@ -2,6 +2,7 @@
 title: Funnel
 description: Identify areas of friction across a sequence of steps.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
+feature: Guided Analysis
 ---
 # Funnel
 

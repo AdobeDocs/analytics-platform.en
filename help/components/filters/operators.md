@@ -2,6 +2,7 @@
 title: Filter operators
 description: Determine how a component interacts with a value within a filter.
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
+feature: Filters
 ---
 # Filter operators
 

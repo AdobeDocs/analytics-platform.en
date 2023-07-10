@@ -2,7 +2,7 @@
 title: Ingest data via the Adobe Experience Platform Web SDK and the Edge Network
 description: Explain how to ingest data into Customer Journey Analytics via the Adobe Experience Platform Web SDK and the Edge Network
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 ---
 # Ingest data via the Adobe Experience Platform Web SDK and the Edge Network
