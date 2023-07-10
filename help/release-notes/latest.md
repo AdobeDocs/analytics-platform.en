@@ -19,6 +19,28 @@ Adobe Customer Journey Analytics releases operate on a [continuous delivery mode
 | **Expanded lookup support for Profile and Lookup data** |  Provides the ability to add datasets as lookups of fields within Profile or Lookup datasets. Previously, only Event datasets were supported. [Learn more] | June 21, 2023 | July 12, 2023 |
 | **Report Builder enhancements**  | <ul><li>Filter from cell for multiple data blocks. You can change the filters on multiple data blocks from a cell. Use a predefined cell, assign it to multiple data blocks, and update the data based on the filters defined in the cell. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=en)</li><li>Show and hide row and column headers. You can show or hide data block table headers, or row and column headers to reformat the table and align data blocks in a report. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=en#build-the-data-block)</li></ul>| N/A | July 12, 2023 |
 
+{style="table-layout:auto"}
+
+## Fixes in Customer Journey Analytics
+
+TBD
+
+## Important notices for Customer Journey Analytics Administrators
+
+| Notice | Notice added or updated | Description |
+| --- | --- | --- |
+| Changes to how Customer Journey Analytics processes data | June 22, 2023| We recently changed how we process data in Customer Journey Analytics.<ul><li>Any event data with a timestamp less than 24 hours old is streamed in.</li><li>Any event data with a timestamp more than 24 hours old (even if it's in the same batch as newer data) is considered backfill and will be ingested at a lower priority.</li></ul> |
+
+{style="table-layout:auto"}
+
+## End-of-life (EOL) notices
+
+| EOL Product or Feature | Date added or updated | Description |
+| --- | --- | --- |
+| **Migration to AdobeIO OAuth Server-to-Server credentials** | May 11, 2023 |  Adobe Analytics API, Customer Journey Analytics API, and Livestream customers using AdobeIO JWT credentials must migrate to AdobeIO OAuth Server-to-Server credentials by **January 1, 2025**. AdobeIO will not allow new JWT credentials to be created beginning May 1, 2024. Customers using JWT must create a new OAuth Server-to-Server credential or migrate their existing JWT credential to an OAuth Server-to-Server credential. Customers must also update their client applications to use the new OAuth Server-to-Server credentials. <ul><li>[Migrating from Service Account (JWT) credentials](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[Using the new OAuth Server-to-Server credentials](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[FAQs](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul> |
+
+{style="table-layout:auto"}
+
 
 ## Related resources
 
