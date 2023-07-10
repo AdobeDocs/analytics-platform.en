@@ -57,7 +57,7 @@ Once your organization meets all prerequisites and understands the [limitations]
 
 2. The Adobe Customer Support works with Adobe engineering to enable stitching upon receiving your request. Once enabled, a new rekeyed dataset that contains a new Stitched ID column appears in Adobe Experience Platform. Adobe Customer Support can provide the new dataset's ID.
    
-3. When first turned on, Adobe provides a backfill of stitched data that goes back 30 days.
+3. When first turned on, Adobe provides a backfill of stitched data that goes back 60 days.
    
 4. If you want to use the new stitched dataset in a cross-channel analysis, you need to add it to a [connection](../connections/overview.md) in Customer Journey Analytics together with any other needed datasets. Choose the correct person ID for each dataset.
    
