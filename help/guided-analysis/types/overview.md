@@ -20,6 +20,5 @@ Guided analysis categorizes view types into **Analysis types**. The following an
 | User growth | [Active](active.md) | Measure the growth of your user base. |
 | User growth | [Net growth](net-growth.md) | Balance user gains and losses. |
 | Trends | [Usage](usage.md) | Measure user engagement over time. |
-| Trends | [Frequency of use](frequency-of-use.md) | |
-
+<!--| Trends | [Frequency of use](frequency-of-use.md) | |-->
 {style="table-layout:auto"}
