@@ -2,7 +2,7 @@
 description: Learn about Folders in Workspace
 keywords: Analysis Workspace
 title: Folders overview
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 ---
 # About Folders in Analytics

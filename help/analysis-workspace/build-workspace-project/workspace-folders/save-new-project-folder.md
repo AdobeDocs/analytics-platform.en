@@ -2,7 +2,7 @@
 description: Learn about saving projects to folders in Workspace
 keywords: Analysis Workspace
 title: Saving projects to folders
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
 ---
 # Save a New Project to a Folder

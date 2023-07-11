@@ -2,7 +2,7 @@
 title: SQL Connector
 description: Learn how you can use Query Service, Power BI and/or Tableau to access Data Views using the SQL Connector.
 solution: Customer Journey Analytics
-feature: Data Views
+feature: SQL Connector
 hide: yes
 hidefromtoc: yes
 badgeCJASQLConnector: label="New Feature" type="Positive"
@@ -18,11 +18,11 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/doc
 
 The main benefits are:
 
--   No need to recreate an equivalent representation of Customer Journey Analytics data views within the BI tool itself. <br/>See [Data view](data-views.md) for more information on the functionality of Data views to understand what must be recreated.<br/>
+- No need to recreate an equivalent representation of Customer Journey Analytics data views within the BI tool itself. <br/>See [Data view](data-views.md) for more information on the functionality of Data views to understand what must be recreated.<br/>
 
--   Greater consistency in reporting and analysis between BI tools and Customer Journey Analytics.
+- Greater consistency in reporting and analysis between BI tools and Customer Journey Analytics.
   
--   Combine Customer Journey Analytics data with other data sources already available in BI tools.
+- Combine Customer Journey Analytics data with other data sources already available in BI tools.
 
 ## Prerequisites
 
@@ -30,13 +30,13 @@ To use this functionality, you have to
 
 <!---   Enable the [!UICONTROL Customer Journey Analytics SQL Connector] in your Experience Platform organization. -->
 
--   Configure the functionality for the relevant product profiles, user groups and/or individual users.<br/>
+- Configure the functionality for the relevant product profiles, user groups and/or individual users.<br/>
     Users must have access to:
     - Experience Platform Query Service, 
     - Customer Journey Analytics  Workspace projects, and
     - Customer Journey Analytics Data views they want to use.
 
--   Use expiring on non-expiring credentials to connect BI tools to the Customer Journey Analytics SQL Connector. Thr [Credentials guide](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) provides more information on setting expiring credentials or non-expiring credentials.
+- Use expiring on non-expiring credentials to connect BI tools to the Customer Journey Analytics SQL Connector. Thr [Credentials guide](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) provides more information on setting expiring credentials or non-expiring credentials.
 
 See [Access Control](../admin/cja-access-control.md) in the Customer Journey Analytics Administration section for additional information.
 
@@ -53,28 +53,28 @@ You can use the functionality directly in SQL statements using either the Query 
 
 In the Experience Platform UI:
 
-1.  Select **[!UICONTROL **Queries**]** from **[!UICONTROL **DATA MANAGEMENT**]** in the left rail.
+1. Select **[!UICONTROL **Queries**]** from **[!UICONTROL **DATA MANAGEMENT**]** in the left rail.
 
-2.  Select ![Create Query](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **Create query**]**.
+2. Select ![Create Query](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **Create query**]**.
 
-3.  To execute the query, type your SQL statement and select the ![Play](assets/Smock_Play_18_N.svg) button (or press SHIFT + ENTER).
+3. To execute the query, type your SQL statement and select the ![Play](assets/Smock_Play_18_N.svg) button (or press SHIFT + ENTER).
 
 +++
 
 
 +++ PostgresSQL CLI
 
-1.  In the Experience Platform UI, look up and copy your PostgresSQL credentials:
+1. In the Experience Platform UI, look up and copy your PostgresSQL credentials:
 
-    1.  Select **[!UICONTROL **Queries**]** from the left rail (under **[!UICONTROL **DATA MANAGEMENT**]**).
+   1. Select **[!UICONTROL **Queries**]** from the left rail (under **[!UICONTROL **DATA MANAGEMENT**]**).
 
-    2.  Select **[!UICONTROL **Credentials**]** from the top bar.
+   2. Select **[!UICONTROL **Credentials**]** from the top bar.
 
-    3.  To copy the connect string, use ![Copy](assets/Smock_Copy_18_N.svg) in the **[!UICONTROL **PSQL command**]** section.
+   3. To copy the connect string, use ![Copy](assets/Smock_Copy_18_N.svg) in the **[!UICONTROL **PSQL command**]** section.
 
-2.  Open your PostgresSQL CLI.
+2. Open your PostgresSQL CLI.
 
-3.  To log in and start executing your queries, paste the connect string in the PostgresSQL CLI.
+3. To log in and start executing your queries, paste the connect string in the PostgresSQL CLI.
     
 +++
 
@@ -87,87 +87,87 @@ Currently, the Customer Journey Analytics SQL Connector is supported and tested 
 
 +++ Power BI
 
-1.  In the Adobe Experience Platform UI, look up the details of your PostgresSQL credentials.
+1. In the Adobe Experience Platform UI, look up the details of your PostgresSQL credentials.
 
-    1.  Select **[!UICONTROL **Queries**]** from the left rail (under **[!UICONTROL **DATA MANAGEMENT**]**).
+   1. Select **[!UICONTROL **Queries**]** from the left rail (under **[!UICONTROL **DATA MANAGEMENT**]**).
 
-    2.  Select **[!UICONTROL **Credentials**]** from the top bar.
+   2. Select **[!UICONTROL **Credentials**]** from the top bar.
 
-    3.  Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Power BI.
+   3. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Power BI.
 
-2.  In Power BI:
+2. In Power BI:
 
-    1.  In the main window, select **[!UICONTROL **Get data**]** from the top toolbar.
+   1. In the main window, select **[!UICONTROL **Get data**]** from the top toolbar.
    
-    2.  Select **[!UICONTROL **More...**]** in the left rail.
+   2. Select **[!UICONTROL **More...**]** in the left rail.
 
-    3.  In the **Get Data** screen, search for `PostgresSQL` and select the **[!UICONTROL **PostgresSQL database**]** from the list.
+   3. In the **Get Data** screen, search for `PostgresSQL` and select the **[!UICONTROL **PostgresSQL database**]** from the list.
 
-    4.  In the **[!UICONTROL **PostgressSQL database**]** dialog:
+   4. In the **[!UICONTROL **PostgressSQL database**]** dialog:
 
-        1.  Paste **[!UICONTROL **Host**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Server**]** text field.
+       1. Paste **[!UICONTROL **Host**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Server**]** text field.
 
-        2.  Paste **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] in **[!UICONTROL **Database**]** text field.
+       2. Paste **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] in **[!UICONTROL **Database**]** text field.
         
-            Add `?FLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:all?FLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) for more information.
+          Add `?FLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:all?FLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) for more information.
 
-        3.  When prompted for **[!UICONTROL **Data Connectivity**]** mode, select **[!UICONTROL **DirectQuery**]** to ensure that the data structures are flattened properly.
+       3. When prompted for **[!UICONTROL **Data Connectivity**]** mode, select **[!UICONTROL **DirectQuery**]** to ensure that the data structures are flattened properly.
 
-        4.  You are prompted for **[!UICONTROL **Username**]** and **[!UICONTROL **Password**]**. Use the equivalent parameters from Experience Platform Queries [!UICONTROL Credentials].
-
-
-    5.  After successful login, the Customer Journey Analytics Data View tables appear in Power BI's **[!UICONTROL **Navigator**]**. Data View tables are identified by using `dv_` in their names.
+       4. You are prompted for **[!UICONTROL **Username**]** and **[!UICONTROL **Password**]**. Use the equivalent parameters from Experience Platform Queries [!UICONTROL Credentials].
 
 
-    6.  Select the data view tables that you want to use and select **[!UICONTROL **Load**]**.
+   5. After successful login, the Customer Journey Analytics Data View tables appear in Power BI's **[!UICONTROL **Navigator**]**. Data View tables are identified by using `dv_` in their names.
 
-    All dimensions and metrics associated with one or more selected tables appear in the right pane, ready to be used in your visualizations.
 
-    See [Connect Power BI to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html?lang=en) for more information.
+   6. Select the data view tables that you want to use and select **[!UICONTROL **Load**]**.
+
+   All dimensions and metrics associated with one or more selected tables appear in the right pane, ready to be used in your visualizations.
+
+   See [Connect Power BI to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html?lang=en) for more information.
 
 +++
 
 +++Tableau
 
-1.  In the Experience Platform UI, look up the details of your PostgresSQL credentials.
+1. In the Experience Platform UI, look up the details of your PostgresSQL credentials.
 
-    1.  Select **[!UICONTROL **Queries**]** from the left rail (under **[!UICONTROL **DATA MANAGEMENT**]**).
+   1. Select **[!UICONTROL **Queries**]** from the left rail (under **[!UICONTROL **DATA MANAGEMENT**]**).
 
-    2.  Select **[!UICONTROL **Credentials**]** from the top bar.
+   2. Select **[!UICONTROL **Credentials**]** from the top bar.
 
-    3.  Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Tableau.
+   3. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Tableau.
 
-2.  In Tableau:
+2. In Tableau:
 
-    1.  Select **[!UICONTROL **More**]** from **[!UICONTROL **To a Server**]** in the left rail.
+   1. Select **[!UICONTROL **More**]** from **[!UICONTROL **To a Server**]** in the left rail.
 
-    2.  Select **[!UICONTROL **PostgresSQL**]** from the list.
+   2. Select **[!UICONTROL **PostgresSQL**]** from the list.
 
-    3.  In the [!UICONTROL PostgresSQL] dialog:
+   3. In the [!UICONTROL PostgresSQL] dialog:
 
-        1.  Paste **[!UICONTROL **Host**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Server**]** text field.
+      1. Paste **[!UICONTROL **Host**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Server**]** text field.
 
-        2.  Paste **[!UICONTROL **Port**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Port**]** text field.
+      2. Paste **[!UICONTROL **Port**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Port**]** text field.
 
-        3.  Paste **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Database**]** text field.
+      3. Paste **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Database**]** text field.
 
             Add `%3FFLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:all%3FFLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) for more information.
 
-        4.  Select **[!UICONTROL **Username and Password**]** from **[!UICONTROL **Authentication**]** list.
+      4. Select **[!UICONTROL **Username and Password**]** from **[!UICONTROL **Authentication**]** list.
 
-        5.  Paste **[!UICONTROL **Username**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Username**]** text field.
+      5. Paste **[!UICONTROL **Username**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Username**]** text field.
 
-        6.  Paste **[!UICONTROL **Password**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Password**]** text field.
+      6. Paste **[!UICONTROL **Password**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Password**]** text field.
 
-        7.  Select **[!UICONTROL **Sign In**]**.
+      7. Select **[!UICONTROL **Sign In**]**.
 
-    4.  Customer Journey Analytics data views show up as tables in the **[!UICONTROL **Table**]** list. Data view tables are prefixed with `dv_`.
+   4. Customer Journey Analytics data views show up as tables in the **[!UICONTROL **Table**]** list. Data view tables are prefixed with `dv_`.
    
-    5.  Drag the tables that you want to use on the canvas.
+   5. Drag the tables that you want to use on the canvas.
 
-    You can now work with the data from the data view tables to build your reports and visualizations.
+   You can now work with the data from the data view tables to build your reports and visualizations.
 
-    See [Connect Tableau to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=en) for more information.
+   See [Connect Tableau to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=en) for more information.
 
 +++
 
@@ -248,21 +248,21 @@ You can select any of the dimensions available by default or defined in the data
 
 The metrics available to select are: 
 
--   any of the metrics available by default,
+- any of the metrics available by default,
   
--   defined in the data view,
+- defined in the data view,
   
--   calculated metrics that are compatible with the Data View that the user has access to.  
+- calculated metrics that are compatible with the Data View that the user has access to.  
  
 You select a metric by its ID wrapped in a `SUM(metric)` expression just like you would do with other SQL sources.
 
 You can use:
 
--   `SELECT COUNT(*)` or `COUNT(1)` to get the occurrences metric.
+- `SELECT COUNT(*)` or `COUNT(1)` to get the occurrences metric.
   
--   `SELECT COUNT(DISTINCT dimension)` or `SELECT APPROX_COUNT_DISTINCT(dimension)` to count the approximate distinct values of a dimension. See details in [Counting Distincts](#counting-distincts).
+- `SELECT COUNT(DISTINCT dimension)` or `SELECT APPROX_COUNT_DISTINCT(dimension)` to count the approximate distinct values of a dimension. See details in [Counting Distincts](#counting-distincts).
   
--   [Inline Calculations](#inline-calculations) to combine metrics on the fly and/or doing math on them.
+- [Inline Calculations](#inline-calculations) to combine metrics on the fly and/or doing math on them.
 
 #### Counting Distincts
 
@@ -303,11 +303,11 @@ You can apply additional to metric expressions in your `SELECT` instead of havin
 The `timestamp` special column is used to provide the date ranges for the query. A date range can be defined with a `BETWEEN` expression or a pair of `timestamp` `>`, `>=`, `<`, `<=` checks `AND`ed together.
 The `timestamp` is optional and if no full range is provided, defaults are used:
 
--   If only a minimum is provided (`timestamp > X` or ` timestamp >= X`), the range is from X to now.
+- If only a minimum is provided (`timestamp > X` or ` timestamp >= X`), the range is from X to now.
   
--   If only a max is provided (`timestamp < X` or `timestamp <= X`), the range is from X-30 days to X.
+- If only a max is provided (`timestamp < X` or `timestamp <= X`), the range is from X-30 days to X.
   
--   If nothing is provided the range is from now-30 days to now.
+- If nothing is provided the range is from now-30 days to now.
 
 The timestamp range is converted to a date-range global filter in the RankedRequest.
 The timestamp field can also be used in Date-Time functions to parse, truncate the event timestamp.
@@ -325,11 +325,11 @@ The `filterId` special column is optional and is used to apply an externally def
 
 The WHERE clause is handled in three steps:
 
-1.  Find the date range from the `timestamp` special field.
+1. Find the date range from the `timestamp` special field.
   
-2.  Find any externally defined `filterId`s to include in the filtering.
+2. Find any externally defined `filterId`s to include in the filtering.
 
-3.  Turn the remaining expressions into ad-hoc filters.
+3. Turn the remaining expressions into ad-hoc filters.
 
 The handling is done by parsing the first level of `AND`s in the `WHERE` clause. Each top-level `AND`ed expression must match one of the above. Anything deeper than the first level of `AND`s, or, if the `WHERE` clause uses `OR`s at the top level, is handled as an ad-hoc filter.
 
