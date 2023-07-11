@@ -1,13 +1,14 @@
 ---
-title: Active (User growth)
+title: Active
 description: Measure the growth of your user base.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
+feature: Guided Analysis
 ---
-# Active (User growth)
+# Active
 
 {{release-limited-testing}}
 
-The **Active** [View type](overview.md) provides insights around the growth and acquisition of users over a specific period. The horizontal axis is always a time granularity, while the vertical axis is always a measurement of users. Users are analyzed from the start of the date range, split into four categories:
+The **Active** view type provides insights around the growth and acquisition of users over a specific period. The horizontal axis is always a time granularity, while the vertical axis is always a measurement of users. Users are analyzed from the start of the date range, split into four categories:
 
 * **New**: The user was active during the current data point, and has not appeared in any previous data points. Hover over '[!UICONTROL New users]' in the chart's legend to see how far the report looks back to determine a new user. This date is dynamically selected based on the date range's length and granularity.
 * **Repeat**: The user appeared in the immediately previous data point and the current data point.

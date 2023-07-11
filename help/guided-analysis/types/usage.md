@@ -1,14 +1,14 @@
 ---
-title: Usage (Trends)
+title: Usage
 description: Measure user engagement over time.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
 ---
-# Usage (Trends)
+# Usage
 
 {{release-limited-testing}}
 
-The **Usage** [View type](overview.md) provides valuable insight around the performance of your product or behavior of your users over time. The horizontal axis of this report is always a time granularity, while the vertical axis measures your desired events. Use cases for this view type include:
+The **Usage** view type provides valuable insight around the performance of your product or behavior of your users over time. The horizontal axis of this report is always a time granularity, while the vertical axis measures your desired events. Use cases for this view type include:
 
 * **Evaluate product performance**: Trends allow you to assess the overall performance of your product over a given period. By analyzing metrics such as user engagement, conversion rates, or revenue, you can identify if the performance of your product is improving, stagnating, or declining.
 * **Feature adoption**: Trends allow you to understand how users adopt new features or updates that you release. You can determine which features are popular and which features require improvement. This information allows you to make data-driven decisions around what features to prioritize your development efforts around.

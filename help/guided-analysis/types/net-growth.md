@@ -1,12 +1,13 @@
 ---
-title: Net growth (User growth)
+title: Net growth
 description: Balance user gains and losses.
+feature: Guided Analysis
 ---
-# Net growth (User growth)
+# Net growth
 
 {{release-limited-testing}}
 
-The **Net growth** [View type](overview.md) provides insights around the rate at which you acquire or lose users over a specific period. The horizontal axis is always a time granularity, while the vertical axis is always the measurement of growth.
+The **Net growth** view type provides insights around the rate at which you acquire or lose users over a specific period. The horizontal axis is always a time granularity, while the vertical axis is always the measurement of growth.
 
 Each data point represent's that data point's net growth, which is calculated using the following formula:
 

@@ -1,12 +1,13 @@
 ---
-title: Conversion trends (Funnel)
+title: Conversion trends
 description: Track changes in conversion rate over time.
+feature: Guided Analysis
 ---
-# Conversion trends (Funnel)
+# Conversion trends
 
 {{release-limited-testing}}
 
-The **Conversion trends** [View type](overview.md) provides a trended visualization around conversion rates over time. The horizontal axis is always a date granularity, while the vertical axis represents conversion rate. Using this view type in conjunction with [Friction](friction.md) allows you to establish and refine the desired funnel. You can then use this view type to view conversion rates for that funnel over time. Use cases for this view type include:
+The **Conversion trends** view type provides a trended visualization around conversion rates over time. The horizontal axis is always a date granularity, while the vertical axis represents conversion rate. Using this view type in conjunction with [Friction](friction.md) allows you to establish and refine the desired funnel. You can then use this view type to view conversion rates for that funnel over time. Use cases for this view type include:
 
 * **Track optimization efforts**: After identifying key bottlenecks that you want to improve using [Friction](friction.md), you can use this view type to track how those optimizations impact conversion rate over time.
 * **A/B testing evaluation**: Evaluate the effectiveness of A/B tests or experiments conducted within the context of a funnel. By comparing conversion rates between different variations, you can easily determine which tests provide higher conversion rates, leading to data-driven decisions around which variations to implement permanently.

@@ -1,13 +1,14 @@
 ---
-title: Friction (Funnel)
+title: Friction
 description: Compare conversion rates between steps.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
+feature: Guided Analysis
 ---
-# Friction (Funnel)
+# Friction
 
 {{release-limited-testing}}
 
-The **Friction** [View type](overview.md) provides a visual representation of a critical user journey in your product. The horizontal axis represents each event that a user must touch in order. The vertical axis represents the percentage of users or sessions that touched each event. All touchpoints must be done in eventual order, but can happen at any time within the reporting window. Use cases for this view type include:
+The **Friction** view type provides a visual representation of a critical user journey in your product. The horizontal axis represents each event that a user must touch in order. The vertical axis represents the percentage of users or sessions that touched each event. All touchpoints must be done in eventual order, but can happen at any time within the reporting window. Use cases for this view type include:
 
 * **Conversion analysis**: You can analyze conversions at each stage of the funnel. By tracking the number of users who progress from one step to the next, you can identify bottlenecks that have unusual or undesired conversion rates. This information is valuable to understand where you can improve your product for immediate results.
 * **Onboarding optimization**: Optimize your product's onboarding process by examining user behavior around key events. You can identify which steps that users struggle with or fail to complete.

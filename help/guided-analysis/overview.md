@@ -12,7 +12,21 @@ Guided analysis is a reporting format that allows product teams to quickly self-
 
 Similar to Analysis Workspace and Mobile scorecards, a Guided analysis report uses data from a [Data view](../data-views/data-views.md), which references data in Adobe Experience Platform through a [Connection](../connections/overview.md). All reports created in Guided analysis can seamlessly transfer to Analysis Workspace for additional research.
 
-Guided analysis reports currently feature three analysis types: [Funnel](analysis-types/funnel.md), [Trends](analysis-types/trends.md), and [User growth](analysis-types/user-growth.md). Each of these analysis types has multiple view types, which provide additional insights to each of these reports.
+Guided analysis provides multiple ways to analyze data. These view types can show the same data in different ways, leading to different insights using the same events and segments. You get different query rails and visualization options depending on the view type that you choose. You can freely switch between view types, and any applicable query rail components carry over if the view type supports them.
+
+Guided analysis categorizes view types into **Analysis types**. The following analysis and view types are available:
+
+| Analysis type | View type | Description |
+| --- | --- | --- |
+| Impact | [Release](release.md) | Compare performance across equal periods pre- and post-release. |
+| Impact | [First use](first-use.md) | Measure the impact of first-time feature use on key indicators. |
+| Funnel | [Friction](friction.md) | Compare conversion rates between steps. |
+| Funnel | [Conversion trends](conversion-trends.md) | Track changes in conversion rates over time. |
+| User growth | [Active](active.md) | Measure the growth of your user base. |
+| User growth | [Net growth](net-growth.md) | Balance user gains and losses. |
+| Trends | [Usage](usage.md) | Measure user engagement over time. |
+<!--| Trends | [Frequency of use](frequency-of-use.md) | |-->
+{style="table-layout:auto"}
 
 ## Interface
 
