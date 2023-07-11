@@ -18,14 +18,14 @@ Guided analysis categorizes view types into **Analysis types**. The following an
 
 | Analysis type | View type | Description |
 | --- | --- | --- |
-| Impact | [Release](release.md) | Compare performance across equal periods pre- and post-release. |
-| Impact | [First use](first-use.md) | Measure the impact of first-time feature use on key indicators. |
-| Funnel | [Friction](friction.md) | Compare conversion rates between steps. |
-| Funnel | [Conversion trends](conversion-trends.md) | Track changes in conversion rates over time. |
-| User growth | [Active](active.md) | Measure the growth of your user base. |
-| User growth | [Net growth](net-growth.md) | Balance user gains and losses. |
-| Trends | [Usage](usage.md) | Measure user engagement over time. |
-<!--| Trends | [Frequency of use](frequency-of-use.md) | |-->
+| Impact | [Release](types/release.md) | Compare performance across equal periods pre- and post-release. |
+| Impact | [First use](types/first-use.md) | Measure the impact of first-time feature use on key indicators. |
+| Funnel | [Friction](types/friction.md) | Compare conversion rates between steps. |
+| Funnel | [Conversion trends](types/conversion-trends.md) | Track changes in conversion rates over time. |
+| User growth | [Active](types/active.md) | Measure the growth of your user base. |
+| User growth | [Net growth](types/net-growth.md) | Balance user gains and losses. |
+| Trends | [Usage](types/usage.md) | Measure user engagement over time. |
+<!--| Trends | [Frequency of use](types/frequency-of-use.md) | |-->
 {style="table-layout:auto"}
 
 ## Interface
@@ -43,10 +43,10 @@ Guided analysis contains the following interface parts:
 
 | Interface preview | UI Element | Description |
 | --- | --- | --- |
-| [Screenshot of query rail] | Query rail | Configure the desired components that make up a report. Different analysis types share several query options; if two analysis types share query options, they carry over when switching analysis types. See [Analysis types](analysis-types/overview.md) for more information around query options for each respective analysis type. |
-| [Screenshot of chart] | Chart | A visualization of the data returned based on your input from the query rail and settings. Which visualization you see depends on the view type above the chart. Available view types depend on the [Analysis type](analysis-types/overview.md) above the query rail. |
-| [Screenshot of table] | Table | A table representation of the data returned based on your input from the query rail and settings. Columns in the table depend on the view type above the chart. Available view types depend on the [Analysis type](analysis-types/overview.md) above the query rail. |
-| [Screenshot of settings] | Settings | Several options above the chart that allow you to customize how the chart and table return data.<ul><li>**View type**: A drop-down selector that lets you present data for a given [Analysis type](analysis-types/overview.md) in a different way. Each analysis type has at least two view types.</li><li>**Chart settings**: Fine-tune what your chart looks like and which events you want it to use. Available options depend on the view type selected.</li><li>**Date range**: A calendar picker that allows you to determine the date range of the report. Some analysis types also allow intervals, such as daily, weekly, or monthly.</li><li>**Insights**: Provides contextual insights depending on the report that you view. You can show or hide these insights using the light bulb icon in the top right.</li></ul> |
+| [Screenshot of query rail] | Query rail | Configure the desired components that make up a report. Different analysis types share several query options; if two analysis types share query options, they carry over when switching analysis types. |
+| [Screenshot of chart] | Chart | A visualization of the data returned based on your input from the query rail and settings. Which visualization you see depends on the view type above the chart. Available view types depend on the Analysis type above the query rail. |
+| [Screenshot of table] | Table | A table representation of the data returned based on your input from the query rail and settings. Columns in the table depend on the view type above the chart. Available view types depend on the Analysis type above the query rail. |
+| [Screenshot of settings] | Settings | Several options above the chart that allow you to customize how the chart and table return data.<ul><li>**View type**: A drop-down selector that lets you present data for a given Analysis type in a different way. Each analysis type has at least two view types.</li><li>**Chart settings**: Fine-tune what your chart looks like and which events you want it to use. Available options depend on the view type selected.</li><li>**Date range**: A calendar picker that allows you to determine the date range of the report. Some analysis types also allow intervals, such as daily, weekly, or monthly.</li><li>**Insights**: Provides contextual insights depending on the report that you view. You can show or hide these insights using the light bulb icon in the top right.</li></ul> |
 | [Screenshot of analysis menu] | Analysis menu | Commands in the top-right of Guided analysis that provide overarching actions.<ul><li>**Data view selector**: Change the data view that this analysis uses. When you change the data view, available components in the query rail also change.</li><li>**Save**: Saves the analysis. If you're saving a new analysis, a modal window appears that requests a name and description.</li><li>**Save as**: Saves the analysis separately from the current analysis, creating a copy. A modal window appears that requests a new name and description.</li><li>**Open in Workspace**: Recreates the current Guided analysis in Analysis Workspace. The Workspace project is created in a new tab, preventing interruption while working within Guided analysis. Use this command when Guided analysis doesn't quite give you the flexibility or specific insight that you're looking for. For example, you want a [Trends](analysis-types/trends.md) report that uses Sessions for one segment, and People for another segment.</li><li>**Download PNG**: Downloads the chart graphic as a `.png`. The query rail and table are not included in the graphic.</li><li>**Download SVG**: Downloads the chart graphic as a `.svg`. The query rail and table are not included in the graphic.</li></ul> |
 
 {style="table-layout:auto"}
