@@ -42,5 +42,5 @@ The Friction view offers the following chart settings, which can be adjusted in 
 
 The desired date range for your analysis. There are two components to this setting:
 
-* **Interval**: The date granularity that you want to view trended data by. This setting does not impact non-trended views such as Friction. Valid options include Hourly, Daily, Weekly, Monthly, and Quarterly. The same date range can have different intervals which affect the number of data points in the chart and the number of columns in the table. For example, viewing an analysis spanning three days with daily granularity would show only three data points, while an analysis spanning three days with hourly granularity would show 72 data points.
+* **Interval**: The date granularity that you want to view trended data by. This setting does not impact non-trended views such as Friction. 
 * **Date**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
