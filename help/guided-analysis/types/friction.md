@@ -8,11 +8,13 @@ feature: Guided Analysis
 
 {{release-limited-testing}}
 
-The **Friction** view provides a visual representation of a critical user journey in your product. The horizontal axis represents each step that a user must pass through. The vertical axis represents the percentage of users or sessions at each step. All steps must be done in eventual order, but can happen at any time within the reporting window. Use cases for this view type include:
+The **Friction** view provides a visual representation of a critical user journey in your product. The horizontal axis represents each step that a user must pass through. The vertical axis represents the percentage of users or sessions at each step. All steps must be done in eventual order, but can happen at any time within the reporting window.
 
 ![Friction](../assets/friction.png)
 
 ## Use cases
+
+Use cases for this view type include:
 
 * **Conversion analysis**: You can analyze conversions at each stage of the funnel. By tracking the number of users who progress from one step to the next, you can identify bottlenecks that have unusual or undesired conversion rates. This information is valuable to understand where you can improve your product for immediate results.
 * **Onboarding optimization**: Optimize your product's onboarding process by examining user behavior around key events. You can identify which steps that users struggle with or fail to complete.
