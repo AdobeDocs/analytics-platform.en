@@ -28,7 +28,7 @@ The query rail allows you to configure the following components:
 
 The Friction view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **Metric**: The metric that you want to measure. Options include Sessions and Users.
+* **Metric**: The scope you want applied to the funnel. Options include Sessions and Users. By selecting sessions, all steps need to happen within the same session to be counted. By selecting users, all steps need to happen within the reporting window selected to be counted.
 * **Chart type**: The type of visualization that you want to use. Options include Steps.
 * **Conversion from**: Determines the percentage calculation from step to step. Options include calculating conversion from the First step or Previous step.
 
