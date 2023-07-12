@@ -22,8 +22,8 @@ Guided analysis categorizes view types into **Analysis types**. The following an
 | Impact | [First use](types/first-use.md) | Measure the impact of first-time feature use on key indicators. |
 | Funnel | [Friction](types/friction.md) | Compare conversion rates between steps. |
 | Funnel | [Conversion trends](types/conversion-trends.md) | Track changes in conversion rates over time. |
-| User growth | [Active](types/active.md) | Measure the growth of your user base. |
-| User growth | [Net growth](types/net-growth.md) | Balance user gains and losses. |
+| User growth | [Active](types/active.md) | Identify who is new, retained, returning, or dormant. |
+| User growth | [Net growth](types/net-growth.md) | Are you gaining or losing users? |
 | Trends | [Usage](types/usage.md) | Measure user engagement over time. |
 
 {style="table-layout:auto"}
@@ -32,30 +32,21 @@ Guided analysis categorizes view types into **Analysis types**. The following an
 
 The interface for Guided analysis, regardless of analysis type, comprises the following main UI elements:
 
-1. **Query rail**: Use this rail on the left to build out your analysis.
-1. **Chart**: Once you select the desired events, people, or steps, a chart is shown on the right that visualizes the data.
-1. **Table**: A table below the chart that shows the numbers used in the visualization.
-1. **Settings and insights**: Several UI elements above the chart that allow you to customize the data returned.
-
-[Screenshot of UI]
-
-Guided analysis contains the following interface parts:
-
 | Interface preview | UI Element | Description |
 | --- | --- | --- |
-| ![Query rail](assets/query-rail.png) | Query rail | Configure the desired components that make up a report. Different analysis types share several query options; if two analysis types share query options, they carry over when switching analysis types. |
-| ![Chart](assets/chart.png) | Chart | A visualization of the data returned based on your input from the query rail and settings. Which visualization you see depends on the view type above the chart. Available view types depend on the Analysis type above the query rail. |
+| ![Query rail](assets/query-rail.png) | Query rail | Configure the desired components (events, properties and segments) that make up an analysis. Each analysis type enforces different limits to the number of events and segments you can configure. If you switch to a new analysis type, your query selections will be maintained within the allowed limits for that analysis type. |
+| ![Chart](assets/chart.png) | Chart | A visualization of the data returned based on your input from the query rail and settings. Which visualization you see depends on the view type and settings above the chart. Available view types depend on the analysis type above the query rail. |
 | ![Table](assets/table.png) | Table | A table representation of the data returned based on your input from the query rail and settings. Columns in the table depend on the view type above the chart. Available view types depend on the Analysis type above the query rail. |
-| ![Visualization settings](assets/visualization-settings.png) | Visualization settings | Several options above the chart that allow you to customize how the chart and table return data.<ul><li>**View type**: A drop-down selector that lets you present data for a given Analysis type in a different way. Each analysis type has at least two view types.</li><li>**Chart settings**: Fine-tune what your chart looks like and which events you want it to use. Available options depend on the view type selected.</li><li>**Date range**: A calendar picker that allows you to determine the date range of the report. Some analysis types also allow intervals, such as daily, weekly, or monthly.</li><li>**Insights**: Provides contextual insights depending on the report that you view. You can show or hide these insights using the light bulb icon in the top right.</li></ul> |
-| ![Menu](assets/menu.png) | Analysis menu | Commands in the top-right of Guided analysis that provide overarching actions.<ul><li>**Data view selector**: Change the data view that this analysis uses. When you change the data view, available components in the query rail also change.</li><li>**Save**: Saves the analysis. If you're saving a new analysis, a modal window appears that requests a name and description.</li><li>**Save as**: Saves the analysis separately from the current analysis, creating a copy. A modal window appears that requests a new name and description.</li><li>**Open in Workspace**: Recreates the current Guided analysis in Analysis Workspace. The Workspace project is created in a new tab, preventing interruption while working within Guided analysis. Use this command when Guided analysis doesn't quite give you the flexibility or specific insight that you're looking for. For example, you want a [Usage](types/usage.md) report that uses Sessions for one segment, and People for another segment.</li><li>**Download PNG**: Downloads the chart graphic as a `.png`. The query rail and table are not included in the graphic.</li><li>**Download SVG**: Downloads the chart graphic as a `.svg`. The query rail and table are not included in the graphic.</li></ul> |
+| ![Visualization settings](assets/visualization-settings.png) | Visualization settings | Several options above the chart that allow you to customize how the chart and table return data.<ul><li>**View type**: A drop-down selector that lets you present data for a given Analysis type in a different way.</li><li>**Chart settings**: Fine-tune what your chart and table display. Available options depend on the view type selected.</li><li>**Date range**: A calendar picker that allows you to determine the date range of the analysis. You can also select an interval for trended views, such as daily, weekly, or monthly.</li><li>**Insights**: Contextual insights depending on the analysis you view. You can tab to additional insights using the arrows or show or hide these insights using the light bulb icon in the top right.</li></ul> |
+| ![Menu](assets/menu.png) | Mmenu | Commands in the top-right of Guided analysis that provide overarching actions for your analysis.<ul><li>**Data view selector**: Change the data view that the analysis uses. When you change the data view, available components in the query rail also change.</li><li>**Save**: Saves the analysis. If you're saving a new analysis, a modal window appears that requests a name and description.</li><li>**Save as**: Saves the analysis separately from the current analysis, creating a copy. A modal window appears that requests a new name and description.</li><li>**Open in Workspace**: Recreates the current Guided analysis in Analysis Workspace. The Workspace project is created in a new tab, preventing interruption while working within Guided analysis. It is a copy of the analysis, and does not remain in sync with the original guided analysis once opened. Use this command when you want to handoff to your analyst team, or dive deeper into the data than what Guided analysis allows for.</li><li>**Copy to clipboard**: Copies the chart graphic to your clipboard, to be pasted in other applications. The query rail and table are not included in the graphic.</li><li>**Download PNG**: Downloads the chart graphic as a `.png`. The query rail and table are not included in the graphic.</li><li>**Download CSV**: Downloads the table data as a `.csv`. The query rail and chart are not included in the file.</li></ul> |
 
 {style="table-layout:auto"}
 
 ## Provisioning
 
-Guided analysis is part of Adobe Product Analytics, which is a paid add-on to Customer Journey Analytics. If your organization would like to start using this feature, contact your Adobe Account Team.
+Guided analysis is part of Adobe Product Analytics, which is a paid add-on to Customer Journey Analytics. If your organization would like to start using this set of capabilities, contact your Adobe Account Team.
 
-Once your organization is provisioned to use Guided analysis, product profile administrators can grant access to it in the Adobe Admin Console.
+Once your organization is provisioned to use Guided analysis, product profile administrators can add or remove access to it in the Adobe Admin Console.
 
 1. Log in to the [Adobe admin console](https://adminconsole.adobe.com).
 1. Select **[!UICONTROL Customer Journey Analytics]** in the list of products.
@@ -63,3 +54,7 @@ Once your organization is provisioned to use Guided analysis, product profile ad
 1. Click the **[!UICONTROL Permissions]** tab, then click **[!UICONTROL Edit]** under [!UICONTROL Reporting Tools].
 1. Click the plus icon next to **[!UICONTROL Guided Analysis Access]** in list of [!UICONTROL Available Permission Items] to add it to the list of [!UICONTROL Included Permission Items].
 1. Click **[!UICONTROL Save]**.
+
+>[!TIP]
+>
+>Some admins prefer to enable Guided analysis and disable Analysis Workspace for new users to Customer Journey Analytics. Once those users mature with the product and your organizational data, then turn on Analysis Worskspace access.  
