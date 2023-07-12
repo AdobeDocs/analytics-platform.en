@@ -1,6 +1,6 @@
 ---
 description: Instructions for using the dashboards scorecards.
-title: Adobe Analytics dashboards executive guide
+title: Analytics dashboards executive guide
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
@@ -8,7 +8,7 @@ solution: Customer Journey Analytics
 ---
 # Executive user quick start guide
 
-The following information provides executive users with information on best practices for using and viewing Adobe Analytics dashboards. Here is a video demonstrating this information:
+The following information provides executive users with information on best practices for using and viewing Analytics dashboards. Here is a video demonstrating this information:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343460/)
 
@@ -22,26 +22,30 @@ To use the dashboards effectively, you will need to have your Scorecard curator 
 
 To access Scorecards on dashboards, ensure that:
 
-* You have a valid login into Adobe Analytics
+* You have a valid login into Customer Journey Analytics
 * Your curator has correctly created mobile Scorecards and shared them with you
 
 ### Download and install dashboards
 
 To download and install the app, follow the steps according to the operating system on your device.
 
+>[!NOTE]
+>
+>Although the mobile app is named Adobe Analytics dashboard in the app store, the app can be equally used with Customer Journey Analytics mobile scorecards. 
+
 **For executive users on iOS:**
 
-Click the following link (it is also available in Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) and follow the prompts to download, install, and open the app:
+Click the following link (it is also available in Customer Journey Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (mobile app)]**) and follow the prompts to download, install, and open the app:
 
 [iOS link](https://apple.co/2zXq0aN)
 
 **For executive users on Android:**
 
-Click the following link (it is also available in Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) and follow the prompts to download, install, and open the app:
+Click the following link (it is also available in Customer Journey Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (mobile app)]**) and follow the prompts to download, install, and open the app:
 
 [Android link](https://bit.ly/2LM38Oo)
 
-Once downloaded and installed, executive users can sign into the app using their existing Adobe Analytics credentials.
+Once downloaded and installed, executive users can sign into the app using their existing Customer Journey Analytics credentials.
 
 ![App welcome screen](assets/welcome.png)
 
@@ -49,15 +53,15 @@ Once downloaded and installed, executive users can sign into the app using their
 
 To use dashboards:
 
-1. Sign in to the app. The sign in screen will appear upon launching dashboards. Follow the prompts using your existing Adobe Analytics credentials. We support both Adobe and Enterprise/Federated IDs.
+1. Sign in to the app. The sign in screen will appear upon launching dashboards. Follow the prompts using your existing Customer Journey Analytics credentials. We support both Adobe and Enterprise/Federated IDs.
 
-    ![Sign in sequence](assets/signseq.png)
+   ![Sign in sequence](assets/signseq.png)
 
 1. Choose a company. After you sign in to dashboards, the **[!UICONTROL Choose a company]** screen appears. This screen lists the login companies to which you belong. Tap the company name associated with the scorecard shared with you.
 
    The scorecard list shows all scorecards that are shared with you.
 
-1.  Tap the scorecard that you want to view.
+1. Tap the scorecard that you want to view.
 
     If you have access to more than one organization under one login, all scorecards from your organizations are available in the scorecard list.
 
@@ -67,8 +71,8 @@ To use dashboards:
 
     If you log in and see a message saying that nothing has been shared, verify the following with your curator:
 
-    * You can log into the right Analytics instance
-    * The Scorecard has been shared with you
+    * You can log into the right Customer Journey Analytics sandbox.
+    * The Scorecard has been shared with you.
 
     ![Nothing shared](assets/nothing.png)
 
@@ -105,11 +109,11 @@ To use dashboards:
 
     * Depending on the interval you tap (**Day**, **Week**, **Month**, or **Year**), you will see two options for date ranges—either the present span of time or the one immediately preceding it. Tap one of these two options to select the first range. Under the **[!UICONTROL COMPARE TO]** list, tap one of the presented options to compare the data of this time period with the first date range you selected. Tap **[!UICONTROL Done]** in the upper right of the screen. The **[!UICONTROL Date Ranges]** field and the Scorecard tiles are updated with the new comparison data from the new ranges you selected.
 
-1. To apply a segment filter to your Scorecard, tap the filter drop-down list and select a segment that has been configured by your curator. [Filters](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) in the app function the same way they do in Analytics Workspace.
+1. To apply a segment filter to your Scorecard, tap the filter drop-down list and select a segment that has been configured by your curator. [Filters](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) in the app function the same way they do in Workspace.
 
     ![Segment filter](assets/segment_filter.png)
 
-1. Get Scorecard updates. If a Scorecard does not include all of the metric or breakdowns that you may be interested in, please contact your Analytics team to have the Scorecard updated. Once updated, you can pull down the card on the screen to refresh it and load the recently-added data.
+1. Get Scorecard updates. If a Scorecard does not include all of the metric or breakdowns that you may be interested in, please contact your Customer Journey Analytics team to have the Scorecard updated. Once updated, you can pull down the card on the screen to refresh it and load the recently-added data.
 
 1. To leave feedback on this app:
 
@@ -142,8 +146,8 @@ Tap the option and provide your email address in the top field and your question
 
 | Term | Definition |
 |--- |--- |
-| Consumer| Executive persona viewing key metrics and insights from Analytics on a mobile device|
-| Curator |Data literate persona who finds and distributes insights from Analytics and configures the Scorecards to be viewed by consumer |
+| Consumer| Executive persona viewing key metrics and insights from Customer Journey Analytics on a mobile device|
+| Curator |Data literate persona who finds and distributes insights from Customer Journey Analytics and configures the Scorecards to be viewed by consumer |
 | Curation | The act of creating or editing a mobile scorecard containing relevant metrics, dimensions and other components for the consumer |
 | Scorecard | A dashboards view containing one or more tiles |
 | Tile | A rendering for a metric within a Scorecard View |

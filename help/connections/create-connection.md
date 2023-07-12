@@ -97,7 +97,7 @@ There are three different dataset types: [!UICONTROL Event] data, [!UICONTROL Pr
 |Dataset Type|Description|Timestamp|Schema|Person ID|
 |---|---|---|---|---|
 | **[!UICONTROL Event]** | Data that represents events in time (for example, web visits, interactions, transactions, POS data, survey data, ad impression data, and so on). For example, this data could be typical clickstream data, with a customer ID or a cookie ID, and a timestamp. With Event data, you have flexibility as to which ID is used as the Person ID. |Is automatically set to the default timestamp field from event-based schemas in [!UICONTROL Experience Platform]. | Any built-in or custom schema that is based on an XDM class with the "Time Series" behavior. Examples include "XDM Experience Event" or "XDM Decision Event." | You can pick which Person ID you want to include. Each dataset schema defined in the Experience Platform can have its own set of one or more identities defined and associated with an Identity Namespace. Any of these identities can be used as the Person ID. Examples include Cookie ID, Stitched ID, User ID, Tracking Code, and so on. |
-| **[!UICONTROL Lookup]** | This data is used to look up values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names. See [B2B use case](/help/use-cases/b2b/b2b.md) for an example. | N/A | Any built-in or custom schema that is based on an XDM class with the "Record" behavior, except for the "XDM Individual Profile" class. | N/A |
+| **[!UICONTROL Lookup]** | You can now add datasets as lookups of fields within all dataset types: Profile, Lookup, and Event datasets (the latter was always supported). This additional capability expands CJA's ability to support complex data models, including B2B CDP. This data is used to look up values or keys found in your Event, Profile, or Lookup data. You can add up to two levels of lookups. (Note that [Derived Fields](/help/data-views/derived-fields/derived-fields.md) cannot be used as matching keys for lookups within Connections.) For example, you might upload lookup data that maps numeric IDs in your event data to product names. See [B2B use case](/help/use-cases/b2b/b2b.md) for an example. | N/A | Any built-in or custom schema that is based on an XDM class with the "Record" behavior, except for the "XDM Individual Profile" class. | N/A |
 | **[!UICONTROL Profile]** | Data that is applied to your persons, users, or customers in the [!UICONTROL Event] data. For example, allows you to upload CRM data about your customers. | N/A | Any built-in or custom schema that is based on the "XDM Individual Profile" class. | You can pick which Person ID you want to include. Each dataset defined in the [!DNL Experience Platform] has its own set of one or more Person IDs defined, for example Cookie ID, Stitched ID, User ID, Tracking Code, and so on.<br>![Person ID](assets/person-id.png)**Note**: If you create a connection that includes datasets with different IDs, the reporting reflects that. To really merge datasets, you need use the same Person ID. |
 
 {style="table-layout:auto"}
@@ -142,7 +142,7 @@ This table shows the two configuration options when edge cases are present and h
 
 {style="table-layout:auto"}
 
-## Calculate the average number of daily events
+## Calculate the average number of daily events {#average-number}
 
 This calculation is done for every dataset in the connection.
 

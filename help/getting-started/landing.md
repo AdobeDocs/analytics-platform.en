@@ -2,7 +2,7 @@
 description: Explains the features of the new landing page .
 title: Customer Journey Analytics landing page
 role: User, Admin
-feature: CJA Basics
+feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 ---
 # Customer Journey Analytics landing page

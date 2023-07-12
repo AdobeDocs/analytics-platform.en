@@ -3,7 +3,7 @@ title: Compare Customer Journey Analytics to BI solutions
 description: Compare Customer Journey Analytics to BI solutions
 role: User
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
 ---
 # Compare Customer Journey Analytics to BI solutions
