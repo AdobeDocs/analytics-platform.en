@@ -4,6 +4,7 @@ title: Integrate Customer AI data with Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
+feature: Platform Integration
 ---
 # Integrate Customer AI data with Adobe Customer Journey Analytics
 

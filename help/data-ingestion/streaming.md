@@ -2,7 +2,7 @@
 title: Ingest and use streaming data
 description: Explain how to ingest and use streaming data in Customer Journey Analytics
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
 ---
 # Ingest and use streaming data

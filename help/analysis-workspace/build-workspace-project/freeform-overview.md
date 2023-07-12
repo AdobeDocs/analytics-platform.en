@@ -2,7 +2,7 @@
 description: Overview of Workspace projects with menu bar and settings
 keywords: Analysis Workspace
 title: Projects overview
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 ---
 # Projects overview

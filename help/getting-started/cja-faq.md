@@ -32,39 +32,40 @@ Customer Journey Analytics includes [Data Prep](https://experienceleague.adobe.c
 +++
 
 
-## 2. Stitching data (Cross-Channel Analytics) {#stitching}
+## 2. Stitching data {#stitching}
 
 +++**Can [!UICONTROL Customer Journey Analytics] "stitch" across devices or across datasets?**
 
-Yes. [!UICONTROL Customer Journey Analytics] has a stitching solution called [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) (CCA). It lets you re-key a dataset's person ID, which enables a seamless combination of multiple datasets.
+Yes. [!UICONTROL Customer Journey Analytics] has [Stitching](../stitching/overview.md) functionality that works across authenticated and unauthenticated events within a dataset. This allows for resolving disparate records to a single stitched ID, for cross-devices analysis at the person level.
+Furthermore, when a common namespace ID (Person ID) is used across datasets within a [Connection](/help/connections/overview.md),  you will be able to run analysis on a seamless combination of multiple datasets, "stitched" at the person level.
 
 +++
 
 
 +++**Is stitching from anonymous behavior to authenticated behavior supported?**
 
-Yes. [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) looks at user data from both authenticated and unauthenticated sessions to generate a stitched ID.
+Yes. [Stitching](../stitching/overview.md) looks at user data from both authenticated and unauthenticated sessions to generate a stitched ID.
 
 +++
 
 
-+++**How does 'replay' work in CCA?**
++++**How does 'replay' work in stitching?**
 
-CCA "replays" data based on unique identifiers it has learned. Replay causes new devices to the connection to become stitched. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html#step-1%3A-live-stitching)
-
-+++
-
-
-+++**How does stitching historical data (backfill) work in CCA?**
-
-When first turned on, Adobe provides a backfill of stitched data that goes back as far as the beginning of the previous month (up to 60 days.) In order to do this backfill, the transient ID must exist in the unstitched data that far back in time. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#enable-cross-channel-analytics)
+Stitching "replays" data based on unique identifiers it has learned. Replay is aiming to stitch initially unauthenticated  events from devices that have been identified in the meantime. [Learn more](../stitching/explained.md)
 
 +++
 
 
-+++**What is the expected behavior for non-stitched profile dataset records?**
++++**How does stitching historical data (backfill) work?**
 
-**Example scenario**: You join 2 datasets in a Customer Journey Analytics connection by using `CRMid` as the Person ID. One is a Web Event dataset with `CRMid` in all records. The other dataset is a CRM profile dataset. 40% of the CRM dataset has `CRMid` present in the Web event dataset. The other 60% is not present in the Web event dataset - do these records appear in reporting in Analysis Workspace?<p> **Answer**: Profile rows that have no events tied to them are stored in Customer Journey Analytics. However, you cannot view them in Analysis Workspace until an event tied to that ID appears.
+When first turned on, Adobe provides a backfill of stitched data that goes back as far as the beginning of the previous month (up to 60 days.) In order to do this backfill, the transient ID must exist in the unstitched data that far back in time. [Learn more](../stitching/explained.md)
+
++++
+
+
++++**What is the expected behavior for non-stitched profile data set records?**
+
+**Example scenario**: You join 2 datasets in a Customer Journey Analytics connection by using `CRMid` as the Person ID. One is a Web Event dataset with `CRMid` in all records. The other dataset is a CRM profile data set. 40% of the CRM data set has `CRMid` present in the Web event data set. The other 60% is not present in the Web event dataset - do these records appear in reporting in Analysis Workspace?<p> **Answer**: Profile rows that have no events tied to them are stored in Customer Journey Analytics. However, you cannot view them in Analysis Workspace until an event tied to that ID appears.
 
 +++
 
@@ -124,15 +125,11 @@ No, you can use any ID, including a hash of a customer ID, which is not PII.
 >[!NOTE]
 >There is no fixed data size in Customer Journey Analytics and thus Adobe cannot commit to a standard ingestion time. We are actively working to reduce these latencies through new updates and ingestion optimization.
 
-+++**What is the expected latency for [!UICONTROL Customer Journey Analytics] data on [!UICONTROL Adobe Experience Platform]?**
-
 <ul><li>Live data or events: Processed and ingested within 90 minutes, once data is available in Adobe Experience Platform. (Batch size > 50 million rows: longer than 90 mins.)</li><li>Small backfills: within 7 days<li>Large backfills: within 30 days</li></ul>
 
 We recently changed how we process data in Customer Journey Analytics:
 
 <ul><li>Any event data with a timestamp less than 24 hours old is streamed in.</li><li>Any event data with a timestamp more than 24 hours old (even if it's in the same batch as newer data) is considered backfill and will be ingested at a lower priority.</li></ul>
-
-+++
 
 ## 5. Set rolling window for [!UICONTROL Connection] data retention {#data-retention}
 
@@ -220,10 +217,10 @@ For example, let's say your contract entitles you to one million rows of data. S
 
 In some cases, you may notice that the total number of events ingested by your connection is different than the number of rows in the dataset in [!UICONTROL Adobe Experience Platform]. In this example, the dataset "B2B Impression" has 7650 rows, but the dataset contains 3830 rows in [!UICONTROL Adobe Experience Platform]. There are several reasons why discrepancies can happen, and the following steps can be taken to diagnose:
 
-1.  Break down this dimension by **[!UICONTROL Platform Dataset ID]** and you will notice two datasets with the same size but different **[!UICONTROL Platform Dataset IDs]**. Each dataset has 3825 records. That means [!UICONTROL Customer Journey Analytics] ignored 5 records due to missing person IDs or missing timestamps:
+1. Break down this dimension by **[!UICONTROL Platform Dataset ID]** and you will notice two datasets with the same size but different **[!UICONTROL Platform Dataset IDs]**. Each dataset has 3825 records. That means [!UICONTROL Customer Journey Analytics] ignored 5 records due to missing person IDs or missing timestamps:
 
     ![breakdown](assets/data-size2.png)
 
-2.  In addition, if we check in [!UICONTROL Adobe Experience Platform], there is no dataset with Id "5f21c12b732044194bffc1d0", hence someone deleted this particular dataset from [!UICONTROL Adobe Experience Platform] when the initial connection was created. Later, it got added to Customer Journey Analytics again, but a different [!UICONTROL Platform Dataset ID] was generated by [!UICONTROL Adobe Experience Platform]. 
+1. In addition, if we check in [!UICONTROL Adobe Experience Platform], there is no dataset with Id "5f21c12b732044194bffc1d0", hence someone deleted this particular dataset from [!UICONTROL Adobe Experience Platform] when the initial connection was created. Later, it got added to Customer Journey Analytics again, but a different [!UICONTROL Platform Dataset ID] was generated by [!UICONTROL Adobe Experience Platform]. 
 
 Read more about the [implications of dataset and connection deletion](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components) in [!UICONTROL Customer Journey Analytics] and [!UICONTROL Adobe Experience Platform].

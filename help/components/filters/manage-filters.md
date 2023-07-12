@@ -2,6 +2,7 @@
 title: Manage filters
 description: lean how to manage filters in Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
+feature: Filters
 ---
 # Manage filters
 

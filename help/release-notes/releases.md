@@ -2,6 +2,7 @@
 description: Explains the continuous feature release strategy for Customer Journey Analytics
 title: Customer Journey Analytics feature releases
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
+feature: Release Notes
 ---
 # Customer Journey Analytics feature releases
 

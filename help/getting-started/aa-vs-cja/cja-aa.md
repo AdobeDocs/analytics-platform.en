@@ -3,7 +3,7 @@ title: Customer Journey Analytics feature support
 description: Customer Journey Analytics features compared with Adobe Analytics features set.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 ---
 # Adobe Customer Journey Analytics feature support
 
@@ -73,7 +73,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 
 | Feature | Notes |
 | --- | --- |
-| Cross-device/cross-channel stitching | Supported for datasets containing identity information directly (also known as "field-based" stitching). Graph-based stitching is not yet supported, but planned. See [Cross-Channel Analytics](/help/cca/overview.md). |
+| Cross-device/cross-channel stitching | Supported for datasets containing identity information directly (also known as "field-based" stitching). Graph-based stitching is not yet supported, but planned. See [Stitching](../../stitching/overview.md). |
 | Bot Filtering | For [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-based datasets, bot filtering is applied. General bot filtering logic for other datasets is not performed by the [!UICONTROL Experience Platform] or Customer Journey Analytics. |
 | Device, Browser, Referrer, Technology dimensions | Supported for [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-based datasets. Refer to [documentation on which Analytics variables are supported via ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en).<p>If you use Experience Platform Web SDK data collection, Device and dimensions based on the Device lookup are not currently supported. Future support is planned. |
 | GeoSegmentation dimensions | All GeoSegmentation/geography collected into Adobe Analytics flows into Customer Journey Analytics through the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Implementations that do not use the Analytics Source Connector, but rely on Experience Platform Web SDK for digital data collection, can use the [Experience Edge Geo Lookup service](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en). |

@@ -1,7 +1,7 @@
 ---
 title: Perform advanced analysis in Customer Journey Analytics
 description: Describes how to do advanced Customer Journey Analytics analysis in Workspace.
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: 17f50618-54eb-4d60-9f5e-62aab9a3c49b
 solution: Customer Journey Analytics
 ---

@@ -1,7 +1,7 @@
 ---
 description: Learn how to create a project in Analysis Workspace
 title: Create projects
-feature: CJA Workspace Basics
+feature: Workspace Basics
 role: User, Admin
 exl-id: f5ea0a1f-5dd6-4c73-b316-33c15ca5443c
 ---
