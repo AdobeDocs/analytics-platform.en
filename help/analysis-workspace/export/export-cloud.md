@@ -34,7 +34,7 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
 ## Export full tables from Analysis Workspace
 
-1. If you haven't already, configure an export account and location, as described in [Configure cloud export locations](/help/components/exports/cloud-export-accounts.md).
+1. If you haven't already, configure an export account and location, as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).
 
 1. In Analysis Workspace, right-click the Freeform table that contains the data that you want to export. 
 
