@@ -1,21 +1,25 @@
 ---
-title: Usage
+title: Usage view
 description: Measure user engagement over time.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
 ---
-# Usage
+# Usage view
 
 {{release-limited-testing}}
 
-The **Usage** view provides valuable insight around the performance of your product or behavior of your users over time. The horizontal axis of this report is a time interval, while the vertical axis measures your desired events. Use cases for this view type include:
+The **Usage** view provides valuable insight around the performance of your product or behavior of your users over time. The horizontal axis of this report is a time interval, while the vertical axis measures your desired events.
+
+![Usage](../assets/usage.png)
+
+## Use cases
+
+Use cases for this view type include:
 
 * **Evaluate product performance**: Trends allow you to assess the overall performance of your product over a given period. By analyzing metrics such as user engagement, adoption, or conversion rates, you can identify if the performance of your product is improving, stagnating, or declining.
 * **Feature adoption**: Trends allow you to understand how users adopt new features or updates that you release. You can determine which features are popular and which features require improvement. This information allows you to make data-driven decisions around what features to prioritize your development efforts around.
 * **User behavior**: Trends can provide insight into user behavior over time. By examining specific actions that users take, you can identify patterns where users might drop off. You can combine insights from this view with [Friction](friction.md) for even more insight around behavior.
 * **A/B testing and experimentation**: If you run A/B tests within your product, you can use Trends to gauge which tests are the most successful over time.
-
-![Usage](../assets/usage.png)
 
 ## Query rail
 

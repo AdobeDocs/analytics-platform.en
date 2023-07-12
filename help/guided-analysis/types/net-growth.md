@@ -1,9 +1,9 @@
 ---
-title: Net growth
+title: Net growth view
 description: Are you gaining or losing users?
 feature: Guided Analysis
 ---
-# Net growth
+# Net growth view
 
 {{release-limited-testing}}
 
@@ -22,13 +22,15 @@ Similar to the [Active](active.md) view type, users are defined as the following
 * **Dormant**: The user was active in the immediately previous period, but is not active in the current period. Dormant users do not count toward the total number of active users.
 * Note: Repeat users are not factored into this calculation, as they do not represent any gain or loss of users.
 
+![Net growth](../assets/net-growth.png)
+
+## Use cases
+
 Use cases for this view type include:
 
 * **Performance evaluation**: Allows you to assess the overall performance of your product in terms of acquiring new users. By tracking growth trends, you can better understand if your product is attracting and retaining users at a desired pace.
 * **User acquisition analysis**: Allows you to assess the effectiveness of your user acquisition strategies. Analyzing the sources of user growth, such as search engines, campaigns, or other marketing channels, allows you to identify the most significant sources of growth so you can allocate resources accordingly.
 * **Churn analysis**: Net growth includes attrition in its formula (dormant users). You can assess the overall health of your user base over time. If net growth is consistently below `1`, it indicates a high amount of attrition which could prompt implementing retention strategies.
-
-![Net growth](../assets/net-growth.png)
 
 ## Query rail
 

@@ -1,8 +1,8 @@
 ---
-title: Release
+title: Release view
 description: Compare performance across equal periods pre- and post-release.
 feature: Guided Analysis
 ---
-# Release
+# Release view
 
 Content coming soon!
