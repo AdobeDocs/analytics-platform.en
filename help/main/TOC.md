@@ -191,6 +191,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Net growth](../guided-analysis/types/net-growth.md)
     + Trends {#trends}
       + [Usage](../guided-analysis/types/usage.md)
+    + [Industry use cases](../guided-analysis/industry-use-cases.md)
     + [FAQ](../guided-analysis/faq.md)
 
 + Components {#cja-components}
