@@ -1,10 +1,10 @@
 ---
-title: Active
+title: Active view
 description: Identify who is new, retained, returning, or dormant.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
 ---
-# Active
+# Active view
 
 {{release-limited-testing}}
 

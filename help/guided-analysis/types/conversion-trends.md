@@ -1,9 +1,9 @@
 ---
-title: Conversion trends
+title: Conversion trends view
 description: Track changes in conversion rate over time.
 feature: Guided Analysis
 ---
-# Conversion trends
+# Conversion trends view
 
 {{release-limited-testing}}
 

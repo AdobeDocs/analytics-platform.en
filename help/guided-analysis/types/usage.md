@@ -1,10 +1,10 @@
 ---
-title: Usage
+title: Usage view
 description: Measure user engagement over time.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
 ---
-# Usage
+# Usage view
 
 {{release-limited-testing}}
 

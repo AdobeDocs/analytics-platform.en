@@ -1,9 +1,9 @@
 ---
-title: Net growth
+title: Net growth view
 description: Are you gaining or losing users?
 feature: Guided Analysis
 ---
-# Net growth
+# Net growth view
 
 {{release-limited-testing}}
 
