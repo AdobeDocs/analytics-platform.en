@@ -23,7 +23,7 @@ Use cases for this view type include:
 * **Campaign assessment**: Viewing a specific campaign can help you understand not only how much traffic it generated, but also how well the campaign helped users remain engaged.
 * **User lifecycle analysis**: Analyzing active user growth throughout the user lifecycle can help identify specific stages where user engagement dips. For example, if there there is a high ratio of dormant users for those who are in an onboarding stage, it can indicate usability issues or a need for better in-product guidance.
 
-[Screenshot of user growth]
+![Active](../assets/active.png)
 
 ## Query rail
 
@@ -42,6 +42,8 @@ This view type offers the following chart settings. You can adjust the chart set
 ## Apply time comparison
 
 {{apply-time-comparison}}
+
+![Active time compare](../assets/active-compare.png)
 
 ## Date range
 

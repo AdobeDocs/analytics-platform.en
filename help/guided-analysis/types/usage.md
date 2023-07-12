@@ -15,7 +15,7 @@ The **Usage** view type provides valuable insight around the performance of your
 * **User behavior**: Trends can provide insight into user behavior over time. By examining specific actions that users take, you can identify patterns where users might drop off. You can combine insights from this view type with [Friction](friction.md) for even more insight around behavior.
 * **A/B testing and experimentation**: If you run A/B tests within your product, you can use Trends to gauge which tests are the most successful over time.
 
-[Screenshot of trends]
+![Usage](../assets/usage.png)
 
 ## Query rail
 
@@ -34,6 +34,8 @@ Trends offer the following chart settings. You can adjust the chart settings usi
 ## Apply time comparison
 
 {{apply-time-comparison}}
+
+![Usage time compare](../assets/usage-compare.png)
 
 ## Date range
 
