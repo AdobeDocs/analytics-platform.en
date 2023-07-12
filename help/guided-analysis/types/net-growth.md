@@ -29,7 +29,7 @@ Use cases for this view type include:
 * **Performance evaluation**: Allows you to assess the overall performance of your product in terms of acquiring new users. By tracking growth trends, you can better understand if your product is attracting and retaining users at a desired pace.
 * **Churn analysis**: Net growth takes includes attrition in its formula (dormant users). You can assess the overall health of your user base over time. If net growth is consistently below `1`, it indications a high amount of attrition, prompting you to investigate reasons behind it and implement retention strategies.
 
-[Screenshot of user growth]
+![Net growth](../assets/net-growth.png)
 
 ## Query rail
 

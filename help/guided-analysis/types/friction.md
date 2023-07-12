@@ -15,7 +15,7 @@ The **Friction** view type provides a visual representation of a critical user j
 * **Feature adoption and engagement**: Understand how users interact with specific features in your product. By analyzing the progression of users through feature-related steps, you can assess feature adoption rates and identify areas where users might abandon or underuse certain features. You can then use this information to focus on feature or UI improvements to increase adoption rates.
 * **Campaign evaluation**: Measure the effectiveness of marketing campaigns. You can create a segment that focuses on users that touched a given campaign, and compare their conversion process with other campaigns or within your product overall.
 
-[Screenshot of funnel]
+![Friction](../assets/friction.png)
 
 ## Query rail
 
@@ -35,6 +35,8 @@ Funnel offers the following chart settings. You can adjust the chart settings us
 ## Apply time comparison
 
 {{apply-time-comparison}}
+
+![Friction time compare](../assets/friction-compare.png)
 
 ## Date range
 
