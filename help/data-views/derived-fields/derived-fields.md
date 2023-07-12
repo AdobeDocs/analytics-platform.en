@@ -761,7 +761,7 @@ You collect survey responses into a delimited list in a single dimension. You wo
 
 ### Derived field {#split-u1-derivedfield}
 
-You create a  `Satisfaction Responses` derived field. You use the [!UICONTROL SPLIT] function to define a rule to convert the values from the [!UICONTROL Responses] field from the left using `,` as the delimiter. *Need more information to complete this section*.
+You create a  `Satisfaction Responses` derived field. You use the [!UICONTROL SPLIT] function to define a rule to convert the values from the [!UICONTROL Responses] field to an array using `,` as the delimiter.
 
 ### Data after {#split-uc1-dataafter}
 
@@ -793,7 +793,7 @@ You collect survey responses into a delimited list in a single dimension. You wo
 
 ### Derived field {#split-u2-derivedfield}
 
-You create a  `First Response` derived field. You use the [!UICONTROL SPLIT] function to define a rule to convert the values from the [!UICONTROL Responses] field to an array using `,` as the delimiter. *Need more information to complete this section*.
+You create a  `First Response` derived field. You use the [!UICONTROL SPLIT] function to define a rule to take the first value from the [!UICONTROL Responses] field from the left of the response `,` as the delimiter. You create a `Second Response` derived field to take the last value  from the [!UICONTROL Responses] field by selecting From the right, 1 as the Delimiter and 1 as the Index.
 
 ### Data after {#split-uc2-dataafter}
 
