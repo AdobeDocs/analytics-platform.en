@@ -7,13 +7,17 @@ feature: Guided Analysis
 
 {{release-limited-testing}}
 
-The **Conversion trends** view provides a trended visualization around conversion rates over time. The horizontal axis is a time interval, while the vertical axis represents conversion rate. Use cases for this view type include:
+The **Conversion trends** view provides a trended visualization around conversion rates over time. The horizontal axis is a time interval, while the vertical axis represents conversion rate.
+
+![Conversion trends](../assets/conversion-trends.png)
+
+## Use cases
+
+Use cases for this view type include:
 
 * **Track optimization efforts**: After identifying key bottlenecks that you want to improve using [Friction](friction.md), you can use this view to track how those optimizations impact conversion rate over time.
 * **A/B testing evaluation**: Evaluate the effectiveness of A/B tests or experiments conducted within the context of a funnel. By comparing conversion rates between different variations, you can easily determine which tests provide higher conversion rates, leading to data-driven decisions around which variations to implement permanently.
 * **Campaign evaluation over time**: Measure the effectiveness of marketing campaigns over time. You can create a segment that focuses on users that touched a given campaign, and compare their conversion rates with other campaigns. You can also compare current conversion rates with similar campaigns that were run in the past.
-
-![Conversion trends](../assets/conversion-trends.png)
 
 ## Query rail
 

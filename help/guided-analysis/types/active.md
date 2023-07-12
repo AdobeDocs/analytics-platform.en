@@ -17,13 +17,15 @@ The **Active** view provides insights around the growth and acquisition of users
 
 All active users (new + repeat + return) appear as a shade of teal above the horizontal axis, while all dormant users appear in orange below the horizontal axis.
 
+![Active](../assets/active.png)
+
+## Use cases
+
 Use cases for this view type include:
 
 * **User retention and churn:** Provides a clear visualization around periods of high or low user retention. Recognizing these periods of high or low retention can help you make product decisions to encourage high retention or help minimize churn.
 * **Campaign assessment**: Viewing a specific campaign can help you understand not only how much traffic it generated, but also how well the campaign helped users remain engaged.
 * **User lifecycle analysis**: Analyzing active user growth throughout the user lifecycle can help identify specific stages where user engagement dips. For example, if there is a high ratio of dormant users for individuals in an onboarding stage, it can indicate usability issues or a need for better in-product guidance.
-
-![Active](../assets/active.png)
 
 ## Query rail
 
