@@ -179,7 +179,7 @@ Combines two or more fields, derived fields, or user-entered values into a singl
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <p>String</p> | <ul><li>For each [!UICONTROL Value]:<ul><li>Rule</li><li>Standard field</li><li>Field</li><li>User-entered input</li></ul></li><li>For each [!UICONTROL Delimiter]:<ul><li>User-entered input</li></ul></li> </ul> | <p>N/A</p>| <p>2 functions per derived field</p> | <p>New derived field</p> |
+| <ul><li>String</li></ul> | <ul><li>For each [!UICONTROL Value]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>User-entered input</li></ul></li><li>For each [!UICONTROL Delimiter]:<ul><li>User-entered input</li></ul></li> </ul> | <p>N/A</p>| <p>2 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -257,7 +257,7 @@ Applies conditionals, based on defined criteria from one or more fields. These c
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>For each [!UICONTROL If], [!UICONTROL Else If] container:</p><ul><li>[!UICONTROL Value]</li><ul><li>Rule</li><li>Standard field</li><li>Field</li></ul><li>[!UICONTROL Criterion] (see included operators, based on selected value type)</li></ul></li><li>For each [!UICONTROL Then set value to], [!UICONTROL Otherwise set value to]:</p><ul><li>[!UICONTROL Value]</li><ul><li>Rule</li><li>Standard field</li><li>Field</li></ul></ul></li></ul> | <p>Strings</p><ul><li>Equals</li><li>Equals any term</li><li>Contains the phrase</li><li>Contains any term</li><li>Contains all terms</li><li>Starts with</li><li>Starts with any term</li><li>Ends with</li><li>Ends with any term</li><li>Does not equal</li><li>Does not equal any term</li><li>Does not contain the phrase</li><li>Does not contain any term</li><li>Does not contain all terms</li><li>Does not start with</li><li>Does not start with any term</li><li>Does not end with</li><li>Does not end with any term</li><li>Is set</li><li>Is not set</li></ul><p>Numeric</p><ul><li>Equals</li><li>Does not equal</li><li>Is greater than</li><li>Is greater than or equal to</li><li>Is less than</li><li>Is less than or equal to</li><li>Is set</li><li>Is not set</li></ul><p>Dates</p><ul><li>Equals</li><li>Does not equal</li><li>Is later than</li><li>Is later than or equal to</li><li>Is before</li><li>Is before or equal to</li><li>Is set</li><li>Is not set</li></ul> | <ul><li>5 functions per derived field</li><li>200 operators per derived field. An example of one single operator is 'Referring Domain contains google'. </li></ul> |<p>New derived field</p> |
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>For each [!UICONTROL If], [!UICONTROL Else If] container:</p><ul><li>[!UICONTROL Value]</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Criterion] (see included operators, based on selected value type)</li></ul></li><li>For each [!UICONTROL Then set value to], [!UICONTROL Otherwise set value to]:</p><ul><li>[!UICONTROL Value]</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></ul></li></ul> | <p>Strings</p><ul><li>Equals</li><li>Equals any term</li><li>Contains the phrase</li><li>Contains any term</li><li>Contains all terms</li><li>Starts with</li><li>Starts with any term</li><li>Ends with</li><li>Ends with any term</li><li>Does not equal</li><li>Does not equal any term</li><li>Does not contain the phrase</li><li>Does not contain any term</li><li>Does not contain all terms</li><li>Does not start with</li><li>Does not start with any term</li><li>Does not end with</li><li>Does not end with any term</li><li>Is set</li><li>Is not set</li></ul><p>Numeric</p><ul><li>Equals</li><li>Does not equal</li><li>Is greater than</li><li>Is greater than or equal to</li><li>Is less than</li><li>Is less than or equal to</li><li>Is set</li><li>Is not set</li></ul><p>Dates</p><ul><li>Equals</li><li>Does not equal</li><li>Is later than</li><li>Is later than or equal to</li><li>Is before</li><li>Is before or equal to</li><li>Is set</li><li>Is not set</li></ul> | <ul><li>5 functions per derived field</li><li>200 operators per derived field. An example of one single operator is 'Referring Domain contains google'. </li></ul> |<p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -490,7 +490,7 @@ Finds all values in a selected field and replaces those values with a different 
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <p>String</p> |<ul><li>For criteria:<ul><li>[!UICONTROL Value]<ul><li>Rule</li><li>Standard field</li><li>Field</li></ul></li></ul></li><li>For each [!UICONTROL Find all], [!UICONTROL and replace all with]:<ul><li>[!UICONTROL Value]</li><ul><li>User-entered input</li></ul></li></ul></ul> | <p>Strings</p><ul><li>[!UICONTROL Find all], [!UICONTROL and replace all with]</li></ul> | <p>5 functions per derived field</p> | <p>New derived field</p> |
+| <ul><li>String</li></ul> |<ul><li>For criteria:<ul><li>[!UICONTROL Value]<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li></ul></li><li>For each [!UICONTROL Find all], [!UICONTROL and replace all with]:<ul><li>[!UICONTROL Value]</li><ul><li>User-entered input</li></ul></li></ul></ul> | <p>Strings</p><ul><li>[!UICONTROL Find all], [!UICONTROL and replace all with]</li></ul> | <p>5 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -552,7 +552,7 @@ You define an `Email Marketing (updated)` derived field. You use the [!UICONTROL
 
 ### Lookup
 
-Defines a set of lookup values that are replaced by corresponding values.
+Defines a set of lookup values that are replaced by corresponding values in a new derived field.
 
 +++ Details
 
@@ -561,7 +561,7 @@ Defines a set of lookup values that are replaced by corresponding values.
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>For [!UICONTROL Field to apply lookup]:<ul><li>Rule</li><li>Standard field</li><li>Field</li></ul></li><li>For [!UICONTROL When value equals] and [!UICONTROL Replace values with]:</p><ul><li>User-entered input</li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to apply lookup]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>[!UICONTROL When value equals] and [!UICONTROL Replace values with]:</p><ul><li>User-entered input</li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -682,13 +682,13 @@ Merges values from two different fields into a new derived field.
 
 | Input Data Type | Input | Included Operators | Limit | Output |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>For [!UICONTROL Field]:</li><ul><li>Rule</li><li>Standard field</li><li>Field</li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
 ## Use case {#mergefields-uc1}
 
-You would like to create a new dimentsion made up from the page name field and the call reason field with the intent of analyzing the journey across channels.
+You would like to create a new dimension made up from the page name field and the call reason field with the intent of analyzing the journey across channels.
 
 ### Data before {#mergefields-uc-databefore}
 
@@ -710,7 +710,9 @@ You would like to create a new dimentsion made up from the page name field and t
 
 ### Derived field {#mergefield-uc-derivedfield}
 
-You define a  `Cross Channel Interactions` derived field. You use the [!UICONTROL MERGE FIELDS] function to define a rule to merge the values from the [!UICONTROL Page Name] field and [!UICONTROL Call Reason] field and store that in the new derived field.
+You define a `Cross Channel Interactions` derived field. You use the [!UICONTROL MERGE FIELDS] function to define a rule to merge the values from the [!UICONTROL Page Name] field and [!UICONTROL Call Reason] field and store that in the new derived field.
+
+![Merge Fields](assets/merge-fields.png)
 
 ### Data after {#mergefields-uc-dataafter}
 
@@ -727,11 +729,111 @@ You define a  `Cross Channel Interactions` derived field. You use the [!UICONTRO
 
 +++
 
+
+<!-- REGEX REPLACE -->
+
+### Regex Replace
+
+Replaces a value from a field using a regular expression into a new derived field.
+
++++ Details
+
+{{release-limited-testing-section}}
+
+## Specification {#regex-replace-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></ul><ul><li>[!UICONTROL Regex]:</li><ul><li>String</li></ul></li><li>[!UICONTROL Output Format]:<ul><li>String</li></ul></ul><ul><li>Case sensitive</li><ul><li>Boolean</li></ul></li></ul></li> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+## Use case {#regex-replace-uc}
+
+You would like to grab a potion of a URL and use that as a unique page identifier to analyze traffic. You will use `[^/]+(?=/$|$)` for the regular expression to capture the end of the URL and `$1` as the output pattern.
+
+### Data before {#regex-replace-uc-databefore}
+
+| Page URL|
+|---|
+| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
+
+{style="table-layout:auto"}
+
+### Derived field {#regex-replace-uc-derivedfield}
+
+You create a `Page Identifier` derived field. You use the [!UICONTROL REGEX REPLACE] function to define a rule to replace value of the [!UICONTROL Referring URL] field using a [!UICONTROL Regex] of `[^/]+(?=/$|$)` and [!UICONTROL Output format] of `$1`.
+
+![Regex Replace](assets/regex-replace.png)
+
+
+### Data after {#regex-replace-uc-dataafter}
+
+| Page Identifier |
+|---|
+| adobe-analytics-benefits.html |
+| adobe-analytics.html |
+| customer-journey-analytics.html |
+| adobe-experience-platform.html |
+
+## More Information
+
+Customer Journey Analytics uses a subset of the Perl regex syntax. The following expressions are supported:
+
+| Expression | Description |
+| --- | --- |
+| `a` | A single character `a`. |
+| `a\|b` | A single character `a` or `b`. |
+| `[abc]` | A single character `a`, `b`, or `c`. |
+| `[^abc]` | Any single character except `a`, `b`, or `c`. |
+| `[a-z]` | Any single character in the range of `a`-`z`. |
+| `[a-zA-Z0-9]` | Any single character in the range of `a`-`z`, `A`-`Z`, or digits `0`-`9`. |
+| `^` | Matches the beginning of the line. |
+| `$` | Matches the end of the line. |
+| `\A` | Start of string. |
+| `\z` | End of string. |
+| `.` | Matches any character. |
+| `\s` | Any whitespace character. |
+| `\S` | Any non-whitespace character. |
+| `\d` | Any digit. |
+| `\D` | Any non-digit. |
+| `\w` | Any letter, number, or underscore. |
+| `\W` | Any non-word character. |
+| `\b` | Any word boundary. |
+| `\B` | Any character that is not a word boundary. |
+| `\<` | Start of word. |
+| `\>` | End of word. |
+| `(...)` | Capture everything enclosed. |
+| `(?:...)` | Non-marking capture. Prevents the match from being referenced in the output string. |
+| `a?` | Zero or one of `a`. |
+| `a*` | Zero or more of `a`. |
+| `a+` | One ore more of `a`. |
+| `a{3}` | Exactly 3 of `a`. |
+| `a{3,}` | 3 or more of `a`. |
+| `a{3,6}` | Between 3 and 6 of `a`. |
+
+You can use these sequences in the [!UICONTROL Output format] any number of times and in any order to achieve the desired string output.
+
+| Output placeholder sequence | Description |
+| --- | --- |
+| `$&` | Outputs what matched the whole expression. |
+| `$n` | Outputs what matched the nth sub expression. For example, `$1` outputs the first sub expression. |
+| ``$` `` | Outputs the text between the end of the last match found (or the start of the text if no previous match was found), and the start of the current match. |
+| `$+` | Outputs what matched the last marked sub expression in the regular expression. |
+| `$$` | Outputs the string character `"$"`. |
+
+{style="table-layout:auto"}
+
++++
+
 <!-- SPLIT -->
 
 ### Split
 
-Splits values into a new derived field.
+Splits a value from a field into a new derived field.
 
 +++ Details
 
@@ -741,17 +843,17 @@ Splits values into a new derived field.
 
 | Input Data Type | Input | Included Operators | Limit | Output |
 |---|---|---|---|---|
-| <ul><li>String</li></ul> | <ul><li>For [!UICONTROL Field]:</li><ul><li>Rule</li><li>Standard field</li><li>Field</li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
+| <ul><li>String</li><li>Numeric</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></ul><ul><li>[!UICONTROL Method]:</li><ul><li>From the left</li><li>From the right</li><li>Convert to array</li></ul></li><li>For Delimiter:<ul><li>String</li></ul><li>For Index:<ul><li>Numeric</li></ul></li> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
 ## Use case 1 {#split-uc1}
 
-You collect survey responses into a delimited list in a single dimension. You would like each value in the list to be a unique value in the responses report.
+You collect voice app responses into a delimited list in a single dimension. You would like each value in the list to be a unique value in the responses report.
 
 ### Data before {#split-uc1-databefore}
 
-| Responses | Events |
+| Voice App Responses | Events |
 |---|--:|
 | it was great,made perfect sense,will recommed to others | 1 |
 | it was great,somewhat confusing,will recommend to others | 1 |
@@ -761,11 +863,13 @@ You collect survey responses into a delimited list in a single dimension. You wo
 
 ### Derived field {#split-u1-derivedfield}
 
-You create a  `Satisfaction Responses` derived field. You use the [!UICONTROL SPLIT] function to define a rule to convert the values from the [!UICONTROL Responses] field to an array using `,` as the delimiter.
+You create a `Responses` derived field. You use the [!UICONTROL SPLIT] function to define a rule to use the  [!UICONTROL Convert to array] method to convert the values from the [!UICONTROL Voice App Response] field using `,` as the [!UICONTROL Delimiter].
+
+![Split rule](assets/split-1.png)
 
 ### Data after {#split-uc1-dataafter}
 
-| Satisfaction Responses | Events |
+| Responses | Events |
 |---|--:|
 | it was great | 2 |
 | will recommend to others | 2 |
@@ -779,7 +883,7 @@ You create a  `Satisfaction Responses` derived field. You use the [!UICONTROL SP
 
 ## Use case 2 {#split-uc2}
 
-You collect survey responses into a delimited list in a single dimension. You would like the responses from the first value in the list into its own dimension. You would like to put the last value in the list into its own dimension.
+You collect voice app responses into a delimited list in a single dimension. You would like the responses from the first value in the list into its own dimension. You would like to put the last value in the list into its own dimension.
 
 ### Data before {#split-uc2-databefore}
 
@@ -793,7 +897,13 @@ You collect survey responses into a delimited list in a single dimension. You wo
 
 ### Derived field {#split-u2-derivedfield}
 
-You create a  `First Response` derived field. You use the [!UICONTROL SPLIT] function to define a rule to take the first value from the [!UICONTROL Responses] field from the left of the response `,` as the delimiter. You create a `Second Response` derived field to take the last value  from the [!UICONTROL Responses] field by selecting From the right, 1 as the Delimiter and 1 as the Index.
+You create a  `First Response` derived field. You use the [!UICONTROL SPLIT] function to define a rule to take the first value from the [!UICONTROL Responses] field from the left of the response `,` as the delimiter. 
+
+![Split first value](assets/split-2.png)
+
+You create a `Second Response` derived field to take the last value  from the [!UICONTROL Responses] field by selecting From the right, 1 as the Delimiter and 1 as the Index.
+
+![Split last value](assets/split-3.png)
 
 ### Data after {#split-uc2-dataafter}
 
@@ -826,7 +936,7 @@ Parses out different parts of a URL including protocol, host, path, or query par
 
 | Input Data Type | Input | Included Operators | Limit | Output |
 |---|---|---|---|---|
-| <ul><li>String</li></ul> | <ul><li>For [!UICONTROL Field]:</li><ul><li>Rule</li><li>Standard field</li><li>Field</li></ul><li>For [!UICONTROL Option]:<ul><li>[!UICONTROL Get protocol]</li><li>[!UICONTROL Get host]</li><li>[!UICONTROL Get path]</li><li>[!UICONTROL Get query string value]<ul><li>[!UICONTROL Query parameter]:<ul><li>User-entered input</li></ul></li></ul></li><li>[!UICONTROL Get hash value]</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
+| <ul><li>String</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Option]:<ul><li>[!UICONTROL Get protocol]</li><li>[!UICONTROL Get host]</li><li>[!UICONTROL Get path]</li><li>[!UICONTROL Get query string value]<ul><li>[!UICONTROL Query parameter]:<ul><li>User-entered input</li></ul></li></ul></li><li>[!UICONTROL Get hash value]</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
