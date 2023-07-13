@@ -29,10 +29,35 @@ Guided analysis uses terms that are more frequently used in the product analytic
 | Guided analysis term | Analysis Workspace term |
 | --- | --- |
 | Event | Metric |
+| Users | People |
 | Property | Dimension |
 | Value | Dimension item |
 | Segment | Filter |
 
 {style="table-layout:auto"}
+
++++
+
++++**What are some differences around how Analysis Workspace and Guided analysis approach analysis?**
+
+While Analysis Workspace and Guided analysis use the same underlying data, the way that each tool enables you to form queries of that data is different.
+
+* **Analysis Workspace is a dimension-centered experience.** Tables typically consist of dimension item rows, while columns are typically metrics. You can apply filters to both rows and columns to obtain the desired data.
+
+* **Guided analysis is an event-centered experience.** Visualizations focus on events, using dimensions and filters to complement that data.
+
+![Structure](assets/structure.png)
+
+Consider the following example where you focus on data around your website's home page. Teams ask similar questions, but the analysis approach can be different.
+
+* A typical dimension-centered Analysis Workspace approach would be, "How many page views has the home page received?"
+
+   ![Dimension centered](assets/dimension-centered.png)
+
+* A typical event-centered Guided analysis approach would be, "How many users have viewed the home page?"
+
+   ![Event centered](assets/event-centered.png)
+
+These statements illustrate two different methods to achieve the same report, depending on your event management strategy.
 
 +++

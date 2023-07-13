@@ -1,0 +1,49 @@
+---
+title: Usage view
+description: Measure user engagement over time.
+exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
+feature: Guided Analysis
+---
+# Usage view
+
+{{release-limited-testing}}
+
+The **Usage** view provides valuable insight around the performance of your product or behavior of your users over time. The horizontal axis of this report is a time interval, while the vertical axis measures your desired events.
+
+![Usage](../assets/usage.png)
+
+## Use cases
+
+Use cases for this view type include:
+
+* **Evaluate product performance**: Trends allow you to assess the overall performance of your product over a given period. By analyzing metrics such as user engagement, adoption, or conversion rates, you can identify if the performance of your product is improving, stagnating, or declining.
+* **Feature adoption**: Trends allow you to understand how users adopt new features or updates that you release. You can determine which features are popular and which features require improvement. This information allows you to make data-driven decisions around what features to prioritize your development efforts around.
+* **User behavior**: Trends can provide insight into user behavior over time. By examining specific actions that users take, you can identify patterns where users might drop off. You can combine insights from this view with [Friction](friction.md) for even more insight around behavior.
+* **A/B testing and experimentation**: If you run A/B tests within your product, you can use Trends to gauge which tests are the most successful over time.
+
+## Query rail
+
+The query rail allows you to configure the following components:
+
+* **Events**: The events that you want to measure. Each selected event is represented as a colored line or set of bars, depending on chart type. A row representing the trended event is added to the table. You can include up to five events.
+* **People**: The segments that you want to measure. Each selected segment doubles the number of lines in the chart and rows in the table. You can include up to five segments.
+
+## Chart settings
+
+The Usage view offers the following chart settings, which can be adjusted in the menu above the chart:
+
+* **Metric**: The metric that you want to measure. Options include Events, Sessions, Users, Events per session, and Events per user.
+* **Chart type**: The type of visualization that you want to use. Options include Line, Bar, Stacked bar, and Stacked area.
+
+## Apply time comparison
+
+{{apply-time-comparison}}
+
+![Usage time compare](../assets/usage-compare.png)
+
+## Date range
+
+The desired date range for your analysis. There are two components to this setting:
+
+* **Interval**: The date granularity that you want to view trended data by. Valid options include Hourly, Daily, Weekly, Monthly, and Quarterly. The same date range can have different intervals which affect the number of data points in the chart and the number of columns in the table. For example, viewing an analysis spanning three days with daily granularity would show only three data points, while an analysis spanning three days with hourly granularity would show 72 data points.
+* **Date**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
