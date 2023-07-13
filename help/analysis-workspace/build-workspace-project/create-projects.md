@@ -13,7 +13,7 @@ For general information about how to get started using Analysis Workspace, see [
 
 The following sections describe how to create a project and start adding the key building blocks for any Analysis Workspace project: panels, visualizations, and components.
 
-## Create a project from a blank project or a template
+## Begin creating a project
 
 1. In Adobe Analytics, select [!UICONTROL **Workspace**].
 
