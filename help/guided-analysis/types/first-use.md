@@ -37,7 +37,7 @@ The First use view offers the following chart settings, which can be adjusted in
 
 ## Date range
 
-Date selection in impact reports operate differently than other analysis types, since the report revolves around a given event being touched for the first time (specified in the query rail). The following options are available:
+Date selections in impact reports operate differently than other analysis types, since the report revolves around a given event being touched for the first time (specified in the query rail). The following options are available:
 
 * **Interval**: The date granularity that you want to view trended data by. Valid options include [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly], and [!UICONTROL Quarterly]. Changing the interval affects the options available for the Before and after period.
 * **Before and after period**: The amount of time to analyze before and after the touched event specified in the query rail. Available options depend on the [!UICONTROL Interval] selection.
