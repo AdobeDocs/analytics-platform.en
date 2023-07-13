@@ -6,9 +6,59 @@ feature: Components
 ---
 # Manage export logs
 
-After you export a full table as described in [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md), the export logs are available on the [!UICONTROL Logs] tab on the [!UICONTROL Exports] page. 
+Export logs provide details about each export, and are generated any time Analysis Workspace data is exported to the cloud. (For information about how data can be exported to the cloud, see [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md).) 
 
-Export logs provide details about each export. There are various options available for managing export logs.
+You can view details about each export logs, filter and search for logs, and manage logs.
+
+## Understand available columns
+
+Various columns of information are displayed for each log.
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. Select the [!UICONTROL **Logs**] tab.
+
+   The following columns are available:
+
+   |Available column | Description |
+   |---------|----------|
+   | A1 | B1 | 
+   | A2 | B2 | 
+   | A3 | B3 |
+
+## Filter and search for logs
+
+To find information you need, you can either filter the list of logs or search for a log.
+
+### Filter the list of logs
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. Select the [!UICONTROL **Logs**] tab.
+
+1. Select the **Filter** icon.
+
+   ![Filter information](assets/export-log-filters.png)
+
+   You can filter by the following criteria:
+
+   |Filter | Description |
+   |---------|----------|
+   | Account | The account type that the export is associated with, such as Google Cloud Platform, Azure SAS, or Azure RBAC. | 
+   | Status | The status of the export. The following statuses are available: <ul><li>Pending</li><li>Completed</li><li>Failed</li></ul> | 
+
+### Search for logs
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. Select the [!UICONTROL **Logs**] tab.
+
+1. In the search tab, begin typing any information associated with the log you're searching for. You can search for data from any column available in the table. 
+
+
+## Manage logs
+
+There are various options available for managing export logs.
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
@@ -20,7 +70,7 @@ Export logs provide details about each export. There are various options availab
 
    |Option | Function | 
    |---------|----------|
-   | [!UICONTROL **Retry**] | Re-runs the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. </br>This option is not available when selecting multiple exports. | 
+   | [!UICONTROL **Retry**] | Re-runs the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. </br>This option is not available when selecting multiple logs. | 
    | [!UICONTROL **Create ticket**] | Opens a dialog that allows you to specify details about any issues you encountered in the selected logs. Selecting [!UICONTROL **Submit**] in the dialog creates a ticket for Adobe Customer Care that includes your feedback along with basic information about the selected logs. Adobe Customer Care responds by email to any tickets you create. | 
-   | [!UICONTROL **Open project**] | Opens the project that contains the data associated with the selected log. </br>This option is not available when selecting multiple exports. | 
+   | [!UICONTROL **Open project**] | Opens the project that contains the data associated with the selected log. </br>This option is not available when selecting multiple logs. | 
    | [!UICONTROL **Delete**] | Deletes the selected logs. This does not delete the export associated with the selected logs. | 
