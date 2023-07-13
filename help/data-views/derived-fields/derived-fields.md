@@ -25,7 +25,7 @@ Example use cases are:
 
 When you create or edit a derived field, you use the derived field interface.
 
-![Derived field dialog](assets/derived-field-dialog.png)
+![Screenshot of the Derived field dialog](assets/derived-field-dialog.png)
 
 
 |  | Name | Description |
@@ -50,7 +50,7 @@ Your derived field dialog is populated with rules (and functions) required or us
 
 When you define a rule in the rule builder, you use the rule interface.
 
-![Rule Interface](assets/rule-interface.png)
+![Screenshot of the Derived Field Rule Interface](assets/rule-interface.png)
 
 |  | Name | Description |
 |---------|----------|--------|
@@ -133,7 +133,7 @@ This template is configured to use the [Url Parse](#dnl-url-parse) and [Case Whe
 
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
-![Marketing channel template rule builder](assets/marketing-channel-template.png)
+![Screenshot of the Marketing channel template rule builder](assets/marketing-channel-template.png)
 
 +++
 
@@ -229,7 +229,7 @@ The desired report should look like:
 
 You define a new [!UICONTROL Origin - Destination] derived field. You use the [!UICONTROL CONCATENATE] function to define a rule to concatenate the [!UICONTROL Original] and [!UICONTROL Destination] fields using the `-` [!UICONTROL Delimiter].
 
-![Concatenate rule](assets/concatenate.png)
+![Screenshot of the Concatenate rule](assets/concatenate.png)
 
 ### Data after {#concatenate-dataafter}
 
@@ -305,7 +305,7 @@ You define a new `Marketing Channel` derived field. You use the [!UICONTROL CASE
 
 Note the usage of the function [!UICONTROL URL PARSE] to define rules to fetch the values for `Page Url` and `Referring Url` before the [!UICONTROL CASE WHEN] rules are applied.
 
-![Case when rule 1](assets/case-when-1.png)
+![Screenshot of the Case when rule 1](assets/case-when-1.png)
 
 ### Data after {#casewhen-uc1-dataafter}
 
@@ -359,7 +359,7 @@ Your site collects the following values for your [!DNL Product Finding Methods] 
 
 You define a `Product Finding Methods (new)` derived field. You create the following [!UICONTROL CASE WHEN] rules in rule builder. These rules apply logic to all possible variations of the old [!UICONTROL Product Finding Methods] field values for `search` and `browse` using the [!UICONTROL Contains the phrase] criterion.
 
-![Case When rule 2](assets/case-when-2.png)
+![Screenshot of the Case When rule 2](assets/case-when-2.png)
 
 ### Data after {#casewhen-uc2-dataafter}
 
@@ -432,7 +432,7 @@ Your desired report should look like:
 
 You define a `Trip Duration (bucketed)` derived field. You create the following [!UICONTROL CASE WHEN] rule in rule builder. This rule applies logic to bucket the old [!UICONTROL Trip Duration] field values into three values: `short trip`, `medium  trip`, and `long trip`.
 
-![Case When rule 3](assets/case-when-3.png)
+![Screenshot of the Case When rule 3](assets/case-when-3.png)
 
 
 ### Data after {#casewhen-uc3-dataafter}
@@ -453,7 +453,7 @@ You define a `Trip Duration (bucketed)` derived field. You create the following 
 | [!DNL long trip] |
 
 
-## Constraints
+## More Information
 
 Customer Journey Analytics uses a nested container structure, modeled after Adobe Experience Platform's [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en) (Experience Data Model). See [Containers](../create-dataview.md#containers) and [Filter containers](../../components/filters/filters-overview.md#filter-containers) for more background information. This container model, albeit flexible by nature, imposes some constraints when using the rule builder. 
 
@@ -463,15 +463,13 @@ Customer Journey Analytics uses the following default container model:
 <img src="./assets/containers.png" width="50%" valign="middle">
 </p>
 
-
-
-The following constraints do apply and are enforced when *selecting* and *setting* values.
+The following constraints apply and are enforced when *selecting* and *setting* values.
 
 |  |  Constraints |
 |:---:|----|
-| **<span style='color: red'>A</span>** | Values you *select* within the same [!UICONTROL If], [!UICONTROL Else If] construct (using [!UICONTROL And] or [!UICONTROL Or]) in a rule must originate from the same container and can be of any type (string ![String](assets/Smock_ABC_18_N.svg), numeric ![Numeric](assets/Smock_123_18_N.svg), and so forth). <br/>![Dependency A](assets/dependency-a.png)|
-| **<span style='color: red'>B</span>** | All the values you *set* across a rule must be from the same container and have the same type or a derived value of the same type. <br/> ![Dependency B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | The values you *select* across [!UICONTROL If], [!UICONTROL Else If] constructs in the rule do *not* have to originate from the same container and do *not* have to be of the same type. <br/> ![Dependency C](assets/dependency-c.png)  |
+| **<span style='color: red'>A</span>** | Values you *select* within the same [!UICONTROL If], [!UICONTROL Else If] construct (using [!UICONTROL And] or [!UICONTROL Or]) in a rule must originate from the same container and can be of any type (string ![String](assets/Smock_ABC_18_N.svg), numeric ![Numeric](assets/Smock_123_18_N.svg), and so forth). <br/>![Screenshot of dependency A](assets/dependency-a.png)|
+| **<span style='color: red'>B</span>** | All the values you *set* across a rule must be from the same container and have the same type or a derived value of the same type. <br/> ![Screenshot of Dependency B](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | The values you *select* across [!UICONTROL If], [!UICONTROL Else If] constructs in the rule do *not* have to originate from the same container and do *not* have to be of the same type. <br/> ![Screenshot of Dependency C](assets/dependency-c.png)  |
 
 {style="table-layout:auto"}
 
@@ -531,7 +529,7 @@ You have received some malformed values for your external marketing channels rep
 
 You define an `Email Marketing (updated)` derived field. You use the [!UICONTROL FIND AND REPLACE] function to define a rule to find and replace all occurrences of `email%20marketing` with `email marketing`.
 
-![Find and Replace rule](assets/find-and-replace.png)
+![Screenshot of the Find and Replace rule](assets/find-and-replace.png)
 
 ### Data after {#findreplace-uc-dataafter}
 
@@ -617,7 +615,7 @@ You are collecting [!DNL Hotel ID] in a dimension but would like to create a [!D
 
 You define a `Hotel Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule where you can look up values of the [!UICONTROL Hotel ID] field and replace with new values.
 
-![Lookup rule 1](assets/lookup-1.png)
+![Screenshot of the Lookup rule 1](assets/lookup-1.png)
 
 ### Data after {#lookup-uc1-dataafter}
 
@@ -652,7 +650,7 @@ You have collected URLs instead of the friendly page name for several pages. Thi
 
 You define a `Page Name (updated)` derived field. You use the [!UICONTROL LOOKUP] function to define a rule where you can look up values of your existing [!UICONTROL Page Name] field and replace with updated correct values.
 
-![Lookup rule 2](assets/lookup-2.png)
+![Screenshot of the Lookup rule 2](assets/lookup-2.png)
 
 ### Data after {#lookup-uc2-dataafter}
 
@@ -668,7 +666,7 @@ You define a `Page Name (updated)` derived field. You use the [!UICONTROL LOOKUP
 
 +++
 
-<!-- MERGE -->
+<!-- MERGE FIELDS -->
 
 ### Merge Fields
 
@@ -678,7 +676,7 @@ Merges values from two different fields into a new derived field.
 
 {{release-limited-testing-section}}
 
-## Specification {#merge-io}
+## Specification {#merge-fields-io}
 
 | Input Data Type | Input | Included Operators | Limit | Output |
 |---|---|---|---|---|
@@ -686,11 +684,11 @@ Merges values from two different fields into a new derived field.
 
 {style="table-layout:auto"}
 
-## Use case {#mergefields-uc1}
+## Use case {#merge-fields-uc}
 
 You would like to create a new dimension made up from the page name field and the call reason field with the intent of analyzing the journey across channels.
 
-### Data before {#mergefields-uc-databefore}
+### Data before {#merge-fields-uc-databefore}
 
 | Page Name | Session | Visitors |
 |---|--:|--:|
@@ -708,13 +706,13 @@ You would like to create a new dimension made up from the page name field and th
 
 {style="table-layout:auto"}
 
-### Derived field {#mergefield-uc-derivedfield}
+### Derived field {#merge-fields-uc-derivedfield}
 
 You define a `Cross Channel Interactions` derived field. You use the [!UICONTROL MERGE FIELDS] function to define a rule to merge the values from the [!UICONTROL Page Name] field and [!UICONTROL Call Reason] field and store that in the new derived field.
 
-![Merge Fields](assets/merge-fields.png)
+![Screenshot of the Merge Fields rule](assets/merge-fields.png)
 
-### Data after {#mergefields-uc-dataafter}
+### Data after {#merge-fields-uc-dataafter}
 
 | Cross Channel Interactions | Sessions | Visitors |
 |---|--:|--:|
@@ -726,6 +724,12 @@ You define a `Cross Channel Interactions` derived field. You use the [!UICONTROL
 | problem with ordering | 100 | 95 |
 
 {style="table-layout:auto"}
+
+## More Information {#merge-fields-moreinfo}
+
+You have to select the same type of fields within a Merge Fields rule. For example, if you select a Date field, all other fields you want to merge have to be Date fields.
+
+![Screenshot of constraint on merge fields](assets/merge-fields-constraint.png)
 
 +++
 
@@ -767,7 +771,7 @@ You would like to grab a potion of a URL and use that as a unique page identifie
 
 You create a `Page Identifier` derived field. You use the [!UICONTROL REGEX REPLACE] function to define a rule to replace value of the [!UICONTROL Referring URL] field using a [!UICONTROL Regex] of `[^/]+(?=/$|$)` and [!UICONTROL Output format] of `$1`.
 
-![Regex Replace](assets/regex-replace.png)
+![Screenshot of the Regex Replac rule](assets/regex-replace.png)
 
 
 ### Data after {#regex-replace-uc-dataafter}
@@ -865,7 +869,7 @@ You collect voice app responses into a delimited list in a single dimension. You
 
 You create a `Responses` derived field. You use the [!UICONTROL SPLIT] function to define a rule to use the  [!UICONTROL Convert to array] method to convert the values from the [!UICONTROL Voice App Response] field using `,` as the [!UICONTROL Delimiter].
 
-![Split rule](assets/split-1.png)
+![Screenshot of the Split rule 1](assets/split-1.png)
 
 ### Data after {#split-uc1-dataafter}
 
@@ -899,11 +903,11 @@ You collect voice app responses into a delimited list in a single dimension. You
 
 You create a  `First Response` derived field. You use the [!UICONTROL SPLIT] function to define a rule to take the first value from the [!UICONTROL Responses] field from the left of the response `,` as the delimiter. 
 
-![Split first value](assets/split-2.png)
+![Screenshot of the Split rule - first value](assets/split-2.png)
 
 You create a `Second Response` derived field to take the last value  from the [!UICONTROL Responses] field by selecting From the right, 1 as the Delimiter and 1 as the Index.
 
-![Split last value](assets/split-3.png)
+![Screenshot of the Split rule - last value](assets/split-3.png)
 
 ### Data after {#split-uc2-dataafter}
 
@@ -960,7 +964,7 @@ You only want use the referring domain from the referring URL as part of a marke
 
 You define a  `Referring Domain` derived field. You use the [!UICONTROL URL PARSE] function to define a rule to fetch the host from the [!UICONTROL Referring URL] field and store that in the new derived field.
 
-![ Url Parse rule 1](assets/url-parse-1.png)
+![Screenshot of the Url Parse rule 1](assets/url-parse-1.png)
 
 ### Data after {#urlparse-uc1-dataafter}
 
@@ -992,7 +996,7 @@ You want to use the value of the `cid` parameter of a query string in a [!DNL Pa
 
 You define a `Query String CID` derived field. You use the [!UICONTROL URL PARSE] function to define a rule to fetch the value of the query string parameter in the [!UICONTROL Page URL] field, specifying `cid` as the query parameter. The output value is stored in the new derived field.
 
-![Url Parse rule 2](assets/url-parse-2.png)
+![Screenshot of the Url Parse rule 2](assets/url-parse-2.png)
 
 ### Data after {#urlparse-uc2-dataafter}
 
