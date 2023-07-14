@@ -18,23 +18,27 @@ Guided analysis categorizes view types into **Analysis types**. The following an
 
 | Analysis type | View type | Description |
 | --- | --- | --- |
-| Impact | [Release](types/release.md) | Compare performance across equal periods pre- and post-release. |
-| Impact | [First use](types/first-use.md) | Measure the impact of first-time feature use on key indicators. |
-| Funnel | [Friction](types/friction.md) | Compare conversion rates between steps. |
-| Funnel | [Conversion trends](types/conversion-trends.md) | Track changes in conversion rates over time. |
-| User growth | [Active](types/active.md) | Identify who is new, retained, returning, or dormant. |
-| User growth | [Net growth](types/net-growth.md) | Are you gaining or losing users? |
-| Trends | [Usage](types/usage.md) | Measure user engagement over time. |
+| [!UICONTROL Impact] | [Release](types/release.md) | Compare performance across equal periods pre- and post-release. |
+| [!UICONTROL Impact] | [First use](types/first-use.md) | Measure the impact of first-time feature use on key indicators. |
+| [!UICONTROL Funnel] | [Friction](types/friction.md) | Compare conversion rates between steps. |
+| [!UICONTROL Funnel] | [Conversion trends](types/conversion-trends.md) | Track changes in conversion rates over time. |
+| [!UICONTROL User growth] | [Active](types/active.md) | Identify who is new, retained, returning, or dormant. |
+| [!UICONTROL Net growth] | [Net growth](types/net-growth.md) | Are you gaining or losing users? |
+| [!UICONTROL Trends] | [Usage](types/usage.md) | Measure user engagement over time. |
 
 {style="table-layout:auto"}
 
 ## Access
 
-If your organization is provisioned for guided analysis, it can be accessed from the Customer Journey Analytics homepage. 
+If your organization is provisioned for guided analysis, you can access it from the Customer Journey Analytics homepage. 
 
-Click **Guided analysis** from the homepage to jump directly to the [Usage trends view](types/usage.md). 
+1. Click **[!UICONTROL Guided analysis]** from the homepage to jump directly to the [Usage trends view](types/usage.md). 
 
-Click **Create new** to see the different view options and choose a different starting point for your analysis. 
+   ![Create a new modal](assets/create-new-modal.png)
+
+1. Click **[!UICONTROL Create new]** to see the different view options and choose a different starting point for your analysis. 
+
+   ![Landing page tile](assets/landing-page-tile.png)
 
 ## Interface
 
