@@ -34,11 +34,11 @@ If your organization is provisioned for guided analysis, you can access it from 
 
 1. Click **[!UICONTROL Guided analysis]** from the homepage to jump directly to the [Usage trends view](types/usage.md). 
 
-   ![Create a new modal](assets/create-new-modal.png)
+   ![Landing page tile](assets/landing-page-tile.png)
 
 1. Click **[!UICONTROL Create new]** to see the different view options and choose a different starting point for your analysis. 
 
-   ![Landing page tile](assets/landing-page-tile.png)
+   ![Create a new modal](assets/create-new-modal.png)
 
 ## Interface
 
