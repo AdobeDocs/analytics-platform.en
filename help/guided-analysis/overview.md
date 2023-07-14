@@ -28,6 +28,14 @@ Guided analysis categorizes view types into **Analysis types**. The following an
 
 {style="table-layout:auto"}
 
+## Access
+
+If your organization is provisioned for guided analysis, it can be accessed from the Customer Journey Analytics homepage. 
+
+Click **Guided analysis** from the homepage to jump directly to the [Usage trends view](types/usage.md). 
+
+Click **Create new** to see the different view options and choose a different starting point for your analysis. 
+
 ## Interface
 
 The interface for Guided analysis, regardless of analysis type, comprises the following main UI elements:
