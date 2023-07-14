@@ -59,6 +59,8 @@ Use cases for guided analysis will vary by industry. This page provides some ill
 
 ![Usage view for travel and hospitality](assets/th-trends-usage.png)
 
+![Conversion trends for travel and hospitality](assets/th-funnel-conversio-trends.png)
+
 +++
 
 +++**Media and Entertainment**
@@ -75,6 +77,8 @@ Use cases for guided analysis will vary by industry. This page provides some ill
 ![Friction view for media and entertainment](assets/me-funnel-friction.png)
 
 ![Active view for media and entertainment](assets/me-user-growth-active.png)
+
+![](assets/me-trends-usage.png)
 
 +++
 
