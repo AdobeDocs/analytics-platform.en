@@ -6,8 +6,6 @@ feature: Guided Analysis
 ---
 # Friction view
 
-{{release-limited-testing}}
-
 The **Friction** view provides a visual representation of a critical user journey in your product. The horizontal axis represents each step that a user must pass through. The vertical axis represents the percentage of users or sessions at each step. All steps must be done in eventual order, but can happen at any time within the reporting window.
 
 ![Friction](../assets/friction.png)

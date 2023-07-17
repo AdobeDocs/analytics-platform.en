@@ -5,8 +5,6 @@ feature: Guided Analysis
 ---
 # Net growth view
 
-{{release-limited-testing}}
-
 The **Net growth** view type provides insights around the rate at which you gain or lose users over a specific period. The horizontal axis is a time interval, while the vertical axis is the measurement of growth.
 
 Each data point represents net growth, which is calculated using the following formula:

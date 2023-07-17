@@ -6,8 +6,6 @@ feature: Guided Analysis
 ---
 # Guided analysis FAQ
 
-{{release-limited-testing}}
-
 Frequently asked questions around Guided analysis.
 
 +++**How can my organization be provisioned for Guided analysis?**
@@ -26,7 +24,7 @@ To enable your end users to be most successful with Guided analysis, it is recom
 
 +++**When should you use Guided analysis or Analysis Workspace?**
 
-**Guided analysis** can help users get high quality insights quickly. It’s useful for product teams, users looking to work more confidently with data, and even analysts as a head start to deeper analysis.
+**Guided analysis** can help users get high quality insights quickly. It's useful for product teams, users looking to work more confidently with data, and even analysts as a head start to deeper analysis.
 
 **[Analysis Workspace](../analysis-workspace/home.md)** is a more freeform space that lets you dive further into the data to uncover more insights. It's useful for analysts and power users who understand the data well and want to dive deeply into it.
 
