@@ -9,11 +9,9 @@ feature: Use Cases, Cross-Channel Analysis
 
 Cross-channel analysis enables a single consolidated view of customer behavior across various channels by unifying data from various web, mobile, and offline properties. For example, you can use this consolidated view to analyze customer interactions across desktop and mobile to understand customer behavior and extract insights to optimize digital customer experiences. You can also analyze customer interactions across channels, including digital and offline channels such as support interactions and in-store purchases to better understand and optimize the customer journey.
 
-## Workflow
-
-![Cross channel architecture](../assets/cca-architecture.png)
-
 ## Implementation Steps
+
+![Illustration of the flow of implementation steps as described in [Implementation Steps](#implementation-steps)](../assets/cca-architecture.png)
 
 1. [Create schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) for data to be ingested.
 1. [Create datasets](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) for data to be ingested.

@@ -172,7 +172,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Analysis Workspace limitations](../analysis-workspace/workspace-faq/aw-limitations.md)
     + [Administration requirements](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility in Analysis Workspace](../analysis-workspace/workspace-faq/aw-accessibility.md)
-    + [Long-tail in Analysis Workspace](../analysis-workspace/workspace-faq/long-tail.md)
+    + [Results Truncated dimension item](../analysis-workspace/workspace-faq/results-truncated.md)
 
 + Analytics dashboards {#cja-dashboards}
   + [Analytics dashboards - Overview](../mobile-app/home.md)
@@ -184,16 +184,17 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Guided analysis {#guided-analysis}
     + [Overview](../guided-analysis/overview.md)
     + Impact {#impact}
-      + [Release](../guided-analysis/types/release.md)
-      + [First use](../guided-analysis/types/first-use.md)
+      + [Release view](../guided-analysis/types/release.md)
+      + [First use view](../guided-analysis/types/first-use.md)
     + Funnel {#funnel}
-      + [Friction](../guided-analysis/types/friction.md)
-      + [Conversion trends](../guided-analysis/types/conversion-trends.md)
+      + [Friction view](../guided-analysis/types/friction.md)
+      + [Conversion trends view](../guided-analysis/types/conversion-trends.md)
     + User growth {#user-growth}
-      + [Active](../guided-analysis/types/active.md)
-      + [Net growth](../guided-analysis/types/net-growth.md)
+      + [Active view](../guided-analysis/types/active.md)
+      + [Net growth view](../guided-analysis/types/net-growth.md)
     + Trends {#trends}
-      + [Usage](../guided-analysis/types/usage.md)
+      + [Usage view](../guided-analysis/types/usage.md)
+    + [Industry use cases](../guided-analysis/industry-use-cases.md)
     + [FAQ](../guided-analysis/faq.md)
 
 + Components {#cja-components}

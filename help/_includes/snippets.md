@@ -12,6 +12,13 @@
 >
 >The functionality described in this section is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
 
+## Select package {#select-package}
+
+>[!NOTE]
+>
+>You must have the **Select** package in order to use the functionality described in this article. Contact your administrator if you're unsure what Customer Journey Analytics package you have.
+
+
 ## Data Dictionary filter criteria {#dd-filter-criteria}
 
 1. (Optional) Select the **Filter** icon ![Data Dictionary Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), then select any of the following filter options to filter the list of components:
