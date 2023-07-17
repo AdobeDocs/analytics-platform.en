@@ -110,7 +110,7 @@ Above each column, a filter appears when you hover over it. By clicking the filt
 | [!UICONTROL Start over] | Returns you to the Freeform diagram builder, where you can build a new Flow diagram. |
 | [!UICONTROL Create filter for this path] | Create a filter. This takes you into the Filter Builder, where you can configure the new filter. |
 | [!UICONTROL Breakdown] | Break the node down by available Dimensions, Metrics, or Time. |
-| [!UICONTROL Filter column] | The same filter options appear as are available in the Freeform table. For more information about the available options, see the section "Apply a simple or advanced filter to a table" in [Filter and sort tables](/help/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).|
+| [!UICONTROL Filter column] | The same filter options appear as are available in the Freeform table. For more information about the available options, see the section "Apply a simple or advanced filter to a table" in [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).|
 | [!UICONTROL Exclude item]/[!UICONTROL Restore excluded items] | Removes a specific node from the column and automatically creates it as a filter at the top of the column. To restore the excluded item, right-click again and select **[!UICONTROL Restore Excluded Item]**. you can also open the filter at the top of the column and remove the pillbox with the item you just excluded. |
 | [!UICONTROL Trend] | Create a trended diagram for the node. |
 | Show next column / Show previous column | Reveals the next (right) or previous (left) column of the visualization. |
