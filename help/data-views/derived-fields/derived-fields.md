@@ -859,7 +859,7 @@ You collect voice app responses into a delimited list in a single dimension. You
 
 | Voice App Responses | Events |
 |---|--:|
-| it was great,made perfect sense,will recommed to others | 1 |
+| it was great,made perfect sense,will recommend to others | 1 |
 | it was great,somewhat confusing,will recommend to others | 1 |
 | it was not great,very confusing,will not recommned to others | 1 |
 
