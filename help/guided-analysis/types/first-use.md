@@ -7,9 +7,7 @@ feature: Guided Analysis
 
 The **[!UICONTROL First use]** view shows a comparison of how key indicators performed before and after a user uses a product feature for the first time. The horizontal axis of this report is a relative time interval before and after the event, while the vertical axis measures the desired key indicators. A vertical bar in the middle of the chart represents day 0 for when a feature is first used by a given user. Because users do not always adopt features on the same day and your rollouts may happen over several days, day 0 will mean something different for each individual user.
 
-![Release](../assets/first-use.png)
-
-## See it in action
+See the [!UICONTROL First use] view in action
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
 
