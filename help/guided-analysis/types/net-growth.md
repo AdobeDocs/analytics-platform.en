@@ -23,8 +23,6 @@ Similar to the [Active](active.md) view type, users are defined as the following
 >
 >Repeat users are not factored into this calculation, as they do not represent any gain or loss of users.
 
-See the [!UICONTROL Net growth] view in action:
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 
 ## Use cases
