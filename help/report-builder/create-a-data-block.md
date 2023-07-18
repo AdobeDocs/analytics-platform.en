@@ -67,8 +67,6 @@ To build the data block, select report components, and then customize the layout
 
     **Display or hide row and column headers**
 
-1.  Click the Edit data block command in the Report Builder hub.
-
 1.  Click the **Table** settings icon.
 
     ![placeholder image](./assets/table-settings.png){width="35%"}
