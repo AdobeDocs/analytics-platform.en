@@ -4,11 +4,15 @@ description: Measure user engagement over time.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
 ---
-# Usage view
+# [!UICONTROL Usage] view
 
-The **Usage** view provides valuable insight around the performance of your product or behavior of your users over time. The horizontal axis of this report is a time interval, while the vertical axis measures your desired events.
+The **[!UICONTROL Usage]** view provides valuable insight around the performance of your product or behavior of your users over time. The horizontal axis of this report is a time interval, while the vertical axis measures your desired events.
 
 ![Usage](../assets/usage.png)
+
+## See [!UICONTROL Usage] view in action
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
 
 ## Use cases
 
@@ -23,15 +27,15 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
-* **Events**: The events that you want to measure. Each selected event is represented as a colored line or set of bars, depending on chart type. A row representing the trended event is added to the table. You can include up to five events.
-* **People**: The segments that you want to measure. Each selected segment doubles the number of lines in the chart and rows in the table. You can include up to five segments.
+* **[!UICONTROL Events]**: The events that you want to measure. Each selected event is represented as a colored line or set of bars, depending on chart type. A row representing the trended event is added to the table. You can include up to five events.
+* **[!UICONTROL People]**: The segments that you want to measure. Each selected segment doubles the number of lines in the chart and rows in the table. You can include up to five segments.
 
 ## Chart settings
 
-The Usage view offers the following chart settings, which can be adjusted in the menu above the chart:
+The [!UICONTROL Usage] view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **Metric**: The metric that you want to measure. Options include Events, Sessions, Users, Events per session, and Events per user.
-* **Chart type**: The type of visualization that you want to use. Options include Line, Bar, Stacked bar, and Stacked area.
+* **[!UICONTROL Metric]**: The metric that you want to measure. Options include Events, Sessions, Users, Events per session, and Events per user.
+* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include Line, Bar, Stacked bar, and Stacked area.
 
 ## Apply time comparison
 
@@ -43,5 +47,5 @@ The Usage view offers the following chart settings, which can be adjusted in the
 
 The desired date range for your analysis. There are two components to this setting:
 
-* **Interval**: The date granularity that you want to view trended data by. Valid options include Hourly, Daily, Weekly, Monthly, and Quarterly. The same date range can have different intervals which affect the number of data points in the chart and the number of columns in the table. For example, viewing an analysis spanning three days with daily granularity would show only three data points, while an analysis spanning three days with hourly granularity would show 72 data points.
-* **Date**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
+* **[!UICONTROL Interval]**: The date granularity that you want to view trended data by. Valid options include Hourly, Daily, Weekly, Monthly, and Quarterly. The same date range can have different intervals which affect the number of data points in the chart and the number of columns in the table. For example, viewing an analysis spanning three days with daily granularity would show only three data points, while an analysis spanning three days with hourly granularity would show 72 data points.
+* **[!UICONTROL Date]**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
