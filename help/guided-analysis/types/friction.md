@@ -8,8 +8,6 @@ feature: Guided Analysis
 
 The **[!UICONTROL Friction]** view provides a visual representation of a critical user journey in your product. The horizontal axis represents each step that a user must pass through. The vertical axis represents the percentage of users or sessions at each step. All steps must be done in eventual order, but can happen at any time within the reporting window.
 
-See the [!UICONTROL Friction] view in action:
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on)
 
 ## Use cases

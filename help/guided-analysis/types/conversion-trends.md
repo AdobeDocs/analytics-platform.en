@@ -7,8 +7,6 @@ feature: Guided Analysis
 
 The **Conversion trends** view provides a trended visualization around conversion rates over time. The horizontal axis is a time interval, while the vertical axis represents conversion rate.
 
-See the [!UICONTROL Conversion trends] view in action
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
 ## Use cases
