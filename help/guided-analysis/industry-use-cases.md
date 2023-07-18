@@ -40,8 +40,6 @@ Use cases for guided analysis will vary by industry. This page provides some ill
 
 ![Active view for financial services](assets/fsi-user-growth-active.png)
 
-![Alternate Active view for financial services](assets/fsi-user-growth-active-2.png)
-
 +++
 
 +++**Travel and Hospitality**
@@ -59,7 +57,7 @@ Use cases for guided analysis will vary by industry. This page provides some ill
 
 ![Usage view for travel and hospitality](assets/th-trends-usage.png)
 
-![Conversion trends for travel and hospitality](assets/th-funnel-conversio-trends.png)
+![Conversion trends for travel and hospitality](assets/th-funnel-conversion-trends.png)
 
 +++
 

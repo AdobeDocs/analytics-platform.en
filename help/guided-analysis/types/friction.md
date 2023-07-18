@@ -4,11 +4,11 @@ description: Compare conversion rates between steps.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
 ---
-# Friction view
+# [!UICONTROL Friction] view
 
-The **Friction** view provides a visual representation of a critical user journey in your product. The horizontal axis represents each step that a user must pass through. The vertical axis represents the percentage of users or sessions at each step. All steps must be done in eventual order, but can happen at any time within the reporting window.
+The **[!UICONTROL Friction]** view provides a visual representation of a critical user journey in your product. The horizontal axis represents each step that a user must pass through. The vertical axis represents the percentage of users or sessions at each step. All steps must be done in eventual order, but can happen at any time within the reporting window.
 
-![Friction](../assets/friction.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on)
 
 ## Use cases
 
@@ -23,16 +23,16 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
-* **Steps**: The event touchpoints that you want to track. Each bar in the chart represents a step. You can include up to ten steps.
-* **People**: The segments that you want compare the funnel across. Each segment selected splits each step into multiple bars. Each color represents a different segment. You can include up to three segments.
+* **[!UICONTROL Steps]**: The event touchpoints that you want to track. Each bar in the chart represents a step. You can include up to ten steps.
+* **[!UICONTROL People]**: The segments that you want compare the funnel across. Each segment selected splits each step into multiple bars. Each color represents a different segment. You can include up to three segments.
 
 ## Chart settings
 
 The Friction view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **Metric**: The scope that you want applied to the funnel. Options include Sessions and Users. By selecting sessions, all steps must happen within the same session to be counted. By selecting users, all steps must happen within the reporting window selected to be counted.
-* **Chart type**: The type of visualization that you want to use. Options include Steps.
-* **Conversion from**: Determines the percentage calculation from step to step. Options include calculating conversion from the First step or Previous step.
+* **[!UICONTROL Metric]**: The scope that you want applied to the funnel. Options include Sessions and Users. By selecting sessions, all steps must happen within the same session to be counted. By selecting users, all steps must happen within the reporting window selected to be counted.
+* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include Steps.
+* **[!UICONTROL Conversion from]**: Determines the percentage calculation from step to step. Options include calculating conversion from the First step or Previous step.
 
 ## Apply time comparison
 
@@ -44,5 +44,5 @@ The Friction view offers the following chart settings, which can be adjusted in 
 
 The desired date range for your analysis. There are two components to this setting:
 
-* **Interval**: The date granularity that you want to view trended data by. This setting does not impact non-trended views such as Friction. 
-* **Date**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
+* **[!UICONTROL Interval]**: The date granularity that you want to view trended data by. This setting does not impact non-trended views such as Friction. 
+* **[!UICONTROL Date]**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
