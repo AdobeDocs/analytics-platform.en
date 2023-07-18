@@ -17,7 +17,9 @@ Flow visualizations let you configure the start or end of the path you are inter
 
 1. Add a blank panel to your project, select the Visualizations icon in the left rail, then drag the [!UICONTROL **Flow**] visualization into the panel.
 
-   Alternatively, you can add a visualization in any of the ways described in the "Add visualizations to a panel" section in [Visualizations overview](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+   Or
+
+   Add a visualization in any of the ways described in the "Add visualizations to a panel" section in [Visualizations overview](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 
 1. Anchor your Flow visualization using one of the following options:
 
