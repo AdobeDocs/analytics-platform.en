@@ -15,12 +15,19 @@ The result of this formula is a ratio. A net growth of `1` represents an equilib
 
 Similar to the [Active](active.md) view type, users are defined as the following:
 
-* **New**: The user was active during the current period, but not previously. See how far the analysis looks back to determine a new user by hovering over '[!UICONTROL New users]' in the chart legend. The lookback range is dynamically determined based on the selected date range and interval.
-* **Return**: The user was active in the current period and not active in the immediately previous period, but were formerly active at some point. See how far the analysis looks back to determine a return user by hovering over '[!UICONTROL Return users]' in the chart legend. The lookback range is dynamically determined based on the selected date range and interval.
-* **Dormant**: The user was active in the immediately previous period, but is not active in the current period. Dormant users do not count toward the total number of active users.
-* Note: Repeat users are not factored into this calculation, as they do not represent any gain or loss of users.
+* **[!UICONTROL New]**: The user was active during the current period, but not previously. See how far the analysis looks back to determine a new user by hovering over '[!UICONTROL New users]' in the chart legend. The lookback range is dynamically determined based on the selected date range and interval.
+* **[!UICONTROL Return]**: The user was active in the current period and not active in the immediately previous period, but were formerly active at some point. See how far the analysis looks back to determine a return user by hovering over '[!UICONTROL Return users]' in the chart legend. The lookback range is dynamically determined based on the selected date range and interval.
+* **[!UICONTROL Dormant]**: The user was active in the immediately previous period, but is not active in the current period. Dormant users do not count toward the total number of active users.
+
+>[!NOTE]
+>
+>Repeat users are not factored into this calculation, as they do not represent any gain or loss of users.
 
 ![Net growth](../assets/net-growth.png)
+
+## See Net growth view in action
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 
 ## Use cases
 
@@ -34,12 +41,12 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
-* **Events**: The event that you want to measure. Since this view type is user-based, a user who interacts with the event once within the period is counted as an active user. You can include one event in a query.
-* **People**: The segment that you want to measure. You can include one segment in a query.
+* **[!UICONTROL Events]**: The event that you want to measure. Since this view type is user-based, a user who interacts with the event once within the period is counted as an active user. You can include one event in a query.
+* **[!UICONTROL People]**: The segment that you want to measure. You can include one segment in a query.
 
 ## Date range
 
 The desired date range for your analysis. There are two components to this setting:
 
-* **Interval**: The date granularity that you want to view trended data by. Valid options include Hourly, Daily, Weekly, Monthly, and Quarterly. The same date range can have different intervals which affect the number of data points in the chart and the number of columns in the table. For example, viewing an analysis spanning three days with daily granularity would show only three data points, while an analysis spanning three days with hourly granularity would show 72 data points.
-* **Date**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
+* **[!UICONTROL Interval]**: The date granularity that you want to view trended data by. Valid options include Hourly, Daily, Weekly, Monthly, and Quarterly. The same date range can have different intervals which affect the number of data points in the chart and the number of columns in the table. For example, viewing an analysis spanning three days with daily granularity would show only three data points, while an analysis spanning three days with hourly granularity would show 72 data points.
+* **[!UICONTROL Date]**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
