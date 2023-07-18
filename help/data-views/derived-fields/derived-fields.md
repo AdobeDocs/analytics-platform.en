@@ -1017,3 +1017,10 @@ The following limitations apply to the Derived field functionality in general:
 - You can use a maximum of ten different schema fields (not including standard fields) when defining rules for a derived field. 
   - From this maximum of ten different schema fields, only a maximum of three lookup schema or profile schema fields are allowed.
 - You can have a maximum of 100 derived fields per Customer Journey Analytics connection.
+
+## More Information
+
+- [Making the Most of Your Data: A Framework for Using Derived Fields in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+
+- [Derived Fields Use Cases for Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+
