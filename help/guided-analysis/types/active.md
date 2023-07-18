@@ -15,8 +15,6 @@ The **Active** view provides insights around the growth and acquisition of users
 
 All active users (new + repeat + return) appear as a shade of teal above the horizontal axis, while all dormant users appear in orange below the horizontal axis.
 
-See the [!UICONTROL Active] view in action:
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
 
 ## Use cases
