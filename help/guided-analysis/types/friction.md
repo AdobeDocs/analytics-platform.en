@@ -4,13 +4,11 @@ description: Compare conversion rates between steps.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
 ---
-# Friction view
+# [!UICONTROL Friction] view
 
-The **Friction** view provides a visual representation of a critical user journey in your product. The horizontal axis represents each step that a user must pass through. The vertical axis represents the percentage of users or sessions at each step. All steps must be done in eventual order, but can happen at any time within the reporting window.
+The **[!UICONTROL Friction]** view provides a visual representation of a critical user journey in your product. The horizontal axis represents each step that a user must pass through. The vertical axis represents the percentage of users or sessions at each step. All steps must be done in eventual order, but can happen at any time within the reporting window.
 
-![Friction](../assets/friction.png)
-
-## See Friction view in action
+See the [!UICONTROL Friction] view in action:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on)
 

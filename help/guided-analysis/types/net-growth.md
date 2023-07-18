@@ -3,9 +3,9 @@ title: Net growth view
 description: Are you gaining or losing users?
 feature: Guided Analysis
 ---
-# Net growth view
+# [!UICONTROL Net growth] view
 
-The **Net growth** view type provides insights around the rate at which you gain or lose users over a specific period. The horizontal axis is a time interval, while the vertical axis is the measurement of growth.
+The **[!UICONTROL Net growth]** view type provides insights around the rate at which you gain or lose users over a specific period. The horizontal axis is a time interval, while the vertical axis is the measurement of growth.
 
 Each data point represents net growth, which is calculated using the following formula:
 
@@ -23,9 +23,7 @@ Similar to the [Active](active.md) view type, users are defined as the following
 >
 >Repeat users are not factored into this calculation, as they do not represent any gain or loss of users.
 
-![Net growth](../assets/net-growth.png)
-
-## See Net growth view in action
+See the [!UICONTROL Net growth] view in action:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 

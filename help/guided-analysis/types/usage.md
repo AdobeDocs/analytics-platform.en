@@ -8,9 +8,7 @@ feature: Guided Analysis
 
 The **[!UICONTROL Usage]** view provides valuable insight around the performance of your product or behavior of your users over time. The horizontal axis of this report is a time interval, while the vertical axis measures your desired events.
 
-![Usage](../assets/usage.png)
-
-## See [!UICONTROL Usage] view in action
+See the [!UICONTROL Usage] view in action:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
 
