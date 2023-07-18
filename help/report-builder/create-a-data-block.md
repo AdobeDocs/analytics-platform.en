@@ -67,23 +67,21 @@ To build the data block, select report components, and then customize the layout
 
     **Display or hide row and column headers**
 
-1.  Click the Edit data block command in the Report Builder hub.
-
-1.  Click the **Table** settings icon.
+2.  Click the **Table** settings icon.
 
     ![placeholder image](./assets/table-settings.png){width="35%"}
 
-1.  Check or uncheck the option to Display row and column headers. The headers are displayed by default.
+3.  Check or uncheck the option to Display row and column headers. The headers are displayed by default.
 
     **Hide or show dimension labels and metric headers**
 
-1.  Click the ellipsis icon on either the dimensions or the column headers to display the settings.
+4.  Click the ellipsis icon on either the dimensions or the column headers to display the settings.
 
     ![placeholder image](./assets/row-heading.png){width="35%"}
 
-1.  Click Hide or Show to toggle the dimension labels or column headers. All labels are displayed by default.
+5.  Click Hide or Show to toggle the dimension labels or column headers. All labels are displayed by default.
 
-1.  Click **Finish**.
+6.  Click **Finish**.
 
     A processing message is displayed while the analytics data is retrieved.
 
