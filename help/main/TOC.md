@@ -169,7 +169,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Analysis Workspace limitations](../analysis-workspace/workspace-faq/aw-limitations.md)
     + [Administration requirements](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility in Analysis Workspace](../analysis-workspace/workspace-faq/aw-accessibility.md)
-    + [Long-tail in Analysis Workspace](../analysis-workspace/workspace-faq/long-tail.md)
+    + [Results Truncated dimension item](../analysis-workspace/workspace-faq/results-truncated.md)
 
 + Analytics dashboards {#cja-dashboards}
   + [Analytics dashboards - Overview](../mobile-app/home.md)

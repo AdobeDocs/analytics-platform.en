@@ -26,7 +26,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
    Configure these settings before you can publish the audience.
 
-   ![](assets/create-audience.png)
+   ![Screenshot of how to create an audience](assets/create-audience.png)
 
    | Setting | Description |
    | --- | --- |
@@ -46,7 +46,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
    The audience preview appears in the right rail. It allows for a summarized analysis of the audience you have created.
 
-   ![](assets/data-preview.png)
+   ![Screenshot of the data preview](assets/data-preview.png)
 
    | Preview setting | Description |
    | --- | --- |
@@ -79,7 +79,7 @@ After you have created an audience, Adobe creates an Experience Platform streami
 
 At several points prior to, during, and after audience publishing, latencies can occur. Here is an overview of possible latencies.
 
-![Latency from Adobe Experience Platform to Customer Journey Analytics](assets/latency-diagram.png)
+![Latencies in audience publishing as described in [Latency considerations](#latency-considerations)](assets/latency-diagram.png)
 
 | # | Latency point | Latency duration |
 | --- | --- | --- |
@@ -96,7 +96,7 @@ At several points prior to, during, and after audience publishing, latencies can
 
 Customer Journey Analytics takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). Customer Journey Analytics sends the audience over to Experience Platform with the primary identity set, according to what was selected as the [!UICONTROL Person ID] when the connection was configured.
 
-RTCP then examines each namespace/ID combination and looks for a profile that it may be part of. A profile is basically a cluster of linked namespaces, IDs and devices. If it finds a profile, it will add the namespace and ID to the other IDs in this profile as a segment membership attribute. Now, for example, "user@adobe.com" can be targeted across all their devices and channels. If a profile is not found, a new one is created.
+RTCP then examines each namespace/ID combination and looks for a profile that it may be part of. A profile is basically a cluster of linked namespaces, IDs and devices. If it finds a profile, it will add the namespace and ID to the other IDs in this profile as a segment membership attribute. Now, for example, <user@adobe.com> can be targeted across all their devices and channels. If a profile is not found, a new one is created.
 
 You can view Customer Journey Analytics audiences in Platform by going to **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
 

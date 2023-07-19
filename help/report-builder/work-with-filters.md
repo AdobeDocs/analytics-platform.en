@@ -84,3 +84,47 @@ You can replace an existing filter with another filter to change how the data is
 1.  Click **Apply**.
 
     Report Builder updates the list of filters to reflect the replacement.
+
+### Define data block filters from cell
+
+Data blocks can reference filters from a cell. Multiple data blocks can reference the same cell for filters, allowing you to easily switch filters for multiple data blocks at a time.
+
+To apply filters from a cell
+
+1.  Navigate to Step 2 in either the data block creation or editing process. See [Create a Data Block](./create-a-data-block.md).
+1.  Click the **Filters** tab to define filters.
+1.  Click **Create filter from cell**.
+
+    ![](./assets/create-filter-from-cell.png)
+
+1. Select the cell from which you want the data blocks to reference a filter.
+   
+1. Add the filters choice you wish to add to the cell by either double clicking the filter, or by dragging and dropping it into the Filters Included section. 
+   
+   Note: Only one choice may be selected for the given cell at one time.
+
+    ![](./assets/select-filters.png)
+
+1.  Click **Apply** to create the reference cell.
+
+1. From the **Filters** tab, add the newly created reference cell filter to your data block.
+
+    ![](./assets/reference-cell-filter.png)
+
+1. Click **Finish**.
+
+    Now this cell can be referenced by other data blocks in their filters. To apply the reference cell as a filter to other data blocks, simply add the cell reference to their filters from the filters tab. 
+
+#### Use the reference cell to change data block filters
+
+1.  Select the reference cell in your spreadsheet.
+
+1.  Click the link under **Filters from Cell** in the Quick Edit menu.
+
+    ![](./assets/filters-from-cell-link.png)
+
+1.  Select your filter from the drop-down menu.
+
+    ![](./assets/filter-drop-down.png)
+
+1.  Click **Apply**.
