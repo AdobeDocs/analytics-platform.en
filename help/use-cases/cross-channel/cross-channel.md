@@ -11,7 +11,7 @@ Cross-channel analysis enables a single consolidated view of customer behavior a
 
 ## Implementation Steps
 
-![Illustration of the flow of implementation steps as described in [Implementation Steps](#implementation-steps)](../assets/cca-architecture.png)
+![Flow of implementation steps as described in this section.](../assets/cca-architecture.png)
 
 1. [Create schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) for data to be ingested.
 1. [Create datasets](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) for data to be ingested.
