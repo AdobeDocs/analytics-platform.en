@@ -7,7 +7,7 @@ feature: Filters
 
 # Filters overview {#overview}
 
-Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of persons based on characteristics or website interactions. Filters are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
+Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of persons based on characteristics or  interactions. Filters are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
 
 Filters can be based on 
 
@@ -31,6 +31,10 @@ For information about the available types of filters available and how to create
 ## Sequential filters {#sequential}
 
 Sequential filters let you identify persons based on navigation and page view across your site, providing a filter of defined actions and interactions. Sequential filters help you identify what a person likes and what a person avoids. When building sequential filters, the THEN operator is used to define and order person navigation.
+
+>[!IMPORTANT]
+>
+>You must have the **Select** package in order to create cross-channel sequential filters. Contact your administrator if you're unsure what Customer Journey Analytics package you have.​ 
 
 Here is an example:
 

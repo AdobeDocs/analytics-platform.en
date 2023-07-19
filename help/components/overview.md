@@ -15,10 +15,14 @@ Components are features in Customer Journey Analytics that can be used in report
 You can manage the following components:
 
 * [**Annotations**](/help/components/annotations/overview.md): Communicate contextual data nuances and insights to your organization.
-* [**Filters**](filters/filters-overview.md): Exclude parts of your data to focus on common dimension items
+* [**Audiences**](/help/components/audiences/audiences-overview.md): Create and publish audiences discovered in Customer Journey Analytics to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCDP) in Adobe Experience Platform for customer targeting and personalization.
+* [**Filters**](filters/filters-overview.md): Build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of persons based on characteristics or interactions.
 * [**Calculated metrics**](calc-metrics/calc-metr-overview.md): Use metrics and formulas as new components for use in reporting
-* [**Date ranges**](date-ranges/create.md): Customize and refine the date ranges Analysis Workspace offers
-* [**Projects**](/help/analysis-workspace/home.md): Organize and maintain your projects in Analysis Workspace
+* [**Data Dictionary**](/help/components/data-dictionary/data-dictionary-overview.md): Helps both users and administrators keep track of and better understand the components in their Analytics environment.
+* [**Date ranges**](date-ranges/create.md): Customize and refine the date ranges Analysis Workspace offers.
+* [**Dimensions**](/help/components/dimensions/view-dimensions.md): Dimensions are variables that typically contain string values. Common dimensions include Page and Referring domain.
+* [**Metrics**](/help/components/apply-create-metrics.md): Allow you to quantify data points in Analysis Workspace.
+* [**Projects**](/help/analysis-workspace/home.md): Organize and maintain your projects in Analysis Workspace.
 
 ## Analysis Workspace components
 
