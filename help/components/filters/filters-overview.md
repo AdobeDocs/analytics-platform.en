@@ -38,8 +38,6 @@ Sequential filters let you identify persons based on navigation and page view ac
 
 Here is an example:
 
-<!--![](assets/sequential_fil.png)-->
-
 | Session One | Session Two | Session Three |
 | --- | --- | --- |
 | The person went to the main landing page A, excluded the campaign page B, and then viewed the Product page C.| The person again went to the main landing page A, excluded the campaign page B, and went again to the Product page C, and then to a new page D. | The person entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product page G. |
@@ -111,7 +109,7 @@ Event containers include values-based, single-page breakdowns:
 
 ## Out-of-the-box filter template {#template}
 
-Traditional Analytics comes with numerous out-of-the-box template filters (filters) and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
+Traditional Analytics comes with numerous out-of-the-box template and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
 
 | Filter Name | Description |
 | --- | --- |

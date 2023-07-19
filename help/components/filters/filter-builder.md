@@ -14,10 +14,9 @@ For information about how to create quick filters that apply only to the project
 
 You can access the Filter builder in any of the following ways:
 
-* **Analytics top navigation**: Click **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]**.
+* **Top navigation**: Click **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]**.
 * **[!UICONTROL Analysis Workspace]**: With a project open in Analysis Workspace, select **[!UICONTROL + Components]** > **[!UICONTROL Create filter]**.
-* **[!UICONTROL Reports & Analytics]**: Click **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, open an existing report and click the **Filter** icon in the left navigation, then click **[!UICONTROL Add]**.
-* **[!UICONTROL Report Builder]**: [Add or edit filters in Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/data-requests/segmentation.html).
+* **[!UICONTROL Report Builder]**: [Work with Filters in Report Builder](/help/report-builder/work-with-filters.md).
 
 ## Builder criteria overview {#section_F61C4268A5974C788629399ADE1E6E7C}
 
@@ -147,91 +146,3 @@ By using filter stacking, you can reduce your filter count to 22 and stack them 
 
 1. Select [!UICONTROL **Save**].
 
-## Filter templates {#concept_5098446CC78D441E93B8E4D1D1EA6558}
-
-Filter templates are provided for common filter use cases, such as "First-time Visits" or "Vists from Mobile Devices". They are available in Workspace projects and in the Filter builder as building blocks for new filters. 
-
-Templates are denoted by the Adobe "A" logo. A sample of the templates are listed below:
-
-<table id="table_98B87D807E9344C9BEBF072C65D87B1B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Template Name </th> 
-   <th colname="col2" class="entry"> Definition </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Abandon Cart </td> 
-   <td colname="col2">View data for persons that added items to their carts but did not order anything. In the Filter Definition, the container is Visit. The rule for this sequential filter is <p> Cart Additions is not null </p> <p>Then </p> <p>Orders equals 0. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> First Time Visits </td> 
-   <td colname="col2">View data for persons that have visited a maximum of one [1] times. In the Filter Definition, the container is Visit. The rule is <p>Visit Number equals 1. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Non-Purchasers </td> 
-   <td colname="col2">View data for persons that have not participated in an order event. In the Filter Definition, the container is Visitor. This filter uses the Exclude logic. The rule is <p>Orders is not null. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Non-Single Page Visit (Non-Bounces) </td> 
-   <td colname="col2">View data for persons that visited more than once. In the Filter Definition, the container is Visitor. This filter uses the Exclude logic. The rule is <p>Single Access is not null. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Paid Search </td> 
-   <td colname="col2">View data from persons originating from a paid search. In the Filter Definition, the container is Visit. The rule is <p>Paid Search equals 1. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Purchasers </td> 
-   <td colname="col2">View data for persons that have participated in an order event. In the Filter Definition, the container is Visitor. The rule is <p>Orders is not null. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Return Visits </td> 
-   <td colname="col2">View data from persons that have visited at least once. In the Filter Definition, the container is Visit. The rule is <p>Visit Number is greater than 1. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Single Page Visits </td> 
-   <td colname="col2"> View data from visits in which you see a single page value, even though you may submit multiple page views during that visit. Single-page visits with exit link events are included in the filter. In the Filter Definition, the container is Visit. The rule is <p>Single Page Visits equals 1. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Viewed Product Didn't Add to Cart </td> 
-   <td colname="col2">View data for persons that viewed products but had no cart additions. In the Filter Definition, the container is Visit. The rule for this sequential filter is <p>Product Views is not null </p> <p>Then </p> <p> Cart Additions equals 0. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visits from Campaign </td> 
-   <td colname="col2">View data from persons referred by campaigns. In the Filter Definition, the container is Visit. The rule is <p>Tracking Code is not null. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visits from Mobile Devices </td> 
-   <td colname="col2">View data from persons using mobile devices. In the Filter Definition, the container is Visit. The rule is <p>Mobile Device is not null. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visits from Natural Search </td> 
-   <td colname="col2">View data from persons not originating from a paid search. In the Filter Definition, the container is Visit. The rule is <p>Paid Search equals 0. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visits from Non-Mobile Device </td> 
-   <td colname="col2">View data from persons not using mobile devices. In the Filter Definition, the container is Visit. This filter uses the Exclude logic. The rule is <p>Mobile Device Type equals Mobile Phone </p> <p>Or </p> <p>Mobile Device Type equals Tablet. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visits from Phones </td> 
-   <td colname="col2">View data from persons using phones. In the Filter Definition, the container is Visit. The rule is <p>Device Type equals Mobile Phone. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visits from Search Engines </td> 
-   <td colname="col2">View data from persons referred by search engines. In the Filter Definition, the container is Visit. The rule is <p>Referrer Type equals Search Engines. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visits from Social Sites </td> 
-   <td colname="col2">View data from persons referred by social sites. In the Filter Definition, the container is Visit. The rule is <p>Referrer Type equals Social Networks. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visits from Tablets </td> 
-   <td colname="col2">View data from persons using tablets. In the Filter Definition, the container is Visit. The rule is <p>Device Type equals Tablet. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Visits with Visitor ID Cookie </td> 
-   <td colname="col2">View data from persons to your site, where a persistent cookie is required. In the Filter Definition, the container is Visit. The rule is <p>Persistent Cookie equals 1. </p> </td> 
-  </tr> 
- </tbody> 
-</table>

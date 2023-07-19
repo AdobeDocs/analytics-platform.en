@@ -1,5 +1,5 @@
 ---
-title: Filter Dimensions in Customer Journey Analytics
+title: Filter Dimensions in Report Builder
 description: Describes how to use filter dimensions in Report Builder for Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
