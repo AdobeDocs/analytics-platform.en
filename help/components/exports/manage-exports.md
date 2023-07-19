@@ -6,6 +6,8 @@ feature: Components
 ---
 # Manage exports
 
+{{select-package}}
+
 After you export a full table as described in [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md), the exports are available on the [!UICONTROL Exports] tab on the [!UICONTROL Exports] page. 
 
 You can edit, re-export, duplicate, tag, or delete existing exports:

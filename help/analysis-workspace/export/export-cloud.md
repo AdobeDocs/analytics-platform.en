@@ -6,6 +6,8 @@ feature: Curate and Share
 ---
 # Export Customer Journey Analytics data to the cloud
 
+{{select-package}}
+
 You can export full tables from Customer Journey Analytics and send it to designated cloud destinations. 
 
 Other methods of exporting Customer Journey Analytics data are also available, as described in [Export overview](/help/analysis-workspace/export/export-project-overview.md).

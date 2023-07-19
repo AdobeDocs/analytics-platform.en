@@ -6,6 +6,8 @@ feature: Components
 ---
 # Manage export logs
 
+{{select-package}}
+
 Export logs provide details about each export, and are generated any time Analysis Workspace data is exported to the cloud. (For information about how data can be exported to the cloud, see [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md).) 
 
 You can view details about each export logs, filter and search for logs, and manage logs.

@@ -16,7 +16,7 @@
 
 >[!NOTE]
 >
->You must have the **Select** package in order to use the functionality described in this article. Contact your administrator if you're unsure what Customer Journey Analytics package you have.
+>You must have the **Select** package in order to use this functionality. Contact your administrator if you're unsure what Customer Journey Analytics package you have.
 
 
 ## Data Dictionary filter criteria {#dd-filter-criteria}
