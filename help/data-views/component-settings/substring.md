@@ -69,7 +69,7 @@ Customer Journey Analytics uses a subset of the Perl regex syntax. If the input 
 | Expression | Description |
 | --- | --- |
 | `a` | A single character `a`. |
-| `a|b` | A single character `a` or `b`. |
+| `a\|b` | A single character `a` or `b`. |
 | `[abc]` | A single character `a`, `b`, or `c`. |
 | `[^abc]` | Any single character except `a`, `b`, or `c`. |
 | `[a-z]` | Any single character in the range of `a`-`z`. |
