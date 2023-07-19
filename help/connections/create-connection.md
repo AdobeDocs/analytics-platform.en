@@ -7,7 +7,7 @@ feature: Connections
 ---
 # Create a connection
 
-A new Connections workflow was recently launched in Customer Journey Analytics. The new connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with assistive workflow. You provided detailed dataset selection, configuration, and review experience with critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more to reduce the risk of wrong connection configuration. Here is an overview of the new capabilities:
+ The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with assistive workflow. It provides detailed dataset selection, configuration, and review experience with critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
 
 * You can enable a rolling data retention window when you create the connection.
 * You can add to and remove datasets from a connection. (Removing a dataset removes it from the connection and impacts any associated data views and underlying Analysis Workspace projects.)
@@ -16,6 +16,10 @@ A new Connections workflow was recently launched in Customer Journey Analytics. 
 * You can import existing data per dataset.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+
+>[!IMPORTANT]
+>
+>You must have the **Select** package in order to add unlimited numbers of datasets to a connection. The **Foundation** package is limited to one dataset. Contact your administrator if you're unsure what Customer Journey Analytics package you have.​ 
 
 ## Create and configure the connection {#create-connection}
 
