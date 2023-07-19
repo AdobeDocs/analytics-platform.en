@@ -674,8 +674,6 @@ Merges values from two different fields into a new derived field.
 
 +++ Details
 
-{{release-limited-testing-section}}
-
 ## Specification {#merge-fields-io}
 
 | Input Data Type | Input | Included Operators | Limit | Output |
@@ -741,8 +739,6 @@ You have to select the same type of fields within a Merge Fields rule. For examp
 Replaces a value from a field using a regular expression into a new derived field.
 
 +++ Details
-
-{{release-limited-testing-section}}
 
 ## Specification {#regex-replace-io}
 
@@ -840,8 +836,6 @@ You can use these sequences in the [!UICONTROL Output format] any number of time
 Splits a value from a field into a new derived field.
 
 +++ Details
-
-{{release-limited-testing-section}}
 
 ## Specification {#split-io}
 
