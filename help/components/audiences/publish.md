@@ -83,8 +83,8 @@ At several points prior to, during, and after audience publishing, latencies can
 
 | # | Latency point | Latency duration |
 | --- | --- | --- |
-| Not shown | Adobe Analytics to Analytics Source Connector (A4T) | Up to 30 minutes |
-| 1 | Data ingestion into Data Lake (from Analytics Source Connector or other sources) | Up to 90 minutes |
+| Not shown | Adobe Analytics to Analytics source connector (A4T) | Up to 30 minutes |
+| 1 | Data ingestion into Data Lake (from Analytics source connector or other sources) | Up to 90 minutes |
 | 2 | Data ingestion from Experience Platform Data Lake into Customer Journey Analytics | Up to 90 minutes |
 | 3 | Audience publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | Around 60 minutes |
 | 4 | Refresh frequency for audiences |<ul><li>One-time refresh (latency of less than 5 minutes)</li><li>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate) |

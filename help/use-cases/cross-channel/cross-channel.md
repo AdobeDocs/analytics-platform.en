@@ -16,7 +16,7 @@ Cross-channel analysis enables a single consolidated view of customer behavior a
 1. [Create schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) for data to be ingested.
 1. [Create datasets](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) for data to be ingested.
 1. [Ingest data into Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html):
-   1. Event-based data ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) from website or mobile app through the Edge Network or Analytics Data Connector.
+   1. Event-based data ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) from website or mobile app through the Edge Network or Analytics source connector.
    2. Profile data ![profile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (for example from a CRM system, call center application, loyalty application).
    3. Lookup data ![lookup](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (for example product name, category from a product information system).
 

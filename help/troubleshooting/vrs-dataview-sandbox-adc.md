@@ -1,6 +1,6 @@
-# Virtual Report Suites, Data Views, Adobe Experience Platform Sandboxes and the Analytics Source Connector
+# Virtual Report Suites, Data Views, Adobe Experience Platform Sandboxes and the Analytics source connector
 
-Adobe provides a variety of means to create virtual reporting environments and sandbox environments. It is useful to understand the similarities and differences between the following features and how these features relate to the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en):
+Adobe provides a variety of means to create virtual reporting environments and sandbox environments. It is useful to understand the similarities and differences between the following features and how these features relate to the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en):
 
 * Adobe Analytics virtual report suites
 * Customer Journey Analytics data views
@@ -26,7 +26,7 @@ A virtual report suite is (does) not:
 
 * Provide a means to combine report suites together.
 * Available in Adobe Analytics Data Warehouse.
-* Available as a source for dataflows into Adobe Experience Platform via the Analytics Source Connector. Only full (non-virtual) report suites are available for use with the Analytics Source Connector.
+* Available as a source for dataflows into Adobe Experience Platform via the Analytics source connector. Only full (non-virtual) report suites are available for use with the Analytics source connector.
 
 
 ## Customer Journey Analytics data views
@@ -68,4 +68,4 @@ An Adobe Experience Platform sandbox does not:
 Further:
 
 * Data from different sandboxes cannot be combined within Customer Journey Analytics.
-* The Analytics Source connector sends report suite data _into_ a specific sandbox. Each report suite may be configured as a source for a single sandbox. See the [Analytics Source Connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) for more details.
+* The Analytics Source connector sends report suite data _into_ a specific sandbox. Each report suite may be configured as a source for a single sandbox. See the [Analytics source connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) for more details.
