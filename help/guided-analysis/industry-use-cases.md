@@ -1,6 +1,7 @@
 ---
 title: Industry use cases
 description: Industry use cases for guided analysis
+feature: Guided Analysis
 ---
 # Industry use cases
 
