@@ -55,6 +55,8 @@ Live stitching is available approximately one week after Adobe enables stitching
 
 Cross-channel analysis is a use case specific to Customer Journey Analytics that allows you to understand how people operate across both devices and channels. It stitches a dataset's person ID, allowing that dataset to be seamlessly combined with other datasets. This feature operates in design similarly to cross-device analytics field-based stitching, but the implementation is different due to differing data architecture between traditional Analytics and Customer Journey Analytics. See [Stitching](overview.md) and the [cross-channel analysis](../use-cases/cross-channel/cross-channel.md) use case for more information.
 
++++
+
 +++**How does Stitching handle GDPR and CCPA requests?**
 
 Adobe handles GDPR and CCPA requests in accordance with local and international laws. Adobe offers the [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) to submit data access and deletion requests. The requests apply to both the original and rekeyed datasets.
