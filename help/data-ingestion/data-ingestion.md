@@ -20,15 +20,15 @@ See the high-level Customer Journey Analytics architecture shown earlier in [Ove
 
 The dataset in the architecture above can originate from various sources: 
 
--   batch data, 
+- batch data, 
 
--   streaming data, 
+- streaming data, 
 
--   data from a current Adobe Analytics deployment, 
+- data from a current Adobe Analytics deployment, 
 
--   data from tracking your website / mobile app using the Adobe Experience Platform Web/Mobile SDK, or
+- data from tracking your website / mobile app using the Adobe Experience Platform Web/Mobile SDK, or
 
--   data coming from a third-party data provider for which Adobe provides a source connector. 
+- data coming from a third-party data provider for which Adobe provides a source connector. 
 
 And you can have many of these datasets.
 
@@ -40,11 +40,11 @@ You already have Adobe Analytics deployed and want to ingest this data in Adobe 
 
 See [Ingest and use data from traditional Adobe Analytics](./analytics.md) for more information.
 
-## Ingest and use data via the Adobe Experience Platform Web SDK and the Edge Network
+## Ingest and use data via the Adobe Experience Platform Web SDK
 
 You want to analyze your website with Adobe technology, potentially migrating from another solution or start tracking your person's behavior. You want to follow Adobe's best practices for implementation, which is using the Adobe Experience Platform SDKs and Edge Network, to ingest the data. Then you can use, combine, and analyze the ingested data with data from other channels and data sources in Customer Journey Analytics.
 
-See [Ingest and use data via the Adobe Experience Platform Web SDK and the Edge Network](./aepwebsdk.md) for more information.
+See [Ingest and use data via the Adobe Experience Platform Web SDK](./aepwebsdk.md) for more information.
 
 ## Ingest and use batch data
 
