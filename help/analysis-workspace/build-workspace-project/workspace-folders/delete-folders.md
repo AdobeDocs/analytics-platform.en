@@ -13,7 +13,7 @@ You can delete folders that you create.
 **Guidelines**
 
 *  Deleting a folder does not delete the contents of the folder. The contents of a deleted folder (projects or sub-folders) are moved to the immediate folder above in the folder hierarchy.
-*  Admins can delete a folder within the Company folder that another admin created. Admins may need to coordinate with other Admins to keep folder and project access consistent. See [About Folders in Analytics](/help\analysis-workspace\build-workspace-project\workspace-folders\about-folders.md)
+*  Admins can delete a folder within the Company folder that another admin created. Admins may need to coordinate with other Admins to keep folder and project access consistent. See [About Folders in Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
 
 To delete folders in Workspace 
 
