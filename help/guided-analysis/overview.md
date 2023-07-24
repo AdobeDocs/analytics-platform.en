@@ -8,8 +8,6 @@ feature: Guided Analysis
 
 Guided analysis is a reporting format that allows product teams to quickly self-serve their data needs so that they can get high-quality insights quickly and make more data-driven product decisions. Cross-functional teams can connect in real time to use and understand these reports.
 
->[!VIDEO](https://video.tv.adobe.com/v/3421621/)
-
 Similar to Analysis Workspace and Mobile scorecards, a Guided analysis report uses data from a [Data view](../data-views/data-views.md), which references data in Adobe Experience Platform through a [Connection](../connections/overview.md). All reports created in Guided analysis can seamlessly transfer to Analysis Workspace for additional research.
 
 Guided analysis provides multiple ways to analyze and view data. View types can show the same data in different ways, leading to different insights using the same events and segments. You get different query rails and visualization settings depending on the view that you choose. You can freely switch between views, and any applicable query rail components carry over if the view supports them.
