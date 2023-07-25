@@ -40,9 +40,19 @@ You can export full tables from Analysis Workspace to designated cloud destinati
 
 >[!NOTE]
 >
->The following components are not supported with full-table export:
+>Consider the following when exporting full tables:
+>* Tables must include at least one dimension and one metric in order to be exported in a full-table export.
 >
->* <!-- add list of components. I asked for a list in Slack. In Saved for later -->
+>* The following features and components are not supported with a full-table export:
+>
+>   * Breakdowns (Breakdowns are converted and added as a secondary dimension)
+>   * Row-based percentages
+>   * Sorting that is applied 
+>   * Totals that are shown 
+>   * Date ranges
+>   * The following calculated metrics:
+>        * <!-- add list of components. I asked for a list in Slack. In Saved for later -->
+
 
 
 To export full tables from Analysis Workspace:
