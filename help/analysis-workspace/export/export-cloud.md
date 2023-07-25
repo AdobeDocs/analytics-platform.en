@@ -36,6 +36,8 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
 ## Export full tables from Analysis Workspace
 
+You can export full tables from Analysis Workspace to designated cloud destinations. 
+
 >[!NOTE]
 >
 >The following components are not supported with full-table export:
