@@ -10,7 +10,7 @@ feature: Troubleshooting
 
 As your organization adopts Customer Journey Analytics, you may notice some differences in data between Adobe Analytics and Customer Journey Analytics. This is normal and can occur for several reasons. Customer Journey Analytics is designed to allow you to improve upon some of the limitations on your data in AA. However, unexpected and unintended discrepancies can occur. This article is designed to help you diagnose and solve for those differences so that you and your team can use Customer Journey Analytics unimpeded by concerns about data integrity.
 
-Let's assume you ingested Adobe Analytics data into Adobe Experience Platform via the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html), and then created a Customer Journey Analytics connection using this dataset. 
+Let's assume you ingested Adobe Analytics data into Adobe Experience Platform via the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html), and then created a Customer Journey Analytics connection using this dataset. 
 
 ![data flow](assets/compare.png)
 

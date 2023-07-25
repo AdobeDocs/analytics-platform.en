@@ -37,11 +37,11 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
     + [Customer Journey Analytics feature support](../getting-started/aa-vs-cja/cja-aa.md)
-    + [Compare terminology for Analytics data passed through the Analytics Source Connector](../getting-started/aa-vs-cja/terminology.md)
+    + [Compare terminology for Analytics data passed through the Analytics source connector](../getting-started/aa-vs-cja/terminology.md)
     + [Compare data processing across Adobe Analytics and Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
     + [Virtual reporting environments and sandbox environments](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
     + [Processing Rules, VISTA and classifications versus Data Prep](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
-    + [AAID, ECID, AACUSTOMID and the Analytics Source Connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
+    + [AAID, ECID, AACUSTOMID and the Analytics source connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
 
 + Data Ingestion {#cja-data-ingestion}
   + [Data Ingestion Overview](../data-ingestion/data-ingestion.md)

@@ -17,7 +17,7 @@ Following is a summary of the filter types that are available, with links to inf
 | Filters in fallout analysis |  [Fallout visualization](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) in Analysis Workspace | To individual fallout visualizations | Create filters from a touchpoint, add filters as touchpoint, and compare key workflows across various filters |
 | Calculated metrics-based filter | [Calculated metric builder](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md) | To individual calculated metric | Apply filter/s within your metric definition |
 
-When applyinfilters to a freeform project, several other methods are also available:
+When applying filters to a freeform project, several other methods are also available:
 
 | Action | Description |
 | --- | --- |

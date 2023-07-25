@@ -8,7 +8,6 @@ exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 
 Metrics allow you to quantify data points in Analysis Workspace. They are most commonly used as columns in a visualization and tied to dimensions.
 
-
 ## Types of metrics
 
 Adobe offers several types of metrics for use in Analysis Workspace:

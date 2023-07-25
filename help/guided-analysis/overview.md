@@ -1,14 +1,12 @@
 ---
 title: Guided analysis overview
-description: A method of analyzing data in Customer Journey Analytics that lets product teams get high-quality insights quickly.
+description: A method of analyzing data in Customer Journey Analytics that lets product teams get high-quality insights quickly. Also referred to as Product Analytics.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
 ---
 # Guided analysis overview
 
 Guided analysis is a reporting format that allows product teams to quickly self-serve their data needs so that they can get high-quality insights quickly and make more data-driven product decisions. Cross-functional teams can connect in real time to use and understand these reports.
-
->[!VIDEO](https://video.tv.adobe.com/v/3421621/)
 
 Similar to Analysis Workspace and Mobile scorecards, a Guided analysis report uses data from a [Data view](../data-views/data-views.md), which references data in Adobe Experience Platform through a [Connection](../connections/overview.md). All reports created in Guided analysis can seamlessly transfer to Analysis Workspace for additional research.
 
