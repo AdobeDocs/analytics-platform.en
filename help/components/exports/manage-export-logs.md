@@ -88,4 +88,6 @@ You can configure what information is displayed for each export on the Exports p
    | Date delivered | B3 |
    | Account type | B3 |
 
+   {style="table-layout:auto"}
+
 1. Ensure that any columns you want to display are selected. Selected columns appear on the Exports page and display the relevant information.

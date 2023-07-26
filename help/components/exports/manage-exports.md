@@ -30,6 +30,8 @@ You can edit, re-export, duplicate, tag, or delete existing exports:
    | [!UICONTROL **Tag**] |  |  
    | [!UICONTROL **Delete**] | Deletes the selected exports. | 
 
+   {style="table-layout:auto"}
+
 ## Configure columns
 
 You can configure what information is displayed for each export on the Exports page by adding or removing columns.
@@ -54,5 +56,7 @@ You can configure what information is displayed for each export on the Exports p
    | Time sent | B3 |
    | Last sent | B3 |
    | Account type | B3 |
+
+   {style="table-layout:auto"}
 
 1. Ensure that any columns you want to display are selected. Selected columns appear on the Exports page and display the relevant information.
