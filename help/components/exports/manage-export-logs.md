@@ -12,21 +12,24 @@ Export logs provide details about each export, and are generated any time Analys
 
 You can view details about each export logs, filter and search for logs, and manage logs.
 
-## Understand available columns
+## Manage logs
 
-Various columns of information are displayed for each log.
+There are various options available for managing export logs.
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. Select the [!UICONTROL **Logs**] tab.
+1. Select the [!UICONTROL **Logs**] tab, then select one or more existing logs.
 
-   The following columns are available:
+   <!-- add screenshot? -->
 
-   |Available column | Description |
+1. Select one of the following options:
+
+   |Option | Function | 
    |---------|----------|
-   | A1 | B1 | 
-   | A2 | B2 | 
-   | A3 | B3 |
+   | [!UICONTROL **Retry**] | Re-runs the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. </br>This option is not available when selecting multiple logs. | 
+   | [!UICONTROL **Create ticket**] | Opens a dialog that allows you to specify details about any issues you encountered in the selected logs. Selecting [!UICONTROL **Submit**] in the dialog creates a ticket for Adobe Customer Care that includes your feedback along with basic information about the selected logs. Adobe Customer Care responds by email to any tickets you create. | 
+   | [!UICONTROL **Open project**] | Opens the project that contains the data associated with the selected log. </br>This option is not available when selecting multiple logs. | 
+   | [!UICONTROL **Delete**] | Deletes the selected logs. This does not delete the export associated with the selected logs. | 
 
 ## Filter and search for logs
 
@@ -57,22 +60,32 @@ To find information you need, you can either filter the list of logs or search f
 
 1. In the search tab, begin typing any information associated with the log you're searching for. You can search for data from any column available in the table. 
 
+## Configure columns
 
-## Manage logs
-
-There are various options available for managing export logs.
+You can configure what information is displayed for each export on the Exports page by adding or removing columns.
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. Select the [!UICONTROL **Logs**] tab, then select one or more existing logs.
+1. Select the [!UICONTROL **Logs**] tab.
 
-   <!-- add screenshot? -->
+1. Select the **Configure columns** icon in the upper-right of the Logs page.
 
-1. Select one of the following options:
+   <!-- add screenshot -->
 
-   |Option | Function | 
+   The following columns are available:
+
+   |Available column | Description |
    |---------|----------|
-   | [!UICONTROL **Retry**] | Re-runs the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. </br>This option is not available when selecting multiple logs. | 
-   | [!UICONTROL **Create ticket**] | Opens a dialog that allows you to specify details about any issues you encountered in the selected logs. Selecting [!UICONTROL **Submit**] in the dialog creates a ticket for Adobe Customer Care that includes your feedback along with basic information about the selected logs. Adobe Customer Care responds by email to any tickets you create. | 
-   | [!UICONTROL **Open project**] | Opens the project that contains the data associated with the selected log. </br>This option is not available when selecting multiple logs. | 
-   | [!UICONTROL **Delete**] | Deletes the selected logs. This does not delete the export associated with the selected logs. | 
+   | Export name | B1 | 
+   | Export ID | B2 | 
+   | Instance ID | B3 |
+   | Number of files | B3 |
+   | Size | B3 |
+   | Number of rows | B3 |
+   | Location | B3 |
+   | Account | B3 |
+   | Status | B3 |
+   | Date delivered | B3 |
+   | Account type | B3 |
+
+1. Ensure that any columns you want to display are selected. Selected columns appear on the Exports page and display the relevant information.
