@@ -44,21 +44,18 @@ You can export full tables from Analysis Workspace to designated cloud destinati
 >* Tables must meet the following criteria to be supported with a full-table export:
 >   * Include at least one dimension and one metric 
 >
->* The following features and components are not supported with a full-table export:
+>* The following features and components are not supported with a full-table export: (Analysis Workspace prompts you to remove these items from your table when performing an export)
 >
 >   * Row-based percentages
 >   * Search filtering
 >   * Static rows
->   * Sorting that is applied 
->   * Totals that are shown 
+>   * Sorting 
+>   * Totals
 >   * Date ranges
->   * The following calculated metrics:
->        * <!-- add list of components. I asked for a list in Slack. In Saved for later -->
->* Breakdowns are converted and added as a secondary dimension
->
->* Any components that have been restricted by an administrator from being exported cannot be included in a full-table export. 
->  
->   For more information, see the "Filter on Data Governance policies in data views" section in [Labels and policies](/help/data-views/data-governance.md).
+>   * Calculated metrics that use a function in the metric definition (see [Use functions](/help/components/calc-metrics/cm-workflow/cm-using-functions.md) for more information)
+>   * Calculated metrics that use a non-default attribution model (see the *Use non-default attribution model* section in [Column settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) for more information)
+>   * Components that have been restricted by an administrator from being exported (see the *Filter on Data Governance policies in data views* section in [Labels and policies](/help/data-views/data-governance.md) for more information)
+>   * Breakdowns that exceed 5 dimensions (breakdowns are converted and added as a secondary dimension)
 
 To export full tables from Analysis Workspace:
 
