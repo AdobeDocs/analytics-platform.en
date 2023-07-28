@@ -6,7 +6,9 @@ exl-id: 262a219a-315a-4c9b-a400-48cff119d45d
 ---
 # Results Truncated dimension item
 
-When using a dimension that contains many unique values, a report can return a dimension item labeled **[!UICONTROL Results Truncated]**. This dimension item means that the requested report contained too many unique values for it to process efficiently. As a result, it removes items deemed least important.
+When using a dimension that contains many unique values, the report results may be too large for processing.  To prevent slowdowns throughout the system, the results are truncated by removing items deemed least important.  This is indicated on a Freeform panel by addition of the words "more than" in the pagination indicator e.g. "Rows: 1-400 of more than 9,819,653."
+
+In some cases, such as sorting by a calculated metric, it is impossible to tell which dimension items are the least important.  When this happens, a warning icon is placed on the calculated metric explaining this problem and linking to [some documentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/dimensions/high-cardinality.html?lang=en).
 
 ## Customer Journey Analytics processing architecture and unique values
 
@@ -16,7 +18,7 @@ If any individual server aggregates a result set which is over a size threshold,
 
 The server chooses which dimension items to discard based on the metric that is used for sorting. If the sorting metric is a calculated metric, the server uses metrics within the calculated metric to determine which dimension items to truncate. Since calculated metrics can contain several metrics of varying importance, results can be less accurate. For example, when calculating "Revenue per person", the total amount of revenue and total number of persons are returned and aggregated before doing the division. As a result, each node chooses which items to remove without knowing how their results affect overall sorting.
 
-## Differences between 'Results Truncated' and 'Low-Traffic'
+## Differences from 'Low-Traffic'
 
 In previous versions of Adobe Analytics, a different processing architecture was used. Data was processed at the time that it was collected. Dimension items were placed under 'Low-Traffic' after a dimension reached 500,000 unique values, and applied more aggressive filtering at one million unique values. The "Unique value" count was reset at the beginning of each calendar month. Processed data was permanent; there was no way to get existing data out of 'Low-Traffic'.
 
