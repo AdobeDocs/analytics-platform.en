@@ -21,7 +21,7 @@ Guided analysis categorizes view types into **Analysis types**. The following an
 | [!UICONTROL Funnel] | [Friction](types/friction.md) | Compare conversion rates between steps. |
 | [!UICONTROL Funnel] | [Conversion trends](types/conversion-trends.md) | Track changes in conversion rates over time. |
 | [!UICONTROL User growth] | [Active](types/active.md) | Identify who is new, retained, returning, or dormant. |
-| [!UICONTROL Net growth] | [Net growth](types/net-growth.md) | Are you gaining or losing users? |
+| [!UICONTROL User growth] | [Net growth](types/net-growth.md) | Are you gaining or losing users? |
 | [!UICONTROL Trends] | [Usage](types/usage.md) | Measure user engagement over time. |
 
 {style="table-layout:auto"}
