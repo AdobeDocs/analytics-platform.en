@@ -34,7 +34,7 @@ The Conversion trends view offers the following chart settings, which can be adj
 
 >[!NOTE]
 >
->The **Average** column in the Conversion trends view table will differ from the **Total** column in the [Friction view](friction.md) table. The former is an average of the interval columns (e.g. average of daily conversion rates), while the latter is an aggregated calculation across the full date range.
+>The **Average** column in the Conversion trends view table differs from the **Total** column in the [Friction view](friction.md) table. The former is an average of the interval columns (e.g. average of daily conversion rates), while the latter is an aggregated calculation across the full date range.
 
 ## Apply time comparison
 
