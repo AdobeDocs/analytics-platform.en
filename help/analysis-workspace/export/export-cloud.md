@@ -24,8 +24,6 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
   
 * Export full tables that contain thousands or millions of rows. Other export methods allow a maximum of 50,000 rows.
 
-* Break down a variable by more than the current Workspace limitations (5 breakdowns). <!-- does this apply to the other export methods also? -->
-
 * Include calculated metrics in the exported Customer Journey Analytics data.
 
 * Structure data output as concatenated values (like Data Warehouse for Adobe Analytics).
@@ -46,16 +44,17 @@ You can export full tables from Analysis Workspace to designated cloud destinati
 >
 >* The following features and components are not supported with a full-table export: (Analysis Workspace prompts you to remove these items from your table when performing an export)
 >
->   * Row-based percentages
+>   * Percentages
+>   * Totals
 >   * Search filtering
 >   * Static rows
->   * Sorting 
->   * Totals
+>   * Sorting <!-- move this higher and in importance. Add that for small data sets it might be sorted, but on larger data sets there won't be any sorting. -->
 >   * Date ranges
 >   * Calculated metrics that use a function in the metric definition (see [Use functions](/help/components/calc-metrics/cm-workflow/cm-using-functions.md) for more information)
 >   * Calculated metrics that use a non-default attribution model (see the *Use non-default attribution model* section in [Column settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) for more information)
 >   * Components that have been restricted by an administrator from being exported (see the *Filter on Data Governance policies in data views* section in [Labels and policies](/help/data-views/data-governance.md) for more information)
 >   * Breakdowns that exceed 5 dimensions (breakdowns are converted and added as a secondary dimension)
+> * Sorting is not supported for most data sets. Data might be sorted for small data sets.  
 
 To export full tables from Analysis Workspace:
 
@@ -76,11 +75,17 @@ To export full tables from Analysis Workspace:
    | Preview | B3 | 
    | Clear | B3 | 
    | File format | B3 | 
+   | Data view | Change the data view that components are being taken from <!-- re-word. A data view drop-down will be updated. Also adding a Data view column in the export. (I also might need to write a warning dialog that comes up if there are components that don't exist in the new data view they're picking -->
    | Include manifest file | B3 | 
-   | Export frequency | B3 | 
-   |  | B3 | 
-   |  | B3 | 
-   |  | B3 | 
+   | Export frequency | <!-- We'll add One Time, and then the below will go away... It's either a drop-down or a range picker. Both in the Data table section above. Lookback window changes depending on what is selected (if they're doing Daily, then we might not let them look back to the last year)... --> | 
+   | Starting on  | B3 | 
+   | Ending on | B3 | 
+   | Daily frequency | B3 | 
+   | Optimize for consistent delivery time | B3 | 
+   |  | B3 |
+   |  | B3 |
+   |  | B3 |
+   |  | B3 |
 
 1. Select ...
 
