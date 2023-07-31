@@ -227,7 +227,7 @@ Use the Tags feature within Adobe Experience Platform to implement code on your 
 
     Name the tag, select **[!UICONTROL Web]** and enter a domain name. Select **[!UICONTROL Save]** to continue.
 
-    ![Create a property](./assets/create-property-mobile.png)
+    ![Create a property](./assets/create-mobile-property.png)
 
 ### Configure your tag
 
@@ -238,7 +238,7 @@ Select your newly created tag from the list of [!UICONTROL Tag Properties] to op
 
 #### **Extensions**
 
-Add the Adobe Platform Web SDK extension to your tag to ensure you can send data to Adobe Experience Platform (via your datastream).
+Add the Adobe Platform Edge Network extension to your tag to ensure you can send data to Adobe Experience Platform (via your datastream).
 
 To create and configure the Adobe Experience Platform Web SDK extension:
 
@@ -250,7 +250,7 @@ To create and configure the Adobe Experience Platform Web SDK extension:
 
 1. Select your sandbox and your earlier created datastream for your [!UICONTROL Production Environment] and (optional) [!UICONTROL Staging Environment] and [!UICONTROL Development Environment].
 
-   ![AEP Web SDK extension configuration](./assets/aepwebsk-extension-datastreams.png)
+   ![AEP Web SDK extension configuration](./assets/aepmobilesdk-extension-datastream.png)
 
 1. Enter your **[!UICONTROL Edge Network domain]** underneath [!UICONTROL Domain configuration]. Typically this is `<organizationName>.data.adobedc.net`. 
 
@@ -431,9 +431,9 @@ To create your connection:
     
     In the [!UICONTROL Select datasets] step in [!UICONTROL Add datasets]:
     
-    - Select the dataset that you created earlier (`Example dataset`) and any other dataset you want to include in your connection.
+    - Select datasets that you created earlier and/or other relevant datasets you want to include in your connection (for example Push Tracking Experience Events data and Push Profile data from Adobe Journey Optimizer)
 
-        ![Add datasets](./assets/cja-connections-2b.png)
+        ![Add datasets](./assets/cja-connections-ajopush.png)
 
     - Select **[!UICONTROL Next]**.
 
@@ -447,7 +447,7 @@ To create your connection:
 
         - Set **[!UICONTROL Import all new data]** and **[!UICONTROL Dataset backfill existing data]** according to your preferences.
 
-        ![Configure datasets](./assets/cja-connections-3b.png)
+        ![Configure datasets](./assets/cja-connections-ajopushid.png)
 
     - Select **[!UICONTROL Add datasets]**.
 
@@ -479,7 +479,7 @@ To create your data view:
 
     Add any schema field and/or standard component that you want to include to the [!UICONTROL METRICS] or [!UICONTROL DIMENSIONS] component boxes.
 
-    ![Data view components](./assets/cja-dataview-2.png)
+    ![Data view components](./assets/cja-dataview-2-mobile.png)
 
     Select **[!UICONTROL Save and continue]**.
 
@@ -514,12 +514,12 @@ To create your project:
 
     ![Workspace Select Data view](./assets/cja-projects-3.png).
 
-5. Start dragging and dropping dimensions and metrics on the [!UICONTROL Freeform table] in the [!UICONTROL Panel] to create your first report. As an example, drag `Program Points Balance` and `Page View` as metrics and `email` as dimension to get a quick overview of profiles that have visited your website and are part of the loyalty program collecting loyalty points.
+5. Start dragging and dropping dimensions and metrics on the [!UICONTROL Freeform table] in the [!UICONTROL Panel] to create your first report. As an example, drag `Events` as metrics and `Push Title` as dimension, broken down by `Event Type` to get an overview of your push notifications for your mobile app and what happened to them.
 
-    ![Workspace - First Report](./assets/cja-projects-5.png)
+    ![Workspace - First Report](./assets/cja-projects-5-mobile.png)
 
 See [Analysis Workspace overview](../analysis-workspace/home.md) for more information on how to create projects and build your analysis using components, visualizations, and panels.
 
 >[!SUCCESS]
 >
->You have completed all the steps. Starting by defining what data you want to collect (schema) and where to store it (dataset) in Adobe Experience Platform, you configured a datastream on the Edge Network to ensure that data can be forwarded to that dataset. Then you defined and deployed your tag containing the extensions (Adobe Experience Platform Web SDK, Experience Cloud ID Service), data elements, and rules to capture data from your mobile app and send that data to your datastream. You defined a connection in Customer Journey Analytics to use your mobile app tracking data and other data. Your data view definition allowed you to specify which dimension and metrics to use and finally you created your first project visualizing and analyzing your data.
+>You have completed all the steps. Starting by defining what data you want to collect (schema) and where to store it (dataset) in Adobe Experience Platform, you configured a datastream on the Edge Network to ensure that data can be forwarded to that dataset. Then you defined and deployed your tag containing the extensions (Adobe Experience Platform Edge Network, and others), data elements, and rules to capture data from your mobile app and send that data to your datastream. You defined a connection in Customer Journey Analytics to use your mobile app push notification tracking data and other data. Your data view definition allowed you to specify which dimension and metrics to use and finally you created your first project visualizing and analyzing your mobile app data.
