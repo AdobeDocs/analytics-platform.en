@@ -9,7 +9,7 @@ feature: Data Views
 
 Context-aware sessions in Data views change how Customer Journey Analytics calculates sessions from the data in your connection.
 
-Within the [!UICONTROL Settings] tab of Data views, you can define a session in any way to match how persons interact with your digital experiences. Context-aware session definitions are non-destructive and do not alter the underlying data. You can set up multiple data views, each with their specific context-aware session definition as a foundation for your Workspace projects.
+Within the [!UICONTROL Settings] tab of Data views, you can define a session in any way to match how persons interact with your digital experiences. Context-aware session definitions are non-destructive and do not alter the underlying data. You can set up multiple data views - each with their specific context-aware session definition - as a foundation for your Workspace projects.
 
 To define the context of a session for a data view:
 
