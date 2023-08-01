@@ -6,7 +6,7 @@ feature: Basics
 ---
 # Ingest data via the Adobe Experience Platform Mobile SDK and the Edge Network
 
-This quick start guide explains how you can ingest mobile app tracking data directly into Adobe Experience Platform using the Adobe Experience Platform Web SDK and Edge Network and then use that data in Customer Journey Analytics.
+This quick start guide explains how you can ingest mobile app tracking data directly into Adobe Experience Platform using the Adobe Experience Platform Mobile SDK and Edge Network. Then use that data in Customer Journey Analytics.
 
 To accomplish this, you need to:
 
@@ -26,21 +26,21 @@ To accomplish this, you need to:
 
 >[!NOTE]
 >
->This is a simplified guide on how to ingest data collected from your application into Adobe Experience Platform and use in Customer Journey Analytics. It is highly recommended to study the additional information when referred to. 
+>This quick start guide is a simplified guide on how to ingest data collected from your application into Adobe Experience Platform and use in Customer Journey Analytics. It is highly recommended to study the additional information when referred to. 
 
 
 ## Set up a schema and dataset
 
-To ingest data into Adobe Experience Platform, you first need to define which data you want to collect. All data ingested into Adobe Experience Platform must conform to a standard, denormalized structure for it be recognized and acted upon by downstream capabilities and features. Experience Data Model (XDM) is the standard framework that provides this structure in the form of schemas. 
+To ingest data into Adobe Experience Platform, you first need to define which data you want to collect. All data ingested into Adobe Experience Platform must conform to a standard, denormalized structure for it be recognized and acted upon by downstream capabilities and features. Experience Data Model (XDM) is the standard framework that provides a structure in the form of schemas. 
 
-Once you have defined a schema, you use one or more datasets to store and manage the collection of data. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). 
+Once you have defined a schema, you use one or more datasets to store and manage the collection of data. A dataset is a storage and management construct for a collection of data (typically a table) that contains a schema (columns) and fields (rows). 
 
 All data that is ingested into Adobe Experience Platform must conform to a pre-defined schema before it can be persisted as a dataset.
 
 ### Set up a schema
 
 You want to track some minimal data from profiles using your mobile app, for example scene name, identification. 
-For this, you first need to define a schema that models this data.
+You first need to define a schema that models this data.
 
 To set up your schema:
 
@@ -67,7 +67,7 @@ To set up your schema:
 
       Field groups are reusable collections of objects and attributes that allow you to easily extend your schema.
 
-   3. In the [!UICONTROL Add fields groups] dialog, select the **[!UICONTROL AEP Web SDK ExperienceEvent]** field group from the list. 
+   3. In the [!UICONTROL Add fields groups] dialog, select the **[!UICONTROL AEP Mobile SDK ExperienceEvent]** field group from the list. 
 
       ![AEP Mobile Lifecycle Details fieldgroup](./assets/select-aepmobilesdk-experienceevent.png)
     
@@ -87,7 +87,7 @@ To set up your schema:
 
     ![Identification Object](./assets/identification-field-mobile.png)
 
-    This adds identification capabilities to your schema. In your case, you want to identify profiles using your mobile app using the Experience Cloud Id and email address. There are many other attributes available to track your person's identification (for example customer id, loyalty id).
+    The identification object adds identification capabilities to your schema. In your case, you want to identify profiles using your mobile app using the Experience Cloud Id and email address. There are many other attributes available to track your person's identification (for example customer id, loyalty id).
 
     Select **[!UICONTROL Apply]** to add this object to your schema.
 
@@ -127,7 +127,7 @@ You have created a minimal schema that models the data you can capture from your
 
 Next to behavior data, you can also capture profile attribute data from your mobile application (for example details of profiles subscribing to a newsletter). 
 
-To capture this profile data, you would:
+To capture profile data, you would:
 
 - Create a schema based on the XDM Individual Profile class.
 
@@ -143,7 +143,7 @@ See [Create and edit schemas in the UI](https://experienceleague.adobe.com/docs/
 
 ### Set up a dataset
 
-With your schema, you have defined your data model. You now have to define the construct to store and manage that data. This is done through datasets.
+With your schema, you have defined your data model. You now have to define the construct to store and manage that data by using datasets.
 
 To set up your dataset:
 
@@ -179,7 +179,7 @@ See [Datasets UI guide](https://experienceleague.adobe.com/docs/experience-platf
 
 ## Set up a datastream
 
-A datastream represents the server-side configuration when implementing the Adobe Experience Platform Web and Mobile SDKs. When collecting data with the Adobe Experience Platform SDKs, data is sent to the Adobe Experience Platform Edge Network. It is the datastream that determines to which service(s) that data is forwarded.
+A datastream represents the server-side configuration when implementing the Adobe Experience Platform Web and Mobile SDKs. When collecting data with the Adobe Experience Platform SDKs, data is sent to the Adobe Experience Platform Edge Network. It is the datastream that determines to which services that data is forwarded.
 
 In your setup, you want the data you collect from the mobile app to be sent to your dataset in Adobe Experience Platform.
 
@@ -217,7 +217,7 @@ See [Datastreams overview](https://experienceleague.adobe.com/docs/experience-pl
 
 ## Use Tags
 
-Use the Tags feature within Adobe Experience Platform to implement code on your site to actually collect data. This tag management solution lets you deploy code alongside other tagging requirements. Tags offer seamless integration with Adobe Experience Platform using the Adobe Experience Platform Web SDK extension.
+To implement code on your site to actually collect data, use the Tags feature within Adobe Experience Platform. This tag management solution lets you deploy code alongside other tagging requirements. Tags offer seamless integration with Adobe Experience Platform using the Adobe Experience Platform Mobile SDK extension.
 
 ### Create your tag
 
@@ -225,7 +225,7 @@ Use the Tags feature within Adobe Experience Platform to implement code on your 
 
 2. Select **[!UICONTROL New Property]**. 
 
-    Name the tag, select **[!UICONTROL Web]** and enter a domain name. Select **[!UICONTROL Save]** to continue.
+    Name the tag, select **[!UICONTROL Mobile]**. Select **[!UICONTROL Save]** to continue.
 
     ![Create a property](./assets/create-mobile-property.png)
 
@@ -233,16 +233,16 @@ Use the Tags feature within Adobe Experience Platform to implement code on your 
 
 After creating the tag, you need to configure it with the correct extensions and configure data elements and rules according to how you want to track your site and send data to Adobe Experience Platform. 
 
-Select your newly created tag from the list of [!UICONTROL Tag Properties] to open it.
+To configure, select your newly created tag from the list of [!UICONTROL Tag Properties].
 
 
 #### **Extensions**
 
 Add the Adobe Platform Edge Network extension to your tag to ensure you can send data to Adobe Experience Platform (via your datastream).
 
-To create and configure the Adobe Experience Platform Web SDK extension:
+To create and configure the Adobe Experience Platform Mobile SDK extension:
 
-1. Select **[!UICONTROL Extensions]** in the left rail. You will see that the Mobile Core and Profile extensions are already available.
+1. Select **[!UICONTROL Extensions]** in the left rail. You see that the Mobile Core and Profile extensions are already available.
 
 1. Select **[!UICONTROL Catalog]** in the top bar.
 
@@ -250,9 +250,9 @@ To create and configure the Adobe Experience Platform Web SDK extension:
 
 1. Select your sandbox and your earlier created datastream for your [!UICONTROL Production Environment] and (optional) [!UICONTROL Staging Environment] and [!UICONTROL Development Environment].
 
-   ![AEP Web SDK extension configuration](./assets/aepmobilesdk-extension-datastream.png)
+   ![AEP Mobile SDK extension configuration](./assets/aepmobilesdk-extension-datastream.png)
 
-1. Enter your **[!UICONTROL Edge Network domain]** underneath [!UICONTROL Domain configuration]. Typically this is `<organizationName>.data.adobedc.net`. 
+1. Enter your **[!UICONTROL Edge Network domain]** underneath [!UICONTROL Domain configuration]. Typically use `<organizationName>.data.adobedc.net`. 
 
 1. Select **[!UICONTROL Save]**.
 
@@ -342,7 +342,7 @@ To define a rule:
 
    - Select **[!UICONTROL Save]**.
 
-This is just an example of defining a rule that sends XDM data, containing application status, to the Adobe Edge Network and to Adobe Experience Platform. 
+The above is just an example of defining a rule that sends XDM data, containing application status, to the Adobe Edge Network and to Adobe Experience Platform. 
 
 You can use rules in various ways in your tag to manipulate variables (using your data elements). 
 
@@ -370,7 +370,7 @@ To build and publish your tag:
 
     - Select **[!UICONTROL Save & Build to Development]**.
 
-    This saves and builds the tag for your development environment. A green dot indicates a successful build of your tag on your development environment.
+    Your tag is saved and is build for your development environment. A green dot indicates a successful build of your tag on your development environment.
 
 4. You can select **[!UICONTROL ...]** to rebuild the library or move the library to a staging or production environment.
 
@@ -383,19 +383,19 @@ See [Publishing overview](https://developer.adobe.com/client-sdks/documentation/
 
 Finally you need to use your tag within the mobile app you want to track. 
 
-To get code instructions that explain how to setup your mobile app and use your tag in the app:
+To get code instructions that explain how to set up your mobile app and use your tag in the app:
 
 1. Select **[!UICONTROL Environments]** in the left rail.
 
 2. From the list of environments, select the correct install ![Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) button.
 
-   In the [!UICONTROL Mobile Install Instructions] dialog, select the appropriate platform ([!UICONTROL iOS], [!UICONTROL Android]) and then use the copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) button next to each of the relevant code snippets that you want to use to setup and initialize your mobile app:
+   In the [!UICONTROL Mobile Install Instructions] dialog, select the appropriate platform ([!UICONTROL iOS], [!UICONTROL Android]). Then use the copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) button next to each of the relevant code snippets that you want to use to set up and initialize your mobile app:
     
    ![Environment](./assets/environment-mobile.png)
 
 3. Select **[!UICONTROL Close]**.
 
-Instead of the code for the development environment, you could have selected another environment (staging, production) based on where you are in the process of deploying the Adobe Experience Platform Web SDK. 
+Instead of the code for the development environment, you could have selected another environment (staging, production) based on where you are in the process of deploying the Adobe Experience Platform Mobile SDK. 
 
 See [Environments](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?) for more information.
 
@@ -411,7 +411,7 @@ See [Implement Adobe Experience Cloud in mobile apps tutorial](https://experienc
 
 To use the Adobe Experience Platform data in Customer Journey Analytics, you create a connection that includes the data resulting from setting up your schema, dataset, and workflow. 
 
-A connection lets you integrate datasets from Adobe Experience Platform into Workspace. In order to report on  these datasets, you first have to establish a connection between datasets in Adobe Experience Platform and Workspace.
+A connection lets you integrate datasets from Adobe Experience Platform into Workspace. To report on  these datasets, you first have to establish a connection between datasets in Adobe Experience Platform and Workspace.
 
 To create your connection:
 
@@ -514,7 +514,7 @@ To create your project:
 
     ![Workspace Select Data view](./assets/cja-projects-3.png).
 
-5. Start dragging and dropping dimensions and metrics on the [!UICONTROL Freeform table] in the [!UICONTROL Panel] to create your first report. As an example, drag `Events` as metrics and `Push Title` as dimension, broken down by `Event Type` to get an overview of your push notifications for your mobile app and what happened to them.
+5. To create your first report, start dragging and dropping dimensions and metrics on the [!UICONTROL Freeform table] in the [!UICONTROL Panel] . As an example, drag `Events` as metrics and `Push Title` as dimension, broken down by `Event Type` to get an overview of your push notifications for your mobile app and what happened to them.
 
     ![Workspace - First Report](./assets/cja-projects-5-mobile.png)
 
