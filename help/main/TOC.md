@@ -63,6 +63,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
+  + [Context-aware sessions](../data-views/context-aware-sessions.md)
   + Component Settings {#component-settings}
     + [Component settings overview](../data-views/component-settings/overview.md)
     + [Attribution](../data-views/component-settings/attribution.md)

@@ -32,6 +32,10 @@ The Conversion trends view offers the following chart settings, which can be adj
 * **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include Line.
 * **[!UICONTROL Conversion from]**: Determines the percentage calculation from step to step. Options include calculating conversion from the First step or Previous step.
 
+>[!NOTE]
+>
+>The **Average** column in the Conversion trends view table differs from the **Total** column in the [Friction view](friction.md) table. The former is an average of the interval columns (e.g. average of daily conversion rates), while the latter is an aggregated calculation across the full date range.
+
 ## Apply time comparison
 
 {{apply-time-comparison}}
