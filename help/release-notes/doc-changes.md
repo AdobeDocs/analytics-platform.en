@@ -13,7 +13,9 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
-| **July 2023** |
+| **August 2023** | | 
+| Data ingestion quick start guides for mobile applications and other platforms | Added additional data ingestion quick start guides outlining how to ingest and use data from mobile applications or other platforms (like desktop applications, games on consoles, application on set-top boxes and IoT devices) in Customer Journey Analytics. [Learn more](../data-ingestion/data-ingestion.md) | 
+| **July 2023** | | 
 | Context-aware sessions | Added a topic for this data view setting. [Learn more](/help/data-views/context-aware-sessions.md) |
 | Adobe Product Analytics | Adobe Product Analytics is a new way to interact with cross-channel data and insights in Customer Journey Analytics. These new capabilities enable Product teams to self-serve data and insights about their product experience through [guided analysis](/help/guided-analysis/overview.md) workflows​. |
 | Derived fields |  A [derived field](/help/data-views/derived-fields/derived-fields.md) allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. |
