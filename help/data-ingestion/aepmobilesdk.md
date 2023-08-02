@@ -1,10 +1,10 @@
 ---
-title: Ingest data via the Adobe Experience Platform Mobile SDK and the Edge Network
+title: Ingest data via the Adobe Experience Platform Mobile SDK
 description: Explain how to ingest data into Customer Journey Analytics via the Adobe Experience Platform Mobile SDK and the Edge Network
 solution: Customer Journey Analytics
 feature: Basics
 ---
-# Ingest data via the Adobe Experience Platform Mobile SDK and the Edge Network
+# Ingest data via the Adobe Experience Platform Mobile SDK
 
 This quick start guide explains how you can ingest mobile app tracking data directly into Adobe Experience Platform using the Adobe Experience Platform Mobile SDK and Edge Network. Then use that data in Customer Journey Analytics.
 
@@ -52,7 +52,7 @@ To set up your schema:
 
     >[!INFO]
     >
-    >    An Experience Event schema is used to model the _behavior_ of a profile (like page view, add to cart). An Individual Profile schema is used to model the profile _attributes_ (like name, email, gender).
+    >    An Experience Event schema is used to model the _behavior_ of a profile (like scene name, push button to add to cart). An Individual Profile schema is used to model the profile _attributes_ (like name, email, gender).
 
 
 3. In the [!UICONTROL Untitled schema] screen:
@@ -135,7 +135,8 @@ To capture profile data, you would:
 
 - Add an identification object based on the Profile Core v2 field group.
 
-- Define ecid as primary identifier and email as identifier.
+- Define Experience Cloud ID
+-  as primary identifier and email as identifier.
 
 - Enable the schema for profile
 

@@ -1,11 +1,11 @@
 ---
-title: Ingest data via the Adobe Experience Platform Web SDK and the Edge Network
+title: Ingest data via the Adobe Experience Platform Web SDK
 description: Explain how to ingest data into Customer Journey Analytics via the Adobe Experience Platform Web SDK and the Edge Network
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 ---
-# Ingest data via the Adobe Experience Platform Web SDK and the Edge Network
+# Ingest data via the Adobe Experience Platform Web SDK
 
 This quick start guide explains how you can ingest website tracking data directly into Adobe Experience Platform using the Adobe Experience Platform Web SDK and Edge Network and then use that data in Customer Journey Analytics.
 
@@ -27,21 +27,21 @@ To accomplish this, you need to:
 
 >[!NOTE]
 >
->This is a simplified guide on how to ingest data collected from your site into Adobe Experience Platform and use in Customer Journey Analytics. It is highly recommended to study the additional information when referred to. 
+> This quick start guide is a simplified guide on how to ingest data collected from your site into Adobe Experience Platform and use in Customer Journey Analytics. It is highly recommended to study the additional information when referred to. 
 
 
 ## Set up a schema and dataset
 
-To ingest data into Adobe Experience Platform, you first need to define which data you want to collect. All data ingested into Adobe Experience Platform must conform to a standard, denormalized structure for it be recognized and acted upon by downstream capabilities and features. Experience Data Model (XDM) is the standard framework that provides this structure in the form of schemas. 
+To ingest data into Adobe Experience Platform, you first must define which data you want to collect. All data ingested into Adobe Experience Platform must conform to a standard, denormalized structure for it be recognized and acted upon by downstream capabilities and features. Experience Data Model (XDM) is the standard framework that provides this structure in the form of schemas. 
 
-Once you have defined a schema, you use one or more datasets to store and manage the collection of data. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). 
+Once you have defined a schema, you use one or more datasets to store and manage the collection of data. A dataset is a storage and management construct for a collection of data (typically a table) that contains a schema (columns) and fields (rows). 
 
 All data that is ingested into Adobe Experience Platform must conform to a pre-defined schema before it can be persisted as a dataset.
 
 ### Set up a schema
 
 You want to track some minimal data from profiles visiting your website, for example page name, identification. 
-For this, you first need to define a schema that models this data.
+You first must define a schema that models this data.
 
 To set up your schema:
 
@@ -88,7 +88,7 @@ To set up your schema:
 
     ![Identification Object](./assets/identification-field.png)
 
-    This adds identification capabilities to your schema. In your case, you want to identify profiles visiting your site using the Experience Cloud Id and email address. There are many other attributes available to track your person's identification (for example customer id, loyalty id).
+    The identification object adds identification capabilities to your schema. In your case, you want to identify profiles visiting your site using the Experience Cloud Id and email address. There are many other attributes available to track your person's identification (for example customer id, loyalty id).
 
     Select **[!UICONTROL Apply]** to add this object to your schema.
 
@@ -136,7 +136,7 @@ To capture this profile data, you would:
 
 - Add an identification object based on the Profile Core v2 field group.
 
-- Define ecid as primary identifier and email as identifier.
+- Define Experience Cloud ID as primary identifier and email as identifier.
 
 - Enable the schema for profile
 
@@ -144,7 +144,7 @@ See [Create and edit schemas in the UI](https://experienceleague.adobe.com/docs/
 
 ### Set up a dataset
 
-With your schema, you have defined your data model. You now have to define the construct to store and manage that data. This is done through datasets.
+With your schema, you have defined your data model. You now have to define the construct to store and manage that data, which is done through datasets.
 
 To set up your dataset:
 
@@ -180,7 +180,7 @@ See [Datasets UI guide](https://experienceleague.adobe.com/docs/experience-platf
 
 ## Set up a datastream
 
-A datastream represents the server-side configuration when implementing the Adobe Experience Platform Web and Mobile SDKs. When collecting data with the Adobe Experience Platform SDKs, data is sent to the Adobe Experience Platform Edge Network. It is the datastream that determines to which service(s) that data is forwarded.
+A datastream represents the server-side configuration when implementing the Adobe Experience Platform Web and Mobile SDKs. When collecting data with the Adobe Experience Platform SDKs, data is sent to the Adobe Experience Platform Edge Network. It is the datastream that determines to which services that data is forwarded.
 
 In your setup, you want the data you collect from the website to be sent to your dataset in Adobe Experience Platform.
 
@@ -212,13 +212,13 @@ To set up your datastream:
 
 Your datastream is now configured to forward the data collected from your website to your dataset in Adobe Experience Platform.
 
-See [Datastreams overview](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) for more information on how to configure a datastream and how to handle sensitive data.
+See [Datastreams overview](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=en) for more information on how to configure a datastream and how to handle sensitive data.
 
 
 
 ## Use Tags
 
-Use the Tags feature within Adobe Experience Platform to implement code on your site to actually collect data. This tag management solution lets you deploy code alongside other tagging requirements. Tags offer seamless integration with Adobe Experience Platform using the Adobe Experience Platform Web SDK extension.
+To implement code on your site to actually collect data, use the Tags feature within Adobe Experience Platform . This tag management solution lets you deploy code alongside other tagging requirements. Tags offer seamless integration with Adobe Experience Platform using the Adobe Experience Platform Web SDK extension.
 
 ### Create your tag
 
@@ -232,14 +232,14 @@ Use the Tags feature within Adobe Experience Platform to implement code on your 
 
 ### Configure your tag
 
-After creating the tag, you need to configure it with the correct extensions and configure data elements and rules according to how you want to track your site and send data to Adobe Experience Platform. 
+After creating the tag, you must configure it with the correct extensions and configure data elements and rules according to how you want to track your site and send data to Adobe Experience Platform. 
 
 Select your newly created tag from the list of [!UICONTROL Tag Properties] to open it.
 
 
 #### **Extensions**
 
-Add the Adobe Platform Web SDK extension to your tag to ensure you can send data to Adobe Experience Platform (via your datastream).
+To ensure you can send data to Adobe Experience Platform (via your datastream), add the Adobe Platform Web SDK extension to your tag.
 
 To create and configure the Adobe Experience Platform Web SDK extension:
 
@@ -257,7 +257,7 @@ To create and configure the Adobe Experience Platform Web SDK extension:
 
    Select **[!UICONTROL Save]**.
 
-See [Configure the Adobe Experience Platform Web SDK extension](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html) for more information.
+See [Configure the Adobe Experience Platform Web SDK extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html) for more information.
 
 You also want to set up the Experience Cloud ID Service extension so you can easily use of the Experience Cloud ID. The Experience Cloud ID Service identifies persons across all Adobe Experience Cloud solutions.
 
@@ -409,7 +409,7 @@ To define a rule:
 
    - Select **[!UICONTROL Save]**.
 
-This is just an example of defining a rule that sends XDM data, containing values from other data elements, to Adobe Experience Platform. 
+The above is just an example of defining a rule that sends XDM data, containing values from other data elements, to Adobe Experience Platform. 
 
 You can use rules in various ways in your tag to manipulate variables (using your data elements). 
 
@@ -417,7 +417,7 @@ See [Rules](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/
 
 ### Build and Publish your tag
 
-After having defined data elements and rules, you need to build and publish your tag. When you create a library build, you must assign it to an environment. The build's extensions, rules, and data elements are then compiled and placed into the assigned environment. Each environment provides a unique embed code that allows you to integrate its assigned build into your site.
+After having defined data elements and rules, you must build and publish your tag. When you create a library build, you must assign it to an environment. The build's extensions, rules, and data elements are then compiled and placed into the assigned environment. Each environment provides a unique embed code that allows you to integrate its assigned build into your site.
 
 To build and publish your tag:
 
@@ -437,7 +437,7 @@ To build and publish your tag:
 
     - Select **[!UICONTROL Save & Build to Development]**.
 
-    This saves and builds the tag for your development environment. A green dot indicates a successful build of your tag on your development environment.
+    Your tag is saved and is build for your development environment. A green dot indicates a successful build of your tag on your development environment.
 
 4. You can select **[!UICONTROL ...]** to rebuild the library or move the library to a staging or production environment.
 
@@ -450,7 +450,7 @@ See [Publishing overview](https://experienceleague.adobe.com/docs/experience-pla
 
 ### Retrieve your tag code
 
-Finally you need to install your tag on the website you want to track. This implies placing code in the header tag of your website's template.
+Finally you must install your tag on the website you want to track, which implies placing code in the header tag of your website's template.
 
 To get the code that references your tag:
 
@@ -460,12 +460,11 @@ To get the code that references your tag:
 
    In the [!UICONTROL Web Install Instructions] dialog, select the copy button next to the script code that should read like:
 
-
-   ```javascript
-   <script src="https://assets.adobedtm.com/2a518741ab24/.../launch-...-development.min.js" async></script>
-
    ```
-    
+   <script src="https://assets.adobedtm.com/2a518741ab24/.../launch-...-development.min.js" async></script>>
+         
+   ```   
+
    ![Environment](./assets/environment.png)
 
 3. Select **[!UICONTROL Close]**.
@@ -484,7 +483,7 @@ Validate your implementation, correct it where necessary, and once correct, depl
 
 To use the Adobe Experience Platform data in Customer Journey Analytics, you create a connection that includes the data resulting from setting up your schema, dataset, and workflow. 
 
-A connection lets you integrate datasets from Adobe Experience Platform into Workspace. In order to report on  these datasets, you first have to establish a connection between datasets in Adobe Experience Platform and Workspace.
+A connection lets you integrate datasets from Adobe Experience Platform into Workspace. To report on  these datasets, you first have to establish a connection between datasets in Adobe Experience Platform and Workspace.
 
 To create your connection:
 
@@ -587,7 +586,7 @@ To create your project:
 
     ![Workspace Select Data view](./assets/cja-projects-3.png).
 
-5. Start dragging and dropping dimensions and metrics on the [!UICONTROL Freeform table] in the [!UICONTROL Panel] to create your first report. As an example, drag `Program Points Balance` and `Page View` as metrics and `email` as dimension to get a quick overview of profiles that have visited your website and are part of the loyalty program collecting loyalty points.
+5. To create your first report, start dragging and dropping dimensions and metrics on the [!UICONTROL Freeform table] in the [!UICONTROL Panel]. As an example, drag `Program Points Balance` and `Page View` as metrics and `email` as dimension to get a quick overview of profiles that have visited your website and are part of the loyalty program collecting loyalty points.
 
     ![Workspace - First Report](./assets/cja-projects-5.png)
 
@@ -595,4 +594,4 @@ See [Analysis Workspace overview](../analysis-workspace/home.md) for more inform
 
 >[!SUCCESS]
 >
->You have completed all the steps. Starting by defining what data you want to collect (schema) and where to store it (dataset) in Adobe Experience Platform, you configured a datastream on the Edge Network to ensure that data can be forwarded to that dataset. Then you defined and deployed your tag containing the extensions (Adobe Experience Platform Web SDK, Experience Cloud ID Service), data elements, and rules to capture data from your website and send that data to your datastream. You defined a connection in Customer Journey Analytics to use your website tracking data and other data. Your data view definition allowed you to specify which dimension and metrics to use and finally you created your first project visualizing and analyzing your data.
+>You have completed all the steps. Starting by defining what data you want to collect (schema) and where to store it (dataset) in Adobe Experience Platform. You then configured a datastream on the Edge Network to ensure that data can be forwarded to that dataset. Then you defined and deployed your tag containing the extensions (Adobe Experience Platform Web SDK, Experience Cloud ID Service), data elements, and rules to capture data from your website and send that data to your datastream. You defined a connection in Customer Journey Analytics to use your website tracking data and other data. Your data view definition allowed you to specify which dimension and metrics to use and finally you created your first project visualizing and analyzing your data.
