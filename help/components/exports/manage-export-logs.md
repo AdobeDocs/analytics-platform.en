@@ -12,9 +12,37 @@ Export logs provide details about each export, and are generated any time Analys
 
 You can view details about each export logs, filter and search for logs, and manage logs.
 
-## Manage logs
+## Retry an export
 
-There are various options available for managing export logs.
+You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted.
+
+This option is not available when selecting multiple logs.
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. Select the [!UICONTROL **Logs**] tab, then select a log.
+
+   <!-- add screenshot? -->
+
+1. Select [!UICONTROL **Retry**].
+   
+## Open a project
+
+You can open the project that contains the data associated with specific logs.
+
+This option is not available when selecting multiple logs.
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. Select the [!UICONTROL **Logs**] tab, then select a log.
+
+   <!-- add screenshot? -->
+
+1. Select [!UICONTROL **Open project**].
+
+## Delete a log
+
+You can delete logs. Deleting logs does not delete the export associated with the selected logs.
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
@@ -22,14 +50,23 @@ There are various options available for managing export logs.
 
    <!-- add screenshot? -->
 
-1. Select one of the following options:
+1. Select [!UICONTROL **Delete**].
 
-   |Option | Function | 
-   |---------|----------|
-   | [!UICONTROL **Retry**] | Re-runs the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. </br>This option is not available when selecting multiple logs. | 
-   | [!UICONTROL **Create ticket**] | Opens a dialog that allows you to specify details about any issues you encountered in the selected logs. Selecting [!UICONTROL **Submit**] in the dialog creates a ticket for Adobe Customer Care that includes your feedback along with basic information about the selected logs. Adobe Customer Care responds by email to any tickets you create. | 
-   | [!UICONTROL **Open project**] | Opens the project that contains the data associated with the selected log. </br>This option is not available when selecting multiple logs. | 
-   | [!UICONTROL **Delete**] | Deletes the selected logs. This does not delete the export associated with the selected logs. | 
+## Log a ticket with Customer Care
+
+You can create a ticket for Adobe Customer Care that includes your feedback along with basic information about specific logs. Adobe Customer Care responds by email to any tickets you create.
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. Select the [!UICONTROL **Logs**] tab, then select one or more existing logs.
+
+   <!-- add screenshot? -->
+
+1. Select [!UICONTROL **Create ticket**].
+
+1. Specify the details about any issues you encountered in the selected logs, then select [!UICONTROL **Submit**].
+
+   A ticket is created for Adobe Customer Care that includes your feedback along with basic information about the selected logs. Adobe Customer Care responds by email to any tickets you create.
 
 ## Filter and search for logs
 
@@ -91,7 +128,3 @@ You can configure what information is displayed for each export on the Exports p
    {style="table-layout:auto"}
 
 1. Ensure that any columns you want to display are selected. Selected columns appear on the Exports page and display the relevant information.
-
-## Log a ticket with Customer Care
-
-<!-- need to add this when UI exists -->
