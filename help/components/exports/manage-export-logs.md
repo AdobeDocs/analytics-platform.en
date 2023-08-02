@@ -91,3 +91,7 @@ You can configure what information is displayed for each export on the Exports p
    {style="table-layout:auto"}
 
 1. Ensure that any columns you want to display are selected. Selected columns appear on the Exports page and display the relevant information.
+
+## Log a ticket with Customer Care
+
+<!-- need to add this when UI exists -->
