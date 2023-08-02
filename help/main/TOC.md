@@ -47,7 +47,10 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Data Ingestion Overview](../data-ingestion/data-ingestion.md)
   + Ingest and use quick start guides{#ingest-use-guides}
     + [Adobe Analytics](../data-ingestion/analytics.md)
-    + [Adobe Experience Platform Web SDK and Edge Network](../data-ingestion/aepwebsdk.md)
+    + Adobe Experience Platform Edge Network {#edge-network}
+      + [Web SDK](../data-ingestion/aepwebsdk.md)
+      + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
+      + [Server API](../data-ingestion/serverapi.md)
     + [Batch data](../data-ingestion/batch.md)
     + [Streaming data](../data-ingestion/streaming.md)
     + [Source connectors](../data-ingestion/sources.md)
