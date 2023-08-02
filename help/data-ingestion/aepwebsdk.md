@@ -381,7 +381,7 @@ To define a rule:
 
      - Select **[!UICONTROL Window Loaded]** from the [!UICONTROL Event Type] list.
 
-            ![Rule - Event Configuration](./assets/event-windowloaded-pageview.png)
+       ![Rule - Event Configuration](./assets/event-windowloaded-pageview.png)
 
      - Select **[!UICONTROL Keep Changes]**.
 

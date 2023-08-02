@@ -135,8 +135,7 @@ To capture profile data, you would:
 
 - Add an identification object based on the Profile Core v2 field group.
 
-- Define Experience Cloud ID
--  as primary identifier and email as identifier.
+- Define Experience Cloud ID as primary identifier and email as identifier.
 
 - Enable the schema for profile
 
