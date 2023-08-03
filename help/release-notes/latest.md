@@ -15,7 +15,10 @@ Adobe Customer Journey Analytics releases operate on a [continuous delivery mode
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Report Builder enhancements**  | <ul><li>Download scheduled tasks from the History tab where you can view the history of scheduled tasks. Download the workbook from that task. [Learn more]</li><li>Start date as dimension: allows users to surface the start date of the data block as a dimension in the data block output. [Learn more]</li></ul>| N/A | August 17, 2023 |
+| **Currency Conversion** |  Customer Journey is adding the  ability to support multiple currencies. You can convert a currency into another currency in data views settings. [Learn more](/data-views/component-settings/format.md) | N/A | August 31, 2023 |
+| **Support for A4T classifications in the Analytics Source Connector** | TBD | N/A | August 31, 2023 |
 | **Reporting Activity Manager** | Provides administrators with detailed visibility into reporting consumption for each connection, allowing admins to easily diagnose and then fix capacity issues during peak reporting times. | N/A | September 6, 2023 |
+| **PowerBI & Tableau access to Customer Journey Analytics data views** | The Adobe Customer Journey Analytics SQL Connector enables SQL access to data views that you have defined in Customer Journey Analytics. Data engineers and analysts more familiar with Power BI, Tableau, or other business intelligence and visualization tools can now create reports and dashboards based on the same data views that Customer Journey Analytics users are using for their Analysis Workspace projects. [Learn more](/help/data-views/sql-connector.md)| N/A | September 13, 2023 |
 
 {style="table-layout:auto"}
 

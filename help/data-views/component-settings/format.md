@@ -17,12 +17,11 @@ Format lets you determine how a given metric is displayed.
 | **[!UICONTROL Decimal Places]** | Not visible on Integer schema data types. Lets you specify the number of decimal places a metric displays. |
 | **[!UICONTROL Date]** | Lets you determine how you want the date-time field displayed when used as a dimension in reporting. [Learn more](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
 | **[!UICONTROL Date-Time]** | Lets you determine how you want the date-time field displayed when used as a dimension in reporting. [Learn more](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
-| **[!UICONTROL Currency]** | Lets you determine which currency you want the metric to display in. See [Currency](#currency) more details. |
+| **[!UICONTROL Currency]** | Lets you determine which currency you want the metric to display in. See [Currency](#currency) for more details. |
 | **[!UICONTROL Show upward trend as]** | Lets you specify if an upward trend on this metric is good (green) or bad (red). |
 | **[!UICONTROL True value]** and **[!UICONTROL False value]** | Only visible on Boolean schema data types. Lets you customize the dimension item label for `true` and `false` values. |
 
 {style="table-layout:auto"}
-
 
 ## Currency
 
