@@ -14,17 +14,22 @@ Adobe Customer Journey Analytics releases operate on a [continuous delivery mode
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+<<<<<<< Updated upstream
 | **Adobe Product Analytics** | Adobe Product Analytics is a new way to interact with cross-channel data and insights in Customer Journey Analytics. These new capabilities enable Product teams to self-serve data and insights about their product experience through guided analysis workflows​. Teams can:<ul><li>Understand patterns in user engagement over time​</li><li>Track the growth and retention of the product's user base​</li><li>Identify areas of friction in the product</li><li>Measure the impact of feature releases​ and first use</li><li>Discover meaningful segments of users to engage and nurture throughout their lifelong journey with the product​</li><li>Connect to Analysis Workspace for deeper analysis and collaboration with analysts</li></ul>Adobe Product Analytics is a paid add-on to Customer Journey Analytics. If your organization would like to be provisioned to use this feature, contact your Adobe Account Team. [Learn more](/help/guided-analysis/overview.md) | N/A | July 17, 2023 |
 | **Derived fields** | This represents the initial release of Derived fields. A derived field allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. You can further define the derived field as a component (metric or dimension) in data views and then use the derived field as a component in Workspace.<p>This release supports a marketing channels template and the following functions:</p><ul><li>Concatenate</li><li>Case When</li><li>Find & Replace</li><li>Lookup</li><li>URL Parse</li></ul> <p>[Learn more](/help/data-views/derived-fields/derived-fields.md)</p> | May 10, 2023 | August 2, 2023 | 
 | **Expanded lookup support for Profile and Lookup data** |  Provides the ability to add datasets as lookups of fields within Profile or Lookup datasets. Previously, only Event datasets were supported. [Learn more](/help/connections/create-connection.md) | June 21, 2023 | July 12, 2023 |
 | **Report Builder enhancements**  | <ul><li>Filter from cell for multiple data blocks. You can change the filters on multiple data blocks from a cell. Use a predefined cell, assign it to multiple data blocks, and update the data based on the filters defined in the cell. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=en)</li><li>Show and hide row and column headers. You can show or hide data block table headers, or row and column headers to reformat the table and align data blocks in a report. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=en#build-the-data-block)</li></ul>| N/A | July 19, 2023 |
 | **Experience Edge geo lookups** | Adobe Experience Edge is adding a geo lookup service that provides unified geographic data to all Experience Edge users (Adobe Analytics, Customer Journey Analytics, Adobe Target, Adobe Media Analytics, Adobe Experience Platform, etc.). | N/A | July 26, 2023 |
+=======
+| **Report Builder enhancements**  | <ul><li>Download scheduled tasks from the History tab where you can view the history of scheduled tasks. Download the workbook from that task. [Learn more]</li><li>Start date as dimension: allows users to surface the start date of the data block as a dimension in the data block output. [Learn more]</li></ul>| N/A | August 17, 2023 |
+| **Reporting Activity Manager** | Provides administrators with detailed visibility into reporting consumption for each connection, allowing admins to easily diagnose and then fix capacity issues during peak reporting times. | N/A | September 6, 2023 |
+>>>>>>> Stashed changes
 
 {style="table-layout:auto"}
 
 ## Fixes in Customer Journey Analytics
 
-AN-317971; AN-319234; AN-320439; AN-320519; AN-321740; AN-322444; AN-323116
+AN-324576; AN-325138; 
 
 ## Important notices for Customer Journey Analytics Administrators
 
