@@ -21,7 +21,7 @@ Adobe Customer Journey Analytics releases operate on a [continuous delivery mode
 
 ## Fixes in Customer Journey Analytics
 
-AN-324576; AN-325138; 
+AN-309141; AN-319198; AN-324576; AN-325138; 
 
 ## Important notices for Customer Journey Analytics Administrators
 
