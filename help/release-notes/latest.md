@@ -4,26 +4,27 @@ description: Latest Customer Journey Analytics release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 ---
-# Current Adobe Customer Journey Analytics release notes (July 2023)
+# Current Adobe Customer Journey Analytics release notes (August 2023)
 
-**Last update**: July 25, 2023
+**Last update**: August 9, 2023
 
-Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
+These release notes cover the release period of August 9 to September 13, 2023. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
 ## New or updated features 
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Product Analytics** | Adobe Product Analytics is a new way to interact with cross-channel data and insights in Customer Journey Analytics. These new capabilities enable Product teams to self-serve data and insights about their product experience through guided analysis workflows​. Teams can:<ul><li>Understand patterns in user engagement over time​</li><li>Track the growth and retention of the product's user base​</li><li>Identify areas of friction in the product</li><li>Measure the impact of feature releases​ and first use</li><li>Discover meaningful segments of users to engage and nurture throughout their lifelong journey with the product​</li><li>Connect to Analysis Workspace for deeper analysis and collaboration with analysts</li></ul>Adobe Product Analytics is a paid add-on to Customer Journey Analytics. If your organization would like to be provisioned to use this feature, contact your Adobe Account Team. [Learn more](/help/guided-analysis/overview.md) | N/A | July 17, 2023 |
-| **Derived fields** | This represents the initial release of Derived fields. A derived field allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. You can further define the derived field as a component (metric or dimension) in data views and then use the derived field as a component in Workspace.<p>This release supports a marketing channels template and the following functions:</p><ul><li>Concatenate</li><li>Case When</li><li>Find & Replace</li><li>Lookup</li><li>URL Parse</li></ul> <p>[Learn more](/help/data-views/derived-fields/derived-fields.md)</p> | May 10, 2023 | August 2, 2023 | 
-| **Expanded lookup support for Profile and Lookup data** |  Provides the ability to add datasets as lookups of fields within Profile or Lookup datasets. Previously, only Event datasets were supported. [Learn more](/help/connections/create-connection.md) | June 21, 2023 | July 12, 2023 |
-| **Report Builder enhancements**  | <ul><li>Filter from cell for multiple data blocks. You can change the filters on multiple data blocks from a cell. Use a predefined cell, assign it to multiple data blocks, and update the data based on the filters defined in the cell. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=en)</li><li>Show and hide row and column headers. You can show or hide data block table headers, or row and column headers to reformat the table and align data blocks in a report. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=en#build-the-data-block)</li></ul>| N/A | July 19, 2023 |
+| **Report Builder enhancements**  | <ul><li>Download scheduled tasks from the History tab where you can view the history of scheduled tasks. Download the workbook from that task. </li><li>Start date as dimension: allows users to surface the start date of the data block as a dimension in the data block output. </li></ul>| N/A | August 17, 2023 |
+| **Currency Conversion** |  Customer Journey is adding the  ability to support multiple currencies. You can convert a currency into another currency in data views settings. [Learn more](/help/data-views/component-settings/format.md) | N/A | August 31, 2023 |
+| **Support for A4T classifications in the Analytics Source Connector** | We are adding a correlation ID for easy joining of classification data for Adobe Target activities and experience events. | N/A | August 31, 2023 |
+| **Reporting Activity Manager** | Provides administrators with detailed visibility into reporting consumption for each connection, allowing admins to easily diagnose and then fix capacity issues during peak reporting times. | N/A | September 6, 2023 |
+| **PowerBI & Tableau access to Customer Journey Analytics data views** | The Adobe Customer Journey Analytics SQL Connector enables SQL access to data views that you have defined in Customer Journey Analytics. Data engineers and analysts more familiar with Power BI, Tableau, or other business intelligence and visualization tools can now create reports and dashboards based on the same data views that Customer Journey Analytics users are using for their Analysis Workspace projects. [Learn more](/help/data-views/sql-connector.md)| N/A | September 13, 2023 |
 
 {style="table-layout:auto"}
 
 ## Fixes in Customer Journey Analytics
 
-AN-317971; AN-319234; AN-320439; AN-320519; AN-321740; AN-322444; AN-323116
+AN-309141; AN-319198; AN-324576; AN-324939; AN-325138; AN-325554
 
 ## Important notices for Customer Journey Analytics Administrators
 

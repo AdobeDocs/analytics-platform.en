@@ -3,10 +3,10 @@ title: Cross-Channel Analytics overview
 description: Re-key person ID's from multiple datasets to stitch persons together.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
-feature: Cross-Channel Analysis
 hide: yes
 hidefromtoc: yes
 ---
+
 # Cross-Channel Analytics overview
 
 **Journey IQ: Cross-Channel Analytics** is a feature that allows you to re-key a dataset's person ID, which enables a seamless combination of multiple datasets. CCA looks at user data from both authenticated and unauthenticated sessions to generate a stitched ID. Using Cross-Channel Analytics, you can answer questions such as:
