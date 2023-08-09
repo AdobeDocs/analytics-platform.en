@@ -1,14 +1,12 @@
 ---
 title: Guided analysis overview
-description: A method of analyzing data in Customer Journey Analytics that lets product teams get high-quality insights quickly.
+description: A method of analyzing data in Customer Journey Analytics that lets product teams get high-quality insights quickly. Also referred to as Product Analytics.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
 ---
 # Guided analysis overview
 
-{{release-limited-testing}}
-
-Guided analysis is a reporting format that allows product teams to quickly self-serve their data needs so that they can get high-quality insights quickly and make more data-driven product decisions. Cross-functional teams can connect in real time to use and understand these reports.
+Adobe Product Analytics enables product teams to self-serve data and insights about their product experience through guided analysis workflows, built on the cross-channel data of Customer Journey Analytics. Guided analysis is a reporting format that allows product teams to quickly self-serve their data needs so that they can get high-quality insights quickly and make more data-driven product decisions. Cross-functional teams can connect in real time to use and understand these reports.
 
 Similar to Analysis Workspace and Mobile scorecards, a Guided analysis report uses data from a [Data view](../data-views/data-views.md), which references data in Adobe Experience Platform through a [Connection](../connections/overview.md). All reports created in Guided analysis can seamlessly transfer to Analysis Workspace for additional research.
 
@@ -18,19 +16,33 @@ Guided analysis categorizes view types into **Analysis types**. The following an
 
 | Analysis type | View type | Description |
 | --- | --- | --- |
-| Impact | [Release](types/release.md) | Compare performance across equal periods pre- and post-release. |
-| Impact | [First use](types/first-use.md) | Measure the impact of first-time feature use on key indicators. |
-| Funnel | [Friction](types/friction.md) | Compare conversion rates between steps. |
-| Funnel | [Conversion trends](types/conversion-trends.md) | Track changes in conversion rates over time. |
-| User growth | [Active](types/active.md) | Identify who is new, retained, returning, or dormant. |
-| User growth | [Net growth](types/net-growth.md) | Are you gaining or losing users? |
-| Trends | [Usage](types/usage.md) | Measure user engagement over time. |
+| [!UICONTROL Impact] | [Release](types/release.md) | Compare performance across equal periods pre- and post-release. |
+| [!UICONTROL Impact] | [First use](types/first-use.md) | Measure the impact of first-time feature use on key indicators. |
+| [!UICONTROL Funnel] | [Friction](types/friction.md) | Compare conversion rates between steps. |
+| [!UICONTROL Funnel] | [Conversion trends](types/conversion-trends.md) | Track changes in conversion rates over time. |
+| [!UICONTROL User growth] | [Active](types/active.md) | Identify who is new, retained, returning, or dormant. |
+| [!UICONTROL User growth] | [Net growth](types/net-growth.md) | Are you gaining or losing users? |
+| [!UICONTROL Trends] | [Usage](types/usage.md) | Measure user engagement over time. |
 
 {style="table-layout:auto"}
 
+## Access
+
+If your organization is provisioned for guided analysis, you can access it from the Customer Journey Analytics homepage. 
+
+1. Click **[!UICONTROL Guided analysis]** from the homepage to jump directly to the [Usage trends view](types/usage.md). 
+
+   ![Landing page tile](assets/landing-page-tile.png)
+
+1. Click **[!UICONTROL Create new]** to see the different view options and choose a different starting point for your analysis. 
+
+   ![Create a new modal](assets/create-new-modal.png)
+
 ## Interface
 
-The interface for Guided analysis, regardless of analysis type, comprises the following main UI elements:
+The interface for guided analysis follows a question and answer format. You form your question in the query rail, and then get an answer in the form of a written insight, chart and table. You can then ask the next question with the visualization settings and view types.
+
+Regardless of analysis type, guided analysis is comprised of the following UI elements:
 
 | Interface preview | UI Element | Description |
 | --- | --- | --- |

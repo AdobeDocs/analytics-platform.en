@@ -1,6 +1,7 @@
 ---
 title: Industry use cases
 description: Industry use cases for guided analysis
+feature: Guided Analysis
 ---
 # Industry use cases
 
@@ -40,8 +41,6 @@ Use cases for guided analysis will vary by industry. This page provides some ill
 
 ![Active view for financial services](assets/fsi-user-growth-active.png)
 
-![Alternate Active view for financial services](assets/fsi-user-growth-active-2.png)
-
 +++
 
 +++**Travel and Hospitality**
@@ -59,12 +58,15 @@ Use cases for guided analysis will vary by industry. This page provides some ill
 
 ![Usage view for travel and hospitality](assets/th-trends-usage.png)
 
+![Conversion trends for travel and hospitality](assets/th-funnel-conversion-trends.png)
+
 +++
 
 +++**Media and Entertainment**
 
 | Use case | Example | Impact | Analysis |
 | --- | --- | --- | --- |
+| **Quantify impact of new shows or series** | We could analyze the effect on viewership after users watch a new show or series and better understand what content is resonating. | **Increase viewership.** Find content that has the biggest impact on viewership. | [First use view](types/first-use.md) |
 | **Identify churn risk** | We saw high turnover rate of customers who signed up for our platform to watch a seasonal event and then canceled as soon as the event was over. Quickly identifying these users let us show recommendations that entice them to stay engaged with the platform. | **Retain happy subscribers.** Find content that engages a growth segment to intervene with recommendations. | [Active user growth view](types/active.md) <p/><p/> [Net growth view](types/net-growth.md) |
 | **Find opportunities for upsell** | Jey to our revenue growth is being able to understand what in-app offers are most enticing to our fans while they are at the stadium. | **Increase ancillary revenue.** Understand the impact of in-app offers on driving purchasing behaviors. | [First use view](types/first-use.md) <p/><p/> [Friction view](types/friction.md) |
 | **Optimize cross-device experience** | I want to be able to analyze how my subscribers are interacting with multiple devices/apps so I can understand content consumption patterns and determine where it would be best to retarget to them. | **Personalize the experience.** Understand what content resonates best with subscribers on each device. | [Usage trends view](types/usage.md) |
@@ -75,6 +77,8 @@ Use cases for guided analysis will vary by industry. This page provides some ill
 ![Friction view for media and entertainment](assets/me-funnel-friction.png)
 
 ![Active view for media and entertainment](assets/me-user-growth-active.png)
+
+![](assets/me-trends-usage.png)
 
 +++
 

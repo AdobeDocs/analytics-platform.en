@@ -38,7 +38,7 @@ A connection lets your Analytics Admin integrate datasets from Adobe Experience 
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
-Adobe offers multiple ways to bring data in to Adobe Experience Platform, including report suite data through the Adobe Analytics Source Connector or the Web SDK. Existing implementations from multiple report suites can be combined in Experience Platform. The connections and data views that are based on these datasets can combine data that previously existed in separate report suites.
+Adobe offers multiple ways to bring data in to Adobe Experience Platform, including report suite data through the Analytics source connector or the Web SDK. Existing implementations from multiple report suites can be combined in Experience Platform. The connections and data views that are based on these datasets can combine data that previously existed in separate report suites.
 
 ## Changes to the concept of virtual report suites {#data-views}
 
@@ -104,4 +104,4 @@ Customer Journey Analytics expands the concepts of identities beyond ECIDs to in
 
 ## Changes to the concept of low-traffic dimension item
 
-In traditional Adobe Analytics, a variable that receives too many unique values starts bucketing dimension items under [!UICONTROL Low-Traffic]. Customer Journey Analytics has fewer limitations to high-cardinality fields. Changes to the reporting architecture allow Analysis Workspace to report on many more unique dimension items. See [Long Tail](../analysis-workspace/workspace-faq/long-tail.md) for more information around how Customer Journey Analytics optimizes reporting for dimensions with many unique values.
+In traditional Adobe Analytics, a variable that receives too many unique values starts bucketing dimension items under [!UICONTROL Low-Traffic]. Customer Journey Analytics has fewer limitations to high-cardinality fields. Changes to the reporting architecture allow Analysis Workspace to report on many more unique dimension items. See [Results Truncated dimension item](../analysis-workspace/workspace-faq/results-truncated.md) for more information around how Customer Journey Analytics optimizes reporting for dimensions with many unique values.

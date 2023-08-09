@@ -7,7 +7,7 @@ exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 ---
 # Data Ingestion Overview
 
-You have a number of options when ingesting data into Customer Journey Analytics. Some of them assume that you want to move traditional Adobe Analytics data over, some of them assume that you use data ingested into Adobe Experience Platform.
+You have several options when ingesting data into Customer Journey Analytics. Some of them assume that you want to move traditional Adobe Analytics data over, some of them assume that you use data ingested into Adobe Experience Platform.
 
 >[!IMPORTANT]
 >
@@ -20,15 +20,17 @@ See the high-level Customer Journey Analytics architecture shown earlier in [Ove
 
 The dataset in the architecture above can originate from various sources: 
 
--   batch data, 
+- batch data, 
 
--   streaming data, 
+- streaming data, 
 
--   data from a current Adobe Analytics deployment, 
+- data from a current Adobe Analytics deployment, 
 
--   data from tracking your website / mobile app using the Adobe Experience Platform Web/Mobile SDK, or
+- data from tracking your website / mobile app using the Adobe Experience Platform Web/Mobile SDK,
 
--   data coming from a third-party data provider for which Adobe provides a source connector. 
+- data from tracking a desktop application, console game, set-top box or IoT device using the Adobe Experience Platform Edge Network Server API, or
+
+- data coming from a third-party data provider for which Adobe provides a source connector. 
 
 And you can have many of these datasets.
 
@@ -40,11 +42,26 @@ You already have Adobe Analytics deployed and want to ingest this data in Adobe 
 
 See [Ingest and use data from traditional Adobe Analytics](./analytics.md) for more information.
 
-## Ingest and use data via the Adobe Experience Platform Web SDK and the Edge Network
+
+## Ingest and use data via the Edge Network 
+
+### Using the Adobe Experience Platform Web SDK
 
 You want to analyze your website with Adobe technology, potentially migrating from another solution or start tracking your person's behavior. You want to follow Adobe's best practices for implementation, which is using the Adobe Experience Platform SDKs and Edge Network, to ingest the data. Then you can use, combine, and analyze the ingested data with data from other channels and data sources in Customer Journey Analytics.
 
-See [Ingest and use data via the Adobe Experience Platform Web SDK and the Edge Network](./aepwebsdk.md) for more information.
+See [Ingest and use data via the Adobe Experience Platform Web SDK](./aepwebsdk.md) for more information.
+
+### Using the Adobe Experience Platform Mobile SDK
+
+You want to analyze your mobile app with Adobe technology, potentially migrating from another solution or start tracking a person's behavior in the app from scratch. You want to follow Adobe's best practices for implementation, which is using the Adobe Experience Platform SDKs and Edge Network, to ingest the data. Then you can use, combine, and analyze the ingested data with data from other channels and data sources in Customer Journey Analytics.
+
+See [Ingest and use data via the Adobe Experience Platform Mobile SDK](./aepmobilesdk.md) for more information.
+
+### Using the Adobe Experience Platform Edge Network Server API
+
+You want to analyze your desktop application, game as played on a game console, usage of a video streaming application on a set-top box or your IoT device with Adobe technology. Potentially migrating from another solution or start tracking a person's behavior on these devices from scratch. You want to follow Adobe's best practices for implementation, which is using the Adobe Experience Platform Edge Network Server APIs and Edge Network, to ingest the data. Then you can use, combine, and analyze the ingested data with data from other channels and data sources in Customer Journey Analytics.
+
+See [Ingest and use data via the Adobe Experience Platform Edge Network Server API](./serverapi.md) for more information.
 
 ## Ingest and use batch data
 

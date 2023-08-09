@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 hide: yes
 hidefromtoc: yes
 ---
+
 # Cross-Channel Analytics overview
 
 **Journey IQ: Cross-Channel Analytics** is a feature that allows you to re-key a dataset's person ID, which enables a seamless combination of multiple datasets. CCA looks at user data from both authenticated and unauthenticated sessions to generate a stitched ID. Using Cross-Channel Analytics, you can answer questions such as:
@@ -48,7 +49,7 @@ Cross-Channel Analytics is a groundbreaking and robust feature, but has limitati
 * Custom ID maps used in your organization are not supported.
 * The Cross-Device Private graph is not supported.
 * Cross-Channel Analytics does not transform the field used for stitching in any manner. Field-based stitching uses the value in the specified field as it exists in the unstitched dataset within data lake. The stiching process is case sensitive. For example, if sometimes the word 'Bob' appears in the field, and sometimes the word 'BOB' appears, these will be treated as two separate people.
-* Given field-based stitching is case-sensitive, for Analytics datasets generated through the Analytics Source Connector, Adobe recommends reviewing any VISTA rules or processing rules that apply to the transient ID field to ensure that none of these rules are introducing new forms of the same ID. For example, you should ensure that no VISTA or processing rules are introducing lowercasing to the transient ID field on only a portion of the events.
+* Given field-based stitching is case-sensitive, for Analytics datasets generated through the Analytics source connector, Adobe recommends reviewing any VISTA rules or processing rules that apply to the transient ID field to ensure that none of these rules are introducing new forms of the same ID. For example, you should ensure that no VISTA or processing rules are introducing lowercasing to the transient ID field on only a portion of the events.
 * Field-based stitching does not combine or concatenate fields. 
 * The transient ID field should contain a single type of ID (i.e. IDs from a single namespace). For instance, the transient ID field should not contain a combination of login IDs and email IDs.
 * If multiple events occur with the same timestamp for the same persistent ID, but with different values in the transient ID field, field-based stitching will choose based on alphabetical order. So if persistent ID A has two events with the same timestamp and one of the events specifies Bob and the other specifies Ann, field-based stitching will choose Ann.

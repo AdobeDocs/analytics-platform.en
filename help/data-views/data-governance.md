@@ -18,7 +18,7 @@ The following labels are of special interest to Customer Journey Analytics:
 >
 >Data usage labels are not automatically propagated to stitched datasets. They can, however, be added manually.
 
-Labeling in itself does not mean that these data usage labels are enforced. That's what policies are used for. You create your policies via the [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=en) in Experience Platform.
+Labeling in itself does not mean that these data usage labels are enforced. That's what policies are used for. You create your policies using the [Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=en) or via the [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=en) in Experience Platform.
 
 Two Adobe-defined policies are surfaced in Customer Journey Analytics and affect reporting and download/sharing:
 

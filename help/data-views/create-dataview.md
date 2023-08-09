@@ -111,6 +111,11 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 
 ![Filter fields](assets/dataview-components-filter.png)
 
+>[!TIP]
+>
+>If the components do not load properly in your data view and you see an error message instead, please refer to [Lack of permissions](../troubleshooting/lack-of-permissions.md) for a resolution.
+
+
 
 ## Settings
 
@@ -125,6 +130,6 @@ You can add filters that apply to an entire data view. This filter is applied to
 
 ### Session settings
 
-Determine the time period of inactivity between events before a session expires and a new one is started. A time period is required. You can optionally also force a new session to start when an event contains a certain metric.
+Determine the time period of inactivity between events before a session expires and a new one is started. A time period is required. You can optionally also force a new session to start when an event contains a certain metric. See [Context-aware sessions](context-aware-sessions.md) for more details.
 
 Once all desired settings are specified, click **[!UICONTROL Save and finish]**.

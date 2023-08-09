@@ -7,7 +7,7 @@ feature: Connections
 ---
 # Create a connection
 
-A new Connections workflow was recently launched in Customer Journey Analytics. The new connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with assistive workflow. You provided detailed dataset selection, configuration, and review experience with critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more to reduce the risk of wrong connection configuration. Here is an overview of the new capabilities:
+ The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with assistive workflow. It provides detailed dataset selection, configuration, and review experience with critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
 
 * You can enable a rolling data retention window when you create the connection.
 * You can add to and remove datasets from a connection. (Removing a dataset removes it from the connection and impacts any associated data views and underlying Analysis Workspace projects.)
@@ -16,6 +16,10 @@ A new Connections workflow was recently launched in Customer Journey Analytics. 
 * You can import existing data per dataset.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+
+>[!IMPORTANT]
+>
+>You must have the **Select** package in order to add unlimited numbers of datasets to a connection. The **Foundation** package is limited to one dataset. Contact your administrator if you're unsure what Customer Journey Analytics package you have.​ 
 
 ## Create and configure the connection {#create-connection}
 
@@ -64,7 +68,7 @@ The new workflow lets you add an Experience Platform dataset when you create a c
     | **[!UICONTROL Timestamp]** | For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. |
     | **[!UICONTROL Data source type]** | Select a type of data source. <br/>Types of data sources include: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>This field is used to survey the types of data sources in use. |
     | **[!UICONTROL Import new data]** | Select this option if you want to establish an ongoing connection, so that any new data batches that get added to the datasets in this connection automatically flow into Workspace. Can be set to [!UICONTROL On] or [!UICONTROL Off]. |
-    | **[!UICONTROL Dataset backfill]** | Select **[!UICONTROL Request backfill]** to backfill historical data.<ul><li>You can backfill each dataset individually.</li><li>You prioritize new data added to a dataset in the connection, so this new data has the lowest latency.</li><li>Any backfill (historical) data is imported at a slower rate. The latency is influenced by how much historical data that you have.</li><li>The Adobe Analytics Source Connector imports up to 13 months of data  (irrespective of size) for production sandboxes. The backfill in non-production sandboxes is limited to 3 months.</li></ul> |
+    | **[!UICONTROL Dataset backfill]** | Select **[!UICONTROL Request backfill]** to backfill historical data.<ul><li>You can backfill each dataset individually.</li><li>You prioritize new data added to a dataset in the connection, so this new data has the lowest latency.</li><li>Any backfill (historical) data is imported at a slower rate. The latency is influenced by how much historical data that you have.</li><li>The Analytics source connector imports up to 13 months of data  (irrespective of size) for production sandboxes. The backfill in non-production sandboxes is limited to 3 months.</li></ul> |
     | **[!UICONTROL Backfill status]** | Possible status indicators are:<ul><li>Success</li><li>X backfill(s) processing</li><li>Off</li></ul> |
     | **[!UICONTROL Dataset ID]** | This ID is automatically generated. |
     | **[!UICONTROL Description]** | The description given to this dataset when it was created. |
