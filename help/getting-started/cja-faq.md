@@ -94,7 +94,7 @@ Your entitlement to Customer Journey Analytics allows you to ingest data into Ex
 
 +++**How do I get [!UICONTROL Adobe Analytics] data into [!UICONTROL Customer Journey Analytics]?**
 
-[!UICONTROL Adobe Analytics] data can be connected to Experience Platform through the [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Most [!UICONTROL Adobe Analytics] fields are brought over in XDM format, but other fields are not yet available.
+[!UICONTROL Adobe Analytics] data can be connected to Experience Platform through the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Most [!UICONTROL Adobe Analytics] fields are brought over in XDM format, but other fields are not yet available.
 
 +++
 

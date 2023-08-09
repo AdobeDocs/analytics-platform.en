@@ -38,6 +38,8 @@ To display a currency for a metric:
 
 ### Convert and display currency
 
+{{release-limited-testing-section}}
+
 To enable the conversion of a currency for one or more metrics:
    
 - Set up your Customer Journey Analytics connection to contain at least one event dataset that holds a currency code dimension for every event containing a currency metric. That currency code dimension uses an alphabetic currency code conforming to the [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard for representing currencies. These values should be in full uppercase format such as USD for $, EUR for &euro;, GBP for £. 

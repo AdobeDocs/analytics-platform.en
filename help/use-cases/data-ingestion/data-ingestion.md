@@ -11,7 +11,7 @@ You have a number of options when it comes to ingesting data into Customer Journ
 
 ## Ingest data from traditional Adobe Analytics
 
-This workflow utilizes the Adobe Analytics Source Connector and varies depending on whether you use DTM or Launch as a Tag Manager.
+This workflow utilizes the Analytics source connector and varies depending on whether you use DTM or Launch as a Tag Manager.
 
 ### Via tags in Adobe Experience Platform (formerly called [!UICONTROL Launch])
 
@@ -45,7 +45,7 @@ Adobe Experience Platform brings data from multiple sources together in order to
 
 Review this tutorial on how to [Analyze Google Analytics Data using Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=en) for detailed steps.
 
-## Use Bulk Data Insertion API to get data into Analytics, then ingest via Adobe Source Connector in Experience Platform
+## Use Bulk Data Insertion API to get data into Analytics, then ingest via Analytics source connector in Experience Platform
 
 1. [Use Bulk Data Insertion API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md) to submit server-side collection data to Adobe Analytics. It lets you submit CSV-formatted files containing event data.
 1. [Create an Adobe Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) to bring this consumer data into Adobe Experience Platform.

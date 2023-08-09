@@ -13,6 +13,17 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **August 2023** | | 
+| Adobe Customer Journey Analytics feature support | Added more information in the *Supported in a new way* table on the sessionization capabilities in Customer Journey Analytics compared to Adobe Analytics. [Learn more](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) | 
+| Evolution from Adobe Analytics | Updated the *(Re-)Configure Marketing Channels* section with a reference to the Derived fields Marketing channels function template. [Learn more](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) | 
+| Data ingestion quick start guides for mobile applications and other platforms | Added additional data ingestion quick start guides outlining how to ingest and use data from mobile applications or other platforms (like desktop applications, games on consoles, applications on set-top boxes and IoT devices) in Customer Journey Analytics. [Learn more](../data-ingestion/data-ingestion.md) | 
+| **July 2023** | | 
+| Context-aware sessions | Added a topic for this data view setting. [Learn more](/help/data-views/context-aware-sessions.md) |
+| Adobe Product Analytics | Adobe Product Analytics is a new way to interact with cross-channel data and insights in Customer Journey Analytics. These new capabilities enable Product teams to self-serve data and insights about their product experience through [guided analysis](/help/guided-analysis/overview.md) workflows​. |
+| Derived fields |  A [derived field](/help/data-views/derived-fields/derived-fields.md) allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. |
+| Expanded lookup support for Profile and Lookup data |  Provides the ability to add datasets as lookups of fields within Profile or Lookup datasets. Previously, only Event datasets were supported. [Learn more](/help/connections/create-connection.md) |
+| Report Builder enhancements  | <ul><li>[Filter from cell for multiple data blocks](/help/report-builder/select-data-view.md)</li><li>[Show and hide row and column headers](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=en#build-the-data-block)</li></ul> |
+| Experience Edge geo lookups | [Adobe Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en) is adding a geo lookup service that provides unified geographic data to all Experience Edge users. |
 | **June 2023** | | 
 | Cross-channel analysis and stitching | In anticipation of the upcoming changes to enable stitching and to further clarify how cross-channel analysis can be elevated using stitching, documentation related to Cross-Channel Analytics functionality is edited to refer to [cross-channel analysis](../use-cases/cross-channel/cross-channel.md) as the Customer Journey Analytics capability and use case, and [Stitching](../stitching/overview.md) as an important functionality to accomplish this. |
 | PowerBI & Tableau access to Customer Journey Analytics data views | The Customer Journey Analytics SQL Connector enables SQL access to data views that you have defined in Customer Journey Analytics. [Learn more](/help/data-views/sql-connector.md)|
@@ -78,18 +89,18 @@ The following updates were made to the Customer Journey Analytics documentation 
 | September 2022 | New topic on [Combo charts](/help/analysis-workspace/visualizations/combo-charts.md) in Workspace. |
 | September 2022 | New topic on [Experimentation panel](/help/analysis-workspace/c-panels/experimentation.md) in Workspace. |
 | **August 2022** | |
-| August 2022 | Adobe Experience Platform article on [Cross-region support for Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). |
+| August 2022 | Adobe Experience Platform article on [Cross-region support for Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). |
 | August 2022 | Significantly updated article on [Customer Journey Analytics access control](/help/admin/cja-access-control.md). |
 | August 2022 | New article on [Customer Journey Analytics support for Data Governance labels and policies](/help/data-views/data-governance.md). |
-| August 2022 | New article on [Comparing terminology for Analytics data passed through the Analytics Source Connector](/help/getting-started/aa-vs-cja/terminology.md). |
+| August 2022 | New article on [Comparing terminology for Analytics data passed through the Analytics source connector](/help/getting-started/aa-vs-cja/terminology.md). |
 | August 2022 | New documentation on [Audience publishing to Real-time Customer Profile](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html). |
 | **July 2022** | |
 | July 2022 | [Media Playback Time Spent panel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) documentation. |
 | July 2022 | [Media Concurrent Viewer panel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html) documentation. |
 | July 2022 | [First Session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) reporting documentation.  |
 | **June 2022** | |
-| June 2022 | New article on [AAID, ECID, AACUSTOMID and the Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html) |
-| June 2022 | New article on [Adobe Analytics processing rules, VISTA and classifications vs. Data Prep for the Analytics Source Connector](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
+| June 2022 | New article on [AAID, ECID, AACUSTOMID and the Analytics source connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html) |
+| June 2022 | New article on [Adobe Analytics processing rules, VISTA and classifications vs. Data Prep for the Analytics source connector](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
 | June 2022 | New article on [virtual reporting environments and sandbox environments](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md). |
 | June 2022 | New article on [comparing data processing across Adobe Analytics and Customer Journey Analytics reporting features](/help/getting-started/aa-vs-cja/data-processing-comparisons.md). |
 | June 2022 | New article on [combining report suites with different schemas](/help/use-cases/aa-data/combine-report-suites.md). |

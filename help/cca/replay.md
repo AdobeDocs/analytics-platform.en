@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 hide: yes
 hidefromtoc: yes
 ---
+
 # How replays work
 
 Cross-Channel Analytics makes two passes on data on a given connection:
