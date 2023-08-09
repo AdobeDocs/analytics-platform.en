@@ -20,7 +20,7 @@ As an example, after creating a [Connection](../connections/overview.md) and [Da
 >[!ENDSHADEBOX]
 
 
-To correct this error:
+To correct this error, you must have system or product administrator privilesges for an organization that has an Experience Platform product. See [Access control overview](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) for more information.
 
 1. Navigate to the Adobe Experience Platfom UI.
 
