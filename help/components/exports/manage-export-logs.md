@@ -10,7 +10,7 @@ feature: Components
 
 Export logs provide details about each export, and are generated any time Analysis Workspace data is exported to the cloud. (For information about how data can be exported to the cloud, see [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md).) 
 
-You can view details about each export logs, filter and search for logs, and manage logs.
+You can view details about each export logs, filter and search for logs, and manage logs. Logs cannot be deleted.
 
 ## Retry an export
 
@@ -39,18 +39,6 @@ This option is not available when selecting multiple logs.
    <!-- add screenshot? -->
 
 1. Select [!UICONTROL **Open project**].
-
-## Delete a log
-
-You can delete logs. Deleting logs does not delete the export associated with the selected logs.
-
-1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
-
-1. Select the [!UICONTROL **Logs**] tab, then select one or more existing logs.
-
-   <!-- add screenshot? -->
-
-1. Select [!UICONTROL **Delete**].
 
 ## Log a ticket with Customer Care
 
