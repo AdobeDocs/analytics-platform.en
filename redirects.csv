@@ -41,5 +41,6 @@ source,destination
 /docs/analytics-platform/using/cca/overview.html,/docs/analytics-platform/using/stitching/overview.html
 /docs/analytics-platform/using/cca/replay.html,/docs/analytics-platform/using/stitching/explained.html
 /docs/analytics-platform/using/cca/faq.html,/docs/analytics-platform/using/stitching/faq.html
-/docs/analytics-platform/using/cja-workspace/workspace-faq/long-tail.html,/docs/analytics-platform/using/cja-workspace/workspace-faq/results-truncated.html
+/docs/analytics-platform/using/cja-workspace/workspace-faq/long-tail.html,/docs/analytics-platform/using/cja-components/dimensions/high-cardinality.html
 /docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/aepwebsdk.html,/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk.html
+/docs/analytics-platform/using/cja-workspace/workspace-faq/results-truncated.html,/docs/analytics-platform/using/cja-components/dimensions/high-cardinality.html
