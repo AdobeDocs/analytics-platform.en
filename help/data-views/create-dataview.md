@@ -111,6 +111,11 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 
 ![Filter fields](assets/dataview-components-filter.png)
 
+>[!TIP]
+>
+>If the components do not load properly in your data view and you see an error message instead, please refer to [Lack of permissions](../troubleshooting/lack-of-permissions.md) for a resolution.
+
+
 
 ## Settings
 

@@ -328,6 +328,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Troubleshooting {#troubleshooting}
   + [Compare your Adobe Analytics data to Customer Journey Analytics data](../troubleshooting/compare.md)
   + [Consistency of metrics and audience membership counts between Real-time CDP and Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
+  + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
 
 + [Customer Journey Analytics glossary](../getting-started/cja-glossary.md)
 
