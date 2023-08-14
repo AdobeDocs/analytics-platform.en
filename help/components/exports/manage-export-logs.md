@@ -75,7 +75,7 @@ To find information you need, you can either filter the list of logs or search f
    |Filter | Description |
    |---------|----------|
    | Account | The account type that the export is associated with, such as Google Cloud Platform, Azure SAS, or Azure RBAC. | 
-   | Status | The status of the export. The following statuses are available: <ul><li>Pending</li><li>Completed</li><li>Failed</li></ul> | 
+   | Status | The status of the export. The following statuses are available: <ul><li>Pending</li><li>Completed</li><li>Failed<p>The following situations can result in a failed export. Hover over the Failed status to see details about the failure. <ul><li>Scheduled export expiration</li><li>Row limit reached for scheduled export </li></ul> </p></li></ul> | 
 
 ### Search for logs
 
@@ -116,3 +116,7 @@ You can configure what information is displayed for each export on the Exports p
    {style="table-layout:auto"}
 
 1. Ensure that any columns you want to display are selected. Selected columns appear on the Exports page and display the relevant information.
+
+## View audit logs
+
+Full-table exports are also tracked in the [Customer Journey Analytics audit logs](/help/privacy/audit-log.md). <!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->

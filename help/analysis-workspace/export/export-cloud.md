@@ -8,7 +8,7 @@ feature: Curate and Share
 
 {{select-package}}
 
-You can export full tables from Customer Journey Analytics and send it to designated cloud destinations. 
+You can export full tables from Customer Journey Analytics and send data to designated cloud destinations. 
 
 Other methods of exporting Customer Journey Analytics data are also available, as described in [Export overview](/help/analysis-workspace/export/export-project-overview.md).
 
@@ -34,27 +34,11 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
 ## Export full tables from Analysis Workspace
 
-You can export full tables from Analysis Workspace to designated cloud destinations. 
-
 >[!NOTE]
 >
->Consider the following when exporting full tables:
->* Tables must meet the following criteria to be supported with a full-table export:
->   * Include at least one dimension and one metric 
+>Tables must include at least one dimension and one metric to be supported with a full-table export. 
 >
->* The following features and components are not supported with a full-table export: (Analysis Workspace prompts you to remove these items from your table when performing an export)
->
->   * Percentages
->   * Totals
->   * Search filtering
->   * Static rows
->   * Sorting <!-- move this higher and in importance. Add that for small data sets it might be sorted, but on larger data sets there won't be any sorting. -->
->   * Date ranges
->   * Calculated metrics that use a function in the metric definition (see [Use functions](/help/components/calc-metrics/cm-workflow/cm-using-functions.md) for more information)
->   * Calculated metrics that use a non-default attribution model (see the *Use non-default attribution model* section in [Column settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) for more information)
->   * Components that have been restricted by an administrator from being exported (see the *Filter on Data Governance policies in data views* section in [Labels and policies](/help/data-views/data-governance.md) for more information)
->   * Breakdowns that exceed 5 dimensions (breakdowns are converted and added as a secondary dimension)
-> * Sorting is not supported for most data sets. Data might be sorted for small data sets.  
+>For information about other restrictions associated with full-table exports, see [Features and components not supported with full-table exports](#features-and-components-not-supported-with-full-table-exports).
 
 To export full tables from Analysis Workspace:
 
@@ -64,7 +48,7 @@ To export full tables from Analysis Workspace:
 
 1. Select [!UICONTROL **Export full table**].
 
-1. On the [!UICONTROL **New export**] dialog box, specify the following information:
+1. In the [!UICONTROL **New export**] dialog box, specify the following information:
 
    |Field name | Function | 
    |---------|----------|
@@ -89,9 +73,40 @@ To export full tables from Analysis Workspace:
 
 1. Select ...
 
-## Manage exports
+## Features and components not supported with full-table exports
+
+### Unsupported features
+
+The following features are not supported and are automatically removed from full-table exports:
+
+* Percentages
+* Totals
+* Search filtering
+* Static rows
+* Date aligning
+* Dynamic dimensions
+* Dimensions in the first breakdown are converted and added as a secondary dimension in the row of the exported table; any other breakdowns are not included in the table
+* Sorting is not supported for most data sets; data might be sorted for small data sets
+* Attribution models (in calculated metrics and on metric columns)
+
+### Unsupported components
+
+The following components are not supported, and Analysis Workspace prompts you to remove them from your table when performing a full-table export:
+
+* Calculated metrics that use advanced functions in the metric definition (see [Advanced functions](/help/components/calc-metrics/cm-adv-functions.md) for more information)
+* Calculated metrics that use a non-default attribution model (see the *Use non-default attribution model* section in [Column settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) for more information)
+* Components that have been restricted by an administrator from being exported (see the *Filter on Data Governance policies in data views* section in [Labels and policies](/help/data-views/data-governance.md) for more information)
+* In table columns:
+  * Date ranges
+  * Dimensions
+* In table rows:
+  * Calculated metrics
+  * Metrics
+  * Date ranges
+  * Filters
+
+ ## Manage exports
 
 After data is exported from Analysis Workspace, you can edit, re-export, duplicate, tag, or delete existing exports, as described in [Manage exports](/help/components/exports/manage-exports.md). 
 
 You can also retry or log support tickets for failed exports, as described in [Manage export logs](/help/components/exports/manage-export-logs.md).
-
