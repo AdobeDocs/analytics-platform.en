@@ -85,6 +85,8 @@ The following features are not supported and are automatically removed from full
 * Static rows
 * Date aligning
 * Dynamic dimensions
+
+  For more information, see [Dynamic vs static dimension items in freeform tables](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 * Dimensions in the first breakdown are converted and added as a secondary dimension in the row of the exported table; any other breakdowns are not included in the table
 * Sorting is not supported for most data sets; data might be sorted for small data sets
 * Attribution models (in calculated metrics and on metric columns)
