@@ -21,7 +21,7 @@ To define the context of a session for a data view:
 
    1. Enter a value for **[!UICONTROL Session timeout]** in [!UICONTROL minute(s)], [!UICONTROL hour(s)], [!UICONTROL day(s)], or [!UICONTROL week(s)]. The session timeout determines how long a session can be idle (no events occur) before starting a new session.
 
-      Use a short session timeout (for example 30 minutes) if you are interested in analyzing mostly online interations, for example analyzing whether profiles visiting your online store product pages also did add products to their cart or even purchased online.
+      Use a short session timeout (for example 30 minutes) if you are interested in analyzing mostly online interactions. For example, analyzing whether profiles visiting your online store product pages did add products to their cart or even purchased online.
 
       Use a long session timeout (for example 3 month) if you are combining online and offline data and want to analyze whether customers that have purchased one or more of your products, have called your contact center within the first three months after their purchase.
 
