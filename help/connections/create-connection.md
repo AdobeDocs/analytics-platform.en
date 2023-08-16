@@ -17,9 +17,9 @@ feature: Connections
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
 
->[!IMPORTANT]
->
->You must have the **Select** package in order to add unlimited numbers of datasets to a connection. The **Foundation** package is limited to one dataset. Contact your administrator if you're unsure what Customer Journey Analytics package you have.​ 
+## Prerequisites
+
+You must have the **Select** package in order to add unlimited numbers of datasets to a connection. The **Foundation** package is limited to one dataset. Contact your administrator if you're unsure what Customer Journey Analytics package you have.​ 
 
 ## Create and configure the connection {#create-connection}
 
