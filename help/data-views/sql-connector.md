@@ -5,12 +5,13 @@ solution: Customer Journey Analytics
 feature: SQL Connector
 hide: yes
 hidefromtoc: yes
-badgeCJASQLConnector: label="New Feature" type="Positive"
 exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
 ---
 # SQL Connector
 
 {{release-limited-testing}}
+
+{{select-package}}
 
 The [!DNL Customer Journey Analytics SQL Connector] enables SQL access to the [data views](./data-views.md) that you have defined in Customer Journey Analytics. Your data engineers and analysts might be more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that Customer Journey Analytics users are using when creating their Analysis Workspace projects.
 

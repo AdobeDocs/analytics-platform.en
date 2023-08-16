@@ -19,6 +19,8 @@ You benefit from cross-channel analysis if you combine one or more of your stitc
 
 ## Prerequisites
 
+{{select-package}}
+
 >[!IMPORTANT]
 >
 >Failure to meet all prerequisites can result in the inability to properly conduct cross-channel analysis.
