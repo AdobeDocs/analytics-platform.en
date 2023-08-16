@@ -149,6 +149,8 @@ To use the template, you have to specify the correct parameters for each functio
 
 ## Function reference
 
+{{select-package}}
+
 For each supported function, find details below on:
 
 - specifications: 
