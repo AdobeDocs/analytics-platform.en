@@ -72,6 +72,27 @@ If the Persistent ID field is blank on an event in a dataset being stitched , th
 
 +++
 
+
++++**What happens if the Transient ID field in one or more events has placeholder values, like 'Undefined'?**
+
+Be cautious of 'person collapse', which occurs when stitching is applied to data that uses placeholder values for Transient IDs. In the example table below, undefined person IDs originating from a dataset sourced from a CRM system are populated with the value 'Undefined' resulting in incorrect representation of persons.
+
+| Event | Timestamp | Persistent ID (Cookie ID) | Transient ID (Login ID) | Stitched ID (after replay) | 
+|---|---|---|---|---|
+| 1 | 2023-05-12 12:01 | 123 | - | **Cory** |
+| 2 | 2023-05-12 12:02 | 123 | Cory  | **Cory** |
+| 3 | 2023-05-12 12:03 | 456 | Undefined | **Undefined** | 
+| 4 | 2023-05-12 12:04 | 456 | - | **Undefined**|
+| 5 | 2023-05-12 12:05 | 789 | Undefined | **Undefined** |
+| 6 | 2023-05-12 12:06 | 012 | Undefined | **Undefined** | 
+| 7 | 2023-05-12 12:07 | 012 | - | **Undefined** | 
+| 8 | 2023-05-12 12:03 | 789 | Undefined | **Undefined** |
+| 9 | 2023-05-12 12:09 | 456 | - | **Undefined** |
+| 10 | 2023-05-12 12:02 | 123 | - | **Cory** |
+| | | **4 devices** | **2 people**:<br/>Events 1, 4, 7, 9, 10 dropped| **2 people**:<br/>Cory, Unauthenticated (collapsed to one person) |
+
++++
+
 +++**How do metrics in Customer Journey Analytics stitched datasets compare with similar metrics in Customer Journey Analytics unstitched datasets and with  Adobe Analytics?**
 
 Certain metrics in Customer Journey Analytics are similar to metrics in traditional Analytics, but others are different, depending on what you are comparing. The table below compares several common metrics:

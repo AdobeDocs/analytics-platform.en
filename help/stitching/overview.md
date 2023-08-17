@@ -111,10 +111,14 @@ Stitching is a groundbreaking and robust feature, but has limitations on how it 
 * The transient ID field should contain a single type of ID ( IDs from a single namespace). For instance, the transient ID field should not contain a combination of login IDs and email IDs.
 * If multiple events occur with the same timestamp for the same persistent ID, but with different values in the transient ID field, stitching selects the ID based on alphabetical order. So if persistent ID A has two events with the same timestamp and one of the events specifies Bob and the other specifies Ann, stitching selects Ann.
 * If a device is shared by multiple people and the total number of transitions between users exceeds 50,000, Customer Journey Analytics stops stitching data for that device.
+* Be cautious of scenarios where the transient IDs contain placeholder values, for example 'Undefined'. See [FAQ](faq.md) for more information.
 
 Do not confuse stitching with:
 
 * The merge of two or more datasets. Stitching applies to one dataset only. Merging of datasets occurs as a result of setting up a Customer Journey Analytics connection and selecting the same Person ID across the selected datasets in the connection.
 
 * The join of two datasets. In Customer Journey Analytics, a join is often used for lookups or classifications in Analysis Workspace. Although stitching uses join functionality, the process itself involves much more than joins.
+
+
+
 
