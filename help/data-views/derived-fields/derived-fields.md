@@ -403,6 +403,11 @@ The following constraints apply and are enforced when *selecting* and *setting* 
 
 Defines a set of values that are replaced by corresponding values in a new derived field.
 
+>[!NOTE]
+>
+>This function was originally named Lookup but has been renamed to Classify to accomodate a fortcoming Lookup function with completely different functionality.
+
+
 +++ Details
 
 
