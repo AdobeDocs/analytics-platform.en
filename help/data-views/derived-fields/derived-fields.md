@@ -167,6 +167,10 @@ For each supported function, find details below on:
 
 - constraints (if applicable).
 
+>[!NOTE]
+>
+>The Lookup function has been renamed to [Classify](#classify). See the [Classify](#classify) function for more information.
+
 <!-- CASE WHEN -->
 
 ### Case When
@@ -403,13 +407,14 @@ The following constraints apply and are enforced when *selecting* and *setting* 
 
 Defines a set of values that are replaced by corresponding values in a new derived field.
 
->[!NOTE]
->
->This function was originally named Lookup but has been renamed to Classify to accommodate a forthcoming Lookup function with different functionality.
+
 
 
 +++ Details
 
+>[!NOTE]
+>
+>This function was originally named Lookup but has been renamed to Classify to accommodate a forthcoming Lookup function with different functionality.
 
 ## Specifications {#classify-io}
 
