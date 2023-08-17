@@ -405,7 +405,7 @@ Defines a set of values that are replaced by corresponding values in a new deriv
 
 >[!NOTE]
 >
->This function was originally named Lookup but has been renamed to Classify to accomodate a fortcoming Lookup function with completely different functionality.
+>This function was originally named Lookup but has been renamed to Classify to accommodate a forthcoming Lookup function with different functionality.
 
 
 +++ Details
@@ -687,7 +687,7 @@ Merges values from two different fields into a new derived field.
 
 ## Use case {#merge-fields-uc}
 
-You would like to create a new dimension made up from the page name field and the call reason field with the intent of analyzing the journey across channels.
+You would like to create a dimension made up from the page name field and the call reason field with the intent of analyzing the journey across channels.
 
 ### Data before {#merge-fields-uc-databefore}
 
@@ -753,7 +753,7 @@ Replaces a value from a field using a regular expression into a new derived fiel
 
 ## Use case {#regex-replace-uc}
 
-You would like to grab a potion of a URL and use that as a unique page identifier to analyze traffic. You will use `[^/]+(?=/$|$)` for the regular expression to capture the end of the URL and `$1` as the output pattern.
+You would like to grab a potion of a URL and use that as a unique page identifier to analyze traffic. You use `[^/]+(?=/$|$)` for the regular expression to capture the end of the URL and `$1` as the output pattern.
 
 ### Data before {#regex-replace-uc-databefore}
 
