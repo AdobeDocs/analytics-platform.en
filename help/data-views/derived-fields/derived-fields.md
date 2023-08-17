@@ -420,7 +420,7 @@ Defines a set of values that are replaced by corresponding values in a new deriv
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>[!UICONTROL When value equals] and [!UICONTROL Replace values with]:</p><ul><li>String</li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>[!UICONTROL When value equals] and [!UICONTROL Replace values with]:</p><ul><li>String</li></ul><li>Show original values<ul><li>Boolean</li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -437,7 +437,7 @@ You are collecting [!DNL Hotel ID] in a dimension but would like to create a [!D
 | [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
 | [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
 | [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
-
+| [!DNL AMS789] | [!DNL Amsterdam] | 50 | [!DNL Okura] |
 {style="table-layout:auto"}
 
 **Current Report**
@@ -447,6 +447,7 @@ You are collecting [!DNL Hotel ID] in a dimension but would like to create a [!D
 | [!DNL SLC123] | 200 |
 | [!DNL LX342] | 198 |
 | [!DNL SFO456] | 190 |
+| [!DNL AMS789] | 150 |
 
 {style="table-layout:auto"}
 
@@ -468,15 +469,18 @@ You are collecting [!DNL Hotel ID] in a dimension but would like to create a [!D
 | [!DNL SLC123] | 
 | [!DNL LAX342] | 
 | [!DNL SFO456] |
+| [!DNL AMS789] | 
 
 {style="table-layout:auto"}
 
 
 ### Derived field {#classify-uc1-derivedfield}
 
-You define a `Hotel Name` derived field. You use the [!UICONTROL CLASSIFY] function to define a rule where you can classify values of the [!UICONTROL Hotel ID] field and replace with new values.
+You define a `Hotel Name` derived field. You use the [!UICONTROL CLASSIFY] function to define a rule where you can classify values of the [!UICONTROL Hotel ID] field and replace with new values. 
 
-![Screenshot of the Classify rule 1](assets/lookup-1.png)
+If you want to include original values that you have not defined as part of the values to classify (for example Hotel ID AMS789), ensure you select **[!UICONTROL Show original values]**. This ensures AMS789 will be part of the output for the derived field, despite that value not being classified.
+
+![Screenshot of the Classify rule 1](assets/classify-1.png)
 
 ### Data after {#classify-uc1-dataafter}
 
@@ -511,7 +515,7 @@ You have collected URLs instead of the friendly page name for several pages. Thi
 
 You define a `Page Name (updated)` derived field. You use the [!UICONTROL CLASSIFY] function to define a rule where you can classify values of your existing [!UICONTROL Page Name] field and replace with updated correct values.
 
-![Screenshot of the Classify rule 2](assets/lookup-2.png)
+![Screenshot of the Classify rule 2](assets/classify-2.png)
 
 ### Data after {#classify-uc2-dataafter}
 
