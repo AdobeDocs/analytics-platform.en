@@ -438,6 +438,7 @@ You are collecting [!DNL Hotel ID] in a dimension but would like to create a [!D
 | [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
 | [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
 | [!DNL AMS789] | [!DNL Amsterdam] | 50 | [!DNL Okura] |
+
 {style="table-layout:auto"}
 
 **Current Report**
