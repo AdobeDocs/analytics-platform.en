@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **August 2023** | | 
+| Moved content about managing scheduled projects | Created a new article in the Analytics Components Guide called [Scheduled projects](/help/components/scheduled-projects-manager.md). This content was previously located in the [Schedule projects](/help/analysis-workspace/curate-share/t-schedule-report.md) article in the Analytics Tools Guide. |
 | Adobe Customer Journey Analytics feature support | Added more information in the *Supported in a new way* table on the sessionization capabilities in Customer Journey Analytics compared to Adobe Analytics. [Learn more](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) | 
 | Evolution from Adobe Analytics | Updated the *(Re-)Configure Marketing Channels* section with a reference to the Derived fields Marketing channels function template. [Learn more](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) | 
 | Data ingestion quick start guides for mobile applications and other platforms | Added additional data ingestion quick start guides outlining how to ingest and use data from mobile applications or other platforms (like desktop applications, games on consoles, applications on set-top boxes and IoT devices) in Customer Journey Analytics. [Learn more](../data-ingestion/data-ingestion.md) | 
