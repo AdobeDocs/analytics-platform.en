@@ -23,7 +23,7 @@ To define the context of a session for a data view:
 
       Use a short session timeout (for example 30 minutes) if you are interested in analyzing mostly online interactions. For example, analyzing whether profiles visiting your online store product pages did add products to their cart or even purchased online.
 
-      Use a long session timeout (for example 3 month) if you are combining online and offline data and want to analyze whether customers that have purchased one or more of your products, have called your contact center within the first three months after their purchase.
+      Use a long session timeout (for example 3 months) if you are combining online and offline data and want to analyze whether customers that have purchased one or more of your products, have called your contact center within the first three months after their purchase.
 
 
    2. Select a metric from the **[!UICONTROL Drop a metric here]** list underneath **[!UICONTROL Start new session with a metric]**. Alternatively, you can drag and drop a metric from the left pane on the **[!UICONTROL Drop a metric field]**. The selected metric defines the start of a new session. You can define more than one metric.
