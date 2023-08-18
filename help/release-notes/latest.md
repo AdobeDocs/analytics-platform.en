@@ -14,7 +14,7 @@ These release notes cover the release period of August 9 to September 13, 2023. 
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Report Builder enhancements**  | <ul><li>Download scheduled tasks from the History tab where you can view the history of scheduled tasks. Download the workbook from that task. </li><li>Start date as dimension: allows users to surface the start date of the data block as a dimension in the data block output. </li></ul>| N/A | August 17, 2023 |
+| **Report Builder enhancements**  | <ul><li>You can download a scheduled task from the Workbooks tab then title it, save it, and share it. [Learn more](/help/report-builder/schedule-reportbuilder.md)</li><li>Start date as dimension allows you to surface the start date of the data block as a dimension in the data block output. [Learn more](/help/report-builder/create-a-data-block.md) </li></ul>| N/A | August 17, 2023 |
 | **Currency Conversion** |  Customer Journey is adding the  ability to support multiple currencies. You can convert a currency into another currency in data views settings. [Learn more](/help/data-views/component-settings/format.md) | N/A | August 31, 2023 |
 | **Support for A4T classifications in the Analytics Source Connector** | We are adding a correlation ID for easy joining of classification data for Adobe Target activities and experience events. | N/A | August 31, 2023 |
 | **Reporting Activity Manager** | Provides administrators with detailed visibility into reporting consumption for each connection, allowing admins to easily diagnose and then fix capacity issues during peak reporting times. | N/A | September 6, 2023 |

@@ -87,7 +87,7 @@ You can view and manage all scheduled workbooks in one place under the Workbooks
 
 1.  Select a workbook. Several tools are displayed that allow you to edit the workbook, edit the schedule task, pause and restart the schedule task, download a scheduled task report, or delete the schedule task.
 
-    ![Screenshot showing the workbook schedule icons.](./assets/schedule-icons.png){width="15%"}
+    ![Screenshot showing the workbook schedule icons.](./assets/schedule-icons.png){width="20%"}
 
 *  (Optional) Click the pencil icon to edit the workbook schedule task.
 
@@ -99,7 +99,7 @@ You can view and manage all scheduled workbooks in one place under the Workbooks
 
 *  (Optional) Click the trash can to delete the schedule task.
 
-    ![Screenshot showing the list of schedule tasks.](./assets/selected-workbook.png){width="20%"}
+    ![Screenshot showing the list of schedule tasks.](./assets/selected-workbook.png){width="40%"}
 
 ## Review the status of scheduled tasks
 
