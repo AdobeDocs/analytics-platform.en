@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **August 2023** | | 
+| Report Builder enhancements | Updated content for [Schedule workbooks](/help/report-builder/schedule-reportbuilder.md) to provide information for downloading scheduled tasks. Updated content for  [Create a data block](/help/report-builder/create-a-data-block.md) to provide information for using Start date as a dimension. |
 | Moved content about managing scheduled projects | Created a new article in the Analytics Components Guide called [Scheduled projects](/help/components/scheduled-projects-manager.md). This content was previously located in the [Schedule projects](/help/analysis-workspace/curate-share/t-schedule-report.md) article in the Analytics Tools Guide. |
 | Adobe Customer Journey Analytics feature support | Added more information in the *Supported in a new way* table on the sessionization capabilities in Customer Journey Analytics compared to Adobe Analytics. [Learn more](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) | 
 | Evolution from Adobe Analytics | Updated the *(Re-)Configure Marketing Channels* section with a reference to the Derived fields Marketing channels function template. [Learn more](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) | 
