@@ -61,7 +61,7 @@ To build the data block, select report components, and then customize the layout
 
     Set the Start date as a dimension to clearly identify the start date of your data block. This is helpful if you have a regularly scheduled report that has a rolling date range or if you have an unconventional date range and you need to be clear of the start date.
 
-    ![Screenshot showing the Start date in the list of dimensions.](./assets/start-date-dimension.png)
+    ![Screenshot showing the Start date in the list of dimensions.](./assets/start-date-dimension.png){width="15%"}
 
 1.  Arrange the items in the Table pane to customize the layout of your data block.
 
