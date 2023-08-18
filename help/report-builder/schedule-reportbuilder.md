@@ -1,6 +1,6 @@
 ---
 title: How to schedule workbooks using Report Builder in Customer Journey Analytics
-description: Describes how to use the schedule feature in Report Builder
+description: Learn how to use the schedule feature in Report Builder
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
@@ -85,17 +85,21 @@ You can view and manage all scheduled workbooks in one place under the Workbooks
 
 1.  In the Schedule section of the Report Builder hub, click the Workbooks tab. Use this view to see a list of all scheduled workbooks.
 
-1.  Select a workbook. Several tools are displayed that allow you to edit the workbook, change the schedule, pause and restart the schedule, or delete the schedule.
+1.  Select a workbook. Several tools are displayed that allow you to edit the workbook, edit the schedule task, pause and restart the schedule task, download a scheduled task report, or delete the schedule task.
 
-    ![alt description](./assets/edit-icons.png){width="55%"}
+    ![Screenshot showing the workbook schedule icons.](./assets/schedule-icons.png){width="15%"}
 
-*  (Optional) Click the pencil icon to edit the workbook schedule.
+*  (Optional) Click the pencil icon to edit the workbook schedule task.
 
 *  (Optional) Click the clock icon to view a history of each scheduled task.
 
-*  (Optional) Click the pause icon to pause and restart the distribution schedule. This is helpful if you need to modify the workbook before the workbook is sent. Click the pause icon again when you want to restart the distribution.
+*  (Optional) Click the pause icon to pause and restart the distribution schedule task. This is helpful if you need to modify the workbook before the workbook is sent. Click the pause icon again when you want to restart the distribution.
 
-*  (Optional) Click the trash can to delete the schedule.
+*  (Optional) Click the download icon to download a copy of the workbook schedule task.
+
+*  (Optional) Click the trash can to delete the schedule task.
+
+    ![Screenshot showing the list of schedule tasks.](./assets/selected-workbook.png){width="20%"}
 
 ## Review the status of scheduled tasks
 

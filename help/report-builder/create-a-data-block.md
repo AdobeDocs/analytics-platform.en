@@ -57,6 +57,12 @@ To build the data block, select report components, and then customize the layout
     - Date components are added to the Column section.
     - Filter components are added to the Filters section.
 
+    **Start date as a Dimension**
+
+    Set the Start date as a dimension to clearly identify the start date of your data block. This is helpful if you have a regularly scheduled report that has a rolling date range or if you have an unconventional date range and you need to be clear of the start date.
+
+    ![Screenshot showing the Start date in the list of dimensions.](./assets/start-date-dimension.png){width="15%"}
+
 1.  Arrange the items in the Table pane to customize the layout of your data block.
 
     Drag and drop components in the Table pane to reorder components or right-click a component name and select from the options menu.
