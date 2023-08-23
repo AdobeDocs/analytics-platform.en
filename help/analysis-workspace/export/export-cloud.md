@@ -36,9 +36,7 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
 >[!NOTE]
 >
->Tables must include at least one dimension and one metric to be supported with a full-table export. 
->
->For information about other restrictions associated with full-table exports, see [Features and components not supported with full-table exports](#features-and-components-not-supported-with-full-table-exports).
+>Before you export data as described in this section, make sure your table meets the [Export requirements](#export-requirements).
 
 To export full tables from Analysis Workspace:
 
@@ -73,7 +71,11 @@ To export full tables from Analysis Workspace:
 
 1. Select ...
 
-## Features and components not supported with full-table exports
+## Export requirements
+
+### Minimum requirements
+
+Tables must include at least one dimension in the row and one metric in each column in order to be supported with a full-table export. 
 
 ### Unsupported features
 
