@@ -10,6 +10,8 @@ exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 
 You can export Customer Journey Analytics data by sending it to selected recipients through email. You can send files ad hoc, or you can configure files to be sent on a schedule. Files can be sent in CSV or PDF format.
 
+Any tags applied to the project are automatically applied to the export.
+
 Other methods of exporting Customer Journey Analytics data are also available, as described in [Export overview](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Send file now {#now}
