@@ -32,6 +32,8 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
 * Export files in CSV or PDF format. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
 
+* Export tables that include multiple dimensions.
+
 ## Export full tables from Analysis Workspace
 
 >[!NOTE]
@@ -110,7 +112,7 @@ The following components are not supported, and Analysis Workspace prompts you t
 
 Full table export supports calculated metrics that use a non-default attribution model (as described in the *Use non-default attribution model* section in [Column settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)). 
 
-When metric attribution is applied to a report that contains multiple dimensions, it does not override the allocation models applied to each of the dimensions in the report. (In a single-dimensional report, it does override the allocation model.) 
+When metric attribution is applied to a report that contains multiple dimensions, it does not override the allocation models applied to each of the dimensions in the report. In a single-dimensional report, attribution does override the allocation model. For more information, see [Persistence component settings](/help/data-views/component-settings/persistence.md) and [Attribution component settings](/help/data-views/component-settings/attribution.md). 
 
 ## Manage exports
 

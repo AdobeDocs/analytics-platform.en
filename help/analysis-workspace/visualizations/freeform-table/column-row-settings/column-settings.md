@@ -50,7 +50,7 @@ Conditional formatting applies formatting to upper, midpoint, and lower limits t
 
 Allows you to override the default attribution model set in [Data views](/help/data-views/component-settings/attribution.md).
 
-1. Click the Settings (gear) icon in a Freeform Table column.
+1. Click the Settings (gear) icon on a metric in a Freeform Table column.
 
    ![Attribution checkbox](assets/attribution-checkbox.png)
 
