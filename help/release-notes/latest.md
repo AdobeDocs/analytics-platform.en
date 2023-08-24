@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (August 2023)
 
-**Last update**: August 17, 2023
+**Last update**: August 24, 2023
 
 These release notes cover the release period of August 9 to September 13, 2023. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -15,10 +15,10 @@ These release notes cover the release period of August 9 to September 13, 2023. 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Report Builder enhancements**  | <ul><li>You can download a scheduled task from the Workbooks tab then title it, save it, and share it. [Learn more](/help/report-builder/schedule-reportbuilder.md)</li><li>Start date as dimension allows you to surface the start date of the data block as a dimension in the data block output. [Learn more](/help/report-builder/create-a-data-block.md) </li></ul>| N/A | August 17, 2023 |
-| **Currency Conversion** |  Customer Journey is adding the  ability to support multiple currencies. You can convert a currency into another currency in data views settings. [Learn more](/help/data-views/component-settings/format.md) | N/A | August 31, 2023 |
-| **Support for A4T classifications in the Analytics Source Connector** | We are adding a correlation ID for easy joining of classification data for Adobe Target activities and experience events. | N/A | August 31, 2023 |
-| **Reporting Activity Manager** | Provides administrators with detailed visibility into reporting consumption for each connection, allowing admins to easily diagnose and then fix capacity issues during peak reporting times. | N/A | September 6, 2023 |
-| **PowerBI & Tableau access to Customer Journey Analytics data views** | The Adobe Customer Journey Analytics SQL Connector enables SQL access to data views that you have defined in Customer Journey Analytics. Data engineers and analysts more familiar with Power BI, Tableau, or other business intelligence and visualization tools can now create reports and dashboards based on the same data views that Customer Journey Analytics users are using for their Analysis Workspace projects. [Learn more](/help/data-views/sql-connector.md)| N/A | September 13, 2023 |
+| **Currency Conversion** |  Customer Journey is adding the  ability to support multiple currencies. You can convert a currency into another currency in data views settings. [Learn more](/help/data-views/component-settings/format.md) | N/A | August 30, 2023 |
+| **Support for A4T classifications in the Analytics Source Connector** | We are adding a correlation ID for easy joining of classification data for Adobe Target activities and experience events. | N/A | September 11, 2023 |
+| **Reporting Activity Manager** | Provides administrators with detailed visibility into reporting consumption for each connection, allowing admins to easily diagnose and then fix capacity issues during peak reporting times. | N/A | September 12, 2023 |
+| **PowerBI & Tableau access to Customer Journey Analytics data views** | The Adobe Customer Journey Analytics SQL Connector enables SQL access to data views that you have defined in Customer Journey Analytics. Data engineers and analysts more familiar with Power BI, Tableau, or other business intelligence and visualization tools can now create reports and dashboards based on the same data views that Customer Journey Analytics users are using for their Analysis Workspace projects. [Learn more](/help/data-views/sql-connector.md)| N/A | September 12, 2023 |
 
 {style="table-layout:auto"}
 
