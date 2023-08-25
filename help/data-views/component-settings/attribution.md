@@ -30,6 +30,8 @@ You can set a default attribution model for a given metric by updating the metri
 >
 >* **When using the component in a report with *multiple dimensions*:** The component's attribution does not override the allocation models applied to each of the dimensions in the report.
 >
+>   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>
 > For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
 
 To update a component's default attribution model: 
