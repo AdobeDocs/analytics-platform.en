@@ -112,25 +112,9 @@ The following components are not supported, and Analysis Workspace prompts you t
 
 Full table export supports calculated metrics that use a non-default attribution model (as described in the *Use non-default attribution model* section in [Column settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)). 
 
-When metric attribution is applied to a report that contains multiple dimensions, it does not override the allocation models applied to each of the dimensions in the report. In a single-dimensional report, attribution does override the allocation model. For more information, see [Persistence component settings](/help/data-views/component-settings/persistence.md) and [Attribution component settings](/help/data-views/component-settings/attribution.md). 
+When metric attribution is applied to a report that contains multiple dimensions, it does not override the allocation models applied to each of the dimensions in the report. In a single-dimensional report, attribution does override the allocation model. Multi-dimensional reports are supported only when exporting data to the cloud, as described in this article.
 
-Questions: 
-
-* Clarification around how analytics overrides allocation when a non-default attribution is used. Both AA and CJA? -Same applies to both, but multi-dimension is only CJA. 
-
-* Flat view will only be CJA. 
-
-* Why do we override the allocation of a dimension when non-default attribution is used? (We currently do this with single-dimension tables.)
-
-  * You want it to override, or otherwise it gets confusing. Main use case: Analytics, someone has a campaign variable Last touch 30 days. You want to be able to look at that campaign variable with different attribution model, regardless of what allocation is set to. (we force a dimension to Last Touch allocation when using attribution). We don't force Last allocation, we just clear the allocation. 
-
-* With First allocation, when do we force it to last in context of a metric. 
-
-If the Attribution check box is set, then it overrides the allocation of any Dimension it applies to. It overrides in the Data Views manager where you set attribution, and in Workspace where you use a non-default attribution, and in the Calc metric builder. If any of these 3 are checked, then it removes attribution...
-
-With FTE with multiple dimensions, it ... 
-
-When you have multiple dimensions, it needs to have allocation applied to it, or we don't know what the relationship between those are. 
+For more information about allocation and attribution, see [Persistence component settings](/help/data-views/component-settings/persistence.md) and [Attribution component settings](/help/data-views/component-settings/attribution.md). 
 
 ## Manage exports
 
