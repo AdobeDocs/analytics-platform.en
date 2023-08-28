@@ -2,6 +2,7 @@
 title: Release view
 description: Compare performance across equal periods pre- and post-release.
 feature: Guided Analysis
+keywords: product analytics
 ---
 # [!UICONTROL Release] view
 
