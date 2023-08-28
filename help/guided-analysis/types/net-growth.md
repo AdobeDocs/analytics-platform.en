@@ -2,6 +2,7 @@
 title: Net growth view
 description: Are you gaining or losing users?
 feature: Guided Analysis
+keywords: product analytics
 ---
 # [!UICONTROL Net growth] view
 
