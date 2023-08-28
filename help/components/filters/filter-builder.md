@@ -39,7 +39,7 @@ You can add rule definitions and containers to define your filters. (For informa
 | **[!UICONTROL And/Or/Then]** | Assigns the [!UICONTROL AND/OR/THEN] operators between containers or rules. The THEN operator lets you [define sequential filters](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Metric]** | (Green sidebar) Metric that was dragged and dropped from the Metrics list. |
 | **[!UICONTROL X]** | (Delete) Lets you delete this part of the filter definition. |
-| **[!UICONTROL Create audience from filter]** | Creating an audience from a filter lets you share the filter it with Adobe Experience Platform for activation. [Learn more...](/help/components/audiences/audiences-overview.md) |
+| **[!UICONTROL Create audience from filter]** | Creating an audience from a filter lets you share the filter with Adobe Experience Platform for activation. [Learn more...](/help/components/audiences/audiences-overview.md) |
 | **[!UICONTROL Search component]** | Searches the list of dimensions, filters, or metrics. |
 | **[!UICONTROL Dimensions]** | (List) The list of dimensions you can include in the filter. Click the header to expand. |
 | **[!UICONTROL Metrics]** | The list of metrics you can include in the filter. Click the header to expand. |
