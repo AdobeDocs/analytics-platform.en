@@ -2,6 +2,7 @@
 title: Conversion trends view
 description: Track changes in conversion rate over time.
 feature: Guided Analysis
+keywords: product analytics
 ---
 # Conversion trends view
 
