@@ -72,7 +72,7 @@ To export full tables from Analysis Workspace:
 
 1. Select [!UICONTROL **Save**] to save the export.
 
-## Export requirements
+## Export requirements {#export-requirements}
 
 ### Minimum requirements
 
