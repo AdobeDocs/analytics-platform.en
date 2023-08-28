@@ -12,28 +12,6 @@ You can export full tables from Customer Journey Analytics and send data to desi
 
 Other methods of exporting Customer Journey Analytics data are also available, as described in [Export overview](/help/analysis-workspace/export/export-project-overview.md).
 
-## Advantages of exporting to the cloud
-
-Exporting Customer Journey Analytics data to the cloud allows you to: 
-
-* Export to a shared location, such as Google Cloud Platform, Microsoft Azure, Amazon S3, Snowflake, or Adobe Experience Platform.
-
-* Store large amounts of historical data.
-
-  This type of data can be used to detect long-term trends in order to gain business intelligence, and ultimately lead to better business decision-making.
-  
-* Export full tables that contain thousands or millions of rows. Other export methods allow a maximum of 50,000 rows.
-
-* Include calculated metrics in the exported Customer Journey Analytics data.
-
-* Structure data output as concatenated values (like Data Warehouse for Adobe Analytics).
-
-* Export ad hoc or on a schedule. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
-
-* Export files in CSV or PDF format. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
-
-* Export tables that include multiple dimensions.
-
 ## Export full tables from Analysis Workspace
 
 >[!NOTE]
@@ -70,7 +48,31 @@ To export full tables from Analysis Workspace:
    | Location name | The location on the account where you want the export data to be sent. <p>For more information, see [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).</p><p>You can select the [!UICONTROL **Add new location**] button to create a new location for an existing export account. |
    | Data Preview | Shows the estimated size, estimated number of rows, and number of breakdowns. | 
 
+   {style="table-layout:auto"}
+
 1. Select [!UICONTROL **Save**] to save the export.
+
+## Advantages of exporting to the cloud
+
+Exporting Customer Journey Analytics data to the cloud allows you to: 
+
+* Export to a shared location, such as Google Cloud Platform, Microsoft Azure, Amazon S3, Snowflake, or Adobe Experience Platform.
+
+* Store large amounts of historical data.
+
+  This type of data can be used to detect long-term trends in order to gain business intelligence, and ultimately lead to better business decision-making.
+  
+* Export full tables that contain thousands or millions of rows. Other export methods allow a maximum of 50,000 rows.
+
+* Include calculated metrics in the exported Customer Journey Analytics data.
+
+* Structure data output as concatenated values (like Data Warehouse for Adobe Analytics).
+
+* Export ad hoc or on a schedule. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
+
+* Export files in CSV or PDF format. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
+
+* Export tables that include multiple dimensions.
 
 ## Export requirements {#export-requirements}
 
@@ -122,3 +124,27 @@ For more information about allocation and attribution, see [Persistence componen
 After data is exported from Analysis Workspace, you can edit, re-export, duplicate, tag, or delete existing exports, as described in [Manage exports](/help/components/exports/manage-exports.md). 
 
 You can also retry or log support tickets for failed exports, as described in [Manage export logs](/help/components/exports/manage-export-logs.md).
+
+## Comparison of Full Table Export in Customer Journey Analytics to Data Warehouse in Adobe Analytics
+
+If you previously used Data Warehouse to export Adobe Analytics data, the following table can be helpful in helping to understand the differences between exporting full tables in Customer Journey Analytics versus exporting with Data Warehouse in Adobe Analytics.
+
+
+|Feature | Full Table Export in Customer Journey Analytics | Data Warehouse in Adobe Analytics |
+|---------|----------|---------|
+| Build a custom report | Yes | Yes |
+| Calculated metrics | Yes | No |
+| Segments | Yes | Yes |
+| Dimensions | Limit of 5 | Unlimited |
+| Metrics | Limit of 5 | Unlimited |
+| Reporting rows | Limit of 3, 30, 150, or 300, depending on tier | Unlimited |
+| Number of reports | Unlimited | Unlimited |
+| Ad hoc delivery | Yes | Yes |
+| Schedule recurring delivery | Yes | Yes |
+| Email delivery | No | Yes |
+| FTP / SFTP | No | Legacy support |
+| Azure | Yes | Yes |
+| Amazon S3 | Yes | Yes |
+| Google Cloud Platform | Yes | Yes |
+| Snowflake | Yes | No |
+| Delivery frequency | Daily | Hourly |
