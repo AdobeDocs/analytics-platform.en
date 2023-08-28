@@ -24,7 +24,7 @@ You can set a default attribution model for a given metric by updating the metri
 
 >[!NOTE]
 >
->Consider the following when updating a component's attribution to a non-default attribution model:
+>Consider the following when enabling attribution on a metric:
 >
 >* **When using the component in a report with *a single dimension*:** The component's attribution overrides the allocation model applied to the dimension in the report.
 >

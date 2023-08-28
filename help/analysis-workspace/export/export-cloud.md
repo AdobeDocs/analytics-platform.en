@@ -115,7 +115,7 @@ The following components are not supported, and Analysis Workspace prompts you t
 
 Full table export supports calculated metrics that use a non-default attribution model (as described in the *Use non-default attribution model* section in [Column settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)). 
 
-When metric attribution is applied to a report that contains multiple dimensions, it does not override the allocation models applied to each of the dimensions in the report. In a single-dimensional report, attribution does override the allocation model. Multi-dimensional reports are supported only when exporting data to the cloud, as described in this article.
+When metric attribution is applied to a report that contains multiple dimensions, it retains the allocation models applied to each of the dimensions in the report. In a single-dimensional report, attribution ignores the allocation model. Multi-dimensional reports are supported only when exporting data to the cloud, as described in this article.
 
 For more information about allocation and attribution, see [Persistence component settings](/help/data-views/component-settings/persistence.md) and [Attribution component settings](/help/data-views/component-settings/attribution.md). 
 
@@ -125,9 +125,9 @@ After data is exported from Analysis Workspace, you can edit, re-export, duplica
 
 You can also retry or log support tickets for failed exports, as described in [Manage export logs](/help/components/exports/manage-export-logs.md).
 
-## Comparison of Full Table Export in Customer Journey Analytics to Data Warehouse in Adobe Analytics
+## Comparison of Full Table Export (in Customer Journey Analytics) to Data Warehouse (in Adobe Analytics)
 
-If you previously used Data Warehouse to export Adobe Analytics data, the following table can be helpful in helping to understand the differences between exporting full tables in Customer Journey Analytics versus exporting with Data Warehouse in Adobe Analytics.
+If you previously used Data Warehouse to export Adobe Analytics data, the following table can help you understand the differences between exporting full tables in Customer Journey Analytics versus exporting data with Data Warehouse in Adobe Analytics.
 
 
 |Feature | Full Table Export in Customer Journey Analytics | Data Warehouse in Adobe Analytics |
