@@ -24,51 +24,29 @@ You can add rule definitions and containers to define your filters. (For informa
 
 ![](assets/segment_builder_ui_2.png)
 
-1. **[!UICONTROL Title]**: Name the filter.
-1. **[!UICONTROL Description]**: Provide a description for the filter. 
-1. **[!UICONTROL Tags]**: [Tag the filter](/help/components/filters/manage-filters.md) you are creating by picking from a list of existing tags or creating a new tag.
-1. **[!UICONTROL Definitions]**: This is where you [build and configure filters](/help/components/filters/filters-overview.md), add rules, and nest and sequence containers. 
-1. **[!UICONTROL Show]**: (Top Container selector.) Lets you select the top-level [container](/help/components/filters/filters-overview.md) ( [!UICONTROL Person], [!UICONTROL Session], [!UICONTROL Event]). The default top-level container is the Event container.
-1. **[!UICONTROL Options]**: (gear) icon
-
-   * **[!UICONTROL + Add container]**: Lets you add a new container (below the top-level container) to the filter definition.
-   * **[!UICONTROL Exclude]**: Lets you define the filter by excluding one or more dimensions, filters, or metrics.
-
-1. **[!UICONTROL Dimensions]**: Components are dragged and dropped from the Dimensions list (orange sidebar).
-1. **[!UICONTROL Operator]**: You can compare and constrain values using selected operators.
-1. **[!UICONTROL Value]**: The value you entered or selected for the dimension or filter or metric.
-1. **[!UICONTROL Attribution Models]**: Available for dimensions only, these models determine what values in a dimension to filter for. Dimension models are particularly useful in sequential filters.
-
-   * **[!UICONTROL Repeating]** (default): Includes instances and persisted values for the dimension.
-   * **[!UICONTROL Instance]**: Includes instances for the dimension.
-   * **[!UICONTROL Non-repeating instance]**: Includes unique instances (non-repeating) for the dimension. This is the model applied in Flow when repeat instances are excluded.
-
-   ![](assets/attribution-models.jpg)
-
-      **Example: Event filter where eVar1 = A** 
-
-      |  Example  | A  | A  |  A (persisted) | B  | A  | C  |
-      |---|---|---|---|---|---|---|
-      |  Repeating  | X  | X  | X  | -  | X  | -  |
-      |  Instance  | X  | X  | - | - | X | - |
-      |  Non-repeating instance  | X | - | - | -  | X  | -  |
-1. **[!UICONTROL And/Or/Then]**: Assigns the [!UICONTROL AND/OR/THEN] operators between containers or rules. The THEN operator lets you [define sequential filters](/help/components/filters/filters-overview.md).
-1. **[!UICONTROL Metric]**: (Green sidebar) Metric that was dragged and dropped from the Metrics list.
-1. **[!UICONTROL Comparison]** operator: You can compare and constrain values using selected operators.
-1. **[!UICONTROL Value]**: The value you entered or selected for the dimension or filter or metric.
-1. **[!UICONTROL X]**: (Delete) Lets you delete this part of the filter definition.
-1. **[!UICONTROL Experience Cloud publishing]**: Publishing an Adobe Analytics filter to the Experience Cloud lets you use the filter for marketing activity in [!DNL Audience Manager] and in other activation channels. [Learn more...](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
-1. **[!UICONTROL Audience library]**: Adobe's audience services manage the translation of person data into audience filters. As such, creating and managing audiences is similar to creating and using filters, with the added ability to share the audience filter to the Experience Cloud. [Learn more...](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
-1. **[!UICONTROL Search]**: Searches the list of dimensions, filters, or metrics.
-1. **[!UICONTROL Dimensions]**: (List) Click the header to expand.
-1. **[!UICONTROL Metrics]**: Click the header to expand.
-1. **[!UICONTROL Filters]**: Click the header to expand.
-1. **[!UICONTROL Data View selector]**: Lets you select the report suite that this filter will be saved under. You can still utilize the filter in all data views.
-1. **[!UICONTROL Filter Preview]**: Lets you preview the key metrics to see whether you have a valid filter and how broad the filter is. Represents the breakdown of the dataset you can expect to see if you apply this filter. Shows 3 concentric circles and a list to show the number and percentage of matches for [!UICONTROL Event], [!UICONTROL Person], and [!UICONTROL Session] for a filter run against a dataset. This chart is updated immediately after you create or make changes to your filter definition.
-1. **[!UICONTROL Product Compatibility]**: Provides a list of which Adobe Analytics products (Analysis Workspace, [!UICONTROL Reports & Analytics], Data Warehouse) with which the filter you created is compatible. Most filters are compatible with all products. However, not all operators and dimensions are compatible with all Analytics products, especially [Data Warehouse](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-compatibility.html). This chart is updated immediately after you make changes to your filter definition.
-1. **[!UICONTROL Save]** or **[!UICONTROL Cancel]**: Saves or cancels the filter. After clicking **[!UICONTROL Save]**, you are taken to the Filter Manager where you can manage the filter.
-
-Filters with embedded date ranges continue to operate differently in Analysis Workspace versus [!UICONTROL Reports & Analytics]: In Workspace, a filter with an embedded date range overrides the panel date range. By contrast, [!UICONTROL Reports & Analytics] gives you the intersection of the report date range and the filter's embedded date range.
+| UI element | Description|
+| --- | --- |
+| **[!UICONTROL Title]** |  Name the filter |
+| **[!UICONTROL Description]** |  Provide a detailed description for the filter. |
+| **[!UICONTROL Tags]** | [Tag the filter](/help/components/filters/manage-filters.md) you are creating by picking from a list of existing tags or creating a new tag. |
+| **[!UICONTROL Definitions]** | This is where you [build and configure filters](/help/components/filters/filters-overview.md), add rules, and nest and sequence containers. |
+| **[!UICONTROL Include]** | (Top Container selector.) Lets you select the top-level [container](/help/components/filters/filters-overview.md) ( [!UICONTROL Person], [!UICONTROL Session], [!UICONTROL Event]). The default top-level container is the Event container. |
+| **[!UICONTROL Options]** | (gear) icon | <ul><li>**[!UICONTROL + Add container]**: Lets you add a new container (below the top-level container) to the filter definition.</li><li>**[!UICONTROL Exclude]**: Lets you define the filter by excluding one or more dimensions, filters, or metrics.</li></ul> |
+| **[!UICONTROL Dimensions]** | Components are dragged and dropped from the Dimensions list (orange sidebar). |
+| **[!UICONTROL Operator]** | You can compare and constrain values using selected operators. (equals, does not equal, contains, contains all of, etc.) |
+| **[!UICONTROL Value]** | The value you entered or selected for the dimension or filter or metric. |
+| **[!UICONTROL Attribution Models]** | Available for dimensions only, these models determine what values in a dimension to filter for. Dimension models are particularly useful in sequential filters.<ul><li>**[!UICONTROL Repeating]** (default): Includes instances and persisted values for the dimension.</li><li>**[!UICONTROL Instance]**: Includes instances for the dimension.</li><li>**[!UICONTROL Non-repeating instance]**: Includes unique instances (non-repeating) for the dimension. This is the model applied in Flow when repeat instances are excluded.</li></ul>For an example, see the "Attribution models" section below. |
+| **[!UICONTROL And/Or/Then]** | Assigns the [!UICONTROL AND/OR/THEN] operators between containers or rules. The THEN operator lets you [define sequential filters](/help/components/filters/filters-overview.md). |
+| **[!UICONTROL Metric]** | (Green sidebar) Metric that was dragged and dropped from the Metrics list. |
+| **[!UICONTROL X]** | (Delete) Lets you delete this part of the filter definition. |
+| **[!UICONTROL Create audience from filter]** | Creating an audience from a filter lets you share the filter it with Adobe Experience Platform for activation. [Learn more...](/help/components/audiences/audiences-overview.md) |
+| **[!UICONTROL Search component]** | Searches the list of dimensions, filters, or metrics. |
+| **[!UICONTROL Dimensions]** | (List) The list of dimensions you can include in the filter. Click the header to expand. |
+| **[!UICONTROL Metrics]** | The list of metrics you can include in the filter. Click the header to expand. |
+| **[!UICONTROL Filters]** | The list of existing filters you can include in the filter. Click the header to expand. |
+| **[!UICONTROL Data View selector]** | Lets you select the report suite that this filter will be saved under. You can still utilize the filter in all data views.|
+| **[!UICONTROL Filter Preview]** | Lets you preview the key metrics to see whether you have a valid filter and how broad the filter is. Represents the breakdown of the dataset you can expect to see if you apply this filter. Shows 3 concentric circles and a list to show the number and percentage of matches for [!UICONTROL People], [!UICONTROL Sessions], and [!UICONTROL Reports Run] for a filter run against a dataset.<p>This chart is updated immediately after you create or make changes to your filter definition. |
+| **[!UICONTROL Save]** or **[!UICONTROL Cancel]** | Saves or cancels the filter. After clicking **[!UICONTROL Save]**, you are taken to the Filter Manager where you can manage the filter. |
 
 ## Build a filter {#build-filters}
 
@@ -85,7 +63,7 @@ Filters with embedded date ranges continue to operate differently in Analysis Wo
 
    You are taken to the [Filter manager](/help/components/filters/manage-filters.md), where you can tag, share, and manage your filter in multiple ways.
 
-## Add containers {#section_1C38F15703B44474B0718CEF06639EFD}
+## Add containers {#containers}
 
 You can [build a framework of containers](/help/components/filters/filters-overview.md) and then place logic rules and operators between.
 
@@ -103,7 +81,7 @@ You can [build a framework of containers](/help/components/filters/filters-overv
 
    Select one or more rules and then click **[!UICONTROL Options]** > **[!UICONTROL Add container from selection]**. This turns your selection into a separate container.
 
-## Use date ranges {#concept_252A83D43B6F4A4EBAB55F08AB2A1ACE}
+## Use date ranges {#date-ranges}
 
 You can build filters that contain rolling date ranges in order to answer questions about ongoing campaigns or events.
 
@@ -115,7 +93,7 @@ Here is a video on using rolling date ranges in filters:
 
 >[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
 
-## Stack filters {#task_58140F17FFD64FF1BC30DC7B0A1B0E6D}
+## Stack filters {#stack}
 
 Stacking filters works by combining the criteria in each filter using an 'and' operator, and then applying the combined criteria. This can be done in a Workspace project directly or in Filter builder. 
 
@@ -146,3 +124,14 @@ By using filter stacking, you can reduce your filter count to 22 and stack them 
 
 1. Select [!UICONTROL **Save**].
 
+## Attribution models {#attribution}
+
+![](assets/attribution-models.jpg)
+
+**Example: Event filter where eVar1 = A** 
+
+|  Example  | A  | A  |  A (persisted) | B  | A  | C  |
+|---|---|---|---|---|---|---|
+|  Repeating  | X  | X  | X  | -  | X  | -  |
+|  Instance  | X  | X  | - | - | X | - |
+|  Non-repeating instance  | X | - | - | -  | X  | -  |
