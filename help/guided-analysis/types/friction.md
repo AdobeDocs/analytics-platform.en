@@ -3,6 +3,7 @@ title: Friction view
 description: Compare conversion rates between steps.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
+keywords: product analytics
 ---
 # [!UICONTROL Friction] view
 
