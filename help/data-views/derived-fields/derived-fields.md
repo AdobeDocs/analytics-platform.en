@@ -935,6 +935,120 @@ You create a `Second Response` derived field to take the last value  from the [!
 +++
 
 
+<!-- TRIM -->
+
+
+### Trim
+
+Trims whitespace, special characters or number of characters from either the beginning or the end of field values into a new derived field.
+
++++ Details
+
+## Specification {#trim-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li></ul> | <ul><li>[!UICONTROL Field]<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>Trim whitespace</li><li>Trim special characters<ul><li>Input of special characters</li></ul></li><li>Trim from left<ul><li>From&nbsp;<ul><li>String start</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li></ul></li><li>To<ul><li>String end</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li><li>Length</li></ul></li></ul></li><li>Trim from right<ul><li>From&nbsp;<ul><li>String end</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li></ul></li><li>To<ul><li>String start</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li><li>Length</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+## Use case 1 {#trim-uc1}
+
+You collect product data, however that data contains hidden whitespace characters which fragments reporting and is confusing for customers. You would like to easily trim any excess whitepace
+
+### Data before {#trim-uc1-databefore}
+
+| Product ID | Events |
+|---|--:|
+| `"prod12356 "` | 1 |
+| `"prod12356"` | 1 |
+| `" prod12356"` | 1 | 
+
+{style="table-layout:auto"}
+
+### Derived field {#trim-u1-derivedfield}
+
+You create a `Product Identifier` derived field. You use the [!UICONTROL TRIM] function to define a rule to **[!UICONTROL Trim whitespace]** from the **[!UICONTROL Product ID]** field.
+
+![Screenshot of the Split rule 1](assets/trim-1.png)
+
+### Data after {#trim-uc1-dataafter}
+
+| Product Identifier | Events |
+|---|--:|
+| `"prod12356 "` | 3 |
+
+{style="table-layout:auto"}
+
+## Use case 2 {#trim-uc2}
+
+Your data on page names collected includes some erroneous special characters at the end of the page name which need to be removed.
+
+### Data before {#trim-uc2-databefore}
+
+| Name | Events |
+|---|--:|
+| home page# | 1 |
+| home page? | 1 |
+| home page% | 1 |
+| home page& | 1 |
+| home page/ | 1 |
+
+{style="table-layout:auto"}
+
+### Derived field {#trim-u2-derivedfield}
+
+You create a  `Page Name` derived field. You use the [!UICONTROL TRIM] function to define a rule to [!UICONTROL Trim special characters] from the [!UICONTROL Name] field using the [!UICONTROL Special characters] `#?%&/`.
+
+![Screenshot of the Split rule - first value](assets/trim-2.png)
+
+### Data after {#trim-uc2-dataafter}
+
+| Page Name | Events |
+|---|--:|
+| home page | 5 |
+
+{style="table-layout:auto"}
+
+
+## Use case 3 {#trim-uc3}
+
+You collect data inclusing storeID. The storeID contains the abbreviated US state code as the first two characters. You want to only use that state code in your reporting.
+
+### Data before {#trim-uc3-databefore}
+
+| storeID | Events |
+|---|--:|
+| CA293842 | 1 |
+| CA423402 | 1 |
+| UT123418 | 1 |
+| UT189021 | 1 |
+| ID028930 | 1 |
+| OR234223 | 1 |
+| NV22342 | 1 |
+
+{style="table-layout:auto"}
+
+### Derived field {#trim-u3-derivedfield}
+
+You create a  `Store Identifier` derived field. You use the [!UICONTROL TRIM] function to define a rule to [!UICONTROL Truncate from right] the [!UICONTROL storeID] field from String end to position `3`.
+
+![Screenshot of the Split rule - first value](assets/trim-3.png)
+
+### Data after {#trim-uc3-dataafter}
+
+| Store Identifier | Events |
+|---|--:|
+| CA | 2 |
+| UT | 2 |
+| ID | 1 |
+| OR | 1 |
+| NV | 1 |
+
+{style="table-layout:auto"}
++++
+
+
 <!-- URL PARSE -->
 
 ### URL Parse
