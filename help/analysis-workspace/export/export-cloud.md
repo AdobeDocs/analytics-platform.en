@@ -115,7 +115,15 @@ The following components are not supported, and Analysis Workspace prompts you t
 
 Full table export supports calculated metrics that use a non-default attribution model (as described in the *Use non-default attribution model* section in [Column settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)). 
 
-When metric attribution is applied to a report that contains multiple dimensions, it retains the allocation models applied to each of the dimensions in the report. In a single-dimensional report, attribution ignores the allocation model. Multi-dimensional reports are supported only when exporting data to the cloud, as described in this article.
+If a non-default attribution model is being used in a report, the allocation model being used in the report is either ignored or retained, depending on whether the report has a single dimension or multiple dimensions:
+
+* **Single-dimensional reports** ignore the allocation model when a non-default attribution model is used.
+
+* **Multi-dimensional reports** retain the allocation model when a non-default attribution model is used.
+
+   >[!NOTE]
+   >
+   >  Multi-dimensional reports are supported only when exporting data to the cloud, as described in this article.
 
 For more information about allocation and attribution, see [Persistence component settings](/help/data-views/component-settings/persistence.md) and [Attribution component settings](/help/data-views/component-settings/attribution.md). 
 

@@ -54,9 +54,9 @@ Allows you to override the default attribution model set in [Data views](/help/d
 >
 >Consider the following when updating a component's attribution to a non-default attribution model:
 >
->* **When using the component in a report with *a single dimension*:** The component's attribution overrides the allocation model applied to the dimension in the report.
+>* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
 >
->* **When using the component in a report with *multiple dimensions*:** The component's attribution does not override the allocation models applied to each of the dimensions in the report.
+>* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
 >
 >   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
 >
