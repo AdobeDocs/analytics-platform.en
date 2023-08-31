@@ -38,7 +38,7 @@ To export full tables from Analysis Workspace:
    | Data view | Select the data view that contains the components that you want to include in the export. <p>**Note:** If you choose a data view that doesn't contain any components that are already included in your data table, then you are prompted to clear the data table and re-create it using components that are included in the data view you select. </p> | 
    | Lookback window | Select the time-frame to include in the data table. Options include [!UICONTROL **Today**], [!UICONTROL **Yesterday**], [!UICONTROL **Last 7 days**], [!UICONTROL **Last 30 days**], [!UICONTROL **This week**], and [!UICONTROL **This month**]. | 
    | Clear | Clears the contents of the data table. This allows you to start building a new table directly within the New full table export dialog.  | 
-   | Export frequency | Select how often the export should occur. <p>You can choose [!UICONTROL **One time**] to send the export only once. When you select this option, the export is sent immediately and it is not available on the [Exports page](/help/components/exports/manage-exports.md). It is available in the [Export logs](/help/components/exports/manage-export-logs.md).</p> <p>Or, you can choose to send the export on a defined schedule. When sending on a schedule, options include [!UICONTROL **Daily**], [!UICONTROL **Weekly**], [!UICONTROL **Monthly by day of the week**], [!UICONTROL **Monthly by day of the month**], [!UICONTROL **Yearly by day of the month**], and [!UICONTROL **Yearly by specific date**]. When you select any of these scheduled options, the export is available to manage on the [Exports page](/help/components/exports/manage-exports.md).</p><p>When selecting an export frequency, consider the following:</p><ul><li>The options in the [!UICONTROL **Lookback window**] field change depending on what you select here.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Additional configuration fields display depending on the option you choose.</li></ul> | 
+   | Export frequency | Select how often the export should occur. <p>You can choose [!UICONTROL **One time**] to send the export only once. When you select this option, the export is sent immediately.<p>Or, you can choose to send the export on a defined schedule. When sending on a schedule, options include [!UICONTROL **Daily**], [!UICONTROL **Weekly**], [!UICONTROL **Monthly by day of the week**], [!UICONTROL **Monthly by day of the month**], [!UICONTROL **Yearly by day of the month**], and [!UICONTROL **Yearly by specific date**]. </p><p>When selecting an export frequency, consider the following:</p><ul><li>The options in the [!UICONTROL **Lookback window**] field change depending on what you select here.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Additional configuration fields display depending on the option you choose.</li></ul>  | 
    | Starting on  | The day and time that the scheduled export should begin. <p>This option is available only when choosing a scheduled export frequency.</p> | 
    | Ending on | The day and time that the scheduled export expires. The scheduled export no longer runs after the date and time that you set. <p>This option is available only when choosing a scheduled export frequency.</p> |  
    | File format | Choose whether the exported data should be in .csv or .json format. | 
@@ -50,6 +50,8 @@ To export full tables from Analysis Workspace:
    {style="table-layout:auto"}
 
 1. Select [!UICONTROL **Save**] to save the export.
+
+1. (Optional) After you create the export, whether it is a one-time or scheduled export, you can view and manage it on the [Exports page](/help/components/exports/manage-exports.md) and view it in the [Export logs](/help/components/exports/manage-export-logs.md).</p>
 
 ## Advantages of exporting to the cloud
 
@@ -116,15 +118,17 @@ Full table export supports calculated metrics that use a non-default attribution
 
 If a non-default attribution model is being used in a report, the allocation model being used in the report is either ignored or retained, depending on whether the report has a single dimension or multiple dimensions:
 
-* **Single-dimensional reports** ignore the allocation model when a non-default attribution model is used.
+* **For reports that include metric attribution in a single dimension:** [Metric attribution](/help/data-views/component-settings/attribution.md) overrides the [allocation model](/help/data-views/component-settings/persistence.md) as is normally done when using metric attribution.  
 
-* **Multi-dimensional reports** retain the allocation model when a non-default attribution model is used.
+  For example, a "first touch" metric attribution overrides a "most recent" dimension allocation.
+
+* **For reports that include metric attribution on multiple dimensions at the same time:** [Metric attribution](/help/data-views/component-settings/attribution.md) is applied in addition to the dimension [allocation model](/help/data-views/component-settings/persistence.md).
+
+  For example, a "first touch" metric attribution is applied in addition to a "most recent" dimension allocation. Additionally, metric attribution will be applied to post-allocated dimension item pairs as if they were single dimension items, rather than to each dimension item independently as is normally done in a Freeform table.
 
    >[!NOTE]
    >
-   >  Multi-dimensional reports are supported only when exporting data to the cloud, as described in this article.
-
-For more information about allocation and attribution, see [Persistence component settings](/help/data-views/component-settings/persistence.md) and [Attribution component settings](/help/data-views/component-settings/attribution.md). 
+   >Multi-dimensional reports are supported only when exporting data to the cloud, as described in this article.
 
 ## Manage exports
 

@@ -17,15 +17,18 @@ To configure a cloud export location:
 1. You need to add an account before you can add a location. If you haven't already, add an account as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 1. On the [!UICONTROL Exports] page, select the [!UICONTROL **Locations**] tab.
-1. Select [!UICONTROL **Add location**]. <!-- add screenshot? -->
+1. Select [!UICONTROL **Add location**]. 
    
+   ![add location button](assets/location-add.png)
+
    The Location dialog displays.
+
 1. Specify the following information:
    |Field | Function | 
    |---------|----------|
-   | [!UICONTROL **Location name**] | The name of the location.  | 
-   | [!UICONTROL **Location description**] | Provide a short description of the account to help differentiate it from other accounts of the same account type. |
-   | [!UICONTROL **Location accounts**] | Select the location account that you created in [Add an account](#add-an-account). | 
+   | [!UICONTROL **Name**] | The name of the location.  | 
+   | [!UICONTROL **Description**] | Provide a short description of the account to help differentiate it from other accounts of the same account type. |
+   | [!UICONTROL **Location account**] | Select the location account that you created in [Add an account](#add-an-account). | 
 
 1. In the [!UICONTROL **Location properties**] section, specify information specific to the account type of your location account.  
 
@@ -54,7 +57,8 @@ To configure a cloud export location:
 
       |Field | Function | 
       |---------|----------|
-      | [!UICONTROL **Project ID**] | Your Google Cloud project ID. See the [Google Cloud documentation about getting a project ID](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects). |  
+      | [!UICONTROL **Bucket name**] | The bucket within your GCP account where you want Adobe Analytics data to be sent. Ensure that you have granted permission to the Principal provided by Adobe to upload files to this bucket. For information about granting permissions, see [Add a principal to a bucket-level policy](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) in the Google Cloud documentation.|  
+      | [!UICONTROL **Key prefix**] | The folder within the bucket where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, folder_name/ | 
 
       {style="table-layout:auto"}
    
@@ -66,8 +70,8 @@ To configure a cloud export location:
 
       |Field | Function | 
       |---------|----------|
-      | [!UICONTROL **Container**] | The container within the account you specified where you want Adobe Analytics data to be sent. | 
-      | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, `folder_name/` |
+      | [!UICONTROL **Container name**] | The container within the account you specified where you want Adobe Analytics data to be sent. | 
+      | [!UICONTROL **Key prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, `folder_name/` | 
 
       {style="table-layout:auto"}
 
@@ -79,9 +83,9 @@ To configure a cloud export location:
 
       |Field | Function | 
       |---------|----------|
-      | [!UICONTROL **Container**] | The container within the account you specified where you want Adobe Analytics data to be sent. Ensure that you grant permissions to upload files to the Azure application that you created earlier. | 
-      | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, `folder_name/` |
-      | [!UICONTROL **Account**] | The Azure storage account. | 
+      | [!UICONTROL **Container name**] | The container within the account you specified where you want Adobe Analytics data to be sent. Ensure that you grant permissions to upload files to the Azure application that you created earlier. | 
+      | [!UICONTROL **Key prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, `folder_name/` |
+      | [!UICONTROL **Account name**] | The Azure storage account. | 
 
       {style="table-layout:auto"}
 
@@ -93,8 +97,12 @@ To configure a cloud export location:
 
       |Field | Function | 
       |---------|----------|
-      | [!UICONTROL **Pipe**] | <!--add info --> | 
-      | [!UICONTROL **Prefix**] | <!--add info --> | 
+      | [!UICONTROL **DB**] | <!--add info --> | 
+      | [!UICONTROL **Schema**] | <!--add info --> | 
+      | [!UICONTROL **Stage name**] | <!--add info --> | 
+      | [!UICONTROL **Stage path**] | <!--add info --> | 
+
+      {style="table-layout:auto"}
 
    +++
 

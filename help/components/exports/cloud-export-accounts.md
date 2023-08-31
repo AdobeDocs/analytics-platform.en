@@ -18,7 +18,9 @@ To configure a cloud export account:
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 1. On the [!UICONTROL Exports] page, select the [!UICONTROL **Location accounts**] tab.
-1. Select [!UICONTROL **Add account**]. <!-- add screenshot? -->
+1. Select [!UICONTROL **Add account**]. 
+
+   ![Add account](assets/account-add.png)
    
    The Add account dialog displays.
 1. Specify the following information:
@@ -26,7 +28,7 @@ To configure a cloud export account:
    |---------|----------|
    | [!UICONTROL **Location account name**] | The name of the location account. This name appears when creating a location | 
    | [!UICONTROL **Location account description**] | Provide a short description of the account to help differentiate it from other accounts of the same account type. |
-   | [!UICONTROL **Account type**] | B3 | 
+   | [!UICONTROL **Account type**] | Select the type of cloud account you are exporting to. Available account types are Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake, and Adobe Experience Platform. | 
 1. In the [!UICONTROL **Account properties**] section, specify information specific to the account type that you selected.  
 
    For configuration instructions, expand the section below that corresponds to the [!UICONTROL **Account type**] that you selected. 
@@ -80,7 +82,7 @@ To configure a cloud export account:
       |---------|----------|
       | [!UICONTROL **Application ID**] | Copy this ID from the Azure application that you created. In Microsoft Azure, this information is located on the **Overview** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). | 
       | [!UICONTROL **Tenant ID**] | Copy this ID from the Azure application that you created. In Microsoft Azure, this information is located on the **Overview** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). | 
-      | [!UICONTROL **Location Account Secret**] | Copy the secret from the Azure application that you created. In Microsoft Azure, this information is located on the **Certificates & secrets** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). | 
+      | [!UICONTROL **Location account secret**] | Copy the secret from the Azure application that you created. In Microsoft Azure, this information is located on the **Certificates & secrets** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). | 
 
       {style="table-layout:auto"}
 
@@ -92,8 +94,9 @@ To configure a cloud export account:
 
       |Field | Function | 
       |---------|----------|
-      | [!UICONTROL **Account**] | <!--add info --> | 
-      | [!UICONTROL **User**] | <!--add info --> | 
+      | [!UICONTROL **Account identifier**] | <!--add info --> | 
+      | [!UICONTROL **User name**] | <!--add info --> | 
+      | [!UICONTROL **Role**] | |
       | [!UICONTROL **Location Account Secret**] | Copy the secret from the Snowflake application that you created. In Snowflake, this information is located in <!--add link to Snowflake docs -->. | 
 
    +++

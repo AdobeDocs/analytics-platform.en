@@ -249,6 +249,12 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage date ranges](../components/date-ranges/manage.md)
     + [Create custom date ranges](../components/date-ranges/custom-date-ranges.md)
     + [Date comparison](../components/date-ranges/time-comparison.md)
+  + Exports {#exports}
+    + [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md)
+    + [Configure cloud export locations](/help/components/exports/cloud-export-locations.md)
+    + [Manage exports](/help/components/exports/manage-exports.md)
+    + [Manage export logs](/help/components/exports/manage-export-logs.md)
+    + [Troubleshoot exports](/help/components/exports/troubleshoot-exports.md)
   + Data Dictionary {#data-dictionary}
     + [Data Dictionary overview](../components/data-dictionary/data-dictionary-overview.md)
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
