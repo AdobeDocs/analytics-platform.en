@@ -1,50 +1,34 @@
 ---
-title: Dimensions with very high cardinality in Customer Journey Analytics
-description: Describes best practices in dealing with high-cardinality dimensions in Customer Journey Analytics
+title: High cardinality dimensions
+description: Explains how Customer Journey Analytics handles dimensions with many unique values
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 ---
-# Dimensions with very high cardinality
+# High cardinality dimensions
 
-Customer Journey Analytics (Customer Journey Analytics) does not place limits on the number of unique values or dimension items that can be reported on within a single dimension. However, in some circumstances, dimensions with an extremely large number of unique items - also known as high-cardinality dimensions - may impact what can be reported on. 
+When using a dimension that contains many unique values, the resulting report can contain too many unique dimension items to display or calculate. Results are truncated by removing dimension items deemed least important. These optimizations are done to maintain project and product performance.
 
-## Limitations
+When you request a report with too many unique values, Analysis Workspace shows an indicator in the dimension header stating that not all dimension items are included. For example, "Rows: 1-50 of more than 22,343,156". The "more than" keyword indicates that some optimization was applied to the report to return the most important dimension items.
 
-Depending on the number of events in a specific Customer Journey Analytics Connection, the following two limitations may occur in conjunction with high-cardinality dimensions: 
+![Workspace preview](assets/high-cardinality.png)
 
-### 1. Row counts may not be precisely reportable
+## Determining which dimension items to display
 
-Row counts on high-cardinality dimensions may not be precisely reportable. When this happens, Freeform tables will provide an indication, as shown below:
+Customer Journey Analytics processes reports at the time that they are run, distributing the combined dataset to several servers. Data per processing server is grouped by person ID, meaning that a single processing server contains all data for a given person. Once a server finishes processing, it hands its subset of processed data to an aggregator server. All subsets of processed data are combined and returned in the form of a Workspace report.
 
-   ![](assets/high-cardinality.png)
+If any individual server processes data that exceeds a unique threshold, it truncates the results before returning the processed subset of data. Truncated dimension items are determined based on the metric that is used for sorting.
 
-### 2. Calculated Metrics may use estimates for some functions and for sort order
+If the sorting metric is a calculated metric, the server uses the metrics within the calculated metric to determine which dimension items to truncate. Since calculated metrics can contain several metrics of varying importance, results can be less accurate. For example, when calculating "Revenue per person", the total amount of revenue and total number of persons are returned and aggregated before doing the division. As a result, each individual processing server chooses which items to remove without knowing how their results affect overall sorting.
 
-When used with highly-cardinal dimensions, some Calculated Metric functions may return estimates, including: Column Maximum, Column Minimum, Row Count, Mean, Median, Percentile, Quartile, Standard Deviation, Variance, Regression Functions, and T and Z Functions. 
+Though some individual dimension items might be missing from high cardinality reports, column totals are accurate and not based on truncated data. The 'Count Distinct' function in calculated metrics is also not affected by truncated dimension items.
 
-In addition, sorting a table column using a calculated metric may be based on an estimate and may not always reflect the exact sort order. A warning message will appear to alert you that estimates may have been used.
+## Best practices for high cardinality dimensions
 
-Be aware that even though calculated metrics may sometimes return estimates, the column totals are always accurate and are never based on estimates. Likewise, when using standard metrics, estimates are never used and always reflect exact sort orders.
+The best way to accommodate high cardinality dimensions is to limit the number of dimension items that a report processes. Since all reports are processed at the time that they are requested, you can adjust report parameters for immediate results. Adobe recommends any of the following optimizations to high cardinality dimensions:
 
-### Where all dimension values are considered
-
-Even though there are limitations to some calculated metrics and dimension row counts, be aware that the following capabilities always consider all unique values in any dimension regardless of whether a dimension is highly cardinal or not:
-
-* Metric attribution and dimension allocation
-* Line-item searches applied to a Freeform table
-* Filters using dimensions or dimension items
-* The approximate count distinct function within Calculated Metrics
-* Include/Exclude logic applied to any metric or dimension within a Data View
-* Lookup datasets added to a Connection
-
-## Best practices for working with high-cardinal dimensions
-
-In order to eliminate the warnings or estimates that may occur when using dimensions with high cardinality, we recommended that you narrow down the number of rows considered in your report, using one of the following methods:
-
-* Add a filter to the column or panel impacted.
-* Apply a search to your Freeform table.
-* Apply a breakdown to the rows of interest, or use the highly-cardinal dimension as a breakdown dimension.
-* Add include/exclude criteria to the dimension’s Data View configuration to narrow down the number of unique values present in the dimension.
-
-Using these techniques can often eliminate any undesirable estimations or warnings you experience when using high-cardinal dimensions.
+* Use a [Filter](/help/components/filters/create-filters.md). Filters apply at the time that each server processes a subset of data.
+* Use a search. Dimension items excluded from the search term are removed from the report results, making it more likely that you see the desired dimension items.
+* Use a lookup dataset dimension. Lookup dataset dimensions combine event dataset dimension items, which limit the number of unique values returned.
+* Use the [Include/exclude](/help/data-views/component-settings/include-exclude-values.md) component setting in the data view manager.
+* Shorten the request's date range. If many unique values accumulate over time, shortening the date range of the Workspace report can limit the number of unique values for servers to process.

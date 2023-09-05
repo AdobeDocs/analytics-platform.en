@@ -149,6 +149,8 @@ To use the template, you have to specify the correct parameters for each functio
 
 ## Function reference
 
+{{select-package}}
+
 For each supported function, find details below on:
 
 - specifications: 
@@ -165,84 +167,9 @@ For each supported function, find details below on:
 
 - constraints (if applicable).
 
-
-<!-- Concatenate -->
-
-### Concatenate
-
-Combines field values into a single new derived field with defined delimiters.
-
-+++ Details
-
-## Specifications {#concatenate-io}
-
-| Input Data Type | Input | Included Operators | Limitations | Output |
-|---|---|---|---|---|
-| <ul><li>String</li></ul> | <ul><li>[!UICONTROL Value]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul></li><li>[!UICONTROL Delimiter]:<ul><li>String</li></ul></li> </ul> | <p>N/A</p>| <p>2 functions per derived field</p> | <p>New derived field</p> |
-
-{style="table-layout:auto"}
-
-
-## Use case {#concatenate-uc}
-
-You currently collect origin and destination airport codes as separate fields. You would like to take the two fields and combine them into a single dimension separated by a hyphen (-). So you can analyze the combination of origin and destination to identify top routes booked.
-
-Assumptions:
-
-- Origin and destination values are collected in separate fields in the same table.
-- The user determines to use the delimiter '-' between the values.
-
-Imagine the following bookings occur:
-
-- Customer ABC123 books a flight between Salt Lake City (SLC) and Orlando (MCO)
-- Customer ABC456 books a flight between Salt Lake City (SLC) and Los Angeles (LAX)
-- Customer ABC789 books a flight between Salt Lake City (SLC) and Seattle (SEA)
-- Customer ABC987 books a flight between Salt Lake City (SLC) and San Jose (SJO)
-- Customer ABC654 books a flight between Salt Lake City (SLC) and Orlando (MCO)
-
-The desired report should look like:
-
-| Origin / Destination | Bookings |
-|----|---:|
-| SLC-MCO | 2 |
-| SLC-LAX | 1 |
-| SLC-SEA | 1 |
-| SLC-SJO | 1 |
-
-{style="table-layout:auto"}
-
-
-### Data before {#concatenate-uc-databefore}
-
-| Origin | Destination |
-|----|---:|
-| SLC | MCO |
-| SLC | LAX |
-| SLC | SEA |
-| SLC | SJO |
-| SLC | MCO |
-
-{style="table-layout:auto"}
-
-### Derived field {#concatenate-derivedfield}
-
-You define a new [!UICONTROL Origin - Destination] derived field. You use the [!UICONTROL CONCATENATE] function to define a rule to concatenate the [!UICONTROL Original] and [!UICONTROL Destination] fields using the `-` [!UICONTROL Delimiter].
-
-![Screenshot of the Concatenate rule](assets/concatenate.png)
-
-### Data after {#concatenate-dataafter}
-
-| Origin - Destination<br/>(derived field) |
-|---|
-| SLC-MCO |
-| SLC-LAX |
-| SLC-SEA |
-| SLC-SJO |
-| SLC-MCO |
-
-{style="table-layout:auto"}
-
-+++
+>[!NOTE]
+>
+>The Lookup function has been renamed to [Classify](#classify). See the [Classify](#classify) function for more information.
 
 <!-- CASE WHEN -->
 
@@ -474,6 +401,214 @@ The following constraints apply and are enforced when *selecting* and *setting* 
 
 +++
 
+<!-- CLASSIFY -->
+
+### Classify
+
+Defines a set of values that are replaced by corresponding values in a new derived field.
+
+
+
+
++++ Details
+
+>[!NOTE]
+>
+>This function was originally named Lookup but has been renamed to Classify to accommodate a forthcoming Lookup function with different functionality.
+
+## Specifications {#classify-io}
+
+| Input Data Type | Input | Included Operators | Limitations | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>[!UICONTROL When value equals] and [!UICONTROL Replace values with]:</p><ul><li>String</li></ul><li>Show original values<ul><li>Boolean</li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+
+## Use case 1 {#classify-uc1}
+
+You do have a CSV-file that includes a key column for `hotelID` and one or more additional columns associated with the `hotelID`: `city`, `rooms`, `hotel name`.
+You are collecting [!DNL Hotel ID] in a dimension but would like to create a [!DNL Hotel Name] dimension derived from the `hotelID` in the CSV file.
+
+**CSV-file structure and content**
+
+| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
+|---|---|---:|---|
+| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
+| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
+| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
+| [!DNL AMS789] | [!DNL Amsterdam] | 50 | [!DNL Okura] |
+
+{style="table-layout:auto"}
+
+**Current Report**
+
+| [!DNL Hotel ID] | Product Views |
+|---|---:|
+| [!DNL SLC123] | 200 |
+| [!DNL LX342] | 198 |
+| [!DNL SFO456] | 190 |
+| [!DNL AMS789] | 150 |
+
+{style="table-layout:auto"}
+
+
+**Desired Report**
+
+| [!DNL Hotel Name] | Product Views |
+|----|----:|
+| [!DNL SLC Downtown] | 200 |
+| [!DNL LA Airport] | 198 |
+| [!DNL Market Street] | 190 |
+
+{style="table-layout:auto"}
+
+### Data before {#classify-uc1-databefore}
+
+| [!DNL Hotel ID] |
+|----|
+| [!DNL SLC123] | 
+| [!DNL LAX342] | 
+| [!DNL SFO456] |
+| [!DNL AMS789] | 
+
+{style="table-layout:auto"}
+
+
+### Derived field {#classify-uc1-derivedfield}
+
+You define a `Hotel Name` derived field. You use the [!UICONTROL CLASSIFY] function to define a rule where you can classify values of the [!UICONTROL Hotel ID] field and replace with new values. 
+
+If you want to include original values that you have not defined as part of the values to classify (for example Hotel ID AMS789), ensure you select **[!UICONTROL Show original values]**. This ensures AMS789 will be part of the output for the derived field, despite that value not being classified.
+
+![Screenshot of the Classify rule 1](assets/classify-1.png)
+
+### Data after {#classify-uc1-dataafter}
+
+| [!DNL Hotel Name] |
+|----|
+| [!DNL SLC Downtown] |
+| [!DNL LA Airport] |
+| [!DNL Market Street] |
+
+{style="table-layout:auto"}
+
+
+## Use case 2 {#classify-uc2}
+
+You have collected URLs instead of the friendly page name for several pages. This mixed collection of values breaks the reporting.
+
+### Data before {#classify-uc2-databefore}
+
+| [!DNL Page Name] |
+|---|
+| [!DNL Home Page] | 
+| [!DNL Flight Search] | 
+| `http://www.adobetravel.ca/Hotel-Search` |
+| `https://www.adobetravel.com/Package-Search` |
+| [!DNL Deals & Offers] |
+| `http://www.adobetravel.ca/user/reviews` | 
+| `https://www.adobetravel.com.br/Generate-Quote/preview` |
+
+{style="table-layout:auto"}
+
+### Derived field {#classify-uc2-derivedfield}
+
+You define a `Page Name (updated)` derived field. You use the [!UICONTROL CLASSIFY] function to define a rule where you can classify values of your existing [!UICONTROL Page Name] field and replace with updated correct values.
+
+![Screenshot of the Classify rule 2](assets/classify-2.png)
+
+### Data after {#classify-uc2-dataafter}
+
+| [!DNL Page Name (updated)] |
+|---|
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| [!DNL Hotel Search] |
+| [!DNL Package Search] |
+| [!DNL Deals & Offers] |
+| [!DNL Reviews] |
+| [!DNL Generate Quote] |
+
++++
+
+<!-- CONCATENATE -->
+
+### Concatenate
+
+Combines field values into a single new derived field with defined delimiters.
+
++++ Details
+
+## Specifications {#concatenate-io}
+
+| Input Data Type | Input | Included Operators | Limitations | Output |
+|---|---|---|---|---|
+| <ul><li>String</li></ul> | <ul><li>[!UICONTROL Value]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul></li><li>[!UICONTROL Delimiter]:<ul><li>String</li></ul></li> </ul> | <p>N/A</p>| <p>2 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+
+## Use case {#concatenate-uc}
+
+You currently collect origin and destination airport codes as separate fields. You would like to take the two fields and combine them into a single dimension separated by a hyphen (-). So you can analyze the combination of origin and destination to identify top routes booked.
+
+Assumptions:
+
+- Origin and destination values are collected in separate fields in the same table.
+- The user determines to use the delimiter '-' between the values.
+
+Imagine the following bookings occur:
+
+- Customer ABC123 books a flight between Salt Lake City (SLC) and Orlando (MCO)
+- Customer ABC456 books a flight between Salt Lake City (SLC) and Los Angeles (LAX)
+- Customer ABC789 books a flight between Salt Lake City (SLC) and Seattle (SEA)
+- Customer ABC987 books a flight between Salt Lake City (SLC) and San Jose (SJO)
+- Customer ABC654 books a flight between Salt Lake City (SLC) and Orlando (MCO)
+
+The desired report should look like:
+
+| Origin / Destination | Bookings |
+|----|---:|
+| SLC-MCO | 2 |
+| SLC-LAX | 1 |
+| SLC-SEA | 1 |
+| SLC-SJO | 1 |
+
+{style="table-layout:auto"}
+
+
+### Data before {#concatenate-uc-databefore}
+
+| Origin | Destination |
+|----|---:|
+| SLC | MCO |
+| SLC | LAX |
+| SLC | SEA |
+| SLC | SJO |
+| SLC | MCO |
+
+{style="table-layout:auto"}
+
+### Derived field {#concatenate-derivedfield}
+
+You define a new [!UICONTROL Origin - Destination] derived field. You use the [!UICONTROL CONCATENATE] function to define a rule to concatenate the [!UICONTROL Original] and [!UICONTROL Destination] fields using the `-` [!UICONTROL Delimiter].
+
+![Screenshot of the Concatenate rule](assets/concatenate.png)
+
+### Data after {#concatenate-dataafter}
+
+| Origin - Destination<br/>(derived field) |
+|---|
+| SLC-MCO |
+| SLC-LAX |
+| SLC-SEA |
+| SLC-SJO |
+| SLC-MCO |
+
+{style="table-layout:auto"}
+
++++
 
 <!-- FIND AND REPLACE -->
 
@@ -544,127 +679,6 @@ You define an `Email Marketing (updated)` derived field. You use the [!UICONTROL
 
 +++
 
-
-<!-- LOOKUP -->
-
-### Lookup
-
-Defines a set of lookup values that are replaced by corresponding values in a new derived field.
-
-+++ Details
-
-
-## Specifications {#lookup-io}
-
-| Input Data Type | Input | Included Operators | Limitations | Output |
-|---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to apply lookup]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>[!UICONTROL When value equals] and [!UICONTROL Replace values with]:</p><ul><li>String</li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
-
-{style="table-layout:auto"}
-
-
-## Use case 1 {#lookup-uc1}
-
-You do have a CSV-file that includes a key column for `hotelID` and one or more additional columns associated with the `hotelID`: `city`, `rooms`, `hotel name`.
-You are collecting [!DNL Hotel ID] in a dimension but would like to create a [!DNL Hotel Name] dimension derived from the `hotelID` in the CSV file.
-
-**CSV-file structure and content**
-
-| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
-|---|---|---:|---|
-| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
-| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
-| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
-
-{style="table-layout:auto"}
-
-**Current Report**
-
-| [!DNL Hotel ID] | Product Views |
-|---|---:|
-| [!DNL SLC123] | 200 |
-| [!DNL LX342] | 198 |
-| [!DNL SFO456] | 190 |
-
-{style="table-layout:auto"}
-
-
-**Desired Report**
-
-| [!DNL Hotel Name] | Product Views |
-|----|----:|
-| [!DNL SLC Downtown] | 200 |
-| [!DNL LA Airport] | 198 |
-| [!DNL Market Street] | 190 |
-
-{style="table-layout:auto"}
-
-### Data before {#lookup-uc1-databefore}
-
-| [!DNL Hotel ID] |
-|----|
-| [!DNL SLC123] | 
-| [!DNL LAX342] | 
-| [!DNL SFO456] |
-
-{style="table-layout:auto"}
-
-
-### Derived field {#lookup-uc1-derivedfield}
-
-You define a `Hotel Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule where you can look up values of the [!UICONTROL Hotel ID] field and replace with new values.
-
-![Screenshot of the Lookup rule 1](assets/lookup-1.png)
-
-### Data after {#lookup-uc1-dataafter}
-
-| [!DNL Hotel Name] |
-|----|
-| [!DNL SLC Downtown] |
-| [!DNL LA Airport] |
-| [!DNL Market Street] |
-
-{style="table-layout:auto"}
-
-
-## Use case 2 {#lookup-uc2}
-
-You have collected URLs instead of the friendly page name for several pages. This mixed collection of values breaks the reporting.
-
-### Data before {#lookup-uc2-databefore}
-
-| [!DNL Page Name] |
-|---|
-| [!DNL Home Page] | 
-| [!DNL Flight Search] | 
-| `http://www.adobetravel.ca/Hotel-Search` |
-| `https://www.adobetravel.com/Package-Search` |
-| [!DNL Deals & Offers] |
-| `http://www.adobetravel.ca/user/reviews` | 
-| `https://www.adobetravel.com.br/Generate-Quote/preview` |
-
-{style="table-layout:auto"}
-
-### Derived field {#lookup-uc2-derivedfield}
-
-You define a `Page Name (updated)` derived field. You use the [!UICONTROL LOOKUP] function to define a rule where you can look up values of your existing [!UICONTROL Page Name] field and replace with updated correct values.
-
-![Screenshot of the Lookup rule 2](assets/lookup-2.png)
-
-### Data after {#lookup-uc2-dataafter}
-
-| [!DNL Page Name (updated)] |
-|---|
-| [!DNL Home Page] |
-| [!DNL Flight Search] |
-| [!DNL Hotel Search] |
-| [!DNL Package Search] |
-| [!DNL Deals & Offers] |
-| [!DNL Reviews] |
-| [!DNL Generate Quote] |
-
-+++
-
 <!-- MERGE FIELDS -->
 
 ### Merge Fields
@@ -683,7 +697,7 @@ Merges values from two different fields into a new derived field.
 
 ## Use case {#merge-fields-uc}
 
-You would like to create a new dimension made up from the page name field and the call reason field with the intent of analyzing the journey across channels.
+You would like to create a dimension made up from the page name field and the call reason field with the intent of analyzing the journey across channels.
 
 ### Data before {#merge-fields-uc-databefore}
 
@@ -749,7 +763,7 @@ Replaces a value from a field using a regular expression into a new derived fiel
 
 ## Use case {#regex-replace-uc}
 
-You would like to grab a potion of a URL and use that as a unique page identifier to analyze traffic. You will use `[^/]+(?=/$|$)` for the regular expression to capture the end of the URL and `$1` as the output pattern.
+You would like to grab a potion of a URL and use that as a unique page identifier to analyze traffic. You use `[^/]+(?=/$|$)` for the regular expression to capture the end of the URL and `$1` as the output pattern.
 
 ### Data before {#regex-replace-uc-databefore}
 

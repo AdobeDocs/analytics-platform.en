@@ -47,7 +47,10 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Data Ingestion Overview](../data-ingestion/data-ingestion.md)
   + Ingest and use quick start guides{#ingest-use-guides}
     + [Adobe Analytics](../data-ingestion/analytics.md)
-    + [Adobe Experience Platform Web SDK and Edge Network](../data-ingestion/aepwebsdk.md)
+    + Adobe Experience Platform Edge Network {#edge-network}
+      + [Web SDK](../data-ingestion/aepwebsdk.md)
+      + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
+      + [Server API](../data-ingestion/serverapi.md)
     + [Batch data](../data-ingestion/batch.md)
     + [Streaming data](../data-ingestion/streaming.md)
     + [Source connectors](../data-ingestion/sources.md)
@@ -63,7 +66,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
-  + [Context-aware sessions](../data-views/context-aware-sessions.md)
+  + [Session settings](../data-views/session-settings.md)
   + Component Settings {#component-settings}
     + [Component settings overview](../data-views/component-settings/overview.md)
     + [Attribution](../data-views/component-settings/attribution.md)
@@ -173,7 +176,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Analysis Workspace limitations](../analysis-workspace/workspace-faq/aw-limitations.md)
     + [Administration requirements](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility in Analysis Workspace](../analysis-workspace/workspace-faq/aw-accessibility.md)
-    + [Results Truncated dimension item](../analysis-workspace/workspace-faq/results-truncated.md)
 
 + Analytics dashboards {#cja-dashboards}
   + [Analytics dashboards - Overview](../mobile-app/home.md)
@@ -207,6 +209,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage annotations](../components/annotations/manage-annotations.md)
     + [View annotations](../components/annotations/view-annotations.md)
     + [Mobile annotations](../components/annotations/mobile-annotations.md)
+  + [Scheduled project](../components/scheduled-projects-manager.md)
   + Audiences {#audiences}
     + [Audiences overview](../components/audiences/audiences-overview.md)
     + [Create and publish audiences](../components/audiences/publish.md)
@@ -334,6 +337,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Troubleshooting {#troubleshooting}
   + [Compare your Adobe Analytics data to Customer Journey Analytics data](../troubleshooting/compare.md)
   + [Consistency of metrics and audience membership counts between Real-time CDP and Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
+  + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
 
 +   [Customer Journey Analytics glossary](../getting-started/cja-glossary.md)
 

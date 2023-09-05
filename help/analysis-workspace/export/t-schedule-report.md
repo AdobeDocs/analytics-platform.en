@@ -76,6 +76,7 @@ The following are common actions in the Scheduled Projects manager:
 |**[!UICONTROL View schedule ID]**|Navigate to column options in the top right and add the Schedule ID column to the table. The scheduled ID is often useful for debugging.|
 
 The Scheduled Projects Manager shows the items that a specific user has created. If the user account is disabled in the application, all scheduled deliveries stop.
+For more information, see [Scheduled projects](/help/components/scheduled-projects-manager.md).
 
 ## Password-protect a scheduled project {#password}
 

@@ -8,6 +8,8 @@ hidefromtoc: yes
 ---
 # Create and manage stitched datasets
 
+{{select-package}}
+
 Stitching allows administrators to stitch identities on datasets available in Customer Journey Analytics. Stitching datasets increases the accuracy of a profile's representation resulting ultimately in better analysis and reporting.
 
 The stitching process allows you to define an existing **persistent ID** in a dataset. Then stitch that persistent identifier for a specified replay window (daily, weekly) with the most accurate **transient ID** (person or authenticated identifier) available for that dataset. Examples of transient identifiers are email, phone number, CRM id, or other identities stored in the graph. See [Overview](overview.md) for more information on stitching.
