@@ -97,10 +97,10 @@ To configure a cloud export location:
 
       |Field | Function | 
       |---------|----------|
-      | [!UICONTROL **DB**] | <!--add info --> | 
-      | [!UICONTROL **Schema**] | <!--add info --> | 
-      | [!UICONTROL **Stage name**] | <!--add info --> | 
-      | [!UICONTROL **Stage path**] | <!--add info --> | 
+      | [!UICONTROL **DB**] | The default database to use once connected, or specifies an empty string. The specified database should be an existing database for which the specified default role has privileges. <p>For more information, see the [JDBC Driver Connection Parameter Reference page in the Snowflake documentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> | 
+      | [!UICONTROL **Schema**] | The default schema to use for the specified database once connected, or specifies an empty string. The specified schema should be an existing schema for which the specified default role has privileges. <p>For more information, see the [JDBC Driver Connection Parameter Reference page in the Snowflake documentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> | 
+      | [!UICONTROL **Stage name**] | The name of the location where data files are stored in Snowflake. <p>For more information, see the [Choosing an Internal Stage for Local Files page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> | 
+      | [!UICONTROL **Stage path**] | The path to the location where data files are stored in Snowflake. <p>For more information, see the [Choosing an Internal Stage for Local Files page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> | 
 
       {style="table-layout:auto"}
 

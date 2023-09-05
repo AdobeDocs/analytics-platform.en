@@ -35,14 +35,13 @@ To export full tables from Analysis Workspace:
    | Name | Specify a name for the export. This name displays in the list of exports. | 
    | Tags | Select any tags to apply to the export. You can filter or search by tags in the exports table. <p>Tags applied to a project are not automatically applied when exporting a full table. (Alternatively, when [scheduling a full project for export](/help/analysis-workspace/export/t-schedule-report.md), any tags applied to the project are automatically applied to the export.)  <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></p>| 
    | Description | Add a description to the export. You can choose to view descriptions as a column in the [Exports page](/help/components/exports/manage-exports.md) when viewing exports. |
-   | Data view | Select the data view that contains the components that you want to include in the export. <p>**Note:** If you choose a data view that doesn't contain any components that are already included in your data table, then you are prompted to clear the data table and re-create it using components that are included in the data view you select. </p> | 
+   | Data view | Select the data view that contains the components that you want to include in the export. <p>**Note:** If you choose a data view that is missing components that are already included in your data table, then you are prompted to clear the data table and re-create it using components that are included in the selected data view. </p> | 
    | Lookback window | Select the time-frame to include in the data table. Options include [!UICONTROL **Today**], [!UICONTROL **Yesterday**], [!UICONTROL **Last 7 days**], [!UICONTROL **Last 30 days**], [!UICONTROL **This week**], and [!UICONTROL **This month**]. | 
    | Clear | Clears the contents of the data table. This allows you to start building a new table directly within the New full table export dialog.  | 
    | Export frequency | Select how often the export should occur. <p>You can choose [!UICONTROL **One time**] to send the export only once. When you select this option, the export is sent immediately.<p>Or, you can choose to send the export on a defined schedule. When sending on a schedule, options include [!UICONTROL **Daily**], [!UICONTROL **Weekly**], [!UICONTROL **Monthly by day of the week**], [!UICONTROL **Monthly by day of the month**], [!UICONTROL **Yearly by day of the month**], and [!UICONTROL **Yearly by specific date**]. </p><p>When selecting an export frequency, consider the following:</p><ul><li>The options in the [!UICONTROL **Lookback window**] field change depending on what you select here.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Additional configuration fields display depending on the option you choose.</li></ul>  | 
    | Starting on  | The day and time that the scheduled export should begin. <p>This option is available only when choosing a scheduled export frequency.</p> | 
    | Ending on | The day and time that the scheduled export expires. The scheduled export no longer runs after the date and time that you set. <p>This option is available only when choosing a scheduled export frequency.</p> |  
-   | File format | Choose whether the exported data should be in .csv or .json format. | 
-   | Include manifest file | <!-- this is not going to be in the UI, and we're just always going to include it. I still need to document that it will be included, what it's for, and where people can find it. --> | 
+   | File format | Choose whether the exported data should be in .csv or .json format. |  
    | Account | Select the cloud export account where you want the data to be sent. <p>For more information, see [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).</p> |
    | Location name | The location on the account where you want the export data to be sent. <p>For more information, see [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).</p><p>You can select the [!UICONTROL **Add new location**] button to create a new location for an existing export account. |
    | Data Preview | Shows the estimated size, estimated number of rows, and number of breakdowns. | 
@@ -135,6 +134,20 @@ If a non-default attribution model is being used in a report, the allocation mod
 After data is exported from Analysis Workspace, you can edit, re-export, duplicate, tag, or delete existing exports, as described in [Manage exports](/help/components/exports/manage-exports.md). 
 
 You can also retry or log support tickets for failed exports, as described in [Manage export logs](/help/components/exports/manage-export-logs.md).
+
+## View exported data and manifest file
+
+Exported data is available in the cloud destination that you configured, as described in [Configure cloud export accounts](help/components/exports/cloud-export-accounts.md) and [Configure cloud export locations](help/components/exports/cloud-export-locations.md). 
+
+A manifest file is included with the exported data for each delivery. The manifest file enables you to confirm that all files were delivered successfully. It includes the following information: 
+
+* A list of all files that were delivered
+
+* The size of each file
+
+* The time stamp of each file
+
+<!-- add in  what the file name, structure, and file format will be -->
 
 ## Comparison of Full Table Export (in Customer Journey Analytics) to Data Warehouse (in Adobe Analytics)
 

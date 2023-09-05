@@ -94,10 +94,10 @@ To configure a cloud export account:
 
       |Field | Function | 
       |---------|----------|
-      | [!UICONTROL **Account identifier**] | <!--add info --> | 
-      | [!UICONTROL **User name**] | <!--add info --> | 
-      | [!UICONTROL **Role**] | |
-      | [!UICONTROL **Location Account Secret**] | Copy the secret from the Snowflake application that you created. In Snowflake, this information is located in <!--add link to Snowflake docs -->. | 
+      | [!UICONTROL **Account identifier**] | Uniquely identifies a Snowflake account within your organization, as well as throughout the global network of Snowflake-supported cloud platforms and cloud regions. <p>For more information, see the [Account Identifiers page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> | 
+      | [!UICONTROL **User name**] | Specifies the login name of the user for the connection. <p>For more information, see the [JDBC Driver Connection Parameter Reference page in the Snowflake documentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> | 
+      | [!UICONTROL **Role**] | The default access control role to use in the Snowflake session initiated by the driver. <p>For more information, see the [JDBC Driver Connection Parameter Reference page in the Snowflake documentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
+      | [!UICONTROL **Location Account Secret**] | Copy the secret from the Snowflake application that you created. For more information, see the [Create Secret page in the Snowflake documentation](https://docs.snowflake.com/en/sql-reference/sql/create-secret). | 
 
    +++
 
