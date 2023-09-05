@@ -68,7 +68,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | User Permissions/Data Access Controls | Customer Journey Analytics distinguishes between [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) product admins, product profile admins, and users. Only product admins can Create/update/delete Connections, Projects, Filters, or Calculated Metrics that were created by other users, while product admins and product profile admins can edit Data Views. Additional user permissions are available for things like creating calculated metrics, filter, or annotations. |
 | Visualizations | All visualizations are supported except for the Map visualization. |
 
-
 {style="table-layout:auto"}
 
 ## Partial Support {#partial}
