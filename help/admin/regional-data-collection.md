@@ -32,5 +32,12 @@ RDC currently includes the following locations (subject to change):
 
 {style="table-layout:auto"}
 
+When the data hits the regional data center, the datastream configuration determines how data is routed further.
+
+Customer Journey Analytics requires datasets from Adobe Experience Platform, so your datastream configuration requires the Adobe Experience Platform service to route the data from the regional data center to the data center where your Adobe Experience Platform instance is located.Customer Journey Analytics and its supporting services and infrastructure are deployed at that same Adobe Experience Platform instance.
+
+
 See [Data collection overview](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=en) for more information about the process of data collection beyond the Experience Edge network and its regional data centers.
+
+
 
