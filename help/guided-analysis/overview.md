@@ -1,6 +1,7 @@
 ---
 title: Guided analysis overview
 description: A method of analyzing data in Customer Journey Analytics that lets product teams get high-quality insights quickly. Also referred to as Product Analytics.
+keywords: product analytics
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
 ---

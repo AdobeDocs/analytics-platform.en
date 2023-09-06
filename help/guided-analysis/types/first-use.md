@@ -2,6 +2,7 @@
 title: First use view
 description: Measure the impact of first-time feature use on key indicators.
 feature: Guided Analysis
+keywords: product analytics
 ---
 # [!UICONTROL First use] view
 
