@@ -692,7 +692,7 @@ You define an `Email Marketing (updated)` derived field. You use the [!UICONTROL
 
 ### Lookup
 
-Lookup values using a field from a lookup dataset and returns value in a new derived field or for further rules processing.
+Lookup values using a field from a lookup dataset and returns value in a new derived field or for further rule processing.
 
 +++ Details
 
@@ -1061,7 +1061,7 @@ Trims whitespace, special characters or number of characters from either the beg
 
 ## Use case 1 {#trim-uc1}
 
-You collect product data, however that data contains hidden whitespace characters which fragments reporting and is confusing for customers. You would like to easily trim any excess whitepace
+You collect product data, however that data contains hidden whitespace characters which fragments reporting. You would like to easily trim any excess whitepace
 
 ### Data before {#trim-uc1-databefore}
 
@@ -1120,7 +1120,7 @@ You create a  `Page Name` derived field. You use the [!UICONTROL TRIM] function 
 
 ## Use case 3 {#trim-uc3}
 
-You collect data inclusing storeID. The storeID contains the abbreviated US state code as the first two characters. You want to only use that state code in your reporting.
+You collect data including a storeID. The storeID contains the abbreviated US state code as the first two characters. You want to only use that state code in your reporting.
 
 ### Data before {#trim-uc3-databefore}
 
