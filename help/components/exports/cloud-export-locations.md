@@ -12,6 +12,8 @@ Before you can export Customer Journey Analytics data to a cloud destination as 
 
 This process consists of adding and configuring the account (such as Amazon S3, Google Cloud Platform, and so forth) as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md), and then adding and configuring the location within that account (such as a folder within the account) as described in this article.
 
+For information about how to manage existing locations, including viewing, editing, and deleting locations, see [Manage cloud export locations](/help/components/exports/manage-export-locations.md).
+
 To configure a cloud export location:
 
 1. You need to add an account before you can add a location. If you haven't already, add an account as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).
@@ -28,7 +30,7 @@ To configure a cloud export location:
    |---------|----------|
    | [!UICONTROL **Name**] | The name of the location.  | 
    | [!UICONTROL **Description**] | Provide a short description of the account to help differentiate it from other accounts of the same account type. |
-   | [!UICONTROL **Location account**] | Select the location account that you created in [Add an account](#add-an-account). | 
+   | [!UICONTROL **Location account**] | Select the location account that you created in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md). | 
 
 1. In the [!UICONTROL **Location properties**] section, specify information specific to the account type of your location account.  
 
@@ -42,8 +44,8 @@ To configure a cloud export location:
 
       |Field | Function | 
       |---------|----------|
-      | [!UICONTROL **Role ARN**] | You must provide a Role ARN (Amazon Resource Name) that Adobe can use to gain access to the Amazon S3 account. To do this, you create an IAM permission policy for the source account, attach the policy to a user, and then create a role for the destination account. For specific information, see [this AWS documentation](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-iam/). | 
-      | [!UICONTROL **User ARN**] | The User ARN (Amazon Resource Name) is provided by Adobe. You must attach this user to the policy you created. | 
+      | [!UICONTROL **Bucket**] | The bucket within your Amazon S3 account where you want Adobe Analytics data to be sent. Ensure that the User ARN that was provided by Adobe has access to upload files to this bucket. | 
+      | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, folder_name/ | 
 
       {style="table-layout:auto"}
 
@@ -57,8 +59,8 @@ To configure a cloud export location:
 
       |Field | Function | 
       |---------|----------|
-      | [!UICONTROL **Bucket name**] | The bucket within your GCP account where you want Adobe Analytics data to be sent. Ensure that you have granted permission to the Principal provided by Adobe to upload files to this bucket. For information about granting permissions, see [Add a principal to a bucket-level policy](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) in the Google Cloud documentation.|  
-      | [!UICONTROL **Key prefix**] | The folder within the bucket where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, folder_name/ | 
+      | [!UICONTROL **Bucket**] | The bucket within your GCP account where you want Customer Journey Analytics data to be sent. Ensure that you have granted permission to the Principal provided by Adobe to upload files to this bucket. (The Principal is provided when [configuring the Google Cloud Platform account](/help/components/exports/cloud-export-accounts.md).) For information about granting permissions, see [Add a principal to a bucket-level policy](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) in the Google Cloud documentation.|  
+      | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, folder_name/ | 
 
       {style="table-layout:auto"}
    
@@ -70,8 +72,8 @@ To configure a cloud export location:
 
       |Field | Function | 
       |---------|----------|
-      | [!UICONTROL **Container name**] | The container within the account you specified where you want Adobe Analytics data to be sent. | 
-      | [!UICONTROL **Key prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, `folder_name/` | 
+      | [!UICONTROL **Container name**] | The container within the account you specified where you want Customer Journey Analytics data to be sent. | 
+      | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, `folder_name/` | 
 
       {style="table-layout:auto"}
 
@@ -114,7 +116,8 @@ To configure a cloud export location:
 
       |Field | Function | 
       |---------|----------|
-      | [!UICONTROL **Location Account Secret**] | Copy the secret from the Adobe Experience Platform application that you created. In Adobe Exprience Platform, this information is located in <!--add link to AEP docs -->. | 
+      | [!UICONTROL **IMS Org ID**] | The IMS Org ID is provided by Adobe. Click the Copy icon next to the [!UICONTROL **IMS Org ID**] field to copy the contents of the field, then use the ID in your Adobe Exprerience Platform account. | 
+      | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, `folder_name/` |
 
    +++
 

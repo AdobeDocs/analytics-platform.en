@@ -30,8 +30,8 @@ To find information you need, you can either filter the list of logs or search f
 
    |Filter | Description |
    |---------|----------|
-   | Account | The account type that the export is associated with, such as Google Cloud Platform, Azure SAS, or Azure RBAC. | 
-   | Status | The status of the export. The following statuses are available: <ul><li>Pending</li><li>Completed</li><li>Failed<p>The following situations can result in a failed export. Hover over the Failed status to see details about the failure. <ul><li>Scheduled export expiration</li><li>Row limit reached for scheduled export </li></ul> </p></li></ul> | 
+   | [!UICONTROL **Account type**] | The account type that the log is associated with. The following account types are available: <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul>. | 
+   | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Pending**]: A specific instance of an export has been started but is not yet complete.</li><li>[!UICONTROL **Completed**]: A specific instance of an export has finished processing and is available in the export account.</li><li>[!UICONTROL **Failed**]<p>The following situations can result in a failed export. Hover over the Failed status to see details about the failure. <ul><li>Scheduled export expiration</li><li>Row limit reached for scheduled export </li></ul> </p></li></ul> | 
 
    {style="table-layout:auto"}
 

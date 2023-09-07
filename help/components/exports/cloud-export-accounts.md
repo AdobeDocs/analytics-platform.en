@@ -53,6 +53,7 @@ To configure a cloud export account:
       |Field | Function | 
       |---------|----------|
       | [!UICONTROL **Project ID**] | Your Google Cloud project ID. See the [Google Cloud documentation about getting a project ID](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects). |  
+      | [!UICONTROL **Principal**] | The Principal is provided by Adobe. Click the [!UICONTROL **Copy**] icon next to the [!UICONTROL **Principal**] field to copy the contents of the field, then ensure that you grant permission to the Principal to upload files to this bucket in Google Cloud Platform. |
 
       {style="table-layout:auto"}
    
@@ -68,7 +69,7 @@ To configure a cloud export account:
       | [!UICONTROL **Tenant ID**] | Copy this ID from the Azure application that you created. In Microsoft Azure, this information is located on the **Overview** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
       | [!UICONTROL **Key vault URI**] | <p>The path to the SAS token in Azure Key Vault.  To configure Azure SAS, you need to store an SAS token as a secret using Azure Key Vault. For information, see the [Microsoft Azure documentation about how to set and retrieve a secret from Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>After the key vault URI is created, add an access policy on the Key Vault in order to grant permission to the Azure application that you created. For information, see the [Microsoft Azure documentation about how to assign a Key Vault access policy](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p> | 
       | [!UICONTROL **Key vault secret name**] | The secret name you created when adding the secret to Azure Key Vault. In Microsoft Azure, this information is located in the Key Vault you created, on the **Key Vault** settings pages. For information, see the [Microsoft Azure documentation about how to set and retrieve a secret from Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations). |
-      | [!UICONTROL **Location Account Secret**] | Copy the secret from the Azure application that you created. In Microsoft Azure, this information is located on the **Certificates & secrets** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+      | [!UICONTROL **Location account secret**] | Copy the secret from the Azure application that you created. In Microsoft Azure, this information is located on the **Certificates & secrets** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
 
       {style="table-layout:auto"}
 
@@ -95,19 +96,21 @@ To configure a cloud export account:
       |Field | Function | 
       |---------|----------|
       | [!UICONTROL **Account identifier**] | Uniquely identifies a Snowflake account within your organization, as well as throughout the global network of Snowflake-supported cloud platforms and cloud regions. <p>For more information, see the [Account Identifiers page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> | 
-      | [!UICONTROL **User name**] | Specifies the login name of the user for the connection. <p>For more information, see the [JDBC Driver Connection Parameter Reference page in the Snowflake documentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> | 
+      | [!UICONTROL **User**] | Specifies the login name of the user for the connection. <p>For more information, see the [JDBC Driver Connection Parameter Reference page in the Snowflake documentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> | 
       | [!UICONTROL **Role**] | The default access control role to use in the Snowflake session initiated by the driver. <p>For more information, see the [JDBC Driver Connection Parameter Reference page in the Snowflake documentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-      | [!UICONTROL **Location Account Secret**] | Copy the secret from the Snowflake application that you created. For more information, see the [Create Secret page in the Snowflake documentation](https://docs.snowflake.com/en/sql-reference/sql/create-secret). | 
+      | [!UICONTROL **Public key**] | The Public key is provided by Adobe. Click the Copy icon next to the [!UICONTROL **Public key**] field to copy the contents of the field, then use the public key in your Snowflake account. For more information, see the [Key Pair Authentication & Key Pair Rotation page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth). | 
 
    +++
 
    +++Adobe Experience Platform
 
-      Specify the following information to configure an Adobe Experience Platform account:
+      All Adobe Experience Platform customers can export data to AEP Landing Zone.
+      
+      Specify the following information to configure an Adobe Experience Platform account.
 
       |Field | Function | 
       |---------|----------|
-      | [!UICONTROL **Location Account Secret**] | Copy the secret from the Adobe Experience Platform application that you created. In Adobe Exprience Platform, this information is located in <!--add link to AEP docs -->. | 
+      | [!UICONTROL **IMS Org ID**] | The IMS Org ID is provided by Adobe. Click the Copy icon next to the [!UICONTROL **IMS Org ID**] field to copy the contents of the field, then use the ID in your Adobe Exprerience Platform account. | 
 
    +++
 

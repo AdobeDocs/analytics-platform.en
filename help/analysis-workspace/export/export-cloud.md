@@ -38,7 +38,7 @@ To export full tables from Analysis Workspace:
    | Data view | Select the data view that contains the components that you want to include in the export. <p>**Note:** If you choose a data view that is missing components that are already included in your data table, then you are prompted to clear the data table and re-create it using components that are included in the selected data view. </p> | 
    | Lookback window | Select the time-frame to include in the data table. Options include [!UICONTROL **Today**], [!UICONTROL **Yesterday**], [!UICONTROL **Last 7 days**], [!UICONTROL **Last 30 days**], [!UICONTROL **This week**], and [!UICONTROL **This month**]. | 
    | Clear | Clears the contents of the data table. This allows you to start building a new table directly within the New full table export dialog.  | 
-   | Export frequency | Select how often the export should occur. <p>You can choose [!UICONTROL **One time**] to send the export only once. When you select this option, the export is sent immediately.<p>Or, you can choose to send the export on a defined schedule. When sending on a schedule, options include [!UICONTROL **Daily**], [!UICONTROL **Weekly**], [!UICONTROL **Monthly by day of the week**], [!UICONTROL **Monthly by day of the month**], [!UICONTROL **Yearly by day of the month**], and [!UICONTROL **Yearly by specific date**]. </p><p>When selecting an export frequency, consider the following:</p><ul><li>The options in the [!UICONTROL **Lookback window**] field change depending on what you select here.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Additional configuration fields display depending on the option you choose.</li></ul>  | 
+   | Export frequency | Select how often the export should occur. <p>You can choose [!UICONTROL **Send now (one time)**] to send the export only once. When you select this option, the export is sent immediately.<p>Or, you can choose to send the export on a defined schedule. When sending on a schedule, options include [!UICONTROL **Daily**], [!UICONTROL **Weekly**], [!UICONTROL **Monthly by day of the week**], [!UICONTROL **Monthly by day of the month**], [!UICONTROL **Yearly by day of the month**], and [!UICONTROL **Yearly by specific date**]. </p><p>When selecting an export frequency, consider the following:</p><ul><li>The options in the [!UICONTROL **Lookback window**] field change depending on what you select here.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Additional configuration fields display depending on the option you choose.</li></ul>  | 
    | Starting on  | The day and time that the scheduled export should begin. <p>This option is available only when choosing a scheduled export frequency.</p> | 
    | Ending on | The day and time that the scheduled export expires. The scheduled export no longer runs after the date and time that you set. <p>This option is available only when choosing a scheduled export frequency.</p> |  
    | File format | Choose whether the exported data should be in .csv or .json format. |  
@@ -79,6 +79,8 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 ### Minimum requirements
 
 Tables must include at least one dimension in the row and one metric in each column in order to be supported with a full-table export. 
+
+Administrators should ensure that the IP addresses listed in [IP addresses used by Customer Journey Analytics](/help/admin/ip-addresses.md) are included in the firewall allowlist.
 
 ### Unsupported features
 
@@ -137,9 +139,23 @@ You can also retry or log support tickets for failed exports, as described in [M
 
 ## View exported data and manifest file
 
-Exported data is available in the cloud destination that you configured, as described in [Configure cloud export accounts](help/components/exports/cloud-export-accounts.md) and [Configure cloud export locations](help/components/exports/cloud-export-locations.md). 
+### Exported data
 
-A manifest file is included with the exported data for each delivery. The manifest file enables you to confirm that all files were delivered successfully. It includes the following information: 
+Exported data is available as a compressed file in the cloud destination that you configured, as described in [Configure cloud export accounts](help/components/exports/cloud-export-accounts.md) and [Configure cloud export locations](help/components/exports/cloud-export-locations.md). 
+
+The filename of the compressed file is as follows, depending on whether you chose CSV or JSON as the file format:
+
+* `cja-export-{reportInstanceId}-{idx}.csv.gz`
+
+* `cja-export-{reportInstanceId}-{idx}.json.gz`
+
+>[!NOTE]
+>
+>You choose the file format in the [!UICONTROL **File format**] field when exporting the table, as described in [Export full tables from Analysis Workspace](#export-full-tables-from-analysis-workspace).
+
+### Manifest file
+
+A manifest file with a filename of `cja-export-{reportInstanceId}-{idx}.json.gz` is included with any successful export delivery that contains at least one file. The manifest file enables you to confirm that all files were delivered successfully. It includes the following information: 
 
 * A list of all files that were delivered
 

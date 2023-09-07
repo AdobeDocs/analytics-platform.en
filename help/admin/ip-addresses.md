@@ -4,7 +4,7 @@ description: If your organization's firewall blocks IP addresses that originate 
 solution: Customer Journey Analytics
 feature: Basics
 ---
-# IPs and domains used by Customer Journey Analytics
+# IP addresses used by Customer Journey Analytics
 
 Some firewall configurations block IP addresses originating from Adobe's data collection servers or servers responsible for accessing data. You can use this list of ranges to alter your organization's firewall settings to allow access and to send data from within your organization. This page includes both inbound systems (such as data collection) and outbound systems (such as data feeds) that Adobe uses.
 
@@ -56,91 +56,158 @@ Some firewall configurations block IP addresses originating from Adobe's data co
 
 `52.254.107.0/28`
 
+## NLD2: Europe
+`40.74.6.128/28`
 
-## Allow dependent technology domains
+`51.144.184.248/29`
 
-Adobe Analytics uses the following hosts to improve performance and product experience. Adobe recommends allowing these domains through your organization's firewall for an optimal experience using Adobe Analytics.
+`40.74.7.192/28`
 
-| Technology | Domain |
-| --- | --- |
-| Adobe Analytics domains | `adobe.com`, `adobe.net`, `adobe.io` |
-| Adobe Analytics legacy domain | `omniture.com` |
-| Amazon AWS | `aaui-879784980514.s3.us-east-2.amazonaws.com` |
-| Amazon CloudFront | `d30ln29764hddd.cloudfront.net` |
-| Gainsight | `esp.aptrinsic.com`, `esp-m.aptrinsic.com` |
-| LaunchDarkly | `app.launchdarkly.com` |
-| Microsoft Azure Blob Storage | `awaascicdprodva7.blob.core.windows.net` |
-| Microsoft Azure CDN | `aauicdnva7.azureedge.net` |
+`40.74.7.128/28`
 
-## All Adobe Analytics IP address blocks
+`40.74.7.176/28`
 
-The following table covers all Adobe-owned IP addresses used for Adobe Analytics. They do not include all services hosted in public clouds.
+`20.50.23.153`
 
-| IP Block (CIDR Notation) |
-| --- |
-| `63.140.32.0/19` |
-| `66.117.16.0/20` |
-| `66.235.128.0/19` |
-| `130.248.0.0/16` |
-| `185.34.188.0/22` |
+`40.74.6.80/28`
 
-## Data collection and FTP IP address blocks
+`40.74.6.144/28`
 
-If your organization prefers to allow specific IP address ranges you can use the following table. All of the ranges in this section are included in the above table. FTP connections for Data Warehouse and Data Feeds only originate from the London, Oregon, and Singapore locations.
+`40.74.5.128/28`
 
-| Location | IP Range (CIDR Notation) |
-| --- | --- |
-| Australia | `63.140.55.0/24` |
-| Australia | `63.140.56.0/23` |
-| California | `63.140.32.0/23` |
-| California | `63.140.34.0/24` |
-| France | `63.140.62.0/23` |
-| India | `66.117.20.0/24` |
-| India | `66.117.22.0/23` |
-| Japan | `130.248.130.0/23` |
-| Japan | `130.248.169.0/23` |
-| Japan | `63.140.50.0/23` |
-| Japan | `66.117.31.0/24` |
-| London | `66.235.156.0/24` |
-| London | `185.34.188.0/22` |
-| London | `130.248.152.0/22` |
-| London | `130.248.244.0/23` |
-| Oregon | `66.235.132.0/22` |
-| Oregon | `130.248.150.0/24` |
-| Oregon | `130.248.160.0/21` |
-| Singapore | `130.248.170.0/23` |
-| Singapore | `130.248.240.0/24` |
-| Singapore | `63.140.44.0/22` |
-| Singapore | `63.140.48.0/23` |
-| Singapore | `66.117.30.0/24` |
-| Virginia | `63.140.38.0/23` |
-| Virginia | `63.140.54.0/24` |
+`51.105.144.1`
 
-## AWS hosts
+`51.105.144.81`
 
-Adobe Analytics uses Amazon Web Services as part of its data collection process. The following table includes AWS IPv4 host addresses reserved for Adobe. These hosts are **not** included in the aggregate block range above.
+`40.74.4.176/28`
 
-| Location | Host |
-| --- | --- |
-| China | `52.80.44.16` |
-| China | `52.80.161.58` |
-| China | `140.179.173.142` |
+`52.142.236.87`
 
-The following table includes AWS IPv6 address blocks used by Adobe. These hosts are **not** included in the aggregate block range above.
+`40.74.4.144/28`
 
-| Location | Host |
-| --- | --- |
-| Australia | `2406:da1c:406:1a00::/56` |
-| Australia | `2406:da1c:ce5:b400::/56` |
-| California | `2600:1f1c:366:d900::/56` |
-| France | `2a05:d012:706:d000::/56` |
-| India | `2406:da1a:f34:6a00::/56` |
-| Ireland | `2a05:d018:309:600::/56` |
-| Japan | `2406:da14:b07:ab00::/56` |
-| Oregon | `2600:1f14:1eb:7d00::/56` |
-| Oregon | `2600:1f14:9d3:2b00::/56` |
-| Singapore | `2406:da18:6e8:1e00::/56` |
-| Virginia | `2600:1f18:1a20:e800::/56` |
-| Virginia | `2600:1f18:4fd:6000::/56` |
-| Virginia | `2600:1f18:b00:e100::/56` |
-| Virginia | `2600:1f18:d1f:bd00::/56` |
+`20.101.246.9`
+
+`40.74.4.160/28`
+
+`40.74.7.160/28`
+
+`40.74.7.144/28`
+
+`40.74.3.176/28`
+
+`51.124.70.4`
+
+`40.74.6.96/28`
+
+`40.74.7.208/28`
+
+`40.74.6.112/28`
+
+## AUS5: Australia
+`20.43.110.192/28`
+
+`20.40.185.111`
+
+`20.43.97.95`
+
+`20.43.111.16/28`
+
+`20.193.38.208/28`
+
+`20.43.110.64/28`
+
+`20.40.185.225`
+
+`20.43.110.112/28`
+
+`20.43.110.224/28`
+
+`20.193.36.37`
+
+`20.43.110.240/28`
+
+`20.43.111.32/28`
+
+`20.40.185.185`
+
+`20.43.111.0/28`
+
+`20.43.110.208/28`
+
+`20.43.110.96/28`
+
+`20.43.110.48/28`
+
+`20.43.110.128/28`
+
+`20.43.110.160/28`
+
+`20.43.110.80/28`
+
+`20.193.56.144/28`
+
+`20.193.56.160/28`
+
+`20.43.110.176/28`
+
+`20.43.110.144/28`
+
+`20.53.111.113`
+
+`20.193.56.128/28`
+
+`20.227.32.175`
+
+## CAN2: Canada
+`20.116.159.80/28`
+
+`20.116.159.224/28`
+
+`20.116.159.192/28`
+
+`20.116.159.64/28`
+
+`20.151.241.173`
+
+`20.116.159.128/28`
+
+`20.116.159.208/28`
+
+`20.116.159.48/28`
+
+`20.151.240.247`
+
+`20.116.159.0/28`
+
+`20.220.243.238`
+
+`20.116.175.240/28`
+
+`20.116.155.128/28`
+
+`20.116.248.0/28`
+
+`20.151.241.138`
+
+`20.116.159.144/28`
+
+`20.116.175.224/28`
+
+`20.116.248.16/28`
+
+`20.151.241.124`
+
+`20.116.159.160/28`
+
+`20.116.159.96/28`
+
+`20.104.5.248`
+
+`20.116.159.112/28`
+
+`20.116.159.176/28`
+
+`20.116.159.32/28`
+
+`20.116.158.240/28`
+

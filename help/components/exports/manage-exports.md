@@ -10,6 +10,40 @@ feature: Components
 
 After you export a full table as described in [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md), the exports are available on the [!UICONTROL Exports] tab on the [!UICONTROL Exports] page. 
 
+You can see only the exports that you create.
+
+## Filter and search for exports
+
+To find information you need, you can either filter the list of exports or search for an export.
+
+### Filter the list of exports 
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. Select the [!UICONTROL **Exports**] tab.
+
+1. Select the **Filter** icon.
+
+   <!--add screenshot -->
+
+   You can filter by the following criteria:
+
+   |Filter | Description |
+   |---------|----------|
+   | [!UICONTROL **Account type**] | The account type that the export is associated with. The following account types are available: <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul>. | 
+   | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Active**]: Indicates that a scheduled export has not yet expired. </li><li>[!UICONTROL **Completed**]: Indicates that an export has successfully exported. For scheduled exports, this indicates that the schedule has expired.</li><li>[!UICONTROL **Failed**]<p>The following situations can result in a failed export. Hover over the Failed status to see details about the failure. <ul><li>Scheduled export expiration</li><li>Row limit reached for scheduled export </li></ul> </p></li></ul> | 
+   | [!UICONTROL **Frequency**] | How often the export occurs. The following frequencies are available: <ul><li>[!UICONTROL **One time**]</li><li>[!UICONTROL **Daily**]</li><li>[!UICONTROL **Weekly**]</li><li>[!UICONTROL **Monthly**]</li><li>[!UICONTROL **Yearly**]</li></ul>|
+
+   {style="table-layout:auto"}
+
+### Search for exports
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. Select the [!UICONTROL **Exports**] tab.
+
+1. In the search field, begin typing any information associated with the export you're searching for. You can search for data from any column available in the table. 
+
 ## Edit an export
 
 You can edit an export's properties, format, scheduling, and location information. 

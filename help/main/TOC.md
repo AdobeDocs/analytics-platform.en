@@ -255,6 +255,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Exports {#exports}
     + [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md)
     + [Configure cloud export locations](/help/components/exports/cloud-export-locations.md)
+    + [Manage cloud export locations](/help/components/exports/manage-export-locations.md)
     + [Manage exports](/help/components/exports/manage-exports.md)
     + [Manage export logs](/help/components/exports/manage-export-logs.md)
     + [Troubleshoot exports](/help/components/exports/troubleshoot-exports.md)
