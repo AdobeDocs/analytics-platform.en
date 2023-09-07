@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Configure cloud export locations
 feature: Components
 ---
-# Manage cloud export locations
+# Manage cloud export locations and accounts
 
 {{select-package}}
 
@@ -65,3 +65,27 @@ To find information you need, you can either filter the list of locations or sea
    <!-- add screenshot? -->
 
 1. Select [!UICONTROL **Delete**], then select [!UICONTROL **Delete**] again on the confirmation dialog.
+
+## Edit accounts
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. Select the [!UICONTROL **Location accounts**] tab.
+
+   ![Accounts page](assets/account-page.png)
+
+1. Select [!UICONTROL **View details**] on the account that you want to edit.
+
+1. Make any desired changes, then select [!UICONTROL **Save**].
+
+## Delete accounts
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. Select the [!UICONTROL **Location accounts**] tab.
+
+   ![Accounts page](assets/account-page.png)
+
+1. Select the 3-dot icon on the account that you want to edit, then select [!UICONTROL **Delete account**]. 
+
+1. Select [!UICONTROL **Delete**] again on the confirmation dialog.

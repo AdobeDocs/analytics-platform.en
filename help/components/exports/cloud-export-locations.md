@@ -12,7 +12,7 @@ Before you can export Customer Journey Analytics data to a cloud destination as 
 
 This process consists of adding and configuring the account (such as Amazon S3, Google Cloud Platform, and so forth) as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md), and then adding and configuring the location within that account (such as a folder within the account) as described in this article.
 
-For information about how to manage existing locations, including viewing, editing, and deleting locations, see [Manage cloud export locations](/help/components/exports/manage-export-locations.md).
+For information about how to manage existing locations, including viewing, editing, and deleting locations, see [Manage cloud export locations and accounts](/help/components/exports/manage-export-locations.md).
 
 To configure a cloud export location:
 
