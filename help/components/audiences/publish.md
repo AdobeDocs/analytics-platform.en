@@ -86,7 +86,7 @@ At several points prior to, during, and after audience publishing, latencies can
 | Not shown | Adobe Analytics to Analytics source connector (A4T) | Up to 30 minutes |
 | 1 | Data ingestion into Data Lake (from Analytics source connector or other sources) | Up to 90 minutes |
 | 2 | Data ingestion from Experience Platform Data Lake into Customer Journey Analytics | Up to 90 minutes |
-| 3 | Audience publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | Around 60 minutes |
+| 3 | Audience publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data.<p>**Note**: the audience gets created/defined in Experience Platform within 1-2 minutes. However, it takes about 60 minutes before the audience starts receiving the IDs based on matched criteria and is ready for activation. | Around 60 minutes |
 | 4 | Refresh frequency for audiences |<ul><li>One-time refresh (latency of less than 5 minutes)</li><li>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate) |
 | 5 | Creating destination in Adobe Experience Platform: Activating the new segment | 1-2 hours |
 
