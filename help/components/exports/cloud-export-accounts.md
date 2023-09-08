@@ -54,8 +54,8 @@ To configure a cloud export account:
 
       |Field | Function | 
       |---------|----------|
-      | [!UICONTROL **Project ID**] | Your Google Cloud project ID. See the [Google Cloud documentation about getting a project ID](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects). |  
-      | [!UICONTROL **Principal**] | The Principal is provided by Adobe. Click the [!UICONTROL **Copy**] icon next to the [!UICONTROL **Principal**] field to copy the contents of the field, then ensure that you grant permission to the Principal to upload files to this bucket in Google Cloud Platform. |
+      | [!UICONTROL **Project ID**] | Your Google Cloud project ID that you copy from your Google Cloud account. See the [Google Cloud documentation about getting a project ID](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects). |  
+      | [!UICONTROL **Principal**] | The Principal is provided by Adobe. Click the [!UICONTROL **Copy**] icon next to the [!UICONTROL **Principal**] field to copy the contents of the field, then ensure that you grant permission to the Principal to upload files to this bucket in Google Cloud Platform. <!-- add link to Google Cloud docs on how to do this --> |
 
       {style="table-layout:auto"}
    
@@ -71,7 +71,7 @@ To configure a cloud export account:
       | [!UICONTROL **Tenant ID**] | Copy this ID from the Azure application that you created. In Microsoft Azure, this information is located on the **Overview** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
       | [!UICONTROL **Key vault URI**] | <p>The path to the SAS token in Azure Key Vault.  To configure Azure SAS, you need to store an SAS token as a secret using Azure Key Vault. For information, see the [Microsoft Azure documentation about how to set and retrieve a secret from Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>After the key vault URI is created, add an access policy on the Key Vault in order to grant permission to the Azure application that you created. For information, see the [Microsoft Azure documentation about how to assign a Key Vault access policy](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p> | 
       | [!UICONTROL **Key vault secret name**] | The secret name you created when adding the secret to Azure Key Vault. In Microsoft Azure, this information is located in the Key Vault you created, on the **Key Vault** settings pages. For information, see the [Microsoft Azure documentation about how to set and retrieve a secret from Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations). |
-      | [!UICONTROL **Location account secret**] | Copy the secret from the Azure application that you created. In Microsoft Azure, this information is located on the **Certificates & secrets** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+      | [!UICONTROL **Location account secret**] | Copy the secret from the Azure application that you created. In Microsoft Azure, this information is located on the **Certificates & secrets** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). <!-- need to grant permission to the bucket. Jun will send info on where that is documented) --> |
 
       {style="table-layout:auto"}
 
@@ -85,6 +85,8 @@ To configure a cloud export account:
       |---------|----------|
       | [!UICONTROL **Application ID**] | Copy this ID from the Azure application that you created. In Microsoft Azure, this information is located on the **Overview** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). | 
       | [!UICONTROL **Tenant ID**] | Copy this ID from the Azure application that you created. In Microsoft Azure, this information is located on the **Overview** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). | 
+      | Key vault URI |  |
+      | Key vault secret name |  |
       | [!UICONTROL **Location account secret**] | Copy the secret from the Azure application that you created. In Microsoft Azure, this information is located on the **Certificates & secrets** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). | 
 
       {style="table-layout:auto"}
@@ -98,8 +100,8 @@ To configure a cloud export account:
       |Field | Function | 
       |---------|----------|
       | [!UICONTROL **Account identifier**] | Uniquely identifies a Snowflake account within your organization, as well as throughout the global network of Snowflake-supported cloud platforms and cloud regions. <p>For more information, see the [Account Identifiers page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> | 
-      | [!UICONTROL **User**] | Specifies the login name of the user for the connection. <p>For more information, see the [JDBC Driver Connection Parameter Reference page in the Snowflake documentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> | 
-      | [!UICONTROL **Role**] | The default access control role to use in the Snowflake session initiated by the driver. <p>For more information, see the [JDBC Driver Connection Parameter Reference page in the Snowflake documentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
+      | [!UICONTROL **User**] | Specifies the login name of the user for the connection. This is a user that will be used specifically for Adobe. You can create the user in Snowflake after specifying the username here. <p>For more information, see the [JDBC Driver Connection Parameter Reference page in the Snowflake documentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> | 
+      | [!UICONTROL **Role**] | The default access control role to use in the Snowflake session initiated by the driver. You should create a role specific for Adobe that has Read and Write access.<p>For more information, see the [JDBC Driver Connection Parameter Reference page in the Snowflake documentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
       | [!UICONTROL **Public key**] | The Public key is provided by Adobe. Click the Copy icon next to the [!UICONTROL **Public key**] field to copy the contents of the field, then use the public key in your Snowflake account. For more information, see the [Key Pair Authentication & Key Pair Rotation page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth). | 
 
    +++

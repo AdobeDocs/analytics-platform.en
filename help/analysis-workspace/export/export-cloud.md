@@ -35,7 +35,7 @@ To export full tables from Analysis Workspace:
    | Name | Specify a name for the export. This name displays in the list of exports. | 
    | Tags | Select any tags to apply to the export. You can filter or search by tags in the exports table. <p>Tags applied to a project are not automatically applied when exporting a full table. (Alternatively, when [scheduling a full project for export](/help/analysis-workspace/export/t-schedule-report.md), any tags applied to the project are automatically applied to the export.)  <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></p>| 
    | Description | Add a description to the export. You can choose to view descriptions as a column in the [Exports page](/help/components/exports/manage-exports.md) when viewing exports. |
-   | Data view | Select the data view that contains the components that you want to include in the export. <p>**Note:** If you choose a data view that is missing components that are already included in your data table, then you are prompted to clear the data table and re-create it using components that are included in the selected data view. </p> | 
+   | Data view | Select the data view that contains the components that you want to include in the export. The Data view drop-down menu is located in the upper-left corner of the dialog and can be identified by the data view icon![data view icon](assets/data-view-icon.png).  <p>**Note:** If you choose a data view that is missing components that are already included in your data table, then you are prompted to clear the data table and re-create it using components that are included in the selected data view. </p> | 
    | Lookback window | Select the time-frame to include in the data table. Options include [!UICONTROL **Today**], [!UICONTROL **Yesterday**], [!UICONTROL **Last 7 days**], [!UICONTROL **Last 30 days**], [!UICONTROL **This week**], and [!UICONTROL **This month**]. | 
    | Clear | Clears the contents of the data table. This allows you to start building a new table directly within the New full table export dialog.  | 
    | Export frequency | Select how often the export should occur. <p>You can choose [!UICONTROL **Send now (one time)**] to send the export only once. When you select this option, the export is sent immediately.<p>Or, you can choose to send the export on a defined schedule. When sending on a schedule, options include [!UICONTROL **Daily**], [!UICONTROL **Weekly**], [!UICONTROL **Monthly by day of the week**], [!UICONTROL **Monthly by day of the month**], [!UICONTROL **Yearly by day of the month**], and [!UICONTROL **Yearly by specific date**]. </p><p>When selecting an export frequency, consider the following:</p><ul><li>The options in the [!UICONTROL **Lookback window**] field change depending on what you select here.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Additional configuration fields display depending on the option you choose.</li></ul>  | 
@@ -43,14 +43,16 @@ To export full tables from Analysis Workspace:
    | Ending on | The day and time that the scheduled export expires. The scheduled export no longer runs after the date and time that you set. <p>This option is available only when choosing a scheduled export frequency.</p> |  
    | File format | Choose whether the exported data should be in .csv or .json format. |  
    | Account | Select the cloud export account where you want the data to be sent. <p>For more information, see [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).</p> |
-   | Location name | The location on the account where you want the export data to be sent. <p>For more information, see [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).</p><p>You can select the [!UICONTROL **Add new location**] button to create a new location for an existing export account. |
+   | Location name | Select the location on the account where you want the export data to be sent. <p>For more information, see [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).</p><p>You can select the [!UICONTROL **Add new location**] button to create a new location for an existing export account. |
    | Data Preview | Shows the estimated size, estimated number of rows, and number of breakdowns. | 
 
    {style="table-layout:auto"}
 
 1. Select [!UICONTROL **Save**] to save the export.
 
-1. (Optional) After you create the export, whether it is a one-time or scheduled export, you can view and manage it on the [Exports page](/help/components/exports/manage-exports.md) and view it in the [Export logs](/help/components/exports/manage-export-logs.md).</p>
+   Data is sent to the cloud account that you specified at the frequency that you specified.
+
+1. (Optional) After you create the export, whether you chose to send it now or on a defined schedule, you can view and manage it on the [Exports page](/help/components/exports/manage-exports.md) and view it in the [Export logs](/help/components/exports/manage-export-logs.md).</p>
 
 ## Advantages of exporting to the cloud
 
