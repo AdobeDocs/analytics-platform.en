@@ -23,7 +23,7 @@ Use cases for this view type include:
 The query rail allows you to configure the following components:
 
 * **[!UICONTROL Steps]**: The event touchpoints that you want to track. Each bar in the chart represents a step. You can include up to ten steps.
-* **Peop[!UICONTROL ]le**: The segments that you want compare the funnel across. Each segment selected splits each step into multiple bars. Each color represents a different segment. You can include up to three segments.
+* **[!UICONTROL People]**: The segments that you want compare the funnel across. Each segment selected splits each step into multiple bars. Each color represents a different segment. You can include up to three segments.
 
 ## Chart settings
 
