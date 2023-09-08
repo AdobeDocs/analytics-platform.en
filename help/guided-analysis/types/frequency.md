@@ -1,19 +1,18 @@
 ---
 title: Frequency view
 description: Measure engagement by frequency of use.
-exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
 keywords: product analytics
 ---
 # [!UICONTROL Frequency] view
 
-The **[!UICONTROL Frequency]** view groups event data by how often an event is seen. The vertical axis of this report contains buckets that represent frequency of the event or events viewed. The horizontal axis measures the number of users or sessions for each bucket.
+The **[!UICONTROL Frequency]** view groups event data by how often an event is seen. The vertical axis of this report contains buckets that represent the frequency of the event or events viewed. The horizontal axis measures the number of users or sessions for each bucket.
 
 ## Use cases
 
 Use cases for this view type include:
 
-* **Engagement**: Track how engaged users are with any event. You can click on a horizontal bar to save it as a segment. Segments for low engagement buckets can help you determine why users are not interacting with the event at the desired frequency. Segments for high engagement buckets can help you understand why users interact with the event often. From there, you can encourage other users to adopt similar behavior.
+* **Engagement**: Track how engaged users are with any event. You can click a horizontal bar to save it as a segment. Segments for low engagement buckets can help you determine why users are not interacting with the event at the desired frequency. Segments for high engagement buckets can help you understand why users interact with the event often. From there, you can encourage other users to adopt similar behavior.
 * **Customer loyalty**: Set the event to Orders and the metric to Users. This report allows you to group users by how many times that they have made a purchase on your site within the specified date range.
 * **Support optimization**: Viewing this report by the number of support calls or open cases can give you insight around which users encounter the most issues. You can then create a segment to focus on their experience to help identify and resolve their issues.
 * **Subscription services**: This report is valuable for organizations that have subscription services. Users with low engagement are more likely to churn, so you can view this report to analyze the behavior of highly engaged users. Understanding the behavior of highly engaged users can help encourage similar behavior for low-engaged users, making them less likely to cancel their subscription.
