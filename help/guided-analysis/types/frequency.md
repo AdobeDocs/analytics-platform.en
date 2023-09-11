@@ -28,7 +28,7 @@ The query rail allows you to configure the following components:
 
 The [!UICONTROL Frequency] view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **[!UICONTROL Metric]**: The metric that you want to measure. Options include [!UICONTROL Users],  [!UICONTROL Sessions],  [!UICONTROL Percentage of users] and  [!UICONTROL Percentage of sessions]. The denominator for percentage-based metrics in this view are users or sessions who did the selected events, not all active users of the product.
+* **[!UICONTROL Metric]**: The metric that you want to measure. Options include [!UICONTROL Users],  [!UICONTROL Sessions],  [!UICONTROL Percentage of users] and  [!UICONTROL Percentage of sessions]. The denominator for percentage-based metrics in this view is users or sessions who did the selected events, not all active users of the product.
 * **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Horizontal bar] and [!UICONTROL Stacked bar].
 
 ## Bucket settings
@@ -49,5 +49,5 @@ Determines how the event is categorized into groups.
 
 The desired date range for your analysis. There are two components to this setting:
 
-* **[!UICONTROL Interval]**: The date granularity that you want to view trended data by. This setting does not impact non-trended views such as Frequency.
+* **[!UICONTROL Interval]**: The date granularity that you want to view trend data by. This setting does not impact non-trended views such as Frequency.
 * **[!UICONTROL Date]**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
