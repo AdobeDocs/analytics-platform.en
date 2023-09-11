@@ -85,8 +85,6 @@ To configure a cloud export account:
       |---------|----------|
       | [!UICONTROL **Application ID**] | Copy this ID from the Azure application that you created. In Microsoft Azure, this information is located on the **Overview** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). | 
       | [!UICONTROL **Tenant ID**] | Copy this ID from the Azure application that you created. In Microsoft Azure, this information is located on the **Overview** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). | 
-      | Key vault URI |  |
-      | Key vault secret name |  |
       | [!UICONTROL **Location account secret**] | Copy the secret from the Azure application that you created. In Microsoft Azure, this information is located on the **Certificates & secrets** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). | 
 
       {style="table-layout:auto"}
@@ -102,7 +100,7 @@ To configure a cloud export account:
       | [!UICONTROL **Account identifier**] | Uniquely identifies a Snowflake account within your organization, as well as throughout the global network of Snowflake-supported cloud platforms and cloud regions. <p>For more information, see the [Account Identifiers page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> | 
       | [!UICONTROL **User**] | Specifies the login name of the user for the connection. This is a user that will be used specifically for Adobe. You can create the user in Snowflake after specifying the username here. <p>For more information, see the [JDBC Driver Connection Parameter Reference page in the Snowflake documentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> | 
       | [!UICONTROL **Role**] | The default access control role to use in the Snowflake session initiated by the driver. You should create a role specific for Adobe that has Read and Write access.<p>For more information, see the [JDBC Driver Connection Parameter Reference page in the Snowflake documentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-      | [!UICONTROL **Public key**] | The Public key is provided by Adobe. Click the Copy icon next to the [!UICONTROL **Public key**] field to copy the contents of the field, then use the public key in your Snowflake account. For more information, see the [Key Pair Authentication & Key Pair Rotation page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth). | 
+      | [!UICONTROL **Public key**] | The Public key is provided by Adobe. Select the Copy icon next to the [!UICONTROL **Public key**] field to copy the contents of the field, then use the public key in your Snowflake account. For more information, see the [Key Pair Authentication & Key Pair Rotation page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth). | 
 
    +++
 
