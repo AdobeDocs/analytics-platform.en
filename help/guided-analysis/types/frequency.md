@@ -23,7 +23,7 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL Events]**: The events that you want to measure. Each selected event is represented as a separate graph. A row representing the trended event is added to the table. You can include up to five events.
+* **[!UICONTROL Events]**: The events that you want to measure. Each selected event is represented as a separate graph. A row that represents the trended event is added to the table. You can include up to five events.
 * **[!UICONTROL People]**: The segments that you want to measure. Each selected segment doubles the number of bars in the chart and rows in the table. You can include up to five segments.
 
 ## Chart settings
