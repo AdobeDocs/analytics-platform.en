@@ -8,6 +8,8 @@ keywords: product analytics
 
 The **[!UICONTROL Frequency]** view groups event data by how often events occur in your product. The vertical axis of this view contains buckets that represent the frequency of the event. The horizontal axis measures the number of users or sessions for each bucket.
 
+![Frequency screenshot](../assets/frequency-stacked.png)
+
 ## Use cases
 
 Use cases for this view type include:
