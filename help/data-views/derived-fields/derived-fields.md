@@ -1085,7 +1085,7 @@ You create a `Product Identifier` derived field. You use the [!UICONTROL TRIM] f
 
 | Product Identifier | Events |
 |---|--:|
-| `"prod12356 "` | 3 |
+| `"prod12356"` | 3 |
 
 {style="table-layout:auto"}
 
