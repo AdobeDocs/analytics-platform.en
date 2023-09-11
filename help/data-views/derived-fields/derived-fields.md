@@ -56,7 +56,7 @@ When you define a rule in the rule builder, you use the rule interface.
 | A | **Rule Name** | By default the rule name is **Rule X** (X referring to a sequence number). To edit the name of a rule, select its name and type in the new name, for example `Query Parameter`. |
 | B | **Function Name** | The selected function name for the rule, for example [!UICONTROL URL PARSE]. When the function is the last in the sequence of functions and determines the final output values, the function name is followed by [!UICONTROL - FINAL OUTPUT], for example [!UICONTROL URL PARSE - FINAL OUTPUT]. <br/>To show a popup with more information on the function, select ![Help icon](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Rule Description** | You can optionally add a description to a rule.<br/>Select ![More icon](assets/More.svg), then select **[!UICONTROL **Add Description**]** to add a description or **[!UICONTROL **Edit Description**]** to edit an existing description.<br/>Use the editor to enter a description. You can use the toolbar to format the text (using style selector, bold, italic, underline, right, left, centered, color, number list, bullet list) and adding links to external information. <br/>To finish editing the description, click outside of the editor. |
-| D | **Function Area** | Defines the logic of the function. The interface depends on the type of function. The dropdown for [!UICONTROL Field] or [!UICONTROL Value] shows all categories of fields (rules, standard fields, fields) available, based on the type of input the function expects. Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define.  See [Function reference](#function-reference) on detailed information for each of the functions supported. |
+| D | **Function Area** | Defines the logic of the function. The interface depends on the type of function. The dropdown for [!UICONTROL Field] or [!UICONTROL Value] shows all categories of fields (rules, standard fields, fields) available, based on the type of input the function expects. <!-- Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define.  See [Function reference](#function-reference) on detailed information for each of the functions supported. --> |
 
 {style="table-layout:auto"}
 
@@ -688,7 +688,7 @@ You define an `Email Marketing (updated)` derived field. You use the [!UICONTROL
 +++
 
 
-<!-- LOOKUP -->
+<!-- LOOKUP
 
 ### Lookup
 
@@ -735,6 +735,8 @@ You can quickly insert a [!UICONTROL Lookup] function in the rule builder, alrea
      ![Lookup drag](assets/lookup-drag.png) 
 
 +++
+
+-->
 
 <!-- LOWERCASE -->
 
