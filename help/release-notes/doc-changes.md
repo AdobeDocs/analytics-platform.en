@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **September 2023** | | 
+| Additional derived fields functionality | Updated documentation for the new [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) and [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) functions and for the additional CSV capabilities added to the [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) function. |
 | Regional data collection | Updated [FAQ](../getting-started/cja-faq.md#12-regional-data-collection) with information on regional data collection when using Customer Journey Analytics. |
 | **August 2023** | | 
 | Media Playback Time Spent panel | Updated content for  [Media Playback Time Spent panel](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) to improve readability. |
