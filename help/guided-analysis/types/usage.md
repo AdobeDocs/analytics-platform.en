@@ -34,6 +34,12 @@ The [!UICONTROL Usage] view offers the following chart settings, which can be ad
 * **[!UICONTROL Metric]**: The metric that you want to measure. Options include Events, Sessions, Users, Events per session, and Events per user.
 * **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include Line, Bar, Stacked bar, and Stacked area.
 
+## Overlays
+
+Add additional data to the chart.
+
+* **[!UICONTROL Show anomalies]**: Runs anomaly detection on the analysis. Outliers appear as dots that you can hover over for more information.
+
 ## Apply time comparison
 
 {{apply-time-comparison}}
