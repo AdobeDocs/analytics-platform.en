@@ -96,6 +96,8 @@ When you apply tags to an export, you can view those tags in the [!UICONTROL Tag
 
 1. In the Tag export dialog, type the name a tag to create a new tag, or choose an existing tag from the drop-down menu.
 
+   Any common tags between the selected exports are shown in the tag dialog. <!-- what happens if one export has a tag and another doesn't? Is the tag removed if you don't select it? I'm guessing not, but maybe check -->
+
 1. Select [!UICONTROL **Apply tags**].
 
 ## Delete an export
