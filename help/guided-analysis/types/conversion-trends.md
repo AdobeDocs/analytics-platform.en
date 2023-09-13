@@ -6,7 +6,7 @@ keywords: product analytics
 ---
 # Conversion trends view
 
-The **Conversion trends** view provides a trended visualization around conversion rates over time. The horizontal axis is a time interval, while the vertical axis represents conversion rate.
+The **Conversion trends** view provides a trended visualization around conversion rates over time. The horizontal axis is a time interval, while the vertical axis represents the conversion rate.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
@@ -23,7 +23,7 @@ Use cases for this view type include:
 The query rail allows you to configure the following components:
 
 * **[!UICONTROL Steps]**: The event touchpoints that you want to track. Each bar in the chart represents a step. You can include up to ten steps.
-* **Peop[!UICONTROL ]le**: The segments that you want compare the funnel across. Each segment selected splits each step into multiple bars. Each color represents a different segment. You can include up to three segments.
+* **[!UICONTROL People]**: The segments that you want to compare the funnel across. Each segment selected splits each step into multiple bars. Each color represents a different segment. You can include up to three segments.
 
 ## Chart settings
 
@@ -35,7 +35,7 @@ The Conversion trends view offers the following chart settings, which can be adj
 
 >[!NOTE]
 >
->The **Average** column in the Conversion trends view table differs from the **Total** column in the [Friction view](friction.md) table. The former is an average of the interval columns (e.g. average of daily conversion rates), while the latter is an aggregated calculation across the full date range.
+>The **Average** column in the Conversion trends view table differs from the **Total** column in the [Friction view](friction.md) table. The former is an average of the interval columns (for example, average of daily conversion rates), while the latter is an aggregated calculation across the full date range.
 
 ## Apply time comparison
 
