@@ -7,7 +7,7 @@ keywords: product analytics
 ---
 # [!UICONTROL Usage] view
 
-The **[!UICONTROL Usage]** view provides valuable insight around the performance of your product or behavior of your users over time. The horizontal axis of this report is a time interval, while the vertical axis measures your desired events.
+The **[!UICONTROL Usage]** view provides valuable insight around the performance of your product or the behavior of your users over time. The horizontal axis of this report is a time interval, while the vertical axis measures your desired events.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
 
