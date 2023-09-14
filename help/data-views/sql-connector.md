@@ -110,7 +110,7 @@ Currently, the Customer Journey Analytics SQL Connector is supported and tested 
 
        2. Paste **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] in **[!UICONTROL **Database**]** text field.
         
-          Add `?FLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:all?FLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) for more information.
+          Add `?FLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:cja?FLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) for more information.
 
        3. When prompted for **[!UICONTROL **Data Connectivity**]** mode, select **[!UICONTROL **DirectQuery**]** to ensure that the data structures are flattened properly.
 
@@ -152,7 +152,7 @@ Currently, the Customer Journey Analytics SQL Connector is supported and tested 
 
       3. Paste **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Database**]** text field.
 
-            Add `%3FFLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:all%3FFLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) for more information.
+            Add `%3FFLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:cja%3FFLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) for more information.
 
       4. Select **[!UICONTROL **Username and Password**]** from **[!UICONTROL **Authentication**]** list.
 

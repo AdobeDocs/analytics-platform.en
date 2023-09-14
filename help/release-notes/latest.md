@@ -4,33 +4,33 @@ description: Latest Customer Journey Analytics release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 ---
-# Current Adobe Customer Journey Analytics release notes (August 2023)
+# Current Adobe Customer Journey Analytics release notes (September 2023)
 
-**Last update**: August 24, 2023
+**Last update**: September 13, 2023
 
-These release notes cover the release period of August 9 to September 13, 2023. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
+These release notes cover the release period of September 13, 2023 through October 3, 2023. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
 ## New or updated features 
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Report Builder enhancements**  | <ul><li>You can download a scheduled task from the Workbooks tab then title it, save it, and share it. [Learn more](/help/report-builder/schedule-reportbuilder.md)</li><li>Start date as dimension allows you to surface the start date of the data block as a dimension in the data block output. [Learn more](/help/report-builder/create-a-data-block.md) </li></ul>| N/A | August 17, 2023 |
-| **Currency Conversion** |  Customer Journey is adding the  ability to support multiple currencies. You can convert a currency into another currency in data views settings. [Learn more](/help/data-views/component-settings/format.md) | N/A | August 30, 2023 |
-| **Support for A4T classifications in the Analytics Source Connector** | We are adding a correlation ID for easy joining of classification data for Adobe Target activities and experience events. | N/A | September 11, 2023 |
-| **Reporting Activity Manager** | Provides administrators with detailed visibility into reporting consumption for each connection, allowing admins to easily diagnose and then fix capacity issues during peak reporting times. | N/A | September 12, 2023 |
-| **PowerBI & Tableau access to Customer Journey Analytics data views** | The Adobe Customer Journey Analytics SQL Connector enables SQL access to data views that you have defined in Customer Journey Analytics. Data engineers and analysts more familiar with Power BI, Tableau, or other business intelligence and visualization tools can now create reports and dashboards based on the same data views that Customer Journey Analytics users are using for their Analysis Workspace projects. [Learn more](/help/data-views/sql-connector.md)| N/A | September 12, 2023 |
+| **Support for A4T classifications in the Analytics Source Connector** | The `_experience.decisioning.propositions.scopeDetails.correlationID` field is now available in the Adobe Analytics source connector schema. This field is used in support of A4T classifications and will be populated starting September 2023. | | N/A | September 12, 2023 |
+| **Updates to derived fields** | The following updates were made to the derived fields functionality:<ul><li>The [!UICONTROL Lookup] function has been renamed to [!UICONTROL Classify], with additional options to load CSV data. **(Releases Sept. 27, 2023)**</li><li>Additional functions are available to use when defining a derived field: [!UICONTROL Trim], [!UICONTROL Lowercase] and [!UICONTROL Lookup].</li><li>Derived field definitions now also support fields from [!UICONTROL Lookup] and [!UICONTROL Profile] datasets.</li></ul>[Learn more](/help/data-views/derived-fields/derived-fields.md) | N/A | September 13, 2023 |
+| **New features in Adobe Product Analytics** | <ul><li>**Anomaly Detection**: Compare events to expected values derived from historical trends. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/usage.html)</li><li>**Trends Frequency of use view**: Measure adoption of your features by frequency of use. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html)</li><li>**User preferences**: Configure a number of user preferences such as color palettes and number format. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html)</li></ul> | N/A | September 18, 2023 |
+| **Experience Edge device lookups** | Enable automatic device type data collection through the Experience Platform Edge network. This Experience Edge service benefits Customer Journey Analytics along with other Experience Platform apps. (Documentation link to follow) | N/A | September 27, 2023  |
 
 {style="table-layout:auto"}
 
 ## Fixes in Customer Journey Analytics
 
-AN-309141; AN-319198; AN-324576; AN-324939; AN-325138; AN-325554
+AN-310972; AN-319509; AN-322245; AN-323411; AN-323719; AN-326101; AN-326125; AN-326888
+
 
 ## Important notices for Customer Journey Analytics Administrators
 
 | Notice | Notice added or updated | Description |
 | --- | --- | --- |
-| **Changes to how Customer Journey Analytics processes data** | June 22, 2023| We recently changed how we process data in Customer Journey Analytics.<ul><li>Any event data with a timestamp less than 24 hours old is streamed in.</li><li>Any event data with a timestamp more than 24 hours old (even if it's in the same batch as newer data) is considered backfill and will be ingested at a lower priority.</li></ul> |
+| N/A | N/A| N/A |
 
 {style="table-layout:auto"}
 
