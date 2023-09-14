@@ -8,17 +8,63 @@ exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
 
 The Calculated metric page offers many ways of curating metrics, such as sharing, filtering, tagging, approving, copying, deleting, and marking as favorites.
 
-The Calculated metric manager shows you all the filters you own and that have been shared with you. Admin-level users can see all custom metrics in the organization. This overview presents the user interface and the capabilities of the Calculated metric manager. Access it by
+The Calculated metric manager shows you all the filters you own and that have been shared with you. Admin-level users can see all custom metrics in the organization. This overview presents the user interface and the capabilities of the Calculated metric manager.
+
+![](assets/calc-metric-manager.png)
 
 ## Access the Calculated metrics manager
 
-1. In Adobe Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Calculated metrics**].
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Calculated metrics**].
+
+## Available actions in the Calculated metrics manager
+
+In the Calculated metrics manager, you can:
+
+* [Filter calculated metrics](/help/components/calc-metrics/cm-workflow/cm-filter.md)
+
+* [Mark calculated metrics as favorites](/help/components/calc-metrics/cm-workflow/cm-favorite.md)
+
+* [Approve calculated metrics](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+
+* [Tag calculated metrics](/help/components/calc-metrics/cm-workflow/cm-tagging.md)
+
+* [Share calculated metrics](/help/components/calc-metrics/cm-workflow/cm-sharing.md)
+
+* Export a calculated metric to a CSV file. 
+
+* [Copy calculated metrics](/help/components/calc-metrics/cm-workflow/cm-copy.md)
+
+* Delete calculated metrics
+
+## Configure columns
+
+You can configure the information displayed for each calculated metric in the Calculated metrics manager by configuring the columns that are displayed.
+
+To configure the visible columns in the Calculated metrics manager:
+
+1. In Customer Journey Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Calculated metrics]**. 
+
+1. In the Calculated metrics manager, select the **Customize columns** icon ![Customize columns icon](assets/customize-columns-icon.png), then select the columns that you want to be displayed in the Calculated metrics manager.
+
+   The following columns are available:
+
+   | Column title  | Description |
+   |---|---|
+   | Favorites  | Displays star icons next to each calculated metric, allowing you to mark calculated metrics as favorites. For more information, see [Mark calculated metrics as favorites](/help/components/calc-metrics/cm-workflow/cm-favorite.md). |
+   | Title and description | These values are provided in the Calculated metric builder. To edit the title and description, select the title link to open the Calculated metric builder.  |
+   | Report suite | Indicates in which report suite the metric was last saved.  |
+   | Owner | Indicates who owns the custom metric. As a non-admin, you can see only metrics you own or those that were shared with you.  |
+   | Tags | Shows tags that were applied to the metric, either by you or by people who shared the calculated metric with you.  |
+   | Shared with | Lists individuals or groups (admin only) or All (admin only) that you shared the calculated metric with. <p>When a calculated metric is being shared, a share icon displays next to the calculated metric name.</p>  |
+   | Date modified | Indicates the date when the custom metric was last modified.  |
+   | Used in | Shows in which of the following component types the calculated metric is currently being used: <ul><li>Alerts</li><li>Calculated metrics</li><li>Projects</li><li>Scheduled projects</li></ul> For example, if the components is being used in 40 projects and 2 alerts, this column shows [!UICONTROL **Alerts (2), Projects (40)**]. <p>This information can help you determine whether a component is valuable to users in your organization, or whether it should be deleted.</p><p>You can use the [Data Dictionary](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md) along with this information to help you keep track of and better understand how components are being used in your organization. |
+   | Last used | Shows the date when the calculated metric was last used in any of the following component types: <ul><li>Alerts</li><li>Calculated metrics</li><li>Projects</li><li>Scheduled projects</li></ul> <p>This information can help you determine whether a component is valuable to users in your organization, or whether it should be deleted.</p><p>You can use the [Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md) along with this information to help you keep track of and better understand how components are being used in your organization. |
+
+   {style="table-layout:auto"}
 
 ## Areas of the Calculated metrics manager
 
 The following image and accompanying table explain some of the main areas and features of the Calculated metrics manager. 
-
-![](assets/calcmet_mgr_ui.png)
 
 | Location in image  | Name and function  |
 |---|---|

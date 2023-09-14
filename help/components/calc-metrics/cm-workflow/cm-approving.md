@@ -16,7 +16,7 @@ In the Calculated metric manager, administrators can set up a workflow that incl
 
 To mark calculated metrics as approved:
 
-1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Calculated metrics**] to go to the Calculated metrics manager.
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Calculated metrics**].
 
 1. In Calculated metric manager, select the checkbox to the left of any metrics that you want to mark as approved.
 

@@ -10,11 +10,13 @@ The Filter Manager offers many ways of curating filters, such as sharing, taggin
 
 The Filter Manager shows you all the filters you own and that have been shared with you. Admin-level users can see all filters in the organization. This overview presents the user interface and the capabilities of the Filter Manager. 
 
-Access the Filter Manager by going to **[!UICONTROL Customer Journey Analysis]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]** in the top navigation.
+![](assets/filter-manager-ui.png)
+
+## Access the Filter manager
+
+1. In Customer Journey Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Filters]**.
 
 ## Filter Manager UI {#ui}
-
-![](assets/filter-manager-ui.png)
 
 |  #  | UI Feature  | Description  |
 |---|---|---|
