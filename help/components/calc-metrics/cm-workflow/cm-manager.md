@@ -61,23 +61,3 @@ To configure the visible columns in the Calculated metrics manager:
    | Last used | Shows the date when the calculated metric was last used in any of the following component types: <ul><li>Alerts</li><li>Calculated metrics</li><li>Projects</li><li>Scheduled projects</li></ul> <p>This information can help you determine whether a component is valuable to users in your organization, or whether it should be deleted.</p><p>You can use the [Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md) along with this information to help you keep track of and better understand how components are being used in your organization. |
 
    {style="table-layout:auto"}
-
-## Areas of the Calculated metrics manager
-
-The following image and accompanying table explain some of the main areas and features of the Calculated metrics manager. 
-
-| Location in image  | Name and function  |
-|---|---|
-| 1 | **Calculated metrics manager toolbar:** After you select a metric, this toolbar appears. Most management tasks can be completed from this toolbar.  |
-| 2 | **Filter:** You can filter by tags, report suites, owners, all (admin only), shared with me, mine, favorites, and approved (admin only).  |
-| 3 | **Select boxes:** Select a custom metric in order to manage it.  |
-| 4 | **Favorites:** Selecting the star next to a metric marks the metric as a favorite.  |
-| 5| **Segment titles and descriptions:** These values are provided in the Calculated metric builder. To edit the title and description, select the title link to open the Calculated metric builder.  |
-| 6 | **Report suite:** Indicates in which report suite the metric was last saved.  |
-| 7 | **Owner:** Indicates who owns the custom metric. As a non-admin, you can see only metrics you own or those that were shared with you.  |
-| 8 | **Tags:** Shows tags that were applied to the metric, either by you or by people who shared the segment with you.  |
-| 9 | **Shared with:** Lists individuals or groups (admin only) or All (admin only) that you shared the segment with.  |
-| 10 | **Column selector:** Lets you select or deselect columns in the Calculated metrics page so that you can customize the view.  |
-| Not shown in image | **Date modified:** Indicates the date when the custom metric was last modified.  |
-
-{style="table-layout:auto"}
