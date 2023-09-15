@@ -133,6 +133,7 @@ You can add or remove columns on the [!UICONTROL Exports] tab to configure what 
    | Frequency | The frequency in which the export is sent. Available options are [!UICONTROL One time], [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly by day of the week], [!UICONTROL Monthly by day of the month], [!UICONTROL Yearly by day of the month], and [!UICONTROL Yearly by specific date]. |
    | Time sent | The time the export was sent. |
    | Last sent | The last time the export was sent. |
+   | Last modified | The last time the export was modified. |
    | Account type | The type of cloud account where the data was exported. Available account types are [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake], and [!UICONTROL Adobe Experience Platform].  |
    | Tags | Displays any tags that are applied to the export. For information about how to apply tags to an export, see [Tag an export](#tag-an-export). |
 

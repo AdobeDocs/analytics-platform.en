@@ -58,6 +58,14 @@ To find information you need, you can either filter the list of locations or sea
 
 ## Delete locations
 
+If you delete a location, any exports that use the location are also deleted. 
+
+Prior to deleting a location, first check to see if it is being used by any exports by selecting the information icon next to the location name.
+
+![connected exports](assets/location-connected-exports.png)
+
+To delete a location:
+
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
 1. Select the [!UICONTROL **Location**] tab, then select one or more locations that you want to delete.

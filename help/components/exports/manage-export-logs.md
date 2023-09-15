@@ -31,7 +31,7 @@ To find information you need, you can either filter the list of logs or search f
    |Filter | Description |
    |---------|----------|
    | [!UICONTROL **Account type**] | The account type that the log is associated with. The following account types are available: <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul>. | 
-   | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Pending**]: A specific instance of an export has been started but is not yet complete.</li><li>[!UICONTROL **Completed**]: A specific instance of an export has finished processing and is available in the export account.</li><li>[!UICONTROL **Failed**]<p>The following situations can result in a failed export. Hover over the Failed status to see details about the failure. <ul><li>Scheduled export expiration</li><li>Row limit reached for scheduled export </li></ul> </p></li></ul> | 
+   | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Pending**]: A specific instance of an export has been started but is not yet complete.<p>Re-running an export that has a status of Pending will delay the export process.</p></li><li>[!UICONTROL **Completed**]: A specific instance of an export has finished processing and is available in the export account.</li><li>[!UICONTROL **Failed**]<p>The following situations can result in a failed export. Hover over the Failed status to see details about the failure. <ul><li>Scheduled export expiration</li><li>Row limit reached for scheduled export </li></ul> </p></li></ul> | 
 
    {style="table-layout:auto"}
 
@@ -47,6 +47,8 @@ To find information you need, you can either filter the list of logs or search f
 
 You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted.
 
+Retrying an export that has a status of Pending will delay the export process.
+
 This option is not available when selecting multiple logs.
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
@@ -57,9 +59,9 @@ This option is not available when selecting multiple logs.
 
 1. Select [!UICONTROL **Retry**].
    
-## Open a project
+## Edit an export
 
-You can open the project that contains the data associated with specific logs.
+You can edit the export associated with a specific log.
 
 This option is not available when selecting multiple logs.
 
@@ -69,35 +71,17 @@ This option is not available when selecting multiple logs.
 
    <!-- add screenshot? -->
 
-1. Select [!UICONTROL **Open project**].
+1. Select [!UICONTROL **Edit**].
 
 {style="table-layout:auto"}
-
-## Log a ticket with Customer Care
-
-You can create a ticket for Adobe Customer Care that includes your feedback along with basic information about specific logs. Adobe Customer Care responds by email to any tickets you create.
-
->[!NOTE]
->
->For information about troubleshooting failed exports, see [Troubleshoot failed exports](/help/components/exports/troubleshoot-exports.md).
-
-To log a ticket with Customer Care:
-
-1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
-
-1. Select the [!UICONTROL **Logs**] tab, then select one or more existing logs.
-
-   <!-- add screenshot? -->
-
-1. Select [!UICONTROL **Create ticket**].
-
-1. Specify the details about any issues you encountered in the selected logs, then select [!UICONTROL **Submit**].
-
-   A ticket is created for Adobe Customer Care that includes your feedback along with basic information about the selected logs. Adobe Customer Care responds by email to any tickets you create.
 
 ## Configure columns
 
 You can add or remove columns on the [!UICONTROL Log] tab to configure what information is displayed.
+
+Select a column header to sort the logs by that column. By default, logs are sorted by the date and time the export started.
+
+To configure columns on the [!UICONTROL Log] tab:
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
@@ -114,7 +98,7 @@ You can add or remove columns on the [!UICONTROL Log] tab to configure what info
    | Instance ID | The ID of the Customer Journey Analytics instance. <!-- True? --> |
    | Data view name | The name of the data view associated with the export. Users can select the data view when they create the export, as described in [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md). |
    | Number of files | The number of files included in the export. |
-   | Size | The size of the export. |
+   | Size | The size of the export.<p>The file size is calculated with a base of 1024, which is sometimes represented as KIB and MIB. If your cloud provider calculates size with a base of 1000, this may result in the size displayed in your cloud provider being slightly different from the size displayed here.</p> |
    | Location | The location on the account where the data was exported. |
    | Account | The account where the data was exported. |
    | Status | The status of the export. Available statuses are [!UICONTROL Pending], [!UICONTROL Delivered], and [!UICONTROL Failed]. |
