@@ -4,7 +4,7 @@ title: Calculated Metric Manager
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
 ---
-# Calculated metric manager
+# Calculated metrics manager
 
 The Calculated metric page offers many ways of curating metrics, such as sharing, filtering, tagging, approving, copying, deleting, and marking as favorites.
 

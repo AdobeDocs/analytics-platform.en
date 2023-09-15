@@ -1,24 +1,24 @@
 ---
-title: Manage filters
+title: Filters manager
 description: lean how to manage filters in Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 ---
-# Manage filters
+# Filters manager
 
-The Filter Manager offers many ways of curating filters, such as sharing, tagging, approving, copying, deleting, and marking as favorites.
+The Filters manager offers many ways of curating filters, such as sharing, tagging, approving, copying, deleting, and marking as favorites.
 
-The Filter Manager shows you all the filters you own and that have been shared with you. Admin-level users can see all filters in the organization. This overview presents the user interface and the capabilities of the Filter Manager. 
+The Filters manager shows you all the filters you own and that have been shared with you. Admin-level users can see all filters in the organization. This overview presents the user interface and the capabilities of the Filters manager. 
 
 ![](assets/filter-manager-ui.png)
 
-## Access the Filter manager
+## Access the Filters manager
 
 1. In Customer Journey Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Filters]**.
 
-## Available actions in the Filter manager
+## Available actions in the Filters manager
 
-In the Filter manager, you can:
+In the Filters manager, you can:
 
 * [Filter the list of filters](/help/components/filters/filters-filter.md)
 
@@ -38,13 +38,13 @@ In the Filter manager, you can:
 
 ## Configure columns
 
-You can configure the information displayed for each filter in the Filter manager by configuring the columns that are displayed.
+You can configure the information displayed for each filter in the Filters manager by configuring the columns that are displayed.
 
-To configure the visible columns in the Filter manager:
+To configure the visible columns in the Filters manager:
 
 1. In Customer Journey Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Filers]**. 
 
-1. In the Filter manager, select the **Customize columns** icon ![Customize columns icon](assets/customize-columns-icon.png), then select the columns that you want to be displayed in the Filter manager.
+1. In the Filters manager, select the **Customize columns** icon ![Customize columns icon](assets/customize-columns-icon.png), then select the columns that you want to be displayed in the Filters manager.
 
    The following columns are available:
 
