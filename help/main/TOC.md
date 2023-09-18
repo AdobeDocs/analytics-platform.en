@@ -148,10 +148,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Freeform panel](../analysis-workspace/c-panels/freeform-panel.md)
     + [Quick Insights panel](../analysis-workspace/c-panels/quickinsight.md)
     + [Media Concurrent Viewers panel](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-    + Media Playback Time Spent {#media-playback-timespent}
-      + [Overview](../analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
-      + [Input and Output Settings](../analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
-      + [FAQs](../analysis-workspace/c-panels/media-playback-timespent/faqs.md)
+    + [Media Playback Time Spent panel](../analysis-workspace/c-panels/media-playback-time-spent.md)
   + Curate, Share and Schedule projects {#curate-share}
     + [Share menu](../analysis-workspace/curate-share/send-schedule-files.md)
     + [Curate projects](../analysis-workspace/curate-share/curate.md)
