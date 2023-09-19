@@ -6,7 +6,9 @@ feature: Basics
 ---
 # IP addresses used by Customer Journey Analytics
 
-Some firewall configurations block IP addresses originating from Adobe's data collection servers or servers responsible for accessing data. You can use this list of ranges to alter your organization's firewall settings to allow access and to send data from within your organization. This page includes both inbound systems (such as data collection) and outbound systems (such as [exporting data to a cloud provider](/help/analysis-workspace/export/export-cloud.md)) that Adobe uses.
+Some firewall configurations block IP addresses originating from Adobe's data collection servers or servers responsible for accessing data. You can use this list of ranges to alter your organization's firewall settings to allow access and to send data from within your organization. 
+
+This page includes ip addresses you need to add to your allowlist in order for outbound systems to function, such as [exporting data to a cloud provider](/help/analysis-workspace/export/export-cloud.md).
 
 >[!IMPORTANT]
 >
