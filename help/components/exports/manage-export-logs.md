@@ -10,7 +10,7 @@ feature: Components
 
 Export logs provide details about each export, and are generated any time Analysis Workspace data is exported to the cloud. (For information about how data can be exported to the cloud, see [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md).) 
 
-You can view details about each export logs, filter and search for logs, and manage logs. Logs cannot be deleted.
+For scheduled exports, logs reflect the export settings as they were when the log was sent. Logs cannot be deleted.
 
 ## Filter and search for logs
 
@@ -43,21 +43,17 @@ To find information you need, you can either filter the list of logs or search f
 
 1. In the search tab, begin typing any information associated with the log you're searching for. You can search for data from any column available in the table. 
 
-## Retry an export
-
-You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted.
+<!-- removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
 
 Retrying an export that has a status of Pending will delay the export process.
 
-This option is not available when selecting multiple logs.
+This option is not available when selecting multiple logs. -->
 
-1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+<!-- 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
 1. Select the [!UICONTROL **Logs**] tab, then select a log.
 
-   <!-- add screenshot? -->
-
-1. Select [!UICONTROL **Retry**].
+1. Select [!UICONTROL **Retry**]. -->
    
 ## Edit an export
 
