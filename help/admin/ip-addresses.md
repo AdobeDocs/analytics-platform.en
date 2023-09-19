@@ -61,6 +61,7 @@ This page includes ip addresses you need to add to your allowlist in order for o
 `52.254.107.0/28`
 
 ## NLD2: Europe
+
 `40.74.6.128/28`
 
 `51.144.184.248/29`
@@ -108,6 +109,7 @@ This page includes ip addresses you need to add to your allowlist in order for o
 `40.74.6.112/28`
 
 ## AUS5: Australia
+
 `20.43.110.192/28`
 
 `20.40.185.111`
@@ -163,6 +165,7 @@ This page includes ip addresses you need to add to your allowlist in order for o
 `20.227.32.175`
 
 ## CAN2: Canada
+
 `20.116.159.80/28`
 
 `20.116.159.224/28`

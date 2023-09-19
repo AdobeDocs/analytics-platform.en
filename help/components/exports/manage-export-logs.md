@@ -71,8 +71,6 @@ This option is not available when selecting multiple logs.
 
 1. Select [!UICONTROL **Edit**].
 
-{style="table-layout:auto"}
-
 ## Configure columns
 
 You can add or remove columns on the [!UICONTROL Log] tab to configure what information is displayed.
