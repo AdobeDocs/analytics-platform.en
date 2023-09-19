@@ -3,6 +3,8 @@ title: Customer Journey Analytics IP allowlist
 description: If your organization's firewall blocks IP addresses that originate from Adobe, use this list to update your firewall settings.
 solution: Customer Journey Analytics
 feature: Basics
+hide: yes
+hidefromtoc: yes
 ---
 # IP addresses used by Customer Journey Analytics
 
