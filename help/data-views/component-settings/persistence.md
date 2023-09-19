@@ -14,12 +14,15 @@ feature: Data Views
 
 * **Allocation** lets you determine which value is kept when more than one dimension item can persist at a time in a single column.
 
+<!--
+
   >[!NOTE]
   >
   >If you have a [non-default attribution model](/help/data-views/component-settings/attribution.md) set on a metric in a report, the attribution model ignores the allocation you set on the dimension for the same report.
   >
   >However, when doing a [full table export](/help/analysis-workspace/export/export-cloud.md) that includes multiple dimensions, attribution retains the allocation models applied to each dimension.
 
+-->
 
 * **Expiration** lets you determine how long a dimension item persists beyond the event it is set on.
 
