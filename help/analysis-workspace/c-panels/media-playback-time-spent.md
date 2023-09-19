@@ -1,13 +1,38 @@
 ---
-title: Media Playback Time Spent panel inputs and outputs
-description: What are the Media Playback Time Spent input and output settings?
+title: Media Playback Time Spent panel
+description: How to use and interpret the Media Playback Time Spent panel in Analysis Workspace.
 feature: Panels
 role: User, Admin
-exl-id: 4c0380ff-f55c-48a7-a4b2-1a291511e4d9
+exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 ---
-# Media Playback Time Spent Panel Inputs and Outputs {#Inputs-and-outputs}
+# Media Playback Time Spent panel
 
-You can customize your Media Playback Time Spent panel using the following input and output settings.
+In Analysis Workspace, Playback Time Spent is the amount of time spent viewing your media streams at a specific point in time. It includes pause, buffer, and time to start.
+
+The Media Playback Time Spent panel enables analysis of playback over time, with details on peak concurrency and the ability to break down and compare. 
+
+Media Analytics customers can analyze playback time spent to gain valuable insight into the quality of content and viewer engagement, and to help when troubleshooting or planning for volume or scale.
+
+Playback Time Spent can help you understand:
+
+* Where peak concurrency occurred
+
+* Where drop-offs occurred 
+
+Following is a video overview of this panel
+
+>[!VIDEO](https://video.tv.adobe.com/v/338699)
+
+## Use the Media Playback Time Spent panel
+
+1. Go to a report suite with Media Analytics components enabled. 
+
+1. Select the panel icon on the far-left, then drag the panel into your Analysis Workspace project.
+
+1. Continue with the following sections to customize the Media Playback Time Spent panel
+
+   * [Panel Inputs](#panel-inputs)
+   * [Panel Output](#panel-output)
 
 ## Panel Inputs {#Input}
 
@@ -22,9 +47,9 @@ You can configure the Media Playback Time Spent panel using these input settings
 |Time format|You can view the playback time spent in either Hours:Minutes:Seconds (default) or in Minutes (which is displayed in whole numbers, rounded up at .5). |
 |Date sequence display|If you've placed at least two date range filters as series breakdowns you'll see the option to select either overlay (default) or sequential. Overlay will display the lines with a common x-axis start so that they run in parallel, while sequential will display the lines with their specific x-axis start. If the data lines up (for example, filter 1 ends at 8:44 pm and filter 2 starts at 8:45 pm), then the lines will show in sequence. |
 
-### Default view
+## Default view
 
-![Default view](../assets/mpts_default_view.png)
+![Default view](assets/mpts_default_view.png)
 
 ## Panel Output {#Output}
 
@@ -34,7 +59,7 @@ At any time, you can edit and rebuild the panel by clicking the edit pencil on t
 
 If you selected series breakdown, a line on the line chart and a summary number is displayed for each:
 
-![media playback time spent output](../assets/mpts_outputs1.png)
+![media playback time spent output](assets/mpts_outputs1.png)
 
 ### Data Source
 
@@ -43,3 +68,14 @@ The only metric that can be used in this panel is Playback Time Spent.
 |Metric|Description|
 |---|---|
 |Playback Time Spent|Total hours:minutes:seconds (or minutes) of content viewed during the selected granularity including pause, buffer, and time to start.|
+
+## FAQs
+
+|Question|Answer|
+|---|---|
+|Where is the Freeform table? How can I see the data source?|<p></p><p>The Freeform table is not available in this view. To download the data source, right-click the line chart and download the CSV ﬁle.</p>|
+|<p>Why did my granularity change?</p>|<p>This visualization is limited to 1440 rows of data (for example, 24-hours at minute-level granularity). If a date range and granularity combination results in more than 1440 rows, the granularity will be automatically updated to accommodate the full date range.</p><p></p><p>When changing from a larger date range to a smaller one, the granularity will be updated to the lowest detail allowable once the date range is changed. To view a higher granularity, edit the panel and rebuild.</p>|
+|<p></p><p>How do I compare video names, filters, content types, etc?</p>|<p>To compare these in a single visualization, drag filters, dimensions, or speciﬁc dimension items in the series breakdown ﬁlter.</p><p></p><p>The view is limited to 10 breakdowns. To view more than 10, you must use multiple panels.</p>|
+|How do I compare date ranges?|To compare date ranges in a single visualization, use the series breakdowns by dragging 2 or more date ranges. These date ranges will override the panel date range.|
+|How do I change the visualization type?|<p></p><p>This panel only allows for the line visualization for the time series.</p>|
+|Can I run anomaly detection?|<p></p><p>No. Anomaly detection is not available for this panel.</p>|
