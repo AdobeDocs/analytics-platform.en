@@ -3,6 +3,8 @@ description: Export an Analysis Workspace project to a cloud location.
 keywords: Analysis Workspace
 title: Export Customer Journey Analytics data to the cloud
 feature: Curate and Share
+hide: yes
+hidefromtoc: yes
 ---
 # Export Customer Journey Analytics data to the cloud
 

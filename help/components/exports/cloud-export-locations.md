@@ -3,6 +3,8 @@ description: Configure the cloud export location where Customer Journey Analytic
 keywords: Analysis Workspace
 title: Configure cloud export locations
 feature: Components
+hide: yes
+hidefromtoc: yes
 ---
 # Configure cloud export locations
 

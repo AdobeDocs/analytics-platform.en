@@ -3,6 +3,8 @@ description: Configure the cloud export account where Customer Journey Analytics
 keywords: Analysis Workspace
 title: Configure cloud export accounts
 feature: Components
+hide: yes
+hidefromtoc: yes
 ---
 # Configure cloud export accounts
 

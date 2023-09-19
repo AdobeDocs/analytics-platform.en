@@ -3,6 +3,8 @@ description: Manage existing exports
 keywords: Analysis Workspace
 title: Manage exports
 feature: Components
+hide: yes
+hidefromtoc: yes
 ---
 # Manage exports
 

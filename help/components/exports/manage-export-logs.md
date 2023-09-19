@@ -3,6 +3,8 @@ description: Manage logs for existing exports
 keywords: Analysis Workspace
 title: Manage export logs
 feature: Components
+hide: yes
+hidefromtoc: yes
 ---
 # Manage export logs
 

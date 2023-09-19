@@ -3,6 +3,8 @@ description: Manage logs for existing exports
 keywords: Analysis Workspace
 title: Troubleshoot failed exports
 feature: Components
+hide: yes
+hidefromtoc: yes
 ---
 # Troubleshoot failed exports
 
