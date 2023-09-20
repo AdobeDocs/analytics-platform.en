@@ -70,7 +70,7 @@ Built into these visualization components are smart capabilities like:
 
     * [Curated](/help/analysis-workspace/curate-share/curate.md) to other individuals in the organization for continuous exploration, 
     * Exported to Excel using [Report Builder](/help/report-builder/report-buider-overview.md) (a dedicated plug-in), 
-    * [Shared](/help/analysis-workspace/curate-share/share-projects.md) in various formats, including [PDF](/help/analysis-workspace/curate-share/download-send.md), [CSV](/help/analysis-workspace/curate-share/download-send.md) and through a [dedicated mobile app](/help/mobile-app/home.md), to those who are interested in the final reports and/or visualizations. 
+    * [Shared](/help/analysis-workspace/curate-share/share-projects.md) in various formats, including [PDF](/help/analysis-workspace/export/download-send.md), [CSV](/help/analysis-workspace/export/download-send.md) and through a [dedicated mobile app](/help/mobile-app/home.md), to those who are interested in the final reports and/or visualizations. 
 
 Comparing the Customer Journey Analytics visualization capabilities to what BI tools offer is difficult due to the variety of visualizations available. Some BI tools have more advanced visualizations, but Customer Journey Analytics focuses on interactive and interoperable customer journey visualizations that allow you to break down the data within seconds while not 'charging' you for every additional query.
 

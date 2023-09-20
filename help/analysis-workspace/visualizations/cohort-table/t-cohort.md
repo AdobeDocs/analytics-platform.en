@@ -53,4 +53,4 @@ Create a cohort and run a [!UICONTROL Cohort Analysis] report in Analysis Worksp
 
 ## Download a cohort visualization
 
-Like other visualizations in Analysis Workspace, you can download a cohort visualization as a CSV or PDF file. For more information, see [Download PDF or CSV files](/help/analysis-workspace/curate-share/download-send.md).
+Like other visualizations in Analysis Workspace, you can download a cohort visualization as a CSV or PDF file. For more information, see [Download project data](/help/analysis-workspace/export/download-send.md).
