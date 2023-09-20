@@ -145,7 +145,7 @@ You can also retry or log support tickets for failed exports, as described in [M
 
 ### Exported data
 
-Exported data is available as a compressed file in the cloud destination that you configured, as described in [Configure cloud export accounts](help/components/exports/cloud-export-accounts.md) and [Configure cloud export locations](/help/components/exports/cloud-export-locations.md). 
+Exported data is available as a compressed file in the cloud destination that you configured, as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md) and [Configure cloud export locations](/help/components/exports/cloud-export-locations.md). 
 
 The filename of the compressed file is as follows, depending on whether you chose CSV or JSON as the file format:
 
