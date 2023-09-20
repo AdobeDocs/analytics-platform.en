@@ -19,7 +19,7 @@ Filters can be based on
 
 You can build and save filters in the Filter Builder, or generate filters from a Fallout visualization (in Workspace). In addition, filters can be used together as stacked filters. 
 
-Filtering includes the [Filter Builder](/help/components/filters/filter-builder.md) to construct filters and run a pre-test, and the [Filter Manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
+Filtering includes the [Filter Builder](/help/components/filters/filter-builder.md) to construct filters and run a pre-test, and the [Filters manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
 
 The maximum number of filters you can create per IMS organization is 50,000.
 

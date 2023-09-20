@@ -122,7 +122,7 @@ After you apply the filter, you can choose to add it to your filter component li
 1. Select **[!UICONTROL Save]**.
    
    The filter now appears in your filter component list for all your projects.
-   You can also [share the filter](/help/components/filters/manage-filters.md) with other people in your organization.
+   You can also [share the filter](/help/components/filters/filters-share.md) with other people in your organization.
 
 ## Quick filter example
 

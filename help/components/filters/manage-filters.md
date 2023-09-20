@@ -1,133 +1,63 @@
 ---
-title: Manage filters
+title: Filters manager
 description: lean how to manage filters in Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 ---
-# Manage filters
+# Filters manager
 
-The Filter Manager offers many ways of curating filters, such as sharing, tagging, approving, copying, deleting, and marking as favorites.
+The Filters manager offers many ways of curating filters, such as sharing, tagging, approving, copying, deleting, and marking as favorites.
 
-The Filter Manager shows you all the filters you own and that have been shared with you. Admin-level users can see all filters in the organization. This overview presents the user interface and the capabilities of the Filter Manager. 
-
-Access the Filter Manager by going to **[!UICONTROL Customer Journey Analysis]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]** in the top navigation.
-
-## Filter Manager UI {#ui}
+The Filters manager shows you all the filters you own and that have been shared with you. Admin-level users can see all filters in the organization. This overview presents the user interface and the capabilities of the Filters manager. 
 
 ![](assets/filter-manager-ui.png)
 
-|  #  | UI Feature  | Description  |
-|---|---|---|
-|  1  | Filter Management Tool Bar  | Once you have checked a filter, this tool bar appears. Most management tasks can be completed from this tool bar.  |
-|  2  | Check boxes  | Check a filter in order to manage it.  |
-|  4  | Favorites  | Clicking the star next to a filter turns the star yellow and marks the filter as a favorite.  |
-|  5  | Title and description  | Provided in the Filter Builder. To edit the title and description, click the title link - this takes you back to the Filter Builder.  |
-|  7  | Owner  | Indicates who owns the filter. As a non-Admin, you can see only filters you own or those that were shared with you.  |
-|  8  | Tags (not checked in column selector, hence column not appearing)  | Tags that were applied to the filter, either by you or by people who shared the filter with you.  |
-|  9  | Shared with  | Lists individuals or groups (Admin only) or All (Admin only) that you shared the filter with.  |
-|  10  | Date Modified  | Shows the date that the filter was last modified.  |
-|  11  | Column selector  | (Top right) Lets you select which columns to display in the Filter Manager.  |
-|  12  | Shared icon  | Indicates that this filter is shared by you or with you.  |
-|  13  | Approved icon  | Indicates that this filter has been approved by an Administrator.  |
-|  14  | Other Filters  | Lets you see filters by Tags, Data Views, Owners, and Other (Show All, Mine, Shared with Me, Approved, Favorites.)  |
+## Access the Filters manager
 
-## Plan filters {#plan}
+1. In Customer Journey Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Filters]**.
 
-Devoting some time to plan filters improves the chances that they will be useful for your organization and that their numbers will be kept in check.
+## Available actions in the Filters manager
 
-* Consider the audience : Who will consume it? With whom will you share it? Which groups of people will use this filter and how should I tag it accordingly? This also means providing a good filter description. At minimum, the description should answer these questions:
+In the Filters manager, you can:
 
-    * What is this filter useful for?
+* [Filter the list of filters](/help/components/filters/filters-filter.md)
 
-    * When should I use this filter? 
+* [Mark filters as favorites](/help/components/filters/filters-favorite.md)
 
-* Determine the filter scope . Which [filter container](/help/components/filters/filters-overview.md) best represents the scope? Use the smallest container possible.
+* [Approve filters](/help/components/filters/filters-approve.md)
 
-* Decide which elements to include in the filter definition, and which values.
+* [Tag filters](/help/components/filters/filters-tag.md)
 
-* Consider how you want your approval process to unfold. Will a single person review and approve filters or will it be a committee decision?
+* [Share filters](/help/components/filters/filters-share.md)
 
-* Define your filters with view to a filter library that gives business users the ability to stack and reuse filter pieces or components in a modular fashion. What "modules" do you need to define to make this library a reality? 
+* Export a filter to a CSV file.
 
-### Tag filters {#tag}
+* [Copy filters](/help/components/filters/filters-copy.md)
 
-In the Filter Manager, tagging filters allows you to organize them. All users can create tags for filters and apply one or more tags to a filter. However, you can see tags only for those filters that you own or that have been shared with you.
+* Delete filters
 
-What kinds of tags should you create? Here are some suggestions for useful tags:
+## Configure columns
 
-* Tags based on team names, such as Social Marketing, Mobile Marketing.
-    
-* Project tags (analysis tags), such as Entry-page analysis.
-    
-* Category tags: Men's; geography.
-    
-* Workflow tags: To be approved; Curated for (a specific business unit)
+You can configure the information displayed for each filter in the Filters manager by configuring the columns that are displayed.
 
-To tag a filter:
+To configure the visible columns in the Filters manager:
 
-1. In the Filter Manager, mark the checkbox next to the filter you want to tag. The filter management tool bar appears.
+1. In Customer Journey Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Filers]**. 
 
-1. Click **[!UICONTROL Tag]** and either
+1. In the Filters manager, select the **Customize columns** icon ![Customize columns icon](assets/customize-columns-icon.png), then select the columns that you want to be displayed in the Filters manager.
 
-    * select from existing tags, or
+   The following columns are available:
 
-    * enter a new tag name and press **[!UICONTROL Enter]**. 
-
-1. Click **[!UICONTROL Tag]** again to tag the filter. 
-
-The tag should now appear in the Tags column. (Click the gear icon on the top right to manage your columns.)
-You can also filter on tags by going to **[!UICONTROL Filters > Tags]**. 
-
-### Approve filters {#approve}
-
-Within the Filter Manager, you can set up a workflow that includes approving filter for various levels of application, for specific departments or groups, and consistent with reporting policies.
-
-Here is how to flag a filter as approved:
-
-1. In Filter Manager, check the checkbox to the left of the Filter title.
-    
-1. Click **[!UICONTROL Approve]** in the filter management task bar.
-
-1. Consider sharing the approved filter/s with your organization.
-    
-1. Click **[!UICONTROL OK]**.
-
-    Notice the approval icon next to the filter in the list:
-
-    ![](assets/seg_approved.png)
-
-1. You can also unapprove an approved filter by clicking **[!UICONTROL Unapprove]**. 
-
-### Share filters {#share}
-
-Depending on your permissions, you can share filters with your whole organization, groups, or individual users. 
-
-|Administrator| Non-Administrator|
-|---|---|
-|Can share filters with All, with Groups, and with Users. See the [Admin Console documentation](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html) for more information.|Can share filters only with individual users.|
-
-When should you share filters with the entire company versus just a group of users or individuals? Here are some best practices you might follow:
-
-* As an Admin, share a filter with All if it's of use to the entire company and everyone is comfortable using it. In this case, you should also consider making it an approved filter.
-
-* As an Admin, share a filter with a specific Product Profile if the filter provides good business value for that team. Do not officially approve this type of filter.
-
-* As an Admin or an individual user, share a filter with other individuals to vet and validate a filter. If it doesn't prove useful, it can be discarded. Do not officially approve this type of filter. 
-
-To share a filter:
-
-1. In the Filter Manager, mark the checkbox next to the filter you want to share. 
-
-1. In the filter management tool bar, click **[!UICONTROL Share]**.
-
-1. If you are an Admin, you can select All or choose from Groups and Users in your organization. As a non-Admin, you can see only individual users. Use the Search field to search for groups or users. Click **[!UICONTROL Share]**. The Shared icon appears next to the filter: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
-
-1. You can filter on filters shared with you by going to Filters > Other Filters > Shared with Me. 
-
-### Mark filters as favorites {#favorites}
-
-Marking filters as favorites is another way to organize them for ease of use.
-
-1. In the Filter Manager, check the star next to any filter that you want to mark as a favorite. The star turns yellow when you select it.
-
-1. You can also filter on favorites under Filters > Other Filters > Favorites.
+   | Column title | Description  |
+   |---|---|
+   | Title and description | These values are provided in the Filter builder. To edit the title and description, select the title link to open the Filter builder.  |
+   | Favorites  | Displays star icons next to each filter, allowing you to mark filters as favorites. For more information, see [Mark filters as favorites](/help/components/filters/filters-favorite.md). |
+   | Data view  | This column indicates in which data view the filter was last saved.  |
+   | Owner  | Indicates who owns the filter. As a non-Admin, you can see only filters you own or those that were shared with you.  |
+   | Tags (not checked in column selector, hence column not appearing)  | Tags that were applied to the filter, either by you or by people who shared the filter with you.  |
+   | Shared with  | Lists individuals or groups (Admin only) or All (Admin only) that you shared the filter with. <p>When a filter is being shared by you or with you, a share icon displays next to the filter name.</p>|
+   | Date modified  | Shows the date that the filter was last modified.  |
+   | Used in | **Note:** This functionality is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).<p>Shows in which of the following component types the filter is currently being used:</p> <ul><li>Calculated metrics</li><li>Projects</li><li>Scheduled projects</li><li>Filters</li></ul> For example, if the filter is being used in 40 projects and 2 calculated metrics, this column shows [!UICONTROL **Calculated metrics (2), Projects (40)**]. <p>This information can help you determine whether a filter is valuable to users in your organization, or whether it should be deleted.</p><p>This information does not include usage from the API or Report Builder.</p><p>You can use the [Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md) along with this information to help you keep track of and better understand how components are being used in your organization. |
+   | Last used | **Note:** This functionality is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).<p>Shows the date when the filter was last used in any of the following component types:</p> <ul><li>Calculated metrics</li><li>Projects</li><li>Scheduled projects</li><li>Filters</li></ul> <p>This information can help you determine whether a component is valuable to users in your organization, or whether it should be deleted.</p><p>This information does not include usage from the API or Report Builder.</p><p>You can use the [Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md) along with this information to help you keep track of and better understand how components are being used in your organization. |
+   
+   {style="table-layout:auto"}
