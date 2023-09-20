@@ -28,7 +28,7 @@ Other methods of exporting Customer Journey Analytics data are also available, a
 
 For project downloads, keep in mind:
 
-* The project can be saved or unsaved when you request a project download. However, only saved projects can be [scheduled](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html). 
+* The project can be saved or unsaved when you request a project download. However, only saved projects can be [scheduled](/help/analysis-workspace/export/t-schedule-report.md). 
 * PDFs downloaded in the browser can take several minutes to export because the project is re-run on Adobe servers before rendering in PDF format. We recommend not leaving the project until the PDF downloads in your browser. However, you can continue to make changes to the project while you wait. If a PDF takes longer than 5 minutes to render, you will be prompted to email it instead.
 * PDF downloads are rendered as a single page with no pagination applied.
 * When a project is rendered to PDF, we render what is on the page. If a project has custom-sized visualizations and panels, you need to change them to be auto-sized (button in top-right corner) so that there will be no truncated content.
