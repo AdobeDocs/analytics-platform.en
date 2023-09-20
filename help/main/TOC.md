@@ -225,7 +225,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Tag filters](../components/filters/filters-tag.md)
     + [Filter the list of filters](../components/filters/filters-filter.md)
     + [Mark filters as favorites](../components/filters/filters-favorite.md)
-    + [Approve filters](../components/filters/filters-approving.md)
+    + [Approve filters](../components/filters/filters-approve.md)
     + [Copy filters](../components/filters/filters-copy.md)
     + [Quick filters](../components/filters/quick-filters.md)
     + [Filter builder](../components/filters/filter-builder.md)
