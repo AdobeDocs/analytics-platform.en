@@ -13,19 +13,52 @@ Attribution gives you the ability to customize how dimension items get credit fo
 
 For example:
 
-1. A person to your site clicks a paid search link to one of your product pages. They add the product to their cart, but do not purchase it.
-2. The next day, the see a social media post from one of their friends. They click the link, then complete the purchase.
+1. A person on your site clicks a paid search link to one of your product pages. They add the product to their cart, but do not purchase it.
+2. The next day, they see a social media post from one of their friends. They click the link, then complete the purchase.
 
 In some reports, you might want the order attributed to Paid search. In other reports, you might want the order attributed to Social. Attribution lets you control this aspect of reporting.
 
-This data view component setting lets you set a default attribution model for a metric. You can override a given metric's attribution model while working in Analysis Workspace.
+## Set a component's default attribution model
 
+You can set a default attribution model for a given metric by updating the metric's setting in the data view. Doing so overrides the metric's attribution model any time it's used in Analysis Workspace.
 
+<!-- 
 
-If your organization requires that a metric has multiple attribution settings, you can do one of the following:
+>[!NOTE]
+>
+>Consider the following when enabling attribution on a metric:
+>
+>* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>
+>* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
+>
+>   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>
+> For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
 
-* Copy the metric in the data view with each desired attribution setting. You can include the same metric multiple times in a data view, giving each metric a different setting. Make sure that you label each metric appropriately so that analysts understand the difference between these metrics when generating reports.
-* Override the metric in Analysis Workspace. In a metric's [Column settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md), select **[!UICONTROL Use non-default attribution model]** to change the metric's attribution model and lookback window for that specific report.
+-->
+
+To update a component's default attribution model: 
+
+1. Go to the data view that contains the component whose default attribution model you want to update.
+
+1. Select the component, then expand the Attribution section on the right side of the screen.
+
+   ![](../assets/attribution-settings.png)
+
+1. Select [!UICONTROL **Set attribution**], then select the attribution model in the [!UICONTROL **Attribution Model**] drop-down menu.
+
+   See [Attribution models](#attribution-models) to learn about each attribution model.
+
+1. Select [!UICONTROL **Save and continue**].
+
+>[!TIP]
+>
+>If your organization requires that a metric has multiple attribution settings, you can do one of the following:
+>
+> * Copy the metric in the data view with each desired attribution setting. You can include the same metric multiple times in a data view, giving each metric a different setting. Make sure that you label each metric appropriately so that analysts understand the difference between these metrics when generating reports.
+>
+> * Override the metric in Analysis Workspace. In a metric's [Column settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md), select **[!UICONTROL Use non-default attribution model]** to change the metric's attribution model and lookback window for that specific report.
 
 ## Attribution models
 
