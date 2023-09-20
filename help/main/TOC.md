@@ -329,6 +329,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [View and manage usage](../admin/estimate-usage.md)
   + [Deletion implications](../admin/cja-deletion.md)
   + [Optimize Customer Journey Analytics performance](../admin/optimizing-performance.md)
+  + [IP addresses](../admin/ip-addresses.md)
 
 + Labs {#labs}
   + [Labs User Guide](../labs/labs.md)
