@@ -38,7 +38,7 @@ The [!UICONTROL Usage] view offers the following chart settings, which can be ad
 
 Add additional data to the chart.
 
-* **[!UICONTROL Show anomalies]**: Runs anomaly detection on the analysis. Outliers appear as dots that you can hover over for more information.
+* **[!UICONTROL Show anomalies]**: Runs [anomaly detection](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) on the trended analysis. Outliers appear as dots that you can hover over for more information.
 
 ## Apply time comparison
 
