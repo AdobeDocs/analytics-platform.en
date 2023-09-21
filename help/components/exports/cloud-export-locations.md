@@ -41,7 +41,7 @@ To configure a cloud export location:
 
    For configuration instructions, expand the section below that corresponds to the account type that you selected in the [!UICONTROL **Location accounts**] field. 
 
-  +++Adobe Experience Platform Data Landing Zone
+      +++Adobe Experience Platform Data Landing Zone
 
       Specify the following information to configure an Adobe Experience Platform Data Landing Zone location:
 
@@ -52,9 +52,9 @@ To configure a cloud export location:
       | [!UICONTROL **IMS Org ID**] | The IMS Org ID is provided by Adobe. Click the Copy icon next to the [!UICONTROL **IMS Org ID**] field to copy the contents of the field, then use the ID in your Adobe Exprerience Platform account. | 
       | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, `folder_name/` |
 
-   +++
+      +++
   
-   +++Amazon S3 Role ARN
+      +++Amazon S3 Role ARN
 
       Specify the following information to configure an Amazon S3 Role ARN location:
 
@@ -67,9 +67,9 @@ To configure a cloud export location:
 
       {style="table-layout:auto"}
 
-   +++
+      +++
 
-   +++Google Cloud Platform
+      +++Google Cloud Platform
 
       Specify the following information to configure a Google Cloud Platform location:
 
@@ -82,9 +82,9 @@ To configure a cloud export location:
 
       {style="table-layout:auto"}
    
-   +++
+      +++
 
-   +++Azure SAS
+      +++Azure SAS
 
       Specify the following information to configure an Azure SAS location:
 
@@ -95,9 +95,9 @@ To configure a cloud export location:
 
       {style="table-layout:auto"}
 
-   +++   
+      +++   
 
-   +++Azure RBAC
+      +++Azure RBAC
 
       Specify the following information to configure an Azure RBAC location:
 
@@ -109,9 +109,9 @@ To configure a cloud export location:
 
       {style="table-layout:auto"}
 
-   +++
+      +++
 
-   +++Snowflake
+      +++Snowflake
 
       Specify the following information to configure a Snowflake location:
 
@@ -124,7 +124,7 @@ To configure a cloud export location:
 
       {style="table-layout:auto"}
 
-   +++
+      +++
 
 1. Select [!UICONTROL **Save**].
 
