@@ -36,8 +36,6 @@ If you continue to experience issues, contact Adobe Customer Care. When contacti
 
 * Account
 
-* Company Name
-
 * Connection
 
-* Data View
+* Company name
