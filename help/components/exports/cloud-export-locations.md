@@ -8,9 +8,7 @@ hidefromtoc: yes
 ---
 # Configure cloud export locations
 
-{{select-package}}
-
-Before you can export Customer Journey Analytics data to a cloud destination as described in [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to add and configure the location where you want the data to be sent. 
+Before you can export Customer Journey Analytics reports to a cloud destination as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to add and configure the location where you want the data to be sent. 
 
 This process consists of adding and configuring the account (such as Amazon S3, Google Cloud Platform, and so forth) as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md), and then adding and configuring the location within that account (such as a folder within the account) as described in this article.
 
@@ -20,10 +18,15 @@ To configure a cloud export location:
 
 1. You need to add an account before you can add a location. If you haven't already, add an account as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
-1. On the [!UICONTROL Exports] page, select the [!UICONTROL **Locations**] tab.
-1. Select [!UICONTROL **Add location**]. 
+1. Select the [!UICONTROL **Locations**] tab, then select [!UICONTROL **Add location**]. 
    
    ![add location button](assets/location-add.png)
+
+   Or
+
+   Select the [!UICONTROL **Location accounts**] tab, select the 3-dot icon on an existing account where you want to add a location, then select [!UICONTROL **Add location**].
+
+   ![Add location to existing account](assets/add-location-existing-account.png)
 
    The Location dialog displays.
 
@@ -32,13 +35,26 @@ To configure a cloud export location:
    |---------|----------|
    | [!UICONTROL **Name**] | The name of the location.  | 
    | [!UICONTROL **Description**] | Provide a short description of the account to help differentiate it from other accounts of the same account type. |
-   | [!UICONTROL **Location account**] | Select the location account that you created in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md). | 
+   | [!UICONTROL **Location account**] | Select the account where you want to create the location. For information about how to create an account, see [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md). | 
 
 1. In the [!UICONTROL **Location properties**] section, specify information specific to the account type of your location account.  
 
    For configuration instructions, expand the section below that corresponds to the account type that you selected in the [!UICONTROL **Location accounts**] field. 
 
-   +++Amazon S3 Role ARN
+      +++Adobe Experience Platform Data Landing Zone
+
+      Specify the following information to configure an Adobe Experience Platform Data Landing Zone location:
+
+      <!-- still need to update; can't create AEP account -->
+
+      |Field | Function | 
+      |---------|----------|
+      | [!UICONTROL **IMS Org ID**] | The IMS Org ID is provided by Adobe. Click the Copy icon next to the [!UICONTROL **IMS Org ID**] field to copy the contents of the field, then use the ID in your Adobe Exprerience Platform account. | 
+      | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, `folder_name/` |
+
+      +++
+  
+      +++Amazon S3 Role ARN
 
       Specify the following information to configure an Amazon S3 Role ARN location:
 
@@ -51,9 +67,9 @@ To configure a cloud export location:
 
       {style="table-layout:auto"}
 
-   +++
+      +++
 
-   +++Google Cloud Platform
+      +++Google Cloud Platform
 
       Specify the following information to configure a Google Cloud Platform location:
 
@@ -66,9 +82,9 @@ To configure a cloud export location:
 
       {style="table-layout:auto"}
    
-   +++
+      +++
 
-   +++Azure SAS
+      +++Azure SAS
 
       Specify the following information to configure an Azure SAS location:
 
@@ -79,9 +95,9 @@ To configure a cloud export location:
 
       {style="table-layout:auto"}
 
-   +++   
+      +++   
 
-   +++Azure RBAC
+      +++Azure RBAC
 
       Specify the following information to configure an Azure RBAC location:
 
@@ -93,9 +109,9 @@ To configure a cloud export location:
 
       {style="table-layout:auto"}
 
-   +++
+      +++
 
-   +++Snowflake
+      +++Snowflake
 
       Specify the following information to configure a Snowflake location:
 
@@ -108,20 +124,7 @@ To configure a cloud export location:
 
       {style="table-layout:auto"}
 
-   +++
-
-   +++Adobe Experience Platform
-
-      Specify the following information to configure an Adobe Experience Platform location:
-
-      <!-- still need to update; can't create AEP account -->
-
-      |Field | Function | 
-      |---------|----------|
-      | [!UICONTROL **IMS Org ID**] | The IMS Org ID is provided by Adobe. Click the Copy icon next to the [!UICONTROL **IMS Org ID**] field to copy the contents of the field, then use the ID in your Adobe Exprerience Platform account. | 
-      | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, `folder_name/` |
-
-   +++
+      +++
 
 1. Select [!UICONTROL **Save**].
 

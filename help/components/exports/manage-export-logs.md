@@ -8,9 +8,7 @@ hidefromtoc: yes
 ---
 # Manage export logs
 
-{{select-package}}
-
-Export logs provide details about each export, and are generated any time Analysis Workspace data is exported to the cloud. (For information about how data can be exported to the cloud, see [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md).) 
+Export logs provide details about each export, and are generated any time Analysis Workspace data is exported to the cloud. (For information about how data can be exported to the cloud, see [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).) 
 
 For scheduled exports, logs reflect the export settings as they were when the log was sent. Logs cannot be deleted.
 
@@ -32,7 +30,7 @@ To find information you need, you can either filter the list of logs or search f
 
    |Filter | Description |
    |---------|----------|
-   | [!UICONTROL **Account type**] | The account type that the log is associated with. The following account types are available: <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul>. | 
+   | [!UICONTROL **Account type**] | The account type that the log is associated with. The following account types are available: <ul><li>[!UICONTROL **Adobe Experience Platform Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. | 
    | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Pending**]: A specific instance of an export has been started but is not yet complete.<p>Re-running an export that has a status of Pending will delay the export process.</p></li><li>[!UICONTROL **Completed**]: A specific instance of an export has finished processing and is available in the export account.</li><li>[!UICONTROL **Failed**]<p>The following situations can result in a failed export. Hover over the Failed status to see details about the failure. <ul><li>Scheduled export expiration</li><li>Row limit reached for scheduled export </li></ul> </p></li></ul> | 
 
    {style="table-layout:auto"}
@@ -89,10 +87,10 @@ To configure columns on the [!UICONTROL Log] tab:
 
    |Available column | Description |
    |---------|----------|
-   | Export name | The name of the export. Users give exports a name when they create them, as described in [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md). | 
+   | Export name | The name of the export. Users give exports a name when they create them, as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md). | 
    | Export ID | The ID automatically assigned to the export when it is created. <!-- True? --> | 
    | Instance ID | The ID of the Customer Journey Analytics instance. <!-- True? --> |
-   | Data view name | The name of the data view associated with the export. Users can select the data view when they create the export, as described in [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md). |
+   | Data view name | The name of the data view associated with the export. Users can select the data view when they create the export, as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md). |
    | Number of files | The number of files included in the export. |
    | Size | The size of the export.<p>The file size is calculated with a base of 1024, which is sometimes represented as KIB and MIB. If your cloud provider calculates size with a base of 1000, this may result in the size displayed in your cloud provider being slightly different from the size displayed here.</p> |
    | Location | The location on the account where the data was exported. |
