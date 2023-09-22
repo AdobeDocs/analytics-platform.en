@@ -57,7 +57,7 @@ To export full tables from Analysis Workspace:
 
 Exporting Customer Journey Analytics data to the cloud allows you to: 
 
-* Export to a shared location, such as Google Cloud Platform, Microsoft Azure, Amazon S3, Snowflake, or Adobe Experience Platform.
+* Export to a shared location, such as Adobe Experience Platform Data Landing Zone, Google Cloud Platform, Microsoft Azure, Amazon S3, or Snowflake.
 
 * Store large amounts of historical data.
 
