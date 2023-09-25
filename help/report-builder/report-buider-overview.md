@@ -23,7 +23,7 @@ Report Builder for Customer Journey Analytics is available for Excel on the foll
 - Windows
 - Web browsers
 
->[!VIDEO](https://video.tv.adobe.com/v/337569/?quality=12&learn=on)
+>[!VIDEO of Report Builder overview](https://video.tv.adobe.com/v/337569/?quality=12&learn=on)
 
  >[!NOTE]
  >

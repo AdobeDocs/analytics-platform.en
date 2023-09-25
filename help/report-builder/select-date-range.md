@@ -30,7 +30,7 @@ The From cell option allows you to reference dates entered in worksheet cells.
 
 You have the option to exclude today on any selected date range.
 
- ![](./assets/image17.png)
+ ![Select Exclude today.](./assets/image17.png)
 
 ## Use the Calendar
 
@@ -56,7 +56,7 @@ To select dates using the calendar
 
 To set a date range in reverse, click the end date first and then click the start date.
 
-![](./assets/image18.png)
+![Click the end date and then the start date.](./assets/image18.png)
 
 ### Preset drop down menu
 
@@ -70,7 +70,7 @@ The rolling dates option allows you to select a date range using rolling dates.
 
 1.  Select a rolling expression for your start and or end date.
 
-    ![](./assets/image19.png)
+    ![Select Use rolling dates and then the rolling expression.](./assets/image19.png)
 
     **Start of** — Allows you to select the beginning of a day, week, month, quarter, or year.
 
@@ -80,11 +80,11 @@ The rolling dates option allows you to select a date range using rolling dates.
 
 1.  Choose day, week, month, quarter, or year as the rolling period.
 
-    ![](./assets/image20.png)
+    ![Choose current day.](./assets/image20.png)
 
 1.  Add or subtract days, weeks, months, quarters, or years from your rolling date.
 
-    ![](./assets/image21.png)
+    ![Select current day plus 14 days.](./assets/image21.png)
 
 1.  Click Next to define the data range.
 
@@ -100,7 +100,7 @@ The custom expression option allows you to change the date range by building a c
 
     When you select the **Use custom expression** option, the standard rolling date range controls are disabled.
 
-    ![](./assets/custom_expression.png)
+    ![Select Use custom expression showing tm-1m to td-1d.](./assets/custom_expression.png)
 
 1.  Enter a custom expression.
 
@@ -157,7 +157,7 @@ The following table lists date expression examples.
 
 The date range can be specified in worksheet cells. Use the **Date range from cell** option to choose the data block start and end date from selected cells. When you select the **From cell** option, the panel displays **From** and **To** fields where you can enter a cell location.
 
-![](./assets/image23.png)
+![Select From cell Sheet1!H4 to Sheet1!I4](./assets/image23.png)
 
 ## Exclude today
 
