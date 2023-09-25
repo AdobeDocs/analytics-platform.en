@@ -1,18 +1,16 @@
 ---
 description: Export an Analysis Workspace project to a cloud location.
 keywords: Analysis Workspace
-title: Export Customer Journey Analytics data to the cloud
+title: Export Customer Journey Analytics reports to the cloud
 feature: Curate and Share
 hide: yes
 hidefromtoc: yes
 ---
-# Export Customer Journey Analytics data to the cloud
+# Export Customer Journey Analytics reports to the cloud
 
-{{select-package}}
+You can export Workspace full tables from Customer Journey Analytics and send exports to designated cloud destinations. 
 
-You can export full tables from Customer Journey Analytics and send data to designated cloud destinations. 
-
-Other methods of exporting Customer Journey Analytics data are also available, as described in [Export overview](/help/analysis-workspace/export/export-project-overview.md).
+Other methods of exporting Customer Journey Analytics reports are also available, as described in [Export overview](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Export full tables from Analysis Workspace
 
@@ -38,15 +36,14 @@ To export full tables from Analysis Workspace:
    | Tags | You can apply an existing tag to the export or you can create a new tag and apply it. <p>To apply an existing tag to the export, select any tags from the drop-down menu. Any tags in your company are available to apply<!-- double-check this -->.</p> <p>To create a new tag, type the name of the new tag, then press Enter.</p><p>Consider the following when applying tags to an export: <ul><li>Tags that you apply can be filtered on or searched for in the exports table.</li> <li>Tags applied to a project are not automatically applied when exporting a full table, as described in "Configure columns on the exports page" in [Manage exports](/help/components/exports/manage-exports.md). (Alternatively, when [scheduling a full project for export](/help/analysis-workspace/export/t-schedule-report.md), any tags applied to the project are automatically applied to the export.)  <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> | 
    | Description | Add a description to the export. You can choose to view descriptions as a column in the [Exports page](/help/components/exports/manage-exports.md) when viewing exports. |
    | Data view | Select the data view that contains the components that you want to include in the export. The Data view drop-down menu is located in the upper-left corner of the dialog and can be identified by the data view icon![data view icon](assets/data-view-icon.png).  <p>**Note:** If you choose a data view that is missing components that are already included in your data table, then you are prompted to clear the data table and re-create it using components that are included in the selected data view. </p> | 
-   | Lookback window | Select the time-frame to include in the data table. Options include [!UICONTROL **Today**], [!UICONTROL **Yesterday**], [!UICONTROL **Last 7 days**], [!UICONTROL **Last 30 days**], [!UICONTROL **This week**], and [!UICONTROL **This month**]. | 
+   | Lookback window | Select the reporting time-frame to include in each export file. Options include [!UICONTROL **Today**], [!UICONTROL **Yesterday**], [!UICONTROL **Last 7 days**], [!UICONTROL **Last 30 days**], [!UICONTROL **This week**], and [!UICONTROL **This month**]. | 
    | Clear | Clears the contents of the data table. This allows you to start building a new table directly within the New full table export dialog.  | 
-   | Export frequency | Select how often the export should occur. <p>You can choose [!UICONTROL **Send now (one time)**] to send the export only once. When you select this option, the export is sent immediately.<p>Or, you can choose to send the export on a defined schedule. When sending on a schedule, options include [!UICONTROL **Daily**], [!UICONTROL **Weekly**], [!UICONTROL **Monthly by day of the week**], [!UICONTROL **Monthly by day of the month**], [!UICONTROL **Yearly by day of the month**], and [!UICONTROL **Yearly by specific date**]. </p><p>When selecting an export frequency, consider the following:</p><ul><li>The options in the [!UICONTROL **Lookback window**] field change depending on what you select here.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Additional configuration fields display depending on the option you choose.</li></ul>  | 
+   | Export frequency | Set the schedule for how often the export should occur. <p>You can choose [!UICONTROL **Send now (one time)**] to send the export only once. When you select this option, the export is initiated immediately.<p>Or, you can choose to send the export on a defined schedule. When sending on a schedule, options include [!UICONTROL **Daily**], [!UICONTROL **Weekly**], [!UICONTROL **Monthly by day of the week**], [!UICONTROL **Monthly by day of the month**], [!UICONTROL **Yearly by day of the month**], and [!UICONTROL **Yearly by specific date**]. </p><p>When selecting an export frequency, consider the following:</p><ul><li>The options in the [!UICONTROL **Lookback window**] field change depending on what you select here.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Additional configuration fields display depending on the option you choose.</li></ul>  | 
    | Starting on  | The day and time that the scheduled export should begin. <p>This option is available only when choosing a scheduled export frequency.</p> | 
    | Ending on | The day and time that the scheduled export expires. The scheduled export no longer runs after the date and time that you set. <p>This option is available only when choosing a scheduled export frequency.</p> |  
    | File format | Choose whether the exported data should be in .csv or .json format. |  
    | Account | Select the cloud export account where you want the data to be sent. <p>For more information, see [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).</p> |
    | Location name | Select the location on the account where you want the export data to be sent. <p>For more information, see [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).</p><p>You can select the [!UICONTROL **Add new location**] button to create a new location for an existing export account. |
-   | Data Preview | Shows the estimated size, estimated number of rows, and number of breakdowns. | 
 
    {style="table-layout:auto"}
 
@@ -60,7 +57,7 @@ To export full tables from Analysis Workspace:
 
 Exporting Customer Journey Analytics data to the cloud allows you to: 
 
-* Export to a shared location, such as Google Cloud Platform, Microsoft Azure, Amazon S3, Snowflake, or Adobe Experience Platform.
+* Export to a shared location, such as Adobe Experience Platform Data Landing Zone, Google Cloud Platform, Microsoft Azure, Amazon S3, or Snowflake.
 
 * Store large amounts of historical data.
 
@@ -70,11 +67,11 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
 * Include calculated metrics in the exported Customer Journey Analytics data.
 
-* Structure data output as concatenated values (like Data Warehouse for Adobe Analytics).
+* Structure data output as concatenated values.
 
 * Export ad hoc or on a schedule. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
 
-* Export files in CSV or PDF format. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
+* Export files in CSV or JSON format. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
 
 * Export tables that include multiple dimensions.
 
@@ -139,8 +136,6 @@ If a non-default attribution model is being used in a report, the allocation mod
 
 After data is exported from Analysis Workspace, you can edit, re-export, duplicate, tag, or delete existing exports, as described in [Manage exports](/help/components/exports/manage-exports.md). 
 
-You can also retry or log support tickets for failed exports, as described in [Manage export logs](/help/components/exports/manage-export-logs.md).
-
 ## View exported data and manifest file
 
 ### Exported data
@@ -178,10 +173,10 @@ If you previously used Data Warehouse to export Adobe Analytics data, the follow
 |---------|----------|---------|
 | Build a custom report | Yes | Yes |
 | Calculated metrics | Yes | No |
-| Segments | Yes | Yes |
+| Segments | Yes | Limited |
 | Dimensions | Limit of 5 | Unlimited |
 | Metrics | Limit of 5 | Unlimited |
-| Reporting rows | Limit of 3, 30, 150, or 300, depending on tier | Unlimited |
+| Reporting rows | Limit of 3 million, 30 million, 150 million, or 300 million, depending on tier | Unlimited |
 | Number of reports | Unlimited | Unlimited |
 | Ad hoc delivery | Yes | Yes |
 | Schedule recurring delivery | Yes | Yes |

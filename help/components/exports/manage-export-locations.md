@@ -1,14 +1,12 @@
 ---
 description: Manage the cloud export location where Customer Journey Analytics data can be sent
 keywords: Analysis Workspace
-title: Configure cloud export locations
+title: Manage cloud export locations and accounts
 feature: Components
 hide: yes
 hidefromtoc: yes
 ---
 # Manage cloud export locations and accounts
-
-{{select-package}}
 
 You can view, edit, and delete cloud export locations.
 
@@ -32,7 +30,7 @@ To find information you need, you can either filter the list of locations or sea
 
    |Filter | Description |
    |---------|----------|
-   | [!UICONTROL **Location type**]<!--should this be changed to Account type?--> | The account type that the location is associated with. The following account types can be available: <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul> | 
+   | [!UICONTROL **Location type**]<!--should this be changed to Account type?--> | The account type that the location is associated with. The following account types can be available: <ul><li>[!UICONTROL **Adobe Experience Platform Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> | 
    | [!UICONTROL **Account**] | The name of account that the location is associated with. |
    | [!UICONTROL **Created by**] | The email address of the user who created the location. |
 
