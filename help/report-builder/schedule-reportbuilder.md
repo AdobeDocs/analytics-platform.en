@@ -15,7 +15,7 @@ You can create multiple schedules for a single workbook. For example, you can se
 
 The Schedule feature also allows you to set up password protection for a workbook and edit previously scheduled workbooks.
 
->[!VIDEO of the Report Builder scheduling feature.](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413079/?quality=12&learn=on)
 
 ## Schedule a workbook
 
