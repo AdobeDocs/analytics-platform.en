@@ -68,7 +68,7 @@ For information about how to manage existing accounts, including viewing, editin
 
 1. Copy the contents of the [!UICONTROL **SAS**] field to your clipboard. Use this SAS token to access the data that is exported from Analysis Workspace from the AEP Landing Zone. Learn about accessing your data" | 
 
-1. Select [!UICONTROL **Close**].
+1. Select [!UICONTROL **OK**].
 
 1. Continue with [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).
 
@@ -92,7 +92,7 @@ For information about how to manage existing accounts, including viewing, editin
 
 1. Copy the contents of the [!UICONTROL **User ARN**] field to your clipboard. The User ARN (Amazon Resource Name) is provided by Adobe. You must attach this user to the policy you created in Amazon S3 Role ARN. 
 
-1. Select [!UICONTROL **Close**].
+1. Select [!UICONTROL **OK**].
 
 1. Continue with [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).
 
@@ -116,7 +116,7 @@ For information about how to manage existing accounts, including viewing, editin
 
 1. Copy the contents of the [!UICONTROL **Principal**] field to your clipboard, then ensure that you grant permission to the Principal to upload files to this bucket in Google Cloud Platform. <!-- add link to Google Cloud docs on how to do this --> 
 
-1. Select [!UICONTROL **Close**].
+1. Select [!UICONTROL **OK**].
 
 1. Continue with [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).
 
@@ -144,7 +144,7 @@ For information about how to manage existing accounts, including viewing, editin
 
 1. If you haven't already, ensure that you grant permissions to the bucket in Azure SAS. <!-- add link to Google Cloud docs on how to do this --> 
 
-1. Select [!UICONTROL **Close**].
+1. Select [!UICONTROL **OK**].
 
 1. Continue with [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).
 
@@ -170,7 +170,7 @@ For information about how to manage existing accounts, including viewing, editin
 
 1. If you haven't already, ensure that you grant permissions to the bucket in Azure RBAC. <!-- add link to Google Cloud docs on how to do this --> 
 
-1. Select [!UICONTROL **Close**].
+1. Select [!UICONTROL **OK**].
 
 1. Continue with [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).
 
@@ -196,7 +196,7 @@ For information about how to manage existing accounts, including viewing, editin
 
 1. Copy the contents of the [!UICONTROL **Public key**] field to your clipboard. The Public key is provided by Adobe. Use the public key in Snowflake to connect to your Snowflake account. For more information, see the [Key Pair Authentication & Key Pair Rotation page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth). | 
 
-1. Select [!UICONTROL **Close**].
+1. Select [!UICONTROL **OK**].
 
 1. Continue with [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).
 
