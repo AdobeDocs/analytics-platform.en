@@ -63,7 +63,7 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
   This type of data can be used to detect long-term trends in order to gain business intelligence, and ultimately lead to better business decision-making.
   
-* Export full tables that contain thousands or millions of rows. Other export methods allow a maximum of 50,000 rows.
+* Export full tables that contain thousands or millions of rows (3 million, 30 million, or 150 million rows, depending on license type). Other export methods allow a maximum of 50,000 rows.
 
 * Include calculated metrics in the exported Customer Journey Analytics data.
 
@@ -102,7 +102,7 @@ The following features are not supported and are automatically removed from full
 
 The following components are not supported, and Analysis Workspace prompts you to remove them from your table when performing a full-table export:
 
-* Calculated metrics that use advanced functions in the metric definition (see [Advanced functions](/help/components/calc-metrics/cm-adv-functions.md) for more information)
+* Calculated metrics that use basic or advanced functions in the metric definition (see [Basic functions](/help/components/calc-metrics/cm-functions.md) and [Advanced functions](/help/components/calc-metrics/cm-adv-functions.md) for more information)
 * Components that have been restricted by an administrator from being exported (see the *Filter on Data Governance policies in data views* section in [Labels and policies](/help/data-views/data-governance.md) for more information)
 * More than 5 dimensions and 5 metrics per report (up to 5 dimensions and 5 metrics are supported)
 * In table columns:
