@@ -93,3 +93,5 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin C
 | **[!UICONTROL Audience View]** | Lets users view [audiences](/help/components/audiences/audiences-overview.md). |
 
 {style="table-layout:auto"}
+
+<!-- Add this to the table above when FTE goes to Beta: | [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md). | -->
