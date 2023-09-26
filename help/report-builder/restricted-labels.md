@@ -28,10 +28,10 @@ Two Adobe-defined policies are surfaced in Customer Journey Analytics that affec
 
 Components that are affected by these policies are grayed out. When you hover over a component that has a policy applied, a note is displayed to indicate the following: **Policies have been applied to this field prohibiting use of this data.** For more information see [Labels and policies](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-governance.html).
 
-![](assets/rb-restricted-label.png)
+![The policy note indicating prohibited use of data.](assets/rb-restricted-label.png)
 
 ## Update reports containing restricted data
 
 In cases where a user created a Report Builder report with data elements that are later restricted, when the report is refreshed, an error message is displayed.
 
-![](assets/error-restricted-data.png)
+![The error message displayed after data elements are later restricted.](assets/error-restricted-data.png)
