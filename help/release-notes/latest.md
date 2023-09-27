@@ -4,27 +4,23 @@ description: Latest Customer Journey Analytics release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 ---
-# Current Adobe Customer Journey Analytics release notes (September 2023)
+# Current Adobe Customer Journey Analytics release notes (October 2023)
 
-**Last update**: September 7, 2023
+**Last update**: September 27, 2023
 
-These release notes cover the release period of September 13, 2023 through October 3, 2023. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
+These release notes cover the release period of October 4, 2023 through October 24, 2023. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
 ## New or updated features 
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Support for A4T classifications in the Analytics Source Connector** | Support for new `correlationID` field for Adobe Analytics | The `_experience.decisioning.propositions.scopeDetails.correlationID` field is now available in the Adobe Analytics source connector schema. This field is used in support of A4T classifications and will be populated starting September 2023. | | N/A | September 12, 2023 |
-| **Updates to derived fields** | The following updates were made to the derived fields functionality:<ul><li>The [!UICONTROL Lookup] function has been renamed to [!UICONTROL Classify], with additional options to load CSV data. **(Releases Sept. 27, 2023)**</li><li>Additional functions are available to use when defining a derived field: [!UICONTROL Trim], [!UICONTROL Lowercase] and [!UICONTROL Lookup].</li><li>Derived field definitions now also support fields from [!UICONTROL Lookup] and [!UICONTROL Profile] datasets.</li></ul>[Learn more](/help/data-views/derived-fields/derived-fields.md) | N/A | September 13, 2023 |
-| **New features in Adobe Product Analytics** | <ul><li>**Anomaly Detection**: Compare events to expected values derived from historical trends. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html)</li><li>**Trends Frequency of use view**: Measure adoption of your features by frequency of use. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html)</li><li>**User preferences**: Configure a number of user preferences such as color palettes, data views, calendars, instance counting, number format, and comma delimiter. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html)</li></ul> | N/A | September 18, 2023 |
-| **Experience Edge device lookups** | Enable automatic device type data collection through the Experience Platform Edge network. This Experience Edge service benefits Customer Journey Analytics along with other Experience Platform apps. (Documentation link to follow) | N/A | September 27, 2023  |
+| 
 
 {style="table-layout:auto"}
 
 ## Fixes in Customer Journey Analytics
 
-AN-310972; AN-319509; AN-322245; AN-323411; AN-323719; AN-326101; AN-326125; AN-326888
-
+AN-329370; 
 
 ## Important notices for Customer Journey Analytics Administrators
 
