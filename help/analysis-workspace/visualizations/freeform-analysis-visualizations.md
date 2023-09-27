@@ -116,8 +116,8 @@ Additional functionality for a visualization is available by right-clicking on t
 | --- | --- |
 | Insert Copied Panel/Visualization|Lets you paste ("insert") a copied panel or visualization to another place within the project, or into a completely different project. |
 | Copy Visualization | Lets you right-click and copy a visualization, so that you can insert it to another place within the project, or into a completely different project. |
-| [Download items as CSV](/help/analysis-workspace/curate-share/download-send.md) | Download up to 50,000 dimension items for the selected dimension as a CSV. |
-| [Download data as CSV](/help/analysis-workspace/curate-share/download-send.md) | Download visualization data source as a CSV. |
+| [Download project data](/help/analysis-workspace/export/download-send.md) | Download up to 50,000 dimension items for the selected dimension as a CSV. |
+| [Download project data](/help/analysis-workspace/export/download-send.md) | Download visualization data source as a CSV. |
 | Duplicate Visualization | Makes an exact duplicate of the current visualization, which you can then modify. |
 | Edit Description | Add (or edit) a text description for the visualization. |
 | Get Visualization Link | Lets you direct someone to a specific visualization within a project. When the link is clicked, the recipient will be required to login before being directed to the exact visualization linked to. |

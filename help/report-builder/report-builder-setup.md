@@ -66,11 +66,11 @@ To download and install the Report Builder Add-in
 
 Reach out to your IT or security team to request approval for the Report Builder Add-in. After approval is granted, in the Office Add-ins dialog, select the Admin Managed tab.
 
-![](./assets/image1.png)
+![The Admin Managed tab in Office Add-ins dialog.](./assets/image1.png)
 
 After installing the Report Builder Add-in, the Report Builder icon is displayed in the Excel ribbon under the Home tab.
 
-![](./assets/rb_app_icon.png)
+![The Report Builder icon in Excel](./assets/rb_app_icon.png)
 
 ## Log in to Report Builder
 
@@ -82,11 +82,11 @@ After you install the Report Builder for Excel Add-in for your operating platfor
 
 1.  From the Adobe Report Builder toolbar, click **Login**.
 
-    ![](./assets/rb_login.png)
+    ![Click the Report Builder login button.](./assets/rb_login.png)
 
 1.  Enter your Adobe Experience ID account information. Your account information should match your Customer Journey Analytics credentials.
 
-    ![](./assets/image4.png)
+    ![Your login icon and organization.](./assets/image4.png)
 
 After you log in, your login icon and organization will appear at the top of the panel
 
@@ -98,7 +98,7 @@ When you first log in, you are logged in to the default organization assigned to
 
 1.  Select an organization from the list of available organizations. Only organizations that you have access to are listed.
 
-    ![](./assets/image5.png)
+    ![The list of organizations that you can access.](./assets/image5.png)
 
 ## Sign out
 
@@ -108,6 +108,6 @@ You can sign out from Report Builder from the user profile.
 
 1.  Click the avatar icon to display your user profile.
 
-    ![](./assets/image6.png)
+    ![Your user profile avatar and the Sign Out button.](./assets/image6.png)
 
 1.  Click **Sign Out**.

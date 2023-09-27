@@ -5,6 +5,7 @@ role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
+keywords: query service;Query service;sql syntax
 ---
 # Compare your Adobe Analytics data to Customer Journey Analytics data
 
@@ -46,18 +47,18 @@ Total Records by timestamps should match with Occurrences, provided that no reco
 
 1. In Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), run the following [!UICONTROL Total Records by timestamps] query:
 
-        ```
-        SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \ 
+    ```sql
+    SELECT
+        Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) AS Day,
         Count(_id) AS Records 
-        FROM  {dataset} \ 
-        WHERE timestamp>=from_utc_timestamp('{fromDate}','UTC') \ 
-        AND timestamp<from_utc_timestamp('{toDate}','UTC') \ 
-        AND timestamp IS NOT NULL \ 
-        AND enduserids._experience.aaid.id IS NOT NULL  \ 
-        GROUP BY Day \ 
-        ORDER BY Day; 
-
-        ```
+    FROM  {dataset}
+    WHERE   timestamp >= from_utc_timestamp('{fromDate}','UTC')
+        AND timestamp < from_utc_timestamp('{toDate}','UTC')
+        AND timestamp IS NOT NULL
+        AND enduserids._experience.aaid.id IS NOT NULL
+    GROUP BY Day
+    ORDER BY Day; 
+    ```
 
 1. In [Analytics Data Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html), identify from the raw data whether some rows might have been filtered out by the Analytics Source connector. 
 

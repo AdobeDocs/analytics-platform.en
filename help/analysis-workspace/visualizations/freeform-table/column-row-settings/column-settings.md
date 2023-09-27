@@ -50,7 +50,25 @@ Conditional formatting applies formatting to upper, midpoint, and lower limits t
 
 Allows you to override the default attribution model set in [Data views](/help/data-views/component-settings/attribution.md).
 
-1. Click the Settings (gear) icon in a Freeform Table column.
+<!--
+
+>[!NOTE]
+>
+>Consider the following when updating a component's attribution to a non-default attribution model:
+>
+>* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>
+>* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
+>
+>   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>
+> For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
+
+-->
+
+To use a non-default attribution model for a metric in an Analysis Workspace:
+
+1. Click the Settings (gear) icon on a metric in a Freeform Table column.
 
    ![Attribution checkbox](assets/attribution-checkbox.png)
 

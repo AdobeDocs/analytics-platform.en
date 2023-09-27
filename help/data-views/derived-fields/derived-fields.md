@@ -56,7 +56,7 @@ When you define a rule in the rule builder, you use the rule interface.
 | A | **Rule Name** | By default the rule name is **Rule X** (X referring to a sequence number). To edit the name of a rule, select its name and type in the new name, for example `Query Parameter`. |
 | B | **Function Name** | The selected function name for the rule, for example [!UICONTROL URL PARSE]. When the function is the last in the sequence of functions and determines the final output values, the function name is followed by [!UICONTROL - FINAL OUTPUT], for example [!UICONTROL URL PARSE - FINAL OUTPUT]. <br/>To show a popup with more information on the function, select ![Help icon](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Rule Description** | You can optionally add a description to a rule.<br/>Select ![More icon](assets/More.svg), then select **[!UICONTROL **Add Description**]** to add a description or **[!UICONTROL **Edit Description**]** to edit an existing description.<br/>Use the editor to enter a description. You can use the toolbar to format the text (using style selector, bold, italic, underline, right, left, centered, color, number list, bullet list) and adding links to external information. <br/>To finish editing the description, click outside of the editor. |
-| D | **Function Area** | Defines the logic of the function. The interface depends on the type of function. The dropdown for [!UICONTROL Field] or [!UICONTROL Value] shows all categories of fields (rules, standard fields, fields) available, based on the type of input the function expects. See [Function reference](#function-reference) on detailed information for each of the functions supported. |
+| D | **Function Area** | Defines the logic of the function. The interface depends on the type of function. The dropdown for [!UICONTROL Field] or [!UICONTROL Value] shows all categories of fields (rules, standard fields, fields) available, based on the type of input the function expects. <!-- Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define.  See [Function reference](#function-reference) on detailed information for each of the functions supported. --> |
 
 {style="table-layout:auto"}
 
@@ -379,7 +379,7 @@ You define a `Trip Duration (bucketed)` derived field. You create the following 
 | [!DNL long trip] |
 
 
-## More Information
+## More information
 
 Customer Journey Analytics uses a nested container structure, modeled after Adobe Experience Platform's [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en) (Experience Data Model). See [Containers](../create-dataview.md#containers) and [Filter containers](../../components/filters/filters-overview.md#filter-containers) for more background information. This container model, albeit flexible by nature, imposes some constraints when using the rule builder. 
 
@@ -407,9 +407,6 @@ The following constraints apply and are enforced when *selecting* and *setting* 
 
 Defines a set of values that are replaced by corresponding values in a new derived field.
 
-
-
-
 +++ Details
 
 >[!NOTE]
@@ -420,7 +417,7 @@ Defines a set of values that are replaced by corresponding values in a new deriv
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>[!UICONTROL When value equals] and [!UICONTROL Replace values with]:</p><ul><li>String</li></ul><li>Show original values<ul><li>Boolean</li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>[!UICONTROL When value equals] and [!UICONTROL Replace values with]:</p><ul><li>String</li></ul><li>Show original values<ul><li>Boolean</li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field<br/>100 rows per function</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -529,6 +526,17 @@ You define a `Page Name (updated)` derived field. You use the [!UICONTROL CLASSI
 | [!DNL Deals & Offers] |
 | [!DNL Reviews] |
 | [!DNL Generate Quote] |
+
+
+## More information {#classify-moreinfo}
+
+The following additional functionality is available in the Classify rule interface:
+
+- To quickly clear all table values, select ![Erase](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Erase_18_N.svg) **[!UICONTROL Clear all table values]**.
+- To upload a CSV file containing original values for When values equal and new values for Replace values with, select ![CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg) **[!UICONTROL Upload CSV]**.
+- To download a template for creating a CSV file with original and new values to upload, select ![Download](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Download CSV template]**.
+- To download a CSV file with all original and new values populated in the rule interface, select ![Download](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Download CSV values]**.
+ 
 
 +++
 
@@ -679,6 +687,108 @@ You define an `Email Marketing (updated)` derived field. You use the [!UICONTROL
 
 +++
 
+
+<!-- LOOKUP
+
+### Lookup
+
+Lookup values using a field from a lookup dataset and returns value in a new derived field or for further rule processing.
+
++++ Details
+
+## Specification {#lookup-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to apply lookup]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Lookup dataset]</li><ul><li>Dataset</li></ul><li>[!UICONTROL Matching key]<ul><li>Rules</li><li>Fields</li></ul></li><li>Values to return<ul><li>Rules</li><li>Fields</li></ul></li></ul> | <p>N/A</p> | <p>3 functions per derived field</p> | <p>New derived field or value for further processing in next rule</p> |
+
+{style="table-layout:auto"}
+
+## Use case {#lookup-uc}
+
+You would like to lookup the activity name using the activity id collected when your customers clicked on a personalized banner shown through Adobe Target. You want to use a lookup dataset with Analytics for Target (A4T) activities containing activity ids and activity names.
+
+### A4T lookup dataset {#lookup-uc-lookup}
+
+| Activity Id | Activity Name |
+|---|---|
+| 415851 | MVT Test Category Pages |
+| 415852 | Luma - Campaign Max 2022 |
+| 402922 | Home Page Banners |
+
+{style="table-layout:auto"}
+
+### Derived field {#lookup-uc-derivedfield}
+
+You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule to lookup the value from your collected data, specified in the [!UICONTROL Field to apply lookup] field. You select the lookup dataset from the [!UICONTROL Lookup dataset] list, selecting the identifier field from the [!UICONTROL Matching key list] and the field to return from the [!UICONTROL Values to return] list.
+
+![Screenshot of the Lowercase rule](assets/lookup.png)
+
+## More info
+
+You can quickly insert a [!UICONTROL Lookup] function in the rule builder, already containing one or more other functions.
+
+  1. Select **[!UICONTROL Schema fields]** from selector.
+  1. Select ![Schema field icon](assets/Smock_Folder_18_N.svg) **[!UICONTROL Lookup datasets]**.
+  1. Select your lookup dataset and find the field you want to use for lookup.
+  1. Drag the lookup field and drop the field on any of the available input fields for a function (for example Case When). When valid, a blue **[!UICONTROL + Add box]** will allow you to drop the field and automatically insert a Lookup function before the function you dropped the lookup field on, and populate the Lookup function with relevant values for all fields.
+     ![Lookup drag](assets/lookup-drag.png) 
+
++++
+
+-->
+
+<!-- LOWERCASE -->
+
+### Lowercase
+
+Converts values from a field to lowercase and stores it into a new derived field.
+
++++ Details
+
+## Specification {#lowercase-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul> | <p>N/A</p> | <p>2 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+## Use case {#lowercase-uc}
+
+You would like to convert all collected product names into lowercase for proper reporting.
+
+### Data before {#lowercase-uc-databefore}
+
+| Collected Product Names | Product Views |
+|---|---:|
+| Tennis racket | 35 |
+| Tennis Racket | 33 |
+| tennis racket | 21 |
+| Baseball bat | 15 |
+| Baseball Bat | 12 |
+| baseball bat | 10 |
+
+{style="table-layout:auto"}
+
+### Derived field {#lowercase-uc-derivedfield}
+
+You define a `Product Names` derived field. You use the [!UICONTROL LOWERCASE] function to define a rule to convert the value from the [!UICONTROL Collected Product Names] field to lowercase and store that in the new derived field.
+
+![Screenshot of the Lowercase rule](assets/lowercase.png)
+
+
+### Data after {#lowercase-uc-dataafter}
+
+| Product Names | Product Views |
+|---|---|
+| tennis racket | 89 |
+| baseball bat | 37 |
+
+{style="table-layout:auto"}
+
++++
+
 <!-- MERGE FIELDS -->
 
 ### Merge Fields
@@ -736,7 +846,7 @@ You define a `Cross Channel Interactions` derived field. You use the [!UICONTROL
 
 {style="table-layout:auto"}
 
-## More Information {#merge-fields-moreinfo}
+## More information {#merge-fields-moreinfo}
 
 You have to select the same type of fields within a Merge Fields rule. For example, if you select a Date field, all other fields you want to merge have to be Date fields.
 
@@ -792,7 +902,7 @@ You create a `Page Identifier` derived field. You use the [!UICONTROL REGEX REPL
 | customer-journey-analytics.html |
 | adobe-experience-platform.html |
 
-## More Information
+## More information
 
 Customer Journey Analytics uses a subset of the Perl regex syntax. The following expressions are supported:
 
@@ -935,6 +1045,119 @@ You create a `Second Response` derived field to take the last value  from the [!
 +++
 
 
+<!-- TRIM -->
+
+### Trim
+
+Trims whitespace, special characters or number of characters from either the beginning or the end of field values into a new derived field.
+
++++ Details
+
+## Specification {#trim-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li></ul> | <ul><li>[!UICONTROL Field]<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>Trim whitespace</li><li>Trim special characters<ul><li>Input of special characters</li></ul></li><li>Trim from left<ul><li>From&nbsp;<ul><li>String start</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li></ul></li><li>To<ul><li>String end</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li><li>Length</li></ul></li></ul></li><li>Trim from right<ul><li>From&nbsp;<ul><li>String end</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li></ul></li><li>To<ul><li>String start</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li><li>Length</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>1 function per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+## Use case 1 {#trim-uc1}
+
+You collect product data, however that data contains hidden whitespace characters which fragments reporting. You would like to easily trim any excess whitepace
+
+### Data before {#trim-uc1-databefore}
+
+| Product ID | Events |
+|---|--:|
+| `"prod12356 "` | 1 |
+| `"prod12356"` | 1 |
+| `" prod12356"` | 1 | 
+
+{style="table-layout:auto"}
+
+### Derived field {#trim-u1-derivedfield}
+
+You create a `Product Identifier` derived field. You use the [!UICONTROL TRIM] function to define a rule to **[!UICONTROL Trim whitespace]** from the **[!UICONTROL Product ID]** field.
+
+![Screenshot of the Split rule 1](assets/trim-1.png)
+
+### Data after {#trim-uc1-dataafter}
+
+| Product Identifier | Events |
+|---|--:|
+| `"prod12356"` | 3 |
+
+{style="table-layout:auto"}
+
+## Use case 2 {#trim-uc2}
+
+Your data on page names collected includes some erroneous special characters at the end of the page name which need to be removed.
+
+### Data before {#trim-uc2-databefore}
+
+| Name | Events |
+|---|--:|
+| home page# | 1 |
+| home page? | 1 |
+| home page% | 1 |
+| home page& | 1 |
+| home page/ | 1 |
+
+{style="table-layout:auto"}
+
+### Derived field {#trim-u2-derivedfield}
+
+You create a  `Page Name` derived field. You use the [!UICONTROL TRIM] function to define a rule to [!UICONTROL Trim special characters] from the [!UICONTROL Name] field using the [!UICONTROL Special characters] `#?%&/`.
+
+![Screenshot of the Split rule - first value](assets/trim-2.png)
+
+### Data after {#trim-uc2-dataafter}
+
+| Page Name | Events |
+|---|--:|
+| home page | 5 |
+
+{style="table-layout:auto"}
+
+
+## Use case 3 {#trim-uc3}
+
+You collect data including a storeID. The storeID contains the abbreviated US state code as the first two characters. You want to only use that state code in your reporting.
+
+### Data before {#trim-uc3-databefore}
+
+| storeID | Events |
+|---|--:|
+| CA293842 | 1 |
+| CA423402 | 1 |
+| UT123418 | 1 |
+| UT189021 | 1 |
+| ID028930 | 1 |
+| OR234223 | 1 |
+| NV22342 | 1 |
+
+{style="table-layout:auto"}
+
+### Derived field {#trim-u3-derivedfield}
+
+You create a  `Store Identifier` derived field. You use the [!UICONTROL TRIM] function to define a rule to [!UICONTROL Truncate from right] the [!UICONTROL storeID] field from String end to position `3`.
+
+![Screenshot of the Split rule - first value](assets/trim-3.png)
+
+### Data after {#trim-uc3-dataafter}
+
+| Store Identifier | Events |
+|---|--:|
+| CA | 2 |
+| UT | 2 |
+| ID | 1 |
+| OR | 1 |
+| NV | 1 |
+
+{style="table-layout:auto"}
++++
+
+
 <!-- URL PARSE -->
 
 ### URL Parse
@@ -1025,7 +1248,7 @@ The following limitations apply to the Derived field functionality in general:
   - From this maximum of ten different schema fields, only a maximum of three lookup schema or profile schema fields are allowed.
 - You can have a maximum of 100 derived fields per Customer Journey Analytics connection.
 
-## More Information
+## More information
 
 - [Making the Most of Your Data: A Framework for Using Derived Fields in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 

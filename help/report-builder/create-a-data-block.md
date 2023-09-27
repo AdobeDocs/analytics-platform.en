@@ -17,7 +17,7 @@ Configure the initial data block parameters for the Data block location, Data v
 
 1.  Click **Create data block**.
 
-    ![](./assets/create_db.png)
+    ![Screenshot showing the Create data block option.](./assets/create_db.png)
 
 1.  Set the **Data block location**.
 
@@ -35,13 +35,9 @@ Configure the initial data block parameters for the Data block location, Data v
 
 1.  Click **Next**.
 
-    ![](./assets/choose_date_data_view3.png)
+    ![Screenshot showing the date range option and the active Next button.](./assets/choose_date_data_view3.png)
 
     After you configure the data block, you can select dimensions, metrics, and filters to build your data block. The Dimensions, Metrics, and Filters tabs are displayed above the Table builder pane.
-<!--
-    ![](./assets/image9.png)
-  -->
-
 
 ## Build the data block
 
@@ -69,13 +65,13 @@ To build the data block, select report components, and then customize the layout
 
     When you add components to the table, a preview of the data block is displayed at the Data block location in the worksheet. The layout of the data block preview automatically updates as you add, move, or remove items in the table.
 
-    ![](./assets/image10.png)
+    ![Screenshot showing the added components and updated worksheet.](./assets/image10.png)
 
     **Display or hide row and column headers**
 
 1.  Click the **Table** settings icon.
 
-    ![placeholder image](./assets/table-settings.png){width="35%"}
+    ![Screenshot showing the Table settings option.](./assets/table-settings.png){width="35%"}
 
 1.  Check or uncheck the option to Display row and column headers. The headers are displayed by default.
 
@@ -83,7 +79,7 @@ To build the data block, select report components, and then customize the layout
 
 1.  Click the ellipsis icon on either the dimensions or the column headers to display the settings.
 
-    ![placeholder image](./assets/row-heading.png){width="35%"}
+    ![The ellipsis icon in the Row section.](./assets/row-heading.png){width="35%"}
 
 1.  Click Hide or Show to toggle the dimension labels or column headers. All labels are displayed by default.
 
@@ -91,8 +87,8 @@ To build the data block, select report components, and then customize the layout
 
     A processing message is displayed while the analytics data is retrieved.
 
-    ![](./assets/image11.png)
+    ![The processing message.](./assets/image11.png)
 
     Report Builder retrieves the data and displays the completed data block in the worksheet.
 
-    ![](./assets/image12.png)
+    ![The completed data block.](./assets/image12.png)

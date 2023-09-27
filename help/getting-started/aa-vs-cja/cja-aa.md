@@ -130,5 +130,7 @@ The following table lists features that are available in Customer Journey Analyt
 | Cross-Device Analytics | Customer Journey Analytics supports the seamless combination of device-specific datasets from unauthenticated and authenticated sessions. Customer Journey Analytics offers to backfill historical data to known devices. In Analytics, this capability is limited to a single report suite and the use of a device graph. |
 | SQL access | Using the Data Distiller option, Customer Journey Analytics can remove the limitations of data collected on Adobe's backend processing. You can modify your data with SQL, create values and datasets unique to your business and continue to explore. Analytics does not support any kind of SQL access to its data. |
 | Enhanced security and privacy options - HIPAA readiness | Customer Journey Analytics is HIPAA ready and offers additional security options for regulation compliance. Adobe Analytics is not HIPAA ready. |
+| Ability to combine datasets (such as Adobe Analytics report suites) | Customer Journey Analytics allows you to combine data from multiple report suites as if they were a single report suite in Adobe Analytics. |
+| Derived Fields | Derived fields allow for report-time transformations to your data. Data can be combined, corrected, or created on the fly and apply retroactively to all reporting. |
 
 {style="table-layout:auto"}

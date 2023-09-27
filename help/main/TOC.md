@@ -148,18 +148,18 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Freeform panel](../analysis-workspace/c-panels/freeform-panel.md)
     + [Quick Insights panel](../analysis-workspace/c-panels/quickinsight.md)
     + [Media Concurrent Viewers panel](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-    + Media Playback Time Spent {#media-playback-timespent}
-      + [Overview](../analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
-      + [Input and Output Settings](../analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
-      + [FAQs](../analysis-workspace/c-panels/media-playback-timespent/faqs.md)
-  + Curate, Share and Schedule projects {#curate-share}
-    + [Share menu](../analysis-workspace/curate-share/send-schedule-files.md)
-    + [Curate projects](../analysis-workspace/curate-share/curate.md)
-    + [Share projects](../analysis-workspace/curate-share/share-projects.md)
-    + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
-    + [View-only projects](../analysis-workspace/curate-share/view-only-projects.md)
-    + [Download PDF or CSV files](../analysis-workspace/curate-share/download-send.md)
-    + [Schedule projects](../analysis-workspace/curate-share/t-schedule-report.md)
+    + [Media Playback Time Spent panel](../analysis-workspace/c-panels/media-playback-time-spent.md)
+  +   Curate, Share and Schedule projects {#curate-share}
+        + [Share menu](../analysis-workspace/curate-share/send-schedule-files.md)
+        + [Curate projects](../analysis-workspace/curate-share/curate.md)
+        + [Share projects](../analysis-workspace/curate-share/share-projects.md)
+        + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
+        + [View-only projects](../analysis-workspace/curate-share/view-only-projects.md)
+  +   Export {#export}
+        + [Export overview](../analysis-workspace/export/export-project-overview.md)
+        + [Download](../analysis-workspace/export/download-send.md)
+        + [Send to others](../analysis-workspace/export/t-schedule-report.md)
+        + [Export to the cloud](../analysis-workspace/export/export-cloud.md)
   + Virtual Analyst {#virtual-analyst}
     + [Virtual Analyst overview](../analysis-workspace/virtual-analyst/overview.md)
     + Anomaly Detection {#anomaly-detection}
@@ -194,6 +194,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Net growth view](../guided-analysis/types/net-growth.md)
     + Trends {#trends}
       + [Usage view](../guided-analysis/types/usage.md)
+      + [Frequency view](../guided-analysis/types/frequency.md)
     + [Industry use cases](../guided-analysis/industry-use-cases.md)
     + [FAQ](../guided-analysis/faq.md)
 
@@ -220,6 +221,12 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Filters {#cja-filters}
     + [Filters overview](../components/filters/filters-overview.md)
     + [Create filters](../components/filters/create-filters.md)
+    + [Share filters](../components/filters/filters-share.md)
+    + [Tag filters](../components/filters/filters-tag.md)
+    + [Filter the list of filters](../components/filters/filters-filter.md)
+    + [Mark filters as favorites](../components/filters/filters-favorite.md)
+    + [Approve filters](../components/filters/filters-approve.md)
+    + [Copy filters](../components/filters/filters-copy.md)
     + [Quick filters](../components/filters/quick-filters.md)
     + [Filter builder](../components/filters/filter-builder.md)
     + [Manage filters](../components/filters/manage-filters.md)
@@ -235,6 +242,9 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Filtered metrics](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
       + [Stack and replace filters](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
       + [Filtered and weighted metrics](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
+      + [Filter calculated metrics](../components/calc-metrics/cm-workflow/cm-filter.md)
+      + [Mark calculated metrics as favorites](../components/calc-metrics/cm-workflow/cm-favorite.md)
+      + [Copy calculated metrics](../components/calc-metrics/cm-workflow/cm-copy.md)
       + [Use functions](../components/calc-metrics/cm-workflow/cm-using-functions.md)
       + [Tag calculated metrics](../components/calc-metrics/cm-workflow/cm-tagging.md)
       + [Approve calculated metrics](../components/calc-metrics/cm-workflow/cm-approving.md)
@@ -249,6 +259,13 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage date ranges](../components/date-ranges/manage.md)
     + [Create custom date ranges](../components/date-ranges/custom-date-ranges.md)
     + [Date comparison](../components/date-ranges/time-comparison.md)
+  + Exports {#exports}
+    + [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md)
+    + [Configure cloud export locations](/help/components/exports/cloud-export-locations.md)
+    + [Manage cloud export locations](/help/components/exports/manage-export-locations.md)
+    + [Manage exports](/help/components/exports/manage-exports.md)
+    + [Manage export logs](/help/components/exports/manage-export-logs.md)
+    + [Troubleshoot exports](/help/components/exports/troubleshoot-exports.md)
   + Data Dictionary {#data-dictionary}
     + [Data Dictionary overview](../components/data-dictionary/data-dictionary-overview.md)
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
@@ -321,6 +338,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [View and manage usage](../admin/estimate-usage.md)
   + [Deletion implications](../admin/cja-deletion.md)
   + [Optimize Customer Journey Analytics performance](../admin/optimizing-performance.md)
+  + [IP addresses](../admin/ip-addresses.md)
 
 + Labs {#labs}
   + [Labs User Guide](../labs/labs.md)
@@ -330,6 +348,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Consistency of metrics and audience membership counts between Real-time CDP and Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
   + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
 
-+ [Customer Journey Analytics glossary](../getting-started/cja-glossary.md)
++   [Customer Journey Analytics glossary](../getting-started/cja-glossary.md)
 
-+ [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
++   [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)

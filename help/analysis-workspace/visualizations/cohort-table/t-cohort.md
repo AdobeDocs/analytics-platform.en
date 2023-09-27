@@ -41,7 +41,7 @@ Create a cohort and run a [!UICONTROL Cohort Analysis] report in Analysis Worksp
 
    Select cells (contiguous or noncontiguous), then right-click > **[!UICONTROL Create Filter From Selection]**.
 
-1. In the [Filter Builder](/help/components/filters/manage-filters.md), further edit the filter, then click **[!UICONTROL Save]**.
+1. In the [Filter Builder](/help/components/filters/filter-builder.md), further edit the filter, then click **[!UICONTROL Save]**.
 
    The saved filter is available for use in the [!UICONTROL Filter] panel in [!UICONTROL Analysis Workspace].
 1. Name and save your cohort project.
@@ -53,4 +53,4 @@ Create a cohort and run a [!UICONTROL Cohort Analysis] report in Analysis Worksp
 
 ## Download a cohort visualization
 
-Like other visualizations in Analysis Workspace, you can download a cohort visualization as a CSV or PDF file. For more information, see [Download PDF or CSV files](/help/analysis-workspace/curate-share/download-send.md).
+Like other visualizations in Analysis Workspace, you can download a cohort visualization as a CSV or PDF file. For more information, see [Download project data](/help/analysis-workspace/export/download-send.md).
