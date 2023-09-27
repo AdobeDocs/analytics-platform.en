@@ -15,6 +15,7 @@ This process consists of adding and configuring the account (such as Amazon S3, 
 For information about how to manage existing locations, including viewing, editing, and deleting locations, see [Manage cloud export locations and accounts](/help/components/exports/manage-export-locations.md).
 
 ## Begin creating a cloud export location
+
 1. You need to add an account before you can add a location. If you haven't already, add an account as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
@@ -74,7 +75,7 @@ For information about how to manage existing locations, including viewing, editi
     <!-- still need to update; can't create S3 role ARN account -->
 
    |Field | Function | 
-      |---------|----------|
+   |---------|----------|
    | [!UICONTROL **Bucket**] | The bucket within your Amazon S3 account where you want Adobe Analytics data to be sent. Ensure that the User ARN that was provided by Adobe has access to upload files to this bucket. | 
    | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, folder_name/ | 
 
@@ -120,7 +121,7 @@ For information about how to manage existing locations, including viewing, editi
 
 1. You can now export data from Analysis Workspace to the account and location that you configured. For information about how to export data to the cloud, see [Export project data to the cloud](/help/analysis-workspace/export/export-cloud.md).
 
- ### Azure RBAC
+### Azure RBAC
 
 1. [Begin creating a cloud export location](#begin-creating-a-cloud-export-location), as described above.
 
