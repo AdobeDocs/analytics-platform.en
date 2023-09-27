@@ -14,13 +14,12 @@ These release notes cover the release period of October 4, 2023 through October 
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| 
 
 {style="table-layout:auto"}
 
 ## Fixes in Customer Journey Analytics
 
-AN-329370; 
+AN-328301; AN-328640; AN-329370; 
 
 ## Important notices for Customer Journey Analytics Administrators
 
