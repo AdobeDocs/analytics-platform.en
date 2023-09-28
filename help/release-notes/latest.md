@@ -25,7 +25,7 @@ These release notes cover the release period of October 4, 2023 through October 
 
 ## Fixes in Customer Journey Analytics
 
-AN-328301; AN-328640; AN-329370; 
+AN-325940; AN-326468; AN-328301; AN-328640; AN-329370; 
 
 ## Important notices for Customer Journey Analytics Administrators
 
