@@ -43,7 +43,7 @@ For information about how to manage existing locations, including viewing, editi
 
    Continue with the section below that corresponds to the account type that you selected in the [!UICONTROL **Location account**] field.
 
-### Adobe Experience Platform Data Landing Zone
+### AEP Data Landing Zone
 
 >[!IMPORTANT]
 >
