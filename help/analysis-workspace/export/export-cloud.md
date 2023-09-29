@@ -104,9 +104,7 @@ A manifest file with a filename of `cja-export-{reportInstanceId}-{idx}.json.gz`
 
 * A list of all files that were delivered
 
-* The size of each file
-
-* The time stamp of each file
+* The MD5 checksum of each file
 
 <!-- add in  what the file name, structure, and file format will be -->
 

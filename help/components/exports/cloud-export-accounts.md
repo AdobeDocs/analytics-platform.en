@@ -52,21 +52,13 @@ For information about how to manage existing accounts, including viewing, editin
 
 1. [Begin creating a cloud export account](#begin-creating-a-cloud-export-account), as described above. 
 
-1. In the [!UICONTROL **Account properties**] section of the [!UICONTROL **Add account**] dialog box, the following information is displayed:
-
-   |Field | Function | 
-   |---------|----------|
-   | [!UICONTROL **IMS Org ID**] | The IMS Org ID is provided by Adobe. This information is not generally needed. It can be useful if you experience issues with your account and need to contact Customer Care. | 
-
-   {style="table-layout:auto"}
-
 1. Select [!UICONTROL **Save**].
 
    The [!UICONTROL **Export account created**] dialog displays.
 
       <!-- add screen shot -->
 
-1. Copy the contents of the [!UICONTROL **SAS**] field to your clipboard. Use this SAS token to access the data that is exported from Analysis Workspace from the AEP Landing Zone. Learn about accessing your data" | 
+1. Copy the contents of the [!UICONTROL **SAS**] field to your clipboard. Use this SAS token to access the data that is exported from Analysis Workspace from the AEP Landing Zone.
 
 1. Select [!UICONTROL **OK**].
 

@@ -57,7 +57,6 @@ For information about how to manage existing locations, including viewing, editi
 
    |Field | Function | 
    |---------|----------|
-   | [!UICONTROL **IMS Org ID**] | The IMS Org ID is provided by Adobe. Click the Copy icon next to the [!UICONTROL **IMS Org ID**] field to copy the contents of the field, then use the ID in your Adobe Exprerience Platform account. | 
    | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, `folder_name/` |
 
    {style="table-layout:auto"}
