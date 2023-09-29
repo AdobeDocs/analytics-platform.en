@@ -120,7 +120,7 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
   This type of data can be used to detect long-term trends in order to gain business intelligence, and ultimately lead to better business decision-making.
   
-* Export full tables that contain thousands or millions of rows (3 million, 30 million, or 150 million rows, depending on license type). Other export methods allow a maximum of 50,000 rows.
+* Export full tables that contain thousands or millions of rows (3 million, 30 million, 150 million, or 300 million rows, depending on license type). Other export methods allow a maximum of 50,000 rows.
 
 * Include calculated metrics in the exported Customer Journey Analytics data.
 
