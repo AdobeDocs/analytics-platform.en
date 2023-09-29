@@ -174,7 +174,7 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 
 | Name | Type | Value | Description | In Product Description? |
 |---|---|--:|---|:---:|
-| Rows per report | Static | 3,000,000<br/>30,000,000<br/>150,000,000 | Maximum number of reporting rows per report delivered by Full Table Export. | |
+| Rows per report | Static | 3,000,000<br/>30,000,000<br/>150,000,000 | Maximum number of reporting rows per report for Select, Prime and Ultimate package. | |
 | Breakdowns per table | Static | 5 | Maximum number of breakdowns per table | |
 | Metrics per table | Static | 5 | Maximum number of metrics per table | |
 | Schedule frequency | Static | 1 | Exports can be scheduled once (1) a day or on a longer schedule (for example: once every 2 days, or weekly) | | 
