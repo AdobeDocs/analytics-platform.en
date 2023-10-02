@@ -2,6 +2,7 @@
 description: Describes how to copy a filter in the Filter manager
 title: Copy filters
 feature: Filters
+exl-id: a64737bd-5d5b-4e85-95ff-eb1d90b95e18
 ---
 # Copy filters
 

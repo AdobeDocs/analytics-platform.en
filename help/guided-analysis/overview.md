@@ -2,7 +2,7 @@
 title: Guided analysis overview
 description: A method of analyzing data in Customer Journey Analytics that lets product teams get high-quality insights quickly. Also referred to as Product Analytics.
 keywords: product analytics
-exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
+exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 ---
 # Guided analysis overview
@@ -71,4 +71,4 @@ Once your organization is provisioned to use Guided analysis, product profile ad
 
 >[!TIP]
 >
->Some admins prefer to enable Guided analysis and disable Analysis Workspace for new users to Customer Journey Analytics. Once those users mature with the product and your organizational data, you can then enable access to Analysis Workspace.  
+>Some admins prefer to enable Guided analysis and disable Analysis Workspace for new users to Customer Journey Analytics. Once those users mature with the product and your organizational data, you can then enable access to Analysis Workspace.

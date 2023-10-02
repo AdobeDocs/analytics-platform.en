@@ -3,6 +3,7 @@ title: How stitching works
 description: Understand the concept of stitching
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
+exl-id: 506838a0-0fe3-4b5b-bb9e-2ff20feea8bc
 ---
 # How stitching works
 

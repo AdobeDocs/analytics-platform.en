@@ -5,6 +5,7 @@ title: Manage exports
 feature: Components
 hide: yes
 hidefromtoc: yes
+exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 ---
 # Manage exports
 

@@ -5,6 +5,7 @@ title: Troubleshoot failed exports
 feature: Components
 hide: yes
 hidefromtoc: yes
+exl-id: fbc25150-4390-40a2-9f17-aadf254258ad
 ---
 # Troubleshoot failed exports
 

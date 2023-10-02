@@ -5,6 +5,7 @@ title: Configure cloud export accounts
 feature: Components
 hide: yes
 hidefromtoc: yes
+exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 ---
 # Configure cloud export accounts
 
@@ -201,6 +202,3 @@ For information about how to manage existing accounts, including viewing, editin
 1. Select [!UICONTROL **OK**].
 
 1. Continue with [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).
-
-
-

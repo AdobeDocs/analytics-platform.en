@@ -2,6 +2,7 @@
 description: Marking filters as favorites is another way to organize them for ease of use.
 title: Mark filters as favorites
 feature: Filters
+exl-id: b13457dd-06e5-4316-af7e-edcf4ee46408
 ---
 # Mark filters as favorites {#favorites}
 

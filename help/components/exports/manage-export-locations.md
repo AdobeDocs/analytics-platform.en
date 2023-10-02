@@ -5,6 +5,7 @@ title: Manage cloud export locations and accounts
 feature: Components
 hide: yes
 hidefromtoc: yes
+exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 ---
 # Manage cloud export locations and accounts
 

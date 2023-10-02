@@ -5,6 +5,7 @@ title: Configure cloud export locations
 feature: Components
 hide: yes
 hidefromtoc: yes
+exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 ---
 # Configure cloud export locations
 

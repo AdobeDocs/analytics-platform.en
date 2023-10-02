@@ -4,8 +4,8 @@ description: Learn how to troubleshoot issues resulting from lack of permissions
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
+exl-id: 341123b9-f4d6-4ef7-96f1-789850261b96
 ---
-
 # Lack of permissions
 
 Customer Journey Analytics does not function properly when certain Adobe Experience Platform permissions are not in place.
@@ -35,5 +35,3 @@ To correct this error, you must have system or product administrator privileges 
 1. Ensure **[!UICONTROL Manage Data Usage Policies]** and **[!UICONTROL View Data Usage Policies]** are added to the **[!UICONTROL Data Governance]** container.
 
 1. Select **[!UICONTROL Save]** to save the changes.
-
-

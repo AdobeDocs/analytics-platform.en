@@ -3,8 +3,8 @@ title: Session settings
 description: Settings in a Data view you can use to define length of a session and the trigger to initiate a new session
 solution: Customer Journey Analytics
 feature: Data Views
+exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 ---
-
 # Session settings
 
 Session settings in Data views change how Customer Journey Analytics calculates sessions from the data in your connection.
@@ -39,4 +39,3 @@ To define the context of a session for a data view:
 
 
 4. Select **[!UICONTROL Save]** or **[!UICONTROL Save and finish]** to save the session settings definition.
-
