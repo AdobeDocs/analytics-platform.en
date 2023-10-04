@@ -105,6 +105,7 @@ Click the linked section titles for more information and context about the avail
 | **[Row](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
 | | Breakdown by position | Select this option if you want the breakdown to remain with the position of the item rather than with the item itself. For more information about breakdowns, see [Break down dimensions](/help/components/dimensions/t-breakdown-fa.md). |
 | | Percentage calculation | <ul><li>Column</li><li>Row</li></ul> |
+| | Column totals (Static rows only) |<ul><li>Display sum of rows: Shows the sum of the individual line items </li><li>Display grand total: Shows the de-duplicated sum of rows.</li></ul> |
 
 ## Visualizations preferences
 

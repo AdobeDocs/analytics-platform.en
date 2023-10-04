@@ -3,10 +3,11 @@ description: Configure the cloud export location where Customer Journey Analytic
 keywords: Analysis Workspace
 title: Configure cloud export locations
 feature: Components
-hide: yes
-hidefromtoc: yes
+exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 ---
 # Configure cloud export locations
+
+{{release-limited-testing}}
 
 Before you can export Customer Journey Analytics reports to a cloud destination as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to add and configure the location where you want the data to be sent. 
 
@@ -43,7 +44,7 @@ For information about how to manage existing locations, including viewing, editi
 
    Continue with the section below that corresponds to the account type that you selected in the [!UICONTROL **Location account**] field.
 
-### Adobe Experience Platform Data Landing Zone
+### AEP Data Landing Zone
 
 >[!IMPORTANT]
 >
@@ -57,8 +58,7 @@ For information about how to manage existing locations, including viewing, editi
 
    |Field | Function | 
    |---------|----------|
-   | [!UICONTROL **IMS Org ID**] | The IMS Org ID is provided by Adobe. Click the Copy icon next to the [!UICONTROL **IMS Org ID**] field to copy the contents of the field, then use the ID in your Adobe Exprerience Platform account. | 
-   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, `folder_name/` |
+   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, `folder_name/` |
 
    {style="table-layout:auto"}
 
@@ -77,7 +77,7 @@ For information about how to manage existing locations, including viewing, editi
    |Field | Function | 
    |---------|----------|
    | [!UICONTROL **Bucket**] | The bucket within your Amazon S3 account where you want Adobe Analytics data to be sent. Ensure that the User ARN that was provided by Adobe has access to upload files to this bucket. | 
-   | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, folder_name/ | 
+   | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, folder_name/ | 
 
    {style="table-layout:auto"}
 
@@ -96,7 +96,7 @@ For information about how to manage existing locations, including viewing, editi
    |Field | Function | 
    |---------|----------|
    | [!UICONTROL **Bucket**] | The bucket within your GCP account where you want Customer Journey Analytics data to be sent. Ensure that you have granted permission to the Principal provided by Adobe to upload files to this bucket. (The Principal is provided when [configuring the Google Cloud Platform account](/help/components/exports/cloud-export-accounts.md).) For information about granting permissions, see [Add a principal to a bucket-level policy](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) in the Google Cloud documentation.|  
-   | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, folder_name/ | 
+   | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, folder_name/ | 
 
    {style="table-layout:auto"}
 
@@ -113,7 +113,7 @@ For information about how to manage existing locations, including viewing, editi
    |Field | Function | 
    |---------|----------|
    | [!UICONTROL **Container name**] | The container within the account you specified where you want Customer Journey Analytics data to be sent. | 
-   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, `folder_name/` | 
+   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, `folder_name/` | 
 
    {style="table-layout:auto"}
 
@@ -130,7 +130,7 @@ For information about how to manage existing locations, including viewing, editi
    |Field | Function | 
    |---------|----------|
    | [!UICONTROL **Container**] | The container within the account you specified where you want Adobe Analytics data to be sent. Ensure that you grant permissions to upload files to the Azure application that you created earlier. | 
-   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a backslash after the name to create the folder. For example, `folder_name/` |
+   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, `folder_name/` |
    | [!UICONTROL **Account**] | The Azure storage account. | 
 
    {style="table-layout:auto"}

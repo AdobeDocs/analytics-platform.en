@@ -3,10 +3,11 @@ description: Manage logs for existing exports
 keywords: Analysis Workspace
 title: Manage export logs
 feature: Components
-hide: yes
-hidefromtoc: yes
+exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 ---
 # Manage export logs
+
+{{release-limited-testing}}
 
 Export logs provide details about each export, and are generated any time Analysis Workspace data is exported to the cloud. (For information about how data can be exported to the cloud, see [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).) 
 
@@ -20,7 +21,7 @@ To find information you need, you can either filter the list of logs or search f
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. Select the [!UICONTROL **Log**] tab.
+1. Select the [!UICONTROL **Logs**] tab.
 
 1. Select the **Filter** icon.
 
@@ -39,7 +40,7 @@ To find information you need, you can either filter the list of logs or search f
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. Select the [!UICONTROL **Log**] tab.
+1. Select the [!UICONTROL **Logs**] tab.
 
 1. In the search tab, begin typing any information associated with the log you're searching for. You can search for data from any column available in the table. 
 
@@ -63,25 +64,29 @@ This option is not available when selecting multiple logs.
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. Select the [!UICONTROL **Logs**] tab, then select a log.
+1. Select the [!UICONTROL **Logs**] tab.
 
-   <!-- add screenshot? -->
+1. Locate the log that is associated with the export you want to edit.
 
-1. Select [!UICONTROL **Edit**].
+1. Select the **Edit export** icon ![export log icon](assets/export-icon.png) next to the log.
+
+   Or
+
+   Select the log, then select [!UICONTROL **Edit export**].
 
 ## Configure columns
 
-You can add or remove columns on the [!UICONTROL Log] tab to configure what information is displayed.
+You can add or remove columns on the [!UICONTROL Logs] tab to configure what information is displayed.
 
 Select a column header to sort the logs by that column. By default, logs are sorted by the date and time the export started.
 
-To configure columns on the [!UICONTROL Log] tab:
+To configure columns on the [!UICONTROL Logs] tab:
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. Select the [!UICONTROL **Log**] tab.
+1. Select the [!UICONTROL **Logs**] tab.
 
-1. Select the **Customize table** icon ![customize table](assets/customize-table-icon.png) in the upper-right of the [!UICONTROL Log] page.
+1. Select the **Customize table** icon ![customize table](assets/customize-table-icon.png) in the upper-right of the [!UICONTROL Logs] page.
 
    The following columns are available:
 
@@ -102,7 +107,7 @@ To configure columns on the [!UICONTROL Log] tab:
 
    {style="table-layout:auto"}
 
-1. Ensure that any columns you want to display are selected. Selected columns appear on the [!UICONTROL Log] page and display the relevant information.
+1. Ensure that any columns you want to display are selected. Selected columns appear on the [!UICONTROL Logs] page and display the relevant information.
 
 ## View audit logs
 

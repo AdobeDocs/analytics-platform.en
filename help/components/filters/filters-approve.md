@@ -2,6 +2,7 @@
 description: You can set up a workflow that includes approving filters for various levels of application, for specific departments or groups, and consistent with reporting policies.
 title: Approve filters
 feature: Filters
+exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 ---
 # Approve filters {#approve}
 
@@ -21,4 +22,4 @@ Here is how to flag a filter as approved:
 
     ![](assets/seg_approved.png)
 
-1. You can also unapprove an approved filter by clicking **[!UICONTROL Unapprove]**. 
+1. You can also unapprove an approved filter by clicking **[!UICONTROL Unapprove]**.

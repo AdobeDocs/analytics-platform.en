@@ -3,7 +3,7 @@ description: Use intelligent captions to generate natural-language insights to q
 title: Intelligent Captions
 feature: Visualizations
 role: User, Admin
-exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
+exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 ---
 # Intelligent Captions
 
