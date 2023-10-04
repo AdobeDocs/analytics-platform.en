@@ -3,6 +3,7 @@ title: Conversion trends view
 description: Track changes in conversion rate over time.
 feature: Guided Analysis
 keywords: product analytics
+exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 ---
 # Conversion trends view
 

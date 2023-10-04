@@ -2,6 +2,7 @@
 description: Depending on your permissions, you can share filters with your whole organization, groups, or individual users.
 title: Share filters
 feature: Filters
+exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 ---
 # Share filters {#share}
 
@@ -27,4 +28,4 @@ To share a filter:
 
 1. If you are an Admin, you can select All or choose from Groups and Users in your organization. As a non-Admin, you can see only individual users. Use the Search field to search for groups or users. Click **[!UICONTROL Share]**. The Shared icon appears next to the filter: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 
-1. You can filter on filters shared with you by going to Filters > Other Filters > Shared with Me. 
+1. You can filter on filters shared with you by going to Filters > Other Filters > Shared with Me.

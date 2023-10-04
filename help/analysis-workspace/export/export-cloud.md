@@ -3,10 +3,11 @@ description: Export an Analysis Workspace project to a cloud location.
 keywords: Analysis Workspace
 title: Export Customer Journey Analytics reports to the cloud
 feature: Curate and Share
-hide: yes
-hidefromtoc: yes
+exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 ---
 # Export Customer Journey Analytics reports to the cloud
+
+{{release-limited-testing}}
 
 You can export Workspace full tables from Customer Journey Analytics and send exports to designated cloud destinations. 
 
@@ -60,7 +61,8 @@ To export full tables from Analysis Workspace:
    | Tags | You can apply an existing tag to the export or you can create a new tag and apply it. <p>To apply an existing tag to the export, select any tags from the drop-down menu. Any tags in your company are available to apply<!-- double-check this -->.</p> <p>To create a new tag, type the name of the new tag, then press Enter.</p><p>Consider the following when applying tags to an export: <ul><li>Tags that you apply can be filtered on or searched for in the exports table.</li> <li>Tags applied to a project are not automatically applied when exporting a full table, as described in "Configure columns on the exports page" in [Manage exports](/help/components/exports/manage-exports.md). (Alternatively, when [scheduling a full project for export](/help/analysis-workspace/export/t-schedule-report.md), any tags applied to the project are automatically applied to the export.)  <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> | 
    | Description | Add a description to the export. You can choose to view descriptions as a column in the [Exports page](/help/components/exports/manage-exports.md) when viewing exports. |
    | Data view | Select the data view that contains the components that you want to include in the export. The Data view drop-down menu is located in the upper-left corner of the dialog and can be identified by the data view icon![data view icon](assets/data-view-icon.png).  <p>**Note:** If you choose a data view that is missing components that are already included in your data table, then you are prompted to clear the data table and re-create it using components that are included in the selected data view. </p> | 
-   | Lookback window | Select the reporting time-frame to include in each export file. Options include [!UICONTROL **Today**], [!UICONTROL **Yesterday**], [!UICONTROL **Last 7 days**], [!UICONTROL **Last 30 days**], [!UICONTROL **This week**], and [!UICONTROL **This month**]. | 
+   | Lookback window | Select the reporting time-frame to include in each export file. Options include [!UICONTROL **Today**], [!UICONTROL **Yesterday**], [!UICONTROL **Last 7 days**], [!UICONTROL **Last 30 days**], [!UICONTROL **This week**], and [!UICONTROL **This month**]. <p>This option is not displayed when the [!UICONTROL **Export frequency**] is set to [!UICONTROL **Send now (one-time)**]. | 
+   | Data table | Displays the Freeform table that you are exporting. You can modify the data table by dragging components from the left rail to the table. The table dynamically updates as you add components to the canvas.  <p>Any segments that were applied to the full table in the project appear at the top of each individual column in the table.</p> |
    | Clear | Clears the contents of the data table. This allows you to start building a new table directly within the New full table export dialog.  | 
    | Export frequency | Set the schedule for how often the export should occur. <p>You can choose [!UICONTROL **Send now (one time)**] to send the export only once. When you select this option, the export is initiated immediately.<p>Or, you can choose to send the export on a defined schedule. When sending on a schedule, options include [!UICONTROL **Daily**], [!UICONTROL **Weekly**], [!UICONTROL **Monthly by day of the week**], [!UICONTROL **Monthly by day of the month**], [!UICONTROL **Yearly by day of the month**], and [!UICONTROL **Yearly by specific date**]. </p><p>When selecting an export frequency, consider the following:</p><ul><li>The options in the [!UICONTROL **Lookback window**] field change depending on what you select here.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Additional configuration fields display depending on the option you choose.</li></ul>  | 
    | Starting on  | The day and time that the scheduled export should begin. <p>This option is available only when choosing a scheduled export frequency.</p> | 
@@ -103,9 +105,7 @@ A manifest file with a filename of `cja-export-{reportInstanceId}-{idx}.json.gz`
 
 * A list of all files that were delivered
 
-* The size of each file
-
-* The time stamp of each file
+* The MD5 checksum of each file
 
 <!-- add in  what the file name, structure, and file format will be -->
 
@@ -119,7 +119,7 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
   This type of data can be used to detect long-term trends in order to gain business intelligence, and ultimately lead to better business decision-making.
   
-* Export full tables that contain thousands or millions of rows (3 million, 30 million, or 150 million rows, depending on license type). Other export methods allow a maximum of 50,000 rows.
+* Export full tables that contain thousands or millions of rows (3 million, 30 million, 150 million, or 300 million rows, depending on license type). Other export methods allow a maximum of 50,000 rows.
 
 * Include calculated metrics in the exported Customer Journey Analytics data.
 

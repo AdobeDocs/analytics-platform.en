@@ -3,6 +3,7 @@ title: Ingest data via the Adobe Experience Platform Edge Network Server API
 description: Explain how to ingest data into Customer Journey Analytics via the Adobe Experience Platform Edge Network Server API and the Edge Network
 solution: Customer Journey Analytics
 feature: Basics
+exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 ---
 # Ingest data via the Adobe Experience Platform Edge Network Server API
 
