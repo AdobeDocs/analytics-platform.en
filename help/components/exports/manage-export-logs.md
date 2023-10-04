@@ -3,11 +3,11 @@ description: Manage logs for existing exports
 keywords: Analysis Workspace
 title: Manage export logs
 feature: Components
-hide: yes
-hidefromtoc: yes
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 ---
 # Manage export logs
+
+{{release-limited-testing}}
 
 Export logs provide details about each export, and are generated any time Analysis Workspace data is exported to the cloud. (For information about how data can be exported to the cloud, see [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).) 
 

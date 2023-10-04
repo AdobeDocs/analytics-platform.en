@@ -3,8 +3,6 @@ description: Understand the various methods available for exporting from Analysi
 keywords: Analysis Workspace
 title: Export project data overview
 feature: Curate and Share
-hide: yes
-hidefromtoc: yes
 exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
 ---
 # Export overview

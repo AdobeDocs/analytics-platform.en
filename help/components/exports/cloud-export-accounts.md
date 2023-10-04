@@ -3,11 +3,11 @@ description: Configure the cloud export account where Customer Journey Analytics
 keywords: Analysis Workspace
 title: Configure cloud export accounts
 feature: Components
-hide: yes
-hidefromtoc: yes
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 ---
 # Configure cloud export accounts
+
+{{release-limited-testing}}
 
 Before you can export Customer Journey Analytics reports to a cloud destination as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to add and configure the destination where you want the data to be sent. 
 
@@ -59,7 +59,7 @@ For information about how to manage existing accounts, including viewing, editin
 
       <!-- add screen shot -->
 
-1. Copy the contents of the [!UICONTROL **SAS**] field to your clipboard. Use this SAS token to access the data that is exported from Analysis Workspace from the AEP Landing Zone.
+1. Copy the contents of the [!UICONTROL **SAS**] field to your clipboard. Use this SAS URI to access the data that is exported from Analysis Workspace from the AEP Landing Zone.
 
 1. Select [!UICONTROL **OK**].
 
