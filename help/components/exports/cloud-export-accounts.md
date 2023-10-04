@@ -3,10 +3,11 @@ description: Configure the cloud export account where Customer Journey Analytics
 keywords: Analysis Workspace
 title: Configure cloud export accounts
 feature: Components
-hide: yes
-hidefromtoc: yes
+exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 ---
 # Configure cloud export accounts
+
+{{release-limited-testing}}
 
 Before you can export Customer Journey Analytics reports to a cloud destination as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to add and configure the destination where you want the data to be sent. 
 
@@ -28,7 +29,7 @@ For information about how to manage existing accounts, including viewing, editin
 
 1. In the [!UICONTROL **Location account description**] field, provide a short description of the account to help differentiate it from other accounts of the same account type.
 
-1. In the [!UICONTROL **Account type**] field, select the type of cloud account you are exporting to. Available account types are Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake, and Adobe Experience Platform Data Landing Zone.
+1. In the [!UICONTROL **Account type**] field, select the type of cloud account you are exporting to. Available account types are Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake, and AEP Data Landing Zone.
 
 1. Continue with the section below that corresponds to the [!UICONTROL **Account type**] you selected.
 
@@ -44,7 +45,7 @@ For information about how to manage existing accounts, including viewing, editin
 
    * [Snowflake](#snowflake)
 
-### Adobe Experience Platform Data Landing Zone
+### AEP Data Landing Zone
 
 >[!IMPORTANT]
 >
@@ -52,21 +53,13 @@ For information about how to manage existing accounts, including viewing, editin
 
 1. [Begin creating a cloud export account](#begin-creating-a-cloud-export-account), as described above. 
 
-1. In the [!UICONTROL **Account properties**] section of the [!UICONTROL **Add account**] dialog box, the following information is displayed:
-
-   |Field | Function | 
-   |---------|----------|
-   | [!UICONTROL **IMS Org ID**] | The IMS Org ID is provided by Adobe. This information is not generally needed. It can be useful if you experience issues with your account and need to contact Customer Care. | 
-
-   {style="table-layout:auto"}
-
 1. Select [!UICONTROL **Save**].
 
    The [!UICONTROL **Export account created**] dialog displays.
 
       <!-- add screen shot -->
 
-1. Copy the contents of the [!UICONTROL **SAS**] field to your clipboard. Use this SAS token to access the data that is exported from Analysis Workspace from the AEP Landing Zone. Learn about accessing your data" | 
+1. Copy the contents of the [!UICONTROL **SAS**] field to your clipboard. Use this SAS URI to access the data that is exported from Analysis Workspace from the AEP Landing Zone.
 
 1. Select [!UICONTROL **OK**].
 
@@ -183,8 +176,8 @@ For information about how to manage existing accounts, including viewing, editin
       |Field | Function | 
       |---------|----------|
       | [!UICONTROL **Account identifier**] | Uniquely identifies a Snowflake account within your organization, as well as throughout the global network of Snowflake-supported cloud platforms and cloud regions. <p>You need to get the account identifier from your Snowflake account, then paste the information here.</p><p>To learn where to get this information, see the [Account Identifiers page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> | 
-      | [!UICONTROL **User**] | The login name of the user that will be used for the connection. This is a user that will be used specifically for Adobe. Specify the name here, then create a user in Snowflake with the same name. <p>For more information, see the [User, Role, & Privilege Commands](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> | 
-      | [!UICONTROL **Role**] | This is a role that will be used specifically for Adobe. Specify the role here, then create a role in Snowflake with the same name and grant the role to the user. <p>For more information, see the [User, Role, & Privilege Commands](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+      | [!UICONTROL **User**] | The login name of the user that will be used for the connection. We recommend creating a new user that will be used specifically for Adobe. Specify the name here, then create a user in Snowflake with the same name. You can create a user in Snowflake using the `CREATE USER` command.  <p>For more information, see the [User, Role, & Privilege Commands](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> | 
+      | [!UICONTROL **Role**] | The role that will be assigned to the user. We recommend creating a new role that will be used specifically for Adobe. Specify the role here, then create a role in Snowflake with the same name and grant the role to the user. You can create a role in Snowflake using the `CREATE ROLE` command. <p>For more information, see the [User, Role, & Privilege Commands](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
 
       {style="table-layout:auto"}
 
@@ -194,11 +187,18 @@ For information about how to manage existing accounts, including viewing, editin
 
       <!-- add screen shot -->
 
-1. Copy the contents of the [!UICONTROL **Public key**] field to your clipboard. The Public key is provided by Adobe. Use the public key in Snowflake to connect to your Snowflake account. For more information, see the [Key Pair Authentication & Key Pair Rotation page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth). | 
+1. Copy the contents of the [!UICONTROL **Public key**] field to your clipboard. The Public key is provided by Adobe. 
+
+   Use the public key in Snowflake to connect to your Snowflake account. You must associate the user that you created with this public key. 
+
+   For example, in Snowflake, specify the following command:
+
+   ```
+   CREATE USER <your_adobe_user> RSA_PUBLIC_KEY = '<your_public_key>';
+   ```
+
+   For more information, see the [Key Pair Authentication & Key Pair Rotation page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth). 
 
 1. Select [!UICONTROL **OK**].
 
 1. Continue with [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).
-
-
-

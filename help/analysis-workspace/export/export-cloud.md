@@ -3,20 +3,45 @@ description: Export an Analysis Workspace project to a cloud location.
 keywords: Analysis Workspace
 title: Export Customer Journey Analytics reports to the cloud
 feature: Curate and Share
-hide: yes
-hidefromtoc: yes
+exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 ---
 # Export Customer Journey Analytics reports to the cloud
+
+{{release-limited-testing}}
 
 You can export Workspace full tables from Customer Journey Analytics and send exports to designated cloud destinations. 
 
 Other methods of exporting Customer Journey Analytics reports are also available, as described in [Export overview](/help/analysis-workspace/export/export-project-overview.md).
 
+## Understand full table export
+
+You can export full tables from Analysis Workspace to cloud providers like Google, Azure, Amazon, and Adobe.
+
+[Advantages of exporting full tables to the cloud](#advantages-of-exporting-to-the-cloud) include the ability to export millions of rows, include calculated metrics, structure data output in concatenated values, and more. 
+
+When exporting full tables, consider the following:
+
+* Before you export to the cloud, make sure that your tables, your environment, and your permissions meet the [export requirements](#export-requirements).
+
+* Some [features](#unsupported-features) and [components](#unsupported-components) are not supported when exporting full tables to the cloud.
+
+Use the following process when exporting full tables to the cloud:
+
+1. [Configure a cloud account](/help/components/exports/cloud-export-accounts.md)
+
+1. [Configure a location on the account](/help/components/exports/cloud-export-locations.md)
+
+1. [Export a full table from Workspace](#export-full-tables-from-analysis-workspace)
+
+1. [Access data in the cloud](#view-exported-data-and-manifest-file) and [Manage exports in Adobe](/help/components/exports/manage-exports.md)
+
+![Full table export process](assets/export-full-table-process.png)
+
 ## Export full tables from Analysis Workspace
 
 >[!NOTE]
 >
->Before you export data as described in this section, make sure your table meets the [Export requirements](#export-requirements).
+>Before you export data as described in this section, learn more about full table export in the [Understand full table export](#understand-full-table-export) section above.
 
 To export full tables from Analysis Workspace:
 
@@ -36,7 +61,8 @@ To export full tables from Analysis Workspace:
    | Tags | You can apply an existing tag to the export or you can create a new tag and apply it. <p>To apply an existing tag to the export, select any tags from the drop-down menu. Any tags in your company are available to apply<!-- double-check this -->.</p> <p>To create a new tag, type the name of the new tag, then press Enter.</p><p>Consider the following when applying tags to an export: <ul><li>Tags that you apply can be filtered on or searched for in the exports table.</li> <li>Tags applied to a project are not automatically applied when exporting a full table, as described in "Configure columns on the exports page" in [Manage exports](/help/components/exports/manage-exports.md). (Alternatively, when [scheduling a full project for export](/help/analysis-workspace/export/t-schedule-report.md), any tags applied to the project are automatically applied to the export.)  <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> | 
    | Description | Add a description to the export. You can choose to view descriptions as a column in the [Exports page](/help/components/exports/manage-exports.md) when viewing exports. |
    | Data view | Select the data view that contains the components that you want to include in the export. The Data view drop-down menu is located in the upper-left corner of the dialog and can be identified by the data view icon![data view icon](assets/data-view-icon.png).  <p>**Note:** If you choose a data view that is missing components that are already included in your data table, then you are prompted to clear the data table and re-create it using components that are included in the selected data view. </p> | 
-   | Lookback window | Select the reporting time-frame to include in each export file. Options include [!UICONTROL **Today**], [!UICONTROL **Yesterday**], [!UICONTROL **Last 7 days**], [!UICONTROL **Last 30 days**], [!UICONTROL **This week**], and [!UICONTROL **This month**]. | 
+   | Lookback window | Select the reporting time-frame to include in each export file. Options include [!UICONTROL **Today**], [!UICONTROL **Yesterday**], [!UICONTROL **Last 7 days**], [!UICONTROL **Last 30 days**], [!UICONTROL **This week**], and [!UICONTROL **This month**]. <p>This option is not displayed when the [!UICONTROL **Export frequency**] is set to [!UICONTROL **Send now (one-time)**]. | 
+   | Data table | Displays the Freeform table that you are exporting. You can modify the data table by dragging components from the left rail to the table. The table dynamically updates as you add components to the canvas.  <p>Any segments that were applied to the full table in the project appear at the top of each individual column in the table.</p> |
    | Clear | Clears the contents of the data table. This allows you to start building a new table directly within the New full table export dialog.  | 
    | Export frequency | Set the schedule for how often the export should occur. <p>You can choose [!UICONTROL **Send now (one time)**] to send the export only once. When you select this option, the export is initiated immediately.<p>Or, you can choose to send the export on a defined schedule. When sending on a schedule, options include [!UICONTROL **Daily**], [!UICONTROL **Weekly**], [!UICONTROL **Monthly by day of the week**], [!UICONTROL **Monthly by day of the month**], [!UICONTROL **Yearly by day of the month**], and [!UICONTROL **Yearly by specific date**]. </p><p>When selecting an export frequency, consider the following:</p><ul><li>The options in the [!UICONTROL **Lookback window**] field change depending on what you select here.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Additional configuration fields display depending on the option you choose.</li></ul>  | 
    | Starting on  | The day and time that the scheduled export should begin. <p>This option is available only when choosing a scheduled export frequency.</p> | 
@@ -53,6 +79,36 @@ To export full tables from Analysis Workspace:
 
 1. (Optional) After you create the export, whether you chose to send it now or on a defined schedule, you can view and manage it on the [Exports page](/help/components/exports/manage-exports.md) and view it in the [Export logs](/help/components/exports/manage-export-logs.md).</p>
 
+## Manage exports
+
+After data is exported from Analysis Workspace, you can edit, re-export, duplicate, tag, or delete existing exports, as described in [Manage exports](/help/components/exports/manage-exports.md). 
+
+## View exported data and manifest file
+
+### Exported data
+
+Exported data is available as a compressed file in the cloud destination that you configured, as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md) and [Configure cloud export locations](/help/components/exports/cloud-export-locations.md). 
+
+The filename of the compressed file is as follows, depending on whether you chose CSV or JSON as the file format:
+
+* `cja-export-{reportInstanceId}-{idx}.csv.gz`
+
+* `cja-export-{reportInstanceId}-{idx}.json.gz`
+
+>[!NOTE]
+>
+>You choose the file format in the [!UICONTROL **File format**] field when exporting the table, as described in [Export full tables from Analysis Workspace](#export-full-tables-from-analysis-workspace).
+
+### Manifest file
+
+A manifest file with a filename of `cja-export-{reportInstanceId}-{idx}.json.gz` is included with any successful export delivery that contains at least one file. The manifest file enables you to confirm that all files were delivered successfully. It includes the following information: 
+
+* A list of all files that were delivered
+
+* The MD5 checksum of each file
+
+<!-- add in  what the file name, structure, and file format will be -->
+
 ## Advantages of exporting to the cloud
 
 Exporting Customer Journey Analytics data to the cloud allows you to: 
@@ -63,7 +119,7 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
   This type of data can be used to detect long-term trends in order to gain business intelligence, and ultimately lead to better business decision-making.
   
-* Export full tables that contain thousands or millions of rows (3 million, 30 million, or 150 million rows, depending on license type). Other export methods allow a maximum of 50,000 rows.
+* Export full tables that contain thousands or millions of rows (3 million, 30 million, 150 million, or 300 million rows, depending on license type). Other export methods allow a maximum of 50,000 rows.
 
 * Include calculated metrics in the exported Customer Journey Analytics data.
 
@@ -79,9 +135,13 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
 ### Minimum requirements
 
-Tables must include at least one dimension in the row and one metric in each column in order to be supported with a full-table export. 
+Make sure that your tables, your environment, and your permissions meet the following requirements:
 
-Administrators should ensure that the IP addresses listed in [IP addresses used by Customer Journey Analytics](/help/admin/ip-addresses.md) are included in the firewall allowlist.
+* **Tables:** All tables must include at least one dimension in the row and one metric in each column in order to be supported with a full-table export. 
+
+* **Environment:** Administrators should ensure that the IP addresses listed in [IP addresses used by Customer Journey Analytics](/help/admin/ip-addresses.md) are included in the firewall allowlist.
+
+* **Permissions:** In the Adobe Admin Console, users must be assigned a product profile that has the [!UICONTROL **Full Table Export**] permission assigned to it in order to export full tables. For information about assigning a permission to a product profile in the Admin Console, see [Customer Journey Analytics permission in Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=en#customer-journey-analytics-permissions-in-admin-console) in [Customer Journey Analytics Access Control](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
 
 ### Unsupported features
 
@@ -131,38 +191,6 @@ If a non-default attribution model is being used in a report, the allocation mod
    >[!NOTE]
    >
    >Multi-dimensional reports are supported only when exporting data to the cloud, as described in this article.
-
-## Manage exports
-
-After data is exported from Analysis Workspace, you can edit, re-export, duplicate, tag, or delete existing exports, as described in [Manage exports](/help/components/exports/manage-exports.md). 
-
-## View exported data and manifest file
-
-### Exported data
-
-Exported data is available as a compressed file in the cloud destination that you configured, as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md) and [Configure cloud export locations](/help/components/exports/cloud-export-locations.md). 
-
-The filename of the compressed file is as follows, depending on whether you chose CSV or JSON as the file format:
-
-* `cja-export-{reportInstanceId}-{idx}.csv.gz`
-
-* `cja-export-{reportInstanceId}-{idx}.json.gz`
-
->[!NOTE]
->
->You choose the file format in the [!UICONTROL **File format**] field when exporting the table, as described in [Export full tables from Analysis Workspace](#export-full-tables-from-analysis-workspace).
-
-### Manifest file
-
-A manifest file with a filename of `cja-export-{reportInstanceId}-{idx}.json.gz` is included with any successful export delivery that contains at least one file. The manifest file enables you to confirm that all files were delivered successfully. It includes the following information: 
-
-* A list of all files that were delivered
-
-* The size of each file
-
-* The time stamp of each file
-
-<!-- add in  what the file name, structure, and file format will be -->
 
 ## Comparison of Full Table Export (in Customer Journey Analytics) to Data Warehouse (in Adobe Analytics)
 

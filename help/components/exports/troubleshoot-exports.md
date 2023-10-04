@@ -3,10 +3,11 @@ description: Manage logs for existing exports
 keywords: Analysis Workspace
 title: Troubleshoot failed exports
 feature: Components
-hide: yes
-hidefromtoc: yes
+exl-id: fbc25150-4390-40a2-9f17-aadf254258ad
 ---
 # Troubleshoot failed exports
+
+{{release-limited-testing}}
 
 When you [export full tables from Analysis Workspace to cloud destinations](/help/analysis-workspace/export/export-cloud.md), you can view the status of those exports both from the [Exports tab](/help/components/exports/manage-exports.md) and from the [Logs tab](/help/components/exports/manage-export-logs.md). Failed exports show a status of [!UICONTROL **Failed**].
 

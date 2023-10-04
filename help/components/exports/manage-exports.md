@@ -3,10 +3,11 @@ description: Manage existing exports
 keywords: Analysis Workspace
 title: Manage exports
 feature: Components
-hide: yes
-hidefromtoc: yes
+exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 ---
 # Manage exports
+
+{{release-limited-testing}}
 
 After you export a full table as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md), the exports are available on the [!UICONTROL Exports] tab on the [!UICONTROL Exports] page. 
 
@@ -30,7 +31,7 @@ To find information you need, you can either filter the list of exports or searc
 
    |Filter | Description |
    |---------|----------|
-   | [!UICONTROL **Account type**] | The account type that the export is associated with. The following account types are available: <ul><li>[!UICONTROL **Adobe Experience Manager Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. | 
+   | [!UICONTROL **Account type**] | The account type that the export is associated with. The following account types are available: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. | 
    | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Active**]: Indicates that a scheduled export has not yet expired. </li><li>[!UICONTROL **Completed**]: Indicates that an export has successfully exported. For scheduled exports, this indicates that the schedule has expired.</li><li>[!UICONTROL **Failed**]<p>The following situations can result in a failed export. Hover over the Failed status to see details about the failure. <ul><li>Scheduled export expiration</li><li>Row limit reached for scheduled export </li></ul> </p></li></ul> | 
    | [!UICONTROL **Frequency**] | How often the export occurs. The following frequencies are available: <ul><li>[!UICONTROL **One time**]</li><li>[!UICONTROL **Daily**]</li><li>[!UICONTROL **Weekly**]</li><li>[!UICONTROL **Monthly**]</li><li>[!UICONTROL **Yearly**]</li></ul>|
 
@@ -114,6 +115,8 @@ You can delete exports from the Exports page. Scheduled exports that are deleted
 
 You can add or remove columns on the [!UICONTROL Exports] tab to configure what information is displayed.
 
+Select a column header to sort the exports by that column. By default, exports are sorted by the date and time the export was last modified.
+
 1. Select the **Customize table** icon ![customize table](assets/customize-table-icon.png) in the upper-right of the [!UICONTROL Exports] page.
 
    The following columns are available:
@@ -133,7 +136,7 @@ You can add or remove columns on the [!UICONTROL Exports] tab to configure what 
    | Frequency | The frequency in which the export is sent. Available options are [!UICONTROL One time], [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly by day of the week], [!UICONTROL Monthly by day of the month], [!UICONTROL Yearly by day of the month], and [!UICONTROL Yearly by specific date]. |
    | Time sent | The time the export was sent. |
    | Last sent | The last time the export was sent. |
-   | Last modified | The last time the export was modified. |
+   | Last modified | The last time the export was modified. Items on the Exports page are sorted by this column by default. |
    | Account type | The type of cloud account where the data was exported. Available account types are [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake], and [!UICONTROL Adobe Experience Platform].  |
    | Tags | Displays any tags that are applied to the export. For information about how to apply tags to an export, see [Tag an export](#tag-an-export). |
 

@@ -21,7 +21,7 @@ The following video demonstrates how to use quick filters. (Note: this video use
 
 ## Create a quick filter {#create}
 
-Any user in Anlysis Workspace can create a quick filter.
+Any user in Analysis Workspace can create a quick filter.
 
 To create a quick filter:
 
@@ -55,7 +55,7 @@ To create a quick filter:
    | Plus (+) sign | Add another rule |
    | AND/OR qualifiers | You can add "AND" or "OR" qualifiers to the rules, but you cannot mix "AND" and "OR" in a single filter definition. |
    | [!UICONTROL Apply] | Apply this filter to the panel. If the filter contains no data, you are asked if you want to continue. |
-   | [!UICONTROL Open builder] | Opens the Filter Builder. After you save or apply the filter in the Filter Builder, it is no longer considered a "Quick Filter". It becomes part of the component-list filter library. <p>To make the component available across all of your projects and in the left rail, select the option [!UICONTROL **Make this filter available to all your projects and add it to your component list**].</p><p>For more information, see the section [Save a quick filter as a component-list filter](#save-a-quick-filter-as-a-component-list-filter) in this article.</p><p>**Note:** Only users with the Filter Creation permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools) can open the Filter Builder.</p> |
+   | [!UICONTROL Open builder] | Opens the Filter Builder. After you save or apply the filter in the Filter Builder, it is no longer considered a "Quick Filter". It becomes part of the component-list filter library. <p>To make the component available across all of your projects and in the left rail, select the option [!UICONTROL **Make this filter available to all your projects and add it to your component list**].</p><p>For more information, see the section [Save a quick filter as a component-list filter](#save-a-quick-filter-as-a-component-list-filter) in this article.</p><p>**Note:** Only users with the Segment Creation permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=en) can open the Filter Builder.</p> |
    | [!UICONTROL Cancel] | Cancel this quick filter (don't apply it). |
    | [!UICONTROL Date range] | The validator uses the panel date range for its data lookup. But any date range applied in a quick filter overrides the panel date range at the top of the panel.  |
    | Preview (top right) | Lets you see whether you have a valid filter and how broad the filter is. Represents the breakdown of the dataset you can expect to see when you apply this filter. You might get a notice that indicates that this filter has no data. In this case, you can proceed or change the filter definition. |
@@ -77,7 +77,7 @@ To create a quick filter:
 >
 > Consider the following when saving a quick filter:
 > 
-> * To save a quick filter, you need the Filter Creation permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools).
+> * To save a quick filter, you need the Segment Creation permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=en).
 > 
 > * After you save or apply the filter, it can no longer be edited it in the quick filter builder. Instead, you must use the regular Filter Builder.
 

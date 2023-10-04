@@ -3,8 +3,7 @@ description: Understand the various methods available for exporting from Analysi
 keywords: Analysis Workspace
 title: Export project data overview
 feature: Curate and Share
-hide: yes
-hidefromtoc: yes
+exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
 ---
 # Export overview
 
@@ -33,4 +32,3 @@ There are various methods available when exporting from Analysis Workspace. When
 | [Send to a cloud application](/help/analysis-workspace/export/export-cloud.md) | Use this method if you want to: <ul><li>Export to a shared location, such as Adobe Experience Platform Data Landing Zone, Google Cloud Platform, Microsoft Azure, Amazon S3, or Snowflake.</li><li>Can be ad hoc or on a schedule.</li><li>Store larger amounts of Customer Journey Analytics data.</li><li>Export full tables that contain thousands or millions of rows.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li>  |
 
 {style="table-layout:auto"}
-

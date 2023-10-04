@@ -3,6 +3,7 @@ title: Ingest data via the Adobe Experience Platform Mobile SDK
 description: Explain how to ingest data into Customer Journey Analytics via the Adobe Experience Platform Mobile SDK and the Edge Network
 solution: Customer Journey Analytics
 feature: Basics
+exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 ---
 # Ingest data via the Adobe Experience Platform Mobile SDK
 

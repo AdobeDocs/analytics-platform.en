@@ -2,6 +2,7 @@
 description: Filter by tags, data view, owners, and other filters (Show All, Mine, Shared With me, Favorites, and Approved.)
 title: Filter calculated metrics
 feature: Calculated Metrics
+exl-id: 902da464-14de-45b9-bd92-d2db064cb095
 ---
 # Filter calculated metrics
 
