@@ -57,6 +57,10 @@ You can edit an export's properties, format, scheduling, and location informatio
 
 1. Select [!UICONTROL **Edit**].
 
+   The [!UICONTROL **Export full table**] dialog displays.
+
+1. Update any of the available options. For information about each option, see [Export full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).
+
 ## Duplicate an export
 
 You can duplicate an existing export.
