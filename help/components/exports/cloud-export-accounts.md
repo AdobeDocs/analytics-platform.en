@@ -59,7 +59,7 @@ For information about how to manage existing accounts, including viewing, editin
 
       <!-- add screen shot -->
 
-1. Copy the contents of the [!UICONTROL **SAS**] field to your clipboard. Use this SAS URI to access the data that is exported from Analysis Workspace from the AEP Landing Zone.
+1. Copy the contents of the [!UICONTROL **SAS URI**] field to your clipboard. Use this SAS URI to access the data that is exported from Analysis Workspace from the AEP Landing Zone.
 
 1. Select [!UICONTROL **OK**].
 
