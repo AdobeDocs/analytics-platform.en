@@ -31,8 +31,9 @@ To find information you need, you can either filter the list of logs or search f
 
    |Filter | Description |
    |---------|----------|
-   | [!UICONTROL **Account type**] | The account type that the log is associated with. The following account types are available: <ul><li>[!UICONTROL **Adobe Experience Platform Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. | 
-   | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Pending**]: A specific instance of an export has been started but is not yet complete.<p>Re-running an export that has a status of Pending will delay the export process.</p></li><li>[!UICONTROL **Completed**]: A specific instance of an export has finished processing and is available in the export account.</li><li>[!UICONTROL **Failed**]<p>The following situations can result in a failed export. Hover over the Failed status to see details about the failure. <ul><li>Scheduled export expiration</li><li>Row limit reached for scheduled export </li></ul> </p></li></ul> | 
+   | [!UICONTROL **Export ID**] | Specify the export ID of the export log you want to view. |
+   | [!UICONTROL **Account type**] | The account type that the log is associated with. The following account types are available: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. | 
+   | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Pending**]: A specific instance of an export has been started but is not yet complete.<p>Re-running an export that has a status of Pending will delay the export process.</p></li><li>[!UICONTROL **Complete**]: A specific instance of an export has finished processing and is available in the export account.</li><li>[!UICONTROL **Failed**]<p>The following situations can result in a failed export. Hover over the Failed status to see details about the failure. <ul><li>Scheduled export expiration</li><li>Row limit reached for scheduled export </li></ul> </p></li></ul> | 
 
    {style="table-layout:auto"}
 
@@ -42,7 +43,7 @@ To find information you need, you can either filter the list of logs or search f
 
 1. Select the [!UICONTROL **Logs**] tab.
 
-1. In the search tab, begin typing any information associated with the log you're searching for. You can search for data from any column available in the table. 
+1. In the search field, begin typing any information associated with the log you're searching for. You can search for data from any column available in the table. 
 
 <!-- removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
 
@@ -68,11 +69,11 @@ This option is not available when selecting multiple logs.
 
 1. Locate the log that is associated with the export you want to edit.
 
-1. Select the **Edit export** icon ![export log icon](assets/export-icon.png) next to the log.
+1. Select the **Edit export** icon ![export log icon](assets/export-icon.png) next to the log name.
 
    Or
 
-   Select the log, then select [!UICONTROL **Edit export**].
+   Select the checkbox next to the log, then select [!UICONTROL **Edit export**].
 
 ## Configure columns
 
