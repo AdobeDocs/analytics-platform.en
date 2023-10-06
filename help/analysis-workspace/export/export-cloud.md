@@ -164,6 +164,10 @@ The following components are not supported, and Analysis Workspace prompts you t
 
 * Calculated metrics that use basic or advanced functions in the metric definition (see [Basic functions](/help/components/calc-metrics/cm-functions.md) and [Advanced functions](/help/components/calc-metrics/cm-adv-functions.md) for more information)
 * Components that have been restricted by an administrator from being exported (see the *Filter on Data Governance policies in data views* section in [Labels and policies](/help/data-views/data-governance.md) for more information)
+* Any dimension that meets all of the following criteria:
+  * Was created from a field that is part of an [array of objects](/help/use-cases/object-arrays.md)
+  * Has [persistence enabled](/help/data-views/component-settings/persistence.md)
+  * Is not using a [binding dimension](/help/use-cases/data-views/binding-dimensions-metrics.md)
 * More than 5 dimensions and 5 metrics per report (up to 5 dimensions and 5 metrics are supported)
 * In table columns:
   * Date ranges
