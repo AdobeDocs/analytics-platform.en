@@ -21,7 +21,7 @@ The following panel types are available in Analysis Workspace for [!UICONTROL Cu
 | [Media Concurrent Viewers panel](media-concurrent-viewers.md) | Analyze concurrent viewers over time, with details on peak concurrency and the ability to break down and compare. |
 | [Media Playback Timespent panel](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analyze playback time spent to understand where peak concurrency occurred or where drop-oﬀs happened. |
 
-![](assets/panel-overview.png)
+![The Customer Journey Analytics panel listing the available panel types..](assets/panel-overview.png)
 
 [!UICONTROL Quick Insights], [!UICONTROL Blank] and [!UICONTROL Freeform] panels are great places to start your analysis, while [!UICONTROL Attribution IQ] lends itself to more advanced analyses. A `"+"` button is available in projects so you can add blank panels at any time.
 
@@ -33,7 +33,7 @@ The panel calendar controls the reporting range for tables and visualizations wi
 
 Note: If a (purple) date range component is used within a table, visualization or panel dropzone, it will override the panel calendar.
 
-![](assets/panel-calendar.png)
+![The calendar window showing the selected date range.](assets/panel-calendar.png)
 
 You can apply a minute-level date range under the advanced settings of your panel calendar. If you are reporting on a date range that spans many days, start time applies to the first day and end time applies to the last day in your range.
 
@@ -45,7 +45,7 @@ The panel dropzone enables you to apply filters and drop-down filters to all tab
 
 Drag and drop any Filters from the left rail into the panel drop zone to begin filtering your panel.
 
-![](assets/segment-filter.png)
+![The left rail shows available Metrics and the Mobile Customer metric dragged to the panel drop zone.](assets/segment-filter.png)
 
 ### Ad hoc filters 
 
@@ -55,7 +55,7 @@ Ad hoc filters are a type of quick filter, and are local to the project. They do
 
 For more information, see [Quick filters](/help/components/filters/quick-filters.md).
 
-![](assets/adhoc-segment-filter.png)
+![Ad hoc filters that are made public and dropped into the drop zone.](assets/adhoc-segment-filter.png)
 
 ### Static drop-down filters
 
@@ -63,7 +63,7 @@ Drop-down filters enable you to interact with the data in a controlled way. For 
 
 Drop-down filters can be used to consolidate many projects into one as well. For example, if you have many versions of the same project with different Country filters applied, you can consolidate all versions into a single project and add a Country drop-down filter.
 
-![](assets/dropdown-filter-intro.png)
+![Static drop-down filters showing the Market Channel "Direct" filter highlighted. ](assets/dropdown-filter-intro.png)
 
 To create a static drop-down filter:
 
@@ -73,7 +73,7 @@ To create a static drop-down filter:
 
 Select one of the options from the drop-down list to change the data in the panel. You can also choose to not filter any in the panel data by selecting **[!UICONTROL No filter]**.
 
-![](assets/create-dropdown.png)
+![The Panel window with the Mobile Customer segment field available to drop a static drop-down filter. ](assets/create-dropdown.png)
 
 Right-clicking a drop-down filter provides the following options:
 
@@ -103,7 +103,7 @@ Right-clicking a dynamic drop-down filter provides the same options as static dr
 
 Additional functionality for a panel is available by right-clicking on the panel header.
 
-![](assets/right-click-menu.png)
+![The right-click options for a panel header.](assets/right-click-menu.png)
 
 The following settings are available:
 

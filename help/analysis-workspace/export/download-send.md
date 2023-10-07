@@ -22,7 +22,7 @@ Other methods of exporting Customer Journey Analytics data are also available, a
 
      Choose this option if you want the downloaded file to be plain-text.
 
-   ![](assets/download-project.png)
+   ![The Project drop-down menue with the Download CSV and Download PDF options highlighted.](assets/download-project.png)
 
 1. (Conditional) If you chose to download a PDF, a message is shown after the project is ready to be downloaded. Select [!UICONTROL **Download**].
 
@@ -45,7 +45,7 @@ The right-click option **[!UICONTROL Copy to clipboard]** lets you quickly copy 
 >You can use the hotkey `Ctrl+C` to copy your selection to the clipboard, then use `Ctrl+V` to paste it into a third-party tool.
 
 
-![](assets/copy-selection.png)
+![The Copy selection to clipboard option. ](assets/copy-selection.png)
 
 ## Download as CSV {#download-data}
 
@@ -60,7 +60,7 @@ The right-click option **[!UICONTROL Download data as CSV]** allows you to downl
 
 * Within a table, right-click and choose **[!UICONTROL Download selection as CSV]**. Only the selection is downloaded with this option, as opposed to the full, displayed table.
 
-![](assets/download-data-viz.png)
+![The Download data as CSV option.](assets/download-data-viz.png)
 
 ## Download items as CSV {#download-items}
 
@@ -72,7 +72,7 @@ If you want to analyze more than the visible 400 rows of data in a table, right-
 
 You can multi-task within the project and even navigate to a new Workspace project in the same tab while the download is in progress. The download pauses if you open a new browser tab. The download is canceled if you leave Workspace completely or close the browser tab.
 
-![](assets/download-items.png)
+![The Download items as CSV (Page) option.](assets/download-items.png)
 
 ### Downloaded items file {#items-file}
 
@@ -84,7 +84,7 @@ Features of the table will be applied to the downloaded file as follows:
 
 In the example above, Page items are downloaded with the panel filter (New Visitors Customers) and components above (Marketing Channel = Email) applied as filters, and the components below (Mobile Device Type) removed from the downloaded CSV.
 
-![](assets/downloaded-file.png)
+![The downloaded .csv file opened in Excel.](assets/downloaded-file.png)
 
 ### Download notifications {#notifications}
 
@@ -94,7 +94,7 @@ Once the file completes, you will see a completion notification and the file wil
 
 If you request more than one download at a time, you will receive a notification that each additional download will be queued until the prior download completes.
 
-![](assets/toast.png)
+![The download status notification showing the percentage complete and a Cancel download link.](assets/toast.png)
 
 ## Download sensitive data {#sensitive}
 

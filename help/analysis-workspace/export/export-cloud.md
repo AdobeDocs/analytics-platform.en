@@ -1,5 +1,5 @@
 ---
-description: Export an Analysis Workspace project to a cloud location.
+description: Learn how to export an Analysis Workspace project to a cloud location.
 keywords: Analysis Workspace
 title: Export Customer Journey Analytics reports to the cloud
 feature: Curate and Share
@@ -35,7 +35,7 @@ Use the following process when exporting full tables to the cloud:
 
 1. [Access data in the cloud](#view-exported-data-and-manifest-file) and [Manage exports in Adobe](/help/components/exports/manage-exports.md)
 
-![Full table export process](assets/export-full-table-process.png)
+![The full table export process described in steps 1 through 4.](assets/export-full-table-process.png)
 
 ## Export full tables from Analysis Workspace
 
@@ -51,7 +51,7 @@ To export full tables from Analysis Workspace:
 
 1. Select [!UICONTROL **Export full table**].
 
-   ![export full table](assets/export-full-table.png)
+   ![The Freeform table drop-down menue with Export full table highlighted.](assets/export-full-table.png)
 
 1. In the [!UICONTROL **New full table export**] dialog box, specify the following information:
 

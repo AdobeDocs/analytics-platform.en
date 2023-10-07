@@ -21,13 +21,13 @@ Curation lets you limit the components (dimensions, metrics, filters, date range
 
 Curation can also be applied from the [!UICONTROL Share] menu by clicking **[!UICONTROL Curate and Share]**. This option automatically curates the project to the components in use in the project. You can add additional components following the steps above.
 
-![](assets/curation-field.png)
+![The Curate Components window showing the components in use in the project.](assets/curation-field.png)
 
 ## Curated project view
 
 When a recipient opens a curated project, they will only see the curated set of components you have defined:
 
-![](assets/curate-project.png)
+![A shared curated project showing components you defined.](assets/curate-project.png)
 
 ## Remove project curation
 
