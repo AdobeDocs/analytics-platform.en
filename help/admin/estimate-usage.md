@@ -35,7 +35,7 @@ You may need to know how many rows of event data you currently have in [!UICONTR
 
 1.  Add up the **[!UICONTROL Records of event data available]** for every connection your organization has created. (Depending on the size of your connection, the number may take awhile to appear.)
 
-    ![event data](./assets/event-data.png)
+    ![Records of event data available.](./assets/event-data.png)
 
     >[!CAUTION]
     >
@@ -64,7 +64,7 @@ This method allows you to do some deeper analysis of your usage data, as well as
 
 1.  In Workspace, create new projects based on each of the data views and pull in all events (from the **[!UICONTROL Metrics]** drop-down list) leading up to the first Friday of the month, starting with the first day of your current Customer Journey Analytics contract.
 
-    ![Events](./assets/events-usage.png)
+    ![Freeform table showinng Events.](./assets/events-usage.png)
 
     This will give you a good idea of how your usage is trending month to month.
 

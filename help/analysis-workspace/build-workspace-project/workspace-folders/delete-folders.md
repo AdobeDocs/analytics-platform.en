@@ -19,11 +19,11 @@ To delete folders in Workspace
 
 1.  Click the **…** ellipsis icon in the top-right.
 
-    ![](/help/analysis-workspace/build-workspace-project/assets/select-delete-folder.png)
+    ![The ellipsis icon drop down options.](/help/analysis-workspace/build-workspace-project/assets/select-delete-folder.png)
  
 2.  Select **Delete folder**.
  
     A confirmation notification indicates that the folder was deleted.
 
-    ![](/help/analysis-workspace/build-workspace-project/assets/deleted-folder.png)
+    ![The Delete folder confirmation toast.](/help/analysis-workspace/build-workspace-project/assets/deleted-folder.png)
 

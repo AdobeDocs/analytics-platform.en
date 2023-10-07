@@ -21,7 +21,7 @@ You can share a read-only link to Analysis Workspace projects with people who do
 
 For more information, see "Share a project with anyone (no login required)" in the article [Share projects](/help/analysis-workspace/curate-share/share-projects.md).
 
-## Get panel or visualization link {#panel-link} 
+## Get a panel or visualization link {#panel-link} 
 
 You can also share a link to a specific part of a project, such as a panel or individual visualization. This is sometimes referred to as intra-linking. This can be useful to draw your users' attention to key insights within the project.  
 
@@ -30,7 +30,7 @@ You can also share a link to a specific part of a project, such as a panel or in
 
 [Watch the video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) on how to create links and use them to drive recipients to specific parts of your project. 
 
-![](assets/get-viz-link.png)
+![The drop-down menu after you right-click the header with the Get visualization link highlighted.](assets/get-viz-link.png)
 
 ## Use links in a Table of contents {#TOC} 
 
@@ -38,4 +38,4 @@ One tip for leveraging the various link options is to always include a table of 
 
 [Watch the video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html) on how to construct a Table of contents using links and Workspace's rich text editor. 
 
-![](assets/toc.png)
+![A project Table of contents.](assets/toc.png)

@@ -17,7 +17,7 @@ There are two types of folders in Workspace: the Company folder and personal fol
 
 When you log in to Workspace, the Projects home page displays a list of your projects along with the Company folder and any personal folders that you created.
 
-![](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![Project home page listing your projects and the Company folder.](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
 
 ## About the Company folder {#company-folder}
 
@@ -32,11 +32,11 @@ When a user logs in to Workspace, the Company folder is automatically added to t
 
 Admins have special privileges assigned to the Company folder. For example, only Admins can add or remove folders or projects in the Company folder. Users without Admin-access can view the contents of the Company folder.
 
-![](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
+![The Projects page showing the admin options.](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
 
 Non-Admins have limited options.
 
-![](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
+![The Projects page showing the non-admin options for folders.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
 
 ### Company folder guidelines {#company-folder-guidelines}
 

@@ -38,7 +38,7 @@ All projects in Analysis Workspace are automatically saved every 2 minutes to yo
 
   1. Go to the [!UICONTROL **Recovered Projects**] folder on the Analysis Workspace landing page.
   
-     ![](assets/recovered-folder.png)
+     ![The list of folders highlighting the Recovered Project folder.](assets/recovered-folder.png)
 
   1. Open your project and save it to a desired location.
 
@@ -57,13 +57,13 @@ The following options are available:
 * **Save As:** Saves your latest changes as a new project. The original project is saved only with the most recent auto-saved changes.
 * **Discard Changes:** Discards your latest changes. The project retains the most recent auto-saved changes.
 
-![](assets/existing-save.png)
+![Click Save to save changes to a project.](assets/existing-save.png)
 
 ### Navigate away or close a tab
 
 If you navigate away from the page or close the browser tab while viewing a project with changes that are not yet auto-saved, the browser warns that your unsaved changes will be lost. You can choose to leave or cancel. 
 
-![](assets/browser-image.png)
+![Click Leave to leave the site or Cancel to navigate without saving changes. ](assets/browser-image.png)
 
 ### Browser crashes or session times out
 
@@ -75,7 +75,7 @@ Select **Yes** to restore the project from the most recent auto-saved copy.
 
 Select **No** to delete the auto-saved copy and open the last user-saved version of the project.
 
-![](assets/project-recovery.png)
+![The Project Recovery dialog box.](assets/project-recovery.png)
 
 For **new** projects that have never been saved, unsaved changes are not recoverable.
 
@@ -85,7 +85,7 @@ To open a previous version of a project:
 
 1. Go to **[!UICONTROL Project]** > **[!UICONTROL Open previous version]**
 
-   ![](assets/previous-versions.png)
+   ![The Previously saved project versions list and options to show All versions or Only versions with notes.](assets/previous-versions.png)
 
 1. Review the list of prior versions available.
    [!UICONTROL Timestamp] and [!UICONTROL Editor] are shown, in addition to [!UICONTROL Notes] if they were added when the [!UICONTROL Editor] saved. Versions without notes are stored for 90 days; versions with notes are stored for 1 year.

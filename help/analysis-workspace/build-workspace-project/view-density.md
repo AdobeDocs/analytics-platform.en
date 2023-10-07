@@ -13,7 +13,7 @@ You have 3 options when toggling the view density via radio buttons:
 - **[!UICONTROL Comfortable]**: This leaves a little more padding than the Compact version.
 - **[!UICONTROL Expanded]** (default): This is the view you are used to in Workspace.
 
-![](assets/view-density.png)
+![The Compact, Comfortable, and Expanded views densities.](assets/view-density.png)
 
 To set the view density:
 
