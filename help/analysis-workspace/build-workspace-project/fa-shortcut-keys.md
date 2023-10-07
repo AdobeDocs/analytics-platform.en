@@ -1,8 +1,8 @@
 ---
 description: Learn about keyboard interactions, shortcut keys and point-and-click behaviors available in Analysis Workspace.
 keywords: Analysis Workspace
-feature: How to use Workspace hotkeys
-title: Hotkeys (Shortcuts)
+feature: Workspace Basics
+title: How to use Workspace hotkeys
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 ---
 # Hotkeys (Shortcuts)
