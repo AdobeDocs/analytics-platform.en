@@ -1,7 +1,7 @@
 ---
 title: Guided analysis FAQ
 description: Frequently asked questions around Guided analysis.
-exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
+exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: product analytics
 ---

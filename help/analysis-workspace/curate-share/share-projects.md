@@ -55,7 +55,7 @@ To share a specific project role with users or groups in your organization:
 1. Go to the project that you want to share, then click **[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]**. 
    If there are unsaved changes, you are prompted to save your project first. 
 
-   ![](assets/share-proj-modal.png)
+   ![The Share project window.](assets/share-proj-modal.png)
 
    For information about how to share multiple projects simultaneously, see [Share projects in the Project manager](#share-projects-in-the-project-manager).
 
@@ -93,7 +93,7 @@ To share the project link with users in your organization:
 
 1. Select **[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]**, then select **[!UICONTROL Copy]** next to the **[!UICONTROL Share by link]** field.  
 
-   ![](assets/share-proj-modal.png)
+   ![The Share project highlighting the Share by link field.](assets/share-proj-modal.png)
 
 1. Share the link with users in your organization. For example, you can paste it into an email, onto an internal web site, and so forth. 
 
@@ -177,7 +177,7 @@ With Project A and B selected, recipients 4 and 7 are added to the share lists. 
 * Project A: 1, 2, 3, 4, 7 
 * Project B: 4, 5, 6, 7 
 
-![](assets/mult-proj-sharing.png)
+![The Add recipients to multiple projects window.](assets/mult-proj-sharing.png)
 
 ## Share embedded components
 

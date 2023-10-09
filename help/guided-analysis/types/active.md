@@ -1,7 +1,7 @@
 ---
 title: Active view
 description: Identify who is new, retained, returning, or dormant.
-exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
+exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Guided Analysis
 keywords: product analytics
 ---

@@ -3,7 +3,7 @@ description: Learn how to create a project in Analysis Workspace
 title: Create projects
 feature: Workspace Basics
 role: User, Admin
-exl-id: f5ea0a1f-5dd6-4c73-b316-33c15ca5443c
+exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 ---
 # Create projects
 
@@ -38,7 +38,7 @@ To add a panel:
 
 1. Select the [!UICONTROL **Panels**] icon in the left rail.
 
-   ![](assets/build-panels.png)
+   ![The select Panels icon and the list of available panels.](assets/build-panels.png)
 
 1. Search for the panel you want to add. When it appears in the left rail, drag it into your project.
 
@@ -58,7 +58,7 @@ To add a visualization:
 
 1. Select the **[!UICONTROL Visualizations]** icon in the left rail.
 
-   ![](assets/build-visualizations.png)
+   ![The selected Visualizations icon and the list of available visualizations.](assets/build-visualizations.png)
 
 1. Search for the visualization you want to add. When it appears in the left rail, drag it to a panel within your project. 
 
@@ -76,7 +76,7 @@ To add a component:
 
 1. Select the **[!UICONTROL Components]** icon in the left rail.
 
-   ![](assets/build-components.png)
+   ![The selected Components icon and the list of available dimensions.](assets/build-components.png)
 
 1. Search for the component you want to add. When it appears in the left rail, drag it to a panel or visualization within your project. 
 

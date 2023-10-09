@@ -44,7 +44,7 @@ Additionally, you can **Download as CSV** the performance contents to easily sha
 >
 >The information on the Performance page varies each time the modal is opened, as factors are subject to change. Additionally, Adobe will continue to refine the guidelines provided as more data becomes available.
 
-![](assets/performance-modal.png)
+![Analysis Workspace performance showing the Network Factor, Current Project, and Guideline.](assets/performance-modal.png)
 
 ### Network factors
 

@@ -3,10 +3,11 @@ description: Manage existing exports
 keywords: Analysis Workspace
 title: Manage exports
 feature: Components
-hide: yes
-hidefromtoc: yes
+exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 ---
 # Manage exports
+
+{{release-limited-testing}}
 
 After you export a full table as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md), the exports are available on the [!UICONTROL Exports] tab on the [!UICONTROL Exports] page. 
 
@@ -30,8 +31,8 @@ To find information you need, you can either filter the list of exports or searc
 
    |Filter | Description |
    |---------|----------|
-   | [!UICONTROL **Account type**] | The account type that the export is associated with. The following account types are available: <ul><li>[!UICONTROL **Adobe Experience Manager Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. | 
-   | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Active**]: Indicates that a scheduled export has not yet expired. </li><li>[!UICONTROL **Completed**]: Indicates that an export has successfully exported. For scheduled exports, this indicates that the schedule has expired.</li><li>[!UICONTROL **Failed**]<p>The following situations can result in a failed export. Hover over the Failed status to see details about the failure. <ul><li>Scheduled export expiration</li><li>Row limit reached for scheduled export </li></ul> </p></li></ul> | 
+   | [!UICONTROL **Account type**] | The account type that the export is associated with. The following account types are available: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. | 
+   | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Active**]: Indicates that a scheduled export has not yet expired, or that a one-time export has not yet completed. </li><li>[!UICONTROL **Complete**]: Indicates that an export has successfully exported. For scheduled exports, this indicates that the schedule has expired.</li><li>[!UICONTROL **Failed**]<p>The following situations can result in a failed export. Hover over the [!UICONTROL **Failed**] status to see details about the failure. <ul><li>Scheduled export expiration</li><li>Row limit reached for scheduled export </li></ul> </p></li></ul> | 
    | [!UICONTROL **Frequency**] | How often the export occurs. The following frequencies are available: <ul><li>[!UICONTROL **One time**]</li><li>[!UICONTROL **Daily**]</li><li>[!UICONTROL **Weekly**]</li><li>[!UICONTROL **Monthly**]</li><li>[!UICONTROL **Yearly**]</li></ul>|
 
    {style="table-layout:auto"}
@@ -50,11 +51,15 @@ You can edit an export's properties, format, scheduling, and location informatio
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. On the [!UICONTROL **Exports**] tab, select the export you want to edit.
+1. On the [!UICONTROL **Exports**] tab, select the checkbox next to the export you want to edit.
 
    This option is not available when selecting multiple exports. 
 
 1. Select [!UICONTROL **Edit**].
+
+   The [!UICONTROL **Export full table**] dialog displays.
+
+1. Update any of the available options. For information about each option, see [Export full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).
 
 ## Duplicate an export
 
@@ -62,7 +67,7 @@ You can duplicate an existing export.
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. On the [!UICONTROL **Exports**] tab, select the export you want to duplicate.
+1. On the [!UICONTROL **Exports**] tab, select the checkbox next to the export you want to duplicate.
 
    This option is not available when selecting multiple exports. 
 
@@ -78,7 +83,7 @@ You can manually initiate an export, either for a scheduled export or a one-time
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. On the [!UICONTROL **Exports**] tab, select the export you want to run.
+1. On the [!UICONTROL **Exports**] tab, select the checkbox next to the export you want to run.
 
    This option is not available when selecting multiple exports. 
 
@@ -90,11 +95,11 @@ When you apply tags to an export, you can view those tags in the [!UICONTROL Tag
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. On the [!UICONTROL **Exports**] tab, select one or more exports that you want to tag.
+1. On the [!UICONTROL **Exports**] tab, select the checkbox next to one or more exports that you want to tag.
 
-1. Select [!UICONTROL **Tag**].
+1. Select [!UICONTROL **Edit tags**].
 
-1. In the Tag export dialog, type the name a tag to create a new tag, or choose an existing tag from the drop-down menu.
+1. In the [!UICONTROL **Tag export**] dialog, type the name of a tag to create a new tag, or choose an existing tag from the drop-down menu.
 
    Any common tags between the selected exports are shown in the tag dialog. <!-- what happens if one export has a tag and another doesn't? Is the tag removed if you don't select it? I'm guessing not, but maybe check -->
 
@@ -106,7 +111,7 @@ You can delete exports from the Exports page. Scheduled exports that are deleted
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. On the [!UICONTROL **Exports**] tab, select one or more exports that you want to delete.
+1. On the [!UICONTROL **Exports**] tab, select the checkbox next to one or more exports that you want to delete.
 
 1. Select [!UICONTROL **Delete**], then select [!UICONTROL **Delete**] when you see the confirmation message.
 
@@ -114,17 +119,21 @@ You can delete exports from the Exports page. Scheduled exports that are deleted
 
 You can add or remove columns on the [!UICONTROL Exports] tab to configure what information is displayed.
 
-1. Select the **Customize table** icon ![customize table](assets/customize-table-icon.png) in the upper-right of the [!UICONTROL Exports] page.
+Select a column header to sort the exports by that column. By default, exports are sorted by the date and time the export was last modified.
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. On the [!UICONTROL **Exports**] tab, select the **Customize table** icon ![customize table](assets/customize-table-icon.png) in the upper-right of the [!UICONTROL Exports] page.
 
    The following columns are available:
 
    |Available column | Description |
    |---------|----------|
    | Name | The name of the export. Users give exports a name when they create them, as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).  | 
-   | ID | The ID automatically assigned to the export when it is created. <!-- True? --> | 
-   | Status | The status of the export. Available statuses are [!UICONTROL Active], [!UICONTROL Paused], [!UICONTROL Completed], and [!UICONTROL Failed].<p> **Note:** For information about troubleshooting failed exports, see [Troubleshoot failed exports](/help/components/exports/troubleshoot-exports.md).</p> |
-   | Data view name | The name of the data view associated with the export. Users can select the data view when they create the export, as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md). |
-   | Status | The status of the export. Available statuses are [!UICONTROL Pending], [!UICONTROL Delivered], and [!UICONTROL Failed]. |
+   | ID | The ID automatically assigned to the export when it is created. <!-- True? --> |
+   | Data view name | The name of the data view associated with the export. Users can select the data view when they create the export, as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md). | 
+   | Status | The status of the export. Available statuses are [!UICONTROL Active], [!UICONTROL Complete], and [!UICONTROL Failed].<p> **Note:** For information about troubleshooting failed exports, see [Troubleshoot failed exports](/help/components/exports/troubleshoot-exports.md).</p> |
+   | Tags | Displays any tags that are applied to the export. For information about how to apply tags to an export, see [Tag an export](#tag-an-export). |
    | Table size (last send) | The size of the export the last time it was sent.  |
    | Created by | The user who created the export. |
    | Created | The date and time the export was created. <!-- true? --> |
@@ -133,9 +142,8 @@ You can add or remove columns on the [!UICONTROL Exports] tab to configure what 
    | Frequency | The frequency in which the export is sent. Available options are [!UICONTROL One time], [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly by day of the week], [!UICONTROL Monthly by day of the month], [!UICONTROL Yearly by day of the month], and [!UICONTROL Yearly by specific date]. |
    | Time sent | The time the export was sent. |
    | Last sent | The last time the export was sent. |
-   | Last modified | The last time the export was modified. |
+   | Last modified | The last time the export was modified. Items on the Exports page are sorted by this column by default. |
    | Account type | The type of cloud account where the data was exported. Available account types are [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake], and [!UICONTROL Adobe Experience Platform].  |
-   | Tags | Displays any tags that are applied to the export. For information about how to apply tags to an export, see [Tag an export](#tag-an-export). |
 
    {style="table-layout:auto"}
 

@@ -1,6 +1,6 @@
 ---
-description: You can view anomalies in a table or in a line chart.
-title: View anomalies in Analysis Workspace
+description: Learn how to view anomalies in a table or in a line chart.
+title: How to view anomalies in Analysis Workspace
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
 ---
@@ -16,7 +16,7 @@ You can view anomalies in a time-series Freeform Table.
 
 1. Click away from the settings menu to view the updated table.
 
-   ![](assets/anomaly_detected.png)
+   ![An anomaly detection notification indicating 15% below expected.](assets/anomaly_detected.png)
 
 1. Anomalies are shown in the table as follows:
 
@@ -40,7 +40,7 @@ To view anomalies in a line chart:
    
 1. Click away from the settings menu to view the updated line chart.
 
-      ![](assets/anomaly_linechart.png)
+      ![A line chart with an anomaly detected message indicating 15% above expected.](assets/anomaly_linechart.png)
 
    Anomalies are shown in the line chart as follows:
    

@@ -24,17 +24,17 @@ Customer Journey Analytics enhances attribution by letting you:
 1. Click the panel icon on the left.
 1. Drag the [!UICONTROL Attribution] panel into your Analysis Workspace Project.
 
-   ![New attribution panel](assets/Attribution_Panel_1.png)
+   ![The New Project window highlighting the Attribution panel.](assets/Attribution_Panel_1.png)
 
 1. Add a metric that you want to attribute and add any dimension to attribute against. Examples include Marketing Channels or custom dimensions, such as internal promotions.
 
-   ![Select dimension and metric](assets/attribution_panel2.png)
+   ![The Attribution panel window showing several selected dimensions and metrics.](assets/attribution_panel2.png)
 
 1. Select the attribution models and lookback window that you want to compare.
 
 1. The Attribution panel returns a rich set of data and visualizations that compare attribution for the selected dimension and metric.
 
-   ![Attribution visualizations](assets/attr_panel_vizs.png)
+   ![The Attribution panel visualizations that compare selected metrics and dimensions.](assets/attr_panel_vizs.png)
 
 ## Attribution visualizations
 

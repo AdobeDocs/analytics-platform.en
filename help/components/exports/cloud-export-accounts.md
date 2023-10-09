@@ -3,10 +3,11 @@ description: Configure the cloud export account where Customer Journey Analytics
 keywords: Analysis Workspace
 title: Configure cloud export accounts
 feature: Components
-hide: yes
-hidefromtoc: yes
+exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 ---
 # Configure cloud export accounts
+
+{{release-limited-testing}}
 
 Before you can export Customer Journey Analytics reports to a cloud destination as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to add and configure the destination where you want the data to be sent. 
 
@@ -28,11 +29,11 @@ For information about how to manage existing accounts, including viewing, editin
 
 1. In the [!UICONTROL **Location account description**] field, provide a short description of the account to help differentiate it from other accounts of the same account type.
 
-1. In the [!UICONTROL **Account type**] field, select the type of cloud account you are exporting to. Available account types are Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake, and Adobe Experience Platform Data Landing Zone.
+1. In the [!UICONTROL **Account type**] field, select the type of cloud account you are exporting to. Available account types are Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake, and AEP Data Landing Zone.
 
 1. Continue with the section below that corresponds to the [!UICONTROL **Account type**] you selected.
 
-   * [Adobe Experience Platform Data Landing Zone](#adobe-experience-platform)
+   * [AEP Data Landing Zone](#adobe-experience-platform)
 
    * [Amazon S3 Role ARN](#amazon-s3-role-arn)
 
@@ -44,7 +45,7 @@ For information about how to manage existing accounts, including viewing, editin
 
    * [Snowflake](#snowflake)
 
-### Adobe Experience Platform Data Landing Zone
+### AEP Data Landing Zone
 
 >[!IMPORTANT]
 >
@@ -52,21 +53,13 @@ For information about how to manage existing accounts, including viewing, editin
 
 1. [Begin creating a cloud export account](#begin-creating-a-cloud-export-account), as described above. 
 
-1. In the [!UICONTROL **Account properties**] section of the [!UICONTROL **Add account**] dialog box, the following information is displayed:
-
-   |Field | Function | 
-   |---------|----------|
-   | [!UICONTROL **IMS Org ID**] | The IMS Org ID is provided by Adobe. This information is not generally needed. It can be useful if you experience issues with your account and need to contact Customer Care. | 
-
-   {style="table-layout:auto"}
-
 1. Select [!UICONTROL **Save**].
 
    The [!UICONTROL **Export account created**] dialog displays.
 
-      <!-- add screen shot -->
+   ![Export account dialog AEP Data Landing Zone](assets/export-account-aep.png)
 
-1. Copy the contents of the [!UICONTROL **SAS**] field to your clipboard. Use this SAS token to access the data that is exported from Analysis Workspace from the AEP Landing Zone. Learn about accessing your data" | 
+1. Copy the contents of the [!UICONTROL **SAS URI**] field to your clipboard. Use this SAS URI to access the data that is exported from Analysis Workspace from the AEP Landing Zone.
 
 1. Select [!UICONTROL **OK**].
 
@@ -88,7 +81,7 @@ For information about how to manage existing accounts, including viewing, editin
 
    The [!UICONTROL **Export account created**] dialog displays.
 
-      <!-- add screen shot -->
+   ![Export account created dialog Amazon S3 Role ARN](assets/export-account-amazons3.png)
 
 1. Copy the contents of the [!UICONTROL **User ARN**] field to your clipboard. The User ARN (Amazon Resource Name) is provided by Adobe. You must attach this user to the policy you created in Amazon S3 Role ARN. 
 
@@ -112,7 +105,7 @@ For information about how to manage existing accounts, including viewing, editin
 
    The [!UICONTROL **Export account created**] dialog displays.
 
-      <!-- add screen shot -->
+   ![Export account created dialog](assets/export-account-gcp.png)
 
 1. Copy the contents of the [!UICONTROL **Principal**] field to your clipboard, then ensure that you grant permission to the Principal to upload files to this bucket in Google Cloud Platform. <!-- add link to Google Cloud docs on how to do this --> 
 
@@ -140,7 +133,7 @@ For information about how to manage existing accounts, including viewing, editin
 
    The [!UICONTROL **Export account created**] dialog displays.
 
-      <!-- add screen shot -->
+   ![Export account created dialog](assets/export-account-azure.png)
 
 1. If you haven't already, ensure that you grant permissions to the bucket in Azure SAS. <!-- add link to Google Cloud docs on how to do this --> 
 
@@ -166,7 +159,7 @@ For information about how to manage existing accounts, including viewing, editin
 
    The [!UICONTROL **Export account created**] dialog displays.
 
-      <!-- add screen shot -->
+   ![Export account created dialog](assets/export-account-azure.png)
 
 1. If you haven't already, ensure that you grant permissions to the bucket in Azure RBAC. <!-- add link to Google Cloud docs on how to do this --> 
 
@@ -192,7 +185,7 @@ For information about how to manage existing accounts, including viewing, editin
 
    The [!UICONTROL **Export account created**] dialog displays.
 
-      <!-- add screen shot -->
+   ![Export account created dialog](assets/export-account-snowflake.png)
 
 1. Copy the contents of the [!UICONTROL **Public key**] field to your clipboard. The Public key is provided by Adobe. 
 
@@ -209,6 +202,3 @@ For information about how to manage existing accounts, including viewing, editin
 1. Select [!UICONTROL **OK**].
 
 1. Continue with [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).
-
-
-

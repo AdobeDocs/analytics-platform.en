@@ -30,12 +30,12 @@ You can configure the Media Concurrent Viewers panel using these input settings:
 
 ### Default view
 
-![Default view](assets/concurrent-viewers-default.png)
+![The Media Concurrent Viewers default view.](assets/concurrent-viewers-default.png)
 
 
 ### Series breakdown view
 
-![series breakdown view](assets/concurrent-viewers-series-breakdown.png)
+![The Media Concurrent Viewers Series breakdown view showing 7 of 10 dimensions, segments or date ranges.](assets/concurrent-viewers-series-breakdown.png)
 
 ## Panel Output {#Output}
 
@@ -45,7 +45,7 @@ At any time, you can edit and rebuild the panel by clicking the edit pencil on t
 
 If you selected series breakdown, a line on the line chart and a summary number is displayed for each:
 
-![concurrent viewers output](assets/concurrent-viewers-output.png)
+![The Media Concurrent Viewers output.](assets/concurrent-viewers-output.png)
 
 ### Data Source
 
@@ -58,7 +58,7 @@ The only metric that can be used in this panel is Concurrent Viewers:
 A Freeform table is not available in this view.  In order to view the data source, you may right-click on the line chart and download as a .csv file.  Series breakdowns will be included.
 
 
-![concurrent viewers output](assets/concurrent-viewers-download-csv.png)
+![The Concurrent viewers output options with "Download data as CSV" highlighted.](assets/concurrent-viewers-download-csv.png)
 
 ## FAQs {#FAQ}
 
