@@ -55,7 +55,7 @@ When you define a rule in the rule builder, you use the rule interface.
 | A | **Rule Name** | By default the rule name is **Rule X** (X referring to a sequence number). To edit the name of a rule, select its name and type in the new name, for example `Query Parameter`. |
 | B | **Function Name** | The selected function name for the rule, for example [!UICONTROL URL PARSE]. When the function is the last in the sequence of functions and determines the final output values, the function name is followed by [!UICONTROL - FINAL OUTPUT], for example [!UICONTROL URL PARSE - FINAL OUTPUT]. <br/>To show a popup with more information on the function, select ![Help icon](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Rule Description** | You can optionally add a description to a rule.<br/>Select ![More icon](assets/More.svg), then select **[!UICONTROL **Add Description**]** to add a description or **[!UICONTROL **Edit Description**]** to edit an existing description.<br/>Use the editor to enter a description. You can use the toolbar to format the text (using style selector, bold, italic, underline, right, left, centered, color, number list, bullet list) and adding links to external information. <br/>To finish editing the description, click outside of the editor. |
-| D | **Function Area** | Defines the logic of the function. The interface depends on the type of function. The dropdown for [!UICONTROL Field] or [!UICONTROL Value] shows all categories of fields (rules, standard fields, fields) available, based on the type of input the function expects. <!-- Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define.  See [Function reference](#function-reference) on detailed information for each of the functions supported. --> |
+| D | **Function Area** | Defines the logic of the function. The interface depends on the type of function. The dropdown for [!UICONTROL Field] or [!UICONTROL Value] shows all categories of fields (rules, standard fields, fields) available, based on the type of input the function expects. Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define. <br/>See [Function reference](#function-reference) on detailed information for each of the functions supported. |
 
 {style="table-layout:auto"}
 
@@ -475,7 +475,7 @@ You are collecting [!DNL Hotel ID] in a dimension but would like to create a [!D
 
 You define a `Hotel Name` derived field. You use the [!UICONTROL CLASSIFY] function to define a rule where you can classify values of the [!UICONTROL Hotel ID] field and replace with new values. 
 
-If you want to include original values that you have not defined as part of the values to classify (for example Hotel ID AMS789), ensure you select **[!UICONTROL Show original values]**. This ensures AMS789 will be part of the output for the derived field, despite that value not being classified.
+If you want to include original values that you have not defined as part of the values to classify (for example Hotel ID AMS789), ensure you select **[!UICONTROL Show original values]**. This ensures AMS789 is part of the output for the derived field, despite that value not being classified.
 
 ![Screenshot of the Classify rule 1](assets/classify-1.png)
 
@@ -687,11 +687,11 @@ You define an `Email Marketing (updated)` derived field. You use the [!UICONTROL
 +++
 
 
-<!-- LOOKUP
+<!-- LOOKUP -->
 
 ### Lookup
 
-Lookup values using a field from a lookup dataset and returns value in a new derived field or for further rule processing.
+Lookup values using a field from a lookup dataset and returns a value in a new derived field or for further rule processing.
 
 +++ Details
 
@@ -719,7 +719,7 @@ You would like to lookup the activity name using the activity id collected when 
 
 ### Derived field {#lookup-uc-derivedfield}
 
-You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule to lookup the value from your collected data, specified in the [!UICONTROL Field to apply lookup] field. You select the lookup dataset from the [!UICONTROL Lookup dataset] list, selecting the identifier field from the [!UICONTROL Matching key list] and the field to return from the [!UICONTROL Values to return] list.
+You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule to lookup the value from your collected data, specified in the [!UICONTROL Field to apply lookup] field (for example **[!DNL ActivityIdentifier]**). You select the lookup dataset from the [!UICONTROL Lookup dataset] list (for example **[!DNL New CJA4T Activities]**). Then you selecting the identifier field (for example **[!DNL ActivityIdentifier]**) from the [!UICONTROL Matching key] list and the field to return from the [!UICONTROL Values to return] list (for example **[!DNL ActivityName]**).
 
 ![Screenshot of the Lowercase rule](assets/lookup.png)
 
@@ -730,12 +730,11 @@ You can quickly insert a [!UICONTROL Lookup] function in the rule builder, alrea
   1. Select **[!UICONTROL Schema fields]** from selector.
   1. Select ![Schema field icon](assets/Smock_Folder_18_N.svg) **[!UICONTROL Lookup datasets]**.
   1. Select your lookup dataset and find the field you want to use for lookup.
-  1. Drag the lookup field and drop the field on any of the available input fields for a function (for example Case When). When valid, a blue **[!UICONTROL + Add box]** will allow you to drop the field and automatically insert a Lookup function before the function you dropped the lookup field on, and populate the Lookup function with relevant values for all fields.
+  1. Drag and drop the lookup field on any of the available input fields for a function (for example Case When). When valid, a blue box, labeled **[!UICONTROL + Add]**, allows you to drop the field and automatically insert a Lookup function before the function you dropped the lookup field on. The inserted Lookup function is automatically populated with relevant values for all fields.
      ![Lookup drag](assets/lookup-drag.png) 
 
 +++
 
--->
 
 <!-- LOWERCASE -->
 
@@ -847,7 +846,7 @@ You define a `Cross Channel Interactions` derived field. You use the [!UICONTROL
 
 ## More information {#merge-fields-moreinfo}
 
-You have to select the same type of fields within a Merge Fields rule. For example, if you select a Date field, all other fields you want to merge have to be Date fields.
+You must select the same type of fields within a Merge Fields rule. For example, if you select a Date field, all other fields you want to merge have to be Date fields.
 
 ![Screenshot of constraint on merge fields](assets/merge-fields-constraint.png)
 
@@ -942,9 +941,9 @@ You can use these sequences in the [!UICONTROL Output format] any number of time
 | Output placeholder sequence | Description |
 | --- | --- |
 | `$&` | Outputs what matched the whole expression. |
-| `$n` | Outputs what matched the nth sub expression. For example, `$1` outputs the first sub expression. |
+| `$n` | Outputs what matched the nth sub-expression. For example, `$1` outputs the first sub-expression. |
 | ``$` `` | Outputs the text between the end of the last match found (or the start of the text if no previous match was found), and the start of the current match. |
-| `$+` | Outputs what matched the last marked sub expression in the regular expression. |
+| `$+` | Outputs what matched the last marked sub-expression in the regular expression. |
 | `$$` | Outputs the string character `"$"`. |
 
 {style="table-layout:auto"}
@@ -1048,7 +1047,7 @@ You create a `Second Response` derived field to take the last value  from the [!
 
 ### Trim
 
-Trims whitespace, special characters or number of characters from either the beginning or the end of field values into a new derived field.
+Trims whitespace, special characters, or number of characters from either the beginning or the end of field values into a new derived field.
 
 +++ Details
 
@@ -1062,7 +1061,7 @@ Trims whitespace, special characters or number of characters from either the beg
 
 ## Use case 1 {#trim-uc1}
 
-You collect product data, however that data contains hidden whitespace characters which fragments reporting. You would like to easily trim any excess whitepace
+You collect product data, however that data contains hidden whitespace characters which fragment reporting. You would like to easily trim any excess whitespace
 
 ### Data before {#trim-uc1-databefore}
 
@@ -1090,7 +1089,7 @@ You create a `Product Identifier` derived field. You use the [!UICONTROL TRIM] f
 
 ## Use case 2 {#trim-uc2}
 
-Your data on page names collected includes some erroneous special characters at the end of the page name which need to be removed.
+Your data on page names collected includes some erroneous special characters at the end of the page name which must be removed.
 
 ### Data before {#trim-uc2-databefore}
 

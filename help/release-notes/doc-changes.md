@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **October 2023** | |
+| Additional derived fields functionality | Updated documentation for the new [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) function. |
 | **September 2023** | | 
 | Updated structure of articles for the Media Playback Time Spent panel | Removed the folder called Media Playback Time Spent, and combined the contents of the folder into a single article: [Media Playback Time Spent panel](/help/analysis-workspace/c-panels/media-playback-time-spent.md). <p>This change is more in line with the documentation for other panels.</p> |
 | Additional derived fields functionality | Updated documentation for the new [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) and [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) functions and for the additional CSV capabilities added to the [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) function. |
