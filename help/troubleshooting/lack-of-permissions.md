@@ -15,7 +15,7 @@ As an example, after creating a [Connection](../connections/overview.md) and [Da
 
 >[!BEGINSHADEBOX]
 
-*[!UICONTROL Something went wrong and we couldn't load schema fields. Please try again.]*
+*[!UICONTROL Something went wrong retrieving DULE policies. Please verify account permissions, policies, or labels. Message: Forbidden.]*
 
 >[!ENDSHADEBOX]
 
