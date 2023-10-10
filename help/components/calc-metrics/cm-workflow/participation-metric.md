@@ -12,7 +12,7 @@ This type of information could be useful for any content owner.
 
 >[!NOTE]
 >
->You can enable participation metrics in the Admin Tools, but only for custom events 1 - 100.
+>Metrics with other attribution models, such as Participation, may also be created by administrators as part of a [data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html). The example below shows how they may be created by any user with access to the calculated metric builder in Workspace.
 
 1. Begin building a metric, as described in [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 1. In the Calculated metrics builder, name the metric "Participation" or something similar
