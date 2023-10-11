@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 ---
-# Adobe Customer Journey Analytics feature support
+# Customer Journey Analytics feature support
 
 The following tables list which features in Adobe Analytics are supported, partially supported or not supported in Customer Journey Analytics, and which features of Customer Journey Analytics are not supported or available in Adobe Analytics. These lists will change over time as features are added to Customer Journey Analytics.
 

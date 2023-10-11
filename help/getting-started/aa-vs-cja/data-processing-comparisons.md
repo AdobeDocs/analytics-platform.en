@@ -4,7 +4,7 @@ description: Understand the differences in data processing for the various repor
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 feature: Basics
 ---
-# Compare data processing across Adobe Analytics and Customer Journey Analytics.
+# Compare data processing across Adobe Analytics and Customer Journey Analytics
 
 You often need the ability to process data before it is useful for reporting. You can process that data at several stages in the journey that spans from collecting data to generating your report or visualization.
 
