@@ -41,7 +41,7 @@ See [Compare terminology for Analytics data passed through the Analytics source 
 
 ## Virtual reporting environments and sandboxes
 
-Adobe Analytics has the concept of Virtual Report Suites, which allows you to segment your collected data and control access to that segmented data. 
+Adobe Analytics has the concept of Virtual report suites, which allows you to segment your collected data and control access to that segmented data. 
 
 Customer Journey Analytics has a similar concept, named Data views. Data views are containers allowing you to determine how to interpret data from a connection. It offers ultimate flexibility to specify and configure dimensions and metrics in preparation for your reporting and analysis.
 

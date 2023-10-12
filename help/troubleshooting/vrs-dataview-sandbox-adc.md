@@ -1,4 +1,4 @@
-# Virtual Report Suites, Data Views, Adobe Experience Platform Sandboxes and the Analytics source connector
+# Virtual report suites, Data views, Adobe Experience Platform sandboxes and the Analytics source connector
 
 Adobe provides a variety of means to create virtual reporting environments and sandbox environments. It is useful to understand the similarities and differences between the following features and how these features relate to the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en):
 
@@ -6,11 +6,11 @@ Adobe provides a variety of means to create virtual reporting environments and s
 * Customer Journey Analytics data views
 * Adobe Experience Platform sandboxes
 
-## Adobe Analytics Virtual Report Suites (VRS)
+## Adobe Analytics Virtual report suites
 
 For more information, see: [Virtual report suites overview](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en).
 
-A VRS:
+A Virtual report suite:
 
 * Can be based on Adobe Analytics segments.
 * Can be applied to both historical and new data in a non-destructive manner.
