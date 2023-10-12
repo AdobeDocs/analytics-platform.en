@@ -49,15 +49,17 @@ To set up your schema:
 
 1. Select **[!UICONTROL Create schema]**. 
 . 
-1. In the Select a class step of the Create schema wizard, select **[!UICONTROL Experience Event]**.
+1. In the Select a class step of the Create schema wizard:
 
-    ![Create a schema](./assets/create-ee-schema-wizard-step-1.png)
+   1. Select **[!UICONTROL Experience Event]**.
 
-    >[!INFO]
-    >
-    >    An Experience Event schema is used to model the _behavior_ of a profile (like scene name, push button to add to cart). An Individual Profile schema is used to model the profile _attributes_ (like name, email, gender).
+      ![Create a schema](./assets/create-ee-schema-wizard-step-1.png)
 
-    Select **[!UICONTROL Next]**.
+      >[!INFO]
+      >
+      >    An Experience Event schema is used to model the _behavior_ of a profile (like scene name, push button to add to cart). An Individual Profile schema is used to model the profile _attributes_ (like name, email, gender).
+
+   1. Select **[!UICONTROL Next]**.
 
 
 1. In the [!UICONTROL Name and review step] of the [!UICONTROL Create schema] wizard:
