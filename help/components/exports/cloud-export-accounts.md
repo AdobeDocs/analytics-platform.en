@@ -81,7 +81,7 @@ For information about how to manage existing accounts, including viewing, editin
 
    1. Select [!UICONTROL **Next**] > [!UICONTROL **Connect**].
 
-1. In Customer Journey Analytics, in the **Export account created**] dialog, select [!UICONTROL **OK**].
+1. In Customer Journey Analytics, in the [!UICONTROL **Export account created**] dialog, select [!UICONTROL **OK**].
 
    ![Export account dialog AEP Data Landing Zone](assets/export-account-aep.png)
 
