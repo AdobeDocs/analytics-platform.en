@@ -12,12 +12,12 @@ This type of information could be useful for any content owner.
 
 >[!NOTE]
 >
->Metrics with other attribution models, such as Participation, may also be created by administrators as part of a [data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html). The example below shows how they may be created by any user with access to the calculated metric builder in Workspace.
+>Metrics with other attribution models, such as Participation, may also be created by administrators as part of a [data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html). See [Attribution component settings](../../../data-views/component-settings/attribution.md) for more details.<br/>The example below shows how a participation metric can be created by any user with access to the calculated metric builder in Workspace.
 
 
 1. Begin building a metric, as described in [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
-1. In the Calculated metrics builder, name the metric "Participation" or something similar.
-1. Drag a metric containing a success event, for example "Orders", into the Definition canvas.
+1. In the Calculated metrics builder, name the metric `Participation` or something similar.
+1. Drag a metric containing a success event, for example [!DNL Orders], into the [!UICONTROL Definition] canvas.
 1. Select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) for the metric. 
 1. In the popup that appears, select **[!UICONTROL Use a non-default attribution model]** to define the [attribution model](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) of that event to **[!UICONTROL Participation]** and select **[!UICONTROL Session]** for the [!UICONTROL Lookback window]. Select **[!UICONTROL Apply]** to confirm.
 
