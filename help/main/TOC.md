@@ -35,6 +35,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
+    + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
     + [Customer Journey Analytics feature support](../getting-started/aa-vs-cja/cja-aa.md)
     + [Compare terminology for Analytics data passed through the Analytics source connector](../getting-started/aa-vs-cja/terminology.md)
@@ -238,7 +239,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Find metrics](../components/calc-metrics/cm-workflow/cm-finding.md)
       + [Build metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
       + [Metric type and attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-      + [Build a "Participation" metric](../components/calc-metrics/cm-workflow/participation-metric.md)
+      + [Build a participation metric](../components/calc-metrics/cm-workflow/participation-metric.md)
       + [Filtered metrics](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
       + [Stack and replace filters](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
       + [Filtered and weighted metrics](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)

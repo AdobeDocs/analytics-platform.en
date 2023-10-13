@@ -41,13 +41,13 @@ To remove project curation and restore the full set of components in the left ra
 
 In a curated project, the recipient will be presented with the option to **[!UICONTROL Show All]** components in the left rail. [!UICONTROL Show All] reveals different sets of components, depending on:
 
-* The user’s permission level (admin or non-admin)
+* The user's permission level (admin or non-admin)
 * Project role (owner/editor or not)
 * Type of curation applied (at the project level)
 
 | Curation type | Admin can see | Non-admin project owner (or edit role) can see | Non-admin duplicate role can see |
 | --- | --- | --- | --- |
 | **Components "hidden" from a data view** | All data view components available for reporting (hidden components require clicking "Show all") | Not available for reporting | Not available for reporting |
-| **Components added or removed from a data view** | Only components added to the data view (hidden or not hidden). Admins cannot report on fields or components that are not defined by the data view. | Only components added to the data view, or components owned by or shared with the user. Hidden components are not available (like VRS curation). | Only components added to the DV, are not hidden and have been included in the Project curation. | 
+| **Components added or removed from a data view** | Only components added to the data view (hidden or not hidden). Admins cannot report on fields or components that are not defined by the data view. | Only components added to the data view, or components owned by or shared with the user. Hidden components are not available (like Virtual report suite curation). | Only components added to the DV, are not hidden and have been included in the Project curation. | 
 | **Curated components in a Project** | All data view components available for reporting (hidden components require clicking "Show all") | All non-hidden data view components (requires clicking "show all") | Only curated components, plus any components owned or shared with the user |
 | **Curated Project using a data view with hidden components** | All data components available for reporting (hidden and non-curated components require clicking "Show all")| All non-curated project components, all non-hidden data view components, and any components owned by or shared with the user | Only curated components, plus any components owned by or shared with the user |
