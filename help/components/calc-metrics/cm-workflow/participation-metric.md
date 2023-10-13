@@ -6,7 +6,7 @@ exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
 ---
 # Build a "Participation" metric
 
-The following information explains how to create a metric that shows which pages contributed to (or participated in) sessions that contained an order.
+This article explains how to create a metric that shows how individual values for a selected dminension (like Page Views, Marketing Channel, App Version) contributed to (or participated in) sessions that contained an order.
 
 This type of information could be useful for any content owner.
 
@@ -17,13 +17,18 @@ This type of information could be useful for any content owner.
 1. Begin building a metric, as described in [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 1. In the Calculated metrics builder, name the metric "Participation" or something similar
 1. Drag the success event "Orders" into the Definition canvas.
-1. Change the [attribution model](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) of that event to **[!UICONTROL Participation]** under the **[!UICONTROL Settings]** gear. Select **[!UICONTROL Session]** lookback. The definition should look similar to this:
+1. Select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) for the [!DNL Orders] metrics. 
+1. In the popup that appears, select **[!UICONTROL Use a non-default attribution model]** to define the [attribution model](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) of that event to **[!UICONTROL Participation]** and select **[!UICONTROL Session]** for the [!UICONTROL Lookback window]. Select **[!UICONTROL Apply]** to confirm.
 
-   ![](assets/participation.png)
+   In the Definition box, ![Event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **Orders** is updated to ![Event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **Orders (Partipation|Session)**. 
+
+      ![](assets/participation-setup.png)
+
+  
 
 1. Select [!UICONTROL **Save**] to save the metric.
-1. Use the calculated metric in a **[!UICONTROL Pages]** report.
+1. Use the calculated metric in your report. Below the calculated metric is used in a report to show which customer tier contributed to (or participated in) sessions that contained an order.
 
-    ![](assets/participation-pages.png)
+    ![](assets/participation-pages-customer-tier.png)
 
 1. (Optional) Share the metric with other users in your organization, as described in [Share calculated metrics](/help/components/calc-metrics/cm-workflow/cm-sharing.md).
