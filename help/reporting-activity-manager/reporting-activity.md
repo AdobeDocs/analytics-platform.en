@@ -10,7 +10,7 @@ feature: Basics
 
 The [!UICONTROL Reporting Activity Manager] enables administrators to quickly diagnose and fix reporting capacity issues during peak reporting times.
 
-For more information about Reporting Activity manager, including key benefits and permission requirements, see [Reporting Activity Manager overview](/help/admin/admin/reporting-activity-manager/reporting-activity-overview.md).
+For more information about Reporting Activity manager, including key benefits and permission requirements, see [Reporting Activity Manager overview](/help/reporting-activity-manager/reporting-activity-overview.md).
 
 ## View reporting activity for all connections {#view-all-report-suites}
 
