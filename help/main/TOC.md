@@ -287,6 +287,11 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Restricted Labels](../report-builder/restricted-labels.md)
   + [Report Builder Settings](../report-builder/report-builder-settings.md)
 
++ Reporting Activity Manager {#reporting-activity-manager}
+  + [Overview](../reporting-activity-manager/reporting-activity-overview.md)
+  + [View reporting activity](../reporting-activity-manager/reporting-activity.md)
+  + [Cancel reporting requests](../reporting-activity-manager/reporting-activity-cancel-requests.md)
+
 + Stitching {#stitching}
   + [Overview](../stitching/overview.md)
   + [How stitching works](../stitching/explained.md)

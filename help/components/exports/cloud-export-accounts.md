@@ -59,9 +59,9 @@ For information about how to manage existing accounts, including viewing, editin
 
    ![Export account dialog AEP Data Landing Zone](assets/export-account-aep.png)
 
-1. Copy the contents of the [!UICONTROL **SAS URI**] field to your clipboard. 
+1. Copy the contents of the [!UICONTROL **SAS URI**] field to your clipboard. You will use this SAS URI to access the data that is exported from Analysis Workspace from the AEP Data Landing Zone.
 
-   You will use this SAS URI to access the data that is exported from Analysis Workspace from the AEP Data Landing Zone.
+   If this field is empty, you need to be granted permission to access Adobe Experience Platform.
 
 1. In Adobe Experience Platform, configure your Data Landing Zone container to use the SAS URI that you copied.
 
@@ -76,6 +76,11 @@ For information about how to manage existing accounts, including viewing, editin
       You can skip the tasks described in the sections [Retrieve the credentials for your Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#retrieve-dlz-credentials) and [Update Data Landing Zone credentials](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#update-dlz-credentials), because the URI that you copied contains these credentials.
 
    1. When following the Adobe Experience Platform documentation and you come to the [!UICONTROL **Blob container SAS URL**] field, paste the SAS URI that you copied in Step 3.
+
+      >[!NOTE]
+      >
+      >You need to perform this action every 7 days, because the SAS URI expires 7 days after it is created. You can create a script to automate this process.
+
 
         ![SAS URL field](assets/blob-container-sas-uri.png)
 
