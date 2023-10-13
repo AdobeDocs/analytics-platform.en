@@ -150,13 +150,13 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Quick Insights panel](../analysis-workspace/c-panels/quickinsight.md)
     + [Media Concurrent Viewers panel](../analysis-workspace/c-panels/media-concurrent-viewers.md)
     + [Media Playback Time Spent panel](../analysis-workspace/c-panels/media-playback-time-spent.md)
-  +   Curate, Share and Schedule projects {#curate-share}
+  + Curate, Share and Schedule projects {#curate-share}
         + [Share menu](../analysis-workspace/curate-share/send-schedule-files.md)
         + [Curate projects](../analysis-workspace/curate-share/curate.md)
         + [Share projects](../analysis-workspace/curate-share/share-projects.md)
         + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
         + [View-only projects](../analysis-workspace/curate-share/view-only-projects.md)
-  +   Export {#export}
+  + Export {#export}
         + [Export overview](../analysis-workspace/export/export-project-overview.md)
         + [Download](../analysis-workspace/export/download-send.md)
         + [Send to others](../analysis-workspace/export/t-schedule-report.md)
@@ -184,18 +184,20 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Guided analysis {#guided-analysis}
     + [Overview](../guided-analysis/overview.md)
-    + Impact {#impact}
-      + [Release view](../guided-analysis/types/release.md)
-      + [First use view](../guided-analysis/types/first-use.md)
-    + Funnel {#funnel}
-      + [Friction view](../guided-analysis/types/friction.md)
-      + [Conversion trends view](../guided-analysis/types/conversion-trends.md)
     + User growth {#user-growth}
       + [Active view](../guided-analysis/types/active.md)
       + [Net growth view](../guided-analysis/types/net-growth.md)
     + Trends {#trends}
       + [Usage view](../guided-analysis/types/usage.md)
       + [Frequency view](../guided-analysis/types/frequency.md)
+    + Funnel {#funnel}
+      + [Friction view](../guided-analysis/types/friction.md)
+      + [Conversion trends view](../guided-analysis/types/conversion-trends.md)
+    + Impact {#impact}
+      + [Release view](../guided-analysis/types/release.md)
+      + [First use view](../guided-analysis/types/first-use.md)
+    + Retention {#retention}
+      + [Retention rates](../guided-analysis/types/retention-rates.md)
     + [Industry use cases](../guided-analysis/industry-use-cases.md)
     + [FAQ](../guided-analysis/faq.md)
 
@@ -349,6 +351,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Consistency of metrics and audience membership counts between Real-time CDP and Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
   + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
 
-+   [Customer Journey Analytics glossary](../getting-started/cja-glossary.md)
++ [Customer Journey Analytics glossary](../getting-started/cja-glossary.md)
 
-+   [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
++ [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
