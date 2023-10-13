@@ -24,6 +24,8 @@ Reporting Activity Manager provides the following benefits:
 
 ## Permissions
 
+<!-- update for CJA -->
+
 To manage reporting activity, you must have the Analytics Product Administrator permission in Adobe Admin Console.
 
 ![permission](assets/rep-mgr-permission.png)

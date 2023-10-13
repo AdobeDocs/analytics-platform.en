@@ -127,6 +127,8 @@ You can cancel all requests that are associated with one or more projects.
 
 ## Experience when users access a cancelled report
 
+<!-- Update for CJA and AA -->
+
 In Analysis Workspace, users see the following message when they attempt to access a report that was cancelled by an administrator:
 
 ![cancel-user-notice](assets/cancel-user-facing.png)
