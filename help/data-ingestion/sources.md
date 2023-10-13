@@ -45,28 +45,38 @@ To set up your schema:
 
 1. In the Adobe Experience Platform UI, in the left rail, select **[!UICONTROL Schemas]** within [!UICONTROL DATA MANAGEMENT].
 
-2. Select **[!UICONTROL Create schema]**. Select **[!UICONTROL XDM Individual Profile]** from the list of options.
+1. Select **[!UICONTROL Create schema]**. 
+. 
+1. In the Select a class step of the Create schema wizard: 
 
-    ![Create a schema](./assets/create-schema.png)
+   1. Select **[!UICONTROL Individual Profile]**.
 
-    >[!INFO]
-    >
-    >    An Individual Profile schema is used to model the profile _attributes_ (like name, email, gender). An Experience Event schema is used to model the _behavior_ of a profile (like page view, add to cart). 
+        ![Create a schema](./assets/create-pr-schema-wizard-step-1.png)
+
+        >[!INFO]
+        >
+        >    An Experience Event schema is used to model the _behavior_ of a profile (like scene name, push button to add to cart). An Individual Profile schema is used to model the profile _attributes_ (like name, email, gender).
+
+   1. Select **[!UICONTROL Next]**.
 
 
-3. In the [!UICONTROL Untitled schema] screen:
+1. In the [!UICONTROL Name and review step] of the [!UICONTROL Create schema] wizard:
 
-    1. Enter a display name for your schema and (optional) a description.
+   1. Enter a **[!UICONTROL Schema display name]** for your schema and (optional) a **[!UICONTROL Description]**.
 
-        ![Name your schema](./assets/name-loyalty-schema.png)
+      ![Name your schema](./assets/create-pr-schema-wizard-step-2.png)
+
+   1. Select **[!UICONTROL Finish]**.
+
+1. In the Structure tab of Example Schema:
     
-    2. Select **[!UICONTROL + Add]** in [!UICONTROL Field groups].
+    1. Select **[!UICONTROL + Add]** in [!UICONTROL Field groups].
 
         ![Add field group](./assets/add-field-group-button.png)
 
         Field groups are reusable collection of objects and attributes that allow you to easily extend your schemas.
 
-    3. In the [!UICONTROL Add fields groups] dialog, select the **[!UICONTROL Loyalty Details]** field group from the list. 
+    1. In the [!UICONTROL Add fields groups] dialog, select the **[!UICONTROL Loyalty Details]** field group from the list. 
 
         ![AEP Web SDK ExperienceEvent fieldgroup](./assets/loyalty-fieldgroup.png)
     
@@ -76,13 +86,13 @@ To set up your schema:
 
         Select **[!UICONTROL Back]** to close the preview.      
 
-    4. Select **[!UICONTROL Add field groups]**.
+    1. Select **[!UICONTROL Add field groups]**.
 
-4. Select **[!UICONTROL +]** next to your schema name in the [!UICONTROL Structure] panel.
+1. Select **[!UICONTROL +]** next to your schema name in the [!UICONTROL Structure] panel.
 
     ![Example Schema Add Field button](./assets/example-loalty-schema-plus.png)
 
-5. In the [!UICONTROL Field Properties] panel, enter `Identification` as the name, **[!UICONTROL Identification]** as the [!UICONTROL Display name], select **[!UICONTROL Object]** as the [!UICONTROL Type] and select **[!UICONTROL Profile Core v2]** as the [!UICONTROL Field Group].
+1. In the [!UICONTROL Field Properties] panel, enter `Identification` as the name, **[!UICONTROL Identification]** as the [!UICONTROL Display name], select **[!UICONTROL Object]** as the [!UICONTROL Type] and select **[!UICONTROL Profile Core v2]** as the [!UICONTROL Field Group].
 
     ![Identification Object](./assets/identifcation-loyalty-field.png)
 
@@ -90,7 +100,7 @@ To set up your schema:
 
     Select **[!UICONTROL Apply]** to add this object to your schema.
 
-6. Select the **[!UICONTROL email]** field in the identification object you just added, and select **[!UICONTROL Identity]** and **[!UICONTROL Email]** from the [!UICONTROL Identity namespace] in the [!UICONTROL Field Properties] panel. 
+1. Select the **[!UICONTROL email]** field in the identification object you just added, and select **[!UICONTROL Identity]** and **[!UICONTROL Email]** from the [!UICONTROL Identity namespace] in the [!UICONTROL Field Properties] panel. 
 
     ![Specifiy email as identity](./assets/specify-email-loyalty-id.png)
 
@@ -98,7 +108,7 @@ To set up your schema:
 
     Select **[!UICONTROL Apply]**. You see that a fingerprint icon appears in the email attribute.
 
-7. Select the root level of your schema (with the schema name), then select the **[!UICONTROL Profile]** switch.
+1. Select the root level of your schema (with the schema name), then select the **[!UICONTROL Profile]** switch.
 
     You are prompted to enable the schema for profile. Once enabled, when data is ingested into datasets based on this schema, that data is merged into the Real-Time Customer Profile. 
     
@@ -110,7 +120,7 @@ To set up your schema:
 
     ![Enable schema for profile](./assets/enable-for-profile.png)
 
-8. Select **[!UICONTROL Save]** to save your schema.
+1. Select **[!UICONTROL Save]** to save your schema.
 
 You have created a minimal schema that models the loyalty data you can ingest into Adobe Experience Platform. The schema allows profiles to be identified using the email address. By enabling the schema for profile, you ensure that data from your streaming source is added to the Real-Time Customer Profile.
 
