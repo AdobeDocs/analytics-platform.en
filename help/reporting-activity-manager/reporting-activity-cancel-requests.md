@@ -4,7 +4,6 @@ description: Learn about how to use the Reporting Activity Manager to diagnose a
 solution: Customer Journey Analytics
 feature: Basics
 ---
----
 # Cancel reporting requests in the Reporting Activity Manager
 
 {{release-limited-testing}}
