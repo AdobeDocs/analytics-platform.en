@@ -239,7 +239,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Find metrics](../components/calc-metrics/cm-workflow/cm-finding.md)
       + [Build metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
       + [Metric type and attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-      + [Build a "Participation" metric](../components/calc-metrics/cm-workflow/participation-metric.md)
+      + [Build a participation metric](../components/calc-metrics/cm-workflow/participation-metric.md)
       + [Filtered metrics](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
       + [Stack and replace filters](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
       + [Filtered and weighted metrics](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
