@@ -30,11 +30,11 @@ To manage reporting activity, you must have the Analytics Product Administrator 
 
 ## View reporting activity
 
-For information about viewing reporting activity in the Reporting Activity Manager, see [View reporting activity in the Reporting Activity Manager](/help/admin/admin/reporting-activity-manager/reporting-activity.md).
+For information about viewing reporting activity in the Reporting Activity Manager, see [View reporting activity in the Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity.md).
 
 ## Cancel reporting requests
 
-For information about cancelling reporting requests in the Reporting Activity Manager, see [Cancel reporting requests in the Reporting Activity Manager](/help/admin/admin/reporting-activity-manager/reporting-activity-cancel-requests.md).
+For information about cancelling reporting requests in the Reporting Activity Manager, see [Cancel reporting requests in the Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-cancel-requests.md).
 
 ## Frequently asked questions {#faq}
 

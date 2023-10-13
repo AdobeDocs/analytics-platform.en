@@ -18,7 +18,7 @@ Consider the following when cancelling reporting requests:
 
 * You cannot cancel a request if the [!UICONTROL **User**] column of a request shows as [!UICONTROL **Unrecognized**]. When this occurs, it means that the user is in a login company where you do not have administrative permissions.
 
-For more information about Reporting Activity manager, including key benefits and permission requirements, see [Reporting Activity Manager overview](/help/admin/admin/reporting-activity-manager/reporting-activity-overview.md).
+For more information about Reporting Activity manager, including key benefits and permission requirements, see [Reporting Activity Manager overview](/help/reporting-activity-manager/reporting-activity-overview.md).
 
 ## Cancel specific requests
 
@@ -28,7 +28,7 @@ You can cancel individual requests that are consuming a large amount of reportin
 
 1. Select the connection where you want to cancel reporting requests. <!--double-check this step-->
 
-   For more information about the data available on this page, see [View reporting activity in the Reporting Activity Manager](/help/admin/admin/reporting-activity-manager/reporting-activity.md).
+   For more information about the data available on this page, see [View reporting activity in the Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity.md).
 
 1. Select the [!UICONTROL **Requests**] tab, then select one or more requests.
 
@@ -63,7 +63,7 @@ You can cancel all requests that are associated with one or more users.
 
 1. Select the connection where you want to cancel reporting requests. <!--double-check this step-->
 
-   For more information about the data available on this page, see [View reporting activity in the Reporting Activity Manager](/help/admin/admin/reporting-activity-manager/reporting-activity.md).
+   For more information about the data available on this page, see [View reporting activity in the Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity.md).
 
 1. Select the [!UICONTROL **Users**] tab, then select one or more users.
 
@@ -98,7 +98,7 @@ You can cancel all requests that are associated with one or more projects.
 
 1. Select the connection where you want to cancel reporting requests. <!--double-check this step-->
 
-   For more information about the data available on this page, see [View reporting activity in the Reporting Activity Manager](/help/admin/admin/reporting-activity-manager/reporting-activity.md).
+   For more information about the data available on this page, see [View reporting activity in the Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity.md).
 
 1. Select the [!UICONTROL **Projects**] tab, then select one or more projects.
 
