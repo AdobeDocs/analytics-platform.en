@@ -54,9 +54,15 @@ You must have the **Select** package in order to add unlimited numbers of datase
 
 The new workflow lets you add an Experience Platform dataset when you create a connection. 
 
-1. In the Connection settings dialog, click **[!UICONTROL Add datasets]**.
+1. In the Connection settings dialog, select **[!UICONTROL Add datasets]**.
 
-2. Select one or more datasets and click **[!UICONTROL Next]**. At least one event dataset must be part of the connection.
+2. In the [!UICONTROL Select datasets] step, select one or more datasets and select **[!UICONTROL Next]**. At least one event dataset must be part of the connection.
+   * To change the columns displayed for the list of datasets, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) and select the columns to be displayed in the [!UICONTROL Customize table] dialog.
+   * To search for a specific dataset, use the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search field.
+   * To toggle between showing or hiding the selected datasets, select ![Select](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL Hide selected]** or **[!UICONTROL Show selected]**.
+   * To remove a dataset from the list of selected datasets, use ![Close](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
+
+    ![Select datasets](assets/select-datasets.png)
 
 3. Now configure the datasets one by one.
 
@@ -64,8 +70,10 @@ The new workflow lets you add an Experience Platform dataset when you create a c
 
     | Setting | Description |
     | --- | --- |
-    | **[!UICONTROL Person ID]** | Select a person ID from the drop-down list of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID.<p>If there are no person IDs to choose from, that means one or more person IDs have not been defined in the schema. View this video on how to define an identity in Experience Platform. |
+    | **[!UICONTROL Person ID]** | Only available for event and profile datasets. Select a person ID from the drop-down list of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID.<p>If there are no person IDs to choose from, that means one or more person IDs have not been defined in the schema. View this video on how to define an identity in Experience Platform. |
     | **[!UICONTROL Timestamp]** | For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. |
+    | **[!UICONTROL Key]** | Only available for lookup datasets. The key to use for a Lookup dataset. |
+    | **[!UICONTROL Matching key]** | Only available for lookup datasets. The matching key to join on in one of the event datasets. If this list is empty you probably haven't added or configured an event dataset. |
     | **[!UICONTROL Data source type]** | Select a type of data source. <br/>Types of data sources include: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>This field is used to survey the types of data sources in use. |
     | **[!UICONTROL Import new data]** | Select this option if you want to establish an ongoing connection, so that any new data batches that get added to the datasets in this connection automatically flow into Workspace. Can be set to [!UICONTROL On] or [!UICONTROL Off]. |
     | **[!UICONTROL Dataset backfill]** | Select **[!UICONTROL Request backfill]** to backfill historical data.<ul><li>You can backfill each dataset individually.</li><li>You prioritize new data added to a dataset in the connection, so this new data has the lowest latency.</li><li>Any backfill (historical) data is imported at a slower rate. The latency is influenced by how much historical data that you have.</li><li>The Analytics source connector imports up to 13 months of data  (irrespective of size) for production sandboxes. The backfill in non-production sandboxes is limited to 3 months.</li></ul> |
@@ -75,7 +83,7 @@ The new workflow lets you add an Experience Platform dataset when you create a c
     | **[!UICONTROL Dataset size]** | The dataset's size. |
     | **[!UICONTROL Schema]** | The schema based on which the dataset was created in Adobe Experience Platform. |
     | **[!UICONTROL Dataset]** | The name of the dataset. |
-    | **[!UICONTROL Preview]**: `<dataset name>` | Previews the dataset with date, my ID, and Identifier columns. |
+    | **[!UICONTROL Preview: *dataset name*]** | Previews the dataset with date, my ID, and Identifier columns. |
     | **[!UICONTROL Remove]** | You can delete or remove the dataset and change the Person ID without deleting the whole connection. Deleting or removing reduces the costs involved in data ingestion and the cumbersome process of recreating the whole connection and associated data views. |
 
     {style="table-layout:auto"}
