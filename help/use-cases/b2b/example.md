@@ -62,7 +62,7 @@ See [Add and configure datasets](../../connections/create-connection.md) for mor
 
 To have access to relevant B2B dimensions and metrics when building your Workspace project, you must define your data view accordingly. 
 
-This section provides recommendations and suggestions on what dimensions and metrics to include when defining the [components](../../data-views/create-dataview.md#components) for B2B datasaets in your data view.
+This section provides recommendations and suggestions on what dimensions and metrics to include when defining the [components](../../data-views/create-dataview.md#components) for B2B datasets in your data view.
 
 For each component, the name, schema type, schema path, and (when applicable) details about the configuration are provided.
 
@@ -296,7 +296,7 @@ With your components properly defined, you can now build specific B2B visualizat
 
 Below is an example Workspace project that relies on the connection and data view described above. See the descriptions for each visualization for more details.
 
-+++ Details
++++ Project
 
 ![Visualizations](assets/visualizations.png)
 
