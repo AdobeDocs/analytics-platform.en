@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (October 2023)
 
-**Last update**: October 4, 2023
+**Last update**: October 13, 2023
 
 These release notes cover the release period of October 4, 2023 through October 24, 2023. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -19,7 +19,7 @@ These release notes cover the release period of October 4, 2023 through October 
 | **Migrate Adobe Analytics projects and any included components to Customer Journey Analytics** | You can now migrate your Adobe Analytics projects to Customer Journey Analytics. This process simplifies the transition from Adobe Analytics to Customer Journey Analytics. <p>When you migrate projects to Customer Journey Analytics, assets are mapped from an Adobe Analytics report suite to a Customer Journey Analytics data view.</p> <p>You migrate projects to Customer Journey Analytics from the Adobe Analytics interface. [Learn more](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html)</p> | N/A | October 9, 2023 |
 | **Adobe Product Analytics: Show/Hide Series** |  Click on the chart legend or table rows to control the visibility of series in your visualizations.  [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html?lang=en) | N/A | October 4, 2023 |
 | **Annotations in Adobe Product Analytics** | Guided analysis now supports the ability to view annotations created in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=en) | N/A | October 4, 2023 |
-| **Reporting Activity Manager** | The Reporting Activity Manager lets you see the reporting capacity for each connection in your organization. It provides administrators with detailed visibility into reporting consumption in order to easily diagnose and fix capacity issues during peak reporting times. Key features of the Reporting Activity Manager include:<ul><li>Cancel current reporting requests (including requests from guided analyses and full table exports)</li><li>Restrict subsequent requests for a defined time period</li></ul>In addition to canceling current requests, administrators can now restrict requests for a defined time period. Administrators can restrict requests by request, project, or user.  Learn more (coming soon) | October 17, 2023 | October 23, 2023 |
+| **Reporting Activity Manager** | The Reporting Activity Manager lets you see the reporting capacity for each connection in your organization. It provides administrators with detailed visibility into reporting consumption in order to easily diagnose and fix capacity issues during peak reporting times. Key features of the Reporting Activity Manager include:<ul><li>Cancel current reporting requests (including requests from guided analyses and full table exports)</li><li>Restrict subsequent requests for a defined time period</li></ul>In addition to canceling current requests, administrators can now restrict requests for a defined time period. Administrators can restrict requests by request, project, or user.  [Learn more](/help/reporting-activity-manager/reporting-activity-overview.md) | October 17, 2023 | October 23, 2023 |
 
 {style="table-layout:auto"}
 

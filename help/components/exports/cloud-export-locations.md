@@ -66,6 +66,21 @@ For information about how to manage existing locations, including viewing, editi
 
 1. You can now export data from Analysis Workspace to the account and location that you configured. For information about how to export data to the cloud, see [Export project data to the cloud](/help/analysis-workspace/export/export-cloud.md).
 
+1. The easiest way to access your data in AEP Data Landing Zone is to use the Microsoft Azure Storage Explorer. This is the same tool that is used in the instructions to configure the [AEP Data Landing Zone account](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
+
+   1. Open the [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
+
+   1. Go to [!UICONTROL **Storage Accounts**] > [!UICONTROL **(Attached Containers)**] > [!UICONTROL **Blob Containers**] > **[!UICONTROL cjaexport-_number_]** > ***your_container_name***.
+
+      >[!NOTE]
+      >
+      >The folder name **[!UICONTROL cjaexport-_number_]** is the default name provided by Azure Storage Explorer. If you have only a single connection associated with your SAS URI (which is normal), then the name of this folder will be **[!UICONTROL cjaexport-1]**.
+
+
+      ![Access files in Azure storage explorer](assets/azure-storage-explorer-access.png)
+
+   1. Select the export that you want to download, then select [!UICONTROL **Download**] to download.
+
 ### Amazon S3 Role ARN
 
 1. [Begin creating a cloud export location](#begin-creating-a-cloud-export-location), as described above.
