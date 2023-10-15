@@ -58,7 +58,7 @@ In the table *_organizationID*`.interaction.*`, refers to the custom field group
 See [Add and configure datasets](../../connections/create-connection.md) for more information on how to configure settings for a dataset.
 
 
-## Data views
+## Data view
 
 To have access to relevant B2B dimensions and metrics when building your Workspace project, you must define your data view accordingly. 
 
@@ -294,9 +294,9 @@ The B2B Marketing List Member dataset contains member of marketing lists.
 
 With your components properly defined, you can now build specific B2B visualizations in your Workspace project.
 
-Below is an example Workspace project that relies on the connection and data view described above. See the descriptions for each visualization for more details.
+Below is an example project that relies on the connection and data view described above. See the descriptions for each visualization for more details.
 
-+++ Project
++++ Example project
 
 ![Visualizations](assets/visualizations.png)
 
