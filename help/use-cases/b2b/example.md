@@ -55,7 +55,7 @@ The table below provides an example overview of the [!UICONTROL Person ID], [!UI
 
 In the table *_organizationID*`.interaction.*`, refers to the custom field group that you have added to the B2B Activity schema to define the relationship with  the B2B Account and B2B Opportunity schema. The `listOperations.listKey.sourceKey` refers to the Add To List field group added to the B2B Activity schema to track when a person is added to a specific list.
 
-See [Add and configure datasets](../../connections/create-connection.md) for more information on how to configure settings for a datset.
+See [Add and configure datasets](../../connections/create-connection.md) for more information on how to configure settings for a dataset.
 
 
 ## Data views
@@ -64,16 +64,11 @@ To have access to relevant B2B dimensions and metrics when building your Workspa
 
 This section provides recommendations and suggestions on what dimensions and metrics to include when defining the [components](../../data-views/create-dataview.md#components) of your data view.
 
-For each component, the name, schema path, and (when applicable) details about the configuration are provided.
+For each component, the name, schema type, schema path, and (when applicable) details about the configuration are provided.
 
++++ B2B Activity dataset
 
-### B2B Activity dataset
-
-The B2B Activity dataset contains the relevant experience events and is required as part of a connection.
-
-+++ Details
-
-#### Metrics
+### Metrics
 
 | Component Name | Schema data type | Schema path | Configuration |
 |---|---|---|---|
@@ -105,7 +100,7 @@ The B2B Activity dataset contains the relevant experience events and is required
 {style="table-layout:auto"}
 
 
-#### Dimensions
+### Dimensions
 
 | Component Name | Schema data type | Schema path | Configuration |
 |---|---|---|---|
@@ -133,19 +128,15 @@ The B2B Activity dataset contains the relevant experience events and is required
 +++
 
 
-### B2B Person dataset
-
-The B2B Person dataset contains the relevant profiles.
-
-+++ Details
++++ B2B Person dataset
 
 
-#### Metrics
+### Metrics
 
 No metric components are defined as part of this dataset.
 
 
-#### Dimensions
+### Dimensions
 
 | Component Name | Schema data type | Schema path | Configuration |
 |---|---|---|---|
@@ -154,15 +145,12 @@ No metric components are defined as part of this dataset.
 
 {style="table-layout:auto"}
 
-+++ Details
++++
 
-### B2B Opportunity dataset
 
-The B2B Opportunity dataset contains the relevant opportunities.
++++  B2B Opportunity dataset
 
-+++ Details
-
-#### Metrics
+### Metrics
 
 | Component Name | Schema data type | Schema path | Configuration |
 |---|---|---|---|
@@ -176,7 +164,7 @@ The B2B Opportunity dataset contains the relevant opportunities.
 {style="table-layout:auto"}
 
 
-#### Dimensions
+### Dimensions
 
 | Component Name | Schema data type | Schema path | Configuration |
 |---|---|---|---|
@@ -193,13 +181,10 @@ The B2B Opportunity dataset contains the relevant opportunities.
 
 +++
 
-### B2B Campaign dataset
 
-The B2B Campaign dataset contains campaign data.
++++ B2B Campaign dataset
 
-+++ Details
-
-#### Metrics
+### Metrics
 
 | Component Name | Schema data type | Schema path | Configuration |
 |---|---|---|---|
@@ -208,7 +193,7 @@ The B2B Campaign dataset contains campaign data.
 {style="table-layout:auto"}
 
 
-#### Dimensions
+### Dimensions
 
 | Component Name | Schema data type | Schema path | Configuration |
 |---|---|---|---|
@@ -223,13 +208,10 @@ The B2B Campaign dataset contains campaign data.
 +++
 
 
-### B2B Account dataset
 
-The B2B Account dataset contains the account data.
++++ B2B Account dataset
 
-+++ Details
-
-#### Metrics
+### Metrics
 
 | Component Name | Schema data type | Schema path | Configuration |
 |---|---|---|---|
@@ -239,7 +221,7 @@ The B2B Account dataset contains the account data.
 {style="table-layout:auto"}
 
 
-#### Dimensions
+### Dimensions
 
 | Component Name | Schema data type | Schema path | Configuration |
 |---|---|---|---|
@@ -259,13 +241,9 @@ The B2B Account dataset contains the account data.
 +++
 
 
-### B2B Campaign Member dataset
++++ B2B Campaign Member dataset
 
-The B2B Campaign Member dataset contains the interactions of members of campaigns.
-
-+++ Details
-
-#### Metrics
+### Metrics
 
 | Component Name | Schema data type | Schema path | Configuration |
 |---|---|---|---|
@@ -278,7 +256,7 @@ The B2B Campaign Member dataset contains the interactions of members of campaign
 
 {style="table-layout:auto"}
 
-#### Dimensions
+### Dimensions
 
 | Component Name | Schema data type | Schema path | Configuration |
 |---|---|---|---|
