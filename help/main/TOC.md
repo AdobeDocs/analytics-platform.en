@@ -329,6 +329,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
   + B2B {#b2b}
+    + [An example B2B project](../use-cases/b2b/example.md)
     + [Add account-level data as a lookup dataset](../use-cases/b2b/b2b.md)
   + Cross-channel data {#cross-channel}
     + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
