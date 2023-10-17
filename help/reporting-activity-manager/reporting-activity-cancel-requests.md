@@ -16,7 +16,7 @@ Consider the following when cancelling reporting requests:
 
 * When you cancel requests, you can also choose to restrict subsequent requests for a given time period.
 
-  When you restrict a subsequent request, the action is recorded in the [Audit Log](help/privacy/audit-log.md) with the action name of EMBARGO. 
+  When you restrict a subsequent request, the action is recorded in the [Audit Log](/help/privacy/audit-log.md) with the action name of EMBARGO. 
 
 * You cannot cancel a request if the [!UICONTROL **User**] column of a request shows as [!UICONTROL **Unrecognized**]. When this occurs, it means that the user is in a login company where you do not have administrative permissions.
 
