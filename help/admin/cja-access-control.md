@@ -19,6 +19,7 @@ Product Admins have permissions to complete any task necessary within Customer J
 * Create/update/delete connections or data views
 * Update/delete projects, filters, calculated metrics, audiences, annotations, or filters created by other users
 * Share Workspace projects to all users
+* Manage reporting activity in the [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md)
 
 Becoming a product admin in Customer Journey Analytics alone is not enough to create, update, or delete a [connection](/help/connections/overview.md). To create a connection to an Experience Platform dataset, you also need Experience Platform permissions. Specifically, you must be part of an **Experience Platform Product Profile** that gives you the following permissions:
 

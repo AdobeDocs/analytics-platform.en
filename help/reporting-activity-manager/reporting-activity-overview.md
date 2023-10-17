@@ -26,9 +26,7 @@ Reporting Activity Manager provides the following benefits:
 
 <!-- update for CJA -->
 
-To manage reporting activity, you must have the Analytics Product Administrator permission in Adobe Admin Console.
-
-![permission](assets/rep-mgr-permission.png)
+To manage reporting activity, you must have the Product Admin role. For more information, see [Product Admin role](/help/admin/cja-access-control.md#product-admin-role) in [Customer Journey Analytics Access Control](/help/admin/cja-access-control.md).
 
 ## View reporting activity
 
@@ -37,11 +35,3 @@ For information about viewing reporting activity in the Reporting Activity Manag
 ## Cancel reporting requests
 
 For information about cancelling reporting requests in the Reporting Activity Manager, see [Cancel reporting requests in the Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-cancel-requests.md).
-
-## Frequently asked questions {#faq}
-
-| Question | Answer |
-| --- | --- |
-| Can I purchase additional reporting capacity? | This capability will be available in the near future. |
-
-{style="table-layout:auto"}
