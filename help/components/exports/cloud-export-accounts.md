@@ -7,8 +7,6 @@ exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 ---
 # Configure cloud export accounts
 
-{{release-limited-testing}}
-
 Before you can export Customer Journey Analytics reports to a cloud destination as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to add and configure the destination where you want the data to be sent. 
 
 This process consists of adding and configuring the account (such as Amazon S3, Google Cloud Platform, and so forth) as described in this article, and then adding and configuring the location within that account (such as a folder within the account) as described in [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).
