@@ -11,7 +11,7 @@ hidefromtoc: yes
 
 This use case describes how to use the power of derived fields to set goals for a specific dimension and then use these goals in your Workspace project.
 
-If you are not familiar with derived fields, refer to the [tutorial](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=en) and [documentation](targets-using-derived-fields.md) for an introduction.
+If you are not familiar with derived fields, refer to the [tutorial](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=en) and [documentation](../data-views/derived-fields/derived-fields.md) for an introduction.
 
 
 ## Define goals
