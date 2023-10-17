@@ -7,8 +7,6 @@ exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 ---
 # Manage cloud export locations and accounts
 
-{{release-limited-testing}}
-
 You can view, edit, and delete cloud export locations.
 
 For information about how to create a new location, see [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).

@@ -7,8 +7,6 @@ exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 ---
 # Export Customer Journey Analytics reports to the cloud
 
-{{release-limited-testing}}
-
 You can export Workspace full tables from Customer Journey Analytics and send exports to designated cloud destinations. 
 
 Other methods of exporting Customer Journey Analytics reports are also available, as described in [Export overview](/help/analysis-workspace/export/export-project-overview.md).
