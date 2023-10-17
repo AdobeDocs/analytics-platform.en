@@ -1,6 +1,6 @@
 ---
 title: Use derived fields to report on goals
-description: Understand how you can use Derived fields to report on goals (target) in your Workspace projects.
+description: Understand how you can use Derived fields to report on goals (targets) in your Workspace projects.
 solution: Customer Journey Analytics
 feature: Use Cases
 hide: yes
@@ -21,7 +21,7 @@ To define goals, create a new derived field where you explicitly set custom nume
 
 ### Monthly Gift Certificate Orders Goals
 
-You want to explicitly set goals for your gift certificate orders for 4 months, ranging from July 2023 - October 2023. To do this:
+You want to explicitly set goals for your gift certificate orders for four months, ranging from July 2023 - October 2023. To do this:
 
 1. Create a new derived field with the name `Monthly Gift Certificate Orders Goal (Incremental)`.
 
@@ -40,7 +40,7 @@ You want to set a monthly revenue goal for each of your marketing channels. To d
 
     ![Definition of rules for marketing channel derived field](assets/goals-derived-field-marketing-channel-1.png)
 
-1. Explicity set static values, representing monthly revenue goals, for the specific marketing channels in a final CASE WHEN rule, by setting a **[!UICONTROL Custom numeric value]**. See the [!DNL Monthly Goal] rule below.
+1. Explicitly set static values, representing monthly revenue goals, for the specific marketing channels in a final CASE WHEN rule, by setting a **[!UICONTROL Custom numeric value]**. See the [!DNL Monthly Goal] rule below.
 
     ![Monthly Goals](assets/goals-derived-field-marketing-channel-2.png)
 
@@ -48,7 +48,7 @@ You want to set a monthly revenue goal for each of your marketing channels. To d
 
 ## Use goals
 
-To use goals in your Workspace project, use the calculated metric functionality to 'normalize' the derived field back to its orginal static value.
+To use goals in your Workspace project, use the calculated metric functionality to 'normalize' the derived field back to its original static value.
 
 ### Monthly Gift Certificate Orders Goals
 
