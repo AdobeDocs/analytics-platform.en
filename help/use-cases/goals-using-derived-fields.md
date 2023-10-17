@@ -56,7 +56,7 @@ To use goals in your Workspace project, use the calculated metric functionality 
 
     ![Orders Goal](assets/calculated-metric-ordersgoals.png)
 
-1. You can create additional calculated fields, for example `% of Monthly Gift Certificate Orders Goal`, to show actual revenue progresses against the goals, for example:
+1. You can create additional calculated fields, for example `% of Monthly Gift Certificate Orders Goal`, to show actual progress against goals, for example:
 
     ![Orders Goal Percentage](assets/calculated-metric-ordersgoalspercent.png)
 
@@ -71,7 +71,7 @@ You can use these calculated metrics to report on progress in freeform tables an
 
     ![Revenue Goal](assets/calculated-metric-revenuegoals.png)
 
-1. You can create additional calculated fields, for example `% of Marketing Channel Revenue Goal`, to show actual revenue progresses against the goals, for example:
+1. You can create additional calculated fields, for example `% of Marketing Channel Revenue Goal`, to show actual progress against goals, for example:
 
     ![Revenue Goal Percentage](assets/calculated-metric-revenuegoalspercent.png)
 
