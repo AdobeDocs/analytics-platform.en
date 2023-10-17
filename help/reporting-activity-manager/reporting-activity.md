@@ -115,11 +115,17 @@ Hover over the chart to view points in time where the maximum average wait time 
 
 ### View table {#view-table}
 
-You can choose to view data by choosing any of the following tabs at the top of the data table: [!UICONTROL **Request**], [!UICONTROL **User**], [!UICONTROL **Project**], or [!UICONTROL **Application**].
+When viewing the table, consider the following:
 
->[!TIP]
->
->You can select [!UICONTROL **Hide graphs**] to show only the table.
+* You can choose to view data by choosing any of the following tabs at the top of the data table: [!UICONTROL **Request**], [!UICONTROL **User**], [!UICONTROL **Project**], or [!UICONTROL **Application**].
+
+* You can search or filter the list of connections:
+
+  * Use the search field to search for a specific connection. Begin typing the connection name or ID and the list of connections updates as you type.
+  
+  * Select the [!UICONTROL **Filter**] icon ![Filter icon](assets/filter-icon.png) to expand the list of filter options. You can filter by [!UICONTROL **Status**], [!UICONTROL **Complexity**], [!UICONTROL **Application**], [!UICONTROL **User**], or [!UICONTROL **Project**].
+
+  * You can select [!UICONTROL **Hide graphs**] to show only the table.
 
 ![table tabs](assets/indiv-report-ste-table-tabs.png)
 
@@ -129,7 +135,7 @@ When you select the [!UICONTROL **Request**] tab, the following columns are avai
 
 | Column | Description |
 | --- | --- |
-| [!UICONTROL **Request ID**] | A unique ID that can be used for troubleshooting purposes. |
+| [!UICONTROL **Request ID**] | A unique ID that can be used for troubleshooting purposes. To copy the ID, select the request, then select the option, [!UICONTROL **Copy request ID**]. |
 | [!UICONTROL **Time run**] | How long the request has been running. |
 | [!UICONTROL **Start time**] | When the request started processing (based on the administrator's local time). |
 | [!UICONTROL **Wait time**] | How long the request has been waiting before being processed. This value is generally at "0" when there is enough capacity. |
