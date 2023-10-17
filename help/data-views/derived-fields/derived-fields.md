@@ -94,6 +94,22 @@ When you define a rule in the rule builder, you use the rule interface.
 
    - Select **[!UICONTROL **Save As**]** to save the derived field as a new derived field. The new derived field has the same name as the original edited derived field with `(copy)` added to it.
 
+Alternatively, if you have used a derived field as a component for dimensions or metrics in your data view:
+
+1. Select the component. Note that the component might have a different name than your derived field. 
+
+1. In the Component panel, select the ![Edit icon](assets/Smock_Edit_18_N.svg) next to your derived field, underneath Schema field name.
+
+1. To edit your derived field, use the [!UICONTROL Edit derived field] interface. See [Derived field interface](#derived-field-interface).
+
+   - Select **[!UICONTROL **Save**]** to save your updated derived field.
+
+   - Select **[!UICONTROL **Cancel**]** to cancel any changes you made to the derived field.
+
+   - Select **[!UICONTROL **Save As**]** to save the derived field as a new derived field. The new derived field has the same name as the original edited derived field with `(copy)` added to it.
+
+
+
 ## Delete a derived field
 
 1. Select an existing Data view. See [Data views](../data-views.md) for more information.
@@ -106,7 +122,19 @@ When you define a rule in the rule builder, you use the rule interface.
 
 5. Hover over the derived field that you want to delete, and select ![Edit icon](assets/Smock_Edit_18_N.svg).
 
-6. In the Use **[!UICONTROL **Edit derived field**]** interface, select Delete.
+6. In the [!UICONTROL Edit derived field] interface, select **[!UICONTROL Delete]**.
+
+    A [!UICONTROL Delete component] dialog asks you to confirm the deletion. Consider any external references there might exist to the derived field outside of the Data view. 
+    
+   - Select **[!UICONTROL **Continue**]** to delete the derived field.
+
+Alternatively, if you have used a derived field as a component for dimensions or metrics in your data view:
+
+1. Select the component. Note that the component might have a different name than your derived field. 
+
+1. In the Component panel, select the ![Edit icon](assets/Smock_Edit_18_N.svg) next to your derived field, underneath Schema field name.
+
+1. In the [!UICONTROL Edit derived field] interface, select **[!UICONTROL Delete]**.
 
     A [!UICONTROL Delete component] dialog asks you to confirm the deletion. Consider any external references there might exist to the derived field outside of the Data view. 
     
