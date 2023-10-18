@@ -25,7 +25,7 @@ Use cases for this view type include:
 
 * **Cohort analysis**: Group users into cohorts based on any event, such as sign-ups or purchases. You can compare the stickiness of these groups and determine how to approach improving that group's user experience.
 * **Subscription service analysis**: If your product employs a subscription or another type of recurring revenue model, you can see the percentage of users that are making the most of your product. Those who do not use your product or service are more likely to churn, allowing you a way to identify and focus on those users.
-* **User engagement**: Evaluate how certain types of users engage with your product, and compare side-by-side how often they return. A given segment with a steeper retention curve than others can provide you with insight around improving potential sub-par experiences that they might have.
+* **User engagement**: Evaluate how certain types of users engage with your product, and compare side by side how often they return. A given segment with a steeper retention curve than others can provide you with insight around improving potential subpar experiences that they might have.
 
 ## Query rail
 
@@ -57,7 +57,7 @@ The desired date range for your analysis. There are two components to this setti
 * **[!UICONTROL Interval]**: The date granularity that you want to view retention data. Valid options include Daily, Weekly, Monthly, and Quarterly. The same date range can have different intervals, which affect automatically set duration days.
 * **[!UICONTROL Date]**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
 
-If you select a date range close to the present day, users that initially engage too close to the current day are not included. This analysis always gives all users an opportunity to be included in all duration buckets. A message below the calendar picker provides information around the date range where users engage, and the interval that is reserved only for returning users:
+If you select a date range close to the present day, users that initially engage too close to the current day are not included. This analysis always gives all users the chance to be included in all duration buckets. A message below the calendar picker provides information around the date range where users engage, and the interval that is reserved only for returning users:
 
 * **Analyzing the first [Date interval] of the cohort from [Date range]**: If a user engages with the event within this date range, they are included in the analysis. This date range guarantees all users enough time to qualify for all duration buckets. This date range can be different than your selection if it is close to the present day.
 * **The final [Date interval] is reserved to complete the analysis**: If a user engages with the event for the first time within this interval, they are **not** included in the analysis. Users that initially engage with the event within this interval would not have an opportunity to qualify for all duration buckets, or are outside of the desired date range.
