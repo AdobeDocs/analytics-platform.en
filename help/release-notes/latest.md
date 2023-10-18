@@ -17,12 +17,14 @@ These release notes cover the release period of October 4, 2023 through October 
 | **Row count metrics for lookup and profile datasets** | These metrics were previously available only for event datasets. | October 16, 2023 |
 | **Export full tables to the cloud** | Customer Journey Analytics Full Table Export allows you to export millions of Workspace rows to cloud destinations. <p>Exporting full tables offers one-time or scheduled delivery of data tables designed within Workspace with support for up to five breakdowns, five metrics, filters, and calculated metrics, all in a concatenated table. It is the evolution of Data Warehouse reports in Adobe Analytics, with many new, often-requested features that are not available in Data Warehouse today.</p><p> Cloud export options include:</p><ul><li>Adobe Experience Platform Data Landing Zone</li><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li><li>Snowflake</li></ul>For more information, see [Export Customer Journey Analytics reports to the cloud](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html).| October 4, 2023 | October 19, 2023 |
 | **Reporting Activity Manager** | The Reporting Activity Manager lets you see the reporting capacity for each connection in your organization. It provides administrators with detailed visibility into reporting consumption in order to easily diagnose and fix capacity issues during peak reporting times. Key features of the Reporting Activity Manager include:<ul><li>Cancel current reporting requests (including requests from guided analyses and full table exports)</li><li>Restrict subsequent requests for a defined time period</li></ul>In addition to canceling current requests, administrators can now restrict requests for a defined time period. Administrators can restrict requests by request, project, or user.  [Learn more](/help/reporting-activity-manager/reporting-activity-overview.md) | October 17, 2023 | October 23, 2023 |
+| **Adobe Product Analytics enhancements** |<ul><li>Trendlines:</li><li>Query breakdowns:</li><li>Retention Analysis</li></ul> |  | October 25, 2023 |
+| **Documentation for CJA Data Views API** | [Learn more](https://developer.adobe.com/cja-apis/docs/endpoints/dataviews/) |  | October 16, 2023 |
 
 {style="table-layout:auto"}
 
 ## Fixes in Customer Journey Analytics
 
-AN-325940; AN-326468; AN-328301; AN-328640; AN-329370 
+TBD
 
 ## Important notices for Customer Journey Analytics Administrators
 
@@ -31,15 +33,6 @@ AN-325940; AN-326468; AN-328301; AN-328640; AN-329370
 | N/A | N/A| N/A |
 
 {style="table-layout:auto"}
-
-## End-of-life (EOL) notices
-
-| EOL Product or Feature | Date added or updated | Description |
-| --- | --- | --- |
-| **Migration to Adobe I/O OAuth Server-to-Server credentials** | May 11, 2023 |  Adobe Analytics API, Customer Journey Analytics API, and Livestream customers using Adobe I/O JWT credentials must migrate to Adobe I/O OAuth Server-to-Server credentials by **January 1, 2025**. Adobe I/O will not allow new JWT credentials to be created beginning May 1, 2024. Customers using JWT must create a new OAuth Server-to-Server credential or migrate their existing JWT credential to an OAuth Server-to-Server credential. Customers must also update their client applications to use the new OAuth Server-to-Server credentials. <ul><li>[Migrating from Service Account (JWT) credentials](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[Using the new OAuth Server-to-Server credentials](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[FAQs](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul> |
-
-{style="table-layout:auto"}
-
 
 ## Related resources
 
