@@ -241,7 +241,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Find metrics](../components/calc-metrics/cm-workflow/cm-finding.md)
       + [Build metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
       + [Metric type and attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-      + [Build a "Participation" metric](../components/calc-metrics/cm-workflow/participation-metric.md)
+      + [Build a participation metric](../components/calc-metrics/cm-workflow/participation-metric.md)
       + [Filtered metrics](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
       + [Stack and replace filters](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
       + [Filtered and weighted metrics](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
@@ -289,6 +289,11 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Restricted Labels](../report-builder/restricted-labels.md)
   + [Report Builder Settings](../report-builder/report-builder-settings.md)
 
++ Reporting Activity Manager {#reporting-activity-manager}
+  + [Overview](../reporting-activity-manager/reporting-activity-overview.md)
+  + [View reporting activity](../reporting-activity-manager/reporting-activity.md)
+  + [Cancel reporting requests](../reporting-activity-manager/reporting-activity-cancel-requests.md)
+
 + Stitching {#stitching}
   + [Overview](../stitching/overview.md)
   + [How stitching works](../stitching/explained.md)
@@ -326,6 +331,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
   + B2B {#b2b}
+    + [An example B2B project](../use-cases/b2b/example.md)
     + [Add account-level data as a lookup dataset](../use-cases/b2b/b2b.md)
   + Cross-channel data {#cross-channel}
     + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
@@ -335,6 +341,9 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
   + Complex data {#complex-data}
     + [Use arrays of objects](../use-cases/object-arrays.md)
+  + Derived fields {#derived-fields}
+    + [Use derived fields to report on goals](../use-cases/goals-using-derived-fields.md)
+
 
 + Administration {#cja-admin}
   + [Access Control](../admin/cja-access-control.md)

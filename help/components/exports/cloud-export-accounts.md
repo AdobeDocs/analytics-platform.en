@@ -7,8 +7,6 @@ exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 ---
 # Configure cloud export accounts
 
-{{release-limited-testing}}
-
 Before you can export Customer Journey Analytics reports to a cloud destination as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to add and configure the destination where you want the data to be sent. 
 
 This process consists of adding and configuring the account (such as Amazon S3, Google Cloud Platform, and so forth) as described in this article, and then adding and configuring the location within that account (such as a folder within the account) as described in [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).
@@ -59,9 +57,36 @@ For information about how to manage existing accounts, including viewing, editin
 
    ![Export account dialog AEP Data Landing Zone](assets/export-account-aep.png)
 
-1. Copy the contents of the [!UICONTROL **SAS URI**] field to your clipboard. Use this SAS URI to access the data that is exported from Analysis Workspace from the AEP Landing Zone.
+1. Copy the contents of the [!UICONTROL **SAS URI**] field to your clipboard. You will use this SAS URI to access the data that is exported from Analysis Workspace from the AEP Data Landing Zone.
 
-1. Select [!UICONTROL **OK**].
+   If this field is empty, you need to be granted permission to access Adobe Experience Platform.
+
+1. In Adobe Experience Platform, configure your Data Landing Zone container to use the SAS URI that you copied.
+
+   >[!NOTE]
+   >
+   >Because the AEP Data Landing Zone account is based on Azure, the easiest way to access reports that you export to AEP Data Landing Zone is by using the Azure Storage Explorer. The following steps use this method.
+
+   1. If you haven't already, download the [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
+   
+   1. In the Adobe Experience Platform documentation, follow the steps described in [Connect your Data Landing Zone container to Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#connect-your-data-landing-zone-container-to-azure-storage-explorer).
+
+      You can skip the tasks described in the sections [Retrieve the credentials for your Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#retrieve-dlz-credentials) and [Update Data Landing Zone credentials](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#update-dlz-credentials), because the URI that you copied contains these credentials.
+
+   1. When following the Adobe Experience Platform documentation and you come to the [!UICONTROL **Blob container SAS URL**] field, paste the SAS URI that you copied in Step 3.
+
+      >[!NOTE]
+      >
+      >You need to perform this action every 7 days, because the SAS URI expires 7 days after it is created. You can create a script to automate this process.
+
+
+        ![SAS URL field](assets/blob-container-sas-uri.png)
+
+   1. Select [!UICONTROL **Next**] > [!UICONTROL **Connect**].
+
+1. In Customer Journey Analytics, in the [!UICONTROL **Export account created**] dialog, select [!UICONTROL **OK**].
+
+   ![Export account dialog AEP Data Landing Zone](assets/export-account-aep.png)
 
 1. Continue with [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).
 
