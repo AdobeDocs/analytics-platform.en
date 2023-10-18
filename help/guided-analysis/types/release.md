@@ -16,7 +16,7 @@ The **[!UICONTROL Release]** view shows a comparison of how key indicators perfo
 Use cases for this view type include:
 
 * **Overall performance evaluation:** Comparing overall key indicators, such as engagement measures, can help you determine if a given release was overall successful.
-* **Monitoring**: Track vital metrics that you would expect to remain flat when changes are made, such as load time or number of log ins. Use this analysis type to compare them before and after a release to ensure that it didn't have any unintended consequences.
+* **Monitoring**: Track vital metrics that you would expect to remain flat when changes are made, such as load time or number of logins. Use this analysis type to compare them before and after a release to ensure that it didn't have any unintended consequences.
 * **Feature adoption**: If a product update is focused on improving a certain feature, you can use this view to directly compare that feature's usage before and after the product update.
 * **Bug detection**: Tracking the number of errors before and after a release can provide an early indicator of customer issues. If you notice an increase of errors immediately following a release, you can work with engineering or development teams to identify and correct the issue, preventing further impact to customers.
 
