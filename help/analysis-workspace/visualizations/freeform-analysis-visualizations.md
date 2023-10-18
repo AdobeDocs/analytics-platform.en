@@ -13,8 +13,8 @@ Workspace offers a number of visualizations that let you generate visual represe
 
 The following visualization types are available in Analysis Workspace:
 
-| Visualization name | Description | Use cases |
-| --- | --- | --- |
+| Visualization name | Description |
+| --- | --- | 
 | [Area](/help/analysis-workspace/visualizations/area.md)<p>![Area icon](assets/Smock_GraphArea_18_N.svg)</p>  | Like a line graph, but with a colored area below the line. Use an area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics. | Answers questions like: <ul><li> |
 | [Bar](/help/analysis-workspace/visualizations/bar.md) <p>![Bar icon](assets/Smock_GraphBarVertical_18_N.svg)</p> | Shows vertical bars representing various values across one or more metrics. |
 | [Bullet graph](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![Bullet icon](assets/Smock_GraphBullet_18_N.svg)</p> | Shows how a value you are interested in compares to or measures against other performance ranges (goals). |
