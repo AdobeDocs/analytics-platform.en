@@ -151,16 +151,16 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Media Concurrent Viewers panel](../analysis-workspace/c-panels/media-concurrent-viewers.md)
     + [Media Playback Time Spent panel](../analysis-workspace/c-panels/media-playback-time-spent.md)
   + Curate, Share and Schedule projects {#curate-share}
-        + [Share menu](../analysis-workspace/curate-share/send-schedule-files.md)
-        + [Curate projects](../analysis-workspace/curate-share/curate.md)
-        + [Share projects](../analysis-workspace/curate-share/share-projects.md)
-        + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
-        + [View-only projects](../analysis-workspace/curate-share/view-only-projects.md)
+      + [Share menu](../analysis-workspace/curate-share/send-schedule-files.md)
+      + [Curate projects](../analysis-workspace/curate-share/curate.md)
+      + [Share projects](../analysis-workspace/curate-share/share-projects.md)
+      + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
+      + [View-only projects](../analysis-workspace/curate-share/view-only-projects.md)
   + Export {#export}
-        + [Export overview](../analysis-workspace/export/export-project-overview.md)
-        + [Download](../analysis-workspace/export/download-send.md)
-        + [Send to others](../analysis-workspace/export/t-schedule-report.md)
-        + [Export to the cloud](../analysis-workspace/export/export-cloud.md)
+      + [Export overview](../analysis-workspace/export/export-project-overview.md)
+      + [Download](../analysis-workspace/export/download-send.md)
+      + [Send to others](../analysis-workspace/export/t-schedule-report.md)
+      + [Export to the cloud](../analysis-workspace/export/export-cloud.md)
   + Virtual Analyst {#virtual-analyst}
     + [Virtual Analyst overview](../analysis-workspace/virtual-analyst/overview.md)
     + Anomaly Detection {#anomaly-detection}
