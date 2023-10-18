@@ -33,7 +33,7 @@ The query rail allows you to configure the following components:
 The Release view offers the following chart settings, which can be adjusted in the menu above the chart:
 
 * **[!UICONTROL Metric]**: The metric that you want to measure. Options include [!UICONTROL Events per user], [!UICONTROL Percentage of users], [!UICONTROL Events], [!UICONTROL Sessions], and [!UICONTROL Users].
-* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include Line.
+* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Line] and [!UICONTROL Bar].
 
 ## Date range
 
