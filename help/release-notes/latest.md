@@ -4,17 +4,17 @@ description: Latest Customer Journey Analytics release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 ---
-# Current Adobe Customer Journey Analytics release notes (October 2023)
+# Current Adobe Customer Journey Analytics release notes (October/November 2023)
 
 **Last update**: October 18, 2023
 
-These release notes cover the release period of October 4, 2023 through October 25, 2023. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
+These release notes cover the release period of October 16, 2023 through end of November 2023. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
 ## New or updated features 
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Product Analytics enhancements** |<ul><li>Trendlines:</li><li>Query breakdowns:</li><li>Retention Analysis</li></ul> |  | October 25, 2023 |
+| **Adobe Product Analytics enhancements** |<ul><li>Trend lines:</li><li>Query breakdowns:</li><li>Retention analysis</li></ul> |  | October 25, 2023 |
 | **Connections Detail Page - Skipped Records** | This capability gives you insight into why certain records were skipped during data ingestion. Possible reasons can include big visitor IDs (1 million+ records), missing timestamps and missing person IDs. (Documentation to follow) | N/A | October 25, 2023 |
 | **Documentation for CJA Data Views API** | [Learn more](https://developer.adobe.com/cja-apis/docs/endpoints/dataviews/) | N/A | October 16, 2023 |
 | **Row count metrics for lookup and profile datasets** | These metrics were previously available only for event datasets. | N/A | October 16, 2023 | 
