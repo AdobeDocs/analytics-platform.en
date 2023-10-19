@@ -14,7 +14,7 @@ These release notes cover the release period of October 16, 2023 through end of 
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Product Analytics enhancements** |<ul><li>Trend lines:</li><li>Query breakdowns:</li><li>Retention analysis</li></ul> |  | October 25, 2023 |
+| **New capabilities in Adobe Product Analytics** |<ul><li>Trendlines: The [Usage view](/help/guided-analysis/types/usage.md) now supports trendlines. Click (!UICONTROL Overlays) to enable them.</li><li>Query breakdowns: The [Usage view](/help/guided-analysis/types/usage.md) now supports query breakdowns. They are available as an option in the query rail.</li><li>Retention analysis: The [Retention rates](/help/guided-analysis/types/retention-rates.md) view type shows the percentage of users that return after their initial engagement.</li></ul> |  | October 25, 2023 |
 | **Connections Detail Page - Skipped Records** | This capability gives you insight into why certain records were skipped during Customer Journey Analytics data ingestion. Possible reasons can include big visitor IDs (more than 1 million records), missing timestamps and missing person IDs. (Documentation to follow) | N/A | October 25, 2023 |
 | **Documentation for CJA Data Views API** | [Learn more](https://developer.adobe.com/cja-apis/docs/endpoints/dataviews/) | N/A | October 16, 2023 |
 | **Row count metrics for lookup and profile datasets** | These metrics were previously available only for event datasets. | N/A | October 16, 2023 | 
