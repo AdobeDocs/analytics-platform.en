@@ -48,7 +48,7 @@ You want to set a monthly revenue goal for each of your marketing channels. To d
 
 ## Use goals
 
-To use goals in your Workspace project, use the calculated metric functionality to 'normalize' the derived field back to its original static value.
+To use goals in your Workspace project, you use the calculated metric functionality to 'normalize' the derived field back to its original static value. This normalization is required as the static values you set for the derived fields defining goals, are incremented with every event.
 
 ### Monthly Gift Certificate Orders Goals
 

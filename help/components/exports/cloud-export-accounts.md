@@ -31,7 +31,7 @@ For information about how to manage existing accounts, including viewing, editin
 
 1. Continue with the section below that corresponds to the [!UICONTROL **Account type**] you selected.
 
-   * [AEP Data Landing Zone](#adobe-experience-platform)
+   * [AEP Data Landing Zone](#aep-data-landing-zone)
 
    * [Amazon S3 Role ARN](#amazon-s3-role-arn)
 
