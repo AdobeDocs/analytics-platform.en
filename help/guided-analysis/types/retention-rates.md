@@ -8,7 +8,7 @@ hidefromtoc: yes
 ---
 # Retention rates
 
-{{#release-limited-testing}}
+{{release-limited-testing}}
 
 The **[!UICONTROL Retention rates]** view shows the percentage of users that return after their initial engagement within the desired date range. The horizontal axis represents the number of days since a user's initial engagement. The vertical axis represents the percentage of users who engage again.
 
