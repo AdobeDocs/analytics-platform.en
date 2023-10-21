@@ -1,5 +1,5 @@
 ---
-description: The Flow feature shows customer paths through your websites and apps.
+description: Learn about the Flow feature showing customer paths through your websites and apps.
 title: Flow overview
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
