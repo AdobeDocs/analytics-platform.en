@@ -1,6 +1,6 @@
 ---
-description: Use the flow visualization in a Workspace project.
-title: Configure a flow visualization
+description: Learn how to use the flow visualization in a Workspace project.
+title: How to configure a flow visualization
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
@@ -11,7 +11,7 @@ Flow visualizations help you understand the journey stemming from or leading up 
 
 Flow visualizations let you configure the start or end of the path you are interested in, or analyze all paths that flow through a dimension or dimension item.
 
-![new Flow UI](assets/new-flow.png)
+![The Flow configuration screen showing the Starts with, Contains, and Ends with fields.](assets/new-flow.png)
 
 ## Create a flow visualization {#configure}
 
@@ -39,11 +39,11 @@ Flow visualizations let you configure the start or end of the path you are inter
 
 1. If you choose a metric, you also need to provide a [!UICONTROL **Pathing Dimension**] to use as your path leading to or going from your selected component, as shown here. The default is [!UICONTROL **Page**].
 
-   ![pathing dimension](assets/pathing-dim.png) 
+   ![The Pathing dimension.](assets/pathing-dim.png) 
 
 1. (Optional) Select **[!UICONTROL Show advanced settings]** to configure any of the following options:
 
-   ![advanced settings](assets/adv-settings.png)
+   ![Advanced settings with Disiplay options, Number of columns and Flow container.](assets/adv-settings.png)
 
    | Setting | Description |
    | --- | --- |
@@ -74,7 +74,7 @@ Flow visualizations let you configure the start or end of the path you are inter
 
 ## View and change the Flow output {#output}
 
-![flow output](assets/flow-output.png)
+![Flow output example showing Ends with Visits, Pathing dimension: Page, and Flow container: Vistors.](assets/flow-output.png)
 
 A summary of the Flow configuration appears at the top of the diagram. The paths in the diagram are proportional. Paths with more activity appear thicker. 
 
@@ -84,7 +84,7 @@ To drill down further into the data, you have several options:
 
 * When you click on a node in the diagram, the details for that node appear. Click on the node again to collapse it.
 
-   ![node-details](assets/node-details.png)
+   ![Example interactive flow diagram showing node-details.](assets/node-details.png)
 
 * You can filter a column to display only certain results, such as including and excluding, specifying criteria, etc.
 

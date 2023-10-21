@@ -21,11 +21,11 @@ You can create filters from a touchpoint, add filters as touchpoint, and compare
 
 1. Create a filter from a specific touchpoint that you are especially interested in and that might be useful to apply to other reports. You do this by right-clicking the touchpoint and selecting **[!UICONTROL Create filter from touchpoint]**.
 
-   ![](assets/segment-from-touchpoint.png)
+   ![The Touchpoint drop-down menu with Create segment from touchpoint highlighted.](assets/segment-from-touchpoint.png)
 
    The Filter Builder opens, pre-populated with the pre-built sequential filter that matches the touchpoint you selected:
 
-   ![](assets/segment-builder.png)
+   ![The Filter Builder displays the pre-populated and pre-built sequential filter.](assets/segment-builder.png)
 
 1. Give the filter a title and description and save it.
 
@@ -35,7 +35,7 @@ You can create filters from a touchpoint, add filters as touchpoint, and compare
 
 If you want to see, for example, how your US users trend and affect the fallout, just drag the US users filter into the fallout:
 
-![](assets/segment-touchpoint.png)
+![The US Users filter selected and  highlighted to drag into the fallout.](assets/segment-touchpoint.png)
 
 Or you can create an AND touchpoint by dragging the US users filter onto another checkpoint.
 
@@ -46,10 +46,10 @@ You can compare an unlimited number of filters in the Fallout visualization.
 1. Select the filters you want to compare from the [!UICONTROL Filter] rail on the left. In our example, we have selected 2 filters: US Users and Non-US Users.
 1. Drag them into the Filter drop zone at the top.
 
-   ![](assets/segment-drop.png)
+   ![The Fallout visulatization with selected filters and red arrow pointing to the Filter drop zone.](assets/segment-drop.png)
 
 1. Optional: You can keep "All Visits" as the default container or delete it.
 
-   ![](assets/seg-compare.png)
+   ![The Fallout showing All Visits along with the two filters dragged in the previous step.](assets/seg-compare.png)
 
 1. You can now compare the fallout across the two filters, such as where one filter is outperforming another, or other insights.

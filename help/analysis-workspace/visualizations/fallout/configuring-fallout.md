@@ -18,7 +18,7 @@ You can do pathing on eVars, including merchandising eVars and [listVars](https:
 
 1. Drag the Page dimension into the Freeform Table and from there, drag a page (in this case, Home - JJEsquire) into the **[!UICONTROL Add TouchPoint]** field as the first touchpoint.
 
-   ![](assets/fallout1.png)
+   ![The All Visits drop-down showing JJEsquire dragged to the Add Touchpoint field.](assets/fallout1.png)
 
    Hover over a touchpoint to see the fallout and other information about that level, such as the name of the touchpoint, the person count at that point, and see the success rate for that touchpoint (as well as compare the success rate to other touchpoints.)
 
@@ -34,11 +34,11 @@ You can do pathing on eVars, including merchandising eVars and [listVars](https:
    >
    >Multiple filters are joined with AND, but multiple items such as dimension items and metrics are joined with OR.
 
-   ![](assets/multiple_obj_touchpoint.png)
+   ![The Page:CamerRoll or Page: Camera touchpoints highlighted.](assets/multiple_obj_touchpoint.png)
 
 1. You can also **constrain individual touchpoints to the next event** (as opposed to "eventually") within the path. Underneath each touchpoint, there is a selector with the options "Eventual Path" and "Next Hit", as shown here:
 
-   ![](assets/next-hit-eventually.png)
+   ![The All Visits view showing the Eventual Path option highlighted. ](assets/next-hit-eventually.png)
 
 <table id="table_A91D99D9364B41929CC5A5BC907E8985"> 
  <tbody> 
