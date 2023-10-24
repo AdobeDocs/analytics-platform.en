@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (October/November 2023)
 
-**Last update**: October 18, 2023
+**Last update**: October 24, 2023
 
 These release notes cover the release period of October 16, 2023 through end of November 2023. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -25,7 +25,7 @@ These release notes cover the release period of October 16, 2023 through end of 
 
 ## Fixes in Customer Journey Analytics
 
-AN-327661; AN-329282; AN-329808; AN-331030; AN-331105
+AN-327661; AN-329282; AN-329383; AN-329808; AN-331030; AN-331087; AN-331105
 
 ## Important notices for Customer Journey Analytics Administrators
 
