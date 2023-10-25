@@ -44,6 +44,33 @@ This visualization addresses a variety of common use cases, including:
 
 1. Click **[!UICONTROL Build]**.
 
+<!--## How the Key Metric Summary visualization handles the comparison date range
+
+(This will probably release in January. Per Jaden Howell)
+
+* If the primary date range is set to the panel date range, there are 2-6 options that are considered 'relative' to the primary date range. These usually include the previous period (same amount of time immediately proceeding the primary date range), and 52 weeks prior to that date range.
+
+* If the comparison date range is set to one of the 'relative' options, upon updating the primary date range, the comparison date range updates to the period immediate preceding the panel date range.
+
+* If your comparison date range is *not* set to a 'relative' option, then updating the panel date range changes your primary date range, but has no effect on the comparison date range.
+
+**Example 1**
+
+Primary date range is set to the panel's date range: 'Yesterday'
+Comparison date range is set to a relative date range, one of: 'Previous day', 'Same day last week', 'Same day 4 weeks prior', 'Same day last month', 'Same day last year', or 'Same day 52 weeks prior'.
+When I change the panel's date range to 'This month', the comparison date range will update to 'Previous month'.
+
+**Example 2**
+ 
+Primary date range is set to the panel's date range: 'Yesterday'
+Comparison date range is set to a non-relative date range, such as 'Feb 2nd, 2022', 'Highest sales day', 'Last week', etc. 
+
+>[!NOTE]
+>
+>Last week is relative to the day the project is opened on, but it is not based on the panel's date range of 'Yesterday'. In other cases, such as if the panel's date range was 'This week', it may be relative.
+
+When you change the panel's date range to '4 days ago', the comparison date range remains at the previous selection. -->
+
 ## View the output
 
 ![](assets/key-metric-output.png)
