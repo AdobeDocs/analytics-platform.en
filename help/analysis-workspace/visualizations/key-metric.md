@@ -44,9 +44,7 @@ This visualization addresses a variety of common use cases, including:
 
 1. Click **[!UICONTROL Build]**.
 
-<!-->
-
-## How the Key Metric Summary visualization handles the comparison date range
+<!--## How the Key Metric Summary visualization handles the comparison date range
 
 (This will probably release in January. Per Jaden Howell)
 
