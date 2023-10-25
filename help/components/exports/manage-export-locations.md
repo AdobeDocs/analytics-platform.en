@@ -57,11 +57,7 @@ To find information you need, you can either filter the list of locations or sea
 
 ## Delete locations
 
-If you delete a location, any exports that use the location are also deleted. 
-
-Prior to deleting a location, first check to see if it is being used by any exports by selecting the information icon next to the location name.
-
-![connected exports](assets/location-connected-exports.png)
+If you delete a location, any exports that use the location are also deleted. Check the confirmation dialog when deleting to ensure that no exports are associated with the location.
 
 To delete a location:
 
@@ -71,7 +67,15 @@ To delete a location:
 
    ![Edit locations](assets/locations-edit.png)
 
-1. Select [!UICONTROL **Delete**], then select [!UICONTROL **Delete**] again on the confirmation dialog.
+1. Select [!UICONTROL **Delete**].
+
+   The Delete Location dialog box displays.
+
+1. In the Delete Location dialog box, ensure that the location is not associated with any exports prior to confirming the delete. 
+
+   ![Delete Location confirmation dialog](assets/delete-location-confirmation-dialog.png)
+
+1. Select [!UICONTROL **Delete**] again to confirm.
 
 ## Edit accounts
 
@@ -79,7 +83,7 @@ To delete a location:
 
 1. Select the [!UICONTROL **Location accounts**] tab.
 
-   ![Accounts page](assets/account-page.png)
+   ![Accounts page](assets/account-add.png)
 
 1. Select [!UICONTROL **View details**] on the account that you want to edit.
 
@@ -95,7 +99,7 @@ To view keys associated with an export account:
 
 1. Select the [!UICONTROL **Location accounts**] tab.
 
-   ![Accounts page](assets/account-page.png)
+   ![Accounts page](assets/account-add.png)
 
 1. Select the 3-dot icon on the account that you want to edit, then select [!UICONTROL **Account keys**]. 
 
@@ -105,7 +109,7 @@ To view keys associated with an export account:
 
 1. Select the [!UICONTROL **Location accounts**] tab.
 
-   ![Accounts page](assets/account-page.png)
+   ![Accounts page](assets/account-add.png)
 
 1. Select the 3-dot icon on the account that you want to edit, then select [!UICONTROL **Delete account**]. 
 

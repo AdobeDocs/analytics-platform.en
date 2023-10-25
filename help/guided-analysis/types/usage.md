@@ -26,6 +26,7 @@ The query rail allows you to configure the following components:
 
 * **[!UICONTROL Events]**: The events that you want to measure. Each selected event is represented as a colored line or set of bars, depending on chart type. A row representing the trended event is added to the table. You can include up to five events.
 * **[!UICONTROL People]**: The segments that you want to measure. Each selected segment doubles the number of lines in the chart and rows in the table. You can include up to five segments.
+* **[!UICONTROL Breakdown]**: Create a separate trend line per dimension item. A single breakdown dimension is supported.
 
 ## Chart settings
 

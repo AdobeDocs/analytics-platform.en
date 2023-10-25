@@ -1,5 +1,5 @@
 ---
-description: Column settings let you configure column formatting, some of which can be conditional.
+description: Learn how to edit column settings to configure column formatting, some of which can be conditional.
 title: Column settings
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
@@ -16,7 +16,7 @@ View a video on row and column settings here:
 
 To access [!UICONTROL Column Settings], drag a Freeform Table to the project, then click the gear icon in the column heading.
 
-![](assets/column_settings.png)
+![The Column settings showing Total cells, Table cells, and Table cell preview.](assets/column_settings.png)
 
 You can edit settings **for multiple columns at once**. Just select multiple columns and click the settings icon of any one of those columns. Any changes that you make apply to all columns with cells selected in them.
 
@@ -36,7 +36,7 @@ You can edit settings **for multiple columns at once**. Just select multiple col
 
 Conditional formatting applies formatting to upper, midpoint, and lower limits that you can define. Applying conditional formatting (colors, etc) within Freeform tables is also automatically enabled on breakdowns, unless "Custom" limits are selected.
 
-![](assets/conditional-formatting.png)
+![The Conditional formatting options with Custom selected.](assets/conditional-formatting.png)
 
 | Element | Description |
 | --- | --- |
@@ -66,11 +66,11 @@ To use a non-default attribution model for a metric in an Analysis Workspace:
 
 1. Click the Settings (gear) icon on a metric in a Freeform Table column.
 
-   ![Attribution checkbox](assets/attribution-checkbox.png)
+   ![The Column Setting options highlighting the Data Settings option: Use non-default attribution mode.](assets/attribution-checkbox.png)
 
 2. Under **[!UICONTROL Data Settings]**, check **[!UICONTROL Use non-default attribution model]**. For more information on different attribution models, see [Attribution models](/help/data-views/component-settings/attribution.md).
 
-   ![Select attribution model](assets/attribution-select.png)
+   ![The Column Attribution Model options showing Linear selected.](assets/attribution-select.png)
 
 >[!MORELIKETHIS]
 >

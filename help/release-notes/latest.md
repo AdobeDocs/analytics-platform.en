@@ -6,6 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (October/November 2023)
 
+
 **Last update**: October 25, 2023
 
 These release notes cover the release period of October 16, 2023 through end of November 2023. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
@@ -14,7 +15,7 @@ These release notes cover the release period of October 16, 2023 through end of 
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **New capabilities to Usage view in Adobe Product Analytics** | The following features have been added to the [Usage view](/help/guided-analysis/types/usage.md):<ul><li>**Trend lines**: Trend lines are now supported. Click [!UICONTROL Overlays] above the chart to enable them.</li><li>**Query breakdowns**: You can now apply breakdowns to this view type. They are available as an option in the query rail.</li></ul> | N/A | October 25, 2023 |
+| **New capabilities in Usage view in Adobe Product Analytics** | The following features have been added to the [Usage view](/help/guided-analysis/types/usage.md):<ul><li>**Trend lines**: Trend lines are now supported. Click [!UICONTROL Overlays] above the chart to enable them.</li><li>**Query breakdowns**: You can now apply breakdowns to this view type. They are available as an option in the query rail.</li></ul> | N/A | October 25, 2023 |
 | **Connections Detail Page - Skipped Records** | This capability gives you insight into why certain records were skipped during Customer Journey Analytics data ingestion. Possible reasons can include big visitor IDs (more than 1 million records), missing timestamps and missing person IDs. (Documentation to follow) | N/A | October 25, 2023 |
 | **Documentation for CJA Data Views API** | See the [Data views API](https://developer.adobe.com/cja-apis/docs/endpoints/dataviews/) to learn how to programmatically create, modify, or delete data views. | N/A | October 16, 2023 |
 | **Row count metrics for lookup and profile datasets** | These metrics were previously available only for event datasets. | N/A | October 16, 2023 | 
