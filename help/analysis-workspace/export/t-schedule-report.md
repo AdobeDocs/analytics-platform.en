@@ -82,7 +82,7 @@ For more information, see [Scheduled projects](/help/components/scheduled-projec
 
 >[!NOTE]
 >
->The option to password-protect a scheduled project appears only for Customer Journey Analytics customers who have purchased the [Healthcare Shield](https://business.adobe.com/solutions/experience-cloud-for-healthcare.html) add-on product. 
+>The option to password-protect a scheduled project appears only for Customer Journey Analytics customers who have purchased the [Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html) add-on product. 
 
 Adobe uses the password to encrypt scheduled projects, whether they are sent in .pdf or .csv formats.
 
