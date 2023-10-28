@@ -3,8 +3,6 @@ title: Use derived fields to report on goals
 description: Understand how you can use Derived fields to report on goals (targets) in your Workspace projects.
 solution: Customer Journey Analytics
 feature: Use Cases
-hide: yes
-hidefromtoc: yes
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
 ---
 # Use derived fields to report on goals
