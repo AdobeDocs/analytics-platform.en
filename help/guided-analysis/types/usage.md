@@ -40,6 +40,10 @@ The [!UICONTROL Usage] view offers the following chart settings, which can be ad
 Add additional data to the chart.
 
 * **[!UICONTROL Show anomalies]**: Runs [anomaly detection](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) on the trended analysis. Outliers appear as dots that you can hover over for more information.
+* **[!UICONTROL Trendline overlay]**: Adds a trendline to the chart, allowing you to see the overall direction your data takes within the specified time period.
+  * [!UICONTROL Linear]: Straight line regression. Recommended for data that increases or decreases at a steady rate.
+  * [!UICONTROL Logarithmic]: Curved line regression. Recommended for data that levels out over time.
+  * [!UICONTROL Moving average]: A smoothed line that averages the previous period from each point. Recommended for data that has regular cycles. Available moving average periods depend on the selected date range.
 
 ## Apply time comparison
 
