@@ -3,6 +3,7 @@ title: Comparison with Adobe Analytics
 description: Overview of how Customer Journey Analytics compares to Adobe Analytics.
 solution: Customer Journey Analytics
 feature: Basics
+exl-id: bde36283-86af-4b1a-9cbe-e251676b2951
 ---
 # Comparison with Adobe Analytics
 
@@ -60,8 +61,3 @@ Adobe Analytics uses a more definitive set of identity fields, like the Adobe An
 ## Supported features
 
 An overview of Adobe Analytics features and how these features are supported by Customer Journey Analytics can be found at [Customer Journey Analytics feature support](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/cja-aa.html?lang=en).
-
-
-
-
-

@@ -5,8 +5,8 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: yes
 hidefromtoc: yes
+exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
 ---
-
 # Use derived fields to report on goals
 
 This use case describes how to use the power of derived fields to set goals for a specific dimension and then use these goals in your Workspace project.

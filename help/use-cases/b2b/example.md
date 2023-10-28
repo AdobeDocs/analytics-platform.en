@@ -5,6 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: yes
 hidefromtoc: yes
+exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 ---
 # An example B2B project
 
@@ -301,4 +302,3 @@ Below is an example project that relies on the connection and data view describe
 ![Visualizations](assets/visualizations.png)
 
 +++
-

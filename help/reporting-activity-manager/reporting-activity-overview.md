@@ -3,6 +3,7 @@ title: Reporting Activity Manager overview
 description: Learn about how to use the Reporting Activity Manager to diagnose and fix capacity issues during peak reporting times.
 solution: Customer Journey Analytics
 feature: Basics
+exl-id: c3964147-06f1-462a-aea1-e681c4ef15b1
 ---
 # Reporting Activity Manager overview
 

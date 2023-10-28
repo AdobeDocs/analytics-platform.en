@@ -3,6 +3,7 @@ title: View reporting activity in the Reporting Activity Manager
 description: Learn about how to use the Reporting Activity Manager to diagnose and fix capacity issues during peak reporting times.
 solution: Customer Journey Analytics
 feature: Basics
+exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 ---
 # View reporting activity in the Reporting Activity Manager
 

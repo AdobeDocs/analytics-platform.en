@@ -3,6 +3,7 @@ title: Cancel reporting requests in the Reporting Activity Manager
 description: Learn about how to use the Reporting Activity Manager to diagnose and fix capacity issues during peak reporting times.
 solution: Customer Journey Analytics
 feature: Basics
+exl-id: 87da2447-f114-432a-9f63-e660c2541d0f
 ---
 # Cancel reporting requests in the Reporting Activity Manager
 
