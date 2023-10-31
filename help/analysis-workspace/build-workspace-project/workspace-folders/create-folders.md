@@ -19,15 +19,15 @@ To create a new folder,
 
 1.  Select tags from the drop-down menu or add net-new tags.
 
-    ![](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
+    ![Create new folder window showing the new folder name and the list of available tags.](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
 
 1.  Click **Create**.
 
-    ![](/help/analysis-workspace/build-workspace-project/assets/create.png)
+    ![Click Create.](/help/analysis-workspace/build-workspace-project/assets/create.png)
 
     The new folder is added in the main list of projects and folders.
 
-    ![](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
+    ![The Projects landing page showing the updated list of project and folders.](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
 ## Create a subfolder {#create-subfolder}
 
@@ -37,20 +37,20 @@ To create a subfolder when you have an existing folder open,
 
 1.  Click **Create a new folder**.
 
-    ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
+    ![Click Create a new folder.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
 
 1.  Enter a subfolder name and add any necessary tags.
 
-    ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
+    ![The Create new folder window with new name and Tags field.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
 
 1.  Click **Create**.
 
     The new subfolder is added to the list of projects and subfolders.
 
-    ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-added.png)
+    ![Click Create.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-added.png)
 
     >[!NOTE]
     >
     >You can create up to 10-levels of subfolders in a single folder.
 
-    ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)
+    ![The folder drop-down list shows all subfolders within the folder.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)

@@ -25,7 +25,7 @@ You can manage settings for Analysis Workspace and its related components for al
 
    * [IMS Organization preferences](#ims-organization-preferences)
 
-   * [Project preferences](#project-preferences)
+   * [Projects & Analyses preferences](#project-preferences)
 
    * [Freeform table preferences](#freeform-table-preferences)
 
@@ -53,11 +53,11 @@ You can update company preferences that apply to all users and projects within y
 
 {style="table-layout:auto"}
 
-## Project preferences
+## Projects & Analyses preferences
 
-You can customize project preferences for all new projects that you create in Analysis Workspace. For information about how to access these preferences, see [Update preferences](#update-preferences). 
+You can customize these preferences for all new Analysis Workspace projects, new Analysis Workspace panels, and new guided analyses. For information about how to access these preferences, see [Update preferences](#update-preferences). 
 
-Some of these same preferences can also be customized for individual projects, as described in [Project overview](/help/analysis-workspace/build-workspace-project/freeform-overview.md). 
+Some of these same preferences can also be customized for individual projects in Analysis Workspace, as described in [Project overview](/help/analysis-workspace/build-workspace-project/freeform-overview.md). 
 
 Click the linked preference titles for more information and context about each preference. 
 
@@ -65,7 +65,7 @@ Click the linked preference titles for more information and context about each p
 | --- | --- | --- |
 | **Display** | | |
 |  | [View density](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) | Choose how much content to display on the screen by reducing the vertical padding of the left rail, freeform tables, and cohort tables. <ul><li>Compact</li><li>Comfortable</li><li>Expanded (default)</li></ul> |
-| | [Color palette](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html) | Choose the visualization color palette used in Analysis Workspace. <ul><li>Adobe-provided palettes (default)</li><li>Conditional formatting palette </li><li>Up/down palette (diverging)<li>Custom-defined palettes</li></ul> |
+| | [Color palette](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html) | Choose the visualization color palettes that are used in Analysis Workspace and Guided analysis. <ul><li> Categorical palette: Applied to many visualizations in Analysis Workspace and Guided analysis. Each color represents a distinct categorical value. Choose from Adobe-provided options or enter a custom palette defined by comma-delimited hex values.</li><li> Divergent palette: Applied to the Cohort table in Analysis Workspace and User growth guided analysis. This palette holds a numeric meaning with two extremes and a baseline in the middle.<li> Sequential palette: Applied to the Frequency trends (stacked bar) guided analysis. This palette holds a numeric meaning from light to dark.</li></ul> |
 | **Data** | | |
 |  | [Data view](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#report-suite) | Choose from where tables and visualizations derive their data. <ul><li>Most recent (default)</li><li>Specific data view selected from a list</li></ul> |
 |  | [Calendar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#calendar) | Select from a list of: <ul><li>Adobe-provided ranges (default is This Month)</li><li>Custom-defined ranges</li></ul> |
@@ -105,6 +105,7 @@ Click the linked section titles for more information and context about the avail
 | **[Row](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
 | | Breakdown by position | Select this option if you want the breakdown to remain with the position of the item rather than with the item itself. For more information about breakdowns, see [Break down dimensions](/help/components/dimensions/t-breakdown-fa.md). |
 | | Percentage calculation | <ul><li>Column</li><li>Row</li></ul> |
+| | Column totals (Static rows only) |<ul><li>Display sum of rows: Shows the sum of the individual line items </li><li>Display grand total: Shows the de-duplicated sum of rows.</li></ul> |
 
 ## Visualizations preferences
 
@@ -141,8 +142,6 @@ Click the linked section titles for more information and context about the avail
 | | Only show percent | Removes the number value and only shows the percentage. |
 | | Round percent to nearest whole | Rounds the percent value to the nearest whole instead of showing the decimal value. |
 | | Show average percent row | Inserts a new row at the top of the table and then adds the average for the values within each column.  |
-| | Cohort Preview | A preview of how the color palette appears in the cohort visualization. |
-| | Cohort Palette | The color palette used in the cohort visualization. |
 | **[Combo charts](/help/analysis-workspace/visualizations/combo-charts.md)** | | |
 | | Show X-axis | Displays the x-axis on the Combo chart. |
 | | Show Y-axis | Displays the y-axis on the Combo chart. |

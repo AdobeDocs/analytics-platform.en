@@ -11,11 +11,11 @@ To save a new project to a specific folder, select the folder name in the Save p
 
 1.  In Workspace, create a new project.
 
-    ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
+    ![The Freeform table window where you can create a new project.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
 
 1.  In the **Project** > **Save** dialogue, select a folder name from the Folder drop-down menu.
 
-    ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
+    ![The Save window where you save your new project to a folder.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
 
 1.  Click **Save**.
 

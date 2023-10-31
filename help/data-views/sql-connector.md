@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: SQL Connector
 hide: yes
 hidefromtoc: yes
-exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
+exl-id: 1827a637-6c0f-43f2-862a-928089340d30
 ---
 # SQL Connector
 

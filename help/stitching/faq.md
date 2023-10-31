@@ -3,6 +3,7 @@ title: Stitching FAQ
 description: Frequently asked questions for Stitching
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
+exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 ---
 # Frequently asked questions
 

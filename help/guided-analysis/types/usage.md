@@ -1,7 +1,7 @@
 ---
 title: Usage view
 description: Measure user engagement over time.
-exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
+exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: product analytics
 ---
@@ -38,7 +38,7 @@ The [!UICONTROL Usage] view offers the following chart settings, which can be ad
 
 Add additional data to the chart.
 
-* **[!UICONTROL Show anomalies]**: Runs anomaly detection on the analysis. Outliers appear as dots that you can hover over for more information.
+* **[!UICONTROL Show anomalies]**: Runs [anomaly detection](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) on the trended analysis. Outliers appear as dots that you can hover over for more information.
 
 ## Apply time comparison
 

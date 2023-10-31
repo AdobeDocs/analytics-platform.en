@@ -12,7 +12,7 @@ When you first start using this [!UICONTROL Analysis Workspace], you might wonde
 
 To help with this, and based on your own company's usage of data components in [!UICONTROL Analysis Workspace], [!UICONTROL Quick Insights] leverages an algorithm that will present you with the most popular dimensions, metrics, filters, and date ranges your company uses. In fact, you will see dimensions, metrics, and filters tagged as [!UICONTROL Popular] in the drop-down list, as shown here:
 
-![](assets/popular-tag.png)
+![The Quick Insights panel.](assets/popular-tag.png)
 
 [!UICONTROL Quick Insights] helps you
 
@@ -39,14 +39,14 @@ Following are some of the basic terms you need to be familiar with. Each data ta
 1. Log in to Customer Journey Analytics using the credentials you have been provided with.
 1. Go to [!UICONTROL Workspace] and click **[!UICONTROL Create New Project]** and then click **[!UICONTROL Quick Insights]**. (You can also access this panel from the **[!UICONTROL Panel]** menu in the left rail.)
 
-    ![](assets/qibuilder.png)
+    ![The All Templates view highlighting the Quick Insights option.](assets/qibuilder.png)
 
-    ![](assets/qi-panel.png)
+    ![The Panels list highlighting the Quick Insights option.](assets/qi-panel.png)
 
 1. When you first start out, go through the short tutorial that teaches you some of the [!UICONTROL Quick Insights panel] basics. Or, click to **[!UICONTROL Skip Tutorial]**.
 1. Select your building blocks (also known as components): dimensions (orange), metrics (green), filters (blue), or date ranges (purple) You have to select at least one dimension and one metric for a table to be built automatically. 
 
-    ![](assets/qibuilder2.png)
+    ![The components including Dimentions, Metrics, Filters, Segments, and Date ranges.](assets/qibuilder2.png)
 
     You have three ways of selecting the building blocks:
     * Drag and drop them from the left rail.
@@ -57,7 +57,7 @@ Following are some of the basic terms you need to be familiar with. Each data ta
 
     * A Freeform table with the dimension (here, US States) vertically and the metric (here, Visits) horizontally at the top. Check out this table: 
 
-    ![](assets/qibuilder3.png)
+    ![The Freeform table showing the dimension vertically and the metric horizontally.](assets/qibuilder3.png)
 
     * An accompanying visualization, in this case a [bar chart](/help/analysis-workspace/visualizations/bar.md). The visualization that is generated is based on the type of data you added to the table. Any time-based data (such as [!UICONTROL Visits] per Day/Month) defaults to a [!UICONTROL Line] chart. Any non-time-based data (such as [!UICONTROL Visits] per [!UICONTROL Device]) defaults to a [!UICONTROL Bar] chart. You can change the type of visualization by clicking on the drop-down arrow next to the visualization type.
 
@@ -73,28 +73,28 @@ Other useful hints will pop up in the [!UICONTROL Quick Insights Builder], some 
 
 * First, complete the **[!UICONTROL More tips]** tutorial: Access it via the Help (?) icon next to the [!UICONTROL Quick Insights] title. This tutorial shows up 24 hours after you have created a project with at least one dimension and one metric.
 
-    ![](assets/qibuilder4.png)
+    ![The Quick Insights Panel notification displayed after you click the Help icon.](assets/qibuilder4.png)
 
 * **Breakdown by**: You can use up to 3 levels of breakdowns on dimensions to drill down to the data you really need.
 
-    ![](assets/qibuilder5.png)
+    ![Sublevels of breakdowns.](assets/qibuilder5.png)
 
 * **Add more metrics**: You can add up to 2 more metrics by using the AND operator to add them the table.
 
-    ![](assets/qibuilder6.png)
+    ![Multiple metrics including Visits and Devices.](assets/qibuilder6.png)
 
 * **Add more filters**: You can add up to 2 more filters by using the AND or OR operators to add them the table. Look at what happens to the table when you add Mobile Users OR Loyal Visitors. They are next to each other, above the metrics. If you added Mobile Users AND Loyal Visitors, you would see results from both filters together, and they would be stacked on top of each other in the table.
 
-    ![](assets/qibuilder7.png)
+    ![Diagram showing the added Mobile Users and Loyal Visitors.](assets/qibuilder7.png)
 
 ## Known limitations
 
 If you try to edit directly within the table, it will cause the [!UICONTROL Quick Insights] panel to become out of sync. You can restore it to the previous [!UICONTROL Quick Insights] settings by clicking **[!UICONTROL Resync Builder]** at the top right of the panel.
 
- ![](assets/qibuilder9.png)
+ ![The Quick Insights panel with the Resync Builder option.](assets/qibuilder9.png)
 
 You will get a warning before adding anything directly to the table:
 
- ![](assets/qibuilder8.png)
+ ![The Resync Builder option warning.](assets/qibuilder8.png)
 
 Otherwise, building directly will cause the table to now behave as a traditional Freeform table, without the helpful features for new users.

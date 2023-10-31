@@ -5,6 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 5c52986c-7ff3-45b5-9039-2bfb6529238c
 ---
 # IP addresses used by Customer Journey Analytics
 
@@ -217,4 +218,3 @@ This page includes ip addresses you need to add to your allowlist in order for o
 `20.116.159.32/28`
 
 `20.116.158.240/28`
-

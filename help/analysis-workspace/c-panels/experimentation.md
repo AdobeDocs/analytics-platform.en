@@ -35,7 +35,7 @@ In Customer Journey Analytics data views settings, admins can add [context label
 
 In your data view that contains experimentation data, pick two dimension, one with the experimentation data and one with the variant data. Then label those dimensions with the **[!UICONTROL Experiment]** and the **[!UICONTROL Variant]** labels.
 
-![context label](assets/context-label.png)
+![Context label options for Experimentation and Experimentation Variant.](assets/context-label.png)
 
 Without these labels present, the Experiment panel does not work, since there are no experiments to work with.
 
@@ -43,7 +43,7 @@ Without these labels present, the Experiment panel does not work, since there ar
 
 1. In Customer Journey Analytics Workspace, drag the Experimentation panel into a project.
 
-  ![experiment panel](assets/experiment.png)
+  ![The Experimention panel dragged into a project.](assets/experiment.png)
 
    >[!IMPORTANT]
    >If the necessary setup in Customer Journey Analytics data views has not been completed, you will receive this message before you can proceed: "[!UICONTROL Please configure the experiment and variant dimensions in Data Views]".
@@ -68,11 +68,11 @@ You also get a text summary that indicates whether the experiment is conclusive 
 
 For each success metric you selected, one freeform table and one conversion rate trend will be shown.
 
-![experiment output](assets/exp-output1.png)
+![The Experimentation output showing one freeform table and one conversion rate trend.](assets/exp-output1.png)
 
 The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTROL Control Variant] performance:
 
-![line chart output](assets/exp-output2.png)
+![The line chart output showing Control versus Control Variant performance.](assets/exp-output2.png)
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ The experimentation panel in Customer Journey Analytics lets you analyze data as
 
 The following illustration contrasts these situations:
 
-![randomized experiment](assets/randomize.png)
+![A Diagram showing Observational Data and the Randomized Experiment.](assets/randomize.png)
 
 When you want to measure the impact of intervention X on outcome Y, it is possible that the real cause of both is the confounding factor C. If the data is not achieved by randomizing persons on X, the impact is harder to measure, and the analysis will explicitly account for C. Randomization breaks the dependence of X on C, allowing us to measure the effect of X on Y without having to worry about other variables. 
 

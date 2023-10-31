@@ -1,10 +1,10 @@
 ---
-title: Virtual Report Suites, Data Views, Adobe Experience Platform Sandboxes and the Analytics source connector
+title: Virtual report suites, Data views, Adobe Experience Platform sandboxes, and the Analytics source connector
 description: Learn about virtual reporting environments and sandbox environments.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
 ---
-# Virtual Report Suites, Data Views, Adobe Experience Platform Sandboxes and the Analytics source connector
+# Virtual report suites, Data views, Adobe Experience Platform sandboxes, and the Analytics source connector
 
 Adobe provides a variety of means to create virtual reporting environments and sandbox environments. It is useful to understand the similarities and differences between the following features and how these features relate to the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en):
 
@@ -12,7 +12,7 @@ Adobe provides a variety of means to create virtual reporting environments and s
 * Customer Journey Analytics data views
 * Adobe Experience Platform sandboxes
 
-## Adobe Analytics Virtual Report Suites (VRS)
+## Adobe Analytics virtual report suites
 
 For more information, see: [Virtual report suites overview](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en).
 
@@ -22,10 +22,10 @@ A virtual report suite:
 * Can be applied to both historical and new data in a non-destructive manner.
 * Allows you to create one or many virtual views on top of an Adobe Analytics report suite for use by different business teams.
 * May be used to control access to and curate different kinds of data for different users in Adobe Analytics.
-* Provides optional [report-time processing](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en) capabilities for Adobe Analytics. In this case, a VRS may be used to create a custom definition for "visit".
+* Provides optional [report-time processing](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en) capabilities for Adobe Analytics. In this case, a virtual report suite may be used to create a custom definition for "visit".
 * Is applied at report runtime, similar to segment evaluation. This is _after_ the data has been collected and stored within Adobe Analytics.
 * Is required for [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en) in Adobe Analytics.
-* Has available the same number of variables for use as a standard Analytics Report Suite (250 eVars, 250 props, 1000 events), although VRS curation can limit which variables are exposed to users.
+* Has available the same number of variables for use as a standard Analytics Report Suite (250 eVars, 250 props, 1000 events), although virtual report suite curation can limit which variables are exposed to users.
 * Supports custom calendar options.
 
 A virtual report suite is not:

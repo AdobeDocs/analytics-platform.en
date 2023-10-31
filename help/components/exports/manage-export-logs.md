@@ -3,14 +3,13 @@ description: Manage logs for existing exports
 keywords: Analysis Workspace
 title: Manage export logs
 feature: Components
-hide: yes
-hidefromtoc: yes
+exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 ---
 # Manage export logs
 
-{{select-package}}
+{{release-limited-testing}}
 
-Export logs provide details about each export, and are generated any time Analysis Workspace data is exported to the cloud. (For information about how data can be exported to the cloud, see [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md).) 
+Export logs provide details about each export, and are generated any time Analysis Workspace data is exported to the cloud. (For information about how data can be exported to the cloud, see [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).) 
 
 For scheduled exports, logs reflect the export settings as they were when the log was sent. Logs cannot be deleted.
 
@@ -22,7 +21,7 @@ To find information you need, you can either filter the list of logs or search f
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. Select the [!UICONTROL **Log**] tab.
+1. Select the [!UICONTROL **Logs**] tab.
 
 1. Select the **Filter** icon.
 
@@ -32,8 +31,9 @@ To find information you need, you can either filter the list of logs or search f
 
    |Filter | Description |
    |---------|----------|
-   | [!UICONTROL **Account type**] | The account type that the log is associated with. The following account types are available: <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul>. | 
-   | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Pending**]: A specific instance of an export has been started but is not yet complete.<p>Re-running an export that has a status of Pending will delay the export process.</p></li><li>[!UICONTROL **Completed**]: A specific instance of an export has finished processing and is available in the export account.</li><li>[!UICONTROL **Failed**]<p>The following situations can result in a failed export. Hover over the Failed status to see details about the failure. <ul><li>Scheduled export expiration</li><li>Row limit reached for scheduled export </li></ul> </p></li></ul> | 
+   | [!UICONTROL **Export ID**] | Specify the export ID of the export log you want to view. |
+   | [!UICONTROL **Account type**] | The account type that the log is associated with. The following account types are available: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. | 
+   | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Pending**]: A specific instance of an export has been started but is not yet complete.<p>Re-running an export that has a status of Pending will delay the export process.</p></li><li>[!UICONTROL **Complete**]: A specific instance of an export has finished processing and is available in the export account.</li><li>[!UICONTROL **Failed**]<p>Various situations can result in a failed export. Hover over the Failed status to see details about the failure.<p>For more information about possible reasons for a failure, see [Troubleshoot failed exports](/help/components/exports/troubleshoot-exports.md).</p>  | 
 
    {style="table-layout:auto"}
 
@@ -41,9 +41,9 @@ To find information you need, you can either filter the list of logs or search f
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. Select the [!UICONTROL **Log**] tab.
+1. Select the [!UICONTROL **Logs**] tab.
 
-1. In the search tab, begin typing any information associated with the log you're searching for. You can search for data from any column available in the table. 
+1. In the search field, begin typing any information associated with the log you're searching for. You can search for data from any column available in the table. 
 
 <!-- removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
 
@@ -65,34 +65,38 @@ This option is not available when selecting multiple logs.
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. Select the [!UICONTROL **Logs**] tab, then select a log.
+1. Select the [!UICONTROL **Logs**] tab.
 
-   <!-- add screenshot? -->
+1. Locate the log that is associated with the export you want to edit.
 
-1. Select [!UICONTROL **Edit**].
+1. Select the **Edit export** icon ![export log icon](assets/export-icon.png) next to the log name.
+
+   Or
+
+   Select the checkbox next to the log, then select [!UICONTROL **Edit export**].
 
 ## Configure columns
 
-You can add or remove columns on the [!UICONTROL Log] tab to configure what information is displayed.
+You can add or remove columns on the [!UICONTROL Logs] tab to configure what information is displayed.
 
 Select a column header to sort the logs by that column. By default, logs are sorted by the date and time the export started.
 
-To configure columns on the [!UICONTROL Log] tab:
+To configure columns on the [!UICONTROL Logs] tab:
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. Select the [!UICONTROL **Log**] tab.
+1. Select the [!UICONTROL **Logs**] tab.
 
-1. Select the **Customize table** icon ![customize table](assets/customize-table-icon.png) in the upper-right of the [!UICONTROL Log] page.
+1. Select the **Customize table** icon ![customize table](assets/customize-table-icon.png) in the upper-right of the [!UICONTROL Logs] page.
 
    The following columns are available:
 
    |Available column | Description |
    |---------|----------|
-   | Export name | The name of the export. Users give exports a name when they create them, as described in [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md). | 
+   | Export name | The name of the export. Users give exports a name when they create them, as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md). | 
    | Export ID | The ID automatically assigned to the export when it is created. <!-- True? --> | 
    | Instance ID | The ID of the Customer Journey Analytics instance. <!-- True? --> |
-   | Data view name | The name of the data view associated with the export. Users can select the data view when they create the export, as described in [Export Customer Journey Analytics data to the cloud](/help/analysis-workspace/export/export-cloud.md). |
+   | Data view name | The name of the data view associated with the export. Users can select the data view when they create the export, as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md). |
    | Number of files | The number of files included in the export. |
    | Size | The size of the export.<p>The file size is calculated with a base of 1024, which is sometimes represented as KIB and MIB. If your cloud provider calculates size with a base of 1000, this may result in the size displayed in your cloud provider being slightly different from the size displayed here.</p> |
    | Location | The location on the account where the data was exported. |
@@ -104,7 +108,7 @@ To configure columns on the [!UICONTROL Log] tab:
 
    {style="table-layout:auto"}
 
-1. Ensure that any columns you want to display are selected. Selected columns appear on the [!UICONTROL Log] page and display the relevant information.
+1. Ensure that any columns you want to display are selected. Selected columns appear on the [!UICONTROL Logs] page and display the relevant information.
 
 ## View audit logs
 

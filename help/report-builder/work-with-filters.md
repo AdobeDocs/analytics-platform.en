@@ -19,9 +19,7 @@ To apply a filter to the entire data block, double-click a filter or drag and dr
 
 To apply filters to individual metrics, drag and drop a filter onto a metric in the table. You can also click the **...** icon to the right of a metric in the Table pane and then select **Filter metric**. To view applied filters, hover over or select a metric in the Table pane. Metrics with applied filters display a filter icon.
 
-<!-- ![](./assets/image24.png) -->
-
-![](./assets/filter_by.png)
+![Filters tab displaying metrics.](./assets/filter_by.png)
 
 ## Quick edit filters
 
@@ -33,11 +31,11 @@ To edit filters using the Quick edit panel
 
 1.  Select a range of cells from one or multiple data blocks.
 
-    ![](./assets/select_multiple_dbs.png)
+    ![Quick Edit filter panel showing filter options for data views, date range, and filters.](./assets/select_multiple_dbs.png)
 
 1.  Click the Filters link to launch the Quick edit - Filters panel.
 
-    ![](./assets/quick_edit_filters.png)
+    ![the Filters panel showing the Add Filter field and Filters Applied lists.](./assets/quick_edit_filters.png)
 
 ### Add or remove a filter
 
@@ -49,7 +47,7 @@ You can add or remove filters using the Add/Remove options.
 
     When multiple filters are present in the selected data blocks, you can search for specific filters using the **Add Filter** search field.
 
-    ![](./assets/add_filter.png)
+    ![The Add Filter field.](./assets/add_filter.png)
 
 1.  Add filters by selecting filters from the **Add filter** drop down menu.
 
@@ -69,7 +67,7 @@ You can replace an existing filter with another filter to change how the data is
 
 1.  Select the **Replace** tab in the Quick edit-filters panel.
 
-    ![](./assets/replace_filter.png)
+    ![Select the Replace tab.](./assets/replace_filter.png)
 
 1.  Use the **Search list** search field to locate specific filters.
 
@@ -79,7 +77,7 @@ You can replace an existing filter with another filter to change how the data is
 
     Selecting a filter adds it to the **Replace with**... list.
 
-    ![](./assets/replace_screen_new.png)
+    ![The Replace tab with the People on App data block selected and the Replace with list updated showing People on App Revised.](./assets/replace_screen_new.png)
 
 1.  Click **Apply**.
 
@@ -95,7 +93,7 @@ To apply filters from a cell
 1.  Click the **Filters** tab to define filters.
 1.  Click **Create filter from cell**.
 
-    ![](./assets/create-filter-from-cell.png)
+    ![Create filter from cell icon.](./assets/create-filter-from-cell.png)
 
 1. Select the cell from which you want the data blocks to reference a filter.
    
@@ -103,13 +101,13 @@ To apply filters from a cell
    
    Note: Only one choice may be selected for the given cell at one time.
 
-    ![](./assets/select-filters.png)
+    ![The Add filter from cell window showing the Filters included.](./assets/select-filters.png)
 
 1.  Click **Apply** to create the reference cell.
 
 1. From the **Filters** tab, add the newly created reference cell filter to your data block.
 
-    ![](./assets/reference-cell-filter.png)
+    ![Filters tab showing Sheet1!J1(All Data) filter added to the table.](./assets/reference-cell-filter.png)
 
 1. Click **Finish**.
 
@@ -121,10 +119,10 @@ To apply filters from a cell
 
 1.  Click the link under **Filters from Cell** in the Quick Edit menu.
 
-    ![](./assets/filters-from-cell-link.png)
+    ![Filters from cell link showing Sheet1!J1 (All Data)](./assets/filters-from-cell-link.png)
 
 1.  Select your filter from the drop-down menu.
 
-    ![](./assets/filter-drop-down.png)
+    ![Filter drop down menu](./assets/filter-drop-down.png)
 
 1.  Click **Apply**.

@@ -1,5 +1,5 @@
 ---
-title: Filter Dimensions in Report Builder
+title: How to filter dimensions in Report Builder
 description: Describes how to use filter dimensions in Report Builder for Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
@@ -19,13 +19,13 @@ To change the dimension items returned for each dimension
 
 1.  Click the **...** icon next to a component name in the table.
 
-    ![](./assets/image27.png)
+    ![The ellipsis icon options.](./assets/image27.png)
 
 1.  Select **Filter dimension** in the pop-up menu to display the **Filter dimension** pane.
 
 1.  Select **Most popular** or **Specific**.
 
-    ![](./assets/image28.png)
+    ![The specific option selected in the Filter dimension pane.](./assets/image28.png)
 
 1.  Select appropriate options based on the filter type chosen.
 
@@ -43,7 +43,7 @@ There are two ways to filter dimension items: Most popular and Specific.
 
 The Most popular option allows you to dynamically filter dimension items based on metric values. Most popular filtering returns the highest ranked dimension items based on metric values. By default, the first 10 dimensions items are listed, sorted by the first metric added to the data block.
 
- ![image files](./assets/image29.png)
+ ![The Most popular option.](./assets/image29.png)
 
 
 ### Page and Rows options
@@ -86,7 +86,7 @@ To set filtering criteria
 
 1.  Select an operator from the drop-down list.
 
-    ![](./assets/image31.png)
+    ![The operator list.](./assets/image31.png)
 
 1.  Enter a value into the search field.
 
@@ -108,14 +108,14 @@ To change the metric used to filter and sort the data block,
 
 2. Click the arrow on the preferred metric. 
 
-   ![](./assets/image30.png)
+   ![The Table builder and metrics.](./assets/image30.png)
 
 
 ## Specific filtering
 
 The Specific option allows you to create a fixed list of dimension items for each dimension. Use the **Specific** filtering type to specify the exact dimension items to include in your filter. You can select items from a list or from a range of cells.
 
-![](./assets/image32.png)
+![The Specific options and selected items.](./assets/image32.png)
 
 ### From list
 
@@ -123,7 +123,7 @@ The Specific option allows you to create a fixed list of dimension items for eac
 
     When you select the **From list** option, the list is populated with dimension items with the most events first.
 
-    ![](./assets/image33.png)
+    ![The From list option and available items.](./assets/image33.png)
 
     The **Available items** list is ordered from dimension items with the most events to those with the least.
 
@@ -131,9 +131,9 @@ The Specific option allows you to create a fixed list of dimension items for eac
 
 1.  To search for an item not included in the last 90 days of data, click **Show items for the last 6 months** to extend the search.
 
-    ![](./assets/image34.png)
+    ![The Show items from the last 6 months list.](./assets/image34.png)
 
-    After data from the past six months loads, Report Builder updates the link to **Show items for last 18 months**.
+    After data from the past 6 months loads, Report Builder updates the link to **Show items for last 18 months**.
 
 1.  Select a dimension item.
 
@@ -145,7 +145,7 @@ The Specific option allows you to create a fixed list of dimension items for eac
 
     To move an item in the list, drag and drop the item or click ... to display the move menu.
 
-    ![](./assets/image36.png)
+    ![The dimension items list.](./assets/image36.png)
 
 1.  Click **Apply**
 
@@ -155,7 +155,7 @@ The Specific option allows you to create a fixed list of dimension items for eac
 
 Select the **From range of cells** option to choose a range of cell that contain the list of dimensions items to match.
 
- ![](./assets/image37.png)
+ ![The From range of cells option and field to select one range of cells.](./assets/image37.png)
 
 When you select a range of cells, consider the following restrictions:
 
@@ -169,6 +169,6 @@ Your selection can contain empty cells or cells with values that don't match wit
 
 From the **Dimensions** tab, click the chevron icon next to a dimension name to view the list of dimension items.
 
- ![](./assets/dimensions_chevron.png)
+ ![The Dimensions tab and the list of dimensions.](./assets/dimensions_chevron.png)
 
 You can drag and drop items onto the **Table** or double-click an item name to add it to the **Table** builder.

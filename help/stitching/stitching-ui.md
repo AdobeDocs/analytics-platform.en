@@ -5,6 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 hide: yes
 hidefromtoc: yes
+exl-id: 8820a093-e573-45f9-bcd2-0933e21c231b
 ---
 # Create and manage stitched datasets
 

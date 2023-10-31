@@ -11,9 +11,9 @@ Workspace projects allow you to combine data components, tables and visualizatio
 
 ## Project list {#project-list}
 
-When you first go to **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**, the page lists all the projects you own or have been shared to you. This is also the landing page for Adobe Analytics, unless you have previously set a custom landing page. 
+When you first go to **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**, the page lists all the projects you own or projects shared to you. This is also the landing page for Adobe Analytics, unless you have previously set a custom landing page. 
 
-![](assets/sample-project.png)
+![Project landing page showing the projects list.](assets/sample-project.png)
 
 The Projects page contains the following information: 
 
@@ -49,7 +49,7 @@ The Projects page contains the following information:
 
 Within a project, the menu provides options for managing your project, adding components, finding help, and more. Each menu option can also be accessed by keyboard [shortcuts](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
-![](assets/menu.png)
+![New Project options including the Project, Edit, Insert, Components, Share, and Help options.](assets/menu.png)
 
 |  Menu item  | Description  |
 |---|---|
@@ -65,7 +65,7 @@ Within a project, the menu provides options for managing your project, adding co
 
 **[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]** provides project-level information on the currently active project.
 
-![](assets/projectinfo.png)
+![The Project Info & Settings window.](assets/projectinfo.png)
 
 Settings include:
 
@@ -88,7 +88,7 @@ You can also access visualizations and panels from the [Blank Panel](/help/analy
 
 Components (Dimensions, Metrics, Filters, Date Ranges) in the left rail relate to the active panel data view. The active panel will have a blue border around it, and the active data view will be listed at the top of the component rail.
 
-![](assets/left-rail.png)
+![The components relating to the active panel data view for Cross-Industry Demo Data data view.](assets/left-rail.png)
 
 ## Project canvas {#canvas}
 
@@ -98,15 +98,15 @@ Panels are helpful when you want to organize your projects according to time per
 
 Depending on the starting point you chose for your projects, you will either have a [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) or a [blank panel](/help/analysis-workspace/c-panels/blank-panel.md) in the canvas to begin with. The quickest way to start analyzing is to select one or many components and simply drag & drop them into the project canvas. A table of data will automatically be rendered for you. [Learn more](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) about the different options for building a table, or leverage our [training tutorial](/help/analysis-workspace/home.md) for more guidance on building your first project.
 
-![](assets/canvas.png)
+![A Freeform Table for the project.](assets/canvas.png)
 
 ## Project Manager {#manager}
 
-Analysis Workspace projects can be managed under **Analytics > Components >  Projects**. The Project Manager shows the items that a specific user has created. Project ownership can be transferred to a new user under Admin > Analytics Users & Assets > Transfer Assets.
+Analysis Workspace projects can be managed under **Analytics > Components >  Projects**. The Project Manager shows the items that a specific user created. You can transfer project ownership to a new user under Admin > Analytics Users & Assets > Transfer Assets.
 
-In the Projects Manager, you can add, tag, share, duplicate/copy, and more. Search for a project in the search bar or by using the filter options in the left rail. You can filter by tag, owners, project type and more.
+In Projects Manager, you can add, tag, share, duplicate/copy, and more. Search for a project in the search bar or by using the filter options in the left rail. You can filter by tag, owners, project type and more.
 
-![](assets/project-manager.png)
+![Project Manager Tags search field and Title search field.](assets/project-manager.png)
 
 The following are common actions in the Projects manager, and can be taken on one or many projects at once:
 

@@ -49,7 +49,7 @@ Once the model has been selected and holidays have been identified in the report
 
 Notice the dramatic improvement of performance on Christmas Day and New Year's Day in the following example:
 
-![](assets/anomaly_statistics.png)
+![Two line charts showing performance changes with and without holiday performance.](assets/anomaly_statistics.png)
 
 ## Anomaly detection for hourly granularity
 

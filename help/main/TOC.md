@@ -35,6 +35,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
+    + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
     + [Customer Journey Analytics feature support](../getting-started/aa-vs-cja/cja-aa.md)
     + [Compare terminology for Analytics data passed through the Analytics source connector](../getting-started/aa-vs-cja/terminology.md)
@@ -221,6 +222,12 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Filters {#cja-filters}
     + [Filters overview](../components/filters/filters-overview.md)
     + [Create filters](../components/filters/create-filters.md)
+    + [Share filters](../components/filters/filters-share.md)
+    + [Tag filters](../components/filters/filters-tag.md)
+    + [Filter the list of filters](../components/filters/filters-filter.md)
+    + [Mark filters as favorites](../components/filters/filters-favorite.md)
+    + [Approve filters](../components/filters/filters-approve.md)
+    + [Copy filters](../components/filters/filters-copy.md)
     + [Quick filters](../components/filters/quick-filters.md)
     + [Filter builder](../components/filters/filter-builder.md)
     + [Manage filters](../components/filters/manage-filters.md)
@@ -232,10 +239,13 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Find metrics](../components/calc-metrics/cm-workflow/cm-finding.md)
       + [Build metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
       + [Metric type and attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-      + [Build a "Participation" metric](../components/calc-metrics/cm-workflow/participation-metric.md)
+      + [Build a participation metric](../components/calc-metrics/cm-workflow/participation-metric.md)
       + [Filtered metrics](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
       + [Stack and replace filters](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
       + [Filtered and weighted metrics](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
+      + [Filter calculated metrics](../components/calc-metrics/cm-workflow/cm-filter.md)
+      + [Mark calculated metrics as favorites](../components/calc-metrics/cm-workflow/cm-favorite.md)
+      + [Copy calculated metrics](../components/calc-metrics/cm-workflow/cm-copy.md)
       + [Use functions](../components/calc-metrics/cm-workflow/cm-using-functions.md)
       + [Tag calculated metrics](../components/calc-metrics/cm-workflow/cm-tagging.md)
       + [Approve calculated metrics](../components/calc-metrics/cm-workflow/cm-approving.md)
@@ -277,6 +287,11 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Restricted Labels](../report-builder/restricted-labels.md)
   + [Report Builder Settings](../report-builder/report-builder-settings.md)
 
++ Reporting Activity Manager {#reporting-activity-manager}
+  + [Overview](../reporting-activity-manager/reporting-activity-overview.md)
+  + [View reporting activity](../reporting-activity-manager/reporting-activity.md)
+  + [Cancel reporting requests](../reporting-activity-manager/reporting-activity-cancel-requests.md)
+
 + Stitching {#stitching}
   + [Overview](../stitching/overview.md)
   + [How stitching works](../stitching/explained.md)
@@ -314,6 +329,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
   + B2B {#b2b}
+    + [An example B2B project](../use-cases/b2b/example.md)
     + [Add account-level data as a lookup dataset](../use-cases/b2b/b2b.md)
   + Cross-channel data {#cross-channel}
     + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)

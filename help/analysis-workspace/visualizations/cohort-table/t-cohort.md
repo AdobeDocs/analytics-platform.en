@@ -41,7 +41,7 @@ Create a cohort and run a [!UICONTROL Cohort Analysis] report in Analysis Worksp
 
    Select cells (contiguous or noncontiguous), then right-click > **[!UICONTROL Create Filter From Selection]**.
 
-1. In the [Filter Builder](/help/components/filters/manage-filters.md), further edit the filter, then click **[!UICONTROL Save]**.
+1. In the [Filter Builder](/help/components/filters/filter-builder.md), further edit the filter, then click **[!UICONTROL Save]**.
 
    The saved filter is available for use in the [!UICONTROL Filter] panel in [!UICONTROL Analysis Workspace].
 1. Name and save your cohort project.

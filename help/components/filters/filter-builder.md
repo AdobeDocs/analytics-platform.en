@@ -58,10 +58,10 @@ You can add rule definitions and containers to define your filters. (For informa
 1. Enter or select a value for the item selected.
 1. Add additional containers if needed, using **[!UICONTROL And]**, **[!UICONTROL Or]**, or **[!UICONTROL Then]** rules.
 1. After placing the containers and setting the rules, see the results of the filter in the validation chart at the top right. The validator indicates the percentage and absolute number of page views, visits, and unique persons that match the filter you created.
-1. Under **[!UICONTROL Tags]**, [tag](/help/components/filters/manage-filters.md) the container by selecting an existing tag or creating a new one.
+1. Under **[!UICONTROL Tags]**, [tag](/help/components/filters/filters-tag.md) the container by selecting an existing tag or creating a new one.
 1. Click **[!UICONTROL Save]** to save the filter.
 
-   You are taken to the [Filter manager](/help/components/filters/manage-filters.md), where you can tag, share, and manage your filter in multiple ways.
+   You are taken to the [Filters manager](/help/components/filters/manage-filters.md), where you can tag, share, and manage your filter in multiple ways.
 
 ## Add containers {#containers}
 

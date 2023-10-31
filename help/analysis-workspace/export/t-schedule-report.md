@@ -8,7 +8,7 @@ exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 ---
 # Send Customer Journey Analytics data to others through email
 
-You can export Customer Journey Analytics data by sending it to selected recipients through email. You can send files ad hoc, or you can configure files to be sent on a schedule. Files can be sent in CSV or PDF format.
+You can export Customer Journey Analytics reports by sending it to selected recipients through email. You can send files ad hoc, or you can configure files to be sent on a schedule. Files can be sent in CSV or PDF format.
 
 Any tags applied to the project are automatically applied to the export.
 
@@ -24,11 +24,11 @@ To send a file immediately to recipients by email:
    * [!UICONTROL **PDF**]: Choose this option if you want the downloaded file to contain all the displayed (visible) tables and visualizations in the project.
 1. (Optional) Add a description to include in the email to explain the file being received. 
 1. Add recipients or groups. Email addresses can also be entered. 
-1. (Only for Healthcare Shield customers) Provide a password. See the section Password-protect a scheduled report. 
-1. Click **[!UICONTROL Send Now]**.
+1. (Only for Healthcare Shield customers) Provide a password. See the section Password-protect a scheduled report.
 1. (Optional) Click **[!UICONTROL Show scheduling options]** to specify a delivery schedule.
+1. Click **[!UICONTROL Send Now]**.
 
-![Send file now](assets/send-file-no-scheduling-options.JPG)
+![The Send file window and Send now button.](assets/send-file-no-scheduling-options.JPG)
 
 ## Send file on schedule {#schedule}
 
@@ -43,7 +43,7 @@ To send a file on a recurring schedule to recipients by email:
 1. Specify the delivery frequency. Each frequency allows for different customizations. 
 1. Click **[!UICONTROL Send on schedule]**.
 
-![](assets/send-file.JPG)
+![The Send file window and scheduling options displayed to show the Starting on, Ending on dates, and the daily frequency settings.](assets/send-file.JPG)
 
 ## Scheduled Projects manager {#manager}
 
@@ -92,7 +92,7 @@ After your company has purchased the Healthcare Shield SKU and has been enabled 
 
 * When an existing scheduled project is about to be sent. The currently scheduled project is disabled until password protection is in place. The owner of the scheduled project receives an email informing them of this requirement. 
 
-![password protection](assets/password.png)
+![The Edit scheduled project window and password encryption notification indicating your organization requires password encryption.](assets/password.png)
 
 ### Password requirements
 
@@ -107,7 +107,7 @@ The password requirements conform to the Adobe standards, requiring a minimum of
 
 Before a project is scheduled, the project owner receives an email similar to this:
 
-![email](assets/email-password.png)
+![The Customer Journey Analytics email notification indicating password encryption is required for your organization.](assets/email-password.png)
 
 1. Log in to Customer Journey Analytics.
 1. Select **[!UICONTROL View Scheduled Project]**.

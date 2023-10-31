@@ -76,7 +76,7 @@ The Media Average Minute Audience panel returns the following:
 
 To edit and rebuild the panel at any time, click the edit pencil on the top right.
 
-![Default view](assets/specific-content-panel-output.png)
+![The default view of the Average Minute Audience panel.](assets/specific-content-panel-output.png)
 
 
 ### Specific Content Data Source
@@ -93,7 +93,7 @@ The Media Average Minute Audience panel returns the total average minute audienc
 
 To edit and rebuild the panel at any time, click the edit pencil on the top right.
 
-![concurrent viewers output](assets/custom-time-period-panel-output.png)
+![The Average Minute Audience panel showing the data for the entire selection.](assets/custom-time-period-panel-output.png)
 
 ### Custom Time Period Data Source
 

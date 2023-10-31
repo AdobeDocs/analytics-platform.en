@@ -1,7 +1,7 @@
 ---
 title: Friction view
 description: Compare conversion rates between steps.
-exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
+exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Guided Analysis
 keywords: product analytics
 ---

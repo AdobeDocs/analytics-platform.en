@@ -49,15 +49,15 @@ Total Records by timestamps should match with Occurrences, provided that no reco
 
     ```sql
     SELECT
-        Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day,  
+        Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) AS Day,
         Count(_id) AS Records 
     FROM  {dataset}
-    WHERE timestamp>=from_utc_timestamp('{fromDate}','UTC')
-        AND timestamp<from_utc_timestamp('{toDate}','UTC')
+    WHERE   timestamp >= from_utc_timestamp('{fromDate}','UTC')
+        AND timestamp < from_utc_timestamp('{toDate}','UTC')
         AND timestamp IS NOT NULL
         AND enduserids._experience.aaid.id IS NOT NULL
-        GROUP BY Day
-        ORDER BY Day;
+    GROUP BY Day
+    ORDER BY Day; 
     ```
 
 1. In [Analytics Data Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html), identify from the raw data whether some rows might have been filtered out by the Analytics Source connector. 

@@ -1,24 +1,25 @@
 ---
-description: Understand the various methods available for exporting from Analysis Workspace.
+description: Understand the methods available for exporting from Analysis Workspace.
 keywords: Analysis Workspace
-title: Export project data overview
+title: How to export project data
 feature: Curate and Share
-hide: yes
-hidefromtoc: yes
+exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
 ---
 # Export overview
 
-You can export Customer Journey Analytics data from Analysis Workspace. You might want to export Customer Journey Analytics data for a number of reasons, such as to store large amounts of historical data or to analyze raw data in third-party tools.
+You can export Customer Journey Analytics reports from Analysis Workspace. You might want to export Customer Journey Analytics reports for a number of reasons, such as to utilize in third-party tools or combine with outside data.
 
 The following sections describe supported file types, the various methods available for exporting, and the advantages of each method. 
 
 ## Supported file types
 
-You can export Customer Journey Analytics data as a PDF or CSV file. 
+You can export Customer Journey Analytics reports as a PDF, CSV, or JSON file. 
 
 * **PDF:** Provides an easy way to share visual data with stakeholders. PDF files contain all the displayed (visible) tables and visualizations in the project.
 
 * **CSV:** Allows you to view raw data in a spreadsheet application, such as Excel. CSV files contain plain-text data.
+
+* **JSON:** Provides an open standard file format for sharing data.
 
 ## Methods of exporting 
 
@@ -28,7 +29,6 @@ There are various methods available when exporting from Analysis Workspace. When
 |---------|----------|
 | [Download to your workstation](/help/analysis-workspace/export/download-send.md) | Use this method if you want to: <ul><li>Download projects to your personal workstation.</li><li>Downloads are ad hoc only (cannot be scheduled).</li> <li>Download a total of 50,000 rows.</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? -->| 
 | [Send to other users](/help/analysis-workspace/export/t-schedule-report.md) | Use this method if you want to: <ul><li>Email exported Customer Journey Analytics data to other users in your organization.</li><li>Can be ad hoc or on a schedule.</li> <li>Include a total of 50,000 rows.</li> <!--true?--> | 
-| [Send to a cloud application](/help/analysis-workspace/export/export-cloud.md) | Use this method if you want to: <ul><li>Export to a shared location, such as Google Cloud Platform, Microsoft Azure, Amazon S3, Snowflake, or Adobe Experience Platform.</li><li>Can be ad hoc or on a schedule.</li><li>Store large amounts of historical Customer Journey Analytics data.</br>This type of data can be used to detect long-term trends in order to gain business intelligence, and ultimately lead to better business decision-making.</li><li>Export full tables that contain thousands or millions of rows.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li>  |
+| [Send to a cloud application](/help/analysis-workspace/export/export-cloud.md) | Use this method if you want to: <ul><li>Export to a shared location, such as Adobe Experience Platform Data Landing Zone, Google Cloud Platform, Microsoft Azure, Amazon S3, or Snowflake.</li><li>Can be ad hoc or on a schedule.</li><li>Store larger amounts of Customer Journey Analytics data.</li><li>Export full tables that contain thousands or millions of rows.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li>  |
 
 {style="table-layout:auto"}
-

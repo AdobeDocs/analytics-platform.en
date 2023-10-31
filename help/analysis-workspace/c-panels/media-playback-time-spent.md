@@ -49,7 +49,7 @@ You can configure the Media Playback Time Spent panel using these input settings
 
 ## Default view
 
-![Default view](assets/mpts_default_view.png)
+![The Media playbook time spent default view.](assets/mpts_default_view.png)
 
 ## Panel Output {#Output}
 
@@ -59,7 +59,7 @@ At any time, you can edit and rebuild the panel by clicking the edit pencil on t
 
 If you selected series breakdown, a line on the line chart and a summary number is displayed for each:
 
-![media playback time spent output](assets/mpts_outputs1.png)
+![The Media playback time spent output showing a line chart and summary.](assets/mpts_outputs1.png)
 
 ### Data Source
 
