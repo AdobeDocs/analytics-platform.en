@@ -74,7 +74,7 @@ Upon report time, the value of the metric and original currency code are convert
 
 +++ How far back are daily conversion rates maintained?
 
-Daily conversion rates are maintained for the last four years?
+Daily conversion rates are maintained for the last four years.
 
 +++
 
