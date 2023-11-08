@@ -26,7 +26,7 @@ The query rail allows you to configure the following components:
 
 * **[!UICONTROL Events]**: The events that you want to measure. Each selected event is represented as a chart series and table row. You can include up to five events.
 * **[!UICONTROL People]**: The segments that you want to measure. Each selected segment doubles the number of chart series and table rows. You can include up to five segments.
-* **[!UICONTROL Breakdown property]**: Breaks down the chart series and table rows by the values of the selected property. A single breakdown property is supported. The top twenty values will appear in the table, and up to ten values can be viewed in the chart. You can hide or expose a row in the chart by toggling the ![Show hide icon](assets/hide-in-chart.png) icon.  
+* **[!UICONTROL Breakdown property]**: Breaks down the chart series and table rows by the values of the selected property. A single breakdown property is supported. The top twenty values will appear in the table, and up to ten values can be viewed in the chart. You can hide or expose a row in the chart by toggling the ![Show hide icon](../assets/hide-in-chart.png) icon.  
 
 ## Chart settings
 
