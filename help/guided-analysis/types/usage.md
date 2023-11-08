@@ -26,7 +26,7 @@ The query rail allows you to configure the following components:
 
 * **[!UICONTROL Events]**: The events that you want to measure. Each selected event is represented as a chart series and table row. You can include up to five events.
 * **[!UICONTROL People]**: The segments that you want to measure. Each selected segment doubles the number of chart series and table rows. You can include up to five segments.
-* **[!UICONTROL Breakdown property]**: Breaks down the chart series and table rows by the values of the selected property. A single breakdown property is supported. The top twenty values will appear in the table, and up to ten values can be viewed in the chart. You can hide or expose a row in the chart by toggling the ![Show hide icon](../assets/hide-in-chart.png) icon.  
+* **[!UICONTROL Breakdown property]**: Breaks down the chart series and table rows by the values of the selected property. A single breakdown property is supported. The top 20 values appear in the table, and up to ten values can be viewed in the chart. You can hide or expose a row in the chart by toggling the ![Show hide icon](../assets/hide-in-chart.png) icon.  
 
 ## Chart settings
 
@@ -37,13 +37,13 @@ The [!UICONTROL Usage] view offers the following chart settings, which can be ad
 
 ## Overlays
 
-Add additional data to the chart. When more than one series is visible on the chart, overlays will appear on hover only. 
+Add additional data to the chart. When more than one series is visible on the chart, overlays appear on hover only. 
 
 * **[!UICONTROL Anomaly detection]**: Runs [anomaly detection](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) on the trended analysis. Outliers appear as dots that you can hover over for more information.
 * **[!UICONTROL Trendline overlay]**: Adds a trendline to the chart which helps depict a clearer pattern in the data.
   * [!UICONTROL Linear]: Creates a straight regression line. Best for simple linear data that increases or decreases at a steady rate. Equation: `y = a + b * x`
-  * [!UICONTROL Logarithmic]: Creates a curved regression line. Best for data that increases or decreases quickly and then levels out. Equation: `y = a + b * log(x)`
-  * [!UICONTROL Moving average]: Creates a smooth trendline based on a set of averages. Also known as a rolling average, a moving average uses a specific number of previous data points (determined by your selection), averages them, and uses the average as the point in the line. Examples include 7 day moving average or 4 week moving average. Available moving average options are dependent on your selected interval and date range.
+  * [!UICONTROL Logarithmic]: Creates a curved regression line. Best for data that increases or decreases quickly, then becomes more level. Equation: `y = a + b * log(x)`
+  * [!UICONTROL Moving average]: Creates a smooth trendline based on a set of averages. Also known as a rolling average, a moving average uses a specific number of previous data points (determined by your selection), averages them, and uses the average as the point in the line. Examples include seven day moving average or four week moving average. Available moving average options depend on your selected interval and date range.
 
 ## Apply time comparison
 
