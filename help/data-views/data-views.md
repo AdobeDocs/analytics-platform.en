@@ -17,11 +17,15 @@ You can create different data views for the same connection, with very different
 
 Workspace projects in Customer Journey Analytics are based on data views.
 
+>[!IMPORTANT]
+>
+>Up to 5,000 metrics and 5,000 dimensions can be added to a single data view.
+
 ## Data views capabilities {#capabilities}
 
 Data views let you spontaneously change schema element settings, without having to change the schema in Adobe Experience Platform or re-implementing your Customer Journey Analytics environment.
 
-* **You can change a component from a Metric to a Dimension and vice versa**. You can create metrics from string fields or create dimensions from numeric fields. This makes your life easier, because you don't have to create a numeric field in your XDM schema for every metric you want. Instead, you can just spontaneously create it in the data views dialog. Here are some examples:
+* **You can change a component from a metric to a dimension and vice versa**. You can create metrics from string fields or create dimensions from numeric fields. This makes your life easier, because you don't have to create a numeric field in your XDM schema for every metric you want. Instead, you can just spontaneously create it in the data views dialog. Here are some examples:
   * **Create one or more and/or one dimensions from a single schema field**. It's a one-to-many relationship. For example, you could create one or more Revenue metrics and/or one or more Revenue dimensions from a single schema field.
   * **Use a string field as a metric**: When you populate a schema in Experience Platform with a dataset, you might not know up front what schema elements you need. For example, you may not have realized that you needed a metric for "Errors on a page". As a result, you did not create a numeric schema element to this effect. By using a string element as a metric, you can now use the data views settings to specify that any time a string contains the word 'error', it can be used as a metric.
   * **Use a numeric field as a dimension**: For example, if you want to pull the Revenue metric from the Revenue dimension, the Revenue dimension would show each value as a dimension item ($100, $175, $1,000, etc.) and the number of instances for each dimension item. Revenue as a metric would behave like it always has.
