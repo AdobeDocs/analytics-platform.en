@@ -72,6 +72,10 @@ Indicates the calendar format that you want the data view to follow. You can hav
 
 Next, you can set a data view's components, which means you can create metrics and dimensions from schema elements. You can also use standard components.
 
+>[!IMPORTANT]
+>
+>Up to 5,000 metrics and 5,000 dimensions can be added to a single data view.
+
 1. Select the **[!UICONTROL Components]** tab.
 
    ![Components tab](assets/dataview-components.png)
