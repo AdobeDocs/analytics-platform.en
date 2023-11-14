@@ -23,6 +23,20 @@ Report Builder for Customer Journey Analytics is available for Excel on the foll
 - Windows
 - Web browsers
 
+## Common use cases
+
+- **Data Extraction**: Adobe Report Builder allows you to extract data from Customer Journey Analytics into Excel. You can create custom reports and queries to retrieve specific data points that are relevant to your analysis. 
+
+- **Custom Reporting**: You can design and format custom reports in Excel to suit your specific reporting needs. This is especially useful for tailoring reports to different stakeholders. 
+
+- **Ad-Hoc Analysis**: Users can quickly generate ad-hoc reports to answer specific questions or explore data trends without having to go through a lengthy report creation process. 
+
+- **Dashboarding**: Data extracted from CJA can be used to create Excel-based dashboards and visualizations for a high-level overview of key performance indicators (KPIs). 
+
+- **Sharing Insights**: You can share Excel reports and insights with team members or stakeholders who might not have direct access to CJA.
+
+## Overview video
+
 >[!VIDEO](https://video.tv.adobe.com/v/337569/?quality=12&learn=on)
 
  >[!NOTE]
