@@ -4,7 +4,8 @@ title: Filter and sort tables
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 ---
-# Filter and sort tables
+
+# Filter and sort freeform tables
 
 Freeform tables in Analysis Workspace are the foundation for interactive data analysis. As such, they can contain thousands of rows of information. Filtering and sorting the data can be a critical part of efficiently surfacing the most important information. 
 
@@ -12,13 +13,24 @@ Freeform tables in Analysis Workspace are the foundation for interactive data an
 
 >[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
-## Filter tables {#section_36E92E31442B4EBCB052073590C1F025}
+## Filter tables
 
- Filters in Analysis Workspace help you surface the most important information.
+Filters in Analysis Workspace help you surface the most important information.
 
 >[!NOTE]
 >
 > Only dynamic dimension items can be filtered as described in this section. Static dimension items cannot be filtered. For more information, see [Dynamic vs static dimension items in freeform tables](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+
+## Filter freeform table rows
+
+You can use several methods to filter rows from a freeform table. 
+
+- Click the 'X' in the row
+- Right-click > Deleted Selected rows
+- Table filters 
+- Segmentation
+
+Be sure to read how each method impacts [Freeform table totals](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
 ### Quickly exclude specific rows from a table
 
@@ -32,7 +44,14 @@ To quickly exclude specific rows from a Freeform table:
 
 1. Hover over the row you want to exclude, then select the x icon. 
 
-   Hold the Shift key to select a range rows, or hold the Command key (on Mac) or the Ctrl key (on Windows) to select multiple rows.
+   Hold the Shift key to select a range of rows, or hold the Command key (on Mac) or the Ctrl key (on Windows) to select multiple rows.
+
+### Right-click > Delete selected rows
+
+1. Select 1 or more rows. 
+1. Right-click and select **[!UICONTROL Delete Selected Rows]**. 
+
+   This action will remove the rows from the table and apply a table filter.
 
 ### Apply a simple or advanced filter to a table
  
@@ -53,7 +72,7 @@ To quickly exclude specific rows from a Freeform table:
 
  1. (Optional) To filter by different criteria or by multiple criteria, select [!UICONTROL **Show advanced**]. 
 
-    The following options are available
+    The following advanced filter options are available:
 
     |Option | Function | 
     |---------|----------|
@@ -66,6 +85,10 @@ To quickly exclude specific rows from a Freeform table:
 
     The **Filter** icon ![Blue filter icon filtered table](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) turns blue when a filter is applied to the table. 
 
+### Filters
+
+See our [Filtering documentation](/help/components/filters/filters-overview.md) for more details.
+
 ## Sort tables
 
 You can sort the data of a Freeform table by any column in Analysis Workspace that is either a dimension or a metric. 
@@ -76,8 +99,8 @@ A down arrow icon ![Down arrow icon sorted table column](https://spectrum.adobe.
 
    Consider the following when sorting:
 
-   * The down-arrow sorts in descending order and the up-arrow (default) in ascending order.
-   * You can sort Dimensions alphabetically or numerically. For example, you may have numbered steps in a workflow and may want to sort by the step number. You might sort a date-related dimension by date. Or you could sort data sources alphabetically, as in the following image.
+   - The down-arrow sorts in descending order and the up-arrow (default) in ascending order.
+   - You can sort Dimensions alphabetically or numerically. For example, you may have numbered steps in a workflow and may want to sort by the step number. You might sort a date-related dimension by date. Or you could sort data sources alphabetically, as in the following image.
 
    ![](assets/sort-dimensions.png)
 
