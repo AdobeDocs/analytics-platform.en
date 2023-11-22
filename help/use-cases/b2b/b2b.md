@@ -1,11 +1,11 @@
 ---
-title: (B2B) Add account-level data as a lookup dataset
+title: Add account-level data as a lookup dataset
 description: Learn how to add account-based data as a lookup dataset to Customer Journey Analytics
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
 ---
-# (B2B) Add account-level data as a lookup dataset
+# Add account-level data as a lookup dataset
 
 This B2B use case shows you how to specify your data at an account level rather than at a person level for analysis. Account-level analysis can answer questions such as
 

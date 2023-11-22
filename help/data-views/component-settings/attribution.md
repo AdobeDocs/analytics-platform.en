@@ -22,8 +22,6 @@ In some reports, you might want the order attributed to Paid search. In other re
 
 You can set a default attribution model for a given metric by updating the metric's setting in the data view. Doing so overrides the metric's attribution model any time it's used in Analysis Workspace.
 
-<!-- 
-
 >[!NOTE]
 >
 >Consider the following when enabling attribution on a metric:
@@ -35,8 +33,6 @@ You can set a default attribution model for a given metric by updating the metri
 >   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
 >
 > For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
-
--->
 
 To update a component's default attribution model: 
 

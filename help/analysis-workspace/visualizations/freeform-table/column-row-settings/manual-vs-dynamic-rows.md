@@ -19,7 +19,7 @@ For example, when you drag the Browser Type dimension into the table, the top Br
 Dynamic dimension items have the row filter option and the X icons, and do **not** have lock icon present. <!--do they have the lock icon? --> When you click the x next to a dynamic dimension item, a filter is automatically applied. For more information about applying filters to tables, see [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 
-![](assets/dynamic-items.png)
+![A Freeform Table highlighting the filter icon.](assets/dynamic-items.png)
 
 ## Static dimension items
 
@@ -34,13 +34,13 @@ For example, when you drag over specific Browser Type items such as Microsoft an
 
 Static dimension items do **not** have the row filter option. Instead, lock and X icons are present on each item. Click the X icon to remove that dimension item from the table.
 
-![](assets/static-items.png)
+![A Freeform Table showing the Browser Type and the Microsoft row with a lock icon note: This dimension item is static and will not change with time.](assets/static-items.png)
 
 ## Mixed dimension items
 
 Dimension items from different dimensions can be added to the same table. The row header say "Mixed Dimensions" in these cases. These dimension items are static. For example, adding specific dimension items from the Browser Type dimension and other dimension items from the Browser dimension.
 
-![](assets/mixed-dimensions.png)
+![A Freeform Table highlighting the Mixed Dimensions column.](assets/mixed-dimensions.png)
 
 ## Freeform total rows
 

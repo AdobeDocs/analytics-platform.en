@@ -7,11 +7,29 @@ exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 ---
 # Manage export logs
 
-{{release-limited-testing}}
-
 Export logs provide details about each export, and are generated any time Analysis Workspace data is exported to the cloud. (For information about how data can be exported to the cloud, see [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).) 
 
 For scheduled exports, logs reflect the export settings as they were when the log was sent. Logs cannot be deleted.
+
+## View export logs
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. Select the [!UICONTROL **Logs**] tab.
+
+   ![Export logs tab](assets/export-logs-tab.png)
+
+   Details for each log are displayed in the available columns. 
+
+1. Do any of the following:
+
+   * [Customize the columns](#configure-columns) that are displayed.
+
+   * Select the **Information icon** ![Information icon](assets/information-icon.png) next to the log name to view the export that is associated with the log.
+
+   * Select the **Edit export icon** ![Information icon](assets/edit-export-icon.png) next to the log name to edit the export that is associated with the log. 
+
+     For more information about editing an export, see [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).
 
 ## Filter and search for logs
 

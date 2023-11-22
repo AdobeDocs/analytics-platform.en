@@ -11,7 +11,7 @@ Create a cohort and run a [!UICONTROL Cohort Analysis] report in Analysis Worksp
 
 1. In Analysis Workspace, click the **[!UICONTROL Visualizations]** icon in the left rail and drag a **[!UICONTROL Cohort Table]** to the canvas.
 
-   ![](assets/cohort-table.png)
+   ![An example Cohort Table showing the Inclusion Criteria and Return Criteria.](assets/cohort-table.png)
 
 1. Define the **[!UICONTROL Inclusion Criteria]**, **[!UICONTROL Return Criteria]**, **[!UICONTROL Cohort Type]**, and **[!UICONTROL Settings]** as defined in the table below.
 
@@ -34,7 +34,7 @@ Create a cohort and run a [!UICONTROL Cohort Analysis] report in Analysis Worksp
 
 1. Click **[!UICONTROL Build]**.
 
-   ![Step Result](assets/cohort-report.png)
+   ![Cohort Table view showing selected Inclusion Criteria and Return Critera. Click Build.](assets/cohort-report.png)
 
    The report shows persons who placed an order ( *`Included`* column), and who returned to your site in subsequent visits. The reduction in visits over time enables you to spot problems and take action.
 1. (Optional) Create a filter from a selection.

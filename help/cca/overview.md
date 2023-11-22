@@ -55,7 +55,6 @@ Cross-Channel Analytics is a groundbreaking and robust feature, but has limitati
 * If multiple events occur with the same timestamp for the same persistent ID, but with different values in the transient ID field, field-based stitching will choose based on alphabetical order. So if persistent ID A has two events with the same timestamp and one of the events specifies Bob and the other specifies Ann, field-based stitching will choose Ann.
 * If a device is shared by multiple people and the total number of transitions between users exceeds 50.000, CCA stops stitching data for that device.
 
-
 ## Enable Cross-Channel Analytics
 
 Once your organization meets all prerequisites and understands its limitations, you can follow these steps to start using it in Customer Journey Analytics.

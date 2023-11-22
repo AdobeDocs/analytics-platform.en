@@ -1,10 +1,10 @@
 ---
-title: Processing Rules, VISTA and classifications vs. Data Prep for the Analytics source connector
+title: Processing Rules, VISTA, and classifications vs. Data Prep for the Analytics source connector
 description: Learn about data transformation using processing rules and VISTA vs. using Data Prep
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
 ---
-# Processing rules, VISTA and classifications versus Data Prep
+# Processing rules, VISTA, and classifications versus Data Prep
 
 Adobe Analytics [processing rules and VISTA rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/processing-rule-order.html?lang=en) provide a means to transform and manipulate data which is passed into Adobe Analytics [data collection](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=en). These transformations occur as a part of Adobe's data processing before the data is stored for reporting and analytics purposes in Adobe Analytics. 
 

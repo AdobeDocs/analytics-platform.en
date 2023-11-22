@@ -35,6 +35,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
+    + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
     + [Customer Journey Analytics feature support](../getting-started/aa-vs-cja/cja-aa.md)
     + [Compare terminology for Analytics data passed through the Analytics source connector](../getting-started/aa-vs-cja/terminology.md)
@@ -149,17 +150,17 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Quick Insights panel](../analysis-workspace/c-panels/quickinsight.md)
     + [Media Concurrent Viewers panel](../analysis-workspace/c-panels/media-concurrent-viewers.md)
     + [Media Playback Time Spent panel](../analysis-workspace/c-panels/media-playback-time-spent.md)
-  +   Curate, Share and Schedule projects {#curate-share}
-        + [Share menu](../analysis-workspace/curate-share/send-schedule-files.md)
-        + [Curate projects](../analysis-workspace/curate-share/curate.md)
-        + [Share projects](../analysis-workspace/curate-share/share-projects.md)
-        + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
-        + [View-only projects](../analysis-workspace/curate-share/view-only-projects.md)
-  +   Export {#export}
-        + [Export overview](../analysis-workspace/export/export-project-overview.md)
-        + [Download](../analysis-workspace/export/download-send.md)
-        + [Send to others](../analysis-workspace/export/t-schedule-report.md)
-        + [Export to the cloud](../analysis-workspace/export/export-cloud.md)
+  + Curate, Share and Schedule projects {#curate-share}
+    + [Share menu](../analysis-workspace/curate-share/send-schedule-files.md)
+    + [Curate projects](../analysis-workspace/curate-share/curate.md)
+    + [Share projects](../analysis-workspace/curate-share/share-projects.md)
+    + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
+    + [View-only projects](../analysis-workspace/curate-share/view-only-projects.md)
+  + Export {#export}
+    + [Export overview](../analysis-workspace/export/export-project-overview.md)
+    + [Download](../analysis-workspace/export/download-send.md)
+    + [Send to others](../analysis-workspace/export/t-schedule-report.md)
+    + [Export to the cloud](../analysis-workspace/export/export-cloud.md)
   + Virtual Analyst {#virtual-analyst}
     + [Virtual Analyst overview](../analysis-workspace/virtual-analyst/overview.md)
     + Anomaly Detection {#anomaly-detection}
@@ -183,18 +184,20 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Guided analysis {#guided-analysis}
     + [Overview](../guided-analysis/overview.md)
-    + Impact {#impact}
-      + [Release view](../guided-analysis/types/release.md)
-      + [First use view](../guided-analysis/types/first-use.md)
-    + Funnel {#funnel}
-      + [Friction view](../guided-analysis/types/friction.md)
-      + [Conversion trends view](../guided-analysis/types/conversion-trends.md)
     + User growth {#user-growth}
       + [Active view](../guided-analysis/types/active.md)
       + [Net growth view](../guided-analysis/types/net-growth.md)
     + Trends {#trends}
       + [Usage view](../guided-analysis/types/usage.md)
       + [Frequency view](../guided-analysis/types/frequency.md)
+    + Funnel {#funnel}
+      + [Friction view](../guided-analysis/types/friction.md)
+      + [Conversion trends view](../guided-analysis/types/conversion-trends.md)
+    + Impact {#impact}
+      + [Release view](../guided-analysis/types/release.md)
+      + [First use view](../guided-analysis/types/first-use.md)
+    + Retention {#retention}
+      + [Retention rates](../guided-analysis/types/retention-rates.md)
     + [Industry use cases](../guided-analysis/industry-use-cases.md)
     + [FAQ](../guided-analysis/faq.md)
 
@@ -238,7 +241,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Find metrics](../components/calc-metrics/cm-workflow/cm-finding.md)
       + [Build metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
       + [Metric type and attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-      + [Build a "Participation" metric](../components/calc-metrics/cm-workflow/participation-metric.md)
+      + [Build a participation metric](../components/calc-metrics/cm-workflow/participation-metric.md)
       + [Filtered metrics](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
       + [Stack and replace filters](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
       + [Filtered and weighted metrics](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
@@ -286,6 +289,11 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Restricted Labels](../report-builder/restricted-labels.md)
   + [Report Builder Settings](../report-builder/report-builder-settings.md)
 
++ Reporting Activity Manager {#reporting-activity-manager}
+  + [Overview](../reporting-activity-manager/reporting-activity-overview.md)
+  + [View reporting activity](../reporting-activity-manager/reporting-activity.md)
+  + [Cancel reporting requests](../reporting-activity-manager/reporting-activity-cancel-requests.md)
+
 + Stitching {#stitching}
   + [Overview](../stitching/overview.md)
   + [How stitching works](../stitching/explained.md)
@@ -323,6 +331,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
   + B2B {#b2b}
+    + [An example B2B project](../use-cases/b2b/example.md)
     + [Add account-level data as a lookup dataset](../use-cases/b2b/b2b.md)
   + Cross-channel data {#cross-channel}
     + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
@@ -332,6 +341,9 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
   + Complex data {#complex-data}
     + [Use arrays of objects](../use-cases/object-arrays.md)
+  + Derived fields {#derived-fields}
+    + [Use derived fields to report on goals](../use-cases/goals-using-derived-fields.md)
+
 
 + Administration {#cja-admin}
   + [Access Control](../admin/cja-access-control.md)
@@ -348,6 +360,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Consistency of metrics and audience membership counts between Real-time CDP and Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
   + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
 
-+   [Customer Journey Analytics glossary](../getting-started/cja-glossary.md)
++ [Customer Journey Analytics glossary](../getting-started/cja-glossary.md)
 
-+   [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
++ [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)

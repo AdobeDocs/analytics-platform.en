@@ -2,7 +2,7 @@
 title: Integrate Adobe solutions with Customer Journey Analytics
 description: Learn how to integrate data from other Adobe solutions and services.
 exl-id: f89d07e9-100e-4f82-9486-35bc9c748b19
-feature: Platform Integration
+feature: Experience Platform Integration
 ---
 # Integrate Adobe solutions with Customer Journey Analytics
 

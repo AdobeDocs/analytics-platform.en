@@ -12,7 +12,7 @@ View a video on row and column settings here:
 
 Row settings vary depending on which component you have dragged into the table. To access table row settings, click the [!UICONTROL Settings] icon next to a dimension, filter, metric, time period, or a breakdown within each of these:
 
-![](assets/row-settings.png)
+![Freeform Table highilighting the Settings icon for Metrics](assets/row-settings.png)
 
 | Setting | Description |
 | --- | --- |
@@ -27,6 +27,6 @@ To change the number of rows that are displayed:
 
 1. Click the number next to [!UICONTROL Rows] at the tops of the table.
 
-   ![](assets/row-number.png)
+   ![Freeform table showing the drop-down list of for the number of rows displayed. 400 rows is selected.](assets/row-number.png)
 
 1. From the drop-down list, select the number of rows you would like the table to display.

@@ -33,30 +33,30 @@ The following capabilities allow for fine-tuned control over the cohorts you are
 
 A [!UICONTROL Retention] cohort report returns persons: each data cell shows the raw number and percentage of persons in the cohort who did the action during that time period. You can include up to 3 metrics and up to 10 filters.
 
-![](assets/retention-report.png)
+![A Rention cohort report showing the units and percentage of persons in the cohort.](assets/retention-report.png)
 
 ### [!UICONTROL Churn] Table
 
 A [!UICONTROL Churn] cohort is the inverse of a retention table and shows the persons who fell out or never met the return criteria for your cohort over time. You can include up to 3 metrics and up to 10 filters.
 
-![](assets/churn-report.png)
+![A Churn table showing units and percentage of people who didn't meet the return criteria for a cohort.](assets/churn-report.png)
 
 ### [!UICONTROL Rolling Calculation]
 
 Lets you calculate retention or churn based on the previous column, not the included column.
 
-![](assets/cohort-rolling-calculation.png)
+![A Cohort retention report showing calculations based on a previous column of data.](assets/cohort-rolling-calculation.png)
 
 ### [!UICONTROL Latency] Table
 
 Measures the time that has elapsed before and after the inclusion event occurred. This is an excellent tool for pre/post analysis. The **[!UICONTROL Included]** column is in the center of the table and time periods before and after the inclusion event are shown on both sides.
 
-![](assets/cohort-latency.png)
+![A Cohort report showing the elapsed time before and after an event.](assets/cohort-latency.png)
 
 ### [!UICONTROL Custom Dimension] Cohort
 
 Create cohorts based on a selected dimension, and not time-based cohorts, which are the default. Use dimensions such as [!UICONTROL marketing channel], [!UICONTROL campaign], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region], or any other dimension in Customer Journey Analytics to show how retention changes based on the different values of these dimensions.
 
-![](assets/cohort-customizable-cohort-row.png)
+![A Cohort report showing customized report with selected dimensions not the default time-based cohort.](assets/cohort-customizable-cohort-row.png)
 
 For instructions on how to set up and run a cohort report, go to [Configure a Cohort Analysis report](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).

@@ -22,6 +22,8 @@ However, Admins can give the [!UICONTROL Annotation Creation] permission (Analyt
 | **Use this hotkey** to open the Annotation builder: (PC) `ctrl` `shift` + o, (Mac) `shift` + `command` + o | Note that by using the hotkey to create an annotation, you create a single-day annotation for the current date, without any pre-selected scope (metrics or dimensions). |
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
 
+{style="table-layout:auto"}
+
 1. Fill in the [!UICONTROL Annotation builder] elements.
 
    ![](assets/ann-builder.png)

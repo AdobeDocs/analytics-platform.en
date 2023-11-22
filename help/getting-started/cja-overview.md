@@ -60,7 +60,7 @@ Refer to the [Access Control](/help/admin/cja-access-control.md) topic.
 Several features in Customer Journey Analytics have been renamed, when compared to traditional Adobe Analytics, to align with industry standards. Some updated terminology includes:
 
 * Segments are now known as 'Filters'.
-* Virtual Report Suites are now known as 'Data views'.
+* Virtual report suites are now known as 'Data views'.
 * Classifications are now known as 'Lookup datasets'.
 * Customer attributes are now known as 'Profile datasets'.
 * Hit containers are now known as 'Event' containers.
@@ -75,10 +75,9 @@ Adobe Experience Platform lets you centralize and standardize customer data and 
 
 From Data Ingestion to direct SQL access, several components of the Experience Platform are central to Customer Journey Analytics and complement it:
 
-* [Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html): Use standard SQL to retrieve data from Adobe Experience Platform, such as Adobe solution data, customer 1st-party data, or any other Platform data. It is a server-less tool that allows you to join any datasets and capture the query results as a new dataset for use in reporting, Data Science Workspace, or for ingestion into Profile Service. You can use Experience Platform Query Service to build data analysis ecosystems, creating a picture of consumers across their various interaction channels. These channels might include Point-of-Sale systems, Web, Mobile, CRM systems, and so forth.
+* [Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html): Use standard SQL to retrieve data from Adobe Experience Platform, such as Adobe solution data, customer 1st-party data, or any other Platform data. It is a server-less tool that allows you to join any datasets and capture the query results as a new dataset for use in reporting or for ingestion into Profile Service. You can use Experience Platform Query Service to build data analysis ecosystems, creating a picture of consumers across their various interaction channels. These channels might include Point-of-Sale systems, Web, Mobile, CRM systems, and so forth.
 * [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html):
-* [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html):
-* [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html) in "developer" option: you can use prebuilt artificial intelligence (AI) and machine-learning models in Adobe Experience Platform to influence various points of the customer journey. By unearthing hidden insights, you can make better predictions across the customer journey, suggest recommended best next steps, or automate cumbersome processes.
+* [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html)
 
 ## Videos
 

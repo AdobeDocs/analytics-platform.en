@@ -15,12 +15,17 @@ As an example, after creating a [Connection](../connections/overview.md) and [Da
 
 >[!BEGINSHADEBOX]
 
-*[!UICONTROL Something went wrong and we couldn't load schema fields. Please try again.]*
+*[!UICONTROL Something went wrong retrieving DULE policies. Please verify account permissions, policies, or labels. Message: Forbidden.]*
 
 >[!ENDSHADEBOX]
 
 
-To correct this error, you must have system or product administrator privileges for an organization that has an Experience Platform product. See [Access control overview](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) for more information.
+1. Ensure you have the right access control:
+
+   * You must have system or product administrator privileges for an organization that has an Experience Platform product. See [Access control overview](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) for more information.
+
+   * You must be a user in the AEP-Default-All-Users product profile. Ask your administrator if you don't have the permissions to add yourself to this profile. See [Access control hierarchy and workflow](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#access-control-hierarchy-and-workflow) for more information.
+
 
 1. Navigate to the Adobe Experience Platfom UI.
 

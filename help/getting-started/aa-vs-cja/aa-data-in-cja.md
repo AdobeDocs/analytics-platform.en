@@ -1,12 +1,12 @@
 ---
-title: Utilizing Adobe Analytics report suite data in Customer Journey Analytics
+title: Using Adobe Analytics report suite data in Customer Journey Analytics
 description: How to configure Adobe Analytics report suites for ingestion into Adobe Experience Platform and Customer Journey Analytics
 role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
 ---
-# Utilizing Adobe Analytics report suite data in Customer Journey Analytics
+# Using Adobe Analytics report suite data in Customer Journey Analytics
 
 Adobe Analytics customers can easily leverage their report suites in the Adobe Experience Platform and Customer Journey Analytics using the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). The following discussion explains how to do so.
 
@@ -38,6 +38,6 @@ Customer Journey Analytics and Adobe Analytics have a number of similarities. Fo
 * [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md)
 * [Compare terminology for Analytics data passed through the Analytics source connector](/help/getting-started/aa-vs-cja/terminology.md)
 * [Compare data processing across Adobe Analytics and Customer Journey Analytics reporting features](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)
-* [Virtual Report Suites, Data Views, Adobe Experience Platform Sandboxes and the Analytics source connector](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
+* [Virtual report suites, Data views, Adobe Experience Platform sandboxes and the Analytics source connector](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
 * [Processing rules, VISTA and classifications versus Data Prep](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)
 * [AAID, ECID, AACUSTOMID and the Analytics source connector](/help/getting-started/aa-vs-cja/aaid-ecid-adc.md)

@@ -42,6 +42,7 @@ The following items are shown:
   * CREATE
   * DELETE
   * EDIT
+  * EMBARGO
   * EXPORT
   * ORG_CHANGE
   * REFRESH

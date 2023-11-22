@@ -73,7 +73,6 @@ This method greatly expands possibilities for data collection: There is no longe
 The following Adobe Analytics features or components are not supported:
 
 * Bot Filtering
-* Geo, Domain, Device Lookups
 * Streaming Media Measurement
 * Livestream or Livestream triggers
 

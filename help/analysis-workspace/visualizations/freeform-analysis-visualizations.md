@@ -14,24 +14,24 @@ Workspace offers a number of visualizations that let you generate visual represe
 The following visualization types are available in Analysis Workspace:
 
 | Visualization name | Description |
-| --- | --- |
-| [Area](/help/analysis-workspace/visualizations/area.md) | Like a line graph, but with a colored area below the line. Use an area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics. |
-| [Bar](/help/analysis-workspace/visualizations/bar.md) | Shows vertical bars representing various values across one or more metrics. |
-| [Bullet graph](/help/analysis-workspace/visualizations/bullet-graph.md) | Shows how a value you are interested in compares to or measures against other performance ranges (goals). |
-| [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | A *`cohort`* is a group of people sharing common characteristics over a specified period. Cohort Analysis is useful for retention, churn or latency analysis. |
-| [Donut](/help/analysis-workspace/visualizations/donut.md) | Similar to a pie chart, this visualization shows data as parts or filters of a whole. |
-| [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Fallout reports show where persons left (fell out) and continued through (fell through) a predefined sequence of pages. Can be set to eventual or exact sequences |
-| [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) | Shows exact customer paths through your websites and apps. |
-| [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | A Freeform table is not merely a data table, but also an interactive visualization. It is the foundation for data analysis in Workspace.|
-| [Histogram](/help/analysis-workspace/visualizations/histogram.md) | A histogram buckets persons, visits or events into buckets based on a metric volume. |
-| [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md) | Shows horizontal bars representing various values across one or more metrics. |
-| [Line](/help/analysis-workspace/visualizations/line.md) | Represents metrics using a line in order to show how values change over a period of time. A line chart uses time along the x-axis. |
-| [Scatterplot](/help/analysis-workspace/visualizations/scatterplot.md) | Shows the relationship between dimension items and up to three metrics. |
-| [Summary number](/help/analysis-workspace/visualizations/summary-number-change.md) | Shows the selected cell as 1 large number. |
-| [Summary change](/help/analysis-workspace/visualizations/summary-number-change.md) | Shows the change between the selected cells as 1 large number/percent. |
-| [Text](/help/analysis-workspace/visualizations/text.md) | Lets you add user-defined text to your Workspace. Helpful for adding additional context to your analysis and insights, in addition to leveraging panel/visualization descriptions |
-| [Treemap](/help/analysis-workspace/visualizations/treemap.md) | Displays hierarchical (tree-structured) data as a set of nested rectangles. |
-| [Venn](/help/analysis-workspace/visualizations/venn.md) | Uses circles to depict the metric overlap of up to 3 filters. |
+| --- | --- | 
+| [Area](/help/analysis-workspace/visualizations/area.md)<p>![Area icon](assets/Smock_GraphArea_18_N.svg)</p>  | Like a line graph, but with a colored area below the line. Use an area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics. | Answers questions like: <ul><li> |
+| [Bar](/help/analysis-workspace/visualizations/bar.md) <p>![Bar icon](assets/Smock_GraphBarVertical_18_N.svg)</p> | Shows vertical bars representing various values across one or more metrics. |
+| [Bullet graph](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![Bullet icon](assets/Smock_GraphBullet_18_N.svg)</p> | Shows how a value you are interested in compares to or measures against other performance ranges (goals). |
+| [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![Cohort table icon](assets/Smock_TextNumbered_18_N.svg)</p> | A *`cohort`* is a group of people sharing common characteristics over a specified period. Cohort Analysis is useful for retention, churn or latency analysis. |
+| [Donut](/help/analysis-workspace/visualizations/donut.md) <p>![Donut icon](assets/Smock_GraphDonut_18_N.svg)</p> |  Similar to a pie chart, this visualization shows data as parts or filters of a whole. |
+| [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![Fallout icon](assets/Smock_ConversionFunnel_18_N.svg)</p> | Fallout reports show where persons left (fell out) and continued through (fell through) a predefined sequence of pages. Can be set to eventual or exact sequences |
+| [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![Flow icon](assets/flow-icon.png)</p> | Shows exact customer paths through your websites and apps. | 
+| [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![Freeform table icon](assets/Smock_ViewTable_18_N.svg)</p> | A Freeform table is not merely a data table, but also an interactive visualization. It is the foundation for data analysis in Workspace.|
+| [Histogram](/help/analysis-workspace/visualizations/histogram.md)<p>![Histogram icon](assets/Smock_GraphHistogram_18_N.svg)</p> | A histogram buckets persons, visits or events into buckets based on a metric volume. |
+| [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md)<p>![Horizontal bar icon](assets//Smock_GraphBarHorizontal_18_N.svg)</p> | Shows horizontal bars representing various values across one or more metrics. |
+| [Line](/help/analysis-workspace/visualizations/line.md)<p>![Line icon](assets/Smock_GraphTrend_18_N.svg)</p>| Represents metrics using a line in order to show how values change over a period of time. A line chart uses time along the x-axis. |
+| [Scatterplot](/help/analysis-workspace/visualizations/scatterplot.md) <p>![Scatterplot icon](assets/Smock_GraphScatter_18_N.svg)</p> | Shows the relationship between dimension items and up to three metrics. |
+| [Summary number](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Summary number icon](assets/summary-number-icon.png)</p> | Shows the selected cell as 1 large number. |
+| [Summary change](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Summary change icon](assets/summary-change-icon.png)</p> | Shows the change between the selected cells as 1 large number/percent. |
+| [Text](/help/analysis-workspace/visualizations/text.md)<p>![Scatterplot icon](assets/Smock_Text_18_N.svg)</p> | Lets you add user-defined text to your Workspace. Helpful for adding additional context to your analysis and insights, in addition to leveraging panel/visualization descriptions |
+| [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p>![Treemap icon](assets/Smock_GraphTree_18_N.svg)</p> | Displays hierarchical (tree-structured) data as a set of nested rectangles. |
+| [Venn](/help/analysis-workspace/visualizations/venn.md)<p>![Venn icon](assets/venn-icon.png)</p> | Uses circles to depict the metric overlap of up to 3 filters. |
 
 ## Add visualizations to a panel
 

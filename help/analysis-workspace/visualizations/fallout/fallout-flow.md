@@ -1,14 +1,14 @@
 ---
-description: Fallout visualizations show where persons left (fell out) and continued through (fell through) a predefined sequence of pages.
-title: Fallout overview
+description: Learn about fallout reports and visualizations.
+title: About fallout reports and visualizations
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 ---
 # Fallout overview
 
-Fallout visualizations provide more options to build your fallout reports. Fallout reports show where persons left (fell out) and continued through (fell through) a predefined sequence of pages.
+Fallout reports show where persons left (fell out) and continued through (fell through) a predefined sequence of pages.
 
-Fallout visualizations let you
+Fallout visualizations provide more options to build your fallout reports. Fallout visualizations let you:
 
 * Perform side-by-side comparisons of two different filters in the same report.
 * Drag, drop, and rearrange funnel steps (touchpoints) 

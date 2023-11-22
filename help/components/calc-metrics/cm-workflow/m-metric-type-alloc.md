@@ -21,7 +21,7 @@ To specify the metric type when building a calculated metric:
    |  Metric Type  | Definition  |
    |---|---|
    |  Standard  | These metrics are the same metrics used in standard [!DNL Analytics] reporting. If a formula consisted of a single standard metric, it displays identical data to its non-calculated-metric counterpart. Standard metrics are useful for creating calculated metrics specific to each individual line item. For example, [Orders] / [Sessions] takes orders for that specific line item and divides it by the number of sessions for that specific line item.  |
-   |  Grand total  | Use the Grand total for the reporting period in every line item. If a formula consisted of a single Grand total metric, it displays the same Grand total number on every line item. Grand total metrics are useful for creating calculated metrics that compare against site total data. For example, [Orders] / [Total Sessions] shows the proportion of orders against ALL sessions on your site, not just the sessions to the specific line item.  |
+   |  Grand total  | Use the Grand total for the reporting period in every line item. If a formula consisted of a single Grand total metric, it displays the same Grand total number on every line item. Grand total metrics are useful for creating calculated metrics that compare against total data. For example, [Orders] / [Total Sessions] shows the proportion of orders against ALL sessions on a channel, not just the sessions to the specific line item.  |
 
 ## Attribution
 

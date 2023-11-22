@@ -24,16 +24,7 @@ Click the **Visualization settings** gear in to the top right to configure the S
 | Abbreviate value | Choose to abbreviate values and show up to 3 decimal places.|
 | Summarize value by | Choose to display the max, min, mean, median, or sum for a selection of data.|
 
-
-Click the **Visualization settings** gear in to the top right to configure the Summary Number settings: 
-
-| Setting | Definition |
-|--- |--- |
-| Percentages | Display percentages instead of raw numbers.|
-| Legend visible | Display information about the metric displayed.|
-| Abbreviate value | Choose to abbreviate values and show up to 3 decimal places.|
-| Summarize value by | Choose to display the max, min, mean, median, or sum for a selection of data.|
-
+{style="table-layout:auto"}
 
 ## Summary Change visualization {#summary-change}
 

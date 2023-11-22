@@ -7,8 +7,6 @@ exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 ---
 # Manage exports
 
-{{release-limited-testing}}
-
 After you export a full table as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md), the exports are available on the [!UICONTROL Exports] tab on the [!UICONTROL Exports] page. 
 
 You can see only the exports that you create.
