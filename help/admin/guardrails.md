@@ -84,7 +84,9 @@ See also Experience Platform [Real-time Customer Data Platform guardrails](https
 | Data views | 50 | Maximum number of data views for a connection | |
 | Datasets | 100 | Maximum number of [datasets](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) per connection. | |
 | Connections | 1000 | Maximum number of [connections](../connections/overview.md) for an organization. | |
-| Connection Title | 500 | Maximum number of characters for a connection title. | | 
+| Connection Title | 500 | Maximum number of characters for a connection title. | |
+| Metrics | 5,000 | Maximum number of metrics in a data view | |
+| Dimensions | 5,000 | Maximum number of dimensions in a data view | |
 | Annotation Title | 100 | Maximum number of characters for an annotation title. | |
 | Annotation Description | 250 | Maximum number of characters for an annotation description. | | 
 | Schema fields | 10 | Maximum number of schema fields (not including standard fields) when defining rules for a [derived field](../data-views/derived-fields/derived-fields.md). | | 
