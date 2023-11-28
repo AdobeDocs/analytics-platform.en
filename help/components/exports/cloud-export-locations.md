@@ -27,7 +27,7 @@ For information about how to manage existing locations, including viewing, editi
 
    Select the [!UICONTROL **Location accounts**] tab, select the 3-dot icon on an existing account where you want to add a location, then select [!UICONTROL **Add location**].
 
-   ![Add location to existing account](assets/add-location-existing-account.png)
+   ![GCP account and elipsis drop-down menu showing Add location selected](assets/add-location-existing-account.png)
 
    The Location dialog displays.
 

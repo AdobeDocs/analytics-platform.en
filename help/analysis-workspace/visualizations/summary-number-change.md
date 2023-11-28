@@ -40,7 +40,7 @@ This visualization behaves in the following ways:
 * If the column is selected, it compares the first value to itself, which shows a change of 0.
 
 
-![](assets/summary-change.png)
+![Summary change visualization showing the delta between two numbers.s](assets/summary-change.png)
 
 
 Click the **Visualization settings** gear in to the top right to configure the Summary Change settings: 

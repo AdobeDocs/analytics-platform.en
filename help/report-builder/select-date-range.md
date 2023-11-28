@@ -30,7 +30,7 @@ The From cell option allows you to reference dates entered in worksheet cells.
 
 You have the option to exclude today on any selected date range.
 
- ![Select Exclude today.](./assets/image17.png)
+ ![Report Builder Quick edit pane with calendar selected and Exclude today selected.](./assets/image17.png)
 
 ## Use the Calendar
 
@@ -56,7 +56,7 @@ To select dates using the calendar
 
 To set a date range in reverse, click the end date first and then click the start date.
 
-![Click the end date and then the start date.](./assets/image18.png)
+![Report Builder date range pane showing the calendar and the end date and the start date selected.](./assets/image18.png)
 
 ### Preset drop down menu
 
@@ -70,7 +70,7 @@ The rolling dates option allows you to select a date range using rolling dates.
 
 1.  Select a rolling expression for your start and or end date.
 
-    ![Select Use rolling dates and then the rolling expression.](./assets/image19.png)
+    ![Report Builder date range pane showing Use rolling dates selected and the rolling expression.](./assets/image19.png)
 
     **Start of** — Allows you to select the beginning of a day, week, month, quarter, or year.
 
@@ -80,11 +80,11 @@ The rolling dates option allows you to select a date range using rolling dates.
 
 1.  Choose day, week, month, quarter, or year as the rolling period.
 
-    ![Choose current day.](./assets/image20.png)
+    ![Report Builder date range pane showing the current day selected.](./assets/image20.png)
 
 1.  Add or subtract days, weeks, months, quarters, or years from your rolling date.
 
-    ![Select current day plus 14 days.](./assets/image21.png)
+    ![Report Builder date range pane showing the current day plus 14 days selected.](./assets/image21.png)
 
 1.  Click Next to define the data range.
 

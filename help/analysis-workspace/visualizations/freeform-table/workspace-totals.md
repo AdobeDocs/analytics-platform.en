@@ -1,5 +1,5 @@
 ---
-description: How Workspace totals are calculated.
+description: Learn how Workspace totals are calculated.
 title: Workspace totals
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
@@ -11,13 +11,13 @@ In Freeform tables, a total row appears at each breakdown level and can show two
 * **[!UICONTROL Grand Total]** (gray 'out of' number) - this total represents all events that have been collected. When a filter is applied either at the panel level or within the freeform table, this total adjusts to reflect all events that match the filter criteria.
 * **[!UICONTROL Table Total]** (black number) - this total is typically equal to or a subset of the [!UICONTROL Grand Total]. It reflects any table filters applied within the freeform table, including the [!UICONTROL Include None] option.
 
-![](assets/total-row.png)
+![Freeform Table highlighting the grand total and the table total.](assets/total-row.png)
 
 ## Display Total Setting
 
 Under **[!UICONTROL Column Settings]**, there are options to **[!UICONTROL Show Totals]** and **[!UICONTROL Show Grand Total]**. If these settings are unchecked, totals will be removed from the table. This may be desired in cases where totals don't make sense, for instance, in certain [Calculated Metric scenarios](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html).
 
-![](assets/column-settings-total.png)
+![Column Settings options showing check marks for Show Totals and Show Grant Total.](assets/column-settings-total.png)
 
 ## Static Row Total settings
 
@@ -26,7 +26,7 @@ Under **[!UICONTROL Column Settings]**, there are options to **[!UICONTROL Show 
 * **[!UICONTROL Show sum of current rows as the total]** - this shows a client-side sum of the rows in the table which means the total will **not** de-duplicate metrics like visits or persons.
 * **[!UICONTROL Show Grand Total]** - this shows a server-side sum, which means the total will de-duplicate metrics like visits or persons.
 
-![](assets/static-rows.png)
+![Row Settings showing Show Grand Total selected.](assets/static-rows.png)
 
 ## Frequently asked questions
 

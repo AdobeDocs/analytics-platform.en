@@ -9,7 +9,7 @@ feature: Data Views
 
 Include Exclude values lets you create rules that depend on the value of a dimension item. Values that don't meet the criteria that you set are treated in Analysis Workspace as if they never existed, though the data still exists in the underlying dataset.
 
-![Include exclude](../assets/include-exclude.png)
+![Data views window highlighting the Include exclude values](../assets/include-exclude.png)
 
 | Setting | Description/Use case |
 | --- | --- |

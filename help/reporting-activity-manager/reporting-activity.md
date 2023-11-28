@@ -17,7 +17,7 @@ For more information about Reporting Activity manager, including key benefits an
 
    A list of your enabled base connections is displayed.
 
-   ![reports queue](assets/reporting-activity1.png)
+   ![Rporting Activity showing the reports queue](assets/reporting-activity1.png)
 
 1. (Optional) You can search or filter the list of connections:
 

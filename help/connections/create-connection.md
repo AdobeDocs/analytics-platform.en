@@ -26,7 +26,7 @@ You must have the **Select** package in order to add unlimited numbers of datase
 1. In Customer Journey Analytics, click the **[!UICONTROL Connections]** tab.
 1. Click **[!UICONTROL Create new connection]**.
 
-    ![Connection settings](assets/create-conn1.png)
+    ![Untitled connection settings](assets/create-conn1.png)
 
 1. Configure the connection settings.
 

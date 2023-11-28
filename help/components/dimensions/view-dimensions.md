@@ -8,7 +8,7 @@ exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
 
 Hover over the information (i) icon next to a dimension. This shows the top 5 values for non-time dimensions (and 15 for time dimensions). We used to keep those values static (i.e., the 5 values picked never changed).
 
-![](assets/dimension-preview.png)
+![Top 5 values for non-time dimensions.](assets/dimension-preview.png)
 
 Now, by default, we show dynamic values instead of static ones, with the option to turn them into static values. Other things to note:
 
@@ -16,7 +16,7 @@ Now, by default, we show dynamic values instead of static ones, with the option 
 * A dynamic dimension column that is copied or moved will become static.
 * When hovering a static dimension column you will see a lock icon, indicating that the dimension is static.
 
-![](assets/dimension_static.png)
+![Dimension column popup highlighting the lock icon.](assets/dimension_static.png)
 
 ## Show dimension items
 

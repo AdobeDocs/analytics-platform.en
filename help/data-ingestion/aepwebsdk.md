@@ -53,7 +53,7 @@ To set up your schema:
 
    1. Select **[!UICONTROL Experience Event]**.
 
-      ![Create a schema](./assets/create-ee-schema-wizard-step-1.png)
+      ![Create a schema highlighting Experience Event](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
@@ -66,7 +66,7 @@ To set up your schema:
 
    1. Enter a **[!UICONTROL Schema display name]** for your schema and (optional) a **[!UICONTROL Description]**.
 
-      ![Name your schema](./assets/create-ee-schema-wizard-step-2.png)
+      ![Create schema window showing the Name your schema fields](./assets/create-ee-schema-wizard-step-2.png)
 
    1. Select **[!UICONTROL Finish]**.
 

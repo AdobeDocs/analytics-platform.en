@@ -16,7 +16,7 @@ To create a histogram:
 1. Drag **[!UICONTROL Histogram]** to the panel.
 1. Choose a Metric to drag to the Histogram visualization and click **[!UICONTROL Build]**.
 
-![](assets/histogram.png)
+![Blank histogram panel showing the Drop a metric below field.](assets/histogram.png)
 
 >[!NOTE]
 >
@@ -48,11 +48,11 @@ To adjust your histogram settings, click the Settings ("gear") icon in the upper
 
 To view or change the data source for the histogram chart, click the dot next to the Histogram header to go to **[!UICONTROL Data Source Settings]** > **[!UICONTROL Show Data Source]**.
 
-![](assets/manage-data-source.png)
+![Data Source Settings options with Show Data Source and Lock Selection selected.](assets/manage-data-source.png)
 
 Pre-built filters that show up in the table are internal filters and won't show up in the filter selector. Click the "i" icon next to the filter name, then click **[!UICONTROL Make public]** to make the filter public.
 
-![](assets/prebuilt_segments.png)
+![Segments showing the edit window and the Make public link.](assets/prebuilt_segments.png)
 
 To explore more ways to manage Freeform data tables and other visualizations, such as doing data breakdowns, go [here](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html).
 

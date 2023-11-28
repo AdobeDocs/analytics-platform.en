@@ -14,7 +14,7 @@ Filtering makes it easier to search for calculated metrics in the segment rail.
 
 1. In the Calculated metrics manager, click the **[!UICONTROL Filters]** icon:  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
-   ![](assets/filtering.png)
+   ![Calculated metrics manager showing the Filters icon and available filters such as Tags, Report suite, and Owners.](assets/filtering.png)
 
 1. The following filters are available:
 

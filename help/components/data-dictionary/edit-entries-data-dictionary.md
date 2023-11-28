@@ -17,7 +17,7 @@ To edit a component in the Data Dictionary:
 
    The Data Dictionary window displays.
 
-   ![Data Dictionary admin view](assets/data-dictionary-admin.png)
+   ![Data Dictionary administrator view showing Dictionary Health](assets/data-dictionary-admin.png)
 
 1.  Ensure that the correct data view is selected in the drop-down menu. By default, the data view that you are already in is displayed. 
 

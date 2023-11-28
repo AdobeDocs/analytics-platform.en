@@ -1,6 +1,6 @@
 ---
 title: Use arrays of objects
-description: Understand how Customer Journey Analytics reports on data hierarchies.
+description: Learn how Customer Journey Analytics reports on data hierarchies.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases

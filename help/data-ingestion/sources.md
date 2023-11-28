@@ -51,7 +51,7 @@ To set up your schema:
 
    1. Select **[!UICONTROL Individual Profile]**.
 
-        ![Create a schema](./assets/create-pr-schema-wizard-step-1.png)
+        ![Create a schema window with Individual Profile selected](./assets/create-pr-schema-wizard-step-1.png)
 
         >[!INFO]
         >
@@ -64,7 +64,7 @@ To set up your schema:
 
    1. Enter a **[!UICONTROL Schema display name]** for your schema and (optional) a **[!UICONTROL Description]**.
 
-      ![Name your schema](./assets/create-pr-schema-wizard-step-2.png)
+      ![Create schema window showing the fields to name your schema ](./assets/create-pr-schema-wizard-step-2.png)
 
    1. Select **[!UICONTROL Finish]**.
 
@@ -72,7 +72,7 @@ To set up your schema:
     
     1. Select **[!UICONTROL + Add]** in [!UICONTROL Field groups].
 
-        ![Add field group](./assets/add-field-group-button.png)
+        ![Create schema window showing the Add field group](./assets/add-field-group-button.png)
 
         Field groups are reusable collection of objects and attributes that allow you to easily extend your schemas.
 

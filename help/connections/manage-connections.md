@@ -84,7 +84,7 @@ It lets you:
 
  Here are the widgets and settings explained:
 
-![](assets/conn-details.png)
+![All datasets window showing the widgets and settings](assets/conn-details.png)
 
 ### Connection Details settings
 

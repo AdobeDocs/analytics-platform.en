@@ -47,7 +47,7 @@ Click the following link (it is also available in Customer Journey Analytics und
 
 Once downloaded and installed, executive users can sign into the app using their existing Customer Journey Analytics credentials.
 
-![App welcome screen](assets/welcome.png)
+![Customer Journey Analytics app welcome screen](assets/welcome.png)
 
 ## Use dashboards {#use-dashboards}
 

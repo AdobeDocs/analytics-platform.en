@@ -22,7 +22,7 @@ You can access the Filter builder in any of the following ways:
 
 You can add rule definitions and containers to define your filters. (For information about accessing the Filter builder, see [Access the Filter builder](#access-the-filter-builder).)
 
-![](assets/segment_builder_ui_2.png)
+![Filter builder showing New filter options described in this section.](assets/segment_builder_ui_2.png)
 
 | UI element | Description|
 | --- | --- |
