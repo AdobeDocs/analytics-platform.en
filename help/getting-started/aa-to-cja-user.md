@@ -24,7 +24,7 @@ Much of what you are familiar with on the reporting side has not changed.
 
 You have access to a lot more cross-channel data to analyze. For example, you can create a workspace project that analyzes performance of multiple channels, provided these datasets are ingested by your organization and included in data views used by Customer Journey Analytics (see "Changes to data architecture" below).
 
-![multi-channel-visualizations](assets/cross-channel.png)
+![Data Sources view showing multi-channel-visualizations](assets/cross-channel.png)
 
 ## Changes to data architecture {#architecture}
 

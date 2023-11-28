@@ -45,7 +45,7 @@ Click the following link (it is also available in Customer Journey Analytics und
 
 Once downloaded and installed, executive users can sign into the app using their existing Customer Journey Analytics credentials; we support both Adobe and Enterprise/Federated IDs.
 
-![App welcome screen](assets/welcome.png)
+![Adobe Analytics dashboards welcome screen](assets/welcome.png)
 
 ## Help executives access your scorecard 
 
@@ -68,7 +68,7 @@ Once downloaded and installed, executive users can sign into the app using their
 
 Explain to the executive user how tiles appear in the scorecards you share.
 
-![Explain tiles](assets/newexplain.png)
+![Explain tiles including the date range, segment filter, and metrics and dimensions selected](assets/newexplain.png)
 
 ![Example Scorecard](assets/intro_scorecard.png)
 

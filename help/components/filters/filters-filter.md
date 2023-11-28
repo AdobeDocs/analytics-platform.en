@@ -12,7 +12,7 @@ Filtering makes it easier to search for filters.
 
 1. In the Filter manager, click the **[!UICONTROL Filters]** icon:  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
-   ![](assets/filtering.png)
+   ![Filter Manager showing the Filters icon and available filters.](assets/filtering.png)
 
 2. The following filters are available:
 

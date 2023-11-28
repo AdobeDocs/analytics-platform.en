@@ -15,7 +15,7 @@ Analysis requires context, and often that context is provided by a previous time
 1. Create a Freeform table, with any dimensions and metrics you want to compare over a time period.
 1. Right-click a table row and select **[!UICONTROL Compare Time Periods]**.
 
-   ![](assets/compare-time.png)
+   ![Table row with Compare Time Periods selected](assets/compare-time.png)
 
    >[!IMPORTANT]
    >
@@ -35,13 +35,13 @@ Analysis requires context, and often that context is provided by a previous time
 
 1. The resulting comparison looks like this:
 
-   ![](assets/compare-time-result.png)
+   ![Freeform Table showing a comparison of date ranges and percent change.](assets/compare-time-result.png)
 
    Rows in the Percent Change column appear red for negative values and green for positive values.
 
 1. (Optional) As in any other Workspace projects, you can create visualizations based on these time comparisons. For example, here is a Bar graph:
 
-   ![](assets/compare-time-barchart.png)
+   ![Workspace project bar graph.](assets/compare-time-barchart.png)
 
    Note that in order to show the percentage change in the bar chart, you have to have the [!UICONTROL Percentages] setting checked in the [!UICONTROL Visualization Settings].
 
@@ -49,7 +49,7 @@ Analysis requires context, and often that context is provided by a previous time
 
 You can now add a time period to each column in a table, enabling you to add a time period that is different from the one your calendar is set to. This is another way you can compare dates.
 
-1. Right-click a column in the table and select **[!UICONTROL Add Time Period Column]** ![](assets/add-time-period-column.png)
+1. Right-click a column in the table and select **[!UICONTROL Add Time Period Column]** ![Table column list with Add Time Period Column highlighted ](assets/add-time-period-column.png)
 
 1. Depending on how you have set the table's date range, you have these options for comparison: 
 
@@ -65,11 +65,11 @@ You can now add a time period to each column in a table, enabling you to add a t
 
 1. The time period will be inserted on top of the column you selected:
 
-   ![](assets/add-time-period-column2.png)
+   ![Freeform Table showing Occurances for current calendar period and the previous calendar month.](assets/add-time-period-column2.png)
 
 1. You can add as many time columns as you want, as well as mix and match different date ranges:
 
-   ![](assets/add-time-period-column4.png)
+   ![Freeform table showing occurences for this month, previous month, previous month a year ago, and one week of previous month a year ago.](assets/add-time-period-column4.png)
 
 1. In addition, you can sort on each column, which will change the order of days depending on the column you are sorting on.
 
@@ -77,7 +77,7 @@ You can now add a time period to each column in a table, enabling you to add a t
 
 A new setting for all tables lets you **[!UICONTROL Align Dates from each column to all start on the same row (applies to entire table)]**. "Applies to entire table" means that if you do, for example, a breakdown in the table, and if you change this setting for the breakdown, it will change the setting for the entire table.
 
-![](assets/date-comparison-setting.png)
+![Freeform Table with Table Settings popup showing Align dates from each column to all start on the same row selected.](assets/date-comparison-setting.png)
 
 >[!IMPORTANT]
 >
@@ -85,7 +85,7 @@ A new setting for all tables lets you **[!UICONTROL Align Dates from each column
 
 Example: When you choose to align the dates, if you do a month-over-month comparison between October and September 2016, the left column will start with October 1 and the right column will start with September 1:
 
-![](assets/add-time-period-column3.png)
+![Comparison showing month-over-month percentages.](assets/add-time-period-column3.png)
 
 <!-- 
 

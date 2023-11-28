@@ -14,7 +14,7 @@ You can stack and replace filters within the Calculated metric builder.
 
 1. In the Definition canvas, drop the new filter next to the existing one:
 
-![](assets/cm_stack_seg.png)
+![Definition canvas showing the US Visitors metric dropped next to the existing International Visitors.](assets/cm_stack_seg.png)
 
 ## Replace one filter with another {#replace-filter}
 
@@ -22,4 +22,4 @@ You can stack and replace filters within the Calculated metric builder.
 
 1. In the Definition canvas, drop the new filter on top of the existing one:
 
-![](assets/cm_replace_seg.png)
+![Definition canvas showing the US Visitors dropped on top of the International Visitors metric.](assets/cm_replace_seg.png)

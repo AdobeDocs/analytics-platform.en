@@ -45,7 +45,7 @@ You can cancel individual requests that are consuming a large amount of reportin
 
    1. Enable the option to [!UICONTROL **Restrict subsequent requests**].
 
-      ![Restrict subsequent requests](assets/restrict-subsequent-requests.png)
+      ![Cancel 1 request showing Restrict subsequent requests selected and the Cancellation message.](assets/restrict-subsequent-requests.png)
    
    1. Choose from the following options:
 
@@ -86,7 +86,7 @@ You can cancel all requests that are associated with one or more users. When can
 
    1. Enable the option to [!UICONTROL **Restrict subsequent requests**]
    
-      ![Restrict subsequent requests by user](assets/restrict-subsequent-requests-user.png)
+      ![Cancel 1 request showing the Restrict subsequent requests by user selected.](assets/restrict-subsequent-requests-user.png)
    
    1. Choose from the following options:
 
@@ -127,7 +127,7 @@ You can cancel all requests that are associated with one or more projects. When 
 
    1. Enable the option to [!UICONTROL **Restrict subsequent requests**].
    
-      ![Restrict subsequent requests by project](assets/restrict-subsequent-requests-project.png)
+      ![Cancel 1 request showing the Restrict subsequent requests by project](assets/restrict-subsequent-requests-project.png)
    
    1. Choose from the following options:
 
@@ -183,7 +183,7 @@ To cancel requests by application:
 
    1. Enable the option to [!UICONTROL **Restrict subsequent requests**]
    
-      ![Restrict subsequent requests by application](assets/restrict-subsequent-requests-application.png)
+      ![Cancel 1 request showing the Restrict subsequent requests by application selected.](assets/restrict-subsequent-requests-application.png)
    
    1. Choose from the following options:
 

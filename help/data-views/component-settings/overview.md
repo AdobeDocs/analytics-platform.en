@@ -9,7 +9,7 @@ feature: Data Views
 
 Core settings that a data view component uses.
 
-![Component settings](../assets/component-settings.png)
+![Component settings described in this section](../assets/component-settings.png)
 
 | Setting | Description/Use case |
 | --- | --- |

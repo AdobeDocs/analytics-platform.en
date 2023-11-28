@@ -20,7 +20,7 @@ You can begin creating a calculated metric in any of the follows ways:
 
 The following image and accompanying table explain some of the main areas and features of the Calculated metrics builder.
 
-![](assets/cm_builder_ui.png)
+![New calculated metrics window showing main areas and features described in this section.](assets/cm_builder_ui.png)
 
 | Field | Description |
 | --- | --- |

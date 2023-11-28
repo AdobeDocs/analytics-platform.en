@@ -51,7 +51,7 @@ You can check to see if a policy is turned on that blocks the use of certain Cus
 
 Again, click the [!UICONTROL filter] icon in the left rail and under **[!UICONTROL Data Governance]**, click **[!UICONTROL Policies]**:
 
-![](assets/filter-policies.png)
+![Filter included components by list showing Enforce Analytics selected](assets/filter-policies.png)
 
 Click **[!UICONTROL Apply]** to see which policies that are enabled.
 
@@ -61,7 +61,7 @@ If the **[!UICONTROL Enforce Analytics]** or **[!UICONTROL Enforce Download]** p
 
 These components are greyed out in the left rail [!UICONTROL Schema fields] list:
 
-![](assets/component-greyed.png)
+![Greyed out components and the Policies message indicating policies have been applied to this field restricting use of the data](assets/component-greyed.png)
 
 You also cannot save a data view that has blocked fields in it.
 

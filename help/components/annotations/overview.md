@@ -12,7 +12,7 @@ Annotations enable you to effectively communicate contextual data nuances and in
 
 For example, let's say you are sharing projects with your organization. If you had a major spike in traffic due to a marketing campaign, you could create a "Campaign launch date" annotation and scope it for your whole data view. When your users view any datasets that included that date, they see the annotation within their projects, alongside their data.
 
-![](assets/multi-day.png)
+![Line chart with annotation highlighted.](assets/multi-day.png)
 
 Keep this in mind:
 
@@ -40,6 +40,6 @@ Annotations can be turned on or off at several levels:
 
 * At the User level: [!UICONTROL Components] > [!UICONTROL User preferences] > [!UICONTROL Data] > [!UICONTROL Show annotations]
 
-![](assets/show-ann.png)
+![Visualization settings dialogue with Show annotations highlighted](assets/show-ann.png)
 
-![](assets/show-ann2.png)
+![User preferences highlighting Show annotations.](assets/show-ann2.png)

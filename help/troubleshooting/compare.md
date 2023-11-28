@@ -13,7 +13,7 @@ As your organization adopts Customer Journey Analytics, you may notice some diff
 
 Let's assume you ingested Adobe Analytics data into Adobe Experience Platform via the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html), and then created a Customer Journey Analytics connection using this dataset. 
 
-![data flow](assets/compare.png)
+![The data flow from Adobe Analytics through the data connector to Adobe Experience Platform and to Custoer Journey Analytics using CJA connections.](assets/compare.png)
 
 Next, you created a data view and while subsequently reporting on this data on Customer Journey Analytics, you noticed discrepancies with the reporting results in Adobe Analytics.
 

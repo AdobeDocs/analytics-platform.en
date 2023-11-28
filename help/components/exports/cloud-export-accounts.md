@@ -19,7 +19,7 @@ For information about how to manage existing accounts, including viewing, editin
 1. On the [!UICONTROL Exports] page, select the [!UICONTROL **Location accounts**] tab.
 1. Select [!UICONTROL **Add account**]. 
 
-   ![Add account](assets/account-add.png)
+   ![Exports page options showing Add another account](assets/account-add.png)
    
    The Add account dialog displays.
 
@@ -80,7 +80,7 @@ For information about how to manage existing accounts, including viewing, editin
       >You need to perform this action every 7 days, because the SAS URI expires 7 days after it is created. You can create a script to automate this process.
 
 
-        ![SAS URL field](assets/blob-container-sas-uri.png)
+        ![Enter Connection Info window showing SAS URL field](assets/blob-container-sas-uri.png)
 
    1. Select [!UICONTROL **Next**] > [!UICONTROL **Connect**].
 

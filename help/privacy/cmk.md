@@ -22,7 +22,7 @@ Follow these steps to set up CMK for Customer Journey Analytics:
 1. Grant the Adobe Azure App access to your key in the key vault. This is the Adobe Application ID: 251e3919-1940-4296-bb8b-6b9a5e8a4805. [Learn More from Microsoft](https://learn.microsoft.com/en-us/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault)
 1. Create an Adobe Customer Care ticket requesting CMK setup. Include the Azure URI in your ticket. The URI can be found in the **Key Identifier** field of your Azure Key. 
 
-   ![](assets/key-identifier.png)
+   ![Key Identifier fields showing the URI for https://cmkoberontest.vault.azure.net](assets/key-identifier.png)
 
 1. Adobe Customer Care will confirm the completion of the CMK application on your Customer Journey Analytics data.
 

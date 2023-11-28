@@ -20,6 +20,6 @@ Here is how to flag a filter as approved:
 
     Notice the approval icon next to the filter in the list:
 
-    ![](assets/seg_approved.png)
+    ![Filter Manager showing that Orders greater than 100 are approved for sharing.](assets/seg_approved.png)
 
 1. You can also unapprove an approved filter by clicking **[!UICONTROL Unapprove]**.

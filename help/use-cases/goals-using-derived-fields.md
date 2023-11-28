@@ -25,7 +25,7 @@ You want to explicitly set goals for your gift certificate orders for four month
 
 1. Set static values, using a CASE WHEN RULE, for each month, by setting a **[!UICONTROL Custom numeric value]**. See the Monthly Product Goals rule below.
 
-    ![Product Goals](assets/goals-derived-field-product-goals-1.png)
+    ![Monthly Product Goals](assets/goals-derived-field-product-goals-1.png)
 
 
 ### Marketing channel revenue goals

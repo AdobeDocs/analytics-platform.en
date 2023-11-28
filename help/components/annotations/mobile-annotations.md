@@ -23,21 +23,21 @@ For information on creating annotations, see [Create Annotations](create-annotat
 
 1. Select **[!UICONTROL Show annotations]** to display the annotation in Mobile Scorecards.
 
-   ![](assets/show-annotations.png)
+   ![Mobile annotations options for scorecards.](assets/show-annotations.png)
 
 1. Confirm that show annotations is selected, go to **[!UICONTROL Project]** > **[!UICONTROL Project info and settings]**.
 
-   ![](assets/project-info-settings.png)
+   ![Mobile annotations options for Project info and settings highlighting the Show annotations option.](assets/project-info-settings.png)
 
 ## View annotations in Mobile Scorecards
 
 When annotations are enabled, annotation icons are visible in the Scorecard Builder. Annotations appear only on charts and tables in the detailed view. Annotations are not visible from the main tile view of the scorecard.
 
- ![](assets/view-annotations.png)
+ ![Scorecard Builder highlighting the annotation icons.](assets/view-annotations.png)
 
-When annotation icons are visible, you can't fully view or interact with annotations in the builder canvas. Use the Preview mode to view and interact with annotations as they appear in the app. ![](assets/preview-icon.png)
+When annotation icons are visible, you can't fully view or interact with annotations in the builder canvas. Use the Preview mode to view and interact with annotations as they appear in the app. ![Preview icon](assets/preview-icon.png)
 
-Annotation colors are selected when the annotation is created in workspace. Gray annotations indicated the presence of more than one annotation. ![](assets/gray-annotations1.png) ![](assets/gray-annotations2.png)
+Annotation colors are selected when the annotation is created in workspace. Gray annotations indicated the presence of more than one annotation. ![Annotation icons](assets/gray-annotations1.png) ![Mobile scorecard with the annotation icon highlighted.](assets/gray-annotations2.png)
 
 ## View chart annotations
 

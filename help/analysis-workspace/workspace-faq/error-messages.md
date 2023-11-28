@@ -1,5 +1,5 @@
 ---
-description: List of error messages in Adobe Analysis Workspace and its related components
+description: Learn about the error messages in Adobe Analysis Workspace and its related components
 title: Common error messages in Analysis Workspace
 feature: FAQ
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
