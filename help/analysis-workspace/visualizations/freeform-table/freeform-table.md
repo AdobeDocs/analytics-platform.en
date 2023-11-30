@@ -14,7 +14,7 @@ In Analysis Workspace, a Freeform Table is the foundation for interactive data a
 
 The quickest way to build a table is to drop components directly into a blank project, panel or freeform table. A freeform table will automatically be built for you in a recommended format. [Watch the tutorial](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace.html).
 
-![A new Panel with the visits component dropped onto the working sapce.](assets/automated-table.png)
+![A new Panel with the visits component dropped onto the working space.](assets/automated-table.png)
 
 ## Freeform table builder
 

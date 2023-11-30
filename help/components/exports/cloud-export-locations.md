@@ -21,7 +21,7 @@ For information about how to manage existing locations, including viewing, editi
 
 1. Select the [!UICONTROL **Locations**] tab, then select [!UICONTROL **Add location**]. 
    
-   ![add location button](assets/location-add.png)
+   ![Exports window with Location tab selected highlighting the Add location button](assets/location-add.png)
 
    Or
 
