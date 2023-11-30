@@ -30,7 +30,7 @@ Components in Analysis Workspace consist of metrics, dimensions, filters, and ti
 
 To access the Components panel, click the **[!UICONTROL Components]** icon in the left rail. You can switch among Panels (Blank panel, [Freeform panel](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md), or [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) panel), [Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), and Components using the left-rail icons or by using [hotkeys](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
-![Components icon](assets/components.png)
+![Workspace panel highlighting the Components icon in the left-rail](assets/components.png)
 
 See [Create a project](/help/analysis-workspace/home.md) for information about using Components in a project.
 
@@ -69,7 +69,7 @@ You can manage components directly in the left rail.
    >   You can select multiple components by holding Shift, or by holding Command (on Mac) or Ctrl (on Windows).
 
 
-   ![Component Actions list](assets/component-actions.png)
+   ![Component Actions list showing Tag, Favorite, approve, Share, and Delete.](assets/component-actions.png)
 
    | Component action | Description |
    |--- |--- |

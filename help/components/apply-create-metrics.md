@@ -19,7 +19,7 @@ Adobe offers several types of metrics for use in Analysis Workspace:
 * **Calculated metric templates**  <img src="./assets/adobe-logo.svg" width="18"> : Adobe-defined metrics that behave similarly to calculated metrics. You can use them as-is in Workspace projects, or save a copy to customize its logic.
 
 
-![Metrics in the UI](assets/cja-metrics.png)
+![Workspace panel highlighting Metrics in the left-pane.](assets/cja-metrics.png)
 
 You can see whether a metric is approved ![Approved icon](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  or not. If you want more details on a metric, hover over the metric, and select ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg).
 
@@ -34,7 +34,7 @@ You can select **[!UICONTROL Components]** > **[!UICONTROL Calculated metrics]**
 
 To make it easier to quickly create calculated metrics, **[!UICONTROL Create metric from selection]** has been added to the column right-click menu in Freeform Tables. This option displays when one or more header column cells are selected.
 
-![Create from selection](assets/create-metric-from-selection.png)
+![Workspace panel highlighting Create from selection](assets/create-metric-from-selection.png)
 
 [Calculated Metrics: Implementation-less metrics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
 
@@ -42,6 +42,6 @@ To make it easier to quickly create calculated metrics, **[!UICONTROL Create met
 
 If you'd like to quickly and easily compare one attribution model to another, right-click a metric and select **[!UICONTROL Compare Attribution Models]**:
 
-![Compare attribution](assets/compare-attribution.png)
+![Workspace panel highlighting Compare attribution models](assets/compare-attribution.png)
 
 This shortcut lets you quickly and easily compare one attribution model to another without dragging in a metric and configuring it twice.
