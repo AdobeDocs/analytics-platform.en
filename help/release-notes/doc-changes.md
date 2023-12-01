@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **December 2023** | |
+| Updates to Anomaly Detection and Contribution Analysis documentation | The documentation for Anomaly Detection and Contribution Analysis was previously located in a section about Virtual Analyst. The following changes were made: <ul><li>The term Virtual Analyst was removed from the documentation.</li><li>The section about [Anomaly Detection](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) was moved directly beneath the Analysis Workspace section.</li><li>The Contribution Analysis documentation was merged into the Anomaly Detection documentation.</li></ul> |
 | **October 2023** | |
 | Using derived field for setting goals / targets | Added [use case](../use-cases/goals-using-derived-fields.md) article illustrating how to use derived fields for setting goals / targets and reporting on these. | 
 | Export full tables to the cloud | Added documentation about exporting full tables with millions of Workspace rows to cloud destinations. <p>Exporting full tables offers one-time or scheduled delivery of data tables designed within Workspace with support for up to five breakdowns, five metrics, filters, and calculated metrics, all in a concatenated table. It is the evolution of Data Warehouse reports in Adobe Analytics, with many new, often-requested features that are not available in Data Warehouse today.</p><p>For more information, see [Export Customer Journey Analytics reports to the cloud](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html).| October 4, 2023 |
