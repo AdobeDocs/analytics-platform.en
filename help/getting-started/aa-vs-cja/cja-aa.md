@@ -131,5 +131,6 @@ The following table lists features that are available in Customer Journey Analyt
 | Enhanced security and privacy options - HIPAA readiness | Customer Journey Analytics is HIPAA ready and offers additional security options for regulation compliance. Adobe Analytics is not HIPAA ready. |
 | Ability to combine datasets (such as Adobe Analytics report suites) | Customer Journey Analytics allows you to combine data from multiple report suites as if they were a single report suite in Adobe Analytics. |
 | Derived Fields | Derived fields allow for report-time transformations to your data. Data can be combined, corrected, or created on the fly and applies retroactively to all reporting. |
+| Guided analysis | Guided analysis is a reporting format that allows users to quickly self-serve their data needs so that they can get high-quality insights quickly and make more data-driven decisions. Guided analysis is part of Adobe Product Analytics, an add-on to Customer Journey Analytics.  |
 
 {style="table-layout:auto"}
