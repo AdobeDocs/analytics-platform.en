@@ -7,7 +7,7 @@ feature: Data Views
 ---
 # Behavior component settings
 
-Behavior settings are available on both dimensions and metrics. The available settings depend on the component type and schema data type.
+Behavior settings are available on both dimensions and metrics. The availability of settings depend on the component type and schema data type.
 
 ![Behavior settings](../assets/behavior-settings.png)
 
@@ -19,11 +19,11 @@ Behavior settings are available on both dimensions and metrics. The available se
 
 {style="table-layout:auto"}
 
-![Case-sensitive dimension](../assets/case-sens-workspace.png)
-
 >[!NOTE]
 >
 >If you enable [!UICONTROL Lower case] on a lookup dataset dimension, multiple lookup values can exist for the same identifier. If this conflict happens, Customer Journey Analytics uses the first ASCII collated value (Uppercase values precede lowercase values). Adobe advises against using lookup datasets that contain the same value when [!UICONTROL Lower case] is enabled.
+
+![Case-sensitive dimension](../assets/case-sens-workspace.png)
 
 ## Metric behavior settings
 

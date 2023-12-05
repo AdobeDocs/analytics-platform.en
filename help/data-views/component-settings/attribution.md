@@ -7,7 +7,7 @@ feature: Data Views
 ---
 # Attribution component settings
 
-Attribution gives you the ability to customize how dimension items get credit for success events. 
+Attribution lets you customize how dimension items get credit for success events. 
 
 ![Data views window highlighting the Set attribution option](../assets/attribution-settings.png)
 
