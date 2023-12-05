@@ -17,15 +17,37 @@ Format lets you determine how a given metric is displayed.
 | **[!UICONTROL Decimal Places]** | Not visible on Integer schema data types. Lets you specify the number of decimal places a metric displays. |
 | **[!UICONTROL Date]** | Lets you determine how you want the date-time field displayed when used as a dimension in reporting. [Learn more](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
 | **[!UICONTROL Date-Time]** | Lets you determine how you want the date-time field displayed when used as a dimension in reporting. [Learn more](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
-| **[!UICONTROL Currency]** | Lets you determine which currency you want the metric to display in. See [Currency](#currency) for more details. |
+| **[!UICONTROL Currency]** | Lets you determine which currency you want the metric to display in. See [Use Currency for the metric format](#use-currency-for-the-metric-format) for more details. |
 | **[!UICONTROL Show upward trend as]** | Lets you specify if an upward trend on this metric is good (green) or bad (red). |
 | **[!UICONTROL True value]** and **[!UICONTROL False value]** | Only visible on Boolean schema data types. Lets you customize the dimension item label for `true` and `false` values. |
 
 {style="table-layout:auto"}
 
-## Currency
+## Use Currency for the metric format
 
-When you select **[!UICONTROL Currency]** as the [!UICONTROL Format] for a metric, you can determine how to display and convert currencies.
+To configure the format of a metric to use currency:
+
+1. In Customer Journey Analytics, select the [!UICONTROL **Data View**] tab.
+
+1. Select the data view that contains the metric you want to modify. 
+
+1. Select the [!UICONTROL **Components**] tab.
+
+   ![Components tab](../assets/format-settings-component-tab.png)
+
+1. Select the metric, then expand the [!UICONTROL **Format**] section on the right side of the page.
+
+1. Specify the following options:
+   
+   | Field name | Description |
+   |---------|----------|
+   | Format | Select Currency | 
+   | A2 | B2 | 
+   | A3 | B3 | 
+
+In the [!UICONTROL **Format**] field, select [!UICONTROL **Currency**]. 
+
+When you select **[!UICONTROL Currency]** as the [!UICONTROL Format] for a metric, you can determine how currencies are displayed and converted for the metric.
 
 ### Display currency
 
