@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **December 2023** | |
+| Currency conversion updates | Clarified documentation about how to [configure currency conversion](/help/data-views/component-settings/format.md).
 | Updates to Anomaly Detection documentation | The documentation for Anomaly Detection was previously located in a section about Virtual Analyst. The following changes were made: <ul><li>The term Virtual Analyst was removed from the documentation.</li><li>The section about [Anomaly Detection](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) was moved directly beneath the Analysis Workspace section.</li></ul> |
 | **October 2023** | |
 | Using derived field for setting goals / targets | Added [use case](../use-cases/goals-using-derived-fields.md) article illustrating how to use derived fields for setting goals / targets and reporting on these. | 

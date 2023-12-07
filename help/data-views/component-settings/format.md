@@ -9,7 +9,9 @@ feature: Data Views
 
 Format lets you determine how a given metric is displayed when used in reports.
 
-To configure the format of a metric:
+## Configure format settings for a metric
+
+You can determine how a given metric is displayed by adjusting its format settings.
 
 1. In Customer Journey Analytics, select the [!UICONTROL **Data views**] tab.
 
@@ -39,7 +41,7 @@ To configure the format of a metric:
 
 ## Use currency conversion
 
-Currency conversion in Customer Journey Analytics can be extremely valuable for businesses that operate internationally. By removing the complexities of manual currency conversion, it brings uniformity and clarity to financial data. Currency conversion keeps track of daily historical exchange rates and maintains those daily rates for a period of 4 years. 
+Currency conversion in Customer Journey Analytics can be extremely valuable for businesses that operate internationally. By removing the complexities of manual currency conversion, currency conversion in Customer Journey Analytics brings uniformity and clarity to financial data. Currency conversion keeps track of daily historical exchange rates and maintains those daily rates for a period of 4 years. 
 
 For example, if an e-commerce business operates in the US, UK, and EU, sales data can be automatically converted to USD, ensuring easy comparison and holistic understanding of performance.
 
@@ -48,11 +50,11 @@ For example, if an e-commerce business operates in the US, UK, and EU, sales dat
 >Before you begin configuring a metric for currency conversion, consider the following:
 >
 >* The metric you select for currency conversion must have a numeric type (Double, Long, Integer, Short, Byte).
->* Set up your Customer Journey Analytics connection to contain at least one event dataset that holds a currency code dimension for every event containing a currency metric. That currency code dimension uses an alphabetic currency code conforming to the [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard for representing currencies. These values should be in full uppercase format such as USD for $, EUR for &euro;, GBP for £. 
+>* Set up your Customer Journey Analytics connection to contain at least one event dataset that holds a currency code dimension for every event containing a currency metric. That currency code dimension uses an alphabetic currency code conforming to the [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standard for representing currencies. These values should be in full uppercase format, such as USD for $, EUR for &euro;, GBP for £. 
 
 To determine how currencies are displayed and converted for a given metric:
 
-1. Begin configuring the metric for which you want to use currency as the format, as described above. 
+1. Begin configuring the metric for which you want to use currency as the format, as described above, in [Configure format settings for a metric](#configure-format-settings-for-a-metric). 
 
 1. With the metric selected, make the following selections in the [!UICONTROL **Format**] section on the right side of the page:
 
@@ -60,15 +62,17 @@ To determine how currencies are displayed and converted for a given metric:
 
    * In the [!UICONTROL **Decimal places**] field, choose the number of decimal places the metric displays.
 
+     This option is available only if the metric has a numeric type of 'Double'.
+
    * Select the [!UICONTROL **Convert Currency**] option.
 
-   * In the [!UICONTROL **Select currency code dimension**] field, select the appropriate dimension from the list of dimensions that contains the currency code field. For example, [!UICONTROL Currency code].
+   * In the [!UICONTROL **Select currency code dimension**] field, select the dimension that represents the currency you are converting from (the currency that your data is based on). For example, select a dimension called [!UICONTROL **Currency code**].
 
      If you don't have a dimension in your current data schema that contains a currency code field, you can create a new currency code field using [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html), or [Derived Fields](/help/data-views/derived-fields/derived-fields.md). Data Prep is suitable only for new implementations because it is only on a go-forward basis. Depending on an organization's setup, Data Distiller and Derived Fields can be used to access the currency code values historically.
 
-   * In the [!UICONTROL **Convert and display currency in**] field, choose the currency in which you want data to display.
+   * In the [!UICONTROL **Convert and display currency in**] field, choose the currency in which you want data to be converted.
 
-1. Repeat these steps if you have more dimensions that contain currency codes that you want to use for currency conversion.
+1. Repeat these steps if you want to apply currency conversion to additional metrics.
 
 
 
