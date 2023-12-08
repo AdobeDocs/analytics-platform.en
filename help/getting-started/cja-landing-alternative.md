@@ -35,7 +35,7 @@ The Reporting Activity Manager lets you see the reporting capacity for each conn
   <tr style="border: 0;">
     <td>
     <a href="/help/getting-started/aa-vs-cja/overview.md"><img src="./assets/aa-vs-cja.png"></a>
-    <div><strong>Beyond online</strong><br/>Learn how Customer Journey Analytics compares to Adobe Analytics, what features do they share and how you can use your Analytics data.</div>
+    <div><strong>Beyond online data</strong><br/>Learn how Customer Journey Analytics compares to Adobe Analytics, what features do they share and how you can use your Analytics data.</div>
     </td>
     <td>
     <a href="/help/data-ingestion/data-ingestion.md"><img src="./assets/data-ingestion.png"></a>
