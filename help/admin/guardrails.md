@@ -7,11 +7,22 @@ feature: CJA Administration
 
 # Customer Journey Analytics Guardrails
 
-This document provides static and soft limits for various components of Customer Journey Analytics. For performance guardrails, scoping parameters and entitlements, see the [Product Description for Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) or the [Product Description for Adobe Analytics Add-on: Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
+This document provides limits for various components of Customer Journey Analytics. For performance guardrails, scoping parameters and entitlements, see the [Product Description for Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) or the [Product Description for Adobe Analytics Add-on: Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
 
-Static and soft limits can be seen as guardrails, thresholds that provide guidance for data and system usage, performance optimization, and avoidance of errors or unexpected results in Customer Journey Analytics. 
+## Limit types
 
-Some of the features and their associated value for the static and soft limits are dependent on the Customer Journey Analytics package you are entitled to. 
+There are two types of limits for performance guardrails. 
+
+| Guardrail type | Description|
+|----------|---------|
+| **Performance guardrail (soft limit)** | Performance guardrails are usage limits that relate to the scoping of your use cases. When exceeding performance guardrails, you may experience performance degradation and latency. Adobe is not responsible for such performance degradation. Customers who consistently exceed a performance guardrail may elect to license additional capacity to avoid performance degradation.|
+| **System-enforced guardrails (hard limit)** | System-enforced guardrails are enforced by the Real-Time CDP UI or API. These are limits that you cannot exceed as the UI and API will block you from doing so or will return an error.|
+
+{style="table-layout:auto"}
+
+Within this document, all limits mentioned are soft limits, except for the hard limit on row size in data transfers, which is determined by the guardails for data ingestion in Experience Platform.
+
+Some of the features and their associated value for the limit are dependent on the Customer Journey Analytics package you are entitled to. 
 
 >[!NOTE]
 >
@@ -22,7 +33,7 @@ Some of the features and their associated value for the static and soft limits a
 | Name | Value | Description | PD? |
 |---|--:|---|:---:|
 | Try again timeout | 90 | Maximum number of seconds before reporting engine responds back that the request takes too long to return results (possibly due to other simultaneous other requests); it is possible to request again. | | 
-| Don't try again timeout | 600 | Maximum nunber of seconds before Ad Hoc SQL queries will time out. Otherwise stated, maximum number of seconds before reporting engines reports back that the request takes too long to return results and should not be tried again as the request will never return results. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
+| Don't try again timeout | 600 | Maximum nunber of seconds before Ad Hoc SQL queries will time out. Otherwise stated, maximum number of seconds before reporting engines reports back that the request takes too long to return results and should not be tried again as the request will never return results (for example, due issues in the background process). | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
 | Metrics | 150 | Maximum number of metrics in a request. | | |
 | Interactive Query Output Rows | 50,000 | Default number of rows returned unless specified otherwise. | | 
 
@@ -39,6 +50,7 @@ Some of the features and their associated value for the static and soft limits a
 
 {style="table-layout:auto"}
 
+<!--
 ## Attribution AI
 
 | Name |  Value | Description | PD? |
@@ -48,17 +60,18 @@ Some of the features and their associated value for the static and soft limits a
 | Export Insights batches | 12 | Maximum number of export batches times the number of authorized Attribution AI Insights per year. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
 
 {style="table-layout:auto"}
+-->
 
 ## Audiences
 
 | Name | Value | Description | PD? |
 |---|--:|---|:---:|
 | Audience filters | 20 | Maximum number of filters per audience. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
-| Number of audience identities | 20,000,000 | Maximum number of identities per audience. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
+| Number of audience identities | 20 million | Maximum number of identities per audience. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
 | Audience refresh frequency | 4 | Maximum frequency in hours an audience may be refreshed. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
 | Audience refresh lookback window | 90 | Maximum number of days for refresh lookback window. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
-| Refreshing audience expiration date | 13 | Maximum number of months audience will cease to refresh from the date of creation. Customers have the ability to extend this for an additional 13 months (contact your customer care representative). | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
-| Number of refreshing audiences | 75, 100, 150 | Maximum number of refreshing audiences, depending on the package. <br/>A refreshing audience is an audience updating itself based on where new profiles qualifying for the filter are added and existing profiles that do not longer qualify for the filter are removed. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) |
+| Refreshing audience expiration date | 13 | Maximum number of months audience will cease to refresh from the date of creation. Customers have the ability to extend this for an additional 13 months. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
+| Number of refreshing audiences | 75, 100, 150 | Maximum number of refreshing audiences, value varies depending on the package. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) |
 
 {style="table-layout:auto"}
 
@@ -101,9 +114,9 @@ See also Experience Platform [Real-time Customer Data Platform guardrails](https
 | Name |  Value | Description | PD? |
 |---|--:|---|:---:|
 | Fields | 10,000 | Maximum number of properties or fields per row in a dataset. | | | 
-| Unique strings | 10,000,000 | Maximum number of unique keys per lookup dataset. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
-| Rows | 1,000,000 | Maximum number of rows per unique person ID within a connection. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
-| Row size | 2 | Average size in kilobytes per row of data ingested into Customer Journey Analytics (soft limit). A static limit is determined by guardrails for data ingestion in Experience Platform. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) |
+| Unique strings | 10 million | Maximum number of unique keys per lookup dataset. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
+| Rows | 1 million | Maximum number of rows per unique person ID within a connection. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
+| Row size | 2 | Average size in kilobytes per row of data ingested into Customer Journey Analytics (soft limit). A static limit for row size is determined by guardrails for data ingestion in Experience Platform. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) |
 
 {style="table-layout:auto"}
 
