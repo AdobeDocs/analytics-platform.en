@@ -43,7 +43,7 @@ The Reporting Activity Manager lets you see the reporting capacity for each conn
     </td>
     <td>
     <a href="/help/guided-analysis/overview.md"><img src="./assets/product-analytics.png"></a>
-    <div><strong>Guided Analysis</strong><br/>Learn how to use workflows to gain data and insights about your customer's product experience. Product Amalytics through guided analysis.
+    <div><strong>Guided Analysis</strong><br/>Learn how to use workflows to gain data and insights about your customer's product experience. Product Analytics through guided analysis…
     </div>
     </td>
     <td>
