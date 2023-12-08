@@ -96,7 +96,7 @@ The Reporting Activity Manager lets you see the reporting capacity for each conn
 ## Additional resources
 
 <table style="table-layout:fixed"><tr style="border: 0;">
-<td><strong>Adobe Customer Journey Analytics</strong><br/>
+<td><strong>Customer Journey Analytics</strong><br/>
 <a href="https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics product description</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics (Customer Journey Analytics add-on) product description</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics APIs</a>
 </td>
 <td><strong>Data Ingestion</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Overview</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Mobile SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Batch</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Sources</a> - <a href="/help/data-ingestion/serverapi.md">Server API</a>
