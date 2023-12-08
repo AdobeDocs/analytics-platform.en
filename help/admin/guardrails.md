@@ -20,7 +20,7 @@ There are two types of limits for performance guardrails.
 
 {style="table-layout:auto"}
 
-Within this document, all limits mentioned are soft limits, except for the hard limit on row size in data transfers, which is determined by the guardails for data ingestion in Experience Platform.
+Within this document, all limits mentioned are soft limits, except for the hard limit on row size in data transfers, which is determined by the guardrails for data ingestion in Experience Platform.
 
 Some of the features and their associated value for the limit are dependent on the Customer Journey Analytics package you are entitled to. 
 
