@@ -20,7 +20,7 @@ Captions are available to all Customer Journey Analytics users and do not requir
 
 To launch auto-generated captions for a line visualization, click the **[!UICONTROL Intelligent captions]** icon at the top right of the visualization.
 
-![launch intelligent captions](assets/intell-caps-1.png)
+![Launch Analysis window showing the Intelligent captions for Product Views Trend. ](assets/intell-caps-1.png)
 
 Natural-language insights are now being generated. 
 
@@ -34,7 +34,7 @@ Natural-language insights are now being generated.
 
 Here is a sample of what the captions could look like:
 
-![Captions](assets/captions.png)
+![Intelligent captions for Line visualization including Seasonality, Min, Max, Spike, and Decline.](assets/captions.png)
 
 ## Copy to clipboard {#copy}
 
@@ -60,4 +60,4 @@ You can **export captions via PDF**, as long as the project is saved with the ca
 
 If you would rather not have intelligent captions generated, you can toggle this feature off by going to the Visualization preferences and unchecking **[!UICONTROL Show intelligent captions]**.
 
-![caption settings](assets/toggle-captions.png)
+![Line visualization options showing the option to uncheck Show intelligent captions.](assets/toggle-captions.png)

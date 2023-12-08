@@ -26,7 +26,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
    Configure these settings before you can publish the audience.
 
-   ![Screenshot of how to create an audience](assets/create-audience.png)
+   ![Screenshot of create an audience sbowing settings described in the next section.](assets/create-audience.png)
 
    | Setting | Description |
    | --- | --- |
@@ -46,7 +46,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
    The audience preview appears in the right rail. It allows for a summarized analysis of the audience you have created.
 
-   ![Screenshot of the data preview](assets/data-preview.png)
+   ![Screenshot of the data preview showing a summarized analysis of the audience.](assets/data-preview.png)
 
    | Preview setting | Description |
    | --- | --- |
@@ -102,7 +102,7 @@ You can view Customer Journey Analytics audiences in Platform by going to **[!UI
 
 You can drag Customer Journey Analytics audiences into the segment definition for Adobe Experience Platform segments.
 
-![](assets/audiences-aep.png)
+![Adobe Expericen Platform UI highlighting Segments in the left-pane and CJA Audiences in the main panel.](assets/audiences-aep.png)
 
 ## FAQs {#faq}
 

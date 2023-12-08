@@ -8,7 +8,7 @@ exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
 
 In the Calculated metric builder, you can apply filters within your metric definition. This is helpful if you want to derive new metrics to use in your analysis. Keep in mind, filter definitions can be updated through the Filter builder. If changes are made, the filter will automatically update anywhere it is applied, including if it is part of a calculated metric definition.
 
-![](assets/german-visitors.png)
+![Summary and Definition of filters for Countries = Germany and Unique Visitors](assets/german-visitors.png)
 
 ## Create a filtered metric {#create}
 
@@ -22,7 +22,7 @@ Build and save a metric called "German Visitors" and a metric called "Internatio
 
 1. Create an adhoc filter in the Calculated metric builder called "German Visitors", where "Countries" equals "Germany". Drag the Countries dimension into the Definition canvas and select [!UICONTROL **Germany**] as the value:
 
-   ![](assets/segment-from-dimension.png)
+   ![Adhoc filter showing Countries equals Germany](assets/segment-from-dimension.png)
 
    >[!NOTE]
    >
@@ -30,7 +30,7 @@ Build and save a metric called "German Visitors" and a metric called "Internatio
 
 1. Drag the Germany filter into the Definition canvas and drag the Unique Visitors metric within it:
 
-   ![](assets/german-visitors.png)
+   ![Summary and Definition of Countries equal Germany and Unique Visitors](assets/german-visitors.png)
 
 1. Select [!UICONTROL **Save**] to save the calculated metric.
 
@@ -44,7 +44,7 @@ Build and save a metric called "German Visitors" and a metric called "Internatio
 
 1. In Analysis Workspace, drag the **[!UICONTROL Page]** Dimension into a Freeform Table and drag the 2 new calculated metrics next to each other to the top:
 
-   ![](assets/workspace-pages.png)
+   ![Freeform Table showing Page dimension for German Visitors and International visitors](assets/workspace-pages.png)
 
 Here is a video overview:
 
@@ -57,8 +57,8 @@ You can take the example above a step further by comparing your filter to a tota
 1. Drop the German (or International) Visitors filter into the canvas.
 1. Drop another German (or International) Visitors filter below. However, this time, click its configuration (gear) icon to select the Metric Type "Total". The Format should be "Percent". The operator should be "divided by". You end up with this metric definition:
 
-   ![](assets/cm_metric_total.png)
+   ![Countries equals Germany and Total Unique Visitors](assets/cm_metric_total.png)
 
 1. Apply this metric to your project:
 
-   ![](assets/cm_percent_total.png)
+   ![Freeform Table with Page and % of Total German visitors](assets/cm_percent_total.png)

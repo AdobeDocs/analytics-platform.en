@@ -28,6 +28,6 @@ To mark calculated metrics as approved:
 
 1. Click **[!UICONTROL OK]**.
 
-   Notice the approval icon next to the calculated metric in the list:  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
+   Notice the approval icon next to the calculated metric in the list:  ![Approval icon check mark in a circle.](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
 
 1. (Optional) To filter the list of calculated metrics in the Calculated metrics manager to show only approved metrics, select the **Filter** icon, expand **[!UICONTROL Other filters]**, then select **[!UICONTROL Approved]**.

@@ -39,7 +39,7 @@ The [!UICONTROL Usage] view offers the following chart settings, which can be ad
 
 Add additional data to the chart. When more than one series is visible on the chart, overlays appear on hover only. 
 
-* **[!UICONTROL Anomaly detection]**: Runs [anomaly detection](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) on the trended analysis. Outliers appear as dots that you can hover over for more information.
+* **[!UICONTROL Anomaly detection]**: Runs [anomaly detection](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) on the trended analysis. Outliers appear as dots that you can hover over for more information.
 * **[!UICONTROL Trendline overlay]**: Adds a trendline to the chart which helps depict a clearer pattern in the data.
   * [!UICONTROL Linear]: Creates a straight regression line. Best for simple linear data that increases or decreases at a steady rate. Equation: `y = a + b * x`
   * [!UICONTROL Logarithmic]: Creates a curved regression line. Best for data that increases or decreases quickly, then becomes more level. Equation: `y = a + b * log(x)`

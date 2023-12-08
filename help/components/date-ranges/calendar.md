@@ -11,7 +11,7 @@ Using the calendar, you can specify dates and date ranges, or select a preset. D
 
 Calendar selections apply at the panel level, but you have the option to apply them to all panels. When you click a date range in Workspace, the interface displays the current calendar month and the previous calendar month. You can adjust these two calendars by clicking the right and left arrows in each respective upper corner.
 
-![Calendar](assets/aw_calendar2.png){width="60%"}
+![Calendar showing October 2022 and November 2022 with November 1 through 30 selected.](assets/aw_calendar2.png){width="60%"}
 
 The first click on a calendar starts a date range selection. The second click completes a date range selection, which becomes highlighted. If the `Shift` key is held down (or right-click is used), it appends to the currently selected range.
 
@@ -42,12 +42,12 @@ To use relative panel date ranges
         If relative dates are selected, then rolling dates will be based on the start date of the panel calendar and not today's date.
     *   If this option isn't selected, then rolling dates will be based on today's date.
 
-    ![relative panel dates](assets/relative-date-selected.png){width="60%"} 
+    ![Calendar with Make date range components relative to panel calendar selected](assets/relative-date-selected.png){width="60%"} 
 
 1.  Click **Apply**.
     The relative dates are shown in the upper-right.
 
-    ![relative dates in freeform ](assets/relative-date-range1.png)
+    ![Freeform table with relative dates highlighted and showing Last month highlighted. ](assets/relative-date-range1.png)
 
 ## Guidelines for relative panel date ranges {#guidelines}
 

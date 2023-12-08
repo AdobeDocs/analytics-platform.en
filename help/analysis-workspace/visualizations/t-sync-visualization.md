@@ -17,7 +17,7 @@ Managing a data source lets you show the data source or lock the selection. Thes
 1. In the data table, select the cells (data source) you want to associate with the visualization.
 1. In the visualization, click the dot next to the title to bring up the **[!UICONTROL Data Source]** dialog. Select **[!UICONTROL Show Data Source]** or **[!UICONTROL Lock Selection]**.
 
-   ![](assets/manage-data-source.png)
+   ![The Dadta Source option dialog showing the options described in the next section.](assets/manage-data-source.png)
 
    Synchronizing a visualization to a table cell creates a new (hidden) table and color-codes the synchronized visualization with that table.
 
@@ -33,10 +33,10 @@ This architecture differs from the previous one in that Analysis Workspace no lo
 
 * You can create a summary visualization and lock it to a cell in the table you created it from. When you enable "Show Data Source", it shows you exactly where this information is coming from in the table. The source data will be greyed out: 
 
-  ![](assets/data-source2.png)>
+  ![Data source location in a worksheet.](assets/data-source2.png)>
 * You can add lots of visualizations and source them from different cells in the same table, as shown here. The table is the same as in the example above, but the sourced cell (and metric) is different: 
 
-  ![](assets/data-source3.png)>
+  ![Data source location with added visualizations sourced from multiple cells](assets/data-source3.png)>
 * You can see whether there are visualizations connected to a freeform or cohort table by clicking the top left dot (Data Source Settings). Hovering will highlight the linked visualization, and clicking it will take you to it.
 
-  ![](assets/linked-visualizations.png)>
+  ![Data Source Settings highlighting a linked visualization for Top Page Views.](assets/linked-visualizations.png)>

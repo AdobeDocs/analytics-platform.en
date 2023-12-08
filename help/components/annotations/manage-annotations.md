@@ -17,7 +17,7 @@ The [!UICONTROL Annotations] manager shows you all the annotations you own that 
 
 ## Annotations Manager user interface
 
-![](assets/annotation-mgr.png)
+![Annotations options such as sharing, tagging, or copying, that are described in the next section.](assets/annotation-mgr.png)
 
 | UI Element | Description |
 | --- | --- | 

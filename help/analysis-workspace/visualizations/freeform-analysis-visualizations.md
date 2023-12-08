@@ -41,7 +41,7 @@ The following visualization types are available in Analysis Workspace:
 
    * In the left rail, select the **Visualizations** icon <!-- add icon -->, then drag a visualization to the panel where you want to add it. 
 
-     ![](assets/viz-rail.png)
+     ![Visualizations panel](assets/viz-rail.png)
 
    * On the panel where you want to add the visualization, select the **Plus** icon, then choose the icon that represents the visualization that you want to add. Hover over the icon for each visualization to see its name.
 
@@ -75,14 +75,14 @@ You can customize settings for all visualizations that you create. For more info
 
 Each visualization has its own settings that you can manage. To access [!UICONTROL Visualization Settings], click the [!UICONTROL Visualization Settings] gear icon.
 
-![Settings](assets/settings.png)
+![Visualizations Settings showing the setting options described in the next section.](assets/settings.png)
 
 | Setting | Description |
 | --- | --- |
 | Visualization Type | Change the type of visual used to depict the data. |
 | Granularity | For trended visualizations, you can change the time granularity (day, week, month, etc.) from this drop-down list. This change also applies to the data source table. |
 | Percentages | Displays values in percentages. |
-| 100% Stacked | This setting on area stacked, bar stacked or horizontal bar stacked visualizations turns the chart into a "100% stacked" visualization. Example: ![Stacked 100%](assets/stacked_100_percent.png) |
+| 100% Stacked | This setting on area stacked, bar stacked or horizontal bar stacked visualizations turns the chart into a "100% stacked" visualization. Example: ![A bar chart showing the Stacked 100% option view.](assets/stacked_100_percent.png) |
 | Legend Visible | Lets you hide the detailed legend text for the Summary Number/Summary Change visualization. |
 | Limit Max Items | Lets you limit the number of items that a visualization displays. |
 | Anchor Y Axis at Zero | If all the values plotted on the chart are considerably above zero, the chart default will make the bottom of the y-axis NON-ZERO. If you check this box, the y-axis will be forced to zero (and it will re-draw the chart). |
@@ -101,7 +101,7 @@ To edit a legend label:
 1. Right-click one of the legend labels.
 1. Click **[!UICONTROL Edit Label]**.
 
-   ![Edit label](assets/edit-label.png)
+   ![A legend label and the Edit label option.](assets/edit-label.png)
 
 1. Enter the new label text.
 1. Press **[!UICONTROL Enter]** to save.
@@ -110,7 +110,7 @@ To edit a legend label:
 
 Additional functionality for a visualization is available by right-clicking on the visualization header. Settings will vary by visualization. Some of the settings available are:
 
-![Right click](assets/right-click.png)
+![Additional visualization settings with the right-click options displayed. Options are described in the next section.](assets/right-click.png)
 
 | Setting | Description |
 | --- | --- |

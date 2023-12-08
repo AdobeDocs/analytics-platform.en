@@ -18,11 +18,11 @@ The following information instructs curators of Customer Journey Analytics data 
 
 An Analytics scorecard displays key data visualizations for executive users in a tiled layout, as shown below:
 
-![Example scorecard](assets/intro_scorecard.png)
+![Analytics scorecard example showing the Mobile Scorecard Demo](assets/intro_scorecard.png)
 
 As a curator of this scorecard, you can use the scorecard builder to configure which tiles appear on the scorecard for your executive consumer. You also configure how the detailed views, or the breakdowns, can be adjusted once the tiles are tapped. The scorecard builder interface is shown below:
 
-![Scorecard Builder](assets/scorecard_builder.png)
+![Scorecard Builder showing the new mobile scorecard window. ](assets/scorecard_builder.png)
 
 To create the scorecard, you need to do the following:
 
@@ -39,7 +39,7 @@ You can access the [!UICONTROL Blank Mobile Scorecard] template either by creati
 1. Click **[!UICONTROL Create project]** and select the **[!UICONTROL Blank mobile scorecard]** project template.
 1. Click **[!UICONTROL Create]**.
 
-![Scorecard template](assets/new_template.png)
+![All Templates window with the Blank MObile Scorecard selected.](assets/new_template.png)
 
 ### Tools menu
 
@@ -52,11 +52,11 @@ To implement the scorecard template:
 
 1. Under **[!UICONTROL Properties]** (in the right-hand rail), specify a **[!UICONTROL Project data view]** from which you want to use data.
 
-    ![data view selection](assets/properties_save.png)
+    ![New mobile scorecard window highlighting the data view selection](assets/properties_save.png)
 
 1. To add a new tile to your scorecard, drag a metric from the left panel and drop it into the **[!UICONTROL Drag and Drop Metrics Here]** zone. You can also insert a metric between two tiles using a similar workflow.
 
-    ![Add tiles](assets/build_list.png)
+    ![New mobile scorecard window with an arrow pointing to a metric (New KPI) dropped into the scorecard. ](assets/build_list.png)
 
 
 1. From each tile, you can access a detailed view that displays additional information about the metric, such as top items for a list of related dimensions.
@@ -67,7 +67,7 @@ To add a related dimension to a metric, drag a dimension from the left panel and
 
 For example, you can add appropriate dimensions (like **[!DNL Marketing Channel]**, in this example) to the **[!UICONTROL Unique Visitors]** metric by dragging and dropping it onto the tile. Dimensions breakdowns appear under the [!UICONTROL Drill Ins] (breakdown) section of the tile-specific **[!UICONTROL Properties]**. You can add multiple dimensions to each tile.
 
-![Add dimensions](assets/layer_dimensions.png)
+![New mobile scorecard window with an arrow pointing from the dimensions list to the scorecard pane.](assets/layer_dimensions.png)
 
 ## Apply filters {#filters}
 
@@ -75,29 +75,29 @@ To apply filters to individual tiles, drag a filter (segments are filters in Cus
 
 If you want to apply the filter to all the tiles in the scorecard, drop the tile on top of the scorecard. Or, you can also apply filters by selecting filters in the filter menu beneath the date ranges. You [configure and apply filters for your scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) the same way you would in Customer Journey Analytics Workspace.
 
-![Build filters](assets/segment_ui.png)
+![Filter dropdown selector highlighting the build filters](assets/segment_ui.png)
 
 ## Add date ranges {#dates}
 
 Add and remove date range combinations that can be selected in your scorecard by selecting the date range drop down.
 
-![New score card](assets/new_score_card.png)
+![New mobile scorecard highlighting Yesterday vs Same day last week](assets/new_score_card.png)
 
 Each new scorecard starts with 6 date range combinations focusing on the data from today and yesterday. You can remove unnecessary date ranges by clicking on the x, or you can edit each date range combination by clicking the pencil.
 
-![New score card2](assets/new_score_card2.png)
+![New mobile scorecard highlighting the pencil icon](assets/new_score_card2.png)
 
 To create or change a primary date, use the drop down to select from available date ranges or drag and drop a date component from the right rail into the drop zone.
 
-![New score card3](assets/new_score_card3.png)
+![New mobile scorecard highlighting the Date ranges with Primary date/Yesterday selected](assets/new_score_card3.png)
 
 To create a comparison date, you can select from convenient pre-sets for common time comparisons in the drop-down menu. You can also drag and drop a date component from the right rail.
 
-![New score card4](assets/new_score_card4.png)
+![New mobile scorecard highlighting the Date ranges with Comparison date set to Same day last week selected](assets/new_score_card4.png)
 
 If the date range you want hasn't been created yet, you can create a new one by clicking the calendar icon.
 
-![New score card5](assets/new_score_card5.png)
+![Calendar icon](assets/new_score_card5.png)
 
 This will take you to the date range builder where you can create and save a new date range component.
 
@@ -105,11 +105,11 @@ This will take you to the date range builder where you can create and save a new
 
 To include comparison date ranges, toggle the **Include comparison dates** setting.
 
-![Include comparison dates](assets/include-comparison-dates.png)
+![New mobile scorecard highlighting Yesterday vs Previous day and Include comparison dates](assets/include-comparison-dates.png)
 
 The setting is *on* by default. Toggle it to *off* if you don't want to view comparison dates.
 
-![Deselected comparison date setting](assets/no-comparison-dates.png)
+![New mobile scorecard highlighting Yesterday  and Include comparison dates](assets/no-comparison-dates.png)
 
 ## Apply visualizations {#viz}
 
@@ -125,25 +125,25 @@ Or, click the [!UICONTROL Visualizations] icon in the left rail and drag and dro
 
 Use the Summary Number visualization to highlight a large number that is important in a project.
 
-![Summary number](assets/summary-number.png)
+![New mobile scorecard with Summary number visualization highlighting 13.3K Visits](assets/summary-number.png)
 
 ### [!UICONTROL Donut]
 
 Similar to a pie chart, this visualization shows data as parts of a whole. Use a donut graph when comparing percentages of a total. For example, let's say you want to see which ad platform contributed to the total number of unique persons:
 
-![Donut visualization](assets/donut-viz.png)
+![New movile scorecard showing a Donut visualization](assets/donut-viz.png)
 
 ### [!UICONTROL Line]
 
 The Line visualization represents metrics using a line in order to show how values change over a period of time. A line chart shows dimensions over time but works with any visualization. You are visualizing the product category dimension in this example.
 
-![Line visualization](assets/line.png)
+![New movile scorecard showing a Line visualization](assets/line.png)
 
 ### [!UICONTROL Horizontal Bar]
 
 This visualization shows horizontal bars representing various values across one or more metrics. For example, to easily see what your top products are, use [!UICONTROL Horizontal Bar] for your preferred visualization.
 
-![horizontal bar](assets/horizontal.png)
+![New movile scorecard showing a horizontal bar](assets/horizontal.png)
 
 ### Remove [!UICONTROL Unspecified] dimension item
 
@@ -152,7 +152,7 @@ If you want to remove [!UICONTROL Unspecified] dimension items from your data, d
 1. Select the correct tile.
 1. In the right rail, under **[!UICONTROL Drill ins]**, select the right-arrow next to the dimension item whose **[!UICONTROL Unspecified]** items you want to remove.
 
-    ![unspecified](assets/unspecified.png)
+    ![Properties with arrow pointing to the right-arrow next to the dimention name.](assets/unspecified.png)
 
 1. Click the icon next to **[!UICONTROL Unspecified]** to remove unspecified data from your reporting. (You can also remove any other dimension item.)
 

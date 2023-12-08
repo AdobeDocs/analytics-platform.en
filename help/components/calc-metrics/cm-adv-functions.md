@@ -55,11 +55,11 @@ Approximate Count Distinct (customer ID eVar) is a common use case for this func
 
 Definition for a new 'Approximate Customers' calculated metric:
 
-![](assets/approx-count-distinct.png)
+![Approximate county distinct new dimension definition showing Customer ID (eVar1)](assets/approx-count-distinct.png)
 
 This is how the "Approximate Customers" metric could be used in reporting:
 
-![](assets/approx-customers.png)
+![Freeform Table showing Unique Visitors and Approximate Customers ](assets/approx-customers.png)
 
 ## Uniques Exceeded
 

@@ -24,7 +24,7 @@ In Customer Journey Analytics, navigate to **[!UICONTROL Tools]** > **[!UICONTRO
 
 The audit log for today and yesterday are shown by default.
 
-![audit log](assets/audit_ui.png)
+![Audit log highlighting today (October 14, 2022) and yesterday (October 13, 2022). ](assets/audit_ui.png)
 
 You can select which columns are visible by going to the column selector at the top right.
 
@@ -32,7 +32,7 @@ You can select which columns are visible by going to the column selector at the 
 
 Double click the info (i) button next to a description.
 
-![audit log](assets/info-button-audit.png)
+![Audit log highlighting the info button. ](assets/info-button-audit.png)
 
 The following items are shown:
 
@@ -85,7 +85,7 @@ The following items are shown:
 
 Select the funnel icon (![filter](assets/filter-icon.png)) to display a list of filter controls to help narrow results. Only the last 1,000 records are displayed, irrespective of the various filters selected.
 
-![filters](assets/filters.png)
+![Audit log showing the filters displayed for Data Range.](assets/filters.png)
 
 The following filters are available for audit events in the UI:
 

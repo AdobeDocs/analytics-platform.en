@@ -18,7 +18,7 @@ The following video provides a brief overview with examples of what is possible.
 
 The following image and accompanying table explain some of the main areas in Analysis Workspace:
 
-![Analysis Workspace overview](assets/analysis-workspace-overvew.png)
+![Analysis Workspace window highlighting the far left and left rail, the canvas, and data view dropp-down menu.](assets/analysis-workspace-overvew.png)
 
 | Location in image | Name and function |
 |---------|----------|

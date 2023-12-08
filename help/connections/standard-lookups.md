@@ -68,8 +68,8 @@ The catch here is that they can only populate those IDs today if they have a dir
 
 In order to report on the standard lookup dimensions, you have to add them when you create a data view in Customer Journey Analytics:
 
-![](assets/global-lookup.png)
+![Create a data view showing the Add Components list](assets/global-lookup.png)
 
 You can then see the lookup data in Workspace:
 
-![](assets/gl-reporting.png)
+![Freeform Table showing the data](assets/gl-reporting.png)

@@ -54,7 +54,7 @@ The reporting engine is fundamental for Customer Journey Analytics to allow you 
 
 Built into these visualization components are smart capabilities like:
 
-* **Virtual analyst features** such as [Anomaly Detection](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) that use predictive algorithms and machine learning to deliver insights into what is driving unusual behaviors in your data.
+* **Virtual analyst features** such as [Anomaly Detection](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) that use predictive algorithms and machine learning to deliver insights into what is driving unusual behaviors in your data.
 
 * **Advanced analysis features** that are specifically focused on customer journey insights, like [flow diagrams](/help/analysis-workspace/visualizations/c-flow/flow.md), [Attribution panel](/help/analysis-workspace/c-panels/attribution.md), [fallout diagrams](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [dimension breakdowns](/help/components/dimensions/t-breakdown-fa.md). Examples of out-of-the-box visualizations are:
 

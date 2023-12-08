@@ -1,5 +1,5 @@
 ---
-description: List of known limitations in Adobe Analysis Workspace and its related components
+description: Learn about known limitations in Adobe Analysis Workspace and its related components
 title: Known limitations in Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
@@ -14,7 +14,6 @@ Here is a list of known limitations in Analysis Workspace and its related compon
 * Create metric from selection is disabled when filters are used as rows of a table. Additionally, Create metric from selection should not be applied to date-aligned columns.
 * Conditional formatting for breakdown rows cannot use custom ranges.
 * Table total rows cannot be trended when Calculate totals by summing the row values setting is applied (typically used with Static row items).
-* [!UICONTROL Contribution Analysis] can be run at the [!UICONTROL daily] granularity _only_. It cannot be run against [!UICONTROL hourly], [!UICONTROL weekly], etc., data.
 
 ## Visualizations
 

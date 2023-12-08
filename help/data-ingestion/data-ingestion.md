@@ -16,7 +16,7 @@ You have several options when ingesting data into Customer Journey Analytics. So
 
 See the high-level Customer Journey Analytics architecture shown earlier in [Overview](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en):
 
-![Customer Journey Analytics](./assets/cja-architecture.png)
+![Customer Journey Analytics architecture described in this section](./assets/cja-architecture.png)
 
 The dataset in the architecture above can originate from various sources: 
 

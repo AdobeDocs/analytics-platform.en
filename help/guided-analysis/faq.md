@@ -55,7 +55,7 @@ While [Analysis Workspace](../analysis-workspace/home.md) and Guided analysis us
 
 * **Guided analysis is an event-centered experience.** Each analysis starts by selecting events, then dimensions and filters can be added to refine that event data.
 
-![Structure](assets/structure.png)
+![Analysis Workspace and Guided analysis views](assets/structure.png)
 
 Consider the following example where you focus on data around your website's home page. Teams ask similar questions, but the analysis approach can be different.
 

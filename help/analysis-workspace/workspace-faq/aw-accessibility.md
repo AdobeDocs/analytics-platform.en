@@ -21,7 +21,7 @@ Navigation in [!UICONTROL Analysis Workspace] works top > down, and left > right
 * The `F6` navigates to the first panel in the project and  moves between the visualizations within that panel. Then, it moves to the next panel in the project and repeats. 
 * We apply focus indicators so that sighted keyboard users have a clear indication of which UI element currently has focus. The indicator is a blue border around the selected element.
 
-    ![Focus Indicator](assets/focus-indicator.png)
+    ![Freeform table showing a focus ndicator of a blue border around the Freeform table.](assets/focus-indicator.png)
 
 ### Keyboard navigation for the menu bar 
 
@@ -92,7 +92,7 @@ When building a component, required fields are validated when you save. If a req
 
 Once a component is fully validated, pressing `Save` closes the builder. 
 
-![Error validation](assets/error-validation.png)
+![Segment Builder and error validation indicator.](assets/error-validation.png)
 
 ## Support for operating system accessibility features  
 

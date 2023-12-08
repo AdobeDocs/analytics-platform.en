@@ -14,4 +14,4 @@ The scatterplot visualization shows the relationship between dimension items and
 * The third column determines the radius of the dot.
 * All subsequent columns in a freeform table are ignored by the scatterplot visualization.
 
-![Scatterplot](assets/scatter.png)
+![Scatterplot example showing multiple dimension items ](assets/scatter.png)

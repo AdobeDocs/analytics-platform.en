@@ -27,7 +27,7 @@ You first create a lookup schema in Adobe Experience Platform, then create a loo
 
 Creating your own schema for the [lookup](/help/getting-started/cja-glossary.md) table ensures that the dataset used will be available in Customer Journey Analytics with the correct setup (record type). Best practice is to [create a custom schema class](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) called "Lookup", empty of any element, that can be re-used for all lookup tables.
 
-![](../assets/create-new-class.png)
+![Create New Class dialogue.](../assets/create-new-class.png)
 
 ## 2. Create lookup dataset (Experience Platform)
 

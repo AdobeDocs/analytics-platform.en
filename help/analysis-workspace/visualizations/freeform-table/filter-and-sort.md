@@ -61,7 +61,7 @@ To quickly exclude specific rows from a Freeform table:
  
  1. Select the **Filter** icon when it appears.
 
-    ![Filter icon in a table](assets/table-filter-icon.png)
+    ![Freeform table highlighting the Filter icon.](assets/table-filter-icon.png)
 
     The following options are available:
 
@@ -102,6 +102,6 @@ A down arrow icon ![Down arrow icon sorted table column](https://spectrum.adobe.
    - The down-arrow sorts in descending order and the up-arrow (default) in ascending order.
    - You can sort Dimensions alphabetically or numerically. For example, you may have numbered steps in a workflow and may want to sort by the step number. You might sort a date-related dimension by date. Or you could sort data sources alphabetically, as in the following image.
 
-   ![](assets/sort-dimensions.png)
+   ![Data Sources view highlighting the sort icon.](assets/sort-dimensions.png)
 
 

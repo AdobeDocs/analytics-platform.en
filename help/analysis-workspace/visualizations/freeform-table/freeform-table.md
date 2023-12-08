@@ -8,19 +8,19 @@ exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 
 In Analysis Workspace, a Freeform Table is the foundation for interactive data analysis. You can drag and drop a combination of [components](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html) into rows and columns to create a custom table for your analysis. As each component is dropped, the table will update immediately so you can do quickly analyze and dig deeper.
 
-![](assets/opening-section.png)
+![Freeform Table showing components in rows and columns including Visits and Online Orders for multiple web pages.](assets/opening-section.png)
 
 ## Automated tables
 
 The quickest way to build a table is to drop components directly into a blank project, panel or freeform table. A freeform table will automatically be built for you in a recommended format. [Watch the tutorial](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace.html).
 
-![](assets/automated-table.png)
+![A new Panel with the visits component dropped onto the working space.](assets/automated-table.png)
 
 ## Freeform table builder
 
 If you prefer to add several components to your table first, then render the data, you can enable Freeform Table Builder. With the builder enabled, you can drag & drop in many dimensions, breakdowns, metrics and filters to build tables that answer more complex questions. Data will not update on-the-fly, it will update once you click **[!UICONTROL Build]**.
 
-![](assets/table-builder.png)
+![A Freeform Table Builder showing ](assets/table-builder.png)
 
 ## Table interactions
 
@@ -47,4 +47,4 @@ Learn more about all data [export options](https://experienceleague.adobe.com/do
 
 Learn more about all data [export options](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) for Analysis Workspace.
 
-![](assets/export-options.png)
+![Freeform Table showing the export options and Copy data to clipboard selected.](assets/export-options.png)

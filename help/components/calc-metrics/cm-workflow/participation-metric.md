@@ -23,13 +23,13 @@ This type of information could be useful for any content owner.
 
    In the Definition box, the selected metric is updated by appending  **(Partipation|Session)** to its name. 
 
-      ![](assets/participation-setup.png)
+      ![Column attribution model popup showing Participation selected as the model  and Session selected for Lookback window.](assets/participation-setup.png)
 
   
 
 1. Select [!UICONTROL **Save**] to save the metric.
 1. Use the calculated metric in your report. For example, use the calculated [!DNL Orders (Session Participation)] metric (as defined in step 5) in a report to show which Customer Tier contributed to (or participated in) sessions that contained an order.
 
-    ![](assets/participation-pages-customer-tier.png)
+    ![Freeform table showing Customer Tier and Orders.](assets/participation-pages-customer-tier.png)
 
 1. (Optional) Share the metric with other users in your organization, as described in [Share calculated metrics](/help/components/calc-metrics/cm-workflow/cm-sharing.md).

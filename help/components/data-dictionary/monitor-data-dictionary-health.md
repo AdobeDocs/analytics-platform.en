@@ -31,7 +31,7 @@ To identify health issues in your Data Dictionary:
 
    The Data Dictionary window displays.
 
-   ![Data Dictionary admin view](assets/data-dictionary-admin.png)
+   ![Data Dictionary administrator's view showing Dictionary health](assets/data-dictionary-admin.png)
 
 1. Ensure that the correct data view is selected in the drop-down menu.
 
