@@ -48,7 +48,7 @@ The Reporting Activity Manager lets you see the reporting capacity for each conn
     </td>
     <td>
     <a href="/help/analysis-workspace/home.md"><img src="./assets/workspace.png"></a>
-    <div><strong>Analysis Workspace</strong><br/>Use Analysis Workspace to perform basic up to more advanced analysis, like attribution, flow and fallout diagrams, dimension breakdown.</div>
+    <div><strong>Analysis Workspace</strong><br/>Use Analysis Workspace to perform basic and advanced analysis, like attribution, flow and fallout diagrams, dimension breakdowns.</div>
     </td>
   </tr>
   <tr style="border: 0;">
