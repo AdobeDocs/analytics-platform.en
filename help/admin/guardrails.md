@@ -33,7 +33,7 @@ Some of the features and their associated value for the limit are dependent on t
 | Name | Value | Description | PD? |
 |---|--:|---|:---:|
 | Try again timeout | 90 | Maximum number of seconds before reporting engine responds back that the request takes too long to return results (possibly due to other simultaneous other requests); it is possible to request again. | | 
-| Don't try again timeout | 600 | Maximum nunber of seconds before Ad Hoc SQL queries will time out. Otherwise stated, maximum number of seconds before reporting engines reports back that the request takes too long to return results and should not be tried again as the request will never return results (for example, due issues in the background process). | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
+| Don't try again timeout | 600 | Maximum number of seconds before Ad Hoc SQL queries will time out. Otherwise stated, maximum number of seconds before reporting engines reports back that the request has taken too long to return results and should not be tried again as the request will never return results (for example, due issues in the background process). | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
 | Metrics | 150 | Maximum number of metrics in a request. | | |
 | Interactive Query Output Rows | 50,000 | Default number of rows returned unless specified otherwise. | | 
 
@@ -43,8 +43,8 @@ Some of the features and their associated value for the limit are dependent on t
 
 | Name | Value | Description | PD? |
 |---|--:|---|:---:|
-| Visible rows per table | 400 |  Maximum number of visible rows in any freeform table in your Analysis Workspace project. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
-| Exportable rows per table | 50,000 |  Maximum number of rows you can export per single dimension. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
+| Visible rows per table | 400 |  Maximum number of visible rows in any freeform table in an Analysis Workspace project. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
+| Exportable rows per table | 50,000 |  Maximum number of rows that can be exported per single dimension. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
 | Panels per project | 15 | Maximum number of [panels](../analysis-workspace/home.md#panels) per project. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
 | Visualizations per panel | 25 | Maximum number of [visualizations](../analysis-workspace/home.md#visualizations) per panel. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
 
@@ -82,7 +82,7 @@ See also Experience Platform [Real-time Customer Data Platform guardrails](https
 
 | Name |  Value | Description | PD? |
 |---|--:|---|:---:|
-| Work orders | 20 | Maximum number of automated dataset expiration work orders. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
+| Work orders | 20 | Maximum number of automated dataset expiration work orders per month. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
 
 {style="table-layout:auto"}
 
@@ -138,7 +138,7 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 | Name |  Value | Description | PD? |
 |---|--:|---|:---:|
 | Stitched datasets | 10 | Maximum number of stitched datasets per customer, dependent on the package. |  ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) |
-| Backfill data | 60 | Maximum number of days of backfill data, dependend on the package. | |
+| Backfill data | 60 | Maximum number of days of backfill data. | |
 
 {style="table-layout:auto"}
 
@@ -147,11 +147,11 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 
 | Name |  Value | Description | PD? |
 |---|--:|---|:---:|
-| Containers per filter | 50 | Maximum number of containers in a filter. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
-| Metrics per calculated metric | 25 | Maximum number of metrics in a calculated metric. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
-| Metrics and dimensions per filter | 25 | Maximum number of unque metrics and dimensions in a filter. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  |
-| Nested containers per filter | 10 | Maximum number of nested containers in a filter. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  |
-| Rules per filter| 100 | Maximum nunber of rules per filter. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)   |
+| Containers per filter | 50 | Maximum number of containers per filter. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
+| Metrics per calculated metric | 25 | Maximum number of metrics per calculated metric. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
+| Metrics and dimensions per filter | 25 | Maximum number of unque metrics and dimensions per filter. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  |
+| Nested containers per filter | 10 | Maximum number of nested containers per filter. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  |
+| Rules per filter| 100 | Maximum number of rules per filter. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)   |
 | String compares per dimension per filter | 100 |  Maximum number of strings comparisons per dimension per filter. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  |
 | Calculated metrics | 6,000 | Maximum number of calculated metrics for an organization. | |
 | Filters | 50,000 | Maximum number of filters you can define for an organization. | |
@@ -186,7 +186,7 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 
 | Name |  Value | Description | PD? |
 |---|--:|---|:---:|
-| Rows per report |  3,000,0000 - 150,000,000 | Maximum number of reporting rows per report, dependent on the package. | |
+| Rows per report |  3,000,0000 - 150,000,000 | Maximum number of reporting rows per report; value based on the licensed package. | |
 | Breakdowns per table |  5 | Maximum number of breakdowns per table. | |
 | Metrics per table |  5 | Maximum number of metrics per table. | |
 | Schedule frequency |  1 | Exports can be scheduled once (1) a day or on a longer schedule (for example: once every 2 days, or weekly). | | 
