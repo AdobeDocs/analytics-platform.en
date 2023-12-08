@@ -80,7 +80,7 @@ The Reporting Activity Manager lets you see the reporting capacity for each conn
   <tr style="border: 0;">
     <td>
       <img src="./assets/workspace.svg" width="35px"><br/>
-      <strong>Projects</strong><br/><a href="help/analysis-workspace/home.md">Analysis Workspace</a> - <a href="/help/a/nalysis-workspace/perform-basic-analysis.md">Basic </a> & <a href="/help/analysis-workspace/perform-adv-analysis.md">Advanced analysis</a> - <a href="/help/analysis-workspace/build-workspace-project/freeform-overview.md">Projects</a> - <a href="/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md">Visualizations</a> - <a href="/help/analysis-workspace/c-panels/freeform-panel.md">Panels</a>
+      <strong>Workspace Projects</strong><br/><a href="help/analysis-workspace/home.md">Analysis Workspace</a> - <a href="/help/a/nalysis-workspace/perform-basic-analysis.md">Basic </a> & <a href="/help/analysis-workspace/perform-adv-analysis.md">Advanced analysis</a> - <a href="/help/analysis-workspace/build-workspace-project/freeform-overview.md">Projects</a> - <a href="/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md">Visualizations</a> - <a href="/help/analysis-workspace/c-panels/freeform-panel.md">Panels</a>
     </td>
     <td>
       <img src="./assets/guided-analysis.svg" width="35px"><br/>
