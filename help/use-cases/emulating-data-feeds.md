@@ -15,7 +15,7 @@ Adobe Analytics data feeds are a powerful way to get raw data out of Adobe Analy
 
 Make sure that you meet all the following requirements before using the functionality described in this use case:
 
-* A working implementation that sends online and offline data into Experience Platform's data lake.
+* A working implementation that sends online and offline data into Experience Platform's Data Lake.
 * Access to Query Service, which is packaged as part of plaform-based applications or the Data Distiller add-on. See [Query Service packaging](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) for more information.
 * Access to Export datasets functionality, available to customers who have purchased the Real-Time CDP Prime or Ultimate package, Adobe Journey Optimizer, or Customer Journey Analytics. See [Export datasets to cloud storage destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en) for more information.
 * One or more destinations (for example: Amazon S3, Google Cloud Storage) configured to where you can export the raw data of your data feed.
@@ -41,7 +41,7 @@ You use the Query Service [user interface](https://experienceleague.adobe.com/do
 
 You can use all the functionality of standard ANSI SQL for SELECT statements and other limited commands to create and execute the queries that generate the data for your data feed. See [SQL syntax](https://experienceleague.adobe.com/docs/experience-platform/query/sql/syntax.html?lang=en) for more information. Beyond this SQL syntax, Adobe supports:
 
-* prebuilt [Adobe-defined functions (ADF)](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) that help perform common business-related tasks on event data stored in Experience Platform data lake, including functions for [Sessionization](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing.html?lang=en) and [Attribution](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=en),
+* prebuilt [Adobe-defined functions (ADF)](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) that help perform common business-related tasks on event data stored in Experience Platform Data Lake, including functions for [Sessionization](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing.html?lang=en) and [Attribution](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=en),
 * several built-in [Spark SQL functions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en),
 * [metadata PostgreSQL commands](https://experienceleague.adobe.com/docs/experience-platform/query/sql/metadata.html?lang=en),
 * [prepared statements](https://experienceleague.adobe.com/docs/experience-platform/query/sql/prepared-statements.html?lang=en).
@@ -287,7 +287,7 @@ select explode(identityMap) from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 Alternatively you can refer to individual elements using dot notation. For example:
 
 ```sql
-select identityMap,ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
+select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 ```
 
 See [Working with nested data structures in Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/key-concepts/nested-data-structures.html?lang=en) for more information.
