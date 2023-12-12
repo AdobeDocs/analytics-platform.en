@@ -3,6 +3,8 @@ title: Emulate data feed functionality
 description: Understand how you can emulate Adobe Analytics data feeds with data in Experience Platform.
 solution: Customer Journey Analytics
 feature: Use Cases
+hide: yes
+hidefromtoc: yes
 
 ---
 # Emulate data feed functionality
@@ -270,7 +272,7 @@ The schemas on which the datasets are based often contain complex data types inc
    }
 }
 ```
-[
+
 You can use the [`explode()` or other Arrays functions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#arrays) from Spark SQL to get to the data inside a nested data structure. For example:
 
 ```sql
@@ -340,7 +342,6 @@ Finally, you want to schedule your dataset export as part of the **[!UICONTROL S
 [Review](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en#review) your selection and when correct start exporting your output dataset to the cloud storage destination.
 
 You must [verify](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en#verify) a successful data export. When exporting datasets, Experience Platform creates one or multiple .json or .parquet files in the storage location defined in your destination. Expect new files to be deposited in your storage location according to the export schedule you set up. Experience Platform creates a folder structure in the storage location you specified as part of the selected destination, where it deposits the exported files. A new folder is created for each export time, following the pattern: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. The default file name is randomly generated and ensures that exported file names are unique.
-
 
 ### Flow Service API
 
