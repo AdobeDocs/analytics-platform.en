@@ -337,7 +337,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Adobe Analytics data {#aa-data}
     + [Use Marketing channel dimensions](../use-cases/aa-data/marketing-channels.md)
     + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
-    + [Emulating data feeds](data-feed)
+    + [Emulating data feeds](../use-cases/emulating-data-feeds.md)
   + Complex data {#complex-data}
     + [Use arrays of objects](../use-cases/object-arrays.md)
   + Derived fields {#derived-fields}
