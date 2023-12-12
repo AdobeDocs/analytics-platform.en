@@ -15,7 +15,7 @@ Adobe Analytics data feeds are a powerful way to get raw data out of Adobe Analy
 
 Make sure that you meet all the following requirements before using the functionality described in this use case:
 
-* A working inplementation that sends online and offline data into Experience Platform's data lake.
+* A working implementation that sends online and offline data into Experience Platform's data lake.
 * Access to Query Service, which is packaged as part of plaform-based applications or the Data Distiller add-on. See [Query Service packaging](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) for more information.
 * Access to Export datasets functionality, available to customers who have purchased the Real-Time CDP Prime or Ultimate package, Adobe Journey Optimizer, or Customer Journey Analytics. See [Export datasets to cloud storage destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en) for more information.
 * One or more destinations (for example: Amazon S3, Google Cloud Storage) configured to where you can export the raw data of your data feed.
@@ -39,11 +39,11 @@ You use the Query Service [user interface](https://experienceleague.adobe.com/do
 
 ### Create Query
 
-You can use all the functionality of standard ANSI SQL for SELECT statements and other limited commands to create and execute the queries you need to generate the data for your data feed. See [SQL syntax](https://experienceleague.adobe.com/docs/experience-platform/query/sql/syntax.html?lang=en) for more information. Beyond this SQL syntax, Adobe supports:
+You can use all the functionality of standard ANSI SQL for SELECT statements and other limited commands to create and execute the queries that generate the data for your data feed. See [SQL syntax](https://experienceleague.adobe.com/docs/experience-platform/query/sql/syntax.html?lang=en) for more information. Beyond this SQL syntax, Adobe supports:
 
 * prebuilt [Adobe-defined functions (ADF)](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) that help perform common business-related tasks on event data stored in Experience Platform data lake, including functions for [Sessionization](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing.html?lang=en) and [Attribution](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=en),
 * several built-in [Spark SQL functions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en),
-* a number of [metadata PostgreSQL commmands](https://experienceleague.adobe.com/docs/experience-platform/query/sql/metadata.html?lang=en),
+* [metadata PostgreSQL commands](https://experienceleague.adobe.com/docs/experience-platform/query/sql/metadata.html?lang=en),
 * [prepared statements](https://experienceleague.adobe.com/docs/experience-platform/query/sql/prepared-statements.html?lang=en).
 
 
@@ -51,9 +51,9 @@ You can use all the functionality of standard ANSI SQL for SELECT statements and
 
 Some examples of queries that collect data for your data feeds are listed below. These examples use `demo_system_event_dataset_for_website_global_v1_1` as the sample experience event dataset containing data collected from customers interacting with the website.
 
-+++Top 5 products
++++Top five products
 
-*What are the top 5 products viewed on the website?*
+*What are the top five products viewed on the website?*
 
 ```sql
 select productListItems.name, count(*)
@@ -82,7 +82,7 @@ group  by eventType;
 
 +++What do people do
 
-*What do people do on the site before reaching the "Cancel Service" page as the 3rd page in a session?*
+*What do people do on the site before reaching the "Cancel Service" page as the third page in a session?*
 
 This query uses the Adobe Defined Functions `SESS_TIMEOUT` and `NEXT`.
 
@@ -144,9 +144,9 @@ LIMIT 10;
 
 +++How much time
 
-*How much time do we have before a visitor calls the call center after visiting the "Cancel Service" Page?*
+*How much time do you have before a visitor calls the call center after visiting the "Cancel Service" Page?*
 
-To answer this kind of query you use the `TIME_BETWEEN_NEXT_MATCH()` Adobe Defined Function. Time-between previous or next match functions provide a new dimension, which measures the time that has elapsed since a particular incident.
+To answer this kind of query, you use the `TIME_BETWEEN_NEXT_MATCH()` Adobe Defined Function. Time-between previous or next match functions provide a new dimension, which measures the time that has elapsed since a particular incident.
 
 ```sql
 select * from (
@@ -202,7 +202,7 @@ limit 15;
 
 *What is the engagement across marketing channels for Italian focused web traffic?* 
 
-This examples uses the dataset created automatically by the Adobe Analytics source connector, for example `demo_data_sample_org_midvalues`.
+This example uses the dataset created automatically by the Adobe Analytics source connector, for example `demo_data_sample_org_midvalues`.
 
 ```sql
 select 
@@ -225,17 +225,20 @@ For even more (advanced) sample queries see [abandoned browse](https://experienc
 
 #### Identities
 
-In Experience Platform, a variety of identities are available. Ensure you are querying identities correctly. In the examples above, ECID is defined as part of a core object, which itself is part of an identification object, both added to the schema using an Experience Event Core field group (for example: `_sampleorg.identification.core.ecid`). The ECIDs might be organized differently in your schemas.
+In Experience Platform, various identities are available. Ensure you are querying identities correctly. In the examples above, ECID is defined as part of a core object, which itself is part of an identification object, both added to the schema using an Experience Event Core field group (for example: `_sampleorg.identification.core.ecid`). The ECIDs might be organized differently in your schemas.
 
 Alternatively you can use `identityMap` to query for identities. This object is of type `Map` and uses a [nested data structure](#nested-data-structure).
 
-For data ingested using the Adobe Analytics source connector, multiple identities might be available. The primary identifier is dependent on whether an ECID or AAID exists. See [Primary identifiers in Adobe Analytics data](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#how-the-analytics-source-treats-identities) and [AAID, ECID, AACUSTOMID and the Analytics source connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=en) for more information
+For data ingested using the Adobe Analytics source connector, multiple identities might be available. The primary identifier depends on whether an ECID or AAID exists. See [Primary identifiers in Adobe Analytics data](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#how-the-analytics-source-treats-identities) and [AAID, ECID, AACUSTOMID and the Analytics source connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=en) for more information
 
 #### Data feed columns
 
-The fields (columns) you can use in your query are dependent on the schema definition on which your datasets are based. You must understand the schema underlying the dataset. 
+The fields (columns) you can use in your query depend on the schema definition on which your datasets are based. Ensure you do understand the schema underlying the dataset. 
 
-In some of the examples above you queried for page name. In Adobe Analytics Data Feed's UI you would select **[!UICONTROL pagename]** as the column to add to your data feed definition. In Query Service you include `web.webPageDetails.name` from the `demo_system_event_dataset_for_website_global_v1_1` dataset (based on the **Demo System - Event Schema for Website (Gobal v1.1)** experience event schema) in your query. See the [Web Details schema field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) for more information.
+For example, in some of the [example queries](#examples) you queried for *page name*. 
+
+* In Adobe Analytics Data Feed's UI, you would select **[!UICONTROL pagename]** as the column to add to your data feed definition. 
+* In Query Service, you include `web.webPageDetails.name` from the `demo_system_event_dataset_for_website_global_v1_1` dataset (based on the **Demo System - Event Schema for Website (Gobal v1.1)** experience event schema) in your query. See the [Web Details schema field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) for more information.
 
 To understand the mapping between former Adobe Analytics data columns and XDM fields in your experience event dataset and underlying schema, see [Analytics fields mapping](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en) and the [Adobe Analytics ExperienceEvent Full Extension schema field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) for more information.
 
@@ -244,15 +247,15 @@ Furthermore, the information automatically collected by the Experience Platform 
 
 #### Lookups
 
-To lookup data from other datasets, you use standard SQL functionality (WHERE clause, INNER JOIN, OUTER JOIN, and others). See the [What is the outcome](#examples) query in the examples.
+To look up data from other datasets, you use standard SQL functionality (WHERE clause, INNER JOIN, OUTER JOIN, and others). See the [What is the outcome](#examples) query in the examples.
 
 #### Calculations
 
-To perform calculations on fields (colums), simply use the standard SQL functions (for example `COUNT(*)` in the [Product interaction funnel](#examples) query in the examples) or the[ math and statistical operators and functions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) part of Spark SQL. 
+To perform calculations on fields (columns), simply use the standard SQL functions (for example `COUNT(*)` in the [Product interaction funnel](#examples) query in the examples) or the [math and statistical operators and functions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) part of Spark SQL. 
 
 #### Nested data structure
 
-The schemas on which the datasets are based often contain complex data types including nested data structures. Aforementioned `identityMap` is an example of a nested data structure. See below for an example of `identityMap` data.
+The schemas on which the datasets are based often contain complex data types including nested data structures. Previously mentioned `identityMap` is an example of a nested data structure. See below for an example of `identityMap` data.
 
 ```json
 {
@@ -273,7 +276,9 @@ The schemas on which the datasets are based often contain complex data types inc
 }
 ```
 
-You can use the [`explode()` or other Arrays functions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#arrays) from Spark SQL to get to the data inside a nested data structure. For example:
+You can use the [`explode()` or other Arrays functions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#arrays) from Spark SQL to get to the data inside a nested data structure. 
+
+For example:
 
 ```sql
 select explode(identityMap) from demosys_cja_ee_v1_website_global_v1_1 limit 15;
@@ -289,16 +294,16 @@ See [Working with nested data structures in Query Service](https://experiencelea
 
 ### Schedule Query
 
-You schedule the query to ensure the query is executed and the results are generated at your preferred interval. When scheduling the query, you define an ouput dataset.
+You schedule the query to ensure that the query is executed and that the results are generated at your preferred interval. When scheduling the query, you define an output dataset.
 
 #### Using Query Editor
 
-You can schedule a query using the Query Editor. When defining a schedule for a query, you have the option to define the output dataset. See [Query schedules](https://experienceleague.adobe.com/docs/experience-platform/query/ui/query-schedules.html?lang=en) for more information.
+You can schedule a query using the Query Editor. When defining a schedule for a query, you can define the output dataset. See [Query schedules](https://experienceleague.adobe.com/docs/experience-platform/query/ui/query-schedules.html?lang=en) for more information.
 
 
 #### Using Query Service API
 
-Alternatively you can use the RESTful API to define a query and schedule for the query. See [Query Service API guide](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en_) for more information.
+Alternatively you can use the RESTful APIs to define a query and schedule for the query. See [Query Service API guide](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en_) for more information.
 Ensure you define the output dataset as part of the optional `ctasParameters` property when creating the query ([Create a query](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery)) or when creating the schedule for a query ([Create a scheduled query](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule)).
 
 
@@ -323,7 +328,7 @@ You can export and schedule the export of your output datasets through the Exper
 
 #### Select destination
 
-When you have determined to which cloud storage destination you want to export the output dataset, [select the destination](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en#select-destination). When you have not yet configured a destination for your preferred cloud storage, you need to [create a new destination connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html?lang=en). 
+When you have determined to which cloud storage destination you want to export the output dataset, [select the destination](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en#select-destination). When you have not yet configured a destination for your preferred cloud storage, you must [create a new destination connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html?lang=en). 
 
 As part of configuring a destination you can define the file type (JSON or Parquet), whether the resulting file should be compressed or not, and whether a manifest file should be included or not.
 
@@ -341,15 +346,15 @@ Finally, you want to schedule your dataset export as part of the **[!UICONTROL S
 
 [Review](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en#review) your selection and when correct start exporting your output dataset to the cloud storage destination.
 
-You must [verify](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en#verify) a successful data export. When exporting datasets, Experience Platform creates one or multiple .json or .parquet files in the storage location defined in your destination. Expect new files to be deposited in your storage location according to the export schedule you set up. Experience Platform creates a folder structure in the storage location you specified as part of the selected destination, where it deposits the exported files. A new folder is created for each export time, following the pattern: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. The default file name is randomly generated and ensures that exported file names are unique.
+You must [verify](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en#verify) a successful data export. When exporting datasets, Experience Platform creates one or multiple `.json` or `.parquet` files in the storage location defined in your destination. Expect new files to be deposited in your storage location according to the export schedule you set up. Experience Platform creates a folder structure in the storage location that you specified as part of the selected destination, where it deposits the exported files. A new folder is created for each export time, following the pattern: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. The default file name is randomly generated and ensures that exported file names are unique.
 
 ### Flow Service API
 
-Alternatively, you can export and schedule the export of output datasets using API's. The steps involved are documented in [Export datasets by using the Flow Service API](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html).
+Alternatively, you can export and schedule the export of output datasets using APIs. The steps involved are documented in [Export datasets by using the Flow Service API](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html).
 
 #### Get started
 
-You need to ensure you have the [required permissions](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#permissions) to export datasets and that the destination to where you want to send your output dataset supports exporting datasets. You then need to [gather the values for required and optional headers](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-values-headers) you use in the API calls, as well as [identify the connection spec and flow spec IDs of the destination](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-connection-spec-flow-spec) you are intending to export datasets to.
+Ensure you have the [required permissions](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#permissions) to export datasets and that the destination to where you want to send your output dataset supports exporting datasets. You then must [gather the values for required and optional headers](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-values-headers) you use in the API calls, as well as [identify the connection spec and flow spec IDs of the destination](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#gather-connection-spec-flow-spec) you are intending to export datasets to.
 
 #### Retrieve eligible datasets
 
@@ -358,27 +363,26 @@ You can [retrieve a list of eligible datasets](https://experienceleague.adobe.co
 
 #### Create source connection
 
-Next you need to [create a source connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#create-source-connection) for the output dataset, using its unique ID, that you want to export to the cloud storage destination. You use the [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Source-connections/operation/postSourceConnection) API.
+Next you must [create a source connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#create-source-connection) for the output dataset, using its unique ID, that you want to export to the cloud storage destination. You use the [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Source-connections/operation/postSourceConnection) API.
 
 #### Authenticate to destination (create base connection)
 
-You now need to [create a base connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#create-base-connection) to properly authenticate and securely store the credentials to your cloud storage destination using the [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API.
+You now must [create a base connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#create-base-connection) to properly authenticate and securely store the credentials to your cloud storage destination using the [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API.
 
 
 #### Provide export parameters
 
-Next, you need to [create an additional target connection which stores the export parameters](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#create-target-connection) for your output dataset using, once more, the [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API.  These export parameters include location, file format, compression, and more.
+Next, you must [create an additional target connection which stores the export parameters](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#create-target-connection) for your output dataset using, once more, the [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API. These export parameters include location, file format, compression, and more.
 
 #### Set up dataflow
 
-Finally, you [set up the dataflow](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#create-dataflow) to ensure your output dataset is exported to your cloud storage destination using the [`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflows/operation/postFlow) API. In this step, you can define the schedule for the export, using the `scheduleParams` parameter.
+Finally, you [set up the dataflow](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#create-dataflow) to ensure that your output dataset is exported to your cloud storage destination using the [`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflows/operation/postFlow) API. In this step, you can define the schedule for the export, using the `scheduleParams` parameter.
 
 #### Validate dataflow
 
 To [check successful executions of your dataflow](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/export-datasets.html#get-dataflow-runs), use the [`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflow-runs/operation/getFlowRuns) API, specifying the dataflow ID as query parameter. This dataflow ID is an identifier returned when you set up the dataflow.
 
-You must [verify](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en#verify) a successful data export. When exporting datasets, Experience Platform creates one or multiple .json or .parquet files in the storage location defined in your destination. Expect new files to be deposited in your storage location according to the export schedule you set up. Experience Platform creates a folder structure in the storage location you specified as part of the selected destination, where it deposits the exported files. A new folder is created for each export time, following the pattern: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. The default file name is randomly generated and ensures that exported file names are unique.
-
+[Verify](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en#verify) a successful data export. When exporting datasets, Experience Platform creates one or multiple `.json` or `.parquet` files in the storage location defined in your destination. Expect new files to be deposited in your storage location according to the export schedule you set up. Experience Platform creates a folder structure in the storage location that you specified as part of the selected destination, where it deposits the exported files. A new folder is created for each export time, following the pattern: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. The default file name is randomly generated and ensures that exported file names are unique.
 
 ## Conclusion
 
@@ -386,7 +390,7 @@ In short, emulating the Adobe Analytics Data Feed functionality implies setting 
 
 >[!IMPORTANT]
 >
->As two schedulers are involved in this use case, you must ensure these schedules do not interfere to ensure a proper working of the emulated data feed functionality.
+>Two schedulers are involved in this use case. To guarantee a proper working of the emulated data feed functionality, ensure that the schedules configured in Query Service and Data exports do not interfere.
 
 
 
