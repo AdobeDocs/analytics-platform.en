@@ -392,8 +392,3 @@ In short, emulating the Adobe Analytics Data Feed functionality implies setting 
 >
 >Two schedulers are involved in this use case. To guarantee a proper working of the emulated data feed functionality, ensure that the schedules configured in Query Service and Data exports do not interfere.
 
-
-
-
-
-
