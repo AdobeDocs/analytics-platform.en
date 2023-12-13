@@ -91,7 +91,7 @@ Based on the implementation, hit level data traditionally collected in Adobe Ana
 | cust_visid | identityMap | object | The customer visitor I.D |
 | cust_visid | endUserIDs._experience.aacustomid.id | object | The customer visitor ID. |
 | cust_visid | endUserIDs._experience.aacustomid.primary | boolean | The customer visitor ID namespace code. |
-| cust_visid | endUserIDs._experience.aacustomid.namespace.code | Used in conjunction with visid_low to uniquely identify the customer visitor id. |
+| cust_visid | endUserIDs._experience.aacustomid.namespace.code | string | Used in conjunction with visid_low to uniquely identify the customer visitor id. |
 | geo\_* | placeContext.geo.* | string, number | Geolocation data, like country, regio, city, and others |
 | visit_page_num | _experience.analytics.session.depth | number | A variable used in the Hit Depth dimension. This value increases by 1 for each hit the user generates, and resets after each visit. |
 | event_list | commerce.purchases, commerce.productViews, commerce.productListOpens, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101to200.*, ..., \_experience.analytics.event901_1000.\* | string | Standard commerce and custom events triggered on the hit. |
