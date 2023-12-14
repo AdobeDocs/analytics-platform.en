@@ -21,13 +21,13 @@ For information about how to manage existing locations, including viewing, editi
 
 1. Select the [!UICONTROL **Locations**] tab, then select [!UICONTROL **Add location**]. 
    
-   ![add location button](assets/location-add.png)
+   ![Exports window with Location tab selected highlighting the Add location button](assets/location-add.png)
 
    Or
 
    Select the [!UICONTROL **Location accounts**] tab, select the 3-dot icon on an existing account where you want to add a location, then select [!UICONTROL **Add location**].
 
-   ![Add location to existing account](assets/add-location-existing-account.png)
+   ![GCP account and elipsis drop-down menu showing Add location selected](assets/add-location-existing-account.png)
 
    The Location dialog displays.
 

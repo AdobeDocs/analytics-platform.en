@@ -17,7 +17,7 @@ For scheduled exports, logs reflect the export settings as they were when the lo
 
 1. Select the [!UICONTROL **Logs**] tab.
 
-   ![Export logs tab](assets/export-logs-tab.png)
+   ![Export window showing the Logs tab](assets/export-logs-tab.png)
 
    Details for each log are displayed in the available columns. 
 
@@ -43,7 +43,7 @@ To find information you need, you can either filter the list of logs or search f
 
 1. Select the **Filter** icon.
 
-   ![Filter information](assets/export-log-filters.png)
+   ![Exports window showing the Filter list by Account type](assets/export-log-filters.png)
 
    You can filter by the following criteria:
 

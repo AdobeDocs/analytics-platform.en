@@ -13,7 +13,7 @@ Use the date range manager to share, rename, or delete date ranges. To reach the
 
 ## Interface
 
-![UI](../assets/date-range-ui.png)
+![Date Ranges with Example range highlighted.](../assets/date-range-ui.png)
 
 The date range manager includes the following options:
 

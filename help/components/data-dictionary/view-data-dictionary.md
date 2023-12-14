@@ -17,7 +17,7 @@ To view information about a component in the Data Dictionary:
 
    The Data Dictionary window displays.
 
-   ![data-dictionary.png](assets/data-dictionary.png)
+   ![Data Dictionary window showing Quick filters for Dimensions, Metrics, Segments, and Date ranges](assets/data-dictionary.png)
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 

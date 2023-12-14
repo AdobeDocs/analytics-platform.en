@@ -27,7 +27,7 @@ Keep this in mind:
 
 1. From the Visualizations drop-down list in the left rail, drag the [!UICONTROL Combo chart] visualization into a blank panel.
 
-   ![Build](assets/combo-chart-build.png)
+   ![Combo chart showing the X and Y axis and options field](assets/combo-chart-build.png)
 
 1. From the drop-down lists, select a dimension for the X-axis and a metric for the Y-axis.
 
@@ -35,9 +35,9 @@ Keep this in mind:
 
    | Line comparison type | Definition |
    | --- | --- |
-   | **[!UICONTROL Time comparison]** | The most common type of comparison - comparing this time period to 4 weeks ago, for example. If you selected [!UICONTROL Time comparison], make a secondary selection as to which time period you want to compare.<p>![Time period](assets/combo-time-period.png) |
-   | **[!UICONTROL Function]** | You could introduce a function like [!UICONTROL Average] into the comparison. See a list of supported functions below.<p>![Functions](assets/combo-functions.png) |
-   | **[!UICONTROL Secondary metric]** | You could, for example, compare [!UICONTROL Revenue] to another metric.<p>![Two metrics](assets/combo-2metrics.png) |
+   | **[!UICONTROL Time comparison]** | The most common type of comparison - comparing this time period to 4 weeks ago, for example. If you selected [!UICONTROL Time comparison], make a secondary selection as to which time period you want to compare.<p>![LIne comparison with Time period selected and the secondary selection field for Time period.](assets/combo-time-period.png) |
+   | **[!UICONTROL Function]** | You could introduce a function like [!UICONTROL Average] into the comparison. See a list of supported functions below.<p>![LIne comparison drop-down menu showing Functions selected and a list of available supported functions.](assets/combo-functions.png) |
+   | **[!UICONTROL Secondary metric]** | You could, for example, compare [!UICONTROL Revenue] to another metric.<p>![A Combo chart comparing two metrics.](assets/combo-2metrics.png) |
 
    {style="table-layout:auto"}
 
@@ -45,7 +45,7 @@ Keep this in mind:
 
    The output will look similar to this:
 
-   ![Output](assets/combo-output.png)
+   ![A Combo chart showing the current period in a bar chart and comparison period in the line chart ](assets/combo-output.png)
 
    The current period is shown in the bar chart, and the comparison period is represented by the line chart. The dots on the line chart are known as "bar bells".
 
@@ -67,17 +67,17 @@ If you choose **[!UICONTROL Function]** as the [!UICONTROL Line comparison type]
 
 Here is an example of the cumulative average of the Revenue metric:
 
-![Cumulative average](assets/combo-cumul-avg.png)
+![A Combo chart showing the cumulative average](assets/combo-cumul-avg.png)
 
 Here is an example of a combo chart with both Cumulative average and Mean functions:
 
-![Two functions](assets/combo-two-functions.png)
+![A Combo chart showing both cumulative avrage and mean functions.](assets/combo-two-functions.png)
 
 ## Combo chart settings
 
 Click the gear icon on the top right of a combo chart to change its settings.
 
-![Settings](assets/combo-settings.png)
+![Combo chart Settings view showing the options described below.](assets/combo-settings.png)
 
 | Setting | Definition |
 | --- | --- |

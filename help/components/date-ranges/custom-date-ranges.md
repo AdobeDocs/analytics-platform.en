@@ -17,15 +17,15 @@ A date range applies at the panel level. To add a date range to your project, cl
 
 The following custom date range shows a date range for "two months ago," with a Summary Change visualization showing directional change.
 
-![](assets/date-range-two-months-ago.png)
+![Date Range Builder showing Use Rolling Dates for two month ago](assets/date-range-two-months-ago.png)
 
 The custom date range is displayed at the top of the [!UICONTROL Date Range] component panel in your project:
 
-![](assets/date-range-panel-two-months-ago.png)
+![Date Range component panel with arrow pointing to Two Months Ago.](assets/date-range-panel-two-months-ago.png)
 
 You can drag this custom date range into a column alongside a custom, monthly rolling date range using the Last Month preset for a comparison. Add a Summary Change visualization and select the totals from each column to show directional change:
 
-![](assets/date-range-two-months-table.png)
+![Summary change showing and increase of 14.45%.](assets/date-range-two-months-table.png)
 
 ## Use a 7-day rolling date range
 
@@ -35,7 +35,7 @@ In the Date Range Builder, you can create a custom date range that displays in t
 
 For example, you can create a date range that specifies a 7-day rolling window that ends one week ago:
 
-![](assets/create_date_range.png)
+![Date Range Builder showing a date range that specifies a 7-day rollowing window.](assets/create_date_range.png)
 
 Use *`rolling daily`*.
 

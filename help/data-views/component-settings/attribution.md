@@ -7,9 +7,9 @@ feature: Data Views
 ---
 # Attribution component settings
 
-Attribution gives you the ability to customize how dimension items get credit for success events. 
+Attribution lets you customize how dimension items get credit for success events. 
 
-![](../assets/attribution-settings.png)
+![Data views window highlighting the Set attribution option](../assets/attribution-settings.png)
 
 For example:
 
@@ -40,7 +40,7 @@ To update a component's default attribution model:
 
 1. Select the component, then expand the Attribution section on the right side of the screen.
 
-   ![](../assets/attribution-settings.png)
+   ![Data views window highlighting the Set attribution option](../assets/attribution-settings.png)
 
 1. Select [!UICONTROL **Set attribution**], then select the attribution model in the [!UICONTROL **Attribution Model**] drop-down menu.
 

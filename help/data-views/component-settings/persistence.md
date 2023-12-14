@@ -10,7 +10,7 @@ feature: Data Views
 
 [!UICONTROL Persistence] is the ability for a given dimension value to relate to a metric beyond the event it is set on. It uses a combination of allocation and expiration.
 
-![Persistence](../assets/persistence.png)
+![Data views window highlighting the Persistence options](../assets/persistence.png)
 
 * **Allocation** lets you determine which value is kept when more than one dimension item can persist at a time in a single column.
 

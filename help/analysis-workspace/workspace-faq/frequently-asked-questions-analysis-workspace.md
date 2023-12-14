@@ -1,5 +1,5 @@
 ---
-description: System requirements for Analysis Workspace.
+description: Learn about the system requirements for Analysis Workspace.
 keywords: Analysis Workspace
 title: Administration requirements
 feature: FAQ

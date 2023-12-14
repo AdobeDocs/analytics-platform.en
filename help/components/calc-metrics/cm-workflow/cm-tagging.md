@@ -25,7 +25,7 @@ All users can create tags for calculated metrics and apply one or more tags to a
 
 1. In the Calculated metrics manager, select the checkbox next to any metrics that you want to tag.
 
-   ![](assets/cm_add_tags.png)
+   ![Tag Calculated metric list with Mobile marketing selected.](assets/cm_add_tags.png)
 
 1. In the [!UICONTROL **Tag Calculated metric**] dialog box: 
 

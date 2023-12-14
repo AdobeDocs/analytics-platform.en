@@ -15,7 +15,7 @@ Break down your data in unlimited ways for your specific needs; build queries us
 1. [Create a project](/help/analysis-workspace/home.md) with a data table.
 1. In the data table, right-click a line item and select **[!UICONTROL Breakdown]** > *`<item>`*.
 
-   ![Step Result](assets/fa_data_table_actions.png)
+   ![Step Result showing Create alert from selection selected.](assets/fa_data_table_actions.png)
 
    You can break down metrics by dimension items or audience filters across selected time periods. You can also drill down further to a more granular level.
 
@@ -35,7 +35,7 @@ Break down your data in unlimited ways for your specific needs; build queries us
 
 Any breakdown within a table can also have any attribution model applied to it. This attribution model can be the same or different from the parent column. For example, you can analyze linear Orders on your Marketing Channels dimension but apply U-Shaped Orders to the specific tracking codes within a Channel. To edit the attribution model applied to a breakdown, hover over the breakdown model and click **[!UICONTROL Edit]**:
 
-![Breakdown settings](assets/breakdown_settings.png)
+![Order Attribution Comparison showing the Breakdown settings](assets/breakdown_settings.png)
 
 This is the expected behavior when applying attribution models to breakdowns or editing them:
 

@@ -49,13 +49,13 @@ To launch and evaluate a prototype:
 
 1. Click **[!UICONTROL Give Feedback]** to provide feedback in the message box at any point when working with the prototype.
 
-   ![feedback_box](assets/give_feedback.png)
+   ![Feedback window](assets/give_feedback.png)
 
 1. Click **[!UICONTROL Submit]** to send your feedback.
 
 1. To try a different prototype, or to exit the prototype environment, click **[!UICONTROL Leave Prototype]** in the upper right of the screen and complete the short survey for the prototype. Any changes made to a prototype project are lost upon exiting the prototype environment.
 
-   ![new feedback box](assets/short-survey.png)
+   ![Intelligent Pathing Feedback window](assets/short-survey.png)
 
 1. Click **[!UICONTROL Submit]** to return to the main Previews portal.
 

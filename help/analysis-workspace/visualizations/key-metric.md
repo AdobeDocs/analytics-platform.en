@@ -31,7 +31,7 @@ This visualization addresses a variety of common use cases, including:
 
 1. Configure the visualization by selecting a metric, a primary date range, and a comparison date range and a filter (if desired):
 
-   ![key metric configuration](assets/key-metric-config.png)
+   ![Key metric configuration showing the options for metirc, primary date range, comparison date range, and segment.](assets/key-metric-config.png)
 
    | Configuration setting | Definition |
    | --- | --- |
@@ -73,7 +73,7 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 ## View the output
 
-![](assets/key-metric-output.png)
+![Key metric output showing the metic, summary change, summary number, and line graphs.](assets/key-metric-output.png)
 
 Please note:
 
@@ -83,13 +83,13 @@ Please note:
 
 * From here, you can hover over the line graphs to see the statistics for individual days:
 
-![statistics](assets/key-metric-output2.png)
+![Visit statistics](assets/key-metric-output2.png)
 
 ## Visualization settings
 
 The Key metric summary offers multiple flexible settings to enable better reporting and communication of important metrics. Settings can be accessed through the gear icon in the top right-hand corner of the visualization.  
 
-![](assets/key-metric-settings.png)
+![Key metric summary settings showing Summary display type, general, and display options.](assets/key-metric-settings.png)
 
 | Setting | Description |
 | --- | --- |
@@ -110,7 +110,7 @@ After building the visualization, you can still edit the original configuration.
 
 1. Click the pencil icon in the top right corner of the visualization (next to the settings gear icon).
 
-   ![edit](assets/edit-icon.png)
+   ![Visualization edit icon.s](assets/edit-icon.png)
 
    You are now taken back to the original configuration view. 
 

@@ -10,7 +10,7 @@ The Calculated metric page offers many ways of curating metrics, such as sharing
 
 The Calculated metric manager shows you all the filters you own and that have been shared with you. Admin-level users can see all custom metrics in the organization. This overview presents the user interface and the capabilities of the Calculated metric manager.
 
-![](assets/calc-metric-manager.png)
+![Calculated metrics window showing available filters.](assets/calc-metric-manager.png)
 
 ## Access the Calculated metrics manager
 

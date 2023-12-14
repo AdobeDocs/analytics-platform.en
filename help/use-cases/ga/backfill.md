@@ -75,7 +75,7 @@ In Google Cloud Platform, navigate to **Export > Export to GCS**. Once the data 
 
 You can map the GA event data into an existing dataset that you created previously, or create a dataset, using whichever XDM schema you choose. Once you have selected the schema, the Experience Platform applies machine learning to automatically pre-map each of the fields in the Google Analytics data to your [XDM schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui).
 
-![Schema map](../assets/schema-map.png)
+![Schema map highlighting the GA data fields and the Target schema mappings](../assets/schema-map.png)
 
 Once you are finished mapping the fields into your XDM schema, you can schedule this import on a recurring basis and apply error validation during the ingestion process. This validation ensures that there aren't any issues with the data you have imported.
 

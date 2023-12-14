@@ -17,13 +17,13 @@ To share a calculated metric:
 
 1. In the Calculated metrics manager, mark the checkbox next to the metric you want to share.
 
-   ![](assets/cm_task_bar.png)
+   ![Calculated metrics manager showing the available icons across the top of the window including Hide Filters, Tag, Share, Delete, and Copy.](assets/cm_task_bar.png)
 
 1. Select the **[!UICONTROL Share]** icon. ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 
    The Share Calculated metric dialog box displays.
 
-   ![](assets/cm_share.png)
+   ![Share Calculated metric window with All selected for the Organization.](assets/cm_share.png)
 
 1. Select **[!UICONTROL Share]**.
 

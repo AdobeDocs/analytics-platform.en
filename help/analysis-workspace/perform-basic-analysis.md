@@ -17,6 +17,6 @@ Here is a sample of basic visualizations in Workspace. For example, you can
 
 * Depict audience size by data sources, such as ad impression data, Customer Journey Analytics data, email data, POS data, call center data, and survey data.
 
- ![](assets/cja-basic-analysis.png)
+ ![Example visualizations of basic analysis charts. ](assets/cja-basic-analysis.png)
 
- ![](assets/cja-basic-analysis2.png)
+ ![More examples of visualizations of basic analysis charts](assets/cja-basic-analysis2.png)

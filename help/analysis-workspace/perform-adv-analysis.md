@@ -9,6 +9,6 @@ solution: Customer Journey Analytics
 
 Advanced analysis leverages features like [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) diagrams, [Attribution](/help/analysis-workspace/c-panels/attribution.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) diagrams, and [dimension breakdowns](/help/components/dimensions/t-breakdown-fa.md).
 
- ![Workspace screenshot 1](assets/cja-adv-analysis1.png)
+ ![Advanced Analysis shown in a flow diagram.](assets/cja-adv-analysis1.png)
 
- ![Workspace screenshot 2](assets/cja-adv-analysis2.png)
+ ![Multiple visualization examples, such as donudt, venn, and stacked bar chart.](assets/cja-adv-analysis2.png)

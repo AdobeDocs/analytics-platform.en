@@ -26,7 +26,7 @@ However, Admins can give the [!UICONTROL Annotation Creation] permission (Analyt
 
 1. Fill in the [!UICONTROL Annotation builder] elements.
 
-   ![](assets/ann-builder.png)
+   ![Annotation details window showing fields and options described in the next section.](assets/ann-builder.png)
 
    | Element | Description |
    | --- | --- |

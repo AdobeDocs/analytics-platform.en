@@ -14,7 +14,7 @@ To specify the metric type when building a calculated metric:
 
 1. Select the gear icon next to the metric whose type you want to select.
 
-   ![](assets/cm_type_alloc.png) 
+   ![Gear icon with popup showing Metric type equal to Standard.](assets/cm_type_alloc.png) 
 
 1. Choose from the following options:
 

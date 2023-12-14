@@ -49,7 +49,7 @@ To find information you need, you can either filter the list of locations or sea
 
 1. Select the [!UICONTROL **Locations**] tab, then select the location you want to edit.
 
-   ![Edit locations](assets/locations-edit.png)
+   ![Exports window showing Locations tab and list of locations.](assets/locations-edit.png)
 
 1. Select [!UICONTROL **Edit**].
 
@@ -65,7 +65,7 @@ To delete a location:
 
 1. Select the [!UICONTROL **Locations**] tab, then select one or more locations that you want to delete.
 
-   ![Edit locations](assets/locations-edit.png)
+   ![Exports window showing Locations tab and list of locations](assets/locations-edit.png)
 
 1. Select [!UICONTROL **Delete**].
 
@@ -83,7 +83,7 @@ To delete a location:
 
 1. Select the [!UICONTROL **Location accounts**] tab.
 
-   ![Accounts page](assets/account-add.png)
+   ![Exports window showing Location accounts tab](assets/account-add.png)
 
 1. Select [!UICONTROL **View details**] on the account that you want to edit.
 
@@ -99,7 +99,7 @@ To view keys associated with an export account:
 
 1. Select the [!UICONTROL **Location accounts**] tab.
 
-   ![Accounts page](assets/account-add.png)
+   ![Exports window showing Location accounts tab](assets/account-add.png)
 
 1. Select the 3-dot icon on the account that you want to edit, then select [!UICONTROL **Account keys**]. 
 
@@ -109,7 +109,7 @@ To view keys associated with an export account:
 
 1. Select the [!UICONTROL **Location accounts**] tab.
 
-   ![Accounts page](assets/account-add.png)
+   ![Exports window showing Location accounts tab](assets/account-add.png)
 
 1. Select the 3-dot icon on the account that you want to edit, then select [!UICONTROL **Delete account**]. 
 

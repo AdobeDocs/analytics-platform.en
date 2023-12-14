@@ -47,29 +47,29 @@ To create an Adobe Analytics source connector:
 
 3. Select **[!UICONTROL Set up]** or **[!UICONTROL Add data]** in the Adobe Analytics tile.
 
-    ![Sources](./assets/sources-overview.png)
+    ![Adobe Experience Platform window with Sources selected along with Adobe applications and Add data highlighted.](./assets/sources-overview.png)
 
 4. Select **[!UICONTROL Report suite]**. From the list of report suites, select the one you want to use. 
 
-    ![Report suites](./assets/report-suites.png)
+    ![Adobe Experience Platform window showing the Report suites list](./assets/report-suites.png)
 
     Select **[!UICONTROL Next]**.
 
 5. Select **[!UICONTROL Default schema]** as the [!UICONTROL Target schema]. Adobe Experience Platform  automatically creates the schema and the corresponding dataset to map all standard fields from the selected Adobe Analytics report suite.
 
-    ![Default schema](./assets/default-schema.png)
+    ![Adobe Experience Platform window with the Default schema selected](./assets/default-schema.png)
 
     Select **[!UICONTROL Next]**.
 
 6. Name the data flow and (optionally) provide a description.
 
-    ![Dataflow details](./assets/dataflow-detail.png)
+    ![Adobe Experience Platform window highlighting the Dataflow detail section](./assets/dataflow-detail.png)
 
     Select **[!UICONTROL Next]**.
 
 7. Review the connection and select **[!UICONTROL Finish]**.
 
-    ![Review](./assets/review.png)
+    ![Adobe Experience Platform window highlighting the Connect and Data type sections for review](./assets/review.png)
 
 
 Once the connection is created, the dataflow is automatically created to populate a dataset with the Adobe Analytics data from your report suite. The dataflow ingests up to 13 months of historical data for production sandboxes. The backfill in non-production sandboxes is limited to three months.
@@ -105,7 +105,7 @@ To create your connection:
     
     - Select the dataset automatically created by the Adobe Analytics source connector and any other dataset that you want to include in your connection.
 
-        ![Add datasets](./assets/cja-connections-2a.png)
+        ![Add datasets window](./assets/cja-connections-2a.png)
 
     - Select **[!UICONTROL Next]**.
 

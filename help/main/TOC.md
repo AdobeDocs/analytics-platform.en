@@ -161,12 +161,10 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Download](../analysis-workspace/export/download-send.md)
     + [Send to others](../analysis-workspace/export/t-schedule-report.md)
     + [Export to the cloud](../analysis-workspace/export/export-cloud.md)
-  + Virtual Analyst {#virtual-analyst}
-    + [Virtual Analyst overview](../analysis-workspace/virtual-analyst/overview.md)
-    + Anomaly Detection {#anomaly-detection}
-      + [Anomaly Detection overview](../analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
-      + [View anomalies in Analysis Workspace](../analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
-      + [Statistical techniques used in anomaly detection](../analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
+  + Anomaly Detection {#anomaly-detection}
+    + [Anomaly Detection overview](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
+    + [View anomalies in Analysis Workspace](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
+    + [Statistical techniques used in anomaly detection](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
   + [User preferences](../analysis-workspace/user-preferences.md)
   + Workspace FAQs {#workspace-faq}
     + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)
@@ -339,6 +337,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Adobe Analytics data {#aa-data}
     + [Use Marketing channel dimensions](../use-cases/aa-data/marketing-channels.md)
     + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
+    + [Emulating data feeds](../use-cases/emulating-data-feeds.md)
   + Complex data {#complex-data}
     + [Use arrays of objects](../use-cases/object-arrays.md)
   + Derived fields {#derived-fields}
@@ -346,6 +345,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 
 + Administration {#cja-admin}
+  + [Guardrails](../admin/guardrails.md)
   + [Access Control](../admin/cja-access-control.md)
   + [View and manage usage](../admin/estimate-usage.md)
   + [Deletion implications](../admin/cja-deletion.md)

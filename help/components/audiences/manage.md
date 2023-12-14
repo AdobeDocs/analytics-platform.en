@@ -1,12 +1,12 @@
 ---
-title: Manage audiences created in Customer Journey Analytics
+title: Learn how to manage audiences created in Customer Journey Analytics
 description: Learn how to manage audiences in Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 ---
 # Manage audiences created in Customer Journey Analytics
 
-Managing previously created audiences lets you
+Managing previously created audiences lets you:
 
 * **Schedule or de-schedule** automatic audience refresh/update. The maximum expiration on the schedule is 1 year. 
 * **Renew an audience refresh schedule** when it is about to expire. Expiring audiences are treated similarly to expiring scheduled reports - the admin gets an email a month before the schedule expires.
@@ -16,7 +16,7 @@ Managing previously created audiences lets you
 
 ## Management UI
 
-![](assets/manage.png)
+![Audiences window pane showing multiple filters.](assets/manage.png)
 
 | UI setting | Definition |
 | --- | --- |
