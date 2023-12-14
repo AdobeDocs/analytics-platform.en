@@ -344,6 +344,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 
 + Administration {#cja-admin}
+  + [Guardrails](../admin/guardrails.md)
   + [Access Control](../admin/cja-access-control.md)
   + [View and manage usage](../admin/estimate-usage.md)
   + [Deletion implications](../admin/cja-deletion.md)
