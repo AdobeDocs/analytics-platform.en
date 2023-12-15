@@ -4,8 +4,6 @@ description: Learn about the guardrails, static limits, Performance guardrail s,
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-hide: yes
-hidefromtoc: yes
 ---
 
 # Customer Journey Analytics Guardrails
