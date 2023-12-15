@@ -98,9 +98,9 @@ See also Experience Platform [Real-time Customer Data Platform guardrails](https
 | Data views | 50 | System-enforced guardail  | Maximum number of data views for a connection |
 | Datasets | 100 | System-enforced guardail  | Maximum number of [datasets](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) per connection. |
 | Connections | 1000 | System-enforced guardail  | Maximum number of [connections](../connections/overview.md) for an organization. |
-| Connection Title | 500 | Maximum number of characters for a connection title. |
-| Metrics | 5,000 | System-enforced guardail  | Maximum number of metrics in a data view |
-| Dimensions | 5,000 | System-enforced guardail  | Maximum number of dimensions in a data view | |
+| Connection Title | 500 | System-enforced guardail |Maximum number of characters for a connection title. |
+| Metrics | 5,000 | System-enforced guardail  | Maximum number of metrics in a data view. |
+| Dimensions | 5,000 | System-enforced guardail  | Maximum number of dimensions in a data view. | |
 | Annotation Title | 100 | System-enforced guardail  | Maximum number of characters for an annotation title. |
 | Annotation Description | 250 | System-enforced guardail  | Maximum number of characters for an annotation description. | | 
 | Schema fields | 10 | System-enforced guardail  | Maximum number of schema fields (not including standard fields) when defining rules for a [derived field](../data-views/derived-fields/derived-fields.md). |
@@ -210,7 +210,7 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 | Data ingestion into Customer Journey Analytics from Data Lake | < 90 minutes |
 | Adobe Analytics source connector backfill of less than 10 billion event (maximum of 13 months of historical data) | < 4 weeks |
 | Audience publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | ≈ 60 minutes |
-| Refresh frequency for audiences | One-time refresh: latency of less than 5 minutes.<br/>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate) |
+| Refresh frequency for audiences | One-time refresh: latency of less than 5 minutes.<br/>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate). |
 
 {style="table-layout:auto"}
 

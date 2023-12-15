@@ -59,6 +59,8 @@ Both unauthenticated and authenticated events on new devices are counted as sepa
 
 Attribution works when the identifying custom variable ties to a device. In the example above, all events except events 1, 8, 9 and 10 are live stitched (they all use the `Bob` identifier). Live stitching 'resolves' the stitched ID for event 4, 6 and 12.
 
+Delayed data (data with a timestamp over 24 hours old) is handled on a 'best effort' basis, while proritizing the stitching of current data for the highest quality.
+
 ## Step 2: Replay stitching
 
 At regular intervals (once a week or once a day, depending on the chosen lookback window), replay stitching recalculates historical data based on devices it now recognizes. If a device initially sends data while not authenticated and then logs in, replay stitching ties those unauthenticated events to the correct person. The following table represents the same data as above, but shows different numbers based on replaying the data.
