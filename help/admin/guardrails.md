@@ -1,6 +1,6 @@
 ---
 title: Customer Journey Analytics Guardrails
-description: Learn about the guardrails, static limits, Performance guardrail s, scoping parameters and entitlements for Customer Journey Analytics
+description: Learn about the guardrails for Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
