@@ -58,9 +58,9 @@ Cross-channel analysis is a use case specific to Customer Journey Analytics that
 
 +++
 
-+++**How does Stitching handle GDPR and CCPA requests?**
++++**How does Stitching handle privacy requests?**
 
-Adobe handles GDPR and CCPA requests in accordance with local and international laws. Adobe offers the [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) to submit data access and deletion requests. The requests apply to both the original and rekeyed datasets.
+Adobe handles privacy requests in accordance with local and international laws. Adobe offers the [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) to submit data access and deletion requests. The requests apply to both the original and rekeyed datasets.
 
 +++
 
