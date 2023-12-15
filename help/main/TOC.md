@@ -360,6 +360,9 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Consistency of metrics and audience membership counts between Real-time CDP and Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
   + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
 
++ Tech notes {#technotes}
+  + [Customer Journey Analytics data centers](../technotes/cja-datacenters.md)
+
 + [Customer Journey Analytics glossary](../getting-started/cja-glossary.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
