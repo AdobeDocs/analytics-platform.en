@@ -19,8 +19,6 @@ You can determine how a given metric is displayed by adjusting its format settin
 
 1. Select the [!UICONTROL **Components**] tab.
 
-   ![Components tab](../assets/format-settings-component-tab.png)
-
 1. Select the component that you want to configure, then expand the [!UICONTROL **Format**] section on the right side of the page.
 
    ![Format settings](../assets/format-settings.png)
