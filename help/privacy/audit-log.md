@@ -24,7 +24,7 @@ In Customer Journey Analytics, navigate to **[!UICONTROL Tools]** > **[!UICONTRO
 
 The audit log for today and yesterday are shown by default.
 
-![Audit log highlighting today (October 14, 2022) and yesterday (October 13, 2022). ](assets/audit_ui.png)
+![Audit log highlighting today and yesterday. ](assets/audit_ui.png)
 
 You can select which columns are visible by going to the column selector at the top right.
 
