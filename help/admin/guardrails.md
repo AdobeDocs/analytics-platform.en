@@ -185,7 +185,7 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 
 | Name |  Value | Limit Type | Description | 
 |---|--:|---|---|
-| Rows per report |  3 million - 150 million | System-enforced guardrail  | Maximum number of reporting rows per report; value based on the licensed package. |
+| Rows per report |  3 million - 300 million | System-enforced guardrail  | Maximum number of reporting rows per report; value based on the licensed package. |
 | Breakdowns per table |  5 | System-enforced guardrail  | Maximum number of breakdowns per table. |
 | Metrics per table |  5 | System-enforced guardrail  | Maximum number of metrics per table. |
 | Schedule frequency |  1 | System-enforced guardrail  | Exports can be scheduled once (1) a day or on a longer schedule (for example: once every 2 days, or weekly). |
