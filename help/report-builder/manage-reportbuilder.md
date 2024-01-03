@@ -1,7 +1,7 @@
 ---
 title: How to manage data blocks using Report Builder in Customer Journey Analytics
 description: Describes how to use the manage feature in Report Builder
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics

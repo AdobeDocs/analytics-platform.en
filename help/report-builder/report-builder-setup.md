@@ -1,7 +1,7 @@
 ---
 title: How to set up Report Builder in Customer Journey Analytics
 description: Describes how to set up Report Builder in Customer Journey Analytics
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 ---
 # Report Builder Set Up
 
-You can quickly access Report Builder using the Excel Add-in menu.
+You can quickly access Report Builder using the Excel Add-in menu.
 
 ## Requirements
 

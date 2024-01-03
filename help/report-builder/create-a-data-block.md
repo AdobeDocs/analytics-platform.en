@@ -1,7 +1,7 @@
 ---
 title: How to create a data block using Report Builder in Customer Journey Analytics
 description: Describes how to create a data block.
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa

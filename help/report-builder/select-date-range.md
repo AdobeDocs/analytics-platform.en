@@ -1,7 +1,7 @@
 ---
 title: How to select a data range in Report Builder in Customer Journey Analytics
 description: Describes how to use the calendar, rolling dates, and custom expressions in Report Builder for Customer Journey Analytics
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
@@ -151,7 +151,7 @@ The following table lists date expression examples.
 | tm-1d           | Last day of previous month           |
 | td-52w          | Same day, 52 weeks ago               |
 | tm-11m-1d       | Last day of the same month last year |
-| “2020-09-06”    | Sept 9th, 2020                       |
+| "2020-09-06"    | Sept 9th, 2020                       |
 
 ## Date range from cell
 
