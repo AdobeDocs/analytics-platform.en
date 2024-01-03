@@ -3,6 +3,7 @@ description: Time parting takes the timestamp of collected events and breaks it 
 title: Time-parting dimensions
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
+role: User
 ---
 # Time-parting dimensions in Analysis Workspace
 

@@ -3,6 +3,7 @@ description: Learn how to adjust the view density in Analysis Workspace.
 title: View Density
 feature: Workspace Basics
 exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
+role: User
 ---
 # View Density
 

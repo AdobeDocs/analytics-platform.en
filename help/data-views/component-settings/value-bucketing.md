@@ -4,6 +4,7 @@ description: Combine numeric values in a dimension.
 exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
+role: Admin
 ---
 # [!UICONTROL Value Bucketing] component settings
 

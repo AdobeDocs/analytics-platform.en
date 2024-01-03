@@ -4,6 +4,7 @@ description: View core settings for a data view component.
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
+role: Admin
 ---
 # Component settings
 

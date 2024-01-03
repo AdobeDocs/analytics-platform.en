@@ -4,6 +4,7 @@ description: Learn how to bring Marketo Engage data into Customer Journey Analyt
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
+role: Admin
 ---
 # Ingest Marketo Engage data into Adobe Experience Platform and report in Customer Journey Analytics
 

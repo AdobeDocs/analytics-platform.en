@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: Visualizations overview
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
+role: User
 ---
 # Visualizations overview
 

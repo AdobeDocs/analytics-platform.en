@@ -4,6 +4,7 @@ description: Learn how to create a dataset that links call center and website da
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
+role: User
 ---
 # Import call center and web data
 
@@ -38,7 +39,7 @@ When importing data into Platform, following these tips can help increase insigh
 Customer Journey Analytics requires a common identifier to generate a [combined dataset](/help/connections/combined-dataset.md).
 
 * If your datasets already have a common identifier on every event across both datasets, you can skip this step and proceed to create a connection.
-* If either of your datasets have a common identifier on only some events, you can stitch data together using Cross-Channel Analytics. See [Cross-Channel Analytics overview](/help/cca/overview.md) for steps to enable CCA for these two datasets.
+* If either of your datasets have a common identifier on only some events, you can stitch data together using [Stitching](/help/stitching/overview.md) for steps to enable cross-channel analysis for these two datasets.
 
 ## Create a connection in Customer Journey Analytics
 

@@ -4,6 +4,7 @@ description: Learn how Customer Journey Analytics reports on data hierarchies.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
+role: Admin
 ---
 # Use arrays of objects
 
@@ -59,7 +60,7 @@ The following event is a JSON object that represents a purchase a customer made 
 
 When creating a data view, the following dimensions and metric are available (based on schema):
 
-*   **Dimensions:**
+* **Dimensions:**
     * ID
     * product : SKU
     * product : name
@@ -68,7 +69,7 @@ When creating a data view, the following dimensions and metric are available (ba
     * prodcut : warranty : length
     * product : warranty : name
     * product : warranty : type
-*   **Metrics:**
+* **Metrics:**
     * product : orders
     * product : units
     * product : revenue

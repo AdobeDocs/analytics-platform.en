@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: Cohort analysis use cases
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
+role: User
 ---
 # [!UICONTROL Cohort Analysis] use cases
 

@@ -5,6 +5,7 @@ title: Send Customer Journey Analytics data to others by email
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
+role: User
 ---
 # Send Customer Journey Analytics data to others through email
 

@@ -3,6 +3,7 @@ title: Create Filters
 description: Understand the filter creation user interface.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters
+role: User
 ---
 # Create filters
 

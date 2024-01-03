@@ -4,6 +4,7 @@ keywords: Analysis Workspace sharing
 title: Create shareable links
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
+role: User
 ---
 # Create shareable links
 

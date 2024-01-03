@@ -5,6 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
+role: Admin
 ---
 # Customer Journey Analytics Access Control
 
@@ -34,9 +35,9 @@ For more information on Experience Platform permissions, see [Access control in 
 
 A product profile is a set of permissions. Product Profile Admins can
 
-*   Create and manage individual product profiles, such as adding new users or managing user groups and their associated product profiles.
+* Create and manage individual product profiles, such as adding new users or managing user groups and their associated product profiles.
 
-*   In Customer Journey Analytics, edit data views that are part of a product profile that they manage. They cannot create new data views.
+* In Customer Journey Analytics, edit data views that are part of a product profile that they manage. They cannot create new data views.
 
 ## User-level access
 

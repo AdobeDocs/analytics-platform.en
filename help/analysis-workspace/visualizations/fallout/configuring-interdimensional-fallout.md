@@ -3,6 +3,7 @@ description: Fallout in Analysis Workspace lets you to mix and match dimensions 
 title: Inter-dimensional fallout
 feature: Visualizations
 exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
+role: User
 ---
 # Inter-dimensional fallout
 

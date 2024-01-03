@@ -4,6 +4,7 @@ description: You can set general and project preferences for users.
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
+role: User
 ---
 # User preferences
 

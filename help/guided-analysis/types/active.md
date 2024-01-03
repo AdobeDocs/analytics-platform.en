@@ -4,6 +4,7 @@ description: Identify who is new, retained, returning, or dormant.
 exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Guided Analysis
 keywords: product analytics
+role: User
 ---
 # [!UICONTROL Active] view
 

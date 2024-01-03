@@ -3,6 +3,7 @@ description: Factors that impact Customer Journey Analytics and Workspace perfor
 title: Optimize Customer Journey Analytics and Analysis Workspace performance
 feature: FAQ
 exl-id: ad00e476-6f19-462b-ba53-d72ddd949802
+role: Admin
 ---
 # Optimize Customer Journey Analytics and [!UICONTROL Analysis Workspace] performance
 

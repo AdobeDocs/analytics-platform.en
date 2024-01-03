@@ -3,6 +3,7 @@ description: Displays hierarchical (tree-structured) data as a set of nested rec
 title: Treemap
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
+role: User
 ---
 # Treemap
 

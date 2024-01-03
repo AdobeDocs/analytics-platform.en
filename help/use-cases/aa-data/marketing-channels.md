@@ -4,6 +4,7 @@ description: Use the Analytics source connector to bring Marketing Channel proce
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
+role: User
 ---
 # Use Marketing channel dimensions in Adobe Experience Platform
 

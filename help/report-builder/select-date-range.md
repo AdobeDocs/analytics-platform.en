@@ -40,19 +40,19 @@ When you use the **Calendar**, the date range field displays the current date ra
 
 To enter dates directly into the date range field
 
-1.  Click the date range field next to the calendar icon.
+1. Click the date range field next to the calendar icon.
 
-1.  Enter start and end dates for your date range.
+1. Enter start and end dates for your date range.
 
 ### Calendar
 
 To select dates using the calendar
 
-1.  Click the calendar icon to display a monthly calendar.
+1. Click the calendar icon to display a monthly calendar.
 
-1.  Click a start date.
+1. Click a start date.
 
-1.  Click an end date.
+1. Click an end date.
 
 To set a date range in reverse, click the end date first and then click the start date.
 
@@ -66,9 +66,9 @@ The preset drop-down menu includes a standard set of preset date ranges and date
 
 The rolling dates option allows you to select a date range using rolling dates.
 
-1.  Select **Use rolling dates**.
+1. Select **Use rolling dates**.
 
-1.  Select a rolling expression for your start and or end date.
+1. Select a rolling expression for your start and or end date.
 
     ![Report Builder date range pane showing Use rolling dates selected and the rolling expression.](./assets/image19.png)
 
@@ -78,15 +78,15 @@ The rolling dates option allows you to select a date range using rolling dates.
 
     **Fixed day** — Allows you to fix a start or end date while the other date is rolling.
 
-1.  Choose day, week, month, quarter, or year as the rolling period.
+1. Choose day, week, month, quarter, or year as the rolling period.
 
     ![Report Builder date range pane showing the current day selected.](./assets/image20.png)
 
-1.  Add or subtract days, weeks, months, quarters, or years from your rolling date.
+1. Add or subtract days, weeks, months, quarters, or years from your rolling date.
 
     ![Report Builder date range pane showing the current day plus 14 days selected.](./assets/image21.png)
 
-1.  Click Next to define the data range.
+1. Click Next to define the data range.
 
     Use the date preview to confirm the resulting date range is the desired range.
 
@@ -94,25 +94,25 @@ The rolling dates option allows you to select a date range using rolling dates.
 
 The custom expression option allows you to change the date range by building a custom expression or you can enter an arithmetic formula.
 
-1.  Select **Use rolling dates**.
+1. Select **Use rolling dates**.
 
-1.  Select **Use custom expression**.
+1. Select **Use custom expression**.
 
     When you select the **Use custom expression** option, the standard rolling date range controls are disabled.
 
     ![Select Use custom expression showing tm-1m to td-1d.](./assets/custom_expression.png)
 
-1.  Enter a custom expression.
+1. Enter a custom expression.
 
     For a sample list of custom expressions, see **Date expressions**.
 
-1.  Use the date preview to verify the resulting date range is the desired range.
+1. Use the date preview to verify the resulting date range is the desired range.
 
 #### Create a custom expression
 
-1.  Enter a **Date reference**.
+1. Enter a **Date reference**.
 
-1.  Add **Date operators** to move the date to the past or future.
+1. Add **Date operators** to move the date to the past or future.
 
 You can enter a custom date expression that includes multiple operators, such as ```tm-11m-1d```.
 
@@ -187,13 +187,13 @@ You can edit the date range of an existing data block by selecting Edit data blo
 
 To edit the date range from the QUICK EDIT panel
 
-1.  Select cells within one or more data blocks in a worksheet.
+1. Select cells within one or more data blocks in a worksheet.
 
-1.  Click the **Date range** link in the QUICK EDIT panel.
+1. Click the **Date range** link in the QUICK EDIT panel.
 
-1.  Select the date range using any of the date selection options.
+1. Select the date range using any of the date selection options.
 
-1.  Click **Apply**.
+1. Click **Apply**.
 
 
 Report Builder applies the new date range to all data blocks in the selection.

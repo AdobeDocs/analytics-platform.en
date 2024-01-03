@@ -3,6 +3,7 @@ description: Learn about fallout reports and visualizations.
 title: About fallout reports and visualizations
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
+role: User
 ---
 # Fallout overview
 

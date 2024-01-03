@@ -13,11 +13,11 @@ Use the **Settings** pane to configure application-level settings such as the la
 
 To change Report Builder settings
 
-1.  Click the **Settings** icon.
+1. Click the **Settings** icon.
 
-1.  Make changes to Enable off-line mode, select a Language, or enable Troubleshooting log settings.
+1. Make changes to Enable off-line mode, select a Language, or enable Troubleshooting log settings.
 
-1.  Click **Apply**.
+1. Click **Apply**.
 
     ![Report Builder date range pane showing the Cancel and Apply button.](./assets/image38.png)
 
@@ -27,13 +27,13 @@ When creating and editing a data block in off-line mode, data is not retrieved. 
 
 To enable off-line mode
 
-1.  Click the **Settings** icon.
+1. Click the **Settings** icon.
 
-1.  Select **Enable off-line mode**.
+1. Select **Enable off-line mode**.
 
-1.  Enter a positive integer in the **Display metric data as** field.
+1. Enter a positive integer in the **Display metric data as** field.
 
-1.  Click **Apply**.
+1. Click **Apply**.
 
 ## Language
 
@@ -41,13 +41,13 @@ You can choose the language for the Report Builder UI. All supported Adobe Analy
 
 To select the language used in the Report Builder UI
 
- 1.  Click Settings.
+ 1. Click Settings.
 
- 1.  Select a language from the **Language** drop down menu.
+ 1. Select a language from the **Language** drop down menu.
 
      ![Report Builder date range pane showing the Language list with English selected.](./assets/image39.png)
 
- 1.  Click **Apply.**
+ 1. Click **Apply.**
 
 ## Troubleshooting
 

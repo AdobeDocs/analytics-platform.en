@@ -3,6 +3,7 @@ description: Anomaly detection in Analysis Workspace uses a series of advanced s
 title: Statistical techniques used in anomaly detection
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
+role: User
 ---
 # Statistical techniques used in anomaly detection
 

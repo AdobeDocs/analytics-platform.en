@@ -4,6 +4,7 @@ description: Customer Journey Analytics landing page.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: Basics
+role: User, Admin, Developer
 ---
 # Customer Journey Analytics Guide
 

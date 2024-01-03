@@ -4,6 +4,7 @@ description: Determine how to handle a dimension if it is empty.
 exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
+role: Admin
 ---
 # No Value Options component settings
 

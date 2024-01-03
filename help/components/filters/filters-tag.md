@@ -3,6 +3,7 @@ description: You can tag filters to organize them.
 title: Tag filters
 feature: Filters
 exl-id: d3b8d9f7-11a4-4eac-8c22-5c86601ec7f3
+role: User
 ---
 # Tag filters {#tag}
 

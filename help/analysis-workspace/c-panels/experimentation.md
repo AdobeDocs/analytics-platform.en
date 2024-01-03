@@ -3,6 +3,7 @@ description: Learn how you can analyze the results of A/B tests in the Customer 
 title: Experimentation panel
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
+role: User
 ---
 # Experimentation panel
 

@@ -4,6 +4,7 @@ description: A method of analyzing data in Customer Journey Analytics that lets 
 keywords: product analytics
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
+role: User
 ---
 # Guided analysis overview
 

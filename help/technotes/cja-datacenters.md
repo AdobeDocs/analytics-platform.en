@@ -2,6 +2,7 @@
 title: Customer Journey Analytics data centers
 description: Find out about CJA data center locations around the world.
 solution: Customer Journey Analytics
+role: Admin
 ---
 
 # Customer Journey Analytics hosting locations

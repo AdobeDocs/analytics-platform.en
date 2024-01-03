@@ -4,6 +4,7 @@ description: Explain how to ingest data into Customer Journey Analytics via the 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
+role: Admin
 ---
 # Ingest data via the Adobe Experience Platform Web SDK
 

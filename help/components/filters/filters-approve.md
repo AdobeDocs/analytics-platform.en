@@ -3,6 +3,7 @@ description: You can set up a workflow that includes approving filters for vario
 title: Approve filters
 feature: Filters
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
+role: User
 ---
 # Approve filters {#approve}
 

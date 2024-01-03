@@ -4,6 +4,7 @@ description: Explain how to ingest data from traditional Adobe Analytics
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
+role: Admin
 ---
 # Ingest and use data from traditional Adobe Analytics
 
