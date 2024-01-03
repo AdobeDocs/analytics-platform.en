@@ -21,11 +21,11 @@ The Schedule feature also allows you to set up password protection for a workboo
 
 Use the Schedule task button in the Report Builder hub to quickly create a schedule so that you can automatically distribute a workbook Excel file (.xlsx) to an individual or a group.
 
-1.  Click the Schedule button in the Report Builder hub.
+1. Click the Schedule button in the Report Builder hub.
 
     ![Click the Schedule button to create a schedule.](./assets/schedule-button.png){width="55%"}
 
-1.  Click Schedule Workbook or the plus button in the upper-left to create a new scheduled workbook.
+1. Click Schedule Workbook or the plus button in the upper-left to create a new scheduled workbook.
 
     ![The Schedule workbooks window.](./assets/schedule-workbook.png){width="55%"}
 
@@ -33,27 +33,27 @@ Use the Schedule task button in the Report Builder hub to quickly create a sched
 
     ![The scheduling pane.](./assets/schedule-pane.png){width="55%"}
 
-1.  (Optional) Enter a file name.
+1. (Optional) Enter a file name.
 
     The workbook file name defaults to the name of the workbook but you can change this if you want. If you\'re sending the same workbook to multiple audiences and you want to name it something a little bit more friendly for a certain audience, you can change the name.
 
-1.  (Optional) Select **Append time-stamp to file name**.
+1. (Optional) Select **Append time-stamp to file name**.
 
     You can append a timestamp to the file name to identify the date the workbook was updated. This is helpful to quickly see which version of a workbook was sent on a specific date. The **Filename preview** shows how the workbook file name will appear in the email when the workbook is distributed. The time-stamp format is YYYY-MM-DD.
 
-1.  (Optional) Select **.zip compression** to compress the file and set up password protection on the file.
+1. (Optional) Select **.zip compression** to compress the file and set up password protection on the file.
 
     When you make this selection, you're prompted to enter a password to open the file. This is helpful if you have concerns about data security and you want to password protect the workbook. Protecting the file with a password requires you to select **.zip compression**. The password must be at least 8 characters and contain a number and a special character.
 
     ![Enter a password in the Password protect the workbook field.](./assets/zip-compression.png){width="55%"}
 
-1.  Enter **Recipients**. You can enter the name of a person that is recognized in your organization, or you can enter an email address of a person inside or outside of your organization.
+1. Enter **Recipients**. You can enter the name of a person that is recognized in your organization, or you can enter an email address of a person inside or outside of your organization.
 
-1.  Enter the **Subject** of the email and a description for your recipients. The subject defaults to the workbook file name but you can modify the subject if needed. You can add details in the description section.
+1. Enter the **Subject** of the email and a description for your recipients. The subject defaults to the workbook file name but you can modify the subject if needed. You can add details in the description section.
 
     ![Enter a subject in the Subject field.](./assets/recipients-subject.png){width="55%"}
 
-1.  Set up the scheduling options to set the date and time that you want the workbook emailed to your recipients.
+1. Set up the scheduling options to set the date and time that you want the workbook emailed to your recipients.
 
     Choose the start and end date and time frames. This can be today's date or a date in the future.
 
@@ -61,7 +61,7 @@ Use the Schedule task button in the Report Builder hub to quickly create a sched
 
     ![Select the frequency to schedule your report.](./assets/frequency.png){width="55%"}
 
-1.  After you set the schedule, click **Send on schedule**.
+1. After you set the schedule, click **Send on schedule**.
 
     ![Click Send on schedule.](./assets/send-on-schedule.png){width="55%"}
 
@@ -73,31 +73,31 @@ Use the Schedule task button in the Report Builder hub to quickly create a sched
 
 You can also send out the workbook only once.
 
-1.  Un-check **Show scheduling options** 
+1. Un-check **Show scheduling options** 
 
     ![Click Un-check Show scheduling options to send out a workbook one time.](./assets/send-now.png){width="40%"}
 
-1.  Click **Send Now**.
+1. Click **Send Now**.
 
 ## View and edit scheduled workbooks
 
 You can view and manage all scheduled workbooks in one place under the Workbooks tab.
 
-1.  In the Schedule section of the Report Builder hub, click the Workbooks tab. Use this view to see a list of all scheduled workbooks.
+1. In the Schedule section of the Report Builder hub, click the Workbooks tab. Use this view to see a list of all scheduled workbooks.
 
-1.  Select a workbook. Several tools are displayed that allow you to edit the workbook, edit the schedule task, pause and restart the schedule task, download a scheduled task report, or delete the schedule task.
+1. Select a workbook. Several tools are displayed that allow you to edit the workbook, edit the schedule task, pause and restart the schedule task, download a scheduled task report, or delete the schedule task.
 
     ![Screenshot showing the workbook schedule icons.](./assets/schedule-icons.png){width="20%"}
 
-*  (Optional) Click the pencil icon to edit the workbook schedule task.
+* (Optional) Click the pencil icon to edit the workbook schedule task.
 
-*  (Optional) Click the clock icon to view a history of each scheduled task.
+* (Optional) Click the clock icon to view a history of each scheduled task.
 
-*  (Optional) Click the pause icon to pause and restart the distribution schedule task. This is helpful if you need to modify the workbook before the workbook is sent. Click the pause icon again when you want to restart the distribution.
+* (Optional) Click the pause icon to pause and restart the distribution schedule task. This is helpful if you need to modify the workbook before the workbook is sent. Click the pause icon again when you want to restart the distribution.
 
-*  (Optional) Click the download icon to download a copy of the workbook schedule task.
+* (Optional) Click the download icon to download a copy of the workbook schedule task.
 
-*  (Optional) Click the trash can to delete the schedule task.
+* (Optional) Click the trash can to delete the schedule task.
 
     ![Screenshot showing the list of schedule tasks.](./assets/selected-workbook.png){width="40%"}
 
