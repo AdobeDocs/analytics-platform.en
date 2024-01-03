@@ -4,6 +4,7 @@ description: Understand the different ways that you can ingest data into Custome
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
+role: Admin
 ---
 # Data Ingestion Overview
 

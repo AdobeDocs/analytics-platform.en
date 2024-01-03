@@ -4,6 +4,7 @@ description: A data view specifies how you want to interpret elements of the dat
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
+role: Admin
 ---
 # Data views overview
 

@@ -4,6 +4,7 @@ description: Explains how to use Adobe Customer Journey Analytics to ingest your
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
+role: Admin
 ---
 
 # Ingest Google Analytics historical data into Adobe Experience Platform

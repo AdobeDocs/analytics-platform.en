@@ -3,6 +3,7 @@ description: Depending on your permissions, you can share filters with your whol
 title: Share filters
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
+role: User
 ---
 # Share filters {#share}
 

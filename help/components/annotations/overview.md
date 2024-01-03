@@ -1,10 +1,10 @@
 ---
 title: Annotations overview
 description: How to use annotations in Workspace.
-role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
+role: User
 ---
 # Annotations overview
 

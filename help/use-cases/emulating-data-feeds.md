@@ -5,6 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: yes
 hidefromtoc: yes
+role: Admin
 
 ---
 # Emulate data feed functionality

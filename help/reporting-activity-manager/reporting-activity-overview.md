@@ -4,6 +4,7 @@ description: Learn about how to use the Reporting Activity Manager to diagnose a
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: c3964147-06f1-462a-aea1-e681c4ef15b1
+role: Admin
 ---
 # Reporting Activity Manager overview
 

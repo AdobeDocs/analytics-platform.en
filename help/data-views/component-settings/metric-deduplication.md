@@ -4,6 +4,7 @@ description: Count only the first occurence of a metric in reports.
 exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
 feature: Data Views
+role: Admin
 ---
 # Metric deduplication component settings
 

@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: Configure a cohort analysis report
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
+role: User
 ---
 # Configure a [!UICONTROL Cohort Analysis] report
 

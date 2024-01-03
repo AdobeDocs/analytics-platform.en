@@ -3,6 +3,7 @@ title: What is Cohort Analysis?
 description: Learn about cohort analysis in Analysis Workspace
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
+role: User
 ---
 # What is [!UICONTROL Cohort Analysis]?
 

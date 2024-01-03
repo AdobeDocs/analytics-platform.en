@@ -3,6 +3,7 @@ description: Documentation describing how to filter and sort tables in Analysis 
 title: Filter and sort tables
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
+role: User
 ---
 
 # Filter and sort freeform tables

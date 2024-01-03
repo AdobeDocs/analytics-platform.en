@@ -4,6 +4,7 @@ description: Shows useful reports on Google Analytics data in Customer Journey A
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
+role: Admin
 ---
 # Report on Google Analytics data in Customer Journey Analytics
 

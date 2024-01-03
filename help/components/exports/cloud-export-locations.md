@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: Configure cloud export locations
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
+role: User, Admin
 ---
 # Configure cloud export locations
 

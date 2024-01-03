@@ -3,6 +3,7 @@ description: This visualization shows horizontal bars representing various value
 title: Horizontal Bar and Horizontal Bar Stacked
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
+role: User
 ---
 # Horizontal Bar and Horizontal Bar Stacked
 

@@ -4,6 +4,7 @@ keywords: fallout and filters;filters in fallout analysis;compare filters in fal
 title: Apply filters in fallout analysis
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
+role: User
 ---
 # Apply filters in fallout analysis
 

@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: Export Customer Journey Analytics reports to the cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
+role: User
 ---
 # Export Customer Journey Analytics reports to the cloud
 

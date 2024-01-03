@@ -3,6 +3,7 @@ description: Learn how to view anomalies in a table or in a line chart.
 title: How to view anomalies in Analysis Workspace
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
+role: User
 ---
 # View anomalies in Analysis Workspace
 

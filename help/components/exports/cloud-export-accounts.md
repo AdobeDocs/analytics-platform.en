@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: Configure cloud export accounts
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
+role: User, Admin
 ---
 # Configure cloud export accounts
 

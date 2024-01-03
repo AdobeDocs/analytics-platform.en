@@ -3,6 +3,7 @@ description: An inter-dimensional flow lets you examine user paths across variou
 title: Inter-dimensional flows
 feature: Visualizations
 exl-id: 459166b1-a522-45b6-9d2c-69e3409e442e
+role: User
 ---
 # Inter-dimensional flows
 

@@ -3,6 +3,7 @@ description: Learn about data anomaly detection in Analysis Workspace.
 title: How Anomaly Detection works
 feature: Anomaly Detection
 exl-id: f706cdb9-bc80-42b9-9450-4f68bdb3fd85
+role: User
 ---
 # Anomaly Detection overview
 

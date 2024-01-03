@@ -4,6 +4,7 @@ description: Explain how to ingest and use batch data in Customer Journey Analyt
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
+role: Admin
 ---
 # Ingest and use batch data
 

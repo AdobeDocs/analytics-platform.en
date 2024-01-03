@@ -62,7 +62,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Manage connections](../connections/manage-connections.md)
   + [Combined event datasets](../connections/combined-dataset.md)
   + [Standard lookups](../connections/standard-lookups.md)
-  + [Cross-Channel Analytics](../connections/cca.md)
 
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
@@ -297,11 +296,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [How stitching works](../stitching/explained.md)
   + [Create and manage stitched datasets](../stitching/stitching-ui.md)
   + [Frequently Asked Questions](../stitching/faq.md)  
-
-+ Cross-Channel Analytics {#cca}
-  + [Cross-Channel Analytics overview](../cca/overview.md)
-  + [How replays work](../cca/replay.md)
-  + [Cross-Channel Analytics FAQ](../cca/faq.md)
 
 + Adobe integrations {#integrations}
   + [Integrate Adobe solutions with Customer Journey Analytics overview](/help/integrations/overview.md)

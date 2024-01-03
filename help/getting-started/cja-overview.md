@@ -4,6 +4,7 @@ description: Learn how Customer Journey Analytics lets you use Analysis Workspac
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
+role: User, Admin
 ---
 # Customer Journey Analytics overview
 

@@ -4,6 +4,7 @@ description: Multiple use cases that show the flexibility and power of data view
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
+role: User
 ---
 # Data views use cases
 

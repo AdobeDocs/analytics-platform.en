@@ -4,6 +4,7 @@ description: Learn what components Customer Journey Analytics offers, and how yo
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
+role: User
 ---
 # Components overview
 

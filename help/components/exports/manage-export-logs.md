@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: Manage export logs
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
+role: User
 ---
 # Manage export logs
 

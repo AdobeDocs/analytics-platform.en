@@ -3,6 +3,7 @@ description: Learn about the Flow feature showing customer paths through your we
 title: Flow overview
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
+role: User
 ---
 # Flow overview
 
