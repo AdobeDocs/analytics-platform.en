@@ -1,7 +1,7 @@
 ---
 title: How to select a data range in Report Builder in Customer Journey Analytics
 description: Describes how to use the calendar, rolling dates, and custom expressions in Report Builder for Customer Journey Analytics
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b

@@ -1,7 +1,7 @@
 ---
 title: How to use filters in Report Builder in Customer Journey Analytics
 description: Describes how to use filters in Report Builder for Customer Journey Analytics
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
@@ -126,4 +126,3 @@ To apply filters from a cell
     ![Filter drop down menu](./assets/filter-drop-down.png)
 
 1. Click **Apply**.
-   

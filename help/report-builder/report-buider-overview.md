@@ -1,7 +1,7 @@
 ---
 title: What is Report Builder in Customer Journey Analytics
 description: Describes Report Builder for Customer Journey Analytics
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
