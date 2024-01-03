@@ -4,6 +4,7 @@ description: Are you gaining or losing users?
 feature: Guided Analysis
 keywords: product analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
+role: User
 ---
 # [!UICONTROL Net growth] view
 

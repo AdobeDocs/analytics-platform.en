@@ -4,6 +4,7 @@ description: What happens when you delete connections, datasets, or batches in C
 exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
 solution: Customer Journey Analytics
 feature: Basics
+role: Admin
 ---
 # Deletion implications
 

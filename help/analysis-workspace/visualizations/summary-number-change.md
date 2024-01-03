@@ -3,6 +3,7 @@ description: Use the Summary Number and Change visualizations to display importa
 title: Summary Number and Summary Change
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
+role: User
 ---
 # Summary Number and Summary Change
 

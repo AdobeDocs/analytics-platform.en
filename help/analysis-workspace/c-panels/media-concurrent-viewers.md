@@ -4,6 +4,7 @@ description: How to use and interpret the Media Concurrent Viewers panel in Anal
 feature: Panels
 role: User, Admin
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
+role: User
 ---
 # Media Concurrent Viewers panel
 

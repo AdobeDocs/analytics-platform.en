@@ -4,6 +4,7 @@ description: A derived field specifies report-time manipulation of schema fields
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
+role: Admin
 ---
 # Derived fields
 

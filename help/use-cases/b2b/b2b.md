@@ -4,6 +4,7 @@ description: Learn how to add account-based data as a lookup dataset to Customer
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
+role: User
 ---
 # Add account-level data as a lookup dataset
 

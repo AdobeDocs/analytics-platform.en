@@ -24,7 +24,7 @@ Examples of identities might be a customer ID, account ID, or email ID. Whatever
 * ID does not contain PII. Apply hashing to anything that might be sensitive. 
 * ID uses the same format across all sources (same length, same hashing method, etc.)
 
-In datasets like Adobe Analytics, an identity may not exist on every row of data, but a secondary identity does. In this case, Cross-channel Analytics (formerly known as "Field-based Stitching") can be used to bridge the gap between rows when a customer is only identified by their ECID and when an identity is collected (for example, when a customer authenticates). [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html)
+In datasets like Adobe Analytics, an identity may not exist on every row of data, but a secondary identity does. In this case, Cross-channel Analysis (also known as "Stitching") can be used to bridge the gap between rows when a customer is only identified by their ECID and when an identity is collected (for example, when a customer authenticates). [Learn more](../stitching/overview.md).
 
 ### 2. Align your variables {#variables}
 

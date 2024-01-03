@@ -3,6 +3,7 @@ description: The Filter builder provides a canvas to drag and drop Metric Dimens
 title: Build filters
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
+role: User
 ---
 # Filter builder
 

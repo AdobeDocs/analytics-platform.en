@@ -2,8 +2,8 @@
 description: Learn how to use the flow visualization in a Workspace project.
 title: How to configure a flow visualization
 feature: Visualizations
-role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
+role: User
 ---
 # Configure a flow visualization
 

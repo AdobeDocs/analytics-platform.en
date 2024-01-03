@@ -4,6 +4,7 @@ description: Describes how to create a connection to a Platform dataset in Custo
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
+role: Admin
 ---
 # Create a connection
 

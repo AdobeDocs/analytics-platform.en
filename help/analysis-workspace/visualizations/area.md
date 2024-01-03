@@ -3,6 +3,7 @@ description: The Area visualization is like a line graph, but with a colored are
 title: Area and area stacked
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
+role: User
 ---
 # Area and area stacked
 

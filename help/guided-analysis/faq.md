@@ -4,6 +4,7 @@ description: Frequently asked questions around Guided analysis.
 exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: product analytics
+role: User
 ---
 # Guided analysis FAQ
 

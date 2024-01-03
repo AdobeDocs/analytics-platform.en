@@ -4,6 +4,7 @@ description: Customer Journey Analytics features compared with Adobe Analytics f
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
+role: User
 ---
 # Customer Journey Analytics feature support
 

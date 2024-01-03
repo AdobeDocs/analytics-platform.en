@@ -43,7 +43,7 @@ Total Records by timestamps should match with Occurrences, provided that no reco
 
 >[!NOTE]
 >
->This works for regular mid values datasets only, not stitched dataset (via [Cross-Channel Analytics](/help/cca/overview.md)). Please note that accounting for the Person ID being used in Customer Journey Analytics is critical for making the comparison work. That may not always be easy to replicate in Adobe Analytics, especially if Stitching has been turned on. 
+>This works for regular mid values datasets only, not stitched dataset (via [Stitching](/help/stitching/overview.md)). Please note that accounting for the Person ID being used in Customer Journey Analytics is critical for making the comparison work. That may not always be easy to replicate in Adobe Analytics, especially if Stitching has been turned on. 
 
 1. In Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), run the following [!UICONTROL Total Records by timestamps] query:
 

@@ -4,6 +4,7 @@ description: Explains how Customer Journey Analytics handles dimensions with man
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
+role: User
 ---
 # High cardinality dimensions
 

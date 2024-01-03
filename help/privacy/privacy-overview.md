@@ -3,6 +3,7 @@ title: Customer Journey Analytics and Data Governance
 description: Describes how data governance works in Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
+role: Admin
 ---
 # Adobe Customer Journey Analytics and Data Governance
 

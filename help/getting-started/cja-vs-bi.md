@@ -5,6 +5,7 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
+role: User
 ---
 # Compare Customer Journey Analytics to BI solutions
 

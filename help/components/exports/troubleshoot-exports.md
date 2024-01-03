@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: Troubleshoot failed exports
 feature: Components
 exl-id: fbc25150-4390-40a2-9f17-aadf254258ad
+role: User
 ---
 # Troubleshoot failed exports
 

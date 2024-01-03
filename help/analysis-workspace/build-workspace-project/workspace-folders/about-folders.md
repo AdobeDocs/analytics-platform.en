@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: Folders overview
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
+role: User
 ---
 # About Folders in Analytics
 
@@ -40,12 +41,12 @@ Non-Admins have limited options.
 
 ### Company folder guidelines {#company-folder-guidelines}
 
--   Admins can add projects to the Company folder or create a new project and save it to the Company folder. Non-Admins can view the contents of the Company folder.
+- Admins can add projects to the Company folder or create a new project and save it to the Company folder. Non-Admins can view the contents of the Company folder.
 
--   Admins can create subfolders within the Company folder.
+- Admins can create subfolders within the Company folder.
 
--   Admins can delete a folder within the Company folder that another admin created. Admins may need to coordinate with other Admins to keep folder and project access consistent.
+- Admins can delete a folder within the Company folder that another admin created. Admins may need to coordinate with other Admins to keep folder and project access consistent.
 
--   When an Admin moves a project to the Company folder, the project is shared with everyone even if the original shared privileges were restricted.
+- When an Admin moves a project to the Company folder, the project is shared with everyone even if the original shared privileges were restricted.
 
--   When an Admin moves a project out of the Company folder, the original or previous sharing privileges are respected.
+- When an Admin moves a project out of the Company folder, the original or previous sharing privileges are respected.

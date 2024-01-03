@@ -4,6 +4,7 @@ description: Describes how to use basic visualizations to analyze data in Custom
 feature: Workspace Basics
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 solution: Customer Journey Analytics
+role: User
 ---
 # Perform basic analysis
 

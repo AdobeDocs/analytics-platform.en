@@ -4,6 +4,7 @@ title: Customer Journey Analytics landing page
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
+role: User
 ---
 # Customer Journey Analytics landing page
 

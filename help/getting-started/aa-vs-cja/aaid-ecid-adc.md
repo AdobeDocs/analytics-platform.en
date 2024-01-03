@@ -3,6 +3,7 @@ title: AAID, ECID, AACUSTOMID and the Analytics source connector
 description: Learn how the Analytics source connector deals with Adobe Analytics identity fields.
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
 feature: Basics
+role: User
 ---
 # AAID, ECID, AACUSTOMID and the Analytics source connector
 

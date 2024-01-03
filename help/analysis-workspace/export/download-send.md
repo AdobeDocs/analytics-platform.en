@@ -3,6 +3,7 @@ description: You can download data from Analysis Workspace by copying it, or in 
 title: Download Customer Journey Analytics data
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
+role: User
 ---
 # Download Customer Journey Analytics data
 

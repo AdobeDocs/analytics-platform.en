@@ -3,6 +3,7 @@ description: Row settings vary depending on which component you have dragged int
 title: Row settings
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
+role: User
 ---
 # Row settings
 

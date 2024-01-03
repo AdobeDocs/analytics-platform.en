@@ -4,6 +4,7 @@ description: Analyze and extract insights from customer interactions across the 
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
+role: User
 ---
 # Cross-channel analysis
 

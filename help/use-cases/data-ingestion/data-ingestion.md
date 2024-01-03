@@ -4,6 +4,7 @@ description: Understand the different ways you can ingest data into Customer Jou
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
+role: Admin
 ---
 # Data ingestion options for Customer Journey Analytics
 

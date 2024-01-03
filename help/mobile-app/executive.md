@@ -2,7 +2,7 @@
 description: Instructions for using the dashboards scorecards.
 title: Analytics dashboards executive guide
 feature: Analytics Dashboards
-role: User, Admin
+role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
 ---

@@ -3,6 +3,7 @@ description: The Bar visualization shows vertical bars representing various valu
 title: Bar and bar stacked
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
+role: User
 ---
 # Bar and bar stacked
 

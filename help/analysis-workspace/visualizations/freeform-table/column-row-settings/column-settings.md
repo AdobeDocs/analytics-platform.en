@@ -3,6 +3,7 @@ description: Learn how to edit column settings to configure column formatting, s
 title: Column settings
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
+role: User
 ---
 # [!UICONTROL Column Settings]
 

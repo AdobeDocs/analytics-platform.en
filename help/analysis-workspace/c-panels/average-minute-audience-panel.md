@@ -4,6 +4,7 @@ description: How to use and interpret the Media Average Minute Audience panel in
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
+role: User
 ---
 
 # Media Average Minute Audience panel

@@ -4,6 +4,7 @@ description: Explain how to ingest and use data using source connectors in Custo
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
+role: Admin
 ---
 # Ingest and use data using source connectors.
 
