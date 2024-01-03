@@ -13,23 +13,23 @@ By default, each dimension item in the table returns the top 10 items for that d
 
 To change the dimension items returned for each dimension
 
-1.  Select a data block and click Edit data block in the COMMANDS panel.
+1. Select a data block and click Edit data block in the COMMANDS panel.
 
-1.  Click Next to display the Dimensions tab.
+1. Click Next to display the Dimensions tab.
 
-1.  Click the **...** icon next to a component name in the table.
+1. Click the **...** icon next to a component name in the table.
 
     ![The ellipsis icon options.](./assets/image27.png)
 
-1.  Select **Filter dimension** in the pop-up menu to display the **Filter dimension** pane.
+1. Select **Filter dimension** in the pop-up menu to display the **Filter dimension** pane.
 
-1.  Select **Most popular** or **Specific**.
+1. Select **Most popular** or **Specific**.
 
     ![The specific option selected in the Filter dimension pane.](./assets/image28.png)
 
-1.  Select appropriate options based on the filter type chosen.
+1. Select appropriate options based on the filter type chosen.
 
-1.  Click **Apply** to add the filter.
+1. Click **Apply** to add the filter.
 
     Report Builder displays a notification to confirm the added filter.
 
@@ -84,15 +84,15 @@ You can filter dimension items based on whether all criteria are met or if any c
 
 To set filtering criteria
 
-1.  Select an operator from the drop-down list.
+1. Select an operator from the drop-down list.
 
     ![The operator list.](./assets/image31.png)
 
-1.  Enter a value into the search field.
+1. Enter a value into the search field.
 
-1.  Click Add row to confirm the selection and add another criteria item.
+1. Click Add row to confirm the selection and add another criteria item.
 
-1.  Click the delete icon to remove a criteria item.
+1. Click the delete icon to remove a criteria item.
 
     You can include up to 10 criteria items.
 
@@ -119,7 +119,7 @@ The Specific option allows you to create a fixed list of dimension items for eac
 
 ### From list
 
-1.  Select the **From list** option to search for and select dimension items.
+1. Select the **From list** option to search for and select dimension items.
 
     When you select the **From list** option, the list is populated with dimension items with the most events first.
 
@@ -127,15 +127,15 @@ The Specific option allows you to create a fixed list of dimension items for eac
 
     The **Available items** list is ordered from dimension items with the most events to those with the least.
 
-1.  Enter a search term in the **Add item** field to search the list.
+1. Enter a search term in the **Add item** field to search the list.
 
-1.  To search for an item not included in the last 90 days of data, click **Show items for the last 6 months** to extend the search.
+1. To search for an item not included in the last 90 days of data, click **Show items for the last 6 months** to extend the search.
 
     ![The Show items from the last 6 months list.](./assets/image34.png)
 
     After data from the past 6 months loads, Report Builder updates the link to **Show items for last 18 months**.
 
-1.  Select a dimension item.
+1. Select a dimension item.
 
     Selected dimension items are automatically added to the **Selected items** list.
 
@@ -147,7 +147,7 @@ The Specific option allows you to create a fixed list of dimension items for eac
 
     ![The dimension items list.](./assets/image36.png)
 
-1.  Click **Apply**
+1. Click **Apply**
 
     Report Builder updates the list to show the specific filtering you applied.
 
