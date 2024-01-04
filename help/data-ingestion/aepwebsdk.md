@@ -97,6 +97,10 @@ To set up your schema:
 
 1. In the [!UICONTROL Field Properties] panel, enter `Identification` as the name, **[!UICONTROL Identification]** as the [!UICONTROL Display name], select **[!UICONTROL Object]** as the [!UICONTROL Type] and select **[!UICONTROL ExperienceEvent Core v2.1]** as the [!UICONTROL Field Group].
 
+   >[!NOTE]
+   >
+   >If that field group is not available, look for another field group containing identity fields. Or [create a new field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) and [add new identity fields](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) (like `ecid`, `crmId`, and others you need) to the field group and select that new field group.
+
     ![Identification Object](./assets/identification-field.png)
 
     The identification object adds identification capabilities to your schema. In your case, you want to identify profiles visiting your site using the Experience Cloud Id and email address. There are many other attributes available to track your person's identification (for example customer id, loyalty id).
