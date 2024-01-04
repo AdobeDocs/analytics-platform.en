@@ -3,6 +3,7 @@ description: The Venn visualization lets you drag in up to 3 filters (from Compo
 title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
+role: User
 ---
 # Venn
 

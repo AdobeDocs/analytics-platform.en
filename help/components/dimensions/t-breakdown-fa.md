@@ -5,6 +5,7 @@ title: Break down dimensions
 feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
+role: User
 ---
 # Break down dimensions in Workspace
 
@@ -41,7 +42,7 @@ This is the expected behavior when applying attribution models to breakdowns or 
 
 * If you apply an attribution when no other attributions exist, then the attribution applies to the entire column tree.
 
-* If you add a breakdown after an attribution has been applied, it will use the default for the given breakdown that was added (if that dimension has a default). Otherwise it will use the breakdown from the parent column. Some dimensions have a default allocation. For example, Time dimensions and Referrer use Same Touch. The Product dimension uses Last Touch. Other dimensions don’t have a default, and will use the parent column allocation.
+* If you add a breakdown after an attribution has been applied, it will use the default for the given breakdown that was added (if that dimension has a default). Otherwise it will use the breakdown from the parent column. Some dimensions have a default allocation. For example, Time dimensions and Referrer use Same Touch. The Product dimension uses Last Touch. Other dimensions don't have a default, and will use the parent column allocation.
 
 * If there are already attributions in the column tree, changing the attribution only impacts the one you are editing.
 

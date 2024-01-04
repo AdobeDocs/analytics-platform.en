@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: Create custom date ranges
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
+role: User
 ---
 # Create custom date ranges
 

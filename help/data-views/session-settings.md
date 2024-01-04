@@ -4,6 +4,7 @@ description: Settings in a Data view you can use to define length of a session a
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
+role: Admin
 ---
 # Session settings
 

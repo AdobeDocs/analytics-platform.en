@@ -3,6 +3,7 @@ title: Virtual report suites, Data views, Adobe Experience Platform sandboxes, a
 description: Learn about virtual reporting environments and sandbox environments.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
+role: User
 ---
 # Virtual report suites, Data views, Adobe Experience Platform sandboxes, and the Analytics source connector
 

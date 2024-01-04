@@ -3,6 +3,7 @@ description: Date Comparison in Analysis Workspace lets you take any column cont
 title: Date comparison
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
+role: User
 ---
 # Date comparison
 

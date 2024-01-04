@@ -14,6 +14,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **December 2023** | |
+| Data centers | Added an article on Customer Journey Analytics [hosting locations](../technotes/cja-datacenters.md). |
+| Guardrails | Added article listing Customer Journey Analytics [guardrails](../admin/guardrails.md). |  
 | Currency conversion updates | Clarified documentation about how to [configure currency conversion](/help/data-views/component-settings/format.md). |
 | Updates to Anomaly Detection documentation | The documentation for Anomaly Detection was previously located in a section about Virtual Analyst. The following changes were made: <ul><li>The term Virtual Analyst was removed from the documentation.</li><li>The section about [Anomaly Detection](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) was moved directly beneath the Analysis Workspace section.</li></ul> |
 | **October 2023** | |
@@ -190,7 +192,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Date | Update description |
 | --- | --- |
-| November 13, 2020 | New topics on [Cross-Channel Analytics](/help/cca/overview.md), which allows you to rekey a dataset's person ID, and enables a seamless combination of multiple datasets. |
+| November 13, 2020 | New topics on [Cross-Channel Analysis](/help/stitching/overview.md), which allows you to rekey a dataset's person ID, and enables a seamless combination of multiple datasets. |
 | November 13, 2020 | A new use case on [importing call center and web data](/help/use-cases/cross-channel/call-center.md) was added. |
 | November 10, 2020 | Added a section on the implications of deleting data components to the [FAQ](/help/getting-started/cja-faq.md). |
 | November 2, 2020 | Updates to the [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md) page. |

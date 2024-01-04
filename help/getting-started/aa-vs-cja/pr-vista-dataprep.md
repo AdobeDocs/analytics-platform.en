@@ -3,6 +3,7 @@ title: Processing Rules, VISTA, and classifications vs. Data Prep for the Analyt
 description: Learn about data transformation using processing rules and VISTA vs. using Data Prep
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
+role: User
 ---
 # Processing rules, VISTA, and classifications versus Data Prep
 

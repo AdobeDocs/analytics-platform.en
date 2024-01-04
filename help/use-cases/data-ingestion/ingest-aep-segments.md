@@ -4,6 +4,7 @@ description: Explains how to ingest Adobe Experience Platform audiences into Cus
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
+role: Admin
 ---
 # Ingest Adobe Experience Platform audiences into Adobe Customer Journey Analytics
 

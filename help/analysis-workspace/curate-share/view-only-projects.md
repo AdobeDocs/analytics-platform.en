@@ -4,6 +4,7 @@ keywords: View-only projects
 title: View-only projects
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
+role: User
 ---
 # View-only projects
 

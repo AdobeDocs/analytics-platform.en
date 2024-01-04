@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: Remove projects from folders
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
+role: User
 ---
 # Remove a Project from a Folder
 
@@ -17,15 +18,15 @@ To remove a project from a folder, you can move the project to another location 
 
 You can move projects from one folder to another folder that you created.
 
-1.  From within a project folder, select the **...** ellipsis next to the project name.
+1. From within a project folder, select the **...** ellipsis next to the project name.
 
     ![The ellipsis options.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
-1.  Select **Move to** and then select a folder to move the project to.
+1. Select **Move to** and then select a folder to move the project to.
 
     ![The Select Location window.](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
-1.  Click **Move**.
+1. Click **Move**.
 
     ![Click Move.](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
@@ -37,10 +38,10 @@ You can move projects from one folder to another folder that you created.
 
 When you delete a project from a folder, the project is deleted entirely.
 
-1.  From within a project folder, select the **...** ellipsis next to the project name.
+1. From within a project folder, select the **...** ellipsis next to the project name.
 
     ![The ellipsis options.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
-1.  Select **Delete**.
+1. Select **Delete**.
 
-1.  A confirmation window asks you to confirm the deletion.
+1. A confirmation window asks you to confirm the deletion.

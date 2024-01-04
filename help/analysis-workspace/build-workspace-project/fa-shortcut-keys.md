@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 feature: Workspace Basics
 title: How to use Workspace hotkeys
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
+role: User
 ---
 # Hotkeys (Shortcuts)
 

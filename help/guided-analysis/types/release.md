@@ -4,6 +4,7 @@ description: Compare performance across equal periods pre- and post-release.
 feature: Guided Analysis
 keywords: product analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
+role: User
 ---
 # [!UICONTROL Release] view
 

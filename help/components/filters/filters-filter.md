@@ -3,6 +3,7 @@ description: Filter by tags, owners, and other filters (Show All, Mine, Shared w
 title: Filter the list of filters
 feature: Filters
 exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
+role: User
 ---
 # Filter the list of filters
 

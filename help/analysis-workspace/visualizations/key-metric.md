@@ -2,8 +2,8 @@
 description: Use the key metric summary visualization to compare metric performance across two timelines.
 title: Key metric summary
 feature: Visualizations
-role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
+role: User
 ---
 # Key metric summary
 

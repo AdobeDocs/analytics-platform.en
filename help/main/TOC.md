@@ -62,7 +62,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Manage connections](../connections/manage-connections.md)
   + [Combined event datasets](../connections/combined-dataset.md)
   + [Standard lookups](../connections/standard-lookups.md)
-  + [Cross-Channel Analytics](../connections/cca.md)
 
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
@@ -298,11 +297,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Create and manage stitched datasets](../stitching/stitching-ui.md)
   + [Frequently Asked Questions](../stitching/faq.md)  
 
-+ Cross-Channel Analytics {#cca}
-  + [Cross-Channel Analytics overview](../cca/overview.md)
-  + [How replays work](../cca/replay.md)
-  + [Cross-Channel Analytics FAQ](../cca/faq.md)
-
 + Adobe integrations {#integrations}
   + [Integrate Adobe solutions with Customer Journey Analytics overview](/help/integrations/overview.md)
   + [Integrate Adobe Analytics with Customer Journey Analytics](/help/integrations/aa.md)
@@ -345,6 +339,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 
 + Administration {#cja-admin}
+  + [Guardrails](../admin/guardrails.md)
   + [Access Control](../admin/cja-access-control.md)
   + [View and manage usage](../admin/estimate-usage.md)
   + [Deletion implications](../admin/cja-deletion.md)
@@ -358,6 +353,9 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Compare your Adobe Analytics data to Customer Journey Analytics data](../troubleshooting/compare.md)
   + [Consistency of metrics and audience membership counts between Real-time CDP and Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
   + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
+
++ Tech notes {#technotes}
+  + [Customer Journey Analytics data centers](../technotes/cja-datacenters.md)
 
 + [Customer Journey Analytics glossary](../getting-started/cja-glossary.md)
 

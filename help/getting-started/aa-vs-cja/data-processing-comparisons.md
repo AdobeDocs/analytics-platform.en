@@ -3,6 +3,7 @@ title: Compare data processing across Adobe Analytics and Customer Journey Analy
 description: Understand the differences in data processing for the various reporting features
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 feature: Basics
+role: User
 ---
 # Compare data processing across Adobe Analytics and Customer Journey Analytics
 

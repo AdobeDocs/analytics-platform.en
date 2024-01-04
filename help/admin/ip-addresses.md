@@ -6,6 +6,7 @@ feature: Basics
 hide: yes
 hidefromtoc: yes
 exl-id: 5c52986c-7ff3-45b5-9039-2bfb6529238c
+role: Admin
 ---
 # IP addresses used by Customer Journey Analytics
 

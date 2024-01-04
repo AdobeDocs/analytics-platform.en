@@ -6,6 +6,7 @@ feature: Use Cases
 hide: yes
 hidefromtoc: yes
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
+role: User
 ---
 # An example B2B project
 

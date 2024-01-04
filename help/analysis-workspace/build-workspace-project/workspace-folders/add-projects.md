@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: Add Folders in Workspace
 feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
+role: User
 ---
 # Add Projects to Folders
 
@@ -13,17 +14,17 @@ You can add projects to a folder in the table view or from within a folder.
 
 Add projects to a folder from the table view on the home page.
 
-1.  Select one or more projects that you want to add to a folder.
+1. Select one or more projects that you want to add to a folder.
 
     ![Projects table view showing three projeccts selected.](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
 
-1.  Select **Move to**. The Select Folder dialogue is displayed.
+1. Select **Move to**. The Select Folder dialogue is displayed.
 
-1.  Select a folder name from the drop-down menu.
+1. Select a folder name from the drop-down menu.
 
     ![The Select Folder view showing the drop down menu and available subfolders.](/help/analysis-workspace/build-workspace-project/assets/move-select-folder.png)
 
-1.  Click **Add**.
+1. Click **Add**.
 
     ![Click Add.](/help/analysis-workspace/build-workspace-project/assets/move-add.png)
 
@@ -39,17 +40,17 @@ Add projects to a folder from the table view on the home page.
 
 You can also add projects from inside a folder using the ellipses link.
 
-1.  Select and open a folder from the table view.
+1. Select and open a folder from the table view.
 
     ![The subfolder that doesn't contain any projects](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
 
-1.  Click the **...** ellipsis icon in the top-right.
+1. Click the **...** ellipsis icon in the top-right.
 
     ![The ellipsis drop down menu options.](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
 
     A drop-down menu displays the option to add projects to the folder. Additional options allow you to rename, move, or delete the folder and manage folder permissions.
 
-1.  Select **Add projects** and select the project that you want to add     from the drop-down list.
+1. Select **Add projects** and select the project that you want to add     from the drop-down list.
 
     ![The Add Projects list.](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
 
@@ -57,7 +58,7 @@ You can also add projects from inside a folder using the ellipses link.
 
     ![The Add Projects window showing three projects are added](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
 
-1.  Click **Add** to add the projects to the folder.
+1. Click **Add** to add the projects to the folder.
 
     ![Click Add.](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
 

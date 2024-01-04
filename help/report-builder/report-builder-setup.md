@@ -1,7 +1,7 @@
 ---
 title: How to set up Report Builder in Customer Journey Analytics
 description: Describes how to set up Report Builder in Customer Journey Analytics
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 ---
 # Report Builder Set Up
 
-You can quickly access Report Builder using the Excel Add-in menu.
+You can quickly access Report Builder using the Excel Add-in menu.
 
 ## Requirements
 
@@ -27,9 +27,9 @@ Report Builder for Customer Journey Analytics is supported on the following oper
 
   All Windows desktop Excel users must install Microsoft Edge Webview2 to use the add-in. To install the controller:
 
-  1.  Go to <https://aka.ms/webview2installer>.
-  1.  Select and download the Evergreen Standalone Installer.
-  1.  Follow the installation prompts.
+  1. Go to <https://aka.ms/webview2installer>.
+  1. Select and download the Evergreen Standalone Installer.
+  1. Follow the installation prompts.
 
 ### Web Office
 
@@ -44,23 +44,23 @@ You must install the Report Builder Excel Add-in to use Report Builder for Custo
 
 To download and install the Report Builder Add-in
 
-1.  Launch Excel and open a new workbook.
+1. Launch Excel and open a new workbook.
 
-1.  Select Insert > Get Add-ins.
+1. Select Insert > Get Add-ins.
 
-1.  In the Office Add-ins dialog, select the Store tab.
+1. In the Office Add-ins dialog, select the Store tab.
 
-1.  Search for "Report Builder" and click Add.
+1. Search for "Report Builder" and click Add.
 
-1.  In the License terms and privacy policy dialog box, click Continue.
+1. In the License terms and privacy policy dialog box, click Continue.
 
 **If the Store tab isn't displayed**
 
-1.  In Excel, select File > Account >Manage Settings.
+1. In Excel, select File > Account >Manage Settings.
 
-1.  Check the box next to "Enable optional connected experiences"
+1. Check the box next to "Enable optional connected experiences"
 
-1.  Restart Excel.
+1. Restart Excel.
 
 **If your organization blocks access to the Microsoft Store**
 
@@ -76,15 +76,15 @@ After installing the Report Builder Add-in, the Report Builder icon is displayed
 
 After you install the Report Builder for Excel Add-in for your operating platform or browser, follow these steps to log in to Report Builder.
 
-1.  Open an Excel workbook.
+1. Open an Excel workbook.
 
-1.  Click the Report Builder icon to launch Report Builder.
+1. Click the Report Builder icon to launch Report Builder.
 
-1.  From the Adobe Report Builder toolbar, click **Login**.
+1. From the Adobe Report Builder toolbar, click **Login**.
 
     ![Click the Report Builder login button.](./assets/rb_login.png)
 
-1.  Enter your Adobe Experience ID account information. Your account information should match your Customer Journey Analytics credentials.
+1. Enter your Adobe Experience ID account information. Your account information should match your Customer Journey Analytics credentials.
 
     ![Your login icon and organization.](./assets/image4.png)
 
@@ -94,9 +94,9 @@ After you log in, your login icon and organization will appear at the top of the
 
 When you first log in, you are logged in to the default organization assigned to your profile.
 
-1.  Click the name of the organization that is displayed when you log in.
+1. Click the name of the organization that is displayed when you log in.
 
-1.  Select an organization from the list of available organizations. Only organizations that you have access to are listed.
+1. Select an organization from the list of available organizations. Only organizations that you have access to are listed.
 
     ![The list of organizations that you can access.](./assets/image5.png)
 
@@ -104,10 +104,10 @@ When you first log in, you are logged in to the default organization assigned to
 
 You can sign out from Report Builder from the user profile.
 
-1.  Save changes to any open workbooks.
+1. Save changes to any open workbooks.
 
-1.  Click the avatar icon to display your user profile.
+1. Click the avatar icon to display your user profile.
 
     ![Your user profile avatar and the Sign Out button.](./assets/image6.png)
 
-1.  Click **Sign Out**.
+1. Click **Sign Out**.

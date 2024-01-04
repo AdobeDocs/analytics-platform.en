@@ -4,6 +4,7 @@ description: Describes how to do advanced Customer Journey Analytics analysis in
 feature: Workspace Basics
 exl-id: 17f50618-54eb-4d60-9f5e-62aab9a3c49b
 solution: Customer Journey Analytics
+role: User
 ---
 # Perform advanced analysis
 

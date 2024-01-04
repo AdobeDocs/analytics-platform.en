@@ -3,6 +3,7 @@ description: There are two ways to use metrics in Analysis Workspace.
 title: Metrics
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
+role: User
 ---
 # Metrics
 

@@ -4,6 +4,7 @@ description: Learn about connections in Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
+role: Admin
 ---
 # Connections overview
 

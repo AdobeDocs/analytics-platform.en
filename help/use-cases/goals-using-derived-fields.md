@@ -4,6 +4,7 @@ description: Understand how you can use Derived fields to report on goals (targe
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
+role: User
 ---
 # Use derived fields to report on goals
 

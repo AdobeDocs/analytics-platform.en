@@ -4,6 +4,7 @@ description: All settings that you can adjust to create or edit a data view.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
+role: Admin
 ---
 # Create or edit a data view
 
