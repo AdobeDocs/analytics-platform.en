@@ -204,8 +204,9 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 | Adobe Analytics source connector to Real-time Customer Profile (A4T not enabled) | < 2 minutes |
 | Adobe Analytics source connector to Real-time Customer Profile (A4T enabled) | < 30 minutes |
 | Data ingestion into Data Lake from Edge Network or streaming ingestion | < 60 minutes |
-| Data ingestion into Data Lake from Adobe Analytics source connector | < 90 minutes |
+| Data ingestion into Data Lake from Adobe Analytics source connector | < 2.25 hours |
 | Data ingestion into Customer Journey Analytics from Data Lake | < 90 minutes |
+| Stitching (optional feature; see [Stitching overview](../stitching/overview.md) for more information) | < 3.25 hours | 
 | Adobe Analytics source connector backfill of less than 10 billion events (maximum of 13 months of historical data) | < 4 weeks |
 | Audience publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | ≈ 60 minutes |
 | Refresh frequency for audiences | One-time refresh: latency of less than 5 minutes.<br/>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate). |
