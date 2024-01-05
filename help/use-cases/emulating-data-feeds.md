@@ -61,7 +61,7 @@ Alternatively, you can use `identityMap` to query for identities. This object is
 
 The XDM fields you can use in your query depend on the schema definition on which your datasets are based. Ensure you do understand the schema underlying the dataset. 
 
-To ease the mapping between the Data Feed columns and XDM fields, you should consider to include the [Adobe Analytics ExperienceEvent Template](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) field group in your experience event schema. See [Best practices for data modeling](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) and more specifically [Adobe application schema field groups](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+To define the mapping between the Data Feed columns and XDM fields, you should consider to inspect and potentially (re-)use some aspects of the [Adobe Analytics ExperienceEvent Template](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) field group. See [Best practices for data modeling](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) and more specifically [Adobe application schema field groups](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
 
 For example, in case you want to use *page name* as part of your data feed: 
 
