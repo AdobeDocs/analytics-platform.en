@@ -131,7 +131,7 @@ Select a column header to sort the exports by that column. By default, exports a
    | Name | The name of the export. Users give exports a name when they create them, as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).  | 
    | ID | The ID automatically assigned to the export when it is created. <!-- True? --> |
    | Data view name | The name of the data view associated with the export. Users can select the data view when they create the export, as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md). | 
-   | Status | The status of the export. Available statuses are [!UICONTROL Active], [!UICONTROL Complete], and [!UICONTROL Failed].<p> **Note:** For information about troubleshooting failed exports, see [Troubleshoot failed exports](/help/components/exports/troubleshoot-exports.md).</p> |
+   | Status | The status of the export. Available statuses are [!UICONTROL Active], [!UICONTROL Completed], and [!UICONTROL Failed].<p> **Note:** For information about troubleshooting failed exports, see [Troubleshoot failed exports](/help/components/exports/troubleshoot-exports.md).</p> |
    | Tags | Displays any tags that are applied to the export. For information about how to apply tags to an export, see [Tag an export](#tag-an-export). |
    | Table size (last send) | The size of the export the last time it was sent.  |
    | Created by | The user who created the export. |
