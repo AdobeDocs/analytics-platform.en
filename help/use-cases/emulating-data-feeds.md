@@ -47,30 +47,36 @@ You can use all the functionality of standard ANSI SQL for SELECT statements and
 * [metadata PostgreSQL commands](https://experienceleague.adobe.com/docs/experience-platform/query/sql/metadata.html?lang=en),
 * [prepared statements](https://experienceleague.adobe.com/docs/experience-platform/query/sql/prepared-statements.html?lang=en).
 
-
-#### Identities
-
-In Experience Platform, various identities are available. When creating your queries, ensure you are querying identities correctly. 
-
-Often you find identities in a separate field group. In an implementation ECID (`ecid`) can be defined as part of a field group with a `core` object, which itself is part of an `identification` object (for example: `_sampleorg.identification.core.ecid`). The ECIDs might be organized differently in your schemas.
-
-Alternatively, you can use `identityMap` to query for identities. This object is of type `Map` and uses a [nested data structure](#nested-data-structure).
-
-
 #### Data feed columns
 
-The XDM fields that you can use in your query depend on the schema definition on which your datasets are based. Ensure you do understand the schema underlying the dataset. 
+The XDM fields that you can use in your query depend on the schema definition on which your datasets are based. Ensure you do understand the schema underlying the dataset. See the [Datasets UI guide](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en) for more information.
 
-To define the mapping between the Data Feed columns and XDM fields, you should consider to inspect and potentially (re-) use some aspects of the [Adobe Analytics ExperienceEvent Template](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) field group. See [Best practices for data modeling](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) and more specifically [Adobe application schema field groups](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+To help you to define the mapping between the Data Feed columns and XDM fields, see [Analytics field mapping](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en). See also the [Schemas UI overview](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en#defining-xdm-fields) for more information how to manage XDM resources, including schemas, classes, field groups, and data types.
 
 For example, in case you want to use *page name* as part of your data feed: 
 
 * In Adobe Analytics Data Feed's UI, you would select **[!UICONTROL pagename]** as the column to add to your data feed definition. 
 * In Query Service, you include `web.webPageDetails.name` from the `sample_event_dataset_for_website_global_v1_1` dataset (based on the **Sample Event Schema for Website (Global v1.1)** experience event schema) in your query. See the [Web Details schema field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) for more information.
 
+<!--
 To understand the mapping between Adobe Analytics data feed columns and XDM fields in your experience event dataset and underlying schema, see [Analytics fields mapping](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en) and [Adobe Analytics ExperienceEvent Full Extension schema field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) for more information.
 
 Furthermore, the [automatically collected information by the Experience Platform Web SDK (out of the box)](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) might be relevant to identify columns for your query.
+-->
+
+#### Identities
+
+In Experience Platform, various identities are available. When creating your queries, ensure you are querying identities correctly.
+
+
+Often you find identities in a separate field group. In an implementation ECID (`ecid`) can be defined as part of a field group with a `core` object, which itself is part of an `identification` object (for example: `_sampleorg.identification.core.ecid`). The ECIDs might be organized differently in your schemas.
+
+Alternatively, you can use `identityMap` to query for identities. This object is of type `Map` and uses a [nested data structure](#nested-data-structure). 
+
+See [Define identity fields in the UI](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en) for more information on how to define identity fields in Experience Platform. 
+
+Refer to [Primary identifiers in Analytics data](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#primary-identifiers-in-analytics-data) for an understanding how Adobe Analytics identities are mapped to Experience Platform identities when using the Analytics source connector. This might serve as a guidance setting up your identities, even when not using the Analytics source connector.
+
 
 #### Hit level data and identification
 
@@ -78,32 +84,28 @@ Based on the implementation, hit level data traditionally collected in Adobe Ana
 
 | Data feed column | XDM field | Type | Description |
 |---|---|---|---|
-| hitid_high + hitid_low | _id | string | A unique identifier to identify a hit. |
-| hitid_low | _id | string | Used with hitid_high to uniquely identify a hit. |
-| hitid_high | _id | string | Used with hitid_high to uniquely identify a hit. |
-| hit_time_gmt | receivedTimestamp | string | The timestamp of the hit, based in UNIX&reg; time. |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | Timestamp of the first hit of the visitor in UNIX&reg; time. |
-| cust_hit_time_gmt | timestamp | string | This is only used in timestamp-enabled datasets. This is the timestamp sent with the hit, based on UNIX&reg; time. |
-| visid_high + visid_low | identityMap | object | A unique identifier for a visit. |
-| visid_high + visid_low | endUserIDs._experience.aaid.id | string | A unique identifier for a visit. |
-| visid_high | endUserIDs._experience.aaid.primary | boolean | Used with visid_low to uniquely identify a visit. |
-| visid_high | endUserIDs._experience.aaid.namespace.code | string | Used with visid_low to uniquely identify a visit. |
-| visid_low | identityMap | object | Used with visid_high to uniquely identify a visit. |
-| cust_visid | identityMap | object | The customer visitor I.D |
-| cust_visid | endUserIDs._experience.aacustomid.id | object | The customer visitor ID. |
-| cust_visid | endUserIDs._experience.aacustomid.primary | boolean | The customer visitor ID namespace code. |
-| cust_visid | endUserIDs._experience.aacustomid.namespace.code | string | Used with visid_low to uniquely identify the customer visitor id. |
-| geo\_* | placeContext.geo.* | string, number | Geolocation data, like country, region, city, and others |
-| visit_page_num | _experience.analytics.session.depth | number | A variable used in the Hit Depth dimension. This value increases by 1 for each hit the user generates, and resets after each visit. |
-| event_list | commerce.purchases, commerce.productViews, commerce.productListOpens, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101to200.*, ..., \_experience.analytics.event901_1000.\* | string | Standard commerce and custom events triggered on the hit. |
-| page_event | web.webInteraction.type | string | The type of hit that is sent in the image request (standard hit, download link, exit link, or custom link clicked). |
-| page_event | web.webInteraction.linkClicks.value | number | The type of hit that is sent in the image request (standard hit, download link, exit link, or custom link clicked). |
-| page_event_var_1 | web.webInteraction.URL | string | A variable that is only used in link tracking image requests. This variable contains the URL of the download link, exit link, or custom link clicked. |
-| page_event_var_2 | web.webInteraction.name | string | A variable that is only used in link tracking image requests. This lists the custom name of the link, if it is specified. |
-| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | string |  The numeric ID, representing the referrer type of the first referrer of the visitor. |
-| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | integer | Timestamp of the first hit of the visitor in UNIX&reg; time. | 
-| paid_search | search.isPaid | boolean | A flag that is set if the hit matches paid search detection. |
-| ref_type | web.webReferrertype | string | A numeric ID representing the type of referral for the hit. |
+| `hitid_high` + `hitid_low` | `_id` | string | A unique identifier to identify a hit. |
+| `hitid_low` | `_id` | string | Used with `hitid_high` to uniquely identify a hit. |
+| `hitid_high` | `_id` | string | Used with `hitid_high` to uniquely identify a hit. |
+| `hit_time_gmt` | `receivedTimestamp` | string | The timestamp of the hit, based in UNIX&reg; time. |
+| `cust_hit_time_gmt` | `timestamp` | string | This is only used in timestamp-enabled datasets. This is the timestamp sent with the hit, based on UNIX&reg; time. |
+| `visid_high` + `visid_low` | `identityMap` | object | A unique identifier for a visit. |
+| `visid_high` + `visid_low` | `endUserIDs._experience.aaid.id` | string | A unique identifier for a visit. |
+| `visid_high` | `endUserIDs._experience.aaid.primary` | boolean | Used with `visid_low` to uniquely identify a visit. |
+| `visid_high` | `endUserIDs._experience.aaid.namespace.code` | string | Used with `visid_low` to uniquely identify a visit. |
+| `visid_low` | `identityMap` | object | Used with `visid_high` to uniquely identify a visit. |
+| `cust_visid` | `identityMap` | object | The customer visitor ID. |
+| `cust_visid` | `endUserIDs._experience.aacustomid.id` | object | The customer visitor ID. |
+| `cust_visid` | `endUserIDs._experience.aacustomid.primary` | boolean | The customer visitor ID namespace code. |
+| `cust_visid` | `endUserIDs._experience.aacustomid.namespace.code` | string | Used with `visid_low` to uniquely identify the customer visitor id. |
+| `geo\_*` | `placeContext.geo.* `| string, number | Geolocation data, like country, region, city, and others |
+| `event_list` | `commerce.purchases`, `commerce.productViews`, `commerce.productListOpens`, `commerce.checkouts`, `commerce.productListAdds`, `commerce.productListRemovals`, `commerce.productListViews`, `_experience.analytics.event101to200.*`, ..., `_experience.analytics.event901_1000.*` | string | Standard commerce and custom events triggered on the hit. |
+| `page_event` | `web.webInteraction.type` | string | The type of hit that is sent in the image request (standard hit, download link, exit link, or custom link clicked). |
+| `page_event` | `web.webInteraction.linkClicks.value` | number | The type of hit that is sent in the image request (standard hit, download link, exit link, or custom link clicked). |
+| `page_event_var_1` | `web.webInteraction.URL` | string | A variable that is only used in link tracking image requests. This variable contains the URL of the download link, exit link, or custom link clicked. |
+| `page_event_var_2` | `web.webInteraction.name` | string | A variable that is only used in link tracking image requests. This lists the custom name of the link, if it is specified. |
+| `paid_search` | `search.isPaid` | boolean | A flag that is set if the hit matches paid search detection. |
+| `ref_type` | `web.webReferrertype` | string | A numeric ID representing the type of referral for the hit. |
 
 #### Post columns
 
