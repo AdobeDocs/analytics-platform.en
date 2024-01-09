@@ -15,9 +15,9 @@ View a video on row and column settings here:
 
 ## Edit [!UICONTROL Column Settings] {#edit-column-settings}
 
-To access [!UICONTROL Column Settings], drag a Freeform Table to the project, then click the gear icon in the column heading.
+To access [!UICONTROL Column Settings], drag a Freeform Table to the project, then click the settings icon ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the column heading.
 
-![The Column settings showing Total cells, Table cells, and Table cell preview.](assets/column_settings.png)
+<img src="./assets/column-settings.png" alt="The Column settings showing Total cells, Table cells, and Table cell preview." width=50%/>
 
 You can edit settings **for multiple columns at once**. Just select multiple columns and click the settings icon of any one of those columns. Any changes that you make apply to all columns with cells selected in them.
 
@@ -26,6 +26,7 @@ You can edit settings **for multiple columns at once**. Just select multiple col
 | Number | Determines if a cell shows/hides the numeric value for the metric. For example, if the metric is Page Views, the numeric value is the number of page views for the row item. |
 | Percent | Determines if a cell shows/hides the percent value for the metric. For example, if the metric is Page Views, the percent value is the number of page views for the row item divided by the total page views for the column.  Note:  We can show percentages greater than 100%, to be more accurate. We are also moving the upper bound cap to 1,000% to ensure columns can grow in widths too large. |
 | Anomalies | Determines if anomaly detection is run on the values in this column. |
+| Show forecasting | Determines if forecast values are shown in this column. |
 | Wrap Header Text | Lets you wrap the header text in Freeform tables to make headers more readable and tables more shareable. This is useful for .pdf rendering and for metrics with long names. Enabled by default. |
 | Interpret zero as no value | For cells with a 0 value, determines whether to show a 0 or a blank cell. This is useful when you look at data for each day of a month, and some days haven't happened yet.  Instead of showing 0's for future dates, blank cells can be shown instead. Charts respect this setting as well (i.e., they do not showing a line or bar with 0 values when this setting is checked). |
 | Background | Determines if a cell shows/hides all cell formatting, including the bar graph and conditional formatting. |
@@ -37,7 +38,7 @@ You can edit settings **for multiple columns at once**. Just select multiple col
 
 Conditional formatting applies formatting to upper, midpoint, and lower limits that you can define. Applying conditional formatting (colors, etc) within Freeform tables is also automatically enabled on breakdowns, unless "Custom" limits are selected.
 
-![The Conditional formatting options with Custom selected.](assets/conditional-formatting.png)
+<img src="./assets/conditional-formatting.png" alt="The Conditional formatting options with Custom selected" width=50%/>
 
 | Element | Description |
 | --- | --- |

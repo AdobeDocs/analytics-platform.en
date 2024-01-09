@@ -74,9 +74,9 @@ You can customize settings for all visualizations that you create. For more info
 
 ## Settings {#settings}
 
-Each visualization has its own settings that you can manage. To access [!UICONTROL Visualization Settings], click the [!UICONTROL Visualization Settings] gear icon.
+Each visualization has its own settings that you can manage. To access visualization settings, select the settings icon ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg).
 
-![Visualizations Settings showing the setting options described in the next section.](assets/settings.png)
+<img src="./assets/viz-settings-line.png" alt="Visualization settings" width=50%/>
 
 | Setting | Description |
 | --- | --- |
