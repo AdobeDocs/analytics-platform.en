@@ -30,7 +30,7 @@ A line chart is the only visualization that allows you to view forecasts.
 
 1. Select the settings icon ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the visualization header, then ensure that **[!UICONTROL Show forecast]** is selected in the list of options.
 
-1. (optional) To allow the forecasts to scale the chart properly, select **[!UICONTROL Allow forecasting to scale Y-axis]**. This option is not selected by default because it can sometimes render a less legible chart.
+1. (optional) To allow the forecasts to scale the chart properly, select **[!UICONTROL Allow forecast to scale Y-axis]**. This option is not selected by default because it can sometimes render a less legible chart.
 
 1. Click outside the **[!UICONTROL Settings]** menu to view the updated line chart.
 
