@@ -1,6 +1,6 @@
 ---
 description: Learn about forecasting in Analysis Workspace.
-title: How forecasting works
+title: How forecastint works
 feature: Forecasting
 role: User
 ---

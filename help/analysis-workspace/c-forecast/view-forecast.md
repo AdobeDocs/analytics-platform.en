@@ -12,21 +12,21 @@ You can view forecasts in a freeform table or in a line chart.
 
 You can view forecasts in a time-series freeform table.
 
-1. Select the column settings icon ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the column header, then ensure that **[!UICONTROL Show forecasting]** is selected in the list of options. For more information, see [Column settings](/help/visualizations/freeform-table/column-row-settings/column-settings.md).
+1. Select the column settings icon ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the column header, then ensure that **[!UICONTROL Show forecast]** is selected in the list of options. For more information, see [Column settings](/help/visualizations/freeform-table/column-row-settings/column-settings.md).
 
 1. Click outside the **[!UICONTROL Column settings]** menu to save the setting and view the updated table.
    
 1. Forecasts are shown in the table as follows:
 
-    ![Show forecasts in table](assets/show-forecast-table.png)
+    ![Show forecast in table](assets/show-forecast-table.png)
 
-    * The value and percentage for each cell are displayed in **dark grey**.
-    * A forecast symbol <img src="./assets/forecast.svg" alt="Forecast symbol" width=20/> is displayed in the upper-right corner of the cell.
+    * The forecast value and percentage for each cell are displayed in **dark grey**.
+    * To indicate a forecast value, a forecast symbol <img src="./assets/forecast.svg" alt="Forecast symbol" width=20/> is displayed in the upper-right corner of the cell.
 
 
-## View forecasting in a line chart
+## View forecasts in a line chart
 
-A line chart is the only visualization that allows you to view forecasting.
+A line chart is the only visualization that allows you to view forecasts.
 
 1. Select the settings icon ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the visualization header, then ensure that **[!UICONTROL Show forecast]** is selected in the list of options.
 
