@@ -1275,6 +1275,34 @@ The following limitations apply to the Derived field functionality in general:
   - From this maximum of ten different schema fields, only a maximum of three lookup schema or profile schema fields are allowed.
 - You can have a maximum of 100 derived fields per Customer Journey Analytics connection.
 
+
+### Summary of function limits
+
+| Function | Limits |
+|---|---|
+| <p>Case When</p> | <ul><li>5 Case When functions per derived field</li><li>200 operators per derived field</li></ul> |
+| <p>Classify</p> | <ul><li>5 Classify functions per derived field</li><li>100 rows per function</li></ul> |
+| <p>Concatenate</p> | <ul><li>2 Concatenate functions per derived field</li></ul> |
+| <p>Find & Replace</p> | <ul><li>2 Find & Replace functions per derived field</li></ul> |
+| <p>Lookup</p> | <ul><li>5 Lookup functions per derived field</li></ul> |
+| <p>Lowercase</p> | <ul><li>2 Lowercase functions per derived field</li></ul> |
+| <p>Merge Fields</p> | <ul><li>2 Merge Fields functions per derived field</li></ul> |
+| <p>Regex Replace</p> | <ul><li>1 Regex Replace function per derived field</li></ul> |
+| <p>Split</p> | <ul><li>5 Split functions per derived field</li></ul> |
+| <p>Trim</p> | <ul><li>1 Trim function per derived field</li></ul> |
+| <p>URL Parse</p> | <ul><li>5 URL Parse functions per derived field</li></ul> |
+
+{style="table-layout:auto"}
+
+### Operators
+
+An operator in an If or Else If construct within a Case When function is the to combination of a criterion with **one** value. Every additional value for the criterion adds to the number of operators.
+
+As an example, the condition below uses 13 operators.
+
+![Sample operators](assets/operators-sample.png)
+
+
 ## More information
 
 [`Trim`](#trim) and [`Lowercase`](#lowercase) are features already available in the component settings in [Data views](../component-settings/overview.md). Using Derived Fields allows you to combine these functions to do more complex data transformation directly in Customer Journey Analytics. For example, you can use `Lowercase` to remove case sensitivity in an event field, and then use [`Lookup`](#lookup) to match the new lowercase field to a lookup dataset that only has lookup keys in lowercase. Or you can use `Trim` to remove characters before setting up `Lookup` on the new field.
