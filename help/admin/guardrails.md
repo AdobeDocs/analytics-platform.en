@@ -70,7 +70,7 @@ Some of the features and their associated value for the limit depend on the Cust
 | Audience refresh frequency | 4 | System-enforced guardrail  | Maximum frequency in hours an [audience](../components/audiences/audiences-overview.md) may be refreshed. | | 
 | Audience refresh lookback window | 90 | System-enforced guardrail  | Maximum number of days for refresh lookback window. | 
 | Refreshing audience expiration date | 13 | System-enforced guardrail  | Maximum number of months audience ceases to refresh from the date of creation. Customers can extend this for an additional 13 months. | 
-| Number of refreshing audiences | 75, 100, 150 | System-enforced guardrail  | Maximum number of refreshing audiences, value varies depending on the package. | 
+| Number of refreshing audiences | 75, 100 | System-enforced guardrail  | Maximum number of refreshing audiences, value varies depending on the package (see Product Description). | 
 
 {style="table-layout:auto"}
 
