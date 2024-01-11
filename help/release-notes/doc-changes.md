@@ -9,6 +9,16 @@ feature: Release Notes
 
 The following updates were made to the Customer Journey Analytics documentation since its inception.
 
+## 2024
+
+| Feature | Description |
+| --- | --- |
+| **January 2024** | |
+| Derived fields | Added summary of function [limitations](/help/data-views/derived-fields/derived-fields.md#limitations) and explanation on how to determine number of [operators](/help/data-views/derived-fields/derived-fields.md#operators) used in a function. |
+
+{style="table-layout:auto"}
+
+
 ## 2023
 
 | Feature | Description |
@@ -88,6 +98,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Landing page | New landing page updates [landing page](/help/getting-started/landing.md).  |
 | Schedule Workbooks | Dedicated page to describe how to [Schedule Workbooks](/help/report-builder/schedule-reportbuilder.md) in Report Builder.  |
 | Object array support for profile and lookup datasets | Updated [Use arrays of objects](/help/use-cases/object-arrays.md) and [Ingest Adobe Experience Platform audiences](/help/use-cases/data-ingestion/ingest-aep-segments.md) to reflect object array support for profile and lookup datasets. |
+
+{style="table-layout:auto"}
 
 ## 2022
 
