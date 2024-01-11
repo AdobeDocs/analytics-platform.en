@@ -14,7 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **January 2024** | |
-| Derived fields | Added summary of function limitations and explanation on how to determine number of operators used in a function. |
+| Derived fields | Added summary of function [limitations](/help/data-views/derived-fields/derived-fields.md#limitations) and explanation on how to determine number of [operators](/help/data-views/derived-fields/derived-fields.md#operators) used in a function. |
 
 {style="table-layout:auto"}
 
