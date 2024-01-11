@@ -211,7 +211,7 @@ Applies conditionals, based on defined criteria from one or more fields. These c
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] container:</p><ul><li>[!UICONTROL Value]</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Criterion] (see included operators, based on selected value type)</li></ul></li><li>[!UICONTROL Then set value to], [!UICONTROL Otherwise set value to]:</p><ul><li>[!UICONTROL Value]</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></ul></li></ul> | <p>Strings</p><ul><li>Equals</li><li>Equals any term</li><li>Contains the phrase</li><li>Contains any term</li><li>Contains all terms</li><li>Starts with</li><li>Starts with any term</li><li>Ends with</li><li>Ends with any term</li><li>Does not equal</li><li>Does not equal any term</li><li>Does not contain the phrase</li><li>Does not contain any term</li><li>Does not contain all terms</li><li>Does not start with</li><li>Does not start with any term</li><li>Does not end with</li><li>Does not end with any term</li><li>Is set</li><li>Is not set</li></ul><p>Numeric</p><ul><li>Equals</li><li>Does not equal</li><li>Is greater than</li><li>Is greater than or equal to</li><li>Is less than</li><li>Is less than or equal to</li><li>Is set</li><li>Is not set</li></ul><p>Dates</p><ul><li>Equals</li><li>Does not equal</li><li>Is later than</li><li>Is later than or equal to</li><li>Is before</li><li>Is before or equal to</li><li>Is set</li><li>Is not set</li></ul> | <ul><li>5 functions per derived field</li><li>200 operators per derived field. An example of one single operator is 'Referring Domain contains google'. </li></ul> |<p>New derived field</p> |
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] container:</p><ul><li>[!UICONTROL Value]</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Criterion] (see included operators, based on selected value type)</li></ul></li><li>[!UICONTROL Then set value to], [!UICONTROL Otherwise set value to]:</p><ul><li>[!UICONTROL Value]</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></ul></li></ul> | <p>Strings</p><ul><li>Equals</li><li>Equals any term</li><li>Contains the phrase</li><li>Contains any term</li><li>Contains all terms</li><li>Starts with</li><li>Starts with any term</li><li>Ends with</li><li>Ends with any term</li><li>Does not equal</li><li>Does not equal any term</li><li>Does not contain the phrase</li><li>Does not contain any term</li><li>Does not contain all terms</li><li>Does not start with</li><li>Does not start with any term</li><li>Does not end with</li><li>Does not end with any term</li><li>Is set</li><li>Is not set</li></ul><p>Numeric</p><ul><li>Equals</li><li>Does not equal</li><li>Is greater than</li><li>Is greater than or equal to</li><li>Is less than</li><li>Is less than or equal to</li><li>Is set</li><li>Is not set</li></ul><p>Dates</p><ul><li>Equals</li><li>Does not equal</li><li>Is later than</li><li>Is later than or equal to</li><li>Is before</li><li>Is before or equal to</li><li>Is set</li><li>Is not set</li></ul> | <ul><li>5 functions per derived field</li><li>200 [operators](#operators) per derived field. An example of one single operator is 'Referring Domain contains google'. </li></ul> |<p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -1276,11 +1276,11 @@ The following limitations apply to the Derived field functionality in general:
 - You can have a maximum of 100 derived fields per Customer Journey Analytics connection.
 
 
-### Summary of function limits
+### Summary of function limitations
 
-| Function | Limits |
+| Function | Limitations |
 |---|---|
-| <p>Case When</p> | <ul><li>5 Case When functions per derived field</li><li>200 operators per derived field</li></ul> |
+| <p>Case When</p> | <ul><li>5 Case When functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
 | <p>Classify</p> | <ul><li>5 Classify functions per derived field</li><li>100 rows per function</li></ul> |
 | <p>Concatenate</p> | <ul><li>2 Concatenate functions per derived field</li></ul> |
 | <p>Find & Replace</p> | <ul><li>2 Find & Replace functions per derived field</li></ul> |
@@ -1296,7 +1296,7 @@ The following limitations apply to the Derived field functionality in general:
 
 ### Operators
 
-An operator in an If or Else If construct within a Case When function is the to combination of a criterion with **one** value. Every additional value for the criterion adds to the number of operators.
+An operator in an If or Else If construct within a Case When function is the combination of a criterion with **one** value. Every additional value for the criterion adds to the number of operators.
 
 As an example, the condition below uses 13 operators.
 
