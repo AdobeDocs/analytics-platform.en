@@ -18,7 +18,7 @@ These release notes cover the release period of end of October, 2023 through Jan
 | **Guided Analysis - Trendlines** | Trendline overlays are now available in the [Usage](/help/guided-analysis/types/usage.md) view, which helps depict a clearer pattern in data. | N/A | January 17, 2023 |
 | **Row Count Metrics for Lookup and Profile Datasets** | Up until this release, row count metrics were only available for event datasets. Now row count metrics are also available for lookup and profile datasets. | N/A | January 17, 2023 |
 | **Connections Detail Page - Skipped Records** | You can now inspect the reasons why records are skipped as part of defining a connection. See Manage Connections for more information. | N/A | January 17, 2023 |
-| **Updates to the Key Metrics Summary visualization** | When using the Key Metric Summary visualization, the Comparison date range can now automatically update, depending on whether the Comparison date range option you choose is relative to the primary date range or fixed. [Learn more](/help/analyze/analysis-workspace/visualizations/key-metric.md). | N/A | January 17, 2023 |
+| **Updates to the Key Metrics Summary visualization** | When using the Key Metric Summary visualization, the Comparison date range can now automatically update, depending on whether the Comparison date range option you choose is relative to the primary date range or fixed. [Learn more](/help/analysis-workspace/visualizations/key-metric.md). | N/A | January 17, 2023 |
 
 {style="table-layout:auto"}
 
