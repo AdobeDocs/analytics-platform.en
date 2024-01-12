@@ -46,7 +46,7 @@ Add additional data to the chart. When more than one series is visible on the ch
   * [!UICONTROL Logarithmic]: Creates a curved regression line. Best for data that increases or decreases quickly, then becomes more level. Equation: `y = a + b * log(x)`
   * [!UICONTROL Moving average]: Creates a smooth trendline based on a set of averages. Also known as a rolling average, a moving average uses a specific number of previous data points (determined by your selection), averages them, and uses the average as the point in the line. Examples include seven day moving average or four week moving average. Available moving average options depend on your selected interval and date range.
 
-## Apply time comparison
+## Time comparison
 
 {{apply-time-comparison}}
 

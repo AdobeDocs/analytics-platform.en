@@ -31,17 +31,18 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
+* **[!UICONTROL View]**: Switch between this view type and [Net growth](net-growth.md).
 * **[!UICONTROL Events]**: The event that you want to measure. Since this view type is user-based, a user who interacts with the event once within the period is counted as an active user. You can include one event in a query.
-* **[!UICONTROL People]**: The segment that you want to measure. You can include one segment in a query.
+* **[!UICONTROL Counted as]**: The metric that you want to measure. Options include [!UICONTROL Number of users] and [!UICONTROL Percentage of users].
+* **[!UICONTROL Segments]**: The segment that you want to filter data by. You can include one segment in a query.
 
 ## Chart settings
 
 The [!UICONTROL Active] view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **[!UICONTROL Metric]**: The metric that you want to measure. Options include Number of users and Percentage of users.
-* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include Stacked bar and Stacked area.
+* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Stacked bar] and [!UICONTROL Stacked area].
 
-## Apply time comparison
+## Time comparison
 
 {{apply-time-comparison}}
 
