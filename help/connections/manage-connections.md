@@ -9,51 +9,59 @@ role: Admin
 ---
 # Manage connections
 
-Once Admin users have [created one or more connections](/help/connections/create-connection.md), they can manage them in the [!UICONTROL Connections] Manager. The latest update to the Connection experience adds two important capabilities within the Connection Details page, described further down on this page:
-
-* It lets you check the **status of your connection's datasets and of the ingestion process**. This status check lets you know when your data is available so that you can go into Analysis Workspace and start analysis.
-
-* It lets you **identify any data discrepancies** due to misconfiguration. Are you missing any rows? If yes, what rows are missing and why? Did you misconfigure connections and cause missing data in Customer Journey Analytics?
-
-Here is a video about the new Connections Manager:
-
->[!VIDEO](https://video.tv.adobe.com/v/342097/?quality=12&learn=on)
-
-## Connections Manager {#connections-manager}
-
-The Connections Manager allows you to:
+Once Admin users have [created one or more connections](/help/connections/create-connection.md), they can manage them in **[!UICONTROL Connections]**. Connections lets you:
 
 * View all your connections at a glance, including the owner, the sandbox, and when they were created and modified.
-* View all datasets in a connection.
-* Check the status of a connection.
+* Edit a connection.
 * Delete a connection.
 * Rename a connection.
 * Create a data view from a connection.
+* View all datasets in a connection.
+* Check the status of your connection's datasets and of the ingestion process. For example, when is your data available so that you can go into Analysis Workspace and start analysis.
+* Identify any data discrepancies due to misconfiguration. Are you missing any rows? If so, what rows are missing and why? Did you misconfigure connections and cause missing data in Customer Journey Analytics?
 
-![](assets/conn-manager.png)
 
-### Connection Manager settings
+A table shows all connections available. You can quickly search for a connection using the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) field. 
 
-| Setting | Description |
+The following colunns are available for the table.
+
+| Column / Icon | Description |
 | --- | --- |
-| [!UICONTROL Name] | The connection's friendly name. When you click the hyperlinked name, you get to the Connection details page described below.|
-| Connection info | Click the info icon next to the connection name to view the following information:![View connection info](assets/conn-info.png) |
-| Edit a connection | Click the ellipsis (...) next to the connection name, then click [!UICONTROL Edit].![Edit connection](assets/conn-edit-delete.png) For more information, see "Edit connection" below. |
-| Delete a connection | Click the ellipsis (...) next to the connection name, then click [!UICONTROL Delete]. More information under the "Delete connections" heading below.|
-| Create data view | Click the ellipsis (...) next to the connection name, then click [!UICONTROL Create data view]. This action creates a new data view based on this connection. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html) |
-| [!UICONTROL Datasets] | The datasets that are part of the connection. You can click the hyperlink to view all the datasets in the connection. Clicking on a dataset opens that dataset in Adobe Experience Platform, in a new tab. |
-| [!UICONTROL Sandbox] | The [Adobe Experience Platform sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) from which this connection draws its datasets. This sandbox was selected when you first created the connection. It cannot be changed.|
+| [!UICONTROL Name] | The connection's friendly name. Select the hyperlinked name to see details of the connection. See [Connection details](#connection-details-page). |
+| ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Select ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) next to the connection name to view information about [!UICONTROL Datasets included], [!UICONTROL Sandbox], [!UICONTROL Owner], and more.<p><img src="./assets/conn-info.png" alt="View connection info" width=50%/> |
+| ![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | Select ![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) to create a Data view for the connection. This icon will only show when no data view is already associated with the connection. |
+| ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to: <p>![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Edit](#edit-connection) a connection.<p>![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Delete](#delete-connection) a connection.<p>![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) [Create new data view](../data-views/create-dataview.md). Use this to create additional data views for the connection. |
+| [!UICONTROL Datasets] | Shows one or more links to the datasets that are part of the connection. You can select the dataset hyperlink to view the dataset in the connection. If more datasets are part of the selection, select **[!UICONTROL +*x* more]** to show a **[!UICONTROL Datasets included]** panel with links to all datasets and an option to search for a specific dataset part of the connection.<p><img src="./assets/datasets-included.png" alt="Datassets included" width=50%/><p>Selecting a dataset opens the dataset in Adobe Experience Platform in a new tab. |
+| [!UICONTROL Sandbox] | Shows the [Adobe Experience Platform sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) from which this connection draws its datasets. This sandbox was selected when you first created the connection. It cannot be changed.|
 | [!UICONTROL Owner] | The person who created the connection. |
-| [!UICONTROL Import Data Sets] | Lets you enable or disable what used to be called "data streaming." |
-| [!UICONTROL Date Created] | The date when the connection was first created. |
-| [!UICONTROL Last Modified] | The date when the connection was last updated. |
+| [!UICONTROL Import new data] | Shows import new data status for datasets: <ul><li><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for how many datasets are configured to import new data, and</li><li><span style="color:gray">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** for how many datasets new data import is turned off.  |
+| [!UICONTROL Date created] | The date when the connection was first created. |
+| [!UICONTROL Last modified] | The date when the connection was last updated. |
+| [!UICONTROL Backfill data] | Shows backfill data status for datasets.<ul><li><span style="color:red">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of datasets where backfill data failed,</li><li><span style="color:orange">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of datasets where backfill data is processing,</li><li><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of datasets where backfill data completed, and</li><li><span style="color:grey">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no datasets are configured for backfilles.</li></ul>|
 
-### Delete connections {#connections-delete}
+You can configure which columns to display using ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). This shows the **Customize table** popup allowing you turn on/off columns in the table.
 
-Only Admins have permission to delete a connection. This action does not show up for non-admins.
+### Edit a connection
 
-1. Click the ellipsis (...) next to the connection name.
-1. Click [!UICONTROL Delete].
+Allows admins to edit the connection. 
+
+1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the connection name.
+1. Select **[!UICONTROL Edit]**.
+
+
+
+* Start and stop importing new data. This process was formerly known as "data streaming".
+* Rename a connection.
+* Refresh the dataset/s.
+* Remove dataset/s from the connections.
+
+
+### Delete a connection {#connections-delete}
+
+Only admins have permission to delete a connection. This action does not show up for non-admins.
+
+1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the connection name.
+1. Select **[!UICONTROL Delete]**.
 
 When you delete a connection in [!UICONTROL Customer Journey Analytics], an error message will indicate that:
 
@@ -62,26 +70,23 @@ When you delete a connection in [!UICONTROL Customer Journey Analytics], an erro
 
 [Learn more](/help/admin/cja-deletion.md) about deletion implications.
  
-### Search for a connection or dataset
-
-You can search for connections using the Search bar at the top, underneath the [!UICONTROL Connections] title.
 
 ### Sort connections
 
-You can sort connections by clicking each column header and sorting up or down.
+You can sort connections on Name, Sandbox, Owner, Date created, and Last modified. Repeatedly selecting any of these column headers toggles between ascending and descending sort.
 
 ## Connection Details page {#connection-detail}
 
-The new Connections Details page gives you a very detailed view of the status of a connection.
-
-It lets you:
+Connections details gives you a detailed view of the status of a connection. You can:
 
 * Check the status of your connection's datasets and of the ingestion process.
 * Identify configuration problems that lead to skipped, or deleted records.
 * See when the data is available for reporting.
 
 >[!IMPORTANT]
+>
 >Any data ingested before August 13, 2021, is not reflected in this [!UICONTROL Connections] dialog.
+
 
  Here are the widgets and settings explained:
 
@@ -139,12 +144,7 @@ It lets you:
 | [!UICONTROL Schema] | Shows the Adobe Experience Platform schema that this dataset is based on. |
 | [!UICONTROL Dataset ID] | This ID is system generated in Adobe Experience Platform. |
 
-## Edit connection
 
-Allows Admins to edit the connection. Select a connection, then click [!UICONTROL Edit Connection] to get to this dialog. Here, you can do the following:
-
-* Start and stop importing new data. This process was formerly known as "data streaming".
-* Rename a connection.
-* Refresh the dataset/s.
-* Remove dataset/s from the connections.
-
+>[!MORELIKETHIS]
+>
+>[View, troubleshoot, and modify connection settings](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja.html?lang=en) tutorial.
