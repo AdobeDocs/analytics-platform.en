@@ -87,7 +87,7 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin C
 | **[!UICONTROL Audit Logs Access]** |  This permission enforces the permission check on the [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) and the audit logs UI.  |
 | **[!UICONTROL Reporting Usage Admin]** | Lets users view and delete any report running in their company. |
 | **[!UICONTROL Reporting Usage View]** | Lets users see all of the concurrent reporting requests. |
-| [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md). <p>For information about how to add Destinations access for Customer Journey Analytics users in Adobe Experience Platform, see [Destinations and access control](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls) in [Destinations overview](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en)</p> |
+| [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md).  |
 | **[!UICONTROL Calculated Metrics Creation]** | Lets users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Filter Creation]** | Lets users create [filters](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Labs Access]** | Lets users access the [Labs](/help/labs/labs.md) tab in Customer Journey Analytics. |
