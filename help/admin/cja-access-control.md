@@ -50,9 +50,9 @@ In addition to being added as a Product Admin in the **Customer Journey Analytic
     
     For more information on Experience Platform permissions, see [Access control in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
 
-* Activate and manage Destinations
+* Export datasets from AEP Destinations
   
-  In order to export datasets from AEP Destinations, users also need the following Experience Platform permissions:
+  In order to perform this task, users also need the following Experience Platform permissions:
   * Manage Destinations
   * Activate Destinations
     
