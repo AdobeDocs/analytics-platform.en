@@ -29,7 +29,7 @@ To add a user as a Product Admin:
 
 Product Admins have permissions to complete most tasks within Customer Journey Analytics. 
 
-Product admins are granted the following permissions by default:
+Product admins are granted the necessary permissions to perform the following tasks by default:
 
 * Create, update, and delete data views
 * Update and delete projects, filters, calculated metrics, audiences, annotations, or filters created by other users
@@ -41,24 +41,22 @@ Product admins are granted the following permissions by default:
 In addition to being added as a Product Admin in the **Customer Journey Analytics Product Profile** in the [Admin Console](https://adminconsole.adobe.com/enterprise/), additional permission are required in order to complete the following tasks within Customer Journey Analytics:
 
 * Create, update, and delete data [Connections](/help/connections/overview.md)
-* Manage Destinations
-* Activate Destinations
+  
+  In order to perform this task, users must be part of an **Experience Platform Product Profile** that provides the following permissions:
+  * Data Modeling: View Schemas, Manage Schemas
+  * Data Management: View Datasets, Manage Datasets
+  * Data Ingestion: Manage Sources
+  * View Identity Namespaces  
+    
+    For more information on Experience Platform permissions, see [Access control in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
 
-Becoming a product admin in Customer Journey Analytics alone is not in itself grant the following permissions: create, update, or delete a [connection](/help/connections/overview.md). To create a connection to an Experience Platform dataset, you also need Experience Platform permissions. Specifically, you must be part of an **Experience Platform Product Profile** that gives you the following permissions:
-
-* Data Modeling: View Schemas, Manage Schemas
-* Data Management: View Datasets, Manage Datasets
-* Data Ingestion: Manage Sources
-* View Identity Namespaces  
-
-In order to export datasets from AEP Destinations, you will also need the following Experience Platform permissions:
-
-* Manage Destinations
-* Activate Destinations
-
-For more information on Experience Platform Destinations permissions, see [Destinations overview](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html).
-
-For more information on Experience Platform permissions, see [Access control in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
+* Activate and manage Destinations
+  
+  In order to export datasets from AEP Destinations, users also need the following Experience Platform permissions:
+  * Manage Destinations
+  * Activate Destinations
+    
+    For more information on Experience Platform Destinations permissions, see [Destinations overview](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html).
 
 ## Product Profile Admin role
 
