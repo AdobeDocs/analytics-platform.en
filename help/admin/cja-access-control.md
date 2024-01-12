@@ -94,5 +94,6 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin C
 | **[!UICONTROL Annotation Creation]** | Lets users create [annotations](/help/components/annotations/overview.md). |
 | **[!UICONTROL Audience Creation]** | Lets users create [audiences](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL Audience View]** | Lets users view [audiences](/help/components/audiences/audiences-overview.md). |
+| **[!UICONTROL Forecasting]** | Lets users view [forecasts](/help/analysis-workspace/c-forecast/forecasting.md) for time-series freeform tables and line visualizations. | 
 
 {style="table-layout:auto"}
