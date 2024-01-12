@@ -15,19 +15,48 @@ In addition, we discuss more granular ways to limit access, such as Workspace cu
 
 ## Product Admin role
 
-Product Admins have permissions to complete any task necessary within Customer Journey Analytics. You must be added as a Product Admin to the **Customer Journey Analytics Product Profile** in the [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL Admins] tab > [!UICONTROL Add Admin]. Product admins are granted the following permissions:
+Users who are assigned the Product Admin role are given the necessary permissions to perform most tasks within Customer Journey Analytics by default. However, some tasks require additional permissions.
 
-* Create/update/delete connections or data views
-* Update/delete projects, filters, calculated metrics, audiences, annotations, or filters created by other users
+To add a user as a Product Admin:
+
+1. Go to the [Admin Console](https://adminconsole.adobe.com/enterprise/).
+
+1. Select [!UICONTROL **Customer Journey Analytics**] > [!UICONTROL **Admins**] tab > [!UICONTROL **Add Admin**].
+
+   The users that you added are given the [Product Admin default permissions](#product-admin-default-permissions). You can also grant them [additional permissions](#product-admin-additional-permissions) if needed.
+
+### Product Admin default permissions
+
+Product Admins have permissions to complete most tasks within Customer Journey Analytics. 
+
+Product admins are granted the following permissions by default:
+
+* Create, update, and delete data views
+* Update and delete projects, filters, calculated metrics, audiences, annotations, or filters created by other users
 * Share Workspace projects to all users
 * Manage reporting activity in the [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md)
 
-Becoming a product admin in Customer Journey Analytics alone is not enough to create, update, or delete a [connection](/help/connections/overview.md). To create a connection to an Experience Platform dataset, you also need Experience Platform permissions. Specifically, you must be part of an **Experience Platform Product Profile** that gives you the following permissions:
+### Product Admin additional permissions
+
+In addition to being added as a Product Admin in the **Customer Journey Analytics Product Profile** in the [Admin Console](https://adminconsole.adobe.com/enterprise/), additional permission are required in order to complete the following tasks within Customer Journey Analytics:
+
+* Create, update, and delete data [Connections](/help/connections/overview.md)
+* Manage Destinations
+* Activate Destinations
+
+Becoming a product admin in Customer Journey Analytics alone is not in itself grant the following permissions: create, update, or delete a [connection](/help/connections/overview.md). To create a connection to an Experience Platform dataset, you also need Experience Platform permissions. Specifically, you must be part of an **Experience Platform Product Profile** that gives you the following permissions:
 
 * Data Modeling: View Schemas, Manage Schemas
 * Data Management: View Datasets, Manage Datasets
 * Data Ingestion: Manage Sources
 * View Identity Namespaces  
+
+In order to export datasets from AEP Destinations, you will also need the following Experience Platform permissions:
+
+* Manage Destinations
+* Activate Destinations
+
+For more information on Experience Platform Destinations permissions, see [Destinations overview](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html).
 
 For more information on Experience Platform permissions, see [Access control in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
 
@@ -87,7 +116,7 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin C
 | **[!UICONTROL Audit Logs Access]** |  This permission enforces the permission check on the [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) and the audit logs UI.  |
 | **[!UICONTROL Reporting Usage Admin]** | Lets users view and delete any report running in their company. |
 | **[!UICONTROL Reporting Usage View]** | Lets users see all of the concurrent reporting requests. |
-| [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md). <p>For information about how to add Destinations access for Customer Journey Analytics users in Adobe Experience Platform, see [Destinations and access control](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls) in [Destinations overview](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en)</p> |
+| [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md).  |
 | **[!UICONTROL Calculated Metrics Creation]** | Lets users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Filter Creation]** | Lets users create [filters](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Labs Access]** | Lets users access the [Labs](/help/labs/labs.md) tab in Customer Journey Analytics. |
