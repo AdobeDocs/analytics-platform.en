@@ -4,27 +4,27 @@ description: Latest Customer Journey Analytics release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 ---
-# Current Adobe Customer Journey Analytics release notes (October/November 2023)
+# Current Adobe Customer Journey Analytics release notes (January 2024)
 
+**Last update**: January 12, 2024
 
-**Last update**: October 26, 2023
-
-These release notes cover the release period of October 16, 2023 through end of November 2023. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
+These release notes cover the release period of end of October, 2023 through January, 2024. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
 ## New or updated features 
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **New capabilities in [!UICONTROL Usage] view in Adobe Product Analytics** | The following features have been added to the [Usage view](/help/guided-analysis/types/usage.md):<ul><li>**Trend lines**: Trend lines are now supported. Click [!UICONTROL Overlays] above the chart to enable them.</li><li>**Query breakdowns**: You can now apply breakdowns to this view type. They are available as an option in the query rail.</li></ul> | N/A | October 25, 2023 |
-| **Documentation for CJA Data Views API** | See the [Data views API](https://developer.adobe.com/cja-apis/docs/endpoints/dataviews/) to learn how to programmatically create, modify, or delete data views. | N/A | October 16, 2023 |
-| **Export full tables to the cloud** | Customer Journey Analytics Full Table Export allows you to export millions of Workspace rows to cloud destinations. <p>Exporting full tables offers one-time or scheduled delivery of data tables designed within Workspace with support for up to five breakdowns, five metrics, filters, and calculated metrics, all in a concatenated table. It is the evolution of Data Warehouse reports in Adobe Analytics, with many new, often-requested features that are not available in Data Warehouse today.</p><p> Cloud export options include:</p><ul><li>Adobe Experience Platform Data Landing Zone</li><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li><li>Snowflake</li></ul>For more information, see [Export Customer Journey Analytics reports to the cloud](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html).| October 4, 2023 | October 19, 2023 |
-| **Reporting Activity Manager** | The Reporting Activity Manager lets you see the reporting capacity for each connection in your organization. It provides administrators with detailed visibility into reporting consumption in order to easily diagnose and fix capacity issues during peak reporting times. Key features of the Reporting Activity Manager include:<ul><li>Cancel current reporting requests (including requests from guided analyses and full table exports)</li><li>Restrict subsequent requests for a defined time period</li></ul>In addition to canceling current requests, administrators can now restrict requests for a defined time period. Administrators can restrict requests by request, project, or user.  [Learn more](/help/reporting-activity-manager/reporting-activity-overview.md) | October 17, 2023 | October 24, 2023 |
+| **Time series forecasting** | Forecasting is a new Analysis Workspace feature to forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly). | N/A | January 17, 2023 |
+| **Guided Analysis - Trendlines** | Trendline overlays are now available in the [Usage](/help/guided-analysis/types/usage.md) view, which helps depict a clearer pattern in data. | N/A | January 17, 2023 |
+| **Row Count Metrics for Lookup and Profile Datasets** | Up until this release, row count metrics were only available for event datasets. Now row count metrics are also available for lookup and profile datasets. | N/A | January 17, 2023 |
+| **Connections Detail Page - Skipped Records** | You can now inspect the reasons why records are skipped as part of defining a connection. See Manage Connections for more information. | N/A | January 17, 2023 |
+| **Updates to the Key Metrics Summary visualization** | When using the Key Metric Summary visualization, the Comparison date range can now automatically update, depending on whether the Comparison date range option you choose is relative to the primary date range or fixed. [Learn more](/help/analyze/analysis-workspace/visualizations/key-metric.md). | N/A | January 17, 2023 |
 
 {style="table-layout:auto"}
 
 ## Fixes in Customer Journey Analytics
 
-AN-327661; AN-329282; AN-329383; AN-329808; AN-331030; AN-331087; AN-331105
+AN-310972; AN-332774; AN-332793; AN-332796; AN-333157; AN-334067; AN-334134; AN-334968; AN-335315; AN-335518; AN-335533; AN-335736; 
 
 ## Important notices for Customer Journey Analytics Administrators
 
