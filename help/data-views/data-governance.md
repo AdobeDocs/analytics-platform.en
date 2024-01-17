@@ -58,7 +58,7 @@ Click **[!UICONTROL Apply]** to see which policies that are enabled.
 
 ## How enabled policies affect data views
 
-If the **[!UICONTROL Enforce Analytics]** or **[!UICONTROL Enforce Download]** policies are turned on, those schema components that have certain data labels (such as C8 or C12) associated with them cannot be added to data views. 
+If the **[!UICONTROL Enforce Analytics]** policy is turned on, those schema components that have certain data labels (such as C8) associated with them cannot be added to data views. 
 
 These components are greyed out in the left rail [!UICONTROL Schema fields] list:
 
