@@ -60,10 +60,10 @@ Start by reading the material in the links below to familiarize yourself with Cu
     </td>
   </tr>
   <tr style="border: 0;">
-    <td align="center"><a href="using/start/quick-start.md"><img src="./assets/learn-more-button.svg"></a></td>
-    <td align="center"><a href="using/start/user-interface.md"><img src="./assets/learn-more-button.svg"></a></td>
-    <td align="center"><a href="using/building-journeys/journey-gs.md"><img src="./assets/learn-more-button.svg"></a></td>
-    <td align="center"><a href="using/campaigns/create-campaign.md"><img src="./assets/learn-more-button.svg"></a></td>
+    <td align="center"><a href="/help/getting-started/aa-vs-cja/overview.md"><img src="./assets/learn-more-button.svg"></a></td>
+    <td align="center"><a href="/help/data-ingestion/data-ingestion.md"><img src="./assets/learn-more-button.svg"></a></td>
+    <td align="center"><a href="/help/guided-analysis/overview.md"><img src="./assets/learn-more-button.svg"></a></td>
+    <td align="center"><a href="/help/analysis-workspace/home.md"><img src="./assets/learn-more-button.svg"></a></td>
     </tr>
 </table>
 
@@ -75,7 +75,7 @@ Understand how Customer Journey Analytics compares to Adobe Analytics and how to
   <tr style="border: 0;">
     <td>
       <img src="./assets/analytics.svg" width="35px"><br/>
-      <strong>Compare to Adobe Analytics</strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md">Overview</a> - <a href="/help/getting-started/aa-to-cja.md">Evolution</a> - <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">Use Adobe Analytics data</a> - <a href="help/getting-started/aa-vs-cja/cja-aa.md">Feature support</a> - <a href="/help/getting-started/aa-vs-cja/terminology.md">Terminology</a> - <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md">Data processing</a>
+      <strong>Compare to Adobe Analytics</strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md">Overview</a> - <a href="/help/getting-started/aa-to-cja.md">Evolution</a> - <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">Use Adobe Analytics data</a> - <a href="/help/getting-started/aa-vs-cja/cja-aa.md">Feature support</a> - <a href="/help/getting-started/aa-vs-cja/terminology.md">Terminology</a> - <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md">Data processing</a>
     </td>
     <td>
       <img src="./assets/connections.svg" width="35px"><br/>
@@ -90,7 +90,7 @@ Understand how Customer Journey Analytics compares to Adobe Analytics and how to
   <tr style="border: 0;">
     <td>
       <img src="./assets/workspace.svg" width="35px"><br/>
-      <strong>Workspace Projects</strong><br/><a href="help/analysis-workspace/home.md">Analysis Workspace</a> - <a href="/help/a/nalysis-workspace/perform-basic-analysis.md">Basic </a> & <a href="/help/analysis-workspace/perform-adv-analysis.md">Advanced analysis</a> - <a href="/help/analysis-workspace/build-workspace-project/freeform-overview.md">Projects</a> - <a href="/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md">Visualizations</a> - <a href="/help/analysis-workspace/c-panels/freeform-panel.md">Panels</a>
+      <strong>Workspace Projects</strong><br/><a href="/help/analysis-workspace/home.md">Analysis Workspace</a> - <a href="/help/analysis-workspace/perform-basic-analysis.md">Basic </a> & <a href="/help/analysis-workspace/perform-adv-analysis.md">Advanced analysis</a> - <a href="/help/analysis-workspace/build-workspace-project/freeform-overview.md">Projects</a> - <a href="/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md">Visualizations</a> - <a href="/help/analysis-workspace/c-panels/freeform-panel.md">Panels</a>
     </td>
     <td>
       <img src="./assets/guided-analysis.svg" width="35px"><br/>
@@ -98,7 +98,7 @@ Understand how Customer Journey Analytics compares to Adobe Analytics and how to
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>
-      <strong>Share, export, integrate</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projects</a> - <a href="/help/mobile-app/home.mdd">Analytics Dashboards</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a>  - <a href="/help/integrations/overview.md">Integrations</a>
+      <strong>Share, export, integrate</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projects</a> - <a href="/help/mobile-app/home.md">Analytics Dashboards</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a>  - <a href="/help/integrations/overview.md">Integrations</a>
     </td>
   </tr>
 </table> 
