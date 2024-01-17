@@ -3,33 +3,41 @@ title: Customer Journey Analytics Guide
 description: Customer Journey Analytics landing page.
 solution: Customer Journey Analytics
 feature: Basics
+hide: yes
+hidefromtoc: yes
 ---
 # Customer Journey Analytics Guide
 
 
-## What's new ?
-
-
+## What's new?
 
 Get a glimpse of the newest enhancements in the Customer Journey Analytics product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [Release Notes](../release-notes/latest.md). Stay up-to-date with the latest changes in our documentation by visiting the [documentation updates page](../release-notes/doc-changes.md).
 
 >[!BEGINTABS]
 
->[!TAB Export full tables]
+>[!TAB Workspace: Time-series Forecasting]
 
-Exporting full tables offers one-time or scheduled delivery of data tables designed within Workspace with support for up to five breakdowns, five metrics, filters, and calculated metrics, all in a concatenated table. It is the evolution of Data Warehouse reports in Adobe Analytics, with many new, often-requested features that are not available in Data Warehouse today.
+Forecasting is a new Analysis Workspace feature to forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly).
 
 [![image](assets/learn-more-button.svg)](../analysis-workspace/export/export-cloud.md)
 
->[!TAB Reporting Activity Manager] 
+>[!TAB Connections: Skipped Records] 
 
-The Reporting Activity Manager lets you see the reporting capacity for each connection in your organization. It provides administrators with detailed visibility into reporting consumption in order to easily diagnose and fix capacity issues during peak reporting times.
+You can now inspect the reasons why records are skipped as part of defining a connection. See Manage Connections for more information.
 
-[![image](assets/learn-more-button.svg)](../reporting-activity-manager/reporting-activity-overview.md)
+[![image](assets/learn-more-button.svg)](/help/connections/manage-connections.md)
+
+>[!TAB Product Analytics: Trendlines] 
+
+Trendline overlays are now available in the Guided Analysis Usage view, which helps depict a clearer pattern in data.
+
+[![image](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
 
 >[!ENDTABS]
 
 ## Start with the basics
+
+Start by reading the material in the links below to familiarize yourself with Customer Journey Analytics capabilities and functionalities.
 
 <table style="table-layout:fixed">
   <tr style="border: 0;">
@@ -60,6 +68,8 @@ The Reporting Activity Manager lets you see the reporting capacity for each conn
 </table>
 
 ## Explore the documentation
+
+Understand how Customer Journey Analytics compares to Adobe Analytics and how to get your data in the solution and then prepare, view, analyze and democratize that data and resulting analysis and reports.
 
 <table style="table-layout:auto">
   <tr style="border: 0;">
@@ -102,3 +112,7 @@ The Reporting Activity Manager lets you see the reporting capacity for each conn
 <td><strong>Data Ingestion</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Overview</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Mobile SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Batch</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Sources</a> - <a href="/help/data-ingestion/serverapi.md">Server API</a>
 </td>
 </tr></table>
+
+
+<table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
+<b>Stay informed, contribute to the community, and elevate your Customer Journey Analytics experience!</b><br>Visit the Adobe Analytics community to discuss functionality with fellow practitioners. <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community">Join the community today!</a></td></tr></tbody></table>
