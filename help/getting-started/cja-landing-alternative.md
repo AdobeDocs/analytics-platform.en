@@ -17,13 +17,13 @@ Get a glimpse of the newest enhancements in the Customer Journey Analytics produ
 
 >[!TAB Workspace: Time-series Forecasting]
 
-Forecasting is a new Analysis Workspace feature to forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly).
+Forecasting is a new Analysis Workspace feature to forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly). Forecasting is available for time-series related data only.
 
 [![image](assets/learn-more-button.svg)](../analysis-workspace/export/export-cloud.md)
 
 >[!TAB Connections: Skipped Records] 
 
-You can now inspect the reasons why records are skipped as part of defining a connection. See Manage Connections for more information.
+You can now inspect the reasons why records from event datasets are skipped when defining a connection. You can get details about the reasons why records are skipped, like empty visitor IDs, data retentions, and others.
 
 [![image](assets/learn-more-button.svg)](/help/connections/manage-connections.md)
 
