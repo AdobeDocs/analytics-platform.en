@@ -3,6 +3,7 @@ description: Lets you add user-defined text to your Workspace.
 title: Text
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
+role: User
 ---
 # Text
 

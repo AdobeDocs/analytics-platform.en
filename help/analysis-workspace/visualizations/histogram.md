@@ -3,6 +3,7 @@ description: A histogram is similar to a bar chart, but it groups numbers into r
 title: Histogram
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
+role: User
 ---
 # Histogram
 

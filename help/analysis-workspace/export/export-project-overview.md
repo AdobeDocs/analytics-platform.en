@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: How to export project data
 feature: Curate and Share
 exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
+role: User
 ---
 # Export overview
 

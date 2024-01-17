@@ -4,6 +4,7 @@ description: Learn how to bring Marketo Engage data into Customer Journey Analyt
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
+role: Admin
 ---
 # Ingest Marketo Engage data into Adobe Experience Platform and report in Customer Journey Analytics
 
@@ -19,7 +20,7 @@ Use the [Marketo Engage connector](https://experienceleague.adobe.com/docs/exper
 
 ## Step 3: Set up a connection to this dataset in Customer Journey Analytics
 
-In order to report on Experience Platform datasets, you first have to establish a connection between datasets in Experience Platform and Customer Journey Analytics. Find more information under [Create a connection](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en).
+In order to report on Experience Platform datasets, you first have to establish a connection between datasets in Experience Platform and Customer Journey Analytics. See for more information [Create or edit a connection](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en).
 
 ## Step 4: Create one or more data views
 

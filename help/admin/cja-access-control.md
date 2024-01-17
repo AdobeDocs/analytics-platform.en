@@ -5,6 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
+role: Admin
 ---
 # Customer Journey Analytics Access Control
 
@@ -14,7 +15,7 @@ In addition, we discuss more granular ways to limit access, such as Workspace cu
 
 ## Product Admin role
 
-Product Admins have permissions to complete any task necessary within Customer Journey Analytics. You must be added as an Product Admin to the **Customer Journey Analytics Product Profile** in the [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL Admins] tab > [!UICONTROL Add Admin]. Product admins are granted the following permissions:
+Product Admins have permissions to complete any task necessary within Customer Journey Analytics. You must be added as a Product Admin to the **Customer Journey Analytics Product Profile** in the [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL Admins] tab > [!UICONTROL Add Admin]. Product admins are granted the following permissions:
 
 * Create/update/delete connections or data views
 * Update/delete projects, filters, calculated metrics, audiences, annotations, or filters created by other users
@@ -34,9 +35,9 @@ For more information on Experience Platform permissions, see [Access control in 
 
 A product profile is a set of permissions. Product Profile Admins can
 
-*   Create and manage individual product profiles, such as adding new users or managing user groups and their associated product profiles.
+* Create and manage individual product profiles, such as adding new users or managing user groups and their associated product profiles.
 
-*   In Customer Journey Analytics, edit data views that are part of a product profile that they manage. They cannot create new data views.
+* In Customer Journey Analytics, edit data views that are part of a product profile that they manage. They cannot create new data views.
 
 ## User-level access
 
@@ -86,7 +87,7 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin C
 | **[!UICONTROL Audit Logs Access]** |  This permission enforces the permission check on the [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) and the audit logs UI.  |
 | **[!UICONTROL Reporting Usage Admin]** | Lets users view and delete any report running in their company. |
 | **[!UICONTROL Reporting Usage View]** | Lets users see all of the concurrent reporting requests. |
-| [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md). |
+| [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md).  |
 | **[!UICONTROL Calculated Metrics Creation]** | Lets users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Filter Creation]** | Lets users create [filters](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Labs Access]** | Lets users access the [Labs](/help/labs/labs.md) tab in Customer Journey Analytics. |

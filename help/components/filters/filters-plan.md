@@ -2,6 +2,7 @@
 description: Outlines the steps and best practices to follow when planning your filters.
 title: Plan filters
 feature: Filters
+role: User
 ---
 # Plan filters
 

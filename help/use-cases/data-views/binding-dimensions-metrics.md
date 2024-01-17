@@ -3,6 +3,7 @@ title: Use binding dimensions and metrics in Customer Journey Analytics
 description: Attribute dimensions to object arrays for complex persistence analysis.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
+role: User
 ---
 
 # Use binding dimensions and metrics in Customer Journey Analytics
@@ -72,7 +73,7 @@ If you wanted to look at revenue by color without a binding dimension, the dimen
 | --- | --- |
 | neon orange | 2099 |
 
-You can go into the data view manager and bind product color to product name:
+Go into **[!UICONTROL Data views]** and bind the [!DNL Product Color] dimension to [!DNL Product Name]:
 
 ![Binding dimension](../assets/binding-dimension.png)
 
@@ -245,7 +246,7 @@ If you used [!UICONTROL Most Recent] allocation with the search term dimension, 
 
 While this example includes only one person, many persons who search for different things can misattribute search terms to different products, making it difficult to determine what the best search results actually are.
 
-You can bind search terms to product name whenever the Searches metric is present to correctly attribute search term to revenue.
+You can now bind [!DNL Search Term] to [!DNL Product Name] whenever the [!DNL Searches] metric is present to correctly attribute search term to revenue.
 
 ![Binding metric](../assets/binding-metric.png)
 
@@ -336,7 +337,7 @@ If you use Most Recent allocation with Person expiration, the `"grownup movie"` 
 
 However, if you bound `search_term` to `ProfileID`, each profile's searches would be isolated to their own profile, attributed to the correct shows that they search for.
 
-![Visitor binding](../assets/binding-visitor.png)
+![Visitor binding](../assets/binding-profileid.png)
 
 Analysis Workspace would correctly attribute the second episode of Orangey to the search term `"kids show"` without taking searches from other profiles into account.
 
@@ -429,3 +430,8 @@ However, if you bind `product_finding_method` to the Cart Adds metric, the resul
 | --- | --- |
 | search | 399.99 |
 | browse | 19.99 |
+
+
+>[!MORELIKETHIS]
+>
+>[Binding Dimensions in Data Views](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=en) tutorial.

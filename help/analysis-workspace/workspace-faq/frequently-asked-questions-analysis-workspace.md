@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: Administration requirements
 feature: FAQ
 exl-id: ea2ea8d6-8327-4168-b81a-f4945b572cbb
+role: Admin
 ---
 # Administration requirements
 

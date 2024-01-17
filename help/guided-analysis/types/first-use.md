@@ -4,6 +4,7 @@ description: Measure the impact of first-time feature use on key indicators.
 feature: Guided Analysis
 keywords: product analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
+role: User
 ---
 # [!UICONTROL First use] view
 

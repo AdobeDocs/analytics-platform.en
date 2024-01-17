@@ -4,6 +4,7 @@ description: A derived field specifies report-time manipulation of schema fields
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
+role: Admin
 ---
 # Derived fields
 
@@ -210,7 +211,7 @@ Applies conditionals, based on defined criteria from one or more fields. These c
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] container:</p><ul><li>[!UICONTROL Value]</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Criterion] (see included operators, based on selected value type)</li></ul></li><li>[!UICONTROL Then set value to], [!UICONTROL Otherwise set value to]:</p><ul><li>[!UICONTROL Value]</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></ul></li></ul> | <p>Strings</p><ul><li>Equals</li><li>Equals any term</li><li>Contains the phrase</li><li>Contains any term</li><li>Contains all terms</li><li>Starts with</li><li>Starts with any term</li><li>Ends with</li><li>Ends with any term</li><li>Does not equal</li><li>Does not equal any term</li><li>Does not contain the phrase</li><li>Does not contain any term</li><li>Does not contain all terms</li><li>Does not start with</li><li>Does not start with any term</li><li>Does not end with</li><li>Does not end with any term</li><li>Is set</li><li>Is not set</li></ul><p>Numeric</p><ul><li>Equals</li><li>Does not equal</li><li>Is greater than</li><li>Is greater than or equal to</li><li>Is less than</li><li>Is less than or equal to</li><li>Is set</li><li>Is not set</li></ul><p>Dates</p><ul><li>Equals</li><li>Does not equal</li><li>Is later than</li><li>Is later than or equal to</li><li>Is before</li><li>Is before or equal to</li><li>Is set</li><li>Is not set</li></ul> | <ul><li>5 functions per derived field</li><li>200 operators per derived field. An example of one single operator is 'Referring Domain contains google'. </li></ul> |<p>New derived field</p> |
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL If], [!UICONTROL Else If] container:</p><ul><li>[!UICONTROL Value]</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Criterion] (see included operators, based on selected value type)</li></ul></li><li>[!UICONTROL Then set value to], [!UICONTROL Otherwise set value to]:</p><ul><li>[!UICONTROL Value]</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></ul></li></ul> | <p>Strings</p><ul><li>Equals</li><li>Equals any term</li><li>Contains the phrase</li><li>Contains any term</li><li>Contains all terms</li><li>Starts with</li><li>Starts with any term</li><li>Ends with</li><li>Ends with any term</li><li>Does not equal</li><li>Does not equal any term</li><li>Does not contain the phrase</li><li>Does not contain any term</li><li>Does not contain all terms</li><li>Does not start with</li><li>Does not start with any term</li><li>Does not end with</li><li>Does not end with any term</li><li>Is set</li><li>Is not set</li></ul><p>Numeric</p><ul><li>Equals</li><li>Does not equal</li><li>Is greater than</li><li>Is greater than or equal to</li><li>Is less than</li><li>Is less than or equal to</li><li>Is set</li><li>Is not set</li></ul><p>Dates</p><ul><li>Equals</li><li>Does not equal</li><li>Is later than</li><li>Is later than or equal to</li><li>Is before</li><li>Is before or equal to</li><li>Is set</li><li>Is not set</li></ul> | <ul><li>5 functions per derived field</li><li>200 [operators](#operators) per derived field. An example of one single operator is 'Referring Domain contains google'. </li></ul> |<p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -1274,7 +1275,41 @@ The following limitations apply to the Derived field functionality in general:
   - From this maximum of ten different schema fields, only a maximum of three lookup schema or profile schema fields are allowed.
 - You can have a maximum of 100 derived fields per Customer Journey Analytics connection.
 
+
+### Summary of function limitations
+
+| Function | Limitations |
+|---|---|
+| <p>Case When</p> | <ul><li>5 Case When functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
+| <p>Classify</p> | <ul><li>5 Classify functions per derived field</li><li>100 rows per function</li></ul> |
+| <p>Concatenate</p> | <ul><li>2 Concatenate functions per derived field</li></ul> |
+| <p>Find & Replace</p> | <ul><li>2 Find & Replace functions per derived field</li></ul> |
+| <p>Lookup</p> | <ul><li>5 Lookup functions per derived field</li></ul> |
+| <p>Lowercase</p> | <ul><li>2 Lowercase functions per derived field</li></ul> |
+| <p>Merge Fields</p> | <ul><li>2 Merge Fields functions per derived field</li></ul> |
+| <p>Regex Replace</p> | <ul><li>1 Regex Replace function per derived field</li></ul> |
+| <p>Split</p> | <ul><li>5 Split functions per derived field</li></ul> |
+| <p>Trim</p> | <ul><li>1 Trim function per derived field</li></ul> |
+| <p>URL Parse</p> | <ul><li>5 URL Parse functions per derived field</li></ul> |
+
+{style="table-layout:auto"}
+
+### Operators
+
+An operator in an If or Else If construct within a Case When function is the combination of a criterion with **one** value. Every additional value for the criterion adds to the number of operators.
+
+As an example, the condition below uses 13 operators.
+
+![Sample operators](assets/operators-sample.png)
+
+
 ## More information
+
+[`Trim`](#trim) and [`Lowercase`](#lowercase) are features already available in the component settings in [Data views](../component-settings/overview.md). Using Derived Fields allows you to combine these functions to do more complex data transformation directly in Customer Journey Analytics. For example, you can use `Lowercase` to remove case sensitivity in an event field, and then use [`Lookup`](#lookup) to match the new lowercase field to a lookup dataset that only has lookup keys in lowercase. Or you can use `Trim` to remove characters before setting up `Lookup` on the new field.
+
+Support for lookup and profile fields in Derived Fields enables you to transform data based on event lookups and profile attributes. This can be especially helpful in B2B scenarios with account-level data in lookup or profile datasets. Additionally, this support is useful to manipulate data in common fields from lookup data (like campaign info and offer type), or from profile data (like member tier and account type).
+
+See for more background information on Derived Fields:
 
 - [Making the Most of Your Data: A Framework for Using Derived Fields in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 

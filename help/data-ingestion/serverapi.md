@@ -4,6 +4,7 @@ description: Explain how to ingest data into Customer Journey Analytics via the 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
+role: Admin
 ---
 # Ingest data via the Adobe Experience Platform Edge Network Server API
 
@@ -95,6 +96,10 @@ To set up your schema:
    ![Example Schema Add Field button](./assets/example-gamingschema-plus.png)
 
 1. In the [!UICONTROL Field Properties] panel, enter `identification` as the [!UICONTROL Field name], **[!UICONTROL Identification]** as the [!UICONTROL Display name], select **[!UICONTROL Object]** as the [!UICONTROL Type] and select **[!UICONTROL ExperienceEvent Core v2.1]** as the [!UICONTROL Field Group].
+
+   >[!NOTE]
+   >
+   >If that field group is not available, look for another field group containing identity fields. Or [create a new field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) and [add new identity fields](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) (like `ecid`, `crmId`, and others you need) to the field group and select that new field group.
 
     ![Identification Object](./assets/identification-field-gaming.png)
 

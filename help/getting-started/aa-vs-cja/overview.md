@@ -4,6 +4,7 @@ description: Overview of how Customer Journey Analytics compares to Adobe Analyt
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: bde36283-86af-4b1a-9cbe-e251676b2951
+role: User
 ---
 # Comparison with Adobe Analytics
 

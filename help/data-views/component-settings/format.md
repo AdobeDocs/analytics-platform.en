@@ -4,6 +4,7 @@ description: Configure how a metric is formatted.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
+role: Admin
 ---
 # Format component settings
 
@@ -18,8 +19,6 @@ You can determine how a given metric is displayed by adjusting its format settin
 1. Select the data view that contains the component whose format setting you want to configure. 
 
 1. Select the [!UICONTROL **Components**] tab.
-
-   ![Components tab](../assets/format-settings-component-tab.png)
 
 1. Select the component that you want to configure, then expand the [!UICONTROL **Format**] section on the right side of the page.
 

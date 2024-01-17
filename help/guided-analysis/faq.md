@@ -4,6 +4,7 @@ description: Frequently asked questions around Guided analysis.
 exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: product analytics
+role: User
 ---
 # Guided analysis FAQ
 
@@ -11,7 +12,7 @@ Frequently asked questions around Guided analysis.
 
 +++**How can my organization be provisioned for Guided analysis?**
 
-Guided analysis is a paid add-on to Customer Journey Analytics. If you would like to start using this add-on, contact your Adobe Account Team.
+Guided analysis is part of Adobe Product Analytics, a paid add-on to Customer Journey Analytics. If you would like to start using this add-on, contact your Adobe Account Team.
 
 +++
 
@@ -53,7 +54,7 @@ While [Analysis Workspace](../analysis-workspace/home.md) and Guided analysis us
 
 * **Analysis Workspace is a dimension-centered experience.** Tables typically consist of dimensional rows, while columns are typically metrics. Filters can be applied in both rows and columns to obtain the desired data.
 
-* **Guided analysis is an event-centered experience.** Each analysis starts by selecting events, then dimensions and filters can be added to refine that event data.
+* **Guided analysis is an event and user-centered experience.** Each analysis starts by selecting events, then dimensions and filters can be added to refine that event data.
 
 ![Analysis Workspace and Guided analysis views](assets/structure.png)
 
@@ -63,7 +64,7 @@ Consider the following example where you focus on data around your website's hom
 
    ![Dimension centered](assets/dimension-centered.png)
 
-* A typical event-centered Guided analysis approach would be, "How many users have viewed the home page?"
+* A typical event and user-centered Guided analysis approach would be, "How many users have visited our home page?"
 
    ![Event centered](assets/event-centered.png)
 

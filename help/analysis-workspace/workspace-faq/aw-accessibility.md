@@ -3,6 +3,7 @@ description: Accessibility support features in Analysis Workspace
 title: Accessibility in Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
+role: User
 ---
 # Accessibility in Analysis Workspace
 

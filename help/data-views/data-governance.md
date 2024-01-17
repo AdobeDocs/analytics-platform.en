@@ -3,6 +3,7 @@ title: Labels and policies
 description: Learn how data labels and policies defined in Adobe Experience Platform affect data views and reporting in Customer Journey Analytics.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
+role: Admin
 ---
 # Labels and policies
 
@@ -57,7 +58,7 @@ Click **[!UICONTROL Apply]** to see which policies that are enabled.
 
 ## How enabled policies affect data views
 
-If the **[!UICONTROL Enforce Analytics]** or **[!UICONTROL Enforce Download]** policies are turned on, those schema components that have certain data labels (such as C8 or C12) associated with them cannot be added to data views. 
+If the **[!UICONTROL Enforce Analytics]** policy is turned on, those schema components that have certain data labels (such as C8) associated with them cannot be added to data views. 
 
 These components are greyed out in the left rail [!UICONTROL Schema fields] list:
 

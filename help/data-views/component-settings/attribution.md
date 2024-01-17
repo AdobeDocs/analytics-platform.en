@@ -4,6 +4,7 @@ description: Lets you set default attribution for a metric.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
+role: Admin
 ---
 # Attribution component settings
 

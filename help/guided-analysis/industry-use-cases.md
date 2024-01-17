@@ -4,6 +4,7 @@ description: Industry use cases for guided analysis
 feature: Guided Analysis
 keywords: product analytics
 exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
+role: User
 ---
 # Industry use cases
 

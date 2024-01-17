@@ -4,6 +4,7 @@ description: Overview of stitching.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
+role: Admin
 ---
 # Stitching overview
 

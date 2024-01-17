@@ -4,6 +4,7 @@ description: Customer Journey Analytics glossary.
 exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 solution: Customer Journey Analytics
 feature: Basics
+role: User
 ---
 # Customer Journey Analytics glossary
 

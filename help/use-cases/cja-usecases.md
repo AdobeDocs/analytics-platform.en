@@ -4,6 +4,7 @@ description: Learn about the use cases for Customer Journey Analytics
 exl-id: 90746eb0-99df-463a-8f01-330fd460a4a8
 solution: Customer Journey Analytics
 feature: Use Cases
+role: User, Admin
 ---
 # Customer Journey Analytics use cases
 

@@ -1,7 +1,7 @@
 ---
 title: Lack of permissions
 description: Learn how to troubleshoot issues resulting from lack of permissions
-role: Data Engineer, Data Architect, Admin
+role: Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
 exl-id: 341123b9-f4d6-4ef7-96f1-789850261b96

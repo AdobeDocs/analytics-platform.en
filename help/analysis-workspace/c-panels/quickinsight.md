@@ -3,6 +3,7 @@ description: Quick Insights is a tool for new Workspace users that guides them i
 title: Quick Insights panel
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
+role: User
 ---
 # Quick Insights panel
 
