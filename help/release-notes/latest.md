@@ -33,7 +33,7 @@ AN-310972; AN-332774; AN-332793; AN-332796; AN-333157; AN-334067; AN-334134; AN-
 
 | Notice | Notice added or updated | Description |
 | --- | --- | --- |
-| N/A | N/A| N/A |
+| Adobe API object member additions  | January 17, 2024 |  Adobe may add optional request and response members (name/value pairs) to existing API objects without notice or changes in versioning. Such additions should be non-breaking changes for your implementation. Adobe recommends that you refer to the API documentation of any third-party tool you integrate with our APIs so that such additions are ignored in processing if not understood. Adobe will not remove parameters or add required parameters without first providing standard notification through release notes. |
 
 {style="table-layout:auto"}
 
