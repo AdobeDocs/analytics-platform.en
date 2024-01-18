@@ -5,6 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 ---
 # Customer Journey Analytics Guide
 

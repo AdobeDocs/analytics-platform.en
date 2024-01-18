@@ -6,7 +6,7 @@ feature: Use Cases
 hide: yes
 hidefromtoc: yes
 role: Admin
-
+exl-id: 71dd9e4e-1d71-424b-b984-492a3e39af5f
 ---
 # Emulate data feed functionality
 
@@ -272,4 +272,3 @@ In short, emulating the Adobe Analytics Data Feed functionality implies setting 
 >[!IMPORTANT]
 >
 >Two schedulers are involved in this use case. To guarantee a proper working of the emulated data feed functionality, ensure that the schedules configured in Query Service and Data exports do not interfere.
-
