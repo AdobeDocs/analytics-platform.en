@@ -31,7 +31,7 @@ This visualization addresses a variety of common use cases, including:
 
 1. Configure the visualization by selecting a metric, a primary date range, and a comparison date range and a filter (if desired):
 
-   ![Key metric configuration showing the options for metirc, primary date range, comparison date range, and segment.](assets/key-metric-config.png)
+   ![Key metric configuration showing the options for metric, primary date range, comparison date range, and segment.](assets/key-metric-config.png)
 
    | Configuration setting | Definition |
    | --- | --- |

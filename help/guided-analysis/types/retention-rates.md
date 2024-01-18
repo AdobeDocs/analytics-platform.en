@@ -3,8 +3,6 @@ title: Retention rates
 description: Measure how many users continue to use your product.
 feature: Guided Analysis
 keywords: product analytics
-hide: yes
-hidefromtoc: yes
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
 ---
