@@ -54,7 +54,7 @@ In addition to being added as a Product Admin in the **Customer Journey Analytic
 
   >[!AVAILABILITY]
   >
-  >The functionality described in this article is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
+  >The ability to export datasets to the cloud is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
   
   In order to perform this task, users also need the following Experience Platform permissions:
   * Manage Destinations
