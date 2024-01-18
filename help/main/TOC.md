@@ -28,6 +28,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Customer Journey Analytics overview](../getting-started/cja-overview.md)
   + [Quick start guide](../getting-started/cja-getting-started.md)
   + [Landing page](../getting-started/landing.md)
+  + [Landing page (alternative)](../getting-started/cja-landing-alternative.md)
   + [Frequently asked questions](../getting-started/cja-faq.md)
   + [Compare Customer Journey Analytics to BI solutions](../getting-started/cja-vs-bi.md)
 
@@ -58,7 +59,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Connections {#cja-connections}
   + [Connections overview](../connections/overview.md)
-  + [Create a connection](../connections/create-connection.md)
+  + [Create or edit a connection](../connections/create-connection.md)
   + [Manage connections](../connections/manage-connections.md)
   + [Combined event datasets](../connections/combined-dataset.md)
   + [Standard lookups](../connections/standard-lookups.md)
