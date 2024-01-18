@@ -131,6 +131,6 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin C
 | [!UICONTROL **Share Project Links With Anyone**] | Lets users [share projects with anyone.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en#share-public-link)  |
 | **[!UICONTROL Data View Tools]**: |   |
 | [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md).  |
-| [!UICONTROL **SQL Query Service Access**] | Lets users access [Query Service in AEP](/https://experienceleague.adobe.com/docs/experience-platform/query/home.html).  |
+| [!UICONTROL **SQL Query Service Access**] | Lets users access [Query Service in AEP](https://experienceleague.adobe.com/docs/experience-platform/query/home.html).  |
 
 {style="table-layout:auto"}
