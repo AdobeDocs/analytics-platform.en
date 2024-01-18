@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **January 2024** | |
+| Permissions required for exporting datasets | Added information explaining the [permissions required](/help/admin/cja-access-control.md) to export datasets to cloud destinations. | 
 | Manage connections | Updated the [Manage connections](../connections/manage-connections.md) article, based on customer feedback. | 
 | Derived fields | Added summary of function [limitations](/help/data-views/derived-fields/derived-fields.md#limitations) and explanation on how to determine number of [operators](/help/data-views/derived-fields/derived-fields.md#operators) used in a function. |
 
