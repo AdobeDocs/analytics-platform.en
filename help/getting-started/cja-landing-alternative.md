@@ -8,6 +8,9 @@ hidefromtoc: yes
 ---
 # Customer Journey Analytics Guide
 
+This technical documentation guide provides self help assistance for Customer Journey Analytics. Customer Journey Analytics allows you to bring your customer data from any channel you choose (both online and offline) into Adobe Experience Platform, and then analyze this data just as you would your existing digital data using Analysis Workspace today.
+
+Customer Journey Analytics lets you control how you connect your online and offline data in Analysis Workspace on any common customer ID, finally allowing you to do attribution, filters, flow, fallout, etc. across your customer data.
 
 ## What's new?
 
@@ -15,23 +18,23 @@ Get a glimpse of the newest enhancements in the Customer Journey Analytics produ
 
 >[!BEGINTABS]
 
->[!TAB Workspace: Time-series Forecasting]
+>[!TAB Guided Analysis - Retention rates]
 
-Forecasting is a new Analysis Workspace feature to forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly). Forecasting is available for time-series related data only.
+A new view type that shows the percentage of users that return after their initial engagement within the desired date range
 
-[![image](assets/learn-more-button.svg)](../analysis-workspace/export/export-cloud.md)
+[![image](assets/learn-more-button.svg)](/help//guided-analysis/types/retention-rates.md)
 
->[!TAB Connections: Skipped Records] 
+>[!TAB Guided Analysis - Trendlines] 
 
-You can now inspect the reasons why records from event datasets are skipped when defining a connection. You can get details about the reasons why records are skipped, like empty visitor IDs, data retentions, and others.
-
-[![image](assets/learn-more-button.svg)](/help/connections/manage-connections.md)
-
->[!TAB Product Analytics: Trendlines] 
-
-Trendline overlays are now available in the Guided Analysis Usage view, which helps depict a clearer pattern in data.
+Trendline overlays are now available in the Usage view, which helps depict a clearer pattern in data.
 
 [![image](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
+
+>[!TAB Key Metrics Summary visualization] 
+
+When using the Key Metric Summary visualization, the Comparison date range can now automatically update, depending on whether the Comparison date range option you choose is relative to the primary date range or fixed.
+
+[![image](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/key-metric.md)
 
 >[!ENDTABS]
 
