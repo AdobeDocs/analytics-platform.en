@@ -41,6 +41,8 @@ If your organization is provisioned for guided analysis, you can access it from 
 
    ![Create a new modal](assets/create-new-modal.png)
 
+If your organization is not yet provisioned for guided analysis, contact your Adobe Account Team.
+
 ## Interface
 
 The interface for guided analysis follows a question and answer format. Form your question in the query rail, then get an answer with a written insight, chart, and table. You can then ask the next question with the visualization settings and view types.
