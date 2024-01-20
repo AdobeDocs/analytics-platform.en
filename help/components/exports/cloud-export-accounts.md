@@ -16,6 +16,7 @@ For information about how to manage existing accounts, including viewing, editin
 
 ## Begin creating a cloud export account
 
+1. Make sure you meet the [minimum requirements](/help/analysis-workspace/export/export-cloud.md#minimum-requirements) for exporting reports to the cloud.
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 1. On the [!UICONTROL Exports] page, select the [!UICONTROL **Location accounts**] tab.
 1. Select [!UICONTROL **Add account**]. 

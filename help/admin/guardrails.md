@@ -4,8 +4,8 @@ description: Learn about the guardrails for Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
+exl-id: f093ac54-7d31-449b-a441-a65856a1d535
 ---
-
 # Customer Journey Analytics Guardrails
 
 This document provides limits for various components of Customer Journey Analytics. For guardrails, scoping parameters, and entitlements, see the [Product Description for Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) or the [Product Description for Adobe Analytics Add-on: Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
@@ -212,4 +212,3 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 | Refresh frequency for audiences | One-time refresh: latency of less than 5 minutes.<br/>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate). |
 
 {style="table-layout:auto"}
-
