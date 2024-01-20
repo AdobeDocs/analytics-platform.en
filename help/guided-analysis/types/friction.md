@@ -25,18 +25,21 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
+* **[!UICONTROL View]**: Switch between this view type and [Conversion trends](conversion-trends.md).
 * **[!UICONTROL Steps]**: The event touchpoints that you want to track. Each bar in the chart represents a step. You can include up to ten steps.
-* **[!UICONTROL People]**: The segments that you want compare the funnel across. Each segment selected splits each step into multiple bars. Each color represents a different segment. You can include up to three segments.
+* **[!UICONTROL Counted as]**: The scope that you want applied to the funnel. Options include [!UICONTROL Sessions] and [!UICONTROL Users].
+  * [!UICONTROL Sessions]: All steps must happen within the same session to be counted.
+  * [!UICONTROL Users]: All steps must happen within the selected reporting window to be counted.
+* **[!UICONTROL Segments]**: The segments that you want compare the funnel across. Each segment selected splits each step into multiple bars. Each color represents a different segment. You can include up to three segments.
 
 ## Chart settings
 
 The Friction view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **[!UICONTROL Metric]**: The scope that you want applied to the funnel. Options include Sessions and Users. By selecting sessions, all steps must happen within the same session to be counted. By selecting users, all steps must happen within the reporting window selected to be counted.
-* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include Steps.
-* **[!UICONTROL Conversion from]**: Determines the percentage calculation from step to step. Options include calculating conversion from the First step or Previous step.
+* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Steps].
+* **[!UICONTROL Conversion from]**: Determines the percentage calculation from step to step. Options include calculating conversion from the [!UICONTROL First step] or [!UICONTROL Previous step].
 
-## Apply time comparison
+## Time comparison
 
 {{apply-time-comparison}}
 
