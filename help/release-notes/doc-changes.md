@@ -14,6 +14,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **January 2024** | |
+| New component migration information when migrating from Adobe Analytics | Added information to [Evolution from Adobe Analytics](/help/getting-started/aa-to-cja.md) that references the new [component migration](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html) capabilities that are documented in the Adobe Analytics Admin Guide. |
+| Clarified that certain information is available only to administrators  | Added information stating that the "Last used" and "Used in" columns that are described in [Calculated metrics manager](/help/components/calc-metrics/cm-workflow/cm-manager.md) and the [Filters manager](/help/components/filters/manage-filters.md) are available only to system administrators. |
 | Permissions required for exporting datasets | Added information explaining the [permissions required](/help/admin/cja-access-control.md) to export datasets to cloud destinations. | 
 | Manage connections | Updated the [Manage connections](../connections/manage-connections.md) article, based on customer feedback. | 
 | Derived fields | Added summary of function [limitations](/help/data-views/derived-fields/derived-fields.md#limitations) and explanation on how to determine number of [operators](/help/data-views/derived-fields/derived-fields.md#operators) used in a function. |
