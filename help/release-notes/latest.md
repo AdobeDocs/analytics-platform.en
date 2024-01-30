@@ -6,9 +6,9 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (January 2024)
 
-**Last update**: January 26, 2024
+**Last update**: January 30, 2024
 
-These release notes cover the release period of end of October, 2023 through January, 2024. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
+These release notes cover the release period of end of January 8, 2024 through February 13, 2024. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
 ## New or updated features 
 
@@ -17,7 +17,7 @@ These release notes cover the release period of end of October, 2023 through Jan
 | **Adobe Product Analytics - Retention rates** | Retention rates is a new guided analysis that shows the percentage of users that return after their initial engagement within the desired date range. [Learn more](../guided-analysis/types/retention-rates.md) | N/A | January 8, 2024 |
 | **Adobe Product Analytics - Trendlines** | Trendlines is a new guided analysis available in the [Usage](/help/guided-analysis/types/usage.md) view, which helps depict a clearer pattern in data. | N/A | January 17, 2024 |
 | **Updates to the Key Metrics Summary visualization** | When using the Key Metric Summary visualization, the Comparison date range can now automatically update, depending on whether the Comparison date range option you choose is relative to the primary date range or fixed. [Learn more](/help/analysis-workspace/visualizations/key-metric.md). | N/A | January 17, 2024 |
-| **Adobe Product Analytics - Streams** | Stream is a new guided analysis that allows you to explore individual user event streams. This analysis lets you find experience patterns and tell better user stories. | N/A | January 31, 2024 |
+| **Adobe Product Analytics - User streams** | User Streams is a new guided analysis that allows you to explore individual user event streams. This analysis lets you find experience patterns and tell better user stories. | N/A | February 7, 2024 |
 | **Adobe Product Analytics - Query rail improvements** | In guided analysis, some components settings are now included in the query rail, providing improvements to usability. | N/A | January 31, 2024 |
 | **Time-series forecasting** | Forecasting is a new Analysis Workspace feature to forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly). | January 31, 2024 | February 21, 2024 |
 
