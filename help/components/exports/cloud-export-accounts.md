@@ -51,7 +51,11 @@ For information about how to manage existing accounts, including viewing, editin
 >
 >When exporting Customer Journey Analytics reports to Adobe Experience Platform Data Landing Zone, make sure that you download the data within 7 days, then delete it from AEP Data Landing Zone. After 7 days, the data is automatically deleted from AEP Data Landing Zone.
 
-1. [Begin creating a cloud export account](#begin-creating-a-cloud-export-account), as described above. 
+1. Begin creating a cloud export account in either of the following ways:
+
+   * From the Exports page as described above, in [Begin creating a cloud export account](#begin-creating-a-cloud-export-account)
+   
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. Select [!UICONTROL **Save**].
 
@@ -94,7 +98,11 @@ For information about how to manage existing accounts, including viewing, editin
 
 ### Amazon S3 Role ARN
 
-1. [Begin creating a cloud export account](#begin-creating-a-cloud-export-account), as described above. 
+1. Begin creating a cloud export account in either of the following ways:
+
+   * From the Exports page as described above, in [Begin creating a cloud export account](#begin-creating-a-cloud-export-account)
+   
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) 
 
 1. In the [!UICONTROL **Account properties**] section of the [!UICONTROL **Add account**] dialog box, specify the following information:
 
@@ -118,7 +126,11 @@ For information about how to manage existing accounts, including viewing, editin
 
 ### Google Cloud Platform
   
-1. [Begin creating a cloud export account](#begin-creating-a-cloud-export-account), as described above. 
+1. Begin creating a cloud export account in either of the following ways:
+
+   * From the Exports page as described above, in [Begin creating a cloud export account](#begin-creating-a-cloud-export-account)
+   
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) 
 
 1. In the [!UICONTROL **Account properties**] section of the [!UICONTROL **Add account**] dialog box, specify the following information:
 
@@ -142,7 +154,11 @@ For information about how to manage existing accounts, including viewing, editin
 
 ### Azure SAS
 
-1. [Begin creating a cloud export account](#begin-creating-a-cloud-export-account), as described above. 
+1. Begin creating a cloud export account in either of the following ways:
+
+   * From the Exports page as described above, in [Begin creating a cloud export account](#begin-creating-a-cloud-export-account)
+   
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) 
 
 1. In the [!UICONTROL **Account properties**] section of the [!UICONTROL **Add account**] dialog box, specify the following information:
 
@@ -170,7 +186,11 @@ For information about how to manage existing accounts, including viewing, editin
 
 ### Azure RBAC
 
-1. [Begin creating a cloud export account](#begin-creating-a-cloud-export-account), as described above. 
+1. Begin creating a cloud export account in either of the following ways:
+
+   * From the Exports page as described above, in [Begin creating a cloud export account](#begin-creating-a-cloud-export-account)
+   
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. In the [!UICONTROL **Account properties**] section of the [!UICONTROL **Add account**] dialog box, specify the following information:
 
@@ -196,7 +216,11 @@ For information about how to manage existing accounts, including viewing, editin
 
 ### Snowflake
 
-1. [Begin creating a cloud export account](#begin-creating-a-cloud-export-account), as described above. 
+1. Begin creating a cloud export account in either of the following ways:
+
+   * From the Exports page as described above, in [Begin creating a cloud export account](#begin-creating-a-cloud-export-account)
+   
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) 
 
 1. In the [!UICONTROL **Account properties**] section of the [!UICONTROL **Add account**] dialog box, specify the following information:
 
