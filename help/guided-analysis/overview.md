@@ -18,14 +18,15 @@ Guided analysis categorizes view types into **Analysis types**. The following an
 
 | Analysis type | View type | Description |
 | --- | --- | --- |
-| [!UICONTROL Impact] | [Release](types/release.md) | Compare performance across equal periods pre- and post-release. |
-| [!UICONTROL Impact] | [First use](types/first-use.md) | Measure the impact of first-time feature use on key indicators. |
 | [!UICONTROL Funnel] | [Friction](types/friction.md) | Compare conversion rates between steps. |
 | [!UICONTROL Funnel] | [Conversion trends](types/conversion-trends.md) | Track changes in conversion rates over time. |
-| [!UICONTROL User growth] | [Active](types/active.md) | Identify who is new, retained, returning, or dormant. |
-| [!UICONTROL User growth] | [Net growth](types/net-growth.md) | Are you gaining or losing users? |
+| [!UICONTROL Impact] | [Release](types/release.md) | Compare performance across equal periods pre- and post-release. |
+| [!UICONTROL Impact] | [First use](types/first-use.md) | Measure the impact of first-time feature use on key indicators. |
+| [!UICONTROL Retention] | [Retention rates](types/retention-rates.md) | Measure your users' ongoing return habits. |
 | [!UICONTROL Trends] | [Usage](types/usage.md) | Measure user engagement over time. |
 | [!UICONTROL Trends] | [Frequency](types/frequency.md) | Measure engagement by frequency of use. |
+| [!UICONTROL User growth] | [Active](types/active.md) | Identify who is new, retained, returning, or dormant. |
+| [!UICONTROL User growth] | [Net growth](types/net-growth.md) | Are you gaining or losing users? |
 
 {style="table-layout:auto"}
 
