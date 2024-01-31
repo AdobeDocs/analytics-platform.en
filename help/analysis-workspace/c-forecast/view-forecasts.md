@@ -1,7 +1,7 @@
 ---
 description: Learn how to view forecasts in a table or in a line chart.
 title: How to view forecasts in Analysis Workspace
-feature: Forecasts
+feature: Visualizations
 role: User
 ---
 # View forecasts in Analysis Workspace
