@@ -6,6 +6,8 @@ role: User
 ---
 # Forecasting overview
 
+{{release-limited-testing}}
+
 {{select-package}}
 
 Forecasting is a new Analysis Workspace feature to forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly). Forecasting is available for time-series related data only.

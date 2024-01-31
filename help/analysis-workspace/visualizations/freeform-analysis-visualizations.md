@@ -16,7 +16,7 @@ The following visualization types are available in Analysis Workspace:
 
 | Visualization name | Description |
 | --- | --- | 
-| [Area](/help/analysis-workspace/visualizations/area.md)<p>![Area icon](assets/Smock_GraphArea_18_N.svg)</p>  | Like a line graph, but with a colored area below the line. Use an area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics. | Answers questions like: <ul><li> |
+| [Area](/help/analysis-workspace/visualizations/area.md)<p>![Area icon](assets/Smock_GraphArea_18_N.svg)</p>  | Like a line graph, but with a colored area below the line. Use an area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics. |
 | [Bar](/help/analysis-workspace/visualizations/bar.md) <p>![Bar icon](assets/Smock_GraphBarVertical_18_N.svg)</p> | Shows vertical bars representing various values across one or more metrics. |
 | [Bullet graph](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![Bullet icon](assets/Smock_GraphBullet_18_N.svg)</p> | Shows how a value you are interested in compares to or measures against other performance ranges (goals). |
 | [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![Cohort table icon](assets/Smock_TextNumbered_18_N.svg)</p> | A *`cohort`* is a group of people sharing common characteristics over a specified period. Cohort Analysis is useful for retention, churn or latency analysis. |
@@ -89,7 +89,8 @@ Each visualization has its own settings that you can manage. To access visualiza
 | Anchor Y Axis at Zero | If all the values plotted on the chart are considerably above zero, the chart default will make the bottom of the y-axis NON-ZERO. If you check this box, the y-axis will be forced to zero (and it will re-draw the chart). |
 | Normalization | Forces metrics to equal proportions. This is helpful when plotted metrics are of very different magnitudes. |
 | Display Dual Axis | Only applies if you have two metrics - you can have a y-axis on the left (for one metric) and on the right (for the other metric). This is helpful when plotted metrics are of very different magnitudes. |
-| Show Anomalies | Enhances line graphs and freeform tables by displaying anomaly detection. Anomaly detection in line visualizations includes an expected value (dashed line) and an expected range (shaded band). |
+| Show anomalies | Enhances line graphs and freeform tables by displaying anomaly detection. Anomaly detection in line visualizations includes an expected value (dashed line) and an expected range (shaded band). |
+| Show forecast | Enhances line graphs and freeform tables by displaying forecast values. |
 
 ## Legend {#legend}
 
