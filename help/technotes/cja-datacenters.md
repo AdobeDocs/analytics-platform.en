@@ -3,8 +3,8 @@ title: Customer Journey Analytics data centers
 description: Find out about CJA data center locations around the world.
 solution: Customer Journey Analytics
 role: Admin
+exl-id: a41686bb-1a7b-4d27-8415-f4a1880b7de5
 ---
-
 # Customer Journey Analytics hosting locations
 
 Adobe Customer Journey Analytics is hosted in enterprise-class data centers from public-cloud service providers in North America (Virginia Ontario, Canada), Europe (The Netherlands), and APAC (Australia).

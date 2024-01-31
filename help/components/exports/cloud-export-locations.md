@@ -36,12 +36,19 @@ For information about how to manage existing locations, including viewing, editi
    |Field | Function | 
    |---------|----------|
    | [!UICONTROL **Name**] | The name of the location.  | 
-   | [!UICONTROL **Description**] | Provide a short description of the account to help differentiate it from other accounts of the same account type. |
+   | [!UICONTROL **Description**] | Provide a short description of the location to help differentiate it from other locations on the account. |
    | [!UICONTROL **Location account**] | Select the account where you want to create the location. For information about how to create an account, see [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md). | 
 
 1. In the [!UICONTROL **Location properties**] section, specify information specific to the account type of your location account.  
 
    Continue with the section below that corresponds to the account type that you selected in the [!UICONTROL **Location account**] field.
+
+   * [AEP Data Landing Zone](#aep-data-landing-zone)
+   * [Amazon S3 Role ARN](#amazon-s3-role-arn)
+   * [Google Cloud Platform](#google-cloud-platform)
+   * [Azure SAS](#azure-sas)
+   * [Azure RBAC](#azure-rbac)
+   * [Snowflake](#snowflake)
 
 ### AEP Data Landing Zone
 
@@ -49,7 +56,11 @@ For information about how to manage existing locations, including viewing, editi
 >
 >When exporting Customer Journey Analytics reports to Adobe Experience Platform Data Landing Zone, make sure that you download the data within 7 days, then delete it from AEP Data Landing Zone. After 7 days, the data is automatically deleted from AEP Data Landing Zone.
 
-1. [Begin creating a cloud export location](#begin-creating-a-cloud-export-location), as described above.
+1. Begin creating a cloud export location in either of the following ways:
+
+   * From the Exports page as described above, in [Begin creating a cloud export location](#begin-creating-a-cloud-export-location)
+   
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. In the [!UICONTROL **Location properties**] section of the [!UICONTROL **Add location**] dialog box, specify the following information to configure an Adobe Experience Platform Data Landing Zone location:
 
@@ -82,7 +93,11 @@ For information about how to manage existing locations, including viewing, editi
 
 ### Amazon S3 Role ARN
 
-1. [Begin creating a cloud export location](#begin-creating-a-cloud-export-location), as described above.
+1. Begin creating a cloud export location in either of the following ways:
+
+   * From the Exports page as described above, in [Begin creating a cloud export location](#begin-creating-a-cloud-export-location)
+   
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. In the [!UICONTROL **Location properties**] section of the [!UICONTROL **Add location**] dialog box, specify the following information to configure an Amazon S3 Role ARN location:
 
@@ -101,7 +116,11 @@ For information about how to manage existing locations, including viewing, editi
 
 ### Google Cloud Platform
 
-1. [Begin creating a cloud export location](#begin-creating-a-cloud-export-location), as described above.
+1. Begin creating a cloud export location in either of the following ways:
+
+   * From the Exports page as described above, in [Begin creating a cloud export location](#begin-creating-a-cloud-export-location)
+   
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. In the [!UICONTROL **Location properties**] section of the [!UICONTROL **Add location**] dialog box, specify the following information to configure a Google Cloud Platform location:
 
@@ -120,7 +139,11 @@ For information about how to manage existing locations, including viewing, editi
 
 ### Azure SAS
 
-1. [Begin creating a cloud export location](#begin-creating-a-cloud-export-location), as described above.
+1. Begin creating a cloud export location in either of the following ways:
+
+   * From the Exports page as described above, in [Begin creating a cloud export location](#begin-creating-a-cloud-export-location)
+   
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. In the [!UICONTROL **Location properties**] section of the [!UICONTROL **Add location**] dialog box, specify the following information to configure an Azure SAS location:
 
@@ -137,7 +160,11 @@ For information about how to manage existing locations, including viewing, editi
 
 ### Azure RBAC
 
-1. [Begin creating a cloud export location](#begin-creating-a-cloud-export-location), as described above.
+1. Begin creating a cloud export location in either of the following ways:
+
+   * From the Exports page as described above, in [Begin creating a cloud export location](#begin-creating-a-cloud-export-location)
+   
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. In the [!UICONTROL **Location properties**] section of the [!UICONTROL **Add location**] dialog box, specify the following information to configure an Azure RBAC location:
 
@@ -155,7 +182,11 @@ For information about how to manage existing locations, including viewing, editi
 
 ### Snowflake
 
-1. [Begin creating a cloud export location](#begin-creating-a-cloud-export-location), as described above.
+1. Begin creating a cloud export location in either of the following ways:
+
+   * From the Exports page as described above, in [Begin creating a cloud export location](#begin-creating-a-cloud-export-location)
+   
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. In the [!UICONTROL **Location properties**] section of the [!UICONTROL **Add location**] dialog box, specify the following information to configure a Snowflake location:
 
