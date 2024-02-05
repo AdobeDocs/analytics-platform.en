@@ -14,6 +14,7 @@ These release notes cover the release period of end of January 8, 2024 through F
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Skipped records details** | You can retrieve details on why records are skipped when setting up a connection. See [Connection details](../connections/manage-connections.md#connection-details) for more information. | February 5, 2024 | February 5, 2024 |
 | **Time-series forecasting** | [Forecasting](../analysis-workspace/c-forecast/forecasting.md) is a new Analysis Workspace feature to forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly) for freeform tables and line charts. | January 31, 2024 | February 21, 2024 |
 | **Updates to the Key Metrics Summary visualization** | When using the Key Metric Summary visualization, the Comparison date range can now automatically update, depending on whether the Comparison date range option you choose is relative to the primary date range or fixed. [Learn more](/help/analysis-workspace/visualizations/key-metric.md). | N/A | January 17, 2024 |
 | **Adobe Product Analytics - Retention rates analysis** | Retention rates is a new guided analysis that enables you to measure your users' ongoing return habits. [Learn more](../guided-analysis/types/retention-rates.md) | N/A | January 8, 2024 |
