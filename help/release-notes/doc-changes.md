@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **February 2024** | |
+| Skipped record details | Added documentation on the skipped record details functionality in Connections. See [Connection details](../connections/manage-connections.md#connection-details) for more information. | 
 | **January 2024** | |
 | Forecasting | Added documentation on [forecasting](../analysis-workspace/c-forecast/forecasting.md), the new Analysis Workspace feature to forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly) for freeform tables and line charts. |
 | Updated the documentation for adding accounts and locations when exporting full tables | Updated the documentation to reflect minor interface updates when configuring a new account or location when [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>A new [!UICONTROL **Add account**] option is now available in the [!UICONTROL **Account**] drop-down menu. The [!UICONTROL **Add location**] option that was previously available as a button next to the [!UICONTROL **Location name**] drop-down menu is now available within the menu itself. |
