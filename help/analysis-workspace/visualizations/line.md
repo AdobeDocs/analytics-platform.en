@@ -15,13 +15,14 @@ The Line visualization represents metrics using a line in order to show how valu
 
 ![Line visualization](assets/line-viz.png)
 
-Click on the gear icon in the top right of the Line visualization to access [**Visualization settings**](freeform-analysis-visualizations.md) available. Settings are categorized into:
+Select the settings icon ![Settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the top bar of the Line visualization to access [Visualization settings](freeform-analysis-visualizations.md) available. Settings are categorized into:
+
+<img src="./assets/viz-settings-line.png" alt="Visualization settings" width=50%/>
 
 * **General**: Settings that are common across visualization types
 * **Axis**: Settings that impact the x- or y-axis of the line visualization
 * **Overlays**: Options for adding additional context to the series shown in your line visualization.
 
-![Visualization settings](assets/viz-settings-modal.png)
 
 ## Change granularity
 

@@ -24,22 +24,23 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
+* **[!UICONTROL View]**: Switch between this view type and [Friction](friction.md).
 * **[!UICONTROL Steps]**: The event touchpoints that you want to track. Each bar in the chart represents a step. You can include up to ten steps.
-* **[!UICONTROL People]**: The segments that you want to compare the funnel across. Each segment selected splits each step into multiple bars. Each color represents a different segment. You can include up to three segments.
+* **[!UICONTROL Counted as]**: The metric that you want to measure. Options include [!UICONTROL Users] and [!UICONTROL Sessions].
+* **[!UICONTROL Segments]**: The segments that you want to compare the funnel across. Each segment selected splits each step into multiple bars. Each color represents a different segment. You can include up to three segments.
 
 ## Chart settings
 
-The Conversion trends view offers the following chart settings, which can be adjusted in the menu above the chart:
+The [!UICONTROL Conversion trends] view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **[!UICONTROL Metric]**: The metric that you want to measure. Options include Sessions and Users.
-* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include Line.
-* **[!UICONTROL Conversion from]**: Determines the percentage calculation from step to step. Options include calculating conversion from the First step or Previous step.
+* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Line].
+* **[!UICONTROL Conversion from]**: Determines the percentage calculation from step to step. Options include calculating conversion from the [!UICONTROL First step] or [!UICONTROL Previous step].
 
 >[!NOTE]
 >
 >The **Average** column in the Conversion trends view table differs from the **Total** column in the [Friction view](friction.md) table. The former is an average of the interval columns (for example, average of daily conversion rates), while the latter is an aggregated calculation across the full date range.
 
-## Apply time comparison
+## Time comparison
 
 {{apply-time-comparison}}
 

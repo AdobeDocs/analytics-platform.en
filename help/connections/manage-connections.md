@@ -112,17 +112,11 @@ To go to the details for a connection, select a connection name in the connectio
 
 ![All datasets window showing the widgets and settings](assets/conn-details.png)
 
-The Connections details screen provides a detailed view of the status of a connection. You can:
+The Connections details interface provides a detailed view of the status of a connection. You can:
 
 * Check the status of your connection's datasets and of the ingestion process.
 * Identify configuration problems that can cause skipped or deleted records.
 * See when the data is available for reporting.
-
->[!IMPORTANT]
->
->Any data ingested before August 13, 2021 is not reflected in this [!UICONTROL Connections] dialog.
-
-### Connection details
 
 | User Interface | Description |
 | --- | --- |
@@ -148,6 +142,10 @@ The Connections details screen provides a detailed view of the status of a conne
 | Schema | The Experience Platform schema that the dataset is based on.  |
 | [!UICONTROL Import new data] | Shows the status of importing new data for the dataset: <p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** if dataset is configured to import new data, and<p><span style="color:gray">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** if dataset is configured to not import new data import. |
 | [!UICONTROL Backfill data] | Shows the status of backfill data for the dataset.<p><span style="color:red">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills,<p><span style="color:orange">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of backfills processing,<p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of backfills completed, and<p><span style="color:grey">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no  backfills are configured. |
+
+>[!IMPORTANT]
+>
+>Any data ingested before August 13, 2021 is not reflected in the [!UICONTROL Connections] interface.
 
 ### Connection panel
 

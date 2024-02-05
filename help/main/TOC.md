@@ -28,6 +28,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Customer Journey Analytics overview](../getting-started/cja-overview.md)
   + [Quick start guide](../getting-started/cja-getting-started.md)
   + [Landing page](../getting-started/landing.md)
+  + [Landing page (old)](../getting-started/cja-landing-old.md)
   + [Frequently asked questions](../getting-started/cja-faq.md)
   + [Compare Customer Journey Analytics to BI solutions](../getting-started/cja-vs-bi.md)
 
@@ -164,6 +165,9 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Anomaly Detection overview](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
     + [View anomalies in Analysis Workspace](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
     + [Statistical techniques used in anomaly detection](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
+  + Forecasting {#forecasting}
+    + [Forecasting overview](../analysis-workspace/c-forecast/forecasting.md)
+    + [View forecasts in Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
   + [User preferences](../analysis-workspace/user-preferences.md)
   + Workspace FAQs {#workspace-faq}
     + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)
