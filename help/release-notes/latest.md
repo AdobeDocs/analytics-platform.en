@@ -4,7 +4,7 @@ description: Latest Customer Journey Analytics release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 ---
-# Current Adobe Customer Journey Analytics release notes (January 2024)
+# Current Adobe Customer Journey Analytics release notes (February 2024)
 
 **Last update**: February 7, 2024
 
