@@ -7,7 +7,7 @@ role: User
 ---
 # [!UICONTROL Timeline] view
 
-The **[!UICONTROL Timeline]** view allows you to analyze individual sessons to determine patterns in behavior. The right rail allows you to select a person ID's for analysis. The center area shows the time, property value, and duration for that person.
+The **[!UICONTROL Timeline]** view allows you to analyze individual sessions to determine patterns in behavior. The right rail allows you to select a person IDs for analysis. The center area shows the time, property value, and duration for that person.
 
 This analysis requires that you add the **[!UICONTROL Person ID]** standard component to the [data view](/help/data-views/component-reference.md#optional). If you do not have the [!UICONTROL Person ID] component added to the data view, the following message is displayed:
 
