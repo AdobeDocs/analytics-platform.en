@@ -185,12 +185,6 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Guided analysis {#guided-analysis}
     + [Overview](../guided-analysis/overview.md)
-    + User growth {#user-growth}
-      + [Active view](../guided-analysis/types/active.md)
-      + [Net growth view](../guided-analysis/types/net-growth.md)
-    + Trends {#trends}
-      + [Usage view](../guided-analysis/types/usage.md)
-      + [Frequency view](../guided-analysis/types/frequency.md)
     + Funnel {#funnel}
       + [Friction view](../guided-analysis/types/friction.md)
       + [Conversion trends view](../guided-analysis/types/conversion-trends.md)
@@ -199,6 +193,14 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [First use view](../guided-analysis/types/first-use.md)
     + Retention {#retention}
       + [Retention rates](../guided-analysis/types/retention-rates.md)
+    + Trends {#trends}
+      + [Usage view](../guided-analysis/types/usage.md)
+      + [Frequency view](../guided-analysis/types/frequency.md)
+    + User growth {#user-growth}
+      + [Active view](../guided-analysis/types/active.md)
+      + [Net growth view](../guided-analysis/types/net-growth.md)
+    + User stream {#streams}
+      + [Timeline](../guided-analysis/types/timeline.md)
     + [Industry use cases](../guided-analysis/industry-use-cases.md)
     + [FAQ](../guided-analysis/faq.md)
 

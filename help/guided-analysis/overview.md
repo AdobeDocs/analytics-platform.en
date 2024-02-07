@@ -27,6 +27,7 @@ Guided analysis categorizes view types into **Analysis types**. The following an
 | [!UICONTROL Trends] | [Frequency](types/frequency.md) | Measure engagement by frequency of use. |
 | [!UICONTROL User growth] | [Active](types/active.md) | Identify who is new, retained, returning, or dormant. |
 | [!UICONTROL User growth] | [Net growth](types/net-growth.md) | Are you gaining or losing users? |
+| [!UICONTROL User stream] | [Timeline](types/timeline.md) | Explore patterns in session activity. |
 
 {style="table-layout:auto"}
 

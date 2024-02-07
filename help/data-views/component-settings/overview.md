@@ -8,7 +8,7 @@ role: Admin
 ---
 # Component settings
 
-The following information describes c settings that a data view component uses.
+The following information describes the settings that a data view component uses.
 
 ![Component settings described in this section](../assets/component-settings.png)
 
