@@ -7,7 +7,7 @@ role: User
 ---
 # [!UICONTROL Timeline] view
 
-The **[!UICONTROL Timeline]** view allows you to analyze individual sessions to determine patterns in behavior. The right rail allows you to select a person IDs for analysis. The center area shows the time, property value, and duration for that person.
+The **[!UICONTROL Timeline]** view allows you to analyze individual sessions to determine patterns in behavior. The right rail allows you to select the person ID that you want to analyze. The center area shows the time, selected property value, and duration for each event of that person.
 
 This analysis requires that you add the **[!UICONTROL Person ID]** standard component to the [data view](/help/data-views/component-reference.md#optional). If you do not have the [!UICONTROL Person ID] component added to the data view, the following message is displayed:
 
@@ -41,5 +41,5 @@ The [!UICONTROL Timeline] view offers the following chart settings, which can be
 
 The desired date range for your analysis. There are two components to this setting:
 
-* **[!UICONTROL Interval]**: The date granularity that you want to view trend data by. This setting does not impact non-trended views such as Frequency.
+* **[!UICONTROL Interval]**: The date granularity that you want to view trend data by. This setting does not impact non-trended views such as Timeline.
 * **[!UICONTROL Date]**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
