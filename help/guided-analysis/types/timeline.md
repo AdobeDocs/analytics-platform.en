@@ -11,10 +11,11 @@ The **[!UICONTROL Timeline]** view allows you to obserive user-level session eve
 
 >[!NOTE]
 >
->The Timeline view requires that the **[!UICONTROL Person ID]** standard component be available in the [data view](/help/data-views/component-reference.md#optional). The inclusion of Person ID in a data view is managed by your Adobe Analytics data administrator, giving organizations full privacy control over who can access this data. If a data view does not have the [!UICONTROL Person ID] component added, the following message is displayed:
+>The Timeline view requires that the **[!UICONTROL Person ID]** standard component be available in the [data view](/help/data-views/component-reference.md#optional). The inclusion of Person ID in a data view is managed by your Adobe Analytics data administrator, giving organizations full privacy control over who can access this data. 
 
-* **Admins**: The PersonID property is required for this analysis. Please add PersonID to the data view.
-* **Non-admins**: The PersonID property is required for this analysis. Please talk to your Adobe Analytics administrator.
+If a data view does not have the [!UICONTROL Person ID] component added, the following message is displayed:
+* **Admins**: The PersonID property is required for this analysis. Please add Person ID to the data view.
+* **Non-admins**: The PersonID property is required for this analysis. Please work with your Customer Journey Analytics administrator to add Person ID to the data view.
 
 ## Use cases
 
