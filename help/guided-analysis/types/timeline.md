@@ -1,41 +1,44 @@
 ---
 title: Timeline view
-description: Explore patterns in session activity.
+description: Explore experience patterns and tell better user stories.
 feature: Guided Analysis
 keywords: product analytics
 role: User
 ---
 # [!UICONTROL Timeline] view
 
-The **[!UICONTROL Timeline]** view allows you to analyze individual sessions to determine patterns in behavior. The right rail allows you to select the person ID that you want to analyze. The center area shows the time, selected property value, and duration for each event of that person.
+The **[!UICONTROL Timeline]** view allows you to obserive user-level session events over time to find experience patterns and tell better user stories. The left rail allows you to filter to property values you want to stream and the right rail allows you to select the Person ID that you want to analyze. The center area shows the stream by session, consisting of timestamp, property values, and duration. Please note, duration is not available for the last event in a given session.
 
-This analysis requires that you add the **[!UICONTROL Person ID]** standard component to the [data view](/help/data-views/component-reference.md#optional). If you do not have the [!UICONTROL Person ID] component added to the data view, the following message is displayed:
+>[!NOTE]
+>
+>The Timeline view requires that the **[!UICONTROL Person ID]** standard component be available in the [data view](/help/data-views/component-reference.md#optional). The inclusion of Person ID in a data view is managed by your Adobe Analytics data administrator, giving organizations full privacy control over who can access this data. If a data view does not have the [!UICONTROL Person ID] component added, the following message is displayed:
 
-> The PersonID property is required for this analysis. Please add PersonID to the data view.
+* **Admins**: The PersonID property is required for this analysis. Please add PersonID to the data view.
+* **Non-admins**: The PersonID property is required for this analysis. Please talk to your Adobe Analytics administrator.
 
 ## Use cases
 
 Use cases for this view type include:
 
-* **Friction exploration**: If you find a steep drop in the [Friction](friction.md) view, you can investigate potential causes of that drop using this view.
-* **Error behavior**: If users encounter an error in your product, you can explore what users do before or after seeing that error.
-* **Data collection validation**: Data admins can filter this view to isolate themselves. This view provides a solid way to make sure that your organization's implementation is working as expected.
+* **Friction exploration**: If you find a steep drop in the [Friction](friction.md) view, you can create a segment of those users and apply the segment in this view to  investigate potential causes.
+* **Error behavior**: If users encounter a product error, you can explore what users were doing before or after seeing that error.
+* **Data collection validation**: Data admins can filter this view to their own Person ID, and use it to valiate that your organization's implementation is working as expected.
 
 ## Query rail
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL Property]**: The property that you want to view values for. The session analysis in the center shows values for the property selected here. You can also filter data by the selected property. Valid operators for the filter include [!UICONTROL Equals], [!UICONTROL Does not equal], [!UICONTROL Starts with], [!UICONTROL Ends with], [!UICONTROL Contains], [!UICONTROL Does not contain], [!UICONTROL Exists], and [!UICONTROL Does not exist].
-* **[!UICONTROL Segments]**: The segment that you want to measure. The selected segment filters your data to focus only on the individuals who match your segment criteria. One segment is supported for this view.
+* **[!UICONTROL Property]**: The property that you want to view streamed values for. The stream in the center shows values for the selected property. You can also apply filters to narrow down the stream to more relevenat data. Valid operators for the filter include [!UICONTROL Equals], [!UICONTROL Does not equal], [!UICONTROL Starts with], [!UICONTROL Ends with], [!UICONTROL Contains], [!UICONTROL Does not contain], [!UICONTROL Exists], and [!UICONTROL Does not exist].
+* **[!UICONTROL Segments]**: The segment that you want to analyze. The selected segment filters your data to focus only on the individuals who match your segment criteria. If you would like to narrow down the view to a specific Person ID, you can filter to that Person ID here. One segment is supported for this view. 
 
 ## Chart settings
 
 The [!UICONTROL Timeline] view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **[!UICONTROL Show as]**: Shows desired property values.
-  * [!UICONTROL Show all]
-  * [!UICONTROL Highlight]
-  * [!UICONTROL View only]
+* **[!UICONTROL Show as]**: Shows the desired property values.
+  * [!UICONTROL Show all]: Show all property values in a session.
+  * [!UICONTROL Highlight]: Visually highlight the property values in a session that match the query filters.
+  * [!UICONTROL View only]: Only show the property values in a session that match the query filters.
 
 ## Date range
 
