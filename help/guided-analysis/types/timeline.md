@@ -7,7 +7,7 @@ role: User
 ---
 # [!UICONTROL Timeline] view
 
-The **[!UICONTROL Timeline]** view allows you to obserive user-level session events over time to find experience patterns and tell better user stories. The left rail allows you to filter to property values that you want to stream. The right rail allows you to select the Person ID that you want to analyze. The center area shows the stream by session, consisting of timestamp, property values, and duration. Duration is not available for the last event in a given session.
+The **[!UICONTROL Timeline]** view allows you to observe user-level session events over time to find experience patterns and tell better user stories. The left rail allows you to filter to property values that you want to stream. The right rail allows you to select the Person ID that you want to analyze. The center area shows the stream by session, consisting of timestamp, property values, and duration. Duration is not available for the last event in a given session.
 
 >[!NOTE]
 >
@@ -26,13 +26,13 @@ Use cases for this view type include:
 
 * **Friction exploration**: If you find a steep drop in the [Friction](friction.md) view, you can create a segment of those users and apply the segment in this view to investigate potential causes.
 * **Error behavior**: If users encounter a product error, you can explore what users were doing before or after seeing that error.
-* **Data collection validation**: Data admins can filter this view to their own Person ID to valiate that their organization's implementation is working as expected.
+* **Data collection validation**: Data admins can filter this view to their own Person ID to validate that their organization's implementation is working as expected.
 
 ## Query rail
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL Property]**: The property that you want to view streamed values for. The stream in the center shows values for the selected property. You can also apply filters to narrow down the stream to more relevenat data. Valid operators for the filter include [!UICONTROL Equals], [!UICONTROL Does not equal], [!UICONTROL Starts with], [!UICONTROL Ends with], [!UICONTROL Contains], [!UICONTROL Does not contain], [!UICONTROL Exists], and [!UICONTROL Does not exist].
+* **[!UICONTROL Property]**: The property that you want to view streamed values for. The stream in the center shows values for the selected property. You can also apply filters to narrow down the stream to more relevant data. Valid operators for the filter include [!UICONTROL Equals], [!UICONTROL Does not equal], [!UICONTROL Starts with], [!UICONTROL Ends with], [!UICONTROL Contains], [!UICONTROL Does not contain], [!UICONTROL Exists], and [!UICONTROL Does not exist].
 * **[!UICONTROL Segments]**: The segment that you want to analyze. The selected segment filters your data to focus only on the individuals who match your segment criteria. If you want to narrow down the view to a specific Person ID, you can filter to that Person ID here. One segment is supported for this view. 
 
 ## Chart settings
