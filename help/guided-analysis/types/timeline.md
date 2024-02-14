@@ -9,6 +9,8 @@ role: User
 
 The **[!UICONTROL Timeline]** view allows you to observe user-level session events over time to find experience patterns and tell better user stories. The left rail allows you to filter the stream by property values and segments. The right rail allows you to select from a randomized list of users that match the filter criteria. The center area shows the stream for the selected user by session, consisting of timestamp, property values, and duration. Duration is not available for the last event in a given session.
 
+![Timeline screenshot](../assets/timeline.png)
+
 >[!NOTE]
 >
 >The Timeline view requires that the **[!UICONTROL Person ID]** standard component be available in the [data view](/help/data-views/component-reference.md#optional). The inclusion of Person ID in a data view is managed by your Customer Journey Analytics administrator, giving your organization full privacy control over who can access this data. 
@@ -17,8 +19,6 @@ If a data view does not have the [!UICONTROL Person ID] component added, the fol
 
 * **Admins**: *The PersonID property is required for this analysis. Please add Person ID to the data view.*
 * **Non-admins**: *The PersonID property is required for this analysis. Please work with your Customer Journey Analytics administrator to add Person ID to the data view.*
-
-![Timeline screenshot](../assets/timeline.png)
 
 ## Use cases
 
