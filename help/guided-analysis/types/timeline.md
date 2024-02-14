@@ -1,17 +1,17 @@
 ---
 title: Timeline view
-description: Explore experience patterns and tell better user stories.
+description: Observe user-level session events over time to find experience patterns.
 feature: Guided Analysis
 keywords: product analytics
 role: User
 ---
 # [!UICONTROL Timeline] view
 
-The **[!UICONTROL Timeline]** view allows you to observe user-level session events over time to find experience patterns and tell better user stories. The left rail allows you to filter to property values that you want to stream. The right rail allows you to select the Person ID that you want to analyze. The center area shows the stream by session, consisting of timestamp, property values, and duration. Duration is not available for the last event in a given session.
+The **[!UICONTROL Timeline]** view allows you to observe user-level session events over time to find experience patterns and tell better user stories. The left rail allows you to filter the stream by property values and segments. The right rail allows you to select from a randomized list of users that match the filter criteria. The center area shows the stream for the selected user by session, consisting of timestamp, property values, and duration. Duration is not available for the last event in a given session.
 
 >[!NOTE]
 >
->The Timeline view requires that the **[!UICONTROL Person ID]** standard component be available in the [data view](/help/data-views/component-reference.md#optional). The inclusion of Person ID in a data view is managed by your Adobe Analytics data administrator, giving organizations full privacy control over who can access this data. 
+>The Timeline view requires that the **[!UICONTROL Person ID]** standard component be available in the [data view](/help/data-views/component-reference.md#optional). The inclusion of Person ID in a data view is managed by your Customer Journey Analytics administrator, giving your organization full privacy control over who can access this data. 
 
 If a data view does not have the [!UICONTROL Person ID] component added, the following message is displayed:
 
