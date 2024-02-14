@@ -35,6 +35,7 @@ Product admins are granted the necessary permissions to perform the following ta
 * Update and delete projects, filters, calculated metrics, audiences, annotations, or filters created by other users
 * Share Workspace projects to all users
 * Manage reporting activity in the [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md)
+* [Export full tables](/help/analysis-workspace/export/export-cloud.md) from Analysis Workspace
 
 ### Product Admin additional permissions
 
