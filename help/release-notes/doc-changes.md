@@ -14,7 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **February 2024** | |
-| Clarified that Product Admins always have access to export full tables | Made the following changes to clarify that users who are assigned the Product Admin role have access to export full tables from Analysis Workspace by default: <ul><li>Added a new bullet to [Product Admin default permissions](/help/admin/cja-access-control.md#product-admin-default-permissions). <p>Added a note under the [minimum requirements for exporting full tables to the cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</p> | 
+| Clarified that Product Admins always have access to export full tables | Made the following changes to clarify that users who are assigned the Product Admin role have access to export full tables from Analysis Workspace by default: <ul><li>Added a new bullet to [Product Admin default permissions](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>Added a note under the [minimum requirements for exporting full tables to the cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> | 
 | Skipped record details | Added documentation on the skipped record details functionality in Connections. See [Connection details](../connections/manage-connections.md#connection-details) for more information. | 
 | **January 2024** | |
 | Forecasting | Added documentation on [forecasting](../analysis-workspace/c-forecast/forecasting.md), the new Analysis Workspace feature to forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly) for freeform tables and line charts. |
