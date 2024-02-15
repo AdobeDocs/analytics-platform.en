@@ -26,7 +26,7 @@ The query rail allows you to configure the following components:
 
 * **[!UICONTROL View]**: Switch between this view type and [Friction](friction.md).
 * **[!UICONTROL Steps]**: The event touchpoints that you want to track. Each bar in the chart represents a step. You can include up to ten steps.
-* **[!UICONTROL Counted as]**: The metric that you want to measure. Options include [!UICONTROL Users] and [!UICONTROL Sessions].
+* **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Users] and [!UICONTROL Sessions].
 * **[!UICONTROL Segments]**: The segments that you want to compare the funnel across. Each segment selected splits each step into multiple bars. Each color represents a different segment. You can include up to three segments.
 
 ## Chart settings

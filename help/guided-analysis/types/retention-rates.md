@@ -38,7 +38,7 @@ Use cases for this view type include:
 The query rail allows you to configure the following components:
 
 * **[!UICONTROL Start & return event]**: The event criteria that a user must engage with to qualify for inclusion in your analysis. One event is supported, but you can include property filters.
-* **[!UICONTROL Counted as]**: How you want to measure users retained. Options include [!UICONTROL Users retained] and [!UICONTROL Percentage of users retained].
+* **[!UICONTROL Counted as]**: The counting method that you want to apply to retained users. Options include [!UICONTROL Users retained] and [!UICONTROL Percentage of users retained].
 * **[!UICONTROL Segments]**: The segments that you want to measure. Each selected segment adds a row to the cohort table. You can include up to three segments.
 
 ## Chart settings
