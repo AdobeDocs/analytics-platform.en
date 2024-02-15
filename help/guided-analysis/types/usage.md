@@ -25,15 +25,15 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL Events]**: The events that you want to measure. Each selected event is represented as a chart series and table row. You can include up to five events.
-* **[!UICONTROL People]**: The segments that you want to measure. Each selected segment doubles the number of chart series and table rows. You can include up to five segments.
+* **[!UICONTROL Events & Metrics]**: The events or metrics that you want to measure. Each selection is represented as a chart series and table row. Events and metrics cannot be combined in the query; once you've made your first selection, the remaining query selections must be of the same type. You can include up to five selections.
+* **[!UICONTROL Counted as]**: The metric that you want to measure. Options include Events, Sessions, Users, Percentage of users, Events per session, and Events per user. Counted as options are only applicable for event queries and are removed for metric queries.
+* **[!UICONTROL Segments]**: The segments that you want to measure. Each selected segment doubles the number of chart series and table rows. You can include up to five segments.
 * **[!UICONTROL Breakdown property]**: Breaks down the chart series and table rows by the values of the selected property. A single breakdown property is supported. The top 20 values appear in the table, and up to ten values can be viewed in the chart. You can hide or expose a row in the chart by toggling the ![Show hide icon](../assets/hide-in-chart.png) icon.  
 
 ## Chart settings
 
 The [!UICONTROL Usage] view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **[!UICONTROL Metric]**: The metric that you want to measure. Options include Events, Sessions, Users, Events per session, and Events per user.
 * **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include Line, Bar, Stacked bar, and Stacked area.
 
 ## Overlays
