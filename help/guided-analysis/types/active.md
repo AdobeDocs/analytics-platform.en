@@ -33,7 +33,7 @@ The query rail allows you to configure the following components:
 
 * **[!UICONTROL View]**: Switch between this view type and [Net growth](net-growth.md).
 * **[!UICONTROL Events]**: The event that you want to measure. Since this view type is user-based, a user who interacts with the event once within the period is counted as an active user. You can include one event in a query.
-* **[!UICONTROL Counted as]**: The metric that you want to measure. Options include [!UICONTROL Number of users] and [!UICONTROL Percentage of users].
+* **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Number of users] and [!UICONTROL Percentage of users].
 * **[!UICONTROL Segments]**: The segment that you want to filter data by. You can include one segment in a query.
 
 ## Chart settings
