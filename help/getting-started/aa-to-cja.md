@@ -58,7 +58,7 @@ Adobe Analytics customers can easily leverage their report suites in the Adobe E
 
 As [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) data collection evolves, you will likely migrate to either the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html) or [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html) with the Adobe Experience Platform Edge Network. While a typical implementation of the SDKs will send data into Adobe Analytics, a new opportunity presents itself for sending data directly to Adobe Experience Platform. It can then be ingested into Customer Journey Analytics, while also maintaining data sent to Adobe Analytics. 
 
-This method greatly expands possibilities for data collection: There is no longer a limitation on the number of fields or the need to map data elements to props, eVars, and events like in Analytics. You can use unlimited schema elements of different types and represent them in multiple ways using Customer Journey Analytics [Data Views](/help/data-views/data-views.md). Speed of data availability increases when sent directly to Adobe Experience Platform, as the time for data processing through Adobe Analytics is removed. 
+This method greatly expands possibilities for data collection: There is no longer a limitation on the number of fields or the need to map data elements to props, eVars, and events like in Analytics. You can use unlimited schema elements of different types and represent them in multiple ways using Customer Journey Analytics [Data Views](/help/data-views/data-views.md). Speed of data availability increases when sent directly to Adobe Experience Platform, as the time for data processing through Adobe Analytics is removed.   
 
 **Advantages of using Experience Platform SDKs:**
 
@@ -75,6 +75,20 @@ The following Adobe Analytics features or components are not supported:
 * Bot Filtering
 * Streaming Media Measurement
 * Livestream or Livestream triggers
+
+### 5. Map projects and components from Adobe Analytics to Customer Journey Analytics
+
+Adobe Analytics administrators can migrate Adobe Analytics projects and their associated components to Customer Journey Analytics.
+
+The migration process includes:
+
+* Re-creating Adobe Analytics projects in Customer Journey Analytics.
+
+* Mapping dimensions and metrics from Adobe Analytics report suites to dimensions and metrics in Customer Journey Analytics data views.
+
+Before you begin the migration, first [Prepare to migrate components and projects from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html). 
+
+After you make all of the needed preparations, you can [Migrate components and projects from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html).
 
 ## Prepare for critical differences
 

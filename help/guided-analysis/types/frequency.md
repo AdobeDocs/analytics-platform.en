@@ -25,14 +25,15 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
+* **[!UICONTROL View]**: Switch between this view type and [Usage](usage.md).
 * **[!UICONTROL Events]**: The events that you want to measure. Each selected event is represented as a separate graph. A row that represents the trended event is added to the table. You can include up to five events.
-* **[!UICONTROL People]**: The segments that you want to measure. Each selected segment doubles the number of bars in the chart and rows in the table. You can include up to five segments.
+* **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Users],  [!UICONTROL Sessions],  [!UICONTROL Percentage of users] and  [!UICONTROL Percentage of sessions]. The denominator for percentage-based metrics in this view is users or sessions who did the selected events, not all active users of the product.
+* **[!UICONTROL Segments]**: The segments that you want to measure. Each selected segment doubles the number of bars in the chart and rows in the table. You can include up to five segments.
 
 ## Chart settings
 
 The [!UICONTROL Frequency] view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **[!UICONTROL Metric]**: The metric that you want to measure. Options include [!UICONTROL Users],  [!UICONTROL Sessions],  [!UICONTROL Percentage of users] and  [!UICONTROL Percentage of sessions]. The denominator for percentage-based metrics in this view is users or sessions who did the selected events, not all active users of the product.
 * **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Horizontal bar] and [!UICONTROL Stacked bar].
 
 ## Bucket settings
@@ -45,7 +46,7 @@ Determines how the event is categorized into groups.
   * [!UICONTROL To]: Frequency larger than this value is grouped into the last bucket.
   * [!UICONTROL Size]: The bucket interval.
 
-## Apply time comparison
+## Time comparison
 
 {{apply-time-comparison}}
 

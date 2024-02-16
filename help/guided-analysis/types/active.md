@@ -24,24 +24,25 @@ All active users (new + repeat + return) appear as a shade of teal above the hor
 Use cases for this view type include:
 
 * **User retention and churn:** Provides a clear visualization around periods of high or low user retention. Recognizing these periods of high or low retention can help you make product decisions to encourage high retention or help minimize churn.
-* **Campaign assessment**: Viewing a specific campaign can help you understand not only how much traffic it generated, but also how well the campaign helped users remain engaged.
+* **Campaign assessment**: Viewing a specific campaign can help you understand how much traffic it generated, and how well it helped users remain engaged.
 * **User lifecycle analysis**: Analyzing active user growth throughout the user lifecycle can help identify specific stages where user engagement dips. For example, if there is a high ratio of dormant users for individuals in an onboarding stage, it can indicate usability issues or a need for better in-product guidance.
 
 ## Query rail
 
 The query rail allows you to configure the following components:
 
+* **[!UICONTROL View]**: Switch between this view type and [Net growth](net-growth.md).
 * **[!UICONTROL Events]**: The event that you want to measure. Since this view type is user-based, a user who interacts with the event once within the period is counted as an active user. You can include one event in a query.
-* **[!UICONTROL People]**: The segment that you want to measure. You can include one segment in a query.
+* **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Number of users] and [!UICONTROL Percentage of users].
+* **[!UICONTROL Segments]**: The segment that you want to filter data by. You can include one segment in a query.
 
 ## Chart settings
 
 The [!UICONTROL Active] view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **[!UICONTROL Metric]**: The metric that you want to measure. Options include Number of users and Percentage of users.
-* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include Stacked bar and Stacked area.
+* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Stacked bar] and [!UICONTROL Stacked area].
 
-## Apply time comparison
+## Time comparison
 
 {{apply-time-comparison}}
 

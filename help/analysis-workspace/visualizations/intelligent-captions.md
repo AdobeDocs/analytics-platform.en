@@ -24,6 +24,10 @@ To launch auto-generated captions for a line visualization, click the **[!UICONT
 
 Natural-language insights are now being generated. 
 
+Keep in mind that
+
+* You need a minimum of 3 data points for captions to successfully generate. Otherwise, you might get an error that reads "Not enough data to analyze."
+
 * Captions are generated every time the underlying selected data changes in the table powering the visualization. 
 
 * If there are multiple metrics in the table, captions are only generated for the first metric or the metric currently selected by the user.

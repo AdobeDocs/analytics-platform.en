@@ -26,14 +26,14 @@ Use cases for this view type include:
 The query rail allows you to configure the following components:
 
 * **[!UICONTROL Key indicators]**: The events that you want to measure per user. Each selected key indicator is represented as a colored line. A row representing the event is added to the table. You can include up to three events.
+* **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Events per user], [!UICONTROL Percentage of users], [!UICONTROL Events], [!UICONTROL Sessions], and [!UICONTROL Users].
 * **[!UICONTROL Factors]**: The date that you want to compare before and after.
-* **[!UICONTROL People]**: The segment that you want to measure. The selected segment filters your data to focus only on the individuals who match your segment criteria.
+* **[!UICONTROL Segments]**: The segment that you want to measure. The selected segment filters your data to focus only on the individuals who match your segment criteria.
 
 ## Chart settings
 
 The Release view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **[!UICONTROL Metric]**: The metric that you want to measure. Options include [!UICONTROL Events per user], [!UICONTROL Percentage of users], [!UICONTROL Events], [!UICONTROL Sessions], and [!UICONTROL Users].
 * **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Line] and [!UICONTROL Bar].
 
 ## Date range

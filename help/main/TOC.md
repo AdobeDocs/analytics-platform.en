@@ -28,6 +28,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Customer Journey Analytics overview](../getting-started/cja-overview.md)
   + [Quick start guide](../getting-started/cja-getting-started.md)
   + [Landing page](../getting-started/landing.md)
+  + [Landing page (old)](../getting-started/cja-landing-old.md)
   + [Frequently asked questions](../getting-started/cja-faq.md)
   + [Compare Customer Journey Analytics to BI solutions](../getting-started/cja-vs-bi.md)
 
@@ -58,7 +59,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Connections {#cja-connections}
   + [Connections overview](../connections/overview.md)
-  + [Create a connection](../connections/create-connection.md)
+  + [Create or edit a connection](../connections/create-connection.md)
   + [Manage connections](../connections/manage-connections.md)
   + [Combined event datasets](../connections/combined-dataset.md)
   + [Standard lookups](../connections/standard-lookups.md)
@@ -164,6 +165,9 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Anomaly Detection overview](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
     + [View anomalies in Analysis Workspace](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
     + [Statistical techniques used in anomaly detection](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
+  + Forecasting {#forecasting}
+    + [Forecasting overview](../analysis-workspace/c-forecast/forecasting.md)
+    + [View forecasts in Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
   + [User preferences](../analysis-workspace/user-preferences.md)
   + Workspace FAQs {#workspace-faq}
     + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)
@@ -181,12 +185,6 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Guided analysis {#guided-analysis}
     + [Overview](../guided-analysis/overview.md)
-    + User growth {#user-growth}
-      + [Active view](../guided-analysis/types/active.md)
-      + [Net growth view](../guided-analysis/types/net-growth.md)
-    + Trends {#trends}
-      + [Usage view](../guided-analysis/types/usage.md)
-      + [Frequency view](../guided-analysis/types/frequency.md)
     + Funnel {#funnel}
       + [Friction view](../guided-analysis/types/friction.md)
       + [Conversion trends view](../guided-analysis/types/conversion-trends.md)
@@ -195,6 +193,14 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [First use view](../guided-analysis/types/first-use.md)
     + Retention {#retention}
       + [Retention rates](../guided-analysis/types/retention-rates.md)
+    + Trends {#trends}
+      + [Usage view](../guided-analysis/types/usage.md)
+      + [Frequency view](../guided-analysis/types/frequency.md)
+    + User growth {#user-growth}
+      + [Active view](../guided-analysis/types/active.md)
+      + [Net growth view](../guided-analysis/types/net-growth.md)
+    + User stream {#streams}
+      + [Timeline](../guided-analysis/types/timeline.md)
     + [Industry use cases](../guided-analysis/industry-use-cases.md)
     + [FAQ](../guided-analysis/faq.md)
 

@@ -1,12 +1,12 @@
 ---
-title: Create a connection
-description: Describes how to create a connection to a Platform dataset in Customer Journey Analytics.
+title: Create or edit a connection
+description: Describes how to create or edit a connection to a Experience Platform dataset in Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 ---
-# Create a connection
+# Create or edit a connection
 
  The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with assistive workflow. It provides detailed dataset selection, configuration, and review experience with critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
 

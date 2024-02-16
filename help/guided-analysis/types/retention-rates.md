@@ -3,14 +3,10 @@ title: Retention rates
 description: Measure how many users continue to use your product.
 feature: Guided Analysis
 keywords: product analytics
-hide: yes
-hidefromtoc: yes
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
 ---
 # Retention rates
-
-{{release-limited-testing}}
 
 The **[!UICONTROL Retention rates]** view shows the percentage of users that return after their initial engagement within the desired date range. The horizontal axis represents the number of days since a user's initial engagement. The vertical axis represents the percentage of users who engage again.
 
@@ -42,13 +38,13 @@ Use cases for this view type include:
 The query rail allows you to configure the following components:
 
 * **[!UICONTROL Start & return event]**: The event criteria that a user must engage with to qualify for inclusion in your analysis. One event is supported, but you can include property filters.
-* **[!UICONTROL People]**: The segments that you want to measure. Each selected segment adds a row to the cohort table. You can include up to three segments.
+* **[!UICONTROL Counted as]**: The counting method that you want to apply to retained users. Options include [!UICONTROL Users retained] and [!UICONTROL Percentage of users retained].
+* **[!UICONTROL Segments]**: The segments that you want to measure. Each selected segment adds a row to the cohort table. You can include up to three segments.
 
 ## Chart settings
 
 The [!UICONTROL Retention rates] view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **[!UICONTROL Metric]**: How you want to measure users retained. Options include [!UICONTROL Users retained] and [!UICONTROL Percentage of users retained].
 * **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Bar] and [!UICONTROL Line].
 
 ## Duration settings

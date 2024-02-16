@@ -63,12 +63,12 @@ To export full tables from Analysis Workspace:
    | Lookback window | Select the reporting time-frame to include in each export file. Options include [!UICONTROL **Today**], [!UICONTROL **Yesterday**], [!UICONTROL **Last 7 days**], [!UICONTROL **Last 30 days**], [!UICONTROL **This week**], and [!UICONTROL **This month**]. <p>This option is not displayed when the [!UICONTROL **Export frequency**] is set to [!UICONTROL **Send now (one-time)**]. | 
    | Data table | Displays the Freeform table that you are exporting. You can modify the data table by dragging components from the left rail to the table. The table dynamically updates as you add components to the canvas.  <p>Any segments that were applied to the full table in the project appear at the top of each individual column in the table.</p> |
    | Clear | Clears the contents of the data table. This allows you to start building a new table directly within the New full table export dialog.  | 
-   | Export frequency | Set the schedule for how often the export should occur. <p>You can choose [!UICONTROL **Send now (one time)**] to send the export only once. When you select this option, the export is initiated immediately.<p>Or, you can choose to send the export on a defined schedule. When sending on a schedule, options include [!UICONTROL **Daily**], [!UICONTROL **Weekly**], [!UICONTROL **Monthly by day of the week**], [!UICONTROL **Monthly by day of the month**], [!UICONTROL **Yearly by day of the month**], and [!UICONTROL **Yearly by specific date**]. </p><p>When selecting an export frequency, consider the following:</p><ul><li>The options in the [!UICONTROL **Lookback window**] field change depending on what you select here.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Additional configuration fields display depending on the option you choose.</li></ul>  | 
+   | Export frequency | Set the schedule for how often the export should occur. <p>You can choose [!UICONTROL **Send now (one-time)**] to send the export only once. When you select this option, the export is initiated immediately.<p>Or, you can choose to send the export on a defined schedule. When sending on a schedule, options include [!UICONTROL **Daily**], [!UICONTROL **Weekly**], [!UICONTROL **Monthly by day of the week**], [!UICONTROL **Monthly by day of the month**], [!UICONTROL **Yearly by day of the month**], and [!UICONTROL **Yearly by specific date**]. </p><p>When selecting an export frequency, consider the following:</p><ul><li>The options in the [!UICONTROL **Lookback window**] field change depending on what you select here.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Additional configuration fields display depending on the option you choose.</li></ul>  | 
    | Starting on  | The day and time that the scheduled export should begin. <p>This option is available only when choosing a scheduled export frequency.</p> | 
    | Ending on | The day and time that the scheduled export expires. The scheduled export no longer runs after the date and time that you set. <p>This option is available only when choosing a scheduled export frequency.</p> |  
    | File format | Choose whether the exported data should be in .csv or .json format. |  
-   | Account | Select the cloud export account where you want the data to be sent. <p>For more information, see [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).</p> |
-   | Location name | Select the location on the account where you want the export data to be sent. <p>For more information, see [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).</p><p>You can select the [!UICONTROL **Add new location**] button to create a new location for an existing export account. |
+   | Account | Select the cloud export account where you want the data to be sent. <p>Or, if you haven't already configured a cloud account that you want to use, you can configure a new account:<ol><li>Select [!UICONTROL **Add account**], then specify the following information:<ul><li>[!UICONTROL **Location account name**]: Specify a name for the location account. This name appears when creating a location </li><li>[!UICONTROL **Location account description**]: Provide a short description of the account to help differentiate it from other accounts of the same account type.</li><li>[!UICONTROL **Account type**]: Select the type of cloud account you are exporting to. Available account types are Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake, and AEP Data Landing Zone.</li></ul><li>To finish configuring your account, continue with the link below that corresponds to the [!UICONTROL **Account type**] you selected:<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
+   | Location name | Select the location on the account where you want the export data to be sent.<p>Or, if you haven't already configured the location that you want to use on the account that you selected, you can configure a new location:<ol><li>Select [!UICONTROL **Add location**], then specify the following information: <ul><li>[!UICONTROL **Name**]: The name of the location.</li><li>[!UICONTROL **Description**]: Provide a short description of the location to help differentiate it from other locations on the account.</li><li>[!UICONTROL **Location account**]: Select the account where you want to create the location.</li></ul><li>To finish configuring your location, continue with the link below that corresponds to the account type that you selected in the [!UICONTROL **Location account**] field:<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone).</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
 
    {style="table-layout:auto"}
 
@@ -124,7 +124,7 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
 * Structure data output as concatenated values.
 
-* Export ad hoc or on a schedule. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
+* Export one-time or on a schedule. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
 
 * Export files in CSV or JSON format. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
 
@@ -141,6 +141,11 @@ Make sure that your tables, your environment, and your permissions meet the foll
 * **Environment:** Administrators should ensure that the IP addresses listed in [IP addresses used by Customer Journey Analytics](/help/admin/ip-addresses.md) are included in the firewall allowlist.
 
 * **Permissions:** In the Adobe Admin Console, users must be assigned a product profile that has the [!UICONTROL **Full Table Export**] permission assigned to it in order to export full tables. For information about assigning a permission to a product profile in the Admin Console, see [Customer Journey Analytics permission in Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=en#customer-journey-analytics-permissions-in-admin-console) in [Customer Journey Analytics Access Control](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
+
+  >[!NOTE]
+  >
+  >  Users who are assigned the [Product Admin role](/help/admin/cja-access-control.md#product-admin-role) always have access to export full tables; these users do not need to be assigned the [!UICONTROL **Full Table Export**] permission.
+
 
 ### Unsupported features
 
@@ -209,7 +214,7 @@ If you previously used Data Warehouse to export Adobe Analytics data, the follow
 | Metrics | Limit of 5 | Unlimited |
 | Reporting rows | Limit of 3 million, 30 million, 150 million, or 300 million, depending on tier | Unlimited |
 | Number of reports | Unlimited | Unlimited |
-| Ad hoc delivery | Yes | Yes |
+| Ad hoc (one-time) delivery | Yes | Yes |
 | Schedule recurring delivery | Yes | Yes |
 | Email delivery | No | Yes |
 | FTP / SFTP | No | Legacy support |
