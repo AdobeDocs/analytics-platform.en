@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **February 2024** | |
+| Added permission requirements for uploading files to Amazon S3 Role ARN and GCP buckets when configuring cloud export locations | Added exact permission requirements for uploading files to Amazon S3 Role ARN and Google Cloud Platform buckets when [configuring cloud export locations](/help/components/exports/cloud-export-locations.md).  |
 | Clarified that Product Admins always have access to export full tables | Made the following changes to clarify that users who are assigned the Product Admin role have access to export full tables from Analysis Workspace by default: <ul><li>Added a new bullet to [Product Admin default permissions](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>Added a note under the [minimum requirements for exporting full tables to the cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> | 
 | Skipped record details | Added documentation on the skipped record details functionality in Connections. See [Connection details](../connections/manage-connections.md#connection-details) for more information. | 
 | **January 2024** | |
