@@ -23,6 +23,7 @@ These required standard components are added to each data view by default. They 
 | [!UICONTROL People] | Metric | Based on the person ID specified in a [!UICONTROL Connection]. |
 | [!UICONTROL Sessions] | Metric | Based on the data view's session settings. |
 | [!UICONTROL Events] | Metric | The number of rows from all event datasets in a [!UICONTROL Connection]. |
+| [!UICONTROL Seconds] | Dimension | The second that a given event happened (rounded down). The first dimension item is the first second in the date range, and the last dimension item is the last second in the date range. |
 | [!UICONTROL Minute] | Dimension | The minute that a given event happened (rounded down). The first dimension item is the first minute in the date range, and the last dimension item is the last minute in the date range. |
 | [!UICONTROL Hour] | Dimension | The hour that a given event happened (rounded down). The first dimension item is the first hour in the date range, and the last dimension item is the last hour in the date range. |
 | [!UICONTROL Day] | Dimension | The day that a given event happened. The first dimension item is the first day in the date range, and the last dimension item is the last day in the date range. |
