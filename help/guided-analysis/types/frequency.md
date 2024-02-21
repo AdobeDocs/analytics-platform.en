@@ -10,7 +10,7 @@ role: User
 
 The **[!UICONTROL Frequency]** view groups event data by how often events occur in your product. The vertical axis of this view contains buckets that represent the frequency of the event. The horizontal axis measures the number of users or sessions for each bucket.
 
-![Frequency screenshot](../assets/frequency-stacked.png)
+![Frequency screenshot](../assets/frequency-stacked.png){style="border:1px solid gray"}
 
 ## Use cases
 

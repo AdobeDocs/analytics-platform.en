@@ -43,7 +43,7 @@ The Friction view offers the following chart settings, which can be adjusted in 
 
 {{apply-time-comparison}}
 
-![Friction time compare](../assets/friction-compare.png)
+![Friction time compare](../assets/friction-compare.png){style="border:1px solid gray"}
 
 ## Date range
 
