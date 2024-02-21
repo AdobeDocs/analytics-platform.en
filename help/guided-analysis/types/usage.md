@@ -50,7 +50,7 @@ Add additional data to the chart. When more than one series is visible on the ch
 
 {{apply-time-comparison}}
 
-![Usage time compare](../assets/usage-compare.png)
+![Usage time compare](../assets/usage-compare.png){style="border:1px solid gray"}
 
 ## Date range
 

@@ -44,7 +44,7 @@ The [!UICONTROL Conversion trends] view offers the following chart settings, whi
 
 {{apply-time-comparison}}
 
-![Conversion trends time compare](../assets/conversion-trends-compare.png)
+![Conversion trends time compare](../assets/conversion-trends-compare.png){style="border:1px solid gray"}
 
 ## Date range
 

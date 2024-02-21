@@ -56,16 +56,16 @@ While [Analysis Workspace](../analysis-workspace/home.md) and guided analysis us
 
 * **Guided analysis is an event and user-centered experience.** Each analysis starts by selecting events, then dimensions and filters can be added to refine that event data.
 
-![Analysis Workspace and guided analysis views](assets/structure.png)
+![Analysis Workspace and guided analysis views](assets/structure.png){style="border:1px solid gray"}
 
 Consider the following example where you focus on data around your website's home page. Teams ask similar questions, but the analysis approach can be different.
 
 * A typical dimension-centered Analysis Workspace approach would be, "Let's look at the home page and see how many page views it received."
 
-   ![Dimension centered](assets/dimension-centered.png)
+   ![Dimension centered](assets/dimension-centered.png){style="border:1px solid gray"}
 
 * A typical event and user-centered guided analysis approach would be, "How many users have visited our home page?"
 
-   ![Event centered](assets/event-centered.png)
+   ![Event centered](assets/event-centered.png){style="border:1px solid gray"}
 
 +++

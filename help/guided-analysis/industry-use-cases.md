@@ -21,9 +21,9 @@ Use cases for guided analysis vary by industry. This page provides some illustra
 
 {style="table-layout:auto"}
 
-![Friction view for retail](assets/retail-funnel-friction.png)
+![Friction view for retail](assets/retail-funnel-friction.png){style="border:1px solid gray"}
 
-![Usage view for retail](assets/retail-trends-usage.png)
+![Usage view for retail](assets/retail-trends-usage.png){style="border:1px solid gray"}
 
 +++
 
@@ -38,11 +38,11 @@ Use cases for guided analysis vary by industry. This page provides some illustra
 
 {style="table-layout:auto"}
 
-![Friction view for financial services](assets/fsi-funnel-friction.png)
+![Friction view for financial services](assets/fsi-funnel-friction.png){style="border:1px solid gray"}
 
-![Usage view for financial services](assets/fsi-trends-usage.png)
+![Usage view for financial services](assets/fsi-trends-usage.png){style="border:1px solid gray"}
 
-![Active view for financial services](assets/fsi-user-growth-active.png)
+![Active view for financial services](assets/fsi-user-growth-active.png){style="border:1px solid gray"}
 
 +++
 
@@ -57,11 +57,11 @@ Use cases for guided analysis vary by industry. This page provides some illustra
 
 {style="table-layout:auto"}
 
-![Friction view for travel and hospitality](assets/th-funnel-friction.png)
+![Friction view for travel and hospitality](assets/th-funnel-friction.png){style="border:1px solid gray"}
 
-![Usage view for travel and hospitality](assets/th-trends-usage.png)
+![Usage view for travel and hospitality](assets/th-trends-usage.png){style="border:1px solid gray"}
 
-![Conversion trends for travel and hospitality](assets/th-funnel-conversion-trends.png)
+![Conversion trends for travel and hospitality](assets/th-funnel-conversion-trends.png){style="border:1px solid gray"}
 
 +++
 
@@ -77,11 +77,11 @@ Use cases for guided analysis vary by industry. This page provides some illustra
 
 {style="table-layout:auto"}
 
-![Friction view for media and entertainment](assets/me-funnel-friction.png)
+![Friction view for media and entertainment](assets/me-funnel-friction.png){style="border:1px solid gray"}
 
-![Active view for media and entertainment](assets/me-user-growth-active.png)
+![Active view for media and entertainment](assets/me-user-growth-active.png){style="border:1px solid gray"}
 
-![](assets/me-trends-usage.png)
+![Usage view for media and entertainment](assets/me-trends-usage.png){style="border:1px solid gray"}
 
 +++
 
@@ -96,7 +96,7 @@ Use cases for guided analysis vary by industry. This page provides some illustra
 
 {style="table-layout:auto"}
 
-![Friction view for healthcare](assets/healthcare-funnel-friction.png)
+![Friction view for healthcare](assets/healthcare-funnel-friction.png){style="border:1px solid gray"}
 
 +++
 
@@ -111,6 +111,6 @@ Use cases for guided analysis vary by industry. This page provides some illustra
 
 {style="table-layout:auto"}
 
-![Usage view for B2B](assets/b2b-trends-usage.png)
+![Usage view for B2B](assets/b2b-trends-usage.png){style="border:1px solid gray"}
 
 +++
