@@ -71,7 +71,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Project sharing | Project sharing is only supported between users of Customer Journey Analytics - there is not project sharing between Customer Journey Analytics and the traditional Analysis Workspace. |
 | Report Builder | Supported with a new Office 365 plugin for Excel. |
 | User permissions/Data access controls | Customer Journey Analytics distinguishes between [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) product admins, product profile admins, and users. Only product admins can Create/update/delete Connections, Projects, Filters, or Calculated Metrics that were created by other users, while product admins and product profile admins can edit Data views. Additional user permissions are available for things like creating calculated metrics, filters, or annotations. |
-| Visualizations | All visualizations are supported except for the Map visualization. |
+| Visualizations | All Workspace visualizations are supported except for the Map visualization. |
 | Cross-device/cross-channel stitching | Supported for datasets containing identity information directly (also known as "field-based" stitching). Graph-based stitching is not yet supported, but is planned. See [Stitching](../../stitching/overview.md). |
 
 {style="table-layout:auto"}
