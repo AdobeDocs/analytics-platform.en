@@ -16,6 +16,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | --- | --- |
 | Anomaly detection | Full support |
 | Attribution IQ | Full support |
+| Bot detection | *Coming soon!* For [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-based datasets, bot filtering is applied. General bot detection logic for other datasets is performed by [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=en). |
 | Calculated metrics | Full support. Any existing calculated metric in the traditional Analysis Workspace is not ported to Customer Journey Analytics. |
 | Calendar events | Full support. Calendar events have been implemented as [Annotations](/help/components/annotations/overview.md) in Workspace. |
 | CSV download | Full support |
@@ -50,7 +51,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Feature | Notes |
 | --- | --- |
 | Audience publishing | Supported if licensed with Adobe's Customer Data Platform or Journey Optimizer products. [Audience Publishing](/help/components/audiences/audiences-overview.md) sends audiences to Real-time Customer Profile in Experience Platform. |
-| Bot detection | *Coming soon!* For [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html)-based datasets, bot filtering is applied. General bot detection logic for other datasets is performed by [!UICONTROL Experience Edge]. |
 | Classifications | Now called "Lookup Datasets". Classifications used in Analytics can be imported to the Experience Platform and Customer Journey Analytics using the Analytics Classifications Source Connector. Lookup datasets can also be uploaded to Experience Platform directly and made available in Customer Journey Analytics. |
 | Classification rule builder | Supported using [substrings](/help/data-views/component-settings/substring.md) in Customer Journey Analytics. Uses string manipulations at report time rather than lookup datasets. |
 | Custom session length | Session length can be configured through [Session settings](../../data-views/create-dataview.md#session-settings) in a Data view. See  [Session settings](../../data-views/session-settings.md) for more information. <br/>Handling of mobile background events is supported through the Adobe Experience Platform Mobile SDK. See [Lifecycle for Edge Network](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) for more information. |
