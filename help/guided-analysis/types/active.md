@@ -46,7 +46,7 @@ The [!UICONTROL Active] view offers the following chart settings, which can be a
 
 {{apply-time-comparison}}
 
-![Active time compare](../assets/active-compare.png)
+![Active time compare](../assets/active-compare.png){style="border:1px solid gray"}
 
 ## Date range
 

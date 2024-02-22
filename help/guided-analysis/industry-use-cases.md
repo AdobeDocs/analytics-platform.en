@@ -21,9 +21,9 @@ Use cases for guided analysis vary by industry. This page provides some illustra
 
 {style="table-layout:auto"}
 
-![Friction view for retail](assets/retail-funnel-friction.png)
+![Friction view for retail](assets/retail-funnel-friction.png){style="border:1px solid gray"}
 
-![Usage view for retail](assets/retail-trends-usage.png)
+![Usage view for retail](assets/retail-trends-usage.png){style="border:1px solid gray"}
 
 +++
 
@@ -38,11 +38,11 @@ Use cases for guided analysis vary by industry. This page provides some illustra
 
 {style="table-layout:auto"}
 
-![Friction view for financial services](assets/fsi-funnel-friction.png)
+![Friction view for financial services](assets/fsi-funnel-friction.png){style="border:1px solid gray"}
 
-![Usage view for financial services](assets/fsi-trends-usage.png)
+![Usage view for financial services](assets/fsi-trends-usage.png){style="border:1px solid gray"}
 
-![Active view for financial services](assets/fsi-user-growth-active.png)
+![Active view for financial services](assets/fsi-user-growth-active.png){style="border:1px solid gray"}
 
 +++
 
@@ -50,18 +50,18 @@ Use cases for guided analysis vary by industry. This page provides some illustra
 
 | Use case | Example | Impact | Analysis |
 | --- | --- | --- | --- |
-| **Quantify impact of new booking flow features** | An organization uses Guided analysis to quickly view the impact of a new booking step feature on conversion rates. They identify the part of the experience with the biggest gains. | **Increase booking rates.** Measure business impact instead of just feature usage. | [Release impact view](types/release.md)<br>[Friction view](types/friction.md) |
+| **Quantify impact of new booking flow features** | An organization uses guided analysis to quickly view the impact of a new booking step feature on conversion rates. They identify the part of the experience with the biggest gains. | **Increase booking rates.** Measure business impact instead of just feature usage. | [Release impact view](types/release.md)<br>[Friction view](types/friction.md) |
 | **Optimize mobile app experience** | An organization quickly and easily understands monthly active app users over time and identifies positive impact by version. | **Increase MAUs.** Measure and increase app usage, which correlates with customer happiness. | [Active user growth view](types/active.md)<br>[Net growth view](types/net-growth.md) |
 | **Find friction in mobile check-in flow** | Seeing where people are successful or dropping out of the expected mobile check-in process allows an organization to easily identify areas for experience optimization. | **Increase CSAT and reduce IROPs.** Removing friction leads to a more seamless "day of travel" experience. | [Friction view](types/friction.md)<br>[Conversion trends view](types/conversion-trends.md) |
 | **Deflect call center calls** | Seeing user experience in a funnel view shows a user where visitors hit friction, which leads to costly call center volume. The next steps to focus on are clear. | **Reduce call-center usage.** Get more 'happy path' user experiences and reduce costly calls. | [Friction view](types/friction.md)<br>[Conversion trends view](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
 
-![Friction view for travel and hospitality](assets/th-funnel-friction.png)
+![Friction view for travel and hospitality](assets/th-funnel-friction.png){style="border:1px solid gray"}
 
-![Usage view for travel and hospitality](assets/th-trends-usage.png)
+![Usage view for travel and hospitality](assets/th-trends-usage.png){style="border:1px solid gray"}
 
-![Conversion trends for travel and hospitality](assets/th-funnel-conversion-trends.png)
+![Conversion trends for travel and hospitality](assets/th-funnel-conversion-trends.png){style="border:1px solid gray"}
 
 +++
 
@@ -73,15 +73,15 @@ Use cases for guided analysis vary by industry. This page provides some illustra
 | **Identify churn risk** | An organization sees high turnover rate of customers who sign up for their platform to watch a seasonal event and cancel immediately after the event is over. Quickly identifying these users allows them to show recommendations that entice customers to stay engaged with the platform. | **Retain happy subscribers.** Find content that engages a growth segment to intervene with recommendations. | [Active user growth view](types/active.md)<br>[Net growth view](types/net-growth.md) |
 | **Find opportunities for upsell** | A vital part to an organization's revenue growth is understanding what in-app offers are most enticing to fans while they are at the stadium. Guided analysis allows them to see exactly which offers are most effective. | **Increase ancillary revenue.** Understand the impact of in-app offers on driving purchasing behaviors. | [First use view](types/first-use.md)<br>[Friction view](types/friction.md) |
 | **Optimize cross-device experience** | An organization wants to analyze how subscribers interact with multiple devices/apps. This knowledge allows them to understand content consumption patterns and determine where it would be best to retarget to them. | **Personalize the experience.** Understand what content resonates best with subscribers on each device. | [Usage trends view](types/usage.md) |
-| **Deflect call center calls** | An organization uses Guided analysis to identify an issue with autopay not working, which led frustrated customers to call their support center to cancel their plan. | **Reduce support calls.** Create a better customer experience and decrease calls to customer service. | [Friction view](types/friction.md)<br>[Conversion trends view](types/conversion-trends.md) |
+| **Deflect call center calls** | An organization uses guided analysis to identify an issue with autopay not working, which led frustrated customers to call their support center to cancel their plan. | **Reduce support calls.** Create a better customer experience and decrease calls to customer service. | [Friction view](types/friction.md)<br>[Conversion trends view](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
 
-![Friction view for media and entertainment](assets/me-funnel-friction.png)
+![Friction view for media and entertainment](assets/me-funnel-friction.png){style="border:1px solid gray"}
 
-![Active view for media and entertainment](assets/me-user-growth-active.png)
+![Active view for media and entertainment](assets/me-user-growth-active.png){style="border:1px solid gray"}
 
-![](assets/me-trends-usage.png)
+![Usage view for media and entertainment](assets/me-trends-usage.png){style="border:1px solid gray"}
 
 +++
 
@@ -89,14 +89,14 @@ Use cases for guided analysis vary by industry. This page provides some illustra
 
 | Use case | Example | Impact | Analysis |
 | --- | --- | --- | --- |
-| **Improve patient health outcomes** | An organization has the data to focus their efforts on growth. Before using Guided analysis, they didn't have a clear understanding of how many wellness plan members per week simply stopped using it altogether. | **Reduce doctor visits.** Quickly identified dormant users for re-engagement. | [Active user growth views](types/active.md) |
+| **Improve patient health outcomes** | An organization has the data to focus their efforts on growth. Before using guided analysis, they didn't have a clear understanding of how many wellness plan members per week simply stopped using it altogether. | **Reduce doctor visits.** Quickly identified dormant users for re-engagement. | [Active user growth views](types/active.md) |
 | **Enhance patient experience** | The visibility into how many patients contact call centers for a simple password reset renewed an analyst's passion to laser focus on strengthening their patient experience. | **Reduce the overall cost to serve.** Create a better patient experience and decrease calls to patient services. | [Usage trends view](types/usage.md)<br>[Friction view](types/friction.md) |
-| **Identify repeat cross-channel actions by segment** | An organization wants to understand how active Medicare eligible members are with their plan usage to provide specific messaging to them in their digital products. Insights gained from Guided analysis help make marketing more effective. | **Personalize Medicare enrollment choices.** Compare common sequential actions by my most active plan members. | [Friction view](types/friction.md)<br>[Active user growth view](types/active.md) |
+| **Identify repeat cross-channel actions by segment** | An organization wants to understand how active Medicare eligible members are with their plan usage to provide specific messaging to them in their digital products. Insights gained from guided analysis help make marketing more effective. | **Personalize Medicare enrollment choices.** Compare common sequential actions by my most active plan members. | [Friction view](types/friction.md)<br>[Active user growth view](types/active.md) |
 | **Retain top industry talent** | Analytics resources for an organization are strapped for time. Guided analysis allows the organization to quickly get the product usage data needed for leadership update calls. | **Reduce analyst workload.** Get answers faster. Approachable reporting for when it is most crucial. | [Guided analysis](overview.md) |
 
 {style="table-layout:auto"}
 
-![Friction view for healthcare](assets/healthcare-funnel-friction.png)
+![Friction view for healthcare](assets/healthcare-funnel-friction.png){style="border:1px solid gray"}
 
 +++
 
@@ -111,6 +111,6 @@ Use cases for guided analysis vary by industry. This page provides some illustra
 
 {style="table-layout:auto"}
 
-![Usage view for B2B](assets/b2b-trends-usage.png)
+![Usage view for B2B](assets/b2b-trends-usage.png){style="border:1px solid gray"}
 
 +++

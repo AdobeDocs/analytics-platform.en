@@ -17,15 +17,20 @@ Get a glimpse of the newest enhancements in the Customer Journey Analytics produ
 
 >[!BEGINTABS]
 
+>[!TAB Forecasting] 
+
+Forecasting is an Analysis Workspace feature to forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly). Forecasting is available for time-series related data only.
+
+[![image](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
+
+
 >[!TAB Guided Analysis* - Retention rates]
 
 A new view type that shows the percentage of users that return after their initial engagement within the desired date range. The horizontal axis represents the number of days since a user's initial engagement. The vertical axis represents the percentage of users who engage again.
 
-[![image](assets/learn-more-button.svg)](/help//guided-analysis/types/retention-rates.md)
+[![image](assets/learn-more-button.svg)](/help/guided-analysis/types/retention-rates.md)
 
 <span style="color:gray">*_Guided analysis is part of Adobe Product Analytics, which is a paid add-on to Customer Journey Analytics._</span>
-
-
 
 
 >[!TAB Guided Analysis* - Trendlines] 
