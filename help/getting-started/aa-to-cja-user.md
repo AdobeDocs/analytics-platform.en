@@ -60,11 +60,7 @@ With this flexibility, you may run into situations in which a single schema fiel
 
 ## Changes to the concept of segments
 
-Adobe has renamed the "segments" component to "filters" to better align with industry standards and provide better distinction with segments in Adobe Experience Platform.
-
-[!UICONTROL Customer Journey Analytics] no longer uses eVars, props, or events and instead uses the Experience Platform schema field name to which they've been mapped. This change means that none of the existing segments in Adobe Analytics are compatible with [!UICONTROL Customer Journey Analytics]. If you want to move existing Adobe Analytics segments to Customer Journey Analytics, see the following video:
-
->[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
+While segments are not technically migrated from Adobe Analytics to Customer Journey Analytics, you can use the component migration tool to re-create your Adobe Analytics segments in Customer Journey Analytics. Segments are re-created in Customer Journey Analytics based on the dimensions and metrics that are mapped. For more information, see [Prepare to migrate components and projects from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html).
 
 While you cannot yet share or publish [!UICONTROL filters] ([!UICONTROL segments]) from [!DNL Customer Journey Analytics] to Experience Platform Unified Profile, this functionality is under development.
 
