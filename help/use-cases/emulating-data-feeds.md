@@ -123,7 +123,7 @@ To look up data from other datasets, you use standard SQL functionality (`WHERE`
 
 #### Calculations
 
-To perform calculations on fields (columns), use the standard SQL functions (for example `COUNT(*)` or the [math and statistical operators and functions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) part of Spark SQL. Also, [window functions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) provide support to update aggregations and return single items for each row in an ordered subset. See [Examples](#examples) on how to use these functions.
+To perform calculations on fields (columns), use the standard SQL functions (for example `COUNT(*)`), or the [math and statistical operators and functions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) part of Spark SQL. Also, [window functions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) provide support to update aggregations and return single items for each row in an ordered subset. See [Examples](#examples) on how to use these functions.
 
 #### Nested data structure
 
