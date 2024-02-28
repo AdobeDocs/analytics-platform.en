@@ -31,10 +31,10 @@ Some of the features and their associated value for the limit depend on the Cust
 
 | Name | Value | Limit Type | Description |
 |---|--:|---|---|
-| Try again timeout | 90 | System-enforced guardrail  | Maximum number of seconds before reporting engine responds back that the request takes too long to return results (possibly due to other simultaneous other requests); it is possible to request again. | | 
+| Try again timeout | 90 | System-enforced guardrail  | Maximum number of seconds before reporting engine responds back that the request takes too long to return results (possibly due to other simultaneous other requests); it is possible to request again. |
 | Don't try again timeout | 600 | System-enforced guardrail  | Maximum number of seconds before Ad Hoc SQL queries time-out. Otherwise stated, the maximum number of seconds before reporting engines reports back that the request has taken too long to return results, and should not be tried again. The request most likely never returns results due to issues in the background process. |
-| Metrics | 150 |System-enforced guardrail  |  Maximum number of metrics in a request. | | |
-| Interactive Query Output Rows | 50,000 | System-enforced guardrail  | Default number of rows returned unless specified otherwise. | | 
+| Metrics | 150 |System-enforced guardrail  |  Maximum number of metrics in a request. |
+| Interactive Query Output Rows | 50,000 | System-enforced guardrail  | Default number of rows returned unless specified otherwise. | 
 
 {style="table-layout:auto"}
 
@@ -42,10 +42,10 @@ Some of the features and their associated value for the limit depend on the Cust
 
 | Name | Value | Limit Type | Description | 
 |---|--:|---|---|
-| Visible rows per table | 400 | System-enforced guardrail  |  Maximum number of visible rows in any freeform table in an Analysis Workspace project. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
-| Exportable rows per table | 50,000 | System-enforced guardrail  |  Maximum number of rows that can be exported per single dimension. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
-| Panels per project | 15 | System-enforced guardrail  | Maximum number of [panels](../analysis-workspace/home.md#panels) per project. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
-| Visualizations per panel | 25 | System-enforced guardrail  |  Maximum number of [visualizations](../analysis-workspace/home.md#visualizations) per panel. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
+| Visible rows per table | 400 | System-enforced guardrail  |  Maximum number of visible rows in any freeform table in an Analysis Workspace project. | 
+| Exportable rows per table | 50,000 | System-enforced guardrail  |  Maximum number of rows that can be exported per single dimension. |
+| Panels per project | 15 | System-enforced guardrail  | Maximum number of [panels](../analysis-workspace/home.md#panels) per project. |
+| Visualizations per panel | 25 | System-enforced guardrail  |  Maximum number of [visualizations](../analysis-workspace/home.md#visualizations) per panel. |
 
 {style="table-layout:auto"}
 
@@ -67,7 +67,7 @@ Some of the features and their associated value for the limit depend on the Cust
 |---|--:|---|---|
 | Audience filters | 20 | System-enforced guardrail  | Maximum number of [filters](../components/filters/filters-overview.md) per audience. | 
 | Number of audience identities | 20 million | System-enforced guardrail  | Maximum number of identities per audience. | 
-| Audience refresh frequency | 4 | System-enforced guardrail  | Maximum frequency in hours an [audience](../components/audiences/audiences-overview.md) may be refreshed. | | 
+| Audience refresh frequency | 4 | System-enforced guardrail  | Maximum frequency in hours an [audience](../components/audiences/audiences-overview.md) may be refreshed. |
 | Audience refresh lookback window | 90 | System-enforced guardrail  | Maximum number of days for refresh lookback window. | 
 | Refreshing audience expiration date | 13 | System-enforced guardrail  | Maximum number of months audience ceases to refresh from the date of creation. Customers can extend this for an additional 13 months. | 
 | Number of refreshing audiences | 75, 100 | System-enforced guardrail  | Maximum number of refreshing audiences, value varies depending on the package (see Product Description). | 
@@ -98,9 +98,9 @@ See also Experience Platform [Real-time Customer Data Platform guardrails](https
 | Connections | 1000 | System-enforced guardrail  | Maximum number of [connections](../connections/overview.md) for an organization. |
 | Connection Title | 500 | System-enforced guardrail |Maximum number of characters for a connection title. |
 | Metrics | 5,000 | System-enforced guardrail  | Maximum number of metrics in a data view. |
-| Dimensions | 5,000 | System-enforced guardrail  | Maximum number of dimensions in a data view. | |
+| Dimensions | 5,000 | System-enforced guardrail  | Maximum number of dimensions in a data view. | 
 | Annotation Title | 100 | System-enforced guardrail  | Maximum number of characters for an annotation title. |
-| Annotation Description | 250 | System-enforced guardrail  | Maximum number of characters for an annotation description. | | 
+| Annotation Description | 250 | System-enforced guardrail  | Maximum number of characters for an annotation description. |
 | Schema fields | 10 | System-enforced guardrail  | Maximum number of schema fields (not including standard fields) when defining rules for a [derived field](../data-views/derived-fields/derived-fields.md). |
 | Lookup / Profile fields | 3 | System-enforced guardrail  |  Maximum number of lookup or profile schema fields within the maximum number of schema fields (not including standard fields) when defining rules for a derived field. |
 | Derived Fields | 100 | System-enforced guardrail  | Maximum number of derived fields per connection. |
@@ -112,7 +112,7 @@ See also Experience Platform [Real-time Customer Data Platform guardrails](https
 
 | Name |  Value | Limit Type | Description | 
 |---|--:|---|---|
-| Fields | 10,000 | System-enforced guardrail  | Maximum number of properties or fields per row in a dataset. | | | 
+| Fields | 10,000 | System-enforced guardrail  | Maximum number of properties or fields per row in a dataset. | 
 | Unique strings | 10 million | System-enforced guardrail  | Maximum number of unique keys per lookup dataset. | 
 | Rows | 1 million | System-enforced guardrail  | Maximum number of rows per unique person ID within a connection. | 
 | Row size | 2 | Performance guardrail / System-enforced guardrail | Average size in kilobytes per row of data ingested into Customer Journey Analytics (soft limit). A static limit for row size is determined by guardrails for data ingestion in Experience Platform. | 
@@ -176,7 +176,7 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 | Workbook file size | 5 | System-enforced guardrail  | Maximum file size in MB of a scheduled workbook. |
 | Data blocks | 1000 | System-enforced guardrail  | Maximum number of [data blocks](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=en) per workbook. | 
 | Metrics | 20 | System-enforced guardrail  | Maximum number of metrics per data block. | 
-| Date range span | 13 | System-enforced guardrail  | Maximum number of months a date range can span per data block. |  |
+| Date range span | 13 | System-enforced guardrail  | Maximum number of months a date range can span per data block. | 
 | Rows | 50,000 | System-enforced guardrail  | Maximum number of rows per data block. | 
 
 {style="table-layout:auto"}
