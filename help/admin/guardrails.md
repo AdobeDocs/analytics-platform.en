@@ -27,7 +27,7 @@ Some of the features and their associated value for the limit depend on the Cust
 >
 >The values outlined in this document are subject to change based on continuing improvements in the product. Check back regularly for updates. If you are interested in learning about custom limits, contact your customer care representative. 
 
-## Ad-Hoc SQL Queries
+## Ad-hoc SQL queries
 
 | Name | Value | Limit Type | Description |
 |---|--:|---|---|
@@ -136,7 +136,7 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 
 | Name |  Value | Limit Type | Description |
 |---|--:|---|---|
-| Stitched datasets | 10 | System-enforced guardrail  | Maximum number of stitched datasets per customer, dependent on the package. | 
+| Stitched datasets | 10 | System-enforced guardrail  | Maximum number of stitched datasets per customer, value varies depending on the applicable Customer Journey Analytics package (see applicable product description). | 
 | Backfill data | 60 | System-enforced guardrail  | Maximum number of days of backfill data. |
 
 {style="table-layout:auto"}
@@ -149,11 +149,12 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 | Containers per filter | 50 | System-enforced guardrail  | Maximum number of containers per filter. | 
 | Metrics per calculated metric | 25 | System-enforced guardrail  | Maximum number of metrics per calculated metric. |
 | Metrics and dimensions per filter | 25 |System-enforced guardrail  |  Maximum number of unique metrics and dimensions per filter. | 
-| Nested containers per filter | 10 | System-enforced guardrail  | Maximum number of nested containers per filter. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  |
+| Nested containers per filter | 10 | System-enforced guardrail  | Maximum number of nested containers per filter. |
 | Rules per filter| 100 | System-enforced guardrail  | Maximum number of rules per filter. |
 | String compares per dimension per filter | 100 |  System-enforced guardrail  | Maximum number of strings comparisons per dimension per filter. | 
-| Calculated metrics | 6,000 | System-enforced guardrail  |  Maximum number of calculated metrics for an organization. | |
+| Calculated metrics | 6,000 | System-enforced guardrail  |  Maximum number of calculated metrics for an organization. |
 | Filters | 50,000 | System-enforced guardrail | Maximum number of filters you can define for an organization. |
+| API calls | 120 | System-enforced guardrail | API requests per minute (12 requests every 6 seconds). |
 
 {style="table-layout:auto"}
 
@@ -185,7 +186,7 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 
 | Name |  Value | Limit Type | Description | 
 |---|--:|---|---|
-| Rows per report |  3 million - 300 million | System-enforced guardrail  | Maximum number of reporting rows per report; value based on the licensed package. |
+| Rows per report |  3 million - 300 million | System-enforced guardrail  | Maximum number of reporting rows per report; value varies depending on the applicable Customer Journey Analytics package (see applicable product description). |
 | Breakdowns per table |  5 | System-enforced guardrail  | Maximum number of breakdowns per table. |
 | Metrics per table |  5 | System-enforced guardrail  | Maximum number of metrics per table. |
 | Schedule frequency |  1 | System-enforced guardrail  | Exports can be scheduled once (1) a day or on a longer schedule (for example: once every 2 days, or weekly). |
