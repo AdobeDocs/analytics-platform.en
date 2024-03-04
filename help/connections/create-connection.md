@@ -20,7 +20,16 @@ role: Admin
 
 ## Prerequisites
 
-You must have the **Select** package in order to add unlimited numbers of event datasets to a connection. The **Foundation** package is limited to one event dataset. You can add unlimited numbers of profile or lookup datasets to a connection. Contact your administrator if you're unsure what Customer Journey Analytics package you have.​ 
+The number of datasets you can add to a connection is capped at 100. The mix depends on which Customer Journey Analytics package your company has purchased.
+
+| **Select** package | **Foundation** package |
+| --- | --- |
+| Any combination of event/profile/lookup datasets, adding up to 100  | One event dataset per connection | 
+|  | Up to 99 profile or lookup datasets per connection  |
+
+{style="table-layout:auto"}
+
+Contact your administrator if you're unsure which Customer Journey Analytics package you have.​ 
 
 ## Create and configure the connection {#create-connection}
 
