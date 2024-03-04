@@ -20,12 +20,14 @@ Here is a video overview:
 To create a Customer Journey Analytics Connection, you need the following permissions in [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
 
 Adobe Experience Platform:
+
 * Data Modeling: View Schemas, Manage Schemas
 * Data Management: View Datasets, Manage Datasets
 * Data Ingestion: Manage Sources
 * View Identity Namespaces
 
 Customer Journey Analytics
+
 * Product Admin Access
 
 >[!IMPORTANT]

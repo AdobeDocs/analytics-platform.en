@@ -64,6 +64,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Manage connections](../connections/manage-connections.md)
   + [Combined event datasets](../connections/combined-dataset.md)
   + [Standard lookups](../connections/standard-lookups.md)
+  + [Transform datasets for B2B lookups](../connections/transform-datasets-b2b-lookups.md)
 
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
