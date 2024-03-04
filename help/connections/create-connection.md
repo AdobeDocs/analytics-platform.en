@@ -20,7 +20,7 @@ role: Admin
 
 ## Prerequisites
 
-You must have the **Select** package in order to add unlimited numbers of datasets to a connection. The **Foundation** package is limited to one dataset. Contact your administrator if you're unsure what Customer Journey Analytics package you have.​ 
+You must have the **Select** package in order to add unlimited numbers of event datasets to a connection. The **Foundation** package is limited to one event dataset. You can add unlimited numbers of profile or lookup datasets to a connection. Contact your administrator if you're unsure what Customer Journey Analytics package you have.​ 
 
 ## Create and configure the connection {#create-connection}
 
