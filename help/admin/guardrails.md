@@ -46,6 +46,7 @@ Some of the features and their associated value for the limit depend on the Cust
 | Exportable Rows per Table | 50,000 | System-enforced Guardrail  |  Maximum number of rows that can be exported per single dimension. |
 | Panels per Project | 15 | System-enforced Guardrail  | Maximum number of [panels](../analysis-workspace/home.md#panels) per project. |
 | Visualizations per Panel | 25 | System-enforced Guardrail  |  Maximum number of [visualizations](../analysis-workspace/home.md#visualizations) per panel. |
+| Derived Fields per Freeform Table | 5 | System-enforced Guardrail | Maximum number of different derived fields in a single freeform table. |
 
 {style="table-layout:auto"}
 
