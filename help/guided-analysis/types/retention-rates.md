@@ -23,7 +23,7 @@ Subsequent duration buckets count the number of users who returned on or after t
 * If a user engages with the event multiple days after initially qualifying for inclusion in the analysis, they appear in the latest qualifying duration bucket and all duration buckets leading up to it. This type of calculation is sometimes referred to as "unbounded retention".
 * If a user engages with the event many times during the configured date range, only the first and last events are included in the analysis.
 
-![Retention rates screenshot](../assets/retention-rates.png)
+![Retention rates screenshot](../assets/retention-rates.png){style="border:1px solid gray"}
 
 ## Use cases
 

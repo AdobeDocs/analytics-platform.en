@@ -55,6 +55,7 @@ Data views let you spontaneously change schema element settings, without having 
 
 * Before you can create data views, you need to [set up one or more connections to Experience Platform datasets](/help/connections/create-connection.md).
 * To create or manage a data view, you need a [set of permissions in Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html#admin-access-permissions). 
+* If you are using the [Adobe Analytics source connector](/help/data-ingestion/analytics.md) or do have Adobe Analytics background knowledge, you might want to understand how fields in your schemas and datasets, part of the connection, relate to their Adobe Analytics counterparts. See [Analytics field mappings](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en) for more information.
 
 ## Data view settings you can override in Workspace {#settings-override}
 

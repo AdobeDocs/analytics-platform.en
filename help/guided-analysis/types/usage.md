@@ -25,6 +25,7 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
+* **[!UICONTROL View]**: Switch between this view type and [Frequency](frequency.md).
 * **[!UICONTROL Events & Metrics]**: The events or metrics that you want to measure. Each selection is represented as a chart series and table row. Events and metrics cannot be combined in the query; once you've made your first selection, the remaining query selections must be of the same type. You can include up to five selections.
 * **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include Events, Sessions, Users, Percentage of users, Events per session, and Events per user. Counted as options are only applicable for event queries and are removed for metric queries.
 * **[!UICONTROL Segments]**: The segments that you want to measure. Each selected segment doubles the number of chart series and table rows. You can include up to five segments.
@@ -50,7 +51,7 @@ Add additional data to the chart. When more than one series is visible on the ch
 
 {{apply-time-comparison}}
 
-![Usage time compare](../assets/usage-compare.png)
+![Usage time compare](../assets/usage-compare.png){style="border:1px solid gray"}
 
 ## Date range
 
