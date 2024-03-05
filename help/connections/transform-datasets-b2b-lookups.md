@@ -27,12 +27,12 @@ To enable transformation for such a dataset:
   
   >[!IMPORTANT]
   >
-  >Once turned on, and when the connection is saved, the transformation of the dataset is irreversible.
+  >Once turned on, and when the connection is saved, the transformation is irreversible. You can not modify the transformation setting for a dataset once a connection is saved, other than by removing and adding the dataset once more to the connection. 
 
 
 
 ## Background information
 
-Non-transformed datasets, for schemas based on the four schema classes mentioned above, can contain multiple rows for a single person identifier. Person-based lookups will only match for the first occurrence of that person identifier, preventing a proper person id based lookup of accounts, opportunities, marketing lists or campaigns.
+Non-transformed datasets, for schemas based on the four schema classes mentioned above, can contain multiple rows for a single person identifier. Person-based lookups will only match the most recent occurrence of that person identifier, preventing a proper person id based lookup of accounts, opportunities, marketing lists or campaigns.
 
 The transformation will transform the dataset so that for each person identifier an (object) array is created for the relevant data (accounts, opportunities, marketing lists or campaigns), enabling correct working person id based lookups.
