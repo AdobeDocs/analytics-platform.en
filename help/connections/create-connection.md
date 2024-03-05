@@ -20,7 +20,7 @@ role: Admin
 
 ## Prerequisites
 
-The number of datasets you can add to a connection is capped at 100. The mix depends on which Customer Journey Analytics package your company has purchased.
+The maximum number of datasets you can add to a connection is capped at 100. The mix depends on which Customer Journey Analytics package your company has purchased.
 
 | **Select** package | **Foundation** package |
 | --- | --- |
