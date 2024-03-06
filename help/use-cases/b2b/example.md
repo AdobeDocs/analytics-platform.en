@@ -65,9 +65,23 @@ See [Add and configure datasets](../../connections/create-connection.md) for mor
 
 To have access to relevant B2B dimensions and metrics when building your Workspace project, you must define your dataview accordingly. 
 
+You can add the following components as dimensions to your dataview to ensure you can report on person-based level on your B2B data. The component names are modified for clarity.
+
+| Component Name | Dataset | Schema data type | Schema path |
+|---|---|---|---|
+| Person* | B2B Activity | String | `personID` |
+| Account* | B2B Account Person | String | `accountKey.sourceID` |
+| Campaign* | B2B Campaign Member | String | `campaignKey.sourceKey` |
+| Marketing List Name* | B2B Marketing List | String | `marketingListID` |
+| Opportunity* | B2B Opportunity Person | String | `opportunityKey.sourceID` |
+
+![Transform Dataview](./assets/transform-dataview.png)
+
+<!--
 This section provides recommendations and suggestions on what dimensions and metrics to include when defining the [components](../../data-views/create-dataview.md#components) for B2B datasets in your data view.
 
 For each component, the name, schema type, schema path, and (when applicable) details about the configuration are provided.
+
 
 +++ B2B Activity dataset
 
@@ -150,8 +164,41 @@ No metric components are defined as part of this dataset.
 
 +++
 
++++ B2B Account Person dataset
 
-+++  B2B Opportunity dataset
+### Metrics
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Annual Revenue | Double | `accountOrganization.annualRevenue.amount` | |
+| Number of employees | Integer | `accountOrganization.numberOfEmployees` | |
+
+{style="table-layout:auto"}
+
+
+### Dimensions
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Acount | String | `accountKey.sourceID` | 
+
+{style="table-layout:auto"}
+
+| Account Identifier | String | `accountID` | |
+| Account Type | String | `accountType` | |
+| City | String | `accountBillingAddress.city` | |
+| Country | String | `accountBillingAddress.country` | |
+| Industry | String | `accountOrganization.industry` | |
+| Region | String | `accountBillingAddress.region` | |
+| Source ID | String | `accountKey.sourceID` | |
+| Source Instance ID | String | `accountKey.sourceInstanceID` | |
+| Source Key | String | `accountKey.sourceKey` | |
+| Source Type | String | `accountKey.sourceType` | |
+
+
++++
+
++++  B2B Opportunity Person dataset
 
 ### Metrics
 
@@ -179,65 +226,6 @@ No metric components are defined as part of this dataset.
 | Opportunity Name | String | `opportunityName` | | 
 | Opportunity Status | String | `opportunityStage` | |
 | Won Flag | Boolean | `isWon` | |
-
-{style="table-layout:auto"}
-
-+++
-
-
-+++ B2B Campaign dataset
-
-### Metrics
-
-| Component Name | Schema data type | Schema path | Configuration |
-|---|---|---|---|
-| Campaign Cost | Double | `actualCost.amount` | |
-
-{style="table-layout:auto"}
-
-
-### Dimensions
-
-| Component Name | Schema data type | Schema path | Configuration |
-|---|---|---|---|
-| Campaign ID | String | `campaignID` | |
-| Campaign Name | String | `campaignName` | |
-| Campaign Start Date | Date-time | `campaignStartDate` | Date-time format: **[!UICONTROL Day]** |
-| Channel Name | String | `channelName` | |
-| Parent Campaign ID | String | `parentCampaignID` | |
-
-{style="table-layout:auto"}
-
-+++
-
-
-
-+++ B2B Account dataset
-
-### Metrics
-
-| Component Name | Schema data type | Schema path | Configuration |
-|---|---|---|---|
-| Annual Revenue | Double | `accountOrganization.annualRevenue.amount` | |
-| Number of employees | Integer | `accountOrganization.numberOfEmployees` | |
-
-{style="table-layout:auto"}
-
-
-### Dimensions
-
-| Component Name | Schema data type | Schema path | Configuration |
-|---|---|---|---|
-| Account Identifier | String | `accountID` | |
-| Account Type | String | `accountType` | |
-| City | String | `accountBillingAddress.city` | |
-| Country | String | `accountBillingAddress.country` | |
-| Industry | String | `accountOrganization.industry` | |
-| Region | String | `accountBillingAddress.region` | |
-| Source ID | String | `accountKey.sourceID` | |
-| Source Instance ID | String | `accountKey.sourceInstanceID` | |
-| Source Key | String | `accountKey.sourceKey` | |
-| Source Type | String | `accountKey.sourceType` | |
 
 {style="table-layout:auto"}
 
@@ -286,21 +274,29 @@ No metric components are defined as part of this dataset.
 
 +++
 
-<!--
-### B2B Marketing List Member dataset
++++ B2B Marketing List Member dataset
 
-The B2B Marketing List Member dataset contains member of marketing lists.
+### Metrics
+
+### Dimensions
+
++++
 
 -->
 
 ## Workspace
 
-With your components properly defined, you can now build specific B2B visualizations in your Workspace project.
+With your components properly defined in the dataview, you can now build specific B2B reports and visualizations in your Workspace project.
 
-Below is an example project that relies on the connection and data view described above. See the descriptions for each visualization for more details.
+Below is an example project that relies on the connection and data view described above. 
+
+![Sample project](assets/sample-project.png)
+
+<!-- See the descriptions for each visualization for more details.
 
 +++ Example project
 
 ![Visualizations](assets/visualizations.png)
 
 +++
+-->
