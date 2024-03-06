@@ -42,7 +42,14 @@ For each lookup dataset that you add to your connection, you must explicitly def
 
 ![Key - Matching key](assets/key-matchingkey.png)
 
-For each lookup dataset you also enable **[!UICONTROL Transform dataset]** to ensure the data is transformed for person-based lookups. See [Transform datasets for B2B lookups](/help/connections/transform-datasets-b2b-lookups.md) for more information.
+Four schemas are explicitly used to connect the Person schema to other relevant schemas: Account, Opportunity, Campaign and Marketing List. These schemas are based on the following schema classes:
+
+* XDM Business Account Person Relation
+* XDM Business Opportunity Person Relation
+* XDM Business Marketing List Members
+* XDM Business Campaign Members
+
+For each lookup dataset, for a schema based on such a schema class, you also enable **[!UICONTROL Transform dataset]** to ensure the data is transformed for person-based lookups. See [Transform datasets for B2B lookups](/help/connections/transform-datasets-b2b-lookups.md) for more information.
 
 The table below provides an example overview of the [!UICONTROL Person ID], [!UICONTROL Key], and [!UICONTROL Matching key] values for each of the datasets.
 
