@@ -75,7 +75,7 @@ Some of the features and their associated value for the limit depend on the Cust
 
 {style="table-layout:auto"}
 
-See also Experience Platform [Real-time Customer Data Platform Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/Guardrails.html?lang=en).
+See also Experience Platform [Real-time Customer Data Platform Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en).
 
 
 ## Automated dataset expiration
@@ -120,7 +120,7 @@ See also Experience Platform [Real-time Customer Data Platform Guardrails](https
 
 {style="table-layout:auto"}
 
-See also Experience Platform [Guardrails for Data Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html?lang=en).
+See also Experience Platform [Guardrails for Data Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en).
 
 
 ## Data landing zone
