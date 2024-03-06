@@ -1,7 +1,7 @@
 ---
 title: Timeline view
 description: Observe user-level session events over time to find experience patterns.
-feature: Guided Analysis
+feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 ---

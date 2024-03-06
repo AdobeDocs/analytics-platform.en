@@ -2,7 +2,7 @@
 title: Usage view
 description: Measure user engagement over time.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
-feature: Guided Analysis
+feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 ---
