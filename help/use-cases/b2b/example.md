@@ -69,13 +69,12 @@ You can add the following components as dimensions to your dataview to ensure yo
 
 | Component Name | Dataset | Schema data type | Schema path |
 |---|---|---|---|
-| Person* | B2B Activity | String | `personID` |
-| Account* | B2B Account Person | String | `accountKey.sourceID` |
-| Campaign* | B2B Campaign Member | String | `campaignKey.sourceKey` |
-| Marketing List Name* | B2B Marketing List | String | `marketingListID` |
-| Opportunity* | B2B Opportunity Person | String | `opportunityKey.sourceID` |
+| Person | B2B Activity | String | `personID` |
+| Account | B2B Account Person | String | `accountKey.sourceID` |
+| Campaign | B2B Campaign Member | String | `campaignKey.sourceKey` |
+| Marketing List Name | B2B Marketing List | String | `marketingListID` |
+| Opportunity | B2B Opportunity Person | String | `opportunityKey.sourceID` |
 
-![Transform Dataview](./assets/transform-dataview.png)
 
 <!--
 This section provides recommendations and suggestions on what dimensions and metrics to include when defining the [components](../../data-views/create-dataview.md#components) for B2B datasets in your data view.
