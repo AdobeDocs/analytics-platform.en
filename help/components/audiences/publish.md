@@ -11,9 +11,9 @@ This topic discusses how to create and publish audiences identified in Customer 
 
 Read this [overview](/help/components/audiences/audiences-overview.md) to familiarize yourself with the concept of Customer Journey Analytics audiences.
 
-## Create audience {#create}
+## Create and publish an audience {#create}
 
-1. To create audiences, you have three ways to get started:
+1. To begin creating and publishing an audience, do one of the following:
 
    | Creation method | Details |
    | --- | --- |
@@ -68,13 +68,13 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 1. Click **[!UICONTROL View audience in AEP]** within the same message and you will be taken to the [Segment UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) in Adobe Experience Platform. See below for more information.
 
-## What happens after an audience is created? {#after-audience-created} 
+## What happens after an audience is created and published? {#after-audience-created} 
 
-After you have created an audience, Adobe creates an Experience Platform streaming segment for each new Customer Journey Analytics audience. An Adobe Experience Platform streaming segment will only be created if your organization is set up for streaming segmentation.
+After you create and publish an audience in Customer Journey Analytics, the audience is available in Experience Platform. An Adobe Experience Platform streaming segment will only be created if your organization is set up for streaming segmentation.
 
-* The Adobe Experience Platform segment shares the same name/description as the Customer Journey Analytics audience, but the name will be appended with the Customer Journey Analytics audience ID to ensure that it is unique.
-* If the Customer Journey Analytics audience name/description changes, the Adobe Experience Platform segment name/description reflects that change as well.
-* If a Customer Journey Analytics audience is deleted by a user, the Adobe Experience Platform segment is NOT deleted. The reason is that the Customer Journey Analytics audience may later get undeleted.
+* The audience in Platform shares the same name/description as the Customer Journey Analytics audience, but the name will be appended with the Customer Journey Analytics audience ID to ensure that it is unique.
+* Any changes made to the name or description of the audience in Customer Journey Analytics are reflected in Platform.
+* If a Customer Journey Analytics audience is deleted by a user, the audience in Platform is NOT deleted. The reason is that the Customer Journey Analytics audience may later get undeleted.
 
 ## Latency considerations {#latency}
 
