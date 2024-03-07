@@ -107,7 +107,13 @@ To view Customer Journey Analytics audiences in Platform:
 
    ![Adobe Expericen Platform UI highlighting Segments in the left-pane and CJA Audiences in the main panel.](assets/audiences-aep.png)
 
-1. To locate the audience that you published from Customer Journey, select the filter icon, use the search field, or sort the table by the [!UICONTROL **Origin**] column.
+1. To locate the audience that you published from Customer Journey, do any of the following:
+
+   * Sort the table by the [!UICONTROL **Origin**] column to view audiences that show [!UICONTROL **Customer Journey Analytics**] as the origin.
+   
+   * Select the filter icon.
+   
+   * Use the search field.
 
 For more information about using Audiences in Platform, see the [Audiences](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#audiences) section in [Segment Builder UI guide](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html) in the Experience Platform documentation.
    
