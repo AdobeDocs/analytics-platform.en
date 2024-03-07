@@ -18,13 +18,13 @@ This transformation is only available for datasets with data for B2B lookup sche
 
 To enable transformation for such a dataset:
 
-![Enable transform dataset](assets/transform-dataset.png)
-
 * Ensure you select the proper identifier for **[!UICONTROL Key]** and **[!UICONTROL Matching key]**, for example `personKey.sourceKey`.
 
 * Select **[!UICONTROL Transform dataset for B2B lookups]**.
 
   This option will transform the dataset so it can be used for person-based lookups in B2B scenarios. 
+
+  ![Enable transform dataset](assets/transform-dataset.gif)
   
   
   >[!IMPORTANT]
