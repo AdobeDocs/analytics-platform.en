@@ -179,3 +179,10 @@ This calculation is done for every dataset in the connection.
     In this example, "analytics_demo_data" is the name of the dataset.
 
 2. To show all the datasets that exist in Adobe Experience Platform, perform the `Show Tables` query .
+
+
+## Algorithmic pruning of large lookup datasets
+
+Ingesting data from a lookup dataset is limited to 10 million unique lookup keys; additional data is skipped. 
+
+If you want to have your lookup dataset pruned using a specific algorithm (for example LIFO (last in, first out), FIFO (first in, first out), most occurrences, machine learning based key selection, or other options), contact Adobe for further assistance.
