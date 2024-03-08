@@ -1,7 +1,7 @@
 ---
 title: First use view
 description: Measure the impact of first-time feature use on key indicators.
-feature: Guided Analysis
+feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
@@ -31,7 +31,7 @@ The query rail allows you to configure the following components:
 
 * **[!UICONTROL View]**: Switch between this view type and [Release](release.md).
 * **[!UICONTROL Key indicators]**: The events that you want to measure per user. Each selected key indicator is represented as a colored line. A row representing the event is added to the table. You can include up to three events.
-* * **[!UICONTROL Counted as]**: The metric that you want to measure. Options include [!UICONTROL Events per user], [!UICONTROL Events], [!UICONTROL Sessions], and [!UICONTROL Users].
+* **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Events per user], [!UICONTROL Events], [!UICONTROL Sessions], and [!UICONTROL Users].
 * **[!UICONTROL Factors]**: There are two factors for this view:
   * **[!UICONTROL Date]**: How far back you want to start looking for the first time use event to have occurred.
   * **[!UICONTROL Event]**: The event that you want to look for first use of, to center the analysis on. 

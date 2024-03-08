@@ -20,7 +20,16 @@ role: Admin
 
 ## Prerequisites
 
-You must have the **Select** package in order to add unlimited numbers of datasets to a connection. The **Foundation** package is limited to one dataset. Contact your administrator if you're unsure what Customer Journey Analytics package you have.​ 
+The maximum number of datasets you can add to a connection is capped at 100. The mix depends on which Customer Journey Analytics package your company has purchased.
+
+| **Select** package | **Foundation** package |
+| --- | --- |
+| Any combination of event/profile/lookup datasets, adding up to 100  | One event dataset per connection | 
+|  | Up to 99 profile or lookup datasets per connection  |
+
+{style="table-layout:auto"}
+
+Contact your administrator if you're unsure which Customer Journey Analytics package you have.​ 
 
 ## Create and configure the connection {#create-connection}
 
@@ -46,7 +55,7 @@ You must have the **Select** package in order to add unlimited numbers of datase
     | **[!UICONTROL Key]** | For lookup datasets only (such as _id). |
     | **[!UICONTROL Matching Key]** | For lookup datasets only (such as _id). |
     | **[!UICONTROL Import new data]** | Set to On or Off. |
-    | **[!UICONTROL Backfill data]** | You can request to backfill the data in a dataset based on event timestamps. For example, you can request to backfill the last 7 days worth of data, configure the right Person ID and test your connection for correct configuration. If everything looks good, you can backfill all the remaining data with ease.<p>In addition, you can enable the import of new data by dataset. For example, you can enable the import of new data for lookup data only.  |
+    | **[!UICONTROL Backfill data]** | You can request to backfill the data in a dataset based on event timestamps. For example, you can request to backfill the last 7 days worth of data, configure the right Person ID and test your connection for correct configuration. If everything looks good, you can backfill all the remaining data with ease.<p>In addition, you can enable the import of new data by dataset. |
     | **[!UICONTROL Backfill status]** | Indicates whether any backfill data is processing. |
 
     {style="table-layout:auto"}

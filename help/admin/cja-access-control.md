@@ -35,6 +35,7 @@ Product admins are granted the necessary permissions to perform the following ta
 * Update and delete projects, filters, calculated metrics, audiences, annotations, or filters created by other users
 * Share Workspace projects to all users
 * Manage reporting activity in the [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md)
+* [Export full tables](/help/analysis-workspace/export/export-cloud.md) from Analysis Workspace
 
 ### Product Admin additional permissions
 
@@ -72,7 +73,18 @@ A product profile is a set of permissions. Product Profile Admins can
 
 ## User-level access
 
-Users in Customer Journey Analytics cannot create, edit, or view data views or connections. Users can create filters, projects, audiences, and calculated metrics with special permissions in the Admin Console.
+The matrix below outlines the main access permissions for different Customer Journey Analytics capabilities for non-product admins and CJA product admins. Understanding these permissions helps users effectively navigate and utilize CJA based on their role and responsibilities within the organization.
+
+| CJA Product Functionality | Non-Product Admins (Users) | Product Admins |
+| --- | --- | --- |
+| **Data views** | Cannot view/update/create/delete | Can create/update/delete |
+| **Connections**| Cannot view/update/create/delete | Can create/update/delete |
+| **Filters** | Can create | Can create |
+| **Projects** | Can create | Can create/update/delete |
+| **Audiences** | Can create with special permissions in Admin Console | Can create |
+| **Calculated metrics** | Can create with special permissions in Admin Console | Can create |
+
+{style="table-layout:auto"}
 
 ## Workspace project curation
 

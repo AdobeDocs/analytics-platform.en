@@ -142,6 +142,11 @@ Make sure that your tables, your environment, and your permissions meet the foll
 
 * **Permissions:** In the Adobe Admin Console, users must be assigned a product profile that has the [!UICONTROL **Full Table Export**] permission assigned to it in order to export full tables. For information about assigning a permission to a product profile in the Admin Console, see [Customer Journey Analytics permission in Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=en#customer-journey-analytics-permissions-in-admin-console) in [Customer Journey Analytics Access Control](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
 
+  >[!NOTE]
+  >
+  >  Users who are assigned the [Product Admin role](/help/admin/cja-access-control.md#product-admin-role) always have access to export full tables; these users do not need to be assigned the [!UICONTROL **Full Table Export**] permission.
+
+
 ### Unsupported features
 
 The following features are not supported and are automatically removed from full-table exports:

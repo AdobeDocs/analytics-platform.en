@@ -2,7 +2,7 @@
 title: Active view
 description: Identify who is new, retained, returning, or dormant.
 exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
-feature: Guided Analysis
+feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 ---
@@ -33,7 +33,7 @@ The query rail allows you to configure the following components:
 
 * **[!UICONTROL View]**: Switch between this view type and [Net growth](net-growth.md).
 * **[!UICONTROL Events]**: The event that you want to measure. Since this view type is user-based, a user who interacts with the event once within the period is counted as an active user. You can include one event in a query.
-* **[!UICONTROL Counted as]**: The metric that you want to measure. Options include [!UICONTROL Number of users] and [!UICONTROL Percentage of users].
+* **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Number of users] and [!UICONTROL Percentage of users].
 * **[!UICONTROL Segments]**: The segment that you want to filter data by. You can include one segment in a query.
 
 ## Chart settings
@@ -46,7 +46,7 @@ The [!UICONTROL Active] view offers the following chart settings, which can be a
 
 {{apply-time-comparison}}
 
-![Active time compare](../assets/active-compare.png)
+![Active time compare](../assets/active-compare.png){style="border:1px solid gray"}
 
 ## Date range
 

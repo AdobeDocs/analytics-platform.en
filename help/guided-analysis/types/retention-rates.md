@@ -1,7 +1,7 @@
 ---
 title: Retention rates
 description: Measure how many users continue to use your product.
-feature: Guided Analysis
+feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
@@ -23,7 +23,7 @@ Subsequent duration buckets count the number of users who returned on or after t
 * If a user engages with the event multiple days after initially qualifying for inclusion in the analysis, they appear in the latest qualifying duration bucket and all duration buckets leading up to it. This type of calculation is sometimes referred to as "unbounded retention".
 * If a user engages with the event many times during the configured date range, only the first and last events are included in the analysis.
 
-![Retention rates screenshot](../assets/retention-rates.png)
+![Retention rates screenshot](../assets/retention-rates.png){style="border:1px solid gray"}
 
 ## Use cases
 
@@ -38,13 +38,13 @@ Use cases for this view type include:
 The query rail allows you to configure the following components:
 
 * **[!UICONTROL Start & return event]**: The event criteria that a user must engage with to qualify for inclusion in your analysis. One event is supported, but you can include property filters.
-* **[!UICONTROL People]**: The segments that you want to measure. Each selected segment adds a row to the cohort table. You can include up to three segments.
+* **[!UICONTROL Counted as]**: The counting method that you want to apply to retained users. Options include [!UICONTROL Users retained] and [!UICONTROL Percentage of users retained].
+* **[!UICONTROL Segments]**: The segments that you want to measure. Each selected segment adds a row to the cohort table. You can include up to three segments.
 
 ## Chart settings
 
 The [!UICONTROL Retention rates] view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **[!UICONTROL Metric]**: How you want to measure users retained. Options include [!UICONTROL Users retained] and [!UICONTROL Percentage of users retained].
 * **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Bar] and [!UICONTROL Line].
 
 ## Duration settings

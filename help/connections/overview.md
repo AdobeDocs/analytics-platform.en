@@ -8,7 +8,8 @@ role: Admin
 ---
 # Connections overview
 
-A connection lets you integrate datasets from [!DNL Adobe Experience Platform] into [!UICONTROL Workspace]. In order to report on [!DNL Experience Platform] datasets, you first have to establish a connection between datasets in [!DNL Experience Platform] and [!UICONTROL Workspace].
+Connections allow Customer Journey Analytics product administrators to establish connections with different AEP data sources, such as event, lookup, and profile datasets. These connections enable the integration of data from a Connection to a derivative Data View. We recommended restricting access to Connections management to a core management group. Configurations at the Connection level have contractual implications regarding volume allotments for data brought into Customer Journey Analytics. 
+Connections are the foundation of CJA and are created from AEP source datasets. Access to Connections also provides the ability to view the Connections manager, which lets you view the underlying datasets that make up the connection, as well as make critical editing and configuration selections.
 
 Here is a video overview:
 
