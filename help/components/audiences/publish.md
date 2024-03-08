@@ -74,7 +74,7 @@ After you create and publish an audience in Customer Journey Analytics, the audi
 
 * The audience in Platform shares the same name/description as the Customer Journey Analytics audience, but the name will be appended with the Customer Journey Analytics audience ID to ensure that it is unique.
 * Any changes made to the name or description of the audience in Customer Journey Analytics are reflected in Platform.
-* If a Customer Journey Analytics audience is deleted by a user, the audience in Platform is NOT deleted. The reason is that the Customer Journey Analytics audience may later get undeleted.
+* If an audience is deleted in Customer Journey Analytics, the audience continues to be available in Platform.
 
 ## Latency considerations {#latency}
 
