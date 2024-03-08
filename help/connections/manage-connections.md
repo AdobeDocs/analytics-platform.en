@@ -19,7 +19,14 @@ Once you have [created or edited one or more connections](/help/connections/crea
 * Check the status of your connection's datasets and the status of the ingestion process. For example, when is your data available so that you can start with reporting and analysis in Analysis Workspace.
 * Identify any data discrepancies due to misconfiguration. Are you missing any rows? If so, what rows are missing and why? Did you misconfigure connections and cause missing data in Customer Journey Analytics?
 
-A table shows all connections available. You can quickly search for a connection using the Search ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
+[!UICONTROL Connections] has two interfaces: [[!UICONTROL List]](#list) and [[!UICONTROL Usage]](#usage).
+
+
+## List
+
+The [!UICONTROL List] interface is the default interface for Connections. If not selected, select the **[!UICONTROL List]** tab to access the interface.
+
+The [!UICONTROL List] interface shows a table of all connections available. You can quickly search for a connection using the Search ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
 
 The following columns / icons are available in the table.
 
