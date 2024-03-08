@@ -192,6 +192,30 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 | [!UICONTROL Schema] | Shows the Experience Platform schema that this dataset is based on. |
 | [!UICONTROL Dataset ID] | This dataset ID is generated in Experience Platform. |
 
+## Usage
+
+The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractual agreed upon.
+
+Select the **[!UICONTROL Usage]** tab to access the interface.
+
+To report on usage:
+
+1. Select a **[!UICONTROL Time range]**. You can select between **[!UICONTROL Last 6 months]**, **[!UICONTROL Year to date]**, or **[!UICONTROL Last 2 Years]**.
+1. Select an **[!UICONTROL Interval]**. You can select between **[!UICONTROL Monthly]** or **[!UICONTROL Quarterly]**.
+
+For [!UICONTROL Ingested rows]:
+
+* a box displays the [!UICONTROL Total] number of ingested rows.
+* a box displays the number of ingested rows for the [!UICONTROL Last month] and the change in % (indicated by <span style="color:green">▲</span> or <span style="color:c64545">▼</span>) from the previous month.
+* a line graph displays the  <span style="color:53b2ad">◼︎</span> Cumulative ingested rows and <span style="color:4046c3">◼︎</span> Monthly ingested rows.<br/>You can hover over any data point for each line in the line graph to see a popup displaying date and the number of rows for the selected data point.
+
+
+For [!UICONTROL Reportable rows]:
+
+* a box displays [!UICONTROL Total] number of reportable rows.
+* a box displays the number of reportable rows for the [!UICONTROL Last month] and the change in % (indicated by <span style="color:green">▲</span> or <span style="color:c64545">▼</span>) from the previous month.
+* a line graph displays the  <span style="color:53b2ad">◼︎</span> Cumulative reportable rows and <span style="color:4046c3">◼︎</span> Monthly reportable rows.<br/>You can hover over any data point for each line in the line graph to see a popup displaying date and the number of rows for the selected data point.
+
 
 >[!MORELIKETHIS]
 >
