@@ -183,6 +183,7 @@ This calculation is done for every dataset in the connection.
 
 ## Algorithmic pruning of large lookup datasets
 
-Ingesting data from a lookup dataset is limited to 10 million unique lookup keys; additional data is skipped. 
+When creating a connection, you can add large datasets for lookup purposes. For example, a dataset representing a product catalog so descriptive product information can be looked up when buiding reports and visualizations. Such a large lookup dataset can exceed the maximum of 10 million unique lookups currently implemented as as guardrail, resulting in additional data being skipped.
 
-If you want to have your lookup dataset pruned using a specific algorithm (for example LIFO (last in, first out), FIFO (first in, first out), most occurrences, machine learning based key selection, or other options), contact Adobe for further assistance.
+You can request algorithmic pruning of such a large lookup dataset. This will only keep data in the lookup dataset 
+for which keys are available in the event dataset part of your connection. Contact your Adobe representative for further information.
