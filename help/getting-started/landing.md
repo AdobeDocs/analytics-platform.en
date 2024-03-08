@@ -11,6 +11,12 @@ The landing page for Customer Journey Analytics highlights [!DNL Analysis Worksp
 
 >[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
 
+The Customer Journey Analytics landing page is comprised of the following subtabs: Projects and Learning.
+
+**[!UICONTROL Projects]** are customized designs that combine data components, tables, and visualizations that you built or that someone else built and shared with you. [!UICONTROL Projects] also refers to blank projects and blank mobile scorecards.
+
+The **[!UICONTROL Learning]** tab contains hands-on video tours, tutorials, and links to documentation.
+
 ## Navigate the [!UICONTROL Projects] tab {#navigate-projects}
 
 [!UICONTROL Projects] serves as the [!UICONTROL Workspace] home page. The Projects tab displays the Company folder, any personal folders you created, your projects, and Mobile scorecards. Use this page to view, create, and modify folders, projects, and mobile scorecards. For more information, see [About Folders in Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).
