@@ -33,7 +33,7 @@ The **[!UICONTROL Learning]** tab contains hands-on video tours, tutorials, and 
 
 To customize column widths, drag the vertical bar that separates each column. 
 
-To add or remove columns from the list of projects, click the column icon (![Landing all](/help/analyze/assets/select-column.png) ) in the top-right, then select or deselect column titles. 
+To add or remove columns from the list of projects, click the column icon (![Landing all](assets/select-column.png) ) in the top-right, then select or deselect column titles. 
 
 The available columns are:
 
