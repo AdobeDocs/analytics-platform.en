@@ -11,7 +11,7 @@ Generally speaking, any data governance-related settings in Customer Journey Ana
 
 ## Data Governance
 
-The integration between Adobe Customer Journey Analytics and [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) allows for labeling of sensitive Customer Journey Analytics data and enforcement of privacy policies. 
+The integration between Adobe Customer Journey Analytics and [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html) allows for labeling of sensitive Customer Journey Analytics data and enforcement of privacy policies. 
 
 Privacy labels and policies that were created on datasets consumed by Experience Platform can be surfaced in the Customer Journey Analytics data views workflow. These labels stop or warn users who create metrics and/or dimensions from sensitive fields. 
 

@@ -16,7 +16,7 @@ Components are features in Customer Journey Analytics that can be used in report
 You can manage the following components:
 
 * [**Annotations**](/help/components/annotations/overview.md): Communicate contextual data nuances and insights to your organization.
-* [**Audiences**](/help/components/audiences/audiences-overview.md): Create and publish audiences discovered in Customer Journey Analytics to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) (RTCDP) in Adobe Experience Platform for customer targeting and personalization.
+* [**Audiences**](/help/components/audiences/audiences-overview.md): Create and publish audiences discovered in Customer Journey Analytics to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) (RTCDP) in Adobe Experience Platform for customer targeting and personalization.
 * [**Filters**](filters/filters-overview.md): Build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of persons based on characteristics or interactions.
 * [**Calculated metrics**](calc-metrics/calc-metr-overview.md): Use metrics and formulas as new components for use in reporting
 * [**Data Dictionary**](/help/components/data-dictionary/data-dictionary-overview.md): Helps both users and administrators keep track of and better understand the components in their Analytics environment.

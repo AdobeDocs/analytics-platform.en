@@ -54,19 +54,17 @@ With the introduction of [Derived fields](../data-views/derived-fields/derived-f
 
 ### 4. Decide on using Analytics source connector vs. Experience Platform SDKs {#connector-vs-sdk}
 
-Adobe Analytics customers can easily leverage their report suites in the Adobe Experience Platform and Customer Journey Analytics using the Analytics source connector. For information on using the Analytics source connector, see the quick start guide on how to [ingest data from Adobe Analytics and use it in Customer Journey Analytics](../data-ingestion/analytics.md). Also see [Create an Adobe Analytics source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) for more information.
+Adobe Analytics customers can easily leverage their report suites in the Adobe Experience Platform and Customer Journey Analytics using the Analytics source connector. For information on using the Analytics source connector, see the quick start guide on how to [ingest data from Adobe Analytics and use it in Customer Journey Analytics](../data-ingestion/analytics.md). Also see [Create an Adobe Analytics source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) for more information.
 
-As [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) data collection evolves, you will likely migrate to either the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html) or [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html) with the Adobe Experience Platform Edge Network. While a typical implementation of the SDKs will send data into Adobe Analytics, a new opportunity presents itself for sending data directly to Adobe Experience Platform. It can then be ingested into Customer Journey Analytics, while also maintaining data sent to Adobe Analytics. 
-
-This method greatly expands possibilities for data collection: There is no longer a limitation on the number of fields or the need to map data elements to props, eVars, and events like in Analytics. You can use unlimited schema elements of different types and represent them in multiple ways using Customer Journey Analytics [Data Views](/help/data-views/data-views.md). Speed of data availability increases when sent directly to Adobe Experience Platform, as the time for data processing through Adobe Analytics is removed.   
+Adobe also offers the ability to implement data collection using the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html) or [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html). These methods greatly expand the possibilities for data collection. There is no longer a limitation on the number of fields or the need to map data elements to props, eVars, and events like in Analytics. You can use unlimited schema elements of different types and represent them in multiple ways using Customer Journey Analytics [Data Views](/help/data-views/data-views.md). Speed of data availability increases when sent directly to Adobe Experience Platform, as the time for data processing through Adobe Analytics is removed.   
 
 **Advantages of using Experience Platform SDKs:**
 
 * Flexible schema to define any fields you need
 * Not reliant on Adobe Analytics nomenclature (prop, eVar, event, etc.)
 * No character limit concerns (100 chars for props)
-* Faster data availability in Adobe Experience Platform to power [real-time personalization use cases](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=en)
-* [First-party device IDs](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=en) for enhanced accuracy of visitor identification
+* Faster data availability in Adobe Experience Platform to power [real-time personalization use cases](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)
+* [First-party device IDs](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) for enhanced accuracy of visitor identification
 
 **Drawbacks to using Experience Platform SDKs**
 
@@ -116,7 +114,7 @@ Here are a couple of videos to guide you:
 
 * [Move Adobe Analytics segments to Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html)
 
-* [Move your Calculated Metrics from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+* [Move your Calculated Metrics from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html)
 
 ### Other considerations
 

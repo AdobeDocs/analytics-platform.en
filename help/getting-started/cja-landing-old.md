@@ -20,11 +20,11 @@ Customer Journey Analytics lets you control how you connect your online and offl
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>New or Featured Items</b> </p> <p> 
      <ul>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/stitching/overview.html"> Cross-channel analysis (stitching IDs in Customer Journey Analytics) </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=en">Utilizing Adobe Analytics report suite data in Customer Journey Analytics </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=en"> Combine Report Suites with different schemas </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html?lang=en"> Processing rules, VISTA and classifications versus Data Prep </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=en"> Compare data processing across Adobe Analytics and Customer Journey Analytics reporting features </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=en"> Virtual report suites, data views, Adobe Experience Platform sandboxes and the Analytics source connector </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html">Utilizing Adobe Analytics report suite data in Customer Journey Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html"> Combine Report Suites with different schemas </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html"> Processing rules, VISTA and classifications versus Data Prep </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html"> Compare data processing across Adobe Analytics and Customer Journey Analytics reporting features </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html"> Virtual report suites, data views, Adobe Experience Platform sandboxes and the Analytics source connector </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html"> Adobe Analytics to Customer Journey Analytics evolution </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.html"> Customer Journey Analytics User Guide for Adobe Analytics users </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#connection-detail"> Use the enhanced Connection management capabilities </a> </li>
