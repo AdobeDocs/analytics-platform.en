@@ -14,7 +14,7 @@ When comparing audience membership counts between Real-time CDP and Customer Jou
 
 ## Differences in identity configurations
 
-Real-time CDP and Customer Journey Analytics do not share the same definition of a person today. Real-time CDP relies entirely on the information in the [Identity Graph](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) to build a merged profile.
+Real-time CDP and Customer Journey Analytics do not share the same definition of a person today. Real-time CDP relies entirely on the information in the [Identity Graph](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html) to build a merged profile.
 
 Customer Journey Analytics can be configured to use [Stitching](../stitching/overview.md) which extracts identifiers from datasets in the data lake and applies custom logic to link them together.
 
@@ -28,7 +28,7 @@ You can choose to put some data in Real-time CDP and some in Customer Journey An
 
 Customer Journey Analytics allows for extensive data modification at query time, such as combining fields, splitting fields apart, and other manipulations like includes/excludes, substrings, value de-duplication, sessionization, and row-level filtering.
 
-Real-time CDP offers a different set of data manipulation tools. It applies [merge policies](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en) to determine which data will be prioritized and what data will be combined to create a unified view of a person. 
+Real-time CDP offers a different set of data manipulation tools. It applies [merge policies](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html) to determine which data will be prioritized and what data will be combined to create a unified view of a person. 
 
 ## Differences in TTL (Time to Live) and data ingestion
 
