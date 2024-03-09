@@ -92,7 +92,7 @@ See also Experience Platform [Real-time Customer Data Platform Guardrails](https
 
 | Name |  Value | Limit Type | Description | 
 |---|--:|---|---|
-| Projects | 2,000 | System-enforced Guardrail  | Maximum number of projects for an organization. |
+| Projects | 50,000 | System-enforced Guardrail  | Maximum number of projects for an organization. |
 | Data Views | 2,000 |System-enforced Guardrail  |  Maximum number of [data views](../data-views/data-views.md) for an organization. |
 | Data Views | 50 | System-enforced Guardrail  | Maximum number of data views for a connection |
 | Datasets | 100 | System-enforced Guardrail  | Maximum number of [datasets](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) per connection. |
