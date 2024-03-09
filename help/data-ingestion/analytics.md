@@ -14,11 +14,11 @@ This quick start guide explains how you can use the data collected by Adobe Anal
 >
 >You do have Adobe Analytics licensed and deployed on one or more of your websites, using any of the documented implementation methods:
 >
->- [Implement Analytics using Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=en)
+>- [Implement Analytics using Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
 >
->- [Implement Analytics using Adobe Analytics extension](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=en)
+>- [Implement Analytics using Adobe Analytics extension](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html)
 >
->- [Implement Analytics using JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=en)
+>- [Implement Analytics using JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)
 
 To accomplish this, you need to:
 
@@ -77,7 +77,7 @@ Once the connection is created, the dataflow is automatically created to populat
 
 When the initial ingestion completes, your Adobe Analytics report suite data is ready to be used by Customer Journey Analytics.
 
-See [Create an Adobe Analytics source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) for a much more comprehensive tutorial.
+See [Create an Adobe Analytics source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) for a much more comprehensive tutorial.
 
 
 ## Set up a connection

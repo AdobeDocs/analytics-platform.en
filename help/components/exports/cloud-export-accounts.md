@@ -75,9 +75,9 @@ For information about how to manage existing accounts, including viewing, editin
 
    1. If you haven't already, download the [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
    
-   1. In the Adobe Experience Platform documentation, follow the steps described in [Connect your Data Landing Zone container to Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#connect-your-data-landing-zone-container-to-azure-storage-explorer).
+   1. In the Adobe Experience Platform documentation, follow the steps described in [Connect your Data Landing Zone container to Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer).
 
-      You can skip the tasks described in the sections [Retrieve the credentials for your Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#retrieve-dlz-credentials) and [Update Data Landing Zone credentials](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#update-dlz-credentials), because the URI that you copied contains these credentials.
+      You can skip the tasks described in the sections [Retrieve the credentials for your Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) and [Update Data Landing Zone credentials](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials), because the URI that you copied contains these credentials.
 
    1. When following the Adobe Experience Platform documentation and you come to the [!UICONTROL **Blob container SAS URL**] field, paste the SAS URI that you copied in Step 3.
 
