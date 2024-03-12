@@ -198,7 +198,7 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 
 >[!NOTE]
 >
->Processing times below are Guardrails, not contractual service level agreements (SLAs). Latency varies depending on customer configuration, data volumes, and consumer applications. Real processing times are often faster. Refer to your Customer Journey Analytics contract for your specific contractual terms and SLAs. See Experience Platform [Guardrails for Data Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html) for more information.
+>Processing times below are Guardrails, not contractual service level agreements (SLAs). Latency varies depending on customer configuration, data volumes, and consumer applications. Real processing times are often faster. Refer to your Customer Journey Analytics contract for your specific contractual terms and SLAs. See Experience Platform [Guardrails for Data Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) for more information.
 
 | Data flow | Expected latency |
 |---|---|
