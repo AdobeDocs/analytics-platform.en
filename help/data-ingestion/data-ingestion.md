@@ -15,7 +15,7 @@ You have several options when ingesting data into Customer Journey Analytics. So
 >In all scenarios, the data you want to _use_ in Customer Journey Analytics is actually _ingested_ in Adobe Experience Platform.
 
 
-See the high-level Customer Journey Analytics architecture shown earlier in [Overview](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en):
+See the high-level Customer Journey Analytics architecture shown earlier in [Overview](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html):
 
 ![Customer Journey Analytics architecture described in this section](./assets/cja-architecture.png)
 
@@ -78,6 +78,6 @@ See [Ingest and use streaming data](./streaming.md) for more information.
 
 ## Ingest and use data using source connectors
 
-You have data available from a source that is supported by a source connector. Source connectors are configurable configurations that allow you to ingest data from Adobe, first-party and third-party application into Adobe Experience Platform. See [Source connectors overview](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en) for an overview of available source connectors. Using the source connector you can easily ingest data from the source into Adobe Experience Platform and then use, combine and analyze it with data from other channels and data sources in Customer Journey Analytics.
+You have data available from a source that is supported by a source connector. Source connectors are configurable configurations that allow you to ingest data from Adobe, first-party and third-party application into Adobe Experience Platform. See [Source connectors overview](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) for an overview of available source connectors. Using the source connector you can easily ingest data from the source into Adobe Experience Platform and then use, combine and analyze it with data from other channels and data sources in Customer Journey Analytics.
 
 See [Ingest and use data using source connectors](./sources.md) for more information.

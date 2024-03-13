@@ -7,7 +7,7 @@ role: User
 ---
 # Create and publish audiences
 
-This topic discusses how to create and publish audiences identified in Customer Journey Analytics to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en) in Adobe Experience Platform for customer targeting and personalization. 
+This topic discusses how to create and publish audiences identified in Customer Journey Analytics to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) in Adobe Experience Platform for customer targeting and personalization. 
 
 Read this [overview](/help/components/audiences/audiences-overview.md) to familiarize yourself with the concept of Customer Journey Analytics audiences.
 
@@ -58,7 +58,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
    | [!UICONTROL Estimated to return] | This number gives you an estimated number of returning customers over the time frame that you selected from the drop-down list. We look at the historical churn rate for this audience to predict this number. |
    | [!UICONTROL Preview metrics] | This setting allows you to look at specific metrics to see whether this audience contributes a disproportionate amount to this metric, such as '[!UICONTROL Revenue]' or '[!UICONTROL Average time on site]'. It gives you the aggregate count of the metric, as well as the percentage of the total it represents. You can select any metric that is available in your data view. |
    | [!UICONTROL Namespaces included] | The specific namespaces that are associated with the people in your audience. Examples include ECID, CRM ID, email addresses, etc. |
-   | [!UICONTROL Sandbox] | The [Experience Platform sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) in which this audience resides. When you publish this audience to Platform, you can only work with it within the confines of this sandbox. |
+   | [!UICONTROL Sandbox] | The [Experience Platform sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) in which this audience resides. When you publish this audience to Platform, you can only work with it within the confines of this sandbox. |
 
    {style="table-layout:auto"}
 
@@ -66,7 +66,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
    If everything went well, you will receive a confirmation message that the audience was published. It takes only minute or two for this audience to show up in Experience Platform. (Even for audiences with millions of members, it should take less than 5 minutes.)
 
-1. Click **[!UICONTROL View audience in AEP]** within the same message and you will be taken to the [Segment UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) in Adobe Experience Platform. See below for more information.
+1. Click **[!UICONTROL View audience in AEP]** within the same message and you will be taken to the [Segment UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html) in Adobe Experience Platform. See below for more information.
 
 ## What happens after an audience is created? {#after-audience-created} 
 
@@ -135,7 +135,7 @@ Customer Journey Analytics streams the data into RTCP via pipeline, and this dat
 
 +++**What identities does Customer Journey Analytics send over?**
 
-Whichever identity/namespace pairs that were specified in the [Connection setup](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection). Specifically, the step when a user selects the field they want to use as their "Person ID".
+Whichever identity/namespace pairs that were specified in the [Connection setup](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection). Specifically, the step when a user selects the field they want to use as their "Person ID".
 
 +++
 
