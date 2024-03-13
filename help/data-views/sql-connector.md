@@ -1,22 +1,22 @@
 ---
-title: SQL Connector
-description: Learn how you can use Query Service, Power BI and/or Tableau to access Data Views using the SQL Connector.
+title: Customer Journey Analytics BI Extension
+description: Learn how you can use Query Service, Power BI, Tableau, or other BI and SQL tools to access Data Views using the Customer Journey Analytics BI Extension.
 solution: Customer Journey Analytics
-feature: SQL Connector
+feature: BI Extension
 hide: yes
 hidefromtoc: yes
 exl-id: 1827a637-6c0f-43f2-862a-928089340d30
 role: Admin
 ---
-# SQL Connector
+# Customer Journey Analytics BI Extension
 
 {{release-limited-testing}}
 
 {{select-package}}
 
-The [!DNL Customer Journey Analytics SQL Connector] enables SQL access to the [data views](./data-views.md) that you have defined in Customer Journey Analytics. Your data engineers and analysts might be more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that Customer Journey Analytics users are using when creating their Analysis Workspace projects.
+The [!DNL Customer Journey Analytics BI Extension] enables SQL access to the [data views](./data-views.md) that you have defined in Customer Journey Analytics. Your data engineers and analysts might be more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that Customer Journey Analytics users are using when creating their Analysis Workspace projects.
 
-Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) is the SQL interface to data available in the data lake of Experience Platform. With the [!DNL Customer Journey Analytics SQL Connector] enabled, the functionality of [!DNL Query Service] is extended to see your Customer Journey Analytics data views as tables or views in a [!DNL Query Service] session. As a result, business intelligence tools that use [!DNL Query Service] as their PostgresSQL interface benefit seamlessly from this extended functionality.
+Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) is the SQL interface to data available in the data lake of Experience Platform. With the [!DNL Customer Journey Analytics BI Extension] enabled, the functionality of [!DNL Query Service] is extended to see your Customer Journey Analytics data views as tables or views in a [!DNL Query Service] session. As a result, business intelligence tools that use [!DNL Query Service] as their PostgresSQL interface benefit seamlessly from this extended functionality.
 
 The main benefits are:
 
@@ -30,22 +30,23 @@ The main benefits are:
 
 To use this functionality, you have to 
 
-<!---   Enable the [!UICONTROL Customer Journey Analytics SQL Connector] in your Experience Platform organization. -->
+<!---   Enable the [!UICONTROL Customer Journey Analytics BI Extension] in your Experience Platform organization. -->
 
 - Configure the functionality for the relevant product profiles, user groups and/or individual users.<br/>
     Users must have access to:
     - Experience Platform Query Service, 
-    - Customer Journey Analytics  Workspace projects, and
+    - Customer Journey Analytics Workspace projects, and
     - Customer Journey Analytics Data views they want to use.
+    - Access to the BI Extension in the Data View Tools.
 
-- Use expiring on non-expiring credentials to connect BI tools to the Customer Journey Analytics SQL Connector. Thr [Credentials guide](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html) provides more information on setting expiring credentials or non-expiring credentials.
+- Use expiring on non-expiring credentials to connect BI tools to the Customer Journey Analytics BI Extension. Thr [Credentials guide](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html) provides more information on setting expiring credentials or non-expiring credentials.
 
 See [Access Control](../admin/cja-access-control.md) in the Customer Journey Analytics Administration section for additional information.
 
 
 ## Usage
 
-To use the [!DNL Customer Journey Analytics SQL Connector] functionality, you can either use SQL directly or use the drag and drop experience available in the specific BI tool. 
+To use the [!DNL Customer Journey Analytics BI Extension] functionality, you can either use SQL directly or use the drag and drop experience available in the specific BI tool. 
 
 ### SQL
 
@@ -59,7 +60,9 @@ In the Experience Platform UI:
 
 2. Select ![Create Query](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **Create query**]**.
 
-3. To execute the query, type your SQL statement and select the ![Play](assets/Smock_Play_18_N.svg) button (or press SHIFT + ENTER).
+3. Select the "cja" **[!UICONTROL **Database**]**.
+
+4. To execute the query, type your SQL statement and select the ![Play](assets/Smock_Play_18_N.svg) button (or press SHIFT + ENTER).
 
 +++
 
@@ -72,11 +75,13 @@ In the Experience Platform UI:
 
    2. Select **[!UICONTROL **Credentials**]** from the top bar.
 
-   3. To copy the connect string, use ![Copy](assets/Smock_Copy_18_N.svg) in the **[!UICONTROL **PSQL command**]** section.
+   3. Select the "cja" **[!UICONTROL **Database**]**.
 
-2. Open your PostgresSQL CLI.
+   4. To copy the command string, use ![Copy](assets/Smock_Copy_18_N.svg) in the **[!UICONTROL **PSQL command**]** section.
 
-3. To log in and start executing your queries, paste the connect string in the PostgresSQL CLI.
+2. Open up a command or terminal window.
+
+3. To log in and start executing your queries, paste the command string in your terminal.
     
 +++
 
@@ -85,7 +90,7 @@ See [Query Editor UI guide](https://experienceleague.adobe.com/docs/experience-p
 
 ### BI Tools
 
-Currently, the Customer Journey Analytics SQL Connector is supported and tested for Power BI and Tableau only. Other BI tools using the PSQL interface might work as well but are not yet supported officially.
+Currently, the Customer Journey Analytics BI Extension is supported and tested for Power BI and Tableau only. Other BI tools using the PSQL interface might work as well but are not yet supported officially.
 
 +++ Power BI
 
@@ -95,7 +100,9 @@ Currently, the Customer Journey Analytics SQL Connector is supported and tested 
 
    2. Select **[!UICONTROL **Credentials**]** from the top bar.
 
-   3. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Power BI.
+   3. Select the "cja" **[!UICONTROL **Database**]**.
+
+   4. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Power BI.
 
 2. In Power BI:
 
@@ -113,12 +120,12 @@ Currently, the Customer Journey Analytics SQL Connector is supported and tested 
         
           Add `?FLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:cja?FLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html) for more information.
 
-       3. When prompted for **[!UICONTROL **Data Connectivity**]** mode, select **[!UICONTROL **DirectQuery**]** to ensure that the data structures are flattened properly.
+       3. When prompted for **[!UICONTROL **Data Connectivity**]** mode, select **[!UICONTROL **DirectQuery**]**.
 
        4. You are prompted for **[!UICONTROL **Username**]** and **[!UICONTROL **Password**]**. Use the equivalent parameters from Experience Platform Queries [!UICONTROL Credentials].
 
 
-   5. After successful login, the Customer Journey Analytics Data View tables appear in Power BI's **[!UICONTROL **Navigator**]**. Data View tables are identified by using `dv_` in their names.
+   5. After successful login, the Customer Journey Analytics Data View tables appear in Power BI's **[!UICONTROL **Navigator**]**.
 
 
    6. Select the data view tables that you want to use and select **[!UICONTROL **Load**]**.
@@ -137,7 +144,9 @@ Currently, the Customer Journey Analytics SQL Connector is supported and tested 
 
    2. Select **[!UICONTROL **Credentials**]** from the top bar.
 
-   3. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Tableau.
+   3. Select the "cja" **[!UICONTROL **Database**]**.
+
+   4. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Tableau.
 
 2. In Tableau:
 
@@ -163,7 +172,7 @@ Currently, the Customer Journey Analytics SQL Connector is supported and tested 
 
       7. Select **[!UICONTROL **Sign In**]**.
 
-   4. Customer Journey Analytics data views show up as tables in the **[!UICONTROL **Table**]** list. Data view tables are prefixed with `dv_`.
+   4. Customer Journey Analytics data views show up as tables in the **[!UICONTROL **Table**]** list.
    
    5. Drag the tables that you want to use on the canvas.
 
@@ -177,15 +186,15 @@ See [Connect clients to Query Service](https://experienceleague.adobe.com/docs/e
 
 ## Functionality
 
-By default, your data views have a table-safe name generated from their friendly name. For example, the data view named [!UICONTROL My Web Data] has the view name `dv_my_web_data`.  
+By default, your data views have a table-safe name generated from their friendly name. For example, the data view named [!UICONTROL My Web Data View] has the view name `my_web_data_view`.  
 
-If you want to use the data view IDs as the table names, you can add the optional `CJA_USE_IDS` setting to your database name when connecting. For example, `prod:all?CJA_USE_IDS` shows your data views with names like `dv_ABC123`.
+If you want to use the data view IDs as the table names, you can add the optional `CJA_USE_IDS` setting to your database name when connecting. For example, `prod:cja?CJA_USE_IDS` shows your data views with names like `dv_ABC123`.
 
 ### Data governance
 
 The data governance-related settings in Customer Journey Analytics are inherited from Adobe Experience Platform. The integration between Customer Journey Analytics and Adobe Experience Platform Data Governance allows for labeling of sensitive Customer Journey Analytics data and enforcement of privacy policies.
 
-Privacy labels and policies that were created on datasets consumed by Experience Platform can be surfaced in the Customer Journey Analytics data views workflow. Therefore, data queried using the Customer Journey Analytics SQL Connector show appropriate warnings or errors when not complying with the privacy labels and policies defined.
+Privacy labels and policies that were created on datasets consumed by Experience Platform can be surfaced in the Customer Journey Analytics data views workflow. Therefore, data queried using the Customer Journey Analytics BI Extension show appropriate warnings or errors when not complying with the privacy labels and policies defined.
 
 ### List Data Views
 
@@ -193,22 +202,11 @@ In the standard PostgreSQL CLI, you can list your views using `\dv`
 
 ```sql
 prod:all=> \dv
-                                     List of relations
- Schema |                              Name                              | Type |  Owner             
---------+----------------------------------------------------------------+------+----------
- public | dv_adobe_analytics_spa                                         | view | postgres
- public | dv_adobe_analytics_spa_cja_adobe_users_only_                   | view | postgres
- public | dv_adobe_analytics_spa_cja_customers_only_                     | view | postgres
- public | dv_adobe_analytics_spa_core_aa_only_                           | view | postgres
- public | dv_adobe_analytics_spa_trad_aa_customers_only_                 | view | postgres
- public | dv_cja_audit_logs                                              | view | postgres
- public | dv_cja_connections_ui_prod_analytics_format_                   | view | postgres
- public | dv_cja_for_adobe_spark_usage                                   | view | postgres
- public | dv_cja_new_dimesnions                                          | view | postgres
- public | dv_cja_test_dimensions                                         | view | postgres
- public | dv_cja_usage_account_based_customers_only_                     | view | postgres
- public | dv_combined_trad_aa_apps                                       | view | postgres
- public | dv_customer_journey_analytics_sc_demo_users_                   | view | postgres
+                       List of relations
+ Schema |                    Name                    | Type |  Owner             
+--------+--------------------------------------------+------+----------
+ public | my_web_data_view                           | view | postgres
+ public | my_mobile_data_view                        | view | postgres
 
 ```
 
@@ -233,7 +231,6 @@ See table below for examples of the SQL you can use.
 | Metric totals | <pre>SELECT SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'</pre> |
 | Multi-dimension<br/>breakdowns<br/>and top-distincts | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY 1, 2<br/>ORDER BY 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>FROM dv1</pre> |
 | Sub select:<br/>Additional result<br/>filtering | <pre>SELECT dim1, m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'</br>  GROUP BY dim1<br/>)<br/>WHERE dim1 in ('A', 'B')</pre> |
-| Sub select:<br/>Joining with<br/>dataset not in<br/>Customer Journey Analytics | <pre>SELECT b.key, a.dim1, a.m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  GROUP BY dim1<br/>) a<br/>LEFT JOIN lookups b ON a.dim1 = b.key</pre> |
 | Sub select:<br/>Querying across<br/>data-views | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  GROUP BY dim1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FROM dv2<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  GROUP BY dim2<br/>GROUP BY key<br/>ORDER BY total</pre> |
 | Sub select: <br/>Layered source, <br/>filtering, <br/>and aggregation | Layered using subselects:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  SELECT \_.dim1,\_.m1<br/>  FROM (<br/>    SELECT \* FROM dv1<br/>    WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  ) \_<br/>  WHERE \_.dim1 in ('A', 'B', 'C')<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>Layers using CTE WITH:<br/><pre>WITH rows AS (<br/>  WITH \_ AS (<br/>    SELECT * FROM data_ares<br/>    WHERE \`timestamp\` BETWEEN '2021-01-01' AND '2021-02-01'<br/>  )<br/>  SELECT _.item, _.units FROM _<br/>  WHERE _.item IS NOT NULL<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>FROM rows WHERE rows.item in ('A', 'B', 'C')<br/>GROUP BY rows.item</pre> |
 | Selects where the<br/>metrics come before<br/> or are mixed with<br/>the dimensions | <pre>SELECT SUM(metric1) AS m1, dim1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY 2</pre> |
@@ -281,12 +278,12 @@ SUM(IF(dim1 = 'X' AND dim2 = 'A', metric1, 0)) AS m1
 ```
 
 ```sql
-SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN METRIC1 END) AS m1
+SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 ```
 
 #### Inline Calculations
 
-You can apply additional to metric expressions in your `SELECT` instead of having the math defined in a calculated metric. The following table lists what type of expressions are supported.
+You can apply additional math to metric expressions in your `SELECT` instead of having the math defined in a calculated metric. The following table lists what type of expressions are supported.
 
 | Operator or Function | Details |
 |---|---|
@@ -319,17 +316,21 @@ The timestamp field can also be used in Date-Time functions to parse, truncate t
 The `daterange` special column works similar to  `timestamp`, however the filtering is limited to full days. The `daterange` is also optional and has the same range defaults as `timestamp`.
 The `daterange` field can also be used in Date-Time Functions to parse, truncate the event date.
 
+The `daterangeName` special column can be used to filter your query using a named date range like `Last Quarter`.
+
 **filterId**
 
 The `filterId` special column is optional and is used to apply an externally defined filter to the query. Applying an externally defined filter to a query is similar to dragging a filter on a panel in Workspace. Multiple filter IDs can be provided by `AND`-ing them.
+
+Along with `filterId`, you can use `filterName` to use a filter's name instead of ID.
 
 ### WHERE Clause
 
 The WHERE clause is handled in three steps:
 
-1. Find the date range from the `timestamp` special field.
+1. Find the date range from the `timestamp`, `daterange`, or `daterangeName` special fields.
   
-2. Find any externally defined `filterId`s to include in the filtering.
+2. Find any externally defined `filterId`s or `filterName`s to include in the filtering.
 
 3. Turn the remaining expressions into ad-hoc filters.
 
