@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (March 2024)
 
-**Last update**: March 8, 2024
+**Last update**: March 13, 2024
 
 These release notes cover the release period of end of March 13, 2024 through April 2024. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -15,7 +15,7 @@ These release notes cover the release period of end of March 13, 2024 through Ap
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **New column available on the Projects landing page** | The **[!UICONTROL Last used]** column is now available when viewing the Projects tab on the [Customer Journey Analytics landing page](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html). This information can help you determine whether a project is valuable to users in your organization by showing the date and time when the project was last opened. Previously, the **[!UICONTROL Last used]** column was available only in the Calculated metrics manager, Segments manager, and Alerts manager. |  | March 13, 2024 |
-| **Usage metrics** | The usage metrics interface shows the usage of ingested and reportable rows across all connections. This interface lets you determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. |  | March 13, 2024 |
+| **Usage metrics** | The [usage metrics interface](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html) shows the usage of ingested and reportable rows across all connections. This interface lets you determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. |  | March 13, 2024 |
 | **Media Analytics Reporting - Average Minute Audience (AMA)** | The Average Minute Audience panel is now available in CJA. Media Analytics customers can use the Average Minute Audience panel to better understand average consumption of their content. Average minute audience enables comparisons of programming of any length or genre. In addition, customers can compare or append this digital average minute audience to linear TV average minute metrics. This panel gives more flexibility to measure the average audience for custom time periods, as well as when the duration classification has been updated after the fact. |  | March 12, 2024 |
 | **B2B Schema Transformation for Person to Account** | Lets you transform datasets to better support person-based lookups in Customer Journey Analytics B2B reporting scenarios. This capability is available for datasets for B2B schemas based on the following classes:<ul><li>XDM Business Account Person Relation</li><li>XDM Business Opportunity Person Relation</li><li>XDM Business Marketing List Members</li><li>XDM Business Campaign Members</li></ul> | | March 26, 2024 |
 | **Adobe Product Analytics: Compare events within a single Funnel step** | In the Funnel: Friction view, you can now compare events within a single funnel step. This is particularly useful when your journey has step options or a step where an A/B experiment is being run. | March 29, 2024 | April 12, 2024 |
