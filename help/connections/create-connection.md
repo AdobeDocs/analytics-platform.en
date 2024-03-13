@@ -29,7 +29,7 @@ The maximum number of datasets you can add to a connection is capped at 100. The
 
 {style="table-layout:auto"}
 
-Contact your administrator if you're unsure which Customer Journey Analytics package you have.​ 
+Contact your administrator if you're unsure which Customer Journey Analytics package you have.
 
 ## Create and configure the connection {#create-connection}
 
@@ -179,3 +179,12 @@ This calculation is done for every dataset in the connection.
     In this example, "analytics_demo_data" is the name of the dataset.
 
 2. To show all the datasets that exist in Adobe Experience Platform, perform the `Show Tables` query .
+
+
+## Algorithmic pruning of large lookup datasets
+
+When creating a connection, you can add large datasets for lookup purposes. For example, a dataset representing a product catalog so descriptive product information can be looked up when buiding reports and visualizations. Such a large lookup dataset can exceed the maximum of 10 million unique lookups currently implemented as as guardrail, resulting in additional data being skipped.
+
+You can request algorithmic pruning of such a large lookup dataset. This pruning will only load data in the lookup dataset for which keys are available in the event dataset part of your connection. The reference count used in the algorithm goes back to 90 days and refreshes once every week. 
+
+Contact your Adobe representative for further information.
