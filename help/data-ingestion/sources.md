@@ -113,7 +113,7 @@ To set up your schema:
 
     You are prompted to enable the schema for profile. Once enabled, when data is ingested into datasets based on this schema, that data is merged into the Real-Time Customer Profile. 
     
-    See [Enable the schema for use in Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) for more information.
+    See [Enable the schema for use in Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile) for more information.
 
     >[!IMPORTANT]
     >
@@ -200,7 +200,7 @@ See [Ingest and use data from traditional Adobe Analytics](./analytics.md) how t
 
 See [Ingest and use streaming data](./streaming.md) how to use the HTTP API source connector.
 
-See [Source Connectors overview](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#terms-and-conditions) for an overview of source connectors including links to more information for each connector.
+See [Source Connectors overview](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) for an overview of source connectors including links to more information for each connector.
 
 
 ## Set up a connection

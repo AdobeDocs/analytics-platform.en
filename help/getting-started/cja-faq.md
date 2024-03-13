@@ -134,7 +134,7 @@ Adobe recently changed how it processes data in Customer Journey Analytics:
 
 ## 5. Set rolling window for [!UICONTROL Connection] data retention {#data-retention}
 
-The [**[!UICONTROL Enable rolling data window]** setting](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection) lets you define Customer Journey Analytics data retention as a rolling window in months (three months, six months, and so on). It is set at a [!UICONTROL connection] level, not at a [!UICONTROL dataset] level. Data retention is based on event dataset timestamps and applies to event datasets only. No data retention setting exists for profile or lookup datasets since there are no applicable timestamps.
+The [**[!UICONTROL Enable rolling data window]** setting](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection) lets you define Customer Journey Analytics data retention as a rolling window in months (three months, six months, and so on). It is set at a [!UICONTROL connection] level, not at a [!UICONTROL dataset] level. Data retention is based on event dataset timestamps and applies to event datasets only. No data retention setting exists for profile or lookup datasets since there are no applicable timestamps.
 
 The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost. 
 
@@ -231,7 +231,7 @@ Read more about the [implications of dataset and connection deletion](https://ex
 
 The Adobe Experience Cloud uses Regional Data Collection (RDC) so that interactions between your visitors and Adobe and non-Adbobe solutions occur as close to your visitors as possible. Once data is collected regionally at a Data Collection Center (DCC, also known as Edge site, part of the Platform Edge Network), it is forwarded over a secure connection to the relevant solutions based on the configuration of your datastream and/or event forwarding.
 
-![Data flow using Edge Networks](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=en)
+![Data flow using Edge Networks](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
 
 The regional data collection process uses the following steps:
 
@@ -261,5 +261,4 @@ When the data hits the regional data center, the datastream configuration determ
 Customer Journey Analytics requires datasets from Adobe Experience Platform, so your datastream / event forwarding configuration requires the Adobe Experience Platform service to route the data from the regional data center to the data center where your Adobe Experience Platform instance is located. Customer Journey Analytics and its supporting services and infrastructure are deployed at that same Adobe Experience Platform instance.
 
 
-See [Data collection overview](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=en) for more information about the process of data collection beyond the Experience Edge network and its regional data centers.
-
+See [Data collection overview](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) for more information about the process of data collection beyond the Adobe Experience Platform Edge Network and its regional data centers.

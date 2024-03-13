@@ -11,7 +11,7 @@ The **[!UICONTROL Experimentation]** panel lets analysts compare different user 
 
 >[!IMPORTANT]
 >
->At this point, [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en) (A4T) data *cannot* be analyzed in the Experimentation panel. 
+>At this point, [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) data *cannot* be analyzed in the Experimentation panel. 
 
 ## Access Control {#access}
 
@@ -23,7 +23,7 @@ Two new advanced functions were added: [!UICONTROL Lift] and [!UICONTROL Confide
 
 ## Step 1: Create connection to experiment dataset/s {#connection}
 
-The recommended data schema is for the experiment data to be in an [Object array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) that contains the experiment and variant data in two separate dimensions. Both dimensions need to be in a **single** object array. If you have your experiment data in a single dimension with experiment and variant data in a delimited string, you can use the [substring](/help/data-views/component-settings/substring.md) setting in data views to split them into two for use in the panel.
+The recommended data schema is for the experiment data to be in an [Object array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html) that contains the experiment and variant data in two separate dimensions. Both dimensions need to be in a **single** object array. If you have your experiment data in a single dimension with experiment and variant data in a delimited string, you can use the [substring](/help/data-views/component-settings/substring.md) setting in data views to split them into two for use in the panel.
 
 After your experiment data has been [ingested](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) into Adobe Experience Platform, [create a connection in Customer Journey Analytics](/help/connections/create-connection.md) to one or more experiment dataset/s.
 

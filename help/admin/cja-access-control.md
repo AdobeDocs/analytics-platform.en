@@ -51,7 +51,7 @@ In addition to being added as a Product Admin in the **Customer Journey Analytic
     
     For more information on Experience Platform permissions, see [Access control in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
 
-* Export datasets to cloud [Destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en)
+* Export datasets to cloud [Destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html)
 
   >[!AVAILABILITY]
   >
@@ -61,7 +61,7 @@ In addition to being added as a Product Admin in the **Customer Journey Analytic
   * Manage Destinations
   * Activate Destinations
     
-    For more information on Experience Platform Destinations permissions, see [Destinations overview](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls).
+    For more information on Experience Platform Destinations permissions, see [Destinations overview](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html#access-controls).
 
 ## Product Profile Admin role
 
@@ -140,7 +140,7 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin C
 | **[!UICONTROL Annotation Creation]** | Lets users create [annotations](/help/components/annotations/overview.md). |
 | **[!UICONTROL Audience Creation]** | Lets users create [audiences](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL Audience View]** | Lets users view [audiences](/help/components/audiences/audiences-overview.md). |
-| [!UICONTROL **Share Project Links With Anyone**] | Lets users [share projects with anyone.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en#share-public-link)  |
+| [!UICONTROL **Share Project Links With Anyone**] | Lets users [share projects with anyone.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html#share-public-link)  |
 | **[!UICONTROL Data View Tools]**: |   |
 | [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md).  |
 | [!UICONTROL **SQL Query Service Access**] | Lets users access [Query Service in AEP](https://experienceleague.adobe.com/docs/experience-platform/query/home.html). |

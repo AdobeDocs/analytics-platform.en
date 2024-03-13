@@ -434,4 +434,4 @@ However, if you bind `product_finding_method` to the Cart Adds metric, the resul
 
 >[!MORELIKETHIS]
 >
->[Binding Dimensions in Data Views](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=en) tutorial.
+>[Binding Dimensions in Data Views](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html) tutorial.

@@ -10,7 +10,7 @@ feature: Experience Platform Integration
 
 {{release-limited-testing}}
 
-[Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en), as part of Adobe Experience Platform Intelligent Services, provides marketers with the power to generate customer predictions at the individual level.
+[Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html), as part of Adobe Experience Platform Intelligent Services, provides marketers with the power to generate customer predictions at the individual level.
 
 With the help of influential factors, Customer AI can tell you what a customer is likely to do and why. Additionally, marketers can benefit from Customer AI predictions and insights to personalize customer experiences by serving the most appropriate offers and messaging.
 
@@ -43,7 +43,7 @@ To actually integrate Customer AI data with Customer Journey Analytics, follow t
 
 ## Step 1: Configure a Customer AI instance
 
-Once you have prepared your data and have all your credentials and schemas in place, start by following the [Configure a Customer AI Instance](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en) guide in Adobe Experience Platform. 
+Once you have prepared your data and have all your credentials and schemas in place, start by following the [Configure a Customer AI Instance](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html) guide in Adobe Experience Platform. 
 
 ## Step 2: Set up a Customer Journey Analytics connection to Customer AI datasets
 

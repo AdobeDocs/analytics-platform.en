@@ -16,7 +16,7 @@ role: Admin
 
 The [!DNL Customer Journey Analytics SQL Connector] enables SQL access to the [data views](./data-views.md) that you have defined in Customer Journey Analytics. Your data engineers and analysts might be more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that Customer Journey Analytics users are using when creating their Analysis Workspace projects.
 
-Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) is the SQL interface to data available in the data lake of Experience Platform. With the [!DNL Customer Journey Analytics SQL Connector] enabled, the functionality of [!DNL Query Service] is extended to see your Customer Journey Analytics data views as tables or views in a [!DNL Query Service] session. As a result, business intelligence tools that use [!DNL Query Service] as their PostgresSQL interface benefit seamlessly from this extended functionality.
+Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) is the SQL interface to data available in the data lake of Experience Platform. With the [!DNL Customer Journey Analytics SQL Connector] enabled, the functionality of [!DNL Query Service] is extended to see your Customer Journey Analytics data views as tables or views in a [!DNL Query Service] session. As a result, business intelligence tools that use [!DNL Query Service] as their PostgresSQL interface benefit seamlessly from this extended functionality.
 
 The main benefits are:
 
@@ -38,7 +38,7 @@ To use this functionality, you have to
     - Customer Journey Analytics  Workspace projects, and
     - Customer Journey Analytics Data views they want to use.
 
-- Use expiring on non-expiring credentials to connect BI tools to the Customer Journey Analytics SQL Connector. Thr [Credentials guide](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) provides more information on setting expiring credentials or non-expiring credentials.
+- Use expiring on non-expiring credentials to connect BI tools to the Customer Journey Analytics SQL Connector. Thr [Credentials guide](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html) provides more information on setting expiring credentials or non-expiring credentials.
 
 See [Access Control](../admin/cja-access-control.md) in the Customer Journey Analytics Administration section for additional information.
 
@@ -80,7 +80,7 @@ In the Experience Platform UI:
     
 +++
 
-See [Query Editor UI guide](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html?lang=en) for more information.
+See [Query Editor UI guide](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html) for more information.
 
 
 ### BI Tools
@@ -111,7 +111,7 @@ Currently, the Customer Journey Analytics SQL Connector is supported and tested 
 
        2. Paste **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] in **[!UICONTROL **Database**]** text field.
         
-          Add `?FLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:cja?FLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) for more information.
+          Add `?FLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:cja?FLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html) for more information.
 
        3. When prompted for **[!UICONTROL **Data Connectivity**]** mode, select **[!UICONTROL **DirectQuery**]** to ensure that the data structures are flattened properly.
 
@@ -125,7 +125,7 @@ Currently, the Customer Journey Analytics SQL Connector is supported and tested 
 
    All dimensions and metrics associated with one or more selected tables appear in the right pane, ready to be used in your visualizations.
 
-   See [Connect Power BI to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html?lang=en) for more information.
+   See [Connect Power BI to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html) for more information.
 
 +++
 
@@ -153,7 +153,7 @@ Currently, the Customer Journey Analytics SQL Connector is supported and tested 
 
       3. Paste **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Database**]** text field.
 
-            Add `%3FFLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:cja%3FFLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) for more information.
+            Add `%3FFLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:cja%3FFLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html) for more information.
 
       4. Select **[!UICONTROL **Username and Password**]** from **[!UICONTROL **Authentication**]** list.
 
@@ -169,11 +169,11 @@ Currently, the Customer Journey Analytics SQL Connector is supported and tested 
 
    You can now work with the data from the data view tables to build your reports and visualizations.
 
-   See [Connect Tableau to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=en) for more information.
+   See [Connect Tableau to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html) for more information.
 
 +++
 
-See [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=en) for an overview of and more information on the various tools available.
+See [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html) for an overview of and more information on the various tools available.
 
 ## Functionality
 
@@ -214,11 +214,11 @@ prod:all=> \dv
 
 ### Nested versus flattened
 
-By default, the schema of your data views uses nested structures, just like the original XDM schemas. The integration also supports the `FLATTEN` option. You can use this option to force the schema for the data views (and any other table in the session) to be flattened. Flattening allows for easier use in BI tools that don't support structured schemas. See [Working with nested data structures in Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) for more information.
+By default, the schema of your data views uses nested structures, just like the original XDM schemas. The integration also supports the `FLATTEN` option. You can use this option to force the schema for the data views (and any other table in the session) to be flattened. Flattening allows for easier use in BI tools that don't support structured schemas. See [Working with nested data structures in Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html) for more information.
 
 ### Supported SQL
 
-See [Query Service SQL reference](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html?lang=en) for the full reference on what type of SQL is supported.
+See [Query Service SQL reference](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html) for the full reference on what type of SQL is supported.
 
 See table below for examples of the SQL you can use.
 

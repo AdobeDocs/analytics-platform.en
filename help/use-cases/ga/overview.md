@@ -19,7 +19,7 @@ Once you successfully bring historical data into Platform, you can either [Confi
 
 ## Configure an existing Google Analytics implementation for Adobe Experience Platform {#configure}
 
-Ingesting current (streaming) data involves sending data to Adobe Experience Edge, which then forwards that data to Adobe Experience Platform. See [Set up streaming Google Analytics data in Adobe Experience Platform](streaming.md).
+Ingesting current (streaming) data involves sending data to the Adobe Experience Platform Edge Network, which then forwards that data to Adobe Experience Platform. See [Set up streaming Google Analytics data in Adobe Experience Platform](streaming.md).
 
 ## Configure a Connection and Data View in Customer Journey Analytics
 
