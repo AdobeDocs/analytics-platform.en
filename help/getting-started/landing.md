@@ -11,17 +11,11 @@ The landing page for Customer Journey Analytics highlights [!DNL Analysis Worksp
 
 >[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
 
-## New landing page features {#new-features}
+The Customer Journey Analytics landing page is comprised of the following subtabs: Projects and Learning.
 
-| Feature | Description | Screenshot |
-| --- | --- | --- |
-| Expand [!UICONTROL Projects] table to full screen | To expand the table, just click the hamburger menu icon. This action will collapse the left-rail tabs. | ![Expand table selected showing only the Projects without the left-rail tabs](assets/landing-collapse2.png) |
-| Customize column width | Previously, the column width was fixed. Now you can adjust it by dragging the column separator. | ![Column width selectors](assets/column-width.png)  |
-| Reorder pinned items | To move pinned items up and down, click the ellipsis next to the pinned item and select **[!UICONTROL Move up]** or **[!UICONTROL Move down]**. | ![Move pinned items](assets/move-up-down.png) |
-| New table columns | Click the [!UICONTROL Customize table] icon at the top right of the table. New table columns include: <ul><li>**[!UICONTROL Scheduled]**: Set to [!UICONTROL On] when a project is scheduled or [!UICONTROL Off] when it is not. Clicking the [!UICONTROL On] link lets you see information about the scheduled project. You can also [edit the project schedule](/help/analysis-workspace/export/t-schedule-report.md) if you are the project owner.</li><li>**[!UICONTROL Project ID]**: The project ID can be used for debugging projects.</li><li>**[!UICONTROL Longest Date Range]**: Longer date ranges increase project complexity and may increase processing and load times. </li><li>**[!UICONTROL Number of Queries]**: The total number of requests made to Analytics when the project loads. A higher number of project queries increases project complexity and may increase processing and load times. This data is available only after a project has loaded or a scheduled project was sent. </li></ul> | ![New columns](assets/new-columns.png)  |
-| **[!UICONTROL Create Project]** modal is back | When you click **[!UICONTROL Create Project]** in Workspace, you once again get the choice between a [!UICONTROL Blank project] and a [!UICONTROL Blank mobile scorecard]. You can also choose from any templates your company has created. | ![Create new](assets/create-new.png) |
+**[!UICONTROL Projects]** are customized designs that combine data components, tables, and visualizations that you built or that someone else built and shared with you. [!UICONTROL Projects] also refers to blank projects and blank mobile scorecards.
 
-{style="table-layout:auto"}
+The **[!UICONTROL Learning]** tab contains hands-on video tours, tutorials, and links to documentation.
 
 ## Navigate the [!UICONTROL Projects] tab {#navigate-projects}
 
@@ -35,44 +29,53 @@ The landing page for Customer Journey Analytics highlights [!DNL Analysis Worksp
 >
 >Several of the following settings persist during the session and across sessions. For example, the tab you selected, the selected filters, selected columns, and the column sort direction. Search results are not persistent.
 
+### Customize table columns
+
+To customize column widths, drag the vertical bar that separates each column. 
+
+To add or remove columns from the list of projects, click the column icon (![Landing all](assets/select-column.png) ) in the top-right, then select or deselect column titles. 
+
+The available columns are:
+
+| Column name | Description | 
+|---------|----------|
+| [!UICONTROL **Name**] | Identifies the name of the project. |
+| [!UICONTROL **Type**] | Indicates whether this type is a Workspace project, a Mobile scorecard, or a folder. |
+| [!UICONTROL **Tags**] | Tags projects to organize them into groups. | 
+| [!UICONTROL **Scheduled**] | Set to [!UICONTROL On] when a project is scheduled or [!UICONTROL Off] when it is not. Clicking the [!UICONTROL On] link lets you see information about the scheduled project. You can also [edit the project schedule](/help/analysis-workspace/export/t-schedule-report.md) if you are the project owner. |
+| [!UICONTROL **Project role**] | Identifies the project roles: whether you are the project Owner and whether you have permissions to Edit or Duplicate the project. |
+| [!UICONTROL **Report suite**] | Identifies the Report Suites that are associated with the project.<br>Tables and visualizations within a panel derive data from the report suite selected in the top right of the panel. The report suite also determines what components are available in the left rail. Within a project, you can use one or many report suites depending on your analysis use cases. The list of report suites is sorted on relevance. Adobe defines relevance based on how recently and frequently the suite has been used by the current user, and how frequently the suite is used within the organization. |
+| [!UICONTROL **Owner**] | Identifies the person who created the project. |
+| [!UICONTROL **Shared With**] | Shows who the project is currently shared with. |
+| [!UICONTROL **Last Modified**] | The date and time when the project was last modified. |
+| [!UICONTROL **Last Opened**] | Identifies the date that a project was last opened by the user who is currently viewing the Projects page. |
+| [!UICONTROL **Last Used**] | Helps determine whether a project is valuable to users in your organization by showing the date and time when the project was last opened by any user within the organization.<p>This column is available only to system administrators.</p> |
+| [!UICONTROL **Project ID**] | Can be used for debugging projects. |
+| [!UICONTROL **Longest Date Range**] | Longer date ranges increase project complexity and may increase processing and load times. |
+| [!UICONTROL **Number of queries**] | The total number of requests made to Analytics when the project loads. A higher number of project queries increases project complexity and may increase processing and load times. This data is available only after a project has loaded or a scheduled project was sent. |
+| [!UICONTROL **Location**] | Shows the folder where the project is located. |
+
+### Other UI elements on the Projects page
+
 | UI element | Definition |
 | --- | --- |
 | Edit preferences | Lets you [!UICONTROL View Tutorials], and [Edit user preferences](/help/analysis-workspace/user-preferences.md). |
 | [!UICONTROL Create new] | Opens the project modal where you can create a Workspace project or a Mobile scorecard or open a company template.  |
 | [!UICONTROL Show less<br> Show more] | Toggles between not showing and showing the banner: ![Top banner](assets/top-banner.png) |
-| [!UICONTROL Workspace project] | Creates a blank [Workspace project](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) for you to  design and build. |
+| [!UICONTROL Workspace project] | Creates a blank [Workspace project](/help/analysis-workspace/home.md) for you to  design and build. |
 | [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) for you to design and build. |
 | [!UICONTROL Open Training Tutorial] | Opens the Workspace training tutorial that guides you through the process of building a new starter project in a step-by-step tutorial.|
 | [!UICONTROL Open release notes] | Opens the Adobe Analytics section of the latest Adobe Experience Cloud release notes. |
-| Filter icon | Filters by tags, data views, owners, types, and other filters (Mine, Shared with me, Favorites, and Approved)  |
+| Filter icon | Filters by tags, report suites, owners, types, and other filters (Mine, Shared with me, Favorites, and Approved)  |
 | Search bar | Searches all columns in the table. |
 | Selection box | Selects one or more projects to display the project management actions you can perform: **Delete**, **Share**, **Rename**, **Copy**, **Unpin**, **Move Up**, **Move Down**, **Tag**, **Approve**, **Export CSV**, and **Move to**. You may not have permissions to perform all listed actions. |
 | [!UICONTROL Favorites] | Adds a star next to a favorite project or folder that can be used as a filter. |
 | [!UICONTROL Name] | Identifies the name of the project. |
 | Pin icon | Pins items so they always appear at the top of your list but you can re-adjust the order by moving them up or down in the order. Use the ellipsis option menu and select **Move Up** or **Move down** in the list. |
-| Info (i) icon | Displays the following information about a project: Type, Project Role, Owner, Description, and who it is shared with. It also indicates who can [edit or duplicate](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) this project. |
+| Info (i) icon | Displays the following information about a project: Type, Project Role, Owner, Description, and who it is shared with. It also indicates who can [edit or duplicate](/help/analysis-workspace/curate-share/share-projects.md) this project. |
 | Ellipsis (...) | Displays the project management actions you can perform: **Delete**, **Share**, **Rename**, **Copy**, **Unpin**, **Move Up**, **Move Down**, **Tag**, **Approve**, **Export CSV**, and **Move to**. You may not have permissions to perform all listed actions. |
-| [!UICONTROL Type] | Indicates whether this type is a Workspace project, a Mobile scorecard, or a folder. |
-| [!UICONTROL Tags] | Tags projects to organize them into groups. |
-| [!UICONTROL Project Role] | Identifies the project roles: whether you are the project Owner and whether you have permissions to Edit or Duplicate the project.  |
-| [!UICONTROL Data View] | Identifies the data views that are associated with the project.<br>Tables and visualizations within a panel derive data from the data view selected in the top right of the panel. The data view also determines what components are available in the left rail. Within a project, you can use one or many data views depending on your analysis use cases. The list of data views is sorted on relevance. Adobe defines relevance based on how recently and frequently the suite has been used by the current user, and how frequently the suite is used within the organization. |
-| [!UICONTROL Owner] | Identifies the person who created the project. |
-| [!UICONTROL Last opened] | Identifies the date you last opened the project. |
-| Customize table icon | Selects which columns to view in the table. To add or remove columns from the list of projects, click the column icon (![Landing all](assets/select-column.png) ) in the top-right, then select or deselect column titles.|
 | SHOW: Folders & Projects or All Projects | Changes the view setting on the table to show folders and projects according to your folder organization **or** show all of your projects in an unorganized list. |
-| < (Back button) | Returns you to your most recent landing page configuration in a Workspace project. The page configuration you had when you left the landing page will persist when you return. |
-
-### Deprecation of the Project Manager Page {#deprecate-pm-page}
-
-With the release of the new landing page, we deprecated Project Manager as listed under the Components manager. The new landing page handles all of the functionality of the old Project Manager page and more. 
- 
-One common use case for the Project Manager page was to view all your projects. To view all of your projects on the new landing page by using the filter rail, select **OTHER FILTERS** and then select **Show all**. 
-
-![Other filters](assets/other-filters.png)
-
-If you're in the "Folders & Projects" view, a modal will pop-up asking if you want to switch to the "All projects" view which makes it easier to view all of your projects outside of any folders that they may be organized in.   Select **Switch to "All projects" view** to better view all of the projects you have access to. 
-
-![Switch to All projects](assets/switch-all-projects-view.png)
+| < (Back button) | Returns you to your most recent landing page configuration in a Workspace project or a report. The page configuration you had when you left the landing page will persist when you return. |
 
 ## Use the Learning tab {#navigate-learning}
 
