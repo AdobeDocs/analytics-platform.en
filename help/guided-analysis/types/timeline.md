@@ -1,9 +1,10 @@
 ---
 title: Timeline view
 description: Observe user-level session events over time to find experience patterns.
-feature: Guided Analysis
+feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
+exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
 ---
 # [!UICONTROL Timeline] view
 

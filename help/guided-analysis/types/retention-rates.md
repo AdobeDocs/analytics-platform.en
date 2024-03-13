@@ -1,14 +1,14 @@
 ---
 title: Retention rates
 description: Measure how many users continue to use your product.
-feature: Guided Analysis
+feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
 ---
 # Retention rates
 
-The **[!UICONTROL Retention rates]** view shows the percentage of users that return after their initial engagement within the desired date range. The horizontal axis represents the number of days since a user's initial engagement. The vertical axis represents the percentage of users who engage again.
+The **[!UICONTROL Retention rates]** view shows users repeat usage behavior in your product over time which can help you understand your product market fit. In this view, the horizontal axis represents the number of days since a user's initial engagement and the vertical axis represents the percentage of users who engage again.
 
 This analysis counts users based on two important events:
 
@@ -21,7 +21,6 @@ Subsequent duration buckets count the number of users who returned on or after t
 
 * If a user engages with the event only once during the desired date range (the initial engagement), they only appear in the "Day 0" duration bucket.
 * If a user engages with the event multiple days after initially qualifying for inclusion in the analysis, they appear in the latest qualifying duration bucket and all duration buckets leading up to it. This type of calculation is sometimes referred to as "unbounded retention".
-* If a user engages with the event many times during the configured date range, only the first and last events are included in the analysis.
 
 ![Retention rates screenshot](../assets/retention-rates.png){style="border:1px solid gray"}
 
@@ -30,14 +29,15 @@ Subsequent duration buckets count the number of users who returned on or after t
 Use cases for this view type include:
 
 * **Cohort analysis**: Group users into cohorts based on actions that they take, such as sign-ups or purchases. You can compare how well these groups retain and determine how to approach improving each group's user experience.
-* **Subscription service analysis**: If your product employs a subscription or another type of recurring revenue model, you can see the percentage of users that are making the most of your product. You can identify certain qualities and behaviors that these users exhibit to better understand your product market fit.
+* **Product market fit**: Measure regular usage of your product and visualize as retention curves. Greater retention signifies greater product market fit, and where your curve flattens out indicates how long it takes to reach your fit. View this analysis at an overall level or breakdown by individual product features to get deeper insights.
+* **Subscription service analysis**: If your product employs a subscription or another type of recurring revenue model, you can see the percentage of users that are making the most of your product. You can identify certain qualities and behaviors that these users exhibit.
 * **User engagement**: Evaluate how certain types of users engage with your product, and compare side by side how often they return. A given segment with lower retention than others can provide you with insight around improving potential subpar experiences that they might have.
 
 ## Query rail
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL Start & return event]**: The event criteria that a user must engage with to qualify for inclusion in your analysis. One event is supported, but you can include property filters.
+* **[!UICONTROL Start & return event]**: The event criteria that a user must engage with to qualify for inclusion and retention in your analysis. One event is supported, but you can include property filters.
 * **[!UICONTROL Counted as]**: The counting method that you want to apply to retained users. Options include [!UICONTROL Users retained] and [!UICONTROL Percentage of users retained].
 * **[!UICONTROL Segments]**: The segments that you want to measure. Each selected segment adds a row to the cohort table. You can include up to three segments.
 
@@ -45,7 +45,7 @@ The query rail allows you to configure the following components:
 
 The [!UICONTROL Retention rates] view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Bar] and [!UICONTROL Line].
+* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Bar] and [!UICONTROL Line]. The line visualization shows Day 0 visually in the chart.
 
 ## Duration settings
 
@@ -60,7 +60,7 @@ Available duration buckets depend on the date range that you set.
 
 The desired date range for your analysis. There are two components to this setting:
 
-* **[!UICONTROL Interval]**: The date granularity by which you want to view retention data. Valid options include Daily, Weekly, Monthly, and Quarterly. The same date range can have different intervals, which affect automatically set duration buckets.
+* **[!UICONTROL Interval]**: The date granularity by which you want to view retention data. Valid options include Daily, Weekly, and Monthly. The same date range can have different intervals, which impact duration bucket options.
 * **[!UICONTROL Date]**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
 
 If you select a date range close to the present day, users that initially engage too close to the current day are not included. This analysis always gives all users the chance to be included in all duration buckets. A message below the calendar picker provides information around the date range where users engage, and the interval that is reserved only for returning users:
