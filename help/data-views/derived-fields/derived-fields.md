@@ -10,7 +10,7 @@ role: Admin
 
 Derived fields are an important aspect of the real-time reporting functionality in Adobe Customer Journey Analytics. A derived field allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. You can then use that derived field as a component (metric or dimension) in [Workspace](../../analysis-workspace/home.md) or even further define the derived field as a component in [Data view](../data-views.md). 
 
-Derived fields can save a significant amount of time and effort, compared to transforming or manipulating your data in other locations outside of Customer Journey Analytics. Such as [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en), or within your own Extract Transform Load (ETL) / Extract Load Transform (ELT) processes.
+Derived fields can save a significant amount of time and effort, compared to transforming or manipulating your data in other locations outside of Customer Journey Analytics. Such as [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html), or within your own Extract Transform Load (ETL) / Extract Load Transform (ELT) processes.
 
 Derived fields are defined within [Data views](../data-views.md), are based on a set of functions defined as rules, and applied to available standard and/or schema fields.
 
@@ -409,7 +409,7 @@ You define a `Trip Duration (bucketed)` derived field. You create the following 
 
 ## More information
 
-Customer Journey Analytics uses a nested container structure, modeled after Adobe Experience Platform's [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en) (Experience Data Model). See [Containers](../create-dataview.md#containers) and [Filter containers](../../components/filters/filters-overview.md#filter-containers) for more background information. This container model, albeit flexible by nature, imposes some constraints when using the rule builder. 
+Customer Journey Analytics uses a nested container structure, modeled after Adobe Experience Platform's [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) (Experience Data Model). See [Containers](../create-dataview.md#containers) and [Filter containers](../../components/filters/filters-overview.md#filter-containers) for more background information. This container model, albeit flexible by nature, imposes some constraints when using the rule builder. 
 
 Customer Journey Analytics uses the following default container model:
 

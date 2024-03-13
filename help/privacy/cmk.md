@@ -11,7 +11,7 @@ Adobe Customer Journey Analytics provides the option for [Healthcare Shield](htt
 
 >[!NOTE]
 >
->Customer Managed Keys are currently available only for organizations that have purchased the [Healthcare Shield or Privacy & Security Shield](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html?lang=en) add-on offering.
+>Customer Managed Keys are currently available only for organizations that have purchased the [Healthcare Shield or Privacy & Security Shield](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html) add-on offering.
 
 ## Set up CMK for Customer Journey Analytics
 
@@ -27,4 +27,4 @@ Follow these steps to set up CMK for Customer Journey Analytics:
 
 1. Adobe Customer Care will confirm the completion of the CMK application on your Customer Journey Analytics data.
 
-All data utilized by Platform is encrypted in transit and at rest to keep your data secure, with or without CMK. For information on Adobe Experience Platform encryption, [learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/encryption.html?lang=en).
+All data utilized by Platform is encrypted in transit and at rest to keep your data secure, with or without CMK. For information on Adobe Experience Platform encryption, [learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/encryption.html).

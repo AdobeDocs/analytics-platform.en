@@ -7,7 +7,7 @@ role: Admin
 ---
 # Labels and policies
 
-When you create a dataset in Experience Platform, you can create [data usage labels](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) for some or all of the elements in the dataset. You can view these labels and policies in Customer Journey Analytics. 
+When you create a dataset in Experience Platform, you can create [data usage labels](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html) for some or all of the elements in the dataset. You can view these labels and policies in Customer Journey Analytics. 
 
 The following labels are of special interest to Customer Journey Analytics:
 
@@ -19,7 +19,7 @@ The following labels are of special interest to Customer Journey Analytics:
 >
 >Data usage labels are not automatically propagated to stitched datasets. They can, however, be added manually.
 
-Labeling in itself does not mean that these data usage labels are enforced. That's what policies are used for. You create your policies using the [Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=en) or via the [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=en) in Experience Platform.
+Labeling in itself does not mean that these data usage labels are enforced. That's what policies are used for. You create your policies using the [Experience Platform UI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html) or via the [Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html) in Experience Platform.
 
 Two Adobe-defined policies are surfaced in Customer Journey Analytics and affect reporting and download/sharing:
 
@@ -70,6 +70,6 @@ You also cannot save a data view that has blocked fields in it.
 >[Download sensitive data](/help/analysis-workspace/export/download-send.md)
 
 >[!MORELIKETHIS]
->[What are restricted labels in Report Builder?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=en)
+>[What are restricted labels in Report Builder?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html)
 
 
