@@ -18,9 +18,16 @@ Once you have [created or edited one or more connections](/help/connections/crea
 * View all datasets in a connection.
 * Check the status of your connection's datasets and the status of the ingestion process. For example, when is your data available so that you can start with reporting and analysis in Analysis Workspace.
 * Identify any data discrepancies due to misconfiguration. Are you missing any rows? If so, what rows are missing and why? Did you misconfigure connections and cause missing data in Customer Journey Analytics?
+* Get insights on usage of ingested and reportable rows across all your connections.
+
+[!UICONTROL Connections] has two interfaces: [[!UICONTROL List]](#list) and [[!UICONTROL Usage]](#usage).
 
 
-A table shows all connections available. You can quickly search for a connection using the Search ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
+## List
+
+The [!UICONTROL List] interface is the default interface for Connections. If not selected, select the **[!UICONTROL List]** tab to access the interface.
+
+The [!UICONTROL List] interface shows a table of all connections available. You can quickly search for a connection using the Search ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
 
 The following columns / icons are available in the table.
 
@@ -40,7 +47,7 @@ The following columns / icons are available in the table.
 
 You can configure which columns to display using ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). This shows the **Customize table** dialog allowing you turn on/off columns in the table.
 
-## Edit a connection
+### Edit a connection
 
 Allows admins to edit the connection. 
 
@@ -63,7 +70,7 @@ When editing a connection, you can:
 See [Create or edit a connection](create-connection.md) for more information.
 
 
-## Delete a connection {#connections-delete}
+### Delete a connection {#connections-delete}
 
 Allows admins to delete the connection. 
 
@@ -85,7 +92,7 @@ Select **[!UICONTROL Continue]** to delete the connection.
 See [Delete implications](/help/admin/cja-deletion.md) for more information about the implications of deleting a connection.
 
 
-## Create a data view
+### Create a data view
 
 Allows admins to create a data view for the connection. 
 
@@ -106,7 +113,7 @@ Alternatively, you can:
 
 See [Create or edit a data view](/help/data-views/create-dataview.md) for more information.
 
-## Connection details {#connection-detail}
+### Connection details {#connection-detail}
 
 To go to the details for a connection, select a connection name in the connections table.
 
@@ -147,7 +154,7 @@ The Connections details interface provides a detailed view of the status of a co
 >
 >Any data ingested before August 13, 2021 is not reflected in the [!UICONTROL Connections] interface.
 
-### Connection panel
+#### Connection panel
 
 When no dataset is selected in the datasets table, a panel on the right side of the Connections interface shows connection options and details.
 
@@ -167,7 +174,7 @@ When no dataset is selected in the datasets table, a panel on the right side of 
 | [!UICONTROL Last modified] | Shows the timestamp of the last change to the connection. |
 | [!UICONTROL Last modified by] | Shows the person who last modified the connection. |
 
-### Dataset panel
+#### Dataset panel
 
 When a dataset is selected in the datasets table, a panel on the right side of the Connections interface show details for the selected dataset.
 
@@ -189,6 +196,31 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 | [!UICONTROL Dataset type] | Either [!UICONTROL Event], [!UICONTROL Lookup], or [!UICONTROL Profile]. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#configure-dataset)  |
 | [!UICONTROL Schema] | Shows the Experience Platform schema that this dataset is based on. |
 | [!UICONTROL Dataset ID] | This dataset ID is generated in Experience Platform. |
+
+
+## Usage
+
+The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractual agreed upon.
+
+Select the **[!UICONTROL Usage]** tab to access the interface.
+
+To report on usage:
+
+1. Select a **[!UICONTROL Time range]**. You can select between **[!UICONTROL Last 6 months]**, **[!UICONTROL Year to date]**, or **[!UICONTROL Last 2 Years]**.
+1. Select an **[!UICONTROL Interval]**. You can select between **[!UICONTROL Monthly]** or **[!UICONTROL Quarterly]**.
+
+For [!UICONTROL Ingested rows]:
+
+* a box displays the [!UICONTROL Total] number of ingested rows.
+* a box displays the number of ingested rows for the [!UICONTROL Last month] and the change in % (indicated by <span style="color:green">▲</span> or <span style="color:c64545">▼</span>) from the previous month.
+* a line graph displays the  <span style="color:53b2ad">◼︎</span> Cumulative ingested rows and <span style="color:4046c3">◼︎</span> Monthly ingested rows.<br/>You can hover over any data point for each line in the line graph to see a popup displaying date and the number of rows for the selected data point.
+
+
+For [!UICONTROL Reportable rows]:
+
+* a box displays [!UICONTROL Total] number of reportable rows.
+* a box displays the number of reportable rows for the [!UICONTROL Last month] and the change in % (indicated by <span style="color:green">▲</span> or <span style="color:c64545">▼</span>) from the previous month.
+* a line graph displays the  <span style="color:53b2ad">◼︎</span> Cumulative reportable rows and <span style="color:4046c3">◼︎</span> Monthly reportable rows.<br/>You can hover over any data point for each line in the line graph to see a popup displaying date and the number of rows for the selected data point.
 
 
 >[!MORELIKETHIS]
