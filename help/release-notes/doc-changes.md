@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **March 2024** | |
+| Usage information regarding the "Used in" column is available only starting in September 2023.| Clarified that usage information regarding the **Used in** column on the [projects landing page](/help/getting-started/landing.md) goes back only as far as September 2023.  |
 | **February 2024** | |
 | Updates to project sharing documentation | Added information about how to [view projects that are shared with you](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Also streamlined information about [sharing individual or multiple projects](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | Added permission requirements for uploading files to Azure SAS and Azure RBAC when configuring cloud export locations | Added exact permission requirements for uploading files to Azure SAS and Azure RBAC when [configuring cloud export accounts](/help/components/exports/cloud-export-accounts.md) and [configuring cloud export locations](/help/components/exports/cloud-export-locations.md).  |
