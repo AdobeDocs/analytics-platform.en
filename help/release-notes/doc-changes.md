@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **March 2024** | |
+| Usage information regarding the "Used in" column is available only starting in September 2023.| Clarified that usage information regarding the **Used in** column on the [projects landing page](/help/getting-started/landing.md) goes back only as far as September 2023.  |
 | **February 2024** | |
 | Updates to project sharing documentation | Added information about how to [view projects that are shared with you](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Also streamlined information about [sharing individual or multiple projects](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | Added permission requirements for uploading files to Azure SAS and Azure RBAC when configuring cloud export locations | Added exact permission requirements for uploading files to Azure SAS and Azure RBAC when [configuring cloud export accounts](/help/components/exports/cloud-export-accounts.md) and [configuring cloud export locations](/help/components/exports/cloud-export-locations.md).  |
@@ -64,8 +66,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Adobe Product Analytics | Adobe Product Analytics is a new way to interact with cross-channel data and insights in Customer Journey Analytics. These new capabilities enable Product teams to self-serve data and insights about their product experience through [guided analysis](/help/guided-analysis/overview.md) workflows​. |
 | Derived fields |  A [derived field](/help/data-views/derived-fields/derived-fields.md) allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. |
 | Expanded lookup support for Profile and Lookup data |  Provides the ability to add datasets as lookups of fields within Profile or Lookup datasets. Previously, only Event datasets were supported. [Learn more](/help/connections/create-connection.md) |
-| Report Builder enhancements  | <ul><li>[Filter from cell for multiple data blocks](/help/report-builder/select-data-view.md)</li><li>[Show and hide row and column headers](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=en#build-the-data-block)</li></ul> |
-| Experience Edge geo lookups | [Adobe Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en) is adding a geo lookup service that provides unified geographic data to all Experience Edge users. |
+| Report Builder enhancements  | <ul><li>[Filter from cell for multiple data blocks](/help/report-builder/select-data-view.md)</li><li>[Show and hide row and column headers](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html#build-the-data-block)</li></ul> |
+| Edge Network geo lookups | [Datastream settings](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html) how has a geo lookup service that provides unified geographic data. |
 | **June 2023** | | 
 | Cross-channel analysis and stitching | In anticipation of the upcoming changes to enable stitching and to further clarify how cross-channel analysis can be elevated using stitching, documentation related to Cross-Channel Analytics functionality is edited to refer to [cross-channel analysis](../use-cases/cross-channel/cross-channel.md) as the Customer Journey Analytics capability and use case, and [Stitching](../stitching/overview.md) as an important functionality to accomplish this. |
 | PowerBI & Tableau access to Customer Journey Analytics data views | The Customer Journey Analytics SQL Connector enables SQL access to data views that you have defined in Customer Journey Analytics. [Learn more](/help/data-views/sql-connector.md)|
@@ -87,7 +89,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **April 2023** |  |
 | Video about using filters as dimensions | Updated the video about using filters as dimension. <p>This video is linked from the [Create filters](/help/components/filters/create-filters.md) page.</p> <p>Following is a direct link to the video: [Use filters as dimensions in Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p>|
 | Filter documentation | Added article about using the [Filter builder](/help/components/filters/filter-builder.md). <p>Streamlined documentation in [Create filters](/help/components/filters/create-filters.md) and [Filters overview](/help/components/filters/filters-overview.md).</p>|
-| Update to Experimentation panel documentation | Added a section on [interpreting non-randomized dimensions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
+| Update to Experimentation panel documentation | Added a section on [interpreting non-randomized dimensions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html#non-randomized). |
 | Project filters (Ad hoc and quick filters) | Streamlined documentation about project filters and removed duplicated information. The steps for creating ad hoc filters are now combined with the steps for [creating quick filters](/help/components/filters/quick-filters.md).|
 | **March 2023** | |
 | Integrate Decision Management data | Added content explaining how to [integrate Adobe Journey Optimizer Decision Management data in Customer Journey Analytics](/help/integrations/ajo-od.md). |
@@ -98,7 +100,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Link sharing for projects (no login required) | <p>Updated existing documentation to explain how to share a read-only link of a project with people who do not have access to Analysis Workspace.</p> <p>Updated user documentation includes [Share projects](/help/analysis-workspace/curate-share/share-projects.md) and [Create shareable links](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>Options for administrators were added to [Preferences](/help/analysis-workspace/user-preferences.md).</p>  |
 | **February 2023** | |
 | Compare Customer Journey Analytics to BI solutions | New document on a [comparison](../getting-started/cja-vs-bi.md) of Customer Journey Analytics to typical BI solutions. | 
-| Update to Audiences documentation | New section on [latency considerations](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
+| Update to Audiences documentation | New section on [latency considerations](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency). |
 | Update to Audiences documentation | After you have created an audience, Adobe creates an Experience Platform [streaming segment for each new Customer Journey Analytics Audience](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | Workspace calendars and date ranges | Updated content to describe relative date ranges, formula calculation updates, and calendar UI changes. See [About relative panel date ranges](/help/components/date-ranges/calendar.md#relative-panel-dates). |
 | Mobile scorecards | New documentation section to describe how to show and hide comparison date ranges. See [Show comparison date ranges](/help/mobile-app/create-scorecard.md#show-comparison-dates) in Customer Journey Analytics.  |
@@ -124,9 +126,9 @@ The following updates were made to the Customer Journey Analytics documentation 
 | October 2022 | New topic on [password protection of scheduled projects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | October 2022 | New topic on [Customer Managed Keys](/help/privacy/cmk.md). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | October 2022 | New topic on [Customer Journey Analytics Audit Log](/help/privacy/audit-log.md). |
-| October 2022 | New topic on [Key metric summary](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=en) visualization. |
-| October 2022 | New section on [date and date-time functionality in data views](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#date) |
-| October 2022 | Mobile app: New topic on [custom detail views](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en#view-detail-slides). |
+| October 2022 | New topic on [Key metric summary](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html) visualization. |
+| October 2022 | New section on [date and date-time functionality in data views](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#date) |
+| October 2022 | Mobile app: New topic on [custom detail views](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#view-detail-slides). |
 | October 2022 | Updates to the [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md) topic. |
 | **September 2022** | |
 | September 2022 | New use case on [Migrating Google Analytics data to Customer Journey Analytics](/help/use-cases/ga/overview.md). |
@@ -141,7 +143,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **July 2022** | |
 | July 2022 | [Media Playback Time Spent panel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) documentation. |
 | July 2022 | [Media Concurrent Viewer panel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html) documentation. |
-| July 2022 | [First Session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) reporting documentation.  |
+| July 2022 | [First Session](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) reporting documentation.  |
 | **June 2022** | |
 | June 2022 | New article on [AAID, ECID, AACUSTOMID and the Analytics source connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html) |
 | June 2022 | New article on [Adobe Analytics processing rules, VISTA and classifications vs. Data Prep for the Analytics source connector](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
@@ -164,7 +166,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | March 2022 | New documentation on [Annotations in Workspace](/help/components/annotations/overview.md). |
 | March 2022 | Significantly updated content on [estimating connection size](/help/getting-started/cja-faq.md). |
 | **February 2022** | |
-| February 2022 | A new guide aimed at Administrators who are moving from Adobe Analytics to Customer Journey Analytics: [Adobe Analytics to Customer Journey Analytics evolution](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=en) |
+| February 2022 | A new guide aimed at Administrators who are moving from Adobe Analytics to Customer Journey Analytics: [Adobe Analytics to Customer Journey Analytics evolution](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html) |
 | **January 2022** | |
 | January 2022 | New use case for [Using binding dimensions and metrics in Customer Journey Analytics](/help/use-cases/data-views/binding-dimensions-metrics.md) |
 | January 2022 | Added new feature documentation on [binding dimensions and metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) and on new [[!UICONTROL First Known] and [!UICONTROL Last Known] allocation settings](/help/data-views/component-settings/persistence.md#allocation-settings) |

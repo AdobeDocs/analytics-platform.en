@@ -75,7 +75,7 @@ Some of the features and their associated value for the limit depend on the Cust
 
 {style="table-layout:auto"}
 
-See also Experience Platform [Real-time Customer Data Platform Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/Guardrails.html?lang=en).
+See also Experience Platform [Real-time Customer Data Platform Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html).
 
 
 ## Automated dataset expiration
@@ -92,10 +92,10 @@ See also Experience Platform [Real-time Customer Data Platform Guardrails](https
 
 | Name |  Value | Limit Type | Description | 
 |---|--:|---|---|
-| Projects | 2,000 | System-enforced Guardrail  | Maximum number of projects for an organization. |
+| Projects | 50,000 | System-enforced Guardrail  | Maximum number of projects for an organization. |
 | Data Views | 2,000 |System-enforced Guardrail  |  Maximum number of [data views](../data-views/data-views.md) for an organization. |
 | Data Views | 50 | System-enforced Guardrail  | Maximum number of data views for a connection |
-| Datasets | 100 | System-enforced Guardrail  | Maximum number of [datasets](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) per connection. |
+| Datasets | 100 | System-enforced Guardrail  | Maximum number of [datasets](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) per connection. |
 | Connections | 1000 | System-enforced Guardrail  | Maximum number of [connections](../connections/overview.md) for an organization. |
 | Connection Title | 500 | System-enforced Guardrail |Maximum number of characters for a connection title. |
 | Metrics | 5,000 | System-enforced Guardrail  | Maximum number of metrics in a data view. |
@@ -120,7 +120,7 @@ See also Experience Platform [Real-time Customer Data Platform Guardrails](https
 
 {style="table-layout:auto"}
 
-See also Experience Platform [Guardrails for Data Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html?lang=en).
+See also Experience Platform [Guardrails for Data Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Data landing zone
@@ -175,7 +175,7 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 | Name | Value | Limit Type | Description |
 |---|--:|---|---|
 | Workbook File Size | 5 | System-enforced Guardrail  | Maximum file size in MB of a scheduled workbook. |
-| Data Blocks | 1000 | System-enforced Guardrail  | Maximum number of [data blocks](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=en) per workbook. | 
+| Data Blocks | 1000 | System-enforced Guardrail  | Maximum number of [data blocks](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) per workbook. | 
 | Metrics | 20 | System-enforced Guardrail  | Maximum number of metrics per data block. | 
 | Date Range Span | 13 | System-enforced Guardrail  | Maximum number of months a date range can span per data block. | 
 | Rows | 50,000 | System-enforced Guardrail  | Maximum number of rows per data block. | 
@@ -198,7 +198,7 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 
 >[!NOTE]
 >
->Processing times below are Guardrails, not contractual service level agreements (SLAs). Latency varies depending on customer configuration, data volumes, and consumer applications. Real processing times are often faster. Refer to your Customer Journey Analytics contract for your specific contractual terms and SLAs. See Experience Platform [Guardrails for Data Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html?lang=en) for more information.
+>Processing times below are Guardrails, not contractual service level agreements (SLAs). Latency varies depending on customer configuration, data volumes, and consumer applications. Real processing times are often faster. Refer to your Customer Journey Analytics contract for your specific contractual terms and SLAs. See Experience Platform [Guardrails for Data Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) for more information.
 
 | Data flow | Expected latency |
 |---|---|

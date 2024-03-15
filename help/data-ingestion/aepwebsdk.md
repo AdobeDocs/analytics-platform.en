@@ -99,7 +99,7 @@ To set up your schema:
 
    >[!NOTE]
    >
-   >If that field group is not available, look for another field group containing identity fields. Or [create a new field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) and [add new identity fields](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) (like `ecid`, `crmId`, and others you need) to the field group and select that new field group.
+   >If that field group is not available, look for another field group containing identity fields. Or [create a new field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) and [add new identity fields](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (like `ecid`, `crmId`, and others you need) to the field group and select that new field group.
 
     ![Identification Object](./assets/identification-field.png)
 
@@ -129,7 +129,7 @@ To set up your schema:
 
    You are prompted to enable the schema for profile. Once enabled, when data is ingested into datasets based on this schema, that data is merged into the Real-Time Customer Profile. 
     
-   See [Enable the schema for use in Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) for more information.
+   See [Enable the schema for use in Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile) for more information.
 
    >[!IMPORTANT]
    >
@@ -227,7 +227,7 @@ To set up your datastream:
 
 Your datastream is now configured to forward the data collected from your website to your dataset in Adobe Experience Platform.
 
-See [Datastreams overview](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=en) for more information on how to configure a datastream and how to handle sensitive data.
+See [Datastreams overview](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) for more information on how to configure a datastream and how to handle sensitive data.
 
 
 
