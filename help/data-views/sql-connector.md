@@ -2,7 +2,7 @@
 title: Customer Journey Analytics BI Extension
 description: Learn how you can use Query Service, Power BI, Tableau, or other BI and SQL tools to access Data Views using the Customer Journey Analytics BI Extension.
 solution: Customer Journey Analytics
-feature: BI Extension
+feature: SQL Connector
 hide: yes
 hidefromtoc: yes
 exl-id: 1827a637-6c0f-43f2-862a-928089340d30
