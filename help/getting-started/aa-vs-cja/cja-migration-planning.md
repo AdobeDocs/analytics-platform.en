@@ -96,3 +96,20 @@ The following table shows which migration options are available to you, based on
 ### Weigh the pros and cons of the migration methods available to you
 
 The pros and cons of a given migration option differ depending on your current Adobe Analytics implementation. Review the information below to determine which migration option is right for you. 
+
+#### AppMeasurement + WebSDK (re-implementation)
+
+
+#### AppMeasurement + Adobe Source Connector
+
+
+#### Adobe Analytics extension + WebSDK (re-implementation)
+
+
+#### Adobe Analytics extension + Adobe Source Connector
+
+
+#### Adobe Analytics extension + Russ special
+
+
+#### WebSDK + WebSDK (without re-implementation)
