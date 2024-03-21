@@ -115,7 +115,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
       1. Paste **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] in **[!UICONTROL **Database**]** text field.
         
-         Add `?FLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:cja?FLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/key-concepts/flatten-nested-data.html) for more information.
+         Add `?FLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:cja?FLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
 
       1. When prompted for **[!UICONTROL Data Connectivity]** mode, select **[!UICONTROL DirectQuery]**.
 
@@ -158,7 +158,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
       1. Paste **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Database**]** text field.
 
-         Add `%3FFLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:cja%3FFLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/docs/experience-platform/query/key-concepts/flatten-nested-data.html) for more information.
+         Add `%3FFLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:cja%3FFLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
 
       1. Select **[!UICONTROL **Username and Password**]** from **[!UICONTROL **Authentication**]** list.
 
@@ -208,7 +208,7 @@ prod:all=> \dv
 
 ### Nested versus flattened
 
-By default, the schema of your data views uses nested structures, just like the original XDM schemas. The integration also supports the `FLATTEN` option. You can use this option to force the schema for the data views (and any other table in the session) to be flattened. Flattening allows for easier use in BI tools that don't support structured schemas. See [Working with nested data structures in Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/key-concepts/flatten-nested-data.html) for more information.
+By default, the schema of your data views uses nested structures, just like the original XDM schemas. The integration also supports the `FLATTEN` option. You can use this option to force the schema for the data views (and any other table in the session) to be flattened. Flattening allows for easier use in BI tools that don't support structured schemas. See [Working with nested data structures in Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
 
 ### Supported SQL
 
@@ -226,9 +226,9 @@ See table below for examples of the SQL you can use.
 | Distinct, top <br/>dimension values | <pre>SELECT DISTINCT dim1 FROM dv1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY dim1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>WHERE \`timestamp\` >= '2022-01-01' AND \`timestamp\` < '2022-01-02'<br/>GROUP BY dim1<br/>ORDER BY SUM(metric1)<br/>LIMIT 15</pre> |
 | Metric totals | <pre>SELECT SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'</pre> |
 | Multi-dimension<br/>breakdowns<br/>and top-distincts | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY 1, 2<br/>ORDER BY 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>FROM dv1</pre> |
-| Sub-select:<br/>Filter additional<br/>results | <pre>SELECT dim1, m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'</br>  GROUP BY dim1<br/>)<br/>WHERE dim1 in ('A', 'B')</pre> |
-| Sub-select:<br/>Querying across<br/>data views | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  GROUP BY dim1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FROM dv2<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  GROUP BY dim2<br/>GROUP BY key<br/>ORDER BY total</pre> |
-| Sub-select: <br/>Layered source, <br/>filtering, <br/>and aggregation | Layered using subselects:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  SELECT \_.dim1,\_.m1<br/>  FROM (<br/>    SELECT \* FROM dv1<br/>    WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  ) \_<br/>  WHERE \_.dim1 in ('A', 'B', 'C')<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>Layers using CTE WITH:<br/><pre>WITH rows AS (<br/>  WITH \_ AS (<br/>    SELECT * FROM data_ares<br/>    WHERE \`timestamp\` BETWEEN '2021-01-01' AND '2021-02-01'<br/>  )<br/>  SELECT _.item, _.units FROM _<br/>  WHERE _.item IS NOT NULL<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>FROM rows WHERE rows.item in ('A', 'B', 'C')<br/>GROUP BY rows.item</pre> |
+| Subselect:<br/>Filter additional<br/>results | <pre>SELECT dim1, m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'</br>  GROUP BY dim1<br/>)<br/>WHERE dim1 in ('A', 'B')</pre> |
+| Subselect:<br/>Querying across<br/>data views | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  GROUP BY dim1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FROM dv2<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  GROUP BY dim2<br/>GROUP BY key<br/>ORDER BY total</pre> |
+| Subselect: <br/>Layered source, <br/>filtering, <br/>and aggregation | Layered using subselects:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  SELECT \_.dim1,\_.m1<br/>  FROM (<br/>    SELECT \* FROM dv1<br/>    WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  ) \_<br/>  WHERE \_.dim1 in ('A', 'B', 'C')<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>Layers using CTE WITH:<br/><pre>WITH rows AS (<br/>  WITH \_ AS (<br/>    SELECT * FROM data_ares<br/>    WHERE \`timestamp\` BETWEEN '2021-01-01' AND '2021-02-01'<br/>  )<br/>  SELECT _.item, _.units FROM _<br/>  WHERE _.item IS NOT NULL<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>FROM rows WHERE rows.item in ('A', 'B', 'C')<br/>GROUP BY rows.item</pre> |
 | Selects where the<br/>metrics come before<br/> or are mixed with<br/>the dimensions | <pre>SELECT SUM(metric1) AS m1, dim1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY 2</pre> |
 
 {style="table-layout:auto"}
