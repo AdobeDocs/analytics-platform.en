@@ -241,23 +241,19 @@ You can select any of the dimensions available by default or defined in the data
 
 ### Metrics
 
-The metrics available to select are: 
+The metrics available to select are:
 
-- any of the metrics available by default,
-  
-- defined in the data view,
-  
-- calculated metrics that are compatible with the Data View that the user has access to.  
+* Any of the metrics available by default;
+* Defined in the data view;
+* Calculated metrics that are compatible with the data view that the user has access to.  
  
 You select a metric by its ID wrapped in a `SUM(metric)` expression just like you would do with other SQL sources.
 
 You can use:
 
-- `SELECT COUNT(*)` or `COUNT(1)` to get the occurrences metric.
-  
-- `SELECT COUNT(DISTINCT dimension)` or `SELECT APPROX_COUNT_DISTINCT(dimension)` to count the approximate distinct values of a dimension. See details in [Counting distinct values](#counting-distinct-values).
-  
-- [Inline Calculations](#inline-calculations) to combine metrics on the fly and/or doing math on them.
+* `SELECT COUNT(*)` or `COUNT(1)` to get the occurrences metric. 
+* `SELECT COUNT(DISTINCT dimension)` or `SELECT APPROX_COUNT_DISTINCT(dimension)` to count the approximate distinct values of a dimension. See details in [Counting distinct values](#counting-distinct-values).
+* [Inline calculations](#inline-calculations) to combine metrics on the fly and/or doing math on them.
 
 #### Counting distinct values
 
@@ -298,19 +294,17 @@ You can apply additional math to metric expressions in your `SELECT` instead of 
 The `timestamp` special column is used to provide the date ranges for the query. A date range can be defined with a `BETWEEN` expression or a pair of `timestamp` `>`, `>=`, `<`, `<=` checks `AND`ed together.
 The `timestamp` is optional and if no full range is provided, defaults are used:
 
-- If only a minimum is provided (`timestamp > X` or ` timestamp >= X`), the range is from X to now.
-  
-- If only a max is provided (`timestamp < X` or `timestamp <= X`), the range is from X-30 days to X.
-  
-- If nothing is provided the range is from now-30 days to now.
+* If only a minimum is provided (`timestamp > X` or ` timestamp >= X`), the range is from X to now. 
+* If only a max is provided (`timestamp < X` or `timestamp <= X`), the range is from X minus 30 days to X. 
+* If nothing is provided, the range is from now minus 30 days to now.
 
-The timestamp range is converted to a date-range global filter in the RankedRequest.
-The timestamp field can also be used in Date-Time functions to parse, truncate the event timestamp.
+The timestamp range is converted to a date range global filter in the RankedRequest.
+The timestamp field can also be used in date/time functions to parse or truncate the event timestamp.
 
 #### Date range
 
 The `daterange` special column works similar to  `timestamp`, however the filtering is limited to full days. The `daterange` is also optional and has the same range defaults as `timestamp`.
-The `daterange` field can also be used in Date-Time Functions to parse, truncate the event date.
+The `daterange` field can also be used in date/time functions to parse or truncate the event date.
 
 The `daterangeName` special column can be used to filter your query using a named date range like `Last Quarter`.
 
