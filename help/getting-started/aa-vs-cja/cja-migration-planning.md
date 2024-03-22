@@ -10,11 +10,11 @@ feature: Basics
 
 ## Step 1 - Choose between Adobe Analytics and Customer Journey Analytics
 
-Whether you choose AA or CJA depends on your current analytics environment and your goals for the future. 
+Whether you choose Adobe Analytics or Customer Journey Analytics depends on your current analytics environment and your goals for the future. 
 
-The decision tree and the decision table below can help you determine if AA meets your organization's needs, or if you should plan to migrate to CJA.  
+The decision tree and the decision table below can help you determine if Adobe Analytics meets your organization's needs, or if you should plan to migrate to Customer Journey Analytics.  
 
-For information about relevant terms when using these resources ("digital-only," "multi-channel," and "next-gen features,") see the Considerations when using the decision tree and table section below. 
+For information about relevant terms when using these resources ("digital-only," "multi-channel," and "next-gen features,") see the [Considerations when using the decision tree and table](#considerations-when-using-the-decision-tree-and-table) section below. 
 
 ### Decision tree
 
@@ -27,7 +27,7 @@ Follow each decision-point in the tree to determine which analytics product best
 Choose the row in the table that best represents your organization in order to determine which analytics product best meets your needs. 
 
 
-| Digital-only vs. multi-channel  | Plans for multi-channel | Next-gen features | Recommended product |
+| Digital-only vs. multi-channel  | Plans for multi-channel | Next-gen features required | Recommended product |
 |---------|----------|---------|---------|
 | Digital-only | No | No | Adobe Analytics |
 | Digital-only | No | Yes | Customer Journey Analytics |
@@ -58,17 +58,17 @@ These features are not available in Adobe Analytics. Some future features will b
 
 If in [Step 1](#step-1---choose-between-adobe-analytics-and-customer-journey-analytics) you determined that you should migrate to Customer Journey Analytics, you now need to determine the optimal migration method.  
 
-The method that you choose to migrate from AA to CJA depends on the following factors: 
+The method that you choose to migrate from Adobe Analytics to Customer Journey Analytics depends on the following factors: 
 
-* Your current AA implementation 
+* Your current Adobe Analytics implementation 
 
 * Your goals for the future 
 
-Use the following sections to determine which CJA migration method best aligns with your organization's current environment and future goals: 
+Use the following sections to determine which Customer Journey Analytics migration method best aligns with your organization's current environment and future goals: 
 
-### Assess the migration options available to you based on your current AA implementation
+### Assess the migration options available to you based on your current Adobe Analytics implementation
 
-There are various options available for migrating from AA to CJA.  
+There are various options available for migrating from Adobe Analytics to Customer Journey Analytics.  
 
 #### Understand migration options  
 
@@ -81,17 +81,17 @@ The following table lists each migration option, its ease of migration, and the 
 | WebSDK (re-implementation)  | Difficult | Most robust |
 | WebSDK (without re-implementation)  | Moderate | Most robust |
 | Russ special | Moderate | Moderately robust |
-| Adobe Source Connector | Easy | Least robust |
+| Analytics Source Connector | Easy | Least robust |
 
-#### Migration options available based on your AA implementation
+#### Migration options available based on your Adobe Analytics implementation
 
-The following table shows which migration options are available to you, based on your current AA implementation: 
+The following table shows which migration options are available to you, based on your current Adobe Analytics implementation: 
 
 |Current Adobe Analytics implementation | Available migration options |
 |---------|----------|
-| AppMeasurement | <ul><li>WebSDK (re-implementation)</li><li>Adobe Source Connector</li></ul>  | 
-| Adobe Anlalytics extension | <ul><li>WebSDK (re-implementation)</li><li>Adobe Source Connector</li><li>Russ special</li></ul> | 
-| WebSDK | <ul><li>WebSDK (without re-implementation)</li>/ul> | 
+| AppMeasurement | <ul><li>WebSDK (re-implementation)</li><li>Analytics Source Connector</li></ul>  | 
+| Adobe Anlalytics extension | <ul><li>WebSDK (re-implementation)</li><li>Analytics Source Connector</li><li>Russ special</li></ul> | 
+| WebSDK | <ul><li>WebSDK (without re-implementation)</li></ul> | 
 
 ### Weigh the pros and cons of the migration methods available to you
 
@@ -100,13 +100,13 @@ The pros and cons of a given migration option differ depending on your current A
 #### AppMeasurement + WebSDK (re-implementation)
 
 
-#### AppMeasurement + Adobe Source Connector
+#### AppMeasurement + Analytics Source Connector
 
 
 #### Adobe Analytics extension + WebSDK (re-implementation)
 
 
-#### Adobe Analytics extension + Adobe Source Connector
+#### Adobe Analytics extension + Analytics Source Connector
 
 
 #### Adobe Analytics extension + Russ special
