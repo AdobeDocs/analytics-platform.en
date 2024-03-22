@@ -27,7 +27,7 @@ Follow each decision-point in the tree to determine which analytics product best
 Choose the row in the table that best represents your organization in order to determine which analytics product best meets your needs. 
 
 
-| Digital-only vs. multi-channel  | Plans for multi-channel | Next-gen features required | Recommended product |
+| Digital-only vs. multi-channel  | Plans for multi-channel | Require next-gen features | Recommended product |
 |---------|----------|---------|---------|
 | Digital-only | No | No | Adobe Analytics |
 | Digital-only | No | Yes | Customer Journey Analytics |
@@ -51,6 +51,8 @@ Customer Journey Analytics includes the following next-generation features:
 * Visitor stitching 
 
 * Combining report suites 
+
+* No limit on dimensions
 
 These features are not available in Adobe Analytics. Some future features will be available only with Customer Journey Analytics. 
 
