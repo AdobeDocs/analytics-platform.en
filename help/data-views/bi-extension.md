@@ -6,6 +6,7 @@ feature: SQL Connector
 hide: yes
 hidefromtoc: yes
 role: Admin
+exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
 ---
 # Customer Journey Analytics BI extension
 
