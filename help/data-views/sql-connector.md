@@ -57,7 +57,7 @@ In Adobe Experience Platform:
 
 1. Select ![Create Query](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **Create query**]**.
 
-1. Select the `"cja"` **[!UICONTROL **Database**]**.
+1. Select the `cja` **[!UICONTROL **Database**]**.
 
 1. To execute the query, type your SQL statement and select the ![Play](assets/Smock_Play_18_N.svg) button (or press `[SHIFT]` + `[ENTER]`).
 
@@ -72,7 +72,7 @@ In Adobe Experience Platform:
 
    1. Select **[!UICONTROL **Credentials**]** from the top bar.
 
-   1. Select the `"cja"` **[!UICONTROL **Database**]**.
+   1. Select the `cja` **[!UICONTROL **Database**]**.
 
    1. To copy the command string, use ![Copy](assets/Smock_Copy_18_N.svg) in the **[!UICONTROL **PSQL command**]** section.
 
@@ -97,7 +97,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
    1. Select **[!UICONTROL **Credentials**]** from the top bar.
 
-   1. Select the `"cja"` **[!UICONTROL **Database**]**.
+   1. Select the `cja` **[!UICONTROL **Database**]**.
 
    1. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Power BI.
 
@@ -140,7 +140,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
    1. Select **[!UICONTROL **Credentials**]** from the top bar.
 
-   1. Select the "cja" **[!UICONTROL **Database**]**.
+   1. Select the ` cja` **[!UICONTROL **Database**]**.
 
    1. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Tableau.
 
@@ -228,7 +228,7 @@ See table below for examples of the SQL you can use.
 | Multi-dimension<br/>breakdowns<br/>and top-distincts | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY 1, 2<br/>ORDER BY 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>FROM dv1</pre> |
 | Subselect:<br/>Filter additional<br/>results | <pre>SELECT dim1, m1<br/>FROM (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'</br>  GROUP BY dim1<br/>)<br/>WHERE dim1 in ('A', 'B')</pre> |
 | Subselect:<br/>Querying across<br/>data views | <pre>SELECT key, SUM(m1) AS total<br/>FROM (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  FROM dv1<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  GROUP BY dim1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  FROM dv2<br/>  WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  GROUP BY dim2<br/>GROUP BY key<br/>ORDER BY total</pre> |
-| Subselect: <br/>Layered source, <br/>filtering, <br/>and aggregation | Layered using subselects:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  SELECT \_.dim1,\_.m1<br/>  FROM (<br/>    SELECT \* FROM dv1<br/>    WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  ) \_<br/>  WHERE \_.dim1 in ('A', 'B', 'C')<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>Layers using CTE WITH:<br/><pre>WITH rows AS (<br/>  WITH \_ AS (<br/>    SELECT * FROM data_ares<br/>    WHERE \`timestamp\` BETWEEN '2021-01-01' AND '2021-02-01'<br/>  )<br/>  SELECT _.item, _.units FROM _<br/>  WHERE _.item IS NOT NULL<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>FROM rows WHERE rows.item in ('A', 'B', 'C')<br/>GROUP BY rows.item</pre> |
+| Subselect: <br/>Layered source, <br/>filtering, <br/>and aggregation | Layered using subselects:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>FROM (<br/>  SELECT \_.dim1,\_.m1<br/>  FROM (<br/>    SELECT \* FROM dv1<br/>    WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>  ) \_<br/>  WHERE \_.dim1 in ('A', 'B', 'C')<br/>) rows<br/>GROUP BY 1<br/>ORDER BY total</pre><br/>Layers using CTE WITH:<br/><pre>WITH rows AS (<br/>  WITH \_ AS (<br/>    SELECT * FROM data_ares<br/>    WHERE \`timestamp\` BETWEEN '2021-01-01' AND '2021-02-01'<br/>  )<br/>  SELECT \_.item, \_.units FROM \_<br/>  WHERE \_.item IS NOT NULL<br/>)<br/>SELECT rows.item, SUM(rows.units) AS units<br/>FROM rows WHERE rows.item in ('A', 'B', 'C')<br/>GROUP BY rows.item</pre> |
 | Selects where the<br/>metrics come before<br/> or are mixed with<br/>the dimensions | <pre>SELECT SUM(metric1) AS m1, dim1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY 2</pre> |
 
 {style="table-layout:auto"}
