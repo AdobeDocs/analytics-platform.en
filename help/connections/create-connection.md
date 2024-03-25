@@ -185,6 +185,6 @@ This calculation is done for every dataset in the connection.
 
 When creating a connection, you can add large datasets for lookup purposes. For example, a dataset representing a product catalog so descriptive product information can be looked up when buiding reports and visualizations. Such a large lookup dataset can exceed the maximum of 10 million unique lookups currently implemented as as guardrail, resulting in additional data being skipped.
 
-You can request algorithmic pruning of such a large lookup dataset. This pruning will only load data in the lookup dataset for which keys are available in the event dataset part of your connection. The reference count used in the algorithm goes back to 90 days and refreshes once every week. 
+You can request an algorithmic pruning of a large lookup dataset. This algorithmic pruning only keeps data in the lookup dataset that matches the keys in your event dataset. This way, you don't need to load the entire unpruned lookup dataset. Old or less frequently used items are removed, which might slightly affect reports but brings significant benefits. The algorithm looks back 90 days and updates weekly.
 
-Contact your Adobe representative for further information.
+Contact your Adobe support team for further information and to enable this capability.
