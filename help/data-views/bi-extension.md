@@ -5,7 +5,6 @@ solution: Customer Journey Analytics
 feature: SQL Connector
 hide: yes
 hidefromtoc: yes
-exl-id: 1827a637-6c0f-43f2-862a-928089340d30
 role: Admin
 ---
 # Customer Journey Analytics BI extension
