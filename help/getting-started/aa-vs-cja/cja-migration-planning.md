@@ -8,59 +8,43 @@ feature: Basics
 ---
 # Migration planning guide: Adobe Analytics to Customer Journey Analytics
 
-## Step 1 - Choose between Adobe Analytics and Customer Journey Analytics
+## Step 1 - Understand the benefits of Customer Journey Analytics
 
-Whether you choose Adobe Analytics or Customer Journey Analytics depends on your current analytics environment and your goals for the future. 
+Customer Journey Analytics is the next generation of analytics. It allows multi-channel data collection (both online and offline data), combined with powerful report-time processing functionality (through the definition of components and derived fields in data views). 
 
-The decision tree and the decision table below can help you determine if Adobe Analytics meets your organization's needs, or if you should plan to migrate to Customer Journey Analytics.  
+As you plan your migration, learn how Customer Journey Analytics can benefit your organization. Following are some of the key benefits: (For a comprehensive list, as well as more information about each of these key features, see [Features available only in Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md#adobe-customer-journey-analytics-features-not-available-in-adobe-analytics).) 
 
-For information about relevant terms when using these resources ("digital-only," "multi-channel," and "next-gen features,") see the [Considerations when using the decision tree and table](#considerations-when-using-the-decision-tree-and-table) section below. 
+* Multi-channel reporting
 
-### Decision tree
+  Customer Journey Analytics is combined with Experience Platform's ability to hold all kinds of data schemas and types. Collect and report on data from multiple channels, such as digital (Web), Point-of-Sale systems, mobile, CRM systems, and more.
 
-Follow each decision-point in the tree to determine which analytics product best meets your needs. 
+* Report-time transformations in data views
 
-![CJA migration decision tree](assets/cja-migration-decision-tree.png)
+  Data views in Customer Journey Analytics allow you to further interpret data from a connection. You can alter or remove data without changing your implementation, use substrings to manipulate dimensions, create metrics from any value, filter subevents, or use derived fields. All of these transformations are non-destructive. 
 
-### Decision table
+  For more information, see [Customer Journey Analytics data views](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md#customer-journey-analytics-data-views)
 
-Choose the row in the table that best represents your organization in order to determine which analytics product best meets your needs. 
+* Derived fields
 
+  Derived fields allow for report-time transformations to your data. Data can be combined, corrected, or created on the fly and applies retroactively to all reporting.
 
-| Digital-only vs. multi-channel  | Plans for multi-channel | Require next-gen features | Recommended product |
-|---------|----------|---------|---------|
-| Digital-only | No | No | Adobe Analytics |
-| Digital-only | No | Yes | Customer Journey Analytics |
-| Digital-only | Yes | Yes or No | Customer Journey Analytics |
-| Multi-channel | N/A | Yes or No | Customer Journey Analytics |
+* Transformation apply to historical and new data
 
-### Considerations when using the decision tree and table
+  Data View manipulation can be applied to both historical and new data in a non-destructive manner. For more information, see [Data Views](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md).
 
-#### Digital-only vs. multi-channel
+* Combining Connections (report suites in Adobe Analytics)
 
-Customer Journey Analytics can collect and report on data from multiple channels, such as digital (Web), Point-of-Sale systems, mobile, CRM systems, and more.  
+  You can combine data from multiple Connections (report suites in Adobe Analytics) as if they were a single Connection.
 
-Adobe Analytics allows you to collect and report on digital (Web) data only.  
+* Unlimited customer dimensions and metrics
 
-#### Next-gen features
-
-Customer Journey Analytics includes the following next-generation features: 
-
-* Derived fields 
-
-* Visitor stitching 
-
-* Combining report suites 
-
-* No limit on dimensions
-
-These features are not available in Adobe Analytics. Some future features will be available only with Customer Journey Analytics. 
+  Values can be numeric, text, objects, lists, or mixtures of all. Dimensions can be nested or hierarchical.
 
 ## Step 2: Choose your Customer Journey Analytics migration method
 
-If in [Step 1](#step-1---choose-between-adobe-analytics-and-customer-journey-analytics) you determined that you should migrate to Customer Journey Analytics, you now need to determine the optimal migration method.  
+After you decide to migrate to Customer Journey Analytics, you need to determine the optimal migration method.  
 
-The method that you choose to migrate from Adobe Analytics to Customer Journey Analytics depends on the following factors: 
+The method that you choose for migrating from Adobe Analytics to Customer Journey Analytics depends on the following factors: 
 
 * Your current Adobe Analytics implementation 
 
@@ -68,50 +52,69 @@ The method that you choose to migrate from Adobe Analytics to Customer Journey A
 
 Use the following sections to determine which Customer Journey Analytics migration method best aligns with your organization's current environment and future goals: 
 
-### Assess the migration options available to you based on your current Adobe Analytics implementation
+### Assess the migration methods available to you based on your current Adobe Analytics implementation
 
 There are various options available for migrating from Adobe Analytics to Customer Journey Analytics.  
 
-#### Understand migration options  
+#### Understand migration methods  
 
-In general, each migration option differs in the level of difficulty required to execute the migration, as well as in the end result achieved after the migration completes.  
+In general, each migration method differs in the level of difficulty required to execute the migration, as well as in the end result achieved after the migration completes.  
 
-The following table lists each migration option, its ease of migration, and the robustness of the migration based on the end result that it achieves: 
+The following table lists each migration method, its ease of migration, and the robustness of the migration based on the end result that it achieves: 
 
 | Migration method | Ease of migration | End result |
 |---------|----------|---------|
 | WebSDK (re-implementation)  | Difficult | Most robust |
 | WebSDK (without re-implementation)  | Moderate | Most robust |
-| Russ special | Moderate | Moderately robust |
+| Adoption acceleration project | Moderate | Moderately robust |
 | Analytics Source Connector | Easy | Least robust |
 
-#### Migration options available based on your Adobe Analytics implementation
+Use the following diagram to help visualize where each migration method falls on the spectrum in terms of ease of migration, as well as the end result that each achieves:
 
-The following table shows which migration options are available to you, based on your current Adobe Analytics implementation: 
+![cja migration methods](assets/cja-migration-methods.png)
 
-|Current Adobe Analytics implementation | Available migration options |
+#### Migration methods available based on your Adobe Analytics implementation
+
+Not all migration methods are available for each type of Adobe Analytics implementation. The following table shows which migration methods are available to you, based on your current Adobe Analytics implementation: 
+
+|Current Adobe Analytics implementation | Available migration methods |
 |---------|----------|
 | AppMeasurement | <ul><li>WebSDK (re-implementation)</li><li>Analytics Source Connector</li></ul>  | 
-| Adobe Anlalytics extension | <ul><li>WebSDK (re-implementation)</li><li>Analytics Source Connector</li><li>Russ special</li></ul> | 
+| Adobe Anlalytics extension | <ul><li>WebSDK (re-implementation)</li><li>Analytics Source Connector</li><li>Adoption acceleration project</li></ul> | 
 | WebSDK | <ul><li>WebSDK (without re-implementation)</li></ul> | 
 
 ### Weigh the pros and cons of the migration methods available to you
 
-The pros and cons of a given migration option differ depending on your current Adobe Analytics implementation. Review the information below to determine which migration option is right for you. 
+The pros and cons of a given migration method differ depending on your current Adobe Analytics implementation. 
 
-#### AppMeasurement + WebSDK (re-implementation)
+Before you use the information below to determine which migration method is right for you, review the information in [Understand migration methods](#understand-migration-methods) if you haven't already.
 
+#### AppMeasurement 
 
-#### AppMeasurement + Analytics Source Connector
+AppMeasurement is the oldest supported form for Adobe Analytics implementations. Because of this, the methods available for migrating to Customer Journey Analytics are more limited.
 
+The following table shows the migration methods available for organizations who have implemented Adobe Analytics with AppMeasurement:
 
-#### Adobe Analytics extension + WebSDK (re-implementation)
+| | Pros | Cons |
+|---------|----------|---------|
+| **WebSDK (re-implementation)** |<ul><li>Highly performant reporting (low latency) because the infrastructure is built around real-time data </li><li>Future-proof (will receive all the latest features and functionality)</li><li>Consolidate tags between other Experience Cloud products (AJO, RTCDP, etc.)</li></ul> | <ul><li>Most time-consuming and demanding migration method</li><li>Must re-create the full schema in XDM</li></ul> |
+| **Analytics Source Connector** | <ul><li>Least time-consuming and demanding migration method: Data is migrated to Customer Journey Analytics quickly with minimal investment </li></ul> | <ul><li>Difficult to move to WebSDK in the future</li><li>Uses the Analytics Experience Event field group in your schema</li><li>This field group adds many Adobe Analytics events that are not needed in your Customer Journey Analytics schema.  This can lead to a more cluttered, complex schema than what is otherwise needed for Customer Journey Analytics.</li><li>Highest level of latency across all implementation methods</li><li>Data cannot be shared with other Adobe Experience Platform applications; it is constrained to Customer Journey Analytics only</li></ul> |
 
+#### Adobe Analytics extension
 
-#### Adobe Analytics extension + Analytics Source Connector
+The following table shows the migration methods available for organizations who have implemented Adobe Analytics with the Adobe Analytics extension:
 
+| | Pros | Cons |
+|---------|----------|---------|
+| **WebSDK (re-implementation)** |<ul><li>Highly performant reporting (low latency) because the infrastructure is built around real-time data </li><li>Future-proof (will receive all the latest features and functionality)</li><li>Consolidate tags between other Experience Cloud products (AJO, RTCDP, etc.)</li></ul> | <ul><li>Most time-consuming and demanding migration method</li><li>Must re-create the full schema in XDM</li></ul> |
+| **Analytics Source Connector** | <ul><li>Least time-consuming and demanding migration method: Data is migrated to Customer Journey Analytics quickly with minimal investment </li></ul> | <ul><li>Difficult to move to WebSDK in the future</li><li>Uses the Analytics Experience Event field group in your schema</li><li>This field group adds many Adobe Analytics events that are not needed in your Customer Journey Analytics schema.  This can lead to a more cluttered, complex schema than what is otherwise needed for Customer Journey Analytics.</li><li>Highest level of latency across all implementation methods</li><li>Data cannot be shared with other Adobe Experience Platform applications; it is constrained to Customer Journey Analytics only</li></ul> |
+| **Adoption acceleration project** | <ul><li>Provides a good middle ground between a WebSDK re-implementation and using the Analytics Source Connector. </li><li>Quickest method for migrating to the Customer Journey Analytics WebSDK.</li></ul> |  |
 
-#### Adobe Analytics extension + Russ special
+#### Adobe Analytics WebSDK
 
+The following table shows the migration methods available for organizations who have implemented Adobe Analytics with the WebSDK:
 
-#### WebSDK + WebSDK (without re-implementation)
+| | Pros | Cons |
+|---------|----------|---------|
+| **WebSDK (without re-implementation)** |<ul><li>The ideal migration method; available only with Adobe Analytics WebSDK implementations</li><li>Infrastructure is built around real-time data; this equates to highly performant reporting with low latency</li><li>Future-proof (will receive all the latest features and functionality)</li><li>Consolidate tags between other Experience Cloud products (AJO, RTCDP, etc.)</li></ul> | Slightly more difficult migration than the Analytics Source Connector, but with a much more robust end result. |
+| **Analytics Source Connector** | <ul><li>Least time-consuming and demanding migration method: Data is migrated to Customer Journey Analytics quickly with minimal investment </li></ul> | <ul><li>Difficult to move to WebSDK in the future</li><li>Uses the Analytics Experience Event field group in your schema</li><li>This field group adds many Adobe Analytics events that are not needed in your Customer Journey Analytics schema.  This can lead to a more cluttered, complex schema than what is otherwise needed for Customer Journey Analytics.</li><li>Highest level of latency across all implementation methods</li><li>Data cannot be shared with other Adobe Experience Platform applications; it is constrained to Customer Journey Analytics only</li></ul> |
