@@ -81,7 +81,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Feature | Notes |
 | --- | --- |
 | Panels | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. The Segment Comparison and Analytics for Target (A4T) panels are not supported. |
-| Analytics for Target (A4T) | Partial support is provided through fields in the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Support for A4T-friendly names on Target Activities and Experiences is planned.|
+| Analytics for Target (A4T) | Currently in beta. Partial support is provided through fields in the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Support for A4T-friendly names on Target Activities and Experiences is planned.|
 
 {style="table-layout:auto"}
 
@@ -109,7 +109,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 
 {style="table-layout:auto"}
 
-## Never supported {#never}
+## Will never be supported {#never}
 
 * People metric using Cross-Device Coop
 
