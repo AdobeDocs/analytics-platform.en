@@ -91,7 +91,7 @@ Before you use the information below to determine which migration method is righ
 
 #### AppMeasurement 
 
-AppMeasurement is the oldest supported form for Adobe Analytics implementations. Because of this, the methods available for migrating to Customer Journey Analytics are more limited.
+AppMeasurement is the oldest supported Adobe Analytics implementation. Because of this, the methods available for migrating to Customer Journey Analytics from this implementation type are more limited.
 
 The following table shows the migration methods available for organizations who have implemented Adobe Analytics with AppMeasurement:
 
@@ -119,13 +119,22 @@ The following table shows the migration methods available for organizations who 
 | **WebSDK (without re-implementation)** |<ul><li>The ideal migration method; available only with Adobe Analytics WebSDK implementations</li><li>Infrastructure is built around real-time data; this equates to highly performant reporting with low latency</li><li>Future-proof (will receive all the latest features and functionality)</li><li>Consolidate tags between other Experience Cloud products (AJO, RTCDP, etc.)</li></ul> | Slightly more difficult migration than the Analytics Source Connector, but with a much more robust end result. |
 | **Analytics Source Connector** | <ul><li>Least time-consuming and demanding migration method: Data is migrated to Customer Journey Analytics quickly with minimal investment </li></ul> | <ul><li>Difficult to move to WebSDK in the future</li><li>Uses the Analytics Experience Event field group in your schema</li><li>This field group adds many Adobe Analytics events that are not needed in your Customer Journey Analytics schema.  This can lead to a more cluttered, complex schema than what is otherwise needed for Customer Journey Analytics.</li><li>Highest level of latency across all implementation methods</li><li>Data cannot be shared with other Adobe Experience Platform applications; it is constrained to Customer Journey Analytics only</li></ul> |
 
-## Step 3: Plan data mapping
+## Step 3: Plan data mapping to the XDM schema
+
+Working with your data team, identify your organization's ideal schema design for Customer Journey Analytics, then determine how you will map eVars and Props to XDM. 
+
 
 
 ## Step 4: Plan user onboarding
 
 
-## Step 5: Update porting applications
+## Step 5: Migrate projects and components
+
+The Component migration area in Adobe Analytics allows you to migrate projects and components from Adobe Analytics to Customer Journey Analytics. 
+
+For more information, see [Prepare to migrate components and projects from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
+
+## Step 6: Update porting applications
 
 * Port API usage to CJA reporting API (new endpoint, same format)
 
@@ -140,10 +149,3 @@ The following table shows the migration methods available for organizations who 
   * CJA BI Extension (for direct integration with Power BI and Tableau)​
 
   * AEP Query Service (for direct SQL access to data in AEP).​
-
-
-## Step 6: Migrate projects and components
-
-The Component migration area in Adobe Analytics allows you to migrate projects and components from Adobe Analytics to Customer Journey Analytics. 
-
-For more information, see [Prepare to migrate components and projects from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
