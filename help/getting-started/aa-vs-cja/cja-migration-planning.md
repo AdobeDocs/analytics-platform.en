@@ -60,16 +60,16 @@ There are various options available for migrating from Adobe Analytics to Custom
 
 In general, each migration method differs in the level of difficulty required to execute the migration, as well as in the end result achieved after the migration completes.  
 
-The following table lists each migration method, its ease of migration, and the robustness of the migration based on the end result that it achieves: 
+The following table lists each migration method, its level of effort, and the robustness of the migration based on the end result that it achieves: 
 
-| Migration method | Ease of migration | End result |
+| Migration method | Level of effort | Long-term viability |
 |---------|----------|---------|
-| WebSDK (re-implementation)  | Difficult | Most robust |
-| WebSDK (without re-implementation)  | Moderate | Most robust |
-| Adoption acceleration project | Moderate | Moderately robust |
-| Analytics Source Connector | Easy | Least robust |
+| WebSDK (re-implementation)  | High | High |
+| WebSDK (without re-implementation)  | Moderate | High |
+| Adoption acceleration project | Moderate | Moderate |
+| Analytics Source Connector | Low | Low |
 
-Use the following diagram to help visualize where each migration method falls on the spectrum in terms of ease of migration, as well as the end result that each achieves:
+Use the following diagram to help visualize where each migration method falls on the spectrum in terms of level of effort, as well as the end result that each achieves:
 
 ![cja migration methods](assets/cja-migration-methods.png)
 
@@ -80,7 +80,7 @@ Not all migration methods are available for each type of Adobe Analytics impleme
 |Current Adobe Analytics implementation | Available migration methods |
 |---------|----------|
 | AppMeasurement | <ul><li>WebSDK (re-implementation)</li><li>Analytics Source Connector</li></ul>  | 
-| Adobe Anlalytics extension | <ul><li>WebSDK (re-implementation)</li><li>Analytics Source Connector</li><li>Adoption acceleration project</li></ul> | 
+| Adobe Analytics extension | <ul><li>WebSDK (re-implementation)</li><li>Analytics Source Connector</li><li>Adoption acceleration project</li></ul> | 
 | WebSDK | <ul><li>WebSDK (without re-implementation)</li></ul> | 
 
 ### Weigh the pros and cons of the migration methods available to you
@@ -116,25 +116,41 @@ The following table shows the migration methods available for organizations who 
 
 | | Pros | Cons |
 |---------|----------|---------|
-| **WebSDK (without re-implementation)** |<ul><li>The ideal migration method; available only with Adobe Analytics WebSDK implementations</li><li>Infrastructure is built around real-time data; this equates to highly performant reporting with low latency</li><li>Future-proof (will receive all the latest features and functionality)</li><li>Consolidate tags for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, etc.)</li></ul> | Slightly more difficult migration than the Analytics Source Connector, but with a much more robust end result. |
-| **Analytics Source Connector** | <ul><li>Least time-consuming and demanding migration method: Data is migrated to Customer Journey Analytics quickly with minimal investment </li></ul> | <ul><li>Difficult to move to WebSDK in the future</li><li>Uses the Analytics Experience Event field group in your schema</li><li>This field group adds many Adobe Analytics events that are not needed in your Customer Journey Analytics schema.  This can lead to a more cluttered, complex schema than what is otherwise needed for Customer Journey Analytics.</li><li>Highest level of [latency](/help/admin/guardrails.md#latencies) across all implementation methods</li><li>Data cannot be shared with other Adobe Experience Platform applications; it is constrained to Customer Journey Analytics only</li></ul> |
+| **WebSDK (without re-implementation)** |<ul><li>The ideal migration method; available only with Adobe Analytics WebSDK implementations</li><li>Infrastructure is built around real-time data; this equates to highly performant reporting with low latency</li><li>Future-proof (will receive all the latest features and functionality)</li><li>Consolidate tags for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, etc.)</li></ul> | None |
 
-## Step 3: Plan data mapping to the XDM schema
+
+## Step 3: Determine how to retain historical data
+
+The following options are available for handling historical data when moving from Adobe Analytics to Customer Journey Analytics: 
+
+* Utilize the Adobe Source Connector
+
+  Regardless of the migration method that you choose, you can use the Adobe Source Connector to retain historical Adobe Analytics data. For example, even if you migrate using the WebSDK.
+  
+  You can use the Adobe Source Connector to retain historical data in the following ways:
+  
+  * Bring historical data to its own dedicated place, separate from your current data.
+
+  * Map it in a way that allows you to get historical data tied to your new data. <!-- explain -->
+
+* Maintain your current Adobe Analytics implementation alongside your new Customer Journey Analytics implementation for a specific time frame (for example, 1 year). Turn off the Adobe Analytics implementation after you have sufficient data in Customer Journey Analytics. 
+
+## Step 4: Plan data mapping to the XDM schema
 
 Working with your data team, identify your organization's ideal schema design for Customer Journey Analytics, then determine how you will map eVars and Props to XDM. 
 
 
 
-## Step 4: Plan user onboarding
+## Step 5: Plan user onboarding
 
 
-## Step 5: Migrate projects and components
+## Step 6: Migrate projects and components
 
 The Component migration area in Adobe Analytics allows you to migrate projects and components from Adobe Analytics to Customer Journey Analytics. 
 
 For more information, see [Prepare to migrate components and projects from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
 
-## Step 6: Update porting applications
+## Step 7: Update porting applications
 
 * Port API usage to CJA reporting API (new endpoint, same format)
 
