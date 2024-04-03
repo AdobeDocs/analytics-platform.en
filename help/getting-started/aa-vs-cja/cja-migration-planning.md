@@ -69,6 +69,8 @@ The following table lists each migration method, its level of effort, and its lo
 | Adoption acceleration project | Moderate | Moderate |
 | Analytics Source Connector | Low | Low |
 
+{style="table-layout:auto"}
+
 Use the following diagram to help visualize where each migration method falls on the spectrum in terms of level of effort, as well as the long-term viability that each achieves:
 
 ![cja migration methods](assets/cja-migration-methods.png)
@@ -82,6 +84,8 @@ Not all migration methods are available for each type of Adobe Analytics impleme
 | AppMeasurement | <ul><li>WebSDK (re-implementation)</li><li>Analytics Source Connector</li></ul>  | 
 | Adobe Analytics extension | <ul><li>WebSDK (re-implementation)</li><li>Analytics Source Connector</li><li>Adoption acceleration project</li></ul> | 
 | WebSDK | <ul><li>WebSDK (without re-implementation)</li></ul> | 
+
+{style="table-layout:auto"}
 
 ### Weigh the pros and cons of the migration methods available to you
 
@@ -100,6 +104,8 @@ The following table shows the migration methods available for organizations who 
 | **WebSDK (re-implementation)** |<ul><li>Highly performant reporting (low latency) because the infrastructure is built around real-time data </li><li>Future-proof (will receive all the latest features and functionality)</li><li>Consolidate tags for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, etc.)</li></ul> | <ul><li>Most time-consuming and demanding migration method</li><li>Must re-create the full schema in XDM</li></ul> |
 | **Analytics Source Connector** | <ul><li>Least time-consuming and demanding migration method: Data is migrated to Customer Journey Analytics quickly with minimal investment </li></ul> | <ul><li>Difficult to move to WebSDK in the future</li><li>Uses the Analytics Experience Event field group in your schema</li><li>This field group adds many Adobe Analytics events that are not needed in your Customer Journey Analytics schema.  This can lead to a more cluttered, complex schema than what is otherwise needed for Customer Journey Analytics.</li><li>Highest level of [latency](/help/admin/guardrails.md#latencies) across all implementation methods</li><li>Data cannot be shared with other Adobe Experience Platform applications; it is constrained to Customer Journey Analytics only</li></ul> |
 
+{style="table-layout:auto"}
+
 #### Adobe Analytics extension
 
 The following table shows the migration methods available for organizations who have implemented Adobe Analytics with the Adobe Analytics extension:
@@ -110,6 +116,8 @@ The following table shows the migration methods available for organizations who 
 | **Analytics Source Connector** | <ul><li>Least time-consuming and demanding migration method: Data is migrated to Customer Journey Analytics quickly with minimal investment </li></ul> | <ul><li>Difficult to move to WebSDK in the future</li><li>Uses the Analytics Experience Event field group in your schema</li><li>This field group adds many Adobe Analytics events that are not needed in your Customer Journey Analytics schema.  This can lead to a more cluttered, complex schema than what is otherwise needed for Customer Journey Analytics.</li><li>Highest level of [latency](/help/admin/guardrails.md#latencies) across all implementation methods</li><li>Data cannot be shared with other Adobe Experience Platform applications; it is constrained to Customer Journey Analytics only</li></ul> |
 | **Adoption acceleration project** | <ul><li>Provides a good middle ground between a WebSDK re-implementation and using the Analytics Source Connector. </li><li>Quickest method for migrating to the Customer Journey Analytics WebSDK.</li></ul> |  |
 
+{style="table-layout:auto"}
+
 #### Adobe Analytics WebSDK
 
 The following table shows the migration methods available for organizations who have implemented Adobe Analytics with the WebSDK:
@@ -117,6 +125,8 @@ The following table shows the migration methods available for organizations who 
 | Migration method | Pros | Cons |
 |---------|----------|---------|
 | **WebSDK (without re-implementation)** |<ul><li>The ideal migration method; available only with Adobe Analytics WebSDK implementations</li><li>Infrastructure is built around real-time data; this equates to highly performant reporting with low latency</li><li>Future-proof (will receive all the latest features and functionality)</li><li>Consolidate tags for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, etc.)</li></ul> | None |
+
+{style="table-layout:auto"}
 
 
 ## Step 3: Determine how to retain historical data
