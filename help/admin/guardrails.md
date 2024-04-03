@@ -115,7 +115,7 @@ See also Experience Platform [Real-time Customer Data Platform Guardrails](https
 |---|--:|---|---|
 | Fields | 10,000 | System-enforced Guardrail  | Maximum number of properties or fields per row in a dataset. | 
 | Unique Strings | 10 million | System-enforced Guardrail  | Maximum number of unique keys per lookup dataset. | 
-| Rows | 1 million | System-enforced Guardrail  | Maximum number of rows per unique person ID within a connection. | 
+| Rows | 1 million | System-enforced Guardrail  | Maximum number of rows per unique person ID in a given month within a connection. | 
 | Row Size | 2 | Performance Guardrail / System-enforced Guardrail | Average size in kilobytes per row of data ingested into Customer Journey Analytics (soft limit). A static limit for row size is determined by Guardrails for data ingestion in Experience Platform. | 
 
 {style="table-layout:auto"}
