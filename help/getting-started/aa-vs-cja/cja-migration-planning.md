@@ -144,24 +144,29 @@ Working with your data team, identify your organization's ideal schema design fo
 ## Step 5: Plan user onboarding
 
 
-## Step 6: Migrate projects and components
+
+## Step 6: Port the reporting API usage 
+
+Port the reporting API usage from the Adobe Analytics reporting API to the Customer Journey Analytics reporting API. 
+
+The Customer Journey Analytics reporting API is the same format, but a different endpoint.
+
+## Step 7: Plan Data Feeds and Data Warehouse replacements
+
+Similar to Data Feeds and Data Warehouse in Adobe Analytics, there are various ways to export data from Customer Journey Analytics. 
+
+If you currently use Data Feeds or Data Warehouse, use the following table to learn about the export options available in Customer Journey Analytics:
+
+
+| Adobe Analytics | Customer Journey Analytics | 
+|---------|----------|
+| Data Feeds | Update your Data Feeds use cases to use any combination of alternative export methods that are available in Customer Journey Analytics: <ul><li>Raw dataset exports from AEP to public cloud​</li><li>[Full Table Export](/help/analysis-workspace/export/export-cloud.md) (use person ID and/or timestamp for audience or event level exports)​</li><li>CJA BI Extension (for direct integration with Power BI and Tableau)​</li><li>AEP Query Service (for direct SQL access to data in AEP)</li></ul> | 
+| Data Warehouse | Change Adobe Analytics Data Warehouse exports to use [Full Table Export](/help/analysis-workspace/export/export-cloud.md) in Customer Journey Analytics.<p>Customer Journey Analytics Full Table Export is the evolution of Data Warehouse reports in Adobe Analytics, with many new, often-requested features that are not available in Data Warehouse today.</p> | 
+
+{style="table-layout:auto"}
+
+## Step 7: Migrate projects and components
 
 The Component migration area in Adobe Analytics allows you to migrate projects and components from Adobe Analytics to Customer Journey Analytics. 
 
 For more information, see [Prepare to migrate components and projects from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
-
-## Step 7: Update porting applications
-
-* Port API usage to CJA reporting API (new endpoint, same format)
-
-* Change Adobe Analytics Data Warehouse exports to use Full Table Export in Customer Journey Analytics
-
-* Update Data Feeds use cases to alternatives: ​
-
-  * Raw dataset exports from AEP to public cloud​
-
-  * CJA Full Table Export (use person ID and/or timestamp for audience or event level exports)​
-
-  * CJA BI Extension (for direct integration with Power BI and Tableau)​
-
-  * AEP Query Service (for direct SQL access to data in AEP).​
