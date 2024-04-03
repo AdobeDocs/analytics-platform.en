@@ -6,7 +6,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 ---
-# Migration planning guide: Adobe Analytics to Customer Journey Analytics
+# Migration guide: Plan your migration from Adobe Analytics to Customer Journey Analytics
 
 ## Step 1 - Understand the benefits of Customer Journey Analytics
 
@@ -24,7 +24,7 @@ As you plan your migration, learn how Customer Journey Analytics can benefit you
 
   For more information, see [Customer Journey Analytics data views](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md#customer-journey-analytics-data-views)
 
-* Transformation apply to historical and new data
+* Transformations apply to historical and new data
 
   Data View manipulation can be applied to both historical and new data in a non-destructive manner. For more information, see [Data Views](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md).
 
@@ -101,7 +101,7 @@ The following table shows the migration methods available for organizations who 
 
 | Migration method | Pros | Cons |
 |---------|----------|---------|
-| **WebSDK (re-implementation)** |<ul><li>Highly performant reporting (low latency) because the infrastructure is built around real-time data </li><li>Future-proof (will receive all the latest features and functionality)</li><li>Consolidate tags for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, etc.)</li></ul> | <ul><li>Most time-consuming and demanding migration method</li><li>Must re-create the full schema in XDM</li></ul> |
+| **WebSDK (re-implementation)** |<ul><li>Highly performant reporting and data availability because Adobe Experience Platform is built to power [real-time personalization use cases](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>Future-proof (will receive all the latest features and functionality)</li><li>Consolidate tags for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, etc.)</li><li>Flexible schema to define any fields you need</li><li>Not reliant on Adobe Analytics nomenclature (prop, eVar, event, etc.)</li><li>No character limit concerns (100 chars for props)</li><li>[First-party device IDs](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) for enhanced accuracy of visitor identification</li></ul> | <ul><li>Most time-consuming and demanding migration method</li><li>Must re-create the full schema in XDM</li></ul> |
 | **Analytics Source Connector** | <ul><li>Least time-consuming and demanding migration method: Data is migrated to Customer Journey Analytics quickly with minimal investment </li></ul> | <ul><li>Difficult to move to WebSDK in the future</li><li>Uses the Analytics Experience Event field group in your schema</li><li>This field group adds many Adobe Analytics events that are not needed in your Customer Journey Analytics schema.  This can lead to a more cluttered, complex schema than what is otherwise needed for Customer Journey Analytics.</li><li>Highest level of [latency](/help/admin/guardrails.md#latencies) across all implementation methods</li><li>Data cannot be shared with other Adobe Experience Platform applications; it is constrained to Customer Journey Analytics only</li></ul> |
 
 {style="table-layout:auto"}
@@ -112,7 +112,7 @@ The following table shows the migration methods available for organizations who 
 
 | Migration method | Pros | Cons |
 |---------|----------|---------|
-| **WebSDK (re-implementation)** |<ul><li>Highly performant reporting (low latency) because the infrastructure is built around real-time data </li><li>Future-proof (will receive all the latest features and functionality)</li><li>Consolidate tags for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, etc.)</li></ul> | <ul><li>Most time-consuming and demanding migration method</li><li>Must re-create the full schema in XDM</li></ul> |
+| **WebSDK (re-implementation)** |<ul><li>Highly performant reporting and data availability because Adobe Experience Platform is built to power [real-time personalization use cases](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>Future-proof (will receive all the latest features and functionality)</li><li>Consolidate tags for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, etc.)</li><li>Flexible schema to define any fields you need</li><li>Not reliant on Adobe Analytics nomenclature (prop, eVar, event, etc.)</li><li>No character limit concerns (100 chars for props)</li><li>[First-party device IDs](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) for enhanced accuracy of visitor identification</li></ul> | <ul><li>Most time-consuming and demanding migration method</li><li>Must re-create the full schema in XDM</li></ul> |
 | **Analytics Source Connector** | <ul><li>Least time-consuming and demanding migration method: Data is migrated to Customer Journey Analytics quickly with minimal investment </li></ul> | <ul><li>Difficult to move to WebSDK in the future</li><li>Uses the Analytics Experience Event field group in your schema</li><li>This field group adds many Adobe Analytics events that are not needed in your Customer Journey Analytics schema.  This can lead to a more cluttered, complex schema than what is otherwise needed for Customer Journey Analytics.</li><li>Highest level of [latency](/help/admin/guardrails.md#latencies) across all implementation methods</li><li>Data cannot be shared with other Adobe Experience Platform applications; it is constrained to Customer Journey Analytics only</li></ul> |
 | **Adoption acceleration project** | <ul><li>Provides a good middle ground between a WebSDK re-implementation and using the Analytics Source Connector. </li><li>Quickest method for migrating to the Customer Journey Analytics WebSDK.</li></ul> |  |
 
@@ -124,12 +124,13 @@ The following table shows the migration methods available for organizations who 
 
 | Migration method | Pros | Cons |
 |---------|----------|---------|
-| **WebSDK (without re-implementation)** |<ul><li>The ideal migration method; available only with Adobe Analytics WebSDK implementations</li><li>Infrastructure is built around real-time data; this equates to highly performant reporting with low latency</li><li>Future-proof (will receive all the latest features and functionality)</li><li>Consolidate tags for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, etc.)</li></ul> | None |
+| **WebSDK (without re-implementation)** |<ul><li>The ideal migration method; available only with Adobe Analytics WebSDK implementations</li><li>Highly performant reporting and data availability because Adobe Experience Platform is built to power [real-time personalization use cases](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>Future-proof (will receive all the latest features and functionality)</li><li>Consolidate tags for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, etc.)</li><li>Flexible schema to define any fields you need</li><li>Not reliant on Adobe Analytics nomenclature (prop, eVar, event, etc.)</li><li>No character limit concerns (100 chars for props)</li><li>[First-party device IDs](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) for enhanced accuracy of visitor identification</li></ul> | <ul><li>Most time-consuming and demanding migration method</li><li>Must re-create the full schema in XDM</li></ul> | None |
 
 {style="table-layout:auto"}
 
 
-## Step 3: Determine how to retain historical data
+
+## Step 4: Determine how to retain historical data
 
 Choose one of the following options to retain historical data when moving from Adobe Analytics to Customer Journey Analytics: 
 
@@ -145,23 +146,23 @@ Choose one of the following options to retain historical data when moving from A
 
 * Maintain your current Adobe Analytics implementation alongside your new Customer Journey Analytics implementation for a specific time frame (for example, 1 year). You can decommission the Adobe Analytics implementation after you have sufficient data in Customer Journey Analytics. 
 
-## Step 4: Plan data mapping to the XDM schema
+## Step 5: Plan data mapping to the XDM schema
 
 Working with your data team, identify your organization's ideal schema design for Customer Journey Analytics, then determine how you will map eVars and Props to XDM. 
 
 
 
-## Step 5: Plan user onboarding
+## Step 6: Plan user onboarding
 
 
 
-## Step 6: Port the reporting API usage 
+## Step 7: Port the reporting API usage 
 
 Port the reporting API usage from the Adobe Analytics reporting API to the Customer Journey Analytics reporting API. 
 
-The Customer Journey Analytics reporting API is the same format, but a different endpoint.
+The Customer Journey Analytics reporting API is in the same format, but uses a different endpoint.
 
-## Step 7: Plan Data Feeds and Data Warehouse replacements
+## Step 8: Plan Data Feeds and Data Warehouse replacements
 
 If you currently use Data Feeds or Data Warehouse in Adobe Analytics, use the following table to learn about the various export options available in Customer Journey Analytics:
 
@@ -172,12 +173,20 @@ If you currently use Data Feeds or Data Warehouse in Adobe Analytics, use the fo
 
 {style="table-layout:auto"}
 
-## Step 8: Migrate projects and components
+## Step 9: Migrate projects and components
 
-The Component migration area in Adobe Analytics allows you to migrate projects and components from Adobe Analytics to Customer Journey Analytics. 
+The Component migration area in Adobe Analytics allows you to migrate projects and their associated components from Adobe Analytics to Customer Journey Analytics. 
 
-For more information, see [Prepare to migrate components and projects from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
+The migration process includes:
 
-## Step 9: Get started with Customer Journey Analytics
+* Re-creating Adobe Analytics projects in Customer Journey Analytics.
+
+* Mapping dimensions and metrics from Adobe Analytics report suites to dimensions and metrics in Customer Journey Analytics data views.
+
+Before you begin the migration, first [Prepare to migrate components and projects from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html). 
+
+After you make all of the needed preparations, you can [Migrate components and projects from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html).
+
+## Step 10: Get started with Customer Journey Analytics
 
 Before you begin using Customer Journey Analytics, complete the steps outlined in [Customer Journey Analytics Getting Started](/help/getting-started/cja-getting-started.md).
