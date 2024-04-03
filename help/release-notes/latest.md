@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (March 2024)
 
-**Last update**: March 20, 2024
+**Last update**: April 3, 2024
 
 These release notes cover the release period of end of March 13, 2024 through April 2024. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -14,6 +14,7 @@ These release notes cover the release period of end of March 13, 2024 through Ap
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Change to deletion protocol for Workspace projects** |  Previously, deleted projects were never purged from the system. We will now start purging deleted projects after 180 days. During the 180 days after deletion, users can still access a project via the Web interface if they have a URL to the direct project. | | March 14, 2024|
 | **New column available on the Projects landing page** | The **[!UICONTROL Last used]** column is now available when viewing the Projects tab on the [Customer Journey Analytics landing page](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html). <p>This information can help you determine whether a project is valuable to users in your organization by showing the date and time when the project was last opened. Previously, the **[!UICONTROL Last used]** column was available only in the Calculated metrics manager, Segments manager, and Alerts manager.</p> |  | March 13, 2024 |
 | **Usage metrics** | The [usage metrics interface](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html) shows the usage of ingested and reportable rows across all connections. This interface lets you determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. |  | March 13, 2024 |
 | **Media Analytics Reporting - Average Minute Audience (AMA)** | The Average Minute Audience panel is now available in CJA. Media Analytics customers can use the Average Minute Audience panel to better understand average consumption of their content. <p>Average minute audience enables comparisons of programming of any length or genre. In addition, customers can compare or append this digital average minute audience to linear TV average minute metrics.</p><p> This panel gives more flexibility to measure the average audience for custom time periods, as well as when the duration classification has been updated after the fact.</p><p>For more information, see [Media Average Minute Audience panel](/help/analysis-workspace/c-panels/average-minute-audience-panel.md).</p> |  | March 12, 2024 |
