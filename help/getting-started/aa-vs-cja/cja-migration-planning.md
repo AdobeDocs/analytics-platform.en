@@ -67,7 +67,7 @@ The following table lists each migration method, its level of effort, and its lo
 | WebSDK (re-implementation)  | High | High |
 | WebSDK (without re-implementation)  | Moderate | High |
 | Adoption acceleration project | Moderate | Moderate |
-| Analytics Source Connector | Low | Low |
+| [Analytics Source Connector](/help/data-ingestion/analytics.md) | Low | Low |
 
 {style="table-layout:auto"}
 
@@ -81,8 +81,8 @@ Not all migration methods are available for each type of Adobe Analytics impleme
 
 |Current Adobe Analytics implementation | Available migration methods |
 |---------|----------|
-| AppMeasurement | <ul><li>WebSDK (re-implementation)</li><li>Analytics Source Connector</li></ul>  | 
-| Adobe Analytics extension | <ul><li>WebSDK (re-implementation)</li><li>Analytics Source Connector</li><li>Adoption acceleration project</li></ul> | 
+| AppMeasurement | <ul><li>WebSDK (re-implementation)</li><li>[Analytics Source Connector](/help/data-ingestion/analytics.md)</li></ul>  | 
+| Adobe Analytics extension | <ul><li>WebSDK (re-implementation)</li><li>[Analytics Source Connector](/help/data-ingestion/analytics.md)</li><li>Adoption acceleration project</li></ul> | 
 | WebSDK | <ul><li>WebSDK (without re-implementation)</li></ul> | 
 
 {style="table-layout:auto"}
@@ -131,13 +131,13 @@ The following table shows the migration methods available for organizations who 
 
 ## Step 3: Determine how to retain historical data
 
-The following options are available for handling historical data when moving from Adobe Analytics to Customer Journey Analytics: 
+Choose one of the following options to retain historical data when moving from Adobe Analytics to Customer Journey Analytics: 
 
-* Utilize the Adobe Source Connector
+* Utilize the [Analytics Source Connector](/help/data-ingestion/analytics.md)
 
-  Regardless of the migration method that you choose (even if you migrate using the WebSDK), you can use the Adobe Source Connector to retain historical Adobe Analytics data. 
+  Regardless of the migration method that you choose (even if you migrate using the WebSDK), you can use the Analytics Source Connector to retain historical data from your Adobe Analytics environment. 
 
-  You can use the Adobe Source Connector to retain historical data in the following ways:
+  You can use the Analytics Source Connector to retain historical data in the following ways:
   
   * Bring historical data to its own dedicated location, separate from your current data.
 
@@ -163,10 +163,7 @@ The Customer Journey Analytics reporting API is the same format, but a different
 
 ## Step 7: Plan Data Feeds and Data Warehouse replacements
 
-Similar to Data Feeds and Data Warehouse in Adobe Analytics, there are various ways to export data from Customer Journey Analytics. 
-
-If you currently use Data Feeds or Data Warehouse, use the following table to learn about the export options available in Customer Journey Analytics:
-
+If you currently use Data Feeds or Data Warehouse in Adobe Analytics, use the following table to learn about the various export options available in Customer Journey Analytics:
 
 | Adobe Analytics | Customer Journey Analytics | 
 |---------|----------|
@@ -175,8 +172,12 @@ If you currently use Data Feeds or Data Warehouse, use the following table to le
 
 {style="table-layout:auto"}
 
-## Step 7: Migrate projects and components
+## Step 8: Migrate projects and components
 
 The Component migration area in Adobe Analytics allows you to migrate projects and components from Adobe Analytics to Customer Journey Analytics. 
 
 For more information, see [Prepare to migrate components and projects from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
+
+## Step 9: Get started with Customer Journey Analytics
+
+Before you begin using Customer Journey Analytics, complete the steps outlined in [Customer Journey Analytics Getting Started](/help/getting-started/cja-getting-started.md).
