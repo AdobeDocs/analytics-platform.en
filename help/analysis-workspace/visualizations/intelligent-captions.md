@@ -65,3 +65,7 @@ You can **export captions via PDF**, as long as the project is saved with the ca
 If you would rather not have intelligent captions generated, you can toggle this feature off by going to the Visualization preferences and unchecking **[!UICONTROL Show intelligent captions]**.
 
 ![Line visualization options showing the option to uncheck Show intelligent captions.](assets/toggle-captions.png)
+
+## Intelligent captions in Mobile Scorecards
+
+For more information, see [Manage scorecards](/help/mobile-app/manage-scorecard.md)
