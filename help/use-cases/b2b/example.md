@@ -34,7 +34,7 @@ Datasets you can consider to add to your connection:
 -->
 
 
-The relationship between the lookup schemas, profile schema, and event schema is defined in the B2B setup within Experience Platform. See Schemas in [Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html?lang=en) and [Define a many-to-one relationship between two schemas in Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html?lang=en) for more details. 
+The relationship between the lookup schemas, profile schema, and event schema is defined in the B2B setup within Experience Platform. See Schemas in [Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) and [Define a many-to-one relationship between two schemas in Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) for more details. 
 
 ![Relationship between B2B schemas](assets/classes.png)
 

@@ -82,7 +82,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Substring](../data-views/component-settings/substring.md)
     + [Value bucketing](../data-views/component-settings/value-bucketing.md)
   + [Standard component reference](../data-views/component-reference.md)
-  + [SQL Connector](../data-views/sql-connector.md)
+  + [CJA BI extension](../data-views/bi-extension.md)
   + [Derived fields](../data-views/derived-fields/derived-fields.md)
   + [Labels and policies](../data-views/data-governance.md)
 
@@ -149,6 +149,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Blank panel](../analysis-workspace/c-panels/blank-panel.md)
     + [Experimentation panel](../analysis-workspace/c-panels/experimentation.md)
     + [Freeform panel](../analysis-workspace/c-panels/freeform-panel.md)
+    + [Media Average Minute Audience panel](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
     + [Quick Insights panel](../analysis-workspace/c-panels/quickinsight.md)
     + [Media Concurrent Viewers panel](../analysis-workspace/c-panels/media-concurrent-viewers.md)
     + [Media Playback Time Spent panel](../analysis-workspace/c-panels/media-playback-time-spent.md)

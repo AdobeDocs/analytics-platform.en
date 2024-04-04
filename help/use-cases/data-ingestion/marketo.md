@@ -12,15 +12,15 @@ You can leverage the newly-available Marketo Engage datasets in Adobe Experience
 
 ## Step 1: Map Marketo source data fields to their XDM targets
 
-Map the [Persons](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#persons) and [Activities](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#activities) objects to their respective XDM schema target fields.
+Map the [Persons](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#persons) and [Activities](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#activities) objects to their respective XDM schema target fields.
 
 ## Step 2: Ingest Marketo data into Adobe Experience Platform
 
-Use the [Marketo Engage connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=en) to bring data from Marketo to Experience Platform and keep this data up to date using Platform-connected applications.
+Use the [Marketo Engage connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html) to bring data from Marketo to Experience Platform and keep this data up to date using Platform-connected applications.
 
 ## Step 3: Set up a connection to this dataset in Customer Journey Analytics
 
-In order to report on Experience Platform datasets, you first have to establish a connection between datasets in Experience Platform and Customer Journey Analytics. See for more information [Create or edit a connection](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en).
+In order to report on Experience Platform datasets, you first have to establish a connection between datasets in Experience Platform and Customer Journey Analytics. See for more information [Create or edit a connection](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html).
 
 ## Step 4: Create one or more data views
 

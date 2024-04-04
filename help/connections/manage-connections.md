@@ -18,6 +18,7 @@ Once you have [created or edited one or more connections](/help/connections/crea
 * View all datasets in a connection.
 * Check the status of your connection's datasets and the status of the ingestion process. For example, when is your data available so that you can start with reporting and analysis in Analysis Workspace.
 * Identify any data discrepancies due to misconfiguration. Are you missing any rows? If so, what rows are missing and why? Did you misconfigure connections and cause missing data in Customer Journey Analytics?
+* Get insights on usage of ingested and reportable rows across all your connections.
 
 [!UICONTROL Connections] has two interfaces: [[!UICONTROL List]](#list) and [[!UICONTROL Usage]](#usage).
 
@@ -33,10 +34,10 @@ The following columns / icons are available in the table.
 | Column / Icon | Description |
 | --- | --- |
 | [!UICONTROL Name] | The connection's friendly name. To see the details of the connection, select the hyperlinked name. See [Connection details](#connection-details). |
-| ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | To view information about [!UICONTROL Datasets included], [!UICONTROL Sandbox], [!UICONTROL Owner], and more, select ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) next to the connection name.<p>A popup window displays details. <p><img src="./assets/conn-info.png" alt="View connection info" width="50%"/> |
+| ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | To view information about [!UICONTROL Datasets included], [!UICONTROL Sandbox], [!UICONTROL Owner], and more, select ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) next to the connection name.<p>A popup window displays details. <p><img src="./assets/conn-info.png" alt="View connection info" width="400"/> |
 | ![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | To [create a data view](#create-a-data-view) for the connection, select ![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) . This icon only shows when no data view is already associated with the connection. |
 | ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to: <p>![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Edit](#edit-a-connection) a connection.<p>![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Delete](#delete-a-connection) a connection.<p>![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) [Create new data view](#create-a-data-view). Use this to create additional data views for the connection. |
-| [!UICONTROL Datasets] | Shows one or more links to the datasets that are part of the connection. You can select the dataset hyperlink to view the dataset in the connection. If more datasets are part of the selected connection, select **[!UICONTROL +*x* more]** to show a **[!UICONTROL Datasets included]** panel. This panel shows links to all datasets and an option to search for a specific dataset that is part of the connection.<p><img src="./assets/datasets-included.png" alt="Datassets included" width="50%"/><p>Selecting a dataset name opens the dataset in the Experience Platform UI in a new tab. |
+| [!UICONTROL Datasets] | Shows one or more links to the datasets that are part of the connection. You can select the dataset hyperlink to view the dataset in the connection. If more datasets are part of the selected connection, select **[!UICONTROL +*x* more]** to show a **[!UICONTROL Datasets included]** panel. This panel shows links to all datasets and an option to search for a specific dataset that is part of the connection.<p><img src="./assets/datasets-included.png" alt="Datassets included" width="400"/><p>Selecting a dataset name opens the dataset in the Experience Platform UI in a new tab. |
 | [!UICONTROL Sandbox] | Shows the [Experience Platform sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) from which this connection draws its datasets. This sandbox was selected when you first created the connection. It cannot be changed.|
 | [!UICONTROL Owner] | The person who created the connection. |
 | [!UICONTROL Import new data] | Shows the status of importing new data for datasets: <p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for datasets configured to import new data, and<p><span style="color:gray">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** for datasets not configured to import new data. |
@@ -46,7 +47,7 @@ The following columns / icons are available in the table.
 
 You can configure which columns to display using ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). This shows the **Customize table** dialog allowing you turn on/off columns in the table.
 
-## Edit a connection
+### Edit a connection
 
 Allows admins to edit the connection. 
 
@@ -69,7 +70,7 @@ When editing a connection, you can:
 See [Create or edit a connection](create-connection.md) for more information.
 
 
-## Delete a connection {#connections-delete}
+### Delete a connection {#connections-delete}
 
 Allows admins to delete the connection. 
 
@@ -84,14 +85,14 @@ Alternatively, you can:
 
 When you delete a connection, a **[!UICONTROL Delete connection]** panel indicates which data views are deleted and which workspace projects are affected.
 
-<img src="./assets/delete-connection.png" alt="Delete connection" width="50%"/>
+<img src="./assets/delete-connection.png" alt="Delete connection" width="400"/>
 
 Select **[!UICONTROL Continue]** to delete the connection.
 
 See [Delete implications](/help/admin/cja-deletion.md) for more information about the implications of deleting a connection.
 
 
-## Create a data view
+### Create a data view
 
 Allows admins to create a data view for the connection. 
 
@@ -112,7 +113,7 @@ Alternatively, you can:
 
 See [Create or edit a data view](/help/data-views/create-dataview.md) for more information.
 
-## Connection details {#connection-detail}
+### Connection details {#connection-detail}
 
 To go to the details for a connection, select a connection name in the connections table.
 
@@ -130,7 +131,7 @@ The Connections details interface provides a detailed view of the status of a co
 | Dataset selector | Lets you pick one or all datasets in the connection. You cannot multi-select datasets. Defaults to [!UICONTROL All datasets]. |
 | Date range selector | Edit start and/or end date or select ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) to open the data range selector. In the date range selector, select a date range by using one of the predefined periods (for example **[!UICONTROL Last 6 months]**) or use the calendar to select start and end date. Select **[!UICONTROL Apply]** to apply the new data range.|
 | [!UICONTROL Records of event data available] | Represents the total number of event dataset rows available for reporting, **for the entire connection**. This count is independent of any calendar settings. The count changes if you select a dataset from the dataset selector or by selecting a dataset in the table. Once data is added, there is a latency of 1-2 hours to get the data to appear in reporting. |
-| [!UICONTROL Metrics] | Summarizes the event records added/skipped/deleted, and the number of batches added, **for the dataset and date range you have selected**.<p>Select **[!UICONTROL Check detail]** to show the **[!UICONTROL Check skipped detail]** popup, listing for all event datasets or selected dataset the number of skipped records and the reason.<p><img src="./assets/skipped-records.png" width="70%"/><p>Select ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) popup with more information. For some skipped reasons, like [!UICONTROL Empty visitor ID], the popup displays Sample PSQL for EQS (Experience Platform for Query Service) you can use in [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en) to query for the skipped records in the dataset. Select ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy sample PSQL for EQS]** to copy the SQL. |
+| [!UICONTROL Metrics] | Summarizes the event records added/skipped/deleted, and the number of batches added, **for the dataset and date range you have selected**.<p>Select **[!UICONTROL Check detail]** to show the **[!UICONTROL Check skipped detail]** popup, listing for all event datasets or selected dataset the number of skipped records and the reason.<p><img src="./assets/skipped-records.png" width="500"/><p>Select ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) popup with more information. For some skipped reasons, like [!UICONTROL Empty visitor ID], the popup displays Sample PSQL for EQS (Experience Platform for Query Service) you can use in [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) to query for the skipped records in the dataset. Select ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy sample PSQL for EQS]** to copy the SQL. |
 | [!UICONTROL Records added] | Indicates how many rows were added in the selected time period, **for the dataset and date range you have selected**. Updated every 10 minutes. |
 | [!UICONTROL Records skipped] | Indicates how many rows were skipped in the selected time period, **for the dataset and date range you have selected**. Reasons for skipping records include: missing timestamps, missing or invalid person ID, and so forth. Updated every 10 minutes. <p>Invalid person IDs (such as "undefined", or "00000000", or any combination of numbers and letters in a [!UICONTROL Person ID] that appears in an event more than 1 million times in a given month) cannot be attributed to any specific user or person. They cannot be ingested into the system and result in error-prone ingestion and reporting. To fix invalid person IDs, you have 3 options:<ul><li>Use [Stitching](/help/stitching/overview.md) to populate the undefined or all-zero user IDs with valid user IDs.</li><li>Blank out the user ID, which will then be skipped during ingestion (preferable to invalid or all-zero user IDs).</li><li>Fix any invalid user IDs in your system before ingesting the data.</li></ul> |
 | [!UICONTROL Records] deleted | Indicates how many rows were deleted in the selected time period, **for the dataset and date range you have selected**. Someone might have deleted a dataset in Experience Platform, for example. Updated every 10 minutes. |
@@ -154,7 +155,7 @@ The Connections details interface provides a detailed view of the status of a co
 >
 >Any data ingested before August 13, 2021 is not reflected in the [!UICONTROL Connections] interface.
 
-### Connection panel
+#### Connection panel
 
 When no dataset is selected in the datasets table, a panel on the right side of the Connections interface shows connection options and details.
 
@@ -175,7 +176,7 @@ When no dataset is selected in the datasets table, a panel on the right side of 
 | [!UICONTROL Last modified] | Shows the timestamp of the last change to the connection. |
 | [!UICONTROL Last modified by] | Shows the person who last modified the connection. |
 
-### Dataset panel
+#### Dataset panel
 
 When a dataset is selected in the datasets table, a panel on the right side of the Connections interface show details for the selected dataset.
 
@@ -192,12 +193,12 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 | [!UICONTROL Records skipped] | Indicates how many rows were skipped during ingestion in the selected time period.<p>Reasons for skipping records include: Missing timestamps, missing or invalid person ID, and so forth. Updated every 10 minutes.<p>Invalid person IDs (such as "undefined", or "00000000", or any combination of numbers and letters in a [!UICONTROL Person ID] that appears in an event more than 1 million times in a given month) cannot be attributed to any specific user or person. They cannot be ingested into the system and result in error-prone ingestion and reporting. To fix invalid person IDs, you have 3 options:<ul><li>Use [Stitching](/help/stitching/overview.md) to populate the undefined or all-zero user IDs with valid user IDs.</li><li>Blank out the user ID, which is then skipped during ingestion (preferable to invalid or all-zero user IDs).</li><li>Fix any invalid user IDs in your system before ingesting the data.</li></ul> |
 | [!UICONTROL Last added] | Indicates when the last batch was added. |
 | [!UICONTROL Import new data] | Shows the status of importing new data for the dataset: <p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** if dataset is configured to import new data, and<p><span style="color:gray">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** if dataset is configured to not import new data import.  |
-| [!UICONTROL Backfill data] | Shows the status of backfill data for the dataset.<p><span style="color:red">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills,<p><span style="color:orange">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of backfills processing,<p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of backfills completed, and<p><span style="color:grey">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no  backfills are configured.<p>To show a dialog  with an overview of the past backfills for the dataset, select <img src="./assets/pastbackfill.svg" alt="Past backfills" width=2%/> **[!UICONTROL Past backfills]**. |
-| Transform data | When applicable, shows the transformation status of  B2B lookup dataset. See [Transform datasets for B2B lookups](transform-datasets-b2b-lookups.md) for more information.<p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL On]** if dataset is enabled for transformation, <p><span style="color:gray">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** if dataset is not enabled for transformation.| 
+| [!UICONTROL Backfill data] | Shows the status of backfill data for the dataset.<p><span style="color:red">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills,<p><span style="color:orange">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of backfills processing,<p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of backfills completed, and<p><span style="color:grey">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no  backfills are configured.<p>To show a dialog  with an overview of the past backfills for the dataset, select <img src="./assets/pastbackfill.svg" alt="Past backfills" width="15"/> **[!UICONTROL Past backfills]**. |
 | [!UICONTROL Data source type] | Data source type as defined when adding dataset to the connection. |
 | [!UICONTROL Dataset type] | Either [!UICONTROL Event], [!UICONTROL Lookup], or [!UICONTROL Profile]. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#configure-dataset)  |
 | [!UICONTROL Schema] | Shows the Experience Platform schema that this dataset is based on. |
 | [!UICONTROL Dataset ID] | This dataset ID is generated in Experience Platform. |
+
 
 ## Usage
 
@@ -226,4 +227,4 @@ For [!UICONTROL Reportable rows]:
 
 >[!MORELIKETHIS]
 >
->[View, troubleshoot, and modify connection settings](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja.html?lang=en) tutorial.
+>[View, troubleshoot, and modify connection settings](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja.html) tutorial.

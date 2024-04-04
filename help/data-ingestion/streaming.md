@@ -111,7 +111,7 @@ To set up your schema:
 
     You are prompted to enable the schema for profile. Once enabled, when data is ingested into datasets based on this schema, that data is merged into the Real-Time Customer Profile. 
     
-    See [Enable the schema for use in Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) for more information.
+    See [Enable the schema for use in Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile) for more information.
 
     >[!IMPORTANT]
     >
@@ -233,7 +233,7 @@ To create an HTTP API source connector:
 
 You can copy the streaming endpoint URL and use it to configure your loyalty application to stream data into the Adobe Experience Platform loyalty dataset.
 
-See [Create an HTTP API streaming connection using the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=en) for a much more comprehensive tutorial explaining: 
+See [Create an HTTP API streaming connection using the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html) for a much more comprehensive tutorial explaining: 
 
 - how to use authentication, 
 - how to map data when your incoming data is not compatible with your XDM schema, and 

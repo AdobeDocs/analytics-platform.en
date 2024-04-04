@@ -21,7 +21,7 @@ Time-parting dimensions are based on the time zone of the data view. These dimen
 |Hour of Day|0-23|
 |AM/PM|AM, PM|
 |Day of Week|Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday|
-|Weekend/Weekday|Weekend, Weekday|
+|Weekday/Weekend|Weekday, Weekend|
 |Day of Month|1-31|
 |Month of Year|January-December|
 |Day of Year|1-366|
