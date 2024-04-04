@@ -131,6 +131,17 @@ The following table shows the migration methods available for organizations who 
 
 ## Step 3: Begin the migration
 
+After you choose the migration method that is best for your organization, you can begin ingesting data into Customer Journey Analytics. 
+
+The process for data ingestion for each migration method is described below:
+
+|Migration method | Data ingestion process | 
+|---------|----------|
+| **New implementation of the Web SDK** | [Ingest data via the Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) | 
+| **Migrate your Adobe Analytics implementation to use the Web SDK** | <!-- docs Russ is working on --> | 
+| **Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics** | B3 | 
+| **Analytics Source Connector** | [Ingest and use data from traditional Adobe Analytics](/help/data-ingestion/analytics.md) | 
+
 ## Step 4: Determine how to retain historical data
 
 Choose one of the following options to retain historical data when moving from Adobe Analytics to Customer Journey Analytics: 
