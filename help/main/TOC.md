@@ -182,6 +182,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Analytics dashboards - Overview](../mobile-app/home.md)
   + [Curator tasks](../mobile-app/curator.md)
   + [Create a mobile scorecard](../mobile-app/create-scorecard.md)
+  + [Manage mobile scorecards](../mobile-app/manage-scorecard.md)
   + [Set up executives to use dashboards](../mobile-app/set-up-execs.md)
   + [Executive user quick start guide](../mobile-app/executive.md)
 
