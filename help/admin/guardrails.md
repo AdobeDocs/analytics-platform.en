@@ -123,6 +123,18 @@ See also Experience Platform [Real-time Customer Data Platform Guardrails](https
 See also Experience Platform [Guardrails for Data Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
+## Destinations Data Export
+
+| Name | Value | Limit Type | Description |
+|---|--:|---|---|
+| Data Export | Total Authorized Data Lake Storage | Performance Guardrail | Customer may use Destination Dataset Export to export Customer Data in the Data Lake up to the Total Authorized Data Lake Storage.|
+| Available Datasets | Profile and Event | System Enforced Guardrail | Profile and Experience Event datasets created in the Experience Platform UI after ingesting or collecting data through Sources, Web SDK, Mobile SDK, Analytics Data Connector, and Audience Manager. |
+
+{style="table-layout:auto"}
+
+See also Experience Platform [Dataset Export Guardrails](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
+
+
 ## Data landing zone
 
 | Name | Value | Limit Type | Description |
