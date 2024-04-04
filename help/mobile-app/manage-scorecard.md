@@ -4,8 +4,8 @@ title: Manage scorecards
 feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
+exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
 ---
-
 # Manage scorecards
 
 This topic instructs curators of Customer Journey Analytics data on how to view and manage scorecard elements.
