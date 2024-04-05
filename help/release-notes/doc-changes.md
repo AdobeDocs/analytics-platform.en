@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **April 2024** | |
+| Added information recommending Full Table Export for high cardinality dimensions | Added bullet in [Best practices for high cardinality dimensions](/help/components/dimensions/high-cardinality.md) to recommend using Full Table Export for high cardinality dimensions.  |
 | **March 2024** | |
 | Usage information regarding the "Used in" column is available only starting in September 2023.| Clarified that usage information regarding the **Used in** column on the [projects landing page](/help/getting-started/landing.md) goes back only as far as September 2023.  |
 | **February 2024** | |
@@ -70,7 +72,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Edge Network geo lookups | [Datastream settings](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html) how has a geo lookup service that provides unified geographic data. |
 | **June 2023** | | 
 | Cross-channel analysis and stitching | In anticipation of the upcoming changes to enable stitching and to further clarify how cross-channel analysis can be elevated using stitching, documentation related to Cross-Channel Analytics functionality is edited to refer to [cross-channel analysis](../use-cases/cross-channel/cross-channel.md) as the Customer Journey Analytics capability and use case, and [Stitching](../stitching/overview.md) as an important functionality to accomplish this. |
-| PowerBI & Tableau access to Customer Journey Analytics data views | The Customer Journey Analytics SQL Connector enables SQL access to data views that you have defined in Customer Journey Analytics. [Learn more](/help/data-views/sql-connector.md)|
+| PowerBI & Tableau access to Customer Journey Analytics data views | The Customer Journey Analytics BI extension enables SQL access to data views that you have defined in Customer Journey Analytics. [Learn more](/help/data-views/bi-extension.md)|
 | Adobe Journey Optimizer data views | Customer Journey Analytics Admins have access to some extra data views in Customer Journey Analytics, entitled "AJO Data view (Sandbox-name)". [Learn more](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html). | 
 | Currency conversion | Updated documentation for [currency conversion](../data-views/component-settings/format.md#currency) support. | 
 | Calculated metrics updates | The following updates were made to calculated metrics documentation in order to align it with current Customer Journey Analytics functionality: <ul><li>Updated the list of [default calculated metrics](/help/components/calc-metrics/default-calcmetrics.md) available in Customer Journey Analytics</li><li>Updated screen shots and procedures in various calculated metrics articles </li></ul> |

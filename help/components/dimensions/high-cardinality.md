@@ -33,3 +33,4 @@ The best way to accommodate high cardinality dimensions is to limit the number o
 * Use a lookup dataset dimension. Lookup dataset dimensions combine event dataset dimension items, which limit the number of unique values returned.
 * Use the [Include/exclude](/help/data-views/component-settings/include-exclude-values.md) component setting in the data view manager.
 * Shorten the request's date range. If many unique values accumulate over time, shortening the date range of the Workspace report can limit the number of unique values for servers to process.
+* Consider using [Full Table Export](/help/analysis-workspace/export/export-cloud.md) to return all rows of the table.
