@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **April 2024** | |
+| Added information recommending Full Table Export for high cardinality dimensions | Added bullet in [Best practices for high cardinality dimensions](/help/components/dimensions/high-cardinality.md) to recommend using Full Table Export for high cardinality dimensions.  |
 | **March 2024** | |
 | Usage information regarding the "Used in" column is available only starting in September 2023.| Clarified that usage information regarding the **Used in** column on the [projects landing page](/help/getting-started/landing.md) goes back only as far as September 2023.  |
 | **February 2024** | |
