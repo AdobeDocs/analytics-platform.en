@@ -14,29 +14,29 @@ Customer Journey Analytics is the next generation of analytics. It allows multi-
 
 As you plan your migration, learn how Customer Journey Analytics can benefit your organization. Following are some of the key benefits: (For a comprehensive list, as well as more information about each of these key features, see [Features available only in Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md#adobe-customer-journey-analytics-features-not-available-in-adobe-analytics).) 
 
-* Multi-channel reporting
+<!-- add links for each of these -->
+
+* [Multi-channel reporting](/help/getting-started/aa-to-cja-user.md#changes-to-data-architecture)
 
   Customer Journey Analytics is combined with Experience Platform's ability to hold all kinds of data schemas and types. Collect and report on data from multiple channels, such as digital (Web), Point-of-Sale systems, mobile, CRM systems, and more.
 
-* Report-time transformations in data views
+* [Report-time transformations in data views](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md#customer-journey-analytics-data-views)
 
   Data views in Customer Journey Analytics allow you to further interpret data from a connection. You can alter or remove data without changing your implementation, use substrings to manipulate dimensions, create metrics from any value, filter subevents, or use derived fields. All of these transformations are non-destructive. 
 
-  For more information, see [Customer Journey Analytics data views](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md#customer-journey-analytics-data-views)
+* [Transformations apply to historical and new data](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
 
-* Transformations apply to historical and new data
+  Data View manipulation can be applied to both historical and new data in a non-destructive manner.
 
-  Data View manipulation can be applied to both historical and new data in a non-destructive manner. For more information, see [Data Views](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md).
-
-* Derived fields
+* [Derived fields](/help/data-views/derived-fields/derived-fields.md)
 
   Derived fields allow for report-time transformations to your data. Data can be combined, corrected, or created on the fly and applies retroactively to all reporting.
 
-* Combine Connections (report suites in Adobe Analytics)
+* [Data views replace virtual report suites](/help/getting-started/aa-to-cja-user.md#changes-to-the-concept-of-virtual-report-suites)
 
-  You can combine data from multiple Connections (report suites in Adobe Analytics) as if they were a single Connection.
+  Data views take the concept of virtual report suites as they exist today and expand it to enable additional controls on the data made available by connections. These changes make general settings like timezone and session time-out intervals configurable and retroactive. 
 
-* Unlimited customer dimensions and metrics
+* [Unlimited customer dimensions and metrics](/help/getting-started/aa-to-cja-user.md#changes-to-the-concept-of-evars-and-props)
 
   Values can be numeric, text, objects, lists, or mixtures of all. Dimensions can be nested or hierarchical.
 
@@ -64,7 +64,7 @@ The following table lists each migration method, its level of effort, and its lo
 
 | Migration method | Level of effort | Long-term viability |
 |---------|----------|---------|
-| **New implementation of the Web SDK**</br>You can do a new Adobe Experience Platform Web SDK implementation to begin sending data to Edge. <p>For organizations not yet on the Web SDK, this migration method is perhaps the most straightforward in getting data to Edge (requiring the fewest number of steps), but all of the work is done up front, such as creating the XDM schema.</p><p>The basic steps are:</p><ol><li>Create an XDM schema for your organization</li><li>Implement the Web SDK</li><li>Send data to Platform</li></ol>| High | High |
+| **New implementation of the Web SDK**</br>You can do a new Adobe Experience Platform Web SDK implementation to begin sending data to Adobe Experience Platform Edge Network <!-- what is the correct branding -->. <p>For organizations not yet on the Web SDK, this migration method is perhaps the most straightforward in getting data to Edge Network (requiring the fewest number of steps), but all of the work is done up front, such as creating the XDM schema.</p><p>The basic steps are:</p><ol><li>Create an XDM schema for your organization</li><li>Implement the Web SDK</li><li>Send data to Platform</li></ol>| High | High |
 | **Migrate your Adobe Analytics implementation to use the Web SDK (Coming soon)**</br>If your Adobe Analytics implementation is AppMeasurement or the Analytics extension, you can migrate it to use the Adobe Experience Platform Web SDK to begin sending data to Edge prior to sending it to Customer Journey Analytics. <!-- what else? --><p>This is the easiest and smoothest way to get data to Edge; it requires more steps, but offers a more methodical transition with more tangible milestones.</p><p>The basic steps are:</p><ol><li>Move your existing Adobe Analytics implementation to the Web SDK and validate that everything is working there.</li><li>Create an XDM schema for your organization as you have time.</li><li>Use Data stream mapping to map all of the fields in the data object to your XDM schema.</li><li>Send data to Platform</li></ol> | Moderate | High |
 | **Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics**</br>If your Adobe Analytics implementation is already using the Web SDK, you can begin sending data to Customer Journey Analytics.<p>Before you send data to Customer Journey Analytics, consider updating your Adobe Analytics schema for the specific needs of your organization and any other Platform applications you will use.</p><p>The basic steps are:</p><ul><li>Begin sending data to Customer Journey Analytics.<!-- What's involved here? Just point it at CJA? --></li><li>(Optional) Create an XDM schema for your organization as you have time.</li><li>Use Data stream mapping to map all of the fields in the data object to your XDM schema.</li>  | Low | High |
 | **Analytics Source Connector**</br>If your Adobe Analytics implementation is AppMeasurement or the Analytics extension, you can begin sending data to a data view in Customer Journey Analytics.<p>This is the easiest way to get data to Customer Journey Analytics, but is the least viable method in the long term.</p>  | Low | Low |
@@ -111,7 +111,7 @@ The following table shows the migration methods available for organizations who 
 
 | Migration method | Pros | Cons |
 |---------|----------|---------|
-| **Configure the Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics** | When using this implementation method, you can choose whether to use your existing Adobe Analytics schema, or to update to the XDM schema to better align with the needs of your organization as you begin to use other Platform applications.<p>Advantages of using the Adobe Analytics schema include:</p><ul><li>If you are already sending data to Adobe Analytics with the Adobe Experience Platform Web SDK, you can immediately begin sending data to Customer Journey Analytics.</li></ul><p>Advantages of updating the XDM schema include:</p><ul><li>Results in a more streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use.</li></ul> | Disadvantages of using the Adobe Analytics schema include:<ul><li>While using the Adobe Analytics schema doesn't limit you in terms of how it can be used with other Platform applications, it does result in a schema that is more complex than it otherwise could be. This is because the Adobe Analytics schema contains many objects that are specific to Adobe Analytics and that may not be used by your organization.</br></li></ul><p>Disadvantages of updating the XDM schema include:</p><ul><li>Updating your schema is a time-consuming process that is required before you begin sending data to Customer Journey Analytics.</li></ul> |
+| **Configure the Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics** | When using this implementation method, you can choose whether to use your existing Adobe Analytics schema, or to update to the XDM schema to better align with the needs of your organization as you begin to use other Platform applications.<p>Advantages of using the Adobe Analytics schema include:</p><ul><li>If you are already sending data to Adobe Analytics with the Adobe Experience Platform Web SDK, you can add an additional service to your datastream to send data to Adobe Experience Platform (which then can be used in your Customer Journey Analytics configuration).</li></ul><p>Advantages of updating the XDM schema include:</p><ul><li>Results in a more streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use.</li></ul> | Disadvantages of using the Adobe Analytics schema include:<ul><li>While using the Adobe Analytics schema doesn't limit you in terms of how it can be used with other Platform applications, it does result in a schema that is more complex than it otherwise could be. This is because the Adobe Analytics schema contains many objects that are specific to Adobe Analytics and that may not be used by your organization.</br></li></ul><p>Disadvantages of updating the XDM schema include:</p><ul><li>Updating your schema is a time-consuming process that is required before you begin sending data to Customer Journey Analytics.</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -125,7 +125,7 @@ The process for data ingestion for each migration method is described below:
 |---------|----------|
 | New implementation of the Web SDK | [Ingest data via the Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) | 
 | Migrate your Adobe Analytics implementation to use the Web SDK | (Coming soon) | 
-| Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics |  | 
+| Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics | [Set up a datastream](/https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream) in [Ingest data via the Adobe Experience Platform Web SDK](/https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk)  | 
 | Analytics Source Connector | [Ingest and use data from traditional Adobe Analytics](/help/data-ingestion/analytics.md) | 
 
 ## Step 4: Determine how to retain historical data
@@ -151,6 +151,8 @@ Working with your data team, identify your organization's ideal schema design fo
 
 
 ## Step 6: Plan user onboarding
+
+There are a few key differences between Customer Journey Analytics and Adobe Analytics that users need to be aware of. 
 
 Like in Adobe Analytics, Analysis Workspace is the main user-facing tool in Customer Journey Analytics. However, there are some key differences when using Analysis Workspace in Customer Journey Analytics that users need to be aware of. 
 
