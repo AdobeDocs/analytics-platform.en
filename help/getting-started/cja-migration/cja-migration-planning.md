@@ -127,7 +127,7 @@ The process for data ingestion for each migration method is described below:
 |---------|----------|
 | **New implementation of the Web SDK** | [Ingest data via the Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) | 
 | **Migrate your Adobe Analytics implementation to use the Web SDK** | (Coming soon) | 
-| **Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics** | B3 | 
+| **Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics** |  | 
 | **Analytics Source Connector** | [Ingest and use data from traditional Adobe Analytics](/help/data-ingestion/analytics.md) | 
 
 ## Step 4: Determine how to retain historical data
