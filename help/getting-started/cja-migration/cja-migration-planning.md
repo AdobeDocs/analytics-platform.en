@@ -66,8 +66,8 @@ The following table lists each migration method, its level of effort, and its lo
 |---------|----------|---------|
 | **New implementation of the Web SDK**</br>You can do a new Adobe Experience Platform Web SDK implementation to begin sending data to Edge. <p>For organizations not yet on the Web SDK, this migration method is perhaps the most straightforward in getting data to Edge (requiring the fewest number of steps), but all of the work is done up front, such as creating the XDM schema.</p><p>The basic steps are:</p><ol><li>Create an XDM schema for your organization</li><li>Implement the Web SDK</li><li>Send data to Platform</li></ol>| High | High |
 | **Migrate your Adobe Analytics implementation to use the Web SDK (Coming soon)**</br>If your Adobe Analytics implementation is AppMeasurement or the Analytics extension, you can migrate it to use the Adobe Experience Platform Web SDK to begin sending data to Edge prior to sending it to Customer Journey Analytics. <!-- what else? --><p>This is the easiest and smoothest way to get data to Edge; it requires more steps, but offers a more methodical transition with more tangible milestones.</p><p>The basic steps are:</p><ol><li>Move your existing Adobe Analytics implementation to the Web SDK and validate that everything is working there.</li><li>Create an XDM schema for your organization as you have time.</li><li>Use Data stream mapping to map all of the fields in the data object to your XDM schema.</li><li>Send data to Platform</li></ol> | Moderate | High |
-| **Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics**</br>If your Adobe Analytics implementation is already using the Web SDK, you can begin sending data to Customer Journey Analytics.<p>Before you send data to Customer Journey Analytics, consider updating your Adobe Analytics schema for the specific needs of your organization and any other Platform applications you will use.</p><p>The basic steps are:</p><ul><li>Begin sending data to Customer Journey Analytics.<!-- What's involved here? Just point it at CJA? --></li><li>(Optinoal)Create an XDM schema for your organization as you have time.</li><li>Use Data stream mapping to map all of the fields in the data object to your XDM schema.</li>  | Low | High |
-| [**Analytics Source Connector**](/help/data-ingestion/analytics.md)</br>If your Adobe Analytics implementation is AppMeasurement or the Analytics extension, you can begin sending data to a data view in Customer Journey Analytics.<p>This is the easiest way to get data to Customer Journey Analytics, but is the least viable method in the long term.</p>  | Low | Low |
+| **Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics**</br>If your Adobe Analytics implementation is already using the Web SDK, you can begin sending data to Customer Journey Analytics.<p>Before you send data to Customer Journey Analytics, consider updating your Adobe Analytics schema for the specific needs of your organization and any other Platform applications you will use.</p><p>The basic steps are:</p><ul><li>Begin sending data to Customer Journey Analytics.<!-- What's involved here? Just point it at CJA? --></li><li>(Optional) Create an XDM schema for your organization as you have time.</li><li>Use Data stream mapping to map all of the fields in the data object to your XDM schema.</li>  | Low | High |
+| **Analytics Source Connector**</br>If your Adobe Analytics implementation is AppMeasurement or the Analytics extension, you can begin sending data to a data view in Customer Journey Analytics.<p>This is the easiest way to get data to Customer Journey Analytics, but is the least viable method in the long term.</p>  | Low | Low |
 
 {style="table-layout:auto"}
 
@@ -81,8 +81,8 @@ Not all migration methods are available for each type of Adobe Analytics impleme
 
 |Existing Adobe Analytics implementation | Available migration methods |
 |---------|----------|
-| AppMeasurement | <ul><li>New implementation of the Web SDK</li><li>Migrate Adobe Analytics to the Web SDK (Coming soon)</li><li>[Analytics Source Connector](/help/data-ingestion/analytics.md)</li></ul>  | 
-| Adobe Analytics extension | <ul><li>New implementation of the Web SDK</li><li>Migrate Adobe Analytics to the Web SDK (Coming soon)</li><li>[Analytics Source Connector](/help/data-ingestion/analytics.md)</li></ul> | 
+| AppMeasurement | <ul><li>New implementation of the Web SDK</li><li>Migrate Adobe Analytics to the Web SDK (Coming soon)</li><li>Analytics Source Connector</li></ul>  | 
+| Adobe Analytics extension | <ul><li>New implementation of the Web SDK</li><li>Migrate Adobe Analytics to the Web SDK (Coming soon)</li><li>Analytics Source Connector</li></ul> | 
 | Web SDK | <ul><li>Configure the Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics</li></ul> | 
 
 {style="table-layout:auto"}
@@ -125,10 +125,10 @@ The process for data ingestion for each migration method is described below:
 
 |Migration method | Data ingestion process | 
 |---------|----------|
-| **New implementation of the Web SDK** | [Ingest data via the Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) | 
-| **Migrate your Adobe Analytics implementation to use the Web SDK** | (Coming soon) | 
-| **Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics** |  | 
-| **Analytics Source Connector** | [Ingest and use data from traditional Adobe Analytics](/help/data-ingestion/analytics.md) | 
+| New implementation of the Web SDK | [Ingest data via the Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) | 
+| Migrate your Adobe Analytics implementation to use the Web SDK | (Coming soon) | 
+| Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics |  | 
+| Analytics Source Connector | [Ingest and use data from traditional Adobe Analytics](/help/data-ingestion/analytics.md) | 
 
 ## Step 4: Determine how to retain historical data
 
@@ -154,7 +154,11 @@ Working with your data team, identify your organization's ideal schema design fo
 
 ## Step 6: Plan user onboarding
 
+Like in Adobe Analytics, Analysis Workspace is the main user-facing tool in Customer Journey Analytics. However, there are some key differences when using Analysis Workspace in Customer Journey Analytics that users need to be aware of. 
 
+You should give your users ample time (3 - 6 months) to become familiar with the key differences of Analysis Workspace in Customer Journey Analytics.
+
+For information about some of the key differences between Adobe Analytics and Customer Journey Analytics, see [User Guide for Adobe Analytics users](help/getting-started/aa-to-cja-user.md).
 
 ## Step 7: Port the reporting API usage 
 
