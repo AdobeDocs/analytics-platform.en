@@ -210,11 +210,11 @@ To view intelligent captions in a mobile scorecard:
 
     ![Scorecard with line visualization](assets/caption1.png)
 
-1. Tap the blue AIS (?) icon  at the top right. The captions will be generated below the line graph.
+1. Tap the blue icon  at the top right to generate the captions. The captions will appear below the line graph.
 
     ![Intelligent caption in line visualization](assets/caption2.png)
 
-1. Swipe right to view other intelligent captions.
+1. Swipe right to view all intelligent captions.
 
     Intelligent captions can point to data spikes, anomalies, trends, declines, correlations, and other phenomena.
 
