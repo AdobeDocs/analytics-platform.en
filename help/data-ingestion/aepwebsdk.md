@@ -103,7 +103,7 @@ To set up your schema:
 
     ![Identification Object](./assets/identification-field.png)
 
-    The identification object adds identification capabilities to your schema. In your case, you want to identify profiles visiting your site using the Experience Cloud Id and email address. There are many other attributes available to track your person's identification (for example customer id, loyalty id).
+    The identification object adds identification capabilities to your schema. In your case, you want to identify profiles visiting your site using the Experience Cloud ID and email address. There are many other attributes available to track your person's identification (for example customer id, loyalty id).
 
     Select **[!UICONTROL Apply]** to add this object to your schema.
 
