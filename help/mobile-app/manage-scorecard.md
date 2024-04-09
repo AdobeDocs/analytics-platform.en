@@ -196,7 +196,7 @@ If you want to remove [!UICONTROL Unspecified] dimension items from your data, d
 
 1. Click the icon next to **[!UICONTROL Unspecified]** to remove unspecified data from your reporting. (You can also remove any other dimension item.)
 
-## View intelligent captions in scorecards
+## View intelligent captions in scorecards {#captions}
 
 Intelligent captions can help non-analysts better make sense of their data without the help of analysts. Intelligent captions use advanced Machine Learning and Generative AI to provide valuable natural-language insights for visualizations.
 
