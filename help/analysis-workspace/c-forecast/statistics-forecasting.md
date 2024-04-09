@@ -3,8 +3,8 @@ description: Forecasting in Analysis Workspace uses a series of advanced statist
 title: Statistical techniques used in forecasting
 feature: Visualizations
 role: User
+exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
 ---
-
 # Statistical techniques used in forecasting service
 
 The forecasting service currently supports Prophet and has been shown to work efficiently and reliably for most data. Prophet is a widely used open-source forecasting package developed by Meta. It decomposes data into trends, seasonalities, and events components. The Prophet model is efficient and scales well to many forecasting applications. Besides, the model works robustly against outliers and missing data.  
@@ -51,4 +51,3 @@ The service doesn't make any assumptions about user data. For example, the servi
 1. Taylor, Sean J., and Benjamin Letham: *Forecasting at scale.* The American Statistician 72.1 (2018): 37-45. 
 1. Triebe, Oskar, et al.: *Neuralprophet: Explainable forecasting at scale.* arXiv preprint arXiv:2111.15397(2021). 
 1. Zhang and Arbour: *Time-series anomaly detection.* US patent application #18/057883.
-
