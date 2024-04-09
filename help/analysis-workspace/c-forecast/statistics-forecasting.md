@@ -2,8 +2,6 @@
 description: Forecasting in Analysis Workspace uses a series of advanced statistical techniques to determine forecast values.
 title: Statistical techniques used in forecasting
 feature: Visualizations
-hide: yes
-hidefromtoc: yes
 role: User
 ---
 
