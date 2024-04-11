@@ -27,7 +27,7 @@ These release notes cover the release period of April 10, 2024 through May 2024.
 
 ## Fixes in Customer Journey Analytics
 
-TBD
+AN-319662; AN-337894; AN-338469; AN-340147; AN-340200; AN-341594; AN-342442; AN-342976; AN-343020; AN-343703; AN-343938; AN-344614; 
 
 ## Important notices for Customer Journey Analytics Administrators
 
