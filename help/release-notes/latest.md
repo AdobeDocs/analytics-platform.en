@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (April 2024)
 
-**Last update**: April 10, 2024
+**Last update**: April 11, 2024
 
 These release notes cover the release period of April 10, 2024 through May 2024. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -14,6 +14,7 @@ These release notes cover the release period of April 10, 2024 through May 2024.
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Expose monthly reports in Reporting Activity Manager** | Provides visibility into monthly reports/requests run at an IMS Org level. |  | April 15, 2024 |
 | **Intelligent Captions in mobile scorecards** | [Intelligent Captions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) can help non-analysts better make sense of their data without the help of analysts. They are now available in Customer Journey Analytics scorecards. |  | April 17, 2024 |
 | **Adobe Product Analytics: Feature Matrix** | Fuel investment decisions by understanding what your core, power, one-time, and questionable features are. [!UICONTROL Feature matrix] measures events by frequency of use vs % active users and compares to median usage. | April 17, 2024 | April 30, 2024 |
 | **Adobe Product Analytics: Enhanced Insights in Funnel** |  In the [Friction](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction) view, the written insights have been enhanced to include categories, deltas and descriptions to further understandability of the chart and table. | April 17, 2024 | April 26, 2024 |
