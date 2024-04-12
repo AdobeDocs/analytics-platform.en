@@ -20,19 +20,19 @@ One of the unique differences between Adobe Analytics and Customer Journey Analy
 
 In Adobe Analytics, all events are processed live and in order by device ID, allowing Adobe to generate, store, and export clickstream data with persisted or attributed values at collection time, including:
 
-* Dimension persistence (e.g., campaign tracking codes that expire after 90 days).
+* Dimension persistence (for example, campaign tracking codes that expire after 90 days).
 * Visit number and sessionization.
 * Dimension values calculated by processing and VISTA rules.
   
 This impacts the export of data from Adobe Analytics:
 
 * Data processing is static after initial collection.
-* Data Feeds include "post" columns, which reflect the collection-time processing.
+* Data feeds include "post" columns, which reflect the collection-time processing.
   
 
 ### Customer Journey Analytics: query-time attribution and sessionization
 
-In Customer Journey Analytics, events are not collected in order and a person ID is used instead of of a device ID, allowing Customer Journey Analytics to update attribution and sessionization at report time. This introduces flexibility, like:
+In Customer Journey Analytics, events are not collected in order and a person ID is used instead of a device ID, allowing Customer Journey Analytics to update attribution and sessionization at report time. This type of data collection introduces flexibility, like:
 
 * Stitching can _replay_ data daily or weekly, associating anonymous events with known events. See [Stitching](../../stitching/overview.md) for more information.
 * Sessionization and persisted values change every time
@@ -49,7 +49,7 @@ For metric consistency, use of the new features in Customer Journey Analytics is
   * apply custom attribution and sessionization based on business rules, and
   * keep customer journeys updated with stitching.
 
-* realization of tailored data exports use cases
+* realization of tailored data export use cases
 
   * export data to where you need it, including Business Intelligence (BI) tools and cloud destinations,
   * keep data synchronized with Analysis Workspace through BI tools integration,
@@ -65,12 +65,12 @@ For metric consistency, use of the new features in Customer Journey Analytics is
 
 ## Use cases and solutions
 
-In general, data export supports a number of use cases. Each use case is different in terms of the data it requires and how to access and export that data. Experience Platform and Customer Journey Analytics provide a number of options that either independently or combined can solve the various use cases. The table below provides an overview of identified use cases and the Experience Platform and Customer Journey Analytics options (or functionalities) to implement these use cases.  
+In general, data export supports a number of use cases. Each use case is different in terms of the data that it requires and how to access and export that data. Experience Platform and Customer Journey Analytics provide a number of options that either independently or combined can solve the various use cases. The table below provides an overview of identified use cases and the Experience Platform and Customer Journey Analytics options (or functionalities) to implement these use cases.  
 
 | Data export use cases | Experience Platform & Customer Journey Analytics functionalities |
 |---|---|
-| **Data Backup**<br/>Retain a complete copy of your digital data for compliance or regulatory purposes. | [**Experience Platform Destinations Data Set Export**](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)<br/>Egress WebSDK collected data directly from AEP to cloud destinations on a schedule or ad-hoc.<br/>*Currently limited release, full release expected in June 2024.* |
+| **Data Backup**<br/>Retain a complete copy of your digital data for compliance or regulatory purposes. | [**Experience Platform Destinations Data Set Export**](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)<br/>Egress WebSDK collected data directly from AEP to cloud destinations on a schedule or ad-hoc.<br/>*Currently limited release, full release is expected in June 2024.* |
 | **Data Validation**<br/>Evaluate clickstream data for data collection accuracy. | [**Experience Platform Query Service & Data Distiller**](emulating-data-feeds.md)<br/> Interactive PostgreSQL interface to make ad-hoc SQL queries using your favorite SQL tool to validate the data in your datasets.<br/><br/>[**Customer Journey Analytics Full Table Export**](../../analysis-workspace/export/export-cloud.md)<br/>Validate processed data from CJA with attribution and sessionization applied. |
-| **Data Lake, Data Warehouse or BI tools**<br/>Bring digital data into your own BI tools or Data Lake for use with additional data sets. | [**Customer Journey Analytics BI Extension**](../../data-views/bi-extension.md)<br/>Add Customer Journey Analytics processed metrics to data visualization tools such as PowerBI and combine with additional data for custom reports<br/><br/>[**Experience Platform Query Service & Data Distiller**](emulating-data-feeds.md)<br>Generate customized clickstream data using SQL to be delivered to cloud destinations. |
-| **Readiness for AI / ML**<br/>Enhance Artificial Intelligence / Machine Learning models and tasks with Customer Journey Analytics data | [**Customer Journey Analytics Full Table Export**](../../analysis-workspace/export/export-cloud.md)<br/>Egress Customer Journey Analytics processed dimensions and metrics to cloud destinations one-time or recurring, including calculated metrics and segmentation.<br/><br/>[**Experience Platform Query Service & Data Distiller**](emulating-data-feeds.md)<br/>Generate customized clickstream data using SQL to enrich AI/ML models. |
+| **Data Lake, Data Warehouse or BI tools**<br/>Bring digital data into your own BI tools or Data Lake for use with additional data sets. | [**Customer Journey Analytics BI Extension**](../../data-views/bi-extension.md)<br/>Add Customer Journey Analytics processed metrics to data visualization tools such as Power BI and combine with additional data for custom reports<br/><br/>[**Experience Platform Query Service & Data Distiller**](emulating-data-feeds.md)<br>Generate customized clickstream data using SQL to be delivered to cloud destinations. |
+| **Readiness for AI / ML**<br/>Enhance Artificial Intelligence / Machine Learning models and tasks with Customer Journey Analytics data | [**Customer Journey Analytics Full Table Export**](../../analysis-workspace/export/export-cloud.md)<br/>Egress Customer Journey Analytics processed dimensions and metrics to cloud destinations one-time or recurring, including calculated metrics and segmentation.<br/><br/>[**Experience Platform Query Service & Data Distiller**](emulating-data-feeds.md)<br/>Generate customized clickstream data using SQL to enrich AI / ML models. |
 
