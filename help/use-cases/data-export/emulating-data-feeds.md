@@ -16,10 +16,10 @@ Adobe Analytics data feeds are a powerful way to get raw data out of Adobe Analy
 
 Emulating an Adobe Analytics data feed involves:
 
-* defining a **scheduled query** that generates the data for your data feed as an output dataset ![output dataset](assets/output-dataset.svg), using **Query Service**.
+* defining a **scheduled query** that generates the data for your data feed as an output dataset ![output dataset](../assets/output-dataset.svg), using **Query Service**.
 * defining a **scheduled dataset export** that exports the output dataset to a cloud storage destination, using **Dataset export**.
 
-![Data feed](assets/data-feed.svg)
+![Data feed](../assets/data-feed.svg)
 
 
 ## Prerequisites
