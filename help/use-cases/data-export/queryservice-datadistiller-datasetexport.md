@@ -1,6 +1,6 @@
 ---
-title: Emulate data feed functionality
-description: Understand how you can emulate Adobe Analytics data feeds with data in Experience Platform.
+title: Experience Platform Query Service, Data Distiller & Dataset Export
+description: Describes functionalities to implement data export use cases.
 solution: Customer Journey Analytics
 feature: Use Cases
 hide: yes
@@ -8,28 +8,35 @@ hidefromtoc: yes
 role: Admin
 exl-id: 71dd9e4e-1d71-424b-b984-492a3e39af5f
 ---
-# Emulate data feed functionality
+# Query Service, Data Distiller & Dataset Export
 
-Adobe Analytics data feeds are a powerful way to get raw data out of Adobe Analytics. This use case describes how to get similar type of raw data out of Experience Platform, so you can use the data in other platforms, tools outside of Adobe and at your organization's discretion.
+This article outlines how the combination of Experience Platform Query Service, Data Distiller and Dataset Export can be used to implement the following [data export use cases](overview.md):
+
+- Data Validation
+- Data Lake, Data Warehouse of BI tools
+- Readiness for Artificial Intelligent / Machine Learning.
+
+
+Adobe Analytics can implement these use cases using its [Data Feeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) functionality. Data feeds are a powerful way to get raw data out of Adobe Analytics. This article describes how to get similar type of raw data out of Experience Platform, so you can implement above mentioned use cases. Where applicable the functionalities described in this article are compared with Adobe Analytics Data Feeds to clarify differences in data and process/
 
 ## Introduction
 
-Emulating an Adobe Analytics data feed involves:
+Exporting data using Query Service, Data Distiller and Dataset Export consists of:
 
-* defining a **scheduled query** that generates the data for your data feed as an output dataset ![output dataset](../assets/output-dataset.svg), using **Query Service**.
-* defining a **scheduled dataset export** that exports the output dataset to a cloud storage destination, using **Dataset export**.
+- defining a **scheduled query** that generates the data for your data feed as an output dataset ![output dataset](../assets/output-dataset.svg), using **Query Service**.
+- defining a **scheduled dataset export** that exports the output dataset to a cloud storage destination, using **Dataset export**.
 
-![Data feed](../assets/data-feed.svg)
+![Data feed](../assets/qs-dd-de.svg)
 
 
 ## Prerequisites
 
 Make sure that you meet all the following requirements before using the functionality described in this use case:
 
-* A working implementation that collects data into Experience Platform's data lake.
-* Access to the Data Distiller add-on to ensure you are entitled to execute batch queries. See [Query Service packaging](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html) for more information.
-* Access to Export datasets functionality, available when you have purchased the Real-Time CDP Prime or Ultimate package, Adobe Journey Optimizer, or Customer Journey Analytics. See [Export datasets to cloud storage destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html) for more information.
-* One or more destinations (for example: Amazon S3, Google Cloud Storage) configured to where you can export the raw data of your data feed.
+- A working implementation that collects data into Experience Platform's data lake.
+- Access to the Data Distiller add-on to ensure you are entitled to execute batch queries. See [Query Service packaging](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html) for more information.
+- Access to Export datasets functionality, available when you have purchased the Real-Time CDP Prime or Ultimate package, Adobe Journey Optimizer, or Customer Journey Analytics. See [Export datasets to cloud storage destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html) for more information.
+- One or more destinations (for example: Amazon S3, Google Cloud Storage) configured to where you can export the raw data of your data feed.
 
 
 ## Query service
@@ -42,10 +49,10 @@ You use the Query Service [user interface](https://experienceleague.adobe.com/do
 
 You can use all the functionality of standard ANSI SQL for SELECT statements and other limited commands to create and execute queries that generate the data for your data feed. See [SQL syntax](https://experienceleague.adobe.com/docs/experience-platform/query/sql/syntax.html) for more information. Beyond this SQL syntax, Adobe supports:
 
-* prebuilt [Adobe-defined functions (ADF)](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html) that help perform common business-related tasks on event data stored in Experience Platform data lake, including functions for [Sessionization](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing.html) and [Attribution](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html),
-* several built-in [Spark SQL functions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html),
-* [metadata PostgreSQL commands](https://experienceleague.adobe.com/docs/experience-platform/query/sql/metadata.html),
-* [prepared statements](https://experienceleague.adobe.com/docs/experience-platform/query/sql/prepared-statements.html).
+- prebuilt [Adobe-defined functions (ADF)](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html) that help perform common business-related tasks on event data stored in Experience Platform data lake, including functions for [Sessionization](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing.html) and [Attribution](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html),
+- several built-in [Spark SQL functions](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html),
+- [metadata PostgreSQL commands](https://experienceleague.adobe.com/docs/experience-platform/query/sql/metadata.html),
+- [prepared statements](https://experienceleague.adobe.com/docs/experience-platform/query/sql/prepared-statements.html).
 
 #### Data feed columns
 
@@ -55,8 +62,8 @@ To help you to define the mapping between the Data Feed columns and XDM fields, 
 
 For example, in case you want to use *page name* as part of your data feed: 
 
-* In Adobe Analytics Data Feed's UI, you would select **[!UICONTROL pagename]** as the column to add to your data feed definition. 
-* In Query Service, you include `web.webPageDetails.name` from the `sample_event_dataset_for_website_global_v1_1` dataset (based on the **Sample Event Schema for Website (Global v1.1)** experience event schema) in your query. See the [Web Details schema field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html) for more information.
+- In Adobe Analytics Data Feed's UI, you would select **[!UICONTROL pagename]** as the column to add to your data feed definition. 
+- In Query Service, you include `web.webPageDetails.name` from the `sample_event_dataset_for_website_global_v1_1` dataset (based on the **Sample Event Schema for Website (Global v1.1)** experience event schema) in your query. See the [Web Details schema field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html) for more information.
 
 <!--
 To understand the mapping between Adobe Analytics data feed columns and XDM fields in your experience event dataset and underlying schema, see [Analytics fields mapping](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html) and [Adobe Analytics ExperienceEvent Full Extension schema field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html) for more information.
@@ -167,10 +174,10 @@ See [Working with nested data structures in Query Service](https://experiencelea
 
 For queries that use data from datasets in the Experience Platform data lake, are tapping on the additional capabilities of Adobe Defined Functions and/or Spark SQL, and which would deliver similar results to an equivalent Adobe Analytics data feed, see
 
-* [abandoned browse](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html) 
-* [attribution analysis](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html) 
-* [bot filtering](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html)
-* and other example use cases in the Query Service guide.
+- [abandoned browse](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html) 
+- [attribution analysis](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html) 
+- [bot filtering](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html)
+- and other example use cases in the Query Service guide.
 
 
 ### Schedule Query
@@ -195,12 +202,12 @@ Once you have created and scheduled your query, and verified the results in the 
 
 The following cloud storage destinations are supported:
 
-* [Azure Data Lake Storage Gen2](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2.html)
-* [Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html)
-* [Google Cloud Storage](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage.html)
-* [Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3.html#changelog)
-* [Azure Blob](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob.html#changelog)
-* [SFTP](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/sftp.html#changelog)
+- [Azure Data Lake Storage Gen2](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2.html)
+- [Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html)
+- [Google Cloud Storage](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage.html)
+- [Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3.html#changelog)
+- [Azure Blob](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob.html#changelog)
+- [SFTP](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/sftp.html#changelog)
 
 
 ### Experience Platform UI
