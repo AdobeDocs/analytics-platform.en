@@ -20,7 +20,16 @@ role: Admin
 
 ## Prerequisites
 
-You must have the **Select** package in order to add unlimited numbers of datasets to a connection. The **Foundation** package is limited to one dataset. Contact your administrator if you're unsure what Customer Journey Analytics package you have.​ 
+The maximum number of datasets you can add to a connection is capped at 100. The mix depends on which Customer Journey Analytics package your company has purchased.
+
+| **Select** package | **Foundation** package |
+| --- | --- |
+| Any combination of event/profile/lookup datasets, adding up to 100  | One event dataset per connection | 
+|  | Up to 99 profile or lookup datasets per connection  |
+
+{style="table-layout:auto"}
+
+Contact your administrator if you're unsure which Customer Journey Analytics package you have.
 
 ## Create and configure the connection {#create-connection}
 
@@ -35,18 +44,18 @@ You must have the **Select** package in order to add unlimited numbers of datase
     | --- | --- |
     | **[!UICONTROL Connection name]** | Enter a unique name for the connection. |
     | **[!UICONTROL Connection description]** | Describe the purpose of this connection. |
-    | **[!UICONTROL Sandbox]** | Choose a sandbox in Experience Platform that contains the dataset/s to which you want to create a connection.<p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.<p>Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from.  |
+    | **[!UICONTROL Sandbox]** | Choose a sandbox in Experience Platform that contains the dataset/s to which you want to create a connection.<p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.<p>Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from.  |
     | **[!UICONTROL Enable rolling data window]** | This checkbox, if checked, lets you define Customer Journey Analytics data retention as a rolling window in months (1 month, 3 months, 6 months, and so on), at the connection level.<p>Data retention is based on event dataset timestamps and applies to event datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. However, if your connection includes any profile or lookup datasets (besides one or more event datasets), that data is retained for the same time period.<p> The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost.<p>If you leave the default (unchecked), the retention period is superseded by the Adobe Experience Platform data retention setting. If you have 25 months' worth of data in Experience Platform, Customer Journey Analytics gets 25 months of data through backfill. If you deleted 10 of those months in Platform, Customer Journey Analytics would retain the remaining 15 months. |
     | **[!UICONTROL Add datasets]** (see below) | Add datasets if no datasets appear in your dataset listing. |
     | **[!UICONTROL Dataset name]** | Select one or more datasets that you want to pull into Customer Journey Analytics and click **[!UICONTROL Add]**.<p>(If you have many datasets to choose from, you can search for the right one(s) using the Search datasets search bar above the list of datasets.) |
     | **[!UICONTROL Last updated]** | For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. "N/A" means that this dataset contains no data. |
-    | **[!UICONTROL Schema]** | The [schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) based on which the dataset was created in Adobe Experience Platform. |
+    | **[!UICONTROL Schema]** | The [schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) based on which the dataset was created in Adobe Experience Platform. |
     | **[!UICONTROL Dataset type]** | For each dataset that you added to this connection, Customer Journey Analytics automatically sets the dataset type based on the data coming in. There are 3 different dataset types: Event data, Profile data, and Lookup data. See the table below for an explanation of dataset types. |
     | **[!UICONTROL Person ID]** | Select a person ID from the drop-down list of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID.<p>IMPORTANT: If there are no person IDs to choose from, that means one or more person IDs have not been defined in the schema. View [this video](https://www.youtube.com/watch?v=G_ttmGl_LRU) on how to define an identity in Experience Platform. |
     | **[!UICONTROL Key]** | For lookup datasets only (such as _id). |
     | **[!UICONTROL Matching Key]** | For lookup datasets only (such as _id). |
     | **[!UICONTROL Import new data]** | Set to On or Off. |
-    | **[!UICONTROL Backfill data]** | You can request to backfill the data in a dataset based on event timestamps. For example, you can request to backfill the last 7 days worth of data, configure the right Person ID and test your connection for correct configuration. If everything looks good, you can backfill all the remaining data with ease.<p>In addition, you can enable the import of new data by dataset. For example, you can enable the import of new data for lookup data only.  |
+    | **[!UICONTROL Backfill data]** | You can request to backfill the data in a dataset based on event timestamps. For example, you can request to backfill the last 7 days worth of data, configure the right Person ID and test your connection for correct configuration. If everything looks good, you can backfill all the remaining data with ease.<p>In addition, you can enable the import of new data by dataset. |
     | **[!UICONTROL Backfill status]** | Indicates whether any backfill data is processing. |
 
     {style="table-layout:auto"}
@@ -170,3 +179,12 @@ This calculation is done for every dataset in the connection.
     In this example, "analytics_demo_data" is the name of the dataset.
 
 2. To show all the datasets that exist in Adobe Experience Platform, perform the `Show Tables` query .
+
+
+## Algorithmic pruning of large lookup datasets
+
+When creating a connection, you can add large datasets for lookup purposes. For example, a dataset representing a product catalog so descriptive product information can be looked up when buiding reports and visualizations. Such a large lookup dataset can exceed the maximum of 10 million unique lookups currently implemented as as guardrail, resulting in additional data being skipped.
+
+You can request an algorithmic pruning of a large lookup dataset. This algorithmic pruning only keeps data in the lookup dataset that matches the keys in your event dataset. This way, you don't need to load the entire unpruned lookup dataset. Old or less frequently used items are removed, which might slightly affect reports but brings significant benefits. The algorithm looks back 90 days and updates weekly.
+
+Contact your Adobe support team for further information and to enable this capability.

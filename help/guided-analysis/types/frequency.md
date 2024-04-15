@@ -1,7 +1,7 @@
 ---
 title: Frequency view
 description: Measure engagement by frequency of use.
-feature: Guided Analysis
+feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User

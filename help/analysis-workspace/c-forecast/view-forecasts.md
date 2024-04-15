@@ -3,6 +3,7 @@ description: Learn how to view forecasts in a table or in a line chart.
 title: How to view forecasts in Analysis Workspace
 feature: Visualizations
 role: User
+exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
 ---
 # View forecasts in Analysis Workspace
 
@@ -10,7 +11,7 @@ You can view forecasts in a freeform table or in a line chart.
 
 ## View forecasts in a table
 
-You can view forecasts in a time-series freeform table. When Show forecast is enabled for Freeform table in [user preferences](../user-preferences.md), forecasting is automatically shown for the first metric column added to the table. For any additional column:
+You can view forecasts in a time-series freeform table. When [!UICONTROL Show forecast] is enabled for Freeform table in [user preferences](../user-preferences.md), forecasting is automatically shown for the first metric column added to the table. For any additional column:
 
 1. Select the column settings icon ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the column header, then ensure that **[!UICONTROL Show forecast]** is selected in the list of options. For more information, see [Column settings](../visualizations/freeform-table/column-row-settings/column-settings.md).
 
@@ -44,5 +45,4 @@ Forecasts are show in the line chart as follows:
   * forecasted value for the metric
   * upper bound of forecasted value for the metric
   * lower bound of forecasted value for the metric
-* the shaded area shows the confidence band of the forecast.
-
+* The shaded area shows the confidence band of the forecast.

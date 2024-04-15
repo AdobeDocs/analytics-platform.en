@@ -7,9 +7,9 @@ role: User
 ---
 # Combine Report Suites with different schemas
 
-The [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) brings report suite data from Adobe Analytics into the Adobe Experience Platform for use by Adobe Experience Platform applications, such as Real-time Customer Data Platform and Customer Journey Analytics (Customer Journey Analytics). Each report suite brought into Adobe Experience Platform is configured as an individual source connection dataflow, and each dataflow lands as a dataset within the Adobe Experience Platform data lake. The Analytics source connector creates one dataset per report suite.
+The [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) brings report suite data from Adobe Analytics into the Adobe Experience Platform for use by Adobe Experience Platform applications, such as Real-time Customer Data Platform and Customer Journey Analytics (Customer Journey Analytics). Each report suite brought into Adobe Experience Platform is configured as an individual source connection dataflow, and each dataflow lands as a dataset within the Adobe Experience Platform data lake. The Analytics source connector creates one dataset per report suite.
 
-Customer Journey Analytics customers use [connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en) to integrate datasets from Adobe Experience Platform data lake into Customer Journey Analytics Analysis Workspace. However, when combining report suites within a connection, schema differences between report suites need to be resolved using Adobe Experience Platform [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) functionality. The purpose is to ensure that Adobe Analytics variables such as props and eVars have a consistent meaning in Customer Journey Analytics.
+Customer Journey Analytics customers use [connections](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html) to integrate datasets from Adobe Experience Platform data lake into Customer Journey Analytics Analysis Workspace. However, when combining report suites within a connection, schema differences between report suites need to be resolved using Adobe Experience Platform [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) functionality. The purpose is to ensure that Adobe Analytics variables such as props and eVars have a consistent meaning in Customer Journey Analytics.
 
 ## Schema differences between report suites are problematic
 
@@ -46,14 +46,14 @@ This situation results in meaningless reports for eVar1 and eVar2:
 
 The Experience Platform Data Prep functionality is integrated with the Analytics source connector and can be used to resolve the schema differences described in the scenario above. This results in eVars with consistent meanings in the Customer Journey Analytics data view. (The naming conventions used below can be customized to suit your needs.)
 
-1. Before creating the source connection dataflows for Report Suite A and Report Suite B, [Create a new schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) in Adobe Experience Platform (we'll call it **Unified Schema** in our example.) Add the following to the schema:
+1. Before creating the source connection dataflows for Report Suite A and Report Suite B, [Create a new schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html) in Adobe Experience Platform (we'll call it **Unified Schema** in our example.) Add the following to the schema:
 
    | "Unified Schema" |
    | --- |
    | **XDM ExperienceEvent** class |
    | **Adobe Analytics ExperienceEvent Template** field group |
 
-1. Add another field group to the schema or [create a custom field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) and add it to the schema. We'll create a new field group and call it **Unified Fields**. Then we'll add the following fields to the new field group:
+1. Add another field group to the schema or [create a custom field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) and add it to the schema. We'll create a new field group and call it **Unified Fields**. Then we'll add the following fields to the new field group:
 
    | "Unified Fields" custom field group |
    | --- |
@@ -152,6 +152,6 @@ Using Data Prep, you can combine the Customer Category in eVar 1 in the Analytic
   
 ## Data Prep vs. Component ID
 
-As described above, Data Prep allows you to map different fields together across multiple Adobe Analytics report suites. This is helpful in Customer Journey Analytics when you want to combine data from multiple datasets into a single Customer Journey Analytics connection. However, if you intend to keep the report suites in separate Customer Journey Analytics connections but you want to use one set of reports across those connections and data views, changing the underlying Component ID in Customer Journey Analytics provides a way to make reports compatible even if schemas are different. See [Component Settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) for more information.
+As described above, Data Prep allows you to map different fields together across multiple Adobe Analytics report suites. This is helpful in Customer Journey Analytics when you want to combine data from multiple datasets into a single Customer Journey Analytics connection. However, if you intend to keep the report suites in separate Customer Journey Analytics connections but you want to use one set of reports across those connections and data views, changing the underlying Component ID in Customer Journey Analytics provides a way to make reports compatible even if schemas are different. See [Component Settings](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html) for more information.
 
 Changing the Component ID is a Customer Journey Analytics-only function and does not impact data from the Analytics source connector that is sent to Real-time Customer Profile and RTCDP.
