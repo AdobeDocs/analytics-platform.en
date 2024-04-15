@@ -22,8 +22,6 @@ For more information about Reporting Activity manager, including key benefits an
 
 1. To view the total number of report requests for all connections in your organization, expand [!UICONTROL **Show more**] to view the [!UICONTROL **Monthly report requests**] graph.
 
-   <!-- add screenshot -->
-
    You can view the number of report requests within your organization for the current month and the previous month.  
 
 1. (Optional) You can search or filter the list of connections:
