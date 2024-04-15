@@ -20,7 +20,7 @@ For more information about Reporting Activity manager, including key benefits an
 
    ![Rporting Activity showing the reports queue](assets/reporting-activity1.png)
 
-1. To view the total number of report requests for all connections in your organization, expand [!UICONTROL **Show graphs**] to view the [!UICONTROL **Monthly report requests**] graph.
+1. To view the total number of report requests for all connections in your organization, expand [!UICONTROL **Show more**] to view the [!UICONTROL **Monthly report requests**] graph.
 
    <!-- add screenshot -->
 
