@@ -1,5 +1,5 @@
 ---
-title: Migration planning guide Adobe Analytics
+title: Plan your migration from Adobe Analytics to Customer Journey Analytics
 to Customer Journey Analytics
 description: Plan your migration from Adobe Analytics to Customer Journey Analytics
 role: Admin
