@@ -33,7 +33,11 @@ To enable transformation for such a dataset:
   >
   >Once turned on, and when the connection is saved, the transformation is irreversible. You cannot modify the transformation setting for a dataset once a connection is saved, other than by removing and adding the dataset once more to the connection. 
 
+To enable transformation for one or more datasets that are already part of an existing connection:
 
+1. Remove the datasets from the connection.
+1. Save the connection.
+1. Add the datasets to the connection while turning on transformation for the datasets
 
 ## Background information
 
