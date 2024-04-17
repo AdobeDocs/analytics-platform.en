@@ -42,13 +42,19 @@ To find information you need, you can either filter the list of locations or sea
 
 1. Select the [!UICONTROL **Locations**] tab.
 
+1. (Conditional) If you are a system administrator, you can enable the [!UICONTROL **View locations for all users**] option to view locations created by all users in your organization.
+
 1. In the search field, begin typing any information associated with the location you're searching for. You can search for data from any column available in the table.
 
 ## Edit locations
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. Select the [!UICONTROL **Locations**] tab, then select the location you want to edit.
+1. Select the [!UICONTROL **Locations**] tab.
+
+1. (Conditional) If you are a system administrator, you can enable the [!UICONTROL **View locations for all users**] option to view locations created by all users in your organization.
+
+1. Select the location you want to edit.
 
    ![Exports window showing Locations tab and list of locations.](assets/locations-edit.png)
 
@@ -64,7 +70,11 @@ To delete a location:
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
-1. Select the [!UICONTROL **Locations**] tab, then select one or more locations that you want to delete.
+1. Select the [!UICONTROL **Locations**] tab.
+
+1. (Conditional) If you are a system administrator, you can enable the [!UICONTROL **View locations for all users**] option to view locations created by all users in your organization.
+
+1. Select one or more locations that you want to delete.
 
    ![Exports window showing Locations tab and list of locations](assets/locations-edit.png)
 
@@ -86,6 +96,8 @@ To delete a location:
 
    ![Exports window showing Location accounts tab](assets/account-add.png)
 
+1. (Conditional) If you are a system administrator, you can enable the [!UICONTROL **View accounts for all users**] option to view locations created by all users in your organization.
+
 1. Select [!UICONTROL **View details**] on the account that you want to edit.
 
 1. Make any desired changes, then select [!UICONTROL **Save**].
@@ -102,6 +114,8 @@ To view keys associated with an export account:
 
    ![Exports window showing Location accounts tab](assets/account-add.png)
 
+1. (Conditional) If you are a system administrator, you can enable the [!UICONTROL **View accounts for all users**] option to view locations created by all users in your organization.
+
 1. Select the 3-dot icon on the account that you want to edit, then select [!UICONTROL **Account keys**]. 
 
 ## Delete accounts
@@ -111,6 +125,8 @@ To view keys associated with an export account:
 1. Select the [!UICONTROL **Location accounts**] tab.
 
    ![Exports window showing Location accounts tab](assets/account-add.png)
+
+1. (Conditional) If you are a system administrator, you can enable the [!UICONTROL **View accounts for all users**] option to view locations created by all users in your organization.
 
 1. Select the 3-dot icon on the account that you want to edit, then select [!UICONTROL **Delete account**]. 
 
