@@ -81,7 +81,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Substring](../data-views/component-settings/substring.md)
     + [Value bucketing](../data-views/component-settings/value-bucketing.md)
   + [Standard component reference](../data-views/component-reference.md)
-  + [SQL Connector](../data-views/sql-connector.md)
+  + [CJA BI extension](../data-views/bi-extension.md)
   + [Derived fields](../data-views/derived-fields/derived-fields.md)
   + [Labels and policies](../data-views/data-governance.md)
 
@@ -170,6 +170,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Forecasting {#forecasting}
     + [Forecasting overview](../analysis-workspace/c-forecast/forecasting.md)
     + [View forecasts in Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
+    + [Statistical techniques used in forecasting service](../analysis-workspace/c-forecast/statistics-forecasting.md)
   + [User preferences](../analysis-workspace/user-preferences.md)
   + Workspace FAQs {#workspace-faq}
     + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)
@@ -182,6 +183,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Analytics dashboards - Overview](../mobile-app/home.md)
   + [Curator tasks](../mobile-app/curator.md)
   + [Create a mobile scorecard](../mobile-app/create-scorecard.md)
+  + [Manage mobile scorecards](../mobile-app/manage-scorecard.md)
   + [Set up executives to use dashboards](../mobile-app/set-up-execs.md)
   + [Executive user quick start guide](../mobile-app/executive.md)
 

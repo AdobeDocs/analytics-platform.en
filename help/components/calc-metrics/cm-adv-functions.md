@@ -62,10 +62,6 @@ This is how the "Approximate Customers" metric could be used in reporting:
 
 ![Freeform Table showing Unique Visitors and Approximate Customers ](assets/approx-customers.png)
 
-## Uniques Exceeded
-
-Like Count() and RowCount(), Approximate Count Distinct() is subject to ["uniques exceeded" limits](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html). If the "uniques exceeded" limit is reached within a particular month for a dimension, the value is counted as 1 dimension item.
-
 ## Comparing Count Functions
 
 Approximate Count Distinct() is an improvement over Count() and RowCount() functions because the metric created can be used in any dimensional report to render an approximated count of items for a separate dimension. For example, a count of customer IDs used in a Mobile Device Type report.
