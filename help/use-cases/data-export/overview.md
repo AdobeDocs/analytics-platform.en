@@ -1,6 +1,6 @@
 ---
 title: Data feed use cases
-description: Understand Customer Journey Analytics alternatives for Adobe Analytics data feed functionality
+description: Understand various data export use cases for Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 hide: yes

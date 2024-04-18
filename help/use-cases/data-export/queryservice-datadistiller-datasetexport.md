@@ -1,6 +1,6 @@
 ---
 title: Experience Platform Query Service, Data Distiller & Dataset Export
-description: Describes functionalities to implement data export use cases.
+description: Describes how to use Query Service, Data Distiller and Dataset Export to export data for data validation, from a data lake, data warehouse or BI tools, or prepare for AI / ML.
 solution: Customer Journey Analytics
 feature: Use Cases
 hide: yes
@@ -17,7 +17,7 @@ This article outlines how the combination of Experience Platform Query Service, 
 - Readiness for Artificial Intelligent / Machine Learning.
 
 
-Adobe Analytics can implement these use cases using its [Data Feeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) functionality. Data feeds are a powerful way to get raw data out of Adobe Analytics. This article describes how to get similar type of raw data out of Experience Platform, so you can implement above mentioned use cases. Where applicable the functionalities described in this article are compared with Adobe Analytics Data Feeds to clarify differences in data and process/
+Adobe Analytics can implement these use cases using its [Data Feeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) functionality. Data feeds are a powerful way to get raw data out of Adobe Analytics. This article describes how to get similar type of raw data out of Experience Platform, so you can implement above mentioned use cases. Where applicable the functionalities described in this article are compared with Adobe Analytics Data Feeds to clarify differences in data and process.
 
 ## Introduction
 
