@@ -68,4 +68,4 @@ If you would rather not have intelligent captions generated, you can toggle this
 
 ## Intelligent captions in Mobile Scorecards
 
-For more information, see [Manage scorecards](/help/mobile-app/manage-scorecard.md)
+Intelligent captions are also available in Customer Journey Analytics [mobile scorecards](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions).

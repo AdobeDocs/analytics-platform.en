@@ -196,12 +196,30 @@ If you want to remove [!UICONTROL Unspecified] dimension items from your data, d
 
 1. Click the icon next to **[!UICONTROL Unspecified]** to remove unspecified data from your reporting. (You can also remove any other dimension item.)
 
-## View intelligent captions in scorecards
+## View intelligent captions in scorecards {#captions}
 
 Intelligent captions can help non-analysts better make sense of their data without the help of analysts. Intelligent captions use advanced Machine Learning and Generative AI to provide valuable natural-language insights for visualizations.
 
-To view intelligent captions:
+These captions pick out key statistical insights in the data and phrase them in natural language, thereby helping the non-analyst develop their data literacy.
 
-1. Click into a tile.
+Intelligent caption are available for all visualizations in the mobile app, include Line, Donut, Bar Chart, and Summary Number.
 
-1. more
+To view intelligent captions in a mobile scorecard:
+
+1. In a scorecard, click into a tile. For example, in this scorecard, click into the line graph at the bottom.
+
+    ![Scorecard with line visualization](assets/caption1.png)
+
+1. Tap the blue icon  at the top right to generate the captions. The captions will appear below the line graph.
+
+    ![Intelligent caption in line visualization](assets/caption2.png)
+
+1. Swipe right to view all intelligent captions.
+
+    Intelligent captions can point to data spikes, anomalies, trends, declines, correlations, and other phenomena.
+
+1. Tap the black flag inside a caption to report a problem, such as harmful or illegal content.
+
+    ![Report problem with caption](assets/caption-report.png)
+
+1. Click the X to exit out of the **[!UICONTROL Report results]** dialog.
