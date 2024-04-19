@@ -59,6 +59,8 @@ This page represents Step 1 of the migration, as shown in the following table. C
 
 {style="table-layout:auto"}
 
-## To begin the migration, choose the migration method
+## First, choose the migration method
 
-Various methods are available for migrating to Customer Journey Analytics. [Choose the method that is best for your organization](/help/getting-started/cja-migration/cja-migration-method.md), depending on your organization's current Adobe Analytics environment and long-term goals.
+Various methods are available for migrating to Customer Journey Analytics. [Choose the method that is best for your organization](/help/getting-started/cja-migration/cja-migration-method.md). 
+
+The migration method you choose depends on your organization's current Adobe Analytics environment and long-term goals.
