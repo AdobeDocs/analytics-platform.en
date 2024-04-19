@@ -36,6 +36,16 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
   + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
+  + Migrate to Customer Journey Analytics
+    + [Get started](/help/getting-started/cja-migration/cja-migration-getstarted.md)
+    + [Choose a migration method](/help/getting-started/cja-migration/cja-migration-method.md)
+    + [Send data to Platform](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)
+    + [Map data to XDM](/help/getting-started/cja-migration/cja-migration-xdm.md)
+    + [Retain historical data](/help/getting-started/cja-migration/cja-migration-historical-data.md)
+    + [Plan user onboarding](/help/getting-started/cja-migration/cja-migration-onboarding.md)
+    + [Port API usage](/help/getting-started/cja-migration/cja-migration-api.md)
+    + [Replace Data Feeds and Data Warehouse](/help/getting-started/cja-migration/cja-migration-export-options.md)
+    + [Migrate projects and components](/help/getting-started/cja-migration/cja-migration-projects.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
