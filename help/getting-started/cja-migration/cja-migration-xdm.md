@@ -6,7 +6,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 ---
-# Map data to the XDM schema
+# Step 4: Map data to the XDM schema
+
++++See where you are in the migration process
 
 >[!NOTE]
 >
@@ -27,6 +29,8 @@ feature: Basics
 >| **Step 9: [Migrate projects and components](/help/getting-started/cja-migration/cja-migration-projects.md)** | The Component migration area in Adobe Analytics allows you to migrate projects and their associated components from Adobe Analytics to Customer Journey Analytics.  |
 >
 >{style="table-layout:auto"}
+
++++
 
 Working with your data team, identify your organization's ideal schema design for Customer Journey Analytics, then determine how you will map eVars and Props to XDM. 
 

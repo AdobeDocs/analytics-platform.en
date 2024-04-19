@@ -8,6 +8,8 @@ feature: Basics
 ---
 # Step 2: Choose your Customer Journey Analytics migration method
 
++++See where you are in the migration process
+
 >[!NOTE]
 >
 >Before you continue with this section, first make sure you have completed all previous migration tasks.
@@ -27,6 +29,8 @@ feature: Basics
 >| **Step 9: [Migrate projects and components](/help/getting-started/cja-migration/cja-migration-projects.md)** | The Component migration area in Adobe Analytics allows you to migrate projects and their associated components from Adobe Analytics to Customer Journey Analytics.  |
 >
 >{style="table-layout:auto"}
+
++++
 
 After you decide to migrate to Customer Journey Analytics, you need to determine the optimal migration method for your organization.  
 

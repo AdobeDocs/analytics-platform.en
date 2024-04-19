@@ -6,7 +6,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 ---
-# Replace Data Feeds and Data Warehouse
+# Step 8: Replace Data Feeds and Data Warehouse
+
++++See where you are in the migration process
 
 >[!NOTE]
 >
@@ -27,6 +29,8 @@ feature: Basics
 >| **Step 9: [Migrate projects and components](/help/getting-started/cja-migration/cja-migration-projects.md)** | The Component migration area in Adobe Analytics allows you to migrate projects and their associated components from Adobe Analytics to Customer Journey Analytics.  |
 >
 >{style="table-layout:auto"}
+
++++
 
 If you currently use Data Feeds or Data Warehouse in Adobe Analytics, use the following table to learn about the various export options available in Customer Journey Analytics:
 

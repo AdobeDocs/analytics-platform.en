@@ -6,7 +6,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 ---
-# Get started with the migration to Customer Journey Analytics
+# Step 1: Get started with the migration to Customer Journey Analytics
 
 Customer Journey Analytics is the next generation of analytics. It allows multi-channel data collection (both online and offline data), combined with powerful report-time processing functionality (through the definition of components and derived fields in data views). 
 

@@ -6,7 +6,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 ---
-# Plan user onboarding
+# Step 6: Plan user onboarding
+
++++See where you are in the migration process
 
 >[!NOTE]
 >
@@ -27,6 +29,8 @@ feature: Basics
 >| **Step 9: [Migrate projects and components](/help/getting-started/cja-migration/cja-migration-projects.md)** | The Component migration area in Adobe Analytics allows you to migrate projects and their associated components from Adobe Analytics to Customer Journey Analytics.  |
 >
 >{style="table-layout:auto"}
+
++++
 
 There are a few key differences between Customer Journey Analytics and Adobe Analytics that users need to be aware of. 
 

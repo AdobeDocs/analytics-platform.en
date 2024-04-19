@@ -6,7 +6,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 ---
-# Step 4: Retain historical data
+# Step 5: Retain historical data
+
++++See where you are in the migration process
 
 >[!NOTE]
 >
@@ -27,6 +29,8 @@ feature: Basics
 >| **Step 9: [Migrate projects and components](/help/getting-started/cja-migration/cja-migration-projects.md)** | The Component migration area in Adobe Analytics allows you to migrate projects and their associated components from Adobe Analytics to Customer Journey Analytics.  |
 >
 >{style="table-layout:auto"}
+
++++
 
 Choose one of the following options to retain historical data when moving from Adobe Analytics to Customer Journey Analytics: 
 

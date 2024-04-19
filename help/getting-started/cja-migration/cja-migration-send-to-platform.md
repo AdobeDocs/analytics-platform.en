@@ -6,7 +6,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 ---
-# Send data to Adobe Experience Platform
+# Step 3: Send data to Adobe Experience Platform
+
++++See where you are in the migration process
 
 >[!NOTE]
 >
@@ -27,6 +29,8 @@ feature: Basics
 >| **Step 9: [Migrate projects and components](/help/getting-started/cja-migration/cja-migration-projects.md)** | The Component migration area in Adobe Analytics allows you to migrate projects and their associated components from Adobe Analytics to Customer Journey Analytics.  |
 >
 >{style="table-layout:auto"}
+
++++
 
 
 After you [choose the migration method](#step-2-choose-your-customer-journey-analytics-migration-method) that is best for your organization, you can begin sending data to Adobe Experience Platform in order to make it available in Customer Journey Analytics. 
