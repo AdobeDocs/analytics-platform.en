@@ -35,12 +35,15 @@ feature: Basics
 
 After you [choose the migration method](#step-2-choose-your-customer-journey-analytics-migration-method) that is best for your organization, you can begin sending data to Adobe Experience Platform in order to make it available in Customer Journey Analytics. 
 
-The process for sending data to Experience Platform for each migration method is described below:
+The process for sending data to Experience Platform for each migration method is shown below. Follow the links for more detailed information.
 
 |Migration method | Process for sending data to Platform | 
 |---------|----------|
 | New implementation of the Web SDK | [Ingest data via the Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) | 
-| Migrate your Adobe Analytics implementation to use the Web SDK | (Coming soon) | 
+| Migrate your Adobe Analytics implementation to use the Web SDK | If you are using the Analytics tag extension: [Migrate from the Adobe Analytics tag extension to the Web SDK tag extension](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)<p>Or</p><p>If you are using AppMeasurement: [Migrate from AppMeasurement to the Web SDK](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk) | 
 | Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics | [Set up a datastream](/https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream) in [Ingest data via the Adobe Experience Platform Web SDK](/https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk)  | 
 | Analytics Source Connector | [Ingest and use data from traditional Adobe Analytics](/help/data-ingestion/analytics.md) | 
 
+## Next, map data to the XDM schema
+
+After you send data to Experience Platform by following the links in the table above, you need to [map data to the XDM schema](/help/getting-started/cja-migration/cja-migration-xdm.md).
