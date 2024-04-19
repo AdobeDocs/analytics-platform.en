@@ -35,3 +35,7 @@ feature: Basics
 Port the reporting API usage from the Adobe Analytics reporting API to the Customer Journey Analytics reporting API. 
 
 The Customer Journey Analytics reporting API is in the same format, but uses a different endpoint.
+
+## Next, replace Data Feeds and Data Warehouse
+
+Decide how you will use the export options available in Customer Journey Analytics in order to [replace the Data Feeds and Data Warehouse features](/help/getting-started/cja-migration/cja-migration-export-options.md) you were using in Adobe Analytics.

@@ -107,6 +107,6 @@ The following table shows the migration methods available for organizations who 
 
 {style="table-layout:auto"}
 
-## Send data to Adobe Experience Platform
+## Next, send data to Adobe Experience Platform
 
 After you use the information above to choose a migration method, learn how to [send data to Adobe Experience Platform](/help/getting-started/cja-migration/cja-migration-send-to-platform.md) depending on the migration method that you chose.

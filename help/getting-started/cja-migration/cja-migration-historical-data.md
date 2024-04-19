@@ -50,3 +50,6 @@ You can maintain your existing Adobe Analytics implementation alongside your new
 
 Contact your Adobe account representative to determine pricing for this option. 
 
+## Next, plan user onboarding
+
+[Plan user onboarding to Customer Journey Analytics](/help/getting-started/cja-migration/cja-migration-onboarding.md). You should give your users ample time (3 - 6 months) to become familiar with the key differences of Analysis Workspace in Customer Journey Analytics.

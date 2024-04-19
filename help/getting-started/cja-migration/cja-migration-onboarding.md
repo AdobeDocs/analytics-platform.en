@@ -39,3 +39,7 @@ Like in Adobe Analytics, Analysis Workspace is the main user-facing tool in Cust
 You should give your users ample time (3 - 6 months) to become familiar with the key differences of Analysis Workspace in Customer Journey Analytics.
 
 For information about some of the key differences between Adobe Analytics and Customer Journey Analytics, see [User Guide for Adobe Analytics users](help/getting-started/aa-to-cja-user.md).
+
+## Next, port the reporting API usage
+
+The Customer Journey Analytics reporting API is in the same format, but uses a different endpoint. [Port the reporting API usage](/help/getting-started/cja-migration/cja-migration-api.md) from the Adobe Analytics reporting API to the Customer Journey Analytics reporting API.

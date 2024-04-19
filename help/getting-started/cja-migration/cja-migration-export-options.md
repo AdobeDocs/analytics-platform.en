@@ -40,3 +40,7 @@ If you currently use Data Feeds or Data Warehouse in Adobe Analytics, use the fo
 | Data Warehouse | Change Adobe Analytics Data Warehouse exports to use [Full Table Export](/help/analysis-workspace/export/export-cloud.md) in Customer Journey Analytics.<p>Customer Journey Analytics Full Table Export is the evolution of Data Warehouse reports in Adobe Analytics, with many new, often-requested features that are not available in Data Warehouse today.</p> | 
 
 {style="table-layout:auto"}
+
+## Next, migrate projects and components
+
+Use the Component migration area in Adobe Analytics to [migrate projects and their associated components](/help/getting-started/cja-migration/cja-migration-projects.md) from Adobe Analytics to Customer Journey Analytics. 

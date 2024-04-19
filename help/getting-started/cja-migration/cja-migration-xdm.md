@@ -42,3 +42,7 @@ Working with your data team, identify your organization's ideal schema design fo
 ### Plan data mapping for Customer Journey analytics and other Adobe Experience platform applications
 
 -->
+
+## Next, retain historical data
+
+Next, choose the method you will use to [retain historical Adobe Analytics data](/help/getting-started/cja-migration/cja-migration-historical-data.md).

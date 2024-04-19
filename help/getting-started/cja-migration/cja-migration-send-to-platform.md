@@ -43,3 +43,4 @@ The process for sending data to Experience Platform for each migration method is
 | Migrate your Adobe Analytics implementation to use the Web SDK | (Coming soon) | 
 | Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics | [Set up a datastream](/https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream) in [Ingest data via the Adobe Experience Platform Web SDK](/https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk)  | 
 | Analytics Source Connector | [Ingest and use data from traditional Adobe Analytics](/help/data-ingestion/analytics.md) | 
+
