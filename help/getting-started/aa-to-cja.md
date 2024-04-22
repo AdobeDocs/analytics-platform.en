@@ -8,27 +8,25 @@ exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 ---
 # Evolution from Adobe Analytics
 
-As your organization evolves to use Customer Journey Analytics, explore these steps to prepare your data and to become aware of critical differences between the two technologies. This article is aimed at an administrator audience.
-
-## Prepare your data
+## Step 3: Prepare your existing data 
 
 Preparing your Adobe Analytics data for a seamless move to Customer Journey Analytics is critical to data integrity and reporting consistency.
 
-### 1. Collect identities {#identities}
+### Collect identities
 
-Perhaps the most critical component of understanding a customer journey is knowing who the customer is at each step. For Customer Journey Analytics, having an identifier that exists across all your channels and the corresponding data allows for stitching multiple sources together within Customer Journey Analytics. 
+Perhaps the most critical component of understanding a customer journey is knowing who the customer is at each step. For Customer Journey Analytics, having an identifier that exists across all your channels and the corresponding data allows for stitching multiple sources together within Customer Journey Analytics.
 Examples of identities might be a customer ID, account ID, or email ID. Whatever the identity (and there may be multiple), make sure you consider the following for each ID:
 
 * ID exists or can be added to all data sources you want to bring into Customer Journey Analytics
 * ID is populated on each row of data
-* ID does not contain PII. Apply hashing to anything that might be sensitive. 
+* ID does not contain PII. Apply hashing to anything that might be sensitive.
 * ID uses the same format across all sources (same length, same hashing method, etc.)
 
-In datasets like Adobe Analytics, an identity may not exist on every row of data, but a secondary identity does. In this case, Cross-channel Analysis (also known as "Stitching") can be used to bridge the gap between rows when a customer is only identified by their ECID and when an identity is collected (for example, when a customer authenticates). [Learn more](../stitching/overview.md).
+In datasets like Adobe Analytics, an identity may not exist on every row of data, but a secondary identity does. In this case, [Cross-channel Analysis (also known as "Stitching")](/help/stitching/overview.md) can be used to bridge the gap between rows when a customer is only identified by their ECID and when an identity is collected (for example, when a customer authenticates).
 
-### 2. Align your variables {#variables}
+### Align your variables
 
-The most straightforward method of transforming Adobe Analytics data into Customer Journey Analytics data is to ingest a [global report suite](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html) into Experience Platform using the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). This connector maps your Adobe Analytics variables directly to an XDM schema and dataset in Experience Platform, which can in turn be easily connected to Customer Journey Analytics. 
+The most straightforward method of transforming Adobe Analytics data into Customer Journey Analytics data is to ingest a [global report suite](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html) into Experience Platform using the [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). This connector maps your Adobe Analytics variables directly to an XDM schema and dataset in Experience Platform, which can in turn be easily connected to Customer Journey Analytics. 
 
 A full global report suite may not always be feasible for an implementation. If you are planning to bring multiple report suites into Customer Journey Analytics, you have 2 options:
 
@@ -40,7 +38,7 @@ If you have avoided moving to a global report suite due to issues with [!UICONTR
 
 Here is a use case on [combining report suites with different schemas](/help/use-cases/aa-data/combine-report-suites.md).
 
-### 3. (Re)Configure your Marketing Channels {#marketing-channels}
+### (Re)Configure your Marketing Channels
 
 Traditional Adobe Analytics Marketing Channel settings do not perform the same in Customer Journey Analytics. This is for two reasons:
 
@@ -52,43 +50,9 @@ Adobe has published [updated best practices for Marketing Channel implementation
 
 With the introduction of [Derived fields](../data-views/derived-fields/derived-fields.md) as part of Customer Journey Analytics Data views, Marketing Channels are also supported in a non-destructive and retro-active manner using the [Marketing Channel function template](../data-views/derived-fields/derived-fields.md#function-templates).
 
-### 4. Decide on using Analytics source connector vs. Experience Platform SDKs {#connector-vs-sdk}
+## Prepare for critical differences when migrating to Customer Journey Analytics
 
-Adobe Analytics customers can easily leverage their report suites in the Adobe Experience Platform and Customer Journey Analytics using the Analytics source connector. For information on using the Analytics source connector, see the quick start guide on how to [ingest data from Adobe Analytics and use it in Customer Journey Analytics](../data-ingestion/analytics.md). Also see [Create an Adobe Analytics source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) for more information.
-
-Adobe also offers the ability to implement data collection using the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html) or [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html). These methods greatly expand the possibilities for data collection. There is no longer a limitation on the number of fields or the need to map data elements to props, eVars, and events like in Analytics. You can use unlimited schema elements of different types and represent them in multiple ways using Customer Journey Analytics [Data Views](/help/data-views/data-views.md). Speed of data availability increases when sent directly to Adobe Experience Platform, as the time for data processing through Adobe Analytics is removed.   
-
-**Advantages of using Experience Platform SDKs:**
-
-* Flexible schema to define any fields you need
-* Not reliant on Adobe Analytics nomenclature (prop, eVar, event, etc.)
-* No character limit concerns (100 chars for props)
-* Faster data availability in Adobe Experience Platform to power [real-time personalization use cases](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)
-* [First-party device IDs](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) for enhanced accuracy of visitor identification
-
-**Drawbacks to using Experience Platform SDKs**
-
-The following Adobe Analytics features or components are not supported:
-
-* Bot Filtering
-* Streaming Media Measurement
-* Livestream or Livestream triggers
-
-### 5. Map projects and components from Adobe Analytics to Customer Journey Analytics
-
-Adobe Analytics administrators can migrate Adobe Analytics projects and their associated components to Customer Journey Analytics.
-
-The migration process includes:
-
-* Re-creating Adobe Analytics projects in Customer Journey Analytics.
-
-* Mapping dimensions and metrics from Adobe Analytics report suites to dimensions and metrics in Customer Journey Analytics data views.
-
-Before you begin the migration, first [Prepare to migrate components and projects from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html). 
-
-After you make all of the needed preparations, you can [Migrate components and projects from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html).
-
-## Prepare for critical differences
+As your organization evolves to use Customer Journey Analytics, explore these steps to prepare your data and to become aware of critical differences between the two technologies. This article is aimed at an administrator audience.
 
 ### Get comfortable with Report-time Processing {#report-time}
 
@@ -126,6 +90,6 @@ Here are a couple of videos to guide you:
 
 * Consider providing a data dictionary for your users – or extend the SDR to include the Experience Platform field name for schema elements.
 
-## Next steps
+### Next steps
 
 After moving to Customer Journey Analytics, if you notice any data discrepancies, you can compare your original Adobe Analytics data with the Adobe Analytics data that is now in Customer Journey Analytics. [Learn more](/help/troubleshooting/compare.md)
