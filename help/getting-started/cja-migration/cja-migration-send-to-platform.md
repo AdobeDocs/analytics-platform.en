@@ -53,6 +53,6 @@ The following implementation methods require that you map data to the XDM schema
 
 * Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics
 
-Alternatively, if you chose to do a new implementation of the Web SDK, a mapping is not required because you already [set up a new XDM schema](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema) as part of the new implementation.. 
+Alternatively, if you chose to do a new implementation of the Web SDK, a mapping is not required because you already [set up a new XDM schema](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema) as part of the new implementation.
 
 If you chose to use the Analytics Source Connector for your migration, a mapping is not required because the Analytics Source Connector uses your existing Adobe Analytics schema rather than the XDM schema.

@@ -58,6 +58,7 @@ This page represents Step 1 of the migration, as shown in the following table. C
 | **Step 7: [Port the reporting API usage](/help/getting-started/cja-migration/cja-migration-api.md)** | The Customer Journey Analytics reporting API is in the same format, but uses a different endpoint. Port the reporting API usage from the Adobe Analytics reporting API to the Customer Journey Analytics reporting API. | 
 | **Step 8: [Replace Data Feeds and Data Warehouse](/help/getting-started/cja-migration/cja-migration-export-options.md)** | Decide how you will use the export options available in Customer Journey Analytics in order to replace the Data Feeds and Data Warehouse features you were using in Adobe Analytics.  |
 | **Step 9: [Migrate projects and components](/help/getting-started/cja-migration/cja-migration-projects.md)** | The Component migration area in Adobe Analytics allows you to migrate projects and their associated components from Adobe Analytics to Customer Journey Analytics.  |
+| **Step 10: [Perform post-migration tasks](/help/getting-started/cja-getting-started.md)** | After you complete the migration, you need to perform various tasks, including bringing other data into Experience Platform, creating connections between Platform datasets and Customer Journey Analytics, creating data views, and learning how to report on cross-channel data in Analysis Workspace.  |
 
 {style="table-layout:auto"}
 
