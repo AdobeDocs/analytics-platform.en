@@ -170,6 +170,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Forecasting {#forecasting}
     + [Forecasting overview](../analysis-workspace/c-forecast/forecasting.md)
     + [View forecasts in Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
+    + [Statistical techniques used in forecasting service](../analysis-workspace/c-forecast/statistics-forecasting.md)
   + [User preferences](../analysis-workspace/user-preferences.md)
   + Workspace FAQs {#workspace-faq}
     + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)

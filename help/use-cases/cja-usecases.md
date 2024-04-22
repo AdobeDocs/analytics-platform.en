@@ -15,4 +15,4 @@ Customer Journey Analytics enables the following key use cases:
 * **Harness the power of data science for your analysts**: Customer Journey Analytics lets normal humans use data science to unlock deep insights and analysis.
 * **Visualize and interact with your datasets using ad hoc reporting**: Workspace can use any dataset from Adobe Experience Platform that conform to some basic rules. 
 * **View non-web data**: Workspace is no longer limited to a rigid definition of a 'hit' or 'event'. Custom schemas allow complete control over data and definitions.  
-* **Exert greater control over your data manipulation**: Change data you've uploaded, create new datasets, and import them into Workspace. Adobe Experience Platform provides querying, extracting, transforming, and loading tools through the Experience Cloud Query Service.
+* **Exert greater control over your data manipulation**: Change data you've uploaded, create new datasets, and import them into Workspace. Adobe Experience Platform provides querying, extracting, transforming, and loading tools through the Experience Platform Query Service.
