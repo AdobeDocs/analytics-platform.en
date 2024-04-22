@@ -249,7 +249,7 @@ In case your site receives the following sample events, containing [!UICONTROL R
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` | 
+| `https://google.com` |  | 
 
 {style="table-layout:auto"}
 
@@ -881,6 +881,135 @@ You must select the same type of fields within a Merge Fields rule. For example,
 
 +++
 
+
+<!-- PREVIOUS OR NEXT -->
+
+### Previous Or Next
+
+Takes a field as input and resolves the next or previous value for that field within the scope of the session or use. This will only apply to the Visit and Event table fields.
+
++++ Details
+
+## Specification {#prevornext-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Method]:<ul><li>Previous value</li><li>Next value</li></ul></li><li>[!UICONTROL Scope]:<ul><li>Person</li><li>Session</li></ul></li><li>[!UICONTROL Index]:<ul><li>Numeric</li></ul><li>[!UICONTROL Include repeats]:<ul><li>Boolean</li></ul></li><li>[!UICONTROL Include 'No Values']:<ul><li>Boolean</li></ul></li></ul> | <p>N/A</p> | <p>3 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+## Use case 1 {#prevornext-uc1}
+
+You would like to understand what the most common **next** show someone did watch and populate that into a new component called `Next Show Name`. You currently collect `Show Name` in a dimension.
+
+### Data before {#prevornext-uc1-databefore}
+
+| CustomerID | Show Name | Watch Event |
+|---|---|---:|
+| ABC123 | The Book of Boba Fett | 1 |
+| ABC123 |  Obi-Wan | 1 |
+| ABC123 | DuckTales | 1 |
+| ABC456 |  DuckTales | 1 |
+| ABC456 | Hawkeye | 1 |
+| ABC456 |  The Book of Boba Fett | 1 |
+| ABC789 | Hawkeye | 1 |
+| ABC789 | Wandavision | 1 |
+| ABC789 | Loki | 1 |
+
+{style="table-layout:auto"}
+
+| Next Show | Events |
+|---|---|
+| Loki | 1 |
+| Hawkeye | 1 |
+| The Book of Boba Fett | 1 |
+| Obi-Wan | 1 |
+| DuckTales | 1 |
+| WandaVision | 1 |
+
+{style="table-layout:auto"}
+
+### Derived field {#prevnext-uc1-derivedfield}
+
+You define a `Next Show Name` derived field. You use the [!UICONTROL NEXT OR PREVIOUS] function to define a rule that selects the [!UICONTROL Show Name] field, select [!UICONTROL Next value] as [!UICONTROL Method], [!UICONTROL Person] as Scope and sets value of [!UICONTROL Index] to `1`.
+
+![Screenshot of the Merge Fields rule](assets/prevnext-next.png)
+
+### Data after {#prevnext-uc1-dataafter}
+
+| CustomerID | Show Name | Watch Event | Next Show Name |
+|---|---|--:|---|
+| ABC123  |  The Book of Boba Fett |   1  |  Obi-Wan |
+| ABC123 |   Obi-Wan  |  1  |  DuckTales |
+| ABC123  |  DuckTales  |  1    | |
+| ABC456 |   DuckTales  |  1   | Hawkeye|
+| ABC456 |   Hawkeye  |  1  |  The Book of Boba Fett |
+| ABC456  |  The Book of Boba Fett  |  1    | |
+| ABC789  |  Hawkeye  |  1 |  WandaVision |
+| ABC789 |   Wandavision  |  1  |  Loki |
+| ABC789  |  Loki  |  1    | |
+
+{style="table-layout:auto"}
+
+## Use case 2 {#prevornext-uc2}
+
+You would like to understand what the most common **previous** show someone did watch and populate that into a new component called `Previous Show Name`. You currently collect `Show Name` in a dimension.
+
+### Data before {#prevornext-uc2-databefore}
+
+| CustomerID | Show Name | Watch Event |
+|---|---|---:|
+| ABC123 | The Book of Boba Fett | 1 |
+| ABC123 |  Obi-Wan | 1 |
+| ABC123 | DuckTales | 1 |
+| ABC456 |  DuckTales | 1 |
+| ABC456 | Hawkeye | 1 |
+| ABC456 |  The Book of Boba Fett | 1 |
+| ABC789 | Hawkeye | 1 |
+| ABC789 | Wandavision | 1 |
+| ABC789 | Loki | 1 |
+
+{style="table-layout:auto"}
+
+| Previous Show | Events |
+|---|---|
+| Hawkeye | 2 |
+| The Book of Boba Fett | 1 |
+| Obi-Wan | 1 |
+| DuckTales | 1 |
+| WandaVision | 1 |
+
+{style="table-layout:auto"}
+
+### Derived field {#prevnext-uc2-derivedfield}
+
+You define a `Previous Show Name` derived field. You use the [!UICONTROL NEXT OR PREVIOUS] function to define a rule that selects the [!UICONTROL Show Name] field, selects [!UICONTROL Previous value] as [!UICONTROL Method], [!UICONTROL Person] as [!UICONTROL Scope], and sets the value of [!UICONTROL Index] to `1`.
+
+![Screenshot of the Merge Fields rule](assets/prevnext-prev.png)
+
+### Data after {#prevnext-uc2-dataafter}
+
+
+| CustomerID | Show Name | Watch Event | Previous Show |
+|---|---|--:|---|
+|ABC123   | The Book of Boba Fett  |  1    | |
+| ABC123   | Obi-Wan  |  1   | The Book of Boba Fett |
+| ABC123 |   DuckTales  |  1   | Obi-Wan |
+| ABC456  |  DuckTales |   1    | |
+| ABC456  |  Hawkeye  |  1  |  DuckTales |
+| ABC456   | The Book of Boba Fett |   1  |  Hawkeye |
+| ABC789 |   Hawkeye  |  1    | |
+| ABC789  |  WandaVision |   1 |   Hawkeye |
+| ABC789  |  Loki |   1  |  WandaVision |
+
+{style="table-layout:auto"}
+
+
+## More information {#prevnext-moreinfo}
+
+You can only select fields that belong to the Visit or Event table
+
++++
 
 <!-- REGEX REPLACE -->
 
