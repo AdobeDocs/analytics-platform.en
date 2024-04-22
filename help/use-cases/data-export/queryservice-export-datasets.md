@@ -1,6 +1,6 @@
 ---
-title: Experience Platform Query Service, Data Distiller & Dataset Export
-description: Describes how to use Query Service, Data Distiller and Dataset Export to export data for data validation, from a data lake, data warehouse or BI tools, or prepare for AI / ML.
+title: Experience Platform Query Service (Data Distiller) & Export datasets
+description: Describes how to use Query Service (Data Distiller) and Dataset export to export data for data validation, from a data lake, data warehouse or BI tools, or prepare for AI / ML.
 solution: Customer Journey Analytics
 feature: Use Cases
 hide: yes
@@ -8,9 +8,9 @@ hidefromtoc: yes
 role: Admin
 exl-id: 71dd9e4e-1d71-424b-b984-492a3e39af5f
 ---
-# Query Service, Data Distiller & Dataset Export
+# Query Service (Data Distiller) & Export datasets
 
-This article outlines how the combination of Experience Platform Query Service, Data Distiller and Dataset Export can be used to implement the following [data export use cases](overview.md):
+This article outlines how the combination of Experience Platform Query Service (Data Distiller) and Dataset export can be used to implement the following [data export use cases](overview.md):
 
 - Data Validation
 - Data Lake, Data Warehouse of BI tools
@@ -21,12 +21,12 @@ Adobe Analytics can implement these use cases using its [Data Feeds](https://exp
 
 ## Introduction
 
-Exporting data using Query Service, Data Distiller and Dataset Export consists of:
+Exporting data using Query Service (Data Distiller) and Dataset export consists of:
 
 - defining a **scheduled query** that generates the data for your data feed as an output dataset ![output dataset](../assets/output-dataset.svg), using **Query Service**.
 - defining a **scheduled dataset export** that exports the output dataset to a cloud storage destination, using **Dataset export**.
 
-![Data feed](../assets/qs-dd-de.svg)
+![Data feed](../assets/queryservice-export-datasets.svg)
 
 
 ## Prerequisites
