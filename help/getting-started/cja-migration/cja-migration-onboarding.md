@@ -8,7 +8,7 @@ feature: Basics
 ---
 # Step 6: Plan user onboarding
 
-+++See where you are in the migration process
++++The information on this page is part of a larger migration process. Make sure you complete all previous migration steps before continuing with this section. </br></br>See where this section fits within the migration process.
 
 >[!NOTE]
 >
