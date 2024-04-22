@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 6e5c3ecf-6eba-4dfa-8bf2-e43d56cfc65f
 ---
 # Step 9: Migrate projects and components to Customer Journey Analytics
 

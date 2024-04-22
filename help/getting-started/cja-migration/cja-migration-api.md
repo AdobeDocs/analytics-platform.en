@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: d26a6956-870f-44f2-9c32-f732bff17737
 ---
 # Step 7: Port the reporting API usage when migrating to Customer Journey Analytics
 

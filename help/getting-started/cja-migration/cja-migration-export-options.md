@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 3a99aed3-26b9-494f-aaf9-f8eaa2c2d88f
 ---
 # Step 8: Replace Data Feeds and Data Warehouse when migrating to Customer Journey Analytics
 
@@ -42,4 +43,4 @@ If you currently use Data Feeds or Data Warehouse in Adobe Analytics, use the fo
 
 ## Next, migrate projects and components
 
-Use the Component migration area in Adobe Analytics to [migrate projects and their associated components](/help/getting-started/cja-migration/cja-migration-projects.md) from Adobe Analytics to Customer Journey Analytics. 
+Use the Component migration area in Adobe Analytics to [migrate projects and their associated components](/help/getting-started/cja-migration/cja-migration-projects.md) from Adobe Analytics to Customer Journey Analytics.

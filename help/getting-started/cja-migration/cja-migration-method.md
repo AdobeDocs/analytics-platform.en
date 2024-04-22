@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
 ---
 # Step 2: Choose your Customer Journey Analytics migration method
 

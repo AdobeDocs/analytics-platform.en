@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 34ccab37-a37f-4d69-aa96-ae1047b1f195
 ---
 # Step 6: Plan user onboarding when migrating to Customer Journey Analytics
 

@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 86ce60cf-b3c7-43b5-aa18-9e16fa942e54
 ---
 # Step 4: Map data to the XDM schema when migrating to Customer Journey Analytics
 
