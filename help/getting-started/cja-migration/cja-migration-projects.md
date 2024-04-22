@@ -8,7 +8,7 @@ feature: Basics
 ---
 # Step 9: Migrate projects and components
 
-+++The information on this page is part of a larger migration process. Expand this section to see where this information fits within the migration process. </br></br>You must complete all previous migration steps before continuing with the information on page.
++++The information on this page is part of a larger migration process. Expand this section to see where this information fits within the migration process. </br></br>You must complete all previous migration steps before continuing with the information on this page.
 
 >[!NOTE]
 >
