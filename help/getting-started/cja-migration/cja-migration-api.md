@@ -8,7 +8,7 @@ feature: Basics
 ---
 # Step 7: Port the reporting API usage 
 
-+++The information on this page is part of a larger migration process. Make sure you complete all previous migration steps before continuing with this section. </br></br>See where this section fits within the migration process.
++++The information on this page is part of a larger migration process. Expand this section to see where this information fits within the migration process. </br></br>You must complete all previous migration steps before continuing with the information on page.
 
 >[!NOTE]
 >
