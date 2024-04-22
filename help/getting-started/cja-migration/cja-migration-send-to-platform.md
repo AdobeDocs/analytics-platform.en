@@ -35,15 +35,25 @@ feature: Basics
 
 After you [choose the migration method](#step-2-choose-your-customer-journey-analytics-migration-method) that is best for your organization, you can begin sending data to Adobe Experience Platform in order to make it available in Customer Journey Analytics. 
 
-The process for sending data to Experience Platform for each migration method is shown below. Follow the links for more detailed information.
+The process for sending data to Experience Platform for each migration method is shown below. Follow the links in the table below for more detailed information.
 
 |Migration method | Process for sending data to Platform | 
 |---------|----------|
 | New implementation of the Web SDK | [Ingest data via the Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) | 
 | Migrate your Adobe Analytics implementation to use the Web SDK | If you are using the Analytics tag extension: [Migrate from the Adobe Analytics tag extension to the Web SDK tag extension](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)<p>Or</p><p>If you are using AppMeasurement: [Migrate from AppMeasurement to the Web SDK](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk) | 
-| Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics | [Set up a datastream](/https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream) in [Ingest data via the Adobe Experience Platform Web SDK](/https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk)  | 
+| Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics | [Set up a datastream](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-datastream) in [Ingest data via the Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk)  | 
 | Analytics Source Connector | [Ingest and use data from traditional Adobe Analytics](/help/data-ingestion/analytics.md) | 
 
 ## Next, map data to the XDM schema
 
-After you send data to Experience Platform by following the links in the table above, you need to [map data to the XDM schema](/help/getting-started/cja-migration/cja-migration-xdm.md).
+After you send data to Experience Platform by following the links in the table above, you might need to [map data to the XDM schema](/help/getting-started/cja-migration/cja-migration-xdm.md), depending on the implementation method that you chose. 
+
+The following implementation methods require that you map data to the XDM schema:
+
+* Migrate from the Adobe Analytics tag extension to the Web SDK tag extension
+
+* Configure your existing Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics
+
+Alternatively, if you chose to do a new implementation of the Web SDK, a mapping is not required because you already [set up a new XDM schema](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema) as part of the new implementation.. 
+
+If you chose to use the Analytics Source Connector for your migration, a mapping is not required because the Analytics Source Connector uses your same Adobe Analytics schema rather than the XDM schema. 
