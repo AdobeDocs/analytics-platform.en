@@ -9,7 +9,7 @@ exl-id: d9d7f186-9077-4372-94ad-8dd5b97779ca
 ---
 # Step 3: Send data to Adobe Experience Platform when migrating to Customer Journey Analytics
 
-+++The information on this page is part of a larger migration process. Expand this section to see where this information fits within the migration process. </br></br>You must complete all previous migration steps before continuing with the information on this page.
++++Expand this section to see where the information on this page fits into the larger migration process. Make sure all previous migration steps are complete.
 
 Before you continue with this section, first make sure you have completed all previous migration tasks.
 
@@ -20,7 +20,7 @@ The information on this page covers Step 3, as highlighted in the table below:
 | **Step 1: [Get started with the migration](/help/getting-started/cja-migration/cja-migration-getstarted.md)** | Learn the benefits of migrating to Adobe Analytics and the basic migration process. |
 | **Step 2: [Choose the migration method](/help/getting-started/cja-migration/cja-migration-method.md)** | Various methods are available for migrating to Customer Journey Analytics. Choose the method that is best for your organization, depending on your organization's current Adobe Analytics environment and long-term goals. | 
 | <span class="preview">**Step 3: [Send data to Adobe Experience Platform](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)**</span> | <span class="preview">The process for sending data to Adobe Experience Platform differs depending on the migration method that you chose in Step 1.</span> | 
-| **Step 4: [Plan data mapping to the XDM schema](/help/getting-started/cja-migration/cja-migration-xdm.md)** | [XDM schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home#xdm-schemas) are used in Adobe Experience Platform to describe the structure of data in a consistent and reusable way. By defining data consistently across systems, it becomes easier to retain meaning and therefore gain value from data.<p>Most migration methods require that you either create a new XDM schema, or map your existing Adobe Analytics schema to XDM by using datastream mapping.</p>  |
+| **Step 4: [Map data to the XDM schema](/help/getting-started/cja-migration/cja-migration-xdm.md)** | [XDM schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home#xdm-schemas) are used in Adobe Experience Platform to describe the structure of data in a consistent and reusable way. By defining data consistently across systems, it becomes easier to retain meaning and therefore gain value from data.<p>Most migration methods require that you either create a new XDM schema, or map your existing Adobe Analytics schema to XDM by using datastream mapping.</p>  |
 | **Step 5: [Retain historical data](/help/getting-started/cja-migration/cja-migration-historical-data.md)** | Most organizations need to retain their historical Adobe Analytics data for a certain amount of time. Various options are available to accomplish this.  | 
 | **Step 6: [Plan user onboarding](/help/getting-started/cja-migration/cja-migration-onboarding.md)** | You should give your users ample time (3 - 6 months) to become familiar with the key differences of Analysis Workspace in Customer Journey Analytics. | 
 | **Step 7: [Port the reporting API usage](/help/getting-started/cja-migration/cja-migration-api.md)** | The Customer Journey Analytics reporting API is in the same format, but uses a different endpoint. Port the reporting API usage from the Adobe Analytics reporting API to the Customer Journey Analytics reporting API. | 
@@ -55,4 +55,4 @@ The following implementation methods require that you map data to the XDM schema
 
 Alternatively, if you chose to do a new implementation of the Web SDK, a mapping is not required because you already [set up a new XDM schema](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-data-ingestion/ingest-use-guides/edge-network/aepwebsdk#set-up-a-schema) as part of the new implementation.. 
 
-If you chose to use the Analytics Source Connector for your migration, a mapping is not required because the Analytics Source Connector uses your same Adobe Analytics schema rather than the XDM schema.
+If you chose to use the Analytics Source Connector for your migration, a mapping is not required because the Analytics Source Connector uses your existing Adobe Analytics schema rather than the XDM schema.
