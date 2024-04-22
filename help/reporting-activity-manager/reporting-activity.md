@@ -16,7 +16,7 @@ For more information about Reporting Activity manager, including key benefits an
 
 1. In Customer Journey Analytics, go to **[!UICONTROL Tools]** > **[!UICONTROL Reporting Activity Manager]**.
 
-   A list of your enabled base connections is displayed.
+   A list of your enabled base connections is displayed. 
 
    ![Reporting Activity showing the reports queue](assets/reporting-activity1.png)
 

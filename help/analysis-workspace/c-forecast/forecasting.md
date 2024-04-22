@@ -9,7 +9,9 @@ exl-id: 9ec920c4-3273-4497-83a4-6a2e2fc92e2f
 
 {{select-package}}
 
-Forecasting is an Analysis Workspace feature that helps forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly). Forecasting is available for time-series-related data only.
+Forecasting includes a statistical prediction for time-series related data based on the historical data that already exists in Customer Journey Analytics. Forecasts can appear in freeform tables and line graph visualizations. Users can control if forecasting is automatically included through their user preferences in the Customer Journey Analytics UI. They can also turn them on and off per column within the column settings. Only the first column added to a table already has forecasting turned on.
+
+Forecasting is available in "Select" and higher Customer Journey Analytics license tiers.
 
 You can leverage forecasting for:
 
