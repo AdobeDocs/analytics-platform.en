@@ -196,7 +196,7 @@ Ensure you define the output dataset as part of the optional `ctasParameters` pr
 
 
 
-## Dataset export
+## Export datasets
 
 Once you have created and scheduled your query, and verified the results in the output datasets are in line with your requirements, you can then export the raw datasets to cloud storage destinations. This export is in Experience Platform Destinations terminology referred to as Dataset export destinations. See [Export datasets to cloud storage destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html) for an overview.
 
