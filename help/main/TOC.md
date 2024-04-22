@@ -36,7 +36,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
   + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
-  + Migrate to Customer Journey Analytics
+  + Migrate to Customer Journey Analytics {#migrate-to-cja}
     + [Get started](/help/getting-started/cja-migration/cja-migration-getstarted.md)
     + [Choose a migration method](/help/getting-started/cja-migration/cja-migration-method.md)
     + [Send data to Platform](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)
