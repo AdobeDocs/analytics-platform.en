@@ -101,6 +101,8 @@ If you request more than one download at a time, you will receive a notification
 
 If the **[!UICONTROL Enforce Download]** [data governance policy](/help/data-views/data-governance.md) is turned on in the data view you are reporting on, any download (such as emailing or sharing PDF files) of Workspace projects will hash the data fields labeled as sensitive. You can still do analysis on these fields in Workspace, but if you try to email or otherwise share a project, the blocked fields will appear as empty in the .pdf or .csv file.
 
+If any data fields labeled as sensitive are included in the [!UICONTROL Data View], the option to select and copy data from the screen is restricted for all data in the [!UICONTROL Data View].
+
 ## FAQ {#faq}
 
 | Question | Answer |
