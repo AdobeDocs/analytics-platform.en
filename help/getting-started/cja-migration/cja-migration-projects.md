@@ -1,12 +1,13 @@
 ---
-title: Plan your migration from Adobe Analytics to Customer Journey Analytics
-to Customer Journey Analytics
-description: Plan your migration from Adobe Analytics to Customer Journey Analytics
+title: Migrate projects and components to Customer Journey Analytics
+description: Learn about component migration for migrating projects and components to Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
+hide: yes
+hidefromtoc: yes
 ---
-# Step 9: Migrate projects and components
+# Step 9: Migrate projects and components to Customer Journey Analytics
 
 +++The information on this page is part of a larger migration process. Expand this section to see where this information fits within the migration process. </br></br>You must complete all previous migration steps before continuing with the information on this page.
 

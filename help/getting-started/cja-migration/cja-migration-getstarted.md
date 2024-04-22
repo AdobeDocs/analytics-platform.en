@@ -1,10 +1,11 @@
 ---
-title: Plan your migration from Adobe Analytics to Customer Journey Analytics
-to Customer Journey Analytics
+title: Get started with the migration to Customer Journey Analytics
 description: Plan your migration from Adobe Analytics to Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
+hide: yes
+hidefromtoc: yes
 ---
 # Step 1: Get started with the migration to Customer Journey Analytics
 

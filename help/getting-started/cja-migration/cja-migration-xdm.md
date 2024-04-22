@@ -1,12 +1,13 @@
 ---
-title: Plan your migration from Adobe Analytics to Customer Journey Analytics
-to Customer Journey Analytics
-description: Plan your migration from Adobe Analytics to Customer Journey Analytics
+title: Map data to the XDM schema when migrating to Customer Journey Analytics
+description: Learn how to map data to the XDM schema when migrating to Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
+hide: yes
+hidefromtoc: yes
 ---
-# Step 4: Map data to the XDM schema
+# Step 4: Map data to the XDM schema when migrating to Customer Journey Analytics
 
 +++The information on this page is part of a larger migration process. Expand this section to see where this information fits within the migration process. </br></br>You must complete all previous migration steps before continuing with the information on this page.
 

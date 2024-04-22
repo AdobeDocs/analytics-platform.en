@@ -1,12 +1,12 @@
 ---
-title: Plan your migration from Adobe Analytics to Customer Journey Analytics
-to Customer Journey Analytics
-description: Plan your migration from Adobe Analytics to Customer Journey Analytics
-role: Admin
+title: Send data to Adobe Experience Platform when migrating to Customer Journey Analytics
+description: Send data to Adobe Experience Platform when migrating to Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Basics
+hide: yes
+hidefromtoc: yes
 ---
-# Step 3: Send data to Adobe Experience Platform
+# Step 3: Send data to Adobe Experience Platform when migrating to Customer Journey Analytics
 
 +++The information on this page is part of a larger migration process. Expand this section to see where this information fits within the migration process. </br></br>You must complete all previous migration steps before continuing with the information on this page.
 
