@@ -47,23 +47,18 @@ Before you begin the process of migrating from Adobe Analytics to Customer Journ
 <!-- Include a graphic of the end-to-end process, as well as links to each step of the process -->
 This page represents Step 1 of the migration, as shown in the following table. Complete all steps in this table to migrate from Adobe Analytics to Customer Journey Analytics.
 
-| Task | Details |
+| Migration task | Details |
 |---------|----------|
-| **Step 1: [Get started with the migration](/help/getting-started/cja-migration/cja-migration-getstarted.md)** | Learn the benefits of migrating to Adobe Analytics and the basic migration process. |
-| **Step 2: [Choose the migration method](/help/getting-started/cja-migration/cja-migration-method.md)** | Various methods are available for migrating to Customer Journey Analytics. Choose the method that is best for your organization, taking into consideration your organization's current Adobe Analytics environment and your long-term goals. | 
-| **Step 3: [Send data to Adobe Experience Platform](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)** | The process for sending data to Adobe Experience Platform differs depending on the migration method that you chose in Step 1. | 
-| **Step 4: [Map data to the XDM schema](/help/getting-started/cja-migration/cja-migration-xdm.md)** | [XDM schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home#xdm-schemas) are used in Adobe Experience Platform to describe the structure of data in a consistent and reusable way. By defining data consistently across systems, it becomes easier to retain meaning and therefore gain value from data.<p>Most migration methods require that you either create a new XDM schema, or map your existing Adobe Analytics schema to XDM by using datastream mapping.</p>  |
-| **Step 5: [Retain historical data](/help/getting-started/cja-migration/cja-migration-historical-data.md)** | Most organizations need to retain their historical Adobe Analytics data for a certain amount of time. Various options are available to accomplish this.  | 
-| **Step 6: [Plan user onboarding](/help/getting-started/cja-migration/cja-migration-onboarding.md)** | You should give your users ample time (3 - 6 months) to become familiar with the key differences of Analysis Workspace in Customer Journey Analytics. | 
-| **Step 7: [Port the reporting API usage](/help/getting-started/cja-migration/cja-migration-api.md)** | The Customer Journey Analytics reporting API is in the same format, but uses a different endpoint. Port the reporting API usage from the Adobe Analytics reporting API to the Customer Journey Analytics reporting API. | 
-| **Step 8: [Replace Data Feeds and Data Warehouse](/help/getting-started/cja-migration/cja-migration-export-options.md)** | Decide how you will use the export options available in Customer Journey Analytics in order to replace the Data Feeds and Data Warehouse features you were using in Adobe Analytics.  |
-| **Step 9: [Migrate projects and components](/help/getting-started/cja-migration/cja-migration-projects.md)** | The Component migration area in Adobe Analytics allows you to migrate projects and their associated components from Adobe Analytics to Customer Journey Analytics.  |
-| **Step 10: [Perform post-migration tasks](/help/getting-started/cja-getting-started.md)** | After you complete the migration, you need to perform various tasks, including bringing other data into Experience Platform, creating connections between Platform datasets and Customer Journey Analytics, creating data views, and learning how to report on cross-channel data in Analysis Workspace.  |
+| <span class="preview">**Step 1: Get started with the migration**</span> | <span class="preview">Learn the benefits of migrating to Adobe Analytics and the basic migration process.</span> |
+| **Step 2: [Choose the migration path](/help/getting-started/cja-migration/cja-migration-path.md)** | Various methods are available for migrating to Customer Journey Analytics. Choose the method that is best for your organization, depending on your organization's current Adobe Analytics environment and long-term goals. | 
+| **Step 3: [Send data to Adobe Experience Platform](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)** | The process for sending data to Adobe Experience Platform differs depending on the migration path that you chose in Step 2. | 
+| **Step 4: [Retain historical data](/help/getting-started/cja-migration/cja-migration-historical-data.md)** | Most organizations need to retain their historical Adobe Analytics data for a certain amount of time. Various options are available to accomplish this. | 
+| **Step 5: [Perform additional implementation tasks](/help/getting-started/cja-getting-started.md)** | At this point in the migration process, you need to perform various tasks before your Customer Journey Analytics environment is ready to use.<p>These additional tasks apply to migrations from Adobe Analytics as well as new Customer Journey Analytics implementations.</p><p>These tasks include:</p><ul><li>Bringing other data into Experience Platform</li><li>Creating connections between Platform datasets and Customer Journey Analytics</li><li>Creating data views</li><li>Porting the reporting API usage</li><li>Accounting for Data Feeds and Data Warehouse</li><li>Migrating projects and components</li><li>Planning user onboarding</li></ul> <p>For more information, see [Customer Journey Analytics Getting Started](/help/getting-started/cja-getting-started.md).  |
 
 {style="table-layout:auto"}
 
-## First, choose the migration method
+## First, choose the migration path
 
-Various methods are available for migrating to Customer Journey Analytics. [Choose the method that is best for your organization](/help/getting-started/cja-migration/cja-migration-method.md). 
+Various methods are available for migrating to Customer Journey Analytics. [Choose the method that is best for your organization](/help/getting-started/cja-migration/cja-migration-path.md). 
 
-The migration method you choose depends on your organization's current Adobe Analytics environment and long-term goals.
+The migration path you choose depends on your organization's current Adobe Analytics environment and long-term goals.

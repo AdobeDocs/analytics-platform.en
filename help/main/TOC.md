@@ -38,7 +38,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
   + Migrate to Customer Journey Analytics {#migrate-to-cja}
     + [Get started](/help/getting-started/cja-migration/cja-migration-getstarted.md)
-    + [Choose a migration method](/help/getting-started/cja-migration/cja-migration-method.md)
+    + [Choose a migration path](/help/getting-started/cja-migration/cja-migration-path.md)
     + [Send data to Platform](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)
     + [Map data to XDM](/help/getting-started/cja-migration/cja-migration-xdm.md)
     + [Retain historical data](/help/getting-started/cja-migration/cja-migration-historical-data.md)
