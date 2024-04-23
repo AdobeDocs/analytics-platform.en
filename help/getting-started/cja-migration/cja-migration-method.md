@@ -42,7 +42,7 @@ The method that you choose for migrating from Adobe Analytics to Customer Journe
 
 Use the information on this page to determine which Customer Journey Analytics migration method best aligns with your organization's current implementation and future goals.
 
-The following sections should be read sequentially: 
+The following sections should be read sequentially in order to determine the optimal migration method for your organization: 
 
 1. First, [understand the migration methods that are available](#understand-migration-methods).
 
