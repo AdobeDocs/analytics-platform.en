@@ -36,6 +36,16 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
   + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
+  + Migrate to Customer Journey Analytics {#migrate-to-cja}
+    + [Get started](/help/getting-started/cja-migration/cja-migration-getstarted.md)
+    + [Choose a migration method](/help/getting-started/cja-migration/cja-migration-method.md)
+    + [Send data to Platform](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)
+    + [Map data to XDM](/help/getting-started/cja-migration/cja-migration-xdm.md)
+    + [Retain historical data](/help/getting-started/cja-migration/cja-migration-historical-data.md)
+    + [Plan user onboarding](/help/getting-started/cja-migration/cja-migration-onboarding.md)
+    + [Port API usage](/help/getting-started/cja-migration/cja-migration-api.md)
+    + [Replace Data Feeds and Data Warehouse](/help/getting-started/cja-migration/cja-migration-export-options.md)
+    + [Migrate projects and components](/help/getting-started/cja-migration/cja-migration-projects.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -171,6 +181,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Forecasting {#forecasting}
     + [Forecasting overview](../analysis-workspace/c-forecast/forecasting.md)
     + [View forecasts in Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
+    + [Statistical techniques used in forecasting service](../analysis-workspace/c-forecast/statistics-forecasting.md)
   + [User preferences](../analysis-workspace/user-preferences.md)
   + Workspace FAQs {#workspace-faq}
     + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)
@@ -183,6 +194,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Analytics dashboards - Overview](../mobile-app/home.md)
   + [Curator tasks](../mobile-app/curator.md)
   + [Create a mobile scorecard](../mobile-app/create-scorecard.md)
+  + [Manage mobile scorecards](../mobile-app/manage-scorecard.md)
   + [Set up executives to use dashboards](../mobile-app/set-up-execs.md)
   + [Executive user quick start guide](../mobile-app/executive.md)
 
