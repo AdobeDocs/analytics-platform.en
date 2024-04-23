@@ -32,7 +32,7 @@ The information on this page covers Step 4, as highlighted in the table below:
 
 +++
 
-The following table shows implementation methods require that you map data to the XDM schema:
+Not all migration methods require that you map your Adobe Analytics data to the XDM schema. The following table shows which implementation methods require XDM schema mapping:
  
 
 | Migration method | XDM mapping required? | More information |
