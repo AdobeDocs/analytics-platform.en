@@ -43,4 +43,6 @@ To enable transformation for one or more datasets that are already part of an ex
 
 Non-transformed datasets, for schemas based on the four schema classes mentioned above, can contain multiple rows for a single person identifier. Person-based lookups only match the most recent occurrence of that person identifier, preventing a proper person id based lookup of accounts, opportunities, marketing lists or campaigns.
 
-The transformation transforms the dataset so that for each person identifier an (object) array is created for the relevant data (accounts, opportunities, marketing lists or campaigns), enabling correct working person id based lookups.
+The transformation modifies the dataset of each of the four schema classes (orange in the illustration below) so that for each person identifier an (object) array is created for the relevant data (accounts, opportunities, marketing lists or campaigns) in the lookup datasets (pink in the illustration below). The transformation then allows for a  correct working of person id based lookups.
+
+![B2B schemas](./assets/b2b-schemas.svg)
