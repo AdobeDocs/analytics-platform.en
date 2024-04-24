@@ -4,17 +4,15 @@ description: Learn the advantages and disadvantes of the possible migration path
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
 ---
-# Step 2: Choose your Customer Journey Analytics migration path
+# Step 2: Choose your migration path
 
 +++Expand this section to see where the information on this page fits into the larger migration process. Make sure all previous migration steps are complete.
 
 Before you continue with this section, first make sure you have completed all previous migration tasks.
 
-The information on this page covers Step 2, as highlighted in the table below: 
+The information on this page covers Step 2 of the migration, as highlighted in the table below: 
 
 | Migration task | Details |
 |---------|----------|
@@ -56,8 +54,8 @@ The following table lists each migration path, its level of effort, and its long
 
 | Migration path | Level of effort | Long-term viability |
 |---------|----------|---------|
-| **New implementation of the Experience Platform Web SDK**</br>While this is not technically a migration, you can move from Adobe Analytics to Customer Journey Analytics by doing a new implementation of the Experience Platform Web SDK to begin sending data to Adobe Experience Platform Edge Network. <p>For organizations not yet on the Web SDK, this migration path is perhaps the most straightforward in getting data to Edge Network because it requires the fewest number of steps; however, because all of the work is done up front (such as creating the XDM schema), it requires a larger initial effort.</p><p>The basic steps are:</p><ol><li>Create an XDM schema for your organization.</li><li>Implement the Web SDK.</li><li>Send data to Platform.</li></ol>| High | High |
-| **Migrate your Adobe Analytics implementation to use the Web SDK**</br>If your Adobe Analytics implementation is AppMeasurement or the Analytics extension, you can migrate it to use the Adobe Experience Platform Web SDK to begin sending data to Edge Network and Adobe Analytics, prior to sending it to Customer Journey Analytics.<p>This is the easiest and smoothest way to get data to Edge Network; it requires more steps, but offers a more methodical transition from Adobe Analytics to Customer Journey Analytics, with more tangible milestones.</p><p>The basic steps are:</p><ol><li>Move your existing Adobe Analytics implementation to the Web SDK and validate that everything is working there.</li><li>Create an XDM schema for your organization as you have time.</li><li>Use Datastream mapping to map all of the fields in the data object to your XDM schema.</li><li>Send data to Platform.</li></ol> | Moderate | High |
+| **New implementation of the Experience Platform Web SDK**</br>While this is not technically a migration, you can begin using Customer Journey Analytics by doing a new implementation of the Experience Platform Web SDK to begin sending data to Adobe Experience Platform Edge Network. <p>For organizations not yet on the Web SDK, this migration path is perhaps the most straightforward in getting data to Edge Network because it requires the fewest number of steps; however, because all of the work is done up front (such as creating the XDM schema), it requires a larger initial effort.</p><p>The basic steps are:</p><ol><li>Create an XDM schema for your organization.</li><li>Implement the Web SDK.</li><li>Send data to Platform.</li></ol>| High | High |
+| **Migrate your Adobe Analytics implementation to use the Web SDK**</br>If your Adobe Analytics implementation is AppMeasurement or the Analytics extension, you can migrate it to use the Adobe Experience Platform Web SDK to begin sending data to Edge Network and Adobe Analytics, prior to sending it to Customer Journey Analytics.<p>This is the easiest and smoothest way to get data to Edge Network; it requires more steps, but offers a more methodical transition from Adobe Analytics to Customer Journey Analytics, with more tangible milestones.</p><p>The basic steps are:</p><ol><li>Move your existing Adobe Analytics implementation to the Web SDK and validate that everything is working in Adobe Analytics.</li><li>Create an XDM schema for your organization as you have time.</li><li>Use Datastream mapping to map all of the fields in the data object to your XDM schema.</li><li>Send data to Platform.</li></ol> | Moderate | High |
 | **Configure your existing Adobe Analytics Web SDK implementation**</br>If your Adobe Analytics implementation is already using the Adobe Experience Platform Web SDK, you can begin sending data to Customer Journey Analytics with minimal effort.<p>Before you send data to Customer Journey Analytics, consider updating your Adobe Analytics schema for the specific needs of your organization and any other Platform applications you will use.</p><p>The basic steps are:</p><ol><li>Begin sending data to Customer Journey Analytics.<!-- What's involved here? Just point it at CJA? --></li><li>(Optional) Create an XDM schema for your organization as you have time.</li><li>(Conditional) If you created an XDM schema, use datastream mapping to map all of the fields in the data object to your XDM schema.</li></ol>  | Low | High |
 | **Use the Analytics Source Connector**</br>If your Adobe Analytics implementation is AppMeasurement or the Analytics extension, you can begin sending data to a data view in Customer Journey Analytics.<p>This is the easiest way to get data to Customer Journey Analytics, but is the least viable method in the long term.</p>  | Low | Low |
 
@@ -114,7 +112,7 @@ Following are the migration paths available for organizations who have implement
 
 +++
 
-+++Analytics Source Connector
++++Use the Analytics Source Connector
 | Advantages | Disadvantages |
 |----------|---------|
 | <ul><li>Least time-consuming and demanding migration path. <p>Data is migrated to Customer Journey Analytics quickly with minimal investment</p></li></ul> | <ul><li>Data is not sent to Edge Network and cannot be shared with other Adobe Experience Platform applications; it is constrained to Customer Journey Analytics only<li>Difficult to move to the Web SDK in the future</li><li>Uses the Analytics Experience Event field group in your schema.</br>This field group adds many Adobe Analytics events that are not needed in your Customer Journey Analytics schema.  This can lead to a more cluttered, complex schema than what is otherwise needed for Customer Journey Analytics.</li><li>Highest level of [latency](/help/admin/guardrails.md#latencies) across all implementation methods</li></ul> |

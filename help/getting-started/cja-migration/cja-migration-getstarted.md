@@ -4,8 +4,6 @@ description: Plan your migration from Adobe Analytics to Customer Journey Analyt
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
 ---
 # Step 1: Get started with the migration to Customer Journey Analytics
@@ -45,7 +43,7 @@ Before you begin the process of migrating from Adobe Analytics to Customer Journ
 ## Understand the migration process
 
 <!-- Include a graphic of the end-to-end process, as well as links to each step of the process -->
-This page represents Step 1 of the migration, as shown in the following table. Complete all steps in this table to migrate from Adobe Analytics to Customer Journey Analytics.
+The information on this page covers Step 1 of the migration, as highlighted in the table below. Complete all steps in this table to migrate from Adobe Analytics to Customer Journey Analytics.
 
 | Migration task | Details |
 |---------|----------|

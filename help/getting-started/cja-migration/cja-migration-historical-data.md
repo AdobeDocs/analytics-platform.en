@@ -4,17 +4,15 @@ description: Learn how to retain historical data when migrating to Customer Jour
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
 ---
-# Step 5: Retain historical data when migrating to Customer Journey Analytics
+# Step 5: Retain historical data when migrating
 
 +++Expand this section to see where the information on this page fits into the larger migration process. Make sure all previous migration steps are complete.
 
 Before you continue with this section, first make sure you have completed all previous migration tasks.
 
-The information on this page covers Step 4, as highlighted in the table below: 
+The information on this page covers Step 4 of the **migration**, as highlighted in the table below: 
 
 | Migration task | Details |
 |---------|----------|
@@ -34,15 +32,15 @@ Choose one of the following options to retain historical data when moving from A
 >
 >When choosing how to retain historical data, contact your Adobe account representative to determine pricing. 
 
-## Utilize the Analytics Source Connector
+## Use the Analytics Source Connector
 
-  You can Utilize the [Analytics Source Connector](/help/data-ingestion/analytics.md) to retain historical data. Regardless of the migration path that you choose (even if you migrate using the Web SDK), you can use the Analytics Source Connector to retain historical data from your Adobe Analytics environment. 
+  You can use the [Analytics Source Connector](/help/data-ingestion/analytics.md) to retain historical data. Regardless of the migration path that you choose (even if you migrate using the Web SDK), you can use the Analytics Source Connector to retain historical data from your Adobe Analytics environment. 
 
-  You can use the Analytics Source Connector to retain historical data in the following ways:
-  
-  * Bring historical data into its own dedicated location, separate from your current data.
+  You can use the Analytics Source Connector to retain historical data by bringing historical data into its own dedicated location, separate from your current data.
 
-  * Map historical data in a way that allows you to tie it to your new data. <!-- Possible? Explain -->
+  The Analytics Source Connector must be functioning for as long as you need access to the historical data.
+
+  <!-- Another possibility in the future: Map historical data in a way that allows you to tie it to your new data.  Possible? Explain -->
 
 ## Maintain your existing Adobe Analytics implementation
 
@@ -50,11 +48,11 @@ You can maintain your existing Adobe Analytics implementation alongside your new
 
 * Data would not be available in Experience Platform.
 
-* You must plan to decommission the Adobe Analytics implementation after you have sufficient data in Customer Journey Analytics. 
+* You should plan to decommission the Adobe Analytics implementation after you have sufficient data in Customer Journey Analytics. 
 
 ## Next, perform additional implementation tasks
 
-At this point in the migration process, you need to perform various tasks before your Customer Journey Analytics environment is ready to use.
+At this point in the migration process, you need to perform various implementation tasks before your Customer Journey Analytics environment is ready to use.
 
 These additional tasks apply to migrations from Adobe Analytics as well as new Customer Journey Analytics implementations.
 
@@ -68,10 +66,10 @@ These tasks include:
 
 * Porting the reporting API usage
 
-* Accounting for Data Feeds and Data Warehouse
+* Accounting for Data Feeds and Data Warehouse use cases
 
 * Migrating projects and components
 
 * Planning user onboarding
 
-For more information, see [Customer Journey Analytics Getting Started](/help/getting-started/cja-getting-started.md).
+For more information, begin with Step 2 in [Customer Journey Analytics Getting Started](/help/getting-started/cja-getting-started.md).
