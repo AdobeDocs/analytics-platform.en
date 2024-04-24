@@ -26,7 +26,7 @@ The information on this page covers Step 3 of the migration, as highlighted in t
 +++
 
 
-After you [choose the migration path](#step-2-choose-your-customer-journey-analytics-migration-method) that is best for your organization, you can begin sending data to Adobe Experience Platform in order to make it available in Customer Journey Analytics. 
+After you [choose the migration path](#step-2-choose-your-customer-journey-analytics-migration-method) that is best for your organization, you can begin sending data to Adobe Experience Platform in order to make it available in Customer Journey Analytics.  
 
 The process for sending data to Experience Platform for each migration path is shown below. Follow the links in the table for detailed configuration information.
 

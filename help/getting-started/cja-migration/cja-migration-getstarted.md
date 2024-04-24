@@ -43,7 +43,7 @@ Before you begin the process of migrating from Adobe Analytics to Customer Journ
 ## Understand the migration process
 
 <!-- Include a graphic of the end-to-end process, as well as links to each step of the process -->
-The information on this page covers Step 1 of the migration, as highlighted in the table below. Complete all steps in this table to migrate from Adobe Analytics to Customer Journey Analytics.
+The information on this page covers Step 1 of the migration, as highlighted in the table below. Complete all steps in this table to migrate from Adobe Analytics to Customer Journey Analytics. 
 
 | Migration task | Details |
 |---------|----------|

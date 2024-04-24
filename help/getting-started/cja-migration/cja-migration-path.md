@@ -26,7 +26,7 @@ The information on this page covers Step 2 of the migration, as highlighted in t
 
 +++
 
-After you decide to migrate to Customer Journey Analytics, you need to determine the optimal migration path for your organization.  
+After you decide to migrate to Customer Journey Analytics, you need to determine the optimal migration path for your organization.   
 
 The path that you choose for migrating from Adobe Analytics to Customer Journey Analytics depends on the following factors: 
 
