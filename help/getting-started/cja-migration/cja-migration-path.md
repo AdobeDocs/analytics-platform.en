@@ -104,6 +104,7 @@ Following are the migration paths available for organizations who have implement
 +++
 
 +++Migrate Adobe Analytics to the Web SDK
+
 | Advantages | Disadvantages |
 |----------|---------|
 | <ul><li>Enables you to move to the Web SDK without impacting your existing Adobe Analytics reporting.</li><li>Retains rules and data elements already configured in your Adobe Analytics implementation (for organizations using the Analytics extension).</li><li>Provides flexibility to create an XDM schema for your organization at a later time: a flexible schema to define any fields you need, and only those fields that are relevant.</br>Does not require the Adobe Analytics Experience Event Field group in Adobe Experience Platform. <!-- With the new implementation, you're double-counting with 2 implementation; with the migration, you're double-counting, but both of them are through Edge Network. --></li><li>Not reliant on Adobe Analytics nomenclature (prop, eVar, event, and so forth)</li><li>No character limit concerns (100 chars for props)</li><li>Highly performant reporting and data availability because Adobe Experience Platform is built to power [real-time personalization use cases](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>Future-proof (will receive all the latest features and functionality)</li><li>Consolidate tags for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, and so forth)</li><li>[First-party device IDs](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) for enhanced accuracy of visitor identification</li></ul> | <ul><li>Must conform to an XDM schema at some point in the future, using datastream mapping.</li><li>Incurs some technical debt. For example, legacy AppMeasurement or Analytics extension code can remain. </li></ul> |
@@ -113,6 +114,7 @@ Following are the migration paths available for organizations who have implement
 +++
 
 +++Use the Analytics Source Connector
+
 | Advantages | Disadvantages |
 |----------|---------|
 | <ul><li>Least time-consuming and demanding migration path. <p>Data is migrated to Customer Journey Analytics quickly with minimal investment</p></li></ul> | <ul><li>Data is not sent to Edge Network and cannot be shared with other Adobe Experience Platform applications; it is constrained to Customer Journey Analytics only<li>Difficult to move to the Web SDK in the future</li><li>Uses the Analytics Experience Event field group in your schema.</br>This field group adds many Adobe Analytics events that are not needed in your Customer Journey Analytics schema.  This can lead to a more cluttered, complex schema than what is otherwise needed for Customer Journey Analytics.</li><li>Highest level of [latency](/help/admin/guardrails.md#latencies) across all implementation methods</li></ul> |
