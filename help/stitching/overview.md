@@ -26,6 +26,7 @@ Customer Journey Analytics supports two types of stitching.
 
   ![Field-based stitching](./assets/fbs.svg)
 
+
 - **Graph-based stitching**. You specify an event dataset as well as the persistent ID (cookie) and transient ID (person ID) for that dataset. Graph-based stitching uses the persistent ID to query the identity graph from the Experience Platform Identity Service to get all identities for that persistent ID. Graph-based stitching then uses these identities to try to update the rows for a specific persistent ID that has no transient ID with the transient ID found, based on the identity graph query.
 
   ![Graph-baed-stitching](./assets/gbs.svg)
