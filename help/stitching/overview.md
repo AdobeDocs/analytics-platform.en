@@ -24,12 +24,12 @@ Customer Journey Analytics supports two types of stitching.
 
 - **Field-based stitching**. You specify an event dataset as well as the persistent ID (cookie) and transient ID (person ID) for that dataset. Field-based stitching updates the transient ID for rows for every specific persistent ID that have no value for the transient ID. Field-based stitching does these updates based on rows that have a transient ID for that specific persistent ID. <br/>You use field-based stitching when using Customer Journey Analytics as a standalone solution (not having access to the Experience Platform Identity Service and associated identity graph) or when you do not want to use the available identity graph.
 
-  ![Field-based stitching](assets/fbs.svg)
+  ![Field-based stitching](/help/stitching/assets/fbs.svg)
 
 
 - **Graph-based stitching**. You specify an event dataset as well as the persistent ID (cookie) and transient ID (person ID) for that dataset. Graph-based stitching uses the persistent ID to query the identity graph from the Experience Platform Identity Service to get all identities for that persistent ID. Graph-based stitching then uses these identities to try to update the rows for a specific persistent ID that has no transient ID with the transient ID found, based on the identity graph query.
 
-  ![Graph-baed-stitching](assets/gbs.svg)
+  ![Graph-based-stitching](/help/stitching/assets/gbs.svg)
 
 See [How stitching works](./explained.md) and the [Overview of stitching tutorial](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/overview-of-stitching) for more information.
 
