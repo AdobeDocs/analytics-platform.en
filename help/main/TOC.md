@@ -34,8 +34,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Compare Customer Journey Analytics to BI solutions](../getting-started/cja-vs-bi.md)
 
 + Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
-  + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
-  + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
   + Migrate to Customer Journey Analytics {#migrate-to-cja}
     + [Get started](/help/getting-started/cja-migration/cja-migration-getstarted.md)
     + [Choose a migration path](/help/getting-started/cja-migration/cja-migration-path.md)
@@ -50,6 +48,8 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Virtual reporting environments and sandbox environments](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
     + [Processing Rules, VISTA and classifications versus Data Prep](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
     + [AAID, ECID, AACUSTOMID and the Analytics source connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
+  + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
+  + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
 
 + Data Ingestion {#cja-data-ingestion}
   + [Data Ingestion Overview](../data-ingestion/data-ingestion.md)
