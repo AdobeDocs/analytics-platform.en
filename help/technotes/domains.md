@@ -2,6 +2,7 @@
 title: Domains used by Customer Journey Analytics
 description: If your organization's firewall blocks IP addresses that originate from Adobe, use this list to update your firewall settings.
 role: Admin
+exl-id: 0c3e7b2e-cb48-4e14-ae18-65258ebce1b4
 ---
 # Domains used by Customer Journey Analytics
 
