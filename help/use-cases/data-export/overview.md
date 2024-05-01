@@ -39,7 +39,7 @@ In Customer Journey Analytics, events are not collected in order and a person ID
   * new data is collected or 
   * stitching adds events to a person's history.
 
-The report-time collection impacts the export of data from Customer Journey Analytics. Exports that include persisted values, will not match Customer Journey Analytics reports and will drift away over time.
+The report-time processing impacts the export of data from Customer Journey Analytics. Exports that include persisted values, will not match Customer Journey Analytics reports and will drift away over time.
 
 For metric consistency, use of the new features in Customer Journey Analytics is preferred. In general, Experience Platform and Customer Journey Analytics data export functionality exceeds the data feed functionality of Adobe Analytics. Experience Platform and Customer Journey Analytics do provide:
 
