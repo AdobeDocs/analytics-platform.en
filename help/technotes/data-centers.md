@@ -13,4 +13,4 @@ Upon provisioning, customers designate the region in which their Adobe Experienc
 
 ![CJA data centers](assets/data-centers.png)
 
-See [Regional data collection](#) in the Adobe Experience Cloud documentation for more information.
+See [Regional data collection](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) in the Adobe Experience Cloud documentation for more information.
