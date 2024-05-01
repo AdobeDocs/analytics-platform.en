@@ -34,11 +34,11 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Compare Customer Journey Analytics to BI solutions](../getting-started/cja-vs-bi.md)
 
 + Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
-  + Migrate to Customer Journey Analytics {#migrate-to-cja}
-    + [Get started](/help/getting-started/cja-migration/cja-migration-getstarted.md)
-    + [Choose a migration path](/help/getting-started/cja-migration/cja-migration-path.md)
-    + [Send data to Platform](/help/getting-started/cja-migration/cja-migration-send-to-platform.md)
-    + [Retain historical data](/help/getting-started/cja-migration/cja-migration-historical-data.md)
+  + Upgrade to Customer Journey Analytics {#upgrade-to-cja}
+    + [Get started](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
+    + [Choose your upgrade path](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+    + [Send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
+    + [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
