@@ -138,13 +138,13 @@ Make sure that your tables, your environment, and your permissions meet the foll
 
 * **Tables:** All tables must include at least one dimension in the row and one metric in each column in order to be supported with a full-table export. 
 
-* **Environment:** Administrators should ensure that the IP addresses listed in [IP addresses used by Customer Journey Analytics](/help/admin/ip-addresses.md) are included in the firewall allowlist.
+* **Environment:** Ensure that the [IP addresses](/help/technotes/ip-addresses.md) and [Domains](/help/technotes/domains.md) used by Customer Journey Analytics are allowed through their organization's firewall.
 
-* **Permissions:** In the Adobe Admin Console, users must be assigned a product profile that has the [!UICONTROL **Full Table Export**] permission assigned to it in order to export full tables. For information about assigning a permission to a product profile in the Admin Console, see [Customer Journey Analytics permission in Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html#customer-journey-analytics-permissions-in-admin-console) in [Customer Journey Analytics Access Control](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
+* **Permissions:** In the Adobe Admin Console, users must be assigned a product profile that has the [!UICONTROL **Full Table Export**] permission assigned to it in order to export full tables. For information about assigning a permission to a product profile in the Admin Console, see [Customer Journey Analytics permission in Admin Console](/help/technotes/access-control.md).
 
   >[!NOTE]
   >
-  >  Users who are assigned the [Product Admin role](/help/admin/cja-access-control.md#product-admin-role) always have access to export full tables; these users do not need to be assigned the [!UICONTROL **Full Table Export**] permission.
+  >  Users who are assigned the [Product Admin role](/help/technotes/access-control.md#product-admin-role) always have access to export full tables; these users do not need to be assigned the [!UICONTROL **Full Table Export**] permission.
 
 
 ### Unsupported features

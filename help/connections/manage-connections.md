@@ -89,7 +89,7 @@ When you delete a connection, a **[!UICONTROL Delete connection]** panel indicat
 
 Select **[!UICONTROL Continue]** to delete the connection.
 
-See [Delete implications](/help/admin/cja-deletion.md) for more information about the implications of deleting a connection.
+See [Deletion implications](/help/technotes/deletion.md) for more information about deleting a connection.
 
 
 ### Create a data view

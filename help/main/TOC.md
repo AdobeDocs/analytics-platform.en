@@ -22,8 +22,8 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [2022 releases](../release-notes/2022.md)
   + [2021 releases](../release-notes/2021.md)
   + [2020 releases](../release-notes/2020.md)
-  + [Customer Journey Analytics releases](../release-notes/releases.md)
-  + [Customer Journey Analytics documentation updates](../release-notes/doc-changes.md)
+  + [Feature release strategy](../release-notes/releases.md)
+  + [Documentation updates](../release-notes/doc-changes.md)
 
 + Getting Started {#cja-overview}
   + [Customer Journey Analytics overview](../getting-started/cja-overview.md)
@@ -352,15 +352,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Derived fields {#derived-fields}
     + [Use derived fields to report on goals](../use-cases/goals-using-derived-fields.md)
 
-
-+ Administration {#cja-admin}
-  + [Guardrails](../admin/guardrails.md)
-  + [Access Control](../admin/cja-access-control.md)
-  + [View and manage usage](../admin/estimate-usage.md)
-  + [Deletion implications](../admin/cja-deletion.md)
-  + [Optimize Customer Journey Analytics performance](../admin/optimizing-performance.md)
-  + [IP addresses](../admin/ip-addresses.md)
-
 + Labs {#labs}
   + [Labs User Guide](../labs/labs.md)
 
@@ -370,8 +361,14 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
 
 + Tech notes {#technotes}
-  + [Customer Journey Analytics data centers](../technotes/cja-datacenters.md)
-
-+ [Customer Journey Analytics glossary](../getting-started/cja-glossary.md)
+  + [Access Control](../technotes/access-control.md)
+  + [Data centers](../technotes/data-centers.md)
+  + [Deletion implications](../technotes/deletion.md)
+  + [Domains](../technotes/domains.md)
+  + [Glossary](../technotes/glossary.md)
+  + [Guardrails](../technotes/guardrails.md)
+  + [IP addresses](../technotes/ip-addresses.md)
+  + [Optimize Customer Journey Analytics performance](../technotes/optimizing-performance.md)
+  + [View and manage usage](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
