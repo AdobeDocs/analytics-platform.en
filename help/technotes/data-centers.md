@@ -12,3 +12,5 @@ Adobe Customer Journey Analytics is hosted in enterprise-class data centers from
 Upon provisioning, customers designate the region in which their Adobe Experience Platform data will reside. The data ingested into CJA from the Experience Platform data lake will be stored in the same region.
 
 ![CJA data centers](assets/data-centers.png)
+
+See [Regional data collection](#) in the Adobe Experience Cloud documentation for more information.

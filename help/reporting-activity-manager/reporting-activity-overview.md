@@ -26,7 +26,7 @@ Reporting Activity Manager provides the following benefits:
 
 <!-- update for CJA -->
 
-To manage reporting activity, you must have the Product Admin role. For more information, see [Product Admin role](/help/admin/cja-access-control.md#product-admin-role) in [Customer Journey Analytics Access Control](/help/admin/cja-access-control.md).
+To manage reporting activity, you must have the Product Admin role. For more information, see [Customer Journey Analytics Access Control](/help/technotes/access-control.md).
 
 ## View reporting activity
 
