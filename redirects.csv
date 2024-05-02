@@ -59,3 +59,7 @@ source,destination
 /docs/analytics-platform/using/cja-admin/cja-deletion,/docs/analytics-platform/using/technotes/deletion
 /docs/analytics-platform/using/cja-admin/optimizing-performance,/docs/analytics-platform/using/technotes/optimizing-performance
 /docs/analytics-platform/using/technotes/cja-datacenters,/docs/analytics-platform/using/technotes/data-centers
+/docs/analytics-platform/using/compare-aa-cja/migrate-to-cja/cja-migration-getstarted,/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-getstarted
+/docs/analytics-platform/using/compare-aa-cja/migrate-to-cja/cja-migration-path,/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-path
+/docs/analytics-platform/using/compare-aa-cja/migrate-to-cja/cja-migration-send-to-platform,/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-send-to-platform
+/docs/analytics-platform/using/compare-aa-cja/migrate-to-cja/cja-migration-historical-data,/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-historical-data
