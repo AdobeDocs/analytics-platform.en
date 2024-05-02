@@ -45,7 +45,7 @@ The query rail allows you to configure the following components:
   * **[!UICONTROL Metric]**: Count the number of [!UICONTROL Users retained] or the [!UICONTROL Percentage of users retained].
   * **[!UICONTROL Returning]**: By default, this analysis includes users in the bucket that they returned and all preceding buckets. Change this setting to **[!UICONTROL On exactly]** to only include users in the exact bucket that they qualify for.
   * **[!UICONTROL Each]**: The time period that you want each duration bucket to be. This setting is identical to the **[!UICONTROL Interval]** setting when selecting the date range.
-  * **[!UICONTROL Duration settings]**: Allows you to control how the analysis displays users by the number of days elapsed. **[!UICONTROL Auto durations]** automatically set duration buckets based on the date range length and how close to the current day that the date range is. **[!UICONTROL Custom durations]** allow you to manually set four duration buckets at desired intervals.
+  * **[!UICONTROL Duration settings]**: Allows you to control how the analysis displays users by the number of days elapsed. Available duration buckets depend on the date range that you set. **[!UICONTROL Auto durations]** automatically set duration buckets based on the date range length and how close to the current day that the date range is. **[!UICONTROL Custom durations]** allow you to manually set four duration buckets at desired intervals.
 * **[!UICONTROL Segments]**: The segments that you want to measure. Each selected segment adds a row to the cohort table. You can include up to three segments.
 
 ## Chart settings
@@ -53,14 +53,6 @@ The query rail allows you to configure the following components:
 The [!UICONTROL Retention rates] view offers the following chart settings, which can be adjusted in the menu above the chart:
 
 * **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Bar] and [!UICONTROL Line]. The line visualization shows Day 0 visually in the chart.
-
-## Duration settings
-
-
-
-* 
-
-Available duration buckets depend on the date range that you set.
 
 ## Date range
 
