@@ -168,9 +168,9 @@ If you plan to ingest Adobe Analytics data through the [Adobe Analytics source c
 
 ## 8. [!UICONTROL Adobe Analytics] components
 
-+++**Can I share/publish [!UICONTROL filters] from [!DNL Customer Journey Analytics] to Experience Platform Real-Time CDP, or other Experience Cloud applications?**
++++**Can I share/publish [!UICONTROL audiences] from [!DNL Customer Journey Analytics] to Experience Platform Real-Time CDP, or other Experience Cloud applications?**
 
-Not yet, but Adobe is actively working to deliver this capability.
+You can [create and publish audiences](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish) identified in Customer Journey Analytics to Real-time Customer Profile in Adobe Experience Platform for customer targeting and personalization.
 
 +++
 
