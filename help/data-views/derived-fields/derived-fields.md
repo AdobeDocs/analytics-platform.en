@@ -882,9 +882,9 @@ You must select the same type of fields within a Merge Fields rule. For example,
 +++
 
 
-<!-- PREVIOUS OR NEXT -->
+<!-- NEXT OR PREVIOUS -->
 
-### Previous Or Next
+### Next or Previous
 
 Takes a field as input and resolves the next or previous value for that field within the scope of the session or use. This will only apply to the Visit and Event table fields.
 
@@ -1007,7 +1007,41 @@ You define a `Previous Show Name` derived field. You use the [!UICONTROL NEXT OR
 
 ## More information {#prevnext-moreinfo}
 
-You can only select fields that belong to the Visit or Event table
+You can only select fields that belong to the Visit or Event table.
+
+Include repeats determine how to handle repeating values for previous or next. See following example tables.
+
+**Example 1 - Handling include repeats**
+
+| Data received | Next value<br/>Session<br/>Index = 1<br/>Include Repeats | Next value<br/>Session<br/>Index = 1<br/>NOT Include Repeats | Previous value<br/>Session<br/>Index = 1<br/>Include Repeats | Previous value<br/>Session<br/>Index = 1<br/>NOT Include Repeats |
+|---|---|---|---|---|
+| home | home | search | *No value* | *No value* |
+| home | search | search | home | *No value* |
+| search | search | product detail | home | home |
+| search | product detail | product detail | search | home |
+| product detail | search | search | search | search |
+| search | product details | product detail | product detail  | product detail |
+| product detail | search | search | search | search |
+| search | search | *No value* | product detail | product detail |
+| search | *No value* | *No value* | search | product detail |
+
+{style="table-layout:auto"}
+
+**Example 2 - Handling include repeats with blank values in data received**
+
+| Data received | Next value<br/>Session<br/>Index = 1<br/>Include Repeats | Next value<br/>Session<br/>Index = 1<br/>NOT Include Repeats | Previous value<br/>Session<br/>Index = 1<br/>Include Repeats | Previous value<br/>Session<br/>Index = 1<br/>NOT Include Repeats |
+|---|---|---|---|---|
+| home | home | search | *No value* | *No value* |
+| home | home | search | home | *No value* |
+| home | search | search | home | *No value* |
+| search | search | product details | home | home |
+| | search | search | search | search |
+| search | search | product detail | search | home |
+| search | product detail | product detail | search | home |
+| product detail | *No value* | *No value* | search | search |
+| | *No value* | *No value* | product detail | product detail | 
+
+{style="table-layout:auto"}
 
 +++
 
