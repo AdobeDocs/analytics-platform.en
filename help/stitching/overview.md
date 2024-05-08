@@ -111,7 +111,7 @@ Stitching is a groundbreaking and robust feature, but has limitations on how it 
 
 ## Use stitching
 
-Once your organization meets all prerequisites and understands the [limitations](#limitations), you can follow these steps to start using stitching in Customer Journey Analytics:
+Once your organization meets all [prerequisites](#prerequisites) and understands the [limitations](#limitations), you can follow these steps to start using stitching in Customer Journey Analytics:
 
 ### Request Support 
 
