@@ -11,10 +11,10 @@ The **[!UICONTROL Engagement]** view provides insight around how often a feature
 
 Features that plot toward the top of this visualization indicate that it is visited frequently among those who use it. Features that plot toward the right of this visualization indicate that the greatest proportion of users visit that feature. The median number of times a feature is used divides the graph horizontally. The median percentage of daily active users divides the graph vertically.
 
-* Features in the top-left of the graph mean that a feature is not widely adopted. However, among those who use it, use it frequently.
-* Features in the top-right of the graph mean that a feature is both widely adopted and frequently used.
-* Features in the bottom-right of the graph mean that a feature is widely adopted, but not frequently used.
-* Features in the bottom-left of the graph mean that a feature is not widely adopted, nor is it frequently used.
+* Features in the top-left of the matrix mean that a feature is not widely adopted. However, among those who use it, use it frequently.
+* Features in the top-right of the matrix mean that a feature is both widely adopted and frequently used.
+* Features in the bottom-right of the matrix mean that a feature is widely adopted, but not frequently used.
+* Features in the bottom-left of the matrix mean that a feature is not widely adopted, nor is it frequently used.
 
 ## Use cases
 
