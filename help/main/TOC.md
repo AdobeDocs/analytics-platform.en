@@ -194,6 +194,8 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Guided analysis {#guided-analysis}
     + [Overview](../guided-analysis/overview.md)
+    + Feature matrix {#feature-matrix}
+      + [Engagement](../guided-analysis/types/engagement.md)
     + Funnel {#funnel}
       + [Friction view](../guided-analysis/types/friction.md)
       + [Conversion trends view](../guided-analysis/types/conversion-trends.md)

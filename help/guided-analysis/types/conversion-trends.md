@@ -6,9 +6,9 @@ keywords: product analytics
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
 ---
-# Conversion trends view
+# [!UICONTROL Conversion trends] view
 
-The **Conversion trends** view provides a trended visualization around conversion rates over time. The horizontal axis is a time interval, while the vertical axis represents the conversion rate.
+The **[!UICONTROL Conversion trends]** view provides a trended visualization around conversion rates over time. The horizontal axis is a time interval, while the vertical axis represents the conversion rate.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
