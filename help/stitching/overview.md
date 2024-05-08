@@ -89,7 +89,8 @@ Stitching is a groundbreaking and robust feature, but has limitations on how it 
 ### General
 
 - Only event datasets are supported. Other datasets, such as lookup datasets, are not supported.
-- Stitching does not transform the field used for stitching in any manner. Stitching uses the value in the specified field as it exists in the unstitched dataset within the data lake. The stitching process is case-sensitive. For example, if sometimes the word 'Bob' appears in the field, and sometimes the word 'BOB' appears, these ids are treated as two separate people.
+- Stitching does not transform the field used for stitching in any manner. Stitching uses the value in the specified field as it exists in the unstitched dataset within the data lake. 
+- The stitching process is case-sensitive. For example, if sometimes the word 'Bob' appears in the field, and sometimes the word 'BOB' appears, these ids are treated as two separate people.
 - If a device is shared by multiple people and the total number of transitions between users exceeds 50,000, Customer Journey Analytics stops stitching data for that device.
 
 
