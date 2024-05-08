@@ -18,7 +18,7 @@ There are two types of folders in Workspace: the Company folder and personal fol
 
 When you log in to Workspace, the Projects home page displays a list of your projects along with the Company folder and any personal folders that you created.
 
-![Project home page listing your projects and the Company folder.](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![Projects home page](../assets/landing-page2.png)
 
 ## About the Company folder {#company-folder}
 
@@ -28,7 +28,6 @@ As an Admin, you can quickly share projects with all users and group projects in
 
 When a user logs in to Workspace, the Company folder is automatically added to their project and folder list. There are no specific permissions for projects contained within the Company folder.
 
-
 ### Admin Options {#admin-options}
 
 Admins have special privileges assigned to the Company folder. For example, only Admins can add or remove folders or projects in the Company folder. Users without Admin-access can view the contents of the Company folder.
@@ -37,7 +36,7 @@ Admins have special privileges assigned to the Company folder. For example, only
 
 Non-Admins have limited options.
 
-![The Projects page showing the non-admin options for folders.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
+![The Projects page showing the non-admin options for folders.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png)
 
 ### Company folder guidelines {#company-folder-guidelines}
 
@@ -47,6 +46,6 @@ Non-Admins have limited options.
 
 - Admins can delete a folder within the Company folder that another admin created. Admins may need to coordinate with other Admins to keep folder and project access consistent.
 
-- When an Admin moves a project to the Company folder, the project is shared with everyone even if the original shared privileges were restricted.
+- When an Admin moves a project to the Company folder, the project is shared with everyone with the **Edit copy** role, even if the original shared privileges were restricted.
 
 - When an Admin moves a project out of the Company folder, the original or previous sharing privileges are respected.
