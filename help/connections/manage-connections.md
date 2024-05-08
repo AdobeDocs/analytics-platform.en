@@ -211,16 +211,18 @@ To report on usage:
 
 For [!UICONTROL Ingested rows]:
 
-* a box displays the [!UICONTROL Total] number of ingested rows.
-* a box displays the number of ingested rows for the [!UICONTROL Last month] and the change in % (indicated by <span style="color:green">▲</span> or <span style="color:c64545">▼</span>) from the previous month.
-* a line graph displays the  <span style="color:53b2ad">◼︎</span> Cumulative ingested rows and <span style="color:4046c3">◼︎</span> Monthly ingested rows.<br/>You can hover over any data point for each line in the line graph to see a popup displaying date and the number of rows for the selected data point.
+* a panel displays the total ingested rows that include all the events data across all the connections updated on every 2nd day of a month. Within the panel: 
+  * a box displays the number of ingested rows for the last month and the change in % (indicated by <span style="color:green">▲</span> or <span style="color:c64545">▼</span>) from the previous month.
+  * a line graph displays the  <span style="color:53b2ad">◼︎</span> [!UICONTROL Monthly ingested rows].<br/>You can hover over any data point for the line in the line graph to see a popup displaying the number of monthly ingested rows for the selected last day of the month.
 
 
 For [!UICONTROL Reportable rows]:
 
-* a box displays [!UICONTROL Total] number of reportable rows.
-* a box displays the number of reportable rows for the [!UICONTROL Last month] and the change in % (indicated by <span style="color:green">▲</span> or <span style="color:c64545">▼</span>) from the previous month.
-* a line graph displays the  <span style="color:53b2ad">◼︎</span> Cumulative reportable rows and <span style="color:4046c3">◼︎</span> Monthly reportable rows.<br/>You can hover over any data point for each line in the line graph to see a popup displaying date and the number of rows for the selected data point.
+* a panel displays total reportable rows that include all the events data across all the connections updated on every 2nd day of a month. Within the panel:
+  * a box displays the cumulative total number of reportable rows.
+  * a box displays the total number of reportable rows for the last month and the change in % (indicated by <span style="color:green">▲</span> or <span style="color:c64545">▼</span>) from the previous month.
+  * a line graph displays the <span style="color:53b2ad">◼︎</span> [!UICONTROL Monthly reportable rows].<br/>You can hover over any data point for the line in the line graph to see a popup displaying the number of cumulative reportable rows for the selected last day of the month.
+  * a line graph displays the <span style="color:53b2ad">◼︎</span> [!UICONTROL Cumulative reportable rows].<br/>You can hover over any data point for the line in the line graph to see a popup displaying the number of monthly reportable rows for the selected last day of the month.
 
 
 >[!MORELIKETHIS]
