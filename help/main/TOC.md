@@ -228,6 +228,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create and publish audiences](../components/audiences/publish.md)
     + [Manage audiences](../components/audiences/manage.md)
   + Dimensions {#dimensions}
+    + [Dimensions overview](../components/dimensions/overview.md)
     + [Preview dimensions](../components/dimensions/view-dimensions.md)
     + [Break down dimensions](../components/dimensions/t-breakdown-fa.md)
     + [Time-parting dimensions](../components/dimensions/time-parting-dimensions.md)
