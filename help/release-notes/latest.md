@@ -22,7 +22,6 @@ These release notes cover the release period of May 15, 2024 through June 2024. 
 | **Derived Fields - Summary Function** | Lets you summarize the data at different levels. For example, lets you see which users make large revenue purchases vs. small revenue purchases. | June 12, 2024 |
 |**New documentation for upgrading from Adobe Analytics to Customer Journey Analytics** | For organizations upgrading from Adobe Analytics to Customer Journey Analytics, there are multiple upgrade options and many considerations to keep in mind based on an organization's current Adobe Analytics implementation and long-term goals. New documentation resources are now available to help you better understand:<ul><li>The various upgrade paths that exist</li><li>Which upgrade paths are available based on an organization's current Adobe Analytics implementation</li><li>The advantages and disadvantages of each upgrade path</li><li>Step-by-step guidance for each upgrade path</li><li>Considerations for handling historical data</li></ul>[Get started with the upgrade to Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-getstarted)| Available now |
 
-
 {style="table-layout:auto"}
 
 ## Fixes in Customer Journey Analytics
