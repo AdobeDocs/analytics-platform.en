@@ -23,7 +23,7 @@ You can also drag dates (and time dimensions) into a Workspace project. You can 
 | Setting | Description |
 | --- | --- |
 | Selected Days | Selected days/weeks/months/years |
-| Use Rolling Dates | Rolling dates allow you to generate a dynamic report that looks forward or backward for a set period of time based on when you ran the report. For example, if you want to report on all Orders placed "Last Month" (based on the Created Date field) and ran that report in December, you'd see orders placed in November. If you ran that same report in January, you'd see orders placed in December.<ul><li>**[!UICONTROL Date Preview]**: Indicates what time period the rolling calendar encompasses.</li><li>**[!UICONTROL Start]**: You can choose among current day, current week, current month, current quarter, current year.</li><li>**[!UICONTROL End]**: You can choose among current day, current week, current month, current quarter, current year.</li></ul>For an example, go [here](/help/components/date-ranges/custom-date-ranges.md). |
+| Use rolling dates | Rolling dates allow you to generate a dynamic report that looks forward or backward for a set period of time based on when you ran the report. For example, if you want to report on all Orders placed "Last Month" (based on the Created Date field) and ran that report in December, you'd see orders placed in November. If you ran that same report in January, you'd see orders placed in December.<ul><li>**[!UICONTROL Date Preview]**: Indicates what time period the rolling calendar encompasses.</li><li>**[!UICONTROL Start]**: You can choose among current day, current week, current month, current quarter, current year.</li><li>**[!UICONTROL End]**: You can choose among current day, current week, current month, current quarter, current year.</li></ul>For an example, go [here](/help/components/date-ranges/custom-date-ranges.md). |
 | Date Range | Lets you pick a preset date range. Last 30 days is the default. **[!UICONTROL This week/month/quarter/year (excluding today)]** lets you choose from date ranges that do not include partial-day data from today. |
 | Apply to All Panels | Lets you not only change the selected date range for the current panel, but also for all other panels within the project. |
 | Apply | Applies the date range to this panel only. |
@@ -34,18 +34,18 @@ If you're working in Workspace, you can make the date range components relative 
 
 To use relative panel date ranges
 
-1.  Select the **Workspace** tab.
-1.  Select **Blank project**.
-1.  Add dimensions, metrics, and filters from the left rail. 
-1.  Click the panel date range field to toggle the relative panel date range setting.
-1.  Select **Make date range components relative to panel calendar**.
-    *   Select the option to make the date range components relative to the panel calendar.
+1. Select the **Workspace** tab.
+1. Select **Blank project**.
+1. Add dimensions, metrics, and filters from the left rail. 
+1. Click the panel date range field to toggle the relative panel date range setting.
+1. Select **Make date range components relative to panel calendar**.
+    * Select the option to make the date range components relative to the panel calendar.
         If relative dates are selected, then rolling dates will be based on the start date of the panel calendar and not today's date.
-    *   If this option isn't selected, then rolling dates will be based on today's date.
+    * If this option isn't selected, then rolling dates will be based on today's date.
 
     ![Calendar with Make date range components relative to panel calendar selected](assets/relative-date-selected.png){width="60%"} 
 
-1.  Click **Apply**.
+1. Click **Apply**.
     The relative dates are shown in the upper-right.
 
     ![Freeform table with relative dates highlighted and showing Last month highlighted. ](assets/relative-date-range1.png)
