@@ -14,7 +14,6 @@ breadcrumb-title: Customer Journey Analytics Guide
 # Adobe Customer Journey Analytics Guide {#using}
 
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
-
 + Release Notes {#releases}
   + [Latest release](../release-notes/latest.md)
   + [2024 releases](../release-notes/2024.md)
