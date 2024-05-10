@@ -8,11 +8,11 @@ role: User
 ---
 # [!UICONTROL Active] view
 
-The **[!UICONTROL Active]** view provides insights around the growth and acquisition of users over a specific period. The horizontal axis is a time interval, while the vertical axis is a measurement of users. Users are split into four categories:
+The **[!UICONTROL Active]** view provides insights into the growth and acquisition of users over a specific period. The horizontal axis is a time interval, while the vertical axis is a measurement of users. Users are split into four categories:
 
-* **[!UICONTROL New]**: The user was active during the current period, but not previously. See how far that the analysis looks back by hovering over '[!UICONTROL New users]' in the chart legend. The lookback range is dynamically determined based on the selected date range and interval.
+* **[!UICONTROL New]**: The user was active during the current period, but not previously. See how far that the analysis looks back by hovering over _[!UICONTROL New users]_ in the chart legend. The lookback range is dynamically determined based on the selected date range and interval.
 * **[!UICONTROL Repeat]**: The user was active in the current and immediately previous period.
-* **[!UICONTROL Return]**: The user was active in the current period and not active in the immediately previous period, but were formerly active at some point. See how far that the analysis looks back by hovering over '[!UICONTROL Return users]' in the chart legend. The lookback range is dynamically determined based on the selected date range and interval.
+* **[!UICONTROL Return]**: The user was active in the current period and not active in the immediately previous period, but were formerly active at some point. See how far that the analysis looks back by hovering over _[!UICONTROL Return users]_ in the chart legend. The lookback range is dynamically determined based on the selected date range and interval.
 * **[!UICONTROL Dormant]**: The user was active in the immediately previous period, but is not active in the current period. Dormant users do not count toward the total number of active users.
 
 All active users (new + repeat + return) appear as a shade of teal above the horizontal axis, while all dormant users appear in orange below the horizontal axis.
@@ -23,7 +23,7 @@ All active users (new + repeat + return) appear as a shade of teal above the hor
 
 Use cases for this view type include:
 
-* **User retention and churn:** Provides a clear visualization around periods of high or low user retention. Recognizing these periods of high or low retention can help you make product decisions to encourage high retention or help minimize churn.
+* **User retention and churn:** Provides a clear visualization of periods of high or low user retention. Recognizing these periods of high or low retention can help you make product decisions to encourage high retention or help minimize churn.
 * **Campaign assessment**: Viewing a specific campaign can help you understand how much traffic it generated, and how well it helped users remain engaged.
 * **User lifecycle analysis**: Analyzing active user growth throughout the user lifecycle can help identify specific stages where user engagement dips. For example, if there is a high ratio of dormant users for individuals in an onboarding stage, it can indicate usability issues or a need for better in-product guidance.
 
@@ -52,5 +52,5 @@ The [!UICONTROL Active] view offers the following chart settings, which can be a
 
 The desired date range for your analysis. There are two components to this setting:
 
-* **[!UICONTROL Interval]**: The date granularity that you want to view trended data by. Valid options include Hourly, Daily, Weekly, Monthly, and Quarterly. The same date range can have different intervals which affect the number of data points in the chart and the number of columns in the table. For example, viewing an analysis spanning three days with daily granularity would show only three data points, while an analysis spanning three days with hourly granularity would show 72 data points.
+* **[!UICONTROL Interval]**: The date granularity that you want to view trended data by. Valid options include Hourly, Daily, Weekly, Monthly, and Quarterly. The same date range can have different intervals, which affect the number of data points in the chart and the number of columns in the table. For example, viewing an analysis spanning three days with daily granularity would show only three data points, while an analysis spanning three days with hourly granularity would show 72 data points.
 * **[!UICONTROL Date]**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
