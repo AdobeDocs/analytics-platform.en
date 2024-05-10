@@ -16,7 +16,7 @@ This B2B use case shows you how to specify your data at an account level rather 
 * How is this account performing as a whole with respect to a specific marketing campaign, compared to another account?
 * Are certain roles (such as IT Manager) at one account behaving differently than the same role at a different account?
 
-You accomplish all this by bringing in the account-level information as a [lookup](/help/getting-started/cja-glossary.md) dataset. 
+You accomplish all this by bringing in the account-level information as a [lookup](/help/technotes/glossary.md) dataset. 
 
 You first create a lookup schema in Adobe Experience Platform, then create a lookup table dataset by ingesting .csv-based account-level data. Then you proceed to create a connection in Customer Journey Analytics (Customer Journey Analytics) that combines different datasets, including the lookup one you created. You subsequently create a data view and finally are able to utilize all this data in Workspace.
 
@@ -26,7 +26,7 @@ You first create a lookup schema in Adobe Experience Platform, then create a loo
 
 ## 1. Create lookup schema (Experience Platform)
 
-Creating your own schema for the [lookup](/help/getting-started/cja-glossary.md) table ensures that the dataset used will be available in Customer Journey Analytics with the correct setup (record type). Best practice is to [create a custom schema class](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) called "Lookup", empty of any element, that can be re-used for all lookup tables.
+Creating your own schema for the [lookup](/help/technotes/glossary.md) table ensures that the dataset used will be available in Customer Journey Analytics with the correct setup (record type). Best practice is to [create a custom schema class](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) called "Lookup", empty of any element, that can be re-used for all lookup tables.
 
 ![Create New Class dialogue.](../assets/create-new-class.png)
 
