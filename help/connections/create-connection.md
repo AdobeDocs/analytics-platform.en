@@ -20,7 +20,9 @@ role: Admin
 
 ## Prerequisites
 
-The maximum number of datasets you can add to a connection is capped at 100. The mix depends on which Customer Journey Analytics package your company has purchased.
+The maximum number of datasets you can add to a connection is capped at 100. The mix depends on which Customer Journey Analytics package your company has purchased. 
+
+Contact your administrator if you're unsure which Customer Journey Analytics package you have.
 
 | **Select** package | **Foundation** package |
 | --- | --- |
@@ -28,8 +30,6 @@ The maximum number of datasets you can add to a connection is capped at 100. The
 |  | Up to 99 profile or lookup datasets per connection  |
 
 {style="table-layout:auto"}
-
-Contact your administrator if you're unsure which Customer Journey Analytics package you have.
 
 ## Create and configure the connection {#create-connection}
 
