@@ -8,7 +8,7 @@ role: Admin
 ---
 # How stitching works
 
-Stitching makes a minimum of two passes on data in a given dataset. In general these passes are similar for both types of stitching, with some nuances.
+Stitching makes a minimum of two passes on data in a given dataset. In general, these passes are similar for both types of stitching, with some nuances.
 
 ## Field-based stitching
 
