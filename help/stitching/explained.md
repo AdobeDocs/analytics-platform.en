@@ -119,20 +119,18 @@ Live stitching attempts to stitch each event upon collection to known devices an
 
 | Timestamp | Service | Persistent ID (Cookie ID) | Namespace = `Email` | Stitched ID (after live stitch) | 
 |---|---|---|---|---|
-| 2023-05-12 12:00 | CJS | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = *undefined* | **246** |
+| 2023-05-12 12:00 | CJS | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = *undefined* | 246 |
 | 2023-05-12 13:00 | UIS | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | |
+| 2023-05-12 14:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | `bob.a@gmail.com` | 
 | 2023-05-12 14:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | `bob.a@gmail.com`   | 
-| 2023-05-12 14:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | `bob.a@gmail.com`   | 
-| 2023-05-12 17:00 | CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = *undefined* | **3579**|
-| 2023-05-12 12:01 | t6 | 246 | Bob | Bob |
-| 2023-05-12 12:01 | 2023-05-12 12:06 | 246 | - | **Bob**| 
-| 2023-05-12 12:01 | 2023-05-12 12:07 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob | 
-| 2023-05-12 12:01 | 2023-05-12 12:03 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| - | **3579** |
-| 2023-05-12 12:01 | 2023-05-12 12:09 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **3579** |
-| 2023-05-12 12:01 | 2023-05-12 12:02 | 81911 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **81911** |
-| 2023-05-12 12:01 | 2023-05-12 12:05 | 81911 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg)|
-| 2023-05-12 12:01 | 2023-05-12 12:12 | 81911 | - | **Bob** |
-| | | **3 devices** | | **4 people**:<br/>246, Bob, 3579, 81911 |
+| 2023-05-12 17:00 | CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = *undefined* | 3579 |
+| 2023-05-12 18:00 | UIS | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | |
+| 2023-05-12 19:00 | CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | `ted.w@gmail.com` |
+| 2023-05-12 20:00 | CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | `ted.w@gmail.com` |
+| 2023-05-13 15:00 | CJS | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 2023-05-13 16:00 | UIS | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | |
+| 2023-05-13 17:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | `b.a@yahoo.co.uk` |
+| 2023-05-13 18:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | `b.a@yahoo.co.uk` |
 
 Both unauthenticated and authenticated events on new devices are counted as separate people (temporarily). Unauthenticated events on recognized devices are live stitched.
 
@@ -144,23 +142,41 @@ Delayed data (data with a timestamp over 24 hours old) is handled on a 'best eff
 
 At regular intervals (once a week or once a day, depending on the chosen lookback window), replay stitching recalculates historical data based on devices it now recognizes. If a device initially sends data while not authenticated and then logs in, replay stitching ties those unauthenticated events to the correct person. The following table represents the same data as above, but shows different numbers based on replaying the data.
 
-*The same data after replay:*
+*The same data after replay with a 24-hour lookback window:*
 
-| Event | Timestamp | Persistent ID (Cookie ID) | Transient ID (Login ID) | Stitched ID (after live stitch) | Stitched ID (after replay) |
-|---|---|---|---|---|---|
-| 1 | 2023-05-12 12:01 | 246 | - | 246 | **Bob** |
-| 2 | 2023-05-12 12:02 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob | Bob ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) |
-| 3 | 2023-05-12 12:03 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | Bob |
-| 4 | 2023-05-12 12:04 | 246 | - | **Bob**| Bob |
-| 5 | 2023-05-12 12:05 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | Bob |
-| 6 | 2023-05-12 12:06 | 246 | - | **Bob**| Bob | 
-| 7 | 2023-05-12 12:07 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob | Bob |
-| 8 | 2023-05-12 12:03 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **3579** | **3579** |
-| 9 | 2023-05-12 12:09 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **3579** | **3579** |
-| 10 | 2023-05-12 12:02 | 81911 | - | 81911 | **Bob** | 
-| 11 | 2023-05-12 12:05 | 81911 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg)| Bob ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | 
-| 12 | 2023-05-12 12:12 | 81911 | - | **Bob** | Bob | 
-| | | **3 devices** | | **4 people**:<br/>246, Bob, 3579, 81911 | **2 people**:<br/>Bob, 3579 | 
+| Timestamp | Service | Persistent ID (Cookie ID) | Namespace = `Email` | Stitched ID (after live stitch) | 
+|---|---|---|---|---|
+| 2023-05-12 12:00 | CJS | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = *undefined* | 246 |
+| *2023-05-12 13:00* | *UIS* | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | |
+| 2023-05-12 14:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | `bob.a@gmail.com` | 
+| 2023-05-12 14:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | `bob.a@gmail.com`   | 
+| 2023-05-12 17:00 | CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = *undefined* | 3579 |
+| *2023-05-12 18:00* | *UIS* | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | |
+| 2023-05-12 19:00 | CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | `ted.w@gmail.com` |
+| 2023-05-12 20:00 | CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | `ted.w@gmail.com` |
+| 2023-05-13 15:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) | CJS | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | `b.a@yahoo.co.uk` |
+| *2023-05-13 16:00* | *UIS* | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | |
+| 2023-05-13 17:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | `b.a@yahoo.co.uk` |
+| 2023-05-13 18:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | `b.a@yahoo.co.uk` |
+
+{style="table-layout:auto"}
+
+*The same data after replay with a 7-day lookback window:*
+
+| Timestamp | Service | Persistent ID (Cookie ID) | Namespace = `Email` | Stitched ID (after live stitch) | 
+|---|---|---|---|---|
+| 2023-05-12 12:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJS | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | `b.a@yahoo.co.uk` |
+| *2023-05-12 13:00* | *UIS* | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` =  `b.a@yahoo.co.uk` | |
+| 2023-05-12 14:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` =  `b.a@yahoo.co.uk` |  `b.a@yahoo.co.uk` | 
+| 2023-05-12 14:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` =  `b.a@yahoo.co.uk` |  `b.a@yahoo.co.uk`   | 
+| 2023-05-12 17:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = *undefined* | 3579 |
+| *2023-05-12 18:00* | *UIS* | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | |
+| 2023-05-12 19:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | `ted.w@gmail.com` |
+| 2023-05-12 20:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | `ted.w@gmail.com` |
+| 2023-05-13 15:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) | CJS | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | `b.a@yahoo.co.uk` |
+| *2023-05-13 16:00* | *UIS* | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | |
+| 2023-05-13 17:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | `b.a@yahoo.co.uk` |
+| 2023-05-13 18:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | `b.a@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
