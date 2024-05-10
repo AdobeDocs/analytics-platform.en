@@ -3,14 +3,12 @@ title: Customer Journey Analytics Export full table
 description: Describes how to use the Export full table functionality to validate your data or use your data for AI / ML.
 solution: Customer Journey Analytics
 feature: Use Cases
-hide: yes
-hidefromtoc: yes
 role: Admin
 ---
 
 # Export full table
 
-This article outlines how the [!DNL Customer Journey Analytics BI extension] can be used to implement the following [data export use cass](overview.md):
+This article outlines how the [!DNL Customer Journey Analytics BI extension] can be used to implement the following [data export use case](overview.md):
 
 - Data Validation
 - Readiness for AI / ML

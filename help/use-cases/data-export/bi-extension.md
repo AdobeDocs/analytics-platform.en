@@ -3,8 +3,6 @@ title: Customer Journey Analytics BI extension
 description: Describes how to use the BI extension to bring digital data into your own BI tools or Data Lake for use with additional datasets.
 solution: Customer Journey Analytics
 feature: Use Cases
-hide: yes
-hidefromtoc: yes
 role: Admin
 ---
 
@@ -12,7 +10,7 @@ role: Admin
 
 This article outlines how the [!DNL Customer Journey Analytics BI extension] can be used to implement the following [data export use case](overview.md):
 
-- Data Lake, Data Warehouse of BI tools
+- Data Lake, Data Warehouse or BI tools
 
 ## Introduction
 
