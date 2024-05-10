@@ -27,6 +27,7 @@ The query rail allows you to configure the following components:
 
 * **[!UICONTROL View]**: Switch between this view type and [Conversion trends](conversion-trends.md).
 * **[!UICONTROL Steps]**: The event touchpoints that you want to track. Each bar in the chart represents a step. You can include up to ten steps.
+  * [!UICONTROL Compare]: Each step provides an option to compare two step criteria, creating a "forked funnel". This feature allows you to compare the performance of two journeys side-by-side without creating two separate analyses.
 * **[!UICONTROL Counted as]**: The scope that you want applied to the funnel. Options include [!UICONTROL Sessions] and [!UICONTROL Users].
   * [!UICONTROL Sessions]: All steps must happen within the same session to be counted.
   * [!UICONTROL Users]: All steps must happen within the selected reporting window to be counted.
