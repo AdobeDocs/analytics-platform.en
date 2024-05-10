@@ -8,7 +8,9 @@ role: Admin
 ---
 # How stitching works
 
-Stitching makes a minimum of two passes on data in a given dataset:
+Stitching makes a minimum of two passes on data in a given dataset. In general these passes are similar for both types of stitching, with some nuances.
+
+## Field-based stitching
 
 * **Live stitching**: attempts to stitch each hit (event) as it comes in. Hits from devices that are "new" to the dataset (have never authenticated) are typically not stitched at this level. Hits from devices already recognized are stitched immediately.
 
@@ -20,7 +22,7 @@ Stitching makes a minimum of two passes on data in a given dataset:
 
 Data beyond the lookback window is not replayed. A visitor must authenticate within a given lookback window for an unauthenticated visit and authenticated visit to be identified together. Once a device is recognized, it is live stitched from that point forward.
 
-## Step 1: Live stitching
+### Step 1: Live stitching
 
 Live stitching attempts to stitch each event upon collection to known devices and channels. Consider the following example, where Bob records different events as part of an event dataset. 
 
@@ -48,7 +50,7 @@ Attribution works when the identifying custom variable ties to a device. In the 
 
 Delayed data (data with a timestamp over 24 hours old) is handled on a 'best effort' basis, while proritizing the stitching of current data for the highest quality.
 
-## Step 2: Replay stitching
+### Step 2: Replay stitching
 
 At regular intervals (once a week or once a day, depending on the chosen lookback window), replay stitching recalculates historical data based on devices it now recognizes. If a device initially sends data while not authenticated and then logs in, replay stitching ties those unauthenticated events to the correct person. The following table represents the same data as above, but shows different numbers based on replaying the data.
 
@@ -74,7 +76,97 @@ At regular intervals (once a week or once a day, depending on the chosen lookbac
 
 Attribution works when the identifying custom variable ties to a device. In the example above, event 1 and 10 are stitched as a result from the replay, leaving only event 8, and 9 unstitched. And reducing the people metric (cumulative) to 2.
 
-## Step 3: Privacy Request
+### Step 3: Privacy Request
+
+When you receive a privacy request, the row containing the original user information is removed, along with any stitched IDs that contain this same person information. The following table represents the same data as above, but shows the effect that a privacy request for Bob has on the data after processing it. The rows where Bob authenticated are removed (2, 3, 5, 7, and 11) along with removing Bob as a transient ID for other rows.
+
+*The same data after a privacy request for Bob:*
+
+| Event | Timestamp | Persistent ID (Cookie ID) | Transient ID (Login ID) | Stitched ID (after live stitch) | Stitched ID (after replay) | Transient ID (Login ID) | Stitched ID (after privacy request) |
+|---|---|---|---|---|---|---|---|
+| 1 | 2023-05-12 12:01 | 246 | - | 246 | **Bob** | - | 246 |
+| 2 | 2023-05-12 12:02 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob | Bob ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | 246 |
+| 3 | 2023-05-12 12:03 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | Bob | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | 246 |
+| 4 | 2023-05-12 12:04 | 246 | - | **Bob**| Bob | - | 246 |
+| 5 | 2023-05-12 12:05 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | Bob | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | 246 |
+| 6 | 2023-05-12 12:06 | 246 | - | **Bob**| Bob | - | 246 | 
+| 7 | 2023-05-12 12:07 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob | Bob | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | 246 |
+| 8 | 2023-05-12 12:03 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **3579** | **3579** | - | 3579 | 
+| 9 | 2023-05-12 12:09 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **3579** | **3579** | - | 3579 |
+| 10 | 2023-05-12 12:02 | 81911 | - | 81911 | **Bob** | - | 81911 |
+| 11 | 2023-05-12 12:05 | 81911 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg)| Bob ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | 81911 |
+| 12 | 2023-05-12 12:12 | 81911 | - | **Bob** | Bob | - | 81911 |
+| | | **3 devices** | | **4 people**:<br/>246, Bob, 3579, 81911 | **2 people**:<br/>Bob, 3579 |  | **3 people**:<br/>246, 3579, 81911 |
+
+
+## Graph-based stitching
+
+* **Live stitching**: attempts to stitch each hit (event) as it comes in. Hits from devices that are "new" to the dataset (have never authenticated) are typically not stitched at this level. Hits from devices already recognized are stitched immediately.
+
+* **Replay stitching**: "replays" data based on updated identities from the identity graph. This stage is where hits from previously unknown devices (persistent IDs) become stitched as the identity graph has resolved the identity for a namespace. Adobe offers two replay intervals:
+    * **Daily**: Data replays every day with a 24-hour lookback window. This option holds an advantage that replays are much more frequent, but unauthenticated visitors must authenticate the same day that they visit your site.
+    * **Weekly**: Data replays once a week with a 7-day lookback window. This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, unstitched data less than a week old is not reprocessed until the next weekly replay.
+
+* **Privacy (optional)**: When privacy-related requests are received, in addition to removing the requested identity, any stitching of that identity across unauthenticated events must be undone.
+
+Data beyond the lookback window is not replayed. A visitor must authenticate within a given lookback window for an unauthenticated visit and authenticated visit to be identified together. Once a device is recognized, it is live stitched from that point forward.
+
+### Step 1: Live stitching
+
+Live stitching attempts to stitch each event upon collection to known devices and channels. Consider the following example, where Bob records different events as part of an event dataset. 
+
+*Data as it appears the day it is collected:*
+
+| Timestamp | Service | Persistent ID (Cookie ID) | Namespace = `Email` | Stitched ID (after live stitch) | 
+|---|---|---|---|---|
+| 2023-05-12 12:00 | CJS | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = *undefined* | **246** |
+| 2023-05-12 13:00 | UIS | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | |
+| 2023-05-12 14:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | `bob.a@gmail.com`   | 
+| 2023-05-12 14:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | `bob.a@gmail.com`   | 
+| 2023-05-12 17:00 | CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = *undefined* | **3579**|
+| 2023-05-12 12:01 | t6 | 246 | Bob | Bob |
+| 2023-05-12 12:01 | 2023-05-12 12:06 | 246 | - | **Bob**| 
+| 2023-05-12 12:01 | 2023-05-12 12:07 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob | 
+| 2023-05-12 12:01 | 2023-05-12 12:03 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| - | **3579** |
+| 2023-05-12 12:01 | 2023-05-12 12:09 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **3579** |
+| 2023-05-12 12:01 | 2023-05-12 12:02 | 81911 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **81911** |
+| 2023-05-12 12:01 | 2023-05-12 12:05 | 81911 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg)|
+| 2023-05-12 12:01 | 2023-05-12 12:12 | 81911 | - | **Bob** |
+| | | **3 devices** | | **4 people**:<br/>246, Bob, 3579, 81911 |
+
+Both unauthenticated and authenticated events on new devices are counted as separate people (temporarily). Unauthenticated events on recognized devices are live stitched.
+
+Attribution works when the identifying custom variable ties to a device. In the example above, all events except events 1, 8, 9 and 10 are live stitched (they all use the `Bob` identifier). Live stitching 'resolves' the stitched ID for event 4, 6 and 12.
+
+Delayed data (data with a timestamp over 24 hours old) is handled on a 'best effort' basis, while proritizing the stitching of current data for the highest quality.
+
+### Step 2: Replay stitching
+
+At regular intervals (once a week or once a day, depending on the chosen lookback window), replay stitching recalculates historical data based on devices it now recognizes. If a device initially sends data while not authenticated and then logs in, replay stitching ties those unauthenticated events to the correct person. The following table represents the same data as above, but shows different numbers based on replaying the data.
+
+*The same data after replay:*
+
+| Event | Timestamp | Persistent ID (Cookie ID) | Transient ID (Login ID) | Stitched ID (after live stitch) | Stitched ID (after replay) |
+|---|---|---|---|---|---|
+| 1 | 2023-05-12 12:01 | 246 | - | 246 | **Bob** |
+| 2 | 2023-05-12 12:02 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob | Bob ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) |
+| 3 | 2023-05-12 12:03 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | Bob |
+| 4 | 2023-05-12 12:04 | 246 | - | **Bob**| Bob |
+| 5 | 2023-05-12 12:05 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | Bob |
+| 6 | 2023-05-12 12:06 | 246 | - | **Bob**| Bob | 
+| 7 | 2023-05-12 12:07 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob | Bob |
+| 8 | 2023-05-12 12:03 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **3579** | **3579** |
+| 9 | 2023-05-12 12:09 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **3579** | **3579** |
+| 10 | 2023-05-12 12:02 | 81911 | - | 81911 | **Bob** | 
+| 11 | 2023-05-12 12:05 | 81911 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg)| Bob ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | 
+| 12 | 2023-05-12 12:12 | 81911 | - | **Bob** | Bob | 
+| | | **3 devices** | | **4 people**:<br/>246, Bob, 3579, 81911 | **2 people**:<br/>Bob, 3579 | 
+
+{style="table-layout:auto"}
+
+Attribution works when the identifying custom variable ties to a device. In the example above, event 1 and 10 are stitched as a result from the replay, leaving only event 8, and 9 unstitched. And reducing the people metric (cumulative) to 2.
+
+### Step 3: Privacy Request
 
 When you receive a privacy request, the row containing the original user information is removed, along with any stitched IDs that contain this same person information. The following table represents the same data as above, but shows the effect that a privacy request for Bob has on the data after processing it. The rows where Bob authenticated are removed (2, 3, 5, 7, and 11) along with removing Bob as a transient ID for other rows.
 
