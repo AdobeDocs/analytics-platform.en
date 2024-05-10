@@ -132,7 +132,7 @@ You can grant [read-only access](/help/analysis-workspace/curate-share/view-only
 >
 >* A project might become inaccessible if many users attempt to access a given link at the same time. By default, more than 190 people can access a single link every 5 minutes. If your organization reaches this limit, wait 5 minutes and then try accessing the link again.
 >
->* If your organization licenses Healthcare Shield, you can share projects only with users who have authenticated either by Single Sign On (SSO) or Adobe ID; you cannot share projects with unauthenticated users. It is your responsibility to use this feature in compliance with your company's internal data governance policies and only share project links that contain Personal Health Information (PHI) with users who have the appropriate permissions.
+>* The [!UICONTROL Share with anyone] feature is blocked for both Healthcare Shield and Privacy & Security Shield licenses.
 
 The following video demonstration and accompanying documentation describe the options associated with sharing a link with anyone:
 

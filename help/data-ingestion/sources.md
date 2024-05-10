@@ -6,7 +6,7 @@ feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
 ---
-# Ingest and use data using source connectors.
+# Ingest and use data using source connectors
 
 This quick start guide explains how you can ingest data into Adobe Experience Platform using a source connector to a data provider and then use that data in Customer Journey Analytics.
 
@@ -213,43 +213,43 @@ To create your connection:
 
 1. In the Customer Journey Analytics UI, select **[!UICONTROL Connections]** in the top navigation.
 
-2. Select **[!UICONTROL Create new connection]**.
+1. Select **[!UICONTROL Create new connection]**.
 
-3. In the [!UICONTROL Untitled connection] screen:
+1. In the **[!UICONTROL Untitled connection]** screen:
 
-    Name and describe your connection in [!UICONTROL Connection Settings].
+   1. Name and describe your connection in **[!UICONTROL Connection Settings]**.
 
-    Select the correct sandbox from the [!UICONTROL Sandbox] list in [!UICONTROL Data settings] and select the number of daily events from the [!UICONTROL Average number of daily events] list.
+   1. Select the correct sandbox from the **[!UICONTROL Sandbox]** list in **[!UICONTROL Data settings]** and select the number of daily events from the **[!UICONTROL Average number of daily events]** list.
 
-    ![Connection Settings](./assets/cja-connections-1.png)
+      ![Connection Settings](./assets/cja-connections-1.png)
     
-    Select **[!UICONTROL Add datasets]**. 
+   1. Select **[!UICONTROL Add datasets]**. 
     
-    In the [!UICONTROL Select datasets] step in [!UICONTROL Add datasets]:
+1. In the **[!UICONTROL Select datasets]** step in **[!UICONTROL Add datasets]**:
     
-    - Select the dataset that you created earlier (`Example Loyalty Dataset`) and any other dataset you want to include in your connection.
+   1. Select the dataset that you created earlier (`Example Loyalty Dataset`) and any other dataset you want to include in your connection.
 
-        ![Add datasets](./assets/cja-connections-2.png)
+      ![Add datasets](./assets/cja-connections-2.png)
 
-    - Select **[!UICONTROL Next]**.
+   1. Select **[!UICONTROL Next]**.
 
-    In the [!UICONTROL Datasets settings] step in [!UICONTROL Add datasets]:
+1. In the **[!UICONTROL Datasets settings]** step in **[!UICONTROL Add datasets]**:
 
-    - For each dataset:
+   For each dataset:
 
-        - Select a [!UICONTROL Person ID] from the available identities defined in the dataset schemas in Adobe Experience Platform.
+   1. Select a [!UICONTROL Person ID] from the available identities defined in the dataset schemas in Adobe Experience Platform.
     
-        - Select the correct data source from the [!UICONTROL Data source type] list. If you specify **[!UICONTROL Other]**, then add a description for your data source.
+   1. Select the correct data source from the [!UICONTROL Data source type] list. If you specify **[!UICONTROL Other]**, then add a description for your data source.
 
-        - Set **[!UICONTROL Import all new data]** and **[!UICONTROL Dataset backfill existing data]** according to your preferences.
+   1. Set **[!UICONTROL Import all new data]** and **[!UICONTROL Dataset backfill existing data]** according to your preferences.
 
-        ![Configure datasets](./assets/cja-connections-3.png)
+      ![Configure datasets](./assets/cja-connections-3.png)
 
-    - Select **[!UICONTROL Add datasets]**.
+   1. Select **[!UICONTROL Add datasets]**.
 
-    Select **[!UICONTROL Save]**.
+   1. Select **[!UICONTROL Save]**.
 
-See [Connections overview](../connections/overview.md) for more information on how to create and manage a connection and how to select and combine datasets.
+After you create a [connection](/help/connections/overview.md), you can perform various management tasks, such as [selecting and combining datasets](/help/connections/combined-dataset.md), [checking the status of a connection's datasets and the status of data ingestion](/help/connections/manage-connections.md), and more.
 
 ## Set up a data view
 

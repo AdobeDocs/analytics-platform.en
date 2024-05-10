@@ -14,7 +14,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 # Adobe Customer Journey Analytics Guide {#using}
 
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
-
++ [AI Assistant for Adobe Customer Journey Analytics](../ai-assistant.md)
 + Release Notes {#releases}
   + [Latest release](../release-notes/latest.md)
   + [2024 releases](../release-notes/2024.md)
@@ -22,8 +22,8 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [2022 releases](../release-notes/2022.md)
   + [2021 releases](../release-notes/2021.md)
   + [2020 releases](../release-notes/2020.md)
-  + [Customer Journey Analytics releases](../release-notes/releases.md)
-  + [Customer Journey Analytics documentation updates](../release-notes/doc-changes.md)
+  + [Feature release strategy](../release-notes/releases.md)
+  + [Documentation updates](../release-notes/doc-changes.md)
 
 + Getting Started {#cja-overview}
   + [Customer Journey Analytics overview](../getting-started/cja-overview.md)
@@ -34,8 +34,11 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Compare Customer Journey Analytics to BI solutions](../getting-started/cja-vs-bi.md)
 
 + Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
-  + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
-  + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
+  + Upgrade to Customer Journey Analytics {#upgrade-to-cja}
+    + [Get started](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
+    + [Choose your upgrade path](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+    + [Send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
+    + [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -45,6 +48,8 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Virtual reporting environments and sandbox environments](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
     + [Processing Rules, VISTA and classifications versus Data Prep](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
     + [AAID, ECID, AACUSTOMID and the Analytics source connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
+  + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
+  + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
 
 + Data Ingestion {#cja-data-ingestion}
   + [Data Ingestion Overview](../data-ingestion/data-ingestion.md)
@@ -223,6 +228,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create and publish audiences](../components/audiences/publish.md)
     + [Manage audiences](../components/audiences/manage.md)
   + Dimensions {#dimensions}
+    + [Dimensions overview](../components/dimensions/overview.md)
     + [Preview dimensions](../components/dimensions/view-dimensions.md)
     + [Break down dimensions](../components/dimensions/t-breakdown-fa.md)
     + [Time-parting dimensions](../components/dimensions/time-parting-dimensions.md)
@@ -353,15 +359,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Derived fields {#derived-fields}
     + [Use derived fields to report on goals](../use-cases/goals-using-derived-fields.md)
 
-
-+ Administration {#cja-admin}
-  + [Guardrails](../admin/guardrails.md)
-  + [Access Control](../admin/cja-access-control.md)
-  + [View and manage usage](../admin/estimate-usage.md)
-  + [Deletion implications](../admin/cja-deletion.md)
-  + [Optimize Customer Journey Analytics performance](../admin/optimizing-performance.md)
-  + [IP addresses](../admin/ip-addresses.md)
-
 + Labs {#labs}
   + [Labs User Guide](../labs/labs.md)
 
@@ -371,8 +368,14 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
 
 + Tech notes {#technotes}
-  + [Customer Journey Analytics data centers](../technotes/cja-datacenters.md)
-
-+ [Customer Journey Analytics glossary](../getting-started/cja-glossary.md)
+  + [Access Control](../technotes/access-control.md)
+  + [Data centers](../technotes/data-centers.md)
+  + [Deletion implications](../technotes/deletion.md)
+  + [Domains](../technotes/domains.md)
+  + [Glossary](../technotes/glossary.md)
+  + [Guardrails](../technotes/guardrails.md)
+  + [IP addresses](../technotes/ip-addresses.md)
+  + [Optimize Customer Journey Analytics performance](../technotes/optimizing-performance.md)
+  + [View and manage usage](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
