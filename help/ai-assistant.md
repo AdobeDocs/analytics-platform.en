@@ -3,8 +3,8 @@ description: How to ask questions of Customer Journey Analytics documentation
 title: AI Assistant for Adobe Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
+exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 ---
-
 # AI Assistant for Adobe Customer Journey Analytics
 
 >[!NOTE]
