@@ -20,9 +20,9 @@ Features that plot toward the top of this visualization indicate that it is visi
 
 Use cases for this view type include:
 
-* **Feature adoption**: You can establish a direct correlation between engagement and adoption of a specific feature. Understanding which features are used the most can help determine which features to prioritize enhancing.
+* **Engagement by feature**: You can establish a direct correlation between engagement and adoption of a specific feature. Understanding which features are used the most can help determine which features to prioritize enhancing.
 * **Discover underutilized features**: Features with low daily active users but high usage can indicate a hidden but valuable feature. Consider exposing these types of features to more users.
-* **Improve popular features**: Features with high daily active users but low usage can indicate that a feature is highly requested but underused. Consider investing in improving these features so that they are used more often.
+* **Improve popular features**: Features with high active users but low usage can indicate that a feature is highly requested but underused. Consider investing in improving these features so that they are used more often.
 * **Create feature-based segments**: Analyzing how often a feature is used against how many users adopt it can help determine the types of users adopting a given feature. You can create segments based on users that use a feature casually, or based on users that frequently use that feature.
 * **Feature adoption A/B testing**: Compare the usage of multiple features using segments. Add the segments of each cohort in the query rail to easily determine the difference in feature usage.
 
@@ -38,9 +38,9 @@ The query rail allows you to configure the following components:
 
 The [!UICONTROL Engagement] view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **[!UICONTROL Medians]**: Determine where the median lines are shown and how plotted points relate to these medians.
+* **[!UICONTROL Medians]**: Determine where the median lines are shown and how plotted points relate to those medians.
   * **[!UICONTROL Standard]**: Show the absolute value of usage and engagement.
-  * **[!UICONTROL Normalized]**: Show relevant changes from the medians.
+  * **[!UICONTROL Normalized]**: Show relative changes from each median.
 * **[!UICONTROL Top events overlay]**: See how your events are doing compared to the most common events.
 
 ## Time comparison
