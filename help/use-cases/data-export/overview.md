@@ -61,7 +61,7 @@ For metric consistency, use of the new features in Customer Journey Analytics is
   * set alerts for delivery issues and limits on scheduled delivery windows.
 
 
-## Use cases and solutions
+## Use cases and functionalities
 
 In general, data export supports a number of use cases. Each use case is different in terms of the data that is required and how to access and export that data. Experience Platform and Customer Journey Analytics provide a number of functionalities that either independently or combined can solve the various use cases. The table below provides an overview of identified data export use cases and the Experience Platform and Customer Journey Analytics functionalities to implement these use cases.  
 
