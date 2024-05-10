@@ -308,6 +308,11 @@ The `daterange` field can also be used in date/time functions to parse or trunca
 
 The `daterangeName` special column can be used to filter your query using a named date range like `Last Quarter`.
 
+>[!NOTE]
+>
+>PowerBI is not supporting the `daterange` metrics that are less than a day (hour, 30 minute, 5 minute, etc.).
+
+
 #### Filter ID
 
 The `filterId` special column is optional and is used to apply an externally defined filter to the query. Applying an externally defined filter to a query is similar to dragging a filter on a panel in Workspace. Multiple filter IDs can be provided by `AND`-ing them.
