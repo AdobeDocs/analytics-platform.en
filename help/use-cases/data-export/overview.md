@@ -1,5 +1,5 @@
 ---
-title: Data feed use cases
+title: Data export use cases
 description: Understand various data export use cases for Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
