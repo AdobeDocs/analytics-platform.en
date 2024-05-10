@@ -4,8 +4,8 @@ description: Understand various data export use cases for Customer Journey Analy
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
+exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
 ---
-
 # Data export use cases
 
 This section provides data export use cases. Each use case is described in its own article. For some of the use cases, more than one solution is provided.
@@ -71,4 +71,3 @@ In general, data export supports a number of use cases. Each use case is differe
 | **Data Validation**<br/>Evaluate clickstream data for data collection accuracy. | **Experience Platform**: [**Query Service (Data Distiller) & Export datasets**](queryservice-export-datasets.md)<br/> Interactive PostgreSQL interface to execute ad-hoc SQL queries using your favorite SQL tool to validate the data in your datasets.<br/><br/>**Customer Journey Analytics**: [**Export full table**](export-full-table.md)<br/>Validate processed data from CJA with attribution and sessionization applied. |
 | **Data Lake, Data Warehouse or BI tools**<br/>Bring digital data into your own BI tools or Data Lake for use with additional datasets. | **Customer Journey Analytics**: [**BI Extension**](bi-extension.md)<br/>Add Customer Journey Analytics processed metrics to data visualization tools such as Power BI and combine with additional data for custom reports<br/><br/>**Experience Platform**: [**Query Service (Data Distiller) & Export datasets**](queryservice-export-datasets.md)<br>Generate customized clickstream data using SQL to be delivered to cloud destinations. |
 | **Readiness for AI / ML**<br/>Enhance Artificial Intelligence / Machine Learning models and tasks with Customer Journey Analytics data. | **Customer Journey Analytics**: [**Export full table**](export-full-table.md)<br/>Export Customer Journey Analytics processed dimensions and metrics to cloud destinations one-time or recurring, including calculated metrics and segmentation.<br/><br/>**Experience Platform**: [**Query Service (Data Distiller) & Export datasets**](queryservice-export-datasets.md)<br/>Generate customized clickstream data using SQL to enrich AI / ML models. |
-
