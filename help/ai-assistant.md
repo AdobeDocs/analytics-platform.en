@@ -11,7 +11,7 @@ exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 >
 >AI Assistant for Customer Journey Analytics is currently in Beta. The feature and its documentation are subject to change.
 
-AI Assistant is a UI feature that you can use to navigate and understand Adobe Customer Journey Analytics concepts and terminology. AI Assistant responds to your submitted questions by querying a database and then translating data from the database into a human-readable answer. 
+AI Assistant is a UI feature that you can use to navigate and understand Adobe Customer Journey Analytics concepts and terminology. The AI Assistant in Customer Journey Analytics is trained on its Adobe Experience League documentation. When asked a question, AI Assistant responds with a helpful answer that enables quick learning.
 
 As a novice user, you can use AI Assistant to learn Customer Journey Analytics concepts and onboard yourself to products and features that you are unfamiliar with. As an experienced user, you can use AI Assistant to present more advanced use cases or tips and tricks.
 
@@ -21,15 +21,13 @@ Some examples of concept questions include:
 * What is Customer Journey Analytics best used for?
 * How do I set up a data view?
 
-Currently, the documentation index covers Adobe Experience League documentation on Customer Journey Analytics. The index is updated periodically.
-
 The documentation retrieval model is trained on Customer Journey Analytics. Questions outside the scope of Customer Journey Analytics, such as questions about other Adobe products like Adobe Target and the Adobe Creative Cloud Suite, cannot be answered.
 
 AI Assistant for Customer Journey Analytics is available to all product tiers.
 
 >[!IMPORTANT]
 >
->At this point, AI Assistant in Customer Journey Analytics does not answer usage questions about data objects inside your organization.
+>At this point, AI Assistant for Customer Journey Analytics does not answer usage questions about data objects inside your organization.
 
 ## Access AI Assistant in the Customer Journey Analytics UI
 
