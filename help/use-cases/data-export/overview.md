@@ -8,7 +8,7 @@ exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
 ---
 # Data export use cases
 
-This section provides data export use cases. Each use case is described in its own article. For some of the use cases, more than one solution is provided.
+This section provides data export use cases and how to implement these use cases with one or more functionalities of Customer Journey Analytics or Experience Platform. Each functionality is further detailed in a separate article.
 
 ## Introduction
 
