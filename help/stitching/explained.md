@@ -134,9 +134,8 @@ Live stitching attempts to stitch each event upon collection to known devices an
 
 Both unauthenticated and authenticated events on new devices are counted as separate people (temporarily). Unauthenticated events on recognized devices are live stitched.
 
-Attribution works when the identifying custom variable ties to a device. In the example above, all events except events 1, 8, 9 and 10 are live stitched (they all use the `Bob` identifier). Live stitching 'resolves' the stitched ID for event 4, 6 and 12.
+In the example above, due to an update of the identity graph, the transient id for the same persistent ID (246) changes.
 
-Delayed data (data with a timestamp over 24 hours old) is handled on a 'best effort' basis, while proritizing the stitching of current data for the highest quality.
 
 ### Step 2: Replay stitching
 
@@ -161,6 +160,8 @@ At regular intervals (once a week or once a day, depending on the chosen lookbac
 
 {style="table-layout:auto"}
 
+Because of the 24-hour lookback window, only the stitched ids for May 13, 20223 for persistent ID 246 are updated.
+
 *The same data after replay with a 7-day lookback window:*
 
 | Timestamp | Service | Persistent ID (Cookie ID) | Namespace = `Email` | Stitched ID (after live stitch) | 
@@ -180,28 +181,30 @@ At regular intervals (once a week or once a day, depending on the chosen lookbac
 
 {style="table-layout:auto"}
 
+Because of the 7-day lookback window, the stitched ids for May 12 and 13, 20223 for persistent ID 246 are updated.
+
 Attribution works when the identifying custom variable ties to a device. In the example above, event 1 and 10 are stitched as a result from the replay, leaving only event 8, and 9 unstitched. And reducing the people metric (cumulative) to 2.
 
 ### Step 3: Privacy Request
 
-When you receive a privacy request, the row containing the original user information is removed, along with any stitched IDs that contain this same person information. The following table represents the same data as above, but shows the effect that a privacy request for Bob has on the data after processing it. The rows where Bob authenticated are removed (2, 3, 5, 7, and 11) along with removing Bob as a transient ID for other rows.
+When you receive a privacy request, the row containing the original user information is removed, along with any stitched IDs that contain this same person information. The following table represents the same data as above, but shows the effect that a privacy request for Bob has on the data after processing it.
 
 *The same data after a privacy request for Bob with email `b.a@yahoo.co.uk`:*
 
 | Timestamp | Service | Persistent ID (Cookie ID) | Namespace = `Email` | Stitched ID (after live stitch) | 
 |---|---|---|---|---|
-| 2023-05-12 12:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJS | 246 |  |  |
+| 2023-05-12 12:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJS | 246 |  | 246 |
 | *2023-05-12 13:00* | *UIS* | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` =  `b.a@yahoo.co.uk` | |
-| 2023-05-12 14:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | | | 
-| 2023-05-12 14:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | | | 
+| 2023-05-12 14:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | | 246 | 
+| 2023-05-12 14:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | | 246 | 
 | 2023-05-12 17:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = *undefined* | 3579 |
 | *2023-05-12 18:00* | *UIS* | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | |
 | 2023-05-12 19:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | `ted.w@gmail.com` |
 | 2023-05-12 20:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | `ted.w@gmail.com` |
-| 2023-05-13 15:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) | CJS | 246 | | |
+| 2023-05-13 15:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) | CJS | 246 | | 246 |
 | *2023-05-13 16:00* | *UIS* | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | |
-| 2023-05-13 17:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | | |
-| 2023-05-13 18:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | | |
+| 2023-05-13 17:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | | 246 |
+| 2023-05-13 18:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | | 246 |
 
 
 <!--
