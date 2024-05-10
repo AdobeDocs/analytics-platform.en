@@ -4,6 +4,7 @@ description: Understand the breadth and width of feature engagement.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
+exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
 ---
 # [!UICONTROL Engagement] view
 
