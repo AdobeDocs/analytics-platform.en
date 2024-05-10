@@ -107,6 +107,8 @@ Stitching is a groundbreaking and robust feature, but has limitations on how it 
 ### Graph-based stitching
 
 - Timestamps are not taken into account when querying for the transient id using the specified namespace. So it is possible a persistent ID is stitched with a transient ID from a record that has an earlier timestamp.
+- No support for using `identityMap` as the persistent ID. You have to define a specific identifier in the dataset (for example, `ECID`) as the persistent ID.
+- 
 
 
 ## Use stitching
@@ -120,7 +122,7 @@ Once your organization meets all [prerequisites](#prerequisites) and understands
    - A request to enable stitching.
    - The dataset ID for the dataset that you want to rekey.
    - The column name of the persistent ID for the desired dataset (the identifier that appears on every row).
-   - For field-based stitching, the column name of the transient ID for the desired dataset (the person identifier, which also acts as a link between datasets in the context of a connection). For graph-based stitching, the identity to use from querying the identity graph.
+   - For field-based stitching, the column name of the transient ID for the desired dataset (the person identifier, which also acts as a link between datasets in the context of a connection). For graph-based stitching, the identity namespace to use for querying the identity graph.
    - Your preference of [replay](explained.md) frequency and lookback length. Options include a replay once a week with a 7-day lookback window, or a replay every day with a 1-day lookback window.
    - Sandbox name.
 
