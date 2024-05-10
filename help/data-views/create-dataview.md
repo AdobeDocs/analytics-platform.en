@@ -37,9 +37,19 @@ Provides overarching settings for the data view.
 
 | Setting | Description |
 | --- | --- |
-| [!UICONTROL Connection] | This field links the data view to the connection that you established earlier, which contains one or more Adobe Experience Platform datasets. |
-| [!UICONTROL Name] | Required. The name of the data view. This value appears in the top-right drop-down list in Analysis Workspace. |
-| [!UICONTROL Description] | Optional. Adobe recommends a detailed description so that users understand why the data view exists and who it is designed for. |
+| [!UICONTROL **Connection**] | This field links the data view to the connection that you established earlier, which contains one or more Adobe Experience Platform datasets. |
+| [!UICONTROL **Name**] | Required. The name of the data view. This value appears in the top-right drop-down list in Analysis Workspace. |
+| [!UICONTROL **Description**] | Optional. Adobe recommends a detailed description so that users understand why the data view exists and who it is designed for. |
+
+{style="table-layout:auto"}
+
+### Compatibility
+
+Provides settings that are applicable when using Adobe Journey Optimizer in addition to Customer Journey Analytics.
+
+| Setting | Description |
+| --- | --- |
+| [!UICONTROL **Set as default data view in Adobe Journey Optimizer**] | Adobe Journey Optimizer needs to use a data view that is configured with Customer Journey Analytics.<p>Enable this option to make this the default data view that is used in Adobe Journey Optimizer reporting.</p><p>You can change the default data view at a later time, but doing so could alter your data in Adobe Journey Optimizer. If you choose to disable it after it is enabled, you will be prompted to select a new default data view.</p> |
 
 {style="table-layout:auto"}
 
@@ -49,9 +59,9 @@ Designates the name of containers for the data view. Container names are frequen
 
 | Setting | Description |
 | --- | --- |
-| [!UICONTROL Person container name] | [!UICONTROL Person] (default). The [!UICONTROL Person] container includes every session and event for persons within the specified time frame. If your organization uses a different term (for example, "Visitor" or "User"), you can rename the container here. |
-| [!UICONTROL Session container name] | [!UICONTROL Session] (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this container to 'Visit' or any other term your organization prefers. |
-| [!UICONTROL Event container name] | [!UICONTROL Event] (default). The [!UICONTROL Event] container defines individual events in a dataset. If your organization uses a different term (for example, "Hits" or "Page Views"), you can rename the container here. |
+| [!UICONTROL **Person container name**] | [!UICONTROL Person] (default). The [!UICONTROL Person] container includes every session and event for persons within the specified time frame. If your organization uses a different term (for example, "Visitor" or "User"), you can rename the container here. |
+| [!UICONTROL **Session container name**] | [!UICONTROL Session] (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this container to 'Visit' or any other term your organization prefers. |
+| [!UICONTROL **Event container name**] | [!UICONTROL Event] (default). The [!UICONTROL Event] container defines individual events in a dataset. If your organization uses a different term (for example, "Hits" or "Page Views"), you can rename the container here. |
 
 {style="table-layout:auto"}
 
@@ -61,11 +71,11 @@ Indicates the calendar format that you want the data view to follow. You can hav
 
 | Setting | Description |
 | --- | --- |
-| [!UICONTROL Time zone] | Choose which time zone that you want your data to be presented in. If you choose a time zone that operates on Daylight Savings Time, data is automatically adjusted to reflect that. In the spring when clocks adjust one hour ahead, a one-hour gap is present. In the fall when clocks adjust one hour behind, one hour is repeated during the DST shift. |
-| [!UICONTROL Calendar Type] | Determine how weeks of the month are grouped.<br>**Gregorian:** Standard calendar format. Quarters are grouped by month.<br>**4-5-4 Retail:** A standardized 4-5-4 retail calendar. The first and last months of the quarter contain 4 weeks, while the second month of the quarter consists of 5 weeks.<br>**Custom (4-5-4):** Similar to the 4-5-4 calendar except you can choose the first day of the year and which year that the "extra" week occurs.<br>**Custom (4-4-5):** The first and second months of each quarter contain 4 weeks, while the last week of each quarter consists of 5 weeks.<br>**Custom (5-4-4):** The first month of each quarter consists of 5 weeks, while the second and third month of each quarter consists of 4 weeks. |
-| [!UICONTROL First month of the year] and [!UICONTROL First day of week] | Visible for the Gregorian calendar type. Specify what month that you want the calendar year to start on, and what day you want each week to start on. |
-| [!UICONTROL First day of current year] | Visible for custom calendar types. Specify what day of the year that you want the current year to start. The calendar automatically formats the first day of each week based on this value. |
-| [!UICONTROL Year in which the "extra" week occurs] | With most 364-day calendars (52 weeks of 7 days each), each year accumulates leftover days until they add up to an extra week. This extra week is then added to the last month of that year. Specify which year that you want the extra week added to. |
+| [!UICONTROL **Time zone**] | Choose which time zone that you want your data to be presented in. If you choose a time zone that operates on Daylight Savings Time, data is automatically adjusted to reflect that. In the spring when clocks adjust one hour ahead, a one-hour gap is present. In the fall when clocks adjust one hour behind, one hour is repeated during the DST shift. |
+| [!UICONTROL **Calendar Type**] | Determine how weeks of the month are grouped.<br>**Gregorian:** Standard calendar format. Quarters are grouped by month.<br>**4-5-4 Retail:** A standardized 4-5-4 retail calendar. The first and last months of the quarter contain 4 weeks, while the second month of the quarter consists of 5 weeks.<br>**Custom (4-5-4):** Similar to the 4-5-4 calendar except you can choose the first day of the year and which year that the "extra" week occurs.<br>**Custom (4-4-5):** The first and second months of each quarter contain 4 weeks, while the last week of each quarter consists of 5 weeks.<br>**Custom (5-4-4):** The first month of each quarter consists of 5 weeks, while the second and third month of each quarter consists of 4 weeks. |
+| [!UICONTROL **First month of the year**] and [!UICONTROL **First day of week**] | Visible for the Gregorian calendar type. Specify what month that you want the calendar year to start on, and what day you want each week to start on. |
+| [!UICONTROL **First day of current year**] | Visible for custom calendar types. Specify what day of the year that you want the current year to start. The calendar automatically formats the first day of each week based on this value. |
+| [!UICONTROL **Year in which the "extra" week occurs**] | With most 364-day calendars (52 weeks of 7 days each), each year accumulates leftover days until they add up to an extra week. This extra week is then added to the last month of that year. Specify which year that you want the extra week added to. |
 
 {style="table-layout:auto"}
 
