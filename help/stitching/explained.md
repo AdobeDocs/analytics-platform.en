@@ -193,18 +193,18 @@ When you receive a privacy request, the row containing the original user informa
 
 | Timestamp | Service | Persistent ID (Cookie ID) | Namespace = `Email` | Stitched ID (after live stitch) | 
 |---|---|---|---|---|
-| 2023-05-12 12:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJS | 246 |  | 246 |
+| 2023-05-12 12:00 <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/>| CJS | 246 |  | 246 |
 | *2023-05-12 13:00* | *UIS* | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` =  `b.a@yahoo.co.uk` | |
-| 2023-05-12 14:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | | 246 | 
-| 2023-05-12 14:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | | 246 | 
-| 2023-05-12 17:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = *undefined* | 3579 |
+| 2023-05-12 14:00 <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/>| CJA | 246 | | 246 | 
+| 2023-05-12 14:00 <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/>| CJA | 246 | | 246 | 
+| 2023-05-12 17:00 <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/>| CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = *undefined* | 3579 |
 | *2023-05-12 18:00* | *UIS* | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | |
-| 2023-05-12 19:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | `ted.w@gmail.com` |
-| 2023-05-12 20:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | `ted.w@gmail.com` |
-| 2023-05-13 15:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) | CJS | 246 | | 246 |
+| 2023-05-12 19:00 <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/>| CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | `ted.w@gmail.com` |
+| 2023-05-12 20:00 <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/>| CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | `ted.w@gmail.com` |
+| 2023-05-13 15:00 <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | CJS | 246 | | 246 |
 | *2023-05-13 16:00* | *UIS* | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | |
-| 2023-05-13 17:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | | 246 |
-| 2023-05-13 18:00 ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)| CJA | 246 | | 246 |
+| 2023-05-13 17:00 <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/>| CJA | 246 | | 246 |
+| 2023-05-13 18:00 <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/>| CJA | 246 | | 246 |
 
 
 <!--
