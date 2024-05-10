@@ -8,7 +8,7 @@ exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
 ---
 # Data export use cases
 
-This section provides data export use cases. Each use case is described in its own article. For some of the use cases, more than one solution is provided.
+This section provides data export use cases and how to implement these use cases with one or more functionalities of Customer Journey Analytics or Experience Platform. Each functionality is further detailed in a separate article.
 
 ## Introduction
 
@@ -61,7 +61,7 @@ For metric consistency, use of the new features in Customer Journey Analytics is
   * set alerts for delivery issues and limits on scheduled delivery windows.
 
 
-## Use cases and solutions
+## Use cases and functionalities
 
 In general, data export supports a number of use cases. Each use case is different in terms of the data that is required and how to access and export that data. Experience Platform and Customer Journey Analytics provide a number of functionalities that either independently or combined can solve the various use cases. The table below provides an overview of identified data export use cases and the Experience Platform and Customer Journey Analytics functionalities to implement these use cases.  
 
