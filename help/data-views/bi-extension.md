@@ -38,7 +38,7 @@ To use this functionality, you must:
 
 * Use expiring on non-expiring credentials to connect BI tools to the [!DNL Customer Journey Analytics BI extension]. The [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) provides more information on setting expiring credentials or non-expiring credentials.
 
-See [Access Control](../admin/cja-access-control.md) in the Customer Journey Analytics Administration section for additional information.
+See [Access Control](../technotes/access-control.md) in the Customer Journey Analytics Administration section for additional information.
 
 
 ## Usage

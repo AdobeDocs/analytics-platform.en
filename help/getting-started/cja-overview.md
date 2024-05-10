@@ -54,7 +54,7 @@ Before you can start using Customer Journey Analytics, the following prerequisit
 
 ## Access Control
 
-Refer to the [Access Control](/help/admin/cja-access-control.md) topic.
+See [Access Control](/help/technotes/access-control.md).
 
 ## Terminology updates
 

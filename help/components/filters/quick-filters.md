@@ -14,6 +14,7 @@ Consider the following when creating quick filters:
 * Quick filters apply only to the project where they were created. They are not available in other projects and cannot be shared to other users. 
 * A maximum of 3 rules are allowed.
 * Nested containers or sequential rules are not supported.
+* If you share a project with other users, those users can edit quick filters and other project-only components that are embedded in the shared project.
 
 The following video demonstrates how to use quick filters. (Note: this video uses the term "quick segments" instead of "quick filters." However, the functionality is the same.)
 

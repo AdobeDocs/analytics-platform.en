@@ -8,7 +8,7 @@ exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 ---
 # Evolution from Adobe Analytics
 
-## Step 3: Prepare your existing data 
+## Prepare your existing data 
 
 Preparing your Adobe Analytics data for a seamless move to Customer Journey Analytics is critical to data integrity and reporting consistency.
 
