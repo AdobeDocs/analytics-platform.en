@@ -20,6 +20,6 @@ Exporting data using the [!DNL Customer Journey Analytics BI extension] allows y
 
 ## More information
 
-The [!DNL Customer Journey Analytics BI extension] enables SQL access to the [data views](./data-views.md) that you have defined in Customer Journey Analytics. Your data engineers and analysts might be more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that Customer Journey Analytics users are using when creating their Analysis Workspace projects.
+The [!DNL Customer Journey Analytics BI extension] enables SQL access to the [data views](/help/data-views/data-views.md) that you have defined in Customer Journey Analytics. Your data engineers and analysts might be more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that Customer Journey Analytics users are using when creating their Analysis Workspace projects.
 
 For more information, see the detailed documentation on the [BI extension](../../data-views/bi-extension.md). 
