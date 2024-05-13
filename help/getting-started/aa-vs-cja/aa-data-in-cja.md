@@ -1,12 +1,12 @@
 ---
-title: Using Adobe Analytics report suite data in Customer Journey Analytics
+title: Use Adobe Analytics report suite data in Customer Journey Analytics
 description: How to configure Adobe Analytics report suites for ingestion into Adobe Experience Platform and Customer Journey Analytics
 role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
 ---
-# Using Adobe Analytics report suite data in Customer Journey Analytics
+# Use Adobe Analytics report suite data in Customer Journey Analytics
 
 Adobe Analytics customers can easily leverage their report suites in the Adobe Experience Platform and Customer Journey Analytics using the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). The following discussion explains how to do so.
 

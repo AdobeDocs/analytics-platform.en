@@ -14,7 +14,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 # Adobe Customer Journey Analytics Guide {#using}
 
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
-
++ [AI Assistant for Adobe Customer Journey Analytics](../ai-assistant.md)
 + Release Notes {#releases}
   + [Latest release](../release-notes/latest.md)
   + [2024 releases](../release-notes/2024.md)
@@ -41,7 +41,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
-    + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+    + [Use Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
     + [Customer Journey Analytics feature support](../getting-started/aa-vs-cja/cja-aa.md)
     + [Compare terminology for Analytics data passed through the Analytics source connector](../getting-started/aa-vs-cja/terminology.md)
     + [Compare data processing across Adobe Analytics and Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -194,6 +194,8 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Guided analysis {#guided-analysis}
     + [Overview](../guided-analysis/overview.md)
+    + Feature matrix {#feature-matrix}
+      + [Engagement](../guided-analysis/types/engagement.md)
     + Funnel {#funnel}
       + [Friction view](../guided-analysis/types/friction.md)
       + [Conversion trends view](../guided-analysis/types/conversion-trends.md)
@@ -228,6 +230,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create and publish audiences](../components/audiences/publish.md)
     + [Manage audiences](../components/audiences/manage.md)
   + Dimensions {#dimensions}
+    + [Dimensions overview](../components/dimensions/overview.md)
     + [Preview dimensions](../components/dimensions/view-dimensions.md)
     + [Break down dimensions](../components/dimensions/t-breakdown-fa.md)
     + [Time-parting dimensions](../components/dimensions/time-parting-dimensions.md)
@@ -337,6 +340,12 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Data views {#data-views}
     + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
+  + Data export {#data-export}
+    + [Overview](../use-cases/data-export/overview.md)
+    + [BI extension](../use-cases/data-export/bi-extension.md)
+    + [Export datasets](../use-cases/data-export/export-datasets.md)
+    + [Export full table](../use-cases/data-export/export-full-table.md)
+    + [Query Service and Export datasets](../use-cases/data-export/queryservice-export-datasets.md)
   + B2B {#b2b}
     + [An example B2B project](../use-cases/b2b/example.md)
     + [Add account-level data as a lookup dataset](../use-cases/b2b/b2b.md)
@@ -346,7 +355,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Adobe Analytics data {#aa-data}
     + [Use Marketing channel dimensions](../use-cases/aa-data/marketing-channels.md)
     + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
-    + [Emulating data feeds](../use-cases/emulating-data-feeds.md)
   + Complex data {#complex-data}
     + [Use arrays of objects](../use-cases/object-arrays.md)
   + Derived fields {#derived-fields}
