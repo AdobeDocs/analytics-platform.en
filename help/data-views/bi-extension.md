@@ -8,8 +8,6 @@ exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
 ---
 # Customer Journey Analytics BI extension
 
-{{release-limited-testing}}
-
 {{select-package}}
 
 The [!DNL Customer Journey Analytics BI extension] enables SQL access to the [data views](./data-views.md) that you have defined in Customer Journey Analytics. Your data engineers and analysts might be more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that Customer Journey Analytics users are using when creating their Analysis Workspace projects.
