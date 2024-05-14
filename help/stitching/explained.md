@@ -115,11 +115,13 @@ Data beyond the lookback window is not replayed. A visitor must authenticate wit
 
 Live stitching attempts to stitch each event upon collection to known devices and channels. Consider the following example, where Bob records different events as part of an event dataset. 
 
-*Data as it appears the day it is collected:*
+*Data as it appears the day it is collected, taken into account updates to the identity graph:*
 
-| Timestamp | Service | Persistent ID (Cookie ID) | Namespace = `Email` | Stitched ID (after live stitch) | 
+![Identity Graph](assets/identity-graph.svg)
+
+| Timestamp | Service | Persistent ID = `ECID` | Namespace = `Email` | Stitched ID (after live stitch) | 
 |---|---|---|---|---|
-| 2023-05-12 12:00 | CJS | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = *undefined* | 246 |
+| 2023-05-12 12:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = *undefined* | 246 |
 | *2023-05-12 13:00* | *UIS* | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | |
 | 2023-05-12 14:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | `bob.a@gmail.com` | 
 | 2023-05-12 14:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | `bob.a@gmail.com`   | 
@@ -127,14 +129,16 @@ Live stitching attempts to stitch each event upon collection to known devices an
 | *2023-05-12 18:00* | *UIS* | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | |
 | 2023-05-12 19:00 | CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | `ted.w@gmail.com` |
 | 2023-05-12 20:00 | CJA | 3579 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `3579` = `ted.w@gmail.com` | `ted.w@gmail.com` |
-| 2023-05-13 15:00 | CJS | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 2023-05-13 15:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `bob.a@gmail.com` | `bob.a@gmail.com` |
 | *2023-05-13 16:00* | *UIS* | | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | |
 | 2023-05-13 17:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | `b.a@yahoo.co.uk` |
 | 2023-05-13 18:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | `b.a@yahoo.co.uk` |
 
-Both unauthenticated and authenticated events on new devices are counted as separate people (temporarily). Unauthenticated events on recognized devices are live stitched.
+In the example above, the Service column does have to values, representing:
 
-In the example above, due to an update of the identity graph, the transient id for the same persistent ID (246) changes.
+* CJA: Customer Journey Analytics graph-based stitching process.<br/>
+* *UIS*: Experience Platform's Identity Service process, responsible for updating the identity graph.
+* * due to an update of the identity graph, the transient id (stitched id) for the same persistent ID (246) changes from *undefined* to `bob.a@gmail.com` to `b.a@yahoo.co.uk`.
 
 
 ### Step 2: Replay stitching
