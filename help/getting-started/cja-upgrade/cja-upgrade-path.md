@@ -77,7 +77,7 @@ Contact your Adobe representative if you need more specific advice, guidance, or
 |---------|----------|
 | AppMeasurement | <ul><li>New implementation of the Experience Platform Web SDK</li><li>Migrate Adobe Analytics to the Web SDK</li><li>Analytics Source Connector</li></ul>  | 
 | Adobe Analytics extension | <ul><li>New implementation of the Experience Platform Web SDK</li><li>Migrate Adobe Analytics to the Web SDK</li><li>Analytics Source Connector</li></ul> | 
-| Web SDK | <ul><li>Configure the Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics</li></ul> | 
+| Web SDK | <ul><li>Configure the Adobe Analytics Web SDK implementation to send data to Platform</li></ul> | 
 
 {style="table-layout:auto"}
 
@@ -131,7 +131,7 @@ When choosing this upgrade path, you also need to choose your schema.
 
 #### Upgrade path
 
-+++Configure the Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics
++++Configure the Adobe Analytics Web SDK implementation to send data to Platform
 
 | Advantages | Disadvantages |
 |----------|---------|
@@ -143,7 +143,7 @@ When choosing this upgrade path, you also need to choose your schema.
 
 #### Choose your schema
 
-If you chose the upgrade path that allows you to configure the Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics, you can choose the schema that you want to use.
+If you chose the upgrade path that allows you to configure the Adobe Analytics Web SDK implementation to send data to Platform, you can choose the schema that you want to use.
 
 You can choose whether to use your existing Adobe Analytics schema, or you can update to your own XDM schema to better align with the needs of your organization as you begin to use other Platform services.
 
@@ -159,7 +159,7 @@ You can choose whether to use your existing Adobe Analytics schema, or you can u
 
 | Advantages | Disadvantages |
 |----------|---------|
-|<ul><p>Advantages of updating to your own XDM schema include:</p><ul><li>A streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use.</li><p>When changes to the schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating.</p></ul> | <p>Disadvantages of updating to your own XDM schema include:</p><ul><li>Updating your schema is a time-consuming process that is required before you begin sending data to Customer Journey Analytics.</li></ul> |
+|<ul><p>Advantages of updating to your own XDM schema include:</p><ul><li>A streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use.</li><p>When changes to the schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating.</p></ul> | <p>Disadvantages of updating to your own XDM schema include:</p><ul><li>Updating your schema is a time-consuming process that is required before you begin sending data to Platform.</li></ul> |
 
 +++
 
