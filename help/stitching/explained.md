@@ -136,7 +136,7 @@ Live stitching attempts to stitch each event upon collection to known devices an
 
 {style="table-layout:auto"}
 
-In the example above, the Service column does have to values, representing:
+In the example above, the Service column does have two values, representing:
 
 * CJA: Customer Journey Analytics graph-based stitching process, and
 * *UIS*: Experience Platform's Identity Service process, responsible for updating the identity graph.
