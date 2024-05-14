@@ -27,7 +27,7 @@ These release notes cover the release period of May 15, 2024 through June 2024. 
 
 ## Fixes in Customer Journey Analytics
 
-AN-342309; AN-342312; AN-345267; AN-345909; AN-346016; AN-346049; AN-346052; AN-346287; AN-346624
+AN-342309; AN-342312; AN-345267; AN-345909; AN-346016; AN-346049; AN-346052; AN-346287; AN-346624; AN-347919
 
 ## Important notices for Customer Journey Analytics Administrators
 
