@@ -134,11 +134,14 @@ Live stitching attempts to stitch each event upon collection to known devices an
 | 2023-05-13 17:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | `b.a@yahoo.co.uk` |
 | 2023-05-13 18:00 | CJA | 246 | ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) `246` = `b.a@yahoo.co.uk` | `b.a@yahoo.co.uk` |
 
+{style="table-layout:auto"}
+
 In the example above, the Service column does have to values, representing:
 
-* CJA: Customer Journey Analytics graph-based stitching process.<br/>
+* CJA: Customer Journey Analytics graph-based stitching process, and
 * *UIS*: Experience Platform's Identity Service process, responsible for updating the identity graph.
-* * due to an update of the identity graph, the transient id (stitched id) for the same persistent ID (246) changes from *undefined* to `bob.a@gmail.com` to `b.a@yahoo.co.uk`.
+
+Due to an update of the identity graph, the transient id (stitched id) for the same persistent ID (246) changes from *undefined* to `bob.a@gmail.com` to `b.a@yahoo.co.uk`.
 
 
 ### Step 2: Replay stitching
