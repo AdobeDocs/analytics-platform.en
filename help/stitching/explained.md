@@ -167,7 +167,7 @@ At regular intervals (once a week or once a day, depending on the chosen lookbac
 
 {style="table-layout:auto"}
 
-Because of the 24-hour lookback window, only the stitched ids for May 13, 20223 for persistent ID 246 are updated.
+Because of the 24-hour lookback window, only the stitched ids for May 13, 2023 for persistent ID 246 are updated.
 
 *The same data after replay with a 7-day lookback window:*
 
@@ -188,7 +188,7 @@ Because of the 24-hour lookback window, only the stitched ids for May 13, 20223 
 
 {style="table-layout:auto"}
 
-Because of the 7-day lookback window, the stitched ids for May 12 and 13, 20223 for persistent ID 246 are updated.
+Because of the 7-day lookback window, the stitched ids for May 12 and 13, 2023 for persistent ID 246 are updated.
 
 Attribution works when the identifying custom variable ties to a device. In the example above, event 1 and 10 are stitched as a result from the replay, leaving only event 8, and 9 unstitched. And reducing the people metric (cumulative) to 2.
 
