@@ -1,6 +1,6 @@
 ---
 title: Engagement view
-description: Understand the breadth and width of feature engagement.
+description: Understand the breadth and depth of feature engagement.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
@@ -8,32 +8,36 @@ exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
 ---
 # [!UICONTROL Engagement] view
 
-The **[!UICONTROL Engagement]** view provides insight into how often a feature is used versus how many people use it. This analysis works best when comparing several features to each other.
+The **[!UICONTROL Engagement]** view provides insight into how often a feature is used versus how many people use it. This analysis works best when comparing several features to each other and helps fuel investment decisions by understanding what your core, power, one-time, and questionable features are.
 
-Features that plot toward the top of this visualization indicate that it is visited frequently among those individuals who use it. Features that plot toward the right of this visualization indicate that the greatest proportion of users that engage with the feature. The median number of times a feature is used divides the graph horizontally. The median percentage of daily active users divides the graph vertically.
+Features that plot toward the top of this visualization indicate that they are frequently used among engaged users. Features that plot toward the right of this visualization indicate that they are widely adopted among your active users. The median number of times a feature is used divides the graph horizontally. The median percentage of active users divides the graph vertically. Note: Medians are calculated based on the events selected in the query, not all data.
 
-* Features in the top-left of the matrix mean that a feature is not widely adopted. However, among those individuals who use it, they use it frequently.
-* Features in the top-right of the matrix mean that a feature is both widely adopted and frequently used.
-* Features in the bottom-right of the matrix mean that a feature is widely adopted, but not frequently used.
-* Features in the bottom-left of the matrix mean that a feature is not widely adopted, nor is it frequently used.
+* Features in the top-left of the matrix are your **power** features; they are not widely adopted, but are frequently used by engaged users. 
+* Features in the top-right of the matrix are your **high impact** features; they are both widely adopted and frequently used.
+* Features in the bottom-left of the matrix are your **low impact** features; they are not widely adopted, nor frequently used.
+* Features in the bottom-right of the matrix are your **one-time** features; they are widely adopted, but not frequently used.
 
 ## Use cases
 
 Use cases for this view type include:
 
-* **Engagement by feature**: You can establish a direct correlation between engagement and adoption of a specific feature. Understanding which features are used the most can help determine which features to prioritize enhancing.
-* **Discover underutilized features**: Features with low daily active users but high usage can indicate a hidden but valuable feature. Consider exposing these types of features to more users.
-* **Improve popular features**: Features with high active users but low usage can indicate that a feature is highly requested but underused. Consider investing in improving these features so that they are used more often.
-* **Create feature-based segments**: Analyzing how often a feature is used against how many users adopt it can help determine the types of users adopting a given feature. You can create segments based on users that use a feature casually, or based on users that frequently use that feature.
-* **Feature adoption A/B testing**: Compare the usage of multiple features using segments. Add the segments of each cohort in the query rail to determine the difference in feature usage easily.
+* **Engagement by feature**: You can establish a direct correlation between engagement and adoption of a specific feature. Understanding which features are used the most can help determine which features to invest in further.
+* **Discover underutilized features**: Features with low active users but high usage can indicate a power feature, one that is valuable but not discovered or utilized by the wider population. Consider enhancing the discoverability of these features so more users leverage them. 
+* **Improve popular features**: Features with high active users but low usage can indicate that a feature is highly requested but underused. These present opportunities to learn more from your users about what improvements would make the feature more valuable for them. 
+* **Create feature-based segments**: Viewing feature usage in this way to prompt additional analysis opportunities. Create a segment for any point on the chart to dive into that user group further and apply those learnings to your user engagement strategy.
+* **Feature adoption A/B testing**: Compare the usage of multiple features across different groups of users. Add segments in the query rail to to determine the difference in feature usage across key user groups.
 
 ## Query rail
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL Events]**: The events that you want to measure. These events typically represent usage of a given feature. Each selection is represented as a point within the matrix. You can include up to ten events.
-* **[!UICONTROL Counted as]**: Determine the details of how the x-axis counts users. You can measure the average percent of daily, weekly, monthly, or quarterly active users. The y-axis automatically adjusts the average times per user based on the x-axis selection.
+* **[!UICONTROL Events]**: The events that you want to measure, which represent usage of a given feature. Each selection is represented as a point within the matrix. You can include up to ten events. The median is calculated based on the events selected.
+* **[!UICONTROL Counted as]**: Along the x-axis, you can measure the average percent of daily, weekly, monthly, or quarterly active users. The y-axis automatically adjusts the average times per user based on the x-axis selection.
 * **[!UICONTROL Segments]**: The segments that you want to measure. Each selected segment doubles the number of plotted points in the chart and rows in the table. You can include up to three segments.
+
+>[!TIP]
+>
+>If usage of a feature is represented by many events occurring, you can derive a new event that represents the feature was used in Data Views.
 
 ## Chart settings
 
@@ -42,7 +46,7 @@ The [!UICONTROL Engagement] view offers the following chart settings, which can 
 * **[!UICONTROL Medians]**: Determine where the median lines are shown and how the plotted points relate to those medians.
   * **[!UICONTROL Standard]**: Show the absolute value of usage and engagement.
   * **[!UICONTROL Normalized]**: Show relative changes from each median.
-* **[!UICONTROL Top events overlay]**: See how your events are doing compared to the most common events.
+* **[!UICONTROL Top events overlay]**: See how your events are doing compared to the top 20 events, based on company and user recency & relevancy (the same algorithm applied to the event selector in the query rail).
 
 ## Time comparison
 
