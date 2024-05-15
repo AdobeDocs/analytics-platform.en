@@ -154,13 +154,193 @@ To quickly create a derived field for specific use cases, function templates are
 
 ### Marketing channels
 
-This template is configured to use the [Url Parse](#dnl-url-parse) and [Case When](#dnl-case-when) functions multiple times to get appropriate values from a URL. Logic is then applied on these values to associate the URL to a specific marketing channel.
+This function template uses a collection of rules to build marketing channels.
 
 +++ Details
 
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
-![Screenshot of the Marketing channel template rule builder](assets/marketing-channel-template.png)
+![Screenshot of the Marketing channel template rule builder](assets/function-template-marketing-channel-template.png)
+
++++
+
+### Bounces
+
+This function template uses a collection of rules to identify site bounces.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Bounces rule builder](assets/function-template-bounces.png)
+
++++
+
+### Multi-Dimension Combine
+
+This function template combines two values into one.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Multi-Dimension Combine rule builder](assets/function-template-multi-dimension-combine.png)
+
++++
+
+### Friendly Dataset Name
+
+This function template provides a readable dataset name.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Friendly Dataset Name rule builder](assets/function-template-friendly-dataset-name.png)
+
++++
+
+### Page Name from URL
+
+This function template creates a simple page name.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Page Name from URL rule builder](assets/function-template-page-name-from-url.png)
+
++++
+
+### Holiday Season
+
+This function template classifies key times of the year.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Holiday Season rule builder](assets/function-template-holiday-season.png)
+
++++
+
+### Monthly Goals
+
+This function template sets custom monthly goals.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Monthly Goals rule builder](assets/function-template-monthly-goals.png)
+
++++
+
+### Get All Values in Delimited List
+
+This function template converts a limited list to an array.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Get All Values in Delimited list rule builder](assets/function-template-get-all-values-in-delimited-list.png)
+
++++
+
+### Get First Value in Delimited List
+
+This function template gets the first value in a delimited list.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Get First Value in Delimited List rule builder](assets/function-template-get-first-value-in-delimited-list.png)
+
++++
+
+### Get Last Value in Delimited List
+
+his function template gets the last value in a delimited list.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Get Last Value in Delimited List rule builder](assets/function-template-get-last-value-in-delimited-list.png)
+
++++
+
+### Domain Name
+
+This function template extracts the domain name using a regular expression.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Domain Name rule builder](assets/function-template-domain-name.png)
+
++++
+
+### Get Query String Parameter
+
+This function template extracts query string values.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Get Query String Parameter rule builder](assets/function-template-get-query-string-parameter.png)
+
++++
+
+### Transition Field
+
+This function template transitions reporting from one field to another field.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Transition Field rule builder](assets/function-template-transition-field.png)
+
++++
+
+### Simple Bot Detection
+
+This function template implements light bot identification.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Simple Bot Detection rule builder](assets/function-template-simple-bot-detection.png)
+
++++
+
+### Exit Link
+
+This function template identifies last link clicked in a session.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Exit Link rule builder](assets/function-template-exit-link.png)
+
++++
+
+### Download Link
+
+This function template flags common download links.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Download Link rule builder](assets/function-template-download-link.png)
 
 +++
 
@@ -249,7 +429,7 @@ In case your site receives the following sample events, containing [!UICONTROL R
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` | 
+| `https://google.com` | |
 
 {style="table-layout:auto"}
 
