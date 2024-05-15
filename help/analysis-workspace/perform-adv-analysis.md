@@ -8,8 +8,10 @@ role: User
 ---
 # Perform advanced analysis
 
+Before do advanced analysis as described below, make sure you understand [basic analysis](/help/analysis-workspace/perform-basic-analysis.md).
+
 Advanced analysis leverages features like [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) diagrams, [Attribution](/help/analysis-workspace/c-panels/attribution.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) diagrams, and [dimension breakdowns](/help/components/dimensions/t-breakdown-fa.md).
 
  ![Advanced Analysis shown in a flow diagram.](assets/cja-adv-analysis1.png)
 
- ![Multiple visualization examples, such as donudt, venn, and stacked bar chart.](assets/cja-adv-analysis2.png)
+ ![Multiple visualization examples, such as donut, venn, and stacked bar chart.](assets/cja-adv-analysis2.png)
