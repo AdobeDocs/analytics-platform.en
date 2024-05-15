@@ -17,36 +17,31 @@ Get a glimpse of the newest enhancements in the Customer Journey Analytics produ
 
 >[!BEGINTABS]
 
+>[!TAB BI extension*] 
+
+The BI extension enables SQL access to the data views that you have defined in Customer Journey Analytics. You can now create reporting and dashboards, using BI tools, based on the same data views that Customer Journey Analytics users are using when creating their Analysis Workspace projects.
+
+[![image](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
+
+<span style="color:gray">*_You must have the Select package or higher in order to use the BI extension._</span>
+
+>[!TAB Improved Audience Publising] 
+
+Audiences that are published from Customer Journey Analytics are now available in the new **Audiences** section in Adobe Experience Platform. Audiences are now available in Experience Platform seconds after they are published from Customer Journey Analytics. Improved sorting and filter options in Experience Platform for Customer Journey Analytics audiences. 
+
+[![image](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
+
+>[!TAB New documentation] 
+
+New documentation on how to upgrade from Adobe Analytics to Customer Journey Analytics and describing various data export use cases and their required Experience Platform and Customer Journey functionalities.
+
+[![image](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
+
 >[!TAB Forecasting] 
 
 Forecasting is an Analysis Workspace feature to forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly). Forecasting is available for time-series related data only.
 
 [![image](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
-
-
->[!TAB Guided Analysis* - Retention rates]
-
-A new view type that shows the percentage of users that return after their initial engagement within the desired date range. The horizontal axis represents the number of days since a user's initial engagement. The vertical axis represents the percentage of users who engage again.
-
-[![image](assets/learn-more-button.svg)](/help/guided-analysis/types/retention-rates.md)
-
-<span style="color:gray">*_Guided analysis is part of Adobe Product Analytics, which is a paid add-on to Customer Journey Analytics._</span>
-
-
->[!TAB Guided Analysis* - Trendlines] 
-
-Trendline overlays are now available in the Usage view, which helps depict a clearer pattern in data. The types of trendlines available are linear, logarithmic and moving average.
-
-[![image](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
-
-<span style="color:gray">*_Guided analysis is part of Adobe Product Analytics, which is a paid add-on to Customer Journey Analytics._</span>
-
-
->[!TAB Key Metrics Summary visualization] 
-
-When using the Key Metric Summary visualization, the Comparison date range can now automatically update, depending on whether the Comparison date range option you choose is relative to the primary date range or fixed.
-
-[![image](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/key-metric.md)
 
 >[!ENDTABS]
 
