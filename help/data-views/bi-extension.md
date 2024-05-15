@@ -306,7 +306,7 @@ The `daterangeName` special column can be used to filter your query using a name
 
 >[!NOTE]
 >
->PowerBI is not supporting the `daterange` metrics that are less than a day (hour, 30 minute, 5 minute, etc.).
+>PowerBI is not supporting `daterange` metrics that are less than a day (hour, 30 minute, 5 minute, etc.).
 
 
 #### Filter ID
