@@ -249,7 +249,7 @@ In case your site receives the following sample events, containing [!UICONTROL R
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` | 
+| `https://google.com` | |
 
 {style="table-layout:auto"}
 
@@ -815,6 +815,74 @@ You define a `Product Names` derived field. You use the [!UICONTROL LOWERCASE] f
 {style="table-layout:auto"}
 
 +++
+
+<!-- MATH -->
+
+### Math
+
+Use basic mathematical operators (add, subtract, multiply, divide & raise to a power) on numeric fields.
+
++++ Details
+
+## Specification {#math-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>Numeric</li></ul> | <ul><li>One or multiple numeric fields</li><li>One or multiple operators (add, subtract, multiply, divide, raise to a power)</li><li>User input value</li></ul> | <ul><li>`+` (add)</li><li>`-` (subtract)</li><li>`*` (multiply)</li><li>`/` (divide)</li><li>`^` (raise to power)</li></ul> | <ul><li>5 operations per function</li><li>5 Math rules per derived field</li></ul> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+## Use case {#math-uc}
+
+Due to inflation you want to correct the revenue numbers of ingested CRM data  with 5% inflation.
+
+### Data before {#math-uc-databefore}
+
+| CRM ID | Annual Revenue |
+|---|---:|
+| 1234 | 35,070,000 |
+| 4133 | 7,500,000 |
+| 8110 | 10,980 |
+| 2201 | 42,620 |
+
+{style="table-layout:auto"}
+
+### Derived field {#math-uc-derivedfield}
+
+You define a `Corrected Annual Revenue` derived field. You use the [!UICONTROL MATH] function to define a rule that multiplies the original Annual Revenu number with 1.05. 
+
+![Screenshot of the Math rule](assets/lowercase.png)
+
+
+### Data after {#math-uc-dataafter}
+
+| CRM ID | Corrected Annual Revenue |
+|---|---:|
+| 1234 | 36,823,500 |
+| 4133 | 7,875,000 |
+| 8110 | 11,529,00 |
+| 2201 | 44,751 |
+
+{style="table-layout:auto"}
+
+## More info {#math-more-info}
+
+To create a formula: 
+
+1. Simply start typing in the Formula field and numeric fields that match what you type will appear in a popup menu. Alternatively, you can drag and drop a numeric field from the available fields in the left pane.
+  ![Math More Info 1](assets/math-more-info-1.png)
+
+1. Add the operand (for example `*` to multiply)  followed by another field or a static value. You can use parenthesis to define more complex formulas.
+
+1. To insert a static value (for example `1.05`), type the value and select **[!UICONTROL Add *x* as a static value]** from the popup menu.
+  ![Math More Info 2](assets/math-more-info-2.png)
+
+1. A green checkmark ![Checkmark](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize50.svg) indicates whether your math formula is valid, otherwise you will see a warning and the message [!UICONTROL Invalid formula expression]. 
+   ![Math More Info 3](assets/math-more-info-3.png)
+
+
++++
+
 
 <!-- MERGE FIELDS -->
 
