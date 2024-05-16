@@ -25,7 +25,7 @@ Use cases for this view type include:
 
 * **Engagement by feature**: You can establish a direct correlation between engagement and adoption of a specific feature. Understanding which features are used the most can help determine which features to invest in further.
 * **Discover underused features**: Features with low active users but high usage can indicate a power feature, one that is valuable but not discovered or used by the wider population. Consider enhancing the discoverability of these features so that more users leverage them. 
-* **Improve popular features**: Features with high active users but low usage can indicate that a feature is highly requested but underused. These present opportunities to learn more from your users about what improvements would make the feature more valuable for them. 
+* **Improve popular features**: Features with high active users but low usage can indicate that a feature is highly requested but underused. These situations present opportunities to learn more from your users about what improvements would make the feature more valuable for them. 
 * **Create feature-based segments**: Viewing feature usage in this way to prompt additional analysis opportunities. Create a segment for any point on the chart to dive into that user group further and apply those learnings to your user engagement strategy.
 * **Feature adoption A/B testing**: Compare the usage of multiple features across different groups of users. Add segments in the query rail to determine the difference in feature usage across key user groups.
 
