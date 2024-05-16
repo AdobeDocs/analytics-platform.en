@@ -10,7 +10,7 @@ exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
 
 The **[!UICONTROL Engagement]** view provides insight into how often a feature is used versus how many people use it. This analysis works best when comparing several features to each other. It helps fuel investment decisions by understanding what your core, power, one-time, and questionable features are.
 
-Features that plot toward the top of this visualization indicate that they are frequently used among engaged users. Features that plot toward the right of this visualization indicate that they are widely adopted among your active users. The median number of times a feature is used divides the graph horizontally. The median percentage of active users divides the graph vertically. Note: Medians are calculated based on the events selected in the query, not all data.
+Features that plot toward the top of this visualization indicate that they are frequently used among engaged users. Features that plot toward the right of this visualization indicate that they are widely adopted among your active users. The median number of times a feature is used divides the graph horizontally. The median percentage of active users divides the graph vertically. Medians are calculated based on the events selected in the query, not all data.
 
 * Features in the top-left of the matrix are your **power** features; they are not widely adopted, but are frequently used by engaged users. 
 * Features in the top-right of the matrix are your **high impact** features; they are both widely adopted and frequently used.
@@ -33,7 +33,7 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL Events]**: The events that you want to measure, which represent usage of a given feature. Each selection is represented as a point within the matrix. You can include up to ten events. The median is calculated based on the events selected.
+* **[!UICONTROL Events]**: The events that you want to measure. Each event represents usage of a given feature and displays as a point within the matrix. You can include up to ten events. The median is calculated based on the events selected.
 * **[!UICONTROL Counted as]**: Along the x-axis, you can measure the average percent of daily, weekly, monthly, or quarterly active users. The y-axis automatically adjusts the average times per user based on the x-axis selection.
 * **[!UICONTROL Segments]**: The segments that you want to measure. Each selected segment doubles the number of plotted points in the chart and rows in the table. You can include up to three segments.
 
