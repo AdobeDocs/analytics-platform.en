@@ -8,24 +8,26 @@ exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
 ---
 # [!UICONTROL Engagement] view
 
-The **[!UICONTROL Engagement]** view provides insight into how often a feature is used versus how many people use it. This analysis works best when comparing several features to each other and helps fuel investment decisions by understanding what your core, power, one-time, and questionable features are.
+The **[!UICONTROL Engagement]** view provides insight into how often a feature is used versus how many people use it. This analysis works best when comparing several features to each other. It helps fuel investment decisions by understanding what your core, power, one-time, and questionable features are.
 
 Features that plot toward the top of this visualization indicate that they are frequently used among engaged users. Features that plot toward the right of this visualization indicate that they are widely adopted among your active users. The median number of times a feature is used divides the graph horizontally. The median percentage of active users divides the graph vertically. Note: Medians are calculated based on the events selected in the query, not all data.
 
 * Features in the top-left of the matrix are your **power** features; they are not widely adopted, but are frequently used by engaged users. 
 * Features in the top-right of the matrix are your **high impact** features; they are both widely adopted and frequently used.
-* Features in the bottom-left of the matrix are your **low impact** features; they are not widely adopted, nor frequently used.
+* Features in the bottom-left of the matrix are your **low impact** features; they are not widely adopted or frequently used.
 * Features in the bottom-right of the matrix are your **one-time** features; they are widely adopted, but not frequently used.
+
+![Engagement screenshot](../assets/feature-matrix.png)
 
 ## Use cases
 
 Use cases for this view type include:
 
 * **Engagement by feature**: You can establish a direct correlation between engagement and adoption of a specific feature. Understanding which features are used the most can help determine which features to invest in further.
-* **Discover underutilized features**: Features with low active users but high usage can indicate a power feature, one that is valuable but not discovered or utilized by the wider population. Consider enhancing the discoverability of these features so more users leverage them. 
+* **Discover underused features**: Features with low active users but high usage can indicate a power feature, one that is valuable but not discovered or used by the wider population. Consider enhancing the discoverability of these features so that more users leverage them. 
 * **Improve popular features**: Features with high active users but low usage can indicate that a feature is highly requested but underused. These present opportunities to learn more from your users about what improvements would make the feature more valuable for them. 
 * **Create feature-based segments**: Viewing feature usage in this way to prompt additional analysis opportunities. Create a segment for any point on the chart to dive into that user group further and apply those learnings to your user engagement strategy.
-* **Feature adoption A/B testing**: Compare the usage of multiple features across different groups of users. Add segments in the query rail to to determine the difference in feature usage across key user groups.
+* **Feature adoption A/B testing**: Compare the usage of multiple features across different groups of users. Add segments in the query rail to determine the difference in feature usage across key user groups.
 
 ## Query rail
 
@@ -37,7 +39,7 @@ The query rail allows you to configure the following components:
 
 >[!TIP]
 >
->If usage of a feature is represented by many events occurring, you can derive a new event that represents the feature was used in Data Views.
+>If multiple events represent usage of a single feature, you can derive a new event that represents the feature in Data Views.
 
 ## Chart settings
 
