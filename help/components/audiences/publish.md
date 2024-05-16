@@ -80,7 +80,7 @@ After you create and publish an audience in Customer Journey Analytics, the audi
 
 At several points prior to, during, and after audience publishing, latencies can occur. Here is an overview of possible latencies.
 
-![Latencies in audience publishing as described in this section.](assets/latency-diagram.png)
+![Latencies in audience publishing as described in this section.](assets/latency-diagram.svg)
 
 | # | Latency point | Latency duration |
 | --- | --- | --- |
