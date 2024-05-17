@@ -29,6 +29,16 @@ AI Assistant for Customer Journey Analytics is available to all product tiers.
 >
 >At this point, AI Assistant for Customer Journey Analytics does not answer usage questions about data objects inside your organization.
 
+## Feature Access
+
+In this first release, access to the AI Assistant feature is governed by the following parameters:
+
+* **Solution access**: The AI Assistant is available in Customer Journey Analytics, but not in Adobe Analytics. It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP and additional Experience Platform apps.
+
+* **Contractual access**: Your Adobe sales contract needs to include a clause that allows Adobe to use your data in AI/ML model development (clause 6.2).
+
+* **Permissions**: The [!UICONTROL Adobe Admin Console] [!UICONTROL Reporting Tools] "AI Assistant Documentation" permission determines access to this tool. This permission will be added to the Reporting Tools section in mid May. You need to ensure that you create a [product profile](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) in Admin Console with this permission granted, and manually add users to this profile.
+
 ## Access AI Assistant in the Customer Journey Analytics UI
 
 1. To launch AI Assistant, select the AI Assistant icon from the top header of any page in the Customer Journey Analytics UI.
