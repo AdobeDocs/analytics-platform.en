@@ -113,7 +113,7 @@ Data beyond the lookback window is not replayed. A visitor must authenticate wit
 
 ### Step 1: Live stitching
 
-Live stitching attempts to stitch each event upon collection to known information at that time from the identity graph. Consider the following two identity graphs for persistent id 246 and 3579, how these identity graphs are updated over time and how these updates impacts the live graph-based stitching.
+Live stitching attempts to stitch each event upon collection to known information at that time from the identity graph. Consider the following two identity graphs for persistent id 246 and 3579, how these identity graphs are updated over time and how these updates impact the live graph-based stitching.
 
 ![Identity Graph 246](assets/identity-graph-246.svg)
 ![Identity Graph 3579](assets/identity-graph-3579.svg)
@@ -136,7 +136,7 @@ When the lookup resolves to more than one stitched id (like for for event 7), th
 
 ### Step 2: Replay stitching
 
-At regular intervals (once a week or once a day, depending on the chosen lookback window), replay stitching recalculates historical data based the most recent version of the identity graph at the time of the interval. 
+At regular intervals (once a week or once a day, depending on the chosen lookback window), replay stitching recalculates historical data based on the most recent version of the identity graph at the time of the interval. 
 
 With a replay stitching happening at 2023-05-13 16:30, with a 24-hour lookback window configuration, some events from our sample are re-stitched, indicated by ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg).
 
