@@ -1,8 +1,8 @@
 ---
 description: Learn how to add components to a project in Analysis Workspace
 title: Use components in Analysis Workspace
-feature: Workspace Basics
-role: User, Admin
+feature: Components
+role: User
 ---
 # Use components in Analysis Workspace
 
