@@ -217,6 +217,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Components {#cja-components}
   + [Components overview](../components/overview.md)
+  + [Use components in Analysis Workspace](../components/use-components-in-workspace.md)
   + [Add component descriptions](../components/add-component-descriptions.md)
   + Annotations {#annotations}
     + [Annotations overview](../components/annotations/overview.md)

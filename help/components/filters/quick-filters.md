@@ -28,9 +28,11 @@ To create a quick filter:
 
 1. Choose one of the following methods to begin creating the quick filter:
 
-   * **Ad hoc (drag-and-drop):** From the left rail, drag a component to the drop zone next to the **Filter** icon in the panel header, then select the **Edit** icon to adjust the filter.
+   * **Ad hoc (drag-and-drop):** From the left rail, drag a component to the filter drop zone in the panel header.
 
-     ![Edit ad hoc filter](assets/filter-adhoc-edit.png)
+     ![drop a segment in the drop zone](assets/filter-dropzone.png)
+
+     You can edit the quick filter as described in [Edit a quick filter](#edit-a-quick-filter).
 
       >[!NOTE]
       >
