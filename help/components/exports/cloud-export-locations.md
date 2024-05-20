@@ -37,6 +37,7 @@ For information about how to manage existing locations, including viewing, editi
    |---------|----------|
    | [!UICONTROL **Name**] | The name of the location.  | 
    | [!UICONTROL **Description**] | Provide a short description of the location to help differentiate it from other locations on the account. |
+   | [!UICONTROL **Make location available to all users in your organization**] | Enable this option to allow other users in your organization to use the location. <p>Consider the following when sharing locations:</p><ul><li>Locations that you share cannot be unshared.</li><li>Shared locations can be edited only by the owner of the location.</li><li>Locations can be shared only if the account that the location is associated with is also shared.</li></ul> |
    | [!UICONTROL **Location account**] | Select the account where you want to create the location. For information about how to create an account, see [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md). | 
 
 1. In the [!UICONTROL **Location properties**] section, specify information specific to the account type of your location account.  

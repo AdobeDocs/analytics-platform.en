@@ -29,6 +29,16 @@ For information about how to manage existing accounts, including viewing, editin
 
 1. In the [!UICONTROL **Location account description**] field, provide a short description of the account to help differentiate it from other accounts of the same account type.
 
+1. Enable the option to [!UICONTROL **Make account available to all users in your organization**] if you want to allow other users in your organization to use the account. 
+
+   Consider the following when sharing accounts:
+   
+   * Accounts that you share cannot be unshared.
+   
+   * Shared accounts can be edited only by the owner of the account.
+   
+   * Anyone can create a location for the shared account.
+
 1. In the [!UICONTROL **Account type**] field, select the type of cloud account you are exporting to. Available account types are Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake, and AEP Data Landing Zone.
 
 1. Continue with the section below that corresponds to the [!UICONTROL **Account type**] you selected.
