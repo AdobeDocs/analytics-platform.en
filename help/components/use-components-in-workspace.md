@@ -12,7 +12,7 @@ For overview information about the types of components you can add, see [Compone
 
 >[!TIP]
 >
->For information about each component, select the Info icon next to a component's name in the left rail of Analysis Workspace, or see the [Analytics Components Guide](/help/components/home.md).
+>For information about each component, select the Info icon next to a component's name in the left rail of Analysis Workspace.
 
 ## Begin adding components to a project
 
@@ -108,11 +108,11 @@ To add a filter to a project in Analysis Workspace:
 
      For more information, see [Quick filters](/help/components/filters/quick-filters.md).
 
-For more information about how you can use the segment drop zone on a panel to filter your panel, see [Drop zone](/help/analyze/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analyze/analysis-workspace/c-panels/panels.md).
+For more information about how you can use the segment drop zone on a panel to filter your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
 
 ## Add date ranges to a project
 
-[Date ranges](/help/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md) determine the reporting time frame in Analysis Workspace, and can be applied to one or more panels within a project.
+[Date ranges](/help/components/date-ranges/custom-date-ranges.md) determine the reporting time frame in Analysis Workspace, and can be applied to one or more panels within a project.
 
 Each panel includes a date range by default. There are multiple ways to update a date range for a panel. One way to update a date range for a panel in Analysis Workspace is to drag a date range component from the left rail:
 
@@ -122,4 +122,4 @@ Each panel includes a date range by default. There are multiple ways to update a
 
      ![drop a date range](assets/daterange-drop.png)
 
-For more information about how to use calendars and date ranges in Analysis Workspace, see [Calendar and date ranges overview](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md).
+For more information about how to use calendars and date ranges in Analysis Workspace, see [Calendar and date ranges overview](/help/components/date-ranges/custom-date-ranges.md).
