@@ -65,7 +65,7 @@ Ensure you do not confuse stitching with:
 
 You specify an event dataset as well as the persistent ID (cookie) and transient ID (person ID) for that dataset. Field-based stitching updates the transient ID for rows for every specific persistent ID that have no value for the transient ID. Field-based stitching does these updates based on rows that have a transient ID for that specific persistent ID. <br/>You use field-based stitching when using Customer Journey Analytics as a standalone solution (not having access to the Experience Platform Identity Service and associated identity graph) or when you do not want to use the available identity graph.
 
-![Field-based stitching](/help/stitching/assets/fbs.svg)
+![Field-based stitching](/help/stitching/assets/fbs.png)
 
 ### How field-based stitching works
 
@@ -203,7 +203,7 @@ The following limitations do apply specifically to field-based stitching:
 
 You specify an event dataset as well as the persistent ID (cookie) and the namespace of the transient ID (person ID) for that dataset. Graph-based stitching uses the persistent ID to query the identity graph from the Experience Platform Identity Service, using the namespace specified, to update the transient ID.
 
-![Graph-based-stitching](/help/stitching/assets/gbs.svg)
+![Graph-based-stitching](/help/stitching/assets/gbs.png)
 
 ### How graph-based stitching works
 
