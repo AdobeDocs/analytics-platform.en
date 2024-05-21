@@ -249,7 +249,7 @@ In case your site receives the following sample events, containing [!UICONTROL R
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` | 
+| `https://google.com` | | 
 
 {style="table-layout:auto"}
 
@@ -439,13 +439,13 @@ Defines a set of values that are replaced by corresponding values in a new deriv
 
 >[!NOTE]
 >
->This function was originally named Lookup but has been renamed to Classify to accommodate a forthcoming Lookup function with different functionality.
+>This function was originally named Lookup but has been renamed to Classify to accommodate the Lookup function with different functionality.
 
 ## Specifications {#classify-io}
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>[!UICONTROL When value equals] and [!UICONTROL Replace values with]:</p><ul><li>String</li></ul><li>Show original values<ul><li>Boolean</li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field<br/>100 rows per function</p> | <p>New derived field</p> |
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>[!UICONTROL When value equals] and [!UICONTROL Replace values with]:</p><ul><li>String</li></ul><li>Show original values<ul><li>Boolean</li></ul></li></ul> | <p>N/A</p> | <ul><li>5 functions per derived field</li><li>200 [operators](#operators) per derived field. Every entry for [!UICONTROL When value equals original value] [!UICONTROL Replace value with New value] is considered an operation.</li></ul>| <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -1302,8 +1302,14 @@ As an example, the condition below uses 13 operators.
 
 ![Sample operators](assets/operators-sample.png)
 
+An operator in the Classify function is a single entry for [!UICONTROL When value equal Original value] [!UICONTROL Replace value with New value].
 
-## More information
+As an example, the Classify rule below uses 3 operators.
+
+![Screenshot of the Classify rule 1](assets/classify-1.png)
+
+
+## More informations
 
 [`Trim`](#trim) and [`Lowercase`](#lowercase) are features already available in the component settings in [Data views](../component-settings/overview.md). Using Derived Fields allows you to combine these functions to do more complex data transformation directly in Customer Journey Analytics. For example, you can use `Lowercase` to remove case sensitivity in an event field, and then use [`Lookup`](#lookup) to match the new lowercase field to a lookup dataset that only has lookup keys in lowercase. Or you can use `Trim` to remove characters before setting up `Lookup` on the new field.
 
