@@ -1309,7 +1309,7 @@ As an example, the Classify rule below uses 3 operators.
 ![Screenshot of the Classify rule 1](assets/classify-1.png)
 
 
-## More informations
+## More information
 
 [`Trim`](#trim) and [`Lowercase`](#lowercase) are features already available in the component settings in [Data views](../component-settings/overview.md). Using Derived Fields allows you to combine these functions to do more complex data transformation directly in Customer Journey Analytics. For example, you can use `Lowercase` to remove case sensitivity in an event field, and then use [`Lookup`](#lookup) to match the new lowercase field to a lookup dataset that only has lookup keys in lowercase. Or you can use `Trim` to remove characters before setting up `Lookup` on the new field.
 
