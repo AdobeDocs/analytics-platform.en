@@ -22,7 +22,7 @@ For information about how to manage existing accounts, including viewing, editin
 
    ![Exports page options showing Add another account](assets/account-add.png)
 
-1. To create a new account, select [!UICONTROL **Add account**]. 
+1. Select [!UICONTROL **Add account**]. 
    
    The Add account dialog displays.
 
