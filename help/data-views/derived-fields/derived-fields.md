@@ -1281,7 +1281,7 @@ The following limitations apply to the Derived field functionality in general:
 | Function | Limitations |
 |---|---|
 | <p>Case When</p> | <ul><li>5 Case When functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
-| <p>Classify</p> | <ul><li>5 Classify functions per derived field</li><li>100 rows per function</li></ul> |
+| <p>Classify</p> | <ul><li>5 Classify functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
 | <p>Concatenate</p> | <ul><li>2 Concatenate functions per derived field</li></ul> |
 | <p>Find & Replace</p> | <ul><li>2 Find & Replace functions per derived field</li></ul> |
 | <p>Lookup</p> | <ul><li>5 Lookup functions per derived field</li></ul> |
