@@ -874,12 +874,23 @@ To create a formula:
 
 1. Add the operand (for example `*` to multiply)  followed by another field or a static value. You can use parenthesis to define more complex formulas.
 
-1. To insert a static value (for example `1.05`), type the value and select **[!UICONTROL Add *x* as a static value]** from the popup menu.
+1. To insert a static value (for example `1.05`), type the value and select **[!UICONTROL Add *x* as a static value]** or **[!UICONTROL Add -*x* as a negative static value]** from the popup menu.
   ![Math More Info 2](assets/math-more-info-2.png)
 
 1. A green checkmark ![Checkmark](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize50.svg) indicates whether your math formula is valid, otherwise you will see a warning and the message [!UICONTROL Invalid formula expression]. 
    ![Math More Info 3](assets/math-more-info-3.png)
 
+There are some important considerations when working with static numbers in the [!UICONTROL MATH] function:
+
+- Static values need to be associated with a field. For example, using the [!UICONTROL MATH] function with only static fields is not currently supported.
+- You cannot currently use the raise to power operator (`ˆ`) on a static value.
+- If using multiple static values in a formula, these static values should be grouped using parenthesis for the formula to be valid. For example: 
+  
+  - This formula returns an error.
+    ![Math More Info 4](assets/math-more-info-4.png)
+
+  - This formula is valid.
+    ![Math More Info 5](assets/math-more-info-5.png)
 
 +++
 
