@@ -8,11 +8,11 @@ role: Admin
 ---
 # Session settings
 
-Session settings in Data views change how Customer Journey Analytics calculates sessions from the data in your connection.
+In Customer Journey Analytics, you can define a session in any way to match how persons interact with your digital experiences. You configure session settings within a data view.
 
-Within the **[!UICONTROL Settings]** tab of Data views, you can define a session in any way to match how persons interact with your digital experiences. Session settings definitions are non-destructive and do not alter the underlying data. You can set up multiple data views (each with their own specific session settings definition) as a foundation for your Workspace projects.
+Session settings definitions are non-destructive and do not alter the underlying data. You can set up multiple data views (each with their own specific session settings definition) as a foundation for your Workspace projects.
 
-To define the context of a session for a data view:
+To define the context of a session within a data view:
 
 1. Select **[!UICONTROL Data views]** in the Customer Journey Analytics UI.
 
