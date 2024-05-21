@@ -27,6 +27,10 @@ You can see whether a metric is approved ![Approved icon](https://spectrum.adobe
 
 Metrics are flexible in their use within Analysis Workspace. Drag a metric to an empty Freeform table to see that metric trended over the project's date period. You can also drag a metric when a dimension is present to see that metric compared to each dimension item. Dragging a metric on top of an existing metric header replaces it, and dragging a metric next to a header lets you see both metrics side-by-side.
 
+## Use metrics in Analysis Workspace
+
+Metrics can be used in various ways within Analysis Workspace. For information about how to add metrics and other types of components to Analysis Workspace, see [Use components in Analysis Workspace](/help/components/use-components-in-workspace.md).
+
 ## Calculated metrics
 
 Calculated metrics allow you to easily see how metrics relate to each other using simple operators or statistical functions. There are several ways to create calculated metrics:

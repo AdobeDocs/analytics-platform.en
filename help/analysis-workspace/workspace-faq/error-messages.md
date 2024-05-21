@@ -11,6 +11,7 @@ You may encounter errors when interacting with Analysis Workspace that will also
 
 | Error message | Why does this occur? | Optimization |
 | --- | --- | --- |
+| [!UICONTROL The data view is currently exceeding its reporting capacity. Please simplify the request or try again later.] |  Your reporting request is too complex and needs to be simplified. | Narrow your report criteria and try the request again. |
 | [!UICONTROL A system error has occurred. Please log a Customer Care request under **[!UICONTROL Help > Submit Support Ticket]** and include your error code.] | Adobe is experiencing an issue that needs to be resolved. | Submit the error code to Customer Care. |
 | [!UICONTROL Error 500: Failed to load page] | Issues with your local network, such as company [firewall settings](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html), are a contributing factor to this error. Additionally, Adobe may be experiencing an issue that needs to be resolved. | Try logging in again after several minutes. If the issue persists, submit the EIM instance ID code to Customer Care. |
 | [!UICONTROL One of the filters or the search in this visualization contains a text search that returned too many results.] | Your filter criteria or report filter is too broad. | Narrow your search text criteria and try the request again. |
