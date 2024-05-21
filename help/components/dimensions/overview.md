@@ -24,7 +24,7 @@ Each dimension represents a different part or facet of your site. You can combin
 
 ## Create dimensions
 
-Customer Journey Analytics administrators can [create numeric-based dimensions within a data view](/help/data-views/create-dataview.md#components).
+Customer Journey Analytics administrators can [create dimensions within a data view](/help/data-views/create-dataview.md#components).
 
 ## Add dimension descriptions
 

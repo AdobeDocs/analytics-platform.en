@@ -53,6 +53,8 @@ Some of the features and their associated value for the limit depend on the Cust
 <!--
 ## Attribution AI
 
+
+
 | Name |  Value | Description | PD? |
 |---|--:|---|:---:|
 | Attribution AI models | 35 | Maximum number of Attribution AI Model per year to analyze the impact of up to an average of 60 independent touchpoints on a specified conversion event.  | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
@@ -67,11 +69,11 @@ Some of the features and their associated value for the limit depend on the Cust
 | Name | Value | Limit Type | Description | 
 |---|--:|---|---|
 | Audience Filters | 20 | System-enforced Guardrail  | Maximum number of [filters](../components/filters/filters-overview.md) per audience. | 
-| Number of audience identities | 20 million | System-enforced Guardrail  | Maximum number of identities per audience. | 
+| Number of Audience Identities | 20 million | System-enforced Guardrail  | Maximum number of identities per audience. | 
 | Audience Refresh Frequency | 4 | System-enforced Guardrail  | Maximum frequency in hours an [audience](../components/audiences/audiences-overview.md) may be refreshed. |
-| Audience refresh lookback window | 90 | System-enforced Guardrail  | Maximum number of days for refresh lookback window. | 
+| Audience Refresh Lookback Window | 90 | System-enforced Guardrail  | Maximum number of days for refresh lookback window. | 
 | Refreshing Audience Expiration Date | 13 | System-enforced Guardrail  | Maximum number of months audience ceases to refresh from the date of creation. Customers can extend this for an additional 13 months. | 
-| Number of Refreshing Audiences | 75, 100 | System-enforced Guardrail  | Maximum number of refreshing audiences, value varies depending on the package (see Product Description). | 
+| Number of Refreshing Audiences | 75, 150 | System-enforced Guardrail  | Maximum number of refreshing audiences, value varies depending on the Customer Journey Analytics package (see Product Description). | 
 
 {style="table-layout:auto"}
 
@@ -104,7 +106,7 @@ See also Experience Platform [Real-time Customer Data Platform Guardrails](https
 | Annotation Description | 250 | System-enforced Guardrail  | Maximum number of characters for an annotation description. |
 | Schema Fields | 10 | System-enforced Guardrail  | Maximum number of schema fields (not including standard fields) when defining rules for a [derived field](../data-views/derived-fields/derived-fields.md). |
 | Lookup / Profile Fields | 3 | System-enforced Guardrail  |  Maximum number of lookup or profile schema fields within the maximum number of schema fields (not including standard fields) when defining rules for a derived field. |
-| Derived Fields | 100 | System-enforced Guardrail  | Maximum number of derived fields per connection. |
+| Derived Fields | 100 - 500 | System-enforced Guardrail  | Maximum number of derived fields per connection; value varies depending on the Customer Journey Analytics package (see Product Description). |
 
 {style="table-layout:auto"}
 
@@ -128,7 +130,7 @@ See also Experience Platform [Guardrails for Data Ingestion](https://experiencel
 | Name | Value | Limit Type | Description |
 |---|--:|---|---|
 | Data Export | Total Authorized Data Lake Storage | Performance Guardrail | Customer may use Destination Dataset Export to export Customer Data in the Data Lake up to the Total Authorized Data Lake Storage.|
-| Available Datasets | Profile and Event | System Enforced Guardrail | Profile and Experience Event datasets created in the Experience Platform UI after ingesting or collecting data through Sources, Web SDK, Mobile SDK, Analytics Data Connector, and Audience Manager. |
+| Available Datasets | Profile and Event | System Enforced Guardrail | Event, Profile or Lookup datasets created in the Experience Platform UI after ingesting or collecting data through Sources, Web SDK, Mobile SDK, Analytics Data Connector, and Audience Manager. |
 
 {style="table-layout:auto"}
 
@@ -149,8 +151,8 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 
 | Name |  Value | Limit Type | Description |
 |---|--:|---|---|
-| Stitched Datasets | 10 | System-enforced Guardrail  | Maximum number of stitched datasets per customer, value varies depending on the applicable Customer Journey Analytics package (see applicable product description). | 
-| Backfill Data | 60 | System-enforced Guardrail  | Maximum number of days of backfill data. |
+| Stitched Datasets | 5 - 50 | System-enforced Guardrail  | Maximum number of stitched datasets per customer; value varies depending on the Customer Journey Analytics package (see Product Description). | 
+| Backfill Data | 60 - 395 | System-enforced Guardrail  | Maximum number of days of backfill data; value varies depending on the Customer Journey Analytics package (see Product Description). |
 
 {style="table-layout:auto"}
 
@@ -199,7 +201,7 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 
 | Name |  Value | Limit Type | Description | 
 |---|--:|---|---|
-| Rows per Report |  3 million - 300 million | System-enforced Guardrail  | Maximum number of reporting rows per report; value varies depending on the applicable Customer Journey Analytics package (see applicable product description). |
+| Rows per Report |  3 million - 300 million | System-enforced Guardrail  | Maximum number of reporting rows per report; value varies depending on the Customer Journey Analytics package (see Product Description). |
 | Breakdowns per Table |  5 | System-enforced Guardrail  | Maximum number of breakdowns per table. |
 | Metrics per Table |  5 | System-enforced Guardrail  | Maximum number of metrics per table. |
 | Schedule Frequency |  1 | System-enforced Guardrail  | Exports can be scheduled once (1) a day or on a longer schedule (for example: once every 2 days, or weekly). |
@@ -223,6 +225,6 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 | Stitching (optional feature; see [Stitching overview](../stitching/overview.md) for more information) | < 3.25 hours | 
 | Adobe Analytics Source Connector Backfill of less than 10 billion events (maximum of 13 months of historical data) | < 4 weeks |
 | Audience Publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | ≈ 60 minutes |
-| Refresh Drequency for Audiences | One-time refresh: latency of less than 5 minutes.<br/>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate). |
+| Refresh Frequency for Audiences | One-time refresh: latency of less than 5 minutes.<br/>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate). |
 
 {style="table-layout:auto"}

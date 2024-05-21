@@ -41,7 +41,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
-    + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+    + [Use Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
     + [Customer Journey Analytics feature support](../getting-started/aa-vs-cja/cja-aa.md)
     + [Compare terminology for Analytics data passed through the Analytics source connector](../getting-started/aa-vs-cja/terminology.md)
     + [Compare data processing across Adobe Analytics and Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -86,7 +86,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Substring](../data-views/component-settings/substring.md)
     + [Value bucketing](../data-views/component-settings/value-bucketing.md)
   + [Standard component reference](../data-views/component-reference.md)
-  + [CJA BI extension](../data-views/bi-extension.md)
+  + [BI extension](../data-views/bi-extension.md)
   + [Derived fields](../data-views/derived-fields/derived-fields.md)
   + [Labels and policies](../data-views/data-governance.md)
 
@@ -194,6 +194,8 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Guided analysis {#guided-analysis}
     + [Overview](../guided-analysis/overview.md)
+    + Feature matrix {#feature-matrix}
+      + [Engagement](../guided-analysis/types/engagement.md)
     + Funnel {#funnel}
       + [Friction view](../guided-analysis/types/friction.md)
       + [Conversion trends view](../guided-analysis/types/conversion-trends.md)
@@ -215,6 +217,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Components {#cja-components}
   + [Components overview](../components/overview.md)
+  + [Use components in Analysis Workspace](../components/use-components-in-workspace.md)
   + [Add component descriptions](../components/add-component-descriptions.md)
   + Annotations {#annotations}
     + [Annotations overview](../components/annotations/overview.md)

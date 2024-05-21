@@ -4,8 +4,8 @@ description: Describes how to use the Export datasets to back up your data.
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
+exl-id: b861f765-b18d-4be2-b4c7-c66186d37d99
 ---
-
 # Export datasets
 
 This article outlines how the [!DNL Customer Journey Analytics Export datasets] can be used to implement the following [data export use case](overview.md):

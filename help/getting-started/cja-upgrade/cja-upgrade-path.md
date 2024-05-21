@@ -38,11 +38,11 @@ Use the information on this page to determine which Customer Journey Analytics u
 
 To determine the optimal upgrade path for your organization, the following sections should be read sequentially: 
 
-1. First, [understand the upgrade paths that are available](#understand-migration-methods).
+1. First, [understand the upgrade paths that are available](#understand-upgrade-paths).
 
-1. Then, [assess which upgrade paths are available to you](#assess-the-migration-methods-available-to-you-based-on-your-current-adobe-analytics-implementation).
+1. Then, [assess which upgrade paths are available to you](#assess-the-upgrade-paths-available-to-you-based-on-your-current-adobe-analytics-implementation).
 
-1. And finally, [weigh the advantages and disadvantages of each upgrade path](#weigh-the-advantages-and-disadvantages-of-the-migration-methods-available-to-you). 
+1. And finally, [weigh the advantages and disadvantages of each upgrade path](#weigh-the-advantages-and-disadvantages-of-the-upgrade-paths-available-to-you). 
 
 ## Understand upgrade paths  
 
@@ -56,7 +56,7 @@ The following table lists each upgrade path, its level of effort, and its long-t
 |---------|----------|---------|
 | **New implementation of the Experience Platform Web SDK**</br>You can begin using Customer Journey Analytics by doing a new implementation of the Experience Platform Web SDK. This allows you to begin sending data to Adobe Experience Platform Edge Network and Customer Journey Analytics. <p>For organizations not yet on the Web SDK, this upgrade path is perhaps the most straightforward in getting data to Edge Network because it requires the fewest number of steps; however, because all of the work is done up front (such as creating the XDM schema), it requires a larger initial effort.</p><p>The basic steps are:</p><ol><li>Create an XDM schema for your organization.</li><li>Implement the Web SDK.</li><li>Send data to Platform.</li></ol>| High | High |
 | **Migrate your Adobe Analytics implementation to use the Web SDK**</br>If your Adobe Analytics implementation is AppMeasurement or the Analytics extension, you can migrate it to use the Adobe Experience Platform Web SDK to begin sending data to Edge Network and Adobe Analytics, prior to sending it to Customer Journey Analytics.<p>For organizations not yet on the Web SDK, this is the easiest and smoothest way to get data to Edge Network; it requires more steps, but offers a more methodical transition from Adobe Analytics to Customer Journey Analytics, with more tangible milestones.</p><p>The basic steps are:</p><ol><li>Move your existing Adobe Analytics implementation to the Web SDK and validate that everything is working in Adobe Analytics.</li><li>Create an XDM schema for your organization as you have time.</li><li>Use Datastream mapping to map all of the fields in the data object to your XDM schema.</li><li>Send data to Platform.</li></ol> | Moderate | High |
-| **Configure your existing Adobe Analytics Web SDK implementation**</br>If your Adobe Analytics implementation is already using the Adobe Experience Platform Web SDK, you can begin sending data to Customer Journey Analytics with minimal effort.<p>Before you send data to Customer Journey Analytics, consider updating your Adobe Analytics schema for the specific needs of your organization and any other Platform applications you use.</p><p>The basic steps are:</p><ol><li>Begin sending data to Customer Journey Analytics.<!-- What's involved here? Just point it at CJA? --></li><li>(Optional) Create an XDM schema for your organization as you have time.</li><li>(Conditional) If you created an XDM schema, use datastream mapping to map all of the fields in the data object to your XDM schema.</li></ol>  | Low | High |
+| **Configure your existing Adobe Analytics Web SDK implementation**</br>If your Adobe Analytics implementation is already using the Adobe Experience Platform Web SDK, you can begin sending data to Platform by setting up a datastream. Or, if you are already sending data to Platform, you simply need to create a connection between Platform datasets and Customer Journey Analytics.<p>Before you send data to Platform for use in Customer Journey Analytics, consider updating your Adobe Analytics schema for the specific needs of your organization and any other Platform applications you use.</p><p>The basic steps are:</p><ol><li>Begin sending data to Platform.<p>If you are already sending data to Platform with your Adobe Analytics implementation, this step is not required. You simply need to create a connection between Platform datasets and Customer Journey Analytics, as described later in this process.</p></li><li>(Optional) Create an XDM schema for your organization as you have time.</li><li>(Conditional) If you created an XDM schema, use datastream mapping to map all of the fields in the data object to your XDM schema.</li></ol>  | Low | High |
 | **Use the Analytics Source Connector**</br>If your Adobe Analytics implementation is AppMeasurement or the Analytics extension, you can begin sending data to a data view in Customer Journey Analytics.<p>This is the easiest way to get data to Customer Journey Analytics, but is the least viable method in the long term.</p>  | Low | Low |
 
 {style="table-layout:auto"}
@@ -77,7 +77,7 @@ Contact your Adobe representative if you need more specific advice, guidance, or
 |---------|----------|
 | AppMeasurement | <ul><li>New implementation of the Experience Platform Web SDK</li><li>Migrate Adobe Analytics to the Web SDK</li><li>Analytics Source Connector</li></ul>  | 
 | Adobe Analytics extension | <ul><li>New implementation of the Experience Platform Web SDK</li><li>Migrate Adobe Analytics to the Web SDK</li><li>Analytics Source Connector</li></ul> | 
-| Web SDK | <ul><li>Configure the Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics</li></ul> | 
+| Web SDK | <ul><li>Configure the Adobe Analytics Web SDK implementation to send data to Platform</li></ul> | 
 
 {style="table-layout:auto"}
 
@@ -131,7 +131,7 @@ When choosing this upgrade path, you also need to choose your schema.
 
 #### Upgrade path
 
-+++Configure the Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics
++++Configure the Adobe Analytics Web SDK implementation to send data to Platform
 
 | Advantages | Disadvantages |
 |----------|---------|
@@ -143,7 +143,7 @@ When choosing this upgrade path, you also need to choose your schema.
 
 #### Choose your schema
 
-If you chose the upgrade path that allows you to configure the Adobe Analytics Web SDK implementation to send data to Customer Journey Analytics, you can choose the schema that you want to use.
+If you chose the upgrade path that allows you to configure the Adobe Analytics Web SDK implementation to send data to Platform, you can choose the schema that you want to use.
 
 You can choose whether to use your existing Adobe Analytics schema, or you can update to your own XDM schema to better align with the needs of your organization as you begin to use other Platform services.
 
@@ -159,7 +159,7 @@ You can choose whether to use your existing Adobe Analytics schema, or you can u
 
 | Advantages | Disadvantages |
 |----------|---------|
-|<ul><p>Advantages of updating to your own XDM schema include:</p><ul><li>A streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use.</li><p>When changes to the schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating.</p></ul> | <p>Disadvantages of updating to your own XDM schema include:</p><ul><li>Updating your schema is a time-consuming process that is required before you begin sending data to Customer Journey Analytics.</li></ul> |
+|<ul><p>Advantages of updating to your own XDM schema include:</p><ul><li>A streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use.</li><p>When changes to the schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating.</p></ul> | <p>Disadvantages of updating to your own XDM schema include:</p><ul><li>Updating your schema is a time-consuming process that is required before you begin sending data to Platform.</li></ul> |
 
 +++
 

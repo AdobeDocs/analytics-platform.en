@@ -4,6 +4,7 @@ description: Describes how to use Query Service (Data Distiller) and Dataset exp
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
+exl-id: 14a90758-91eb-4610-8802-1edfdb8b9689
 ---
 # Query Service (Data Distiller) & Export datasets
 
