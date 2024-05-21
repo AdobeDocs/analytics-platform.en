@@ -168,7 +168,7 @@ With replay stitching happening at 2023-05-13 16:30, with a 7-day lookback windo
 
 ### Step 3: Privacy Request
 
-When you receive a privacy request, the row containing the original user information is removed, along with any stitched IDs that contain this same person information. The following table represents the same data as above, but shows the effect that a privacy request has for our sample events.
+When you receive a privacy request (for example at 2023-05-13 18:00), the row containing the original user information is removed, along with any stitched IDs that contain this same person information. The following table represents the same data as above, but shows the effect that a privacy request has for our sample events.
 
 | | Time | Persistent ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | Stitched ID (after privacy request) | 
 |--:|---|---|---|---|
