@@ -828,7 +828,7 @@ Use basic mathematical operators (add, subtract, multiply, divide & raise to a p
 
 | Input Data Type | Input | Included Operators | Limit | Output |
 |---|---|---|---|---|
-| <ul><li>Numeric</li></ul> | <ul><li>One or multiple numeric fields</li><li>One or multiple operators (add, subtract, multiply, divide, raise to a power)</li><li>User input value</li></ul> | <ul><li>`+` (add)</li><li>`-` (subtract)</li><li>`*` (multiply)</li><li>`/` (divide)</li><li>`^` (raise to power)</li></ul> | <ul><li>5 operations per function</li><li>5 Math rules per derived field</li></ul> | <p>New derived field</p> |
+| <ul><li>Numeric</li></ul> | <ul><li>One or multiple numeric fields</li><li>One or multiple operators (add, subtract, multiply, divide, raise to a power)</li><li>User input value</li></ul> | <ul><li>`+` (add)</li><li>`-` (subtract)</li><li>`*` (multiply)</li><li>`/` (divide)</li><li>`^` (raise to power)</li></ul> | <ul><li>25 operations per derived field</li><li>5 Math functions per derived field</li></ul> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -1354,6 +1354,7 @@ The following limitations apply to the Derived field functionality in general:
 | <p>Find & Replace</p> | <ul><li>2 Find & Replace functions per derived field</li></ul> |
 | <p>Lookup</p> | <ul><li>5 Lookup functions per derived field</li></ul> |
 | <p>Lowercase</p> | <ul><li>2 Lowercase functions per derived field</li></ul> |
+| <p>Math</p> | <ul><li>25 operations per derived field</li><li>5 Math functions per derived field</li></ul> | 
 | <p>Merge Fields</p> | <ul><li>2 Merge Fields functions per derived field</li></ul> |
 | <p>Regex Replace</p> | <ul><li>1 Regex Replace function per derived field</li></ul> |
 | <p>Split</p> | <ul><li>5 Split functions per derived field</li></ul> |
