@@ -94,19 +94,19 @@ Consider the following example, where Bob records different events as part of an
 
 | Event | Timestamp | Persistent ID (Cookie ID) | Transient ID (Login ID) | Stitched ID (after live stitch) | 
 |---|---|---|---|---|
-| 1 | 2023-05-12 12:01 | 246 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| - | **246** |
-| 2 | 2023-05-12 12:02 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob |
-| 3 | 2023-05-12 12:03 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | 
-| 4 | 2023-05-12 12:04 | 246 | - | **Bob**|
-| 5 | 2023-05-12 12:05 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
-| 6 | 2023-05-12 12:06 | 246 | - | **Bob**| 
-| 7 | 2023-05-12 12:07 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob | 
-| 8 | 2023-05-12 12:03 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| - | **3579** |
-| 9 | 2023-05-12 12:09 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **3579** |
-| 10 | 2023-05-12 12:02 | 81911 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **81911** |
-| 11 | 2023-05-12 12:05 | 81911 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg)|
-| 12 | 2023-05-12 12:12 | 81911 | - | **Bob** |
-| | | **3 devices** | | **4 people**:<br/>246, Bob, 3579, 81911 |
+| 1 | 2023-05-12 12:01 | `246` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| - | **`246`** |
+| 2 | 2023-05-12 12:02 | `246` | `Bob` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` |
+| 3 | 2023-05-12 12:03 | `246` | `Bob` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| `Bob` ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | 
+| 4 | 2023-05-12 12:04 | `246` | - | **`Bob`**|
+| 5 | 2023-05-12 12:05 | `246` | `Bob` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 6 | 2023-05-12 12:06 | `246` | - | **`Bob`**| 
+| 7 | 2023-05-12 12:07 | `246` | `Bob` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | 
+| 8 | 2023-05-12 12:03 | `3579` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| - | **`3579`** |
+| 9 | 2023-05-12 12:09 | `3579` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** |
+| 10 | 2023-05-12 12:02 | `81911` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`81911`** |
+| 11 | 2023-05-12 12:05 | `81911` | `Bob` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg)|
+| 12 | 2023-05-12 12:12 | `81911` | - | **`Bob`** |
+| | | **3 devices** | | **4 people**:<br/>`246`, `Bob`, `3579`, `81911` |
 
 Both unauthenticated and authenticated events on new devices are counted as separate people (temporarily). Unauthenticated events on recognized devices are live stitched.
 
@@ -128,19 +128,19 @@ The following table represents the same data as above, but shows different numbe
 
 | Event | Timestamp | Persistent ID (Cookie ID) | Transient ID (Login ID) | Stitched ID (after live stitch) | Stitched ID (after replay) |
 |---|---|---|---|---|---|
-| 1 | 2023-05-12 12:01 | 246 | - | 246 | **Bob** |
-| 2 | 2023-05-12 12:02 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob | Bob ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) |
-| 3 | 2023-05-12 12:03 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | Bob |
-| 4 | 2023-05-12 12:04 | 246 | - | **Bob**| Bob |
-| 5 | 2023-05-12 12:05 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | Bob |
-| 6 | 2023-05-12 12:06 | 246 | - | **Bob**| Bob | 
-| 7 | 2023-05-12 12:07 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob | Bob |
-| 8 | 2023-05-12 12:03 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **3579** | **3579** |
-| 9 | 2023-05-12 12:09 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **3579** | **3579** |
-| 10 | 2023-05-12 12:02 | 81911 | - | 81911 | **Bob** | 
-| 11 | 2023-05-12 12:05 | 81911 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg)| Bob ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | 
-| 12 | 2023-05-12 12:12 | 81911 | - | **Bob** | Bob | 
-| | | **3 devices** | | **4 people**:<br/>246, Bob, 3579, 81911 | **2 people**:<br/>Bob, 3579 | 
+| 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** |
+| 2 | 2023-05-12 12:02 | `246` | `Bob` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) |
+| 3 | 2023-05-12 12:03 | `246` | `Bob` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| `Bob` ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` |
+| 4 | 2023-05-12 12:04 | `246` | - | **`Bob`**| `Bob` |
+| 5 | 2023-05-12 12:05 | `246` | `Bob` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` |
+| 6 | 2023-05-12 12:06 | `246` | - | **`Bob`**| `Bob` | 
+| 7 | 2023-05-12 12:07 | `246` | `Bob` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` |
+| 8 | 2023-05-12 12:03 | `3579` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** |
+| 9 | 2023-05-12 12:09 | `3579` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** |
+| 10 | 2023-05-12 12:02 | `81911` | - | `81911` | **`Bob`** | 
+| 11 | 2023-05-12 12:05 | `81911` | `Bob` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg)| `Bob` ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | 
+| 12 | 2023-05-12 12:12 | `81911` | - | **`Bob`** | `Bob` | 
+| | | **3 devices** | | **4 people**:<br/>`246`, `Bob`, `3579`, `81911` | **2 people**:<br/>`Bob`, `3579` | 
 
 {style="table-layout:auto"}
 
@@ -160,19 +160,19 @@ The following table represents the same data as above, but shows the effect that
 
 | Event | Timestamp | Persistent ID (Cookie ID) | Transient ID (Login ID) | Stitched ID (after live stitch) | Stitched ID (after replay) | Transient ID (Login ID) | Stitched ID (after privacy request) |
 |---|---|---|---|---|---|---|---|
-| 1 | 2023-05-12 12:01 | 246 | - | 246 | **Bob** | - | 246 |
-| 2 | 2023-05-12 12:02 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob | Bob ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | 246 |
-| 3 | 2023-05-12 12:03 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | Bob | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | 246 |
-| 4 | 2023-05-12 12:04 | 246 | - | **Bob**| Bob | - | 246 |
-| 5 | 2023-05-12 12:05 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | Bob | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | 246 |
-| 6 | 2023-05-12 12:06 | 246 | - | **Bob**| Bob | - | 246 | 
-| 7 | 2023-05-12 12:07 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob | Bob | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | 246 |
-| 8 | 2023-05-12 12:03 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **3579** | **3579** | - | 3579 | 
-| 9 | 2023-05-12 12:09 | 3579 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **3579** | **3579** | - | 3579 |
-| 10 | 2023-05-12 12:02 | 81911 | - | 81911 | **Bob** | - | 81911 |
-| 11 | 2023-05-12 12:05 | 81911 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg)| Bob ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | 81911 |
-| 12 | 2023-05-12 12:12 | 81911 | - | **Bob** | Bob | - | 81911 |
-| | | **3 devices** | | **4 people**:<br/>246, Bob, 3579, 81911 | **2 people**:<br/>Bob, 3579 |  | **3 people**:<br/>246, 3579, 81911 |
+| 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
+| 2 | 2023-05-12 12:02 | `246` | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
+| 3 | 2023-05-12 12:03 | `246` | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| `Bob` ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
+| 4 | 2023-05-12 12:04 | `246` | - | **`Bob`**| `Bob` | - | `246` |
+| 5 | 2023-05-12 12:05 | `246` | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
+| 6 | 2023-05-12 12:06 | `246` | - | **`Bob`**| `Bob` | - | `246` | 
+| 7 | 2023-05-12 12:07 | `246` | `Bob` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` | `Bob` | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `246` |
+| 8 | 2023-05-12 12:03 | `3579` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** | - | `3579` | 
+| 9 | 2023-05-12 12:09 | `3579` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | - | **`3579`** | **`3579`** | - | `3579` |
+| 10 | 2023-05-12 12:02 | `81911` | - | `81911` | **`Bob`** | - | `81911` |
+| 11 | 2023-05-12 12:05 | `81911` | `Bob` ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | `Bob` ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg)| `Bob` ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> | `81911` |
+| 12 | 2023-05-12 12:12 | `81911` | - | **`Bob`** | `Bob` | - | `81911` |
+| | | **3 devices** | | **4 people**:<br/>246, `Bob`, `3579`, `81911` | **2 people**:<br/>Bob, `3579` |  | **3 people**:<br/>`246`, `3579`, `81911` |
 
 +++ 
 
@@ -221,7 +221,7 @@ Stitching makes a minimum of two passes on data in a given dataset.
 
 Data beyond the lookback window is not replayed. A visitor must authenticate within a given lookback window for an unauthenticated visit and authenticated visit to be identified together. Once a device is recognized, it is live stitched from that point forward.
 
-Consider the following two identity graphs for persistent id 246 and 3579, how these identity graphs are updated over time, and how these updates impact the steps in graph-based stitching.
+Consider the following two identity graphs for persistent id `246` and `3579`, how these identity graphs are updated over time, and how these updates impact the steps in graph-based stitching.
 
 ![Identity Graph 246](assets/identity-graph-246.svg)
 ![Identity Graph 3579](assets/identity-graph-3579.svg)
@@ -234,13 +234,13 @@ Live stitching attempts to stitch each event upon collection to known informatio
 
 | | Time | Persistent ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | Stitched ID (after live stitch) | 
 |--:|---|---|---|---|
-| 1 | 2023-05-12 11:00   | 246 |  `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` |
-| 2 | 2023-05-12 14:00  | 246 | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | 
-| 3 | 2023-05-12 15:00  | 246 | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com`   | 
-| 4 | 2023-05-12 17:00  | 3579 | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `3579` |
-| 5 | 2023-05-12 19:00  | 3579 | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
-| 6 | 2023-05-13 15:00 |  246 | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 7 |2023-05-13 16:30 |  246 | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
+| 1 | 2023-05-12 11:00   | `246` |  `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` |
+| 2 | 2023-05-12 14:00  | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | 
+| 3 | 2023-05-12 15:00  | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com`   | 
+| 4 | 2023-05-12 17:00  | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `3579` |
+| 5 | 2023-05-12 19:00  | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
+| 6 | 2023-05-13 15:00 |  `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 7 |2023-05-13 16:30 |  `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
