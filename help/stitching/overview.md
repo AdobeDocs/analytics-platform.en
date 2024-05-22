@@ -41,7 +41,9 @@ You benefit from cross-channel analysis if you combine one or more of your stitc
 
 >[!IMPORTANT]
 >
->- Apply any change that you make to the global event dataset schema also to the new stitched dataset schema, otherwise it breaks the stitched dataset.
+>- No support for using `identityMap` as the persistent ID. You have to define a specific identifier in the dataset (for example, `ECID`) as the persistent ID.
+>
+>- Apply any change that you make to the source event dataset schema also to the new stitched dataset schema, otherwise it breaks the stitched dataset.
 >
 >- If you remove the source dataset, the stitched dataset stops processing and gets removed by the system.
 >
@@ -52,7 +54,6 @@ Stitching is a groundbreaking and robust feature, but has limitations on how it 
 - Only event datasets are supported. Other datasets, such as lookup datasets, are not supported.
 - Stitching does not transform the field used for stitching in any manner. Stitching uses the value in the specified field as it exists in the unstitched dataset within the data lake. 
 - The stitching process is case-sensitive. For example, if sometimes the word 'Bob' appears in the field, and sometimes the word 'BOB' appears, these ids are treated as two separate people.
-- If a device is shared by multiple people and the total number of transitions between users exceeds 50,000, Customer Journey Analytics stops stitching data for that device.
 
 Ensure you do not confuse stitching with:
 
@@ -63,7 +64,7 @@ Ensure you do not confuse stitching with:
 
 ## Field-based stitching
 
-You specify an event dataset as well as the persistent ID (cookie) and transient ID (person ID) for that dataset. Field-based stitching updates the transient ID for rows for every specific persistent ID that have no value for the transient ID. Field-based stitching does these updates based on rows that have a transient ID for that specific persistent ID. <br/>You use field-based stitching when using Customer Journey Analytics as a standalone solution (not having access to the Experience Platform Identity Service and associated identity graph) or when you do not want to use the available identity graph.
+You specify an event dataset as well as the persistent ID (cookie) and transient ID (person ID) for that dataset. Field-based stitching creates a new stitched ID column in the new stitched dataset and updates this stiched ID column based on rows that have a transient ID for that specific persistent ID. <br/>You use field-based stitching when using Customer Journey Analytics as a standalone solution (not having access to the Experience Platform Identity Service and associated identity graph) or when you do not want to use the available identity graph.
 
 ![Field-based stitching](/help/stitching/assets/fbs.png)
 
@@ -191,6 +192,7 @@ The following prerequisites do apply specifically to field-based stitching:
 The following limitations do apply specifically to field-based stitching:
 
 - Current rekeying capabilities are limited to one step (persistent ID to transient ID). Multiple-step rekeying (for example, persistent ID to a transient ID, then to another transient ID) is not supported.
+- If a device is shared by multiple people and the total number of transitions between users exceeds 50,000, Customer Journey Analytics stops stitching data for that device.
 - Custom ID maps used in your organization are not supported.
 - Stitching is case-sensitive. For datasets generated through the Analytics source connector, Adobe recommends reviewing any VISTA rules or processing rules that apply to the transient ID field. This review ensures that none of these rules are introducing new forms of the same ID. For example, you should ensure that no VISTA or processing rules are introducing lowercasing to the transient ID field on only a portion of the events.
 - Stitching does not combine or concatenate fields. 
@@ -201,7 +203,7 @@ The following limitations do apply specifically to field-based stitching:
 
 ## Graph-based stitching
 
-You specify an event dataset as well as the persistent ID (cookie) and the namespace of the transient ID (person ID) for that dataset. Graph-based stitching uses the persistent ID to query the identity graph from the Experience Platform Identity Service, using the namespace specified, to update the transient ID.
+You specify an event dataset as well as the persistent ID (cookie) and the namespace of the transient ID (person ID) for that dataset. Graph-based stitching creates a new column for the stitched ID in the new stitched dataset . And then uses the persistent ID to query the identity graph from the Experience Platform Identity Service, using the namespace specified, to update the stitched ID.
 
 ![Graph-based-stitching](/help/stitching/assets/gbs.png)
 
@@ -215,7 +217,7 @@ Stitching makes a minimum of two passes on data in a given dataset.
     - **Daily**: Data replays every day with a 24-hour lookback window. This option holds an advantage that replays are much more frequent, but unauthenticated visitors must authenticate the same day that they visit your site.
     - **Weekly**: Data replays once a week with a 7-day lookback window. This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, unstitched data less than a week old is not reprocessed until the next weekly replay.
 
-- **Privacy**: When privacy-related requests are received, in addition to removing the requested identity, any stitching of that identity across unauthenticated events must be undone.
+- **Privacy**: When privacy-related requests are received, in addition to removing the requested identity from the source dataset, any stitching of that identity across unauthenticated events must be undone. Also, the identity must be removed from the identity graph to prevent future graph-based stitching for that specific identity.
 
 Data beyond the lookback window is not replayed. A visitor must authenticate within a given lookback window for an unauthenticated visit and authenticated visit to be identified together. Once a device is recognized, it is live stitched from that point forward.
 
@@ -255,15 +257,15 @@ At regular intervals (once a week or once a day, depending on the chosen lookbac
 
 With a replay stitching happening at 2023-05-13 16:30, with a 24-hour lookback window configuration, some events from our sample are re-stitched, indicated by ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg).
 
-| | Time | Persistent ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | Stitched ID (after replay) | 
-|--:|---|---|---|---|
-| 1 | 2023-05-12 11:00   | 246 | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* |  `246` | 
-| 2 | 2023-05-12 14:00  | 246 | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` |  `bob.a@gmail.com` | 
-| 3 | 2023-05-12 15:00  | 246 | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` |  `bob.a@gmail.com` | 
-| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 2023-05-12 17:00  | 3579 | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
-| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 5 | 2023-05-12 19:00  | 3579 | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` |  `ted.w@gmail.com` | 
-| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 6 | 2023-05-13 15:00 |  246 | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` |  `a.b@yahoo.co.uk` |
-| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 |2023-05-13 16:30 |  246 | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` |  `a.b@yahoo.co.uk`  |
+| | Time | Persistent ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | Stiched ID<br/>(after live stitch) | Stitched ID<br/>(after replay 24 hours) | 
+|---|---|---|---|---|---|
+| 1 | 2023-05-12 11:00   | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` | `246` | 
+| 2 | 2023-05-12 14:00  | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` |  `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 3 | 2023-05-12 15:00  | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` |  `bob.a@gmail.com` | `bob.a@gmail.com` |
+| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 2023-05-12 17:00  | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com`| 
+| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 5 | 2023-05-12 19:00  | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` |  `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 6 | 2023-05-13 15:00 |  `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` |  `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 |2023-05-13 16:30 |  `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` |  `bob.a@gmail.com`  | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
@@ -271,33 +273,37 @@ With a replay stitching happening at 2023-05-13 16:30, with a 24-hour lookback w
 With replay stitching happening at 2023-05-13 16:30, with a 7-day lookback window configuration, all events from our sample are re-stitched.
 
 
-| | Time | Persistent ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg)| Stitched ID (after replay) | 
-|--:|---|---|---|---|
-| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 1 | 2023-05-12 11:00   | 246 |  `246`  ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
-| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 2 | 2023-05-12 14:00  | 246 |  `246`  ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` |  `a.b@yahoo.co.uk` |
-| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 3 | 2023-05-12 15:00  | 246 |  `246`  ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
-| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 2023-05-12 17:00  | 3579 | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` |  `ted.w@gmail.com` |
-| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 5 | 2023-05-12 19:00  | 3579 | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
-| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 6 | 2023-05-13 15:00 |  246 |  `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
-| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 |2023-05-13 16:30 |  246 | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` |  `a.b@yahoo.co.uk` |
+| | Time | Persistent ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | Stiched ID<br/>(after live stitch) | Stitched ID<br/>(after replay 7 days ) | 
+|---|---|---|---|---|---|
+| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 1 | 2023-05-12 11:00   | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` | `a.b@yahoo.co.uk` | 
+| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 2 | 2023-05-12 14:00  | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` |  `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 3 | 2023-05-12 15:00  | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` |  `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 2023-05-12 17:00  | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com`| 
+| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 5 | 2023-05-12 19:00  | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` |  `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 6 | 2023-05-13 15:00 |  `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` |  `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 |2023-05-13 16:30 |  `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` |  `bob.a@gmail.com`  | `a.b@yahoo.co.uk` |
+
+{style="table-layout:auto"}
 
 +++
 
 #### Step 3: Privacy Request
 
-When you receive a privacy request (for example at 2023-05-13 18:00), the row containing the original user information is removed, along with any stitched IDs that contain this same person information. The following table represents the same data as above, but shows the effect that a privacy request has for our sample events.
+When you receive a privacy request, the row containing the original user information is removed, along with any stitched IDs that contain this same person information.
 
 +++ Details
 
+The following table represents the same data as above, but shows the effect that a privacy request (for example at 2023-05-13 18:00) has for our sample events.
+
 | | Time | Persistent ID<br/>`ECID` | Namespace<br/>`Email` ![Graph](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | Stitched ID (after privacy request) | 
 |--:|---|---|---|---|
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 1 | 2023-05-12 11:00   | 246 | `246`  ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 2 | 2023-05-12 14:00  | 246 | `246`  ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 3 | 2023-05-12 15:00  | 246 | `246`  ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 4 | 2023-05-12 17:00  | 3579 | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 5 | 2023-05-12 19:00  | 3579 | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 6 | 2023-05-13 15:00 |  246 | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 7 |2023-05-13 16:30 |  246 | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 1 | 2023-05-12 11:00   | `246` | `246`  ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 2 | 2023-05-12 14:00  | `246` | `246`  ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 3 | 2023-05-12 15:00  | `246` | `246`  ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 4 | 2023-05-12 17:00  | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 5 | 2023-05-12 19:00  | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 6 | 2023-05-13 15:00 |  `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
+| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 7 |2023-05-13 16:30 |  `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
 
 {style="table-layout:auto"}
 
@@ -316,7 +322,6 @@ The following prerequisites do apply specifically to graph-based stitching:
 The following limitation do apply specifically to graph-based stitching:
 
 - Timestamps are not taken into account when querying for the transient id using the specified namespace. So it is possible a persistent ID is stitched with a transient ID from a record that has an earlier timestamp.
-- No support for using `identityMap` as the persistent ID. You have to define a specific identifier in the dataset (for example, `ECID`) as the persistent ID.
 - No shared device support. When multiple identities are returned by querying the identity graph using a namespace, the first lexicographic identity is used.
 - There is a hard limit of three months of backfilling identities into the identity graph. You would use backfilling identities in case you are not using an Experience Platform application, like Real-time Customer Data Platform, to populate the identity graph.
 
