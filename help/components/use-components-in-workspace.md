@@ -98,7 +98,7 @@ To add a filter to a project in Analysis Workspace:
 
      ![drop multiple filters in the drop zone](assets/filter-dropzone-multiple.png)
 
-     This creates a drop-down menu, which allows users of the panel to choose the filter they want to apply. The drop-down menu contains a [!UICONTROL **No filter**] option that users can select, which leaves the panel unfiltered. 
+     This creates a drop-down menu, which allows users of the panel to choose the filter they want to apply. Users can choose to apply multiple filters to a single freeform table. The freeform table is filtered to include any of the selected filters. The drop-down menu contains a [!UICONTROL **No filter**] option that users can select, which leaves the panel unfiltered. 
      
      You can select the (x) to remove any option from the drop-down menu. If you remove the [!UICONTROL **No filter**] option, then a filter is required.
 
