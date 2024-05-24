@@ -64,7 +64,7 @@ Within a project, the menu provides options for managing your project, adding co
 
 ### Project Info & Settings {#info-settings}
 
-**[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]** provides project-level information on the currently active project.
+**[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project info & settings]** provides project-level information on the currently active project.
 
 ![The Project Info & Settings window.](assets/projectinfo.png)
 
@@ -80,12 +80,23 @@ Settings include:
 |  Count repeat instances in project  | Specifies whether repeat instances are counted in reports. Note: this setting does not apply to Flow or Fallout visualizations.  |
 |  [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md)  | You can change the categorical color palette used in Workspace, by choosing from out-of-the-box palettes that have been optimized for color blindness, or by specifying your custom palette. This feature affects many things in Workspace, including most visualizations.  |
 | [View Density](/help/analysis-workspace/build-workspace-project/view-density.md) | Lets you see more data on the screen by reducing the vertical padding of the left rail, freeform tables and cohort tables. |
+| [Show table of contents](/help/analysis-workspace/build-workspace-project/create-projects.md#display-the-project-table-of-contents) | Select this option to display a table of contents icon in the [left rail](#left-rail). The table of contents icon launches a table of contents that provides quick links to panels and visualizations within a project.  |
 
 ## Left rail {#left-rail}
 
-Within a project, [panels](/help/analysis-workspace/c-panels/panels.md), tables, [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), and [components] are accessed from the left rail. These are your project building blocks.
+Within a project, various icons are available in the left rail, and each represents important parts of a project:
 
-You can also access visualizations and panels from the [Blank Panel](/help/analysis-workspace/c-panels/blank-panel.md) as well. 
+* [Panels](/help/analysis-workspace/c-panels/panels.md) ![panels icon](assets/panels-icon.png)
+
+* [Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)![visualizations icon](assets/visualizations-icon.png)
+
+* [Components](/help/components/overview.md)![components icon](assets/components-icon.png)
+
+* [Data dictionary](/help/components/data-dictionary/data-dictionary-overview.md)![data dictionary icon](assets/data-dictionary-icon.png)
+
+* [Table of contents](/help/analysis-workspace/build-workspace-project/create-projects.md#display-the-project-table-of-contents) ![toc icon](assets/toc-icon.png)
+
+  Table of contents must be enabled in [project settings](#project-info--settings).
 
 Components (Dimensions, Metrics, Filters, Date Ranges) in the left rail relate to the active panel data view. The active panel will have a blue border around it, and the active data view will be listed at the top of the component rail.
 

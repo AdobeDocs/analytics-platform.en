@@ -8,11 +8,11 @@ role: User
 
 You can add hyperlinks to dimension items to make them clickable within a freeform table in Analysis Workspace. 
 
-This is useful in the following circumstances:
+Adding hyperlinks to dimension items can be helpful when the dimension item value contains a URL:
 
-* Add hyperlinks to dimension items that display a URL (for example, the Page URL dimension)
+* Add hyperlinks to dimension items that display a URL (for example, a Page URL dimension)
 
-* Add hyperlinks to dimension items that contain breakdowns that displays a URL (for example, a Page Name dimension that has a breakdown of the Page URL dimension)
+* Add hyperlinks to dimension items that contain breakdowns that displays a URL (for example, a Page Name dimension that has a breakdown of a Page URL dimension)
 
 To add hyperlinks to one or more dimension items:
 
