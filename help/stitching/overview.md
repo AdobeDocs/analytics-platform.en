@@ -211,7 +211,7 @@ You specify an event dataset as well as the persistent ID (cookie) and the names
 
 Stitching makes a minimum of two passes on data in a given dataset.
 
-- **Live stitching**: attempts to stitch each hit (event) as it comes in, using the persistent ID to lookup the transient id for the selected namespace by quering the identity graph.
+- **Live stitching**: attempts to stitch each hit (event) as it comes in, using the persistent ID to lookup the transient id for the selected namespace by quering the identity graph. If the transient id is available from the look up, this transient id is immediately stitched.
 
 - **Replay stitching**: "replays" data based on updated identities from the identity graph. This stage is where hits from previously unknown devices (persistent IDs) become stitched as the identity graph has resolved the identity for a namespace. Adobe offers two replay intervals:
     - **Daily**: Data replays every day with a 24-hour lookback window. This option holds an advantage that replays are much more frequent, but unauthenticated visitors must authenticate the same day that they visit your site.
