@@ -202,7 +202,7 @@ The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows
 
 Select the **[!UICONTROL Usage]** tab to access the interface.
 
-To report on usage:
+### Report on usage
 
 1. Select a **[!UICONTROL Time range]**. You can select between **[!UICONTROL Last 6 months]**, **[!UICONTROL Year to date]**, or **[!UICONTROL Last 2 Years]**.
 1. Select an **[!UICONTROL Interval]**. You can select between **[!UICONTROL Monthly]** or **[!UICONTROL Quarterly]**.
