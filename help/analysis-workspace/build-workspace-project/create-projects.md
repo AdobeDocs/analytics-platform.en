@@ -92,7 +92,7 @@ To add a component to a project in Analysis Workspace:
 
 ## Display the project table of contents
 
-You can display a table of contents within a project. This allows you to quickly jump between panels and visualizations within the project. This is especially helpful for larger projects that contain many panels and visualizations.
+You can display a table of contents within a project. This allows you to quickly jump between panels and visualizations within the project. This is especially useful when viewing larger projects that contain many panels and visualizations.
 
 The following information explains how to enable the table of contents on a single project. To enable the table of contents on all projects, update your [user preferences](/help/analysis-workspace/user-preferences.md).
 
@@ -106,7 +106,7 @@ To enable the table of contents on a project:
 
 1. In the left nav, select the table of contents icon ![toc icon](assets/toc-icon.png). 
 
-   The table of contents is displayed.
+   The table of contents for the project is displayed.
 
 ## Save and share the project
 
