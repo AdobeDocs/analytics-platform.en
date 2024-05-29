@@ -90,7 +90,7 @@ To add a component to a project in Analysis Workspace:
 
 1. (Optional) Share the project as described in [Save and share the project](#save-and-share-the-project).
 
-## Display the project table of contents
+## Display a table of contents for the project
 
 You can display a table of contents within a project. This allows you to quickly jump between panels and visualizations within the project. This is especially useful when viewing larger projects that contain many panels and visualizations.
 

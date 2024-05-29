@@ -78,9 +78,9 @@ Select one of the options from the drop-down list to change the data in the pane
 
 Right-clicking a drop-down filter provides the following options:
 
-* **[!UICONTROL Add label]**: When you add a drop-down filter to a project, a label is automatically set to the component name. If you delete the label, you can add it again with this option.
 * **[!UICONTROL Delete label]**: Remove the text above a drop-down filter.
-* **[!UICONTROL Delete drop-down filter]**: Removes the drop-down filter from the panel. 
+* **[!UICONTROL Add label]**: When you add a drop-down filter to a project, a label is automatically set to the component name. If you delete the label, you can add it again with this option.
+* **[!UICONTROL Delete drop-down]**: Removes the drop-down filter from the panel. 
 
 [Watch the video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) to learn more about how to add drop-down filters to your project.
 
