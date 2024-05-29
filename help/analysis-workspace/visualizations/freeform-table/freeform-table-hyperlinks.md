@@ -8,11 +8,11 @@ role: User
 
 You can add hyperlinks to dimension items to make them clickable within a freeform table in Analysis Workspace. 
 
-Adding hyperlinks to dimension items can be helpful when the dimension item value contains a URL:
+This functionality is particularly helpful in the following circumstances:
 
-* Add hyperlinks to dimension items that display a URL (for example, a Page URL dimension)
+* When dimension items represent URLs (for example, a Page URL dimension)
 
-* Add hyperlinks to dimension items that contain breakdowns that displays a URL (for example, a Page Name dimension that has a breakdown of a Page URL dimension)
+* When dimension items contain breakdowns that display a URL (for example, a Page Name dimension that has a breakdown of a Page URL dimension)
 
 To add hyperlinks to one or more dimension items:
 
@@ -26,8 +26,22 @@ To add hyperlinks to one or more dimension items:
 
 1. Select [!UICONTROL **Create hyperlink**] from the right-click menu.
 
-1. 
+   <!-- add screenshot of "Create hyperlinks for dimension items" dialog -->
 
+1. Choose from the following options:
+
+   * [!UICONTROL **Use the value of the dimension as the URL**]: Choose this option for dimension items that have URL values, such as a Page URL dimension.
+
+   * [!UICONTROL **Create a custom URL**]: Specify a static custom URL. Or, to create dynamic custom URLs for multiple dimension items, include '$value' or '$breakdown' within your custom URL.  '$breakdown' requires that you specify a breakdown dimension below.
+
+      To create a custom URL, specify the following information:
+
+      |Field | Description | 
+      |---------|----------|
+      | [!UICONTROL **Custom URL**] | B1 | 
+      | [!UICONTROL **Breakdown dimension (optional)**] | B2 | 
+
+   
 
 
 
