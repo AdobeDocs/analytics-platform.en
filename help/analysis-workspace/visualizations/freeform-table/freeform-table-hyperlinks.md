@@ -12,7 +12,7 @@ This functionality is particularly helpful in the following circumstances:
 
 * When dimension items represent URLs (for example, a Page URL dimension)
 
-* When dimension items contain breakdowns that display a URL (for example, a Page Name dimension that has a breakdown of a Page URL dimension)
+* When dimension items contain breakdowns that represent URLs (for example, a Page Name dimension that has a breakdown of a Page URL dimension)
 
 To add hyperlinks to one or more dimension items:
 
