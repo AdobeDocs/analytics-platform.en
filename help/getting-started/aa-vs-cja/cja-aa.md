@@ -50,6 +50,7 @@ The following tables list which features in Adobe Analytics are supported, parti
 
 | Feature | Notes |
 | --- | --- |
+| Analytics for Target (A4T) | The [integration between Adobe Customer Journey Analytics and Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) provides powerful analysis and timesaving tools for your optimization program. |
 | Audience publishing | Supported if licensed with Adobe's Customer Data Platform or Journey Optimizer products. [Audience Publishing](/help/components/audiences/audiences-overview.md) sends audiences to Real-time Customer Profile in Experience Platform. |
 | Classifications | Now called "Lookup Datasets". Classifications used in Analytics can be imported to the Experience Platform and Customer Journey Analytics using the Analytics Classifications Source Connector. Lookup datasets can also be uploaded to Experience Platform directly and made available in Customer Journey Analytics. |
 | Classification rule builder | Supported using [substrings](/help/data-views/component-settings/substring.md) in Customer Journey Analytics. Uses string manipulations at report time rather than lookup datasets. |
@@ -81,7 +82,6 @@ The following tables list which features in Adobe Analytics are supported, parti
 | Feature | Notes |
 | --- | --- |
 | Panels | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. The Segment Comparison and Analytics for Target (A4T) panels are not supported. |
-| Analytics for Target (A4T) | Currently in beta. Partial support is provided through fields in the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Support for A4T-friendly names on Target Activities and Experiences is planned.|
 
 {style="table-layout:auto"}
 
