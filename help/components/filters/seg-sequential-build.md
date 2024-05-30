@@ -19,7 +19,7 @@ Here is a video on sequential segmentation:
 
 When creating a filter where "Include Everyone" is set, the filter identifies paths that match the given pattern as a whole. This is an example of a basic sequence filter looking for one hit (Page A) followed by another (Page B) as visited by the same visitor. The filter is set to Include Everyone.
 
-![](/help/admin/admin/assets/filter.png)
+![](assets/filter.png)
 ![70a875e2-0ef9-4459-8648-77c60081d64d](https://git.corp.adobe.com/storage/user/5902/files/d55be11f-4c4c-4198-bba5-ecad27ebcabf)
 
 | If result... | Sequence |
