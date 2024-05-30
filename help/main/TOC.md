@@ -240,6 +240,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Filters {#cja-filters}
     + [Filters overview](../components/filters/filters-overview.md)
     + [Create filters](../components/filters/create-filters.md)
+    + [Create sequential filters](../components/filters/seg-sequential-build.md)
     + [Share filters](../components/filters/filters-share.md)
     + [Tag filters](../components/filters/filters-tag.md)
     + [Filter the list of filters](../components/filters/filters-filter.md)
