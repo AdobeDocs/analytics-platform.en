@@ -7,7 +7,7 @@ role: User
 ---
 # Experimentation panel
 
-The **[!UICONTROL Experimentation]** panel lets analysts compare different user experience, marketing, or messaging variations to determine which is best at driving a specific outcome. You can evaluate the lift and confidence of any A/B experiment from any experimentation platform - online, offline, from Adobe solutions, Adobe Journey Optimizer, and even BYO (bring-your-own) data.
+The **[!UICONTROL Experimentation]** panel lets analysts compare different user experience, marketing, or messaging variations to determine which is best at driving a specific outcome. You can evaluate the lift and confidence of any A/B experiment from any experimentation platform - online, offline, from Adobe solutions like Target or Journey Optimizer, and even BYO (bring-your-own) data.
 
 Read more about the [integration between Adobe Customer Journey Analytics and Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja4t/cja4t).
 
