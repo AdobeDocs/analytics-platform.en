@@ -150,7 +150,7 @@ Attribution works when the identifying custom variable ties to a device. In the 
 
 #### Step 3: Privacy Request
 
-When you receive a privacy request, the stitched id is deleted in all records for the user. subject of the privacy request. 
+When you receive a privacy request, the stitched id is deleted in all records for the user subject of the privacy request. 
 
 +++ Details
 
@@ -291,7 +291,7 @@ With replay stitching happening at 2023-05-13 16:30, with a 7-day lookback windo
 
 #### Step 3: Privacy Request
 
-When you receive a privacy request, the stitched id is deleted in all records for the user. subject of the privacy request.
+When you receive a privacy request, the stitched id is deleted in all records for the user subject of the privacy request.
 
 +++ Details
 
