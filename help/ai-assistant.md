@@ -14,7 +14,9 @@ hidefromtoc: yes
 >
 >AI Assistant for Customer Journey Analytics is currently in Beta. The feature and its documentation are subject to change.
 
-AI Assistant is a UI feature that you can use to navigate and understand Adobe Customer Journey Analytics concepts and terminology. The AI Assistant in Customer Journey Analytics is trained on its Adobe Experience League documentation. When asked a question, AI Assistant responds with a helpful answer that enables quick learning.
+AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace – whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
+
+The AI Assistant in Customer Journey Analytics is trained on its Adobe Experience League documentation. When asked a question, AI Assistant responds with a helpful answer that enables quick learning.
 
 As a novice user, you can use AI Assistant to learn Customer Journey Analytics concepts and onboard yourself to products and features that you are unfamiliar with. As an experienced user, you can use AI Assistant to present more advanced use cases or tips and tricks.
 
@@ -52,6 +54,6 @@ In this first release, access to the AI Assistant feature is governed by the fol
 
    ![Question box](assets/ai-asst2.png)
 
-1. (Optional) To show sources, click **[!UICONTROL Show Sources]**, and the documentation source/s that informed the answer are shown.
+1. (Optional) To show sources, click **[!UICONTROL Show Sources]**, and the documentation source or sources that informed the answer are shown.
 
 1. (Optional) You can also provide a thumbs-up or thumbs-down vote on the helpfulness of any given answer.
