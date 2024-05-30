@@ -69,7 +69,7 @@ You can create the following metrics in a data view to achieve approximate parit
 | Fallback Decision Option Score | Calculated value for a fallback decision option in the context of a single scope. | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | Component type: Metric |
 | Offers Dismiss | The number of offers dismissed or rejected without any other direct interaction. | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Component type: Metric |
 | Offers Display | The number of offers displayed to the profile. | `_experience.decisioning.`<br/>`propositionEventType.display` | Component type: Metric |
-| Offers Interact | The number of offers displayed to the profile. | `_experience.decisioning.`<br/>`propositionEventType.interact` | Component type: Metric |
+| Offers Interact | The number of offers that the profile interacted with. | `_experience.decisioning.`<br/>`propositionEventType.interact` | Component type: Metric |
 | Offers Send | The number of offers sent to the profile. | `_experience.decisioning.`<br/>`propositionEventType.send` | Component type: Metric |
 | Offers Trigger | The number of offers chosen to be displayed by the client SDK. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Component type: Metric |
 | Offers Unsubscribe | The number of offers requested by profile not to be shown in the future. | `_experience.decisioning.`<br/>`propositionEventType.unsubscribe` | Component type: Metric |
