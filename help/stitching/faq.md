@@ -41,7 +41,9 @@ The transient ID overrides the persistent ID, so shared devices are considered s
 
 In some situations, an individual user can associate with many persistent IDs. An example is an individual frequently clearing browser's cookies or using the browser's private/incognito mode.
 
-The number of persistent IDs is irrelevant in favor of the transient ID. A single user can belong to any number of devices without impacting Customer Journey Analytics's ability to stitch across devices.
+For field-based stitching, the number of persistent IDs is irrelevant in favor of the transient ID. A single user can belong to any number of devices without impacting Customer Journey Analytics's ability to stitch across devices.
+
+For graph-based stitching, a single person can have many persistent ID in the identity graph. Graph-based stitching uses the persistent ID based on the specified namespace. In case there are more persistent ID for the same namespace, the lexicographic first persistent ID is used.
 
 +++
 

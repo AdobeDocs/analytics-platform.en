@@ -150,7 +150,7 @@ Attribution works when the identifying custom variable ties to a device. In the 
 
 #### Step 3: Privacy Request
 
-When you receive a privacy request, the row containing the original user information is removed, along with any stitched IDs that contain this same person information. 
+When you receive a privacy request, the stitched id is deleted in all records for the user. subject of the privacy request. 
 
 +++ Details
 
@@ -226,6 +226,8 @@ Consider the following two identity graphs for persistent id `246` and `3579`, h
 ![Identity Graph 246](assets/identity-graph-246.svg)
 ![Identity Graph 3579](assets/identity-graph-3579.svg)
 
+You can view an identity graph over time for a specific profile using the [Identity Graph Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer).
+
 #### Step 1: Live stitching
 
 Live stitching attempts to stitch each event upon collection to known information at that time from the identity graph. 
@@ -289,7 +291,7 @@ With replay stitching happening at 2023-05-13 16:30, with a 7-day lookback windo
 
 #### Step 3: Privacy Request
 
-When you receive a privacy request, the row containing the original user information is removed, along with any stitched IDs that contain this same person information.
+When you receive a privacy request, the stitched id is deleted in all records for the user. subject of the privacy request.
 
 +++ Details
 
@@ -324,6 +326,10 @@ The following limitation do apply specifically to graph-based stitching:
 - Timestamps are not taken into account when querying for the transient id using the specified namespace. So it is possible a persistent ID is stitched with a transient ID from a record that has an earlier timestamp.
 - No shared device support. When multiple identities are returned by querying the identity graph using a namespace, the first lexicographic identity is used.
 - There is a hard limit of three months of backfilling identities into the identity graph. You would use backfilling identities in case you are not using an Experience Platform application, like Real-time Customer Data Platform, to populate the identity graph.
+- The [Identity Service guardrails](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) do apply. See for example the following [static limits](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
+  - Maximum number of identities: 50.
+  - Maximum number og links to an identity for a single batch ingestion: 50. 
+  - Maximum number of identities in an XDM record: 50.
 
 
 ## Use stitching
