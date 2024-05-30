@@ -9,13 +9,11 @@ Sequential filters are created by using the THEN operator, instead of AND or OR.
 
 ![](assets/before-after-sequence.png)
 
-Additionally, you can constrain sequential filters to a&nbsp;specific duration of time, granularity, and counts between checkpoints using the [After and Within operators](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
-
 Here is a video on sequential segmentation:
 
 >[!VIDEO](https://video.tv.adobe.com/v/25405/?quality=12)
 
-## Include Everyone {#section_75ADDD5D41F04800A09E592BB2940B35}
+## Include Everyone {#include_everyone}
 
 When creating a filter where "Include Everyone" is set, the filter identifies paths that match the given pattern as a whole. This is an example of a basic sequence filter looking for one hit (Page A) followed by another (Page B) as visited by the same visitor. The filter is set to Include Everyone.
 
@@ -23,11 +21,11 @@ When creating a filter where "Include Everyone" is set, the filter identifies pa
 ![70a875e2-0ef9-4459-8648-77c60081d64d](https://git.corp.adobe.com/storage/user/5902/files/d55be11f-4c4c-4198-bba5-ecad27ebcabf)
 
 | If result... | Sequence |
-|--- |--- |
-| Matches | A then B<br>A then (in a different visit) B<br>A then D then B |
+|--- | --- |
+| Matches | A then B<br>A then (in a different visit) BA then D then B |
 | Does not Match | B then A |
 
-## Only Before Sequence and Only After Sequence {#section_736E255C8CFF43C2A2CAAA6D312ED574}
+## Only Before Sequence and Only After Sequence {#only_before_after}
 
 The options **[!UICONTROL Only Before Sequence]** and **[!UICONTROL Only After Sequence]** filter the filter to a subset of data before or after the specified sequence.
 
@@ -58,7 +56,7 @@ Let's also frame this concept with the Hit Depth dimension.
 
 ![](assets/hit-depth.png)
 
-## Dimension Constraints {#section_EAFD755F8E674F32BCE9B642F7F909DB}
+## Dimension Constraints {#constraints}
 
 In a "within" clause, in between THEN statements, you can add, for example, "within 1 search keyword instance", "within 1 eVar 47 instance". This constrains the filter to within one instance of a dimension.
 
@@ -71,7 +69,7 @@ Setting a 'Within Dimension' clause between rules allows a filter to restrict da
 | Matches | A then B |
 | Does not Match| A then C then B (because B was not within 1 page of A)<br>**Note:**  If the dimension restriction is taken out, "A then B" and "A then C then B" would both match. |
 
-## Simple Page View sequence
+## Simple Page View sequence {#simple_sequence}
 
 Identify visitors who viewed a page and then viewed another page. The hit-level data will filter this sequence irrespective of previous, past, or interim visit sessions or the time or number of page views occurring between.
 
@@ -90,7 +88,7 @@ You nest two page rules within a top-level [!UICONTROL Visitor] container and se
 
 ![](assets/segment_sequential_1.png)
 
-## Visitor sequence across visits
+## Visitor sequence across visits {#sequence_across}
 
 Identify those visitors who fell out of a campaign but then returned to the sequence of page views in another session.
 
@@ -109,7 +107,7 @@ This example nests two **[!UICONTROL Visit]** containers within the top-level **
 
 ![](assets/visitor_seq_across_visits.png)
 
-## Mixed-level sequence
+## Mixed-level sequence {#mixed_level}
 
 Identify visitors who view two pages across an undetermined number of visits, but then view a third page in a separate visit.
 
@@ -130,7 +128,7 @@ The following are examples of how this type of filter can be used:
 
 ![](assets/mixed_level_checkpoints.png)
 
-## Aggregate containers
+## Aggregate containers {#aggregate_containers}
 
 Adding multiple [!UICONTROL Hit] containers within a [!UICONTROL Visitor] container lets you employ the appropriate operators between the same type of containers, and to use rules and dimensions such as Page and Visit Number to define the page view and provide a sequence dimension within the [!UICONTROL Hit] container. Applying logic at the Hit-level lets you constrain and combine matches at a same-level of hits within the [!UICONTROL Visitor] container to build a variety of filter types.
 
@@ -153,7 +151,7 @@ The following are examples of how this type of filter can be used:
 
 ![](assets/aggregate_checkpoints2.png)
 
-## "Nesting" in sequential filters
+## "Nesting" in sequential filters {#nesting}
 
 By placing checkpoints at both the [!UICONTROL Visit] and [!UICONTROL Hit] level, you can constrain the filter to meet requirements within a specific visit as well as a specific hit.
 
@@ -169,7 +167,7 @@ By placing checkpoints at both the [!UICONTROL Visit] and [!UICONTROL Hit] level
 
 ![](assets/nesting_sequential_seg.png)
 
-## Exclude hits
+## Exclude hits {#exclude}
 
 Segment rules include all data unless you specifically exclude [!UICONTROL Visitor], [!UICONTROL Visit], or [!UICONTROL Hit] data using the [!UICONTROL Exclude] rule. It allows you to dismiss common data and create filters with more focus. Or it allows you to create filters excluding found groups to identify the remaining data set, such as creating a rule that includes successful visitors who placed orders and then excluding them to identify "non-purchasers." However, in most cases it is better to create rules that exclude broad values rather than trying to use the [!UICONTROL Exclude] rule to target specific include values.
 
@@ -179,9 +177,9 @@ For example:
 * **Exclude referring domains**. Use a rule that includes only referring domains from Google.com and excludes all others.
 * **Identify non-purchasers**. Identify when orders are greater than zero and then exclude the [!UICONTROL Visitor].
 
-The [!UICONTROL Exclude] operator can be employed to identify a sequence where specific visits or hits are not performed by the visitor. [!UICONTROL Exclude Checkpoints] can also be included within a [Logic Group](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
+The [!UICONTROL Exclude] operator can be employed to identify a sequence where specific visits or hits are not performed by the visitor. [!UICONTROL Exclude Checkpoints] can also be included within a Logic Group (see below).
 
-### Exclude between checkpoints
+### Exclude between checkpoints {#exclude_between}
 
 Enforce logic to filter visitors where a checkpoint did not explicitly occur between two other checkpoints.
 
@@ -200,7 +198,7 @@ Create a filter as you would for a simple, mixed-level, or nested sequential fil
 
 ![](assets/exclude_between_checkpoints.png)
 
-### Exclude at beginning of sequence
+### Exclude at beginning of sequence {#exclude_beginning}
 
 If the exclude checkpoint is at the beginning of a sequential filter, then it ensures that an excluded page view did not occur before the first non-excluded hit.
 
@@ -212,7 +210,7 @@ Create two separate Hit containers within a top-level Visitor container. Then se
 
 ![](assets/exclude_beginning_sequence.png)
 
-### Exclude at end of sequence
+### Exclude at end of sequence {#exclude_end}
 
 If the exclude checkpoint is at the end of a sequence, then it ensures that the checkpoint did not happen between the last non-excluded checkpoint and the end of the visitor sequence.
 
@@ -224,7 +222,7 @@ Build a simple sequence filter by dragging two [!UICONTROL Hit] containers to th
 
 ![](assets/exclude_end_sequence.png)
 
-## Logic Group containers
+## Logic Group containers {#logic_group}
 
 Logic Group containers are required to group conditions into a single sequential filter checkpoint. The special Logic Group container is available only in sequential segmentation, to ensure its conditions are met after any prior sequential checkpoint and before any following sequential checkpoint. The conditions within the Logic Group checkpoint itself may be met in any order. By contrast, non-sequential containers (hit, visit, visitor) do not require their conditions to be met within the overall sequence, producing unintuitive results if used with a THEN operator.
 The [!UICONTROL Logic Group] container was designed to treat *several checkpoints as a group*, *without any ordering* among the grouped checkpoints. In other words, we don't care about the order of the checkpoints within that group. For example, you can't nest a [!UICONTROL Visitor] container within a [!UICONTROL Visitor] container. But instead, you can nest a [!UICONTROL Logic Group] container within a [!UICONTROL Visitor] container with specific [!UICONTROL Visit]-level and [!UICONTROL Hit]-level checkpoints.
@@ -259,7 +257,7 @@ A Logic Group container greatly simplifies building this filter, as shown here:
 ![](assets/logic-grp-example.png)
 
 
-### Build a Logic Group filter {#section_A5DDC96E72194668AA91BBD89E575D2E}
+### Build a Logic Group filter {#logic_group_filter}
 
 Like other containers, [!UICONTROL Logic Group] containers can be built in multiple ways within the [!UICONTROL Segment Builder]. Here is a preferred way to nest [!UICONTROL Logic Group] containers:
 
@@ -270,7 +268,7 @@ Like other containers, [!UICONTROL Logic Group] containers can be built in multi
 1. Click the container icon and select **[!UICONTROL Logic Group]**.  ![](assets/logic_group_checkpoints.png)
 1. You can now set the [!UICONTROL Hit] within the [!UICONTROL Logic Group] container without regard to hierarchy.
 
-### Logic Group checkpoints in any order
+### Logic Group checkpoints in any order {#any_order}
 
 Using the [!UICONTROL Logic Group] lets you meet conditions within that group that reside outside of the sequence. This allows you to build filters where a [!UICONTROL Visit] or [!UICONTROL Hit] container happens irrespective of the normal hierarchy.
 
@@ -288,7 +286,7 @@ Page B and C are nested in a [!UICONTROL Logic Group] container within the outer
 
 The filter must match at lease one of the logic group's checkpoints (B or C). Also, logic group conditions may be met in the same hit or across multiple hits.​
 
-### Logic Group first match
+### Logic Group first match {#first_match}
 
 Using the [!UICONTROL Logic Group] lets you meet conditions within that group that reside outside of the sequence. In this unordered first match filter, the [!UICONTROL Logic Group] rules are identified first to be either a page view of page B or page C, then the required view of page A.
 
@@ -300,7 +298,7 @@ Page B and page C dimensions are grouped within a [!UICONTROL Logic Group] conta
 
 ![](assets/logic_group_1st_match.png)
 
-### Logic Group exclude AND
+### Logic Group exclude AND {#lg_exclude_and}
 
 Build filters using the [!UICONTROL Logic Group] where multiple page views are aggregated to define what pages were necessary to be hit while other pages were specifically missed. ****
 
@@ -308,13 +306,13 @@ Build filters using the [!UICONTROL Logic Group] where multiple page views are a
 
 **Create this filter** 
 
-Build this filter by dragging Dimensions, Events, and pre-built Segments from the left panes. See [Building a Logic Group Segment](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
+Build this filter by dragging Dimensions, Events, and pre-built filters from the left panes. See the section on Building a Logic Group filter.
 
 After nesting the values within the [!UICONTROL Logic Group], click the **[!UICONTROL Exclude]** button within the [!UICONTROL Logic Group] container.
 
 ![](assets/logic_exclude_and.png)
 
-### Logic Group exclude OR
+### Logic Group exclude OR {#lg_exclude_or}
 
 Build filters using the [!UICONTROL Logic Group] where multiple page views are aggregated to define what pages were necessary to be hit while other pages were specifically missed.
 
@@ -330,7 +328,7 @@ After nesting the values within the [!UICONTROL Logic Group], click the **[!UICO
 
 ![](assets/logic_exclude_or.png)
 
-## Build time-within and time-after filters
+## Build time-within and time-after filters {#time_within_after}
 
 Use the [!UICONTROL Within] and [!UICONTROL After] operators built in to the header of each container to define the time, events, and count.
 
@@ -348,7 +346,7 @@ You can limit matching to a specified duration of time by using the [!UICONTROL 
 >
 >![image](https://git.corp.adobe.com/storage/user/5902/files/b808eeb0-5e3f-499b-8096-c7eb0d51c57a)
 
-### After and Within Operators {#section_CCAF5E44719447CFA7DF8DA4192DA6F8}
+### After and Within Operators {#after_within}
 
 The duration is specified by a single uppercase letter representing the granularity followed by a number representing the repetition count of the granularity.
 
@@ -362,7 +360,7 @@ The duration is specified by a single uppercase letter representing the granular
 |WITHIN|The  Within operator is used to specify a maximum limit on the amount of time between two checkpoints. For example, if the  Within operator is set on a container to identify visitors who visit page A and then returned to visit page B within one day, then that day will begin when the visitor leaves page A. To be included in the filter, the visitor will have a maximum time of one day before opening page B.   For the visitor to be included in the filter, the visit to page B must occur within a maximum of 1440 minutes (one day) after leaving page A to viewing page B.|
 |AFTER/WITHIN|When using both the  After and  Within operators, it's important to understand that both operators will begin and end in parallel, not sequentially.   For example, if you build a filter with the container set to:<br>`After = 1 Week(s) and Within = 2 Week(s)`<br>Then the conditions to identify visitors in the filter are met only between 1 and 2 weeks. Both conditions are enforced from the time of the first page hit.|
 
-### Use the After operator
+### Use the After operator {#after}
 
 * Time After lets you track by year, month, day, hour, and minute to match visits.
 * Time After can only be applied to a [!UICONTROL Hit] container because it is the only level for which such fine granularity is defined.
@@ -384,7 +382,7 @@ When given "After 2 weeks", if a hit to page A happens on June 1 2019, at 00:01,
 |**A** hit: June 1, 2019 00:01|**B** hit: Jun 15, 2019 00:01|**Matches:** This time constraint matches because it is After June 1, 2019 (two weeks).|
 |**A** hit: June 1, 2019 00:01|**B** hit: June 8, 2019 00:01 B hit: June 15, 2019 00:01|**Does not match:** The first hit on page B does not match because it conflicts with the constraint requiring it after two weeks.|
 
-### Use the Within operator
+### Use the Within operator {#within}
 
 * [!UICONTROL Within] lets you track by year, month, day, hour, and minute to match visits.
 * [!UICONTROL Within] can only be applied to a [!UICONTROL Hit] container because it is the only level for which such fine granularity is defined.
@@ -405,7 +403,7 @@ When given "After 2 weeks", if a hit to page A happens on June 1 2019, at 00:01,
 
 Matches must occur within the time limit. For the expression , if a visitor hits page A happens at 00:01, then a following hit to page B will match as long as it comes on or before 00:06 (five minutes later, including the same minute). Hits within the same minute will also match.
 
-### The Within and After operators
+### The Within and After operators {#within_after}
 
 Use [!UICONTROL Within] and [!UICONTROL After] to provide a maximum and minimum endpoint at both ends of a filter.
 
@@ -419,7 +417,7 @@ Use [!UICONTROL Within] and [!UICONTROL After] to provide a maximum and minimum 
 
 **Matches**
 
-Any visitors hitting page A on June 1, 2019 are returning after June 15, 2019 00:01, but *before* July 1, 2019 are included in the filter. Compare with [Time Between Exclusions](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
+Any visitors hitting page A on June 1, 2019 are returning after June 15, 2019 00:01, but *before* July 1, 2019 are included in the filter. Compare with the section on Time Between Exclusions.
 
 The [!UICONTROL After] and [!UICONTROL Within] operators can be used together to define a sequential filter.
 
