@@ -20,7 +20,7 @@ The following guided analysis views are available:
 
 | Analysis type | View type | Description |
 | --- | --- | --- |
-| [!UICONTROL Feature matrix] | [Engagement](types/engagement.md) | Understand the breadth and width of feature engagement. |
+| [!UICONTROL Feature matrix] | [Engagement](types/engagement.md) | Understand the breadth and depth of feature engagement. |
 | [!UICONTROL Funnel] | [Friction](types/friction.md) | Compare conversion rates between steps. |
 | [!UICONTROL Funnel] | [Conversion trends](types/conversion-trends.md) | Track changes in conversion rates over time. |
 | [!UICONTROL Impact] | [Release](types/release.md) | Compare performance across equal periods pre- and post-release. |
