@@ -14,7 +14,7 @@ This functionality is particularly useful when adding hyperlinks to the followin
 
 * Dimension items that contain breakdowns that have URL values that you want to link to (for example, a Page Name dimension that has a breakdown of a Page URL dimension)
 
-* Dimension items or breakdowns that have values that are part of a URL that you want to link to 
+* Dimension items or breakdowns that have values that are part of a URL that you want to link to (for example, a Page Name dimension that is part of a URL)
 
 To add hyperlinks to one or more dimension items:
 
@@ -59,7 +59,7 @@ To add hyperlinks to one or more dimension items:
 
 1. Select [!UICONTROL **Create**].
 
-   Users who view the freeform table can click dimension items to be taken to the hyperlinks that you added. Hyperlinks are launched in a separate browser tab. <!--true?-->
+   Users who view the freeform table can click dimension items to be taken to the hyperlinks that you added. Hyperlinked pages are launched in a separate browser tab. <!--true?-->
  
    <!-- add screenshot of a table with hyperlinks.>
 
