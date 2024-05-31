@@ -240,6 +240,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Filters {#cja-filters}
     + [Filters overview](../components/filters/filters-overview.md)
     + [Create filters](../components/filters/create-filters.md)
+    + [Create sequential filters](../components/filters/seg-sequential-build.md)
     + [Share filters](../components/filters/filters-share.md)
     + [Tag filters](../components/filters/filters-tag.md)
     + [Filter the list of filters](../components/filters/filters-filter.md)
@@ -317,11 +318,12 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Frequently Asked Questions](../stitching/faq.md)  
 
 + Adobe integrations {#integrations}
-  + [Integrate Adobe solutions with Customer Journey Analytics overview](/help/integrations/overview.md)
-  + [Integrate Adobe Analytics with Customer Journey Analytics](/help/integrations/aa.md)
-  + [Integrate Journey Optimizer data with Customer Journey Analytics](/help/integrations/ajo.md)
-  + [Integrate Decision Management data with Customer Journey Analytics](/help/integrations/ajo-od.md)
-  + [Integrate Customer AI with Customer Journey Analytics](/help/integrations/customer-ai.md)
+  + [Overview](/help/integrations/overview.md)
+  + [Integrate Adobe Analytics](/help/integrations/aa.md)
+  + [Integrate Target](/help/integrations/cja4t.md)
+  + [Integrate Journey Optimizer data](/help/integrations/ajo.md)
+  + [Integrate Decision Management data](/help/integrations/ajo-od.md)
+  + [Integrate Customer AI](/help/integrations/customer-ai.md)
 
 + Data Governance {#cja-privacy}
   + [Data Governance](../privacy/privacy-overview.md)
