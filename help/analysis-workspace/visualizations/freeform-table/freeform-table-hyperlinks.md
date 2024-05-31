@@ -1,10 +1,10 @@
 ---
-title: Create hyperlinks in a freeform table in Analysis Workspace
+title: Add hyperlinks in a freeform table in Analysis Workspace
 description: Learn how to add hyperlinks to dimension items in a freeform table in Analysis Workspace
 feature: Visualizations
 role: User
 ---
-# Create hyperlinks for dimensions in a freeform table
+# Add hyperlinks to dimensions in a freeform table
 
 You can add hyperlinks to dimension items to make them clickable within a freeform table in Analysis Workspace. 
 
@@ -20,10 +20,6 @@ To add hyperlinks to one or more dimension items:
 
 1. In a freeform table in Analysis Workspace, do one of the following:
 
-   * **Add hyperlinks to all dimension items in a column:** Right-click the dimension name in the column header.
-
-   <!-- add screenshot -->
-
    * **Add a hyperlink to a single dimension item:** Right-click the dimension item within the table where you want to add the hyperlink.
 
    <!-- add screenshot -->
@@ -32,7 +28,11 @@ To add hyperlinks to one or more dimension items:
 
    <!-- add screenshot -->
 
-1. Select [!UICONTROL **Create hyperlink**] from the right-click menu.
+   * **Add hyperlinks to all dimension items in a column:** Right-click the dimension name in the column header.
+
+   <!-- add screenshot -->
+
+1. Select [!UICONTROL **Add hyperlink**] from the right-click menu.
 
    <!-- add screenshot of "Create hyperlinks for dimension items" dialog -->
 
