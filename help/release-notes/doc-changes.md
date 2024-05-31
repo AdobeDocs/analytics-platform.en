@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **May 2024** | |
+| Target integration | Added [article to Adobe integration section](/help/integrations/cja4t.md) on how to integrate Target with Customer Journey Analytics. |
 | Required information when exporting Customer Journey Analytics reports to Google Cloud Platform while using organization policy constraints | Added the Adobe-owned Google Cloud Platform organization ID to the [Configure cloud export locations](/help/components/exports/cloud-export-locations.md) documentation for exporting Customer Journey Analytics reports to Google Cloud Platform. <p>This information is required only for organizations that are using [Organization policy constraints](https://cloud.google.com/storage/docs/org-policy-constraints) in Google Cloud Platform.</p> | 
 | Documentation about adding components to projects | Added general information about how to [add the various types of components to projects in Analysis Workspace](/help/components/use-components-in-workspace.md). |
 | Data export use cases | Set of new articles describing [data export use cases](/help/use-cases/data-export/overview.md) and how to use Experience Platform and Customer Journey Analytics functionalities to implement these use cases |
