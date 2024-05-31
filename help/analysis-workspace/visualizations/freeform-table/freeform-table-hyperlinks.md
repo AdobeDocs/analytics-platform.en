@@ -44,11 +44,11 @@ To add hyperlinks to one or more dimension items:
    
      For example, if you are using a Page URL dimension where the value of each dimension item is a URL, then selecting this option creates a hyperlink to the URL.
 
-   * [!UICONTROL **Create a custom URL**]: Specify a static or dynamic custom URL. This option allows you to add a hyperlink to dimension items whose values are not URLs. 
+   * [!UICONTROL **Create a custom URL**]: Specify either a static or dynamic custom URL. Choose this option to add a hyperlink to dimension items that do not have URL values. 
    
      For example, if you are using a Page Name dimension where the value of each dimension item is the name of a page (and not a full URL), then selecting this option allows you to specify a hyperlink to use as the link for the dimension item.
    
-     If you want to create dynamic URLs for multiple dimension items, you can use the `$value` and `$breakdown` variables within the custom URL that you specify. See the table below for more information.
+     If you want to create dynamic URLs for multiple dimension items, you can use the `$value` and `$breakdown` variables within your custom URL. See the table below for more information.
 
       To create a custom URL, specify the following information:
 
