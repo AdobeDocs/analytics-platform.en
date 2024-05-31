@@ -29,8 +29,13 @@ Currently, a number of personalized insights and engagement use cases have been 
 | [Evolving One-Time Value to Lifetime Value](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/evolve-one-time-value-to-lifetime-value) | Create personalized campaigns to offer the best complementary products or services based on a specific customer's attributes, behavior, and past purchases. | Real-Time Customer Data Platform<br/>Journey Optimizer | 
 | From Prospects to Patrons | Grow business by finding and acquiring new customers without third-party cookies. Understand both the performance & efficacy of these new prospects to better optimize segmentation & experiences. | Real-Time Customer Data Platform<br/>Customer Journey Analytics | 
 
+Each use case (customer conversion optimization to start with) is documented according to the following structure
 
-
-
-
+- Overview
+  - Out with the old, in with the new
+  - Objectives, challenges and differentiators
+- Prerequisites and planning
+- Solution and capabilities
+- Example
+- Value
 

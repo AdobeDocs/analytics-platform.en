@@ -193,6 +193,13 @@ The example below illustrate the customer conversion optimization use case for a
 | ... | etc. | | 
 
 
+## Value
 
+The value you can get out of implementing custom conversion optimization use cases are:
 
-
+* Better targeting leading to increased conversions.
+* Enhanced personalization and targeted experiences for your customers.
+* Increased effectiveness of your marketing efforts.
+* Improved overall and individual customer satisfaction.
+* Overall business growth.
+  
