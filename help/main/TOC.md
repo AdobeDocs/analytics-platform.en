@@ -360,6 +360,9 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Use arrays of objects](../use-cases/object-arrays.md)
   + Derived fields {#derived-fields}
     + [Use derived fields to report on goals](../use-cases/goals-using-derived-fields.md)
+  + Personalized Insights and Engagement {#personalized-insights-engagement}
+    + [Overview](help/use-cases/pie/overview.md)
+    + [Customer conversion optimization](/help/use-cases/pie/customer-conversion-optimization.md)
 
 + Labs {#labs}
   + [Labs User Guide](../labs/labs.md)
