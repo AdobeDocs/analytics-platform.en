@@ -32,22 +32,22 @@ Currently, a number of personalized insights and engagement use cases have been 
 
 Each use case is documented using the following structure:
 
-- Overview
+- **Overview**
 
   In the overview section, a general overview of the use is provided. In the Out with the old subsection, the traditional approach for the use case is outlined. The In with the new subsection describes a new approach to the use case.
 
-- Prerequisites and planning
+- **Prerequisites and planning**
 
   This section details the prerequisites and planning required upfront before you are able to implement the use case.
 
-- Applications and capabilities
+- **Applications and capabilities**
 
   To implement the use case successfully, this section outlines the applications and their capabilities.
 
-- Example
+- **Example**
 
   The Example section details a specific example of the use case with 
 
-- Value
+- **Valu**e
 
   This final section provides an overview of the value that you can get out of implementing the use case.
