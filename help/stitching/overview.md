@@ -334,7 +334,7 @@ The following limitation do apply specifically to graph-based stitching:
 
 ## Use stitching
 
-Once your organization meets all [prerequisites](#prerequisites) and understands common and algorithm specific [limitations](#limitations), you can follow these steps to start using stitching in Customer Journey Analytics:
+Once your organization meets all [prerequisites](#prerequisites) and understands common [limitations](#limitations) and stitching method specific ([field-based](#limitations-1) and [graph-based](#limitations-2)) limitations, you can follow these steps to start using stitching in Customer Journey Analytics:
 
 ### Request Support 
 
