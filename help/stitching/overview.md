@@ -226,7 +226,7 @@ Consider the following two identity graphs for persistent id `246` and `3579`, h
 ![Identity Graph 246](assets/identity-graph-246.svg)
 ![Identity Graph 3579](assets/identity-graph-3579.svg)
 
-You can view an identity graph over time for a specific profile using the [Identity Graph Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer).
+You can view an identity graph over time for a specific profile using the [Identity Graph Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). See also [Identity Service linking logic](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) to get a better understanding of the logic used when linking identities.
 
 #### Step 1: Live stitching
 
