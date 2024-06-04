@@ -52,6 +52,7 @@ In this first release, access to the AI Assistant feature is governed by the fol
 A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in Admin Console:
    1. Navigate to [!UICONTROL Admin Console] > [!UICONTROL Products and services] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL Product Profile] > [!UICONTROL Permissions] > [!UICONTROL Edit Reporting Tools].
    1. Add "AI Assistant: Product Knowledge".
+   ![Add permission](assets/image.png)
 
 ## Access AI Assistant in the Customer Journey Analytics UI
 
