@@ -3,6 +3,7 @@ description: Learn how to add components to a project in Analysis Workspace
 title: Use components in Analysis Workspace
 feature: Components
 role: User
+exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
 ---
 # Use components in Analysis Workspace
 

@@ -3,6 +3,7 @@ title: Integrate Target with Customer Journey Analytics
 description: Integrate Target with Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
+exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
 ---
 # Integrate Target with Customer Journey Analytics
 
