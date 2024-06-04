@@ -326,9 +326,9 @@ The following limitation do apply specifically to graph-based stitching:
 - No shared device support. When multiple identities are returned by querying the identity graph using a namespace, the first lexicographic identity is used.
 - There is a hard limit of three months of backfilling identities into the identity graph. You would use backfilling identities in case you are not using an Experience Platform application, like Real-time Customer Data Platform, to populate the identity graph.
 - The [Identity Service guardrails](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) do apply. See for example the following [static limits](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
-  - Maximum number of identities: 50.
+  - Maximum number of identitie in a graph: 50.
   - Maximum number of links to an identity for a single batch ingestion: 50. 
-  - Maximum number of identities in an XDM record: 20.
+  - Maximum number of identities in an XDM record for graph ingestion: 20.
   - Minimum number of identities in an XDM record for graph ingestion: 2.
 
 
