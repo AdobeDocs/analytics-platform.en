@@ -327,13 +327,14 @@ The following limitation do apply specifically to graph-based stitching:
 - There is a hard limit of three months of backfilling identities into the identity graph. You would use backfilling identities in case you are not using an Experience Platform application, like Real-time Customer Data Platform, to populate the identity graph.
 - The [Identity Service guardrails](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) do apply. See for example the following [static limits](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
   - Maximum number of identities: 50.
-  - Maximum number og links to an identity for a single batch ingestion: 50. 
-  - Maximum number of identities in an XDM record: 50.
+  - Maximum number of links to an identity for a single batch ingestion: 50. 
+  - Maximum number of identities in an XDM record: 20.
+  - Minimum number of identities in an XDM record for graph ingestion: 2.
 
 
 ## Use stitching
 
-Once your organization meets all [prerequisites](#prerequisites) and understands the [limitations](#limitations), you can follow these steps to start using stitching in Customer Journey Analytics:
+Once your organization meets all [prerequisites](#prerequisites) and understands common and algorithm specific [limitations](#limitations), you can follow these steps to start using stitching in Customer Journey Analytics:
 
 ### Request Support 
 
@@ -341,7 +342,7 @@ Once your organization meets all [prerequisites](#prerequisites) and understands
 
    - A request to enable stitching.
    - The dataset ID for the dataset that you want to rekey.
-   - The column name of the persistent ID for the desired dataset (the identifier that appears on every row).
+   - The column name (identity path and namespace) of the persistent ID for the desired dataset (the identifier that appears on every row).
    - For field-based stitching, the column name of the transient ID for the desired dataset (the person identifier, which also acts as a link between datasets in the context of a connection). For graph-based stitching, the identity namespace to use for querying the identity graph.
    - Your preference of [replay](explained.md) frequency and lookback length. Options include a replay once a week with a 7-day lookback window, or a replay every day with a 1-day lookback window.
    - Sandbox name.
