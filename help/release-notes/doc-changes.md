@@ -13,16 +13,28 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **May 2024** | |
+| Target integration | Added [article to Adobe integration section](/help/integrations/cja4t.md) on how to integrate Target with Customer Journey Analytics. |
+| Required information when exporting Customer Journey Analytics reports to Google Cloud Platform while using organization policy constraints | Added the Adobe-owned Google Cloud Platform organization ID to the [Configure cloud export locations](/help/components/exports/cloud-export-locations.md) documentation for exporting Customer Journey Analytics reports to Google Cloud Platform. <p>This information is required only for organizations that are using [Organization policy constraints](https://cloud.google.com/storage/docs/org-policy-constraints) in Google Cloud Platform.</p> | 
+| Documentation about adding components to projects | Added general information about how to [add the various types of components to projects in Analysis Workspace](/help/components/use-components-in-workspace.md). |
+| Data export use cases | Set of new articles describing [data export use cases](/help/use-cases/data-export/overview.md) and how to use Experience Platform and Customer Journey Analytics functionalities to implement these use cases |
+| New documentation for upgrading from Adobe Analytics to Customer Journey Analytics | For organizations upgrading from Adobe Analytics to Customer Journey Analytics, there are multiple upgrade options and many considerations to keep in mind based on an organization's current Adobe Analytics implementation and long-term goals.<p>New documentation resources are now available to help you better understand:</p><ul><li>The various upgrade paths that exist</li><li>Which upgrade paths are available based on an organization's current Adobe Analytics implementation</li><li>The advantages and disadvantages of each upgrade path</li><li>Step-by-step guidance for each upgrade path</li><li>Considerations for handling historical data</li><li>And more!</li></ul><p>[Get started with the upgrade to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
+| Updated documentation about custom date ranges |  Updated screenshots and procedures related to [creating custom date ranges](/help/components/date-ranges/custom-date-ranges.md) in order to match the current product features and design.  | 
+| Overview information about Dimensions |  Added information about [dimensions](/help/components/dimensions/overview.md).  | 
+| Examples of source connectors | Added examples of source connectors that are available when describing how to [use a source connector](/help/data-ingestion/sources.md#use-a-source-connector) for ingesting data. |
 | **April 2024** | |
 | Forecasting statistical techniques | Added article describing the [statistical techniques used in forecasting service](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | Added information recommending Full Table Export for high cardinality dimensions | Added bullet in [Best practices for high cardinality dimensions](/help/components/dimensions/high-cardinality.md) to recommend using Full Table Export for high cardinality dimensions.  |
+| Added documentation on Intelligent Captions in mobile scorecards | [Intelligent Captions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) can help non-analysts better make sense of their data without the help of analysts.  |
+| New documentation for Adobe Product Analytics features |<ul><li>[Feature matrix](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Enhanced [retention rates](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[Enhanced Insights in Funnel](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Compare events within a single Funnel step</li></ul>|
 | **March 2024** | |
 | Usage information regarding the "Used in" column is available only starting in September 2023.| Clarified that usage information regarding the **Used in** column on the [projects landing page](/help/getting-started/landing.md) goes back only as far as September 2023.  |
+| Added documentation on permissions enhancement for project-only Workspace components | If you share a project with other users, those users can edit [quick filters](/help/components/filters/quick-filters.md) and other project-only components that are embedded in the shared project.|
 | **February 2024** | |
 | Updates to project sharing documentation | Added information about how to [view projects that are shared with you](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Also streamlined information about [sharing individual or multiple projects](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | Added permission requirements for uploading files to Azure SAS and Azure RBAC when configuring cloud export locations | Added exact permission requirements for uploading files to Azure SAS and Azure RBAC when [configuring cloud export accounts](/help/components/exports/cloud-export-accounts.md) and [configuring cloud export locations](/help/components/exports/cloud-export-locations.md).  |
 | Added permission requirements for uploading files to Amazon S3 Role ARN and GCP buckets when configuring cloud export locations | Added exact permission requirements for uploading files to Amazon S3 Role ARN and Google Cloud Platform buckets when [configuring cloud export locations](/help/components/exports/cloud-export-locations.md).  |
-| Clarified that Product Admins always have access to export full tables | Made the following changes to clarify that users who are assigned the Product Admin role have access to export full tables from Analysis Workspace by default: <ul><li>Added a new bullet to [Product Admin default permissions](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>Added a note under the [minimum requirements for exporting full tables to the cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> | 
+| Clarified that Product Admins always have access to export full tables | Made the following changes to clarify that users who are assigned the Product Admin role have access to export full tables from Analysis Workspace by default: <ul><li>Added a new bullet to [Product Admin default permissions](/help/technotes/access-control.md#product-admin-default-permissions).</li><li>Added a note under the [minimum requirements for exporting full tables to the cloud](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> | 
 | Clarified that segments are re-created during component migration from Adobe Analytics | In the [User Guide for Adobe Analytics users](/help/getting-started/aa-to-cja-user.md), clarified that segments are automatically re-created in Adobe Analytics as part of the component migration process, and don't need to be manually re-created. |
 | Skipped record details | Added documentation on the skipped record details functionality in Connections. See [Connection details](../connections/manage-connections.md#connection-details) for more information. | 
 | **January 2024** | |
@@ -30,7 +42,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Updated the documentation for adding accounts and locations when exporting full tables | Updated the documentation to reflect minor interface updates when configuring a new account or location when [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>A new [!UICONTROL **Add account**] option is now available in the [!UICONTROL **Account**] drop-down menu. The [!UICONTROL **Add location**] option that was previously available as a button next to the [!UICONTROL **Location name**] drop-down menu is now available within the menu itself. |
 | New component migration information when migrating from Adobe Analytics | Added information to [Evolution from Adobe Analytics](/help/getting-started/aa-to-cja.md) that references the new [component migration](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html) capabilities that are documented in the Adobe Analytics Admin Guide. |
 | Clarified that certain information is available only to administrators  | Added information stating that the "Last used" and "Used in" columns that are described in [Calculated metrics manager](/help/components/calc-metrics/cm-workflow/cm-manager.md) and the [Filters manager](/help/components/filters/manage-filters.md) are available only to system administrators. |
-| Permissions required for exporting datasets | Added information explaining the [permissions required](/help/admin/cja-access-control.md) to export datasets to cloud destinations. | 
+| Permissions required for exporting datasets | Added information explaining the [permissions required](/help/technotes/access-control.md) to export datasets to cloud destinations. | 
 | Manage connections | Updated the [Manage connections](../connections/manage-connections.md) article, based on customer feedback. | 
 | Derived fields | Added summary of function [limitations](/help/data-views/derived-fields/derived-fields.md#limitations) and explanation on how to determine number of [operators](/help/data-views/derived-fields/derived-fields.md#operators) used in a function. |
 
@@ -42,8 +54,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **December 2023** | |
-| Data centers | Added an article on Customer Journey Analytics [hosting locations](../technotes/cja-datacenters.md). |
-| Guardrails | Added article listing Customer Journey Analytics [guardrails](../admin/guardrails.md). |  
+| Data centers | Added an article on Customer Journey Analytics [hosting locations](../technotes/data-centers.md). |
+| Guardrails | Added article listing Customer Journey Analytics [guardrails](../technotes/guardrails.md). |  
 | Currency conversion updates | Clarified documentation about how to [configure currency conversion](/help/data-views/component-settings/format.md). |
 | Updates to Anomaly Detection documentation | The documentation for Anomaly Detection was previously located in a section about Virtual Analyst. The following changes were made: <ul><li>The term Virtual Analyst was removed from the documentation.</li><li>The section about [Anomaly Detection](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) was moved directly beneath the Analysis Workspace section.</li></ul> |
 | **October 2023** | |
@@ -81,7 +93,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Deep Linking (Mobile App) documentation | Allows users to send links to scorecards that will lead them directly to the scorecard project in the app. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
 | Doc on "Select data view from cell" in Report Builder | This feature allows users to select the data view for a data block from a cell. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) |
 | Documentation for updated Home screen for the Analytics dashboards app (Mobile App)| The new updated Home screen allows you to view all of your scorecards in one consolidated scorecard list. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) |
-| Optimization update | Updated article on [Optimizing Customer Journey Analytics performance](/help/admin/optimizing-performance.md)|
+| Optimization update | Updated article on [Optimizing Customer Journey Analytics performance](/help/technotes/optimizing-performance.md)|
 | Analysis Workspace overview | Updated [Analysis Workspace overview](/help/analysis-workspace/home.md) to include more general overview information and links to relevant content. |
 | Create projects | Created a new article that explains in detail how to [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md) in Analysis Workspace. |
 | Sort components in the left rail | Added information about sorting the list of components in the left rail.See the "Search, filter, and sort the component list" section in [Components overview](/help/components/overview.md). |
@@ -124,7 +136,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Date | Update description |
 | --- | --- |
 | **December 2022** |  |
-| December 16, 2022 | New topic on [measuring and managing your Customer Journey Analytics data usage](/help/admin/estimate-usage.md). |
+| December 16, 2022 | New topic on [measuring and managing your Customer Journey Analytics data usage](/help/technotes/estimate-usage.md). |
 | **October 2022** | |
 | October 2022 | New topic on [password protection of scheduled projects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | October 2022 | New topic on [Customer Managed Keys](/help/privacy/cmk.md). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
@@ -139,7 +151,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | September 2022 | New topic on [Experimentation panel](/help/analysis-workspace/c-panels/experimentation.md) in Workspace. |
 | **August 2022** | |
 | August 2022 | Adobe Experience Platform article on [Cross-region support for Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html). |
-| August 2022 | Significantly updated article on [Customer Journey Analytics access control](/help/admin/cja-access-control.md). |
+| August 2022 | Significantly updated article on [Customer Journey Analytics access control](/help/technotes/access-control.md). |
 | August 2022 | New article on [Customer Journey Analytics support for Data Governance labels and policies](/help/data-views/data-governance.md). |
 | August 2022 | New article on [Comparing terminology for Analytics data passed through the Analytics source connector](/help/getting-started/aa-vs-cja/terminology.md). |
 | August 2022 | New documentation on [Audience publishing to Real-time Customer Profile](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html). |

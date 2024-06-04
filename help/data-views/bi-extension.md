@@ -3,14 +3,10 @@ title: Customer Journey Analytics BI extension
 description: Learn how you can use Query Service, Power BI, Tableau, or other BI and SQL tools to access data views using the Customer Journey Analytics BI extension.
 solution: Customer Journey Analytics
 feature: SQL Connector
-hide: yes
-hidefromtoc: yes
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
 ---
 # Customer Journey Analytics BI extension
-
-{{release-limited-testing}}
 
 {{select-package}}
 
@@ -38,7 +34,7 @@ To use this functionality, you must:
 
 * Use expiring on non-expiring credentials to connect BI tools to the [!DNL Customer Journey Analytics BI extension]. The [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) provides more information on setting expiring credentials or non-expiring credentials.
 
-See [Access Control](../admin/cja-access-control.md) in the Customer Journey Analytics Administration section for additional information.
+See [Access Control](../technotes/access-control.md) in the Customer Journey Analytics Administration section for additional information.
 
 
 ## Usage
@@ -182,7 +178,7 @@ See [Connect clients to Query Service](https://experienceleague.adobe.com/en/doc
 
 ## Functionality
 
-By default, your data views have a table-safe name generated from their friendly name. For example, the data view named [!UICONTROL My Web Data View] has the view name `my_web_data_view`.  
+By default, your data views have a table-safe name generated from their friendly name. For example, the data view named [!UICONTROL My Web Data View] has the view name `my_web_data_view`. You can define a preferred name to use in your BI tool for your data view. See [Data view settings](create-dataview.md#settings) for more information.
 
 If you want to use the data view IDs as the table names, you can add the optional `CJA_USE_IDS` setting to your database name when connecting. For example, `prod:cja?CJA_USE_IDS` shows your data views with names like `dv_ABC123`.
 
@@ -307,6 +303,11 @@ The `daterange` special column works similar to  `timestamp`, however the filter
 The `daterange` field can also be used in date/time functions to parse or truncate the event date.
 
 The `daterangeName` special column can be used to filter your query using a named date range like `Last Quarter`.
+
+>[!NOTE]
+>
+>PowerBI is not supporting `daterange` metrics that are less than a day (hour, 30 minute, 5 minute, etc.).
+
 
 #### Filter ID
 
