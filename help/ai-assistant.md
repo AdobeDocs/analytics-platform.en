@@ -26,7 +26,15 @@ Some examples of concept questions include:
 * What is Customer Journey Analytics best used for?
 * How do I set up a data view?
 
+## Product knowledge {#knowledge}
+
 The product knowledge retrieval model is trained on Customer Journey Analytics. Other capabilities, such as data analysis, will be rolled out at a later date. 
+
+| Product knowledge | Examples |
+| --- | --- |
+| Pointed learning |<ul><li>What is the difference between Adobe Analytics and Customer Journey Analytics?</li><li>How do I build a calculated metric?</li></ul> |
+| Open discovery | <ul><li>How can I export a Workspace project?</li><li>How can I find duplicate Workspace components?</li></ul>  |
+| Troubleshooting | <ul><li>How long does it take for data to come into CJA?</li><li>How many derived fields can I have in a Customer Journey Analytics connection?</li></ul>|
 
 Questions outside the scope of Customer Journey Analytics, such as questions about other Adobe products like Adobe Target and the Adobe Creative Cloud Suite, cannot be answered. 
 
@@ -40,7 +48,10 @@ In this first release, access to the AI Assistant feature is governed by the fol
 
 * **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before AI Assistant can be used by your organization, your company must agree to certain GenAI-related legal terms.
 
-* **Permissions**: The [!UICONTROL Adobe Admin Console] [!UICONTROL Reporting Tools] "AI Assistant: Product Knowledge" permission determines access to this tool. This permission will be added to the Reporting Tools section in mid May. A product profile admin needs to create a [product profile](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) in Admin Console with this permission granted, and manually add users to this profile.
+* **Permissions**: In [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] "AI Assistant: Product Knowledge" permission determines access to this tool. 
+A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in Admin Console:
+   1. Navigate to [!UICONTROL Admin Console] > [!UICONTROL Products and services] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL Product Profile] > [!UICONTROL Permissions] > [!UICONTROL Edit Reporting Tools].
+   1. Add "AI Assistant: Product Knowledge".
 
 ## Access AI Assistant in the Customer Journey Analytics UI
 
