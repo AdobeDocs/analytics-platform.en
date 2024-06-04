@@ -1,13 +1,13 @@
 ---
 title: Personalized Insights and Engagement Use Cases
-description: Learn about the personalized insights and engagement use case 
+description: Learn about the personalized insights and engagement use case
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 hide: yes
 hidefromtoc: yes
+exl-id: 2e1ab3f0-8eb9-46cb-bdc9-117ef287ec05
 ---
-
 # Personalized Insights and Engagement Use Cases
 
 Your company may have already spent years perfecting or building your digital transformation initiatives. These initiatives are a great baseline for how your company should evolve to be able to reorient your entire organization in a digital economy. But when you look at how to achieve the pinnacle of *personalization at scale*, it may appear to require a lot. Achieving personalization at scale requires the ability to have a content supply chain, the ability to have personalized insights and engagement, the ability to have commerce and many other applications powering every touchpoint.

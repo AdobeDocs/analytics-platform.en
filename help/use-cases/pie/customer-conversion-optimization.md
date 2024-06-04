@@ -1,13 +1,13 @@
 ---
 title: Customer Conversion Optimization
-description: Learn about the customer conversion optimization use case 
+description: Learn about the customer conversion optimization use case
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 hide: yes
 hidefromtoc: yes
+exl-id: 2490f36f-862a-4e70-b0e2-c22e55ac980f
 ---
-
 # Customer conversion optimization
 
 Brands often look at the overall conversion rate as a lagging indicator of success and focus on conversion rate optimization to increase the quantity of impressions. But conversion rate is the king of all vanity metrics; it might indicate short-term wins, but by prioritizing quantity over the quality of customer experiences, you risk doing long-term damage to your brand.
@@ -212,4 +212,3 @@ The value you can get out of implementing the custom conversion optimization use
 * Increased effectiveness of your marketing efforts.
 * Improved overall and individual customer satisfaction.
 * Overall business growth.
-  

@@ -8,21 +8,12 @@ role: User
 ---
 # Retention rates
 
-The **[!UICONTROL Retention rates]** view shows users repeat usage behavior in your product over time, which can help you understand your product market fit. In this view, the horizontal axis represents the number of days since a user's initial engagement and the vertical axis represents the percentage of users who engage again.
+The **[!UICONTROL Retention rates]** view measures how users continue to use your product over time, which can help you understand your product market fit. The analysis counts users based on two important events:
 
-This analysis counts users based on two important events:
+* Start event: The first time a user engaged with the start event within the date range
+* Return event: The most recent time a user engaged with the return event within the analyzed date range
 
-* Start event: The first time a user engaged with the event within the date range
-* Return event: The most recent time a user engaged with the event within the analyzed date range
-
-The "Day 0" duration bucket represents the initial time that a user engaged with the event, and always equals exactly 100%. This bucket is the denominator used to calculate the percentage of users retained.
-
-Subsequent duration buckets count the number of users who returned on or after that duration. This count is the numerator used to calculate the percentage of users retained.
-
-* If a user engages with the event only once during the desired date range (the initial engagement), they only appear in the "Day 0" duration bucket.
-* If a user engages with the event multiple days after initially qualifying for inclusion in the analysis, they appear in the latest qualifying duration bucket and all duration buckets leading up to it. This type of calculation is sometimes referred to as "unbounded retention." You can change this calculation setting in the query rail.
-
-Users that qualify for duration buckets are based on time elapsed, not calendar day. For example, if a user qualifies for an event at 11:55 PM on September 6, then qualifies for a return event at 12:05 AM on September 7, they would not appear in the 1-day duration bucket. A full 24 hours must elapse before the user qualifies for the 1-day duration bucket.
+In this view, the chart's x-axis represents the time since a user's initial start event and the y-axis represents the percentage of users who engage with the return event(s). You can view both retention and churn across durations, and the durations shown can be customized through the query settings. Below the chart, a table provides aggregated data with the option to show individual cohorts, which are a group of people who did the starting event on the same date. 
 
 ![Retention rates screenshot](../assets/retention-rates.png){style="border:1px solid gray"}
 
@@ -39,20 +30,26 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL Start event]**: The event criteria that a user must engage with to qualify for inclusion in your analysis. Users who engage with the start event are included in the initial bucket of users that totals to 100%. One event is supported, but you can include property filters. You can link the start and return events together using the three-dot menu. Linking the start and return events mean that the criteria to appear in the initial duration bucket and subsequent duration buckets are the same.
-* **[!UICONTROL Return events]**: The event criteria that a user must engage with to qualify for inclusion in subsequent duration buckets. You can select up to three return events. Each return event generates a side-by-side analysis with the other included return events.
+* **[!UICONTROL Start event]**: The event criteria that a user must engage with to qualify for inclusion in your analysis. Users who engage with the start event are counted in the "Users" column of the table. This serves as the denominator for retention rates shown. One event is supported, and property filters can be applied as needed. By default, the start and return event are linked, meaning a user must do the selected event once to be included in the cohort, and then again to be counted as a returning user. Under the More menu, you can unlink the start and return events if you want the returning action to be different from the inclusion action. 
+* **[!UICONTROL Return events]**: The event criteria that a user must engage with to count as a returning users in the duration buckets. You can select up to three return events to compare retention across.
 * **[!UICONTROL Counted as]**: The counting method that you want to apply to retained users. Options include:
-  * **[!UICONTROL Metric]**: Count the number of [!UICONTROL Users retained] or the [!UICONTROL Percentage of users retained].
-  * **[!UICONTROL Returning]**: By default, this analysis includes users in the bucket that they returned and all preceding buckets. Change this setting to **[!UICONTROL On exactly]** to include users in only the exact bucket that they qualify for.
-  * **[!UICONTROL Each]**: The time period that you want each duration bucket to be. This setting is identical to the **[!UICONTROL Interval]** setting when selecting the date range.
-  * **[!UICONTROL Duration settings]**: Allows you to control how the analysis displays users by the number of days elapsed. Available duration buckets depend on the date range that you set. **[!UICONTROL Auto durations]** automatically set duration buckets based on the date range length and how close to the current day that the date range is. **[!UICONTROL Custom durations]** allow you to set four duration buckets at desired intervals manually.
+  * **[!UICONTROL Metric]**: Show the number of [!UICONTROL Users] or the [!UICONTROL Percentage of users] retained. The denominator for percentage users retained is the included users for the cohort and is same across all duration buckets.
+  * **[!UICONTROL Returning]**: Allows you to control how returning users are counted. Options include:
+    * **[!UICONTROL On or after]**: Often referred to as "unbounded" retention, this option counts a user if they return on or after the specified duration. For example, on day 7 or anytime after day 7. This option is helpful for showing how users continue to engage and will generate a smoother retention curve as a result. 
+    * **[!UICONTROL On exactly]**: Often referred to as "bounded" retention, this option counts a user if they return on the specified duration exactly. For example, on day 7 exactly. This option is helpful for showing how users return within specific timeframes and will generate a retention curve with more undulation as a result. Note: The cohort analysis in Analysis Workspace uses "on exactly" counting as the basis for its analysis.
+  * **[!UICONTROL Each]**: The time period that you want each duration bucket to be. Options include:
+    * **[!UICONTROL Day/Week/Month]**: Options available are dependent on the date range selected. These options are identical to the **[!UICONTROL Interval]** setting when selecting the date range and will update that setting automatically.
+    * **[!UICONTROL Custom brackets]**: This option is available for the "On each" setting only. It allows you to count users across a larger timeframe; for example, Day 7-10, instead of only Day 7.
+  * **[!UICONTROL Duration settings]**: Allows you to control the duration buckets displayed on the chart and table. A duration is the period of time after the start event that the return event has occurred. Note: Users that qualify for duration buckets are based on time elapsed, not calendar days. For example, if a user qualifies for an event at 11:55 PM on September 6, then qualifies for a return event at 12:05 AM on September 7, they would not appear in the 1-day duration bucket. A full 24 hours must elapse before the user qualifies for the 1-day duration bucket. Available duration buckets depend on the date range that you set. 
+    * **[!UICONTROL Auto durations]** automatically defines the duration buckets based on the date range length and how close to the current day that the date range is. 
+    * **[!UICONTROL Custom durations]** allow you to customize the four duration buckets displayed on the chart and table.
 * **[!UICONTROL Segments]**: The segments that you want to measure. Each selected segment adds a row to the cohort table. You can include up to three segments.
 
 ## Chart settings
 
 The [!UICONTROL Retention rates] view offers the following chart settings, which can be adjusted in the menu above the chart:
 
-* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Bar] and [!UICONTROL Line]. The line visualization shows Day 0 visually in the chart.
+* **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Bar] and [!UICONTROL Line].
 
 ## Date range
 
@@ -65,7 +62,3 @@ If you select a date range close to the present day, users that initially engage
 
 * **[!UICONTROL Analyzing users who did the start event in [Date interval]]**: If a user engages with the event within this date range, they are included in the analysis. This date range guarantees all users enough time to qualify for all duration buckets. This date range can be different than your selection if it is close to the present day.
 * **[!UICONTROL Data from [Date interval] is reserved to complete the analysis]**: If a user engages for the first time within this period, they are **not** included in the analysis. For recent date ranges, these users would not have an opportunity to qualify for all duration buckets. For past date ranges, these users were active outside of the selected date range.
-
-## Cohort table
-
-The table below the chart provides an aggregate view (similar to chart data), and a full cohort table. The full cohort table provides details of each individual date interval and when users engaged.

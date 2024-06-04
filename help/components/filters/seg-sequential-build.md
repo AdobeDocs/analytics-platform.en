@@ -2,6 +2,7 @@
 description: Sequential filters are created by using the THEN operator, instead of AND or OR. THEN implies that one filter criterion occurs, followed by another. By default, a sequential filter identifies all matching data, showing the filter "Include Everyone". Sequential filters can be further filtered to a subset of matching hits using the "Only Before Sequence" and "Only After Sequence" options.
 title: Build sequential filters
 feature: Filters
+exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
 ---
 # Build sequential filters
 
