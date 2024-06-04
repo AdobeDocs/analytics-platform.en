@@ -26,6 +26,10 @@ Some examples of concept questions include:
 * What is Customer Journey Analytics best used for?
 * How do I set up a data view?
 
+Questions outside the scope of Customer Journey Analytics, such as questions about other Adobe products like Adobe Target and the Adobe Creative Cloud Suite, cannot be answered. 
+
+AI Assistant for Customer Journey Analytics is available to all product tiers.
+
 ## Product knowledge {#knowledge}
 
 The product knowledge retrieval model is trained on Customer Journey Analytics. Other capabilities, such as data analysis, will be rolled out at a later date. 
@@ -35,10 +39,6 @@ The product knowledge retrieval model is trained on Customer Journey Analytics. 
 | Pointed learning |<ul><li>What is the difference between Adobe Analytics and Customer Journey Analytics?</li><li>How do I build a calculated metric?</li></ul> |
 | Open discovery | <ul><li>How can I export a Workspace project?</li><li>How can I find duplicate Workspace components?</li></ul>  |
 | Troubleshooting | <ul><li>How long does it take for data to come into CJA?</li><li>How many derived fields can I have in a Customer Journey Analytics connection?</li></ul>|
-
-Questions outside the scope of Customer Journey Analytics, such as questions about other Adobe products like Adobe Target and the Adobe Creative Cloud Suite, cannot be answered. 
-
-AI Assistant for Customer Journey Analytics is available to all product tiers.
 
 ## Feature Access
 
