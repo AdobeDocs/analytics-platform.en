@@ -27,6 +27,8 @@ Once you have [created or edited one or more connections](/help/connections/crea
 
 The [!UICONTROL List] interface is the default interface for Connections. If not selected, select the **[!UICONTROL List]** tab to access the interface.
 
+![list view](assets/list-view.png)
+
 The [!UICONTROL List] interface shows a table of all connections available. You can quickly search for a connection using the Search ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
 
 The following columns or icons are available in the table.
@@ -196,23 +198,25 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 
 The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon.
 
+![usage-view](assets/usage-view.png)
+
 Select the **[!UICONTROL Usage]** tab to access the interface.
 
-To report on usage:
+### Report on usage
 
 1. Select a **[!UICONTROL Time range]**. You can select between **[!UICONTROL Last 6 months]**, **[!UICONTROL Year to date]**, or **[!UICONTROL Last 2 Years]**.
 1. Select an **[!UICONTROL Interval]**. You can select between **[!UICONTROL Monthly]** or **[!UICONTROL Quarterly]**.
 
 For [!UICONTROL Ingested rows]:
 
-* a panel displays the total ingested rows that include all the events data across all the connections updated on every 2nd day of a month. Within the panel: 
+* A panel displays the total ingested rows that include all the events data across all the connections updated on every 2nd day of a month. Within the panel: 
   * a box displays the number of ingested rows for the last month and the change in % (indicated by <span style="color:green">▲</span> or <span style="color:c64545">▼</span>) from the previous month.
   * a line graph displays the <span style="color:53b2ad">◼︎</span> [!UICONTROL Monthly ingested rows].<br/>To see a popup that displays the number of monthly ingested rows for a month, hover over any data point in the line graph.
 
 
 For [!UICONTROL Reportable rows]:
 
-* a panel displays total reportable rows that include all the events data across all the connections updated on every 2nd day of a month. Within the panel:
+* A panel displays total reportable rows that include all the events data across all the connections updated on every 2nd day of a month. Within the panel:
   * a box displays the cumulative total number of reportable rows.
   * a box displays the total number of reportable rows for the last month and the change in % (indicated by <span style="color:green">▲</span> or <span style="color:c64545">▼</span>) from the previous month.
   * a line graph displays the <span style="color:53b2ad">◼︎</span> [!UICONTROL Monthly reportable rows].<br/>To see a popup that displays the number of cumulative reportable rows for a specific month, hover over any data point in the line graph.

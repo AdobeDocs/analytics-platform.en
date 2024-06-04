@@ -14,7 +14,9 @@ hidefromtoc: yes
 >
 >AI Assistant for Customer Journey Analytics is currently in Beta. The feature and its documentation are subject to change.
 
-AI Assistant is a UI feature that you can use to navigate and understand Adobe Customer Journey Analytics concepts and terminology. The AI Assistant in Customer Journey Analytics is trained on its Adobe Experience League documentation. When asked a question, AI Assistant responds with a helpful answer that enables quick learning.
+AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace – whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
+
+The AI Assistant in Customer Journey Analytics is trained on its Adobe Experience League documentation. When asked a question, AI Assistant responds with a helpful answer that enables quick learning.
 
 As a novice user, you can use AI Assistant to learn Customer Journey Analytics concepts and onboard yourself to products and features that you are unfamiliar with. As an experienced user, you can use AI Assistant to present more advanced use cases or tips and tricks.
 
@@ -24,13 +26,11 @@ Some examples of concept questions include:
 * What is Customer Journey Analytics best used for?
 * How do I set up a data view?
 
-The documentation retrieval model is trained on Customer Journey Analytics. Questions outside the scope of Customer Journey Analytics, such as questions about other Adobe products like Adobe Target and the Adobe Creative Cloud Suite, cannot be answered.
+The product knowledge retrieval model is trained on Customer Journey Analytics. Other capabilities, such as data analysis, will be rolled out at a later date. 
+
+Questions outside the scope of Customer Journey Analytics, such as questions about other Adobe products like Adobe Target and the Adobe Creative Cloud Suite, cannot be answered. 
 
 AI Assistant for Customer Journey Analytics is available to all product tiers.
-
->[!IMPORTANT]
->
->At this point, AI Assistant for Customer Journey Analytics does not answer usage questions about data objects inside your organization.
 
 ## Feature Access
 
@@ -40,7 +40,7 @@ In this first release, access to the AI Assistant feature is governed by the fol
 
 * **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before AI Assistant can be used by your organization, your company must agree to certain GenAI-related legal terms.
 
-* **Permissions**: The [!UICONTROL Adobe Admin Console] [!UICONTROL Reporting Tools] "AI Assistant Documentation" permission determines access to this tool. This permission will be added to the Reporting Tools section in mid May. You need to ensure that you create a [product profile](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) in Admin Console with this permission granted, and manually add users to this profile.
+* **Permissions**: The [!UICONTROL Adobe Admin Console] [!UICONTROL Reporting Tools] "AI Assistant: Product Knowledge" permission determines access to this tool. This permission will be added to the Reporting Tools section in mid May. A product profile admin needs to create a [product profile](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) in Admin Console with this permission granted, and manually add users to this profile.
 
 ## Access AI Assistant in the Customer Journey Analytics UI
 
@@ -54,6 +54,6 @@ In this first release, access to the AI Assistant feature is governed by the fol
 
    ![Question box](assets/ai-asst2.png)
 
-1. (Optional) To show sources, click **[!UICONTROL Show Sources]**, and the documentation source/s that informed the answer are shown.
+1. (Optional) To show sources, click **[!UICONTROL Show Sources]**, and the documentation source or sources that informed the answer are shown.
 
 1. (Optional) You can also provide a thumbs-up or thumbs-down vote on the helpfulness of any given answer.
