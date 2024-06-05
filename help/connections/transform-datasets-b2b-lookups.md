@@ -4,6 +4,7 @@ description: Describes how to transform data in datasets of specific B2B lookup 
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
+exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
 ---
 # Transform datasets for B2B lookups
 
