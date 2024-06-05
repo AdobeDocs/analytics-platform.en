@@ -877,7 +877,7 @@ To create a formula:
 1. To insert a static value (for example `1.05`), type the value and select **[!UICONTROL Add *x* as a static value]** or **[!UICONTROL Add -*x* as a negative static value]** from the popup menu.
   ![Math More Info 2](assets/math-more-info-2.png)
 
-1. A green checkmark ![Checkmark](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize50.svg) indicates whether your math formula is valid, otherwise you will see a warning and the message [!UICONTROL Invalid formula expression]. 
+1. A green checkmark <code style="color:green">![Checkmark](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize50.svg)</code> indicates whether your math formula is valid, otherwise you will see a warning and the message [!UICONTROL Invalid formula expression]. 
    ![Math More Info 3](assets/math-more-info-3.png)
 
 There are some important considerations when working with static numbers in the [!UICONTROL MATH] function:
