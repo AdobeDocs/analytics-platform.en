@@ -262,7 +262,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 ### Get Last Value in Delimited List
 
-his function template gets the last value in a delimited list.
+This function template gets the last value in a delimited list.
 
 +++ Details
 

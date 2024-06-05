@@ -13,6 +13,9 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **June 2024** | |
+| Transform datasets for B2B lookups | Documentation on how to support [person-based lookups on B2B data](/help/connections//transform-datasets-b2b-lookups.md) (including accounts, opportunities, marketing lists and campaigns), transformation of B2B lookup datasets is required.  |
+| Derived field function templates | Documentation on the [additional function templates for derived fields](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **May 2024** | |
 | Target integration | Added [article to Adobe integration section](/help/integrations/cja4t.md) on how to integrate Target with Customer Journey Analytics. |
 | Required information when exporting Customer Journey Analytics reports to Google Cloud Platform while using organization policy constraints | Added the Adobe-owned Google Cloud Platform organization ID to the [Configure cloud export locations](/help/components/exports/cloud-export-locations.md) documentation for exporting Customer Journey Analytics reports to Google Cloud Platform. <p>This information is required only for organizations that are using [Organization policy constraints](https://cloud.google.com/storage/docs/org-policy-constraints) in Google Cloud Platform.</p> | 
