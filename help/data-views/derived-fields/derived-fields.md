@@ -938,7 +938,7 @@ You would like to understand what the **next** or **previous** value is of the d
 
 ### Derived field {#prevnext-uc1-derivedfield}
 
-You define a `Next Value` or `Previous value` derived field. You use the [!UICONTROL NEXT OR PREVIOUS] function to define a rule that selects the [!UICONTROL Data received] field, select [!UICONTROL Next value] or [!UICONTROL Previous value] as [!UICONTROL Method], [!UICONTROL Session] as Scope and sets the value of [!UICONTROL Index] to `1`.
+You define a `Next Value` or `Previous value` derived field. You use the [!UICONTROL NEXT OR PREVIOUS] function to define a rule that selects the [!UICONTROL Data received] field, select [!UICONTROL Next value] or [!UICONTROL Previous value] as [!UICONTROL Method], [!UICONTROL Session] as Scope and set the value of [!UICONTROL Index] to `1`.
 
 ![Screenshot of the Merge Fields rule](assets/prevnext-next.png)
 
