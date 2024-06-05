@@ -12,10 +12,10 @@ To support person-based lookups on B2B data (including accounts, opportunities, 
 
 This transformation is only available for datasets with data for B2B lookup schemas, based on the following classes:
 
-* XDM Business Account Person Relation
-* XDM Business Opportunity Person Relation
-* XDM Business Marketing List Members
-* XDM Business Campaign Members
+* [XDM Business Account Person Relation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM Business Opportunity Person Relation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM Business Marketing List Members](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM Business Campaign Members](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 To enable transformation for such a dataset:
 
