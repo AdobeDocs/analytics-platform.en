@@ -619,13 +619,13 @@ Defines a set of values that are replaced by corresponding values in a new deriv
 
 >[!NOTE]
 >
->This function was originally named Lookup but has been renamed to Classify to accommodate a forthcoming Lookup function with different functionality.
+>This function was originally named Lookup but has been renamed to Classify to accommodate the Lookup function with different functionality.
 
 ## Specifications {#classify-io}
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>[!UICONTROL When value equals] and [!UICONTROL Replace values with]:</p><ul><li>String</li></ul><li>Show original values<ul><li>Boolean</li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field<br/>100 rows per function</p> | <p>New derived field</p> |
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>[!UICONTROL When value equals] and [!UICONTROL Replace values with]:</p><ul><li>String</li></ul><li>Show original values<ul><li>Boolean</li></ul></li></ul> | <p>N/A</p> | <ul><li>5 functions per derived field</li><li>200 [operators](#operators) per derived field. Every entry for [!UICONTROL When value equals original value] [!UICONTROL Replace value with New value] is considered an operation.</li></ul>| <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -1461,7 +1461,7 @@ The following limitations apply to the Derived field functionality in general:
 | Function | Limitations |
 |---|---|
 | <p>Case When</p> | <ul><li>5 Case When functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
-| <p>Classify</p> | <ul><li>5 Classify functions per derived field</li><li>100 rows per function</li></ul> |
+| <p>Classify</p> | <ul><li>5 Classify functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
 | <p>Concatenate</p> | <ul><li>2 Concatenate functions per derived field</li></ul> |
 | <p>Find & Replace</p> | <ul><li>2 Find & Replace functions per derived field</li></ul> |
 | <p>Lookup</p> | <ul><li>5 Lookup functions per derived field</li></ul> |
@@ -1481,6 +1481,12 @@ An operator in an If or Else If construct within a Case When function is the com
 As an example, the condition below uses 13 operators.
 
 ![Sample operators](assets/operators-sample.png)
+
+An operator in the Classify function is a single entry for [!UICONTROL When value equal Original value] [!UICONTROL Replace value with New value].
+
+As an example, the Classify rule below uses 3 operators.
+
+![Screenshot of the Classify rule 1](assets/classify-1.png)
 
 
 ## More information
