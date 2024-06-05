@@ -18,17 +18,17 @@ This is because of the way data is collected into Adobe Experience Platform befo
 
 ## Data collection times vary in Customer Journey Analytics
 
-The time that is required for data to be collected into Adobe Experience Platform varies by organization. Unlike Adobe Analytics, data collection for Adobe Experience Platform does not happen sequentially and in real time. This is due to the following reasons:
+The time that is required for data to be collected into Adobe Experience Platform varies by organization. Unlike Adobe Analytics, data collection for Adobe Experience Platform does not happen sequentially and in real time. This makes hourly alerts unpractical. 
+
+This is due to the following reasons:
 
 * Platform's ability to hold all kinds of data schemas and types
 
 * A delay in the ETL batch delivery to Platform datasets<!--add link? -->
 
-For these reasons, data collection for the various kinds of data that can be ingested by Platform is complete only after a delay of 3 to 9 hours.
+For these reasons, data collection for the various kinds of data that can be ingested by Platform is complete (the ETL batch delivery is available in the Platform dataset) only after a delay of 3 to 9 hours.
 
-To account for this delay in collection time, alerts have a default delay of 9 hours before they are sent. This delay ensures that data is complete and accurate when the alert is sent. 
-
-This makes hourly alerts unpractical. 
+To account for this delay in collection time, alerts have a default delay of 9 hours before they are sent. This delay ensures that ETL batch delivery to the dataset is complete and that alert data is accurate when the alert is sent.
 
 You can adjust the default delay of 9 hours to anywhere between 0 and 24 hours. However, decreasing the delay below 9 hours can mean that you are reporting on incomplete data (because the ETL batch delivery to the dataset might not be complete). This can result in inaccurate alert information. 
 
