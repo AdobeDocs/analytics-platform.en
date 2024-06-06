@@ -62,3 +62,5 @@ In this first release, access to the AI Assistant feature is governed by the fol
 1. (Optional) To show sources, click **[!UICONTROL Show Sources]**, and the documentation source or sources that informed the answer are shown.
 
 1. (Optional) You can also provide a thumbs-up or thumbs-down vote on the helpfulness of any given answer.
+
+1. (Optional) You can flag the answer for inappropriate or harmful content.
