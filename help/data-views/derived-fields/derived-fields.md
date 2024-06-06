@@ -1619,6 +1619,7 @@ The following limitations apply to the Derived field functionality in general:
 | <p>Lowercase</p> | <ul><li>2 Lowercase functions per derived field</li></ul> |
 | <p>Math</p> | <ul><li>25 operations per derived field</li><li>5 Math functions per derived field</li></ul> | 
 | <p>Merge Fields</p> | <ul><li>2 Merge Fields functions per derived field</li></ul> |
+| <p>Next or Previous</p> | <ul><li>3 Next or Previous functions per derived field</li></ul> |
 | <p>Regex Replace</p> | <ul><li>1 Regex Replace function per derived field</li></ul> |
 | <p>Split</p> | <ul><li>5 Split functions per derived field</li></ul> |
 | <p>Trim</p> | <ul><li>1 Trim function per derived field</li></ul> |
