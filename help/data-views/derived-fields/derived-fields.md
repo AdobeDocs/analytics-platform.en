@@ -429,7 +429,7 @@ In case your site receives the following sample events, containing [!UICONTROL R
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` | |
+| `https://google.com` |  | 
 
 {style="table-layout:auto"}
 
@@ -1061,6 +1061,78 @@ You must select the same type of fields within a Merge Fields rule. For example,
 
 +++
 
+
+<!-- NEXT OR PREVIOUS -->
+
+### Next or Previous
+
+Takes a field as input and resolves the next or previous value for that field within the scope of the session or use. This will only apply to the Visit and Event table fields.
+
++++ Details
+
+## Specification {#prevornext-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Method]:<ul><li>Previous value</li><li>Next value</li></ul></li><li>[!UICONTROL Scope]:<ul><li>Person</li><li>Session</li></ul></li><li>[!UICONTROL Index]:<ul><li>Numeric</li></ul><li>[!UICONTROL Include repeats]:<ul><li>Boolean</li></ul></li><li>[!UICONTROL Include 'No Values']:<ul><li>Boolean</li></ul></li></ul> | <p>N/A</p> | <p>3 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+## Use case {#prevornext-uc1}
+
+You would like to understand what the **next** or **previous** value is of the data that you receive, taken into account repeat values.
+
+### Data {#prevornext-uc1-databefore}
+
+**Example 1 - Handling include repeats**
+
+| Data received | Next value<br/>Session<br/>Index = 1<br/>Include Repeats | Next value<br/>Session<br/>Index = 1<br/>NOT Include Repeats | Previous value<br/>Session<br/>Index = 1<br/>Include Repeats | Previous value<br/>Session<br/>Index = 1<br/>NOT Include Repeats |
+|---|---|---|---|---|
+| home | home | search | *No value* | *No value* |
+| home | search | search | home | *No value* |
+| search | search | product detail | home | home |
+| search | product detail | product detail | search | home |
+| product detail | search | search | search | search |
+| search | product details | product detail | product detail  | product detail |
+| product detail | search | search | search | search |
+| search | search | *No value* | product detail | product detail |
+| search | *No value* | *No value* | search | product detail |
+
+{style="table-layout:auto"}
+
+**Example 2 - Handling include repeats with blank values in data received**
+
+| Data received | Next value<br/>Session<br/>Index = 1<br/>Include Repeats | Next value<br/>Session<br/>Index = 1<br/>NOT Include Repeats | Previous value<br/>Session<br/>Index = 1<br/>Include Repeats | Previous value<br/>Session<br/>Index = 1<br/>NOT Include Repeats |
+|---|---|---|---|---|
+| home | home | search | *No value* | *No value* |
+| home | home | search | home | *No value* |
+| home | search | search | home | *No value* |
+| search | search | product detail | home | home |
+| &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+| search | search | product detail | search | home |
+| search | product detail | product detail | search | home |
+| product detail | *No value* | *No value* | search | search |
+| &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+
+{style="table-layout:auto"}
+
+### Derived field {#prevnext-uc1-derivedfield}
+
+You define a `Next Value` or `Previous value` derived field. You use the [!UICONTROL NEXT OR PREVIOUS] function to define a rule that selects the [!UICONTROL Data received] field, select [!UICONTROL Next value] or [!UICONTROL Previous value] as [!UICONTROL Method], [!UICONTROL Session] as Scope and set the value of [!UICONTROL Index] to `1`.
+
+![Screenshot of the Merge Fields rule](assets/prevnext-next.png)
+
+## More information {#prevnext-moreinfo}
+
+You can only select fields that belong to the Visit or Event table.
+
+[!UICONTROL Include repeats] determines how to handle repeating values for the [!UICONTROL NEXT OR PREVIOUS] function. 
+
+- Include repeats looks and the next or previous values. If [!UICONTROL Include Repeats] is selected, it will ignore any sequential repeats of next or previous values from the current hit.
+
+- Rows with no (blank) values for a selected field will not have next or previous values returned as part of the [!UICONTROL NEXT OR PREVIOUS] function output.
+
++++
 
 <!-- REGEX REPLACE -->
 
