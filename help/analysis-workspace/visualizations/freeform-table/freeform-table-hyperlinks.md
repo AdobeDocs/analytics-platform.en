@@ -16,15 +16,11 @@ This functionality is particularly useful when adding hyperlinks to the followin
 
 * Dimension items or breakdowns that have values that are part of a URL that you want to link to (for example, a Page Name dimension that is part of a URL)
 
-To add hyperlinks to one or more dimension items:
+## Add hyperlinks to one or more dimension items
 
 1. In a freeform table in Analysis Workspace, do one of the following:
 
    * **Add a hyperlink to a single dimension item:** Right-click the dimension item within the table where you want to add the hyperlink.
-
-   <!-- add screenshot -->
-   
-   * **Add hyperlinks to multiple dimension items:** Select the dimension items within the table where you want to add the hyperlinks (hold the Shift or Ctrl key to select multiple items), then right-click one of the selected items.
 
    <!-- add screenshot -->
 
