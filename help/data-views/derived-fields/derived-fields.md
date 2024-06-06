@@ -429,7 +429,7 @@ In case your site receives the following sample events, containing [!UICONTROL R
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` |  | 
+| `https://google.com` | |
 
 {style="table-layout:auto"}
 
@@ -996,6 +996,85 @@ You define a `Product Names` derived field. You use the [!UICONTROL LOWERCASE] f
 
 +++
 
+<!-- MATH -->
+
+### Math
+
+Use basic mathematical operators (add, subtract, multiply, divide & raise to a power) on numeric fields.
+
++++ Details
+
+## Specification {#math-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>Numeric</li></ul> | <ul><li>One or multiple numeric fields</li><li>One or multiple operators (add, subtract, multiply, divide, raise to a power)</li><li>User input value</li></ul> | <ul><li>`+` (add)</li><li>`-` (subtract)</li><li>`*` (multiply)</li><li>`/` (divide)</li><li>`^` (raise to power)</li></ul> | <ul><li>25 operations per derived field</li><li>5 Math functions per derived field</li></ul> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+## Use case {#math-uc}
+
+Due to inflation you want to correct the revenue numbers of ingested CRM data  with 5% inflation.
+
+### Data before {#math-uc-databefore}
+
+| CRM ID | Annual Revenue |
+|---|---:|
+| 1234 | 35,070,000 |
+| 4133 | 7,500,000 |
+| 8110 | 10,980 |
+| 2201 | 42,620 |
+
+{style="table-layout:auto"}
+
+### Derived field {#math-uc-derivedfield}
+
+You define a `Corrected Annual Revenue` derived field. You use the [!UICONTROL MATH] function to define a rule that multiplies the original Annual Revenu number with 1.05. 
+
+![Screenshot of the Math rule](assets/math.png)
+
+
+### Data after {#math-uc-dataafter}
+
+| CRM ID | Corrected Annual Revenue |
+|---|---:|
+| 1234 | 36,823,500 |
+| 4133 | 7,875,000 |
+| 8110 | 11,529,00 |
+| 2201 | 44,751 |
+
+{style="table-layout:auto"}
+
+## More info {#math-more-info}
+
+To create a formula: 
+
+1. Simply start typing in the Formula field and numeric fields that match what you type will appear in a popup menu. Alternatively, you can drag and drop a numeric field from the available fields in the left pane.
+  ![Math More Info 1](assets/math-more-info-1.png)
+
+1. Add the operand (for example `*` to multiply)  followed by another field or a static value. You can use parenthesis to define more complex formulas.
+
+1. To insert a static value (for example `1.05`), type the value and select **[!UICONTROL Add *x* as a static value]** or **[!UICONTROL Add -*x* as a negative static value]** from the popup menu.
+  ![Math More Info 2](assets/math-more-info-2.png)
+
+1. A green checkmark ![Checkmark](./assets/checkmark.svg)</span> indicates whether your math formula is valid, otherwise you will see a warning <span style="color:red">![Alert](./assets/alert.svg)</span> and the message <span style="color:#ea3829">[!UICONTROL Invalid formula expression].</span> 
+   ![Math More Info 3](assets/math-more-info-3.png)
+
+There are some important considerations when working with static numbers in the [!UICONTROL MATH] function:
+
+- Static values need to be associated with a field. For example, using the [!UICONTROL MATH] function with only static fields is not supported.
+- You cannot use the raise to power operator (`ˆ`) on a static value.
+- If you are using multiple static values in a formula, these static values should be grouped using parenthesis for the formula to be valid. For example: 
+  
+  - This formula returns an error.
+    ![Math More Info 4](assets/math-more-info-4.png)
+
+  - This formula is valid.
+    ![Math More Info 5](assets/math-more-info-5.png)
+
++++
+
+
 <!-- MERGE FIELDS -->
 
 ### Merge Fields
@@ -1538,7 +1617,9 @@ The following limitations apply to the Derived field functionality in general:
 | <p>Find & Replace</p> | <ul><li>2 Find & Replace functions per derived field</li></ul> |
 | <p>Lookup</p> | <ul><li>5 Lookup functions per derived field</li></ul> |
 | <p>Lowercase</p> | <ul><li>2 Lowercase functions per derived field</li></ul> |
+| <p>Math</p> | <ul><li>25 operations per derived field</li><li>5 Math functions per derived field</li></ul> | 
 | <p>Merge Fields</p> | <ul><li>2 Merge Fields functions per derived field</li></ul> |
+| <p>Next or Previous</p> | <ul><li>3 Next or Previous functions per derived field</li></ul> |
 | <p>Regex Replace</p> | <ul><li>1 Regex Replace function per derived field</li></ul> |
 | <p>Split</p> | <ul><li>5 Split functions per derived field</li></ul> |
 | <p>Trim</p> | <ul><li>1 Trim function per derived field</li></ul> |
