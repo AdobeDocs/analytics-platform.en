@@ -3,10 +3,11 @@ description: Learn how to add components to a project in Analysis Workspace
 title: Use components in Analysis Workspace
 feature: Components
 role: User
+exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
 ---
 # Use components in Analysis Workspace
 
-Components make up the actual data of any project in Analysis Workspace. Components consist of dimensions, metrics, segments, and date ranges. You can add components to a project by dragging them into visualizations or panels.
+Components make up the actual data of any project in Analysis Workspace. Components consist of dimensions, metrics, filters, and date ranges. You can add components to a project by dragging them into visualizations or panels.
 
 For overview information about the types of components you can add, see [Components overview](/help/components/overview.md).
 
@@ -28,9 +29,9 @@ For overview information about the types of components you can add, see [Compone
 
 1. Scroll to or search for the component you want to add, then drag it to a panel or visualization within your project. 
 
-   For example, you can drag a segment to the segment drop zone in a panel header.
+   For example, you can drag a filter to the filter drop zone in a panel header.
 
-   ![drop a segment in the drop zone](assets/filter-dropzone.png)
+   ![drop a filter in the drop zone](assets/filter-dropzone.png)
 
 1. For more detailed information, continue with one of the following sections, depending on the component type you are adding:
 
@@ -38,7 +39,7 @@ For overview information about the types of components you can add, see [Compone
 
    * [Add metrics to a project](#add-metrics-to-a-project)
 
-   * [Add segments to a project](#add-segments-to-a-project)
+   * [Add filter to a project](#add-filters-to-a-project)
 
    * [Add date ranges to a project](#add-date-ranges-to-a-project)
 
@@ -54,7 +55,7 @@ For overview information about the types of components you can add, see [Compone
 
      ![Add dimensions to a project](assets/add-dimensions.png)
    
-   * Drag one or more dimensions from the left rail onto the segment drop zone to create an ad hoc segment, as described in [Add segments to a project](#add-segments-to-a-project).
+   * Drag one or more dimensions from the left rail onto the filter drop zone to create an ad hoc filter, as described in [Add filters to a project](#add-filters-to-a-project).
 
 For more information about how to use dimensions in Analysis Workspace, see [Preview dimensions](/help/components/dimensions/view-dimensions.md), [Break down dimensions](/help/components/dimensions/t-breakdown-fa.md), and [Time-parting dimensions](/help/components/dimensions/time-parting-dimensions.md).
 
@@ -90,11 +91,11 @@ To add a filter to a project in Analysis Workspace:
 
 1. Choose one of the following methods to begin filtering your panel:
 
-   * Drag an individual filter from the left rail onto the segment drop zone.
+   * Drag an individual filter from the left rail onto the filter drop zone.
 
      ![drop a filter in the drop zone](assets/filter-dropzone.png)
 
-   * Hold the Shift or Ctrl key to select multiple segments in the left rail, then hold the Shift key as you drop them onto the segment drop zone.
+   * Hold the Shift or Ctrl key to select multiple filters in the left rail, then hold the Shift key as you drop them onto the filter drop zone.
 
      ![drop multiple filters in the drop zone](assets/filter-dropzone-multiple.png)
 
@@ -102,13 +103,13 @@ To add a filter to a project in Analysis Workspace:
      
      You can select the (x) to remove any option from the drop-down menu. If you remove the [!UICONTROL **No filter**] option, then a filter is required.
 
-   * Create ad hoc segments by dragging non-segment components onto the drop zone. This can save you the time and effort of going to the Segment Builder. Segments created in this way are automatically defined as hit-level segments. This definition can be modified by clicking the information icon (i) next to the segment, then the pencil-shaped edit icon and editing it in the Segment Builder.
+   * Create ad hoc filters by dragging non-filter components onto the drop zone. This can save you the time and effort of going to the Filter Builder. Filters created in this way are automatically defined as hit-level filters. This definition can be modified by clicking the information icon (i) next to the filter, then the pencil-shaped edit icon and editing it in the Filter Builder.
 
-     Ad hoc segments are a type of quick segment, and are local to the project. They do not show up in the left rail unless you make them public.
+     Ad hoc filters are a type of quick filter, and are local to the project. They do not show up in the left rail unless you make them public.
 
      For more information, see [Quick filters](/help/components/filters/quick-filters.md).
 
-For more information about how you can use the segment drop zone on a panel to filter your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
+For more information about how you can use the filter drop zone on a panel to filter your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
 
 ## Add date ranges to a project
 

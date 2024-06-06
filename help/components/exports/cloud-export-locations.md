@@ -124,11 +124,9 @@ For information about how to manage existing locations, including viewing, editi
 
 1. In the [!UICONTROL **Location properties**] section of the [!UICONTROL **Add location**] dialog box, specify the following information to configure a Google Cloud Platform location:
 
-    <!-- still need to update; can't create GCP account -->
-
    |Field | Function | 
    |---------|----------|
-   | [!UICONTROL **Bucket**] | The bucket within your GCP account where you want Customer Journey Analytics data to be sent. <p>Ensure that you have granted the `roles/storage.objectCreator` permission to the Principal provided by Adobe. (The Principal is provided when [configuring the Google Cloud Platform account](/help/components/exports/cloud-export-accounts.md).) <p>For information about granting permissions, see [Add a principal to a bucket-level policy](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) in the Google Cloud documentation.</p> |  
+   | [!UICONTROL **Bucket**] | The bucket within your GCP account where you want Customer Journey Analytics data to be sent. <p>Ensure that you have granted the `roles/storage.objectCreator` permission to the Principal provided by Adobe. (The Principal is provided when [configuring the Google Cloud Platform account](/help/components/exports/cloud-export-accounts.md).) <p>For information about granting permissions, see [Add a principal to a bucket-level policy](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) in the Google Cloud documentation.</p><p>If your organization is using [Organization policy constraints](https://cloud.google.com/storage/docs/org-policy-constraints) to allow only the Google Cloud Platform account in your allow list, you need the following Adobe-owned Google Cloud Platform organization ID: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |  
    | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, folder_name/ | 
 
    {style="table-layout:auto"}

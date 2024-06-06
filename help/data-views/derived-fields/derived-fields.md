@@ -154,13 +154,193 @@ To quickly create a derived field for specific use cases, function templates are
 
 ### Marketing channels
 
-This template is configured to use the [Url Parse](#dnl-url-parse) and [Case When](#dnl-case-when) functions multiple times to get appropriate values from a URL. Logic is then applied on these values to associate the URL to a specific marketing channel.
+This function template uses a collection of rules to build marketing channels.
 
 +++ Details
 
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
-![Screenshot of the Marketing channel template rule builder](assets/marketing-channel-template.png)
+![Screenshot of the Marketing channel template rule builder](assets/function-template-marketing-channel-template.png)
+
++++
+
+### Bounces
+
+This function template uses a collection of rules to identify site bounces.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Bounces rule builder](assets/function-template-bounces.png)
+
++++
+
+### Multi-Dimension Combine
+
+This function template combines two values into one.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Multi-Dimension Combine rule builder](assets/function-template-multi-dimension-combine.png)
+
++++
+
+### Friendly Dataset Name
+
+This function template provides a readable dataset name.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Friendly Dataset Name rule builder](assets/function-template-friendly-dataset-name.png)
+
++++
+
+### Page Name from URL
+
+This function template creates a simple page name.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Page Name from URL rule builder](assets/function-template-page-name-from-url.png)
+
++++
+
+### Holiday Season
+
+This function template classifies key times of the year.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Holiday Season rule builder](assets/function-template-holiday-season.png)
+
++++
+
+### Monthly Goals
+
+This function template sets custom monthly goals.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Monthly Goals rule builder](assets/function-template-monthly-goals.png)
+
++++
+
+### Get All Values in Delimited List
+
+This function template converts a limited list to an array.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Get All Values in Delimited list rule builder](assets/function-template-get-all-values-in-delimited-list.png)
+
++++
+
+### Get First Value in Delimited List
+
+This function template gets the first value in a delimited list.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Get First Value in Delimited List rule builder](assets/function-template-get-first-value-in-delimited-list.png)
+
++++
+
+### Get Last Value in Delimited List
+
+This function template gets the last value in a delimited list.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Get Last Value in Delimited List rule builder](assets/function-template-get-last-value-in-delimited-list.png)
+
++++
+
+### Domain Name
+
+This function template extracts the domain name using a regular expression.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Domain Name rule builder](assets/function-template-domain-name.png)
+
++++
+
+### Get Query String Parameter
+
+This function template extracts query string values.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Get Query String Parameter rule builder](assets/function-template-get-query-string-parameter.png)
+
++++
+
+### Transition Field
+
+This function template transitions reporting from one field to another field.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Transition Field rule builder](assets/function-template-transition-field.png)
+
++++
+
+### Simple Bot Detection
+
+This function template implements light bot identification.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Simple Bot Detection rule builder](assets/function-template-simple-bot-detection.png)
+
++++
+
+### Exit Link
+
+This function template identifies last link clicked in a session.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Exit Link rule builder](assets/function-template-exit-link.png)
+
++++
+
+### Download Link
+
+This function template flags common download links.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Download Link rule builder](assets/function-template-download-link.png)
 
 +++
 
@@ -439,13 +619,13 @@ Defines a set of values that are replaced by corresponding values in a new deriv
 
 >[!NOTE]
 >
->This function was originally named Lookup but has been renamed to Classify to accommodate a forthcoming Lookup function with different functionality.
+>This function was originally named Lookup but has been renamed to Classify to accommodate the Lookup function with different functionality.
 
 ## Specifications {#classify-io}
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>[!UICONTROL When value equals] and [!UICONTROL Replace values with]:</p><ul><li>String</li></ul><li>Show original values<ul><li>Boolean</li></ul></li></ul> | <p>N/A</p> | <p>5 functions per derived field<br/>100 rows per function</p> | <p>New derived field</p> |
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to classify]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>[!UICONTROL When value equals] and [!UICONTROL Replace values with]:</p><ul><li>String</li></ul><li>Show original values<ul><li>Boolean</li></ul></li></ul> | <p>N/A</p> | <ul><li>5 functions per derived field</li><li>200 [operators](#operators) per derived field. Every entry for [!UICONTROL When value equals original value] [!UICONTROL Replace value with New value] is considered an operation.</li></ul>| <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -1353,7 +1533,7 @@ The following limitations apply to the Derived field functionality in general:
 | Function | Limitations |
 |---|---|
 | <p>Case When</p> | <ul><li>5 Case When functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
-| <p>Classify</p> | <ul><li>5 Classify functions per derived field</li><li>100 rows per function</li></ul> |
+| <p>Classify</p> | <ul><li>5 Classify functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
 | <p>Concatenate</p> | <ul><li>2 Concatenate functions per derived field</li></ul> |
 | <p>Find & Replace</p> | <ul><li>2 Find & Replace functions per derived field</li></ul> |
 | <p>Lookup</p> | <ul><li>5 Lookup functions per derived field</li></ul> |
@@ -1373,6 +1553,12 @@ An operator in an If or Else If construct within a Case When function is the com
 As an example, the condition below uses 13 operators.
 
 ![Sample operators](assets/operators-sample.png)
+
+An operator in the Classify function is a single entry for [!UICONTROL When value equal Original value] [!UICONTROL Replace value with New value].
+
+As an example, the Classify rule below uses 3 operators.
+
+![Screenshot of the Classify rule 1](assets/classify-1.png)
 
 
 ## More information

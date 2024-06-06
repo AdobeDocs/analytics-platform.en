@@ -27,6 +27,8 @@ Once you have [created or edited one or more connections](/help/connections/crea
 
 The [!UICONTROL List] interface is the default interface for Connections. If not selected, select the **[!UICONTROL List]** tab to access the interface.
 
+![list view](assets/list-view.png)
+
 The [!UICONTROL List] interface shows a table of all connections available. You can quickly search for a connection using the Search ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
 
 The following columns or icons are available in the table.
@@ -40,7 +42,7 @@ The following columns or icons are available in the table.
 | [!UICONTROL Datasets] | Shows one or more links to the datasets that are part of the connection. You can select the dataset hyperlink to view the dataset in the connection. If more datasets are part of the selected connection, select **[!UICONTROL +*x* more]** to show a **[!UICONTROL Datasets included]** panel. This panel shows links to all datasets and an option to search for a specific dataset that is part of the connection.<p><img src="./assets/datasets-included.png" alt="Datassets included" width="400"/><p>Selecting a dataset name opens the dataset in the Experience Platform UI in a new tab. |
 | [!UICONTROL Sandbox] | Shows the [Experience Platform sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) from which this connection draws its datasets. This sandbox was selected when you first created the connection. It cannot be changed.|
 | [!UICONTROL Owner] | The person who created the connection. |
-| [!UICONTROL Import new data] | Shows the status of importing new data for datasets: <p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for how many datasets are configured to import new data, and</<p><span style="color:gray">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** for how many datasets new data import is turned off. |
+| [!UICONTROL Import new data] | Shows the status of importing new data for datasets: <p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for datasets configured to import new data, and<p><span style="color:gray">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** for datasets not configured to import new data. |
 | [!UICONTROL Date created] | The timestamp when the connection was created. |
 | [!UICONTROL Last modified] | The timestamp when the connection is last updated. |
 | [!UICONTROL Backfill data] | Shows the status for backfill data across datasets.<p><span style="color:red">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills across datasets,<p><span style="color:orange">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of processing backfills across datasets,<p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of completed backfills for datasets, and<p><span style="color:grey">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are defined for the datasets in the connection. |
@@ -141,6 +143,9 @@ The Connections details interface provides a detailed view of the status of a co
 | [!UICONTROL Data source type] | The source type of the dataset. You define the source type when creating a connection. |
 | [!UICONTROL Dataset type] | The dataset type for this dataset. Type can be [!UICONTROL Event], [!UICONTROL Lookup], or [!UICONTROL Profile]. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#configure-dataset)  |
 | Schema | The Experience Platform schema that the dataset is based on.  |
+| [!UICONTROL Import new data] | Shows the status of importing new data for the dataset: <p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** if dataset is configured to import new data, and<p><span style="color:gray">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** if dataset is configured to not import new data import. |
+| [!UICONTROL Transform data] | Shows the transformation status of applicable B2B lookup datasets. See [Transform datasets for B2B lookups](transform-datasets-b2b-lookups.md) for more information.<p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for applicable datasets enabled for transformation, <p><span style="color:gray">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** for applicable datasets not enabled for transformation, and<p>**[!UICONTROL N/A]** for all other datasets, not applicable for transformation.| 
+| [!UICONTROL Backfill data] | Shows the status of backfill data for the dataset.<p><span style="color:red">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills,<p><span style="color:orange">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of backfills processing,<p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of backfills completed, and<p><span style="color:grey">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no  backfills are configured. |
 | [!UICONTROL Import new data] | Shows the status of importing new data for the dataset: <p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** if the dataset is configured to import new data, and<p><span style="color:gray">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** if the dataset is configured not to import new data. |
 | [!UICONTROL Backfill data] | Shows the status of backfill data for the dataset.<p><span style="color:red">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills,<p><span style="color:orange">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of backfills processing,<p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of backfills completed, and<p><span style="color:grey">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are configured. |
 
@@ -164,6 +169,7 @@ When no dataset is selected in the datasets table, a panel on the right side of 
 | [!UICONTROL Data views using connection] | Lists all the data views that use this connection. |
 | [!UICONTROL Import new data] | Shows the status of importing new data for datasets: <p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for how many datasets are configured to import new data, and<p><span style="color:gray">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** for how many datasets new data import is turned off. |
 | [!UICONTROL Backfill data] | Shows the status of backfill data for datasets.<p><span style="color:red">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills across datasets,<p><span style="color:orange">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of processing backfills across datasets,<p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of completed backfills for datasets, and<p><span style="color:grey">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are defined for the datasets in the connection. |
+| Transform data | Shows the transformation status of applicable B2B lookup datasets. See [Transform datasets for B2B lookups](transform-datasets-b2b-lookups.md) for more information.<p><span style="color:green">●</span>&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for number of datasets enabled for transformation.| 
 | [!UICONTROL Created by] | Shows the name of the person who created the connection. |
 | [!UICONTROL Last modified] | Shows the timestamp of the last change to the connection. |
 | [!UICONTROL Last modified by] | Shows the person who last modified the connection. |
@@ -196,23 +202,25 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 
 The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon.
 
+![usage-view](assets/usage-view.png)
+
 Select the **[!UICONTROL Usage]** tab to access the interface.
 
-To report on usage:
+### Report on usage
 
 1. Select a **[!UICONTROL Time range]**. You can select between **[!UICONTROL Last 6 months]**, **[!UICONTROL Year to date]**, or **[!UICONTROL Last 2 Years]**.
 1. Select an **[!UICONTROL Interval]**. You can select between **[!UICONTROL Monthly]** or **[!UICONTROL Quarterly]**.
 
 For [!UICONTROL Ingested rows]:
 
-* a panel displays the total ingested rows that include all the events data across all the connections updated on every 2nd day of a month. Within the panel: 
+* A panel displays the total ingested rows that include all the events data across all the connections updated on every 2nd day of a month. Within the panel: 
   * a box displays the number of ingested rows for the last month and the change in % (indicated by <span style="color:green">▲</span> or <span style="color:c64545">▼</span>) from the previous month.
   * a line graph displays the <span style="color:53b2ad">◼︎</span> [!UICONTROL Monthly ingested rows].<br/>To see a popup that displays the number of monthly ingested rows for a month, hover over any data point in the line graph.
 
 
 For [!UICONTROL Reportable rows]:
 
-* a panel displays total reportable rows that include all the events data across all the connections updated on every 2nd day of a month. Within the panel:
+* A panel displays total reportable rows that include all the events data across all the connections updated on every 2nd day of a month. Within the panel:
   * a box displays the cumulative total number of reportable rows.
   * a box displays the total number of reportable rows for the last month and the change in % (indicated by <span style="color:green">▲</span> or <span style="color:c64545">▼</span>) from the previous month.
   * a line graph displays the <span style="color:53b2ad">◼︎</span> [!UICONTROL Monthly reportable rows].<br/>To see a popup that displays the number of cumulative reportable rows for a specific month, hover over any data point in the line graph.
