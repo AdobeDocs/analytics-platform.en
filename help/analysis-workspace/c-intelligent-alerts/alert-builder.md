@@ -10,23 +10,33 @@ role: User, Admin
 >
 >Intelligent Alerts are available to Adobe Analytics Prime and Adobe Analytics Ultimate customers only.
 
-## Access Alert Builder
+## Build alerts
 
-Access the Alert Builder in one of four ways:
+1. Begin creating an alert by accessing the alert builder. You can access the alert builder in any of the following ways:
 
-* By using the following shortcut in Analysis Workspace:
+   * Open a project in Analysis Workspace, then select **[!UICONTROL Components]** > **[!UICONTROL Create alert]**.
+   * Open a project in Analysis Workspace, then use the following shortcut:
 
-  `ctrl (or cmd) + shift + a` 
-* By going to **[!UICONTROL Workspace]** > **[!UICONTROL Components]** > **[!UICONTROL New Alert]**.
-* By selecting one or more freeform table line items, right-clicking and selecting **[!UICONTROL Create Alert from Selection]**.
+     `ctrl (or cmd) + shift + a` 
+   * Open a project in Analysis Workspace, select one or more line items in a freeform table, then right-click and select **[!UICONTROL Create alert from selection]**.
+   * In Customer Journey Analytics, select **[!UICONTROL Components]** > [!UICONTROL **Alerts**] > **[!UICONTROL Create new alert]**.
 
-## Build Alerts
+   The alert builder displays. This interface is familiar to those who have built segments or calculated metrics in Analytics:
 
-The Alert Builder interface is familiar to those who have built segments or calculated metrics in Analytics:
+   ![](assets/alert_builder.png)
 
-![](assets/alert_builder.png)
+1. Specify the following options to configure the alert:
 
-<!--Meike, I edited this table for validation -->
+   | Option | Description | 
+   |---------|----------|
+   | [!UICONTROL **Title**]  | Specify a name for the alert. The alert name might contain the name of the report or the metrics threshold. | 
+   | [!UICONTROL **Description (optional)**] |  | 
+   | [!UICONTROL **Time granularity**] | Specify when you want the metric to be checked: Hourly, Daily, Weekly, or Monthly.<p><b>Note:</b>For report suites with a custom calendar, we do not support monthly granularity in the Alert Builder.</p> | 
+   | [!UICONTROL **Recipients**] | Specify where the alert can be sent. An alert can be sent to an Analytics user, an Analytics group, a raw email address, or to a phone number.<p><b>Important:</b>The phone number must be preceded by a "+" and a [country code](https://countrycode.org/).</p><p>The e-mail that a user would receive once an alert has been triggered looks similar to this:</p><p>![](assets/alerts-email.PNG)</p> | 
+   | [!UICONTROL **Expiration date**] | Set the alert's expiration date. | 
+   | [!UICONTROL **Send an alert when**] | B3 | 
+
+
 
 **Alert Name**
 
@@ -84,7 +94,7 @@ Set the alert's expiration date.
 
 You can add AND or OR rules by clicking the gear icon.
 
-## Preview Alerts {#section_10D75BA7B77E4C5FAF58A719C082E070}
+## Preview alerts {#section_10D75BA7B77E4C5FAF58A719C082E070}
 
 The interactive alert preview shows you how often, approximately, an alert will fire based on past experience.
 
