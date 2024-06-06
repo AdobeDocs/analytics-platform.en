@@ -17,6 +17,24 @@ Get a glimpse of the newest enhancements in the Customer Journey Analytics produ
 
 >[!BEGINTABS]
 
+>[!TAB AI Assistant] 
+
+AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
+
+[![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
+
+>[!TAB B2B lookups] 
+
+As part of configuring a connection, you can transform datasets for specific B2B lookup schemas to better support person-based lookups on B2B data.
+
+[![image](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
+
+>[!TAB Derived fields] 
+
+New derived fields functions (Math, Next or Previous) and additional function templates (for example Bounces, Monthly Goals, Simple Bot Detection, and others) are available. 
+
+[![image](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
+
 >[!TAB BI extension*] 
 
 The BI extension enables SQL access to the data views that you have defined in Customer Journey Analytics. You can now use your favorite BI tool to create reporting and dashboards based on the same data views that Customer Journey Analytics users use with their Analysis Workspace projects.
@@ -35,35 +53,17 @@ Audiences that are published from Customer Journey Analytics are now available i
 
 -->
 
-
->[!TAB New documentation] 
-
-New documentation is now available on:<ul><li>How to upgrade from Adobe Analytics to Customer Journey Analytics.</li><li>Data export use cases and the required Experience Platform and Customer Journey functionalities. </li></ul>Select **[!UICONTROL Learn more]** for this and other documentation updates.
-
-[![image](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
-
 >[!TAB Forecasting] 
 
 Forecasting is an Analysis Workspace feature to forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly). Forecasting is available for time-series related data only.
 
 [![image](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
 
->[!TAB Guided Analysis* - Retention rates]
+>[!TAB New documentation] 
 
-A new view type that shows the percentage of users that return after their initial engagement within the desired date range. The horizontal axis represents the number of days since a user's initial engagement. The vertical axis represents the percentage of users who engage again.
+New documentation is now available on:<ul><li>How to upgrade from Adobe Analytics to Customer Journey Analytics.</li><li>Data export use cases and the required Experience Platform and Customer Journey functionalities. </li></ul>Select **[!UICONTROL Learn more]** for this and other documentation updates.
 
-[![image](assets/learn-more-button.svg)](/help/guided-analysis/types/retention-rates.md)
-
-<span style="color:gray">*_Guided analysis is part of Adobe Product Analytics, which is a paid add-on to Customer Journey Analytics._</span>
-
-
->[!TAB Guided Analysis* - Trendlines] 
-
-Trendline overlays are now available in the Usage view, which helps depict a clearer pattern in data. The types of trendlines available are linear, logarithmic and moving average.
-
-[![image](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
-
-<span style="color:gray">*_Guided analysis is part of Adobe Product Analytics, which is a paid add-on to Customer Journey Analytics._</span>
+[![image](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
 >[!ENDTABS]
 
