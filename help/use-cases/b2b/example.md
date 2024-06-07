@@ -14,9 +14,7 @@ This article explains how to set up, configure and report on profile (person) le
 
 ## Connection
 
-Define your connection to include all relevant B2B datasets from Experience Platform. Ensure you include and transform all relevant lookup datasets required for a typical B2B person-based reporting scenario. See [Transform B2B lookup datasets](/help/connections/transform-datasets-b2b-lookups.md) for more information.
-
-Datasets you can consider to add to your connection:
+Define your connection to include all relevant B2B datasets from Experience Platform. Datasets you can consider to add to your connection:
 
 | Dataset | Schema | Schema type | Base class | Description |
 |---|---|---|---|---|
@@ -36,7 +34,9 @@ Datasets you can consider to add to your connection:
 
 The relationship between the lookup schemas, profile schema, and event schema is defined in the B2B setup within Experience Platform. See Schemas in [Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) and [Define a many-to-one relationship between two schemas in Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) for more details. 
 
-![Relationship between B2B schemas](assets/classes.png)
+Ensure you include and transform all relevant lookup datasets required for a typical B2B person-based reporting scenario.
+
+![Relationship between B2B schemas](/help/connections/assets/b2b-schemas.svg)
 
 For each lookup dataset that you add to your connection, you must explicitly define the relationship to an event dataset using **[!UICONTROL Key]** and **[!UICONTROL Matching key]** in the **[!UICONTROL Edit dataset]** dialog. For example:
 
@@ -49,8 +49,14 @@ Four schemas are explicitly used to connect the Person schema to other relevant 
 * XDM Business Marketing List Members
 * XDM Business Campaign Members
 
-For each lookup dataset, for a schema based on such a schema class, you also enable **[!UICONTROL Transform dataset]** to ensure the data is transformed for person-based lookups. See [Transform datasets for B2B lookups](/help/connections/transform-datasets-b2b-lookups.md) for more information.
+For each dataset, based on these schemas (orange in the illustration above), enable **[!UICONTROL Transform dataset]** to ensure the data is transformed for person-based lookups. See [Transform datasets for B2B lookups](/help/connections/transform-datasets-b2b-lookups.md) for additional information.
 
+
+
+**From here on we need to modify the existing article with better examples on how to exactly configure connection, data views and then build reports... !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**
+
+
+<!--
 The table below provides an example overview of the [!UICONTROL Person ID], [!UICONTROL Key], and [!UICONTROL Matching key] values for each of the datasets.
 
 
@@ -290,6 +296,7 @@ No metric components are defined as part of this dataset.
 
 -->
 
+<!--
 ## Workspace
 
 With your components properly defined in the dataview, you can now build specific B2B reports and visualizations in your Workspace project.
@@ -297,6 +304,8 @@ With your components properly defined in the dataview, you can now build specifi
 Below is an example project that relies on the connection and data view described above. 
 
 ![Sample project](assets/sample-project.png)
+
+-->
 
 <!-- See the descriptions for each visualization for more details.
 
