@@ -31,7 +31,7 @@ As part of configuring a connection, you can transform datasets for specific B2B
 
 >[!TAB Derived fields] 
 
-New derived fields functions (Math, Next or Previous) and additional function templates (for example Bounces, Monthly Goals, Simple Bot Detection, and others) are available. 
+New derived field functions (Math, Next or Previous) and additional function templates (like Bounces, Friendly Dataset Name, Holiday Season, Monthly Goals, Simple Bot Detection, and others) are now available.. 
 
 [![image](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
@@ -61,7 +61,7 @@ Forecasting is an Analysis Workspace feature to forecast a standard or calculate
 
 >[!TAB New documentation] 
 
-New documentation is now available on:<ul><li>How to upgrade from Adobe Analytics to Customer Journey Analytics.</li><li>Data export use cases and the required Experience Platform and Customer Journey functionalities. </li></ul>Select **[!UICONTROL Learn more]** for this and other documentation updates.
+New documentation sections are now available on:<ul><li>How to upgrade from Adobe Analytics to Customer Journey Analytics.</li><li>Data export use cases and the required Experience Platform and Customer Journey functionalities. </li></ul>Select **[!UICONTROL Learn more]** for this and other documentation updates.
 
 [![image](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
@@ -99,11 +99,12 @@ Start by reading the material in the links below to familiarize yourself with Cu
     </tr>
 </table>
 
+
 ## Explore the documentation
 
 Understand how Customer Journey Analytics compares to Adobe Analytics. And how to get your data in the solution and then prepare, view, analyze, and democratize that data and the resulting analysis and reports.
 
-<table style="table-layout:auto">
+<table style="table-layout:fixed">
   <tr style="border: 0;">
     <td>
       <img src="./assets/analytics.svg" width="35px"><br/>
@@ -139,11 +140,12 @@ Understand how Customer Journey Analytics compares to Adobe Analytics. And how t
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics product description</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics (Customer Journey Analytics add-on) product description</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics APIs</a>
+<a href="https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics product description</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics (Customer Journey Analytics add-on) product description</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics APIs</a> - <a href="/help/ai-assistant.md">AI Assistant</a>
 </td>
 <td><strong>Data Ingestion</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Overview</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Mobile SDK</a> - <a href="/help/data-ingestion/batch.md">Batch</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Sources</a> - <a href="/help/data-ingestion/serverapi.md">Server API</a>
 </td>
-</tr></table>
+</tr>
+</table>
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>

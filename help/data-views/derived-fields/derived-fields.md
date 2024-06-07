@@ -1029,7 +1029,7 @@ Due to inflation you want to correct the revenue numbers of ingested CRM data  w
 
 ### Derived field {#math-uc-derivedfield}
 
-You define a `Corrected Annual Revenue` derived field. You use the [!UICONTROL MATH] function to define a rule that multiplies the original Annual Revenu number with 1.05. 
+You define a `Corrected Annual Revenue` derived field. You use the [!UICONTROL MATH] function to define a rule that multiplies the original Annual Revenue number with 1.05. 
 
 ![Screenshot of the Math rule](assets/math.png)
 
