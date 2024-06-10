@@ -1402,6 +1402,70 @@ You create a `Second Response` derived field to take the last value  from the [!
 
 +++
 
+<!-- SUMMARIZE -->
+
+### Summarize
+
+Applies aggregation-type functions to metrics or dimensions at event, session, and user levels.
+
++++ Details
+
+## Specification {#summarize-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>Value<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>Summarize methods</li><li>Scope<ul><li>Event</li><li>Session</li><li>Person</li></ul></li></ul> | <ul><li>Numeric<ul><li>MAX - return largest value from a set of values</li><li>MIN - returns smallest value from a set of values</li><li>MEDIAN - returns median for a set of values</li><li>MEAN - returns average for a set of values</li><li>SUM - returns the sum for a set of values</li><li>COUNT - returns the number of values received</li><li>DISTINCT - returns set of distinct values</li></ul></li><li>Strings<ul><li>DISTINCT - returns set of distinct values</li><li>COUNT DISTINCT - returns the number of distinct values</li><li>MOST COMMON - returns the string value most often received</li><li>LEAST COMMON - returns the string value least often received</li><li>FIRST - The first value received; only applicable for the session &amp; event tables</li><li>LAST- The last value received; only applicable for the session &amp; event tables</li></ul></li><li>Dates<ul><li>DISTINCT - returns set of distinct values</li><li>COUNT DISTINCT - returns the number of distinct values</li><li>MOST COMMON - returns the string value most often received</li><li>LEAST COMMON - returns the string value least often received</li><li>FIRST - The first value received; only applicable for the session &amp; event tables</li><li>LAST- The last value received; only applicable for the session &amp; event tables</li><li>EARLIEST - The earliest value received (determined by time); only applicable for the session &amp; event tables</li><li>LATEST - The latest value received (determined by time); only applicable for the session &amp; event tables</li></ul></li></ul> | 3 function per derived field | New derived field | 
+
+{style="table-layout:auto"}
+
+## Use case {#summarize-uc}
+
+You would like to categorize Add to Cart Revenue into three different categories: Small Carts, Medium Carts, and Large Carts. This allows you to analyze and identify the characteristics of high-value customers.
+
+### Data before {#summarize-uc-databefore}
+
+Assumptions:
+
+- Add to Cart Revenue is collected as a numeric field.
+
+Scenarios:
+
+- CustomerABC123 adds $35 to their cart for ProductABC, then separately adds ProductDEF to their cart for $75.
+- CustomerDEF456 adds $50 to their cart for ProductGHI, then separately adds ProductJKL to their cart for $275.
+- CustomerGHI789 adds $500 to their cart for ProductMNO.
+
+Logic:
+
+- If Total Add to Cart Revenue for a visitor is less than $150, set to Small.
+- If Total Add to Cart Revenue for a visitor is greater than $150, but less than $500, set to Medium.
+- If Total Add to Cart Revenue for a visitor is greater than or equal to $500, set to Large.
+
+Results:
+
+- Total Add to Cart Revenue for $110 for CustomerABC123.
+- Total Add to Cart Revenue for $325 for CustomerDEF456.
+- Total Add to Cart Revenue for $500 for CustomerGHI789.
+
+### Derived field {#summarize-uc-derivedfield}
+
+T.b.d.
+
+<!--
+![Screenshot of the Summarize rule 1](assets/trim-1.png)
+-->
+
+
+### Data after {#summarize-uc-dataafter}
+
+| Add To Cart Revenue Size | Visitors |
+|---|--:|
+| Small | 1 |
+| Medium | 1 |
+| Large | 1 |
+
+{style="table-layout:auto"}
+
++++
 
 <!-- TRIM -->
 
@@ -1417,7 +1481,6 @@ Trims whitespace, special characters, or number of characters from either the be
 |---|---|---|---|---|
 | <ul><li>String</li></ul> | <ul><li>[!UICONTROL Field]<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>Trim whitespace</li><li>Trim special characters<ul><li>Input of special characters</li></ul></li><li>Trim from left<ul><li>From&nbsp;<ul><li>String start</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li></ul></li><li>To<ul><li>String end</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li><li>Length</li></ul></li></ul></li><li>Trim from right<ul><li>From&nbsp;<ul><li>String end</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li></ul></li><li>To<ul><li>String start</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li><li>Length</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>1 function per derived field</p> | <p>New derived field</p> |
 
-{style="table-layout:auto"}
 
 ## Use case 1 {#trim-uc1}
 
