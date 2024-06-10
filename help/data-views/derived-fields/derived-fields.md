@@ -435,7 +435,7 @@ In case your site receives the following sample events, containing [!UICONTROL R
 
 ### Derived field {#casewhen-uc1-derivedfield}
 
-You define a new `Marketing Channel` derived field. You use the [!UICONTROL CASE WHEN] functions to define rules that create values for the based on existing values for both the `Page URL` and `Referring URL` field.
+You define a `Marketing Channel` derived field. You use the [!UICONTROL CASE WHEN] functions to define rules that create values for the based on existing values for both the `Page URL` and `Referring URL` field.
 
 Note the usage of the function [!UICONTROL URL PARSE] to define rules to fetch the values for `Page Url` and `Referring Url` before the [!UICONTROL CASE WHEN] rules are applied.
 
@@ -808,7 +808,7 @@ The desired report should look like:
 
 ### Derived field {#concatenate-derivedfield}
 
-You define a new [!UICONTROL Origin - Destination] derived field. You use the [!UICONTROL CONCATENATE] function to define a rule to concatenate the [!UICONTROL Original] and [!UICONTROL Destination] fields using the `-` [!UICONTROL Delimiter].
+You define an `Origin - Destination` derived field. You use the [!UICONTROL CONCATENATE] function to define a rule to concatenate the [!UICONTROL Original] and [!UICONTROL Destination] fields using the `-` [!UICONTROL Delimiter].
 
 ![Screenshot of the Concatenate rule](assets/concatenate.png)
 
@@ -821,6 +821,90 @@ You define a new [!UICONTROL Origin - Destination] derived field. You use the [!
 | SLC-SEA |
 | SLC-SJO |
 | SLC-MCO |
+
+{style="table-layout:auto"}
+
++++
+
+
+<!-- DEDUPLICATE -->
+
+### Deduplicate
+
+Prevents counting a value multiple times.
+
++++ Details
+
+## Specifications {#deduplicate-io}
+
+| Input Data Type | Input | Included Operators | Limitations | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li></ul> | <ul><li>[!UICONTROL Value]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul></li><li>[!UICONTROL Scope]:<ul><li>Person</li><li>Session</li></ul></li><li>[!UICONTROL Deduplication ID]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul><li>[!UICONTROL Value to keep]:<ul><li>Keep first instance</li><li>Keep last instance</li></ul></li></ul> | <p>N/A</p>| <p>5 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+
+## Use case 1 {#deduplicate-uc1}
+
+You want to prevent counting duplicate revenue when a user reloads the booking confirmation page. You use the booking confirmation ID at the identifier to not count the revenue again, when received on the same event.
+
+### Data before {#deduplicate-uc1-databefore}
+
+| Booking Confirmation ID | Revenue |
+|----|---:|
+| ABC123456789 | 359 |
+| ABC123456789 | 359 |
+| ABC123456789 | 359 |
+
+{style="table-layout:auto"}
+
+### Derived field {#deduplicate-uc1-derivedfield}
+
+You define a `Booking Confirmation` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Value] [!DNL Booking] for [!UICONTROL Scope] [!DNL Person] using [!UICONTROL Deduplication ID] [!UICONTROL Booking Confirmation ID]. You select [!UICONTROL Keep first instance] as [!UICONTROL Value to keep].
+
+![Screenshot of the Concatenate rule](assets/deduplicate-1.png)
+
+### Data after {#deduplicate-uc1-dataafter}
+
+| Booking Confirmation ID | Revenue |
+|----|---:|
+| ABC123456789 | 359 |
+| ABC123456789 | 0 |
+| ABC123456789 | 0 |
+
+{style="table-layout:auto"}
+
+## Use case 2 {#deduplicate-uc2}
+
+You use events as a proxy for campaign click-throughs with external marketing campaigns. Reloads & redirects are causing the event metric to be inflated. You would like to deduplicate the tracking code dimension so only the first is collected and minimize the event overcounting.
+
+### Data before {#deduplicate-uc2-databefore}
+
+| Visitor ID | Marketing Channel | Events |
+|----|---|---:|
+| ABC123 | paid search | 1 |
+| ABC123 | paid search | 1 |
+| ABC123 | paid search | 1 |
+| DEF123 | email | 1 |
+| DEF123 | email | 1 |
+| JKL123 | natural search | 1 |
+| JKL123 | natural search | 1 |
+
+{style="table-layout:auto"}
+
+### Derived field {#deduplicate-uc2-derivedfield}
+
+You define a new `Tracking Code (deduplicated)` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Tracking Code] with a [!UICONTROL Deduplication scope] of [!UICONTROL Session] and [!UICONTROL Keep first instance] as the [!UICONTROL Value to keep].
+
+![Screenshot of the Concatenate rule](assets/deduplicate-2.png)
+
+### Data after {#deduplicate-uc2-dataafter}
+
+| Visitor ID | Marketing Channel | Events |
+|----|---|---:|
+| ABC123 | paid search | 1 |
+| DEF123 | email | 1 |
+| JKL123 | natural search | 1 |
 
 {style="table-layout:auto"}
 
