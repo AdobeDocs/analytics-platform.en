@@ -30,19 +30,21 @@ To create hyperlinks for one or more dimension items:
 
 1. In a freeform table in Analysis Workspace, do one of the following:
 
-   * **Create a hyperlink for a single dimension item:** Right-click the dimension item within the table where you want to create the hyperlink.
+   * **Create a hyperlink for a single dimension item:** Right-click the dimension item within the table for which you want to create the hyperlink, then select [!UICONTROL **Create hyperlink**].
 
      ![Create hyperlink for a single dimension item](assets/hyperlink-single-add.png)
 
-   * **Create hyperlinks for all dimension items in a dimension column:** Right-click the dimension name in the dimension column header.
+     The [!UICONTROL **Create hyperlink for dimension item: *dimension_name***] dialog is displayed. The name of the dimension item for which you are creating a hyperlink is listed in the dialog title. 
+
+     ![Create hyperlinks dialog](assets/table-hyperlinks-default.png)
+
+   * **Create hyperlinks for all dimension items in a dimension column:** Right-click the dimension name in the dimension column header, then select [!UICONTROL **Create hyperlinks**].
 
      ![Create hyperlink for a dimension](assets/hyperlink-dimension-add.png)
 
-1. Select [!UICONTROL **Create hyperlink**] from the right-click menu.
+     The [!UICONTROL **Create hyperlinks for dimension items**] dialog is displayed. 
 
-   The [!UICONTROL **Create hyperlinks for dimension items**] dialog is displayed. If you are creating a hyperlink for a single dimension item, the name of the dimension item is listed in the dialog title. 
-
-   ![Create hyperlinks dialog](assets/table-hyperlinks-default.png)
+     ![Create hyperlinks dialog](assets/table-hyperlinks-default.png)
 
 1. Choose from the following options:
 
