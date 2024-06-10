@@ -34,7 +34,7 @@ To create hyperlinks for one or more dimension items:
 
      ![Create hyperlink for a single dimension item](assets/hyperlink-single-add.png)
 
-     The [!UICONTROL **Create hyperlink for dimension item: *dimension_name***] dialog is displayed. The name of the dimension item for which you are creating a hyperlink is listed in the dialog title. 
+     The [!UICONTROL **Create hyperlink**] dialog is displayed. The name of the dimension item for which you are creating a hyperlink is shown in the dialog. 
 
      ![Create hyperlinks dialog](assets/table-hyperlinks-default.png)
 
@@ -42,7 +42,7 @@ To create hyperlinks for one or more dimension items:
 
      ![Create hyperlink for a dimension](assets/hyperlink-dimension-add.png)
 
-     The [!UICONTROL **Create hyperlinks for dimension items**] dialog is displayed. 
+     The [!UICONTROL **Create hyperlinks for all dimension items**] dialog is displayed. The name of the dimension for which you are creating a hyperlinks is shown in the dialog. 
 
      ![Create hyperlinks dialog](assets/table-hyperlinks-default.png)
 
