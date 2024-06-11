@@ -12,7 +12,7 @@ The following sections describe the key differences:
 
 ## Hourly alerts are not available in Customer Journey Analytics
 
-The main visible difference when using Intelligent Alerts in Customer Journey Analytics is that hourly alerts are not available. In Customer Journey Analytics, alerts can be configured for daily, weekly, or monthly. 
+Hourly alerts are not available in Customer Journey Analytics like they are in Adobe Analytics. In Customer Journey Analytics, alerts can be configured for daily, weekly, or monthly. 
 
 This is because of the way data is collected into Adobe Experience Platform before it is made available in Customer Journey Analytics. Data Collection into Platform is a more involved process, which cannot be reliably achieved within an hour. This makes hourly alerts impractical due to the high potential for incomplete data. For more information, see [Data collection times vary](#data-collection-times-vary).
 
