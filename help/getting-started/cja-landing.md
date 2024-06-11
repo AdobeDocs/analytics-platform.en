@@ -17,6 +17,24 @@ Get a glimpse of the newest enhancements in the Customer Journey Analytics produ
 
 >[!BEGINTABS]
 
+>[!TAB AI Assistant] 
+
+AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
+
+[![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
+
+>[!TAB B2B lookups] 
+
+As part of configuring a connection, you can transform datasets for specific B2B lookup schemas to better support person-based lookups on B2B data.
+
+[![image](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
+
+>[!TAB Derived fields] 
+
+New derived field functions (Math, Next or Previous) and additional function templates (like Bounces, Friendly Dataset Name, Holiday Season, Monthly Goals, Simple Bot Detection, and others) are now available.. 
+
+[![image](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
+
 >[!TAB BI extension*] 
 
 The BI extension enables SQL access to the data views that you have defined in Customer Journey Analytics. You can now use your favorite BI tool to create reporting and dashboards based on the same data views that Customer Journey Analytics users use with their Analysis Workspace projects.
@@ -35,35 +53,17 @@ Audiences that are published from Customer Journey Analytics are now available i
 
 -->
 
-
->[!TAB New documentation] 
-
-New documentation is now available on:<ul><li>How to upgrade from Adobe Analytics to Customer Journey Analytics.</li><li>Data export use cases and the required Experience Platform and Customer Journey functionalities. </li></ul>Select **[!UICONTROL Learn more]** for this and other documentation updates.
-
-[![image](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
-
 >[!TAB Forecasting] 
 
 Forecasting is an Analysis Workspace feature to forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly). Forecasting is available for time-series related data only.
 
 [![image](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
 
->[!TAB Guided Analysis* - Retention rates]
+>[!TAB New documentation] 
 
-A new view type that shows the percentage of users that return after their initial engagement within the desired date range. The horizontal axis represents the number of days since a user's initial engagement. The vertical axis represents the percentage of users who engage again.
+New documentation sections are now available on:<ul><li>How to upgrade from Adobe Analytics to Customer Journey Analytics.</li><li>Data export use cases and the required Experience Platform and Customer Journey functionalities. </li></ul>Select **[!UICONTROL Learn more]** for this and other documentation updates.
 
-[![image](assets/learn-more-button.svg)](/help/guided-analysis/types/retention-rates.md)
-
-<span style="color:gray">*_Guided analysis is part of Adobe Product Analytics, which is a paid add-on to Customer Journey Analytics._</span>
-
-
->[!TAB Guided Analysis* - Trendlines] 
-
-Trendline overlays are now available in the Usage view, which helps depict a clearer pattern in data. The types of trendlines available are linear, logarithmic and moving average.
-
-[![image](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
-
-<span style="color:gray">*_Guided analysis is part of Adobe Product Analytics, which is a paid add-on to Customer Journey Analytics._</span>
+[![image](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
 >[!ENDTABS]
 
@@ -99,11 +99,12 @@ Start by reading the material in the links below to familiarize yourself with Cu
     </tr>
 </table>
 
+
 ## Explore the documentation
 
 Understand how Customer Journey Analytics compares to Adobe Analytics. And how to get your data in the solution and then prepare, view, analyze, and democratize that data and the resulting analysis and reports.
 
-<table style="table-layout:auto">
+<table style="table-layout:fixed">
   <tr style="border: 0;">
     <td>
       <img src="./assets/analytics.svg" width="35px"><br/>
@@ -139,11 +140,12 @@ Understand how Customer Journey Analytics compares to Adobe Analytics. And how t
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics product description</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics (Customer Journey Analytics add-on) product description</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics APIs</a>
+<a href="https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics product description</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics (Customer Journey Analytics add-on) product description</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics APIs</a> - <a href="/help/ai-assistant.md">AI Assistant</a>
 </td>
 <td><strong>Data Ingestion</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Overview</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Mobile SDK</a> - <a href="/help/data-ingestion/batch.md">Batch</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Sources</a> - <a href="/help/data-ingestion/serverapi.md">Server API</a>
 </td>
-</tr></table>
+</tr>
+</table>
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>

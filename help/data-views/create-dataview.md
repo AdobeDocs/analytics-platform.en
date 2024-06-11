@@ -39,6 +39,7 @@ Provides overarching settings for the data view.
 | --- | --- |
 | [!UICONTROL Connection] | This field links the data view to the connection that you established earlier, which contains one or more Adobe Experience Platform datasets. |
 | [!UICONTROL Name] | Required. The name of the data view. This value appears in the top-right drop-down list in Analysis Workspace. |
+| [!UICONTROL External ID] | Required. The name of data view you can use in external sources, such as business intelligence tools. Default is `unspecified`. If you do not specify an external ID, the name will be generated from the Name of the data view, replacing spaces with underscores. |
 | [!UICONTROL Description] | Optional. Adobe recommends a detailed description so that users understand why the data view exists and who it is designed for. |
 
 {style="table-layout:auto"}
