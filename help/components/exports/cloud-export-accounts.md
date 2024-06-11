@@ -19,15 +19,28 @@ For information about how to manage existing accounts, including viewing, editin
 1. Make sure you meet the [minimum requirements](/help/analysis-workspace/export/export-cloud.md#minimum-requirements) for exporting reports to the cloud.
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 1. On the [!UICONTROL Exports] page, select the [!UICONTROL **Location accounts**] tab.
-1. Select [!UICONTROL **Add account**]. 
 
    ![Exports page options showing Add another account](assets/account-add.png)
+
+1. Select [!UICONTROL **Add account**]. 
    
    The Add account dialog displays.
 
 1. In the [!UICONTROL **Location account name**] field, specify a name for the location account. This name appears when creating a location.
 
 1. In the [!UICONTROL **Location account description**] field, provide a short description of the account to help differentiate it from other accounts of the same account type.
+
+1. Enable the option to [!UICONTROL **Make account available to all users in your organization**] if you want to allow other users in your organization to use the account. 
+
+   Consider the following when sharing accounts:
+   
+   * Accounts that you share cannot be unshared.
+   
+   * Shared accounts can be edited only by the owner of the account.
+   
+   * Anyone can create a location for the shared account.
+
+   **Note:** This functionality is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md). 
 
 1. In the [!UICONTROL **Account type**] field, select the type of cloud account you are exporting to. Available account types are Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake, and AEP Data Landing Zone.
 
