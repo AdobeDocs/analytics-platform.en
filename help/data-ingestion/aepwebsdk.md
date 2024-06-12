@@ -274,21 +274,7 @@ To create and configure the Adobe Experience Platform Web SDK extension:
 
 See [Configure the Adobe Experience Platform Web SDK extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html) for more information.
 
-You also want to set up the Experience Cloud ID Service extension so you can easily use of the Experience Cloud ID. The Experience Cloud ID Service identifies persons across all Adobe Experience Cloud solutions.
-
-To create and configure the Experience Cloud ID Service extension:
-
-1. Select **[!UICONTROL Extensions]** in the left rail.
-
-2. Select **[!UICONTROL Catalog]** in the top bar.
-
-3. Search for or scroll to the Experience Cloud ID Service extension, and select **[!UICONTROL Install]** to install it.
-
-   <img src="./assets/ecid-extension.png" width="35%"/>
-
-4. Leave all configurations at their default.
-
-5. Select **[!UICONTROL Save]**.
+The Web SDK includes the [!UICONTROL Adobe Experience Cloud ID Service] natively, so you do not need to add the ID service extension to your tag.
 
 #### **Data Elements**
 

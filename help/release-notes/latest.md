@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (June 2024)
 
-**Last update**: June 11, 2024
+**Last update**: June 12, 2024
 
 These release notes cover the release period of June 6, 2024 through July 2024. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -28,6 +28,7 @@ These release notes cover the release period of June 6, 2024 through July 2024. 
 | **Table of contents for Workspace projects** | A new table of contents is now available for projects. The table of contents provides links that enable users to quickly jump to panels and visualizations within the project. The table of contents can be enabled for individual projects or for all projects for a given user.<p>(Documentation link to follow.)<!---For more information, see "Display the project table of contents" in "Create projects".---> |  | June 19, 2024 |
 | **Create hyperlinks for dimension items in a freeform table** |<ul><li>You can create hyperlinks for one or more dimension items to make them clickable within a freeform table in Analysis Workspace. </li><li>You can create hyperlinks for dimension items that have URL values, or you can create custom URLs for dimension items that have non-URL values.</li><li>You can create dynamic custom URLs for multiple dimension items by using variables. Variables can reference the value of a dimension item or they can reference the breakdown dimension.</li></ul>(Documentation link to follow.)<!---For more information, see "Add hyperlinks to dimensions in a freeform table."---> |  | June 19, 2024 |
 |**Audiences are published to a new "Audiences" section in Experience Platform** | Audiences that are published from Customer Journey Analytics are now available in the new "Audiences" section in Adobe Experience Platform.<p>Previously, audiences that were published from Customer Journey Analytics were available in Experience Platform under the "Segments" section.</p><p>This improvement provides the following benefits:</p><ul><li>Audiences no longer have a 1-hour delay before they appear in Experience Platform; they are available seconds after they are published.</li><li>Audiences can be sorted in Experience Platform by using the "Origin" column, which displays the application from which the audience was originally published.</li><li>Filter and sort options in Experience Platform enable you to more quickly find the relevant audiences.</li></ul> <p>(Documentation link to follow)</p>|  | July 14, 2024 |
+
 
 {style="table-layout:auto"}
 
