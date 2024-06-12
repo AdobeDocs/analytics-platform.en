@@ -20,9 +20,13 @@ Define your connection to include all relevant B2B datasets from Experience Plat
 |---|---|---|---|---|
 | B2B Activity Dataset | B2B Activity Schema | Event | XDM ExperienceEvent | An ExperienceEvent is a fact record of what occurred, including the point in time and identity of the individual involved. ExperienceEvents can be either explicit (directly observable human actions) or implicit (raised without a direct human action) and are recorded without aggregation or interpretation. They are critical for time-domain analytics as they allow for observation and analysis of changes that occur in a given window of time and the comparison between multiple windows of time to track trends. |
 | B2B Person Dataset | B2B Person Schema | Profile | XDM Individual Profile | An XDM Individual Profile forms a singular representation of the attributes and interests of both identified and partially identified individuals. Less-identified profiles may contain only anonymous behavioral signals, such as browser cookies, while highly identified profiles may contain detailed personal information such as name, date of birth, location, and email address. As a profile grows, it becomes a robust repository of personal information, identification information, contact details, and communication preferences for an individual. |
-| B2B Account Person Relation Dataset | B2B Account Person Relation Schema | Lookup | XDM Business Account Person Relation | XDM Business Account Person Relation is a standard Experience Data Model (XDM) class that captures the minimum required properties of a person that is associated with a business account. |
+| B2B Account Dataset | B2B Account Schema | Lookup | XDM Business Account | An XDM Business Account is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business account. This XDM class can only be included in the profile for customers with the B2B or B2P Edition. | 
+| B2B Opportunity Dataset | B2B Opportunity Schema | Lookup | XDM Business Opportunity | XDM Business Opportunity is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business opportunity. This XDM class can only be included in the profile for customers with the B2B or B2P Edition. |
+| B2B Campaign Dataset | B2B Campaign Schema | Lookup | XDM Business Campaign | XDM Business Campaign is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business campaign. This XDM class can only be included in the profile for customers with the B2B or B2P Edition. |
+| B2B Marketing List Dataset | B2B Marketing List Schema | Lookup | XDM Business Marketing List | XDM Business Marketing List is a standard Experience Data Model (XDM) class that captures the minimum required properties of a marketing list. Marketing lists allow you to prioritize on prospect clients who are most likely to buy your product. This XDM class can only be included in the profile for customers with the B2B or B2P Edition. | 
+| B2B Account Person Relation Dataset | B2B Account Person Relation Schema  | Lookup | XDM Business Account Person Relation | XDM Business Account Person Relation is a standard Experience Data Model (XDM) class that captures the minimum required properties of a person that is associated with a business account. |
 | B2B Opportunity Person Relation Dataset | B2B Opportunity Person  Relation Schema | Lookup | XDM Business Opportunity Person Relation | XDM Business Opportunity Person Relation is a standard Experience Data Model (XDM) class that captures the minimum required properties of a person that is associated with a business opportunity. |
-| B2B Marketing List Members Dataset | B2B Marketing List Members Schema | Lookup | XDM Marketing List Members | XDM Business Marketing List Members is a standard Experience Data Model (XDM) class that describes members, persons, or contacts associated with a marketing list. |
+| B2B Marketing List Member Dataset | B2B Marketing List Member Schema | Lookup | XDM Marketing List Members | XDM Business Marketing List Members is a standard Experience Data Model (XDM) class that describes members, persons, or contacts associated with a marketing list. |
 | B2B Campaign Member Dataset | B2B Campaign Member Schema | Lookup | XDM Business Campaign Members | XDM Business Campaign Members is a standard Experience Data Model (XDM) class that describes a contact or lead associated with a business campaign. |
 <!--
 | B2B Account Dataset | B2B Account Schema | Lookup | XDM Business Account | XDM Business Account is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business account.  |
@@ -32,47 +36,40 @@ Define your connection to include all relevant B2B datasets from Experience Plat
 -->
 
 
-The relationship between the lookup schemas, profile schema, and event schema is defined in the B2B setup within Experience Platform. See Schemas in [Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) and [Define a many-to-one relationship between two schemas in Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) for more details. 
-
-Ensure you include and transform all relevant lookup datasets required for a typical B2B person-based reporting scenario.
-
-![Relationship between B2B schemas](/help/connections/assets/b2b-schemas.svg)
-
-For each lookup dataset that you add to your connection, you must explicitly define the relationship to an event dataset using **[!UICONTROL Key]** and **[!UICONTROL Matching key]** in the **[!UICONTROL Edit dataset]** dialog. For example:
-
-![Key - Matching key](assets/key-matchingkey.png)
-
-Four schemas are explicitly used to connect the Person schema to other relevant schemas: Account, Opportunity, Campaign and Marketing List. These schemas are based on the following schema classes:
-
-* XDM Business Account Person Relation
-* XDM Business Opportunity Person Relation
-* XDM Business Marketing List Members
-* XDM Business Campaign Members
-
-For each dataset, based on these schemas (orange in the illustration above), enable **[!UICONTROL Transform dataset]** to ensure the data is transformed for person-based lookups. See [Transform datasets for B2B lookups](/help/connections/transform-datasets-b2b-lookups.md) for additional information.
+The relationship between the B2B lookup schemas, profile schema, and event schema is defined in the B2B setup within Experience Platform. See Schemas in [Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) and [Define a many-to-one relationship between two schemas in Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html).
 
 
+To ensure a proper setup of a connection that support person-based lookups of your B2B data, use the following illustration for an overview and follow these steps:
 
-**From here on we need to modify the existing article with better examples on how to exactly configure connection, data views and then build reports... !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**
+![B2B schemas annotated](assets/b2b-schemas-annotated.svg)
 
+1. Add datasets from the table above to your connection.
+1. For each lookup dataset that you add to your connection, you must explicitly define the relationship to an event dataset using **[!UICONTROL Key]** and **[!UICONTROL Matching key]** in the **[!UICONTROL Edit dataset]** dialog. 
+1. For each lookup dataset tha you want to transform for person-based B2B lookups, enable **[!UICONTROL Transform dataset]** to ensure the data is transformed for person-based lookups. See [Transform datasets for B2B lookups](/help/connections/transform-datasets-b2b-lookups.md) for additional information.
 
-<!--
-The table below provides an example overview of the [!UICONTROL Person ID], [!UICONTROL Key], and [!UICONTROL Matching key] values for each of the datasets.
+   ![Key - Matching key](assets/key-matchingkey.png)
 
+   The table below provides an example overview of the [!UICONTROL Person ID], [!UICONTROL Key], and [!UICONTROL Matching key] values for each of the datasets.
 
-| Dataset | Person ID | Key | Matching key (in event dataset) |
-|---|---|---|---|
-| B2B Activity Dataset | `personKey.sourceKey` | | |
-| B2B Person Dataset | `b2b.personKey.sourceKey` | | |
-| B2B Account Person Dataset | | `personKey.sourceKey` | `personKey.sourceKey` |
-| B2B Opportunity Dataset | | `personKey.sourceKey` | `personKey.sourceKey` |
-| B2B Campaign Members Dataset | | `personKey.sourceKey` |  `personKey.sourceKey` |
-| B2B Marketing List Dataset | | `personKey.sourceKey` | `personKey.sourceKey` |
+   | Dataset | Person ID | Key | Matching key<br/>(in event dataset) |
+   |---|---|---|---| 
+   | B2B Activity Dataset | `personKey.sourceKey` | | |
+   | B2B Person Dataset | `b2b.personKey.sourceKey` | | |
+   | B2B Account Dataset | | `accountKey.sourceKey`&#10102;<br/>Source Key | `b2b.accountKey.sourceKey`&#10102;<br/>(B2B Person Dataset) | 
+   | B2B Opportunity Dataset | | `opportunityKey.sourceKey`&#10103;<br/>Source Key | `opportunityKey.sourceKey`&#10103;<br/>(B2B Opportunity Relation Dataset) | 
+   | B2B Campaign Dataset | | `campaignKey.sourceKey`&#10104;<br/>Source Key |  `campaignKey.sourceKey`&#10104;<br/>(B2B Campaign Member Dataset) | 
+   | B2B Marketing List Dataset | | `marketingListKey.sourceKey`&#10105;<br/>Source Key | `marketingListKey.sourceKey`&#10105;<br/>(B2B Marketing List Member Dataset)| 
+   | B2B Account Person Relation Dataset | | `personKey.sourceKey`&#10106;<br/>Source Key | `personKey.sourceKey`&#10106;<br/>Source Key (Event datasets) |
+   | B2B Opportunity Person Relation Dataset | | `personKey.sourceKey`&#10107;<br/>Source Key | `personKey.sourceKey`&#10107;<br/>Source Key (Event datasets) | 
+   | B2B Campaign Member Dataset | | `personKey.sourceKey`&#10108;<br/>Source Key | `personKey.sourceKey`&#10108;<br/>Source Key (Event datasets) | 
+   | B2B Marketing List Member Dataset | | `personKey.sourceKey`&#10109;<br/>Source Key | `personKey.sourceKey`&#10109;<br/>Source Key (Event datasets) |
 
 {style="table-layout:auto"}
 
 See [Add and configure datasets](../../connections/create-connection.md) for more information on how to configure settings for a dataset.
 
+
+<!--
 
 ## Data view
 
