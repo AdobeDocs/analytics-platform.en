@@ -1,16 +1,18 @@
 ---
 description: Get alerts when project components reach certain thresholds.
-title: Alert Builder (Analysis Workspace)
+title: Create alerts (Analysis Workspace)
 feature: Alerts
 role: User, Admin
 ---
-# Alert Builder
+# Create alerts
 
 >[!NOTE]
 >
 >Intelligent Alerts are available to Adobe Analytics Prime and Adobe Analytics Ultimate customers only.
 
-You create alerts by using the Alert Builder. 
+Intelligent Alerts (or just "alerts") in Customer Journey Analytics allow you to be notified immediately when abnormal events occur in your data. 
+
+For more detailed overview information about Intelligent Alerts, see [Intelligent Alerts overview](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md).
 
 To create an alert:
 
@@ -21,11 +23,13 @@ To create an alert:
 
      `ctrl (or cmd) + shift + a` 
    * Open a project in Analysis Workspace, select one or more line items in a freeform table, then right-click and select **[!UICONTROL Create alert from selection]**.
+     
+     This instantly pre-populates the alert builder to create an alert with the correct metrics and filters.
    * In Customer Journey Analytics, select **[!UICONTROL Components]** > [!UICONTROL **Alerts**] > **[!UICONTROL Create new alert]**.
 
    The alert builder displays. This interface is familiar to those who have built segments or calculated metrics in Analytics:
 
-   ![](assets/alert_builder.png)
+   ![](assets/alert-builder.png)
 
 1. Specify the following options to configure the alert:
 
@@ -36,7 +40,8 @@ To create an alert:
    | [!UICONTROL **Time granularity**] | Select how often you want the metric to be checked: Daily, Weekly, or Monthly.<p><b>Note:</b>For data views with a custom calendar, we do not support monthly granularity in the Alert Builder.<!--true?--></p> | 
    | [!UICONTROL **Recipients**] | Specify where the alert can be sent. An alert can be sent to an Analytics user, an Analytics group, a raw email address, or to a phone number.<p><b>Important:</b>The phone number must be preceded by a "+" and a [country code](https://countrycode.org/).</p><p>The e-mail that a user would receive once an alert has been triggered looks similar to this:</p><p>![](assets/alerts-email.PNG)</p> | 
    | [!UICONTROL **Expiration date**] | Set the date and time when you want the alert to expire. | 
-   | [!UICONTROL **Send an alert when**] | [!UICONTROL **Any of these metrics trigger**]: Drag and drop metrics (including calculated metrics) here to create triggers for the alert.<p>An **"incompatible components"** message appears if not all the metrics, dimensions, or segments in the alert are compatible with the currently selected data view.</p><p>Determine the threshold that the metric must exceed before an alert is set. You can set this value to a threshold and then to one of the following conditions:</p><ul><li>anomaly exists</li><li>anomaly is above expected</li><li>anomaly is below expected</li><li>is above or equals</li><li>is below or equals</li><li>changes by</li><li>You can set a threshold of 90%, 95%, 99%, 99.75%, and 99.9%.</li></ul><p>[!UICONTROL **With all of these filters**]: Drag and drop segments or dimensions to add filters. For example, adding a "Mobile Devices Only" segment would mean that the rule triggers only for mobile devices. You can add additional filters by using an AND statement. You can add AND or OR rules by clicking the gear icon.</p> | 
+   | [!UICONTROL **Send an alert when**] | [!UICONTROL **Any of these metrics trigger**]: Drag and drop metrics (including calculated metrics) here to create triggers for the alert.<p>An **"incompatible components"** message appears if not all the metrics, dimensions, or segments in the alert are compatible with the currently selected data view.</p><p>Determine the threshold that the metric must exceed before an alert is set. You can set this value to a threshold and then to one of the following conditions:</p><ul><li>anomaly exists</li><li>anomaly is above expected</li><li>anomaly is below expected</li><li>is above or equals</li><li>is below or equals</li><li>changes by</li><li>You can set a threshold of 90%, 95%, 99%, 99.75%, and 99.9%.</li></ul><p>[!UICONTROL **With all of these filters**]: Drag and drop segments or dimensions to add filters. For example, adding a "Mobile Devices Only" segment would mean that the rule triggers only for mobile devices. You can add additional filters by using an AND statement. You can add AND or OR rules by clicking the gear icon.</p><p>See [Intelligent Alerts - use cases](/help/analysis-workspace/c-intelligent-alerts/alerts-use-cases.md) for example uses cases.</p> | 
    | [!UICONTROL **Preview**] | The interactive alert preview shows you how often, approximately, an alert will fire based on past experience.<p>For example, if you set the time granularity to daily, the preview can tell you that the alert would have been triggered for a certain metric x times during the last 30 or 31 days.</p><p>If you find that too many alerts would have been triggered, you can adjust the threshold in the [Alert Manager](/help/components/c-alerts/alert-manager.md).</p><p>![](assets/alert_preview.png)</p> |
 
+1. Select [!UICONTROL **Save**].
 
