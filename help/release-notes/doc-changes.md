@@ -15,7 +15,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | --- | --- |
 | **June 2024** | |
 | AI Assistant | Added [documentation](../ai-assistant.md) on the AI Assistant for Customer Journey Analytics. |
-| Transform datasets for B2B lookups | Added documentation on how to support [person-based lookups on B2B data](/help/connections//transform-datasets-b2b-lookups.md) (including accounts, opportunities, marketing lists and campaigns), transformation of B2B lookup datasets is required.  |
+| Transform datasets for B2B lookups | Added documentation on how to support [person-based lookups on B2B data](/help/connections//transform-datasets-b2b-lookups.md) (including accounts, opportunities, marketing lists and campaigns) using transformation of B2B lookup datasets.  |
 | Derived field functions and function templates | Added documentation on the additional derived field functions ([Math](/help/data-views/derived-fields/derived-fields.md#math), [Next or Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous)) and [function templates](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **May 2024** | |
 | Target integration | Added [article to Adobe integration section](/help/integrations/cja4t.md) on how to integrate Target with Customer Journey Analytics. |
