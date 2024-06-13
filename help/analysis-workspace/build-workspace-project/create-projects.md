@@ -90,24 +90,6 @@ To add a component to a project in Analysis Workspace:
 
 1. (Optional) Share the project as described in [Save and share the project](#save-and-share-the-project).
 
-## Display a table of contents for the project
-
-You can display a table of contents within a project. This allows you to quickly jump between panels and visualizations within the project. This is especially useful when viewing larger projects that contain many panels and visualizations.
-
-The following information explains how to enable the table of contents on a single project. To enable the table of contents on all projects, update your [user preferences](/help/analysis-workspace/user-preferences.md).
-
-To enable the table of contents on a project:
-
-1. In Analysis Workspace, go to the project where you want to show the table of contents.
-
-1. Select **[!UICONTROL Project]** > **[!UICONTROL Project info & settings]**.
-
-1. Enable the option, [!UICONTROL **Show table of contents**], then select [!UICONTROL **Save**].
-
-1. In the left nav, select the table of contents icon ![toc icon](assets/toc-icon.png). 
-
-   The table of contents for the project is displayed.
-
 ## Save and share the project
 
 As you create an analysis in Analysis Workspace, your work is [automatically saved](/help/analysis-workspace/build-workspace-project/save-projects.md). 
