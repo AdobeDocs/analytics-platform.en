@@ -11,7 +11,7 @@ role: User
 The **[!UICONTROL Retention rates]** view measures how users continue to use your product over time, which can help you understand your product market fit. The analysis counts users based on two important events:
 
 * Start event: The event used to qualify users for inclusion in your analysis. 
-* Return event: The event(s) that a user must engage with to count as a returning users in your analysis.
+* Return event: The event(s) that a user must engage with to count as a returning user in your analysis.
 
 In this view, the chart's x-axis represents the time since a user's initial start event and the y-axis represents the percentage of users who engage with the return event(s). You can view both retention and churn across durations, and the durations shown can be customized through the query settings. Below the chart, a table provides aggregated data with the option to show individual cohorts, which are a group of people who did the starting event on the same date. 
 
