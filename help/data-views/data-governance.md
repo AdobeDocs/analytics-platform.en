@@ -21,10 +21,10 @@ The following labels are of special interest to Customer Journey Analytics:
 
 Labeling in itself does not mean that these data usage labels are enforced. That's what policies are used for. You can create your policies using the [Experience Platform UI](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/user-guide) or via the [Policy Service API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/api/overview) in Experience Platform.
 
-Two Adobe-defined policies are surfaced in Customer Journey Analytics and affect reporting and download/sharing:
+Two Adobe-defined policies are available in Experience Platform that can surface in Customer Journey Analytics and affect reporting and data export:
 
-* **[!UICONTROL Enforce Analytics]** policy
-* **[!UICONTROL Enforce Download]** policy
+* **[!UICONTROL Restrict usage analytics and user based measurement]** policy, using the `C8` label, and
+* **[!UICONTROL Restrict data export]** policy, using the `C12` label.
 
 ## View data labels in Customer Journey Analytics data views
 
@@ -34,13 +34,13 @@ Data labels that you or others created in Experience Platform are shown in three
 | --- | --- |
 | Info button on a schema field | Clicking this button indicates which [!UICONTROL Data Usage Labels] currently apply to a field:<p>![](assets/data-label-left.png) |
 | Right rail under [Component settings](/help/data-views/component-settings/overview.md) | Any [!UICONTROL Data Usage Labels] are listed here:<p>![](assets/data-label-right.png) |
-| Add Data Labels as a column | You can add [!UICONTROL Data Usage Labels] as a column to the [!UICONTROL Included Components] columns in data views. Just click the column selector icon and select **[!UICONTROL Data Usage Labels]**:<p>![](assets/data-label-column.png) |
+| Add Data Labels as a column | You can add [!UICONTROL Data Usage Labels] as a column to the [!UICONTROL Included Components] columns in data views. Just select the column selector icon and select **[!UICONTROL Data Usage Labels]**:<p>![](assets/data-label-column.png) |
 
 {style="table-layout:auto"}
 
 ## Filter on Data Governance labels in data views
 
-In the data views editor, click the [!UICONTROL filter] icon in the left trail and filter the data views components by **[!UICONTROL Data Governance]** and type of **[!UICONTROL Label]**:
+In the data views editor, select the [!UICONTROL filter] icon in the left trail and filter the data views components by **[!UICONTROL Data Governance]** and type of **[!UICONTROL Label]**:
 
 ![](assets/filter-labels.png)
 
@@ -48,17 +48,17 @@ Click **[!UICONTROL Apply]** to see which components have labels attached to the
 
 ## Filter on Data Governance policies in data views
 
-You can check to see if a policy (for example, one named Enforce Analytics) is turned on and whether that policy blocks the use of certain Customer Journey Analytics data view elements for analytics. 
+You can check to see if a policy (for example, a policy you created, named **[!UICONTROL Enforce Analytics]**) is turned on. And whether that policy blocks the use of certain Customer Journey Analytics data view elements for analytics or data export. 
 
-Again, click the [!UICONTROL filter] icon in the left rail and under **[!UICONTROL Data Governance]**, click **[!UICONTROL Policies]**:
+Again, select the [!UICONTROL filter] icon in the left rail and under **[!UICONTROL Data Governance]**, select **[!UICONTROL Policies]**:
 
-![Filter included components by list showing Enforce Analytics selected](assets/filter-policies.png)
+![Filter included components by list showing Restrict usage analytics and user based measurement selected](assets/filter-policies.png)
 
 Click **[!UICONTROL Apply]** to see which policies are enabled.
 
 ## How enabled policies affect data views
 
-If the **[!UICONTROL Enforce Analytics]** policy is turned on, those schema components that have certain data labels (such as C8) associated with them cannot be added to data views. 
+If one or more policies are turned on with C8 or C12 labels, those schema components that have certain data labels applied cannot be added to data views. 
 
 These components are grayed out in the left rail [!UICONTROL Schema fields] list:
 
@@ -66,7 +66,7 @@ These components are grayed out in the left rail [!UICONTROL Schema fields] list
 
 You also cannot save a data view that has blocked fields in it.
 
-Be cautious to try to apply access and data governance labels on fields or field groups in Experience Platform, for which you already have components defined in your data view. You might see this dialog.
+Be cautious to try to apply access and data governance labels (through policies) on fields or field groups in Experience Platform, for which you already have components defined in your data view. You might see this dialog.
 
 ![Violation](assets/violation.png)
 
