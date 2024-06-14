@@ -39,7 +39,7 @@ For overview information about the types of components you can add, see [Compone
 
    * [Add metrics to a project](#add-metrics-to-a-project)
 
-   * [Add filter to a project](#add-filters-to-a-project)
+   * [Add filters to a project](#add-filters-to-a-project)
 
    * [Add date ranges to a project](#add-date-ranges-to-a-project)
 
@@ -85,55 +85,29 @@ For more information about metrics, see [Calculated metrics overview](/help/comp
 
 [Filters](/help/components/filters/filters-overview.md) allow you to identify subsets of visitors based on characteristics or specific interactions.
 
-To add a filter to a project in Analysis Workspace:
+You can use filters in Analysis Workspace in any of the following ways:
 
-1. Start adding a filter to your project in Analysis Workspace, as described in [Begin adding components to a project](#begin-adding-components-to-a-project).
+### Add filters to a column in a freeform table
 
-1. Choose one of the following methods to begin filtering your panel:
+When you add filters to a column in a freeform table, the filters apply to all content within the table column.
 
-   * **Apply one or more filters to the panel simultaneously:**
-   
-     1. Drag an individual filter from the left rail onto the filter drop zone, located at the top of a panel. 
+### Break down dimensions with a filter
 
-        ![drop a filter in the drop zone](assets/filter-dropzone.png)
+You can break down dimensions and dimension items in Analysis Workspace with filters. 
 
-     1. Repeat this process to add additional filters to the panel. 
-   
-        Each filter is applied to the panel. Filters appear side by side at the top of the panel. 
+For more information, see [Break down dimensions in Workspace](/help/components/dimensions/t-breakdown-fa.md).
 
-        ![multiple filters side by side](assets/filter-multiple.png)     
+### Add filters to a panel
 
-   * **Create a drop-down menu of filters that can be applied to the panel:** 
-   
-     1. Hold the Shift or Ctrl key to select multiple filters in the left rail, then hold the Shift key as you drop them onto the filter drop zone.
+When you add filters to a panel, the filters apply to all content within the panel.
 
-        ![drop multiple filters into the drop zone](assets/filter-dropzone-multiple.png)
+For information about how you can use the filter drop zone on a panel to filter your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
 
-        This creates a drop-down menu, which allows users of the panel to choose the filter they want to apply. 
+### Use filters when creating calculated metrics
 
-        ![drop multiple filters in the drop zone](assets/filter-dropdown-multiple.png)
+In the Calculated metric builder, you can apply filters within your metric definition. 
 
-     1. Users can use the drop-down menu in any of the following ways in order to filter the panel:
-     
-        * Apply a single filter to the panel by selecting the filter from the drop-down menu.
-
-        * Apply multiple filters to the panel by selecting more than one filter from the drop-down menu. The panel is filtered to include any of the selected filters. 
-     
-        * Select the [!UICONTROL **No filter**] option to leave the panel unfiltered. 
-     
-          To require a filter on the panel, hover over the [!UICONTROL **No filter**] option, then select the (x) to remove it from the drop-down menu. 
-
-   * **Create ad hoc filters with non-filter components:**
-   
-     1. Drag non-filter components onto the drop zone. This can save you the time and effort of going to the Filter Builder. 
-     
-        Filters created in this way are automatically defined as hit-level filters. This definition can be modified by clicking the information icon (i) next to the filter, then the pencil-shaped edit icon and editing it in the Filter Builder.
-
-        Ad hoc filters are a type of quick filter, and are local to the project. They do not show up in the left rail unless you make them public.
-
-        For more information, see [Quick filters](/help/components/filters/quick-filters.md).
-
-For more information about how you can use the filter drop zone on a panel to filter your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
+For more information, see [Filtered metrics](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md).
 
 ## Add date ranges to a project
 
