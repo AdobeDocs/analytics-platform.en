@@ -587,7 +587,7 @@ You define a `Trip Duration (bucketed)` derived field. You create the following 
 | [!DNL long trip] |
 
 
-## More information
+## More information {#casewhen-more-info}
 
 Customer Journey Analytics uses a nested container structure, modeled after Adobe Experience Platform's [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) (Experience Data Model). See [Containers](../create-dataview.md#containers) and [Filter containers](../../components/filters/filters-overview.md#filter-containers) for more background information. This container model, albeit flexible by nature, imposes some constraints when using the rule builder. 
 
@@ -932,7 +932,7 @@ You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] fun
 
 ![Screenshot of the Lowercase rule](assets/lookup.png)
 
-## More info
+## More information {#lookup-more-info}
 
 You can quickly insert a [!UICONTROL Lookup] function in the rule builder, already containing one or more other functions.
 
@@ -1045,7 +1045,7 @@ You define a `Corrected Annual Revenue` derived field. You use the [!UICONTROL M
 
 {style="table-layout:auto"}
 
-## More info {#math-more-info}
+## More information {#math-more-info}
 
 To create a formula: 
 
@@ -1071,6 +1071,8 @@ There are some important considerations when working with static numbers in the 
 
   - This formula is valid.
     ![Math More Info 5](assets/math-more-info-5.png)
+
+Use the Math function for hit-level based calculations. For mathematical functionality, use the [Summarize](#summarize) function for event, session or person scope based calculations.
 
 +++
 
@@ -1260,7 +1262,7 @@ You create a `Page Identifier` derived field. You use the [!UICONTROL REGEX REPL
 | customer-journey-analytics.html |
 | adobe-experience-platform.html |
 
-## More information
+## More information {#regex-replace-more-info}
 
 Customer Journey Analytics uses a subset of the Perl regex syntax. The following expressions are supported:
 
@@ -1448,11 +1450,10 @@ Results:
 
 ### Derived field {#summarize-uc-derivedfield}
 
-T.b.d.
+You create an `Add To Cart Revenue Size` derived field. You use the [!UICONTROL SUMMARIZE] function and the [!UICONTROL Sum] [!UICONTROL Summarize method] with [!UICONTROL Scope] set to [!UICONTROL Person] to sum the values of the [!UICONTROL cart_add] field. Then you use a second [!UICONTROL CASE WHEN] rule to split the result in the tree category sizes.
 
-<!--
-![Screenshot of the Summarize rule 1](assets/trim-1.png)
--->
+![Screenshot of the Summarize rule 1](assets/summarize.png)
+
 
 
 ### Data after {#summarize-uc-dataafter}
@@ -1464,6 +1465,10 @@ T.b.d.
 | Large | 1 |
 
 {style="table-layout:auto"}
+
+## More information {#summarize-more-info}
+
+For mathematical functionality, use the Summarize function for event, session or person scope based calculations. Use the [Math](#math) function for hit-level based calculations.
 
 +++
 
@@ -1705,7 +1710,7 @@ As an example, the Classify rule below uses 3 operators.
 ![Screenshot of the Classify rule 1](assets/classify-1.png)
 
 
-## More information
+## More information {#trim-more-info}
 
 [`Trim`](#trim) and [`Lowercase`](#lowercase) are features already available in the component settings in [Data views](../component-settings/overview.md). Using Derived Fields allows you to combine these functions to do more complex data transformation directly in Customer Journey Analytics. For example, you can use `Lowercase` to remove case sensitivity in an event field, and then use [`Lookup`](#lookup) to match the new lowercase field to a lookup dataset that only has lookup keys in lowercase. Or you can use `Trim` to remove characters before setting up `Lookup` on the new field.
 
