@@ -29,7 +29,11 @@ For overview information about the types of components you can add, see [Compone
 
 1. Scroll to or search for the component you want to add, then drag it to a panel or visualization within your project. 
 
-   For example, you can drag a filter to the filter drop zone in a panel header.
+1. (Optional) Drag a component to the filter drop zone in a panel header. 
+
+   Filters apply to all content within the panel.
+
+   For information about how you can use the filter drop zone on a panel to filter your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
 
    ![drop a filter in the drop zone](assets/filter-dropzone.png)
 
@@ -56,6 +60,10 @@ For overview information about the types of components you can add, see [Compone
      ![Add dimensions to a project](assets/add-dimensions.png)
    
    * Drag one or more dimensions from the left rail onto the filter drop zone to create an ad hoc filter, as described in [Add filters to a project](#add-filters-to-a-project).
+
+1. (Optional) You can break down dimensions and dimension items in Analysis Workspace with other components. 
+
+   For more information, see [Break down dimensions in Workspace](/help/components/dimensions/t-breakdown-fa.md).
 
 For more information about how to use dimensions in Analysis Workspace, see [Preview dimensions](/help/components/dimensions/view-dimensions.md), [Break down dimensions](/help/components/dimensions/t-breakdown-fa.md), and [Time-parting dimensions](/help/components/dimensions/time-parting-dimensions.md).
 
@@ -87,21 +95,15 @@ For more information about metrics, see [Calculated metrics overview](/help/comp
 
 You can use filters in Analysis Workspace in any of the following ways:
 
-### Add filters to a column in a freeform table
-
-When you add filters to a column in a freeform table, the filters apply to all content within the table column.
-
-### Break down dimensions with a filter
-
-You can break down dimensions and dimension items in Analysis Workspace with filters. 
-
-For more information, see [Break down dimensions in Workspace](/help/components/dimensions/t-breakdown-fa.md).
-
 ### Add filters to a panel
 
 When you add filters to a panel, the filters apply to all content within the panel.
 
 For information about how you can use the filter drop zone on a panel to filter your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
+
+### Add filters to a column in a freeform table
+
+When you add filters to a column in a freeform table, the filters apply to all content within the table column.
 
 ### Use filters when creating calculated metrics
 

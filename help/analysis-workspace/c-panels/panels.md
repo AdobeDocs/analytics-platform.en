@@ -70,21 +70,22 @@ Drop-down filters can also be used to consolidate many projects into one. For ex
 
 * For drop-down filters using dimension items, select a single dimension from the left rail and drop it into the panel dropzone **while holding `[Shift]`**. This creates a drop-down filter with all the dimension items that are associated with that dimension. 
 
-  Or, if you want the drop-down filter to include only specific dimension items that are associated with a dimension, click the right arrow icon next to the desired dimension in the left rail. This action exposes all available dimension items. Select multiple dimension items from this list using [Shift + Click] or [Ctrl + Click], then drop them into the panel dropzone while holding [Shift].
+  Or, if you want the drop-down filter to include only specific dimension items that are associated with a dimension, click the right arrow icon next to the desired dimension in the left rail. This action exposes all available dimension items. Select multiple dimension items from this list using `[Shift + Click]` or `[Ctrl + Click]`, then drop them into the panel dropzone while holding `[Shift]`.
 
 * For drop-down filters using a single component type (for example, only dimensions, or only filters, or only metrics), select multiple items of the same type in the left rail using `[Shift + Click]` or `[Ctrl + Click]`, then drop them into the panel dropzone **while holding `[Shift]`**.
 
   A single drop-down filter is created with components that you selected.
 
-* For drop-down filters using a mix of component types (such as 2 metric and 3 filters), select multiple components using `[Shift + Click]` or `[Ctrl + Click]`. Drop the selection into the panel dropzone **while holding `[Shift]`**. All component types are treated as separate drop-down filters in this context. For example, if you include both metrics and dimension items in your selection, two separate drop-down filters are created. One drop-down filter includes dimension items, and the other includes metrics.
+* For drop-down filters using a mix of component types (such as 2 metrics and 3 filters), select multiple components using `[Shift + Click]` or `[Ctrl + Click]`. Drop the selection into the panel dropzone **while holding `[Shift]`**. All component types are treated as separate drop-down filters in this context. For example, if you include both metrics and dimension items in your selection, two separate drop-down filters are created: one drop-down filter includes dimension items, and the other includes metrics.
 
   ![The Panel window with the Mobile Customer segment field available to drop a static drop-down filter. ](assets/create-dropdown.png)
 
 Right-clicking a drop-down filter provides the following options:
 
+* **[!UICONTROL Delete drop-down]**: Removes the drop-down filter from the panel. 
 * **[!UICONTROL Delete label]**: Remove the text above a drop-down filter.
 * **[!UICONTROL Add label]**: When you add a drop-down filter to a project, a label is automatically set to the component name. If you delete the label, you can add it again with this option.
-* **[!UICONTROL Delete drop-down]**: Removes the drop-down filter from the panel. 
+* **[!UICONTROL Require selection]**: Requires that a filter is set on the panel. 
 
 [Watch the video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) to learn more about how to add drop-down filters to your project.
 
@@ -97,10 +98,6 @@ Users can use the drop-down menu in any of the following ways in order to filter
 * Apply multiple filters to the panel by selecting more than one filter from the drop-down menu. The panel is filtered to include any of the selected filters. 
 
   ![Select multiple filters](assets/dropdown-filter-multiselect.png)
-     
-* Select the [!UICONTROL **No filter**] option to leave the panel unfiltered. 
-     
-  To require a filter on the panel, hover over the [!UICONTROL **No filter**] option, then select the (x) to remove it from the drop-down menu. 
 
 ### Dynamic drop-down filters
 
