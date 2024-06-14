@@ -22,9 +22,13 @@ Consider the following when creating hyperlinks for dimension items:
 
 * The hyperlinks you create are stored on the freeform table within the Analysis Workspace project. Hyperlinks do not persist when using the same dimension or dimension items in another table or in another project. 
 
+* If you change the data view of the freeform table, any hyperlinks that were created for dimensions or dimension items in the table are still available, provided that the dimension exists in the data view. 
+
 * URLs are not checked for validity when you create the hyperlink. 
 
   If you create a hyperlink that has an invalid URL, or if you create a hyperlink that references a dimension item that does not have a URL value (by either referencing the dimension item directly or by using the `$value` or `$breakdown` variables), then users who click the hyperlink will see an error message stating that the URL is invalid.
+
+* Hyperlinks that are created for a single dimension item override hyperlinks that are created on the dimension.
 
 To create hyperlinks for one or more dimension items:
 
