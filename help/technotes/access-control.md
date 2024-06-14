@@ -63,6 +63,15 @@ In addition to being added as a Product Admin in the **Customer Journey Analytic
     
     For more information on Experience Platform Destinations permissions, see [Destinations overview](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html#access-controls).
 
+* Use the [BI extension](../data-views/bi-extension.md)
+  
+  For users to use the BI extension, a Product Admin
+
+  * must ensure the Experience Platform permissions for the user (or user group the user belongs to) include a role that has the Query Service resource with the Manage Queries and Manage Query Service Integration options. See [Manage permissions for a product profile](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions). 
+  * must ensure the proper Customer Journey Analytics permissions for the user (or user group the user belongs to):
+     * permission to access to the relevant data views. See Data Views in [Customer Journey Analytics permissions in Admin Console](#customer-journey-analytics-permissions-in-admin-console).
+     * permission to access the CJA BI extension. See Data View tools in [Customer Journey Analytics permissions in Admin Console](#customer-journey-analytics-permissions-in-admin-console).
+
 ## Product Profile Admin role
 
 A product profile is a set of permissions. Product Profile Admins can
@@ -143,6 +152,6 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in [Admin C
 | [!UICONTROL **Share Project Links With Anyone**] | Lets users [share projects with anyone.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html#share-public-link)  |
 | **[!UICONTROL Data View Tools]**: |   |
 | [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md).  |
-| [!UICONTROL **SQL Query Service Access**] | Lets users access [Query Service in AEP](https://experienceleague.adobe.com/docs/experience-platform/query/home.html). |
+| **[!UICONTROL [!UICONTROL CJA BI Extension]]** | Let users use the [BI extension](../data-views/bi-extension.md). |
 
 {style="table-layout:auto"}

@@ -22,19 +22,17 @@ The main benefits are:
 
 ## Prerequisites
 
-To use this functionality, you must: 
+To use this functionality, you must have: 
 
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
 
-* Configure the functionality for the relevant product profiles, user groups and/or individual users. Access requirements include:
-  * Adobe Experience Platform Query Service
-  * Workspace projects in Customer Journey Analytics
-  * Desired CJA data views to use
-  * Access to the BI extension in the data view tools
+  * Granted access to Experience Platform and Customer Journey Analytics.
+  * Granted Product admmin access to Customer Journey Analytics, so you can view/edit/update/delete connections and data views.
+  * Granted access to the data views you want to access.
+  * Granted access to the CJA BI extension.
+  * Use expiring on non-expiring credentials to connect BI tools to the [!DNL Customer Journey Analytics BI extension]. The [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) provides more information on setting expiring credentials or non-expiring credentials.
 
-* Use expiring on non-expiring credentials to connect BI tools to the [!DNL Customer Journey Analytics BI extension]. The [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) provides more information on setting expiring credentials or non-expiring credentials.
-
-See [Access Control](../technotes/access-control.md) in the Customer Journey Analytics Administration section for additional information.
+See [Customer Journey Access Control](../technotes/access-control.md) for more information, specifically the [Product Admin additional permissions](../technotes/access-control.md#product-admin-additional-permissions) and [Customer Jouney Analytics Permissions in Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
 
 ## Usage
