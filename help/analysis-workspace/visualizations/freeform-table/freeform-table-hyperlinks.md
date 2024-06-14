@@ -40,15 +40,15 @@ To create hyperlinks for one or more dimension items:
 
      The [!UICONTROL **Create hyperlink**] dialog is displayed. The name of the dimension item for which you are creating a hyperlink is shown in the dialog. 
 
-     ![Create hyperlinks dialog](assets/table-hyperlinks-default.png)
+     ![Create hyperlink for a single item dialog](assets/hyperlink-dialog-single.png)
 
-   * **Create hyperlinks for all dimension items in a dimension column:** Right-click the dimension name in the dimension column header, then select [!UICONTROL **Create hyperlinks**].
+   * **Create hyperlinks for all dimension items in a dimension column:** Right-click the dimension name in the dimension column header, then select [!UICONTROL **Create hyperlinks for all dimension items**].
 
-     ![Create hyperlink for a dimension](assets/hyperlink-dimension-add.png)
+     ![Create hyperlink for a dimension](assets/hyperlink-multiple-add.png)
 
-     The [!UICONTROL **Create hyperlinks for all dimension items**] dialog is displayed. The name of the dimension for which you are creating a hyperlinks is shown in the dialog. 
+     The [!UICONTROL **Create hyperlinks for all dimension items**] dialog is displayed. The name of the dimension for which you are creating hyperlinks is shown in the dialog. 
 
-     ![Create hyperlinks dialog](assets/table-hyperlinks-default.png)
+     ![Create hyperlinks dialog](assets/hyperlink-dialog-multiple.png)
 
 1. Choose from the following options:
 
@@ -71,7 +71,7 @@ To create hyperlinks for one or more dimension items:
 
 1. Select [!UICONTROL **Create**].
 
-   Users who view the freeform table see the hyperlinked dimension items. When clicking a dimension item, users are taken to the hyperlinked pages that you created. Hyperlinked pages are launched in a separate browser tab. <!--true?-->
+   Users who view the freeform table see the hyperlinked dimension items. When clicking a dimension item, users are taken to the hyperlinked pages in a separate browser tab. 
  
    <!-- add screenshot of a table with hyperlinks.-->
 
@@ -79,7 +79,7 @@ To create hyperlinks for one or more dimension items:
 
 ## Edit hyperlinks
 
-You can edit hyperlinks that have been created for dimension items in a freeform table. 
+You can edit hyperlinks that have been created on dimensions or dimension items in a freeform table. 
 
 1. In a freeform table in Analysis Workspace, do one of the following:
 
