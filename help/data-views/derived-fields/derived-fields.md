@@ -1072,7 +1072,7 @@ There are some important considerations when working with static numbers in the 
   - This formula is valid.
     ![Math More Info 5](assets/math-more-info-5.png)
 
-Use the Math function for hit-level based calculations. For mathematical functionality, use the [Summarize](#summarize) function for event, session or person scope based calculations.
+Use the Math function for hit-level based calculations. Use the [Summarize](#summarize) function for event, session or person scope based calculations.
 
 +++
 
@@ -1468,7 +1468,7 @@ You create an `Add To Cart Revenue Size` derived field. You use the [!UICONTROL 
 
 ## More information {#summarize-more-info}
 
-For mathematical functionality, use the Summarize function for event, session or person scope based calculations. Use the [Math](#math) function for hit-level based calculations.
+Use the Summarize function for event, session or person scope based calculations. Use the [Math](#math) function for hit-level based calculations.
 
 +++
 
