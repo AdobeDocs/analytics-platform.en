@@ -1690,6 +1690,7 @@ The following limitations apply to the Derived field functionality in general:
 | <p>Next or Previous</p> | <ul><li>3 Next or Previous functions per derived field</li></ul> |
 | <p>Regex Replace</p> | <ul><li>1 Regex Replace function per derived field</li></ul> |
 | <p>Split</p> | <ul><li>5 Split functions per derived field</li></ul> |
+| <p>Summarize</p> | <ul><li>3 Summarize functions per derived field</li></ul> |
 | <p>Trim</p> | <ul><li>1 Trim function per derived field</li></ul> |
 | <p>URL Parse</p> | <ul><li>5 URL Parse functions per derived field</li></ul> |
 
