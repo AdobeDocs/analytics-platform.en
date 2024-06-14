@@ -1422,7 +1422,7 @@ Applies aggregation-type functions to metrics or dimensions at event, session, a
 
 ## Use case {#summarize-uc}
 
-You would like to categorize Add to Cart Revenue into three different categories: Small Carts, Medium Carts, and Large Carts. This allows you to analyze and identify the characteristics of high-value customers.
+You would like to categorize Add to Cart Revenue into three different categories: Small, Medium, and Large. This allows you to analyze and identify the characteristics of high-value customers.
 
 ### Data before {#summarize-uc-databefore}
 
