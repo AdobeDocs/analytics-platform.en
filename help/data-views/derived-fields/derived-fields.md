@@ -835,7 +835,7 @@ Prevents counting a value multiple times.
 
 +++ Details
 
-{{release-limited-testing}}
+{{release-limited-testing-section}}
 
 ## Specifications {#deduplicate-io}
 
@@ -1498,7 +1498,7 @@ Applies aggregation-type functions to metrics or dimensions at event, session, a
 
 +++ Details
 
-{{release-limited-testing}}
+{{release-limited-testing-section}}
 
 ## Specification {#summarize-io}
 
