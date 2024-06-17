@@ -49,7 +49,7 @@ You can create the following dimensions in a data view to achieve approximate pa
 | --- | --- | --- |
 | Journey Name | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Component type: Dimension |
 | Journey Name & Version | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | Component type: Dimension |
-| Journey Node Name | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Component type: Dimension |
+| Journey Node Name | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeName` | Component type: Dimension |
 | Journey Node Type | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | Component type: Dimension |
 | Campaign name | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | Component type: Dimension |
 | Channel | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | Component type: Dimension |
