@@ -587,7 +587,7 @@ You define a `Trip Duration (bucketed)` derived field. You create the following 
 | [!DNL long trip] |
 
 
-## More information
+## More information {#casewhen-more-info}
 
 Customer Journey Analytics uses a nested container structure, modeled after Adobe Experience Platform's [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) (Experience Data Model). See [Containers](../create-dataview.md#containers) and [Filter containers](../../components/filters/filters-overview.md#filter-containers) for more background information. This container model, albeit flexible by nature, imposes some constraints when using the rule builder. 
 
@@ -835,6 +835,8 @@ Prevents counting a value multiple times.
 
 +++ Details
 
+{{release-limited-testing}}
+
 ## Specifications {#deduplicate-io}
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
@@ -1016,7 +1018,7 @@ You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] fun
 
 ![Screenshot of the Lowercase rule](assets/lookup.png)
 
-## More info
+## More information {#lookup-more-info}
 
 You can quickly insert a [!UICONTROL Lookup] function in the rule builder, already containing one or more other functions.
 
@@ -1129,7 +1131,7 @@ You define a `Corrected Annual Revenue` derived field. You use the [!UICONTROL M
 
 {style="table-layout:auto"}
 
-## More info {#math-more-info}
+## More information {#math-more-info}
 
 To create a formula: 
 
@@ -1155,6 +1157,8 @@ There are some important considerations when working with static numbers in the 
 
   - This formula is valid.
     ![Math More Info 5](assets/math-more-info-5.png)
+
+Use the Math function for hit-level based calculations. Use the [Summarize](#summarize) function for event, session or person scope based calculations.
 
 +++
 
@@ -1344,7 +1348,7 @@ You create a `Page Identifier` derived field. You use the [!UICONTROL REGEX REPL
 | customer-journey-analytics.html |
 | adobe-experience-platform.html |
 
-## More information
+## More information {#regex-replace-more-info}
 
 Customer Journey Analytics uses a subset of the Perl regex syntax. The following expressions are supported:
 
@@ -1486,6 +1490,75 @@ You create a `Second Response` derived field to take the last value  from the [!
 
 +++
 
+<!-- SUMMARIZE -->
+
+### Summarize
+
+Applies aggregation-type functions to metrics or dimensions at event, session, and user levels.
+
++++ Details
+
+{{release-limited-testing}}
+
+## Specification {#summarize-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>Value<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>Summarize methods</li><li>Scope<ul><li>Event</li><li>Session</li><li>Person</li></ul></li></ul> | <ul><li>Numeric<ul><li>MAX - return largest value from a set of values</li><li>MIN - returns smallest value from a set of values</li><li>MEDIAN - returns median for a set of values</li><li>MEAN - returns average for a set of values</li><li>SUM - returns the sum for a set of values</li><li>COUNT - returns the number of values received</li><li>DISTINCT - returns set of distinct values</li></ul></li><li>Strings<ul><li>DISTINCT - returns set of distinct values</li><li>COUNT DISTINCT - returns the number of distinct values</li><li>MOST COMMON - returns the string value most often received</li><li>LEAST COMMON - returns the string value least often received</li><li>FIRST - The first value received; only applicable for the session &amp; event tables</li><li>LAST- The last value received; only applicable for the session &amp; event tables</li></ul></li><li>Dates<ul><li>DISTINCT - returns set of distinct values</li><li>COUNT DISTINCT - returns the number of distinct values</li><li>MOST COMMON - returns the string value most often received</li><li>LEAST COMMON - returns the string value least often received</li><li>FIRST - The first value received; only applicable for the session &amp; event tables</li><li>LAST- The last value received; only applicable for the session &amp; event tables</li><li>EARLIEST - The earliest value received (determined by time); only applicable for the session &amp; event tables</li><li>LATEST - The latest value received (determined by time); only applicable for the session &amp; event tables</li></ul></li></ul> | 3 function per derived field | New derived field | 
+
+{style="table-layout:auto"}
+
+## Use case {#summarize-uc}
+
+You would like to categorize Add to Cart Revenue into three different categories: Small, Medium, and Large. This allows you to analyze and identify the characteristics of high-value customers.
+
+### Data before {#summarize-uc-databefore}
+
+Assumptions:
+
+- Add to Cart Revenue is collected as a numeric field.
+
+Scenarios:
+
+- CustomerABC123 adds $35 to their cart for ProductABC, then separately adds ProductDEF to their cart for $75.
+- CustomerDEF456 adds $50 to their cart for ProductGHI, then separately adds ProductJKL to their cart for $275.
+- CustomerGHI789 adds $500 to their cart for ProductMNO.
+
+Logic:
+
+- If Total Add to Cart Revenue for a visitor is less than $150, set to Small.
+- If Total Add to Cart Revenue for a visitor is greater than $150, but less than $500, set to Medium.
+- If Total Add to Cart Revenue for a visitor is greater than or equal to $500, set to Large.
+
+Results:
+
+- Total Add to Cart Revenue for $110 for CustomerABC123.
+- Total Add to Cart Revenue for $325 for CustomerDEF456.
+- Total Add to Cart Revenue for $500 for CustomerGHI789.
+
+### Derived field {#summarize-uc-derivedfield}
+
+You create an `Add To Cart Revenue Size` derived field. You use the [!UICONTROL SUMMARIZE] function and the [!UICONTROL Sum] [!UICONTROL Summarize method] with [!UICONTROL Scope] set to [!UICONTROL Person] to sum the values of the [!UICONTROL cart_add] field. Then you use a second [!UICONTROL CASE WHEN] rule to split the result in the tree category sizes.
+
+![Screenshot of the Summarize rule 1](assets/summarize.png)
+
+
+
+### Data after {#summarize-uc-dataafter}
+
+| Add To Cart Revenue Size | Visitors |
+|---|--:|
+| Small | 1 |
+| Medium | 1 |
+| Large | 1 |
+
+{style="table-layout:auto"}
+
+## More information {#summarize-more-info}
+
+Use the Summarize function for event, session or person scope based calculations. Use the [Math](#math) function for hit-level based calculations.
+
++++
 
 <!-- TRIM -->
 
@@ -1501,7 +1574,6 @@ Trims whitespace, special characters, or number of characters from either the be
 |---|---|---|---|---|
 | <ul><li>String</li></ul> | <ul><li>[!UICONTROL Field]<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>Trim whitespace</li><li>Trim special characters<ul><li>Input of special characters</li></ul></li><li>Trim from left<ul><li>From&nbsp;<ul><li>String start</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li></ul></li><li>To<ul><li>String end</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li><li>Length</li></ul></li></ul></li><li>Trim from right<ul><li>From&nbsp;<ul><li>String end</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li></ul></li><li>To<ul><li>String start</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li><li>Length</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>1 function per derived field</p> | <p>New derived field</p> |
 
-{style="table-layout:auto"}
 
 ## Use case 1 {#trim-uc1}
 
@@ -1707,6 +1779,7 @@ The following limitations apply to the Derived field functionality in general:
 | <p>Next or Previous</p> | <ul><li>3 Next or Previous functions per derived field</li></ul> |
 | <p>Regex Replace</p> | <ul><li>1 Regex Replace function per derived field</li></ul> |
 | <p>Split</p> | <ul><li>5 Split functions per derived field</li></ul> |
+| <p>Summarize</p> | <ul><li>3 Summarize functions per derived field</li></ul> |
 | <p>Trim</p> | <ul><li>1 Trim function per derived field</li></ul> |
 | <p>URL Parse</p> | <ul><li>5 URL Parse functions per derived field</li></ul> |
 
@@ -1727,7 +1800,7 @@ As an example, the Classify rule below uses 3 operators.
 ![Screenshot of the Classify rule 1](assets/classify-1.png)
 
 
-## More information
+## More information {#trim-more-info}
 
 [`Trim`](#trim) and [`Lowercase`](#lowercase) are features already available in the component settings in [Data views](../component-settings/overview.md). Using Derived Fields allows you to combine these functions to do more complex data transformation directly in Customer Journey Analytics. For example, you can use `Lowercase` to remove case sensitivity in an event field, and then use [`Lookup`](#lookup) to match the new lowercase field to a lookup dataset that only has lookup keys in lowercase. Or you can use `Trim` to remove characters before setting up `Lookup` on the new field.
 
