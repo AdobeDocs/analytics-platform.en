@@ -835,6 +835,8 @@ Prevents counting a value multiple times.
 
 +++ Details
 
+{{release-limited-testing}}
+
 ## Specifications {#deduplicate-io}
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
@@ -1495,6 +1497,8 @@ You create a `Second Response` derived field to take the last value  from the [!
 Applies aggregation-type functions to metrics or dimensions at event, session, and user levels.
 
 +++ Details
+
+{{release-limited-testing}}
 
 ## Specification {#summarize-io}
 
