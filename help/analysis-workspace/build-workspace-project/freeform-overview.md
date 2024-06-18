@@ -80,7 +80,6 @@ Settings include:
 |  Count repeat instances in project  | Specifies whether repeat instances are counted in reports. Note: this setting does not apply to Flow or Fallout visualizations.  |
 |  [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md)  | You can change the categorical color palette used in Workspace, by choosing from out-of-the-box palettes that have been optimized for color blindness, or by specifying your custom palette. This feature affects many things in Workspace, including most visualizations.  |
 | [View Density](/help/analysis-workspace/build-workspace-project/view-density.md) | Lets you see more data on the screen by reducing the vertical padding of the left rail, freeform tables and cohort tables. |
-| [Show table of contents](/help/analysis-workspace/build-workspace-project/create-projects.md#display-the-project-table-of-contents) | Select this option to display a table of contents icon in the [left rail](#left-rail). The table of contents icon launches a table of contents that provides quick links to panels and visualizations within a project.  |
 
 ## Left rail {#left-rail}
 
