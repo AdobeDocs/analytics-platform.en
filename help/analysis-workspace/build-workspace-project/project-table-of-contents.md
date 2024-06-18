@@ -1,5 +1,5 @@
 ---
-description: Overview of Workspace projects with menu bar and settings
+description: Information about the project table of contents that is available on projects
 keywords: Analysis Workspace
 title: Project table of contents
 feature: Workspace Basics
