@@ -64,7 +64,7 @@ Within a project, the menu provides options for managing your project, adding co
 
 ### Project Info & Settings {#info-settings}
 
-**[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]** provides project-level information on the currently active project.
+**[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project info & settings]** provides project-level information on the currently active project.
 
 ![The Project Info & Settings window.](assets/projectinfo.png)
 
@@ -83,11 +83,19 @@ Settings include:
 
 ## Left rail {#left-rail}
 
-Within a project, [panels](/help/analysis-workspace/c-panels/panels.md), tables, [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), and [components] are accessed from the left rail. These are your project building blocks.
+Within a project, various icons are available in the left rail, and each represents important parts of a project:
 
-You can also access visualizations and panels from the [Blank Panel](/help/analysis-workspace/c-panels/blank-panel.md) as well. 
+* [Panels](/help/analysis-workspace/c-panels/panels.md) ![panels icon](assets/panels-icon.png)
 
-Components (Dimensions, Metrics, Filters, Date Ranges) in the left rail relate to the active panel data view. The active panel will have a blue border around it, and the active data view will be listed at the top of the component rail.
+* [Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)![visualizations icon](assets/visualizations-icon.png)
+
+* [Components](/help/components/overview.md)![components icon](assets/components-icon.png)
+
+* [Data dictionary](/help/components/data-dictionary/data-dictionary-overview.md)![data dictionary icon](assets/data-dictionary-icon.png)
+
+* [Table of contents](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) ![toc icon](assets/toc-icon.png)
+
+Components (Dimensions, Metrics, Filters, Date Ranges) in the left rail relate to the active panel data view. The active panel is identified by the blue border that surrounds it, and the active data view is listed at the top of the component rail.
 
 ![The components relating to the active panel data view for Cross-Industry Demo Data data view.](assets/left-rail.png)
 
