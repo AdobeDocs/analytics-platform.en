@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: Project table of contents
 feature: Workspace Basics
 role: User
+exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
 ---
 # Project table of contents
 
@@ -17,4 +18,4 @@ To view the table of contents on a project:
 
    The table of contents for the project is displayed and is expanded.
 
-1. Click a section within the table of contents to jump to a panel or visualization within the project. 
+1. Click a section within the table of contents to jump to a panel or visualization within the project.

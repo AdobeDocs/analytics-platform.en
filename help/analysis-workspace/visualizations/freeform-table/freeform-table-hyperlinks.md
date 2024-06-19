@@ -3,6 +3,7 @@ title: Create hyperlinks in a freeform table in Analysis Workspace
 description: Learn how to create hyperlinks for dimension items in a freeform table in Analysis Workspace
 feature: Visualizations
 role: User
+exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
 ---
 # Create hyperlinks for dimensions in a freeform table
 
@@ -124,4 +125,3 @@ To remove hyperlinks from dimension items:
    The hyperlink is removed from the single dimension item (if you selected a single dimension item) or from all dimension items (if you selected the dimension name in the dimension column header).
 
 1. [Save the project](/help/analysis-workspace/build-workspace-project/save-projects.md) to save your changes.
-
