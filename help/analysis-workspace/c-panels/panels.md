@@ -83,7 +83,7 @@ Static drop-down filters can also be used to consolidate many projects into one.
 Right-clicking a drop-down filter provides the following options:
 
 * **[!UICONTROL Delete drop-down]**: Removes the drop-down filter from the panel. 
-* **[!UICONTROL Delete label]**: Remove the text above a drop-down filter. To modify the label, click the edit pencil.
+* **[!UICONTROL Delete label]**: Remove the text above a drop-down filter. To modify the label, select the pencil icon.
 * **[!UICONTROL Add label]**: When you add a drop-down filter to a project, a label is automatically set to the component name. If you delete the label, you can add it again with this option.
 * **[!UICONTROL Require selection]**: Requires that a filter is set on the panel. 
 
