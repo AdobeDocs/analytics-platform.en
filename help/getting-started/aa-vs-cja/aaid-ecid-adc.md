@@ -47,6 +47,12 @@ Within identityMap:
 Otherwise, AAID is marked as the primary identity for the event.
 * AACUSTOMID is never marked as the Primary ID for the event. However, if AACUSTOMID is present, then AAID is based on AACUSTOMID as per the discussion above.
 
+When the identity or identities are copied into `identityMap`, `endUserIDs._experience.mcid.namespace.code` is also set on the same event:
+
+* If AAID is present, `endUserIDs._experience.aaid.namespace.code` is set to "AAID".
+* If ECID is present, `endUserIDs._experience.mcid.namespace.code` is set to "ECID".
+* If AACUSTOMID is present, `endUserIDs._experience.aacustomid.namespace.code` is set to "AACUSTOMID".
+
 ## Customer Journey Analytics and Primary ID
 
 As far as Customer Journey Analytics is concerned, the definition of Primary ID is only important if you decide to use the Primary ID as the Person ID. Doing so is not mandatory, however. You may choose some other identity column as the Person ID.
