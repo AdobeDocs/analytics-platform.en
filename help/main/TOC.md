@@ -69,6 +69,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Manage connections](../connections/manage-connections.md)
   + [Combined event datasets](../connections/combined-dataset.md)
   + [Standard lookups](../connections/standard-lookups.md)
+  + [B2B lookups](../connections/transform-datasets-b2b-lookups.md)
 
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
@@ -98,6 +99,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Projects overview](../analysis-workspace/build-workspace-project/freeform-overview.md)
     + [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md)
     + [Save projects](../analysis-workspace/build-workspace-project/save-projects.md)
+    + [Project table of contents](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
     + Folders in Workspace {#workspace-folders}
       + [About Folders in Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
       + [Create Folders and Subfolders](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
@@ -113,6 +115,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage data sources](../analysis-workspace/visualizations/t-sync-visualization.md)
     + Freeform table {#freeform-table}
       + [Freeform table](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
+      + [Create hyperlinks for dimensions in a freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
       + Column and row settings {#column-row-settings}
         + [Column settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
         + [Row settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
@@ -319,7 +322,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Adobe integrations {#integrations}
   + [Overview](/help/integrations/overview.md)
   + [Integrate Adobe Analytics](/help/integrations/aa.md)
-  + [Integrate Target](/help/integrations/cja4t.md)
+  + [Integrate Target](/help/integrations/at.md)
   + [Integrate Journey Optimizer data](/help/integrations/ajo.md)
   + [Integrate Decision Management data](/help/integrations/ajo-od.md)
   + [Integrate Customer AI](/help/integrations/customer-ai.md)

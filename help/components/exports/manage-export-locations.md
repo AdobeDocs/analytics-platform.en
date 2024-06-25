@@ -48,6 +48,10 @@ To find information you need, you can either filter the list of locations or sea
 
 ## Edit locations
 
+A location can be edited only by the user who created it or by a system administrator.
+
+To edit a location:
+
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
 1. Select the [!UICONTROL **Locations**] tab.
@@ -89,6 +93,10 @@ To delete a location:
 1. Select [!UICONTROL **Delete**] again to confirm.
 
 ## Edit accounts
+
+An account can be edited only by the user who created it or by a system administrator.
+
+To edit an account:
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
