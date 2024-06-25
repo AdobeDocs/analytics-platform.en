@@ -323,7 +323,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Adobe integrations {#integrations}
   + [Overview](/help/integrations/overview.md)
   + [Integrate Adobe Analytics](/help/integrations/aa.md)
-  + [Integrate Target](/help/integrations/cja4t.md)
+  + [Integrate Target](/help/integrations/at.md)
   + [Integrate Journey Optimizer data](/help/integrations/ajo.md)
   + [Integrate Decision Management data](/help/integrations/ajo-od.md)
   + [Integrate Customer AI](/help/integrations/customer-ai.md)
