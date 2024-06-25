@@ -94,6 +94,5 @@ For a more information on cross-channel analysis, refer to the specific use case
 For a more in-depth discussion stitching functionality, go to:
 
 * [Stitching overview](/help/stitching/overview.md)
-* [How stitching works](../stitching/explained.md)
 * [Frequently Asked Questions](/help/stitching/faq.md)
 

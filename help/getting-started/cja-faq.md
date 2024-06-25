@@ -52,14 +52,14 @@ Yes. [Stitching](../stitching/overview.md) looks at user data from both authenti
 
 +++**How does 'replay' work in stitching?**
 
-Stitching "replays" data based on unique identifiers it has learned. Replay is aiming to stitch initially unauthenticated  events from devices that have been identified in the meantime. [Learn more](../stitching/explained.md)
+Stitching "replays" data based on unique identifiers it has learned. Replay is aiming to stitch initially unauthenticated  events from devices that have been identified in the meantime. [Learn more](../stitching/overview.md)
 
 +++
 
 
 +++**How does stitching historical data (backfill) work?**
 
-When first turned on, Adobe provides a backfill of stitched data that goes back as far as the beginning of the previous month (up to 60 days.) In order to do this backfill, the transient ID must exist in the unstitched data that far back in time. [Learn more](../stitching/explained.md)
+When first turned on, Adobe provides a backfill of stitched data that goes back as far as the beginning of the previous month (up to 60 days.) In order to do this backfill, the transient ID must exist in the unstitched data that far back in time. [Learn more](../stitching/overview.md)
 
 +++
 
