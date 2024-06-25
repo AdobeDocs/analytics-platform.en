@@ -1,6 +1,6 @@
 ---
 title: Customer Journey Analytics BI extension
-description: Learn how you can use Query Service, Power BI, Tableau, or other BI and SQL tools to access data views using the Customer Journey Analytics BI extension.
+description: Learn how you can use Power BI or Tableau to access data views using the Customer Journey Analytics BI extension.
 solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
@@ -22,19 +22,17 @@ The main benefits are:
 
 ## Prerequisites
 
-To use this functionality, you must: 
+To use this functionality, you must have: 
 
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
 
-* Configure the functionality for the relevant product profiles, user groups and/or individual users. Access requirements include:
-  * Adobe Experience Platform Query Service
-  * Workspace projects in Customer Journey Analytics
-  * Desired CJA data views to use
-  * Access to the BI extension in the data view tools
-
+* Granted access to Experience Platform and Customer Journey Analytics.
+* Granted Product admin access to Customer Journey Analytics, so you can view, edit, update, or delete connections and data views.
+* Granted access to the data views you want to access.
+* Granted access to the CJA BI extension.
 * Use expiring on non-expiring credentials to connect BI tools to the [!DNL Customer Journey Analytics BI extension]. The [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) provides more information on setting expiring credentials or non-expiring credentials.
 
-See [Access Control](../technotes/access-control.md) in the Customer Journey Analytics Administration section for additional information.
+See [Customer Journey Access Control](../technotes/access-control.md) for more information, specifically the [Product Admin additional permissions](../technotes/access-control.md#product-admin-additional-permissions) and [Customer Journey Analytics Permissions in the Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
 
 ## Usage
@@ -78,7 +76,7 @@ In Adobe Experience Platform:
     
 +++
 
-See [Query Editor UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/user-guide) for more information.
+See the [Query Editor UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/user-guide) for more information.
 
 
 ### BI tools
@@ -107,9 +105,9 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
    1. In the **[!UICONTROL **PostgressSQL database**]** dialog:
 
-      1. Paste **[!UICONTROL **Host**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Server**]** text field.
+      1. Paste the **[!UICONTROL **Host**]** parameter from Experience Platform Queries [!UICONTROL Credentials] in the  **[!UICONTROL **Server**]** text field.
 
-      1. Paste **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] in **[!UICONTROL **Database**]** text field.
+      1. Paste the **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] in the **[!UICONTROL **Database**]** text field.
         
          Add `?FLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:cja?FLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
 
@@ -118,7 +116,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
       1. You are prompted for **[!UICONTROL Username]** and **[!UICONTROL Password]**. Use the equivalent parameters from Experience Platform Queries [!UICONTROL Credentials].
 
 
-   1. After successful login, the Customer Journey Analytics data view tables appear in Power BI's **[!UICONTROL **Navigator**]**.
+   1. After successful login, the Customer Journey Analytics data view tables appear in Power BIs **[!UICONTROL **Navigator**]**.
 
    1. Select the data view tables that you want to use and select **[!UICONTROL **Load**]**.
 
@@ -148,11 +146,11 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
    1. In the [!UICONTROL PostgresSQL] dialog:
 
-      1. Paste **[!UICONTROL **Host**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Server**]** text field.
+      1. Paste the **[!UICONTROL **Host**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into the **[!UICONTROL **Server**]** text field.
 
-      1. Paste **[!UICONTROL **Port**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Port**]** text field.
+      1. Paste the **[!UICONTROL **Port**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into the **[!UICONTROL **Port**]** text field.
 
-      1. Paste **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Database**]** text field.
+      1. Paste the **[!UICONTROL **Database**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into the **[!UICONTROL **Database**]** text field.
 
          Add `%3FFLATTEN` to the **[!UICONTROL **Database**]** parameter, so it reads like `prod:cja%3FFLATTEN` for example. See [Flatten nested data structures for use with third-party BI tools](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
 
@@ -160,9 +158,9 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
       1. Paste **[!UICONTROL **Username**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Username**]** text field.
 
-      1. Paste **[!UICONTROL **Password**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into **[!UICONTROL **Password**]** text field.
+      1. Paste the **[!UICONTROL **Password**]** parameter from Experience Platform Queries [!UICONTROL Credentials] into the **[!UICONTROL **Password**]** text field.
 
-      1. Select **[!UICONTROL **Sign In**]**.
+      1. Select the **[!UICONTROL **Sign In**]**.
 
    1. Customer Journey Analytics data views show up as tables in the **[!UICONTROL **Table**]** list.
    
@@ -210,14 +208,14 @@ By default, the schema of your data views uses nested structures, just like the 
 
 See [Query Service SQL reference](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/overview) for the full reference on what type of SQL is supported.
 
-See table below for examples of the SQL you can use.
+See the table below for examples of the SQL you can use.
 
 +++ Examples
 
 | Pattern | Example |
 |---|---|
 | Schema discovery | <pre>SELECT * FROM dv1 WHERE 1=0</pre> |
-| Ranked / Breakdown | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02' AND<br/>  filterId = '12345'<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02' AND<br/>  AND (dim2 = 'A' OR dim3 IN ('X', 'Y', 'Z'))<br/>GROUP BY dim1</pre> |
+| Ranked or Breakdown | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02' AND<br/>  filterId = '12345'<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02' AND<br/>  AND (dim2 = 'A' OR dim3 IN ('X', 'Y', 'Z'))<br/>GROUP BY dim1</pre> |
 | `HAVING` clause | <pre>SELECT dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY dim1<br/>HAVING m1 > 100</pre> |
 | Distinct, top <br/>dimension values | <pre>SELECT DISTINCT dim1 FROM dv1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'<br/>GROUP BY dim1</pre><pre>SELECT dim1 AS dv1<br/>FROM dv1<br/>WHERE \`timestamp\` >= '2022-01-01' AND \`timestamp\` < '2022-01-02'<br/>GROUP BY dim1<br/>ORDER BY SUM(metric1)<br/>LIMIT 15</pre> |
 | Metric totals | <pre>SELECT SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \`timestamp\` BETWEEN '2022-01-01' AND '2022-01-02'</pre> |
@@ -253,7 +251,7 @@ You can use:
 
 #### Counting distinct values
 
-Due to the underlying nature of how Customer Journey Analytics works, the only dimension you can get an exact distinct count for is the `adobe_personid` dimension. The following SQL statements `SELECT COUNT(DISTINCT adobe_personid)` or `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` return the value of the default persons metric which is the count of distinct people. For other dimensions, an approximate distinct count is returned.
+Due to the underlying nature of how Customer Journey Analytics works, the only dimension you can get an exact distinct count for is the `adobe_personid` dimension. The following SQL statements `SELECT COUNT(DISTINCT adobe_personid)` or `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` return the value of the default persons metric, which is the count of distinct people. For other dimensions, an approximate distinct count is returned.
 
 #### Conditional metrics
 
@@ -271,7 +269,7 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 #### Inline calculations
 
-You can apply additional math to metric expressions in your `SELECT` instead of having the math defined in a calculated metric. The following table lists what types of expressions are supported.
+You can apply additional math to metric expressions in your `SELECT`. This math can be used instead of defining the math in a calculated metric. The following table lists what types of expressions are supported.
 
 | Operator or Function | Details |
 |---|---|
@@ -299,19 +297,19 @@ The timestamp field can also be used in date/time functions to parse or truncate
 
 #### Date range
 
-The `daterange` special column works similar to  `timestamp`, however the filtering is limited to full days. The `daterange` is also optional and has the same range defaults as `timestamp`.
+The `daterange` special column works similar to `timestamp`; however the filtering is limited to full days. The `daterange` is also optional and has the same range defaults as `timestamp`.
 The `daterange` field can also be used in date/time functions to parse or truncate the event date.
 
 The `daterangeName` special column can be used to filter your query using a named date range like `Last Quarter`.
 
 >[!NOTE]
 >
->PowerBI is not supporting `daterange` metrics that are less than a day (hour, 30 minute, 5 minute, etc.).
+>Power BI is not supporting `daterange` metrics that are less than a day (hour, 30 minute, 5 minute, etc.).
 
 
 #### Filter ID
 
-The `filterId` special column is optional and is used to apply an externally defined filter to the query. Applying an externally defined filter to a query is similar to dragging a filter on a panel in Workspace. Multiple filter IDs can be provided by `AND`-ing them.
+The `filterId` special column is optional and is used to apply an externally defined filter to the query. Applying an externally defined filter to a query is similar to dragging a filter on a panel in Workspace. Multiple filter IDs can be used by `AND`-ing them.
 
 Along with `filterId`, you can use `filterName` to use a filter's name instead of ID.
 
