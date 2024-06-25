@@ -37,6 +37,7 @@ Before using stitching, make sure that your organization is prepared with the fo
 
 You benefit from cross-channel analysis if you combine one or more of your stitched datasets with other datasets, such as call center data, as part of defining your Customer Journey Analytics connection. This connection configuration assumes that those other datasets already contain a person ID on every row, similar to the stitched ID.
 
+
 ## Limitations
 
 >[!IMPORTANT]
@@ -76,7 +77,7 @@ Stitching makes a minimum of two passes on data in a given dataset.
 
 - **Replay stitching**: "replays" data based on unique identifiers (transient IDs) it has learned. This stage is where hits from previously unknown devices (persistent IDs) become stitched (to transient IDs). Adobe offers two replay intervals:
     - **Daily**: Data replays every day with a 24-hour lookback window. This option holds an advantage that replays are much more frequent, but unauthenticated visitors must authenticate the same day that they visit your site.
-    - **Weekly**: Data replays once a week with a 7-day lookback window. This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, unstitched data less than a week old is not reprocessed until the next weekly replay.
+    - **Weekly**: Data replays once a week with your selected lookback window (see [options](#options)). This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, unstitched data less than a week old is not reprocessed until the next weekly replay.
 
 - **Privacy**: When privacy-related requests are received, in addition to removing the requested identity, any stitching of that identity across unauthenticated events must be undone.
 
@@ -215,7 +216,7 @@ Stitching makes a minimum of two passes on data in a given dataset.
 
 - **Replay stitching**: "replays" data based on updated identities from the identity graph. This stage is where hits from previously unknown devices (persistent IDs) become stitched as the identity graph has resolved the identity for a namespace. Adobe offers two replay intervals:
     - **Daily**: Data replays every day with a 24-hour lookback window. This option holds an advantage that replays are much more frequent, but unauthenticated visitors must authenticate the same day that they visit your site.
-    - **Weekly**: Data replays once a week with a 7-day lookback window. This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, unstitched data less than a week old is not reprocessed until the next weekly replay.
+    - **Weekly**: Data replays once a week with the lookback window (see [options](#options)). This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, unstitched data less than a week old is not reprocessed until the next weekly replay.
 
 - **Privacy**: When privacy-related requests are received, in addition to removing the requested identity from the source dataset, any stitching of that identity across unauthenticated events must be undone. Also, the identity must be removed from the identity graph to prevent future graph-based stitching for that specific identity.
 
@@ -334,7 +335,17 @@ The following limitation do apply specifically to graph-based stitching:
 
 ## Use stitching
 
-Once your organization meets all [prerequisites](#prerequisites) and understands common [limitations](#limitations) and stitching method specific ([field-based](#limitations-1) and [graph-based](#limitations-2)) limitations, you can follow these steps to start using stitching in Customer Journey Analytics:
+Once your organization meets all [prerequisites](#prerequisites) and understands common [limitations](#limitations) and stitching method specific ([field-based](#limitations-1) and [graph-based](#limitations-2)) limitations, you can follow these steps to start using stitching in Customer Journey Analytics.
+
+### Options
+
+Detemine the options for stitching. Your options for the initial backfill duration, lookback window and replay frequency, and maximum number of datasets permitted for stitching are determined by the Customer Journey Analytics package you are entitled to.
+
+| | Customer Journey Analytics<br/>Select | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
+|---|---|---|---|
+| Lookback window and replay frequency |<li>1 day, every day</li><li>up to 7 days, weekly</li> | <li>1 day, every day</li><li>up to 14 days, weekly</li>| <li>1 day, every day</li><li>up to 30 days, weekly</li> | 
+| One-time stitching backfill duration | 13 months | 13 months | 25 months | 
+| Maximum number of datasets permitted for stitching | 5 | 10 | 15 | 
 
 ### Request Support 
 
@@ -344,13 +355,13 @@ Once your organization meets all [prerequisites](#prerequisites) and understands
    - The dataset ID for the dataset that you want to rekey.
    - The column name (identity path and namespace) of the persistent ID for the desired dataset (the identifier that appears on every row).
    - For field-based stitching, the column name of the transient ID for the desired dataset (the person identifier, which also acts as a link between datasets in the context of a connection). For graph-based stitching, the identity namespace to use for querying the identity graph.
-   - Your preference of [replay](explained.md) frequency and lookback length. Options include a replay once a week with a 7-day lookback window, or a replay every day with a 1-day lookback window.
+   - Your preference of lookback window and replay frequency. Your options depend on your Customer Journey Analytics package (see [options](#options)).
    - Sandbox name.
 
 
 2. The Adobe Customer Support works with Adobe engineering to enable stitching upon receiving your request. Once enabled, a new rekeyed dataset that contains a new stitched ID column appears in Adobe Experience Platform. Adobe Customer Support can provide the new dataset's ID.
    
-3. When first turned on, Adobe provides a backfill of stitched data that goes back 60 days.
+3. When first turned on, Adobe provides a backfill of stitched data. The backfill duration is determined by your Customer Journey Analytics package (see [options](#options)).
    
 4. If you want to use the new stitched dataset in a cross-channel analysis, you need to add the new stitched dataset to a [connection](../connections/overview.md) in Customer Journey Analytics. Then add any other datasets required for cross-channel analysis, and select the correct person ID for each dataset.
    
