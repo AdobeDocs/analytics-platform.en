@@ -15,7 +15,7 @@ The **[!UICONTROL Retention rates]** view measures how users continue to use you
 
 In this view, the chart's x-axis represents the time since a user's initial start event and the y-axis represents the percentage of users who engage with the return event(s). You can view both retention and churn across durations, and the durations shown can be customized through the query settings. Below the chart, a table provides aggregated data with the option to show individual cohorts, which are a group of people who did the starting event on the same date. 
 
-![Retention rates screenshot](../assets/retention-rates.png){style="border:1px solid gray"}
+>[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
 
 ## Use cases
 
