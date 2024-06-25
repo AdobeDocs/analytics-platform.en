@@ -316,7 +316,6 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Stitching {#stitching}
   + [Overview](../stitching/overview.md)
-  + [How stitching works](../stitching/explained.md)
   + [Create and manage stitched datasets](../stitching/stitching-ui.md)
   + [Frequently Asked Questions](../stitching/faq.md)  
 
