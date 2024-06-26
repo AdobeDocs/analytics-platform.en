@@ -36,6 +36,18 @@ And you can have many of these datasets.
 
 This section of the documentation provides quick start guides for various scenarios.
 
+## Ingestion prioritization and latency
+
+You can ingest your event data in Customer Journey Analytics within 90 minutes (SLT), regardless of whether the data is 24 hours, 48 hours, or 7 days old. 
+
+Note that this capability differs based on the SKU package your company purchased:
+
+- Priority Ingestion Basic: 24-hour-old data within 90-minute SLT processing (available for **CJA Foundation** and **CJA Select**)
+
+- Priority Ingestion Intermediate: 72-hour-old data within 90-minute SLT processing (available for **CJA Prime**)
+
+- Priority Ingestion Advanced: 1-week-old data within 90-minute SLT processing (available for **CJA Ultimate**)
+
 ## Ingest and use data from traditional Adobe Analytics
 
 You already have Adobe Analytics deployed and want to ingest this data in Adobe Experience Platform and use, combine, and analyze it with data from other channels and data sources in Customer Journey Analytics.
