@@ -14,7 +14,6 @@ You have several options when ingesting data into Customer Journey Analytics. So
 >
 >In all scenarios, the data you want to _use_ in Customer Journey Analytics is actually _ingested_ in Adobe Experience Platform.
 
-
 See the high-level Customer Journey Analytics architecture shown earlier in [Overview](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html):
 
 ![Customer Journey Analytics architecture described in this section](./assets/cja-architecture.png)
