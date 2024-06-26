@@ -11,7 +11,7 @@ You can analyze concurrent viewers to understand where peak concurrency occurred
 
 In Analysis Workspace, Concurrent Viewers is the number of unique persons viewing your media stream(s) at a specific point in time, regardless of the number of sessions.
 
-The Media Concurrent Viewers panel enables analysis of concurrent viewers over time, with details on peak concurrency and the ability to break down and compare.  To access the Media Concurrent Viewers panel, navigate to a data view with Media Analytics components enabled. Then, click the panel icon on the far-left and drag the panel into your Analysis Workspace project.
+The Media Concurrent Viewers panel enables analysis of concurrent viewers over time, with details on peak concurrency and the ability to break down and compare.  To access the Media Concurrent Viewers panel, navigate to a data view with components enabled from the Streaming Media Collection Add-on. Then, click the panel icon on the far-left and drag the panel into your Analysis Workspace project.
 
 Here is a video overview of this panel:
 
