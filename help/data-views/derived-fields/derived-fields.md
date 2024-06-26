@@ -827,7 +827,7 @@ You define an `Origin - Destination` derived field. You use the [!UICONTROL CONC
 +++
 
 
-<!-- DEDUPLICATE -->
+<!-- DEDUPLICATE
 
 ### Deduplicate
 
@@ -911,6 +911,8 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 {style="table-layout:auto"}
 
 +++
+
+-->
 
 <!-- FIND AND REPLACE -->
 
@@ -1497,8 +1499,6 @@ You create a `Second Response` derived field to take the last value  from the [!
 Applies aggregation-type functions to metrics or dimensions at event, session, and user levels.
 
 +++ Details
-
-{{release-limited-testing-section}}
 
 ## Specification {#summarize-io}
 
