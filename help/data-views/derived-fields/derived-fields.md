@@ -601,9 +601,9 @@ The following constraints apply and are enforced when *selecting* and *setting* 
 
 |  |  Constraints |
 |:---:|----|
-| **<span style='color: red'>A</span>** | Values you *select* within the same [!UICONTROL If], [!UICONTROL Else If] construct (using [!UICONTROL And] or [!UICONTROL Or]) in a rule must originate from the same container and can be of any type (string ![String](assets/Smock_ABC_18_N.svg), numeric ![Numeric](assets/Smock_123_18_N.svg), and so forth). <br/>![Screenshot of dependency A](assets/dependency-a.png)|
-| **<span style='color: red'>B</span>** | All the values you *set* across a rule must be from the same container and have the same type or a derived value of the same type. <br/> ![Screenshot of Dependency B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | The values you *select* across [!UICONTROL If], [!UICONTROL Else If] constructs in the rule do *not* have to originate from the same container and do *not* have to be of the same type. <br/> ![Screenshot of Dependency C](assets/dependency-c.png)  |
+| **A** | Values you *select* within the same [!UICONTROL If], [!UICONTROL Else If] construct (using [!UICONTROL And] or [!UICONTROL Or]) in a rule must originate from the same container and can be of any type (string ![String](assets/Smock_ABC_18_N.svg), numeric ![Numeric](assets/Smock_123_18_N.svg), and so forth). <br/>![Screenshot of dependency A](assets/dependency-a.png)|
+| **B** | All the values you *set* across a rule must be from the same container and have the same type or a derived value of the same type. <br/> ![Screenshot of Dependency B](assets/dependency-b.png) |
+| **C** | The values you *select* across [!UICONTROL If], [!UICONTROL Else If] constructs in the rule do *not* have to originate from the same container and do *not* have to be of the same type. <br/> ![Screenshot of Dependency C](assets/dependency-c.png)  |
 
 {style="table-layout:auto"}
 
@@ -1145,7 +1145,7 @@ To create a formula:
 1. To insert a static value (for example `1.05`), type the value and select **[!UICONTROL Add *x* as a static value]** or **[!UICONTROL Add -*x* as a negative static value]** from the popup menu.
   ![Math More Info 2](assets/math-more-info-2.png)
 
-1. A green checkmark ![Checkmark](./assets/checkmark.svg)</span> indicates whether your math formula is valid, otherwise you will see a warning <span style="color:red">![Alert](./assets/alert.svg)</span> and the message <span style="color:#ea3829">[!UICONTROL Invalid formula expression].</span> 
+1. A green checkmark ![Checkmark](./assets/checkmark.svg)</span> indicates whether your math formula is valid, otherwise you will see a warning ![Alert](./assets/alert.svg) and the message [!UICONTROL Invalid formula expression].
    ![Math More Info 3](assets/math-more-info-3.png)
 
 There are some important considerations when working with static numbers in the [!UICONTROL MATH] function:

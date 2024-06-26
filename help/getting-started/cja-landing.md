@@ -47,7 +47,7 @@ The BI extension enables SQL access to the data views that you have defined in C
 
 [![image](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
-<span style="color:gray">*_You must have the Select package or higher to use the BI extension._</span>
+*_You must have the Select package or higher to use the BI extension._*
 
 
 <!--
