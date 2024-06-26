@@ -81,14 +81,16 @@ The data view has the name **AJO Enable Dataview (*sandbox name*)**.
 
 
 - In the **Components** tab:
-
-  - All metrics and dimensions that have **[!UICONTROL (AJO)]** appended to their name are automatically added as part of the automatic configuration. 
+  - All metrics and dimensions that have **[!UICONTROL (AJO)]** appended to their name are added automatically as part of this automatic configuration. 
   - Some of the metrics or dimensions that have been added automatically are based on derived fields. These derived fields are specifically created for this integration. For example, the metric Landing Page Clicks (AJO) is based on the Landing Page Clicks derived field.
   - Some of the metrics or dimensions do have additional configuration. For example, Spam Complaint (AJO) does have Format and Include Exclude Values settings applied.
   - All automatically added metrics and dimensions do have context label named **[!UICONTROL :*name_of_metric_or_dimension*]**. For example, [!UICONTROL Landing Page Clicks (AJO)] metric has the context label [!UICONTROL :Landing page clicks (AJO)].
 
 - In the **[!UICONTROL Settings]** tab, no specific configuration values are applied
 
+>[!IMPORTANT]
+>
+>Modifying any of the automatically configured values for the connection and data view does have consequences for the Journey Optimizer reporting that is relying upon and using the automatically configured Customer Journey Analytics integration.
 
 
 ## Manually configure a data view to be used with Journey Optimizer
