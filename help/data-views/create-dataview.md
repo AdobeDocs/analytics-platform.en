@@ -46,7 +46,7 @@ Provides overarching settings for the data view.
 
 ### Compatibility
 
-[!BADGE Beta]
+{{release-limited-testing-section}}
 
 Provides settings that are applicable when using Adobe Journey Optimizer in addition to Customer Journey Analytics.
 
