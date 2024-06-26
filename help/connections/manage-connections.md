@@ -45,7 +45,7 @@ The following columns or icons are available in the table.
 | [!UICONTROL Import new data] | Shows the status of importing new data for datasets: <p>![Status green](assets/status-green.svg)) &nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for datasets configured to import new data, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** for datasets not configured to import new data. |
 | [!UICONTROL Date created] | The timestamp when the connection was created. |
 | [!UICONTROL Last modified] | The timestamp when the connection is last updated. |
-| [!UICONTROL Backfill data] | Shows the status for backfill data across datasets.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills across datasets,<p>![Status orange](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of processing backfills across datasets,<p>![Status green](assets/status-green.svg))&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of completed backfills for datasets, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are defined for the datasets in the connection. |
+| [!UICONTROL Backfill data] | Shows the status for backfill data across datasets.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills across datasets,<p>![Status orange](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of processing backfills across datasets,<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of completed backfills for datasets, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are defined for the datasets in the connection. |
 
 To configure which columns to display select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), which shows the **Customize table** dialog allowing you turn columns on or off in the table.
 
@@ -83,7 +83,7 @@ Alternatively, you can:
 
 When you delete a connection, a **[!UICONTROL Delete connection]** panel indicates which data views are deleted and which workspace projects are affected.
 
-<img src="./assets/delete-connection.png" alt="Delete connection" width="400"/>
+![Delete connection](assets/delete-connection.png)
 
 Select **[!UICONTROL Continue]** to delete the connection.
 
