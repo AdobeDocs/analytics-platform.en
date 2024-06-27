@@ -178,6 +178,81 @@ see:
 - [bot filtering](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/bot-filtering)
 - and other [supported use cases in the Query Service guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/overview).
 
+The example query below illustrates how to
+
+- use the last 90 days as a lookback, 
+- apply window functions like sessionization and / or attribution, and 
+- restrict the output based on the ingest_time.
+
+   To do this, you have to:
+
+  - Use a processing status table, checkpoint_log, to keep track of the current versus the last ingest time. See [this guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/incremental-load) for more information.
+  - disable dropping system columns, so you can use `_acp_system_metadata.ingestTime`.
+  - Use an inner most select to grab the fields you want to use and restrict the event to your lookback period for sessionization and / or attribution calculations. For example, 90 days.
+  - Use a next level selet to apply you sessionization and / or attribution window functions and other calculations.
+  - Use `INSERT INTO` in your output table to restrict te lookback to just the events that have arrived since your last processing time. You do this by filtering on `_acp_system_metadata.ingestTime `versus the time last stored in your processing status table.
+
+
+   ```sql
+   $$ BEGIN
+      -- Disable dropping system columns
+      set drop_system_columns=false; 
+
+      -- Initialize variables
+      SET @last_updated_timestamp = SELECT CURRENT_TIMESTAMP;
+   
+      -- Get the last processed batch ingestion time
+      SET @from_batch_ingestion_time = SELECT coalesce(last_batch_ingestion_time, 'HEAD') 
+         FROM checkpoint_log a 
+         JOIN (
+               SELECT MAX(process_timestamp) AS process_timestamp 
+               FROM checkpoint_log
+               WHERE process_name = 'data_feed' 
+               AND process_status = 'SUCCESSFUL'
+         ) b
+         ON a.process_timestamp = b.process_timestamp;
+
+      -- Get the last batch ingestion time
+      SET @to_batch_ingestion_time = SELECT MAX(_acp_system_metadata.ingestTime) 
+         FROM events_dataset;
+
+      -- Sessionize the data and insert into data_feed.
+      INSERT INTO data_feed
+      SELECT *
+      FROM (
+         SELECT
+               userIdentity,
+               timestamp,
+               SESS_TIMEOUT(timestamp, 60 * 30) OVER (
+                  PARTITION BY userIdentity
+                  ORDER BY timestamp
+                  ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+               ) AS session_data,
+               page_name,
+               ingest_time
+         FROM (
+               SELECT
+                  userIdentity,
+                  timestamp,
+                  web.webPageDetails.name AS page_name,
+                  _acp_system_metadata.ingestTime AS ingest_time
+               FROM events_dataset
+               WHERE timestamp >= current_date - 90
+         ) AS a
+         ORDER BY userIdentity, timestamp ASC
+      ) AS b
+      WHERE b.ingest_time >= @from_batch_ingestion_time;
+
+      -- Update the checkpoint_log table
+      INSERT INTO checkpoint_log
+      SELECT
+         'data_feed' process_name,
+         'SUCCESSFUL' process_status,
+         cast(@to_batch_ingestion_time AS string) last_batch_ingestion_time,
+         cast(@last_updated_timestamp AS TIMESTAMP) process_timestamp
+   END
+   $$;
+   ```
 
 ### Schedule Query
 
