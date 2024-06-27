@@ -186,10 +186,10 @@ The example query below illustrates how to
 
    To do this, you have to:
 
-  - Use a processing status table, checkpoint_log, to keep track of the current versus the last ingest time. See [this guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/incremental-load) for more information.
+  - Use a processing status table, `checkpoint_log`, to keep track of the current versus the last ingest time. See [this guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/incremental-load) for more information.
   - disable dropping system columns, so you can use `_acp_system_metadata.ingestTime`.
-  - Use an inner most select to grab the fields you want to use and restrict the event to your lookback period for sessionization and / or attribution calculations. For example, 90 days.
-  - Use a next level selet to apply you sessionization and / or attribution window functions and other calculations.
+  - Use an inner most `SELECT` to grab the fields you want to use and restrict the event to your lookback period for sessionization and / or attribution calculations. For example, 90 days.
+  - Use a next level `SELECT` to apply you sessionization and / or attribution window functions and other calculations.
   - Use `INSERT INTO` in your output table to restrict te lookback to just the events that have arrived since your last processing time. You do this by filtering on `_acp_system_metadata.ingestTime `versus the time last stored in your processing status table.
 
 
