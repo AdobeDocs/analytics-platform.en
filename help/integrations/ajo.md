@@ -39,7 +39,7 @@ The connection has the name **[!UICONTROL AJO Enabled Connection (*sandbox name*
 
 | Dataset name | Schema | Dataset type | Data source type | Person Id | Key | Matching Key | Import new data | Backfill data | 
 |---|---|---|---|---|---|---|---|---|
-| [!UICONTROL AJO Entity Dataset] | [!UICONTROL AJO Entity Record Schema] | [!UICONTROL Lookup] | [!UICONTROL Other] | - |` _id` | `_experience.decisioning.`<br/>`propositions.scopeDetails.`<br/>`correlationID` | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
+| [!UICONTROL AJO Entity Dataset] | [!UICONTROL AJO Entity Record Schema] | [!UICONTROL Lookup] | [!UICONTROL Other] | - |` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
 | [!UICONTROL Journey Step Events] | [!UICONTROL Journey Step Event schema for Journey Orchestration] | [!UICONTROL Event] | [!UICONTROL Other] |[!UICONTROL  IdentityMap(\<primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
 | [!UICONTROL AJO Email Tracking Experience Event Dataset] | [!UICONTROL AJO Email Tracking Experience Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
 | [!UICONTROL AJO Email Tracking Experience Event Dataset] | [!UICONTROL AJO Email Tracking Experience Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
@@ -81,10 +81,10 @@ The data view has the name **AJO Enable Data View (*sandbox name*)**.
 
 
 - In the **Components** tab:
-  - All metrics and dimensions that have **[!UICONTROL (AJO)]** appended to their name are added automatically as part of this automatic configuration. 
-  - Some of the metrics or dimensions that have been added automatically are based on derived fields. These derived fields are specifically created for this integration. For example, the metric Landing Page Clicks (AJO) is based on the Landing Page Clicks derived field.
-  - Some of the metrics or dimensions do have additional configuration. For example, Spam Complaint (AJO) does have Format and Include Exclude Values settings applied.
-  - All automatically added metrics and dimensions do have a context label named **[!UICONTROL :*name_of_metric_or_dimension*]**. For example, the[!UICONTROL Landing Page Clicks (AJO)] metric has the context label [!UICONTROL :Landing page clicks (AJO)].
+  - All metrics and dimensions that have [!UICONTROL (AJO)] appended to their name are added automatically as part of this automatic configuration. 
+  - Some of the metrics or dimensions, that have been added automatically, are based on derived fields. These derived fields are specifically created for this integration. For example, the metric [!UICONTROL Landing Page Clicks (AJO)] is based on the [!UICONTROL Landing Page Clicks] derived field.
+  - Some of the metrics or dimensions have additional configuration. For example, [!UICONTROL Spam Complaint (AJO)] does have [!UICONTROL Format] and [!UICONTROL Include Exclude Values] settings applied.
+  - All automatically added metrics and dimensions do have a context label named `:`*`name_of_metric_or_dimension`*. For example, the [!UICONTROL Landing Page Clicks (AJO)] metric has the context label `: Landing page clicks (AJO)`.
 
 - In the **[!UICONTROL Settings]** tab, no specific configuration values are applied
 
