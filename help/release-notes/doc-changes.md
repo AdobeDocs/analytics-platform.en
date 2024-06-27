@@ -13,8 +13,14 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **June 2024** | |
+| Updated product name that refers to streaming media features | Replaced instances of "Media Analytics" and "Streaming Media" with the name "Streaming Media Collection Add-on" when referring to the set of streaming media features that collect streaming media data and surface it in Analysis Workspace. <p>These updates are available throughout the Customer Journey Analytics documentation as well as the [Streaming Media Collection Add-on documentation](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).</p> |
+| Graph-based stitching | Updated and restructured [stitching documentation](/help/stitching/overview.md) with the introduction of graph-based stitching. |
+| AI Assistant | Added [documentation](../ai-assistant.md) on the AI Assistant for Customer Journey Analytics. |
+| Transform datasets for B2B lookups | Added documentation on how to support [person-based lookups on B2B data](/help/connections//transform-datasets-b2b-lookups.md) (including accounts, opportunities, marketing lists and campaigns) using transformation of B2B lookup datasets.  |
+| Derived field functions and function templates | Added documentation on the additional derived field functions ([Math](/help/data-views/derived-fields/derived-fields.md#math), [Next or Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous), and [Summarize](/help/data-views/derived-fields/derived-fields.md#summarize)) and [function templates](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **May 2024** | |
-| Target integration | Added [article to Adobe integration section](/help/integrations/cja4t.md) on how to integrate Target with Customer Journey Analytics. |
+| Target integration | Added [article to Adobe integration section](/help/integrations/at.md) on how to integrate Target with Customer Journey Analytics. |
 | Required information when exporting Customer Journey Analytics reports to Google Cloud Platform while using organization policy constraints | Added the Adobe-owned Google Cloud Platform organization ID to the [Configure cloud export locations](/help/components/exports/cloud-export-locations.md) documentation for exporting Customer Journey Analytics reports to Google Cloud Platform. <p>This information is required only for organizations that are using [Organization policy constraints](https://cloud.google.com/storage/docs/org-policy-constraints) in Google Cloud Platform.</p> | 
 | Documentation about adding components to projects | Added general information about how to [add the various types of components to projects in Analysis Workspace](/help/components/use-components-in-workspace.md). |
 | Data export use cases | Set of new articles describing [data export use cases](/help/use-cases/data-export/overview.md) and how to use Experience Platform and Customer Journey Analytics functionalities to implement these use cases |

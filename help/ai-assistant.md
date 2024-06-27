@@ -4,17 +4,11 @@ title: AI Assistant for Adobe Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
-hide: yes
-hidefromtoc: yes
 ---
 
 # AI Assistant for Adobe Customer Journey Analytics
 
->[!NOTE]
->
->AI Assistant for Customer Journey Analytics is currently in Beta. The feature and its documentation are subject to change.
-
-AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace – whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
+AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace – whether it's understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
 
 The AI Assistant in Customer Journey Analytics is trained on its Adobe Experience League documentation. When asked a question, AI Assistant responds with a helpful answer that enables quick learning.
 
@@ -48,8 +42,7 @@ In this first release, access to the AI Assistant feature is governed by the fol
 
 * **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before AI Assistant can be used by your organization, your company must agree to certain GenAI-related legal terms.
 
-* **Permissions**: In [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] "AI Assistant: Product Knowledge" permission determines access to this tool. 
-A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in Admin Console:
+* **Permissions**: In [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] "AI Assistant: Product Knowledge" permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in Admin Console:
    1. Navigate to [!UICONTROL Admin Console] > [!UICONTROL Products and services] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL Product Profile] > [!UICONTROL Permissions] > [!UICONTROL Edit Reporting Tools].
    1. Add "AI Assistant: Product Knowledge".
    ![Add permission](assets/image.png)
@@ -69,3 +62,5 @@ A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-produc
 1. (Optional) To show sources, click **[!UICONTROL Show Sources]**, and the documentation source or sources that informed the answer are shown.
 
 1. (Optional) You can also provide a thumbs-up or thumbs-down vote on the helpfulness of any given answer.
+
+1. (Optional) You can flag the answer for inappropriate or harmful content.

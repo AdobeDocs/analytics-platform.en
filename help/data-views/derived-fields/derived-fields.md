@@ -154,13 +154,193 @@ To quickly create a derived field for specific use cases, function templates are
 
 ### Marketing channels
 
-This template is configured to use the [Url Parse](#dnl-url-parse) and [Case When](#dnl-case-when) functions multiple times to get appropriate values from a URL. Logic is then applied on these values to associate the URL to a specific marketing channel.
+This function template uses a collection of rules to build marketing channels.
 
 +++ Details
 
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
-![Screenshot of the Marketing channel template rule builder](assets/marketing-channel-template.png)
+![Screenshot of the Marketing channel template rule builder](assets/function-template-marketing-channel-template.png)
+
++++
+
+### Bounces
+
+This function template uses a collection of rules to identify site bounces.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Bounces rule builder](assets/function-template-bounces.png)
+
++++
+
+### Multi-Dimension Combine
+
+This function template combines two values into one.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Multi-Dimension Combine rule builder](assets/function-template-multi-dimension-combine.png)
+
++++
+
+### Friendly Dataset Name
+
+This function template provides a readable dataset name.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Friendly Dataset Name rule builder](assets/function-template-friendly-dataset-name.png)
+
++++
+
+### Page Name from URL
+
+This function template creates a simple page name.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Page Name from URL rule builder](assets/function-template-page-name-from-url.png)
+
++++
+
+### Holiday Season
+
+This function template classifies key times of the year.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Holiday Season rule builder](assets/function-template-holiday-season.png)
+
++++
+
+### Monthly Goals
+
+This function template sets custom monthly goals.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Monthly Goals rule builder](assets/function-template-monthly-goals.png)
+
++++
+
+### Get All Values in Delimited List
+
+This function template converts a limited list to an array.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Get All Values in Delimited list rule builder](assets/function-template-get-all-values-in-delimited-list.png)
+
++++
+
+### Get First Value in Delimited List
+
+This function template gets the first value in a delimited list.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Get First Value in Delimited List rule builder](assets/function-template-get-first-value-in-delimited-list.png)
+
++++
+
+### Get Last Value in Delimited List
+
+This function template gets the last value in a delimited list.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Get Last Value in Delimited List rule builder](assets/function-template-get-last-value-in-delimited-list.png)
+
++++
+
+### Domain Name
+
+This function template extracts the domain name using a regular expression.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Domain Name rule builder](assets/function-template-domain-name.png)
+
++++
+
+### Get Query String Parameter
+
+This function template extracts query string values.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Get Query String Parameter rule builder](assets/function-template-get-query-string-parameter.png)
+
++++
+
+### Transition Field
+
+This function template transitions reporting from one field to another field.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Transition Field rule builder](assets/function-template-transition-field.png)
+
++++
+
+### Simple Bot Detection
+
+This function template implements light bot identification.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Simple Bot Detection rule builder](assets/function-template-simple-bot-detection.png)
+
++++
+
+### Exit Link
+
+This function template identifies last link clicked in a session.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Exit Link rule builder](assets/function-template-exit-link.png)
+
++++
+
+### Download Link
+
+This function template flags common download links.
+
++++ Details
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the Download Link rule builder](assets/function-template-download-link.png)
 
 +++
 
@@ -249,13 +429,13 @@ In case your site receives the following sample events, containing [!UICONTROL R
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` | | 
+| `https://google.com` | |
 
 {style="table-layout:auto"}
 
 ### Derived field {#casewhen-uc1-derivedfield}
 
-You define a new `Marketing Channel` derived field. You use the [!UICONTROL CASE WHEN] functions to define rules that create values for the based on existing values for both the `Page URL` and `Referring URL` field.
+You define a `Marketing Channel` derived field. You use the [!UICONTROL CASE WHEN] functions to define rules that create values for the based on existing values for both the `Page URL` and `Referring URL` field.
 
 Note the usage of the function [!UICONTROL URL PARSE] to define rules to fetch the values for `Page Url` and `Referring Url` before the [!UICONTROL CASE WHEN] rules are applied.
 
@@ -407,7 +587,7 @@ You define a `Trip Duration (bucketed)` derived field. You create the following 
 | [!DNL long trip] |
 
 
-## More information
+## More information {#casewhen-more-info}
 
 Customer Journey Analytics uses a nested container structure, modeled after Adobe Experience Platform's [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) (Experience Data Model). See [Containers](../create-dataview.md#containers) and [Filter containers](../../components/filters/filters-overview.md#filter-containers) for more background information. This container model, albeit flexible by nature, imposes some constraints when using the rule builder. 
 
@@ -421,9 +601,9 @@ The following constraints apply and are enforced when *selecting* and *setting* 
 
 |  |  Constraints |
 |:---:|----|
-| **<span style='color: red'>A</span>** | Values you *select* within the same [!UICONTROL If], [!UICONTROL Else If] construct (using [!UICONTROL And] or [!UICONTROL Or]) in a rule must originate from the same container and can be of any type (string ![String](assets/Smock_ABC_18_N.svg), numeric ![Numeric](assets/Smock_123_18_N.svg), and so forth). <br/>![Screenshot of dependency A](assets/dependency-a.png)|
-| **<span style='color: red'>B</span>** | All the values you *set* across a rule must be from the same container and have the same type or a derived value of the same type. <br/> ![Screenshot of Dependency B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | The values you *select* across [!UICONTROL If], [!UICONTROL Else If] constructs in the rule do *not* have to originate from the same container and do *not* have to be of the same type. <br/> ![Screenshot of Dependency C](assets/dependency-c.png)  |
+| **A** | Values you *select* within the same [!UICONTROL If], [!UICONTROL Else If] construct (using [!UICONTROL And] or [!UICONTROL Or]) in a rule must originate from the same container and can be of any type (string ![String](assets/Smock_ABC_18_N.svg), numeric ![Numeric](assets/Smock_123_18_N.svg), and so forth). <br/>![Screenshot of dependency A](assets/dependency-a.png)|
+| **B** | All the values you *set* across a rule must be from the same container and have the same type or a derived value of the same type. <br/> ![Screenshot of Dependency B](assets/dependency-b.png) |
+| **C** | The values you *select* across [!UICONTROL If], [!UICONTROL Else If] constructs in the rule do *not* have to originate from the same container and do *not* have to be of the same type. <br/> ![Screenshot of Dependency C](assets/dependency-c.png)  |
 
 {style="table-layout:auto"}
 
@@ -628,7 +808,7 @@ The desired report should look like:
 
 ### Derived field {#concatenate-derivedfield}
 
-You define a new [!UICONTROL Origin - Destination] derived field. You use the [!UICONTROL CONCATENATE] function to define a rule to concatenate the [!UICONTROL Original] and [!UICONTROL Destination] fields using the `-` [!UICONTROL Delimiter].
+You define an `Origin - Destination` derived field. You use the [!UICONTROL CONCATENATE] function to define a rule to concatenate the [!UICONTROL Original] and [!UICONTROL Destination] fields using the `-` [!UICONTROL Delimiter].
 
 ![Screenshot of the Concatenate rule](assets/concatenate.png)
 
@@ -645,6 +825,94 @@ You define a new [!UICONTROL Origin - Destination] derived field. You use the [!
 {style="table-layout:auto"}
 
 +++
+
+
+<!-- DEDUPLICATE
+
+### Deduplicate
+
+Prevents counting a value multiple times.
+
++++ Details
+
+{{release-limited-testing-section}}
+
+## Specifications {#deduplicate-io}
+
+| Input Data Type | Input | Included Operators | Limitations | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li></ul> | <ul><li>[!UICONTROL Value]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul></li><li>[!UICONTROL Scope]:<ul><li>Person</li><li>Session</li></ul></li><li>[!UICONTROL Deduplication ID]:<ul><li>Rules</li><li>Standard fields</li><li>Fields</li><li>String</li></ul><li>[!UICONTROL Value to keep]:<ul><li>Keep first instance</li><li>Keep last instance</li></ul></li></ul> | <p>N/A</p>| <p>5 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+
+## Use case 1 {#deduplicate-uc1}
+
+You want to prevent counting duplicate revenue when a user reloads the booking confirmation page. You use the booking confirmation ID at the identifier to not count the revenue again, when received on the same event.
+
+### Data before {#deduplicate-uc1-databefore}
+
+| Booking Confirmation ID | Revenue |
+|----|---:|
+| ABC123456789 | 359 |
+| ABC123456789 | 359 |
+| ABC123456789 | 359 |
+
+{style="table-layout:auto"}
+
+### Derived field {#deduplicate-uc1-derivedfield}
+
+You define a `Booking Confirmation` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Value] [!DNL Booking] for [!UICONTROL Scope] [!DNL Person] using [!UICONTROL Deduplication ID] [!UICONTROL Booking Confirmation ID]. You select [!UICONTROL Keep first instance] as [!UICONTROL Value to keep].
+
+![Screenshot of the Concatenate rule](assets/deduplicate-1.png)
+
+### Data after {#deduplicate-uc1-dataafter}
+
+| Booking Confirmation ID | Revenue |
+|----|---:|
+| ABC123456789 | 359 |
+| ABC123456789 | 0 |
+| ABC123456789 | 0 |
+
+{style="table-layout:auto"}
+
+## Use case 2 {#deduplicate-uc2}
+
+You use events as a proxy for campaign click-throughs with external marketing campaigns. Reloads & redirects are causing the event metric to be inflated. You would like to deduplicate the tracking code dimension so only the first is collected and minimize the event overcounting.
+
+### Data before {#deduplicate-uc2-databefore}
+
+| Visitor ID | Marketing Channel | Events |
+|----|---|---:|
+| ABC123 | paid search | 1 |
+| ABC123 | paid search | 1 |
+| ABC123 | paid search | 1 |
+| DEF123 | email | 1 |
+| DEF123 | email | 1 |
+| JKL123 | natural search | 1 |
+| JKL123 | natural search | 1 |
+
+{style="table-layout:auto"}
+
+### Derived field {#deduplicate-uc2-derivedfield}
+
+You define a new `Tracking Code (deduplicated)` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Tracking Code] with a [!UICONTROL Deduplication scope] of [!UICONTROL Session] and [!UICONTROL Keep first instance] as the [!UICONTROL Value to keep].
+
+![Screenshot of the Concatenate rule](assets/deduplicate-2.png)
+
+### Data after {#deduplicate-uc2-dataafter}
+
+| Visitor ID | Marketing Channel | Events |
+|----|---|---:|
+| ABC123 | paid search | 1 |
+| DEF123 | email | 1 |
+| JKL123 | natural search | 1 |
+
+{style="table-layout:auto"}
+
++++
+
+-->
 
 <!-- FIND AND REPLACE -->
 
@@ -752,7 +1020,7 @@ You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] fun
 
 ![Screenshot of the Lowercase rule](assets/lookup.png)
 
-## More info
+## More information {#lookup-more-info}
 
 You can quickly insert a [!UICONTROL Lookup] function in the rule builder, already containing one or more other functions.
 
@@ -815,6 +1083,87 @@ You define a `Product Names` derived field. You use the [!UICONTROL LOWERCASE] f
 {style="table-layout:auto"}
 
 +++
+
+<!-- MATH -->
+
+### Math
+
+Use basic mathematical operators (add, subtract, multiply, divide & raise to a power) on numeric fields.
+
++++ Details
+
+## Specification {#math-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>Numeric</li></ul> | <ul><li>One or multiple numeric fields</li><li>One or multiple operators (add, subtract, multiply, divide, raise to a power)</li><li>User input value</li></ul> | <ul><li>`+` (add)</li><li>`-` (subtract)</li><li>`*` (multiply)</li><li>`/` (divide)</li><li>`^` (raise to power)</li></ul> | <ul><li>25 operations per derived field</li><li>5 Math functions per derived field</li></ul> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+## Use case {#math-uc}
+
+Due to inflation you want to correct the revenue numbers of ingested CRM data  with 5% inflation.
+
+### Data before {#math-uc-databefore}
+
+| CRM ID | Annual Revenue |
+|---|---:|
+| 1234 | 35,070,000 |
+| 4133 | 7,500,000 |
+| 8110 | 10,980 |
+| 2201 | 42,620 |
+
+{style="table-layout:auto"}
+
+### Derived field {#math-uc-derivedfield}
+
+You define a `Corrected Annual Revenue` derived field. You use the [!UICONTROL MATH] function to define a rule that multiplies the original Annual Revenue number with 1.05. 
+
+![Screenshot of the Math rule](assets/math.png)
+
+
+### Data after {#math-uc-dataafter}
+
+| CRM ID | Corrected Annual Revenue |
+|---|---:|
+| 1234 | 36,823,500 |
+| 4133 | 7,875,000 |
+| 8110 | 11,529,00 |
+| 2201 | 44,751 |
+
+{style="table-layout:auto"}
+
+## More information {#math-more-info}
+
+To create a formula: 
+
+1. Simply start typing in the Formula field and numeric fields that match what you type will appear in a popup menu. Alternatively, you can drag and drop a numeric field from the available fields in the left pane.
+  ![Math More Info 1](assets/math-more-info-1.png)
+
+1. Add the operand (for example `*` to multiply)  followed by another field or a static value. You can use parenthesis to define more complex formulas.
+
+1. To insert a static value (for example `1.05`), type the value and select **[!UICONTROL Add *x* as a static value]** or **[!UICONTROL Add -*x* as a negative static value]** from the popup menu.
+  ![Math More Info 2](assets/math-more-info-2.png)
+
+1. A green checkmark ![Checkmark](./assets/checkmark.svg)</span> indicates whether your math formula is valid, otherwise you will see a warning ![Alert](./assets/alert.svg) and the message [!UICONTROL Invalid formula expression].
+   ![Math More Info 3](assets/math-more-info-3.png)
+
+There are some important considerations when working with static numbers in the [!UICONTROL MATH] function:
+
+- Static values need to be associated with a field. For example, using the [!UICONTROL MATH] function with only static fields is not supported.
+- You cannot use the raise to power operator (`ˆ`) on a static value.
+- If you are using multiple static values in a formula, these static values should be grouped using parenthesis for the formula to be valid. For example: 
+  
+  - This formula returns an error.
+    ![Math More Info 4](assets/math-more-info-4.png)
+
+  - This formula is valid.
+    ![Math More Info 5](assets/math-more-info-5.png)
+
+Use the Math function for hit-level based calculations. Use the [Summarize](#summarize) function for event, session or person scope based calculations.
+
++++
+
 
 <!-- MERGE FIELDS -->
 
@@ -882,6 +1231,78 @@ You must select the same type of fields within a Merge Fields rule. For example,
 +++
 
 
+<!-- NEXT OR PREVIOUS -->
+
+### Next or Previous
+
+Takes a field as input and resolves the next or previous value for that field within the scope of the session or use. This will only apply to the Visit and Event table fields.
+
++++ Details
+
+## Specification {#prevornext-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Method]:<ul><li>Previous value</li><li>Next value</li></ul></li><li>[!UICONTROL Scope]:<ul><li>Person</li><li>Session</li></ul></li><li>[!UICONTROL Index]:<ul><li>Numeric</li></ul><li>[!UICONTROL Include repeats]:<ul><li>Boolean</li></ul></li></ul> | <p>N/A</p> | <p>3 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+## Use case {#prevornext-uc1}
+
+You would like to understand what the **next** or **previous** value is of the data that you receive, taken into account repeat values.
+
+### Data {#prevornext-uc1-databefore}
+
+**Example 1 - Handling include repeats**
+
+| Data received | Next value<br/>Session<br/>Index = 1<br/>Include Repeats | Next value<br/>Session<br/>Index = 1<br/>NOT Include Repeats | Previous value<br/>Session<br/>Index = 1<br/>Include Repeats | Previous value<br/>Session<br/>Index = 1<br/>NOT Include Repeats |
+|---|---|---|---|---|
+| home | home | search | *No value* | *No value* |
+| home | search | search | home | *No value* |
+| search | search | product detail | home | home |
+| search | product detail | product detail | search | home |
+| product detail | search | search | search | search |
+| search | product details | product detail | product detail  | product detail |
+| product detail | search | search | search | search |
+| search | search | *No value* | product detail | product detail |
+| search | *No value* | *No value* | search | product detail |
+
+{style="table-layout:auto"}
+
+**Example 2 - Handling include repeats with blank values in data received**
+
+| Data received | Next value<br/>Session<br/>Index = 1<br/>Include Repeats | Next value<br/>Session<br/>Index = 1<br/>NOT Include Repeats | Previous value<br/>Session<br/>Index = 1<br/>Include Repeats | Previous value<br/>Session<br/>Index = 1<br/>NOT Include Repeats |
+|---|---|---|---|---|
+| home | home | search | *No value* | *No value* |
+| home | home | search | home | *No value* |
+| home | search | search | home | *No value* |
+| search | search | product detail | home | home |
+| &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+| search | search | product detail | search | home |
+| search | product detail | product detail | search | home |
+| product detail | *No value* | *No value* | search | search |
+| &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+
+{style="table-layout:auto"}
+
+### Derived field {#prevnext-uc1-derivedfield}
+
+You define a `Next Value` or `Previous value` derived field. You use the [!UICONTROL NEXT OR PREVIOUS] function to define a rule that selects the [!UICONTROL Data received] field, select [!UICONTROL Next value] or [!UICONTROL Previous value] as [!UICONTROL Method], [!UICONTROL Session] as Scope and set the value of [!UICONTROL Index] to `1`.
+
+![Screenshot of the Merge Fields rule](assets/prevnext-next.png)
+
+## More information {#prevnext-moreinfo}
+
+You can only select fields that belong to the Visit or Event table.
+
+[!UICONTROL Include repeats] determines how to handle repeating values for the [!UICONTROL NEXT OR PREVIOUS] function. 
+
+- Include repeats looks and the next or previous values. If [!UICONTROL Include Repeats] is selected, it will ignore any sequential repeats of next or previous values from the current hit.
+
+- Rows with no (blank) values for a selected field will not have next or previous values returned as part of the [!UICONTROL NEXT OR PREVIOUS] function output.
+
++++
+
 <!-- REGEX REPLACE -->
 
 ### Regex Replace
@@ -929,7 +1350,7 @@ You create a `Page Identifier` derived field. You use the [!UICONTROL REGEX REPL
 | customer-journey-analytics.html |
 | adobe-experience-platform.html |
 
-## More information
+## More information {#regex-replace-more-info}
 
 Customer Journey Analytics uses a subset of the Perl regex syntax. The following expressions are supported:
 
@@ -1071,6 +1492,73 @@ You create a `Second Response` derived field to take the last value  from the [!
 
 +++
 
+<!-- SUMMARIZE -->
+
+### Summarize
+
+Applies aggregation-type functions to metrics or dimensions at event, session, and user levels.
+
++++ Details
+
+## Specification {#summarize-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>Value<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>Summarize methods</li><li>Scope<ul><li>Event</li><li>Session</li><li>Person</li></ul></li></ul> | <ul><li>Numeric<ul><li>MAX - return largest value from a set of values</li><li>MIN - returns smallest value from a set of values</li><li>MEDIAN - returns median for a set of values</li><li>MEAN - returns average for a set of values</li><li>SUM - returns the sum for a set of values</li><li>COUNT - returns the number of values received</li><li>DISTINCT - returns set of distinct values</li></ul></li><li>Strings<ul><li>DISTINCT - returns set of distinct values</li><li>COUNT DISTINCT - returns the number of distinct values</li><li>MOST COMMON - returns the string value most often received</li><li>LEAST COMMON - returns the string value least often received</li><li>FIRST - The first value received; only applicable for the session &amp; event tables</li><li>LAST- The last value received; only applicable for the session &amp; event tables</li></ul></li><li>Dates<ul><li>DISTINCT - returns set of distinct values</li><li>COUNT DISTINCT - returns the number of distinct values</li><li>MOST COMMON - returns the string value most often received</li><li>LEAST COMMON - returns the string value least often received</li><li>FIRST - The first value received; only applicable for the session &amp; event tables</li><li>LAST- The last value received; only applicable for the session &amp; event tables</li><li>EARLIEST - The earliest value received (determined by time); only applicable for the session &amp; event tables</li><li>LATEST - The latest value received (determined by time); only applicable for the session &amp; event tables</li></ul></li></ul> | 3 function per derived field | New derived field | 
+
+{style="table-layout:auto"}
+
+## Use case {#summarize-uc}
+
+You would like to categorize Add to Cart Revenue into three different categories: Small, Medium, and Large. This allows you to analyze and identify the characteristics of high-value customers.
+
+### Data before {#summarize-uc-databefore}
+
+Assumptions:
+
+- Add to Cart Revenue is collected as a numeric field.
+
+Scenarios:
+
+- CustomerABC123 adds $35 to their cart for ProductABC, then separately adds ProductDEF to their cart for $75.
+- CustomerDEF456 adds $50 to their cart for ProductGHI, then separately adds ProductJKL to their cart for $275.
+- CustomerGHI789 adds $500 to their cart for ProductMNO.
+
+Logic:
+
+- If Total Add to Cart Revenue for a visitor is less than $150, set to Small.
+- If Total Add to Cart Revenue for a visitor is greater than $150, but less than $500, set to Medium.
+- If Total Add to Cart Revenue for a visitor is greater than or equal to $500, set to Large.
+
+Results:
+
+- Total Add to Cart Revenue for $110 for CustomerABC123.
+- Total Add to Cart Revenue for $325 for CustomerDEF456.
+- Total Add to Cart Revenue for $500 for CustomerGHI789.
+
+### Derived field {#summarize-uc-derivedfield}
+
+You create an `Add To Cart Revenue Size` derived field. You use the [!UICONTROL SUMMARIZE] function and the [!UICONTROL Sum] [!UICONTROL Summarize method] with [!UICONTROL Scope] set to [!UICONTROL Person] to sum the values of the [!UICONTROL cart_add] field. Then you use a second [!UICONTROL CASE WHEN] rule to split the result in the tree category sizes.
+
+![Screenshot of the Summarize rule 1](assets/summarize.png)
+
+
+
+### Data after {#summarize-uc-dataafter}
+
+| Add To Cart Revenue Size | Visitors |
+|---|--:|
+| Small | 1 |
+| Medium | 1 |
+| Large | 1 |
+
+{style="table-layout:auto"}
+
+## More information {#summarize-more-info}
+
+Use the Summarize function for event, session or person scope based calculations. Use the [Math](#math) function for hit-level based calculations.
+
++++
 
 <!-- TRIM -->
 
@@ -1086,7 +1574,6 @@ Trims whitespace, special characters, or number of characters from either the be
 |---|---|---|---|---|
 | <ul><li>String</li></ul> | <ul><li>[!UICONTROL Field]<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>Trim whitespace</li><li>Trim special characters<ul><li>Input of special characters</li></ul></li><li>Trim from left<ul><li>From&nbsp;<ul><li>String start</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li></ul></li><li>To<ul><li>String end</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li><li>Length</li></ul></li></ul></li><li>Trim from right<ul><li>From&nbsp;<ul><li>String end</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li></ul></li><li>To<ul><li>String start</li><li>Position<ul><li>Position #</li></ul></li><li>String<ul><li>String value</li><li>Index</li><li>Flag to include string</li></ul></li><li>Length</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>1 function per derived field</p> | <p>New derived field</p> |
 
-{style="table-layout:auto"}
 
 ## Use case 1 {#trim-uc1}
 
@@ -1283,12 +1770,16 @@ The following limitations apply to the Derived field functionality in general:
 | <p>Case When</p> | <ul><li>5 Case When functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
 | <p>Classify</p> | <ul><li>5 Classify functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
 | <p>Concatenate</p> | <ul><li>2 Concatenate functions per derived field</li></ul> |
-| <p>Find & Replace</p> | <ul><li>2 Find & Replace functions per derived field</li></ul> |
+| <p>Deduplicate</p> | <ul><li>5 Deduplicate functions per derived field</li></ul> |
+| <p>Find &amp; Replace</p> | <ul><li>2 Find &amp; Replace functions per derived field</li></ul> |
 | <p>Lookup</p> | <ul><li>5 Lookup functions per derived field</li></ul> |
 | <p>Lowercase</p> | <ul><li>2 Lowercase functions per derived field</li></ul> |
+| <p>Math</p> | <ul><li>25 operations per derived field</li><li>5 Math functions per derived field</li></ul> | 
 | <p>Merge Fields</p> | <ul><li>2 Merge Fields functions per derived field</li></ul> |
+| <p>Next or Previous</p> | <ul><li>3 Next or Previous functions per derived field</li></ul> |
 | <p>Regex Replace</p> | <ul><li>1 Regex Replace function per derived field</li></ul> |
 | <p>Split</p> | <ul><li>5 Split functions per derived field</li></ul> |
+| <p>Summarize</p> | <ul><li>3 Summarize functions per derived field</li></ul> |
 | <p>Trim</p> | <ul><li>1 Trim function per derived field</li></ul> |
 | <p>URL Parse</p> | <ul><li>5 URL Parse functions per derived field</li></ul> |
 
@@ -1309,7 +1800,7 @@ As an example, the Classify rule below uses 3 operators.
 ![Screenshot of the Classify rule 1](assets/classify-1.png)
 
 
-## More information
+## More information {#trim-more-info}
 
 [`Trim`](#trim) and [`Lowercase`](#lowercase) are features already available in the component settings in [Data views](../component-settings/overview.md). Using Derived Fields allows you to combine these functions to do more complex data transformation directly in Customer Journey Analytics. For example, you can use `Lowercase` to remove case sensitivity in an event field, and then use [`Lookup`](#lookup) to match the new lowercase field to a lookup dataset that only has lookup keys in lowercase. Or you can use `Trim` to remove characters before setting up `Lookup` on the new field.
 
