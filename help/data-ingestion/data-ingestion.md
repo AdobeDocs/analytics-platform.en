@@ -6,7 +6,7 @@ feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
 ---
-# Data Ingestion Overview
+# Data ingestion overview
 
 You have several options when ingesting data into Customer Journey Analytics. Some of them assume that you want to move traditional Adobe Analytics data over, some of them assume that you use data ingested into Adobe Experience Platform.
 

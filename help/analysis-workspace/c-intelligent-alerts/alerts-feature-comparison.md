@@ -14,21 +14,25 @@ The following sections describe the key differences:
 
 Hourly alerts are not available in Customer Journey Analytics like they are in Adobe Analytics. In Customer Journey Analytics, alerts can be configured for daily, weekly, or monthly. 
 
-This is because of the way data is collected into Adobe Experience Platform before it is made available in Customer Journey Analytics. Data Collection into Platform is a more involved process, which cannot be reliably achieved within an hour. This makes hourly alerts impractical due to the high potential for incomplete data. For more information, see [Data collection times vary](#data-collection-times-vary).
+This is because of the various ways that data can be ingested into Adobe Experience Platform, before it is reported on in Customer Journey Analytics. Data completeness and availability cannot be reliably achieved within an hour, making hourly alerts impractical due to the high potential for incomplete data. For more information, see [Data ingestion times vary](#data-ingestion-times-vary-in-customer-journey-analytics).
 
-## Data collection times vary in Customer Journey Analytics
+## Data ingestion times vary in Customer Journey Analytics
 
-Unlike Adobe Analytics, data collection for Adobe Experience Platform does not happen sequentially and in real time. The time that is required for data to be collected into Adobe Experience Platform varies by organization.  
+The time required before data is complete and available to be reported on in Customer Journey Analytics varies by organization. 
 
 This is due to the following reasons:
 
 * Platform's ability to hold all kinds of data schemas and types
 
-* A delay in the ETL batch delivery to Platform datasets<!--add link? -->
+  Unlike Adobe Analytics (which reports only on web data), [many different types of data can be ingested into Adobe Experience Platform](/help/data-ingestion/data-ingestion.md.) to be reported on in Customer Journey Analytics, and not all types of data can be sent sequentially and in real time. 
 
-For these reasons, data collection for the various kinds of data that can be ingested by Platform is complete only after a delay of 3 to 9 hours. This is the time it takes for the ETL batch delivery to be available in the Platform dataset.
+* A delay in the delivery of batch data to Platform datasets
 
-To account for this delay in collection time, alerts have a default delay of 9 hours before they are sent. This delay ensures that ETL batch delivery to the dataset is complete and that alert data is accurate when the alert is sent.
+  While some data might be available to report on sooner, all [batch data is ingested into a Platform dataset](/help/data-ingestion/data-ingestion.md#ingest-and-use-batch-data.) only after a period of 3 to 9 hours. For alerts to be accurate, data ingestion must be complete, with all batch data available in the dataset.
+
+For these reasons, data ingestion for the various kinds of event data that can be ingested is complete only after some delay, typically ranging from 3 to 9 hours past the data event time. For alerts to be accurate, event data for a given event range must be complete, meaning that we are no longer receiving any event data for the specified event range.
+
+To account for this delay in ingestion time, alerts have a default delay of 9 hours before they are sent. 
 
 You can adjust the default delay of 9 hours to anywhere between 0 and 24 hours. However, decreasing the delay below 9 hours can mean that you are reporting on incomplete data, which results in inaccurate alert information. 
 
@@ -42,21 +46,24 @@ _ - - - - - - -
 
 Consider the following when decreasing the delay time:
 
-* **Understand data availability vs. data completeness**: While some data might be available to report on sooner, all batch data is collected into a Platform dataset only after a period of 3 to 9 hours. For alerts to be accurate, data collection must be complete, with all batch data available in the dataset.
+* **Understand data availability vs. data completeness**: While some data might be available to report on sooner, all [batch data is ingested into a Platform dataset](/help/data-ingestion/data-ingestion.md#ingest-and-use-batch-data.) only after a period of 3 to 9 hours. For alerts to be accurate, data ingestion must be complete, with all batch data available in the dataset.
 
-* **Determine how long it takes for your data to be complete and available in the dataset**: Data collection times differ by organization. You can consult your data engineers to understand how long it takes your organization before all batch data is complete and collected into the dataset. Make sure that the delay time you choose for alert delivery is the same or less frequent than the time it takes for the ETL batch delivery to be available in the Platform dataset<!--add link? -->. 
+* **Determine how long it takes for your data to be complete and available in the dataset**: Data ingestion times differ by organization. Make sure that the delay time you choose for alert delivery is the same or less frequent than the time it takes for the batch data to be available in the Platform dataset<!--add link? -->. 
 
   >[!TIP]
   >
-  >  Analysts can use the following method to get an idea of how long it takes their organization for the ETL batch delivery to be available in the Platform dataset:
+  >The most accurate way of knowing the time required for all batch data to be complete and ingested into the Platform dataset is to consult the data engineers in your organization.
   >
-  >  1. In a freeform table in Analysis Workspace, add an Events metric and a Day dimension.
+  >Alternatively, you can get a general idea of how long it takes for the batch delivery in your organization to be available in the Platform dataset by creating the following freeform table in Analysis Workspace:
+  > 
   >
-  >  1. Break down the Day dimension using an Hours dimension.
+  >  1. In a freeform table in Analysis Workspace, add an [!UICONTROL **Events**] metric and a [!UICONTROL **Day**] dimension.
+  >
+  >  1. Break down the [!UICONTROL **Day**] dimension using an [!UICONTROL **Hours**] dimension.
   >
   >     Hours that have no data will show as 0.  
 
-* **Account for errors in your calculations**: If you decrease the default delay time, it's recommended to make it at least an hour longer than the time it takes your organization for data collection completeness. For example, if there is a 3-hour delay before your data collection is complete, then you should set the delay to 4 hours.
+* **Account for errors in your calculations**: If you decrease the default delay time, we recommend configuring the delay for at least an hour longer than the time it takes your organization for data ingestion completeness. For example, if there is a 3-hour delay before your data ingestion is complete, then you should set the delay to 4 hours.
 
   
 

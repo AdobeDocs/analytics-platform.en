@@ -52,7 +52,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
 
 + Data Ingestion {#cja-data-ingestion}
-  + [Data Ingestion Overview](../data-ingestion/data-ingestion.md)
+  + [Data ingestion overview](../data-ingestion/data-ingestion.md)
   + Ingest and use quick start guides{#ingest-use-guides}
     + [Adobe Analytics](../data-ingestion/analytics.md)
     + Adobe Experience Platform Edge Network {#edge-network}
