@@ -53,8 +53,6 @@ Some of the features and their associated value for the limit depend on the Cust
 <!--
 ## Attribution AI
 
-
-
 | Name |  Value | Description | PD? |
 |---|--:|---|:---:|
 | Attribution AI models | 35 | Maximum number of Attribution AI Model per year to analyze the impact of up to an average of 60 independent touchpoints on a specified conversion event.  | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
@@ -152,9 +150,19 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 | Name |  Value | Limit Type | Description |
 |---|--:|---|---|
 | Stitched Datasets | 5 - 50 | System-enforced Guardrail  | Maximum number of stitched datasets per customer; value varies depending on the Customer Journey Analytics package (see Product Description). | 
-| Backfill Data | 60 - 395 | System-enforced Guardrail  | Maximum number of days of backfill data; value varies depending on the Customer Journey Analytics package (see Product Description). |
+| Backfill Length | 6 - 25 | System-enforced Guardrail  | Maximum number of months of backfill data; value varies depending on the Customer Journey Analytics package (see Product Description). |
+| Lookback Window / Replay Frequency | 1/1 - 30/7 | System-enforced Guardrail | Maximum lookback window in days / Replay frequency; value varies depending on the Customer Journey Analytics package (see Product Description). |
 
 {style="table-layout:auto"}
+
+
+## Graph-based stitching 
+
+| Name |  Value | Limit Type | Description |
+|---|--:|---|---|
+| Stitched Datasets | 10 - 50 | System-enforced Guardrail  | Maximum number of stitched datasets per customer; value varies depending on the Customer Journey Analytics package (see Product Description). | 
+| Backfill Length | 13 - 25 | System-enforced Guardrail  | Maximum number of months of backfill data; value varies depending on the Customer Journey Analytics package (see Product Description). |
+| Lookback Window / Replay Frequency | 1/1 - 30/7 | System-enforced Guardrail | Maximum lookback window in days / Replay frequency; value varies depending on the Customer Journey Analytics package (see Product Description). |
 
 
 ## Filters and calculated metrics 
