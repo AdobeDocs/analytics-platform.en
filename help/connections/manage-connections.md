@@ -200,7 +200,12 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 
 ## Usage
 
-The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon.
+The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage UI to better plan your Customer Journey Analytics license renewal.
+
+You can select a time range (between last 6 months, year to date, or last 2 Years) and an interval (between monthly or quarterly) to monitor Customer Journey Analytics usage. The interface is divided into two sections:
+
+* Ingested rows: total rows ingested/sent from event datasets across all CJA Connections, including records skipped during ingestion
+* Reportable rows: total reportable rows that include all events data across all CJA Connections
 
 ![usage-view](assets/usage-view.png)
 
