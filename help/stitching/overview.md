@@ -339,13 +339,13 @@ Once your organization meets all [prerequisites](#prerequisites) and understands
 
 ### Options
 
-Select the options for stitching. The Customer Journey Analytics package determines available options for the initial backfill duration, lookback window, replay frequency, and maximum number of datasets permitted for stitching.
+Select the options for stitching. The Customer Journey Analytics package determines available options for the initial backfill duration, lookback window, replay frequency, and maximum number of datasets permitted for stitching. See the [Customer Journey Analytics product description](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) for more details.
 
 | | Customer Journey Analytics<br/>Select | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
 | One-time stitching backfill duration | 13 months | 13 months | 25 months | 
 | Lookback window and replay frequency |<li>1 day, every day</li><li>up to 7 days, weekly</li> | <li>1 day, every day</li><li>up to 14 days, weekly</li>| <li>1 day, every day</li><li>up to 30 days, weekly</li> | 
-| Maximum number of datasets permitted for stitching | 5 | 10 | 15 | 
+| Maximum number of datasets permitted for stitching | 5 | 10 | 50 | 
 
 ### Request Support 
 
