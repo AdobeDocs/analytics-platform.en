@@ -9,6 +9,12 @@ role: User
 ---
 # Analysis Workspace overview
 
+>[!CONTEXTUALHELP]
+>id="cja_workspace_fundamentals"
+>title="Analysis Workspace Fundamentals"
+>abstract="Follow the tour below to learn some of the fundamentals of Analysis Workspace including building a table, adding a visualization, changing your date range and more."
+>additional-url="<https://experience.adobe.com/#/@demosystem4/platform/analytics/?AnalyticsUI-core_version=prod20240625165945>" text="Tour Guide"
+
 Analysis Workspace allows you to quickly build analyses to gather insights and then share those insights with others. Using the drag-and-drop browser interface, you can craft your analysis, add visualizations to bring data to life, curate a dataset, and share and schedule projects with anyone you choose.
 
 The following video provides a brief overview with examples of what is possible.
