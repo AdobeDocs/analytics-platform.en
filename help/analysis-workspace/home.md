@@ -7,7 +7,7 @@ exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 ---
-# Analysis Workspace overview
+# Analysis Workspace overview {#analysis-workspace-overview}
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_fundamentals"
