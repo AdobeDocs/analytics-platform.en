@@ -7,7 +7,13 @@ exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 ---
-# Analysis Workspace overview
+# Analysis Workspace overview {#analysis-workspace-overview}
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_fundamentals"
+>title="Analysis Workspace Fundamentals"
+>abstract="Follow the tour below to learn some of the fundamentals of Analysis Workspace including building a table, adding a visualization, changing your date range and more."
+>additional-url="https://experience.adobe.com/#/@demosystem4/platform/analytics/?AnalyticsUI-core_version=prod20240625165945" text="Tour Guide"
 
 Analysis Workspace allows you to quickly build analyses to gather insights and then share those insights with others. Using the drag-and-drop browser interface, you can craft your analysis, add visualizations to bring data to life, curate a dataset, and share and schedule projects with anyone you choose.
 
