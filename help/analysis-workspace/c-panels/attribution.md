@@ -5,7 +5,14 @@ feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
 ---
-# Attribution panel
+# Attribution panel {#attribution-panel}
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_attribution"
+>title="Attribution"
+>abstract="Quickly compare and visualize any number of attribution models using any dimension and conversion metric"
+>additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ panel"
+
 
 The [!UICONTROL Attribution] panel is an easy way to build an analysis comparing various attribution models. It is a feature that gives you a dedicated workspace to use and compare attribution models.
 
