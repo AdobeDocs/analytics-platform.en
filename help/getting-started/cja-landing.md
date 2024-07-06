@@ -23,11 +23,13 @@ AI Assistant is a conversational experience that allows practitioners to perform
 
 [![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
->[!TAB Graph-based stitching] 
+>[!TAB Graph-based stitching*] 
 
 Through Graph-based stitching, you can use the identity graph from the Experience Platform Identity Service to get a better view of the customer journey by: <ul><li>Joining datasets with different identifiers without having to extract, transform and load additional data to reflect a single identifier.</li> <li>Improving coverage of preferred or golden identity for a single dataset by sharing identities across datasets,</li><li>Aligning profiles created in Real-Time Customer Data Platform and Journey Optimizer with people in Customer Journey Analytics.</li></ul>
 
 [![image](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
+
+*_You must have the Prime package for graph-based stitching._*
 
 >[!TAB B2B lookups] 
 
