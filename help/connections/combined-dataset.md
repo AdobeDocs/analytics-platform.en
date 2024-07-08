@@ -60,7 +60,7 @@ the following combined dataset is used for reporting.
 
 To illustrate the importance of schema paths, consider this scenario. In the first dataset, `string_color` is based on schema path `_experience.whatever.string_color` and in the second dataset on schema path  `_experience.somethingelse.string_color`. In this scenario, the data is **not** merged into one column in the resulting combined dataset. Instead, the result is two `string_color` columns in the combined dataset.
 
-This combined event dataset is what is used in reporting. It does not matter which dataset a row comes from. Customer Journey Analytics treats all data as if it is in the same dataset. If a matching Person ID appears in both datasets, they are considered the same unique person. If a matching Person ID appears in both datasets with a timestamp within 30 minutes, they are considered part of the same session.
+This combined event dataset is what is used in reporting. It does not matter which dataset a row comes from. Customer Journey Analytics treats all data as if it is in the same dataset. If a matching Person ID appears in both datasets, they are considered the same unique person. If a matching Person ID appears in both datasets with a timestamp within 30 minutes, they are considered part of the same session. Fields with identical schema paths are merged.
 
 This concept also applies to attribution. It does not matter which dataset a row comes from; attribution works exactly as if all events came from a single dataset. Using the above tables as an example:
 
@@ -79,6 +79,10 @@ However, if you included both tables in your connection, attribution changes sin
 | Yellow | 6 |
 | Blue | 3 |
 | Red | 2 |
+
+>[!NOTE]
+>
+>If a merged field is a lookup key for one event dataset in the connection, the associated lookup dataset will enrich *all* values of that field. It does not matter which event dataset a row comes from, as the lookup relationship is associated with the shared schema path.
 
 ## Cross-channel analysis
 
