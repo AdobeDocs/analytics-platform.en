@@ -76,7 +76,7 @@ The new workflow lets you add an Experience Platform dataset when you create a c
    |---|---|
    | Dataset | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to display a popup with more details for the dataset. In the popup you can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
    | Dataset type | The type of dataset: Event, Profile or Lookup. | 
-   | Number of records | The number of records available in the last batch of the dataset in Experience Platform. |
+   | Number of records | The total records in the previous month for the dataset in Experience Platform. |
    | Schema | The schema on which the dataset is based. Select the name to direct you to the schema in Experience Platform. |
    | Last batch | The state of the last batch ingested in Experience Platform. See [Batch states](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) more information. |
    | Dataset ID | The id of the dataset. | 
