@@ -82,7 +82,7 @@ However, if you included both tables in your connection, attribution changes sin
 
 >[!NOTE]
 >
->If a merged field is a lookup key for one event dataset in the connection, the associated lookup dataset will enrich *all* values of that field. It does not matter which event dataset a row comes from, as the lookup relationship is associated with the shared schema path.
+>If a merged field is a lookup key for one event dataset in the connection, the associated lookup dataset will enrich **all** values of that field. It does not matter which event dataset a row comes from, as the lookup relationship is associated with the shared schema path.
 
 ## Cross-channel analysis
 
