@@ -25,7 +25,7 @@ These release notes cover the release period of July 17, 2024 through August 202
 
 ## Fixes in Customer Journey Analytics
 
-AN-345454; AN-349816; AN-349905; AN-350617
+AN-306000; AN-288748; AN-351547; AN-351110
 
 ## Important notices for Customer Journey Analytics Administrators
 
