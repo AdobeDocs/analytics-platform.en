@@ -28,7 +28,7 @@ This is due to the following reasons:
 
 * A delay in the delivery of batch data to Platform datasets
 
-  While some data might be available to report on sooner, all [batch data is ingested into a Platform dataset](/help/data-ingestion/data-ingestion.md#ingest-and-use-batch-data.) only after a period of 3 to 9 hours. For alerts to be accurate, data ingestion must be complete, with all batch data available in the dataset.
+  While some data might be available to report on sooner, all [batch data is ingested into a Platform dataset](/help/data-ingestion/data-ingestion.md#ingest-and-use-batch-data.), typically ranging from 3 to 9 hours past the data event time. For alerts to be accurate, data ingestion must be complete, with all batch data available in the dataset. <!--3 to 9 hours is a sweet spot, what we are suggesting.  -->
 
 For these reasons, data ingestion for the various kinds of event data that can be ingested is complete only after some delay, typically ranging from 3 to 9 hours past the data event time. For alerts to be accurate, event data for a given event range must be complete, meaning that we are no longer receiving any event data for the specified event range.
 
