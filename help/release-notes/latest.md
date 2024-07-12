@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (June 2024)
 
-**Last update**: June 18, 2024
+**Last update**: July 12, 2024
 
 These release notes cover the release period of June 6, 2024 through July 2024. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md) which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
