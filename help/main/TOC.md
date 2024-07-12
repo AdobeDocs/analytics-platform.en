@@ -85,6 +85,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [No value options](../data-views/component-settings/no-value-options.md)
     + [Persistence](../data-views/component-settings/persistence.md)
     + [Substring](../data-views/component-settings/substring.md)
+    + [Summary data group](../data-views/component-settings/summary-data-group.md)
     + [Value bucketing](../data-views/component-settings/value-bucketing.md)
   + [Standard component reference](../data-views/component-reference.md)
   + [BI extension](../data-views/bi-extension.md)
