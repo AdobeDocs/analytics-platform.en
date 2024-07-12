@@ -89,7 +89,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Standard component reference](../data-views/component-reference.md)
   + [BI extension](../data-views/bi-extension.md)
   + [Derived fields](../data-views/derived-fields/derived-fields.md)
-  + [Summary data](/help/data-views/summary-data-group.md)
+  + [Summary data](../data-views/summary-data.md)
   + [Labels and policies](../data-views/data-governance.md)
 
 + Workspace projects {#cja-workspace}
