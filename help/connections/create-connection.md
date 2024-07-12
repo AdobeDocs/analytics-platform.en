@@ -135,7 +135,7 @@ For each dataset that you add to this connection, [!UICONTROL Customer Journey A
 
 >[!IMPORTANT]
 >
->Add at least one event  or summary dataset as part of a connection.
+>Add at least one event or summary dataset as part of a connection.
 
 There are different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, [!UICONTROL Lookup] data and [!UICONTROL Summary] data.
 
