@@ -10,9 +10,9 @@ role: User
 
 Frequently asked questions around guided analysis.
 
-+++**How can my organization be provisioned for guided analysis?**
++++**Does my organization have access to guided analysis?**
 
-Guided analysis is part of Adobe Product Analytics, a paid add-on to Customer Journey Analytics. If you would like to start using this add-on, contact your Adobe Account Team.
+Guided analysis views are included in all Customer Journey Analytics packages. Learn more about the [views your CJA package unlocks](overview.md#provisioning). 
 
 +++
 
