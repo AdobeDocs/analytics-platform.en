@@ -1,6 +1,6 @@
 ---
 title: Guided analysis FAQ
-description: Frequently asked questions around Guided analysis.
+description: Frequently asked questions for Guided analysis.
 exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: product analytics
@@ -8,7 +8,7 @@ role: User
 ---
 # Guided analysis FAQ
 
-Frequently asked questions around guided analysis.
+Frequently asked questions for guided analysis.
 
 +++**Does my organization have access to guided analysis?**
 
@@ -20,7 +20,7 @@ Guided analysis views are included in all Customer Journey Analytics packages. S
 
 If you are already using Customer Journey Analytics today, no additional implementation changes are needed. Guided analysis uses the same [Data views](../data-views/data-views.md) and [Connections](../connections/overview.md) as other CJA interfaces like [Analysis Workspace](../analysis-workspace/home.md). 
 
-To enable your end users to be most successful with guided analysis, it is recommended you have a strong event schema and managment strategy in place in Adobe Experience Platform and [Data views](../data-views/data-views.md).
+To enable your end users to be most successful with guided analysis, it is recommended you have a strong event schema and management strategy in place in Adobe Experience Platform and [Data views](../data-views/data-views.md).
 
 +++
 
@@ -32,7 +32,7 @@ To enable your end users to be most successful with guided analysis, it is recom
 
 +++
 
-+++**How does terminology compare between guided analysis and Analysis Workspace?**
++++**How does the terminology compare between guided analysis and Analysis Workspace?**
 
 Guided analysis uses terms that are more frequently used among product teams. You can reference this table when switching between guided analysis and [Analysis Workspace](../analysis-workspace/home.md).
 
@@ -48,7 +48,7 @@ Guided analysis uses terms that are more frequently used among product teams. Yo
 
 +++
 
-+++**What are some differences around how guided analysis and Analysis Workspace approach reporting?**
++++**What are some differences in how guided analysis and Analysis Workspace approach reporting?**
 
 While [Analysis Workspace](../analysis-workspace/home.md) and guided analysis use the same underlying data, the way that each tool enables you to form queries of that data is different.
 
