@@ -10,10 +10,6 @@ role: User
 
 Guided analysis enables users to self-serve high quality data and insights about the customer journey through guided workflows, built on the cross-channel data of Customer Journey Analytics. Cross-functional teams, from marketing to product, can connect in real time to use and understand these reports.
 
->[!NOTE]
->
-> Guided analysis is currently only available as part of Adobe Product Analytics, which is a paid add-on to Customer Journey Analytics. If your organization would like to start using this set of capabilities, contact your Adobe Account Team.
-
 Similar to Analysis Workspace and Mobile scorecards, guided analysis uses data from a [Data view](../data-views/data-views.md), which references data in Adobe Experience Platform through a [Connection](../connections/overview.md). Many reports created in guided analysis can seamlessly transfer to Analysis Workspace for additional research.
 
 The following guided analysis views are available:
@@ -66,9 +62,19 @@ Guided analysis uses the following UI elements:
 
 ## Provisioning
 
-Guided analysis is part of Adobe Product Analytics, which is a paid add-on to Customer Journey Analytics. If your organization would like to start using this set of capabilities, contact your Adobe Account Team.
+Guided analysis views are included in Customer Journey Analytics packages in the following way:
 
-Once your organization is provisioned to use guided analysis, product profile administrators can add or remove access to it in the Adobe Admin Console.
+| Package | Available views |
+| --- | --- |
+| [!UICONTROL CJA add-ons] | Trends: Usage, Trends: Frequency, Funnel: Friction, Funnel: Conversion trends, Retention: Retention rates, User growth: Active, User growth: Net growth |
+| [!UICONTROL CJA Foundation] | Trends: Usage |
+| [!UICONTROL CJA Select] | Foundation views + Trends: Frequency, Funnel: Friction, Funnel: Conversion trends, Retention: Retention rates, User growth: Active, User growth: Net growth |
+| [!UICONTROL CJA Prime] | Select views + User stream: Timeline, Feature matrix: Engagement, Impact: Release, Impact: First Use |
+| [!UICONTROL CJA Ultimate] | Prime views |
+
+{style="table-layout:auto"}
+
+Product profile administrators can add or remove access to guided analysis in the Adobe Admin Console.
 
 1. Log in to the [Adobe Admin Console](https://adminconsole.adobe.com).
 1. Select **[!UICONTROL Customer Journey Analytics]** in the list of products.
