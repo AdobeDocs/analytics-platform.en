@@ -12,7 +12,7 @@ Frequently asked questions around guided analysis.
 
 +++**Does my organization have access to guided analysis?**
 
-Guided analysis views are included in all Customer Journey Analytics packages. Learn more about the [views your CJA package unlocks](overview.md#provisioning). 
+Guided analysis views are included in all Customer Journey Analytics packages. See the [provisioning](overview.md#provisioning) section on the overview page to learn more about the views that your CJA package unlocks.
 
 +++
 
