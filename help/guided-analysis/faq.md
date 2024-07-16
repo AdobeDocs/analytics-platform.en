@@ -64,7 +64,7 @@ Consider the following example where you focus on data around your website's hom
 
    ![Dimension centered](assets/dimension-centered.png){style="border:1px solid gray"}
 
-* A typical event and user-centered guided analysis approach would be, "How many users have visited our home page?"
+* A typical event and user-centered guided analysis approach would be, "How many users have visited the home page?"
 
    ![Event centered](assets/event-centered.png){style="border:1px solid gray"}
 
