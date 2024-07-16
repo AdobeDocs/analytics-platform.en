@@ -8,7 +8,7 @@ role: User
 ---
 # Industry use cases
 
-Use cases for guided analysis vary by industry. This page provides some illustrative examples of what product teams can accomplish with guided analysis and Adobe Product Analytics capabilities. 
+This page provides some illustrative examples of what product teams across various industries can accomplish with guided analysis.
 
 +++**Retail**
 
