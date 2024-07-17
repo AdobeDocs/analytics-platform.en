@@ -124,9 +124,11 @@ When you want to measure the impact of intervention X on outcome Y, it is possib
 
 ## Use calculated metrics in the Experimentation panel
 
-Not all calculated metrics are compatible with the Experimentation panel. The Definition of the calculated metric determines its compatibility. 
+Not all calculated metrics are compatible with the Experimentation panel.
 
-The Definition can contain any dimensions, metrics, or filters. However, only the following functions are supported:
+If a calculated metric contains functions as part of its [!UICONTROL Definition], it might not be compatible with the Experimentation panel. 
+
+Only the following functions are supported when using a calculated metric with the Experimentation panel:
 
 * Pi
 * Add
@@ -134,9 +136,7 @@ The Definition can contain any dimensions, metrics, or filters. However, only th
 * Multiply
 * Divide
 
-Calculated metrics that meet the following criteria can be used in the Experimentation panel:
-
-* that contain filters in the definition can be used with
+The calculated metric Definition can contain any dimensions, metrics, or filters.
 
 ## Use derived metrics in the Experimentation panel
 
