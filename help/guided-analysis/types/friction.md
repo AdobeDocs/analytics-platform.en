@@ -16,11 +16,11 @@ The **[!UICONTROL Friction]** view provides a visual representation of a critica
 
 Use cases for this view type include:
 
-* **Conversion analysis**: You can analyze conversions at each stage of the funnel, e.g. a retail checkout, account sign-up, subscription flow, or some other critical journey within your product experience. By tracking the number of users who progress from one step to the next, you can identify bottlenecks that have unusual or undesired conversion rates. This information is valuable to understand where you can improve your product journey for immediate results.
+* **Conversion analysis**: You can analyze conversions at each stage of the funnel, such as a retail checkout, account sign-up, subscription flow, or some other critical journey within your product experience. By tracking the number of users who progress from one step to the next, you can identify bottlenecks that have unusual or undesired conversion rates. This information is valuable to understand where you can improve your product journey for immediate results.
 * **Experimentation analysis**: You can compare conversion rates across a funnel that has optional steps or steps where an A/B experiment is being run. This information can help you determine which variation of the funnel leads to the highest conversion rate so that you can encourage more users down that path.
 * **Onboarding optimization**: Optimize your product's onboarding process by examining user behavior around key events. You can identify which steps that users struggle with or fail to complete.
 * **Feature adoption and engagement**: Understand how users interact with specific features in your product. Analyzing the progression of users through feature-related steps lets you see adoption rates and identify areas where users might underuse certain features. You can then use this information to focus on feature improvements to increase adoption rates.
-* **Marketing channel effectiveness**: Measure the effectiveness of marketing channels. You can create a segment that focuses on users that interacted with different marketing channels (e.g. paid search, display, natural search, or direct), and then compare their journeys to see which channel leads to the best product outcomes.
+* **Marketing channel effectiveness**: Measure the effectiveness of marketing channels. You can create a segment that focuses on users that interacted with different marketing channels, such as paid search, display, natural search, or direct. You can then compare their journeys to see which channel leads to the best product outcomes.
 
 ## Query rail
 
@@ -28,7 +28,7 @@ The query rail allows you to configure the following components:
 
 * **[!UICONTROL View]**: Switch between this view type and [Conversion trends](conversion-trends.md).
 * **[!UICONTROL Steps]**: The event touchpoints that you want to track. Each bar in the chart represents a step. You can include up to ten steps.
-  * [!UICONTROL Compare]: Each step provides an option to compare multiple events in a single funnel step, creating a "forked funnel." This feature allows you to compare the friction of two journeys side-by-side without creating two separate analyses. It is useful when there are step options or an A/B experiment is being run within the funnel.
+  * [!UICONTROL Compare]: Each step provides an option to compare multiple events in a single funnel step, creating a "forked funnel." This feature allows you to compare the friction of two journeys side-by-side without creating two separate analyses. It is useful when there are step options or an A/B experiment is being run within the funnel. See [Funnel friction analysis](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel/funnel-friction-analysis) in Customer Journey Analytics tutorials for a video that explains how to compare funnels.
 * **[!UICONTROL Counted as]**: The scope that you want applied to the funnel. Options include [!UICONTROL Sessions] and [!UICONTROL Users].
   * [!UICONTROL Sessions]: All steps must happen within the same session to be counted.
   * [!UICONTROL Users]: All steps must happen within the selected reporting window to be counted.
