@@ -318,30 +318,19 @@ Below is an example that illustrates how to
     )
     WHERE _demosystem5.IngestTime >= to_timestamp(from_unixtime(@from_batch_ingestion_time/1000, 'yyyy-MM-dd HH:mm:ss'));
     
-  -- Update the checkpoint_log table
-    INSERT INTO checkpoint_log
-    SELECT
-        'data_feed' as process_name,
-        'SUCCESSFUL' as process_status,
-        cast(@to_batch_ingestion_time AS string) as last_snapshot_id,
-        cast(@last_updated_timestamp AS timestamp) as process_timestamp;
+   -- Update the checkpoint_log table
+   INSERT INTO checkpoint_log
+   SELECT
+      'data_feed' as process_name,
+      'SUCCESSFUL' as process_status,
+      cast(@to_batch_ingestion_time AS string) as last_snapshot_id,
+      cast(@last_updated_timestamp AS timestamp) as process_timestamp;
 
-  END
-  $$;
-  ```
+   END
+   $$;
+   ```
 
    +++
-
-Another example query includes the use of 
-
-- attribution functions.
-
-  +++
-  Details
-  
-  
-
-
 
 
 ### Schedule Query
