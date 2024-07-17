@@ -7,23 +7,23 @@ role: User
 ---
 # Experimentation panel
 
-The **[!UICONTROL Experimentation]** panel lets analysts compare different user experience, marketing, or messaging variations to determine which is best at driving a specific outcome. You can evaluate the lift and confidence of any A/B experiment from any experimentation platform - online, offline, from Adobe solutions like Target or Journey Optimizer, and even BYO (bring-your-own) data.
+The **[!UICONTROL Experimentation]** panel lets analysts compare different user experience, marketing, or messaging variations to determine which is best at driving a specific outcome. You can evaluate the lift and confidence of any A/B experiment from any experimentation platform—online, offline, from Adobe solutions like Target or Journey Optimizer, and even BYO (bring-your-own) data.
 
 Read more about the [integration between Adobe Customer Journey Analytics and Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja).
 
-## Access Control {#access}
+## Access control {#access}
 
 The Experimentation panel is available to use by all Customer Journey Analytics users. No Admin rights or other permissions are required. However, the setup (steps 1 and 2 below) requires actions that only Admins can perform.
 
-## New functions in Calculated Metrics {#functions}
+## New functions in calculated metrics {#functions}
 
 Two new advanced functions were added: [!UICONTROL Lift] and [!UICONTROL Confidence]. For more information, see [Reference - advanced functions](/help/components/calc-metrics/cm-adv-functions.md).
 
-## Step 1: Create connection to experiment dataset/s {#connection}
+## Step 1: Create a connection to experiment datasets {#connection}
 
 The recommended data schema is for the experiment data to be in an [Object array](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) that contains the experiment and variant data in two separate dimensions. Both dimensions need to be in a **single** object array. If you have your experiment data in a single dimension (with experiment and variant data in a delimited string), you can use the [substring](/help/data-views/component-settings/substring.md) setting in data views to split the dimension into two for use in the panel.
 
-After your experiment data has been [ingested](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) into Adobe Experience Platform, [create a connection in Customer Journey Analytics](/help/connections/create-connection.md) to one or more experiment dataset/s.
+After your experiment data has been [ingested](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) into Adobe Experience Platform, [create a connection in Customer Journey Analytics](/help/connections/create-connection.md) to one or more experiment datasets.
 
 ## Step 2: Add context labels in data views {#context-labels}
 
@@ -38,11 +38,11 @@ In your data view that contains experimentation data, pick two dimension, one wi
 
 Without these labels present, the Experiment panel does not work, since there are no experiments to work with.
 
-## Step 3: Configure the Experiment panel {#configure}
+## Step 3: Configure the Experimentation panel {#configure}
 
-1. In Customer Journey Analytics Workspace, drag the Experimentation panel into a project.
+1. In Analysis Workspace in Customer Journey Analytics, add the Experimentation panel to a project. For more information about adding panels to a project, see [Add panels to the project](/help/analysis-workspace/build-workspace-project/create-projects.md#add-panels-to-the-project) in [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md).
 
-  ![The Experimention panel dragged into a project.](assets/experiment.png)
+   ![The Experimention panel dragged into a project.](assets/experiment.png)
 
    >[!IMPORTANT]
    >
@@ -54,16 +54,17 @@ Without these labels present, the Experiment panel does not work, since there ar
    | Setting | Definition |
    | --- | --- |
    | **[!UICONTROL Experiment]** | A set of variations on an experience that were exposed to end users to determine which is best to keep in perpetuity. An experiment is made up of two or more variants, one of which is considered the control variant. This setting is pre-populated with the dimensions that have been labeled with the  **[!UICONTROL Experiment]** label in data views, and the last 3 months' worth of experiment data. |
-   | **[!UICONTROL Control Variant]** | One of two or more alterations in an end user's experience that are being compared for the purpose of identifying the better alternative. One variant must be selected as the control, and only one variant can be considered to be the control variant. This setting is pre-populated with the dimensions that have been labeled with the  **[!UICONTROL Variant]** label in data views. This setting pulls up the variant data that is associated with this experiment. |
-   | **[!UICONTROL Success Metrics]** | The metric or metrics that a user is comparing variants with. The variant with the most desirable outcome for the conversion metric (whether highest or lowest) is declared the "best performing variant" of an experiment. You can add up to 5 metrics. |
-   | **[!UICONTROL Normalizing Metric]** | The basis ([!UICONTROL People], [!UICONTROL Sessions], or [!UICONTROL Events]) on which a test runs. For example, a test may compare the conversion rates of several variations where **[!UICONTROL Conversion rate]** is calculated as **[!UICONTROL Conversions per session]** or **[!UICONTROL Conversions per person]**. |
+   | **[!UICONTROL Control variant]** | One of two or more alterations in an end user's experience that are being compared for the purpose of identifying the better alternative. One variant must be selected as the control, and only one variant can be considered to be the control variant. This setting is pre-populated with the dimensions that have been labeled with the  **[!UICONTROL Variant]** label in data views. This setting pulls up the variant data that is associated with this experiment. |
+   | **[!UICONTROL Success metrics]** | The metric or metrics that a user is comparing variants with. The variant with the most desirable outcome for the conversion metric (whether highest or lowest) is declared the "best performing variant" of an experiment. You can add up to 5 metrics. <p>Calculated metrics that meet the necessary criteria can also be used. For more information, see [Use calculated metrics in the Experimentation panel](#use-calculated-metrics-in-the-experimentation-panel).</p> |
+   | **[!UICONTROL Normalizing metric]** | The basis ([!UICONTROL People], [!UICONTROL Sessions], or [!UICONTROL Events]) on which a test runs. For example, a test may compare the conversion rates of several variations where **[!UICONTROL Conversion rate]** is calculated as **[!UICONTROL Conversions per session]** or **[!UICONTROL Conversions per person]**. |
+   | [!UICONTROL **Include confidence upper/lower bounds**] |  |
    | **[!UICONTROL Date Range]** | The date range is automatically set, based on the first event received in Customer Journey Analytics for the experiment selected. You can restrict or expand the date range to a more specific timeframe if needed. |
 
-1. Click **[!UICONTROL Build]**.
+1. Select **[!UICONTROL Build]**.
 
 ## Step 4: View the panel output {#view}
 
-The Experimentation panel returns a rich set of data and visualizations to help you better understand how your experiments are performing. At the top of the panel, a summary line is provided to remind you of the panel settings you selected. At any time, you can edit the panel by clicking the edit pencil at the top right.
+The Experimentation panel returns a rich set of data and visualizations to help you better understand how your experiments are performing. At the top of the panel, a summary line is provided to remind you of the panel settings you selected. At any time, you can edit the panel by selecting the edit pencil at the top right.
 
 You also get a text summary that indicates whether the experiment is conclusive or not, and summarizes the outcome. Conclusiveness is based on statistical significance. (See "Statistical methodology" below.) You can see summary numbers for the best performing variant with the highest lift and confidence.
 
@@ -122,5 +123,21 @@ The following illustration contrasts these situations:
 When you want to measure the impact of intervention X on outcome Y, it is possible that the real cause of both is the confounding factor C. If the data is not achieved by randomizing persons on X, the impact is harder to measure, and the analysis explicitly accounts for C. Randomization breaks the dependence of X on C, allowing us to measure the effect of X on Y without having to worry about other variables. 
 
 ## Use calculated metrics in the Experimentation panel
+
+Not all calculated metrics are compatible with the Experimentation panel. The Definition of the calculated metric determines its compatibility. 
+
+The Definition can contain any dimensions, metrics, or filters. However, only the following functions are supported:
+
+* Pi
+* Add
+* Subtract
+* Multiply
+* Divide
+
+Calculated metrics that meet the following criteria can be used in the Experimentation panel:
+
+* that contain filters in the definition can be used with
+
+## Use derived metrics in the Experimentation panel
 
 Refer to this blog post for information on [using derived metrics in the Experimentation panel](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
