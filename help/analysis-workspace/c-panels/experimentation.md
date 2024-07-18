@@ -108,13 +108,13 @@ A 95% confidence sequence includes the "true" value of the business metric in 95
 
 Customer Journey Analytics allows analysts to select any dimension as the "experiment". But how do you interpret an analysis where the dimension chosen as the experiment is not one for which persons are randomized?
 
-For example, consider an ad that a person sees. You may be interested in measuring the change in some metric (for example, average revenue) if you decide to show persons "ad B" instead of "ad A". The causal effect of showing ad B in place of ad A is of central importance in arriving at the marketing decision. This causal effect may be measured as the average revenue over the whole population, ifyou replaced the status quo of showing ad A with the alternate strategy of showing ad B. 
+For example, consider an ad that a person sees. You may be interested in measuring the change in some metric (for example, average revenue) if you decide to show persons "ad B" instead of "ad A". The causal effect of showing ad B in place of ad A is of central importance in arriving at the marketing decision. This causal effect may be measured as the average revenue over the whole population, if you replaced the status quo of showing ad A with the alternate strategy of showing ad B. 
 
 A/B testing is the gold standard within the industry for objectively measuring the effects of such interventions. The critical reason why an A/B test gives rise to a causal estimate is due to the randomization of persons to receive one of the possible variants. 
 
 Now, consider a dimension that is not achieved by randomization, for example, the US state of the person. Let's say that persons primarily come from two states, New York and California. The average revenue of sales of a winter clothing brand can be different in the two states due to the differences in the regional weather. In such a situation, the weather may be the true causal factor behind winter clothing sales, and not the fact that the geographical states of persons are different.
 
-The experimentation panel in Customer Journey Analytics lets you analyze data as average revenue difference by states of the persons. In such a situation, the output does not have a causal interpretation. However, such an analysis may still be of interest. It provides an estimate (along with measures of uncertainty) of the difference in average revenue by states of the persons.  This value is also referred to as "Statistical Hypothesis Testing". The output of this analysis may be interesting, but not necessarily actionable, since you have not and sometimes cannot randomize persons to one of the possible values of the dimension. 
+The Experimentation panel in Customer Journey Analytics lets you analyze data as average revenue difference by states of the persons. In such a situation, the output does not have a causal interpretation. However, such an analysis may still be of interest. It provides an estimate (along with measures of uncertainty) of the difference in average revenue by states of the persons.  This value is also referred to as "Statistical Hypothesis Testing". The output of this analysis may be interesting, but not necessarily actionable, since you have not and sometimes cannot randomize persons to one of the possible values of the dimension. 
 
 The following illustration contrasts these situations:
 
@@ -122,21 +122,20 @@ The following illustration contrasts these situations:
 
 When you want to measure the impact of intervention X on outcome Y, it is possible that the real cause of both is the confounding factor C. If the data is not achieved by randomizing persons on X, the impact is harder to measure, and the analysis explicitly accounts for C. Randomization breaks the dependence of X on C, allowing us to measure the effect of X on Y without having to worry about other variables. 
 
-## Use calculated metrics in the Experimentation panel
+## Use calculated metrics in the Experimentation panel {#use-in-experimentation}
 
-Not all calculated metrics are compatible with the Experimentation panel.
+Not all calculated metrics are compatible with the Experimentation panel. 
 
-If a calculated metric contains functions as part of its [!UICONTROL Definition], it might not be compatible with the Experimentation panel. 
+Calculated metrics that include any of the following metrics or constants are not compatible with the Experimentation panel:
 
-Only the following functions are supported when using a calculated metric with the Experimentation panel:
+* Base metrics from a summary dataset<!--add link to Rob's "Summary data" doc when it's published --> 
+* Any of the following base metrics: 
+  * People
+  * (what else?)
+* Base metrics that are divided by each other or multiplied together (for example, `Revenue`/`Orders`)
+* Constants that are added to or subtracted from a base metric (for example, `Revenue+50`)
 
-* Pi
-* Add
-* Subtract
-* Multiply
-* Divide
-
-The calculated metric Definition can contain any dimensions, metrics, or filters.
+Calculated metrics that are compatible with the Experimentation panel have the [!UICONTROL **Experimentation**] value listed in the [!UICONTROL **Product compatibility**] field when creating the calculated metric. For information about creating a calculated metric, see [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
 ## Use derived metrics in the Experimentation panel
 
