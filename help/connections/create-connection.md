@@ -58,7 +58,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
     | **[!UICONTROL Key]** | For lookup datasets only (such as _id). |
     | **[!UICONTROL Matching Key]** | For lookup datasets only (such as _id). |
     | **[!UICONTROL Import new data]** | Set to On or Off. |
-    | **[!UICONTROL Backfill data]** | You can request to backfill the data in a dataset based on event timestamps. For example, you can request to backfill the last 7 days worth of data. Configure the right Person ID and test your connection. If everything looks good, you can backfill all the remaining data with ease.<p>In addition, you can enable the import of new data by dataset. |
+    | **[!UICONTROL Backfill data]** | You can request to backfill the data in a dataset. For example, you can request to backfill the last 7 days worth of data. Configure the dataset correctly and test your connection. If everything looks good, you can backfill all the remaining data with ease.<p>In addition, you can enable the import of new data by dataset.  |
     | **[!UICONTROL Backfill status]** | This status indicates whether any backfill data is processing. |
 
     {style="table-layout:auto"}
