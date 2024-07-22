@@ -13,6 +13,9 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **July 2024** | |
+| Derived field deduplicate function | Added documentation on the derived field [deduplicate](/help/data-views/derived-fields/derived-fields.md#deduplicate) function. |
+| Updated common error messages | Made minor updates to the [common error messages](/help/analysis-workspace/workspace-faq/error-messages.md). |
 | **June 2024** | |
 | Updated product name that refers to streaming media features | Replaced instances of "Media Analytics" and "Streaming Media" with the name "Streaming Media Collection Add-on" when referring to the set of streaming media features that collect streaming media data and surface it in Analysis Workspace. <p>These updates are available throughout the Customer Journey Analytics documentation as well as the [Streaming Media Collection Add-on documentation](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).</p> |
 | Graph-based stitching | Updated and restructured [stitching documentation](/help/stitching/overview.md) with the introduction of graph-based stitching. |
@@ -92,7 +95,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **June 2023** | | 
 | Cross-channel analysis and stitching | In anticipation of the upcoming changes to enable stitching and to further clarify how cross-channel analysis can be elevated using stitching, documentation related to Cross-Channel Analytics functionality is edited to refer to [cross-channel analysis](../use-cases/cross-channel/cross-channel.md) as the Customer Journey Analytics capability and use case, and [Stitching](../stitching/overview.md) as an important functionality to accomplish this. |
 | PowerBI & Tableau access to Customer Journey Analytics data views | The Customer Journey Analytics BI extension enables SQL access to data views that you have defined in Customer Journey Analytics. [Learn more](/help/data-views/bi-extension.md)|
-| Adobe Journey Optimizer data views | Customer Journey Analytics Admins have access to some extra data views in Customer Journey Analytics, entitled "AJO Data view (Sandbox-name)". [Learn more](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html). | 
+| Adobe Journey Optimizer data views | Customer Journey Analytics Admins have access to some extra data views in Customer Journey Analytics, entitled "AJO Data view (Sandbox-name)". [Learn more](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration). | 
 | Currency conversion | Updated documentation for [currency conversion](../data-views/component-settings/format.md#currency) support. | 
 | Calculated metrics updates | The following updates were made to calculated metrics documentation in order to align it with current Customer Journey Analytics functionality: <ul><li>Updated the list of [default calculated metrics](/help/components/calc-metrics/default-calcmetrics.md) available in Customer Journey Analytics</li><li>Updated screen shots and procedures in various calculated metrics articles </li></ul> |
 | **May 2023** | |

@@ -375,9 +375,6 @@ For each supported function, find details below on:
 
 - constraints (if applicable).
 
->[!NOTE]
->
->The Lookup function has been renamed to [Classify](#classify). See the [Classify](#classify) function for more information.
 
 <!-- CASE WHEN -->
 
@@ -617,10 +614,6 @@ Defines a set of values that are replaced by corresponding values in a new deriv
 
 +++ Details
 
->[!NOTE]
->
->This function was originally named Lookup but has been renamed to Classify to accommodate the Lookup function with different functionality.
-
 ## Specifications {#classify-io}
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
@@ -827,15 +820,12 @@ You define an `Origin - Destination` derived field. You use the [!UICONTROL CONC
 +++
 
 
-<!-- DEDUPLICATE
-
 ### Deduplicate
 
 Prevents counting a value multiple times.
 
 +++ Details
 
-{{release-limited-testing-section}}
 
 ## Specifications {#deduplicate-io}
 
@@ -912,7 +902,6 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 
 +++
 
--->
 
 <!-- FIND AND REPLACE -->
 
@@ -1021,6 +1010,8 @@ You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] fun
 ![Screenshot of the Lowercase rule](assets/lookup.png)
 
 ## More information {#lookup-more-info}
+
+The Lookup function is applied at report time to the data retrieved by Customer Journey Analytics from the lookup dataset you have configured as part of your connection. 
 
 You can quickly insert a [!UICONTROL Lookup] function in the rule builder, already containing one or more other functions.
 
