@@ -142,8 +142,6 @@ To view keys associated with an export account:
 
 ## Configure company-wide settings (administrators only)
 
-{{release-limited-testing-section}}
-
 System administrators can restrict users from creating accounts and locations, or they can limit the types of accounts users can create and use. 
 
 ![Admin settings tab](assets/locations-admin-settings.png)

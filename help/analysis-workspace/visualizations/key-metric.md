@@ -73,6 +73,8 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 ## View the output
 
+The output should look something like this:
+
 ![Key metric output showing the metic, summary change, summary number, and line graphs.](assets/key-metric-output.png)
 
 Please note:
