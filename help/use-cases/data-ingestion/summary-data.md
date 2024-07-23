@@ -324,13 +324,13 @@ To create a dataset:
 
 1. If not already in the Experience Platform UI, select **[!UICONTROL Experience Platform]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
 1. Select **[!UICONTROL Datasets]** from the left rail.
-1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) Create dataset.
-1. In the Datasets > Create datasets screen, select Create dataset from schema.
-1. In the Select schema step of the Workflows > Create dataset from schema wizard, ![Search](/help/assets/icons/Search.svg) search for and select your Example Summary Data Schema.
-1. Select Next.
-1. In the Configure dataset step of the Workflows > Create dataset from schema wizard:
-   1. Enter a Name for the dataset, for example: Example Summary Data Dataset. Optionally provide a description.
-   1. Select Finish.
+1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create dataset]**.
+1. In the **[!UICONTROL Datasets]** > **[!UICONTROL Create datasets]** screen, select **[!UICONTROL Create dataset from schema]**.
+1. In the **[!UICONTROL Select schema]** step of the **[!UICONTROL Workflows]** > **[!UICONTROL Create dataset from schema]** wizard, ![Search](/help/assets/icons/Search.svg) search for and select your **[!UICONTROL Example Summary Data Schema]**.
+1. Select **[!UICONTROL Next]**.
+1. In the **[!UICONTROL Configure dataset]** step of the **[!UICONTROL Workflows]** > **[!UICONTROL Create dataset from schema]** wizard:
+   1. Enter a **[!UICONTROL Name]** for the dataset, for example: `Example Summary Data Dataset`. Optionally provide a description.
+   1. Select **[!UICONTROL Finish]**.
 
 You see a screen displaying the details of your new dataset. 
 
@@ -353,7 +353,7 @@ To upload your sample data into this dataset:
    1. Check whether all data fields of your **[!UICONTROL Source Data]** are correctly mapped to the corresponding **[!UICONTROL Target fields]** in your schema. For our sample data, no errors are reported as you explicity named the fields in your schema similar to the field names in your sample data. Otherwise you can use this screen to correct the mapping.
    1. You can optionally select **[!UICONTROL Validate]** to (once more) validate the data.
    1. You can optionally select **[!UICONTROL Preview data]** to open a dialog with a preview of the data once loaded into the dataset.
-   1. Select Finish.
+   1. Select **[!UICONTROL Finish]**.
 
 In **[!UICONTROL Sources]** > **[!UICONTROL Dataflow - XX/XX/XXXX, XX:XX XX]**, the status of your upload will appear. Refresh to see updates of the upload. When successful, your sample is loaded into Experience Platform. 
 
@@ -374,29 +374,29 @@ To use your sample data in Customer Journey Analytics, you create a connection t
    1. In the **[!UICONTROL Select datasets]** step of the **[!UICONTROL Add datasets]** wizard:
       1. Search ![Search](/help/assets/icons/Search.svg) and select **[!UICONTROL Example Summary Data Dataset]**, **[!UICONTROL Example Event Event Data Dataset]**, and **[!UICONTROL Example Lookup Data Dataset]**.
       1. Select **[!UICONTROL Next]**.
-   1. In the **[!UICONTROL Datasets settings]** step of the **[!UICONTROL Add datasets ]**wizard:
+   1. In the **[!UICONTROL Datasets settings]** step of the **[!UICONTROL Add datasets]** wizard:
       
-      For the **[!UICONTROL Example Event Data Dataset]**:
+      1. For the **[!UICONTROL Example Event Data Dataset]**:
 
-      1. Confirm the selections for **[!UICONTROL Person ID]** (`person_id`) and **[!UICONTROL Timestamp]** are correct.
-      1. Select **[!UICONTROL Web Data]** from the **[!UICONTROL Data source type]**.
-      1. Enable **[!UICONTROL Import all new data]**.
-      1. Enable **[!UICONTROL Backfill all existing data]**.
+         1. Confirm the selections for **[!UICONTROL Person ID]** (`person_id`) and **[!UICONTROL Timestamp]** are correct.
+         1. Select **[!UICONTROL Web Data]** from the **[!UICONTROL Data source type]**.
+         1. Enable **[!UICONTROL Import all new data]**.
+         1. Enable **[!UICONTROL Backfill all existing data]**.
 
-      For the **[!UICONTROL Example Lookup Data Dataset]**:
+      1. For the **[!UICONTROL Example Lookup Data Dataset]**:
 
-      1. Select **[!UICONTROL tracking_code]** as the **[!UICONTROL Key]** and **[!UICONTROL tracking_code (Event datasets)]** as the **[!UICONTROL Matching]** Key.
-      1. Select **[!UICONTROL Web Data]** from the **[!UICONTROL Data source type]**.
-      1. Enable **[!UICONTROL Import all new data]**.
-      1. Enable **[!UICONTROL Backfill all existing data]**.
+         1. Select **[!UICONTROL tracking_code]** as the **[!UICONTROL Key]** and **[!UICONTROL tracking_code (Event datasets)]** as the **[!UICONTROL Matching]** Key.
+         1. Select **[!UICONTROL Web Data]** from the **[!UICONTROL Data source type]**.
+         1. Enable **[!UICONTROL Import all new data]**.
+         1. Enable **[!UICONTROL Backfill all existing data]**.
 
-      For the **[!UICONTROL Example Summary Data Dataset]**:
+      1. For the **[!UICONTROL Example Summary Data Dataset]**:
 
-      1. Confirm the selections for **[!UICONTROL Timestamp]** and **[!UICONTROL Timezone]** are correct.
-      1. Enable **[!UICONTROL Import all new data]**.
-      1. Enable **[!UICONTROL Backfill all existing data]**.
+         1. Confirm the selections for **[!UICONTROL Timestamp]** and **[!UICONTROL Timezone]** are correct.
+         1. Enable **[!UICONTROL Import all new data]**.
+         1. Enable **[!UICONTROL Backfill all existing data]**.
 
-      Select Add datasets.
+      1. Select **[!UICONTROL Add datasets]**.
 
 1. Back in  **[!UICONTROL Connections]** > **[!UICONTROL Example Connection using Summary Data]** connection, select **[!UICONTROL Save]** to save the connection. 
 
