@@ -820,15 +820,12 @@ You define an `Origin - Destination` derived field. You use the [!UICONTROL CONC
 +++
 
 
-<!-- DEDUPLICATE
-
 ### Deduplicate
 
 Prevents counting a value multiple times.
 
 +++ Details
 
-{{release-limited-testing-section}}
 
 ## Specifications {#deduplicate-io}
 
@@ -905,7 +902,6 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 
 +++
 
--->
 
 <!-- FIND AND REPLACE -->
 
