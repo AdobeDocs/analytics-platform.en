@@ -70,6 +70,5 @@ Combining the summarized event data and on-site clickstream data enables you to 
 | ghi789 | 500 | $500 | 500 | $750 | 1.50 |
 
 
-
-
+See the [Ingest and report on summary data](/help/use-cases/data-ingestion/summary-data.md) use case for a detailed guide how to make use of, report on, and analyze summary data in Customer Journey Analytics.
 
