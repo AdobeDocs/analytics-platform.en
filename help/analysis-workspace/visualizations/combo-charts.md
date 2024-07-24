@@ -37,7 +37,7 @@ Keep this in mind:
    | --- | --- |
    | **[!UICONTROL Time comparison]** | The most common type of comparison - comparing this time period to 4 weeks ago, for example. If you selected [!UICONTROL Time comparison], make a secondary selection as to which time period you want to compare.<p>![LIne comparison with Time period selected and the secondary selection field for Time period.](assets/combo-time-period.png) |
    | **[!UICONTROL Function]** | You could introduce a function like [!UICONTROL Average] into the comparison. See a list of supported functions below.<p>![LIne comparison drop-down menu showing Functions selected and a list of available supported functions.](assets/combo-functions.png) |
-   | **[!UICONTROL Secondary metric]** | You could, for example, compare [!UICONTROL Revenue] to another metric.<p>![A Combo chart comparing two metrics.](assets/combo-2metrics.png) |
+   | **[!UICONTROL Secondary metric]** | You could, for example, compare [!UICONTROL Revenue] to another metric.<p>![A Combo chart comparing two metrics.](assets/combo-2metrics-settings.png) |
 
    {style="table-layout:auto"}
 
@@ -71,13 +71,13 @@ Here is an example of the cumulative average of the Revenue metric:
 
 Here is an example of a combo chart with both Cumulative average and Mean functions:
 
-![A Combo chart showing both cumulative avrage and mean functions.](assets/combo-two-functions.png)
+![A Combo chart showing both cumulative avrage and mean functions.](assets/combo-three-functions.png)
 
 ## Combo chart settings
 
 Click the gear icon on the top right of a combo chart to change its settings.
 
-![Combo chart Settings view showing the options described below.](assets/combo-settings.png)
+![Combo chart Settings view showing the options described below.](assets/combo-settings.png){width=70%}
 
 | Setting | Definition |
 | --- | --- |

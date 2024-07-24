@@ -10,3 +10,7 @@ role: User
 Similar to a pie chart, this visualization shows data as parts or filters of a whole. Use a donut graph when comparing percentages of a total, typically with a small number of items.
 
 ![A Donut chart showing data as parts or filters of a whole.](assets/donut.png)
+
+Here is a video on the bullet graph visualization:
+
+>[!VIDEO](https://video.tv.adobe.com/v/23989/?quality=12)

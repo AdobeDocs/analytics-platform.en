@@ -7,8 +7,8 @@ role: User
 ---
 # Bullet graph
 
-Lets you see how a value you are interested in compares to or measures against other performance ranges (goals).
+A bullet graph shows how a metric compares to or measures against performance ranges (goals). 
 
- ![Visualization Settings window showing the Chart type option, Bullet Options, and other chart settings.](assets/bullet-image.png)
+ ![](assets/bullet.png)
 
-The bullet graph features a single, primary measure (for example, current year-to-date revenue) and allows you to enter qualitative ranges performance ranges (for example, compared to a target revenue). You can specify high, medium, and low. You can specify goal ranges in [!UICONTROL Visualization Settings].
+The bullet graph features a single, primary measure (for example, current year-to-date revenue) and allows you to enter qualitative ranges performance ranges (for example, compared to a target revenue). You can specify high, medium, and low goal ragnes . You can specify goal ranges in ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]**.

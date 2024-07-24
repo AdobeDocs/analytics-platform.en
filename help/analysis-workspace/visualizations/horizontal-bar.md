@@ -7,18 +7,18 @@ role: User
 ---
 # Horizontal Bar and Horizontal Bar Stacked
 
-## Horizontal Bar {#section_73A4D6F6C8864045A97B0B32B5FFFEDB}
+## Horizontal Bar
 
 This visualization shows horizontal bars representing various values across one or more metrics.
 
-![Horizontal bar showing metrics including Page Views, Page Velocity, Visits, Entries, and Exits.](assets/horizontal_bar.png)
+![Horizontal bar showing metrics including Page Views, Page Velocity, Visits, Entries, and Exits.](assets/horizontal-bar.png)
 
-## Horizontal Bar Stacked {#section_50C08E9E20A94024A6553BC352ADB597}
+## Horizontal Bar Stacked
 
 This visualization is like the [!UICONTROL Horizontal Bar Chart], but the series bars appear stacked.
 
 ![A stacked horizontal bar showing Page Views, Visits, Entries, and Exits.](assets/horizontal-bar-stacked.png)
 
-The [!UICONTROL Horizontal Bar Stacked] visualization setting on bar stacked visualizations turns the chart into a "100% stacked" visualization:
+Use the **[!UICONTROL 100% stacked]** option in ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** to turn the chart into a 100% stacked visualization.
 
-![Horizontal bar stacked 100% showing Visits, Page Views, and Unique Visitors.](assets/horizstacked100.png)
+![Horizontal bar stacked 100% showing Visits, Page Views, and Unique Visitors.](assets/horizontal-bar-stacked100.png)

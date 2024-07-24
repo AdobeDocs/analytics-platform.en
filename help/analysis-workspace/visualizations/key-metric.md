@@ -31,7 +31,7 @@ This visualization addresses a variety of common use cases, including:
 
 1. Configure the visualization by selecting a metric, a primary date range, and a comparison date range and a filter (if desired):
 
-   ![Key metric configuration showing the options for metric, primary date range, comparison date range, and segment.](assets/key-metric-config.png)
+   ![Key metric configuration showing the options for metric, primary date range, comparison date range, and segment.](assets/key-metrics-config.png)
 
    | Configuration setting | Definition |
    | --- | --- |
@@ -75,7 +75,7 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 The output should look something like this:
 
-![Key metric output showing the metic, summary change, summary number, and line graphs.](assets/key-metric-output.png)
+![Key metric output showing the metic, summary change, summary number, and line graphs.](assets/key-metrics.png)
 
 Please note:
 
@@ -85,13 +85,12 @@ Please note:
 
 * From here, you can hover over the line graphs to see the statistics for individual days:
 
-![Visit statistics](assets/key-metric-output2.png)
 
 ## Visualization settings
 
-The Key metric summary offers multiple flexible settings to enable better reporting and communication of important metrics. Settings can be accessed through the gear icon in the top right-hand corner of the visualization.  
+The Key metric summary offers multiple flexible settings to enable better reporting and communication of important metrics. Settings can be accessed through ![Setting](/help/assets/icons/Setting.svg) **Settings** in the top right-hand corner of the visualization.  
 
-![Key metric summary settings showing Summary display type, general, and display options.](assets/key-metric-settings.png)
+![Key metric summary settings showing Summary display type, general, and display options.](assets/key-metrics-settings.png){width=60%}
 
 | Setting | Description |
 | --- | --- |
@@ -110,9 +109,7 @@ The Key metric summary offers multiple flexible settings to enable better report
 
 After building the visualization, you can still edit the original configuration. 
 
-1. Click the pencil icon in the top right corner of the visualization (next to the settings gear icon).
-
-   ![Visualization edit icon.s](assets/edit-icon.png)
+1. Click ![Edit](/help/assets/icons/Edit.svg) in the top right corner of the visualization (next to ![Setting](/help/assets/icons/Setting.svg)).
 
    You are now taken back to the original configuration view. 
 
