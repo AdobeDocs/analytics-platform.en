@@ -342,8 +342,9 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Configure streaming Google Analytics data into Platform](../use-cases/ga/streaming.md)
     + [Report on Google Analytics data in Customer Journey Analytics](../use-cases/ga/report.md)
   + Data ingestion {#data-ingestion}
-    + [Ingest Marketo Engage data into Adobe Experience Platform and report in Customer Journey Analytics](../use-cases/data-ingestion/marketo.md)
-    + [Ingest Adobe Experience Platform audiences into Customer Journey Analytics](../use-cases/data-ingestion/ingest-aep-segments.md)
+    + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
+    + [Ingest and use Experience Platform audiences ](../use-cases/data-ingestion/ingest-aep-segments.md)
+    + [Ingest and use summary data](../use-cases/data-ingestion/summary-data.md)
   + Data views {#data-views}
     + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
