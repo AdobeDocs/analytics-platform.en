@@ -5,6 +5,8 @@ feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User
 ---
+# Blank panel
+
 A blank panel shows all the visualizations you can use within a panel, and the options to modify the panel, to build a completely customized analysis.
 
 Simply select a visualization (like **[!UICONTROL Cohort table]**) to add to the panel, or select a panel option (like **[!UICONTROL Attribution]**) to modify the panel for a specific purpose.
