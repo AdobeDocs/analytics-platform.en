@@ -35,11 +35,10 @@ Flow visualizations let you configure the start or end of the path you are inter
 
 1. If you choose a metric, you also need to provide a [!UICONTROL **Pathing Dimension**] to use as your path leading to or coming from your selected component, as shown here. The default is [!UICONTROL **Page**].
 
-   ![The Pathing dimension.](assets/pathing-dim.png) 
+   ![Flow configuration](assets/flow-configure.png) 
 
 1. (Optional) Select **[!UICONTROL Show advanced settings]** to configure any of the following options:
 
-   ![Advanced settings with Disiplay options, Number of columns and Flow container.](assets/adv-settings.png)
 
    | Setting | Description |
    | --- | --- |
@@ -70,15 +69,15 @@ Flow visualizations let you configure the start or end of the path you are inter
 
 ## View and change the Flow output {#output}
 
-![Flow output example showing Ends with Visits, Pathing dimension: Page, and Flow container: Vistors.](assets/flow-output.png)
-
 A summary of the Flow configuration appears at the top of the diagram. The paths in the diagram are proportional. Paths with more activity appear thicker. 
+
+![Flow output example showing Ends with Visits, Pathing dimension: Page, and Flow container: Vistors.](assets/flow-output.png)
 
 To drill down further into the data, you have several options:
 
 * The flow diagram is interactive. Mouse over the diagram to change the details that are shown.
 
-* When you click on a node in the diagram, the details for that node appear. Click on the node again to collapse it.
+* When you select on a node in the diagram, the details for that node appear. Click on the node again to collapse it.
 
    ![Example interactive flow diagram showing node-details.](assets/node-details.png)
 
@@ -94,13 +93,13 @@ To drill down further into the data, you have several options:
 
 ## Filtering
 
-Above each column, a filter appears when you hover over it. By clicking the filter, you get the same filter dialog that exists in the Freeform table today. This filter works the same as it does in the Freeform table.
+Above each column, a filter appears when you hover over it. By selecting the filter, you get the same filter dialog that exists in the Freeform table today. This filter works the same as it does in the Freeform table.
 
 * Use advanced settings to include or exclude certain criteria with our list of operators. 
 * Once you have filtered an item from the list, that specific column will reflect the filtering. (The filter either reduces it to only show the item allowed in the filter, or it removes all items except for the one item you want in the filter.
 * All downstream and upstream columns should persist, as long as there is data flowing into the remaining nodes. 
 * Once applied, the filter icon appears in blue above the column it is filtering. 
-* To remove a filter, click on the filter icon to open the filter menu. Remove any filters applied and then click **[!UICONTROL Save]**. The flow should return to its previous, unfiltered state.
+* To remove a filter, select on the filter icon to open the filter menu. Remove any filters applied and then select **[!UICONTROL Save]**. The flow should return to its previous, unfiltered state.
 
 ## Right-click options {#right-click}
 
@@ -119,45 +118,23 @@ Above each column, a filter appears when you hover over it. By clicking the filt
 | Create audience from selection | Creates an audience based on the column that is selected. |
 | [!UICONTROL Collapse entire column] | Hide all nodes in a column. |
 
-## Example scenario for 'limit to first/last occurrence'
+## Limit to first/last occurrence
 
 When using this option, keep in mind that:
 
 * **[!UICONTROL Limit to first/last occurrence]** counts only the first/last occurrence in the series. All other occurrences of the **[!UICONTROL Starts with]** or **[!UICONTROL Ends with]** criteria are discarded. 
 * If used with a **[!UICONTROL Starts with]** flow, only the first occurrence that matches the start criteria is included. 
+  In the example below, **all** occurrences of Add to cart and Product Main Category in each step of the flow is included.
+  ![No limit, first](assets/limitofffirst.png)
+
+  In the example below, only **first** occurrences of Add to cart and Product Main category in each step of the flow is included.
+  ![Lint, start](assets/limitonfirst.png)
 * If used with an **[!UICONTROL Ends with]** flow, only the last occurrence that matches the end criteria will be included. 
-* The series used differs based on the container. If using the **[!UICONTROL Visit]** container, the series of events will be the session. If using the **[!UICONTROL Visitor]** container, the series of events will be all the events for a given user in the provided date range. 
-* The **[!UICONTROL Limit to first/last occurrence]** option can be configured in the advanced settings when using a Metric or Dimension Item in the "Starts with" or "Ends with" fields.
- 
-Example series of events:
+  In the example below, **all** occurrences of Product Main Category and Add to cart in each step of the flow is included.
+  ![No limit, first](assets/limitofflast.png)
 
-Home > Products > Add to cart > Products > Add to Cart > Billing > Order Confirmation
- 
-### Consider a flow analysis using the following settings:
+  In the example below, only the **last** occurrences of Product Main category and Add to cart in each step of the flow is included.
+  ![Lint, start](assets/limitonlast.png)
+* The series used differs based on the container. If using the **[!UICONTROL Person]** container, the series of events will be the session. If using the **[!UICONTROL Session]** container, the series of events will be all the events for a given user in the provided date range. 
+* The **[!UICONTROL Limit to first/last occurrence]** option can be configured in the advanced settings when using a Metric or Dimension Item in the **[!UICONTROL Starts with]** or **[!UICONTROL Ends with]** fields.
 
-* Start with[!UICONTROL  Add to cart] (Dimension Item)
-* [!UICONTROL Page] pathing dimension
-* [!UICONTROL Visit] container
- 
-If "Limit to first/last occurrence" is disabled, then this single series of events would count 2 occurrences of "Add to Cart".
-Expected Flow Output:
-"Add to Cart" (2) —> "Products" (1)
-                  -> "Billing" (1)
- 
-However, if "Limit to first/last occurrence" is enabled, only the first occurrence of "Add to cart" would be included in the analysis.
-Expected Flow Output:
-"Add to Cart" (1) —> "Products" (1)
- 
-### Consider the same series of events but using the following settings:
-
-* Ends with [!UICONTROL Add to cart] (Dimension Item)
-* [!UICONTROL Page] pathing dimension
-* [!UICONTROL Visit] container
- 
-If **[!UICONTROL Limit to first/last occurrence]** is *disabled*, then this single series of events would count 2 occurrences of "Add to Cart".
-Expected Flow Output:
-"Products" (2) <— "Add to cart" (2)
- 
-However, if **[!UICONTROL Limit to first/last occurrence]** is *enabled*, only the last occurrence of [!UICONTROL Add to cart] would be included in the analysis.
-Expected Flow Output:
-"Products" (1) <— "Add to cart" (1)

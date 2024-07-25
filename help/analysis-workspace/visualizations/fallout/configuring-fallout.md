@@ -15,11 +15,10 @@ There is no limitation on the number of steps you can add or the number of dimen
 
 You can do pathing on eVars, including merchandising eVars and [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) (variables that can have multiple values per event, such as products, listVars, merchandising eVars and list props). For example, suppose someone is looking at shoes,shirt on one page, and on the next page they're looking at shirt,socks. The next product flow report from shoes will be shirt and socks, NOT shirt.
 
-1. Drag a [!UICONTROL Fallout] visualization from the Visualizations drop-down into a [!UICONTROL Freeform Table].
+1. Add a ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]** visualization. See [Add a visualization to a panel](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Drag a page, for example home, from the Page dimension onto the Add touchpoint dropdown list.
 
-1. Drag the Page dimension into the Freeform Table and from there, drag a page (in this case, Home - JJEsquire) into the **[!UICONTROL Add TouchPoint]** field as the first touchpoint.
-
-   ![The All Visits drop-down showing JJEsquire dragged to the Add Touchpoint field.](assets/fallout1.png)
+   ![The home page from the Home page dimension dragged to the Add Touchpoint field.](assets/fallout1.png)
 
    Hover over a touchpoint to see the fallout and other information about that level, such as the name of the touchpoint, the person count at that point, and see the success rate for that touchpoint (as well as compare the success rate to other touchpoints.)
 
