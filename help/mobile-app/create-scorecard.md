@@ -137,15 +137,21 @@ Similar to a pie chart, this visualization shows data as parts of a whole. Use a
 
 The Line visualization represents metrics using a line in order to show how values change over a period of time. A line chart shows dimensions over time but works with any visualization. You are visualizing the product category dimension in this example.
 
-![New movile scorecard showing a Line visualization](assets/line.png)
+![New mobile scorecard showing a Line visualization](assets/line.png)
 
 ### [!UICONTROL Horizontal Bar]
 
 This visualization shows horizontal bars representing various values across one or more metrics. For example, to easily see what your top products are, use [!UICONTROL Horizontal Bar] for your preferred visualization.
 
-![New movile scorecard showing a horizontal bar](assets/horizontal.png)
+![New mobile scorecard showing a horizontal bar](assets/horizontal.png)
 
-### Remove [!UICONTROL Unspecified] dimension item
+## Name scorecards {#name}
+
+To name the scorecard, click the namespace in the upper-left of the screen and type the new name.
+
+![Naming_Scorecards](assets/new_name.png)
+
+### Remove [!UICONTROL Unspecified] dimension item {#remove-dims}
 
 If you want to remove [!UICONTROL Unspecified] dimension items from your data, do the following:
 
@@ -290,12 +296,6 @@ You can preview how the scorecard will look and function once it is published in
     * Use your computer's scroll function to simulate scrolling the phone screen with your finger.
 
     * Click and hold to simulate pressing and holding your finger on the phone screen. This is useful for interacting with the visualizations in the detailed view.
-
-## Name scorecards {#name}
-
-To name the scorecard, click the namespace in the upper-left of the screen and type the new name.
-
-![Naming_Scorecards](assets/new_name.png)
 
 ## Share scorecards {#share}
 

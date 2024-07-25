@@ -59,12 +59,12 @@ Within a project, the menu provides options for managing your project, adding co
 |  Insert  | Insert new panels or visualizations from this menu. You can also insert new panels and visualizations from the left rail.  |
 |  [Components](/help/components/overview.md)  | Create new filters, calculated metric, date range, or alert components from your project. You can also create new components from the left rail. If your component definitions have recently changed, Refresh Components will retrieve the latest definitions. |
 |  [Share](/help/analysis-workspace/curate-share/send-schedule-files.md)  | Curate, share and schedule PDF/CSV projects to recipients in your organization.  |
-|  Help  | Access help documentation, videos, and the Analytics [Experience League community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Manage the visibility of Workspace tips as well as the [debugger](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Find details about Workspace and factors that impact project [performance](/help/admin/optimizing-performance.md).  |
+|  Help  | Access help documentation, videos, and the Analytics [Experience League community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Manage the visibility of Workspace tips as well as the [debugger](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Find details about Workspace and factors that impact project [performance](/help/technotes/optimizing-performance.md).  |
 |  Share button or Owner  | If you are in an Own or Edit for the project, the Share button in the top-right gives you one-click access to manage your project recipients. If you are in a Duplicate or View role for the project, you will see the project owner's name. |
 
 ### Project Info & Settings {#info-settings}
 
-**[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]** provides project-level information on the currently active project.
+**[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project info & settings]** provides project-level information on the currently active project.
 
 ![The Project Info & Settings window.](assets/projectinfo.png)
 
@@ -83,11 +83,19 @@ Settings include:
 
 ## Left rail {#left-rail}
 
-Within a project, [panels](/help/analysis-workspace/c-panels/panels.md), tables, [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), and [components] are accessed from the left rail. These are your project building blocks.
+Within a project, various icons are available in the left rail, and each represents important parts of a project:
 
-You can also access visualizations and panels from the [Blank Panel](/help/analysis-workspace/c-panels/blank-panel.md) as well. 
+* [Panels](/help/analysis-workspace/c-panels/panels.md) ![panels icon](assets/panels-icon.png)
 
-Components (Dimensions, Metrics, Filters, Date Ranges) in the left rail relate to the active panel data view. The active panel will have a blue border around it, and the active data view will be listed at the top of the component rail.
+* [Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)![visualizations icon](assets/visualizations-icon.png)
+
+* [Components](/help/components/overview.md)![components icon](assets/components-icon.png)
+
+* [Data dictionary](/help/components/data-dictionary/data-dictionary-overview.md)![data dictionary icon](assets/data-dictionary-icon.png)
+
+* [Table of contents](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) ![toc icon](assets/toc-icon.png)
+
+Components (Dimensions, Metrics, Filters, Date Ranges) in the left rail relate to the active panel data view. The active panel is identified by the blue border that surrounds it, and the active data view is listed at the top of the component rail.
 
 ![The components relating to the active panel data view for Cross-Industry Demo Data data view.](assets/left-rail.png)
 
