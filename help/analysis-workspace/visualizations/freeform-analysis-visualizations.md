@@ -40,17 +40,13 @@ The following visualization types are available in Analysis Workspace:
 
 1. Use any of the following methods to add the visualization:
 
-   * In the left rail, select the **Visualizations** icon <!-- add icon -->, then drag a visualization to the panel where you want to add it. 
+   ![Add visualization](assets/add-visualization.png)
 
-     ![Visualizations panel](assets/viz-rail.png)
+   * In the left rail, select ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **Visualizations**, then drag a visualization to the panel where you want to add it. 
 
-   * On the panel where you want to add the visualization, select the **Plus** icon, then choose the icon that represents the visualization that you want to add. Hover over the icon for each visualization to see its name.
-
-     ![Button for adding a visualization](assets/visualization-add-to-panel.png)
+   * On the panel where you want to add the visualization, select ![AddCircle](/help/assets/icons/AddCircle.svg), then choose the icon that represents the visualization that you want to add. Hover over the icon for each visualization to see its name.
 
    * Add a [blank panel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html), then choose the visualization that you want to add.
-
-     ![Blank panel](assets/blank_panel.png)
 
    * Right-click an existing panel in your Analysis Workspace project, then select [!UICONTROL **Duplicate visualization**] or [!UICONTROL **Copy visualization**].
 
@@ -94,7 +90,7 @@ Each visualization has its own settings that you can manage. To access visualiza
 
 ## Legend {#legend}
 
-A visualization legend helps you to relate date in a source table to plotted series in the visualization. The legend is interactive - you can click a legend item to show/hide a series in the visualization. This is helpful if you want to simplify the data being visualized. 
+A visualization legend helps you to relate date in a source table to plotted series in the visualization. The legend is interactive - you can select a legend item to show/hide a series in the visualization. This is helpful if you want to simplify the data being visualized. 
 
 Additionally, you can rename legend labels to help you make visuals more consumable. Note: legend editing does **not** apply to: Treemap, Bullet, Summary Change/Number, Text, Freeform, Histogram, Cohort or Flow visualizations.
 
@@ -122,11 +118,11 @@ Additional functionality for a visualization is available by right-clicking on t
 | [Download project data](/help/analysis-workspace/export/download-send.md) | Download visualization data source as a CSV. |
 | Duplicate Visualization | Makes an exact duplicate of the current visualization, which you can then modify. |
 | Edit Description | Add (or edit) a text description for the visualization. |
-| Get Visualization Link | Lets you direct someone to a specific visualization within a project. When the link is clicked, the recipient will be required to login before being directed to the exact visualization linked to. |
+| Get Visualization Link | Lets you direct someone to a specific visualization within a project. When the link is selected, the recipient will be required to login before being directed to the exact visualization linked to. |
 | Start Over | (Works for Flow, Venn, Histogram) Deletes the configuration for the current visualization so you can re-configure it from scratch. |
 
 ## Create Visual icon {#quick-viz}
 
-If you are not sure which visualization to pick, click the **[!UICONTROL Create Visual]** icon in any table row (available on hover). This is the fastest way to add a visualization. Clicking it prompts Analysis Workspace to take an educated guess at which visualization would best fit your data. For example, if you have 1 row selected, it will create a trended line graph. If you have 3 filter rows selected, it will create a Venn diagram. 
+you are not sure which visualization to pick, select ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Create Visual]** icon in any table row (available on hover). This is the fastest way to add a visualization. Clicking it prompts Analysis Workspace to take an educated guess at which visualization would best fit your data. For example, if you have 1 row selected, it will create a trended line graph. If you have 3 filter rows selected, it will create a Venn diagram. 
 
 ![Quick visualization](assets/quick-viz.png)

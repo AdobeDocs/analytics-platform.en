@@ -16,17 +16,29 @@ The following panel types are available in Analysis Workspace for [!UICONTROL Cu
 | Panel name | Description |
 | --- | --- |
 | [Blank panel](/help/analysis-workspace/c-panels/blank-panel.md) | Choose from available panels and visualizations to start your analysis. |
-| [Quick Insights panel](quickinsight.md) | Quickly build a freeform table and an accompanying visualization in order to analyze and uncover insights faster. |
 | [Attribution panel](attribution.md) | Quickly compare and visualize any number of attribution models using any dimension and conversion metric. |
-| [Freeform panel](freeform-panel.md) | Perform unlimited comparisons and breakdowns, then add visualizations to tell a rich data story. |
-| [Media Concurrent Viewers panel](media-concurrent-viewers.md) | Analyze concurrent viewers over time, with details on peak concurrency and the ability to break down and compare. |
-| [Media Playback Timespent panel](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analyze playback time spent to understand where peak concurrency occurred or where drop-oﬀs happened. |
+| [Experimentation](experimentation.md) | Compare different user experiences, marketing, or messaging variations to determine which is best at driving a specific outcome. |
+| [Freeform](freeform-panel.md) | Perform unlimited comparisons and breakdowns, then add visualizations to tell a rich data story. |
+| [Media average minute audience](average-minute-audience-panel.md) | Analyze average minute audience for a specific piece of content, or over a customized time period. | 
+| [Media Concurrent Viewers](media-concurrent-viewers.md) | Analyze concurrent viewers over time, with details on peak concurrency and the ability to break down and compare. |
+| [Media Playback Timespent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analyze playback time spent to understand where peak concurrency occurred or where drop-oﬀs happened. |
+| Next or previous item | Show the next or previous pages visitors go to. |
+| [Quick Insights](quickinsight.md) | Quickly build a freeform table and an accompanying visualization in order to analyze and uncover insights faster. |
 
-![The Customer Journey Analytics panel listing the available panel types..](assets/panel-overview.png)
 
 [!UICONTROL Quick Insights], [!UICONTROL Blank] and [!UICONTROL Freeform] panels are great places to start your analysis, while [!UICONTROL Attribution IQ] lends itself to more advanced analyses. A `"+"` button is available in projects so you can add blank panels at any time.
 
 The default starting panel is the [!UICONTROL Freeform] panel, but you can make the [blank panel](/help/analysis-workspace/c-panels/blank-panel.md) your default as well.
+
+## Create a panel
+
+To create a panel:
+
+* Drag and drop a panel from the **[!UICONTROL Panels]** left rail onto your canvas.
+* Select a panel from the Blank panel.
+
+![Create a panel](assets/create-panel.png)
+
 
 ## Calendar {#calendar}
 
@@ -48,7 +60,7 @@ Drag and drop any filters from the left rail into the panel drop zone to begin f
 
 ![The left rail shows available Metrics and the Mobile Customer metric dragged to the panel drop zone.](assets/segment-filter.png)
 
-### Ad hoc filters 
+#### Ad hoc filters 
 
 Non-filter components can also be dragged directly into the dropzone to create ad hoc filters, saving you the time and effort of going to the Filter Builder. Filters created in this way are automatically defined as event-level filters. This definition can be modified by clicking the information icon (i) next to the filter, then the pencil-shaped edit icon and editing it in the Filter Builder.
 
@@ -78,8 +90,6 @@ Static drop-down filters can also be used to consolidate many projects into one.
 
 * For drop-down filters using a mix of component types (such as 2 metrics and 3 filters), select multiple components using `[Shift + Click]` or `[Ctrl + Click]`. Drop the selection into the panel dropzone **while holding `[Shift]`**. In this context, all component types are treated as separate drop-down filters. For example, if you include both metrics and dimension items in your selection, two separate drop-down filters are created: one drop-down filter includes dimension items, and the other includes metrics.
 
-  ![The Panel window with the Mobile Customer segment field available to drop a static drop-down filter. ](assets/create-dropdown.png)
-
 Right-clicking a drop-down filter provides the following options:
 
 * **[!UICONTROL Delete drop-down]**: Removes the drop-down filter from the panel. 
@@ -97,7 +107,6 @@ Users can use the drop-down filter menu in any of the following ways in order to
 
 * Apply multiple filters to the panel by selecting more than one filter from the drop-down filter. The panel is filtered to include any of the selected filters. 
 
-  ![Select multiple filters](assets/dropdown-filter-multiselect.png)
 
 ### Dynamic drop-down filters
 

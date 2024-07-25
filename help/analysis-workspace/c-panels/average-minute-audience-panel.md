@@ -33,8 +33,6 @@ The Media average minute audience panel provides the following benefits over the
 
 1. In the left nav, select the **Panels** icon.
 
-   ![Panels icon in left nav](assets/panels-icon.png)
-
 1. Drag the [!UICONTROL **Media average minute audience**] panel onto the canvas in Analysis Workspace.
 
 1. To configure the panel, continue with [Panel inputs](#panel-inputs).
@@ -140,9 +138,8 @@ The Media average minute audience panel returns the following:
 
   This table displays only if the option under advanced settings called [!UICONTROL **Show calculation values in table**] is selected.
 
-To edit and rebuild the panel at any time, select the Edit (pencil) icon in the top right.
+To edit and rebuild the panel at any time, select the ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** in the top right.
 
-![concurrent viewers output](assets/custom-time-period-panel-output.png)
 
 ### Custom time period data source
 

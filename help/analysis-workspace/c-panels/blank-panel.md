@@ -5,8 +5,16 @@ feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User
 ---
-# Blank panel
+A blank panel shows all the visualizations you can use within a panel, and the options to modify the panel, to build a completely customized analysis.
 
-A blank panel highlights all the visualizations you can build from within a panel, including Freeform, Map, Fallout, Flow, Histogram, Cohort, and Venn. You can also choose to make the Blank Panel your default project starting state, instead of a freeform panel.
+Simply select a visualization (like **[!UICONTROL Cohort table]**) to add to the panel, or select a panel option (like **[!UICONTROL Attribution]**) to modify the panel for a specific purpose.
 
-![The blank panel hwoing the Freeform, Map, Fallout, Flow Histogram, Cohort, and Venn visualitzation options.](assets/blank_panel.png)
+
+![](assets/blank-panel.png)
+
+* Select ![AddCircle](/help/assets/icons/AddCircle.svg) **within** the panel to add another visualization.
+* Select ![AddCircle](/help/assets/icons/AddCircle.svg) **outside** the panel to add another blank panel.
+
+>[!NOTE]
+>
+>If you do not have access to Media Analytics, you will not see the Media specific panels.

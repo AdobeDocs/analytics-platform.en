@@ -76,26 +76,22 @@ Other useful hints will pop up in the [!UICONTROL Quick Insights Builder], some 
 
     ![The Quick Insights Panel notification displayed after you click the Help icon.](assets/qibuilder4.png)
 
-* **Breakdown by**: You can use up to 3 levels of breakdowns on dimensions to drill down to the data you really need.
+You can analyze by multiple dimensions, adding multiple metrics, and filter by combinning or comparing multiple filters:
 
-    ![Sublevels of breakdowns.](assets/qibuilder5.png)
+![Quick Insights Builder Result](assets/qibuilder-result.png)
 
-* **Add more metrics**: You can add up to 2 more metrics by using the AND operator to add them the table.
+* **[!UICONTROL Analyze]** dimension **[!UICONTROL Broken-Down by]**: You can use up to 3 levels of breakdowns on dimensions to drill down to the data you really need. See ➊, ➋, and ➌.
 
-    ![Multiple metrics including Visits and Devices.](assets/qibuilder6.png)
+* Add more metrics **[!UICONTROL by]**: You can add up to 2 more metrics. See ➍ and ➎.
 
-* **Add more filters**: You can add up to 2 more filters by using the AND or OR operators to add them the table. Look at what happens to the table when you add Mobile Users OR Loyal Visitors. They are next to each other, above the metrics. If you added Mobile Users AND Loyal Visitors, you would see results from both filters together, and they would be stacked on top of each other in the table.
-
-    ![Diagram showing the added Mobile Users and Loyal Visitors.](assets/qibuilder7.png)
+* **[!UICONTROL filter by]**: You can add up to 2 more filters by using the AND or OR operators to add them the table. Look at what happens to the table when you add Mobile Users OR Loyal Visitors. They are next to each other, above the metrics. If you added Mobile Users AND Loyal Visitors, you would see results from both filters together, and they would be stacked on top of each other in the table. See ➏ and ➐.
 
 ## Known limitations
 
 If you try to edit directly within the table, it will cause the [!UICONTROL Quick Insights] panel to become out of sync. You can restore it to the previous [!UICONTROL Quick Insights] settings by clicking **[!UICONTROL Resync Builder]** at the top right of the panel.
 
- ![The Quick Insights panel with the Resync Builder option.](assets/qibuilder9.png)
-
 You will get a warning before adding anything directly to the table:
 
- ![The Resync Builder option warning.](assets/qibuilder8.png)
+ ![The Resync Builder option warning.](assets/qibuilder-outofsync.png)
 
 Otherwise, building directly will cause the table to now behave as a traditional Freeform table, without the helpful features for new users.

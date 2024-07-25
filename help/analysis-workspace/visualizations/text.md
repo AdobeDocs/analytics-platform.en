@@ -17,12 +17,12 @@ When editing your text box or description, you can adjust the font size (heading
 
 ## Add hyperlinks {#hyperlinks}
 
-To add a hyperlink, highlight the text and click the hyperlink icon in the menu. Hyperlinks can link to external websites, documentation pages, [Workspace projects/panels/visualizations](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html), and more to further assist your project recipients.
+To add a hyperlink, highlight the text and select ![Link](/help/assets/icons/Link.svg) in the menu. Hyperlinks can link to external websites, documentation pages, [Workspace projects/panels/visualizations](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html), and more to further assist your project recipients.
 
 ![Text options with the link icon highlighted.](assets/hyperlink.png)
 
 ## Add images {#images}
 
-To add an image to your project, click the image icon in the menu and insert a public image URL. The image URL must be publicly accessible, begin with `https`, and be of format `.png`, `.jpeg`, `.jpg`, or `.gif`. Static and animated images are supported.
+To add an image to your project, select ![Image](/help/assets/icons/Image.svg) in the menu and insert a public image URL. The image URL must be publicly accessible, begin with `https`, and be of format `.png`, `.jpeg`, `.jpg`, or `.gif`. Static and animated images are supported.
 
 ![Text options with the image icon selected.](assets/image.png)
