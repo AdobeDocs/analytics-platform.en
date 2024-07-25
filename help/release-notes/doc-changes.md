@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **July 2024** | |
+| Added information about quick calculated metrics | Updated information in [Metrics](/help/components/apply-create-metrics.md) to clarify the difference between [calculated metrics that are created in the calculated metrics builder](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) and [those that are created as quick calculated metrics within a single project](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). Also added more details about hose to create quick calculated metrics.<p>Calculated metrics that are created in the calculated metrics builder are available in the component list and can be applied to projects throughout the organization, while calculated metrics that are created as quick calculated metrics are available only within the project where they were created.</p><p>Also updated information in [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) to make similar clarifications.</p> |
 | Derived field deduplicate function | Added documentation on the derived field [deduplicate](/help/data-views/derived-fields/derived-fields.md#deduplicate) function. |
 | Updated common error messages | Made minor updates to the [common error messages](/help/analysis-workspace/workspace-faq/error-messages.md). |
 | **June 2024** | |
