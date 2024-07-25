@@ -17,7 +17,7 @@ It lets you:
 
 [Flow Visualization video tutorial](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
 
-## Inter-Dimensional Flows {#in}
+## Inter-Dimensional Flows
 
 You can show the [flow between dimensions](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). For example, you might combine pages and departments in one diagram. In this case, your flow might go from the home page, to the Men page, then to the Shoes department.
 
@@ -27,6 +27,6 @@ Each column could show a different dimension. Drag a dimension and drop in a dro
 
 For information about how to confgure a flow visualization, see [Configure a flow visualization](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 
-## Export Flow Diagrams as Part of Project .CSV Files {#section_BACD2639A0FC4C49A75398F7D0363D9D}
+## Export Flow Diagrams as Part of Project .CSV Files
 
 Flow diagrams are part of a project's .CSV file that you can create by going to **[!UICONTROL Project]** > **[!UICONTROL Download CSV]**. This allows you to analyze Flow results within Microsoft Excel (visualized as a table) or elsewhere.
