@@ -18,7 +18,7 @@ Captions are available to all Customer Journey Analytics users and do not requir
 
 ## Launch intelligent captions {#launch}
 
-To launch auto-generated captions for a line visualization, click the **[!UICONTROL Intelligent captions]** icon at the top right of the visualization.
+To launch auto-generated captions for a line visualization, select ![AEMScreen](/help/assets/icons/AI.svg) **[!UICONTROL Intelligent captions]** at the top right of the visualization.
 
 ![Launch Analysis window showing the Intelligent captions for Product Views Trend. ](assets/intell-caps-1.png)
 
