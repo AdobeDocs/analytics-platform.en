@@ -6,15 +6,15 @@ feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
 role: User
 ---
-# Configure a [!UICONTROL Cohort Analysis] report
+# Configure a [!UICONTROL Cohort table]
 
-Create a cohort and run a [!UICONTROL Cohort Analysis] report in Analysis Workspace.
+To create and configure a table:
 
-1. In Analysis Workspace, click the **[!UICONTROL Visualizations]** icon in the left rail and drag a **[!UICONTROL Cohort Table]** to the canvas.
-
-   ![An example Cohort Table showing the Inclusion Criteria and Return Criteria.](assets/cohort-table.png)
+1. Add a ![TextNumbered](/help/assets/icons/TextNumbered.svg) **[!UICONTROL Cohort]** visualization. See [Add a visualization to a panel](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. Define the **[!UICONTROL Inclusion Criteria]**, **[!UICONTROL Return Criteria]**, **[!UICONTROL Cohort Type]**, and **[!UICONTROL Settings]** as defined in the table below.
+
+   ![Configure a cohort table](assets/cohort-configure.png)
 
    | Element | Description |
    |--- |--- |
@@ -27,20 +27,19 @@ Create a cohort and run a [!UICONTROL Cohort Analysis] report in Analysis Worksp
 1. Adjust the **[!UICONTROL Cohort Table Settings]** by clicking the gear icon.
 
    | Setting | Description |
+   |---|---|
    | Only show percent | Removes the number value and only shows the percentage. |
    | Round percent to nearest whole | Rounds the percent value to the nearest whole instead of showing the decimal value. |
    | Show Average Percent Row | Inserts a new row at the top of the table and then adds the average for the values within each column. |
 
-## Build the [!UICONTROL Cohort Analysis] report
 
 1. Click **[!UICONTROL Build]**.
 
-   ![Cohort Table view showing selected Inclusion Criteria and Return Critera. Click Build.](assets/cohort-report.png)
-
-   The report shows persons who placed an order ( *`Included`* column), and who returned to your site in subsequent visits. The reduction in visits over time enables you to spot problems and take action.
-1. (Optional) Create a filter from a selection.
+1. (Optional) Create a filter or audience from a selection.
 
    Select cells (contiguous or noncontiguous), then right-click > **[!UICONTROL Create Filter From Selection]**.
+
+   ![Create filter or audience](assets/retention-createfilter.png)
 
 1. In the [Filter Builder](/help/components/filters/filter-builder.md), further edit the filter, then click **[!UICONTROL Save]**.
 

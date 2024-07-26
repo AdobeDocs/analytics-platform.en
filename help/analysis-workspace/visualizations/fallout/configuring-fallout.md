@@ -18,7 +18,7 @@ You can do pathing on eVars, including merchandising eVars and [listVars](https:
 1. Add a ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]** visualization. See [Add a visualization to a panel](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 1. Drag a page, for example home, from the Page dimension onto the Add touchpoint dropdown list.
 
-   ![The home page from the Home page dimension dragged to the Add Touchpoint field.](assets/fallout1.png)
+   ![The home page from the Home page dimension dragged to the Add Touchpoint field.](assets/fallout-drag.png)
 
    Hover over a touchpoint to see the fallout and other information about that level, such as the name of the touchpoint, the person count at that point, and see the success rate for that touchpoint (as well as compare the success rate to other touchpoints.)
 
@@ -34,32 +34,36 @@ You can do pathing on eVars, including merchandising eVars and [listVars](https:
    >
    >Multiple filters are joined with AND, but multiple items such as dimension items and metrics are joined with OR.
 
-   ![The Page:CamerRoll or Page: Camera touchpoints highlighted.](assets/multiple_obj_touchpoint.png)
+   ![The Page:CamerRoll or Page: Camera touchpoints highlighted.](assets/fallout-or.png)
 
 1. You can also **constrain individual touchpoints to the next event** (as opposed to "eventually") within the path. Underneath each touchpoint, there is a selector with the options "Eventual Path" and "Next Hit", as shown here:
 
-   ![The All Visits view showing the Eventual Path option highlighted. ](assets/next-hit-eventually.png)
+   ![The All Visits view showing the Eventual Path option highlighted. ](assets/fallout-nexthit.png)
 
-<table id="table_A91D99D9364B41929CC5A5BC907E8985"> 
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Eventual Path </p> <p>(Default) </p> </td> 
-   <td colname="col2"> <p>Visitors are counted that will "eventually" land on the next page in the path, but not necessarily on the next event. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Next Hit </p> </td> 
-   <td colname="col2"> <p>Visitors are counted that will land on the next page in the path on the very next event. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+   <table id="table_A91D99D9364B41929CC5A5BC907E8985"> 
+   <tbody> 
+   <tr> 
+      <td colname="col1"> <p>Eventual Path </p> <p>(Default) </p> </td> 
+      <td colname="col2"> <p>Visitors are counted that will "eventually" land on the next page in the path, but not necessarily on the next event. </p> </td> 
+   </tr> 
+   <tr> 
+      <td colname="col1"> <p>Next Hit </p> </td> 
+      <td colname="col2"> <p>Visitors are counted that will land on the next page in the path on the very next event. </p> </td> 
+   </tr> 
+   </tbody> 
+   </table>
 
-## Fallout settings {#section_0C7C89D72F0B4D6EB467F278AC979093}
+## Fallout container settings
 
-| Setting | Description |
+Select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** to open the settings for Fallout visualization and for fallout container. 
+
+| Fallout container | Description |
 |--- |--- |
-|Fallout Container <ul><li>Visit</li><li>Visitor</li></ul>|Lets you switch between Visit and Visitor to analyze person pathing. The default is Visitor.  These settings help you understand person engagement at the person level (across visits), or constrain the analysis to a single visit.|
+| Session or Person|  Lets you switch between Session and Person to analyze person pathing. The default is Person.  These settings help you understand person engagement at the person level (across sessions), or constrain the analysis to a single session. |
 
-When you **right-click a touchpoint**, the following options appear:
+When you right-click a touchpoint, the following options appear:
+
+![Fallout options](assets/fallout-options.png)
 
 | Option | Description |
 |--- |--- |

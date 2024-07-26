@@ -46,18 +46,18 @@ A [!UICONTROL Churn] cohort is the inverse of a retention table and shows the pe
 
 Lets you calculate retention or churn based on the previous column, not the included column.
 
-![A Cohort retention report showing calculations based on a previous column of data.](assets/cohort-rolling-calculation.png)
+![A Cohort retention report showing calculations based on a previous column of data.](assets/retention-report-rolling.png)
 
 ### [!UICONTROL Latency] Table
 
 Measures the time that has elapsed before and after the inclusion event occurred. This is an excellent tool for pre/post analysis. The **[!UICONTROL Included]** column is in the center of the table and time periods before and after the inclusion event are shown on both sides.
 
-![A Cohort report showing the elapsed time before and after an event.](assets/cohort-latency.png)
+![A Cohort report showing the elapsed time before and after an event.](assets/retention-report-latency.png)
 
 ### [!UICONTROL Custom Dimension] Cohort
 
-Create cohorts based on a selected dimension, and not time-based cohorts, which are the default. Use dimensions such as [!UICONTROL marketing channel], [!UICONTROL campaign], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region], or any other dimension in Customer Journey Analytics to show how retention changes based on the different values of these dimensions.
+Create cohorts based on a selected dimension, and not time-based cohorts, which are the default. Use dimensions such as [!UICONTROL City geo], [!UICONTROL Marketing channel], [!UICONTROL campaign], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region], or any other dimension in Customer Journey Analytics to show how retention changes based on the different values of these dimensions.
 
-![A Cohort report showing customized report with selected dimensions not the default time-based cohort.](assets/cohort-customizable-cohort-row.png)
+![A Cohort report showing customized report with selected dimensions not the default time-based cohort.](assets/retention-dimensions.png)
 
 For instructions on how to set up and run a cohort report, go to [Configure a Cohort Analysis report](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).

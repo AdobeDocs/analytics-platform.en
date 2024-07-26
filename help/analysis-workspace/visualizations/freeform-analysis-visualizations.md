@@ -10,29 +10,29 @@ role: User
 
 Workspace offers a number of visualizations that let you generate visual representations of your data, such as bar charts, donut charts, histograms, line charts, maps, scatterplots, and others. Most visualization types will be familiar to you if you use Customer Journey Analytics. However, Analysis Workspace provides visualization settings and many new or unique visualizations types with interactive capabilities.
 
-## Visualization types
+## Types
 
 The following visualization types are available in Analysis Workspace:
 
 | Visualization name | Description |
 | --- | --- | 
-| [Area](/help/analysis-workspace/visualizations/area.md)<p>![Area icon](assets/Smock_GraphArea_18_N.svg)</p>  | Like a line graph, but with a colored area below the line. Use an area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics. |
-| [Bar](/help/analysis-workspace/visualizations/bar.md) <p>![Bar icon](assets/Smock_GraphBarVertical_18_N.svg)</p> | Shows vertical bars representing various values across one or more metrics. |
-| [Bullet graph](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![Bullet icon](assets/Smock_GraphBullet_18_N.svg)</p> | Shows how a value you are interested in compares to or measures against other performance ranges (goals). |
-| [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![Cohort table icon](assets/Smock_TextNumbered_18_N.svg)</p> | A *`cohort`* is a group of people sharing common characteristics over a specified period. Cohort Analysis is useful for retention, churn or latency analysis. |
-| [Donut](/help/analysis-workspace/visualizations/donut.md) <p>![Donut icon](assets/Smock_GraphDonut_18_N.svg)</p> |  Similar to a pie chart, this visualization shows data as parts or filters of a whole. |
-| [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![Fallout icon](assets/Smock_ConversionFunnel_18_N.svg)</p> | Fallout reports show where persons left (fell out) and continued through (fell through) a predefined sequence of pages. Can be set to eventual or exact sequences |
-| [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![Flow icon](assets/flow-icon.png)</p> | Shows exact customer paths through your websites and apps. | 
-| [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![Freeform table icon](assets/Smock_ViewTable_18_N.svg)</p> | A Freeform table is not merely a data table, but also an interactive visualization. It is the foundation for data analysis in Workspace.|
-| [Histogram](/help/analysis-workspace/visualizations/histogram.md)<p>![Histogram icon](assets/Smock_GraphHistogram_18_N.svg)</p> | A histogram buckets persons, visits or events into buckets based on a metric volume. |
-| [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md)<p>![Horizontal bar icon](assets//Smock_GraphBarHorizontal_18_N.svg)</p> | Shows horizontal bars representing various values across one or more metrics. |
-| [Line](/help/analysis-workspace/visualizations/line.md)<p>![Line icon](assets/Smock_GraphTrend_18_N.svg)</p>| Represents metrics using a line in order to show how values change over a period of time. A line chart uses time along the x-axis. |
-| [Scatterplot](/help/analysis-workspace/visualizations/scatterplot.md) <p>![Scatterplot icon](assets/Smock_GraphScatter_18_N.svg)</p> | Shows the relationship between dimension items and up to three metrics. |
-| [Summary number](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Summary number icon](assets/summary-number-icon.png)</p> | Shows the selected cell as 1 large number. |
-| [Summary change](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Summary change icon](assets/summary-change-icon.png)</p> | Shows the change between the selected cells as 1 large number/percent. |
-| [Text](/help/analysis-workspace/visualizations/text.md)<p>![Scatterplot icon](assets/Smock_Text_18_N.svg)</p> | Lets you add user-defined text to your Workspace. Helpful for adding additional context to your analysis and insights, in addition to leveraging panel/visualization descriptions |
-| [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p>![Treemap icon](assets/Smock_GraphTree_18_N.svg)</p> | Displays hierarchical (tree-structured) data as a set of nested rectangles. |
-| [Venn](/help/analysis-workspace/visualizations/venn.md)<p>![Venn icon](assets/venn-icon.png)</p> | Uses circles to depict the metric overlap of up to 3 filters. |
+| [Area](/help/analysis-workspace/visualizations/area.md)<p>![GraphArea](/help/assets/icons/GraphArea.svg)</p>  | Like a line graph, but with a colored area below the line. Use an area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics. |
+| [Bar](/help/analysis-workspace/visualizations/bar.md) <p>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg)</p> | Shows vertical bars representing various values across one or more metrics. |
+| [Bullet graph](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | Shows how a value you are interested in compares to or measures against other performance ranges (goals). |
+| [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![TextNumbered](/help/assets/icons/TextNumbered.svg)</p> | A cohort is a group of people sharing common characteristics over a specified period. A cohort table is useful for retention, churn or latency analysis. |
+| [Donut](/help/analysis-workspace/visualizations/donut.md) <p>![GraphDonut](/help/assets/icons/GraphDonut.svg)</p> |  Similar to a pie chart, a donut shows data as parts or filters of a whole. |
+| [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)</p> | Fallout reports show where persons left (fell out) and continued through (fell through) a predefined sequence of pages. Can be set to eventual or exact sequences. |
+| [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![GraphPathing](/help/assets/icons/GraphPathing.svg)</p> | Shows exact customer paths through your websites and apps. | 
+| [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![ViewTable](/help/assets/icons/ViewTable.svg)</p> | A Freeform table is not merely a data table, but also an interactive visualization. It is the foundation for data analysis in Workspace.|
+| [Histogram](/help/analysis-workspace/visualizations/histogram.md)<p>![GraphHistogram](/help/assets/icons/GraphHistogram.svg)</p> | A histogram buckets persons, visits or events into buckets based on a metric volume. |
+| [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md)<p>![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg)</p> | Shows horizontal bars representing various values across one or more metrics. |
+| [Line](/help/analysis-workspace/visualizations/line.md)<p>![GraphTrend](/help/assets/icons/GraphTrend.svg)</p>| Represents metrics using a line in order to show how values change over a period of time. A line chart uses time along the x-axis. |
+| [Scatterplot](/help/analysis-workspace/visualizations/scatterplot.md) <p>![GraphScatter](/help/assets/icons/GraphScatter.svg)</p> | Shows the relationship between dimension items and up to three metrics. |
+| [Summary number](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![123](/help/assets/icons/123.svg)</p> | Shows the selected cell as 1 large number. |
+| [Summary change](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![MoveUpDown](/help/assets/icons/MoveUpDown.svg)</p> | Shows the change between the selected cells as 1 large number/percent. |
+| [Text](/help/analysis-workspace/visualizations/text.md)<p>![Text](/help/assets/icons/Text.svg)</p> | Lets you add user-defined text to your Workspace. Helpful for adding additional context to your analysis and insights, in addition to leveraging panel/visualization descriptions |
+| [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p>![ModernGridView](/help/assets/icons/ModernGridView.svg)</p> | Displays hierarchical (tree-structured) data as a set of nested rectangles. |
+| [Venn](/help/analysis-workspace/visualizations/venn.md)<p>![Type](/help/assets/icons/TwoDots.svg)</p> | Uses circles to depict the metric overlap of up to 3 filters. |
 
 ## Add visualizations to a panel
 
@@ -42,44 +42,39 @@ The following visualization types are available in Analysis Workspace:
 
    ![Add visualization](assets/add-visualization.png)
 
-   * In the left rail, select ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **Visualizations**, then drag a visualization to the panel where you want to add it. 
+   * In the left rail, select ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **Visualizations**, then drag a visualization to the panel where you want to add the visualization to. 
 
-   * On the panel where you want to add the visualization, select ![AddCircle](/help/assets/icons/AddCircle.svg), then choose the icon that represents the visualization that you want to add. Hover over the icon for each visualization to see its name.
+   * On the panel where you want to add the visualization, select ![AddCircle](/help/assets/icons/AddCircle.svg), then choose the icon that represents the visualization that you want to add. Hover over the icon for each visualization to see the name.
 
-   * Add a [blank panel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html), then choose the visualization that you want to add.
+   * Add a [blank panel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html), then select the visualization that you want to add.
 
    * Right-click an existing panel in your Analysis Workspace project, then select [!UICONTROL **Duplicate visualization**] or [!UICONTROL **Copy visualization**].
 
-## Customize visualization settings
-
-You can customize visualization settings for an individual visualization, or for all visualizations that you create. 
-
-### Customize visualization settings for a single visualization
-
-To access [!UICONTROL Visualization Settings] for an individual visualization:
-
-1. In Analysis Workspace, hover over the visualization whose settings you want to customize.
-
-1. Click the gear icon.
-
-   Each type of visualization has unique settings that you can customize. For information about available settings, see [Settings](#settings).
-
-### Customize visualization settings for all visualizations you create
-
-You can customize settings for all visualizations that you create. For more information, see [User preferences](/help/analysis-workspace/user-preferences.md).
 
 ## Settings {#settings}
 
-Each visualization has its own settings that you can manage. To access visualization settings, select the settings icon ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg).
+Each visualization has its own settings. To access visualization settings, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** to show a popup.
 
-<img src="./assets/viz-settings-line.png" alt="Visualization settings" width=50%/>
+Depending on the visualization, you can 
 
+* configure settings for the visualization through the **[!UICONTROL Settings]** tab, and 
+* details for the source of data of the visualization through the **[!UICONTROL Data source]** tab. 
+
+![Visualization Settings](assets/visualization-settings.png)
+
+See each individual visualization for more details on what options for **[!UICONTROL Settings]** and **[!UICONTROL Data source]** are available.
+
+You can customize settings for all visualizations that you create. For more information, see [User preferences](/help/analysis-workspace/user-preferences.md).
+
+
+
+<!--
 | Setting | Description |
 | --- | --- |
-| Visualization Type | Change the type of visual used to depict the data. |
-| Granularity | For trended visualizations, you can change the time granularity (day, week, month, etc.) from this drop-down list. This change also applies to the data source table. |
+| Visualization Type | Change the type of visualization used to visualize the data. |
+| Granularity | For trended visualizations, you can change the time granularity (day, week, month, etc.) from this dropdown list. This change also applies to the data source table. |
 | Percentages | Displays values in percentages. |
-| 100% Stacked | This setting on area stacked, bar stacked or horizontal bar stacked visualizations turns the chart into a "100% stacked" visualization. Example: ![A bar chart showing the Stacked 100% option view.](assets/stacked_100_percent.png) |
+| 100% Stacked | This setting on area stacked, bar stacked or horizontal bar stacked visualizations turns the chart into a 100% stacked visualization. Example: ![A bar chart showing the Stacked 100% option view.](assets/stacked_100_percent.png) |
 | Legend Visible | Lets you hide the detailed legend text for the Summary Number/Summary Change visualization. |
 | Limit Max Items | Lets you limit the number of items that a visualization displays. |
 | Anchor Y Axis at Zero | If all the values plotted on the chart are considerably above zero, the chart default will make the bottom of the y-axis NON-ZERO. If you check this box, the y-axis will be forced to zero (and it will re-draw the chart). |
@@ -87,6 +82,13 @@ Each visualization has its own settings that you can manage. To access visualiza
 | Display Dual Axis | Only applies if you have two metrics - you can have a y-axis on the left (for one metric) and on the right (for the other metric). This is helpful when plotted metrics are of very different magnitudes. |
 | Show anomalies | Enhances line graphs and freeform tables by displaying anomaly detection. Anomaly detection in line visualizations includes an expected value (dashed line) and an expected range (shaded band). |
 | Show forecast | Enhances line graphs and freeform tables by displaying forecast values. |
+| Show min | Show the minimal value in the visualization. |
+| Show max | Show the maximal value in the visualization. |
+| Show trendline | Show a trendline in the visualization. When selected, you can select the type of trendline from the dropdown list. |
+
+--> 
+
+
 
 ## Legend {#legend}
 
@@ -104,25 +106,35 @@ To edit a legend label:
 1. Enter the new label text.
 1. Press **[!UICONTROL Enter]** to save.
 
-## Right-click menu {#right-click}
+## Configuration
 
-Additional functionality for a visualization is available by right-clicking on the visualization header. Settings will vary by visualization. Some of the settings available are:
+Some visualization (like Cohort table, Fallout, Flow, and others) have a configuration panel to assist you in building the visualization. Use ![Edit](/help/assets/icons/Edit.svg) at the top of the visualzation to access that configuration and change options.
+
+![Configuration pane](assets/configuration.png)
+
+## Context menu {#right-click}
+
+Use the context menu (available through alternate select, for example, right-click when using a mouse) on a visualization header to access additional functionality for a visualization. See each individual visualization for more details on what menu options are available.
 
 ![Additional visualization settings with the right-click options displayed. Options are described in the next section.](assets/right-click.png)
 
+<!--
 | Setting | Description |
 | --- | --- |
-| Insert Copied Panel/Visualization|Lets you paste ("insert") a copied panel or visualization to another place within the project, or into a completely different project. |
-| Copy Visualization | Lets you right-click and copy a visualization, so that you can insert it to another place within the project, or into a completely different project. |
-| [Download project data](/help/analysis-workspace/export/download-send.md) | Download up to 50,000 dimension items for the selected dimension as a CSV. |
-| [Download project data](/help/analysis-workspace/export/download-send.md) | Download visualization data source as a CSV. |
-| Duplicate Visualization | Makes an exact duplicate of the current visualization, which you can then modify. |
-| Edit Description | Add (or edit) a text description for the visualization. |
-| Get Visualization Link | Lets you direct someone to a specific visualization within a project. When the link is selected, the recipient will be required to login before being directed to the exact visualization linked to. |
-| Start Over | (Works for Flow, Venn, Histogram) Deletes the configuration for the current visualization so you can re-configure it from scratch. |
+| Insert Copied Visualization| Paste (insert) a copied visualization to another place within the project, or into a completely different project. |
+| Copy data to clipboard | Copy data from the visualization onto the clipboard. |
+| Download items as CSV (*dimension name*) | Immediately download the dimension items of the visualization to your local device. |
+| Copy visualization | Copy the visualization, so that you can insert the visualization to another place within the project, or into a completely different project. |
+| Download data CSV | Immediately download the data of the visualization to your local device. |
+| Export full table... | Export the full table to a designated cloud locations. See [Exports Customer Journey Analytics reports to the cloud](../export/export-cloud.md) |
+| Duplicate visualization | Make an exact duplicate of the visualization. |
+| Edit Description | Add (or edit) a text description for the visualization. See [Text](text.md). |
+| Get Visualization Link | Copy and share a link directly to the visualization. A Share link dialog displays the link. Select Copy to copy the link to your clipboard. |
+| Start Over | Delete the configuration for the current visualization so you can re-configure it from scratch. |
+-->
 
-## Create Visual icon {#quick-viz}
+## Visualize
 
-you are not sure which visualization to pick, select ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Create Visual]** icon in any table row (available on hover). This is the fastest way to add a visualization. Clicking it prompts Analysis Workspace to take an educated guess at which visualization would best fit your data. For example, if you have 1 row selected, it will create a trended line graph. If you have 3 filter rows selected, it will create a Venn diagram. 
+If you are not sure which visualization to pick, select ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualize]** in any table row (available on hover). This selection is the fastest way to add a visualization. Analysis Workspace takes an educated guess at which visualization would best fit your data. For example, if you have 1 row selected, it will create a trended [line graph](line.md). If you have 3 filter rows selected, it will create a [venn](venn.md) diagram. 
 
 ![Quick visualization](assets/quick-viz.png)
