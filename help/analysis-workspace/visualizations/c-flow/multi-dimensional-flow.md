@@ -21,23 +21,23 @@ The [!UICONTROL Screen Name] dimension is used in this example flow to see how u
 
 ![A flow showing the Item Added.](assets/flowapp.png)
 
-To explore the interaction between screens and event types (like add to cart, purchases, present offer, config the app, or others) in this app, you can then drag the **[!UICONTROL Event Types]** dimension to multiple places, depending on what you want to explore:
+To explore the interaction between screens and event types (like add to cart, purchases, and others) in this app, drag and drop the **[!UICONTROL Event Types]** dimension:
 
-* Drag the **[!UICONTROL Event Types]** dimension on top of any available step in the flow to replace that dimension:
+* On top of any available step in the flow, to replace that dimension:
 
   ![A flow showing the Page dimension dragged dragged to the multiple areas.](assets/flowapp-replace.png)
 
-* Drag the **[!UICONTROL Event Types]** dimension outside of the current flow visualization to add the dimension to the visualization:
+* Outside of the current flow visualization, to add the dimension:
 
   ![A flow showing the Page dimension dragged to the white space at the end.](assets/flowapp-add.png)
 
-The flow visualization below shows the result of adding the **[!UICONTROL  Event Types]** dimension. The visualization provides insights how mobile app users move through various screens in the app before adding products to a cart, close the application, are presented an offer, and more.
+The flow visualization below shows the result of adding the **[!UICONTROL  Event Types]** dimension. The visualization provides insights to how mobile app users move through various screens in the app before adding products to a cart, close the application, are presented an offer, and more.
 
 ![A fLow showing the Page dimension results at the top of the list.](assets/flowapp-result.png)
 
 ## How campaigns drive web visits
 
-You want to analyze which campaigns drive visits to the web site. You create a flow visualization with **[!UICONTROL Campaign Name]** as the dimension
+You want to analyze which campaigns drive visits to the web site. You create a flow visualization with the **[!UICONTROL Campaign Name]** as the dimension
 
 ![Flow web campaign name dimension](assets/flowweb.png)
 

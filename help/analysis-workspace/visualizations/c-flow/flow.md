@@ -11,11 +11,11 @@ The flow feature shows customer paths through your websites and apps.
 
 It lets you:
 
-* Visualize the customer journey through your website or application
-* Analyze where customers go before and after specified checkpoints, such as entry, a specific dimension, or exit
+* Visualize the customer journey through your website or application.
+* Analyze where customers go before and after specified checkpoints, such as entry, a specific dimension, or exit.
 * Create filters by designating a specific point in a chosen path
 
-[Flow Visualization video tutorial](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
+[Flow Visualization video tutorial](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization)(4:56)
 
 ## Inter-dimensional flows
 
@@ -25,5 +25,5 @@ Each column could show a different dimension. Drag a dimension and drop in a dro
 
 ## Configure a flow visualization
 
-For information about how to confgure a flow visualization, see [Configure a flow visualization](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
+For information about how to configure a flow visualization, see [Configure a flow visualization](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 

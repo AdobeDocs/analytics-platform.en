@@ -15,12 +15,12 @@ Examples of what you can do with [!UICONTROL Cohort Analysis]:
 
 * Launch campaigns designed to spur a desired action.
 * Shift marketing budget at exactly the right time in the customer lifecycle.
-* Recognize when to end a trial or an offer, in order to maximize value.
+* Recognize when to end a trial or an offer to maximize value.
 * Gain ideas for A/B testing in areas such as pricing, upgrade path, and so on.
 
 [!UICONTROL Cohort Analysis] is available for all Customer Journey Analytics customers with access rights to [!UICONTROL Analysis Workspace].
 
-[Cohort Analysis video tutorial](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html) (4:36)
+[Cohort Analysis video tutorial](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace) (4:36)
 
 >[!IMPORTANT]
 >
@@ -44,20 +44,20 @@ A [!UICONTROL Churn] cohort is the inverse of a retention table and shows the pe
 
 ### [!UICONTROL Rolling Calculation]
 
-Lets you calculate retention or churn based on the previous column, not the included column.
+You can calculate retention or churn based on the previous column, not the included column, which is referred to as rolling calculation.
 
 ![A Cohort retention report showing calculations based on a previous column of data.](assets/retention-report-rolling.png)
 
 ### [!UICONTROL Latency] Table
 
-Measures the time that has elapsed before and after the inclusion event occurred. This is an excellent tool for pre/post analysis. The **[!UICONTROL Included]** column is in the center of the table and time periods before and after the inclusion event are shown on both sides.
+A latency table measures the time that has elapsed before and after the inclusion event occurred. Measuring latency is an excellent tool for pre- and post analysis. The **[!UICONTROL Included]** column is in the center of the table and time periods before and after the inclusion event are shown on both sides.
 
 ![A Cohort report showing the elapsed time before and after an event.](assets/retention-report-latency.png)
 
 ### [!UICONTROL Custom Dimension] Cohort
 
-Create cohorts based on a selected dimension, and not time-based cohorts, which are the default. Use dimensions such as [!UICONTROL City geo], [!UICONTROL Marketing channel], [!UICONTROL campaign], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region], or any other dimension in Customer Journey Analytics to show how retention changes based on the different values of these dimensions.
+You can create cohorts based on a selected dimension, and not time-based cohorts (which are the default). Use dimensions such as [!UICONTROL City geo], [!UICONTROL Marketing channel], [!UICONTROL campaign], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region], or any other dimension to show how retention changes. Based on the different values of these dimensions.
 
 ![A Cohort report showing customized report with selected dimensions not the default time-based cohort.](assets/retention-dimensions.png)
 
-For instructions on how to set up and run a cohort report, go to [Configure a Cohort Analysis report](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
+For instructions on how to set up and run a cohort report, go to [Configure a Cohort table](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
