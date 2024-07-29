@@ -48,7 +48,7 @@ You can interact with and customize a freeform table in a variety of ways:
 
 ## Settings
 
-Select ![Setting](/help/assets/icons/Setting.svg) to display **[!UICONTROL Table settings]**. The following visualization [settings](../freeform-analysis-visualizations.md#settings) are available:
+Select ![Setting](/help/assets/icons/Setting.svg) to display **[!UICONTROL Table settings]**. The following specific visualization [settings](../freeform-analysis-visualizations.md#settings) are available:
 
 ### Data source
 
@@ -62,8 +62,6 @@ Select ![Setting](/help/assets/icons/Setting.svg) to display **[!UICONTROL Table
 | Option | Description |
 |---|---|
 | **[!UICONTROL Align dates from each columns to all start on the same row]** | To align or not align dates from each columns to all start on the same row.  |
-| **[!UICONTROL Show annotations]** | Show or hide the annotations. |
-| **[!UICONTROL Hide title]** | Hide or show the title. |
 
 
 ## Context menu
@@ -78,9 +76,9 @@ The following [context menu](../freeform-analysis-visualizations.md#context-menu
 | **[!UICONTROL Download items as CSV (*dimension name*)]** | Immediately download the dimension items (to a maximum of 50,000) of the visualization to your local device. A maximum of 50,000 dimension items for the selected dimension. |
 | **[!UICONTROL Copy visualization]** | Copy the visualization, so that you can insert the visualization to another place within the project, or into a completely different project. |
 | **[!UICONTROL Download data CSV]** | Immediately download the displayed data of the visualization to your local device. |
-|**[!UICONTROL  Export full table...]** | Export the full table to a designated cloud locations. See [Exports Customer Journey Analytics reports to the cloud](../export/export-cloud.md) |
+|**[!UICONTROL  Export full table...]** | Export the full table to a designated cloud locations. See [Exports Customer Journey Analytics reports to the cloud](../../export/export-cloud.md) |
 | **[!UICONTROL Duplicate visualization]** | Make an exact duplicate of the visualization. |
-| **[!UICONTROL Edit description]** | Add (or edit) a text description for the visualization. See [Text](text.md). |
+| **[!UICONTROL Edit description]** | Add (or edit) a text description for the visualization. See [Text](../text.md). |
 | **[!UICONTROL Get visualization link]** | Copy and share a link directly to the visualization. A Share link dialog displays the link. Select Copy to copy the link to your clipboard. |
 | **[!UICONTROL Start over]** | Delete the configuration for the current visualization so you can re-configure it from scratch. |
 
