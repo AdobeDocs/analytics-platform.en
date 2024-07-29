@@ -23,12 +23,17 @@ If you prefer to add several components to your table first, then render the dat
 
 ![A Freeform Table Builder showing ](assets/table-builder.png)
 
-## Table interactions
+## Interactions
 
 You can interact with and customize a freeform table in a variety of ways:
 
+### Filter and sort
+
+* You can [filter and sort](filter-and-sort.md) the data in a table.
+
 ### Rows
 
+* You can quickly [create a new visualization](../freeform-analysis-visualizations.md#visualize) from one or more rows using ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg). 
 * You can fit more rows into a single screen by adjusting the project's [view density](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density).
 * Each dimension row can show up to 400 rows, before pagination occurs. Click the number next to **[!UICONTROL Rows]** in the first column header, to show more rows on a page. Navigate to a different page using ![ChevronRight](/help/assets/icons/ChevronRight.svg) in the first column header.
 * You can break down rows by additional components. To break down many rows at once, select multiple rows and then drag the next component on top of the selected rows. Learn more about [breakdowns](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa).
@@ -43,7 +48,7 @@ You can interact with and customize a freeform table in a variety of ways:
 
 ## Settings
 
-Select ![Setting](/help/assets/icons/Setting.svg) to display **[!UICONTROL Table settings]**. The following [settings](../freeform-analysis-visualizations.md#settings) are available:
+Select ![Setting](/help/assets/icons/Setting.svg) to display **[!UICONTROL Table settings]**. The following visualization [settings](../freeform-analysis-visualizations.md#settings) are available:
 
 ### Data source
 
@@ -61,7 +66,7 @@ Select ![Setting](/help/assets/icons/Setting.svg) to display **[!UICONTROL Table
 | **[!UICONTROL Hide title]** | Hide or show the title. |
 
 
-### Context menu
+## Context menu
 
 The following [context menu](../freeform-analysis-visualizations.md#context-menu) options are available:
 
@@ -79,5 +84,5 @@ The following [context menu](../freeform-analysis-visualizations.md#context-menu
 | **[!UICONTROL Get visualization link]** | Copy and share a link directly to the visualization. A Share link dialog displays the link. Select Copy to copy the link to your clipboard. |
 | **[!UICONTROL Start over]** | Delete the configuration for the current visualization so you can re-configure it from scratch. |
 
-Learn more about all data [export options](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/curate-share/download-send) for Analysis Workspace.
+
 

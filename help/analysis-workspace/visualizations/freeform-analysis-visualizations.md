@@ -51,45 +51,6 @@ The following visualization types are available in Analysis Workspace:
    * Right-click an existing panel in your Analysis Workspace project, then select [!UICONTROL **Duplicate visualization**] or [!UICONTROL **Copy visualization**].
 
 
-## Settings {#settings}
-
-Each visualization has its own settings. To access visualization settings, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** to show a popup.
-
-Depending on the visualization, you can 
-
-* configure settings for the visualization through the **[!UICONTROL Settings]** tab, and 
-* details for the source of data of the visualization through the **[!UICONTROL Data source]** tab. 
-
-![Visualization Settings](assets/visualization-settings.png)
-
-See each individual visualization for more details on what options for **[!UICONTROL Settings]** and **[!UICONTROL Data source]** are available.
-
-You can customize the settings for all visualizations that you create. For more information, see [User preferences](/help/analysis-workspace/user-preferences.md).
-
-
-
-<!--
-| Setting | Description |
-| --- | --- |
-| Visualization Type | Change the type of visualization used to visualize the data. |
-| Granularity | For trended visualizations, you can change the time granularity (day, week, month, etc.) from this dropdown list. This change also applies to the data source table. |
-| Percentages | Displays values in percentages. |
-| 100% Stacked | This setting on area stacked, bar stacked or horizontal bar stacked visualizations turns the chart into a 100% stacked visualization. Example: ![A bar chart showing the Stacked 100% option view.](assets/stacked_100_percent.png) |
-| Legend Visible | Lets you hide the detailed legend text for the Summary Number/Summary Change visualization. |
-| Limit Max Items | Lets you limit the number of items that a visualization displays. |
-| Anchor Y Axis at Zero | If all the values plotted on the chart are considerably above zero, the chart default will make the bottom of the y-axis NON-ZERO. If you check this box, the y-axis will be forced to zero (and it will re-draw the chart). |
-| Normalization | Forces metrics to equal proportions. This is helpful when plotted metrics are of very different magnitudes. |
-| Display Dual Axis | Only applies if you have two metrics - you can have a y-axis on the left (for one metric) and on the right (for the other metric). This is helpful when plotted metrics are of very different magnitudes. |
-| Show anomalies | Enhances line graphs and freeform tables by displaying anomaly detection. Anomaly detection in line visualizations includes an expected value (dashed line) and an expected range (shaded band). |
-| Show forecast | Enhances line graphs and freeform tables by displaying forecast values. |
-| Show min | Show the minimal value in the visualization. |
-| Show max | Show the maximal value in the visualization. |
-| Show trendline | Show a trendline in the visualization. When selected, you can select the type of trendline from the dropdown list. |
-
---> 
-
-
-
 ## Legend {#legend}
 
 A visualization legend helps you to relate date in a source table to plotted series in the visualization. The legend is interactive - you can select a legend item to show/hide a series in the visualization, which is helpful if you want to simplify the data being visualized. 
@@ -106,36 +67,80 @@ To edit a legend label:
 1. Enter the new label text.
 1. Press **[!UICONTROL Enter]** to save.
 
+
+## Settings {#settings}
+
+Each visualization has its own settings. To access visualization settings, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** in the visualization header to show a popup.
+
+Depending on the visualization, you can configure
+
+* details for the source of data of the visualization through the **[!UICONTROL Data source]** tab, and
+* settings for the visualization through the **[!UICONTROL Settings]** tab. 
+
+![Visualization Settings](assets/visualization-settings.png)
+
+### Data source
+
+You can you control which data source and items or positions within that data source correspond to a visualization. See [Manage data sources](t-sync-visualization.md) for more information. 
+
+### Settings
+
+Which **[!UICONTROL Settings]** are available depends on the visualization.
+
+| Option | Description |
+| --- | --- |
+| **[!UICONTROL Visualization type]** | Change the type of visualization used to visualize the data. |
+| **[!UICONTROL Granularity]** | Change the time granularity for trended visualizations. This change also applies to the data source table. |
+| **[!UICONTROL Percentages]** | Display values in percentages. |
+| **[!UICONTROL 100% stacked]** | Turn the chart into a 100% stacked visualization.  Only applicable for an area, bar and horizontal bar stacked visualization. |
+| **[!UICONTROL Legend visible]** | Show the legend text. |
+| **[!UICONTROL Limit max items]** | Limit the number of items that a visualization displays. When selected, define the number of max items. |
+| **[!UICONTROL Show annotations]** | Show the annotations made for this visualization. | 
+| **[!UICONTROL Hide title]** | Hide the title of the visualization. | 
+| **[!UICONTROL Anchor y-axis at zero]** | Force the bottom of the y-axis to zero. If all the values plotted on the chart are considerably above zero, the chart default makes the bottom of the y-axis non-zero. If you enable this option, the y-axis is forced to zero (and the chart is redrawn). |
+| **[!UICONTROL Display dual axis]** | Display left and right y-axes for two different metrics. This option only applies if you have two metrics. Dual axes are helpful when plotted metrics are of different magnitudes. |
+| **[!UICONTROL Show x-axis]** | Show the x-axis in the visualization. |
+| **[!UICONTROL Show y-axis]** | Show the y-axis in the visualization. |
+| **[!UICONTROL Show barbells on lines]** | Show barbells on the line visualization in a combo chart visualization. | 
+| **[!UICONTROL Normalization]** | Force metrics to equal proportions. Equal proportions are helpful when plotted metrics are of different magnitudes. |
+| **[!UICONTROL Show anomalies]** | Enhance line graphs and freeform tables by displaying anomaly detection. Anomaly detection in line visualizations includes an expected value (dashed line) and an expected range (shaded band). |
+| **[!UICONTROL Show forecast]** | Enhance line graphs and freeform tables by displaying forecast values. |
+| **[!UICONTROL Show min]** | Show the minimal value in the visualization. |
+| **[!UICONTROL Show max]** | Show the maximal value in the visualization. |
+| **[!UICONTROL Show trendline]** | Show a trendline in the visualization. When selected, you can select the type of trendline from the dropdown list. | 
+
+
+You can customize the settings for all visualizations that you create. For more information, see [User preferences](/help/analysis-workspace/user-preferences.md).
+
+
+## Context menu {#right-click}
+
+Use the context menu (available through alternate select, for example, right-click when using a mouse) on a visualization header to access additional functionality for a visualization. Not all options are available for a visualizations.
+
+![Additional visualization settings with the right-click options displayed. Options are described in the next section.](assets/right-click.png)
+
+| Option | Description |
+| --- | --- |
+| **[!UICONTROL Insert copied visualization]**| Paste (insert) a copied visualization to another place within the project, or into a completely different project. |
+| **[!UICONTROL Copy data to clipboard]** | Copy data from the visualization onto the clipboard. |
+| **[!UICONTROL Copy selection to clipboard]** | Copy the selection from the visualization onto the clipboard. |
+| **[!UICONTROL Download items as CSV (*dimension name*)]** | Download the dimension items (to a maximum of 50,000) of the visualization to your local device. A maximum of 50,000 dimension items for the selected dimension. |
+| **[!UICONTROL Copy visualization]** | Copy the visualization, so that you can insert the visualization to another place within the project, or into a completely different project. |
+| **[!UICONTROL Download data CSV]** | Download the displayed data of the visualization to your local device. |
+|**[!UICONTROL  Export full table...]** | Export the full table to a designated cloud locations. See [Exports Customer Journey Analytics reports to the cloud](../export/export-cloud.md) |
+| **[!UICONTROL Duplicate visualization]** | Make an exact duplicate of the visualization. |
+| **[!UICONTROL Edit description]** | Add (or edit) a text description for the visualization. See [Text](text.md). |
+| **[!UICONTROL Get visualization link]** | Copy and share a link directly to the visualization. A Share link dialog displays the link. Select Copy to copy the link to your clipboard. |
+| **[!UICONTROL Start over]** | Delete the configuration for the current visualization so you can re-configure it from scratch. |
+
 ## Configuration
 
 Some visualizations (like Cohort table, Fallout, Flow, and others) have a configuration panel to assist you in building the visualization. Use ![Edit](/help/assets/icons/Edit.svg) at the top of the visualization to access that configuration and change options.
 
 ![Configuration pane](assets/configuration.png)
 
-## Context menu {#right-click}
-
-Use the context menu (available through alternate select, for example, right-click when using a mouse) on a visualization header to access additional functionality for a visualization. See each individual visualization for more details on what menu options are available.
-
-![Additional visualization settings with the right-click options displayed. Options are described in the next section.](assets/right-click.png)
-
-<!--
-| Option | Description |
-| --- | --- |
-| **[!UICONTROL Insert copied visualization]**n| Paste (insert) a copied visualization to another place within the project, or into a completely different project. |
-| **[!UICONTROL Copy data to clipboard]** | Copy data from the visualization onto the clipboard. |
-| **[!UICONTROL Copy selection to clipboard]** | Copy the selection from the visualization onto the clipboard. |
-| **[!UICONTROL Download items as CSV (*dimension name*)]** | Immediately download the dimension items (to a maximum of 50,000) of the visualization to your local device. A maximum of 50,000 dimension items for the selected dimension. |
-| **[!UICONTROL Copy visualization]** | Copy the visualization, so that you can insert the visualization to another place within the project, or into a completely different project. |
-| **[!UICONTROL Download data CSV]** | Immediately download the displayed data of the visualization to your local device. |
-|**[!UICONTROL  Export full table...]** | Export the full table to a designated cloud locations. See [Exports Customer Journey Analytics reports to the cloud](../export/export-cloud.md) |
-| **[!UICONTROL Duplicate visualization]** | Make an exact duplicate of the visualization. |
-| **[!UICONTROL Edit description]** | Add (or edit) a text description for the visualization. See [Text](text.md). |
-| **[!UICONTROL Get visualization link]** | Copy and share a link directly to the visualization. A Share link dialog displays the link. Select Copy to copy the link to your clipboard. |
-| **[!UICONTROL Start over]** | Delete the configuration for the current visualization so you can re-configure it from scratch. |
--->
-
 ## Visualize
 
-If you are not sure which visualization to pick, select ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualize]** in any table row (available on hover). This selection is the fastest way to add a visualization. Analysis Workspace takes an educated guess at which visualization would best fit your data. For example, if you have one row selected, it creates a trended [line graph](line.md). If you have three filter rows selected, it creates a [venn](venn.md) diagram. 
+If you are not sure which visualization to pick, select ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualize]** in any freeform table row (available on hover). This selection is the fastest way to add a visualization. Analysis Workspace takes an educated guess at which visualization would best fit your data. For example, if you have one row selected, it creates a trended [line graph](line.md). If you have three filter rows selected, it creates a [venn](venn.md) diagram. 
 
 ![Quick visualization](assets/quick-viz.png)

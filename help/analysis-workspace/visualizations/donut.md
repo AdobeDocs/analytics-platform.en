@@ -14,3 +14,9 @@ Similar to a pie chart, this visualization shows data as parts or filters of a w
 Here is a video on the bullet graph visualization:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23989/?quality=12)
+
+>[!MORELIKETHIS]
+>
+>[Visualization settings](freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
+

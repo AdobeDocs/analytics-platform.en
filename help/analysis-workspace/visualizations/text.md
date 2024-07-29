@@ -7,7 +7,11 @@ role: User
 ---
 # Text
 
-You can add user-defined text to your Workspace project by using a text visualizations or panel/visualization descriptions (right-click header > **[!UICONTROL Edit description]**). You can also change the formatting of your text, add hyperlinks, and add images.
+To add user-defined text to your Workspace project, you can use a text visualization or descriptions for a visualization and panel. 
+
+Contextual select (for example right-click when using a mouse) and select **[!UICONTROL Edit description]**. Select ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) when finished editing the description, select ![CloseCircle](/help/assets/icons/CloseCircle.svg) to cancel.
+
+You can change the formatting of your text, add hyperlinks, and add images.
 
 ## Adjust formatting {#format}
 

@@ -25,9 +25,7 @@ Keep this in mind:
 
 ## Build a Combo chart
 
-1. From the Visualizations drop-down list in the left rail, drag the [!UICONTROL Combo chart] visualization into a blank panel.
-
-   ![Combo chart showing the X and Y axis and options field](assets/combo-chart-build.png)
+1. Add a combo chart. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 
 1. From the drop-down lists, select a dimension for the X-axis and a metric for the Y-axis.
 
@@ -73,26 +71,8 @@ Here is an example of a combo chart with both Cumulative average and Mean functi
 
 ![A Combo chart showing both cumulative avrage and mean functions.](assets/combo-three-functions.png)
 
-## Combo chart settings
-
-Click the gear icon on the top right of a combo chart to change its settings.
-
-![Combo chart Settings view showing the options described below.](assets/combo-settings.png){width=70%}
-
-| Setting | Definition |
-| --- | --- |
-| **[!UICONTROL Visualization type]** | Lets you switch to another visualization type. |
-| **[!UICONTROL Granularity]** | For trended visualizations, you can change the time granularity (day, week, month, etc.) from this drop-down list. |
-| **[!UICONTROL General]** |  |
-| **[!UICONTROL Percentages]** | Displays values in percentages. |
-| **[!UICONTROL Legend visible]** | Lets you hide the detailed legend text for the Combo charts visualization. |
-| **[!UICONTROL Limit max items]** | Reduces the number of items on the X-axis. If you have a large dataset, you may only show the first 10 items (or whatever value you pick). |
-| **[!UICONTROL Overlays]** | Show or hide barbells on lines. |
-| **[!UICONTROL Axis]** | |
-| **[!UICONTROL Display dual axis]** | Only applies if you have two metrics - you can have a y-axis on the left (for one metric) and on the right (for the other metric). This is helpful when plotted metrics are of very different magnitudes. The dual axis color matches the color of the table, unless there are multiple comparisons. In that case, the color for all the comparisons is gray. |
-| **[!UICONTROL Normalization]** | Forces metrics to equal proportions. This is helpful when plotted metrics are of very different magnitudes. |
-| **[!UICONTROL Show x-axis]** | Display the x-axis or hide it. |
-| **[!UICONTROL Show y-axis]** | Display the y-axis or hide it.  |
-| **[!UICONTROL Anchor y-axis at zero]** | If all the values plotted on the chart are considerably above zero, the chart default will make the bottom of the y-axis NON-ZERO. If you check this box, the y-axis will be forced to zero (and it will re-draw the chart). |
-
-{style="table-layout:auto"}
+>[!MORELIKETHIS]
+>
+>[Visualization settings](freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
+>

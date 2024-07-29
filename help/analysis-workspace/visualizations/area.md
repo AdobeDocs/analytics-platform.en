@@ -21,4 +21,10 @@ This visualization is like an Area Chart, but each series begins at the top of t
 
 Use the **[!UICONTROL 100% stacked]** option in ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** to turn the chart into a 100% stacked visualization.
 
-![Area Stacked showing a 100% stacked visualization.](assets/areastacked100.png)
+![Area Stacked showing a 100% stacked visualization.](assets/area-stacked100.png)
+
+
+>[!MORELIKETHIS]
+>
+>[Visualization settings](freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](freeform-analysis-visualizations.md#context-menu)

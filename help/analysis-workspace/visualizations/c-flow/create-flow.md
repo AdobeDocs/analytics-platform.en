@@ -7,7 +7,7 @@ role: User
 ---
 # Configure a flow visualization
 
-Flow visualizations help you understand the journey stemming from or leading up to a specific conversion event on your website or your app. It traces a path through your dimensions (and dimension items) or metrics. 
+Flow visualizations help you understand the journey originating from or leading up to a specific conversion event on your website or your app. The visualization traces a path through your dimensions (and dimension items) or metrics. 
 
 Flow visualizations let you configure the start or end of the path you are interested in, or analyze all paths that flow through a dimension or dimension item.
 
@@ -44,7 +44,7 @@ Flow visualizations let you configure the start or end of the path you are inter
    | --- | --- |
    | **[!UICONTROL Wrap labels]** | Normally, the labels on the Flow elements are truncated to save screen real estate, but you can make the entire label visible by checking this box.  Default = unchecked. |
    | **[!UICONTROL Include repeat instances]** | Flow visualizations are based on instances of a dimension. This setting gives you the option to include or exclude repeated instances, e.g. Page reloads. However, repeats cannot be removed from Flow visualizations that include multi-valued dimensions, such as listVars, listProps, s.product, merchandising eVars, etc. <p>This option is disabled by default.</p> |
-   | **[!UICONTROL Limit to first/last occurrence]** | Limit paths to those that start/end with the first/last occurrence of a dimension/item/metric. See the section below, [Example scenario for 'limit to first/last occurrence'](#example-scenario-for-limit-to-firstlast-occurrence), for a more detailed explanation. |
+   | **[!UICONTROL Limit to first/last occurrence]** | Limit paths to those that start/end with the first/last occurrence of a dimension/item/metric. See [Limit to first/last occurrence](#example-scenario-for-limit-to-firstlast-occurrence) for a more detailed explanation. |
    | **[!UICONTROL Number of columns]** | The number of columns you want in your Flow diagram. You can specify a maximum of 5 columns. |
    | **[!UICONTROL Items expanded per column]** | The number of items you want in each column. You can specify a maximum of 10 items expanded per column. |
    | **[!UICONTROL Flow container]** | <ul><li>Visit</li><li>Visitor</li></ul> Lets you switch between Visit and Visitor to analyze visitor pathing. These settings help you understand visitor engagement at the visitor level (across visits), or constrain the analysis to a single visit.  |
@@ -83,23 +83,21 @@ To drill down further into the data, you have several options:
 
 * You can filter a column to display only certain results, such as including and excluding, specifying criteria, etc.
 
-* Click the plus sign (+) on the left to expand a column.
+* Select ![AddCircle](/help/assets/icons/AddCircle.svg) on the left or right side to expand a column.
 
 * Use the right-click options explained below to further customize the output.
 
-* Click the pencil icon next to the configuration summary to further edit the flow or rebuild it with different options.
-
-* You can also export and further analyze your Flow diagram as part of a project's .CSV file by going to **[!UICONTROL Project]** > **[!UICONTROL Download CSV]**.
+* Click ![Edit](/help/assets/icons/Edit.svg) next to the configuration summary to further edit the flow or rebuild it with different options.
 
 ## Filtering
 
-Above each column, a filter appears when you hover over it. By selecting the filter, you get the same filter dialog that exists in the Freeform table today. This filter works the same as it does in the Freeform table.
+Above each column, a filter ![Filter](/help/assets/icons/Filter.svg) appears when you hover over it. By selecting the filter, you get the same filter dialog that exists in the Freeform table. See [Filter and sort](freeform-table/../../freeform-table/filter-and-sort.md).
 
 * Use advanced settings to include or exclude certain criteria with our list of operators. 
 * Once you have filtered an item from the list, that specific column will reflect the filtering. (The filter either reduces it to only show the item allowed in the filter, or it removes all items except for the one item you want in the filter.
 * All downstream and upstream columns should persist, as long as there is data flowing into the remaining nodes. 
-* Once applied, the filter icon appears in blue above the column it is filtering. 
-* To remove a filter, select on the filter icon to open the filter menu. Remove any filters applied and then select **[!UICONTROL Save]**. The flow should return to its previous, unfiltered state.
+* Once applied, a ![Filter](/help/assets/icons/FilterColored.svg) indicates in blue the column is filtered. 
+* To remove a filter, select ![Filter](/help/assets/icons/Filter.svg) to open the filter menu. Remove any filters applied and then select **[!UICONTROL Save]**. The flow should return to its previous, unfiltered state.
 
 ## Right-click options {#right-click}
 

@@ -15,28 +15,24 @@ The Line visualization represents metrics using a line in order to show how valu
 
 ![Line visualization](assets/line-viz.png)
 
-Select the settings icon ![Settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the top bar of the Line visualization to access [Visualization settings](freeform-analysis-visualizations.md) available. Settings are categorized into:
 
-<img src="./assets/viz-settings-line.png" alt="Visualization settings" width=50%/>
+## Settings 
 
-* **General**: Settings that are common across visualization types
-* **Axis**: Settings that impact the x- or y-axis of the line visualization
-* **Overlays**: Options for adding additional context to the series shown in your line visualization.
+As part of the [visualization settings](freeform-analysis-visualizations.md#settings), specific line visualization settings are available.
 
+### Granularity
 
-## Change granularity
+Select from the granularity drop-down to change a trended visualization from daily to weekly to monthly, etc. The granularity is also updated in the data source table.
 
-A granularity drop-down in the [visualization settings](freeform-analysis-visualizations.md) lets you change a trended visualization (e.g. line, bar) from daily to weekly to monthly, etc. The granularity is also updated in the data source table.
+### Show min or max
 
-## Show min or max
-
-Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!UICONTROL Show min/max]**, you can overlay a minimum and maximum value label to quickly highlight the peaks and valleys in a metric. Note: The min/max values are derived from the visible data points in the visualization, not the full set of values within a dimension.
+You can overlay a min and max value label to quickly highlight the minimum and maximum values in a metric. The min/max values are derived from the visible data points in the visualization, not the full set of values within a dimension.
 
 ![An overlay with the minimum and maximum value label.](assets/min-max-labels.png)
 
-## Show trendline overlay
+### Show trendline
 
-Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!UICONTROL Show trendline]**, you can choose to add a regression or moving average trendline to your line series. Trendlines help to depict a clearer pattern in the data.
+You can choose to add a regression or moving average trendline to your line series. Trendlines help to depict a clearer pattern in the data.
 
 >[!TIP]
 >
@@ -54,3 +50,9 @@ All regression model trendlines are fit using ordinary least squares:
 | Power | Creates a curved line and is useful for datasets that compare measurements that increase at a specific rate. This option should not be used if your data contains zero or negative values. Equation: `y = a * x^b` |
 | Quadratic | Finds the best-fit for a dataset shaped like a parabola (concave up or down). Equation: `y = a + b * x + c * x^2` |
 | Moving average | Creates a smooth trendline based on a set of averages. Also known as a rolling average, a moving average uses a specific number of data points (determined by your 'Periods' selection), averages them, and uses the average as a point in the line. Examples include 7 day moving average or 4 week moving average.|
+
+>[!MORELIKETHIS]
+>
+>[Visualization settings](freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
+

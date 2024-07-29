@@ -11,7 +11,7 @@ The Venn visualization lets you drag in up to 3 filters (from Components) and on
 
  ![Venn visualization that includes three filters.](assets/venn.png)
 
-You can then hover over the filters to gain more insight into percentages, etc.
+You can hover over the filters to gain more insight into percentages, etc.
 
 <!--
 
@@ -22,3 +22,10 @@ To normalize the Venn diagram (take the size out of it), go select ![Setting](/h
 ![Visualization Settings option for Visualization type: Venn diagram.](assets/normalization.png)
 
 -->
+
+
+>[!MORELIKETHIS]
+>
+>[Visualization settings](freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
+

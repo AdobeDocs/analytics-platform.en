@@ -24,3 +24,10 @@ This visualization is like a bar chart, but with the series bars stacked on top 
 Use the **[!UICONTROL 100% stacked]** option in ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** to turn the chart into a 100% stacked visualization.
 
 ![A 100% stacked bar chart.](assets/bar-stacked100.png)
+
+
+>[!MORELIKETHIS]
+>
+>[Visualization settings](freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
+

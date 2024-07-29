@@ -45,8 +45,6 @@ To create hyperlinks for one or more dimension items:
 
    * **Create a hyperlink for a single dimension item:** Right-click the dimension item within the table for which you want to create the hyperlink, then select [!UICONTROL **Create hyperlink**].
 
-     ![Create hyperlink for a single dimension item](assets/hyperlink-single-add.png)
-
      The [!UICONTROL **Create hyperlink**] dialog is displayed. The name of the dimension item for which you are creating a hyperlink is shown in the dialog. 
 
      ![Create hyperlink for a single item dialog](assets/hyperlink-dialog-single.png)

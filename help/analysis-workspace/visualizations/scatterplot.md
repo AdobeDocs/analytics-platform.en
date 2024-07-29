@@ -16,3 +16,8 @@ The scatterplot visualization shows the relationship between dimension items and
 * All subsequent columns in a freeform table are ignored by the scatterplot visualization.
 
 ![Scatterplot example showing multiple dimension items ](assets/scatter.png)
+
+>[!MORELIKETHIS]
+>
+>[Visualization settings](freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
