@@ -7,9 +7,9 @@ role: User
 ---
 # Configure a flow visualization
 
-Flow visualizations help you understand the journey originating from or leading up to a specific conversion event on your website or your app. The visualization traces a path through your dimensions (and dimension items) or metrics. 
+Flow visualizations help you understand the journey originating from a specific conversion event on your website or your app. Or leading up to a specific conversion event. The visualization traces a path through your dimensions (and dimension items) or metrics. 
 
-Flow visualizations let you configure the start or end of the path you are interested in, or analyze all paths that flow through a dimension or dimension item.
+YOu can configure the start or end of the path you are interested in. Or analyze all paths that flow through a dimension or dimension item.
 
 ![The Flow configuration screen showing the Starts with, Contains, and Ends with fields.](assets/new-flow.png)
 
@@ -31,7 +31,7 @@ Flow visualizations let you configure the start or end of the path you are inter
 
    >[!IMPORTANT]
    >
-   >Calculated metrics cannot be used in the  **[!UICONTROL Starts with]** or **[!UICONTROL Ends with]** fields.
+   >Calculated metrics cannot be used in the **[!UICONTROL Starts with]** or **[!UICONTROL Ends with]** fields.
 
 1. If you choose a metric, you also need to provide a [!UICONTROL **Pathing Dimension**] to use as your path leading to or coming from your selected component, as shown here. The default is [!UICONTROL **Page**].
 
@@ -43,11 +43,11 @@ Flow visualizations let you configure the start or end of the path you are inter
    | Setting | Description |
    | --- | --- |
    | **[!UICONTROL Wrap labels]** | Normally, the labels on the Flow elements are truncated to save screen real estate, but you can make the entire label visible by checking this box.  Default = unchecked. |
-   | **[!UICONTROL Include repeat instances]** | Flow visualizations are based on instances of a dimension. This setting gives you the option to include or exclude repeated instances, e.g. Page reloads. However, repeats cannot be removed from Flow visualizations that include multi-valued dimensions, such as listVars, listProps, s.product, merchandising eVars, etc. <p>This option is disabled by default.</p> |
-   | **[!UICONTROL Limit to first/last occurrence]** | Limit paths to those that start/end with the first/last occurrence of a dimension/item/metric. See [Limit to first/last occurrence](#example-scenario-for-limit-to-firstlast-occurrence) for a more detailed explanation. |
+   | **[!UICONTROL Include repeat instances]** | Flow visualizations are based on instances of a dimension. This setting gives you the option to include or exclude repeated instances, for example, Page reloads. However, repeats cannot be removed from Flow visualizations that include multi-valued dimensions, such as listVars, listProps, s.product, merchandising eVars, etc. <p>This option is disabled by default.</p> |
+   | **[!UICONTROL Limit to first/last occurrence]** | Limit paths to paths that start or end with the first or last occurrence of a dimension, item, or metric. See [Limit to first/last occurrence](#example-scenario-for-limit-to-firstlast-occurrence) for a more detailed explanation. |
    | **[!UICONTROL Number of columns]** | The number of columns you want in your Flow diagram. You can specify a maximum of 5 columns. |
    | **[!UICONTROL Items expanded per column]** | The number of items you want in each column. You can specify a maximum of 10 items expanded per column. |
-   | **[!UICONTROL Flow container]** | <ul><li>Visit</li><li>Visitor</li></ul> Lets you switch between Visit and Visitor to analyze visitor pathing. These settings help you understand visitor engagement at the visitor level (across visits), or constrain the analysis to a single visit.  |
+   | **[!UICONTROL Flow container]** | <ul><li>Visit</li><li>Visitor</li></ul> You can switch between **[!UICONTROL Sessions]** and **[!UICONTROL Person]** to analyze pathing. These settings help you understand a person's engagement at the person level (across sessions), or constrain the analysis to a single session.  |
 
    >[!IMPORTANT]
    >
@@ -56,20 +56,19 @@ Flow visualizations let you configure the start or end of the path you are inter
 
 1. Select **[!UICONTROL Build]**.
 
->[!INFO]
->
->**Example:** Suppose that you want to trace the path that users took both to and from the most popular pages on your site.
->
->To do this, you would
->
->1. Begin creating a flow visualization as described above.
->1. Drag the [!UICONTROL **Page**] dimension into the **[!UICONTROL Contains]** field, then select [!UICONTROL **Build**].
->1. The Flow visualization builds with the most-viewed page visible in the focus node in the center of the visualization. You also see the top pages leading into that page (to the left of the focus node) as well as the top pages leading out of that page (to the right of the focus node).
->1. Analyze data in the flow, as described in [View and change the Flow output](#view-and-change-the-flow-output).
 
-## View and change the Flow output {#output}
+### Example 
 
-A summary of the Flow configuration appears at the top of the diagram. The paths in the diagram are proportional. Paths with more activity appear thicker. 
+Suppose that you want to trace the path that users took both to and from the most popular pages on your site.
+
+1. Create a flow visualization as described above.
+1. Drag the [!UICONTROL **Page**] dimension into the **[!UICONTROL Contains]** field, then select [!UICONTROL **Build**].
+1. The Flow visualization builds, with the most-viewed page visible in the focus node, at the center of the visualization. You also see the top pages leading into that page (to the left of the focus node) as well as the top pages leading out of that page (to the right of the focus node).
+1. Analyze data in the flow, as described in [View and change the Flow output](#view-and-change-the-flow-output).
+
+## View and change the Flow output
+
+A summary of the Flow configuration appears at the top of the visualizations. The paths in the diagram are proportional. Paths with more activity appear thicker. 
 
 ![Flow output example showing Ends with Visits, Pathing dimension: Page, and Flow container: Vistors.](assets/flow-output.png)
 
@@ -85,27 +84,28 @@ To drill down further into the data, you have several options:
 
 * Select ![AddCircle](/help/assets/icons/AddCircle.svg) on the left or right side to expand a column.
 
-* Use the right-click options explained below to further customize the output.
+* To customize the output, use the right-click [context menu](#context-menu) options.
 
-* Click ![Edit](/help/assets/icons/Edit.svg) next to the configuration summary to further edit the flow or rebuild it with different options.
+* To edit the flow or rebuild it with different options, select ![Edit](/help/assets/icons/Edit.svg) next to the configuration summary.
 
 ## Filtering
 
 Above each column, a filter ![Filter](/help/assets/icons/Filter.svg) appears when you hover over it. By selecting the filter, you get the same filter dialog that exists in the Freeform table. See [Filter and sort](freeform-table/../../freeform-table/filter-and-sort.md).
 
-* Use advanced settings to include or exclude certain criteria with our list of operators. 
-* Once you have filtered an item from the list, that specific column will reflect the filtering. (The filter either reduces it to only show the item allowed in the filter, or it removes all items except for the one item you want in the filter.
-* All downstream and upstream columns should persist, as long as there is data flowing into the remaining nodes. 
-* Once applied, a ![Filter](/help/assets/icons/FilterColored.svg) indicates in blue the column is filtered. 
+* Use **[!UICONTROL Show advanced]** to configure advanced settings to include or exclude certain criteria with a list of operators. See [Filters and sort](../freeform-table/filter-and-sort.md) for more information.
+* Once you have filtered a column, that specific column reflects the filtering. A blue ![Filter](/help/assets/icons/FilterColored.svg) indicates that the column is filtered.  The filter either reduces the column to show only the item allowed in the filter. Or it removes all items, except for the one item you want in the filter.
+* All downstream and upstream columns persist, as long as there is data flowing into the remaining nodes. 
 * To remove a filter, select ![Filter](/help/assets/icons/Filter.svg) to open the filter menu. Remove any filters applied and then select **[!UICONTROL Save]**. The flow should return to its previous, unfiltered state.
 
-## Right-click options {#right-click}
+## Context menu
+
+Use right-click on any node in the flow visualization to open a context menu with the following options.
 
 | Option | Description |
 |--- |--- |
 | [!UICONTROL Focus on this node] | Change the focus to the selected node. The focus node appears at the center of the Flow diagram. |
-| [!UICONTROL Start over] | Returns you to the Freeform diagram builder, where you can build a new Flow diagram. |
-| [!UICONTROL Create filter for this path] | Create a filter. This takes you into the Filter Builder, where you can configure the new filter. |
+| [!UICONTROL Start over] | Return you to the Freeform diagram builder, where you can build a new Flow diagram. |
+| [!UICONTROL Create a filter for this path] | Create a filter. This selection takes you into the Filter builder, where you can configure the new filter. |
 | [!UICONTROL Breakdown] | Break the node down by available Dimensions, Metrics, or Time. |
 | [!UICONTROL Filter column] | The same filter options appear as are available in the Freeform table. For more information about the available options, see the section "Apply a simple or advanced filter to a table" in [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).|
 | [!UICONTROL Exclude item]/[!UICONTROL Restore excluded items] | Removes a specific node from the column and automatically creates it as a filter at the top of the column. To restore the excluded item, right-click again and select **[!UICONTROL Restore Excluded Item]**. you can also open the filter at the top of the column and remove the pillbox with the item you just excluded. |
@@ -122,17 +122,17 @@ When using this option, keep in mind that:
 
 * **[!UICONTROL Limit to first/last occurrence]** counts only the first/last occurrence in the series. All other occurrences of the **[!UICONTROL Starts with]** or **[!UICONTROL Ends with]** criteria are discarded. 
 * If used with a **[!UICONTROL Starts with]** flow, only the first occurrence that matches the start criteria is included. 
-  In the example below, **all** occurrences of Add to cart and Product Main Category in each step of the flow is included.
+  In the example below, **all** occurrences of *Add to cart* and *Product main category* in each step of the flow are included.
   ![No limit, first](assets/limitofffirst.png)
 
-  In the example below, only **first** occurrences of Add to cart and Product Main category in each step of the flow is included.
+  In the example below, only the **first** occurrences of *Add to cart* and *Product main category* in each step of the flow are included.
   ![Lint, start](assets/limitonfirst.png)
-* If used with an **[!UICONTROL Ends with]** flow, only the last occurrence that matches the end criteria will be included. 
-  In the example below, **all** occurrences of Product Main Category and Add to cart in each step of the flow is included.
+* If used with an **[!UICONTROL Ends with]** flow, only the last occurrence that matches the end criteria is included. 
+  In the example below, **all** occurrences of *Product main category* and *Add to cart* in each step of the flow are included.
   ![No limit, first](assets/limitofflast.png)
 
-  In the example below, only the **last** occurrences of Product Main category and Add to cart in each step of the flow is included.
+  In the example below, only the **last** occurrences of *Product main category* and *Add to cart* in each step of the flow are included.
   ![Lint, start](assets/limitonlast.png)
-* The series used differs based on the container. If using the **[!UICONTROL Person]** container, the series of events will be the session. If using the **[!UICONTROL Session]** container, the series of events will be all the events for a given user in the provided date range. 
+* The series used differs based on the container. If using the **[!UICONTROL Person]** container, the series of events are the session. If using the **[!UICONTROL Session]** container, the series of events are all the events for a given user in the provided date range. 
 * The **[!UICONTROL Limit to first/last occurrence]** option can be configured in the advanced settings when using a Metric or Dimension Item in the **[!UICONTROL Starts with]** or **[!UICONTROL Ends with]** fields.
 

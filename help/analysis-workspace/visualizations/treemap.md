@@ -14,3 +14,11 @@ Displays hierarchical (tree-structured) data as a set of nested rectangles.
 ![Treemap example showing tiles of smaller rectrangles representing sub-branches.](assets/treemap.png)
 
 When the color and size dimensions are correlated in some way with the tree structure, one can often easily see patterns that would be difficult to spot in other ways, such as if a certain color is particularly relevant. A second advantage of treemaps is that, by construction, they make efficient use of space.
+
+
+>[!MORELIKETHIS]
+>
+>[Visualization settings](freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
+
+
