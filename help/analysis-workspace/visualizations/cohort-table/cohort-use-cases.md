@@ -22,7 +22,7 @@ You can create a six-month [!UICONTROL Cohort Analysis]:
 
 **Return metric**: Sessions or Launches
 
-Visitors do not count as *`engaged`* in subsequent months, unless they are having a session or at least launching the app. [!UICONTROL Cohort Analysis] would then show you patterns in usage where *`App Install`* always occurs on Month 0. You might notice that usage dips in Month 2, regardless of when users installed the app. (For those users who installed the app in January 2015, Month 2 is March 2015. For those visitors who installed the app in February 2015, Month 2 is April 2015, and so on.) This analysis allows you to send an email or a push message to all users during the second month after they install the app to remind them to use the app.
+Visitors do not count as *engaged* in subsequent months, unless they are having a session or at least launching the app. [!UICONTROL Cohort Analysis] would then show you patterns in usage where *App Install* always occurs in Month 0. You might notice that usage dips in Month 2, regardless of when users installed the app. (For those users who installed the app in January 2015, Month 2 is March 2015. For those visitors who installed the app in February 2015, Month 2 is April 2015, and so on.) This analysis allows you to send an email or a push message to all users during the second month after they install the app to remind them to use the app.
 
 ## Subscription use case 
 
@@ -36,13 +36,13 @@ You work at Adobe.com and offer a free Creative Cloud subscription. The goal is 
 
 Using [!UICONTROL Cohort Analysis], you could see, for example, that anywhere between 8% and 10% of free Creative Cloud users upgrade in the first month after installation. Regardless of when the users installed. 12-15% upgrade in the second month of use. After that, upgrading significantly drops off: 4-5% in month three, 3-4% in month four, and 1-2% in month five.
 
-Recognizing that you need not to lose potential customers in month three, you set up an email campaign designed to go out in the middle of month three to a sample of users. Offering a $50 coupon to users who have not yet upgraded.
+You do not want to lose potential customers in month three. So, you set up an email campaign designed to go out in the middle of the third month to a sample of users. Offering a $50 coupon to users who have not yet upgraded.
 
 Check back with your cohort analysis reports a few months later. For cohorts formed after the launch of the campaign, conversion to paid Creative Cloud subscriptions in month three has risen from 4-5% to 13-14%. This rise in conversion results in hundreds of thousands of dollars per cohort, for every monthly cohort that hits month three from that point forward.
 
 ## Complex Cohort filters use case
 
-A major hotel chain targets multiple customer groups for promotions and tracks against performance. To identify the best groups of user cohorts to target, they want to create very specific cohort groups. Using the augmented [!UICONTROL Inclusion] and [!UICONTROL Return] Criteria within [!UICONTROL Cohort] Tables, the hotel chain is able to define just the right cohort groupings with multiple metrics and filters. So the hotel chain can identify underperforming customers groups to target customers with promotions and deals to increase bookings.
+A major hotel chain targets multiple customer groups for promotions and tracks against performance. To identify the best groups of user cohorts to target, they want to create very specific cohort groups. Using the augmented [!UICONTROL Inclusion] and [!UICONTROL Return] Criteria within [!UICONTROL Cohort] Tables, the hotel chain is able to define just the right cohort groupings with multiple metrics and filters. So, the hotel chain can identify underperforming customer groups to target customers with promotions and deals to increase bookings.
 
 ## App Version Adoption use case
 
@@ -58,4 +58,4 @@ A large apparel retailer has many specific customer filters that drive large por
 
 ## Individual Stickiness - Most Loyal Users use case
 
-A major airline derives the majority of their success and revenue from repeat and loyal customers. In many cases, their loyal travelers comprise the majority of their revenue and retaining those customers is critical to their long-term success. Identifying their most loyal and consistent customers can often be difficult. However, using the new [!UICONTROL Rolling Calculation] setting in [!UICONTROL Cohort Analysis], the airline is able to analyze loyal customer filters and find out which travelers were repeat purchasers month-over-month. The airline is also able to target these travelers with rewards and perks for their loyalty. Additionally, by switching the Cohort type from retention to churn, the airline is able to identify which customers are not repeat purchasers month-over-month and target those customers with promotions. So the airline can re-engage with these customers and ensure they remain loyal customers in the future.
+A major airline derives the majority of their success and revenue from repeat and loyal customers. In many cases, their loyal travelers comprise the majority of their revenue and retaining those customers is critical to their long-term success. Identifying their most loyal and consistent customers can often be difficult. However, using the new [!UICONTROL Rolling Calculation] setting in [!UICONTROL Cohort Analysis], the airline is able to analyze loyal customer filters and find out which travelers were repeat purchasers month-over-month. The airline is also able to target these travelers with rewards and perks for their loyalty. Additionally, by switching the Cohort type from retention to churn, the airline is able to identify which customers are not repeat purchasers month-over-month and target those customers with promotions. So, the airline can re-engage with these customers and ensure they remain loyal customers in the future.
