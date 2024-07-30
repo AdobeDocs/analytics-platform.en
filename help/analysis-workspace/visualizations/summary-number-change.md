@@ -1,5 +1,5 @@
 ---
-description: Use the Summary Number and Change visualizations to display important data points in a project.
+description: Use the Summary number and Summary change visualizations to display important data points in a project.
 title: Summary Number and Summary Change
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
@@ -9,7 +9,7 @@ role: User
 
 ## Summary number
 
-Use the Summary Number visualization to highlight a large number that is important in a project. This visualization behaves in the following ways:
+Use the ![Summarize](/help/assets/icons/123.svg) [!UICONTROL Summary number] visualization to highlight a large number that is important in a project. This visualization behaves in the following ways:
 
 * Selects the total of the column if no cell is selected.
 * If a single cell is selected, it shows the summary for that cell.
@@ -22,12 +22,12 @@ As part of the visualization settings, specific Summary number options are avail
 
 | Option | Definition |
 |--- |--- |
-| **[!UICONTROL Abbreviate value]** | Select Abbreviate to abbreviate intellgently the number value. When selected, enter a number to define the amount of abbreviation. For example:<br/><table><tr><td>**Original value**</td><td>**Abbreviation**</td><td>**Result**</td></tr><tr><td>$12,011,141.25</td><td>Not selected</td><td  align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to 1</td><td align="right">$12M</td></tr><tr><td>$12,011,141.25</td><td>Selected, setl to 2</td><td  align="right">$12.0M</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to 2</td><td align="right">$12.011M</td></tr><tr><td>$12,011,141.25</td><td>Select, set to 3</td><td align="right">$12.011M</td></tr></table> |
+| **[!UICONTROL Abbreviate value]** | Select Abbreviate to abbreviate intelligently the number value. When selected, enter a number to define the amount of abbreviation. For example:<br/><table><tr><td>**Original value**</td><td>**Abbreviation**</td><td>**Result**</td></tr><tr><td>$12,011,141.25</td><td>Not selected</td><td  align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to 1</td><td align="right">$12M</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to 2</td><td  align="right">$12.0M</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to 2</td><td align="right">$12.011M</td></tr><tr><td>$12,011,141.25</td><td>Select, set to 3</td><td align="right">$12.011M</td></tr></table> |
 | **[!UICONTROL Summarize value by]** | Choose to display the max, min, mean, median, or sum for a selection of data. |
 
 ## Summary change
 
-Use the Summary Change visualization to show the delta (change) between two numbers. <!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
+Use the ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) [!UICONTROL Summary Change] visualization to show the delta (change) between two numbers. <!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
 
 This visualization behaves in the following ways:
 
@@ -46,10 +46,11 @@ As part of the visualization settings, specific **[!UICONTROL Summary change opt
 
 | Option | Definition |
 |--- |--- |
-| **[!UICONTROL Show percent change]**| Shows the percent change between the 2 numbers.|
-| **[!UICONTROL Show raw difference]** | Shows the raw difference between the 2 numbers. You can also abbreviate values and show up to 3 decimal places with this option.|
+| **[!UICONTROL Show percent change]**| Show the percent change between the 2 numbers.|
+| **[!UICONTROL Show raw difference]** | Show the raw difference between the 2 numbers. You can also abbreviate values and show up to 3 decimal places with this option.|
 
 >[!MORELIKETHIS]
 >
+>[Add a visualization to a panel](freeform-analysis-visualizations)
 >[Visualization settings](freeform-analysis-visualizations.md#settings)
 >[Visualization context menu](freeform-analysis-visualizations.md#context-menu)

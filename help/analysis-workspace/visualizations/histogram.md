@@ -7,7 +7,7 @@ role: User
 ---
 # Histogram
 
-A histogram is similar to a bar chart, but it groups numbers into ranges (buckets). Analytics automates the "bucketing" of numbers into ranges, but you can change the settings in [Advanced Settings](#advanced-settings).
+The ![Histogram](/help/assets/icons/Histogram.svg) histogram visualization is similar to a bar chart, but it groups numbers into ranges (buckets). Analytics automates the "bucketing" of numbers into ranges, but you can change the settings in [Advanced Settings](#advanced-settings).
 
 ## Build a histogram {#section_74647707CC984A1CB6D3097F43A30B45}
 
@@ -22,8 +22,6 @@ To create a histogram:
 >
 >Histograms support only standard metrics, not calculated metrics.
 
-Here we have used the Page Views Metric per Unique Visitors. The first (left) bucket corresponds to 1 page view per unique person, the second bucket to two page views, etc.
-
 In the example below, a histogram is used to bucket sessions for the number of persons. The histogram shows that most persons do have between 16-21 sessions for the selected data range.
 
 ![](assets/histogram.png)
@@ -37,7 +35,7 @@ As part of the visualization, specific histogram settings are available.
 |  **[!UICONTROL Starting bucket]**  | Determines which bucket the histogram starts with. "1" is the default. You can set starting numbers from 0 to infinity (no negative numbers).  |
 |  **[!UICONTROL Metric buckets]**  | Lets you increase/decrease the number of data ranges (buckets.) The maximum number of buckets is 50.  |
 |  **[!UICONTROL Metric bucket size]** | Lets you set the size of each bucket. For example, you can change the bucket size from 1 page view to 2 page views.  |
-|  **[!UICONTROL Counting method]**  | Lets you choose among **[!UICONTROL Person]**, **[!UICONTROL Session]**, or **[!UICONTROL Event]**. For example, page views per session or page views per person or page views per event.  |
+|  **[!UICONTROL Counting method]**  | Select from **[!UICONTROL Person]**, **[!UICONTROL Session]**, or **[!UICONTROL Event]**. For example, page views per session, or page views per person, or page views per event.  |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
@@ -50,6 +48,7 @@ As part of the visualization, specific histogram settings are available.
 
 >[!MORELIKETHIS]
 >
+>[Add a visualization to a panel](freeform-analysis-visualizations)
 >[Visualization settings](freeform-analysis-visualizations.md#settings)
 >[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
 

@@ -9,9 +9,11 @@ role: User
 
 [!UICONTROL Column settings] let you configure column formatting, some of which can be conditional.
 
-View a video on row and column settings here:
++++ View a video demonstration of this feature.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
+
++++
 
 To access [!UICONTROL Column settings], select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the column heading.
 

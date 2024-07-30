@@ -7,7 +7,7 @@ role: User
 ---
 # Fallout overview
 
-Fallout reports show where persons left (fell out) and continued through (fell through) a predefined sequence of pages.
+A ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) [!UICONTROL Fallout] visualization shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages.
 
 Fallout visualizations provide more options to build your fallout reports. Fallout visualizations let you:
 

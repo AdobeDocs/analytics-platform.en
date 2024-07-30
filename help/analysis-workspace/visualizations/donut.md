@@ -7,16 +7,19 @@ role: User
 ---
 # Donut
 
-Similar to a pie chart, this visualization shows data as parts or filters of a whole. Use a donut graph when comparing percentages of a total, typically with a small number of items.
+Similar to a pie chart, the ![GraphDonut](/help/assets/icons/GraphDonut.svg) donut visualization shows data as parts or filters of a whole. Use a donut graph when comparing percentages of a total, typically with a small number of items.
 
 ![A Donut chart showing data as parts or filters of a whole.](assets/donut.png)
 
-Here is a video on the bullet graph visualization:
++++ View a video demonstration of this feature.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23989/?quality=12)
 
++++
+
 >[!MORELIKETHIS]
 >
+>[Add a visualization to a panel](freeform-analysis-visualizations)
 >[Visualization settings](freeform-analysis-visualizations.md#settings)
 >[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
 

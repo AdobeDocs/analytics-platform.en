@@ -7,9 +7,11 @@ role: User
 ---
 # Row settings
 
-View a video on row and column settings here:
++++ View a video demonstration of this feature.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
+
++++
 
 Row settings vary depending on which component you have dragged into the table. To access table row settings, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** next to a dimension, filter, metric, time period, or a breakdown within each of these objects.
 

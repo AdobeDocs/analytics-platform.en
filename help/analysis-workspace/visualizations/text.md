@@ -1,5 +1,5 @@
 ---
-description: Lets you add user-defined text to your Workspace.
+description: Adds user-defined text to your Workspace.
 title: Text
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
@@ -7,7 +7,7 @@ role: User
 ---
 # Text
 
-To add user-defined text to your Workspace project, you can use a text visualization or descriptions for a visualization and panel. 
+To add user-defined text to your Workspace project, you can use a ![Text](/help/assets/icons/Text.svg) [!UICONTROL Text] visualization or descriptions for a visualization and panel. 
 
 Contextual select (for example right-click when using a mouse) and select **[!UICONTROL Edit description]**. Select ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) when finished editing the description, select ![CloseCircle](/help/assets/icons/CloseCircle.svg) to cancel.
 
@@ -21,7 +21,7 @@ When editing your text box or description, you can adjust the font size (heading
 
 ## Add hyperlinks {#hyperlinks}
 
-To add a hyperlink, highlight the text and select ![Link](/help/assets/icons/Link.svg) in the menu. Hyperlinks can link to external websites, documentation pages, [Workspace projects/panels/visualizations](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html), and more to further assist your project recipients.
+To add a hyperlink, highlight the text and select ![Link](/help/assets/icons/Link.svg) in the menu. You can use hyperlinks to provide further assistance to your project recipients. Hyperlinks can link to external websites, documentation pages, [Workspace projects, panels, or visualizations](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html), and more.
 
 ![Text options with the link icon highlighted.](assets/hyperlink.png)
 

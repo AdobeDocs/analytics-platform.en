@@ -7,7 +7,7 @@ role: User
 ---
 # Freeform table
 
-In Analysis Workspace, a Freeform table is the foundation for interactive data analysis. You can drag and drop a combination of [components](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components) into rows and columns to create a custom table for your analysis. As each component is dropped, the table updates immediately so you can quickly analyze and dig deeper.
+In Analysis Workspace, a ![Table](/help/assets/icons/Table.svg) [!UICONTROL Freeform table] visualization is the foundation for interactive data analysis. You can drag and drop a combination of [components](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components) into rows and columns to create a custom table for your analysis. As each component is dropped, the table updates immediately so you can quickly analyze and dig deeper.
 
 ![Freeform Table showing components in rows and columns including Visits and Online Orders for multiple web pages.](assets/opening-section.png)
 
@@ -66,7 +66,7 @@ Select ![Setting](/help/assets/icons/Setting.svg) to display **[!UICONTROL Table
 
 ## Context menu
 
-The following [context menu](../freeform-analysis-visualizations.md#context-menu) options are available:
+The following [context menu](../freeform-analysis-visualizations.md#context-menu) options are available from the header of the visualization:
 
 | Option | Description |
 | --- | --- |

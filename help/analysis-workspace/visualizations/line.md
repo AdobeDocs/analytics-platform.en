@@ -7,11 +7,15 @@ role: User
 ---
 # Line
 
+The ![GraphTrend](/help/assets/icons/GraphTrend.svg) [!UICONTROL Line] visualization represents metrics using a line to show how values change over a period of time. A line chart can be used only when time is used as a dimension.
+
+<!--
 >[!NOTE]
 >
->The Line visualization will soon feature [intelligent captions](/help/analysis-workspace/visualizations/intelligent-captions.md).
+>The Line visualization soon feature [intelligent captions](/help/analysis-workspace/visualizations/intelligent-captions.md).
 
-The Line visualization represents metrics using a line in order to show how values change over a period of time. A line chart can be used only when time is used as a dimension.
+The Line visualization represents metrics using a line to show how values change over a period of time. A line chart can be used only when time is used as a dimension.
+-->
 
 ![Line visualization](assets/line-viz.png)
 
@@ -26,7 +30,7 @@ Select from the granularity drop-down to change a trended visualization from dai
 
 ### Show min or max
 
-You can overlay a min and max value label to quickly highlight the minimum and maximum values in a metric. The min/max values are derived from the visible data points in the visualization, not the full set of values within a dimension.
+You can overlay a min and max value label to highlight the minimum and maximum values in a metric. The min/max values are derived from the visible data points in the visualization, not the full set of values within a dimension.
 
 ![An overlay with the minimum and maximum value label.](assets/min-max-labels.png)
 
@@ -36,7 +40,7 @@ You can choose to add a regression or moving average trendline to your line seri
 
 >[!TIP]
 >
->It is recommended that trendlines be applied to data that does not include today (partial data) or future dates, as those will skew the trendline. If you need to include future dates, however, remove zeroes from the data to prevent skewing for those days. To do this, go to the visualization's data source table, choose your metric column, then enable **[!UICONTROL Column Settings]** > **[!UICONTROL Interpret zero as no value]**.
+>It is recommended that trendlines be applied to data that does not include today (partial data) or future dates. Today or future dates skew the trendline. If you need to include future dates, however, remove zeroes from the data to prevent skewing for those days. Go to the visualization's data source table, choose your metric column, then enable **[!UICONTROL Column Settings]** > **[!UICONTROL Interpret zero as no value]**.
 
 ![Linear trendline](assets/show-linear-trendline.png)
 
@@ -44,15 +48,16 @@ All regression model trendlines are fit using ordinary least squares:
 
 | Model | Description |
 | --- | --- |
-| Linear | Creates a best-fit straight line for simple linear datasets and is useful when the data increases or decreases at a steady rate. Equation: `y = a + b * x` |
-| Logarithmic | Creates a best-fit curved line and is useful when the rate of change in the data increases or decreases quickly and then levels out. A logarithmic trendline can use negative and positive values. Equation: `y = a + b * log(x)` |
-| Exponential | Creates a curved line and is useful when data rises or falls at constantly increasing rates. This option should not be used if your data contains zero or negative values. Equation: `y = a + e^(b * x)` |
-| Power | Creates a curved line and is useful for datasets that compare measurements that increase at a specific rate. This option should not be used if your data contains zero or negative values. Equation: `y = a * x^b` |
-| Quadratic | Finds the best-fit for a dataset shaped like a parabola (concave up or down). Equation: `y = a + b * x + c * x^2` |
-| Moving average | Creates a smooth trendline based on a set of averages. Also known as a rolling average, a moving average uses a specific number of data points (determined by your 'Periods' selection), averages them, and uses the average as a point in the line. Examples include 7 day moving average or 4 week moving average.|
+| **[!UICONTROL Linear]** | Create a best-fit straight line for simple linear datasets and is useful when the data increases or decreases at a steady rate. Equation: `y = a + b * x` |
+| **[!UICONTROL Logarithmic]** | Create a best-fit curved line and is useful when the rate of change in the data increases or decreases quickly and then levels out. A logarithmic trendline can use negative and positive values. Equation: `y = a + b * log(x)` |
+| **[!UICONTROL Exponential]** | Create a curved line and is useful when data rises or falls at constantly increasing rates. This option should not be used if your data contains zero or negative values. Equation: `y = a + e^(b * x)` |
+| **[!UICONTROL Power]** | Create a curved line and is useful for datasets that compare measurements that increase at a specific rate. This option should not be used if your data contains zero or negative values. Equation: `y = a * x^b` |
+| **[!UICONTROL Quadratic]** | Finds the best-fit for a dataset shaped like a parabola (concave up or down). Equation: `y = a + b * x + c * x^2` |
+| **[!UICONTROL Moving average]** | Create a smooth trendline based on a set of averages. Also known as a rolling average, a moving average uses a specific number of data points (determined by your [!UICONTROL Granularity] selection), averages them, and uses the average as a point in the line. Examples include a seven day moving average or a four week moving average.|
 
 >[!MORELIKETHIS]
 >
+>[Add a visualization to a panel](freeform-analysis-visualizations)
 >[Visualization settings](freeform-analysis-visualizations.md#settings)
 >[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
 

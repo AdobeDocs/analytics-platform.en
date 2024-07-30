@@ -7,7 +7,7 @@ role: User
 ---
 # Venn
 
-The Venn visualization lets you drag in up to 3 filters (from Components) and one metric to build a Venn diagram.
+The ![Type](/help/assets/icons/TwoDots.svg) [!UICONTROL Venn] visualization lets you drag in up to 3 filters (from Components) and one metric to build a Venn diagram.
 
  ![Venn visualization that includes three filters.](assets/venn.png)
 
@@ -26,6 +26,7 @@ To normalize the Venn diagram (take the size out of it), go select ![Setting](/h
 
 >[!MORELIKETHIS]
 >
+>[Add a visualization to a panel](freeform-analysis-visualizations)
 >[Visualization settings](freeform-analysis-visualizations.md#settings)
 >[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
 

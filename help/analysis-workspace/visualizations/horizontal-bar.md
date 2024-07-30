@@ -9,13 +9,13 @@ role: User
 
 ## Horizontal bar
 
-This visualization shows horizontal bars representing various values across one or more metrics.
+Thie ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) horizontal bar visualization shows horizontal bars representing various values across one or more metrics.
 
 ![Horizontal bar showing metrics including Page Views, Page Velocity, Visits, Entries, and Exits.](assets/horizontal-bar.png)
 
 ## Horizontal bar stacked
 
-This visualization is like the [!UICONTROL Horizontal bar], but the series bars appear stacked.
+The ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) horizontal barr stacked visualization is like the [!UICONTROL Horizontal bar], but the series bars appear stacked.
 
 ![A stacked horizontal bar showing Page Views, Visits, Entries, and Exits.](assets/horizontal-bar-stacked.png)
 
@@ -26,6 +26,7 @@ Use the **[!UICONTROL 100% stacked]** option in ![Setting](/help/assets/icons/Se
 
 >[!MORELIKETHIS]
 >
+>[Add a visualization to a panel](freeform-analysis-visualizations)
 >[Visualization settings](freeform-analysis-visualizations.md#settings)
 >[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
 

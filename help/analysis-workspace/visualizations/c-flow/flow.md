@@ -5,11 +5,11 @@ feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
 ---
-# Flow overview
+# Flow
 
-The flow feature shows customer paths through your websites and apps.
+The ![GraphPathing](/help/assets/icons/GraphPathing.svg) [!UICONTROL Flow] visualization shows customer paths through your websites and apps.
 
-It lets you:
+With the visualization you can:
 
 * Visualize the customer journey through your website or application.
 * Analyze where customers go before and after specified checkpoints, such as entry, a specific dimension, or exit.

@@ -9,15 +9,15 @@ role: User
 
 ## Bar
 
-This visualization shows vertical bars representing various values across one or more metrics.
+The ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) bar visualization shows vertical bars representing various values across one or more metrics.
 
 ![Virtical bar visualization showing multiple metrics including Page Views, Visits, Entries, and Exits.](assets/bar.png)
 
-A granularity drop-down in the visualization settings lets you change a trended visualization (e.g. line, bar) from daily to weekly to monthly, etc.
+A granularity drop-down in the visualization settings lets you change a trended visualization (for example, line, bar) from daily to weekly to monthly, etc.
 
 ## Bar stacked
 
-This visualization is like a bar chart, but with the series bars stacked on top of each other.
+The ![GraphBarVerticalStacked](/help/assets/icons/GraphBarVerticalStacked.svg) visualization is like a bar chart, but with the series bars stacked on top of each other.
 
 ![Stacked bar chard showing multiple metrics.](assets/bar-stacked.png)
 
@@ -28,6 +28,7 @@ Use the **[!UICONTROL 100% stacked]** option in ![Setting](/help/assets/icons/Se
 
 >[!MORELIKETHIS]
 >
+>[Add a visualization to a panel](freeform-analysis-visualizations)
 >[Visualization settings](freeform-analysis-visualizations.md#settings)
 >[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
 

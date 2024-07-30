@@ -81,7 +81,7 @@ Depending on the visualization, you can configure
 
 ### Data source
 
-You can you control which data source and items or positions within that data source correspond to a visualization. See [Manage data sources](t-sync-visualization.md) for more information. 
+You can control which data source and items or positions within that data source correspond to a visualization. See [Manage data sources](t-sync-visualization.md) for more information. 
 
 ### Settings
 
@@ -115,7 +115,7 @@ You can customize the settings for all visualizations that you create. For more 
 
 ## Context menu {#right-click}
 
-Use the context menu (available through alternate select, for example, right-click when using a mouse) on a visualization header to access additional functionality for a visualization. Not all options are available for a visualizations.
+Use the context menu (available through alternate select, for example, right-click when using a mouse) on a visualization header to access additional functionality for a visualization. Not all options are available for all visualizations.
 
 ![Additional visualization settings with the right-click options displayed. Options are described in the next section.](assets/right-click.png)
 

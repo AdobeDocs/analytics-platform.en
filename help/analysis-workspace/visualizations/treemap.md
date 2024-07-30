@@ -7,17 +7,18 @@ role: User
 ---
 # Treemap
 
-Displays hierarchical (tree-structured) data as a set of nested rectangles.
+Use a ![GraphTree](/help/assets/icons/GraphTree.svg) [!UICONTROL Treemap] visualization to display hierarchical (tree-structured) data as a set of nested rectangles.
 
  Each branch of the tree is given a rectangle, which is then tiled with smaller rectangles representing sub-branches.
 
 ![Treemap example showing tiles of smaller rectrangles representing sub-branches.](assets/treemap.png)
 
-When the color and size dimensions are correlated in some way with the tree structure, one can often easily see patterns that would be difficult to spot in other ways, such as if a certain color is particularly relevant. A second advantage of treemaps is that, by construction, they make efficient use of space.
+With a treemap, you can see patterns that would be difficult to spot in other ways. Using the color and size of the dimensions you can discover how dimensions are correlated and if a certain dimension is particularly relevant. A second advantage of treemaps is that, by construction, treemaps make efficient use of space.
 
 
 >[!MORELIKETHIS]
 >
+>[Add a visualization to a panel](freeform-analysis-visualizations)
 >[Visualization settings](freeform-analysis-visualizations.md#settings)
 >[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
 

@@ -9,13 +9,13 @@ role: User
 
 ## Area
 
-This visualization is like a line graph, but with a colored area below the line. Use an area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics.
+The ![GraphArea](/help/assets/icons/GraphArea.svg) [!UICONTROL Area] visualization is like a line graph, but with a colored area below the line. Add an  area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics. See [Add a visualization to a panel](freeform-analysis-visualizations).
 
 ![Area visualization showing multiple metrics including Page Views, Visits, Unique Visitors, and Bounce Rate.](assets/area.png)
 
 ## Area stacked
 
-This visualization is like an Area Chart, but each series begins at the top of the previous series.
+This ![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg) [!UICONTROL Area stacked] visualization is like an Area, but each series begins at the top of the previous series.
 
 ![Area stacked showing each series at the top of the previous series.](assets/area-stacked.png)
 
@@ -26,5 +26,6 @@ Use the **[!UICONTROL 100% stacked]** option in ![Setting](/help/assets/icons/Se
 
 >[!MORELIKETHIS]
 >
+>[Add a visualization to a panel](freeform-analysis-visualizations)
 >[Visualization settings](freeform-analysis-visualizations.md#settings)
 >[Visualization context menu](freeform-analysis-visualizations.md#context-menu)

@@ -7,11 +7,11 @@ role: User
 ---
 # Key metric summary
 
-The [!UICONTROL Key metric summary] visualization lets you see how an important metric is trending within a single timeframe. It also lets you compare metric performance across two timeframes. It provides the benefits of multiple visualizations combined into one visualization:
+The ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) [!UICONTROL Key metric summary] visualization lets you see how an important metric is trending within a single timeframe. It also lets you compare metric performance across two timeframes. It provides the benefits of multiple visualizations combined into one visualization:
 
-* **[!UICONTROL Line]** visualizations that shows how the metric is trending for the primary and comparison date ranges
+* **[!UICONTROL Line]** visualization shows how the metric is trending for the primary and comparison date ranges
 
-* **[!UICONTROL Summary percent change]** that shows the metric increase or decrease between the primary and comparison date ranges
+* **[!UICONTROL Summary percent change]** shows the metric increase or decrease between the primary and comparison date ranges
 
 * Current total value ([!UICONTROL **summary number**]) for the metric
 
@@ -77,9 +77,9 @@ The output of the key metric summary looks like:
 
 ![Key metric output showing the metic, summary change, summary number, and line graphs.](assets/key-metrics.png)
 
-* The **[!UICONTROL Previous period]** line graph (always displayed in grey) corresponds to the **[!UICONTROL Comparison date range]** in the configuration step.
+* The **[!UICONTROL Previous period]** line graph (always displayed in gray) corresponds to the **[!UICONTROL Comparison date range]** in the configuration step.
 
-* If a comparison date range is not specified during configuration or is hidden in the visualization settings, only the line graph for the primary date range is displayed. The summary change will be hidden. 
+* If a comparison date range is not specified during configuration or is hidden in the visualization settings, only the line graph for the primary date range is displayed. The summary change is hidden. 
 
 * From here, you can hover over the line graphs to see the statistics for individual days:
 
@@ -100,14 +100,15 @@ As part of the visualization settings, specific key metric summary settings are 
 
 | Setting | Description |
 |---|---|
-| **[!UICONTROL Summary display type]** | Select between Emphasize percent change or Emphasize number value |
+| **[!UICONTROL Summary display type]** | Select between **[!UICONTROL Emphasize percent change]** or **[!UICONTROL Emphasize number value]**. |
 | **[!UICONTROL Show trendlines]** | Show trendlines in the visualization. |
-| **[!UICONTROL Show max and min on trendlines]** | Show maximum and minumum value on trendlines. |
+| **[!UICONTROL Show max and min on trendlines]** | Show maximum and minimum value on trendlines. |
 | **[!UICONTROL Show comparison percentage and trendline]** | Show comparison percentage with trendline. If not selected, both are hidden. |
-| **[!UICONTROL Number value options]** | Show total number of Show raw difference for the number value | 
-| **[!UICONTROL Abbreviate value]** | Select Abbreviate to abbreviate intellgently the number value. When selected, enter a number to define the amount of abbreviation. For example:<br/><table><tr><td>**Original value**</td><td>**Abbreviation**</td><td>**Result**</td></tr><tr><td>$12,011,141.25</td><td>Not selected</td><td  align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to 1</td><td align="right">$12M</td></tr><tr><td>$12,011,141.25</td><td>Selected, setl to 2</td><td  align="right">$12.0M</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to 2</td><td align="right">$12.011M</td></tr><tr><td>$12,011,141.25</td><td>Select, set to 3</td><td align="right">$12.011M</td></tr></table> |
+| **[!UICONTROL Number value options]** | **[!UICONTROL Show total number]** or **[!UICONTROL Show raw difference]** for the number value. | 
+| **[!UICONTROL Abbreviate value]** | Select **[!UICONTROL Abbreviate value]** to abbreviate intelligently the number value. When selected, enter a number to define the amount of abbreviation. For example:<br/><table><tr><td>**Original value**</td><td>**Abbreviation**</td><td>**Result**</td></tr><tr><td>$12,011,141.25</td><td>Not selected</td><td  align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to 1</td><td align="right">$12M</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to 2</td><td  align="right">$12.0M</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to 2</td><td align="right">$12.011M</td></tr><tr><td>$12,011,141.25</td><td>Select, set to 3</td><td align="right">$12.011M</td></tr></table> |
 
 >[!MORELIKETHIS]
 >
+>[Add a visualization to a panel](freeform-analysis-visualizations)
 >[Visualization settings](freeform-analysis-visualizations.md#settings)
 >[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
