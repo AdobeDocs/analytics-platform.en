@@ -9,7 +9,7 @@ role: User
 
 ## Bar
 
-The ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) bar visualization shows vertical bars representing various values across one or more metrics.
+The ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [!UICONTROL Bar] visualization shows vertical bars representing various values across one or more metrics.
 
 ![Virtical bar visualization showing multiple metrics including Page Views, Visits, Entries, and Exits.](assets/bar.png)
 
@@ -25,10 +25,10 @@ Use the **[!UICONTROL 100% stacked]** option in ![Setting](/help/assets/icons/Se
 
 ![A 100% stacked bar chart.](assets/bar-stacked100.png)
 
-
 >[!MORELIKETHIS]
 >
->[Add a visualization to a panel](freeform-analysis-visualizations)
->[Visualization settings](freeform-analysis-visualizations.md#settings)
->[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
+>[Add a visualization to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualization settings](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
 

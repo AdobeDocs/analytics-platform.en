@@ -7,7 +7,7 @@ role: User
 ---
 # Donut
 
-Similar to a pie chart, the ![GraphDonut](/help/assets/icons/GraphDonut.svg) donut visualization shows data as parts or filters of a whole. Use a donut graph when comparing percentages of a total, typically with a small number of items.
+Similar to a pie chart, the ![GraphDonut](/help/assets/icons/GraphDonut.svg) [!UICONTROL Donut] visualization shows data as parts or filters of a whole. Use a donut graph when comparing percentages of a total, typically with a small number of items.
 
 ![A Donut chart showing data as parts or filters of a whole.](assets/donut.png)
 
@@ -19,7 +19,8 @@ Similar to a pie chart, the ![GraphDonut](/help/assets/icons/GraphDonut.svg) don
 
 >[!MORELIKETHIS]
 >
->[Add a visualization to a panel](freeform-analysis-visualizations)
->[Visualization settings](freeform-analysis-visualizations.md#settings)
->[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
+>[Add a visualization to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualization settings](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
 

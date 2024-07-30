@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
 ---
-# Bullet graph
+# Bullet
 
-The ![GraphBullet](/help/assets/icons/GraphBullet.svg) bullet graph visualization shows how a metric compares to or measures against performance ranges (goals). 
+The ![GraphBullet](/help/assets/icons/GraphBullet.svg) [!UICONTROL Bullet] visualization shows how a metric compares to or measures against performance ranges (goals). 
 
  ![](assets/bullet.png)
 
@@ -23,7 +23,8 @@ You can specify specific options for a bullet graph visualization.
 
 >[!MORELIKETHIS]
 >
->[Add a visualization to a panel](freeform-analysis-visualizations)
->[Visualization settings](freeform-analysis-visualizations.md#settings)
->[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
+>[Add a visualization to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualization settings](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
 

@@ -79,6 +79,8 @@ As part of the visualization, specific fallout visualization context menu option
 
 >[!MORELIKETHIS]
 >
->[Visualization settings](freeform-analysis-visualizations.md#settings)
->[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
+>[Add a visualization to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualization settings](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
 

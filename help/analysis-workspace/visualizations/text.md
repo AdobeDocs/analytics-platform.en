@@ -21,7 +21,7 @@ When editing your text box or description, you can adjust the font size (heading
 
 ## Add hyperlinks {#hyperlinks}
 
-To add a hyperlink, highlight the text and select ![Link](/help/assets/icons/Link.svg) in the menu. You can use hyperlinks to provide further assistance to your project recipients. Hyperlinks can link to external websites, documentation pages, [Workspace projects, panels, or visualizations](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html), and more.
+To add a hyperlink, highlight the text and select ![Link](/help/assets/icons/Link.svg) in the menu. You can use hyperlinks to provide further assistance to your project recipients. Hyperlinks can link to external websites, documentation pages, [Workspace projects, panels, or visualizations](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links), and more.
 
 ![Text options with the link icon highlighted.](assets/hyperlink.png)
 

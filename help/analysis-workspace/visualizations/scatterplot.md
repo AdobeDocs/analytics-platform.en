@@ -7,7 +7,7 @@ role: User
 ---
 # Scatterplot
 
-The scatterplot visualization shows the relationship between dimension items and up to three metrics. It requires three components, and supports visualizing up to four components.
+The ![GraphScatter](/help/assets/icons/GraphScatter.svg) [!UICONTROL Scatterplot] visualization shows the relationship between dimension items and up to three metrics. It requires three components, and supports visualizing up to four components.
 
 * The row component (typically a dimension) represents each point on the graph. Different rows show as different colored dots.
 * The leftmost column (typically a metric) plots the position of the dot on the Y axis (vertical).
@@ -19,6 +19,7 @@ The scatterplot visualization shows the relationship between dimension items and
 
 >[!MORELIKETHIS]
 >
->[Add a visualization to a panel](freeform-analysis-visualizations)
->[Visualization settings](freeform-analysis-visualizations.md#settings)
->[Visualization context menu](freeform-analysis-visualizations.md#context-menu)
+>[Add a visualization to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualization settings](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
