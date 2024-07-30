@@ -12,23 +12,45 @@ Journeys can be created either in Adobe Journey Optimizer or within Journey canv
 
 ## Journey canvas and Fallout visualizations
 
-Journey canvas visualizations are similar to Fallout visualizations, but with important differences. 
+Journey canvas visualizations are similar to [Fallout visualizations](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), in that both visualizations show where persons left (fell out) and continued through (fell through) a predefined sequence of pages.
 
-Both visualizations show where persons left (fell out) and continued through (fell through) a predefined sequence of pages. 
+However, there are important differences.
 
-**Fallout visualizations:** Provide analysis only for linear journeys that have a single known beginning and end. Consider using a [Fallout visualization](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) as a more simple option for these more straightforward user journeys.
+### Understand the differences
 
-**Journey canvas visualizations:** Supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.
+The following table shows the types of analysis you can do in the Journey canvas visualization and the Fallout visualization:
+
+| Function | Journey canvas visualization | Fallout visualization |
+|---------|----------|---------|
+| Linear journeys | Yes | Yes |
+| Non-linear journeys with multiple entry points and paths | Yes | No |
+| Adobe Journey Optimizer journeys | Yes | No | 
+
+### Choose which visualization to use
+
+If your fallout analysis involves only a linear journey that has a single known beginning and end, consider using a [Fallout visualization](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) as a more simple option for these more straightforward user journeys.
+
+For fallout analysis involving journeys with multiple entry points and paths, or those created in Journey Optimizer, using Journey Canvas is essential.
 
 ## Analyze Journey Optimizer journeys
 
 >[!NOTE]
 >
->Journey Optimizer journeys can be analyzed with Journey canvas only if your organization has purchased Journey Optimizer. If your organization doesn't have access to Journey Optimizer, you can still [build analyses in Journey canvas](#build-analyses-in-customer-journey-analytics).
+>Organization who have purchased Journey Optimizer can use Journey canvas to analyze Journey Optimizer journeys. If your organization doesn't have access to Journey Optimizer, you can still [build analyses in Journey canvas](#build-analyses-in-customer-journey-analytics).
 
-Organizations who create journeys in Journey Optimizer can analyze those journeys in Journey canvas to gain deep, actionable insights on user behavior. 
+Analyzing Journey Optimizer journeys in Journey canvas provides deep, actionable insights on user behavior. 
 
 When you analyze a Journey Optimizer journey in Journey canvas, the journey is displayed with the same order, sequence, and structure as it has in Journey Optimizer.
+
+### Benefits of analyzing Journey Optimizer journeys with Journey canvas
+
+Journey canvas provides deep, thorough analysis that isn't possible in Journey Optimizer. Using Journey canvas to analyze journeys that were created in Journey Optimizer provides various benefits:
+
+| Feature | Customer Journey Analytics | 
+|---------|----------|
+| **Create events** | Create events by using any Customer Journey Analytics dimensions. In Journey Optimizer, a technical user must create an event before it can be added to a journey. |
+| **Create audiences** | Create audiences based on a specific node, edge, or fallout within the Journey canvas visualization. (Launches the Customer Journey Analytics audience builder.) In Journey Optimizer, this is not available |
+| **Fallthrough and fallout** | B3 | C3 |
 
 ### Terminology differences between Journey Optimizer and Customer Journey Analytics
 
@@ -42,11 +64,7 @@ Certain terms that mean one thing in Journey Optimizer mean something else in Cu
 
 ### Analyze a Journey Optimizer journey in Journey canvas
 
-To open a Journey Optimizer journey in Journey canvas:
-
-1. In Journey Optimizer, open the journey that you want to analyze in Journey canvas.
-
-1. Select [!UICONTROL **Analyze in CJA**]. <!-- ?? -->
+For information about analyzing a Journey Optimizer journey in Journey canvas, see [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 ### Enhance Journey Optimizer journeys in Journey canvas for deeper analysis
 
@@ -54,19 +72,13 @@ After you open a Journey Optimizer journey in Journey canvas, you can make chang
 
 Any changes you make to the journey in Customer Journey Analytics are reflected in Journey Optimizer. <!-- true? -->
 
+For information, see [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+
 ## Build analyses in Journey canvas
 
 You can build analyses in Journey canvas that are based on any dimensions or metrics that are available in Analysis Workspace. 
 
-## Create or update a journey in Customer Journey Analytics and Journey Optimizer - Feature comparison
 
-Both Journey Optimizer and Customer Journey Analytics allow you to create or update a journey. Depending on what you want to do, , but not all functionality is available in a single product. Use the following information to determine the best product for a given task:
-
-| Feature | Customer Journey Analytics | Journey Optimizer |
-|---------|----------|---------|
-| **Create events** | Create events by using any Customer Journey Analytics dimensions. | A technical user must create an event before it can be added to a journey. |
-| **Create audiences** | Create audiences based on a specific node, edge, or fallout within the Journey canvas visualization. (Launches the Customer Journey Analytics audience builder.) | Not available |
-| **Fallthrough and fallout** | B3 | C3 |
 
 ## Basic workflow
 
