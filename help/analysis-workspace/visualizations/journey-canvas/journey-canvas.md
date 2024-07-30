@@ -68,3 +68,219 @@ Both Journey Optimizer and Customer Journey Analytics allow you to create or upd
 | **Create audiences** | Create audiences based on a specific node, edge, or fallout within the Journey canvas visualization. (Launches the Customer Journey Analytics audience builder.) | Not available |
 | **Fallthrough and fallout** | B3 | C3 |
 
+## Basic workflow
+
+When creating a Journey explorer visualization, you need to define the starting touchpoint, ending touchpoint, and pathing dimension. 
+
+Based on the information that you provide, Analysis Workspace analyzes the most common paths users took between the two touchpoints, then auto-populates the important milestones (pathpoints) along each path. You can manually include midpoints for any milestones that weren't automatically included.
+
+**Elements of a journey that require your input:**
+
+* Starting touchpoint
+
+* Ending touchpoint
+
+* Midpoints (optional)
+
+**Elements of a journey that are auto-populated by Adobe:**
+
+* Paths
+
+* Pathpoints (based on the pathing dimension that you specify)
+
+The following diagram represents a basic journey. It illustrates the information that you need to provide and the information that is auto-populated. 
+
+>[!NOTE]
+>
+>For simplicity, the diagram shows only a few paths, pathpoints, and midpoints. However, a journey can contain a combined total of up to 18 pathpoints and midpoints, and it can contain an unlimited number of paths.
+
+![Journey explorer workflow](assets/journey-explorer-workflow.png)
+
+<!-- insert some sort of graphic that illustrates the flow? -->
+
+## Example scenario
+
+To illustrate the types of insights Journey explorer can help provide, consider the following example of a customer journey:
+
+### Business objective
+
+An online retail company wants to retain customers who complained about a purchase within the past 6 months. The company makes the following plan to retain these at-risk customers: 
+
+1. All at-risk customers receive a promotional email with a 10% discount code.
+
+1. Customers who make a purchase on the site after receiving the promotional email are considered successfully retained. Those who do not make a purchase are still considered at risk. 
+
+The company takes action on this business objective and [creates a journey in Journey explorer](#the-company-creates-a-journey-in-journey-explorer).
+
+### The company creates a journey in Journey explorer
+
+In Analysis Workspace, the company creates a Journey explorer visualization (based on their [business objective](#business-objective)) in order to analyze the retention plan's effectiveness. The only information they need to enter in Analysis Workspace is:
+
+1. **Starting touchpoint:** Contacted Customer Support with a complaint
+
+1. **Ending touchpoint:** Made a purchase (checked out)
+
+1. **Pathing dimension:** Event 
+
+With this information, Journey explorer can [fill in the journey](#journey-explorer-analyzes-user-behavior-and-fills-in-the-journey).
+
+### Journey explorer analyzes user behavior and fills in the journey
+
+With the limited amount of information [provided by the company](#the-company-creates-a-journey-in-journey-explorer), Journey explorer analyzes the behavior of all customers who contacted Customer Support with a complaint (the event that matches the starting touchpoint), and then Journey explorer populates the most common events as pathpoints.  
+
+Journey explorer identifies the [top conversion paths](#top-conversion-paths) and [top drop-off paths](#top-drop-off-paths), allowing [the company to glean meaningful insights](#potential-insights).
+
+#### Top conversion paths
+
+The top 3 paths in the journey that led to user conversion (those that resulted with users reaching the ending touchpoint) might look something like this:
+
+Path #1
+
+1. **Starting touchpoint:** Contacted Customer Support with a complaint
+
+1. **Pathpoint:** Received the promotional email with 10% discount code
+
+1. **Pathpoint:** Logged in to the online site
+
+1. **Pathpoint:** Viewed Product A
+
+1. **Pathpoint:** Added an item to the cart
+
+1. **Ending touchpoint:** Made a purchase (checked out)
+
+Path #2
+
+1. **Starting touchpoint:** Contacted Customer Support with a complaint
+
+1. **Pathpoint:** Received the promotional email with 10% discount code
+
+1. **Pathpoint:** Logged in to the online site
+
+1. **Pathpoint:** Viewed Product A
+
+1. **Pathpoint:** Added Product A to the cart
+
+1. **Pathpoint:** Viewed Product B
+
+1. **Pathpoint:** Viewed Product C
+
+1. **Pathpoint:** Added Product C to the cart
+
+1. **Ending touchpoint:** Made a purchase (checked out)
+
+Path #3
+
+1. **Starting touchpoint:** Contacted Customer Support with a complaint
+
+1. **Pathpoint:** Received the promotional email with 10% discount code
+
+1. **Pathpoint:** Logged in to the online site
+
+1. **Pathpoint:** Viewed Product A
+
+1. **Pathpoint:** Added Product A to the cart
+
+1. **Pathpoint:** Viewed Product B
+
+1. **Pathpoint:** Added Product B to the Cart
+
+1. **Pathpoint:** Removed Product A from the cart
+
+1. **Ending touchpoint:** Made a purchase (checked out)
+
+<!-- insert graphic -->
+
+#### Top drop-off paths
+
+The top 3 paths in the journey that led to users dropping off the journey (never reached the ending touchpoint) might look something like this:
+
+Path #1
+
+1. **Starting touchpoint:** Contacted Customer Support with a complaint
+
+1. **Pathpoint:** Received the promotional email with 10% discount code
+
+1. **Pathpoint:** Logged in to the online site
+
+1. **Pathpoint:** Viewed Product C
+
+Path #2
+
+1. **Starting touchpoint:** Contacted Customer Support with a complaint
+
+1. **Pathpoint:** Received the promotional email with 10% discount code
+
+1. **Pathpoint:** Logged in to the online site
+
+1. **Pathpoint:** Viewed Product D
+
+1. **Pathpoint:** Added Product D to the cart
+
+1. **Pathpoint:** Viewed Product E
+
+1. **Pathpoint:** Remobed Product D from the cart
+
+Path #3
+
+1. **Starting touchpoint:** Contacted Customer Support with a complaint
+
+1. **Pathpoint:** Received the promotional email with 10% discount code
+
+1. **Pathpoint:** Logged in to the online site
+
+1. **Pathpoint:** Viewed Product E
+
+1. **Pathpoint:** Viewed Product D
+
+### Potential insights
+
+Following are a few examples of the types of insights Journey explorer can help provide:
+
+>[!NOTE]
+>
+>**Conversion** refers to a person, session, or path occurrence moving from the journey's starting touchpoint to the ending touchpoint, while **drop-off** refers to a person, session, or path occurrence starting the journey at the starting touchpoint but dropping off before reaching the ending touchpoint.
+
+**Conversion** 
+
+* The paths on the journey that lead to the highest conversion rates
+
+* The number or percentage of people, sessions, or paths that converted (arrived at the ending touchpoint)
+
+* How the conversion rates of a given journey compare to the conversion rates of all other journeys
+
+* The average amount of time it took users on the journey to convert, in total or by individual path
+
+**Drop-offs**
+
+* The paths on the journey that lead to the highest drop-off rates
+
+* The number or percentage of people, sessions, or paths that dropped off (started at the starting touchpoint but never arrived at the ending touchpoint)
+
+* How the drop-off rates of a given journey compare to the drop-off rates of all other journeys
+
+* The average amount of time before users dropped off of a path or dropped off of the journey
+
+**Other**
+
+* The number of people, sessions, or path occurrences on the journey compared to all other journeys
+
+## Create a Journey explorer visualization
+
+>[!CONTEXTUALHELP]
+>id="cja_viz_journeyexplorer_short_description"
+>title="Journey explorer"
+>abstract="Explore the journeys your users are taking to learn how to better optimize and improve their experiences."
+>additional-url="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/visualizations/journey-explorer/journey-explorer.html" text="Learn more"
+
+To create a journey, you define the starting and ending touchpoints, and then allow Analysis Workspace to populate the important pathpoints in between, based on users' most common actions. You can manually include actions by adding them as midpoints.
+
+For more information, see 
+
+<!-- Link to article that explains it -->
+
+## Understand the Journey explorer visualization
+
+<!-- Show a screenshot of the viz and have callouts that define all of the different areas -->
+
+For more information about analyzing a Journey explorer visualization, see [View and configure a Journey explorer visualization](/help/analysis-workspace/visualizations/journey-explorer/journey-explorer-view.md).
+
