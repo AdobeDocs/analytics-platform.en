@@ -46,15 +46,15 @@ Without these labels present, the Experiment panel does not work, since there ar
 
    >[!IMPORTANT]
    >
-   >If the necessary setup in Customer Journey Analytics data views has not been completed, you receive this message before you can proceed: "[!UICONTROL Please configure the experiment and variant dimensions in Data Views]".
+   >If the necessary setup in Customer Journey Analytics data views has not been completed, you receive this message before you can proceed: [!UICONTROL Please configure the experiment and variant dimensions in Data views].
    >
 
 1. Configure the panel input settings.
 
    | Setting | Definition |
    | --- | --- |
-   | **[!UICONTROL Experiment]** | A set of variations on an experience that were exposed to end users to determine which is best to keep in perpetuity. An experiment is made up of two or more variants, one of which is considered the control variant. This setting is pre-populated with the dimensions that have been labeled with the  **[!UICONTROL Experiment]** label in data views, and the last 3 months' worth of experiment data. |
-   | **[!UICONTROL Control Variant]** | One of two or more alterations in an end user's experience that are being compared for the purpose of identifying the better alternative. One variant must be selected as the control, and only one variant can be considered to be the control variant. This setting is pre-populated with the dimensions that have been labeled with the  **[!UICONTROL Variant]** label in data views. This setting pulls up the variant data that is associated with this experiment. |
+   | **[!UICONTROL Experiment]** | A set of variations on an experience that were exposed to end users to determine which is best to keep in perpetuity. An experiment is made up of two or more variants, one of which is considered the control variant. This setting is pre-populated with the dimensions that have been labeled with the **[!UICONTROL Experiment]** label in data views, and the last 3 months' worth of experiment data. |
+   | **[!UICONTROL Control Variant]** | One of two or more alterations in an end user's experience that are being compared for the purpose of identifying the better alternative. One variant must be selected as the control, and only one variant can be considered to be the control variant. This setting is pre-populated with the dimensions that have been labeled with the **[!UICONTROL Variant]** label in data views. This setting pulls up the variant data that is associated with this experiment. |
    | **[!UICONTROL Success Metrics]** | The metric or metrics that a user is comparing variants with. The variant with the most desirable outcome for the conversion metric (whether highest or lowest) is declared the "best performing variant" of an experiment. You can add up to 5 metrics. |
    | **[!UICONTROL Normalizing Metric]** | The basis ([!UICONTROL People], [!UICONTROL Sessions], or [!UICONTROL Events]) on which a test runs. For example, a test may compare the conversion rates of several variations where **[!UICONTROL Conversion rate]** is calculated as **[!UICONTROL Conversions per session]** or **[!UICONTROL Conversions per person]**. |
    | **[!UICONTROL Date Range]** | The date range is automatically set, based on the first event received in Customer Journey Analytics for the experiment selected. You can restrict or expand the date range to a more specific timeframe if needed. |
@@ -81,11 +81,11 @@ The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTRO
 
 ## Step 5: Interpret the results {#interpret}
 
-1. **Experiment is Conclusive**: Every time you view the experimentation report, the data that has accumulated in the experiment up to this point is analyzed. And declares an experiment to be "Conclusive" when the anytime valid confidence crosses a threshold of 95% for *at least one* of the variants (with a Benjamini-Hochberg correction applied when there are more than two arms, to correct for multiple hypothesis testing).  
+1. **Experiment is conclusive**: Every time you view the experimentation report, the data that has accumulated in the experiment up to this point is analyzed. And declares an experiment to be conclusive when the anytime valid confidence crosses a threshold of 95% for *at least one* of the variants (with a Benjamini-Hochberg correction applied when there are more than two arms, to correct for multiple hypothesis testing).  
 
-2. **Best Performing Variant**: When an experiment is declared to be conclusive, the variant with the highest conversion rate is labeled as the "best performing variant". Note that this variant must either be the control or baseline variant, or one of the variants that crosses the 95% anytime valid confidence threshold (with Benjamini-Hochberg corrections applied).
+2. **Best performing variant**: When an experiment is declared to be conclusive, the variant with the highest conversion rate is labeled as the best performing variant. Note that this variant must either be the control or baseline variant, or one of the variants that crosses the 95% anytime valid confidence threshold (with Benjamini-Hochberg corrections applied).
 
-3. **Conversion Rate**: The conversion rate that is shown is a ratio of the success metric value to the normalizing metric value. Note that this value may sometimes be larger than 1, if the metric is not binary (1 or 0 for each unit in the experiment)
+3. **Conversion rate**: The conversion rate that is shown is a ratio of the success metric value to the normalizing metric value. Note that this value may sometimes be larger than 1, if the metric is not binary (1 or 0 for each unit in the experiment)
 
 4. **Lift**: The Experiment report summary shows the Lift over Baseline, which is a measure of the percentage improvement in conversion rate of a given variant over the baseline. Defined precisely, it is the difference in performance between a given variant and the baseline, divided by the performance of the baseline, expressed as a percentage.
 
@@ -105,9 +105,9 @@ A 95% confidence sequence includes the "true" value of the business metric in 95
 
 ## Interpret non-randomized dimensions {#non-randomized}
 
-Customer Journey Analytics allows analysts to select any dimension as the "experiment". But how do you interpret an analysis where the dimension chosen as the experiment is not one for which persons are randomized?
+Customer Journey Analytics allows analysts to select any dimension as the experiment. But how do you interpret an analysis where the dimension chosen as the experiment is not one for which persons are randomized?
 
-For example, consider an ad that a person sees. You may be interested in measuring the change in some metric (for example, average revenue) if you decide to show persons "ad B" instead of "ad A". The causal effect of showing ad B in place of ad A is of central importance in arriving at the marketing decision. This causal effect may be measured as the average revenue over the whole population, ifyou replaced the status quo of showing ad A with the alternate strategy of showing ad B. 
+For example, consider an ad that a person sees. You may be interested in measuring the change in some metric (for example, average revenue) if you decide to show persons *ad B* instead of *ad A*. The causal effect of showing ad B in place of ad A is of central importance in arriving at the marketing decision. This causal effect may be measured as the average revenue over the whole population, if you replaced the status quo of showing ad A with the alternate strategy of showing ad B. 
 
 A/B testing is the gold standard within the industry for objectively measuring the effects of such interventions. The critical reason why an A/B test gives rise to a causal estimate is due to the randomization of persons to receive one of the possible variants. 
 

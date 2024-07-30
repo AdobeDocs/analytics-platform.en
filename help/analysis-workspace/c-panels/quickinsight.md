@@ -9,9 +9,9 @@ role: User
 
 [!UICONTROL Quick Insights] provides guidance for non-analysts and new users of [!UICONTROL Analysis Workspace] to learn how to answer business questions quickly and easily. It is also a great tool for advanced users who want to answer a simple question quickly without having to build a table themselves.
 
-When you first start using this [!UICONTROL Analysis Workspace], you might wonder what visualizations would be most useful, which dimensions and metrics might facilitate insights, where to drag and drop items, where to create a filter, etc. 
+When you first start using this [!UICONTROL Analysis Workspace], you might wonder what visualizations would be most useful, which dimensions and metrics might facilitate insights, where to drag and drop items, where to create a filter, and more. 
 
-To help with this, and based on your own company's usage of data components in [!UICONTROL Analysis Workspace], [!UICONTROL Quick Insights] leverages an algorithm that will present you with the most popular dimensions, metrics, filters, and date ranges your company uses. In fact, you will see dimensions, metrics, and filters tagged as [!UICONTROL Popular] in the drop-down list, as shown here:
+To help with these questions, and based on your own company's usage of data components in [!UICONTROL Analysis Workspace], [!UICONTROL Quick Insights] leverages an algorithm that presents you with the most popular dimensions, metrics, filters, and date ranges your company uses. In fact, you see dimensions, metrics, and filters tagged as [!UICONTROL Popular] in the drop-down list, as shown here:
 
 ![The Quick Insights panel.](assets/popular-tag.png)
 
@@ -24,16 +24,16 @@ To help with this, and based on your own company's usage of data components in [
 
 ## Basic key terminology
 
-Following are some of the basic terms you need to be familiar with. Each data table consists of 2 or more building blocks (components) that you utilize to tell your data story.
+The following are some of the basic terms that you need to be familiar with. Each data table consists of 2 or more building blocks (components) that you use to tell your data story.
 
 |Building block (Component)|Definition|
 |---|---|
 |[!UICONTROL Dimension]|Dimensions are descriptions or characteristics of metric data that can be viewed, broken down, and compared in a project. They are non-numeric values and dates that break down into dimension items. For example, "browser", or "page" are dimensions.|
-|[!UICONTROL Dimension item]|Dimension items are individual values for a dimension. For example, dimension items for the browser dimension would be "Chrome", "Firefox", "Edge", etc.|
+|[!UICONTROL Dimension item]|Dimension items are individual values for a dimension. For example, dimension items for the browser dimension would be *Chrome*, *Firefox*, *Edge*, or others.|
 |[!UICONTROL Metric]|Metrics are quantitative information about person activity, such as views, click-throughs, reloads, average time spent, units, orders, revenue, and so on.|
-|[!UICONTROL Visualization]|Workspace offers [a number of visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to build visual representations of your data, such as bar charts, donut charts, histograms, line charts, maps, scatterplots, and others.|
-|[!UICONTROL Dimension Breakdown]|A dimension breakdown is a way to literally break down a dimension by other dimensions. In our example, you could break down US States by Mobile Devices to get the mobile device visits per state, or you could break Mobile Devices down by Mobile Device types, by Regions, by Internal Campaigns, etc..|
-|[!UICONTROL filter]|filters let you identify subsets of persons based on characteristics or website interactions. For example, you can build [!UICONTROL Visitor] filters based on attributes: browser type, device, number of visits, country, gender, or based on interactions: campaigns, keyword search, search engine, or based on exits and entries: persons from Facebook, a defined landing page, referring domain, or based on custom variables: form field, defined categories, customer ID.  |
+|[!UICONTROL Visualization]|Workspace offers [a number of visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to build visual representations of your data. Such as bar charts, donut charts, histograms, line charts, maps, scatterplots, and others.|
+|[!UICONTROL Dimension Breakdown]|A dimension breakdown is a way to break down a dimension by other dimensions. In the example, you could break down US States by Mobile Devices to get the mobile device visits per state, or you could break Mobile Devices down by Mobile Device types, by Regions, by Internal Campaigns, and more.|
+|[!UICONTROL Filter]| Filters let you identify subsets of persons based on characteristics or website interactions. For example, you can build [!UICONTROL People] filters based on <li>attributes: browser type, device, number of visits, country, gender, or</li><li>interactions: campaigns, keyword search, search engine, or</li><li>exits and entries: persons from Facebook, a defined landing page, referring domain, or</li><li> custom variables: form field, defined categories, customer ID.  |
 
 ## Get started with Quick Insights
 
@@ -45,13 +45,13 @@ Following are some of the basic terms you need to be familiar with. Each data ta
     ![The Panels list highlighting the Quick Insights option.](assets/qi-panel.png)
 
 1. When you first start out, go through the short tutorial that teaches you some of the [!UICONTROL Quick Insights panel] basics. Or, click to **[!UICONTROL Skip Tutorial]**.
-1. Select your building blocks (also known as components): dimensions (orange), metrics (green), filters (blue), or date ranges (purple) You have to select at least one dimension and one metric for a table to be built automatically. 
+1. Select your building blocks (also known as components): dimensions (orange), metrics (green), filters (blue), or date ranges (purple). You have to select at least one dimension and one metric for a table to be built automatically. 
 
     ![The components including Dimentions, Metrics, Filters, Segments, and Date ranges.](assets/qibuilder2.png)
 
     You have three ways of selecting the building blocks:
     * Drag and drop them from the left rail.
-    * If you know what you are looking for: Start typing and [!UICONTROL Quick Insights] will fill in the blanks for you.
+    * If you know what you are looking for: Start typing and [!UICONTROL Quick Insights] populates the blanks for you.
     * Click on the drop-down and search the list.
 
 1. When you have added at least one dimension and one metric, the following will be created for you:
@@ -70,13 +70,13 @@ Following are some of the basic terms you need to be familiar with. Each data ta
 
 ## More tips
 
-Other useful hints will pop up in the [!UICONTROL Quick Insights Builder], some of them depending on your last action.
+Other useful hints pop up in the [!UICONTROL Quick Insights Builder], some of them depending on your last action.
 
 * First, complete the **[!UICONTROL More tips]** tutorial: Access it via the Help (?) icon next to the [!UICONTROL Quick Insights] title. This tutorial shows up 24 hours after you have created a project with at least one dimension and one metric.
 
     ![The Quick Insights Panel notification displayed after you click the Help icon.](assets/qibuilder4.png)
 
-You can analyze by multiple dimensions, adding multiple metrics, and filter by combinning or comparing multiple filters:
+You can analyze by multiple dimensions, adding multiple metrics, and filter by combining or comparing multiple filters:
 
 ![Quick Insights Builder Result](assets/qibuilder-result.png)
 
@@ -84,14 +84,20 @@ You can analyze by multiple dimensions, adding multiple metrics, and filter by c
 
 * Add more metrics **[!UICONTROL by]**: You can add up to 2 more metrics. See ➍ and ➎.
 
-* **[!UICONTROL filter by]**: You can add up to 2 more filters by using the AND or OR operators to add them the table. Look at what happens to the table when you add Mobile Users OR Loyal Visitors. They are next to each other, above the metrics. If you added Mobile Users AND Loyal Visitors, you would see results from both filters together, and they would be stacked on top of each other in the table. See ➏ and ➐.
+* **[!UICONTROL filter by]**: You can add up to 2 more filters by using the AND or OR operators. Look at what happens to the table when you add Mobile Users OR Loyal Visitors. They are next to each other, above the metrics. If you added Mobile Users AND Loyal Visitors, you would see results from both filters together, and they would be stacked on top of each other in the table. See ➏ and ➐.
 
 ## Known limitations
 
-If you try to edit directly within the table, it will cause the [!UICONTROL Quick Insights] panel to become out of sync. You can restore it to the previous [!UICONTROL Quick Insights] settings by clicking **[!UICONTROL Resync Builder]** at the top right of the panel.
+If you try to edit directly within the table, it causes the [!UICONTROL Quick Insights] panel to become out of sync. Select **[!UICONTROL Resync Builder]** at the top right of the panel to restore it to the previous [!UICONTROL Quick Insights] settings.
 
-You will get a warning before adding anything directly to the table:
+You get a warning before adding anything directly to the table:
 
  ![The Resync Builder option warning.](assets/qibuilder-outofsync.png)
 
-Otherwise, building directly will cause the table to now behave as a traditional Freeform table, without the helpful features for new users.
+Otherwise, building directly causes the table to behave as a traditional Freeform table, without the helpful features for new users.
+
+
+>[!MORELIKETHIS]
+>
+>[Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>

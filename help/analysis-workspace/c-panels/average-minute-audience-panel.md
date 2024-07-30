@@ -148,3 +148,9 @@ The Media average minute audience panel uses only the Average Minute Audience me
 |Metric|Description|
 |---|---|
 |Average Minute Audience| The time spent viewing your media stream divided by the total selection or selected granularity in minutes.|
+
+
+>[!MORELIKETHIS]
+>
+> [Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>

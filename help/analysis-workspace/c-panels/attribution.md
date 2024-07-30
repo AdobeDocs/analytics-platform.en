@@ -16,7 +16,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_panel"
 >title="Attribution panel"
->abstract="Quickly compare and visualize any number of attribution models using any dimension and conversion metric.<br/><br/>**Parameters**<br/>**Channel**<br/>The dimension to attribute against. This can be marketing channels, campaigns, or any other dimension.<br/>**Models**<br/>The model determines how credit is assigned to touchpoints.<br/>**Lookback window**<br/>This setting determines the window of data attribution that will be applied to for each conversion."
+>abstract="Quickly compare and visualize any number of attribution models using any dimension and conversion metric.<br/><br/>**Parameters**<br/>**Channel**<br/>The dimension to attribute against. This dimension can be marketing channels, campaigns, or any other dimension.<br/>**Models**<br/>The model determines how credit is assigned to touchpoints.<br/>**Lookback window**<br/>This setting determines the window of data attribution that applies to each conversion."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ panel"
 
 
@@ -24,11 +24,11 @@ The [!UICONTROL Attribution] panel is an easy way to build an analysis comparing
 
 Customer Journey Analytics enhances attribution by letting you:
 
-* Define attribution beyond paid media: Any dimension, metric, channel or event can be applied to models (e.g. internal search), not just marketing campaigns.
-* Utilize unlimited attribution model comparison: dynamically compare as many models as you want.
+* Define attribution beyond paid media: Any dimension, metric, channel or event can be applied to models (for example, internal search), not just marketing campaigns.
+* Use unlimited attribution model comparison: dynamically compare as many models as you want.
 * Avoid implementation changes: With report-time processing and context-aware sessions, customer journey context can be built in and applied at run time.
 * Construct the session that best matches your attribution scenario.
-* Break down attribution by filters: Easily compare the performance of your marketing channels across any important filter (e.g. New vs. Repeat customers, Product X vs. Product Y, Loyalty level or CLV).
+* Break down attribution by filters: Easily compare the performance of your marketing channels across any important filter (for example, New vs. Repeat customers, Product X vs. Product Y, Loyalty level or CLV).
 * Inspect channel cross-over and multi-touch analysis: Use Venn Diagrams and Histograms, and trend attribution results.
 * Analyze key marketing sequences visually: explore paths that led to conversion visually with multi-node flow and fallout visualizations.
 * Build calculated metrics: use any number of attribution allocation methods.
@@ -49,10 +49,15 @@ Customer Journey Analytics enhances attribution by letting you:
 
 ## Attribution visualizations
 
-* **Total metric**: The total number of conversions that occurred over the reporting time window. These are the conversions that are attributed across the dimension you selected.
+* **Total metric**: The total number of conversions that occurred over the reporting time window, and are attributed to the dimension you selected.
 * **Attribution Comparison Bar**: Visually compares the attributed conversions across each of the dimension items from your selected dimension. Each bar color represents a distinct attribution model.
-* **Attribution Comparison Table**: Shows the same data as the bar chart, represented as a table. Selecting different columns or rows in this table filters the bar chart as well as several of the other visualizations in the panel. This table acts similar to any other Freeform Table in Workspace - allowing you to add components such as metrics, filters, or breakdowns.
-* **Overlap Diagram**: A Venn Diagram showing the top three dimension items and how often they participate jointly in a conversion. For example, the size of the bubble overlap indicates how often conversions occurred when a person was exposed to both dimension items. Selecting other rows in the adjacent Freeform table updates the visualization to reflect your selection.
-* **Performance Detail**: Lets you to compare up to three attribution models visually using a scatter plot.
+* **Attribution Comparison Table**: Shows the same data as the bar chart, represented as a table. Selecting different columns or rows in this table filters the bar chart as well as several of the other visualizations in the panel. This table acts similar to any other Freeform table in Workspace - allowing you to add components such as metrics, filters, or breakdowns.
+* **Overlap Diagram**: A Venn visualization showing the top three dimension items and how often they participate jointly in a conversion. For example, the size of the bubble overlap indicates how often conversions occurred when a person was exposed to both dimension items. Selecting other rows in the adjacent Freeform table updates the visualization to reflect your selection.
+* **Performance Detail**: A scatter visualization to compare up to three attribution models visually.
 * **Trended Performance**: Shows the trend of attributed conversions for the top dimension item. Selecting other rows in the adjacent Freeform table updates the visualization to reflect your selection.
 * **Flow**: Lets you see which channels are interacted with most commonly, and in what order across a person's journey.
+
+>[!MORELIKETHIS]
+>
+> [Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>

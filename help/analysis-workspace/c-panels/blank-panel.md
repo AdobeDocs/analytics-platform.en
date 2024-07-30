@@ -7,16 +7,20 @@ role: User
 ---
 # Blank panel
 
-A blank panel shows all the visualizations you can use within a panel, and the options to modify the panel, to build a completely customized analysis.
+A blank panel shows all the visualizations that you can create within a panel to build a completely customized analysis.
 
-Simply select a visualization (like **[!UICONTROL Cohort table]**) to add to the panel, or select a panel option (like **[!UICONTROL Attribution]**) to modify the panel for a specific purpose.
+Select a visualization (like **[!UICONTROL Cohort table]**) to add to the panel, or select a panel option (like **[!UICONTROL Attribution]**) to modify the panel for a specific purpose.
 
 
 ![](assets/blank-panel.png)
 
-* Select ![AddCircle](/help/assets/icons/AddCircle.svg) **within** the panel to add another visualization.
-* Select ![AddCircle](/help/assets/icons/AddCircle.svg) **outside** the panel to add another blank panel.
+You can:
 
->[!NOTE]
+* Select ![AddCircle](/help/assets/icons/AddCircle.svg) **within** a panel to add another visualization.
+* Select ![AddCircle](/help/assets/icons/AddCircle.svg) **outside** a panel to add another blank panel.
+
+
+>[!MORELIKETHIS]
 >
->If you do not have access to Media Analytics, you will not see the Media specific panels.
+>[Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>

@@ -1,4 +1,3 @@
----
 git-repo: https://github.com/adobedocs/analytics-platform.en
 cloud: Experience Cloud
 product: adobe analytics
@@ -152,14 +151,15 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Venn](../analysis-workspace/visualizations/venn.md)
   + Panels {#panels}
     + [Panels overview](../analysis-workspace/c-panels/panels.md)
-    + [Attribution panel](../analysis-workspace/c-panels/attribution.md)
     + [Blank panel](../analysis-workspace/c-panels/blank-panel.md)
-    + [Experimentation panel](../analysis-workspace/c-panels/experimentation.md)
-    + [Freeform panel](../analysis-workspace/c-panels/freeform-panel.md)
-    + [Media Average Minute Audience panel](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
-    + [Quick Insights panel](../analysis-workspace/c-panels/quickinsight.md)
-    + [Media Concurrent Viewers panel](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-    + [Media Playback Time Spent panel](../analysis-workspace/c-panels/media-playback-time-spent.md)
+    + [Attribution](../analysis-workspace/c-panels/attribution.md)
+    + [Experimentation](../analysis-workspace/c-panels/experimentation.md)
+    + [Freeform](../analysis-workspace/c-panels/freeform-panel.md)
+    + [Media Average Minute Audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+    + [Media Concurrent Viewers](../analysis-workspace/c-panels/media-concurrent-viewers.md)
+    + [Media Playback Time Spent](../analysis-workspace/c-panels/media-playback-time-spent.md)
+    + [Next or previous item](../analysis-workspace/c-panels/next-previous.md)
+    + [Quick Insights](../analysis-workspace/c-panels/quickinsight.md)
   + Curate, Share and Schedule projects {#curate-share}
     + [Share menu](../analysis-workspace/curate-share/send-schedule-files.md)
     + [Curate projects](../analysis-workspace/curate-share/curate.md)

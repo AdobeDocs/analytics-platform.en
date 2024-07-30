@@ -75,3 +75,9 @@ A Freeform table is not available in this view.  In order to view the data sourc
 |Does the workspace panel show the same information as the Concurrent Viewers Report?|No.  In Analysis Workspace, Concurrent viewers is defined as the number of unique persons viewing your media stream at a specific point in time, regardless of the number of sessions.<br><br>This is different than Concurrent Viewer reporting in the Reports section, which uses Concurrent Active Sessions.  Using unique persons accounts for removal of unwanted spikes at show boundaries—where sessions are ending and starting at the same time.|
 
 <!-- For more information about Media Concurrent Viewers, visit [MA doc page]( https://url). -->
+
+
+>[!MORELIKETHIS]
+>
+>[Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>
