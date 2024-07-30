@@ -8,7 +8,13 @@ role: User
 
 The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. It shows how users flow through and fall out of the various events, conditions, and paths of the user journey, which can start from any number of entry points.
 
-Journeys can be created either in Adobe Journey Optimizer or within Journey canvas itself. 
+Key features include:
+
+* Visualize journeys on a canvas
+
+* Multiple entry points and paths
+
+* 
 
 ## Journey canvas and Fallout visualizations
 
@@ -18,7 +24,7 @@ However, there are important differences.
 
 ### Understand the differences
 
-The following table shows the types of analysis you can do in the Journey canvas visualization and the Fallout visualization:
+The following table shows the types of analyses supported in the Journey canvas visualization and the Fallout visualization:
 
 | Function | Journey canvas visualization | Fallout visualization |
 |---------|----------|---------|
@@ -50,7 +56,7 @@ Journey canvas provides deep, thorough analysis that isn't possible in Journey O
 |---------|----------|
 | **Create events** | Create events by using any Customer Journey Analytics dimensions. In Journey Optimizer, a technical user must create an event before it can be added to a journey. |
 | **Create audiences** | Create audiences based on a specific node, edge, or fallout within the Journey canvas visualization. (Launches the Customer Journey Analytics audience builder.) In Journey Optimizer, this is not available |
-| **Fallthrough and fallout** | B3 | C3 |
+| **Fallthrough and fallout** | B3 | 
 
 ### Terminology differences between Journey Optimizer and Customer Journey Analytics
 
@@ -76,9 +82,7 @@ For information, see [Configure a Journey canvas visualization](/help/analysis-w
 
 ## Build analyses in Journey canvas
 
-You can build analyses in Journey canvas that are based on any dimensions or metrics that are available in Analysis Workspace. 
-
-
+You can build analyses in Journey canvas that are based on any dimensions or metrics that are available in Analysis Workspace. Or, you can analyze journeys that were created in Journey Optimizer. For more information, see [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 ## Basic workflow
 
