@@ -1,3 +1,4 @@
+---
 git-repo: https://github.com/adobedocs/analytics-platform.en
 cloud: Experience Cloud
 product: adobe analytics

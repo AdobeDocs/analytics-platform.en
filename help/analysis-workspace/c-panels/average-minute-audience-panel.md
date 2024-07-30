@@ -1,6 +1,6 @@
 ---
 title: Media Average Minute Audience panel
-description: How to use and interpret the Media Average Minute Audience panel in Analysis Workspace.
+description: How to use and interpret the Media average minute audience panel in Analysis Workspace.
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
@@ -13,9 +13,9 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 >
 >Contact your Adobe Sales Representative or Adobe Account Team to purchase the Streaming Media Collection Add-on. 
 
-In Analysis Workspace, average minute audience is the time spent viewing your media stream divided by the duration of the content or the total selection of the period and selected granularity.
+In Analysis Workspace, average minute audience is the time spent viewing your media stream, divided by the duration of the content or the total selection of the period and selected granularity.
 
-The Media average minute audience panel enables you to better understand average consumption of your content by comparing programs of any length or genre. For example, you can understand average consumption when comparing a 30-minute sitcom with a 3-hour sporting event.
+The Media average minute audience panel enables you to understand average consumption of your content by comparing programs of any length or genre. For example, you can understand average consumption when comparing a 30-minute sitcom with a 3-hour sporting event.
 
 In addition, you can use the Media average minute audience panel to compare or append this digital average minute audience to linear TV average minute metrics. 
 
@@ -23,9 +23,9 @@ The Media average minute audience panel provides the following benefits over the
 
 * Supports custom time periods
 
-* Allows for updating the duration classification after views are processed (if it was not present or if it needs to be corrected)
+* Allows for updating the duration classification after views are processed (if the duration classification was not present or needs to be corrected)
 
-  If you did this when using the metric, it either won't exist (if the classification wasn't present) or it will be out of date (if the classification was present but incorrect).
+  If you do this update when using the metric, the duration classification does not exist (if the classification wasn't present) or the duration classification is out of date (if the classification was present but incorrect).
 
 ## Access the Media average minute audience panel
 
@@ -48,8 +48,8 @@ Use the input settings described in this section to configure the Media average 
    | Setting | Description |
    |---------|------------|
    | **Panel date range** | The panel date range default is [!UICONTROL **This month**]. You can edit it to view a single day or many months at a time. <br></br> This visualization is limited to 1440 rows of data (for example, 24-hours at minute-level granularity). If a date range and granularity combination results in more than 1440 rows, the granularity is automatically updated to accommodate the full date range. |
-   | [!UICONTROL **Drop a segment here (or any other component)**] | Like other panels, this setting filters your selections based on segments you've created. This is a great way to look at specific platforms, live streams, or other common media segments. |
-   | [!UICONTROL **Calculate metric for**] | Choose whether you want to see the average minute audience for a specific piece of content, or if you want to see the average minute audience for a custom period of time:<ul><li>**Specific content:** This is available only if the duration has been updated using Classifications. If the duration is unavailable, or if you want to view the average minute audience for a time series with multiple pieces of content or content without a specific assigned duration (like during a live stream or event), then you should select [!UICONTROL **Custom time period**]. (Durations can be set using Classifications either before or after processing time.)</li><li>**Custom time period:** This is available regardless of whether the durations is made available using Classifications.</li></ul> <p>This setting changes the workflow and report output.</p>  |
+   | [!UICONTROL **Drop a segment here (or any other component)**] | Like other panels, this setting filters your selections based on segments you've created. This setting is a great way to look at specific platforms, live streams, or other common media segments. |
+   | [!UICONTROL **Calculate metric for**] | Choose whether you want to see the average minute audience for a specific piece of content. Or if you want to see the average minute audience for a custom period of time:<ul><li>**Specific content:** This metric is available only if the duration has been updated using Classifications. If the duration is unavailable, or if you want to view the average minute audience for a time series with multiple pieces of content or content without a specific assigned duration (like during a live stream or event), then you should select [!UICONTROL **Custom time period**]. (Durations can be set using Classifications either before or after processing time.)</li><li>**Custom time period:** This setting is available regardless of whether the durations is made available using Classifications.</li></ul> <p>This setting changes the workflow and report output.</p>  |
 
 1. Continue with [Specific content](#specific-content) or [Custom time period](#custom-time-period), depending on the option you chose in the [!UICONTROL **Calculate metric for**] drop-down menu.
 
@@ -59,8 +59,8 @@ Use the input settings described in this section to configure the Media average 
 
    | Setting | Description |
    |---------|------------|
-   | [!UICONTROL **Reporting dimension**] | When you choose specific content, you can select the report output to use either the video name or content ID fields to show the content and its associated average minute audience for the time period selected. |
-   | [!UICONTROL **Filter content by (optional)**] | Choose how to filter the specific content, depending on the view you want or the way your data is structured. <ul>[!UICONTROL **Show, season, episode**]: Displays your available shows in the drop-down, which you can filter using a search (or by dragging and dropping the show name from the left column). You can end your selection there to see all the seasons of your show, or you can filter by individual seasons and then by individual episodes. This setting shows the data for those shows, seasons, or episodes for the selected time period.</li><li>[!UICONTROL **Custom dimension**]: If your show name is under a custom dimension, you can find it either by searching in the dimension (optional) drop down or by using the left column search. The dimension item automatically populates based on that selection and is treated as an episode.</li><li>[!UICONTROL **None**]: Shows all the video names that have average minute audience data for the selection you've chosen. (This options is selected by default.)</li></ul>  |
+   | [!UICONTROL **Reporting dimension**] | When you select specific content, you can select the report output to use either the video name or content ID fields to show the content and its associated average minute audience for the selected time period. |
+   | [!UICONTROL **Filter content by (optional)**] | Choose how to filter the specific content, depending on the view you want or the way your data is structured. <ul>[!UICONTROL **Show, season, episode**]: Displays your available shows in the drop-down, which you can filter using a search (or by dragging and dropping the show name from the left column). You can end your selection there to see all the seasons of your show, or you can filter by individual seasons and then by individual episodes. This setting shows the data for those shows, seasons, or episodes for the selected time period.</li><li>[!UICONTROL **Custom dimension**]: If your show name is under a custom dimension, you can find it either by searching in the dimension (optional) drop-down or by using the left column search. The dimension item automatically populates based on that selection and is treated as an episode.</li><li>[!UICONTROL **None**]: Shows all the video names that have average minute audience data for the selection you've chosen. (This option is selected by default.)</li></ul>  |
 
 1. Continue with [Specific content advanced settings](#specific-content-advanced-settings) to configure advanced settings. 
 
@@ -70,8 +70,8 @@ Use the input settings described in this section to configure the Media average 
 
    | Setting | Description |
    |---------|------------|
-   | Table settings | The default setting shows the calculation values in the table, which shows the numerator and denominator of the average minute audience as the preceding columns in the table. Deselecting this option removes those two columns, leaving only the average minute audience next to the video name or content ID. |
-   | Time spent metric | You can choose the default content time spent, which includes only content time, or you can choose to use the media time spent, which includes content and ad time together as the numerator calculation for the average minute audience. |
+   | Table settings | The default setting shows the calculation values in the table, which shows the numerator and denominator of the average minute audience as the preceding columns in the table. Deselecting this option removes those two columns. The average minute audience column remains in the table next to the video name or content ID. |
+   | Time spent metric | You can choose the default content time spent, which includes only content time. Or you can choose to use the media time spent, which includes content and ad time together as the numerator calculation for the average minute audience. |
 
 1. Select [!UICONTROL **Build**] to finish creating the Media average minute audience panel.
 
@@ -83,8 +83,8 @@ Use the input settings described in this section to configure the Media average 
 
    | Setting | Description |
    |---------|------------|
-   | Granularity | The default granularity is [!UICONTROL **5-Minute**], but you can choose any of the granularities that are used as the denominator for the time series within your overall time period selection made in the calendar selection. For example, selecting 12:00 pm to 12:30 pm with a 5-minute granularity returns the average minute audience over the full half hour as well as six rows with the average minute audience for each 5-minute period. These rows are used as the datapoints for the time series chart. |
-   | [!UICONTROL **Filter content by (optional)**] | Choose how to filter the specific content, depending on the view you want or the way your data is structured. <ul>[!UICONTROL **Show, season, episode**]: Displays your available shows in the drop-down, which you can filter using a search (or by dragging and dropping the show name from the left column). You can end your selection there to see all the seasons of your show, or you can filter by individual seasons and then by individual episodes. This setting shows the data for those shows, seasons, or episodes for the selected time period.</li><li>[!UICONTROL **Custom dimension**]: If your show name is under a custom dimension, you can find it either by searching in the dimension (optional) drop down or by using the left column search. The dimension item automatically populates based on that selection and is treated as an episode.</li><li>[!UICONTROL **None**]: Shows all the video names that have average minute audience data for the selection you've chosen. (This options is selected by default.)</li></ul>  |
+   | Granularity | The default granularity is [!UICONTROL **5-Minute**], but you can choose any of the granularities that are used as the denominator for the time series within your selected time period. For example, selecting 12:00 pm to 12:30 pm with a 5-minute granularity returns the average minute audience over the full half hour as well as six rows with the average minute audience for each 5-minute period. These rows are used as the datapoints for the time series chart. |
+   | [!UICONTROL **Filter content by (optional)**] | Choose how to filter the specific content, depending on the view you want or the way your data is structured. <ul>[!UICONTROL **Show, season, episode**]: Displays your available shows in the drop-down, which you can filter using a search (or by dragging and dropping the show name from the left column). You can end your selection there to see all the seasons of your show, or you can filter by individual seasons and then by individual episodes. This setting shows the data for those shows, seasons, or episodes for the selected time period.</li><li>[!UICONTROL **Custom dimension**]: If your show name is under a custom dimension, you can find it either by searching in the dimension (optional) drop-down or by using the left column search. The dimension item automatically populates based on that selection and is treated as an episode.</li><li>[!UICONTROL **None**]: Shows all the video names that have average minute audience data for the selection you've chosen. (This option is selected by default.)</li></ul>  |
 
 1. Continue with [Custom time period advanced settings](#custom-time-period-advanced-settings) to configure advanced settings. 
 
@@ -109,7 +109,7 @@ The panel output differs depending on whether you chose [!UICONTROL **Specific c
 The Media average minute audience panel returns the following:
 
 * Total average minute audience for your entire selection
-* Filters and average minute audience for the individual videos displayed in a table 
+* Filters and average minute audience for the individual videos, displayed in a table 
 * Content time spent and video length (duration) if that advanced setting was selected
 
 To edit and rebuild the panel at any time, select the Edit (pencil) icon in the top right.
@@ -118,11 +118,11 @@ To edit and rebuild the panel at any time, select the Edit (pencil) icon in the 
 
 ### Specific content data source
 
-The Media average minute audience panel uses only the Average Minute Audience metric to gather data. Breakdowns or other metrics cannot be used in the panel.
+The Media average minute audience panel uses only the average minute audience metric to gather data. Breakdowns or other metrics cannot be used in the panel.
 
 | Metric | Description |
 |--------|-------------|
-| Average Minute Audience | The time spent viewing your media stream divided by the video length (duration) supplied via Classifications. |
+| Average minute audience | The time spent viewing your media stream divided by the video length (duration) supplied via Classifications. |
 
 ### Custom time period {#custom-time-period-output}
 
@@ -143,7 +143,7 @@ To edit and rebuild the panel at any time, select the ![Edit](/help/assets/icons
 
 ### Custom time period data source
 
-The Media average minute audience panel uses only the Average Minute Audience metric to gather data. Breakdowns or other metrics cannot be used in the panel.
+The Media average minute audience panel uses only the average minute audience metric to gather data. Breakdowns or other metrics cannot be used in the panel.
 
 |Metric|Description|
 |---|---|
