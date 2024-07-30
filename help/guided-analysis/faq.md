@@ -34,15 +34,17 @@ To enable your end users to be most successful with guided analysis, it is recom
 
 +++**How does the terminology compare between guided analysis and Analysis Workspace?**
 
-Guided analysis uses terms that are more frequently used among product teams. You can reference this table when switching between guided analysis and [Analysis Workspace](../analysis-workspace/home.md).
+Guided analysis and [Analysis Workspace](../analysis-workspace/home.md) align on most key terminology, with a few small differences.
 
 | Guided analysis term | Analysis Workspace term |
 | --- | --- |
-| Event | Metric |
+| Event (a binary 1/0 metric) | Metric |
 | Users | People |
-| Property | Dimension |
-| Value | Dimension item |
+| Dimension | Dimension |
+| Dimension item | Dimension item |
 | Segment | Filter |
+| Filter | Report filter |
+| Calculated metric, Metrics | Calculated metric |
 
 {style="table-layout:auto"}
 
