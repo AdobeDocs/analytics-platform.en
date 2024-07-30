@@ -19,7 +19,7 @@ In Freeform tables, a total row appears at each breakdown level and can show two
 
 ## Display totals
 
-Under ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Column Settings]**, there are options to **[!UICONTROL Show Totals]** and **[!UICONTROL Show Grand Total]**. If these settings are unchecked, totals are removed from the table, which may be desired in cases where totals don't make sense. For instance, in certain [Calculated Metric scenarios](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals).
+Under ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Column settings]**, there are options to **[!UICONTROL Show totals]** and **[!UICONTROL Show grand total]**. If these settings are unchecked, totals are removed from the table, which may be desired in cases where totals don't make sense. For instance, in certain [Calculated Metric scenarios](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals).
 
 
 [Static row](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) totals behave differently, and are controlled using ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Row Settings]**.

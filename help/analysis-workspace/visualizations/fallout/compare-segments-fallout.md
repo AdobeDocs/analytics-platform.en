@@ -12,7 +12,7 @@ You can create filters from a touchpoint, add filters as touchpoint, and compare
 
 >[!IMPORTANT]
 >
->Filters used as checkpoints in Fallout must use a container that is at a lower level than the overall context of the Fallout visualization. With a person-context Fallout, filters used as checkpoints must be visit or event-based filters. With a visit-context Fallout, filters used as checkpoint must be event-based filters. If you use an invalid combination, the fallout will be 100%. We have added a warning to the Fallout visualization that will display when you add an incompatible filter as a touchpoint. Certain invalid filter container combinations will lead to invalid Fallout diagrams, such as:
+>Filters used as checkpoints in Fallout must use a container that is at a lower level than the overall context of the Fallout visualization. With a person-context Fallout, filters used as checkpoints must be visit or event-based filters. With a visit-context Fallout, filters used as checkpoint must be event-based filters. If you use an invalid combination, the fallout is 100%. You see a warning to the Fallout visualization when you add an incompatible filter as a touchpoint. Certain invalid filter container combinations lead to invalid Fallout diagrams, such as:
 
 * Using a person-based filter as a touchpoint inside a person-context Fallout visualization
 * Using a person-based filter as a touchpoint inside a visit-context Fallout visualization
@@ -20,11 +20,11 @@ You can create filters from a touchpoint, add filters as touchpoint, and compare
 
 ## Create a filter from a touchpoint
 
-1. Create a filter from a specific touchpoint that you are especially interested in and that might be useful to apply to other reports. You do this by right-clicking the touchpoint and selecting **[!UICONTROL Create filter from touchpoint]**.
+1. Create a filter from a specific touchpoint that you are especially interested in and that might be useful to apply to other reports. Right-click the touchpoint and select **[!UICONTROL Create filter from touchpoint]**.
 
    ![The Touchpoint drop-down menu with Create segment from touchpoint highlighted.](assets/fallout-createfilter.png)
 
-   The Filter Builder opens, pre-populated with the pre-built sequential filter that matches the touchpoint you selected:
+   The [!UICONTROL Filter builder] opens, pre-populated with the pre-built sequential filter that matches the touchpoint you selected:
 
    ![The Filter Builder displays the pre-populated and pre-built sequential filter.](assets/fallout-definefilter.png)
 
@@ -44,12 +44,12 @@ Or you can create an AND touchpoint by dragging the US users filter onto another
 
 You can compare an unlimited number of filters in the Fallout visualization.
 
-1. Select the filters you want to compare from the [!UICONTROL Filter] rail on the left. In our example, we have selected 3 filters: Flight Details: Page Version A, Flight Details: Page Version B, and Flight Details: Page Version C, .
-1. Drag them into the Filter drop zone at the top.
+1. Select the filters that you want to compare from the [!UICONTROL Filter] rail on the left. In the example, three filters are selected: *Flight Details: Page Version A*, *Flight Details: Page Version B*, and *Flight Details: Page Version C*.
+1. You drag the three filters onto the Filter drop zone at the top of the visualization.
 
 
-1. Optional: You can keep "All Visits" as the default container or delete it.
+1. Optional: You can keep *All Visits* as the default container or delete the container.
 
    ![The Fallout showing All Visits along with the two filters dragged in the previous step.](assets/fallout-multiplefilters.png)
 
-1. You can now compare the fallout across the two filters, such as where one filter is outperforming another, or other insights.
+1. You can now compare the fallout across the three filters, such as where one filter is outperforming another, or other insights.

@@ -61,3 +61,4 @@ You can create cohorts based on a selected dimension, and not time-based cohorts
 ![A Cohort report showing customized report with selected dimensions not the default time-based cohort.](assets/retention-dimensions.png)
 
 For instructions on how to set up and run a cohort report, go to [Configure a Cohort table](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
+

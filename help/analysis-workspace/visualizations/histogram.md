@@ -30,7 +30,7 @@ In the example below, a histogram is used to bucket sessions for the number of p
 
 ## Advanced settings {#section_09D774C584864D4CA6B5672DC2927477}
 
-As part of the visualization settings, specific histogram settings are available.
+As part of the visualization, specific histogram settings are available.
 
 |  Histogram settings  | Description  |
 |---|---|
