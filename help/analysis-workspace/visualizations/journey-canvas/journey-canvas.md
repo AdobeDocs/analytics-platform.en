@@ -6,15 +6,19 @@ role: User
 ---
 # Journey canvas overview
 
-The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. It shows how users flow through and fall out of the various events, conditions, and paths of the user journey, which can start from any number of entry points.
+The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. It shows how users flow through and fall out of the various events, conditions, and paths of your defined user journey, which can start from multiple entry points and can include multiple paths.
 
-Key features include:
+## Key features
 
-* Visualize journeys on a canvas
+Key features of the Journey canvas visualization include:
 
-* Multiple entry points and paths
+* Deep analysis of fallout and fallthrough that accommodates the most complex user journeys.
 
-* 
+* A canvas for mapping and visualizing the various entry points, nodes, and paths of a user journey.
+
+* Drag-and-drop interactions for adding components to the canvas and for repositioning existing nodes.
+
+* The option to build analyses of user journeys within Journey canvas or to automatically create them based on Journey Optimizer journeys.
 
 ## Journey canvas and Fallout visualizations
 
