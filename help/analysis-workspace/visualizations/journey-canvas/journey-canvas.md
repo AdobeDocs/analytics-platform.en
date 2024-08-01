@@ -20,6 +20,7 @@ Key features of the Journey canvas visualization include:
 
 * The option to build analyses of user journeys within Journey canvas or to automatically create them based on Journey Optimizer journeys.
 
+
 ## Journey canvas and Fallout visualizations
 
 Journey canvas visualizations are similar to [Fallout visualizations](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), in that both visualizations show where persons left (fell out) and continued through (fell through) a predefined sequence of pages.
