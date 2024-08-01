@@ -32,7 +32,7 @@ The following guided analysis views are available:
 
 ## Access
 
-If your organization is provisioned for guided analysis, you can access it from the Customer Journey Analytics homepage. 
+You can access guided analysis from the Customer Journey Analytics homepage. 
 
 1. Click **[!UICONTROL Guided analysis]** from the homepage, which takes you directly to the [Usage trends view](types/usage.md). 
 
@@ -41,8 +41,6 @@ If your organization is provisioned for guided analysis, you can access it from 
 1. Click **[!UICONTROL Create new]** to see the different view options and choose a different starting point for your analysis. 
 
    ![Create a new modal](assets/create-new-modal.png){style="border:1px solid gray"}
-
-If your organization is not yet provisioned for guided analysis, contact your Adobe Account Team.
 
 ## Interface
 
