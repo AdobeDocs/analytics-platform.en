@@ -59,7 +59,7 @@ Stitching "replays" data based on unique identifiers it has learned. Replay is a
 
 +++**How does stitching historical data (backfill) work?**
 
-When first turned on, Adobe provides a backfill of stitched data that goes back as far as the beginning of the previous month (up to 60 days.) In order to do this backfill, the transient ID must exist in the unstitched data that far back in time. [Learn more](../stitching/overview.md)
+When first turned on, Adobe provides a backfill of stitched data that goes back as far as selected by you (up to a maximum of 25 months, depending on the Customer Journey Analytics package you are entitled to). In order to do this backfill, the transient ID must exist in the unstitched data that far back in time. [Learn more](../stitching/overview.md)
 
 +++
 
