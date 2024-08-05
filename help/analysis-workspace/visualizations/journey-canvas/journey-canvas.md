@@ -6,7 +6,9 @@ role: User
 ---
 # Journey canvas overview
 
-The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. It shows how users flow through and fall out of the various events, conditions, and paths of your defined user journey, which can start from multiple entry points and can include multiple paths.
+The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. It allows you to define a journey, then see how users left (fell out) or continued through (fell through) the journey. 
+
+The journeys you define can start from multiple entry points, and they can contain multiple events, conditions, and paths.
 
 ## Key features
 
@@ -21,7 +23,7 @@ Key features of the Journey canvas visualization include:
 * The option to build analyses of user journeys within Journey canvas or to automatically create them based on Journey Optimizer journeys.
 
 
-## Journey canvas and Fallout visualizations
+## Choose between Journey canvas and Fallout visualizations
 
 Journey canvas visualizations are similar to [Fallout visualizations](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), in that both visualizations show where persons left (fell out) and continued through (fell through) a predefined sequence of pages.
 
@@ -41,7 +43,7 @@ The following table shows the types of analyses supported in the Journey canvas 
 
 If your fallout analysis involves only a linear journey that has a single known beginning and end, consider using a [Fallout visualization](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) as a more simple option for these more straightforward user journeys.
 
-For fallout analysis involving journeys with multiple entry points and paths, or those created in Journey Optimizer, using Journey Canvas is essential.
+Journey canvas is essential for fallout analysis involving journeys with multiple entry points and paths, or for analyzing journeys that were created in Journey Optimizer.
 
 ## Analyze Journey Optimizer journeys
 
@@ -49,7 +51,7 @@ For fallout analysis involving journeys with multiple entry points and paths, or
 >
 >Organization who have purchased Journey Optimizer can use Journey canvas to analyze Journey Optimizer journeys. If your organization doesn't have access to Journey Optimizer, you can still [build analyses in Journey canvas](#build-analyses-in-customer-journey-analytics).
 
-Analyzing Journey Optimizer journeys in Journey canvas provides deep, actionable insights on user behavior. 
+Analyzing Journey Optimizer journeys in Journey canvas provides deep, actionable insights on how users interact with a journey. 
 
 When you analyze a Journey Optimizer journey in Journey canvas, the journey is displayed with the same order, sequence, and structure as it has in Journey Optimizer.
 
@@ -69,7 +71,7 @@ Certain terms that mean one thing in Journey Optimizer mean something else in Cu
 
 |Term | Journey canvas | Journey Optimizer |
 |---------|----------|---------|
-| **Event** | One of several standard metrics that is available in Customer Journey Analytics. Counts things like revenue, subscriptions, or leads generated. | The category of activity that triggers a personalized journey, such as an online purchase.  |
+| **Event** | One of several standard metrics that is available in Customer Journey Analytics. This metric counts things like revenue, subscriptions, or leads generated. | The category of activity that triggers a personalized journey, such as an online purchase.  |
 | A2 | B2 | C2 |
 | A3 | B3 | C3 |
 
