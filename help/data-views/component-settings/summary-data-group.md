@@ -22,13 +22,13 @@ To create a grouping of dimensions:
 
 ## Same component settings
 
-When grouping dimensions, you must ensure the settings for [!UICONTROL Substring], [!UICONTROL Behavior (Lower case)], and [!UICONTROL Include exclude values] for each of the dimensions part of the group are the same. Otherwise, each dimension of the group can potentially return different results prior to the grouping.
+When grouping dimensions, you must ensure the settings for [!UICONTROL Substring], [!UICONTROL Behavior (Lower case)], and [!UICONTROL Include exclude values], for each of the dimensions that are part of the group, are the same. Otherwise, each dimension of the group can potentially return different results prior to the grouping.
 For example:
 
-1. You have created a summary data group for [!UICONTROL campaign_code] (part of summary data) and [!UICONTROL tracking_code] (part of your event data).
-1. You have applied [!UICONTROL Behaviour (Lower case)] to the [!UICONTROL campaign_code] but not to the tracking_code dimension.
+1. You have created a summary data group for `campaign_code` (part of summary data) and `tracking_code` (part of your event data).
+1. You have applied [!UICONTROL Behavior (Lower case)] to the `campaign_code` but not to the `tracking_code` dimension.
    
-Values in [!UICONTROL tracking_code] potentially can show up as different from [!UICONTROL campaign_code].
+Values in `tracking_code` can potentially show up as different from `campaign_code`.
 
 >[!IMPORTANT]
 >
