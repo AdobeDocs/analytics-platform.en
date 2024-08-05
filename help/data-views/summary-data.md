@@ -15,7 +15,7 @@ This summary data can then be used to present high-level performance indicators 
 >[!NOTE]
 >
 >Summary data is time-series data from a summary dataset. That summary dataset is based on a schema that uses the XDM Summary Metrics class as its base class.
->Currently only hourly or daily based time-series data are supported.
+>Only hourly or daily based time-series data are supported.
 
 >[!TIP]
 >
@@ -70,5 +70,66 @@ Combining the summarized event data and on-site clickstream data enables you to 
 | ghi789 | 500 | $500 | 500 | $750 | 1.50 |
 
 
-See the [Ingest and report on summary data](/help/use-cases/data-ingestion/summary-data.md) use case for a detailed guide how to make use of, report on, and analyze summary data in Customer Journey Analytics.
+See the [Ingest and report on summary data](/help/use-cases/data-ingestion/summary-data.md) use case for a detailed article on how to make use of, report on, and analyze summary data in Customer Journey Analytics.
+
+
+## Prerequisites
+
+To use summary data properly in your reports and analysis, a number of prerequisites apply. The following sections detail these prerequisites.
+
+### Granularity and timezone
+
+When configuring the dataset containing the summary data in Customer Journey Analytics, you notice that the granularity is automatically derived from the data. The selections for **[!UICONTROL Timestamp]** and **[!UICONTROL Timezone]** dropdown are disabled as both are derived from the schema definition. 
+
+#### Granularity
+
+You cannot mix and match the hourly and daily granularity of your summary data in one dataset (or with different datasets), using one summary data schema. For example, if you do have daily and hourly granular summary data for advertising campaign data, you need two schemas: one for the daily and one for the hourly summary data. And then upload the relevant granular data into datasets associated with the proper schema (for example, upload hourly data into a dataset associated with the hourly summary data schema).
+
+#### Timezone
+
+The timezone of your summary data is defined at the summary schema level in Experience Platform. The timezone applies to hourly granular data only.
+
+- For daily granularity, Experience Platform assumes UTC, unless a timezone offset is included in the timestamp. When adding the summary dataset containing the daily summary data, Customer Journey Analytics ignores the timezone definition set on the schema and respects the day associated with the timestamp from the data in the dataset.
+- For hourly granularity, Customer Journey Analytics respects the timezone configured on the summary data schema in Experience Platform when interpreting the timestamp. The table below provides some examples of this interpretation.
+  
+  | Timestamp <br/>source data | Timestamp in<br/>Experience Platform | Timezone set<br/>on schema | Timestamp in <br/>Customer Journey Analytics | Remarks |
+  |---|---|---|---|---|
+  | 2024-07-29T01:00:00 | 2024-07-29T01:00:00 | GMT | 2024-07-29T01:00:00 | |
+  | 2024-07-29T01:00:00 | 2024-07-29T01:00:00 | PST | 2024-07-28T18:00:00 | US Pacific Time [GMT-08:00] |
+  | 2024-07-30T01:00:00-05:00 | 2024-07-30T06:00:00 | GMT | 2024-07-30T06:00:00 | Due to DST |
+  | 2024-07-30T01:00:00-05:00 | 2024-07-30T06:00:00 | PST | 2024-07-29T23:00:00 | US Pacific Time [GMT-08:00] |
+  | 2024-08-02 | 2024-08-02T00:00:00 | IST | 2024-08-02T05:00:00 | New Delhi [GMT+05:30]* | 
+
+  For timezones with a 30 minutes offset (for example IST, India Standard Time), the 30 minute offset is dropped when reporting on summary data. For example: 12:30 is reported as 12:00.
+
+
+To ensure, the proper timezone is used for your hourly granular summary data, you must ensure the schema used for summary data has the proper timezone configured. 
+
+To configure a timezone for your summary data schema, you have to use the following API call as there is no equivalent user interface available.
+
+```curl
+curl -X POST \
+https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
+ -H "Authorization: Bearer {$ACCESS_TOKEN}" \
+ -H 'Content-Type: application/json' \
+ -H 'x-api-key: {$API_KEY}' \
+ -H 'x-gw-ims-org-id: {$ORG_ID}' \
+ -H 'x-sandbox-name: {$SANDBOX_NAME}' \
+ -d ' {  "@type": "xdm:descriptorTimeSeriesGranularity",
+"xdm:sourceSchema": "{$SCHEMA_ID}",
+"xdm:sourceVersion": 1,
+"xdm:granularity": "{$GRANULARITY}",
+"xdm:ianaTimezone": "{$TIMEZONE}" }'
+```
+
+| Variable | Description of value |
+|---|---|
+|`$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | See [Authenticate and access Experience Platform APIs](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication) for more information on how to specify values for these variables. |
+| `$SCHEMA_ID` | You can find the id of your schema in the Experience Platform UI. Select your summary schema from the list of schemas, and find the **[!UICONTROL API Usage]** > **[!UICONTROL Schema ID]** in the right panel. Use that id as the value. |
+| `$GRANULARITY` | Specify `hour` or `day` as the value. |
+| `$TIMEZONE` | Specify the proper timezone abbreviation value from the DST column in the [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). |
+
+## Component settings
+
+Ensure the component settings for a summary data group are the same. See [Summary data group component settings](component-settings/summary-data-group.md#same-component-settings) for more details.
 
