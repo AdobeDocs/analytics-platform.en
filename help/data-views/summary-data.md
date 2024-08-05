@@ -92,7 +92,7 @@ The timezone of your summary data is defined at the summary schema level in Expe
 - For daily granularity, Experience Platform assumes UTC, unless a timezone offset is included in the timestamp. When adding the summary dataset containing the daily summary data, Customer Journey Analytics ignores the timezone definition set on the schema and respects the day associated with the timestamp from the data in the dataset.
 - For hourly granularity, Customer Journey Analytics respects the timezone configured on the summary data schema in Experience Platform when interpreting the timestamp. The table below provides some examples of this interpretation.
   
-  | Timestamp <br/>source data | Timestamp in<br/>Experience Platform | Timezone set<br/>on schema | Timestamp in <br/>Customer Journey Analytics | Remarks |
+  | Timestamp <br/>source data | Timestamp in<br/>Experience Platform | Timezone set<br/>on schema<br/>and used in<br/>Customer<br/>Journey<br/>Analytics | Timestamp in <br/>Customer Journey Analytics | Remarks |
   |---|---|---|---|---|
   | 2024-07-29T01:00:00 | 2024-07-29T01:00:00 | GMT | 2024-07-29T01:00:00 | |
   | 2024-07-29T01:00:00 | 2024-07-29T01:00:00 | PST | 2024-07-28T18:00:00 | US Pacific Time [GMT-08:00] |
