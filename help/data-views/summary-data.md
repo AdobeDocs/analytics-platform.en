@@ -98,7 +98,7 @@ The timezone of your summary data is defined at the summary schema level in Expe
   | 2024-07-29T01:00:00 | 2024-07-29T01:00:00 | PST | 2024-07-28T18:00:00 | US Pacific Time [GMT-08:00] |
   | 2024-07-30T01:00:00-05:00 | 2024-07-30T06:00:00 | GMT | 2024-07-30T06:00:00 | Due to DST |
   | 2024-07-30T01:00:00-05:00 | 2024-07-30T06:00:00 | PST | 2024-07-29T23:00:00 | US Pacific Time [GMT-08:00] |
-  | 2024-08-02 | 2024-08-02T00:00:00 | IST | 2024-08-02T05:00:00 | New Delhi [GMT+05:30]* | 
+  | 2024-08-02 | 2024-08-02T00:00:00 | IST | 2024-08-02T05:00:00 | New Delhi [GMT+05:30] | 
 
   For timezones with a 30 minutes offset (for example IST, India Standard Time), the 30 minute offset is dropped when reporting on summary data. For example: 12:30 is reported as 12:00.
 
@@ -122,12 +122,12 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 "xdm:ianaTimezone": "{$TIMEZONE}" }'
 ```
 
-| Variable | Description of value |
+| Variable | Value |
 |---|---|
 |`$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | See [Authenticate and access Experience Platform APIs](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication) for more information on how to specify values for these variables. |
 | `$SCHEMA_ID` | You can find the id of your schema in the Experience Platform UI. Select your summary schema from the list of schemas, and find the **[!UICONTROL API Usage]** > **[!UICONTROL Schema ID]** in the right panel. Use that id as the value. |
 | `$GRANULARITY` | Specify `hour` or `day` as the value. |
-| `$TIMEZONE` | Specify the proper timezone abbreviation value from the DST column in the [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). |
+| `$TIMEZONE` | Specify the proper timezone abbreviation value from the SDT or DST column in the [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). |
 
 ## Component settings
 
