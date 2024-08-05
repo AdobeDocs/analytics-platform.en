@@ -107,7 +107,7 @@ To ensure, the proper timezone is used for your hourly granular summary data, yo
 
 To configure a timezone for your summary data schema, you have to use the following API call as there is no equivalent user interface available.
 
-```curl
+```shell
 curl -X POST \
 https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
  -H "Authorization: Bearer {$ACCESS_TOKEN}" \
@@ -115,11 +115,13 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
  -H 'x-api-key: {$API_KEY}' \
  -H 'x-gw-ims-org-id: {$ORG_ID}' \
  -H 'x-sandbox-name: {$SANDBOX_NAME}' \
- -d ' {  "@type": "xdm:descriptorTimeSeriesGranularity",
-"xdm:sourceSchema": "{$SCHEMA_ID}",
-"xdm:sourceVersion": 1,
-"xdm:granularity": "{$GRANULARITY}",
-"xdm:ianaTimezone": "{$TIMEZONE}" }'
+ -d '{  
+    "@type": "xdm:descriptorTimeSeriesGranularity",
+    "xdm:sourceSchema": "{$SCHEMA_ID}",
+    "xdm:sourceVersion": 1,
+    "xdm:granularity": "{$GRANULARITY}",
+    "xdm:ianaTimezone": "{$TIMEZONE}" 
+ }'
 ```
 
 | Variable | Value |
