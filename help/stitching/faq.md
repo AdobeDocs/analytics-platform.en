@@ -25,7 +25,7 @@ If you would like to rename dataset ID dimension items, you can use a lookup dat
 
 +++**How far back does stitching replay visitors?**
 
-The lookback window for rekeying depends on your desired frequency of data [replay](explained.md). For example, if you set up stitching to replay data once every week, the lookback window for rekeying is seven days. If you set up stitching to replay data every day, the lookback window for rekeying is one day.
+The lookback window for rekeying depends on your desired frequency of data replay. For example, if you set up stitching to replay data once every week, the lookback window for rekeying is seven days. If you set up stitching to replay data every day, the lookback window for rekeying is one day.
 
 +++
 
@@ -41,7 +41,9 @@ The transient ID overrides the persistent ID, so shared devices are considered s
 
 In some situations, an individual user can associate with many persistent IDs. An example is an individual frequently clearing browser's cookies or using the browser's private/incognito mode.
 
-The number of persistent IDs is irrelevant in favor of the transient ID. A single user can belong to any number of devices without impacting Customer Journey Analytics's ability to stitch across devices.
+For field-based stitching, the number of persistent IDs is irrelevant in favor of the transient ID. A single user can belong to any number of devices without impacting Customer Journey Analytics's ability to stitch across devices.
+
+For graph-based stitching, a single person can have many persistent ID in the identity graph. Graph-based stitching uses the persistent ID based on the specified namespace. In case there are more persistent ID for the same namespace, the lexicographic first persistent ID is used.
 
 +++
 
@@ -114,3 +116,21 @@ Other metrics can be similar in Customer Journey Analytics and Adobe Analytics. 
 No, Customer Journey Analytics cannot currently use Identity Map fields for stitching.
 
 +++
+
++++**Will data need to be reingested to switch from field-based stitching to graph-based stitching?**
+Data does not have to be reingested into Experience Platform, however it will need to be reconfigured in Customer Journey Analytics. Please follow these steps:
+
+1. Setup the new graph-based stitched dataset. 
+1. Configure the new dataset as part of a new connection in Customer Journey Analytics. 
+1. Switch your existing Data View to use the new connection (and as such the new graph-based stiched dataset
+1. Remove the old connection that was using the field-based stitched dataset.
+
++++
+
++++**Would there be any disruption to existing reports?** 
+
+Not if you follow the steps outlined above. Otherwise, please ask Adobe Consulting for additional support.
+
++++
+
+

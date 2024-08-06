@@ -29,7 +29,11 @@ For overview information about the types of components you can add, see [Compone
 
 1. Scroll to or search for the component you want to add, then drag it to a panel or visualization within your project. 
 
-   For example, you can drag a filter to the filter drop zone in a panel header.
+1. (Optional) Drag a component to the filter drop zone in a panel header. 
+
+   Filters apply to all content within the panel.
+
+   For information about how you can use the filter drop zone on a panel to filter your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
 
    ![drop a filter in the drop zone](assets/filter-dropzone.png)
 
@@ -39,7 +43,7 @@ For overview information about the types of components you can add, see [Compone
 
    * [Add metrics to a project](#add-metrics-to-a-project)
 
-   * [Add filter to a project](#add-filters-to-a-project)
+   * [Add filters to a project](#add-filters-to-a-project)
 
    * [Add date ranges to a project](#add-date-ranges-to-a-project)
 
@@ -56,6 +60,10 @@ For overview information about the types of components you can add, see [Compone
      ![Add dimensions to a project](assets/add-dimensions.png)
    
    * Drag one or more dimensions from the left rail onto the filter drop zone to create an ad hoc filter, as described in [Add filters to a project](#add-filters-to-a-project).
+
+1. (Optional) You can break down dimensions and dimension items in Analysis Workspace with other components. 
+
+   For more information, see [Break down dimensions in Workspace](/help/components/dimensions/t-breakdown-fa.md).
 
 For more information about how to use dimensions in Analysis Workspace, see [Preview dimensions](/help/components/dimensions/view-dimensions.md), [Break down dimensions](/help/components/dimensions/t-breakdown-fa.md), and [Time-parting dimensions](/help/components/dimensions/time-parting-dimensions.md).
 
@@ -85,31 +93,23 @@ For more information about metrics, see [Calculated metrics overview](/help/comp
 
 [Filters](/help/components/filters/filters-overview.md) allow you to identify subsets of visitors based on characteristics or specific interactions.
 
-To add a filter to a project in Analysis Workspace:
+You can use filters in Analysis Workspace in any of the following ways:
 
-1. Start adding a filter to your project in Analysis Workspace, as described in [Begin adding components to a project](#begin-adding-components-to-a-project).
+### Add filters to a panel
 
-1. Choose one of the following methods to begin filtering your panel:
+When you add filters to a panel, the filters apply to all content within the panel.
 
-   * Drag an individual filter from the left rail onto the filter drop zone.
+For information about how you can use the filter drop zone on a panel to filter your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
 
-     ![drop a filter in the drop zone](assets/filter-dropzone.png)
+### Add filters to a column in a freeform table
 
-   * Hold the Shift or Ctrl key to select multiple filters in the left rail, then hold the Shift key as you drop them onto the filter drop zone.
+When you add filters to a column in a freeform table, the filters apply to all content within the table column.
 
-     ![drop multiple filters in the drop zone](assets/filter-dropzone-multiple.png)
+### Use filters when creating calculated metrics
 
-     This creates a drop-down menu, which allows users of the panel to choose the filter they want to apply. The drop-down menu contains a [!UICONTROL **No filter**] option that users can select, which leaves the panel unfiltered. 
-     
-     You can select the (x) to remove any option from the drop-down menu. If you remove the [!UICONTROL **No filter**] option, then a filter is required.
+In the Calculated metric builder, you can apply filters within your metric definition. 
 
-   * Create ad hoc filters by dragging non-filter components onto the drop zone. This can save you the time and effort of going to the Filter Builder. Filters created in this way are automatically defined as hit-level filters. This definition can be modified by clicking the information icon (i) next to the filter, then the pencil-shaped edit icon and editing it in the Filter Builder.
-
-     Ad hoc filters are a type of quick filter, and are local to the project. They do not show up in the left rail unless you make them public.
-
-     For more information, see [Quick filters](/help/components/filters/quick-filters.md).
-
-For more information about how you can use the filter drop zone on a panel to filter your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
+For more information, see [Filtered metrics](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md).
 
 ## Add date ranges to a project
 

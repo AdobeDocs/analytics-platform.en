@@ -17,6 +17,11 @@ This transformation is only available for datasets with data for B2B lookup sche
 * [XDM Business Marketing List Members](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
 * [XDM Business Campaign Members](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
+>[!NOTE]
+>
+>There is a limit of no more than 10,000 items for each id. This limitation implies that for any given person id you can only have 10,000 accounts, or 10,000 opportunities, or 10,000 marketing lists, or 10,000 campaigns.
+
+
 To enable transformation for such a dataset:
 
 ![Enable transform dataset](assets/transform-dataset.gif)
@@ -38,12 +43,12 @@ To enable transformation for one or more datasets that are already part of an ex
 
 1. Remove the datasets from the connection.
 1. Save the connection.
-1. Add the datasets to the connection while turning on transformation for the datasets
+1. Add the datasets to the connection while turning on transformation for the datasets.
 
 ## Background information
 
 Non-transformed datasets, for schemas based on the four schema classes mentioned above, can contain multiple rows for a single person identifier. Person-based lookups only match the most recent occurrence of that person identifier, preventing a proper person id based lookup of accounts, opportunities, marketing lists or campaigns.
 
-The transformation modifies the dataset of each of the four schema classes (orange in the illustration below) so that for each person identifier an (object) array is created for the relevant data (accounts, opportunities, marketing lists or campaigns) in the lookup datasets (pink in the illustration below). This transformation allows for a  correct working of person id based lookups.
+The transformation modifies the dataset of each of the four schema classes (orange in the illustration below) so that for each person identifier an (object) array is created for the relevant data (accounts, opportunities, marketing lists or campaigns) in the lookup datasets (pink in the illustration below). This transformation allows for a correct working of person id based lookups.
 
 ![B2B schemas](./assets/b2b-schemas.svg)
