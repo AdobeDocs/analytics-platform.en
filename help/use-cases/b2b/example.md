@@ -87,7 +87,6 @@ You can add the following components as dimensions to your dataview to ensure yo
 | Opportunity | B2B Opportunity Person | String | `opportunityKey.sourceID` |
 
 
-<!--
 This section provides recommendations and suggestions on what dimensions and metrics to include when defining the [components](../../data-views/create-dataview.md#components) for B2B datasets in your data view.
 
 For each component, the name, schema type, schema path, and (when applicable) details about the configuration are provided.
