@@ -14,7 +14,7 @@ See [Journey canvas overview](/help/analysis-workspace/visualizations/journey-ca
 
 * Key features
 
-* Choosing between Journey canvas and Fallout
+* Differences between Journey canvas and Fallout
 
 * Details about analyzing Journey Optimizer journeys
 
