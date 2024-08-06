@@ -37,7 +37,7 @@ Define your connection to include all relevant B2B datasets from Experience Plat
 -->
 
 
-The relationship between the B2B lookup schemas, profile schema, and event schema is defined in the B2B setup within Experience Platform. See Schemas in [Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) and [Define a many-to-one relationship between two schemas in Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html).
+The relationship between the B2B lookup schemas, profile schema, and event schema is defined in the B2B setup within Experience Platform. See Schemas in [Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) and [Define a many-to-one relationship between two schemas in Real-Time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
 
 
 To ensure a proper setup of a connection that supports person-based lookups of your B2B data, use the following illustration for an overview and follow these steps:
@@ -46,7 +46,7 @@ To ensure a proper setup of a connection that supports person-based lookups of y
 
 1. Add datasets from the table above to your connection.
 1. For each lookup dataset that you add to your connection, you must explicitly define the relationship to an event dataset using the **[!UICONTROL Key]** and the **[!UICONTROL Matching key]** in the **[!UICONTROL Edit dataset]** dialog. 
-1. For each lookup dataset that you want to transform for person-based B2B lookups, enable **[!UICONTROL Transform dataset]** to ensure thatthe data is transformed for person-based lookups. See [Transform datasets for B2B lookups](/help/connections/transform-datasets-b2b-lookups.md) for additional information.
+1. For each lookup dataset that you want to transform for person-based B2B lookups, enable **[!UICONTROL Transform dataset]** to ensure that the data is transformed for person-based lookups. See [Transform datasets for B2B lookups](/help/connections/transform-datasets-b2b-lookups.md) for additional information.
 
    ![Key - Matching key](assets/key-matchingkey.png)
 
@@ -111,7 +111,7 @@ You can, for example, add the following components to your data view to ensure y
 
 ## Workspace
 
-With your components properly defined in the dataview, you can now build specific B2B reports and visualizations in your Workspace project.
+With your components properly defined in the data view, you can now build specific B2B reports and visualizations in your Workspace project.
 
 Below is a screenshot from an example project that relies on the connection and data view described above. The visualization descriptions explain which of the freeform table visualization relies on the transformed B2B lookup data. 
 
