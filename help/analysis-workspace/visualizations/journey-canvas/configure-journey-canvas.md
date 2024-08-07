@@ -40,19 +40,95 @@ See [Journey canvas overview](/help/analysis-workspace/visualizations/journey-ca
 
    | Field | Function | 
    |---------|----------|
-   | [!UICONTROL **Journey canvas container**] | Choose the metric that you want to focus on throughout the journey. The metric that you choose determines the statistics that are displayed in the visualization. (If your metric or container names differ from the default names shown below, they were customized in your data view.)<ul><li>**People:** The journey focuses on the interactions of unique users over each user's lifetime, within the reporting date range.</li><li>**Sessions:** The journey focuses on the interactions of unique users within a defined session time period. By default, the timeout period of a session is 30 minutes. This timeout period can be modified in the data view settings.</li></ul> | 
+   | [!UICONTROL **Journey canvas container**] | Choose the container that you want to focus on throughout the journey. The container that you choose determines the statistics that are displayed in the visualization. (If your container names differ from the default names shown below, they were customized in your data view.)<ul><li>**Sessions:** Constrains the statistics of the visualization to fall within a single defined session for a given user. This means that the numbers and percentages that appear on each node (that are based on the primary and secondary metrics) must occur within a single session for each user.</li><li>**People:** Allows the statistics of the visualization to span multiple sessions for a given user. This means that the numbers and percentages that appear on each node (that are based on the primary and secondary metrics) can occur across any number of sessions, as long as the sessions belong to the same user. This is the default setting.</li></ul> | 
 
 1. Select [!UICONTROL **Build**].
 
-   If you have Journey Optimizer and you selected a Journey Optimizer journey, the journey is displayed with the same order, sequence, and structure as it has in Journey Optimizer. For more information, see [Analyze Journey Optimizer journeys](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys) in [Journey canvas overview](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
+   If you have Journey Optimizer and you selected a Journey Optimizer journey, the journey is displayed with the same order, sequence, and structure as it has in Journey Optimizer. 
 
-   If you do not have Journey Optimizer or if you didn't select a Journey Optimizer journey, a blank canvas displays where you can begin populating the journey, as described in [Configure a journey](#configure-a-journey).
+   <!-- add screen shot -->
+
+   If you do not have Journey Optimizer or if you didn't select a Journey Optimizer journey, a blank canvas displays where you can begin populating the journey.
+
+   <!-- add screen shot -->
+
+1. Whether you are creating a new analysis from a blank canvas or you are are analyzing a Journey Optimizer journey, you can configure the journey as described in [Configure a journey canvas visualization](#begin-building-a-journey-canvas-visualization). 
 
 
-## Configure a journey
+## Configure a journey canvas visualization
+
+You need to [begin building a Journey canvas visualization](#begin-building-a-journey-canvas-visualization) before you can configure it as described in the following sections. 
+
+### Configure settings
+
+1. In Analysis Workspace, open an existing Journey canvas visualization, or [begin building a new one](#begin-building-a-journey-canvas-visualization).
+
+1. Configure any of the following settings that are displayed across the top of the visualization:
+
+   | Setting | Function | 
+   |---------|----------|
+   | [!UICONTROL **Node type**] | Allows you to configure which node types are shown in the visualization. To hide a node type from the visualization, select the (x) next to the node type, or deselect it from the drop-down menu. To show a hidden node type, select it from the drop-down menu. <p>Depending on the contents of your visualization, possible node types include:</p><ul><li>[!UICONTROL **Read segment**]</li><li>[!UICONTROL **End**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Metric**]</li></ul>  | 
+   | [!UICONTROL **Percentage value**] | B2 | 
+   | [!UICONTROL **Arrow settings**] | <p>**Note**: This option displays only when Journey Optimizer data is detected in the same data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).</p>  |
+   | [!UICONTROL **Show fallout**] | B3 |
+
+### Add a node
+
+Nodes in a Journey canvas visualization represent the events or actions of a user journey. You create nodes by dragging Workspace components from the left rail to the canvas.
+
+Nodes display as a rectangular box with the following information:
+
+* The component name
+
+* Primary metric statistics (total and percent)
+
+* Secondary metric statistics (total and percent) 
+
+To add a node to a Journey canvas visualization:
+
+1. In Analysis Workspace, open an existing Journey canvas visualization, or [begin building a new one](#begin-building-a-journey-canvas-visualization).
+
+1. Drag a metric, dimension, or dimension item from the left rail onto the canvas. 
+
+   The visualization is updated as follows, depending on the area of the canvas where you place the component: 
+   
+   | Placement of component | Visualization updates | 
+   |---------|----------|
+   | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. | 
+   | An existing node | Components automatically combine to form a new node with the same OR/AND logic as fallout. |
+   | An arrow that connects 2 existing nodes | Adds the node as a new node between the two existing nodes. | 
+   | The edge of an existing node | Adds the node as a new node between the two existing nodes. |
 
 
 
+### Manage existing nodes
+
+1. In Analysis Workspace, open an existing Journey canvas visualization, or [begin building a new one](#begin-building-a-journey-canvas-visualization).
+
+1. Right-click an **individual node** on the canvas, then select any of the following options:
+   
+   | Option | Function | 
+   |---------|----------|
+   | [!UICONTROL **Create segment**] | B1 |
+   | [!UICONTROL **Publish audience**] | B2 |
+   | [!UICONTROL **Trend**] | B3 | 
+   | [!UICONTROL **Breakdown**] | B2 |
+   | [!UICONTROL **Get top next ...**] | B2 |
+   | [!UICONTROL **Change color**] | B2 |
+   | [!UICONTROL **Rename**] | B2 |
+   | [!UICONTROL **Delete**] | B2 |
+
+1. Select **multiple nodes** on the canvas, right-click one of the selected nodes, then select any of the following options:
+
+   | Option | Function | 
+   |---------|----------|
+   | [!UICONTROL **Combine**] | B1 |
+   | [!UICONTROL **Delete**] | B2 |
+   | [!UICONTROL **Duplicate**] | B3 | 
+   | [!UICONTROL **Trend**] | B2 |
+   | [!UICONTROL **Breakdown**] | B2 |
+   | [!UICONTROL **Create segment**] | B2 |
+   | [!UICONTROL **Publish audience**] | B2 |
 
 
 ## Open a journey from Journey Optimizer
