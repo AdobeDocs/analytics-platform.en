@@ -40,7 +40,7 @@ See [Journey canvas overview](/help/analysis-workspace/visualizations/journey-ca
 
    | Field | Function | 
    |---------|----------|
-   | [!UICONTROL **Journey canvas container**] | Select from the following options: <ul><li>[!UICONTROL **Session**]: </li><li>[!UICONTROL **People**]: <p>This option is selected by default.</p></li></ul> | 
+   | [!UICONTROL **Journey canvas container**] | Choose the metric that you want to focus on throughout the journey. The metric that you choose determines the statistics that are displayed in the visualization. (If your metric or container names differ from the default names shown below, they were customized in your data view.)<ul><li>**People:** The journey focuses on the interactions of unique users over each user's lifetime, within the reporting date range.</li><li>**Sessions:** The journey focuses on the interactions of unique users within a defined session time period. By default, the timeout period of a session is 30 minutes. This timeout period can be modified in the data view settings.</li></ul> | 
 
 1. Select [!UICONTROL **Build**].
 
