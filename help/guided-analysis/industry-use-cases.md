@@ -8,7 +8,7 @@ role: User
 ---
 # Industry use cases
 
-This page provides some illustrative examples of what product teams across various industries can accomplish with guided analysis.
+This page provides some illustrative industry examples of what customer experience teams, from analysts to product teams to marketers, can accomplish with guided analysis.
 
 +++**Retail**
 

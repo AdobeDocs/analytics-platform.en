@@ -39,7 +39,7 @@ As part of configuring a connection, you can transform datasets for specific B2B
 
 >[!TAB Derived fields] 
 
-New derived field functions (Math, Next or Previous, Summarize) and additional function templates (like Bounces, Friendly Dataset Name, Holiday Season, Monthly Goals, Simple Bot Detection, and others) are now available.. 
+New derived field functions (Math, Next or Previous, Summarize, Deduplicate) and additional function templates (like Bounces, Friendly Dataset Name, Holiday Season, Monthly Goals, Simple Bot Detection, and others) are now available.. 
 
 [![image](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 

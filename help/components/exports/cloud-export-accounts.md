@@ -38,9 +38,7 @@ For information about how to manage existing accounts, including viewing, editin
    
    * Shared accounts can be edited only by the owner of the account.
    
-   * Anyone can create a location for the shared account.
-
-   **Note:** This functionality is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md). 
+   * Anyone can create a location for the shared account. 
 
 1. In the [!UICONTROL **Account type**] field, select the type of cloud account you are exporting to. Available account types are Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake, and AEP Data Landing Zone.
 
