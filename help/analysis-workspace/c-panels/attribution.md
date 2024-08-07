@@ -35,7 +35,7 @@ Customer Journey Analytics enhances attribution by letting you:
 
 ## Create an attribution panel
 
-1. See [Create a panel](panels.md#create-a-panel) how to create an attribution panel.
+1. Create an attribution panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).
 
 1. Add a metric that you want to attribute and add any dimension to attribute against. Examples include Marketing Channels or custom dimensions, such as internal promotions.
 
