@@ -52,10 +52,10 @@ See [Journey canvas overview](/help/analysis-workspace/visualizations/journey-ca
 
    <!-- add screen shot -->
 
-1. Whether you are creating a new analysis from a blank canvas or you are are analyzing a Journey Optimizer journey, you can configure the journey as described in [Configure a journey canvas visualization](#begin-building-a-journey-canvas-visualization). 
+1. Whether you are creating a new analysis from a blank canvas or you are are analyzing a Journey Optimizer journey, you can configure the journey as described in [Configure a Journey canvas visualization](#begin-building-a-journey-canvas-visualization). 
 
 
-## Configure a journey canvas visualization
+## Configure a Journey canvas visualization
 
 You need to [begin building a Journey canvas visualization](#begin-building-a-journey-canvas-visualization) before you can configure it as described in the following sections. 
 
@@ -78,7 +78,9 @@ Nodes in a Journey canvas visualization represent the events or actions of a use
 
 Nodes display as a rectangular box with the following information:
 
-* The component name
+* Component name
+
+* The component type (such as metric or dimension)
 
 * Primary metric statistics (total and percent)
 
@@ -96,10 +98,20 @@ To add a node to a Journey canvas visualization:
    |---------|----------|
    | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. | 
    | An existing node | Components automatically combine to form a new node with the same OR/AND logic as fallout. |
-   | An arrow that connects 2 existing nodes | Adds the node as a new node between the two existing nodes. | 
-   | The edge of an existing node | Adds the node as a new node between the two existing nodes. |
+   | An arrow that connects 2 existing nodes | The node displays between the two existing nodes where it was dropped and is connected to both existing nodes. <p>See [Connect nodes](#connect-nodes) for more information.</p> | 
+   | The edge of an existing node | The node displays next to the node where it was dropped and is connected to it. <p>See [Connect nodes](#connect-nodes) for more information.</p> |
 
+### Connect nodes
 
+The connection between nodes in Journey canvas determines the sequence of events in the journey. 
+
+To connect nodes in Journey canvas:
+
+1. Select either of the 2 nodes that you want to connect. 
+
+1. Select any of the 4 blue dots that appear on each side of the node.
+
+1. Drag the dot to any of the 4 sides of the node that you want to connect to. 
 
 ### Manage existing nodes
 
