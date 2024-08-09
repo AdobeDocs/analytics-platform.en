@@ -29,7 +29,7 @@ This visualization addresses a variety of common use cases, including:
 
 1. Add the key metric visualization. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
-1. Configure the visualization by selecting a **[!UICONTROL Metric]**, a **[!UICONTROL Primary date range]**, a **[!UICONTROL Comparison date range]** (optional) and a Filter (optional):
+1. Configure the visualization by selecting a **[!UICONTROL Metric]**, a **[!UICONTROL Primary date range]**, a **[!UICONTROL Comparison date range]** (optional) and a **[!UICONTROL Filter]** (optional):
 
    ![Key metric configuration showing the options for metric, primary date range, comparison date range, and segment.](assets/key-metrics-config.png)
 

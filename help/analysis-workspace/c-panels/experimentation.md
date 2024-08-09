@@ -19,13 +19,17 @@ The Experimentation panel is available to use by all Customer Journey Analytics 
 
 Two new advanced functions were added: [!UICONTROL Lift] and [!UICONTROL Confidence]. For more information, see [Reference - advanced functions](/help/components/calc-metrics/cm-adv-functions.md).
 
-## Step 1: Create connection to experiment dataset/s {#connection}
+## Use
+
+To use the experimentation panel, follow these steps:
+
+### Step 1: Create connection to experiment dataset/s {#connection}
 
 The recommended data schema is for the experiment data to be in an [Object array](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) that contains the experiment and variant data in two separate dimensions. Both dimensions need to be in a **single** object array. If you have your experiment data in a single dimension (with experiment and variant data in a delimited string), you can use the [substring](/help/data-views/component-settings/substring.md) setting in data views to split the dimension into two for use in the panel.
 
 After your experiment data has been [ingested](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) into Adobe Experience Platform, [create a connection in Customer Journey Analytics](/help/connections/create-connection.md) to one or more experiment dataset/s.
 
-## Step 2: Add context labels in data views {#context-labels}
+### Step 2: Add context labels in data views {#context-labels}
 
 In Customer Journey Analytics data views settings, admins can add [context labels](/help/data-views/component-settings/overview.md) to a dimension or metric and Customer Journey Analytics services like [!UICONTROL Experimentation] panel can use these labels for their purposes. Two pre-defined labels are used for the Experimentation panel:
 
@@ -38,7 +42,7 @@ In your data view that contains experimentation data, pick two dimension, one wi
 
 Without these labels present, the Experiment panel does not work, since there are no experiments to work with.
 
-## Step 3: Configure the Experiment panel {#configure}
+### Step 3: Configure the Experiment panel {#configure}
 
 1. In Customer Journey Analytics Workspace, drag the Experimentation panel into a project.
 
@@ -61,7 +65,7 @@ Without these labels present, the Experiment panel does not work, since there ar
 
 1. Click **[!UICONTROL Build]**.
 
-## Step 4: View the panel output {#view}
+### Step 4: View the panel output {#view}
 
 The Experimentation panel returns a rich set of data and visualizations to help you better understand how your experiments are performing. At the top of the panel, a summary line is provided to remind you of the panel settings you selected. At any time, you can edit the panel by clicking the edit pencil at the top right.
 
@@ -79,17 +83,17 @@ The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTRO
 >
 >This panel currently does not support analysis of A/A tests.
 
-## Step 5: Interpret the results {#interpret}
+### Step 5: Interpret the results {#interpret}
 
-1. **Experiment is conclusive**: Every time you view the experimentation report, the data that has accumulated in the experiment up to this point is analyzed. And declares an experiment to be conclusive when the anytime valid confidence crosses a threshold of 95% for *at least one* of the variants (with a Benjamini-Hochberg correction applied when there are more than two arms, to correct for multiple hypothesis testing).  
+1. **Experiment is conclusive**: Every time you view the experimentation report, the data that has accumulated in the experiment up to this point is analyzed. The analysis declares an experiment to be conclusive when the anytime valid confidence crosses a threshold of 95% for *at least one* of the variants. With more than two arms, a Benjamini-Hochberg correction is applied to correct for multiple hypothesis testing.  
 
 2. **Best performing variant**: When an experiment is declared to be conclusive, the variant with the highest conversion rate is labeled as the best performing variant. Note that this variant must either be the control or baseline variant, or one of the variants that crosses the 95% anytime valid confidence threshold (with Benjamini-Hochberg corrections applied).
 
 3. **Conversion rate**: The conversion rate that is shown is a ratio of the success metric value to the normalizing metric value. Note that this value may sometimes be larger than 1, if the metric is not binary (1 or 0 for each unit in the experiment)
 
-4. **Lift**: The Experiment report summary shows the Lift over Baseline, which is a measure of the percentage improvement in conversion rate of a given variant over the baseline. Defined precisely, it is the difference in performance between a given variant and the baseline, divided by the performance of the baseline, expressed as a percentage.
+4. **Lift**: The Experiment report summary shows the Lift over Baseline, which is a measure of the percentage improvement in the conversion rate of a given variant over the baseline. Defined precisely, it is the difference in performance between a given variant and the baseline, divided by the performance of the baseline, expressed as a percentage.
 
-5. **Confidence**: The anytime valid confidence that is shown is a probabilistic measure of how much evidence there is that a given variant is the same as the control variant. A higher confidence indicates less evidence for the assumption that control and non-control variant have equal performance. More precisely, the confidence that is displayed is a probability (expressed as a percentage) that you would have observed a smaller difference in conversion rates between a given variant and the control, if in reality there is no difference in the true underlying conversion rates. In terms of *p*-values, the confidence displayed is 1 - *p*-value.
+5. **Confidence**: The anytime valid confidence that is shown is a probabilistic measure of how much evidence there is that a given variant is the same as the control variant. A higher confidence indicates less evidence for the assumption that control and non-control variant have equal performance. The confidence is a probability (expressed as a percentage) that you would have observed a smaller difference in conversion rates between a given variant and the control. While in reality there is no difference in the true underlying conversion rates. In terms of *p*-values, the confidence displayed is 1 - *p*-value.
 
 >[!NOTE]
 >
@@ -99,7 +103,7 @@ The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTRO
 
 To provide easily interpretable and safe statistical inference, Adobe has adopted a statistical methodology based on [Anytime Valid Confidence Sequences](https://arxiv.org/abs/2103.06476).
 
-A confidence sequence is a *sequential* analog of a confidence interval. To understand what a confidence sequence is, imagine repeating your experiments one hundred times, and calculating an estimate of the mean business metric (for example open rate of an email) and its associated 95%-confidence sequence for *every new user* that enters the experiment.
+A confidence sequence is a *sequential* analog of a confidence interval. To understand what a confidence sequence is, imagine you repeat your experiments one hundred times. And calculate an estimate of the mean business metric (for example the open rate of an email) and its associated 95%-confidence sequence for *every new user* that enters the experiment.
 
 A 95% confidence sequence includes the "true" value of the business metric in 95 out of the 100 experiments that you ran. (A 95% confidence interval could only be calculated once per experiment to give the same 95% coverage guarantee; not with every single new user). Confidence sequences therefore allow you to monitor experiments continuously, without increasing false positive error rates, that is, they allow "peeking" at results.
 
@@ -107,13 +111,13 @@ A 95% confidence sequence includes the "true" value of the business metric in 95
 
 Customer Journey Analytics allows analysts to select any dimension as the experiment. But how do you interpret an analysis where the dimension chosen as the experiment is not one for which persons are randomized?
 
-For example, consider an ad that a person sees. You may be interested in measuring the change in some metric (for example, average revenue) if you decide to show persons *ad B* instead of *ad A*. The causal effect of showing ad B in place of ad A is of central importance in arriving at the marketing decision. This causal effect may be measured as the average revenue over the whole population, if you replaced the status quo of showing ad A with the alternate strategy of showing ad B. 
+For example, consider an ad that a person sees. You may be interested in measuring the change in some metric (for example, average revenue) if you decide to show persons *ad B* instead of *ad A*. The causal effect of showing ad B, instead of ad A, is of central importance in arriving at the marketing decision. This causal effect may be measured as the average revenue over the whole population, if you replaced the status quo of showing ad A with the alternate strategy of showing ad B. 
 
 A/B testing is the gold standard within the industry for objectively measuring the effects of such interventions. The critical reason why an A/B test gives rise to a causal estimate is due to the randomization of persons to receive one of the possible variants. 
 
 Now, consider a dimension that is not achieved by randomization, for example, the US state of the person. Let's say that persons primarily come from two states, New York and California. The average revenue of sales of a winter clothing brand can be different in the two states due to the differences in the regional weather. In such a situation, the weather may be the true causal factor behind winter clothing sales, and not the fact that the geographical states of persons are different.
 
-The experimentation panel in Customer Journey Analytics lets you analyze data as average revenue difference by states of the persons. In such a situation, the output does not have a causal interpretation. However, such an analysis may still be of interest. It provides an estimate (along with measures of uncertainty) of the difference in average revenue by states of the persons.  This value is also referred to as "Statistical Hypothesis Testing". The output of this analysis may be interesting, but not necessarily actionable, since you have not and sometimes cannot randomize persons to one of the possible values of the dimension. 
+The experimentation panel in Customer Journey Analytics lets you analyze data as average revenue difference by states of the persons. In such a situation, the output does not have a causal interpretation. However, such an analysis may still be of interest. It provides an estimate (along with measures of uncertainty) of the difference in average revenue by states of the persons.  This value is also referred to as *Statistical Hypothesis Testing*. The output of this analysis may be interesting, but not necessarily actionable. Simply because you have not randomized and sometimes cannot randomize persons to one of the possible values of the dimension. 
 
 The following illustration contrasts these situations:
 

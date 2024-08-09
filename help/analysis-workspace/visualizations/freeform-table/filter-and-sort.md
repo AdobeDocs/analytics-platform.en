@@ -35,7 +35,7 @@ You can quickly exclude specific rows from the table without the need to use ![F
 
 >[!NOTE]
 >
->When you exclude rows as described in this section, an [!UICONTROL **Always exclude items**] rule is applied automatically in the Advanced filter dialog. (You can view the applied rule by selecting the Filter icon, then [**[!UICONTROL Show advanced]**](#apply-a-simple-or-advanced-filter-to-a-table).)
+>When you exclude rows as described in this section, an [!UICONTROL Always exclude items] rule is added automatically in the [!UICONTROL Advanced] filter dialog. You can view the applied rule by selecting the ![Filter](/help/assets/icons/Filter.svg) Filter icon, then [**[!UICONTROL Show advanced]**](#apply-a-simple-or-advanced-filter-to-a-table).
 
 To exclude specific rows from a Freeform table:
 

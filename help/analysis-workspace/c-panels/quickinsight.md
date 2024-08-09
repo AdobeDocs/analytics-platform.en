@@ -9,9 +9,15 @@ role: User
 
 [!UICONTROL Quick Insights] provides guidance for non-analysts and new users of [!UICONTROL Analysis Workspace] to learn how to answer business questions quickly and easily. It is also a great tool for advanced users who want to answer a simple question quickly without having to build a table themselves.
 
-When you first start using this [!UICONTROL Analysis Workspace], you might wonder what visualizations would be most useful, which dimensions and metrics might facilitate insights, where to drag and drop items, where to create a filter, and more. 
+When you first start using this [!UICONTROL Analysis Workspace], you might wonder:
 
-To help with these questions, and based on your own company's usage of data components in [!UICONTROL Analysis Workspace], [!UICONTROL Quick Insights] leverages an algorithm that presents you with the most popular dimensions, metrics, filters, and date ranges your company uses. In fact, you see dimensions, metrics, and filters tagged as [!UICONTROL Popular] in the drop-down list, as shown here:
+* what visualizations would be most useful, 
+* which dimensions and metrics might facilitate insights, 
+* where to drag and drop items, 
+* where to create a filter, 
+* and more. 
+
+To help with these questions,[!UICONTROL Quick Insights] leverages an algorithm that presents you with the most popular dimensions, metrics, filters, and date ranges your company uses. This algorithm is based on your own company's usage of data components in [!UICONTROL Analysis Workspace]. In fact, you see dimensions, metrics, and filter tagged with [!UICONTROL POPULAR] in the drop-down list, as shown here:
 
 ![The Quick Insights panel.](assets/popular-tag.png)
 
@@ -28,11 +34,11 @@ The following are some of the basic terms that you need to be familiar with. Eac
 
 |Building block (Component)|Definition|
 |---|---|
-|[!UICONTROL Dimension]|Dimensions are descriptions or characteristics of metric data that can be viewed, broken down, and compared in a project. They are non-numeric values and dates that break down into dimension items. For example, "browser", or "page" are dimensions.|
+|[!UICONTROL Dimension]|Dimensions are descriptions or characteristics of metric data that can be viewed, broken down, and compared in a project. They are non-numeric values and dates that break down into dimension items. For example, *browser* or *page* are dimensions.|
 |[!UICONTROL Dimension item]|Dimension items are individual values for a dimension. For example, dimension items for the browser dimension would be *Chrome*, *Firefox*, *Edge*, or others.|
 |[!UICONTROL Metric]|Metrics are quantitative information about person activity, such as views, click-throughs, reloads, average time spent, units, orders, revenue, and so on.|
 |[!UICONTROL Visualization]|Workspace offers [a number of visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to build visual representations of your data. Such as bar charts, donut charts, histograms, line charts, maps, scatterplots, and others.|
-|[!UICONTROL Dimension Breakdown]|A dimension breakdown is a way to break down a dimension by other dimensions. In the example, you could break down US States by Mobile Devices to get the mobile device visits per state, or you could break Mobile Devices down by Mobile Device types, by Regions, by Internal Campaigns, and more.|
+|[!UICONTROL Dimension Breakdown]|A dimension breakdown is a way to break down a dimension by other dimensions. For example, you could break down the US States by Mobile Devices to get the mobile device visits per state. Or you could break Mobile Devices down by Mobile Device types, by Regions, by Internal Campaigns, and more.|
 |[!UICONTROL Filter]| Filters let you identify subsets of persons based on characteristics or website interactions. For example, you can build [!UICONTROL People] filters based on <li>attributes: browser type, device, number of visits, country, gender, or</li><li>interactions: campaigns, keyword search, search engine, or</li><li>exits and entries: persons from Facebook, a defined landing page, referring domain, or</li><li> custom variables: form field, defined categories, customer ID.  |
 
 ## Get started with Quick Insights
@@ -54,7 +60,7 @@ The following are some of the basic terms that you need to be familiar with. Eac
     * If you know what you are looking for: Start typing and [!UICONTROL Quick Insights] populates the blanks for you.
     * Click on the drop-down and search the list.
 
-1. When you have added at least one dimension and one metric, the following will be created for you:
+1. When you have added at least one dimension and one metric, the following visualizations are created for you:
 
     * A Freeform table with the dimension (here, US States) vertically and the metric (here, Visits) horizontally at the top. Check out this table: 
 

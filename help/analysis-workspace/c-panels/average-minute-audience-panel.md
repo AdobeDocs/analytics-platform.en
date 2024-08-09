@@ -13,7 +13,7 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 >
 >Contact your Adobe Sales Representative or Adobe Account Team to purchase the Streaming Media Collection Add-on. 
 
-In Analysis Workspace, average minute audience is the time spent viewing your media stream, divided by the duration of the content or the total selection of the period and selected granularity.
+In Analysis Workspace, the average minute audience is the time spent viewing your media stream divided by the duration of the content or the total selection of the period and selected granularity.
 
 The Media average minute audience panel enables you to understand average consumption of your content by comparing programs of any length or genre. For example, you can understand average consumption when comparing a 30-minute sitcom with a 3-hour sporting event.
 
@@ -25,7 +25,7 @@ The Media average minute audience panel provides the following benefits over the
 
 * Allows for updating the duration classification after views are processed (if the duration classification was not present or needs to be corrected)
 
-  If you do this update when using the metric, the duration classification does not exist (if the classification wasn't present) or the duration classification is out of date (if the classification was present but incorrect).
+  If you do this update when using the metric, the duration classification does not exist (if the classification wasn't present). Or the duration classification is out of date (if the classification was present but incorrect).
 
 ## Access the Media average minute audience panel
 
@@ -49,7 +49,7 @@ Use the input settings described in this section to configure the Media average 
    |---------|------------|
    | **Panel date range** | The panel date range default is [!UICONTROL **This month**]. You can edit it to view a single day or many months at a time. <br></br> This visualization is limited to 1440 rows of data (for example, 24-hours at minute-level granularity). If a date range and granularity combination results in more than 1440 rows, the granularity is automatically updated to accommodate the full date range. |
    | [!UICONTROL **Drop a segment here (or any other component)**] | Like other panels, this setting filters your selections based on segments you've created. This setting is a great way to look at specific platforms, live streams, or other common media segments. |
-   | [!UICONTROL **Calculate metric for**] | Choose whether you want to see the average minute audience for a specific piece of content. Or if you want to see the average minute audience for a custom period of time:<ul><li>**Specific content:** This metric is available only if the duration has been updated using Classifications. If the duration is unavailable, or if you want to view the average minute audience for a time series with multiple pieces of content or content without a specific assigned duration (like during a live stream or event), then you should select [!UICONTROL **Custom time period**]. (Durations can be set using Classifications either before or after processing time.)</li><li>**Custom time period:** This setting is available regardless of whether the durations is made available using Classifications.</li></ul> <p>This setting changes the workflow and report output.</p>  |
+   | [!UICONTROL **Calculate metric for**] | Choose whether you want to see the average minute audience for a specific piece of content. Or if you want to see the average minute audience for a custom period of time:<ul><li>**Specific content:** This metric is available only if the duration has been updated using Classifications. (Durations can be set using Classifications either before or after processing time.)</li><li>**Custom time period:** This setting is available regardless of whether the durations is made available using Classifications. Select [!UICONTROL **Custom time period**]: <ul><li>If the duration is unavailable, or </li><li>if you want to view the average minute audience for a time series with multiple pieces of content or</li><li>for content without a specific assigned duration (like during a live stream or event)</li></ul></li></li></ul> <p>This setting changes the workflow and report output.</p>  |
 
 1. Continue with [Specific content](#specific-content) or [Custom time period](#custom-time-period), depending on the option you chose in the [!UICONTROL **Calculate metric for**] drop-down menu.
 
@@ -59,7 +59,7 @@ Use the input settings described in this section to configure the Media average 
 
    | Setting | Description |
    |---------|------------|
-   | [!UICONTROL **Reporting dimension**] | When you select specific content, you can select the report output to use either the video name or content ID fields to show the content and its associated average minute audience for the selected time period. |
+   | [!UICONTROL **Reporting dimension**] | When you select specific content, you can select the report output to use either the video name or content ID fields to show the content and its associated average minute audience. |
    | [!UICONTROL **Filter content by (optional)**] | Choose how to filter the specific content, depending on the view you want or the way your data is structured. <ul>[!UICONTROL **Show, season, episode**]: Displays your available shows in the drop-down, which you can filter using a search (or by dragging and dropping the show name from the left column). You can end your selection there to see all the seasons of your show, or you can filter by individual seasons and then by individual episodes. This setting shows the data for those shows, seasons, or episodes for the selected time period.</li><li>[!UICONTROL **Custom dimension**]: If your show name is under a custom dimension, you can find it either by searching in the dimension (optional) drop-down or by using the left column search. The dimension item automatically populates based on that selection and is treated as an episode.</li><li>[!UICONTROL **None**]: Shows all the video names that have average minute audience data for the selection you've chosen. (This option is selected by default.)</li></ul>  |
 
 1. Continue with [Specific content advanced settings](#specific-content-advanced-settings) to configure advanced settings. 
