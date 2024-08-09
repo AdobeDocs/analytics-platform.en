@@ -456,11 +456,18 @@ To ensure you can report on the correct data in Workspace, you want to create a 
       1. Select the **[!UICONTROL Tracking Code (Event)]** dimension in the **[!UICONTROL Dimensions]** list. In the component panel:
          1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Enable **[!UICONTROL Create grouping]**.
-         1. Select **[!UICONTROL Campaign Id]** from the **[!UICONTROL Dimension]** dropdown list.
+         1. Select **[!UICONTROL Campaign Id]** from the **[!UICONTROL Dimension]** dropdown list. This step ensures event and summary data is properly combined for reporting.
+         1. You can optionally enable **[!UICONTROL Hide in reporting]**. This will ensure the selected dimension (Campaign Id) is hidden in Analysis Workspace and other CJA reporting tools. If you have enabled this option, you can verify this:
+            1. Select the **[!UICONTROL Campaign Id]** dimension in the **[!UICONTROL Dimensions]** list.
+            1. You will notice **[!UICONTROL Hide component in reporting]** in **[!UICONTROL Component settings]** is now automatically enabled.
 
       1. Select **[!UICONTROL Save and continue]**.
 
-1. In 
+   1. In the **[!UICONTROL Settings]** step of **[!UICONTROL Data views]**:
+      1. Leave all settings to their defaults.
+      1. Select **[!UICONTROL Save and finish.]**
+
+You have now set up your data view for proper reporting on summary data.
 
 
 ## Workspace
