@@ -13,7 +13,7 @@ We use the following sample summary data for this use case, showing summary data
 
 +++Summary data
 
-| _id | campaign_name | cost | impression | campagin_id | network | ad_group | timestamp |
+| _id | campaign_name | cost | impression | campaign_id | network | ad_group | timestamp |
 |---|---|---:|---:|---|---|---|---|
 | 1 | 123 Campaign | 100 | 5000 | abc123 | facebook | abc-adgroup | 2024-07-18T18:20:39.000Z |
 | 2 | 123 Campaign | 50 | 4000 | def123 | facebook | def-adgroup | 2024-07-18T18:20:39.000Z |
@@ -400,12 +400,67 @@ To use your sample data in Customer Journey Analytics, you create a connection t
 
 1. Back in  **[!UICONTROL Connections]** > **[!UICONTROL Example Connection using Summary Data]** connection, select **[!UICONTROL Save]** to save the connection. 
 
-The data from the datasets is added to Customer Journey Analytics. This takes some time.
+The data from the datasets is added to Customer Journey Analytics. This can take some time. 
 
+After a while, verify that data from your datasets is properly loaded in Customer Journey Analytics.
 
-## Dataview
+1. If not already in the Customer Journey Analytics UI, select **[!UICONTROL Customer Journey Analytics]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
+1. Select **[!UICONTROL Connections]** from the top menu.
+1. Select your connection, for example **[!UICONTROL Example Connection Using Summary Data]**.
+1. Select an appropriate data range in the **[!UICONTROL Connection]** > **[!UICONTROL Example Connection Using Summary data]** details.
+   1. Select ![Calendar](/help/assets/icons/Calendar.svg) and then select **[!UICONTROL Last 7 days]**.
+   1. Select **[!UICONTROL Apply]**.
 
-T.b.d.
+In the list of Datasets you should see numbers in the Records added column, confirming data from your datasets is now part of Customer Journey Analytics. 
+
+## Data view
+
+To ensure you can report on the correct data in Workspace, you want to create a data view containing the relevant metrics and dimensions.
+
+1. If not already in the Customer Journey Analytics UI, select **[!UICONTROL Customer Journey Analytics]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
+1. Select **[!UICONTROL Data views]** from the top menu.
+1. Select **[!UICONTROL Create new data view]**.
+1. In **[!UICONTROL Data views]**, go throught the wizard screens to configure your data view.
+   1. In the **[!UICONTROL Configure]** step of **[!UICONTROL Data views]**:
+      1. Select your connection from **[!UICONTROL Settings]** | **[!UICONTROL Connection]**. For example **[!UICONTROL Example Connection Using Summary Data]**.
+      1. Enter a **[!UICONTROL Name]** for your data view, for example `Example Data View Using Summary Data`.
+      1. Leave all other settings.
+      1. Select **[!UICONTROL Save and continue]**.
+   1. In the **[!UICONTROL Components]** step of **[!UICONTROL Data views]** > **[!UICONTROL Example Data View Using Summary Data]**:
+      1. Add the following components to the Dimensions and Metrics list. Note, that for clarity, the component names are modified from their default name, using **[!UICONTROL Component name]** in **[!UICONTROL Component settings]** in the component panel (at the right).
+
+         **Metrics**
+
+         | Component name | Dataset | Schema data type | Schema path |
+         |---|---|---|---|
+         | Cost | Example Summary Data Dataset | Double | *_tenant*.cost | 
+         | Impressions | Example Summary Data Dataset | Integer | *_tenant*.impression |
+         | Orders | Example Event Data Dataset | Integer | *_tenant*.orders |
+         | Revenue | Example Event Data Dataset | Double | *_tenant*.revenue_amount |
+
+         **Dimensions**
+
+         | Component name | Dataset | Schema data type | Schema path |
+         |---|---|---|---|
+         | Ad Group (Lookup) | Example Lookup Data Dataset | String | _aresstagevalidationco.ad_group |
+         | Ad Group (Summary) | Example Summary Data Dataset | String | _aresstagevalidationco.ad_group |
+         | Campaign Id | Exammpe Summary Data Dataset | String | _aresstagevalidationco.campaign_id |
+         | Campaign Name (Lookup) | Example Lookup Data Dataset | String | _aresstagevalidationco.campaign_name |
+         | Campaign Name (Summary) | Example Summary Data Dataset | String | _aresstagevalidationco.campaign_name |
+         | Network | Example Summary Data Dataset | String | _aresstagevalidationco.network |
+         | Page Name | Example Event Data Dataset | String | _aresstagevalidationco.page_name |
+         | Person Id | Example Event Data Dataset | String | _aresstagevalidationco.person_id |
+         | Tracking Code (Event) | Example Event Data Dataset | String | _aresstagevalidationco.tracking_code |
+         | Tracking Code (Lookup) | Example Lookup Data Dataset | String | _aresstagevalidationco.tracking_code |
+         
+      1. Select the **[!UICONTROL Tracking Code (Event)]** dimension in the **[!UICONTROL Dimensions]** list. In the component panel:
+         1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
+         1. Enable **[!UICONTROL Create grouping]**.
+         1. Select **[!UICONTROL Campaign Id]** from the **[!UICONTROL Dimension]** dropdown list.
+
+      1. Select **[!UICONTROL Save and continue]**.
+
+1. In 
 
 
 ## Workspace

@@ -49,7 +49,7 @@ Your on-site clickstream data contains the following events.
 
 ### Combined data
 
-As explained in [Combined event dataset](/help/connections/combined-dataset.md), when defining a connection, Customer Journey Analytics creates an overall combined event dataset. Summary data is considered an event dataset, and combined with the event data containing the clickstream data, the table below represents the combined dataset.
+As explained in [Combined event dataset](/help/connections/combined-dataset.md), when defining a connection, Customer Journey Analytics creates an overall combined event dataset. When you configure your data view for dimensions originating from a summary dataset, options are available to group and hide dimensions as a preparation for reporting in Workspace. Specifically for summary data, the summary data is combined with event data, based on the [summary data group component](component-settings/summary-data-group.md) configuration.
 
 | Tracking Code | Campaign Code | Impressions | Cost | Click-throughs | Revenue | 
 |---|---|--:|--:|--:|--:|
@@ -57,7 +57,7 @@ As explained in [Combined event dataset](/help/connections/combined-dataset.md),
 | def456 | def123 |775 | $650 | 775 | $1,250 |
 | ghi789 | ghi789 | 500 | $500 | 500 | $750 |
 
-When you configure your data view for dimensions originating from a summary dataset, options are available to group and hide dimensions as a preparation for reporting in Workspace. See [Summary data group component settings](component-settings/summary-data-group.md) for more details.
+
 
 ### Reporting
 
@@ -92,20 +92,22 @@ The timezone of your summary data is defined at the summary schema level in Expe
 - For daily granularity, Experience Platform assumes UTC, unless a timezone offset is included in the timestamp. When adding the summary dataset containing the daily summary data, Customer Journey Analytics ignores the timezone definition set on the schema and respects the day associated with the timestamp from the data in the dataset.
 - For hourly granularity, Customer Journey Analytics respects the timezone configured on the summary data schema in Experience Platform when interpreting the timestamp. The table below provides some examples of this interpretation.
   
-  | Timestamp <br/>source data | Timestamp in<br/>Experience Platform | Timezone set<br/>on schema<br/>and used in<br/>Customer<br/>Journey<br/>Analytics | Timestamp in <br/>Customer Journey Analytics | Remarks |
-  |---|---|---|---|---|
-  | 2024-07-29T01:00:00 | 2024-07-29T01:00:00 | GMT | 2024-07-29T01:00:00 | |
-  | 2024-07-29T01:00:00 | 2024-07-29T01:00:00 | PST | 2024-07-28T18:00:00 | US Pacific Time [GMT-08:00] |
-  | 2024-07-30T01:00:00-05:00 | 2024-07-30T06:00:00 | GMT | 2024-07-30T06:00:00 | Due to DST |
-  | 2024-07-30T01:00:00-05:00 | 2024-07-30T06:00:00 | PST | 2024-07-29T23:00:00 | US Pacific Time [GMT-08:00] |
-  | 2024-08-02 | 2024-08-02T00:00:00 | IST | 2024-08-02T05:00:00 | New Delhi [GMT+05:30] | 
+  | Timestamp <br/>source data | Timezone<br/>schema |  Timestamp<br/>Experience<br/>Platform | Timezone<br/> data<br/>view | Timestamp<br/>Customer<br/>Journey<br>Analytics |
+  |---|---|---|:---|---|
+  | 2024-07-29T01:00:00 | *default GMT* | 2024-07-29T01:00:00 | GMT | 2024-07-29T01:00:00 |
+  | 2024-07-29T01:00:00 | *default GMT* | 2024-07-29T01:00:00 | PST | 2024-07-28T18:00:00 | 
+  | 2024-07-30T01:00:00-05:00 | *default GMT* | 2024-07-30T06:00:00 | GMT | 2024-07-30T06:00:00 | 
+  | 2024-07-30T01:00:00-05:00 | *default GMT* |2024-07-30T06:00:00 | PST | 2024-07-29T23:00:00 | 
+  | 2024-08-02 | *default GMT* | 2024-08-02T00:00:00 | IST | 2024-08-02T05:00:00 |
+  | 2024-07-29T01:00:00 | `America/`<br/>`Los_Angeles`| 2024-07-28T18:00:00 | PST | 2024-07-28T18:00:00 |
+  | 2024-07-30T01:00:00-05:00 | `Australia/`<br/>`Sydney` |2024-07-30T17:00:00 | CET | 2024-07-30T08:00:00 |
 
   For timezones with a 30 minutes offset (for example IST, India Standard Time), the 30 minute offset is dropped when reporting on summary data. For example: 12:30 is reported as 12:00.
 
 
 To ensure, the proper timezone is used for your hourly granular summary data, you must ensure the schema used for summary data has the proper timezone configured. 
 
-To configure a timezone for your summary data schema, you have to use the following API call as there is no equivalent user interface available.
+To configure the granularity and timezone for your summary data schema, you have to use the following API call as there is no equivalent user interface available.
 
 ```shell
 curl -X POST \
@@ -129,9 +131,12 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 |`$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | See [Authenticate and access Experience Platform APIs](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication) for more information on how to specify values for these variables. |
 | `$SCHEMA_ID` | You can find the id of your schema in the Experience Platform UI. Select your summary schema from the list of schemas, and find the **[!UICONTROL API Usage]** > **[!UICONTROL Schema ID]** in the right panel. Use that id as the value. |
 | `$GRANULARITY` | Specify `hour` or `day` as the value. |
-| `$TIMEZONE` | Specify the proper timezone abbreviation value from the SDT or DST column in the [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). |
+| `$TIMEZONE` | Specify the proper timezone identifier value from the TZ identifier column in the [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). For example: `America/Los_Angeles`. |
 
 ## Component settings
 
 Ensure the component settings for a summary data group are the same. See [Summary data group component settings](component-settings/summary-data-group.md#same-component-settings) for more details.
 
+>[!MORELIKETHIS]
+>
+>See the [Ingest and use summary data](/help/use-cases/data-ingestion/summary-data.md) article for a detailed use case example on how to use summary data.
