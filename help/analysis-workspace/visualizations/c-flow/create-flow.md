@@ -9,7 +9,7 @@ role: User
 
 Flow visualizations help you understand the journey originating from a specific conversion event on your website or your app. Or leading up to a specific conversion event. The visualization traces a path through your dimensions (and dimension items) or metrics. 
 
-YOu can configure the start or end of the path you are interested in. Or analyze all paths that flow through a dimension or dimension item.
+You can configure the start or end of the path you are interested in. Or analyze all paths that flow through a dimension or dimension item.
 
 ![The Flow configuration screen showing the Starts with, Contains, and Ends with fields.](assets/new-flow.png)
 
@@ -47,7 +47,7 @@ YOu can configure the start or end of the path you are interested in. Or analyze
    | **[!UICONTROL Limit to first/last occurrence]** | Limit paths to paths that start or end with the first or last occurrence of a dimension, item, or metric. See [Limit to first/last occurrence](#example-scenario-for-limit-to-firstlast-occurrence) for a more detailed explanation. |
    | **[!UICONTROL Number of columns]** | The number of columns you want in your Flow diagram. You can specify a maximum of 5 columns. |
    | **[!UICONTROL Items expanded per column]** | The number of items you want in each column. You can specify a maximum of 10 items expanded per column. |
-   | **[!UICONTROL Flow container]** | <ul><li>Visit</li><li>Visitor</li></ul> You can switch between **[!UICONTROL Sessions]** and **[!UICONTROL Person]** to analyze pathing. These settings help you understand a person's engagement at the person level (across sessions), or constrain the analysis to a single session.  |
+   | **[!UICONTROL Flow container]** | You can switch between **[!UICONTROL Sessions]** and **[!UICONTROL Person]** to analyze pathing. These settings help you understand a person's engagement at the person level (across sessions), or constrain the analysis to a single session.  |
 
    >[!IMPORTANT]
    >

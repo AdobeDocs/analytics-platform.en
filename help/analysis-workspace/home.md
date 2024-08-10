@@ -9,13 +9,7 @@ role: User
 ---
 # Analysis Workspace overview {#analysis-workspace-overview}
 
->[!CONTEXTUALHELP]
->id="cja_workspace_fundamentals"
->title="Analysis Workspace Fundamentals"
->abstract="Follow the tour below to learn some of the fundamentals of Analysis Workspace including building a table, adding a visualization, changing your date range and more."
->additional-url="https://images-tv.adobe.com/mpcv3/7381/7a0633f8-972f-4367-a2ed-b169981efa7b_1681135724.854x480at800_h264.mp4" text="Analysis Workspace overview"
-
-Analysis Workspace allows you to quickly build analyses to gather insights and then share those insights with others. Using the drag-and-drop browser interface, you can craft your analysis, add visualizations to bring data to life, curate a dataset, and share and schedule projects with anyone you choose.
+Analysis Workspace allows you to build analyses quickly to gather insights and then share those insights with others. Using the drag-and-drop browser interface, you can craft your analysis, add visualizations to bring data to life, curate a dataset, and share and schedule projects with anyone you choose.
 
 The following video provides a brief overview with examples of what is possible.
 
@@ -25,18 +19,17 @@ The following video provides a brief overview with examples of what is possible.
 
 The following image and accompanying table explain some of the main areas in Analysis Workspace:
 
-![Analysis Workspace window highlighting the far left and left rail, the canvas, and data view dropp-down menu.](assets/analysis-workspace-overvew.png)
+![Analysis Workspace window highlighting the far left and left rail, the canvas, and data view dropp-down menu.](assets/analysis-workspace-overview.png)
 
 | Location in image | Name and function |
 |---------|----------|
-| A | **Far left rail:** Contains tabs for adding panels, visualizations, and components to Analysis Workspace. Also contains the Data Dictionary icon that is used to open the Data Dictionary. |
-| B | **Left rail:** Depending on which tab is selected in the far left rail, this area contains individual panels, visualizations, or components. |
-| C | **Canvas:** This is the main area where you drag content from the left rails to build your project. The project dynamically updates as you add panels, visualizations, and components to the canvas. | 
-| D | **Data view drop-down menu:** For each panel in Analysis Workspace, the data view drop-down menu allows you to choose the data view that you want to use as your data source. | 
+| A | **Button rail:** Contains buttons for adding ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Panels]**, ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Visualizations]**, and ![Curate](/help/assets/icons/Curate.svg) **[!UICONTROL Components]** to your project in Analysis Workspace. The rail also contains a ![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL Table of contents]** and ![Bookmark](/help/assets/icons/Bookmark.svg) **[!UICONTROL Data Dictionary]** button to open the Data Dictionary. |
+| B | **Left rail:** Depending on which button is selected in the far left rail, this area contains individual panels, visualizations, or components. |
+| C | **Canvas:** The main area where you drag content from the left rail to build your project. The project dynamically updates as you add panels, add visualizations to panels, and add components to visualizations. You can create multiple panels, and within each panel you can create multiple visualizations.<br/>Each panel is based on a selected data view, that determines available components like metrics and dimensions. See [Panels - Data view](/help/analysis-workspace/c-panels/panels.md#data-view) for more information. | 
 
 ## Features in Analysis Workspace {#analysis}
 
-Following are some of the key features available in Analysis Workspace: 
+Some of the key features available in Analysis Workspace: 
 
 ### Panels
 
@@ -58,13 +51,13 @@ To learn more about visualizations, see [Visualizations overview](/help/analysis
 
 Components in Analysis Workspace consist of the following:
 
-* Dimensions
+* ![Dimensions](/help/assets/icons/Dimensions.svg) Dimensions
 
-* Metrics
+* ![Event](/help/assets/icons/Event.svg) Metrics
 
-* Filters
+* ![Segmentation](/help/assets/icons/Segmentation.svg) Filters
 
-* Date ranges
+* ![Calendar](/help/assets/icons/Calendar.svg) Date ranges
 
 To learn more about each of these component types, see [Components overview](/help/components/overview.md). 
 

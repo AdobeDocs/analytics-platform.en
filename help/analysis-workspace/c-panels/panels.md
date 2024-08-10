@@ -40,6 +40,25 @@ To create a panel:
 ![Create a panel](assets/create-panel.png)
 
 
+## Data view 
+
+Each panel is associated with a [data view](/help/data-views/data-views.md), identified by ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *name of data view*]** in the dropdown list at the top right of the panel.
+
+When you create a Blank Workspace project, the default data view for the initial panel is the data view you last worked on in Customer Journey Analytics.
+
+When you create a new panel, the default data view is based on the data view of the panel you last worked on in the Workspace project.
+
+>[!IMPORTANT]
+>
+>The selected data view determines what dimensions, metrics, and filters are available for building visualizations in a panel.
+>
+>
+>When you switch a data view for a panel, some of the components might not be available in that new data view. This will cause your visualization to not properly render. You might see warning like 
+>
+>* This panel contains components that are not enabled in the selected data view. Please change the data view or enable the required components in the data view. 
+>* Unable to render visualization: Please check your columns and rows to ensure they contain valid components.
+>
+
 ## Calendar {#calendar}
 
 The panel calendar controls the reporting range for tables and visualizations within a panel.
