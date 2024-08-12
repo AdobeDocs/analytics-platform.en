@@ -550,6 +550,8 @@ You want to use the power of reporting on summary data and report on cost per im
 Add your calculated metrics to your report.
 
 1. Drag **[!UICONTROL Cost per Impression]** ![Calculator](/help/assets/icons/Calculator.svg) from **[!UICONTROL Metrics]** and drop the metric to add as an additional column to the Freeform table.
+   1. Select ![Setting](/help/assets/icons/Setting.svg) Column settings.
+      1. Disable **[!UICONTROL Percent]**.
 1. Drag **[!UICONTROL Return on Ad Spend]** ![Calculator](/help/assets/icons/Calculator.svg) from **[!UICONTROL Metrics]** and drop the metric to add as an additional column to the Freeform table.
    1. Select ![Setting](/help/assets/icons/Setting.svg) Column settings.
       1. Disable **[!UICONTROL Percent]**.
