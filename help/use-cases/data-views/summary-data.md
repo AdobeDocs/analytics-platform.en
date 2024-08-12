@@ -1,5 +1,5 @@
 ---
-title: Ingest Ingest summary data into Adobe Experience Platform and use in Customer Journey Analytics
+title: Ingest summary data into Adobe Experience Platform and use in Customer Journey Analytics
 description: Learn how to bring summary data into Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -7,9 +7,18 @@ role: Admin
 ---
 # Ingest and report on summary data
 
-This use case details the steps that are required to properly ingest summary data into Experience Platform and use in Customer Journey Analytics.
+This use case details the steps that are required to 
 
-We use the following sample summary data for this use case, showing summary data for running campaigns on Facebook.
+- ingest summary data and other data sources, 
+- set up your connection for the summary data and other data sources,
+- configure your data view to combine your data sources, and 
+- report and analyze on your combined data.
+
+You use this use case to get familiar on how to use summary data in your reporting and analysis.
+
+## Ingest 
+
+You use the following sample summary data for this use case, showing summary data for running campaigns on Facebook.
 
 +++Summary data
 
@@ -40,16 +49,16 @@ We use the following sample summary data for this use case, showing summary data
 
 To use the summary data in Customer Journey Analytics, in a report or as part of analyzing data in Workspace, you need
 
-- a summary schema in Experience Platform ,
+- a summary schema in Experience Platform,
 - a summary dataset in Experience Platform,
 - a connection in Customer Journey Analytics configured to use the summary dataset,
 - a data view in Customer Journey Analytics, correctly configured with metrics and dimensions for the summary data.
 
-You use this data in Customer Journey Analytics alongside a dataset for event data and a dataset for lookup data.
+You use this summary data alongside a dataset for event data and a dataset for lookup data.
 
 +++Event data
 
-The event data is assumed to be available in the Example Event Data Dataset. The sample data looks like:
+Event data is available in the Example Event Data Dataset. The sample data looks like:
     
 | timestamp | _id | page_name | person_id | tracking_code | orders | revenue_amount |
 |---|---:|---|---|---|---:|---:|
@@ -239,7 +248,7 @@ The event data is assumed to be available in the Example Event Data Dataset. The
 
 +++ Lookup data
 
-The lookup data is assumed to be available in the Example Lookup Data Dataset. The sample data looks like:
+Lookup data is available in the Example Lookup Data Dataset. The sample data looks like:
 
 | _id | tracking_code | ad_group | campaign_name |
 |---|---|---|---|
@@ -265,13 +274,13 @@ The lookup data is assumed to be available in the Example Lookup Data Dataset. T
 [![DataDownload](/help/assets/icons/DataDownload.svg) Download sample looukup data](./assets/lookup-data.csv)
 +++
 
->[!NOTE]
+>[!INFO]
 >
->Setting up schemas and datasets for the event and lookup data is not further detailed, as this is assumed common knowledge. 
+>Further details for setting up schemas and datasets for the event and lookup data are not provided. This setup is assumed common knowledge and follows the same steps as for the lookup data.
 >
 
 
-## Summary schema
+### Summary schema
 
 Summary data needs a summary schema in Experience Platform. A summary schema is a schema that is using the XDM Summary Metrics as its base class.
 
@@ -282,10 +291,10 @@ To create a summary schema in Experience Platform:
 1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create schema]**.
 1. Select **[!UICONTROL Manual]** in the **[!UICONTROL Create a schema]** dialog. Then use **[!UICONTROL Select]** to continue.
 1. In the **[!UICONTROL Select a class]** step of the **[!UICONTROL Schemas]** > **[!UICONTROL Create schema]** wizard, select **[!UICONTROL Other]** from the **[!UICONTROL Select a base class for this schema]** options.
-1. From the list select **[!UICONTROL XDM Summary Metrics]** (or use ![Search](/help/assets/icons/Search.svg) field to search for) and select **[!UICONTROL Next]**. 
+1. From the list, select **[!UICONTROL XDM Summary Metrics]** (or use ![Search](/help/assets/icons/Search.svg) field to search for) and select **[!UICONTROL Next]**. 
 1. In the **[!UICONTROL Name and review]** step of the **[!UICONTROL Schemas]** > **[!UICONTROL Create schema]** wizard, enter a **[!UICONTROL Schema display name]**, for example `Example Summary Data Schema` and an optional description. Select **[!UICONTROL Finish]** to finish this step.
 
-The structure of your base summary dataschema is displayed, ready to be augmented with the fields for your summary data. You add fields to a schema, using field groups.
+The structure of your base summary schema is displayed, ready to be augmented with the fields for your summary data. You add fields to a schema, using field groups.
 
 To add a field group, containing the fields for your sample data:
 
@@ -293,14 +302,14 @@ To add a field group, containing the fields for your sample data:
 1. In the **[!UICONTROL Add field groups]** dialog, select **[!UICONTROL Create new field group]**.
 1. Enter a **[!UICONTROL Display name]** for the field group, for example `Example Summary Data`. Optionally provide a description.
 1. Select **[!UICONTROL Add field groups]**.
-1. Back in the schema structure schema, select the new **[!UICONTROL Example Summary Data]** in **[!UICONTROL Field groups]**.
+1. You are back in the schema structure user interface. Select the new **[!UICONTROL Example Summary Data]** in **[!UICONTROL Field groups]**.
 1. Select the ![AddCircle](/help/assets/icons/AddCircle.svg) next to the schema name **[!UICONTROL Example summary Data Schema]**. A **[!UICONTROL Field properties]** panel opens up allowing you to add details for a field.
    1. Enter a **[!UICONTROL Field name]**: `campaign_id`
    1. Enter a **[!UICONTROL Display name]**: `campaign_id`
    1. Select a **[!UICONTROL Type]** from the **[!UICONTROL Select data type]** dropdown: **[!UICONTROL String]**
    1. Ensure **[!UICONTROL Assign to]** **[!UICONTROL Field group]** is selected, and select **[!UICONTROL Example Summary Data]** from the dropdown.
    1. Scroll down to the bottom, and select **[!UICONTROL Apply]**.
-1. Repeat the previous step for the other fields of the summary data. See table below for the correct values.
+1. Repeat the previous step for the other fields of the summary data. See the table below for the correct values.
 
    | Field name | Display name | Type | Field Group |
    |---|---|---|---|
@@ -310,19 +319,19 @@ To add a field group, containing the fields for your sample data:
    | `impression` | `impression` | Integer | Example Summary Data |
    | `network` | `network` | String | Example Summary Data |
 
-1. To save your **[!UICONTROL Example Summary Data]** field group as part of your schema, select **[!UICONTROL Save]**. You will see a confirmation when your schema is succesfully saved.
+1. To save your **[!UICONTROL Example Summary Data]** field group as part of your schema, select **[!UICONTROL Save]**. You see a confirmation when your schema is successfully saved.
 
 You have now defined a schema, detailing the model for your summary data.
 
 
 
-## Summary dataset
+### Summary dataset
 
-To actually store your summary data in Experience Platform, you first need to create a dataset, and then upload you summary data into the dataset.
+To store your summary data in Experience Platform, you first need to create a dataset, and then upload your summary data into the dataset.
 
 To create a dataset:
 
-1. If not already in the Experience Platform UI, select **[!UICONTROL Experience Platform]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
+1. Select **[!UICONTROL Experience Platform]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
 1. Select **[!UICONTROL Datasets]** from the left rail.
 1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create dataset]**.
 1. In the **[!UICONTROL Datasets]** > **[!UICONTROL Create datasets]** screen, select **[!UICONTROL Create dataset from schema]**.
@@ -336,7 +345,7 @@ You see a screen displaying the details of your new dataset.
 
 To upload your sample data into this dataset:
 
-1. If not already in the Experience Platform UI, select **[!UICONTROL Experience Platform]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
+1. Select **[!UICONTROL Experience Platform]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
 1. Select **[!UICONTROL Workflows]** from the left rail.
    1. Select **[!UICONTROL Map CSV to XDM schema]** from the **[!UICONTROL Data ingestion]** options in the **[!UICONTROL Workflows]** screen.
    1. Select **[!UICONTROL Launch]** from the **[!UICONTROL Map CSV to XDM schema]** panel.
@@ -346,16 +355,16 @@ To upload your sample data into this dataset:
    1. Select **[!UICONTROL Next]**.
 1. In the **[!UICONTROL Select data]** step of the **[!UICONTROL Workflows]** > **[!UICONTROL Map CSV to XDM schema]** wizard:
    1. Drag and drop your file with summary data in CSV format onto **[!UICONTROL Drag and drop files]**. Alternatively, use **[!UICONTROL Choose files]** to select your file.
-   1. Ensure **[!UICONTROL Data format]** and **[!UICONTROL Delimiter]** do have the correct values for your sample data. For example **[!UICONTROL Delimited]** as the **[!UICONTROL Data format]** and **[!UICONTROL ,]** selected as the **[!UICONTROL Delimiter]**,.
+   1. Ensure the **[!UICONTROL Data format]** and **[!UICONTROL Delimiter]** do have the correct values for your sample data. For example, **[!UICONTROL Delimited]** as the **[!UICONTROL Data format]**, and **[!UICONTROL ,]** as the **[!UICONTROL Delimiter]**.
    1. A sample (10 records) of your summary data is shown in **[!UICONTROL Sample data]**.
    1. Select **[!UICONTROL Next]**.
 1. In the **[!UICONTROL Mapping]** step of the **[!UICONTROL Workflows]** > **[!UICONTROL Map CSV to XDM schema]** wizard:
-   1. Check whether all data fields of your **[!UICONTROL Source Data]** are correctly mapped to the corresponding **[!UICONTROL Target fields]** in your schema. For our sample data, no errors are reported as you explicity named the fields in your schema similar to the field names in your sample data. Otherwise you can use this screen to correct the mapping.
+   1. Check whether all data fields of your **[!UICONTROL Source Data]** are correctly mapped to the corresponding **[!UICONTROL Target fields]** in your schema. For the sample data, no errors are reported as you explicitly named the fields in your schema similar to the field names in your sample data. Otherwise, you can use this screen to correct the mapping.
    1. You can optionally select **[!UICONTROL Validate]** to (once more) validate the data.
    1. You can optionally select **[!UICONTROL Preview data]** to open a dialog with a preview of the data once loaded into the dataset.
    1. Select **[!UICONTROL Finish]**.
 
-In **[!UICONTROL Sources]** > **[!UICONTROL Dataflow - XX/XX/XXXX, XX:XX XX]**, the status of your upload will appear. Refresh to see updates of the upload. When successful, your sample is loaded into Experience Platform. 
+In **[!UICONTROL Sources]** > **[!UICONTROL Dataflow - XX/XX/XXXX, XX:XX XX]**, the status of your upload appears. Refresh to see updates of the upload. When successful, your sample is loaded into Experience Platform. 
 
 
 ## Connection
@@ -363,7 +372,7 @@ In **[!UICONTROL Sources]** > **[!UICONTROL Dataflow - XX/XX/XXXX, XX:XX XX]**, 
 To use your sample data in Customer Journey Analytics, you create a connection that includes the Example Summary Data Dataset from Experience Platform.
 
 
-1. If not already in the Customer Journey Analytics UI, select **[!UICONTROL Customer Journey Analytics]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
+1. Select **[!UICONTROL Customer Journey Analytics]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
 1. Select **[!UICONTROL Connections]** from the top menu.
 1. Select **[!UICONTROL Create new connection]**.
 1. In **[!UICONTROL Connections]** > **[!UICONTROL Untitled connection]**:
@@ -372,7 +381,7 @@ To use your sample data in Customer Journey Analytics, you create a connection t
    1. Select **[!UICONTROL less than 1 million]** from the **[!UICONTROL Average number of daily events]** dropdown list.
    1. Select **[!UICONTROL Add datasets]**.
    1. In the **[!UICONTROL Select datasets]** step of the **[!UICONTROL Add datasets]** wizard:
-      1. Search ![Search](/help/assets/icons/Search.svg) and select **[!UICONTROL Example Summary Data Dataset]**, **[!UICONTROL Example Event Event Data Dataset]**, and **[!UICONTROL Example Lookup Data Dataset]**.
+      1. Search ![Search](/help/assets/icons/Search.svg) and select **[!UICONTROL Example Summary Data Dataset]**, **[!UICONTROL Example Event Data Dataset]**, and **[!UICONTROL Example Lookup Data Dataset]**.
       1. Select **[!UICONTROL Next]**.
    1. In the **[!UICONTROL Datasets settings]** step of the **[!UICONTROL Add datasets]** wizard:
       
@@ -398,36 +407,36 @@ To use your sample data in Customer Journey Analytics, you create a connection t
 
       1. Select **[!UICONTROL Add datasets]**.
 
-1. Back in  **[!UICONTROL Connections]** > **[!UICONTROL Example Connection using Summary Data]** connection, select **[!UICONTROL Save]** to save the connection. 
+1. In the **[!UICONTROL Connections]** > **[!UICONTROL Example Connection using Summary Data]** connection screen, select **[!UICONTROL Save]** to save the connection. 
 
-The data from the datasets is added to Customer Journey Analytics. This can take some time. 
+The data from the datasets is added to Customer Journey Analytics, which can take a couple of hours. So please, be patient before continuing. 
 
 After a while, verify that data from your datasets is properly loaded in Customer Journey Analytics.
 
-1. If not already in the Customer Journey Analytics UI, select **[!UICONTROL Customer Journey Analytics]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
+1. Select **[!UICONTROL Customer Journey Analytics]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
 1. Select **[!UICONTROL Connections]** from the top menu.
 1. Select your connection, for example **[!UICONTROL Example Connection Using Summary Data]**.
 1. Select an appropriate data range in the **[!UICONTROL Connection]** > **[!UICONTROL Example Connection Using Summary data]** details.
    1. Select ![Calendar](/help/assets/icons/Calendar.svg) and then select **[!UICONTROL Last 7 days]**.
    1. Select **[!UICONTROL Apply]**.
 
-In the list of Datasets you should see numbers in the Records added column, confirming data from your datasets is now part of Customer Journey Analytics. 
+In the list of **[!UICONTROL Datasets]**, the values in the **[!UICONTROL Records added]** column should confirm that data from your datasets is now part of Customer Journey Analytics. 
 
 ## Data view
 
 To ensure you can report on the correct data in Workspace, you want to create a data view containing the relevant metrics and dimensions.
 
-1. If not already in the Customer Journey Analytics UI, select **[!UICONTROL Customer Journey Analytics]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
+1. Select **[!UICONTROL Customer Journey Analytics]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
 1. Select **[!UICONTROL Data views]** from the top menu.
 1. Select **[!UICONTROL Create new data view]**.
-1. In **[!UICONTROL Data views]**, go throught the wizard screens to configure your data view.
+1. In **[!UICONTROL Data views]**, go through the wizard screens to configure your data view.
    1. In the **[!UICONTROL Configure]** step of **[!UICONTROL Data views]**:
-      1. Select your connection from **[!UICONTROL Settings]** | **[!UICONTROL Connection]**. For example **[!UICONTROL Example Connection Using Summary Data]**.
+      1. Select your connection from **[!UICONTROL Settings]** | **[!UICONTROL Connection]**. For example, **[!UICONTROL Example Connection Using Summary Data]**.
       1. Enter a **[!UICONTROL Name]** for your data view, for example `Example Data View Using Summary Data`.
       1. Leave all other settings.
       1. Select **[!UICONTROL Save and continue]**.
    1. In the **[!UICONTROL Components]** step of **[!UICONTROL Data views]** > **[!UICONTROL Example Data View Using Summary Data]**:
-      1. Add the following components to the Dimensions and Metrics list. Note, that for clarity, the component names are modified from their default name, using **[!UICONTROL Component name]** in **[!UICONTROL Component settings]** in the component panel (at the right).
+      1. Add the following components to the Dimensions and Metrics list. Note that for clarity, the component names are modified from their default name, using **[!UICONTROL Component name]** in **[!UICONTROL Component settings]** in the component panel (at the right).
 
          **Metrics**
 
@@ -456,15 +465,31 @@ To ensure you can report on the correct data in Workspace, you want to create a 
       1. Select the **[!UICONTROL Tracking Code (Event)]** dimension in the **[!UICONTROL Dimensions]** list. In the component panel:
          1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Enable **[!UICONTROL Create grouping]**.
-         1. Select **[!UICONTROL Campaign Id]** from the **[!UICONTROL Dimension]** dropdown list. This step ensures event and summary data is properly combined for reporting.
-         1. You can optionally enable **[!UICONTROL Hide in reporting]**. This will ensure the selected dimension (Campaign Id) is hidden in Analysis Workspace and other CJA reporting tools. If you have enabled this option, you can verify this:
+         1. Select **[!UICONTROL Campaign Id]** from the **[!UICONTROL Dimension]** dropdown list. This step ensures that event data and summary data is properly combined for reporting.
+         1. You can optionally enable **[!UICONTROL Hide in reporting]**. [!UICONTROL Hide in reporting] ensures the selected dimension ([!UICONTROL Campaign Id]) is hidden in Analysis Workspace and other Customer Journey Analytics reporting tools. If you have enabled this option, you can verify the option:
             1. Select the **[!UICONTROL Campaign Id]** dimension in the **[!UICONTROL Dimensions]** list.
-            1. You will notice **[!UICONTROL Hide component in reporting]** in **[!UICONTROL Component settings]** is now automatically enabled.
+            1. You notice that **[!UICONTROL Hide component in reporting]** in **[!UICONTROL Component settings]** is now automatically enabled.
+
+      1. Select the **[!UICONTROL Revenue]** metric from the **[!UICONTROL Metrics]** list. In the component panel:
+         1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
+            1. Select ![AttributionLastTouch](/help/assets/icons/AttributionLastTouch.svg) **[!UICONTROL Last Touch]** from the **[!UICONTROL Attribution Model]** dropdown list.
+            1. Select **[!UICONTROL 30 Day]** from the **[!UICONTROL Lookback window]** dropdown list.
+         1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **Format**.
+            1. Select **[!UICONTROL Currency]** from the **[!UICONTROL Format]** dropdown list.
+            1. Select **[!UICONTROL 2]** from the **[!UICONTROL Decimal places]** dropdown list.
+
+      1. Select the **[!UICONTROL Orders]** metric from the **[!UICONTROL Metrics]** list. In the component panel:
+         1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
+            1. Select ![AttributionLastTouch](/help/assets/icons/AttributionLastTouch.svg) **[!UICONTROL Last Touch]** from the **[!UICONTROL Attribution Model]** dropdown list.
+            1. Select **[!UICONTROL 30 Day]** from the **[!UICONTROL Lookback window]** dropdown list.
+         1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Format]**.
+            1. Select **[!UICONTROL Decimal]** from the **[!UICONTROL Format]** dropdown list.
+            1. Select **[!UICONTROL ▲ Good (green)]** from the **[!UICONTROL Show upward trend as]** dropdown list.
 
       1. Select **[!UICONTROL Save and continue]**.
 
    1. In the **[!UICONTROL Settings]** step of **[!UICONTROL Data views]**:
-      1. Leave all settings to their defaults.
+      1. Leave all settings at their defaults.
       1. Select **[!UICONTROL Save and finish.]**
 
 You have now set up your data view for proper reporting on summary data.
@@ -472,5 +497,54 @@ You have now set up your data view for proper reporting on summary data.
 
 ## Workspace
 
-T.b.d.
+To report on your summary data, create a new Project in Analysis Workspace.
+
+1. Select **[!UICONTROL Customer Journey Analytics]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
+1. Select **[!UICONTROL Workspace]** from the top menu.
+1. Select **[!UICONTROL Create project]**.
+1. Select **[!UICONTROL Blank Workspace project]** from the dialog with options to create a blank Workspace project.
+1. Select **[!UICONTROL Create]**.
+
+You see an empty canvas with a [!UICONTROL Freeform] panel, consisting of an empty [!UICONTROL Freeform table].
+
+1. Ensure that the data view, selected for the panel, is referring to the data view containing the configuration for the summary data. For example, **[!UICONTROL Example Data View Using Summary Data.]**
+1. Ensure that the data range is valid for the data you want to report on. For example: **[!UICONTROL Last 2 full months]**. 
+1. Drag **[!UICONTROL Tracking Code (Event)]** from **[!UICONTROL Dimensions]** and drop the dimension onto the empty Freeform table.
+1. Drag **[!UICONTROL Orders]** from **[!UICONTROL Metrics]**, and drop the metric onto the **[!UICONTROL Events]** column to replace that column in the Freeform table.
+1. Drag **[!UICONTROL Revenue]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
+1. Drag **[!UICONTROL Impressions (Summary)]** from  **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
+1. Drag **[!UICONTROL Cost (Summary)]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
+1. To save your project, select **[!UICONTROL Project]** > **[!UICONTROL Save]**, and provide a name for your project. For example, `Example Project Using Summary Data`.
+
+You want to use the power of reporting on summary data and report on cost per impression and return on ad spend (ROAS). To report on these metrics, you have to create two calculated metrics.
+
+1. Select **[!UICONTROL Components]** > **[!UICONTROL Calculated metrics]**.
+1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** to add a new calculated metric.
+   1. Specify `Cost per Impression` for the **[!UICONTROL Name]**.
+   1. Select **[!UICONTROL Currency]** for **[!UICONTROL Format]**.
+   1. Specify `4` for **[!UICONTROL Decimal places]**.
+   1. Use ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Cost (Summary)]** **[!UICONTROL ÷]** **[!UICONTROL Impressions (Summary)]** as **[!UICONTROL Definition]**.
+   1. Select **[!UICONTROL Save]**.
+1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** to add another new calculated metric.
+   1. Specify `Return on Ad Spend` for the **[!UICONTROL Name]**.
+   1. Select **[!UICONTROL Currency]** for **[!UICONTROL Format]**.
+   1. Select `2` for **[!UICONTROL Decimal places]**.
+   1. Use ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Revenue (Last Touch | 30 Days)]** **[!UICONTROL −]** ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Cost (Summary)]** as **[!UICONTROL Definition]**.
+   1. Select **[!UICONTROL Save]**.
+
+Add your calculated metrics to your report.
+
+1. Drag **[!UICONTROL Cost per Impression]** ![Calculator](/help/assets/icons/Calculator.svg) from **[!UICONTROL Metrics]** and drop the metric to add as an additional column to the Freeform table.
+1. Drag **[!UICONTROL Return on Ad Spend]** ![Calculator](/help/assets/icons/Calculator.svg) from **[!UICONTROL Metrics]** and drop the metric to add as an additional column to the Freeform table.
+   1. Select ![Setting](/help/assets/icons/Setting.svg) Column settings.
+      1. Disable **[!UICONTROL Percent]**.
+      1. Enable **[!UICONTROL Conditional formatting]**.
+         1. Select **[!UICONTROL Auto-generated]**.
+         1. Select a preferred **[!UICONTROL Conditional formatting palette]**.
+   1. Select **[!UICONTROL Save]** to save your project.
+
+Your final project should look like the one shown below.
+
+![Example Project Using Summary Data, showing Summary Data Panel with Summary Data Report](../assets/summary-workspace.png)
+
 
