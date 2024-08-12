@@ -22,7 +22,7 @@ See the [Use summary data](summary-data.md) use case for more details.
 
 For example, when creating a data view, you could create an [!UICONTROL Orders] metric from a [!UICONTROL Page Title] schema field that is a string.
 
-![Dimension to metric](../assets/string-to-metric.gif)
+
 
 1. On the **[!UICONTROL Components]** tab, drag the **[!UICONTROL Page Title]** into the **[!UICONTROL Metrics]** section under [!UICONTROL Included components].
 1. Highlight the metric you just dragged in and rename it to `Orders` in the **[!UICONTROL Component Settings]** on
@@ -30,6 +30,8 @@ For example, when creating a data view, you could create an [!UICONTROL Orders] 
    1. Enable **[!UICONTROL Set include exclude values]**.
    1. Select **[!UICONTROL If all criteria are met]** from **[!UICONTROL Match]**.
    1. Specify `confirmation`. This text for the page_title indicates that this page is related to placing an order. After reviewing all the page titles where those criteria are met, a `1` will be counted for each instance. The result is a new metric (not a calculated metric.) A metric that has included/excluded values can be used everywhere any other metric can be used. It works with Attribution IQ, filters, and everywhere else you can use standard metrics.
+
+   ![Dimension to metric](../assets/string-to-metric.gif){width=100%}
 1. You can further specify an attribution model for this metric, such as [!UICONTROL Last Touch], with a [!UICONTROL Lookback window] of [!UICONTROL Session].
    You can also create another [!UICONTROL Orders] metric from the same field and specify a different attribution model. Such as [!UICONTROL First Touch], and a different [!UICONTROL Lookback window], such as [!UICONTROL 30 days].
 
@@ -39,10 +41,11 @@ Another example would be to use the Person ID, a dimension, as a metric to deter
 
 Previously, integers would automatically be treated as metrics in Customer Journey Analytics. Now, numerics (including custom events from Adobe Analytics) can be treated as dimensions. Here is an example:
 
-![Integer to dimension](../assets/integer-to-dimension.gif)
+
 
 1. Drag the **[!UICONTROL Duration]** integer into the **[!UICONTROL Dimensions]** section under [!UICONTROL Included Components]:
 1. You can now add **[!UICONTROL Value Bucketing]** to present this dimension in a bucketed fashion in reporting. Without bucketing, each instance of this dimension would appear as a line item in Workspace reporting.
+   ![Integer to dimension](../assets/integer-to-dimension.gif){width=100%}
 
 
 ## Use numeric dimensions as metrics in flow diagrams {#numeric}
@@ -73,16 +76,18 @@ These new settings allow you to view only high-value revenue and filter out anyt
 
 ## Use the [!UICONTROL No value options] setting {#no-value}
 
-![No value options](../assets/no-value-options.gif)
 Your company may have spent time training your users to expect "Unspecified" for dimensions in reports. The default for dimensions in Data views is "No value". However, you can specify per dimension how No value should be reported. See the No value options for a dimension component.
+
+![No value options](../assets/no-value-options.gif){width=100%}
 
 
 ## Create multiple metrics with different attribution settings {#attribution}
 
-![Duplicate metric for different attribution settings](../assets/duplicate-metric-for-attribution.gif)
 Using the **[!UICONTROL Duplicate]** feature at the top right, to create a number of Total Revenue metrics with different attribution settings like **[!UICONTROL First Touch]**, **[!UICONTROL Last Touch]**, and **[!UICONTROL Algorithmic]**.
 
-Don't forget to rename each metric to reflect the differences, such as `Total Revenue (Algorithmic)`:
+Don't forget to rename each metric to reflect the differences, such as `Total Revenue (Algorithmic)`
+
+![Duplicate metric for different attribution settings](../assets/duplicate-metric-for-attribution.gif){width=100%}
 
 For more information on other data views settings, see [Create data views](/help/data-views/create-dataview.md).
 For a conceptual overview of data views, see [Data views overview](/help/data-views/data-views.md).
