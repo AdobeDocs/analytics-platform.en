@@ -344,10 +344,10 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Data ingestion {#data-ingestion}
     + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
     + [Ingest and use Experience Platform audiences ](../use-cases/data-ingestion/ingest-aep-segments.md)
-    + [Ingest and use summary data](../use-cases/data-ingestion/summary-data.md)
   + Data views {#data-views}
     + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
+    + [Use summary data](../use-cases/data-ingestion/summary-data.md)
   + Data export {#data-export}
     + [Overview](../use-cases/data-export/overview.md)
     + [BI extension](../use-cases/data-export/bi-extension.md)
