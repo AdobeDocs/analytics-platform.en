@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 ---
-# Ingest and report on summary data
+# Use summary data
 
-This use case details the steps that are required to 
+This use case is to help you understand how to use summary data in your reporting and analysis. The use case details all the steps that are required to use summary data in Customer Journey Analytics:
 
-- ingest summary data and other data sources, 
-- set up your connection for the summary data and other data sources,
-- configure your data view to combine your data sources, and 
-- report and analyze on your combined data.
+- [Ingest](#ingest) summary data and other data sources in Experience Platform. 
+- Set up your [Connection](#connection) for the summary data and other data sources.
+- Configure your [Data view](#data-view) to combine your data sources.
+- Report and analyze in [Workspace](#workspace) on your combined data.
 
-You use this use case to get familiar on how to use summary data in your reporting and analysis.
+The use case provides sample data for summary data, event data and lookup data. All data contains random values.
 
 ## Ingest 
 

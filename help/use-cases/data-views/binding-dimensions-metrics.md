@@ -6,7 +6,7 @@ feature: Use Cases
 role: User
 ---
 
-# Use binding dimensions and metrics in Customer Journey Analytics
+# Use binding dimensions and metrics
 
 Customer Journey Analytics offers several ways to persist dimension values beyond the hit that they are set on. One of the persistence methods that Adobe offers is known as Binding. In previous versions of Adobe Analytics, this concept was known as merchandising.
 
