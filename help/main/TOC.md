@@ -347,7 +347,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Data views {#data-views}
     + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
-    + [Use summary data](../use-cases/data-ingestion/summary-data.md)
+    + [Use summary data](../use-cases/data-views/summary-data.md)
   + Data export {#data-export}
     + [Overview](../use-cases/data-export/overview.md)
     + [BI extension](../use-cases/data-export/bi-extension.md)
