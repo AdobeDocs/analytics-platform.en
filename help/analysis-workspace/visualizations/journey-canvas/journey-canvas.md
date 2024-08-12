@@ -8,7 +8,7 @@ role: User
 
 The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. It allows you to define a journey, then see how users left (fell out) or continued through (fell through) the journey. 
 
-The journeys you define can start from multiple entry points, and they can contain multiple events, conditions, and paths.
+Journey canvas allows you to build analyses of user journeys by creating a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. Drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly.
 
 ## Key features
 
@@ -53,17 +53,26 @@ Journey canvas is essential for fallout analysis involving journeys with multipl
 
 Analyzing Journey Optimizer journeys in Journey canvas provides deep, actionable insights on how users interact with a journey. 
 
-When you analyze a Journey Optimizer journey in Journey canvas, the journey is displayed with the same order, sequence, and structure as it has in Journey Optimizer.
+When you analyze a Journey Optimizer journey in Journey canvas, the journey is displayed with the same order, sequence, and structure as it has in Journey Optimizer. If you can make changes to it within Journey canvas, [changes are no longer synchronized from Journey Optimizer](#synchronization-between-journey-optimizer-and-journey-canvas).
 
 ### Benefits of analyzing Journey Optimizer journeys with Journey canvas
 
-Journey canvas provides deep, thorough analysis that isn't possible in Journey Optimizer. Using Journey canvas to analyze journeys that were created in Journey Optimizer provides various benefits:
+Journey canvas provides deep, thorough analysis that isn't possible in Journey Optimizer. 
 
-| Feature | Customer Journey Analytics | 
+Using Journey canvas to analyze journeys that were created in Journey Optimizer provides various benefits:
+
+| Feature | Benefit | 
 |---------|----------|
-| **Create events** | Create events by using any Customer Journey Analytics dimensions. In Journey Optimizer, a technical user must create an event before it can be added to a journey. |
-| **Create audiences** | Create audiences based on a specific node, edge, or fallout within the Journey canvas visualization. (Launches the Customer Journey Analytics audience builder.) In Journey Optimizer, this is not available |
+| **Create events** | Easily create events by using any Customer Journey Analytics dimensions, metrics, or filters. <p>In Journey Optimizer, a technical user must create an event before it can be added to a journey.</p> |
+| **Create audiences** | Create audiences based on a specific node, edge, or fallout within the Journey canvas visualization. (Launches the Customer Journey Analytics audience builder.) <p>In Journey Optimizer, this is not available.</p> |
 | **Fallthrough and fallout** | B3 | 
+| **Break down events** | B3 | 
+
+### Synchronization between Journey Optimizer and Journey canvas
+
+After you create an analysis of a Journey Optimizer journey in Journey canvas, data syncs in only one direction, from Journey Optimizer to Journey canvas. This means that changes made to a journey in Journey canvas are never reflected in Journey Optimizer.
+
+Furthermore, changes made to a journey in Journey Optimizer sync to Journey canvas only if the journey remains unmodified in Journey canvas. After you modify a journey in Journey Canvas, any changes you make to the journey are available only in Journey Optimizer. You can delete and [re-create the journey in Journey Optimizer](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) to analyze the journey with its latest changes.
 
 ### Terminology differences between Journey Optimizer and Customer Journey Analytics
 
@@ -78,14 +87,6 @@ Certain terms that mean one thing in Journey Optimizer mean something else in Cu
 ### Analyze a Journey Optimizer journey in Journey canvas
 
 For information about analyzing a Journey Optimizer journey in Journey canvas, see [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
-
-### Enhance Journey Optimizer journeys in Journey canvas for deeper analysis
-
-After you open a Journey Optimizer journey in Journey canvas, you can make changes to it for a deeper or more thorough analysis.
-
-Any changes you make to the journey in Customer Journey Analytics are reflected in Journey Optimizer. <!-- true? -->
-
-For information, see [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 ## Build analyses in Journey canvas
 

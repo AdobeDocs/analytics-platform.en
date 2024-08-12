@@ -57,7 +57,7 @@ See [Journey canvas overview](/help/analysis-workspace/visualizations/journey-ca
 
 ## Configure a Journey canvas visualization
 
-You need to [begin building a Journey canvas visualization](#begin-building-a-journey-canvas-visualization) before you can configure it as described in the following sections. 
+You need to [build a Journey canvas visualization](#begin-building-a-journey-canvas-visualization) before you can configure it as described in the following sections. 
 
 ### Configure settings
 
@@ -69,7 +69,7 @@ You need to [begin building a Journey canvas visualization](#begin-building-a-jo
    |---------|----------|
    | [!UICONTROL **Node type**] | Allows you to configure which node types are shown in the visualization. To hide a node type from the visualization, select the (x) next to the node type, or deselect it from the drop-down menu. To show a hidden node type, select it from the drop-down menu. <p>Depending on the contents of your visualization, possible node types include:</p><ul><li>[!UICONTROL **Read segment**]</li><li>[!UICONTROL **End**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Metric**]</li></ul>  | 
    | [!UICONTROL **Percentage value**] | B2 | 
-   | [!UICONTROL **Arrow settings**] | <p>**Note**: This option displays only when Journey Optimizer data is detected in the same data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).</p>  |
+   | [!UICONTROL **Arrow settings**] | Choose from the following options:<ul><li>[!UICONTROL **None**]: </li><li>[!UICONTROL **Condition**]: </li><li>[!UICONTROL **All labels**]: </li></ul><p>**Note**: This option displays only when Journey Optimizer data is detected in the same data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).</p>  |
    | [!UICONTROL **Show fallout**] | B3 |
 
 ### Add a node
@@ -112,6 +112,13 @@ To connect nodes in Journey canvas:
 1. Select any of the 4 blue dots that appear on each side of the node.
 
 1. Drag the dot to any of the 4 sides of the node that you want to connect to. 
+
+
+### Rearrange nodes
+
+Journeys in Journey canvas consist of a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. 
+
+You can drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. 
 
 ### Manage existing nodes
 
