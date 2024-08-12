@@ -460,16 +460,16 @@ To ensure you can report on the correct data in Workspace, you want to create a 
 
          | Component name | Dataset | Schema data type | Schema path |
          |---|---|---|---|
-         | Ad Group (Lookup) | Example Lookup Data Dataset | String | _aresstagevalidationco.ad_group |
-         | Ad Group (Summary) | Example Summary Data Dataset | String | _aresstagevalidationco.ad_group |
-         | Campaign Id | Exammpe Summary Data Dataset | String | _aresstagevalidationco.campaign_id |
-         | Campaign Name (Lookup) | Example Lookup Data Dataset | String | _aresstagevalidationco.campaign_name |
-         | Campaign Name (Summary) | Example Summary Data Dataset | String | _aresstagevalidationco.campaign_name |
-         | Network | Example Summary Data Dataset | String | _aresstagevalidationco.network |
-         | Page Name | Example Event Data Dataset | String | _aresstagevalidationco.page_name |
-         | Person Id | Example Event Data Dataset | String | _aresstagevalidationco.person_id |
-         | Tracking Code (Event) | Example Event Data Dataset | String | _aresstagevalidationco.tracking_code |
-         | Tracking Code (Lookup) | Example Lookup Data Dataset | String | _aresstagevalidationco.tracking_code |
+         | Ad Group (Lookup) | Example Lookup Data Dataset | String | *_tenant*.ad_group |
+         | Ad Group (Summary) | Example Summary Data Dataset | String | *_tenant*.ad_group |
+         | Campaign Id | Exammpe Summary Data Dataset | String | *_tenant*.campaign_id |
+         | Campaign Name (Lookup) | Example Lookup Data Dataset | String | *_tenant*.campaign_name |
+         | Campaign Name (Summary) | Example Summary Data Dataset | String | *_tenant*.campaign_name |
+         | Network | Example Summary Data Dataset | String | *_tenant*.network |
+         | Page Name | Example Event Data Dataset | String | *_tenant*.page_name |
+         | Person Id | Example Event Data Dataset | String | *_tenant*.person_id |
+         | Tracking Code (Event) | Example Event Data Dataset | String | *_tenant*.tracking_code |
+         | Tracking Code (Lookup) | Example Lookup Data Dataset | String | *_tenant*.tracking_code |
          
       1. Select the **[!UICONTROL Tracking Code (Event)]** dimension in the **[!UICONTROL Dimensions]** list. In the component panel:
 
