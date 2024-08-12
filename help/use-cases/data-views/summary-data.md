@@ -321,7 +321,11 @@ To add a field group, containing the fields for your sample data:
 
 1. To save your **[!UICONTROL Example Summary Data]** field group as part of your schema, select **[!UICONTROL Save]**. You see a confirmation when your schema is successfully saved.
 
-You have now defined a schema, detailing the model for your summary data.
+You have now defined a schema, detailing the model for your summary data. Similar to the one below.
+
+![Example Summary Data Schema](../assets/example-summary-schema.png)
+
+
 
 
 
@@ -359,12 +363,15 @@ To upload your sample data into this dataset:
    1. A sample (10 records) of your summary data is shown in **[!UICONTROL Sample data]**.
    1. Select **[!UICONTROL Next]**.
 1. In the **[!UICONTROL Mapping]** step of the **[!UICONTROL Workflows]** > **[!UICONTROL Map CSV to XDM schema]** wizard:
+   ![Example dataset mapping](../assets/example-dataset-mapping.png)
    1. Check whether all data fields of your **[!UICONTROL Source Data]** are correctly mapped to the corresponding **[!UICONTROL Target fields]** in your schema. For the sample data, no errors are reported as you explicitly named the fields in your schema similar to the field names in your sample data. Otherwise, you can use this screen to correct the mapping.
-   1. You can optionally select **[!UICONTROL Validate]** to (once more) validate the data.
-   1. You can optionally select **[!UICONTROL Preview data]** to open a dialog with a preview of the data once loaded into the dataset.
+   1. You can optionally select ![Gear](/help/assets/icons/Gear.svg) **[!UICONTROL Validate]** to (once more) validate the data.
+   1. You can optionally select ![Preview](/help/assets/icons/Preview.svg) **[!UICONTROL Preview data]** to open a dialog with a preview of the data once loaded into the dataset.
    1. Select **[!UICONTROL Finish]**.
 
-In **[!UICONTROL Sources]** > **[!UICONTROL Dataflow - XX/XX/XXXX, XX:XX XX]**, the status of your upload appears. Refresh to see updates of the upload. When successful, your sample is loaded into Experience Platform. 
+In **[!UICONTROL Sources]** > **[!UICONTROL Dataflow - XX/XX/XXXX, XX:XX XX]**, the status of your upload appears. Refresh to see updates of the upload. When successful, your sample data is loaded into Experience Platform. 
+
+
 
 
 ## Connection
@@ -422,6 +429,8 @@ After a while, verify that data from your datasets is properly loaded in Custome
 
 In the list of **[!UICONTROL Datasets]**, the values in the **[!UICONTROL Records added]** column should confirm that data from your datasets is now part of Customer Journey Analytics. 
 
+![Example connection for summary data](../assets/example-connection-summary-data.png)
+
 ## Data view
 
 To ensure you can report on the correct data in Workspace, you want to create a data view containing the relevant metrics and dimensions.
@@ -463,6 +472,8 @@ To ensure you can report on the correct data in Workspace, you want to create a 
          | Tracking Code (Lookup) | Example Lookup Data Dataset | String | _aresstagevalidationco.tracking_code |
          
       1. Select the **[!UICONTROL Tracking Code (Event)]** dimension in the **[!UICONTROL Dimensions]** list. In the component panel:
+
+         ![Tracking code summary data](../assets/tracking-code-summary-data.png)
          1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Enable **[!UICONTROL Create grouping]**.
          1. Select **[!UICONTROL Campaign Id]** from the **[!UICONTROL Dimension]** dropdown list. This step ensures that event data and summary data is properly combined for reporting.
@@ -471,6 +482,8 @@ To ensure you can report on the correct data in Workspace, you want to create a 
             1. You notice that **[!UICONTROL Hide component in reporting]** in **[!UICONTROL Component settings]** is now automatically enabled.
 
       1. Select the **[!UICONTROL Revenue]** metric from the **[!UICONTROL Metrics]** list. In the component panel:
+
+         ![Revenue summary data](../assets/revenue-summary-data.png)
          1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
             1. Select ![AttributionLastTouch](/help/assets/icons/AttributionLastTouch.svg) **[!UICONTROL Last Touch]** from the **[!UICONTROL Attribution Model]** dropdown list.
             1. Select **[!UICONTROL 30 Day]** from the **[!UICONTROL Lookback window]** dropdown list.
@@ -479,6 +492,8 @@ To ensure you can report on the correct data in Workspace, you want to create a 
             1. Select **[!UICONTROL 2]** from the **[!UICONTROL Decimal places]** dropdown list.
 
       1. Select the **[!UICONTROL Orders]** metric from the **[!UICONTROL Metrics]** list. In the component panel:
+
+         ![Orders summary data](../assets/orders-summary-data.png)
          1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
             1. Select ![AttributionLastTouch](/help/assets/icons/AttributionLastTouch.svg) **[!UICONTROL Last Touch]** from the **[!UICONTROL Attribution Model]** dropdown list.
             1. Select **[!UICONTROL 30 Day]** from the **[!UICONTROL Lookback window]** dropdown list.
