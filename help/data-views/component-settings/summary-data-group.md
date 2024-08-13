@@ -1,6 +1,6 @@
 ---
 title: Summary data group component settings
-description: Combine numeric values in a dimension.
+description:  Details and on how to configure dimensions from datasets to ensure you can report properly on summary data.
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin

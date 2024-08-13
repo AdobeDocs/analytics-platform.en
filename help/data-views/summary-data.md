@@ -1,6 +1,6 @@
 ---
 title: Summary data
-description: Details and information on how to use summary data in a data view.
+description: Details and information on how to use and configure summary data in a data view.
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin

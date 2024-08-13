@@ -1,6 +1,6 @@
 ---
-title: Ingest summary data into Adobe Experience Platform and use in Customer Journey Analytics
-description: Learn how to bring summary data into Customer Journey Analytics
+title: Use summary data in Customer Journey Analytics
+description: Use explaining all details on how to bring summary data into Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
