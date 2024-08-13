@@ -17,7 +17,7 @@ When you first start using this [!UICONTROL Analysis Workspace], you might wonde
 * where to create a filter, 
 * and more. 
 
-To help with these questions,[!UICONTROL Quick Insights] leverages an algorithm that presents you with the most popular dimensions, metrics, filters, and date ranges your company uses. This algorithm is based on your own company's usage of data components in [!UICONTROL Analysis Workspace]. In fact, you see dimensions, metrics, and filter tagged with [!UICONTROL POPULAR] in the drop-down list, as shown here:
+To help with these questions,[!UICONTROL Quick insights] leverages an algorithm that presents you with the most popular dimensions, metrics, filters, and date ranges your company uses. This algorithm is based on your own company's usage of data components in [!UICONTROL Analysis Workspace]. In fact, you see dimensions, metrics, and filter tagged with [!UICONTROL POPULAR] in the drop-down list, as shown here:
 
 ![The Quick Insights panel.](assets/popular-tag.png)
 
@@ -67,10 +67,10 @@ You have to select at least one dimension and one metric for the visualization t
 
 
 
-You can speficy the building blocks in three ways:
+You can specify the building blocks in three ways:
 
 * Drag and drop components from the left rail.
-* Start typing in one of the building block fields. When input is found, the building block field auto populates with possilbe values.
+* Start typing in one of the building block fields. When input is found, the building block field auto populates with possible values.
 * Select a building block drop-down (for example `Country` in **[!UICONTROL Analyze]** and search the list for **[!UICONTROL Country code]**).
 
 

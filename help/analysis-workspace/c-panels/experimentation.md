@@ -40,12 +40,12 @@ Without these labels present, the Experiment panel does not work, since there ar
 
 ## Use
 
-To use the experimentation panel:
+To use an [!UICONTROL Experimentation] panel:
 
-1. Create an Experimentation panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
+1. Create an [!UICONTROL Experimentation] panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
 
 
-1. Specify the [input](#panel-inputs) for the panel.
+1. Specify the [input](#panel-input) for the panel.
 
 1. Observe the [output](#panel-output) for the panel.
 
@@ -56,7 +56,7 @@ To use the experimentation panel:
    >If the necessary setup in Customer Journey Analytics data views has not been completed, you receive this message before you can proceed: [!UICONTROL Please configure the experiment and variant dimensions in Data views].
    >
 
-### Panel inputs
+### Panel input
 
 Configure the panel input settings:
 
@@ -72,7 +72,7 @@ Configure the panel input settings:
 
 1. Click **[!UICONTROL Build]**.
 
-### Panel outputs
+### Panel output
 
 The Experimentation panel returns a rich set of data and visualizations to help you better understand how your experiments are performing. At the top of the panel, a summary line is provided to remind you of the panel settings you selected. At any time, you can edit the panel by clicking the edit pencil at the top right.
 

@@ -28,7 +28,9 @@ The Media Concurrent Viewers panel enables analysis of concurrent viewers over t
 
 ## Use
 
-1. Create a Media concurrent viewers panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
+To use an [!UICONTROL Media concurrent viewers] panel:
+
+1. Create a [!UICONTROL Media concurrent viewers] panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
 
 1. Ensure you select a data view for the panel that has components configured from the Streaming Media Collection Add-on.
 
