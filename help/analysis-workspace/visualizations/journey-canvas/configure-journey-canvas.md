@@ -97,7 +97,7 @@ To add a node to a Journey canvas visualization:
    | Placement of component | Visualization updates | 
    |---------|----------|
    | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. | 
-   | An existing node | Components automatically combine to form a new node with the same OR/AND logic as fallout. |
+   | An existing node | Components automatically combine to form a new node with the same OR/AND logic as fallout.<p>See [Combine nodes](#combine-nodes) for more information.</p> |
    | An arrow that connects 2 existing nodes | The node displays between the two existing nodes where it was dropped and is connected to both existing nodes. <p>See [Connect nodes](#connect-nodes) for more information.</p> | 
    | The edge of an existing node | The node displays next to the node where it was dropped and is connected to it. <p>See [Connect nodes](#connect-nodes) for more information.</p> |
 
@@ -113,6 +113,19 @@ To connect nodes in Journey canvas:
 
 1. Drag the dot to any of the 4 sides of the node that you want to connect to. 
 
+### Combine nodes
+
+The logic that is applied to nodes when they are combined differs depending on the component types you are combining, as follows:
+
+* When you combine multiple filters, they are joined with AND.
+
+* When you combine multiple dimension items or metrics, they are joined with OR.
+
+Do either of the following to combine nodes in Journey canvas:
+
+* Drag a node onto another node.
+
+* Select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**.<!--Is there a limit on how many you can combine? -->
 
 ### Rearrange nodes
 

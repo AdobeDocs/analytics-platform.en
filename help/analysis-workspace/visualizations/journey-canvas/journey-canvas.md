@@ -49,7 +49,7 @@ Journey canvas is essential for fallout analysis involving journeys with multipl
 
 >[!NOTE]
 >
->Organization who have purchased Journey Optimizer can use Journey canvas to analyze Journey Optimizer journeys. If your organization doesn't have access to Journey Optimizer, you can still [build analyses in Journey canvas](#build-analyses-in-customer-journey-analytics).
+>Only organizations that have purchased Journey Optimizer can use Journey canvas to analyze Journey Optimizer journeys. If your organization doesn't have access to Journey Optimizer, you can still [build analyses in Journey canvas](#build-analyses-in-customer-journey-analytics).
 
 Analyzing Journey Optimizer journeys in Journey canvas provides deep, actionable insights on how users interact with a journey. 
 
