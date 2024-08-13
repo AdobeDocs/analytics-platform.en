@@ -16,19 +16,19 @@ The following panel types are available in Analysis Workspace for [!UICONTROL Cu
 | Panel name | Description |
 | --- | --- |
 | [Blank panel](/help/analysis-workspace/c-panels/blank-panel.md) | Choose from available panels and visualizations to start your analysis. |
-| [Attribution panel](attribution.md) | Quickly compare and visualize any number of attribution models using any dimension and conversion metric. |
+| [Attribution](attribution.md) | Quickly compare and visualize any number of attribution models using any dimension and conversion metric. |
 | [Experimentation](experimentation.md) | Compare different user experiences, marketing, or messaging variations to determine which is best at driving a specific outcome. |
 | [Freeform](freeform-panel.md) | Perform unlimited comparisons and breakdowns, then add visualizations to tell a rich data story. |
 | [Media average minute audience](average-minute-audience-panel.md) | Analyze the average minute audience for a specific piece of content, or over a customized time period. | 
 | [Media concurrent viewers](media-concurrent-viewers.md) | Analyze concurrent viewers over time, with details on peak concurrency and the ability to break down and compare. |
-| [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analyze playback time spent to understand where peak concurrencies occur or where drop oﬀs happen. |
+| [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analyze playback time spent to understand where peak concurrencies occur or where drop-oﬀs happen. |
 | [Next or previous item](next-previous.md) | Show the next or previous pages visitors go to. |
-| [Quick Insights](quickinsight.md) | Quickly build a freeform table and an accompanying visualization to analyze and uncover insights faster. |
+| [Quick insights](quickinsight.md) | Quickly build a freeform table and an accompanying visualization to analyze and uncover insights faster. |
 
 
-[!UICONTROL Quick Insights], [!UICONTROL Blank] and [!UICONTROL Freeform] panels are great places to start your analysis, while [!UICONTROL Attribution IQ] lends itself to more advanced analyses. A `"+"` button is available in projects so you can add blank panels at any time.
+[!UICONTROL Quick insights], [!UICONTROL Blank] and [!UICONTROL Freeform] panels are great places to start your analysis, while [!UICONTROL Attribution] lends itself to more advanced analyses. A ![AddCircle](/help/assets/icons/AddCircle.svg) is available at the bottom of your canvas, so you can add blank panels at any time.
 
-The default starting panel is the [!UICONTROL Freeform] panel, but you can make the [blank panel](/help/analysis-workspace/c-panels/blank-panel.md) your default as well.
+The default starting panel is the [!UICONTROL Freeform] panel, but you can make the [Blank panel](/help/analysis-workspace/c-panels/blank-panel.md) or [Quick insights](/help/analysis-workspace/c-panels/quickinsight.md) your default as well. See [Projects & Analysis preferences](/help/analysis-workspace/user-preferences.md#projects--analyses-preferences).
 
 ## Create a panel
 
@@ -53,7 +53,7 @@ When you create a new panel, the default data view is based on the data view of 
 >The selected data view determines what dimensions, metrics, and filters are available for building visualizations in a panel.
 >
 >
->When you switch a data view for a panel, some of the components might not be available in that new data view. This will cause your visualization to not properly render. You might see warning like 
+>When you switch a data view for a panel, some of the components might not be available in that new data view. This change can cause your visualization to not render properly. You might see warnings like:
 >
 >* This panel contains components that are not enabled in the selected data view. Please change the data view or enable the required components in the data view. 
 >* Unable to render visualization: Please check your columns and rows to ensure they contain valid components.
@@ -61,9 +61,13 @@ When you create a new panel, the default data view is based on the data view of 
 
 ## Calendar {#calendar}
 
-The panel calendar controls the reporting range for tables and visualizations within a panel.
+The panel calendar controls the reporting date range for tables and visualizations within a panel.
 
-Note: If a (purple) date range component is used within a table, visualization or panel drop zone, the component overrides the panel calendar.
+>[!NOTE]
+>
+>If a ![Calendar](/help/assets/icons/Calendar.svg) Date range component is used within a visualization or panel (for example, as a filter), the date range component overrides the panel calendar.
+>
+
 
 ![The calendar window showing the selected date range.](assets/panel-calendar.png)
 
@@ -81,7 +85,7 @@ Drag and drop any filters from the left rail into the panel drop zone to begin f
 
 #### Ad-hoc filters 
 
-Non-filter components can also be dragged directly into the drop zone to create ad-hoc filters, saving you the time and effort of going to the Filter Builder. Filters created in this way are automatically defined as event-level filters. This definition can be modified by clicking the information icon (i) next to the filter, then the pencil-shaped edit icon and editing it in the Filter Builder.
+Non-filter components can also be dragged directly into the drop zone to create ad-hoc filters, saving you the time and effort of going to the [Filter builder](/help/components/filters/filter-builder.md). Filters created in this way are automatically defined as event-level filters. This definition can be quickly modified by selecting the ![Edit](/help/assets/icons/Edit.svg) icon next to the filter name. 
 
 Ad-hoc filters are a type of quick filter, and are local to the project. They only show up in the left rail when you make the ad-hoc filters public.
 
