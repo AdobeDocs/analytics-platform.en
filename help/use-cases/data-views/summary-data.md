@@ -565,3 +565,8 @@ Your final project should look like the one shown below.
 ![Example Project Using Summary Data, showing Summary Data Panel with Summary Data Report](../assets/summary-workspace.png)
 
 
+>[!MORELIKETHIS]
+>
+>[Summary data](/help/data-views/summary-data.md)
+>[Summary data group component settings](/help/data-views/component-settings/summary-data-group.md)
+
