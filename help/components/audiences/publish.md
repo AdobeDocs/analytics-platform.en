@@ -101,13 +101,19 @@ RTCP then examines each namespace/ID combination and looks for a profile that it
 
 To view Customer Journey Analytics audiences in Platform:
 
+>[!AVAILABILITY]
+>
+>The functionality described in the following steps is in the Limited Testing phase of release and might not be available yet in your environment. If these steps don't match what you see in your environment, use the following steps instead: Go to [!UICONTROL **Segments**] > [!UICONTROL **Create segments**] > [!UICONTROL **Audiences**] tab > [!UICONTROL **CJA Audiences**]. 
+>
+>This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
+
 1. Expand [!UICONTROL **Customer**] in the left rail, then select [!UICONTROL **Audiences**]. <!-- is there a folder called "Customer Journey Analytics? -->
 
 1. Select the [!UICONTROL **Browse**] tab.
 
-   ![Adobe Expericen Platform UI highlighting Segments in the left-pane and CJA Audiences in the main panel.](assets/audiences-aep.png)
+   ![Audiences option in the left panel](assets/audiences-aep.png)
 
-1. To locate the audience that you published from Customer Journey, do any of the following:
+1. To locate the audience that you published from Customer Journey Analytics, do any of the following:
 
    * Sort the table by the [!UICONTROL **Origin**] column to view audiences that show [!UICONTROL **Customer Journey Analytics**] as the origin.
    
