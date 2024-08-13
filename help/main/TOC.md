@@ -85,10 +85,12 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [No value options](../data-views/component-settings/no-value-options.md)
     + [Persistence](../data-views/component-settings/persistence.md)
     + [Substring](../data-views/component-settings/substring.md)
+    + [Summary data group](../data-views/component-settings/summary-data-group.md)
     + [Value bucketing](../data-views/component-settings/value-bucketing.md)
   + [Standard component reference](../data-views/component-reference.md)
   + [BI extension](../data-views/bi-extension.md)
   + [Derived fields](../data-views/derived-fields/derived-fields.md)
+  + [Summary data](../data-views/summary-data.md)
   + [Labels and policies](../data-views/data-governance.md)
 
 + Workspace projects {#cja-workspace}
@@ -340,11 +342,12 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Configure streaming Google Analytics data into Platform](../use-cases/ga/streaming.md)
     + [Report on Google Analytics data in Customer Journey Analytics](../use-cases/ga/report.md)
   + Data ingestion {#data-ingestion}
-    + [Ingest Marketo Engage data into Adobe Experience Platform and report in Customer Journey Analytics](../use-cases/data-ingestion/marketo.md)
-    + [Ingest Adobe Experience Platform audiences into Customer Journey Analytics](../use-cases/data-ingestion/ingest-aep-segments.md)
+    + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
+    + [Ingest and use Experience Platform audiences ](../use-cases/data-ingestion/ingest-aep-segments.md)
   + Data views {#data-views}
     + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
+    + [Use summary data](../use-cases/data-views/summary-data.md)
   + Data export {#data-export}
     + [Overview](../use-cases/data-export/overview.md)
     + [BI extension](../use-cases/data-export/bi-extension.md)
