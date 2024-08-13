@@ -7,9 +7,15 @@ role: User
 ---
 # Media Playback Time Spent panel
 
+>[!NOTE]
+>
+>The Media average minute audience panel is available only to customers who have purchased the Streaming Media Collection Add-on for Customer Journey Analytics.
+>Contact your Adobe sales representative or Adobe account team for more information. 
+>
+
 In Analysis Workspace, Playback Time Spent is the amount of time spent viewing your media streams at a specific point in time. It includes pause, buffer, and time to start.
 
-The Media Playback Time Spent panel enables analysis of playback over time, with details on peak concurrency and the ability to break down and compare. 
+The [!UICONTROL Media playback time spent] panel enables analysis of playback over time, with details on peak concurrency and the ability to break down and compare. 
 
 Customers who have purchased the Streaming Media Collection Add-on can analyze playback time spent to gain valuable insight into the quality of content and viewer engagement. And to help when troubleshooting or planning for volume or scale.
 
@@ -25,18 +31,20 @@ Playback Time Spent can help you understand:
 
 +++
 
-## Use the Media Playback Time Spent panel
+## Use
 
-1. Go to a report suite with components enabled from the Streaming Media Collection Add-on. 
+To use an [!UICONTROL Media playback time spent] panel:
 
-1. Select the panel icon on the far-left, then drag the panel into your Analysis Workspace project.
+1. Create a [!UICONTROL Media playback time spent] panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
 
-1. Continue with the following sections to customize the Media Playback Time Spent panel
+1. Ensure you select a data view for the panel that has components configured from the Streaming Media Collection Add-on.
 
-   * [Panel Inputs](#panel-inputs)
-   * [Panel Output](#panel-output)
+1. Specify the [input](#panel-input) for the panel.
 
-## Panel Inputs {#Input}
+1. Observe the [output](#panel-output) for the panel.
+
+
+### Panel input
 
 You can configure the Media Playback Time Spent panel using these input settings:
 
@@ -49,11 +57,10 @@ You can configure the Media Playback Time Spent panel using these input settings
 |Time format|You can view the playback time spent in either `Hours:Minutes:Seconds` (default) or in `Minutes` (which is displayed in whole numbers, rounded up at 0.5). |
 |Date sequence display|If you've placed at least two date range filters as series breakdowns, you see the option to select either overlay (default) or sequential. Overlay displays the lines with a common x-axis start so that they run in parallel, while sequential displays the lines with their specific x-axis start. If the data lines up (for example, filter 1 ends at 8:44 pm and filter 2 starts at 8:45 pm), then the lines show in sequence. |
 
-## Default view
 
 ![The Media playbook time spent default view.](assets/mpts_default_view.png)
 
-## Panel Output {#Output}
+### Panel output
 
 The Media Playback Time Spent panel returns a line chart and summary numbers to include details for the maximum, minimum, and/or sum of playback time spent. At the top of the panel, a summary line is provided to remind you of the panel settings you selected.
 
@@ -63,7 +70,7 @@ If you select series breakdown, a line on the line chart and a summary number is
 
 ![The Media playback time spent output showing a line chart and summary.](assets/mpts_outputs1.png)
 
-### Data Source
+### Data source
 
 The only metric that can be used in this panel is Playback Time Spent.
 

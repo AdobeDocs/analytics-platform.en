@@ -7,6 +7,8 @@ role: User
 ---
 # Attribution panel {#attribution-panel}
 
+<!-- markdownlint-disable MD0334 -->
+
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_button"
 >title="Attribution"
@@ -19,8 +21,10 @@ role: User
 >abstract="Quickly compare and visualize any number of attribution models using any dimension and conversion metric.<br/><br/>**Parameters**<br/>**Channel**<br/>The dimension to attribute against. This dimension can be marketing channels, campaigns, or any other dimension.<br/>**Models**<br/>The model determines how credit is assigned to touchpoints.<br/>**Lookback window**<br/>This setting determines the window of data attribution that applies to each conversion."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ panel"
 
+<!-- markdownlint-enable MD034 -->
 
-The [!UICONTROL Attribution] panel is an easy way to build an analysis comparing various attribution models. It is a feature that gives you a dedicated workspace to use and compare attribution models.
+
+The [!UICONTROL Attribution] panel is an easy way to build an analysis comparing various attribution models. The panel provides you with a dedicated workspace to use and compare attribution models.
 
 Customer Journey Analytics enhances attribution by letting you:
 
@@ -33,21 +37,37 @@ Customer Journey Analytics enhances attribution by letting you:
 * Analyze key marketing sequences visually: explore paths that led to conversion visually with multi-node flow and fallout visualizations.
 * Build calculated metrics: use any number of attribution allocation methods.
 
-## Create an attribution panel
+## Use
 
-1. Create an attribution panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).
+To use an [!UICONTROL Attribution] panel:
 
-1. Add a metric that you want to attribute and add any dimension to attribute against. Examples include Marketing Channels or custom dimensions, such as internal promotions.
+1. Create an [!UICONTROL Attribution] panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).
+
+1. Specify the [input](#panel-input) for the panel.
+
+1. Observe the [output](#panel-output) for the panel.
+
+### Panel input
+
+You can configure the Attribution panel using these input settings:
+
+1. Add a **[!UICONTROL Success metric]** and a dimension from the **[!UICONTROL Channel]** that you want to attribute against. Examples include Marketing Channels or custom dimensions, such as internal promotions.
 
    ![The Attribution panel window showing several selected dimensions and metrics.](assets/attribution-panel.png)
 
-1. Select the attribution models and lookback window that you want to compare.
+1. Select one or more attribution models from **[!UICONTROL Included models]** and a lookback window from the **[!UICONTROL Lookback window]** that you want to use for comparison.
 
-1. The Attribution panel returns a rich set of data and visualizations that compare attribution for the selected dimension and metric.
+1. Select **[!UICONTROL Build]** to build the visualizations in the panel.
+
+### Panel output
+
+The **[!UICONTROL Attribution]** panel returns a rich set of data and visualizations that compare attribution for the selected dimension and metric.
 
    ![The Attribution panel visualizations that compare selected metrics and dimensions.](assets/attr_panel_vizs.png)
 
-## Attribution visualizations
+### Attribution visualizations
+
+The following visualization are part of the panel ouput.
 
 * **Total metric**: The total number of conversions that occurred over the reporting time window, and are attributed to the dimension you selected.
 * **Attribution Comparison Bar**: Visually compares the attributed conversions across each of the dimension items from your selected dimension. Each bar color represents a distinct attribution model.

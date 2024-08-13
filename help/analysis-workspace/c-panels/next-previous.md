@@ -9,7 +9,17 @@ role: User, Admin
 
 This panel contains a number of tables and visualizations to identify the next or previous dimension item for a specific dimension. For example, you might want to explore which pages customers went to most often after they visited the Home page.
 
-## Input
+## Use
+
+To use a [!UICONTROL Next or previous item] panel:
+
+1. Create a [!UICONTROL Next or previous item] panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
+
+1. Specify the [input](#panel-input) for the panel.
+
+1. Observe the [output](#panel-output) for the panel.
+
+### Panel input
 
 You can configure the [!UICONTROL Next or previous item] panel using these input settings:
 
@@ -26,7 +36,7 @@ You can configure the [!UICONTROL Next or previous item] panel using these input
 
 Select **[!UICONTROL Build]** to build the panel.
 
-## Output
+### Panel output
 
 The [!UICONTROL Next or previous item] panel returns a rich set of data and visualizations to help you better understand what occurrences follow or precede specific dimension items.
 
@@ -36,9 +46,9 @@ The [!UICONTROL Next or previous item] panel returns a rich set of data and visu
 
 | Visualization | Description |
 | --- | --- |
-| Horizontal bar | Lists the next (or previous) items based on the dimension item that you select. Hovering over an individual bar highlights the corresponding item in the Freeform table. |
-| Summary number | High-level summary number of all next or previous dimension item occurrences for the current month (so far.) |
-| Freeform table | Lists the next (or previous) items based on the dimension item that you select, in a table format. For example, which were the most popular pages (by occurrences) that people went to after (or before) the home page or the workspace page. |
+| **[!UICONTROL Horizontal bar]** | Lists the next (or previous) items based on the dimension item that you select. Hovering over an individual bar highlights the corresponding item in the Freeform table. |
+| **[!UICONTROL Summary number]** | High-level summary number of all next or previous dimension item occurrences for the current month (so far.) |
+| **[!UICONTROL Freeform table]** | Lists the next (or previous) items based on the dimension item that you select, in a table format. For example, which were the most popular pages (by occurrences) that people went to after (or before) the home page or the workspace page. |
 
 {style="table-layout:auto"}
 

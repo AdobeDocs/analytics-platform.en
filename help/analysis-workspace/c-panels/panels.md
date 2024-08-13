@@ -103,15 +103,15 @@ Static drop-down filters can also be used to consolidate many projects into one.
 
 #### Create static drop-down filters
 
-* For drop-down filters using dimension items, select a single dimension from the left rail and drop the dimension into the panel drop zone **while holding `[Shift]`**. This action creates a drop-down filter with all the dimension items that are associated with that dimension. 
+* For drop-down filters using dimension items, select a single dimension from the left rail and drop the dimension into the panel drop zone while holding ⇧ (Shift). This action creates a drop-down filter with all the dimension items that are associated with that dimension. 
 
-  Or, if you want the drop-down filter to include only specific dimension items that are associated with a dimension, click the right arrow icon next to the desired dimension in the left rail. This action exposes all available dimension items. Select multiple dimension items from this list using `[Shift + Click]` or `[Ctrl + Click]`, then drop them into the panel drop zone **while holding** `[Shift]`.
+  Or, if you want the drop-down filter to include only specific dimension items that are associated with a dimension, click the right arrow icon next to the desired dimension in the left rail. This action exposes all available dimension items. Select multiple dimension items from this list using ⇧+![Select](/help/assets/icons/Select.svg) (Shift + select) or ^+![Select](/help/assets/icons/Select.svg) (Control + select), then drop them into the panel drop zone **while holding** ⇧.
 
-* For drop-down filters using a single component type (for example, only dimensions, or only filters, or only metrics), select multiple items of the same type in the left rail using `[Shift + Click]` or `[Ctrl + Click]`. Then drop the items into the panel drop zone **while holding `[Shift]`**.
+* For drop-down filters using a single component type (for example, only dimensions, or only filters, or only metrics), select multiple items of the same type in the left rail using ⇧+![Select](/help/assets/icons/Select.svg) or ^+![Select](/help/assets/icons/Select.svg). Then drop the items into the panel drop zone **while holding** ⇧.
 
   A single drop-down filter is created with components that you selected.
 
-* For drop-down filters using a mix of component types (such as 2 metrics and 3 filters), select multiple components using `[Shift + Click]` or `[Ctrl + Click]`. Drop the selection into the panel drop zone **while holding `[Shift]`**. In this context, all component types are treated as separate drop-down filters. For example, if you include both metrics and dimension items in your selection, two separate drop-down filters are created: one drop-down filter includes dimension items, and the other includes metrics.
+* For drop-down filters using a mix of component types (such as 2 metrics and 3 filters), select multiple components using ⇧+![Select](/help/assets/icons/Select.svg) or ^+![Select](/help/assets/icons/Select.svg). Drop the selection into the panel drop zone **while holding** ⇧. In this context, all component types are treated as separate drop-down filters. For example, if you include both metrics and dimension items in your selection, two separate drop-down filters are created: one drop-down filter includes dimension items, and the other includes metrics.
 
 A drop-down filter provides the following context menu options:
 
@@ -133,7 +133,7 @@ Users can use the drop-down filter menu in any of the following ways to filter t
 
 ### Dynamic drop-down filters
 
-Dynamic drop-down filters allow you to determine available values based on data within the panel's reporting range and values in other drop-down filters. For example, you can create two dynamic drop-downs using a Countries dimension and a Cities dimension. When you select a country from the UICONTROL Countries drop-down list, the Cities drop-down list dynamically adjusts to show only cities within that country.
+Dynamic drop-down filters allow you to determine available values based on data within the panel's reporting range and values in other drop-down filters. For example, you can create two dynamic drop-downs using a Countries dimension and a Cities dimension. When you select a country from the **[!UICONTROL Countries]** drop-down list, the **[!UICONTROL Cities]** drop-down list dynamically adjusts to show only cities within that country.
 
 This same concept applies to all dimensions; only dimension items that appear within the panel's date range and selected filters are visible. Dimension items selected in static drop-down filters affect available values in dynamic drop-down filters. However, the inverse is not true; Dimension items selected in dynamic drop-down filters do not affect available values in static drop-down filters.
 
@@ -141,7 +141,7 @@ Manual selection of dimension items is available if you anticipate a certain dim
 
 To create a dynamic drop-down filter:
 
-* Drag and drop a single dimension into the panel drop zone **while holding `[Shift]`**.
+* Drag and drop a single dimension into the panel drop zone **while holding** ⇧.
 * Dynamic drop-down filters are not available for metrics, filters, or date ranges.
 * Right-click a drop-down filter and select **[!UICONTROL Delete filter]** to delete it.
 

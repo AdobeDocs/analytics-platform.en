@@ -7,7 +7,7 @@ role: User
 ---
 # Freeform panel
 
-A Freeform Panel is a blank panel with a freeform table included as the default starting state.
+A Freeform Panel is a blank panel with a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualization as the default starting state.
 
 ![The default Freeform panel showing a blank panel with a freeform table.](assets/freeform-panel.png)
 

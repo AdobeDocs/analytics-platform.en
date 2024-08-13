@@ -7,16 +7,17 @@ role: User
 ---
 # Blank panel
 
-A blank panel shows all the visualizations that you can create within a panel to build a completely customized analysis.
+A blank panel shows shows a selection of panels (indicated by ![WebPage](/help/assets/icons/WebPage.svg)) or visualizations that you can create to build a completely customized analysis. 
 
-Select a visualization (like **[!UICONTROL Cohort table]**) to add to the panel, or select a panel option (like **[!UICONTROL Attribution]**) to modify the panel for a specific purpose.
+When you select a panel, the blank panel transitions to the selected panel. When you select a visualization, the visualization is added to the blank panel. For example, select a visualization (like ![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL Cohort table]**) to add to the panel, or select a panel (like ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Attribution]**) to modify the panel for a specific purpose.
 
 
 ![](assets/blank-panel.png)
 
 You can:
 
-* Select ![AddCircle](/help/assets/icons/AddCircle.svg) **within** a panel to add another visualization.
+* Select ![AddCircle](/help/assets/icons/AddCircle.svg) **within** a panel to add another visualization. A popup appears allowing to to select the visualization.
+
 * Select ![AddCircle](/help/assets/icons/AddCircle.svg) **outside** a panel to add another blank panel.
 
 
