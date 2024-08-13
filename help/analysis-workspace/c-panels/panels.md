@@ -53,13 +53,13 @@ When you create a new panel, the default data view is based on the data view of 
 >The selected data view determines what dimensions, metrics, and filters are available for building visualizations in a panel.
 >
 >
->When you switch a data view for a panel, some of the components might not be available in that new data view. This change can cause your visualization to not render properly. You might see warnings like:
+>When you switch a data view for a panel, some of the components might not be available in that new data view. This change can cause your visualization not to render properly. You might see warnings like:
 >
 >* This panel contains components that are not enabled in the selected data view. Please change the data view or enable the required components in the data view. 
 >* Unable to render visualization: Please check your columns and rows to ensure they contain valid components.
 >
 
-## Calendar {#calendar}
+## Calendar
 
 The panel calendar controls the reporting date range for tables and visualizations within a panel.
 
