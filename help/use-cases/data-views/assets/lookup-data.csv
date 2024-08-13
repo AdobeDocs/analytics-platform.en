@@ -1,0 +1,19 @@
+﻿_id,tracking_code,ad_group,campaign_name
+1,abc123,abc-adgroup,123 Campaign
+2,def123,def-adgroup,123 Campaign
+3,ghi123,ghi-adgroup,123 Campaign
+4,abc456,abc-adgroup,456 Campaign
+5,def456,def-adgroup,456 Campaign
+6,ghi456,ghi-adgroup,456 Campaign
+7,abc789,abc-adgroup,789 Campaign
+8,def789,def-adgroup,789 Campaign
+9,ghi789,ghi-adgroup,789 Campaign
+10,abc987,abc-adgroup,987 Campaign
+11,def987,def-adgroup,987 Campaign
+12,ghi987,ghi-adgroup,987 Campaign
+13,abc654,abc-adgroup,654 Campaign
+14,def654,def-adgroup,654 Campaign
+15,ghi654,ghi-adgroup,654 Campaign
+16,abc321,abc-adgroup,321 Campaign
+17,def321,def-adgroup,321 Campaign
+18,ghi321,ghi-adgroup,321 Campaign

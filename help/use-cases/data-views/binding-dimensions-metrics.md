@@ -6,11 +6,11 @@ feature: Use Cases
 role: User
 ---
 
-# Use binding dimensions and metrics in Customer Journey Analytics
+# Use binding dimensions and metrics
 
 Customer Journey Analytics offers several ways to persist dimension values beyond the hit that they are set on. One of the persistence methods that Adobe offers is known as Binding. In previous versions of Adobe Analytics, this concept was known as merchandising.
 
-While you can use binding dimensions with top-level event data, this concept is best used when working with [Arrays of objects](/help/use-cases/object-arrays.md). You can attribute a dimension to one part of an object array without applying it to all of the attributes in a given event. For example, you can attribute a search term to one product in your shopping cart object array without binding that search term to the entire event.
+While you can use binding dimensions with top-level event data, this concept is best used when working with [Arrays of objects](/help/use-cases/object-arrays.md). You can attribute a dimension to one part of an object array without applying the dimensoon to all attributes in a given event. For example, you can attribute a search term to one product in your shopping cart object array without binding that search term to the entire event.
 
 ## Example 1: Use binding dimensions to attribute additional product attributes to a purchase
 
@@ -77,18 +77,18 @@ Go into **[!UICONTROL Data views]** and bind the [!DNL Product Color] dimension 
 
 ![Binding dimension](../assets/binding-dimension.png)
 
-When you set this persistence model, Customer Journey Analytics takes note of the product name whenever product color is set. When it recognizes the same product name in a subsequent event for this person, the product color is brought over as well. The same data when you bind product color to product name would look similar to the following:
+When you set this persistence model, Customer Journey Analytics takes note of the product name whenever the product color is set. When it recognizes the same product name in a subsequent event for this person, the product color is brought over as well. The same data when you bind product color to product name would look similar to the following:
 
 | product.color | revenue |
 | --- | --- |
 | white | 1600 |
 | neon orange | 499 |
 
-## Example 2: Use binding metrics to tie search term to a product purchase
+## Example 2: Use binding metrics to tie a search term to a product purchase
 
-One of the most common merchandising methods in Adobe Analytics has been to bind a search term to a product so each search term gets credit for it's appropriate product. Consider the following customer journey:
+One of the most common merchandising methods in Adobe Analytics has been to bind a search term to a product so each search term gets credit for its appropriate product. Consider the following customer journey:
 
-1. A visitor arrives to your site and searches for "boxing gloves". The searches metric increments by one, and the top three search results are displayed.
+1. A visitor arrives to your site and searches for `boxing gloves`. The searches metric increments by one, and the top three search results are displayed.
 
     ```json
     {
@@ -125,7 +125,7 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
     }
     ```
 
-3. The visitor then searches for "tennis racket". The searches metric increments by one, and the top three search results are displayed.
+3. The visitor then searches for `tennis racket`. The searches metric increments by one, and the top three search results are displayed.
 
     ```json
     {
@@ -165,7 +165,7 @@ One of the most common merchandising methods in Adobe Analytics has been to bind
     }
     ```
 
-5. The visitor searches a third time for "shoes". The searches metric increments by one, and the top three search results are displayed.
+5. The visitor searches a third time for `shoes`. The searches metric increments by one, and the top three search results are displayed.
 
     ```json
     {
@@ -244,9 +244,9 @@ If you used [!UICONTROL Most Recent] allocation with the search term dimension, 
 | --- | --- |
 | shoes | $204.97 |
 
-While this example includes only one person, many persons who search for different things can misattribute search terms to different products, making it difficult to determine what the best search results actually are.
+While this example includes only one person, many persons who search for different things can misattribute search terms to different products. Multiple persons search for different things make it difficult to determine what the best search results actually are.
 
-You can now bind [!DNL Search Term] to [!DNL Product Name] whenever the [!DNL Searches] metric is present to correctly attribute search term to revenue.
+You can now bind [!DNL Search Term] to [!DNL Product Name] whenever the [!DNL Searches] metric is present to attribute the search term correctly to revenue.
 
 ![Binding metric](../assets/binding-metric.png)
 
@@ -262,11 +262,11 @@ Customer Journey Analytics automatically detects the relationship between the se
 
 Setting the search term dimension to this persistence model executes the following logic:
 
-* When the search term dimension is set, check for the presence of product name.
-* If product name is not there, do nothing.
-* If product name is there, check for the presence of the Searches metric.
+* When the search term dimension is set, check for the presence of a product name.
+* If the product name is not there, do nothing.
+* If the product name is there, check for the presence of the Searches metric.
 * If the Searches metric is not there, do nothing.
-* If the Searches metric is there, bind the search term to all product names in that event. It copies itself down to the same level as product name for that event. In this example, it is treated as product.search_term.
+* If the Searches metric is there, bind the search term to all product names in that event. It copies itself down to the same level as the product name for that event. In this example, it is treated as `product.search_term`.
 * If the same product name is seen in a subsequent event, the bound search term is carried forward to that event as well.
 
 ## Example 3: Bind video search term to user profile
@@ -328,7 +328,7 @@ You can bind a search term to a user profile so persistence between profiles rem
     }
     ```
 
-If you use Most Recent allocation with Person expiration, the `"grownup movie"` search term is attributed to the last view of the kid's show.
+If you use Most Recent allocation with Person expiration, the `grownup movie` search term is attributed to the last view of the kid's show.
 
 | Search term | Video starts |
 | --- | --- |
@@ -339,7 +339,7 @@ However, if you bound `search_term` to `ProfileID`, each profile's searches woul
 
 ![Visitor binding](../assets/binding-profileid.png)
 
-Analysis Workspace would correctly attribute the second episode of Orangey to the search term `"kids show"` without taking searches from other profiles into account.
+Analysis Workspace attributes the second episode of Orangey to the search term `kids show` without taking searches from other profiles into account.
 
 | Search term | Video starts |
 | --- | --- |
@@ -350,7 +350,7 @@ Analysis Workspace would correctly attribute the second episode of Orangey to th
 
 You can bind values to dimensions set on previous events. When you set a variable with a binding dimension, Customer Journey Analytics takes into account the persisted value. If this behavior is undesired, you can adjust the binding dimension's persistence settings. Consider the following example where `product_finding_method` is set on an event, then bound to the Cart Adds metric on the following event.
 
-1. A visitor performs a search for `"camera"`. Note that no products are set on this page.
+1. A visitor performs a search for `camera`. Note that no products are set on this page.
 
     ```json
     {
