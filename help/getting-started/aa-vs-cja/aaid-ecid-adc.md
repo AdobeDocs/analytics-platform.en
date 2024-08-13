@@ -13,7 +13,7 @@ Adobe Analytics data contains multiple identity fields. Three important identity
 
 Adobe Analytics ID (AAID) is the primary device identifier in Adobe Analytics and is guaranteed to exist on every event passed through the Analytics source connector. AAID is sometimes referred to as the "Legacy Analytics ID" or `s_vi` cookie id. However, an AAID is created even if the `s_vi` cookie is not present. AAID is represented by the `post_visid_high/post_visid_low` columns in [Adobe Analytics data feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html#columns%2C-descriptions%2C-and-data-types). 
 
-In the Analytics source connector, AAID is transformed to `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. The AAID field on a given event contains a single identity which may be one of several different types as described in [Order of Operations for Analytics IDs](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html%5B%5D). (Within an entire report suite, AAID may contain a mix of types across events. The type for each event is indicated in the `post_visid_type` column in Analytics data feeds.) See also: [Data column reference](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html).
+In the Analytics source connector, AAID is transformed to `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. The AAID field on a given event contains a single identity which may be one of several different types as described in [Order of Operations for Analytics IDs](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html). (Within an entire report suite, AAID may contain a mix of types across events. The type for each event is indicated in the `post_visid_type` column in Analytics data feeds.) See also: [Data column reference](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html).
 
 ## ECID
 
@@ -46,6 +46,12 @@ Within identityMap:
 * If ECID is present it is marked as the primary identity for the event. Note that in this case AAID may be based on ECID per the discussion above.
 Otherwise, AAID is marked as the primary identity for the event.
 * AACUSTOMID is never marked as the Primary ID for the event. However, if AACUSTOMID is present, then AAID is based on AACUSTOMID as per the discussion above.
+
+When the identity or identities are copied into `identityMap`, `endUserIDs._experience.mcid.namespace.code` is also set on the same event:
+
+* If AAID is present, `endUserIDs._experience.aaid.namespace.code` is set to "AAID".
+* If ECID is present, `endUserIDs._experience.mcid.namespace.code` is set to "ECID".
+* If AACUSTOMID is present, `endUserIDs._experience.aacustomid.namespace.code` is set to "AACUSTOMID".
 
 ## Customer Journey Analytics and Primary ID
 

@@ -1,10 +1,10 @@
 ---
 description: Explains the continuous feature release strategy for Customer Journey Analytics
-title: Customer Journey Analytics feature releases
+title: Customer Journey Analytics feature release strategy
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 feature: Release Notes
 ---
-# Customer Journey Analytics feature releases
+# Customer Journey Analytics feature release strategy
 
 Customer Journey Analytics releases operate on a continuous delivery model which allows for a scalable, phased approach to feature deployment.
 
@@ -22,7 +22,7 @@ With each feature release, the timeline from RTP to GA may vary. The goal is to 
 
 ## Feature flags
 
-Feature flags are used to control the visibility of new features during release. Adobe recommends adding `app.launchdarkly.com` to your firewall's [allowed list](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html) for an optimal experience during release. Shortly after GA is reached, the flag is removed.
+Feature flags are used to control the visibility of new features during release. Adobe recommends allowing `app.launchdarkly.com` through your organization's firewall for an optimal experience during releases. These flags are removed after a feature is released to everyone. See [Domains used by Customer Journey Analytics](../technotes/domains.md) for more information.
 
 You can view your active feature flags at any time under **Help > About Workspace > Active feature flags**.
 

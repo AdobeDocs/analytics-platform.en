@@ -27,15 +27,45 @@ You can see whether a metric is approved ![Approved icon](https://spectrum.adobe
 
 Metrics are flexible in their use within Analysis Workspace. Drag a metric to an empty Freeform table to see that metric trended over the project's date period. You can also drag a metric when a dimension is present to see that metric compared to each dimension item. Dragging a metric on top of an existing metric header replaces it, and dragging a metric next to a header lets you see both metrics side-by-side.
 
-## Calculated metrics
+## Use metrics in Analysis Workspace
 
-Calculated metrics allow you to easily see how metrics relate to each other using simple operators or statistical functions. There are several ways to create calculated metrics:
+Metrics can be used in various ways within Analysis Workspace. For information about how to add metrics and other types of components to Analysis Workspace, see [Use components in Analysis Workspace](/help/components/use-components-in-workspace.md).
 
-You can select **[!UICONTROL Components]** > **[!UICONTROL Calculated metrics]**. This takes you to the [Calculated metric builder](/help/components/calc-metrics/calc-metr-overview.md), where you can build custom metrics from existing metrics.
+## Create calculated metrics
 
-To make it easier to quickly create calculated metrics, **[!UICONTROL Create metric from selection]** has been added to the column right-click menu in Freeform Tables. This option displays when one or more header column cells are selected.
+Calculated metrics allow you to easily see how metrics relate to each other using simple operators or statistical functions. 
 
-![Workspace panel highlighting Create from selection](assets/create-metric-from-selection.png)
+There are several ways to create calculated metrics. The method you choose determines whether the calculated metric is available from the component list across all projects, or only in the project where it was created.
+
+### Create calculated metrics for all projects
+
+You can use the calculated metric builder to create calculated metrics. When created in this way, calculated metrics are available in the component list and can then be used in projects throughout your organization. 
+
+For information about how to access the calculated metrics builder, see [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+
+### Create calculated metrics for a single project
+
+You can create quick calculated metrics that are available only for the project where they were created.
+
+To create a calculated metric for a single project:
+
+1. In Analysis Workspace, open the project where you want to create the calculated metric.
+
+1. In a freeform table, right-click one or more header column cells, then select **[!UICONTROL Create metric from selection]**
+
+   ![Workspace panel highlighting Create from selection](assets/create-metric-from-selection.png)
+
+1. To create a calculated metric for this project only, choose from the following options:
+
+   * [!UICONTROL **Divide**]
+   
+   * [!UICONTROL **Subtract**]
+
+   * [!UICONTROL **Add**]
+
+   * [!UICONTROL **Multiply**]
+
+   Or, to open the calculated metric builder and create the calculated metric for all projects, select [!UICONTROL **Open in Calculated Metric Builder**], then continue with [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
 [Calculated Metrics: Implementation-less metrics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
 

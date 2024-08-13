@@ -14,7 +14,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 # Adobe Customer Journey Analytics Guide {#using}
 
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
-
++ [AI Assistant for Adobe Customer Journey Analytics](../ai-assistant.md)
 + Release Notes {#releases}
   + [Latest release](../release-notes/latest.md)
   + [2024 releases](../release-notes/2024.md)
@@ -22,8 +22,8 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [2022 releases](../release-notes/2022.md)
   + [2021 releases](../release-notes/2021.md)
   + [2020 releases](../release-notes/2020.md)
-  + [Customer Journey Analytics releases](../release-notes/releases.md)
-  + [Customer Journey Analytics documentation updates](../release-notes/doc-changes.md)
+  + [Feature release strategy](../release-notes/releases.md)
+  + [Documentation updates](../release-notes/doc-changes.md)
 
 + Getting Started {#cja-overview}
   + [Customer Journey Analytics overview](../getting-started/cja-overview.md)
@@ -34,17 +34,22 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Compare Customer Journey Analytics to BI solutions](../getting-started/cja-vs-bi.md)
 
 + Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
-  + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
-  + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
+  + Upgrade to Customer Journey Analytics {#upgrade-to-cja}
+    + [Get started](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
+    + [Choose your upgrade path](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+    + [Send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
+    + [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
-    + [Utilize Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+    + [Use Adobe Analytics data in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
     + [Customer Journey Analytics feature support](../getting-started/aa-vs-cja/cja-aa.md)
     + [Compare terminology for Analytics data passed through the Analytics source connector](../getting-started/aa-vs-cja/terminology.md)
     + [Compare data processing across Adobe Analytics and Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
     + [Virtual reporting environments and sandbox environments](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
     + [Processing Rules, VISTA and classifications versus Data Prep](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
     + [AAID, ECID, AACUSTOMID and the Analytics source connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
+  + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
+  + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
 
 + Data Ingestion {#cja-data-ingestion}
   + [Data Ingestion Overview](../data-ingestion/data-ingestion.md)
@@ -64,6 +69,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Manage connections](../connections/manage-connections.md)
   + [Combined event datasets](../connections/combined-dataset.md)
   + [Standard lookups](../connections/standard-lookups.md)
+  + [B2B lookups](../connections/transform-datasets-b2b-lookups.md)
 
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
@@ -79,10 +85,12 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [No value options](../data-views/component-settings/no-value-options.md)
     + [Persistence](../data-views/component-settings/persistence.md)
     + [Substring](../data-views/component-settings/substring.md)
+    + [Summary data group](../data-views/component-settings/summary-data-group.md)
     + [Value bucketing](../data-views/component-settings/value-bucketing.md)
   + [Standard component reference](../data-views/component-reference.md)
-  + [SQL Connector](../data-views/sql-connector.md)
+  + [BI extension](../data-views/bi-extension.md)
   + [Derived fields](../data-views/derived-fields/derived-fields.md)
+  + [Summary data](../data-views/summary-data.md)
   + [Labels and policies](../data-views/data-governance.md)
 
 + Workspace projects {#cja-workspace}
@@ -93,6 +101,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Projects overview](../analysis-workspace/build-workspace-project/freeform-overview.md)
     + [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md)
     + [Save projects](../analysis-workspace/build-workspace-project/save-projects.md)
+    + [Project table of contents](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
     + Folders in Workspace {#workspace-folders}
       + [About Folders in Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
       + [Create Folders and Subfolders](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
@@ -108,6 +117,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage data sources](../analysis-workspace/visualizations/t-sync-visualization.md)
     + Freeform table {#freeform-table}
       + [Freeform table](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
+      + [Create hyperlinks for dimensions in a freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
       + Column and row settings {#column-row-settings}
         + [Column settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
         + [Row settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
@@ -170,6 +180,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Forecasting {#forecasting}
     + [Forecasting overview](../analysis-workspace/c-forecast/forecasting.md)
     + [View forecasts in Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
+    + [Statistical techniques used in forecasting service](../analysis-workspace/c-forecast/statistics-forecasting.md)
   + [User preferences](../analysis-workspace/user-preferences.md)
   + Workspace FAQs {#workspace-faq}
     + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)
@@ -182,11 +193,14 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Analytics dashboards - Overview](../mobile-app/home.md)
   + [Curator tasks](../mobile-app/curator.md)
   + [Create a mobile scorecard](../mobile-app/create-scorecard.md)
+  + [Manage mobile scorecards](../mobile-app/manage-scorecard.md)
   + [Set up executives to use dashboards](../mobile-app/set-up-execs.md)
   + [Executive user quick start guide](../mobile-app/executive.md)
 
 + Guided analysis {#guided-analysis}
     + [Overview](../guided-analysis/overview.md)
+    + Feature matrix {#feature-matrix}
+      + [Engagement](../guided-analysis/types/engagement.md)
     + Funnel {#funnel}
       + [Friction view](../guided-analysis/types/friction.md)
       + [Conversion trends view](../guided-analysis/types/conversion-trends.md)
@@ -208,6 +222,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Components {#cja-components}
   + [Components overview](../components/overview.md)
+  + [Use components in Analysis Workspace](../components/use-components-in-workspace.md)
   + [Add component descriptions](../components/add-component-descriptions.md)
   + Annotations {#annotations}
     + [Annotations overview](../components/annotations/overview.md)
@@ -221,6 +236,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create and publish audiences](../components/audiences/publish.md)
     + [Manage audiences](../components/audiences/manage.md)
   + Dimensions {#dimensions}
+    + [Dimensions overview](../components/dimensions/overview.md)
     + [Preview dimensions](../components/dimensions/view-dimensions.md)
     + [Break down dimensions](../components/dimensions/t-breakdown-fa.md)
     + [Time-parting dimensions](../components/dimensions/time-parting-dimensions.md)
@@ -229,6 +245,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Filters {#cja-filters}
     + [Filters overview](../components/filters/filters-overview.md)
     + [Create filters](../components/filters/create-filters.md)
+    + [Create sequential filters](../components/filters/seg-sequential-build.md)
     + [Share filters](../components/filters/filters-share.md)
     + [Tag filters](../components/filters/filters-tag.md)
     + [Filter the list of filters](../components/filters/filters-filter.md)
@@ -301,16 +318,16 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Stitching {#stitching}
   + [Overview](../stitching/overview.md)
-  + [How stitching works](../stitching/explained.md)
   + [Create and manage stitched datasets](../stitching/stitching-ui.md)
   + [Frequently Asked Questions](../stitching/faq.md)  
 
 + Adobe integrations {#integrations}
-  + [Integrate Adobe solutions with Customer Journey Analytics overview](/help/integrations/overview.md)
-  + [Integrate Adobe Analytics with Customer Journey Analytics](/help/integrations/aa.md)
-  + [Integrate Journey Optimizer data with Customer Journey Analytics](/help/integrations/ajo.md)
-  + [Integrate Decision Management data with Customer Journey Analytics](/help/integrations/ajo-od.md)
-  + [Integrate Customer AI with Customer Journey Analytics](/help/integrations/customer-ai.md)
+  + [Overview](/help/integrations/overview.md)
+  + [Integrate Adobe Analytics](/help/integrations/aa.md)
+  + [Integrate Target](/help/integrations/at.md)
+  + [Integrate Journey Optimizer data](/help/integrations/ajo.md)
+  + [Integrate Decision Management data](/help/integrations/ajo-od.md)
+  + [Integrate Customer AI](/help/integrations/customer-ai.md)
 
 + Data Governance {#cja-privacy}
   + [Data Governance](../privacy/privacy-overview.md)
@@ -325,11 +342,18 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Configure streaming Google Analytics data into Platform](../use-cases/ga/streaming.md)
     + [Report on Google Analytics data in Customer Journey Analytics](../use-cases/ga/report.md)
   + Data ingestion {#data-ingestion}
-    + [Ingest Marketo Engage data into Adobe Experience Platform and report in Customer Journey Analytics](../use-cases/data-ingestion/marketo.md)
-    + [Ingest Adobe Experience Platform audiences into Customer Journey Analytics](../use-cases/data-ingestion/ingest-aep-segments.md)
+    + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
+    + [Ingest and use Experience Platform audiences ](../use-cases/data-ingestion/ingest-aep-segments.md)
   + Data views {#data-views}
     + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
+    + [Use summary data](../use-cases/data-views/summary-data.md)
+  + Data export {#data-export}
+    + [Overview](../use-cases/data-export/overview.md)
+    + [BI extension](../use-cases/data-export/bi-extension.md)
+    + [Export datasets](../use-cases/data-export/export-datasets.md)
+    + [Export full table](../use-cases/data-export/export-full-table.md)
+    + [Query Service and Export datasets](../use-cases/data-export/queryservice-export-datasets.md)
   + B2B {#b2b}
     + [An example B2B project](../use-cases/b2b/example.md)
     + [Add account-level data as a lookup dataset](../use-cases/b2b/b2b.md)
@@ -339,20 +363,10 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Adobe Analytics data {#aa-data}
     + [Use Marketing channel dimensions](../use-cases/aa-data/marketing-channels.md)
     + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
-    + [Emulating data feeds](../use-cases/emulating-data-feeds.md)
   + Complex data {#complex-data}
     + [Use arrays of objects](../use-cases/object-arrays.md)
   + Derived fields {#derived-fields}
     + [Use derived fields to report on goals](../use-cases/goals-using-derived-fields.md)
-
-
-+ Administration {#cja-admin}
-  + [Guardrails](../admin/guardrails.md)
-  + [Access Control](../admin/cja-access-control.md)
-  + [View and manage usage](../admin/estimate-usage.md)
-  + [Deletion implications](../admin/cja-deletion.md)
-  + [Optimize Customer Journey Analytics performance](../admin/optimizing-performance.md)
-  + [IP addresses](../admin/ip-addresses.md)
 
 + Labs {#labs}
   + [Labs User Guide](../labs/labs.md)
@@ -363,8 +377,14 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
 
 + Tech notes {#technotes}
-  + [Customer Journey Analytics data centers](../technotes/cja-datacenters.md)
-
-+ [Customer Journey Analytics glossary](../getting-started/cja-glossary.md)
+  + [Access Control](../technotes/access-control.md)
+  + [Data centers](../technotes/data-centers.md)
+  + [Deletion implications](../technotes/deletion.md)
+  + [Domains](../technotes/domains.md)
+  + [Glossary](../technotes/glossary.md)
+  + [Guardrails](../technotes/guardrails.md)
+  + [IP addresses](../technotes/ip-addresses.md)
+  + [Optimize Customer Journey Analytics performance](../technotes/optimizing-performance.md)
+  + [View and manage usage](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)

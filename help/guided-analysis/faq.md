@@ -1,6 +1,6 @@
 ---
 title: Guided analysis FAQ
-description: Frequently asked questions around Guided analysis.
+description: Frequently asked questions for Guided analysis.
 exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: product analytics
@@ -8,11 +8,11 @@ role: User
 ---
 # Guided analysis FAQ
 
-Frequently asked questions around guided analysis.
+Frequently asked questions for guided analysis.
 
-+++**How can my organization be provisioned for guided analysis?**
++++**Does my organization have access to guided analysis?**
 
-Guided analysis is part of Adobe Product Analytics, a paid add-on to Customer Journey Analytics. If you would like to start using this add-on, contact your Adobe Account Team.
+Guided analysis views are included in all Customer Journey Analytics packages. See the [provisioning](overview.md#provisioning) section on the overview page to learn more about the views that your CJA package unlocks.
 
 +++
 
@@ -20,7 +20,7 @@ Guided analysis is part of Adobe Product Analytics, a paid add-on to Customer Jo
 
 If you are already using Customer Journey Analytics today, no additional implementation changes are needed. Guided analysis uses the same [Data views](../data-views/data-views.md) and [Connections](../connections/overview.md) as other CJA interfaces like [Analysis Workspace](../analysis-workspace/home.md). 
 
-To enable your end users to be most successful with guided analysis, it is recommended you have a strong event schema and managment strategy in place in Adobe Experience Platform and [Data views](../data-views/data-views.md).
+To enable your end users to be most successful with guided analysis, it is recommended you have a strong event schema and management strategy in place in Adobe Experience Platform and [Data views](../data-views/data-views.md).
 
 +++
 
@@ -32,23 +32,25 @@ To enable your end users to be most successful with guided analysis, it is recom
 
 +++
 
-+++**How does terminology compare between guided analysis and Analysis Workspace?**
++++**How does the terminology compare between guided analysis and Analysis Workspace?**
 
-Guided analysis uses terms that are more frequently used among product teams. You can reference this table when switching between guided analysis and [Analysis Workspace](../analysis-workspace/home.md).
+Guided analysis and [Analysis Workspace](../analysis-workspace/home.md) align on most key terminology, with a few small differences.
 
 | Guided analysis term | Analysis Workspace term |
 | --- | --- |
-| Event | Metric |
+| Event (a binary 1/0 metric) | Metric |
 | Users | People |
-| Property | Dimension |
-| Value | Dimension item |
+| Dimension | Dimension |
+| Dimension item | Dimension item |
 | Segment | Filter |
+| Filter | Report filter |
+| Calculated metric, Metrics | Calculated metric |
 
 {style="table-layout:auto"}
 
 +++
 
-+++**What are some differences around how guided analysis and Analysis Workspace approach reporting?**
++++**What are some differences in how guided analysis and Analysis Workspace approach reporting?**
 
 While [Analysis Workspace](../analysis-workspace/home.md) and guided analysis use the same underlying data, the way that each tool enables you to form queries of that data is different.
 
@@ -64,7 +66,7 @@ Consider the following example where you focus on data around your website's hom
 
    ![Dimension centered](assets/dimension-centered.png){style="border:1px solid gray"}
 
-* A typical event and user-centered guided analysis approach would be, "How many users have visited our home page?"
+* A typical event and user-centered guided analysis approach would be, "How many users have visited the home page?"
 
    ![Event centered](assets/event-centered.png){style="border:1px solid gray"}
 

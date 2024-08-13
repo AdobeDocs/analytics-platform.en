@@ -6,7 +6,7 @@ feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
 ---
-# Ingest and use data using source connectors.
+# Ingest and use data using source connectors
 
 This quick start guide explains how you can ingest data into Adobe Experience Platform using a source connector to a data provider and then use that data in Customer Journey Analytics.
 
@@ -166,39 +166,47 @@ See [Datasets UI guide](https://experienceleague.adobe.com/docs/experience-platf
 
 ## Use a source connector
 
-Depending on where you receive the loyalty data from, you pick the relevant source connector available within Adobe Experience Platform.
+Depending on where you receive the loyalty data from, you pick the relevant source connector available within Adobe Experience Platform. 
+
+You can ingest data from a variety of sources. Following are just a few of the many sources available:
+
+- Adobe applications (source connectors include [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager), and more)
+
+- Cloud storage (source connectors include [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob), and more)
+
+- Databases (source connectors include [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server), and more)
 
 To set up a source connector:
 
-1. In Adobe Experience Platform UI, select **[!UICONTROL Sources]** from [!UICONTROL CONNECTIONS] in the left rail.
+1. In Adobe Experience Platform, select **[!UICONTROL Sources]** from [!UICONTROL CONNECTIONS] in the left rail.
 
-2. Select your source connector from the list of available source connectors. Each connector follows a similar workflow:
+1. Select your source connector from the list of available source connectors. 
 
-    - **[!UICONTROL Authentication]**. You provide authentication details to access the source of data.
+   Each connector follows a similar workflow:
 
-    - **[!UICONTROL Select data]**: You select the source data that you want to ingest.
+   1. **[!UICONTROL Authentication]**. You provide authentication details to access the source of data.
 
-    - **[!UICONTROL Dataflow detail]**: You provide additional details on the dataflow, for example name and which dataset to use.
+   1. **[!UICONTROL Select data]**: You select the source data that you want to ingest.
 
-    - **[!UICONTROL Mapping]**: You map the incoming source data fields to attributes in the schema associated with the dataset that you selected.
+   1. **[!UICONTROL Dataflow detail]**: You provide additional details on the dataflow, for example name and which dataset to use.
 
-    - **[!UICONTROL Scheduling]**: If available, you can schedule the ingestion of data.
+   1. **[!UICONTROL Mapping]**: You map the incoming source data fields to attributes in the schema associated with the dataset that you selected.
 
-    - **[!UICONTROL Review]**: You see a review of the definition of the source connector.
+   1. **[!UICONTROL Scheduling]**: If available, you can schedule the ingestion of data.
 
-    Each connector provides detailed documentation.
+   1. **[!UICONTROL Review]**: You see a review of the definition of the source connector.
 
-    To access this documentation:
+1. Each connector provides detailed documentation. To access this documentation:
 
-    - On the connector tile, select the **[!UICONTROL ...]** next to [!UICONTROL Set up] or [!UICONTROL Add data].
+    1. On the connector tile, select the **[!UICONTROL ...]** next to [!UICONTROL Set up] or [!UICONTROL Add data].
 
         ![View documentation](./assets/sourceconnector-documentation.png)
 
-    - Select **[!UICONTROL View documentation]**.
+    1. Select **[!UICONTROL View documentation]**.
 
-See [Ingest and use data from traditional Adobe Analytics](./analytics.md) how to use the Adobe Analytics source connector.
+See [Ingest and use data from traditional Adobe Analytics](./analytics.md) for information about how to use the Adobe Analytics source connector.
 
-See [Ingest and use streaming data](./streaming.md) how to use the HTTP API source connector.
+See [Ingest and use streaming data](./streaming.md) for information about how to use the HTTP API source connector.
 
 See [Source Connectors overview](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) for an overview of source connectors including links to more information for each connector.
 
@@ -213,43 +221,43 @@ To create your connection:
 
 1. In the Customer Journey Analytics UI, select **[!UICONTROL Connections]** in the top navigation.
 
-2. Select **[!UICONTROL Create new connection]**.
+1. Select **[!UICONTROL Create new connection]**.
 
-3. In the [!UICONTROL Untitled connection] screen:
+1. In the **[!UICONTROL Untitled connection]** screen:
 
-    Name and describe your connection in [!UICONTROL Connection Settings].
+   1. Name and describe your connection in **[!UICONTROL Connection Settings]**.
 
-    Select the correct sandbox from the [!UICONTROL Sandbox] list in [!UICONTROL Data settings] and select the number of daily events from the [!UICONTROL Average number of daily events] list.
+   1. Select the correct sandbox from the **[!UICONTROL Sandbox]** list in **[!UICONTROL Data settings]** and select the number of daily events from the **[!UICONTROL Average number of daily events]** list.
 
-    ![Connection Settings](./assets/cja-connections-1.png)
+      ![Connection Settings](./assets/cja-connections-1.png)
     
-    Select **[!UICONTROL Add datasets]**. 
+   1. Select **[!UICONTROL Add datasets]**. 
     
-    In the [!UICONTROL Select datasets] step in [!UICONTROL Add datasets]:
+1. In the **[!UICONTROL Select datasets]** step in **[!UICONTROL Add datasets]**:
     
-    - Select the dataset that you created earlier (`Example Loyalty Dataset`) and any other dataset you want to include in your connection.
+   1. Select the dataset that you created earlier (`Example Loyalty Dataset`) and any other dataset you want to include in your connection.
 
-        ![Add datasets](./assets/cja-connections-2.png)
+      ![Add datasets](./assets/cja-connections-2.png)
 
-    - Select **[!UICONTROL Next]**.
+   1. Select **[!UICONTROL Next]**.
 
-    In the [!UICONTROL Datasets settings] step in [!UICONTROL Add datasets]:
+1. In the **[!UICONTROL Datasets settings]** step in **[!UICONTROL Add datasets]**:
 
-    - For each dataset:
+   For each dataset:
 
-        - Select a [!UICONTROL Person ID] from the available identities defined in the dataset schemas in Adobe Experience Platform.
+   1. Select a [!UICONTROL Person ID] from the available identities defined in the dataset schemas in Adobe Experience Platform.
     
-        - Select the correct data source from the [!UICONTROL Data source type] list. If you specify **[!UICONTROL Other]**, then add a description for your data source.
+   1. Select the correct data source from the [!UICONTROL Data source type] list. If you specify **[!UICONTROL Other]**, then add a description for your data source.
 
-        - Set **[!UICONTROL Import all new data]** and **[!UICONTROL Dataset backfill existing data]** according to your preferences.
+   1. Set **[!UICONTROL Import all new data]** and **[!UICONTROL Dataset backfill existing data]** according to your preferences.
 
-        ![Configure datasets](./assets/cja-connections-3.png)
+      ![Configure datasets](./assets/cja-connections-3.png)
 
-    - Select **[!UICONTROL Add datasets]**.
+   1. Select **[!UICONTROL Add datasets]**.
 
-    Select **[!UICONTROL Save]**.
+   1. Select **[!UICONTROL Save]**.
 
-See [Connections overview](../connections/overview.md) for more information on how to create and manage a connection and how to select and combine datasets.
+After you create a [connection](/help/connections/overview.md), you can perform various management tasks, such as [selecting and combining datasets](/help/connections/combined-dataset.md), [checking the status of a connection's datasets and the status of data ingestion](/help/connections/manage-connections.md), and more.
 
 ## Set up a data view
 
