@@ -22,6 +22,34 @@ Key features of the Journey canvas visualization include:
 
 * The option to build analyses of user journeys within Journey canvas or to automatically create them based on Journey Optimizer journeys.
 
+## Potential insights
+
+Following are a few examples of the types of insights Journey canvas can help provide:
+
+**Conversion** 
+
+* The paths on the journey that lead to the highest conversion rates
+
+* The number or percentage of people, sessions, or paths that converted (arrived at the ending touchpoint)
+
+* How the conversion rates of a given journey compare to the conversion rates of all other journeys
+
+* The average amount of time it took users on the journey to convert, in total or by individual path
+
+**Fallout**
+
+* The paths on the journey that lead to the highest fallout rates
+
+* The number or percentage of people, sessions, or paths that dropped off (started at the starting touchpoint but never arrived at the ending touchpoint)
+
+* How the drop-off rates of a given journey compare to the drop-off rates of all other journeys
+
+* The average amount of time before users dropped off of a path or dropped off of the journey
+
+**Other**
+
+* The number of people, sessions, or path occurrences on the journey compared to all other journeys
+
 
 ## Choose between Journey canvas and Fallout visualizations
 
@@ -49,11 +77,11 @@ Journey canvas is essential for fallout analysis involving journeys with multipl
 
 >[!NOTE]
 >
->Only organizations that have purchased Journey Optimizer can use Journey canvas to analyze Journey Optimizer journeys. If your organization doesn't have access to Journey Optimizer, you can still [build analyses in Journey canvas](#build-analyses-in-customer-journey-analytics).
+>If your organization doesn't have access to Journey Optimizer, you can still [build analyses in Journey canvas](#build-analyses-in-customer-journey-analytics).
 
 Analyzing Journey Optimizer journeys in Journey canvas provides deep, actionable insights on how users interact with a journey. 
 
-When you analyze a Journey Optimizer journey in Journey canvas, the journey is displayed with the same order, sequence, and structure as it has in Journey Optimizer. If you can make changes to it within Journey canvas, [changes are no longer synchronized from Journey Optimizer](#synchronization-between-journey-optimizer-and-journey-canvas).
+When you analyze a Journey Optimizer journey in Journey canvas, the journey displays with the same order, sequence, and structure as it has in Journey Optimizer. If you can make changes to it within Journey canvas, [changes are no longer synchronized from Journey Optimizer](#synchronization-between-journey-optimizer-and-journey-canvas).
 
 ### Benefits of analyzing Journey Optimizer journeys with Journey canvas
 
@@ -72,7 +100,7 @@ Using Journey canvas to analyze journeys that were created in Journey Optimizer 
 
 After you create an analysis of a Journey Optimizer journey in Journey canvas, data syncs in only one direction, from Journey Optimizer to Journey canvas. This means that changes made to a journey in Journey canvas are never reflected in Journey Optimizer.
 
-Furthermore, changes made to a journey in Journey Optimizer sync to Journey canvas only if the journey remains unmodified in Journey canvas. After you modify a journey in Journey Canvas, any changes you make to the journey are available only in Journey Optimizer. You can delete and [re-create the journey in Journey Optimizer](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) to analyze the journey with its latest changes.
+Furthermore, changes made to a journey in Journey Optimizer sync to Journey canvas only if the journey remains unmodified in Journey canvas. After you modify a journey in Journey canvas, any changes you make to the journey are available only in Journey Optimizer. You can delete and [re-create the journey in Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) to analyze the journey with its latest changes.
 
 ### Terminology differences between Journey Optimizer and Customer Journey Analytics
 
