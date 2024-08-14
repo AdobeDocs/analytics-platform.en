@@ -37,7 +37,7 @@ The following visualization types are available in Analysis Workspace:
 
 ## Add visualizations to a panel
 
-1. Open the Analysis Workspace project where you want to add a visualization.
+1. Open the Workspace project where you want to add a visualization.
 
 1. Use any of the following methods to add the visualization:
 
@@ -49,10 +49,14 @@ The following visualization types are available in Analysis Workspace:
 
    * Add a [blank panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel), then select the visualization that you want to add.
 
-   * Right-click an existing panel in your Analysis Workspace project, then select [!UICONTROL **Duplicate visualization**] or [!UICONTROL **Copy visualization**].
+   * Right-click an existing visualization in your Analysis Workspace project, then select [!UICONTROL **Duplicate visualization**] or [!UICONTROL **Copy visualization**].
+
+   * Use the Workspace **[!UICONTROL Insert]** menu to insert a visualization.
+
+   * From the context menu in a Freeform table, select **[!UICONTROL Visualize]**. Then select the visualization from the submenu. Based on the current selection in the table, Workspace determines which visualization to offer and interprets the data to build the requested visualization.
 
 
-## Legend {#legend}
+## Legend
 
 A visualization legend helps you to relate date in a source table to plotted series in the visualization. The legend is interactive - you can select a legend item to show/hide a series in the visualization, which is helpful if you want to simplify the data being visualized. 
 
@@ -69,7 +73,7 @@ To edit a legend label:
 1. Press **[!UICONTROL Enter]** to save.
 
 
-## Settings {#settings}
+## Settings
 
 Each visualization has its own settings. To access visualization settings, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** in the visualization header to show a popup.
 
@@ -86,7 +90,7 @@ You can control which data source and items or positions within that data source
 
 ### Settings
 
-Which **[!UICONTROL Settings]** are available depends on the visualization.
+Which visualization settings are available depends on the visualization. The table below summarizes the most common settings. Some visualizations do have specific settings. See the individual visualization documentation for more details.
 
 | Option | Description |
 | --- | --- |
@@ -109,6 +113,7 @@ Which **[!UICONTROL Settings]** are available depends on the visualization.
 | **[!UICONTROL Show min]** | Show the minimal value in the visualization. |
 | **[!UICONTROL Show max]** | Show the maximal value in the visualization. |
 | **[!UICONTROL Show trendline]** | Show a trendline in the visualization. When selected, you can select the type of trendline from the dropdown list. | 
+
 
 
 You can customize the settings for all visualizations that you create. For more information, see [User preferences](/help/analysis-workspace/user-preferences.md).
@@ -136,7 +141,7 @@ Use the context menu (available through alternate select, for example, right-cli
 
 ## Configuration
 
-Some visualizations (like Cohort table, Fallout, Flow, and others) have a configuration panel to assist you in building the visualization. Use ![Edit](/help/assets/icons/Edit.svg) at the top of the visualization to access that configuration and change options.
+Some visualizations (like Cohort table, Fallout, Flow, and others) have a configuration dialog to assist you in building the visualization. Use ![Edit](/help/assets/icons/Edit.svg) at the top of the visualization to access and change the configuration.
 
 ![Configuration pane](assets/configuration.png)
 

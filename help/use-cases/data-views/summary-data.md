@@ -1,6 +1,6 @@
 ---
 title: Use summary data in Customer Journey Analytics
-description: Use explaining all details on how to bring summary data into Customer Journey Analytics
+description: Use case explaining all details on how to bring summary data into Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin

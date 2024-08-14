@@ -15,7 +15,11 @@ With the visualization you can:
 * Analyze where customers go before and after specified checkpoints, such as entry, a specific dimension, or exit.
 * Create filters by designating a specific point in a chosen path
 
-[Flow Visualization video tutorial](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization)(4:56)
++++ View a video demonstration of the [!UICONTROL Flow] visualization.
+
+>[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
+
++++
 
 ## Inter-dimensional flows
 
@@ -23,7 +27,8 @@ You can show the [flow between dimensions](/help/analysis-workspace/visualizatio
 
 Each column could show a different dimension. Drag a dimension and drop in a drop zone to add that dimension to the diagram.
 
-## Configure a flow visualization
-
-For information about how to configure a flow visualization, see [Configure a flow visualization](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
+>[!MORELIKETHIS]
+>
+>[Configure a flow visualization](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
+>
 

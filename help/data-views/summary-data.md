@@ -70,7 +70,7 @@ Combining the summarized event data and on-site clickstream data enables you to 
 | ghi789 | 500 | $500 | 500 | $750 | 1.50 |
 
 
-See the [Ingest and report on summary data](/help/use-cases/data-views/summary-data.md) use case for a detailed article on how to make use of, report on, and analyze summary data in Customer Journey Analytics.
+See the [Use summary data](/help/use-cases/data-views/summary-data.md) use case for a detailed article on how to make use of, report on, and analyze summary data in Customer Journey Analytics.
 
 
 ## Prerequisites
@@ -139,4 +139,4 @@ Ensure the component settings for a summary data group are the same. See [Summar
 
 >[!MORELIKETHIS]
 >
->See the [Ingest and use summary data](/help/use-cases/data-views/summary-data.md) article for a detailed use case example on how to use and report on summary data.
+>See the [Use summary data](/help/use-cases/data-views/summary-data.md) article for a detailed use case example on how to use and report on summary data.

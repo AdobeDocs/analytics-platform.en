@@ -11,7 +11,7 @@ role: User
 
 The ![GraphArea](/help/assets/icons/GraphArea.svg) [!UICONTROL Area] visualization is like a line graph, but with a colored area below the line. Add an  area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics.
 
-![Area visualization showing multiple metrics including Page Views, Visits, Unique Visitors, and Bounce Rate.](assets/area.png)
+![Area visualization showing multiple metrics](assets/area.png)
 
 ## Area stacked
 

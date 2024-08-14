@@ -5,14 +5,14 @@ feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
 ---
-# Combo chart
+# Combo
 
-The ![Comment](/help/assets/icons/ComboChart.svg) [!UICONTROL Combo chart] visualization makes it easy to build quickly a comparison visualization without having to build a table first. You can easily view trends in your data in a line/bar combination.
+The ![Comment](/help/assets/icons/ComboChart.svg) [!UICONTROL Combo] visualization makes it easy to build quickly a comparison visualization without having to build a table first. You can easily view trends in your data in a line/bar combination.
 
-Use a [!UICONTROL Combo chart] to:
+Use a [!UICONTROL Combo] to:
 
 * Compare this week's orders to orders at the same time last month (and last year).
-* Quickly analyze and compare multiple metrics (like [!UICONTROL Unique Visitors] and [!UICONTROL Revenue]) against one another on the same chart.
+* Quickly analyze and compare multiple metrics (like [!UICONTROL Persons] and [!UICONTROL Revenue]) against one another on the same chart.
 * Analyze a metric against a function (such as [!UICONTROL Cumulative Average]) over a time horizon.
 
 Keep in mind that:
@@ -23,9 +23,9 @@ Keep in mind that:
 * You can apply up to 3 filters to a metric.
 * Calculated metrics are not supported in Combo charts.
 
-## Build a Combo chart
+## Use
 
-1. Add a ![Comment](/help/assets/icons/ComboChart.svg) combo chart. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+1. Add a ![Comment](/help/assets/icons/ComboChart.svg) [!UICONTROL Combo] visualization. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 
 1. From the drop-down lists, select a dimension for the X-axis and a metric for the Y-axis.
 

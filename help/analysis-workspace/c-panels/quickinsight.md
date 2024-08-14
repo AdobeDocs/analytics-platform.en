@@ -96,7 +96,7 @@ Other useful hints pop up in the [!UICONTROL Quick Insights Builder], some of th
 
     ![The Quick Insights Panel notification displayed after you click the Help icon.](assets/qibuilder4.png)
 
-You can analyze by multiple dimensions, adding multiple metrics, and filter by combining or comparing multiple filters:
+You can analyze multiple dimensions and metrics, combine or compare filters, and specify a data range:
 
 ![Quick Insights Builder Result](assets/qibuilder-result.png)
 
@@ -104,7 +104,9 @@ You can analyze by multiple dimensions, adding multiple metrics, and filter by c
 
 * Add more metrics **[!UICONTROL by]**: You can add up to 2 more metrics. See ➍ and ➎.
 
-* **[!UICONTROL filter by]**: You can add up to 2 more filters by using the AND or OR operators. Look at what happens to the table when you add Mobile Users OR Loyal Visitors. They are next to each other, above the metrics. If you added Mobile Users AND Loyal Visitors, you would see results from both filters together, and they would be stacked on top of each other in the table. See ➏ and ➐.
+* **[!UICONTROL filter by]**: You can add up to 2 more filters. For example, add Bookings as a filter and combine that filter with Frequent Bookers and First Time Fliers filters you compare. See ➏, ➐, and ➑.
+
+* on: You can specify the data range. See ➒.
 
 ## Known limitations
 

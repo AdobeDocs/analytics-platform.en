@@ -21,7 +21,7 @@ The ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.sv
 
 Use the **[!UICONTROL 100% stacked]** option in ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** to turn the chart into a 100% stacked visualization.
 
-![Horizontal bar stacked 100% showing Visits, Page Views, and Unique Visitors.](assets/horizontal-bar-stacked100.png)
+![Horizontal bar stacked 100%](assets/horizontal-bar-stacked100.png)
 
 
 >[!MORELIKETHIS]

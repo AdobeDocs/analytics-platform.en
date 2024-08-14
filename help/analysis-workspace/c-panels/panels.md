@@ -22,7 +22,7 @@ The following panel types are available in Analysis Workspace for [!UICONTROL Cu
 | [Media average minute audience](average-minute-audience-panel.md) | Analyze the average minute audience for a specific piece of content, or over a customized time period. | 
 | [Media concurrent viewers](media-concurrent-viewers.md) | Analyze concurrent viewers over time, with details on peak concurrency and the ability to break down and compare. |
 | [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analyze playback time spent to understand where peak concurrencies occur or where drop-oﬀs happen. |
-| [Next or previous item](next-previous.md) | Show the next or previous pages visitors go to. |
+| [Next or previous item](next-previous.md) | Show the next or previous pages people go to. |
 | [Quick insights](quickinsight.md) | Quickly build a freeform table and an accompanying visualization to analyze and uncover insights faster. |
 
 
@@ -32,10 +32,11 @@ The default starting panel is the [!UICONTROL Freeform] panel, but you can make 
 
 ## Create a panel
 
-To create a panel:
+To create a panel :
 
 * Drag and drop a panel from the **[!UICONTROL Panels]** left rail onto your canvas.
 * Select a panel from the [Blank panel](blank-panel.md).
+* Use **[!UICONTROL Insert]** menu in Workspace and select your panel. Alternatively, you can use the shortcut.
 
 ![Create a panel](assets/create-panel.png)
 
@@ -169,3 +170,8 @@ The following options are available:
 | **[!UICONTROL Edit Description]** | Add (or edit) a text description for the panel. |
 | **[!UICONTROL Get Panel Link]** | Direct someone to a specific panel within a project. When the link is clicked, the recipient is required to log in before being directed to the exact panel linked to. |
 
+## Configuration
+
+Some panels (like [!UICONTROL Attribution], [!UICONTROL Experimentation], [!UICONTROL Media average minute audience], and others) have a configuration dialog to assist you in building the visualization. Use ![Edit](/help/assets/icons/Edit.svg) at the top of the panel to access and change the configuration.
+
+![Configure a panel](/help/analysis-workspace/c-panels/assets/configure-panel.png)

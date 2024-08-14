@@ -13,7 +13,9 @@ You can even add filters within a touchpoint. For example, you might want to com
 
 There is no limitation on the number of steps that you can add or the number of dimensions used.
 
-You can do pathing on eVars, including merchandising eVars and [listVars](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/page-variables) (variables that can have multiple values per event, such as products, listVars, merchandising eVars and list props). For example, suppose that someone is looking at shoes, shirt on one page, and on the next page they're looking at shirt, socks. The next product flow report from shoes will be shirt and socks, NOT shirt.
+You can do pathing on dimensions, metrics, and filters. For example, suppose that someone is looking at shoes, shirt on one page, and on the next page they're looking at shirt, socks. The next product flow report from shoes will be shirt and socks, NOT shirt.
+
+## Use
 
 1. Add a ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]** visualization. See [Add a visualization to a panel](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 1. Drag a page, for example home, from the Page dimension onto the *Add touchpoint* dropdown list.
@@ -36,26 +38,19 @@ You can do pathing on eVars, including merchandising eVars and [listVars](https:
 
    ![The Page:CamerRoll or Page: Camera touchpoints highlighted.](assets/fallout-or.png)
 
-1. You can also **constrain individual touchpoints to the next event** (as opposed to "eventually") within the path. Underneath each touchpoint, there is a selector with the options **[!UICONTROL Eventual path]** and **[!UICONTROL Next hit]**, as shown here:
+1. You can also **constrain individual touchpoints to the next event** (as opposed to *eventually*) within the path. Underneath each touchpoint, there is a selector with the options **[!UICONTROL Eventual path]** and **[!UICONTROL Next event]**, as shown here:
 
    ![The All Visits view showing the Eventual Path option highlighted. ](assets/fallout-nexthit.png)
 
-   <table id="table_A91D99D9364B41929CC5A5BC907E8985"> 
-   <tbody> 
-   <tr> 
-      <td colname="col1"> <p>Eventual Path </p> <p>(default) </p> </td> 
-      <td colname="col2"> <p>Visitors are counted that will "eventually" land on the next page in the path, but not necessarily on the next event. </p> </td> 
-   </tr> 
-   <tr> 
-      <td colname="col1"> <p>Next Hit </p> </td> 
-      <td colname="col2"> <p>Visitors are counted that will land on the next page in the path on the very next event. </p> </td> 
-   </tr> 
-   </tbody> 
-   </table>
+   | Option | Description | 
+   |---|---|
+   | **[!UICONTROL Eventual path]** (default) | Persons are counted that will *eventually* land on the next page in the path, but not necessarily on the next event. |
+   | **[!UICONTROL Next event]** | re counted that will land on the next page in the path on the very next event. |
+
 
 ## Settings
 
-As part of the visualization, specific fallout settings are available.
+As part of the visualization, specific settings are available.
 
 | Fallout container | Description |
 |--- |--- |
@@ -64,7 +59,7 @@ As part of the visualization, specific fallout settings are available.
 
 ## Context menu
 
-As part of the visualization, specific fallout visualization context menu options are available.
+As part of the visualization, specific context menu options are available.
 
 ![Fallout options](assets/fallout-options.png)
 

@@ -11,8 +11,8 @@ In Freeform tables, a total row appears at each breakdown level and can show two
 
 ![Freeform Table highlighting the grand total and the table total.](assets/total-row.png)
 
-* **[!UICONTROL Table total]** ➊ - this total is typically equal to or a subset of the [!UICONTROL Grand total]. It reflects any table filters applied within the freeform table, including the [!UICONTROL Include None] option.
-* **[!UICONTROL Grand total]** (**[!UICONTROL out of]** *number*) ➋ - this total represents all events that have been collected. When a filter is applied either at the panel level or within the freeform table, this total adjusts to reflect all events that match the filter criteria.
+* **[!UICONTROL Table total]** ➊ - This total is typically equal to or a subset of the [!UICONTROL Grand total]. The total reflects any table filters applied within the freeform table, including the [!UICONTROL Include None] option.
+* **[!UICONTROL Grand total]** (**[!UICONTROL out of]** *number*) ➋ - This total represents all events that have been collected. When a filter is applied either at the panel level or within the freeform table, this total adjusts to reflect all events that match the filter criteria.
 
 
 

@@ -7,9 +7,9 @@ role: User
 ---
 # Histogram
 
-The ![Histogram](/help/assets/icons/Histogram.svg) [!UICONTROL Histogram] visualization is similar to a bar chart, but it groups numbers into ranges (buckets). Analytics automates the "bucketing" of numbers into ranges, but you can change the settings in [Advanced Settings](#advanced-settings).
+The ![Histogram](/help/assets/icons/Histogram.svg) [!UICONTROL Histogram] visualization is similar to a [!UICONTROL Bar] visualization, but it groups numbers into ranges (buckets). Analytics automates the "bucketing" of numbers into ranges, but you can change the settings in [Advanced Settings](#advanced-settings).
 
-## Build a histogram {#section_74647707CC984A1CB6D3097F43A30B45}
+## Use
 
 To create a histogram:
 

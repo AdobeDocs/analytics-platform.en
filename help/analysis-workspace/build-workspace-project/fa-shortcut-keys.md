@@ -10,62 +10,68 @@ role: User
 
 Hotkeys (keyboard shortcuts) are available in Analysis Workspace for seamless navigation, analysis and democratization.
 
-Note: `CTRL` = Windows and `command` = Mac 
+Note that on your keyboard the following symbols might be used:
+
+- **⇧** for *shift*.
+- **⌘** for *cmd* (command).
+- **⌃** for *ctrl* (control).
+- **⌥** for *alt* or *opt* (option).
 
 ## Navigation actions
 
-|Action|Shortcut|
-|---|---|
-|Create New Project|ctrl (or cmd) + shift + p|
-|Open Existing Project|ctrl (or cmd) + o|
-|Go to Panels pane|alt + shift + 1|
-|Go to Visualizations pane|alt + shift + 2|
-|Go to Components pane|alt + shift + 3|
-|Collapse/Expand all panels|alt + m|
-|Collapse/Expand Active panel|alt + ctrl + m|
-|Move to next panel|alt + Right Key|
-|Move to previous panel|alt + Left Key|
+ |  Action  |  Shortcut Mac  |  Shortcut Windows  | 
+ | --- | --- | --- | 
+ | Create New Project | *cmd+shift+p* |  *ctrl+shift+p*  | 
+ | Open Existing Project | *cmd+o* |  *ctr+o*  | 
+ | Go to Panels pane | *opt+shift+1* |  *alt+shift+1*  | 
+ | Go to Visualizations pane | *opt+shift+2*  | *alt+shift+2* |
+ | Go to Components pane | *opt+shift+3* | *alt+shift+3*  | 
+ | Collapse/Expand all panels | *opt+m* | *alt+m*  | 
+ | Collapse/Expand Active panel | *opt+cmd+m* | *alt+ctrl+m*  | 
+ | Move to next panel | *opt+▶︎* | *alt+▶︎*  | 
+ | Move to previous panel | *opt+◀︎* | *alt+◀︎*  | 
 
 ## Analysis actions
 
-|Action|Shortcut|
-|---|---|
-|Search left rail|ctrl + /|
-|Create an Alert|ctrl (or cmd) + shift + a|
-|Create Calculated Metric|ctrl (or cmd) + shift + c|
-|Create a Date Range|ctrl (or cmd) + shift + d|
-|Create a filter |ctrl (or cmd) + shift + e|
-|Clear All|alt + w|
-|Copy|ctrl (or cmd) + c|
-|Redo|ctrl (or cmd) + shift + z|
-|Undo|ctrl (or cmd) + z|
-|Refresh Components|alt + shift + r|
-|Refresh Project|alt + r|
-|Set as Landing Page|ctrl (or cmd) + shift + l|
+ |  Action  |  Shortcut Mac  |  Shortcut Windows  | 
+ | --- | --- | --- | 
+ | Search left rail | *cmd+/* | *ctrl+/* | 
+ | Create an Alert | *cmd+shift+a* | *ctrl+shift+a* | 
+ | Create Calculated Metric | *cmd+shift+c* | *ctrl+shift+c* | 
+ | Create a Date Range | *cmd+shift+d* | *ctrl+shift+d* | 
+ | Create a filter  | *cmd+shift+e* | *ctrl+shift+e* | 
+ | Clear All | *alt+w* | *opt+w* | 
+ | Copy | *cmd+c* | *ctrl+c* | 
+ | Redo | *cmd+shift+z* | *ctrl+shift+z* | 
+ | Undo | *cmd+z* | *ctrl+z* | 
+ | Refresh Components | *opt+shift+r* | *alt+shift+r* | 
+ | Refresh Project | *opt+r* | *alt+r* | 
+ | Set as Landing Page | *cmd+shift+l* | *ctrl+shift+l* | 
 
 ## Add panels and visualizations actions
 
-|Action|Shortcut|
-|---|---|
-|New Attribution Panel|alt + e|
-|New Blank Panel|alt + b|
-|New Freeform Panel|alt + a|
-|New Quick Insights Panel|alt + f|
-|New Freeform Table|alt + 1|
-|New Line Graph|alt + 2|
-|New Bar Chart|alt + 3|
+ |  Action  |  Shortcut Mac  |  Shortcut Windows  | 
+ | --- | --- | --- | 
+ | New Attribution Panel | *opt+e* | *alt+e* | 
+ | New Blank Panel | *opt+b* | *alt+b* | 
+ | New Freeform Panel | *opt+a* | *alt+a* | 
+ | New Quick Insights Panel | *opt+f* | *alt+f* | 
+ | New Freeform Table | *opt+1* | *alt+1* | 
+ | New Line Graph | *opt+2* | *alt+2* | 
+ | New Bar Chart | *opt+3* | *alt+3* | 
+ | New Combo chart | *opt+4* |  *alt+4* | 
 
 ## Democratization actions
 
-|Action|Shortcut|
-|---|---|
-|Save Project|ctrl (or cmd) + s|
-|Save Project As|ctrl (or cmd) + shift + s|
-|Save as Template|alt + t|
-|Download as CSV|ctrl (or cmd) + shift + v|
-|Download as PDF|ctrl (or cmd) + shift + b|
-|Curate Project Data|ctrl (or cmd) + shift + g|
-|Share Project|ctrl (or cmd) + g|
-|Get Project Link|alt + l|
-|Send File Now|alt + s|
-|Send file on schedule|shift + alt + s|
+ |  Action  |  Shortcut Mac  |  Shortcut Windows  | 
+ | --- | --- | --- | 
+ | Save Project | *cmd+s* | *ctrl+s* | 
+ | Save Project As | *cmd+shift+s* | *ctrl+shift+s* | 
+ | Save as Template | *opt+t* | *alt+t* | 
+ | Download as CSV | *cmd+shift+v* | *ctrl+shift+i* | 
+ | Download as PDF | *cmd+shift+b* | *ctrl+shift+b* | 
+ | Curate Project Data | *cmd+shift+g* | *ctrl+shift+g* | 
+ | Share Project | *cmd+g* | *ctrl+g* | 
+ | Get Project Link | *alt+l* | *alt+l* | 
+ | Send File Now | *alt+s* | *alt+s* | 
+ | Send file on schedule | *shift+alt+s* | *shift+alt+s* | 

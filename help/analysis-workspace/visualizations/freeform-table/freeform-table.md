@@ -11,6 +11,10 @@ In Analysis Workspace, a ![Table](/help/assets/icons/Table.svg) [!UICONTROL Free
 
 ![Freeform Table showing components in rows and columns including Visits and Online Orders for multiple web pages.](assets/opening-section.png)
 
+To create and configure a [!UICONTROL Freeform table]:
+
+* Add a ![Table](/help/assets/icons/Table.svg) **[!UICONTROL Freeform table]** visualization. See [Add a visualization to a panel](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+
 ## Automated tables
 
 The quickest way to build a table is to drop components directly into a blank project, panel or freeform table. A freeform table is built for you in a recommended format. [Watch the tutorial](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace).
@@ -83,4 +87,9 @@ The following [context menu](../freeform-analysis-visualizations.md#context-menu
 | **[!UICONTROL Start over]** | Delete the configuration for the current visualization so you can re-configure it from scratch. |
 
 
-
+>[!MORELIKETHIS]
+>
+>[Add a visualization to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualization settings](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>

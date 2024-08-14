@@ -17,7 +17,7 @@ A granularity drop-down in the visualization settings lets you change a trended 
 
 ## Bar stacked
 
-The ![GraphBarVerticalStacked](/help/assets/icons/GraphBarVerticalStacked.svg) visualization is like a bar chart, but with the series bars stacked on top of each other.
+The ![GraphBarVerticalStacked](/help/assets/icons/GraphBarVerticalStacked.svg) [!UICONTROL Bar stacked] visualization is like a bar chart, but with the series bars stacked on top of each other.
 
 ![Stacked bar chard showing multiple metrics.](assets/bar-stacked.png)
 

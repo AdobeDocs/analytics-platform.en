@@ -17,21 +17,22 @@ Analysis Workspace allows you to build analyses quickly to gather insights and t
 
 +++
 
-## Areas of Analysis Workspace
+## Interface
 
-The following image and accompanying table explain some of the main areas in Analysis Workspace:
+The following image and accompanying table explain the main elements in the Analysis Workspace user interface:
 
 ![Analysis Workspace window highlighting the far left and left rail, the canvas, and data view dropp-down menu.](assets/analysis-workspace-overview.png)
 
-| Location in image | Name and function |
-|---------|----------|
-| A | **Button rail:** Contains buttons for adding: ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Panels]**, ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Visualizations]**, and ![Curate](/help/assets/icons/Curate.svg) **[!UICONTROL Components]** to your project in Analysis Workspace. The rail also contains a ![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL Table of contents]** and ![Bookmark](/help/assets/icons/Bookmark.svg) **[!UICONTROL Data Dictionary]** button to open the data dictionary. |
-| B | **Left rail:** This area contains individual panels, visualizations, components, or lists. The content depends on the button selected in the button rail. |
-| C | **Canvas:** The main area where you drag content from the left rail to build your project. The project dynamically updates as you add panels, add visualizations to panels, and add components to visualizations. You can create multiple panels, and within each panel you can create multiple visualizations.<br/>Each panel is based on a selected data view. The selected data view determines available components like metrics and dimensions. See [Panels - Data view](/help/analysis-workspace/c-panels/panels.md#data-view) for more information. | 
+| Location | Name and function |
+|:---------:|----------|
+| 🅐 | Contains the name of the project, a menu structure to access functionality, a button ![ChevronLeft](/help/assets/icons/ChevronLeft.svg) to return back to your Project list, and a **[!UICONTROL Share]** button to share your Workspace project. <br/>Select the name of your project (for example: Example Project) at any time to change the name. <br/>Select ![StarOutline](/help/assets/icons/StarOutline.svg) to add your project as a favorite project ![Star](/help/assets/icons/Star.svg). |
+| 🅑 | **Button rail:** Contains buttons for accessing the key [features](#features) of Analysis Workspace: ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Panels]**, ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Visualizations]**, and ![Curate](/help/assets/icons/Curate.svg) **[!UICONTROL Components]** to your project in Analysis Workspace. The rail also contains a ![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL Table of contents]** and ![Bookmark](/help/assets/icons/Bookmark.svg) **[!UICONTROL Data Dictionary]** button to open the Data dictionary. |
+| 🅒 | **Left rail:** This area contains individual panels, visualizations, components, or lists. The content depends on the button selected in the button rail.  |
+| 🅓 | **Canvas:** The main area where you drag content from the left rail to build your project. The project dynamically updates as you add panels, add visualizations to panels, and add components to visualizations. You can create multiple panels, and within each panel you can create multiple visualizations.<br/>Each panel is based on a selected data view. The selected data view determines available components like metrics and dimensions. See [Panels - Data view](/help/analysis-workspace/c-panels/panels.md#data-view) for more information. | 
 
 ## Features
 
-Some of the key features available in Analysis Workspace through the button rail:
+The key features of Analysis Workspace are available through the button rail:
 
 | Icon | Feature | Description |
 |:---:|---|---|
@@ -41,6 +42,87 @@ Some of the key features available in Analysis Workspace through the button rail
 | ![ViewList](/help/assets/icons/ViewList.svg) | **[!UICONTROL Table of contents]** | The table of contents organizes all panels and visualizations in a collapsible list, allowing you to access a specific panel or visualization quickly. |
 |![Bookmark](/help/assets/icons/Bookmark.svg) | **Data dictionary** | The Data dictionary in Analysis Workspace helps both users and administrators keep track of and better understand the components in their Analytics environment.<br/>To learn more about the Data Dictionary, see the [Data Dictionary overview](/help/components/data-dictionary/data-dictionary-overview.md). |
 
+
+## Menu
+
+Most of the functionality of Analysis Workspace is available through drag and drop, and trough context menus within panels, visualizations and components.
+
+Functionality is also available through the Workspace menu and shortcuts or hotkeys. Shortcut keys differ depending on the operating system that your browser is running on. See the tables below for an overview.  
+
+Note that on your keyboard the following symbols might be used:
+
+- **⇧** for *shift*.
+- **⌘** for *cmd* (command).
+- **⌃** for *ctrl* (control).
+- **⌥** for *alt* or *opt* (option).
+
+See the tables below for an overview of the available menus.  
+
+| **[!UICONTROL Project]** | Shortcut Mac | Shortcut Windows | Description |
+|---|---|---|---|
+| **[!UICONTROL Create project]** | *shift+cmd+p* | *shift+ctrl+p* | Create a new project. |
+| **[!UICONTROL Create a mobile scorecard]** | | | [Create a new mobile scorecard](/help/mobile-app/create-scorecard.md). |
+| **[!UICONTROL Open...]** | *cmd+o* | *ctrl+o* | [Open an existing project](/help/analysis-workspace/build-workspace-project/save-projects.md#open-another-project). |
+| **[!UICONTROL Open previous version...]** | *opt+cmd+o* | *alt+ctrl+o* | [Open earlier versions of your project](/help/analysis-workspace/build-workspace-project/save-projects.md#open-previous-version). |
+| **[!UICONTROL Save]** | *cmd+s* | *ctrl+s* | [Save your project](/help/analysis-workspace/build-workspace-project/save-projects.md#save-projects). |
+| **[!UICONTROL Save with notes...]** | *opt+cmd+s* | *alt+ctrl+s* | [Add notes to the project version that you save](/help/analysis-workspace/build-workspace-project/save-projects.md#save-project-options). |
+| **[!UICONTROL Save as...]** | *shift+cmd+s* | *shift+ctrl+s* | [Save the project using a different name and details](/help/analysis-workspace/build-workspace-project/save-projects.md#save-project-options). |
+| **[!UICONTROL Refresh project]** | *opt+r* | *alt+r* | Refresh the project. |
+| **[!UICONTROL Download CSV]** | *shift+cmd+v* | *shift+ctrl+v* | Download the project as a CSV file. |
+| **[!UICONTROL Download PDF]**| *shift+cmd+b* | *shift+ctrl+b* | Download the project as a PDF document. |
+| **[!UICONTROL Project info & settings]** | | | Define settings for your projects, such as name, tags, color palette, and more. |
+| **[!UICONTROL User settings]** | | | [Configure preferences for using Analysis Workspace](/help/analysis-workspace/user-preferences.md). |
+
+
+| **[!UICONTROL Edit]** | Shortcut Mac | Shortcut Windows | Description |
+|---|---|---|---|
+| **[!UICONTROL Undo]** | *cmd+z* | *ctrl+z* | Undo the previous action. |
+| **[!UICONTROL Redo]** | *cmd+shift+z* | *ctrl+shift+z* | Redo the previous action. |
+| **[!UICONTROL Clear all]** | *opt+w* | *alt+w* | Clear all panels in the current project. | 
+
+| **[!UICONTROL Insert]** | Shortcut Mac | Shortcut Windows | Description |
+|---|---|---|---|
+| **[!UICONTROL Blank panel]** | *opt+b* | *alt+b* |  Insert a [Blank panel](/help/analysis-workspace/c-panels/blank-panel.md). |
+| **[!UICONTROL Media concurrent viewers]** | *opt+h* | *alt-h* |  Insert a [Media concurrent viewers](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) panel. |
+| **[!UICONTROL Media playback time spent]** | *opt+i* | *alt+i* |  Insert a [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) panel. |
+| **[!UICONTROL Media average minute audience]** | *opt+m* | *alt+m* |  Insert a [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. | 
+| **[!UICONTROL Attribution]** | *opt+e* | *alt+e* |  Insert an [Attribution](/help/analysis-workspace/c-panels/attribution.md) panel. |
+| **[!UICONTROL Freeform]** | *opt+a* | *alt+a* |  Insert a [Freeform](/help/analysis-workspace/c-panels/freeform-panel.md) panel. |
+| **[!UICONTROL Quick insights]** | *opt+j* | *alt+j* |  Insert a [Quick insights](/help/analysis-workspace/c-panels/quickinsight.md) panel. |
+| **[!UICONTROL Experimentation]** |*opt+x* | *alt+x* |  Insert an [Experimentation](/help/analysis-workspace/c-panels/experimentation.md) panel. |
+| **[!UICONTROL Freeform table]** | *opt+1* | *alt+1*|  Insert a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualization. |
+| **[!UICONTROL Line]** | *opt+2* | *alt+2* |  Insert a [Line](/help/analysis-workspace/visualizations/line.md) visualization. |
+| **[!UICONTROL Bar]** | *opt+3* | *alt+3* |  Insert a [Bar](/help/analysis-workspace/visualizations/bar.md) visualization. |
+| **[!UICONTROL Combo]** | *opt+4*| *alt+4* |  Insert a [Combo](/help/analysis-workspace/visualizations/combo-charts.md) visualization. | 
+
+
+| **[!UICONTROL Components]** | Shortcut Mac | Shortcut Windows | Description |
+|---|---|---|---|
+| **[!UICONTROL Create filter...]** | *shift+cmd+e* | *shift+ctrl+e* | Create a new [filter](/help/components/filters/create-filters.md). |
+| **[!UICONTROL Create metric...]** | *shift+cmd+c* | *shift+ctrl+c* | Create a new [calculated metric](/help/components/calc-metrics/calc-metr-overview.md). |
+| **[!UICONTROL Create date range...]** | *shift+cmd+d* | *shift+ctrl+d* | Create a new [data range](/help/components/date-ranges/overview.md). |
+| **[!UICONTROL Create annotation...]** | *shift+cmd+o* | *shift+ctrl+o* | Create a new [annotation](/help/components/annotations/overview.md). |
+| **[!UICONTROL Create audience...]** | *shift+cmd+u* | *shift+ctrl+u* | Create a new [audience](/help/components/audiences/audiences-overview.md). |
+| **[!UICONTROL Refewsh components]** | *opt+shift+r* | *alt+shift+r* | Refresh the components in the project. |
+
+| **[!UICONTROL Share]** | Shortcut Mac | Shortcut Windows | Description |
+|---|---|---|---|
+| **[!UICONTROL Share with Workspace users]** | *cmd+h* | *ctrl+h* | [Share the project with other Workspace users](/help/analysis-workspace/curate-share/share-projects.md#share-with-customer-journey-analytics-users-and-groups-in-your-organization). |
+| **[!UICONTROL Share with anyone]** | *opt+l* | *alt+l* | [Share a read-only version of the project with anyone](/help/analysis-workspace/curate-share/share-projects.md#share-a-link-to-a-project). |
+| **[!UICONTROL Send file]** | opt+s | *alt+s* | [Send the project as a CSV or PDF file to other recipients](/help/analysis-workspace/curate-share/send-schedule-files.md). |
+| **[!UICONTROL Schedule file export]** | *shift+opt+s* | *shift+alt+s* | [Send the project on a schedule as a CSV or PDF file to other recipients](/help/analysis-workspace/curate-share/send-schedule-files.md). | 
+| **[!UICONTROL Curate project data]** | *shift+cmd+g* | *shift+ctrl+g* | [Curate the project data](/help/analysis-workspace/curate-share/curate.md). |
+
+| Help | Shortcut Mac | Shortcut Windows | Description |
+|---|---|---|---|
+| **[!UICONTROL Videos]** | | | Open the Customer Journey Analytics YouTube channel in a new browser tab. |
+| **[!UICONTROL Help documentation]** | | | Open the documentation (you are actually reading just now...) in a new browser tab. |
+| **[!UICONTROL Help forum]** | | | Open the Adobe Analytics Experience League communities forum in a new browser tab. |
+| **[!UICONTROL Hotkeys]** | | | Show an overview of the hotkeys (shortcuts) you can use in Workspace. |
+| **[!UICONTROL Enable debugger]** |  | | Enable the debugger. Your project will reload. | 
+| **[!UICONTROL Disable debugger]** | | | Disable the debugger. Your project will reload. |
+| **[!UICONTROL Performance]** | | | Show a dialog displaying metrics on the **[!UICONTROL Analysis Workspace performance]**. Use **[!UICONTROL Download as CSV]** to download a CSV file of the performance metrics. |
+| **[!UICONTROL About Workspace]** | | | Show an **[!UICONTROL About Analysis Workspace]** dialog with version information, feature access levels and active feature flags. |
 
 ## Data sources
 
@@ -71,9 +153,10 @@ When you finish building out the project and it's gathering actionable insights,
 
 ## Additional resources {#resources}
 
-* Adobe offers hundreds of [Analytics video training tutorials](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/overview).
-* See [Adobe Experience Cloud release notes](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) for updates about new features.
-* A great way to become acquainted with Analysis Workspace is through the Analysis Workspace Training Tutorial template. This template walks you through common terminology and steps for building your first analysis in Workspace. To begin the tutorial:
+- Adobe offers hundreds of [Analytics video training tutorials](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/overview).
+- See [Adobe Experience Cloud release notes](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) for updates about new features.
+- A great way to become acquainted with Analysis Workspace is through the Analysis Workspace Training Tutorial template. This template walks you through common terminology and steps for building your first analysis in Workspace.
+  To begin the tutorial:
   1. On the [!UICONTROL **Workspace**] tab in Adobe Analytics, select **[!UICONTROL Learning]** on the left.
   1. Select **[!UICONTROL Learning Workspace Fundamentals]** from the **[!UICONTROL Learning paths]** offered.
      ![](assets/training-tutorial.png)

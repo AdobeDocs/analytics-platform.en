@@ -24,7 +24,7 @@ To launch auto-generated captions for a line visualization, select ![AEMScreen](
 
 Natural-language insights are now being generated. 
 
-Keep in mind that
+Keep in mind that:
 
 * You need a minimum of 3 data points for captions to generate successfully. Otherwise, you might get an error that reads "Not enough data to analyze."
 

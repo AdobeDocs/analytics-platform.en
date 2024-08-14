@@ -48,17 +48,23 @@ To create hyperlinks for one or more dimension items:
 
    * **Create a hyperlink for a single dimension item:** Right-click the dimension item within the table for which you want to create the hyperlink, then select [!UICONTROL **Create hyperlink**].
 
-     The [!UICONTROL **Create hyperlink**] dialog is displayed. The name of the dimension item for which you are creating a hyperlink is shown in the dialog. 
+     1. Open the context menu for the dimension item.
+     1. Select [!UICONTROL **Create hyperlink**] from the context menu.
 
-     ![Create hyperlink for a single item dialog](assets/hyperlink-dialog-single.png)
+        The [!UICONTROL **Create hyperlink**] dialog is displayed. The name of the dimension item for which you are creating a hyperlink is shown in the dialog. 
+
+        ![Create hyperlink for a single item dialog](assets/hyperlink-dialog-single.png)
 
    * **Create hyperlinks for all dimension items in a dimension column:** Right-click the dimension name in the dimension column header, then select [!UICONTROL **Create hyperlinks for all dimension items**].
 
-     ![Create hyperlink for a dimension](assets/hyperlink-multiple-add.png)
+     1. Open the context menu from the dimension column header.
+     1. Select [!UICONTROL **Create hyperlink for all dimension items**] from the context menu.
 
-     The [!UICONTROL **Create hyperlinks for all dimension items**] dialog is displayed. The name of the dimension for which you are creating hyperlinks is shown in the dialog. 
+        <!-- Do we really need a screenshot ![Create hyperlink for a dimension](assets/hyperlink-multiple-add.png) -->
 
-     ![Create hyperlinks dialog](assets/hyperlink-dialog-multiple.png)
+        The [!UICONTROL **Create hyperlinks for all dimension items**] dialog is displayed. The name of the dimension for which you are creating hyperlinks is shown in the dialog. 
+
+        ![Create hyperlinks dialog](assets/hyperlink-dialog-multiple.png)
 
 1. Choose from the following options:
 
@@ -93,15 +99,21 @@ You can edit hyperlinks that have been created on dimensions or dimension items 
 
 1. In a freeform table in Analysis Workspace, do one of the following:
 
-   * **Edit a hyperlink for a single dimension item:** Right-click the dimension item within the table where you want to edit the hyperlink.
+   * **Edit a hyperlink for a single dimension item:**
 
-     ![Edit hyperlink for a single dimension item](assets/hyperlink-single-edit.png)
+     1. Open the context menu for the dimension item.
+     1. Select [!UICONTROL **Edit hyperlink**] from the context menu.
 
-   * **Edit hyperlinks for all dimension items in a dimension column:** Right-click the dimension name in the dimension column header.
+     <!-- Do we really need a screenshot? ![Edit hyperlink for a single dimension item](assets/hyperlink-single-edit.png)-->
 
-     ![Edit hyperlink for a dimension](assets/hyperlink-dimension-edit.png)
+   * **Edit hyperlinks for all dimension items in a dimension column:**
 
-1. Select [!UICONTROL **Edit hyperlink**] from the right-click menu.
+     1. Open the context menu from the dimension column header.
+     1. Select **[!UICONTROL Edit hyperlink for all dimension items]** from the context menu.
+
+     <!-- Do we really need a screenshot? ![Edit hyperlink for a dimension](assets/hyperlink-dimension-edit.png)-->
+
+1. Select [!UICONTROL **Edit hyperlinks for all dimension items**] from the right-click menu.
 
    The [!UICONTROL **Edit hyperlinks for dimension items**] dialog is displayed.
 
@@ -121,15 +133,20 @@ To remove hyperlinks from dimension items:
 
 1. In a freeform table in Analysis Workspace, do one of the following:
 
-   * **Remove a hyperlink from a single dimension item:** Right-click the dimension item within the table where you want to remove the hyperlink.
+   * **Remove a hyperlink from a single dimension item:** 
+  
+     1. Open the context menu for the dimension item.
+     1. Select [!UICONTROL **Remove hyperlink**] from the context menu.
+     <!-- Do we really need a screenshot? ![Remove hyperlink from a single dimension item](assets/hyperlink-single-remove.png)-->
 
-     ![Remove hyperlink from a single dimension item](assets/hyperlink-single-remove.png)
+   * **Remove hyperlinks from all dimension items in a dimension column:** 
+  
+     1. Open the context menu from the dimension column header.
+     1. Select **[!UICONTROL Remove hyperlink for all dimension items]** from the context menu.
 
-   * **Remove hyperlinks from all dimension items in a dimension column:** Right-click the dimension name in the dimension column header.
+     <!-- Do we really need a screenshot? [Remove hyperlink from a dimension](assets/hyperlink-dimension-remove.png)-->
 
-     ![Remove hyperlink from a dimension](assets/hyperlink-dimension-remove.png)
 
-1. Select [!UICONTROL **Remove hyperlink**] from the right-click menu.
 
    The hyperlink is removed from the single dimension item if you selected a single dimension item. Or from all dimension items if you selected the dimension name in the dimension column header.
 

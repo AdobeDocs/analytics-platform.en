@@ -6,7 +6,7 @@ feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 role: User
 ---
-# [!UICONTROL Cohort Analysis] use cases
+# [!UICONTROL Cohort analysis] use cases
 
 This article describes some use case examples for [!UICONTROL Cohort Analysis].
 
@@ -22,7 +22,7 @@ You can create a six-month [!UICONTROL Cohort Analysis]:
 
 **Return metric**: Sessions or Launches
 
-Visitors do not count as *engaged* in subsequent months, unless they are having a session or at least launching the app. [!UICONTROL Cohort Analysis] would then show you patterns in usage where *App Install* always occurs in Month 0. You might notice that usage dips in Month 2, regardless of when users installed the app. (For those users who installed the app in January 2015, Month 2 is March 2015. For those visitors who installed the app in February 2015, Month 2 is April 2015, and so on.) This analysis allows you to send an email or a push message to all users during the second month after they install the app to remind them to use the app.
+Persons do not count as *engaged* in subsequent months, unless they are having a session or at least launching the app. [!UICONTROL Cohort Analysis] would then show you patterns in usage where *App Install* always occurs in Month 0. You might notice that usage dips in Month 2, regardless of when users installed the app. (For those users who installed the app in January 2015, Month 2 is March 2015. For those persons who installed the app in February 2015, Month 2 is April 2015, and so on.) This analysis allows you to send an email or a push message to all users during the second month after they install the app to remind them to use the app.
 
 ## Subscription use case 
 

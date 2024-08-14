@@ -7,7 +7,7 @@ role: User
 ---
 # Bullet
 
-The ![GraphBullet](/help/assets/icons/GraphBullet.svg) [!UICONTROL Bullet] visualization shows how a metric compares to or measures against performance ranges (goals). 
+The ![GraphBullet](/help/assets/icons/GraphBullet.svg) [!UICONTROL Bullet] visualization shows how a metric compares to, or measures against, performance ranges (goals). 
 
  ![](assets/bullet.png)
 
@@ -15,11 +15,11 @@ The bullet graph features a single, primary measure (for example, current year-t
 
 ## Settings
 
-You can specify specific options for a bullet graph visualization. 
+You can define specific settings for a [!UICONTROL Bullet] visualization. 
 
-| Option | Description |
+| Setting | Description |
 |---|---|
-| **[!UICONTROL Bullet options]** | Specify values for **[!UICONTROL High goal]**, **[!UICONTROL Mid goal]** and **[!UICONTROL Low goal]** in a bullet visualization. |
+| **[!UICONTROL Bullet options]** | Specify values for **[!UICONTROL High goal]**, **[!UICONTROL Mid goal]** and **[!UICONTROL Low goal]** in the [!UICONTROL Bullet] visualization. |
 
 >[!MORELIKETHIS]
 >

@@ -11,16 +11,20 @@ A *cohort* is a group of people sharing common characteristics over a specified 
 
 After creating a cohort report, you can curate its components (specific dimensions, metrics, and filters), then share the cohort report with anyone. See [Curate and Share](/help/analysis-workspace/curate-share/curate.md).
 
-Examples of what you can do with  a[!UICONTROL Cohort table]:
+Examples of what you can do with a [!UICONTROL Cohort table]:
 
 * Launch campaigns designed to spur a desired action.
 * Shift marketing budget at exactly the right time in the customer lifecycle.
 * Recognize when to end a trial or an offer to maximize value.
 * Gain ideas for A/B testing in areas such as pricing, upgrade path, and so on.
 
-[!UICONTROL Cohort Analysis] is available for all Customer Journey Analytics customers with access rights to [!UICONTROL Analysis Workspace].
+[!UICONTROL Cohort table] is available for all Customer Journey Analytics customers with access rights to [!UICONTROL Analysis Workspace].
 
-[Cohort Analysis video tutorial](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace) (4:36)
++++ View a video demonstration of the cohort table.
+
+>[!VIDEO](https://video.tv.adobe.com/v/23990/?quality=12)
+
++++
 
 >[!IMPORTANT]
 >
@@ -60,5 +64,8 @@ You can create cohorts based on a selected dimension, and not time-based cohorts
 
 ![A Cohort report showing customized report with selected dimensions not the default time-based cohort.](assets/retention-dimensions.png)
 
-For instructions on how to set up and run a cohort report, go to [Configure a Cohort table](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
+>[!MORELIKETHIS]
+>
+>[Configure a Cohort table](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
+>
 

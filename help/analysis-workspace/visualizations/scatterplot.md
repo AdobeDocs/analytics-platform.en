@@ -1,13 +1,13 @@
 ---
-title: Scatterplot
+title: Scatter
 description: A visualization that shows the relationship between up to three metrics.
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
 ---
-# Scatterplot
+# Scatter
 
-The ![GraphScatter](/help/assets/icons/GraphScatter.svg) [!UICONTROL Scatterplot] visualization shows the relationship between dimension items and up to three metrics. It requires three components, and supports visualizing up to four components.
+The ![GraphScatter](/help/assets/icons/GraphScatter.svg) [!UICONTROL Scatter] visualization shows the relationship between dimension items and up to three metrics. It requires three components, and supports visualizing up to four components.
 
 * The row component (typically a dimension) represents each point on the graph. Different rows show as different colored dots.
 * The leftmost column (typically a metric) plots the position of the dot on the Y axis (vertical).

@@ -43,18 +43,22 @@ The following context menu options are available when selecting the dimension he
 | **[!UICONTROL Copy selection to clipboard]** | Copy the selection from the visualization onto the clipboard. |
 | **[!UICONTROL Download items as CSV (*dimension name*)]** | Immediately download the dimension items (to a maximum of 50,000) of the visualization to your local device. A maximum of 50,000 dimension items for the selected dimension. |
 | **[!UICONTROL Download selection as CSV]** | Immediately download the dimension items of the visualization to your local device. |
-| **[!UICONTROL Create hyperlink for all dimension items]** | Create a hyperlink for all the dimension items. See [Create hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
+| **[!UICONTROL Create hyperlink for all dimension items]** | Create hyperlinks for all the dimension items. See [Hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
+| **[!UICONTROL Edit hyperlink for all dimension items]** | Edit hyperlinks for all the dimension items. See [Hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
+| **[!UICONTROL Remove hyperlink for all dimension items]** | Remove hyperlinks for all the dimension items. See [Hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL Delete]** | Deletes the dimension from the table. |
 | **[!UICONTROL Visualize]** | Visualize the dimension using any of the available visualizations. |
 | **[!UICONTROL Display only selected rows]** | Display only the selected items in the visualization. |
 | **[!UICONTROL Create annotation from selection]** | Open up the **[!UICONTROL Annotation details]** to add an annotation. | 
 
 
-The following additional context menu options are available when selecting one or more dimension items (first column).
+The following additional context menu options are available when selecting one or more dimension items (first column) or one or more individual cells in the freeform table..
 
 | Option | Description |
 | --- | --- |
-| **[!UICONTROL Create hyperlink]** | Create a hyperlink for the item. See [Create hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
+| **[!UICONTROL Create hyperlink]** | Create a hyperlink for the item. See [Hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
+| **[!UICONTROL Edit hyperlink]** | Edit a hyperlink for the item. See [Hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
+| **[!UICONTROL Remove hyperlink]** | Remove a hyperlink for the item. See [Hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL Breakdown]** | Break down the dimension item. Select from the list of **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, **[!UICONTROL Filters]** or **[!UICONTROL Date ranges]**. Alternative search for a component, using *Search*. |
 | **[!UICONTROL Delete selected]** | Delete the selected rows (items). |
 | **[!UICONTROL Trend selection]** | Create a trended line chart visualization for the selection. | 
@@ -63,9 +67,16 @@ The following additional context menu options are available when selecting one o
 | **[!UICONTROL Create filter from selection]** | Open up the **[!UICONTROL Filter builder]** to build a filter from the selection. |
 | **[!UICONTROL Create audience from selection]** | Open up the **[!UICONTROL Create audience]** dialog to build an audience from the selection. | 
 
-The following additional context menu options are available when selecting one or more individual cells in the freeform table.
+The following additional context menu options are available when selecting a metric column header.
 
 | Option | Description |
-| --- | --- |
+|---|---|
+| **[!UICONTROL Create metric from selection]** | Create a new metric from the selected metric. Metric can be Mean, Media, Column max, Column min, Column sum. You can also select Open in calculated metric builder to create a calculated metric. |
 | **[!UICONTROL Add time period column]** | Add a time period column. You are offered several options, where the calendar range of the panel determines the *date range*: <li>**[!UICONTROL Prior *date range* to this data range]**</li><li>**[!UICONTROL These *date range* to this date range]**.</li><li>**[!UICONTROL Custom data range to this date range]**. Opens up the **[!UICONTROL Date range builder]** to specify the date range.</li> |
 | **[!UICONTROL Compare time periods]** | Adds compare time period columns. Only available when the dimension is not based on time. You are offered several options determines the *date range*: <li>**[!UICONTROL Prior *date range* to this data range]**</li><li>**[!UICONTROL Custom data range to this date range]**. Opens up the **[!UICONTROL Date range builder]** to specify the date range.</li> |
+| **[!UICONTROL Modify attribution models]** | Modify the attribution model for the column. |
+| **[!UICONTROL Compare attribution model]** | Specify a new attibution model and compare it to the attribution model for the selected column. A new column is added with the new attribution model metrics. Also, a Percent change column is added for comparison. |
+| **[!UICONTROL Reset column widths]** | Reset the column widths to the default width. |
+| **[!UICONTROL Create annotation from selection]** | Open up the **[!UICONTROL Annotation details]** to add an annotation. | 
+| **[!UICONTROL Create filter from selection]** | Open up the **[!UICONTROL Filter builder]** to build a filter from the selection. |
+| **[!UICONTROL Create audience from selection]** | Open up the **[!UICONTROL Create audience]** dialog to build an audience from the selection. | 

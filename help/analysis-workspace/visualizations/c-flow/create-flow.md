@@ -13,7 +13,7 @@ You can configure the start or end of the path you are interested in. Or analyze
 
 ![The Flow configuration screen showing the Starts with, Contains, and Ends with fields.](assets/new-flow.png)
 
-## Create a flow visualization {#configure}
+## Use
 
 1. Add a ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Flow]** visualization. See [Add a visualization to a panel](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
@@ -64,9 +64,10 @@ Suppose that you want to trace the path that users took both to and from the mos
 1. Create a flow visualization as described above.
 1. Drag the [!UICONTROL **Page**] dimension into the **[!UICONTROL Contains]** field, then select [!UICONTROL **Build**].
 1. The Flow visualization builds, with the most-viewed page visible in the focus node, at the center of the visualization. You also see the top pages leading into that page (to the left of the focus node) as well as the top pages leading out of that page (to the right of the focus node).
-1. Analyze data in the flow, as described in [View and change the Flow output](#view-and-change-the-flow-output).
+1. Analyze data in the flow, as described in [Configure](#configure).
 
-## View and change the Flow output
+
+## Configure
 
 A summary of the Flow configuration appears at the top of the visualizations. The paths in the diagram are proportional. Paths with more activity appear thicker. 
 
@@ -88,7 +89,7 @@ To drill down further into the data, you have several options:
 
 * To edit the flow or rebuild it with different options, select ![Edit](/help/assets/icons/Edit.svg) next to the configuration summary.
 
-## Filtering
+## Filter
 
 Above each column, a filter ![Filter](/help/assets/icons/Filter.svg) appears when you hover over it. By selecting the filter, you get the same filter dialog that exists in the Freeform table. See [Filter and sort](freeform-table/../../freeform-table/filter-and-sort.md).
 
@@ -135,4 +136,12 @@ When using this option, keep in mind that:
   ![Lint, start](assets/limitonlast.png)
 * The series used differs based on the container. If using the **[!UICONTROL Person]** container, the series of events are the session. If using the **[!UICONTROL Session]** container, the series of events are all the events for a given user in the provided date range. 
 * The **[!UICONTROL Limit to first/last occurrence]** option can be configured in the advanced settings when using a Metric or Dimension Item in the **[!UICONTROL Starts with]** or **[!UICONTROL Ends with]** fields.
+
+
+>[!MORELIKETHIS]
+>
+>[Add a visualization to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualization settings](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
 

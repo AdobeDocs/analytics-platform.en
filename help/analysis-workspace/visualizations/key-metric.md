@@ -15,8 +15,6 @@ The ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) [!UICONTROL Key metric summ
 
 * Current total value ([!UICONTROL **summary number**]) for the metric
 
-## Use cases
-
 This visualization addresses a variety of common use cases, including:
 
 * An analyst trying to understand how opportunity creation looked this month compared to the same timeframe last year. 
@@ -25,7 +23,7 @@ This visualization addresses a variety of common use cases, including:
 
 * An executive wanting to understand how new bookings changed from this quarter to last quarter.
 
-## Add
+## Use
 
 1. Add the key metric visualization. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
@@ -71,8 +69,6 @@ Comparison date range is set to a non-relative date range, such as 'Feb 2nd, 202
 
 When you change the panel's date range to '4 days ago', the comparison date range remains at the previous selection. -->
 
-## Output
-
 The output of the key metric summary looks like:
 
 ![Key metric output showing the metic, summary change, summary number, and line graphs.](assets/key-metrics.png)
@@ -92,7 +88,7 @@ After building the visualization, you can edit the original configuration.
 
    You are taken back to the original configuration dialog. 
 
-1. Change the settings as preferred. Select **[!UICONTROL Reset]** to reset the current settings. Select Build to rebuild the visualization.
+1. Change the settings as preferred. Select **[!UICONTROL Reset]** to reset the current settings. Select **[!UICONTROL Build]** to rebuild the visualization.
 
 ## Settings
 
