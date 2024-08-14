@@ -1,0 +1,19 @@
+﻿_id,campaign_name,cost,impression,campagin_id,network,ad_group,timestamp
+1,123 Campaign,100,5000,abc123,facebook,abc-adgroup,2024-07-18T18:20:39.000Z
+2,123 Campaign,50,4000,def123,facebook,def-adgroup,2024-07-18T18:20:39.000Z
+3,123 Campaign,125,6000,ghi123,facebook,ghi-adgroup,2024-07-18T18:20:39.000Z
+4,456 Campaign,25,2500,abc456,facebook,abc-adgroup,2024-07-18T18:20:39.000Z
+5,456 Campaign,10,1000,def456,facebook,def-adgroup,2024-07-18T18:20:39.000Z
+6,456 Campaign,115,5500,ghi456,facebook,ghi-adgroup,2024-07-18T18:20:39.000Z
+7,789 Campaign,200,9000,abc789,facebook,abc-adgroup,2024-07-18T18:20:39.000Z
+8,789 Campaign,20,2000,def789,facebook,def-adgroup,2024-07-18T18:20:39.000Z
+9,789 Campaign,225,12000,ghi789,facebook,ghi-adgroup,2024-07-18T18:20:39.000Z
+10,987 Campaign,125,10000,abc987,facebook,abc-adgroup,2024-07-18T18:20:39.000Z
+11,987 Campaign,120,15000,def987,facebook,def-adgroup,2024-07-18T18:20:39.000Z
+12,987 Campaign,315,22500,ghi987,facebook,ghi-adgroup,2024-07-18T18:20:39.000Z
+13,654 Campaign,325,20000,abc654,facebook,abc-adgroup,2024-07-18T18:20:39.000Z
+14,654 Campaign,320,25000,def654,facebook,def-adgroup,2024-07-18T18:20:39.000Z
+15,654 Campaign,315,22500,ghi654,facebook,ghi-adgroup,2024-07-18T18:20:39.000Z
+16,321 Campaign,25,2000,abc321,facebook,abc-adgroup,2024-07-18T18:20:39.000Z
+17,321 Campaign,20,2500,def321,facebook,def-adgroup,2024-07-18T18:20:39.000Z
+18,321 Campaign,15,2250,ghi321,facebook,ghi-adgroup,2024-07-18T18:20:39.000Z
