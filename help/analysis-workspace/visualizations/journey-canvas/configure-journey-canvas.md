@@ -78,21 +78,11 @@ You need to [build a Journey canvas visualization](#begin-building-a-journey-can
 
 Nodes in a Journey canvas visualization represent the events or actions of a user journey. You create nodes by dragging Workspace components from the left rail to the canvas.
 
-Nodes display as a rectangular box with the following information:
-
-* Component name
-
-* The component type (such as metric or dimension)
-
-* Primary metric statistics (total and percent)
-
-* Secondary metric statistics (total and percent) 
-
 To add a node to a Journey canvas visualization:
 
 1. In Analysis Workspace, open an existing Journey canvas visualization, or [begin building a new one](#begin-building-a-journey-canvas-visualization).
 
-1. Drag a metric, dimension, or dimension item from the left rail onto the canvas. 
+1. Drag a metric, dimension, or dimension item from the left rail onto the canvas. (Calculated metrics and any metrics that include segmentation are not supported.)
 
    The visualization is updated as follows, depending on the area of the canvas where you place the component: 
    
@@ -102,6 +92,16 @@ To add a node to a Journey canvas visualization:
    | An existing node | Components automatically combine to form a new node with the same OR/AND logic as fallout.<p>See [Combine nodes](#combine-nodes) for more information.</p> |
    | An arrow that connects 2 existing nodes | The node displays between the two existing nodes where it was dropped and is connected to both existing nodes. <p>See [Connect nodes](#connect-nodes) for more information.</p> | 
    | The edge of an existing node | The node displays next to the node where it was dropped and is connected to it. <p>See [Connect nodes](#connect-nodes) for more information.</p> |
+
+   Nodes display as a rectangular box with the following information:
+
+   * Component name
+
+   * The component type (such as metric or dimension)
+
+   * Primary metric statistics (total and percent)
+
+   * Secondary metric statistics (total and percent) 
 
 ### Connect nodes
 
