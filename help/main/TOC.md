@@ -144,7 +144,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Combo](../analysis-workspace/visualizations/combo-charts.md)
     + [Donut](../analysis-workspace/visualizations/donut.md)
     + [Histogram](../analysis-workspace/visualizations/histogram.md)
-    + [Horizontal bar (stacked)](../analysis-workspace/visualizations/horizontal-bar.md#horizontal-bar)
+    + [Horizontal bar (stacked)](../analysis-workspace/visualizations/horizontal-bar.md)
     + [Key metric summary](../analysis-workspace/visualizations/key-metric.md)
     + [Line](../analysis-workspace/visualizations/line.md)
     + [Scatter](../analysis-workspace/visualizations/scatterplot.md)
