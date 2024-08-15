@@ -100,7 +100,7 @@ See the tables below for an overview of the available menus.
 |---|---|---|---|
 | **[!UICONTROL Create filter...]** | *shift+cmd+e* | *shift+ctrl+e* | Create a new [filter](/help/components/filters/create-filters.md). |
 | **[!UICONTROL Create metric...]** | *shift+cmd+c* | *shift+ctrl+c* | Create a new [calculated metric](/help/components/calc-metrics/calc-metr-overview.md). |
-| **[!UICONTROL Create date range...]** | *shift+cmd+d* | *shift+ctrl+d* | Create a new [data range](/help/components/date-ranges/overview.md). |
+| **[!UICONTROL Create date range...]** | *shift+cmd+d* | *shift+ctrl+d* | Create a new [data range](/help/components/date-ranges/custom-date-ranges.md). |
 | **[!UICONTROL Create annotation...]** | *shift+cmd+o* | *shift+ctrl+o* | Create a new [annotation](/help/components/annotations/overview.md). |
 | **[!UICONTROL Create audience...]** | *shift+cmd+u* | *shift+ctrl+u* | Create a new [audience](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL Refewsh components]** | *opt+shift+r* | *alt+shift+r* | Refresh the components in the project. |
