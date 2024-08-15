@@ -7,7 +7,7 @@ role: Admin
 ---
 # Shared devices
 
-This article provides context on shared devices, how to handle and mitigate data from shared devices using stitching, and understand shared device exposure in a data using Query Service. 
+This article provides context on shared devices, how to handle and mitigate data from shared devices using stitching, and understand shared device exposure in your data using Query Service. 
 
 ## What is a shared device? 
 
