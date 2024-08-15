@@ -82,14 +82,24 @@ To add a node to a Journey canvas visualization:
 
 1. In Analysis Workspace, open an existing Journey canvas visualization, or [begin building a new one](#begin-building-a-journey-canvas-visualization).
 
-1. Drag a metric, dimension, or dimension item from the left rail onto the canvas. (Calculated metrics and any metrics that include segmentation are not supported.)
+1. Drag a metric, dimension, or dimension item from the left rail onto the canvas. Calculated metrics and any metrics that include segmentation are not supported.
 
-   The visualization is updated as follows, depending on the area of the canvas where you place the component: 
+   You can select multiple components by holding Shift, or by holding Command (on Mac) or Ctrl (on Windows).
+
+1. (Optional) If you are adding a dimension, you can 
+
+   The visualization is updated as follows, depending on the component type and the area of the canvas where you place it: 
    
-   | Placement of component | Visualization updates | 
-   |---------|----------|
-   | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. | 
-   | An existing node | Components automatically combine to form a new node with the same OR/AND logic as fallout.<p>See [Combine nodes](#combine-nodes) for more information.</p> |
+   |  Component type | Placement of component | Visualization updates | 
+   |---------|----------|----------|
+   | Metric | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. | 
+   | Metric | An existing node | Components automatically combine to form a new node with the same OR/AND logic as fallout.<p>See [Combine nodes](#combine-nodes) for more information.</p> |
+   | Dimension | Blank area of the canvas | 3 nodes are created for the top 3 dimension items. The nodes display where the component was dropped, unconnected with any existing nodes.<p>Hold the Shift key when you drop the dimension onto the canvas to add it as a single node with 3 dimension items.</p> |
+   | Dimension | An existing node | A breakdown is automatically applied to the node with the top 5 dimension items displayed. |
+   | Dimension item | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. |
+   | Dimension item | An existing node | A breakdown is automatically applied to the node. |
+   | Multiple components | A blank area of the canvas | The nodes display where the components were dropped, unconnected with any existing nodes.<p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node if they are the same component type.</p> |
+   | Multiple components | An existing node | N/A <!--???--> |
    | An arrow that connects 2 existing nodes | The node displays between the two existing nodes where it was dropped and is connected to both existing nodes. <p>See [Connect nodes](#connect-nodes) for more information.</p> | 
    | The edge of an existing node | The node displays next to the node where it was dropped and is connected to it. <p>See [Connect nodes](#connect-nodes) for more information.</p> |
 
