@@ -115,15 +115,23 @@ To add a node to a Journey canvas visualization:
 
 ### Connect nodes
 
+You can connect nodes that are already on the canvas, or you can connect a node when adding it to the canvas.
+
+#### Connect existing nodes
+
 The connection between nodes in Journey canvas determines the sequence of events in the journey. 
 
 To connect nodes in Journey canvas:
 
-1. Select either of the 2 nodes that you want to connect. 
+1. On the canvas, select either of the 2 nodes that you want to connect. 
 
-1. Select any of the 4 blue dots that appear on each side of the node.
+   4 blue dots appear on each side of the selected node.
 
-1. Drag the dot to any of the 4 sides of the node that you want to connect to. 
+1. Drag any of the 4 blue dots to any of the 4 sides of the node that you want to connect to. 
+
+#### Connect a node when adding it
+
+When adding a node to the canvas, you can connect it to an existing node. For more information, see [Add a node](#add-a-node).
 
 ### Combine nodes
 
