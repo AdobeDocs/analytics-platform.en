@@ -86,8 +86,6 @@ To add a node to a Journey canvas visualization:
 
    You can select multiple components by holding Shift, or by holding Command (on Mac) or Ctrl (on Windows).
 
-1. (Optional) If you are adding a dimension, you can 
-
    The visualization is updated as follows, depending on the component type and the area of the canvas where you place it: 
    
    |  Component type | Placement of component | Visualization updates | 
