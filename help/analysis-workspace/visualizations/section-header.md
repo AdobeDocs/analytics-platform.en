@@ -11,7 +11,7 @@ To identify and articulate sections within a panel, you can insert a ![PageRule]
 
 ![Section header](/help/analysis-workspace/visualizations/assets/section-header.png)
 
-Select the header to modify the text of the section header.
+To modify the text of the section header, simply select the [!UICONTROL Section header].
 
 
 >[!MORELIKETHIS]

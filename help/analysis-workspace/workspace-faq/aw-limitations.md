@@ -22,23 +22,23 @@ Here is a list of known limitations in Analysis Workspace and its related compon
 * [!UICONTROL Flow]: Entry/Exit dimensions, e.g. [!UICONTROL Entry page], cannot be used in Flow.
 * [!UICONTROL Cohort]: Non-integers cannot be used as Cohort criteria.
 
-## Components > Filters
+## Filters
 
 * Certain metrics and dimensions cannot be filtered, such as [!UICONTROL Events], [!UICONTROL Persons], etc.
 * Ad hoc filters created in the [panel dropzone](/help/analysis-workspace/c-panels/panels.md) are a type of quick filter. They do not appear in the left rail of Workspace or the Filter component manager unless they are made public. For more information, see [Quick filters](/help/components/filters/quick-filters.md).
 
-## Components > Calculated Metrics
+## Calculated Metrics
 
-* Calculated metrics cannot be used in certain visualizations. See 'Visualizations' above.
+* Calculated metrics cannot be used in certain visualizations. See [Visualizations](#visualizations).
 * Calculated metrics cannot be used in the [!UICONTROL Attribution] panel, since calculated metrics themselves can include separate attribution models.
 * Certain components and operators are unavailable if a calculated metric is created from Workspace (as opposed to being created from [!UICONTROL Components > filters]). For example, [!UICONTROL IP Address].
 
-## Components > Date Ranges
+## Date Ranges
 
 * Custom date ranges do not support [!UICONTROL This day last year], [!UICONTROL This day last month], etc.
 
 
-## Components > Report Settings
+## Report Settings
 
 * Some of the settings on the [!UICONTROL Report Settings] page do not apply. Analysis Workspace uses only the [!UICONTROL Language/Currency/Encoding] settings at the bottom: [!UICONTROL Thousands separator], [!UICONTROL Scheduled Report Encoding], and [!UICONTROL CSV Separator Character].
 
