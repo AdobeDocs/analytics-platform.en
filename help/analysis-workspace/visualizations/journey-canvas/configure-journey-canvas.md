@@ -74,6 +74,8 @@ You need to [build a Journey canvas visualization](#begin-building-a-journey-can
    | [!UICONTROL **Arrow settings**] | Choose from the following options:<ul><li>[!UICONTROL **None**]: </li><li>[!UICONTROL **Condition**]: </li><li>[!UICONTROL **All labels**]: </li></ul><p>**Note**: This option displays only when Journey Optimizer data is detected in the same data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).</p>  |
    | [!UICONTROL **Show fallout**] | B3 |
 
+1. Continue with [Add a node](#add-a-node).
+
 ### Add a node
 
 Nodes in a Journey canvas visualization represent the events or actions of a user journey. You create nodes by dragging Workspace components from the left rail to the canvas.
@@ -113,9 +115,36 @@ To add a node to a Journey canvas visualization:
 
    * Secondary metric statistics (total and percent) 
 
+1. Repeat this process to continue adding nodes to build out your journey. 
+
+1. Continue customizing the journey as described in the sections below. You can connect nodes, rename nodes, apply breakdowns, publish audiences, add time constraints, and more. 
+
+### Add the top nodes based on existing nodes
+
+You can automatically add the top nodes based on the nodes that are already on the canvas. 
+
+The option to add the top nodes is available when selecting the following objects on the canvas:
+
+* Individual nodes
+
+* Multiple nodes
+
+* The line between nodes
+
+#### Add the top next or previous nodes
+
+To add the top 3 nodes before or after one or more existing nodes:
+
+<!-- Previous should add top 3 previous nodes as various branch nodes before the node (only allowed on nodes with nothing coming into it); After should add top 3 next nodes as various branch nodes after the node (only allowed on nodes with nothing going out of it)
+ -->
+
+#### Add the top nodes between existing nodes
+
+To add the top 3 nodes between 2 existing nodes:
+
 ### Change the color of a node or line between nodes
 
-The option to change the color is available when selecting
+The option to change the color is available when selecting the following objects on the canvas:
 
 * Individual nodes
 
@@ -123,15 +152,15 @@ The option to change the color is available when selecting
 
 ### Rename one or more nodes
 
-The option to rename is available when selecting
+The option to rename is available when selecting the following objects on the canvas:
 
 * Individual nodes
 
 * Multiple nodes
 
-### Apply a breakdown to a node
+### Apply a breakdown
 
-The option to apply a breakdown is available when selecting
+The option to apply a breakdown is available when selecting the following objects on the canvas:
 
 * Individual nodes
 
@@ -141,7 +170,7 @@ The option to apply a breakdown is available when selecting
 
 ### Publish an audience
 
-The option to apply a breakdown is available when selecting
+The option to apply a breakdown is available when selecting the following objects on the canvas:
 
 * Individual nodes
 
@@ -151,7 +180,7 @@ The option to apply a breakdown is available when selecting
 
 ### Trend a node (what does this mean? What does the Trend option do?)
 
-The option to trend is available when selecting
+The option to trend is available when selecting the following objects on the canvas:
 
 * Individual nodes
 
@@ -161,23 +190,15 @@ The option to trend is available when selecting
 
 * Multiple lines between nodes
 
-### View the most popular next or previous nodes
-
-The option to view the most popular next or previous nodes is available when selecting
-
-* Individual nodes
-
-* Multiple nodes
-
 ### Duplicate nodes
 
-The option to duplicate is available when selecting
+The option to duplicate is available when selecting the following objects on the canvas:
 
 * Multiple nodes
 
 ### Create a segment 
 
-The option to create a segment is available when selecting
+The option to create a segment is available when selecting the following objects on the canvas:
 
 * Individual nodes
 
@@ -191,7 +212,7 @@ The option to create a segment is available when selecting
 
 (Works only when selecting between two nodes? Is this different than publishing an audience (which you can do when selecting one or more nodes?))
 
-The option to create an audience is available when selecting
+The option to create an audience is available when selecting the following objects on the canvas:
 
 * The line between nodes
 
@@ -203,7 +224,7 @@ You can drag nodes on the canvas to rearrange the events and conditions of the j
 
 ### Combine nodes
 
-The option to trend is available when selecting
+The option to trend is available when selecting the following objects on the canvas:
 
 * Multiple nodes
 
@@ -241,7 +262,7 @@ When adding a node to the canvas, you can connect it to an existing node. For mo
 
 ### Add a time constraint between nodes
 
-The option to add a time constraint is available when selecting
+The option to add a time constraint is available when selecting the following objects on the canvas:
 
 * The line between nodes
 
@@ -249,13 +270,13 @@ You can set a time constraint between nodes. If a user follows the defined journ
 
 Right-click the edge, then select [!UICONTROL **Add time constraint**].
 
-### View the top nodes between existing nodes
+...
 
-You can view the top 3 nodes between 2 existing nodes.
+<!-- from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon).  -->
 
 ### Delete a node
 
-The option to delete is available when selecting
+The option to delete is available when selecting the following objects on the canvas:
 
 * Individual nodes
 
