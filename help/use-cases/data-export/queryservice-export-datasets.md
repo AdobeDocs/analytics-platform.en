@@ -178,11 +178,11 @@ see:
 - [bot filtering](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/bot-filtering)
 - and other [supported use cases in the Query Service guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/use-cases/overview).
 
-Below is an example that illustrates how to
+Below is an example to properly apply attribution across sessions and that illustrates  how to
 
 - use the last 90 days as a lookback, 
 - apply window functions like sessionization and / or attribution, and 
-- restrict the output based on the ingest_time.
+- restrict the output based on the `ingest_time`.
 
   +++
   Details
@@ -191,7 +191,7 @@ Below is an example that illustrates how to
 
   - Use a processing status table, `checkpoint_log`, to keep track of the current versus the last ingest time. See [this guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/incremental-load) for more information.
   - disable dropping system columns, so you can use `_acp_system_metadata.ingestTime`.
-  - Use an inner most `SELECT` to grab the fields you want to use and restrict the event to your lookback period for sessionization and / or attribution calculations. For example, 90 days.
+  - Use an inner most `SELECT` to grab the fields you want to use and restrict the events to your lookback period for sessionization and / or attribution calculations. For example, 90 days.
   - Use a next level `SELECT` to apply you sessionization and / or attribution window functions and other calculations.
   - Use `INSERT INTO` in your output table to restrict te lookback to just the events that have arrived since your last processing time. You do this by filtering on `_acp_system_metadata.ingestTime `versus the time last stored in your processing status table.
 
