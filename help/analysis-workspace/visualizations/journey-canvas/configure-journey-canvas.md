@@ -286,6 +286,8 @@ The option to delete is available when selecting the following objects on the ca
 
 * Multiple lines between nodes
 
+<!-- Delete this after I decide I don't want to do it this way. Will probably use sections like I hav above.
+
 ### Manage existing nodes
 
 1. In Analysis Workspace, open an existing Journey canvas visualization, or [begin building a new one](#begin-building-a-journey-canvas-visualization).
@@ -314,6 +316,8 @@ The option to delete is available when selecting the following objects on the ca
    | [!UICONTROL **Breakdown**] | B2 |
    | [!UICONTROL **Create segment**] | B2 |
    | [!UICONTROL **Publish audience**] | B2 |
+
+   -->
 
 
 ## Open a journey from Journey Optimizer
