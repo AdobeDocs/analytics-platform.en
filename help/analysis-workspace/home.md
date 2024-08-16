@@ -51,67 +51,68 @@ Functionality is also available through the Workspace menu and shortcuts or hotk
 
 Note that on your keyboard the following symbols might be used:
 
-- **⇧** for *shift*.
-- **⌘** for *cmd* (command).
-- **⌃** for *ctrl* (control).
-- **⌥** for *alt* or *opt* (option).
+- **⇧** for **[!UICONTROL *shift*]**.
+- **⌘** for **[!UICONTROL *cmd*]** (command).
+- **⌃** for **[!UICONTROL *ctrl*]** (control).
+- **⌥** for **[!UICONTROL *opt*]** (option).
+- **⎇** for **[!UICONTROL *alt*]** (alternate).
 
 See the tables below for an overview of the available menus.  
 
 | **[!UICONTROL Project]** | Shortcut Mac | Shortcut Windows | Description |
 |---|---|---|---|
-| **[!UICONTROL Create project]** | *shift+cmd+p* | *shift+ctrl+p* | Create a new project. |
+| **[!UICONTROL Create project]** | **[!UICONTROL *shift+cmd+p*]** | **[!UICONTROL *shift+ctrl+p*]** | Create a new project. |
 | **[!UICONTROL Create a mobile scorecard]** | | | [Create a new mobile scorecard](/help/mobile-app/create-scorecard.md). |
-| **[!UICONTROL Open...]** | *cmd+o* | *ctrl+o* | [Open an existing project](/help/analysis-workspace/build-workspace-project/save-projects.md#open-another-project). |
-| **[!UICONTROL Open previous version...]** | *opt+cmd+o* | *alt+ctrl+o* | [Open earlier versions of your project](/help/analysis-workspace/build-workspace-project/save-projects.md#open-previous-version). |
-| **[!UICONTROL Save]** | *cmd+s* | *ctrl+s* | [Save your project](/help/analysis-workspace/build-workspace-project/save-projects.md#save-projects). |
-| **[!UICONTROL Save with notes...]** | *opt+cmd+s* | *alt+ctrl+s* | [Add notes to the project version that you save](/help/analysis-workspace/build-workspace-project/save-projects.md#save-project-options). |
-| **[!UICONTROL Save as...]** | *shift+cmd+s* | *shift+ctrl+s* | [Save the project using a different name and details](/help/analysis-workspace/build-workspace-project/save-projects.md#save-project-options). |
-| **[!UICONTROL Refresh project]** | *opt+r* | *alt+r* | Refresh the project. |
-| **[!UICONTROL Download CSV]** | *shift+cmd+v* | *shift+ctrl+v* | Download the project as a CSV file. |
-| **[!UICONTROL Download PDF]**| *shift+cmd+b* | *shift+ctrl+b* | Download the project as a PDF document. |
+| **[!UICONTROL Open...]** | **[!UICONTROL *cmd+o*]** | **[!UICONTROL *ctrl+o*]** | [Open an existing project](/help/analysis-workspace/build-workspace-project/save-projects.md#open-another-project). |
+| **[!UICONTROL Open previous version...]** | **[!UICONTROL *opt+cmd+o*]** | **[!UICONTROL *alt+ctrl+o*]** | [Open earlier versions of your project](/help/analysis-workspace/build-workspace-project/save-projects.md#open-previous-version). |
+| **[!UICONTROL Save]** | **[!UICONTROL *cmd+s*]** | **[!UICONTROL *ctrl+s*]** | [Save your project](/help/analysis-workspace/build-workspace-project/save-projects.md#save-projects). |
+| **[!UICONTROL Save with notes...]** | **[!UICONTROL *opt+cmd+s*]** | **[!UICONTROL *alt+ctrl+s*]** | [Add notes to the project version that you save](/help/analysis-workspace/build-workspace-project/save-projects.md#save-project-options). |
+| **[!UICONTROL Save as...]** | **[!UICONTROL *shift+cmd+s*]** | **[!UICONTROL *shift+ctrl+s*]** | [Save the project using a different name and details](/help/analysis-workspace/build-workspace-project/save-projects.md#save-project-options). |
+| **[!UICONTROL Refresh project]** | **[!UICONTROL *opt+r*]** | **[!UICONTROL *alt+r*]** | Refresh the project. |
+| **[!UICONTROL Download CSV]** | **[!UICONTROL *shift+cmd+v*]** | **[!UICONTROL *shift+ctrl+v*]** | Download the project as a CSV file. |
+| **[!UICONTROL Download PDF]**| **[!UICONTROL *shift+cmd+b*]** | **[!UICONTROL *shift+ctrl+b*]** | Download the project as a PDF document. |
 | **[!UICONTROL Project info & settings]** | | | Define settings for your projects, such as name, tags, color palette, and more. |
 | **[!UICONTROL User settings]** | | | [Configure preferences for using Analysis Workspace](/help/analysis-workspace/user-preferences.md). |
 
 
 | **[!UICONTROL Edit]** | Shortcut Mac | Shortcut Windows | Description |
 |---|---|---|---|
-| **[!UICONTROL Undo]** | *cmd+z* | *ctrl+z* | Undo the previous action. |
-| **[!UICONTROL Redo]** | *cmd+shift+z* | *ctrl+shift+z* | Redo the previous action. |
-| **[!UICONTROL Clear all]** | *opt+w* | *alt+w* | Clear all panels in the current project. | 
+| **[!UICONTROL Undo]** | **[!UICONTROL *cmd+z*]** | **[!UICONTROL *ctrl+z*]** | Undo the previous action. |
+| **[!UICONTROL Redo]** | **[!UICONTROL *cmd+shift+z*]** | **[!UICONTROL *ctrl+shift+z*]** | Redo the previous action. |
+| **[!UICONTROL Clear all]** | **[!UICONTROL *opt+w*]** | **[!UICONTROL *alt+w*]** | Clear all panels in the current project. | 
 
 | **[!UICONTROL Insert]** | Shortcut Mac | Shortcut Windows | Description |
 |---|---|---|---|
-| **[!UICONTROL Blank panel]** | *opt+b* | *alt+b* |  Insert a [Blank panel](/help/analysis-workspace/c-panels/blank-panel.md). |
-| **[!UICONTROL Media concurrent viewers]** | *opt+h* | *alt-h* |  Insert a [Media concurrent viewers](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) panel. |
-| **[!UICONTROL Media playback time spent]** | *opt+i* | *alt+i* |  Insert a [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) panel. |
-| **[!UICONTROL Media average minute audience]** | *opt+m* | *alt+m* |  Insert a [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. | 
-| **[!UICONTROL Attribution]** | *opt+e* | *alt+e* |  Insert an [Attribution](/help/analysis-workspace/c-panels/attribution.md) panel. |
-| **[!UICONTROL Freeform]** | *opt+a* | *alt+a* |  Insert a [Freeform](/help/analysis-workspace/c-panels/freeform-panel.md) panel. |
-| **[!UICONTROL Quick insights]** | *opt+j* | *alt+j* |  Insert a [Quick insights](/help/analysis-workspace/c-panels/quickinsight.md) panel. |
-| **[!UICONTROL Experimentation]** |*opt+x* | *alt+x* |  Insert an [Experimentation](/help/analysis-workspace/c-panels/experimentation.md) panel. |
-| **[!UICONTROL Freeform table]** | *opt+1* | *alt+1*|  Insert a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualization. |
-| **[!UICONTROL Line]** | *opt+2* | *alt+2* |  Insert a [Line](/help/analysis-workspace/visualizations/line.md) visualization. |
-| **[!UICONTROL Bar]** | *opt+3* | *alt+3* |  Insert a [Bar](/help/analysis-workspace/visualizations/bar.md) visualization. |
-| **[!UICONTROL Combo]** | *opt+4*| *alt+4* |  Insert a [Combo](/help/analysis-workspace/visualizations/combo-charts.md) visualization. | 
+| **[!UICONTROL Blank panel]** | **[!UICONTROL *opt+b*]** | **[!UICONTROL *alt+b*]** |  Insert a [Blank panel](/help/analysis-workspace/c-panels/blank-panel.md). |
+| **[!UICONTROL Media concurrent viewers]** | **[!UICONTROL *opt+h*]** | **[!UICONTROL *alt-h*]** |  Insert a [Media concurrent viewers](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) panel. |
+| **[!UICONTROL Media playback time spent]** | **[!UICONTROL *opt+i*]** | **[!UICONTROL *alt+i*]** |  Insert a [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) panel. |
+| **[!UICONTROL Media average minute audience]** | **[!UICONTROL *opt+m*]** | **[!UICONTROL *alt+m*]** |  Insert a [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. | 
+| **[!UICONTROL Attribution]** | **[!UICONTROL *opt+e*]** | **[!UICONTROL *alt+e*]** |  Insert an [Attribution](/help/analysis-workspace/c-panels/attribution.md) panel. |
+| **[!UICONTROL Freeform]** | **[!UICONTROL *opt+a*]** | **[!UICONTROL *alt+a*]** |  Insert a [Freeform](/help/analysis-workspace/c-panels/freeform-panel.md) panel. |
+| **[!UICONTROL Quick insights]** | **[!UICONTROL *opt+j*]** | **[!UICONTROL *alt+j*]** |  Insert a [Quick insights](/help/analysis-workspace/c-panels/quickinsight.md) panel. |
+| **[!UICONTROL Experimentation]** |**[!UICONTROL *opt+x*]** | **[!UICONTROL *alt+x*]** |  Insert an [Experimentation](/help/analysis-workspace/c-panels/experimentation.md) panel. |
+| **[!UICONTROL Freeform table]** | **[!UICONTROL *opt+1*]** | **[!UICONTROL *alt+1*]**|  Insert a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualization. |
+| **[!UICONTROL Line]** | **[!UICONTROL *opt+2*]** | **[!UICONTROL *alt+2*]** |  Insert a [Line](/help/analysis-workspace/visualizations/line.md) visualization. |
+| **[!UICONTROL Bar]** | **[!UICONTROL *opt+3*]** | **[!UICONTROL *alt+3*]** |  Insert a [Bar](/help/analysis-workspace/visualizations/bar.md) visualization. |
+| **[!UICONTROL Combo]** | **[!UICONTROL *opt+4*]**| **[!UICONTROL *alt+4*]** |  Insert a [Combo](/help/analysis-workspace/visualizations/combo-charts.md) visualization. | 
 
 
 | **[!UICONTROL Components]** | Shortcut Mac | Shortcut Windows | Description |
 |---|---|---|---|
-| **[!UICONTROL Create filter...]** | *shift+cmd+e* | *shift+ctrl+e* | Create a new [filter](/help/components/filters/create-filters.md). |
-| **[!UICONTROL Create metric...]** | *shift+cmd+c* | *shift+ctrl+c* | Create a new [calculated metric](/help/components/calc-metrics/calc-metr-overview.md). |
-| **[!UICONTROL Create date range...]** | *shift+cmd+d* | *shift+ctrl+d* | Create a new [data range](/help/components/date-ranges/custom-date-ranges.md). |
-| **[!UICONTROL Create annotation...]** | *shift+cmd+o* | *shift+ctrl+o* | Create a new [annotation](/help/components/annotations/overview.md). |
-| **[!UICONTROL Create audience...]** | *shift+cmd+u* | *shift+ctrl+u* | Create a new [audience](/help/components/audiences/audiences-overview.md). |
-| **[!UICONTROL Refewsh components]** | *opt+shift+r* | *alt+shift+r* | Refresh the components in the project. |
+| **[!UICONTROL Create filter...]** | **[!UICONTROL *shift+cmd+e*]** | **[!UICONTROL *shift+ctrl+e*]** | Create a new [filter](/help/components/filters/create-filters.md). |
+| **[!UICONTROL Create metric...]** | **[!UICONTROL *shift+cmd+c*]** | **[!UICONTROL *shift+ctrl+c*]** | Create a new [calculated metric](/help/components/calc-metrics/calc-metr-overview.md). |
+| **[!UICONTROL Create date range...]** | **[!UICONTROL *shift+cmd+d*]** | **[!UICONTROL *shift+ctrl+d*]** | Create a new [data range](/help/components/date-ranges/custom-date-ranges.md). |
+| **[!UICONTROL Create annotation...]** | **[!UICONTROL *shift+cmd+o*]** | **[!UICONTROL *shift+ctrl+o*]** | Create a new [annotation](/help/components/annotations/overview.md). |
+| **[!UICONTROL Create audience...]** | **[!UICONTROL *shift+cmd+u*]** | **[!UICONTROL *shift+ctrl+u*]** | Create a new [audience](/help/components/audiences/audiences-overview.md). |
+| **[!UICONTROL Refewsh components]** | **[!UICONTROL *opt+shift+r*]** | **[!UICONTROL *alt+shift+r*]** | Refresh the components in the project. |
 
 | **[!UICONTROL Share]** | Shortcut Mac | Shortcut Windows | Description |
 |---|---|---|---|
-| **[!UICONTROL Share with Workspace users]** | *cmd+h* | *ctrl+h* | [Share the project with other Workspace users](/help/analysis-workspace/curate-share/share-projects.md#share-with-customer-journey-analytics-users-and-groups-in-your-organization). |
-| **[!UICONTROL Share with anyone]** | *opt+l* | *alt+l* | [Share a read-only version of the project with anyone](/help/analysis-workspace/curate-share/share-projects.md#share-a-link-to-a-project). |
-| **[!UICONTROL Send file]** | opt+s | *alt+s* | [Send the project as a CSV or PDF file to other recipients](/help/analysis-workspace/curate-share/send-schedule-files.md). |
-| **[!UICONTROL Schedule file export]** | *shift+opt+s* | *shift+alt+s* | [Send the project on a schedule as a CSV or PDF file to other recipients](/help/analysis-workspace/curate-share/send-schedule-files.md). | 
-| **[!UICONTROL Curate project data]** | *shift+cmd+g* | *shift+ctrl+g* | [Curate the project data](/help/analysis-workspace/curate-share/curate.md). |
+| **[!UICONTROL Share with Workspace users]** | **[!UICONTROL *cmd+h*]** | **[!UICONTROL *ctrl+h*]** | [Share the project with other Workspace users](/help/analysis-workspace/curate-share/share-projects.md#share-with-customer-journey-analytics-users-and-groups-in-your-organization). |
+| **[!UICONTROL Share with anyone]** | **[!UICONTROL *opt+l*]** | **[!UICONTROL *alt+l*]**| [Share a read-only version of the project with anyone](/help/analysis-workspace/curate-share/share-projects.md#share-a-link-to-a-project). |
+| **[!UICONTROL Send file]** | **[!UICONTROL opt+s]** | **[!UICONTROL *alt+s*]** | [Send the project as a CSV or PDF file to other recipients](/help/analysis-workspace/curate-share/send-schedule-files.md). |
+| **[!UICONTROL Schedule file export]** | **[!UICONTROL *shift+opt+s*]** | **[!UICONTROL *shift+alt+s*]** | [Send the project on a schedule as a CSV or PDF file to other recipients](/help/analysis-workspace/curate-share/send-schedule-files.md). | 
+| **[!UICONTROL Curate project data]** | **[!UICONTROL *shift+cmd+g*]** | **[!UICONTROL *shift+ctrl+g*]** | [Curate the project data](/help/analysis-workspace/curate-share/curate.md). |
 
 | Help | Shortcut Mac | Shortcut Windows | Description |
 |---|---|---|---|
