@@ -33,10 +33,9 @@ Navigation in [!UICONTROL Analysis Workspace] works top > down, and left > right
 ### Keyboard navigation for the menu bar 
 
 1. Tab until you have reached the menu bar.
-1. Use the left/right arrow keys to navigate to the menu you want.
-1. Press `Enter` to select the menu and show its options.
-1. Use up/down arrow keys to navigate to the menu option you want.
-1. Press `Enter` to select the option.
+1. Use the arrow keys to navigate between menus and menu items.
+1. Press `Enter` to open a menu or select menu item.
+1. Use `Esc` to close a menu.
 
 ### Keyboard navigation for drag & drop interactions 
 
