@@ -3,8 +3,6 @@ title: An example B2B project
 description: Learn how to set up, configure, and report on B2B data
 solution: Customer Journey Analytics
 feature: Use Cases
-hide: yes
-hidefromtoc: yes
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
 ---
