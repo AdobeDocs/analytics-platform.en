@@ -83,25 +83,25 @@ To add a node to a Journey canvas visualization:
 1. In Analysis Workspace, open an existing Journey canvas visualization, or [begin building a new one](#begin-building-a-journey-canvas-visualization).
 
 1. Drag a metric, dimension, or dimension item from the left rail onto the canvas. Calculated metrics and any metrics that include segmentation are not supported.
-
+     
    You can select multiple components by holding Shift, or by holding Command (on Mac) or Ctrl (on Windows).
 
    The visualization is updated as follows, depending on the component type and the area of the canvas where you place it: 
    
-   |  Component type | Placement of component | Visualization updates | 
+   |  Component type | Placement of component | Visualization updates after node is added | 
    |---------|----------|----------|
    | Metric | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. | 
-   | Metric | An existing node | Components automatically combine to form a new node with the same OR/AND logic as fallout.<p>See [Combine nodes](#combine-nodes) for more information.</p> |
+   | Metric | An existing node | Components automatically combine to form a new node with the same OR/AND logic as fallout.<p>See [Combine nodes](#combine-nodes) for more information.</p> <!--what happens if you hold Shift?--> |
    | Metric | An arrow that connects 2 existing nodes | The node displays between the two existing nodes where it was dropped and is connected to both existing nodes. <p>See [Connect nodes](#connect-nodes) for more information.</p> |
    | Dimension | Blank area of the canvas | 3 nodes are created for the top 3 dimension items. The nodes display where the component was dropped, unconnected with any existing nodes.<p>Hold the Shift key when you drop the dimension onto the canvas to add it as a single node with 3 dimension items.</p> |
-   | Dimension | An existing node | A breakdown is automatically applied to the node with the top 5 dimension items displayed. |
-   | Dimension | An arrow that connects 2 existing nodes | Three nodes are created for the top 3 dimension items. The nodes display between the two existing nodes where they were dropped and are connected to both existing nodes.<p>Hold the Shift key when you drop the dimension onto the canvas to add it as a single node with 3 dimension items.</p><p>See [Connect nodes](#connect-nodes) for more information.</p> |
+   | Dimension | An existing node | A breakdown is automatically applied to the node with the top 5 dimension items displayed.<!--what happens if you hold Shift?--> |
+   | Dimension | An arrow that connects 2 existing nodes | Three nodes are created for the top 3 dimension items. The nodes display between the two existing nodes where they were dropped and  node is connected to both existing nodes.<p>Hold the Shift key when you drop the dimension onto the canvas to add it as a single node with 3 dimension items.</p><p>See [Connect nodes](#connect-nodes) for more information.</p> |
    | Dimension item | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. |
-   | Dimension item | An existing node | A breakdown is automatically applied to the node. |
+   | Dimension item | An existing node | A breakdown is automatically applied to the node.<!--what happens if you hold Shift?--> |
    | Dimension item | An arrow that connects 2 existing nodes | The node displays between the two existing nodes where it was dropped and is connected to both existing nodes. <p>See [Connect nodes](#connect-nodes) for more information.</p> |
-   | Multiple components | A blank area of the canvas | The nodes display where the components were dropped, unconnected with any existing nodes.<p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node if they are the same component type.</p> |
+   | Multiple components | A blank area of the canvas | The nodes display where the components were dropped, unconnected with any existing nodes.<p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node if they are the same component type.</p><p>See [Combine nodes](#combine-nodes) for more information.</p> |
    | Multiple components | An existing node | N/A <!--???--> |
-   | Multiple components | An arrow that connects 2 existing nodes | The nodes display between the two existing nodes where they were dropped and are connected to both existing nodes. <p>See [Connect nodes](#connect-nodes) for more information.</p> |
+   | Multiple components | An arrow that connects 2 existing nodes | The nodes display between the two existing nodes where they were dropped and each node is connected to both existing nodes. <p>See [Connect nodes](#connect-nodes) for more information.</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node if they are the same component type.</p><p>See [Combine nodes](#combine-nodes) for more information.</p> |
 
    Nodes display as a rectangular box with the following information:
 

@@ -60,8 +60,13 @@ The following table shows the types of analyses supported in the Journey canvas 
 | Linear journeys | Yes | Yes |
 | Non-linear journeys with multiple entry points and paths | Yes | No |
 | Adobe Journey Optimizer journeys | Yes | No | 
+| Primary metric | Any metric, including calculated metrics | Can use only Session or User | 
+| Secondary Metric | Yes<p>Any metric, including calculated metrics</p> | No | 
+| Compare filters | No | Yes<p>Compare an [unlimited number of filters](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md#compare-filters-in-fallout)</p> |
 
 ### Choose which visualization to use
+
+Before you choose between using Journey canvas or Fallout, make sure you [understand the differences between the two](#understand-the-differences).
 
 If your fallout analysis involves only a linear journey that has a single known beginning and end, consider using a [Fallout visualization](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) as a more simple option for these more straightforward user journeys.
 
@@ -86,7 +91,7 @@ Using Journey canvas to analyze journeys that were created in Journey Optimizer 
 | Feature | Benefit | 
 |---------|----------|
 | **Create events** | Easily create events by using any Customer Journey Analytics dimensions, metrics, or filters. <p>In Journey Optimizer, a technical user must create an event before it can be added to a journey.</p> |
-| **Create audiences** | Create audiences based on a specific node, edge, or fallout within the Journey canvas visualization. (Launches the Customer Journey Analytics audience builder.) <p>In Journey Optimizer, this is not available.</p> |
+| **Create audiences from custom nodes** | Create audiences based on a custom node that you create in the journey within the Journey canvas visualization. (Launches the Customer Journey Analytics audience builder.) <p>In Journey Optimizer, you can create audiences only for pre-defined activities.</p> |
 | **Fallthrough and fallout** | B3 | 
 | **Break down events** | B3 | 
 
