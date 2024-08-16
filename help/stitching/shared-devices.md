@@ -25,17 +25,22 @@ When two people use the same device and both do make a purchase, sample event da
 
 The order success (purchase) events assign the data accurately to the correct email. How this assignment impacts your analysis depends on how you perform analysis:
 
-- Device centric approach: analysis performed using the Device ID. With this approach, both authenticated and unauthenticated data is included in analysis. However, this approach does not allow for a more person based analysis. 
+- Device centric approach: analysis performed using the Device ID. With this approach, both authenticated and unauthenticated data are included in analysis. However, this approach does not allow for a more person based analysis. 
 - Person centric approach: analysis performed using the email address or other person identifier. With this approach, only authenticated events are included in the analysis. This approach doesn't provide a complete picture of the customer journey, including acquisition
 
-## Stitching 
+## Improve person centric analysis
 
-The stitching process addresses the shortcoming of the person centric approach. Stitching adds the selected person identifier (in the example, the email) to events where that identifier does not exist. Stitching leverages a mapping between Device IDs and Person IDs to ensure that both authenticated and unauthenticated traffic can be used in analysis, keeping it person centric. See [Stitching](overview.md) for more information.
+To improve person centric analysis of shared devices, you have two options: use stitching, or implement ECID reset functionality.
+
+
+### Stitching 
+
+The stitching process addresses the shortcoming of the person centric approach. Stitching adds the selected person identifier (in the example data, the email) to events where that identifier does not exist. Stitching leverages a mapping between Device IDs and Person IDs to ensure that both authenticated and unauthenticated traffic can be used in analysis, keeping it person centric. See [Stitching](overview.md) for more information.
 
 Stitching can attribute shared device data using either last-auth attribution or device-split attribution. 
 
 
-### Last-auth attribution
+#### Last-auth attribution
 
 Last-auth attributes all unknown activity from a shared device to the user who last authenticated. Last-auth is used in Audience Manager, and is the preferred approach for Real-Time Customer Data Profile use cases. The Experience Platform Identity Service builds the graph based on the last-auth attribution and, as such, is used in graph-based stitching. 
 
@@ -51,11 +56,9 @@ When using last-auth attribution in stitching, Stitched IDs resolve as shown in 
 | 2023-05-13 11:08 | Home page | 1234 | | <cassidy@a.com> |
 
 
+#### Device-split 
 
-
-### Device-split 
-
-Device-split attributes anonymous activity from a shared device to the user in closest proximity to the anonymous activity. Device-split is used in field-based stitching and is preferred for analytical use cases. 
+Device-split attributes anonymous activity from a shared device to the user in closest proximity to the anonymous activity. Device-split is the preferred approach for analytical use cases since device-split gives credit for both unauthenticated and authenticated activity to the closest known person. Device-split is currently used in field-based stitching.
 
 When using device-split attribution in stitching, Stitched IDs resolve as shown in the table below. 
 
@@ -69,9 +72,9 @@ When using device-split attribution in stitching, Stitched IDs resolve as shown 
 | 2023-05-13 11:08 | Home page | 1234 | | <cassidy@a.com> |
 
 
-### ECID Reset 
+### ECID reset 
 
-As the name implies, ECID reset resets the ECID on a predetermined trigger. For example, a log out event. A triggered reset causes a single device to get a new ECID. 
+As the name implies, ECID reset implements functionality that resets the ECID on a predetermined trigger, in most cases a login or logout event. With this implementation, a single device gets a new ECID every time the predetermined trigger fires. Essentially, this reset forces the device to become a *new device* over and again from a data perspective. The reset also helps to prevent shared devices from even showing up in the data. No additional algorithms are required, but ECID reset requires you to implement the ECID reset signal as part of your Adobe data collection implementation.
 
 When using ECID reset, Stitched IDs resolve as shown in the table below. 
 
