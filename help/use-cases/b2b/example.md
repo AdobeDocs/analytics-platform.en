@@ -52,16 +52,16 @@ To ensure a proper setup of a connection that supports person-based lookups of y
 
    | Dataset | Person ID | Key | Matching key<br/>(in event dataset) |
    |---|---|---|---| 
-   | B2B Activity Dataset | `personKey.sourceKey` | | |
-   | B2B Person Dataset | `b2b.personKey.sourceKey` | | |
-   | B2B Account Dataset | | `accountKey.sourceKey`&#10102;<br/>Source Key | `b2b.accountKey.sourceKey`&#10102;<br/>(B2B Person Dataset) | 
-   | B2B Opportunity Dataset | | `opportunityKey.sourceKey`&#10103;<br/>Source Key | `opportunityKey.sourceKey`&#10103;<br/>(B2B Opportunity Relation Dataset) | 
-   | B2B Campaign Dataset | | `campaignKey.sourceKey`&#10104;<br/>Source Key |  `campaignKey.sourceKey`&#10104;<br/>(B2B Campaign Member Dataset) | 
-   | B2B Marketing List Dataset | | `marketingListKey.sourceKey`&#10105;<br/>Source Key | `marketingListKey.sourceKey`&#10105;<br/>(B2B Marketing List Member Dataset)| 
-   | B2B Account Person Relation Dataset | | `personKey.sourceKey`&#10106;<br/>Source Key | `personKey.sourceKey`&#10106;<br/>Source Key (Event datasets) |
-   | B2B Opportunity Person Relation Dataset | | `personKey.sourceKey`&#10107;<br/>Source Key | `personKey.sourceKey`&#10107;<br/>Source Key (Event datasets) | 
-   | B2B Campaign Member Dataset | | `personKey.sourceKey`&#10108;<br/>Source Key | `personKey.sourceKey`&#10108;<br/>Source Key (Event datasets) | 
-   | B2B Marketing List Member Dataset | | `personKey.sourceKey`&#10109;<br/>Source Key | `personKey.sourceKey`&#10109;<br/>Source Key (Event datasets) |
+   | B2B Activity Dataset | SourceKey<br/>**personKey.sourceKey** | | |
+   | B2B Person Dataset | SourceKey<br/>**b2b.personKey.sourceKey** | | |
+   | B2B Account Dataset | | SourceKey<br/>**accountKey.sourceKey**&#10102; | SourceKey<br>(B2B Person Dataset)<br/>**b2b.accountKey.sourceKey**&#10102; | 
+   | B2B Opportunity Dataset | | Source Key<br/>**opportunityKey.sourceKey**&#10103; | SourceKey<br/>(B2B Opportunity Relation Dataset)<br/>**opportunityKey.sourceKey**&#10103; | 
+   | B2B Campaign Dataset | | SourceKey<br/>**campaignKey.sourceKey**&#10104; |  SourceKey<br/>(B2B Campaign Member Dataset)<br/>c**ampaignKey.sourceKey**&#10104;<br/> | 
+   | B2B Marketing List Dataset | | SourceKey<br/>**marketingListKey.sourceKey**&#10105; | SourceKey<br/>(B2B Marketing List Member Dataset)<br/>**marketingListKey.sourceKey**&#10105; | 
+   | B2B Account Person Relation Dataset | | SourceKey<br/>**personKey.sourceKey**&#10106; | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#10106; |
+   | B2B Opportunity Person Relation Dataset | | SourceKey<br/>**personKey.sourceKe**y&#10107; | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#10107; | 
+   | B2B Campaign Member Dataset | | SourceKey<br/>**personKey.sourceKey**&#10108; | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#10108; | 
+   | B2B Marketing List Member Dataset | | SourceKey<br/>**personKey.sourceKey**&#10109; | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#10109; |
 
 {style="table-layout:auto"}
 
