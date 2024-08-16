@@ -30,7 +30,7 @@ This is due to the following reasons:
 
   While some data might be available to report on sooner, all [batch data is ingested into a Platform dataset](/help/data-ingestion/data-ingestion.md#ingest-and-use-batch-data.), typically ranging from 3 to 9 hours past the data event time. For alerts to be accurate, data ingestion must be complete, with all batch data available in the dataset. <!--3 to 9 hours is a sweet spot, what we are suggesting.  -->
 
-For these reasons, data ingestion for the various kinds of event data that can be ingested is complete only after some delay, typically ranging from 3 to 9 hours past the data event time. For alerts to be accurate, event data for a given event range must be complete, meaning that we are no longer receiving any event data for the specified event range.
+For these reasons, data ingestion for the various kinds of event data that can be ingested is complete only after some delay, typically ranging from 3 to 9 hours past the data event time. For alerts to be accurate, event data for a given event range must be complete, meaning that Adobe is no longer receiving any event data for the specified event range.
 
 To account for this delay in ingestion time, alerts have a default delay of 9 hours before they are sent. 
 
@@ -39,31 +39,6 @@ You can adjust the default delay of 9 hours to anywhere between 0 and 24 hours. 
 For more information about how to adjust the delay, and the factors you should consider when doing so, see <!--add link -->. 
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. --> 
-
-_ - - - - - - -
-
-**Information below will be added into the documentation where we document the option to adjust the delay**
-
-Consider the following when decreasing the delay time:
-
-* **Understand data availability vs. data completeness**: While some data might be available to report on sooner, all [batch data is ingested into a Platform dataset](/help/data-ingestion/data-ingestion.md#ingest-and-use-batch-data.) only after a period of 3 to 9 hours. For alerts to be accurate, data ingestion must be complete, with all batch data available in the dataset.
-
-* **Determine how long it takes for your data to be complete and available in the dataset**: Data ingestion times differ by organization. Make sure that the delay time you choose for alert delivery is the same or less frequent than the time it takes for the batch data to be available in the Platform dataset<!--add link? -->. 
-
-  >[!TIP]
-  >
-  >The most accurate way of knowing the time required for all batch data to be complete and ingested into the Platform dataset is to consult the data engineers in your organization.
-  >
-  >Alternatively, you can get a general idea of how long it takes for the batch delivery in your organization to be available in the Platform dataset by creating the following freeform table in Analysis Workspace:
-  > 
-  >
-  >  1. In a freeform table in Analysis Workspace, add an [!UICONTROL **Events**] metric and a [!UICONTROL **Day**] dimension.
-  >
-  >  1. Break down the [!UICONTROL **Day**] dimension using an [!UICONTROL **Hours**] dimension.
-  >
-  >     Hours that have no data will show as 0.  
-
-* **Account for errors in your calculations**: If you decrease the default delay time, we recommend configuring the delay for at least an hour longer than the time it takes your organization for data ingestion completeness. For example, if there is a 3-hour delay before your data ingestion is complete, then you should set the delay to 4 hours.
 
   
 
