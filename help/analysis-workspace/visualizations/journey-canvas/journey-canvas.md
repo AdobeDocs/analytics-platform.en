@@ -32,8 +32,6 @@ Following are a few examples of the types of insights Journey canvas can help pr
 
 * The number and percentage of people who arrived at a given point (node) of the journey
 
-* The average amount of time it took for people to complete the journey
-
 * The most common previous or next steps from a given point (node) of the journey
 
 **Fallout**

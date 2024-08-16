@@ -69,7 +69,7 @@ You need to [build a Journey canvas visualization](#begin-building-a-journey-can
 
    | Setting | Function | 
    |---------|----------|
-   | [!UICONTROL **Node type**] | Allows you to configure which node types are shown in the visualization. To hide a node type from the visualization, select the (x) next to the node type, or deselect it from the drop-down menu. To show a hidden node type, select it from the drop-down menu. <p>Depending on the contents of your visualization, possible node types include:</p><ul><li>[!UICONTROL **Read segment**]</li><li>[!UICONTROL **End**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Metric**]</li></ul>  | 
+   | [!UICONTROL **Node type**] | Allows you to configure which node types are shown in the visualization. To hide a node type from the visualization, select the (x) next to the node type, or deselect it from the drop-down menu. To show a hidden node type, select it from the drop-down menu. <p>Depending on the contents of your visualization, possible node types include:</p><ul><li>[!UICONTROL **Read segment**]</li><li>[!UICONTROL **End**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Metric**]</li></ul><p>**Note**: This option displays only when Journey Optimizer data is detected in the same data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).</p>   | 
    | [!UICONTROL **Percentage value**] | Choose from the following options: <ul><li>[!UICONTROL **Percent of total**]: The percent of all of the people included in the data view within the panel's date range.</li><li>[!UICONTROL **Percent of start node**]: The percent of all the people included in the start node.</li></ul> | 
    | [!UICONTROL **Arrow settings**] | Choose from the following options:<ul><li>[!UICONTROL **None**]: </li><li>[!UICONTROL **Condition**]: </li><li>[!UICONTROL **All labels**]: </li></ul><p>**Note**: This option displays only when Journey Optimizer data is detected in the same data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).</p>  |
    | [!UICONTROL **Show fallout**] | B3 |
@@ -113,6 +113,112 @@ To add a node to a Journey canvas visualization:
 
    * Secondary metric statistics (total and percent) 
 
+### Change the color of a node or line between nodes
+
+The option to change the color is available when selecting
+
+* Individual nodes
+
+* The line between nodes
+
+### Rename one or more nodes
+
+The option to rename is available when selecting
+
+* Individual nodes
+
+* Multiple nodes
+
+### Apply a breakdown to a node
+
+The option to apply a breakdown is available when selecting
+
+* Individual nodes
+
+* Multiple nodes
+
+* The line between nodes
+
+### Publish an audience
+
+The option to apply a breakdown is available when selecting
+
+* Individual nodes
+
+* Multiple nodes
+
+* Multiple lines between nodes
+
+### Trend a node (what does this mean? What does the Trend option do?)
+
+The option to trend is available when selecting
+
+* Individual nodes
+
+* Multiple nodes
+
+* The line between nodes
+
+* Multiple lines between nodes
+
+### View the most popular next or previous nodes
+
+The option to view the most popular next or previous nodes is available when selecting
+
+* Individual nodes
+
+* Multiple nodes
+
+### Duplicate nodes
+
+The option to duplicate is available when selecting
+
+* Multiple nodes
+
+### Create a segment 
+
+The option to create a segment is available when selecting
+
+* Individual nodes
+
+* Multiple nodes
+
+* The line between nodes
+
+* Multiple lines between nodes
+
+### Create an audience
+
+(Works only when selecting between two nodes? Is this different than publishing an audience (which you can do when selecting one or more nodes?))
+
+The option to create an audience is available when selecting
+
+* The line between nodes
+
+### Rearrange nodes
+
+Journeys in Journey canvas consist of a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. 
+
+You can drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. 
+
+### Combine nodes
+
+The option to trend is available when selecting
+
+* Multiple nodes
+
+The logic that is applied to nodes when they are combined differs depending on the component types you are combining, as follows:
+
+* When you combine multiple filters, they are joined with AND.
+
+* When you combine multiple dimension items or metrics, they are joined with OR.
+
+Do either of the following to combine nodes in Journey canvas:
+
+* Drag a node onto another node.
+
+* Select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**.<!--Is there a limit on how many you can combine? -->
+
 ### Connect nodes
 
 You can connect nodes that are already on the canvas, or you can connect a node when adding it to the canvas.
@@ -133,25 +239,31 @@ To connect nodes in Journey canvas:
 
 When adding a node to the canvas, you can connect it to an existing node. For more information, see [Add a node](#add-a-node).
 
-### Combine nodes
+### Add a time constraint between nodes
 
-The logic that is applied to nodes when they are combined differs depending on the component types you are combining, as follows:
+The option to add a time constraint is available when selecting
 
-* When you combine multiple filters, they are joined with AND.
+* The line between nodes
 
-* When you combine multiple dimension items or metrics, they are joined with OR.
+You can set a time constraint between nodes. If a user follows the defined journey but takes longer than the allotted time period to move between the nodes, they are considered to have fallen out of the journey.
 
-Do either of the following to combine nodes in Journey canvas:
+Right-click the edge, then select [!UICONTROL **Add time constraint**].
 
-* Drag a node onto another node.
+### View the top nodes between existing nodes
 
-* Select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**.<!--Is there a limit on how many you can combine? -->
+You can view the top 3 nodes between 2 existing nodes.
 
-### Rearrange nodes
+### Delete a node
 
-Journeys in Journey canvas consist of a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. 
+The option to delete is available when selecting
 
-You can drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. 
+* Individual nodes
+
+* Multiple nodes
+
+* The line between nodes
+
+* Multiple lines between nodes
 
 ### Manage existing nodes
 
