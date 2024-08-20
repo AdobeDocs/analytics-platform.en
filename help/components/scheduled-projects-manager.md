@@ -7,32 +7,48 @@ role: User
 ---
 # Scheduled projects
 
-Scheduled Analysis Workspace projects can be managed under **[!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Scheduled Projects]**.
+Scheduled Analysis Workspace projects can be managed in Customer Journey Analytics using **[!UICONTROL Components]** > **[!UICONTROL Scheduled projects]**.
 
-In the Scheduled Projects Manager, you can edit and delete recurring project schedules. Search for a schedule in the search bar or by using the filter options in the left rail. You can filter by tag, approved schedules, owners and more.
+In **[!UICONTROL  Scheduled Projects]**, you can edit and delete recurring project schedules. Search for a schedule using the ![Search](/help/assets/icons/Search.svg) the search field. Or use the ![Filter](/help/assets/icons/Filter.svg) filter options in the left rail. You can filter by **[!UICONTROL Tag]**, **[!UICONTROL Owners]** and **[!UICONTROL Other filters]**.
+
+The Scheduled projects list displays columns for:
 
 | Field | Description |
 | --- | --- |
-| [!UICONTROL Favorites] | Selecting the star icon makes this schedule a favorite. |
-| [!UICONTROL Schedule ID] | This ID is used mainly for debugging purposes. |
-| [!UICONTROL Title and Description] | Title and description of this project. |
+| ![Star](/help/assets/icons/Star.svg) | Selecting the star icon makes this schedule a favorite. |
+| [!UICONTROL Schedule ID] | An ID that is used mainly for debugging purposes. |
+| [!UICONTROL Name] | Name of this project.<br/>Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to see more details for the scheduled project.<br/>Select ![More](/help/assets/icons/More.svg) to open a context menu. From this menu you can:<ul><li>![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** a scheduled project.</li><li>![Labels](/help/assets/icons/Labels.svg) **[!UICONTROL Tag]** a scheduled project.</li><li>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** a scheduled project.</li><li>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export CSV]**: Export a scheduled project to a CSV file.</li></ul>|
 | [!UICONTROL Owner] | The person who created and owns the project. |
 | [!UICONTROL Tags] | (optional) Tagging is a good way to organize projects. All users can create tags and apply one or more tags to a project. However, you can see tags only for those projects that you own or that have been shared with you.  |
-| [!UICONTROL Delivered To] | The recipient(s) of this scheduled project. |
-| [!UICONTROL Expiration Date] | You can set the expiration date to up to one year, regardless of schedule frequency. |
-| [!UICONTROL Frequency] | How often you want to have this schedule project sent to the recipient(s). |
+| [!UICONTROL Delivered to] | The recipients of this scheduled project. |
+| [!UICONTROL Expiration date] | You can set the expiration date to up to one year, regardless of schedule frequency. |
+| [!UICONTROL Frequency] | How often you want to have this schedule project sent to one or more recipients. |
 | [!UICONTROL Execution Time] | At what time of day this scheduled project gets sent. |
 | [!UICONTROL Number of Queries] | The number of queries against this project. | 
+| [!UICONTROL Longest Date Range] | The longest date range defined for the scheduled project. This value might be relevant to investigate performance issues. See [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md) for more information. |
+| [!UICONTROL Number of queries] | The number of queries executed for the scheduled project. This value might be relevant to investigate performance issues. See [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md) for more information.| 
 
-The following are common actions in the Scheduled Projects manager:
+You can use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to configure which columns to display.
 
-|Action|Description|
+Scheduled Projects shows the items that a specific user has created. If the user account is disabled in the application, all scheduled deliveries will stop.
+
+
+
+## Actions
+
+The following are common actions in the Scheduled Projects manager. You can select actions from the context menu or from the blue action bar when selecting more than one scheduled project.
+
+| Action | Description |
 |---|---|
-|**[!UICONTROL Edit schedule]**|Click the title of the schedule to update its delivery settings.|
-|**[!UICONTROL Delete schedule]**|Select the scheduled project in the list and then click Delete from the menu. This will delete the selected schedule for the project; the project itself will not be deleted.|
-|**[!UICONTROL Add tags]**|Select the scheduled project in the list and then choose "Tag" or "Approve" to organize your schedules and make them easier to search for.|
-|**[!UICONTROL View failed schedules]**|Navigate to the left rail > Other filters > Failed to see schedules that have failed.|
-|**[!UICONTROL View expired schedules]**|Navigate to the left rail > Other filters > Expired to see schedules that have expired. Click the title of the schedule to setup a new deliery schedule.|
-|**[!UICONTROL View schedule ID]**|Navigate to column options in the top right and add the Schedule ID column to the table. The scheduled ID is often useful for debugging.|
+| **[!UICONTROL Approve]** | Approve the scheduled project. |
+| **[!UICONTROL Edit]** | Click the title of the schedule to update its delivery settings.|
+| **[!UICONTROL Delete]** | Delete the selected schedule for the project; the project itself is not deleted.|
+| **[!UICONTROL Tag]** | Tag the scheduled project so the projects are easier to find. |
 
-The Scheduled Projects Manager shows the items that a specific user has created. If the user account is disabled in the application, all scheduled deliveries stop.
+Using ![Filter](/help/assets/icons/Filter.svg) Filter, you can also take the following actions:
+
+| Action | Description |
+|---|---|
+|**[!UICONTROL View failed schedules]**| Navigate to the **[!UICONTROL Other filters]** and select **[!UICONTROL Failed]** to see schedules that have failed. |
+|**[!UICONTROL View expired schedules]**|Navigate to the **[!UICONTROL Other filters]** and select **[!UICONTROL Expired]** to see schedules that have expired. Click the title of the schedule to set up a new delivery schedule. |
+

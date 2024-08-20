@@ -71,13 +71,13 @@
 
 ## Components sort options {#components-sort-options}
 
-   | Option | Function |
-   |---------|----------|
-   | [!UICONTROL **Recommended**] | Sorts components with those that are recommended at the top of the list. Components that are used most frequently and most recently by you or by others in your organization are shown higher in the list. |
-   | [!UICONTROL **Alphabetical**] | Sorts components alphabetically. |
-   | [!UICONTROL **Categorical**] | Sorts components according to component type (dimension, metric, filter, date range). |
+| Option | Function |
+|---------|----------|
+| [!UICONTROL **Recommended**] | Sorts components with those that are recommended at the top of the list. Components that are used most frequently and most recently by you or by others in your organization are shown higher in the list. |
+| [!UICONTROL **Alphabetical**] | Sorts components alphabetically. |
+| [!UICONTROL **Categorical**] | Sorts components according to component type (dimension, metric, filter, date range). |
 
-   {style="table-layout:auto"}
+{style="table-layout:auto"}
 
 ## Time comparison {#apply-time-comparison}
 

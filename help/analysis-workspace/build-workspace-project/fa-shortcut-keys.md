@@ -29,8 +29,8 @@ Note that on your keyboard the following symbols might be used:
  | Go to Components pane | **[!UICONTROL *opt+shift+3*]** | **[!UICONTROL *alt+shift+3*]**  | 
  | Collapse/Expand all panels | **[!UICONTROL *opt+m*]** | **[!UICONTROL *alt+m*]**  | 
  | Collapse/Expand Active panel | **[!UICONTROL *opt+cmd+m*]** | **[!UICONTROL *alt+ctrl+m*]**  | 
- | Move to next panel | **[!UICONTROL *opt+▶︎*]** | **[!UICONTROL *alt+▶︎*]**  | 
- | Move to previous panel | **[!UICONTROL *opt+◀︎*]** | **[!UICONTROL *alt+◀︎*]**  | 
+ | Move to next panel | **[!UICONTROL *opt*+▶︎]** | **[!UICONTROL *alt*+▶︎]**  | 
+ | Move to previous panel | **[!UICONTROL *opt*+◀︎]** | **[!UICONTROL *alt*+◀︎]**  | 
 
 ## Analysis actions
 

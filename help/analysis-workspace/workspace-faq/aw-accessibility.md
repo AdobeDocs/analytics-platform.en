@@ -21,11 +21,11 @@ Accessibility refers to making products usable for people with visual, auditory,
 
 ## Keyboard navigation
 
-Navigation in [!UICONTROL Analysis Workspace] works top > down, and left > right. The following navigational elements facilitate accessibility:
+Navigation in [!UICONTROL Analysis Workspace] works top down, and from left to right. The following navigational elements facilitate accessibility:
 
-* The `Tab` key enables landmark shortcuts, moving between larger sections within Workspace. In the left rail, `Tab` also enables you to move from one draggable option to the next.
-* The `left/right arrows` move between individual elements after `Tab` has highlighted it. 
-* The `F6` navigates to the first panel in the project and moves between the visualizations within that panel. Then, it moves to the next panel in the project and repeats. 
+* The **[!UICONTROL Tab]** key enables landmark shortcuts, moving between larger sections within Workspace. In the left rail, **[!UICONTROL Tab]** also enables you to move from one draggable option to the next.
+* The ◀︎ and ▶︎ move between individual elements after the **[!UICONTROL Tab]** key has highlighted an element. 
+* The **[!UICONTROL F6]** key navigates to the first panel in the project and moves between the visualizations within that panel. Then, it moves to the next panel in the project and repeats. 
 * Focus indicators are applied so that sighted keyboard users have a clear indication of which UI element currently has focus. The indicator is a blue border for the panel that has focus. And gray background for the recent selected functionality and the selection within the functionality. In the example, [!UICONTROL Components] and the Page dimension have been selected recently.
 
     ![Freeform table showing a focus ndicator of a blue border around the Freeform table.](assets/focus-indicator.png)
@@ -34,17 +34,17 @@ Navigation in [!UICONTROL Analysis Workspace] works top > down, and left > right
 
 1. Tab until you have reached the menu bar.
 1. Use the arrow keys to navigate between menus and menu items.
-1. Press `Enter` to open a menu or select menu item.
-1. Use `Esc` to close a menu.
+1. Press **[!UICONTROL Enter]** to open a menu or select a menu item.
+1. Use **[!UICONTROL Esc]** to close a menu.
 
 ### Keyboard navigation for drag & drop interactions 
 
 [!UICONTROL Analysis Workspace] is a drag and drop user interface. However, users can add components using the keyboard instead:
 
 1. Tab to a component in the left rail.
-1. Press `Enter` to select.
+1. Press **[!UICONTROL Enter]** to select.
 1. Use arrow keys to navigate to the area where you want to drop the component.
-1. Press `Enter` to place the component.
+1. Press **[!UICONTROL Enter]** to place the component.
 
 ### Keyboard shortcuts (hotkeys) 
 
@@ -52,7 +52,7 @@ Navigation in [!UICONTROL Analysis Workspace] works top > down, and left > right
 
 ## Support for screen readers and screen magnifiers
 
-A screen reader reads text that appears on the computer screen. It also reads non-textual information, such as button labels or image descriptions in the application, provided in accessibility tags or attributes.  
+A screen reader reads text that appears on the computer screen. It also reads non-textual information, such as button labels or image descriptions in the application.  
 
 ## Color palettes & contrast  
 
