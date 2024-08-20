@@ -58,8 +58,8 @@ The following table shows the types of analyses supported in the Journey canvas 
 | Linear journeys | Yes | Yes |
 | Non-linear journeys with multiple entry points and paths | Yes | No |
 | Adobe Journey Optimizer journeys | Yes | No | 
-| Primary metric | Any metric, including calculated metrics | Can use only Session or User | 
-| Secondary Metric | Yes<p>Any metric, including calculated metrics</p> | No | 
+| Primary metric | Any metric, including calculated metrics | Can use only the Session or User metrics | 
+| Secondary metric | Yes<p>Any metric, including calculated metrics</p> | No | 
 | Compare filters | No | Yes<p>Compare an [unlimited number of filters](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md#compare-filters-in-fallout)</p> |
 
 ### Choose which visualization to use
@@ -97,7 +97,7 @@ Using Journey canvas to analyze journeys that were created in Journey Optimizer 
 
 After you create an analysis of a Journey Optimizer journey in Journey canvas, data syncs in only one direction, from Journey Optimizer to Journey canvas. This means that changes made to a journey in Journey canvas are never reflected in Journey Optimizer.
 
-Furthermore, changes made to a journey in Journey Optimizer sync to Journey canvas only if the journey remains unmodified in Journey canvas. After you modify a journey in Journey canvas, any changes you make to the journey are available only in Journey Optimizer. You can delete and [re-create the journey in Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) to analyze the journey with its latest changes.
+Furthermore, changes made to a journey in Journey Optimizer sync to Journey canvas only if the journey remains unmodified in Journey canvas. After you modify a journey in Journey canvas, any changes you make to the journey in Journey Optimizer are not reflected in Journey canvas. To see the changes reflected in Journey canvas, you can delete and [re-create the journey in Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 ### Terminology differences between Journey Optimizer and Customer Journey Analytics
 
