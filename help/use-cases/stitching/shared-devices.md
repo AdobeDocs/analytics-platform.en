@@ -43,7 +43,7 @@ Stitching can attribute shared device data using either last-auth attribution or
 
 #### Last-auth attribution
 
-Last-auth attributes all unknown activity from a shared device to the user who last authenticated. Last-auth is used in Audience Manager, and is the preferred approach for Real-Time Customer Data Profile use cases. The Experience Platform Identity Service builds the graph based on the last-auth attribution and, as such, is used in graph-based stitching. 
+Last-auth attributes all unknown activity from a shared device to the user who last authenticated. Last-auth is used in Audience Manager, and is the preferred approach for Real-Time Customer Data Profile use cases. The Experience Platform Identity Service builds the graph based on the last-auth attribution and, as such, is used in graph-based stitching. See [Identity graph linking rules overview](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) for more information.
 
 When using last-auth attribution in stitching, Stitched IDs resolve as shown in the table below. 
 
@@ -59,7 +59,7 @@ When using last-auth attribution in stitching, Stitched IDs resolve as shown in 
 
 #### Device-split 
 
-Device-split attributes anonymous activity from a shared device to the user in closest proximity to the anonymous activity. Device-split is the preferred approach for analytical use cases since device-split gives credit for both unauthenticated and authenticated activity to the closest known person. Device-split is currently used in field-based stitching.
+Device-split attributes anonymous activity from a shared device to the user in closest proximity to the anonymous activity. Device-split is currently used in field-based stitching. Device-split is the preferred approach for analytical use cases since device-split gives credit for both unauthenticated and authenticated activity to the closest known person. Device-split is currently used in field-based stitching.
 
 When using device-split attribution in stitching, Stitched IDs resolve as shown in the table below. 
 
