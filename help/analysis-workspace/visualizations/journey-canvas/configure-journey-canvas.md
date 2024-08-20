@@ -125,33 +125,33 @@ You can automatically add the top nodes based on the nodes that are already on t
 
 This option is available when selecting the following objects on the canvas:
 
-* Individual nodes
+* Individual nodes 
 
 * The line between nodes
 
-#### Add the top next nodes
+#### Add top nodes after an existing node
 
-You can add the top 3 nodes that come after an existing node in the journey.
+You can select a node and add the top 3 nodes that come after it in the journey.
 
-1. Right-click the nodes where you want to add the top 3 nodes that come next in the journey.
+1. Right-click the node where you want to add the top 3 nodes that come after it in the journey.
 
    This node cannot have any existing nodes going out of it in the journey.
 
-1. Select [!UICONTROL **Add top next nodes**].<!--should we get rid of "on the journey"?-->
+1. Select [!UICONTROL **Add top nodes after this node**].
 
-   The top next nodes are added and each are connected to the node you selected.
+   The top 3 nodes that come after this node in the journey are added, and each are connected to the node you selected as a separate branch.
 
-#### Add the top previous nodes
+#### Add top nodes before an existing node
 
 You can add the top 3 nodes that come before an existing node in the journey.
 
-1. Right-click the node where you want to add the top 3 previous nodes in the journey.
+1. Right-click the node where you want to add the top 3 nodes that come before it in the journey.
 
    This node cannot have any existing nodes coming into it in the journey.
 
-1. Select [!UICONTROL **Add top previous nodes**].<!--should we get rid of "on the journey"?-->
+1. Select [!UICONTROL **Add top nodes before this node**].
 
-   The top previous nodes are added and each are connected to the node you selected.
+   The top 3 nodes that come before this node in the journey are added, and each are connected to the node you selected as a separate branch.
 
 #### Add the top nodes between existing nodes
 
@@ -161,7 +161,7 @@ You can add the top 3 nodes that come between 2 existing nodes:
 
 1. Select [!UICONTROL **Add top nodes**].<!-- I don't think this should have the word "next" in the UI option, because it's both next and previous. It's in between. Just "Get top nodes" sounds better to me.-->
 
-   The top 3 nodes are added between and connected to the 2 existing nodes. 
+   The top 3 nodes are added between the 2 existing nodes, and each are connected as a separate branch. 
 
 ### Change the color of a node or line between nodes
 
@@ -183,13 +183,15 @@ To change the color of a node or line:
 
    The following colors are available: <!--look into this interaction and color list-->
 
-### Rename one or more nodes
+### Rename
+
+When you drag a component to a Journey canvas visualization, it creates a node with the same name as the component name. You can rename the node to better match the step of the journey that the node represents.
 
 The option to rename is available when selecting the following objects on the canvas:
 
 * Individual nodes
 
-* The line between nodes <!--This is what the req doc says, but is this true? Do edges have names?-->
+* The line between nodes 
 
 To rename a node:
 
@@ -230,6 +232,16 @@ The option to publish an audience is available when selecting the following obje
 * Multiple nodes
 
 * Multiple lines between nodes <!-- Not an individual line between nodes? -->
+
+To publish an audience:
+
+1. Select one or more nodes where you want to publish an audience, then right-click one of the selected nodes.
+
+   Or
+
+   Select multiple <!--or "one or more"? -->lines between 2 nodes where you want to publish an audience, then right-click one of the selected lines.
+
+1. Select [!UICONTROL **Publish audience**].
 
 ### Create an audience
 
