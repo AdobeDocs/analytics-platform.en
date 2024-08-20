@@ -59,7 +59,7 @@ See [Journey canvas overview](/help/analysis-workspace/visualizations/journey-ca
 
 ## Configure a Journey canvas visualization
 
-You need to [build a Journey canvas visualization](#begin-building-a-journey-canvas-visualization) before you can configure it as described in the following sections. 
+You need to [begin building a Journey canvas visualization](#begin-building-a-journey-canvas-visualization) before you can configure it as described in the following sections. 
 
 ### Configure settings
 
