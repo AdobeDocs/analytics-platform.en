@@ -70,9 +70,9 @@ You need to [build a Journey canvas visualization](#begin-building-a-journey-can
    | Setting | Function | 
    |---------|----------|
    | [!UICONTROL **Node type**] | Allows you to configure which node types are shown in the visualization. To hide a node type from the visualization, select the (x) next to the node type, or deselect it from the drop-down menu. To show a hidden node type, select it from the drop-down menu. <p>Depending on the contents of your visualization, possible node types include:</p><ul><li>[!UICONTROL **Read segment**]</li><li>[!UICONTROL **End**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Metric**]</li></ul><p>**Note**: This option displays only when Journey Optimizer data is detected in the same data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).</p>   | 
-   | [!UICONTROL **Percentage value**] | Choose from the following options: <ul><li>[!UICONTROL **Percent of total**]: The percent of all of the people included in the data view within the panel's date range.</li><li>[!UICONTROL **Percent of start node**]: The percent of all the people included in the start node.<p>This option is available only if you have a single start node. If you have multiple start nodes, it is hidden.</p></li></ul> | 
+   | [!UICONTROL **Percentage value**] | Choose from the following options: <ul><li>[!UICONTROL **Percent of total**]: The percent of all of the people included in the data view within the panel's date range.</li><li>[!UICONTROL **Percent of start node**]: The percent of all the people included in the start node.<p>This option is available only if you have a single start node. It is hidden if you have multiple start nodes.</p></li></ul> | 
    | [!UICONTROL **Arrow settings**] | Choose from the following options:<ul><li>[!UICONTROL **None**]: </li><li>[!UICONTROL **Condition**]: </li><li>[!UICONTROL **All labels**]: </li></ul><p>**Note**: This option displays only when Journey Optimizer data is detected in the same data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).</p>  |
-   | [!UICONTROL **Show fallout**] | B3 |
+   | [!UICONTROL **Show fallout**] | Add fallout data for each node, showing the number and percentage of people who left the journey at a given node. |
 
 1. Continue with [Add a node](#add-a-node).
 
@@ -93,17 +93,17 @@ To add a node to a Journey canvas visualization:
    |  Component type | Placement of component | Visualization updates after node is added | 
    |---------|----------|----------|
    | Metric | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. | 
-   | Metric | An existing node | Components automatically combine to form a new node with the same OR/AND logic as fallout.<p>See [Combine nodes](#combine-nodes) for more information.</p> <!--what happens if you hold Shift?--> |
-   | Metric | An arrow that connects 2 existing nodes | The node displays between the two existing nodes where it was dropped and is connected to both existing nodes. <p>See [Connect nodes](#connect-nodes) for more information.</p> |
+   | Metric | An existing node | Components automatically combine to form a new node. (See [Combine nodes](#combine-nodes) for more information.)</p> |
+   | Metric | An arrow that connects 2 existing nodes | The node displays between the two existing nodes where it was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p> |
    | Dimension | Blank area of the canvas | 3 nodes are created for the top 3 dimension items. The nodes display where the component was dropped, unconnected with any existing nodes.<p>Hold the Shift key when you drop the dimension onto the canvas to add it as a single node with 3 dimension items.</p> |
    | Dimension | An existing node | A breakdown is automatically applied to the node with the top 5 dimension items displayed.<!--what happens if you hold Shift?--> |
-   | Dimension | An arrow that connects 2 existing nodes | Three nodes are created for the top 3 dimension items. The nodes display between the two existing nodes where they were dropped and  node is connected to both existing nodes.<p>Hold the Shift key when you drop the dimension onto the canvas to add it as a single node with 3 dimension items.</p><p>See [Connect nodes](#connect-nodes) for more information.</p> |
+   | Dimension | An arrow that connects 2 existing nodes | 3 nodes are created for the top 3 dimension items. The nodes display between the two existing nodes where they were dropped and each  node is connected to both existing nodes.<p>Hold the Shift key when you drop the dimension onto the canvas to add it as a single node with 3 dimension items. (See [Connect nodes](#connect-nodes) for more information.)</p> |
    | Dimension item | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. |
    | Dimension item | An existing node | A breakdown is automatically applied to the node.<!--what happens if you hold Shift?--> |
    | Dimension item | An arrow that connects 2 existing nodes | The node displays between the two existing nodes where it was dropped and is connected to both existing nodes. <p>See [Connect nodes](#connect-nodes) for more information.</p> |
-   | Multiple components | A blank area of the canvas | The nodes display where the components were dropped, unconnected with any existing nodes.<p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node if they are the same component type.</p><p>See [Combine nodes](#combine-nodes) for more information.</p> |
-   | Multiple components | An existing node | N/A <!--???--> |
-   | Multiple components | An arrow that connects 2 existing nodes | The nodes display between the two existing nodes where they were dropped and each node is connected to both existing nodes. <p>See [Connect nodes](#connect-nodes) for more information.</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node if they are the same component type.</p><p>See [Combine nodes](#combine-nodes) for more information.</p> |
+   | Multiple components | A blank area of the canvas | **If none of the components are dimensions:**<p>Each component displays as a separate node where the components were dropped, unconnected with any existing nodes.</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. (Components must be of the same type to be combined into a single node.)</p><p>**If any of the components you are adding are dimensions:**</p><p>Each component displays as a separate node where the components were dropped, unconnected with any existing nodes.</p><p>Only one dimension can be added at a time, and 3 nodes are created for the dimension's top 3 items.</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. (Components must be of the same type to be combined into a single node.) The top 3 dimension items are combined with each node.</p><p>See [Combine nodes](#combine-nodes) for more information.</p> |
+   | Multiple components | An existing node | All components are combined with the existing node.<p>If any of the components you are adding are dimensions, then the top 3 dimension items are combined with the node.</p> |
+   | Multiple components | An arrow that connects 2 existing nodes | **If none of the components are dimensions:**<p>Each component displays as a separate node where the components were dropped and each node is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. (Components must be of the same type to be combined into a single node.) (See [Combine nodes](#combine-nodes) for more information.)</p><p>**If any of the components you are adding are dimensions:**</p><p>Each component displays as a separate node where the components were dropped and each node is connected to both existing nodes.</p><p>Only one dimension can be added at a time, and 3 nodes are created for the dimension's top 3 items. Each node is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. (Components must be of the same type to be combined into a single node.) The top 3 dimension items are combined with each node, and each node is connected to both existing nodes. (See [Combine nodes](#combine-nodes) for more information.)</p>|
 
    Nodes display as a rectangular box with the following information:
 
@@ -123,26 +123,49 @@ To add a node to a Journey canvas visualization:
 
 You can automatically add the top nodes based on the nodes that are already on the canvas. 
 
-The option to add the top nodes is available when selecting the following objects on the canvas:
+This option is available when selecting the following objects on the canvas:
 
 * Individual nodes
 
-* Multiple nodes
-
 * The line between nodes
 
-#### Add the top next or previous nodes
+#### Add the top next nodes
 
-To add the top 3 nodes before or after one or more existing nodes:
+You can add the top 3 nodes that come after an existing node in the journey.
 
-<!-- Previous should add top 3 previous nodes as various branch nodes before the node (only allowed on nodes with nothing coming into it); After should add top 3 next nodes as various branch nodes after the node (only allowed on nodes with nothing going out of it)
- -->
+1. Right-click the nodes where you want to add the top 3 nodes that come next in the journey.
+
+   This node cannot have any existing nodes going out of it in the journey.
+
+1. Select [!UICONTROL **Add top next nodes**].<!--should we get rid of "on the journey"?-->
+
+   The top next nodes are added and each are connected to the node you selected.
+
+#### Add the top previous nodes
+
+You can add the top 3 nodes that come before an existing node in the journey.
+
+1. Right-click the node where you want to add the top 3 previous nodes in the journey.
+
+   This node cannot have any existing nodes coming into it in the journey.
+
+1. Select [!UICONTROL **Add top previous nodes**].<!--should we get rid of "on the journey"?-->
+
+   The top previous nodes are added and each are connected to the node you selected.
 
 #### Add the top nodes between existing nodes
 
-To add the top 3 nodes between 2 existing nodes:
+You can add the top 3 nodes that come between 2 existing nodes:
+
+1. Right-click the line between the 2 nodes where you want to add the top 3 nodes in the journey.
+
+1. Select [!UICONTROL **Add top nodes**].<!-- I don't think this should have the word "next" in the UI option, because it's both next and previous. It's in between. Just "Get top nodes" sounds better to me.-->
+
+   The top 3 nodes are added between and connected to the 2 existing nodes. 
 
 ### Change the color of a node or line between nodes
+
+You can change the color of a node or line on the canvas.
 
 The option to change the color is available when selecting the following objects on the canvas:
 
@@ -150,13 +173,31 @@ The option to change the color is available when selecting the following objects
 
 * The line between nodes
 
+To change the color of a node or line:
+
+1. Right-click the node or line whose color you want to change.
+
+1. Select [!UICONTROL **Change color**]. <!--make sure "color" isn't capitalized. It is in the req doc-->
+
+1. Select the desired color. 
+
+   The following colors are available: <!--look into this interaction and color list-->
+
 ### Rename one or more nodes
 
 The option to rename is available when selecting the following objects on the canvas:
 
 * Individual nodes
 
-* Multiple nodes
+* The line between nodes <!--This is what the req doc says, but is this true? Do edges have names?-->
+
+To rename a node:
+
+1. Right-click the node that you want to rename.
+
+1. Select [!UICONTROL **Rename**]. 
+
+1. Specify a new name, then press Enter.<!--is that right?-->
 
 ### Apply a breakdown
 
@@ -168,13 +209,45 @@ The option to apply a breakdown is available when selecting the following object
 
 * The line between nodes
 
+* Multiple lines between nodes
+
+To apply a breakdown:
+
+1. Select one or more nodes where you want to apply a breakdown, then right-click one of the selected nodes.
+
+   Or
+
+   Select one or more lines between 2 nodes where you want to apply the breakdown, then right-click one of the selected lines.
+
+1. Select [!UICONTROL **Breakdown**].
+
 ### Publish an audience
 
-The option to apply a breakdown is available when selecting the following objects on the canvas:
+The option to publish an audience is available when selecting the following objects on the canvas:
 
 * Individual nodes
 
 * Multiple nodes
+
+* Multiple lines between nodes <!-- Not an individual line between nodes? -->
+
+### Create an audience
+
+<!-- Works only when selecting between two nodes? Is this different than publishing an audience (which you can do when selecting one or more nodes?) -->
+
+The option to create an audience is available when selecting the following objects on the canvas:
+
+* The line between nodes
+
+### Create a segment 
+
+The option to create a segment is available when selecting the following objects on the canvas:
+
+* Individual nodes
+
+* Multiple nodes
+
+* The line between nodes
 
 * Multiple lines between nodes
 
@@ -196,25 +269,7 @@ The option to duplicate is available when selecting the following objects on the
 
 * Multiple nodes
 
-### Create a segment 
 
-The option to create a segment is available when selecting the following objects on the canvas:
-
-* Individual nodes
-
-* Multiple nodes
-
-* The line between nodes
-
-* Multiple lines between nodes
-
-### Create an audience
-
-(Works only when selecting between two nodes? Is this different than publishing an audience (which you can do when selecting one or more nodes?))
-
-The option to create an audience is available when selecting the following objects on the canvas:
-
-* The line between nodes
 
 ### Rearrange nodes
 
@@ -224,19 +279,21 @@ You can drag nodes on the canvas to rearrange the events and conditions of the j
 
 ### Combine nodes
 
-The option to trend is available when selecting the following objects on the canvas:
-
-* Multiple nodes
-
 The logic that is applied to nodes when they are combined differs depending on the component types you are combining, as follows:
 
 * When you combine multiple filters, they are joined with AND.
 
 * When you combine multiple dimension items or metrics, they are joined with OR.
 
-Do either of the following to combine nodes in Journey canvas:
+The option to combine nodes is available when selecting the following objects on the canvas:
+
+* Multiple nodes
+
+You can also do any of the following to combine nodes in Journey canvas:
 
 * Drag a node onto another node.
+
+* Drag multiple nodes simultaneously from the left rail onto the canvas while holding the Shift key.
 
 * Select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**.<!--Is there a limit on how many you can combine? -->
 
@@ -262,17 +319,21 @@ When adding a node to the canvas, you can connect it to an existing node. For mo
 
 ### Add a time constraint between nodes
 
+You can set a time constraint between nodes. When a time constraint is in place, if a user follows the defined journey but takes longer than the allotted time period to move between the nodes, they are considered to have fallen out of the journey.
+
 The option to add a time constraint is available when selecting the following objects on the canvas:
 
 * The line between nodes
 
-You can set a time constraint between nodes. If a user follows the defined journey but takes longer than the allotted time period to move between the nodes, they are considered to have fallen out of the journey.
+To add a time constraint:
 
-Right-click the edge, then select [!UICONTROL **Add time constraint**].
+1. Right-click the the line between 2 nodes, then select [!UICONTROL **Add time constraint**].
 
-...
+1. Choose from the following options:
 
-<!-- from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon).  -->
+   * 
+
+   *  <!-- from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon).  -->
 
 ### Delete a node
 
