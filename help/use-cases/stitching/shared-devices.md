@@ -7,6 +7,7 @@ hide: yes
 hide-from-toc: yes
 role: Admin
 ---
+
 # Shared devices
 
 This article provides context on shared devices, how to handle and mitigate data from shared devices using stitching, and understand shared device exposure in your data using Query Service. 
