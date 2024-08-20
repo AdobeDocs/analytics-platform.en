@@ -360,8 +360,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Cross-channel data {#cross-channel}
     + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
     + [Import call center and web data](../use-cases/cross-channel/call-center.md)
-  + Stitching {#stitching}
-    + [Shared devices](/help/use-cases/stitching/shared-devices.md)
   + Adobe Analytics data {#aa-data}
     + [Use Marketing channel dimensions](../use-cases/aa-data/marketing-channels.md)
     + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
