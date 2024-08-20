@@ -117,13 +117,13 @@ To add a node to a Journey canvas visualization:
 
 1. Repeat this process to continue adding nodes to build out your journey. 
 
-1. Continue customizing the journey as described in the sections below. You can connect nodes, rename nodes, apply breakdowns, publish audiences, add time constraints, and more. 
+1. Continue customizing the journey as described in the sections below. You can connect nodes, rename nodes, apply breakdowns, create audiences, add time constraints, and more. 
 
 ### Add the top nodes based on existing nodes
 
 You can automatically add the top nodes based on the nodes that are already on the canvas. 
 
-This option is available when selecting the following objects on the canvas:
+This option is available for the following objects on the canvas:
 
 * Individual nodes 
 
@@ -167,7 +167,7 @@ You can add the top 3 nodes that come between 2 existing nodes:
 
 You can change the color of a node or line on the canvas.
 
-The option to change the color is available when selecting the following objects on the canvas:
+The option to change the color is available for the following objects on the canvas:
 
 * Individual nodes
 
@@ -187,7 +187,7 @@ To change the color of a node or line:
 
 When you drag a component to a Journey canvas visualization, it creates a node with the same name as the component name. You can rename the node to better match the step of the journey that the node represents.
 
-The option to rename is available when selecting the following objects on the canvas:
+The option to rename is available for the following objects on the canvas:
 
 * Individual nodes
 
@@ -203,7 +203,7 @@ To rename a node:
 
 ### Apply a breakdown
 
-The option to apply a breakdown is available when selecting the following objects on the canvas:
+The option to apply a breakdown is available for the following objects on the canvas:
 
 * Individual nodes
 
@@ -223,37 +223,33 @@ To apply a breakdown:
 
 1. Select [!UICONTROL **Breakdown**].
 
-### Publish an audience
+### Create an audience
 
-The option to publish an audience is available when selecting the following objects on the canvas:
+The option to create an audience is available for the following objects on the canvas:
 
 * Individual nodes
 
 * Multiple nodes
 
-* Multiple lines between nodes <!-- Not an individual line between nodes? -->
+* The line between nodes
 
-To publish an audience:
+* Multiple lines between nodes 
 
-1. Select one or more nodes where you want to publish an audience, then right-click one of the selected nodes.
+To create an audience:
+
+1. Select one or more nodes where you want to create an audience, then right-click one of the selected nodes.
 
    Or
 
-   Select multiple <!--or "one or more"? -->lines between 2 nodes where you want to publish an audience, then right-click one of the selected lines.
+   Select one or more lines between 2 nodes where you want to create an audience, then right-click one of the selected lines.
 
-1. Select [!UICONTROL **Publish audience**].
+1. Select [!UICONTROL **Create audience**].
 
-### Create an audience
-
-<!-- Works only when selecting between two nodes? Is this different than publishing an audience (which you can do when selecting one or more nodes?) -->
-
-The option to create an audience is available when selecting the following objects on the canvas:
-
-* The line between nodes
+1. Continue creating and publishing the audience as described in [Create and publish audiences](/help/components/audiences/publish.md).
 
 ### Create a segment 
 
-The option to create a segment is available when selecting the following objects on the canvas:
+The option to create a segment is available for the following objects on the canvas:
 
 * Individual nodes
 
@@ -263,9 +259,21 @@ The option to create a segment is available when selecting the following objects
 
 * Multiple lines between nodes
 
-### Trend a node (what does this mean? What does the Trend option do?)
+To create a segment:
 
-The option to trend is available when selecting the following objects on the canvas:
+1. Select one or more nodes that you want to use to create a segment, then right-click one of the selected nodes.
+
+   Or
+
+   Select one or more lines between 2 nodes that you want to use to create a segment, then right-click one of the selected lines.
+
+1. Select [!UICONTROL **Create segment**].
+
+### View trend data
+
+You can view the trend data in a line graph for objects in Journey canvas. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout)>
+
+The option to trend is available for the following objects on the canvas:
 
 * Individual nodes
 
@@ -274,14 +282,28 @@ The option to trend is available when selecting the following objects on the can
 * The line between nodes
 
 * Multiple lines between nodes
+
+To view trend data:
+
+1. Select one or more nodes for which you want to view trend data, then right-click one of the selected nodes.
+
+   Or
+
+   Select one or more lines between 2 nodes for which you want to view trend data, then right-click one of the selected lines.
+
+1. Select [!UICONTROL **Trend**].
 
 ### Duplicate nodes
 
-The option to duplicate is available when selecting the following objects on the canvas:
+The option to duplicate is available for the following objects on the canvas:
 
 * Multiple nodes
 
+To duplicate nodes:
 
+1. Select multiple nodes that you want to duplicate.
+
+1. Right-click one of the selected nodes, then select [!UICONTROL **Duplicate**].
 
 ### Rearrange nodes
 
@@ -297,7 +319,7 @@ The logic that is applied to nodes when they are combined differs depending on t
 
 * When you combine multiple dimension items or metrics, they are joined with OR.
 
-The option to combine nodes is available when selecting the following objects on the canvas:
+The option to combine nodes is available for the following objects on the canvas:
 
 * Multiple nodes
 
@@ -325,7 +347,7 @@ To connect nodes in Journey canvas:
 
 1. Drag any of the 4 blue dots to any of the 4 sides of the node that you want to connect to. 
 
-#### Connect a node when adding it
+#### Connect nodes when adding a node
 
 When adding a node to the canvas, you can connect it to an existing node. For more information, see [Add a node](#add-a-node).
 
@@ -333,7 +355,7 @@ When adding a node to the canvas, you can connect it to an existing node. For mo
 
 You can set a time constraint between nodes. When a time constraint is in place, if a user follows the defined journey but takes longer than the allotted time period to move between the nodes, they are considered to have fallen out of the journey.
 
-The option to add a time constraint is available when selecting the following objects on the canvas:
+The option to add a time constraint is available for the following objects on the canvas:
 
 * The line between nodes
 
@@ -347,9 +369,9 @@ To add a time constraint:
 
    *  <!-- from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon).  -->
 
-### Delete a node
+### Delete
 
-The option to delete is available when selecting the following objects on the canvas:
+The option to delete is available for the following objects on the canvas:
 
 * Individual nodes
 
@@ -358,6 +380,16 @@ The option to delete is available when selecting the following objects on the ca
 * The line between nodes
 
 * Multiple lines between nodes
+
+To delete objects in Journey canvas:
+
+1. Select one or more nodes that you want to delete, then right-click one of the selected nodes.
+
+   Or
+
+   Select one or more lines between 2 nodes that you want to delete, then right-click one of the selected lines.
+
+1. Select [!UICONTROL **Delete**].
 
 <!-- Delete this after I decide I don't want to do it this way. Will probably use sections like I hav above.
 
