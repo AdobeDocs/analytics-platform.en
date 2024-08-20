@@ -71,7 +71,7 @@ Some of the features and their associated value for the limit depend on the Cust
 | Audience Refresh Frequency | 4 | System-enforced Guardrail  | Maximum frequency in hours an [audience](../components/audiences/audiences-overview.md) may be refreshed. |
 | Audience Refresh Lookback Window | 90 | System-enforced Guardrail  | Maximum number of days for refresh lookback window. | 
 | Refreshing Audience Expiration Date | 13 | System-enforced Guardrail  | Maximum number of months audience ceases to refresh from the date of creation. Customers can extend this for an additional 13 months. | 
-| Number of Refreshing Audiences | 75, 150 | System-enforced Guardrail  | Maximum number of refreshing audiences, value varies depending on the Customer Journey Analytics package (see Product Description). | 
+| Number of Refreshing Audiences | 75, 150 | System-enforced Guardrail  | Maximum number of refreshing audiences. Value varies depending on the Customer Journey Analytics package (see Product Description). | 
 
 {style="table-layout:auto"}
 
@@ -94,7 +94,7 @@ See also Experience Platform [Real-time Customer Data Platform Guardrails](https
 |---|--:|---|---|
 | Projects | 50,000 | System-enforced Guardrail  | Maximum number of projects for an organization. |
 | Data Views | 2,000 |System-enforced Guardrail  |  Maximum number of [data views](../data-views/data-views.md) for an organization. |
-| Data Views | 50 | System-enforced Guardrail  | Maximum number of data views for a connection |
+| Data Views | 500-1000 | System-enforced Guardrail  | Maximum number of data views for a connection. Value varies depending on the Customer Journey Analytics package (see Product Description). |
 | Datasets | 100 | System-enforced Guardrail  | Maximum number of [datasets](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) per connection. |
 | Connections | 1000 | System-enforced Guardrail  | Maximum number of [connections](../connections/overview.md) for an organization. |
 | Connection Title | 500 | System-enforced Guardrail |Maximum number of characters for a connection title. |
@@ -104,7 +104,7 @@ See also Experience Platform [Real-time Customer Data Platform Guardrails](https
 | Annotation Description | 250 | System-enforced Guardrail  | Maximum number of characters for an annotation description. |
 | Schema Fields | 10 | System-enforced Guardrail  | Maximum number of schema fields (not including standard fields) when defining rules for a [derived field](../data-views/derived-fields/derived-fields.md). |
 | Lookup / Profile Fields | 3 | System-enforced Guardrail  |  Maximum number of lookup or profile schema fields within the maximum number of schema fields (not including standard fields) when defining rules for a derived field. |
-| Derived Fields | 100 - 500 | System-enforced Guardrail  | Maximum number of derived fields per connection; value varies depending on the Customer Journey Analytics package (see Product Description). |
+| Derived Fields | 100 - 500 | System-enforced Guardrail  | Maximum number of derived fields per connection. Value varies depending on the Customer Journey Analytics package (see Product Description). |
 
 {style="table-layout:auto"}
 
@@ -149,9 +149,9 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 
 | Name |  Value | Limit Type | Description |
 |---|--:|---|---|
-| Stitched Datasets | 5 - 50 | System-enforced Guardrail  | Maximum number of stitched datasets per customer; value varies depending on the Customer Journey Analytics package (see Product Description). | 
-| Backfill Length | 6 - 25 | System-enforced Guardrail  | Maximum number of months of backfill data; value varies depending on the Customer Journey Analytics package (see Product Description). |
-| Lookback Window / Replay Frequency | 1/1 - 30/7 | System-enforced Guardrail | Maximum lookback window in days / Replay frequency; value varies depending on the Customer Journey Analytics package (see Product Description). |
+| Stitched Datasets | 5 - 50 | System-enforced Guardrail  | Maximum number of stitched datasets per customer. Value varies depending on the Customer Journey Analytics package (see Product Description). | 
+| Backfill Length | 6 - 25 | System-enforced Guardrail  | Maximum number of months of backfill data. Value varies depending on the Customer Journey Analytics package (see Product Description). |
+| Lookback Window / Replay Frequency | 1/1 - 30/7 | System-enforced Guardrail | Maximum lookback window in days / Replay frequency. Value varies depending on the Customer Journey Analytics package (see Product Description). |
 
 {style="table-layout:auto"}
 
@@ -160,9 +160,9 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 
 | Name |  Value | Limit Type | Description |
 |---|--:|---|---|
-| Stitched Datasets | 10 - 50 | System-enforced Guardrail  | Maximum number of stitched datasets per customer; value varies depending on the Customer Journey Analytics package (see Product Description). | 
-| Backfill Length | 13 - 25 | System-enforced Guardrail  | Maximum number of months of backfill data; value varies depending on the Customer Journey Analytics package (see Product Description). |
-| Lookback Window / Replay Frequency | 1/1 - 30/7 | System-enforced Guardrail | Maximum lookback window in days / Replay frequency; value varies depending on the Customer Journey Analytics package (see Product Description). |
+| Stitched Datasets | 10 - 50 | System-enforced Guardrail  | Maximum number of stitched datasets per customer. Value varies depending on the Customer Journey Analytics package (see Product Description). | 
+| Backfill Length | 13 - 25 | System-enforced Guardrail  | Maximum number of months of backfill data. Value varies depending on the Customer Journey Analytics package (see Product Description). |
+| Lookback Window / Replay Frequency | 1/1 - 30/7 | System-enforced Guardrail | Maximum lookback window in days / Replay frequency. Value varies depending on the Customer Journey Analytics package (see Product Description). |
 
 
 ## Filters and calculated metrics 
@@ -209,7 +209,7 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 
 | Name |  Value | Limit Type | Description | 
 |---|--:|---|---|
-| Rows per Report |  3 million - 300 million | System-enforced Guardrail  | Maximum number of reporting rows per report; value varies depending on the Customer Journey Analytics package (see Product Description). |
+| Rows per Report |  3 million - 300 million | System-enforced Guardrail  | Maximum number of reporting rows per report. Value varies depending on the Customer Journey Analytics package (see Product Description). |
 | Breakdowns per Table |  5 | System-enforced Guardrail  | Maximum number of breakdowns per table. |
 | Metrics per Table |  5 | System-enforced Guardrail  | Maximum number of metrics per table. |
 | Schedule Frequency |  1 | System-enforced Guardrail  | Exports can be scheduled once (1) a day or on a longer schedule (for example: once every 2 days, or weekly). |
