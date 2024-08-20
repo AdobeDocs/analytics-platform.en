@@ -36,7 +36,7 @@ To improve person centric analysis of shared devices, you have two options: you 
 
 ### Stitching 
 
-The stitching process addresses the shortcoming of the person centric approach. Stitching adds the selected person identifier (in the example data, the email) to events where that identifier does not exist. Stitching leverages a mapping between Device IDs and Person IDs to ensure that both authenticated and unauthenticated traffic can be used in analysis, keeping it person centric. See [Stitching](overview.md) for more information.
+The stitching process addresses the shortcoming of the person centric approach. Stitching adds the selected person identifier (in the example data, the email) to events where that identifier does not exist. Stitching leverages a mapping between Device IDs and Person IDs to ensure that both authenticated and unauthenticated traffic can be used in analysis, keeping it person centric. See [Stitching](/help/stitching/overview.md) for more information.
 
 Stitching can attribute shared device data using either last-auth attribution or device-split attribution. However, implementation changes via ECID reset can also address shared devices.
 
