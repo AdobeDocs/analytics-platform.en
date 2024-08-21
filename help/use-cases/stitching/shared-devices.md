@@ -4,7 +4,7 @@ description: Explanation of how to handle shared devices using stitching and oth
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 hide: yes
-hide-from-toc: yes
+hidefromtoc: yes
 role: Admin
 ---
 
