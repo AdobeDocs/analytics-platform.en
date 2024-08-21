@@ -96,7 +96,9 @@ Consider several factors to understand correctly how pervasive shared devices ar
 
 To understand the shared device exposure, you can think about performing the following queries.
 
-1. Understand the number of devices that are shared. You can use a query that counts the Device IDs that have two or more Person IDs associated with the Device ID. A sample query could look like:
+1. **Identify shared devices**
+   
+   To understand the number of devices that are shared, perform a query that counts the Device IDs with two or more Person IDs associated. This helps identify devices used by multiple individuals.
 
    ```sql
    SELECT COUNT(*)
@@ -110,7 +112,9 @@ To understand the shared device exposure, you can think about performing the fol
    ```
 
 
-2. For the shared devices, resulting from the first query, you need to understand how many events of the total events can be attributed to these shared devices. This attribution gives you a better sense of the impact of shared devices on your data and the impact when you perform analysis. A sample query could look like:
+2. **Attribution of events to shared devices**
+    
+   For the shared devices identified, determine how many events out of the total can be attributed to these devices. This provides insight into the impact shared devices have on your data and the implications for analysis.
 
    ```sql
    SELECT COUNT(*) AS total_events,
@@ -135,7 +139,9 @@ To understand the shared device exposure, you can think about performing the fol
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-3. For the events attributed to shared devices (the result of the second query), you need to understand how many of these events do NOT have a Person ID. Otherwise stated, how many of the shared device events are anonymous events. Ultimately, the algorithm (last-auth, device-split, ECID-reset) you select to improve your data quality does impact these anonymous shared device events. A sample query could look like:
+3. **Identify anonymous events on shared devices**
+    
+   Among the events attributed to shared devices, identify how many lack a Person ID, indicating anonymous events. The algorithm you choose (for example last-auth, device-split, or ECID-reset) to enhance data quality will affect these anonymous events.
 
    ```sql
    SELECT COUNT(IF(shared_persistent_ids.persistent_id IS NOT NULL, 1, null)) shared_persistent_ids_events,
@@ -160,7 +166,9 @@ To understand the shared device exposure, you can think about performing the fol
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-4. Finally, you want to understand the exposure each customer would experience because of event misclassification. To get this exposure, you need to calculate, for each shared device, the percentage of anonymous events related to the total number of events. A sample query could look like:
+4. **Calculate exposure from event misclassification**
+    
+   Finally, assess the exposure each customer might face due to event misclassification. Calculate the percentage of anonymous events over the total events for each shared device. This helps understand the potential impact on customer data accuracy.
 
    ```sql
    SELECT COUNT(*) AS total_events,
