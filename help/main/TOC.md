@@ -367,6 +367,8 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
   + Complex data {#complex-data}
     + [Use arrays of objects](../use-cases/object-arrays.md)
+  + Stitching {#stitching}
+    + [Shared devices](/help/use-cases/stitching/shared-devices.md)
   + Derived fields {#derived-fields}
     + [Use derived fields to report on goals](../use-cases/goals-using-derived-fields.md)
 
