@@ -42,7 +42,6 @@ The connection has the name **[!UICONTROL AJO Enabled Connection (*sandbox name*
 | [!UICONTROL AJO Entity Dataset] | [!UICONTROL AJO Entity Record Schema] | [!UICONTROL Lookup] | [!UICONTROL Other] | - |` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
 | [!UICONTROL Journey Step Events] | [!UICONTROL Journey Step Event schema for Journey Orchestration] | [!UICONTROL Event] | [!UICONTROL Other] |[!UICONTROL  IdentityMap(\<primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
 | [!UICONTROL AJO Email Tracking Experience Event Dataset] | [!UICONTROL AJO Email Tracking Experience Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
-| [!UICONTROL AJO Email Tracking Experience Event Dataset] | [!UICONTROL AJO Email Tracking Experience Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
 | [!UICONTROL AJO Message Feedback Event Dataset] | [!UICONTROL AJO Message Feedback Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
 | [!UICONTROL AJO Push Tracking Experience Event Dataset] | [!UICONTROL AJO Push Tracking Experience Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
 
@@ -64,7 +63,7 @@ The data view has the name **AJO Enable Data View (*sandbox name*)**.
 
     | Compatibility | Value |
     |---|---|
-    | [!UICONTROL Set as default data view in Adobe Journey Optimizer] | Enabled (default).<br/><br/>This configuration option allows you to designate a data view to use with Journey Optimizer, without the need for manual configuration. For information how to enable this configuration option (if not already enabled by default), see the [Compatibility](/help/data-views/create-dataview.md#compatibility) section in [Create or edit a data view](/help/data-views/create-dataview.md). <br/><br/>When you disable the option, a dialog prompts you whether you want to continue changing the default data view. When you select **[!UICONTROL Continue]**, you need to select another data view as the default data view. Select **[!UICONTROL Confirm]** to confirm your selection. Select **[!UICONTROL Cancel]** to cancel changing the default data view. |
+    | [!UICONTROL Set as the default data view in Adobe Journey Optimizer] | Enabled (default).<br/><br/>This configuration option allows you to designate a data view to use with Journey Optimizer, without the need for manual configuration. For information how to enable this configuration option (if not already enabled by default), see the [Compatibility](/help/data-views/create-dataview.md#compatibility) section in [Create or edit a data view](/help/data-views/create-dataview.md). <br/><br/>When you disable the option, a dialog prompts you whether you want to continue changing the default data view. When you select **[!UICONTROL Continue]**, you need to select another data view as the default data view. Select **[!UICONTROL Confirm]** to confirm your selection. Select **[!UICONTROL Cancel]** to cancel changing the default data view. |
 
     | Containers | Value |
     |---|---|
@@ -82,7 +81,7 @@ The data view has the name **AJO Enable Data View (*sandbox name*)**.
 
 - In the **Components** tab:
   - All metrics and dimensions that have [!UICONTROL (AJO)] appended to their name are added automatically as part of this automatic configuration. 
-  - Some of the metrics or dimensions, that have been added automatically, are based on derived fields. These derived fields are specifically created for this integration. For example, the metric [!UICONTROL Landing Page Clicks (AJO)] is based on the [!UICONTROL Landing Page Clicks] derived field.
+  - Some of the metrics or dimensions that have been added automatically are based on derived fields. These derived fields are specifically created for this integration. For example, the metric [!UICONTROL Landing Page Clicks (AJO)] is based on the [!UICONTROL Landing Page Clicks] derived field.
   - Some of the metrics or dimensions have additional configuration. For example, [!UICONTROL Spam Complaint (AJO)] does have [!UICONTROL Format] and [!UICONTROL Include Exclude Values] settings applied.
   - All automatically added metrics and dimensions do have a context label named `:`*`name_of_metric_or_dimension`*. For example, the [!UICONTROL Landing Page Clicks (AJO)] metric has the context label `:Landing page clicks (AJO)`.
 
@@ -95,7 +94,7 @@ The data view has the name **AJO Enable Data View (*sandbox name*)**.
 
 ## Manually configure a data view to be used with Journey Optimizer
 
-The following sections describe how you can manually use data, generated by Journey Optimizer, to perform advanced analysis in Customer Journey Analytics. This is necessary only if the [automatic configuration option](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) is insufficient for your needs.
+The following sections describe how you can manually use data, generated by Journey Optimizer, to perform advanced analysis in Customer Journey Analytics. This manual configuration is necessary only if the [automatic configuration option](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) is insufficient for your needs.
 
 ### Send data from Journey Optimizer to Experience Platform
 
@@ -103,7 +102,7 @@ Adobe Experience Platform serves as the central data source and link between Jou
 
 ### Create a connection in Customer Journey Analytics
 
-Once Journey Optimizer data is in Adobe Experience Platform, you can [Create a connection](/help/connections/create-connection.md) based on your Journey Optimizer datasets. Or you can add Journey Optimizer datasets to an existing connection. 
+Once Journey Optimizer data is in Adobe Experience Platform, you can [Create a connection](/help/connections/create-connection.md) based on your Journey Optimizer datasets. Or you can add Journey Optimizer datasets to an existing connection.
 
 Select and configure the following datasets:
 
@@ -118,7 +117,7 @@ Select and configure the following datasets:
 {style="table-layout:auto"}
 
 
-### Configure the Data view to accommodate Journey Optimizer dimensions and metrics
+### Configure the Data view
 
 After a connection is created, you can create one or more [Data Views](/help/data-views/create-dataview.md) to configure the desired dimensions and metrics available in Customer Journey Analytics.
 
@@ -127,26 +126,45 @@ After a connection is created, you can create one or more [Data Views](/help/dat
 >Data discrepancies between Journey Optimizer and Customer Journey Analytics are typically less than 1-2%. Larger discrepancies are possible for data collected within the last two hours. Use date ranges excluding today to mitigate discrepancies involving processing time.
 
 
-#### Configure dimensions in the data view
+#### Configure dimensions
 
 You can create the following dimensions in a data view to achieve approximate parity with similar dimensions in Journey Optimizer. See [Component settings](/help/data-views/component-settings/overview.md) in the Data View Manager for details on dimension customization options.
 
-| Dimension | Schema element | Component settings |
-| --- | --- | --- |
-| Journey Name | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Component type: Dimension |
-| Journey Name & Version | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | Component type: Dimension |
-| Journey Node Name | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeName` | Component type: Dimension |
-| Journey Node Type | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | Component type: Dimension |
-| Campaign name | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | Component type: Dimension |
-| Channel | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | Component type: Dimension |
-| Push Title | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.push.title` | Component type: Dimension |
-| Email Subject | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.email.subject` | Component type: Dimension |
-| Link Label | `_experience.customerJourneyManagement.`<br>`messageInteraction.label` | Component type: Dimension |
-| Experiment Name | `_experience.customerJourneyManagement.`<br>`entities.experiment.experimentName` | Component type: Dimension<br>Context Labels: Experimentation Experiment |
-| Treatment Name | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | Component type: Dimension<br>Context Labels: Experimentation Variant |
-| Email Delivery Failure Reason | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Component type: Dimension |
-| Email Delivery Exclusion Reason | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Component type: Dimension |
-| Element Label | `_experience.decisioning.propositionAction.label` | Component type: Dimension |
+| Dimension | Description | Dataset(s) | Schema element | Component Settings |
+| --- | --- | --- | --- | --- |
+| Action Execution Error (AJO) | Error condition that prevented Journey Runtime from executing the action. | Journey Step Events | `_experience.journeyOrchestration.`<br/>`stepEvents.actionExecutionError `| Component type: Dimension |
+| Action Label (AJO) | The customer generated display name of the element with which the end-user interacted. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_experience.decisioning.`<br/>`propositionAction.label` | Component type: Dimension |
+| Batch Id (AJO) | GUID created at invocation of each new batch instance for a scheduled Journey or Campaign Action. For example, if a scheduled Journey or Campaign Action runs at 8.00am and 10.00am, there are two separate different batchInstanceID?s. | AJO Push Tracking Experience Event Dataset, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset |` _experience.customerJourneyManagement.`<br/>`messageExecution.batchInstanceID` | Component type: Dimension |
+| Batch Instance Timestamp (AJO) | The timestamp of the batch instance. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | Derived Fields | Component type: Dimension (Derived Field) |
+| Campaign Id (AJO) | The id of the campaign. | AJO Entity Dataset | `_experience.customerJourneyManagement.entities.`<br/>`campaign.campaignID` | Component type: Dimension |
+| Campaign Name (AJO) | The name of the campaign. | AJO Entity Dataset | `_experience.customerJourneyManagement.entities.`<br/>`campaign.name` | Component type: Dimension |
+| Campaign Version ID (AJO) | The version id of the campaign. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.campaign.campaignVersionID` | Component type: Dimension |
+| Channel (AJO) | The channel to which this data should be correlated. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.channel._id` | Component type: Dimension |
+| Correlation Id (AJO) | The Correlation Id. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_experience.decisioning.propositions.`<br/>`scopeDetails.correlationID` | Component type: Dimension |
+| Decision Policy Id (AJO) | The id of the decision policy used when deciding which items to include in this proposition. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | Derived Fields | Component type: Dimension (Derived Field) |
+| Email Recipient Domain (AJO) | Domain of Email Address | AJO Push Tracking Experience Event Dataset, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_experience.customerJourneyManagement.`<br/>`emailChannelContext.address` | Component type: Dimension |
+| Email Subject (AJO) | Email subject, non-personalized | AJO Entity Dataset | `_experience.customerJourneyManagement.entities.`<br/>`channelDetails.email.subject` | Component type: Dimension |
+| Event Id (AJO) | A unique identifier for the time-series event. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_id` | Component type: Dimension (Derived Field) |
+| Exit Criteria Id (AJO) | The id of the exit criteria used to determine if the journey should exit. | Journey Step Events | `_experience.journeyOrchestration.`<br/>`stepEvents.exitCriteriaID` | Component type: Dimension |
+| Exit Criteria Name (AJO) | Name of exit criteria. | Journey Step Events | `_experience.journeyOrchestration.`<br/>`stepEvents.exitCriteriaName` | Component type: Dimension |
+| Experiment Id (AJO) | The id of the experiment. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.experiment.experimentId` | Component type: Dimension |
+| Experiment Name (AJO) | The name of the experiment. | AJO Entity Dataset | `_experience.customerJourneyManagement.entities.`<br/>`experiment.experimentName` | Component type: Dimension Context Labels: Experimentation Experiment |
+| Fetch Error (AJO) | Error condition that prevented Journey Runtime from executing the fetch. | Journey Step Events | `_experience.journeyOrchestration.`<br/>`stepEvents.fetchError` | Component type: Dimension |
+| Is Send-Time Optimized(AJO) | Is message execution SendTimeOptimized | AJO Push Tracking Experience Event Dataset, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageProfile.isSendTimeOptimized` | Component type: Dimension |
+| Is Test Journey (AJO) | Is the event part of a test journey execution | Journey Step Events | `_experience.journeyOrchestration.`<br/>`stepEvents.inTest` | Component type: Dimension |
+| Is Test Message (AJO) | Is message sent as test execution | AJO Push Tracking Experience Event Dataset, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageProfile.isTestExecution` | Component type: Dimension |
+| Item Id (AJO) | The id of the item. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_experience.decisioning.`<br/>`propositions.items.id` | Component type: Dimension |
+| Item Name (AJO) | The name of the item | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_experience.decisioning.`<br/>`propositions.items.name` | Component type: Dimension |
+| Journey Action ID | Journey Action ID, for which MessageExecution is triggered. | AJO Push Tracking Experience Event Dataset, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageExecution.journeyActionID` | Component type: Dimension |
+| Journey Action Node Name (AJO) | The action node name of the journey. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset, AJO Entity Dataset | Derived Fields | Component type: Dimension (Derived Field) |
+| Journey Event Node Name (AJO) | This value is set whenever a segment or external event occurs in a journey. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset, AJO Entity Dataset | Derived Fields | Component type: Dimension (Derived Field) |
+| Journey Id (AJO) | The id of the journey. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyID` | Component type: Dimension |
+| Journey Name (AJO) | The name of the journey. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyName` | Component type: Dimension |
+| Journey Name and Version (AJO) | The name and version of the journey. | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNameAndVersion` | Component type: Dimension |
+| Journey Version Id (AJO) | The version id of the journey. | AJO Entity Dataset | `_experience.customerJourneyManagement.entities.`<br/>`journey.journeyVersionID` | Component type: Dimension |
+| Landing Page Id (AJO) | Unique Identifier for Landing Page. | AJO Email Tracking Experience Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageInteraction.landingpage.landingPageID` | Component type: Dimension |
+| Landing Page Source (AJO) | The source of the landing page. | AJO Email Tracking Experience Event Dataset | Derived Fields | Component type: Dimension (Derived Field) |
+| Link URL (AJO) | The URL clicked by the user. | AJO Email Tracking Experience Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | Component type: Dimension |
 
 {style="table-layout:auto"}
 
@@ -154,32 +172,44 @@ You can create the following dimensions in a data view to achieve approximate pa
 
 You can create the following metrics in a data view to achieve approximate parity with similar metrics in Journey Optimizer. See [Component settings](/help/data-views/component-settings/overview.md) in the Data View Manager for details around metrics customization options.
 
-| Metric | Description | Schema element | Component settings |
-| --- | --- | --- | --- |
-| Bounces | The number of messages that bounced, including both immediate bounces and bounces after delivery. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric<br>Include exclude values: If any criteria are met<br>Equals: `bounce`, Equals: `denylist` |
-| Bounces After Delivery | Some email services report emails delivered, then bounce them later. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.category` | Component type: Metric<br>Include exclude values: Equals `async` |
-| Email Clicks | The count of clicks within messages. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `click` |
-| Email Opens | The number of opened messages. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `open` |
-| Errors | The number of messages that errored out. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric<br>Include exclude values: Equals `error` |
-| Excludes | The number of messages excluded. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric<br>Include exclude values: Equals `exclude` |
-| Sends | The number of messages that email providers accepted. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric<br>Include exclude values: Equals `sent` |
-| Spam Complaints | The count of spam complaints. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `spam_complaint` |
-| Unsubscribes | The count of unsubscribes. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Component type: Metric<br>Include exclude values: Equals `unsubscribe` |
-| Edge Sends | The number of times the edge network sends a message to either the Web or Mobile SDK | Use the schema string element `_experience.decisioning.propositionEventType.send` | |
-| Inbound Displays | The number of times a Web or InApp message is shown to the user | Use the schema string element `_experience.decisioning.propositionEventType.display` | |
-| Inbound Clicks | The count of Web or InApp message clicks | Use the schema string element `_experience.decisioning.propositionEventType.interact` | |
-| InApp Triggers | The number of times the decisioning engine suggested the message should be displayed. The Mobile SDK could override the decision, reducing the number of actual displays. | Use the schema string element `_experience.decisioning.propositionEventType.trigger` | |
-| InApp Dismissals | The number of times an InApp message is removed from the UI by the SDK | Use the schema string element `_experience.decisioning.propositionEventType.dismiss` | |
-
-{style="table-layout:auto"}
-
-#### Configure calculated metrics in Analysis Workspace
-
-Once you have configured the desired dimensions and metrics for the Journey Optimizer dataset, you can also configure [Calculated metrics](/help/components/calc-metrics/calc-metr-overview.md) for additional insights around that data. These calculated metrics are based on the above metrics created in the Data View Manager.
-
-| Calculated metric | Description | Formula |
-| --- | --- | --- |
-| Messages Sent | The total number of messages sent. Includes successful or failed messages. | `[Sends] + [Bounces] - [Bounces After Delivery]` |
-| Messages Delivered | The number of emails delivered to customers. | `[Sends] - [Bounces After Delivery]` |
+| Metric | Description | Dataset(s) | Schema element | Component Settings |
+| --- | --- | --- | --- | --- |
+| App Installs (AJO) | Number of app installs | AJO Push Tracking Experience Event Dataset | `application.installs.value` | Component type: Metric |
+| App Launches (AJO) | Number of times mobile app is launched | AJO Push Tracking Experience Event Dataset | `application.launches.value` | Component type: Metric |
+| Bounces For Outbound Channels(AJO) | Total count of messages bounced across outbound channels | AJO Message Feedback Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric |
+| Clicks (AJO) | Total count of clicks across all channels | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Email Tracking Experience Event Dataset, AJO Message Feedback Event Dataset | Derived Fields | Component type: Metric (Derived Field) |
+| Count of Fallback Offers (AJO) | Count of fallback offers. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_experience.decisioning.propositions.items.`<br/>`itemSelection.selectionDetail.selectionType` | Component type: Metric |
+| Count of Offers (AJO) | Count of offers. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset |` _experience.decisioning.`<br/>`propositions.items.id` | Component type: Metric |
+| Dedup Metric (AJO) | Dedup metric | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_id` | Component type: Metric |
+| Delivered (AJO) | Total count of messages delivered. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | Derived Fields | Component type: Metric (Derived Field) |
+| Dismissed (AJO) | Counts every time the inApp message is closed by the Adobe SDK regardless of which action the end user chooses to close it. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Component type: Metric |
+| Displays (AJO) | This count displays of AJO messages. This includes email opens, web displays, and inapp displays. Mobile platforms do not report SMS and Push message displays, therefore they are not counted. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Email Tracking Experience Event Dataset, AJO Message Feedback Event Dataset | Derived Fields | Component type: Metric (Derived Field) |
+| Email Opens (AJO) | Total count of email opens | AJO Email Tracking Experience Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Component type: Metric |
+| Inbound Clicks (AJO) | Total count of clicks across inbound channels | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_experience.decisioning.`<br/>`propositionEventType.interact` | Component type: Metric |
+| Inbound Dismisses (AJO) | Total count of dismiss across inbound channels | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Component type: Metric |
+| Inbound Impressions (AJO) | Total count of impressions across inbound channels | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_experience.decisioning.`<br/>`propositionEventType.display` | Component type: Metric |
+| Journey End (AJO) | True if the current step led to ending an instance of the journey. That the last step in a journey for a given profile was executed successfully. | Journey Step Events | `_experience.journeyOrchestration.`<br/>`stepEvents.instanceEnded` | Component type: Metric |
+| Journey Enters (AJO) | True if the step event was a journey entrance event for a profile. | Journey Step Events | Derived Fields | Component type: Metric (Derived Field) |
+| Journey Exits (AJO) | True if the current step led to ending an instance of the journey. That is the last step in a journey for a given profile was executed successfully. | Journey Step Events | `_experience.journeyOrchestration.`<br/>`stepEvents.instanceEnded` | Component type: Metric |
+| Journey Failures (AJO) | Gives the current state of the step that has finished executing. Possible Values: `Transitions` (Next step will occur on an event transition), `EndStep` (The last step in this journey instance has executed), `Error` (This step encountered an error condition, ending the current journey instance), `TimedOut` (The current step has ended because of a timeout on a fetch or on an action). | Journey Step Events | `_experience.journeyOrchestration.`<br/>`stepEvents.stepStatus` | Component type: Metric |
+| Landing Page Clicks (AJO) | Total count of clicks on landing page. | AJO Email Tracking Experience Event Dataset | Derived Fields | Component type: Metric (Derived Field) |
+| Landing Page Conversions (AJO) | Total count of conversions on landing page. | AJO Email Tracking Experience Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Component type: Metric |
+| Landing Page Views (AJO) | Total count of views on landing page. | AJO Email Tracking Experience Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Component type: Metric |
+| Node Enters (AJO) | True if the step event was a node entrance event for a profile. | Journey Step Events | Derived Fields | Component type: Metric (Derived Field) |
+| Outbound Clicks (AJO) | Total count of clicks across outbound channels | AJO Email Tracking Experience Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Component type: Metric |
+| Outbound Errors (AJO) | Total count of messages having errors across outbound channels | AJO Message Feedback Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric |
+| Outbound Exclusions (AJO) | Total count of exclude events across outbound channels | AJO Message Feedback Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric |
+| Outbound Sends (AJO) | Total count of messages send across outbound channels | AJO Message Feedback Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | Component type: Metric |
+| Push Custom Actions (AJO) | Total count of custom actions in push interaction. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `eventType` | Component type: Metric |
+| Push Interactions (AJO) | Number of times mobile app is launched due to a direct push message interaction | AJO Push Tracking Experience Event Dataset | `application.launches.value` | Component type: Metric |
+| Sends (AJO) | Total count of messages send across all channels | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | Derived Fields | Component type: Metric (Derived Field) |
+| SMS Inbound Messages (AJO) | SMS inbound reply. For example, stop, start, subscribe, etc. | AJO Push Tracking Experience Event Dataset, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.inboundMessage` | Component type: Metric |
+| Spam Complaint (AJO) | Total count of spam complaint | AJO Email Tracking Experience Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Component type: Metric |
+| Subscription List Adds (AJO) | Total count of adds to subscription list. | AJO Email Tracking Experience Event Dataset | Derived Fields | Component type: Metric (Derived Field) |
+| Subscription List Removes (AJO) | Total count of removes from subscription list. | AJO Email Tracking Experience Event Dataset | Derived Fields | Component type: Metric (Derived Field) |
+| Targeted (AJO) | This count of the number of times a proposition was targeted to a person. This is the number of times a proposition was considered for display to a person. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | Derived Fields | Component type: Metric (Derived Field) |
+| Triggered (AJO) | Proposition was chosen to be displayed by the Adobe SDK. Other factors may prevent it from actually being displayed. | AJO Push Tracking Experience Event Dataset, Journey Step Events, AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Component type: Metric |
+| Unique Visitors In Experiment (AJO) | The unique visitors in the experiment | AJO Entity Dataset | `_experience.customerJourneyManagement.`<br/>`entities.experiment.experimentId` | Component type: Metric |
+| Unsubscribes (AJO) | Total count of unsubscribes | AJO Email Tracking Experience Event Dataset | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Component type: Metric |
 
 {style="table-layout:auto"}
