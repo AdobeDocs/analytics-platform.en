@@ -81,7 +81,6 @@ Stitching makes a minimum of two passes on data in a given dataset.
 - **Replay stitching**: "replays" data based on unique identifiers (transient IDs) it has learned. This stage is where hits from previously unknown devices (persistent IDs) become stitched (to transient IDs). Adobe offers two replay intervals:
     - **Daily**: Data replays every day with a 24-hour lookback window. This option holds an advantage that replays are much more frequent, but unauthenticated visitors must authenticate the same day that they visit your site.
     - **Weekly**: Data replays once a week with your selected lookback window (see [options](#select-options)). This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, unstitched data less than a week old is not reprocessed until the next weekly replay.
-    - 
 
 - **Privacy**: When privacy-related requests are received, in addition to removing the requested identity, any stitching of that identity across unauthenticated events must be undone.
 
