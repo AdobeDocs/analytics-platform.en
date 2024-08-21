@@ -17,9 +17,9 @@ To surface annotations in mobile scorecards, create the annotation first from Wo
 
 For information on creating annotations, see [Create annotations](create-annotations.md). Annotations are turned off in mobile scorecards by default and must be enabled for each scorecard that you want to surface in mobile scorecards.
 
-1. Turn on Annotations. To turn annotations on, see [Turn annotations on or off](overview.md#turn-annotations-on-or-off).
+1. Turn on annotations. To turn annotations on, see [Turn annotations on or off](overview.md#turn-annotations-on-or-off).
 
-1. Create an annotation and make sure it is shared to all your projects. To create an annotation in Workspace,  see [Create Annotations](create-annotations.md).
+1. Create an annotation and make sure it is shared to all your projects. To create an annotation in Workspace,  see [Create annotations](create-annotations.md).
 
 1. Select **[!UICONTROL Show annotations]** to display the annotation in Mobile Scorecards.
 
