@@ -1,6 +1,6 @@
 ---
 title: Mobile Scorecard Annotations
-description: Learn how to surface annotations in Mobile Scorecards.
+description: Learn how to surface annotations in Mobile scorecards.
 solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
@@ -9,15 +9,15 @@ role: User
 
 # Share Annotations in Mobile Scorecards
 
-You can display annotations that are created in Workspace—in Mobile Scorecards. This allows you to share contextual data nuances and insights about your organization and campaigns directly within Mobile Scorecard projects, viewable in the Analytics dashboards mobile app.
+You can display annotations that are created in Workspace in Mobile scorecards. The display of annotations allow you to share contextual data nuances and insights about your organization and campaigns directly within Mobile scorecard projects, viewable in the Analytics dashboards mobile app.
 
-## Surface Annotations in Mobile Scorecards
+## Display annotations in Mobile scorecards
 
 To surface annotations in mobile scorecards, create the annotation first from Workspace projects or from the components menu.
 
-For information on creating annotations, see [Create Annotations](create-annotations.md). Annotations are turned off in mobile scorecards by default and must be enabled for each scorecard that you want to surface in mobile scorecards.
+For information on creating annotations, see [Create annotations](create-annotations.md). Annotations are turned off in mobile scorecards by default and must be enabled for each scorecard that you want to surface in mobile scorecards.
 
-1. Turn on annotations. To turn annotations on, see [Turn annotations on or off](overview.md#annotations-on-off).
+1. Turn on Annotations. To turn annotations on, see [Turn annotations on or off](overview.md#turn-annotations-on-or-off).
 
 1. Create an annotation and make sure it is shared to all your projects. To create an annotation in Workspace,  see [Create Annotations](create-annotations.md).
 
@@ -31,13 +31,13 @@ For information on creating annotations, see [Create Annotations](create-annotat
 
 ## View annotations in Mobile Scorecards
 
-When annotations are enabled, annotation icons are visible in the Scorecard Builder. Annotations appear only on charts and tables in the detailed view. Annotations are not visible from the main tile view of the scorecard.
+When annotations are enabled, annotation icons are visible in the Scorecard builder. Annotations appear only on charts and tables in the detailed view. Annotations are not visible from the main tile view of the scorecard.
 
  ![Scorecard Builder highlighting the annotation icons.](assets/view-annotations.png)
 
-When annotation icons are visible, you can't fully view or interact with annotations in the builder canvas. Use the Preview mode to view and interact with annotations as they appear in the app. ![Preview icon](assets/preview-icon.png)
+When annotation icons are visible, you can't fully view or interact with annotations in the builder canvas. Use the ![PlayCircle](/help/assets/icons/PlayCircle.svg) **[!UICONTROL Preview]** mode to view and interact with annotations as they appear in the app.
 
-Annotation colors are selected when the annotation is created in workspace. Gray annotations indicated the presence of more than one annotation. ![Annotation icons](assets/gray-annotations1.png) ![Mobile scorecard with the annotation icon highlighted.](assets/gray-annotations2.png)
+Annotation colors are selected when the annotation is created in workspace. Gray annotations indicated the presence of more than one annotation. 
 
 ## View chart annotations
 
