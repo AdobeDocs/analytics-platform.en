@@ -43,7 +43,7 @@ The following visualization types are available in Analysis Workspace:
 
    ![Add visualization](assets/add-visualization.png)
 
-   * In the left rail, select ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **Visualizations**, then drag a visualization to the panel where you want to add the visualization to. 
+   * In the left panel, select ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **Visualizations**, then drag a visualization to the panel where you want to add the visualization to. 
 
    * On the panel where you want to add the visualization, select ![AddCircle](/help/assets/icons/AddCircle.svg), then choose the icon that represents the visualization that you want to add. Hover over the icon for each visualization to see the name.
 

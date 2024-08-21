@@ -50,7 +50,7 @@ To send a file on a recurring schedule to recipients by email:
 
 Scheduled Analysis Workspace projects can be managed under **[!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Scheduled Projects]**.
 
-In the Scheduled Projects Manager, you can edit and delete recurring project schedules. Search for a schedule in the search bar or by using the filter options in the left rail. You can filter by tag, approved schedules, owners and more.
+In the Scheduled Projects Manager, you can edit and delete recurring project schedules. Search for a schedule in the search bar or by using the filter options in the left panel. You can filter by tag, approved schedules, owners and more.
 
 | Field | Description |
 | --- | --- |
@@ -72,8 +72,8 @@ The following are common actions in the Scheduled Projects manager:
 |**[!UICONTROL Edit schedule]**|Click the title of the schedule to update its delivery settings.|
 |**[!UICONTROL Delete schedule]**|Select the scheduled project in the list and then click Delete from the menu. This will delete the selected schedule for the project; the project itself will not be deleted.|
 |**[!UICONTROL Add tags]**|Select the scheduled project in the list and then choose "Tag" or "Approve" to organize your schedules and make them easier to search for.|
-|**[!UICONTROL View failed schedules]**|Navigate to the left rail > Other filters > Failed to see schedules that have failed.|
-|**[!UICONTROL View expired schedules]**|Navigate to the left rail > Other filters > Expired to see schedules that have expired. Click the title of the schedule to setup a new delivery schedule.|
+|**[!UICONTROL View failed schedules]**|Navigate to the left panel > Other filters > Failed to see schedules that have failed.|
+|**[!UICONTROL View expired schedules]**|Navigate to the left panel > Other filters > Expired to see schedules that have expired. Click the title of the schedule to setup a new delivery schedule.|
 |**[!UICONTROL View schedule ID]**|Navigate to column options in the top right and add the Schedule ID column to the table. The scheduled ID is often useful for debugging.|
 
 The Scheduled Projects Manager shows the items that a specific user has created. If the user account is disabled in the application, all scheduled deliveries stop.

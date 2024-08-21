@@ -21,7 +21,7 @@ See the [Components overview](/help/components/overview.md) for more information
 
 1. [Add a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel) or [add a visualization](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) to the project in Analysis Workspace. If you add a component to a blank project, a freeform table visualization is already created for you.
 
-1. Select ![Curate](/help/assets/icons/Curate.svg) **[!UICONTROL Components]** from the button rail. You see all available components in the left rail. See [Interface](/help/analysis-workspace/home.md#interface) for more details.
+1. Select ![Curate](/help/assets/icons/Curate.svg) **[!UICONTROL Components]** from the button panel. You see all available components in the left panel. See [Interface](/help/analysis-workspace/home.md#interface) for more details.
 
 1. Scroll to or search for the component that you want to add, then drag it to a panel or visualization within your project. 
 
@@ -50,7 +50,7 @@ See the [Components overview](/help/components/overview.md) for more information
 
    * Drag a dimension to a visualization (such as a freeform table) in Analysis Workspace.
    
-   * Drag one or more dimensions from the left rail onto the filter drop zone to create an ad-hoc filter, as described in [Add filters to a project](#add-filters-to-a-project).
+   * Drag one or more dimensions from the left panel onto the filter drop zone to create an ad-hoc filter, as described in [Add filters to a project](#add-filters-to-a-project).
 
 1. You can optionally break down dimensions and dimension items in Analysis Workspace with other components. For more information, see [Break down dimensions in Workspace](/help/components/dimensions/t-breakdown-fa.md).
 
@@ -109,11 +109,11 @@ For more information, see [Filtered metrics](/help/components/calc-metrics/cm-wo
 
 [Date ranges](/help/components/date-ranges/custom-date-ranges.md) determine the reporting time frame in Analysis Workspace, and can be applied to one or more panels within a project.
 
-Each panel includes a date range by default. There are multiple ways to update a date range for a panel. One way to update a date range for a panel in Analysis Workspace is to drag a date range component from the left rail:
+Each panel includes a date range by default. There are multiple ways to update a date range for a panel. One way to update a date range for a panel in Analysis Workspace is to drag a date range component from the left panel:
 
 1. Start adding a date range to your project in Analysis Workspace, as described in [Add components to a project](#add-components-to-a-project).
 
-1. Drag a date range from the left rail onto the current date range.
+1. Drag a date range from the left panel onto the current date range.
 
    ![Drop a date range](assets/add-date-range.gif)
 

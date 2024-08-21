@@ -44,7 +44,7 @@ Or you can create an AND touchpoint by dragging the US users filter onto another
 
 You can compare an unlimited number of filters in the Fallout visualization.
 
-1. Select the filters that you want to compare from the [!UICONTROL Filter] rail on the left. In the example, three filters are selected: *Flight Details: Page Version A*, *Flight Details: Page Version B*, and *Flight Details: Page Version C*.
+1. Select the filters that you want to compare from the [!UICONTROL Filter] panel on the left. In the example, three filters are selected: *Flight Details: Page Version A*, *Flight Details: Page Version B*, and *Flight Details: Page Version C*.
 1. You drag the three filters onto the Filter drop zone at the top of the visualization.
 
 

@@ -51,9 +51,9 @@ Following are some of the ways Analytics administrators can use the Data Diction
 
 You can access the Data Dictionary in any of the following ways within Analysis Workspace:
 
-* From the **Data Dictionary** icon in the left rail.
+* From the **Data Dictionary** icon in the left panel.
 
-  ![Data Dictionary icon in the left rail](assets/data-dictionary-access-icon.png)
+  ![Data Dictionary icon in the left panel](assets/data-dictionary-access-icon.png)
 
 * From the **Data Dictionary** icon within the info popover of a component. 
 

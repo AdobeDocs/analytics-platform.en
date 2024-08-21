@@ -36,7 +36,7 @@ To use relative panel date ranges
 
 1. Select the **Workspace** tab.
 1. Select **Blank project**.
-1. Add dimensions, metrics, and filters from the left rail. 
+1. Add dimensions, metrics, and filters from the left panel. 
 1. Click the panel date range field to toggle the relative panel date range setting.
 1. Select **Make date range components relative to panel calendar**.
     * Select the option to make the date range components relative to the panel calendar.
@@ -69,6 +69,6 @@ If you build a filter or use a filter with a rolling date, for example, the Last
 ## Guidelines for panel date ranges and previews {#guidelines-panel-dates}
 
 *   Starting with the February release, component and data previews will be based on the panel date range and not the last 90 days. 
-*   All components listed in the left rail will be available based on the panel date range. 
+*   All components listed in the left panel will be available based on the panel date range. 
 *   All date previews in the filter and calculated metric builders will be based on the panel date range (unless accessed from the component managers, which do not have an associated panel, they will still be based on the last 90 days). 
 *   Any data previews will display data or components based on the panel date range.

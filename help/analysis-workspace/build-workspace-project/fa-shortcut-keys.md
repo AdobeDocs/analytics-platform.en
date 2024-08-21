@@ -36,7 +36,7 @@ Note that on your keyboard the following symbols might be used:
 
  |  Action  |  Shortcut Mac  |  Shortcut Windows  | 
  | --- | --- | --- | 
- | Search left rail | **[!UICONTROL *cmd+/*]** | **[!UICONTROL *ctrl+/*]** | 
+ | Search left panel | **[!UICONTROL *cmd+/*]** | **[!UICONTROL *ctrl+/*]** | 
  | Create an Alert | **[!UICONTROL *cmd+shift+a*]** | **[!UICONTROL *ctrl+shift+a*]** | 
  | Create Calculated Metric | **[!UICONTROL *cmd+shift+c*]** | **[!UICONTROL *ctrl+shift+c*]**| 
  | Create a Date Range | **[!UICONTROL *cmd+shift+d*]** | **[!UICONTROL *ctrl+shift+d*]** | 

@@ -8,7 +8,7 @@ exl-id: 902da464-14de-45b9-bd92-d2db064cb095
 
 Filter by tags, owners, and other filters (Show All, Mine, Shared With me, Favorites, and Approved.)
 
-Filtering makes it easier to search for calculated metrics in the segment rail.
+Filtering makes it easier to search for calculated metrics in the segment panel.
 
 1. In Customer Journey Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Calculated metrics]**. 
 

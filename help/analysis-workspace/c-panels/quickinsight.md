@@ -69,7 +69,7 @@ You have to select at least one dimension and one metric for the visualization t
 
 You can specify the building blocks in three ways:
 
-* Drag and drop components from the left rail.
+* Drag and drop components from the left panel.
 * Start typing in one of the building block fields. When input is found, the building block field auto populates with possible values.
 * Select a building block drop-down (for example `Country` in **[!UICONTROL Analyze]** and search the list for **[!UICONTROL Country code]**).
 

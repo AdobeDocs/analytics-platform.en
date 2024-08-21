@@ -9,7 +9,7 @@ role: User
 
 Scheduled Analysis Workspace projects can be managed in Customer Journey Analytics using **[!UICONTROL Components]** > **[!UICONTROL Scheduled projects]**.
 
-In **[!UICONTROL  Scheduled Projects]**, you can edit and delete recurring project schedules. Search for a schedule using the ![Search](/help/assets/icons/Search.svg) the search field. Or use the ![Filter](/help/assets/icons/Filter.svg) filter options in the left rail. You can filter by **[!UICONTROL Tag]**, **[!UICONTROL Owners]** and **[!UICONTROL Other filters]**.
+In **[!UICONTROL  Scheduled Projects]**, you can edit and delete recurring project schedules. Search for a schedule using the ![Search](/help/assets/icons/Search.svg) the search field. Or use the ![Filter](/help/assets/icons/Filter.svg) filter options in the left panel. You can filter by **[!UICONTROL Tag]**, **[!UICONTROL Owners]** and **[!UICONTROL Other filters]**.
 
 The Scheduled projects list displays columns for:
 

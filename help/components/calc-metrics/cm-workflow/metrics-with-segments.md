@@ -26,7 +26,7 @@ Build and save a metric called "German Visitors" and a metric called "Internatio
 
    >[!NOTE]
    >
-   >You can also do this in the [Filter Builder](/help/components/filters/create-filters.md), but we have simplified the workflow by making dimensions available in the Calculated metric builder. "Adhoc" means that the filter is not visible in the **[!UICONTROL Filters]** list in the left rail. You can however, make it public by hovering over the "i" icon next to it and clicking **[!UICONTROL Make public]**.
+   >You can also do this in the [Filter Builder](/help/components/filters/create-filters.md), but we have simplified the workflow by making dimensions available in the Calculated metric builder. "Adhoc" means that the filter is not visible in the **[!UICONTROL Filters]** list in the left panel. You can however, make it public by hovering over the "i" icon next to it and clicking **[!UICONTROL Make public]**.
 
 1. Drag the Germany filter into the Definition canvas and drag the Unique Visitors metric within it:
 

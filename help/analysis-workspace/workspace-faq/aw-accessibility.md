@@ -23,7 +23,7 @@ Accessibility refers to making products usable for people with visual, auditory,
 
 Navigation in [!UICONTROL Analysis Workspace] works top down, and from left to right. The following navigational elements facilitate accessibility:
 
-* The **[!UICONTROL Tab]** key enables landmark shortcuts, moving between larger sections within Workspace. In the left rail, **[!UICONTROL Tab]** also enables you to move from one draggable option to the next.
+* The **[!UICONTROL Tab]** key enables landmark shortcuts, moving between larger sections within Workspace. In the left panel, **[!UICONTROL Tab]** also enables you to move from one draggable option to the next.
 * The ◀︎ and ▶︎ move between individual elements after the **[!UICONTROL Tab]** key has highlighted an element. 
 * The **[!UICONTROL F6]** key navigates to the first panel in the project and moves between the visualizations within that panel. Then, it moves to the next panel in the project and repeats. 
 * Focus indicators are applied so that sighted keyboard users have a clear indication of which UI element currently has focus. The indicator is a blue border for the panel that has focus. And gray background for the recent selected functionality and the selection within the functionality. In the example, [!UICONTROL Components] and the Page dimension have been selected recently.
@@ -41,7 +41,7 @@ Navigation in [!UICONTROL Analysis Workspace] works top down, and from left to r
 
 [!UICONTROL Analysis Workspace] is a drag and drop user interface. However, users can add components using the keyboard instead:
 
-1. Tab to a component in the left rail.
+1. Tab to a component in the left panel.
 1. Press **[!UICONTROL Enter]** to select.
 1. Use arrow keys to navigate to the area where you want to drop the component.
 1. Press **[!UICONTROL Enter]** to place the component.

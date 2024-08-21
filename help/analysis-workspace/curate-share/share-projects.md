@@ -59,7 +59,7 @@ When sharing a specific project role with users and groups in your organization,
 
 To share a specific project role with users or groups in your organization:
 
-1. In Customer Journey Analytics, select the [!UICONTROL **Workspace**] tab, then select [!UICONTROL **Projects**] in the left rail.
+1. In Customer Journey Analytics, select the [!UICONTROL **Workspace**] tab, then select [!UICONTROL **Projects**] in the left panel.
 
 1. Select the checkbox next to one or more projects that you want to share, then select [!UICONTROL **Share**].
 
@@ -76,9 +76,9 @@ To share a specific project role with users or groups in your organization:
 
    **Edit original:** Recipients can **[!UICONTROL Save]** changes to a project and function as co-owners. This role is useful if you want to co-manage a project with other colleagues; this includes editing, deleting, and modifying recipient lists for a shared project. <br>Note: Analysis Workspace does not currently support live collaboration, so it is recommended that only one user edit a project at a given time. If projects are saved at the same time, the last version will be kept. 
 
-   **Edit copy:** Recipients can **[!UICONTROL Save as]** and have access to the left rail. Project interactions are not limited in this role. This role is useful if you want to share a project to users who understand your organization's data and how to use Analysis Workspace, but you do not want your project altered.
+   **Edit copy:** Recipients can **[!UICONTROL Save as]** and have access to the left panel. Project interactions are not limited in this role. This role is useful if you want to share a project to users who understand your organization's data and how to use Analysis Workspace, but you do not want your project altered.
 
-   **Read only:** Recipients cannot **[!UICONTROL Save]** or **[!UICONTROL Save as]** and do not have access to the left rail. Project interactions are also limited. This role is useful if you want to share a project to users that are less familiar with your organization's data structure, Analysis Workspace or Customer Journey Analytics generally. However, you still want them to consume data and insights in a safe environment. Learn more about the [Read only project experience](/help/analysis-workspace/curate-share/view-only-projects.md).
+   **Read only:** Recipients cannot **[!UICONTROL Save]** or **[!UICONTROL Save as]** and do not have access to the left panel. Project interactions are also limited. This role is useful if you want to share a project to users that are less familiar with your organization's data structure, Analysis Workspace or Customer Journey Analytics generally. However, you still want them to consume data and insights in a safe environment. Learn more about the [Read only project experience](/help/analysis-workspace/curate-share/view-only-projects.md).
 
 1. (Conditioinal) If you are sharing a single project, choose whether to enable the following options when sharing the project:
 

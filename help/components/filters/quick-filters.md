@@ -28,7 +28,7 @@ To create a quick filter:
 
 1. Choose one of the following methods to begin creating the quick filter:
 
-   * **Ad hoc (drag-and-drop):** From the left rail, drag a component to the filter drop zone in the panel header.
+   * **Ad hoc (drag-and-drop):** From the left panel, drag a component to the filter drop zone in the panel header.
 
      ![drop a segment in the drop zone](assets/filter-dropzone.png)
 
@@ -53,12 +53,12 @@ To create a quick filter:
    | [!UICONTROL Name] | The default name of a filter is a combination of the rule names in the filter. You can rename the filter to a more friendly name. |
    | [!UICONTROL Include/exclude] | You can either include or exclude components in your filter definition, but not both. |
    | [!UICONTROL Hit/Visit/Visitor] container | Quick filters include one [filter container](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html#filter-containers) only that lets you include a dimension/metric/date range in (or exclude it from) the filter. [!UICONTROL Visitor] contains overarching data specific for the person across visits and page views. A [!UICONTROL Visit] container lets you set rules to break down the person's data based on visits, and a [!UICONTROL Hit] container lets you break down person information based on individual page views. The default container is [!UICONTROL Hit]. |
-   | [!UICONTROL Components] (Dimension/metric/date range) | Define up to 3 rules by adding components (dimensions, metrics, date ranges, or dimension values). There are 3 ways to find the right component:<ul><li>Start typing and the quick filter builder automatically finds the appropriate component.</li><li>Use the drop-down list to find the component.</li><li>Drag and drop components from the left rail.</li></ul>  |
+   | [!UICONTROL Components] (Dimension/metric/date range) | Define up to 3 rules by adding components (dimensions, metrics, date ranges, or dimension values). There are 3 ways to find the right component:<ul><li>Start typing and the quick filter builder automatically finds the appropriate component.</li><li>Use the drop-down list to find the component.</li><li>Drag and drop components from the left panel.</li></ul>  |
    | [!UICONTROL Operator] | Use the drop-down menu to find standard operators and [!UICONTROL Distinct Count] operators. See [Filter operators](operators.md). |
    | Plus (+) sign | Add another rule |
    | AND/OR qualifiers | You can add "AND" or "OR" qualifiers to the rules, but you cannot mix "AND" and "OR" in a single filter definition. |
    | [!UICONTROL Apply] | Apply this filter to the panel. If the filter contains no data, you are asked if you want to continue. |
-   | [!UICONTROL Open builder] | Opens the Filter Builder. After you save or apply the filter in the Filter Builder, it is no longer considered a "Quick Filter". It becomes part of the component-list filter library. <p>To make the component available across all of your projects and in the left rail, select the option [!UICONTROL **Make this filter available to all your projects and add it to your component list**].</p><p>For more information, see the section [Save a quick filter as a component-list filter](#save-a-quick-filter-as-a-component-list-filter) in this article.</p><p>**Note:** Only users with the Segment Creation permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html) can open the Filter Builder.</p> |
+   | [!UICONTROL Open builder] | Opens the Filter Builder. After you save or apply the filter in the Filter Builder, it is no longer considered a "Quick Filter". It becomes part of the component-list filter library. <p>To make the component available across all of your projects and in the left panel, select the option [!UICONTROL **Make this filter available to all your projects and add it to your component list**].</p><p>For more information, see the section [Save a quick filter as a component-list filter](#save-a-quick-filter-as-a-component-list-filter) in this article.</p><p>**Note:** Only users with the Segment Creation permission in the [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html) can open the Filter Builder.</p> |
    | [!UICONTROL Cancel] | Cancel this quick filter (don't apply it). |
    | [!UICONTROL Date range] | The validator uses the panel date range for its data lookup. But any date range applied in a quick filter overrides the panel date range at the top of the panel.  |
    | Preview (top right) | Lets you see whether you have a valid filter and how broad the filter is. Represents the breakdown of the dataset you can expect to see when you apply this filter. You might get a notice that indicates that this filter has no data. In this case, you can proceed or change the filter definition. |
@@ -98,7 +98,7 @@ You can save filters either from the quick filter builder or from the [!UICONTRO
 1. (Optional) Rename the filter.
 1. Select **[!UICONTROL Save]**.
 
-   The filter now appears in your component list in the left rail. Also, note that the filter's side bar changes from light blue to a darker blue, indicating that it can no longer be edited or opened in the quick filter builder.
+   The filter now appears in your component list in the left panel. Also, note that the filter's side bar changes from light blue to a darker blue, indicating that it can no longer be edited or opened in the quick filter builder.
 
 ### Save in the Filter Builder {#save3}
 

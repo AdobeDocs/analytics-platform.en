@@ -36,11 +36,11 @@ Many of the panels provided in Analysis Workspace generate a full set of analyse
 
 To add a panel:
 
-1. Select the [!UICONTROL **Panels**] icon in the left rail.
+1. Select the [!UICONTROL **Panels**] icon in the left panel.
 
    ![The select Panels icon and the list of available panels.](assets/build-panels.png)
 
-1. Search for the panel you want to add. When it appears in the left rail, drag it into your project.
+1. Search for the panel you want to add. When it appears in the left panel, drag it into your project.
 
 1. Add visualizations to your panel, as described in [Add visualizations to the project](#add-visualizations-to-the-project). 
 
@@ -56,11 +56,11 @@ To add a panel:
 
 To add a visualization:
 
-1. Select the **[!UICONTROL Visualizations]** icon in the left rail.
+1. Select the **[!UICONTROL Visualizations]** icon in the left panel.
 
    ![The selected Visualizations icon and the list of available visualizations.](assets/build-visualizations.png)
 
-1. Search for the visualization you want to add. When it appears in the left rail, drag it to a panel within your project. 
+1. Search for the visualization you want to add. When it appears in the left panel, drag it to a panel within your project. 
 
 1. Add components to the visualization, as described in [Add components to the project](#add-components-to-the-project).
 
@@ -70,13 +70,13 @@ To add a visualization:
 
 >[!TIP]
 >
->For information about each component, select the Info icon next to a component's name in the left rail, or see the [Components overview](/help/components/overview.md).
+>For information about each component, select the Info icon next to a component's name in the left panel, or see the [Components overview](/help/components/overview.md).
 
 Following is basic information about how to add a component to a project in Analysis Workspace. For more detailed information about adding the various types of components (dimensions, metrics, filters, and date ranges), see [Use components in Analysis Workspace](/help/components/use-components-in-workspace.md).
 
 To add a component to a project in Analysis Workspace:
 
-1. Select the **[!UICONTROL Components]** icon in the left rail.
+1. Select the **[!UICONTROL Components]** icon in the left panel.
 
    ![The selected Components icon and the list of available dimensions.](assets/build-components.png)
 

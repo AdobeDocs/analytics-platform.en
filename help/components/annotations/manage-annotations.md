@@ -7,19 +7,19 @@ role: User
 ---
 # Manage annotations
 
-You can share, filter, tag, approve, copy, delete annotations and mark annotations as favorite from a central Annotations interface. To manage annotations:
+You can share, filter, tag, approve, copy, delete annotations and mark annotations as favorite from a central [!UICONTROL Annotations] management interface. To manage annotations:
 
 * Select **[!UICONTROL Components]** in the main interface, then select **[!UICONTROL Annotations]**.
 
 
 >[!NOTE]
 >
->[!UICONTROL Annotations] that you create within a specifc Workspace project do not appear in the [!UICONTROL Annotations] interface, unless you have made the annotation available to all your projects. 
+>[!UICONTROL Annotations] that you create within a specifc Workspace project do not appear in the [!UICONTROL Annotations] manager, unless you have made the annotation available to all your projects. 
 >
 
-## Annotations interface
+## Annotations manager
 
-The Annotations interface has the following elements:
+The Annotations manager has the following interface elements:
 
 ![Annotations interface](assets/annotations-manager.png)
 
@@ -44,9 +44,9 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to specify which colu
 
 ### Action bar
 
-You can action on annotations using the action bar ➋. The action bar contains the following elements:
+You can action on annotations using the action bar ➋. The action bar contains the following actions:
 
-| Element | Description |
+| Action | Description |
 |---|---|
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another annotation, using the Annotation builder. |
 | ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search by title*] | When no annotation is selected in the list, search for annotations using this search field. |
@@ -57,23 +57,23 @@ You can action on annotations using the action bar ➋. The action bar contains 
 | ![Copy](/help/assets/icons/Copy.svg)  **[!UICONTROL Copy]** | Copy the selected annotations. New annotations are created with the same name and suffix (Copy) | 
 | ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Export the annotations to Annotations List.csv file. |
 
-### Filter bar
+### Active filter bar
 
 The filter bar ➌ shows the active filters (if any). You can quicly remove a filter using ![CrossSize75](/help/assets/icons/CrossSize75.svg). If more than one filter is specified, you can remove all filters using **[!UICONTROL Remove all]**.
 
-### Filter rail
+### Filter panel
 
-You can filter annotations using the ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** left rail ➍. The filter rail displays the type of filter and number of annotations that honor the filter. Select ![Filter](/help/assets/icons/Filter.svg) to toggle the display of the filter rail. 
+You can filter annotations using the ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** left panel ➍. The filter panel displays the type of filter and number of annotations that honor the filter. Select ![Filter](/help/assets/icons/Filter.svg) to toggle the display of the filter panel. 
 
 You can filter on:
 
 | Filter | Description |
 |---|---|
-| Tags | Unfold to see all tags defined and filter on individual tags. You can use ![Search](/help/assets/icons/Search.svg) *Search Tags* to search for tags. |
-| Data view | Unfold to see the individual data views you can filter on. You can use ![Search](/help/assets/icons/Search.svg) *Search Data views* to search for data views. |
-| Owners | Unfold to see the individual owners you can filter on. ou can use ![Search](/help/assets/icons/Search.svg) *Search Owners* to search for owners. |
-| Applied date range | You can filter on the applied date range. Select the data range to display a calendar popup to specify the data range, or simply type the date range. |
-| Other filters | You can filter on other filters like Show all, Mine, Favorites, Approved and Shared with me. |
+| **[!UICONTROL Tags]** | Unfold to see all tags defined and filter on individual tags. You can use ![Search](/help/assets/icons/Search.svg) *Search Tags* to search for tags. |
+| **[!UICONTROL Data view]** | Unfold to see the individual data views you can filter on. You can use ![Search](/help/assets/icons/Search.svg) *Search Data views* to search for data views. |
+| **[!UICONTROL Owners]** | Unfold to see the individual owners you can filter on. ou can use ![Search](/help/assets/icons/Search.svg) *Search Owners* to search for owners. |
+| **[!UICONTROL Applied date range]** | You can filter on the applied date range. Select the data range to display a calendar popup to specify the data range, or simply type the date range. |
+| **[!UICONTROL Other filters]** | You can filter on other filters like Show all, Mine, Favorites, Approved and Shared with me. |
 
 
 ## Edit annotations

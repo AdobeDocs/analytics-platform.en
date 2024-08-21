@@ -45,7 +45,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 1. Interpret the data preview.
 
-   The audience preview appears in the right rail. It allows for a summarized analysis of the audience you have created.
+   The audience preview appears in the right panel. It allows for a summarized analysis of the audience you have created.
 
    ![Screenshot of the data preview showing a summarized analysis of the audience.](assets/data-preview.png)
 
@@ -107,7 +107,7 @@ To view Customer Journey Analytics audiences in Platform:
 >
 >This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
 
-1. Expand [!UICONTROL **Customer**] in the left rail, then select [!UICONTROL **Audiences**]. <!-- is there a folder called "Customer Journey Analytics? -->
+1. Expand [!UICONTROL **Customer**] in the left panel, then select [!UICONTROL **Audiences**]. <!-- is there a folder called "Customer Journey Analytics? -->
 
 1. Select the [!UICONTROL **Browse**] tab.
 

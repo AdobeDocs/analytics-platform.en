@@ -13,7 +13,7 @@ However, administrators can give the **[!UICONTROL Annotation Creation]** permis
 
 To add a new annotation using the [[!UICONTROL Annotation builder]](#annotation-builder):
 
-* In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Annotation]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] from the **[!UICONTROL Annotations]** interface. 
+* In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Annotation]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] from the [[!UICONTROL Annotations] manager](/help/components/annotations/manage-annotations.md). 
 * In Workspace, from the context menu in a visualization, select **[!UICONTROL Create annotation from selection]**.
 * In Workspace, from the context menu in a line graph, select **[!UICONTROL Annotate Selection]**.
 * In Workspace, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create annotation]**. 
@@ -26,7 +26,7 @@ To add a new annotation using the [[!UICONTROL Annotation builder]](#annotation-
 
 ## Annotation builder
 
-The **[!UICONTROL Annotations builder]** dialog is used to create new or edit existing annotations. The dialog is titled **[!UICONTROL New annotation]** or **[!UICONTROL Edit annotation]** for annotations that you create or manage from the main interface.
+The **[!UICONTROL Annotations builder]** dialog is used to create new or edit existing annotations. The dialog is titled **[!UICONTROL New annotation]** or **[!UICONTROL Edit annotation]** for annotations that you create or manage from the [[!UICONTROL Annotations] manager](/help/components/annotations/manage-annotations.md).
 
 1. Specify the following details (![Required](/help/assets/icons/Required.svg) is required):
 

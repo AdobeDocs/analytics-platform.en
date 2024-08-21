@@ -21,7 +21,7 @@ Managing previously created audiences lets you:
 
 | UI setting | Definition |
 | --- | --- |
-| Hide/Show filters | Lets you show or hide the following filters in the left rail: <ul><li>[!UICONTROL Data view]</li><li>[!UICONTROL Owner]</li><li>[!UICONTROL Refresh frequency]</li><li>[!UICONTROL Tags]</li></ul> |
+| Hide/Show filters | Lets you show or hide the following filters in the left panel: <ul><li>[!UICONTROL Data view]</li><li>[!UICONTROL Owner]</li><li>[!UICONTROL Refresh frequency]</li><li>[!UICONTROL Tags]</li></ul> |
 | [!UICONTROL Title & Description] | The title and description given to the audience when it was created. |
 | [!UICONTROL Data view] | The data view in which this audience was created. |
 | [!UICONTROL Audience size] | The total number of people in this audience. |

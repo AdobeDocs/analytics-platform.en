@@ -26,7 +26,7 @@ You can configure the start or end of the path you are interested in. Or analyze
    Each of these categories is shown onscreen as a "drop zone." You can populate the drop zone in 3 ways:
 
    * Use the drop-down menu to select metrics or dimensions.
-   * Drag dimensions or metrics from the left rail.
+   * Drag dimensions or metrics from the left panel.
    * Begin typing the name of a dimension or metric, then select it when it appears in the drop-down list.
 
    >[!IMPORTANT]

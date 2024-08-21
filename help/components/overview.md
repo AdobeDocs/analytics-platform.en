@@ -31,7 +31,7 @@ You can manage the following components:
 
 Components in Analysis Workspace consist of metrics, dimensions, filters, and date ranges that you can drag-and-drop onto panels and visualizations in your Workspace project. Custom components that you create are added to these panels, such as a calculated metric, or a custom date range.
 
-To access the Components panel, select ![Curate](/help/assets/icons/Curate.svg) **[!UICONTROL Components]** in the button rail. 
+To access the Components panel, select ![Curate](/help/assets/icons/Curate.svg) **[!UICONTROL Components]** in the button panel. 
 
 ![Workspace panel highlighting the Components icon in the left-rail](assets/components.png)
 
@@ -64,10 +64,10 @@ You can manage components (individually or by selecting more than one).
 
    | Component action | Description |
    |--- |--- |
-   | ![Label](/help/assets/icons/Label.svg) [!UICONTROL **Tag**] | Organize or manage components by applying tags to them. You can then search by tag in the left rail by selecting the ![Filter](/help/assets/icons/Filter.svg) filter or typing `#`. Tags also act as filters in the component managers. |
-   | ![Star](/help/assets/icons/Star.svg) [!UICONTROL **Favorite**] | Add the component to your list of favorites. Like tags, you can search by Favorites in the left rail and filter by them in the component managers. |
+   | ![Label](/help/assets/icons/Label.svg) [!UICONTROL **Tag**] | Organize or manage components by applying tags to them. You can then search by tag in the left panel by selecting the ![Filter](/help/assets/icons/Filter.svg) filter or typing `#`. Tags also act as filters in the component managers. |
+   | ![Star](/help/assets/icons/Star.svg) [!UICONTROL **Favorite**] | Add the component to your list of favorites. Like tags, you can search by Favorites in the left panel and filter by them in the component managers. |
    | ![StarOutline](/help/assets/icons/StarOutline.svg) **[!UICONTROL Un-favorite]** | Remove the component from your list of favorites. |
-   | ![Checkmark](/help/assets/icons/Checkmark.svg) [!UICONTROL **Approve**] | Mark components as Approved to signal to your users that the component is organization-approved. Like tags, you can search and filter by Approved in the left rail. A ![Checkmark](/help/assets/icons/Checkmark.svg) identifies approved components. |
+   | ![Checkmark](/help/assets/icons/Checkmark.svg) [!UICONTROL **Approve**] | Mark components as Approved to signal to your users that the component is organization-approved. Like tags, you can search and filter by Approved in the left panel. A ![Checkmark](/help/assets/icons/Checkmark.svg) identifies approved components. |
    | ![Share](/help/assets/icons/Share.svg) [!UICONTROL **Share**] | Share components to users in your organization. This option is available for custom components only, such as filters or calculated metrics. |
    | ![Delete](/help/assets/icons/Delete.svg) [!UICONTROL **Delete**] | Delete components that you no longer need. This option is available for custom components only, such as filters or calculated metrics. |
 
@@ -75,11 +75,11 @@ Custom components can also be managed through their respective Component manager
 
 ## Manage the component list
 
-You can search, filter, and sort the component list in the left rail of Analysis Workspace to locate a particular component. 
+You can search, filter, and sort the component list in the left panel of Analysis Workspace to locate a particular component. 
 
 ### Search
 
-1. Select the **Components** icon ![Components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in the left rail.
+1. Select the **Components** icon ![Components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in the left panel.
 
 2. In the search field, begin typing the name of the component you want to use in your project.
 
@@ -89,7 +89,7 @@ You can search, filter, and sort the component list in the left rail of Analysis
 
 ### Filter
 
-1. Select the **Components** icon ![Components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in the left rail.
+1. Select the **Components** icon ![Components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in the left panel.
 
 2. Select the **Filter** icon ![Data Dictionary Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), or enter `#` in the search field.
 
@@ -113,7 +113,7 @@ You can search, filter, and sort the component list in the left rail of Analysis
 
 1. (Optional) Apply any filters to the component list, as described in [Filter the component list](#filter-the-component-list).
 
-2. Select the **Components** icon ![Components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in the left rail.
+2. Select the **Components** icon ![Components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in the left panel.
 
 3. Select the **Sort** icon ![Sort components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), then select any of the following filter options to sort the list of components.
 

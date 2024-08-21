@@ -34,7 +34,7 @@ The default starting panel is the [!UICONTROL Freeform] panel, but you can make 
 
 To create a panel :
 
-* Drag and drop a panel from the **[!UICONTROL Panels]** left rail onto your canvas.
+* Drag and drop a panel from the **[!UICONTROL Panels]** left panel onto your canvas.
 * Select a panel from the [Blank panel](blank-panel.md).
 * Use **[!UICONTROL Insert]** menu in Workspace and select your panel. Alternatively, you can use the shortcut.
 
@@ -80,15 +80,15 @@ The panel drop zone enables you to apply filters and drop-down filters to all ta
 
 ### Filters
 
-Drag and drop any filters from the left rail into the panel drop zone to begin filtering your panel. Repeat this process to add additional filters to the panel. Filters appear side by side at the top of the panel.
+Drag and drop any filters from the left panel into the panel drop zone to begin filtering your panel. Repeat this process to add additional filters to the panel. Filters appear side by side at the top of the panel.
 
-![The left rail shows available Metrics and the Mobile Customer metric dragged to the panel drop zone.](assets/segment-filter.png)
+![The left panel shows available Metrics and the Mobile Customer metric dragged to the panel drop zone.](assets/segment-filter.png)
 
 #### Ad-hoc filters 
 
 Non-filter components can also be dragged directly into the drop zone to create ad-hoc filters, saving you the time and effort of going to the [Filter builder](/help/components/filters/filter-builder.md). Filters created in this way are automatically defined as event-level filters. This definition can be quickly modified by selecting the ![Edit](/help/assets/icons/Edit.svg) icon next to the filter name. 
 
-Ad-hoc filters are a type of quick filter, and are local to the project. They only show up in the left rail when you make the ad-hoc filters public.
+Ad-hoc filters are a type of quick filter, and are local to the project. They only show up in the left panel when you make the ad-hoc filters public.
 
 For more information, see [Quick filters](/help/components/filters/quick-filters.md).
 
@@ -104,11 +104,11 @@ Static drop-down filters can also be used to consolidate many projects into one.
 
 #### Create static drop-down filters
 
-* For drop-down filters using dimension items, select a single dimension from the left rail and drop the dimension into the panel drop zone while holding ⇧ (Shift). This action creates a drop-down filter with all the dimension items that are associated with that dimension. 
+* For drop-down filters using dimension items, select a single dimension from the left panel and drop the dimension into the panel drop zone while holding ⇧ (Shift). This action creates a drop-down filter with all the dimension items that are associated with that dimension. 
 
-  Or, if you want the drop-down filter to include only specific dimension items that are associated with a dimension, click the right arrow icon next to the desired dimension in the left rail. This action exposes all available dimension items. Select multiple dimension items from this list using ⇧+![Select](/help/assets/icons/Select.svg) (Shift + select) or ^+![Select](/help/assets/icons/Select.svg) (Control + select), then drop them into the panel drop zone **while holding** ⇧.
+  Or, if you want the drop-down filter to include only specific dimension items that are associated with a dimension, click the right arrow icon next to the desired dimension in the left panel. This action exposes all available dimension items. Select multiple dimension items from this list using ⇧+![Select](/help/assets/icons/Select.svg) (Shift + select) or ^+![Select](/help/assets/icons/Select.svg) (Control + select), then drop them into the panel drop zone **while holding** ⇧.
 
-* For drop-down filters using a single component type (for example, only dimensions, or only filters, or only metrics), select multiple items of the same type in the left rail using ⇧+![Select](/help/assets/icons/Select.svg) or ^+![Select](/help/assets/icons/Select.svg). Then drop the items into the panel drop zone **while holding** ⇧.
+* For drop-down filters using a single component type (for example, only dimensions, or only filters, or only metrics), select multiple items of the same type in the left panel using ⇧+![Select](/help/assets/icons/Select.svg) or ^+![Select](/help/assets/icons/Select.svg). Then drop the items into the panel drop zone **while holding** ⇧.
 
   A single drop-down filter is created with components that you selected.
 
