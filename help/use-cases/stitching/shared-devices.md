@@ -33,7 +33,7 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ## Improve person centric analysis
 
-To improve person centric analysis of shared devices, you have two options: you can use stitching, or you can implement  ECID reset functionality. Both approaches are discussed in more details in the sections below.
+The example data is a mix of both authenticated and unauthenticated activity for the same device. The challenge is to assign a person to the unauthenticated traffic, so you can perfom a person-centric analysis and Customer Journey Analyics does not drop the activities that do not have a person id value. To solve this challenge, you have two options: you can use stitching, or you can implement  ECID reset functionality. Both options are discussed in more details in the sections below.
 
 ### Stitching 
 
