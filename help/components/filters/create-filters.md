@@ -19,11 +19,12 @@ You can create a filter in the following ways:
 * 🅓 In a Workspace project, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create filter]**. 
 * 🅔  a Workspace project, use the shortcut **[!UICONTROL shift+cmd+e]** (macOS) or **[!UICONTROL shift+ctrl+e]** (Windows)
 
-To create a new filter, you use the [Filter builder](/help/components/filters/filter-builder.md):
+To further define the new filter, you use the [Filter builder](/help/components/filters/filter-builder.md).
 
 When working in a Workspace project, you can also create a filter quickly using [Quick filter](/help/components/filters/quick-filters.md).
 
 
+<!--
 Following is a summary of the filter types that are available, with links to information about how to create them:
 
 | Filter type | Created where? | Applicable where? | When to use |
@@ -41,3 +42,4 @@ When applying filters to a freeform project, several other methods are also avai
 | Workspace [!UICONTROL Components] > [!UICONTROL New Filter] | Displays the Filter Builder. See [Filter Builder](/help/components/filters/filter-builder.md) for more information about filtering. |
 | Share > Share Project or Share > Curate Project Data | In [Share projects](/help/analysis-workspace/curate-share/share-projects.md) or [Curate projects](/help/analysis-workspace/curate-share/curate.md), learn how filters that you apply to the project are available in shared analysis for the recipient.|
 | Use filters as dimensions | The following video demonstrates how to use filters as dimensions:  <p>[Use filters as dimensions in Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)</p>|
+-->
