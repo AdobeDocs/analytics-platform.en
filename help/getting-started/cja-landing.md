@@ -78,7 +78,7 @@ Forecasting is an Analysis Workspace feature to forecast a standard or calculate
 
 >[!TAB New documentation] 
 
-New documentation sections are now available on:<ul><li>Summary data use case and and B2B example use case.</li><li>How to upgrade from Adobe Analytics to Customer Journey Analytics.</li><li>Data export use cases and the required Experience Platform and Customer Journey functionalities. </li></ul>Select **[!UICONTROL Learn more]** for this and other documentation updates.
+New documentation sections are now available on:<ul><li>Summary data use case and B2B example use case.</li><li>How to upgrade from Adobe Analytics to Customer Journey Analytics.</li><li>Data export use cases and the required Experience Platform and Customer Journey functionalities. </li></ul>Select **[!UICONTROL Learn more]** for this and other documentation updates.
 
 [![image](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
