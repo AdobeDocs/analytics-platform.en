@@ -8,8 +8,6 @@ role: Admin
 
 # Summary data
 
-{{release-limited-testing}}
-
 Summary data is time-series data that is not tied to an individual person ID. Summary data represents aggregated data at a different level of aggregation, for example campaigns. You can use this data in Customer Journey Analytics to support various use cases. For example, data containing a date and a single metric value, or data containing multiple dimensions and metrics.
 
 This summary data can then be used to present high-level performance indicators or perform analysis. Examples of summary data can be advertising impressions, email opens, advertising spend, cost of good sold, S&P indices, and more. You can also use summary data to upload targets or goals on an hourly or daily basis.
