@@ -13,7 +13,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
-| August 2024 | | 
+| **August 2024** | | 
 | An example B2B project | Added a [use case](/help/use-cases/b2b/example.md) documenting how to set up, configure and report on profile (person) level based B2B data in Customer Journey Analytics, using the new [transform datasets for B2B lookups](/help/connections/transform-datasets-b2b-lookups.md) functionality. |
 | Updated Data export use cases | Added more detailed query examples to [Query Service (Data Distiller) & Export datasets](/help/use-cases/data-export/queryservice-export-datasets.md) to illustrate how to properly apply attribution across sessions using a lookback window. | 
 | Summary data | Added documentation on [summary data](/help/data-views/summary-data.md), [summary data group component settings](/help/data-views/component-settings/summary-data-group.md) and a [summary data use case](/help/use-cases/data-views/summary-data.md). |

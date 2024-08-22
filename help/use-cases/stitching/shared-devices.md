@@ -20,11 +20,11 @@ When two people use the same device and both do make a purchase, sample event da
 
 | Timestamp | Page name | Device ID | Email |
 |---|---|---|---|
-| 2023-05-12 12:01 | Home page | 1234 | | 
-| 2023-05-12 12:02 | Product page  | 1234  | | 
-| 2023-05-12 12:03 | Order success | 1234 | <ryan@a.com> |
-| 2023-05-12 12:07 | Product page  | 1234  | | 
-| 2023-05-12 12:08 | Order success | 1234 | <cassidy@a.com> | 
+| 2023-05-12 12:01 | Home page | `1234` | | 
+| 2023-05-12 12:02 | Product page  | `1234`  | | 
+| 2023-05-12 12:03 | Order success | `1234` | `ryan@a.com` |
+| 2023-05-12 12:07 | Product page  | `1234`  | | 
+| 2023-05-12 12:08 | Order success | `1234` | `cassidy@a.com` | 
 
 The order success (purchase) events assign the data accurately to the correct email. How this assignment impacts your analysis depends on how you perform analysis:
 
@@ -50,12 +50,12 @@ When using last-auth attribution in stitching, Stitched IDs resolve as shown in 
 
 | Timestamp | Page name | Device ID | Email | Stitched ID |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Home page | 1234 | | <cassidy@a.com>| 
-| 2023-05-12 12:02 | Product page  | 1234 | |<cassidy@a.com> | 
-| 2023-05-12 12:03 | Order success | 1234 | <ryan@a.com> | <cassidy@a.com> |
-| 2023-05-12 12:07 | Product page  | 1234  | | <cassidy@a.com> | 
-| 2023-05-12 12:08 | Order success | 1234 |  <cassidy@a.com> | <cassidy@a.com> |
-| 2023-05-13 11:08 | Home page | 1234 | | <cassidy@a.com> |
+| 2023-05-12 12:01 | Home page | `1234` | | `cassidy@a.com`| 
+| 2023-05-12 12:02 | Product page  | `1234` | |`cassidy@a.com` | 
+| 2023-05-12 12:03 | Order success | `1234` | `ryan@a.com` | `cassidy@a.com` |
+| 2023-05-12 12:07 | Product page  | `1234`  | | `cassidy@a.com` | 
+| 2023-05-12 12:08 | Order success | `1234` |  `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Home page | `1234` | | `cassidy@a.com` |
 
 
 #### Device-split 
@@ -66,12 +66,12 @@ When using device-split attribution in stitching, Stitched IDs resolve as shown 
 
 | Timestamp | Page name | Device ID | Email | Stitched ID |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Home page | 1234 | | <ryan@a.com>| 
-| 2023-05-12 12:02 | Product page  | 1234 | |<ryan@a.com> | 
-| 2023-05-12 12:03 | Order success | 1234 | <ryan@a.com> | <ryan@a.com> |
-| 2023-05-12 12:07 | Product page  | 1234  | | <ryan@a.com> | 
-| 2023-05-12 12:08 | Order success | 1234 |  <cassidy@a.com> | <cassidy@a.com> |
-| 2023-05-13 11:08 | Home page | 1234 | | <cassidy@a.com> |
+| 2023-05-12 12:01 | Home page | `1234` | | `ryan@a.com`| 
+| 2023-05-12 12:02 | Product page  | `1234` | |`ryan@a.com` | 
+| 2023-05-12 12:03 | Order success | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Product page  | `1234`  | | `ryan@a.com` | 
+| 2023-05-12 12:08 | Order success | `1234` |  `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Home page | `1234` | | `cassidy@a.com` |
 
 
 ### ECID reset 
@@ -83,12 +83,12 @@ When using ECID reset, Stitched IDs resolve as shown in the table below.
 
 | Timestamp | Page name | Device ID | Email | Stitched ID |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Home page | 1234 | | <ryan@a.com>| 
-| 2023-05-12 12:02 | Product page  | 1234 | |<ryan@a.com> | 
-| 2023-05-12 12:03 | Order success | 1234 | <ryan@a.com> | <ryan@a.com> |
-| 2023-05-12 12:07 | Product page  | 5678  | | <cassidy@a.com> | 
-| 2023-05-12 12:08 | Order success | 5678 |  <cassidy@a.com> | <cassidy@a.com> |
-| 2023-05-13 11:08 | Home page | 5678 | | <cassidy@a.com> |
+| 2023-05-12 12:01 | Home page | `1234` | | `ryan@a.com`| 
+| 2023-05-12 12:02 | Product page  | `1234` | |`ryan@a.com` | 
+| 2023-05-12 12:03 | Order success | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Product page  | 5678  | | `cassidy@a.com` | 
+| 2023-05-12 12:08 | Order success | 5678 |  `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Home page | 5678 | | `cassidy@a.com` |
 
 ## Shared device exposure 
 
