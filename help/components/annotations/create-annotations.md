@@ -11,13 +11,17 @@ By default, only administrators can create annotations. Users have rights to vie
 
 However, administrators can give the **[!UICONTROL Annotation Creation]** permission for **[!UICONTROL Reporting Tools]** in **[!UICONTROL Edit permissions for CJA Workspace Access]** to users via the [Admin Console](/help/technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
-To add a new annotation using the [[!UICONTROL Annotation builder]](#annotation-builder):
+You can create an annotation in the following ways:
 
-* In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Annotation]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] from the [[!UICONTROL Annotations] manager](/help/components/annotations/manage-annotations.md). 
-* In Workspace, from the context menu in a visualization, select **[!UICONTROL Create annotation from selection]**.
-* In Workspace, from the context menu in a line graph, select **[!UICONTROL Annotate Selection]**.
-* In Workspace, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create annotation]**. 
-* In Workspace, use the shortcut **[!UICONTROL ctrl+shift+o]** (Windows) or **[!UICONTROL shift+command+o]** (macOS)
+![Create an annotation](assets/create-annotation.png)
+
+* 🅐 In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Annotations]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] from the [[!UICONTROL Annotations] manager](/help/components/annotations/manage-annotations.md). 
+* 🅑 In a Workspace project, from the context menu in a visualization, select **[!UICONTROL Create annotation from selection]**.
+* 🅒 In a Workspace project, from the context menu in a line graph, select **[!UICONTROL Annotate Selection]**.
+* 🅓In a Workspace project, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create annotation]**. 
+* 🅔 In a Workspace project, use the shortcut **[!UICONTROL ctrl+shift+o]** (Windows) or **[!UICONTROL shift+command+o]** (macOS)
+
+To further define the annotation, you use the [[!UICONTROL Annotation builder]](#annotation-builder):
 
 <!-- Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |

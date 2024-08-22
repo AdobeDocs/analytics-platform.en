@@ -7,7 +7,7 @@ role: User
 ---
 # Attribution panel {#attribution-panel}
 
-<!-- markdownlint-disable MD0334 -->
+<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_button"

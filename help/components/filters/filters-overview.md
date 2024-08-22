@@ -8,7 +8,7 @@ role: User
 
 # Filters overview {#overview}
 
-Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of persons based on characteristics or  interactions. Filters are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
+Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of persons based on characteristics or interactions. Filters are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
 
 Filters can be based on 
 
@@ -20,7 +20,7 @@ Filters can be based on
 
 You can build and save filters in the Filter Builder, or generate filters from a Fallout visualization (in Workspace). In addition, filters can be used together as stacked filters. 
 
-Filtering includes the [Filter Builder](/help/components/filters/filter-builder.md) to construct filters and run a pre-test, and the [Filters manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
+Filtering includes the [Filter builder](/help/components/filters/filter-builder.md) to construct filters and run a pre-test, and the [Filters manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
 
 The maximum number of filters you can create per IMS organization is 50,000.
 
@@ -66,39 +66,45 @@ Filters are based on a Person-, Session-, and Event-level hierarchy using a nest
 </table>
 
 >[!NOTE]
->The Person container was formerly known as the Visitor container. The Session container was called the Visit container, and the Event container used to be the Hit container.
+>
+>For Adobe Analytics users:
+> 
+> - The Person container is known in Adobe Analytics as the Visitor container. 
+> - The Session container is known in Adobe Analytics as the Visit container. 
+> - The Event container is known in Adobe Analytics as the Hit container.
+>
 
-A Filter sets conditions to filter a person based on the person's attributes or interactions with your site, mobile app, or other device type of which you have collected data from. To set conditions in a filter, you set rules to filter persons based on person characteristics and/or navigation traits. To further breakdown person data, you can filter based on specific visits and/or page view hits, screen taps, menu choices on a set-top box for each person. But also filter on attributes that you have ingested from a CRM or loyalty system. The Filter Builder provides a simple architecture to build these subsets and apply rules as nested, hierarchical Person, Session, or Event containers.
+A filter sets conditions to filter a person based on the attributes of the person or interactions with your site, mobile app, or other device type of which you have collected data from. To set conditions in a filter, you set rules to filter persons based on person characteristics and navigation traits. To further breakdown person data, you can filter based on specific sessions and page view events, screen taps, menu choices on a set-top box, and more. But also filter on attributes that you have ingested from a CRM or loyalty system. The [Filter builder](/help/components/filters/filter-builder.md) provides a simple interface to build these subsets and apply rules as nested, hierarchical Person, Session, or Event containers.
 
-The container architecture employed in the Filter Builder defines Person as the outermost container. The container contains overarching data specific for the person across visits and page views, mobile application screens, or menu screens on a set-top box. A nested Session container lets you set rules to break down the person's data based on sessions, and a nested Event container lets you break down person information based on individual interactions. Each container lets you report across a person's history, interactions broken down by sessions, or break down individual experience events. 
+The container architecture employed in the [Filter builder](/help/components/filters/filter-builder.md) defines Person as the outermost container. The container contains overarching data specific for the person across visits and page views, mobile application screens, or menu screens on a set-top box. A nested Session container lets you set rules to break down the person's data based on sessions. A nested Event container lets you break down person information based on individual interactions. Each container lets you report across a person's history, interactions broken down by sessions, or break down individual experience events. 
 
-### Person container {#person}
+### Person container
 
-The Person container includes every visit and page view, mobile app screen, set-top box, or console-game interaction for persons within a specified time frame. Basically, every experience event that is part of the  datasets that you have defined within your Customer Journey Analytics connection. A filter at the Person level returns the page views, mobile app, or set-top box screens that meet the condition. Plus all other interaction by that same person across online and offline channels (and only constrained by defined date ranges). As the most broadly defined container, reports generated at the Person container level returns page views, mobile app screens, and more, across all visits and lets you generate a multi-visit cross-channel analysis. Therefore, the Person container is the most susceptible to change based on defined date ranges.
+The Person container includes every session and page view, mobile app screen, set-top box, or console-game interaction for persons within a specified time frame. Basically, every experience event that is part of the datasets that you have defined within your Customer Journey Analytics connection. A filter at the Person level returns the page views, mobile app, or set-top box screens that meet the condition. Plus all other interaction by that same person across online and offline channels (and only constrained by defined date ranges). As the most broadly defined container, reports generated at the Person container level returns page views, mobile app screens, and more, across all visits and lets you generate a multi-visit cross-channel analysis. Therefore, the Person container is the most susceptible to change based on defined date ranges.
 Person containers can include values based on a person's overall history:
 
-- Days Before First Purchase
-- Original Entry Page or Mobile App Home Screen
-- Original Referring Domains 
+- Days before the first purchase.
+- Original entry page or mobile app home screen.
+- Original referring domains 
 
-### Session container {#session}
+### Session container
 
-The Session container lets you identify page interactions or mobile app interactions, campaigns, or conversions for a specific session. The Session container is the most commonly used container because it captures behaviors for the entire visit session once the rule is met. The Session container also lets you define which sessions you want to include or exclude in building and applying a filter. It can help you answer the following questions:
+The Session container lets you identify page interactions or mobile app interactions, campaigns, or conversions for a specific session. The Session container is the most commonly used container because it captures behaviors for the entire session once the rule is met. The Session container also lets you define which sessions you want to include or exclude in building and applying a filter. The session container can help you answer the following questions:
 
-- How many sessions engaged with both Web and Call Center data sources?
+- How many sessions involved both web and call center data sources?
 - Which pages contributed to a successful conversion to a sale?
 
-Session containers include values based on occurrence per session:
+Session containers include values based on events per session:
 
-- Session Type
-- Entry Page
-- Return Frequency
-- Participation Metrics
-- Linearly allocated metrics
+- Session type.
+- Entry page.
+- Return frequency.
+- Participation metrics.
+- Linearly allocated metrics.
 
-Data views in Customer Journey Analytics let you determine how long a session lasts but also when a new session should be created. For example, you can define a new mobile app session based on every time a user launches your mobile app. See [Session settings](/help/data-views/session-settings.md) for more information. 
+Data views in Customer Journey Analytics let you determine how long a session lasts, but also when a new session should be created. For example, you can define a new mobile app session based on every time a user launches your mobile app. See [Session settings](/help/data-views/session-settings.md) for more information. 
 
-### Event container {#event}
+### Event container
 
 The Event container defines which page, mobile application, or other type of events that you would like to include or exclude from a filter. It is the most narrow of the containers available to let you identify specific clicks, page view, taps on button in a mobile app where a condition is true. The Event container lets you view a single tracking code, or isolate behavior within a particular area of your mobile app. You may also want to pinpoint a specific value when an action occurs, such as the marketing channel when an order was placed.
 
