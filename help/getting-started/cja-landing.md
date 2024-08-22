@@ -23,6 +23,15 @@ AI Assistant is a conversational experience that allows practitioners to perform
 
 [![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
+>[!TAB Summary data] 
+
+Allows you to bring in time-series data that does not have a person ID. This time-series data can be used to support various use cases, such as 
+
+- Presenting high-level performance indicators as part of or next to event-level data. 
+- Uploading targets or goals at an hourly or daily basis, then positioning these targets or goals against event-level metrics. 
+
+[![image](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
+
 >[!TAB Graph-based stitching*] 
 
 Through Graph-based stitching, you can use the identity graph from the Experience Platform Identity Service to get a better view of the customer journey by: <ul><li>Joining datasets with different identifiers without having to extract, transform and load additional data to reflect a single identifier.</li> <li>Improving coverage of preferred or golden identity for a single dataset by sharing identities across datasets,</li><li>Aligning profiles created in Real-Time Customer Data Platform and Journey Optimizer with people in Customer Journey Analytics.</li></ul>
@@ -69,7 +78,7 @@ Forecasting is an Analysis Workspace feature to forecast a standard or calculate
 
 >[!TAB New documentation] 
 
-New documentation sections are now available on:<ul><li>How to upgrade from Adobe Analytics to Customer Journey Analytics.</li><li>Data export use cases and the required Experience Platform and Customer Journey functionalities. </li></ul>Select **[!UICONTROL Learn more]** for this and other documentation updates.
+New documentation sections are now available on:<ul><li>Summary data use case and and B2B example use case.</li><li>How to upgrade from Adobe Analytics to Customer Journey Analytics.</li><li>Data export use cases and the required Experience Platform and Customer Journey functionalities. </li></ul>Select **[!UICONTROL Learn more]** for this and other documentation updates.
 
 [![image](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
@@ -124,7 +133,7 @@ Understand how Customer Journey Analytics compares to Adobe Analytics. And how t
     </td>
      <td>
       <img src="./assets/dataviews.svg" width="35px"><br/>
-      <strong>Data views</strong><br/><a href="/help/data-views/data-views.md">Overview</a> - <a href="/help/data-views/create-dataview.md">Create or edit</a> - <a href="/help/data-views/session-settings.md">Session settings</a> - <a href="/help/data-views/derived-fields/derived-fields.md">Derived fields</a> - <a href="/help/data-views/component-reference.md">Component reference</a>
+      <strong>Data views</strong><br/><a href="/help/data-views/data-views.md">Overview</a> - <a href="/help/data-views/create-dataview.md">Create or edit</a> - <a href="/help/data-views/session-settings.md">Session settings</a> - <a href="/help/data-views/derived-fields/derived-fields.md">Derived fields</a> - <a href="/help/data-views/summary-data.md">Summary data</a> - <a href="/help/data-views/component-reference.md">Component reference</a>
     </td>
     
   </tr>
@@ -139,7 +148,7 @@ Understand how Customer Journey Analytics compares to Adobe Analytics. And how t
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>
-      <strong>Share, export, integrate</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projects</a> - <a href="/help/mobile-app/home.md">Analytics Dashboards</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a>  - <a href="/help/integrations/overview.md">Integrations</a>
+      <strong>Share, export, integrate</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projects</a> - <a href="/help/mobile-app/home.md">Analytics Dashboards</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a>  - <a href="/help/components/exports/manage-exports.md">Cloud export</a> - <a href="/help/integrations/overview.md">Integrations</a>
     </td>
   </tr>
 </table> 
