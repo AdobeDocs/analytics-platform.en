@@ -6,7 +6,7 @@ role: User
 ---
 # Journey canvas overview
 
-The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. It allows you to define a journey, then see how users left (fell out) or continued through (fell through) the journey. 
+The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. It allows you to define a journey, then see how people left (fell out) or continued through (fell through) the journey. 
 
 Journey canvas allows you to build analyses of user journeys by creating a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. Drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly.
 
@@ -76,7 +76,7 @@ Journey canvas is essential for fallout analysis involving journeys with multipl
 >
 >If your organization doesn't have access to Journey Optimizer, you can still [build analyses in Journey canvas](#build-analyses-in-customer-journey-analytics).
 
-Analyzing Journey Optimizer journeys in Journey canvas provides deep, actionable insights on how users interact with a journey. 
+Analyzing Journey Optimizer journeys in Journey canvas provides deep, actionable insights on how people interact with a journey. 
 
 When you analyze a Journey Optimizer journey in Journey canvas, the journey displays with the same order, sequence, and structure as it has in Journey Optimizer. If you can make changes to it within Journey canvas, [changes are no longer synchronized from Journey Optimizer](#synchronization-between-journey-optimizer-and-journey-canvas).
 
