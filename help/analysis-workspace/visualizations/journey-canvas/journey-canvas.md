@@ -99,6 +99,32 @@ After you create an analysis of a Journey Optimizer journey in Journey canvas, d
 
 Furthermore, changes made to a journey in Journey Optimizer sync to Journey canvas only if the journey remains unmodified in Journey canvas. After you modify a journey in Journey canvas, any changes you make to the journey in Journey Optimizer are not reflected in Journey canvas. To see the changes reflected in Journey canvas, you can delete and [re-create the journey in Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
+### Differences after modifying a journey in Journey canvas
+
+After you modify a Journey Optimizer journey in Journey canvas, changes occur in data processing, available features, and synchronization behavior.
+
+>[!NOTE]
+>
+>To return the journey to its original state, you can press Ctrl+Z after making your first change in Journey canvas. Or, you can delete and [re-create the journey in Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+
+#### Data processing differences
+
+After you modify a Journey Optimizer journey in Journey Canvas, you might notice changes to your data if your journey contains metrics that have non-default attribution models. 
+
+This is because, unlike Journey Optimizer, Journey canvas allows you to apply multiple dimensions within a single journey. This capability means that [metric attribution](/help/data-views/component-settings/attribution.md) is not supported.  
+
+#### Feature differences
+
+After you modify a Journey Optimizer journey in Journey Canvas, the [!UICONTROL **Node type**] drop-down field is no longer available. 
+
+For more information about this field, see [Configure settings](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+
+#### Synchronization differences
+
+Changes made to a journey in Journey Optimizer sync to Journey canvas only if the journey remains unmodified in Journey canvas. 
+
+After you modify a Journey Optimizer journey in Journey Canvas, any changes you make to the journey in Journey Optimizer are not reflected in Journey canvas. To see the changes reflected in Journey canvas, you can delete and [re-create the journey in Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+
 ### Terminology differences between Journey Optimizer and Customer Journey Analytics
 
 Certain terms that mean one thing in Journey Optimizer mean something else in Customer Journey Analytics. When using Journey canvas, the Customer Journey Analytics terms are used.
