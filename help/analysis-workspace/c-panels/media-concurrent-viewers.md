@@ -20,9 +20,11 @@ In Analysis Workspace, the Concurrent viewers metric is the number of unique per
 
 The Media Concurrent Viewers panel enables analysis of concurrent viewers over time, with details on peak concurrency and the ability to break down and compare.  To access the Media Concurrent Viewers panel, navigate to a data view with components enabled from the Streaming Media Collection Add-on. Then, click the panel icon on the far-left and drag the panel into your Analysis Workspace project.
 
-+++ View a video demonstration of this feature.
++++ View a video demonstration of this functionality.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330177/?quality=12)
+
+{{videoaa}}
 
 +++
 

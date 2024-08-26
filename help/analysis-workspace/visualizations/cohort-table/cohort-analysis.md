@@ -24,6 +24,8 @@ Examples of what you can do with a [!UICONTROL Cohort table]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23990/?quality=12)
 
+{{videoaa}}
+
 +++
 
 >[!IMPORTANT]

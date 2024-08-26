@@ -73,9 +73,10 @@
 
 | Option | Function |
 |---------|----------|
-| [!UICONTROL **Recommended**] | Sorts components with those that are recommended at the top of the list. Components that are used most frequently and most recently by you or by others in your organization are shown higher in the list. |
-| [!UICONTROL **Alphabetical**] | Sorts components alphabetically. |
-| [!UICONTROL **Categorical**] | Sorts components according to component type (dimension, metric, filter, date range). |
+| **[!UICONTROL Recommended]** | Sort components for each type (dimension, metric, filter and date range) based on their recommendation. Components that are used most frequently and most recently by you or by others in your organization are shown higher in each list. |
+| **[!UICONTROL Last modified]** | Sort components for each type (dimension, metric, filter and date range) based on their last modified date. Components that are modified most recently are shown highter in each list. | 
+| **[!UICONTROL Alphabetical]** | Sort components for each type (dimension, metric, filter and date range) in ascending alphabetic order. |
+| **[!UICONTROL Categorical]** | Sort components for each type (dimension, metric, filter and date range) based on their category. For example Curated versus Non-curated data view components. |
 
 {style="table-layout:auto"}
 
@@ -84,3 +85,8 @@
 You can compare the current time period to a previous time period. If you select an option in this menu, every data point receives a similarly colored dotted-lined counterpart. This counterpart represents that same metric in the selected previous date range. Setting this option doubles the number of items on the chart and rows in the table.
 
 Available time comparison options include the previous period, 13 weeks prior, 52 weeks prior, and a Customized date range. If you select Customized date range, additional options appear to let you select the number and granularity. If you select None, the date comparison is removed.
+
+
+## Video demonstration Adobe Analytics {#videoaa}
+
+This video demonstrates the functionality using Adobe Analytics. However, the functionality is similarly available in Customer Journey Analytics.

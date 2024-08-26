@@ -11,9 +11,11 @@ Similar to a pie chart, the ![GraphDonut](/help/assets/icons/GraphDonut.svg) [!U
 
 ![A Donut chart showing data as parts or filters of a whole.](assets/donut.png)
 
-+++ View a video demonstration of this feature.
++++ View a video demonstration of this functionality.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23989/?quality=12)
+
+{{videoaa}}
 
 +++
 

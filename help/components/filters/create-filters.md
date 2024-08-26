@@ -7,7 +7,7 @@ role: User
 ---
 # Create filters
 
-You can create different types of filters in Customer Journey Analytics, depending on how complex the filters need to be and whether the filters should apply to the current Workspace project only or to all projects. You can create filters directly in the main interface of Customer Journey Analytics or when working in a Workspace project. 
+You can create different types of filters in Customer Journey Analytics, depending on how complex the filters need to be and whether the filters should apply to the current Workspace project only or apply to all projects. You can create filters directly in the main interface of Customer Journey Analytics or when working in a Workspace project. 
 
 You can create a filter in the following ways:
 
@@ -17,9 +17,10 @@ You can create a filter in the following ways:
 * 🅑 In a Workspace project, from the Components left panel, select ![Add](/help/assets/icons/Add.svg) at ![Segment](/help/assets/icons/Segmentation.svg) **Filters**.
 * 🅒 In a Workspace project, from the context menu in a visualization, select **[!UICONTROL Create filter from selection]**.
 * 🅓 In a Workspace project, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create filter]**. 
-* 🅔  a Workspace project, use the shortcut **[!UICONTROL shift+cmd+e]** (macOS) or **[!UICONTROL shift+ctrl+e]** (Windows)
+* 🅔  a Workspace project, use the shortcut **[!UICONTROL shift+cmd+e]** (macOS) or **[!UICONTROL shift+ctrl+e]** (Windows).
+* 🅕 Select ![Add](/help/assets/icons/Add.svg) in ***Drop a filter here (or any other component)*** drop zone.
 
-To further define the new filter, you use the [Filter builder](/help/components/filters/filter-builder.md).
+To define the new filter, you use the [Filter builder](/help/components/filters/filter-builder.md).
 
 When working in a Workspace project, you can also create a filter quickly using [Quick filter](/help/components/filters/quick-filters.md).
 

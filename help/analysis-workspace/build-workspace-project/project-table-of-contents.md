@@ -10,9 +10,11 @@ exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
 
 You can view a table of contents within each project in Analysis Workspace, allowing you to quickly move between any panels and visualizations that exist in the project. This is especially useful when viewing larger projects that contain many panels and visualizations.
 
-+++ View a video demonstration of this feature.
++++ View a video demonstration of this functionality.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26990/?learn=on)
+
+{{videoaa}}
 
 +++
 

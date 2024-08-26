@@ -25,7 +25,7 @@ Playback Time Spent can help you understand:
 
 * Where drop-offs occurred 
 
-+++ View a video demonstration of this feature.
++++ View a video demonstration of this functionality.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338699)
 

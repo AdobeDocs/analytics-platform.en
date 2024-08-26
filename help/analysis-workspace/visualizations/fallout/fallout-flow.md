@@ -13,6 +13,8 @@ A ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) [!UICONTROL Fallo
 
 >[!VIDEO](https://video.tv.adobe.com/v/345883/?quality=12)
 
+{{videoaa}}
+
 +++
 
 Fallout visualizations provide more options to build your fallout reports. Fallout visualizations let you:

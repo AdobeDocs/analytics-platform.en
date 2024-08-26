@@ -9,9 +9,11 @@ role: User
 
 [!UICONTROL Column settings] let you configure column formatting, some of which can be conditional.
 
-+++ View a video demonstration of this feature.
++++ View a video demonstration of this functionality.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
+
+{{videoaa}}
 
 +++
 

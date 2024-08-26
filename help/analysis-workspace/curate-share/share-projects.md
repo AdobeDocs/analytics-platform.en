@@ -24,10 +24,13 @@ You can share an Analysis Workspace project with the following types of people:
 
 Any [curation](curate.md) you apply prior to sharing is reflected when recipients open the project. 
 
-Here is a video overview of project sharing:
++++ View a video showing how to use project sharing.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
 
+{{videoaa}}
+
++++
 
 ## Share with Customer Journey Analytics users and groups in your organization {#Add}
 

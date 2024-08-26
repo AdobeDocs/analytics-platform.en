@@ -11,9 +11,11 @@ role: User
 
 Analysis Workspace allows you to build analyses quickly to gather insights and then share those insights with others. Using the drag-and-drop browser interface, you can craft your analysis, add visualizations to bring data to life, curate a dataset, and share and schedule projects with anyone you choose.
 
-+++ View a video showing the possibilities of Analytics Workspace
++++ View a video showing the possibilities of Analytics Workspace.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
+
+{{videoaa}}
 
 +++
 
