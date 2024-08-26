@@ -247,28 +247,6 @@ To create an audience:
 
 1. Continue creating and publishing the audience as described in [Create and publish audiences](/help/components/audiences/publish.md).
 
-### Create a segment 
-
-The option to create a segment is available for the following objects on the canvas:
-
-* Individual nodes
-
-* Multiple nodes
-
-* The arrow between nodes
-
-* Multiple arrows between nodes
-
-To create a segment:
-
-1. Select one or more nodes that you want to use to create a segment, then right-click one of the selected nodes.
-
-   Or
-
-   Select one or more arrows between 2 nodes that you want to use to create a segment, then right-click one of the selected arrows.
-
-1. Select [!UICONTROL **Create segment**].
-
 ### View trend data
 
 You can view the trend data in a line graph for objects in Journey canvas. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout)>
@@ -339,7 +317,7 @@ The arrow between nodes in Journey canvas determines the sequence of events in t
 
 To connect nodes in Journey canvas:
 
-1. On the canvas, select the node that comes first in the journey sequence that you want to connect to another node. 
+1. On the canvas, hover over the node that comes first in the journey sequence that you want to connect to another node. 
 
    4 blue dots appear on each side of the selected node.
 
@@ -372,6 +350,8 @@ To add a time constraint:
 ### Create a filter based on a node or arrow
 
 You can create a new filter based on a node or arrow within a journey. After the filter is created, you can use it anywhere in Analysis Workspace. 
+
+When you create a filter based on a node or arrow in Journey canvas, the filter uses [sequential filters](/help/components/filters/seg-sequential-build.md). This means that when you select a node or arrow from which you want to create a filter, the filter includes all preceding nodes or arrows on the branch, joined with the THEN operator. 
 
 To create a filter:
 

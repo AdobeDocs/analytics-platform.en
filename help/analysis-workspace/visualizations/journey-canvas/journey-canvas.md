@@ -92,6 +92,10 @@ Using Journey canvas to analyze journeys that were created in Journey Optimizer 
 | **Create audiences from custom nodes** | Create audiences based on a custom node that you create in the journey within the Journey canvas visualization. (Launches the Customer Journey Analytics audience builder.) <p>In Journey Optimizer, you can create audiences only for pre-defined activities.</p> |
 | **Fallthrough and fallout** | B3 | 
 | **Break down events** | B3 | 
+| **Rename events** | B3 | 
+| **Delete events** | B3 | 
+| **Combine events** | B3 | 
+| **Connect events** | B3 | 
 
 ### Synchronization between Journey Optimizer and Journey canvas
 
@@ -99,13 +103,13 @@ After you create an analysis of a Journey Optimizer journey in Journey canvas, d
 
 Furthermore, changes made to a journey in Journey Optimizer sync to Journey canvas only if the journey remains unmodified in Journey canvas. After you modify a journey in Journey canvas, any changes you make to the journey in Journey Optimizer are not reflected in Journey canvas. To see the changes reflected in Journey canvas, you can delete and [re-create the journey in Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-### Differences after modifying a journey in Journey canvas
+### Differences after modifying a journey in Journey canvas {#differences-after-modifying}
 
-After you modify a Journey Optimizer journey in Journey canvas, changes occur in data processing, available features, and synchronization behavior.
+After you modify a Journey Optimizer journey in Journey canvas, changes can occur in data processing, available features, and synchronization behavior.
 
 >[!NOTE]
 >
->To return the journey to its original state, you can press Ctrl+Z after making your first change in Journey canvas. Or, you can delete and [re-create the journey in Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+>To return the journey to its original state, you can press Ctrl+z after making your first change in Journey canvas. Or, you can delete and [re-create the journey in Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
 
 #### Data processing differences
 
