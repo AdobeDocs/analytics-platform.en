@@ -17,7 +17,7 @@ The **[!UICONTROL Filter builder]** dialog is used to create new or edit existin
    
    ![Filter details window showing fields and options described in the next section.](assets/filter-builder.png)
 
-   >[!TAB Create / Edit filter] 
+   >[!TAB Create or Edit filter] 
    
    ![Filter details window showing fields and options described in the next section.](assets/create-edit-filter.png)
    
@@ -48,12 +48,12 @@ The **[!UICONTROL Filter builder]** dialog is used to create new or edit existin
 
 You use the Definition builder to construct your filter definition. In that construction, you use components, containers, operators and logic.
 
-You can configure the character and level of your your definition: 
+You can configure the type and scope of your definition: 
 
 1. To specify the type of your definition, specify whether you want the build an include or exclude definition. Select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Options]** and from the dropdown toggle **[!UICONTROL Include]** or **[!UICONTROL Exclude]**.
-1. To specify the level of your definition, select from the **[!UICONTROL Include]** or **[!UICONTROL Exclude]** dropdown whether you want the definition to be based on **[!UICONTROL Event]**, **[!UICONTROL Session]** or **[!UICONTROL Person]**. 
+1. To specify the scope of your definition, select from the **[!UICONTROL Include]** or **[!UICONTROL Exclude]** dropdown whether you want the scope of the definition to be **[!UICONTROL Event]**, **[!UICONTROL Session]** or **[!UICONTROL Person]**. 
 
-You can always change these settings at a later time.
+You can always change these settings later.
 
 ### Components
 
@@ -64,7 +64,7 @@ A vital part of the construction of your filter definition is using dimensions, 
 To add a component:
 
 1. Drag and drop a component from the components panel onto **[!UICONTROL Drag and drop Metric(s), Filter(s), and/or Dimensions here]**. You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific components.
-1. Specify details for the component. For example select a value from **[!UICONTROL Select value]**. Or enter a value. What and how you can specify one or more values depends on the component and the operator.
+1. Specify details for the component. For example, select a value from **[!UICONTROL Select value]**. Or enter a value. What and how you can specify one or more values depends on the component and the operator.
 1. Optionally modify the default operator. For example, from **[!UICONTROL equals]** to **[!UICONTROL equals any of]**. See [Operators](operators.md) for a detailed overview of the available operators.
 
 To edit a component:
@@ -86,8 +86,8 @@ You can group multiple components in one or more containers and define logic wit
 * To add a container, select **[!UICONTROL Add container]** from ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Options]**.
 * To add an existing component to the container, drag and drop the component into the container.
 * To add another component to the container, drag and drop a component from the component panel into the container. Use the blue insertion line as a guide.
-* To add another component outside of the container, drag and drop a component from the component panel outside the container but inside the main definition container. User the blue insertion line as a guide.
-* To modify the logic between components in a container, between containers or between a container and a component, select the appropriate **[!UICONTROL And]**, **[!UICONTROL Or]**, **[!UICONTROL Then]**.
+* To add another component outside of the container, drag and drop a component from the component panel outside of the container, but inside the main definition container. User the blue insertion line as a guide.
+* To modify the logic between components in a container, between containers or between a container and a component, select the appropriate **[!UICONTROL And]**, **[!UICONTROL Or]**, **[!UICONTROL Then]**. When you select Then, you turn the filter into a sequential filter. See [Create sequential filter](seg-sequential-build.md) for more information.
 * To switch the container level, select ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Event]**, ![Visit](/help/assets/icons/Visit.svg) **[!UICONTROL Session]** or ![User](/help/assets/icons/User.svg) **[!UICONTROL Person]**.
 
 You can use ![Setting](/help/assets/icons/Setting.svg) in a container for the following actions:
@@ -95,15 +95,15 @@ You can use ![Setting](/help/assets/icons/Setting.svg) in a container for the fo
 | Container action | Description |
 |---|---|
 | **[!UICONTROL Add container]** | Add a nested container to the container. |
-| **[!UICONTROL Exclude]** | Exclude the result from the container in the filter definition. An exclude container is identified by a red thin left bar. |
-| **[!UICONTROL Include]** | Include the result from the container in the filter definition. This is the default. And include container is identified by a gray thin left bar. |
+| **[!UICONTROL Exclude]** | Exclude the result from the container in the filter definition. A thin red left bar identifies an exclude container.  |
+| **[!UICONTROL Include]** | Include the result from the container in the filter definition. Include is the default. A thin gray left bar identifies an include container. |
 | **[!UICONTROL Name container]** | Rename the container from its default description. Type a name in the text field. If you provide no input, the default description is used. |
 | **[!UICONTROL Delete container]** | Delete the container from the definition. | 
 
 
 ## Date ranges
 
-You can build filters that contain rolling date ranges in order to answer questions about ongoing campaigns or events. For example, you can build a filter that includes *everyone who has made an online purchase over the last 60 days*.
+You can build filters that contain rolling date ranges. So, you are able to answer questions about ongoing campaigns or events. For example, you can build a filter that includes *everyone who has made an online purchase over the last 60 days*.
 
 ![Filter using rolling date range](assets/filter-rolling-date-range.gif)
 
@@ -117,25 +117,50 @@ You can build filters that contain rolling date ranges in order to answer questi
 
 ## Stack filters {#stack}
 
-You can build a filter using filters. When you use filters in a filter you can optimize your filter and reduce the complexity.
+You can build a filter using filters. When you use filters in a filter, you can optimize your filter and reduce the complexity.
 
-Imagine you want to filter on the combination of device type (mobile phone versus tablet) and US states (50 in total). You could either build 100 filters, each for the unique combination of device type and US state. To get the Californian tablet users you would use one of the filters:
+Imagine you want to filter on the combination of device type (2) and US states (50). You could either build 100 filters, each for the unique combination of device type (mobile phone versus tablet) and US state. To get the Californian tablet users, you would use one of the 100 filters:
 
 ![Simple filter for CA and tablet](assets/filter-ca-tablet-single.png)
 
-Or, you could define 52 filters: 50 filters for the US states, one for mobile phone and one for tablet. And then stack the filters to obtain the same results. To get the Californian tablet users you would stack two filters:
+Or, you could define 52 filters: 50 filters for the US states, one for mobile phone and one for tablet. And then stack the filters to obtain the same results. To get the Californian tablet users, you would stack two filters:
 
 ![Stacked filter for CA and tablet](assets/filter-ca-tablet-stacked.png)
 
 
-## Attribution models {#attribution}
+## Attribution models
 
-![](assets/attribution-models.jpg)
+When you use a dimension in the Filter builder, you have the options to specify the attribution model for that dimension. The attribution model you select determines whether data qualifies for the condition you have specified for the dimension component.
 
-**Example: Event filter where eVar1 = A** 
+Select ![Setting](/help/assets/icons/Setting.svg) within the dimension component and select one of the Attribution models from the popup: 
 
-|  Example  | A  | A  |  A (persisted) | B  | A  | C  |
-|---|---|---|---|---|---|---|
-|  Repeating  | X  | X  | X  | -  | X  | -  |
-|  Instance  | X  | X  | - | - | X | - |
-|  Non-repeating instance  | X | - | - | -  | X  | -  |
+| Models | Description |
+|---|---|
+| **[!UICONTROL Repeating model (default)]** | Include instance and persisted values for the dimension to determine qualification. |
+| **[!UICONTROL Instance]** | Include only instance values for the dimension to determine qualification. |
+|  **[!UICONTROL Non-repeating instance]** | Include unique instance (non-repeating) values for the dimension to determin qualification. |
+
+
+![Attribution model on dimension when building a filter](assets/filter-dimension-attribution.png)
+
+### Example
+
+As part of a filter definition you have specified the following condition: Page Name equals Women. Similar as to the example above. You repeat this filter definition using the two other attribution models. So you have three filters each with their own attribution model:
+
+* Women Page - Attribution - Repeating (default)
+* Women Page - Attribution - Instance
+* Women Page - Attribution - Non-repeating instance
+
+
+The table below explains, for each attribution model, which incoming events are qualified ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) for that condition.
+
+
+|  Women Page - Attribution - <br/>*attribution model*  | Event 1:<br/>Page Name equals<br/>Women  | Event 2:<br/>Page Name equals<br/>Men | Event 3:<br/>Page Name equals<br/>Women |  Event 4:<br/>Page Name equals<br/>Women<br/>(persisted) | Event 5:<br/>Page Name equals<br/>Checkout  |  Event 6:<br/>Page Name equals<br/>Women  | Event 7:<br/>Page Name equals<br/>Home  |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
+|  Repeating (default) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg)  |
+|  Instance  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg) |![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Remove](/help/assets/icons/Remove.svg) |
+|  Non-repeating instance  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg)  |
+
+An example report on events using the three filters looks like:
+
+![Filter attribution model results](assets/filter-dimension-attribution-results.png)

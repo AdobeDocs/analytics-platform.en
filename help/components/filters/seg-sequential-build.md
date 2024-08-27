@@ -23,14 +23,6 @@ A sequential filter has some [basic functionality](#basics) and additional optio
 
 * [After and within](#after-and-within) constraints for the Then logic in the sequence filter definition:
 
-  1. Select ![Clock](/help/assets/icons/Clock.svg).
-  1. Select **[!UICONTROL Within]** or **[!UICONTROL After]** from the context menu.
-  1. Specify a time period (Minute, Hour, up until Years), Event, Session, or Other dimension. When you select Other dimension you can specify a dimension from the submenu.
-  1. Select the number to open a popup that allows you to type in or specify the number using - or +.
-
-  You can specify only **[!UICONTROL Within]** or **[!UICONTROL After]**, or specify both.
-  You can remove a time constaint using ![CrossSize75](/help/assets/icons/CrossSize75.svg).
-
 * What data to [include](#include) as part of the overall sequence for the filter definition. Or for a sequence defined as part of a container. By default all matching data is considered, identified by ![UserGroup](/help/assets/icons/UserGroup.svg) [!UICONTROL Include Everyone]. 
   
   * Select ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** to only consider data before the sequence.
@@ -83,11 +75,58 @@ Identify all sessions where a person visits one page before another page and the
 
 ## After and within
 
+You can use ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** and ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** the **[!UICONTROL Then]** operator to define additional [time constraints](#time-constraints) or [constraints for Events, Sessions or Dimensions](#event-session-and-dimension-constraints).
+
 ### Time constraints
 
+To apply time constraints to the **[!UICONTROL Then]** operator:
+
+  1. Select ![Clock](/help/assets/icons/Clock.svg).
+  1. Select **[!UICONTROL Within]** or **[!UICONTROL After]** from the context menu.
+  1. Specify a time period (**[!UICONTROL Minute]**, **[!UICONTROL Hour]**, up until **[!UICONTROL Years]**). 
+  1. Select the ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number*]** to open a popup that allows you to type in or specify a number using **[!UICONTROL -]** or **[!UICONTROL +]**.
+
+To remove a time constaint, use ![CrossSize75](/help/assets/icons/CrossSize75.svg).
+
+The table below explains in more detail the time constraint operators.
+
+|  Operators | Description |
+|--- |--- |
+| **[!UICONTROL After]** |The [!UICONTROL After] operator is used to specify a minimum limit on the amount of time between two checkpoints. When setting the After values, the time limit will begin when the filter is applied. For example, if the  After operator is set on a container to identify persons who visit page A but don't return to visit page B until after one day, then that day will start when the visitor leaves page A.  For the visitor to be included in the filter, a minimum of 1440 minutes (one day) must transpire after leaving page A to view page B. |
+| **[!UICONTROL Within]** | The  [!UICONTROL Within] operator is used to specify a maximum limit on the amount of time between two checkpoints. For example, if the [!UICONTROL Within] operator is set on a container to identify persons who visit page A and then return to visit page B within one day, then that day will begin when the person leaves page A. To be included in the filter, the person will have a maximum time of one day before opening page B. For the person to be included in the filter, opening page B must occur within a maximum of 1440 minutes (one day) after leaving page A to view page B.|
+| **[!UICONTROL After but Within]** | When using both the [!UICONTROL After] and [!UICONTROL Within] operators, both operators start and end in parallel, not sequentially. <br/>For example, you build a filter with the container set to: `After = 1 Week(s) and Within = 2 Week(s)`.<br/>The conditions to identify visitors in this filter are met only between one and two weeks. Both conditions are enforced from the time of the first page view. |
 
 
-### Event, Session and Dimension constraints {#constraints}
+#### Examples
+
+Some examples of using the time constraints.
+
+##### After operator 
+
+Identify persons that visited one page and then another page only after two weeks. For example, persons that visited the Home page, but the Women | Shoes page only after two weeks.
+
+![Sequence after](assets/sequence-after.png)
+
+If a page view for the Home happens on June 1 2024, at 00:01, then a page view to page Women | Shoes will match as long as that page view occurs after June 15 2024 00:01.
+
+##### Within operator
+
+Identify persons that visited one page and then another page within five minutes. For example, persons that visited the Home page and then the Women | Shoes page within 5 minutes.
+
+![Sequence within](assets/sequence-within.png)
+
+If a page view for the Home happens on June 1 2024, at 12:01, then a page view to page Women | Shoes will match as long as that page view occurs before June 15 2024 12:16.
+
+##### After but Within operator
+
+Identify persons that visited one page then visited another page after two weeks but within one month. For example, persons that visited the Home page and then after two weeks and within one month the Women | Shoes page.
+
+![Sequence after but within](assets/sequence-afterbutwithin.png)
+
+Any persons hitting the Home page on June 1, 2024 and who are returning to visit the Women | Shoes page after June 15, 2019 00:01, but before July 1, 2019 qualify for the segment.
+
+
+### Event, Session and Dimension constraints
 
 The ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** and ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** constraints allow you not only to specify a time constraint but also an event, session or dimension constraint. Select **[!UICONTROL Event(s)]**, **[!UICONTROL Session(s)]** or **[!UICONTROL Other dimensions]** ![ChevronRight](/help/assets/icons/ChevronRight.svg) **[!UICONTROL *Dimension name*]**. You can use the [!UICONTROL *Search*] field to search for a dimension.
 
@@ -315,97 +354,12 @@ After nesting the values within the [!UICONTROL Logic Group], click the **[!UICO
 
 ## Build time-within and time-after filters {#time_within_after}
 
-Use the [!UICONTROL Within] and [!UICONTROL After] operators built in to the header of each container to define the time, events, and count.
 
-![](assets/then_within_operators.png)
 
-You can limit matching to a specified duration of time by using the [!UICONTROL Within] and [!UICONTROL After] containers and specifying a granularity and count. The [!UICONTROL Within] operator is used to specify a max limit on the amount of time between two checkpoints. The [!UICONTROL After] operator is used to specify a minimum limit on the amount of time between two checkpoints.
+<!--
+An example of a complex sequential filter if you want to find the persons that 
 
->[!NOTE]
->
->There are differences in evaluation between similarly named elements like **Day(s)** or **Day**. For time-based definitions of Within and After, utilize the options listed first in the popup window:
->
->![image](https://git.corp.adobe.com/storage/user/5902/files/70a875e2-0ef9-4459-8648-77c60081d64d)
->
->For dimension-based definitions of Within and After, utilize the options under the sub-menu *Other Dimensions*:
->
->![image](https://git.corp.adobe.com/storage/user/5902/files/b808eeb0-5e3f-499b-8096-c7eb0d51c57a)
-
-### After and Within Operators {#after_within}
-
-The duration is specified by a single uppercase letter representing the granularity followed by a number representing the repetition count of the granularity.
-
-**[!UICONTROL Within]** includes the endpoint (less than or equal to).
-
-**[!UICONTROL After]** does not include the endpoint (greater than).
-
-| Operators | Description |
-|--- |--- |
-|AFTER|The  After operator is used to specify a minimum limit on the amount of time between two checkpoints.. When setting the After values, the time limit will begin when the filter is applied. For example, if the  After operator is set on a container to identify visitors who visit page A but don't return to visit page B until after one day, then that day will begin when the visitor leaves page A.  For the visitor to be included in the filter, a minimum of 1440 minutes (one day) must transpire after leaving page A to viewing page B.|
-|WITHIN|The  Within operator is used to specify a maximum limit on the amount of time between two checkpoints. For example, if the  Within operator is set on a container to identify visitors who visit page A and then returned to visit page B within one day, then that day will begin when the visitor leaves page A. To be included in the filter, the visitor will have a maximum time of one day before opening page B.   For the visitor to be included in the filter, the visit to page B must occur within a maximum of 1440 minutes (one day) after leaving page A to viewing page B.|
-|AFTER/WITHIN|When using both the  After and  Within operators, it's important to understand that both operators will begin and end in parallel, not sequentially.   For example, if you build a filter with the container set to:<br>`After = 1 Week(s) and Within = 2 Week(s)`<br>Then the conditions to identify visitors in the filter are met only between 1 and 2 weeks. Both conditions are enforced from the time of the first page hit.|
-
-### Use the After operator {#after}
-
-* Time After lets you track by year, month, day, hour, and minute to match visits.
-* Time After can only be applied to a [!UICONTROL Hit] container because it is the only level for which such fine granularity is defined.
-
-**Example**: Visitors that visited page A then visited page B only after 2 weeks.****
-
-![](assets/time_between_after_operator.png)
-
-**Create the Segment**: This filter is created by adding a [!UICONTROL Visitor] container with two [!UICONTROL Hit] containers. You can then set the [!UICONTROL THEN] operator, and open the [!UICONTROL AFTER] operator drop down and set the number of weeks.
-
-![](assets/after_operator.png)
-
-**Matches**
-
-When given "After 2 weeks", if a hit to page A happens on June 1 2019, at 00:01, then a following hit to page B will match as long as it comes before June 15 2019 00:01 (14 days later).
-
-| Hit A | Hit B | Matching |
-|--- |--- |--- |
-|**A** hit: June 1, 2019 00:01|**B** hit: Jun 15, 2019 00:01|**Matches:** This time constraint matches because it is After June 1, 2019 (two weeks).|
-|**A** hit: June 1, 2019 00:01|**B** hit: June 8, 2019 00:01 B hit: June 15, 2019 00:01|**Does not match:** The first hit on page B does not match because it conflicts with the constraint requiring it after two weeks.|
-
-### Use the Within operator {#within}
-
-* [!UICONTROL Within] lets you track by year, month, day, hour, and minute to match visits.
-* [!UICONTROL Within] can only be applied to a [!UICONTROL Hit] container because it is the only level for which such fine granularity is defined.
-
->[!TIP]
->
->In a "within" clause, in between THEN statements, you can add, for example, "within 1 search keyword instance", "within 1 eVar 47 instance". This constrains the filter to within one instance of a dimension.
-
-**Example**: Visitors who visited page A then visited page B within 5 minutes.
-
-![](assets/time_between_within_operator.png)
-
-**Create the filter**: This filter is created by adding a [!UICONTROL Visitor] container, then dragging with two [!UICONTROL Hit] containers. You can then set the [!UICONTROL THEN] operator, and open the [!UICONTROL AFTER] operator drop down and set the interval: hits, page views, visits, minutes, hours, days, weeks, months, quarters, or years.
-
-![](assets/within_operator.png)
-
-**Matches**
-
-Matches must occur within the time limit. For the expression , if a visitor hits page A happens at 00:01, then a following hit to page B will match as long as it comes on or before 00:06 (five minutes later, including the same minute). Hits within the same minute will also match.
-
-### The Within and After operators {#within_after}
-
-Use [!UICONTROL Within] and [!UICONTROL After] to provide a maximum and minimum endpoint at both ends of a filter.
-
-**Example**: Visitors that visited page A then visited page B after 2 weeks but within 1 month.
-
-![](assets/time_between_using_both_operators.png)
-
-**Create the Segment**: Create the filter by sequencing two [!UICONTROL Hit] containers within a [!UICONTROL Visitor] container. Then set the [!UICONTROL After] and [!UICONTROL Within] operators.
-
-![](assets/within_after_together.png)
-
-**Matches**
-
-Any visitors hitting page A on June 1, 2019 are returning after June 15, 2019 00:01, but *before* July 1, 2019 are included in the filter. Compare with the section on Time Between Exclusions.
-
-The [!UICONTROL After] and [!UICONTROL Within] operators can be used together to define a sequential filter.
-
-![](assets/time_between_within_after.png)
-
-This example depicts a second visit to hit page B after two weeks but within a month.
+| Session One | Session Two | Session Three |
+| --- | --- | --- |
+| The person went to the main landing page A, excluded the campaign page B, and then viewed the Product page C.| The person again went to the main landing page A, excluded the campaign page B, and went again to the Product page C, and then to a new page D. | The person entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product on page G. |
+-->
