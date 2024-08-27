@@ -169,6 +169,56 @@ You can add the top 3 nodes that come between 2 existing nodes:
 
    The top 3 nodes are added between the 2 existing nodes, and each are connected as a separate branch. 
 
+### Rearrange nodes
+
+Journeys in Journey canvas consist of a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. 
+
+You can drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. 
+
+### Combine nodes
+
+The logic that is applied to nodes when they are combined differs depending on the component types you are combining, as follows:
+
+* When you combine multiple dimension items or metrics, they are joined with OR.
+
+* When you combine multiple filters, they are joined with AND.
+
+* When you combine a date range with another component type, they are joined with AND.
+
+* When you combine a filter with another component type, they are joined with AND.
+
+You can do any of the following to combine nodes in Journey canvas:
+
+* From the left rail, drag a single component onto a node on the canvas.
+
+* From the left rail, drag multiple components simultaneously onto a node on the canvas.
+
+* From the left rail, drag multiple components simultaneously onto a blank area of the canvas while holding the Shift key.
+
+* On the canvas, select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**.<!--Is there a limit on how many you can combine? -->
+
+### Connect nodes
+
+You can connect nodes that are already on the canvas, or you can connect a node when adding it to the canvas.
+
+#### Connect existing nodes
+
+The arrow between nodes in Journey canvas determines the sequence of events in the journey. 
+
+To connect nodes in Journey canvas:
+
+1. On the canvas, hover over the node that comes first in the journey sequence that you want to connect to another node. 
+
+   4 blue dots appear on each side of the selected node.
+
+1. Drag any of the 4 blue dots to any of the 4 sides of the node that you want to connect to.
+
+   An arrow appears, connecting the 2 nodes. The arrow indicates the direction that people move through the journey. 
+
+#### Connect nodes when adding a node
+
+When adding a node to the canvas, you can place it between two connected nodes. The node is added to the journey's flow between the 2 existing nodes. For more information, see [Add a node](#add-a-node).
+
 ### Change the color of a node or arrow
 
 You can change the color of a node or arrow on the canvas.
@@ -289,55 +339,6 @@ To duplicate nodes:
 
 1. Right-click one of the selected nodes, then select [!UICONTROL **Duplicate**].
 
-### Rearrange nodes
-
-Journeys in Journey canvas consist of a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. 
-
-You can drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. 
-
-### Combine nodes
-
-The logic that is applied to nodes when they are combined differs depending on the component types you are combining, as follows:
-
-* When you combine multiple dimension items or metrics, they are joined with OR.
-
-* When you combine multiple filters, they are joined with AND.
-
-* When you combine a date range with another component type, they are joined with AND.
-
-* When you combine a filter with another component type, they are joined with AND.
-
-You can do any of the following to combine nodes in Journey canvas:
-
-* From the left rail, drag a single component onto a node on the canvas.
-
-* From the left rail, drag multiple components simultaneously onto a node on the canvas.
-
-* From the left rail, drag multiple components simultaneously onto a blank area of the canvas while holding the Shift key.
-
-* On the canvas, select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**.<!--Is there a limit on how many you can combine? -->
-
-### Connect nodes
-
-You can connect nodes that are already on the canvas, or you can connect a node when adding it to the canvas.
-
-#### Connect existing nodes
-
-The arrow between nodes in Journey canvas determines the sequence of events in the journey. 
-
-To connect nodes in Journey canvas:
-
-1. On the canvas, hover over the node that comes first in the journey sequence that you want to connect to another node. 
-
-   4 blue dots appear on each side of the selected node.
-
-1. Drag any of the 4 blue dots to any of the 4 sides of the node that you want to connect to.
-
-   An arrow appears, connecting the 2 nodes. The arrow indicates the direction that people move through the journey. 
-
-#### Connect nodes when adding a node
-
-When adding a node to the canvas, you can place it between two connected nodes. The node is added to the journey's flow between the 2 existing nodes. For more information, see [Add a node](#add-a-node).
 
 ### Add a time constraint between nodes
 
@@ -381,17 +382,17 @@ To create a filter:
 
 You can delete one or more nodes at a time within a journey. When you delete a node that is connected between 2 nodes within the journey, the 2 remaining nodes become directly connected.
 
-To delete objects in Journey canvas:
+To delete nodes in Journey canvas:
 
 1. Select one or more nodes that you want to delete, then right-click one of the selected nodes.
 
 1. Select [!UICONTROL **Delete**].
 
-### Delete arrows
+### Delete arrows between nodes
 
-You can delete one or more arrows at a time within a journey. 
+You can delete one or more arrows at a time within a journey. When you delete an arrow between 2 nodes, the nodes are no longer connected. If the arrow was part of a longer path, the path is disconnected.
 
-To delete arrows in Journey canvas:
+To delete arrows between nodes in Journey canvas:
 
 1. Select one or more arrows between 2 nodes that you want to delete, then right-click one of the selected arrows.
 

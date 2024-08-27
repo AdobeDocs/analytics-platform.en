@@ -137,6 +137,9 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Flow overview](../analysis-workspace/visualizations/c-flow/flow.md)
       + [Configure a flow visualization](../analysis-workspace/visualizations/c-flow/create-flow.md)
       + [Inter-dimensional flows](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
+    + Journey canvas {#journey-canvas}
+      + [Journey canvas overview](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
+      + [Configure a Journey canvas visualization](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
     + [Area and area stacked](../analysis-workspace/visualizations/area.md)
     + [Bar and bar stacked](../analysis-workspace/visualizations/bar.md)
     + [Bullet graph](../analysis-workspace/visualizations/bullet-graph.md)
