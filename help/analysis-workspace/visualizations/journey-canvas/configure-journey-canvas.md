@@ -72,7 +72,7 @@ You need to [begin building a Journey canvas visualization](#begin-building-a-jo
    | [!UICONTROL **Node type**] | Allows you to configure which node types are shown in the visualization. To hide a node type from the visualization, select the (x) next to the node type, or deselect it from the drop-down menu. To show a hidden node type, select it from the drop-down menu. <p>Depending on the contents of your visualization, possible node types include:</p><ul><li>[!UICONTROL **Read segment**]</li><li>[!UICONTROL **End**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Metric**]</li></ul><p>**Note**: Consider the following when using this field:</p><ul><li>This option displays only when Journey Optimizer data is detected in the data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).</li><li>After you modify a Journey Optimizer journey in Journey Canvas, this option is no longer available. For more information, see [Visual differences after modifying a journey in Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p>   | 
    | [!UICONTROL **Percentage value**] | Choose from the following options: <ul><li>[!UICONTROL **Percent of total**]: The percent of all of the people included in the data view within the panel's date range.</li><li>[!UICONTROL **Percent of start node**]: The percent of all the people included in the start node.<p>This option is available only if you have a single start node. It is hidden if you have multiple start nodes.</p></li></ul> | 
    | [!UICONTROL **Arrow settings**] | Choose from the following options:<ul><li>[!UICONTROL **None**]: </li><li>[!UICONTROL **Condition**]: </li><li>[!UICONTROL **All labels**]: </li></ul><p>**Note**: This option displays only when Journey Optimizer data is detected in the data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).</p>  |
-   | [!UICONTROL **Show fallout**] | Add fallout data for each node, showing the number and percentage of people who left the journey at a given node. |
+   | [!UICONTROL **Show fallout**] | Display fallout data for each node, showing the number and percentage of people who left the journey at a given node. |
 
 1. Continue with [Add a node](#add-a-node).
 
@@ -361,24 +361,9 @@ To add a time constraint:
 
 You can create a new filter based on a node or arrow within a journey. After the filter is created, you can use it anywhere in Analysis Workspace. 
 
-Filters created from Journey canvas use [sequential filtering](/help/components/filters/seg-sequential-build.md). This means that the filter uses the THEN operator to link together the sequence of events (i.e., the journey) that people flowed through, leading up to the selected node. All events that match the node you select are included in the filter.
+Filters created from Journey canvas use [sequential filtering](/help/components/filters/seg-sequential-build.md). This means that the filter uses the THEN operator to link together the sequence of events (i.e., the journey) that people flowed through, leading up to the selected node or arrow. All events that match the selected node or arrow are included in the filter.
 
-If you create a filter based on a node, the filter includes all events that match the selected node.
-
-If you create a filter based on an arrow between nodes, 
-
-<!-- 
-
-
-When you create a filter based on a node or arrow in Journey canvas, the filter uses [sequential filters](/help/components/filters/seg-sequential-build.md). The definition of the filter differs depending on whether you create the filter based on a node or arrow:
-
-* **Node:** When you create a filter based on a node, the filter includes events that match the node, all preceding nodes or arrows on the branch, joined with the THEN operator.
-
-* **Arrow:** 
-
-This means that when you select a node or arrow from which you want to create a filter, the filter includes all events that match the selected node . The preceding nodes and arrows where either people or sessions (based on your container settings) have flowed through all preceding nodes or arrows on the branch, joined with the THEN operator. 
-
--->
+If you create a filter based on a node that has multiple paths flowing into it, all paths are included in the filter. Separate paths are joined with the OR operator.
 
 To create a filter:
 
