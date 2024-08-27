@@ -251,6 +251,7 @@ The conditions within the Logic Group itself may be met in any order. By contras
 For example, you can't nest a [!UICONTROL Person] container within a [!UICONTROL Person] sequential container. But instead, you can nest a [!UICONTROL Logic Group] container within a [!UICONTROL Person] container that contains specific [!UICONTROL Session]-level and [!UICONTROL Event]-level conditions.
 
 See 
+
 |Container Hierarchy|Illustration|Definition|
 |---|---|---|
 |  Standard Container Hierarchy| ![](assets/nesting_container.png) |Within the [!UICONTROL Visitor] container, the [!UICONTROL Visit] and [!UICONTROL Hit] containers are nested in sequence to extract filters based on hits, the number of visits, and the visitor.  |
