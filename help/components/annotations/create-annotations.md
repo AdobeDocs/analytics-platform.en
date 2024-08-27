@@ -32,21 +32,20 @@ To define the annotation, you use the [[!UICONTROL Annotation builder]](#annotat
 
 The **[!UICONTROL Annotations builder]** dialog is used to create new or edit existing annotations. The dialog is titled **[!UICONTROL New annotation]** or **[!UICONTROL Edit annotation]** for annotations that you create or manage from the [[!UICONTROL Annotations] manager](/help/components/annotations/manage-annotations.md).
 
+
+>[!BEGINTABS]
+
+>[!TAB Annotation builder] 
+
+![Annotation details window showing fields and options described in the next section.](assets/annotation-builder.png)
+
+>[!TAB Create / Edit annotation] 
+
+![Annotation details window showing fields and options described in the next section.](assets/create-edit-annotation.png)
+
+>[!ENDTABS]
+
 1. Specify the following details (![Required](/help/assets/icons/Required.svg) is required):
-
-   >[!BEGINTABS]
-   
-   >[!TAB Annotation builder] 
-   
-   ![Annotation details window showing fields and options described in the next section.](assets/annotation-builder.png)
-
-   >[!TAB Create / Edit annotation] 
-   
-   ![Annotation details window showing fields and options described in the next section.](assets/create-edit-annotation.png)
-   
-   >[!ENDTABS]
-
-   
 
    | Element | Description |
    | --- | --- |
