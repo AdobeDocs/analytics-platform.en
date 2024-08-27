@@ -84,7 +84,7 @@ To add a node to a Journey canvas visualization:
 
 1. In Analysis Workspace, open an existing Journey canvas visualization, or [begin building a new one](#begin-building-a-journey-canvas-visualization).
 
-1. Drag a metric, dimension, or dimension item from the left rail onto the canvas. Calculated metrics and any metrics that include segmentation are not supported.
+1. Drag metrics, dimensions, dimension items, filters, or date ranges from the left rail onto the canvas. Calculated metrics are not supported. Additionally, any metrics or dimensions that are based on a [summary dataset](/help/data-views/summary-data.md) are not supported.
      
    You can select multiple components by holding Shift, or by holding Command (on Mac) or Ctrl (on Windows).
 
@@ -93,17 +93,23 @@ To add a node to a Journey canvas visualization:
    |  Component type | Placement of component | Visualization updates after node is added | 
    |---------|----------|----------|
    | Metric | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. | 
-   | Metric | An existing node | Components automatically combine to form a new node. (See [Combine nodes](#combine-nodes) for more information.)</p> |
+   | Metric | An existing node | Component automatically combined with existing node. (See [Combine nodes](#combine-nodes) for more information.)</p> |
    | Metric | An arrow between 2 existing nodes | The node displays between the two existing nodes where it was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p> |
    | Dimension | Blank area of the canvas | 3 nodes are created for the top 3 dimension items. The nodes display where the component was dropped, unconnected with any existing nodes. (**Note:** If only 1 or 2 nodes display, it means that data is available for only 1 or 2 of the dimension items. If no nodes display, it means that data is not available for any of the dimension items. In this case, try adding it to a different point of the journey, adjust the visualization's date range, or choose a different dimension.)<p>Hold the Shift key when you drop the dimension onto the canvas to add it as a single node with 3 dimension items.</p><p></p> |
    | Dimension | An existing node | A breakdown is automatically applied to the node with the top 5 dimension items displayed.<!--what happens if you hold Shift?--> |
-   | Dimension | An arrow that connects 2 existing nodes | 3 nodes are created for the top 3 dimension items. The nodes display between the two existing nodes where they were dropped and each  node is connected to both existing nodes. (**Note:** If only 1 or 2 nodes display, it means that data is available for only 1 or 2 of the dimension items. If no nodes display, it means that data is not available for any of the dimension items. In this case, try adding it to a different point of the journey, adjust the visualization's date range, or choose a different dimension.)<p>Hold the Shift key when you drop the dimension onto the canvas to add it as a single node with 3 dimension items. (See [Connect nodes](#connect-nodes) for more information.)</p> |
-   | Dimension item | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. (**Note:** If a node doesn't display, it means that data is not available for the dimension item. In this case, try adding it to a different point of the journey, adjust the visualization's date range, or choose a different dimension item.) |
-   | Dimension item | An existing node | A breakdown is automatically applied to the node.<!--what happens if you hold Shift?--> |
-   | Dimension item | An arrow that connects 2 existing nodes | The node displays between the two existing nodes where it was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.) (**Note:** If a node doesn't display, it means that data is not available for the dimension item. In this case, try adding it to a different point of the journey, adjust the visualization's date range, or choose a different dimension item.)</p> |
-   | Multiple components | A blank area of the canvas | **If none of the components are dimensions:**<p>Each component displays as a separate node where the components were dropped, unconnected with any existing nodes.</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. (Components must be of the same type to be combined into a single node.)</p><p>**If any of the components you are adding are dimensions:**</p><p>Each component displays as a separate node where the components were dropped, unconnected with any existing nodes.</p><p>Only one dimension can be added at a time, and 3 nodes are created for the dimension's top 3 items.</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. (Components must be of the same type to be combined into a single node.) The top 3 dimension items are combined with each node. (See [Combine nodes](#combine-nodes) for more information.)</p> |
+   | Dimension | An arrow that connects 2 existing nodes | 3 nodes are created for the top 3 dimension items that follow the first event after the first node (of people/sessions who eventually reach the second node). The nodes display between the two existing nodes where they were dropped and each node is connected to both existing nodes. (**Note:** If only 1 or 2 nodes display, it means that data is available for only 1 or 2 of the dimension items. If no nodes display, it means that data is not available for any of the dimension items. In this case, try adding it to a different point of the journey, adjust the visualization's date range, or choose a different dimension.)<p>Hold the Shift key when you drop the dimension onto the canvas to add it as a single node with 3 dimension items. (See [Connect nodes](#connect-nodes) for more information.)</p> |
+   | Dimension item | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. |
+   | Dimension item | An existing node | Component automatically combined with existing node. |
+   | Dimension item | An arrow that connects 2 existing nodes | The node displays between the two existing nodes where it was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p> |
+   | Filter | Blank area of the canvas  | The node displays where the component was dropped unconnected with any other nodes.<p>The number and percentage that appears on the node includes all events, filtered by the filter you selected.</p> <p>For example, if People is selected as the primary metric for the journey, then adding a filter of Today to a blank area of the canvas would show all of the people who had an event today.</p> |
+   | Filter | An existing node | Applies the filter to the existing node. |
+   | Filter | An arrow that connects 2 nodes |  |
+   | Date range | Blank area of the canvas | The node displays where the component was dropped unconnected with any other nodes.<p>The number and percentage that appears on the node includes all events, filtered by the date range you selected.</p> <p>For example, if People is selected as the primary metric for the journey, then adding a date range of This month to a blank area of the canvas would show all of the people who had an event during the current month.</p> |
+   | Date range | An existing node | Applies the date range to the existing node. |
+   | Date range | An arrow that connects 2 nodes |  |
+   | Multiple components | A blank area of the canvas | **If none of the components are dimensions:**<p>Each component displays as a separate node where the components were dropped, unconnected with any existing nodes.</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. </p><p>**If any of the components you are adding are dimensions:**</p><p>Each component displays as a separate node where the components were dropped, unconnected with any existing nodes.</p><p>Only one dimension can be added at a time, and 3 nodes are created for the dimension's top 3 items.</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. The top 3 dimension items are combined with each node. (See [Combine nodes](#combine-nodes) for more information.)</p> |
    | Multiple components | An existing node | All components are combined with the existing node.<p>If any of the components you are adding are dimensions, then the top 3 dimension items are combined with the node.</p> |
-   | Multiple components | An arrow that connects 2 existing nodes | **If none of the components are dimensions:**<p>Each component displays as a separate node where the components were dropped and each node is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. (Components must be of the same type to be combined into a single node.) (See [Combine nodes](#combine-nodes) for more information.)</p><p>**If any of the components you are adding are dimensions:**</p><p>Each component displays as a separate node where the components were dropped and each node is connected to both existing nodes.</p><p>Only one dimension can be added at a time, and 3 nodes are created for the dimension's top 3 items. Each node is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. (Components must be of the same type to be combined into a single node.) The top 3 dimension items are combined with each node, and each node is connected to both existing nodes. (See [Combine nodes](#combine-nodes) for more information.)</p>|
+   | Multiple components | An arrow that connects 2 existing nodes | **If none of the components are dimensions:**<p>Each component displays as a separate node where the components were dropped and each node is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. (Components must be of the same type to be combined into a single node.) (See [Combine nodes](#combine-nodes) for more information.)</p><p>**If any of the components you are adding are dimensions:**</p><p>Each component displays as a separate node where the components were dropped and each node is connected to both existing nodes.</p><p>Only one dimension can be added at a time, and 3 nodes are created for the dimension's top 3 items that follow the first event after the first node (of people/sessions who eventually reach the second node). Each node is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. The top 3 dimension items are combined with each node, and each node is connected to both existing nodes. (See [Combine nodes](#combine-nodes) for more information.)</p>|
 
    Nodes display as a rectangular box with the following information:
 
@@ -297,6 +303,10 @@ The logic that is applied to nodes when they are combined differs depending on t
 
 * When you combine multiple filters, they are joined with AND.
 
+* When you combine a date range with another component type, they are joined with AND.
+
+* When you combine a filter with another component type, they are joined with AND.
+
 You can do any of the following to combine nodes in Journey canvas:
 
 * From the left rail, drag a single component onto a node on the canvas.
@@ -351,7 +361,20 @@ To add a time constraint:
 
 You can create a new filter based on a node or arrow within a journey. After the filter is created, you can use it anywhere in Analysis Workspace. 
 
-When you create a filter based on a node or arrow in Journey canvas, the filter uses [sequential filters](/help/components/filters/seg-sequential-build.md). This means that when you select a node or arrow from which you want to create a filter, the filter includes all preceding nodes or arrows on the branch, joined with the THEN operator. 
+Filters created from Journey canvas use [sequential filtering](/help/components/filters/seg-sequential-build.md). This means that the filter includes all events leading up to the node you select, joined with the THEN operator.  if you create a filter based on a Journey canvas node, the filter includes events that match only that node, where people/sessions have flowed through the preceding nodes and arrows.
+
+<!-- 
+
+
+When you create a filter based on a node or arrow in Journey canvas, the filter uses [sequential filters](/help/components/filters/seg-sequential-build.md). The definition of the filter differs depending on whether you create the filter based on a node or arrow:
+
+* **Node:** When you create a filter based on a node, the filter includes events that match the node, all preceding nodes or arrows on the branch, joined with the THEN operator.
+
+* **Arrow:** 
+
+This means that when you select a node or arrow from which you want to create a filter, the filter includes all events that match the selected node . The preceding nodes and arrows where either people or sessions (based on your container settings) have flowed through all preceding nodes or arrows on the branch, joined with the THEN operator. 
+
+-->
 
 To create a filter:
 
