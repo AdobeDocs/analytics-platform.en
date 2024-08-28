@@ -20,7 +20,7 @@ Example use cases are:
 
 - Define a derived Marketing Channel field that determines the proper marketing channel based on one or more conditions (for example URL parameter, page URL, page name).
 
-## Derived field interface
+## Derived field interface {#interface}
 
 When you create or edit a derived field, you use the derived field interface.
 
@@ -36,7 +36,7 @@ When you create or edit a derived field, you use the derived field interface.
 
 {style="table-layout:auto"}
 
-## Field template wizard
+## Field template wizard {#wizard}
 
 When you access the derived field interface for the first time, the [!UICONTROL Start with a field template] wizard is shown. 
 
@@ -45,7 +45,7 @@ When you access the derived field interface for the first time, the [!UICONTROL 
 
 Your derived field dialog is populated with rules (and functions) required or useful for the type of field that you selected. See [Function templates](#function-templates) for more information on the available templates.
 
-## Rule interface
+## Rule interface {#rules}
 
 When you define a rule in the rule builder, you use the rule interface.
 
@@ -60,7 +60,7 @@ When you define a rule in the rule builder, you use the rule interface.
 
 {style="table-layout:auto"}
 
-## Create a derived field
+## Create a derived field {#create}
 
 1. Select an existing Data view or create a Data view. See [Data views](../data-views.md) for more information.
 
@@ -75,7 +75,7 @@ When you define a rule in the rule builder, you use the rule interface.
 5. Your new derived field is added to the [!UICONTROL Derived fields >] container, as part of **[!UICONTROL **Schema fields**]** in the left rail of your Data view.
 
 
-## Edit a derived field
+## Edit a derived field {#edit}
 
 1. Select an existing Data view. See [Data views](../data-views.md) for more information.
 
@@ -111,7 +111,7 @@ Alternatively, if you have used a derived field as a component for dimensions or
 
 
 
-## Delete a derived field
+## Delete a derived field {#delete}
 
 1. Select an existing Data view. See [Data views](../data-views.md) for more information.
 
@@ -147,12 +147,12 @@ Alternatively, if you have used a derived field as a component for dimensions or
 
 
 
-## Function templates
+## Function templates {#templates}
 
 To quickly create a derived field for specific use cases, function templates are available. These function templates can be accessed from the selector area in the derived field interface or are presented upon first use in the [!UICONTROL Start with a field template] wizard.
 
 
-### Marketing channels
+### Marketing channels {#mchannel}
 
 This function template uses a collection of rules to build marketing channels.
 
@@ -164,7 +164,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
-### Bounces
+### Bounces {#bounces}
 
 This function template uses a collection of rules to identify site bounces.
 
@@ -176,7 +176,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
-### Multi-Dimension Combine
+### Multi-Dimension Combine {#multi-dim}
 
 This function template combines two values into one.
 
@@ -188,7 +188,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
-### Friendly Dataset Name
+### Friendly Dataset Name {#friendlyname}
 
 This function template provides a readable dataset name.
 
@@ -200,7 +200,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
-### Page Name from URL
+### Page Name from URL {#pagename}
 
 This function template creates a simple page name.
 
@@ -212,7 +212,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
-### Holiday Season
+### Holiday Season {#holiday}
 
 This function template classifies key times of the year.
 
@@ -224,7 +224,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
-### Monthly Goals
+### Monthly Goals {#goals}
 
 This function template sets custom monthly goals.
 
@@ -236,7 +236,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
-### Get All Values in Delimited List
+### Get All Values in Delimited List {#allvalues}
 
 This function template converts a limited list to an array.
 
@@ -248,7 +248,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
-### Get First Value in Delimited List
+### Get First Value in Delimited List {#firstvalue}
 
 This function template gets the first value in a delimited list.
 
@@ -260,7 +260,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
-### Get Last Value in Delimited List
+### Get Last Value in Delimited List {#lastvalue}
 
 This function template gets the last value in a delimited list.
 
@@ -272,7 +272,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
-### Domain Name
+### Domain Name {#domain}
 
 This function template extracts the domain name using a regular expression.
 
@@ -284,7 +284,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
-### Get Query String Parameter
+### Get Query String Parameter {#querystring}
 
 This function template extracts query string values.
 
@@ -296,7 +296,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
-### Transition Field
+### Transition Field {#transition}
 
 This function template transitions reporting from one field to another field.
 
@@ -308,7 +308,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
-### Simple Bot Detection
+### Simple Bot Detection {#botdetection}
 
 This function template implements light bot identification.
 
@@ -320,7 +320,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
-### Exit Link
+### Exit Link {#exit}
 
 This function template identifies last link clicked in a session.
 
@@ -332,7 +332,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
-### Download Link
+### Download Link {#download}
 
 This function template flags common download links.
 
@@ -355,7 +355,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 -->
 
-## Function reference
+## Function reference {#functionref}
 
 {{select-package}}
 
@@ -378,7 +378,7 @@ For each supported function, find details below on:
 
 <!-- CASE WHEN -->
 
-### Case When
+### Case When {#casewhen}
 
 Applies conditionals, based on defined criteria from one or more fields. These criteria are then used to define the values in a new derived field, based on the sequence of the conditions.
 
@@ -608,7 +608,7 @@ The following constraints apply and are enforced when *selecting* and *setting* 
 
 <!-- CLASSIFY -->
 
-### Classify
+### Classify {#classify}
 
 Defines a set of values that are replaced by corresponding values in a new derived field.
 
@@ -743,7 +743,7 @@ The following additional functionality is available in the Classify rule interfa
 
 <!-- CONCATENATE -->
 
-### Concatenate
+### Concatenate {#concatenate}
 
 Combines field values into a single new derived field with defined delimiters.
 
@@ -820,7 +820,7 @@ You define an `Origin - Destination` derived field. You use the [!UICONTROL CONC
 +++
 
 
-### Deduplicate
+### Deduplicate {#dedup}
 
 Prevents counting a value multiple times.
 
@@ -905,7 +905,7 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 
 <!-- FIND AND REPLACE -->
 
-### Find and Replace
+### Find and Replace {#find-replace}
 
 Finds all values in a selected field and replaces those values with a different value in a new derived field.
 
@@ -975,7 +975,7 @@ You define an `Email Marketing (updated)` derived field. You use the [!UICONTROL
 
 <!-- LOOKUP -->
 
-### Lookup
+### Lookup {#lookup}
 
 Lookup values using a field from a lookup dataset and returns a value in a new derived field or for further rule processing.
 
@@ -1026,7 +1026,7 @@ You can quickly insert a [!UICONTROL Lookup] function in the rule builder, alrea
 
 <!-- LOWERCASE -->
 
-### Lowercase
+### Lowercase {#lowercase}
 
 Converts values from a field to lowercase and stores it into a new derived field.
 
@@ -1077,7 +1077,7 @@ You define a `Product Names` derived field. You use the [!UICONTROL LOWERCASE] f
 
 <!-- MATH -->
 
-### Math
+### Math {#math}
 
 Use basic mathematical operators (add, subtract, multiply, divide & raise to a power) on numeric fields.
 
@@ -1158,7 +1158,7 @@ Use the Math function for hit-level based calculations. Use the [Summarize](#sum
 
 <!-- MERGE FIELDS -->
 
-### Merge Fields
+### Merge Fields {#merge}
 
 Merges values from two different fields into a new derived field.
 
@@ -1224,7 +1224,7 @@ You must select the same type of fields within a Merge Fields rule. For example,
 
 <!-- NEXT OR PREVIOUS -->
 
-### Next or Previous
+### Next or Previous {#next-previous}
 
 Takes a field as input and resolves the next or previous value for that field within the scope of the session or use. This will only apply to the Visit and Event table fields.
 
@@ -1296,7 +1296,7 @@ You can only select fields that belong to the Visit or Event table.
 
 <!-- REGEX REPLACE -->
 
-### Regex Replace
+### Regex Replace {#regex-replace}
 
 Replaces a value from a field using a regular expression into a new derived field.
 
@@ -1393,7 +1393,7 @@ You can use these sequences in the [!UICONTROL Output format] any number of time
 
 <!-- SPLIT -->
 
-### Split
+### Split {#split}
 
 Splits a value from a field into a new derived field.
 
@@ -1485,7 +1485,7 @@ You create a `Second Response` derived field to take the last value  from the [!
 
 <!-- SUMMARIZE -->
 
-### Summarize
+### Summarize {#summarize}
 
 Applies aggregation-type functions to metrics or dimensions at event, session, and user levels.
 
