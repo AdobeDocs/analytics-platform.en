@@ -28,11 +28,11 @@ See [Create filters](/help/components/filters/create-filters.md) for the various
 
 You can create three types of filters:
 
-### Quick filter
+### Quick filters
 
 Quick filters allow you to easily explore data within a given Workspace project, without the need of creating a filter in the [Filter Builder](/help/components/filters/create-filters.md). You define your filter within the Workspace interface directly. See [Quick filters](quick-filters.md) for more information
 
-### Regular filter
+### Regular filters
 
 Regular filters let you identify data (persons, sessions, events) based on one or more conditions. In case of more than one conditions, you use logical operators like And and Or to further define the filter. You can use containers to group conditons and build more complex filters. See [Filter builder](filter-builder.md) for more information.
 
@@ -173,12 +173,8 @@ Traditional Analytics comes with numerous out-of-the-box templates and calculate
 >[!MORELIKETHIS]
 >
 >[Create filters](create-filters.md)
->[Quick filters](quick-filters.md)
 >[Filter builder](filter-builder.md)
+>[Quick filters](quick-filters.md)
 >[Sequential filters](seg-sequential-build.md)
 >[Manage filters](manage-filters.md)
 >
-
-
-
-

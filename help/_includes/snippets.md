@@ -89,4 +89,14 @@ Available time comparison options include the previous period, 13 weeks prior, 5
 
 ## Video demonstration Adobe Analytics {#videoaa}
 
-This video demonstrates the functionality using Adobe Analytics. However, the functionality is similarly available in Customer Journey Analytics.
+This video demonstrates the functionality using Adobe Analytics. However, the functionality is similarly available in Customer Journey Analytics. Be aware of the following differences in terminlogy.
+
+| Adobe Analytics | Customer Journey Analytics |
+|---|---|
+| Segments | Filters |
+| Visitor | Person |
+| Visit | Session |
+| Hit | Event |
+
+{style="table-layout:fixed"}
+

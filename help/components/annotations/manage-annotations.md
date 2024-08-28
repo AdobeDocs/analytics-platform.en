@@ -40,7 +40,7 @@ The annotations list ➊ displays all the annotations that you own, the annotati
 
 {style="table-layout:auto"}
 
-Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to specify which column you want to display.
+Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to specify which columns you want to display.
 
 ### Action bar
 
@@ -48,7 +48,7 @@ You can action on annotations using the action bar ➋. The action bar contains 
 
 | Action | Description |
 |---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another annotation, using the Annotation builder. |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another annotation, using the [Annotation builder](create-annotations.md#annotation-builder). |
 | ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search by title*] | When no annotation is selected in the list, search for annotations using this search field. |
 | ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tag the selected annotations. In the **[!UICONTROL Tag Component]** dialog, select or de-select the tags for the selected annotations. Select **[!UICONTROL Save]** to save the tags for the selected annotations. |
 | ![Share](/help/assets/icons/Share.svg) **[!UICONTROL Share]** | Share the selected annotations. In the **[!UICONTROL Share Component]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected annotations. See [Share annotations](#share-annotations) for more details. |
@@ -65,15 +65,15 @@ The filter bar ➌ shows the active filters (if any). You can quickly remove a f
 
 You can filter annotations using the ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** left panel ➍. The filter panel displays the type of filter and the number of annotations that honor the filter. Select ![Filter](/help/assets/icons/Filter.svg) to toggle the display of the filter panel. 
 
-You can filter on:
+You can filter the list of annotations on:
 
 | Filter | Description |
 |---|---|
 | **[!UICONTROL Tags]** | Unfold to see all tags defined and filter on individual tags. You can use ![Search](/help/assets/icons/Search.svg) *Search Tags* to search for tags. |
 | **[!UICONTROL Data view]** | Unfold to see the individual data views you can filter on. You can use ![Search](/help/assets/icons/Search.svg) *Search Data views* to search for data views. |
-| **[!UICONTROL Owners]** | Unfold to see the individual owners you can filter on. ou can use ![Search](/help/assets/icons/Search.svg) *Search Owners* to search for owners. |
+| **[!UICONTROL Owners]** | Unfold to see the individual owners you can filter on. You can use ![Search](/help/assets/icons/Search.svg) *Search Owners* to search for owners. |
 | **[!UICONTROL Applied date range]** | You can filter on the applied date range. Select the data range to display a calendar popup to specify the data range, or simply type the date range. |
-| **[!UICONTROL Other filters]** | You can filter on other filters like Show all, Mine, Favorites, Approved and Shared with me. |
+| **[!UICONTROL Other filters]** | You can filter on other filters like Show all, Mine, and Shared with me. |
 
 
 ## Edit annotations

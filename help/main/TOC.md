@@ -247,15 +247,17 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Filters {#cja-filters}
     + [Filters overview](../components/filters/filters-overview.md)
     + [Create filters](../components/filters/create-filters.md)
-    + [Create sequential filters](../components/filters/seg-sequential-build.md)
+    + [Filter builder](../components/filters/filter-builder.md)
+    + [Quick filters](../components/filters/quick-filters.md)
+    + [Sequential filters](../components/filters/seg-sequential-build.md)
     + [Share filters](../components/filters/filters-share.md)
     + [Tag filters](../components/filters/filters-tag.md)
     + [Filter the list of filters](../components/filters/filters-filter.md)
     + [Mark filters as favorites](../components/filters/filters-favorite.md)
     + [Approve filters](../components/filters/filters-approve.md)
     + [Copy filters](../components/filters/filters-copy.md)
-    + [Quick filters](../components/filters/quick-filters.md)
-    + [Filter builder](../components/filters/filter-builder.md)
+    
+
     + [Manage filters](../components/filters/manage-filters.md)
     + [Operators](../components/filters/operators.md)
   + Calculated metrics {#cja-calcmetrics}
