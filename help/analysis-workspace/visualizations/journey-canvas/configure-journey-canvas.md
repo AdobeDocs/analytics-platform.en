@@ -374,12 +374,12 @@ To add a time constraint:
 
 1. Right-click the the arrow between 2 nodes, then select [!UICONTROL **Add time constraint**].
 
-1. Choose from the following options:
+<!-- 
 
-   * 
+from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
+1. Choose from the following options: 
 
-   *  <!-- from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon).  -->
-
+--> 
 ### Create a filter based on a node or arrow
 
 You can create a new filter based on a node or arrow within a journey. After the filter is created, you can use it anywhere in Analysis Workspace. 
