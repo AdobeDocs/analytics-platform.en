@@ -3,6 +3,8 @@ description: Configure a Journey canvas visualization
 title: Journey canvas
 feature: Visualizations
 role: User
+hide: yes
+hidefromtoc: yes
 ---
 # Configure a Journey canvas visualization
 
@@ -177,17 +179,11 @@ You can drag nodes on the canvas to rearrange the events and conditions of the j
 
 ### Combine nodes
 
-The logic that is applied to nodes when they are combined differs depending on the component types you are combining, as follows:
+A combined node in Journey canvas is a single point in the user journey (node) that contains 2 or more components that are joined together through logic. 
 
-* When you combine multiple dimension items or metrics, they are joined with OR.
+#### Create combined nodes
 
-* When you combine multiple filters, they are joined with AND.
-
-* When you combine a date range with another component type, they are joined with AND.
-
-* When you combine a filter with another component type, they are joined with AND.
-
-You can do any of the following to combine nodes in Journey canvas:
+You can do any of the following to create a combined nodes in Journey canvas:
 
 * From the left rail, drag a single component onto a node on the canvas.
 
@@ -196,6 +192,24 @@ You can do any of the following to combine nodes in Journey canvas:
 * From the left rail, drag multiple components simultaneously onto a blank area of the canvas while holding the Shift key.
 
 * On the canvas, select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**.<!--Is there a limit on how many you can combine? -->
+
+#### Logic when combining nodes
+
+The logic that is applied to nodes when they are combined differs depending on which component types you are combining, as follows:
+
+>[!TIP]
+>
+>You can view the logic of a combined node by right-clicking the node, then selecting [!UICONTROL **Create filter from node**]. The logic is shown in the [!UICONTROL **Definition**] section.
+
+
+| Component types to combine | Logic (operator) used |
+|---------|----------|
+| Metric + Metric | Joined with OR | 
+| Dimension + Dimension | Joined with OR |
+| Filter + Filter | Joined with AND | 
+| Dimension + Metric, Date range, or Filter | Joined with AND | 
+| Date range + Metric, Filter, or Dimension | Joined with AND | 
+| Filter + Metric, Date range, or Dimension | Joined with AND | 
 
 ### Connect nodes
 
@@ -217,7 +231,9 @@ To connect nodes in Journey canvas:
 
 #### Connect nodes when adding a node
 
-When adding a node to the canvas, you can place it between two connected nodes. The node is added to the journey's flow between the 2 existing nodes. For more information, see [Add a node](#add-a-node).
+When adding a node to the canvas, you can place it between two connected nodes. The node is added to the journey's flow between the 2 existing nodes. 
+
+For more information, see [Add a node](#add-a-node).
 
 ### Change the color of a node or arrow
 
@@ -259,7 +275,7 @@ To rename a node:
 
 ### Apply a breakdown
 
-The option to apply a breakdown is available for the following objects on the canvas:
+The option to apply a breakdown to your data is available for the following objects on the canvas:
 
 * Individual nodes
 
@@ -269,7 +285,7 @@ The option to apply a breakdown is available for the following objects on the ca
 
 * Multiple arrows between nodes
 
-To apply a breakdown:
+### Apply a breakdown to one or more nodes or arrows
 
 1. Select one or more nodes where you want to apply a breakdown, then right-click one of the selected nodes.
 
@@ -278,6 +294,12 @@ To apply a breakdown:
    Select one or more arrows between 2 nodes where you want to apply the breakdown, then right-click one of the selected arrows.
 
 1. Select [!UICONTROL **Breakdown**].
+
+### Apply a breakdown to an individual node
+
+You can drag a dimension from the left rail onto the node on the canvas where you want to apply the breakdown. 
+
+For more information, see [Add a node](#add-a-node).
 
 ### Create an audience
 
