@@ -88,16 +88,25 @@ Journey canvas provides deep, thorough analysis that isn't possible in Journey O
 
 Using Journey canvas to analyze journeys that were created in Journey Optimizer provides various benefits:
 
-| Feature | Benefit | 
-|---------|----------|
-| **Create events** | Easily create events by using any Customer Journey Analytics dimensions, metrics, or filters. <p>In Journey Optimizer, a technical user must create an event before it can be added to a journey.</p> |
-| **Create audiences from custom nodes** | Create audiences based on a custom node that you create in the journey within the Journey canvas visualization. (Launches the Customer Journey Analytics audience builder.) <p>In Journey Optimizer, you can create audiences only for pre-defined activities.</p> |
-| **Fallthrough and fallout** | B3 | 
-| **Break down events** | B3 | 
-| **Rename events** | B3 | 
-| **Delete events** | B3 | 
-| **Combine events** | B3 | 
-| **Connect events** | B3 | 
+* Create events by using any Customer Journey Analytics dimensions, metrics, filters, or date ranges. 
+  
+  In Journey Optimizer, a technical user must create an event before it can be added to a journey.
+
+* Create audiences based on a custom node that you create (launches the Customer Journey Analytics audience builder).
+  
+  In Journey Optimizer, you can create audiences only for pre-defined activities.
+
+* Analyze fallthrough and fallout
+
+* Break down events with any dimension
+
+* Combine events
+
+* Connect events
+
+* Rename and delete events
+
+* Much more
 
 ### Synchronization between Journey Optimizer and Journey canvas
 
@@ -138,8 +147,6 @@ Certain terms that mean one thing in Journey Optimizer mean something else in Cu
 |Term | Journey canvas | Journey Optimizer |
 |---------|----------|---------|
 | **Event** | One of several standard metrics that is available in Customer Journey Analytics. This metric counts things like revenue, subscriptions, or leads generated. | The category of activity that triggers a personalized journey, such as an online purchase.  |
-| A2 | B2 | C2 |
-| A3 | B3 | C3 |
 
 ### Analyze a Journey Optimizer journey in Journey canvas
 

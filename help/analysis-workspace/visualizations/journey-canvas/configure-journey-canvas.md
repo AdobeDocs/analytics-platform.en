@@ -215,6 +215,12 @@ The logic that is applied to nodes when they are combined differs depending on w
 
 You can connect nodes that are already on the canvas, or you can connect a node when adding it to the canvas.
 
+#### Logic when connecting nodes
+
+When you connect nodes in Journey canvas, they are connected using the THEN operator. This is also known as [sequential filtering](/help/components/filters/seg-sequential-build.md).
+
+You can view the logic of connected nodes by right-clicking the node, then selecting [!UICONTROL **Create filter from node**]. The logic is shown in the [!UICONTROL **Definition**] section.
+
 #### Connect existing nodes
 
 The arrow between nodes in Journey canvas determines the sequence of events in the journey. 
