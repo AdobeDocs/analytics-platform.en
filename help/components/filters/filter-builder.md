@@ -9,21 +9,19 @@ exl-id: 160021f1-6942-4682-9114-d375307d9912
 
 The **[!UICONTROL Filter builder]** dialog is used to create new or edit existing filters. The dialog is titled **[!UICONTROL New filter]** or **[!UICONTROL Edit filter]** for filters that you create or manage from the [[!UICONTROL Filters] manager](/help/components/filters/manage-filters.md).
 
+>[!BEGINTABS]
+
+>[!TAB Filter builder] 
+
+![Filter details window showing fields and options described in the next section.](assets/filter-builder.png)
+
+>[!TAB Create or Edit filter] 
+
+![Filter details window showing fields and options described in the next section.](assets/create-edit-filter.png)
+
+>[!ENDTABS]
+
 1. Specify the following details (![Required](/help/assets/icons/Required.svg) is required):
-
-   >[!BEGINTABS]
-   
-   >[!TAB Filter builder] 
-   
-   ![Filter details window showing fields and options described in the next section.](assets/filter-builder.png)
-
-   >[!TAB Create or Edit filter] 
-   
-   ![Filter details window showing fields and options described in the next section.](assets/create-edit-filter.png)
-   
-   >[!ENDTABS]
-
-   
 
    | Element | Description |
    | --- | --- |
