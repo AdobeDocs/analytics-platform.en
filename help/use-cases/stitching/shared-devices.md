@@ -4,8 +4,9 @@ description: Explanation of how to handle shared devices using stitching and oth
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 hide: yes
-hide-from-toc: yes
+hidefromtoc: yes
 role: Admin
+exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
 ---
 # Shared devices
 
@@ -19,11 +20,11 @@ When two people use the same device and both do make a purchase, sample event da
 
 | Timestamp | Page name | Device ID | Email |
 |---|---|---|---|
-| 2023-05-12 12:01 | Home page | 1234 | | 
-| 2023-05-12 12:02 | Product page  | 1234  | | 
-| 2023-05-12 12:03 | Order success | 1234 | <ryan@a.com> |
-| 2023-05-12 12:07 | Product page  | 1234  | | 
-| 2023-05-12 12:08 | Order success | 1234 | <cassidy@a.com> | 
+| 2023-05-12 12:01 | Home page | `1234` | | 
+| 2023-05-12 12:02 | Product page  | `1234`  | | 
+| 2023-05-12 12:03 | Order success | `1234` | `ryan@a.com` |
+| 2023-05-12 12:07 | Product page  | `1234`  | | 
+| 2023-05-12 12:08 | Order success | `1234` | `cassidy@a.com` | 
 
 The order success (purchase) events assign the data accurately to the correct email. How this assignment impacts your analysis depends on how you perform analysis:
 
@@ -32,7 +33,7 @@ The order success (purchase) events assign the data accurately to the correct em
 
 ## Improve person centric analysis
 
-To improve person centric analysis of shared devices, you have two options: you can use stitching, or you can implement  ECID reset functionality. Both approaches are discussed in more details in the sections below.
+The example data is a mix of both authenticated and unauthenticated activity for the same device. The challenge is to assign a person to the unauthenticated traffic, so you can perfom a person-centric analysis and prevent Customer Journey Analyics to drop the activities that do not have a person id value. To solve this challenge, you have two options: you can use stitching, or you can implement  ECID reset functionality. Both options are discussed in more details in the sections below.
 
 ### Stitching 
 
@@ -43,34 +44,34 @@ Stitching can attribute shared device data using either last-auth attribution or
 
 #### Last-auth attribution
 
-Last-auth attributes all unknown activity from a shared device to the user who last authenticated. Last-auth is used in Audience Manager, and is the preferred approach for Real-Time Customer Data Profile use cases. The Experience Platform Identity Service builds the graph based on the last-auth attribution and, as such, is used in graph-based stitching. 
+Last-auth attributes all unknown activity from a shared device to the user who last authenticated. Last-auth is used in Audience Manager, and is the preferred approach for Real-Time Customer Data Profile use cases. The Experience Platform Identity Service builds the graph based on the last-auth attribution and, as such, is used in graph-based stitching. See [Identity graph linking rules overview](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) for more information.
 
 When using last-auth attribution in stitching, Stitched IDs resolve as shown in the table below. 
 
 | Timestamp | Page name | Device ID | Email | Stitched ID |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Home page | 1234 | | <cassidy@a.com>| 
-| 2023-05-12 12:02 | Product page  | 1234 | |<cassidy@a.com> | 
-| 2023-05-12 12:03 | Order success | 1234 | <ryan@a.com> | <cassidy@a.com> |
-| 2023-05-12 12:07 | Product page  | 1234  | | <cassidy@a.com> | 
-| 2023-05-12 12:08 | Order success | 1234 |  <cassidy@a.com> | <cassidy@a.com> |
-| 2023-05-13 11:08 | Home page | 1234 | | <cassidy@a.com> |
+| 2023-05-12 12:01 | Home page | `1234` | | `cassidy@a.com`| 
+| 2023-05-12 12:02 | Product page  | `1234` | |`cassidy@a.com` | 
+| 2023-05-12 12:03 | Order success | `1234` | `ryan@a.com` | `cassidy@a.com` |
+| 2023-05-12 12:07 | Product page  | `1234`  | | `cassidy@a.com` | 
+| 2023-05-12 12:08 | Order success | `1234` |  `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Home page | `1234` | | `cassidy@a.com` |
 
 
 #### Device-split 
 
-Device-split attributes anonymous activity from a shared device to the user in closest proximity to the anonymous activity. Device-split is the preferred approach for analytical use cases since device-split gives credit for both unauthenticated and authenticated activity to the closest known person. Device-split is currently used in field-based stitching.
+Device-split attributes anonymous activity from a shared device to the user in closest proximity to the anonymous activity. Device-split is currently used in field-based stitching. Device-split is the preferred approach for analytical use cases since device-split gives credit for both unauthenticated and authenticated activity to the closest known person. Device-split is currently used in field-based stitching.
 
 When using device-split attribution in stitching, Stitched IDs resolve as shown in the table below. 
 
 | Timestamp | Page name | Device ID | Email | Stitched ID |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Home page | 1234 | | <ryan@a.com>| 
-| 2023-05-12 12:02 | Product page  | 1234 | |<ryan@a.com> | 
-| 2023-05-12 12:03 | Order success | 1234 | <ryan@a.com> | <ryan@a.com> |
-| 2023-05-12 12:07 | Product page  | 1234  | | <ryan@a.com> | 
-| 2023-05-12 12:08 | Order success | 1234 |  <cassidy@a.com> | <cassidy@a.com> |
-| 2023-05-13 11:08 | Home page | 1234 | | <cassidy@a.com> |
+| 2023-05-12 12:01 | Home page | `1234` | | `ryan@a.com`| 
+| 2023-05-12 12:02 | Product page  | `1234` | |`ryan@a.com` | 
+| 2023-05-12 12:03 | Order success | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Product page  | `1234`  | | `ryan@a.com` | 
+| 2023-05-12 12:08 | Order success | `1234` |  `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Home page | `1234` | | `cassidy@a.com` |
 
 
 ### ECID reset 
@@ -82,12 +83,12 @@ When using ECID reset, Stitched IDs resolve as shown in the table below.
 
 | Timestamp | Page name | Device ID | Email | Stitched ID |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Home page | 1234 | | <ryan@a.com>| 
-| 2023-05-12 12:02 | Product page  | 1234 | |<ryan@a.com> | 
-| 2023-05-12 12:03 | Order success | 1234 | <ryan@a.com> | <ryan@a.com> |
-| 2023-05-12 12:07 | Product page  | 5678  | | <cassidy@a.com> | 
-| 2023-05-12 12:08 | Order success | 5678 |  <cassidy@a.com> | <cassidy@a.com> |
-| 2023-05-13 11:08 | Home page | 5678 | | <cassidy@a.com> |
+| 2023-05-12 12:01 | Home page | `1234` | | `ryan@a.com`| 
+| 2023-05-12 12:02 | Product page  | `1234` | |`ryan@a.com` | 
+| 2023-05-12 12:03 | Order success | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Product page  | 5678  | | `cassidy@a.com` | 
+| 2023-05-12 12:08 | Order success | 5678 |  `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Home page | 5678 | | `cassidy@a.com` |
 
 ## Shared device exposure 
 
@@ -95,7 +96,9 @@ Consider several factors to understand correctly how pervasive shared devices ar
 
 To understand the shared device exposure, you can think about performing the following queries.
 
-1. Understand the number of devices that are shared. You can use a query that counts the Device IDs that have two or more Person IDs associated with the Device ID. A sample query could look like:
+1. **Identify shared devices**
+   
+   To understand the number of devices that are shared, perform a query that counts the Device IDs with two or more Person IDs associated. This helps identify devices used by multiple individuals.
 
    ```sql
    SELECT COUNT(*)
@@ -109,7 +112,9 @@ To understand the shared device exposure, you can think about performing the fol
    ```
 
 
-2. For the shared devices, resulting from the first query, you need to understand how many events of the total events can be attributed to these shared devices. This attribution gives you a better sense of the impact of shared devices on your data and the impact when you perform analysis. A sample query could look like:
+2. **Attribution of events to shared devices**
+    
+   For the shared devices identified, determine how many events out of the total can be attributed to these devices. This provides insight into the impact shared devices have on your data and the implications for analysis.
 
    ```sql
    SELECT COUNT(*) AS total_events,
@@ -134,7 +139,9 @@ To understand the shared device exposure, you can think about performing the fol
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-3. For the events attributed to shared devices (the result of the second query), you need to understand how many of these events do NOT have a Person ID. Otherwise stated, how many of the shared device events are anonymous events. Ultimately, the algorithm (last-auth, device-split, ECID-reset) you select to improve your data quality does impact these anonymous shared device events. A sample query could look like:
+3. **Identify anonymous events on shared devices**
+    
+   Among the events attributed to shared devices, identify how many lack a Person ID, indicating anonymous events. The algorithm you choose (for example last-auth, device-split, or ECID-reset) to enhance data quality will affect these anonymous events.
 
    ```sql
    SELECT COUNT(IF(shared_persistent_ids.persistent_id IS NOT NULL, 1, null)) shared_persistent_ids_events,
@@ -159,7 +166,9 @@ To understand the shared device exposure, you can think about performing the fol
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-4. Finally, you want to understand the exposure each customer would experience because of event misclassification. To get this exposure, you need to calculate, for each shared device, the percentage of anonymous events related to the total number of events. A sample query could look like:
+4. **Calculate exposure from event misclassification**
+    
+   Finally, assess the exposure each customer might face due to event misclassification. Calculate the percentage of anonymous events over the total events for each shared device. This helps understand the potential impact on customer data accuracy.
 
    ```sql
    SELECT COUNT(*) AS total_events,
@@ -183,5 +192,3 @@ To understand the shared device exposure, you can think about performing the fol
    ) shared_persistent_ids 
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
-
-

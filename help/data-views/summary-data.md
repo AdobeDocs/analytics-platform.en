@@ -4,11 +4,9 @@ description: Details and information on how to use and configure summary data in
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
+exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
 ---
-
 # Summary data
-
-{{release-limited-testing}}
 
 Summary data is time-series data that is not tied to an individual person ID. Summary data represents aggregated data at a different level of aggregation, for example campaigns. You can use this data in Customer Journey Analytics to support various use cases. For example, data containing a date and a single metric value, or data containing multiple dimensions and metrics.
 

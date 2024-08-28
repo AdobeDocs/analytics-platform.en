@@ -1,9 +1,10 @@
 ---
 title: Summary data group component settings
-description:  Details and on how to configure dimensions from datasets to ensure you can report properly on summary data.
+description: Details and on how to configure dimensions from datasets to ensure you can report properly on summary data.
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
+exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
 ---
 # [!UICONTROL Summary data group] component settings
 
@@ -34,5 +35,3 @@ Values in `tracking_code` can potentially show up as different from `campaign_co
 >
 >Ensure you do the grouping of dimensions from one dimension only, and not apply grouping from multiple dimensions. For example, if you create a grouping by adding the `campaign_name` dimension to the `tracking_code` dimension, do not also create a grouping for the `campaign_name` dimension.
 >
-
-
