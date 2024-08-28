@@ -380,6 +380,7 @@ from Travis: You can set time to be within X amount of time or after X amount of
 1. Choose from the following options: 
 
 --> 
+
 ### Create a filter based on a node or arrow
 
 You can create a new filter based on a node or arrow within a journey. After the filter is created, you can use it anywhere in Analysis Workspace. 
