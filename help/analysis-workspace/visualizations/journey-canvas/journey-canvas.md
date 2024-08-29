@@ -5,6 +5,7 @@ feature: Visualizations
 role: User
 hide: yes
 hidefromtoc: yes
+exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 ---
 # Journey canvas overview
 
@@ -155,5 +156,3 @@ For information about analyzing a Journey Optimizer journey in Journey canvas, s
 ## Build analyses in Journey canvas
 
 You can build analyses in Journey canvas that are based on any dimensions or metrics that are available in Analysis Workspace. Or, you can analyze journeys that were created in Journey Optimizer. For more information, see [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
-
-
