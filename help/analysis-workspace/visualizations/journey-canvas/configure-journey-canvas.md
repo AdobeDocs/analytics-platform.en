@@ -5,6 +5,7 @@ feature: Visualizations
 role: User
 hide: yes
 hidefromtoc: yes
+exl-id: 53984934-6fba-4f15-aeeb-d91039260553
 ---
 # Configure a Journey canvas visualization
 
@@ -480,4 +481,3 @@ To delete arrows between nodes in Journey canvas:
 In Journey Optimizer, open the journey that you want to analyze in Journey canvas.
 
 1. Select [!UICONTROL **Analyze in CJA**]. <!-- ?? -->
-
