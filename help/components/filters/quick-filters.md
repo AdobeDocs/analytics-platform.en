@@ -73,11 +73,12 @@ The header area determines the name, type and scope of the quick filter. It also
 
 ### Condition area 
 
-The condition area specifies the conditions (up to a maximum three). For each you can specify the following:
+The condition area specifies the conditions (up to a maximum of three). For each condition you can specify the following:
+
 | Element | Description | 
 |---|---|
 | **[!UICONTROL Dimension]**<br/>**[!UICONTROL Metric]**<br/>**[!UICONTROL Date&nbsp;range]** | Select from the dropdown ![ChevronDown](/help/assets/icons/ChevronDown.svg) whether you want to specify a condition for a dimension, metric or date range. |
-| **[!UICONTROL *component*]** | The component for the condition. You can select from the list, or you can drag and drop from the component panel. You can only drop similar components on the component field of the condition. For example, only a dimension component from the component panel on a dimension condition. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to delete a component and select another component. | 
+| **[!UICONTROL *component*]** | The component field for the condition. You can [!UICONTROL *Type to add*] a component, select a component from the list, or you can drag and drop a component from the component panel. You can only drop similar components on the component field of the condition. For example, you can only drop a dimension component from the component panel on a dimension condition. <br/>You can also drag and drop to replace an existing component.<br/>Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to delete the component from the component field. | 
 | **[!UICONTROL *operator*]** | The operator for the component. See [Operators](operators.md) for more information. Only available for dimensions and metrics. |
 | **[!UICONTROL *value*]** | The value for the condition. Depending on the operator selected, the value can be selected from a list or you enter a value. |
 | ![CrossSize75](/help/assets/icons/CrossSize75.svg) | Select to delete a condition from the quick filter. |

@@ -21,3 +21,4 @@ Devoting some time to plan filters improves the chances that they will be useful
 * Consider how you want your approval process to unfold. Will a single person review and approve filters or will it be a committee decision?
 
 * Define your filters with view to a filter library that gives business users the ability to stack and reuse filter pieces or components in a modular fashion. What "modules" do you need to define to make this library a reality? 
+

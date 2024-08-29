@@ -15,6 +15,10 @@ Read more about the [integration between Adobe Customer Journey Analytics and Ad
 
 The Experimentation panel is available to use by all Customer Journey Analytics users. No Admin rights or other permissions are required. However, the setup (steps 1 and 2 below) requires actions that only Admins can perform.
 
+## New functions in calculated metrics
+
+Two new advanced functions were added: Lift and Confidence. For more information, see [Reference - advanced functions](/help/components/calc-metrics/cm-adv-functions.md).
+
 ## Prerequisites
 
 To use the experimentation panel, ensure you follow these prerequisites:
