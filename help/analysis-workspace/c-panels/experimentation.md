@@ -7,11 +7,11 @@ role: User
 ---
 # Experimentation panel
 
-The **[!UICONTROL Experimentation]** panel lets analysts compare different user experience, marketing, or messaging variations to determine which is best at driving a specific outcome. You can evaluate the lift and confidence of any A/B experiment from any experimentation platform - online, offline, from Adobe solutions like Target or Journey Optimizer, and even BYO (bring-your-own) data.
+The **[!UICONTROL Experimentation]** panel lets analysts compare different user experience, marketing, or messaging variations to determine which is best at driving a specific outcome. You can evaluate the lift and confidence of any A/B experiment from any experimentation platform—online, offline, from Adobe solutions like Target or Journey Optimizer, and even BYO (bring-your-own) data.
 
 Read more about the [integration between Adobe Customer Journey Analytics and Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja).
 
-## Access Control {#access}
+## Access control {#access}
 
 The Experimentation panel is available to use by all Customer Journey Analytics users. No Admin rights or other permissions are required. However, the setup (steps 1 and 2 below) requires actions that only Admins can perform.
 
@@ -23,7 +23,7 @@ To use the experimentation panel, ensure you follow these prerequisites:
 
 The recommended data schema is for the experiment data to be in an [Object array](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) that contains the experiment and variant data in two separate dimensions. Both dimensions need to be in a **single** object array. If you have your experiment data in a single dimension (with experiment and variant data in a delimited string), you can use the [substring](/help/data-views/component-settings/substring.md) setting in data views to split the dimension into two for use in the panel.
 
-After your experiment data has been [ingested](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) into Adobe Experience Platform, [create a connection in Customer Journey Analytics](/help/connections/create-connection.md) to one or more experiment dataset/s.
+After your experiment data has been [ingested](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) into Adobe Experience Platform, [create a connection in Customer Journey Analytics](/help/connections/create-connection.md) to one or more experiment datasets.
 
 ### Add context labels in data views
 
@@ -70,11 +70,11 @@ Configure the panel input settings:
    | **[!UICONTROL Include confidence upper/lower bounds]** | Enable this option to show upper and lower bounds for confidence levels. |
 
 
-1. Click **[!UICONTROL Build]**.
+1. Select **[!UICONTROL Build]**.
 
 ### Panel output
 
-The Experimentation panel returns a rich set of data and visualizations to help you better understand how your experiments are performing. At the top of the panel, a summary line is provided to remind you of the panel settings you selected. At any time, you can edit the panel by clicking the edit pencil at the top right.
+The Experimentation panel returns a rich set of data and visualizations to help you better understand how your experiments are performing. At the top of the panel, a summary line is provided to remind you of the panel settings you selected. At any time, you can edit the panel by selecting the edit pencil at the top right.
 
 You also get a text summary that indicates whether the experiment is conclusive or not, and summarizes the outcome. Conclusiveness is based on statistical significance (see [Statistical methodology](#adobes-statistical-methodology).) You can see summary numbers for the best performing variant with the highest lift and confidence.
 

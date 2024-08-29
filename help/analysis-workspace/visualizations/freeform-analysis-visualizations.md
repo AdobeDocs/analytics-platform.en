@@ -35,6 +35,8 @@ The following visualization types are available in Analysis Workspace:
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p>![ModernGridView](/help/assets/icons/ModernGridView.svg)</p> | A treemap visualization displays hierarchical (tree-structured) data as a set of nested rectangles. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md)<p>![Type](/help/assets/icons/TwoDots.svg)</p> | A venn visualization uses circles to depict the metric overlap of up to 3 filters. |
 
+<!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
+
 ## Add visualizations to a panel
 
 1. Open the Workspace project where you want to add a visualization.
