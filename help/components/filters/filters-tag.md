@@ -5,9 +5,9 @@ feature: Filters
 exl-id: d3b8d9f7-11a4-4eac-8c22-5c86601ec7f3
 role: User
 ---
-# Tag filters {#tag}
+# Tag filters
 
-In the [Filter manager](manage-filters.md), you can use tags to organize filters. All users can create tags for filters and apply one or more tags to a filter. You can see tags only for those filters that you have created or that have been shared with you.
+In the [Filter manager](manage-filters.md), you can use tags to organize filters. Administrators can tag all filters. Non administroators can tags only the filters they create or have been shared with them.
 
 To tag one or more filters:
 

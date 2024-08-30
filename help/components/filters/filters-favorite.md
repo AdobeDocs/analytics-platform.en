@@ -5,10 +5,12 @@ feature: Filters
 exl-id: b13457dd-06e5-4316-af7e-edcf4ee46408
 role: User
 ---
-# Mark filters as favorites {#favorites}
+# Mark a filter as favorite
 
-Marking filters as favorites is another way to organize them for ease of use.
+You can mark a filter as a favorite. To mark filters as favorite helps you to organize your filters. All users can favor filters.
 
-1. In the Filters manager, select the star next to any filter that you want to mark as a favorite. The star turns yellow when you select it.
+To favor or unfavor a filter, in the [Filters manager](/help/components/filters/manage-filters.md):
 
-1. (Optional) You can sort your list of filters by favorites. Select the Filter icon in the left panel, then select [!UICONTROL **Other filters**] > [!UICONTROL **Favorites**].
+* Select ![StarOutline](/help/assets/icons/StarOutline.svg) to favor, or select ![Star](/help/assets/icons/Star.svg) to unfavor a filter.
+
+You can sort your list of filters by favorites. Select **[!UICONTROL Other filters]** from the ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** panel and select **[!UICONTROL Favorites]**. See [Filter the list of filters](/help/components/filters/filters-filter.md) for more information.

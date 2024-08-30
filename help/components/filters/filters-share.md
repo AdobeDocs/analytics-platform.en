@@ -7,26 +7,31 @@ role: User
 ---
 # Share filters {#share}
 
-Depending on your permissions, you can share filters with your whole organization, groups, or individual users. 
+In the [Filter manager](manage-filters.md), you can use share filters. Depending on your permissions, you can share filters with your whole organization, groups, or individual users: 
 
-|Administrator| Non-Administrator|
-|---|---|
-|Can share filters with All, with Groups, and with Users. See the [Admin Console documentation](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html) for more information.|Can share filters only with individual users.|
+* **Administrators**: Administrators can share filters with the whole organization, with groups within an organization, and with individual users. See the [Admin Console documentation](https://helpx.adobe.com/enterprise/using/manage-products.html) for more information. 
+* **Non-administrators**: Non-administrators can only share the filters they have created and only with individual users. |
 
-When should you share filters with the entire company versus just a group of users or individuals? Here are some best practices you might follow:
+To share one or more filters:
 
-* As an Admin, share a filter with All if it's of use to the entire company and everyone is comfortable using it. In this case, you should also consider making it an approved filter.
+1. In the [Filter manager](manage-filters.md), select one or more of the filters you want to share.
+1. From the action bar, select ![Share](/help/assets/icons/Share.svg) **[!UICONTROL Share]**.
+1. In the **[!UICONTROL Share Filters]** dialog:
+   
+   ![Share Filters dialog](assets/share-filter-dialog.png)
 
-* As an Admin, share a filter with a specific Product Profile if the filter provides good business value for that team. Do not officially approve this type of filter.
+   1. (optionally) use ![Search](/help/assets/icons/Search.svg) to *Search individuals or groups* for and limit the list of groups or individuals you want to share the filter with.
+   
+   1. Select one or more options from the **[!UICONTROL Organization]** or **[!UICONTROL Groups]** section or search for and select one or more individuals. What options are available depends on your role.
 
-* As an Admin or an individual user, share a filter with other individuals to vet and validate a filter. If it doesn't prove useful, it can be discarded. Do not officially approve this type of filter. 
+   1. Select **[!UICONTROL Save]** to share the filter. Select **[!UICONTROL Cancel]** to cancel.
 
-To share a filter:
+## Best practices
 
-1. In the Filter Manager, mark the checkbox next to the filter you want to share. 
+Below are some best practices when you should share filters and with whom you should share filters.
 
-1. In the filter management tool bar, click **[!UICONTROL Share]**.
+* As an administrator, only share a filter with All if you are convinced anyone in your organization is comfortable using the filters. You can also consider favoring these filters. See [Mark a filter as favorite](filters-favorite.md) for more information.
 
-1. If you are an Admin, you can select All or choose from Groups and Users in your organization. As a non-Admin, you can see only individual users. Use the Search field to search for groups or users. Click **[!UICONTROL Share]**. The Shared icon appears next to the filter: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
+* As an administrator, share a filter with a specific product profile if that filter provides business value for the users part of that product profile.
 
-1. You can filter on filters shared with you by going to Filters > Other Filters > Shared with Me.
+* As an administrator or an individual user, share a filter with one or more individuals to validate a filter. If the filters do not prove to be useful, you can delete the filter.  
