@@ -59,16 +59,20 @@ See [Journey canvas overview](/help/analysis-workspace/visualizations/journey-ca
 
    <!-- add screen shot -->
 
-1. Whether you are creating a new analysis from a blank canvas or you are are analyzing a Journey Optimizer journey, you can configure the journey as described in [Configure a Journey canvas visualization](#begin-building-a-journey-canvas-visualization). 
+1. Whether you are creating a new analysis from a blank canvas or you are are analyzing a Journey Optimizer journey, you can configure the journey as described in [Configure visualization settings](#configure-visualization-settings). 
 
 
-## Configure a Journey canvas visualization
+## Configure visualization settings
 
-You need to [begin building a Journey canvas visualization](#begin-building-a-journey-canvas-visualization) before you can configure it as described in the following sections. 
+Various configuration options are available in the Journey canvas header. 
 
-### Configure settings
+To configure settings for the Journey canvas visualization:
 
 1. In Analysis Workspace, open an existing Journey canvas visualization, or [begin building a new one](#begin-building-a-journey-canvas-visualization).
+
+   Options that allow you to configure the Journey canvas visualization are available in the header:
+
+   ![Journey canvas header options](assets/journey-canvas-header.png)
 
 1. Configure any of the following settings that are displayed across the top of the visualization:
 
@@ -79,13 +83,15 @@ You need to [begin building a Journey canvas visualization](#begin-building-a-jo
    | [!UICONTROL **Arrow settings**] | Choose from the following options:<ul><li>[!UICONTROL **None**]: </li><li>[!UICONTROL **Condition**]: </li><li>[!UICONTROL **All labels**]: </li></ul><p>**Note**: This option displays only when Journey Optimizer data is detected in the data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).</p>  |
    | [!UICONTROL **Show fallout**] | Display fallout data for each node. This shows the number and percentage of people who left the journey after a given node. <p>People who fell out of the journey might have performed other actions on the site, but they never met the criteria defined by the next node in the journey.</p> |
 
-1. Continue with [Add a node](#add-a-node). 
+1. Continue with [Add nodes](#add-nodes). 
 
-### Add a node
+## Add nodes
 
-Nodes in a Journey canvas visualization represent the events or actions of a user journey. You create nodes by dragging Workspace components from the left rail to the canvas.
+Nodes in a Journey canvas visualization represent the events or actions of a user journey. 
 
-To add a node to a Journey canvas visualization:
+You create nodes by dragging Workspace components from the left rail to the canvas, by allowing Journey canvas to choose the top next or previous nodes based on existing nodes, or by duplicating existing nodes.
+
+### Drag components from the left rail
 
 1. In Analysis Workspace, open an existing Journey canvas visualization, or [begin building a new one](#begin-building-a-journey-canvas-visualization).
 
@@ -174,6 +180,24 @@ You can add the top 3 nodes that come between 2 existing nodes:
 
    The top 3 nodes are added between the 2 existing nodes, and each are connected as a separate branch. 
 
+### Duplicate nodes
+
+The option to duplicate is available for the following objects on the canvas:
+
+* Multiple nodes
+
+To duplicate nodes:
+
+1. Select multiple nodes that you want to duplicate.
+
+1. Right-click one of the selected nodes, then select [!UICONTROL **Duplicate**].
+
+## Design the journey
+
+The order of nodes and the connections between them affect Journey canvas data. Journeys should visually and accurately reflect the sequence of events that you want to report on. 
+
+After nodes are added to the canvas, you can rearrange them, combine them, connect them, and add time constraints between them. 
+
 ### Rearrange nodes
 
 Journeys in Journey canvas consist of a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. 
@@ -254,6 +278,27 @@ When adding a node to the canvas, you can place it between two connected nodes. 
 
 For more information, see [Add a node](#add-a-node).
 
+### Add a time constraint between nodes
+
+You can set a time constraint between nodes. When a time constraint is in place, if a person follows the defined journey but takes longer than the allotted time period to move between the nodes, they are considered to have fallen out of the journey.
+
+The option to add a time constraint is available for the following objects on the canvas:
+
+* The arrow between nodes
+
+To add a time constraint:
+
+1. Right-click the the arrow between 2 nodes, then select [!UICONTROL **Add time constraint**].
+
+<!-- 
+
+from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
+1. Choose from the following options: 
+
+--> 
+
+## Manage nodes or arrows
+
 ### Change the color of a node or arrow
 
 You can visually customize a journey by changing the color of any node or arrow on the canvas. For example, you could adjust colors to indicate a desirable or undesirable event.
@@ -304,7 +349,7 @@ The option to apply a breakdown to your data is available for the following obje
 
 * Multiple arrows between nodes
 
-### Apply a breakdown to one or more nodes or arrows
+#### Apply a breakdown to one or more nodes or arrows
 
 1. Select one or more nodes where you want to apply a breakdown, then right-click one of the selected nodes.
 
@@ -314,7 +359,7 @@ The option to apply a breakdown to your data is available for the following obje
 
 1. Select [!UICONTROL **Breakdown**].
 
-### Apply a breakdown to an individual node
+#### Apply a breakdown to an individual node
 
 You can drag a dimension from the left rail onto the node on the canvas where you want to apply the breakdown. 
 
@@ -368,37 +413,6 @@ To view trend data:
 
 1. Select [!UICONTROL **Trend**].
 
-### Duplicate nodes
-
-The option to duplicate is available for the following objects on the canvas:
-
-* Multiple nodes
-
-To duplicate nodes:
-
-1. Select multiple nodes that you want to duplicate.
-
-1. Right-click one of the selected nodes, then select [!UICONTROL **Duplicate**].
-
-
-### Add a time constraint between nodes
-
-You can set a time constraint between nodes. When a time constraint is in place, if a person follows the defined journey but takes longer than the allotted time period to move between the nodes, they are considered to have fallen out of the journey.
-
-The option to add a time constraint is available for the following objects on the canvas:
-
-* The arrow between nodes
-
-To add a time constraint:
-
-1. Right-click the the arrow between 2 nodes, then select [!UICONTROL **Add time constraint**].
-
-<!-- 
-
-from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
-1. Choose from the following options: 
-
---> 
 
 ### Create a filter based on a node or arrow
 
