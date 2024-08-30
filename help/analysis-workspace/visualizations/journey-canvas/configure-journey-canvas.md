@@ -82,6 +82,7 @@ To configure settings for the Journey canvas visualization:
    | [!UICONTROL **Percentage value**] | Choose from the following options: <ul><li>[!UICONTROL **Percent of total**]: The percent of all of the people included in the data view within the panel's date range.</li><li>[!UICONTROL **Percent of start node**]: The percent of all the people included in the data view within the panel's date range who also meet the criteria of the journey's starting node. (This option is available only in journeys with a single start node; it is disabled in journeys with multiple start nodes. A start node is defined as any node that doesn't have a connection coming into it.)</li></ul> | 
    | [!UICONTROL **Arrow settings**] | Choose from the following options:<ul><li>[!UICONTROL **None**]: </li><li>[!UICONTROL **Condition**]: </li><li>[!UICONTROL **All labels**]: </li></ul><p>**Note**: This option displays only when Journey Optimizer data is detected in the data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).</p>  |
    | [!UICONTROL **Show fallout**] | Display fallout data for each node. This shows the number and percentage of people who left the journey after a given node. <p>People who fell out of the journey might have performed other actions on the site, but they never met the criteria defined by the next node in the journey.</p> |
+   | **Zoom controls** | The following zoom controls are available in the upper-right corner of the visualization:<ul><li>**Zoom in** ![zoom in icon](assets/zoom-in-icon.png): Enlarges specific areas of the visualization.<p>You can also use your mouse to zoom in.</p></li><li>**Zoom out** ![zoom out icon](assets/zoom-out-icon.png): Shrinks the visualization to allow more room on the canvas.<p>You can also use your mouse to zoom out.</p></li><li>**Fit screen** ![fit screen icon](assets/fill-screen-icon.png): Adjusts current zoom and pan settings to fill the screen with the full visualization.</li></ul><p>To pan across the canvas after zooming in or out, click your mouse and drag it to the desired location.</p> |
 
 1. Continue with [Add nodes](#add-nodes). 
 
@@ -202,7 +203,9 @@ After nodes are added to the canvas, you can rearrange them, combine them, conne
 
 Journeys in Journey canvas consist of a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. 
 
-You can drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. 
+You can drag nodes on the canvas to rearrange the events and conditions of the journey. You can select multiple nodes by holding Command (on Mac) or Ctrl (on Windows).
+
+ As you rearrange the order of nodes in the journey, data updates accordingly. 
 
 ### Combine nodes
 
