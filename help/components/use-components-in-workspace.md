@@ -50,7 +50,7 @@ See the [Components overview](/help/components/overview.md) for more information
 
    * Drag a dimension to a visualization (such as a freeform table) in Analysis Workspace.
    
-   * Drag one or more dimensions from the left panel onto the filter drop zone to create an ad-hoc filter, as described in [Add filters to a project](#add-filters-to-a-project).
+   * Drag one or more dimensions from the left panel onto the filter drop zone to create a quick filter, as described in [Add filters to a project](#add-filters-to-a-project).
 
 1. You can optionally break down dimensions and dimension items in Analysis Workspace with other components. For more information, see [Break down dimensions in Workspace](/help/components/dimensions/t-breakdown-fa.md).
 
@@ -85,25 +85,20 @@ For more information about metrics, see [Calculated metrics overview](/help/comp
 
 ## Add filters to a project
 
-[Filters](/help/components/filters/filters-overview.md) allow you to identify subsets of visitors based on characteristics or specific interactions.
+[Filters](/help/components/filters/filters-overview.md) allow you to identify subsets of persons, sessions or events based on characteristics or specific interactions.
 
 You can use filters in Analysis Workspace in any of the following ways:
 
-### Add filters to a panel
+* Add filters to a panel
+  When you add filters to a panel, the filters apply to all content within the panel.
+  For information about how you can use the filter drop zone on a panel to filter your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
 
-When you add filters to a panel, the filters apply to all content within the panel.
+* Add filters to a visualization
+  When you add filters to a column in a freeform table, the filters apply to all content within the table column. You can also add filters as part of a fallout visualization.
 
-For information about how you can use the filter drop zone on a panel to filter your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
+* Use filters in components
+  Whe you define components like [calculated metrics](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [annotations](/help/components/annotations/create-annotations.md#annotation-builder), or even [filters](/help/components/filters/filter-builder.md) you can use filters as part of the definition.
 
-### Add filters to a column in a freeform table
-
-When you add filters to a column in a freeform table, the filters apply to all content within the table column.
-
-### Use filters when creating calculated metrics
-
-In the Calculated metric builder, you can apply filters within your metric definition. 
-
-For more information, see [Filtered metrics](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md).
 
 ## Add date ranges to a project
 

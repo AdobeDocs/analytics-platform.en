@@ -72,7 +72,18 @@ The panel calendar controls the reporting date range for tables and visualizatio
 
 ![The calendar window showing the selected date range.](assets/panel-calendar.png)
 
-You can apply a minute-level date range under the advanced settings of your panel calendar. If you are reporting on a date range that spans many days, start time applies to the first day and end time applies to the last day in your range.
+1. Select a date range by selecting first the start date and then the end date. 
+   Alternatively, you can select a **[!UICONTROL Preset]** from the [!UICONTROL *Select a preset*] dropdown list.
+
+2. Select **[!UICONTROL Apply]** to apply the date range to the panel from which you invoked the calendar. 
+   Select **[!UICONTROL Apply to all panels]** to apply the date range to all panels in the Workspace project.
+
+Select **[!UICONTROL Show advanced settings]** to 
+
+* Optionally specify **[!UICONTROL Start time]** and **[!UICONTROL End time]** other than the default `12:00 AM` (`0:00`) and `11:59 PM` (`23:59`). End times always include 59 seconds. For a date range that spans many days, the start time applies to the first day of the date range and the end time applies to the last day in your date range. Use **[!UICONTROL (Reset time values)]** to reset start and end time to their defaults.
+* **[!UICONTROL Make date range components relative to panel calendar]**. If disabled, date range components used in the panel are relative to the current time. If enabled, date range components used in the panel are relatve to the panel calendar.
+* **[!UICONTROL Use rolling dates]**. If enabled, preset date ranges like Last 7 Full Days dynamically update as current date and time progress. If disabled, such presets are not updated once applied.
+
 
 ## Drop zone {#dropzone}
 
@@ -84,11 +95,10 @@ Drag and drop any filters from the left panel into the panel drop zone to begin 
 
 ![The left panel shows available Metrics and the Mobile Customer metric dragged to the panel drop zone.](assets/segment-filter.png)
 
-#### Ad-hoc filters 
+#### Quick filters 
 
-Non-filter components can also be dragged directly into the drop zone to create ad-hoc filters, saving you the time and effort of going to the [Filter builder](/help/components/filters/filter-builder.md). Filters created in this way are automatically defined as event-level filters. This definition can be quickly modified by selecting the ![Edit](/help/assets/icons/Edit.svg) icon next to the filter name. 
+Non-filter components can also be dragged directly into the drop zone to create quick filters, saving you the time and effort of going to the [Filter builder](/help/components/filters/filter-builder.md). Filters created in this way are automatically defined as event-level filters. This definition can be quickly modified by selecting the ![Edit](/help/assets/icons/Edit.svg) icon next to the filter name. 
 
-Ad-hoc filters are a type of quick filter, and are local to the project. They only show up in the left panel when you make the ad-hoc filters public.
 
 For more information, see [Quick filters](/help/components/filters/quick-filters.md).
 

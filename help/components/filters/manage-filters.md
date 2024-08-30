@@ -68,11 +68,4 @@ The filter bar ➌ shows the active filters applied from the filter panel to the
 
 You can filter the list of filters using the ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** left panel ➍. The filter panel displays the type of filter and the number of filters that honor the specific filter. Select ![Filter](/help/assets/icons/Filter.svg) to toggle the display of the filter panel. 
 
-You can filter the list of filters on:
-
-| Filter | Description |
-|---|---|
-| **[!UICONTROL Tags]** | Unfold to see all tags defined and filter on individual tags. You can use ![Search](/help/assets/icons/Search.svg) *Search Tags* to search for tags. |
-| **[!UICONTROL Data view]** | Unfold to see the individual data views you can filter on. You can use ![Search](/help/assets/icons/Search.svg) *Search Data views* to search for data views. |
-| **[!UICONTROL Owners]** | Unfold to see the individual owners you can filter on. You can use ![Search](/help/assets/icons/Search.svg) *Search Owners* to search for owners. |
-| **[!UICONTROL Other filters]** | You can filter on other filters like Show all, Shared with me, Mine, Favorites, Approved. |
+See [Filter the list of filters](filters-filter.md) for more information.

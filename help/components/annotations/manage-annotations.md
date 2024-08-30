@@ -65,15 +65,26 @@ The filter bar ➌ shows the active filters (if any). You can quickly remove a f
 
 You can filter annotations using the ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** left panel ➍. The filter panel displays the type of filter and the number of annotations that honor the filter. Select ![Filter](/help/assets/icons/Filter.svg) to toggle the display of the filter panel. 
 
-You can filter the list of annotations on:
+To filter the list of filters:
 
-| Filter | Description |
-|---|---|
-| **[!UICONTROL Tags]** | Unfold to see all tags defined and filter on individual tags. You can use ![Search](/help/assets/icons/Search.svg) *Search Tags* to search for tags. |
-| **[!UICONTROL Data view]** | Unfold to see the individual data views you can filter on. You can use ![Search](/help/assets/icons/Search.svg) *Search Data views* to search for data views. |
-| **[!UICONTROL Owners]** | Unfold to see the individual owners you can filter on. You can use ![Search](/help/assets/icons/Search.svg) *Search Owners* to search for owners. |
-| **[!UICONTROL Applied date range]** | You can filter on the applied date range. Select the data range to display a calendar popup to specify the data range, or simply type the date range. |
-| **[!UICONTROL Other filters]** | You can filter on other filters like Show all, Mine, and Shared with me. |
+1. Select ![Filter](/help/assets/icons/Filter.svg) to open the Filters panel. If you need more space for the Filters list, you can select ![Filter](/help/assets/icons/Filter.svg) once more to close the panel.
+1. You can filter the annotations using any of the available [filter sections](#filter-sections). 
+
+   >[!INFO]
+   >
+   >*Items* refer to the annotation items displayed in the [Annotations list](manage-annotations.md#annotations-list).
+   > 
+
+#### Filter sections
+
+{{tagfiltersection}}
+{{dataviewfiltersection}}
+{{ownerfiltersection}}
+{{daterangefiltersection}}
+{{otherfiltersfiltersection}}
+
+
+The [Annotations list](manage-annotations.md#annotations-list) is automatically updated based on your filter configuration. You can see the configured filters in the [Active filter bar](manage-annotations.md#active-filter-bar).
 
 
 ## Edit annotations
