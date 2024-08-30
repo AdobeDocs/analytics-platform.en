@@ -4,6 +4,7 @@ description: Use explaining all details on how to bring summary data into Custom
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
+exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
 ---
 # Use summary data
 
@@ -569,4 +570,3 @@ Your final project should look like the one shown below.
 >
 >[Summary data](/help/data-views/summary-data.md)
 >[Summary data group component settings](/help/data-views/component-settings/summary-data-group.md)
-

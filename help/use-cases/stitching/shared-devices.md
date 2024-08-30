@@ -6,8 +6,8 @@ feature: Stitching, Cross-Channel Analysis
 hide: yes
 hidefromtoc: yes
 role: Admin
+exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
 ---
-
 # Shared devices
 
 This article provides context on shared devices, how to handle and mitigate data from shared devices using stitching, and understand shared device exposure in your data using Query Service. 
@@ -192,5 +192,3 @@ To understand the shared device exposure, you can think about performing the fol
    ) shared_persistent_ids 
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
-
-
