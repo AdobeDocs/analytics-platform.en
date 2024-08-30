@@ -5,12 +5,15 @@ feature: Visualizations
 role: User
 hide: yes
 hidefromtoc: yes
+exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 ---
 # Journey canvas overview
 
+{{release-limited-testing}}
+
 The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. It allows you to define a journey from scratch or view one from Journey Optimizer, then see how people left (fell out) or continued through (fell through) the journey. 
 
-You can build analyses of user journeys by using any combination of events, dimension items, filters, and date ranges to create journey nodes. Connect the nodes to create the journey's flow, and include multiple paths and decision points. Drag nodes on the canvas to rearrange the events and conditions of the journey. Data updates in realtime as you make changes.
+You can [build analyses of user journeys](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) by using any combination of events, dimension items, filters, and date ranges to create journey nodes. Connect the nodes to create the journey's flow, and include multiple paths and decision points. Drag nodes on the canvas to rearrange the events and conditions of the journey. Data updates in realtime as you make changes.
 
 ## Key features
 
@@ -155,5 +158,3 @@ For information about analyzing a Journey Optimizer journey in Journey canvas, s
 ## Build analyses in Journey canvas
 
 You can build analyses in Journey canvas that are based on any dimensions or metrics that are available in Analysis Workspace. Or, you can analyze journeys that were created in Journey Optimizer. For more information, see [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
-
-

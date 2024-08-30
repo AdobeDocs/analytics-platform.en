@@ -5,8 +5,11 @@ feature: Visualizations
 role: User
 hide: yes
 hidefromtoc: yes
+exl-id: 53984934-6fba-4f15-aeeb-d91039260553
 ---
 # Configure a Journey canvas visualization
+
+{{release-limited-testing}}
 
 The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. 
 
@@ -72,11 +75,11 @@ You need to [begin building a Journey canvas visualization](#begin-building-a-jo
    | Setting | Function | 
    |---------|----------|
    | [!UICONTROL **Node type**] | Allows you to configure which node types are shown in the visualization. To hide a node type from the visualization, select the (x) next to the node type, or deselect it from the drop-down menu. To show a hidden node type, select it from the drop-down menu. <p>Depending on the contents of your visualization, possible node types include:</p><ul><li>[!UICONTROL **Read segment**]</li><li>[!UICONTROL **End**]</li><li>[!UICONTROL **Dimension**]</li><li>[!UICONTROL **Metric**]</li></ul><p>**Note**: Consider the following when using this field:</p><ul><li>This option displays only when Journey Optimizer data is detected in the data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).</li><li>After you modify a Journey Optimizer journey in Journey Canvas, this option is no longer available. For more information, see [Visual differences after modifying a journey in Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p>   | 
-   | [!UICONTROL **Percentage value**] | Choose from the following options: <ul><li>[!UICONTROL **Percent of total**]: The percent of all of the people included in the data view within the panel's date range.</li><li>[!UICONTROL **Percent of start node**]: The percent of all the people included in the start node.<p>This option is available only if you have a single start node. It is hidden if you have multiple start nodes.</p></li></ul> | 
+   | [!UICONTROL **Percentage value**] | Choose from the following options: <ul><li>[!UICONTROL **Percent of total**]: The percent of all of the people included in the data view within the panel's date range.</li><li>[!UICONTROL **Percent of start node**]: The percent of all the people included in the data view within the panel's date range who also meet the criteria of the journey's starting node. (This option is available only in journeys with a single start node; it is disabled in journeys with multiple start nodes. A start node is defined as any node that doesn't have a connection coming into it.)</li></ul> | 
    | [!UICONTROL **Arrow settings**] | Choose from the following options:<ul><li>[!UICONTROL **None**]: </li><li>[!UICONTROL **Condition**]: </li><li>[!UICONTROL **All labels**]: </li></ul><p>**Note**: This option displays only when Journey Optimizer data is detected in the data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).</p>  |
-   | [!UICONTROL **Show fallout**] | Display fallout data for each node, showing the number and percentage of people who left the journey at a given node. |
+   | [!UICONTROL **Show fallout**] | Display fallout data for each node. This shows the number and percentage of people who left the journey at a given node. <p>People who fell out of the journey might have performed other actions on the site, but they never met the criteria defined by the next node in the journey.</p> |
 
-1. Continue with [Add a node](#add-a-node).
+1. Continue with [Add a node](#add-a-node). 
 
 ### Add a node
 
@@ -86,7 +89,7 @@ To add a node to a Journey canvas visualization:
 
 1. In Analysis Workspace, open an existing Journey canvas visualization, or [begin building a new one](#begin-building-a-journey-canvas-visualization).
 
-1. Drag metrics, dimensions, dimension items, filters, or date ranges from the left rail onto the canvas. Calculated metrics are not supported. Additionally, any metrics or dimensions that are based on a [summary dataset](/help/data-views/summary-data.md) are not supported.
+1. Drag metrics, dimensions, dimension items, filters, or date ranges from the left rail onto the canvas. Metrics that are based on a [derived field](/help/data-views/derived-fields/derived-fields.md) are supported. However, calculated metrics, as well as any metrics or dimensions that are based on a [summary dataset](/help/data-views/summary-data.md) are not supported.
      
    You can select multiple components in the left rail by holding Shift, or by holding Command (on Mac) or Ctrl (on Windows).
 
@@ -215,15 +218,25 @@ The logic that is applied to nodes when they are combined differs depending on w
 
 You can connect nodes that are already on the canvas, or you can connect a node when adding it to the canvas.
 
+#### Arrows between nodes
+
+Nodes are connected by an arrow. Both the arrow direction and width have significance:
+
+* **Direction**: Indicates the sequence of events of the journey
+
+* **Width**: Indicates percentage volume from one node to another
+
 #### Logic when connecting nodes
 
-When you connect nodes in Journey canvas, they are connected using the THEN operator. This is also known as [sequential filtering](/help/components/filters/seg-sequential-build.md).
+When you connect nodes in Journey canvas, they are connected using the THEN operator. This is also known as [sequential filtering](/help/components/filters/seg-sequential-build.md). 
+
+Nodes are connected as an "eventual path," which means that visitors are counted as long as they eventually move from one node to the other, regardless of any events occurring between the 2 nodes.
 
 You can view the logic of connected nodes by right-clicking the node, then selecting [!UICONTROL **Create filter from node**]. The logic is shown in the [!UICONTROL **Definition**] section.
 
 #### Connect existing nodes
 
-The arrow between nodes in Journey canvas determines the sequence of events in the journey. 
+Journeys cannot be circular, looping back to previously connected nodes.
 
 To connect nodes in Journey canvas:
 
@@ -233,7 +246,7 @@ To connect nodes in Journey canvas:
 
 1. Drag any of the 4 blue dots to any of the 4 sides of the node that you want to connect to.
 
-   An arrow appears, connecting the 2 nodes. The arrow indicates the direction that people move through the journey. 
+   An arrow appears, connecting the 2 nodes. See [Arrows between nodes](#arrows-between-nodes) for more information.
 
 #### Connect nodes when adding a node
 
@@ -243,7 +256,7 @@ For more information, see [Add a node](#add-a-node).
 
 ### Change the color of a node or arrow
 
-You can change the color of a node or arrow on the canvas.
+You can visually customize a journey by changing the color of any node or arrow on the canvas. For example, you could adjust a colors to indicate a desirable or undesirable event.
 
 The option to change the color is available for the following objects on the canvas:
 
@@ -333,7 +346,7 @@ To create an audience:
 
 ### View trend data
 
-You can view the trend data in a line graph for objects in Journey canvas. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout)>
+You can view the trend data in a line graph for objects in Journey canvas. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
 The option to trend is available for the following objects on the canvas:
 
@@ -468,4 +481,3 @@ To delete arrows between nodes in Journey canvas:
 In Journey Optimizer, open the journey that you want to analyze in Journey canvas.
 
 1. Select [!UICONTROL **Analyze in CJA**]. <!-- ?? -->
-
