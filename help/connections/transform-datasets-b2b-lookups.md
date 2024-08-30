@@ -26,7 +26,10 @@ To enable transformation for such a dataset:
 
 ![Enable transform dataset](/help/connections/assets/transform.gif)
 
-* Verify for each dataset the proposed values for **[!UICONTROL Key]** and **[!UICONTROL Matching key]**. It is recommended to not change these values. If you change the proposed values from the default, you will see an alert.
+* Verify for each dataset the suggested values for **[!UICONTROL Key]** and **[!UICONTROL Matching key]**. If you change the values from the suggested values, you will see an warning asking you to continue. You must be sure that:
+
+  * The value you select for **Key** is based on the Person ID data type.
+  * The value you select for **Matching Key** is defined as the primary identity field for the event dataset.
 
 * Select the options for importing new data and dataset backfill. 
 
