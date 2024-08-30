@@ -99,6 +99,6 @@ To configure the visible columns in the Alerts manager:
 
 ## Troubleshoot an alert
 
-When troubleshooting an issue with an alert, provide the JID number to Adobe Support. The JID number is located at the bottom of the alert email notification you received.
+When troubleshooting an issue with an alert, provide the JID (Job Instance ID) number to Adobe Support. The JID number is located at the bottom of the alert email notification you received.
 
 ![Alert email](assets/alerts-email.PNG)
