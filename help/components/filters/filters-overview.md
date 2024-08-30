@@ -6,11 +6,11 @@ feature: Filters
 role: User
 ---
 
-# Filters overview {#overview}
+# Filters overview
 
 Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of persons, sessions or events based on characteristics or interactions. Filters are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
 
-Filters can be based on 
+Filters can be based on: 
 
 - attributes (browser type, device, number of visits, country, gender), 
 - interactions (campaigns, keyword search, search engine), 

@@ -95,15 +95,15 @@ You can search, filter, and sort the component list in the left panel of Analysi
 
 3. Select any of the following filter options to filter the list of components:
 
-   |Option | Function |
-   |---------|----------|
-   | ![Checkmark](/help/assets/icons/Checkmark.svg) [!UICONTROL **Approved**] | Show only components that are marked as Approved by an administrator. |
-   | ![Star](/help/assets/icons/Star.svg) [!UICONTROL **Favorites**] | Show only components that are in your list of Favorites. For information about adding components to your list of favorites, see [Manage components](#manage-components). |
-   | ![Dimensions](/help/assets/icons/Dimensions.svg) [!UICONTROL **Dimensions**] | Show only components that are Dimensions. |
-   | ![Event](/help/assets/icons/Event.svg) [!UICONTROL **Metrics**] | Show only components that are Metrics. |
-   | ![Segmentation](/help/assets/icons/Segmentation.svg) [!UICONTROL **Filters**] | Show only components that are Filters. |
-   | ![Calendar](/help/assets/icons/Calendar.svg) [!UICONTROL **Date ranges**] | Show only components that are Date ranges. |
-   | ![Label](/help/assets/icons/Label.svg) [!UICONTROL **Tag name**] | Show only components with the specific tag. |
+   | Icon | Filter option | Description |
+   |---------|---|----------|
+   | ![Checkmark](/help/assets/icons/Checkmark.svg) | **[!UICONTROL Approved]** | Show only components that are marked as Approved by an administrator. |
+   | ![Star](/help/assets/icons/Star.svg) | **[!UICONTROL Favorites]**| Show only components that are in your list of Favorites. <br/>For information about adding components to your list of favorites, see [Manage components](#manage-components). |
+   | ![Dimensions](/help/assets/icons/Dimensions.svg) | **[!UICONTROL Dimensions]** | Show only components that are Dimensions. |
+   | ![Event](/help/assets/icons/Event.svg) | **[!UICONTROL Metrics]** | Show only components that are Metrics. |
+   | ![Segmentation](/help/assets/icons/Segmentation.svg)| **[!UICONTROL Filters]** | Show only components that are Filters. |
+   | ![Calendar](/help/assets/icons/Calendar.svg) | **[!UICONTROL Date ranges]** | Show only components that are Date ranges. |
+   | ![Label](/help/assets/icons/Label.svg) | **[!UICONTROL *Tag name*]** | Show only components with the specific tag. |
 
 4. You can optionally sort the component list, as described in [Sort the component list](#sort-the-component-list).
 

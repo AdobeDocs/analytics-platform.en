@@ -15,25 +15,42 @@ You can
 * (Advanced Calculated Metrics only) Filter on metrics. For example, you can create a metric for "New persons", with a count of people for whom this is the first session.
 * (Advanced Calculated Metrics only) Incorporate statistical functions to help you better describe your data. For example, you can count the number of items in a report or add in the number of standard deviations for each item.
 
+
+You can build and save calculated metrics in the [Calculated metrics builder](cm-workflow/cm-build-metrics.md) or quickly create filters using [Quick filter](quick-filters.md). This builder allows you to:
+
+* Create calculated and advanced calculated metrics using advanced allocation models.
+* Add filters inline to metric formulas.
+* Compare filters in the same report. For example, compare local persons vs. international persons.
+* Use statistical functions.
+* Provide detailed metric descriptions (show what it does, where to use it, where NOT to use it).
+* Copy definitions into new metrics.
+* Provide an inline metric preview.
+* Set metric polarity, which indicates whether it's good or bad if a given custom event (metric) goes up.
+* Tag metrics
+
+You use the [Calculated metrics manager](cm-workflow/cm-manager.md) to collect, tag, approve, favor, share and export calculated metrics across your organization.
+
+See [Create filters](/help/components/filters/create-filters.md) for the various options available to create filters.
+
 ## Calculated metrics versus advanced calculated metrics
 
 Here is a comparison of Calculated Metrics and Advanced Calculated Metrics capabilities: 
 
-|  Builder Options  | Calculated Metrics  | Advanced Calculated (Derived) Metrics  |
-|---|---|---|
-| Format types (decimal, time, percent, currency  | Yes  | Yes  |
-| Attribution changes (default, linear, participation, etc.  | Yes  | Yes  |
-| Metric types (standard, total | Yes  | Yes  |
-|  Basic operators (add, subtract, multiply, divide)  | Yes  | Yes  |
-| Apply filters | No  | Yes  |
-| [Basic functions (count, abs value, mean, etc)](/help/components/calc-metrics/cm-functions.md)  | No  | Yes  |
-| [Advanced functions (regression, if/then, t-score, etc)](/help/components/calc-metrics/cm-adv-functions.md)  | No  | Yes  |
+|  <br/>Builder Options  | <br/>Calculated Metrics  | Advanced Calculated<br/>(Derived) Metrics  |
+|---|:---:|:---:|
+| Format types (decimal, time, percent, currency)  | ![Checkmark](/help/assets/icons/Checkmark.svg)  | ![Checkmark](/help/assets/icons/Checkmark.svg)  |
+| Attribution changes (default, linear, participation, etc.)  | ![Checkmark](/help/assets/icons/Checkmark.svg)  | ![Checkmark](/help/assets/icons/Checkmark.svg)  |
+| Metric types (standard, total) | ![Checkmark](/help/assets/icons/Checkmark.svg)  | ![Checkmark](/help/assets/icons/Checkmark.svg)  |
+|  Basic operators (add, subtract, multiply, divide)  | ![Checkmark](/help/assets/icons/Checkmark.svg)  | ![Checkmark](/help/assets/icons/Checkmark.svg)  |
+| Apply filters | ![Close](/help/assets/icons/Close.svg)  | ![Checkmark](/help/assets/icons/Checkmark.svg)  |
+| [Basic functions (count, abs value, mean, etc)](/help/components/calc-metrics/cm-functions.md)  | ![Close](/help/assets/icons/Close.svg)   | ![Checkmark](/help/assets/icons/Checkmark.svg)  |
+| [Advanced functions (regression, if/then, t-score, etc)](/help/components/calc-metrics/cm-adv-functions.md)  | ![Close](/help/assets/icons/Close.svg)   | ![Checkmark](/help/assets/icons/Checkmark.svg)  |
 
 ## Tools
 
 | Tool | Capabilities |
 |--- |--- |
-|Calculated metric builder|<ul><li>Create calculated and advanced calculated metrics using advanced allocation models.</li><li>Add filters inline to metric formulas.</li><li>Compare filters in the same report. For example, compare local persons vs. international persons.</li><li>Use statistical functions.</li><li> Provide detailed metric descriptions (show what it does, where to use it, where NOT to use it).</li><li>Copy definitions into new metrics.</li><li>Provide an inline metric preview.</li><li>Set metric polarity, which indicates whether it's good or bad if a given custom event (metric) goes up.</li><li>Tag metrics.</li></ul>|
+|Calculated metric builder|The calculated metric builder allows you to:<ul><li>Create calculated and advanced calculated metrics using advanced allocation models.</li><li>Add filters inline to metric formulas.</li><li>Compare filters in the same report. For example, compare local persons vs. international persons.</li><li>Use statistical functions.</li><li> Provide detailed metric descriptions (show what it does, where to use it, where NOT to use it).</li><li>Copy definitions into new metrics.</li><li>Provide an inline metric preview.</li><li>Set metric polarity, which indicates whether it's good or bad if a given custom event (metric) goes up.</li><li>Tag metrics.</li></ul>|
 |Calculated metric manager|<ul><li>Share metrics with others.</li><li>Approve and curate metrics.</li><li>Organize (tag) your metrics so people can find them.</li><li>Delete metrics.</li><li>Rename metrics.</li></ul>|
 |API for Calculated Metrics|Part of the Customer Journey Analytics API set.|
 
