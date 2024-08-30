@@ -96,3 +96,9 @@ To configure the visible columns in the Alerts manager:
    {style="table-layout:auto"}
    
    <!-- When "Last used" column is added, add this information as the description: Shows the date when the alert was last used. <p>This information can help you determine whether a component is valuable to users in your organization, where it is used, and if it needs to be deleted or modified.</p><p>Consider the following when viewing this column:</p><ul><li>This information does not include usage from the API, Report Builder, or Data Warehouse.</li><li>For some components, this column might not contain data if the component was last used prior to September 2023.</li></ul> -->
+
+## Troubleshoot an alert
+
+When troubleshooting an issue with an alert, provide the JID number to Adobe Support. The JID number is located at the bottom of the email notification you received.
+
+![Alert email](assets/alerts-email.PNG)
