@@ -10,7 +10,7 @@ You can create intelligent alerts as described in [Create alerts](/help/analysis
 
 The following sections illustrate example use cases to consider as you create alerts.
 
-## Create simple alert filtered by two segments {#section_2E96FFFA93D44F7D8DBCEC97203204AA}
+## Create simple alert filtered by two filters {#section_2E96FFFA93D44F7D8DBCEC97203204AA}
 
 <!-- 
 
