@@ -8,7 +8,7 @@ role: User, Admin
 
 The process of using Intelligent Alerts in Customer Journey Analytics is nearly identical to using Intelligent Alerts in Adobe Analytics. However, there are important differences.
 
-The following sections describe the key differences:
+The following sections describe the key differences.
 
 ## Hourly alerts are not available in Customer Journey Analytics
 
