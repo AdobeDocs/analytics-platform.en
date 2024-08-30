@@ -2,7 +2,7 @@
 title: Customer Journey Analytics BI extension
 description: Learn how you can use Power BI or Tableau to access data views using the Customer Journey Analytics BI extension.
 solution: Customer Journey Analytics
-feature: BI Extension
+feature: BI extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
 ---
@@ -207,11 +207,11 @@ By default, the schema of your data views uses nested structures, just like the 
 
 ### Defaults and limitations
 
-The following additional defaults and limitations apply when using the BI extenion:
+The following additional defaults and limitations apply when using the BI Extenion:
 
-* The BI Extension requires a row limit for the query results. The default is 50, but you can override this in SQL using `LIMIT n`, where `n` is 1 - 50000.
-* The BI Extension requires a date range to limit the rows used for calculations. The default is the last 30 days, but you can override this in your SQL `WHERE` clause using the special [`timestamp`](#timestamp) or [`daterange`](#date-range) columns.
-* The BI Extension requires aggregate queries. You can't use SQL like `SELECT * FROM ...` to get the raw, underlying rows. At a high level, your aggregate queries should use:
+* The BI extension requires a row limit for the query results. The default is 50, but you can override this in SQL using `LIMIT n`, where `n` is 1 - 50000.
+* The BI extension requires a date range to limit the rows used for calculations. The default is the last 30 days, but you can override this in your SQL `WHERE` clause using the special [`timestamp`](#timestamp) or [`daterange`](#date-range) columns.
+* The BI extension requires aggregate queries. You can't use SQL like `SELECT * FROM ...` to get the raw, underlying rows. At a high level, your aggregate queries should use:
   * Select totals using `SUM` and/or `COUNT`.<br/> For example, `SELECT SUM(metric1), COUNT(*) FROM ...`
   * Select metrics broken down by a dimension. <br/>For example, `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
   * Select distinct metric values.<br/>For example, `SELECT DISTINCT dimension1 FROM ...`
