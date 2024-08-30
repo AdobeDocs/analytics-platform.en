@@ -191,7 +191,7 @@ Privacy labels and policies that were created on datasets consumed by Experience
 The following additional defaults and limitations apply for reasons of data governance.
 
 * The BI Extension requires a row limit for the query results. The default is 50, but you can override this in SQL using `LIMIT n`, where `n` is 1 - 50000.
-* The BI Extension requires a date range to limit the rows used for calculations. The default is the last 30 days, but you can override this in your SQL `WHERE` clause using the special [`timestamp`](#timestamp) or [`daterange`](#date-range) columns (see further documentation).
+* The BI Extension requires a date range to limit the rows used for calculations. The default is the last 30 days, but you can override this in your SQL `WHERE` clause using the special [`timestamp`](#timestamp) or [`daterange`](#date-range) columns.
 * The BI Extension requires aggregate queries. You can't use SQL like `SELECT * FROM ...` to get the raw, underlying rows. At a high level, your aggregate queries should use:
   * Select totals using `SUM` and/or `COUNT`.<br/> For example, `SELECT SUM(metric1), COUNT(*) FROM ...`
   * Select metrics broken down by a dimension. <br/>For example, `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
