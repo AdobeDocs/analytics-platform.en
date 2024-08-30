@@ -43,8 +43,8 @@ Here is a comparison of Calculated Metrics and Advanced Calculated Metrics capab
 | Metric types (standard, total) | ![Checkmark](/help/assets/icons/Checkmark.svg)  | ![Checkmark](/help/assets/icons/Checkmark.svg)  |
 |  Basic operators (add, subtract, multiply, divide)  | ![Checkmark](/help/assets/icons/Checkmark.svg)  | ![Checkmark](/help/assets/icons/Checkmark.svg)  |
 | Apply filters | ![Close](/help/assets/icons/Close.svg)  | ![Checkmark](/help/assets/icons/Checkmark.svg)  |
-| [Basic functions (count, abs value, mean, etc)](/help/components/calc-metrics/cm-functions.md)  | ![Close](/help/assets/icons/Close.svg)   | ![Checkmark](/help/assets/icons/Checkmark.svg)  |
-| [Advanced functions (regression, if/then, t-score, etc)](/help/components/calc-metrics/cm-adv-functions.md)  | ![Close](/help/assets/icons/Close.svg)   | ![Checkmark](/help/assets/icons/Checkmark.svg)  |
+| [Basic functions (count, abs value, mean, and more)](/help/components/calc-metrics/cm-functions.md)  | ![Close](/help/assets/icons/Close.svg)   | ![Checkmark](/help/assets/icons/Checkmark.svg)  |
+| [Advanced functions (regression, if/then, t-score, and more)](/help/components/calc-metrics/cm-adv-functions.md)  | ![Close](/help/assets/icons/Close.svg)   | ![Checkmark](/help/assets/icons/Checkmark.svg)  |
 
 ## Tools
 
