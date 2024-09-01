@@ -16,7 +16,7 @@ You can
 * (Advanced Calculated Metrics only) Incorporate statistical functions to help you better describe your data. For example, you can count the number of items in a report or add in the number of standard deviations for each item.
 
 
-You can build and save calculated metrics in the [Calculated metrics builder](cm-workflow/cm-build-metrics.md) or quickly create filters using [Quick filter](quick-filters.md). This builder allows you to:
+You can build and save calculated metrics in the [Calculated metrics builder](cm-workflow/cm-build-metrics.md). This builder allows you to:
 
 * Create calculated and advanced calculated metrics using advanced allocation models.
 * Add filters inline to metric formulas.
