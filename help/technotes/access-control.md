@@ -107,10 +107,10 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in the [Adm
 | [!UICONTROL Data Views] | *name of a data view* | If you toggle **[!UICONTROL Auto-Include]** to **[!UICONTROL On]**, users that are part of this product profile can view all existing and newly created data views. If this setting is set to **[!UICONTROL Off]**, you can select specific data views that users have access to.  |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Analysis Workspace Access] |  Let users access [Analysis Workspace](/help/analysis-workspace/home.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Guided Analysis Access] | Let users access [Guided Analysis](/help/guided-analysis/overview.md).  |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Calculated Metrics Creation] | Let users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Filter Creation] | Let users create [filters](/help/components/filters/filters-overview.md). |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Calculated Metrics Creation] | Let users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). Users can tag, share, delete, rename, approve, unapprove only the calculated metrics they create or the calculate metrics shared with them.  |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Filter Creation] | Let users create [filters](/help/components/filters/filters-overview.md). Users can tag, share, delete, rename, approve, unapprove only the filters they create or the filters shared with them. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Labs Access] | Let users access the [Labs](/help/labs/labs.md) tab in Customer Journey Analytics. |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Annotation Creation] | Let users create [annotations](/help/components/annotations/overview.md). |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Annotation Creation] | Let users create [annotations](/help/components/annotations/overview.md). Users can tag, share, delete, and rename only the annotations they create or annotations shared with them. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audience Creation] | Let users create [audiences](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audit Logs Access] |  Enforce the permission check on the [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) and the audit logs UI. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Share Project Links With Anyone] | Let users [share projects with anyone.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)  |
