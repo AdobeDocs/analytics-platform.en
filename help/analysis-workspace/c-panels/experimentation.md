@@ -136,12 +136,26 @@ The following illustration contrasts these situations:
 
 When you want to measure the impact of intervention X on outcome Y, it is possible that the real cause of both is the confounding factor C. If the data is not achieved by randomizing persons on X, the impact is harder to measure, and the analysis explicitly accounts for C. Randomization breaks the dependence of X on C, allowing us to measure the effect of X on Y without having to worry about other variables. 
 
-## Use derived metrics in the Experimentation panel
+## Use calculated metrics in experimentation {#use-in-experimentation}
 
-Refer to this blog post for information on [using derived metrics in the Experimentation panel](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
-
-
->[!MORELIKETHIS]
+>[!NOTE]
 >
->[Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->
+>For organizations using both Customer Journey Analytics and Adobe Journey Optimizer, the information in this section also applies to experimentation features within Journey Optimizer.
+
+
+Not all calculated metrics are compatible with the Experimentation panel. 
+
+Calculated metrics that include any of the following metrics or constants are not compatible with the Experimentation panel:
+
+* Base metrics from a summary dataset<!--add link to Rob's "Summary data" doc when it's published --> 
+* Base metrics that are divided by each other or multiplied together (for example, `Revenue`/`Orders`)
+* Constants that are added to or subtracted from a base metric (for example, `Revenue+50`)
+* Any of the following base metrics: 
+  * People
+  * (what else?)
+
+Calculated metrics that are not compatible with the Experimentation panel have the value [!UICONTROL **Everywhere in Customer Journey Analytics (excluding experimentation)**] in the [!UICONTROL **Product compatibility**] field when creating the calculated metric. For information about creating a calculated metric, see [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+
+## Use calculated metrics in the Experimentation panel
+
+Refer to this blog post for information on [using calculated metrics in the Experimentation panel](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).

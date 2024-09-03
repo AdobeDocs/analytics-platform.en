@@ -29,7 +29,13 @@ As part of the visualization settings, specific Summary number options are avail
 
 Use the ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) [!UICONTROL Summary Change] visualization to show the delta (change) between two numbers. <!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
 
-This visualization behaves in the following ways, using the associated data source:
+Use the Summary Change visualization to show the delta (change) between two numbers. 
+
+<!--
+The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
+-->
+
+This visualization behaves in the following ways:
 
 * If no cell is selected, it compares the first two cell values in the column.
 * If one cell is selected, it shows 0, because it compares the cell value to itself.
