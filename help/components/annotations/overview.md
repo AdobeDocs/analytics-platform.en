@@ -24,12 +24,9 @@ Annotations can apply to:
 
 * The data view in which annotations are created (default), or all data views.
 
-## Permissions
+See [Create annotations](/help/components/annotations/create-annotations.md) for the various options available to create annotations. You then build, modify, and save annotations in the [Annotation builder](create-annotations.md#annotation-builder).
 
-By default, only administrators can create annotations. Users have rights to view annotations, similar to how users view other components (such as filters, calculated metrics, etc.).
-
-However, administrators can give the **[!UICONTROL Annotation Creation]** permission for **[!UICONTROL Reporting Tools]** in **[!UICONTROL Edit permissions for CJA Workspace Access]** to users via the [Admin Console](/help/technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
-
+You use the [Annotations manager](manage-annotations.md) to manage annotations.
 
 ## Turn annotations on or off
 

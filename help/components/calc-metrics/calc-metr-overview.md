@@ -7,31 +7,42 @@ role: User
 ---
 # Calculated metrics overview
 
-Calculated and Advanced Calculated (or Derived) Metrics are custom metrics that you can create from existing metrics. Our Calculated Metrics tools offer a highly flexible way of building, managing and curating metrics. They allow you as marketers, product managers and analysts to ask questions of the data without having to change your implementation.
+Calculated metrics are metrics that you create from existing metrics and offer a flexible way to build, manage and curate custom defined metrics. Calculated metrics allow marketers, product managers and analysts to analyze data without having to change the implementation.
 
-You can
+A typical workflow for calculated metrics consists of the following steps:
+
+| Workflow Task | Description |
+| --- | --- |
+| Plan | Especially, for metrics that are going to be officially approved ![Checkmark](/help/assets/icons/Checkmark.svg), carefully plan and structure the calculated metrics you anticipate being used often.  |
+| [Build](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) | Build, modify, and save calculated metrics. |
+| [Apply](/help/components/use-components-in-workspace.md) | Apply calculated metrics directly within your Workspace projects. |
+| [Manage](/help/components/calc-metrics/cm-workflow/cm-manager.md) | Manage calculated metrics. You can [tag](/help/components/calc-metrics/cm-workflow/cm-tagging.md), [approve](/help/components/calc-metrics/cm-workflow/cm-approving.md), [unapprove](/help/components/calc-metrics/cm-workflow/cm-approving.md), [filter](/help/components/calc-metrics/cm-workflow/cm-filter.md), [favor](/help/components/calc-metrics/cm-workflow/cm-favorite.md) or [unfavor](/help/components/calc-metrics/cm-workflow/cm-favorite.md), [share](/help/components/calc-metrics/cm-workflow/cm-sharing.md), or [copy](/help/components/calc-metrics/cm-workflow/cm-copy.md) one or more calculated metrics. |
+
+
+<!--
+Let's review this, as it does not really make sense....
+
+
 
 * Create filtered metrics that are derived at report run time, without having to change the implementation. These can be viewed historically because they are based on filters.
 * (Advanced Calculated Metrics only) Filter on metrics. For example, you can create a metric for "New persons", with a count of people for whom this is the first session.
 * (Advanced Calculated Metrics only) Incorporate statistical functions to help you better describe your data. For example, you can count the number of items in a report or add in the number of standard deviations for each item.
+* Plan Calculated Metrics. Especially for metrics that are going to be officially "approved", it makes sense to outline which calculated metrics will be widely used and how they will be defined.
+* [Build](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) Calculated Metrics | Build and edit calculated and advanced calculated metrics for use in [!DNL Customer Journey Analytics] components.
+* [Tag](cm-tagging.md) Calculated Metrics | Tag calculated metrics for ease of organization and sharing. See how to plan and assign tags for simple and advanced searches and organization.
+* [Approve](cm-approving.md) Calculated Metrics | Approve calculated metrics to make them canonical.
+* Apply Calculated Metrics | You can apply metrics directly from a report, from the Metric Selector (to access it, click [!UICONTROL Show Metrics]).
+* Filter Calculated Metrics | In the Metric Selector, click [!UICONTROL Advanced Selection] and filter by tags, owners, and other filters (Show All, Mine, Shared With me, Favorites, and Approved.)
+* Mark Calculated Metrics as [Favorites](cm-finding.md) | Marking metrics as favorites is another way to organize them for ease of use.
+-->
 
+See [Create calculated metrics](/help/components/filters/create-filters.md) for the various options available to create calculated metrics. You build, modify, and save the definition of the calculated metrics in the [Calculated metrics builder](cm-workflow/cm-build-metrics.md).
 
-You can build and save calculated metrics in the [Calculated metrics builder](cm-workflow/cm-build-metrics.md). This builder allows you to:
+You use calculated metric directly in Analysis Workspace. See [Use components in Analysis Workspace](/help/components/use-components-in-workspace.md)
 
-* Create calculated and advanced calculated metrics using advanced allocation models.
-* Add filters inline to metric formulas.
-* Compare filters in the same report. For example, compare local persons vs. international persons.
-* Use statistical functions.
-* Provide detailed metric descriptions (show what it does, where to use it, where NOT to use it).
-* Copy definitions into new metrics.
-* Provide an inline metric preview.
-* Set metric polarity, which indicates whether it's good or bad if a given custom event (metric) goes up.
-* Tag metrics
+You manage calculated metrics in the [Calculated metrics manager](cm-workflow/cm-manager.md).
 
-You use the [Calculated metrics manager](cm-workflow/cm-manager.md) to collect, tag, approve, favor, share and export calculated metrics across your organization.
-
-See [Create filters](/help/components/filters/create-filters.md) for the various options available to create filters.
-
+<!--
 ## Calculated metrics versus advanced calculated metrics
 
 Here is a comparison of Calculated Metrics and Advanced Calculated Metrics capabilities: 
@@ -54,12 +65,7 @@ Here is a comparison of Calculated Metrics and Advanced Calculated Metrics capab
 |Calculated metric manager|<ul><li>Share metrics with others.</li><li>Approve and curate metrics.</li><li>Organize (tag) your metrics so people can find them.</li><li>Delete metrics.</li><li>Rename metrics.</li></ul>|
 |API for Calculated Metrics|Part of the Customer Journey Analytics API set.|
 
-## Calculated Metrics templates in Customer Journey Analytics
+-->
+## Default calculated metrics
 
-| Calculated Metric Name | Calculated Metric description |
-| --- | --- |
-| Sessions Per Person | Average number of sessions per person |
-| Session Start Rate | The percent of time that any dimension item occurred on the first event of a session. |
-| Session End Rate | The percent of time that any dimension item occurred on the last event of a session. |
-| Time Spent per Person | The average amount of time a person spent on any given dimension item. |
-| Time Spent Per Session | The average amount of time a person spent per Session on any given dimension item. |
+Adobe provides a number of default calculated metrics, identified by ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg). See [Default calculated metrics](/help/components/calc-metrics/default-calcmetrics.md) for more information.

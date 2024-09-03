@@ -18,11 +18,9 @@ Filters can be based on:
 - custom variables (form field, defined categories, customer ID), 
 - and other criteria.
 
-You can build and save filters in the [Filter builder](filter-builder.md) or quickly create filters using [Quick filter](quick-filters.md). You can also generate filters from visualizations in Workspace, for example using the [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu) visualization. 
+See [Create filters](/help/components/filters/create-filters.md) for the various options available to create filters. You then build, modify, and save the definition of a filter in the [Filter builder](filter-builder.md). Alternatively, you can create quick filters using the [Quick filter bulder](quick-filters.md). And you can also generate filters from visualizations in Workspace, for example using the [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu) visualization. 
 
-You use the [Filters manager](manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
-
-See [Create filters](/help/components/filters/create-filters.md) for the various options available to create filters.
+You use the [Filters manager](manage-filters.md) to manage filters.
 
 ## Plan filters
 

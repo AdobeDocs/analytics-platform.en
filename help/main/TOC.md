@@ -263,9 +263,9 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Calculated metrics {#cja-calcmetrics}
     + [Calculated metrics overview](../components/calc-metrics/calc-metr-overview.md)
     + Calculated metrics workflow {#cm-workflow}
-      + [Calculated metrics workflow](../components/calc-metrics/cm-workflow/cm-workflow.md)
-      + [Find metrics](../components/calc-metrics/cm-workflow/cm-finding.md)
+      + [Create calculated metrics](../components/calc-metrics/cm-workflow/cm-workflow.md)
       + [Build metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+      + [Find metrics](../components/calc-metrics/cm-workflow/cm-finding.md)
       + [Metric type and attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
       + [Build a participation metric](../components/calc-metrics/cm-workflow/participation-metric.md)
       + [Filtered metrics](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
@@ -278,7 +278,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Tag calculated metrics](../components/calc-metrics/cm-workflow/cm-tagging.md)
       + [Approve calculated metrics](../components/calc-metrics/cm-workflow/cm-approving.md)
       + [Share calculated metrics](../components/calc-metrics/cm-workflow/cm-sharing.md)
-      + [Calculated metric manager](../components/calc-metrics/cm-workflow/cm-manager.md)
+      + [Calculated metrics manager](../components/calc-metrics/cm-workflow/cm-manager.md)
     + [Default calculated metrics](../components/calc-metrics/default-calcmetrics.md)
     + [Basic functions](../components/calc-metrics/cm-functions.md)
     + [Advanced functions](../components/calc-metrics/cm-adv-functions.md)

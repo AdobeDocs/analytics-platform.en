@@ -9,6 +9,10 @@ role: User
 
 You can create different types of filters in Customer Journey Analytics, depending on how complex the filters need to be and whether the filters should apply to the current Workspace project only or apply to all projects. You can create filters directly in the main interface of Customer Journey Analytics or when working in a Workspace project. 
 
+By default, only administrators can create filters. Users have rights to view filters, similar to how users view other components (such as annotations, calculated metrics, etc.).
+
+However, administrators can give the **[!UICONTROL Filter Creation]** permission for **[!UICONTROL Reporting Tools]** in **[!UICONTROL Edit permissions for CJA Workspace Access]** to users via the [Admin Console](/help/technotes/access-control.md#user-level-access).
+
 You can create a filter in the following ways:
 
 ![Ways to create a filter](assets/create-filter.png)

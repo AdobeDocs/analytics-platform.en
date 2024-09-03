@@ -62,7 +62,7 @@ Metrics allow you to quantify data points in Analysis Workspace. They are most c
 
 To add a metric to a project in Analysis Workspace:
 
-1. Start adding a metric to your project in Analysis Workspace, as described in [Begin adding components to a project](#begin-adding-components-to-a-project).
+1. Start adding a metric to your project in Analysis Workspace,as described in [Add components to a project](#add-components-to-a-project).
 
 
 
@@ -81,7 +81,7 @@ To add a metric to a project in Analysis Workspace:
    * Drag a metric above or below an existing metric header to create a metric overlap.
 
      
-For more information about metrics, see [Calculated metrics overview](/help/components/calc-metrics/calc-metr-overview.md).
+For more information about metrics, see [Metrics](/help/components/apply-create-metrics.md).
 
 ## Add filters to a project
 
