@@ -142,6 +142,6 @@ Calculated metrics that include any of the following metrics or constants are no
 
 Calculated metrics that are not compatible with the Experimentation panel have the value [!UICONTROL **Everywhere in Customer Journey Analytics (excluding experimentation)**] in the [!UICONTROL **Product compatibility**] field when creating the calculated metric. For information about creating a calculated metric, see [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
-## Use derived metrics in the Experimentation panel
+## Use calculated metrics in the Experimentation panel
 
-Refer to this blog post for information on [using derived metrics in the Experimentation panel](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
+Refer to this blog post for information on [using calculated metrics in the Experimentation panel](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
