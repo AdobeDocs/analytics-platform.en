@@ -86,7 +86,7 @@ In addition to being added as a Product administrator in the **Customer Journey 
      * permission to access to the relevant data views. See [!UICONTROL Data Views] in [User-level access](#user-level-access).
      * permission to access the Customer Journey Analytics BI extension. See [!UICONTROL Data View Tools] in [User-level access](#user-level-access).
 
-## Product profile administrator role
+### Product profile administrator role
 
 A product profile is a set of permissions. Product administrators create product profiles and can assign Product profile administrators to manage one or more product profiles. A Product profile administrator can then:
 
@@ -94,7 +94,7 @@ A product profile is a set of permissions. Product administrators create product
 
 * In Customer Journey Analytics, edit data views that are part of an assigned product profile. Product profile administrators cannot create new data views.
 
-## User-level access
+### User-level access
 
 The table below outlines the main access permissions for different Customer Journey Analytics capabilities that you can configure for relevant users. You can manage different level of user access through product profiles. A product profile combines a number of permissions, which you then can assign to individual users or user groups. 
 
