@@ -4,6 +4,7 @@ title: Build Metrics
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 ---
+# Build metrics
 
 <!-- markdownlint-disable MD034 -->
 
@@ -16,8 +17,6 @@ exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Use calculated metrics in experimentation"
 
 <!-- markdownlint-enable MD034 -->
-
-# Build metrics
 
 The **[!UICONTROL Calculated metric builder]** dialog is used to create new or edit existing calculated metrics. The dialog is titled **[!UICONTROL New calculated metric]** or **[!UICONTROL Edit calculated metric]** for metrics that you create or manage from the [[!UICONTROL Calculated metrics] manager](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
