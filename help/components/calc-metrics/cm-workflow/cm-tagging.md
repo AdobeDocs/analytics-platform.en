@@ -26,7 +26,7 @@ To tag one or more calculated metrics:
 
 1. Select **[!UICONTROL Save]** to save the tags for the calculated metrics. Select **[!UICONTROL Cancel]** to cancel.
 
-Once saved, the tags are listed in the [!UICONTROL Tag] field for the selected calculated metric in the [Calculated metric builder](filter-builder.md). 
+Once saved, the tags are listed in the [!UICONTROL Tag] field for the selected calculated metric in the [Calculated metric builder](cm-tagging.md). 
 
 <!--
 

@@ -13,7 +13,7 @@ In the [Calculated metrics manager](cm-manager.md), you can share calculated met
 
 To share one or more calculated metric:
 
-1. In the [Calculated metric manager](cm-manager), select one or more of the calculated metrics you want to share.
+1. In the [Calculated metric manager](cm-manager.md), select one or more of the calculated metrics you want to share.
 1. From the action bar, select ![Share](/help/assets/icons/Share.svg) **[!UICONTROL Share]**.
 1. In the **[!UICONTROL Share Calculated metric]** dialog:
    

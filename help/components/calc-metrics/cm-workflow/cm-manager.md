@@ -63,7 +63,7 @@ The filter bar ➌ shows the active filters applied from the filter panel to the
 
 You can filter the list of calculated metric using the ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** left panel ➍. The filter panel displays the type of filter and the number of calculated metrics that honor the specific filter. Select ![Filter](/help/assets/icons/Filter.svg) to toggle the display of the filter panel. 
 
-See [Filter the list of calculated metrics](filters-filter.md) for more information.
+See [Filter the list of calculated metrics](cm-filter.md) for more information.
 
 
 <!-- OLD CONTENT 

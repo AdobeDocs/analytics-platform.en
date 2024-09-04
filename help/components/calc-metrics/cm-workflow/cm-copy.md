@@ -10,7 +10,7 @@ When creating a new calculated metric, you do not have to start from scratch. Yo
 
 To copy a calculated metrics in the [Calculated metrics manager](cm-manager.md):
 
-1. In the [Calculated metric manager](cm-manager), select one or more of the calculated metrics you want to copy.
+1. In the [Calculated metric manager](cm-manager.md), select one or more of the calculated metrics you want to copy.
 1. From the action bar, select ![Copy](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]**.
 
 The new calculated metrics are created with the same name and suffix `(Copy)`.

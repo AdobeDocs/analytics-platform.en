@@ -27,4 +27,4 @@ To filter the list of calculated metrics:
 {{otherfiltersfiltersection}}
 
 
-The [Filter list](manage-filters.md#filters-list) is automatically updated based on your filter configuration. You can see the configured filters in the [Active filter bar](manage-filters.md#active-filter-bar).
+The [Calculated metrics list](cm-manager.md#filters-list) is automatically updated based on your filter configuration. You can see the configured filters in the [Active filter bar](cm-manager.md#active-filter-bar).
