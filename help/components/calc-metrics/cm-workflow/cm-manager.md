@@ -30,7 +30,7 @@ The filters list ➊ displays all the calculated metrics that you own or that ha
 | **[!UICONTROL Data view]** | The data views that this calculated metric applies to.  | 
 | **[!UICONTROL Owner]** | Owner of the calculated metric. As a user, you only see the annotations that you own or the annotations that are shared with you. |
 | **[!UICONTROL Tags]** | Lists the tags for this calculated metric. |
-| **[!UICONTROL Shared with]** | Lists how many individuals or groups that you shared the calculated metric with. Select to open the **[!UICONTROL Share Component]** dialog and modify the tags for the calculated metric. |
+| **[!UICONTROL Shared with]** | Lists how many individuals or groups that you shared the calculated metric with. Select to open the **[!UICONTROL Share Calculated metric]** dialog. See [Share calculated metrics](cm-sharing.md) for more information. |
 | **[!UICONTROL Date modified]** | The date and time that the calculated metric was last modified. |
 | **[!UICONTROL Used in]** | The components the calculated metric is used in. When you select **[!UICONTROL x Components]**, a new browser tab opens that shows the [Project manager](/help/analysis-workspace/build-workspace-project/freeform-overview.md) filtered to show only projects for the components used.  |
 | **[!UICONTROL Last Used]** | When the calculated metric was last used. |
