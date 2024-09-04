@@ -1,6 +1,6 @@
 ---
 title: Filters manager
-description: lean how to manage filters in Customer Journey Analytics
+description: Learn how to manage filters in Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
@@ -31,14 +31,14 @@ The filters list ➊ displays all the filters that you own, the filters that hav
 | Column | Description |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg)  | Select to favor ![Star](/help/assets/icons/Star.svg) or un-favor ![StarOutline](/help/assets/icons/StarOutline.svg) a filter. See [Mark filter as favorite](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL Title and description]** | Provided in the [Filter builder](filter-builder.md). To edit the title and description, select the title link. This opens the [Filters builder](filter-builder.md). A shared filter is indicated with ![Share](/help/assets/icons/Share.svg). |
+| **[!UICONTROL Title and description]** | Provided in the [Filter builder](filter-builder.md). To edit the title and description, select the title link, which opens the [Filters builder](filter-builder.md). A shared filter is indicated with ![Share](/help/assets/icons/Share.svg). |
 | **[!UICONTROL Data view]** | The data views that this filter applies to.  | 
-| **[!UICONTROL Owner]** | Indicates who owns the annotation. As a user, you only see the annotations that you own or the annotations that are shared with you. |
-| **[!UICONTROL Tags]** | Lists the tags for this annotation. |
-| **[!UICONTROL Shared with]** | Lists how many individuals or groups that you shared the annotation with. Select to open the **[!UICONTROL Share Component]** dialog and modify the tags for the annotation. |
-| **[!UICONTROL Date modified]** | Displays the date and time that the annotation was last modified. |
-| **[!UICONTROL Used in]** | Displays the components the filter is used in. When you select **[!UICONTROL x Components]**, a new browser tab opens that shows the [Project manager](/help/analysis-workspace/build-workspace-project/freeform-overview.md) filtered to only show projects for the components used.  |
-| **[!UICONTROL Last Used]** | Displays when the filter was last used. |
+| **[!UICONTROL Owner]** | The owner of the filter. As a user, you only see the filters that you own or the annotations that are shared with you. |
+| **[!UICONTROL Tags]** | The tags for this filter. |
+| **[!UICONTROL Shared with]** | How many individuals or groups that you shared the filter with. Select to open the **[!UICONTROL Share Component]** dialog. See [Share filters](filters-share.md) for more information. |
+| **[!UICONTROL Date modified]** | The date and time that the filter was last modified. |
+| **[!UICONTROL Used in]** | The components the filter is used in. When you select **[!UICONTROL x Components]**, a new browser tab opens that shows the [Project manager](/help/analysis-workspace/build-workspace-project/freeform-overview.md) filtered to show only projects for the components used.  |
+| **[!UICONTROL Last Used]** | When the filter was last used. |
 
 {style="table-layout:auto"}
 
@@ -53,12 +53,12 @@ You can action on filters using the action bar ➋. The action bar contains the 
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another filters, using the [Filter builder](filter-builder.md). |
 | ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search by title*] | When no filter is selected in the list, search for filters using this search field. |
 | ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tag the selected filters. In the **[!UICONTROL Tag Filter]** dialog, select or de-select the tags for the selected filters. Select **[!UICONTROL Save]** to save the tags for the selected filters. See [Tag filters](/help/components/filters/filters-tag.md) for more information.|
-| ![Share](/help/assets/icons/Share.svg) **[!UICONTROL Share]** | Share the selected filters. In the **[!UICONTROL Share Filter]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected filters. See [Share filters](filters-share.md) for more details. |
+| ![Share](/help/assets/icons/Share.svg) **[!UICONTROL Share]** | Share the selected filters. In the **[!UICONTROL Share Filter]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected filters. See [Share filters](filters-share.md) for more information. |
 | ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Delete the selected filters. You are prompted for a confirmation. |
 | ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Rename a single selected filter. When selected, you can rename the filter inline. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Approve the selected filters. | 
-| ![Copy](/help/assets/icons/Copy.svg)  **[!UICONTROL Copy]** | Copy the selected filter. New filters are created with the same name and suffix (Copy) | 
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Export the filters to an `Filters List.csv` file. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Approve the selected filters. See [Approve filters](filters-approve.md) for more information. | 
+| ![Copy](/help/assets/icons/Copy.svg)  **[!UICONTROL Copy]** | Copy the selected filter. New filters are created with the same name and suffix `(Copy)`. | 
+| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Export the filters to a `Filters List.csv` file. |
 
 ### Active filter bar
 

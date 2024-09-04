@@ -6,59 +6,85 @@ exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
 ---
 # Filtered metrics
 
-In the Calculated metric builder, you can apply filters within your metric definition. This is helpful if you want to derive new metrics to use in your analysis. Keep in mind, filter definitions can be updated through the Filter builder. If changes are made, the filter will automatically update anywhere it is applied, including if it is part of a calculated metric definition.
+In the [Calculated metric builder](cm-build-metrics.md#definition-builder), you can apply filters within your metric definition. Applying filters is helpful if you want to use metrics for a subset of your data in your analysis. 
 
-![Summary and Definition of filters for Countries = Germany and Unique Visitors](assets/german-visitors.png)
+>[!NOTE]
+>
+>Filter definitions are updated through the [Filter builder](/help/components/filters/filter-builder.md). If you make a change to a filter, the filter is automatically updated everywhere the filter is used, including if the filter is part of a calculated metric definition.
+>
 
-## Create a filtered metric {#create}
+You want to compare metrics for German people interacting with your brand versus people outside of Germany. So, you can answer questions like:
 
-Let's say you want to compare different aspects of a "German Visitors" filter to those of an "International Visitors" filter. You can create metrics that will give you insights such as:
+1. How many German versus international people are visiting your most [popular pages](#popular-pages).
+1. How many German versus international people in [total](#totals) have interacted online with your brand this month.
+1. What are the [percentages](#percentages) of Germans and international people that have visited your popular pages?
+   
+See the sections below to illustrate how filtered metrics can help you answer these questions. Where appropriate, references are made to more detailed documentation.
 
-* How does content browsing behavior compare between the two groups? (Another example would be: How does the conversion rate compare between the two filters?) 
-* As a percentage of total persons, how many German persons browse certain pages, versus International persons? 
-* Where are the biggest differences in terms of which content is accessed by these different filters?
+## Popular pages
 
-Build and save a metric called "German Visitors" and a metric called "International Visitors":
+1. [Create a calculated metric](cm-workflow.md) from a Workspace project, named `German people`.
+1. From within the [Calculated metric builder](cm-build-metrics.md), [create a filter](/help/components/filters/filter-builder.md), titled `Germany`, that is using the CRM Country field from your CRM data to determine where a person is coming from. 
 
-1. Create an adhoc filter in the Calculated metric builder called "German Visitors", where "Countries" equals "Germany". Drag the Countries dimension into the Definition canvas and select [!UICONTROL **Germany**] as the value:
-
-   ![Adhoc filter showing Countries equals Germany](assets/segment-from-dimension.png)
-
-   >[!NOTE]
+   >[!TIP]
    >
-   >You can also do this in the [Filter Builder](/help/components/filters/create-filters.md), but we have simplified the workflow by making dimensions available in the Calculated metric builder. "Adhoc" means that the filter is not visible in the **[!UICONTROL Filters]** list in the left panel. You can however, make it public by hovering over the "i" icon next to it and clicking **[!UICONTROL Make public]**.
+   >In the Calculated metric builder, you can create a filter directly using the Components panel.
+   >   
 
-1. Drag the Germany filter into the Definition canvas and drag the Unique Visitors metric within it:
+   Your filter could look like.
 
-   ![Summary and Definition of Countries equal Germany and Unique Visitors](assets/german-visitors.png)
+   ![Filter Germany](assets/filter-germany.png)
 
-1. Select [!UICONTROL **Save**] to save the calculated metric.
+1. Back in the Calculated metric builder, use the filter to update the calculated metric.
 
-1. Create an adhoc filter in the Calculated metric builder called "international Visitors", where "Countries" does not equal "Germany".
+   ![Calculated metric Germany](assets/calculated-metric-germany.png)
 
-   Drag the Countries dimension into the Definition canvas, select [!UICONTROL **Germany**] as the value, then select [!UICONTROL **does not equal**] as the operator. 
+Repeat the steps above for the international version of your calculated metric.
 
-1. Drag the Unique Visitors metric within it.
+1. Create a calculated metric from your Workspace project, titled `International people`.
+1. From within the Calculated metric builder, create a filter, titled `Not Germany`, that is using the CRM Country field from your CRM data to determine where a person is coming from.
+ 
+   Your filter should look like.
 
-1. Select [!UICONTROL **Save**] to save the calculated metric.
+   ![Filter Germany](assets/filter-not-germany.png)
 
-1. In Analysis Workspace, drag the **[!UICONTROL Page]** Dimension into a Freeform Table and drag the 2 new calculated metrics next to each other to the top:
+1. Back in the Calculated metric builder, use the filter to update the calculated metric.
 
-   ![Freeform Table showing Page dimension for German Visitors and International visitors](assets/workspace-pages.png)
+   ![Calculated metric Germany](assets/calculated-metric-notgermany.png)
 
-Here is a video overview:
+
+1. Create a project in Analysis Workspace, where you look at pages visited by German and International people.
+
+   ![Workspace Freeform table visualization showing German vs. International people](assets/workspace-german-vs-international.png)
+
+
+## Totals
+
+1. Create two new filters based on Grand Total. Open each of the filters created earlier, rename the filter, set the **[!UICONTROL Metric type]** for **[!UICONTROL People]** to **[!UICONTROL Grand Total]** and use **[!UICONTROL Save As]** to save the filter using the new name. For example:
+
+   ![Total metric for Germany](assets/calculated-metric-germany-total.png)
+
+1. Add a new Freeform table visualization to your Workspace project, showing the total pages for this month.
+
+   ![Workspace Freeform table visualization showing German vs. International total people](assets/workspace-german-vs-international-totals.png)
+
+
+## Percentages
+
+1. Create two new calculated metrics that calculate a percentage from the calculated metrics you created earlier.
+
+   ![Workspace Freeform table visualization showing German vs. International total people percentage](assets/calculated-metric-germany-total-percentage.png)
+
+
+1. Update your Workspace project.
+
+   ![Workspace Freeform table visualization showing German vs. International total people](assets/workspace-german-vs-international-totals-percentage.png)
+
+
++++ Here is a video illustrating how to use a filtered calculated metric as an implementionless metric.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
 
-## Percent of total metrics {#percent-total}
+{{videoaa}}
 
-You can take the example above a step further by comparing your filter to a total population. To do so, create two new metrics, "% of Total German Visitors" and "% of Total International Visitors":
-
-1. Drop the German (or International) Visitors filter into the canvas.
-1. Drop another German (or International) Visitors filter below. However, this time, click its configuration (gear) icon to select the Metric Type "Total". The Format should be "Percent". The operator should be "divided by". You end up with this metric definition:
-
-   ![Countries equals Germany and Total Unique Visitors](assets/cm_metric_total.png)
-
-1. Apply this metric to your project:
-
-   ![Freeform Table with Page and % of Total German visitors](assets/cm_percent_total.png)
++++

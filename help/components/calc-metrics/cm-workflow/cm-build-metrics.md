@@ -109,7 +109,7 @@ You add dimensions, filters and functions as containers to a calculated metric d
 
 #### Filter container
 
-You can add a filter container using a filter, or using a filter you create from a dimension.
+You use the concept of a filter container to create a [filtered metric](metrics-with-segments.md). You can construct a filter container using a filter, or using a filter you create from a dimension.
 
 * To add a filter container from a dimension:
 
@@ -134,11 +134,13 @@ You can add a filter container using a filter, or using a filter you create from
   >
   >You can add more than one filter to a container. 
 
-  The filters in the container are named after the filter component. For example ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Web sessions]**. Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup with details on the filter. In the popup, select ![Edit](/help/assets/icons/Edit.svg) to edit the filter definition.
+  The filters in the container are named after the filter component. For example, ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Web sessions]**. Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup with details on the filter. In the popup, select ![Edit](/help/assets/icons/Edit.svg) to edit the filter definition.
 
 To remove a filter from a container:
 
 * Select ![Close](/help/assets/icons/Close.svg) next to the filter name.
+
+See [Filtered metrics](metrics-with-segments.md) for more details and examples.
 
 #### Function container
 
@@ -154,7 +156,9 @@ To add a function container, you can use:
   1. Select **[!UICONTROL Function]**.
   1. In the container, select a function from the [!UICONTROL *Select...*] dropdown list.
 
-The function container is named after the function component. For example, ![Function](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT (metric)]**. Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup with details on the function. Select Learn more for more information on the function.
+The function container is named after the function component. For example, ![Function](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT (metric)]**. Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup with details on the function. Select **[!UICONTROL Learn more]** for more information on the function. 
+
+See [Use functions](cm-using-functions.md) for details on how to use functions and what functions are available to create a calculated metric.
 
 
 #### Generic container
@@ -168,3 +172,10 @@ To add a generic container:
 #### Delete a container
 
 To delete a container, select ![Close](/help/assets/icons/Close.svg) at the container level.
+
+>[!MORELIKETHIS]
+>
+>[Use functions](cm-using-functions.md)
+>[Filters](/help/components/filters/filters-overview.md)
+>
+

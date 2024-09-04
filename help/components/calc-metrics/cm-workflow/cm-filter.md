@@ -4,28 +4,27 @@ title: Filter calculated metrics
 feature: Calculated Metrics
 exl-id: 902da464-14de-45b9-bd92-d2db064cb095
 ---
-# Filter calculated metrics
+# Filter the list of calculated metrics
 
-Filter by tags, owners, and other filters (Show All, Mine, Shared With me, Favorites, and Approved.)
+You can filter the list of calculated metrics. Using a filter on calculated metrics makes it easier to find the calculated metrics that are available to you, and manage calculated metrics from the [Calculated metrics manager](cm-manager.md). 
 
-Filtering makes it easier to search for calculated metrics in the segment panel.
 
-1. In Customer Journey Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Calculated metrics]**. 
+To filter the list of calculated metrics:
 
-1. In the Calculated metrics manager, click the **[!UICONTROL Filters]** icon:  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
+1. Select ![Filter](/help/assets/icons/Filter.svg) to open the Filters panel. If you need more space for the Filters list, you can select ![Filter](/help/assets/icons/Filter.svg) once more to close the panel.
+1. Select filters from any of the available [filter sections](#filter-sections). 
+   
+   >[!INFO]
+   >
+   >*Items* refer to the filter items displayed in the [Calculated metrics list](cm-manager.md#filters-list).
+   > 
 
-   ![Calculated metrics manager showing the Filters icon and available filters such as Tags, Report suite, and Owners.](assets/filtering.png)
+## Filter sections
 
-1. The following filters are available:
+{{tagfiltersection}} 
+{{dataviewfiltersection}}
+{{ownerfiltersection}}
+{{otherfiltersfiltersection}}
 
-   |  Filter Name  | Description  |
-   |---|---|
-   |  Tags  |Lets you filter on calculated metrics with specific [tags](/help/components/calc-metrics/cm-workflow/cm-tagging.md). The Tags column is shown by default.  |
-   |  Owners  | Lets you filter calculated metrics by owner.  |
-   | Data view | Lets you filter calculated metrics by data view. |
-   |  Other Filters > Show All  | **(Admin only)** Shows all calculated metrics, their owner, and the last date they were modified.  |
-   |  Other Filters > Mine  | Shows all calculated metrics that you own.  |
-   |  Other Filters > Shared with me  |Shows all calculated metrics that others [shared](/help/components/calc-metrics/cm-workflow/cm-sharing.md) with you.  |
-   |  Other Filters > Favorites  |Shows all calculated metrics you marked as [Favorites](/help/components/calc-metrics/cm-workflow/cm-favorite.md).  |
-   |  Other Filters > Approved  |Shows all officially [approved](/help/components/calc-metrics/cm-workflow/cm-approving.md) calculated metrics.  |
-   |  Search calculated metrics  | Lets you search for calculated metrics by name.  |
+
+The [Filter list](manage-filters.md#filters-list) is automatically updated based on your filter configuration. You can see the configured filters in the [Active filter bar](manage-filters.md#active-filter-bar).

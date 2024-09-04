@@ -7,7 +7,8 @@ role: User
 ---
 # Reference - basic functions
 
-The Calculated Metrics Builder lets you apply statistical and mathematical functions to build Advanced Calculated Metrics.
+
+The [Calculated metrics builder](cm-workflow/cm-build-metrics.md) lets you apply statistical and mathematical functions..
 
 Here is an alphabetical list of the functions and their definitions.
 
@@ -15,9 +16,12 @@ Here is an alphabetical list of the functions and their definitions.
 >
 >Where [!DNL metric] is identified as an argument in a function, other expressions of metrics are also allowed. For example, [!DNL MAXV(metrics)] also allows for [!DNL MAXV(PageViews + Visits).]
 
+
 ## Table Functions versus Row Functions 
 
 A table function is one where the output is the same for every row of the table. A row function is one where the output is different for every row of the table.
+
+
 
 ## Absolute Value (Row)
 
@@ -95,9 +99,9 @@ EXP(metric)
 
 Power Operator
 
-<pre>
+
 pow(x,y) = x<sup>y</sup> = x*x*x*… (y times)
-</pre>
+
 
 ## Mean (Table) 
 

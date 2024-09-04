@@ -34,6 +34,10 @@ You can configure the metric type and attribution model for a metric in a calcul
 
      If you already have defined a non-default attribution model, select **[!UICONTROL Edit]** to modify the selection.
 
-## Attribution
 
-For information about attribution in Customer Journey Analytics, see [Attribution component settings](/help/data-views/component-settings/attribution.md).
+>[!MORELIKETHIS]
+>
+>[Attribution component settings](/help/data-views/component-settings/attribution.md)
+>[Participation metric](participation-metric.md)
+>
+

@@ -21,6 +21,7 @@ For example, if you have a Revenue metric, and then add a Page Views metric to t
 
 On the other hand, if you have two metrics that you are interested in, it may not be fair to say that one has a higher average or minimum because some of its rows were zeros, so you would not check the parameter to include the zeros.
 
+
 ## AND
 
 Returns the value of its argument. Use NOT to make sure that a value is not equal to one particular value.
@@ -50,7 +51,7 @@ Approximate Count Distinct (dimension)
 |---|---|
 |  *dimension* | The dimension for which you want the approximate distinct item count.  |
 
-## Example Use Case
+### Example Use Case
 
 Approximate Count Distinct (customer ID eVar) is a common use case for this function.
 
@@ -62,7 +63,7 @@ This is how the "Approximate Customers" metric could be used in reporting:
 
 ![Freeform Table showing Unique Visitors and Approximate Customers ](assets/approx-customers.png)
 
-## Comparing Count Functions
+### Comparing Count Functions
 
 Approximate Count Distinct() is an improvement over Count() and RowCount() functions because the metric created can be used in any dimensional report to render an approximated count of items for a separate dimension. For example, a count of customer IDs used in a Mobile Device Type report.
 

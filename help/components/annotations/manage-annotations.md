@@ -32,10 +32,10 @@ The annotations list ➊ displays all the annotations that you own, the annotati
 | ![StarOutline](/help/assets/icons/StarOutline.svg)  | Select to favor ![Star](/help/assets/icons/Star.svg) or un-favor ![StarOutline](/help/assets/icons/StarOutline.svg) an annotation. |
 | **[!UICONTROL Title and description]** | Provided in the Annotations Builder. To edit the title and description, select the title link - opens the [Annotations builder](/help/components/annotations/create-annotations.md#annotation-builder). A shared annotation is indicated with ![Share](/help/assets/icons/Share.svg).   |
 | **[!UICONTROL Data view]** | The data views that this annotation applies to.  | 
-| **[!UICONTROL Owner]** | Indicates who owns the annotation. As a user, you only see the annotations that you own or the annotations that are shared with you. |
+| **[!UICONTROL Owner]** | The owner of the annotation. As a user, you only see the annotations that you own or the annotations that are shared with you. |
 | **[!UICONTROL Applied date range]** | The date or date range that this annotation applies to. |
-| **[!UICONTROL Tags]** | Lists the tags for this annotation. |
-| **[!UICONTROL Shared with]** | Lists how many individuals or groups that you shared the annotation with. Select to open the **[!UICONTROL Share Component]** dialog and modify the tags for the annotation. |
+| **[!UICONTROL Tags]** | The tags for this annotation. |
+| **[!UICONTROL Shared with]** | The individuals or groups that you shared the annotation with. Select to open the **[!UICONTROL Share Component]** dialog. |
 | **[!UICONTROL Date modified]** | Displays the date and time that the annotation was last modified. |
 
 {style="table-layout:auto"}
