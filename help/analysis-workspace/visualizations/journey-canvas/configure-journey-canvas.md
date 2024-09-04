@@ -139,6 +139,10 @@ You create nodes by dragging Workspace components from the left rail to the canv
 
 ### Add the top nodes based on existing nodes
 
+>[!AVAILABILITY]
+>
+>This feature is not yet available.
+
 You can automatically add the top nodes based on the nodes that are already on the canvas. 
 
 This option is available for the following objects on the canvas:
@@ -182,6 +186,10 @@ You can add the top 3 nodes that come between 2 existing nodes:
    The top 3 nodes are added between the 2 existing nodes, and each are connected as a separate branch. 
 
 ### Duplicate nodes
+
+>[!AVAILABILITY]
+>
+>This feature is not yet available.
 
 The option to duplicate is available for the following objects on the canvas:
 
@@ -283,6 +291,10 @@ For more information, see [Add nodes](#add-nodes).
 
 ### Add a time constraint between nodes
 
+>[!AVAILABILITY]
+>
+>This feature is not yet available.
+
 You can set a time constraint between nodes. When a time constraint is in place, if a person follows the defined journey but takes longer than the allotted time period to move between the nodes, they are considered to have fallen out of the journey.
 
 The option to add a time constraint is available for the following objects on the canvas:
@@ -304,6 +316,10 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 ### Change the color of a node or arrow
 
+>[!AVAILABILITY]
+>
+>This feature is not yet available.
+
 You can visually customize a journey by changing the color of any node or arrow on the canvas. For example, you could adjust colors to indicate a desirable or undesirable event.
 
 The option to change the color is available for the following objects on the canvas:
@@ -323,6 +339,10 @@ To change the color of a node or arrow:
    The following colors are available: <!--look into this interaction and color list-->
 
 ### Rename a node or arrow
+
+>[!AVAILABILITY]
+>
+>This feature is not yet available.
 
 When you drag a component to a Journey canvas visualization, it creates a node with the same name as the component name. You can rename the node to better match the step of the journey that the node represents.
 
@@ -353,6 +373,10 @@ The option to apply a breakdown to your data is available for the following obje
 * Multiple arrows between nodes
 
 #### Apply a breakdown to one or more nodes or arrows
+
+>[!AVAILABILITY]
+>
+>This feature is not yet available.
 
 1. Select one or more nodes where you want to apply a breakdown, then right-click one of the selected nodes.
 
@@ -394,6 +418,10 @@ To create an audience:
 
 ### View trend data
 
+>[!AVAILABILITY]
+>
+>This feature is not yet available.
+
 You can view the trend data in a line graph for objects in Journey canvas. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
 The option to trend is available for the following objects on the canvas:
@@ -415,7 +443,6 @@ To view trend data:
    Select one or more arrows between 2 nodes for which you want to view trend data, then right-click one of the selected arrows.
 
 1. Select [!UICONTROL **Trend**].
-
 
 ### Create a filter based on a node or arrow
 
