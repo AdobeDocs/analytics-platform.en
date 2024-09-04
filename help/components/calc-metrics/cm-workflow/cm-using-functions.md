@@ -281,7 +281,7 @@ Returns the standard deviation, or square root of the variance, based on a sampl
 
 The equation for STDEV is:
 
-![](assets/std_dev.png)
+![](../assets/std_dev.png)
 
 where x is the sample mean (*metric*) and *n* is the sample size.
 
@@ -308,7 +308,7 @@ Returns the variance based on a sample population of data.
 
 The equation for VARIANCE is:
 
-![](assets/variance_eq.png)
+![](../assets/variance_eq.png)
 
 where x is the sample mean, MEAN(*metric*), and *n* is the sample size.
 
@@ -380,11 +380,11 @@ Approximate Count Distinct (customer ID eVar) is a common use case for this func
 
 Definition for a new 'Approximate Customers' calculated metric:
 
-![Approximate county distinct new dimension definition showing Customer ID (eVar1)](assets/approx-count-distinct.png)
+![Approximate county distinct new dimension definition showing Customer ID (eVar1)](../assets/approx-count-distinct.png)
 
 This is how the "Approximate Customers" metric could be used in reporting:
 
-![Freeform Table showing Unique Visitors and Approximate Customers ](assets/approx-customers.png)
+![Freeform Table showing Unique Visitors and Approximate Customers ](../assets/approx-customers.png)
 
 ### Comparing Count Functions
 
@@ -1040,7 +1040,7 @@ Returns the Z-score, or normal score, based upon a normal distribution. The Z-sc
 
 The equation for Z-score is:
 
-![](assets/z_score.png)
+![](../assets/z_score.png)
 
 where [!DNL x] is the raw score, [!DNL μ] is the mean of the population, and [!DNL σ] is the standard deviation of the population.
 
