@@ -26,7 +26,7 @@ The filters list ➊ displays all the calculated metrics that you own or that ha
 | Column | Description |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg)  | Select to favor ![Star](/help/assets/icons/Star.svg) or un-favor ![StarOutline](/help/assets/icons/StarOutline.svg) a calculated metric. See [Mark calculated metric as favorite](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL Title and description]** | Provided in the [Calculated metrics builder](cm-build-metrics.md). To edit the title and description, select the title link, which opens the [Calculated metrics builder](cm-build-metrics.md). A shared filter is indicated with ![Share](/help/assets/icons/Share.svg). |
+| **[!UICONTROL Title and description]** | To edit the calculated metric, select the title link, which opens the [Calculated metrics builder](cm-build-metrics.md). A shared calculated metric is indicated with ![Share](/help/assets/icons/Share.svg). |
 | **[!UICONTROL Data view]** | The data views that this calculated metric applies to.  | 
 | **[!UICONTROL Owner]** | Owner of the calculated metric. As a user, you only see the annotations that you own or the annotations that are shared with you. |
 | **[!UICONTROL Tags]** | Lists the tags for this calculated metric. |

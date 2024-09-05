@@ -1,29 +1,29 @@
 ---
-description: Shows examples of filtered and weighted metrics.
-title: Filtered and weighted metrics
+description: Shows examples of calculated metrics.
+title: Calculated metrics examples
 feature: Calculated Metrics
 exl-id: 5e73ab52-627a-4064-bfb7-354c0ba1e4ee
 ---
-# Filtered and weighted metrics
+# Calculated metrics examples
 
-Shows examples of filtered and weighted metrics.
+This article shows more advanced examples of defining calculated metrics.
 
-## Filtered Bounce Rate {#section_D42F2452E4464948934063EB6F2DAAB4}
+## Conditional page views
 
-This simple filtered metric shows the bounce rate for only those pages with over 100 visits:
+You want to define a calculated metric that calculates only page views for the pages that have been visited in over 100 sessions.
 
-![Summary window showing the metrics applied to column 1 (Visits) and column 2 (100) along with the Bounce Rate. ](assets/cm_fbr.png)
++++ Details 
 
-Keep in mind that this formula is dependent on a consistent time range. If you run a report for a single day, any page with more than 20 visits is worth looking at. If you run it for a month, you may want the filter to include more visits.
+![Conditional page views](assets/conditional-page-views.png)
 
-## Filtered Bounce Rate with Percentile {#section_4F3E6D33A1FD438A932FA662B3510552}
++++
 
-This filter shows the Bounce Rate for the top 30 percent of pages, when sorted by visits.
+## Page views for top 30% sessions
 
-![If and then filter showing the Bounce Rate for the top 30% of pages sorted by visits.](assets/cm_wbr_2.png)
+You want to define a calculated metric that calculates only page views for the top 30% sessions.
 
-## Weighted Metric {#section_F2D16B14569948289CF1310F9E6E3FC2}
++++ Details
 
-Suppose you want to sort by bounce rate in general, but pages with higher visits should be higher on the list. You could create a Weighted Bounce Rate that looks like this:
+![Top 30% page views](assets/top30-page-views.png)
 
-![Summary with Definition for Bounce Rate times Visits.](assets/cm_wbr.png)
++++

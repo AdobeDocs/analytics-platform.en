@@ -1,5 +1,5 @@
 ---
-description: Explains the features of the new landing page .
+description: Explains the features of the new landing page.
 title: Customer Journey Analytics landing page
 role: User, Admin
 feature: Basics

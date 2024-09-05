@@ -106,6 +106,7 @@ This video demonstrates the functionality using Adobe Analytics. However, the fu
 1. Select ![Filter](/help/assets/icons/Filter.svg) to open the Filters panel. If you need more space for the Filters list, you can select ![Filter](/help/assets/icons/Filter.svg) once more to close the panel.
 1. Select filters from any of the available filter sections. 
 
+
 ## Tag filter section {#tagfiltersection}
 
 | Tags   | Description |

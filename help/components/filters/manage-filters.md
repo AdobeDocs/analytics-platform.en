@@ -31,7 +31,7 @@ The filters list ➊ displays all the filters that you own, the filters that hav
 | Column | Description |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg)  | Select to favor ![Star](/help/assets/icons/Star.svg) or un-favor ![StarOutline](/help/assets/icons/StarOutline.svg) a filter. See [Mark filter as favorite](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL Title and description]** | Provided in the [Filter builder](filter-builder.md). To edit the title and description, select the title link, which opens the [Filters builder](filter-builder.md). A shared filter is indicated with ![Share](/help/assets/icons/Share.svg). |
+| **[!UICONTROL Title and description]** | To edit the filter select the title link, which opens the [Filters builder](filter-builder.md). A shared filter is indicated with ![Share](/help/assets/icons/Share.svg). |
 | **[!UICONTROL Data view]** | The data views that this filter applies to.  | 
 | **[!UICONTROL Owner]** | The owner of the filter. As a user, you only see the filters that you own or the annotations that are shared with you. |
 | **[!UICONTROL Tags]** | The tags for this filter. |
