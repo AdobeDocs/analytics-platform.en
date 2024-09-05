@@ -21,7 +21,7 @@ From within title area ➊ you can create a project, create a folder, edit your 
 
 * To show or hide a left panel that allows you to select between **[!UICONTROL Projects]** and **[!UICONTROL Learning]**, select ![Rail](/help/assets/icons/Rail.svg). 
 * The title shows Projects, optionally added with a path to the folder you have selected. For example **[!UICONTROL Projects]** > **[!UICONTROL Company Folder]**.
-* To show tiles for a [**[!UICONTROL Blank project]**](create-projects.md), [**[!UICONTROL Blank mobile scorecard]**](/help/mobile-app/mobile-app/create-scorecard.md), [**[!UICONTROL Guided analysis]**](/help/guided-analysis/overview.md), **[!UICONTROL Open the documentation]** and **[!UICONTROL Open release notes]**, select ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Show more]**. To hide the area with tiles, select ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Show less]**.
+* To show tiles for a [**[!UICONTROL Blank project]**](create-projects.md), [**[!UICONTROL Blank mobile scorecard]**](/help/mobile-app/create-scorecard.md), [**[!UICONTROL Guided analysis]**](/help/guided-analysis/overview.md), **[!UICONTROL Open the documentation]** and **[!UICONTROL Open release notes]**, select ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Show more]**. To hide the area with tiles, select ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Show less]**.
 
 
 ## Project list
@@ -38,7 +38,7 @@ The project list ➋ displays all the projects that you own and that have been s
 |  **[!UICONTROL Tags]**  | The tags applied to the project. |
 | Scheduled | Whether a project is scheduled o be emailed to recipients. Options are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** or ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]** . See [Send project data to others](/help/analysis-workspace/export/t-schedule-report.md). |
 | **[!UICONTROL Shared link (anyone)]** | Whether a project is shared with anyone. Even with people who don't have access to Analysis Workspace. Options are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Active]** or ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Inactive]**. See [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md) for more information. |
-| **[!UICONTROL Project Role]** | Your role for the project. Options are: Edit, Duplicate, View. See [Project roles](curate/projec) for more information. |
+| **[!UICONTROL Project Role]** | Your role for the project. Options are: Edit, Duplicate, View. See [Project roles](/help/analysis-workspace/curate-share/curate.md) for more information. |
 | **[!UICONTROL Data view]** | The data view that the project is associated with. |
 | **[!UICONTROL Owner]**  | The person who created this project (either you or someone who shared the project with you.)  |
 | **[!UICONTROL Shared with]**  | Users that the project has been shared with.  |
@@ -132,21 +132,26 @@ The filter panel consists of the following sections.
 
 | Other filters | Description |
 |---|---|
-| ![Other filters](/help/analysis-workspace/build-workspace-project/assets/projects-filters-others.png){width="300"}{width="300"} | The **[!UICONTROL Other filters]** section lets you filter on other predefined filter.<ul><li>You can select one or more of the following options:<ul><li> **[!UICONTROL Show all]**</li><li>**[!UICONTROL Shared with me]**</li><li>**[!UICONTROL Mine]**</li><li>**[!UICONTROL Approved]**</li><li>**[!UICONTROL Favorites]**</li></ul> What you can select depends on your role and permissions.</li><li>You can select more than one other filter. The other filters available depend on selections made in other sections in the filter panel.</li><li>The numbers indicate:<ul><li>**5︎⃣**: The number of other filters available for the projects resulting from the current filter.</li><li>4︎⃣: The number of projects associated with the specific other filter.</li></ul></li></ul> |
+| ![Other filters](/help/analysis-workspace/build-workspace-project/assets/projects-filters-others.png){width="300"} | The **[!UICONTROL Other filters]** section lets you filter on other predefined filter.<ul><li>You can select one or more of the following options:<ul><li> **[!UICONTROL Show all]**</li><li>**[!UICONTROL Shared with me]**</li><li>**[!UICONTROL Mine]**</li><li>**[!UICONTROL Approved]**</li><li>**[!UICONTROL Favorites]**</li></ul> What you can select depends on your role and permissions.</li><li>You can select more than one other filter. The other filters available depend on selections made in other sections in the filter panel.</li><li>The numbers indicate:<ul><li>**5︎⃣**: The number of other filters available for the projects resulting from the current filter.</li><li>4︎⃣: The number of projects associated with the specific other filter.</li></ul></li></ul> |
 
 ## Search 
 
-You use the Search area to search search for projects and folders using the ![Search](/help/assets/icons/Search.svg) field. 
+You use the Search area ➎ to search search for projects and folders using the ![Search](/help/assets/icons/Search.svg) field. Start typing and the [project list](#project-list) automatically filters on your search input.
+
+The Search area also shows the filters applied from the Filter panel. 
+
+* To remove a filter, select ![CrossSize75](/help/assets/icons/CrossSize75.svg) in the filter.
+* To remove all filters, select Clear all.
+
+If space is limited to display the individual filters, you will see Filtering by x filters. 
+
+* To remove a filter:
+  
+  1. Use x filters ![ChevronDown](/help/assets/icons/ChevronDown.svg) top open a context menu listing the types of filters and the individual filters.
+  1. Use ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a filter.
 
 
-
-
-
-
-
-
-
-
+<!--
 
 The Projects page contains the following information: 
 
