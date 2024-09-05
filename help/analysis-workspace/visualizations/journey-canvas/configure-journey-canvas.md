@@ -372,6 +372,16 @@ The option to apply a breakdown to your data is available for the following obje
 
 * Multiple arrows between nodes
 
+Consider the following when applying a breakdown:
+
+* Breakdowns are applied to the primary metric. The secondary metric is not affected.
+
+* Applying a breakdown does not change the journey. Rather, it simply shows a breakdown of the data for the node where it is applied.
+
+* If a node already has a breakdown, applying a new breakdown replaces the existing one. 
+
+* Breakdown data is updated if changes are made at an earlier point in the journey that affect the breakdown.
+
 #### Apply a breakdown to one or more nodes or arrows
 
 >[!AVAILABILITY]
@@ -385,6 +395,14 @@ The option to apply a breakdown to your data is available for the following obje
    Select one or more arrows between 2 nodes where you want to apply the breakdown, then right-click one of the selected arrows.
 
 1. Select [!UICONTROL **Breakdown**].
+
+<!-- 1. Choose where you want to view the breakdown:
+
+        * [!UICONTROL **In Journey canvas**]
+
+        * [!UICONTROL **In a freeform table**]
+
+-->
 
 #### Apply a breakdown to an individual node
 
@@ -404,6 +422,8 @@ The option to create an audience is available for the following objects on the c
 
 * Multiple arrows between nodes 
 
+When you create an audience from multiple nodes or arrows, they are joined with the OR operator.
+
 To create an audience:
 
 1. Select one or more nodes where you want to create an audience, then right-click one of the selected nodes.
@@ -413,6 +433,14 @@ To create an audience:
    Select one or more arrows between 2 nodes where you want to create an audience, then right-click one of the selected arrows.
 
 1. Select [!UICONTROL **Create audience**].
+
+<!-- 1. Choose where you want to create the audience:
+
+        * [!UICONTROL **In Journey canvas**]
+
+        * [!UICONTROL **In a freeform table**]
+
+-->
 
 1. Continue creating and publishing the audience as described in [Create and publish audiences](/help/components/audiences/publish.md).
 
