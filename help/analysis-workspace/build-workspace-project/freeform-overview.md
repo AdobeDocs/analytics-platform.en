@@ -265,3 +265,6 @@ The following are common actions in the Projects manager, and can be taken on on
 |  Rename  | Edit the name of your project.  |
 |  Copy  | Create a duplicate copy of your project. This creates a new project and project ID. Any shares or schedules tied to the original project will not be copied. |
 |  Export to CSV  | Download your project as a CSV file, which includes plain-text data.  |
+
+-->
+
