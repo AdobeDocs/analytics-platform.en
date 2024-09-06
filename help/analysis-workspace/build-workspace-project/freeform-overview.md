@@ -31,9 +31,9 @@ The project list ➋ displays all the projects that you own and that have been s
 
 | Column | Description |
 | --- | --- | 
-| ![Rectangle](/help/assets/icons/Rectangle.svg) | When one or more projects are selected, a blue action bar appears at the bottom of Project. See actions for more details. | 
+| ![Rectangle](/help/assets/icons/Rectangle.svg) | When one or more projects are selected, a blue action bar appears at the bottom of Project. See [Actions](#actions) for more details. | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg)  | Select to favor ![Star](/help/assets/icons/Star.svg) or un-favor ![StarOutline](/help/assets/icons/StarOutline.svg) a project. |
-| **[!UICONTROL Title and description]** | To edit the project select the title link, which opens the [Workspace project](/help/analysis-workspace/home.md). Projects shared with you are indicated with ![Share](/help/assets/icons/Share.svg). Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup menu with more details on the project. Select ![More](/help/assets/icons/More.svg) to open a context menu with actions. See Actions for more details. |
+| **[!UICONTROL Title and description]** | To edit the project select the title link, which opens the [Workspace project](/help/analysis-workspace/home.md). Projects shared with you are indicated with ![Share](/help/assets/icons/Share.svg). Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup menu with more details on the project. Select ![More](/help/assets/icons/More.svg) to open a context menu with actions. See [Actions](#actions) for more details. |
 | **[!UICONTROL Type]** | A Workspace project, a ![FolderUser](/help/assets/icons/FolderUser.svg) folder, or a [Mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html). |
 |  **[!UICONTROL Tags]**  | The tags applied to the project. |
 | Scheduled | Whether a project is scheduled o be emailed to recipients. Options are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** or ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]** . See [Send project data to others](/help/analysis-workspace/export/t-schedule-report.md). |
@@ -79,7 +79,7 @@ You can take actions on one or more projects using the context menu ![More](/hel
 
 ## Show selectors
 
-You can switch the look and feel of the Projects landing page using the **[!UICONTROL Show]** selectors ➌. The **[!UICONTROL Show]** selectors define what options are available in the [Title area](#title-area) and what columns ared displayed in the [Project list](#project-list). 
+You can switch the look and feel of the Projects landing page using the **[!UICONTROL Show]** selectors ➌. The **[!UICONTROL Show]** selectors define what options are available in the [Title area](#title-area) and what columns are displayed in the [Project list](#project-list). 
 
 * To change the options available for the [Title area](#title-area), select **[!UICONTROL Show]** **[!UICONTROL All projects]** or **[!UICONTROL Show]** **[!UICONTROL Folders & Projects]**. <br/>See tables below for the various options available, based on what you select.
 
@@ -96,7 +96,7 @@ You can switch the look and feel of the Projects landing page using the **[!UICO
 
 ## Filter panel
 
-You can filter the projects and folders in the [Project list](#project-list) using the the filter panel ➍. To show or hide the filter panel use ![Filter](/help/assets/icons/Filter.svg).
+You can filter the projects and folders in the [Project list](#project-list) using the filter panel ➍. To show or hide the filter panel use ![Filter](/help/assets/icons/Filter.svg).
 
 The filter panel consists of the following sections.
 
@@ -143,11 +143,11 @@ The Search area also shows the filters applied from the Filter panel.
 * To remove a filter, select ![CrossSize75](/help/assets/icons/CrossSize75.svg) in the filter.
 * To remove all filters, select Clear all.
 
-If space is limited to display the individual filters, you will see Filtering by x filters. 
+If space is limited to display the individual filters, you see **[!UICONTROL Filtering by *x* filters]**. 
 
 * To remove a filter:
   
-  1. Use x filters ![ChevronDown](/help/assets/icons/ChevronDown.svg) top open a context menu listing the types of filters and the individual filters.
+  1. Use **[!UICONTROL *x* filters]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) top open a context menu listing the types of filters and the individual filters.
   1. Use ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a filter.
 
 

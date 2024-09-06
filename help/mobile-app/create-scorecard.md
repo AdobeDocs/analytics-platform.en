@@ -129,7 +129,7 @@ Use the Summary Number visualization to highlight a large number that is importa
 
 ### [!UICONTROL Donut]
 
-Similar to a pie chart, this visualization shows data as parts of a whole. Use a donut graph when comparing percentages of a total. For example, let's say you want to see which ad platform contributed to the total number of unique persons:
+Similar to a pie chart, this visualization shows data as parts of a whole. Use a donut graph when comparing percentages of a total. For example, you want to see which ad platform contributed to the total number of unique persons:
 
 ![New movile scorecard showing a Donut visualization](assets/donut-viz.png)
 

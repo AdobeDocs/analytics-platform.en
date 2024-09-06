@@ -212,7 +212,7 @@ See [Estimate and manage usage](/help/technotes/estimate-usage.md).
 
 Usage limits are regularly monitored and enforced by Adobe. "Rows of data" means the daily average rows of data available for analysis within Customer Journey Analytics.
 
-For example, let's say your contract entitles you to one million rows of data. Suppose that on day 1 of using Customer Journey Analytics, you upload two million rows of data. On day 2, you delete 1 million rows and keep your usage at that committed maximum (that is, one million rows of data) for the remainder of your License Term. Depending on your contractual terms, you may still incur prorated over-usage fees for day 1, since you exceeded your "rows of data" license entitlement.
+For example, your contract entitles you to one million rows of data. Suppose that on day 1 of using Customer Journey Analytics, you upload two million rows of data. On day 2, you delete 1 million rows and keep your usage at that committed maximum (that is, one million rows of data) for the remainder of your License Term. Depending on your contractual terms, you may still incur prorated over-usage fees for day 1, since you exceeded your "rows of data" license entitlement.
 
 ## 11. Diagnose data discrepancies {#discrepancies}
 

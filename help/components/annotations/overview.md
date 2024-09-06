@@ -10,7 +10,7 @@ role: User
 
 Annotations enable you to communicate contextual data nuances and insights effectively to other stakeholders in your organization. Annotations let you tie calendar events to specific dimensions and metrics. You can annotate a date or date range with known data issues, public holidays, campaign launches, etc. You can then graphically display events and see whether campaigns or other events have affected your site traffic, mobile app usage, revenue, or any other metric.
 
-For example, let's say you are sharing projects with your organization. If you had a major downfall in your offers being accepted, you could create a **Bad Offers** annotation and scope it for your whole data view. When your users view any datasets that included that date, they see the annotation within their projects, alongside their data.
+For example, you are sharing projects with your organization. If you had a major downfall in your offers being accepted, you could create a **Bad Offers** annotation and scope it for your whole data view. When your users view any datasets that included that date, they see the annotation within their projects, alongside their data.
 
 ![Line chart with annotation highlighted.](assets/annotation-example.png)
 

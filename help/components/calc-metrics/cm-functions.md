@@ -311,7 +311,7 @@ In order to calculate a variance you look at an entire column of numbers. From t
 
 Once you have iterated over the entire column you have a single total. You then divide that total by the number of items in the column. That number is the variance for the column. It is a single number. It is, however, displayed as a column of numbers.
 
-As an example, let's say you have a three-item column:
+In case of a three-item column:
 
 1
 
