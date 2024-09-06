@@ -137,13 +137,13 @@ You create nodes by dragging Workspace components from the left rail to the canv
 
 1. Continue customizing the journey as described in the sections below. You can connect nodes, rename nodes, apply breakdowns, create audiences, add time constraints, and more. 
 
-### Add the top nodes based on existing nodes
+### Show the top nodes based on existing nodes
 
 >[!AVAILABILITY]
 >
 >This feature is not yet available.
 
-You can automatically add the top nodes based on the nodes that are already on the canvas. 
+You can automatically show the top nodes based on the nodes that are already on the canvas. You can add the top nodes to Journey canvas or view them in a freeform table.
 
 This option is available for the following objects on the canvas:
 
@@ -151,39 +151,65 @@ This option is available for the following objects on the canvas:
 
 * The arrow between nodes
 
-#### Add top nodes after an existing node
+#### Show top nodes after an existing node
 
-You can select a node and add the top 3 nodes that come after it in the journey.
+You can select a node and show the top dimension items that come after it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
 
-1. Right-click the node where you want to add the top 3 nodes that come after it in the journey.
+1. Right-click the node where you want to show the top dimension items that come after it in the journey.
 
-   This node cannot have any existing nodes going out of it in the journey.
+   The node cannot have any existing nodes going out of it in the journey.
 
-1. Select [!UICONTROL **Add top nodes after this node**].
+1. Select [!UICONTROL **Show top nodes after this node**].
 
-   The top 3 nodes that come after this node in the journey are added, and each are connected to the node you selected as a separate branch.
+1. Select where you want to show the dimension items: 
 
-#### Add top nodes before an existing node
+   * [!UICONTROL **In Journey canvas**]: Adds the top 3 nodes to the canvas that come after this node in the journey. Each node is connected to the node you selected as a separate branch on the canvas.
 
-You can add the top 3 nodes that come before an existing node in the journey.
+   * [!UICONTROL **In a Freeform table**]: Creates a freeform table visualization showing all top dimension items that come after this node in the journey. 
 
-1. Right-click the node where you want to add the top 3 nodes that come before it in the journey.
+1. Select the desired dimension from the list of dimensions.
+
+   Depending on what you chose in the previous step, the top 3 dimension items are added to the canvas as 3 separate nodes, or all top dimension items are shown in a freeform table.
+
+#### Show top nodes before an existing node
+
+You can select a node and show the top dimension items that come before it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
+
+1. Right-click the node where you want to show the top dimension items that come before it in the journey.
 
    This node cannot have any existing nodes coming into it in the journey.
 
-1. Select [!UICONTROL **Add top nodes before this node**].
+1. Select [!UICONTROL **Show top nodes before this node**].
 
-   The top 3 nodes that come before this node in the journey are added, and each are connected to the node you selected as a separate branch.
+1. Select where you want to show the dimension items: 
 
-#### Add top nodes between existing nodes
+   * [!UICONTROL **In Journey canvas**]: Adds the top 3 nodes to the canvas that come before this node in the journey. Each node is connected to the node you selected as a separate branch on the canvas.
 
-You can add the top 3 nodes that come between 2 existing nodes:
+   * [!UICONTROL **In a Freeform table**]: Creates a freeform table visualization showing all top dimension items that come before this node in the journey. 
 
-1. Right-click the arrow between the 2 nodes where you want to add the top 3 nodes in the journey.
+1. Select the desired dimension from the list of dimensions.
 
-1. Select [!UICONTROL **Add top nodes**].<!-- I don't think this should have the word "next" in the UI option, because it's both next and previous. It's in between. Just "Get top nodes" sounds better to me.-->
+   Depending on what you chose in the previous step, the top 3 dimension items are added to the canvas as 3 separate nodes, or all top dimension items are shown in a freeform table.
 
-   The top 3 nodes are added between the 2 existing nodes, and each are connected as a separate branch. 
+#### Show top nodes between existing nodes
+
+You can select an arrow and show the top dimension items that come between 2 existing nodes in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
+
+1. Right-click the arrow between the 2 nodes where you want to show the top dimension items.
+
+1. Select [!UICONTROL **Show top nodes between these nodes**].
+
+   The top 3 nodes are added between the 2 existing nodes, and each are connected as a separate branch.
+
+1. Select where you want to show the dimension items: 
+
+   * [!UICONTROL **In Journey canvas**]: Adds the top 3 nodes to the canvas that come between the 2 existing nodes. Each node is connected to the surrounding nodes as a separate branch on the canvas.
+
+   * [!UICONTROL **In a Freeform table**]: Creates a freeform table visualization showing all top dimension items that come between the 2 existing nodes. 
+
+1. Select the desired dimension from the list of dimensions.
+
+   Depending on what you chose in the previous step, the top 3 dimension items are added to the canvas as 3 separate nodes, or all top dimension items are shown in a freeform table. 
 
 ### Duplicate nodes
 
