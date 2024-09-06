@@ -199,8 +199,6 @@ You can select an arrow and show the top dimension items that come between 2 exi
 
 1. Select [!UICONTROL **Show top nodes between these nodes**].
 
-   The top 3 nodes are added between the 2 existing nodes, and each are connected as a separate branch.
-
 1. Select where you want to show the dimension items: 
 
    * [!UICONTROL **In Journey canvas**]: Adds the top 3 nodes to the canvas that come between the 2 existing nodes. Each node is connected to the surrounding nodes as a separate branch on the canvas.
