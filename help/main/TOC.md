@@ -283,6 +283,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Basic functions](../components/calc-metrics/cm-functions.md)
     + [Advanced functions](../components/calc-metrics/cm-adv-functions.md)
   + Calendar and date ranges {#cja-date-ranges}
+    + [Overview](../components/date-ranges/overview.md)
     + [Calendar and date ranges overview](../components/date-ranges/calendar.md)
     + [Create a date range](../components/date-ranges/create.md)
     + [Manage date ranges](../components/date-ranges/manage.md)
