@@ -158,10 +158,7 @@ When you finish building out the project and it's gathering actionable insights,
 
 ## Additional resources {#resources}
 
+- The [Learning landing](/help/getting-started/landing.md#learning) page in Customer Journey Analytics. This page is  great way to become acquainted with Analysis Workspace. Especially the Learning Workspace Fundamental. This template walks you through common terminology and steps for building your first analysis in Workspace
 - Adobe offers hundreds of [Analytics video training tutorials](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/overview).
 - See [Adobe Experience Cloud release notes](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current) for updates about new features.
-- A great way to become acquainted with Analysis Workspace is through the Analysis Workspace Training Tutorial template. This template walks you through common terminology and steps for building your first analysis in Workspace.
-  To begin the tutorial:
-  1. On the [!UICONTROL **Workspace**] tab in Adobe Analytics, select **[!UICONTROL Learning]** on the left.
-  1. Select **[!UICONTROL Learning Workspace Fundamentals]** from the **[!UICONTROL Learning paths]** offered.
-     ![](assets/training-tutorial.png)
+

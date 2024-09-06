@@ -100,6 +100,6 @@ Quick filters are exactly what they are named. You can create and edit quick fil
 Filters do have the following advantages compared to quick filters.
 
 * Filters can be made available across all your Workspace projects
-* Filters support more complexity using nested and hierarchical containers, sequences (using qequence filters).
+* Filters support more complexity using nested and hierarchical containers, sequences (using sequence filters).
 
 

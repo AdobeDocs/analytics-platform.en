@@ -101,7 +101,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Projects overview](../analysis-workspace/build-workspace-project/freeform-overview.md)
     + [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md)
     + [Save projects](../analysis-workspace/build-workspace-project/save-projects.md)
-    + [Project table of contents](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
     + Folders in Workspace {#workspace-folders}
       + [About Folders in Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
       + [Create Folders and Subfolders](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
@@ -183,6 +182,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Forecasting overview](../analysis-workspace/c-forecast/forecasting.md)
     + [View forecasts in Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
     + [Statistical techniques used in forecasting service](../analysis-workspace/c-forecast/statistics-forecasting.md)
+  + [Table of contents](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
   + [User preferences](../analysis-workspace/user-preferences.md)
   + Workspace FAQs {#workspace-faq}
     + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)

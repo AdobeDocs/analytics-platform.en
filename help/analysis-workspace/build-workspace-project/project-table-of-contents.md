@@ -1,31 +1,37 @@
 ---
-description: Information about the project table of contents that is available on projects
+description: Information about the table of contents functionality in a Workspace project
 keywords: Analysis Workspace
-title: Project table of contents
+title: Table of contents
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
 ---
-# Project table of contents
+# Table of contents
 
-You can view a table of contents within each project in Analysis Workspace, allowing you to quickly move between any panels and visualizations that exist in the project. This is especially useful when viewing larger projects that contain many panels and visualizations.
+You can view a table of contents for a project in Analysis Workspace, which allows you to move quickly between any panels and visualizations that exist in the project. The table of contents is especially useful when viewing larger projects that contain many panels and visualizations.
 
 +++ View a video demonstration of this functionality.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26990/?learn=on)
 
-{{videoaa}}
-
 +++
+
+>[!TIP]
+>
+>You can use the Section header visualization to identify and articulate a section within a panels that contains many visualizations. These section headers are also shown as entries in the table of contents.
+>
+
 
 To view the table of contents on a project:
 
 1. In Analysis Workspace, go to the project where you want to view the table of contents.
 
-1. In the left nav, select the table of contents icon ![toc icon](assets/toc-icon.png). 
+1. In the button panel, select ![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL Table of contents]**. See [Analysis Workspace overview](/help/analysis-workspace/home.md) for more information.<br/>
+   
+   The **[!UICONTROL Table of contents]** for the project is displayed, and each panel is expanded by default.
 
-   The table of contents for the project is displayed, and each panel is expanded by default.
+1. In the **[!UICONTROL Table of contents]**, select a visualization.<br/>
 
-   ![Project TOC expanded](assets/project-toc-expanded.png)
+   The selected visualization is automatically scrolled to and briefly highlighted.
 
-1. In the table of contents, select a visualization to go to it within the project.
+   ![TOC highlighted](assets/toc-highlighted.png)

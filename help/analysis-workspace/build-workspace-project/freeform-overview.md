@@ -10,7 +10,7 @@ role: User
  
 Workspace projects allow you to combine panels, visualizations and components to craft your analysis and share with anyone in your organization. Before you start your first project, learn about how to access, navigate and manage your projects.  
 
-To access projects in Customer Journey Analytics, select **[!UICONTROL Workspace]**.  The **[!UICONTROL Projects]** manager lists all the projects you own or projects shared with you. The Project manager with the Project list is also the default landing page for Customer Journey Analytics, unless you have configured this otherwise in Preferences. 
+To access projects in Customer Journey Analytics, select **[!UICONTROL Workspace]**.  The **[!UICONTROL Projects]** manager lists all the projects that you own or projects that are shared with you. The Project manager with the Project list is also the default landing page for Customer Journey Analytics, unless you have configured otherwise in Preferences. 
 
 ![Project landing page showing the projects list.](assets/projects.png)
 
@@ -20,8 +20,18 @@ To access projects in Customer Journey Analytics, select **[!UICONTROL Workspace
 From within title area ➊ you can create a project, create a folder, edit your preferences and show or hide a panel with additional tiles.
 
 * To show or hide a left panel that allows you to select between **[!UICONTROL Projects]** and **[!UICONTROL Learning]**, select ![Rail](/help/assets/icons/Rail.svg). 
-* The title shows Projects, optionally added with a path to the folder you have selected. For example **[!UICONTROL Projects]** > **[!UICONTROL Company Folder]**.
+* The title shows Projects, optionally added with a path to the folder you have selected. For example [!UICONTROL Projects] > **[!UICONTROL Company Folder]**.
 * To show tiles for a [**[!UICONTROL Blank project]**](create-projects.md), [**[!UICONTROL Blank mobile scorecard]**](/help/mobile-app/create-scorecard.md), [**[!UICONTROL Guided analysis]**](/help/guided-analysis/overview.md), **[!UICONTROL Open the documentation]** and **[!UICONTROL Open release notes]**, select ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Show more]**. To hide the area with tiles, select ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Show less]**.
+* Based on what you select to show, using the [Show selector](#show-selector), you can:
+  
+  | Action | Description | 
+  |---|---|
+  | **[!UICONTROL Create project]** | Select to [create a new project](create-projects.md). |
+  |  **[!UICONTROL Create folder]** | Select to [create a new folder](workspace-folders/create-folders.md). |
+  | ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL Edit preferences]** | [Edit preferences](/help/analysis-workspace/user-preferences.md) for all your projects. In case of limited space, this action is part of the ![More](/help/assets/icons/More.svg) submenu. |
+  | **[!UICONTROL Add projects]** | Select to [add projects](workspace-folders/add-projects.md) to the current folder. In case of limited space, this action is part of the ![More](/help/assets/icons/More.svg) submenu. |
+
+  
 
 
 ## Project list
@@ -31,13 +41,13 @@ The project list ➋ displays all the projects that you own and that have been s
 
 | Column | Description |
 | --- | --- | 
-| ![Rectangle](/help/assets/icons/Rectangle.svg) | When one or more projects are selected, a blue action bar appears at the bottom of Project. See [Actions](#actions) for more details. | 
+| ![SelectBox](/help/assets/icons/SelectBox.svg) | When one or more projects are selected, a blue action bar appears at the bottom of the Project interface. See [Actions](#actions) for more details. | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg)  | Select to favor ![Star](/help/assets/icons/Star.svg) or un-favor ![StarOutline](/help/assets/icons/StarOutline.svg) a project. |
-| **[!UICONTROL Title and description]** | To edit the project select the title link, which opens the [Workspace project](/help/analysis-workspace/home.md). Projects shared with you are indicated with ![Share](/help/assets/icons/Share.svg). Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup menu with more details on the project. Select ![More](/help/assets/icons/More.svg) to open a context menu with actions. See [Actions](#actions) for more details. |
-| **[!UICONTROL Type]** | A Workspace project, a ![FolderUser](/help/assets/icons/FolderUser.svg) folder, or a [Mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html). |
+| **[!UICONTROL Title and description]** | To edit the project, select the title link, which opens the [Workspace project](/help/analysis-workspace/home.md). Projects shared with you are indicated with ![Share](/help/assets/icons/Share.svg). Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup menu with more details on the project. Select ![More](/help/assets/icons/More.svg) to open a context menu with actions. See [Actions](#actions) for more details. |
+| **[!UICONTROL Type]** | A Workspace project, a ![FolderUser](/help/assets/icons/FolderUser.svg) folder, or a [Mobile Scorecard](https://experienceleague.adobe.com/en/docs/analytics/analyze/mobapp/home). |
 |  **[!UICONTROL Tags]**  | The tags applied to the project. |
-| Scheduled | Whether a project is scheduled o be emailed to recipients. Options are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** or ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]** . See [Send project data to others](/help/analysis-workspace/export/t-schedule-report.md). |
-| **[!UICONTROL Shared link (anyone)]** | Whether a project is shared with anyone. Even with people who don't have access to Analysis Workspace. Options are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Active]** or ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Inactive]**. See [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md) for more information. |
+| Scheduled | Whether a project is scheduled o be emailed to recipients. Options are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** or ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]**. See [Send project data to others](/help/analysis-workspace/export/t-schedule-report.md). |
+| **[!UICONTROL Shared link (anyone)]** | Whether a project is shared with anyone, even with people who don't have access to Analysis Workspace. Options are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Active]** or ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Inactive]**. See [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md) for more information. |
 | **[!UICONTROL Project Role]** | Your role for the project. Options are: Edit, Duplicate, View. See [Project roles](/help/analysis-workspace/curate-share/curate.md) for more information. |
 | **[!UICONTROL Data view]** | The data view that the project is associated with. |
 | **[!UICONTROL Owner]**  | The person who created this project (either you or someone who shared the project with you.)  |
@@ -77,20 +87,11 @@ You can take actions on one or more projects using the context menu ![More](/hel
 
 
 
-## Show selectors
+## Show selector
 
-You can switch the look and feel of the Projects landing page using the **[!UICONTROL Show]** selectors ➌. The **[!UICONTROL Show]** selectors define what options are available in the [Title area](#title-area) and what columns are displayed in the [Project list](#project-list). 
+You can switch the look and feel of the Projects interface using the **[!UICONTROL Show]** selectors ➌. The **[!UICONTROL Show]** selector define what options are available in the [Title area](#title-area) and what columns are displayed in the [Project list](#project-list). 
 
-* To change the options available for the [Title area](#title-area), select **[!UICONTROL Show]** **[!UICONTROL All projects]** or **[!UICONTROL Show]** **[!UICONTROL Folders & Projects]**. <br/>See tables below for the various options available, based on what you select.
-
-  | **[!UICONTROL Show]** | Options in [Title area](#title-area) | Description | 
-  |---|---|---|
-  | **[!UICONTROL All projects]** | **[!UICONTROL Create project]** | Select to create a new project. |
-  | **[!UICONTROL All projects]** | ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL Edit preferences]** | [Edit preferences](/help/analysis-workspace/user-preferences.md) for all your projects |
-  | **[!UICONTROL Projects & Folders]** | **[!UICONTROL Create project]** | Select to [create a new project](create-projects.md). |
-  | **[!UICONTROL Projects & Folders]** | **[!UICONTROL Create folder]** | Select to [create a new folder](workspace-folders/create-folders.md). |
-  | **[!UICONTROL Projects & Folders]** | **[!UICONTROL ...]** | From the context menu:<br/>Select **[!UICONTROL Edit preferences]** to [edit preferences](/help/analysis-workspace/user-preferences.md) for all your projects.<br/>Select **[!UICONTROL Add projects]** to [add projects](workspace-folders/add-projects.md) to the current folder. |
-
+* To change the options available for the [Title area](#title-area), select **[!UICONTROL Show]** **[!UICONTROL All projects]** or **[!UICONTROL Show]** **[!UICONTROL Folders & Projects]**.
 
 * To define which columns to display for the [Project list](#project-list), select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) and from the **[!UICONTROL Customize table]** dialog select or unselect columns. Select **[!UICONTROL Apply]** to apply the customization. See [Project list](#project-list) for more details on the columns.
 
@@ -136,7 +137,7 @@ The filter panel consists of the following sections.
 
 ## Search 
 
-You use the Search area ➎ to search search for projects and folders using the ![Search](/help/assets/icons/Search.svg) field. Start typing and the [project list](#project-list) automatically filters on your search input.
+You use the Search area ➎ to search for projects and folders using the ![Search](/help/assets/icons/Search.svg) field. Start typing and the [project list](#project-list) automatically filters on your search input.
 
 The Search area also shows the filters applied from the Filter panel. 
 
