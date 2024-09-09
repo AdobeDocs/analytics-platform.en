@@ -9,14 +9,28 @@ role: User
 
 Adjusting the view density lets you see more data on the screen by reducing the vertical padding of the left panel, freeform tables and cohort tables. Three options are available:
 
-- **[!UICONTROL Compact]**: This is the version with the most condensed view.
-  ![The Compact view densities.](assets/view-density-compact.png)
+>[!BEGINTABS]
 
-- **[!UICONTROL Comfortable]**: This leaves a little more padding than the Compact version.
-  ![The Comfortable view densities.](assets/view-density-comfortable.png)
+>[!TAB Compact] 
 
-- **[!UICONTROL Expanded]** (default): This is the view you are used to in Workspace.
-  ![The Expanded view densities.](assets/view-density-expanded.png)
+This is the version with the most condensed view.
+
+![The Compact view densities.](assets/view-density-compact.png)
+
+>[!TAB Comfortable]
+
+This is the view you are used to in Workspace.
+ 
+![The Expanded view densities.](assets/view-density-comfortable.png)
+
+>[!TAB Expanded]
+
+This is the view you are used to in Workspace.
+
+![The Expanded view densities.](assets/view-density-expanded.png)
+
+>[!ENDTABS]
+
 
 To set the view density:
 

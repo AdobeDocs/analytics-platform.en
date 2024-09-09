@@ -20,7 +20,7 @@ To access projects in Customer Journey Analytics, select **[!UICONTROL Workspace
 From within title area ➊ you can create a project, create a folder, edit your preferences and show or hide a panel with additional tiles.
 
 * To show or hide a left panel that allows you to select between **[!UICONTROL Projects]** and **[!UICONTROL Learning]**, select ![Rail](/help/assets/icons/Rail.svg). 
-* The title shows Projects, optionally added with a path to the folder you have selected. For example [!UICONTROL Projects] > **[!UICONTROL Company Folder]**.
+* The title shows Projects, optionally added with a path to the folder you have selected. For example [!UICONTROL Projects] > **[!UICONTROL Company Folder]**. You can select individual subfolder parts to go directly to the specific folder. 
 * To show tiles for a [**[!UICONTROL Blank project]**](create-projects.md), [**[!UICONTROL Blank mobile scorecard]**](/help/mobile-app/create-scorecard.md), [**[!UICONTROL Guided analysis]**](/help/guided-analysis/overview.md), **[!UICONTROL Open the documentation]** and **[!UICONTROL Open release notes]**, select ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Show more]**. To hide the area with tiles, select ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Show less]**.
 * Based on what you select to show, using the [Show selector](#show-selector), you can:
   
@@ -28,8 +28,8 @@ From within title area ➊ you can create a project, create a folder, edit your 
   |---|---|
   | **[!UICONTROL Create project]** | Select to [create a new project](create-projects.md). |
   |  **[!UICONTROL Create folder]** | Select to [create a new folder](workspace-folders/create-folders.md). |
-  | ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL Edit preferences]** | [Edit preferences](/help/analysis-workspace/user-preferences.md) for all your projects. In case of limited space, this action is part of the ![More](/help/assets/icons/More.svg) submenu. |
-  | **[!UICONTROL Add projects]** | Select to [add projects](workspace-folders/add-projects.md) to the current folder. In case of limited space, this action is part of the ![More](/help/assets/icons/More.svg) submenu. |
+  | ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL Edit preferences]** | [Edit preferences](/help/analysis-workspace/user-preferences.md) for all your projects. When the breadcrumb results in limited space, this action is part of the ![More](/help/assets/icons/More.svg) submenu. |
+  | **[!UICONTROL Add projects]** | Select to [add projects](workspace-folders/add-projects.md) to the current folder. When the breadcrumb results in limited space, this action is part of the ![More](/help/assets/icons/More.svg) submenu. |
 
   
 
@@ -82,8 +82,8 @@ You can take actions on one or more projects using the context menu ![More](/hel
 | ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tag one or more projects or folders. The **[!UICONTROL Tag Components]** dialog displays to select one or more tags. Select **[!UICONTROL Save]** to save the tags for the selected projects or folders. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** or **[!UICONTROL Unapprove]** | Approve or unapprove a project. Only administrators can approve projects. |
 |  ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export CSV]** | Export the selected projects to a CSV file with name `Project List.csv`. |
-|  ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Add Projects]** | Add one or more projects to a selected folder. In **[!UICONTROL Add Projects]** you can select one or more projects. Select **[!UICONTROL Add]** to add the projects to the folder. | 
-| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **[!UICONTROL Move to]** | Move one or more selected projects to a folder. In the **[!UICONTROL Select Folder]**, select the folder to move the selected project to and select **[!UICONTROL Move]**. |
+|  ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Add Projects]** | Add one or more projects to a selected folder. In **[!UICONTROL Add Projects]** you can select one or more projects. Select **[!UICONTROL Add]** to add the projects to the folder. See [Add projects to folders](workspace-folders/add-projects.md#from-inside-a-folder) for more information. | 
+| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **[!UICONTROL Move to]** | Move one or more selected projects to a folder. In the **[!UICONTROL Select Folder]**, select the folder to move the selected project to and select **[!UICONTROL Move]**. See [Add projects to folders](workspace-folders/add-projects.md#from-the-project-list) for more information. |
 
 
 
@@ -105,21 +105,21 @@ The filter panel consists of the following sections.
 
 | Tags   | Description |
 |---|---|
-| ![Tags](/help/analysis-workspace/build-workspace-project/assets/projects-filters-tags.png){width="300"} | The **[!UICONTROL Tags]** section lets you filter on tags. <ul><li>You can ![Search](/help/assets/icons/Search.svg) *Search Tags* to search for tags you can use to filter.</li><li>You can select more than one tag. The tags available depend on selections made in other sections in the filter panel.</li><li>The numbers indicate:<ul><li>**2︎⃣**: The number of tags available for the projects resulting from the current filter.</li><li>7︎⃣: The number of projects associated with the specific tag.</li></ul></li></ul> |
+| ![Tags](/help/analysis-workspace/build-workspace-project/assets/projects-filters-tags.png){width="300"} | The **[!UICONTROL Tags]** section lets you filter on tags. <ul><li>You use ![Search](/help/assets/icons/Search.svg) *Search Tags* to search for tags you want to use to filter.</li><li>You can select more than one tag. The tags available depend on selections made in other sections in the filter panel.</li><li>The numbers indicate:<ul><li>**2︎⃣**: The number of tags available for the projects resulting from the current filter.</li><li>7︎⃣: The number of projects associated with the specific tag.</li></ul></li></ul> |
 
 
 ### Data view
 
 | Data view | Description |
 |---|---|
-| ![Data views](/help/analysis-workspace/build-workspace-project/assets/projects-filters-dataviews.png){width="300"} | The **[!UICONTROL Data view]** section lets you filter on data views. <ul><li>You can ![Search](/help/assets/icons/Search.svg) *Search Data views* to search for data views you can use to filter.</li><li>You can select more than one data view. The data views available depend on selections made in other sections in the filter panel.</li><li>The numbers indicate:<ul><li>**3︎⃣**: The number of data views available for the projects resulting from the current filter.</li><li>4︎⃣: The number of projects associated with the specific data view.</li></ul></li></ul> |
+| ![Data views](/help/analysis-workspace/build-workspace-project/assets/projects-filters-dataviews.png){width="300"} | The **[!UICONTROL Data view]** section lets you filter on data views. <ul><li>You use ![Search](/help/assets/icons/Search.svg) *Search Data views* to search for data views you want to use to filter.</li><li>You can select more than one data view. The data views available depend on selections made in other sections in the filter panel.</li><li>The numbers indicate:<ul><li>**3︎⃣**: The number of data views available for the projects resulting from the current filter.</li><li>4︎⃣: The number of projects associated with the specific data view.</li></ul></li></ul> |
 
 
 ### Owners
 
 | Owner | Description |
 |---|---|
-| ![Owners](/help/analysis-workspace/build-workspace-project/assets/projects-filters-owners.png){width="300"} | The **[!UICONTROL Owner]** section lets you filter on owners. <ul><li>You can ![Search](/help/assets/icons/Search.svg) *Search Owners* to search for owners you can use to filter.</li><li>You can select more than one owner. The owners available depend on selections made in other sections in the filter panel.</li><li>The numbers indicate:<ul><li>**3︎⃣**: The number of owners available for the projects resulting from the current filter.</li><li>4︎⃣: The number of projects associated with the specific owner.</li></ul></li></ul> |
+| ![Owners](/help/analysis-workspace/build-workspace-project/assets/projects-filters-owners.png){width="300"} | The **[!UICONTROL Owner]** section lets you filter on owners. <ul><li>You use ![Search](/help/assets/icons/Search.svg) *Search Owners* to search for owners you want to use to filter.</li><li>You can select more than one owner. The owners available depend on selections made in other sections in the filter panel.</li><li>The numbers indicate:<ul><li>**3︎⃣**: The number of owners available for the projects resulting from the current filter.</li><li>4︎⃣: The number of projects associated with the specific owner.</li></ul></li></ul> |
 
 
 ### Type

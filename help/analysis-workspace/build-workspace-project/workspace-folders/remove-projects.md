@@ -1,18 +1,13 @@
 ---
-description: Learn how to remove projects from folders
+description: Learn how to rename projects from folders
 keywords: Analysis Workspace
 title: Remove projects from folders
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
 ---
-# Remove a Project from a Folder
+# Delete projects
 
-To remove a project from a folder, you can move the project to another location or delete the project.
-
->[!NOTE]
->
->When an Admin moves a project to the Company Folder, the folder is shared with everyone even if the original shared privileges were restricted. When an Admin moves a project out of the Company Folder, the original or previous sharing privileges are respected.
 
 ## Move a project {#move-project-in-folder}
 
