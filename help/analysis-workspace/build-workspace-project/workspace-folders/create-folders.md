@@ -16,7 +16,7 @@ To create a new folder,
 
 1. Ensure you have selected [Show Folders & Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md#show-selector).
    
-1. Ensure the [Title area](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area) and the  [Project list](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list) display the folder where you want to create a new folder.
+1. Ensure the [Title area](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area) and the [Project list](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list) display the folder where you want to create a new folder.
    
 1. Click **Create folder**.
 

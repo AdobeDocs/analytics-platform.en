@@ -7,17 +7,15 @@ exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
 ---
 # Save projects
 
-Projects in Analysis Workspace are automatically saved every 2 minutes. 
-
-You can also save projects yourself. And save a project as a duplicate or save a project with version notes.
+Projects in Analysis Workspace are automatically saved every 2 minutes. You can also save projects yourself, save a project as a duplicate or save a project with version notes.
 
 ## Save
 
-To manually save a project, with your project open in Analysis Workspace, select **[!UICONTROL Project]**, then choose from the following options:
+To save a project manually, with your project open in Analysis Workspace, select **[!UICONTROL Project]**, then choose from the following options:
 
 * **[!UICONTROL Save]**
 
-  Save changes to your project. If the project is shared, recipients of the project will also see the changes. 
+  Save changes to your project. If the project is shared, recipients of the project also see the changes. 
   
   When you first save your project, a **[!UICONTROL Save]** dialog displays. 
 
@@ -27,39 +25,57 @@ To manually save a project, with your project open in Analysis Workspace, select
   
      * **[!UICONTROL Name]** (required). name of your project.
      * **[!UICONTROL Description]**. A description of your project.
-     * **[!UICONTROL Tags]**. Search for tags in the [!UICONTROL *Seach tags*] field or add new tags using **[!UICONTROL ENTER]**. 
+     * **[!UICONTROL Tags]**. Search for tags in the [!UICONTROL *Search tags*] field or add new tags using **[!UICONTROL ENTER]**. 
      * **[!UICONTROL Folder]**. Select a folder from the [!UICONTROL *Select a folder*] dropdown list. If you do not specify a folder, the project is saved in the current folder from which you created a new project.
      * **[!UICONTROL Version notes]**. Add version notes in the *Add notes* text area. 
 
-  1. Select Save to save your project.
+  1. Select **[!UICONTROL Save]** to save your project.
 
-  Saving your project, actually saves a version of your project that is stored for 90 days. 
+  Saving your project actually saves a version of your project that is stored for 90 days. 
   
-  If you save a project that you have shared, a **[!UICONTROL Save changes to shared project]** warning dialog prompts you for confirmation. You can select **[!UICONTROL Save]** to save the project or **[!UICONTROL Save as]** to save the project as a duplicate project with a new name.
+  If you save a project that you have shared, a **[!UICONTROL Save changes to shared project]** warning dialog prompts you for confirmation.
 
   ![Save project shared](assets/save-project-shared.png)
+
+  * Select **[!UICONTROL Save]** to save the project.
+  * Select **[!UICONTROL Save as]** to save the project as a duplicate project with a new name.
   
-  You can [open previouslay saved versions](#open-previously-saved-version) of your project.
 
 * **[!UICONTROL Save with notes]**
 
   ![Save with notes](assets/save-version-notes.png)
 
-  Before your project saves, add notes about what changed in the project. Notes are stored with the project version and are available when you [open a previous version](open-projects.md#open-previous-version) of the project. A version saved with notes is automatically stored for one year. You can [open previously saved versions](#open-previously-saved-version) of your project.
+  When you save your project add notes about what changed in the project. In the Save version notes dialog:
+
+  1. Enter your **[!UICONTROL Version notes]** in the **[!UICONTROL Add notes]** text area.
+  1. Select **[!UICONTROL Save]**.
+  
+  Notes are stored with the project version and are available when you [open a previous version](open-projects.md#open-previous-version) of the project. A version saved with notes is automatically stored for one year.
 
 * **[!UICONTROL Save As]**
 
   ![Save project as](assets/save-project-as.png)
 
-  Create a duplicate of your project with a new name. You can save the project to a different folder. The original project will not be affected.
+  Create a duplicate of your project with a new name. The Save as dialog displays.
 
+  1. Specify the following:
+  
+     * **[!UICONTROL Name]** (required). name of your project.
+     * **[!UICONTROL Description]**. A description of your project.
+     * **[!UICONTROL Tags]**. Search for tags in the [!UICONTROL *Search tags*] field or add new tags using **[!UICONTROL ENTER]**. 
+     * **[!UICONTROL Folder]**. Select a folder from the [!UICONTROL *Select a folder*] dropdown list. If you do not specify a folder, the project is saved in the current folder from which you created a new project.
+     * **[!UICONTROL Version notes]**. Add version notes in the *Add notes* text area. 
+
+  1. Select **[!UICONTROL Save]** to save your project.
+  
+  You can save the project to a different folder. The original project is not affected.
 
   
 <!-- Cannot find this option in CJA 
 | **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) that becomes available to your organization under **[!UICONTROL Project > New]** | 
 -->
 
-## Auto-save {#Autosave}
+## Auto-save
 
 
 >[!IMPORTANT]
@@ -67,13 +83,13 @@ To manually save a project, with your project open in Analysis Workspace, select
 >Even though new projects are auto-saved, you must save each new project manually the **first** time.
 >
 
-All projects in Analysis Workspace are automatically saved every 2 minutes to your local machine. This includes newly created projects that are not yet saved manually.
+All projects in Analysis Workspace are automatically saved every 2 minutes to your local machine. This auto-save includes newly created projects that are not yet saved manually.
 
 ### New projects
 
 Analysis Workspace prompts you to save new projects manually when switching to another project, closing the browser tab, and so forth. 
 
-  If for any reason you unexpectedly lose access to a newly created project before manually saving it, a recovery version of your project is saved on the Analysis Workspace landing page in a folder called **[!UICONTROL Recovered Projects (Last 7 Days)]**. You must restore the recovered project and manually save it to a desired location.
+  If for any reason you unexpectedly lose access to a newly created project before manually saving it, a recovery version of your project is saved on the Analysis Workspace landing page in a folder called **[!UICONTROL Recovered Projects (Last 7 Days)]**. Restore the recovered project and manually save it to a desired location.
 
   To restore a recovered project:
 
@@ -95,7 +111,7 @@ Some common scenarios:
 
 #### Open another project
 
-If you open an additional project while working on a project that contains changes that are not yet auto-saved, Analysis Workspace prompts you to save the current project before leaving.
+If you open another project when working on a project that contains changes that are not yet auto-saved, Analysis Workspace prompts you to save the current project.
 
 The following options are available:
 
@@ -107,7 +123,7 @@ The following options are available:
 
 #### Navigate away or close a tab
 
-If you navigate away from the page or close the browser tab while viewing a project with changes that are not yet auto-saved, the browser warns that your unsaved changes will be lost. You can choose to leave or cancel. How the browser warns you, is dependent on the browser you use.
+If you navigate away from the page or close the browser tab while viewing a project with changes that are not yet auto-saved, the browser warns you that your unsaved changes are lost. You can choose to leave or cancel. How the browser warns you depends on the browser you use.
 
 
 ### Browser crashes or session times out

@@ -6,6 +6,7 @@ feature: Workspace Basics
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
 role: User
 ---
+<!-- Is this article still needed -->
 # Save a New Project to a Folder
 
 To save a new project to a specific folder, select the folder name in the Save project dialogue window.

@@ -22,7 +22,7 @@ From within title area ➊ you can create a project, create a folder, edit your 
 * To show or hide a left panel that allows you to select between **[!UICONTROL Projects]** and **[!UICONTROL Learning]**, select ![Rail](/help/assets/icons/Rail.svg). 
 * The title shows Projects, optionally added with a path to the folder you have selected. For example [!UICONTROL Projects] > **[!UICONTROL Company Folder]**. You can select individual subfolder parts to go directly to the specific folder. 
 * To show tiles for a [**[!UICONTROL Blank project]**](create-projects.md), [**[!UICONTROL Blank mobile scorecard]**](/help/mobile-app/create-scorecard.md), [**[!UICONTROL Guided analysis]**](/help/guided-analysis/overview.md), **[!UICONTROL Open the documentation]** and **[!UICONTROL Open release notes]**, select ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Show more]**. To hide the area with tiles, select ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Show less]**.
-* Based on what you select to show, using the [Show selector](#show-selector), you can:
+* Based on what you select to show, using the [Show selector](#show-selector), you can edit preferences and perform actions on the current folder visible in **[!UICONTROL Projects]**:
   
   | Action | Description | 
   |---|---|
@@ -30,6 +30,9 @@ From within title area ➊ you can create a project, create a folder, edit your 
   |  **[!UICONTROL Create folder]** | Select to [create a new folder](workspace-folders/create-folders.md). |
   | ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL Edit preferences]** | [Edit preferences](/help/analysis-workspace/user-preferences.md) for all your projects. When the breadcrumb results in limited space, this action is part of the ![More](/help/assets/icons/More.svg) submenu. |
   | **[!UICONTROL Add projects]** | Select to [add projects](workspace-folders/add-projects.md) to the current folder. When the breadcrumb results in limited space, this action is part of the ![More](/help/assets/icons/More.svg) submenu. |
+  | **[!UICONTROL Rename folder]** | [Renames](workspace-folders/manage-folders.md#rename-folders) the current folder. |
+  | **[!UICONTROL Move folder]** | [Moves](workspace-folders/manage-folders.md#move-folders) the current folder. |
+  | **[!UICONTROL Delete folder]** | [Deletes](workspace-folders/manage-folders.md#delete-folders) the current folder. |
 
   
 

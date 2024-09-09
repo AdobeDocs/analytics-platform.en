@@ -107,8 +107,6 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Create folders and subfolders](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
       + [Manage folders](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
       + [Add or move projects to folders](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-      + [Remove a project](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
-      + [Save a new project](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
     + [Hotkeys (Shortcuts)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Color palettes](../analysis-workspace/build-workspace-project/color-palettes.md)
     + [View density](../analysis-workspace/build-workspace-project/view-density.md)

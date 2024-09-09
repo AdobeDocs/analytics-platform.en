@@ -14,7 +14,7 @@ You can add or move projects to a folder directly from the [Project list](/help/
 
 >[!NOTE]
 >
->When an administrator moves a project to the Company Folder, the folder is shared with everyone even if the original shared privileges were restricted. When an administrator moves a project out of the Company Folder, the original or previous sharing privileges are respected.
+>When an administrator moves a project to the Company Folder, the folder is shared with everyone even if the existing shared privileges are restricted. When an administrator moves a project out of the Company Folder, the existing shared privileges are re-applied.
 >
 
 To move projects to a folder from the [Project list](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list):
