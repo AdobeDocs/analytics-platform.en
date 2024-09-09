@@ -62,15 +62,15 @@ When you delete a folder, the following guidelines apply:
 
 To delete folders in Workspace, 
 
-   * Select one or more folders that you want to delete in the [Project list](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list).
+* Select one or more folders that you want to delete in the [Project list](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list).
 
-     1. Select **[!UICONTROL Delete]** from the [actions](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions) available from the context menu ![More](/help/assets/icons/More.svg) of the selected folder, or the blue action bar.
+  1. Select **[!UICONTROL Delete]** from the [actions](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions) available from the context menu ![More](/help/assets/icons/More.svg) of the selected folder, or the blue action bar.
 
-     1. In the **[!UICONTROL Are you sure?]** dialog, select **[!UICONTROL OK]** to delete the folders.
+  1. In the **[!UICONTROL Are you sure?]** dialog, select **[!UICONTROL OK]** to delete the folders.
 
-   * Within the folder that you want to delete. 
+* Within the folder that you want to delete. 
      
-     1. Select **[!UICONTROL Delete folder]** from ![More](/help/assets/icons/More.svg) in the [Title area](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area).
+  1. Select **[!UICONTROL Delete folder]** from ![More](/help/assets/icons/More.svg) in the [Title area](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area).
 
-     1. In the **[!UICONTROL Delete *name* folder?]** dialog, select **[!UICONTROL OK]**.
+  1. In the **[!UICONTROL Delete *name* folder?]** dialog, select **[!UICONTROL OK]**.
   

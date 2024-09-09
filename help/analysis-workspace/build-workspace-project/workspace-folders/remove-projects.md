@@ -6,8 +6,9 @@ feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
 ---
-<!-- Is this article still needed -->
 # Delete projects
+
+<!-- Is this article still needed -->
 
 
 ## Move a project {#move-project-in-folder}
