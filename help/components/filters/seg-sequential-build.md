@@ -48,7 +48,7 @@ Identify persons who viewed a page and then viewed another page. The event-level
 
 ![Sequential filter include everyone](assets/sequence-include-everyone.png)
 
-buu#### Sequence across sessions
+#### Sequence across sessions
 
 Identify persons who viewed a page in one session, then viewed another page in another session. To differentiate between sessions, use containers to build the sequence and define ![Visit](/help/assets/icons/Visit.svg) **[!UICONTROL Session]** level for each container.
 
@@ -301,7 +301,7 @@ An example of a complex sequential filter if you want to find the persons that
 
 ## A final example
 
-As a final example, you want to identify persons that learned about a specific product page without  that are never touched by your Empower Your Move campaign and in their first visit to your online store viewed the Home page but did not look further at any fitness (gear) products from the Men category. Howver in ther next session directly went to a product page and placed an online order without going through the Home page first.
+As a final example, you want to identify persons that learned about a specific product page. Without these persons ever being touched by your Empower Your Move campaign. And in their first visit to your online store viewed the Home page but did not look further at any fitness (gear) products from the Men category. However in ther next session directly after that, they went to a product page and placed an online order without going through the Home page first.
 
 
 ![Complex sequential filter example](assets/sequential-complex.png)
