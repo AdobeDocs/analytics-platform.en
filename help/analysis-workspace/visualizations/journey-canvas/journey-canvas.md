@@ -121,6 +121,14 @@ Furthermore, changes made to a journey in Journey Optimizer sync to Journey canv
 
 After you modify a Journey Optimizer journey in Journey canvas, changes can occur in data processing, available features, and synchronization behavior.
 
+If you make a significant modification to a Journey Optimizer journey in Journey canvas, changes can occur in data processing, available features, and synchronization behavior. A significant modification includes any of the following:
+
+* Adding or removing a node
+
+* Adding or removing an arrow between nodes
+
+If you make other changes to a Journey Optimizer journey in Journey canvas, such as dragging a node or adding a breakdown, the differences described in the following sections do not apply.
+
 >[!NOTE]
 >
 >To return the journey to its original state, you can press Ctrl+z after making your first change in Journey canvas. Or, you can delete and [re-create the journey in Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
@@ -133,7 +141,11 @@ This is because, unlike Journey Optimizer, Journey canvas allows you to apply mu
 
 #### Feature differences
 
-After you modify a Journey Optimizer journey in Journey canvas, the [!UICONTROL **Node type**] drop-down field is no longer available. 
+After you modify a Journey Optimizer journey in Journey canvas, availability might change for the following features, depending on your modifications:
+
+* The [!UICONTROL **Node type**] drop-down field is no longer available. 
+
+* 
 
 For more information about this field, see [Configure settings](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
