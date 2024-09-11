@@ -79,6 +79,6 @@ Analysis Workspace provides a number of default date ranges.
 
 ## Custom date ranges
 
-You can create your own custom date ranges. See [Create date range](/help/components/date-ranges/create.md) for the various options available to create date ranges. You then build, modify, and save date ranges in the [Date range builder](create-annotations.md#annotation-builder).
+You can create your own custom date ranges. See [Create date range](/help/components/date-ranges/create.md) for the various options available to create date ranges. You then build, modify, and save date ranges in the [Date range builder](create.md#date-range-builder).
 
 You use the [Date range manager](manage.md) to manage date ranges.
