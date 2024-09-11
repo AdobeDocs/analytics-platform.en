@@ -185,7 +185,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [View forecasts in Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
     + [Statistical techniques used in forecasting service](../analysis-workspace/c-forecast/statistics-forecasting.md)
   + Intelligent Alerts {#alerts}
-    + [Intelligent Alerts overview](help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)
+    + [Intelligent Alerts overview](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)
     + [Differences in Customer Journey Analytics](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md)
     + [Create alerts](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md)
     + [Manage alerts](/help/analysis-workspace/c-intelligent-alerts/alert-manager.md)
