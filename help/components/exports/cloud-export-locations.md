@@ -33,6 +33,7 @@ For information about how to manage existing locations, including viewing, editi
    The Location dialog displays.
 
 1. Specify the following information:
+
    |Field | Function | 
    |---------|----------|
    | [!UICONTROL **Name**] | The name of the location.  | 

@@ -11,17 +11,19 @@ This topic discusses how to create and publish audiences identified in Customer 
 
 Read this [overview](/help/components/audiences/audiences-overview.md) to familiarize yourself with the concept of Customer Journey Analytics audiences.
 
-## Create audience {#create}
+## Create and publish an audience {#create}
 
-1. To create audiences, you have three ways to get started:
+1. To begin creating and publishing an audience, do one of the following:
 
    | Creation method | Details |
    | --- | --- |
    | From the main **[!UICONTROL Components] > [!UICONTROL Audiences]** menu | The Audiences Manager page opens. Click **[!UICONTROL Create audience]** and the [!UICONTROL Audience builder] opens. |
-   | From within a Freeform table | Right-click an item in a Freeform table and select **[!UICONTROL Create an audience from selection]**. Using this method pre-populates the filter with the dimension or dimension item you selected in the table. |
+   | From within a Freeform table | Right-click an item in a Freeform table and select **[!UICONTROL Create audience from selection]**. Using this method pre-populates the filter with the dimension or dimension item you selected in the table. |
    | From the filter creation/editing UI | Check the box that says **[!UICONTROL Create an audience from this filter]**. Using this method pre-populates the filter. |
 
    {style="table-layout:auto"}
+
+   <!-- add beneath the Freeform table row above: | From within a Journey canvas visualization | Right-click a node in a Journey canvas visualization and select **[!UICONTROL Create audience]**. Using this method pre-populates the filter with the dimension or dimension item you selected in the table. | -->
 
 1. Build the audience.
 
@@ -68,26 +70,26 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 1. Click **[!UICONTROL View audience in AEP]** within the same message and you will be taken to the [Segment UI](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html) in Adobe Experience Platform. See below for more information.
 
-## What happens after an audience is created? {#after-audience-created} 
+## What happens after an audience is created and published? {#after-audience-created} 
 
-After you have created an audience, Adobe creates an Experience Platform streaming segment for each new Customer Journey Analytics audience. An Adobe Experience Platform streaming segment will only be created if your organization is set up for streaming segmentation.
+After you create and publish an audience in Customer Journey Analytics, the audience is available in Experience Platform. An Adobe Experience Platform streaming segment will only be created if your organization is set up for streaming segmentation.
 
-* The Adobe Experience Platform segment shares the same name/description as the Customer Journey Analytics audience, but the name will be appended with the Customer Journey Analytics audience ID to ensure that it is unique.
-* If the Customer Journey Analytics audience name/description changes, the Adobe Experience Platform segment name/description reflects that change as well.
-* If a Customer Journey Analytics audience is deleted by a user, the Adobe Experience Platform segment is NOT deleted. The reason is that the Customer Journey Analytics audience may later get undeleted.
+* The audience in Platform shares the same name/description as the Customer Journey Analytics audience, but the name will be appended with the Customer Journey Analytics audience ID to ensure that it is unique.
+* Any changes made to the name or description of the audience in Customer Journey Analytics are reflected in Platform.
+* If an audience is deleted in Customer Journey Analytics, the audience continues to be available in Platform.
 
 ## Latency considerations {#latency}
 
 At several points prior to, during, and after audience publishing, latencies can occur. Here is an overview of possible latencies.
 
-![Latencies in audience publishing as described in this section.](/help/components/audiences/assets/latency-diagram.png)
+![Latencies in audience publishing as described in this section.](assets/latency-diagram.svg)
 
 | # | Latency point | Latency duration |
 | --- | --- | --- |
 | Not shown | Adobe Analytics to Analytics source connector (A4T) | Up to 30 minutes |
 | 1 | Data ingestion into Data Lake (from Analytics source connector or other sources) | Up to 90 minutes |
 | 2 | Data ingestion from Experience Platform Data Lake into Customer Journey Analytics | Up to 90 minutes |
-| 3 | Audience publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data.<p>**Note**: the audience gets created/defined in Experience Platform within 1-2 minutes. However, it takes about 60 minutes before the audience starts receiving the IDs based on matched criteria and is ready for activation. | Around 60 minutes |
+| 3 | Audience publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | A few seconds |
 | 4 | Refresh frequency for audiences |<ul><li>One-time refresh (latency of less than 5 minutes)</li><li>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate) |
 | 5 | Creating destination in Adobe Experience Platform: Activating the new segment | 1-2 hours |
 
@@ -95,15 +97,34 @@ At several points prior to, during, and after audience publishing, latencies can
 
 ## Use Customer Journey Analytics audiences in Experience Platform {#audiences-aep}
 
-Customer Journey Analytics takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). Customer Journey Analytics sends the audience over to Experience Platform with the primary identity set, according to what was selected as the [!UICONTROL Person ID] when the connection was configured.
+Customer Journey Analytics takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). Customer Journey Analytics sends the audience to Experience Platform with the primary identity set, according to what was selected as the [!UICONTROL Person ID] when the connection was configured.
 
-RTCP then examines each namespace/ID combination and looks for a profile that it may be part of. A profile is basically a cluster of linked namespaces, IDs and devices. If it finds a profile, it will add the namespace and ID to the other IDs in this profile as a segment membership attribute. Now, for example, <user@adobe.com> can be targeted across all their devices and channels. If a profile is not found, a new one is created.
+RTCP then examines each namespace/ID combination and looks for a profile that it may be part of. A profile is basically a cluster of linked namespaces, IDs and devices. If it finds a profile, it adds the namespace and ID to the other IDs in this profile as a segment membership attribute. For example, <user@adobe.com> can be targeted across all their devices and channels. If a profile is not found, a new one is created.
 
-You can view Customer Journey Analytics audiences in Platform by going to **[!UICONTROL Segments]** > **[!UICONTROL Create segments]** > **[!UICONTROL Audiences]** tab > **[!UICONTROL CJA Audiences]**.
+To view Customer Journey Analytics audiences in Platform:
 
-You can drag Customer Journey Analytics audiences into the segment definition for Adobe Experience Platform segments.
+>[!AVAILABILITY]
+>
+>The functionality described in the following steps is in the Limited Testing phase of release and might not be available yet in your environment. If these steps don't match what you see in your environment, use the following steps instead: Go to [!UICONTROL **Segments**] > [!UICONTROL **Create segments**] > [!UICONTROL **Audiences**] tab > [!UICONTROL **CJA Audiences**]. 
+>
+>This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
 
-![Adobe Expericen Platform UI highlighting Segments in the left-pane and CJA Audiences in the main panel.](assets/audiences-aep.png)
+1. Expand [!UICONTROL **Customer**] in the left rail, then select [!UICONTROL **Audiences**]. <!-- is there a folder called "Customer Journey Analytics? -->
+
+1. Select the [!UICONTROL **Browse**] tab.
+
+   ![Audiences option in the left panel](assets/audiences-aep.png)
+
+1. To locate the audience that you published from Customer Journey Analytics, do any of the following:
+
+   * Sort the table by the [!UICONTROL **Origin**] column to view audiences that show [!UICONTROL **Customer Journey Analytics**] as the origin.
+   
+   * Select the filter icon.
+   
+   * Use the search field.
+
+For more information about using Audiences in Platform, see the [Audiences](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#audiences) section in [Segment Builder UI guide](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html) in the Experience Platform documentation.
+   
 
 ## FAQs {#faq}
 

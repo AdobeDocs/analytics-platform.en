@@ -204,6 +204,21 @@ prod:all=> \dv
 
 By default, the schema of your data views uses nested structures, just like the original XDM schemas. The integration also supports the `FLATTEN` option. You can use this option to force the schema for the data views (and any other table in the session) to be flattened. Flattening allows for easier use in BI tools that don't support structured schemas. See [Working with nested data structures in Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
 
+
+### Defaults and limitations
+
+The following additional defaults and limitations apply when using the BI Extenion:
+
+* The BI extension requires a row limit for the query results. The default is 50, but you can override this in SQL using `LIMIT n`, where `n` is 1 - 50000.
+* The BI extension requires a date range to limit the rows used for calculations. The default is the last 30 days, but you can override this in your SQL `WHERE` clause using the special [`timestamp`](#timestamp) or [`daterange`](#date-range) columns.
+* The BI extension requires aggregate queries. You can't use SQL like `SELECT * FROM ...` to get the raw, underlying rows. At a high level, your aggregate queries should use:
+  * Select totals using `SUM` and/or `COUNT`.<br/> For example, `SELECT SUM(metric1), COUNT(*) FROM ...`
+  * Select metrics broken down by a dimension. <br/>For example, `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
+  * Select distinct metric values.<br/>For example, `SELECT DISTINCT dimension1 FROM ...`
+  
+    See for more details [Supported SQL](#supported-sql).
+
+
 ### Supported SQL
 
 See [Query Service SQL reference](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/overview) for the full reference on what type of SQL is supported.
@@ -305,7 +320,7 @@ The `daterangeName` special column can be used to filter your query using a name
 >[!NOTE]
 >
 >Power BI is not supporting `daterange` metrics that are less than a day (hour, 30 minute, 5 minute, etc.).
-
+>
 
 #### Filter ID
 

@@ -7,7 +7,7 @@ role: User
 ---
 # Calculated metrics overview
 
-Calculated and Advanced Calculated (or Derived) Metrics are custom metrics that you can create from existing metrics. Our Calculated Metrics tools offer a highly flexible way of building, managing and curating metrics. They allow you as marketers, product managers and analysts to ask questions of the data without having to change your implementation.
+Calculated and Advanced Calculated Metrics are custom metrics that you can create from existing metrics. Our Calculated Metrics tools offer a highly flexible way of building, managing and curating metrics. They allow you as marketers, product managers and analysts to ask questions of the data without having to change your implementation.
 
 You can
 
@@ -19,7 +19,7 @@ You can
 
 Here is a comparison of Calculated Metrics and Advanced Calculated Metrics capabilities: 
 
-|  Builder Options  | Calculated Metrics  | Advanced Calculated (Derived) Metrics  |
+|  Builder Options  | Calculated Metrics  | Advanced Calculated Metrics  |
 |---|---|---|
 | Format types (decimal, time, percent, currency  | Yes  | Yes  |
 | Attribution changes (default, linear, participation, etc.  | Yes  | Yes  |
