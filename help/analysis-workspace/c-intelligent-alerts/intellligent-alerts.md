@@ -36,7 +36,7 @@ If an alert uses anomaly detection, the training period varies based on the gran
 * Daily granularity: 35 days + same range last year
 * Hourly granularity: 336 hours
 
-For more information, see [Statistical techniques used in Anomaly Detection](/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).
+For more information, see [Statistical techniques used in Anomaly Detection](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).
 
 ## Create alerts
 

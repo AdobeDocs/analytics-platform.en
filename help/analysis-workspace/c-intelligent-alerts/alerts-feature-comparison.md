@@ -26,7 +26,7 @@ This is due to the following reasons:
 
 * Platform's ability to hold all kinds of data schemas and types
 
-  Unlike Adobe Analytics (which reports only on web data), [many different types of data can be ingested into Adobe Experience Platform](/help/data-ingestion/data-ingestion.md.) to be reported on in Customer Journey Analytics, and not all types of data can be sent sequentially and in real time. 
+  Unlike Adobe Analytics (which reports only on web data), [many different types of data can be ingested into Adobe Experience Platform](/help/data-ingestion/data-ingestion.md) to be reported on in Customer Journey Analytics, and not all types of data can be sent sequentially and in real time. 
 
 * A delay in the delivery of batch data to Platform datasets
 
