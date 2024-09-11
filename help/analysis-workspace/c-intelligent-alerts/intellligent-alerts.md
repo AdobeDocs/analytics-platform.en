@@ -6,6 +6,8 @@ role: User, Admin
 ---
 # Intelligent Alerts overview
 
+{{release-limited-testing}}
+
 Intelligent Alerts (or just "alerts") in Customer Journey Analytics allow you to be notified when abnormal events occur in your data. 
 
 You can set alerts to be triggered based on anomaly thresholds, changed percentages, or specific data points. Alerts provide granular controls that integrate with [Anomaly Detection](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md), triggering when you need them most.

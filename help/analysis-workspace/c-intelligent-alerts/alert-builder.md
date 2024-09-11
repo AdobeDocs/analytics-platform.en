@@ -6,6 +6,8 @@ role: User, Admin
 ---
 # Create alerts
 
+{{release-limited-testing}}
+
 >[!NOTE]
 >
 >Intelligent Alerts are available to Adobe Analytics Prime and Adobe Analytics Ultimate customers only.
