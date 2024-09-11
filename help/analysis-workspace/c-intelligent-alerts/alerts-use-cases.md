@@ -1,7 +1,7 @@
 ---
 description: Use cases for intelligent alerts.
 title: Intelligent Alerts - use cases
-feature: Alerts
+feature: Workspace Basics
 role: User, Admin
 ---
 # Intelligent Alerts - use cases

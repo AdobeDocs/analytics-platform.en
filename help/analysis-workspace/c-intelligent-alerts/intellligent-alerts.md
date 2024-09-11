@@ -1,7 +1,7 @@
 ---
 description: The new Intelligent Alerts system allows for more granular control over alerts and integrates anomaly detection with the alert system.
 title: Intelligent Alerts overview
-feature: Alerts
+feature: Workspace Basics
 role: User, Admin
 ---
 # Intelligent Alerts overview

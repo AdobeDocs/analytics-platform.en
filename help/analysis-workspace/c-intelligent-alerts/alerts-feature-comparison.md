@@ -1,7 +1,7 @@
 ---
 description: Learn how Intelligent Alerts differ in Customer Journey Analytics from Adobe Analytics
 title: Intelligent Alerts feature comparison Customer Journey Analytics and Adobe Analytics
-feature: Alerts
+feature: Workspace Basics
 role: User, Admin
 ---
 # Intelligent Alerts feature comparison: Customer Journey Analytics and Adobe Analytics

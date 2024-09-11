@@ -1,7 +1,7 @@
 ---
 description: Get alerts when project components reach certain thresholds.
 title: Create alerts (Analysis Workspace)
-feature: Alerts
+feature: Workspace Basics
 role: User, Admin
 ---
 # Create alerts

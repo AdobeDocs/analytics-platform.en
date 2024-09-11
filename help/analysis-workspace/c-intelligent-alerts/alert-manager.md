@@ -1,7 +1,7 @@
 ---
 description: Create, edit, or delete alerts.
 title: Alert Manager (Analysis Workspace)
-feature: Alerts
+feature: Workspace Basics
 role: User, Admin
 ---
 # Manage alerts
