@@ -91,7 +91,7 @@ The [Annotations list](manage-annotations.md#annotations-list) is automatically 
 
 You can edit an annotation in two ways:
 
-* In a visualization, hover over the annotation and click the pencil icon within the popover.
+* In a Workspace project, use the [Component info](/help/components/use-components-in-workspace.md#component-info) icon.
 
 * In the [[!UICONTROL Annotations] list](#annotations-list), select the title of the annotation.
 

@@ -6,11 +6,28 @@ solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
 role: User
 ---
-# Calendar and date ranges overview
+# Date ranges overview
 
-Using the calendar, you can specify dates and date ranges, or select a preset. Date ranges are a type of component you can use in Workspace projects. They allow you to see data trended over time or see when events happen the most. Date ranges are color coded in purple. Custom date ranges allow you to customize the dates you see in Workspace projects. 
+<!--
 
-Calendar selections apply at the panel level, but you have the option to apply them to all panels. When you click a date range in Workspace, the interface displays the current calendar month and the previous calendar month. You can adjust these two calendars by clicking the right and left arrows in each respective upper corner.
+In a Workspace project, you typically use the [calendar in a panel](/help/analysis-workspace/c-panels/panels.md#calendar) to specify the date range for the visualizations in that panel.
+
+Date range components enable you to override the calendar settings for the panel.
+
++++ Video illustrating use of calendar and date ranges
+
+>[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
+
+{{videoaa}}
+
++++
+
+
+
+Using the calendar, you can specify dates and date ranges, or select a preset. Date ranges are components you can use in Workspace projects. Using date ranges you can see data trended over time or see when events happen the most. Date ranges are color coded in purple. Custom date ranges allow you to customize the dates you see in Workspace projects. 
+
+In your Workspace projects, date ranges
+Calendar selections apply initially and mainly at the panel level, but you have the option to apply them to all panels. See 
 
 ![Calendar showing October 2022 and November 2022 with November 1 through 30 selected.](assets/aw_calendar2.png){width="60%"}
 
@@ -18,7 +35,7 @@ The first click on a calendar starts a date range selection. The second click co
 
 You can also drag dates (and time dimensions) into a Workspace project. You can select specific days, weeks, months, years, or a rolling date.
 
-[Using Date Ranges and Calendar in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html) (4:07)
+
 
 | Setting | Description |
 | --- | --- |
@@ -68,7 +85,9 @@ If you build a filter or use a filter with a rolling date, for example, the Last
 
 ## Guidelines for panel date ranges and previews {#guidelines-panel-dates}
 
-*   Starting with the February release, component and data previews will be based on the panel date range and not the last 90 days. 
-*   All components listed in the left panel will be available based on the panel date range. 
-*   All date previews in the filter and calculated metric builders will be based on the panel date range (unless accessed from the component managers, which do not have an associated panel, they will still be based on the last 90 days). 
-*   Any data previews will display data or components based on the panel date range.
+* Starting with the February release, component and data previews will be based on the panel date range and not the last 90 days. 
+* All components listed in the left panel will be available based on the panel date range. 
+* All date previews in the filter and calculated metric builders will be based on the panel date range (unless accessed from the component managers, which do not have an associated panel, they will still be based on the last 90 days). 
+* Any data previews will display data or components based on the panel date range.
+
+-->

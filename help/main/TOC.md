@@ -255,8 +255,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Mark filters as favorites](../components/filters/filters-favorite.md)
     + [Approve filters](../components/filters/filters-approve.md)
     + [Copy filters](../components/filters/filters-copy.md)
-    
-
     + [Manage filters](../components/filters/manage-filters.md)
     + [Operators](../components/filters/operators.md)
   + Calculated metrics {#cja-calcmetrics}
@@ -281,13 +279,12 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Default calculated metrics](../components/calc-metrics/default-calcmetrics.md)
     + [Basic functions](../components/calc-metrics/cm-functions.md)
     + [Advanced functions](../components/calc-metrics/cm-adv-functions.md)
-  + Calendar and date ranges {#cja-date-ranges}
-    + [Overview](../components/date-ranges/overview.md)
-    + [Calendar and date ranges overview](../components/date-ranges/calendar.md)
+  + Date ranges {#cja-date-ranges}
+    + [Overview](../components/date-ranges/calendar.md)
     + [Create a date range](../components/date-ranges/create.md)
     + [Manage date ranges](../components/date-ranges/manage.md)
-    + [Create custom date ranges](../components/date-ranges/custom-date-ranges.md)
     + [Date comparison](../components/date-ranges/time-comparison.md)
+    + [Examples](../components/date-ranges/custom-date-ranges.md)
   + Exports {#exports}
     + [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md)
     + [Configure cloud export locations](/help/components/exports/cloud-export-locations.md)

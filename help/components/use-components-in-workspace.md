@@ -38,7 +38,7 @@ See the [Components overview](/help/components/overview.md) for more information
 
    * [Add date ranges to a project](#add-date-ranges-to-a-project)
 
-## Add dimensions to a project
+### Add dimensions to a project
 
 [Dimensions](/help/components/dimensions/overview.md) are variables in Adobe Analytics that typically contain string values. In contrast, [metrics](/help/components/calc-metrics/calc-metr-overview.md) contain numeric values that tie to a dimension. A basic report shows rows of string values (dimension), against a column of numeric values (metric).
 
@@ -56,7 +56,7 @@ See the [Components overview](/help/components/overview.md) for more information
 
 For more information about how to use dimensions in Analysis Workspace, see [Preview dimensions](/help/components/dimensions/view-dimensions.md), [Break down dimensions](/help/components/dimensions/t-breakdown-fa.md), and [Time-parting dimensions](/help/components/dimensions/time-parting-dimensions.md).
 
-## Add metrics to a project
+### Add metrics to a project
 
 Metrics allow you to quantify data points in Analysis Workspace. They are most commonly used as columns in a visualization and tied to dimensions.
 
@@ -83,7 +83,7 @@ To add a metric to a project in Analysis Workspace:
      
 For more information about metrics, see [Metrics](/help/components/apply-create-metrics.md).
 
-## Add filters to a project
+### Add filters to a project
 
 [Filters](/help/components/filters/filters-overview.md) allow you to identify subsets of persons, sessions or events based on characteristics or specific interactions.
 
@@ -100,16 +100,27 @@ You can use filters in Analysis Workspace in any of the following ways:
   Whe you define components like [calculated metrics](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [annotations](/help/components/annotations/create-annotations.md#annotation-builder), or even [filters](/help/components/filters/filter-builder.md) you can use filters as part of the definition.
 
 
-## Add date ranges to a project
+### Add date ranges to a project
 
 [Date ranges](/help/components/date-ranges/custom-date-ranges.md) determine the reporting time frame in Analysis Workspace, and can be applied to one or more panels within a project.
 
 Each panel includes a date range by default. There are multiple ways to update a date range for a panel. One way to update a date range for a panel in Analysis Workspace is to drag a date range component from the left panel:
 
-1. Start adding a date range to your project in Analysis Workspace, as described in [Add components to a project](#add-components-to-a-project).
+1. Optionally, add a date range to your project in Analysis Workspace, as described in [Add components to a project](#add-components-to-a-project).
 
-1. Drag a date range from the left panel onto the current date range.
+1. Drag and drop a date range from the left panel onto:
 
-   ![Drop a date range](assets/add-date-range.gif)
+   * The current date range, to modify the date range for the panel.
 
-For more information about how to use calendars and date ranges in Analysis Workspace, see [Calendar and date ranges overview](/help/components/date-ranges/custom-date-ranges.md).
+      ![Drop a date range](assets/add-date-range.gif)
+
+   * A metric or dimension in a Freeform table visualization. See [Use data ranges](/help/components/date-ranges/overview.md#use-date-ranges) for more information.
+
+For more information about how to use and manage date ranges in Analysis Workspace, see [Date ranges overview](/help/components/date-ranges/overview.md).
+
+## Component info
+
+You can hover over any component to display the ![InfoOutline](/help/assets/icons/InfoOutline.svg) **[!UICONTROL Info]** icon. When selected, a popup is displayed with additional information on the component. Based on your access control, you can:
+
+* Access the ![Bookmark](/help/assets/icons/Bookmark.svg) [!UICONTROL Data dictionary] definition for the component.
+* Access the ![Edit](/help/assets/icons/Edit.svg) component builder or data view where the component is defined.

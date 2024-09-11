@@ -75,14 +75,27 @@ The panel calendar controls the reporting date range for tables and visualizatio
 1. Select a date range by selecting first the start date and then the end date. 
    Alternatively, you can select a **[!UICONTROL Preset]** from the [!UICONTROL *Select a preset*] dropdown list.
 
-2. Select **[!UICONTROL Apply]** to apply the date range to the panel from which you invoked the calendar. 
+1. Optionally, select **[!UICONTROL Show advanced settings]** to:
+
+   * Specify **[!UICONTROL Start time]** and **[!UICONTROL End time]** other than the default `12:00 AM` (`0:00`) and `11:59 PM` (`23:59`). End times always include 59 seconds. For a date range that spans many days, the start time applies to the first day of the date range and the end time applies to the last day in your date range. Use **[!UICONTROL (Reset time values)]** to reset start and end time to their defaults.
+   * **[!UICONTROL Make date range components relative to panel calendar]**. If disabled, date range components used in the panel are relative to the current time. If enabled, date range components used in the panel are relatve to the panel calendar.
+   * **[!UICONTROL Use rolling dates]**. If enabled, preset date ranges like **[!UICONTROL Last 7 full days]** dynamically update as current date and time progress. If disabled, such presets are not updated once applied.
+     
+     ![Rolling dates](assets/calendar-rolling.png)
+
+     You can select the text in brackets (for exampe **[!UICONTROL fixed start - rolling daily]**) to extend the panel and specify details for **[!UICONTROL Start]** and **[!UICONTROL End]**.
+
+       1. Select **[!UICONTROL Start of]**, **[!UICONTROL End of]**, or **[!UICONTROL Fixed day]**.
+       1. When you have selected **[!UICONTROL Start of]** or **[!UICONTROL End of]**, you can build a full expression. For example: **[!UICONTROL End of]** **[!UICONTROL current year]** **[!UICONTROL plus]** `1` **[!UICONTROL day]**. Pick the appropriate value for each individual part of the expression.
+          * Select a value for current. For example **[!UICONTROL current year]**.
+          * Select a value for additional calculation. For example, **[!UICONTROL plus]**.
+          * When you have specified additional calculation, specify a value. For example `1`.
+          * When you have specified additional calculation, select the time period to use for the calculation. For example **[!UICONTROL day]**.
+     
+     Select **[!UICONTROL Hide details]** to hide the details for rolling dates calculation.
+
+1. Select **[!UICONTROL Apply]** to apply the date range to the panel from which you invoked the calendar. 
    Select **[!UICONTROL Apply to all panels]** to apply the date range to all panels in the Workspace project.
-
-Select **[!UICONTROL Show advanced settings]** to 
-
-* Optionally specify **[!UICONTROL Start time]** and **[!UICONTROL End time]** other than the default `12:00 AM` (`0:00`) and `11:59 PM` (`23:59`). End times always include 59 seconds. For a date range that spans many days, the start time applies to the first day of the date range and the end time applies to the last day in your date range. Use **[!UICONTROL (Reset time values)]** to reset start and end time to their defaults.
-* **[!UICONTROL Make date range components relative to panel calendar]**. If disabled, date range components used in the panel are relative to the current time. If enabled, date range components used in the panel are relatve to the panel calendar.
-* **[!UICONTROL Use rolling dates]**. If enabled, preset date ranges like Last 7 Full Days dynamically update as current date and time progress. If disabled, such presets are not updated once applied.
 
 
 ## Drop zone {#dropzone}
