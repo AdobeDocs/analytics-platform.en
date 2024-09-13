@@ -36,14 +36,14 @@ To create a panel :
 
 * Drag and drop a panel from the **[!UICONTROL Panels]** left panel onto your canvas.
 * Select a panel from the [Blank panel](blank-panel.md).
-* Use **[!UICONTROL Insert]** menu in Workspace and select your panel. Alternatively, you can use the shortcut.
+* Use **[!UICONTROL Insert]** menu in Workspace and select your panel. Alternatively, you can use any of the [shortcuts](../build-workspace-project/fa-shortcut-keys.md) to insert a panel.
 
 ![Create a panel](assets/create-panel.png)
 
 
 ## Data view 
 
-Each panel is associated with a [data view](/help/data-views/data-views.md), identified by ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *name of data view*]** in the dropdown list at the top right of the panel.
+Each panel is associated with a [data view](/help/data-views/data-views.md), identified by ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *name of data view*]** in the dropdown menu at the top right of the panel.
 
 When you create a Blank Workspace project, the default data view for the initial panel is the data view you last worked on in Customer Journey Analytics.
 
@@ -73,7 +73,7 @@ The panel calendar controls the reporting date range for tables and visualizatio
 ![The calendar window showing the selected date range.](assets/panel-calendar.png)
 
 1. Select a date range by selecting first the start date and then the end date. 
-   Alternatively, you can select a **[!UICONTROL Preset]** from the [!UICONTROL *Select a preset*] dropdown list.
+   Alternatively, you can select a **[!UICONTROL Preset]** from the [!UICONTROL *Select a preset*] dropdown menu.
 
 1. Optionally, select **[!UICONTROL Show advanced settings]** to:
 

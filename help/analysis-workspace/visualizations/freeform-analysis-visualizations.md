@@ -114,7 +114,7 @@ Which visualization settings are available depends on the visualization. The tab
 | **[!UICONTROL Show forecast]** | Enhance line graphs and freeform tables by displaying forecast values. |
 | **[!UICONTROL Show min]** | Show the minimal value in the visualization. |
 | **[!UICONTROL Show max]** | Show the maximal value in the visualization. |
-| **[!UICONTROL Show trendline]** | Show a trendline in the visualization. When selected, you can select the type of trendline from the dropdown list. | 
+| **[!UICONTROL Show trendline]** | Show a trendline in the visualization. When selected, you can select the type of trendline from the dropdown menu. | 
 
 
 

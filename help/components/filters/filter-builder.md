@@ -68,7 +68,7 @@ To add a component:
 
 To edit a component:
 
-* Select a new operator for the component from the operator dropdown list.
+* Select a new operator for the component from the operator dropdown menu.
 * Select or specify a different value for the operator if appropriate. 
 * If the component type is a dimension, you can define the attribution model. See [Attribution model](#attribution-models) for more information.
 

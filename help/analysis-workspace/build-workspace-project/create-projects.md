@@ -13,11 +13,9 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 
 1. Select **[!UICONTROL Projects]** in the left panel, then select **[!UICONTROL Create project]**.
 
-1. Select:
+1. Select **Blank Workspace project** to create your Workspace project using a browser.
 
-   * **Blank Workspace project** to create Workspace project that you can share with others using a browser.
-   * [**Blank mobile scorecard**](/help/mobile-app/curator.md) to create a Mobile scorecard project that you can share with other stakeholders using a mobile app.
-   * Select one of the [Guided analysis](/help/guided-analysis/overview.md) options available.
+   See [Blank mobile scorecard](/help/mobile-app/curator.md) for more information on how to create a Mobile scorecard project that you can share with other stakeholders using a mobile app. And see [Guided analysis](/help/guided-analysis/overview.md) for  more information on the various options available to create your guided analysis project.
 
 1. Select [!UICONTROL **Create**].
 

@@ -128,7 +128,7 @@ You use the concept of a filter container to create a [filtered metric](metrics-
   * Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** from within a container:
 
     1. Select **[!UICONTROL Filter]**. A filter container is added to the **[!UICONTROL Definition]**.
-    1. In the new filter container, select a filter from the [!UICONTROL *Select...*] dropdown list.
+    1. In the new filter container, select a filter from the [!UICONTROL *Select...*] dropdown menu.
 
   >[!TIP]
   >
@@ -154,7 +154,7 @@ To add a function container, you can use:
 * Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** from within a container:
 
   1. Select **[!UICONTROL Function]**.
-  1. In the container, select a function from the [!UICONTROL *Select...*] dropdown list.
+  1. In the container, select a function from the [!UICONTROL *Select...*] dropdown menu.
 
 The function container is named after the function component. For example, ![Function](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT (metric)]**. Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup with details on the function. Select **[!UICONTROL Learn more]** for more information on the function. 
 

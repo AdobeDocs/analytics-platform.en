@@ -18,7 +18,7 @@ You can do pathing on dimensions, metrics, and filters. For example, suppose tha
 ## Use
 
 1. Add a ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]** visualization. See [Add a visualization to a panel](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
-1. Drag a page, for example home, from the Page dimension onto the *Add touchpoint* dropdown list.
+1. Drag a page, for example home, from the Page dimension onto the *Add touchpoint* dropdown menu.
 
    ![The home page from the Home page dimension dragged to the Add Touchpoint field.](assets/fallout-drag.png)
 
