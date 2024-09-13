@@ -8,7 +8,7 @@ role: User, Admin
 
 >[!NOTE]
 >
->Intelligent Alerts are available to Adobe Analytics Prime and Adobe Analytics Ultimate customers only.
+>Intelligent Alerts are available to all customers. However, to use Anomaly Detection within Intelligent Alerts, you must have Customer Journey Analytics Select, Prime, or Ultimate.
 
 Intelligent Alerts (or just "alerts") in Customer Journey Analytics allow you to be notified immediately when abnormal events occur in your data. 
 
