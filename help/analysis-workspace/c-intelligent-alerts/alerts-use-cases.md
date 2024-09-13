@@ -6,8 +6,6 @@ role: User, Admin
 ---
 # Intelligent Alerts - use cases
 
-{{release-limited-testing}}
-
 You can create intelligent alerts as described in [Create alerts](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md). 
 
 The following sections illustrate example use cases to consider as you create alerts.

@@ -6,8 +6,6 @@ role: User, Admin
 ---
 # Intelligent Alerts feature comparison: Customer Journey Analytics and Adobe Analytics
 
-{{release-limited-testing}}
-
 The process of using Intelligent Alerts in Customer Journey Analytics is nearly identical to using Intelligent Alerts in Adobe Analytics. However, there are important differences.
 
 The following sections describe the key differences.
