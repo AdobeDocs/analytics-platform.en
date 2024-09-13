@@ -17,7 +17,7 @@ You can create a calculated metric in the following ways:
 
 * 🅐 In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Calculated metrics]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] from the [[!UICONTROL Calculated metrics] manager](/help/components/calc-metrics/cm-workflow/cm-manager.md). 
 * 🅑 In a Workspace project, from the Components left panel, select ![Add](/help/assets/icons/Add.svg) at ![Event](/help/assets/icons/Event.svg) **Metrics**.
-* 🅒 In a Workspace project, from the context menu in metrics column header, select **[!UICONTROL Create metric from selection]**. From the submenu, you can select a function, or select **[!UICONTROL Open in calculated metric builder]**.
+* 🅒 In a Workspace project, from the context menu in metrics column header, select **[!UICONTROL Create metric from selection]**. From the submenu, you can select a function, or select **[!UICONTROL Open in calculated metric builder]**. <br/>If you select a function, the calculated metric is defined as a project-only metric. When you later edit this metric, through the [Component info](/help/components/use-components-in-workspace.md#component-info) popup, you a notification in the [Calculated metric builder](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 * 🅓 In a Workspace project, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create metric]**. 
 * 🅔 In a Workspace project, use the shortcut **[!UICONTROL shift+cmd+c]** (macOS) or **[!UICONTROL shift+ctrl+c]** (Windows).
 
