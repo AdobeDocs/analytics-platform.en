@@ -36,7 +36,7 @@ To account for this delay in ingestion time, alerts have a default delay of 9 ho
 
 You can adjust the default delay of 9 hours to anywhere between 0 and 24 hours. However, decreasing the delay below 9 hours can mean that you are reporting on incomplete data, which results in inaccurate alert information. 
 
-For more information about how to adjust the delay, and the factors you should consider when doing so, see <!--add link -->. 
+For more information about how to adjust the delay, and the factors you should consider when doing so, see [Create alerts](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md). 
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. --> 
 
