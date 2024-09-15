@@ -52,7 +52,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
 
 + Data Ingestion {#cja-data-ingestion}
-  + [Data Ingestion Overview](../data-ingestion/data-ingestion.md)
+  + [Data ingestion overview](../data-ingestion/data-ingestion.md)
   + Ingest and use quick start guides{#ingest-use-guides}
     + [Adobe Analytics](../data-ingestion/analytics.md)
     + Adobe Experience Platform Edge Network {#edge-network}
@@ -181,6 +181,12 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Forecasting overview](../analysis-workspace/c-forecast/forecasting.md)
     + [View forecasts in Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
     + [Statistical techniques used in forecasting service](../analysis-workspace/c-forecast/statistics-forecasting.md)
+  + Intelligent Alerts {#alerts}
+    + [Intelligent Alerts overview](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)
+    + [Differences in Customer Journey Analytics](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md)
+    + [Create alerts](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md)
+    + [Manage alerts](/help/analysis-workspace/c-intelligent-alerts/alert-manager.md)
+    + [Use cases](/help/analysis-workspace/c-intelligent-alerts/alerts-use-cases.md)
   + [Table of contents](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
   + [User preferences](../analysis-workspace/user-preferences.md)
   + Workspace FAQs {#workspace-faq}
