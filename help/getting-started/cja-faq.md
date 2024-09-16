@@ -130,7 +130,7 @@ No, you can use any ID, including a hash of a customer ID, which is not PII.
 
 Adobe recently changed how it processes data in Customer Journey Analytics:
 
-<ul><li>Any event data with a timestamp less than 24 hours old is streamed in.</li><li>Any event data with a timestamp more than 24 hours old (even if it's in the same batch as newer data) is considered backfill and is ingested at a lower priority.</li></ul>
+<ul><li>Event data for the 'current' day is streamed in as live data. Any data with an event time prior to 11:59:59 (23:59:59) on the previous day is treated as a backfill.</li><li>Any event data with a timestamp more than 24 hours old (even if it's in the same batch as newer data) is considered backfill and is ingested at a lower priority.</li></ul>
 
 ## 5. Set rolling window for [!UICONTROL Connection] data retention {#data-retention}
 
