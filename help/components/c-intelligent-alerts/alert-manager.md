@@ -20,7 +20,7 @@ To create alerts from the Alerts manager:
 
 1. Select [!UICONTROL **Add**] (or [!UICONTROL **Create new alert**] if you don't have any existing alerts).
 
-1. Continue with [Create alerts](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md) for more details about creating alerts.
+1. Continue with [Create alerts](/help/components/c-intelligent-alerts/alert-builder.md) for more details about creating alerts.
 
 ## Manage existing alerts 
 
