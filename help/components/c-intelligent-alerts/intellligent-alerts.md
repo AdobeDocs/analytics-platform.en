@@ -6,6 +6,10 @@ role: User, Admin
 ---
 # Intelligent Alerts overview
 
+>[!NOTE]
+>
+>Intelligent Alerts are available to all customers. However, to use Anomaly Detection within Intelligent Alerts, you must have Customer Journey Analytics Select, Prime, or Ultimate.
+
 Intelligent Alerts (or just "alerts") in Customer Journey Analytics allow you to be notified when abnormal events occur in your data. 
 
 You can set alerts to be triggered based on anomaly thresholds, changed percentages, or specific data points. Alerts provide granular controls that integrate with [Anomaly Detection](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md), triggering when you need them most.
@@ -23,7 +27,7 @@ The following video tutorial provides a basic overview of alerts: [Intelligent A
 
 The process of using Intelligent Alerts in Customer Journey Analytics is nearly identical to using Intelligent Alerts in Adobe Analytics. However, there are important differences.
 
-For more information, see [Intelligent Alerts feature comparison: Customer Journey Analytics and Adobe Analytics](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md).
+For more information, see [Intelligent Alerts feature comparison: Customer Journey Analytics and Adobe Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md).
 
 ## Anomaly lookback for alerts
 
@@ -38,7 +42,7 @@ For more information, see [Statistical techniques used in Anomaly Detection](/he
 
 ## Create alerts
 
-For information about how to create alerts in Customer Journey Analytics, see [Create alerts](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md).
+For information about how to create alerts in Customer Journey Analytics, see [Create alerts](/help/components/c-intelligent-alerts/alert-builder.md).
 
 >[!IMPORTANT]
 >
@@ -48,5 +52,5 @@ For information about how to create alerts in Customer Journey Analytics, see [C
 
 You can manage existing alerts in the Alerts manager. You can perform various management tasks on alerts, such as tagging, renaming, deleting, and more.
 
-For more information about how to manage existing alerts in Customer Journey Analytics, see [Manage alerts](/help/analysis-workspace/c-intelligent-alerts/alert-manager.md).
+For more information about how to manage existing alerts in Customer Journey Analytics, see [Manage alerts](/help/components/c-intelligent-alerts/alert-manager.md).
 
