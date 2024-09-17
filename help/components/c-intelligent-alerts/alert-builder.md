@@ -12,7 +12,7 @@ role: User, Admin
 
 Intelligent Alerts (or just "alerts") in Customer Journey Analytics allow you to be notified immediately when abnormal events occur in your data. 
 
-For more detailed overview information about Intelligent Alerts, see [Intelligent Alerts overview](/help/components/c-intelligent-alerts/intellligent-alerts.md).
+For more detailed overview information about Intelligent Alerts, see [Intelligent Alerts overview](/help/components/c-intelligent-alerts/intelligent-alerts.md.md).
 
 To create an alert:
 
