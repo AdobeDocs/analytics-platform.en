@@ -127,6 +127,8 @@ If you make a significant modification to a Journey Optimizer journey in Journey
 
 * Adding or removing an arrow between nodes
 
+* Changing the components on a node
+
 If you make other changes to a Journey Optimizer journey in Journey canvas, such as dragging a node or adding a breakdown, the differences described in the following sections do not apply.
 
 >[!NOTE]
@@ -141,13 +143,13 @@ This is because, unlike Journey Optimizer, Journey canvas allows you to apply mu
 
 #### Feature differences
 
-After you modify a Journey Optimizer journey in Journey canvas, availability might change for the following features, depending on your modifications:
+After you modify a Journey Optimizer journey in Journey canvas, the functionality might change for the following features, depending on your modifications:
 
-* The [!UICONTROL **Node type**] drop-down field is no longer available. 
+* The values shown in the [!UICONTROL **Node type**] field change. 
 
-* 
+* The options that are available in the [!UICONTROL **Arrow settings**] drop-down field change.
 
-For more information about this field, see [Configure settings](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+For more information about these fields, see [Configure settings](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 #### Synchronization differences
 
