@@ -8,7 +8,7 @@ role: User, Admin
 
 You can manage existing alerts in the Alerts manager. You can perform various management tasks on alerts, such as tagging, renaming, deleting, and more.
 
-The Alerts manager is structured very much like the [Filter manager](/help/components/filters/manage-filters.md) and the [Calculated Metric Manager](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+The Alerts manager is structured very much like the [Filter manager](/help/components/filters/manage-filters.md) and the [Calculated metric manager](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
 ## Create alerts
 
