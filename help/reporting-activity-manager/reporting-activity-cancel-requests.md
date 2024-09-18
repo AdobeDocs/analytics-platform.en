@@ -156,7 +156,7 @@ Applications include the following:
 * Report Builder
 * Builder UIs: Segment, Calculated Metrics, Annotations, Audiences, etc.
 * API calls from the 2.0 API
-* Intelligent alerts
+* Alerts
 * Full table export
 * Share with anyone links
 * Guided analysis
