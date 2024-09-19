@@ -70,7 +70,15 @@ Combining the summarized event data and on-site clickstream data enables you to 
 | ghi789 | 500 | $500 | 500 | $750 | 1.50 |
 
 
-See the [Use summary data](/help/use-cases/data-views/summary-data.md) use case for a detailed article on how to make use of, report on, and analyze summary data in Customer Journey Analytics.
+### Lookup data
+
+If you want to report using a dimension defined in an additional lookup dataset (for example, campaign name), you have to follow these additional steps:
+
+1. Create a new derived field that uses the [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup) function to lookup the campaign name from the lookup dataset. In the definition of the [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup) function you use the match between campaign code and tracking code to lookup the campaign name.
+1. Add the newly created derived field as a dimension component to your data view.
+1. Configure the campaign name dimension component (from the lookup dataset) to have a summary data grouping with the newly created derived field.
+
+See the [Ingest and report on summary data](/help/use-cases/data-views/summary-data.md) use case for a detailed article on how to make use of, report on, and analyze summary data in Customer Journey Analytics.
 
 
 ## Prerequisites

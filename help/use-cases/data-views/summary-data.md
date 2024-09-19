@@ -272,7 +272,7 @@ Lookup data is available in the Example Lookup Data Dataset. The sample data loo
 | 17 | def321 | def-adgroup | 321 Campaign |
 | 18 | ghi321 | ghi-adgroup | 321 Campaign |
 
-[![DataDownload](/help/assets/icons/DataDownload.svg) Download sample looukup data](./assets/lookup-data.csv)
+[![DataDownload](/help/assets/icons/DataDownload.svg) Download sample lookup data](./assets/lookup-data.csv)
 +++
 
 >[!INFO]
@@ -482,6 +482,26 @@ To ensure you can report on the correct data in Workspace, you want to create a 
             1. Select the **[!UICONTROL Campaign Id]** dimension in the **[!UICONTROL Dimensions]** list.
             1. You notice that **[!UICONTROL Hide component in reporting]** in **[!UICONTROL Component settings]** is now automatically enabled.
 
+      1. Create a new derived field, for example `Campaign Name (Lookup Derived Field)`, to ensure you can report in Workspace using the Campaign Name (Lookup) dimension from the Example Lookup Data dataset.
+         
+         ![Derived field for campaign name](../aa-data/../assets/summary-derived-field.png)
+
+         1. Select **[!UICONTROL campaign_id]** for **[!UICONTROL Value]**.
+         1. Select **[!UICONTROL Example Lookup Data Dataset]** from the **[!UICONTROL Lookup dataset]** dropdown menu.
+         1. Select **[!UICONTROL tracking_code]** from the **[!UICONTROL Matching Key]** dropdown menu.
+         1. Select **[!UICONTROL campaign_name]** from the **[!UICONTROL Values to return]** dropdown menu.
+         1. Select **[!UICONTROL Save]**.
+
+      1. Add the newly created derived field, **[!UICONTROL Campaign Name (Lookup Derived Field)]**, to the **[!UICONTROL Dimensions]** component list.
+
+      1. Select the **[!UICONTROL Campaign Name (Lookup)]** dimension in the **[!UICONTROL Dimensions]** list. In the component panel:
+
+         ![Derived Field Summary Data Group](../assets/derived-field-summary-data-group.png)
+
+         1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
+         1. Enable **[!UICONTROL Create grouping]**.
+         1. Select **[!UICONTROL Campaign Name (Lookup Derived Field)]** from the **[!UICONTROL Dimension]** dropdown list. This step ensures that the Campaign Name (Lookup) from the Example Lookup Data Dataset can be safely used in reporting (see [Workspace](#workspace)).
+
       1. Select the **[!UICONTROL Revenue]** metric from the **[!UICONTROL Metrics]** list. In the component panel:
 
          ![Revenue summary data](../assets/revenue-summary-data.png)
@@ -528,7 +548,7 @@ You see an empty canvas with a [!UICONTROL Freeform] panel, consisting of an emp
 1. Drag **[!UICONTROL Tracking Code (Event)]** from **[!UICONTROL Dimensions]** and drop the dimension onto the empty Freeform table.
 1. Drag **[!UICONTROL Orders]** from **[!UICONTROL Metrics]**, and drop the metric onto the **[!UICONTROL Events]** column to replace that column in the Freeform table.
 1. Drag **[!UICONTROL Revenue]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
-1. Drag **[!UICONTROL Impressions (Summary)]** from  **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
+1. Drag **[!UICONTROL Impressions (Summary)]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
 1. Drag **[!UICONTROL Cost (Summary)]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
 1. To save your project, select **[!UICONTROL Project]** > **[!UICONTROL Save]**, and provide a name for your project. For example, `Example Project Using Summary Data`.
 
@@ -560,6 +580,14 @@ Add your calculated metrics to your report.
          1. Select **[!UICONTROL Auto-generated]**.
          1. Select a preferred **[!UICONTROL Conditional formatting palette]**.
    1. Select **[!UICONTROL Save]** to save your project.
+
+If you want to report on Campaign Name rather than Tracking Code (Event), take the following steps:
+
+1. Duplicate the **[!UICONTROL Summary Data Report]** Freeform table visualization.
+1. Rename the duplicated visualization to `Summary Data Report (using Campaign Name)`.
+1. Replace ![Switch](/help/assets/icons/Switch.svg)  the **[!UICONTROL Tracking Code (Event)]** dimension with the **[!UICONTROL Campaign Name (Lookup)]** dimension.
+
+You can report correctly on Campaign Name (Lookup) because of the derived field you created, and the summary data group component configuration for Campaign Name (Lookup). See [Data view](#data-view).
 
 Your final project should look like the one shown below.
 

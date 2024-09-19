@@ -130,7 +130,7 @@ No, you can use any ID, including a hash of a customer ID, which is not PII.
 
 Adobe recently changed how it processes data in Customer Journey Analytics:
 
-<ul><li>Any event data with a timestamp less than 24 hours old is streamed in.</li><li>Any event data with a timestamp more than 24 hours old (even if it's in the same batch as newer data) is considered backfill and is ingested at a lower priority.</li></ul>
+<ul><li>Event data for the 'current' day is streamed in as live data. Any data with an event time prior to 11:59:59 pm(23:59:59) on the previous day is treated as a backfill.</li><li>Any event data with a timestamp more than 24 hours old (even if it's in the same batch as newer data) is considered backfill and is ingested at a lower priority.</li></ul>
 
 ## 5. Set rolling window for [!UICONTROL Connection] data retention {#data-retention}
 
@@ -144,7 +144,7 @@ For data deletion, you should be concerned about six types of components: sandbo
 
 | If you... | This happens... |
 | --- | --- |
-| Delete a sandbox in [!UICONTROL Adobe Experience Platform] | Deleting a sandbox stops the data flow to any [!UICONTROL Customer Journey Analytics] connections to datasets in that sandbox. Currently, [!UICONTROL Connections] in Customer Journey Analytics tied to the deleted sandbox are not automatically deleted. |
+| Delete a sandbox in [!UICONTROL Adobe Experience Platform] | Deleting a sandbox stops the data flow to any [!UICONTROL Customer Journey Analytics] connections to datasets in that sandbox. Connections, data views, metrics and dimensions related to this deleted sandbox will also be deleted. | |
 | Delete a schema in [!UICONTROL Adobe Experience Platform], but not the dataset/s associated with this schema | [!UICONTROL Adobe Experience Platform] does not allow for the deletion of [!UICONTROL schemas] that have one or more [!UICONTROL datasets] associated with them. However, an Admin with the appropriate set of rights can delete the datasets first and then delete the schema. |
 | Delete a dataset in the [!UICONTROL Adobe Experience Platform] data lake | Deleting a dataset in Adobe Experience Platform data lake stops data flow from that dataset to any Customer Journey Analytics Connections that include that dataset. Any data from that dataset is automatically deleted from the associated Customer Journey Analytics connections. |
 | Delete a dataset in [!UICONTROL Customer Journey Analytics] | Contact your Adobe Account Team to set in motion the process for deleting a dataset within a connection that has been saved. |
