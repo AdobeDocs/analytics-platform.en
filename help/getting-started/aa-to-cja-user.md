@@ -86,7 +86,7 @@ You can also have multiple data views based on the same connection. For example,
 
 ## Changes to the concept of classifications
 
-"Classifications" are now known as "Lookup datasets". Lookup datasets are used to look up values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names. See [Add account-level data as a lookup dataset](/help/use-cases/b2b/b2b.md) for an example use case.
+"Classifications" are now known as *Lookup datasets*. Lookup datasets are used to look up values or keys found in your Event or Profile data. For example, you might upload lookup data that maps numeric IDs in your event data to product names.
 
 ## Changes to the concept of customer attributes
 
