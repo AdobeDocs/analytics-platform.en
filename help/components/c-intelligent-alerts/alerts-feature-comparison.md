@@ -1,12 +1,12 @@
 ---
-description: Learn how Intelligent Alerts differ in Customer Journey Analytics from Adobe Analytics
-title: Intelligent Alerts feature comparison Customer Journey Analytics and Adobe Analytics
+description: Learn how alerts differ in Customer Journey Analytics from Adobe Analytics
+title: Alerts feature comparison Customer Journey Analytics and Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
 ---
-# Intelligent Alerts feature comparison: Customer Journey Analytics and Adobe Analytics
+# Alerts feature comparison: Customer Journey Analytics and Adobe Analytics
 
-The process of using Intelligent Alerts in Customer Journey Analytics is nearly identical to using Intelligent Alerts in Adobe Analytics. However, there are important differences.
+The process of using alerts in Customer Journey Analytics is nearly identical to using alerts in Adobe Analytics. However, there are important differences.
 
 The following sections describe the key differences.
 
@@ -36,9 +36,26 @@ To account for this delay in ingestion time, alerts have a default delay of 9 ho
 
 You can adjust the default delay of 9 hours to anywhere between 0 and 24 hours. However, decreasing the delay below 9 hours can mean that you are reporting on incomplete data, which results in inaccurate alert information. 
 
-For more information about how to adjust the delay, and the factors you should consider when doing so, see [Create alerts](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md). 
+For more information about how to adjust the delay, and the factors you should consider when doing so, see [Create alerts](/help/components/c-intelligent-alerts/alert-builder.md). 
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. --> 
+
+## The option to create an alert from Analysis Workspace is not available
+
+In Analysis Workspace in Adobe Analytics, you can create alerts from Analysis Workspace in any of the ways described below. In Customer Journey Analytics, the options to create alerts from Analysis Workspace are not yet available. Instead, access the Alert Builder, as described in [Create alerts](/help/components/c-intelligent-alerts/alert-builder.md).
+
+In Adobe Analytics, the following options are available:
+
+* Select one or more line items in a freeform table, then right-click and select **[!UICONTROL Create alert from selection]**.
+
+  This instantly pre-populates the alert builder to create an alert with the correct metrics and filters.
+
+* Open a project in Analysis Workspace, then select **[!UICONTROL Components]** > **[!UICONTROL Create alert]**.
+   
+* Open a project in Analysis Workspace, then use the following shortcut:
+
+  `ctrl (or cmd) + shift + a` 
+
 
   
 

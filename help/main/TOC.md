@@ -184,12 +184,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Forecasting overview](../analysis-workspace/c-forecast/forecasting.md)
     + [View forecasts in Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
     + [Statistical techniques used in forecasting service](../analysis-workspace/c-forecast/statistics-forecasting.md)
-  + Intelligent Alerts {#alerts}
-    + [Intelligent Alerts overview](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)
-    + [Differences in Customer Journey Analytics](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md)
-    + [Create alerts](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md)
-    + [Manage alerts](/help/analysis-workspace/c-intelligent-alerts/alert-manager.md)
-    + [Use cases](/help/analysis-workspace/c-intelligent-alerts/alerts-use-cases.md)
   + [User preferences](../analysis-workspace/user-preferences.md)
   + Workspace FAQs {#workspace-faq}
     + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)
@@ -293,6 +287,12 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage date ranges](../components/date-ranges/manage.md)
     + [Create custom date ranges](../components/date-ranges/custom-date-ranges.md)
     + [Date comparison](../components/date-ranges/time-comparison.md)
+  + Alerts {#alerts}
+    + [Overview](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+    + [Differences in Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
+    + [Create](/help/components/c-intelligent-alerts/alert-builder.md)
+    + [Manage](/help/components/c-intelligent-alerts/alert-manager.md)
+    + [Use cases](/help/components/c-intelligent-alerts/alerts-use-cases.md)
   + Exports {#exports}
     + [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md)
     + [Configure cloud export locations](/help/components/exports/cloud-export-locations.md)
