@@ -365,7 +365,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Query Service and Export datasets](../use-cases/data-export/queryservice-export-datasets.md)
   + B2B {#b2b}
     + [An example B2B project](../use-cases/b2b/example.md)
-    + [Add account-level data as a lookup dataset](../use-cases/b2b/b2b.md)
   + Cross-channel data {#cross-channel}
     + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
     + [Import call center and web data](../use-cases/cross-channel/call-center.md)
