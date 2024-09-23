@@ -102,7 +102,7 @@ You can use filters in Analysis Workspace in any of the following ways:
 
 ### Add date ranges to a project
 
-[Date ranges](/help/components/date-ranges/custom-date-ranges.md) determine the reporting time frame in Analysis Workspace, and can be applied to one or more panels within a project.
+[Date ranges](/help/components/date-ranges/overview.md) determine the reporting time frame in Analysis Workspace, and can be applied to one or more panels within a project and also to some visualizations (like the Freeform table).
 
 Each panel includes a date range by default. There are multiple ways to update a date range for a panel. One way to update a date range for a panel in Analysis Workspace is to drag a date range component from the left panel:
 

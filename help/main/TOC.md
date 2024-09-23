@@ -181,6 +181,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Forecasting overview](../analysis-workspace/c-forecast/forecasting.md)
     + [View forecasts in Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
     + [Statistical techniques used in forecasting service](../analysis-workspace/c-forecast/statistics-forecasting.md)
+    + [Table of contents](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
   + [User preferences](../analysis-workspace/user-preferences.md)
   + Workspace FAQs {#workspace-faq}
     + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)
@@ -283,6 +284,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create a date range](../components/date-ranges/create.md)
     + [Manage date ranges](../components/date-ranges/manage.md)
     + [Date comparison](../components/date-ranges/time-comparison.md)
+    + [Exampels](../components/date-ranges/custom-date-ranges.md)
   + Alerts {#alerts}
     + [Overview](/help/components/c-intelligent-alerts/intelligent-alerts.md)
     + [Differences in Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)

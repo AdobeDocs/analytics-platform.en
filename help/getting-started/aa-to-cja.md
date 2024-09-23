@@ -84,7 +84,7 @@ Here are a couple of videos to guide you:
 
 * Using the power of Customer Journey Analytics data views, you have a lot more flexibility in the definition of metrics and dimensions within Customer Journey Analytics. For example, you can use the value of a dimension to become the definition of a metric. [Learn more](/help/use-cases/data-views/data-views-usecases.md)
 
-* If you have defined a custom calendar in Adobe Analytics, you will have similar [custom calendar capabilities](/help/components/date-ranges/custom-date-ranges.md) within Customer Journey Analytics. You need to ensure that your calendar is properly defined.
+* If you have defined a custom calendar in Adobe Analytics, you will have similar [custom calendar capabilities](/help/components/date-ranges/overview.md) within Customer Journey Analytics. You need to ensure that your calendar is properly defined.
 
 * In Customer Journey Analytics, you can define a custom visit/session timeout as well as define a metric that will start a new session. You can create data views with different session definitions to get insights above and beyond what was possible in Adobe Analytics. This capability may be particularly beneficial for mobile datasets.
 
