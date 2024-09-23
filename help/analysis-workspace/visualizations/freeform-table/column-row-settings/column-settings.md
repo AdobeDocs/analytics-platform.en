@@ -54,7 +54,17 @@ Conditional formatting applies formatting to upper, midpoint, and lower limits t
 | **[!UICONTROL Custom]** | Manually assign **[!UICONTROL Upper limit]**, **[!UICONTROL Midpoint]** and **[!UICONTROL Lower limit]**. Limits provide the flexibility to determine when a column value becomes good, average, or poor. |
 | **[!UICONTROL Conditional formatting palette]** | Apply a preconfigured color set to cells. Depending on which of the four available color schemes you select, different colors are assigned to high values, midpoint values, and low values. <br> Replacing a dimension in the table resets the conditional formatting limits. Replacing a metric recalculates the limits for that column (where a metric is on the X axis and a dimension is on the Y axis). |
 
-## Use non-default attribution model {#attribution}
+## Use non-default attribution model {#use-non-default-attribution-model}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
+>title="Use non-default attribution model"
+>abstract="Enable a non-default attribution model for the selected columns"
+
+<!-- markdownlint-enable MD034 -->
+
 
 You can override the default attribution model that is configured in [Data views](/help/data-views/component-settings/attribution.md).
 

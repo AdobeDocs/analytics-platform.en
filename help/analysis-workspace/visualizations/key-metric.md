@@ -5,7 +5,17 @@ feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
 ---
-# Key metric summary
+# Key metric summary {#key-metric-summary}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_keymetricsummary_button"
+>title="Key  metric summary"
+>abstract="Creates a visualization that is like a combination of the line, summary change, and summary number charts. Use this visualization to compare how important metrics are trending between two periods of time."
+
+<!-- markdownlint-enable MD034 -->
+
 
 The ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) [!UICONTROL Key metric summary] visualization lets you see how an important metric is trending within a single timeframe. It also lets you compare metric performance across two timeframes. It provides the benefits of multiple visualizations combined into one visualization:
 

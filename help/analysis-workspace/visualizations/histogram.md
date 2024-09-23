@@ -5,7 +5,17 @@ feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
 ---
-# Histogram
+# Histogram {#histogram}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_histogram_button"
+>title="Histogram"
+>abstract="Creates a histogram visualization to represent the distribution of numerical data in groups of ranges."
+
+<!-- markdownlint-enable MD034 -->
+
 
 The ![Histogram](/help/assets/icons/Histogram.svg) [!UICONTROL Histogram] visualization is similar to a [!UICONTROL Bar] visualization, but it groups numbers into ranges (buckets). Analytics automates the "bucketing" of numbers into ranges, but you can change the settings in [Advanced Settings](#advanced-settings).
 

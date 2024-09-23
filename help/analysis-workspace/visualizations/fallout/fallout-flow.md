@@ -5,7 +5,17 @@ feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
 ---
-# Fallout overview
+# Fallout overview {#fallout-overview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_fallout_button"
+>title="Fallout"
+>abstract="Creates a visualization to view how people successfully proceed to desired checkpoints."
+
+<!-- markdownlint-enable MD034 -->
+
 
 A ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) [!UICONTROL Fallout] visualization shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages.
 

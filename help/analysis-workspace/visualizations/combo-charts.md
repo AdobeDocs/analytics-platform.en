@@ -5,7 +5,17 @@ feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
 ---
-# Combo
+# Combo {#combo}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_combo_button"
+>title="Combo"
+>abstract="Creates a combo chart visualization quickly without the need to create a freeform table first."
+
+<!-- markdownlint-enable MD034 -->
+
 
 The ![Comment](/help/assets/icons/ComboChart.svg) [!UICONTROL Combo] visualization makes it easy to build quickly a comparison visualization without having to build a table first. You can easily view trends in your data in a line/bar combination.
 

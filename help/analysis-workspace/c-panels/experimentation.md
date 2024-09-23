@@ -5,7 +5,27 @@ feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
 ---
-# Experimentation panel
+# Experimentation panel {#experimentation-panel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_experimentation_button"
+>title="Experimentation"
+>abstract="Creates a panel to compare different user experiences, marketing, or messaging variations. And to determine which variation is best at driving a specific outcome."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_experimentation_panel"
+>title="Experimentation"
+>abstract="Compare different user experiences, marketing, or messaging variations to determine which is best at driving a specific outcome.<br/><br/>**Parameters**<br/>**Experiment**: The experiment that will be analyzed.<br>**Control variant**: Control variant for the selected experiment.<br/>**Success metric**: Up to 5 standard (non-calculated) success metrics to analyze the experiment against.<br/>**Normalising metric**: People, sessions, or events. This metric (also referred to as the counting methodology) becomes the denominator of the lift calculation. This metric also affects how the data is aggregated before the confidence calculation is applied."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 The **[!UICONTROL Experimentation]** panel lets analysts compare different user experience, marketing, or messaging variations to determine which is best at driving a specific outcome. You can evaluate the lift and confidence of any A/B experiment from any experimentation platform: online, offline, from Adobe solutions like Target or Journey Optimizer, and even BYO (bring-your-own) data.
 

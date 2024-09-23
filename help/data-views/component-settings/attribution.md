@@ -57,7 +57,17 @@ To update a component's default attribution model:
 >
 > * Override the metric in Analysis Workspace. In a metric's [Column settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md), select **[!UICONTROL Use non-default attribution model]** to change the metric's attribution model and lookback window for that specific report.
 
-## Attribution models
+## Attribution models {#attribution-models}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataviews_component_attribution_attributionmodels"
+>title="Model"
+>abstract="Select an attribution model for the metric."
+
+<!-- markdownlint-enable MD034 -->
+
 
 An attribution model determines which dimension items get credit for a metric when multiple values are seen within a metric's lookback window. Attribution models only apply when there are multiple dimension items set within the lookback window. If only a single dimension item is set, that dimension item gets 100% credit regardless of attribution model used.
 

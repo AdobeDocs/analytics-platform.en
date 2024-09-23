@@ -5,7 +5,23 @@ feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
 ---
-# Flow
+# Flow {#flow}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_flow_button"
+>title="Flow"
+>abstract="Creates a visualization to view the flow of people from one checkpoint to the next."
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_flow_panel"
+>title="Flow"
+>abstract="Analyze the flow of visits or visitors from one touchpoint to the next.<br/><br/>**Parameters**<br/>**Starts with**: Add a dimension, dimension item, or metric to see the top occurring touchpoints after the occurrence of the selected component.<br/>**Contains**: Add a dimension or dimension item to see the top occurring touchpoints before and after the occurrence of the selected component.<br/>**Ends with**: Add a dimension, dimension item, or metric to see the top occurring touchpoints before the occurrence of the selected component.<br/>**Pathing dimension**: Add a dimension to use as your path leading to or going from your selected component."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 The ![GraphPathing](/help/assets/icons/GraphPathing.svg) [!UICONTROL Flow] visualization shows customer paths through your websites and apps.
 

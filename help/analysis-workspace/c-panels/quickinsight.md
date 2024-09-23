@@ -5,7 +5,17 @@ feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
 ---
-# Quick Insights panel
+# Quick insights panel {#quick-insights-panel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_quickinsights_button"
+>title="Quick insights"
+>abstract="Creates a panel to quickly build a freeform table and accompanying visualization to analyze and uncover insights faster."
+
+<!-- markdownlint-enable MD034 -->
+
 
 [!UICONTROL Quick Insights] provides guidance for non-analysts and new users of [!UICONTROL Analysis Workspace] to learn how to answer business questions quickly and easily. It is also a great tool for advanced users who want to answer a simple question quickly without having to build a table themselves.
 

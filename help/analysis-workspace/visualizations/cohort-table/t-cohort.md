@@ -6,17 +6,7 @@ feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
 role: User
 ---
-# Configure a [!UICONTROL Cohort table] {#configue-a-cohort-table}
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_workspace_cohorttable_button"
->title="Cohort table"
->abstract="Creates a cohort visualization to group users based on completion of an event and analyze ongoing engagement and churn over time."
-
-<!-- markdownlint-disable MD034 -->
-
+# Configure a Cohort table
 
 To create and configure a [!UICONTROL Cohort table]:
 

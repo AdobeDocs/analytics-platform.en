@@ -5,7 +5,27 @@ feature: Panels
 role: User, Admin
 
 ---
-# Next or previous item panel
+# Next or previous item panel {#next-or-previous-item-panel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_nextorpreviousitem_button"
+>title="Next or previous item"
+>abstract="Creates a panel to understand the previous dimensions people come from or next dimension people go to."
+
+<!-- markdownlint-disable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_nextorpreviousitem_panel"
+>title="Nest or previous item"
+>abstract="Analyze what are the most common places visitors previously came from or go to next.<br/><br/>**Dimension**: Select a dimension. For example **Page**.<br/>**Dimension item**: Select a specific dimension item. For example **Homepage**.<br/>**Direction**: Select **Next** to see the dimension items immediately next following your selected dimension item. Select **Previous** to see the dimension items leading up to your selected dimension item.<br/>**Container**: Select **Session** to see the next/previous dimension items within the same session, or select **Person** to see the next/previous dimension item for the same person."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 This panel contains a number of tables and visualizations to identify the next or previous dimension item for a specific dimension. For example, you might want to explore which pages customers went to most often after they visited the Home page.
 
