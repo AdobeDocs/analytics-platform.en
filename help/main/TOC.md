@@ -286,7 +286,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Date comparison](../components/date-ranges/time-comparison.md)
     + [Exampels](../components/date-ranges/custom-date-ranges.md)
   + Alerts {#alerts}
-    + [Overview](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+    + [Overview](/help/components/c-intelligent-alerts/intelligent-alerts.md) 
     + [Differences in Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
     + [Create](/help/components/c-intelligent-alerts/alert-builder.md)
     + [Manage](/help/components/c-intelligent-alerts/alert-manager.md)
