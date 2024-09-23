@@ -115,7 +115,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage data sources](../analysis-workspace/visualizations/t-sync-visualization.md)
     + [Intelligent captions](../analysis-workspace/visualizations/intelligent-captions.md)
     + Freeform table {#freeform-table}
-      + [Freeform table](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
+      + [Freeform table overview](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
       + [Create hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
       + Column and row settings {#column-row-settings}
         + [Column settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
@@ -124,7 +124,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Filter and sort tables](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
       + [Workspace Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
     + Cohort Table {#cohort-table}
-      + [What is cohort analysis?](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+      + [Cohort table overview](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
       + [Configure a Cohort table](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
       + [Cohort analysis use cases](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
     + Fallout {#fallout}

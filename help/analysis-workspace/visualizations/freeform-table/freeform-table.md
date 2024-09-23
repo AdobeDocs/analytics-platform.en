@@ -1,11 +1,11 @@
 ---
-title: Freeform table
+title: Freeform table overview
 description: Freeform tables are the foundation for data analysis in Workspace
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
 ---
-# Freeform table
+# Freeform table overview
 
 In Analysis Workspace, a ![Table](/help/assets/icons/Table.svg) [!UICONTROL Freeform table] visualization is the foundation for interactive data analysis. You can drag and drop a combination of [components](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components) into rows and columns to create a custom table for your analysis. As each component is dropped, the table updates immediately so you can quickly analyze and dig deeper.
 

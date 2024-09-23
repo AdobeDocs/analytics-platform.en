@@ -1,11 +1,11 @@
 ---
-title: What is Cohort Analysis?
-description: Learn about cohort analysis in Analysis Workspace
+title: Cohort table overview
+description: Learn how to use a cohort table for cohort analysis in Analysis Workspace
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
 ---
-# What is a [!UICONTROL Cohort table]?
+# Cohort table overview {#cohort-table-overview}
 
 <!-- markdownlint-disable MD034 -->
 
