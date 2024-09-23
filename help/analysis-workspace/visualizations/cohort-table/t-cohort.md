@@ -6,7 +6,7 @@ feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
 role: User
 ---
-# Configure a [!UICONTROL Cohort table]
+# Configure a [!UICONTROL Cohort table] {#configue-a-cohort-table}
 
 <!-- markdownlint-disable MD034 -->
 
