@@ -288,7 +288,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create custom date ranges](../components/date-ranges/custom-date-ranges.md)
     + [Date comparison](../components/date-ranges/time-comparison.md)
   + Alerts {#alerts}
-    + [Overview](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+    + [Overview](/help/components/c-intelligent-alerts/intelligent-alerts.md) 
     + [Differences in Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
     + [Create](/help/components/c-intelligent-alerts/alert-builder.md)
     + [Manage](/help/components/c-intelligent-alerts/alert-manager.md)
@@ -365,7 +365,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Query Service and Export datasets](../use-cases/data-export/queryservice-export-datasets.md)
   + B2B {#b2b}
     + [An example B2B project](../use-cases/b2b/example.md)
-    + [Add account-level data as a lookup dataset](../use-cases/b2b/b2b.md)
   + Cross-channel data {#cross-channel}
     + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
     + [Import call center and web data](../use-cases/cross-channel/call-center.md)
