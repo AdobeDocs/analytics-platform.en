@@ -574,7 +574,8 @@ To delete arrows between nodes in Journey canvas:
 
 ## Open a journey from Journey Optimizer
 
+When viewing a journey in Journey Optimizer, you can choose to view it in Journey canvas. 
 
-In Journey Optimizer, open the journey that you want to analyze in Journey canvas.
+1. In Journey Optimizer, open the journey that you want to analyze in Journey canvas.
 
 1. Select [!UICONTROL **Analyze in CJA**]. <!-- ?? -->
