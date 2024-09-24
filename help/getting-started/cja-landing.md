@@ -23,6 +23,12 @@ AI Assistant is a conversational experience that allows practitioners to perform
 
 [![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
+>[!TAB Alerts] 
+
+Alerts allow you to be notified based on changed percentages or specific data points. You can preview how often an alert will trigger, send alerts by email or SMS, create stacked alerts, and more.
+
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
 >[!TAB Summary data] 
 
 Allows you to bring in time-series data that does not have a person ID. This time-series data can be used to support various use cases, such as 
