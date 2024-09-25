@@ -1,8 +1,6 @@
 ---
 description: Use intelligent captions to generate natural-language insights to surface trends within visualizations.
 title: Intelligent captions
-description: Use intelligent captions to generate natural-language insights to surface trends quickly within visualizations.
-title: Intelligent captions
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
