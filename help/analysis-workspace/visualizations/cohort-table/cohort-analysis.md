@@ -12,7 +12,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="cja_workspace_cohorttable_button"
 >title="Cohort table"
->abstract="Creates a cohort visualization to group users based on completion of an event and analyze ongoing engagement and churn over time."
+>abstract="Create a cohort visualization to group users based on completion of an event and analyze ongoing engagement and churn over time."
 
 <!-- markdownlint-enable MD034 -->
 

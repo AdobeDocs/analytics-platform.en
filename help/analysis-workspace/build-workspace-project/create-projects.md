@@ -38,4 +38,35 @@ Now that you have created a Blank Workspace project, ensure you are familiar wit
   * **[!DNL Example]** [annotation](/help/components/annotations/overview.md) ➒
 
 
+## Project Info & Settings {#project-info-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_project_repeatinstances"
+>title="Count repeat instances"
+>abstract="Specifies whether repeat instances are counted in reports.<br/>Note: this setting does not apply to Flow or Fallout visualizations."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Project settings provides project-level information on the currently active project.
+
+![The Project Info & Settings window.](./assets/projectinfo.png)
+
+Settings include:
+
+|  Setting  | Description  |
+|---|---|
+|  Project name  | The name given to the project. You can double-click the name to edit it.  |
+|  Owner  | Project owner name  |
+|  Last modified  | Date of last modification to the project.  |
+|  Tags  |Lists any tags applied to a project for easier categorization.  |
+|  Description  | A description is useful for clarifying the purpose of a project. You can double-click the description to edit it.  |
+|  Count repeat instances  | Specify whether repeat instances are counted in reports. Note: this setting does not apply to Flow or Fallout visualizations.  |
+| Show annotations | Specify whether annotations are shown for this project or not. |
+|  [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md)  | You can change the categorical color palette used in Workspace, by choosing from out-of-the-box palettes that have been optimized for color blindness, or by specifying your custom palette. This feature affects many things in Workspace, including most visualizations.  |
+| [View Density](/help/analysis-workspace/build-workspace-project/view-density.md) | Lets you see more data on the screen by reducing the vertical padding of the left panel, freeform tables and cohort tables. |
+
+
 

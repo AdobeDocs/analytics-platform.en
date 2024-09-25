@@ -7,7 +7,18 @@ role: User
 ---
 # Summary number and Summary change
 
-## Summary number
+## Summary number {#summary-number}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_summarynumber_button"
+>title="Summary number"
+>abstract="Create a visualization that shows totals and subtotals."
+>additional-url="url"
+>additional-url="url"
+
+<!-- markdownlint-enable MD034 -->
 
 Use the ![Summarize](/help/assets/icons/123.svg) [!UICONTROL Summary number] visualization to highlight a large number that is important in a project. This visualization behaves in the following ways, using the associated data source:
 
@@ -25,7 +36,19 @@ As part of the visualization settings, specific Summary number options are avail
 | **[!UICONTROL Abbreviate value]** | Select **[!UICONTROL Abbreviate value]** to abbreviate intelligently the number value. When selected, enter a number to define the amount of abbreviation. For example:<br/><table><tr><td>**Original value**</td><td>**Abbreviation value**</td><td>**Result**</td></tr><tr><td>$12,011,141.25</td><td>Not selected</td><td  align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to `0`</td><td align="right">$12M</td></tr><tr><td>$12,011,141.25</td><td> Selected, set to `1`</td><td  align="right">$12.0M</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to `2`</td><td align="right">$12.01M</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to `3`</td><td align="right">$12.011M</td></tr></table> |
 | **[!UICONTROL Summarize value by]** | Choose to display the max, min, mean, median, or sum for a selection of data. |
 
-## Summary change
+## Summary change {#summary-change}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_summarychange_button"
+>title="Summary change"
+>abstract="Create a viisualization that shows the delta (change) between two numbers"
+>additional-url="url"
+>additional-url="url"
+
+<!-- markdownlint-enable MD034 -->
+
 
 Use the ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) [!UICONTROL Summary Change] visualization to show the delta (change) between two numbers. <!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
 

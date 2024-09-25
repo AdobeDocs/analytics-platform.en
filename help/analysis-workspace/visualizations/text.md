@@ -5,9 +5,19 @@ feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
 ---
-# Text
+# Text {#text-visualization}
 
-To add user-defined text to your Workspace project, you can use a ![Text](/help/assets/icons/Text.svg) [!UICONTROL Text] visualization or use descriptions for a visualization and panel. 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_text_button"
+>title="Text"
+>abstract="Add a user-defined rich text visualization to your project."
+
+<!-- markdownlint-enable MD034 -->
+
+
+To add user-defined rich text to your Workspace project, you can use a ![Text](/help/assets/icons/Text.svg) [!UICONTROL Text] visualization or use descriptions for a visualization and panel. 
 
 ## Use
 

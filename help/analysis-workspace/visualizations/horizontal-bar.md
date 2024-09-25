@@ -7,13 +7,33 @@ role: User
 ---
 # Horizontal bar and Horizontal bar stacked
 
-## Horizontal bar
+## Horizontal bar {#horizontal-bar}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_horizontalbar_button"
+>title="Horizontal bar"
+>abstract="Create a horizontal bar visualization to represent various values across one or more metrics."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Thie ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) H[!UICONTROL orizontal bar] visualization shows horizontal bars representing various values across one or more metrics.
 
 ![Horizontal bar showing metrics including Page Views, Page Velocity, Visits, Entries, and Exits.](assets/horizontal-bar.png)
 
-## Horizontal bar stacked
+## Horizontal bar stacked {#horizontal-bar-stacked}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_horizontalbarstacked_button"
+>title="Horizontal bar stacked"
+>abstract="Create a horizontal bar visualization to represent various values across one or more stacked metrics."
+
+<!-- markdownlint-enable MD034 -->
+
 
 The ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) [!UICONTROL Horizontal bar stacked] visualization is like the [!UICONTROL Horizontal bar], but the series bars appear stacked.
 

@@ -5,9 +5,19 @@ feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
 ---
-# Line
+# Line {#line}
 
-The ![GraphTrend](/help/assets/icons/GraphTrend.svg) [!UICONTROL Line] visualization represents metrics using a line to show how values change over a period of time. A line chart can be used only when time is used as a dimension.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_line_button"
+>title="Line"
+>abstract="Create a line visualization that shows how values change over a period of time. A line visualization can only be used when time is used as a dimension."
+
+<!-- markdownlint-enable MD034 -->
+
+
+The ![GraphTrend](/help/assets/icons/GraphTrend.svg) [!UICONTROL Line] visualization represents metrics using a line to show how values change over a period of time. A line visualization can be used only when time is used as a dimension.
 
 <!--
 >[!NOTE]

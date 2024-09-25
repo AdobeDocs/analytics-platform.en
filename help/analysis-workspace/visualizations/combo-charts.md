@@ -12,7 +12,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="cja_workspace_combo_button"
 >title="Combo"
->abstract="Creates a combo chart visualization quickly without the need to create a freeform table first."
+>abstract="Create a combo chart visualization quickly without the need to create a freeform table first."
 
 <!-- markdownlint-enable MD034 -->
 

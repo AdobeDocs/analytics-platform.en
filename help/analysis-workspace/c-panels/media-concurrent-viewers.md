@@ -12,7 +12,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaconcurrentviewers_button"
 >title="Media concurrent viewers"
->abstract="Creates a panel to analyse average minute audience for specific content, or over a specific time period."
+>abstract="Create a panel to analyse average minute audience for specific content, or over a specific time period."
 
 <!-- markdownlint-enable MD034 -->
 

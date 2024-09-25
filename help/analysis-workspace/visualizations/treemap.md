@@ -5,7 +5,19 @@ feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
 ---
-# Treemap
+# Treemap {#treemap}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_treemap_button"
+>title="Treemap"
+>abstract="Create a treemap visualization to show hierarchical (tree-structured) data with nested rectangles."
+>additional-url="url"
+>additional-url="url"
+
+<!-- markdownlint-enable MD034 -->
+
 
 Use a ![GraphTree](/help/assets/icons/GraphTree.svg) [!UICONTROL Treemap] visualization to display hierarchical (tree-structured) data as a set of nested rectangles.
 

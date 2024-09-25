@@ -12,7 +12,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaplaybacktimespent_button"
 >title="Media playback time spent"
->abstract="Creates a panel to analyze video consumption over time, with various levels of granularity, and the ability to break down and compare."
+>abstract="Create a panel to analyze video consumption over time, with various levels of granularity, and the ability to break down and compare."
 
 <!-- markdownlint-enable MD034 -->
 

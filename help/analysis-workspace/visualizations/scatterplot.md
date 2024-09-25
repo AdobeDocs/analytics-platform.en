@@ -5,7 +5,17 @@ feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
 ---
-# Scatter
+# Scatter {#scatter}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_scatter_button"
+>title="Scatter"
+>abstract="Create a scatter visualization that shows the relationship between dimension items and up to three metrics."
+
+<!-- markdownlint-enable MD034 -->
+
 
 The ![GraphScatter](/help/assets/icons/GraphScatter.svg) [!UICONTROL Scatter] visualization shows the relationship between dimension items and up to three metrics. It requires three components, and supports visualizing up to four components.
 

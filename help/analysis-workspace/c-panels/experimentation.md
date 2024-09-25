@@ -12,7 +12,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="cja_workspace_experimentation_button"
 >title="Experimentation"
->abstract="Creates a panel to compare different user experiences, marketing, or messaging variations. And to determine which variation is best at driving a specific outcome."
+>abstract="Create a panel to compare different user experiences, marketing, or messaging variations. And to determine which variation is best at driving a specific outcome."
 
 <!-- markdownlint-enable MD034 -->
 

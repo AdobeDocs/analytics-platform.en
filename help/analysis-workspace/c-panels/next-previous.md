@@ -12,7 +12,7 @@ role: User, Admin
 >[!CONTEXTUALHELP]
 >id="cja_workspace_nextorpreviousitem_button"
 >title="Next or previous item"
->abstract="Creates a panel to understand the previous dimensions people come from or next dimension people go to."
+>abstract="Create a panel to understand the previous dimensions people come from or next dimension people go to."
 
 <!-- markdownlint-disable MD034 -->
 

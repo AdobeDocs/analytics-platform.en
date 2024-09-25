@@ -12,7 +12,7 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaminuteaverageaudience_button"
 >title="Media average minute audience"
->abstract="Creates a panel to analyse average minute audience for specific content, or over a specific time period."
+>abstract="Create a panel to analyse average minute audience for specific content, or over a specific time period."
 
 
 <!-- markdownlint-enable MD034 -->

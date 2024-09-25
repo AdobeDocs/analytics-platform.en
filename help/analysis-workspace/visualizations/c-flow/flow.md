@@ -12,7 +12,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="cja_workspace_flow_button"
 >title="Flow"
->abstract="Creates a visualization to view the flow of people from one checkpoint to the next."
+>abstract="Create a visualization to view the flow of people from one checkpoint to the next."
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_flow_panel"

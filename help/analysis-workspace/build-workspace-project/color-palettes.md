@@ -5,7 +5,17 @@ feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
 role: User
 ---
-# Visualization color palette
+# Visualization color palette {#visualization-color-palette}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_project_colorpalette"
+>title="Project color palette"
+>abstract="Change the color palette used in this project."
+
+<!-- markdownlint-enable MD034 -->
+
 
 You can change the visualization color palette used in Workspace. You can select a predefined color palette or specify your own palette that matches your company's branding colors. This feature affects most visualizations in Workspace, but it does **not** affect Summary Change, conditional formatting in Freeform tables, and the Map visualization.
 

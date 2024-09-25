@@ -5,7 +5,17 @@ feature: Visualizations
 role: User
 ---
 
-# Section header
+# Section header {#section-header}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_sectionheader_button"
+>title="Section header"
+>abstract="Add a section header to a panel."
+
+<!-- markdownlint-enable MD034 -->
+
 
 To identify and articulate sections within a panel, you can insert a ![PageRule](/help/assets/icons/PageRule.svg) [!UICONTROL Section header] visualization anywhere within a panel.
 

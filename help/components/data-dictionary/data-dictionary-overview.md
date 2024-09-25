@@ -5,13 +5,30 @@ feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 ---
-# Data Dictionary overview
+# Data Dictionary overview {#data-dictionary-overview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_datadictionary"
+>title="Data dictionary"
+>abstract="The Data Dictionary helps both users and and administrators keep track of and better understand the components in their Analytics environment. <br/>Analytics administrators are responsible for curating information about each component the Data Dictionary to users."
+
+<!-- markdownlint-enable MD034 -->
+
 
 The Data Dictionary in Analysis Workspace helps both users and administrators keep track of and better understand the components in their Analytics environment.   
 
 Analytics administrators are responsible for curating information about each component in the Data Dictionary to make it available to users.
 
+
++++ Video to demonstrate the Data Dictionary 
+
 >[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
+
+{{videoaa}}
+
++++
 
 ## Benefits for users
 

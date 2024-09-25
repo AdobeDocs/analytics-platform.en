@@ -14,7 +14,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="cja_workspace_bar_button"
 >title="Bar"
->abstract="abstract"
+>abstract="Create a bar visualization to represent various values across one or more metrics."
 >additional-url="url"
 >additional-url="url"
 

@@ -14,7 +14,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="cja_workspace_area_button"
 >title="Area graph"
->abstract="Creates an area graph visualization to represent the intersection of multiple metrics."
+>abstract="Create an area graph visualization to represent the intersection of multiple metrics."
 
 <!-- markdownlint-enable MD034 -->
 
