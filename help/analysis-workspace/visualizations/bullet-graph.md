@@ -22,7 +22,6 @@ role: User
 >id="cja_workspace_bullet_button"
 >title="Nullet"
 >abstract="Create a bullet graph visualization to show how a metric compares to, or measures against, performance ranges (goals)."
->additional-url="url"
 
 <!-- markdownlint-enable MD034 -->
 

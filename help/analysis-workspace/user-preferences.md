@@ -90,8 +90,6 @@ You can update company preferences that apply to all users and projects within y
 >id="cja_workspace_prefs_sequentialpalette"
 >title="Sequential palette"
 >abstract="Applied to the Frequency trends (stacked bar) guided analysis. This palette holds a numeric meaning from light to dark."
->additional-url="url"
->additional-url="url"
 
 <!-- markdownlint-enable MD034 -->
 

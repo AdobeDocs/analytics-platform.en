@@ -15,8 +15,6 @@ role: User
 >id="cja_workspace_summarynumber_button"
 >title="Summary number"
 >abstract="Create a visualization that shows totals and subtotals."
->additional-url="url"
->additional-url="url"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,8 +42,6 @@ As part of the visualization settings, specific Summary number options are avail
 >id="cja_workspace_summarychange_button"
 >title="Summary change"
 >abstract="Create a viisualization that shows the delta (change) between two numbers"
->additional-url="url"
->additional-url="url"
 
 <!-- markdownlint-enable MD034 -->
 
