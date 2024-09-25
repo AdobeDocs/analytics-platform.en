@@ -62,10 +62,40 @@ You can **export captions via PDF**, as long as the project is saved with the ca
 
 ## Toggle captions off {#toggle}
 
-If you would rather not have intelligent captions generated, you can toggle this feature off by going to the Visualization preferences and unchecking **[!UICONTROL Show intelligent captions]**.
+If you would rather not show intelligent captions, you can toggle this feature off. 
 
-![Line visualization options showing the option to uncheck Show intelligent captions.](assets/toggle-captions.png)
+1. Go to [Visualizations preferences](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
+1. Uncheck **[!UICONTROL Show intelligent captions]**.
+
+   ![Line visualization options showing the option to uncheck Show intelligent captions.](assets/toggle-captions.png)
+
+1. Select **[!UICONTROL Save]** to save the preference.
+
+
 
 ## Intelligent captions in Mobile Scorecards
 
 Intelligent captions are also available in Customer Journey Analytics [mobile scorecards](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions).
+
+## Feature Access
+
+Access to the AI Assistant feature is governed by the following parameters:
+
+* **Solution access**: Intelligent Captions is available in Customer Journey Analytics, but not in Adobe Analytics.
+
+* **Contractual access**: If you are not able to use Intelligent Captions, please contact your organization's administrator or Adobe Account Representative. Before Intelligent Captions can be used by your organization, your company must agree to certain GenAI-related legal terms.
+
+* **Permissions**: In [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Product Knowledge]** permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in Admin Console:
+   1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
+   1. Select the title of the product profile for which you want to provide access to Intelligent Captions.
+   1. In the specific product profile, select **[!UICONTROL Permissions]**.
+   1. Select ![Edit](/help/assets/icons/Edit.svg) to edit **[!UICONTROL Reporting Tools]**.
+   1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) to add **Intelligent Captions** to **[!UICONTROL Included permission items]**.
+
+      ![Add permission](./assets/intelligent-captions-permissions.png)
+
+   1. Select **[!UICONTROL Save]** to save the permissions.
+   
+      
+
+See [Access control](/help/technotes/access-control.md#access-control) for more information.
