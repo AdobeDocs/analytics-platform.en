@@ -5,7 +5,27 @@ feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
 ---
-# Bullet
+# Bullet {#bullet}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_bullet_goalvalue"
+>title="Goal value"
+>abstract="**[!UICONTROL High goal]** is the is the main goal you are aiming for. **[!UICONTROL Low goal]** and **[!UICONTROL Mid goal]** create ranges below the [!UICONTROL High goal]. Note: when the **[!UICONTROL Percentages]** option is checked, enter goals as whole numbers. For example: `20` if your goal is twenty percent."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_bullet_button"
+>title="Nullet"
+>abstract="Creates a bullet graph visualization to show how a metric compares to, or measures against, performance ranges (goals)."
+>additional-url="url"
+
+<!-- markdownlint-enable MD034 -->
+
 
 The ![GraphBullet](/help/assets/icons/GraphBullet.svg) [!UICONTROL Bullet] visualization shows how a metric compares to, or measures against, performance ranges (goals). 
 
@@ -19,7 +39,7 @@ You can define specific settings for a [!UICONTROL Bullet] visualization.
 
 | Setting | Description |
 |---|---|
-| **[!UICONTROL Bullet options]** | Specify values for **[!UICONTROL High goal]**, **[!UICONTROL Mid goal]** and **[!UICONTROL Low goal]** in the [!UICONTROL Bullet] visualization. |
+| **[!UICONTROL Bullet options]** | Specify values for **[!UICONTROL High goal]**, **[!UICONTROL Mid goal]** and **[!UICONTROL Low goal]** in the [!UICONTROL Bullet] visualization. <br/>**[!UICONTROL High goal]** is the is the main goal you are aiming for. **[!UICONTROL Low goal]** and **[!UICONTROL Mid goal]** create ranges below the High goal. Note: when the **[!UICONTROL Percentages]** option is checked, enter goals as whole numbers. For example: `20` if your goal is twenty percent. |
 
 >[!MORELIKETHIS]
 >

@@ -7,7 +7,19 @@ role: User
 ---
 # Bar and bar stacked
 
-## Bar
+## Bar {#bar}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_bar_button"
+>title="Bar"
+>abstract="abstract"
+>additional-url="url"
+>additional-url="url"
+
+<!-- markdownlint-enable MD034 -->
+
 
 The ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [!UICONTROL Bar] visualization shows vertical bars representing various values across one or more metrics.
 
@@ -15,7 +27,19 @@ The ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [!UICONTROL Bar
 
 A granularity drop-down in the visualization settings lets you change a trended visualization (for example, line, bar) from daily to weekly to monthly, etc.
 
-## Bar stacked
+## Bar stacked {#bar-stacked}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_barstacked_button"
+>title="Bar stacked"
+>abstract="Creates a bar visualization to represent various values across one or more stacked metrics."
+>additional-url="url"
+>additional-url="url"
+
+<!-- markdownlint-enable MD034 -->
+
 
 The ![GraphBarVerticalStacked](/help/assets/icons/GraphBarVerticalStacked.svg) [!UICONTROL Bar stacked] visualization is like a bar chart, but with the series bars stacked on top of each other.
 

@@ -5,9 +5,19 @@ feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
 ---
-# Donut
+# Donut {#donut}
 
-Similar to a pie chart, the ![GraphDonut](/help/assets/icons/GraphDonut.svg) [!UICONTROL Donut] visualization shows data as parts or filters of a whole. Use a donut graph when comparing percentages of a total, typically with a small number of items.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_donut_button"
+>title="Donut"
+>abstract="Create a donut visualization to compare percentages of a total, typically with a small number of items."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Similar to a pie chart, the ![GraphDonut](/help/assets/icons/GraphDonut.svg) [!UICONTROL Donut] visualization shows data as parts or filters of a whole. Use a donut visualization when comparing percentages of a total, typically with a small number of items.
 
 ![A Donut chart showing data as parts or filters of a whole.](assets/donut.png)
 

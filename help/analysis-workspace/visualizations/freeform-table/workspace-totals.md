@@ -5,7 +5,17 @@ feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
 ---
-# Workspace totals
+# Workspace totals {#workspace-totals}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_grandtotal"
+>title="Grand Total"
+>abstract="Grand total is not supported for tables or breakdowns with static rows"
+
+<!-- markdownlint-enable MD034 -->
+
 
 In Freeform tables, a total row appears at each breakdown level and can show two totals:
 
