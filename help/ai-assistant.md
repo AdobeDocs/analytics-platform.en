@@ -8,7 +8,7 @@ exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 
 # AI Assistant for Adobe Customer Journey Analytics
 
-AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace – whether it's understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
+AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace. Whether the task is to understand concepts, troubleshoot problems, or search through information. AI Assistant also allows non-experts to perform expert tasks and increases the overall quality of work.
 
 The AI Assistant in Customer Journey Analytics is trained on its Adobe Experience League documentation. When asked a question, AI Assistant responds with a helpful answer that enables quick learning.
 
@@ -26,7 +26,7 @@ AI Assistant for Customer Journey Analytics is available to all product tiers.
 
 ## Product knowledge {#knowledge}
 
-The product knowledge retrieval model is trained on Customer Journey Analytics. Other capabilities, such as data analysis, will be rolled out at a later date. 
+The product knowledge retrieval model is trained on Customer Journey Analytics. Other capabilities, such as data analysis, will be rolled out later. 
 
 | Product knowledge | Examples |
 | --- | --- |
@@ -36,16 +36,24 @@ The product knowledge retrieval model is trained on Customer Journey Analytics. 
 
 ## Feature Access
 
-In this first release, access to the AI Assistant feature is governed by the following parameters:
+The following parameters govern access to the AI Assistant feature:
 
 * **Solution access**: The AI Assistant is available in Customer Journey Analytics, but not in Adobe Analytics. It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP and additional Experience Platform apps.
 
-* **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before AI Assistant can be used by your organization, your company must agree to certain GenAI-related legal terms.
+* **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before your organization can use AI Assistant, your must agree to certain GenAI-related legal terms.
 
-* **Permissions**: In [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] "AI Assistant: Product Knowledge" permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in Admin Console:
-   1. Navigate to [!UICONTROL Admin Console] > [!UICONTROL Products and services] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL Product Profile] > [!UICONTROL Permissions] > [!UICONTROL Edit Reporting Tools].
-   1. Add "AI Assistant: Product Knowledge".
-   ![Add permission](assets/image.png)
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Product Knowledge]** permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
+   1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
+   1. Select the title of the product profile for which you want to provide access to [!UICONTROL AI Assistant: Product Knowledge].
+   1. In the specific product profile, select **[!UICONTROL Permissions]**.
+   1. Select ![Edit](/help/assets/icons/Edit.svg) to edit **[!UICONTROL Reporting Tools]**.
+   1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) to add **AI Assistant: Product Knowledge** to **[!UICONTROL Included permission items]**.
+   
+      ![Add permission](assets/ai-assistant-permissions.png).
+
+   1. Select **[!UICONTROL Save]** to save the permissions.
+
+See [Access control](/help/technotes/access-control.md#access-control) for more information.
 
 ## Access AI Assistant in the Customer Journey Analytics UI
 
