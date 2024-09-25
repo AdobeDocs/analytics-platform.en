@@ -26,38 +26,40 @@ Natural-language insights are now being generated.
 
 Keep in mind that
 
-* You need a minimum of 3 data points to generate captions successfully. Otherwise, you might get an error that reads "Not enough data to analyze."
+* You need a minimum of 3 data points to generate captions successfully. Otherwise, you might get an error like **[!UICONTROL Not enough data to analyze]**.
 
-* Captions are generated every time the underlying selected data changes in the table powering the visualization. 
+* Captions are generated every time the underlying selected data changes in the table that powers the visualization. 
 
 * If there are multiple metrics in the table, captions are only generated for the first metric or the metric currently selected by the user.
 
-* If you save the project at this point, and re-load it later, the captions are auto-updated with new data. The same applies to scheduled projects and PDF files exported from this project.
+* If you save the project at a specific point, and re-load it later, the captions are auto-updated with new data. The same applies to scheduled projects and PDF files exported from a project.
 
-## View and interpret captions {#view}
-
-Here is a sample of what the captions could look like:
+Here is an example of what intelligent captions could look like:
 
 ![Intelligent captions for Line visualization including Seasonality, Min, Max, Spike, and Decline.](assets/captions.png)
 
-## Copy to clipboard {#copy}
+## Actions
+
+You can perform the following actions on intelligent captions:
+
+### Copy to clipboard {#copy}
 
 You can copy the captions to a clipboard and paste them into a PowerPoint or other tools. Select ![Copy captions to clipboard](/help/assets/icons/Copy.svg) at the top right of the captions dialog.
 
-## Edit captions {#edit}
+### Edit display {#edit}
 
-You can edit the captions, such as hiding or unhiding a particular category of insights. For example, if you don't want the insight about the minimum order, you can just hide that insight and click apply. and it will not show again. 
+You can edit the display of captions, such as hiding or unhiding a particular category of insights. 
 
 1. Select ![Edit intelligent captions display](/help/assets/icons/EditInLight.svg) in the Intelligent captions dialog.
 
-1. Toggle between ![Visibility](/help/assets/icons/Visibility.svg) to show a specific insight (like **[!UICONTROL Min]**), or ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) to hide a specific insight (like **[!UICONTROL Spike]**).
+1. Toggle between ![Visibility](/help/assets/icons/Visibility.svg) to display a specific insight (like **[!UICONTROL Min]**), or ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) to hide a specific insight (like **[!UICONTROL Spike]**).
 
    ![Edit intelligent captions](assets/edit-intelligent-captions.png)
 
 1. Select **[!UICONTROL Apply]**.
 
 
-## Provide feedback
+### Provide feedback
 
 You can provide feedback on the generated intelligent captions.
 
@@ -67,13 +69,13 @@ You can provide feedback on the generated intelligent captions.
 
 1. In the **[!UICONTROL Thank you for your feedback]** dialog, provide your feedback and select **[!UICONTROL Submit]** to submit the feedback.
 
-## Export captions {#export}
+### Export {#export}
 
-You can **export captions via PDF**, as long as the project is saved with the captions generated.
+You can export intelligent captions as part of a PDF, as long as the project is saved with the intelligent captions generated.
 
-## Toggle captions off {#toggle}
+### Toggle off {#toggle}
 
-If you would rather not show intelligent captions, you can toggle this feature off. 
+If you would rather not show intelligent captions, you can toggle the feature off. 
 
 1. Go to [Visualizations preferences](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
 1. Uncheck **[!UICONTROL Show intelligent captions]**.
@@ -81,9 +83,6 @@ If you would rather not show intelligent captions, you can toggle this feature o
    ![Line visualization options showing the option to uncheck Show intelligent captions.](assets/toggle-captions.png)
 
 1. Select **[!UICONTROL Save]** to save the preference.
-
-
-
 
 
 ## Intelligent captions in Mobile Scorecards
