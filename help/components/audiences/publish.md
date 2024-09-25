@@ -38,7 +38,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
    | Expiration date | When the audience will stop refreshing. The default is 1 year from the creation date. Expiring audiences are treated similarly to expiring scheduled reports - the admin gets an email a month before the audience expires. |
    | Refresh lookback window | Specifies how far back in your data window you want to go when creating this audience. The max is 90 days. |
    | [!UICONTROL One-time date range] | Date range when you want the one-time audience to be published. |
-   | [!UICONTROL Filter] | Filters are the main input to the audience. You can add up to 20 filters. These filters can be joined with `And` or `Or` operators.<p>When creating an audience from a freeform table or from a Journey canvas visualization in Analysis Workspace, any filters applied to the panel or to the column are preserved.</p>  |
+   | [!UICONTROL Filter] | Filters are the main input to the audience. You can add up to 20 filters. These filters can be joined with `And` or `Or` operators.<p>When creating an audience from a visualization in Analysis Workspace (such as a freeform table or Journey canvas), any filters applied to the panel or to the column are preserved. You can remove any filters that are automatically applied.</p>  |
    | [!UICONTROL View sample IDs] | A sample of IDs in this audience. Use the search bar to search for sample IDs. |
 
    {style="table-layout:auto"}
