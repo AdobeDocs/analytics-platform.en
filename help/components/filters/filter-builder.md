@@ -5,7 +5,17 @@ feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
 ---
-# Filter builder
+# Filter builder {#filter-builder}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_createaudience"
+>title="Create Audience"
+>abstract="Audiences can be created from a filter and shared with the Adobe Experience Platform for activation."
+
+<!-- markdownlint-enable MD034 -->
+
 
 The **[!UICONTROL Filter builder]** dialog is used to create new or edit existing filters. The dialog is titled **[!UICONTROL New filter]** or **[!UICONTROL Edit filter]** for filters that you create or manage from the [[!UICONTROL Filters] manager](/help/components/filters/manage-filters.md).
 
@@ -127,7 +137,36 @@ Or, you could define 52 filters: 50 filters for the US states, one for mobile ph
 ![Stacked filter for CA and tablet](assets/filter-ca-tablet-stacked.png)
 
 
-## Attribution models
+## Attribution {#attribution}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_attribution_repeating"
+>title="Repeating"
+>abstract="Includes instances and persisted values for the dimension."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_attribution_instance"
+>title="Instance"
+>abstract="Includes instances and persisted values for the dimension."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_attribution_nonrepeatinginstance"
+>title="Non-repeating instance"
+>abstract="Includes unique (non-repeating) instances for the dimension."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 When you use a dimension in the Filter builder, you have the options to specify the attribution model for that dimension. The attribution model you select determines whether data qualifies for the condition you have specified for the dimension component.
 

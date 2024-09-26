@@ -5,7 +5,25 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
 ---
-# Create and publish audiences
+# Create and publish audiences {#create-and-publish-audiences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_refreshfrequency"
+>title="Refresh frequency"
+>abstract="See how often an audience's membership will be reevaluated.<br/>One time audiences are evaluated only once."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_audiencelimit"
+>title="Audience limit"
+>abstract="Refreshing audiences are limited based on how often they refresh."
+
+<!-- markdownlint-enable MD034 -->
 
 This topic discusses how to create and publish audiences identified in Customer Journey Analytics to [Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) in Adobe Experience Platform for customer targeting and personalization. 
 

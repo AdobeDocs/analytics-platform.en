@@ -4,7 +4,9 @@ title: Create alerts (Analysis Workspace)
 feature: Workspace Basics
 role: User, Admin
 ---
-# Create alerts
+# Create alerts {#create-alerts}
+
+
 
 >[!NOTE]
 >

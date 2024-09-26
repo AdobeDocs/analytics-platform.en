@@ -6,13 +6,23 @@ feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
 ---
-# View reporting activity in the Reporting Activity Manager
+# View reporting activity {#view-reporting-activity}
 
 The [!UICONTROL Reporting Activity Manager] enables administrators to quickly diagnose and fix reporting capacity issues during peak reporting times.
 
 For more information about Reporting Activity manager, including key benefits and permission requirements, see [Reporting Activity Manager overview](/help/reporting-activity-manager/reporting-activity-overview.md).
 
-## View reporting activity for all connections {#view-all-report-suites}
+## For all connections {#view-all-report-suites}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_reportingactivitymanager_connections"
+>title="Connections"
+>abstract="This table shows the connections for which you have rights to manage reporting activity. Information about each connection is available in each column of the table."
+
+<!-- markdownlint-enable MD034 -->
+
 
 1. In Customer Journey Analytics, go to **[!UICONTROL Tools]** > **[!UICONTROL Reporting Activity Manager]**.
 
@@ -30,7 +40,7 @@ For more information about Reporting Activity manager, including key benefits an
 
    * Use the search field to search for a specific connection. Begin typing the connection name or ID and the list of connections updates as you type.
 
-   * Select the [!UICONTROL **Filter**] icon ![Filter icon](assets/filter-icon.png) to expand the list of filter options. You can filter by [!UICONTROL **Favorites**] or [!UICONTROL **Status**].
+   * Select ![Filter](/help/assets/icons/Filter.svg) to expand the list of filter options. You can filter by [!UICONTROL **Favorites**] or [!UICONTROL **Status**].
 
      To mark a connection as a favorite, select the star icon to the left of the connection name.
       
@@ -51,7 +61,7 @@ For more information about Reporting Activity manager, including key benefits an
 
    {style="table-layout:auto"}
 
-## View reporting activity for a single connection
+## For a single connection
 
 1. In Customer Journey Analytics, select [!UICONTROL **Tools**] > [!UICONTROL **Reporting Activity Manager**].
 

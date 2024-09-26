@@ -4,7 +4,27 @@ title: Build Metrics
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 ---
-# Build metrics
+# Build metrics {#build-metrics}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_calculatedmetrics_productcompatibility"
+>title="Product Compatibility"
+>abstract="Indicates where in Customer Journey Analytics this calculated metric can be used, such as in Analysis Workspace, Report Builder, and so forth. Some calculated metrics cannot be used with experimentation."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Use calculated metrics in experimentation" 
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_calculatedmetrics_externalid"
+>title="External Id"
+>abstract="Changing the External ID might impact how the calculated metric appears in external sources, such as business intelligence tools"
+
+<!-- markdownlint-enable MD034 -->
+
 
 The **[!UICONTROL Calculated metric builder]** dialog is used to create new or edit existing calculated metrics. The dialog is titled **[!UICONTROL New calculated metric]** or **[!UICONTROL Edit calculated metric]** for metrics that you create or manage from the [[!UICONTROL Calculated metrics] manager](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
@@ -43,8 +63,6 @@ The **[!UICONTROL Calculated metric builder]** dialog is used to create new or e
    The **[!UICONTROL Product compatibility]** indicates whether the calculated metric can be used in experimentation. Possible values are:
    * **[!UICONTROL Everywhere in Customer Journey Analytics]**: The calculated metric can be used throughout all of Customer Journey Analytics, except in the Experimentation panel. 
    * **[!UICONTROL Everywhere in Customer Journey Analytics (excluding experimentation)]**: The calculated metric can be used throughout all of Customer Journey Analytics. 
-
-   Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) for more information.
 
 1. Select:
    * **[!UICONTROL Save]** to save the calculated metric.

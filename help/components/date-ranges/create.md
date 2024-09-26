@@ -25,7 +25,19 @@ To define the annotation, you use the [[!UICONTROL Annotation builder]](#annotat
 -->
 
 
-## Date range builder
+## Date range builder {#date-range-builder}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_dateranges_endtime"
+>title="End time"
+>abstract="End times always include 59 seconds."
+
+<!-- markdownlint-enable MD034 -->
+
+
+
 
 The **[!UICONTROL New date range]** or **[!UICONTROL Edit date range]** dialog is used to create new or edit existing date ranges.
 
