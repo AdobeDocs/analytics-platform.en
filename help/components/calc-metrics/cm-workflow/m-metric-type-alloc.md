@@ -150,15 +150,6 @@ See [Example](#example) for an example of using an attribution model and lookbac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_custom"
->title="Custom"
->abstract="Define your own position based attribution weighting."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_algorithmic"
 >title="Algorithmic"
 >abstract="Credit is dynamically determined on a statistical algorithm."
