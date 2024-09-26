@@ -27,6 +27,8 @@ When you create or edit a derived field, you use the derived field interface.
 ![Screenshot of the Derived field dialog](assets/derived-field-dialog.png)
 
 
+![ProgramOverview](/help/assets/icons/ProgramOverview.svg)
+
 |  | Name | Description |
 |---------|----------|--------|
 | 1 | **Selector** | You use the selector area to select and drag and drop your function, function template, schema field, or standard field on to the rule builder. <br/>Use the drop-down to select between: <br/>![Function](assets/Smock_Function_18_N.svg) [!UICONTROL Functions] - lists available [functions](#function-reference), </br>![Function template icon](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Function templates] - lists available [function templates](#function-templates), <br/>![Schema field icon](assets/Smock_Folder_18_N.svg)  [!UICONTROL Schema fields] - lists fields available from dataset categories (event, profile, lookup) and previously defined derived fields, and <br/>![Standard field icon](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Standard fields] - standard available fields (like Platform Dataset ID). Only string and numeric standard fields are displayed in the selector. If the function supports other data types, standard fields with these other data types can be selected for values or fields within the rule interface.<br/>You can search for function, function templates, schema, and standard fields using the ![Search  icon](assets/Smock_Search_18_N.svg) Search box. <br/>You can filter the selected object list by selecting ![Filter icon](assets/Smock_Filter_18_N.svg) Filter and specify filters in the [!UICONTROL Filter fields by] dialog. You can easily remove filters using ![Close icon](assets/CrossSize75.svg) for each filter. | 
@@ -905,7 +907,7 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 
 <!-- FIND AND REPLACE -->
 
-### Find and Replace {#find-replace}
+### Find and Replace {#find-and-replace}
 
 Finds all values in a selected field and replaces those values with a different value in a new derived field.
 

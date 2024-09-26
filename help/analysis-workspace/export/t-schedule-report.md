@@ -1,15 +1,15 @@
 ---
 description: Send an Analysis Workspace project by email or schedule it for delivery.
 keywords: Analysis Workspace
-title: Send Customer Journey Analytics data to others by email
+title: Send reports to others by email
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
 ---
-# Send Customer Journey Analytics data to others through email
+# Send files to others
 
-You can export Customer Journey Analytics reports by sending it to selected recipients through email. You can send files ad hoc, or you can configure files to be sent on a schedule. Files can be sent in CSV or PDF format.
+You can send Customer Journey Analytics reports as files to selected users by email. You can send files ad hoc, or you can configure files to be sent on a schedule. Files can be sent in CSV or PDF format.
 
 Any tags applied to the project are automatically applied to the export.
 
@@ -80,6 +80,16 @@ The Scheduled Projects Manager shows the items that a specific user has created.
 For more information, see [Scheduled projects](/help/components/scheduled-projects-manager.md).
 
 ## Password-protect a scheduled project {#password}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_sendfile_password"
+>title="Password encryption"
+>abstract="The supplied password will be used to encrypt the file for the scheduled project. The security requirements for your organization require password encryption."
+
+<!-- markdownlint-enable MD034 -->
+
 
 >[!NOTE]
 >

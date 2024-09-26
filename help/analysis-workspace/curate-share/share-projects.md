@@ -6,7 +6,17 @@ feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
 ---
-# Share projects
+# Share projects {#share-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_shareprojects"
+>title="Share projects"
+>abstract="You can share any of these project roles with other users in your organization."
+
+<!-- markdownlint-enable MD034 -->
+
 
 You can share an Analysis Workspace project with the following types of people:
 
