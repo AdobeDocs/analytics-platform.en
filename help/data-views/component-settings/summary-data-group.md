@@ -6,7 +6,17 @@ feature: Data Views
 role: Admin
 exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
 ---
-# [!UICONTROL Summary data group] component settings
+# [!UICONTROL Summary data group] component settings {#summary-data-group-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_summarydatagroup"
+>title="Summary data group"
+>abstract="A summary data group creates an association between all dimensions in the grouping and is used to combine dimensions from summary datasets with other dimensions for reporting."
+
+<!-- markdownlint-enable MD034 -->
+
 
 A summary data group creates an association between all dimensions in the grouping and is used to combine dimensions from summary datasets with other dimensions for reporting.
 

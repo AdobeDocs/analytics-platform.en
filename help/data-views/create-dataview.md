@@ -12,7 +12,11 @@ Creating a data view involves either creating metrics and dimensions from schema
 
 Here is a video on the topic:
 
++++ Video to illustrate Data views in Customer Journey Analytics
+
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
+
++++
 
 To create or edit a data view:
 
@@ -20,7 +24,17 @@ To create or edit a data view:
 1. To create a data view, select **[!UICONTROL Create new data view]**. Alternatively, you can select an existing data view from the list of data views to edit it.
 
 
-## Configure
+## Configure {#configure}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_externalid"
+>title="External ID"
+>abstract="Changing the External ID may impact how the data view name appears in external sources, such as business intelligence tools."
+
+<!-- markdownlint-enable MD034 -->
+
 
 To configure a new or existing data view:
 
@@ -44,9 +58,20 @@ Provides overarching settings for the data view.
 
 {style="table-layout:auto"}
 
-### Compatibility
+### Compatibility {#compatibility}
 
 {{release-limited-testing-section}}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_dataviewsinadobejourneyoptimizer"
+>title="Data views in Journey Optimizer"
+>abstract="Journey Optimizer needs to use a data view that is configured with Customer Journey Analytics.<br/>Enable this option to make this the default data view that is used in Adobe Journey Optimizer reporting."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Which components and datasets are added." 
+
+<!-- markdownlint-enable MD034 -->
+
 
 Provides settings that are applicable when using Adobe Journey Optimizer in addition to Customer Journey Analytics.
 

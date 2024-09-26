@@ -6,7 +6,17 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 ---
-# Metric deduplication component settings
+# Metric deduplication component settings {#metric-deduplication-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_deduplication"
+>title="Metric deduplication"
+>abstract="Configure a metric to only count values that occur non-repetitively."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Metric deduplication lets you configure a metric to only count values non-repetitively.
 
