@@ -11,8 +11,8 @@ Intelligent captions use advanced Machine Learning and Generative AI to provide 
 
 Intelligent captions are geared towards:
 
-* Analysts who need narratives to share with other users. Analysts need these insights to be able to provide context to their users.
-* Business users who want to discover high-level takeaways quickly.
+* Analysts, who need narratives to share with other users. Analysts need these insights to be able to provide context to their users.
+* Business users, who want to discover high-level takeaways quickly.
 
 ## Launch intelligent captions {#launch}
 
