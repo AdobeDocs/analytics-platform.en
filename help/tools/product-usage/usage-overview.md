@@ -1,12 +1,19 @@
 ---
-title:
-description:
+title: Product usage overview
+description: View insights and reports on how your organization uses Customer Journey Analytics.
 hide: yes
 hidefromtoc: yes
 ---
 # Product usage overview
 
-Intro
+Product usage provides your organization with the ability to view analytics data on how your organization uses Customer Journey Analytics. Once enabled, the following Adobe Experience Platform components are automatically created and hooked up for you:
+
+* A schema in Adobe Experience Platform
+* A dataset in Adobe Experience Platform
+* A connection in Customer Journey Analytics
+* A data view in Customer Journey Analytics
+
+All data collection and setup is automatically configured for you once enabled.
 
 ## Available dimensions
 
