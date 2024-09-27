@@ -93,6 +93,12 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Summary data](../data-views/summary-data.md)
   + [Labels and policies](../data-views/data-governance.md)
 
++ Tools {#tools}
+  + Product Usage {#product-usage}
+    + [Overview](../tools/product-usage/usage-overview.md)
+    + [Data settings](../tools/product-usage/data-settings.md)
+    + [Opt-out settings](../tools/product-usage/opt-out-settings.md)
+
 + Workspace projects {#cja-workspace}
   + [Analysis Workspace overview](../analysis-workspace/home.md)
   + [Perform basic analysis](../analysis-workspace/perform-basic-analysis.md)
