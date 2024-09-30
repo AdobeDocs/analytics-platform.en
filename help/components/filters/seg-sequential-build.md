@@ -205,9 +205,9 @@ Filter definitions include all data unless you specifically exclude ![User](/hel
 
 Example of exclude definitions are:
 
-* **Exclude pages**. Use a filter definition to strip out a specific page (such as *Home Page) from a report, create an Event rule where the page equals "Home Page," and then exclude it. This definition automatically includes all pages except the Home Page.
+* **Exclude pages**. Use a filter definition to strip out a specific page (such as *Home Page*) from a report, create an Event rule where the page equals `Home Page`, and then exclude the rule. This definition automatically includes all pages except the *Home Page*.
 * **Exclude referring domains**. Use a definition that includes only referring domains from Google.com and excludes all others.
-* **Identify non-purchasers**. Identify when orders are greater than zero and then exclude the [!UICONTROL Visitor].
+* **Identify non-purchasers**. Identify when orders are greater than zero and then exclude the [!UICONTROL Person].
 
 [!UICONTROL Exclude] can be used to identify a sequence where specific sessions or events are not performed by the person. [!UICONTROL Exclude] can also be included within a Logic group (see below).
 
@@ -261,19 +261,19 @@ Here are examples on how to use the Logic Group container.
 
 #### Any order
 
-Idenfify persons that vistied one page, then viewed each page out of another set of pages in any order. For example, persons that visited the Home page, then visited each of the Men page, the Women page, and Kids, irrespective of the order.
+Idenfify persons that vistied one page, then viewed each page out of another set of pages in any order. For example, persons that visited the Home page, then visited each of the Men page, the Women page, and Kids page, irrespective of the order.
 
 You can build this filter without a [!UICONTROL Logic Group], but the construction is going to be complex and laborious. You must specify every sequence of pages that the visitor could view. For clarity, only the first container is opened ![ChevronDown](/help/assets/icons/ChevronDown.svg) and the other containers are closed ![ChevronRight](/help/assets/icons/ChevronRight.svg) . You can derive the contents of the other containers by the titles.
 
 ![Example not using a logic group](assets/logicgroup-example-notusing.png)
 
-You use [!UICONTROL Logic Group] to simplify building this filter, as shown below. Ensure you select ![Group](/help/assets/icons/Group.svg) **[!UICONTROL Logic Group]** for the container.
+You can use [!UICONTROL Logic Group] to simplify building this filter, as shown below. Ensure you select ![Group](/help/assets/icons/Group.svg) **[!UICONTROL Logic Group]** for the container.
 
 ![Example not using a logic group](assets/logicgroup-example-using.png)
 
 #### First match
 
-Identify persons that visisted one page or another page, then visited yet another page. For example, persons that visited the Women page or the Men page, then visited the Checkout | Thank You page.
+Identify persons that visited one page or another page, then visited yet another page. For example, persons that visited the Women page or the Men page, then visited the Checkout | Thank You page.
 
 ![Example using first match with logic group](assets/logicgroup-example-firstmatch.png)
 
@@ -301,7 +301,7 @@ An example of a complex sequential filter if you want to find the persons that
 
 ## A final example
 
-As a final example, you want to identify persons that learned about a specific product page. Without these persons ever being touched by your Empower Your Move campaign. And in their first visit to your online store viewed the Home page but did not look further at any fitness (gear) products from the Men category. However in ther next session directly after that, they went to a product page and placed an online order without going through the Home page first.
+As a final example, you want to identify persons that learned about a specific product page, without these persons ever being touched by your Empower Your Move campaign. And in their first visit to your online store viewed the Home page but did not look further at any fitness (gear) products from the Men category. However in their next session directly after that, they went to a product page and placed an online order without going through the Home page first.
 
 
 ![Complex sequential filter example](assets/sequential-complex.png)

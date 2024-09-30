@@ -17,17 +17,17 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
-To add user-defined rich text to your Workspace project, you can use a ![Text](/help/assets/icons/Text.svg) [!UICONTROL Text] visualization or use descriptions for a visualization and panel. 
+To add user-defined rich text to your Workspace project, you can use a ![Text](/help/assets/icons/Text.svg) **[!UICONTROL Text]** visualization or use descriptions for a visualization and panel. 
 
 ## Use
 
 You can use the Text visualization in the following ways:
 
-1. Add a [!UICONTROL Text] visualization. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Add a ![Text](/help/assets/icons/Text.svg) **[!UICONTROL Text]** visualization. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. In a panel or visualization, from the context-menu select **[!UICONTROL Edit description]**. 
    
-Select ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) when finished editing the description, select ![CloseCircle](/help/assets/icons/CloseCircle.svg) to cancel.
+   Select ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) when finished editing the description, select ![CloseCircle](/help/assets/icons/CloseCircle.svg) to cancel.
 
 You can change the formatting of your text, add hyperlinks, and add images.
 

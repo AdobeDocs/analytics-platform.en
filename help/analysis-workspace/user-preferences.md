@@ -138,7 +138,7 @@ You can customize freeform table preferences for all new projects that you creat
 
 Some of these same preferences can also be customized for individual tables.
 
-Click the linked section titles for more information and context about the available preferences.
+Select the linked section titles for more information and context about the available preferences.
 
 | Section | Preference | Options |
 | --- | --- | --- |
@@ -170,7 +170,7 @@ You can update visualization preferences for all new prjects that you create in 
 
 Some of these same preferences can also be customized for individual visualizations. 
 
-Click the linked section titles for more information and context about the available preferences. 
+Select the linked section titles for more information and context about the available preferences. 
 
 | Section | Preference | Options |
 | --- | --- | --- |
@@ -261,7 +261,7 @@ This action cannot be undone.
 
 If you prefer to have a dark background for your Customer Journey Analytics user interface, you can toggle to [!UICONTROL Dark theme].
 
-1. Click the Experience Cloud user icon at the top right.
+1. Select the Experience Cloud user icon at the top right.
 
    ![dark-theme](assets/dark-theme.png)
 

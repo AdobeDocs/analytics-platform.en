@@ -31,7 +31,7 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 
 >[!NOTE]
 >
->The Media average minute audience panel is available only to customers who have purchased the Streaming Media Collection Add-on for Customer Journey Analytics. 
+>The **[!UICONTROL Media average minute audience]** panel is available only to customers who have purchased the Streaming Media Collection Add-on for Customer Journey Analytics. 
 >
 >Contact your Adobe Sales representative or Adobe account team for more information. 
 >
@@ -55,9 +55,9 @@ The Media average minute audience panel provides the following benefits over the
 
 ## Use
 
-To use a [!UICONTROL Media average minute audience] panel:
+To use a **[!UICONTROL Media average minute audience]** panel:
 
-1. Create a [!UICONTROL Media average minute audience] panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
+1. Create a **[!UICONTROL Media average minute audience]** panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
 
 1. Ensure you select a data view for the panel that has components configured from the Streaming Media Collection Add-on.
 
@@ -139,7 +139,7 @@ The Media average minute audience panel returns the following:
 * Filters and average minute audience for the individual videos, displayed in a table 
 * Content time spent and video length (duration) if that advanced setting was selected
 
-To edit and rebuild the panel at any time, select the Edit (pencil) icon in the top right.
+To edit and rebuild the panel at any time, select ![Edit](/help/assets/icons/Edit.svg) in the top right.
 
 ![Default view](assets/specific-content-panel-output.png)
 

@@ -17,7 +17,7 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
-The ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) [!UICONTROL Key metric summary] visualization lets you see how an important metric is trending within a single timeframe. It also lets you compare metric performance across two timeframes. It provides the benefits of multiple visualizations combined into one visualization:
+The ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Key metric summary]** visualization lets you see how an important metric is trending within a single timeframe. It also lets you compare metric performance across two timeframes. It provides the benefits of multiple visualizations combined into one visualization:
 
 * **[!UICONTROL Line]** visualization shows how the metric is trending for the primary and comparison date ranges
 
@@ -35,7 +35,7 @@ This visualization addresses a variety of common use cases, including:
 
 ## Use
 
-1. Add the key metric visualization. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Add a ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Key metric summary]** visualization. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. Configure the visualization by selecting a **[!UICONTROL Metric]**, a **[!UICONTROL Primary date range]**, a **[!UICONTROL Comparison date range]** (optional) and a **[!UICONTROL Filter]** (optional):
 

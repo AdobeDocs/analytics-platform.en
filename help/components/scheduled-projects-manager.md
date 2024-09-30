@@ -15,18 +15,18 @@ The Scheduled projects list displays columns for:
 
 | Field | Description |
 | --- | --- |
-| ![Star](/help/assets/icons/Star.svg) | Selecting the star icon makes this schedule a favorite. |
-| [!UICONTROL Schedule ID] | An ID that is used mainly for debugging purposes. |
+| ![Star](/help/assets/icons/Star.svg) | Selecting ![Star](/help/assets/icons/Star.svg) makes this schedule a favorite. |
+| **[!UICONTROL Schedule ID]** | An ID that is used mainly for debugging purposes. |
 | [!UICONTROL Name] | Name of this project.<br/>Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to see more details for the scheduled project.<br/>Select ![More](/help/assets/icons/More.svg) to open a context menu. From this menu you can:<ul><li>![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** a scheduled project.</li><li>![Labels](/help/assets/icons/Labels.svg) **[!UICONTROL Tag]** a scheduled project.</li><li>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** a scheduled project.</li><li>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export CSV]**: Export a scheduled project to a CSV file.</li></ul>|
-| [!UICONTROL Owner] | The person who created and owns the project. |
-| [!UICONTROL Tags] | (optional) Tagging is a good way to organize projects. All users can create tags and apply one or more tags to a project. However, you can see tags only for those projects that you own or that have been shared with you.  |
-| [!UICONTROL Delivered to] | The recipients of this scheduled project. |
-| [!UICONTROL Expiration date] | You can set the expiration date to up to one year, regardless of schedule frequency. |
-| [!UICONTROL Frequency] | How often you want to have this schedule project sent to one or more recipients. |
-| [!UICONTROL Execution Time] | At what time of day this scheduled project gets sent. |
-| [!UICONTROL Number of Queries] | The number of queries against this project. | 
-| [!UICONTROL Longest Date Range] | The longest date range defined for the scheduled project. This value might be relevant to investigate performance issues. See [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md) for more information. |
-| [!UICONTROL Number of queries] | The number of queries executed for the scheduled project. This value might be relevant to investigate performance issues. See [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md) for more information.| 
+| **[!UICONTROL Owner]** | The person who created and owns the project. |
+| **[!UICONTROL Tags]** | (optional) Tagging is a good way to organize projects. All users can create tags and apply one or more tags to a project. However, you can see tags only for those projects that you own or that have been shared with you.  |
+| **[!UICONTROL Delivered to]** | The recipients of this scheduled project. |
+| **[!UICONTROL Expiration date]** | You can set the expiration date to up to one year, regardless of schedule frequency. |
+| **[!UICONTROL Frequency]** | How often you want to have this schedule project sent to one or more recipients. |
+| **[!UICONTROL Execution Time]** | At what time of day this scheduled project gets sent. |
+| **[!UICONTROL Number of Queries]** | The number of queries against this project. | 
+| **[!UICONTROL Longest Date Range]** | The longest date range defined for the scheduled project. This value might be relevant to investigate performance issues. See [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md) for more information. |
+| **[!UICONTROL Number of queries]** | The number of queries executed for the scheduled project. This value might be relevant to investigate performance issues. See [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md) for more information.| 
 
 You can use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to configure which columns to display.
 

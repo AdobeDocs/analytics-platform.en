@@ -24,7 +24,7 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
-The [!UICONTROL Attribution] panel is an easy way to build an analysis comparing various attribution models. The panel provides you with a dedicated workspace to use and compare attribution models.
+The **[!UICONTROL Attribution]** panel is an easy way to build an analysis comparing various attribution models. The panel provides you with a dedicated workspace to use and compare attribution models.
 
 Customer Journey Analytics enhances attribution by letting you:
 
@@ -39,9 +39,9 @@ Customer Journey Analytics enhances attribution by letting you:
 
 ## Use
 
-To use an [!UICONTROL Attribution] panel:
+To use an **[!UICONTROL Attribution]** panel:
 
-1. Create an [!UICONTROL Attribution] panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).
+1. Create an **[!UICONTROL Attribution]** panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).
 
 1. Specify the [input](#panel-input) for the panel.
 

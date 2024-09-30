@@ -26,7 +26,7 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
-The ![GraphBullet](/help/assets/icons/GraphBullet.svg) [!UICONTROL Bullet] visualization shows how a metric compares to, or measures against, performance ranges (goals). 
+The ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** visualization shows how a metric compares to, or measures against, performance ranges (goals). 
 
  ![](assets/bullet.png)
 

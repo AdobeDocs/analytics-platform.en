@@ -155,7 +155,7 @@ To share an Analysis Workspace project with anyone:
 
 1. Open the Analysis Workspace project that you want to share.
 
-1. Click **[!UICONTROL Share]** > **[!UICONTROL Share with anyone]**.
+1. Select **[!UICONTROL Share]** > **[!UICONTROL Share with anyone]**.
    
    If there are unsaved changes, you are prompted to save your project. 
 
@@ -179,13 +179,13 @@ To share an Analysis Workspace project with anyone:
 
      * If this option is enabled and you can't disable it, this means that your Customer Journey Analytics administrator requires Experience Cloud authentication for anyone accessing Analysis Workspace projects. This is always the case for organizations who license Healthcare Shield. 
 
-1. Next to the **[!UICONTROL Share with anyone (no login required)]** field, click the **Copy link** icon ![Copy link icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)) to copy the link to your system clipboard. 
+1. Next to the **[!UICONTROL Share with anyone (no login required)]** field, select ![Link](/help/assets/icons/Link.svg) to copy the link to your system clipboard. 
 
 1. Share the link with the people you want to have access to the project. For example, you can paste the link in an email. 
    
    Any person you share the link with can view the Analysis Workspace project.
 
-1. (Optional) You can click the **Generate new link** icon ![Generate link icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) to remove access from users who previously received a link to the project. A new link is generated that you can share with users who you want to access the project.
+1. (Optional) You can select ![Generate new link icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) to remove access from users who previously received a link to the project. A new link is generated that you can share with users who you want to access the project.
 
 1. Select **[!UICONTROL Close]** to close the share dialog box. Your changes are automatically saved. 
 

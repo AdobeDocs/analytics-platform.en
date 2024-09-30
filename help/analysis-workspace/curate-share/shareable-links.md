@@ -26,8 +26,8 @@ For more information, see "Share a project with anyone (no login required)" in t
 
 You can also share a link to a specific part of a project, such as a panel or individual visualization. This is sometimes referred to as intra-linking. This can be useful to draw your users' attention to key insights within the project.  
 
-* From any panel header, right-click **[!UICONTROL Get panel link]** 
-* From any table or visualization header, right-click **[!UICONTROL Get visualization link]** 
+* From the context menu of a panel header, select **[!UICONTROL Get panel link]** 
+* From the context menu of a visualization header, select **[!UICONTROL Get visualization link]** 
 
 [Watch the video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) on how to create links and use them to drive recipients to specific parts of your project. 
 

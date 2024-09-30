@@ -18,12 +18,27 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
-A blank panel shows a selection of panels (indicated by ![WebPage](/help/assets/icons/WebPage.svg)) or visualizations that you can create to build a completely customized analysis. 
+A **[!UICONTROL Blank panel]** shows a selection of panels (indicated by ![WebPage](/help/assets/icons/WebPage.svg)) or visualizations that you can create to build a completely customized analysis. 
 
-When you select a panel, the blank panel transitions to the selected panel. When you select a visualization, the visualization is added to the blank panel. For example, select a visualization (like ![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL Cohort table]**) to add to the panel, or select a panel (like ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Attribution]**) to modify the panel for the specific purpose.
+## Use
+
+To use an **[!UICONTROL Blank panel]**:
+
+1. Create an **[!UICONTROL Blank panel]**. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).
+
+   ![Create a panel](assets/create-panel.png)
+
+   
+
+1. Select a visualization or panel from the options available.
+
+   
+   * When you select a panel, the blank panel transitions to the selected panel. 
+   * When you select a visualization, the visualization is added to the blank panel. 
+    
+   For example, select a visualization (like ![ViewList](/help/assets/icons/ViewList.svg) **[!UICONTROL Cohort table]**) to add to the panel, or select a panel (like ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Attribution]**) to modify the panel to an attibution panel.
 
 
-![](assets/blank-panel.png)
 
 You can:
 

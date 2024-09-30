@@ -19,7 +19,7 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
-The ![GraphArea](/help/assets/icons/GraphArea.svg) [!UICONTROL Area] visualization is like a line graph, but with a colored area below the line. Add an  area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics.
+The ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]** visualization is like a line graph, but with a colored area below the line. Add an  area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics.
 
 ![Area visualization showing multiple metrics](assets/area.png)
 
@@ -37,7 +37,7 @@ The ![GraphArea](/help/assets/icons/GraphArea.svg) [!UICONTROL Area] visualizati
 
 
 
-This ![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg) [!UICONTROL Area stacked] visualization is like an Area, but each series begins at the top of the previous series.
+The ![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg) **[!UICONTROL Area stacked]** visualization is like an Area, but each series begins at the top of the previous series.
 
 ![Area stacked showing each series at the top of the previous series.](assets/area-stacked.png)
 

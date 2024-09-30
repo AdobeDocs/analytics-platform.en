@@ -17,13 +17,13 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
-The ![Histogram](/help/assets/icons/Histogram.svg) [!UICONTROL Histogram] visualization is similar to a [!UICONTROL Bar] visualization, but it groups numbers into ranges (buckets). Analytics automates the "bucketing" of numbers into ranges, but you can change the settings in [Advanced Settings](#advanced-settings).
+The ![Histogram](/help/assets/icons/Histogram.svg) **[!UICONTROL Histogram]** visualization is similar to a [!UICONTROL Bar] visualization, but it groups numbers into ranges (buckets). Analytics automates the "bucketing" of numbers into ranges, but you can change the settings in [Advanced Settings](#advanced-settings).
 
 ## Use
 
 To create a histogram:
 
-1. Add a histogram. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Add a ![Histogram](/help/assets/icons/Histogram.svg) **[!UICONTROL Histogram]** visualization. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 1. Drag a metric from the **[!UICONTROL Metrics]** component list, or select a metric from the [!UICONTROL *Add a metric*] dropdown menu.
 1. (optional) Select **[!UICONTROL Show advanced settings]**. See [Advanced settings](#advanced-settings).
 1. Select **[!UICONTROL Build]**.

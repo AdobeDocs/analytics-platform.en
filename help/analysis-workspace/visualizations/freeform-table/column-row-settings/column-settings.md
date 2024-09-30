@@ -90,6 +90,17 @@ To use a non-default attribution model for a metric in an Analysis Workspace:
 
    ![The Column Attribution Model options showing Linear selected.](assets/attribution-select.png)
 
+
+### Attribution models
+
+{{attribution-models-details}}
+
+### Lookback window
+
+{{attribution-lookback-window}}
+
+
+
 >[!MORELIKETHIS]
 >
 >* [Manage data sources](/help/analysis-workspace/visualizations/t-sync-visualization.md)

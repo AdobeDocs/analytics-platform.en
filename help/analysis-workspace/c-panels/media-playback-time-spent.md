@@ -102,7 +102,7 @@ The only metric that can be used in this panel is Playback Time Spent.
 
 |Question|Answer|
 |---|---|
-|Where is the Freeform table? How can I see the data source?|<p></p><p>The Freeform table is not available in this view. To download the data source, right-click the line chart and download the CSV file.</p>|
+|Where is the Freeform table? How can I see the data source?|<p></p><p>The Freeform table is not available in this view. To download the data source, from the context menu in the line chart select the option to download the CSV file.</p>|
 |<p>Why did my granularity change?</p>|<p>This visualization is limited to 1440 rows of data (for example, 24-hours at minute-level granularity). If a date range and granularity combination results in more than 1440 rows, the granularity is automatically updated to accommodate the full date range.</p><p></p><p>When changing from a larger date range to a smaller one, the granularity is updated to the lowest detail allowable once the date range is changed. To view a higher granularity, edit the panel and rebuild.</p>|
 |<p></p><p>How do I compare video names, filters, content types, and more?</p>|<p>To compare these in a single visualization, drag filters, dimensions, or specific dimension items in the series breakdown filter.</p><p></p><p>The view is limited to 10 breakdowns. To view more than 10, you must use multiple panels.</p>|
 |How do I compare date ranges?|To compare date ranges in a single visualization, use the series breakdowns by dragging 2 or more date ranges. These date ranges override the panel date range.|

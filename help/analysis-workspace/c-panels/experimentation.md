@@ -64,9 +64,9 @@ Without these labels present, the Experiment panel does not work, since there ar
 
 ## Use
 
-To use an [!UICONTROL Experimentation] panel:
+To use an **[!UICONTROL Experimentation]** panel:
 
-1. Create an [!UICONTROL Experimentation] panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
+1. Create an **[!UICONTROL Experimentation]** panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
 
 
 1. Specify the [input](#panel-input) for the panel.

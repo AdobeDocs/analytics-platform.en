@@ -7,7 +7,7 @@ role: User
 ---
 # Reference - advanced functions
 
-Access these functions by checking **[!UICONTROL Show Advanced]** in the **[!UICONTROL Functions]** drop-down list.
+Access these functions by selecting **[!UICONTROL Show all]** below ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL Functions]** list in the Components panel. Scroll down to see the list of Advanced functions.
 
 ## Table Functions versus Row Functions
 

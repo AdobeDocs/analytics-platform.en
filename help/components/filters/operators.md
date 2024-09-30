@@ -7,7 +7,7 @@ role: User
 ---
 # Operators
 
-The Filter builder lets you compare and constrain values for components using selected operators. There are two categories of operators: [!UICONTROL Standard] and [!UICONTROL Distinct Count].
+The Filter builder lets you compare and constrain values for components using selected operators. There are two categories of operators: [[!UICONTROL Standard]](#standard-operators) and [[!UICONTROL Distinct Count]](#distinct-count-operators).
 
 ## Standard operators
 

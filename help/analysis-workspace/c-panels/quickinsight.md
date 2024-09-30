@@ -106,7 +106,7 @@ Other useful hints pop up in the [!UICONTROL Quick Insights Builder], some of th
 
 * First, you might want to complete the **[!UICONTROL More tips]** tutorial. This tutorial shows up 24 hours after you have created a project with at least one dimension and one metric. Select ![HelpOutline](/help/assets/icons/HelpOutline.svg) next to the Quick insights panel title and select **[!UICONTROL More tips]** from the popup. 
 
-    ![The Quick Insights Panel notification displayed after you click the Help icon.](assets/qibuilder4.png)
+    ![The Quick Insights Panel notification displayed after you select the Help icon.](assets/qibuilder4.png)
 
 * You can analyze multiple dimensions and metrics, combine or compare filters, and specify a data range:
 

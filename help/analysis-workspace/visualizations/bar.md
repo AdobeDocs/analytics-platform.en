@@ -19,7 +19,7 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
-The ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [!UICONTROL Bar] visualization shows vertical bars representing various values across one or more metrics.
+The ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Bar]** visualization shows vertical bars representing various values across one or more metrics.
 
 ![Virtical bar visualization showing multiple metrics including Page Views, Visits, Entries, and Exits.](assets/bar.png)
 
@@ -37,7 +37,7 @@ A granularity drop-down in the visualization settings lets you change a trended 
 <!-- markdownlint-enable MD034 -->
 
 
-The ![GraphBarVerticalStacked](/help/assets/icons/GraphBarVerticalStacked.svg) [!UICONTROL Bar stacked] visualization is like a bar chart, but with the series bars stacked on top of each other.
+The ![GraphBarVerticalStacked](/help/assets/icons/GraphBarVerticalStacked.svg) **[!UICONTROL Bar stacked]** visualization is like a bar chart, but with the series bars stacked on top of each other.
 
 ![Stacked bar chard showing multiple metrics.](assets/bar-stacked.png)
 

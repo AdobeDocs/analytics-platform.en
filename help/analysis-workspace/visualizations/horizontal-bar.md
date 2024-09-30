@@ -19,7 +19,7 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
-Thie ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) H[!UICONTROL orizontal bar] visualization shows horizontal bars representing various values across one or more metrics.
+Thie ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Horizontal bar]** visualization shows horizontal bars representing various values across one or more metrics.
 
 ![Horizontal bar showing metrics including Page Views, Page Velocity, Visits, Entries, and Exits.](assets/horizontal-bar.png)
 
@@ -35,7 +35,7 @@ Thie ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) H[!UICONTR
 <!-- markdownlint-enable MD034 -->
 
 
-The ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) [!UICONTROL Horizontal bar stacked] visualization is like the [!UICONTROL Horizontal bar], but the series bars appear stacked.
+The ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) **[!UICONTROL Horizontal bar stacked]** visualization is like the [!UICONTROL Horizontal bar], but the series bars appear stacked.
 
 ![A stacked horizontal bar showing Page Views, Visits, Entries, and Exits.](assets/horizontal-bar-stacked.png)
 

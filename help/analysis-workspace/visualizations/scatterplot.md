@@ -17,7 +17,7 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
-The ![GraphScatter](/help/assets/icons/GraphScatter.svg) [!UICONTROL Scatter] visualization shows the relationship between dimension items and up to three metrics. It requires three components, and supports visualizing up to four components.
+The ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Scatter]** visualization shows the relationship between dimension items and up to three metrics. It requires three components, and supports visualizing up to four components.
 
 * The row component (typically a dimension) represents each point on the graph. Different rows show as different colored dots.
 * The leftmost column (typically a metric) plots the position of the dot on the Y axis (vertical).

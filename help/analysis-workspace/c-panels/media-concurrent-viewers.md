@@ -34,7 +34,7 @@ role: User
 >Contact your Adobe Sales representative or Adobe account team for more information. 
 >
 
-The **[!UICONTROL Media concurrent viewers]** panel enables analysis of concurrent viewers over time, with details on peak concurrency and the ability to break down and compare.  To access the Media Concurrent Viewers panel, navigate to a data view with components enabled from the Streaming Media Collection Add-on. Then, click the panel icon on the far-left and drag the panel into your Analysis Workspace project.
+The **[!UICONTROL Media concurrent viewers]** panel enables analysis of concurrent viewers over time, with details on peak concurrency and the ability to break down and compare.
 
 You can analyze concurrent viewers to understand where peak concurrency occurred or where drop-offs happened to provide valuable insight into the quality of content and viewer engagement. And to help with troubleshooting or planning for volume or scale.
 

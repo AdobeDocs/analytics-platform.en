@@ -68,16 +68,14 @@ Following are some of the ways Analytics administrators can use the Data Diction
 
 You can access the Data Dictionary in any of the following ways within Analysis Workspace:
 
-* From the **Data Dictionary** icon in the left panel.
+![Data Dictionary icon in the left panel](assets/data-dictionary-access.png)
 
-  ![Data Dictionary icon in the left panel](assets/data-dictionary-access-icon.png)
+* From ![Bookmark](/help/assets/icons/Bookmark.svg) in the button panel.
 
-* From the **Data Dictionary** icon within the info popover of a component. 
+  
 
-  ![Data Dictionary icon in info popover](assets/data-dictionary-access-infopopover.png)
-<!--update screenshot; this was taken from a mock-->
+* From ![Bookmark](/help/assets/icons/Bookmark.svg) within the info popover of a component. 
 
-* From the menu: [!UICONTROL **Help**] > [!UICONTROL **Data Dictionary**].
 
 For detailed information about the various options available in the Data Dictionary, see [View component information in the Data Dictionary](/help/components/data-dictionary/view-data-dictionary.md).
 

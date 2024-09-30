@@ -77,7 +77,7 @@ To configure the visible columns in the Alerts manager:
 
 1. In Customer Journey Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Alerts]**. 
 
-1. In the Alert manager, select the **Customize columns** icon ![ColumnSetting](/help/assets/icons/ColumnSetting.svg), then select the columns that you want to be displayed in the Alerts manager.
+1. In the Alert manager, select ![Configure columns](/help/assets/icons/ColumnSetting.svg), then select the columns that you want to be displayed in the Alerts manager.
 
    The following columns are available:
 

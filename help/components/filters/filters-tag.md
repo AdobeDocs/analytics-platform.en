@@ -13,7 +13,7 @@ To tag one or more filters:
 
 1. In the [Filter manager](manage-filters.md), select one or more of the filters you want to tag.
 1. From the action bar, select ![Labels](/help/assets/icons/Labels.svg) **[!UICONTROL Tag]**.
-1. In the **[!UICONTROL Tag Filters]** dialog
+1. In the **[!UICONTROL Tag Filters]** dialog:
    
    ![Tag Filters dialog](assets/tag-filter-dialog.png)
 
@@ -33,13 +33,13 @@ Once saved, the tags are listed in the [!UICONTROL Tag] field for the selected f
 
 Below are some suggestions to organize tags based on:
 
-* Team: For example, Social Marketing, Mobile Marketing.
+* **Team**: For example, Social Marketing, Mobile Marketing.
     
-* Project: For example, Entry-page analysis.
+* **Project**: For example, Entry-page analysis.
     
-* Category:. For example, Men, Women, Kids.
+* **Category**:. For example, Men, Women, Kids.
 
-* Geography: For example: United States, California.
+* **Geography**: For example: United States, California.
     
-* Workflow: For example: To be approved,  Curated
+* **Workflow**: For example: To be approved,  Curated
 

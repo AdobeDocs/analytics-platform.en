@@ -17,7 +17,7 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
-The ![GraphTrend](/help/assets/icons/GraphTrend.svg) [!UICONTROL Line] visualization represents metrics using a line to show how values change over a period of time. A line visualization can be used only when time is used as a dimension.
+The ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Line]** visualization represents metrics using a line to show how values change over a period of time. A line visualization can be used only when time is used as a dimension.
 
 <!--
 >[!NOTE]

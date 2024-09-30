@@ -17,7 +17,7 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
-Similar to a pie chart, the ![GraphDonut](/help/assets/icons/GraphDonut.svg) [!UICONTROL Donut] visualization shows data as parts or filters of a whole. Use a donut visualization when comparing percentages of a total, typically with a small number of items.
+Similar to a pie chart, the ![GraphDonut](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Donut]** visualization shows data as parts or filters of a whole. Use a donut visualization when comparing percentages of a total, typically with a small number of items.
 
 ![A Donut chart showing data as parts or filters of a whole.](assets/donut.png)
 

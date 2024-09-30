@@ -51,7 +51,7 @@ The following visualization types are available in Analysis Workspace:
 
    * Add a [blank panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel), then select the visualization that you want to add.
 
-   * Right-click an existing visualization in your Analysis Workspace project, then select [!UICONTROL **Duplicate visualization**] or [!UICONTROL **Copy visualization**].
+   * From the context menu of an existing visualization in your Analysis Workspace project, select **[!UICONTROL Duplicate visualization]** or **[!UICONTROL Copy visualization]**.
 
    * Use the Workspace **[!UICONTROL Insert]** menu to insert a visualization.
 
@@ -81,8 +81,8 @@ Each visualization has its own settings. To access visualization settings, selec
 
 Depending on the visualization, you can configure
 
-* details for the source of data of the visualization through the **[!UICONTROL Data source]** tab, and
-* settings for the visualization through the **[!UICONTROL Settings]** tab. 
+* details for the source of data of the visualization through the [**[!UICONTROL Data source]**](#data-source) tab, and
+* settings for the visualization through the [**[!UICONTROL Settings]**](#settings-1) tab. 
 
 ![Visualization Settings](assets/visualization-settings.png)
 

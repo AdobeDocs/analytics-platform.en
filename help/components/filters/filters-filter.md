@@ -27,9 +27,23 @@ To filter the list of filters:
 
 ## Filter sections
 
+The following filter sections are available:
+
+### Tags
+
 {{tagfiltersection}} 
+
+### Data view
+
 {{dataviewfiltersection}}
+
+### Owner
+
 {{ownerfiltersection}}
+
+
+### Other filters
+
 {{otherfiltersfiltersection}}
 
 

@@ -21,6 +21,7 @@ You can manage the following components:
 * [Calculated metrics](calc-metrics/calc-metr-overview.md): Use metrics and formulas as new components for use in reporting
 * [Date ranges](date-ranges/create.md): Customize and refine the date ranges Analysis Workspace offers.
 * [Annotations](/help/components/annotations/overview.md): Communicate contextual data nuances and insights to your organization.
+* [Intelligent alerts](/help/components/c-intelligent-alerts/intelligent-alerts.md): Allow you to be notified based on changed percentages or specific data points. 
 * [Scheduled projects](/help/analysis-workspace/export/t-schedule-report.md#scheduled-projects-manager): Manage your scheduled projects.
 * [Preferences](/help/analysis-workspace/user-preferences.md): Manage the preferences for Analysis Workspace.
 * [Audiences](/help/components/audiences/audiences-overview.md): Create and publish audiences from Customer Journey Analytics to [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) in Experience Platform for targeting and personalization.
@@ -71,7 +72,7 @@ You can manage components (individually or by selecting more than one).
    | ![Share](/help/assets/icons/Share.svg) [!UICONTROL **Share**] | Share components to users in your organization. This option is available for custom components only, such as filters or calculated metrics. |
    | ![Delete](/help/assets/icons/Delete.svg) [!UICONTROL **Delete**] | Delete components that you no longer need. This option is available for custom components only, such as filters or calculated metrics. |
 
-Custom components can also be managed through their respective Component managers. For example, the [Manage filters](/help/components/filters/manage-filters.md).
+Custom components can also be managed through their respective Component managers. For example, see [Manage filters](/help/components/filters/manage-filters.md).
 
 ## Manage the component list
 
@@ -79,19 +80,19 @@ You can search, filter, and sort the component list in the left panel of Analysi
 
 ### Search
 
-1. Select the **Components** icon ![Components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in the left panel.
+1. Select **Components** ![Components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in the left panel.
 
 2. In the search field, begin typing the name of the component you want to use in your project.
 
    A color and icon identify the type of component. **Dimensions** ![Dimension icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) are orange, **Filters** ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) are blue, **Date ranges** ![Date range icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) are purple, and **Metrics** ![Metric icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) are green.<br/>The Adobe icon ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) indicates either a calculated metric template or a filter template. The calculator icon ![Calculator icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indicates a calculated metric that an administrator in your organization has created. 
 
-3. Select the component when it appears in the drop-down list.
+3. Select the component from the drop-down list.
 
 ### Filter
 
 1. Select the **Components** icon ![Components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in the left panel.
 
-2. Select the **Filter** icon ![Data Dictionary Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), or enter `#` in the search field.
+2. Select **Filter** ![Data Dictionary Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), or enter `#` in the search field.
 
 3. Select any of the following filter options to filter the list of components:
 
@@ -115,9 +116,9 @@ You can search, filter, and sort the component list in the left panel of Analysi
 
 1. (Optional) Apply any filters to the component list, as described in [Filter the component list](#filter-the-component-list).
 
-2. Select the **Components** icon ![Components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in the left panel.
+2. Select **Components** ![Components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in the left panel.
 
-3. Select the **Sort** icon ![Sort components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), then select any of the following filter options to sort the list of components.
+3. Select **Sort** ![Sort components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), then select any of the following filter options to sort the list of components.
 
 The following sort options are available:
 

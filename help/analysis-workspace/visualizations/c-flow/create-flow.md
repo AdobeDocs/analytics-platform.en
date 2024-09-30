@@ -23,7 +23,7 @@ You can configure the start or end of the path you are interested in. Or analyze
    * [!UICONTROL **Contains**] (dimensions, or items), or
    * [!UICONTROL **Ends with**] (metrics, dimensions, or items)
 
-   Each of these categories is shown onscreen as a "drop zone." You can populate the drop zone in 3 ways:
+   Each of these categories is shown onscreen as a *drop zone*. You can populate the drop zone in 3 ways:
 
    * Use the drop-down menu to select metrics or dimensions.
    * Drag dimensions or metrics from the left panel.
@@ -77,7 +77,7 @@ To drill down further into the data, you have several options:
 
 * The flow diagram is interactive. Mouse over the diagram to change the details that are shown.
 
-* When you select on a node in the diagram, the details for that node appear. Click on the node again to collapse it.
+* When you select on a node in the diagram, the details for that node appear. Select the node again to collapse it.
 
    ![Example interactive flow diagram showing node-details.](assets/node-details.png)
 
@@ -85,7 +85,7 @@ To drill down further into the data, you have several options:
 
 * Select ![AddCircle](/help/assets/icons/AddCircle.svg) on the left or right side to expand a column.
 
-* To customize the output, use the right-click [context menu](#context-menu) options.
+* To customize the output, use the [context menu](#context-menu) options.
 
 * To edit the flow or rebuild it with different options, select ![Edit](/help/assets/icons/Edit.svg) next to the configuration summary.
 
@@ -100,22 +100,22 @@ Above each column, a filter ![Filter](/help/assets/icons/Filter.svg) appears whe
 
 ## Context menu
 
-Use right-click on any node in the flow visualization to open a context menu with the following options.
+Use a context menu on any node in the flow visualization with the following options:
 
 | Option | Description |
 |--- |--- |
-| [!UICONTROL Focus on this node] | Change the focus to the selected node. The focus node appears at the center of the Flow diagram. |
-| [!UICONTROL Start over] | Return you to the Freeform diagram builder, where you can build a new Flow diagram. |
-| [!UICONTROL Create a filter for this path] | Create a filter. This selection takes you into the Filter builder, where you can configure the new filter. |
-| [!UICONTROL Breakdown] | Break the node down by available Dimensions, Metrics, or Time. |
-| [!UICONTROL Filter column] | The same filter options appear as are available in the Freeform table. For more information about the available options, see the section "Apply a simple or advanced filter to a table" in [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).|
-| [!UICONTROL Exclude item]/[!UICONTROL Restore excluded items] | Removes a specific node from the column and automatically creates it as a filter at the top of the column. To restore the excluded item, right-click again and select **[!UICONTROL Restore Excluded Item]**. you can also open the filter at the top of the column and remove the pillbox with the item you just excluded. |
-| [!UICONTROL Trend] | Create a trended diagram for the node. |
-| Show next column / Show previous column | Reveals the next (right) or previous (left) column of the visualization. |
-| Hide column | Hides the selected column from the visualization. | 
-| [!UICONTROL Expand entire column] | Expand a column to show all nodes. By default, only the top five nodes display. |
-| Create audience from selection | Creates an audience based on the column that is selected. |
-| [!UICONTROL Collapse entire column] | Hide all nodes in a column. |
+| **[!UICONTROL Focus on this node]** | Change the focus to the selected node. The focus node appears at the center of the Flow diagram. |
+| **[!UICONTROL Start over]** | Return you to the Freeform diagram builder, where you can build a new Flow diagram. |
+| **[!UICONTROL Create a filter for this path]** | Create a filter. This selection takes you into the Filter builder, where you can configure the new filter. |
+| **[!UICONTROL Breakdown]** | Break the node down by available Dimensions, Metrics, or Time. |
+| **[!UICONTROL Filter column]** | The same filter options appear as are available in the Freeform table. For more information about the available options, see the section "Apply a simple or advanced filter to a table" in [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).|
+| **[!UICONTROL Exclude item]** or **[!UICONTROL Restore excluded items]** | Removes a specific node from the column and automatically creates it as a filter at the top of the column. To restore the excluded item, from the context menu select **[!UICONTROL Restore Excluded Item]**. you can also open the filter at the top of the column and remove the pillbox with the item you just excluded. |
+| **[!UICONTROL Trend]** | Create a trended diagram for the node. |
+| **[!UICONTROL Show next column]** / **[!UICONTROL Show previous column]** | Reveals the next (right) or previous (left) column of the visualization. |
+| **[!UICONTROL Hide colum]**n | Hides the selected column from the visualization. | 
+| **[!UICONTROL Expand entire column]** | Expand a column to show all nodes. By default, only the top five nodes display. |
+| **[!UICONTROL Create audience from selection]** | Creates an audience based on the column that is selected. |
+| **[!UICONTROL Collapse entire column]** | Hide all nodes in a column. |
 
 ## Limit to first/last occurrence
 

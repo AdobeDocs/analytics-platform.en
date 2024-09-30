@@ -17,9 +17,9 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
-Use a ![GraphTree](/help/assets/icons/GraphTree.svg) [!UICONTROL Treemap] visualization to display hierarchical (tree-structured) data as a set of nested rectangles.
+Use a ![GraphTree](/help/assets/icons/GraphTree.svg) **[!UICONTROL Treemap]** visualization to display hierarchical (tree-structured) data as a set of nested rectangles.
 
- Each branch of the tree is given a rectangle, which is then tiled with smaller rectangles representing sub-branches.
+Each branch of the tree is given a rectangle, which is then tiled with smaller rectangles representing sub-branches.
 
 ![Treemap example showing tiles of smaller rectrangles representing sub-branches.](assets/treemap.png)
 

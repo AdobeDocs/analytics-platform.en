@@ -54,7 +54,7 @@ To manage a quick filter, hover over the specific **[!UICONTROL Quick filter]**.
 
 ## Quick filter builder
 
-See below for an example of the quick filter builder. In the example, the builder is opened for the quick filter titled `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Both quick filters at the top do apply to the [!UICONTROL Average Order Value Dashboard] panel and all visualizations within, such as the [!UICONTROL Average Order Value Per Country] freeform table.
+See below for an example of the Quick filter builder. In the example, the builder is opened for a quick filter titled `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Both quick filters at the top do apply to the [!UICONTROL Average Order Value Dashboard] panel and all visualizations within, such as the [!UICONTROL Average Order Value Per Country] freeform table.
 
 ![Quick filter builder](assets/quick-filter-builder.png)
 
@@ -100,6 +100,6 @@ Quick filters are exactly what they are named. You can create and edit quick fil
 Filters do have the following advantages compared to quick filters.
 
 * Filters can be made available across all your Workspace projects
-* Filters support more complexity using nested and hierarchical containers, sequences (using sequence filters).
+* Filters support more complexity using nested and hierarchical containers, and sequences (using sequence filters).
 
 

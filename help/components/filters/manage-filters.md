@@ -8,7 +8,7 @@ role: User
 # Manage filters
 
 
-You can share, filter, tag, approve, rename, copy, delete, export filters and mark filters as favorite from a central [!UICONTROL Filters] management interface. To manage filters:
+You can [share](filters-share.md), [filter](filters-filter.md), [tag](filters-tag.md), [approve](filters-approve.md), rename, [copy](filters-copy.md), delete, export filters and mark filters as [favorite](filters-favorite.md) from a central [!UICONTROL Filters] management interface. To manage filters:
 
 * Select **[!UICONTROL Components]** in the main interface, then select **[!UICONTROL Filters]**.
 

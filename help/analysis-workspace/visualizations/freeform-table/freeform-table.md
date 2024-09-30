@@ -7,7 +7,7 @@ role: User
 ---
 # Freeform table overview
 
-In Analysis Workspace, a ![Table](/help/assets/icons/Table.svg) [!UICONTROL Freeform table] visualization is the foundation for interactive data analysis. You can drag and drop a combination of [components](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components) into rows and columns to create a custom table for your analysis. As each component is dropped, the table updates immediately so you can quickly analyze and dig deeper.
+In Analysis Workspace, a ![Table](/help/assets/icons/Table.svg) **[!UICONTROL Freeform table]** visualization is the foundation for interactive data analysis. You can drag and drop a combination of [components](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components) into rows and columns to create a custom table for your analysis. As each component is dropped, the table updates immediately so you can quickly analyze and dig deeper.
 
 ![Freeform Table showing components in rows and columns including Visits and Online Orders for multiple web pages.](assets/opening-section.png)
 
@@ -39,7 +39,7 @@ You can interact with and customize a freeform table in a variety of ways:
 
 * You can quickly [create a new visualization](../freeform-analysis-visualizations.md#visualize) from one or more rows using ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg). 
 * You can fit more rows into a single screen by adjusting the project's [view density](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density).
-* Each dimension row can show up to 400 rows, before pagination occurs. Click the number next to **[!UICONTROL Rows]** in the first column header, to show more rows on a page. Navigate to a different page using ![ChevronRight](/help/assets/icons/ChevronRight.svg) in the first column header.
+* Each dimension row can show up to 400 rows, before pagination occurs. Select the number next to **[!UICONTROL Rows]** in the first column header, to show more rows on a page. Navigate to a different page using ![ChevronRight](/help/assets/icons/ChevronRight.svg) in the first column header.
 * You can break down rows by additional components. To break down many rows at once, select multiple rows and then drag the next component on top of the selected rows. Learn more about [breakdowns](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa).
 * Rows can be [filtered](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort) to show a reduced set of items. Additional settings are available under [Row settings](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings).
 
@@ -47,7 +47,7 @@ You can interact with and customize a freeform table in a variety of ways:
 
 * Components can be stacked within columns to create filtered metrics, cross-tab analysis and more.
 * Each column's view can be adjusted under the [column settings](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/column-row-settings/column-settings).
-* Several actions are available through the [right-click menu](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/right-click-for-workspace-efficiency). The menu provides different actions depending on if you click the table header, rows, or columns.
+* Several actions are available through the [context menu](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/right-click-for-workspace-efficiency). The menu provides different actions depending on if you select the table header, rows, or columns.
 
 
 ## Settings

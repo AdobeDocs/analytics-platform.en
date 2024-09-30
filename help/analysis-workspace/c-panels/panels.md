@@ -138,7 +138,7 @@ Drag and drop any filters from the left panel into the panel drop zone to begin 
 
 #### Quick filters 
 
-Non-filter components can also be dragged directly into the drop zone to create quick filters, saving you the time and effort of going to the [Filter builder](/help/components/filters/filter-builder.md). Filters created in this way are automatically defined as event-level filters. This definition can be quickly modified by selecting the ![Edit](/help/assets/icons/Edit.svg) icon next to the filter name. 
+Non-filter components can also be dragged directly into the drop zone to create quick filters, saving you the time and effort of going to the [Filter builder](/help/components/filters/filter-builder.md). Filters created in this way are automatically defined as event-level filters. This definition can be quickly modified by selecting ![Edit](/help/assets/icons/Edit.svg) next to the filter name. 
 
 
 For more information, see [Quick filters](/help/components/filters/quick-filters.md).
@@ -202,8 +202,8 @@ Manual selection of dimension items is available if you anticipate a certain dim
 To create a dynamic drop-down filter:
 
 * Drag and drop a single dimension into the panel drop zone **while holding** ⇧.
-* Dynamic drop-down filters are not available for metrics, filters, or date ranges.
-* Right-click a drop-down filter and select **[!UICONTROL Delete filter]** to delete it.
+
+Note that Dynamic drop-down filters are not available for metrics, filters, or date ranges.
 
 A dynamic drop-down filter provides the same context menu options as static drop-down filters.
 

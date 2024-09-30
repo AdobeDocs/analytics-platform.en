@@ -17,7 +17,7 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
-The ![Comment](/help/assets/icons/ComboChart.svg) [!UICONTROL Combo] visualization makes it easy to build quickly a comparison visualization without having to build a table first. You can easily view trends in your data in a line/bar combination.
+The ![Comment](/help/assets/icons/ComboChart.svg) **[!UICONTROL Combo]** visualization makes it easy to build quickly a comparison visualization without having to build a table first. You can easily view trends in your data in a line/bar combination.
 
 Use a [!UICONTROL Combo] to:
 
@@ -49,7 +49,7 @@ Keep in mind that:
 
    {style="table-layout:auto"}
 
-1. Click **[!UICONTROL Build]**.
+1. Select **[!UICONTROL Build]**.
 
    The output looks similar to:
 

@@ -120,7 +120,11 @@ For more information about how to use and manage date ranges in Analysis Workspa
 
 ## Component info
 
-You can hover over any component to display the ![InfoOutline](/help/assets/icons/InfoOutline.svg) **[!UICONTROL Info]** icon. When selected, a popup is displayed with additional information on the component. Based on your access control, you can:
+You can hover over any component to display ![More info](/help/assets/icons/InfoOutline.svg). When selected, a popup is displayed with additional information on the component. 
+
+![Component info](assets/component-info.png)
+
+Based on your access control, you can:
 
 * Access the ![Bookmark](/help/assets/icons/Bookmark.svg) [!UICONTROL Data dictionary] definition for the component.
 * Access the ![Edit](/help/assets/icons/Edit.svg) component builder or data view where the component is defined.
