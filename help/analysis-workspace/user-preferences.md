@@ -16,7 +16,7 @@ You can update your preferences in the following ways:
 
 - Select ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL Edit preferences]** from the Workspace main interface.
 - Select **[!UICONTROL Project]** > **[!UICONTROL User preferences]** from the menu when working in a Workspace project.
-- Select **[!UICONTROL Components]** > **[!UICONTROL Preferences]** from the main Customer Journey Analytics top bar ((only available for product administrators)).
+- Select **[!UICONTROL Components]** > **[!UICONTROL Preferences]** from the main Customer Journey Analytics top bar (only available for product administrators).
 
 ## Configure preferences
 
@@ -28,7 +28,7 @@ General preferences apply to your Customer Journey Analytics experience in the b
 
 | Preference | Options |
 | --- | --- |
-| **[!UICONTROL Landing page]** | Choose what page displays as the default page when you access Adobe Analytics: <ul><li>Project list (default)</li><li>Blank project</li><li>Blank Trends guided analysis</li><li>Specific project, selected from a list</li></ul> |
+| **[!UICONTROL Landing page]** | Choose what page displays as the default page when you access Customer Journey Analytics: <ul><li>Project list (default)</li><li>Blank project</li><li>Blank Trends guided analysis</li><li>Specific project, selected from a list</li></ul> |
 | **[!UICONTROL Tips]** | Displays tips in a blue box in the lower-right area of Analysis Workspace. <p>This option is enabled by default.</p> |
 | **[!UICONTROL Components displayed in left panel groups]** | Choose how many of each component group to display in the Components menu in the left panel. <p>If you choose 0 for a component group, the component group is no longer accessible from the left panel.</p><p>By default, 5 components are displayed for each of the following component groups:</p> <ul><li>Dimensions</li><li>Metrics</li><li>Filters</li><li>Date ranges</li></ul> <p>For more information about Components in Analysis Workspace, see [Components overview](/help/components/overview.md).</p> |
 
@@ -259,7 +259,7 @@ This action cannot be undone.
 
 ## [!UICONTROL Dark theme]
 
-If you prefer to have a dark background for your Adobe Analytics user interface, you can toggle to [!UICONTROL Dark theme].
+If you prefer to have a dark background for your Customer Journey Analytics user interface, you can toggle to [!UICONTROL Dark theme].
 
 1. Click the Experience Cloud user icon at the top right.
 

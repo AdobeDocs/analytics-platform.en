@@ -10,9 +10,7 @@ role: Admin
 
 Creating a data view involves either creating metrics and dimensions from schema elements or using standard components. Most schema elements can be either a dimension or a metric depending on your business's requirements. Once you drag a schema element into a data view, options appear on the right where you can adjust how the dimension or metric operates in Customer Journey Analytics.
 
-Here is a video on the topic:
-
-+++ Video to illustrate Data views in Customer Journey Analytics
++++ View a video to illustrate Data views in Customer Journey Analytics
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 

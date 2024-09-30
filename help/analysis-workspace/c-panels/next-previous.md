@@ -27,13 +27,13 @@ role: User, Admin
 
 
 
-This panel contains a number of tables and visualizations to identify the next or previous dimension item for a specific dimension. For example, you might want to explore which pages customers went to most often after they visited the Home page.
+The **[!UICONTROL Next or previous item]** panel contains a number of tables and visualizations to identify the next or previous dimension item for a specific dimension. For example, you might want to explore which pages customers went to most often after they visited the Home page.
 
 ## Use
 
-To use a [!UICONTROL Next or previous item] panel:
+To use a **[!UICONTROL Next or previous item]** panel:
 
-1. Create a [!UICONTROL Next or previous item] panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
+1. Create a **[!UICONTROL Next or previous item]** panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
 
 1. Specify the [input](#panel-input) for the panel.
 

@@ -11,6 +11,8 @@ A Freeform Panel is a blank panel with a [Freeform table](/help/analysis-workspa
 
 ![The default Freeform panel showing a blank panel with a freeform table.](assets/freeform-panel.png)
 
+See [Use components in Workspace](/help/components/use-components-in-workspace.md) how you can add components to the freeform panel and [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualization.
+
 
 >[!MORELIKETHIS]
 >

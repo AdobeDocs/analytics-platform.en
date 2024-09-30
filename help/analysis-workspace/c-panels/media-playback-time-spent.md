@@ -84,7 +84,7 @@ You can configure the Media Playback Time Spent panel using these input settings
 
 The Media Playback Time Spent panel returns a line chart and summary numbers to include details for the maximum, minimum, and/or sum of playback time spent. At the top of the panel, a summary line is provided to remind you of the panel settings you selected.
 
-At any time, you can edit and rebuild the panel by clicking the edit pencil on the top right.
+At any time, select ![Edit Media playback time spend panel](/help/assets/icons/Edit.svg) to edit and rebuild the panel.
 
 If you select series breakdown, a line on the line chart and a summary number is displayed for each:
 
@@ -113,4 +113,6 @@ The only metric that can be used in this panel is Playback Time Spent.
 >[!MORELIKETHIS]
 >
 >[Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>[Media average minute audience panel](average-minute-audience-panel.md)
+>[Media concurrent viewers panel](media-concurrent-viewers.md)
 >

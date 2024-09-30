@@ -52,7 +52,7 @@ To manage existing alerts in the Alerts manager:
 
 To edit an existing alert:
 
-1. Select **[!UICONTROL Components]** > **[!UICONTROL Alerts]** to access the Alerts manager in Adobe Analytics.
+1. Select **[!UICONTROL Components]** > **[!UICONTROL Alerts]** to access the Alerts manager in Customer Journey Analytics.
 
    ![](assets/alert-manager.png)
 
@@ -75,9 +75,9 @@ You can configure the information displayed for each alert in the Alerts manager
 
 To configure the visible columns in the Alerts manager:
 
-1. In Adobe Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Alerts]**. 
+1. In Customer Journey Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Alerts]**. 
 
-1. In the Alert manager, select the **Customize columns** icon ![Customize columns icon](assets/customize-columns-icon.png), then select the columns that you want to be displayed in the Alerts manager.
+1. In the Alert manager, select the **Customize columns** icon ![ColumnSetting](/help/assets/icons/ColumnSetting.svg), then select the columns that you want to be displayed in the Alerts manager.
 
    The following columns are available:
 

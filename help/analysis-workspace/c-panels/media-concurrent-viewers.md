@@ -79,7 +79,7 @@ Here is an example of the panel configured for **[!UICONTROL Minute]** granulari
 
 The Media Concurrent Viewers panel returns a line chart and summary numbers to include details for the maximum and/or minimum concurrent viewers.  At the top of the panel, a summary line is provided to remind you of the panel settings you selected.
 
-At any time, you can edit and rebuild the panel by clicking the edit pencil on the top right.
+At any time, select ![Edit Media concurrent viewers panel](/help/assets/icons/Edit.svg) to edit and rebuild the panel.
 
 If you select a series breakdown, a line on the line chart and a summary number is displayed for each:
 
@@ -117,4 +117,6 @@ A Freeform table is not available in this view.  To view the data source, you ca
 >[!MORELIKETHIS]
 >
 >[Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>[Media playback time spent panel](media-playback-time-spent.md)
+>[Media average minute audience panel](average-minute-audience-panel.md)
 >

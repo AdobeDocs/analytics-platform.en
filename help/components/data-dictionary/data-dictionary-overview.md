@@ -22,7 +22,7 @@ The Data Dictionary in Analysis Workspace helps both users and administrators ke
 Analytics administrators are responsible for curating information about each component in the Data Dictionary to make it available to users.
 
 
-+++ Video to demonstrate the Data Dictionary 
++++ View a video to demonstrate the Data Dictionary 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
 

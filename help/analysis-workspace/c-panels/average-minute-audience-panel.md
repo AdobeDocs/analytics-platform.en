@@ -70,8 +70,6 @@ To use a [!UICONTROL Media average minute audience] panel:
 
 Use the input settings described in this section to configure the Media average minute audience panel.
 
-1. Begin creating a Media average minute audience panel, as described in [Access the Media average minute audience panel](#access-the-media-average-minute-audience-panel).
-
 1. Configure the following input settings:
 
    | Setting | Description |
@@ -167,7 +165,7 @@ The Media average minute audience panel returns the following:
 
   This table displays only if the option under advanced settings called [!UICONTROL **Show calculation values in table**] is selected.
 
-To edit and rebuild the panel at any time, select the ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** in the top right.
+To edit and rebuild the panel at any time, select ![Edit Media average minute audience panel](/help/assets/icons/Edit.svg) in the top right.
 
 
 #### Custom time period data source
@@ -182,4 +180,6 @@ The Media average minute audience panel uses only the average minute audience me
 >[!MORELIKETHIS]
 >
 > [Create a panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+> [Media concurrent viewers panel](media-concurrent-viewers.md)
+> [Media playback time spent panel](media-playback-time-spent.md)
 >

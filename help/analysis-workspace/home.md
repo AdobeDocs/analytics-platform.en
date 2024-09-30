@@ -131,7 +131,7 @@ See the tables below for an overview of the available menus.
 
 ## Data sources
 
-Synchronizing visualizations lets you control which data table or data source corresponds to a visualization. See [manage data sources](/help/analysis-workspace/visualizations/t-sync-visualization.md) for more information.
+You synchronize visualizations to control which data table or data source corresponds to a visualization. See [manage data sources](/help/analysis-workspace/visualizations/t-sync-visualization.md) for more information.
 
 ## Use Analysis Workspace
 

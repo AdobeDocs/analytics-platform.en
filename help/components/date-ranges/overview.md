@@ -13,7 +13,7 @@ Date range components enable you to define and override the calendar settings fo
 
 <!-- Very old video, should we show it?
 
-+++ Video illustrating use of calendar and date ranges
++++ View a video illustrating use of calendar and date ranges
 
 >[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
 

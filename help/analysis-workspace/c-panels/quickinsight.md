@@ -55,7 +55,7 @@ The following are some of the basic terms that you need to be familiar with. Eac
 
 To use a [!UICONTROL Quick insights] panel:
 
-1. Create a [!UICONTROL Next or previous item] panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).
+1. Create a [!UICONTROL Quick insights] panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).
 
 1. When you first use a [!UICONTROL Quick insights] panel, you might want to go through the short [!UICONTROL Intro tutorial] that teaches you some of the basics. Select ![HelpOutline](/help/assets/icons/HelpOutline.svg) next to the Quick insights panel title and select **[!UICONTROL Intro tutorial]** from the popup. 
 
@@ -81,7 +81,9 @@ You can specify the building blocks in three ways:
 
 * Drag and drop components from the left panel.
 * Start typing in one of the building block fields. When input is found, the building block field auto populates with possible values.
-* Select a building block drop-down (for example `Country` in **[!UICONTROL Analyze]** and search the list for **[!UICONTROL Country code]**).
+* Specify a building block drop-down (for example `Country` in **[!UICONTROL Analyze]**) and search the list of possible value (using ![ChevronRight](/help/assets/icons/ChevronRight.svg)) for the value you want to use (for example, **[!UICONTROL Country code]**).
+
+Select **[!UICONTROL Clear]** to clear all input fields.
 
 
 ### Panel output
@@ -106,17 +108,17 @@ Other useful hints pop up in the [!UICONTROL Quick Insights Builder], some of th
 
     ![The Quick Insights Panel notification displayed after you click the Help icon.](assets/qibuilder4.png)
 
-You can analyze multiple dimensions and metrics, combine or compare filters, and specify a data range:
+* You can analyze multiple dimensions and metrics, combine or compare filters, and specify a data range:
 
-![Quick Insights Builder Result](assets/qibuilder-result.png)
+  ![Quick Insights Builder Result](assets/qibuilder-result.png)
 
-* **[!UICONTROL Analyze]** dimension **[!UICONTROL Broken-Down by]**: You can use up to 3 levels of breakdowns on dimensions to drill down to the data you really need. See ➊, ➋, and ➌.
+  * **[!UICONTROL Analyze]** dimension **[!UICONTROL Broken-Down by]**: You can use up to 3 levels of breakdowns on dimensions to drill down to the data you really need. See ➊, ➋, and ➌.
 
-* Add more metrics **[!UICONTROL by]**: You can add up to 2 more metrics. See ➍ and ➎.
+  * Add more metrics **[!UICONTROL by]**: You can add up to 2 more metrics. See ➍ and ➎.
 
-* **[!UICONTROL filter by]**: You can add up to 2 more filters. For example, add Bookings as a filter and combine that filter with Frequent Bookers and First Time Fliers filters you compare. See ➏, ➐, and ➑.
+  * **[!UICONTROL filter by]**: You can add up to 2 more filters. For example, add Bookings as a filter and combine that filter with Frequent Bookers and First Time Fliers filters you compare. See ➏, ➐, and ➑.
 
-* on: You can specify the data range. See ➒.
+  * on: You can specify the data range. See ➒.
 
 ## Known limitations
 

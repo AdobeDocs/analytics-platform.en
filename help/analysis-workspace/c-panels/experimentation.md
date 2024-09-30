@@ -33,7 +33,7 @@ Read more about the [integration between Adobe Customer Journey Analytics and Ad
 
 ## Access control {#access}
 
-The Experimentation panel is available to use by all Customer Journey Analytics users. No Admin rights or other permissions are required. However, the setup (steps 1 and 2 below) requires actions that only Admins can perform.
+The Experimentation panel is available to use by all Customer Journey Analytics users. No Admin rights or other permissions are required. However, the [prerequisites](#prerequisites) requires actions that only administrators can perform.
 
 ## New functions in calculated metrics
 
@@ -82,7 +82,9 @@ To use an [!UICONTROL Experimentation] panel:
 
 ### Panel input
 
-Configure the panel input settings:
+To use the Experimentation panel:
+
+1. Configure the panel input settings:
 
    | Setting | Definition |
    | --- | --- |

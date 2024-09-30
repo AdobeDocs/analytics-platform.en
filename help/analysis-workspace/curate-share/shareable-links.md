@@ -8,7 +8,7 @@ role: User
 ---
 # Create shareable links
 
-Analysis Workspace offers many ways to share a project to your users, including the ability to get a link to a project or a specific part of a project. Some link types require the recipient to log in to Adobe Analytics before accessing the project, while others do not. 
+Analysis Workspace offers many ways to share a project to your users, including the ability to get a link to a project or a specific part of a project. Some link types require the recipient to log in to Customer Journey Analytics before accessing the project, while others do not. 
 
 ## Get a project link to share with other Workspace users {#project-link} 
 

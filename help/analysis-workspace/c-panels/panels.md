@@ -30,6 +30,7 @@ The following panel types are available in Analysis Workspace for [!UICONTROL Cu
 
 The default starting panel is the [!UICONTROL Freeform] panel, but you can make the [Blank panel](/help/analysis-workspace/c-panels/blank-panel.md) or [Quick insights](/help/analysis-workspace/c-panels/quickinsight.md) your default as well. See [Projects & Analysis preferences](/help/analysis-workspace/user-preferences.md#projects--analyses-preferences).
 
+
 ## Create a panel
 
 To create a panel :
@@ -38,7 +39,34 @@ To create a panel :
 * Select a panel from the [Blank panel](blank-panel.md).
 * Use **[!UICONTROL Insert]** menu in Workspace and select your panel. Alternatively, you can use any of the [shortcuts](../build-workspace-project/fa-shortcut-keys.md) to insert a panel.
 
-![Create a panel](assets/create-panel.png)
+  ![Create a panel](assets/create-panel.png)
+
+You can:
+
+* Select ![AddCircle](/help/assets/icons/AddCircle.svg) **within** any panel to add another visualization. A popup appears that allows you to select a visualization.
+
+  ![Popup showing possible visualizations](assets/blank-panel.png)
+
+  | Select.. | To create a...  |
+  |---|---|
+  | ![Table](/help/assets/icons/Table.svg) | [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) |
+  | ![Line](/help/assets/icons/GraphTrend.svg) | [Line](/help/analysis-workspace/visualizations/line.md) |
+  | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Bar](/help/analysis-workspace/visualizations/bar.md) |
+  | ![123](/help/assets/icons/123.svg) | [Summary number](/help/analysis-workspace/visualizations/summary-number-change.md) |
+  | ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) |
+  | ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) |
+  | ![Workflow](/help/assets/icons/GraphPathing.svg) | [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) |
+  | ![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg) | [Area stacked](/help/analysis-workspace/visualizations/area.md) |
+  | ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [Cohort table](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md) |
+  | ![GraphBullet](/help/assets/icons/GraphBullet.svg) | [Bullet](/help/analysis-workspace/visualizations/bullet-graph.md)|
+  | ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Donut](/help/analysis-workspace/visualizations/donut.md) |
+  | ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [Summary change](/help/analysis-workspace/visualizations/summary-number-change.md) |
+  | ![Histogram](/help/assets/icons/Histogram.svg) | [Histogram](/help/analysis-workspace/visualizations/histogram.md) |
+  | ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Scatter](/help/analysis-workspace/visualizations/scatterplot.md) |
+  | ![Type](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) |
+  | ![GraphTree](/help/assets/icons/GraphTree.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | 
+
+* Select ![AddCircle](/help/assets/icons/AddCircle.svg) **outside** the last panel in your workspace to add another [Blank panel](blank-panel.md).
 
 
 ## Data view 
@@ -117,7 +145,17 @@ For more information, see [Quick filters](/help/components/filters/quick-filters
 
 ![Ad hoc filters that are made public and dropped into the drop zone.](assets/adhoc-segment-filter.png)
 
-### Static drop-down filters
+### Drop-down filters
+
++++ View a video explaining dropdown filters.
+
+>[!VIDEO](https://video.tv.adobe.com/v/23877?format=jpeg)
+
+{{videoaa}}
+
++++
+
+#### Static drop-down filters
 
 Static drop-down filters enable you to interact with the data in a controlled way. For example, you can add a drop-down filter for Mobile Device Types so that you can filter the panel by Tablet, Mobile Phone, or Desktop.
 
@@ -125,11 +163,11 @@ Static drop-down filters can also be used to consolidate many projects into one.
 
 ![Static drop-down filters showing the Market Channel "Direct" filter highlighted. ](assets/dropdown-filter-intro.png)
 
-#### Create static drop-down filters
+##### Create static drop-down filters
 
-* For drop-down filters using dimension items, select a single dimension from the left panel and drop the dimension into the panel drop zone while holding ⇧ (Shift). This action creates a drop-down filter with all the dimension items that are associated with that dimension. 
+* For drop-down filters using dimension items, select a single dimension from the left panel and drop the dimension into the panel drop zone while holding ⇧ (*shift*). This action creates a drop-down filter with all the dimension items that are associated with that dimension. 
 
-  Or, if you want the drop-down filter to include only specific dimension items that are associated with a dimension, click the right arrow icon next to the desired dimension in the left panel. This action exposes all available dimension items. Select multiple dimension items from this list using ⇧+![Select](/help/assets/icons/Select.svg) (Shift + select) or ^+![Select](/help/assets/icons/Select.svg) (Control + select), then drop them into the panel drop zone **while holding** ⇧.
+  Or, if you want the drop-down filter to include only specific dimension items that are associated with a dimension, select the right arrow icon next to the desired dimension in the left panel. This action exposes all available dimension items. Select multiple dimension items from this list using ⇧+![Select](/help/assets/icons/Select.svg) (*shift* + *select*) or ^+![Select](/help/assets/icons/Select.svg) (*control* + *select*), then drop them into the panel drop zone **while holding** ⇧.
 
 * For drop-down filters using a single component type (for example, only dimensions, or only filters, or only metrics), select multiple items of the same type in the left panel using ⇧+![Select](/help/assets/icons/Select.svg) or ^+![Select](/help/assets/icons/Select.svg). Then drop the items into the panel drop zone **while holding** ⇧.
 
@@ -140,13 +178,11 @@ Static drop-down filters can also be used to consolidate many projects into one.
 A drop-down filter provides the following context menu options:
 
 * **[!UICONTROL Delete drop-down]**: Removes the drop-down filter from the panel. 
-* **[!UICONTROL Delete label]**: Remove the text displayed at a drop-down filter. To modify the label, select the pencil icon.
+* **[!UICONTROL Delete label]**: Remove the text displayed above a drop-down filter. To modify the label, hover over the label and select ![Edit label of drop-down filter](/help/assets/icons/Edit.svg).
 * **[!UICONTROL Add label]**: When you add a drop-down filter to a project, a label is automatically set to the component name. If you delete the label, you can add it again with this option.
 * **[!UICONTROL Require selection]**: Requires that a filter is set on the panel. 
 
-[Watch the video](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects) to learn more about how to add drop-down filters to your project.
-
-#### Use static drop-down filters
+##### Use static drop-down filters
 
 Users can use the drop-down filter menu in any of the following ways to filter the panel:
      
@@ -155,7 +191,7 @@ Users can use the drop-down filter menu in any of the following ways to filter t
 * Apply multiple filters to the panel by selecting more than one filter from the drop-down filter. The panel is filtered to include any of the selected filters. 
 
 
-### Dynamic drop-down filters
+#### Dynamic drop-down filters
 
 Dynamic drop-down filters allow you to determine available values based on data within the panel's reporting range and values in other drop-down filters. For example, you can create two dynamic drop-downs using a Countries dimension and a Cities dimension. When you select a country from the **[!UICONTROL Countries]** drop-down list, the **[!UICONTROL Cities]** drop-down list dynamically adjusts to show only cities within that country.
 
@@ -170,6 +206,7 @@ To create a dynamic drop-down filter:
 * Right-click a drop-down filter and select **[!UICONTROL Delete filter]** to delete it.
 
 A dynamic drop-down filter provides the same context menu options as static drop-down filters.
+
 
 ## Context menu
 
@@ -191,7 +228,7 @@ The following options are available:
 | **[!UICONTROL Collapse all visualizations in panel]** | Collapse all visualizations in the current panel. |
 | **[!UICONTROL Expand all visualizations in panel]** | Expand all visualizations in the current panel. |
 | **[!UICONTROL Edit Description]** | Add (or edit) a text description for the panel. |
-| **[!UICONTROL Get Panel Link]** | Direct someone to a specific panel within a project. When the link is clicked, the recipient is required to log in before being directed to the exact panel linked to. |
+| **[!UICONTROL Get Panel Link]** | Direct someone to a specific panel within a project. When the link is selected, the recipient is required to log in before being directed to the exact panel linked to. |
 
 ## Configuration
 
