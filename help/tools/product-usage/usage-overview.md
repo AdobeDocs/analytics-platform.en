@@ -35,4 +35,4 @@ When you enable Product usage, the following dimensions are available:
 | Project Name | The friendly name of the project. |
 | Project Type | The project type. |
 | User ID | The user ID that triggered the event. |
-| Visualization Used | The visualization that the project uses. |
+| Visualization Used | The visualization that the project uses. | 
