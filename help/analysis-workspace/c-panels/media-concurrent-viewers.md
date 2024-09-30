@@ -34,11 +34,12 @@ role: User
 >Contact your Adobe Sales representative or Adobe account team for more information. 
 >
 
+The **[!UICONTROL Media concurrent viewers]** panel enables analysis of concurrent viewers over time, with details on peak concurrency and the ability to break down and compare.  To access the Media Concurrent Viewers panel, navigate to a data view with components enabled from the Streaming Media Collection Add-on. Then, click the panel icon on the far-left and drag the panel into your Analysis Workspace project.
+
 You can analyze concurrent viewers to understand where peak concurrency occurred or where drop-offs happened to provide valuable insight into the quality of content and viewer engagement. And to help with troubleshooting or planning for volume or scale.
 
 In Analysis Workspace, the Concurrent viewers metric is the number of unique persons viewing your media streams at a specific point in time, regardless of the number of sessions.
 
-The Media Concurrent Viewers panel enables analysis of concurrent viewers over time, with details on peak concurrency and the ability to break down and compare.  To access the Media Concurrent Viewers panel, navigate to a data view with components enabled from the Streaming Media Collection Add-on. Then, click the panel icon on the far-left and drag the panel into your Analysis Workspace project.
 
 +++ View a video demonstration of this functionality.
 
@@ -50,9 +51,9 @@ The Media Concurrent Viewers panel enables analysis of concurrent viewers over t
 
 ## Use
 
-To use an [!UICONTROL Media concurrent viewers] panel:
+To use an **[!UICONTROL Media concurrent viewers]** panel:
 
-1. Create a [!UICONTROL Media concurrent viewers] panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
+1. Create a **[!UICONTROL Media concurrent viewers]** panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
 
 1. Ensure you select a data view for the panel that has components configured from the Streaming Media Collection Add-on.
 

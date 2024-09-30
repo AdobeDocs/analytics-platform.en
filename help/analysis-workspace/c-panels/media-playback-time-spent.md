@@ -33,17 +33,17 @@ role: User
 >Contact your Adobe sales representative or Adobe account team for more information. 
 >
 
-In Analysis Workspace, Playback Time Spent is the amount of time spent viewing your media streams at a specific point in time. It includes pause, buffer, and time to start.
+The **[!UICONTROL Media playback time spent]** panel enables analysis of playback over time, with details on peak concurrency and the ability to break down and compare. 
 
-The [!UICONTROL Media playback time spent] panel enables analysis of playback over time, with details on peak concurrency and the ability to break down and compare. 
+In Analysis Workspace, Playback time spent is the amount of time spent viewing your media streams at a specific point in time. It includes pause, buffer, and time to start.
 
 Customers who have purchased the Streaming Media Collection Add-on can analyze playback time spent to gain valuable insight into the quality of content and viewer engagement. And to help when troubleshooting or planning for volume or scale.
 
-Playback Time Spent can help you understand:
+Playback time spent can help you understand:
 
-* Where peak concurrency occurred
+* Where peak concurrency occurred.
 
-* Where drop-offs occurred 
+* Where drop-offs occurred.
 
 +++ View a video demonstration of this functionality.
 
@@ -53,9 +53,9 @@ Playback Time Spent can help you understand:
 
 ## Use
 
-To use an [!UICONTROL Media playback time spent] panel:
+To use an **[!UICONTROL Media playback time spent]** panel:
 
-1. Create a [!UICONTROL Media playback time spent] panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
+1. Create a **[!UICONTROL Media playback time spent]** panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
 
 1. Ensure you select a data view for the panel that has components configured from the Streaming Media Collection Add-on.
 

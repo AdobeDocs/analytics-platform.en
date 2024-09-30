@@ -44,20 +44,20 @@ The following are some of the basic terms that you need to be familiar with. Eac
 
 |Building block (Component)|Definition|
 |---|---|
-|[!UICONTROL Dimension]|Dimensions are descriptions or characteristics of metric data that can be viewed, broken down, and compared in a project. They are non-numeric values and dates that break down into dimension items. For example, *browser* or *page* is a dimension.|
-|[!UICONTROL Dimension item]|Dimension items are individual values for a dimension. For example, dimension items for the browser dimension would be *Chrome*, *Firefox*, *Edge*, or others.|
+|**[!UICONTROL Dimension]** |Dimensions are descriptions or characteristics of metric data that can be viewed, broken down, and compared in a project. They are non-numeric values and dates that break down into dimension items. For example, *browser* or *page* is a dimension.|
+|**[!UICONTROL Dimension item]** |Dimension items are individual values for a dimension. For example, dimension items for the browser dimension would be *Chrome*, *Firefox*, *Edge*, or others.|
 |[!UICONTROL Metric]|Metrics are quantitative information about person activity, such as views, click-throughs, reloads, average time spent, units, orders, revenue, and so on.|
-|[!UICONTROL Visualization]|Workspace offers [a number of visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to build visual representations of your data. Such as bar charts, donut charts, histograms, line charts, maps, scatterplots, and others.|
-|[!UICONTROL Dimension Breakdown]|A dimension breakdown is a way to break down a dimension by other dimensions. For example, you could break down the US States by Mobile Devices to get the mobile device visits per state. Or you could break Mobile Devices down by Mobile Device types, by Regions, by Internal Campaigns, and more.|
-|[!UICONTROL Filter]| Filters let you identify subsets of persons based on characteristics or website interactions. For example, you can build [!UICONTROL People] filters based on <li>attributes: browser type, device, number of visits, country, gender, or</li><li>interactions: campaigns, keyword search, search engine, or</li><li>exits and entries: persons from Facebook, a defined landing page, referring domain, or</li><li> custom variables: form field, defined categories, customer ID.  |
+|**[!UICONTROL Visualization]**|Workspace offers [a number of visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to build visual representations of your data. Such as bar charts, donut charts, histograms, line charts, maps, scatterplots, and others.|
+|**[!UICONTROL Dimension Breakdown]**|A dimension breakdown is a way to break down a dimension by other dimensions. For example, you could break down the US States by Mobile Devices to get the mobile device visits per state. Or you could break Mobile Devices down by Mobile Device types, by Regions, by Internal Campaigns, and more.|
+|**[!UICONTROL Filter]**| Filters let you identify subsets of persons based on characteristics or website interactions. For example, you can build [!UICONTROL People] filters based on <li>attributes: browser type, device, number of visits, country, gender, or</li><li>interactions: campaigns, keyword search, search engine, or</li><li>exits and entries: persons from Facebook, a defined landing page, referring domain, or</li><li> custom variables: form field, defined categories, customer ID.  |
 
 ## Use
 
-To use a [!UICONTROL Quick insights] panel:
+To use a **[!UICONTROL Quick insights]** panel:
 
-1. Create a [!UICONTROL Quick insights] panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).
+1. Create a **[!UICONTROL Quick insights]** panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).
 
-1. When you first use a [!UICONTROL Quick insights] panel, you might want to go through the short [!UICONTROL Intro tutorial] that teaches you some of the basics. Select ![HelpOutline](/help/assets/icons/HelpOutline.svg) next to the Quick insights panel title and select **[!UICONTROL Intro tutorial]** from the popup. 
+1. When you first use a **[!UICONTROL Quick insights]** panel, you might want to go through the short [!UICONTROL Intro tutorial] that teaches you some of the basics. Select ![HelpOutline](/help/assets/icons/HelpOutline.svg) next to the Quick insights panel title and select **[!UICONTROL Intro tutorial]** from the popup. 
 
 1. Specify the [input](#panel-input) for the panel.
 
