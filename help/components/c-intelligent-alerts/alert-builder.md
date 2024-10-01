@@ -6,6 +6,16 @@ role: User, Admin
 ---
 # Create alerts {#create-alerts}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_alerts_timegranularity"
+>title="Time granularity"
+>abstract="Time granularity refers to both how often the alert will be checked and what will be included"
+
+<!-- markdownlint-enable MD034 -->
+
+
 >[!NOTE]
 >
 >Using alerts with anomaly detection (also known as _Intelligent Alerts_) is available only to organizations with a Customer Journey Analytics Select, Prime, or Ultimate package.

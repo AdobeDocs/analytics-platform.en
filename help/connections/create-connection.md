@@ -53,8 +53,18 @@ role: Admin
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
 
- The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with an assistive workflow. It provides detailed dataset selection, configuration, and review experience. And allows you to specify critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more, to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
+>[!CONTEXTUALHELP]
+>id="cja_connection_averagenumberofdailyuses"
+>title="Average number of daily uses"
+>abstract="Select a range for the number of expected daily events for the entire connection."
+
+<!-- markdownlint-enable MD034 -->
+
+
+
+The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with an assistive workflow. It provides detailed dataset selection, configuration, and review experience. And allows you to specify critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more, to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
 
 * You can enable a rolling data retention window when you create the connection.
 * You can add to and remove datasets from a connection. (Removing a dataset removes it from the connection and impacts any associated data views and underlying Analysis Workspace projects.)

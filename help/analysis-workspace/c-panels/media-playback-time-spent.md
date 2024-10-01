@@ -5,7 +5,7 @@ feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
 ---
-# Media Playback Time Spent panel {#media-playback-time-spent-panel}
+# Media playback time spent panel {#media-playback-time-spent-panel}
 
 <!-- markdownlint-disable MD034 -->
 
