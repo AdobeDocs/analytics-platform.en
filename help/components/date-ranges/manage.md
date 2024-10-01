@@ -58,7 +58,7 @@ The filter bar ➌ shows the active filters (if any). You can quickly remove a f
 
 ### Filter panel
 
-You can filter date ranges using the ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** left panel ➍. The filter panel displays the type of filter and the number of date ranges that honor the filter. Select ![Filter](/help/assets/icons/Filter.svg) to toggle the display of the filter panel. 
+You can filter date ranges using the **[!UICONTROL Filter]** left panel ➍. The filter panel displays the type of filter and the number of date ranges that honor the filter. Select ![Filter](/help/assets/icons/Filter.svg) to toggle the display of the filter panel. 
 
 To filter the list of filters:
 
