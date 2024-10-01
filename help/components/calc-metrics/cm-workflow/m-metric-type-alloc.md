@@ -142,8 +142,8 @@ See [Example](#example) for an example of using an attribution model and lookbac
 
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_attribution_custom"
->title="Time Decay"
->abstract="Dimension values closest in time to a conversion get the most credit."
+>title="Custom"
+>abstract="Define your own position based attribution weighting."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -155,7 +155,6 @@ See [Example](#example) for an example of using an attribution model and lookbac
 >abstract="Credit is dynamically determined on a statistical algorithm."
 
 <!-- markdownlint-enable MD034 -->
-
 
 
 {{attribution-models-details}}

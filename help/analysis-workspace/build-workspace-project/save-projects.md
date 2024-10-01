@@ -5,7 +5,17 @@ feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
 ---
-# Save projects
+# Save projects {#save-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_project_addnotes"
+>title="Add notes"
+>abstract="Add notes about the project version being saved. These notes will be stored with the version and accessible under the **[!UICONTROL Project]** > **[!UICONTROL Open previous version]** menu."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Projects in Analysis Workspace are automatically saved every 2 minutes. You can also save projects yourself, save a project as a duplicate or save a project with version notes.
 
