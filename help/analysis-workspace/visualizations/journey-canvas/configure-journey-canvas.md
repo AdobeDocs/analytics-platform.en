@@ -3,8 +3,6 @@ description: Configure a Journey canvas visualization
 title: Journey canvas
 feature: Visualizations
 role: User
-hide: yes
-hidefromtoc: yes
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
 ---
 # Configure a Journey canvas visualization
