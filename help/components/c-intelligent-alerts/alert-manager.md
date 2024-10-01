@@ -46,7 +46,7 @@ You can action on alerts using the action bar ➋. The action bar contains the f
 
 | Action | Description |
 |---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another alert, using the [Alert builder](alert-builder#alert-builder). |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another alert, using the [Alert builder](alert-builder.md#alert-builder). |
 | ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search by title*] | When no alert is selected in the list, search for alerts using this search field. |
 | ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tag the selected alerts. In the **[!UICONTROL Tag Alert]** dialog, select or de-select the tags for the selected alerts. Select **[!UICONTROL Save]** to save the tags for the selected alerts.|
 | ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Delete the selected alerts. You are prompted for a confirmation. |
@@ -106,7 +106,7 @@ You can edit an alert
 
 * In the [[!UICONTROL Alert] list](#alerts-list), select the title of the alert.
 
-You use the [Alert builder](alert-builder#alert-builder) to edit the alert.
+You use the [Alert builder](alert-builder.md#alert-builder) to edit the alert.
 
 ## Troubleshoot an alert
 
