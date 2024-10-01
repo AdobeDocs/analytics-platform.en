@@ -30,4 +30,4 @@ The following settings are available on this page:
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_data_retention"
 >title="Override data retention window"
->abstract="Shorten the availability of product usage data to help reduce costs."
+>abstract="Shorten the availability of product usage data to help reduce costs or comply with privacy guidelines."
