@@ -1,5 +1,5 @@
 ---
-description: Use intelligent captions to generate natural-language insights to surface trends quickly within visualizations.
+description: Use intelligent captions to generate natural-language insights to surface trends within visualizations.
 title: Intelligent captions
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
@@ -16,13 +16,13 @@ Intelligent captions are geared towards:
 
 ## Launch intelligent captions {#launch}
 
-To launch auto-generated captions for a line visualization, click the **[!UICONTROL Intelligent captions]** icon at the top right of the visualization.
+To launch auto-generated captions for a line visualization, select ![AEMScreen](/help/assets/icons/AI.svg) **[!UICONTROL Intelligent captions]** at the top right of the visualization.
 
 ![Launch Analysis window showing the Intelligent captions for Product Views Trend. ](assets/intell-caps-1.png)
 
 Natural-language insights are now being generated. 
 
-Keep in mind that
+Keep in mind that:
 
 * You need a minimum of 3 data points to generate captions successfully. Otherwise, you might get an error like **[!UICONTROL Not enough data to analyze]**.
 

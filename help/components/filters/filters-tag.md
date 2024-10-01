@@ -5,31 +5,41 @@ feature: Filters
 exl-id: d3b8d9f7-11a4-4eac-8c22-5c86601ec7f3
 role: User
 ---
-# Tag filters {#tag}
+# Tag filters
 
-In the Filter Manager, tagging filters allows you to organize them. All users can create tags for filters and apply one or more tags to a filter. However, you can see tags only for those filters that you own or that have been shared with you.
+In the [Filter manager](manage-filters.md), you can use tags to organize filters. Administrators can tag all filters. Non administroators can tags only the filters they create or have been shared with them.
 
-What kinds of tags should you create? Here are some suggestions for useful tags:
+To tag one or more filters:
 
-* Tags based on team names, such as Social Marketing, Mobile Marketing.
+1. In the [Filter manager](manage-filters.md), select one or more of the filters you want to tag.
+1. From the action bar, select ![Labels](/help/assets/icons/Labels.svg) **[!UICONTROL Tag]**.
+1. In the **[!UICONTROL Tag Filters]** dialog:
+   
+   ![Tag Filters dialog](assets/tag-filter-dialog.png)
+
+   1. (optionally) use ![Search](/help/assets/icons/Search.svg) to search for and limit the list of tags.
+
+   2. Based on the list of tags:
+   
+      * select one or more existing tags from the list, or
+      * enter a new tag and press **[!UICONTROL ENTER]**. Repeat to add more than one new tag.
+
+1. Select **[!UICONTROL Save]** to save the tags for the filter. Select **[!UICONTROL Cancel]** to cancel.
+
+Once saved, the tags are listed in the [!UICONTROL Tag] field for the selected filters in the [Filter builder](filter-builder.md). 
+
+
+## Suggestions
+
+Below are some suggestions to organize tags based on:
+
+* **Team**: For example, Social Marketing, Mobile Marketing.
     
-* Project tags (analysis tags), such as Entry-page analysis.
+* **Project**: For example, Entry-page analysis.
     
-* Category tags: Men's; geography.
+* **Category**:. For example, Men, Women, Kids.
+
+* **Geography**: For example: United States, California.
     
-* Workflow tags: To be approved; Curated for (a specific business unit)
+* **Workflow**: For example: To be approved,  Curated
 
-To tag a filter:
-
-1. In the Filter Manager, mark the checkbox next to the filter you want to tag. The filter management tool bar appears.
-
-1. Click **[!UICONTROL Tag]** and either
-
-    * select from existing tags, or
-
-    * enter a new tag name and press **[!UICONTROL Enter]**. 
-
-1. Click **[!UICONTROL Tag]** again to tag the filter. 
-
-The tag should now appear in the Tags column. (Click the gear icon on the top right to manage your columns.)
-You can also filter on tags by going to **[!UICONTROL Filters > Tags]**.

@@ -6,7 +6,17 @@ feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 ---
-# Derived fields
+# Derived fields {#derived-fields}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields"
+>title="Derived fields"
+>abstract="A derived field allows you to define data manipulations on the fly, through a customizable rule builder. You can then use that derived field as a component (metric or dimension) in Workspace or even further define as a component in Data view."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Derived fields are an important aspect of the real-time reporting functionality in Adobe Customer Journey Analytics. A derived field allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. You can then use that derived field as a component (metric or dimension) in [Workspace](../../analysis-workspace/home.md) or even further define the derived field as a component in [Data view](../data-views.md). 
 
@@ -26,6 +36,8 @@ When you create or edit a derived field, you use the derived field interface.
 
 ![Screenshot of the Derived field dialog](assets/derived-field-dialog.png)
 
+
+![ProgramOverview](/help/assets/icons/ProgramOverview.svg)
 
 |  | Name | Description |
 |---------|----------|--------|
@@ -380,6 +392,16 @@ For each supported function, find details below on:
 
 ### Case When {#casewhen}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_casewhen"
+>title="Case When"
+>abstract="This function provides the ability to apply conditionals based on defined criteria from one or more fields. Those criteria are then used to define the values in the new derived field based on the sequence of the conditions."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Applies conditionals, based on defined criteria from one or more fields. These criteria are then used to define the values in a new derived field, based on the sequence of the conditions.
 
 +++ Details
@@ -610,6 +632,16 @@ The following constraints apply and are enforced when *selecting* and *setting* 
 
 ### Classify {#classify}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_classify"
+>title="Classify"
+>abstract="This function provides the ability to define a set of values that are replaced by corresponding values by text entry."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Defines a set of values that are replaced by corresponding values in a new derived field.
 
 +++ Details
@@ -745,6 +777,16 @@ The following additional functionality is available in the Classify rule interfa
 
 ### Concatenate {#concatenate}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_concatenate"
+>title="Concatenate"
+>abstract="This function provides the ability to combine two or more fields, derived fields, or user-entered string values into a single field with defined delimiters"
+
+<!-- markdownlint-enable MD034 -->
+
+
 Combines field values into a single new derived field with defined delimiters.
 
 +++ Details
@@ -821,6 +863,16 @@ You define an `Origin - Destination` derived field. You use the [!UICONTROL CONC
 
 
 ### Deduplicate {#dedup}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_deduplicate"
+>title="Deduplicate"
+>abstract="This function provides the ability to configure a field to only count values non-repetitively at either the session or person level. Additionally, a deduplication ID can be used to ensure that based on a given ID (such as a purchase ID), only one value is used (either the first instance or the last instance)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Prevents counting a value multiple times.
 
@@ -905,7 +957,17 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 
 <!-- FIND AND REPLACE -->
 
-### Find and Replace {#find-replace}
+### Find and Replace {#find-and-replace}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_findandreplace"
+>title="Find and replace"
+>abstract="This function provides the ability to find all values in a selected field and replace those values with a different value in a new derived field."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Finds all values in a selected field and replaces those values with a different value in a new derived field.
 
@@ -977,6 +1039,16 @@ You define an `Email Marketing (updated)` derived field. You use the [!UICONTROL
 
 ### Lookup {#lookup}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_lookup"
+>title="Lookup"
+>abstract="This function provides the ability to use fields from a lookup dataset using a matching key between datasets."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Lookup values using a field from a lookup dataset and returns a value in a new derived field or for further rule processing.
 
 +++ Details
@@ -1028,6 +1100,16 @@ You can quickly insert a [!UICONTROL Lookup] function in the rule builder, alrea
 
 ### Lowercase {#lowercase}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_lowercase"
+>title="Lowercase"
+>abstract="This function converts the entire string text to lowercase values."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Converts values from a field to lowercase and stores it into a new derived field.
 
 +++ Details
@@ -1078,6 +1160,16 @@ You define a `Product Names` derived field. You use the [!UICONTROL LOWERCASE] f
 <!-- MATH -->
 
 ### Math {#math}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_math"
+>title="Math"
+>abstract="This function provides the ability to perform mathematical operations on a field. The function can be used to perform basic arithmetic operations, such as addition, subtraction, multiplication, and division."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Use basic mathematical operators (add, subtract, multiply, divide & raise to a power) on numeric fields.
 
@@ -1160,6 +1252,16 @@ Use the Math function for hit-level based calculations. Use the [Summarize](#sum
 
 ### Merge Fields {#merge}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_mergefields"
+>title="Merge Fields"
+>abstract="This function provides the ability to take values from two different fields and include their respective values in a single dimension. The rule first checks to see if the first value is set. If not, then it will use the second value and so on."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Merges values from two different fields into a new derived field.
 
 +++ Details
@@ -1225,6 +1327,16 @@ You must select the same type of fields within a Merge Fields rule. For example,
 <!-- NEXT OR PREVIOUS -->
 
 ### Next or Previous {#next-previous}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_nextprevious"
+>title="Next or Previous"
+>abstract="This function provides the ability to look at the next or previous value collected for a given field."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Takes a field as input and resolves the next or previous value for that field within the scope of the session or use. This will only apply to the Visit and Event table fields.
 
@@ -1297,6 +1409,16 @@ You can only select fields that belong to the Visit or Event table.
 <!-- REGEX REPLACE -->
 
 ### Regex Replace {#regex-replace}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_regexreplace"
+>title="Regex Replace"
+>abstract="This function provides the ability to extract parts of a string using regular expressions."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Replaces a value from a field using a regular expression into a new derived field.
 
@@ -1395,6 +1517,16 @@ You can use these sequences in the [!UICONTROL Output format] any number of time
 
 ### Split {#split}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_split"
+>title="Split"
+>abstract="This function provides the ability to split a field into multiple fields based on a delimiter."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Splits a value from a field into a new derived field.
 
 +++ Details
@@ -1487,6 +1619,16 @@ You create a `Second Response` derived field to take the last value  from the [!
 
 ### Summarize {#summarize}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_summarize"
+>title="Summarize"
+>abstract="This function provides the ability to aggregate values at an event, session or person level. Depending on the field type for the select field, different options will be available."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Applies aggregation-type functions to metrics or dimensions at event, session, and user levels.
 
 +++ Details
@@ -1554,6 +1696,16 @@ Use the Summarize function for event, session or person scope based calculations
 <!-- TRIM -->
 
 ### Trim
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_trim"
+>title="Trim"
+>abstract="This function provides the ability to trim either whitespace or special characters from either the beginning or the end of a string. Also the ability to specify the number of characters to use for the returned value, either from the front or the end of the string."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Trims whitespace, special characters, or number of characters from either the beginning or the end of field values into a new derived field.
 
@@ -1666,6 +1818,16 @@ You create a  `Store Identifier` derived field. You use the [!UICONTROL TRIM] fu
 <!-- URL PARSE -->
 
 ### URL Parse
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_derivedfields_urlparse"
+>title="Url Parse"
+>abstract="This function provides the ability to parse out different parts of a URL including the host, path or query parameters."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Parses out different parts of a URL including protocol, host, path, or query parameters.
 

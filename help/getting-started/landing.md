@@ -1,5 +1,5 @@
 ---
-description: Explains the features of the new landing page .
+description: Explains the features of the new landing page.
 title: Customer Journey Analytics landing page
 role: User, Admin
 feature: Basics
@@ -9,9 +9,11 @@ exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 
 The landing page for Customer Journey Analytics highlights [!DNL Analysis Workspace] and features a project manager home page and a learning section to help you manage customer journey data more effectively.
 
-+++ See the video for an introduction to Customer Journey Analytics...
++++ See the video for an introduction.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
+
+{{videoaa}}
 
 +++
 
@@ -21,17 +23,33 @@ The Customer Journey Analytics landing page is comprised of the following subtab
 
 The **[!UICONTROL Learning]** tab contains hands-on video tours, tutorials, and links to documentation.
 
-## Navigate the [!UICONTROL Projects] tab {#navigate-projects}
+>[!BEGINTABS]
 
-[!UICONTROL Projects] serves as the [!UICONTROL Workspace] home page. The Projects tab displays the Company folder, any personal folders you created, your projects, and Mobile scorecards. Use this page to view, create, and modify folders, projects, and mobile scorecards. For more information, see [About Folders in Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).
+>[!TAB Projects] 
 
-![Landing all](assets/landing-all2.png)
+![Projects landing page](assets/landing-projects.png)
+
+>[!TAB Learning]
+
+![Learning landing page](assets/landing-learning.png)
+
+
+>[!ENDTABS]
+
+## Projects
+
+[!UICONTROL Projects] serves as the [!UICONTROL Workspace] home page. The **[!UICONTROL Projects]** tab displays the Company folder, any personal folders you created, your Workspace projects, and Mobile scorecards. Use this page to view, create, and modify folders, projects, and mobile scorecards. See [Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) for more information.
+
 
 **[!UICONTROL Projects]** are customized designs that combine data components, tables, and visualizations that you built or that someone else built and shared with you. [!UICONTROL Projects] also refers to blank projects and blank mobile scorecards.
 
 >[!NOTE]
 >
 >Several of the following settings persist during the session and across sessions. For example, the tab you selected, the selected filters, selected columns, and the column sort direction. Search results are not persistent.
+
+See [Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) for more information.
+
+<!--
 
 ### Customize table columns
 
@@ -81,37 +99,37 @@ The available columns are:
 | SHOW: Folders & Projects or All Projects | Changes the view setting on the table to show folders and projects according to your folder organization **or** show all of your projects in an unorganized list. |
 | < (Back button) | Returns you to your most recent landing page configuration in a Workspace project or a report. The page configuration you had when you left the landing page will persist when you return. |
 
-## Use the Learning tab {#navigate-learning}
+-->
+
+## Learning
 
 The Learning page contains hands-on video tours, tutorials, and links to documentation.
 
 Use the Learning page in Customer Journey Analytics to learn:
 
-* Beginner, intermediate, or advanced features and use-cases in CJA
-* How to transition more seamlessly from Adobe Analytics to CJA
+* Beginner, intermediate, or advanced features and use-cases in Customer Journey Analytics
+* How to transition more seamlessly from Adobe Analytics to Customer Journey Analytics
 
-### Access the Learning page
+To access the learning content:
 
-1. In Customer Journey Analytics, select [!UICONTROL **Workspace**] > [!UICONTROL **Learning**].
+* In Customer Journey Analytics, select [!UICONTROL **Workspace**] from the top menu and select [!UICONTROL **Learning**] from the left panel.
 
-### Learning page features
+### Features
 
-* **Filter content:** The Filter icon in the left rail allows you to filter learning content by experience level (Beginner, Intermediate, or Advanced) and by content type (Document, Video, or Tours & tutorials).
-* **Track progress:** After you select a piece of content, a **[!UICONTROL Viewed]** tag appears. This tag helps you track your progress through the learning content. You can select the **[!UICONTROL Viewed]** tag to remove it from a piece of content.
-* **View additional content:** While viewing any video, select the **[!UICONTROL Learn more]** button to view related documentation content on Experience League. Or, from the Learning page, select either of the following options to view additional content:
+The learning page offers the following features
+
+* **Filter content:** Use ![Filter](/help/assets/icons/Filter.svg) to filter learning content by **[!UICONTROL Type]** (**[!UICONTROL Document]**, **[!UICONTROL Video]**, and **[!UICONTROL Tours & tutorials]**) and **[!UICONTROL Experience Level]** (**[!UICONTROL Beginner]**, **[!UICONTROL Intermediate]**, or **[!UICONTROL Advanced]**).
+* **Track progress:** After you select a piece of content, a ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Viewed]** tag appears. This tag helps you track your progress through the learning content. You can select the ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Viewed]** tag to remove it from a piece of content.
+* **View additional content:** While viewing any video, select **[!UICONTROL Learn more]** to view related documentation content on Experience League. Or, from the Learning page, select either of the following options to view additional content:
   * **[!UICONTROL Visit YouTube]:** View the full Analysis Workspace YouTube playlist.
-  * [!UICONTROL **Visit Experience League**]: View the full suite of CJA documentation on Experience League. 
-* **Fundamentals for new users:** The [!UICONTROL Workspace Fundamentals] tour is recommended for new users. This tour takes you directly to Workspace and walks you through the most common actions. This tour can also be relaunched any time in Workspace via the tooltip pop-over from the panel header.
+  * [!UICONTROL **Visit Experience League**]: View the full suite of Customer Journey Analytics documentation on Experience League. 
+* **Fundamentals for new users:** The [!UICONTROL Learning Workspace Fundamentals] tour is recommended for new users. This tour takes you directly to Workspace and walks you through the most common actions. This tour can also be relaunched any time in Workspace via the tooltip from the [Freeform panel](/help/analysis-workspace/c-panels/freeform-panel.md) or [Blank panel](/help/analysis-workspace/c-panels/blank-panel.md) header.
 
-## Set your landing page {#set-landing}
+## Preferred landing page
 
-Users can set their preferred landing page.
+You can set your preferred landing page. See [User preferences](/help/analysis-workspace/user-preferences.md#general-preferences) for more information.
 
-1. Go to Analytics > [!UICONTROL Components] > [!UICONTROL Preferences] > [!UICONTROL General].
-1. Check which landing page you would prefer:
-
-   ![Set landing page](assets/landing-pref.png)
-
+<!--
 ## Landing page FAQ {#landing-faq}
 
 | Question | Answer |
@@ -119,6 +137,5 @@ Users can set their preferred landing page.
 | Does the work I do in the beta program UI carry over to the production [!UICONTROL Workspace] experience? | Yes, any work done in the beta carries over to the old/current [!UICONTROL Workspace] experience. |
 | Is there a maximum number of projects I can pin? | No, there is no limit on the number of projects you can pin. |
 | Can admins designate this landing page for their users? | No, admins cannot designate the landing page on behalf of users. Individual users must turn on the toggle themselves. |
-
-<!-- | Are all reports that currently exist in [!DNL Reports & Analytics] still available? | No, the following reports were phased out, based on overall usage data: <ul><li>Any custom eVars/props/events/classifications<li>My Recommended Reports</li><li>Hourly/Daily/Weekly/Monthly/Quarterly/Yearly unique visitors</li><li>DailyWeekly/Monthly/Quarterly/Yearly unique customers</li><li>Action name depth</li><li>Action name summary</li><li>Add dashboard</li><li>Age</li><li>Audio support</li><li>Billing information</li><li>Clicks to page</li><li>Color depth</li><li>Cookie support</li><li>Cookies</li><li>Connection types</li><li>Creative elements</li><li>Credit card type</li><li>Cross sell</li><li>Custom event funnels</li><li>Custom links</li><li>Customer ID</li><li>Day of week</li><li>Entry action name</li><li>Exit action name</li><li>Exit links</li><li>Fallout</li><li>File downloads</li><li>Find in store</li><li>Full paths</li><li>Gender</li><li>Hit ype VISTA rule</li><li>Image support</li><li>Java</li><li>JavaScript</li><li>JavaScript version</li><li>Manage bookmarks</li><li>Manage dashboards</li><li>Monitor color depth</li><li>Monitor resolutions</li><li>Newsletter signups</li><li>Next action name</li><li>Next action name flow</li><li>Null searches</li><li>Operating system</li><li>Order review</li><li>Page of day</li><li>Pages not found</li><li>Pathfinder</li><li>Path length</li><li>Previous action name</li><li>Previous action name flow</li><li>Product activity</li><li>Product cost</li><li>Product department</li><li>Product inventory category</li><li>Product name</li><li>Product reviews</li><li>Product season</li><li>Product shares</li><li>Product zooms</li><li>Reload</li><li>Searches</li><li>Servers</li><li>Single page visits</li><li>Shipping information</li><li>Site hierarchy</li><li>Social mentions</li><li>Time of day</li><li>Time spent on action name</li><li>Video support</li><li>Visitor state</li></ul> | 
+| Are all reports that currently exist in [!DNL Reports & Analytics] still available? | No, the following reports were phased out, based on overall usage data: <ul><li>Any custom eVars/props/events/classifications<li>My Recommended Reports</li><li>Hourly/Daily/Weekly/Monthly/Quarterly/Yearly unique visitors</li><li>DailyWeekly/Monthly/Quarterly/Yearly unique customers</li><li>Action name depth</li><li>Action name summary</li><li>Add dashboard</li><li>Age</li><li>Audio support</li><li>Billing information</li><li>Clicks to page</li><li>Color depth</li><li>Cookie support</li><li>Cookies</li><li>Connection types</li><li>Creative elements</li><li>Credit card type</li><li>Cross sell</li><li>Custom event funnels</li><li>Custom links</li><li>Customer ID</li><li>Day of week</li><li>Entry action name</li><li>Exit action name</li><li>Exit links</li><li>Fallout</li><li>File downloads</li><li>Find in store</li><li>Full paths</li><li>Gender</li><li>Hit ype VISTA rule</li><li>Image support</li><li>Java</li><li>JavaScript</li><li>JavaScript version</li><li>Manage bookmarks</li><li>Manage dashboards</li><li>Monitor color depth</li><li>Monitor resolutions</li><li>Newsletter signups</li><li>Next action name</li><li>Next action name flow</li><li>Null searches</li><li>Operating system</li><li>Order review</li><li>Page of day</li><li>Pages not found</li><li>Pathfinder</li><li>Path length</li><li>Previous action name</li><li>Previous action name flow</li><li>Product activity</li><li>Product cost</li><li>Product department</li><li>Product inventory category</li><li>Product name</li><li>Product reviews</li><li>Product season</li><li>Product shares</li><li>Product zooms</li><li>Reload</li><li>Searches</li><li>Servers</li><li>Single page visits</li><li>Shipping information</li><li>Site hierarchy</li><li>Social mentions</li><li>Time of day</li><li>Time spent on action name</li><li>Video support</li><li>Visitor state</li></ul> | 
 -->

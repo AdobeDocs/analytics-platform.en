@@ -1,427 +1,307 @@
 ---
-description: Sequential filters are created by using the THEN operator, instead of AND or OR. THEN implies that one filter criterion occurs, followed by another. By default, a sequential filter identifies all matching data, showing the filter "Include Everyone". Sequential filters can be further filtered to a subset of matching hits using the "Only Before Sequence" and "Only After Sequence" options.
-title: Build sequential filters
+description: Sequential filters are filters that use the THEN operator to define the sequence of filter conditions.
+title: Sequential filters
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
 ---
-# Build sequential filters
+# Sequential filters
 
-Sequential filters are created by using the THEN operator, instead of AND or OR. THEN implies that one filter criteria occurs, followed by another. By default, a sequential filter identifies all matching data, showing the filter "Include Everyone". Sequential filters can be further filtered to a subset of matching hits using the "Only Before Sequence" and "Only After Sequence" options.
+You create sequential filters using the Then logical operator, instead of And or Or logical operator between component, containers and components, or containers. The Then logical operator implies that one filter condition occurs, followed by another. 
 
-![](assets/before-after-sequence.png)
-
-Here is a video on sequential segmentation:
++++ Here is a video demonstrating sequential segmentation.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25405/?quality=12)
 
-## Include Everyone {#include_everyone}
+{{videoaa}}
 
-When creating a filter where "Include Everyone" is set, the filter identifies paths that match the given pattern as a whole. This is an example of a basic sequence filter looking for one hit (Page A) followed by another (Page B) as visited by the same visitor. The filter is set to Include Everyone.
++++
 
-![](assets/filter.png)
-![70a875e2-0ef9-4459-8648-77c60081d64d](https://git.corp.adobe.com/storage/user/5902/files/d55be11f-4c4c-4198-bba5-ecad27ebcabf)
 
-| If result... | Sequence |
+A sequential filter has some [basic functionality](#basics) and additional options you can configure to add more complexity to the sequential filter:
+
+![Sequential filter](assets/sequential-filter.gif)
+
+* [After and within](#after-and-within) constraints for the Then logic in the sequence filter definition:
+
+* What data to [include](#include) as part of the overall sequence for the filter definition. Or for a sequence defined as part of a container. By default all matching data is considered, identified by ![UserGroup](/help/assets/icons/UserGroup.svg) [!UICONTROL Include Everyone]. 
+  
+  * Select ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** to only consider data before the sequence.
+  * Select ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** to only consider data after the sequence.
+
+* What data to [exclude](#exclude) as part of the sequential filter definition.
+
+* How to [logically group](#logic-group) conditions in your sequential filter definition.
+
+## Basics
+
+
+
+The basics of building a sequential filter are no different than building a regular filter using the [Filter builder](filter-builder.md). You use the [Definition builder](filter-builder.md#definition-builder) to construct your filter definition. In that construction, you use components, containers, operators and logic. A regular filter becomes a sequential filter automatically as soon as you select the **[!UICONTROL Then]** operator in the main definition or in any of the containers you use within the [Definition builder](filter-builder.md#definition-builder).
+
+### Examples
+
+The examples below illustrate how you use sequential filters in various use cases.
+
+#### Simple sequence
+
+Identify persons who viewed a page and then viewed another page. The event-level data will filter this sequence irrespective of previous, past, or interim person sessions or the time or number of page views occurring between the sessions.
+
+![Sequential filter include everyone](assets/sequence-include-everyone.png)
+
+#### Sequence across sessions
+
+Identify persons who viewed a page in one session, then viewed another page in another session. To differentiate between sessions, use containers to build the sequence and define ![Visit](/help/assets/icons/Visit.svg) **[!UICONTROL Session]** level for each container.
+
+![Sequence filter across sessions](assets/sequence-filter-session.png)
+
+#### Mixed-level sequence
+
+Identify persons who view two pages across an undetermined number of sessions, and then view a third page in a separate session. Again, use containers to build the sequence and define ![Visit](/help/assets/icons/Visit.svg) **[!UICONTROL Session]** level on the container that defines the separate session.
+
+![Sequence filter with separate final session](assets/sequence-filter-final-session.png)
+
+#### Aggregate sequence
+
+Identify persons who at their first session visited a specific page and then later visited some other pages. To differentiate between the sequence of events, use containers to separate the logic on a ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Session]** container level.
+
+![Session aggregate containers](assets/session-aggregate-containers.png)
+
+
+#### Nest a sequence
+
+Identify all sessions where a person visits one page before another page and then have follow up sessions that involves two other pages. For example, identify all sessions where a person first visits the home page then category 1 page and then has other sessions where in each session the category 2 and category 3 page are visited.
+
+![Nested sequence](assets/sequence-nested.png)
+
+## After and within
+
+You can use ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** and ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** the **[!UICONTROL Then]** operator to define additional [time constraints](#time-constraints) or [constraints for Events, Sessions or Dimensions](#event-session-and-dimension-constraints).
+
+### Time constraints
+
+To apply time constraints to the **[!UICONTROL Then]** operator:
+
+  1. Select ![Clock](/help/assets/icons/Clock.svg).
+  1. Select **[!UICONTROL Within]** or **[!UICONTROL After]** from the context menu.
+  1. Specify a time period (**[!UICONTROL Minute]**, **[!UICONTROL Hour]**, up until **[!UICONTROL Years]**). 
+  1. Select the ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number*]** to open a popup that allows you to type in or specify a number using **[!UICONTROL -]** or **[!UICONTROL +]**.
+
+To remove a time constaint, use ![CrossSize75](/help/assets/icons/CrossSize75.svg).
+
+The table below explains in more detail the time constraint operators.
+
+|  Operators | Description |
+|--- |--- |
+| **[!UICONTROL After]** |The [!UICONTROL After] operator is used to specify a minimum limit on the amount of time between two checkpoints. When setting the After values, the time limit will begin when the filter is applied. For example, if the  After operator is set on a container to identify persons who visit page A but don't return to visit page B until after one day, then that day will start when the visitor leaves page A.  For the visitor to be included in the filter, a minimum of 1440 minutes (one day) must transpire after leaving page A to view page B. |
+| **[!UICONTROL Within]** | The  [!UICONTROL Within] operator is used to specify a maximum limit on the amount of time between two checkpoints. For example, if the [!UICONTROL Within] operator is set on a container to identify persons who visit page A and then return to visit page B within one day, then that day will begin when the person leaves page A. To be included in the filter, the person will have a maximum time of one day before opening page B. For the person to be included in the filter, opening page B must occur within a maximum of 1440 minutes (one day) after leaving page A to view page B.|
+| **[!UICONTROL After but Within]** | When using both the [!UICONTROL After] and [!UICONTROL Within] operators, both operators start and end in parallel, not sequentially. <br/>For example, you build a filter with the container set to: `After = 1 Week(s) and Within = 2 Week(s)`.<br/>The conditions to identify visitors in this filter are met only between one and two weeks. Both conditions are enforced from the time of the first page view. |
+
+
+#### Examples
+
+Some examples of using the time constraints.
+
+##### After operator 
+
+Identify persons that visited one page and then another page only after two weeks. For example, persons that visited the Home page, but the Women | Shoes page only after two weeks.
+
+![Sequence after](assets/sequence-after.png)
+
+If a page view for the Home happens on June 1 2024, at 00:01, then a page view to page Women | Shoes will match as long as that page view occurs after June 15 2024 00:01.
+
+##### Within operator
+
+Identify persons that visited one page and then another page within five minutes. For example, persons that visited the Home page and then the Women | Shoes page within 5 minutes.
+
+![Sequence within](assets/sequence-within.png)
+
+If a page view for the Home happens on June 1 2024, at 12:01, then a page view to page Women | Shoes will match as long as that page view occurs before June 15 2024 12:16.
+
+##### After but Within operator
+
+Identify persons that visited one page then visited another page after two weeks but within one month. For example, persons that visited the Home page and then after two weeks and within one month the Women | Shoes page.
+
+![Sequence after but within](assets/sequence-afterbutwithin.png)
+
+Any persons hitting the Home page on June 1, 2024 and who are returning to visit the Women | Shoes page after June 15, 2019 00:01, but before July 1, 2019 qualify for the segment.
+
+
+### Event, Session and Dimension constraints
+
+The ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** and ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** constraints allow you not only to specify a time constraint but also an event, session or dimension constraint. Select **[!UICONTROL Event(s)]**, **[!UICONTROL Session(s)]** or **[!UICONTROL Other dimensions]** ![ChevronRight](/help/assets/icons/ChevronRight.svg) **[!UICONTROL *Dimension name*]**. You can use the [!UICONTROL *Search*] field to search for a dimension.
+
+#### Example
+
+Below is an example of a sequential filter looking for persons that visited one product category page (Woman | Shoes), followed by a checkout page (Checkout | Thank You) within one page.
+
+![Sequence filter within](assets/sequence-filter-within.png)
+
+The following example sequences match or do not match:
+
+| Sequence | ![ApproveReject](/help/assets/icons/ApproveReject.svg) |
+|--- | :---: |
+| Page `Women \| Shoes` followed by page `Checkout \| Thank You` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| Page `Women \| Shoes` followed by page `Women \| Tops` followed by page `Checkout \| Thank You` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) |
+
+## Include
+
+You can specify what data to include in your sequential filter or in a sequential container that is part of your sequential filter. 
+
+### Everyone {#include_everyone}
+
+To create a sequential filter that includes everyone, select the option ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Include Everyone]**.
+
+The sequential filter identifies data that match the given pattern as a whole.  Below is an example of a basic sequence filter looking for persons that visited one product category page (Woman | Shoes), followed by a checkout page (Checkout | Thank You). The filter is set to ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Include Everyone]**.
+
+![Sequential filter include everyone](assets/sequence-include-everyone.png)
+
+The following example sequences match or do not match:
+
+| Sequence | ![ApproveReject](/help/assets/icons/ApproveReject.svg) |
 |--- | --- |
-| Matches | A then B<br>A then (in a different visit) BA then D then B |
-| Does not Match | B then A |
+| A then B in the same session | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| A then C then D then B (across different sessions) |  ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| B then A | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) |
 
-## Only Before Sequence and Only After Sequence {#only_before_after}
+### Only Before Sequence and Only After Sequence
 
-The options **[!UICONTROL Only Before Sequence]** and **[!UICONTROL Only After Sequence]** filter the filter to a subset of data before or after the specified sequence.
+The options ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** and ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** filter the data to a subset before or after the specified sequence.
 
-* **Only Before Sequence**: Includes all hits before a sequence + the first hit of the sequence itself (see example 1, 3). If a sequence appears multiple times in a path, "Only Before Sequence" includes the first hit of the last occurrence of the sequence and all prior hits (see example 2).
-* **Only After Sequence**: Includes all hits after a sequence + the last hit of the sequence itself (see example 1, 3). If a sequence appears multiple times in a path, "Only After" includes last hit of the first occurrence of the sequence and all subsequent hits (see example 2).
+* ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **Only Before Sequence**: Includes all data before a sequence and the first data of the sequence itself (see example 1, 3). If a sequence appears multiple times as part of the data, [!UICONTROL Only Before Sequence] includes the first hit of the last occurrence of the sequence and all prior hits (see example 2).
+* ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **Only After Sequence**: Includes all hits after a sequence and the last data of the sequence itself (see example 1, 3). If a sequence appears multiple times as part of the data, Only After includes last hit of the first occurrence of the sequence and all subsequent hits (see example 2).
 
-For example, consider a sequence of B -> D. The three filters would identify hits as follows:
+Consider a definition specifying a sequence of a component with criteria identified by B, followed (Then) by a component with criteria identified by D. The three options would identify data as follows:
 
-**Example 1: B then D appears once** 
 
-|  Example  | A  | B  | C  | D  | E  | F  |
-|---|---|---|---|---|---|---|
-|  Include Everyone  | A  | B  | C  | D  | E  | F  |
-|  Only Before Sequence  | A  | B  |  |  |  |  |
-|  Only After Sequence  |  |  |  | D  | E  | F  |
+|  B Then D | A  | B  | C  | D  | E  | F  |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+|  Include Everyone  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  |
+|  Only Before Sequence  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  |  |  |  |  |
+|  Only After Sequence  |  |  |  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  |
 
-**Example 2: B then D appears multiple times** 
 
-|  Example  | A  | B  | C  | D  | B  | C  | D  | E  |
-|---|---|---|---|---|---|---|---|---|
-|  Include Everyone  | A  | B  | C  | D  | B  | C  | D  | E  |
-|  Only Before Sequence  | A  | B  | C  | D  | B  |  |  |  |
-|  Only After Sequence  |  |  |  | D  | B  | C  | D  | E  |
 
-Let's also frame this concept with the Hit Depth dimension.
+|  B Then D (occurs multiple times)  | A  | B  | C  | D  | B  | C  | D  | E  |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|  Include Everyone  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  |
+|  Only Before Sequence  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  |  |  |  |
+|  Only After Sequence  |  |  |  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  |
 
-**Example 3: Hit Depth 3 then 5**
+#### Example
 
-![](assets/hit-depth.png)
+You have defined three version of a sequential filter for site sections. One with the option ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Include Everyone]**, one with the option ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**, and one with the option ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]**. You named the three filters accordingly.
 
-## Dimension Constraints {#constraints}
+![Sequence filter](assets/site-section-filters.png)
 
-In a "within" clause, in between THEN statements, you can add, for example, "within 1 search keyword instance", "within 1 eVar 47 instance". This constrains the filter to within one instance of a dimension.
+When reporting on site sections using these three filters, this will be the example output in a freeform table.
 
-Setting a 'Within Dimension' clause between rules allows a filter to restrict data to sequences where that clause is satisfied. See the example below, where the constraint is set to "Within 1 page":
+![Sequential filter report](assets/sequential-filter-freeform-table.png)
 
-![](assets/sequence-filter4.png)
+## Exclude
 
-| If result... | Sequence |
-|--- |--- |
-| Matches | A then B |
-| Does not Match| A then C then B (because B was not within 1 page of A)<br>**Note:**  If the dimension restriction is taken out, "A then B" and "A then C then B" would both match. |
+Filter definitions include all data unless you specifically exclude ![User](/help/assets/icons/User.svg) [!UICONTROL Person], ![Visit](/help/assets/icons/Visit.svg) [!UICONTROL Session], or ![WebPage](/help/assets/icons/WebPage.svg) [!UICONTROL Event] data using **[!UICONTROL Exclude]**. 
 
-## Simple Page View sequence {#simple_sequence}
+[!UICONTROL Exclude] allows you to dismiss common data and create filters with more focus. Exclude also allows you to  create filters excluding specific groups of persons. For example, to define a filter that specifies persons that placed orders and then excluding that group of persons to identify *non-purchasers*. A best practice is to create rules that use a broad definition rather than trying to use [!UICONTROL Exclude] to target specific persona that match specific include values.
 
-Identify visitors who viewed a page and then viewed another page. The hit-level data will filter this sequence irrespective of previous, past, or interim visit sessions or the time or number of page views occurring between.
+Example of exclude definitions are:
 
-**Example**: Visitor viewed page A, then viewed page B in the same or another visit.
+* **Exclude pages**. Use a filter definition to strip out a specific page (such as *Home Page*) from a report, create an Event rule where the page equals `Home Page`, and then exclude the rule. This definition automatically includes all pages except the *Home Page*.
+* **Exclude referring domains**. Use a definition that includes only referring domains from Google.com and excludes all others.
+* **Identify non-purchasers**. Identify when orders are greater than zero and then exclude the [!UICONTROL Person].
 
-**Use cases**
+[!UICONTROL Exclude] can be used to identify a sequence where specific sessions or events are not performed by the person. [!UICONTROL Exclude] can also be included within a Logic group (see below).
 
-The following are examples of how the filter can be used.
+You can exclude containers, not components. 
 
-1. Visitors to a sports' site view the football landing page and then view the basketball landing page in sequential order but not necessarily on the same visit. This prompts a campaign to push basketball content to football viewers during the football season.
-1. Car retailer identifies a relationship between those who land on the customer loyalty page and then go to the video page at any time during the visit or another visit.
+### Examples
 
-**Create this filter**
+See below for examples of using [!UICONTROL Exclude].
 
-You nest two page rules within a top-level [!UICONTROL Visitor] container and sequence the page hits using the [!UICONTROL THEN] operator.
+#### Exclude within
 
-![](assets/segment_sequential_1.png)
+Identify persons who visited one page, did not visited another page, then visited yet another page. You exclude the container using ![Setting](/help/assets/icons/Setting.svg) Exclude. An excluded container is identified by a red thin bar on the left.
 
-## Visitor sequence across visits {#sequence_across}
+![Exclude sequence](assets/sequence-exclude.png)
 
-Identify those visitors who fell out of a campaign but then returned to the sequence of page views in another session.
 
-**Example**: Visitor viewed page A in one visit, then viewed page B in another visit.
+#### Exclude at start
 
-**Use Cases**
+Identify persons who visited one page without ever going to another page. For example, people that checked out a purchase without ever visited the home page.
 
-The following are examples of how this type of filter can be used:
+![Sequence exclude start](assets/sequence-exclude-start.png)
 
-* Visitors to the Sports page of a news site then revisits the Sports page in another session.
-* A clothes retailer sees a relationship between visitors who land on a landing page in one session, and then go directly to the checkout page in another session.
 
-**Create this filter**
+#### Exclude at end
 
-This example nests two **[!UICONTROL Visit]** containers within the top-level **[!UICONTROL Visitor]** container and sequences the filter using the [!UICONTROL THEN] operator.
+Identify persons who visited one page but never visited other pages. For example, persons that visited your home page but never any of your check out pages.
 
-![](assets/visitor_seq_across_visits.png)
+![Sequence exclude end](assets/sequence-exclude-end.png)
 
-## Mixed-level sequence {#mixed_level}
 
-Identify visitors who view two pages across an undetermined number of visits, but then view a third page in a separate visit.
-
-**Example**: Visitors visit page A and then page B in one or more visits, followed by a visit to page C in a separate visit.
-
-**Use Cases**
-
-The following are examples of how this type of filter can be used:
-
-* Visitors first visit a news site and then view the sports page in the same visit. On another visit the visitor visits the weather page.
-* Retailer defines visitors who enter the Main page and then go to the My Account page. In another visit, they visit the View Cart page.
-
-**Create this filter**
-
-1. Drop two Page dimensions from the left panes within a top-level [!UICONTROL Visitor] container.
-1. Add the THEN operator between them.
-1. Click **[!UICONTROL Options]** > **[!UICONTROL Add container]** and add a [!UICONTROL Visit] container underneath the [!UICONTROL Visitor] level and sequenced using the [!UICONTROL THEN] operator.
-
-![](assets/mixed_level_checkpoints.png)
-
-## Aggregate containers {#aggregate_containers}
-
-Adding multiple [!UICONTROL Hit] containers within a [!UICONTROL Visitor] container lets you employ the appropriate operators between the same type of containers, and to use rules and dimensions such as Page and Visit Number to define the page view and provide a sequence dimension within the [!UICONTROL Hit] container. Applying logic at the Hit-level lets you constrain and combine matches at a same-level of hits within the [!UICONTROL Visitor] container to build a variety of filter types.
-
-**Example**: Visitors visited page A after the first hit in the sequence of page views (page D in the example), then visited either page B or page C without regard to the number of visits.
-
-**Use Cases**
-
-The following are examples of how this type of filter can be used:
-
-* Identify visitors who go to the Main landing page in one visit, then view the Men's clothing page in another visit, then view either the Woman's or Children's landing page in a different visit.
-* An e-zine captures those visitors who go to the Home page in one visit, the Sports page in another visit, and the Opinion page in another visit.
-
-**Create this filter**
-
-1. Select the [!UICONTROL Visitor] container as the top-level container.
-1. Add two [!UICONTROL Hit]-level containers—a dimension with an appropriate numerical dimension joined at the same [!UICONTROL Hit] level by the [!UICONTROL AND] and [!UICONTROL OR] operator.
-1. Within the [!UICONTROL Visit] container, add another [!UICONTROL Hit] container and nest two additional [!UICONTROL Hit] containers joined with an [!UICONTROL OR] or [!UICONTROL AND] operator.
-
-   Sequence these nested [!UICONTROL Hit] containers with the [!UICONTROL THEN] operator.
-
-![](assets/aggregate_checkpoints2.png)
-
-## "Nesting" in sequential filters {#nesting}
-
-By placing checkpoints at both the [!UICONTROL Visit] and [!UICONTROL Hit] level, you can constrain the filter to meet requirements within a specific visit as well as a specific hit.
-
-**Example**: Visitor visited page A then visited page B in the same visit. In a new visit, the visitor then went to page C.
-
-**Create this filter**
-
-1. Underneath a top-level [!UICONTROL Visit] container, drag in two page dimensions.
-1. Multi-select both rules, click **[!UICONTROL Options]** > **[!UICONTROL Add container from selection]** and change it to a [!UICONTROL Visit] container.
-1. Join them with a [!UICONTROL THEN] operator.
-1. Create a Hit container as a peer to the [!UICONTROL Visit] container and drag in a page dimension.
-1. Join the nested sequence in the [!UICONTROL Visit] container with the [!UICONTROL Hit] container using another [!UICONTROL THEN] operator.
-
-![](assets/nesting_sequential_seg.png)
-
-## Exclude hits {#exclude}
-
-Segment rules include all data unless you specifically exclude [!UICONTROL Visitor], [!UICONTROL Visit], or [!UICONTROL Hit] data using the [!UICONTROL Exclude] rule. It allows you to dismiss common data and create filters with more focus. Or it allows you to create filters excluding found groups to identify the remaining data set, such as creating a rule that includes successful visitors who placed orders and then excluding them to identify "non-purchasers." However, in most cases it is better to create rules that exclude broad values rather than trying to use the [!UICONTROL Exclude] rule to target specific include values.
-
-For example:
-
-* **Exclude pages**. Use a filter rule to strip out a specific page (such as *`Home Page`*) from a report, create a Hit rule where the page equals "Home Page," and then exclude it. This rule automatically includes all values except the Home Page.
-* **Exclude referring domains**. Use a rule that includes only referring domains from Google.com and excludes all others.
-* **Identify non-purchasers**. Identify when orders are greater than zero and then exclude the [!UICONTROL Visitor].
-
-The [!UICONTROL Exclude] operator can be employed to identify a sequence where specific visits or hits are not performed by the visitor. [!UICONTROL Exclude Checkpoints] can also be included within a Logic Group (see below).
-
-### Exclude between checkpoints {#exclude_between}
-
-Enforce logic to filter visitors where a checkpoint did not explicitly occur between two other checkpoints.
-
-**Example**: Visitors that visited page A and then visited page C—but did not visit page B.
-
-**Use Cases**
-
-The following are examples of how this type of filter can be used:
-
-* Visitors to a Lifestyle page and then the Theater section without going to the Arts page.
-* An auto retailer sees a relationship between those who visit the main landing page and then go straight to the No Interest campaign without going to the Vehicle page.
-
-**Create this filter**
-
-Create a filter as you would for a simple, mixed-level, or nested sequential filter and then set the [!UICONTROL EXCLUDE] operator for the container element. The example below is an aggregate filter where the three [!UICONTROL Hit] containers are dragged to the canvas, the [!UICONTROL THEN] operator assigned to join the container logic, then exclude the middle page view container to include only visitors that went from page A to Page C in the sequence.
-
-![](assets/exclude_between_checkpoints.png)
-
-### Exclude at beginning of sequence {#exclude_beginning}
-
-If the exclude checkpoint is at the beginning of a sequential filter, then it ensures that an excluded page view did not occur before the first non-excluded hit.
-
-For example, A restaurant wants to see users who tend to avoid the main landing page and go directly to the Order Out page. You can view this data by excluding hits to the landing page and including hits to the Order Out page in a sequential filter.
-
-**Create this filter**
-
-Create two separate Hit containers within a top-level Visitor container. Then set the [!UICONTROL EXCLUDE] operator for the first container.
-
-![](assets/exclude_beginning_sequence.png)
-
-### Exclude at end of sequence {#exclude_end}
-
-If the exclude checkpoint is at the end of a sequence, then it ensures that the checkpoint did not happen between the last non-excluded checkpoint and the end of the visitor sequence.
-
-For example, a clothing store wants to see all visitors that viewed a product page but never visited their shopping cart afterward. This example can be simplified to a visitor going to page A then never going to page B in current or subsequent visits.
-
-**Create this filter**
-
-Build a simple sequence filter by dragging two [!UICONTROL Hit] containers to the canvas and connecting them using the [!UICONTROL THEN] operator. Then assign the [!UICONTROL EXCLUDE] operator to the second [!UICONTROL Hit] container in the sequence.
-
-![](assets/exclude_end_sequence.png)
-
-## Logic Group containers {#logic_group}
-
-Logic Group containers are required to group conditions into a single sequential filter checkpoint. The special Logic Group container is available only in sequential segmentation, to ensure its conditions are met after any prior sequential checkpoint and before any following sequential checkpoint. The conditions within the Logic Group checkpoint itself may be met in any order. By contrast, non-sequential containers (hit, visit, visitor) do not require their conditions to be met within the overall sequence, producing unintuitive results if used with a THEN operator.
-The [!UICONTROL Logic Group] container was designed to treat *several checkpoints as a group*, *without any ordering* among the grouped checkpoints. In other words, we don't care about the order of the checkpoints within that group. For example, you can't nest a [!UICONTROL Visitor] container within a [!UICONTROL Visitor] container. But instead, you can nest a [!UICONTROL Logic Group] container within a [!UICONTROL Visitor] container with specific [!UICONTROL Visit]-level and [!UICONTROL Hit]-level checkpoints.
+## Logic Group
 
 >[!NOTE]
 >
->A [!UICONTROL Logic Group] can only be defined in a sequential filter, meaning that the [!UICONTROL THEN] operator is used within the expression.
+>A [!UICONTROL Logic Group] can only be defined in a sequential filter, meaning that the [!UICONTROL Then] operator is used within the container.
 
-|Container Hierarchy|Illustration|Definition|
-|---|---|---|
-|  Standard Container Hierarchy| ![](assets/nesting_container.png) |Within the [!UICONTROL Visitor] container, the [!UICONTROL Visit] and [!UICONTROL Hit] containers are nested in sequence to extract filters based on hits, the number of visits, and the visitor.  |
-|  Logic Container Hierarchy  | ![](assets/logic_group_hierarchy.png) |The standard container hierarchy is also required outside of the [!UICONTROL Logic Group] container. But inside the [!UICONTROL Logic Group] container, the checkpoints do not require an established order or hierarchy—these checkpoints simply need to be met by the visitor in any order.  |
+Logic Group enables you to group conditions into a single sequential filter checkpoint. As part of the sequence, the logic defined in the container identified as Logic Group is evaluated after any prior sequential checkpoint and before any following sequential checkpoint. 
 
-Logic groups may seem daunting - here are some best practices on how to use them:
+The conditions within the Logic Group itself may be met in any order. By contrast, non-sequential containers (event, session, person) do not require their conditions to be met within the overall sequence, producing possibile unintuitive results if used with a Then operator.
 
-**Logic Group or Hit/Visit container?** 
-If you want to group sequential checkpoints, then your "container" is Logic Group. However, if those sequential checkpoints must occur within a single hit or visit scope, then a 'hit' or a 'visit' containers are required. (Of course, 'hit' does not make sense for a group of sequential checkpoints, when one hit may credit no more than one checkpoint).
+[!UICONTROL Logic Group] was designed to treat *several conditions as a group, without any ordering* among the grouped conditions. Otherwise stated, the order of the conditions within a Logic Group is irrelevant. 
 
-**Do Logic Groups simplify building sequential filters?** 
-Yes, they can. Let's assume you are trying to identify this filter of visitors: **Visitors that viewed page A, then viewed each of the pages of B, C, and D**
+Some best practices to use Logic Group are:
 
-You can build this filter without a Logic Group container, but it's complex and laborious. You must specify every sequence of pages that the visitor could view:
-* `Visitor Container [Page A THEN Page B THEN Page C THEN Page D] or`
-* `Visitor Container [Page A THEN Page B THEN Page D THEN Page C] or`
-* `Visitor Container [Page A THEN Page C THEN Page B THEN Page D] or`
-* `Visitor Container [Page A THEN Page C THEN Page D THEN Page B] or`
-* `Visitor Container [Page A THEN Page D THEN Page B THEN Page C] or`
-* `Visitor Container [Page A THEN Page D THEN Page C THEN Page B]`
+* To group sequential checkpoints. 
+* To simplify the construction of sequential filters.
 
-A Logic Group container greatly simplifies building this filter, as shown here:
+### Examples
 
-![](assets/logic-grp-example.png)
+Here are examples on how to use the Logic Group container.
 
+#### Any order
 
-### Build a Logic Group filter {#logic_group_filter}
+Idenfify persons that vistied one page, then viewed each page out of another set of pages in any order. For example, persons that visited the Home page, then visited each of the Men page, the Women page, and Kids page, irrespective of the order.
 
-Like other containers, [!UICONTROL Logic Group] containers can be built in multiple ways within the [!UICONTROL Segment Builder]. Here is a preferred way to nest [!UICONTROL Logic Group] containers:
+You can build this filter without a [!UICONTROL Logic Group], but the construction is going to be complex and laborious. You must specify every sequence of pages that the visitor could view. For clarity, only the first container is opened ![ChevronDown](/help/assets/icons/ChevronDown.svg) and the other containers are closed ![ChevronRight](/help/assets/icons/ChevronRight.svg) . You can derive the contents of the other containers by the titles.
 
-1. Drag dimensions, events, or filters from the left panes.
-1. Change the top container to a [!UICONTROL Visitor] container.
-1. Change the [!UICONTROL AND] or [!UICONTROL OR] operator inserted by default to the THEN operator.
-1. Select the [!UICONTROL Hit] containers (the Dimension, Event, or Item) and click **[!UICONTROL Options]** > **[!UICONTROL Add container from selection]**.
-1. Click the container icon and select **[!UICONTROL Logic Group]**.  ![](assets/logic_group_checkpoints.png)
-1. You can now set the [!UICONTROL Hit] within the [!UICONTROL Logic Group] container without regard to hierarchy.
+![Example not using a logic group](assets/logicgroup-example-notusing.png)
 
-### Logic Group checkpoints in any order {#any_order}
+You can use [!UICONTROL Logic Group] to simplify building this filter, as shown below. Ensure you select ![Group](/help/assets/icons/Group.svg) **[!UICONTROL Logic Group]** for the container.
 
-Using the [!UICONTROL Logic Group] lets you meet conditions within that group that reside outside of the sequence. This allows you to build filters where a [!UICONTROL Visit] or [!UICONTROL Hit] container happens irrespective of the normal hierarchy.
+![Example not using a logic group](assets/logicgroup-example-using.png)
 
-**Example**: Visitors who visited page A, then visited page B and page C in any order.
+#### First match
 
-**Create this filter** 
+Identify persons that visited one page or another page, then visited yet another page. For example, persons that visited the Women page or the Men page, then visited the Checkout | Thank You page.
 
-Page B and C are nested in a [!UICONTROL Logic Group] container within the outer [!UICONTROL Visitor] container. The [!UICONTROL Hit] container for A is then followed by the [!UICONTROL Logic Group] container with B and C identified using the [!UICONTROL AND] operator. Because it is in the [!UICONTROL Logic Group], the sequence is not defined and hitting both page B and C in any order makes the argument true.
+![Example using first match with logic group](assets/logicgroup-example-firstmatch.png)
 
-![](assets/logic_group_any_order2.png)
+#### Exclude And
 
-**Another example**: Visitors who visited page B or page C, then visited page A:
+Identify persons that visited one page then explicity did not visit a set of other pages, but did visit yet another page. For example, persons that visited the Home Page, did not visit the Men or the Women page, but did visit the Kids page.
 
-![](assets/logic_group_any_order3.png)
+![Logic group exclude and](assets/logicgroup-exclude-and.png)
 
-The filter must match at lease one of the logic group's checkpoints (B or C). Also, logic group conditions may be met in the same hit or across multiple hits.​
+#### Exclude Or
 
-### Logic Group first match {#first_match}
+Identify persons that visited one page then explicity did not visit any page of a set of pages, but did visit yet another page. For example, persons that visited the Home Page, did not visit the Men and the Women page, but did visit the Kids page.
 
-Using the [!UICONTROL Logic Group] lets you meet conditions within that group that reside outside of the sequence. In this unordered first match filter, the [!UICONTROL Logic Group] rules are identified first to be either a page view of page B or page C, then the required view of page A.
+![Logic group exclude and](assets/logicgroup-exclude-or.png)
 
-**Example**: Visitors that visited either page B or page C, then visited page A.
 
-**Create this filter** 
+<!--
+An example of a complex sequential filter if you want to find the persons that 
 
-Page B and page C dimensions are grouped within a [!UICONTROL Logic Group] container with the [!UICONTROL OR] operator selected, then the [!UICONTROL Hit]container identifying a page view of page A as the value.
+| Session One | Session Two | Session Three |
+| --- | --- | --- |
+| The person went to the main landing page A, excluded the campaign page B, and then viewed the Product page C.| The person again went to the main landing page A, excluded the campaign page B, and went again to the Product page C, and then to a new page D. | The person entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product on page G. |
+-->
 
-![](assets/logic_group_1st_match.png)
 
-### Logic Group exclude AND {#lg_exclude_and}
+## A final example
 
-Build filters using the [!UICONTROL Logic Group] where multiple page views are aggregated to define what pages were necessary to be hit while other pages were specifically missed. ****
+As a final example, you want to identify persons that learned about a specific product page, without these persons ever being touched by your Empower Your Move campaign. And in their first visit to your online store viewed the Home page but did not look further at any fitness (gear) products from the Men category. However in their next session directly after that, they went to a product page and placed an online order without going through the Home page first.
 
-**Example**: Visitor visited Page A, then explicitly did not visit page B or C, but hit page D.
 
-**Create this filter** 
-
-Build this filter by dragging Dimensions, Events, and pre-built filters from the left panes. See the section on Building a Logic Group filter.
-
-After nesting the values within the [!UICONTROL Logic Group], click the **[!UICONTROL Exclude]** button within the [!UICONTROL Logic Group] container.
-
-![](assets/logic_exclude_and.png)
-
-### Logic Group exclude OR {#lg_exclude_or}
-
-Build filters using the [!UICONTROL Logic Group] where multiple page views are aggregated to define what pages were necessary to be hit while other pages were specifically missed.
-
-**Example**: Visitors that visited page A, but did not visit either Page B or Page C before Page A.
-
-**Create this filter** 
-
-The initial B and C pages are identified in a [!UICONTROL Logic Group] container that is excluded, and then followed by a hit to page A by the visitor.
-
-Build this filter by dragging Dimensions, Events, and pre-built Segments from the left panes.
-
-After nesting the values within the [!UICONTROL Logic Group], click the **[!UICONTROL Exclude]** button within the [!UICONTROL Logic Group] container.
-
-![](assets/logic_exclude_or.png)
-
-## Build time-within and time-after filters {#time_within_after}
-
-Use the [!UICONTROL Within] and [!UICONTROL After] operators built in to the header of each container to define the time, events, and count.
-
-![](assets/then_within_operators.png)
-
-You can limit matching to a specified duration of time by using the [!UICONTROL Within] and [!UICONTROL After] containers and specifying a granularity and count. The [!UICONTROL Within] operator is used to specify a max limit on the amount of time between two checkpoints. The [!UICONTROL After] operator is used to specify a minimum limit on the amount of time between two checkpoints.
-
->[!NOTE]
->
->There are differences in evaluation between similarly named elements like **Day(s)** or **Day**. For time-based definitions of Within and After, utilize the options listed first in the popup window:
->
->![image](https://git.corp.adobe.com/storage/user/5902/files/70a875e2-0ef9-4459-8648-77c60081d64d)
->
->For dimension-based definitions of Within and After, utilize the options under the sub-menu *Other Dimensions*:
->
->![image](https://git.corp.adobe.com/storage/user/5902/files/b808eeb0-5e3f-499b-8096-c7eb0d51c57a)
-
-### After and Within Operators {#after_within}
-
-The duration is specified by a single uppercase letter representing the granularity followed by a number representing the repetition count of the granularity.
-
-**[!UICONTROL Within]** includes the endpoint (less than or equal to).
-
-**[!UICONTROL After]** does not include the endpoint (greater than).
-
-| Operators | Description |
-|--- |--- |
-|AFTER|The  After operator is used to specify a minimum limit on the amount of time between two checkpoints.. When setting the After values, the time limit will begin when the filter is applied. For example, if the  After operator is set on a container to identify visitors who visit page A but don't return to visit page B until after one day, then that day will begin when the visitor leaves page A.  For the visitor to be included in the filter, a minimum of 1440 minutes (one day) must transpire after leaving page A to viewing page B.|
-|WITHIN|The  Within operator is used to specify a maximum limit on the amount of time between two checkpoints. For example, if the  Within operator is set on a container to identify visitors who visit page A and then returned to visit page B within one day, then that day will begin when the visitor leaves page A. To be included in the filter, the visitor will have a maximum time of one day before opening page B.   For the visitor to be included in the filter, the visit to page B must occur within a maximum of 1440 minutes (one day) after leaving page A to viewing page B.|
-|AFTER/WITHIN|When using both the  After and  Within operators, it's important to understand that both operators will begin and end in parallel, not sequentially.   For example, if you build a filter with the container set to:<br>`After = 1 Week(s) and Within = 2 Week(s)`<br>Then the conditions to identify visitors in the filter are met only between 1 and 2 weeks. Both conditions are enforced from the time of the first page hit.|
-
-### Use the After operator {#after}
-
-* Time After lets you track by year, month, day, hour, and minute to match visits.
-* Time After can only be applied to a [!UICONTROL Hit] container because it is the only level for which such fine granularity is defined.
-
-**Example**: Visitors that visited page A then visited page B only after 2 weeks.****
-
-![](assets/time_between_after_operator.png)
-
-**Create the Segment**: This filter is created by adding a [!UICONTROL Visitor] container with two [!UICONTROL Hit] containers. You can then set the [!UICONTROL THEN] operator, and open the [!UICONTROL AFTER] operator drop down and set the number of weeks.
-
-![](assets/after_operator.png)
-
-**Matches**
-
-When given "After 2 weeks", if a hit to page A happens on June 1 2019, at 00:01, then a following hit to page B will match as long as it comes before June 15 2019 00:01 (14 days later).
-
-| Hit A | Hit B | Matching |
-|--- |--- |--- |
-|**A** hit: June 1, 2019 00:01|**B** hit: Jun 15, 2019 00:01|**Matches:** This time constraint matches because it is After June 1, 2019 (two weeks).|
-|**A** hit: June 1, 2019 00:01|**B** hit: June 8, 2019 00:01 B hit: June 15, 2019 00:01|**Does not match:** The first hit on page B does not match because it conflicts with the constraint requiring it after two weeks.|
-
-### Use the Within operator {#within}
-
-* [!UICONTROL Within] lets you track by year, month, day, hour, and minute to match visits.
-* [!UICONTROL Within] can only be applied to a [!UICONTROL Hit] container because it is the only level for which such fine granularity is defined.
-
->[!TIP]
->
->In a "within" clause, in between THEN statements, you can add, for example, "within 1 search keyword instance", "within 1 eVar 47 instance". This constrains the filter to within one instance of a dimension.
-
-**Example**: Visitors who visited page A then visited page B within 5 minutes.
-
-![](assets/time_between_within_operator.png)
-
-**Create the filter**: This filter is created by adding a [!UICONTROL Visitor] container, then dragging with two [!UICONTROL Hit] containers. You can then set the [!UICONTROL THEN] operator, and open the [!UICONTROL AFTER] operator drop down and set the interval: hits, page views, visits, minutes, hours, days, weeks, months, quarters, or years.
-
-![](assets/within_operator.png)
-
-**Matches**
-
-Matches must occur within the time limit. For the expression , if a visitor hits page A happens at 00:01, then a following hit to page B will match as long as it comes on or before 00:06 (five minutes later, including the same minute). Hits within the same minute will also match.
-
-### The Within and After operators {#within_after}
-
-Use [!UICONTROL Within] and [!UICONTROL After] to provide a maximum and minimum endpoint at both ends of a filter.
-
-**Example**: Visitors that visited page A then visited page B after 2 weeks but within 1 month.
-
-![](assets/time_between_using_both_operators.png)
-
-**Create the Segment**: Create the filter by sequencing two [!UICONTROL Hit] containers within a [!UICONTROL Visitor] container. Then set the [!UICONTROL After] and [!UICONTROL Within] operators.
-
-![](assets/within_after_together.png)
-
-**Matches**
-
-Any visitors hitting page A on June 1, 2019 are returning after June 15, 2019 00:01, but *before* July 1, 2019 are included in the filter. Compare with the section on Time Between Exclusions.
-
-The [!UICONTROL After] and [!UICONTROL Within] operators can be used together to define a sequential filter.
-
-![](assets/time_between_within_after.png)
-
-This example depicts a second visit to hit page B after two weeks but within a month.
+![Complex sequential filter example](assets/sequential-complex.png)

@@ -6,7 +6,17 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 ---
-# Create a mobile scorecard
+# Create a mobile scorecard {#create-a-mobile-scorecard}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_mobilescorecard_annotations"
+>title="Annotations"
+>abstract="Annotations can be created in the components manager of inside of a workspace project."
+
+<!-- markdownlint-enable MD034 -->
+
 
 The following information instructs curators of Customer Journey Analytics data on how to configure and present dashboards for executive users. To start with, you can view the Analytics dashboards scorecard builder video:
 
@@ -129,7 +139,7 @@ Use the Summary Number visualization to highlight a large number that is importa
 
 ### [!UICONTROL Donut]
 
-Similar to a pie chart, this visualization shows data as parts of a whole. Use a donut graph when comparing percentages of a total. For example, let's say you want to see which ad platform contributed to the total number of unique persons:
+Similar to a pie chart, this visualization shows data as parts of a whole. Use a donut graph when comparing percentages of a total. For example, you want to see which ad platform contributed to the total number of unique persons:
 
 ![New movile scorecard showing a Donut visualization](assets/donut-viz.png)
 

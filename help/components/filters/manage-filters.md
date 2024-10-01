@@ -1,64 +1,71 @@
 ---
-title: Filters manager
-description: lean how to manage filters in Customer Journey Analytics
+title: Manage filters
+description: Learn how to manage filters in Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
 ---
-# Filters manager
+# Manage filters
 
-The Filters manager offers many ways of curating filters, such as sharing, tagging, approving, copying, deleting, and marking as favorites.
 
-The Filters manager shows you all the filters you own and that have been shared with you. Admin-level users can see all filters in the organization. This overview presents the user interface and the capabilities of the Filters manager. 
+You can [share](filters-share.md), [filter](filters-filter.md), [tag](filters-tag.md), [approve](filters-approve.md), rename, [copy](filters-copy.md), delete, export filters and mark filters as [favorite](filters-favorite.md) from a central [!UICONTROL Filters] management interface. To manage filters:
 
-![](assets/filter-manager-ui.png)
+* Select **[!UICONTROL Components]** in the main interface, then select **[!UICONTROL Filters]**.
 
-## Access the Filters manager
 
-1. In Customer Journey Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Filters]**.
+>[!NOTE]
+>
+>The quick filters that you create within a specific Workspace project do not appear in the [!UICONTROL Filters] manager, unless you have made the filter available to all your projects. 
+>
 
-## Available actions in the Filters manager
+## Filters manager
 
-In the Filters manager, you can:
+The Filters manager has the following interface elements:
 
-* [Filter the list of filters](/help/components/filters/filters-filter.md)
+![Filters interface](assets/filters-manager.png)
 
-* [Mark filters as favorites](/help/components/filters/filters-favorite.md)
+### Filters list
 
-* [Approve filters](/help/components/filters/filters-approve.md)
+The filters list ➊ displays all the filters that you own, the filters that have been scoped to all your projects, and the filters that have been shared with you. The list has the following columns:
 
-* [Tag filters](/help/components/filters/filters-tag.md)
+| Column | Description |
+| --- | --- | 
+| ![StarOutline](/help/assets/icons/StarOutline.svg)  | Select to favor ![Star](/help/assets/icons/Star.svg) or un-favor ![StarOutline](/help/assets/icons/StarOutline.svg) a filter. See [Mark filter as favorite](/help/components/filters/filters-favorite.md) |
+| **[!UICONTROL Title and description]** | To edit the filter, select the title link, which opens the [Filters builder](filter-builder.md). A shared filter is indicated with ![Share](/help/assets/icons/Share.svg). |
+| **[!UICONTROL Data view]** | The data views that this filter applies to.  | 
+| **[!UICONTROL Owner]** | The owner of the filter. As a user, you only see the filters that you own or the annotations that are shared with you. |
+| **[!UICONTROL Tags]** | The tags for this filter. |
+| **[!UICONTROL Shared with]** | How many individuals or groups that you shared the filter with. Select to open the **[!UICONTROL Share Component]** dialog. See [Share filters](filters-share.md) for more information. |
+| **[!UICONTROL Date modified]** | The date and time that the filter was last modified. |
+| **[!UICONTROL Used in]** | Show where filters are currently being used, and how many times they are being used in each area. <p>For example, if the filter is being used in 40 projects and 2 alerts, then the value of this column shows as [!UICONTROL **42 components**].</p> <p>Select the value in this column to see the breakdown of where the filters are being used (for example, [!UICONTROL **Projects (40)**], [!UICONTROL **Mobile Scorecards (2)**]). Furthermore, you can view the list of items where the filters are being used. For example, so see the list of projects where they are being used, select the [!UICONTROL **Projects (40)**] link.</p><p>Each of the following areas shows the number of instances of filters being used in that area:</p>  <ul><li>[!UICONTROL **Projects**]<p>Contains filters that were [created in the filter builder](/help/components/filters/filter-builder.md#) and are available for all projects.</p></li><li>[!UICONTROL **Ad hoc components**]<p>Contains filters that were [created as quick filters](/help/components/filters/quick-filters.md) and are available only within a single project.</p></li><li>[!UICONTROL **Scheduled projects**]</li><li>[!UICONTROL **Mobile Scorecards**]</li><li>[!UICONTROL **Annotations**]</li><li>[!UICONTROL **Calculated metrics**]</li><li>[!UICONTROL **Report Builder**]<p>Selecting this option downloads a CSV file with the following columns of data:</p><ul><li>Report Builder Name</li><li>Last accessed</li><li>Last accessed IMS User ID</li><li>Last accessed user name</li></ul></li></ul><p>This information helps you to determine whether a component is valuable to users in your organization, where the component is used, and if the component needs to be deleted or modified.</p><p>Consider the following when viewing this column:</p><ul><li>This information is available only to system administrators.</li><li>The [!UICONTROL **Used in**] column does not display by default. Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to configure the display of this column.</li><li>This information does not include usage from the API or Data Warehouse.</li><li>If there is no data in this column for a given component but the component has a [!UICONTROL **Last used**] date, the component might have been used in an analysis without being saved.</li><li>Usage information is available starting in September 2023.</li></ul><p>You can use the [Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md) along with this information to help you keep track of and better understand how components are being used in your organization.</p>  |
+| **[!UICONTROL Last Used]** | When the filter was last used. |
 
-* [Share filters](/help/components/filters/filters-share.md)
+{style="table-layout:auto"}
 
-* Export a filter to a CSV file.
+Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to specify which columns you want to display.
 
-* [Copy filters](/help/components/filters/filters-copy.md)
+### Action bar
 
-* Delete filters
+You can action on filters using the action bar ➋. The action bar contains the following actions:
 
-## Configure columns
+| Action | Description |
+|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another filter, using the [Filter builder](filter-builder.md). |
+| ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search by title*] | When no filter is selected in the list, search for filters using this search field. |
+| ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tag the selected filters. In the **[!UICONTROL Tag Filter]** dialog, select or de-select the tags for the selected filters. Select **[!UICONTROL Save]** to save the tags for the selected filters. See [Tag filters](/help/components/filters/filters-tag.md) for more information.|
+| ![Share](/help/assets/icons/Share.svg) **[!UICONTROL Share]** | Share the selected filters. In the **[!UICONTROL Share Filter]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected filters. See [Share filters](filters-share.md) for more information. |
+| ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Delete the selected filters. You are prompted for a confirmation. |
+| ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Rename a single selected filter. When selected, you can rename the filter inline. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Approve the selected filters. See [Approve filters](filters-approve.md) for more information. | 
+| ![Copy](/help/assets/icons/Copy.svg)  **[!UICONTROL Copy]** | Copy the selected filter. New filters are created with the same name and suffix `(Copy)`. | 
+| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Export the filters to a `Filters List.csv` file. |
 
-You can configure the information displayed for each filter in the Filters manager by configuring the columns that are displayed.
+### Active filter bar
 
-To configure the visible columns in the Filters manager:
+The filter bar ➌ shows the active filters applied from the filter panel to the list of filters (if any). You can quickly remove a filter using ![CrossSize75](/help/assets/icons/CrossSize75.svg). If more than one filter is specified, you can remove all filters using **[!UICONTROL Remove all]**.
 
-1. In Customer Journey Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Filers]**. 
+### Filter panel
 
-1. In the Filters manager, select the **Customize columns** icon ![Customize columns icon](assets/customize-columns-icon.png), then select the columns that you want to be displayed in the Filters manager.
+You can filter the list of filters using the ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** left panel ➍. The filter panel displays the type of filter and the number of filters that honor the specific filter. Select ![Filter](/help/assets/icons/Filter.svg) to toggle the display of the filter panel. 
 
-   The following columns are available:
-
-   | Column title | Description  |
-   |---|---|
-   | Title and description | These values are provided in the Filter builder. To edit the title and description, select the title link to open the Filter builder.  |
-   | Favorites  | Displays star icons next to each filter, allowing you to mark filters as favorites. For more information, see [Mark filters as favorites](/help/components/filters/filters-favorite.md). |
-   | Data view  | This column indicates in which data view the filter was last saved.  |
-   | Owner  | Indicates who owns the filter. As a non-Admin, you can see only filters you own or those that were shared with you.  |
-   | Tags (not checked in column selector, hence column not appearing)  | Tags that were applied to the filter, either by you or by people who shared the filter with you.  |
-   | Shared with  | Lists individuals or groups (Admin only) or All (Admin only) that you shared the filter with. <p>When a filter is being shared by you or with you, a share icon displays next to the filter name.</p>|
-   | Date modified  | Shows the date that the filter was last modified.  |
-   | Used in | Shows where filters are currently being used, and how many times they are being used in each area. <p>For example, if the filter is being used in 40 projects and 2 alerts, then the value of this column shows as [!UICONTROL **42 components**].</p> <p>Select the value in this column to see the breakdown of where the filters are being used (for example, [!UICONTROL **Projects (40)**], [!UICONTROL **Mobile Scorecards (2)**]). Furthermore, you can view the list of items where the filters are being used. For example, so see the list of projects where they are being used, select the [!UICONTROL **Projects (40)**] link.</p><p>Each of the following areas shows the number of instances of filters being used in that area:</p>  <ul><li>[!UICONTROL **Projects**]<p>Contains filters that were [created in the filter builder](/help/components/filters/filter-builder.md#) and are available for all projects.</p></li><li>[!UICONTROL **Ad hoc components**]<p>Contains filters that were [created as quick filters](/help/components/filters/quick-filters.md) and are available only within a single project.</p></li><li>[!UICONTROL **Scheduled projects**]</li><li>[!UICONTROL **Mobile Scorecards**]</li><li>[!UICONTROL **Annotations**]</li><li>[!UICONTROL **Calculated metrics**]</li><li>[!UICONTROL **Report Builder**]<p>Selecting this option downloads a CSV file, with the following columns of data:</p><ul><li>Report Builder Name</li><li>Last accessed</li><li>Last accessed IMS User ID</li><li>Last accessed user name</li></ul></li><p>When viewing information for Report Builder, usage information is available starting in September 2024.</p></ul><p>This information can help you determine whether a component is valuable to users in your organization, where it is used, and if it needs to be deleted or modified.</p><p>Consider the following when viewing this column:</p><ul><li>This information is available only to system administrators.</li><li>The [!UICONTROL **Used in**] column does not display by default. [Configure columns](#configure-columns) to display it.</li><li>If a filter includes another filter in its definition, any use of that filter is not shown in the [!UICONTROL **Used in**] column. If a filter is included in the definition of another type of component (such as a calculated metric), then usage is shown in the [!UICONTROL **Used in**] column.</li><li>This information does not include usage from the API or Data Warehouse.</li><li>If there is no data in this column for a given component but it has a [!UICONTROL **Last used**] date, the component might have been used in an analysis without being saved.</li><li>Usage information is available starting in September 2023.</li></ul><p>You can use the [Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md) along with this information to help you keep track of and better understand how components are being used in your organization.</p>  |
-   | Last used | Shows the date when the filter was last used in any of the following component types: <ul><li>Calculated metrics</li><li>Projects</li><li>Scheduled projects</li><li>Filters</li></ul> <p>This information can help you determine whether a component is valuable to users in your organization, or whether it should be deleted.</p><p>Consider the following when viewing this column:</p><ul><li>This information does not include usage from the API, Report Builder, or Data Warehouse.</li><li>For some components, this column might not contain data if the component was last used prior to September 2023.</li><li>This information is available only to system administrators.</li></ul><p>You can use the [Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md) along with this information to help you keep track of and better understand how components are being used in your organization. |
-   
-   {style="table-layout:auto"}
+See [Filter the list of filters](filters-filter.md) for more information.

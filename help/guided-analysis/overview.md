@@ -32,7 +32,7 @@ The following guided analysis views are available:
 
 ## Access
 
-If your organization is provisioned for guided analysis, you can access it from the Customer Journey Analytics homepage. 
+You can access Guided Analysis from the Customer Journey Analytics homepage. 
 
 1. Click **[!UICONTROL Guided analysis]** from the homepage, which takes you directly to the [Usage trends view](types/usage.md). 
 

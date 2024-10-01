@@ -5,7 +5,25 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
 ---
-# Create and publish audiences
+# Create and publish audiences {#create-and-publish-audiences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_refreshfrequency"
+>title="Refresh frequency"
+>abstract="See how often an audience's membership will be reevaluated.<br/>One time audiences are evaluated only once."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_audiencelimit"
+>title="Audience limit"
+>abstract="Refreshing audiences are limited based on how often they refresh."
+
+<!-- markdownlint-enable MD034 -->
 
 This topic discusses how to create and publish audiences identified in Customer Journey Analytics to [Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) in Adobe Experience Platform for customer targeting and personalization. 
 
@@ -47,7 +65,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 1. Interpret the data preview.
 
-   The audience preview appears in the right rail. It allows for a summarized analysis of the audience you have created.
+   The audience preview appears in the right panel. It allows for a summarized analysis of the audience you have created.
 
    ![Screenshot of the data preview showing a summarized analysis of the audience.](assets/data-preview.png)
 
@@ -109,7 +127,7 @@ To view Customer Journey Analytics audiences in Platform:
 >
 >This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
 
-1. Expand [!UICONTROL **Customer**] in the left rail, then select [!UICONTROL **Audiences**]. <!-- is there a folder called "Customer Journey Analytics? -->
+1. Expand [!UICONTROL **Customer**] in the left panel, then select [!UICONTROL **Audiences**]. <!-- is there a folder called "Customer Journey Analytics? -->
 
 1. Select the [!UICONTROL **Browse**] tab.
 
