@@ -1,6 +1,6 @@
 ---
 title: Use summary data in Customer Journey Analytics
-description: Use explaining all details on how to bring summary data into Customer Journey Analytics
+description: Use case explaining all details on how to bring summary data into Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
@@ -506,7 +506,7 @@ To ensure you can report on the correct data in Workspace, you want to create a 
 
          ![Revenue summary data](../assets/revenue-summary-data.png)
          1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
-            1. Select ![AttributionLastTouch](/help/assets/icons/AttributionLastTouch.svg) **[!UICONTROL Last Touch]** from the **[!UICONTROL Attribution Model]** dropdown list.
+            1. Select ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** from the **[!UICONTROL Attribution Model]** dropdown list.
             1. Select **[!UICONTROL 30 Day]** from the **[!UICONTROL Lookback window]** dropdown list.
          1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **Format**.
             1. Select **[!UICONTROL Currency]** from the **[!UICONTROL Format]** dropdown list.
@@ -516,7 +516,7 @@ To ensure you can report on the correct data in Workspace, you want to create a 
 
          ![Orders summary data](../assets/orders-summary-data.png)
          1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
-            1. Select ![AttributionLastTouch](/help/assets/icons/AttributionLastTouch.svg) **[!UICONTROL Last Touch]** from the **[!UICONTROL Attribution Model]** dropdown list.
+            1. Select ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** from the **[!UICONTROL Attribution Model]** dropdown list.
             1. Select **[!UICONTROL 30 Day]** from the **[!UICONTROL Lookback window]** dropdown list.
          1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Format]**.
             1. Select **[!UICONTROL Decimal]** from the **[!UICONTROL Format]** dropdown list.

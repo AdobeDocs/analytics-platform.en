@@ -6,7 +6,17 @@ feature: Data Views
 role: Admin
 exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
 ---
-# [!UICONTROL Summary data group] component settings
+# [!UICONTROL Summary data group] component settings {#summary-data-group-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_summarydatagroup"
+>title="Summary data group"
+>abstract="A summary data group creates an association between all dimensions in the grouping and is used to combine dimensions from summary datasets with other dimensions for reporting."
+
+<!-- markdownlint-enable MD034 -->
+
 
 A summary data group creates an association between all dimensions in the grouping and is used to combine dimensions from summary datasets with other dimensions for reporting.
 
@@ -26,7 +36,7 @@ To create a grouping of dimensions:
 When grouping dimensions, you must ensure the settings for [!UICONTROL Substring], [!UICONTROL Behavior (Lower case)], and [!UICONTROL Include exclude values], for each of the dimensions that are part of the group, are the same. Otherwise, each dimension of the group can potentially return different results prior to the grouping.
 For example:
 
-1. You have created a summary data group for `campaign_code` (part of summary data) and `tracking_code` (part of your event data).
+1. You have created a summary data group for `campaign_code` (part of summary data) and `tracking_code`(part of your event data).
 1. You have applied [!UICONTROL Behavior (Lower case)] to the `campaign_code` but not to the `tracking_code` dimension.
    
 Values in `tracking_code` can potentially show up as different from `campaign_code`.

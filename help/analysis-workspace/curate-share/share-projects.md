@@ -6,7 +6,17 @@ feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
 ---
-# Share projects
+# Share projects {#share-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_shareprojects"
+>title="Share projects"
+>abstract="You can share any of these project roles with other users in your organization."
+
+<!-- markdownlint-enable MD034 -->
+
 
 You can share an Analysis Workspace project with the following types of people:
 
@@ -24,10 +34,13 @@ You can share an Analysis Workspace project with the following types of people:
 
 Any [curation](curate.md) you apply prior to sharing is reflected when recipients open the project. 
 
-Here is a video overview of project sharing:
++++ View a video showing how to use project sharing.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
 
+{{videoaa}}
+
++++
 
 ## Share with Customer Journey Analytics users and groups in your organization {#Add}
 
@@ -59,7 +72,7 @@ When sharing a specific project role with users and groups in your organization,
 
 To share a specific project role with users or groups in your organization:
 
-1. In Customer Journey Analytics, select the [!UICONTROL **Workspace**] tab, then select [!UICONTROL **Projects**] in the left rail.
+1. In Customer Journey Analytics, select the [!UICONTROL **Workspace**] tab, then select [!UICONTROL **Projects**] in the left panel.
 
 1. Select the checkbox next to one or more projects that you want to share, then select [!UICONTROL **Share**].
 
@@ -76,9 +89,9 @@ To share a specific project role with users or groups in your organization:
 
    **Edit original:** Recipients can **[!UICONTROL Save]** changes to a project and function as co-owners. This role is useful if you want to co-manage a project with other colleagues; this includes editing, deleting, and modifying recipient lists for a shared project. <br>Note: Analysis Workspace does not currently support live collaboration, so it is recommended that only one user edit a project at a given time. If projects are saved at the same time, the last version will be kept. 
 
-   **Edit copy:** Recipients can **[!UICONTROL Save as]** and have access to the left rail. Project interactions are not limited in this role. This role is useful if you want to share a project to users who understand your organization's data and how to use Analysis Workspace, but you do not want your project altered.
+   **Edit copy:** Recipients can **[!UICONTROL Save as]** and have access to the left panel. Project interactions are not limited in this role. This role is useful if you want to share a project to users who understand your organization's data and how to use Analysis Workspace, but you do not want your project altered.
 
-   **Read only:** Recipients cannot **[!UICONTROL Save]** or **[!UICONTROL Save as]** and do not have access to the left rail. Project interactions are also limited. This role is useful if you want to share a project to users that are less familiar with your organization's data structure, Analysis Workspace or Customer Journey Analytics generally. However, you still want them to consume data and insights in a safe environment. Learn more about the [Read only project experience](/help/analysis-workspace/curate-share/view-only-projects.md).
+   **Read only:** Recipients cannot **[!UICONTROL Save]** or **[!UICONTROL Save as]** and do not have access to the left panel. Project interactions are also limited. This role is useful if you want to share a project to users that are less familiar with your organization's data structure, Analysis Workspace or Customer Journey Analytics generally. However, you still want them to consume data and insights in a safe environment. Learn more about the [Read only project experience](/help/analysis-workspace/curate-share/view-only-projects.md).
 
 1. (Conditioinal) If you are sharing a single project, choose whether to enable the following options when sharing the project:
 
@@ -142,7 +155,7 @@ To share an Analysis Workspace project with anyone:
 
 1. Open the Analysis Workspace project that you want to share.
 
-1. Click **[!UICONTROL Share]** > **[!UICONTROL Share with anyone]**.
+1. Select **[!UICONTROL Share]** > **[!UICONTROL Share with anyone]**.
    
    If there are unsaved changes, you are prompted to save your project. 
 
@@ -158,7 +171,7 @@ To share an Analysis Workspace project with anyone:
 
    * **[!UICONTROL Require Experience Cloud authentication]:** 
    
-     When this option is enabled, the only users who can access the project are those who can log in to the Adobe Experience Cloud organization where the project that you are sharing was created. However, users you share with do not need to have access to Adobe Analytics.
+     When this option is enabled, the only users who can access the project are those who can log in to the Adobe Experience Cloud organization where the project that you are sharing was created. However, users you share with do not need to have access to Customer Journey Analytics.
 
      Customer Journey Analytics administrators can configure this preference for the company, as described in [Preferences](/help/analysis-workspace/user-preferences.md). You might encounter the following scenarios, depending on how the administrator configured this option:
      
@@ -166,13 +179,13 @@ To share an Analysis Workspace project with anyone:
 
      * If this option is enabled and you can't disable it, this means that your Customer Journey Analytics administrator requires Experience Cloud authentication for anyone accessing Analysis Workspace projects. This is always the case for organizations who license Healthcare Shield. 
 
-1. Next to the **[!UICONTROL Share with anyone (no login required)]** field, click the **Copy link** icon ![Copy link icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)) to copy the link to your system clipboard. 
+1. Next to the **[!UICONTROL Share with anyone (no login required)]** field, select ![Link](/help/assets/icons/Link.svg) to copy the link to your system clipboard. 
 
 1. Share the link with the people you want to have access to the project. For example, you can paste the link in an email. 
    
    Any person you share the link with can view the Analysis Workspace project.
 
-1. (Optional) You can click the **Generate new link** icon ![Generate link icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) to remove access from users who previously received a link to the project. A new link is generated that you can share with users who you want to access the project.
+1. (Optional) You can select ![Generate new link icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) to remove access from users who previously received a link to the project. A new link is generated that you can share with users who you want to access the project.
 
 1. Select **[!UICONTROL Close]** to close the share dialog box. Your changes are automatically saved. 
 

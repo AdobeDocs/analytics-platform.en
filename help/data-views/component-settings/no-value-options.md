@@ -6,7 +6,17 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 ---
-# No Value Options component settings
+# No Value Options component settings {#no-value-options-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_novalueoptions"
+>title="No value options"
+>abstract="Configure the default behavior for when no value is present in a dimension."
+
+<!-- markdownlint-enable MD034 -->
+
 
 No value options let you to determine how Analysis Workspace handles situations where an event in a dataset contains a metric but the dimension did not contain a value. You can choose the name of this dimension item, hide it entirely, or even treat it as an actual value.
 

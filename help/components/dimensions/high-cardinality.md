@@ -10,7 +10,7 @@ role: User
 
 When using a dimension that contains many unique values, the resulting report can contain too many unique dimension items to display or calculate. Results are truncated by removing dimension items deemed least important. These optimizations are done to maintain project and product performance.
 
-When you request a report with too many unique values, Analysis Workspace shows an indicator in the dimension header stating that not all dimension items are included. For example, "Rows: 1-50 of more than 22,343,156". The "more than" keyword indicates that some optimization was applied to the report to return the most important dimension items.
+When you request a report with too many unique values, Analysis Workspace shows an indicator in the dimension header stating that not all dimension items are included. For example, **[!UICONTROL Rows: 1-50 of more than 22,343,156]**. The **[!UICONTROL more than]** keyword indicates that some optimization was applied to the report to return the most important dimension items.
 
 ![Freeform table in Workspace showing the "more than" keyword to show 1-50 of more than 22,343,156](assets/high-cardinality.png)
 

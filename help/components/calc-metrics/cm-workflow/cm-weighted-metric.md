@@ -1,29 +1,58 @@
 ---
-description: Shows examples of filtered and weighted metrics.
-title: Filtered and weighted metrics
+description: Shows examples of calculated metrics.
+title: Calculated metrics examples
 feature: Calculated Metrics
 exl-id: 5e73ab52-627a-4064-bfb7-354c0ba1e4ee
 ---
-# Filtered and weighted metrics
+# Calculated metrics examples
 
-Shows examples of filtered and weighted metrics.
+This article shows examples of how to define more advanced calculated metrics.
 
-## Filtered Bounce Rate {#section_D42F2452E4464948934063EB6F2DAAB4}
+## Bounce rate
 
-This simple filtered metric shows the bounce rate for only those pages with over 100 visits:
+You want to calculate the bounce rate. 
 
-![Summary window showing the metrics applied to column 1 (Visits) and column 2 (100) along with the Bounce Rate. ](assets/cm_fbr.png)
++++ Details
 
-Keep in mind that this formula is dependent on a consistent time range. If you run a report for a single day, any page with more than 20 visits is worth looking at. If you run it for a month, you may want the filter to include more visits.
+The definition of a bounce is subject for another discussion but for this example you define a Bounced events filter where Session Start equals 1 and Session Ends equals 1. You use this filter do define the rate of bounced sessions to sessions.
 
-## Filtered Bounce Rate with Percentile {#section_4F3E6D33A1FD438A932FA662B3510552}
 
-This filter shows the Bounce Rate for the top 30 percent of pages, when sorted by visits.
+### Filter
 
-![If and then filter showing the Bounce Rate for the top 30% of pages sorted by visits.](assets/cm_wbr_2.png)
+![Bouncing events](assets/example-bounce-bouncedevents.png)
 
-## Weighted Metric {#section_F2D16B14569948289CF1310F9E6E3FC2}
+### Calculated metric
 
-Suppose you want to sort by bounce rate in general, but pages with higher visits should be higher on the list. You could create a Weighted Bounce Rate that looks like this:
+![Bounce rate](assets/example-bounce-rate.png)
 
-![Summary with Definition for Bounce Rate times Visits.](assets/cm_wbr.png)
+
+### Derived fields
+
+Alternatively, you can define a [bounce rate using derived fields](/help/data-views/derived-fields/derived-fields.md#bounces).
+
+Derived fields are part of a Data view which has the advantage that not every user can override or modify the definition of a Bounce rate metric. That advantage also introduced a limitation. Users that do not have access to a data view cannot use derived fields and have to resort to filters and calculated metrics to define a bounce rate.
+
+See for more background information on how to calculate bounces and bounce rate in Customer Journey Analytics, this [blog post](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446).
+
++++
+
+
+## Conditional page views
+
+You want to define a calculated metric that calculates only page views for the pages that have been visited in over 100 sessions.
+
++++ Details 
+
+![Conditional page views](assets/conditional-page-views.png)
+
++++
+
+## Page views for top 30% sessions
+
+You want to define a calculated metric that calculates only page views for the top 30% sessions.
+
++++ Details
+
+![Top 30% page views](assets/top30-page-views.png)
+
++++

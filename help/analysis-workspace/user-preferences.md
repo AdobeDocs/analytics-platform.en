@@ -8,82 +8,137 @@ role: User
 ---
 # User preferences
 
-You can manage settings for Analysis Workspace and its related components for all new projects or panels that you create. Existing projects and panels are not affected.
+You can manage user settings or preferences for Analysis Workspace and related components for all new projects or panels that you create. Existing projects and panels are not affected.
 
 ## Update preferences
 
-1. In Customer Journey Analytics, go to the [!UICONTROL **Projects**] landing page, then select [!UICONTROL **Edit preferences**].
+You can update your preferences in the following ways:
 
-   ![Workspace Projets view highlighting the Edit preferences options described on this page.](assets/user-preferences.png) 
+- Select ![UserAdmin](/help/assets/icons/UserAdmin.svg) **[!UICONTROL Edit preferences]** from the Workspace main interface.
+- Select **[!UICONTROL Project]** > **[!UICONTROL User preferences]** from the menu when working in a Workspace project.
+- Select **[!UICONTROL Components]** > **[!UICONTROL Preferences]** from the main Customer Journey Analytics top bar (only available for product administrators).
 
-   Or
+## Configure preferences
 
-   Product Administrators can update IMS Organization preferences by going to the [!UICONTROL **Components**] tab, then selecting [!UICONTROL **Preferences**].
+You can configure the following preferences: 
 
-1. For information about the available preferences on each tab, continue with any of the following sections in this article:
-
-   * [General preferences](#general-preferences)
-
-   * [IMS Organization preferences](#ims-organization-preferences)
-
-   * [Projects & Analyses preferences](#project-preferences)
-
-   * [Freeform table preferences](#freeform-table-preferences)
-
-   * [Visualizations preferences](#visualizations-preferences)
-
-## General preferences
+### General preferences
 
 General preferences apply to your Customer Journey Analytics experience in the browser. For information about how to access these preferences, see [Update preferences](#update-preferences). 
 
 | Preference | Options |
 | --- | --- |
-| Landing page | Choose what page displays as the default page when you access Adobe Analytics: <ul><li>Project list (default)</li><li>Blank project</li><li>Specific project selected from a list</li></ul> |
-| Show tips | Displays tips in a blue box in the lower-right area of Analysis Workspace. <p>This option is enabled by default.</p> |
-| Components displayed in left rail groups | Choose how many of each component to display in the Components menu in the left rail. <p>If you choose 0, the component is no longer accessible from the left rail of your workspaces.</p><p>By default, 5 components display for each of the following:</p> <ul><li>Dimensions</li><li>Metrics</li><li>Filters</li><li>Date ranges</li></ul> <p>For more information about Components in Analysis Workspace, see [Components overview](/help/components/overview.md).</p> |
+| **[!UICONTROL Landing page]** | Choose what page displays as the default page when you access Customer Journey Analytics: <ul><li>Project list (default)</li><li>Blank project</li><li>Blank Trends guided analysis</li><li>Specific project, selected from a list</li></ul> |
+| **[!UICONTROL Tips]** | Displays tips in a blue box in the lower-right area of Analysis Workspace. <p>This option is enabled by default.</p> |
+| **[!UICONTROL Components displayed in left panel groups]** | Choose how many of each component group to display in the Components menu in the left panel. <p>If you choose 0 for a component group, the component group is no longer accessible from the left panel.</p><p>By default, 5 components are displayed for each of the following component groups:</p> <ul><li>Dimensions</li><li>Metrics</li><li>Filters</li><li>Date ranges</li></ul> <p>For more information about Components in Analysis Workspace, see [Components overview](/help/components/overview.md).</p> |
 
-## IMS Organization preferences
+### IMS Organization preferences {#ims-organization-preferences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_shareonlyworkspace"
+>title="Allow sharing only with Workspace users"
+>abstract="When enabled, the **[!UICONTROL Share with anyone]** option is no longer available to users when sharing an Analysis Workspace project. People who previously received access to a project through this share option can no longer access the project."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_requireexperiencecloudauth"
+>title="Require Experience Cloud authentication"
+>abstract="When enabled, people who are given access to a project from the Share with anyone option in Analysis Workspace must authenticate using their Experience Cloud credentials."
+
+<!-- markdownlint-enable MD034 -->
+
 
 You can update company preferences that apply to all users and projects within your organization. For information about how to access these preferences, see [Update preferences](#update-preferences). 
 
 | Section | Preference | Options |
 | --- | --- | --- |
 | **Project sharing** | | |
-| | Allow sharing only with Workspace users | <p>When this option is enabled, users in your organization cannot see the "Share with anyone" option in the Share menu. This means that users cannot share projects with people who don't have an Analysis Workspace account in your organization as described in [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md).</p><p>This option is disabled by default for all organizations (meaning that users can share projects with people outside the organization) except for customers who have licensed Healthcare Shield. </p><p>Consider the following when enabling or disabling this option:</p> <ul><li><p>When you enable this option, people who previously received access to a project through the "Share with anyone" share option can no longer access the project.</p></li><li><p>If this option is enabled (to allow sharing only with Workspace users) and then later disabled (to allow sharing with anyone), people who previously received access to a project through the "Share with anyone" share option do not automatically regain their access to the project. In this case, the user who shared the project must enable the [!UICONTROL **Link is active**] option that is available when sharing a project with anyone ([!UICONTROL **Share**] > [!UICONTROL **Share with anyone**]), as described in [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md).</p></li><li><p>**For customers who license Healthcare Shield:** This option is enabled by default and cannot be disabled. Before you can disable this option so that users can use the "Share with anyone" share option, you first need to add the [!UICONTROL **Share project links with anyone**] permission (located under [!UICONTROL **Reporting Tools**]) in the Adobe Admin Console. After the permission is added, you can disable this option, then accept the resulting legal notice. For information about how to add a permission in the Admin Console, see [Manage product permissions in the Admin Console](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html).</p></li> |
-| | Require Experience Cloud authentication | <p>When enabled, people who are given access to a project from the "Share with anyone" option in Analysis Workspace must authenticate using their Experience Cloud credentials.</p> <p>After this option is enabled, any time a user shares a project using the "Share with anyone" share option, the "Require Experience Cloud authentication" option is enabled in the share dialog and it cannot be disabled by the user who is sharing the project. (For information about how users can share projects with anyone, see [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md).)</p> <p>Consider the following when enabling this option:</p><ul><li><p>When you enable this option, all projects that were previously shared with the "Share with anyone" share option, and do not have the "Require Experience Cloud authentication" option enabled, are deactivated.</p></li> <li><p>If this option is enabled (to require Experience Cloud authentication) and then later disabled (to allow anyone with the link to access the project), people who previously received access to a project through the "Share with anyone" share option do not automatically regain their access to the project. In this case, the user who shared the project must enable the "Link is active" option that is available when sharing a project with anyone ([!UICONTROL **Share**] > [!UICONTROL **Share with anyone**] > [!UICONTROL **Link is active**]), as described in [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>This option is available only if SSO is implemented in your organization. For information about how system administrators can enable SSO for your organization, see [Set up identity and Single Sign-On](https://helpx.adobe.com/enterprise/using/set-up-identity.html){target=_blank}.</p><p>If SSO is configured for your organization, check to see if any kind of auto-account creation is implemented in the console. Typically, a system administrator would set this up, as described in [Enable automatic account creation](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>If your organization licenses Healthcare Shield, this option is enabled by default and cannot be disabled.</p></li></ul>  |
+| | Allow sharing only with Workspace users | When this option is enabled, users in your organization cannot see the **[!UICONTROL Share with anyone]** option in the **[!UICONTROL Share]** menu. This means that users cannot share projects with people who don't have an Analysis Workspace account in your organization as described in [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md).<br/>This option is disabled by default for all organizations (meaning that users can share projects with people outside the organization) except for customers who have licensed Healthcare Shield. <p>Consider the following when enabling or disabling this option:<ul><li>When you enable this option, people who previously received access to a project through the [!UICONTROL Share with anyone] share option can no longer access the project.</li><li>If this option is enabled (to allow sharing only with Workspace users) and then later disabled (to allow sharing with anyone), people who previously received access to a project through the [!UICONTROL Share with anyone] share option do not automatically regain their access to the project. In this case, the user who shared the project must enable the [!UICONTROL **Link is active**] option that is available when sharing a project with anyone **([!UICONTROL Share]** > **[!UICONTROL Share with anyone]**), as described in [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md).</li><li>**For customers who license Healthcare Shield:** This option is enabled by default and cannot be disabled. Before you can disable this option so that users can use the [!UICONTROL Share with anyone] share option, you first need to add the [!UICONTROL Share project links with anyone] permission (located under [!UICONTROL Reporting Tools]) in the Adobe Admin Console. After the permission is added, you can disable this option, then accept the resulting legal notice. For information about how to add a permission in the Admin Console, see [Manage product permissions in the Admin Console](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html).</li></ul> | 
+| | Require Experience Cloud authentication | When enabled, people who are given access to a project from the Share with anyone option in Analysis Workspace must authenticate using their Experience Cloud credentials.<p>After this option is enabled, any time a user shares a project using the [!UICONTROL Share with anyone] share option, the [!UICONTROL Require Experience Cloud authentication] option is enabled in the share dialog and it cannot be disabled by the user who is sharing the project. For information about how users can share projects with anyone, see [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md). <p> <p>Consider the following when enabling this option: <ul><li>When you enable this option, all projects that were previously shared with the [!UICONTROL Share with anyone] share option, and do not have the [!UICONTROL Require Experience Cloud authentication] option enabled, are deactivated.<p>If this option is enabled (to require Experience Cloud authentication) and then later disabled (to allow anyone with the link to access the project), people who previously received access to a project through the [!UICONTROL Share with anyone] share option do not automatically regain their access to the project. In this case, the user who shared the project must enable the [!UICONTROL Link is active]*option that is available when sharing a project with anyone **([!UICONTROL Share]** > **[!UICONTROL Share with anyone]** > **[!UICONTROL Link is active]**), as described in [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md).</li><li>This option is available only if SSO is implemented in your organization. For information about how system administrators can enable SSO for your organization, see [Set up identity and Single Sign-On](https://helpx.adobe.com/enterprise/using/set-up-identity.html).</p><p>If SSO is configured for your organization, check to see if any kind of auto-account creation is implemented in the console. Typically, a system administrator would set this up, as described in [Enable automatic account creation](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html).</li><li>If your organization licenses Healthcare Shield, this option is enabled by default and cannot be disabled.</li></ul>|
 
 {style="table-layout:auto"}
 
-## Projects & Analyses preferences
+### Projects & Analyses preferences {#project-and-analysis-preferences}
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_categoricalpalette"
+>title="Categorical palette"
+>abstract="Applied to many visualizations in Analysis Workspace and Guided analysis. Each color represents a distinct categorical value."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_divergingpalette"
+>title="Diverging palette"
+>abstract="Applied to the Cohort table in Analysis Workspace and User growth guided analysis. This palette holds a numeric meaning with two extremes and a baseline in the middle."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_sequentialpalette"
+>title="Sequential palette"
+>abstract="Applied to the Frequency trends (stacked bar) guided analysis. This palette holds a numeric meaning from light to dark."
+
+<!-- markdownlint-enable MD034 -->
+
 
 You can customize these preferences for all new Analysis Workspace projects, new Analysis Workspace panels, and new guided analyses. For information about how to access these preferences, see [Update preferences](#update-preferences). 
 
 Some of these same preferences can also be customized for individual projects in Analysis Workspace, as described in [Project overview](/help/analysis-workspace/build-workspace-project/freeform-overview.md). 
 
-Click the linked preference titles for more information and context about each preference. 
-
 | Section | Preference | Options |
 | --- | --- | --- |
 | **Display** | | |
-|  | [View density](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) | Choose how much content to display on the screen by reducing the vertical padding of the left rail, freeform tables, and cohort tables. <ul><li>Compact</li><li>Comfortable</li><li>Expanded (default)</li></ul> |
+|  | [View density](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) | Choose how much content to display on the screen by reducing the vertical padding of the left panel, freeform tables, and cohort tables. <ul><li>Compact</li><li>Comfortable</li><li>Expanded (default)</li></ul> |
 | | [Color palette](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html) | Choose the visualization color palettes that are used in Analysis Workspace and guided analysis. <ul><li> Categorical palette: Applied to many visualizations in Analysis Workspace and guided analysis. Each color represents a distinct categorical value. Choose from Adobe-provided options or enter a custom palette defined by comma-delimited hex values.</li><li> Divergent palette: Applied to the Cohort table in Analysis Workspace and User growth guided analysis. This palette holds a numeric meaning with two extremes and a baseline in the middle.<li> Sequential palette: Applied to the Frequency trends (stacked bar) guided analysis. This palette holds a numeric meaning from light to dark.</li></ul> |
 | **Data** | | |
-|  | [Data view](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#report-suite) | Choose from where tables and visualizations derive their data. <ul><li>Most recent (default)</li><li>Specific data view selected from a list</li></ul> |
-|  | [Calendar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#calendar) | Select from a list of: <ul><li>Adobe-provided ranges (default is This Month)</li><li>Custom-defined ranges</li></ul> |
+|  | [Data view](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#report-suite) | Choose the data where tables and visualizations derive their data. <ul><li>Most recent (default)</li><li>Specific data view selected from a list</li></ul> |
+|  | [Calendar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#calendar) | Select from a list of: <ul><li>Adobe-provided ranges (default is This Month)</li><li>You can enable [!UICONTROL Make date range components relative to panel calendar by default].</li></ul> |
 |  | [Panel Type](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) | <ul><li>Freeform (default)</li><li>Blank</li><li>Quick Insights</li></ul> |
-|  | Count repeat instances | Specifies whether repeat instances are counted in reports. For example, this setting (when activated) treats multiple consecutive page views to the same page as multiple page views. With it off, they count as a single page view. <p>**Note:** This setting affects only certain metrics (such as Single Page Visits) and it does not apply to Flow or Fallout visualizations.</p> |
+|  | Instance counting  | Enable [!UICONTROL Count repeat instances] to specifies whether repeat instances are counted in reports. For example, when enabled, multiple consecutive page views to the same page are treated as multiple page views. When disabled, multiple consecutive page views to the same page count as a single page view. <p>**Note:** This setting affects only certain metrics (such as Sessions) and it does not apply to Flow or Fallout visualizations.</p> |
 |  | Number format | <ul><li>1,000.00 (default)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV separator character | <ul><li>Comma (default)</li><li>Semicolon</li><li>Colon</li><li>Pipe</li><li>Period</li><li>Space</li><li>Tab</li></ul> |
 |  | Show annotations | Choose whether annotations are visible in your projects. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md). |
 
 
-## Freeform table preferences
+### Freeform table preferences {#freeform-table-preferences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_showanomalies"
+>title="Show anomalies"
+>abstract="Selecting **[!UICONTROL Show anomalies]** will automatically run anomaly detection on the first metric column added to a time series Freeform table visualization."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_prefs_showforecast"
+>title="Show forecast"
+>abstract="Selecting **[!UICONTROL Show forecast]** will automatically forecast the first metric column added to a time series Freeform table visualization."
+
+<!-- markdownlint-enable MD034 -->
+
 
 You can customize freeform table preferences for all new projects that you create in Analysis Workspace. For information about how to access these preferences, see [Update preferences](#update-preferences). 
 
 Some of these same preferences can also be customized for individual tables.
 
-Click the linked section titles for more information and context about the available preferences.
+Select the linked section titles for more information and context about the available preferences.
 
 | Section | Preference | Options |
 | --- | --- | --- |
@@ -109,13 +164,13 @@ Click the linked section titles for more information and context about the avail
 | | Percentage calculation | <ul><li>Column</li><li>Row</li></ul> |
 | | Column totals (Static rows only) |<ul><li>Display sum of rows: Shows the sum of the individual line items </li><li>Display grand total: Shows the de-duplicated sum of rows.</li></ul> |
 
-## Visualizations preferences
+### Visualizations preferences
 
 You can update visualization preferences for all new prjects that you create in Analysis Workspace. For information about how to access these preferences, see [Update preferences](#update-preferences). 
 
 Some of these same preferences can also be customized for individual visualizations. 
 
-Click the linked section titles for more information and context about the available preferences. 
+Select the linked section titles for more information and context about the available preferences. 
 
 | Section | Preference | Options |
 | --- | --- | --- |
@@ -126,6 +181,7 @@ Click the linked section titles for more information and context about the avail
 | | Display dual axis (when applicable) | Only applies if you have two metrics - you can have a y-axis on the left (for one metric) and on the right (for the other metric). This is helpful when plotted metrics are of very different magnitudes.  |
 | | Normalization (when applicable) | Forces metrics to equal proportions. This is helpful when plotted metrics are of very different magnitudes.  |
 | | Anchor Y-axis at zero | If all the values plotted on the chart are considerably above zero, the chart default will make the bottom of the y-axis NON-ZERO. If you check this box, the y-axis will be forced to zero (and it will re-draw the chart).  |
+| | Anchor anomalies to scale Y-axis | The y-axis will be scaled using anomaly values. | 
 | **[Line](/help/analysis-workspace/visualizations/line.md)** | | |
 | | Percentages  | Displays values in percentages for the Line visualizations. |
 | | Legend visible | Lets you hide the detailed legend text for the Line visualization. |
@@ -156,9 +212,9 @@ Click the linked section titles for more information and context about the avail
 | | Show comparison | Show comparison data. When hidden, both the comparison line chart and summary change objects will be hidden from view. |
 | | Number value options | In the [!UICONTROL **Key Metric Summary**] section <ul><li>Show percent change</li><li>Show raw difference</li>Raw difference between the total value of the metric in the primary date range and the secondary date range</ul> |
 | **[Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** | | |
-| | Container | Lets you switch between Visit and Visitor to analyze visitor pathing. The default is Visitor. These settings help you understand person engagement at the person level (across sessions), or constrain the analysis to a single session. <p>The following options are available:</p> <ul><li>Visit</li><li>Visitor</li></ul> |
+| | Container | Lets you switch between **[!UICONTROL Session]** and **[!UICONTROL Person]** to analyze person pathing. The default is **[!UICONTROL Person]**. These settings help you understand person engagement at the person level (across sessions), or constrain the analysis to a single session. <p>The following options are available:</p> <ul><li>Session</li><li>Person</li></ul> |
 | **[Flow](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** | | |
-| | Container | In the [!UICONTROL **Flow**] section <ul><li>Visit</li><li>Visitor</li></ul> |
+| | Container | In the [!UICONTROL **Flow**] section <ul><li>Session</li><li>Person</li></ul> |
 | | Wrap labels | Normally, the labels on the Flow elements are truncated to save screen real estate, but you can make the entire label visible by checking this box. Default = unchecked. |
 | | Include repeat instances | Flow visualizations are based on instances of a dimension. This setting gives you the option to include or exclude repeated instances, e.g. Page reloads. However, repeats cannot be removed from Flow visualizations that include multi-valued dimensions, such as listVars, listProps, s.product, merchandising eVars, etc. Default = unchecked. |
 | | Show tooltips | Determines whether tooltips containing node data are shown when hovering over individual nodes within a flow visualization. |
@@ -168,7 +224,7 @@ Click the linked section titles for more information and context about the avail
 | | 100% stacked | This setting on area stacked, bar stacked or horizontal bar stacked visualizations turns the chart into a "100% stacked" visualization. <p>For more infomration, see [Bar and bar stacked](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histogram](/help/analysis-workspace/visualizations/histogram.md)** | | |
 | | Number of buckets | Choose the number of data ranges (buckets) in the visualization. The maximum number of buckets is 50. <p>For more information, see [Histogram](/help/analysis-workspace/visualizations/histogram.md).</p> |
-| | Counting method | Choose from the following options: <ul><li>Hit</li><li>Visit</li><li>Visitor</li></ul> <p>For example, when used in conjunction with page views, you could choose page views per person, page views for visit, or page views per event. For Hit, "Occurrences" is used as the y-axis metric in a freeform table.</p> |
+| | Counting method | Choose from the following options: <ul><li>Hit</li><li>Session</li><li>Person</li></ul> <p>For example, when used in conjunction with page views, you could choose page views per person, page views for visit, or page views per event. For Hit, "Occurrences" is used as the y-axis metric in a freeform table.</p> |
 | **[Summary Change](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
 | | Value | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Percent change</li><li>Raw difference</li></ul>  |
 | | Percentages | Displays values in percentages for the Summary Change visualizations. |
@@ -195,21 +251,19 @@ You can restore all your user preferences to the system defaults. This does not 
 
 This action cannot be undone.
 
-1. In Customer Journey Analytics, select [!UICONTROL **Components**] **>** [!UICONTROL **Preferences**].
-
-   ![User preferences](assets/user-preferences.png)
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] **>** [!UICONTROL **Preferences**] from the top menu. Or select **[!UICONTROL Project]** > **[!UICONTROL User settings]** from the Workspace menu.
 
 1. In the upper-right, select **[!UICONTROL Restore defaults]**.
 
-1. When prompted, select **[!UICONTROL Restore defaults]**.
+1. Select **[!UICONTROL Restore defaults]** in **[!UICONTROL Restore system default settings]**, .
 
 ## [!UICONTROL Dark theme]
 
-If you prefer to have a dark background for your Adobe Analytics user interface, you can toggle to [!UICONTROL Dark theme].
+If you prefer to have a dark background for your Customer Journey Analytics user interface, you can toggle to [!UICONTROL Dark theme].
 
-1. Click the Experience Cloud user icon at the top right.
+1. Select the Experience Cloud user icon at the top right.
 
    ![dark-theme](assets/dark-theme.png)
 
-1. Move the **[!UICONTROL Dark theme]** toggle to the right.
+1. Enable **[!UICONTROL Dark theme]**..
 

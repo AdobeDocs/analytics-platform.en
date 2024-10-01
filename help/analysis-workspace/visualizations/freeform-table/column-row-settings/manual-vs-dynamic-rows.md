@@ -5,7 +5,7 @@ feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
 ---
-# Dynamic vs static dimension items in freeform tables
+# Dynamic and static dimension items in freeform tables
 
 In Freeform tables, the rows and columns can contain various component values in them. These values can be dynamic (change with time) or static (do not change with time), depending on the analysis that you want to build.
 

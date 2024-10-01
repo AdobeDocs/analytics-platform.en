@@ -8,19 +8,22 @@ exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
 
 Dimensions are a component type in Customer Journey Analytics that are used to analyze data. For example, you use dimensions when building reports in [Analysis Workspace](/help/analysis-workspace/home.md) or in [Report Builder](/help/report-builder/report-buider-overview.md).
 
-Customer Journey Analytics dimensions are a unlimited; values can be numeric, text, objects, lists, or mixtures of all. 
+Customer Journey Analytics dimensions are of unlimited type; values can be numeric, text, objects, lists, or mixtures of all. 
 
 A basic report in Customer Journey Analytics shows rows of dimensions (commonly string values), against a column of metrics (commonly numeric values).
 
-For example, if you combined the 'Page' dimension with the 'Visits' metric, you would get a ranked report showing your top-visited pages:
+For example, if you combined the Page dimension with the People metric, you would get a ranked report showing your top-visited pages by people:
 
-| `Page` | `Visits` |
-| --- | --- |
-| `Home page` | `800` |
-| `Product page` | `500` |
-| `Purchase page` | `100` |
+| Page | People |
+| --- | ---: |
+| Home page | 800 |
+| Product page | 500 |
+| Purchase page | 100 |
+
+{style="table-layout:fixed"}
 
 Each dimension represents a different part or facet of your site. You can combine one of more of these dimensions with one or more metrics to create a desired report.
+
 
 ## Create dimensions
 

@@ -1,13 +1,31 @@
 ---
-title: Create and publish audiences to Real-time Customer Profile
+title: Create and publish audiences to Real-Time Customer Profile
 description: Learn how to publish audiences from Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
 ---
-# Create and publish audiences
+# Create and publish audiences {#create-and-publish-audiences}
 
-This topic discusses how to create and publish audiences identified in Customer Journey Analytics to [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) in Adobe Experience Platform for customer targeting and personalization. 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_refreshfrequency"
+>title="Refresh frequency"
+>abstract="See how often an audience's membership will be reevaluated.<br/>One time audiences are evaluated only once."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_audiencelimit"
+>title="Audience limit"
+>abstract="Refreshing audiences are limited based on how often they refresh."
+
+<!-- markdownlint-enable MD034 -->
+
+This topic discusses how to create and publish audiences identified in Customer Journey Analytics to [Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) in Adobe Experience Platform for customer targeting and personalization. 
 
 Read this [overview](/help/components/audiences/audiences-overview.md) to familiarize yourself with the concept of Customer Journey Analytics audiences.
 
@@ -47,7 +65,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
 1. Interpret the data preview.
 
-   The audience preview appears in the right rail. It allows for a summarized analysis of the audience you have created.
+   The audience preview appears in the right panel. It allows for a summarized analysis of the audience you have created.
 
    ![Screenshot of the data preview showing a summarized analysis of the audience.](assets/data-preview.png)
 
@@ -89,7 +107,7 @@ At several points prior to, during, and after audience publishing, latencies can
 | Not shown | Adobe Analytics to Analytics source connector (A4T) | Up to 30 minutes |
 | 1 | Data ingestion into Data Lake (from Analytics source connector or other sources) | Up to 90 minutes |
 | 2 | Data ingestion from Experience Platform Data Lake into Customer Journey Analytics | Up to 90 minutes |
-| 3 | Audience publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | A few seconds |
+| 3 | Audience publishing to Real-Time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | A few seconds |
 | 4 | Refresh frequency for audiences |<ul><li>One-time refresh (latency of less than 5 minutes)</li><li>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate) |
 | 5 | Creating destination in Adobe Experience Platform: Activating the new segment | 1-2 hours |
 
@@ -97,7 +115,7 @@ At several points prior to, during, and after audience publishing, latencies can
 
 ## Use Customer Journey Analytics audiences in Experience Platform {#audiences-aep}
 
-Customer Journey Analytics takes all the namespace and ID combinations from your published audience and streams them into Real-time Customer Profile (RTCP). Customer Journey Analytics sends the audience to Experience Platform with the primary identity set, according to what was selected as the [!UICONTROL Person ID] when the connection was configured.
+Customer Journey Analytics takes all the namespace and ID combinations from your published audience and streams them into Real-Time Customer Profile (RTCP). Customer Journey Analytics sends the audience to Experience Platform with the primary identity set, according to what was selected as the [!UICONTROL Person ID] when the connection was configured.
 
 RTCP then examines each namespace/ID combination and looks for a profile that it may be part of. A profile is basically a cluster of linked namespaces, IDs and devices. If it finds a profile, it adds the namespace and ID to the other IDs in this profile as a segment membership attribute. For example, <user@adobe.com> can be targeted across all their devices and channels. If a profile is not found, a new one is created.
 
@@ -109,7 +127,7 @@ To view Customer Journey Analytics audiences in Platform:
 >
 >This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
 
-1. Expand [!UICONTROL **Customer**] in the left rail, then select [!UICONTROL **Audiences**]. <!-- is there a folder called "Customer Journey Analytics? -->
+1. Expand [!UICONTROL **Customer**] in the left panel, then select [!UICONTROL **Audiences**]. <!-- is there a folder called "Customer Journey Analytics? -->
 
 1. Select the [!UICONTROL **Browse**] tab.
 
