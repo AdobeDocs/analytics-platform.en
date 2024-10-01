@@ -10,7 +10,7 @@ You can stack and replace filters within the Calculated metric builder.
 
 ## Stack filters {#stack-filter}
 
-1. Begin building a metric, as described in [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+1. Begin building a metric, as described in [Build calculated metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
 1. In the Definition canvas, drop the new filter next to the existing one:
 

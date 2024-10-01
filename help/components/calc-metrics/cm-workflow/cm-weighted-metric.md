@@ -6,7 +6,7 @@ exl-id: 5e73ab52-627a-4064-bfb7-354c0ba1e4ee
 ---
 # Calculated metrics examples
 
-This article shows more advanced examples of defining calculated metrics.
+This article shows examples of how to define more advanced calculated metrics.
 
 ## Bounce rate
 
@@ -31,6 +31,8 @@ The definition of a bounce is subject for another discussion but for this exampl
 Alternatively, you can define a [bounce rate using derived fields](/help/data-views/derived-fields/derived-fields.md#bounces).
 
 Derived fields are part of a Data view which has the advantage that not every user can override or modify the definition of a Bounce rate metric. That advantage also introduced a limitation. Users that do not have access to a data view cannot use derived fields and have to resort to filters and calculated metrics to define a bounce rate.
+
+See for more background information on how to calculate bounces and bounce rate in Customer Journey Analytics, this [blog post](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446).
 
 +++
 

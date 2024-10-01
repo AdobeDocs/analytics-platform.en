@@ -5,7 +5,7 @@ feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
 ---
-# Filter builder {#filter-builder}
+# Build filters {#build-filters}
 
 <!-- markdownlint-disable MD034 -->
 

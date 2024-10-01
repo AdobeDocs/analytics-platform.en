@@ -5,7 +5,7 @@ feature: Filters
 exl-id: b13457dd-06e5-4316-af7e-edcf4ee46408
 role: User
 ---
-# Mark a filter as favorite
+# Mark filters as favorite
 
 You can mark a filter as a favorite. To mark filters as favorite helps you to organize your filters. All users can favor filters.
 

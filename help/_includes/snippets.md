@@ -122,13 +122,23 @@ Available time comparison options include the previous period, 13 weeks prior, 5
 |---|---|
 | ![Data views](/help/assets/filter-dataview.png){width="300"} | The **[!UICONTROL Data view]** section lets you filter on data views. <ul><li>You can ![Search](/help/assets/icons/Search.svg) *Search Data views* to search for data views you can use to filter.</li><li>You can select more than one data view. The data views available depend on selections made in other sections in the filter panel.</li><li>The numbers indicate:<ul><li>**(2)**: The number of selected data views (if one or more data views are selected).</li><li>**3︎⃣**: The number of data views available for the items resulting from the current filter.</li><li>4︎⃣: The number of items associated with the specific data view.</li></ul></li></ul> |
 
+## Enabled status filter section {#enabledstatusfiltersection}
+
+| Enabled status | Description |
+|---|---|
+| ![Enabled status](/help/assets/filter-enabledstatus.png){width="300"} | The **[!UICONTROL Enabled status]** section lets you filter on enabled status. <ul><li>You can select more than one status.</li><li>The numbers indicate:<ul><li>**(2)**: The number of selected statuses (if one or more statuses are selected).</li><li>**2︎⃣**: The number of statuses available for the items resulting from the current filter.</li><li>1︎⃣: The number of items associated with the specific status.</li></ul></li></ul> |
+
+## Type filter section {#typefiltersection}
+
+| Type | Description |
+|---|---|
+| ![Type](/help/assets/filter-type.png){width="300"} | The **[!UICONTROL Type]** section lets you filter on type. <ul><li>You can select more than one type.</li><li>The numbers indicate:<ul><li>**(2)**: The number of selected types (if one or more types are selected).</li><li>**1︎⃣**: The number of types available for the items resulting from the current filter.</li><li>3︎⃣: The number of items associated with the specific type.</li></ul></li></ul> |
 
 ## Owner filter section {#ownerfiltersection}
 
 | Owner | Description |
 |---|---|
 | ![Owners](/help/assets/filter-owners.png){width="300"} | The **[!UICONTROL Owner]** section lets you filter on owners. <ul><li>You can ![Search](/help/assets/icons/Search.svg) *Search Owners* to search for owners you can use to filter.</li><li>You can select more than one owner. The owners available depend on selections made in other sections in the filter panel.</li><li>The numbers indicate:<ul><li>**(2)**: The number of selected owners (if one or more owners are selected).</li><li>**3︎⃣**: The number of owners available for the items resulting from the current filter.</li><li>4︎⃣: The number of items associated with the specific owner.</li></ul></li></ul> |
-
 
 ## Other filters filter section {#otherfiltersfiltersection} 
 
@@ -180,29 +190,36 @@ A lookback window is the amount of time a conversion should look back to include
 Consider the following example:
 
 1. On September 15, a person arrives to your site through a paid search advertisement, then leaves.
-2. On September 18, the person arrives to your site again through a social media link they got from a friend. They add several items to their cart, but do not purchase anything.
-3. On September 24, your marketing team sends them an email with a coupon for some of the items in their cart. They apply the coupon, but visit several other sites to see if any other coupons are available. They find another through a display ad, then ultimately make a purchase for $50.
+1. On September 18, the person arrives to your site again through a social media link they got from a friend. They add several items to their cart, but do not purchase anything.
+1. On September 24, your marketing team sends them an email with a coupon for some of the items in their cart. They apply the coupon, but visit several other sites to see if any other coupons are available. They find another through a display ad, then ultimately make a purchase for $50.
 
-Depending on your lookback window and attribution model, channels receive different credit. The following are some notable examples:
+Depending on your lookback window and attribution model, channels receive different credit. The following are some examples:
 
 * Using **first touch** and a **session lookback window**, attribution looks at only the third visit. Between email and display, email was first, so email gets 100% credit for the $50 purchase.
+
 * Using **first touch** and a **person lookback window**, attribution looks at all three visits. Paid search was first, so it gets 100% credit for the $50 purchase.
+
 * Using **linear** and a **session lookback window**, credit is divided between email and display. Both of these channels each get $25 credit.
-* Using **linear** and a **person lookback window**, credit is divided between paid search, social, email, and display. Each channel gets $12.50 credit for this purchase.
+Using **linear** and a **person lookback window**, credit is divided between paid search, social, email, and display. Each channel gets $12.50 credit for this purchase.
+
 * Using **J-shaped** and a **person lookback window**, credit is divided between paid search, social, email, and display.
+
   * 60% credit is given to display, for $30.
   * 20% credit is given to paid search, for $10.
   * The remaining 20% is divided between social and email, giving $5 to each.
+
 * Using **Time Decay** and a **person lookback window**, credit is divided between paid search, social, email, and display. Using the default 7-day half-life:
+
   * Gap of zero days between display touch point and conversion. `2^(-0/7) = 1`
   * Gap of zero days between email touch point and conversion. `2^(-0/7) = 1`
   * Gap of six days between social touch point and conversion. `2^(-6/7) = 0.552`
   * Gap of nine days between paid search touch point and conversion. `2^(-9/7) = 0.41`
   * Normalizing these values results in the following:
-    * Display: 33.8%, getting $16.88
-    * Email: 33.8% getting $16.88
-    * Social: 18.6%, getting $9.32
-    * Paid Search: 13.8%, getting $6.92
+  
+      * Display: 33.8%, getting $16.88
+      * Email: 33.8% getting $16.88
+      * Social: 18.6%, getting $9.32
+      * Paid Search: 13.8%, getting $6.92
 
 Conversion events that typically have whole numbers are divided if credit belongs to more than one channel. For example, if two channels contribute to an order using a Linear attribution model, both channels get 0.5 of that order. These partial metrics are summed across all people then rounded to the nearest integer for reporting.
 

@@ -1,5 +1,5 @@
 ---
-title: Filters manager
+title: Manage filters
 description: Learn how to manage filters in Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
@@ -50,7 +50,7 @@ You can action on filters using the action bar ➋. The action bar contains the 
 
 | Action | Description |
 |---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another filters, using the [Filter builder](filter-builder.md). |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another filter, using the [Filter builder](filter-builder.md). |
 | ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search by title*] | When no filter is selected in the list, search for filters using this search field. |
 | ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tag the selected filters. In the **[!UICONTROL Tag Filter]** dialog, select or de-select the tags for the selected filters. Select **[!UICONTROL Save]** to save the tags for the selected filters. See [Tag filters](/help/components/filters/filters-tag.md) for more information.|
 | ![Share](/help/assets/icons/Share.svg) **[!UICONTROL Share]** | Share the selected filters. In the **[!UICONTROL Share Filter]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected filters. See [Share filters](filters-share.md) for more information. |

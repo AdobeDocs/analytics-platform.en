@@ -4,11 +4,9 @@ title: Alerts feature comparison Customer Journey Analytics and Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
 ---
-# Alerts feature comparison: Customer Journey Analytics and Adobe Analytics
+# Alerts feature comparison
 
-The process of using alerts in Customer Journey Analytics is nearly identical to using alerts in Adobe Analytics. However, there are important differences.
-
-The following sections describe the key differences.
+The process of using alerts in Customer Journey Analytics is nearly identical to using alerts in Adobe Analytics. However, there are important differences. The following sections describe the key differences.
 
 ## Hourly alerts are not available in Customer Journey Analytics
 

@@ -1,6 +1,6 @@
 ---
-description: Learn about the steps to take for creating calculated metrics.
-title: Calculated metrics workflow
+description: Learn how to create calculated metrics.
+title: Create calculated metrics
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
 ---

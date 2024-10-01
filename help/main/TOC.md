@@ -252,7 +252,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Filters {#cja-filters}
     + [Filters overview](../components/filters/filters-overview.md)
     + [Create filters](../components/filters/create-filters.md)
-    + [Filter builder](../components/filters/filter-builder.md)
+    + [Build filters](../components/filters/filter-builder.md)
     + [Quick filters](../components/filters/quick-filters.md)
     + [Sequential filters](../components/filters/seg-sequential-build.md)
     + [Share filters](../components/filters/filters-share.md)
@@ -267,7 +267,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Calculated metrics overview](../components/calc-metrics/calc-metr-overview.md)
     + Calculated metrics workflow {#cm-workflow}
       + [Create calculated metrics](../components/calc-metrics/cm-workflow/cm-workflow.md)
-      + [Build metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+      + [Build calculated metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
       + [Find metrics](../components/calc-metrics/cm-workflow/cm-finding.md)
       + [Metric type and attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
       + [Build a participation metric](../components/calc-metrics/cm-workflow/participation-metric.md)
@@ -287,15 +287,15 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Advanced functions](../components/calc-metrics/cm-adv-functions.md)
   + Date ranges {#cja-date-ranges}
     + [Overview](../components/date-ranges/overview.md)
-    + [Create a date range](../components/date-ranges/create.md)
+    + [Create date ranges](../components/date-ranges/create.md)
     + [Manage date ranges](../components/date-ranges/manage.md)
     + [Date comparison](../components/date-ranges/time-comparison.md)
     + [Examples](../components/date-ranges/custom-date-ranges.md)
   + Alerts {#alerts}
     + [Overview](/help/components/c-intelligent-alerts/intelligent-alerts.md) 
-    + [Differences in Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
-    + [Create or edit](/help/components/c-intelligent-alerts/alert-builder.md)
-    + [Manage](/help/components/c-intelligent-alerts/alert-manager.md)
+    + [Create alerts](/help/components/c-intelligent-alerts/alert-builder.md)
+    + [Manage alerts](/help/components/c-intelligent-alerts/alert-manager.md)
+    + [Feature comparison](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
     + [Use cases](/help/components/c-intelligent-alerts/alerts-use-cases.md)
   + Exports {#exports}
     + [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md)

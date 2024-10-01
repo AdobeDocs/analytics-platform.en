@@ -24,7 +24,7 @@ A typical workflow for calculated metrics consists of these tasks
 | [Apply](/help/components/use-components-in-workspace.md) | Apply calculated metrics directly within your Workspace projects. |
 | [Manage](/help/components/calc-metrics/cm-workflow/cm-manager.md) | Manage calculated metrics. You can [tag](/help/components/calc-metrics/cm-workflow/cm-tagging.md), [approve](/help/components/calc-metrics/cm-workflow/cm-approving.md), [unapprove](/help/components/calc-metrics/cm-workflow/cm-approving.md), [filter](/help/components/calc-metrics/cm-workflow/cm-filter.md), [favor](/help/components/calc-metrics/cm-workflow/cm-favorite.md) or [unfavor](/help/components/calc-metrics/cm-workflow/cm-favorite.md), [share](/help/components/calc-metrics/cm-workflow/cm-sharing.md), or [copy](/help/components/calc-metrics/cm-workflow/cm-copy.md) one or more calculated metrics. |
 
-See [Create calculated metrics](/help/components/filters/create-filters.md) for the various options available to create calculated metrics. You build, modify, and save the definition of the calculated metrics in the [Calculated metrics builder](cm-workflow/cm-build-metrics.md).
+See [Create calculated metrics](/help/components/calc-metrics/cm-workflow/cm-workflow.md) for the various options available to create calculated metrics. You build, modify, and save the definition of the calculated metrics in the [Calculated metrics builder](cm-workflow/cm-build-metrics.md).
 
 You use calculated metric directly in Analysis Workspace. See [Use components in Analysis Workspace](/help/components/use-components-in-workspace.md)
 
