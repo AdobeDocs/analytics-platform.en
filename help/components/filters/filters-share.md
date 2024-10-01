@@ -15,7 +15,7 @@ In the [Filter manager](manage-filters.md), you can share filters. Depending on 
 To share one or more filters:
 
 1. In the [Filter manager](manage-filters.md), select one or more of the filters you want to share.
-1. From the action bar, select ![Share](/help/assets/icons/ShareLight.svg) **[!UICONTROL Share]**.
+1. From the action bar, select ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]**.
 1. In the **[!UICONTROL Share Filters]** dialog:
    
    ![Share Filters dialog](assets/share-filter-dialog.png)
