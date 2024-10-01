@@ -22,7 +22,7 @@ These release notes cover the release period of October 2, 2024 to October 22, 2
 
 ## Fixes in Customer Journey Analytics
 
-AN-357100; AN-358193; AN-358364
+AN-354085; AN-355870; AN-356037; AN-356881; AN-357100; AN-358193; AN-358364; AN-358911; AN-359000; AN-359160
 
 ## Important notices for Customer Journey Analytics Administrators
 
