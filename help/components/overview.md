@@ -69,7 +69,7 @@ You can manage components (individually or by selecting more than one).
    | ![Star](/help/assets/icons/Star.svg) [!UICONTROL **Favorite**] | Add the component to your list of favorites. Like tags, you can search by Favorites in the left panel and filter by them in the component managers. |
    | ![StarOutline](/help/assets/icons/StarOutline.svg) **[!UICONTROL Un-favorite]** | Remove the component from your list of favorites. |
    | ![Checkmark](/help/assets/icons/Checkmark.svg) [!UICONTROL **Approve**] | Mark components as Approved to signal to your users that the component is organization-approved. Like tags, you can search and filter by Approved in the left panel. A ![Checkmark](/help/assets/icons/Checkmark.svg) identifies approved components. |
-   | ![Share](/help/assets/icons/Share.svg) [!UICONTROL **Share**] | Share components to users in your organization. This option is available for custom components only, such as filters or calculated metrics. |
+   | ![Share](/help/assets/icons/ShareLight.svg) [!UICONTROL **Share**] | Share components to users in your organization. This option is available for custom components only, such as filters or calculated metrics. |
    | ![Delete](/help/assets/icons/Delete.svg) [!UICONTROL **Delete**] | Delete components that you no longer need. This option is available for custom components only, such as filters or calculated metrics. |
 
 Custom components can also be managed through their respective Component managers. For example, see [Manage filters](/help/components/filters/manage-filters.md).
