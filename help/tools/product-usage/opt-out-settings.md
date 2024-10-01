@@ -6,7 +6,9 @@ hidefromtoc: yes
 ---
 # Product usage opt-out settings {#product-usage-opt-out-settings}
 
-The _Opt-out settings_ page allows you to exclude or re-include users within your organization from product usage tracking.
+{{release-limited-testing}}
+
+The _Opt-out settings_ page allows you to exclude or re-include users within your organization from product usage tracking. It is only visible to product admins.
 
 **Customer Journey Analytics** > **[!UICONTROL Tools]** > **[!UICONTROL Product Usage]** > **[!UICONTROL Opt-out settings]**
 
