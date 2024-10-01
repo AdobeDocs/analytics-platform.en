@@ -29,7 +29,7 @@ Key features of the Journey canvas visualization include:
 
 ## Potential insights
 
-Following are a few examples of the types of insights Journey canvas can help provide. You can choose whether these insights are based off all people in the data view or all people who started the journey.
+Following are a few examples of the types of insights Journey canvas can help provide. You can choose whether these insights are based on all people in the data view, all people who started the journey, or all people from the previous node of the journey.
 
 **Fallthrough** 
 
@@ -41,7 +41,7 @@ Following are a few examples of the types of insights Journey canvas can help pr
 
 **Fallout**
 
-* The points (nodes) of the journey where people most commonly fell out of the journey
+* The points (nodes) of the journey where people most commonly fell out of the journey (never arrived at any of the immediate next nodes)
 
 **Other**
 
