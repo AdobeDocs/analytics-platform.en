@@ -30,7 +30,7 @@ The annotations list ➊ displays all the annotations that you own, the annotati
 | Column | Description |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg)  | Select to favor ![Star](/help/assets/icons/Star.svg) or un-favor ![StarOutline](/help/assets/icons/StarOutline.svg) an annotation. |
-| **[!UICONTROL Title and description]** | Provided in the Annotations Builder. To edit the title and description, select the title link - opens the [Annotations builder](/help/components/annotations/create-annotations.md#annotation-builder). A shared annotation is indicated with ![Share](/help/assets/icons/ShareLight.svg).   |
+| **[!UICONTROL Title and description]** | Provided in the Annotations Builder. To edit the title and description, select the title link - opens the [Annotations builder](/help/components/annotations/create-annotations.md#annotation-builder). A shared annotation is indicated with ![Share](/help/assets/icons/ShareAlt.svg).   |
 | **[!UICONTROL Data view]** | The data views that this annotation applies to.  | 
 | **[!UICONTROL Owner]** | The owner of the annotation. As a user, you only see the annotations that you own or the annotations that are shared with you. |
 | **[!UICONTROL Applied date range]** | The date or date range that this annotation applies to. |
@@ -51,7 +51,7 @@ You can action on annotations using the action bar ➋. The action bar contains 
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another annotation, using the [Annotation builder](create-annotations.md#annotation-builder). |
 | ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search by title*] | When no annotation is selected in the list, search for annotations using this search field. |
 | ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tag the selected annotations. In the **[!UICONTROL Tag Component]** dialog, select or de-select the tags for the selected annotations. Select **[!UICONTROL Save]** to save the tags for the selected annotations. |
-| ![Share](/help/assets/icons/ShareLight.svg) **[!UICONTROL Share]** | Share the selected annotations. In the **[!UICONTROL Share Component]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected annotations. See [Share annotations](#share-annotations) for more details. |
+| ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Share the selected annotations. In the **[!UICONTROL Share Component]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected annotations. See [Share annotations](#share-annotations) for more details. |
 | ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Delete the selected annotations. You are prompted for a confirmation. |
 | ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Rename a single selected annotation. When selected, you can rename the annotation inline. |
 | ![Copy](/help/assets/icons/Copy.svg)  **[!UICONTROL Copy]** | Copy the selected annotations. New annotations are created with the same name and suffix (Copy) | 

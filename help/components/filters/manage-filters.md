@@ -31,7 +31,7 @@ The filters list ➊ displays all the filters that you own, the filters that hav
 | Column | Description |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg)  | Select to favor ![Star](/help/assets/icons/Star.svg) or un-favor ![StarOutline](/help/assets/icons/StarOutline.svg) a filter. See [Mark filter as favorite](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL Title and description]** | To edit the filter, select the title link, which opens the [Filters builder](filter-builder.md). A shared filter is indicated with ![Share](/help/assets/icons/ShareLight.svg). |
+| **[!UICONTROL Title and description]** | To edit the filter, select the title link, which opens the [Filters builder](filter-builder.md). A shared filter is indicated with ![Share](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Data view]** | The data views that this filter applies to.  | 
 | **[!UICONTROL Owner]** | The owner of the filter. As a user, you only see the filters that you own or the annotations that are shared with you. |
 | **[!UICONTROL Tags]** | The tags for this filter. |
@@ -53,7 +53,7 @@ You can action on filters using the action bar ➋. The action bar contains the 
 | ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another filter, using the [Filter builder](filter-builder.md). |
 | ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search by title*] | When no filter is selected in the list, search for filters using this search field. |
 | ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tag the selected filters. In the **[!UICONTROL Tag Filter]** dialog, select or de-select the tags for the selected filters. Select **[!UICONTROL Save]** to save the tags for the selected filters. See [Tag filters](/help/components/filters/filters-tag.md) for more information.|
-| ![Share](/help/assets/icons/ShareLight.svg) **[!UICONTROL Share]** | Share the selected filters. In the **[!UICONTROL Share Filter]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected filters. See [Share filters](filters-share.md) for more information. |
+| ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Share the selected filters. In the **[!UICONTROL Share Filter]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected filters. See [Share filters](filters-share.md) for more information. |
 | ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Delete the selected filters. You are prompted for a confirmation. |
 | ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Rename a single selected filter. When selected, you can rename the filter inline. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Approve the selected filters. See [Approve filters](filters-approve.md) for more information. | 

@@ -46,7 +46,7 @@ The project list ➋ displays all the projects that you own and that have been s
 | --- | --- | 
 | ![SelectBox](/help/assets/icons/SelectBox.svg) | When one or more projects are selected, a blue action bar appears at the bottom of the Project interface. See [Actions](#actions) for more details. | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg)  | Select to favor ![Star](/help/assets/icons/Star.svg) or un-favor ![StarOutline](/help/assets/icons/StarOutline.svg) a project. |
-| **[!UICONTROL Title and description]** | To edit the project, select the title link, which opens the [Workspace project](/help/analysis-workspace/home.md). Projects shared with you are indicated with ![Share](/help/assets/icons/ShareLight.svg). Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup menu with more details on the project. Select ![More](/help/assets/icons/More.svg) to open a context menu with actions. See [Actions](#actions) for more details. |
+| **[!UICONTROL Title and description]** | To edit the project, select the title link, which opens the [Workspace project](/help/analysis-workspace/home.md). Projects shared with you are indicated with ![Share](/help/assets/icons/ShareAlt.svg). Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup menu with more details on the project. Select ![More](/help/assets/icons/More.svg) to open a context menu with actions. See [Actions](#actions) for more details. |
 | **[!UICONTROL Type]** | A Workspace project, a ![FolderUser](/help/assets/icons/FolderUser.svg) folder, or a [Mobile Scorecard](https://experienceleague.adobe.com/en/docs/analytics/analyze/mobapp/home). |
 |  **[!UICONTROL Tags]**  | The tags applied to the project. |
 | Scheduled | Whether a project is scheduled o be emailed to recipients. Options are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** or ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]**. See [Send project data to others](/help/analysis-workspace/export/t-schedule-report.md). |
@@ -76,7 +76,7 @@ You can take actions on one or more projects using the context menu ![More](/hel
 |---|---|
 | ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[!UICONTROL *x* selected]** | Unselect your selected projects and folders and remove the blue action bar. |
 | ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Delete one or more projects or folders. You are prompted for a confirmation. |
-| ![Share](/help/assets/icons/ShareLight.svg) **[!UICONTROL Share]** | Share a project. See [Share a project](/help/analysis-workspace/curate-share/share-projects.md) for more information. |
+| ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Share a project. See [Share a project](/help/analysis-workspace/curate-share/share-projects.md) for more information. |
 | ![Edit](/help/assets/icons/Edit.svg) Rename | Rename a project. Opens a **[!UICONTROL Rename: *project name dialog*]**. Enter a new name and select **[!UICONTROL Save]**. |
 | ![Copy](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** | Copy one or more projects. Project do get the same name and suffix `(Copy)`. |
 | ![PinOnff](/help/assets/icons/PinOff.svg) **[!UICONTROL Pin]** or **[!UICONTROL Unpin]** | Pin or unpin one or more projects or folders. Pinned projects and folders appear at the top of the list and ignore the sorting order you specify. |

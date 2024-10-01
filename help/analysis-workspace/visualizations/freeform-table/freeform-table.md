@@ -5,7 +5,17 @@ feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
 ---
-# Freeform table overview
+# Freeform table overview {#freeform-table-overview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_button"
+>title="Freeform table"
+>abstract="Create an empty freeform table visualization that you can build up using dimensions, segments, metrics, and date ranges. You can use the freeform table as the basis for other visualizations."
+
+<!-- markdownlint-enable MD034 -->
+
 
 In Analysis Workspace, a ![Table](/help/assets/icons/Table.svg) **[!UICONTROL Freeform table]** visualization is the foundation for interactive data analysis. You can drag and drop a combination of [components](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components) into rows and columns to create a custom table for your analysis. As each component is dropped, the table updates immediately so you can quickly analyze and dig deeper.
 
