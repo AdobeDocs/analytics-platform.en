@@ -469,6 +469,14 @@ You can drag a dimension from the left rail onto the node on the canvas where yo
 
 For more information, see [Add nodes](#add-nodes).
 
+#### Remove a breakdown
+
+To remove a breakdown that has been applied:
+
+1. Right-click the node that has the breakdown applied.
+
+1. Select **[!UICONTROL Remove breakdown]**.
+
 ### Create an audience
 
 The option to create an audience is available for the following objects on the canvas:

@@ -39,6 +39,20 @@ The following configurations can result in nodes that show percentages that exce
 
   For example, if Revenue is selected as the primary metric, and no revenue is being realized on the primary metric, then on any node where revenue is being realized will show as exceeding 100%. 
 
+## Nodes that have a higher percentage or value than previous nodes 
+
+## Nodes that have a higher percentage or value than preceding nodes 
+
+## Nodes that come later in the journey have a higher percentage or value than those that come earlier
+
+## Nodes with a higher percentage or value than nodes that precede them in the journey
+
+## Nodes with a higher percentage or value than previous nodes 
+
+## Nodes 
+
+## A higher percentage or value in subsequent nodes
+
 
 ## A journey that is not funnel-shaped
 
