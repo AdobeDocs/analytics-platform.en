@@ -121,12 +121,6 @@ RTCP then examines each namespace/ID combination and looks for a profile that it
 
 To view Customer Journey Analytics audiences in Platform:
 
->[!AVAILABILITY]
->
->The functionality described in the following steps is in the Limited Testing phase of release and might not be available yet in your environment. If these steps don't match what you see in your environment, use the following steps instead: Go to [!UICONTROL **Segments**] > [!UICONTROL **Create segments**] > [!UICONTROL **Audiences**] tab > [!UICONTROL **CJA Audiences**]. 
->
->This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
-
 1. Expand [!UICONTROL **Customer**] in the left panel, then select [!UICONTROL **Audiences**]. <!-- is there a folder called "Customer Journey Analytics? -->
 
 1. Select the [!UICONTROL **Browse**] tab.
