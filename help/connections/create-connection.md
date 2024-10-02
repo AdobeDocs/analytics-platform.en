@@ -6,9 +6,65 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 ---
-# Create or edit a connection
+# Create or edit a connection {#create-or-edit-a-connection}
 
- The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with an assistive workflow. It provides detailed dataset selection, configuration, and review experience. And allows you to specify critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more, to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_recordsadded"
+>title="Records added"
+>abstract="The number of records (rows) added to a Connection during the selected time interval for the selected datasets."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_recordsskipped"
+>title="Records skipped"
+>abstract="The number of records (rows) skipped during data transfer for a Connection during the selected time interval for the selected datasets."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_recordsdeleted"
+>title="Records deleted"
+>abstract="The number of records (rows) removed from a Connection during the selected time interval for the selected datasets"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_lastadded"
+>title="Last added"
+>abstract="The timestamp of the latest batch from any dataset transferred to a Connection."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_enablerollingdatawindow"
+>title="Enable rolling data window"
+>abstract="Define data retention as a rolling window in months at a connection level."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_averagenumberofdailyuses"
+>title="Average number of daily uses"
+>abstract="Select a range for the number of expected daily events for the entire connection."
+
+<!-- markdownlint-enable MD034 -->
+
+
+
+The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with an assistive workflow. It provides detailed dataset selection, configuration, and review experience. And allows you to specify critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more, to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
 
 * You can enable a rolling data retention window when you create the connection.
 * You can add to and remove datasets from a connection. (Removing a dataset removes it from the connection and impacts any associated data views and underlying Analysis Workspace projects.)
@@ -16,7 +72,11 @@ role: Admin
 * You can edit datasets, for example to request another backfill.
 * You can import existing data per dataset.
 
++++ Video to illustrate the create and edit a connection experience
+
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+
++++
 
 ## Prerequisites
 
@@ -64,6 +124,42 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
     {style="table-layout:auto"}
 
 ## Add and configure datasets {#add-dataset}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_matchingkey"
+>title="Matching key"
+>abstract="Select a field to join on in one of the event datasets. If this list is empty you probably haven't added or configured an event dataset."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_importnewdata"
+>title="Import new data"
+>abstract="Any new batches that get added in the Experience Platform dataset will automatically be added in this connection and made available for analysis."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_datasetbackfill"
+>title="Dataset backfill"
+>abstract="This option will backfill the existing (historical) data from Experience Platform for this dataset in the connection."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_transformdataset"
+>title="Transform dataset"
+>abstract="This option will transform the dataset so it can be used for person-based lookups in B2B scenarios. Once turned on, the transformation of the dataset is irreversible."
+
+<!-- markdownlint-enable MD034 -->
 
 The new workflow lets you add an Experience Platform dataset when you create a connection. 
 

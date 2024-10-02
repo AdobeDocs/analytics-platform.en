@@ -20,7 +20,7 @@ Suppose your company wants to bring data from two different report suites into A
 | eVar1 = Search term | eVar1 = Business unit |
 | eVar2 = Customer category | eVar2 = Search term |
 
-For the sake of simplicity, let's say these are the only defined eVars for both report suites.
+For the sake of simplicity, assume these are the only defined eVars for both report suites.
 
 Further, suppose you perform the following actions:
 

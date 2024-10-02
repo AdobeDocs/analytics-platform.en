@@ -7,7 +7,18 @@ feature: Data Views
 role: Admin
 ---
 
-# [!UICONTROL Persistence] component settings
+# [!UICONTROL Persistence] component settings {#persistence-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_persistence"
+>title="Persistence"
+>abstract="Configure the default allocation model applied to a dimension. Allocation applies before filters in reporting."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 [!UICONTROL Persistence] is the ability for a given dimension value to relate to a metric beyond the event it is set on. It uses a combination of allocation and expiration.
 

@@ -1,16 +1,16 @@
 ---
-title: Filters Overview
+title: Filters overview
 description: Understand what filters are used for and how to create a simple filter.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
 ---
 
-# Filters overview {#overview}
+# Filters overview
 
-Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of persons based on characteristics or  interactions. Filters are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
+Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of persons, sessions or events based on characteristics or interactions. Filters are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
 
-Filters can be based on 
+Filters can be based on: 
 
 - attributes (browser type, device, number of visits, country, gender), 
 - interactions (campaigns, keyword search, search engine), 
@@ -18,36 +18,63 @@ Filters can be based on
 - custom variables (form field, defined categories, customer ID), 
 - and other criteria.
 
-You can build and save filters in the Filter Builder, or generate filters from a Fallout visualization (in Workspace). In addition, filters can be used together as stacked filters. 
+See [Create filters](/help/components/filters/create-filters.md) for the various options available to create filters. You then build, modify, and save the definition of a filter in the [Filter builder](filter-builder.md). Alternatively, you can create quick filters using the [Quick filter bulder](quick-filters.md). And you can also generate filters from visualizations in Workspace, for example using the [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu) visualization. 
 
-Filtering includes the [Filter Builder](/help/components/filters/filter-builder.md) to construct filters and run a pre-test, and the [Filters manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
+You use the [Filters manager](manage-filters.md) to manage filters.
 
-The maximum number of filters you can create per IMS organization is 50,000.
+## Plan filters
 
-## Filter types {#types}
+Especially, as an administrator, the proper planning of filters improves the chances that the filters are used. Consider the following when planning filters:
 
-For information about the available types of filters available and how to create them, see [Create filters](/help/components/filters/create-filters.md). 
+- **Audience**: Who will use your filters? Ensure you provide a good filter description so the audience understands:
+  - What is this filter useful for?
 
-## Sequential filters {#sequential}
+  - When should I use this filter? 
 
-Sequential filters let you identify persons based on navigation (page views across your site, interactions with scenes in your mobile app, or using a menu on a set-top box). Sequential filters provide a filter of defined actions and interactions and help you identify what a person likes and what a person avoids. When building sequential filters, the THEN operator is used to define and order person navigation.
+- **Scope**: Which [Filter container](#filter-containers) best represents the data you are after? Use the smallest container possible.
+
+- **Components**: Decide which components to include in the filter definition, and against which values the conditions should validate.
+
+- **Process**: Consider an approval process for your filter. There is no approval workflow in Customer Journey Analytics but you can still organize a process to determine whether you approve a filter or not. 
+
+- **Modularity**: Define filters with modularity in mind. So, the users of your filters can easily [stack filters](filter-builder.md#stack-filters) to create powerful new filters.
+
+
+## Filter types
+
+You can create three types of filters:
+
+### Quick filters
+
+Quick filters allow you to explore data easily within a given Workspace project, without the need of creating a filter in the [Filter Builder](/help/components/filters/create-filters.md). You define your filter within the Workspace interface directly. See [Quick filters](quick-filters.md) for more information.
+
+### Regular filters
+
+Regular filters let you identify data (persons, sessions, events) based on one or more conditions. If more than one conditions, you use logical operators like And and Or to define the filter further. You can use containers to group conditions and build more complex filters. See [Filter builder](filter-builder.md) for more information.
+
+### Sequential filters
 
 >[!IMPORTANT]
 >
 >You must have the **Select** package to create cross-channel sequential filters. Contact your administrator if you're unsure what Customer Journey Analytics package you have. 
 
-Here is an example:
+Sequential filters let you identify data (persons, sessions, events) based on navigation (page views across your site, interactions with scenes in your mobile app, or using a menu on a set-top box). Sequential filters help you identify, for example, what a person likes and what a person avoids. You use the Then logical operator to define a sequential filter. See [Sequential filters](seg-sequential-build.md) for more information.
+
+
+<!--
+An example of a complex sequential filter if you want to find the persons that 
 
 | Session One | Session Two | Session Three |
 | --- | --- | --- |
-| The person went to the main landing page A, excluded the campaign page B, and then viewed the Product page C.| The person again went to the main landing page A, excluded the campaign page B, and went again to the Product page C, and then to a new page D. | The person entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product page G. |
+| The person went to the main landing page A, excluded the campaign page B, and then viewed the Product page C.| The person again went to the main landing page A, excluded the campaign page B, and went again to the Product page C, and then to a new page D. | The person entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product on page G. |
+-->
 
 ## Filter containers {#containers}
 
-Filters are based on a Person-, Session-, and Event-level hierarchy using a nested container model. The nested containers allow you to define person attributes and actions based on rules between and within the containers. 
+Filters are based on a Person-, Session-, and Event-level hierarchy using a nested container model. The nested containers allow you to define conditions between and within the containers. 
 
 
-<table style="table-layout: fixed; border: none;">
+<table style="table-layout: fixed; border: none;" width="100%">
 
 <tr>
 <td style="background-color: #E5E4E2;" colspan="3" width="200" height="100"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg"/> Person</td>
@@ -66,48 +93,89 @@ Filters are based on a Person-, Session-, and Event-level hierarchy using a nest
 </table>
 
 >[!NOTE]
->The Person container was formerly known as the Visitor container. The Session container was called the Visit container, and the Event container used to be the Hit container.
+>
+>For Adobe Analytics users:
+> 
+> - The **Person** container is known in Adobe Analytics as the **Visitor** container. 
+> - The **Session** container is known in Adobe Analytics as the **Visit** container. 
+> - The **Event** container is known in Adobe Analytics as the **Hit** container.
+>
 
-A Filter sets conditions to filter a person based on the person's attributes or interactions with your site, mobile app, or other device type of which you have collected data from. To set conditions in a filter, you set rules to filter persons based on person characteristics and/or navigation traits. To further breakdown person data, you can filter based on specific visits and/or page view hits, screen taps, menu choices on a set-top box for each person. But also filter on attributes that you have ingested from a CRM or loyalty system. The Filter Builder provides a simple architecture to build these subsets and apply rules as nested, hierarchical Person, Session, or Event containers.
+A filter sets conditions to filter persons, sessions or events based on conditions. For example, conditions to filter persons based on person characteristics and navigation traits. To further breakdown the data, you can filter on specific sessions, page view events, screen taps, menu choices on a set-top box, and more. But also filter on attributes that you have ingested from a CRM or loyalty system. The [Filter builder](/help/components/filters/filter-builder.md) provides a simple interface to build these subsets and apply conditions in nested, hierarchical Person, Session, or Event containers.
 
-The container architecture employed in the Filter Builder defines Person as the outermost container. The container contains overarching data specific for the person across visits and page views, mobile application screens, or menu screens on a set-top box. A nested Session container lets you set rules to break down the person's data based on sessions, and a nested Event container lets you break down person information based on individual interactions. Each container lets you report across a person's history, interactions broken down by sessions, or break down individual experience events. 
+The container architecture employed in the [Filter builder](/help/components/filters/filter-builder.md) defines Person as the outermost container. The container contains overarching data specific for the person across sessions and events like page views, mobile application screens, or menu screens on a set-top box. A nested Session container lets you set rules to break down the person's data based on sessions. A nested Event container lets you break down person information based on individual interactions. Each container lets you report across a person's history, interactions broken down by sessions, or break down individual events. 
 
-### Person container {#person}
+### Person container
 
-The Person container includes every visit and page view, mobile app screen, set-top box, or console-game interaction for persons within a specified time frame. Basically, every experience event that is part of the  datasets that you have defined within your Customer Journey Analytics connection. A filter at the Person level returns the page views, mobile app, or set-top box screens that meet the condition. Plus all other interaction by that same person across online and offline channels (and only constrained by defined date ranges). As the most broadly defined container, reports generated at the Person container level returns page views, mobile app screens, and more, across all visits and lets you generate a multi-visit cross-channel analysis. Therefore, the Person container is the most susceptible to change based on defined date ranges.
+The Person container includes every session and every event for the persons that qualify for the condition specified in the container. When you define a filter with a simple condition like `Page Name equals Checkout`, then the Person container resolves to:
+
+- All persons that have visited the page with name `Checkout`.
+- All sessions for these persons.
+- All event data for these persons. 
+
+As the most broadly defined container, reports generated at the Person container level returns events and sessions for all persons that qualify for the filter. The Person container is the most susceptible to change based on defined date ranges.
 Person containers can include values based on a person's overall history:
 
-- Days Before First Purchase
-- Original Entry Page or Mobile App Home Screen
-- Original Referring Domains 
+- Days before the first purchase.
+- Original entry page or mobile app home screen.
+- Original referring domains. 
 
-### Session container {#session}
+### Session container
 
-The Session container lets you identify page interactions or mobile app interactions, campaigns, or conversions for a specific session. The Session container is the most commonly used container because it captures behaviors for the entire visit session once the rule is met. The Session container also lets you define which sessions you want to include or exclude in building and applying a filter. It can help you answer the following questions:
+The Session container lets you identify page interactions or mobile app interactions, campaigns, or conversions for a specific session. The Session container is the most commonly used container because it captures behaviors for the entire session once the rule is met. The Session container also lets you define which sessions you want to include or exclude in building and applying a filter.  When you define a filter with a simple condition like `Page Name equals Checkout`, then the Session container resolves to:
 
-- How many sessions engaged with both Web and Call Center data sources?
+- All sessions where a page with name `Checkout` is visited.
+- All event data for those sessions.
+
+The session container can help you answer the following questions:
+
+- How many sessions involved both web and call center data sources?
 - Which pages contributed to a successful conversion to a sale?
 
-Session containers include values based on occurrence per session:
+Session containers include values based on events per session:
 
-- Session Type
-- Entry Page
-- Return Frequency
-- Participation Metrics
-- Linearly allocated metrics
+- Session type.
+- Entry page.
+- Return frequency.
+- Participation metrics.
+- Linearly allocated metrics.
 
-Data views in Customer Journey Analytics let you determine how long a session lasts but also when a new session should be created. For example, you can define a new mobile app session based on every time a user launches your mobile app. See [Session settings](/help/data-views/session-settings.md) for more information. 
+Data views in Customer Journey Analytics let you determine how long a session lasts, but also when a new session should be created. For example, you can define a new mobile app session based on every time a user launches your mobile app. See [Session settings](/help/data-views/session-settings.md) for more information. 
 
-### Event container {#event}
+### Event container
 
-The Event container defines which page, mobile application, or other type of events that you would like to include or exclude from a filter. It is the most narrow of the containers available to let you identify specific clicks, page view, taps on button in a mobile app where a condition is true. The Event container lets you view a single tracking code, or isolate behavior within a particular area of your mobile app. You may also want to pinpoint a specific value when an action occurs, such as the marketing channel when an order was placed.
+The Event container defines which page, mobile application, or other type of events that you would like to include or exclude from a filter. It is the most narrow of the containers available to let you identify specific clicks, page view, taps on button in a mobile app where a condition is true. The Event container lets you view a single tracking code, or isolate behavior within a particular area of your mobile app. You may also want to pinpoint a specific value when an action occurs, such as the marketing channel when an order was placed. When you define a filter with a simple condition like `Page Name equals Checkout`, then the Event container resolves to:
 
-Event containers include value-based, single-page breakdowns for:
+- All page view events where the page name equals `Checkout`.
+
+Event containers include value-based, single page breakdowns for:
 
 - Products
 - List Props
 - List dimensions
 - Merchandising dimensions (in the context of events) 
+
+
+### Logic group container
+
+Logic Group enables you to group conditions into a single sequential filter checkpoint. As part of the sequence, the logic defined in the container identified as [!UICONTROL Logic Group] is evaluated after any prior sequential checkpoint and before any following sequential checkpoint. See [Logic Group](seg-sequential-build.md#logic-group) for more information.
+
+### Nest containers
+
+When creating containers within other containers, you are actually creating a filter within a filter. The following logic is applied to nested containers:
+
+1. Determine what data is included using the outermost container. Any data that does not match this outer rule is discarded in the report.
+2. Apply the nested filter definition to the remaining data. The nested filter definition does NOT apply to any data that the first definition discarded.
+3. Repeat until all nested container filter definitions have been calculated. The remaining data is then included in the result and used for reporting.
+
+
+<!--
+You can use nesting between containers and between conditions within a container. Here is what you can nest in each container:
+
+| Container | What container you can nest inside |
+| Event | Only event conditions |
+| Session | Session
+
 
 ## Out-of-the-box filter template {#template}
 
@@ -116,3 +184,13 @@ Traditional Analytics comes with numerous out-of-the-box templates and calculate
 | Filter Name | Description |
 | --- | --- |
 | All Data | All Data is a required filter that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
+-->
+
+>[!MORELIKETHIS]
+>
+>[Create filters](create-filters.md)
+>[Filter builder](filter-builder.md)
+>[Quick filters](quick-filters.md)
+>[Sequential filters](seg-sequential-build.md)
+>[Manage filters](manage-filters.md)
+>

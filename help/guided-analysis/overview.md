@@ -14,35 +14,47 @@ Similar to Analysis Workspace and Mobile scorecards, guided analysis uses data f
 
 The following guided analysis views are available:
 
-| Analysis type | View type | Description |
-| --- | --- | --- |
-| [!UICONTROL Feature matrix] | [Engagement](types/engagement.md) | Understand the breadth and depth of feature engagement. |
-| [!UICONTROL Funnel] | [Friction](types/friction.md) | Compare conversion rates between steps. |
-| [!UICONTROL Funnel] | [Conversion trends](types/conversion-trends.md) | Track changes in conversion rates over time. |
-| [!UICONTROL Impact] | [Release](types/release.md) | Compare performance across equal periods pre- and post-release. |
-| [!UICONTROL Impact] | [First use](types/first-use.md) | Measure the impact of first-time feature use on key indicators. |
-| [!UICONTROL Retention] | [Retention rates](types/retention-rates.md) | Measure your users' ongoing return habits. |
-| [!UICONTROL Trends] | [Usage](types/usage.md) | Measure user engagement over time. |
-| [!UICONTROL Trends] | [Frequency](types/frequency.md) | Measure engagement by frequency of use. |
-| [!UICONTROL User growth] | [Active](types/active.md) | Identify who is new, retained, returning, or dormant. |
-| [!UICONTROL User growth] | [Net growth](types/net-growth.md) | Are you gaining or losing users? |
-| [!UICONTROL User stream] | [Timeline](types/timeline.md) | Explore patterns in session activity. |
+| View type | Description |
+| --- | --- |
+| [Engagement](types/engagement.md) | Understand the breadth and depth of feature engagement. |
+| [Friction](types/friction.md) | Compare conversion rates between steps. |
+| [Conversion trends](types/conversion-trends.md) | Track changes in conversion rates over time. |
+| [Release](types/release.md) | Compare performance across equal periods pre- and post-release. |
+| [First use](types/first-use.md) | Measure the impact of first-time feature use on key indicators. |
+| [Retention rates](types/retention-rates.md) | Measure your users' ongoing return habits. |
+| [Usage](types/usage.md) | Measure user engagement over time. |
+| [Frequency](types/frequency.md) | Measure engagement by frequency of use. |
+| [Active](types/active.md) | Identify who is new, retained, returning, or dormant. |
+| [Net growth](types/net-growth.md) | Are you gaining or losing users? |
+| [Timeline](types/timeline.md) | Explore patterns in session activity. |
 
 {style="table-layout:auto"}
 
 ## Access
 
-If your organization is provisioned for guided analysis, you can access it from the Customer Journey Analytics homepage. 
+You can access Guided Analysis from the Customer Journey Analytics homepage. 
 
-1. Click **[!UICONTROL Guided analysis]** from the homepage, which takes you directly to the [Usage trends view](types/usage.md). 
+1. Select **[!UICONTROL Guided analysis]** from the homepage, which takes you directly to the [Usage trends view](types/usage.md). 
 
    ![Landing page tile](assets/landing-page-tile.png){style="border:1px solid gray"}
 
-1. Click **[!UICONTROL Create new]** to see the different view options and choose a different starting point for your analysis. 
+1. Select **[!UICONTROL Create new]** to see the different view options and choose a different starting point for your analysis. 
 
    ![Create a new modal](assets/create-new-modal.png){style="border:1px solid gray"}
 
-If your organization is not yet provisioned for guided analysis, contact your Adobe Account Team.
+You can also access Guided Analysis from within an Analysis Workspace project.
+
+1. Select **[!UICONTROL Blank project]** from the homepage to create an empty Workspace project.
+   
+   ![Create blank project](assets/blank-project.png){style="border:1px solid gray"}
+
+1. Select ![Guided analysis](/help/assets/icons/GuidedAnalysis.svg) **[!UICONTROL Guided Analysis]** in the left rail.
+   
+   ![Workspace left rail](assets/workspace-left-rail.png){style="border:1px solid gray"}
+
+1. Drag any view type onto the Workspace canvas, then select the **[!UICONTROL Create]** button to generate the desired analysis. You can also drag an existing analysis onto the Workspace canvas from under the **[!UICONTROL Saved]** section.
+
+   ![Create panel](assets/create-panel.png)
 
 ## Interface
 

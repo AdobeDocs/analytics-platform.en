@@ -7,24 +7,44 @@ role: User
 ---
 # Filter the list of filters
 
-Filter the list of filters in the Filter Manager by tags, owners, and other filters (Show All, Mine, Shared with me, Favorites, and Approved.)
+You can filter the list of filters. Using a filter on filters makes it easier to find the filters that are available to you, and manage filters from the [Filter manager](manage-filters.md). 
 
-Filtering makes it easier to search for filters.
+>[!NOTE]
+>
+>The list of filters does refer to the [filter list](manage-filters.md#filters-list) as part of the [Filter manager](manage-filters.md). You can filter that list using the ![Filter](/help/assets/icons/Filter.svg) [Filter panel](manage-filters.md#filter-panel), part of that same [Filter manager](manage-filters.md).
+>
 
-1. In the Filter manager, click the **[!UICONTROL Filters]** icon:  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
-   ![Filter Manager showing the Filters icon and available filters.](assets/filtering.png)
+To filter the list of filters:
 
-2. The following filters are available:
+1. Select ![Filter](/help/assets/icons/Filter.svg) to open the Filters panel. If you need more space for the Filters list, you can select ![Filter](/help/assets/icons/Filter.svg) once more to close the panel.
+1. Select filters from any of the available [filter sections](#filter-sections). 
+   
+   >[!INFO]
+   >
+   >*Items* refer to the filter items displayed in the [Filter list](manage-filters.md#filters-list).
+   > 
 
-   |  Filter Name  | Description  |
-   |---|---|
-   |  Tags  |Lets you filter the list of filters with specific [tags](/help/components/filters/filters-tag.md). The Tags column is shown by default.  |
-   |  Owners  | Lets you filter the list of filters by owner.  |
-   | Data view | Lets you filter by data view. |
-   |  Other Filters > Show All  | **(Admin only)** Shows all filters, their owner, and the last date they were modified.  |
-   |  Other Filters > Mine  | Shows all filters that you own.  |
-   |  Other Filters > Shared with Me  |Shows all filters that others [shared](/help/components/filters/filters-share.md) with you.  |
-   |  Other Filters > Favorites  |Shows all filters you marked as [Favorites](/help/components/filters/filters-favorite.md).  |
-   |  Other Filters > Approved  |Shows all officially [approved](/help/components/filters/filters-approve.md) segments.  |
-   |  Search Segments  | Lets you search for segments by name.  |
+## Filter sections
+
+The following filter sections are available:
+
+### Tags
+
+{{tagfiltersection}} 
+
+### Data view
+
+{{dataviewfiltersection}}
+
+### Owner
+
+{{ownerfiltersection}}
+
+
+### Other filters
+
+{{otherfiltersfiltersection}}
+
+
+The [Filter list](manage-filters.md#filters-list) is automatically updated based on your filter configuration. You can see the configured filters in the [Active filter bar](manage-filters.md#active-filter-bar).

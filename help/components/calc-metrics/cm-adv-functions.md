@@ -7,7 +7,7 @@ role: User
 ---
 # Reference - advanced functions
 
-Access these functions by checking **[!UICONTROL Show Advanced]** in the **[!UICONTROL Functions]** drop-down list.
+Access these functions by selecting **[!UICONTROL Show all]** below ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL Functions]** list in the Components panel. Scroll down to see the list of Advanced functions.
 
 ## Table Functions versus Row Functions
 
@@ -20,6 +20,7 @@ It tells whether to include zeros in the computation. Sometimes zero means "noth
 For example, if you have a Revenue metric, and then add a Page Views metric to the report, there are suddenly more rows for your revenue which are all zero. You probably don't want this to affect any MEAN, MIN, QUARTILE, etc. calculations that you have on the revenue column. In this case, you would check the include-zeros parameter.
 
 On the other hand, if you have two metrics that you are interested in, it may not be fair to say that one has a higher average or minimum because some of its rows were zeros, so you would not check the parameter to include the zeros.
+
 
 ## AND
 
@@ -50,7 +51,7 @@ Approximate Count Distinct (dimension)
 |---|---|
 |  *dimension* | The dimension for which you want the approximate distinct item count.  |
 
-## Example Use Case
+### Example Use Case
 
 Approximate Count Distinct (customer ID eVar) is a common use case for this function.
 
@@ -62,7 +63,7 @@ This is how the "Approximate Customers" metric could be used in reporting:
 
 ![Freeform Table showing Unique Visitors and Approximate Customers ](assets/approx-customers.png)
 
-## Comparing Count Functions
+### Comparing Count Functions
 
 Approximate Count Distinct() is an improvement over Count() and RowCount() functions because the metric created can be used in any dimensional report to render an approximated count of items for a separate dimension. For example, a count of customer IDs used in a Mobile Device Type report.
 

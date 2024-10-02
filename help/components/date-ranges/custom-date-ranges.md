@@ -1,54 +1,39 @@
 ---
-description: Create custom date ranges in Analysis Workspace, and save them as Time components.
+description: Example of custom date ranges in Analysis Workspace.
 keywords: Analysis Workspace
-title: Create custom date ranges
+title: Example custom date ranges
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 role: User
 ---
-# Create custom date ranges
+# Example custom date ranges
 
-You can create custom date ranges in Analysis Workspace and save them as Time components. 
+This article shows more examples of custom date ranges
 
-For information about adding existing date ranges to a project, see [Calendar and date ranges overview](/help/components/date-ranges/calendar.md).
 
-To create a custom date range:
 
- 1. In Adobe Analytics, select **[!UICONTROL Components]** > **[!UICONTROL Date ranges]**.
+## Last two months ago
 
-    ![date range page](assets/date-ranges.png)
- 
- 1. Select [!UICONTROL **Create new date range**].
++++ Details
 
- 1. In the Date range builder, specify the following information:
-    
-    |Option | Description | 
-    |---------|----------|
-    | [!UICONTROL **Title**] | The title of the date range as it will appear when users select it in Analysis Workspace. |
-    | [!UICONTROL **Description**] | A description for the date range. | 
-    | [!UICONTROL **Tags**] | Any tags you want to apply to the date range. | 
-    | [!UICONTROL **Date Range**] | Lets you pick a custom date range. By default, the last 30 days are selected. | 
-    | [!UICONTROL **Preset**] | Choose from a list of preset date ranges, such as [!UICONTROL **Yesterday**], [!UICONTROL **Last 7 days**], [!UICONTROL **Last 30 days**], and so forth. | 
-    | [!UICONTROL **Start time**] | The time of day that the date range begins. | 
-    | [!UICONTROL **End time**] | The time of day that the date range ends. | 
-    | [!UICONTROL **Use rolling dates**] | Rolling dates allow you to generate a dynamic report that looks forward or backward for a set period of time based on when you ran the report. For example, if you want to report on all Orders placed "Last Month" (based on the Created Date field) and ran that report in December, you'd see orders placed in November. If you ran that same report in January, you'd see orders placed in December.<ul><li>**[!UICONTROL Date Preview]**: Indicates what time period the rolling calendar encompasses.</li><li>**[!UICONTROL Start]**: You can choose among current day, current week, current month, current quarter, current year.</li><li>**[!UICONTROL End]**: You can choose among current day, current week, current month, current quarter, current year.</li></ul><br>Selected by default. | 
+You want to define a custom date range that defines two months ago. You use one of the presets.
 
- 1. Select [!UICONTROL **Save**]. 
+![Last 2 months ago](assets/date-range-example-simple.png)
 
-## Example: Date range for "two months ago" {#section_C4109C57CB444BB2A79CC8082BD67294}
++++
 
-The following custom date range shows a date range for "two months ago," with a Summary Change visualization showing directional change.
 
-![](assets/date-range-two-months-ago.png)
+## Rolling until the end of last week
 
-The custom date range is displayed at the top of the [!UICONTROL Date Range] component panel in your project:
++++ Details
 
-![](assets/date-range-panel-two-months-ago.png)
+You want to define a date range that defines the period between the current day a week ago until the end of that same last week. For example, if today is Wednesday September 11, 2024. You want a date range from Wednesday September 4, 2024 until Saturday September 7, 2024. September 
 
-You can drag this custom date range into a column alongside a custom, monthly rolling date range using the Last Month preset for a comparison. Add a Summary Change visualization and select the totals from each column to show directional change:
+![Date range example](assets/date-range-example.png)
 
-![](assets/date-range-two-months-table.png)
++++ 
 
+<!--
 ## Example: Use a 7-day rolling date range {#section_7EF63B2E9FF54D2E9144C4F76956A8DD}
 
 You can create a date range that specifies a 7-day rolling window that ends one week ago:
@@ -62,3 +47,4 @@ Use *`rolling daily`*.
 * The End settings would be *`current day minus 7 days`*.
 
 This date range can be a component that you drag onto any freeform table.
+-->

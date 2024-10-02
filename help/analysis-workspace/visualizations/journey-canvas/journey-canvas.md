@@ -3,8 +3,6 @@ description: Journey canvas overview
 title: Journey canvas
 feature: Visualizations
 role: User
-hide: yes
-hidefromtoc: yes
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 ---
 # Journey canvas overview
@@ -14,6 +12,10 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. It allows you to define a journey from scratch or view one from Journey Optimizer, then see how people left (fell out) or continued through (fell through) the journey. 
 
 You can [build analyses of user journeys](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) by using any combination of events, dimension items, filters, and date ranges to create journey nodes. Connect the nodes to create the journey's flow, and include multiple paths and decision points. Drag nodes on the canvas to rearrange the events and conditions of the journey. Data updates in realtime as you make changes.
+
+[Nodes are connected](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) as an "eventual path," which means that visitors are counted as long as they eventually move from one node to the other, regardless of any events occurring between the 2 nodes. The time allotted for users to move along the path is determined by the container setting. 
+
+![Journey canvas](assets/journey-canvas.png)
 
 ## Key features
 
@@ -29,19 +31,19 @@ Key features of the Journey canvas visualization include:
 
 ## Potential insights
 
-Following are a few examples of the types of insights Journey canvas can help provide. You can choose whether these insights are based off all people in the data view or all people who started the journey.
+Following are a few examples of the types of insights Journey canvas can help provide. You can choose whether these insights are based on all people in the data view, all people who started the journey, or all people from the previous node of the journey.
 
 **Fallthrough** 
 
 * The number and percentage of people who completed the journey (arrived at the ending node)
 
-* The number and percentage of people who arrived at a given point (node) of the journey
+* The number and percentage of people who arrived at a given node of the journey
 
-* The most common step that came after or before a given point (node) of the journey
+* The most common step that came after or before a given node of the journey
 
 **Fallout**
 
-* The points (nodes) of the journey where people most commonly fell out of the journey
+* The nodes of the journey where people most commonly fell out of the journey (never arrived at any of the immediate next nodes)
 
 **Other**
 

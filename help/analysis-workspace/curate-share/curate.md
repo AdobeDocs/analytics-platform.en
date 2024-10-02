@@ -17,7 +17,7 @@ Curation lets you limit the components (dimensions, metrics, filters, date range
 
 1. Click **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**. 
    The components that are used in the project will automatically be added.  
-1. (Optional) To add more components, drag components you want to share from the left rail to the [!UICONTROL Curate Components] field.  
+1. (Optional) To add more components, drag components you want to share from the left panel to the [!UICONTROL Curate Components] field.  
 1. Click **[!UICONTROL Done]**.
 
 Curation can also be applied from the [!UICONTROL Share] menu by clicking **[!UICONTROL Curate and Share]**. This option automatically curates the project to the components in use in the project. You can add additional components following the steps above.
@@ -32,7 +32,7 @@ When a recipient opens a curated project, they will only see the curated set of 
 
 ## Remove project curation
 
-To remove project curation and restore the full set of components in the left rail:
+To remove project curation and restore the full set of components in the left panel:
 
 1. Click **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**. 
 1. Click **[!UICONTROL Remove Curation]**. 
@@ -40,7 +40,7 @@ To remove project curation and restore the full set of components in the left ra
 
 ## Component curation options
 
-In a curated project, the recipient will be presented with the option to **[!UICONTROL Show All]** components in the left rail. [!UICONTROL Show All] reveals different sets of components, depending on:
+In a curated project, the recipient will be presented with the option to **[!UICONTROL Show All]** components in the left panel. [!UICONTROL Show All] reveals different sets of components, depending on:
 
 * The user's permission level (admin or non-admin)
 * Project role (owner/editor or not)

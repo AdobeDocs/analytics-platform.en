@@ -6,7 +6,17 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 ---
-# [!UICONTROL Value Bucketing] component settings
+# [!UICONTROL Value Bucketing] component settings {#value-bucketing-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_valuebucketing"
+>title="Value bucketing"
+>abstract="Bucket values into specific ranges. These ranges appear as dimension items in reports."
+
+<!-- markdownlint-enable MD034 -->
+
 
 When creating or editing a data view, value bucketing allows you to combine numeric values based on a range. It is only available for dimensions using Integer or Double schema data types.
 
