@@ -44,17 +44,17 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to specify which colu
 
 You can action on alerts using the action bar ➋. The action bar contains the following actions:
 
-| Action | Description |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another alert, using the [Alert builder](alert-builder.md#alert-builder). |
-| ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search by title*] | When no alert is selected in the list, search for alerts using this search field. |
-| ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tag the selected alerts. In the **[!UICONTROL Tag Alert]** dialog, select or de-select the tags for the selected alerts. Select **[!UICONTROL Save]** to save the tags for the selected alerts.|
-| ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Delete the selected alerts. You are prompted for a confirmation. |
-| ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Rename a single selected alert. When selected, you can rename the alert inline. |
-| ![Copy](/help/assets/icons/Copy.svg)  **[!UICONTROL Copy]** | Copy the selected alert. New alerts are created with the same name and suffix `(Copy)`. | 
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Enable]** or **[!UICONTROL Disable]** | Enable or disable the selected alerts. |
-|![Refresh](/help/assets/icons/Refresh.svg) **[!UICONTROL Renew]** | Renews the alert expiration date. The  expiration date extends 1 year from the day you select this option, regardless of the original expiration date. |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Export the alerts to an `Alerts List.csv` file. |
+| Icon | Action | Description |
+|:---:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) |**[!UICONTROL Add]** | Add another alert, using the [Alert builder](alert-builder.md#alert-builder). |
+| ![Search](/help/assets/icons/Search.svg) |[!UICONTROL *Search by title*] | When no alert is selected in the list, search for alerts using this search field. |
+| ![Label](/help/assets/icons/Label.svg)| **[!UICONTROL Tag]** | Tag the selected alerts. In the **[!UICONTROL Tag Alert]** dialog, select or de-select the tags for the selected alerts. Select **[!UICONTROL Save]** to save the tags for the selected alerts.|
+| ![Delete](/help/assets/icons/Delete.svg)| **[!UICONTROL Delete]** | Delete the selected alerts. You are prompted for a confirmation. |
+| ![Edit](/help/assets/icons/Edit.svg)| **[!UICONTROL Rename]** | Rename a single selected alert. When selected, you can rename the alert inline. |
+| ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL Copy]** | Copy the selected alert. New alerts are created with the same name and suffix `(Copy)`. | 
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)| **[!UICONTROL Enable]** or **[!UICONTROL Disable]** | Enable or disable the selected alerts. |
+|![Refresh](/help/assets/icons/Refresh.svg)| **[!UICONTROL Renew]** | Renews the alert expiration date. The  expiration date extends 1 year from the day you select this option, regardless of the original expiration date. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg)| **[!UICONTROL Export to CSV]** | Export the alerts to an `Alerts List.csv` file. |
 
 
 ### Active filter bar

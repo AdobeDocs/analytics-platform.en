@@ -174,7 +174,6 @@ Calculated metrics that include any of the following metrics or constants are no
 * Constants that are added to or subtracted from a base metric (for example, `Revenue+50`)
 * Any of the following base metrics: 
   * People
-  * (what else?)
 
 Calculated metrics that are not compatible with the Experimentation panel have the value [!UICONTROL **Everywhere in Customer Journey Analytics (excluding experimentation)**] in the [!UICONTROL **Product compatibility**] field when creating the calculated metric. For information about creating a calculated metric, see [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 

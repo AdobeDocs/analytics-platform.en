@@ -45,17 +45,17 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to specify which colu
 
 You can action on filters using the action bar ➋. The action bar contains the following actions:
 
-| Action | Description |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another calculated metrics, using the [Calculated metric builder](cm-build-metrics.md). |
-| ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search by title*] | When no calculated metric is selected in the list, search for filters using this search field. |
-| ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tag the selected calculated metrics. In the **[!UICONTROL Tag Calculated metric]** dialog, select or de-select the tags for the selected calculated metric. Select **[!UICONTROL Save]** to save the tags for the selected calculated metrics. See [Tag calculated metrics](cm-tagging.md) for more information.|
-| ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Share the selected calculated metrics. In the **[!UICONTROL Share Calculated metrics]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected calculated metrics. See [Share calculated metrics](cm-sharing.md) for more information. |
-| ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Delete the selected calculated metrics. You are prompted for a confirmation. |
-| ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Rename a single selected calculated metric. When selected, you can rename the calculated metric inline. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Approve the selected calculated metrics. See [Approve calculated metrics](cm-approving.md). | 
-| ![Copy](/help/assets/icons/Copy.svg)  **[!UICONTROL Copy]** | Copy the selected calculated metrics. New calculated metrics are created with the same name and suffix `(Copy)` | 
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Export the calculated metrics to a `Calculated  metric List.csv` file. |
+| Icon | Action | Description |
+|:---:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg)| **[!UICONTROL Add]** | Add another calculated metrics, using the [Calculated metric builder](cm-build-metrics.md). |
+| ![Search](/help/assets/icons/Search.svg)| [!UICONTROL *Search by title*] | When no calculated metric is selected in the list, search for filters using this search field. |
+| ![Label](/help/assets/icons/Label.svg)| **[!UICONTROL Tag]** | Tag the selected calculated metrics. In the **[!UICONTROL Tag Calculated metric]** dialog, select or de-select the tags for the selected calculated metric. Select **[!UICONTROL Save]** to save the tags for the selected calculated metrics. See [Tag calculated metrics](cm-tagging.md) for more information.|
+| ![Share](/help/assets/icons/ShareAlt.svg)| **[!UICONTROL Share]** | Share the selected calculated metrics. In the **[!UICONTROL Share Calculated metrics]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected calculated metrics. See [Share calculated metrics](cm-sharing.md) for more information. |
+| ![Delete](/help/assets/icons/Delete.svg)| **[!UICONTROL Delete]** | Delete the selected calculated metrics. You are prompted for a confirmation. |
+| ![Edit](/help/assets/icons/Edit.svg)| **[!UICONTROL Rename]** | Rename a single selected calculated metric. When selected, you can rename the calculated metric inline. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |**[!UICONTROL Approve]** | Approve the selected calculated metrics. See [Approve calculated metrics](cm-approving.md). | 
+| ![Copy](/help/assets/icons/Copy.svg)|  **[!UICONTROL Copy]** | Copy the selected calculated metrics. New calculated metrics are created with the same name and suffix `(Copy)` | 
+| ![FileCSV](/help/assets/icons/FileCSV.svg)| **[!UICONTROL Export to CSV]** | Export the calculated metrics to a `Calculated  metric List.csv` file. |
 
 ### Active filter bar
 

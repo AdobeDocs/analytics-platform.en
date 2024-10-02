@@ -12,11 +12,11 @@ You can create filters from a touchpoint, add filters as touchpoint, and compare
 
 >[!IMPORTANT]
 >
->Filters used as checkpoints in Fallout must use a container that is at a lower level than the overall context of the Fallout visualization. With a person-context Fallout, filters used as checkpoints must be visit or event-based filters. With a visit-context Fallout, filters used as checkpoint must be event-based filters. If you use an invalid combination, the fallout is 100%. You see a warning to the Fallout visualization when you add an incompatible filter as a touchpoint. Certain invalid filter container combinations lead to invalid Fallout diagrams, such as:
-
-* Using a person-based filter as a touchpoint inside a person-context Fallout visualization
-* Using a person-based filter as a touchpoint inside a visit-context Fallout visualization
-* Using a visit-based filter as a touchpoint inside a visit-context Fallout visualization
+>Filters used as checkpoints in Fallout must use a container that is at a lower level than the overall context of the Fallout visualization. With a person-context Fallout, filters used as checkpoints must be session or event-based filters. With a session-context Fallout, filters used as checkpoint must be event-based filters. If you use an invalid combination, the fallout is 100%. You see a warning to the Fallout visualization when you add an incompatible filter as a touchpoint. Certain invalid filter container combinations lead to invalid Fallout diagrams, such as:
+>
+>* Using a person-based filter as a touchpoint inside a person-context Fallout visualization
+>* Using a person-based filter as a touchpoint inside a session-context Fallout visualization
+>* Using a session-based filter as a touchpoint inside a session-context Fallout visualization
 
 ## Create a filter from a touchpoint
 

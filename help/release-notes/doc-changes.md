@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **October 2024** | |
+| Workspace and components  | Refreshed the documentation on Workspace projects (projects, visualizations, and panels) and conponents (annotations, dimensions, (calculated) metrics, filters, date ranges, and alerts). | 
 | **September 2024** | |
 | Summary data update | Updated summary data articles with information on how to properly use [lookup data](/help/data-views/summary-data.md#lookup-data) when reporting on summary data. | 
 | BI extension update | Added [defaults and limitation](/help/data-views/bi-extension.md#defaults-and-limitations) section to the BI extension documentation. |
