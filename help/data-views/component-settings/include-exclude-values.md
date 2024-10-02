@@ -6,7 +6,27 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 ---
-# Include Exclude values component settings
+# Include Exclude values component settings {#include-exclude-values-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_includeexcludevalues"
+>title="Include exclude values"
+>abstract="Filter a metric to only count values matching specific criteria."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_includeexcludevalues"
+>title="Include exclude values"
+>abstract="Narrow a dimension to only include values matching specific criteria. Inclusions and exclusions happen before allocation and filters in reports.<br/><br/>**Parameters**<br/>**Case sensitive**: Determine if the filter logic below is case-sensitive."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 Include Exclude values lets you create rules that depend on the value of a dimension item. Values that don't meet the criteria that you set are treated in Analysis Workspace as if they never existed, though the data still exists in the underlying dataset.
 

@@ -6,7 +6,17 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 ---
-# Behavior component settings
+# Behavior component settings {#behavior-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_behavior"
+>title="Behavior"
+>abstract="Determine how line items in this dimension are aggregated.<br/><br/>**Parameters**<br/>**Lower case**: Allows you to specify whether the string values in the field should be lower cased."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Behavior settings are available on both dimensions and metrics. The availability of settings depend on the component type and schema data type.
 

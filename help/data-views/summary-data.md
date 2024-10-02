@@ -147,4 +147,4 @@ Ensure the component settings for a summary data group are the same. See [Summar
 
 >[!MORELIKETHIS]
 >
->See the [Ingest and use summary data](/help/use-cases/data-views/summary-data.md) article for a detailed use case example on how to use and report on summary data.
+>See the [Use summary data](/help/use-cases/data-views/summary-data.md) article for a detailed use case example on how to use and report on summary data.

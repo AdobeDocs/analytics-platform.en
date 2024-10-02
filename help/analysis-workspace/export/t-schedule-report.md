@@ -1,15 +1,15 @@
 ---
 description: Send an Analysis Workspace project by email or schedule it for delivery.
 keywords: Analysis Workspace
-title: Send Customer Journey Analytics data to others by email
+title: Send reports to others by email
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
 ---
-# Send Customer Journey Analytics data to others through email
+# Send files to others
 
-You can export Customer Journey Analytics reports by sending it to selected recipients through email. You can send files ad hoc, or you can configure files to be sent on a schedule. Files can be sent in CSV or PDF format.
+You can send Customer Journey Analytics reports as files to selected users by email. You can send files ad hoc, or you can configure files to be sent on a schedule. Files can be sent in CSV or PDF format.
 
 Any tags applied to the project are automatically applied to the export.
 
@@ -50,7 +50,7 @@ To send a file on a recurring schedule to recipients by email:
 
 Scheduled Analysis Workspace projects can be managed under **[!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Scheduled Projects]**.
 
-In the Scheduled Projects Manager, you can edit and delete recurring project schedules. Search for a schedule in the search bar or by using the filter options in the left rail. You can filter by tag, approved schedules, owners and more.
+In the Scheduled Projects Manager, you can edit and delete recurring project schedules. Search for a schedule in the search bar or by using the filter options in the left panel. You can filter by tag, approved schedules, owners and more.
 
 | Field | Description |
 | --- | --- |
@@ -72,14 +72,24 @@ The following are common actions in the Scheduled Projects manager:
 |**[!UICONTROL Edit schedule]**|Click the title of the schedule to update its delivery settings.|
 |**[!UICONTROL Delete schedule]**|Select the scheduled project in the list and then click Delete from the menu. This will delete the selected schedule for the project; the project itself will not be deleted.|
 |**[!UICONTROL Add tags]**|Select the scheduled project in the list and then choose "Tag" or "Approve" to organize your schedules and make them easier to search for.|
-|**[!UICONTROL View failed schedules]**|Navigate to the left rail > Other filters > Failed to see schedules that have failed.|
-|**[!UICONTROL View expired schedules]**|Navigate to the left rail > Other filters > Expired to see schedules that have expired. Click the title of the schedule to setup a new delivery schedule.|
+|**[!UICONTROL View failed schedules]**|Navigate to the left panel > Other filters > Failed to see schedules that have failed.|
+|**[!UICONTROL View expired schedules]**|Navigate to the left panel > Other filters > Expired to see schedules that have expired. Click the title of the schedule to setup a new delivery schedule.|
 |**[!UICONTROL View schedule ID]**|Navigate to column options in the top right and add the Schedule ID column to the table. The scheduled ID is often useful for debugging.|
 
 The Scheduled Projects Manager shows the items that a specific user has created. If the user account is disabled in the application, all scheduled deliveries stop.
 For more information, see [Scheduled projects](/help/components/scheduled-projects-manager.md).
 
 ## Password-protect a scheduled project {#password}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_sendfile_password"
+>title="Password encryption"
+>abstract="The supplied password will be used to encrypt the file for the scheduled project. The security requirements for your organization require password encryption."
+
+<!-- markdownlint-enable MD034 -->
+
 
 >[!NOTE]
 >

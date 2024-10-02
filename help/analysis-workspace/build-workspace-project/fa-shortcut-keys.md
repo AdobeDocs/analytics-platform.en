@@ -10,62 +10,69 @@ role: User
 
 Hotkeys (keyboard shortcuts) are available in Analysis Workspace for seamless navigation, analysis and democratization.
 
-Note: `CTRL` = Windows and `command` = Mac 
+Note that on your keyboard the following symbols might be used:
+
+- **⇧** for **[!UICONTROL **shift**]**.
+- **⌘** for **[!UICONTROL **cmd**]** (command).
+- **⌃** for **[!UICONTROL **ctrl**]** (control).
+- **⌥** for **[!UICONTROL **opt**]** (option).
+- **⎇** for **[!UICONTROL **alt**]** (alternate).
 
 ## Navigation actions
 
-|Action|Shortcut|
-|---|---|
-|Create New Project|ctrl (or cmd) + shift + p|
-|Open Existing Project|ctrl (or cmd) + o|
-|Go to Panels pane|alt + shift + 1|
-|Go to Visualizations pane|alt + shift + 2|
-|Go to Components pane|alt + shift + 3|
-|Collapse/Expand all panels|alt + m|
-|Collapse/Expand Active panel|alt + ctrl + m|
-|Move to next panel|alt + Right Key|
-|Move to previous panel|alt + Left Key|
+ |  Action  |  Shortcut Mac  |  Shortcut Windows  | 
+ | --- | --- | --- | 
+ | Create New Project | **[!UICONTROL *cmd+shift+p*]** |  **[!UICONTROL *ctrl+shift+p*]**  | 
+ | Open Existing Project | **[!UICONTROL *cmd+o*]** |  **[!UICONTROL *ctr+o*]**  | 
+ | Go to Panels pane | **[!UICONTROL *opt+shift+1*]** |  **[!UICONTROL *alt+shift+1*]**  | 
+ | Go to Visualizations pane | **[!UICONTROL *opt+shift+2*]**  | **[!UICONTROL *alt+shift+2*]** |
+ | Go to Components pane | **[!UICONTROL *opt+shift+3*]** | **[!UICONTROL *alt+shift+3*]**  | 
+ | Collapse/Expand all panels | **[!UICONTROL *opt+m*]** | **[!UICONTROL *alt+m*]**  | 
+ | Collapse/Expand Active panel | **[!UICONTROL *opt+cmd+m*]** | **[!UICONTROL *alt+ctrl+m*]**  | 
+ | Move to next panel | **[!UICONTROL *opt*+▶︎]** | **[!UICONTROL *alt*+▶︎]**  | 
+ | Move to previous panel | **[!UICONTROL *opt*+◀︎]** | **[!UICONTROL *alt*+◀︎]**  | 
 
 ## Analysis actions
 
-|Action|Shortcut|
-|---|---|
-|Search left rail|ctrl + /|
-|Create an Alert|ctrl (or cmd) + shift + a|
-|Create Calculated Metric|ctrl (or cmd) + shift + c|
-|Create a Date Range|ctrl (or cmd) + shift + d|
-|Create a filter |ctrl (or cmd) + shift + e|
-|Clear All|alt + w|
-|Copy|ctrl (or cmd) + c|
-|Redo|ctrl (or cmd) + shift + z|
-|Undo|ctrl (or cmd) + z|
-|Refresh Components|alt + shift + r|
-|Refresh Project|alt + r|
-|Set as Landing Page|ctrl (or cmd) + shift + l|
+ |  Action  |  Shortcut Mac  |  Shortcut Windows  | 
+ | --- | --- | --- | 
+ | Search left panel | **[!UICONTROL *cmd+/*]** | **[!UICONTROL *ctrl+/*]** | 
+ | Create an Alert | **[!UICONTROL *cmd+shift+a*]** | **[!UICONTROL *ctrl+shift+a*]** | 
+ | Create Calculated Metric | **[!UICONTROL *cmd+shift+c*]** | **[!UICONTROL *ctrl+shift+c*]**| 
+ | Create a Date Range | **[!UICONTROL *cmd+shift+d*]** | **[!UICONTROL *ctrl+shift+d*]** | 
+ | Create a filter  | **[!UICONTROL *cmd+shift+e*]** | **[!UICONTROL *ctrl+shift+e*]** | 
+ | Clear All | **[!UICONTROL *alt+w*]** | **[!UICONTROL *opt+w*]** | 
+ | Copy | **[!UICONTROL *cmd+c*]** | **[!UICONTROL *ctrl+c*]** | 
+ | Redo | **[!UICONTROL *cmd+shift+z*]** | **[!UICONTROL *ctrl+shift+z*]** | 
+ | Undo | **[!UICONTROL *cmd+z*]** | **[!UICONTROL *ctrl+z*]** | 
+ | Refresh Components | **[!UICONTROL *opt+shift+r*]** | **[!UICONTROL *alt+shift+r*]** | 
+ | Refresh Project | **[!UICONTROL *opt+r*]** | **[!UICONTROL *alt+r*]** | 
+ | Set as Landing Page | **[!UICONTROL *cmd+shift+l*]** | **[!UICONTROL *ctrl+shift+l*]** | 
 
 ## Add panels and visualizations actions
 
-|Action|Shortcut|
-|---|---|
-|New Attribution Panel|alt + e|
-|New Blank Panel|alt + b|
-|New Freeform Panel|alt + a|
-|New Quick Insights Panel|alt + f|
-|New Freeform Table|alt + 1|
-|New Line Graph|alt + 2|
-|New Bar Chart|alt + 3|
+ |  Action  |  Shortcut Mac  |  Shortcut Windows  | 
+ | --- | --- | --- | 
+ | New Attribution Panel | **[!UICONTROL *opt+e*]** | **[!UICONTROL *alt+e*]** | 
+ | New Blank Panel | **[!UICONTROL *opt+b*]** | **[!UICONTROL *alt+b*]** | 
+ | New Freeform Panel | **[!UICONTROL *opt+a*]** | **[!UICONTROL *alt+a*]** | 
+ | New Quick Insights Panel | **[!UICONTROL *opt+f*]** | **[!UICONTROL *alt+f*]** | 
+ | New Freeform Table | **[!UICONTROL *opt+1*]** | **[!UICONTROL *alt+1*]** | 
+ | New Line Graph | **[!UICONTROL *opt+2*]** | **[!UICONTROL *alt+2*]** | 
+ | New Bar Chart | **[!UICONTROL *opt+3*]** | **[!UICONTROL *alt+3*]** | 
+ | New Combo chart | **[!UICONTROL *opt+4*]** |  **[!UICONTROL *alt+4*]** | 
 
 ## Democratization actions
 
-|Action|Shortcut|
-|---|---|
-|Save Project|ctrl (or cmd) + s|
-|Save Project As|ctrl (or cmd) + shift + s|
-|Save as Template|alt + t|
-|Download as CSV|ctrl (or cmd) + shift + v|
-|Download as PDF|ctrl (or cmd) + shift + b|
-|Curate Project Data|ctrl (or cmd) + shift + g|
-|Share Project|ctrl (or cmd) + g|
-|Get Project Link|alt + l|
-|Send File Now|alt + s|
-|Send file on schedule|shift + alt + s|
+ |  Action  |  Shortcut Mac  |  Shortcut Windows  | 
+ | --- | --- | --- | 
+ | Save Project | **[!UICONTROL *cmd+s*]** | **[!UICONTROL *ctrl+s*]** | 
+ | Save Project As | **[!UICONTROL *cmd+shift+s*]** | **[!UICONTROL *ctrl+shift+s*]** | 
+ | Save as Template | **[!UICONTROL *opt+t*]** | **[!UICONTROL *alt+t*]** | 
+ | Download as CSV | **[!UICONTROL *cmd+shift+v*]** | **[!UICONTROL *ctrl+shift+v*]** | 
+ | Download as PDF | **[!UICONTROL *cmd+shift+b*]** | **[!UICONTROL *ctrl+shift+b*]** | 
+ | Curate Project Data | **[!UICONTROL *cmd+shift+g*]** | **[!UICONTROL *ctrl+shift+g*]** | 
+ | Share Project | **[!UICONTROL *cmd+g*]** | **[!UICONTROL *ctrl+g*]** | 
+ | Get Project Link | **[!UICONTROL *alt+l*]** | **[!UICONTROL *alt+l*]** | 
+ | Send File Now | **[!UICONTROL *alt+s*]** | **[!UICONTROL *alt+s*]** | 
+ | Send file on schedule | **[!UICONTROL *shift+alt+s*]** | **[!UICONTROL *shift+alt+s*]** | 

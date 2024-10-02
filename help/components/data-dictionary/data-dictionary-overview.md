@@ -5,13 +5,30 @@ feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 ---
-# Data Dictionary overview
+# Data Dictionary overview {#data-dictionary-overview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_component_datadictionary"
+>title="Data dictionary"
+>abstract="The Data Dictionary helps both users and and administrators keep track of and better understand the components in their Analytics environment. <br/>Analytics administrators are responsible for curating information about each component the Data Dictionary to users."
+
+<!-- markdownlint-enable MD034 -->
+
 
 The Data Dictionary in Analysis Workspace helps both users and administrators keep track of and better understand the components in their Analytics environment.   
 
 Analytics administrators are responsible for curating information about each component in the Data Dictionary to make it available to users.
 
+
++++ View a video to demonstrate the Data Dictionary 
+
 >[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
+
+{{videoaa}}
+
++++
 
 ## Benefits for users
 
@@ -51,16 +68,14 @@ Following are some of the ways Analytics administrators can use the Data Diction
 
 You can access the Data Dictionary in any of the following ways within Analysis Workspace:
 
-* From the **Data Dictionary** icon in the left rail.
+![Data Dictionary icon in the left panel](assets/data-dictionary-access.png)
 
-  ![Data Dictionary icon in the left rail](assets/data-dictionary-access-icon.png)
+* From ![Bookmark](/help/assets/icons/Bookmark.svg) in the button panel.
 
-* From the **Data Dictionary** icon within the info popover of a component. 
+  
 
-  ![Data Dictionary icon in info popover](assets/data-dictionary-access-infopopover.png)
-<!--update screenshot; this was taken from a mock-->
+* From ![Bookmark](/help/assets/icons/Bookmark.svg) within the info popover of a component. 
 
-* From the menu: [!UICONTROL **Help**] > [!UICONTROL **Data Dictionary**].
 
 For detailed information about the various options available in the Data Dictionary, see [View component information in the Data Dictionary](/help/components/data-dictionary/view-data-dictionary.md).
 

@@ -1,6 +1,6 @@
 ---
 description: Use cases for alerts.
-title: Alerts - use cases
+title: Alerts use cases
 feature: Workspace Basics
 role: User, Admin
 ---
@@ -10,7 +10,9 @@ You can create alerts as described in [Create alerts](/help/components/c-intelli
 
 The following sections illustrate example use cases to consider as you create alerts.
 
-## Create simple alert filtered by two filters {#section_2E96FFFA93D44F7D8DBCEC97203204AA}
+## Filter alerts
+
+You can create simple alerts  using filters. For example, define an alert on number of sessions for people visiting the home page through a mobile app session.
 
 <!-- 
 
@@ -18,12 +20,12 @@ Update screenshots for better readability.
 
  -->
 
-![](assets/alerts_example1.png)
+![](assets/alerts-example1.png)
 
 
 
-## Consolidate (stack) alerts instead of creating multiple alerts {#section_B27B0856BA104B9FB6D0BBB317633F18}
+## Stack alerts
 
-Stacking alerts ensures that alerts get combined and you don't get a number of separate alerts.
+You can consolidate (stack) alerts instead of creating multiple alerts. Stacking alerts ensures that alerts get combined and you don't get a number of separate alerts. In the example below an alert is sent when either of the metrics tresholds is triggered.
 
-![](assets/alerts_example2.png)
+![](assets/alerts-example2.png)

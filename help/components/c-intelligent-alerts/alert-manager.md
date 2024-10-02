@@ -1,104 +1,115 @@
 ---
 description: Create, edit, or delete alerts.
-title: Alert Manager (Analysis Workspace)
+title: Manage aletts
 feature: Workspace Basics
 role: User, Admin
 ---
 # Manage alerts
 
-You can manage existing alerts in the Alerts manager. You can perform various management tasks on alerts, such as tagging, renaming, deleting, and more.
+
+You can filter, tag, delete, rename, copy, enable, disable renew, and export alerts from a central [!UICONTROL Alerts] management interface. To manage alerts:
+
+* Select **[!UICONTROL Components]** in the main interface, then select **[!UICONTROL Alerts]**.
 
 The Alerts manager is structured very much like the [Filter manager](/help/components/filters/manage-filters.md) and the [Calculated metric manager](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
-## Create alerts
 
-To create alerts from the Alerts manager:
+## Alerts manager
 
-1. Select **[!UICONTROL Components]** > **[!UICONTROL Alerts]** to access the Alerts manager in Customer Journey Analytics.
+The Alerts manager has the following interface elements:
 
-   ![](assets/alert-manager.png)
+![Filters interface](assets/alerts-manager.png)
 
-1. Select [!UICONTROL **Add**] (or [!UICONTROL **Create new alert**] if you don't have any existing alerts).
+### Alerts list
 
-1. Continue with [Create alerts](/help/components/c-intelligent-alerts/alert-builder.md) for more details about creating alerts.
+The alerts list ➊ displays all the alerts that you own, the alerts that have been scoped to all your projects, and the alerts that have been shared with you. The list has the following columns:
 
-## Manage existing alerts 
+| Column | Description |
+|---|---|
+| ![StarOutline](/help/assets/icons/StarOutline.svg)  | Select to favor ![Star](/help/assets/icons/Star.svg) or un-favor ![StarOutline](/help/assets/icons/StarOutline.svg) an alert. |
+| **[!UICONTROL Title and description]** | To edit the alert, select the title link, which opens the [Alerts builder](alert-builder.md#alert-builder).|
+| **[!UICONTROL Type]** | Shows whether the  alert is a Customer Journey Analytics data alert or a Server call usage alert. | 
+| **[!UICONTROL Enabled]** | Indicates whether the alert is enabled or disabled. | 
+| **[!UICONTROL Data view]** | The data views that this alert applies to.  | 
+| **[!UICONTROL Owner]** | The owner of the alert. As a non-administrator, you only see alerts you own or those that are shared with you. |
+| **[!UICONTROL Tags]** | The tags for this alert. |
+| **[!UICONTROL Expiration Date]** | The date and time when the alert is set to expire. | 
+| **[!UICONTROL Date modified]** | The date and time that the alert was last modified. |
 
-To manage existing alerts in the Alerts manager:
+<!-- When "Last used" column is added, add this information as the description: Shows the date when the alert was last used. <p>This information can help you determine whether a component is valuable to users in your organization, where it is used, and if it needs to be deleted or modified.</p><p>Consider the following when viewing this column:</p><ul><li>This information does not include usage from the API, Report Builder, or Data Warehouse.</li><li>For some components, this column might not contain data if the component was last used prior to September 2023.</li></ul> -->
 
-1. Select **[!UICONTROL Components]** > **[!UICONTROL Alerts]** to access the Alerts manager in Customer Journey Analytics.
+Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to specify which columns you want to display.
 
-   ![](assets/alert-manager.png)
+### Action bar
 
-1. Select one or more alerts that you want to manage.
+You can action on alerts using the action bar ➋. The action bar contains the following actions:
 
-   ![](assets/alert-manager-tasks.png)
+| Icon | Action | Description |
+|:---:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) |**[!UICONTROL Add]** | Add another alert, using the [Alert builder](alert-builder.md#alert-builder). |
+| ![Search](/help/assets/icons/Search.svg) |[!UICONTROL *Search by title*] | When no alert is selected in the list, search for alerts using this search field. |
+| ![Label](/help/assets/icons/Label.svg)| **[!UICONTROL Tag]** | Tag the selected alerts. In the **[!UICONTROL Tag Alert]** dialog, select or de-select the tags for the selected alerts. Select **[!UICONTROL Save]** to save the tags for the selected alerts.|
+| ![Delete](/help/assets/icons/Delete.svg)| **[!UICONTROL Delete]** | Delete the selected alerts. You are prompted for a confirmation. |
+| ![Edit](/help/assets/icons/Edit.svg)| **[!UICONTROL Rename]** | Rename a single selected alert. When selected, you can rename the alert inline. |
+| ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL Copy]** | Copy the selected alert. New alerts are created with the same name and suffix `(Copy)`. | 
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)| **[!UICONTROL Enable]** or **[!UICONTROL Disable]** | Enable or disable the selected alerts. |
+|![Refresh](/help/assets/icons/Refresh.svg)| **[!UICONTROL Renew]** | Renews the alert expiration date. The  expiration date extends 1 year from the day you select this option, regardless of the original expiration date. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg)| **[!UICONTROL Export to CSV]** | Export the alerts to an `Alerts List.csv` file. |
 
-1. In the action bar, select any of the following options:
 
-   | Action | Function | 
-   |---------|----------|
-   | [!UICONTROL **Tag**] | Apply a tag to an alert. This helps you to organize alerts for ease of use. | 
-   | [!UICONTROL **Delete**] | Deletes the alert. | 
-   | [!UICONTROL **Rename**] | Renames the alert. |
-   | [!UICONTROL **Approve**] | Mark the alert as Approved. |
-   | [!UICONTROL **Copy**] | Creates a copy (duplicate) of the alert. |
-   | [!UICONTROL **Disable**] | Disables an alert that is currently enabled. |
-   | [!UICONTROL **Enable**] | Enables an alert that is currently disabled. |
-   | [!UICONTROL **Renew**] | Renews the alert expiration date. This extends the  expiration date to be 1 year from the day you selected this option, regardless of the original expiration date. |
-   | [!UICONTROL **Export to CSV**] | Exports the alert to a .CSV file. |
+### Active filter bar
 
-## Edit an alert
+The filter bar ➌ shows the active filters applied from the filter panel to the list of alerts (if any). You can quickly remove a filter using ![CrossSize75](/help/assets/icons/CrossSize75.svg). If more than one filter is specified, you can remove all filters using **[!UICONTROL Remove all]**.
 
-To edit an existing alert:
 
-1. Select **[!UICONTROL Components]** > **[!UICONTROL Alerts]** to access the Alerts manager in Adobe Analytics.
+### Filter panel
 
-   ![](assets/alert-manager.png)
+You can filter the list of alerts using the ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** left panel ➍. The filter panel displays the type of filter and the number of alerts that honor the specific filter.
 
-1. Select the alert name in the [!UICONTROL **Title and description**] column.
+{{filterspanel}}
 
-1. Edit the alert as desired. 
 
-   Following are some of the things you can do when editing an alert:
+#### Tags filter section
 
-   * Add alerts to other report suites
-   * Change the owner 
-   * Update the filters
-   * Update the expiration date
+{{tagfiltersection}}
 
-1. Edit the alert, then select [!UICONTROL **Save**].
 
-## Configure columns 
+#### Data view filter section
 
-You can configure the information displayed for each alert in the Alerts manager by configuring the columns that are displayed.
+{{dataviewfiltersection}}
 
-To configure the visible columns in the Alerts manager:
 
-1. In Adobe Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Alerts]**. 
+#### Owners filter section
 
-1. In the Alert manager, select the **Customize columns** icon ![Customize columns icon](assets/customize-columns-icon.png), then select the columns that you want to be displayed in the Alerts manager.
+{{ownerfiltersection}}
 
-   The following columns are available:
 
-   | Column title  | Description |
-   |---|---|
-   | Title and description | These values are provided in the Alert builder. To edit the title and description, select the title link to open the Alert builder.  |
-   | Favorites  | Displays star icons next to each alert, allowing you to mark alerts as favorites. <!-- For more information, see [Mark calculated metrics as favorites](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-favorite.md). --> |
-   | Type | Shows whether the alert is an Analytics data alert or a Server call usage alert. |
-   | Enabled | Shows whether the alert is currently enabled or disabled. | 
-   | Report suite | Indicates in which report suite the alert was last saved.  |
-   | Owner | Indicates who owns the alert. As a non-admin, you can see only alerts you own or those that were shared with you.  |
-   | Tags | Shows tags that were applied to the alert, either by you or by people who shared the alert with you.  |
-   | Expiration date | Shows the date and time when the alert is set to expire. |
-   | Date modified | Indicates the date when the alert was last modified.  |
+#### Enabled status filter section
 
-   {style="table-layout:auto"}
-   
-   <!-- When "Last used" column is added, add this information as the description: Shows the date when the alert was last used. <p>This information can help you determine whether a component is valuable to users in your organization, where it is used, and if it needs to be deleted or modified.</p><p>Consider the following when viewing this column:</p><ul><li>This information does not include usage from the API, Report Builder, or Data Warehouse.</li><li>For some components, this column might not contain data if the component was last used prior to September 2023.</li></ul> -->
+{{enabledstatusfiltersection}}
+
+
+#### Type filter section
+
+{{typefiltersection}}
+
+
+#### Other filters filter section
+
+{{otherfiltersfiltersection}}
+
+
+
+## Edit alerts
+
+You can edit an alert
+
+* In the [[!UICONTROL Alert] list](#alerts-list), select the title of the alert.
+
+You use the [Alert builder](alert-builder.md#alert-builder) to edit the alert.
 
 ## Troubleshoot an alert
 
-When troubleshooting an issue with an alert, provide the JID (Job Instance ID) number to Adobe Support. The JID number is located at the bottom of the alert email notification you received.
+When troubleshooting an issue with an alert, provide the JID (Job Instance ID) number to Adobe Support. The JID number is located at the bottom of the alert email notification you receive.
 
 ![Alert email](assets/alerts-email.PNG)

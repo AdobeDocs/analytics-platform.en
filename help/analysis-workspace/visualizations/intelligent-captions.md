@@ -1,5 +1,5 @@
 ---
-description: Use intelligent captions to generate natural-language insights to surface trends quickly within visualizations.
+description: Use intelligent captions to generate natural-language insights to surface trends within visualizations.
 title: Intelligent captions
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
@@ -11,20 +11,18 @@ Intelligent captions use advanced Machine Learning and Generative AI to provide 
 
 Intelligent captions are geared towards:
 
-* Analysts who need narratives to share with other users. Analysts need these insights to be able to provide context to their users.
-* Business users who want to discover high-level takeaways quickly.
-
-Captions are available to all Customer Journey Analytics users and do not require special permissions. 
+* Analysts, who need narratives to share with other users. Analysts need these insights to be able to provide context to their users.
+* Business users, who want to discover high-level takeaways quickly.
 
 ## Launch intelligent captions {#launch}
 
-To launch auto-generated captions for a line visualization, click the **[!UICONTROL Intelligent captions]** icon at the top right of the visualization.
+To launch auto-generated captions for a line visualization, select ![AEMScreen](/help/assets/icons/AI.svg) **[!UICONTROL Intelligent captions]** at the top right of the visualization.
 
 ![Launch Analysis window showing the Intelligent captions for Product Views Trend. ](assets/intell-caps-1.png)
 
 Natural-language insights are now being generated. 
 
-Keep in mind that
+Keep in mind that:
 
 * You need a minimum of 3 data points to generate captions successfully. Otherwise, you might get an error like **[!UICONTROL Not enough data to analyze]**.
 
@@ -95,7 +93,7 @@ The following parameters govern access to Intelligent captions:
 
 * **Solution access**: The Intelligent captions feature is available in Customer Journey Analytics, but not in Adobe Analytics.
 
-* **Contractual access**: If you are not able to use intelligent captions, please contact your organization's administrator or Adobe Account Representative. Before you can use Intelligent in your organization, you must agree to certain GenAI-related legal terms.
+* **Contractual access**: If you are not able to use Intelligent captions, please contact your organization's administrator or Adobe Account Representative. Before you can use Intelligent captions in your organization, you must agree to certain GenAI-related legal terms.
 
 * **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Intelligent Captions]** permission determines access. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
    1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**.

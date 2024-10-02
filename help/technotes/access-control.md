@@ -140,7 +140,7 @@ You can provide Product profile administration access to a team lead of a third 
 
 ### Row-level access control
 
-Let's say you want to give users access to data from one day only. Here is how you would limit access to those specific rows:
+You want to give users access to data from one day only. Here is how you would limit access to those specific rows:
 
 1. Create a filter in [!UICONTROL Settings] of a specific data view, where [!UICONTROL Day] equals the date you want them to have data access to. See [Create data view](/help/data-views/create-dataview.md#settings-filters) for more information.
 1. Save the data view, which applies the filter to the data part of the datasets in the underlying connection. Any rows that don't fit the filter definition are automatically excluded from the data view and not available to Analysis Workspace when using this data view.
