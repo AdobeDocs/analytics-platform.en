@@ -41,7 +41,7 @@ To exclude specific rows from a Freeform table:
 
 1. Hover over the row that you want to exclude, then select ![Close](/help/assets/icons/Close.svg). 
 
-   Hold the Shift key to select a range of rows, or hold the Command key (on Mac) or the Ctrl key (on Windows) to select multiple rows.
+   Hold the ***shift*** to select a range of rows, or hold the ***cmd*** key (on Mac) or the ***ctrl*** key (on Windows) to select multiple rows.
 
 <!--### Right-click > Delete selected rows
 

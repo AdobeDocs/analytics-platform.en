@@ -46,16 +46,16 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to specify which colu
 
 You can action on annotations using the action bar ➋. The action bar contains the following actions:
 
-| Action | Description |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another annotation, using the [Annotation builder](create-annotations.md#annotation-builder). |
-| ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search by title*] | When no annotation is selected in the list, search for annotations using this search field. |
-| ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tag the selected annotations. In the **[!UICONTROL Tag Component]** dialog, select or de-select the tags for the selected annotations. Select **[!UICONTROL Save]** to save the tags for the selected annotations. |
-| ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Share the selected annotations. In the **[!UICONTROL Share Component]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected annotations. See [Share annotations](#share-annotations) for more details. |
-| ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Delete the selected annotations. You are prompted for a confirmation. |
-| ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Rename a single selected annotation. When selected, you can rename the annotation inline. |
-| ![Copy](/help/assets/icons/Copy.svg)  **[!UICONTROL Copy]** | Copy the selected annotations. New annotations are created with the same name and suffix (Copy) | 
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Export the annotations to an `Annotations List.csv` file. |
+| Icon| Action | Description |
+|:--:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Add]** | Add another annotation, using the [Annotation builder](create-annotations.md#annotation-builder). |
+| ![Search](/help/assets/icons/Search.svg) | [!UICONTROL *Search by title*] | When no annotation is selected in the list, search for annotations using this search field. |
+| ![Label](/help/assets/icons/Label.svg)| **[!UICONTROL Tag]** | Tag the selected annotations. In the **[!UICONTROL Tag Component]** dialog, select or de-select the tags for the selected annotations. Select **[!UICONTROL Save]** to save the tags for the selected annotations. |
+| ![Share](/help/assets/icons/ShareAlt.svg)| **[!UICONTROL Share]** | Share the selected annotations. In the **[!UICONTROL Share Component]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected annotations. See [Share annotations](#share-annotations) for more details. |
+| ![Delete](/help/assets/icons/Delete.svg)| **[!UICONTROL Delete]** | Delete the selected annotations. You are prompted for a confirmation. |
+| ![Edit](/help/assets/icons/Edit.svg)| **[!UICONTROL Rename]** | Rename a single selected annotation. When selected, you can rename the annotation inline. |
+| ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL Copy]** | Copy the selected annotations. New annotations are created with the same name and suffix (Copy) | 
+| ![FileCSV](/help/assets/icons/FileCSV.svg)| **[!UICONTROL Export to CSV]** | Export the annotations to an `Annotations List.csv` file. |
 
 ### Active filter bar
 

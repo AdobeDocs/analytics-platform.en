@@ -13,7 +13,7 @@ See the [Components overview](/help/components/overview.md) for more information
 
 >[!TIP]
 >
->For information about each component, select the ![InfoOutline](/help/assets/icons/InfoOutline.svg) icon next to the name of the component.
+>For information about each component, use ![InfoOutline](/help/assets/icons/InfoOutline.svg). See [Component info](#component-info) for more information
 
 ## Add components to a project
 
