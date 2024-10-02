@@ -168,7 +168,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Experimentation](../analysis-workspace/c-panels/experimentation.md)
     + [Freeform](../analysis-workspace/c-panels/freeform-panel.md)
     + [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
-    + [Media concurrent viewers](../analysis-workspace/c-panels/media-concurrent-viewers.md)v
+    + [Media concurrent viewers](../analysis-workspace/c-panels/media-concurrent-viewers.md)
     + [Media playback time Spent](../analysis-workspace/c-panels/media-playback-time-spent.md)
     + [Next or previous item](../analysis-workspace/c-panels/next-previous.md)
     + [Quick insights](../analysis-workspace/c-panels/quickinsight.md)
@@ -251,7 +251,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Preview dimensions](../components/dimensions/view-dimensions.md)
     + [Break down dimensions](../components/dimensions/t-breakdown-fa.md)
     + [Time-parting dimensions](../components/dimensions/time-parting-dimensions.md)
-    + [Dimensions with very high cardinality](../components/dimensions/high-cardinality.md)
+    + [High cardinality dimensions](../components/dimensions/high-cardinality.md)
   + [Metrics](../components/apply-create-metrics.md)
   + Filters {#cja-filters}
     + [Filters overview](../components/filters/filters-overview.md)
