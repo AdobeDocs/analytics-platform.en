@@ -40,17 +40,17 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to specify which colu
 
 You can action on date ranges using the action bar ➋. The action bar contains the following actions:
 
-| Action | Description |
-|---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another date range, using the [Date range builder](create.md#date-range-builder). |
-| ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search by title*] | When no date range is selected in the list, search for date ranges using this search field. |
-| ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tag the selected date ranges. In the **[!UICONTROL Tag Date range]** dialog, select or de-select the tags for the selected date ranges. Select **[!UICONTROL Save]** to save the tags for the selected date ranges. |
-| ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Share the selected date ranges. In the **[!UICONTROL Share Date range]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected date ranges. |
-| ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Delete the selected date ranges. You are prompted for a confirmation. |
-| ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Rename a single selected date range. When selected, you can rename the date range inline. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Approve the selected date ranges. | 
-| ![Copy](/help/assets/icons/Copy.svg)  **[!UICONTROL Copy]** | Copy the selected date ranges. New date ranges are created with the same name and suffix (Copy) | 
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Export the selected date ranges to a `Date ranges List.csv` file. |
+| Icon | Action | Description |
+|:---:|---|---|
+| ![AddCircle](/help/assets/icons/AddCircle.svg)| **[!UICONTROL Add]** | Add another date range, using the [Date range builder](create.md#date-range-builder). |
+| ![Search](/help/assets/icons/Search.svg)| [!UICONTROL *Search by title*] | When no date range is selected in the list, search for date ranges using this search field. |
+| ![Label](/help/assets/icons/Label.svg)| **[!UICONTROL Tag]** | Tag the selected date ranges. In the **[!UICONTROL Tag Date range]** dialog, select or de-select the tags for the selected date ranges. Select **[!UICONTROL Save]** to save the tags for the selected date ranges. |
+| ![Share](/help/assets/icons/ShareAlt.svg)| **[!UICONTROL Share]** | Share the selected date ranges. In the **[!UICONTROL Share Date range]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected date ranges. |
+| ![Delete](/help/assets/icons/Delete.svg) |**[!UICONTROL Delete]** | Delete the selected date ranges. You are prompted for a confirmation. |
+| ![Edit](/help/assets/icons/Edit.svg)| **[!UICONTROL Rename]** | Rename a single selected date range. When selected, you can rename the date range inline. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)| **[!UICONTROL Approve]** | Approve the selected date ranges. | 
+| ![Copy](/help/assets/icons/Copy.svg)|  **[!UICONTROL Copy]** | Copy the selected date ranges. New date ranges are created with the same name and suffix (Copy) | 
+| ![FileCSV](/help/assets/icons/FileCSV.svg)| **[!UICONTROL Export to CSV]** | Export the selected date ranges to a `Date ranges List.csv` file. |
 
 ### Active filter bar
 

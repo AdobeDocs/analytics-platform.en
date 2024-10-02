@@ -17,7 +17,7 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
-A ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) [!UICONTROL Fallout] visualization shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages.
+A ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]** visualization shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages.
 
 +++ View a video demonstration of the [!UICONTROL Fallout visualization].
 

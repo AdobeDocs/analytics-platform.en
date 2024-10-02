@@ -167,11 +167,11 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Attribution](../analysis-workspace/c-panels/attribution.md)
     + [Experimentation](../analysis-workspace/c-panels/experimentation.md)
     + [Freeform](../analysis-workspace/c-panels/freeform-panel.md)
-    + [Media Average Minute Audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
-    + [Media Concurrent Viewers](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-    + [Media Playback Time Spent](../analysis-workspace/c-panels/media-playback-time-spent.md)
+    + [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+    + [Media concurrent viewers](../analysis-workspace/c-panels/media-concurrent-viewers.md)v
+    + [Media playback time Spent](../analysis-workspace/c-panels/media-playback-time-spent.md)
     + [Next or previous item](../analysis-workspace/c-panels/next-previous.md)
-    + [Quick Insights](../analysis-workspace/c-panels/quickinsight.md)
+    + [Quick insights](../analysis-workspace/c-panels/quickinsight.md)
   + Curate, Share and Schedule projects {#curate-share}
     + [Share menu](../analysis-workspace/curate-share/send-schedule-files.md)
     + [Curate projects](../analysis-workspace/curate-share/curate.md)

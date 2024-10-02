@@ -23,7 +23,7 @@ role: User
 
 
 
-The ![GraphPathing](/help/assets/icons/GraphPathing.svg) [!UICONTROL Flow] visualization shows customer paths through your websites and apps.
+The ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Flow]** visualization shows customer paths through your websites and apps.
 
 With the visualization you can:
 
@@ -31,7 +31,7 @@ With the visualization you can:
 * Analyze where customers go before and after specified checkpoints, such as entry, a specific dimension, or exit.
 * Create filters by designating a specific point in a chosen path
 
-+++ View a video demonstration of the [!UICONTROL Flow] visualization.
++++ View a video demonstration of the Flow visualization.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
 

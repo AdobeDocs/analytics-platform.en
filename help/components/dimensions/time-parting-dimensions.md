@@ -7,7 +7,7 @@ role: User
 ---
 # Time-parting dimensions in Analysis Workspace
 
-Time parting takes the timestamp of collected events and breaks it into more meaningful dimensions, such as "Hour of Day" or "Day of Week".
+Time parting takes the timestamp of collected events and breaks it into more meaningful dimensions, such as **Hour of Day** or **Day of Week**.
 
 Time-parting dimensions are based on the time zone of the data view. These dimensions are available in Analysis Workspace and can help to answer the following questions:
 

@@ -45,7 +45,7 @@ You can edit settings for multiple columns at once. Select multiple columns and 
 
 Conditional formatting applies formatting to upper, midpoint, and lower limits that you can define. Applying conditional formatting within Freeform tables is also automatically enabled on breakdowns, unless [!UICONTROL Custom] limits are selected.
 
-<img src="./assets/conditional-formatting.png" alt="The Conditional formatting options with Custom selected" width=40%/>
+![Conditional formatting](./assets/conditional-formatting.png)
 
 | Conditional formatting options | Description |
 | --- | --- |
@@ -61,9 +61,19 @@ Conditional formatting applies formatting to upper, midpoint, and lower limits t
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
 >title="Use non-default attribution model"
->abstract="Enable a non-default attribution model for the selected columns"
+>abstract="Enable a non-default attribution model for the selected columns."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
+>title="Use non-default attribution model"
+>abstract="Non-default attribution mode are unavailable for this metric."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 You can override the default attribution model that is configured in [Data views](/help/data-views/component-settings/attribution.md).
