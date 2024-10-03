@@ -143,10 +143,6 @@ You create nodes in the following ways: by dragging Workspace components from th
 
 ### Show the top nodes based on existing nodes
 
->[!AVAILABILITY]
->
->This feature is not yet available.
-
 You can automatically show the top nodes based on the nodes that are already on the canvas. You can add the top nodes to Journey canvas or view them in a freeform table.
 
 This option is available for the following objects on the canvas:
@@ -215,17 +211,17 @@ You can select an arrow and show the top dimension items that come between 2 exi
 
 ### Duplicate nodes
 
->[!AVAILABILITY]
->
->This feature is not yet available.
-
 The option to duplicate is available for the following objects on the canvas:
+
+* Individual nodes
 
 * Multiple nodes
 
 To duplicate nodes:
 
-1. Select multiple nodes that you want to duplicate.
+1. Select one or more nodes that you want to duplicate. 
+
+   To select multiple nodes, hold Command (on Mac) or Ctrl (on Windows).
 
 1. Right-click one of the selected nodes, then select [!UICONTROL **Duplicate**].
 
@@ -257,7 +253,7 @@ You can do any of the following to combine nodes in Journey canvas:
 
 * From the left rail, drag multiple components simultaneously onto a blank area of the canvas while holding the Shift key.
 
-* On the canvas, select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**.<!--Is there a limit on how many you can combine? -->
+<!-- * On the canvas, select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**. Is there a limit on how many you can combine? -->
 
 #### Logic when combining nodes
 
@@ -298,7 +294,7 @@ Nodes are connected by an arrow. Both the arrow direction and width have signifi
 
 When you connect nodes in Journey canvas, they are connected using the THEN operator. This is also known as [sequential filtering](/help/components/filters/seg-sequential-build.md). 
 
-Nodes are connected as an "eventual path," which means that visitors are counted as long as they eventually move from one node to the other, regardless of any events occurring between the 2 nodes. The time allotted for users to move along the path is determined by the container setting. It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes).
+Nodes are connected as an "eventual path," which means that visitors are counted as long as they eventually move from one node to the other, regardless of any events occurring between the 2 nodes. The time allotted for users to move along the path is determined by the container setting. <!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
 You can view the logic of connected nodes by right-clicking the node, then selecting [!UICONTROL **Create filter from node**]. The logic is shown in the [!UICONTROL **Definition**] section.
 
@@ -322,6 +318,8 @@ When adding a node to the canvas, you can place it between two connected nodes. 
 
 For more information, see [Add nodes](#add-nodes).
 
+<!--
+
 ### Add a time constraint between nodes
 
 >[!AVAILABILITY]
@@ -338,14 +336,14 @@ To add a time constraint:
 
 1. In a Journey canvas visualization, right-click the arrow between 2 nodes, then select [!UICONTROL **Add time constraint**].
 
-<!-- 
-
 from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
 1. Choose from the following options: 
 
 --> 
 
 ## Manage nodes or arrows
+
+<!--
 
 ### Change the color of a node or arrow
 
@@ -365,17 +363,15 @@ To change the color of a node or arrow:
 
 1. In a Journey canvas visualization, right-click the node or arrow whose color you want to change.
 
-1. Select [!UICONTROL **Change color**]. <!--make sure "color" isn't capitalized. It is in the req doc-->
+1. Select [!UICONTROL **Change color**]. 
 
 1. Select the desired color. 
 
-   The following colors are available: <!--look into this interaction and color list-->
+   The following colors are available: 
+
+-->
 
 ### Rename a node
-
->[!AVAILABILITY]
->
->This feature is not yet available.
 
 When you drag a component to a Journey canvas visualization, it creates a node with the same name as the component name. You can rename the node to better match the step of the journey that the node represents.
 
@@ -447,15 +443,13 @@ Consider the following when applying a breakdown:
 
 #### Apply a breakdown to one or more nodes or arrows
 
->[!AVAILABILITY]
->
->This feature is not yet available.
-
 1. In a Journey canvas visualization, select one or more nodes where you want to apply a breakdown, then right-click one of the selected nodes.
 
    Or
 
    In a Journey canvas visualization, select one or more arrows between 2 nodes where you want to apply the breakdown, then right-click one of the selected arrows.
+
+   To select multiple nodes or arrows, hold Command (on Mac) or Ctrl (on Windows).
 
 1. Select [!UICONTROL **Breakdown**].
 
@@ -507,6 +501,8 @@ To create an audience:
 
    In a Journey canvas visualization, select one or more arrows between 2 nodes where you want to create an audience, then right-click one of the selected arrows.
 
+   To select multiple nodes or arrows, hold Command (on Mac) or Ctrl (on Windows).
+
    >[!NOTE]
    >
    >Audiences cannot include calculated metrics or any metrics that are based on a [summary dataset](/help/data-views/summary-data.md). If you try to create an audience from any area of Journey canvas that contains a calculated metric or a metric that is based on a summary dataset, the calculated metric will not be included in the audience definition.
@@ -516,10 +512,6 @@ To create an audience:
 1. Continue creating and publishing the audience as described in [Create and publish audiences](/help/components/audiences/publish.md).
 
 ### View trend data
-
->[!AVAILABILITY]
->
->This feature is not yet available.
 
 You can view the trend data in a line graph for objects in Journey canvas. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
@@ -540,6 +532,8 @@ To view trend data:
    Or
 
    In a Journey canvas visualization, select one or more arrows between 2 nodes for which you want to view trend data, then right-click one of the selected arrows.
+
+   To select multiple nodes or arrows, hold Command (on Mac) or Ctrl (on Windows).
 
 1. Select [!UICONTROL **Trend**].
 
