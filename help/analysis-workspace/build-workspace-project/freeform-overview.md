@@ -72,21 +72,21 @@ Hover over any column header to display ![ChevronDown](/help/assets/icons/Chevro
 
 You can take actions on one or more projects using the context menu ![More](/help/assets/icons/More.svg) or the blue action bar.
 
-| Action  | Description |
-|---|---|
-| ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[!UICONTROL *x* selected]** | Unselect your selected projects and folders and remove the blue action bar. |
-| ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Delete one or more projects or folders. You are prompted for a confirmation. |
-| ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Share a project. See [Share a project](/help/analysis-workspace/curate-share/share-projects.md) for more information. |
-| ![Edit](/help/assets/icons/Edit.svg) Rename | Rename a project. Opens a **[!UICONTROL Rename: *project name dialog*]**. Enter a new name and select **[!UICONTROL Save]**. |
-| ![Copy](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** | Copy one or more projects. Project do get the same name and suffix `(Copy)`. |
-| ![PinOnff](/help/assets/icons/PinOff.svg) **[!UICONTROL Pin]** or **[!UICONTROL Unpin]** | Pin or unpin one or more projects or folders. Pinned projects and folders appear at the top of the list and ignore the sorting order you specify. |
-| ![ArrowUp](/help/assets/icons/ArrowUp.svg) **[!UICONTROL Move up]** | Move a pinned project or folder up in the project list.  |
-| ![ArrowDown](/help/assets/icons/ArrowDown.svg) **[!UICONTROL Move down]** | Move a pinned project or folder down in the project list. |
-| ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tag one or more projects or folders. The **[!UICONTROL Tag Components]** dialog displays to select one or more tags. Select **[!UICONTROL Save]** to save the tags for the selected projects or folders. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** or **[!UICONTROL Unapprove]** | Approve or unapprove a project. Only administrators can approve projects. |
-|  ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export CSV]** | Export the selected projects to a CSV file with name `Project List.csv`. |
-|  ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Add Projects]** | Add one or more projects to a selected folder. In **[!UICONTROL Add Projects]** you can select one or more projects. Select **[!UICONTROL Add]** to add the projects to the folder. See [Add projects to folders](workspace-folders/add-projects.md#from-inside-a-folder) for more information. | 
-| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **[!UICONTROL Move to]** | Move one or more selected projects to a folder. In the **[!UICONTROL Select Folder]**, select the folder to move the selected project to and select **[!UICONTROL Move]**. See [Add projects to folders](workspace-folders/add-projects.md#from-the-project-list) for more information. |
+| Icon |Action  | Description |
+|:---:| ---|---|
+| ![CrossSize75](/help/assets/icons/Close.svg)| **[!UICONTROL *x* selected]** | Unselect your selected projects and folders and remove the blue action bar. |
+| ![Delete](/help/assets/icons/Delete.svg) |**[!UICONTROL Delete]** | Delete one or more projects or folders. You are prompted for a confirmation. |
+| ![Share](/help/assets/icons/ShareAlt.svg) |**[!UICONTROL Share]** | Share a project. See [Share a project](/help/analysis-workspace/curate-share/share-projects.md) for more information. |
+| ![Edit](/help/assets/icons/Edit.svg)| **[!UICONTROL Rename]** | Rename a project. Opens a **[!UICONTROL Rename: *project name dialog*]**. Enter a new name and select **[!UICONTROL Save]**. |
+| ![Copy](/help/assets/icons/Copy.svg)| **[!UICONTROL Copy]** | Copy one or more projects. Project do get the same name and suffix `(Copy)`. |
+| ![PinOnff](/help/assets/icons/PinOff.svg)| **[!UICONTROL Pin]** or **[!UICONTROL Unpin]** | Pin or unpin one or more projects or folders. Pinned projects and folders appear at the top of the list and ignore the sorting order you specify. |
+| ![ArrowUp](/help/assets/icons/ArrowUp.svg)| **[!UICONTROL Move up]** | Move a pinned project or folder up in the project list.  |
+| ![ArrowDown](/help/assets/icons/ArrowDown.svg)| **[!UICONTROL Move down]** | Move a pinned project or folder down in the project list. |
+| ![Label](/help/assets/icons/Label.svg)| **[!UICONTROL Tag]** | Tag one or more projects or folders. The **[!UICONTROL Tag Components]** dialog displays to select one or more tags. Select **[!UICONTROL Save]** to save the tags for the selected projects or folders. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)| **[!UICONTROL Approve]** or **[!UICONTROL Unapprove]** | Approve or unapprove a project. Only administrators can approve projects. |
+|  ![FileCSV](/help/assets/icons/FileCSV.svg)| **[!UICONTROL Export CSV]** | Export the selected projects to a CSV file with name `Project List.csv`. |
+|  ![ProjectAdd](/help/assets/icons/ProjectAdd.svg)| **[!UICONTROL Add Projects]** | Add one or more projects to a selected folder. In **[!UICONTROL Add Projects]** you can select one or more projects. Select **[!UICONTROL Add]** to add the projects to the folder. See [Add projects to folders](workspace-folders/add-projects.md#from-inside-a-folder) for more information. | 
+| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg)| **[!UICONTROL Move to]** | Move one or more selected projects to a folder. In the **[!UICONTROL Select Folder]**, select the folder to move the selected project to and select **[!UICONTROL Move]**. See [Add projects to folders](workspace-folders/add-projects.md#from-the-project-list) for more information. |
 
 
 
