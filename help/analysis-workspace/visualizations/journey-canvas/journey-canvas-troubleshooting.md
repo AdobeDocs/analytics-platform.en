@@ -14,22 +14,127 @@ The Journey canvas visualization allows you to analyze and gain deep insights on
 
 To learn more about Journey canvas, see [Journey canvas overview](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) and [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
+The following information can help you troubleshoot unintended outcomes you might be seeing, such as nodes that come later in the journey that show a higher percentage or number count than nodes that come earlier in the journey.
+
+## Nodes with a higher percentage or value than previous nodes 
+
+It is possible in Journey canvas for nodes that come later in the journey to show a higher percentage or number count than nodes that come earlier in the journey. 
+
+In other words, unlike in Fallout visualizations, which are always funnel-shaped (with participation decreasing with each step), Journey canvas visualizations can have higher participation in later steps of the journey than in previous steps. 
+
+This can occur in the following scenarios:
+
+* When using a primary metric other than People or Sessions
+
+* When multiple paths converge into a single node
+
+### The journey uses a primary metric other than People or Session
+
+Because Journey canvas allows you to use any metric as the primary metric, this can result in nodes that come later in the journey to show a higher percentage or number count than nodes that come earlier in the journey.
+
+![Journey with nodes with a higher percentage than previous node](assets/journey-canvas-higher-percentage.png)
+
+The journey used in the following scenarios is configured with the following settings:
+
+* **[!UICONTROL Person]** is set as the container
+
+* **[!UICONTROL Event]** is set as the primary metric
+
+#### Scenario 1 - User A follows journey path in the first session, then only later nodes in a subsequent session
+
+Suppose that User A visits the site and follows the path of the journey (Node 1: Visit site > Node 2: View Product A > Node 3: Check out). In this scenario, an event is counted on each node of the journey. 
+
+Now suppose that User A visits the site again in a later session. Because User A already met the requirements of the journey by following the journey path in a previous session, this means that any time User A checks out--even if User A has not followed the path of the journey in their current session--an event is counted on the journey's third node, "Check out." This results in a higher percentage and number on the "Check out" node than on the preceding node, "View Product A."
+
+In this example, the journey's container setting plays a critical role in determining whether the event on the third node ("Check out") is counted in the subsequent session. 
+
+Alternatively, if Session had been set as the container (instead of Person), then the event that took place only on the third node in the subsequent visit would not have counted in the journey, because the statistics shown in the journey would be constrained to a single defined session for a given person. To learn more about the container setting, see [Begin building a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) in the article [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+
+<!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
+
+#### Scenario 2 - User B falls out of the journey
+
+Suppose that User B visits the site and does not follow the path of the journey (visits the site, views Product B, and then checks out), an event is counted for the journey's start node, "Visit site," but an event is not counted for the remaining nodes, and User B falls out of the journey. Even though User B checked out, an event is not counted on the third node, "Check out," because User B did not follow the path of the journey by viewing Product A. 
+
+This is because events are counted for each node only when people follow the journey's "eventual path," which means that events are counted as long as the person eventually moved from one node to the other, regardless of any events occurring between the 2 nodes. 
+
+### The journey has multiple paths converging into a single node
+
+Journey canvas allows you to include multiple start nodes in a single journey, resulting in multiple paths. These paths can converge into a common node, resulting in nodes that come later in the journey showing a higher percentage or number count than nodes that come earlier in the journey.
+
+![A journey with multiple paths converging into a single node](assets/journey-canvas-percentage-converge.png)
+
+<!--
+
+The journey used in the following scenarios is configured with the following settings:
+
+* **[!UICONTROL Person]** is set as the container
+
+* **[!UICONTROL Event]** is set as the primary metric
+
+#### Scenario 
+
+When a journey contains multiple paths that converge into a single node, the two paths are combined into the single node using the OR operator. This can result in the
+
+-->
+
+### Journey percentages
+
+While the numbers shown on each node of a journey remain constant regardless of what is selected in the **[!UICONTROL Percentage value]** field, the percentages themselves can change. 
+
+The following sections show how the percentages can change for the same journey, depending on which of the following options is selected in the **[!UICONTROL Percentage value]** field:
+
++++Percent of start node
+
+The nodes in this journey contain the following statistics when the **[!UICONTROL Percentage value]** field is set to **[!UICONTROL Percent of start node]**:
+
+![Journey with nodes with a higher percentage than previous node](assets/journey-canvas-higher-percentage.png)
+
+|Node | Statistics | 
+|---------|----------|
+| Node 1 - "Visit site" | In this journey, there were 354,147 events on the site within the reporting date range, as shown in the journey's start node, "Visit site."  | 
+| Node 2 - "View Product A" | Of the total number of events shown in the start node, 14% (48,394) of them matched the criteria of the journey's second node, "View Product A."  | 
+| Node 3 - "Check out" | Of the total number of events shown in the start node, 32% (113,782) of them matched the criteria of the journey's third node, "Check out."  | 
+
++++
+
++++Percent of previous node
+
+The nodes in this journey contain the following statistics when the **[!UICONTROL Percentage value]** field is set to **[!UICONTROL Percent of previous node]**:
+
+![Journey with nodes with a higher percentage than previous node](assets/journey-canvas-percentage-previous.png)
+
+|Node | Statistics | 
+|---------|----------|
+| Node 1 - "Visit site" | In this journey, there were 354,147 events on the site within the reporting date range, as shown in the journey's start node, "Visit site."  | 
+| Node 2 - "View Product A" | Of the total number of events shown in the previous node, 14% (48,394) of them matched the criteria of the journey's second node, "View Product A."  | 
+| Node 3 - "Check out" | Of the total number of events shown in the previous node, greater than 100% (113,782) of them matched the criteria of the journey's third node, "Check out."  | 
+
++++
+
++++Percent of total
+
+The nodes in this journey contain the following statistics when the **[!UICONTROL Percentage value]** field is set to **[!UICONTROL Percent of total]**:
+
+![Journey with nodes with a higher percentage than previous node](assets/journey-canvas-percentage-total.png)
+
+|Node | Statistics | 
+|---------|----------|
+| Node 1 - "Visit site" | In this journey, there were 354,147 events on the site within the reporting date range, as shown in the journey's start node, "Visit site."  | 
+| Node 2 - "View Product A" | Of the total number of events, less than 1% (48,394) of them matched the criteria of the journey's second node, "View Product A."  | 
+| Node 3 - "Check out" | Of the total number of events, 1% (113,782) of them matched the criteria of the journey's third node, "Check out."  | 
+
++++
 
 ## Compatibility between the container metric and the primary metric
 
 You can configure the Journey canvas container to be Person (which uses the People metric) or Session (which uses the Sessions metric).
 
-When choosing a primary or secondary metric, make sure you choose a metric that is compatible with the container metric that is currently selected. Most metrics are compatible with the container metrics that are available. However, some combinations of container metrics and primary or secondary metrics should be avoided.
+Make sure you choose a primary metric that is compatible with the container metric that is currently selected. Most metrics are compatible with the container metrics that are available. However, some combinations of container metrics and primary metrics should be avoided.
 
-For example, if you use Person as the container with Session as the primary or secondary metric
+For example, using Person as the container with Session as the primary metric can result in unintended outcomes.
 
-
-| Container | Primary or secondary metric | Outcome |
-|---------|----------|---------|
-| People | Session | This combination can result in unintended outcomes. Specifically, e outcome of this combination can re |
-| A2 | B2 | C2 |
-| A3 | B3 | C3 |
-
+<!--
 
 ## Percentages that exceed 100%
 
@@ -39,40 +144,4 @@ The following configurations can result in nodes that show percentages that exce
 
   For example, if Revenue is selected as the primary metric, and no revenue is being realized on the primary metric, then on any node where revenue is being realized will show as exceeding 100%. 
 
-## Nodes that have a higher percentage or value than previous nodes 
-
-## Nodes that have a higher percentage or value than preceding nodes 
-
-## Nodes that come later in the journey have a higher percentage or value than those that come earlier
-
-## A node with a higher percentage or value than nodes that precede it in the journey
-
-## Nodes with a higher percentage or value than previous nodes 
-
-## Nodes 
-
-## A higher percentage or value in subsequent nodes
-
-## A journey that is not funnel-shaped
-
-It is possible in Journey canvas for nodes that come later in the journey to show a higher percentage or number count than nodes that come earlier in the journey. 
-
-In other words, unlike in Fallout visualizations, which are always funnel-shaped (with participation decreasing with each step), Journey canvas visualizations can have higher participation in later steps of the journey. 
-
-Consider a journey with the following characteristics:
-
-* The journey contains 3 nodes: Node A ---> Node B ---> Node C
-
-* The **[!UICONTROL Percentage value]** field is set to **[!UICONTROL Percent of total]**
-
-* **[!UICONTROL Person]** is set as the container
-
-* **[!UICONTROL Event]** is set as the primary metric
-
-In this scenario, suppose a visitor visited Node A, Node B, and then Node C. Each of these visits counts as a single event on each node, because they were visited in the order defined by the journey. 
-
-On a subsequent visit to the site, the visitor visits only Node C, resulting in an additional event on Node C. 
-
-In this case, Nodes A and B would each show 1 event and 100%, while Node C would show 2 events and 200%.
-
-On the other hand, if Session were set as the container, then Nodes A, B, and C would each show 1 event and 100%, because the subsequent visit to the site where the visitor visited only Node C would not have met the journey requirements, because Node A and Node B were not visited prior to visiting Node C. 
+-->
