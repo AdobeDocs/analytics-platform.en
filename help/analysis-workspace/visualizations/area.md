@@ -30,7 +30,7 @@ The ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]** visuali
 >[!CONTEXTUALHELP]
 >id="cja_workspace_areastacked_button"
 >title="Area stacked"
->abstract="Creates an area graph visualization to represent the stacking of multiple metrics."
+>abstract="Create an area graph visualization to represent the stacking of multiple metrics."
 
 <!-- markdownlint-enable MD034 -->
 

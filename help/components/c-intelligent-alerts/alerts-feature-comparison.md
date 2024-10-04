@@ -50,9 +50,8 @@ In Adobe Analytics, the following options are available:
 
 * Open a project in Analysis Workspace, then select **[!UICONTROL Components]** > **[!UICONTROL Create alert]**.
    
-* Open a project in Analysis Workspace, then use the following shortcut:
+* Open a project in Analysis Workspace, then use the following shortcut: **[!UICONTROL *ctrl*]** + **[!UICONTROL *shift*]** + **[!UICONTROL *a*]** (Windows) or **[!UICONTROL *cmd*]** + **[!UICONTROL *shift*]** + **[!UICONTROL *a*]** (macOS).
 
-  `ctrl (or cmd) + shift + a` 
 
 
   
