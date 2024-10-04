@@ -1,12 +1,12 @@
 ---
 description: Explains what factors influence the consistency of metrics and audience membership counts between Real-time Customer Data Platform (Real-time CDP) and Customer Journey Analytics.
-title: Consistency of metrics and audience membership counts between Real-time CDP and Customer Journey Analytics
+title: Consistency of metrics and audience membership
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
 ---
 
-# Consistency of metrics and audience membership counts between Real-time CDP and Adobe Customer Journey Analytics
+# Consistency of metrics and audience membership
 
 In real-world scenarios, consistency of metrics and audience membership counts across Real-time Customer Data Platform (Real-time CDP) and Customer Journey Analytics cannot be guaranteed. This document explains why. 
 

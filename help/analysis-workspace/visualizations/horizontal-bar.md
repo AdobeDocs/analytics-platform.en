@@ -5,7 +5,9 @@ feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
 ---
-# Horizontal bar and Horizontal bar stacked
+# Horizontal bar (stacked)
+
+The horizontal bar visualization has a standard and stacked option.
 
 ## Horizontal bar {#horizontal-bar}
 

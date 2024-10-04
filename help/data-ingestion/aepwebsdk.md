@@ -6,7 +6,7 @@ feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
 ---
-# Ingest data via the Adobe Experience Platform Web SDK
+# Ingest data via the Web SDK
 
 This quick start guide explains how you can ingest website tracking data directly into Adobe Experience Platform using the Adobe Experience Platform Web SDK and Edge Network and then use that data in Customer Journey Analytics.
 

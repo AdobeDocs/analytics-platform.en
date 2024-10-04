@@ -5,7 +5,9 @@ feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
 ---
-# Bar and bar stacked
+# Bar (stacked)
+
+The bar visualization has a standard and stacked option.
 
 ## Bar {#bar}
 

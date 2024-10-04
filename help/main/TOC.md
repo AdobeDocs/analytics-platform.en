@@ -55,7 +55,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Data ingestion overview](../data-ingestion/data-ingestion.md)
   + Ingest and use quick start guides{#ingest-use-guides}
     + [Adobe Analytics](../data-ingestion/analytics.md)
-    + Adobe Experience Platform Edge Network {#edge-network}
+    + Experience Platform Edge Network {#edge-network}
       + [Web SDK](../data-ingestion/aepwebsdk.md)
       + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
       + [Server API](../data-ingestion/serverapi.md)
@@ -109,7 +109,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Open projects](/help/analysis-workspace/build-workspace-project/open-projects.md)
     + [Save projects](../analysis-workspace/build-workspace-project/save-projects.md)
     + Folders in Workspace {#workspace-folders}
-      + [About folders in Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+      + [About folders](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
       + [Create folders and subfolders](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
       + [Manage folders](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
       + [Add or move projects to folders](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
@@ -126,7 +126,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + Column and row settings {#column-row-settings}
         + [Column settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
         + [Row settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
-        + [Dynamic vs. Static items](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+        + [Dynamic and static items](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
       + [Filter and sort tables](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
       + [Workspace totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
     + Cohort Table {#cohort-table}
@@ -169,7 +169,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Freeform](../analysis-workspace/c-panels/freeform-panel.md)
     + [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
     + [Media concurrent viewers](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-    + [Media playback time Spent](../analysis-workspace/c-panels/media-playback-time-spent.md)
+    + [Media playback time spent](../analysis-workspace/c-panels/media-playback-time-spent.md)
     + [Next or previous item](../analysis-workspace/c-panels/next-previous.md)
     + [Quick insights](../analysis-workspace/c-panels/quickinsight.md)
   + Curate, Share and Schedule projects {#curate-share}
@@ -185,20 +185,20 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Export to the cloud](../analysis-workspace/export/export-cloud.md)
   + Anomaly Detection {#anomaly-detection}
     + [Overview](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
-    + [View anomalies in Analysis Workspace](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
-    + [Statistical techniques used in anomaly detection](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
+    + [View anomalies](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
+    + [Statistical techniques](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
   + Forecasting {#forecasting}
     + [Overview](../analysis-workspace/c-forecast/forecasting.md)
-    + [View forecasts in Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
-    + [Statistical techniques used in forecasting service](../analysis-workspace/c-forecast/statistics-forecasting.md)
-    + [Table of contents](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
+    + [View forecasts](../analysis-workspace/c-forecast/view-forecasts.md)
+    + [Statistical techniques](../analysis-workspace/c-forecast/statistics-forecasting.md)
+  + [Table of contents](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
   + [User preferences](../analysis-workspace/user-preferences.md)
-  + Workspace FAQs {#workspace-faq}
+  + Workspace FAQs and more {#workspace-faq}
     + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)
     + [Error messages](../analysis-workspace/workspace-faq/error-messages.md)
-    + [Analysis Workspace limitations](../analysis-workspace/workspace-faq/aw-limitations.md)
+    + [Limitations](../analysis-workspace/workspace-faq/aw-limitations.md)
     + [Administration requirements](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-    + [Accessibility in Analysis Workspace](../analysis-workspace/workspace-faq/aw-accessibility.md)
+    + [Accessibility](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + Analytics dashboards {#cja-dashboards}
   + [Analytics dashboards - Overview](../mobile-app/home.md)
@@ -354,10 +354,10 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](../use-cases/cja-usecases.md)
   + Google Analytics data {#ga}
-    + [Migrate data from Google Analytics to Customer Journey Analytics overview](../use-cases/ga/overview.md)
-    + [Ingest Google Analytics historical data into Platform](../use-cases/ga/backfill.md)
-    + [Configure streaming Google Analytics data into Platform](../use-cases/ga/streaming.md)
-    + [Report on Google Analytics data in Customer Journey Analytics](../use-cases/ga/report.md)
+    + [Migrate data from Google Analytics](../use-cases/ga/overview.md)
+    + [Ingest Google Analytics historical data ](../use-cases/ga/backfill.md)
+    + [Configure streaming Google Analytics data](../use-cases/ga/streaming.md)
+    + [Report on Google Analytics data](../use-cases/ga/report.md)
   + Data ingestion {#data-ingestion}
     + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
     + [Ingest and use Experience Platform audiences ](../use-cases/data-ingestion/ingest-aep-segments.md)
@@ -384,14 +384,14 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Stitching {#stitching}
     + [Shared devices](/help/use-cases/stitching/shared-devices.md)
   + Derived fields {#derived-fields}
-    + [Use derived fields to report on goals](../use-cases/goals-using-derived-fields.md)
+    + [Report on goals](../use-cases/goals-using-derived-fields.md)
 
 + Labs {#labs}
   + [Labs User Guide](../labs/labs.md)
 
 + Troubleshooting {#troubleshooting}
-  + [Compare your Adobe Analytics data to Customer Journey Analytics data](../troubleshooting/compare.md)
-  + [Consistency of metrics and audience membership counts between Real-time CDP and Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
+  + [Compare data](../troubleshooting/compare.md)
+  + [Consistency of metrics and audiences](../troubleshooting/consistency-rcdp-cja.md)
   + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
 
 + Tech notes {#technotes}
@@ -402,7 +402,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Glossary](../technotes/glossary.md)
   + [Guardrails](../technotes/guardrails.md)
   + [IP addresses](../technotes/ip-addresses.md)
-  + [Optimize Customer Journey Analytics performance](../technotes/optimizing-performance.md)
+  + [Optimize performance](../technotes/optimizing-performance.md)
   + [View and manage usage](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)

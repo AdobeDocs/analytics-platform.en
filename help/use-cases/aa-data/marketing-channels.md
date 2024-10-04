@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: User
 ---
-# Use Marketing channel dimensions in Adobe Experience Platform
+# Use Marketing channel dimensions
 
 If your organization uses the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) to bring report suite data into Customer Journey Analytics, you can configure a connection in Customer Journey Analytics to report on Marketing Channel dimensions.
 

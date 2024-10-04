@@ -141,25 +141,25 @@ At several points prior to, during, and after audience publishing, latencies can
 
 ## Use Customer Journey Analytics audiences in Experience Platform {#audiences-aep}
 
-Customer Journey Analytics takes all the namespace and ID combinations from your published audience and streams them into Real-Time Customer Profile (RTCP). Customer Journey Analytics sends the audience to Experience Platform with the primary identity set, according to what was selected as the [!UICONTROL Person ID] when the connection was configured.
+Customer Journey Analytics takes all the namespace and ID combinations from your published audience and streams them into Real-Time Customer Data Platform . Customer Journey Analytics sends the audience to Experience Platform with the primary identity set, according to what was selected as the [!UICONTROL Person ID] when the connection was configured.
 
-RTCP then examines each namespace/ID combination and looks for a profile that it may be part of. A profile is basically a cluster of linked namespaces, IDs and devices. If it finds a profile, it adds the namespace and ID to the other IDs in this profile as a segment membership attribute. For example, <user@adobe.com> can be targeted across all their devices and channels. If a profile is not found, a new one is created.
+Real-Time Customer Data Platform then examines each namespace/ID combination and looks for a profile that it may be part of. A profile is basically a cluster of linked namespaces, IDs and devices. If it finds a profile, it adds the namespace and ID to the other IDs in this profile as a segment membership attribute. For example, <user@adobe.com> can be targeted across all their devices and channels. If a profile is not found, a new one is created.
 
 To view Customer Journey Analytics audiences in Platform:
 
-1. Expand [!UICONTROL **Customer**] in the left panel, then select [!UICONTROL **Audiences**]. <!-- is there a folder called "Customer Journey Analytics? -->
+1. Expand **[!UICONTROL Customer]** in the left panel, then select **[!UICONTROL Audiences]**. <!-- is there a folder called "Customer Journey Analytics? -->
 
-1. Select the [!UICONTROL **Browse**] tab.
-
-   ![Audiences option in the left panel](assets/audiences-aep.png)
+1. Select the **[!UICONTROL Browse]** tab.
 
 1. To locate the audience that you published from Customer Journey Analytics, do any of the following:
 
-   * Sort the table by the [!UICONTROL **Origin**] column to view audiences that show [!UICONTROL **Customer Journey Analytics**] as the origin.
+   ![Audiences option in the left panel](assets/aep-audiences.png)
+
+   * Sort the table by the **[!UICONTROL Origin]** column to view audiences that show [!UICONTROL **Customer Journey Analytics**] as the origin.
    
-   * Select the filter icon.
+   * Filter ![Filter](/help/assets/icons/Filter.svg) on **[!UICONTROL Origin]** and select **[!UICONTROL Customer Journey Analytics]**.
    
-   * Use the search field.
+   * Use the ![Search](/help/assets/icons/Search.svg) search field.
 
 For more information about using Audiences in Platform, see the [Audiences](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) section in the [Segment Builder UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) in the Experience Platform documentation.
    
@@ -180,7 +180,7 @@ When a Customer Journey Analytics Audience is deleted, that audience is no longe
 
 +++
 
-+++**If a corresponding profile does not exist in RTCDP, is a new profile created?**
++++**If a corresponding profile does not exist in Real-Time Customer Data Platform, is a new profile created?**
 
 Yes, it will.
 
@@ -188,7 +188,7 @@ Yes, it will.
 
 +++**Does Customer Journey Analytics send the audience data over as pipeline events or as a flat file that also goes to the data lake?**
 
-Customer Journey Analytics streams the data into RTCP via pipeline, and this data is also collected into a system dataset in the data lake.
+Customer Journey Analytics streams the data into Real-Time Customer Data Platform via pipeline, and this data is also collected into a system dataset in the data lake.
 
 +++
 
@@ -204,9 +204,9 @@ See above. Only one identity per Customer Journey Analytics person is sent.
 
 +++
 
-+++**Does RTCP process the Customer Journey Analytics messages as well? Can Customer Journey Analytics add identities to a profile identity graph through audience sharing?**
++++**Does Real-Time Customer Data Platform process the Customer Journey Analytics messages as well? Can Customer Journey Analytics add identities to a profile identity graph through audience sharing?**
 
-No. Only one identity per person is sent, so there would be no graph edges for RTCP to consume. 
+No. Only one identity per person is sent, so there would be no graph edges for Real-Time Customer Data Platform to consume. 
 
 +++
 
