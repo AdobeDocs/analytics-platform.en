@@ -5,7 +5,9 @@ feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
 ---
-# Bar and bar stacked
+# Bar (stacked)
+
+The bar visualization has a standard and stacked option.
 
 ## Bar {#bar}
 
@@ -32,7 +34,7 @@ A granularity drop-down in the visualization settings lets you change a trended 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_barstacked_button"
 >title="Bar stacked"
->abstract="Creates a bar visualization to represent various values across one or more stacked metrics."
+>abstract="Create a bar visualization to represent various values across one or more stacked metrics."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -34,7 +34,7 @@ You want to define a date range that defines the period between the current day 
 +++ 
 
 <!--
-## Example: Use a 7-day rolling date range {#section_7EF63B2E9FF54D2E9144C4F76956A8DD}
+## Example: Use a 7-day rolling date range
 
 You can create a date range that specifies a 7-day rolling window that ends one week ago:
 

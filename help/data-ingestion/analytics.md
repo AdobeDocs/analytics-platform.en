@@ -6,7 +6,7 @@ feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
 ---
-# Ingest and use data from traditional Adobe Analytics
+# Ingest and use data from  Adobe Analytics
 
 This quick start guide explains how you can use the data collected by Adobe Analytics in Customer Journey Analytics.
 

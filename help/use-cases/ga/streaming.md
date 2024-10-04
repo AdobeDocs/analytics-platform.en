@@ -1,11 +1,11 @@
 ---
-title: Configure streaming Google Analytics data into Adobe Experience Platform
+title: Configure streaming Google Analytics data
 description: Learn how to set up your implementation to send a Google data layer into Adobe Experience Platform
 exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
 feature: Use Cases
 role: Admin
 ---
-# Configure streaming Google Analytics data into Adobe Experience Platform
+# Configure streaming Google Analytics data
 
 This page focuses on how to ingest your live Google Analytics data into Adobe Experience Platform, allowing you to reference that dataset in a Data View within Customer Journey Analytics. You can combine the steps on this page with [Ingest Google Analytics historical data into Adobe Experience Platform](backfill.md), which generates a dataset containing historical data. Combine a streaming dataset with a backfill dataset to get a seamless view of past and present data in Customer Journey Analytics.
 

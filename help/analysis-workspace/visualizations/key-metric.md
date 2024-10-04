@@ -12,7 +12,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="cja_workspace_keymetricsummary_button"
 >title="Key metric summary"
->abstract="Create a visualization that is like a combination of the line, summary change, and summary number charts. Use this visualization to compare how important metrics are trending between two periods of time."
+>abstract="Create a visualization that is a combination of the line, summary change, and summary number charts. Use this visualization to compare how important metrics are trending between two periods of time."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -36,7 +36,7 @@ In the example below, a histogram is used to bucket sessions for the number of p
 
 ![](assets/histogram.png)
 
-## Advanced settings {#section_09D774C584864D4CA6B5672DC2927477}
+## Advanced settings
 
 As part of the visualization, specific histogram settings are available.
 
