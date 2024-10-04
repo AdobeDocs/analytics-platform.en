@@ -42,21 +42,21 @@ The journey used in the following scenarios is configured with the following set
 
 #### Scenario 1 - User A follows journey path in the first session, then only later nodes in a subsequent session
 
-Suppose that User A visits the site and follows the path of the journey (Node 1: Visit site > Node 2: View Product A > Node 3: Check out). In this scenario, an event is counted on each node of the journey. 
+Suppose that User A visits the site and completes the journey (Node 1: "Visit site" > Node 2: "View Product A" > Node 3: "Check out"). Because User A completed the journey, an event is counted on each node of the journey. 
 
-Now suppose that User A visits the site again in a later session. Because User A already met the requirements of the journey by following the journey path in a previous session, this means that any time User A checks out--even if User A has not followed the path of the journey in their current session--an event is counted on the journey's third node, "Check out." This results in a higher percentage and number on the "Check out" node than on the preceding node, "View Product A."
+Now, suppose that User A visits the site again in a later session. Because User A already completed the journey in a previous session by following the journey path, this means that any time User A has an event that matches any node in the journey--even if User A has not followed the path of the journey in their current session--an event is counted on the relevant node in the journey. For example, if User A checks out, then an event is counted on the "Check out" node. This can result in a higher percentage and number on the "Check out" node than on the preceding node, "View Product A."
 
-In this example, the journey's container setting plays a critical role in determining whether the event on the third node ("Check out") is counted in the subsequent session. 
+In this example, the journey's container setting of "Person" plays a critical role in determining that the event on the third node ("Check out") is counted in the subsequent session. 
 
-Alternatively, if Session had been set as the container (instead of Person), then the event that took place only on the third node in the subsequent visit would not have counted in the journey, because the statistics shown in the journey would be constrained to a single defined session for a given person. To learn more about the container setting, see [Begin building a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) in the article [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+Alternatively, if the container setting had been set to "Session," then the event that took place only on the third node in the subsequent visit would not have counted in the journey, because the statistics shown in the journey would be constrained to a single defined session for a given person. To learn more about the container setting, see [Begin building a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) in the article [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
 #### Scenario 2 - User B falls out of the journey
 
-Suppose that User B visits the site and does not follow the path of the journey (visits the site, views Product B, and then checks out), an event is counted for the journey's start node, "Visit site," but an event is not counted for the remaining nodes, and User B falls out of the journey. Even though User B checked out, an event is not counted on the third node, "Check out," because User B did not follow the path of the journey by viewing Product A. 
+Suppose that User B visits the site and does not complete the journey (visits the site, views Product B, and then checks out). In this case, an event is counted for the journey's start node, "Visit site," but an event is not counted for the remaining nodes, and User B falls out of the journey. Even though User B checked out, an event is not counted on the third node ("Check out") because User B did not complete the journey by viewing Product A prior to checking out. 
 
-This is because events are counted for each node only when people follow the journey's "eventual path," which means that events are counted as long as the person eventually moved from one node to the other, regardless of any events occurring between the 2 nodes. 
+This is because events are counted for each node only when people follow the journey's "eventual path," which means that events are counted only if the person eventually moved from one node to the other, regardless of any events occurring between the 2 nodes. 
 
 ### The journey has multiple paths converging into a single node
 
