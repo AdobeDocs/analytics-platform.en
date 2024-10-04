@@ -17,7 +17,7 @@ In **[!UICONTROL Scheduled Projects]**, you can edit and delete recurring projec
 
 The Scheduled projects list ➊ displays columns for:
 
-| Field | Description |
+| Column | Description |
 | --- | --- |
 | ![SelectBox](/help/assets/icons/SelectBox.svg) | When one or more scheduled projects are selected, a blue action bar appears at the bottom of the Scheduled Projects interface. See [Actions](#actions) for more details. |
 | ![Star](/help/assets/icons/Star.svg) | Select to favor ![Star](/help/assets/icons/Star.svg) or un-favor ![StarOutline](/help/assets/icons/StarOutline.svg) a scheduled project. |
@@ -57,7 +57,7 @@ The following are common actions in the Scheduled Projects manager. You can sele
 | ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Delete the selected scheduled projects for the project; the projects are not deleted.|
 | ![Labels](/help/assets/icons/Labels.svg)| **[!UICONTROL Tag]** | Tag the selected scheduled projects. In the **[!UICONTROL Tag Scheduled projects]** select tags and select **[!UICONTROL Save]** to save. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Approve]** | Approve the selected scheduled projects. |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Export to CSV]** | Export the selected scheduled projects to a file namd `Export Scheduled Projects List.csv`. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Export to CSV]** | Export the selected scheduled projects to a file named `Export Scheduled Projects List.csv`. |
 
 
 ## Filter

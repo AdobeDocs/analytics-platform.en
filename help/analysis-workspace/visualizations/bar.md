@@ -32,7 +32,7 @@ A granularity drop-down in the visualization settings lets you change a trended 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_barstacked_button"
 >title="Bar stacked"
->abstract="Creates a bar visualization to represent various values across one or more stacked metrics."
+>abstract="Create a bar visualization to represent various values across one or more stacked metrics."
 
 <!-- markdownlint-enable MD034 -->
 
