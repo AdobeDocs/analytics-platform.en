@@ -17,7 +17,9 @@ Managing previously created audiences lets you:
 * Gain insight into the **amount of time it took to produce an audience** from Customer Journey Analytics. And the amount of time it took to have the audience appear in Real-time Customer Platform for activation purposes.
 * See whether the audiences in Customer Journey Analytics are **being actively used by Real-time Customer Platform**. Or (ideally) any Experience Platform applications that consume the audiences created by Customer Journey Analytics.
 
- If you do have [Audience View](/help/technotes/access-control.md#user-level-access) access, you can view audiences. If you do have [Audience Create](/help/technotes/access-control.md#user-level-access) access, you can edit and delete audiences. The [Audiences list](#audiences-list) shows the audiences.
+If you do have [Audience View](/help/technotes/access-control.md#user-level-access) access, you can view audiences. If you do have [Audience Create](/help/technotes/access-control.md#user-level-access) access, you can edit and delete audiences. The [Audiences list](#audiences-list) shows the audiences.
+
+![Audiences manager](assets/audiences-manager.png)
 
 ## Audiences list
 
