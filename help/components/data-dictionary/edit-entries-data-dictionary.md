@@ -1,11 +1,11 @@
 ---
 description: The Data Dictionary in Analysis Workspace allows users to catalogue and keep track of the various components in Analysis Workspace, including their intended use, which are approved, which are duplicates, and so forth.
-title: Edit entries in the Data Dictionary
+title: Edit component entries
 feature: Components
 role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
 ---
-# Edit component entries in the Data Dictionary
+# Edit component entries
 
 Customer Journey Analytics administrators can edit component entries in the Data Dictionary for a given data view. Any changes made are visible to all users of the data view.
 

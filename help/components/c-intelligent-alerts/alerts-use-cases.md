@@ -4,7 +4,7 @@ title: Alerts use cases
 feature: Workspace Basics
 role: User, Admin
 ---
-# Alerts - use cases
+# Alert use cases
 
 You can create alerts as described in [Create alerts](/help/components/c-intelligent-alerts/alert-builder.md). 
 
@@ -14,11 +14,6 @@ The following sections illustrate example use cases to consider as you create al
 
 You can create simple alerts  using filters. For example, define an alert on number of sessions for people visiting the home page through a mobile app session.
 
-<!-- 
-
-Update screenshots for better readability.
-
- -->
 
 ![](assets/alerts-example1.png)
 
