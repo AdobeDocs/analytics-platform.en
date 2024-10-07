@@ -1,11 +1,11 @@
 ---
-title: Create a date range
+title: Create date ranges
 description: Create a date range for use in reporting.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
 ---
-# Create a date range
+# Create date ranges
 
 
 Anyone can create a custom date range. You create a date range in the following ways:

@@ -104,7 +104,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Perform basic analysis](../analysis-workspace/perform-basic-analysis.md)
   + [Perform advanced analysis](../analysis-workspace/perform-adv-analysis.md)
   + Projects {#build-workspace-project}
-    + [Projects overview](../analysis-workspace/build-workspace-project/freeform-overview.md)
+    + [Overview](../analysis-workspace/build-workspace-project/freeform-overview.md)
     + [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md)
     + [Open projects](/help/analysis-workspace/build-workspace-project/open-projects.md)
     + [Save projects](../analysis-workspace/build-workspace-project/save-projects.md)
@@ -117,7 +117,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Color palettes](../analysis-workspace/build-workspace-project/color-palettes.md)
     + [View density](../analysis-workspace/build-workspace-project/view-density.md)
   + Visualizations {#visualizations}
-    + [Visualizations overview](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
+    + [Overview](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
     + [Manage data sources](../analysis-workspace/visualizations/t-sync-visualization.md)
     + [Intelligent captions](../analysis-workspace/visualizations/intelligent-captions.md)
     + Freeform table {#freeform-table}
@@ -173,7 +173,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Next or previous item](../analysis-workspace/c-panels/next-previous.md)
     + [Quick insights](../analysis-workspace/c-panels/quickinsight.md)
   + Curate, Share and Schedule projects {#curate-share}
-    + [Share menu](../analysis-workspace/curate-share/send-schedule-files.md)
+    + [Overview](../analysis-workspace/curate-share/send-schedule-files.md)
     + [Curate projects](../analysis-workspace/curate-share/curate.md)
     + [Share projects](../analysis-workspace/curate-share/share-projects.md)
     + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
@@ -201,9 +201,9 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Accessibility](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + Analytics dashboards {#cja-dashboards}
-  + [Analytics dashboards - Overview](../mobile-app/home.md)
+  + [Overview](../mobile-app/home.md)
   + [Curator tasks](../mobile-app/curator.md)
-  + [Create a mobile scorecard](../mobile-app/create-scorecard.md)
+  + [Create mobile scorecards](../mobile-app/create-scorecard.md)
   + [Manage mobile scorecards](../mobile-app/manage-scorecard.md)
   + [Set up executives to use dashboards](../mobile-app/set-up-execs.md)
   + [Executive user quick start guide](../mobile-app/executive.md)
@@ -232,7 +232,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [FAQ](../guided-analysis/faq.md)
 
 + Components {#cja-components}
-  + [Components overview](../components/overview.md)
+  + [Overview](../components/overview.md)
   + [Use components in Analysis Workspace](../components/use-components-in-workspace.md)
   + [Add component descriptions](../components/add-component-descriptions.md)
   + Annotations {#annotations}
@@ -254,7 +254,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [High cardinality dimensions](../components/dimensions/high-cardinality.md)
   + [Metrics](../components/apply-create-metrics.md)
   + Filters {#cja-filters}
-    + [Filters overview](../components/filters/filters-overview.md)
+    + [Overview](../components/filters/filters-overview.md)
     + [Create filters](../components/filters/create-filters.md)
     + [Build filters](../components/filters/filter-builder.md)
     + [Quick filters](../components/filters/quick-filters.md)
@@ -268,7 +268,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage filters](../components/filters/manage-filters.md)
     + [Operators](../components/filters/operators.md)
   + Calculated metrics {#cja-calcmetrics}
-    + [Calculated metrics overview](../components/calc-metrics/calc-metr-overview.md)
+    + [Overview](../components/calc-metrics/calc-metr-overview.md)
     + Calculated metrics workflow {#cm-workflow}
       + [Create calculated metrics](../components/calc-metrics/cm-workflow/cm-workflow.md)
       + [Build calculated metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
@@ -309,13 +309,13 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage export logs](/help/components/exports/manage-export-logs.md)
     + [Troubleshoot exports](/help/components/exports/troubleshoot-exports.md)
   + Data Dictionary {#data-dictionary}
-    + [Data Dictionary overview](../components/data-dictionary/data-dictionary-overview.md)
+    + [Overview](../components/data-dictionary/data-dictionary-overview.md)
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
     + [Edit component entries in the Data Dictionary](../components/data-dictionary/edit-entries-data-dictionary.md)
     + [Monitor Data Dictionary health](../components/data-dictionary/monitor-data-dictionary-health.md)
 
 + Report Builder {#cja-reportbuilder}
-  + [Report Builder Overview](../report-builder/report-buider-overview.md)
+  + [Overview](../report-builder/report-buider-overview.md)
   + [Report Builder Set Up](../report-builder/report-builder-setup.md)
   + [Create a Data Block](../report-builder/create-a-data-block.md)
   + [Report Builder Hub](../report-builder/report-builder-hub.md)
