@@ -17,9 +17,9 @@ The Journey canvas visualization allows you to analyze and gain deep insights on
 
 See [Journey canvas overview](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) to learn more about Journey canvas, including:
 
-* Key features
+* Key features 
 
-* Potential insights
+* Potential insights 
 
 * Differences between Journey canvas and Fallout
 

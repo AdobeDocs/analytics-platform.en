@@ -34,15 +34,15 @@ Because Journey canvas allows you to use any metric as the primary metric, this 
 
 ![Journey with nodes with a higher percentage than previous node](assets/journey-canvas-higher-percentage.png)
 
-The journey used in the following scenarios is configured with the following settings:
+The journey used in the following scenarios is configured with these settings:
 
 * **[!UICONTROL Person]** is set as the container
 
 * **[!UICONTROL Event]** is set as the primary metric
 
-#### Scenario 1 - User A follows journey path in the first session, then only later nodes in a subsequent session
+#### Scenario 1: User A follows the journey path in the first session. In a subsequent session, the user has an event that matches only a later node.
 
-Suppose that User A visits the site and completes the journey (Node 1: "Visit site" > Node 2: "View Product A" > Node 3: "Check out"). Because User A completed the journey, an event is counted on each node of the journey. 
+Suppose that User A visits the site and completes the journey (Node 1: "Visit site" > Node 2: "View Product A" > Node 3: "Check out"). Because User A had an event that matched each node of the journey in order, an event is counted on each node of the journey. 
 
 Now, suppose that User A visits the site again in a later session. Because User A already completed the journey in a previous session by following the journey path, this means that any time User A has an event that matches any node in the journey--even if User A has not followed the path of the journey in their current session--an event is counted on the relevant node in the journey. For example, if User A checks out, then an event is counted on the "Check out" node. This can result in a higher percentage and number on the "Check out" node than on the preceding node, "View Product A."
 
@@ -52,11 +52,11 @@ Alternatively, if the container setting had been set to "Session," then the even
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
-#### Scenario 2 - User B falls out of the journey
+#### Scenario 2: User B falls out of the journey
 
 Suppose that User B visits the site and does not complete the journey (visits the site, views Product B, and then checks out). In this case, an event is counted for the journey's start node, "Visit site," but an event is not counted for the remaining nodes, and User B falls out of the journey. Even though User B checked out, an event is not counted on the third node ("Check out") because User B did not complete the journey by viewing Product A prior to checking out. 
 
-This is because events are counted for each node only when people follow the journey's "eventual path," which means that events are counted only if the person eventually moved from one node to the other, regardless of any events occurring between the 2 nodes. 
+This is because events are counted for each node only when people follow the journey's "eventual path." This means that events are counted only if the person eventually moved from one node to the other, regardless of any events occurring between the 2 nodes. 
 
 ### The journey has multiple paths converging into a single node
 
