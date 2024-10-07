@@ -78,11 +78,11 @@ Guided analysis views are included in Customer Journey Analytics packages in the
 
 | Package | Available views |
 | --- | --- |
-| [!UICONTROL CJA add-ons] | Trends: Usage, Trends: Frequency, Funnel: Friction, Funnel: Conversion trends, Retention: Retention rates, User growth: Active, User growth: Net growth |
-| [!UICONTROL CJA Foundation] | Trends: Usage |
-| [!UICONTROL CJA Select] | Foundation views + Trends: Frequency, Funnel: Friction, Funnel: Conversion trends, Retention: Retention rates, User growth: Active, User growth: Net growth |
-| [!UICONTROL CJA Prime] | Select views + User stream: Timeline, Feature matrix: Engagement, Impact: Release, Impact: First Use |
-| [!UICONTROL CJA Ultimate] | Prime views |
+| [!UICONTROL Customer Journey Analytics add-ons] | Trends: Usage, Trends: Frequency, Funnel: Friction, Funnel: Conversion trends, Retention: Retention rates, User growth: Active, User growth: Net growth |
+| [!UICONTROL Customer Journey Analytics Foundation] | Trends: Usage |
+| [!UICONTROL Customer Journey Analytics Select] | Foundation views + Trends: Frequency, Funnel: Friction, Funnel: Conversion trends, Retention: Retention rates, User growth: Active, User growth: Net growth |
+| [!UICONTROL Customer Journey Analytics Prime] | Select views + User stream: Timeline, Feature matrix: Engagement, Impact: Release, Impact: First Use |
+| [!UICONTROL Customer Journey Analytics Ultimate] | Prime views |
 
 {style="table-layout:auto"}
 
