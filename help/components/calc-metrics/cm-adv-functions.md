@@ -17,9 +17,9 @@ A table function is one where the output is the same for every row of the table.
 
 It tells whether to include zeros in the computation. Sometimes zero means *nothing*, but sometimes it's important.
 
-For example, if you have a Revenue metric, and then add a Page Views metric to the report, there are suddenly more rows for your revenue which are all zero. You probably don't want this to affect any [MEAN](cm-functions.md#mean), [MIN](cm-functions.md#row-min), [QUARTILE](cm-functions.md#quartile), and more calculations that you have on the revenue column. In this case, you would check the `include-zeros` parameter.
+For example, if you have a Revenue metric, and then add a Page Views metric to the report, there are suddenly more rows for your revenue, which are all zero. You probably don't want that additional metric to affect any [MEAN](cm-functions.md#mean), [MIN](cm-functions.md#row-min), [QUARTILE](cm-functions.md#quartile), and more calculations that you have in the revenue column. In this case, you would check the `include-zeros` parameter.
 
-On the other hand, if you have two metrics that you are interested in, it may not be fair to say that one has a higher average or minimum because some of its rows were zeros, so you would not check the parameter to include the zeros.
+An alternative scenario is that you have two metrics of interest and one has a higher average or minimum because some of the rows are zeros.  In that case, you can opt not to check the parameter to include zeros.
 
 
 ## And
@@ -27,12 +27,12 @@ On the other hand, if you have two metrics that you are interested in, it may no
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL AND(logical_test)]**
 
 
-Conjunction. Not equal to zero is considered to be true and equals zero is considered to be false. The output will be either a 0 (false) or 1 (true).
+Conjunction. Not equal to zero is considered to be true and equals zero is considered to be false. The output is either a 0 (false) or 1 (true).
 
 
 | Argument | Description |
 |---|---|
-| logical_test| Requires at least one parameter but can take any number of parameters. Any value or expression that can be evaluated to TRUE or FALSE |
+| logical_test| Requires at least one parameter, but can take any number of parameters. Any value or expression that can be evaluated to TRUE or FALSE |
 
 ## Approximate Count Distinct
 
@@ -44,11 +44,11 @@ Returns the approximated distinct count of dimension items for the selected dime
 
 | Argument | Description |
 |---|---|
-| dimension| The dimension for which you want the approximated distinct item count |
+| dimension| The dimension for which you want to calculate the approximated distinct item count |
 
 ### Example
 
-A common use case for this function is when you want to get approximate number of customers.
+A common use case for this function is when you want to get an approximate number of customers.
 
 
 
@@ -72,7 +72,7 @@ A common use case for this function is when you want to get approximate number o
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
 
-[!BADGE Row]{type="Neutral"} Returns the arcsine, or inverse sine, of a number. The arcsine is the angle whose sine is number. The returned angle is given in radians in the range -pi/2 to pi/2. To express the arcsine in degrees, multiply the result by 180/PI( ).
+[!BADGE Row]{type="Neutral"} Returns the arcsine, or inverse sine, of a number. The arcsine is the angle whose sine is a number. The returned angle is given in radians in the range -pi/2 to pi/2. To express the arcsine in degrees, multiply the result by 180/PI( ).
 
 
 | Argument | Description |
@@ -86,7 +86,7 @@ A common use case for this function is when you want to get approximate number o
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENT(metric)]**
 
 
-[!BADGE Row]{type="Neutral"} Returns the arctangent, or inverse tangent, of a number. The arctangent is the angle whose tangent is number. The returned angle is given in radians in the range -pi/2 to pi/2. To express the arctangent in degrees, multiply the result by 180/PI( ).
+[!BADGE Row]{type="Neutral"} Returns the arctangent, or inverse tangent, of a number. The arctangent is the angle whose tangent is a number. The returned angle is given in radians in the range -pi/2 to pi/2. To express the arctangent in degrees, multiply the result by 180/PI( ).
 
 
 | Argument | Description |
@@ -100,7 +100,7 @@ A common use case for this function is when you want to get approximate number o
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T(metric, number)]**
 
 
-Returns the probability that a random variable with student-t distribution with n degrees of freedom will have a z-score less than col.
+Returns the probability that a random variable with student-t distribution with n degrees of freedom have a z-score less than col.
 
 
 | Argument | Description |
@@ -111,12 +111,11 @@ Returns the probability that a random variable with student-t distribution with 
 ### Example
 
 ```
-cdf_t( -∞, n ) = 0
-cdf_t(  ∞, n ) = 1
-cdf_t( 3, 5 ) ? 0.99865
-cdf_t( -2, 7 ) ? 0.0227501
-cdf_t( x, ∞ ) ? cdf_z( x )
-
+CDF-T(-∞, n) = 0
+CDF-T(∞, n) = 1
+CDF-T(3, 5) ? 0.99865
+CDF-T(-2, 7) ? 0.0227501
+CDF-T(x, ∞) ? cdf_z(x)
 ```
 
 
@@ -125,7 +124,7 @@ cdf_t( x, ∞ ) ? cdf_z( x )
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-Z(metric, number)]**
 
 
-Returns the probability that a random variable with normal distribution will have a z-score less than col.
+Returns the probability that a random variable with a normal distribution has a z-score less than col.
 
 
 | Argument | Description |
@@ -135,12 +134,11 @@ Returns the probability that a random variable with normal distribution will hav
 ### Examples
 
 ```
-cdf_z( -∞ ) = 0
-cdf_z( ∞ ) = 1
-cdf_z( 0 ) = 0.5
-cdf_z( 2 ) ? 0.97725
-cdf_z( -3 ) ? 0.0013499
-
+CDF-Z(-∞) = 0
+CDF-Z(∞) = 1
+CDF-Z(0) = 0.5
+CDF-Z(2) ? 0.97725
+CDF-Z(-3) ? 0.0013499
 ```
 
 ## Ceiling
@@ -160,13 +158,13 @@ cdf_z( -3 ) ? 0.0013499
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
 
-Calculate the any-time-valid confidence **lower** using the WASKR method as described in [Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476.pdf).
+Calculate the any-time-valid confidence **lower** using the WASKR method as described in [Time-uniform central limit theory and asymptotic confidence sequences](http://arxiv.org/pdf/2103.06476).
 
 Confidence is a probabilistic measure of how much evidence there is that a given variant is the same as the control variant. A higher confidence indicates less evidence for the assumption that control and non-control variant have equal performance. 
 
 | Argument | Description |
 | --- | --- |
-| normalizing-container | The basis (People, Sessions, or Events) on which a test will be run. |
+| normalizing-container | The basis (People, Sessions, or Events) on which a test is run. |
 | success-metric | The metric or metrics that a user is comparing variants with. |
 | control | The variant that all other variants in the experiment are being compared with. Enter the name of the control variant dimension item. |
 | significance-threshold | The threshold in this function is set to a default of 95%. |
@@ -175,13 +173,13 @@ Confidence is a probabilistic measure of how much evidence there is that a given
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
 
-Calculate the any-time-valid confidence **upper** using the WASKR method as described in [Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476.pdf).
+Calculate the any-time-valid confidence **upper** using the WASKR method as described in [Time-uniform central limit theory and asymptotic confidence sequences](http://arxiv.org/pdf/2103.06476).
 
 Confidence is a probabilistic measure of how much evidence there is that a given variant is the same as the control variant. A higher confidence indicates less evidence for the assumption that control and non-control variant have equal performance. 
 
 | Argument | Description |
 | --- | --- |
-| normalizing-container | The basis (People, Sessions, or Events) on which a test will be run. |
+| normalizing-container | The basis (People, Sessions, or Events) on which a test is run. |
 | success-metric | The metric or metrics that a user is comparing variants with. |
 | control | The variant that all other variants in the experiment are being compared with. Enter the name of the control variant dimension item. |
 | significance-threshold | The threshold in this function is set to a default of 95%. |
@@ -208,7 +206,7 @@ Returns the positive cube root of a number. The cube root of a number is the val
 
 | Argument | Description |
 |---|---|
-| metric| The metric for which you want the cube root |
+| metric| The metric for which you want to calculate the cube root |
 
 
 
@@ -216,7 +214,7 @@ Returns the positive cube root of a number. The cube root of a number is the val
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE(number, metric)]**
 
-Returns the sum of the last n elements of column x. If n > 0, sum the last n elements or x. If n < 0, sum all of the preceding elements.
+Returns the sum of the last n elements of column x. If n > 0, sum the last n elements or x. If n < 0, sum the preceding elements.
 
 | Argument | Description |
 | --- | --- |
@@ -236,7 +234,7 @@ Returns the sum of the last n elements of column x. If n > 0, sum the last n ele
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE AVERAGE(number, metric)]**
 
-Returns the average of the last n elements of column x. If n > 0, sum the last n elements or x. If n < 0, sum all of the preceding elements.
+Returns the average of the last n elements of column x. If n > 0, sum the last n elements or x. If n < 0, sum the preceding elements.
 
 | Argument | Description |
 | --- | --- |
@@ -245,7 +243,7 @@ Returns the average of the last n elements of column x. If n > 0, sum the last n
 
 >[!NOTE]
 >
->This does not work as you might expect with rate metrics like revenue/person: it averages the rates instead of summing revenue over the last N and summing persons over the last N and then dividing them. <br/>Instead, use [**[!UICONTROL CUMULATIVE(revenue)]**](#cumulative) ![Divide](/help/assets/icons/Divide.svg) [**[!UICONTROL CUMULATIVE(person)]**](#cumulative).
+>This function does not work with rate metrics like revenue per person. The function averages the rates instead of summing revenue over the last N and summing persons over the last N and then dividing them. <br/>Instead, use [**[!UICONTROL CUMULATIVE(revenue)]**](#cumulative) ![Divide](/help/assets/icons/Divide.svg) [**[!UICONTROL CUMULATIVE(person)]**](#cumulative).
 >
 
 
@@ -254,7 +252,7 @@ Returns the average of the last n elements of column x. If n > 0, sum the last n
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EQUAL()]**
 
 
-Equal. The output will be either a 0 (false) or 1 (true).
+Equal. The output is either a 0 (false) or 1 (true).
 
 
 | Argument | Description |
@@ -342,7 +340,7 @@ Equal. The output will be either a 0 (false) or 1 (true).
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN()]**
 
 
-Greater than. The output will be either a 0 (false) or 1 (true).
+The output is either a 0 (false) or 1 (true).
 
 
 | Argument | Description |
@@ -359,7 +357,7 @@ Greater than. The output will be either a 0 (false) or 1 (true).
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN OR EQUAL()]**
 
 
-Greater than or equal. The output will be either a 0 (false) or 1 (true).
+Greater than or equal. The output is either a 0 (false) or 1 (true).
 
 
 | Argument | Description |
@@ -419,7 +417,7 @@ Greater than or equal. The output will be either a 0 (false) or 1 (true).
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test, value_if_true, value_if_false)]**
 
 
-[!BADGE Row]{type="Neutral"} If the value of the condition parameter is non-zero (true), then the result will be the value of the then parameter. Otherwise it will be the value of the else parameter.
+[!BADGE Row]{type="Neutral"} If the value of the condition parameter is non-zero (true), the result is the value of the value_if_true parameter. Otherwise, it is the value of the value_if_false parameter.
 
 
 | Argument | Description |
@@ -434,7 +432,7 @@ Greater than or equal. The output will be either a 0 (false) or 1 (true).
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN()]**
 
 
-Less than. The output will be either a 0 (false) or 1 (true).
+The output is either a 0 (false) or 1 (true).
 
 
 | Argument | Description |
@@ -451,7 +449,7 @@ Less than. The output will be either a 0 (false) or 1 (true).
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN OR EQUAL()]**
 
-Less than or equal. The output will be either a 0 (false) or 1 (true).
+Less than or equal. The output is either a 0 (false) or 1 (true).
 
 
 | Argument | Description |
@@ -470,7 +468,7 @@ Less than or equal. The output will be either a 0 (false) or 1 (true).
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Table]{type="Neutral"}  Linear regression: Y = a X + b.  Returns the correlation coefficient
+[!BADGE Table]{type="Neutral"} Linear regression: Y = a X + b.  Returns the correlation coefficient
 
 
 | Argument | Description |
@@ -483,10 +481,10 @@ Less than or equal. The output will be either a 0 (false) or 1 (true).
 
 ## Linear regression: Intercept
 
-[!BADGE Table]{type="Neutral"}  ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-Linear regression: Y = a X + b. Returns b.
+[!BADGE Table]{type="Neutral"} Linear regression: Y = a X + b. Returns b.
 
 
 | Argument | Description |
@@ -499,10 +497,10 @@ Linear regression: Y = a X + b. Returns b.
 
 ## Linear regression: Predicted Y
 
-[!BADGE Row]{type="Neutral"}  ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-Linear regression: Y = a X + b. Returns Y.
+[!BADGE Row]{type="Neutral"} Linear regression: Y = a X + b. Returns Y.
 
 
 | Argument | Description |
@@ -518,7 +516,7 @@ Linear regression: Y = a X + b. Returns Y.
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Table]{type="Neutral"}  Linear regression: Y = a X + b. Returns a.
+[!BADGE Table]{type="Neutral"} Linear regression: Y = a X + b. Returns a.
 
 
 | Argument | Description |
@@ -546,7 +544,7 @@ Linear regression: Y = a X + b. Returns Y.
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Table]{type="Neutral"} [!BADGE Table]{type="Neutral"} Log regression: Y = a ln(X) + b. Returns the correlation coefficient.
+[!BADGE Table]{type="Neutral"} Log regression: Y = a ln(X) + b. Returns the correlation coefficient.
 
 
 | Argument | Description |
@@ -561,7 +559,7 @@ Linear regression: Y = a X + b. Returns Y.
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-Log regression: Y = a ln(X) + b. Returns b.
+[!BADGE Table]{type="Neutral"} Log regression: Y = a ln(X) + b. Returns b.
 
 
 | Argument | Description |
@@ -623,7 +621,7 @@ Returns the natural logarithm of a number. Natural logarithms are based on the c
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL NOT(logical)]**
 
 
-Negation as a boolean. The output will be either 0 (false) or 1 (true).
+Negation as a boolean. The output is either 0 (false) or 1 (true).
 
 
 | Argument | Description |
@@ -637,7 +635,7 @@ Negation as a boolean. The output will be either 0 (false) or 1 (true).
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL NOT EQUAL()]**
 
 
-Not Equal. The output will be either a 0 (false) or 1 (true).
+Not Equal. The output is either a 0 (false) or 1 (true).
 
 
 | Argument | Description |
@@ -655,7 +653,7 @@ Not Equal. The output will be either a 0 (false) or 1 (true).
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL OR(logical_test)]**
 
 
-[!BADGE Row]{type="Neutral"} Disjunction. Not equal to zero is considered to be true and equals zero is considered to be false. The output will be either a 0 (false) or 1 (true).
+[!BADGE Row]{type="Neutral"} Disjunction. Not equal to zero is considered to be true and equals zero is considered to be false. The output is either a 0 (false) or 1 (true).
 
 
 | Argument | Description |
@@ -743,7 +741,7 @@ Returns Pi: 3.14159...
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Table]{type="Neutral"} Quadratic regression: Y = ( a + b X ) ^ 2, Returns the correlation coefficient.
+[!BADGE Table]{type="Neutral"} Quadratic regression: Y = (a + bX) ^ 2, Returns the correlation coefficient.
 
 
 | Argument | Description |
@@ -757,7 +755,7 @@ Returns Pi: 3.14159...
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Table]{type="Neutral"} Quadratic regression: Y = ( a + b X ) ^ 2, Returns a.
+[!BADGE Table]{type="Neutral"} Quadratic regression: Y = (a + bX) ^ 2, Returns a.
 
 
 | Argument | Description |
@@ -772,7 +770,7 @@ Returns Pi: 3.14159...
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Row]{type="Neutral"} Quadratic regression: Y = ( a + b X ) ^ 2, Returns Y.
+[!BADGE Row]{type="Neutral"} Quadratic regression: Y = (a + bX) ^ 2, Returns Y.
 
 
 | Argument | Description |
@@ -786,7 +784,7 @@ Returns Pi: 3.14159...
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Table]{type="Neutral"} Quadratic regression: Y = ( a + b X ) ^ 2, Returns b.
+[!BADGE Table]{type="Neutral"} Quadratic regression: Y = (a + bX) ^ 2, Returns b.
 
 
 | Argument | Description |
@@ -879,7 +877,7 @@ Returns Pi: 3.14159...
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL T-SCORE(metric, include_zeros)]**
 
 
-The deviation from the mean divided by the standard deviation. Alias for [Z-Score](#z-score).
+The deviation from the [MEAN](cm-functions.md#mean), divided by the standard deviation. Alias for [Z-Score](#z-score).
 
 
 | Argument | Description |
@@ -904,11 +902,11 @@ Performs an m-tailed t-test with t-score of x and n degrees of freedom.
 
 ### Details
 
-The signature is T-TEST( x, n, m). Underneath, it simply calls ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL Cdf-T(-abs(x),n)]](#cdf-t)** . This is similar to the z-test function which runs  ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL Cdf-Z(-abs(x))]](#cdf-z)**.
+The signature is T-TEST(metric, degrees, tails). Underneath, it simply calls ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-T(-ABSOLUTE VALUE(tails), degrees)]](#cdf-t)**. This function is similar to the **[Z-TEST](#z-test)** function, which runs  ***m*** ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[[!DNL CDF-Z(-ABSOLUTE VALUE(tails))]](#cdf-z)**.
 
-Here, ***m*** is the number of tails, and ***n*** is the degrees of freedom. These should be numbers (constant for the whole report, i.e. not changing on a row by row basis).
-
-`X` is the t-test statistic, and would often be a formula (e.g. zscore) based on a metric and will be evaluated on every row.
+- ***m*** is the number of tails.
+- ***n*** is the degrees of freedom, and should be a constant number for the whole report, that is, not changing on a row by row basis.
+- ***x*** is the T-test statistic, and would often be a formula (for example, **[Z-SCORE](#z-score)**) based on a metric and is evaluated on every row.
 
 The return value is the probability of seeing the test statistic x given the degrees of freedom and number of tails.
 
@@ -920,7 +918,7 @@ The return value is the probability of seeing the test statistic x given the deg
    T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2)
    ```
 
-1. Combine it with [IF](#if) to ignore very high or low bounce rates, and count sessions on everything else:
+1. Combine it with **[IF](#if)** to ignore very high or low bounce rates, and count sessions on everything else:
 
    ```
    IF(T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2) < 0.01, 0, sessions )
@@ -956,17 +954,17 @@ Returns the tangent of the given angle. If the angle is in degrees, multiply the
 | metric| The metric for which you would like the Z Score |
 | include_zeros | Whether or not to include zero values in the calculations |
 
-A Z-score of 0 (zero) means the score is the same as the mean. A Z-score can be positive or negative, indicating whether it is above or below the mean and by how many standard deviations.
+A Z-score of 0 (zero) implies the score is the same as the mean. A Z-score can be positive or negative, indicating whether it is above or below the mean and by how many standard deviations.
 
 The equation for Z-score is:
 
 ![](assets/z_score.png)
 
-where [!DNL x] is the raw score, [!DNL μ] is the mean of the population, and [!DNL σ] is the standard deviation of the population.
+Where ***[!DNL x]*** is the raw score, ***[!DNL μ]*** is the mean of the population, and ***[!DNL σ]*** is the standard deviation of the population.
 
 >[!NOTE]
 >
->[!DNL μ] (mu) and[!DNL σ] (sigma) are automatically calculated from the metric.
+>***[!DNL μ]*** (mu) and ***[!DNL σ]*** (sigma) are automatically calculated from the metric.
 
 
 
@@ -975,7 +973,7 @@ where [!DNL x] is the raw score, [!DNL μ] is the mean of the population, and [!
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL Z-TEST(metric_tails)]**
 
 
-Performs an n-tailed z-test with z-score of x.
+Performs an n-tailed z-test with a z-score of x.
 
 
 | Argument | Description |

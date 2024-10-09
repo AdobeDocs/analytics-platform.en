@@ -30,7 +30,7 @@ A table function is one where the output is the same for every row of the table.
 
 | Argument | Description |
 |---|---|
-| metric | The metric for which you want the absolute value. |
+| metric | The metric for which you want to calculate the absolute value. |
 
 
 ## Column Maximum
@@ -61,7 +61,7 @@ Returns the smallest value in a set of dimension elements for a metric column. M
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN SUM(metric)]**
 
-Adds all of the numeric values for a metric within a column (across the elements of a dimension).
+Adds all numeric values for a metric within a column (across the elements of a dimension).
 
 | Argument | Description |
 |---|---|
@@ -98,7 +98,7 @@ Adds all of the numeric values for a metric within a column (across the elements
 
 | Argument | Description |
 |---|---|
-| metric | The metric for which you want the average.|
+| metric | The metric for which you want to calculate the average.|
 | include_zeros | Whether or not to include zero values in the calculations. |
 
 
@@ -110,7 +110,7 @@ Adds all of the numeric values for a metric within a column (across the elements
 
 | Argument | Description |
 |---|---|
-| metric | The metric for which you want the median.|
+| metric | The metric for which you want to calculate the median.|
 | include_zeros | Whether or not to include zero values in the calculations. |
 
 
@@ -122,8 +122,8 @@ Returns the remainder after dividing x by y using Euclidean division.
 
 | Argument | Description |
 |---|---|
-| metric_X | The first metric you would like to divide. |
-| metric_Y | The second metric you would like to divide. |
+| metric_X | The first metric that you would like to divide. |
+| metric_Y | The second metric that you would like to divide. |
 
 ### Examples
 
@@ -135,7 +135,7 @@ MODULO(-4,3) = -1
 MODULO(-3,3) = 0
 ```
 
-To always get a positive number, use
+To ensure you always get a positive number, use
 
 ```
 MODULO(MODULO(x,y)+y,y)
@@ -145,7 +145,7 @@ MODULO(MODULO(x,y)+y,y)
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
-[!BADGE Table]{type="Neutral"} Returns the nth percentile. Should be between 0 and 100. n < 0 will use zero, n > 100 will use 100.
+[!BADGE Table]{type="Neutral"} Returns the nth percentile, which is a value between 0 and 100. When n < 0, the function uses zero. When n > 100, the function returns 100.
 
 | Argument | Description |
 |---|---|
@@ -163,7 +163,7 @@ Returns x raised to the y power.
 
 | Argument | Description |
 |---|---|
-| metric_X | The metric which you would like to raise to the metric_Y power. |
+| metric_X | The metric that you would like to raise to the metric_Y power. |
 | metric_Y | The power you would like to raise metric_X to. |
 
 
@@ -175,7 +175,7 @@ Returns x raised to the y power.
 
 | Argument | Description |
 |---|---|
-| metric | The metric for which you want the quartile value. |
+| metric | The metric for which you want to calculate the quartile value. |
 | quartile | Indicates which quartile value to return. |
 | include_zeros | Whether or not to include zero values in the calculations. |
 
@@ -184,7 +184,7 @@ Returns x raised to the y power.
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(metric, number)]**
 
-Round without a digits parameter is the same as round with a digits parameter of 0, namely round to the nearest integer.  With a digits parameter it returns that many digits to the right of the decimal.  If digits is negative, it returns 0's to the left of the decimal.
+Round without a *number* parameter is the same as round with a *number* parameter of 0, namely round to the nearest integer.  With a *number* parameter, ROUND returns the *number* digits to the right of the decimal.  If *number* is negative, it returns 0's to the left of the decimal.
 
 | Argument | Description |
 |---|---|
@@ -251,7 +251,7 @@ Sum of the columns of each row.
 
 | Argument | Description |
 |---|---|
-| metric | The metric for which you want the square root. |
+| metric | The metric for which you want to calculate the square root. |
 
 
 ## Standard Deviation
@@ -262,7 +262,7 @@ Sum of the columns of each row.
 
 | Argument | Description |
 |---|---|
-| | The metric for which you want for standard deviation.|
+| | The metric for which you want to calculate the standard deviation.|
 | include_zeros | Whether or not to include zero values in the calculations. |
 
 
@@ -274,7 +274,7 @@ Sum of the columns of each row.
 
 | Argument | Description |
 |---|---|
-| metric | The metric for which you want the variance.|
+| metric | The metric for which you want to calculate the variance.|
 | include_zeros | Whether or not to include zero values in the calculations. |
 
 
@@ -282,10 +282,10 @@ The equation for VARIANCE is:
 
 ![](assets/variance_eq.png){width="100"}
 
-where *x* is the sample mean, [MEAN(*metric*)](#mean), and *n* is the sample size.
+Where *x* is the sample mean, [MEAN(*metric*)](#mean), and *n* is the sample size.
 
 
-In order to calculate a variance you look at an entire column of numbers. From that list of numbers you first calculate the average. Once you have the average you go through each entry and do the following:
+To calculate a variance, you look at an entire column of numbers. From that list of numbers you first calculate the average. Once you have the average, you go through each entry and do the following:
 
 1. Subtract the average from the number.
 
@@ -293,9 +293,9 @@ In order to calculate a variance you look at an entire column of numbers. From t
 
 1. Add that to the total.
 
-Once you have iterated over the entire column you have a single total. You then divide that total by the number of items in the column. That number is the variance for the column. It is a single number. It is, however, displayed as a column of numbers.
+Once you have iterated over the entire column, you have a single total. You then divide that total by the number of items in the column. That number is the variance for the column. It is a single number. It is, however, displayed as a column of numbers.
 
-In case of a three-item column:
+In the example of the following three-item column:
 
 | column |
 |:---:|
@@ -303,7 +303,7 @@ In case of a three-item column:
 | 2 |
 | 3 |
 
-The average of this column is 2. The variance for the column will be ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3 = 2/3.
+The average of this column is 2. The variance for the column is ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3) = 2/3.
 
 
 
