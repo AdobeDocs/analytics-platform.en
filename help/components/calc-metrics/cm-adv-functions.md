@@ -1,23 +1,27 @@
 ---
-title: Reference - advanced functions
+title: Advanced functions
 description: Access these functions by checking Show Advanced in the Functions drop-down list.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
 ---
-# Reference - advanced functions
+# Advanced functions
 
-Access these functions by selecting **[!UICONTROL Show all]** below ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL Functions]** list in the Components panel. Scroll down to see the list of Advanced functions.
+The [Calculated metrics builder](cm-workflow/cm-build-metrics.md) lets you apply statistical and mathematical functions. This article documents alphabetical list of the advanced  functions and their definitions.
+
+Access these functions by selecting **[!UICONTROL Show all]** below ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL Functions]** list in the Components panel. Scroll down to see the list of **[!UICONTROL Advanced functions]**.
 
 ## Table functions versus row functions 
 
-A table function is one where the output is the same for every row of the table. A row function is one where the output is different for every row of the table. Where applicable and relevant, a function is annotated with the type of function.
+A table function is one where the output is the same for every row of the table. A row function is one where the output is different for every row of the table. 
+
+Where applicable and relevant, a function is annotated with the type of function: [!BADGE Table]{type="Neutral"} or [!BADGE Row]{type="Neutral"} 
 
 ## What does the include-zeros parameter mean?
 
 It tells whether to include zeros in the computation. Sometimes zero means *nothing*, but sometimes it's important.
 
-For example, if you have a Revenue metric, and then add a Page Views metric to the report, there are suddenly more rows for your revenue, which are all zero. You probably don't want that additional metric to affect any [MEAN](cm-functions.md#mean), [MIN](cm-functions.md#row-min), [QUARTILE](cm-functions.md#quartile), and more calculations that you have in the revenue column. In this case, you would check the `include-zeros` parameter.
+For example, if you have a Revenue metric, and then add a Page Views metric to the report, there are suddenly more rows for your revenue, which are all zero. You probably don't want that additional metric to affect any **[MEAN](cm-functions.md#mean)**, **[ROW MINIMUM](cm-functions.md#row-min)**, **[QUARTILE](cm-functions.md#quartile)**, and more calculations that you have in the revenue column. In this case, you would check the `include-zeros` parameter.
 
 An alternative scenario is that you have two metrics of interest and one has a higher average or minimum because some of the rows are zeros.  In that case, you can opt not to check the parameter to include zeros.
 
@@ -912,13 +916,13 @@ The return value is the probability of seeing the test statistic x given the deg
 
 **Examples:**
 
-1. Use it to find outliers:
+1. Use the function to find outliers:
 
    ```
    T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2)
    ```
 
-1. Combine it with **[IF](#if)** to ignore very high or low bounce rates, and count sessions on everything else:
+1. Combine the function with **[IF](#if)** to ignore very high or low bounce rates, and count sessions on everything else:
 
    ```
    IF(T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2) < 0.01, 0, sessions )
