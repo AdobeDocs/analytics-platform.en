@@ -45,7 +45,7 @@ This is the expected behavior when applying attribution models to breakdowns or 
 
 * If there are already attributions in the column tree, changing the attribution only impacts the one you are editing.
 
-+++ View videos illustrating breakdowns 
++++ View videos illustrating dimensions and dimension breakdowns 
 
 Dimensions in Analysis Workspace
 
