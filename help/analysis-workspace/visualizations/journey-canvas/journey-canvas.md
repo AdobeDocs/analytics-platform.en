@@ -31,9 +31,36 @@ Key features of the Journey canvas visualization include:
 
 ## Potential insights
 
-Following are a few examples of the types of insights Journey canvas can help provide. You can choose whether these insights are based on all people in the data view, all people who started the journey, or all people from the previous node of the journey.
+Journey canvas provides actionable insights for the most complex journeys. 
 
-**Fallthrough** 
+### Path with the highest conversion rate {#conversion-rate-caption}
+
+The most prominent insight in Journey canvas is shown as a caption at the top of the canvas itself. 
+
+This caption summarizes which of all the paths in the journey had the highest conversion rate. 
+
+![Journey canvas insight caption](assets/journey-canvas-caption.png)
+
+Consider the following when interpreting this caption:
+
+* A _path_ is defined as a start node that is connected by arrows to an end node, with any number of nodes connected between them. 
+
+* The conversion rate calculation depends on the type of journey (the number of start nodes and end nodes contained in the journey, and whether the paths intersect between them).
+
+  The following table describes how conversion rates are calculated based on the journey type:
+
+  | Journey type | Conversion rate calculation | Example |
+  |---------|----------|---------|
+  | **A single start node and a single end node** | Conversion rate is calculated by dividing the number of the end node by that of the start node. | ![Journey with multiple starts that converge into a common node](assets/journey-canvas-single-path.png) |
+  | **A single start node and multiple end nodes** | Conversion rate is calculated by finding the end node with the highest number, and dividing that number by that of the start node. | ![Journey with multiple starts that converge into a common node](assets/journey-canvas-singlestart-multiend.png) |
+  | **Multiple standalone paths, with each path containing a single start node and a single end node** | Conversion rate is calculated by dividing the number of the end node by that of the start node. The path with the highest conversion rate is described in the caption. | ![Journey with multiple starts that converge into a common node](assets/journey-canvas-multi-start-separate.png) |
+  | **Multiple start nodes that at any point in the journey converge into a common node** | Conversion rate is calculated by finding the end node with the highest number, and dividing that number by that of the start node with the lowest number. | ![Journey with multiple starts that converge into a common node](assets/journey-canvas-multi-start-converge.png) |
+
+### Fallthrough, Fallout, and more
+
+Following are a few examples of other insights Journey canvas can help provide. You can choose whether these insights are based on all people in the data view, all people who started the journey, or all people from the previous node of the journey.
+
+#### Fallthrough 
 
 * The number and percentage of people who completed the journey (arrived at the ending node)
 
@@ -41,14 +68,13 @@ Following are a few examples of the types of insights Journey canvas can help pr
 
 * The most common step that came after or before a given node of the journey
 
-**Fallout**
+#### Fallout
 
 * The nodes of the journey where people most commonly fell out of the journey (never arrived at any of the immediate next nodes)
 
-**Other**
+#### Additional data for each node
 
-* Additional data for any node in the journey (by adding a breakdown dimension for the node)
-
+* Add a breakdown dimension on any node of the journey to view additional data for that specific node
 
 ## Choose between Journey canvas and Fallout visualizations
 
