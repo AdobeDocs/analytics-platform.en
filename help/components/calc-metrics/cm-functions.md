@@ -1,25 +1,35 @@
 ---
-title: Reference - basic functions
+title: Basic functions
 description: The Calculated Metrics Builder lets you apply statistical and mathematical functions to build Advanced Calculated Metrics.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
 ---
-# Reference - basic functions
+# Basic functions
 
 
-The [Calculated metrics builder](cm-workflow/cm-build-metrics.md) lets you apply statistical and mathematical functions.
-
-Here is an alphabetical list of the functions and their definitions.
+The [Calculated metrics builder](cm-workflow/cm-build-metrics.md) lets you apply statistical and mathematical functions. This article documents alphabetical list of the functions and their definitions.
 
 >[!NOTE]
 >
 >Where [!DNL metric] is identified as an argument in a function, other expressions of metrics are also allowed. For example, [COLUMN MAXIMUM(metrics)](#column-maximum) also allows for [COLUMN MAXIMUM(PageViews + Visits)](#column-maximum).
 
 
+
 ## Table functions versus row functions 
 
-A table function is one where the output is the same for every row of the table. A row function is one where the output is different for every row of the table. Where applicable and relevant, a function is annotated with the type of function.
+A table function is one where the output is the same for every row of the table. A row function is one where the output is different for every row of the table. 
+
+Where applicable and relevant, a function is annotated with the type of function: [!BADGE Table]{type="Neutral"} or [!BADGE Row]{type="Neutral"} 
+
+## What does the include-zeros parameter mean?
+
+It tells whether to include zeros in the computation. Sometimes zero means *nothing*, but sometimes it's important.
+
+For example, if you have a Revenue metric, and then add a Page Views metric to the report, there are suddenly more rows for your revenue, which are all zero. You probably don't want that additional metric to affect any **[MEAN](cm-functions.md#mean)**, **[ROW MINIMUM](cm-functions.md#row-min)**, **[QUARTILE](cm-functions.md#quartile)**, and more calculations that you have in the revenue column. In this case, you would check the `include-zeros` parameter.
+
+An alternative scenario is that you have two metrics of interest and one has a higher average or minimum because some of the rows are zeros.  In that case, you can opt not to check the parameter to include zeros
+
 
 
 ## Absolute Value 
