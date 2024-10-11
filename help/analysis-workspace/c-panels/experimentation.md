@@ -47,6 +47,7 @@ To use the experimentation panel, ensure you follow these prerequisites:
 
 The recommended data schema is for the experiment data to be in an [Object array](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) that contains the experiment and variant data in two separate dimensions. Both dimensions need to be in a **single** object array. If you have your experiment data in a single dimension (with experiment and variant data in a delimited string), you can use the [substring](/help/data-views/component-settings/substring.md) setting in data views to split the dimension into two for use in the panel.
 
+
 After your experiment data has been [ingested](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) into Adobe Experience Platform, [create a connection in Customer Journey Analytics](/help/connections/create-connection.md) to one or more experiment datasets.
 
 ### Add context labels in data views
@@ -73,8 +74,6 @@ To use an **[!UICONTROL Experimentation]** panel:
 
 1. Observe the [output](#panel-output) for the panel.
 
-   ![The Experimention panel dragged into a project.](assets/experiment.png)
-
    >[!IMPORTANT]
    >
    >If the necessary setup in Customer Journey Analytics data views has not been completed, you receive this message before you can proceed: [!UICONTROL Please configure the experiment and variant dimensions in Data views].
@@ -86,13 +85,15 @@ To use the Experimentation panel:
 
 1. Configure the panel input settings:
 
+   ![The Experimention panel dragged into a project.](assets/experiment-input.png)
+
    | Setting | Definition |
    | --- | --- |
    | **[!UICONTROL Date Range]** | The date range for the Experimentation panel is automatically set, based on the first event received in Customer Journey Analytics for the experiment selected. You can restrict or expand the date range to a more specific timeframe if needed. |
    | **[!UICONTROL Experiment]** | A set of variations on an experience that were exposed to end users to determine which is best to keep in perpetuity. An experiment is made up of two or more variants, one of which is considered the control variant. This setting is pre-populated with the dimensions that have been labeled with the **[!UICONTROL Experiment]** label in data views, and the last 3 months' worth of experiment data. |
    | **[!UICONTROL Control variant]** | One of two or more alterations in an end user's experience that are being compared for the purpose of identifying the better alternative. One variant must be selected as the control, and only one variant can be considered to be the control variant. This setting is pre-populated with the dimensions that have been labeled with the **[!UICONTROL Variant]** label in data views. This setting pulls up the variant data that is associated with this experiment. |
-   | **[!UICONTROL Success metrics]** | The metric or metrics that a user is comparing variants with. The variant with the most desirable outcome for the conversion metric (whether highest or lowest) is declared the "best performing variant" of an experiment. You can add up to 5 metrics. |
-   | **[!UICONTROL Normalizing metric]** | The basis ([!UICONTROL People], [!UICONTROL Sessions], or [!UICONTROL Events]) on which a test runs. For example, a test may compare the conversion rates of several variations where **[!UICONTROL Conversion rate]** is calculated as **[!UICONTROL Conversions per session]** or **[!UICONTROL Conversions per person]**. |
+   | **[!UICONTROL Success metrics]** ➊ | The metric or metrics that a user is comparing variants with. The variant with the most desirable outcome for the conversion metric (whether highest or lowest) is declared the *best performing variant* of an experiment. You can add up to 5 metrics. |
+   | **[!UICONTROL Normalizing metric]** ➋| The basis ([!UICONTROL People], [!UICONTROL Sessions], or [!UICONTROL Events]) on which a test runs. For example, a test may compare the conversion rates of several variations where **[!UICONTROL Conversion rate]** is calculated as  the  |
    | **[!UICONTROL Include confidence upper/lower bounds]** | Enable this option to show upper and lower bounds for confidence levels. |
 
 
@@ -100,17 +101,14 @@ To use the Experimentation panel:
 
 ### Panel output
 
-The Experimentation panel returns a rich set of data and visualizations to help you better understand how your experiments are performing. At the top of the panel, a summary line is provided to remind you of the panel settings you selected. At any time, you can edit the panel by selecting the edit pencil at the top right.
+The Experimentation panel returns a rich set of data and visualizations to help you better understand how your experiments are performing. At the top of the panel, [summary change](../visualizations/summary-number-change.md) visualizations are provided to remind you of the panel settings you selected. At any time, you can edit the panel by selecting the edit pencil at the top right.
 
 You also get a text summary that indicates whether the experiment is conclusive or not, and summarizes the outcome. Conclusiveness is based on statistical significance (see [Statistical methodology](#adobes-statistical-methodology).) You can see summary numbers for the best performing variant with the highest lift and confidence.
 
-For each success metric you selected, one freeform table and one conversion rate trend is shown.
+For each success metric you selected, a [freeform table](../visualizations/freeform-table/freeform-table.md) visualization and a conversion rate [line](../visualizations/line.md) visualization is shown.
 
-![The Experimentation output showing one freeform table and one conversion rate trend.](assets/exp-output1.png)
+![The Experimentation output showing one freeform table and one conversion rate trend.](assets/experiment-output.png)
 
-The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTROL Control Variant] performance:
-
-![The line chart output showing Control versus Control Variant performance.](assets/exp-output2.png)
 
 >[!NOTE]
 >
@@ -122,7 +120,7 @@ The [!UICONTROL Line] chart gives you the [!UICONTROL Control] versus [!UICONTRO
 
 2. **Best performing variant**: When an experiment is declared to be conclusive, the variant with the highest conversion rate is labeled as the best performing variant. Note that this variant must either be the control or baseline variant, or one of the variants that crosses the 95% anytime valid confidence threshold (with Benjamini-Hochberg corrections applied).
 
-3. **Conversion rate**: The conversion rate that is shown is a ratio of the success metric value to the normalizing metric value. Note that this value may sometimes be larger than 1, if the metric is not binary (1 or 0 for each unit in the experiment)
+3. **Conversion rate**: The conversion rate that is shown is a ratio of the success metric value ➊ to the normalizing metric value ➋. Note that this value can be larger than 1, if the metric is not binary (1 or 0 for each unit in the experiment)
 
 4. **Lift**: The Experiment report summary shows the Lift over Baseline, which is a measure of the percentage improvement in the conversion rate of a given variant over the baseline. Defined precisely, it is the difference in performance between a given variant and the baseline, divided by the performance of the baseline, expressed as a percentage.
 
