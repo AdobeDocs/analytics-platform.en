@@ -76,32 +76,31 @@ Following are a few examples of other insights Journey canvas can help provide. 
 
 * Add a breakdown dimension on any node of the journey to view additional data for that specific node
 
-## Choose between Journey canvas and Fallout visualizations
+## Choose between Journey canvas, Fallout, or Flow visualizations
 
-Journey canvas visualizations are similar to [Fallout visualizations](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), in that both visualizations show where persons left (fell out) and continued through (fell through) a predefined sequence of pages.
-
-However, there are important differences.
+The Journey canvas visualization has similarities with the [Fallout visualization](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) and the [Flow visualization](/help/analysis-workspace/visualizations/c-flow/flow.md), but with important differences. 
 
 ### Understand the differences
 
-The following table shows the types of analyses supported in the Journey canvas visualization and the Fallout visualization:
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
 
-| Function | Journey canvas visualization | Fallout visualization |
-|---------|----------|---------|
-| Linear journeys | Yes | Yes |
-| Non-linear journeys with multiple entry points and paths | Yes | No |
-| Adobe Journey Optimizer journeys | Yes | No | 
-| Primary metric | Any metric, including calculated metrics | Can use only the Session or User metrics | 
-| Secondary metric | Yes<p>Any metric, including calculated metrics</p> | No | 
-| Compare filters | No | Yes<p>Compare an [unlimited number of filters](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md#compare-filters-in-fallout)</p> |
+{{journey-visualization-comparisons}}
 
-### Choose which visualization to use
+### When to use Journey canvas
 
-Before you choose between using Journey canvas or Fallout, make sure you [understand the differences between the two](#understand-the-differences).
+Journey canvas is essential for:
 
-If your fallout analysis involves only a linear journey that has a single known beginning and end, consider using a [Fallout visualization](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) as a more simple option for these more straightforward user journeys.
+* Fallout analysis involving journeys with multiple entry points and paths.
 
-Journey canvas is essential for fallout analysis involving journeys with multiple entry points and paths, or for analyzing journeys that were created in Journey Optimizer.
+* Non-linear journeys with multiple entry points and paths, with a predefined sequence of pages.
+
+* Exploratory, ad hoc analysis that is based on a predefined journey.
+
+* Analysis that requires a primary metric other than Session, Person, or Occurrences.
+
+* Deeper analysis of journeys that originated in Adobe Journey Optimizer.
+
+Use [the table above](#understand-the-differences) to understand the differences between Journey canvas, Fallout, and Flow visualizations.
 
 ## Analyze Journey Optimizer journeys
 
