@@ -78,28 +78,13 @@ Following are a few examples of other insights Journey canvas can help provide. 
 
 ## Choose between Journey canvas, Fallout, or Flow visualizations
 
-The Journey canvas visualization has similarities with the [Fallout visualization](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) and [Flow visualization](/help/analysis-workspace/visualizations/c-flow/flow.md), but with important differences. 
+The Journey canvas visualization has similarities with the [Fallout visualization](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) and the [Flow visualization](/help/analysis-workspace/visualizations/c-flow/flow.md), but with important differences. 
 
 ### Understand the differences
 
-Various visualizations in Customer Journey analytics are designed to analyze the journeys you provide to your customers.
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
 
-Use the following information to choose the visualization that best meets your needs.
-
-| Function | Journey canvas | Fallout | Flow |
-|---------|----------|---------|---------|
-| **Predefined sequence of pages** | Yes</br>Combines predefined and exploratory analysis. The eventual path is used when using predefined nodes on the path (visitors are counted as long as they eventually move from one predefined node to the other). The immediate (not eventual) next nodes can also be shown.  | Yes</br>The path can be an eventual path or can be constrained to the next touchpoint | No |
-| **Exploratory sequence of pages (ad hoc analysis)** | Yes</br>Combines predefined and exploratory analysis. The eventual path is used when using predefined nodes on the path (visitors are counted as long as they eventually move from one predefined node to the other). The immediate (not eventual) next nodes can also be shown. | No | Yes</br>Exploratory analysis only. Each node shows the immediate (not eventual) next touchpoint along the path. |
-| **Shows where people left (fell out) and continued through (fell through)** | Yes</br>Shows for both predefined and exploratory journeys  | Yes</br>Shows predefined journeys  | Yes</br>Shows for exploratory journeys  |
-| **Linear journeys** | Yes | Yes | No |
-| **Non-linear journeys with multiple entry points and paths** | Yes | No | Yes |
-| **Primary metric** | Any metric, including calculated metrics | Only Session or Person | Only Occurrences |
-| **Secondary metric** | Yes<p>Any metric, including calculated metrics</p> | No | No  |
-| **Component support in nodes or touchpoints** | Any component for all nodes, including metrics, calculated metrics, dimensions, dimension items, filters, and date ranges.| Any component for all nodes, including metrics, calculated metrics, dimensions, dimension items, filters, and date ranges. | Only dimension items (except for the starting and ending touchpoint)  |
-| **Compare filters** | No | Yes<p>Compare an [unlimited number of filters](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md#compare-filters-in-fallout)</p> | No |
-| **Adobe Journey Optimizer journeys** | Yes</br>Open journeys from Journey Optimizer for deeper analysis and customization | No |  No |
-
-{style="table-layout:auto"}
+{{journey-visualization-comparisons}}
 
 ### When to use Journey canvas
 
