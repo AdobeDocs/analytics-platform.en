@@ -33,7 +33,7 @@ Read more about the [integration between Adobe Customer Journey Analytics and Ad
 
 ## Access control {#access}
 
-The Experimentation panel is available to use by all Customer Journey Analytics users. No Admin rights or other permissions are required. However, the [prerequisites require actions that only administrators can perform.
+The Experimentation panel is available to use by all Customer Journey Analytics users. No Admin rights or other permissions are required. However, the prerequisites require actions that only administrators can perform.
 
 ## New functions in calculated metrics
 
