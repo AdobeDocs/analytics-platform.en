@@ -1,12 +1,12 @@
 ---
 description: Find out how Adobe Experience Platform Customer AI data integrates with Workspace in Customer Journey Analytics.
-title: Integrate Customer AI data with Customer Journey Analytics
+title: Integrate Customer AI data
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
 ---
-# Integrate Customer AI data with Adobe Customer Journey Analytics
+# Integrate Customer AI data
 
 {{release-limited-testing}}
 
