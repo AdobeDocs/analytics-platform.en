@@ -21,7 +21,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="cja_workspace_experimentation_panel"
 >title="Experimentation"
->abstract="Compare different user experiences, marketing, or messaging variations to determine which is best at driving a specific outcome.<br/><br/>**Parameters**<br/>**Experiment**: The experiment that will be analyzed.<br>**Control variant**: Control variant for the selected experiment.<br/>**Success metric**: Up to 5 standard (non-calculated) success metrics to analyze the experiment against.<br/>**Normalising metric**: People, sessions, or events. This metric (also referred to as the counting methodology) becomes the denominator of the lift calculation. This metric also affects how the data is aggregated before the confidence calculation is applied."
+>abstract="Compare different user experiences, marketing, or messaging variations to determine which is best at driving a specific outcome.<br/><br/>**Parameters**<br/>**Experiment**: The experiment that is analyzed.<br>**Control variant**: Control variant for the selected experiment.<br/>**Success metric**: Up to 5 standard (non-calculated) success metrics to analyze the experiment against.<br/>**Normalizing metric**: People, sessions, or events. This metric (also referred to as the counting methodology) becomes the denominator of the lift calculation. This metric also affects how the data is aggregated before the confidence calculation is applied."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -33,7 +33,7 @@ Read more about the [integration between Adobe Customer Journey Analytics and Ad
 
 ## Access control {#access}
 
-The Experimentation panel is available to use by all Customer Journey Analytics users. No Admin rights or other permissions are required. However, the [prerequisites](#prerequisites) requires actions that only administrators can perform.
+The Experimentation panel is available to use by all Customer Journey Analytics users. No Admin rights or other permissions are required. However, the [prerequisites require actions that only administrators can perform.
 
 ## New functions in calculated metrics
 
@@ -93,7 +93,7 @@ To use the Experimentation panel:
    | **[!UICONTROL Experiment]** | A set of variations on an experience that were exposed to end users to determine which is best to keep in perpetuity. An experiment is made up of two or more variants, one of which is considered the control variant. This setting is pre-populated with the dimensions that have been labeled with the **[!UICONTROL Experiment]** label in data views, and the last 3 months' worth of experiment data. |
    | **[!UICONTROL Control variant]** | One of two or more alterations in an end user's experience that are being compared for the purpose of identifying the better alternative. One variant must be selected as the control, and only one variant can be considered to be the control variant. This setting is pre-populated with the dimensions that have been labeled with the **[!UICONTROL Variant]** label in data views. This setting pulls up the variant data that is associated with this experiment. |
    | **[!UICONTROL Success metrics]** ➊ | The metric or metrics that a user is comparing variants with. The variant with the most desirable outcome for the conversion metric (whether highest or lowest) is declared the *best performing variant* of an experiment. You can add up to 5 metrics. |
-   | **[!UICONTROL Normalizing metric]** ➋| The basis ([!UICONTROL People], [!UICONTROL Sessions], or [!UICONTROL Events]) on which a test runs. For example, a test may compare the conversion rates of several variations where **[!UICONTROL Conversion rate]** is calculated as  the  |
+   | **[!UICONTROL Normalizing metric]** ➋| The basis ([!UICONTROL People], [!UICONTROL Sessions], or [!UICONTROL Events]) on which a test runs. For example, a test may compare the conversion rates of several variations where **[!UICONTROL Conversion rate]** is calculated as Page View |
    | **[!UICONTROL Include confidence upper/lower bounds]** | Enable this option to show upper and lower bounds for confidence levels. |
 
 
@@ -105,7 +105,7 @@ The Experimentation panel returns a rich set of data and visualizations to help 
 
 You also get a text summary that indicates whether the experiment is conclusive or not, and summarizes the outcome. Conclusiveness is based on statistical significance (see [Statistical methodology](#adobes-statistical-methodology).) You can see summary numbers for the best performing variant with the highest lift and confidence.
 
-For each success metric you selected, a [freeform table](../visualizations/freeform-table/freeform-table.md) visualization and a conversion rate [line](../visualizations/line.md) visualization is shown.
+For each success metric you selected, a [freeform table](../visualizations/freeform-table/freeform-table.md) visualization and a conversion rate [line](../visualizations/line.md) visualization are shown.
 
 ![The Experimentation output showing one freeform table and one conversion rate trend.](assets/experiment-output.png)
 
@@ -116,9 +116,9 @@ For each success metric you selected, a [freeform table](../visualizations/freef
 
 #### Interpret the results
 
-1. **Experiment is conclusive**: Every time you view the experimentation report, the data that has accumulated in the experiment up to this point is analyzed. The analysis declares an experiment to be conclusive when the anytime valid confidence crosses a threshold of 95% for *at least one* of the variants. With more than two arms, a Benjamini-Hochberg correction is applied to correct for multiple hypothesis testing.  
+1. **Experiment is conclusive**: Every time you view the experimentation report, the data that has accumulated in the experiment up to this point is analyzed. The analysis declares an experiment to be conclusive when the *anytime* valid confidence crosses a threshold of 95% for *at least one* of the variants. With more than two arms, a Benjamini-Hochberg correction is applied to correct for multiple hypothesis testing.  
 
-2. **Best performing variant**: When an experiment is declared to be conclusive, the variant with the highest conversion rate is labeled as the best performing variant. Note that this variant must either be the control or baseline variant, or one of the variants that crosses the 95% anytime valid confidence threshold (with Benjamini-Hochberg corrections applied).
+2. **Best performing variant**: When an experiment is declared to be conclusive, the variant with the highest conversion rate is labeled as the best performing variant. Note that this variant must either be the control or baseline variant, or one of the variants that crosses the 95% *anytime* valid confidence threshold (with Benjamini-Hochberg corrections applied).
 
 3. **Conversion rate**: The conversion rate that is shown is a ratio of the success metric value ➊ to the normalizing metric value ➋. Note that this value can be larger than 1, if the metric is not binary (1 or 0 for each unit in the experiment)
 
