@@ -76,32 +76,46 @@ Following are a few examples of other insights Journey canvas can help provide. 
 
 * Add a breakdown dimension on any node of the journey to view additional data for that specific node
 
-## Choose between Journey canvas and Fallout visualizations
+## Choose between Journey canvas, Fallout, or Flow visualizations
 
-Journey canvas visualizations are similar to [Fallout visualizations](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), in that both visualizations show where persons left (fell out) and continued through (fell through) a predefined sequence of pages.
-
-However, there are important differences.
+The Journey canvas visualization has similarities with the [Fallout visualization](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) and [Flow visualization](/help/analysis-workspace/visualizations/c-flow/flow.md), but with important differences. 
 
 ### Understand the differences
 
-The following table shows the types of analyses supported in the Journey canvas visualization and the Fallout visualization:
+Various visualizations in Customer Journey analytics are designed to analyze the journeys you provide to your customers.
 
-| Function | Journey canvas visualization | Fallout visualization |
-|---------|----------|---------|
-| Linear journeys | Yes | Yes |
-| Non-linear journeys with multiple entry points and paths | Yes | No |
-| Adobe Journey Optimizer journeys | Yes | No | 
-| Primary metric | Any metric, including calculated metrics | Can use only the Session or User metrics | 
-| Secondary metric | Yes<p>Any metric, including calculated metrics</p> | No | 
-| Compare filters | No | Yes<p>Compare an [unlimited number of filters](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md#compare-filters-in-fallout)</p> |
+Use the following information to choose the visualization that best meets your needs.
 
-### Choose which visualization to use
+| Function | Journey canvas | Fallout | Flow |
+|---------|----------|---------|---------|
+| **Predefined sequence of pages** | Yes</br>Combines predefined and exploratory analysis. The eventual path is used when using predefined nodes on the path (visitors are counted as long as they eventually move from one predefined node to the other). The immediate (not eventual) next nodes can also be shown.  | Yes</br>The path can be an eventual path or can be constrained to the next touchpoint | No |
+| **Exploratory sequence of pages (ad hoc analysis)** | Yes</br>Combines predefined and exploratory analysis. The eventual path is used when using predefined nodes on the path (visitors are counted as long as they eventually move from one predefined node to the other). The immediate (not eventual) next nodes can also be shown. | No | Yes</br>Exploratory analysis only. Each node shows the immediate (not eventual) next touchpoint along the path. |
+| **Shows where people left (fell out) and continued through (fell through)** | Yes</br>Shows for both predefined and exploratory journeys  | Yes</br>Shows predefined journeys  | Yes</br>Shows for exploratory journeys  |
+| **Linear journeys** | Yes | Yes | No |
+| **Non-linear journeys with multiple entry points and paths** | Yes | No | Yes |
+| **Primary metric** | Any metric, including calculated metrics | Only Session or Person | Only Occurrences |
+| **Secondary metric** | Yes<p>Any metric, including calculated metrics</p> | No | No  |
+| **Component support in nodes or touchpoints** | Any component for all nodes, including metrics, calculated metrics, dimensions, dimension items, filters, and date ranges.| Any component for all nodes, including metrics, calculated metrics, dimensions, dimension items, filters, and date ranges. | Only dimension items (except for the starting and ending touchpoint)  |
+| **Compare filters** | No | Yes<p>Compare an [unlimited number of filters](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md#compare-filters-in-fallout)</p> | No |
+| **Adobe Journey Optimizer journeys** | Yes</br>Open journeys from Journey Optimizer for deeper analysis and customization | No |  No |
 
-Before you choose between using Journey canvas or Fallout, make sure you [understand the differences between the two](#understand-the-differences).
+{style="table-layout:auto"}
 
-If your fallout analysis involves only a linear journey that has a single known beginning and end, consider using a [Fallout visualization](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) as a more simple option for these more straightforward user journeys.
+### When to use Journey canvas
 
-Journey canvas is essential for fallout analysis involving journeys with multiple entry points and paths, or for analyzing journeys that were created in Journey Optimizer.
+Journey canvas is essential for:
+
+* Fallout analysis involving journeys with multiple entry points and paths.
+
+* Non-linear journeys with multiple entry points and paths, with a predefined sequence of pages.
+
+* Exploratory, ad hoc analysis that is based on a predefined journey.
+
+* Analysis that requires a primary metric other than Session, Person, or Occurrences.
+
+* Deeper analysis of journeys that originated in Adobe Journey Optimizer.
+
+Use [the table above](#understand-the-differences) to understand the differences between Journey canvas, Fallout, and Flow visualizations.
 
 ## Analyze Journey Optimizer journeys
 
