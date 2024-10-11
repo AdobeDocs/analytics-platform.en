@@ -51,7 +51,7 @@ The Fallout visualization has similarities with the [Flow visualization](/help/a
 
 ### When to use Fallout
 
-Both Fallout and Journey canvas visualizations are useful for analyzing:
+Both Fallout and [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) visualizations are useful for analyzing:
 
 * Conversion rates through specific processes on your site (such as a purchase or registration process).
 * General, wider-scope traffic flows: Of the people who visited the home page, this flow shows how many performed a search. And then how many of them eventually looked at a specific item.
