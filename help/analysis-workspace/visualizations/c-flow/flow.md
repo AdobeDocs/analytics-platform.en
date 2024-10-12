@@ -50,3 +50,22 @@ Each column could show a different dimension. Drag a dimension and drop in a dro
 >[Configure a flow visualization](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 >
 
+## Choose between Flow, Fallout, or Journey canvas visualizations
+
+The Flow visualization has similarities with the [Fallout visualization](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) and the [Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md), but with important differences. 
+
+### Understand the differences
+
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
+
+{{journey-visualization-comparisons}}
+
+### When to use Flow
+
+Flow visualizations are best suited for:
+
+* Exploratory, ad hoc analysis for the immediate next touchpoint on the path. (Use Journey canvas for journeys with a predefined sequence of pages, or those that use an eventual path.)
+
+* Non-linear journeys with multiple entry points and paths. (Use Journey canvas for journeys with a predefined sequence of pages.)
+
+Use [the table above](#understand-the-differences) to understand the differences between Flow, Fallout, and Journey canvas.

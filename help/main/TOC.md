@@ -94,6 +94,8 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Labels and policies](../data-views/data-governance.md)
 
 + Tools {#tools}
+  + Asset Transfer {#asset-transfer}
+    + [Transfer assets](../tools/asset-transfer/transfer-assets.md) 
   + Product Usage {#product-usage}
     + [Overview](../tools/product-usage/usage-overview.md)
     + [Data settings](../tools/product-usage/data-settings.md)
