@@ -1,8 +1,8 @@
 ---
 title: Transfer assets
 description: Learn how to transfer components from one user to another
-hide: yes
-hidefromtoc: yes
+role: Admin
+solution: Customer Journey Analytics
 ---
 
 # Transfer assets
