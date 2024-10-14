@@ -1,11 +1,11 @@
 ---
-title: Target reporting in Adobe Customer Journey Analytics
+title: Target reporting
 description: Integrate Adobe Target with Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
 exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
 ---
-# Target reporting in Adobe Customer Journey Analytics
+# Target reporting
 
 Target Reporting in Customer Journey Analytics enables you to measure and report on Adobe Target activities directly in Customer Journey Analytics. This functionality is comparable to what is being performed in Adobe Analytics (AA) via Analytics for Target (A4T), but with the connectivity to Adobe Experience Platform (AEP). 
 
