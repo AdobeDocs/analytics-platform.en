@@ -29,7 +29,7 @@ The following information describes how to access and use templates from the [!U
 
    ![Reports tab](assets/view-prebuilt-reports.png)
 
-1. In the search field, begin typing the name of the template you want to find, then select it from the list of templates. You can also search the template list by prop, eVar, and event number. <!-- still true? -->
+1. In the search field, begin typing the name of the template you want to find, then select it from the list of templates. 
 
    Or
 
@@ -87,6 +87,24 @@ To access all available pre-built templates:
 
    * [[!UICONTROL **Web**] > [!UICONTROL **Engagement**]](#engagement)
 
+   * [[!UICONTROL **Web**] > [!UICONTROL **Conversion**]](#web-conversion)
+
+   * [[!UICONTROL **Web**] > [!UICONTROL **Audience**]](#web-audience)
+
+   * [[!UICONTROL **Web**] > [!UICONTROL **Acquisition**]](#web-acquisition)
+
+   * [[!UICONTROL **Mobile**] > [!UICONTROL **Mobile App**]](#mobile-mobile-app)
+
+   * [[!UICONTROL **Mobile**] > [!UICONTROL **Mobile Device Information**]](#mobile-mobile-device-information)
+
+   * [[!UICONTROL **Time Parting**]](#time-parting)
+   
+   * [[!UICONTROL **Cross-Channel**]](#cross-channel)
+
+   * [[!UICONTROL **Other Channels**]](#other-channels)
+
+   * [[!UICONTROL **AJO**]](#ajo)
+
 ### Most popular
 
 The following templates are available:
@@ -121,17 +139,166 @@ The following templates are available:
 | [!UICONTROL **Pages**]  | <!--duplicated in Most popular section-->Identify the most popular and least popular pages. <p>**This can help you** better understand your audience and the kind of information they're most interested in.</p><p>**Based on what you learn, you might** do any number of things, like adjust page metadata in order to increase visibility on lesser-viewed pages, or spend time improving the content of your most-viewed pages.</p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) and the [Page Views metric](/help/components/metrics/page-views.md).</p> | 
 | [!UICONTROL **Visits**] | <!--duplicated in Most popular section-->View the total number of visits. Data is shown over a period of time and compared with prior periods. <p>**This can help you** better understand how traffic on your site might be increasing or decreasing over time.</p><p>**Based on what you learn, you might** do any number of things, like assess the effectiveness of a recently launched marketing campaign by comparing site traffic before and after the campaign launched. Or you might compare year-over-year holiday traffic.</p><p>This template uses the [Day dimension](/help/components/dimensions/day.md) and the [Visits metric](/help/components/metrics/visits.md).</p>  | 
 | [!UICONTROL **Visitors**] | <!--duplicated in Most popular section-->View the total number of unique visitors. Data is shown over a period of time and compared with prior periods. <p>**This can help you** better understand how the reach and audience size of your site is increasing or decreasing over time or compared with a prior period.</p><p>**Based on what you learn, you might** do any number of things, like assess whether a recently launched marketing campaign was successful at attracting new people to the site by comparing unique visitors before and after the campaign launched. Or you might compare the number of people to visit the site during the holidays year-over-year.</p><p>This template uses the [Day dimension](/help/components/dimensions/day.md) and the [Unique Visitors metric](/help/components/metrics/unique-visitors.md).</p>   |   
-| [!UICONTROL **Time spent per visit**] | View the average time visitors spend on your site during each visit. Data is shown over a period of time and compared with prior periods. <p>**This can help you** better understand visitor engagement levels.</p><p>**Based on what you learn, you might** do any number of things, like ...</p><p>This template uses the [Day dimension](/help/components/dimensions/day.md) and the [Time Spent per Visit (seconds) metric](/help/components/metrics/time-spent-per-visit.md).</p> |   
-| [!UICONTROL **Time prior to event**] | <!--duplicated in Most popular section-->View the average time users spend prior to a success event. <p>**This can help you** better understand how much time it takes visitors to perform a desired action, such as making a purchase.</p><p>**Based on what you learn, you might** do any number of things, like assess whether changes to your site improve visitors' ability to quickly reach a success event.</p><p>This template uses the [Time Prior to Event dimension](/help/components/dimensions/time-prior-to-event.md) and the [Unique Visitors metric](/help/components/metrics/unique-visitors.md).</p> |  
+| [!UICONTROL **Time spent**] | View the average time visitors spend on your site during each visit, as well as the average time users spend prior to a success event. Data is shown over a period of time and compared with prior periods. <p>**This can help you** better understand visitor engagement levels and how much time it takes visitors to perform a desired action, such as making a purchase.</p><p>**Based on what you learn, you might** do any number of things, like assess whether changes to your site improve visitors' ability to quickly reach a success event.</p><p>This template uses the [Day dimension](/help/components/dimensions/day.md) and the [Time Spent per Visit (seconds) metric](/help/components/metrics/time-spent-per-visit.md), the [Day dimension](/help/components/dimensions/day.md), and the [Time Spent per Visit (seconds) metric](/help/components/metrics/time-spent-per-visit.md).</p> |   
 | [!UICONTROL **Site sections**] | <!--duplicated in Most popular section-->View the most popular or highest performing sections of your site. <p>**This can help you** better understand which sections of your site are the most visited.</p><p>**Based on what you learn, you might** do any number of things, like assess which products or services that you provide generate the most interest.</p> <p>This template uses the [Site Section dimension](/help/components/dimensions/site-section.md) and the [Visits metric](/help/components/metrics/visits.md).</p> | 
-| [!UICONTROL **Real-Time**] | View the dimensions and metrics that are currently being collected on your site. <p>**This can help you** better understand what is trending on your site.</p><p>**Based on what you learn, you might** respond to and actively manage the performance of your current marketing content and campaigns.</p> <p>This template uses the [Real-time report](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md).</p> | 
 | [!UICONTROL **Web content consumption**] | View which web content is consumed most and is engaging users.<p>**This can help you** better understand where people go upon first entering the site, which sections of the site people are visiting most, and which pages are most likely to drive people away from the site.</p><p>**Based on what you learn, you might** do any number of things, like assess which paths on the site drive people to the most important pages, and which pages are more likely to lead people away from the site <!-- not sure about these takeaways... -->.</p> <p>This template uses the [Page dimension](/help/components/dimensions/page.md) and the [Page Views metric](/help/components/metrics/page-views.md), the [Visits metric](/help/components/metrics/visits.md), the [Unique Visitors metric](/help/components/metrics/unique-visitors.md), the [Entry Rate metric](/help/components/metrics/entries.md), the [Bounce Rate metric](/help/components/metrics/bounce-rate.md), the [Exit Rate metric](/help/components/metrics/exits.md), and the [Content Velocity metric](/help/components/metrics/content-velocity.md). It also uses [Flow visualizations](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) for entry, exit, and top sections.</p> |
 | [!UICONTROL **Media content consumption**] | View which media content is consumed most and is engaging users.<p>**This can help you** better understand where people go upon first entering the site, which sections of the site people are visiting most, and which pages are most likely to drive people away from the site.</p><p>**Based on what you learn, you might** do any number of things, like assess which paths on the site drive people to the most important pages, and which pages are more likely to lead people away from the site <!-- not sure about these takeaways... -->.</p> <p>This template uses the [Page dimension](/help/components/dimensions/page.md) and the [Page Views metric](/help/components/metrics/page-views.md), the [Visits metric](/help/components/metrics/visits.md), the [Unique Visitors metric](/help/components/metrics/unique-visitors.md), the [Entry Rate metric](/help/components/metrics/entries.md), the [Bounce Rate metric](/help/components/metrics/bounce-rate.md), the [Exit Rate metric](/help/components/metrics/exits.md), and the [Content Velocity metric](/help/components/metrics/content-velocity.md). It also uses [Flow visualizations](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) for entry, exit, and top sections; a [Satterplot visualization](/help/analyze/analysis-workspace/visualizations/scatterplot.md) that shows page views for the most common pages; a [Bar visualization](/help/analyze/analysis-workspace/visualizations/bar.md) that shows page views by bucketed time; and a [Line visualization](/help/analyze/analysis-workspace/visualizations/line.md) that shows a trended view of the average time spent on the site.</p> |
-| [!UICONTROL **Next and previous page flow**] | View the most common places people go before or after visiting a certain place.<p>**This can help you** better understand where people go upon first entering the site, which sections of the site people are visiting most, and which pages are most likely to visit before leaving the site.</p><p>**Based on what you learn, you might** do any number of things, like assess which paths on the site drive people to the most important pages, and which pages are more likely to lead people away from the site <!-- not sure about these takeaways... -->.</p> <p>This template uses the [Page dimension](/help/components/dimensions/page.md) and the [Page Views metric](/help/components/metrics/page-views.md), the [Visits metric](/help/components/metrics/visits.md), the [Unique Visitors metric](/help/components/metrics/unique-visitors.md), the [Entry Rate metric](/help/components/metrics/entries.md), the [Bounce Rate metric](/help/components/metrics/bounce-rate.md), the [Exit Rate metric](/help/components/metrics/exits.md), and the [Content Velocity metric](/help/components/metrics/content-velocity.md). It also uses [Flow visualizations](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) for entry, exit, and top sections; a [Scatterplot visualization](/help/analyze/analysis-workspace/visualizations/scatterplot.md) that shows page views for the most common pages; a [Bar visualization](/help/analyze/analysis-workspace/visualizations/bar.md) that shows page views by bucketed time; and a [Line visualization](/help/analyze/analysis-workspace/visualizations/line.md) that shows a trended view of the average time spent on the site.</p> |
+| [!UICONTROL **Next and previous page**] | View the most common places people go before or after visiting a certain place.<p>**This can help you** better understand where people go upon first entering the site, which sections of the site people are visiting most, and which pages are most likely to visit before leaving the site.</p><p>**Based on what you learn, you might** do any number of things, like assess which paths on the site drive people to the most important pages, and which pages are more likely to lead people away from the site <!-- not sure about these takeaways... -->.</p> <p>This template uses the [Page dimension](/help/components/dimensions/page.md) and the [Page Views metric](/help/components/metrics/page-views.md), the [Visits metric](/help/components/metrics/visits.md), the [Unique Visitors metric](/help/components/metrics/unique-visitors.md), the [Entry Rate metric](/help/components/metrics/entries.md), the [Bounce Rate metric](/help/components/metrics/bounce-rate.md), the [Exit Rate metric](/help/components/metrics/exits.md), and the [Content Velocity metric](/help/components/metrics/content-velocity.md). It also uses [Flow visualizations](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) for entry, exit, and top sections; a [Scatterplot visualization](/help/analyze/analysis-workspace/visualizations/scatterplot.md) that shows page views for the most common pages; a [Bar visualization](/help/analyze/analysis-workspace/visualizations/bar.md) that shows page views by bucketed time; and a [Line visualization](/help/analyze/analysis-workspace/visualizations/line.md) that shows a trended view of the average time spent on the site.</p> |
+| **Page Summary** | View key information about any page across your properties. <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) |
+| **Entry Pages** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) | |
+| **Exit Pages** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) | |
+
+### Web: Conversion
+
+The following templates are available:
+
+| Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| [!UICONTROL **Product Conversion Funnel**] | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) |  
+| **Products** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) |
+| **Product Performance** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) | 
+| **Cart Conversion Funnels** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) | 
+| **Carts** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) | 
+| **Cart Views** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) | 
+| **Cart Additions** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) | 
+| **Cart Removals** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) | 
+| **Purchase Conversion Funnel** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) | 
+| **Revenue** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Orders** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+
+### Web: Audience
+
+The following templates are available:
+
+| Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| [!UICONTROL **First vs Repeat Users**] | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) |  
+| **Person Id/Namespace** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Location Overview** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Geo Countries** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Geo US States** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Geo Regions** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Geo Cities** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Geo US DMA** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Languages** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Technology Overview** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Browsers** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Browser Types** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+
+### Web: Acquisition
+
+The following templates are available:
+
+| Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| [!UICONTROL **Marketing Channels**] > [!UICONTROL **Marketing Channel Overview Report**] | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)   | 
+| [!UICONTROL **Marketing Channels**] > [!UICONTROL **First Touch Marketing Channel**] |  <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  | 
+| [!UICONTROL **Marketing Channels**] > [!UICONTROL **First Touch Marketing Channel Detail**] |  <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  | 
+| [!UICONTROL **Marketing Channels**] > [!UICONTROL **Last Touch Marketing Channel**] | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)   | 
+| [!UICONTROL **Marketing Channels**] > [!UICONTROL **Last Touch Marketing Channel Detail**] | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)   | 
+| [!UICONTROL **Cmpaigns**] > [!UICONTROL **Campaigns (Tracking Code)**] | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  | 
+| [!UICONTROL **Cmpaigns**] > [!UICONTROL **Campaign Conversion Funnel**] | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)   | 
+| [!UICONTROL **Cmpaigns**] > [!UICONTROL **Campaign Performance**] | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)   | 
+| **Web Acquisition** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Search Keywords-All** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Search Keywords-Paid** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Search Keywords-Natural** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Search Engines-All** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Search Engines-Paid** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Search Engines-Natural** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Referring Domains** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Original Referring Domains** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Referrers** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Referrer Types** |  <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) |
+
+### Mobile: Mobile App
+
+The following templates are available:
+
+| Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| [!UICONTROL **Mobile App Screens**] | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)   | 
+| **Mobile App Actions** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Mobile App Usage** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Mobile App Journeys** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Mobile App Metrics** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Mobile App Messaging** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Mobile App Performance** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Mobile App Retention** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+
+### Mobile: Mobile Device Information
+
+The following templates are available:
+
+| Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| [!UICONTROL **Mobile Carrier**] | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) | 
+| **Mobile Devices** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Mobile Device Type** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Manufacturer** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+
+### Time Parting
+
+The following templates are available:
+
+| Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| [!UICONTROL **Minute of Hour**] | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  | 
+| **Hour of Day** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **AM/PM** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Day of Week** |  <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) |
+| **Day of Month** |  <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) |
+| **Day of Year** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Weekday/Weekend** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Week of Year** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Month of Year** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Quarter of Year** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+
+### Cross-Channel
+
+The following templates are available:
+
+| Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| [!UICONTROL **Multi-Channel Overview**] | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  | 
+| **Cross-Channel Comparison** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Call Center Deflection (Web+Call Center)** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Web+App** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Online/Offline** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+
+### Other Channels
+
+The following templates are available:
+
+| Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| [!UICONTROL **Call Center Dashboard**] | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) | 
+| **POS/Offline** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Email/AJO** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **Survey** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+
+### AJO
+
+The following templates are available:
+
+| Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| [!UICONTROL **AJO Campaigns**] | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  | 
+| **AJO Journeys** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **AJO Landing Pages** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **AJO Overview Report** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **AJO Subscriptions** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+
+
+<!-- deleted: 
+
+| [!UICONTROL **Real-Time**] | View the dimensions and metrics that are currently being collected on your site. <p>**This can help you** better understand what is trending on your site.</p><p>**Based on what you learn, you might** respond to and actively manage the performance of your current marketing content and campaigns.</p> <p>This template uses the [Real-time report](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md).</p> | 
 | [!UICONTROL **Fallout**] | View where people leave or continue through a predefined sequence of pages.<p>**This can help you** better understand where people are falling out of the user journey.</p><p>**Based on what you learn, you might** do any number of things, like analyze conversion rates through specific processes on your site (such as a purchase or registration process), or analyze correlations between events on your site. (For example, what percentage of people who looked at your privacy policy went on to purchase a product.) You can also use this template to perform side-by-side comparisons of two different segments in the same report.</p> <p>This template uses the [Fallout visualization](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md).</p> | 
 | [!UICONTROL **Cross-device analysis**] | View which devices people used across all points of the journey.<p>**This can help you** better understand how many people interact with your brand, the types of devices they use, and how their use of multiple devices affects their experience. For example, how often do people begin a task on a mobile device and then later move to a desktop to complete a task? What are the most common paths users take from one device to another? Where do they drop out? Where do they succeed? And so forth.</p><p>**Based on what you learn, you might** do any number of things, like optimize certain parts of the user journey for a mobile experience.</p> <p>This template uses the [Flow visualization](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md), [Fallout visualization](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md), [Cohort analysis](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md), [the People metric](/help/components/metrics/people.md), and [the Unique devices metric](/help/components/metrics/unique-devices.md).</p> |
 | [!UICONTROL **Web retention**] | View who your loyal users are and what they are doing on your site.<p>**This can help you** better understand the number of times the average person visits your site, the frequency with which people return to the site, and the number of days between return visits.</p><p>**Based on what you learn, you might** do any number of things, like analyze what content is most effective at bringing people back to the site.<p>This template uses the [Visits metric](/help/components/metrics/visits.md) and the [Unique visitors metric](/help/components/metrics/unique-visitors.md).</p> | 
 | [!UICONTROL **Streaming Media Consumption**] | View  trends and top metrics of media consumption across all digital devices.<p>**This can help you** better understand the number of times the average person visits your site, the frequency with which people return to the site, and the number of days between return visits.</p><p>**Based on what you learn, you might** do any number of things, like analyze what content is most effective at bringing people back to the site.<p>This template uses the [Visits metric](/help/components/metrics/visits.md) and the [Unique visitors metric](/help/components/metrics/unique-visitors.md).</p> | 
+
+-- >
 
 
 Ignore below this 
