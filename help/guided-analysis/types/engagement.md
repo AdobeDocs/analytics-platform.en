@@ -8,7 +8,7 @@ exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
 ---
 # [!UICONTROL Engagement] view
 
-The **[!UICONTROL Engagement]** view provides insight into how often a feature is used versus how many people use it. This analysis works best when comparing several features to each other. It helps fuel investment decisions by understanding what your core, power, one-time, and questionable features are.
+The ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) **[!UICONTROL Engagement]** view provides insight into how often a feature is used versus how many people use it. This analysis works best when comparing several features to each other. It helps fuel investment decisions by understanding what your core, power, one-time, and questionable features are.
 
 Features that plot toward the top of this visualization indicate that they are frequently used among engaged users. Features that plot toward the right of this visualization indicate that they are widely adopted among your active users. The median number of times a feature is used divides the graph horizontally. The median percentage of active users divides the graph vertically. Medians are calculated based on the events selected in the query, not all data.
 

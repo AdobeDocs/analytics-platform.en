@@ -8,7 +8,7 @@ role: User
 ---
 # [!UICONTROL Conversion trends] view
 
-The **[!UICONTROL Conversion trends]** view provides a trended visualization of conversion rates over time. The horizontal axis is a time interval, while the vertical axis represents the conversion rate.
+The ![ConversionTrens](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Conversion trends]** view provides a trended visualization of conversion rates over time. The horizontal axis is a time interval, while the vertical axis represents the conversion rate.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 

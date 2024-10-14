@@ -8,7 +8,7 @@ role: User
 ---
 # Retention rates
 
-The **[!UICONTROL Retention rates]** view measures how users continue to use your product over time, which can help you understand your product market fit. The analysis counts users based on two important events:
+The ![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Retention rates]** view measures how users continue to use your product over time, which can help you understand your product market fit. The analysis counts users based on two important events:
 
 * Start event: The event used to qualify users for inclusion in your analysis. 
 * Return event: One or more events that a user must engage with to count as a returning user in your analysis.

@@ -8,7 +8,7 @@ role: User
 ---
 # [!UICONTROL Frequency] view
 
-The **[!UICONTROL Frequency]** view groups event data by how often events occur in your product. The vertical axis of this view contains buckets that represent the frequency of the event. The horizontal axis measures the number of users or sessions for each bucket.
+The ![Frequency](/help/assets/icons/Histogram.svg) **[!UICONTROL Frequency]** view groups event data by how often events occur in your product. The vertical axis of this view contains buckets that represent the frequency of the event. The horizontal axis measures the number of users or sessions for each bucket.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
 

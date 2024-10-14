@@ -8,7 +8,7 @@ role: User
 ---
 # [!UICONTROL Net growth] view
 
-The **[!UICONTROL Net growth]** view type provides insights around the rate at which you gain or lose users over a specific period. The horizontal axis is a time interval, while the vertical axis is the measurement of growth.
+The ![NetGrowth](/help/assets/icons/NetGrowth.svg) **[!UICONTROL Net growth]** view type provides insights around the rate at which you gain or lose users over a specific period. The horizontal axis is a time interval, while the vertical axis is the measurement of growth.
 
 Each data point represents net growth, which is calculated using the following formula:
 

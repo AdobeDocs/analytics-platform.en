@@ -6,9 +6,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 ---
-# [!UICONTROL Usage] view
+# [!UICONTROL Trends] view
 
-The **[!UICONTROL Usage]** view provides valuable insight around the performance of your product or the behavior of your users over time. The horizontal axis of this report is a time interval, while the vertical axis measures your desired events.
+The ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Trends]** view provides valuable insight around the performance of your product or the behavior of your users over time. The horizontal axis of this report is a time interval, while the vertical axis measures your desired events.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
 
