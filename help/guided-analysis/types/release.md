@@ -6,9 +6,9 @@ keywords: product analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
 ---
-# [!UICONTROL Release] view
+# [!UICONTROL Release impact] view
 
-The ![Release](/help/assets/icons/Release.svg) **[!UICONTROL Release]** view shows a comparison of how key indicators performed before and after a given date. The horizontal axis of this report is a time interval, while the vertical axis measures the desired key indicators. A vertical bar in the middle of the chart represents the date that you want to compare before and after. This date typically represents a notable change to the product that you want to measure against, such as an update to the product or a campaign launch.
+The ![Release](/help/assets/icons/Release.svg) **[!UICONTROL Release impact]** view shows a comparison of how key indicators performed before and after a given date. The horizontal axis of this report is a time interval, while the vertical axis measures the desired key indicators. A vertical bar in the middle of the chart represents the date that you want to compare before and after. This date typically represents a notable change to the product that you want to measure against, such as an update to the product or a campaign launch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
 

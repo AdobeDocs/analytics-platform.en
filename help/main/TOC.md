@@ -218,7 +218,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Funnel](../guided-analysis/types/friction.md)
       + [Conversion trends](../guided-analysis/types/conversion-trends.md)
     + Impact {#impact}
-      + [Release](../guided-analysis/types/release.md)
+      + [Release impact](../guided-analysis/types/release.md)
       + [First use impact](../guided-analysis/types/first-use.md)
     + Retention {#retention}
       + [Retention](../guided-analysis/types/retention-rates.md)
