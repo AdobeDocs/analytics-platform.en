@@ -157,18 +157,18 @@ The sequential filter identifies data that match the given pattern as a whole.  
 
 The following example sequences match or do not match:
 
-| Sequence | ![ApproveReject](/help/assets/icons/ApproveReject.svg) |
-|--- | --- |
-| A then B in the same session | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
-| A then C then D then B (across different sessions) |  ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
-| B then A | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) |
+| | Sequence | ![ApproveReject](/help/assets/icons/ApproveReject.svg) |
+|---:|--- | --- |
+| 1 | `Woman \| Shoes` then `Checkout \| Thank You` in the same session | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| 2 | `Woman \| Shoes` then `Men \| Shoes` then D then `Checkout \| Thank You` (across different sessions) |  ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| 3 | `Checkout \| Thank You` then `Woman \| Shoes` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) |
 
 ### Only Before Sequence and Only After Sequence
 
 The options ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** and ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** filter the data to a subset before or after the specified sequence.
 
-* ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **Only Before Sequence**: Includes all data before a sequence and the first data of the sequence itself (see example 1, 3). If a sequence appears multiple times as part of the data, [!UICONTROL Only Before Sequence] includes the first hit of the last occurrence of the sequence and all prior hits (see example 2).
-* ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **Only After Sequence**: Includes all hits after a sequence and the last data of the sequence itself (see example 1, 3). If a sequence appears multiple times as part of the data, Only After includes last hit of the first occurrence of the sequence and all subsequent hits (see example 2).
+* ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **Only Before Sequence**: Includes all data before a sequence and the first data of the sequence itself. If a sequence appears multiple times as part of the data, [!UICONTROL Only Before Sequence] includes the first hit of the last occurrence of the sequence and all prior hits.
+* ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **Only After Sequence**: Includes all hits after a sequence and the last data of the sequence itself. If a sequence appears multiple times as part of the data, Only After Sequence includes last hit of the first occurrence of the sequence and all subsequent hits.
 
 Consider a definition specifying a sequence of a component with criteria identified by B, followed (Then) by a component with criteria identified by D. The three options would identify data as follows:
 
