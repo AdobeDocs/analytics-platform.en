@@ -13,7 +13,7 @@ Assets are often tied to an individual owner and in some cases, such as filters 
 
 ## Permissions
 
-Asset Transfer requires Product Administrator permissions for Customer Journey Analytics.
+Asset Transfer requires the Product Administrator permission for Customer Journey Analytics.
 
 ## Transfer assets
 
@@ -38,7 +38,14 @@ Asset Transfer requires Product Administrator permissions for Customer Journey A
 
 1. Now go through each component folder in the left navigation to select individual components or all assets in a folder to transfer.
 
-    Note that transferring assets from an admin to a non-admin does not upgrade the recipient to an admin. 
+    >[!NOTE]
+    >
+    >Transferring assets from an admin to a non-admin does not upgrade the recipient to an admin. 
+
+
+    >[!NOTE]
+    >
+    >    When transferring assets that reference other components (for example, projects that reference other filters and calculated metrics), components not owned by the current owner of the project will only be shared with the recipient. Ownership of all other components will be transferred to the recipient.
 
 1. To select _all_ assets in a folder, check the box next to **[!UICONTROL Name]** at the top of the table.
 
@@ -52,17 +59,31 @@ Asset Transfer requires Product Administrator permissions for Customer Journey A
     >
     >Do not not close the screen during transfer to avoid abortion of the process. This ensures a smooth transfer experience.
 
+## Transfer outcomes
+
+There are three possible outcomes for a transfer:
+
+- **Transfer success**: "Assets transferred successfully."
+
+- **Partial success**: "Some assets were transferred successfully."
+
+- **Transfer failure**: "Failed to transfer assets. Please try again."
+
 ## Transfer assets during upgrade from Adobe Analytics to Customer Journey Analytics
 
 One of the major use cases for asset transfer is during upgrade from Adobe Analytics to Customer Journey Analytics. 
 
 The [Component Migration](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/component-migration) feature in Adobe Analytics lets you migrate admin-owned projects to other admins. All components that make up these projects are then recreated in Customer Journey Analytics and the recipient admin owns all those components, irrespective of who created them.
 
-This Asset Transfer tool subsequently lets admins reassign components to their rightful owners.
+This Asset Transfer tool subsequently lets admins reassign components to their rightful owners, whether they are admins or not.
+
+>[!IMPORTANT]
+>
+>While you can transfer components using this tool, you as the admin still need to ensure that the recipient has access to the data views required to view/use these components. You can view and assign permissions in the [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html).
 
 ## Export to CSV
 
-You can export a list of assets transferred from one user to another to a .csv file.
+The **[!UICONTROL Export to CSV]** option only lets admins download a list of users displayed to a .csv file. It does not let them export a list of transferred assets to a .csv file.
 
 <!---## Unknown users
 
