@@ -75,7 +75,7 @@ One of the major use cases for asset transfer is during upgrade from Adobe Analy
 
 The [Component Migration](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/component-migration) feature in Adobe Analytics lets you migrate admin-owned projects to other admins. All components that make up these projects are then recreated in Customer Journey Analytics and the recipient admin owns all those components, irrespective of who created them.
 
-This Asset Transfer tool subsequently lets admins reassign components to their rightful owners.
+This Asset Transfer tool subsequently lets admins reassign components to their rightful owners, whether they are admins or not.
 
 >[!IMPORTANT]
 >
