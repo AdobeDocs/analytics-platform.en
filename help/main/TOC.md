@@ -288,7 +288,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Share calculated metrics](../components/calc-metrics/cm-workflow/cm-sharing.md)
       + [Manage calculated metrics](../components/calc-metrics/cm-workflow/cm-manager.md)
       + [Examples](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
-    + [Default calculated metrics](../components/calc-metrics/default-calcmetrics.md)
+    + [Calculated metrics templates](../components/calc-metrics/default-calcmetrics.md)
     + [Basic functions](../components/calc-metrics/cm-functions.md)
     + [Advanced functions](../components/calc-metrics/cm-adv-functions.md)
   + Date ranges {#cja-date-ranges}

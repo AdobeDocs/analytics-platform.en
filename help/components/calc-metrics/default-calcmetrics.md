@@ -1,13 +1,13 @@
 ---
 description: Adobe provides various calculated metrics that you can use. This page lists those metrics and their intended uses.
-title: Default calculated metrics
+title: Calculated metrics templates
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
 role: User
 ---
-# Default calculated metrics
+# Calculated metrics templates
 
-Customer Journey Analytics provides the following default calculated metrics to cover the most common use-cases. These Adobe defined default calculated metrics are identified by a small ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) logo. To quickly filter on these metrics, select ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Adobe Template]** in the [Components filter](/help/components/overview.md#filter).
+Customer Journey Analytics provides the following calculated metrics templates to cover the most common use-cases. These Adobe defined calculated metrics are identified by a small ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) logo. To quickly filter on these metrics, select ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Adobe Template]** in the [Components filter](/help/components/overview.md#filter).
 
 | Calculated metric name | Description<br/>Formula |
 |---------|----------|
