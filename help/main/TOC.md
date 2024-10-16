@@ -398,6 +398,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Guardrails](../technotes/guardrails.md)
   + [IP addresses](../technotes/ip-addresses.md)
   + [Optimize performance](../technotes/optimizing-performance.md)
-  + [View and manage usage](../technotes/estimate-trends.md)
+  + [View and manage usage](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
