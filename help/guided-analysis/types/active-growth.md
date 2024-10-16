@@ -1,14 +1,14 @@
 ---
-title: Active view
+title: Active growth view
 description: Identify who is new, retained, returning, or dormant.
 exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 ---
-# [!UICONTROL Active] view
+# [!UICONTROL Active growth] view
 
-The **[!UICONTROL Active]** view provides insights into the growth and acquisition of users over a specific period. The horizontal axis is a time interval, while the vertical axis is a measurement of users. Users are split into four categories:
+The ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Active growth]** view provides insights into the growth and acquisition of users over a specific period. The horizontal axis is a time interval, while the vertical axis is a measurement of users. Users are split into four categories:
 
 * **[!UICONTROL New]**: The user was active during the current period, but not previously. See how far that the analysis looks back by hovering over _[!UICONTROL New users]_ in the chart legend. The lookback range is dynamically determined based on the selected date range and interval.
 * **[!UICONTROL Repeat]**: The user was active in the current and immediately previous period.

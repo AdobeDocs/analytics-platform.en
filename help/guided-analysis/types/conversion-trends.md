@@ -8,7 +8,7 @@ role: User
 ---
 # [!UICONTROL Conversion trends] view
 
-The **[!UICONTROL Conversion trends]** view provides a trended visualization of conversion rates over time. The horizontal axis is a time interval, while the vertical axis represents the conversion rate.
+The ![Conversion Trends](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Conversion trends]** view provides a trended visualization of conversion rates over time. The horizontal axis is a time interval, while the vertical axis represents the conversion rate.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
@@ -16,7 +16,7 @@ The **[!UICONTROL Conversion trends]** view provides a trended visualization of 
 
 Use cases for this view type include:
 
-* **Track optimization efforts**: After identifying key bottlenecks that you want to improve using [Friction](friction.md), you can use this view to track how those optimizations impact conversion rate over time.
+* **Track optimization efforts**: After identifying key bottlenecks that you want to improve using [Friction](funnel.md), you can use this view to track how those optimizations impact conversion rate over time.
 * **A/B testing evaluation**: Evaluate the effectiveness of A/B tests or experiments conducted within the context of a funnel. By comparing conversion rates between different variations, you can easily determine which tests provide higher conversion rates, leading to data-driven decisions around which variations to implement permanently.
 * **Campaign evaluation over time**: Measure the effectiveness of marketing campaigns over time. You can create a segment that focuses on users that touched a given campaign, and compare their conversion rates with other campaigns. You can also compare current conversion rates with similar campaigns that were run in the past.
 
@@ -24,7 +24,7 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL View]**: Switch between this view type and [Friction](friction.md).
+* **[!UICONTROL View]**: Switch between this view type and [Friction](funnel.md).
 * **[!UICONTROL Steps]**: The event touchpoints that you want to track. Each bar in the chart represents a step. You can include up to ten steps.
 * **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Users] and [!UICONTROL Sessions].
 * **[!UICONTROL Segments]**: The segments that you want to compare the funnel across. Each segment selected splits each step into multiple bars. Each color represents a different segment. You can include up to three segments.
@@ -38,7 +38,7 @@ The [!UICONTROL Conversion trends] view offers the following chart settings, whi
 
 >[!NOTE]
 >
->The **Average** column in the Conversion trends view table differs from the **Total** column in the [Friction view](friction.md) table. The former is an average of the interval columns (for example, average of daily conversion rates), while the latter is an aggregated calculation across the full date range.
+>The **Average** column in the Conversion trends view table differs from the **Total** column in the [Friction view](funnel.md) table. The former is an average of the interval columns (for example, average of daily conversion rates), while the latter is an aggregated calculation across the full date range.
 
 ## Time comparison
 
