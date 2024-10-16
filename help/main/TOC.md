@@ -212,24 +212,17 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Guided analysis {#guided-analysis}
     + [Overview](../guided-analysis/overview.md)
-    + Feature matrix {#feature-matrix}
-      + [Engagement](../guided-analysis/types/engagement.md)
-    + Funnel {#funnel}
-      + [Funnel](../guided-analysis/types/friction.md)
-      + [Conversion trends](../guided-analysis/types/conversion-trends.md)
-    + Impact {#impact}
-      + [Release impact](../guided-analysis/types/release.md)
-      + [First use impact](../guided-analysis/types/first-use.md)
-    + Retention {#retention}
-      + [Retention](../guided-analysis/types/retention-rates.md)
-    + Trends {#trends}
-      + [Trends](../guided-analysis/types/usage.md)
-      + [Frequency](../guided-analysis/types/frequency.md)
-    + User growth {#user-growth}
-      + [Active growth](../guided-analysis/types/active.md)
-      + [Net growth](../guided-analysis/types/net-growth.md)
-    + User stream {#streams}
-      + [Timeline](../guided-analysis/types/timeline.md)
+    + [Active growth](../guided-analysis/types/active-growth.md)
+    + [Conversion trends](../guided-analysis/types/conversion-trends.md)
+    + [Engagement](../guided-analysis/types/engagement.md)
+    + [First use impact](../guided-analysis/types/first-use-impact.md)
+    + [Frequency](../guided-analysis/types/frequency.md)
+    + [Funnel](../guided-analysis/types/funnel.md)
+    + [Net growth](../guided-analysis/types/net-growth.md)
+    + [Release impact](../guided-analysis/types/release-impact.md)
+    + [Retention](../guided-analysis/types/retention.md)
+    + [Timeline](../guided-analysis/types/timeline.md)
+    + [Trends](../guided-analysis/types/trends.md)
     + [Industry use cases](../guided-analysis/industry-use-cases.md)
     + [FAQ](../guided-analysis/faq.md)
 
