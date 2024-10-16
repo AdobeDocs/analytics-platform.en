@@ -1,14 +1,14 @@
 ---
-title: Retention rates
+title: Retention
 description: Measure how many users continue to use your product.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
 ---
-# Retention rates
+# Retention
 
-The **[!UICONTROL Retention rates]** view measures how users continue to use your product over time, which can help you understand your product market fit. The analysis counts users based on two important events:
+The ![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Retention]** view measures how users continue to use your product over time, which can help you understand your product market fit. The analysis counts users based on two important events:
 
 * Start event: The event used to qualify users for inclusion in your analysis. 
 * Return event: One or more events that a user must engage with to count as a returning user in your analysis.

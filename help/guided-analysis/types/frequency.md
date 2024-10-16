@@ -8,7 +8,7 @@ role: User
 ---
 # [!UICONTROL Frequency] view
 
-The **[!UICONTROL Frequency]** view groups event data by how often events occur in your product. The vertical axis of this view contains buckets that represent the frequency of the event. The horizontal axis measures the number of users or sessions for each bucket.
+The ![Frequency](/help/assets/icons/Histogram.svg) **[!UICONTROL Frequency]** view groups event data by how often events occur in your product. The vertical axis of this view contains buckets that represent the frequency of the event. The horizontal axis measures the number of users or sessions for each bucket.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
 
@@ -25,7 +25,7 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL View]**: Switch between this view type and [Usage](usage.md).
+* **[!UICONTROL View]**: Switch between this view type and [Usage](trends.md).
 * **[!UICONTROL Events]**: The events that you want to measure. Each selected event is represented as a separate graph. A row that represents the trended event is added to the table. You can include up to five events.
 * **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Users], [!UICONTROL Sessions], [!UICONTROL Percentage of users] and [!UICONTROL Percentage of sessions]. The denominator for percentage-based metrics in this view is users or sessions who did the selected events, not all active users of the product.
 * **[!UICONTROL Segments]**: The segments that you want to measure. Each selected segment doubles the number of bars in the chart and rows in the table. You can include up to five segments.

@@ -8,7 +8,7 @@ exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
 ---
 # [!UICONTROL Timeline] view
 
-The **[!UICONTROL Timeline]** view allows you to observe user-level session events over time to find experience patterns and tell better user stories. The left rail allows you to filter the stream by property values and segments. The right rail allows you to select from a randomized list of users that match the filter criteria. The center area shows the stream for the selected user by session, consisting of timestamp, property values, and duration. Duration is not available for the last event in a given session.
+The ![Timeline](/help/assets/icons/Timeline.svg) **[!UICONTROL Timeline]** view allows you to observe user-level session events over time to find experience patterns and tell better user stories. The left rail allows you to filter the stream by property values and segments. The right rail allows you to select from a randomized list of users that match the filter criteria. The center area shows the stream for the selected user by session, consisting of timestamp, property values, and duration. Duration is not available for the last event in a given session.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
 
@@ -25,7 +25,7 @@ If a data view does not have the [!UICONTROL Person ID] component added, the fol
 
 Use cases for this view type include:
 
-* **Friction exploration**: If you find a steep drop in the [Friction](friction.md) view, you can create a segment of those users and apply the segment in this view to investigate potential causes.
+* **Friction exploration**: If you find a steep drop in the [Friction](funnel.md) view, you can create a segment of those users and apply the segment in this view to investigate potential causes.
 * **Error behavior**: If users encounter a product error, you can explore what users were doing before or after seeing that error.
 * **Data collection validation**: Data admins can filter this view to their own Person ID to validate that their organization's implementation is working as expected.
 
