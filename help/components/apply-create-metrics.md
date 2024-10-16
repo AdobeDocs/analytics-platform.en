@@ -9,6 +9,13 @@ role: User
 
 Metrics allow you to quantify data points in Analysis Workspace. They are most commonly used as columns in a visualization and tied to dimensions.
 
+## Use metrics in Analysis Workspace
+
+Metrics are flexible in their use within Analysis Workspace. Drag a metric to an empty Freeform table to see that metric trended over the project's date period. You can also drag a metric when a dimension is present to see that metric compared to each dimension item. Dragging a metric on top of an existing metric header replaces it, and dragging a metric next to a header lets you see both metrics side-by-side.
+
+For information about how to add metrics and other types of components to Analysis Workspace, see [Use components in Analysis Workspace](/help/components/use-components-in-workspace.md).
+
+
 ## Types of metrics
 
 Adobe offers several types of metrics for use in Analysis Workspace:
@@ -16,19 +23,19 @@ Adobe offers several types of metrics for use in Analysis Workspace:
 
 * **Standard metrics**: Example of standard metrics are People, Sessions, Events.
 
+  Contrary to Adobe Analytics, Customer Journey Analytics allows you to define standard metrics in a flexible way within the scope of a connection and a data view. 
+
+  * **People**: The People metric in Customer Journey Analytics is the count distinct of Person IDs. Depending on what you choose as the Person ID when you configure datasets in your connection, the People metric can mean different things.
+  * **Sessions**: The Sessions metric in Customer Journey Analytics is what you define as part of the configuration of the Sessions settings in your data view. See [Session settings](/help/data-views/session-settings.md).
+  * **Events**: The Events metric in Customer Journey Analytics are comprised of the events that are part of any event dataset you have configured as part of your connection.
+
 * **Calculated metrics** ![Calculator](/help/assets/icons/Calculator.svg): User-defined metrics that are based on standard metrics, static numbers, or algorithmic functions.
 
-* **Calculated metric templates**  ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : Adobe-defined metrics that behave similarly to calculated metrics. You can use them as-is in Workspace projects, or save a copy to customize the logic.
+* **Calculated metric templates**  ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : Adobe-defined metrics that behave similarly to calculated metrics. You can use them as-is in Workspace projects, or save a copy to customize the logic. See [Default calculated metrics](calc-metrics/cm-workflow/../default-calcmetrics.md).
 
 You can see whether a metric is approved ![Approved icon](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  or not. If you want more details on a metric, hover over the metric, and select ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg). See [Component info](use-components-in-workspace.md#component-info) for more information.
 
 
-
-## Use metrics in Analysis Workspace
-
-Metrics are flexible in their use within Analysis Workspace. Drag a metric to an empty Freeform table to see that metric trended over the project's date period. You can also drag a metric when a dimension is present to see that metric compared to each dimension item. Dragging a metric on top of an existing metric header replaces it, and dragging a metric next to a header lets you see both metrics side-by-side.
-
-For information about how to add metrics and other types of components to Analysis Workspace, see [Use components in Analysis Workspace](/help/components/use-components-in-workspace.md).
 
 ## Calculated metrics
 
