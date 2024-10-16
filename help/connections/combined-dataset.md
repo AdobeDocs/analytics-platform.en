@@ -24,20 +24,20 @@ Consider the following example. You have two event datasets, each with different
 >
 >Adobe Experience Platform typically stores a timestamp in UNIX&reg; milliseconds. For readability in this example, date and time are used.
 
-| `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
-| --- | --- | --- | --- | --- |
-| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` | |
-| `user_310` | `1 Jan 7:04 AM` | | | `2` |
-| `user_310` | `1 Jan 7:08 AM` | `Blue` | | `3` |
-| `user_847` | `2 Jan 12:31 PM` | | `Turtle` | `4` |
-| `user_847` | `2 Jan 12:44 PM` | | | `2` |
+| example_id | timestamp | string_color | string_animal | metric_a |
+| --- | --- | --- | --- | ---: |
+| user_310 | 1 Jan 7:02 AM | Red | Fox | |
+| user_310 | 1 Jan 7:04 AM | | | 2 |
+| user_310 | 1 Jan 7:08 AM | Blue | | 3 |
+| user_847 | 2 Jan 12:31 PM | | Turtle | 4 |
+| user_847 | 2 Jan 12:44 PM | | |2 |
 
-| `different_id` | `timestamp` | `string_color` | `string_shape` | `metric_b` |
-| --- | --- | --- | --- | --- |
-| `user_847` | `2 Jan 12:26 PM` | `Yellow` | `Circle` | `8.5` |
-| `user_847` | `2 Jan 1:01 PM` | `Red` | | |
-| `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
-| `alternateid_656` | `2 Jan 9:03 PM` | | `Triangle` | `3.1` |
+| different_id | timestamp | string_color | string_shape | metric_b |
+| --- | --- | --- | --- | ---: |
+| user_847 | 2 Jan 12:26 PM | Yellow | Circle | 8.5 |
+| user_847 | 2 Jan 1:01 PM | Red | | |
+| alternateid_656 | 2 Jan 8:58 PM | Red | Square | 4.2 |
+| alternateid_656 | 2 Jan 9:03 PM | | Triangle | 3.1 |
 
 When you create a connection using these two event datasets, and have identified
 
@@ -46,19 +46,31 @@ When you create a connection using these two event datasets, and have identified
   
 the following combined dataset is used for reporting.
 
-| `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
-| --- | --- | --- | --- | --- | --- | --- |
-| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` | | | |
-| `user_310` | `1 Jan 7:04 AM` | | | | `2` | |
-| `user_310` | `1 Jan 7:08 AM` | `Blue` | | | `3` | |
-| `user_847` | `2 Jan 12:26 PM` | `Yellow` | | `Circle` | | `8.5` |
-| `user_847` | `2 Jan 12:31 PM` | | `Turtle` | | `4` | |
-| `user_847` | `2 Jan 12:44 PM` | | | | `2` | |
-| `user_847` | `2 Jan 1:01 PM` | `Red` | | | | |
-| `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
-| `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
+| id | timestamp | string_color | string_animal | string_shape | metric_a | metric_b |
+| --- | --- | --- | --- | --- | ---: | ---: |
+| user_310 | 1 Jan 7:02 AM | Red | Fox | | | |
+| user_310 | 1 Jan 7:04 AM | | | | 2 | |
+| user_310 | 1 Jan 7:08 AM | Blue | | | 3 | |
+| user_847 | 2 Jan 12:26 PM | Yellow | | Circle | | 8.5 |
+| user_847 | 2 Jan 12:31 PM | | Turtle | | 4 | |
+| user_847 | 2 Jan 12:44 PM | | | | 2 | |
+| user_847 | 2 Jan 1:01 PM | Red | | | | |
+| alternateid_656 | 2 Jan 8:58 PM | Red | | Square | | 4.2 |
+| alternateid_656 | 2 Jan 9:03 PM | | | Triangle | | 3.1 |
 
-To illustrate the importance of schema paths, consider this scenario. In the first dataset, `string_color` is based on schema path `_experience.whatever.string_color` and in the second dataset on schema path  `_experience.somethingelse.string_color`. In this scenario, the data is **not** merged into one column in the resulting combined dataset. Instead, the result is two `string_color` columns in the combined dataset.
+To illustrate the importance of schema paths, consider this scenario. In the first dataset, `string_color` is based on schema path `_experience.whatever.string_color` and in the second dataset on schema path  `_experience.somethingelse.string_color`. In this scenario, the data is **not** merged into one column in the resulting combined dataset. Instead, the result is two `string_color` columns in the combined dataset:
+
+| id | timestamp | _experience.<br/>whatever.<br/>string_color | experience.<br/>somethingelse.<br/>string_color |string_animal | string_shape | metric_a | metric_b |
+| --- | --- | --- | --- | --- | --- | ---: | ---:|
+| user_310 | 1 Jan 7:02 AM | Red | | Fox | | | |
+| user_310 | 1 Jan 7:04 AM | | | | | 2 | |
+| user_310 | 1 Jan 7:08 AM | Blue | | | | 3 | |
+| user_847 | 2 Jan 12:26 PM | | Yellow | | Circle | | 8.5 |
+| user_847 | 2 Jan 12:31 PM | | | Turtle |  | 4 | |
+| user_847 | 2 Jan 12:44 PM | | | | | 2 | |
+| user_847 | 2 Jan 1:01 PM | |  Red | | | | |
+| alternateid_656 | 2 Jan 8:58 PM | | Red | | Square | | 4.2 |
+| alternateid_656 | 2 Jan 9:03 PM | | | | Triangle | | 3.1 |
 
 This combined event dataset is what is used in reporting. It does not matter which dataset a row comes from. Customer Journey Analytics treats all data as if it is in the same dataset. If a matching Person ID appears in both datasets, they are considered the same unique person. If a matching Person ID appears in both datasets with a timestamp within 30 minutes, they are considered part of the same session. Fields with identical schema paths are merged.
 
@@ -67,7 +79,7 @@ This concept also applies to attribution. It does not matter which dataset a row
 If your connection only included the first table and not the second, pulling a report using the `string_color` dimension and `metric_a` metric using last touch attribution would show:
 
 | string_color | metric_a |
-| --- | --- |
+| --- | ---: |
 | Unspecified | 6 |
 | Blue | 3 |
 | Red | 2 |
@@ -75,7 +87,7 @@ If your connection only included the first table and not the second, pulling a r
 However, if you included both tables in your connection, attribution changes since `user_847` is in both datasets. A row from the second dataset attributes `metric_a` to 'Yellow' where they were previously unspecified:
 
 | string_color | metric_a |
-| --- | --- |
+| --- | ---: |
 | Yellow | 6 |
 | Blue | 3 |
 | Red | 2 |
