@@ -21,6 +21,9 @@ These release notes cover the release period of October 15, 2024 to end of year 
 
 ## Fixes in Customer Journey Analytics
 
+Audiences: AN-359692
+Full table export: AN-359785
+Reporting: AN-350707; AN-355331; AN-359308; AN-359826; AN-359915
 
 ## Important notices for Customer Journey Analytics Administrators
 
