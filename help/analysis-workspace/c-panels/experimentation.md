@@ -162,12 +162,11 @@ When you want to measure the impact of intervention X on outcome Y, it is possib
 >
 >For organizations using both Customer Journey Analytics and Adobe Journey Optimizer, the information in this section also applies to experimentation features within Journey Optimizer.
 
-
 Not all calculated metrics are compatible with the Experimentation panel. 
 
 Calculated metrics that include any of the following metrics or constants are not compatible with the Experimentation panel:
 
-* Base metrics from a summary dataset<!--add link to Rob's "Summary data" doc when it's published --> 
+* Base metrics from a [summary dataset](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/summary-data)
 * Base metrics that are divided by each other or multiplied together (for example, `Revenue`/`Orders`)
 * Constants that are added to or subtracted from a base metric (for example, `Revenue+50`)
 * Any of the following base metrics: 
