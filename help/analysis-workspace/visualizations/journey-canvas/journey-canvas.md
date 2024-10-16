@@ -11,7 +11,7 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 
 The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. It allows you to define a journey from scratch or view one from Journey Optimizer, then see how people left (fell out) or continued through (fell through) the journey. 
 
-You can [build analyses of user journeys](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) by using any combination of events, dimension items, filters, and date ranges to create journey nodes. Connect the nodes to create the journey's flow, and include multiple paths and decision points. Drag nodes on the canvas to rearrange the events and conditions of the journey. Data updates in realtime as you make changes. 
+You can [build analyses of user journeys](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) by using any combination of events, dimension items, filters, and date ranges to create journey nodes. Connect the nodes to create the journey's flow, and include multiple paths and decision points. Drag nodes on the canvas to rearrange the events and conditions of the journey. Data updates in real time as you make changes. 
 
 [Nodes are connected](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) as an "eventual path," which means that visitors are counted as long as they eventually move from one node to the other, regardless of any events occurring between the 2 nodes. The time allotted for users to move along the path is determined by the container setting. 
 
@@ -27,7 +27,7 @@ Key features of the Journey canvas visualization include:
 
 * Drag-and-drop interactions for adding components to the canvas and for repositioning existing nodes.
 
-* The option to build analyses of user journeys within Journey canvas or to automatically create them based on Journey Optimizer journeys.
+* The option to build analyses of user journeys within Journey canvas or to create them automatically based on Journey Optimizer journeys.
 
 ## Potential insights
 
