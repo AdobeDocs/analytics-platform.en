@@ -136,7 +136,7 @@ Understand how Customer Journey Analytics compares to Adobe Analytics. And how t
     </td>
     <td>
       <img src="./assets/guided-analysis.svg" width="35px"><br/>
-      <strong>Guided Analysis</strong><br/><a href="/help/guided-analysis/overview.md">Overview</a> - <a href="/help/guided-analysis/types/active.md">User Growth</a> - <a href="/help/guided-analysis/types/usage.md">Trends</a> - <a href="/help/guided-analysis/types/friction.md">Funnel</a> - <a href="/help/guided-analysis/types/release.md">Impact</a> - <a href="/help/guided-analysis/industry-use-cases.md">Industry use cases</a>
+      <strong>Guided Analysis</strong><br/><a href="/help/guided-analysis/overview.md">Overview</a> - <a href="/help/guided-analysis/types/active-growth.md">User Growth</a> - <a href="/help/guided-analysis/types/trends.md">Trends</a> - <a href="/help/guided-analysis/types/funnel.md">Funnel</a> - <a href="/help/guided-analysis/types/release-impact.md">Impact</a> - <a href="/help/guided-analysis/industry-use-cases.md">Industry use cases</a>
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>

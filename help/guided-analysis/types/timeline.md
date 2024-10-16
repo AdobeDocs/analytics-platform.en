@@ -25,7 +25,7 @@ If a data view does not have the [!UICONTROL Person ID] component added, the fol
 
 Use cases for this view type include:
 
-* **Friction exploration**: If you find a steep drop in the [Friction](friction.md) view, you can create a segment of those users and apply the segment in this view to investigate potential causes.
+* **Friction exploration**: If you find a steep drop in the [Friction](funnel.md) view, you can create a segment of those users and apply the segment in this view to investigate potential causes.
 * **Error behavior**: If users encounter a product error, you can explore what users were doing before or after seeing that error.
 * **Data collection validation**: Data admins can filter this view to their own Person ID to validate that their organization's implementation is working as expected.
 
