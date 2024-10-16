@@ -12,19 +12,19 @@ Guided analysis enables users, from marketing to product to analysts, to self-se
 
 The following guided analyses are available:
 
-| Analysis | Description |
-| --- | --- |
-| [Active growth](types/active.md) | Identify who is new, retained, returning, or dormant. |
-| [Conversion trends](types/conversion-trends.md) | Track changes in conversion rates over time. |
-| [Engagement](types/engagement.md) | Understand the breadth and depth of feature engagement. |
-| [First use impact](types/first-use.md) | Measure the impact of first-time feature use on key indicators. |
-| [Frequency](types/frequency.md) | Measure engagement by frequency of use. |
-| [Funnel](types/friction.md) | Compare conversion rates between steps. |
-| [Net growth](types/net-growth.md) | Are you gaining or losing users? |
-| [Release impact](types/release.md) | Compare performance across equal periods pre- and post-release. |
-| [Retention](types/retention-rates.md) | Measure your users' ongoing return habits. |
-| [Timeline](types/timeline.md) | Explore patterns in session activity. |
-| [Trends](types/usage.md) | Measure user engagement over time. |
+| Icon |Analysis | Description |
+| :----:|--- | --- |
+| ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) |[Active growth](types/active-growth.md) | Identify who is new, retained, returning, or dormant. |
+| ![ConversionTrens](/help/assets/icons/ConversionTrends.svg) |[Conversion trends](types/conversion-trends.md) | Track changes in conversion rates over time. |
+| ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) |[Engagement](types/engagement.md) | Understand the breadth and depth of feature engagement. |
+| ![FirstUse](/help/assets/icons/FirstUse.svg) |[First use impact](types/first-use-impact.md) | Measure the impact of first-time feature use on key indicators. |
+| ![Histogram](/help/assets/icons/Histogram.svg)| [Frequency](types/frequency.md) | Measure engagement by frequency of use. |
+| ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) |[Funnel](types/funnel.md) | Compare conversion rates between steps. |
+| ![NetGrowth](/help/assets/icons/NetGrowth.svg) | [Net growth](types/net-growth.md) | Are you gaining or losing users? |
+| ![Release](/help/assets/icons/Release.svg) | [Release impact](types/release-impact.md) | Compare performance across equal periods pre- and post-release. |
+| ![Retention](/help/assets/icons/Retention.svg) |[Retention](types/retention.md) | Measure your users' ongoing return habits. |
+| ![Timeline](/help/assets/icons/Timeline.svg) | [Timeline](types/timeline.md) | Explore patterns in session activity. |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) |[Trends](types/trends.md) | Measure user engagement over time. |
 
 {style="table-layout:auto"}
 
@@ -32,7 +32,7 @@ The following guided analyses are available:
 
 You can access Guided Analysis from the Customer Journey Analytics homepage. 
 
-1. Select **[!UICONTROL Guided analysis]** from the homepage, which takes you directly to the [Usage trends view](types/usage.md). 
+1. Select **[!UICONTROL Guided analysis]** from the homepage, which takes you directly to the [Usage trends view](types/trends.md). 
 
    ![Landing page tile](assets/landing-page-tile.png){style="border:1px solid gray"}
 

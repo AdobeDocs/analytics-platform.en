@@ -8,7 +8,7 @@ role: User
 ---
 # [!UICONTROL Net growth] view
 
-The **[!UICONTROL Net growth]** view type provides insights around the rate at which you gain or lose users over a specific period. The horizontal axis is a time interval, while the vertical axis is the measurement of growth.
+The ![NetGrowth](/help/assets/icons/NetGrowth.svg) **[!UICONTROL Net growth]** view type provides insights around the rate at which you gain or lose users over a specific period. The horizontal axis is a time interval, while the vertical axis is the measurement of growth.
 
 Each data point represents net growth, which is calculated using the following formula:
 
@@ -16,7 +16,7 @@ Each data point represents net growth, which is calculated using the following f
 
 The result of this formula is a ratio. A net growth of `1` represents an equilibrium; the product gained the same number of users it lost. A net growth greater than `1` represents positive growth; there were more new + return users than dormant users. Likewise, a net growth less than `1` represents a loss; there were more dormant users than new + return users.
 
-Similar to the [Active](active.md) view type, users are defined as the following:
+Similar to the [Active](active-growth.md) view type, users are defined as the following:
 
 * **[!UICONTROL New]**: The user was active during the current period, but not previously. See how far the analysis looks back to determine a new user by hovering over '[!UICONTROL New users]' in the chart legend. The lookback range is dynamically determined based on the selected date range and interval.
 * **[!UICONTROL Return]**: The user was active in the current period and not active in the immediately previous period, but were formerly active at some point. See how far the analysis looks back to determine a return user by hovering over '[!UICONTROL Return users]' in the chart legend. The lookback range is dynamically determined based on the selected date range and interval.
@@ -40,7 +40,7 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL View]**: Switch between this view type and [Active](active.md).
+* **[!UICONTROL View]**: Switch between this view type and [Active](active-growth.md).
 * **[!UICONTROL Events]**: The event that you want to measure. Since this view type is user-based, a user who interacts with the event once within the period is counted as an active user. You can include one event in a query.
 * **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Number of users] and [!UICONTROL Percentage of users].
 * **[!UICONTROL Segments]**: The segment that you want to measure. You can include one segment in a query.

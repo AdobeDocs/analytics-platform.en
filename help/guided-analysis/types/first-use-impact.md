@@ -1,14 +1,14 @@
 ---
-title: First use view
+title: First use impact view
 description: Measure the impact of first-time feature use on key indicators.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
 ---
-# [!UICONTROL First use] view
+# [!UICONTROL First use impact] view
 
-The **[!UICONTROL First use]** view shows a comparison of how key indicators performed before and after a user uses a product feature for the first time. The horizontal axis of this report is a relative time interval before and after the event, while the vertical axis measures the desired key indicators. A vertical bar in the middle of the chart represents day 0 for when a feature is first used by a given user. Because users do not always adopt features on the same day and your rollouts can potentially happen over several days, day 0 can mean something different for each individual user.
+The ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL First use impact]** view shows a comparison of how key indicators performed before and after a user uses a product feature for the first time. The horizontal axis of this report is a relative time interval before and after the event, while the vertical axis measures the desired key indicators. A vertical bar in the middle of the chart represents day 0 for when a feature is first used by a given user. Because users do not always adopt features on the same day and your rollouts can potentially happen over several days, day 0 can mean something different for each individual user.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
 
@@ -29,7 +29,7 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL View]**: Switch between this view type and [Release](release.md).
+* **[!UICONTROL View]**: Switch between this view type and [Release](release-impact.md).
 * **[!UICONTROL Key indicators]**: The events that you want to measure per user. Each selected key indicator is represented as a colored line. A row representing the event is added to the table. You can include up to three events.
 * **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Events per user], [!UICONTROL Events], [!UICONTROL Sessions], and [!UICONTROL Users].
 * **[!UICONTROL Factors]**: There are two factors for this view:

@@ -6,9 +6,9 @@ keywords: product analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
 ---
-# [!UICONTROL Release] view
+# [!UICONTROL Release impact] view
 
-The **[!UICONTROL Release]** view shows a comparison of how key indicators performed before and after a given date. The horizontal axis of this report is a time interval, while the vertical axis measures the desired key indicators. A vertical bar in the middle of the chart represents the date that you want to compare before and after. This date typically represents a notable change to the product that you want to measure against, such as an update to the product or a campaign launch.
+The ![Release](/help/assets/icons/Release.svg) **[!UICONTROL Release impact]** view shows a comparison of how key indicators performed before and after a given date. The horizontal axis of this report is a time interval, while the vertical axis measures the desired key indicators. A vertical bar in the middle of the chart represents the date that you want to compare before and after. This date typically represents a notable change to the product that you want to measure against, such as an update to the product or a campaign launch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
 
@@ -25,7 +25,7 @@ Use cases for this view type include:
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL View]**: Switch between this view type and [First use](first-use.md).
+* **[!UICONTROL View]**: Switch between this view type and [First use](first-use-impact.md).
 * **[!UICONTROL Key indicators]**: The events that you want to measure per user. Each selected key indicator is represented as a colored line. A row representing the event is added to the table. You can include up to three events.
 * **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Events per user], [!UICONTROL Percentage of users], [!UICONTROL Events], [!UICONTROL Sessions], and [!UICONTROL Users].
 * **[!UICONTROL Factors]**: The date that you want to compare before and after.

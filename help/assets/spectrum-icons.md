@@ -402,7 +402,6 @@ Watch [Wiki page](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+i
 | Forecast | `![Forecast](/help/assets/icons/Forecast.svg)`| ![Forecast](/help/assets/icons/Forecast.svg) |
 | Form | `![Form](/help/assets/icons/Form.svg)`| ![Form](/help/assets/icons/Form.svg) |
 | Forward | `![Forward](/help/assets/icons/Forward.svg)`| ![Forward](/help/assets/icons/Forward.svg) |
-| Frequency | `![Frequency](/help/assets/icons/Frequency.svg)`| ![Frequency](/help/assets/icons/Frequency.svg) |
 | FullScreen | `![FullScreen](/help/assets/icons/FullScreen.svg)`| ![FullScreen](/help/assets/icons/FullScreen.svg) |
 | FullScreenExit | `![FullScreenExit](/help/assets/icons/FullScreenExit.svg)`| ![FullScreenExit](/help/assets/icons/FullScreenExit.svg) |
 | Function | `![Function](/help/assets/icons/Function.svg)`| ![Function](/help/assets/icons/Function.svg) |
@@ -700,6 +699,7 @@ Watch [Wiki page](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+i
 | Required | `![Required](/help/assets/icons/Required.svg)`| ![Required](/help/assets/icons/Required.svg) |
 | Resize | `![Resize](/help/assets/icons/Resize.svg)`| ![Resize](/help/assets/icons/Resize.svg) |
 | ResolvedComment | `![ResolvedComment](/help/assets/icons/ResolvedComment.svg)`| ![ResolvedComment](/help/assets/icons/ResolvedComment.svg) |
+| Retention | `![Retention](/help/assets/icons/Retention.svg)`| ![Retention](/help/assets/icons/Retention.svg) |
 | RetentionRates | `![RetentionRates](/help/assets/icons/RetentionRates.svg)`| ![RetentionRates](/help/assets/icons/RetentionRates.svg) |
 | Retweet | `![Retweet](/help/assets/icons/Retweet.svg)`| ![Retweet](/help/assets/icons/Retweet.svg) |
 | Reuse | `![Reuse](/help/assets/icons/Reuse.svg)`| ![Reuse](/help/assets/icons/Reuse.svg) |
@@ -912,7 +912,6 @@ Watch [Wiki page](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+i
 | UnresolvedComment | `![UnresolvedComment](/help/assets/icons/UnresolvedComment.svg)`| ![UnresolvedComment](/help/assets/icons/UnresolvedComment.svg) |
 | UploadToCloud | `![UploadToCloud](/help/assets/icons/UploadToCloud.svg)`| ![UploadToCloud](/help/assets/icons/UploadToCloud.svg) |
 | UploadToCloudOutline | `![UploadToCloudOutline](/help/assets/icons/UploadToCloudOutline.svg)`| ![UploadToCloudOutline](/help/assets/icons/UploadToCloudOutline.svg) |
-| Usage | `![Usage](/help/assets/icons/Usage.svg)`| ![Usage](/help/assets/icons/Usage.svg) |
 | User | `![User](/help/assets/icons/User.svg)`| ![User](/help/assets/icons/User.svg) |
 | UserActivity | `![UserActivity](/help/assets/icons/UserActivity.svg)`| ![UserActivity](/help/assets/icons/UserActivity.svg) |
 | UserAdd | `![UserAdd](/help/assets/icons/UserAdd.svg)`| ![UserAdd](/help/assets/icons/UserAdd.svg) |
