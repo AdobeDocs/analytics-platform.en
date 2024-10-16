@@ -29,6 +29,29 @@ Each dimension represents a different part or facet of your site. You can combin
 
 Customer Journey Analytics administrators can [create dimensions within a data view](/help/data-views/create-dataview.md#components).
 
+## Default dimensions
+
+When you create a dataview, the following time-based components are added by default as dimensions to your data view:
+
+- 15 Minute
+- 30 Minute
+- 5 Minute
+- Day
+- Day of Month
+- Day of Week
+- Day of Year
+- Hour
+- Hour of Day
+- Minute
+- Minute of Hour
+- Month
+- Month of Year
+- Quarter
+- Quarter of Year
+- Second
+- Week of Year
+- Year
+
 ## Add dimension descriptions
 
 Customer Journey Analytics administrators can add descriptions for dimensions and other components either within the data view or directly within Analysis Workspace. For information about how to add descriptions to dimensions, see [Add component descriptions](/help/components/add-component-descriptions.md).
