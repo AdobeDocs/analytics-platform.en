@@ -41,9 +41,9 @@ Before you begin the process of upgrading from Adobe Analytics to Customer Journ
 
 ## Recommended upgrade process
 
-Regardless of your current Adobe Analytics implementation, Adobe recommends using both the Adobe Analytics source connector and a new implementation of the WebSDK when upgrading from Adobe Analytics to Customer Journey Analytics:
+Regardless of your current Adobe Analytics implementation, Adobe recommends a two-pronged upgrade approach when upgrading from Adobe Analytics to Customer Journey Analytics: the Adobe Analytics source connector and a new implementation of the WebSDK .
 
-1. **Implement the Adobe Analytics source connector**
+1. **Set up the Adobe Analytics source connector**
 
    During the upgrade to Customer Journey Analytics, the Analytics source connector is an essential piece of a two-pronged upgrade approach. 
 
