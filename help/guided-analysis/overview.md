@@ -26,7 +26,7 @@ The following guided analyses are available:
 | ![Timeline](/help/assets/icons/Timeline.svg) | [Timeline](types/timeline.md) | Explore patterns in session activity. |
 | ![GraphTrend](/help/assets/icons/GraphTrend.svg) |[Trends](types/trends.md) | Measure user engagement over time. |
 
-{style="table-layout:auto"}
+
 
 ## Access
 
