@@ -61,7 +61,7 @@ the following combined dataset is used for reporting.
 To illustrate the importance of schema paths, consider this scenario. In the first dataset, `string_color` is based on schema path `_experience.whatever.string_color` and in the second dataset on schema path  `_experience.somethingelse.string_color`. In this scenario, the data is **not** merged into one column in the resulting combined dataset. Instead, the result is two `string_color` columns in the combined dataset:
 
 | id | timestamp | _experience.<br/>whatever.<br/>string_color | _experience.<br/>somethingelse.<br/>string_color |string_animal | string_shape | metric_a | metric_b |
-| --- | --- | --- | --- | --- | --- | ---: | ---:|
+|---|---|---|---|---|---|---:|---:|
 | user_310 | 1 Jan 7:02 AM | Red | | Fox | | | |
 | user_310 | 1 Jan 7:04 AM | | | | | 2 | |
 | user_310 | 1 Jan 7:08 AM | Blue | | | | 3 | |
