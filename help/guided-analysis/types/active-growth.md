@@ -1,14 +1,14 @@
 ---
-title: Active growth view
+title: Active growth analysis
 description: Identify who is new, retained, returning, or dormant.
 exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 ---
-# [!UICONTROL Active growth] view
+# [!UICONTROL Active growth] analysis
 
-The ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Active growth]** view provides insights into the growth and acquisition of users over a specific period. The horizontal axis is a time interval, while the vertical axis is a measurement of users. Users are split into four categories:
+The ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Active growth]** analysis provides insights into the growth and acquisition of users over a specific period. The horizontal axis is a time interval, while the vertical axis is a measurement of users. Users are split into four categories:
 
 * **[!UICONTROL New]**: The user was active during the current period, but not previously. See how far that the analysis looks back by hovering over _[!UICONTROL New users]_ in the chart legend. The lookback range is dynamically determined based on the selected date range and interval.
 * **[!UICONTROL Repeat]**: The user was active in the current and immediately previous period.
@@ -21,34 +21,38 @@ All active users (new + repeat + return) appear as a shade of teal above the hor
 
 ## Use cases
 
-Use cases for this view type include:
+Use cases for this analysis type include:
 
 * **User retention and churn:** Provides a clear visualization of periods of high or low user retention. Recognizing these periods of high or low retention can help you make product decisions to encourage high retention or help minimize churn.
 * **Campaign assessment**: Viewing a specific campaign can help you understand how much traffic it generated, and how well it helped users remain engaged.
 * **User lifecycle analysis**: Analyzing active user growth throughout the user lifecycle can help identify specific stages where user engagement dips. For example, if there is a high ratio of dormant users for individuals in an onboarding stage, it can indicate usability issues or a need for better in-product guidance.
 
-## Query rail
+## Interface
+
+See [Interface](../overview.md#interface) for an overview of the Guided analysis interface. The following settings are specific to this analysis:
+
+### Query rail
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL View]**: Switch between this view type and [Net growth](net-growth.md).
-* **[!UICONTROL Events]**: The event that you want to measure. Since this view type is user-based, a user who interacts with the event once within the period is counted as an active user. You can include one event in a query.
+* **[!UICONTROL View]**: Switch between this analysis type and [Net growth](net-growth.md).
+* **[!UICONTROL Events]**: The event that you want to measure. Since this analysis type is user-based, a user who interacts with the event once within the period is counted as an active user. You can include one event in a query.
 * **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Number of users] and [!UICONTROL Percentage of users].
 * **[!UICONTROL Segments]**: The segment that you want to filter data by. You can include one segment in a query.
 
-## Chart settings
+### Chart settings
 
-The [!UICONTROL Active] view offers the following chart settings, which can be adjusted in the menu above the chart:
+The [!UICONTROL Active growth] analysis offers the following chart settings, which can be adjusted in the menu above the chart:
 
 * **[!UICONTROL Chart type]**: The type of visualization that you want to use. Options include [!UICONTROL Stacked bar] and [!UICONTROL Stacked area].
 
-## Time comparison
+### Time comparison
 
 {{apply-time-comparison}}
 
 ![Active time compare](../assets/active-compare.png){style="border:1px solid gray"}
 
-## Date range
+### Date range
 
 The desired date range for your analysis. There are two components to this setting:
 
