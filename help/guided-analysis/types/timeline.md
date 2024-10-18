@@ -36,8 +36,8 @@ See [Interface](../overview.md#interface) for an overview of the Guided analysis
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL Property]**: The property that you want to view streamed values for. The stream in the center shows values for the selected property. You can also apply filters to narrow down the stream to more relevant data. Valid operators for the filter include [!UICONTROL Equals], [!UICONTROL Does not equal], [!UICONTROL Starts with], [!UICONTROL Ends with], [!UICONTROL Contains], [!UICONTROL Does not contain], [!UICONTROL Exists], and [!UICONTROL Does not exist].
-* **[!UICONTROL Segments]**: The segment that you want to analyze. The selected segment filters your data to focus only on the individuals who match your segment criteria. If you want to narrow down the analysis to a specific Person ID, you can filter to that Person ID here. One segment is supported for this analysis. 
+* **[!UICONTROL Dimension]**: The dimension that you want to view streamed values for. The stream in the center shows values for the selected dimension. You can also apply filters to narrow down the stream to more relevant data. Valid operators for the filter include [!UICONTROL Equals], [!UICONTROL Does not equal], [!UICONTROL Starts with], [!UICONTROL Ends with], [!UICONTROL Contains], [!UICONTROL Does not contain], [!UICONTROL Exists], and [!UICONTROL Does not exist].
+* **[!UICONTROL Segments]**: The segment that you want to analyze. The selected segment filters your data to focus only on the individuals who match your segment criteria. If you want to narrow down the analysis to a specific Person ID, you can filter to that Person ID in the right panel. One segment is supported for this analysis. 
 
 ### Chart settings
 
