@@ -9,7 +9,7 @@ feature: Basics
 
 Use the following sections to understand the differences between your current and future implementations, and how to get started with the upgrade.
 
-## Understand how your existing Adobe Analytics implementation compares with the new Customer Journey Analytics implementation
+## Understand the upgrade from an Adobe Analytics implementation to a Customer Journey Analytics implementation
 
 The following sections show the differences between an AppMeasurement or an Analytics Extension implementation that sends data only to Adobe Analytics, and an implementation after upgrading to Customer Journey Analytics. 
 
@@ -51,5 +51,17 @@ For detailed information about each of these steps, see [Ingest data via the Ado
 
 ### Set up the Analytics source connector
 
-1. To set up the Adobe Analytics source connector, follow the steps in [Ingest and use data from traditional Adobe Analytics](/help/data-ingestion/analytics.md). 
+The Analytics source connector allows you to:
+
+   * Bring your historical Adobe Analytics report suite data into Adobe Experience Platform and Customer Journey Analytics. 
+   
+     You can keep the Analytics source connector running for as long as you need to retain the historical Adobe Analytics data. 
+   
+   * View the data collected with your original Adobe Analytics implementation (either AppMeasurement, the Analytics Extension, or the WebSDK Extension) within Customer Journey Analytics. You can compare this data side-by-side with that of your new WebSDK implementation. 
+   
+     You can keep the Analytics source connector running until you are familiar and comfortable with the differences. <!--elaborate on what those differences are? -->
+
+To set up the Adobe Analytics source connector:
+
+1. Follow the steps in [Ingest and use data from traditional Adobe Analytics](/help/data-ingestion/analytics.md). 
 
