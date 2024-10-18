@@ -87,3 +87,26 @@ To set up the Adobe Analytics source connector:
 
 1. Follow the steps in [Ingest and use data from traditional Adobe Analytics](/help/data-ingestion/analytics.md). 
 
+## Perform additional implementation tasks
+
+At this point in the upgrade process, you need to perform various implementation tasks before your Customer Journey Analytics environment is ready to use.
+
+These additional tasks apply to upgrades from Adobe Analytics as well as new Customer Journey Analytics implementations.
+
+These tasks include:
+
+* Bringing other data into Experience Platform
+
+* Creating connections between Platform datasets and Customer Journey Analytics
+
+* Creating data views
+
+* Porting the reporting API usage
+
+* Accounting for Data Feeds and Data Warehouse use cases
+
+* Migrating projects and components
+
+* Planning user onboarding
+
+For more information, begin with Step 2 in [Customer Journey Analytics Getting Started](/help/getting-started/cja-getting-started.md). <!-- Instead of linking here, should we make each of the rows from this table its own article, so Russ can point to it from his checklist? -->
