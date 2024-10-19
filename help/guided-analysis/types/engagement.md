@@ -62,5 +62,5 @@ The [!UICONTROL Engagement] analysis offers the following chart settings, which 
 
 The desired date range for your analysis. There are two components to this setting:
 
-* **[!UICONTROL Interval]**: The date granularity that you want to view trend data by. This view type treats [!UICONTROL Interval] similarly to [!UICONTROL Counted as] in the query rail. Hourly active users is not supported.
+* **[!UICONTROL Interval]**: The date granularity that you want to view trend data by. This analysis treats [!UICONTROL Interval] similarly to [!UICONTROL Counted as] in the query rail. Hourly active users is not supported.
 * **[!UICONTROL Date]**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.

@@ -49,7 +49,7 @@ The [!UICONTROL First use impact] analysis offers the following chart settings, 
 
 ### Date range
 
-Date selections in the [!UICONTROL First use impact] analysis operates differently than other analysis types, since the analysis revolves around the date specified in the query rail. The following options are available:
+Date selections in the [!UICONTROL First use impact] analysis operates differently than other analyses, since the analysis revolves around the date specified in the query rail. The following options are available:
 
 * **[!UICONTROL Interval]**: The date granularity that you want to view trended data by. Valid options include [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly], and [!UICONTROL Quarterly]. Changing the interval affects the options available for the Before and after period.
 * **[!UICONTROL Before and after period]**: The amount of time to analyze before and after the first use event specified in the query rail. Available options depend on the [!UICONTROL Interval] selection.
