@@ -128,11 +128,67 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_matchingkey"
->title="Matching key"
->abstract="Select a field to join on in one of the event datasets. If this list is empty you probably haven't added or configured an event dataset."
+>id="cja_connection_primaryID"
+>title="Primary ID"
+>abstract="Select the proper primary ID for your connection: Person for a B2C scenario. Account for a B2B scenario."
 
 <!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_optionalContainers"
+>title="Optional containers"
+>abstract="Select additional containers.<br/><br/>**[!UICONTROL Global account]**: enables configuration of global accounts in a connection.<br/>**[!UICONTROL Opportunity]**: enables configuration of opportunities in a connection.<br/>**[!UICONTROL Buying group]**: enables configuration of buying groups in a connection."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_personID"
+>title="Person ID"
+>abstract="Select a person ID from the available identities defined in the dataset schema in the Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_accountID"
+>title="Account ID"
+>abstract="Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_globalAccountID"
+>title="Global account ID"
+>abstract="Select a global account ID (the unique identifier for a global account) from the available identities defined in the dataset schema in the Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_opportunityID"
+>title="Opportunity ID"
+>abstract="Select an opportunity ID (the unique identifier for an opportunity) from the available identities defined in the dataset schema in the Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_buyingGroupID"
+>title="Buying group ID"
+>abstract="Select a buying group ID (the unique identifier for a buying group) from the available identities defined in the dataset schema in the Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
 
 <!-- markdownlint-disable MD034 -->
 
