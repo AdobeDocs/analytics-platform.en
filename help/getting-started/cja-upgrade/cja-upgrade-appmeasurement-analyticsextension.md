@@ -49,22 +49,6 @@ To upgrade to Customer Journey Analytics, you need to begin sending data to Adob
 
 For detailed information about each of these steps, see [Ingest data via the Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md).
 
-### Set up the Analytics source connector
-
-The Analytics source connector allows you to:
-
-   * Bring your historical Adobe Analytics report suite data into Adobe Experience Platform and Customer Journey Analytics. 
-   
-     You can keep the Analytics source connector running for as long as you need to retain the historical Adobe Analytics data. 
-   
-   * View the data collected with your original Adobe Analytics implementation (either AppMeasurement, the Analytics Extension, or the WebSDK Extension) within Customer Journey Analytics. You can compare this data side-by-side with that of your new WebSDK implementation. 
-   
-     You can keep the Analytics source connector running until you are familiar and comfortable with the differences. <!--elaborate on what those differences are? -->
-
-To set up the Adobe Analytics source connector:
-
-1. Follow the steps in [Ingest and use data from traditional Adobe Analytics](/help/data-ingestion/analytics.md). 
-
 ## Perform additional implementation tasks
 
 At this point in the upgrade process, you need to perform various implementation tasks before your Customer Journey Analytics environment is ready to use.
@@ -72,6 +56,8 @@ At this point in the upgrade process, you need to perform various implementation
 These additional tasks apply to upgrades from Adobe Analytics as well as new Customer Journey Analytics implementations.
 
 These tasks include:
+
+* Setting up the Analytics source connector
 
 * Bringing other data into Experience Platform
 
