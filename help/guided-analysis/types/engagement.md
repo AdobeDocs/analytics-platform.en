@@ -17,11 +17,17 @@ Features that plot toward the top of this visualization indicate that they are f
 * Features in the bottom-left of the matrix are your **low impact** features; they are not widely adopted or frequently used.
 * Features in the bottom-right of the matrix are your **one-time** features; they are widely adopted, but not frequently used.
 
++++ Demo video
+
 >[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
+
++++
+
+![Enagement compare](../assets/engagement-compare.png)
 
 ## Use cases
 
-Use cases for this analysis type include:
+Use cases for this analysis include:
 
 * **Engagement by feature**: You can establish a direct correlation between engagement and adoption of a specific feature. Understanding which features are used the most can help determine which features to invest in further.
 * **Discover underused features**: Features with low active users but high usage can indicate a power feature, one that is valuable but not discovered or used by the wider population. Consider enhancing the discoverability of these features so that more users leverage them. 

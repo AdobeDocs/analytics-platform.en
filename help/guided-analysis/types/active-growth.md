@@ -17,11 +17,17 @@ The ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Active grow
 
 All active users (new + repeat + return) appear as a shade of teal above the horizontal axis, while all dormant users appear in orange below the horizontal axis.
 
++++ Demo video
+
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
+
++++
+
+![Active time compare](../assets/active-growth-compare.png){style="border:1px solid gray"}
 
 ## Use cases
 
-Use cases for this analysis type include:
+Use cases for this analysis include:
 
 * **User retention and churn:** Provides a clear visualization of periods of high or low user retention. Recognizing these periods of high or low retention can help you make product decisions to encourage high retention or help minimize churn.
 * **Campaign assessment**: Viewing a specific campaign can help you understand how much traffic it generated, and how well it helped users remain engaged.
@@ -35,8 +41,8 @@ See [Interface](../overview.md#interface) for an overview of the Guided analysis
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL View]**: Switch between this analysis type and [Net growth](net-growth.md).
-* **[!UICONTROL Events]**: The event that you want to measure. Since this analysis type is user-based, a user who interacts with the event once within the period is counted as an active user. You can include one event in a query.
+* **[!UICONTROL View]**: Switch between this analysis and [Net growth](net-growth.md).
+* **[!UICONTROL Events]**: The event that you want to measure. Since this analysis is user-based, a user who interacts with the event once within the period is counted as an active user. You can include one event in a query.
 * **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Number of users] and [!UICONTROL Percentage of users].
 * **[!UICONTROL Segments]**: The segment that you want to filter data by. You can include one segment in a query.
 
@@ -49,8 +55,6 @@ The [!UICONTROL Active growth] analysis offers the following chart settings, whi
 ### Time comparison
 
 {{apply-time-comparison}}
-
-![Active time compare](../assets/active-compare.png){style="border:1px solid gray"}
 
 ### Date range
 

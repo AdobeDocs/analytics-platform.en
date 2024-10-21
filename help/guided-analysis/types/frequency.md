@@ -10,11 +10,17 @@ role: User
 
 The ![Frequency](/help/assets/icons/Histogram.svg) **[!UICONTROL Frequency]** analysis groups event data by how often events occur in your product. The vertical axis of this analysis contains buckets that represent the frequency of the event. The horizontal axis measures the number of users or sessions for each bucket.
 
++++ Demo video
+
 >[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
+
++++
+
+![Frequency](../assets/frequency.png)
 
 ## Use cases
 
-Use cases for this analysis type include:
+Use cases for this analysis include:
 
 * **Engagement**: Track how engaged users are with any event in your product. You can click any part of the bar chart to save it as a segment. Segments for low engagement buckets can help you determine why users are not interacting with the event at the desired frequency. Segments for high engagement buckets can help you understand why users interact with the event often. From there, you can encourage other users to adopt similar behavior.
 * **Customer loyalty**: Set the event to Orders and the metric to Users. This analysis allows you to group users by how many times that they have made a purchase on your site within the specified date range.
@@ -29,7 +35,7 @@ See [Interface](../overview.md#interface) for an overview of the Guided analysis
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL View]**: Switch between this analysis type and [Trends](trends.md).
+* **[!UICONTROL View]**: Switch between this analysis and [Trends](trends.md).
 * **[!UICONTROL Events]**: The events that you want to measure. Each selected event is represented as a separate graph. A row that represents the trended event is added to the table. You can include up to five events.
 * **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Users], [!UICONTROL Sessions], [!UICONTROL Percentage of users] and [!UICONTROL Percentage of sessions]. The denominator for percentage-based metrics in this analysis is users or sessions who did the selected events, not all active users of the product.
 * **[!UICONTROL Segments]**: The segments that you want to measure. Each selected segment doubles the number of bars in the chart and rows in the table. You can include up to five segments.

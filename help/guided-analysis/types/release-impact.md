@@ -10,14 +10,20 @@ role: User
 
 The ![Release](/help/assets/icons/Release.svg) **[!UICONTROL Release impact]** analysis shows a comparison of how key indicators performed before and after a given date. The horizontal axis of this report is a time interval, while the vertical axis measures the desired key indicators. A vertical bar in the middle of the chart represents the date that you want to compare before and after. This date typically represents a notable change to the product that you want to measure against, such as an update to the product or a campaign launch.
 
++++ Demo video
+
 >[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
+
++++
+
+![Release impact](../assets/release-impact.png)
 
 ## Use cases
 
-Use cases for this analysis type include:
+Use cases for this analysis include:
 
 * **Overall performance evaluation:** Comparing overall key indicators, such as engagement measures, can help you determine if a given release was overall successful.
-* **Monitoring**: Track vital metrics that you would expect to remain flat when changes are made, such as load time or number of logins. Use this analysis type to compare them before and after a release to ensure that it didn't have any unintended consequences.
+* **Monitoring**: Track vital metrics that you would expect to remain flat when changes are made, such as load time or number of logins. Use this analysis to compare them before and after a release to ensure that it didn't have any unintended consequences.
 * **Feature adoption**: If a product update is focused on improving a certain feature, you can use this analysis to directly compare that feature's usage before and after the product update.
 * **Bug detection**: Tracking the number of errors before and after a release can provide an early indicator of customer issues. If you notice an increase of errors immediately following a release, you can work with engineering or development teams to identify and correct the issue, preventing further impact to customers.
 
@@ -29,7 +35,7 @@ See [Interface](../overview.md#interface) for an overview of the Guided analysis
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL View]**: Switch between this analysis type and [First use impact](first-use-impact.md).
+* **[!UICONTROL View]**: Switch between this analysis and [First use impact](first-use-impact.md).
 * **[!UICONTROL Key indicators]**: The events that you want to measure per user. Each selected key indicator is represented as a colored line. A row representing the event is added to the table. You can include up to three events.
 * **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Events per user], [!UICONTROL Percentage of users], [!UICONTROL Events], [!UICONTROL Sessions], and [!UICONTROL Users].
 * **[!UICONTROL Factors]**: The date that you want to compare before and after.

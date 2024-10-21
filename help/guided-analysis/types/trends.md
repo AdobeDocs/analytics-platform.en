@@ -10,11 +10,17 @@ role: User
 
 The ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Trends]** analysis provides valuable insight around the performance of your product or the behavior of your users over time. The horizontal axis of this report is a time interval, while the vertical axis measures your desired events.
 
++++ Demo video
+
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
+
++++
+
+![Trends compare](../assets/trends-compare.png){style="border:1px solid gray"}
 
 ## Use cases
 
-Use cases for this analysis type include:
+Use cases for this analysis include:
 
 * **Evaluate product performance**: Trends allow you to assess the overall performance of your product over a given period. By analyzing metrics such as user engagement, adoption, or conversion rates, you can identify if the performance of your product is improving, stagnating, or declining.
 * **Feature adoption**: Trends allow you to understand how users adopt new features or updates that you release. You can determine which features are popular and which features require improvement. This information allows you to make data-driven decisions around what features to prioritize your development efforts around.
@@ -29,7 +35,7 @@ See [Interface](../overview.md#interface) for an overview of the Guided analysis
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL View]**: Switch between this analysis type and [Frequency](frequency.md).
+* **[!UICONTROL View]**: Switch between this analysis and [Frequency](frequency.md).
 * **[!UICONTROL Events & Metrics]**: The events or metrics that you want to measure. Each selection is represented as a chart series and table row. Events and metrics cannot be combined in the query; once you've made your first selection, the remaining query selections must be of the same type. You can include up to five selections.
 * **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include Events, Sessions, Users, Percentage of users, Events per session, and Events per user. Counted as options are only applicable for event queries and are removed for metric queries.
 * **[!UICONTROL Segments]**: The segments that you want to measure. Each selected segment doubles the number of chart series and table rows. You can include up to five segments.
@@ -55,7 +61,6 @@ Add additional data to the chart. When more than one series is visible on the ch
 
 {{apply-time-comparison}}
 
-![Usage time compare](../assets/usage-compare.png){style="border:1px solid gray"}
 
 ### Date range
 

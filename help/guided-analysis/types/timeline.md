@@ -10,7 +10,6 @@ exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
 
 The ![Timeline](/help/assets/icons/Timeline.svg) **[!UICONTROL Timeline]** analysis allows you to observe user-level session events over time to find experience patterns and tell better user stories. The left rail allows you to filter the stream by property values and segments. The right rail allows you to select from a randomized list of users that match the filter criteria. The center area shows the stream for the selected user by session, consisting of timestamp, property values, and duration. Duration is not available for the last event in a given session.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
 
 >[!NOTE]
 >
@@ -20,9 +19,18 @@ The ![Timeline](/help/assets/icons/Timeline.svg) **[!UICONTROL Timeline]** analy
 >* **Admins**: *The PersonID property is required for this analysis. Please add Person ID to the data view.*
 >* **Non-admins**: *The PersonID property is required for this analysis. Please work with your Customer Journey Analytics administrator to add Person ID to the data view.*
 
+
++++ Demo video
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
+
++++
+
+![Timeline](../assets/timeline-new.png)
+
 ## Use cases
 
-Use cases for this analysis type include:
+Use cases for this analysis include:
 
 * **Friction exploration**: If you find a steep drop in the [Funnel analysis](funnel.md) analysis, you can create a segment of those users and apply the segment in this analysis to investigate potential causes.
 * **Error behavior**: If users encounter a product error, you can explore what users were doing before or after seeing that error.

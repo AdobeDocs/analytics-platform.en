@@ -10,13 +10,19 @@ role: User
 
 The ![Conversion Trends](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Conversion trends]** analysis provides a trended visualization of conversion rates over time. The horizontal axis is a time interval, while the vertical axis represents the conversion rate.
 
++++ Demo video 
+
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
+
++++
+
+![Conversion trends time compare](../assets/conversion-trends-compare.png){style="border:1px solid gray"}
 
 ## Use cases
 
-Use cases for this analysis type include:
+Use cases for this analysis include:
 
-* **Track optimization efforts**: After identifying key bottlenecks that you want to improve using [Friction](funnel.md), you can use this analysis to track how those optimizations impact conversion rate over time.
+* **Track optimization efforts**: After identifying key bottlenecks that you want to improve using the [Funnel](funnel.md) analysis, you can use this analysis to track how those optimizations impact conversion rate over time.
 * **A/B testing evaluation**: Evaluate the effectiveness of A/B tests or experiments conducted within the context of a funnel. By comparing conversion rates between different variations, you can easily determine which tests provide higher conversion rates, leading to data-driven decisions around which variations to implement permanently.
 * **Campaign evaluation over time**: Measure the effectiveness of marketing campaigns over time. You can create a segment that focuses on users that touched a given campaign, and compare their conversion rates with other campaigns. You can also compare current conversion rates with similar campaigns that were run in the past.
 
@@ -28,7 +34,7 @@ See [Interface](../overview.md#interface) for an overview of the Guided analysis
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL View]**: Switch between this analysis type and [Funnel](funnel.md).
+* **[!UICONTROL View]**: Switch between this analysis and [Funnel](funnel.md).
 * **[!UICONTROL Steps]**: The event touchpoints that you want to track. Each bar in the chart represents a step. You can include up to ten steps.
 * **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Users] and [!UICONTROL Sessions].
 * **[!UICONTROL Segments]**: The segments that you want to compare the funnel across. Each segment selected splits each step into multiple bars. Each color represents a different segment. You can include up to three segments.
@@ -48,7 +54,6 @@ The [!UICONTROL Conversion trends] analysis offers the following chart settings,
 
 {{apply-time-comparison}}
 
-![Conversion trends time compare](../assets/conversion-trends-compare.png){style="border:1px solid gray"}
 
 ### Date range
 

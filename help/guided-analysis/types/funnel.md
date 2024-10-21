@@ -10,11 +10,17 @@ role: User
 
 The ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Funnel]** analysis provides a visual representation of a critical user journey in your product. The horizontal axis represents each step that a user must pass through. The vertical axis represents the percentage of users or sessions at each step. All steps must be done in eventual order, but can happen at any time within the reporting window.
 
->[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on)
++++ Demo video
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on){width="90%"}
+
++++
+
+![Funnel time compare](../assets/funnel-compare.png){style="border:1px solid gray"}
 
 ## Use cases
 
-Use cases for this analysis type include:
+Use cases for this analysis include:
 
 * **Conversion analysis**: You can analyze conversions at each stage of the funnel, such as a retail checkout, account sign-up, subscription flow, or some other critical journey within your product experience. By tracking the number of users who progress from one step to the next, you can identify bottlenecks that have unusual or undesired conversion rates. This information is valuable to understand where you can improve your product journey for immediate results.
 * **Experimentation analysis**: You can compare conversion rates across a funnel that has optional steps or steps where an A/B experiment is being run. This information can help you determine which variation of the funnel leads to the highest conversion rate so that you can encourage more users down that path.
@@ -30,7 +36,7 @@ See [Interface](../overview.md#interface) for an overview of the Guided analysis
 
 The query rail allows you to configure the following components:
 
-* **[!UICONTROL View]**: Switch between this analysis type and [Conversion trends](conversion-trends.md).
+* **[!UICONTROL View]**: Switch between this analysis and [Conversion trends](conversion-trends.md).
 * **[!UICONTROL Steps]**: The event touchpoints that you want to track. Each bar in the chart represents a step. You can include up to ten steps.
   * [!UICONTROL Compare]: Each step provides an option to compare multiple events in a single funnel step, creating a "forked funnel." This feature allows you to compare the friction of two journeys side-by-side without creating two separate analyses. It is useful when there are step options or an A/B experiment is being run within the funnel. See [Funnel](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel) in Customer Journey Analytics tutorials for a video that explains how to compare funnels.
 * **[!UICONTROL Counted as]**: The scope that you want applied to the funnel. Options include [!UICONTROL Sessions] and [!UICONTROL Users].
@@ -49,11 +55,11 @@ The [!UICONTROL Funnel] analysis offers the following chart settings, which can 
 
 {{apply-time-comparison}}
 
-![Friction time compare](../assets/friction-compare.png){style="border:1px solid gray"}
+
 
 ### Date range
 
 The desired date range for your analysis. There are two components to this setting:
 
-* **[!UICONTROL Interval]**: The date granularity that you want to view trended data by. This setting does not impact non-trended analyses such as Friction. 
+* **[!UICONTROL Interval]**: The date granularity that you want to view trended data by. This setting does not impact non-trended analyses such as [Funnel](funnel.md). 
 * **[!UICONTROL Date]**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
