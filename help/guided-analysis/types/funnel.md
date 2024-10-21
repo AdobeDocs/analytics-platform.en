@@ -16,7 +16,7 @@ The ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Fu
 
 +++
 
-![Funnel time compare](../assets/funnel-compare.png){style="border:1px solid gray"}
+![Funnel time compare](../assets/funnel-compare.png)
 
 ## Use cases
 
