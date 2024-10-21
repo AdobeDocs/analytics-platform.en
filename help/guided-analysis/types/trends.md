@@ -16,7 +16,7 @@ The ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Trends]** ana
 
 +++
 
-![Trends compare](../assets/trends-compare.png){style="border:1px solid gray"}
+![Trends compare](../assets/trends-compare.png)
 
 ## Use cases
 

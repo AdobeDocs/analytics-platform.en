@@ -23,7 +23,7 @@ All active users (new + repeat + return) appear as a shade of teal above the hor
 
 +++
 
-![Active time compare](../assets/active-growth-compare.png){style="border:1px solid gray"}
+![Active time compare](../assets/active-growth-compare.png)
 
 ## Use cases
 

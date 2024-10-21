@@ -16,7 +16,7 @@ The ![Conversion Trends](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL 
 
 +++
 
-![Conversion trends time compare](../assets/conversion-trends-compare.png){style="border:1px solid gray"}
+![Conversion trends time compare](../assets/conversion-trends-compare.png)
 
 ## Use cases
 
