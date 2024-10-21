@@ -25,13 +25,17 @@ The main benefits are:
 To use this functionality, you can use expiring or non-expiring credentials to connect BI tools to the [!DNL Customer Journey Analytics BI extension]. The [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) provides more information on setting expiring credentials or non-expiring credentials.
 Below are additional steps to set up CJA Permissions
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
+
 ### Expiring credentials
+* 
 * Granted access to Experience Platform and Customer Journey Analytics. 
 * Granted Product admin access to Customer Journey Analytics, so you can view, edit, update, or delete connections and data views.
 * OR
 * Granted access to the data views you want to access.
 * Granted access to the CJA BI extension.
+
 ### Non-Expiring credentials
+
 * Create non-expiring credentials in Adobe experience platform.
 * Grant access to the non-expiring credential by following same steps mentioned in [Non-Expiring Credentials](#Expiring-credentials).
 
