@@ -27,7 +27,7 @@ Below are additional steps to set up CJA Permissions
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
 
 ### Expiring credentials
-* 
+
 * Granted access to Experience Platform and Customer Journey Analytics. 
 * Granted Product admin access to Customer Journey Analytics, so you can view, edit, update, or delete connections and data views.
 * OR
