@@ -9,17 +9,15 @@ feature: Basics
 
 Customer Journey Analytics is the next generation of analytics. It allows multi-channel data collection (both online and offline data), combined with powerful report-time processing functionality (through the definition of components and derived fields in data views). 
 
-Regardless of your current Adobe Analytics implementation, Adobe recommends a two-pronged upgrade approach when upgrading from Adobe Analytics to Customer Journey Analytics: a new implementation of the Experience Platform WebSDK and the Adobe Analytics source connector.
+The recommended path for upgrading from Adobe Analytics to Customer Journey Analytics is a new implementation of the Experience Platform Web SDK, which is the best way to collect data for Customer Journey Analytics. To help with a smooth transition to Customer Journey Analytics, Adobe also recommends using the Adobe Analytics source connector, which allows you to retain historical data. 
 
-When used together, this two-pronged approach lays the best foundation for a successful upgrade from Adobe Analytics to Customer Journey Analytics. 
+When used together, the Experience Platform Web SDK in conjunction with the Analytics source connector provide the most reliable upgrade path from Adobe Analytics to Customer Journey Analytics. 
 
 1. **Implement the Experience Platform WebSDK**
 
-   A new implementation of the Experience Platform WebSDK is the second piece of the two-pronged upgrade approach to Customer Journey Analytics. 
-
-   <!-- This will be the defacto way to collect data moving forward, and the Analytics source connector will eventually be turned off. -->
+   A new implementation of the Experience Platform WebSDK provides the best foundation to get the most out of Customer Journey Analytics. 
    
-   A new implementation of the Experience Platform WebSDK is the most performant, straightforward, and future-proof method for implementing Customer Journey Analytics. It provides the best foundation to get the most out of Customer Journey Analytics, by providing the following benefits:
+   It is the most performant, straightforward, and future-proof method for implementing Customer Journey Analytics:
 
    * Highly performant reporting and data availability because Adobe Experience Platform is built to power real-time personalization use cases
 
@@ -29,7 +27,7 @@ When used together, this two-pronged approach lays the best foundation for a suc
 
 1. **Set up the Adobe Analytics source connector**
 
-   The Analytics source connector is an essential piece of a two-pronged upgrade approach to Customer Journey Analytics. 
+   The Analytics source connector is an essential piece when upgrading to Customer Journey Analytics. 
 
    The Analytics source connector allows you to:
 
@@ -41,7 +39,9 @@ When used together, this two-pronged approach lays the best foundation for a suc
    
      You can keep the Analytics source connector running until you are familiar and comfortable with the differences. <!--elaborate on what those differences are? -->
 
-   The Analytics source connector as a stand-alone implementation is not a recommended long-term method for upgrading to Customer Journey Analytics. This is because of high latency, cluttered and complex schemas, reliance on Adobe Analytics nomenclature (prop, eVar, and so forth), and difficulty in eventually moving from the source connector to the recommended WebSDK implementation.
+   When you no longer need the Analytics source connector because you have enough historical data from your new implementation and you are familiar with the reporting differences in Customer Journey Analytics, you should turn off the Analytics source connector. With the Experience Platform Web SDK implementation, the Analytics source connector is not needed.  
+   
+   The Analytics source connector as a stand-alone implementation is not a recommended long-term method for using Customer Journey Analytics. This is because of high latency, cluttered and complex schemas, reliance on Adobe Analytics nomenclature (prop, eVar, and so forth), and difficulty in eventually moving from the source connector to the recommended WebSDK implementation. 
    
 
 
