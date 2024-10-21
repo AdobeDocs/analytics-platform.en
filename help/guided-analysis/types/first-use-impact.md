@@ -10,13 +10,8 @@ role: User
 
 The ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL First use impact]** analysis shows a comparison of how key indicators performed before and after a user uses a product feature for the first time. The horizontal axis of this report is a relative time interval before and after the event, while the vertical axis measures the desired key indicators. A vertical bar in the middle of the chart represents day 0 for when a feature is first used by a given user. Because users do not always adopt features on the same day and your rollouts can potentially happen over several days, day 0 can mean something different for each individual user.
 
-+++ Demo video
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
-
-+++
-
-![First use impact](../assets/first-use-impact.png)
 
 
 ## Use cases
@@ -60,3 +55,12 @@ Date selections in the [!UICONTROL First use impact] analysis operates different
 
 * **[!UICONTROL Interval]**: The date granularity that you want to view trended data by. Valid options include [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly], and [!UICONTROL Quarterly]. Changing the interval affects the options available for the Before and after period.
 * **[!UICONTROL Before and after period]**: The amount of time to analyze before and after the first use event specified in the query rail. Available options depend on the [!UICONTROL Interval] selection.
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![First use impact](../assets/first-use-impact.png)
+
+-->

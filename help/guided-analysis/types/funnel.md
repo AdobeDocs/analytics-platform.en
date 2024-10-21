@@ -10,13 +10,7 @@ role: User
 
 The ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Funnel]** analysis provides a visual representation of a critical user journey in your product. The horizontal axis represents each step that a user must pass through. The vertical axis represents the percentage of users or sessions at each step. All steps must be done in eventual order, but can happen at any time within the reporting window.
 
-+++ Demo video
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on){width="90%"}
-
-+++
-
-![Funnel time compare](../assets/funnel-compare.png)
 
 ## Use cases
 
@@ -63,3 +57,12 @@ The desired date range for your analysis. There are two components to this setti
 
 * **[!UICONTROL Interval]**: The date granularity that you want to view trended data by. This setting does not impact non-trended analyses such as [Funnel](funnel.md). 
 * **[!UICONTROL Date]**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Funnel time compare](../assets/funnel-compare.png)
+
+-->

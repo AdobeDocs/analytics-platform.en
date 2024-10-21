@@ -17,13 +17,8 @@ Features that plot toward the top of this visualization indicate that they are f
 * Features in the bottom-left of the matrix are your **low impact** features; they are not widely adopted or frequently used.
 * Features in the bottom-right of the matrix are your **one-time** features; they are widely adopted, but not frequently used.
 
-+++ Demo video
-
 >[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
 
-+++
-
-![Enagement compare](../assets/engagement-compare.png)
 
 ## Use cases
 
@@ -70,3 +65,11 @@ The desired date range for your analysis. There are two components to this setti
 
 * **[!UICONTROL Interval]**: The date granularity that you want to view trend data by. This analysis treats [!UICONTROL Interval] similarly to [!UICONTROL Counted as] in the query rail. Hourly active users is not supported.
 * **[!UICONTROL Date]**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Enagement compare](../assets/engagement-compare.png)
+-->

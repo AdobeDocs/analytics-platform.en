@@ -19,14 +19,9 @@ The ![Timeline](/help/assets/icons/Timeline.svg) **[!UICONTROL Timeline]** analy
 >* **Admins**: *The PersonID property is required for this analysis. Please add Person ID to the data view.*
 >* **Non-admins**: *The PersonID property is required for this analysis. Please work with your Customer Journey Analytics administrator to add Person ID to the data view.*
 
-
-+++ Demo video
-
 >[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
 
-+++
 
-![Timeline](../assets/timeline-new.png)
 
 ## Use cases
 
@@ -62,3 +57,10 @@ The desired date range for your analysis. There are two components to this setti
 
 * **[!UICONTROL Interval]**: The date granularity that you want to view trend data by. This setting does not impact non-trended analysis such as Timeline.
 * **[!UICONTROL Date]**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
+
+
+## Example
+
+See below for an example of the analysis.
+
+![Timeline](../assets/timeline-new.png)
