@@ -10,13 +10,7 @@ role: User
 
 The ![Frequency](/help/assets/icons/Histogram.svg) **[!UICONTROL Frequency]** analysis groups event data by how often events occur in your product. The vertical axis of this analysis contains buckets that represent the frequency of the event. The horizontal axis measures the number of users or sessions for each bucket.
 
-+++ Demo video
-
 >[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
-
-+++
-
-![Frequency](../assets/frequency.png)
 
 ## Use cases
 
@@ -66,3 +60,13 @@ The desired date range for your analysis. There are two components to this setti
 
 * **[!UICONTROL Interval]**: The date granularity that you want to view trended data by. The chart and table show aggregated data by default, with the option to expand the table to a trended view. In the trended view, users are bucketed based on frequency of use in total and in each interval, meaning 1 user can count toward different buckets in different intervals. 
 * **[!UICONTROL Date]**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
+
+
+<!--
+## Example
+
+See below foran example of the analysis.
+
+![Frequency](../assets/frequency.png)
+
+-->

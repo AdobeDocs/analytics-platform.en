@@ -15,13 +15,8 @@ The ![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Retention]** an
 
 In this analysis, the chart's x-axis represents the time since a user's initial start event and the y-axis represents the percentage of users who engage with one or more return events. You can view both retention and churn across durations, and the durations shown can be customized through the query settings. Below the chart, a table provides aggregated data with the option to show individual cohorts, which are a group of people who did the starting event on the same date. 
 
-+++ Demo video
-
 >[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
 
-+++
-
-![Retention](../assets/retention.png)
 
 ## Use cases
 
@@ -72,3 +67,9 @@ If you select a date range close to the present day, users that initially engage
 
 * **[!UICONTROL Analyzing users who did the start event in [Date interval]]**: If a user engages with the event within this date range, they are included in the analysis. This date range guarantees all users enough time to qualify for all duration buckets. This date range can be different than your selection if it is close to the present day.
 * **[!UICONTROL Data from [Date interval] is reserved to complete the analysis]**: If a user engages for the first time within this period, they are **not** included in the analysis. For recent date ranges, these users would not have an opportunity to qualify for all duration buckets. For past date ranges, these users were active outside of the selected date range.
+
+## Example
+
+See below for an example of the analysis.
+
+![Retention](../assets/retention.png)

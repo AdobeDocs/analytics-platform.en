@@ -10,13 +10,7 @@ role: User
 
 The ![Release](/help/assets/icons/Release.svg) **[!UICONTROL Release impact]** analysis shows a comparison of how key indicators performed before and after a given date. The horizontal axis of this report is a time interval, while the vertical axis measures the desired key indicators. A vertical bar in the middle of the chart represents the date that you want to compare before and after. This date typically represents a notable change to the product that you want to measure against, such as an update to the product or a campaign launch.
 
-+++ Demo video
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
-
-+++
-
-![Release impact](../assets/release-impact.png)
 
 ## Use cases
 
@@ -53,3 +47,13 @@ Date selection in Impact analysis operates differently than other analyses, sinc
 
 * **[!UICONTROL Interval]**: The date granularity that you want to view trended data by. Valid options include [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly], and [!UICONTROL Quarterly]. Changing the interval affects the options available for the Before and after period.
 * **[!UICONTROL Before and after period]**: The amount of time to analyze before and after the date specified in the query rail. Available options depend on the [!UICONTROL Interval] selection.
+
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Release impact](../assets/release-impact.png)
+
+-->
