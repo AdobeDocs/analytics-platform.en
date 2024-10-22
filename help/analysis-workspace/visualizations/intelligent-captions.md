@@ -16,11 +16,10 @@ Intelligent captions are geared towards:
 
 ## Launch intelligent captions {#launch}
 
-To launch auto-generated captions for a line visualization, select ![AEMScreen](/help/assets/icons/AI.svg) **[!UICONTROL Intelligent captions]** at the top right of the visualization.
+To launch auto-generated intelligent captions for a visualization, select ![Intelligent captions](/help/assets/icons/AI.svg) at the top right of the visualization. This will generate natural-language insights. 
 
 ![Launch Analysis window showing the Intelligent captions for Product Views Trend. ](assets/intell-caps-1.png)
 
-Natural-language insights are now being generated. 
 
 Keep in mind that:
 
@@ -32,6 +31,35 @@ Keep in mind that:
 
 * If you save the project at a specific point, and re-load it later, the captions are auto-updated with new data. The same applies to scheduled projects and PDF files exported from a project.
 
+
+## Visualizations
+
+Intelligent captions are supported on the following visualizations:
+
+### Line
+
+
+### Bar
+
+
+### Horizontal bar
+
+
+### Area
+
+
+### Multi-line
+
+
+### Donut
+
+
+### Fallout
+
+
+### Flow
+
+ 
 Here is an example of what intelligent captions could look like:
 
 ![Intelligent captions for Line visualization including Seasonality, Min, Max, Spike, and Decline.](assets/captions.png)
@@ -44,13 +72,17 @@ You can perform the following actions on intelligent captions:
 
 You can copy the captions to a clipboard and paste them into a PowerPoint or other tools. Select ![Copy captions to clipboard](/help/assets/icons/Copy.svg) at the top right of the captions dialog.
 
+### Show all or individual intelligent captions 
+
+To show all intelligent captions, select ![Show all intelligent captions](/help/assets/icons/Maximize.svg). To show individual intelligent captions, one by one, select ![Show individiual intelligent captions](/help/assets/icons/Minimize.svg).
+
 ### Edit display {#edit}
 
 You can edit the display of captions, such as hiding or unhiding a particular category of insights. 
 
-1. Select ![Edit intelligent captions display](/help/assets/icons/EditInLight.svg) in the Intelligent captions dialog.
+1. Select ![Edit visibility of intelligent captions](/help/assets/icons/EditInLight.svg) in the Intelligent captions dialog.
 
-1. Toggle between ![Visibility](/help/assets/icons/Visibility.svg) to display a specific insight (like **[!UICONTROL Min]**), or ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) to hide a specific insight (like **[!UICONTROL Spike]**).
+1. Toggle between ![Toggle visibility](/help/assets/icons/Visibility.svg) to display a specific insight (like **[!UICONTROL Min]**), or ![Toggle visibility](/help/assets/icons/VisibilityOff.svg) to hide a specific insight (like **[!UICONTROL Spike]**).
 
    ![Edit intelligent captions](assets/edit-intelligent-captions.png)
 
