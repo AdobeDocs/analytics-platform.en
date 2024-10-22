@@ -68,8 +68,11 @@ If you select a date range close to the present day, users that initially engage
 * **[!UICONTROL Analyzing users who did the start event in [Date interval]]**: If a user engages with the event within this date range, they are included in the analysis. This date range guarantees all users enough time to qualify for all duration buckets. This date range can be different than your selection if it is close to the present day.
 * **[!UICONTROL Data from [Date interval] is reserved to complete the analysis]**: If a user engages for the first time within this period, they are **not** included in the analysis. For recent date ranges, these users would not have an opportunity to qualify for all duration buckets. For past date ranges, these users were active outside of the selected date range.
 
+<!--
 ## Example
 
 See below for an example of the analysis.
 
 ![Retention](../assets/retention.png)
+
+-->

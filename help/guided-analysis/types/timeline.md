@@ -59,8 +59,12 @@ The desired date range for your analysis. There are two components to this setti
 * **[!UICONTROL Date]**: The starting and ending date. Rolling date range presets and previously saved custom ranges are available for your convenience, or you can use the calendar selector to choose a fixed date range.
 
 
+<!--
+
 ## Example
 
 See below for an example of the analysis.
 
 ![Timeline](../assets/timeline-new.png)
+
+-->
