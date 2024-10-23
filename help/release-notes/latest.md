@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (October 23, 2024)
 
-**Last update**: October 16, 2024
+**Last update**: October 23, 2024
 
 These release notes cover the release period of October 15, 2024 to end of year 2024. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -15,15 +15,17 @@ These release notes cover the release period of October 15, 2024 to end of year 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Asset Transfer** | Lets you transfer ownership of components such as projects, filters, and calculated metrics to other users to ensure continuity and appropriate access. [Learn more](/help/tools/asset-transfer/transfer-assets.md)  |  | October 15  |
-| **Guided analysis: Embed in Workspace** | [Guided analysis](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview) is now available directly in Analysis Workspace, enabling users to create dashboards with comprehensive insights from panels, visualizations, and guided analyses. From a new left rail section, you can create new guided analyses to add to your projects. You can also access saved guided analyses that can be re-used as building blocks across many projects.| October 2, 2024  | October 31, 2024 |
+| **Guided analysis: Embed in Workspace** | [Guided analysis](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview) is now available directly in Analysis Workspace, enabling users to create dashboards with comprehensive insights from panels, visualizations, and guided analyses. From a new left rail section, you can create new guided analyses to add to your projects. You can also access saved guided analyses that can be re-used as building blocks across many projects.| October 2, 2024  | October 23, 2024 |
 | **Product usage** | See how your organization uses Customer Journey Analytics. Enabling this feature creates a dataset in Adobe Experience Platform that collects data when anyone in your organization uses Analysis Workspace. A connection and a data view are also automatically created, giving you access to dimensions like top project types, most active users, and most popular components used in projects. [Documentation link to follow] | October 23, 2024 | January, 2025 |
 
 
 ## Fixes in Customer Journey Analytics
 
 Audiences: AN-359692
+Connections: AN-360403
 Full table export: AN-359785
-Reporting: AN-350707; AN-355331; AN-359308; AN-359826; AN-359915
+Reporting: AN-350707; AN-355331; AN-359308; AN-359826; AN-359915; AN-360097; AN-360245
+Report Builder: AN-361022
 
 ## Important notices for Customer Journey Analytics Administrators
 
