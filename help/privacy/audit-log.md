@@ -105,7 +105,7 @@ The following items are shown:
 
 Select the funnel icon (![filter](assets/filter-icon.png)) to display a list of filter controls to help narrow results. Only the last 1,000 records are displayed, irrespective of the various filters selected.
 
-![Audit log showing the filters displayed for Data Range.](assets/filters.png)
+![Audit log showing the filters displayed for Date Range.](assets/filters.png)
 
 The following filters are available for audit events in the UI:
 
