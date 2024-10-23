@@ -10,11 +10,6 @@ role: User
 
 Guided analysis enables users, from marketing to product to analysts, to self-serve high quality data and insights about the customer journey through guided workflows, built on the cross-channel data of Customer Journey Analytics. Similar to Analysis Workspace and Mobile scorecards, Guided analysis uses data from a [Data view](/help/data-views/data-views.md), which references data in Adobe Experience Platform through a [Connection](../connections/overview.md). Many reports created in Guided analysis can seamlessly transfer to Analysis Workspace for additional research.
 
->[!NOTE]
->
->See the [FAQ](faq.md) for differences in terminology (segments, filters, and more) between Guided analysis and Analysis Workspace.
-
-
 The following guided analyses are available:
 
 | Icon |Analysis | Description |
