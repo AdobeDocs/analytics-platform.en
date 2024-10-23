@@ -37,7 +37,7 @@ Below are additional steps to set up CJA Permissions
 ### Non-Expiring credentials
 
 * Create non-expiring credentials in Adobe experience platform.
-* Grant access to the non-expiring credential by following same steps mentioned in [Non-Expiring Credentials](#Expiring-credentials).
+* Grant access to the non-expiring credential by following same steps mentioned in [Expiring Credentials](#Expiring-credentials).
 
 See [Customer Journey Access Control](../technotes/access-control.md) for more information, specifically the [Product Admin additional permissions](../technotes/access-control.md#product-admin-additional-permissions) and [Customer Journey Analytics Permissions in the Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
