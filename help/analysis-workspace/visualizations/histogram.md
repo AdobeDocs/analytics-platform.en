@@ -32,7 +32,7 @@ To create a histogram:
 >
 >Histograms support only standard metrics, not calculated metrics.
 
-In the example below, a histogram is used to bucket sessions for the number of persons. The histogram shows that most persons do have between 16-21 sessions for the selected data range.
+In the example below, a histogram is used to bucket sessions for the number of persons. The histogram shows that most persons do have between 16-21 sessions for the selected date range.
 
 ![](assets/histogram.png)
 
