@@ -12,7 +12,6 @@ role: Admin
 >
 >You must have the **Select** package or higher (for field-based stitching) or **Prime** package or higher (for graph-based stitching) to use the functionality described in this section. Contact your administrator if you're unsure which Customer Journey Analytics package you have.
 
-
 Identity stitching (or simply, stitching) is a powerful feature that elevates an event dataset's suitability for cross-channel analysis. Cross-channel analysis is a main use case that Customer Journey Analytics can handle, allowing you to combine and run reports seamlessly on multiple datasets from different channels, based on a common identifier (person ID).
 
 When you combine datasets with similar person IDs, attribution is carried over across devices and channels. For example, a user first visits your site through an advertisement on their desktop computer. That user encounters an issue with their order, then gives your customer service team a call to help resolve it. With cross-channel analysis, you can attribute call center events to the ad that they originally clicked.
