@@ -39,7 +39,13 @@ The most prominent insight in Journey canvas is shown as a caption at the top of
 
 This caption summarizes which of all the paths in the journey had the highest conversion rate. 
 
+When the journey contains multiple start nodes, the caption looks like this:
+
 ![Journey canvas insight caption](assets/journey-canvas-caption.png)
+
+When the journey contains a single start node, the caption looks like this: 
+
+![Journey canvas insight caption single start node](assets/journey-canvas-caption-singlestart.png)
 
 Consider the following when interpreting this caption:
 
@@ -170,13 +176,9 @@ This is because, unlike Journey Optimizer, Journey canvas allows you to apply mu
 
 #### Feature differences
 
-After you modify a Journey Optimizer journey in Journey canvas, the functionality might change for the following features, depending on your modifications:
+After you modify a Journey Optimizer journey in Journey canvas, The options that are available in the [!UICONTROL **Arrow settings**] drop-down field change, depending on your modifications. For more information, see [Configure settings](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-* The values shown in the [!UICONTROL **Node type**] field change. 
-
-* The options that are available in the [!UICONTROL **Arrow settings**] drop-down field change.
-
-For more information about these fields, see [Configure settings](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+The [!UICONTROL **Node type**] field is available only in Journey Optimizer. It is not available when viewing a Journey Optimizer journey in Journey canvas, regardless of whether you make modifications to the journey in Journey canvas. 
 
 #### Synchronization differences
 
