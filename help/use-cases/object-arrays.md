@@ -259,3 +259,10 @@ Applying this calculated metric displays the desired results:
 | `Washing Machines` | `1850` |
 | `Dryers` | `500` |
 | `Total` | `2350` |
+
+
+
+## Limitations
+
+Limitations do apply for arrays in data used by Customer Journey Analytics and modelled as part of a schema in Experience Platform. See [Data model limits](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) and [Data size limits](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) in the [Default Guardrails for Real-Time Customer Profile data and segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails).
+
