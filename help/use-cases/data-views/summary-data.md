@@ -424,7 +424,7 @@ After a while, verify that data from your datasets is properly loaded in Custome
 1. Select **[!UICONTROL Customer Journey Analytics]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
 1. Select **[!UICONTROL Connections]** from the top menu.
 1. Select your connection, for example **[!UICONTROL Example Connection Using Summary Data]**.
-1. Select an appropriate data range in the **[!UICONTROL Connection]** > **[!UICONTROL Example Connection Using Summary data]** details.
+1. Select an appropriate date range in the **[!UICONTROL Connection]** > **[!UICONTROL Example Connection Using Summary data]** details.
    1. Select ![Calendar](/help/assets/icons/Calendar.svg) and then select **[!UICONTROL Last 7 days]**.
    1. Select **[!UICONTROL Apply]**.
 
@@ -544,7 +544,7 @@ To report on your summary data, create a new Project in Analysis Workspace.
 You see an empty canvas with a [!UICONTROL Freeform] panel, consisting of an empty [!UICONTROL Freeform table].
 
 1. Ensure that the data view, selected for the panel, is referring to the data view containing the configuration for the summary data. For example, **[!UICONTROL Example Data View Using Summary Data.]**
-1. Ensure that the data range is valid for the data you want to report on. For example: **[!UICONTROL Last 2 full months]**. 
+1. Ensure that the date range is valid for the data you want to report on. For example: **[!UICONTROL Last 2 full months]**. 
 1. Drag **[!UICONTROL Tracking Code (Event)]** from **[!UICONTROL Dimensions]** and drop the dimension onto the empty Freeform table.
 1. Drag **[!UICONTROL Orders]** from **[!UICONTROL Metrics]**, and drop the metric onto the **[!UICONTROL Events]** column to replace that column in the Freeform table.
 1. Drag **[!UICONTROL Revenue]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.

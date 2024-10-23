@@ -1,5 +1,5 @@
 ---
-title: How to select a data range in Report Builder in Customer Journey Analytics
+title: How to select a date range in Report Builder in Customer Journey Analytics
 description: Describes how to use the calendar, rolling dates, and custom expressions in Report Builder for Customer Journey Analytics
 role: User
 feature: Report Builder
@@ -34,7 +34,7 @@ You have the option to exclude today on any selected date range.
 
 ## Use the Calendar
 
-When you use the **Calendar**, the date range field displays the current date range for the data block request. You can enter dates directly into the date range field or use a data range selection option.
+When you use the **Calendar**, the date range field displays the current date range for the data block request. You can enter dates directly into the date range field or use a date range selection option.
 
 ### Date range field
 
@@ -86,7 +86,7 @@ The rolling dates option allows you to select a date range using rolling dates.
 
     ![Report Builder date range pane showing the current day plus 14 days selected.](./assets/image21.png)
 
-1. Click Next to define the data range.
+1. Click Next to define the date range.
 
     Use the date preview to confirm the resulting date range is the desired range.
 
