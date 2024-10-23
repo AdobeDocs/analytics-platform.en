@@ -28,16 +28,22 @@ Below are additional steps to set up CJA Permissions
 
 ### Expiring credentials
 
-* Granted access to Experience Platform and Customer Journey Analytics. 
-* Granted Product admin access to Customer Journey Analytics, so you can view, edit, update, or delete connections and data views.
-* OR
-* Granted access to the data views you want to access.
-* Granted access to the CJA BI extension.
+To use expiring credentials, you can:
+
+* Grant access to Experience Platform and Customer Journey Analytics. 
+* Grant Product admin access to Customer Journey Analytics, so you can view, edit, update, or delete connections and data views.
+
+Or you can: 
+
+* Grant access to the data views you want to access.
+* Grant access to the Customer Journey Analytics BI extension.
 
 ### Non-Expiring credentials
 
-* Create non-expiring credentials in Adobe experience platform.
-* Grant access to the non-expiring credential by following same steps mentioned in [Expiring Credentials](#Expiring-credentials).
+To use non-expiring credentials: 
+
+* Create non-expiring credentials in Experience Platform.
+* Grant access to the non-expiring credentials by following the steps mentioned in [Expiring Credentials](#Expiring-credentials).
 
 See [Customer Journey Access Control](../technotes/access-control.md) for more information, specifically the [Product Admin additional permissions](../technotes/access-control.md#product-admin-additional-permissions) and [Customer Journey Analytics Permissions in the Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
