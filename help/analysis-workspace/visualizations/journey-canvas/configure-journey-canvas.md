@@ -7,8 +7,6 @@ exl-id: 53984934-6fba-4f15-aeeb-d91039260553
 ---
 # Configure a Journey canvas visualization
 
-{{release-limited-testing}}
-
 The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. 
 
 ![Journey canvas](assets/journey-canvas.png)
@@ -29,7 +27,7 @@ See [Journey canvas overview](/help/analysis-workspace/visualizations/journey-ca
 
 ## Begin building a Journey canvas visualization
 
-1. Add a blank panel to your project, select the [!UICONTROL **Visualizations**] icon in the left rail, then drag the ![GraphPathing](/help/assets/icons/Branch3.svg) [!UICONTROL **Journey canvas**] visualization into the panel.
+1. Add a blank panel to your project, select the [!UICONTROL **Visualizations**] icon in the left rail, then drag the ![GraphPathing](/help/assets/icons/Branch3.svg) [!UICONTROL **Journey canvas**] visualization into the panel. 
 
    Or
 
