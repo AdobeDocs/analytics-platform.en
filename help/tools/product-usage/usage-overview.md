@@ -8,12 +8,12 @@ hidefromtoc: yes
 
 {{release-limited-testing}}
 
-Product usage provides your organization with the ability to view analytics data on how your organization uses Customer Journey Analytics. It is available for all organizations that use Customer Journey Analytics. Once enabled, the following Adobe Experience Platform components are automatically created and hooked up for you:
+Product usage provides your organization with the ability to view analytics data on how your organization uses Customer Journey Analytics. It is available for all organizations that use Customer Journey Analytics. Once enabled, the following Adobe Experience Platform components are automatically created and hooked up for you. These components are all system-owned, read-only, and cannot be edited.
 
-* A schema in Adobe Experience Platform. This schema is system-owned, read-only, and cannot be edited.
-* A dataset in Adobe Experience Platform. This dataset is system-owned, read-only, and cannot be edited.
-* A connection in Customer Journey Analytics. This connection is system-owned, read-only, and cannot be edited.
-* A data view in Customer Journey Analytics. You can edit this data view or create more data views using the above connection. The owner of the data view is the individual that enables Product usage for your organization.
+* A schema in Adobe Experience Platform
+* A dataset in Adobe Experience Platform
+* A connection in Customer Journey Analytics
+* A data view in Customer Journey Analytics
 
 All data collection and setup is automatically configured for you once enabled. Any time a user makes an action in Analysis Workspace, that action is tracked and available for reporting.
 
@@ -23,7 +23,7 @@ All data collection and setup is automatically configured for you once enabled. 
 
 ## Available dimensions
 
-When you enable Product usage, the following dimensions are available:
+When you enable Product usage, the following dimensions are available. If you want to change any dimension settings, create a copy of the system-owned data view and use the copied data view in Analysis Workspace.
 
 | Dimension | Description |
 | --- | --- |

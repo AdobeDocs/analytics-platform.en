@@ -223,7 +223,7 @@ Select the linked section titles for more information and context about the avai
 | **Stacked Charts** | | |
 | | 100% stacked | This setting on area stacked, bar stacked or horizontal bar stacked visualizations turns the chart into a "100% stacked" visualization. <p>For more infomration, see [Bar and bar stacked](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histogram](/help/analysis-workspace/visualizations/histogram.md)** | | |
-| | Number of buckets | Choose the number of data ranges (buckets) in the visualization. The maximum number of buckets is 50. <p>For more information, see [Histogram](/help/analysis-workspace/visualizations/histogram.md).</p> |
+| | Number of buckets | Choose the number of date ranges (buckets) in the visualization. The maximum number of buckets is 50. <p>For more information, see [Histogram](/help/analysis-workspace/visualizations/histogram.md).</p> |
 | | Counting method | Choose from the following options: <ul><li>Hit</li><li>Session</li><li>Person</li></ul> <p>For example, when used in conjunction with page views, you could choose page views per person, page views for visit, or page views per event. For Hit, "Occurrences" is used as the y-axis metric in a freeform table.</p> |
 | **[Summary Change](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
 | | Value | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Percent change</li><li>Raw difference</li></ul>  |

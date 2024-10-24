@@ -13,8 +13,7 @@ The _Data settings_ page handles your product usage configuration. You can use t
 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL Product Usage]** > **[!UICONTROL Data settings]**
 
 >[!IMPORTANT]
->
->When you enable this feature, you must accept the terms and conditions before using it. When you accept these terms and conditions, you do so on behalf of your entire organization. The individual that accepts these terms and conditions owns the data view automatically created when this feature is enabled.
+>When you enable this feature, you must accept the terms and conditions before using it. When you accept these terms and conditions, you do so on behalf of your entire organization.
 
 The following settings are available on this page:
 
