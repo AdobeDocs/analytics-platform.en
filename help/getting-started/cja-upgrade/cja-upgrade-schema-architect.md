@@ -15,4 +15,5 @@ feature: Basics
 
 Adobe recommends creating an Experience Data Model (XDM) schema when upgrading to Customer Journey Analytics because it results in a streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use. When changes to the schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating.  
 
-Before you begin creating your XDM schema, work with your data team and other stakeholders throughout your organization to identify your organization's ideal schema design for Customer Journey Analytics and the other Adobe Experience Platform applications you use.
+Before you begin creating your XDM schema, work with your data team and other stakeholders throughout your organization to identify your organization's ideal schema design for Customer Journey Analytics and the other Adobe Experience Platform applications you use. 
+
