@@ -65,7 +65,7 @@ Provides overarching settings for the data view.
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
 >title="Data views in Journey Optimizer"
->abstract="Journey Optimizer needs to use a data view that is configured with Customer Journey Analytics.<br/>Enable this option to make this the default data view that is used in Adobe Journey Optimizer reporting."
+>abstract="Customer Journey Analytics needs to use a connection and data view that are compatible with Adobe Journey Optimizer. By default, a connection and data view are automatically created for this purpose.<br/>Alternatively, you can enable this option to make this the default data view that is used in Adobe Journey Optimizer reporting. When enabled, all the necessary components required for Journey Optimizer are added to this data view, and all the necessary Journey Optimizer datasets are added to the connection associated with this data view."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Which components and datasets are added." 
 
 <!-- markdownlint-enable MD034 -->
