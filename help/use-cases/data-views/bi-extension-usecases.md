@@ -4,6 +4,8 @@ description: Multiple use cases that show how to use the BI extension in various
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+hide: yes
+hidefromtoc: yes
 ---
 # BI extension use cases
 
