@@ -3,12 +3,8 @@ description: Examples when configuring a Journey canvas visualization
 title: Journey canvas examples
 feature: Visualizations
 role: User
-hide: yes
-hidefromtoc: yes
 ---
 # Journey canvas troubleshooting
-
-{{release-limited-testing}}
 
 The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. 
 
