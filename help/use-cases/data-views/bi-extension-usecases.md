@@ -29,7 +29,7 @@ The following use cases are documented:
 1. [Dimension and metric transformations](#dimension-and-metric-transformations).
 1. [Visualizations and interactions](#visualizations-and-interactions).
 
-For each use case, instructions are available for the following BI tools within **Details**:
+For each use case, instructions are available for the following BI tools within the **Details** section:
 
 * Power BI Desktop (version 2.136.1478.0 64-bit (September 2024))
 * Tableau Desktop (version 2022.3.5 (20223.23..0310) 64-bit)
