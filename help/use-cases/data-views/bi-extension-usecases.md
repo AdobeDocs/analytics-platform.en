@@ -159,7 +159,7 @@ In this use case, you want to display a table and simple line visualization that
    1. Select ![More](/help/assets/icons/More.svg).
    1. From the context menu, select **[!UICONTROL Show as a table]**.
 
-   The main pane is updated to show both a line visualization and a table.
+   The main view is updated to show both a line visualization and a table.
 
    ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc2-pbi-filter-final.png)
 
