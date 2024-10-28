@@ -1,8 +1,6 @@
 ---
 title: Product usage data settings
 description: Enable, disable, or configure product usage settings.
-hide: yes
-hidefromtoc: yes
 ---
 # Product usage data settings {#product-usage-data-settings}
 

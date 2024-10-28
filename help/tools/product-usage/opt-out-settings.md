@@ -1,8 +1,6 @@
 ---
 title: Product usage opt-out settings
 description: Manage opt-out settings for individual users within your organization.
-hide: yes
-hidefromtoc: yes
 ---
 # Product usage opt-out settings {#product-usage-opt-out-settings}
 
