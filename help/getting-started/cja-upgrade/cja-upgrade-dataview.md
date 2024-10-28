@@ -11,7 +11,9 @@ feature: Basics
 >
 >This documentation should be used after completing the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/).
 > 
->Follow the steps on this page only after you complete all previous steps that were dynamically generated for your organization.
+>Follow the steps on this page only after you complete all previous steps that were dynamically generated for your organization. 
+>
+>After you complete the steps on this page, continue following the upgrade steps that were dynamically generated for your organization from the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-views/create-dataview.md -->
 
@@ -27,7 +29,7 @@ To create or edit a data view:
 
 1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and go to the **[!UICONTROL Data views]** tab.
 1. To create a data view, select **[!UICONTROL Create new data view]**. Alternatively, you can select an existing data view from the list of data views to edit it.
-
+   The following sections correspond with the [!UICONTROL **Configure**], [!UICONTROL **Components**], and [!UICONTROL **Settings**] tabs. 
 
 ## Configure {#configure}
 
@@ -38,7 +40,6 @@ To configure a new or existing data view:
    ![Configure data view](assets/dataview-configure.png)
 1. Specify [!UICONTROL Settings], [!UICONTROL Container], and [!UICONTROL Calendar] details (see below). 
 1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
-   
 
 ### Settings
 
@@ -142,22 +143,14 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 >
 >If the components do not load properly in your data view and you see an error message instead, please refer to [Lack of permissions](../troubleshooting/lack-of-permissions.md) for a resolution.
 
-
-
 ## Settings
 
 1. Select the **[!UICONTROL Settings]** tab.
-1. Configure filters to apply to your entire data view. See [Settings (filters)](#settings-filters) below.
-1. Configure session timeout and metrics. See [Session settings](#session-settings) below.
+1. Configure filters to apply to your entire data view. 
+   You can add filters that apply to an entire data view. This filter is applied to any report that you run in Workspace. Drag a filter from the list in the left rail to the [!UICONTROL Add filters] field.
+1. Configure session timeout and metrics.
+   Determine the time period of inactivity between events before a session expires and a new one is started. A time period is required. You can optionally also force a new session to start when an event contains a certain metric. See [Session settings](session-settings.md) for more details.
 1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
-
-### Settings (filters)
-
-You can add filters that apply to an entire data view. This filter is applied to any report that you run in Workspace. Drag a filter from the list in the left rail to the [!UICONTROL Add filters] field.
-
-### Session settings
-
-Determine the time period of inactivity between events before a session expires and a new one is started. A time period is required. You can optionally also force a new session to start when an event contains a certain metric. See [Session settings](session-settings.md) for more details.
-
-Once all desired settings are specified, click **[!UICONTROL Save and finish]**.
+1. After all desired settings are specified, click **[!UICONTROL Save and finish]**.
+1. Continue following the upgrade steps that were dynamically generated for your organization from the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/).
 
