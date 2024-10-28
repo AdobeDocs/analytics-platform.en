@@ -6,7 +6,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 ---
-# [!UICONTROL Funnel] analysis
+# [!UICONTROL Funnel] analysis {#funnel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_funnel_button"
+>title="Funnel"
+>abstract="Compare conversion rates between steps."
+
+<!-- markdownlint-enable MD034 -->
 
 The ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Funnel]** analysis provides a visual representation of a critical user journey in your product. The horizontal axis represents each step that a user must pass through. The vertical axis represents the percentage of users or sessions at each step. All steps must be done in eventual order, but can happen at any time within the reporting window.
 

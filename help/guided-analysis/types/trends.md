@@ -6,7 +6,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 ---
-# [!UICONTROL Trends] analysis
+# [!UICONTROL Trends] analysis {#trends}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_trends_button"
+>title="Trends"
+>abstract="Measure user engagement over time."
+
+<!-- markdownlint-enable MD034 -->
 
 The ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Trends]** analysis provides valuable insight around the performance of your product or the behavior of your users over time. The horizontal axis of this report is a time interval, while the vertical axis measures your desired events.
 

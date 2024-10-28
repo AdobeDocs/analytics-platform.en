@@ -6,7 +6,17 @@ keywords: product analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
 ---
-# [!UICONTROL Engagement] analysis
+# [!UICONTROL Engagement] analysis {#engagement}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_engagement_button"
+>title="Enagement"
+>abstract="Understand the breadth and depth of feature engagement."
+
+<!-- markdownlint-enable MD034 -->
+
 
 The ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) **[!UICONTROL Engagement]** analysis provides insight into how often a feature is used versus how many people use it. This analysis works best when comparing several features to each other. It helps fuel investment decisions by understanding what your core, power, one-time, and questionable features are.
 
