@@ -11,7 +11,9 @@ feature: Basics
 >
 >This documentation should be used after completing the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/).
 > 
->Follow the steps on this page only after you complete all previous steps that were dynamically generated for your organization.
+>Follow the steps on this page only after you complete all previous steps that were dynamically generated for your organization. 
+>
+>After you complete the steps on this page, continue following the upgrade steps that were dynamically generated for your organization from the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/connections/create-connection.md -->
 

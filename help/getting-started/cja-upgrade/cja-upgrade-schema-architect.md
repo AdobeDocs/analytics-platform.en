@@ -12,6 +12,8 @@ feature: Basics
 >This documentation should be used after completing the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/).
 > 
 >Use the information on this page as part of the steps that were dynamically generated for your organization.
+>
+>After you complete the steps on this page, continue following the upgrade steps that were dynamically generated for your organization from the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
 
 Adobe recommends creating an Experience Data Model (XDM) schema when upgrading to Customer Journey Analytics. An XDM schema allows for a streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use. When changes to the schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating.  
 
