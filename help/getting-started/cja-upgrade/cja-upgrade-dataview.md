@@ -4,6 +4,8 @@ description: Learn about the recommended path when upgrading from Adobe Analytic
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
+hide: yes
+hidefromtoc: yes
 ---
 # Create a data view in Customer Journey Analytics
 
@@ -17,140 +19,37 @@ feature: Basics
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-views/create-dataview.md -->
 
-Creating a data view involves either creating metrics and dimensions from schema elements or using standard components. Most schema elements can be either a dimension or a metric depending on your business's requirements. Once you drag a schema element into a data view, options appear on the right where you can adjust how the dimension or metric operates in Customer Journey Analytics.
+Creating a data view involves either creating metrics and dimensions from schema elements or using standard components. Most schema elements can be either a dimension or a metric, depending on your business's requirements. Once you drag a schema element into a data view, options appear on the right where you can adjust how the dimension or metric operates in Customer Journey Analytics.
 
-+++ View a video to illustrate Data views in Customer Journey Analytics
-
->[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
-
-+++
-
-To create or edit a data view:
+To create a data view:
 
 1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and go to the **[!UICONTROL Data views]** tab.
-1. To create a data view, select **[!UICONTROL Create new data view]**. Alternatively, you can select an existing data view from the list of data views to edit it.
-   The following sections correspond with the [!UICONTROL **Configure**], [!UICONTROL **Components**], and [!UICONTROL **Settings**] tabs. 
 
-## Configure {#configure}
+1. Select **[!UICONTROL Create new data view]**. Alternatively, you can select an existing data view from the list of data views to edit it.
 
-To configure a new or existing data view:
+1. On the [!UICONTROL **Configure**] tab, specify a name for the data view and configure its basic settings, components, and calendar options. 
 
-1. Select the **[!UICONTROL Configure]** tab (if not already active).
+   For detailed information about each field, see [Configure](/help/data-views/create-dataview.md#configure) in [Create or edit a data view](/help/data-views/create-dataview.md).
 
    ![Configure data view](assets/dataview-configure.png)
-1. Specify [!UICONTROL Settings], [!UICONTROL Container], and [!UICONTROL Calendar] details (see below). 
-1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
 
-### Settings
+1. Select the [!UICONTROL **Components**] tab. 
 
-Provides overarching settings for the data view.
-
-| Setting | Description |
-| --- | --- |
-| [!UICONTROL **Connection**] | This field links the data view to the connection that you established earlier, which contains one or more Adobe Experience Platform datasets. |
-| [!UICONTROL **Name**] | Required. The name of the data view. This value appears in the top-right drop-down list in Analysis Workspace. |
-| [!UICONTROL **External ID**] | Required. The name of data view you can use in external sources, such as business intelligence tools. Default is `unspecified`. If you do not specify an external ID, the name will be generated from the Name of the data view, replacing spaces with underscores. |
-| [!UICONTROL **Description**] | Optional. Adobe recommends a detailed description so that users understand why the data view exists and who it is designed for. |
-
-{style="table-layout:auto"}
-
-### Compatibility {#compatibility}
-
-Provides settings that are applicable when using Adobe Journey Optimizer in addition to Customer Journey Analytics.
-
-This section is visible only for administrators who are provisioned with Journey Optimizer.
-
-| Setting | Description |
-| --- | --- |
-| [!UICONTROL **Set as default data view in Adobe Journey Optimizer**] | This configuration option standardizes reporting across Journey Optimizer and Customer Journey Analytics. It also allows you to perform advanced analysis of your Adobe Journey Optimizer data in Customer Journey Analytics (by selecting ![Open](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **Analyze in CJA**] while in Journey Optimizer).<p>To perform this type of analysis, Journey Optimizer needs access to a Customer Journey Analytics data view.<p>Enable this option to make this the default data view that is used in Journey Optimizer reporting for your sandbox.</p><p>This configuration option automatically:</p><ul><li>Configures all the required Journey Optimizer datasets in the associated connection in Customer Journey Analytics for use with Journey Optimizer.</li><li>Creates a set of Journey Optimizer metrics and dimension in the data view (including derived fields and calculated metrics). Context labels are automatically set on all of these metrics and dimensions.</li></ul><p><p>Consider the following when enabling this option: <ul><li>You can change the default data view at a later time, but doing so could alter your Journey Optimizer reporting data. If you choose to disable this option after it is enabled, you will be prompted to select a new default data view.</li><li>If you already made manual customizations to the the datasets, dimensions, or metrics in the Customer Journey Analytics data view, your manual customizations remain intact when enabling this configuration option. This option makes additional customizations that further standardize reporting across Journey Optimizer and Customer Journey Analytics. You can also make manual customizations after enabling this option.</li></ul>See [Integrate Adobe Journey Optimizer with Adobe Customer Journey Analytics](/help/integrations/ajo.md) for more information. |
-
-{style="table-layout:auto"}
-
-### Containers
-
-Designates the name of containers for the data view. Container names are frequently used in [filters](/help/components/filters/filters-overview.md#Filter-containers).
-
-| Setting | Description |
-| --- | --- |
-| [!UICONTROL **Person container name**] | [!UICONTROL Person] (default). The [!UICONTROL Person] container includes every session and event for persons within the specified time frame. If your organization uses a different term (for example, "Visitor" or "User"), you can rename the container here. |
-| [!UICONTROL **Session container name**] | [!UICONTROL Session] (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this container to 'Visit' or any other term your organization prefers. |
-| [!UICONTROL **Event container name**] | [!UICONTROL Event] (default). The [!UICONTROL Event] container defines individual events in a dataset. If your organization uses a different term (for example, "Hits" or "Page Views"), you can rename the container here. |
-
-{style="table-layout:auto"}
-
-### Calendar
-
-Indicates the calendar format that you want the data view to follow. You can have multiple data views based on the same [Connection](/help/connections/create-connection.md) and give them different calendar types or time zones. These data views can allow teams that use different calendar types to accommodate their respective needs with the same underlying data.
-
-| Setting | Description |
-| --- | --- |
-| [!UICONTROL **Time zone**] | Choose which time zone that you want your data to be presented in. If you choose a time zone that operates on Daylight Savings Time, data is automatically adjusted to reflect that. In the spring when clocks adjust one hour ahead, a one-hour gap is present. In the fall when clocks adjust one hour behind, one hour is repeated during the DST shift. |
-| [!UICONTROL **Calendar Type**] | Determine how weeks of the month are grouped.<br>**Gregorian:** Standard calendar format. Quarters are grouped by month.<br>**4-5-4 Retail:** A standardized 4-5-4 retail calendar. The first and last months of the quarter contain 4 weeks, while the second month of the quarter consists of 5 weeks.<br>**Custom (4-5-4):** Similar to the 4-5-4 calendar except you can choose the first day of the year and which year that the "extra" week occurs.<br>**Custom (4-4-5):** The first and second months of each quarter contain 4 weeks, while the last week of each quarter consists of 5 weeks.<br>**Custom (5-4-4):** The first month of each quarter consists of 5 weeks, while the second and third month of each quarter consists of 4 weeks. |
-| [!UICONTROL **First month of the year**] and [!UICONTROL **First day of week**] | Visible for the Gregorian calendar type. Specify what month that you want the calendar year to start on, and what day you want each week to start on. |
-| [!UICONTROL **First day of current year**] | Visible for custom calendar types. Specify what day of the year that you want the current year to start. The calendar automatically formats the first day of each week based on this value. |
-| [!UICONTROL **Year in which the "extra" week occurs**] | With most 364-day calendars (52 weeks of 7 days each), each year accumulates leftover days until they add up to an extra week. This extra week is then added to the last month of that year. Specify which year that you want the extra week added to. |
-
-{style="table-layout:auto"}
-
-## Components
-
-Next, you can set a data view's components, which means you can create metrics and dimensions from schema elements. You can also use standard components.
-
->[!IMPORTANT]
->
->Up to 5,000 metrics and 5,000 dimensions can be added to a single data view.
-
-1. Select the **[!UICONTROL Components]** tab.
+   The [!UICONTROL **Components**] tab is where you set a data view's components, which means you can create metrics and dimensions from schema elements. You can also use standard components.
 
    ![Components tab](assets/dataview-components.png)
 
-   You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below.  The components already included are standard components (system generated) required for all data views (like Events, People, Sessions metrics, and Minute, Quarter, Week dimensions). Adobe also applies the filter **[!UICONTROL Contains data]** and **[!UICONTROL is not deprecated]** by default, so that only Schema fields that contain data and which are not deprecated appear.
+1. From the [!UICONTROL **Components**] tab, drag schema elements from the left rail into the [!UICONTROL **Metrics**] section or the [!UICONTROL **Dimensions**] section. The schema elements that you add become metrics or dimensions in the data view. 
 
-1. Search for a schema field using ![Search icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search schema fields]** or find a field by moving into any of the dataset collections, like ![Folder icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Event datasets]**.<br/>Alternatively, you can create a derived field using ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Create derived field** . See [Derived fields](./derived-fields/derived-fields.md) for more information.
+   For detailed information about the options available when adding components to a data view, see [Components](/help/data-views/create-dataview.md#components) in [Create or edit a data view](/help/data-views/create-dataview.md).
 
-1. When you found your specific schema field or defined your derived field, drag that field, such as ![Handle icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Page Name]**, from the left rail into the Metrics or Dimensions section.
-   You can drag the same schema field into the dimensions or metrics sections multiple times and configure the same dimension or metric in different ways. For example, from the  pageName field, you can create a dimension called "Product Pages", and another one "Error pages", by using different [Component settings](component-settings/overview.md) on the right.
-   If you drag a schema field folder from the left rail, they are automatically sorted into typical sections. String fields end up in the [!UICONTROL Dimensions] section and numeric schema types end up in the [!UICONTROL Metrics] section. You can also click **[!UICONTROL Add all]** and all schema fields are added to their respective locations.
+1. Select the [!UICONTROL **Settings**] tab. From here, you can configure filters to apply to your entire data view and configure session timeout and metrics.
 
-1. Once you select a component, settings appear on the right.
+   For detailed information about the options available when configuring settings for a data view, see [Settings](/help/data-views/create-dataview.md#settings) in [Create or edit a data view](/help/data-views/create-dataview.md).
 
-   ![Dataview component selected](assets/dataview-component-pagename.png)
+1. Select **[!UICONTROL Save]** to save the configuration for your data view.
 
-   Configure the component using [Component settings](component-settings/overview.md). Available component settings depend on if the component is a dimension/metric and the schema data type. Settings include:
+1. After all desired settings are specified, select **[!UICONTROL Save and finish]**.
 
-   * [[!UICONTROL Attribution]](component-settings/attribution.md)
-   * [[!UICONTROL Behavior]](component-settings/behavior.md)
-   * [[!UICONTROL Format]](component-settings/format.md)
-   * [[!UICONTROL Include exclude values]](component-settings/include-exclude-values.md)
-   * [[!UICONTROL Metric deduplication]](component-settings/metric-deduplication.md)
-   * [[!UICONTROL No value options]](component-settings/no-value-options.md)
-   * [[!UICONTROL Persistence]](component-settings/persistence.md)
-   * [[!UICONTROL Value bucketing]](component-settings/value-bucketing.md)
-
-1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
-
-**Duplicate metrics or dimensions**
-
-Duplicating metrics or dimensions and then modifying specific settings is an easy way to create multiple metrics or dimensions from a single schema field. Select the [!UICONTROL Duplicate] setting underneath the metric's or dimensions's name at the top right. Modify the new dimension or metric and save it under a more descriptive name.
-
-**Filter schema fields or datasets**
-
-You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) schema fields in the left rail by [!UICONTROL data type], [!UICONTROL datasets], [!UICONTROL data governance], and [!UICONTROL other] criteria ([!UICONTROL contains data], [!UICONTROL is identity], and [!UICONTROL is not deprecated]):
-
-![Filter fields](assets/dataview-components-filter.png)
-
->[!TIP]
->
->If the components do not load properly in your data view and you see an error message instead, please refer to [Lack of permissions](../troubleshooting/lack-of-permissions.md) for a resolution.
-
-## Settings
-
-1. Select the **[!UICONTROL Settings]** tab.
-1. Configure filters to apply to your entire data view. 
-   You can add filters that apply to an entire data view. This filter is applied to any report that you run in Workspace. Drag a filter from the list in the left rail to the [!UICONTROL Add filters] field.
-1. Configure session timeout and metrics.
-   Determine the time period of inactivity between events before a session expires and a new one is started. A time period is required. You can optionally also force a new session to start when an event contains a certain metric. See [Session settings](session-settings.md) for more details.
-1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
-1. After all desired settings are specified, click **[!UICONTROL Save and finish]**.
 1. Continue following the upgrade steps that were dynamically generated for your organization from the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/).
 

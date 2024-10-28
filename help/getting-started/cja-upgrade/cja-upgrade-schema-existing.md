@@ -4,6 +4,8 @@ description: Learn about the recommended path when upgrading from Adobe Analytic
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
+hide: yes
+hidefromtoc: yes
 ---
 # Use your Adobe Analytics schema with Customer Journey Analytics
 

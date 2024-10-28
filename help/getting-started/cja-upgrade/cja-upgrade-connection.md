@@ -4,6 +4,8 @@ description: Learn about the recommended path when upgrading from Adobe Analytic
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
+hide: yes
+hidefromtoc: yes
 ---
 # Create and configure a connection to use with Customer Journey Analytics
 
@@ -17,20 +19,7 @@ feature: Basics
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/connections/create-connection.md -->
 
-The following information explains how to create and configure a connection, and add Experience Platform datasets to the connection. For additional information about creating and configuring a connection, see [Create or edit a connection](/help/connections/create-connection.md).
-
-## Prerequisites
-
-The maximum number of datasets you can add to a connection is capped at 100. The mix depends on which Customer Journey Analytics package your company has purchased. 
-
-Contact your administrator if you're unsure which Customer Journey Analytics package you have.
-
-| **Select** package | **Foundation** package |
-| --- | --- |
-| Any combination of event/profile/lookup/summary datasets, adding up to 100  | One event dataset per connection | 
-|  | Up to 99 profile, lookup, or summary datasets per connection  |
-
-{style="table-layout:auto"}
+The following information explains how to create and configure a connection, as well as how to add Experience Platform datasets to the connection you create. For additional information about creating and configuring a connection, see [Create or edit a connection](/help/connections/create-connection.md).
 
 ## Create and configure the connection {#create-connection}
 
