@@ -8,6 +8,15 @@ role: User
 ---
 # Retention analysis
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_retention_button"
+>title="Retention"
+>abstract="Measure how many users continue to use your product."
+
+<!-- markdownlint-enable MD034 -->
+
 The ![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Retention]** analysis measures how users continue to use your product over time, which can help you understand your product market fit. The analysis counts users based on two important events:
 
 * Start event: The event used to qualify users for inclusion in your analysis. 

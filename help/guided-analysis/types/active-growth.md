@@ -8,6 +8,16 @@ role: User
 ---
 # [!UICONTROL Active growth] analysis
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_activegrowth_button"
+>title="Active growth"
+>abstract="Identify who is new, retained, returning, or dormant."
+
+<!-- markdownlint-enable MD034 -->
+
+
 The ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Active growth]** analysis provides insights into the growth and acquisition of users over a specific period. The horizontal axis is a time interval, while the vertical axis is a measurement of users. Users are split into four categories:
 
 * **[!UICONTROL New]**: The user was active during the current period, but not previously. See how far that the analysis looks back by hovering over _[!UICONTROL New users]_ in the chart legend. The lookback range is dynamically determined based on the selected date range and interval.

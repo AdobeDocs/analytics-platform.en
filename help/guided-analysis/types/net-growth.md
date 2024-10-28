@@ -8,6 +8,15 @@ role: User
 ---
 # [!UICONTROL Net growth] analysis
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_netgrowth_button"
+>title="Net growth"
+>abstract="Are you gaining or losing users?"
+
+<!-- markdownlint-enable MD034 -->
+
 The ![NetGrowth](/help/assets/icons/NetGrowth.svg) **[!UICONTROL Net growth]** analysis provides insights around the rate at which you gain or lose users over a specific period. The horizontal axis is a time interval, while the vertical axis is the measurement of growth.
 
 Each data point represents net growth, which is calculated using the following formula:

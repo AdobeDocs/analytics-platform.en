@@ -8,6 +8,16 @@ role: User
 ---
 # [!UICONTROL Conversion trends] analysis
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_conversiontrends_button"
+>title="Conversion trends"
+>abstract="Track changes in conversion rates over time."
+
+<!-- markdownlint-enable MD034 -->
+
+
 The ![Conversion Trends](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Conversion trends]** analysis provides a trended visualization of conversion rates over time. The horizontal axis is a time interval, while the vertical axis represents the conversion rate.
 
 
