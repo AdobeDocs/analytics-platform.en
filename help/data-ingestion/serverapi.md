@@ -6,7 +6,7 @@ feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 role: Admin
 ---
-# Ingest data via the Adobe Experience Platform Edge Network Server API
+# Ingest data via the Edge Network Server API
 
 This quick start guide explains how you can ingest tracking data from devices like IoT devices, set-top boxes, gaming consoles, desktop applications directly into Adobe Experience Platform using the Adobe Experience Platform Edge Network Server API and Edge Network. Then use that data in Customer Journey Analytics.
 

@@ -22,15 +22,28 @@ The main benefits are:
 
 ## Prerequisites
 
-To use this functionality, you must have: 
-
+To use this functionality, you can use expiring or non-expiring credentials to connect BI tools to the [!DNL Customer Journey Analytics BI extension]. The [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) provides more information on setting expiring credentials or non-expiring credentials.
+Below are additional steps to set up CJA Permissions
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
 
-* Granted access to Experience Platform and Customer Journey Analytics.
-* Granted Product admin access to Customer Journey Analytics, so you can view, edit, update, or delete connections and data views.
-* Granted access to the data views you want to access.
-* Granted access to the CJA BI extension.
-* Use expiring on non-expiring credentials to connect BI tools to the [!DNL Customer Journey Analytics BI extension]. The [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) provides more information on setting expiring credentials or non-expiring credentials.
+### Expiring credentials
+
+To use expiring credentials, you can:
+
+* Grant access to Experience Platform and Customer Journey Analytics. 
+* Grant Product admin access to Customer Journey Analytics, so you can view, edit, update, or delete connections and data views.
+
+Or you can: 
+
+* Grant access to the data views you want to access.
+* Grant access to the Customer Journey Analytics BI extension.
+
+### Non-Expiring credentials
+
+To use non-expiring credentials: 
+
+* Create non-expiring credentials in Experience Platform.
+* Grant access to the non-expiring credentials by following the steps mentioned in [Expiring Credentials](#Expiring-credentials).
 
 See [Customer Journey Access Control](../technotes/access-control.md) for more information, specifically the [Product Admin additional permissions](../technotes/access-control.md#product-admin-additional-permissions) and [Customer Journey Analytics Permissions in the Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
@@ -186,19 +199,6 @@ The data governance-related settings in Customer Journey Analytics are inherited
 
 Privacy labels and policies that were created on datasets consumed by Experience Platform can be surfaced in the Customer Journey Analytics data views workflow. Therefore, data queried using the [!DNL Customer Journey Analytics BI extension] show appropriate warnings or errors when not complying with the privacy labels and policies defined.
 
-#### Defaults and limitations
-
-The following additional defaults and limitations apply for reasons of data governance.
-
-* The BI Extension requires a row limit for the query results. The default is 50, but you can override this in SQL using `LIMIT n`, where `n` is 1 - 50000.
-* The BI Extension requires a date range to limit the rows used for calculations. The default is the last 30 days, but you can override this in your SQL `WHERE` clause using the special [`timestamp`](#timestamp) or [`daterange`](#date-range) columns (see further documentation).
-* The BI Extension requires aggregate queries. You can't use SQL like `SELECT * FROM ...` to get the raw, underlying rows. At a high level, your aggregate queries should use:
-  * Select totals using `SUM` and/or `COUNT`.<br/> For example, `SELECT SUM(metric1), COUNT(*) FROM ...`
-  * Select metrics broken down by a dimension. <br/>For example, `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
-  * Select distinct metric values.<br/>For example, `SELECT DISTINCT dimension1 FROM ...`
-  
-    See for more details [Supported SQL](#supported-sql).
-
 ### List data views
 
 In the standard PostgreSQL CLI, you can list your views using `\dv`
@@ -216,6 +216,21 @@ prod:all=> \dv
 ### Nested versus flattened
 
 By default, the schema of your data views uses nested structures, just like the original XDM schemas. The integration also supports the `FLATTEN` option. You can use this option to force the schema for the data views (and any other table in the session) to be flattened. Flattening allows for easier use in BI tools that don't support structured schemas. See [Working with nested data structures in Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
+
+
+### Defaults and limitations
+
+The following additional defaults and limitations apply when using the BI Extenion:
+
+* The BI extension requires a row limit for the query results. The default is 50, but you can override this in SQL using `LIMIT n`, where `n` is 1 - 50000.
+* The BI extension requires a date range to limit the rows used for calculations. The default is the last 30 days, but you can override this in your SQL `WHERE` clause using the special [`timestamp`](#timestamp) or [`daterange`](#date-range) columns.
+* The BI extension requires aggregate queries. You can't use SQL like `SELECT * FROM ...` to get the raw, underlying rows. At a high level, your aggregate queries should use:
+  * Select totals using `SUM` and/or `COUNT`.<br/> For example, `SELECT SUM(metric1), COUNT(*) FROM ...`
+  * Select metrics broken down by a dimension. <br/>For example, `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
+  * Select distinct metric values.<br/>For example, `SELECT DISTINCT dimension1 FROM ...`
+  
+    See for more details [Supported SQL](#supported-sql).
+
 
 ### Supported SQL
 
@@ -392,5 +407,15 @@ These functions can be used on dimensions in the `SELECT`, `WHERE` clause, or in
 | [Extract](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | Generate a dynamic dimension identity on the passed in field. Use the item ID instead of the value for some parts of this function as you need the number not the friendly name.<br/>Supported parts are:<br>- Keywords: `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/>- Strings:  `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`', `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`, or `'MINUTE'`.|
 | [Date (part)](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | Generate a dynamic dimension identity on the passed in field. Use the item ID instead of the value for some parts of this function as you need the number not the friendly name.<br/>Supported string parts are: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`', `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`, or `'MINUTE'`. |
 | [Date (truncated)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Generate a dynamic dimension identity on the passed in field.<br/>Supported string granularities are: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`', `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`, or `'MINUTE'`. |
+
+{style="table-layout:auto"}
+
+### Partial Support
+
+Some SQL functionality is only partially supported with the BI extension and does not return the same results you see with other databases.  This specific functionality is used in SQL generated by various BI tools, for which the BI extension does not have an exact match. As a result, the BI extension focuses on a limited implementation that covers the minimum BI tool usage without throwing errors. See the table below for more details.
+
+| Function | Example | Details |
+|---|---|---|
+| MIN() & MAX() |``MIN(daterange)`` or <br/> ``MAX(daterange)`` | `MIN()` on `timestamp`, `daterange`, or any of the `daterangeX` like `daterangeday` will return 2 years ago.<br/><br/> `MAX()` on `timestamp`, `daterange`, or any of the `daterangeX` like `daterangeday` will return the current date/time.<br/><br/>`MIN()` or `MAX()` on any other dimmension, metric, or expression will return 0. |
 
 {style="table-layout:auto"}

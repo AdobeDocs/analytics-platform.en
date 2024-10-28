@@ -1,1 +1,13 @@
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" focusable="false" aria-hidden="true" role="img" class="spectrum-Icon spectrum-Icon--sizeS" width="36"  height="36" ><rect height="4" rx="1" ry="1" width="28" x="4" y="16" fill="#6E6E6E"></rect><rect height="4" rx="1" ry="1" width="28" x="4" y="6" fill="#6E6E6E"></rect><rect height="4" rx="1" ry="1" width="28" x="4" y="26" fill="#6E6E6E"></rect></svg>
+<svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 18 18" width="18">
+  <defs>
+    <style>
+      .fill {
+        fill: #464646;
+      }
+    </style>
+  </defs>
+  <title>S Rail 18 N</title>
+  <rect id="Canvas" fill="#ff13dc" opacity="0" width="18" height="18" /><rect class="fill" height="2" rx="0.5" width="12" x="3" y="4" />
+  <rect class="fill" height="2" rx="0.5" width="12" x="3" y="8" />
+  <rect class="fill" height="2" rx="0.5" width="12" x="3" y="12" />
+</svg>

@@ -6,7 +6,7 @@ feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
 ---
-# Ingest data via the Adobe Experience Platform Mobile SDK
+# Ingest data via the Mobile SDK
 
 This quick start guide explains how you can ingest mobile app tracking data directly into Adobe Experience Platform using the Adobe Experience Platform Mobile SDK and Edge Network. Then use that data in Customer Journey Analytics.
 

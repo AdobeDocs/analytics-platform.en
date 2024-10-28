@@ -16,7 +16,7 @@ You can share projects as "view-only" to recipients through the [Project share w
 
 Disabled interactions in a view-only project include: 
 
-* Hidden left rail 
+* Hidden left panel 
 * Panel calendar date range. Note: If you want to grant calendar control to recipients, add in a [drop-down filter with date ranges](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html). 
 * Freeform filtering 
 * Freeform # of visible rows 

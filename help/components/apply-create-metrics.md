@@ -9,33 +9,41 @@ role: User
 
 Metrics allow you to quantify data points in Analysis Workspace. They are most commonly used as columns in a visualization and tied to dimensions.
 
+## Use metrics in Analysis Workspace
+
+Metrics are flexible in their use within Analysis Workspace. Drag a metric to an empty Freeform table to see that metric trended over the project's date period. You can also drag a metric when a dimension is present to see that metric compared to each dimension item. Dragging a metric on top of an existing metric header replaces it, and dragging a metric next to a header lets you see both metrics side-by-side.
+
+For information about how to add metrics and other types of components to Analysis Workspace, see [Use components in Analysis Workspace](/help/components/use-components-in-workspace.md).
+
+
 ## Types of metrics
 
 Adobe offers several types of metrics for use in Analysis Workspace:
 
+
 * **Standard metrics**: Example of standard metrics are People, Sessions, Events.
 
-* **Calculated metrics** ![Calculated metric icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg): User-defined metrics that are based on standard metrics, static numbers, or algorithmic functions.
+  Contrary to Adobe Analytics, Customer Journey Analytics allows you to define standard metrics in a flexible way within the scope of a connection and a data view. 
 
-* **Calculated metric templates**  <img src="./assets/adobe-logo.svg" width="18"> : Adobe-defined metrics that behave similarly to calculated metrics. You can use them as-is in Workspace projects, or save a copy to customize its logic.
+  * **People**: The People metric in Customer Journey Analytics is the count distinct of Person IDs. Depending on what you choose as the Person ID when you configure datasets in your connection, the People metric can mean different things.
+  * **Sessions**: The Sessions metric in Customer Journey Analytics is what you define as part of the configuration of the Sessions settings in your data view. See [Session settings](/help/data-views/session-settings.md).
+  * **Events**: The Events metric in Customer Journey Analytics are comprised of the events that are part of any event dataset you have configured as part of your connection.
+
+* **Calculated metrics** ![Calculator](/help/assets/icons/Calculator.svg): User-defined metrics that are based on standard metrics, static numbers, or algorithmic functions.
+
+* **Calculated metric templates**  ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : Adobe-defined metrics that behave similarly to calculated metrics. You can use them as-is in Workspace projects, or save a copy to customize the logic. See [Default calculated metrics](calc-metrics/cm-workflow/../default-calcmetrics.md).
+
+You can see whether a metric is approved ![Approved icon](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  or not. If you want more details on a metric, hover over the metric, and select ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg). See [Component info](use-components-in-workspace.md#component-info) for more information.
 
 
-![Workspace panel highlighting Metrics in the left-pane.](assets/cja-metrics.png)
 
-You can see whether a metric is approved ![Approved icon](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  or not. If you want more details on a metric, hover over the metric, and select ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg).
+## Calculated metrics
 
+Calculated metrics allow you to easily configure how metrics relate to each other using simple operators or statistical functions. See [Calculated metrics overview](/help/components/calc-metrics/calc-metr-overview.md) for more information.
 
-Metrics are flexible in their use within Analysis Workspace. Drag a metric to an empty Freeform table to see that metric trended over the project's date period. You can also drag a metric when a dimension is present to see that metric compared to each dimension item. Dragging a metric on top of an existing metric header replaces it, and dragging a metric next to a header lets you see both metrics side-by-side.
+<!--
 
-## Use metrics in Analysis Workspace
-
-Metrics can be used in various ways within Analysis Workspace. For information about how to add metrics and other types of components to Analysis Workspace, see [Use components in Analysis Workspace](/help/components/use-components-in-workspace.md).
-
-## Create calculated metrics
-
-Calculated metrics allow you to easily see how metrics relate to each other using simple operators or statistical functions. 
-
-There are several ways to create calculated metrics. The method you choose determines whether the calculated metric is available from the component list across all projects, or only in the project where it was created.
+There are several ways to create calculated metrics. See [Create calculated metrics]()
 
 ### Create calculated metrics for all projects
 
@@ -51,7 +59,7 @@ To create a calculated metric for a single project:
 
 1. In Analysis Workspace, open the project where you want to create the calculated metric.
 
-1. In a freeform table, right-click one or more header column cells, then select **[!UICONTROL Create metric from selection]**
+1. In a freeform table, select **[!UICONTROL Create metric from selection]** from the context menu in a column header.
 
    ![Workspace panel highlighting Create from selection](assets/create-metric-from-selection.png)
 
@@ -67,12 +75,23 @@ To create a calculated metric for a single project:
 
    Or, to open the calculated metric builder and create the calculated metric for all projects, select [!UICONTROL **Open in Calculated Metric Builder**], then continue with [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
+
+<!-- This video really shows an AA example using hits, etc.  Not suitable for CJA... >
++++ See the following video on how to create an implementation-less calculated metric from within Analysis Workspace.
+
 [Calculated Metrics: Implementation-less metrics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
+
++++
+
+-->
 
 ## Compare metrics with different attribution models
 
-If you'd like to quickly and easily compare one attribution model to another, right-click a metric and select **[!UICONTROL Compare Attribution Models]**:
+If you'd like to quickly and easily compare one attribution model to anothe for a metric, select **[!UICONTROL Compare attribution models]** from the context menu for a metric.
 
 ![Workspace panel highlighting Compare attribution models](assets/compare-attribution.png)
 
-This shortcut lets you quickly and easily compare one attribution model to another without dragging in a metric and configuring it twice.
+This shortcut lets you quickly and easily compare attribution models.

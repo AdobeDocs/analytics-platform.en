@@ -7,7 +7,7 @@ role: User
 ---
 # Time-parting dimensions in Analysis Workspace
 
-Time parting takes the timestamp of collected events and breaks it into more meaningful dimensions, such as "Hour of Day" or "Day of Week".
+Time parting takes the timestamp of collected events and breaks it into more meaningful dimensions, such as **Hour of Day** or **Day of Week**.
 
 Time-parting dimensions are based on the time zone of the data view. These dimensions are available in Analysis Workspace and can help to answer the following questions:
 
@@ -16,13 +16,13 @@ Time-parting dimensions are based on the time zone of the data view. These dimen
 * How do my weekend sales compare to my weekday sales? 
 * Does a certain marketing campaign generate higher conversions in the morning, or in the afternoon?
 
-| Dimension | Example Values |
+| Dimension | Example values |
 |--- |--- |
-|Hour of Day|0-23|
-|AM/PM|AM, PM|
-|Day of Week|Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday|
-|Weekday/Weekend|Weekday, Weekend|
-|Day of Month|1-31|
-|Month of Year|January-December|
-|Day of Year|1-366|
-|Quarter of Year|Q1, Q2, Q3, Q4|
+|**[!UICONTROL Hour of Day]**|0-23|
+|**[!UICONTROL AM/PM]**|AM, PM|
+|**[!UICONTROL Day of Week]**|Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday|
+|**[!UICONTROL Weekday/Weekend]**|Weekday, Weekend|
+|**[!UICONTROL Day of Month]**|1-31|
+|**[!UICONTROL Month of Year]**|January-December|
+|**[!UICONTROL Day of Year]**|1-366|
+|**[!UICONTROL Quarter of Year]**|Q1, Q2, Q3, Q4|

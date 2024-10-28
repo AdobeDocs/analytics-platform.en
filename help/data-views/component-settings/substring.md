@@ -6,7 +6,17 @@ feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
 ---
-# [!UICONTROL Substring] component settings
+# Substring component settings {#substring-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_substring"
+>title="Substring"
+>abstract="Extract parts of a string using rules or regular expressions."
+
+<!-- markdownlint-enable MD034 -->
+
 
 [!UICONTROL Substring] component settings allow you to perform multiple string manipulation methods to obtain the desired dimension items in reports.
 

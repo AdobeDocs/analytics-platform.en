@@ -5,7 +5,26 @@ exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
 ---
-# Audit logs
+# Audit logs {#audit-logs}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_auditlog_userid"
+>title="User ID"
+>abstract="The user ID can be found by hitting the info button on a log entry containing the desired user."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_auditlog_componentid"
+>title="Component ID"
+>abstract="The component ID can be found by hitting the info button on a log entry containing the desired component."
+
+<!-- markdownlint-enable MD034 -->
+
 
 To increase the transparency and visibility of activities performed in the system, Adobe Customer Journey Analytics allows you to audit user activity for various services and capabilities in the form of "audit logs". These logs form an audit trail that can help with troubleshooting issues, and help your business effectively comply with corporate data stewardship policies and regulatory requirements, such as the Health Insurance Portability and Accountability Act (HIPAA).
 
@@ -86,7 +105,7 @@ The following items are shown:
 
 Select the funnel icon (![filter](assets/filter-icon.png)) to display a list of filter controls to help narrow results. Only the last 1,000 records are displayed, irrespective of the various filters selected.
 
-![Audit log showing the filters displayed for Data Range.](assets/filters.png)
+![Audit log showing the filters displayed for Date Range.](assets/filters.png)
 
 The following filters are available for audit events in the UI:
 

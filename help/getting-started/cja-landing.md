@@ -23,6 +23,19 @@ AI Assistant is a conversational experience that allows practitioners to perform
 
 [![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
+
+>[!TAB Guided Analysis] 
+
+Guided Analysis is now available directly from within Analysis Workspace, enabling users to create dashboards with comprehensive insights from panels, visualizations, and guided analyses.
+
+[![image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
+
+>[!TAB Alerts] 
+
+Alerts allow you to be notified based on changed percentages or specific data points. You can preview how often an alert will trigger, send alerts by email or SMS, create stacked alerts, and more.
+
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
 >[!TAB Summary data] 
 
 Allows you to bring in time-series data that does not have a person ID. This time-series data can be used to support various use cases, such as 
@@ -60,27 +73,6 @@ The BI extension enables SQL access to the data views that you have defined in C
 
 *_You must have the Select package or higher to use the BI extension._*
 
-
-<!--
->[!TAB Improved Audience Publising] 
-
-Audiences that are published from Customer Journey Analytics are now available in the new **Audiences** section in Adobe Experience Platform. Audiences are now available in Experience Platform seconds after they are published from Customer Journey Analytics. Improved sorting and filter options in Experience Platform for Customer Journey Analytics audiences. 
-
-[![image](assets/learn-more-button.svg)](/help/components/audiences/publish.md)
-
--->
-
->[!TAB Forecasting] 
-
-Forecasting is an Analysis Workspace feature to forecast a standard or calculated metric with any supported time granularity (hourly, daily, weekly, monthly and yearly). Forecasting is available for time-series related data only.
-
-[![image](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
-
->[!TAB New documentation] 
-
-New documentation sections are now available on:<ul><li>Summary data use case and B2B example use case.</li><li>How to upgrade from Adobe Analytics to Customer Journey Analytics.</li><li>Data export use cases and the required Experience Platform and Customer Journey functionalities. </li></ul>Select **[!UICONTROL Learn more]** for this and other documentation updates.
-
-[![image](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
 
 >[!ENDTABS]
 
@@ -144,7 +136,7 @@ Understand how Customer Journey Analytics compares to Adobe Analytics. And how t
     </td>
     <td>
       <img src="./assets/guided-analysis.svg" width="35px"><br/>
-      <strong>Guided Analysis</strong><br/><a href="/help/guided-analysis/overview.md">Overview</a> - <a href="/help/guided-analysis/types/active.md">User Growth</a> - <a href="/help/guided-analysis/types/usage.md">Trends</a> - <a href="/help/guided-analysis/types/friction.md">Funnel</a> - <a href="/help/guided-analysis/types/release.md">Impact</a> - <a href="/help/guided-analysis/industry-use-cases.md">Industry use cases</a>
+      <strong>Guided Analysis</strong><br/><a href="/help/guided-analysis/overview.md">Overview</a> - <a href="/help/guided-analysis/types/active-growth.md">User Growth</a> - <a href="/help/guided-analysis/types/trends.md">Trends</a> - <a href="/help/guided-analysis/types/funnel.md">Funnel</a> - <a href="/help/guided-analysis/types/release-impact.md">Impact</a> - <a href="/help/guided-analysis/industry-use-cases.md">Industry use cases</a>
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>

@@ -10,9 +10,11 @@ role: Admin
 
 Creating a data view involves either creating metrics and dimensions from schema elements or using standard components. Most schema elements can be either a dimension or a metric depending on your business's requirements. Once you drag a schema element into a data view, options appear on the right where you can adjust how the dimension or metric operates in Customer Journey Analytics.
 
-Here is a video on the topic:
++++ View a video to illustrate Data views in Customer Journey Analytics
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
+
++++
 
 To create or edit a data view:
 
@@ -20,7 +22,17 @@ To create or edit a data view:
 1. To create a data view, select **[!UICONTROL Create new data view]**. Alternatively, you can select an existing data view from the list of data views to edit it.
 
 
-## Configure
+## Configure {#configure}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_externalid"
+>title="External ID"
+>abstract="Changing the External ID may impact how the data view name appears in external sources, such as business intelligence tools."
+
+<!-- markdownlint-enable MD034 -->
+
 
 To configure a new or existing data view:
 
@@ -44,9 +56,20 @@ Provides overarching settings for the data view.
 
 {style="table-layout:auto"}
 
-### Compatibility
+### Compatibility {#compatibility}
 
 {{release-limited-testing-section}}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_dataviewsinadobejourneyoptimizer"
+>title="Data views in Journey Optimizer"
+>abstract="Customer Journey Analytics needs to use a connection and data view that are compatible with Adobe Journey Optimizer. By default, a connection and data view are automatically created for this purpose.<br/>Alternatively, you can enable this option to make this the default data view that is used in Adobe Journey Optimizer reporting. When enabled, all the necessary components required for Journey Optimizer are added to this data view, and all the necessary Journey Optimizer datasets are added to the connection associated with this data view."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Which components and datasets are added." 
+
+<!-- markdownlint-enable MD034 -->
+
 
 Provides settings that are applicable when using Adobe Journey Optimizer in addition to Customer Journey Analytics.
 

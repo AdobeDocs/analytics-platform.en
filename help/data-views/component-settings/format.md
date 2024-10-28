@@ -6,7 +6,27 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 ---
-# Format component settings
+# Format component settings {#format-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_format"
+>title="Format"
+>abstract="Determine how a component is displayed when used in reports."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_format_currencyconversion"
+>title="Currency conversion"
+>abstract="Select a currency code dimension to configure and display currency in a selected currency type."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 Format lets you determine how a given metric is displayed when used in reports.
 

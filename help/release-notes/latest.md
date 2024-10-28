@@ -4,25 +4,29 @@ description: Latest Customer Journey Analytics release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 ---
-# Current Adobe Customer Journey Analytics release notes (August 2024)
+# Current Adobe Customer Journey Analytics release notes (October 23, 2024)
 
-**Last update**: August 14, 2024
+**Last update**: October 24, 2024
 
-These release notes cover the release period of August 14, 2024 through September 2024. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
+These release notes cover the release period of October 15, 2024 to end of year 2024. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
 ## New or updated features 
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Summary-level Data Sources** | Allows you to bring in time-series data that does not have a person ID. This time-series data can be used to support various use cases, such as:<ul><li>Presenting high-level performance indicators as part of or next to event-level data. This can include something as simple as a date and a single metric value or include multiple dimensions and metrics, like  advertising impressions, email opens, advertising spend, cost of good sold, and more.</li><li>Uploading targets or goals at an hourly or daily basis, then positioning these targets or goals against event-level metrics. This helps visualize how metrics are trending against the organizational targets or goals.</li></ul><p>For more information, see [Summary data](/help/data-views/summary-data.md).</p> | August 13, 2024 | August 21, 2024 |
-|**Audiences are published to a new "Audiences" section in Experience Platform** | Audiences that are published from Customer Journey Analytics are now available in the new "Audiences" section in Adobe Experience Platform.<p>Previously, audiences that were published from Customer Journey Analytics were available in Experience Platform under the "Segments" section.</p><p>This improvement provides the following benefits:</p><ul><li>Audiences no longer have a 1-hour delay before they appear in Experience Platform; they are available seconds after they are published.</li><li>Audiences can be sorted in Experience Platform by using the "Origin" column, which displays the application from which the audience was originally published.</li><li>Filter and sort options in Experience Platform enable you to find the relevant audiences more quickly.</li></ul> <p>For more information, see  [Use Customer Journey Analytics audiences in Experience Platform](/help/components/audiences/publish.md#use-customer-journey-analytics-audiences-in-experience-platform) in the article, [Create and publish audiences](/help/components/audiences/publish.md).</p>| September 2024 | September 2024 |
-| **Intelligent Alerts** | Intelligent Alerts in Customer Journey Analytics allow you to be notified immediately when abnormal events occur in your data.<p>You can set alerts to be triggered based on anomaly thresholds, changed percentages, or specific data points. Alerts provide granular controls that integrate with Anomaly Detection, triggering when you need them most.</p><p>The process of using Intelligent Alerts in Customer Journey Analytics is nearly identical to using Intelligent Alerts in Adobe Analytics. One key difference is that hourly alerts are not available in Customer Journey Analytics. This difference is because data ingestion for the various kinds of event data that can be ingested is complete only after a delay, typically ranging from 3 to 9 hours past the data event time.</p><p>(Updated documentation links to follow)</p><!--<p>[Learn more](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)</p> --> |  | TBD |
+| **Asset Transfer** | Lets you transfer ownership of components such as projects, filters, and calculated metrics to other users to ensure continuity and appropriate access. [Learn more](/help/tools/asset-transfer/transfer-assets.md)  |  | October 15  |
+| **Guided analysis: Embed in Workspace** | [Guided analysis](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview) is now available directly in Analysis Workspace, enabling users to create dashboards with comprehensive insights from panels, visualizations, and guided analyses. From a new left rail section, you can create new guided analyses to add to your projects. You can also access saved guided analyses that can be re-used as building blocks across many projects.| October 2, 2024  | October 23, 2024 |
+| **Product usage** | See how your organization uses Customer Journey Analytics. Enabling this feature creates a dataset in Adobe Experience Platform that collects data when anyone in your organization uses Analysis Workspace. A connection and a data view are also automatically created, giving you access to dimensions like top project types, most active users, and most popular components used in projects. [Documentation link to follow] | October 23, 2024 | January, 2025 |
+| **New information about Request factors in Analysis Workspace Performance** | A new "Request factors" section is now available when analyzing performance in Analysis Workspace. To learn more about how requests are processed and the various factors that influence processing times, see "Request factors" in [Optimize Analysis Workspace performance](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/optimizing-performance#request-factors). |  | October 1, 2024 |
 
-{style="table-layout:auto"}
 
 ## Fixes in Customer Journey Analytics
 
-AN-354359; AN-351646; AN-346873; AN-352504; AN-353755; AN-354199; AN-354268; AN-354791; AN-354598; AN-354462; AN-354547; 
+Audiences: AN-359692
+Connections: AN-360403
+Full table export: AN-359785
+Reporting: AN-350707; AN-355331; AN-359308; AN-359826; AN-359915; AN-360097; AN-360245
+Report Builder: AN-361022
 
 ## Important notices for Customer Journey Analytics Administrators
 
@@ -30,7 +34,6 @@ AN-354359; AN-351646; AN-346873; AN-352504; AN-353755; AN-354199; AN-354268; AN-
 | --- | --- | --- |
 | N/A | | | 
 
-{style="table-layout:auto"}
 
 ## Related resources
 

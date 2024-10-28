@@ -31,7 +31,7 @@ Configure the initial data block parameters for the Data block location, Data v
 
 1. Set the **Date range**.
 
-    The Date range option allows you to choose a date range. Date ranges may be fixed or rolling. For information about data range options, see [Select a Date Range](select-date-range.md).
+    The Date range option allows you to choose a date range. Date ranges may be fixed or rolling. For information about date range options, see [Select a Date Range](select-date-range.md).
 
 1. Click **Next**.
 
