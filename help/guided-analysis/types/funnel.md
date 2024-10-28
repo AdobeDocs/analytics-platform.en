@@ -6,7 +6,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 ---
-# [!UICONTROL Funnel] analysis
+# [!UICONTROL Funnel] analysis {#funnel}
 
 <!-- markdownlint-disable MD034 -->
 

@@ -6,7 +6,7 @@ keywords: product analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
 ---
-# [!UICONTROL Release impact] analysis
+# [!UICONTROL Release impact] analysis {#release-impact}
 
 <!-- markdownlint-disable MD034 -->
 

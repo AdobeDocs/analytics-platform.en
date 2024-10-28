@@ -6,7 +6,7 @@ keywords: product analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
 ---
-# [!UICONTROL Net growth] analysis
+# [!UICONTROL Net growth] analysis {#net-growth}
 
 <!-- markdownlint-disable MD034 -->
 

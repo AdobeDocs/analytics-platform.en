@@ -6,7 +6,7 @@ keywords: product analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
 ---
-# [!UICONTROL Frequency] analysis
+# [!UICONTROL Frequency] analysis {#frequency}
 
 <!-- markdownlint-disable MD034 -->
 

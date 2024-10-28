@@ -6,7 +6,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 ---
-# [!UICONTROL Active growth] analysis
+# [!UICONTROL Active growth] analysis {#active-growth}
 
 <!-- markdownlint-disable MD034 -->
 

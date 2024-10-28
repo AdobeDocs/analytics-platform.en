@@ -6,7 +6,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 ---
-# [!UICONTROL Trends] analysis
+# [!UICONTROL Trends] analysis {#trends}
 
 <!-- markdownlint-disable MD034 -->
 
