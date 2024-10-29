@@ -24,16 +24,6 @@ To create or edit a data view:
 
 ## Configure {#configure}
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_dataview_externalid"
->title="External ID"
->abstract="Changing the External ID may impact how the data view name appears in external sources, such as business intelligence tools."
-
-<!-- markdownlint-enable MD034 -->
-
-
 To configure a new or existing data view:
 
 1. Select the **[!UICONTROL Configure]** tab (if not already active).
@@ -43,7 +33,16 @@ To configure a new or existing data view:
 1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
    
 
-### Settings
+### Settings {#settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_externalid"
+>title="External ID"
+>abstract="Changing the External ID may impact how the data view name appears in external sources, such as business intelligence tools."
+
+<!-- markdownlint-enable MD034 -->
 
 Provides overarching settings for the data view.
 

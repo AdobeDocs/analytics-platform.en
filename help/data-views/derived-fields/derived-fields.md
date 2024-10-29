@@ -1695,7 +1695,7 @@ Use the Summarize function for event, session or person scope based calculations
 
 <!-- TRIM -->
 
-### Trim
+### Trim {#trim}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -1817,7 +1817,7 @@ You create a  `Store Identifier` derived field. You use the [!UICONTROL TRIM] fu
 
 <!-- URL PARSE -->
 
-### URL Parse
+### URL Parse {#urlparse}
 
 <!-- markdownlint-disable MD034 -->
 
