@@ -1,5 +1,5 @@
 ---
-title: Upgrade shortcut: Migrate an AppMeasurement or Analytics extension implementation to use the Web SDK
+title: Upgrade shortcut Migrate an AppMeasurement or Analytics extension implementation to use the Web SDK
 description: Learn about the recommended path when upgrading from Adobe Analytics to Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
