@@ -57,8 +57,6 @@ Provides overarching settings for the data view.
 
 ### Compatibility {#compatibility}
 
-{{release-limited-testing-section}}
-
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]

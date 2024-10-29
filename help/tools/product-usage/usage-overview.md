@@ -1,8 +1,6 @@
 ---
 title: Product usage overview
 description: View insights and reports on how your organization uses Customer Journey Analytics.
-hide: yes
-hidefromtoc: yes
 ---
 # Product usage overview
 
