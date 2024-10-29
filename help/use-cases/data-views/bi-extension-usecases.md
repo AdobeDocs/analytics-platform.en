@@ -32,9 +32,9 @@ The following use cases are documented:
 For each use case, instructions are available for the following BI tools within the **Details** section:
 
 * Power BI Desktop (version 2.136.1478.0 64-bit (September 2024))
-* Tableau Desktop (version 2022.3.5 (20223.23..0310) 64-bit)
+* Tableau Desktop (version 2024.1.5 (20241.24.0705.0334) 64-bit)
 
-The instructions refer to an example data view named **[!UICONTROL public.ares_sql_validation]**, two example dimensions (**[!UICONTROL Product Name]** and **[!UICONTROL Product Category]**) and two example metrics (**[!UICONTROL Purchases]** and **[!UICONTROL Purchase Revenue]**). When you go through the instructions, modify these example objects for your specific environment where appropriate.
+The instructions refer to an example data view named **[!UICONTROL public.cc_data_view]**, two example dimensions (**[!UICONTROL Product Name]** and **[!UICONTROL Product Category]**) and two example metrics (**[!UICONTROL Purchases]** and **[!UICONTROL Purchase Revenue]**). When you go through the instructions, modify these example objects for your specific environment where appropriate.
 
 
 ## Connect and list data views
@@ -75,13 +75,13 @@ This use case sets up the connection from the BI tool to Customer Journey Analyt
    1. Select **[!UICONTROL Connect]**.
 1. In the **[!UICONTROL Navigator]** dialog, the data views are retrieved. This retrieval can take some time. Once retrieved:
    ![Power BI Destkop Server Load Data](assets/powerbi-navigator-load.png)
-   1. Select **[!UICONTROL public.ares_sql_validation]** from the list in the left panel.
+   1. Select **[!UICONTROL public.cc_data_view]** from the list in the left panel.
    1. Select **[!UICONTROL Load]**.
 1. After a while, the available metrics and dimensions are displayed in the **[!UICONTROL Data]** pane.
    ![Power BI Destkop Server Data Loaded](assets/powerbi-navigator-loaded.png)
    
 
->[!TAB Tableau] 
+>[!TAB Tableau Desktop] 
 
 1. Access the required credentials and parameters from the Experience Platform Query Service UI.
 
@@ -112,8 +112,8 @@ This use case sets up the connection from the BI tool to Customer Journey Analyt
    * The name of the database, underneath **[!UICONTROL Database]**.
    * A list of tables, underneath **[!UICONTROL Table]**.
    ![Tableau Connected](assets/tableau-connected.png)
-   1. Drag the **[!UICONTROL ares_sql_validation]** entry and drop the entry on the main view that reads **[!UICONTROL Drag tables]** here.
-1. The main window now displays details of the **[!UICONTROL ares_sql_validation]** data view.
+   1. Drag the **[!UICONTROL cc_data_view]** entry and drop the entry on the main view that reads **[!UICONTROL Drag tables]** here.
+1. The main window now displays details of the **[!UICONTROL cc_data_view]** data view.
    ![Tableau Connected](assets/tableau-validation.png)
       
 >[!ENDTABS]
@@ -163,7 +163,7 @@ In this use case, you want to display a table and simple line visualization that
 
    ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc2-pbi-filter-final.png)
 
->[!TAB Tableau] 
+>[!TAB Tableau Desktop] 
 
 1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
    1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
@@ -221,7 +221,7 @@ Synopsis of use case
 
 Steps
 
->[!TAB Tableau] 
+>[!TAB Tableau Desktop] 
 
 Steps
 
@@ -242,7 +242,7 @@ Synopsis of use case
 
 Steps
 
->[!TAB Tableau] 
+>[!TAB Tableau Desktop] 
 
 Steps
 
@@ -263,7 +263,7 @@ Synopsis of use case
 
 Steps
 
->[!TAB Tableau] 
+>[!TAB Tableau Desktop] 
 
 Steps
 
@@ -284,7 +284,7 @@ Synopsis of use case
 
 Steps
 
->[!TAB Tableau] 
+>[!TAB Tableau Desktop] 
 
 Steps
 
@@ -305,7 +305,7 @@ Synopsis of use case
 
 Steps
 
->[!TAB Tableau] 
+>[!TAB Tableau Desktop] 
 
 Steps
 
@@ -327,7 +327,7 @@ Synopsis of use case
 
 Steps
 
->[!TAB Tableau] 
+>[!TAB Tableau Desktop] 
 
 Steps
 
@@ -349,7 +349,7 @@ Synopsis of use case
 
 Steps
 
->[!TAB Tableau] 
+>[!TAB Tableau Desktop] 
 
 Steps
 
@@ -371,7 +371,7 @@ Synopsis of use case
 
 Steps
 
->[!TAB Tableau] 
+>[!TAB Tableau Desktop] 
 
 Steps
 
@@ -393,7 +393,7 @@ Synopsis of use case
 
 Steps
 
->[!TAB Tableau] 
+>[!TAB Tableau Desktop] 
 
 Steps
 
@@ -415,7 +415,7 @@ Synopsis of use case
 
 Steps
 
->[!TAB Tableau] 
+>[!TAB Tableau Desktop] 
 
 Steps
 
@@ -437,7 +437,7 @@ Synopsis of use case
 
 Steps
 
->[!TAB Tableau] 
+>[!TAB Tableau Desktop] 
 
 Steps
 
@@ -459,7 +459,7 @@ Synopsis of use case
 
 Steps
 
->[!TAB Tableau] 
+>[!TAB Tableau Desktop] 
 
 Steps
 
@@ -481,7 +481,7 @@ Synopsis of use case
 
 Steps
 
->[!TAB Tableau] 
+>[!TAB Tableau Desktop] 
 
 Steps
 
