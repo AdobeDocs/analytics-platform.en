@@ -41,7 +41,7 @@ As part of the visualization settings, specific Summary number options are avail
 >[!CONTEXTUALHELP]
 >id="cja_workspace_summarychange_button"
 >title="Summary change"
->abstract="Create a viisualization that shows the delta (change) between two numbers"
+>abstract="Create a visualization that shows the delta (change) between two numbers"
 
 <!-- markdownlint-enable MD034 -->
 
