@@ -7,7 +7,7 @@ feature: Basics
 hide: yes
 hidefromtoc: yes
 ---
-# Upgrade shortcut: Migrate an AppMeasurement or Analytics extension implementation to use the Web SDK
+# Upgrade shortcut\: Migrate an AppMeasurement or Analytics extension implementation to use the Web SDK
 
 <!-- markdownlint-disable MD034 -->
 
