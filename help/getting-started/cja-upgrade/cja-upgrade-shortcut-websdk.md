@@ -7,7 +7,11 @@ feature: Basics
 hide: yes
 hidefromtoc: yes
 ---
-# Upgrade shortcut to Migrate an AppMeasurement or Analytics extension implementation to use the Web SDK
+# Upgrade shortcut&#58; Migrate an AppMeasurement or Analytics extension implementation to use the Web SDK
+
+>[!NOTE]
+>
+>This documentation should be used as part of the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/).
 
 <!-- markdownlint-disable MD034 -->
 
@@ -17,10 +21,6 @@ hidefromtoc: yes
 >abstract="Instead of sending data through an XDM object, you can send all your variables in AppMeasurement format through the data object. This shortcut allows you to continue using your AppMeasurement logic to send data to Platform."
 
 <!-- markdownlint-enable MD034 -->
-
->[!NOTE]
->
->This documentation should be used as part of the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/).
 
 When upgrading to Customer Journey Analytics, Adobe [recommends a new implementation of the Experience Platform Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). However, depending on several factors, such as timeline and resource constraints, the recommended upgrade steps might not be practical for your organization. 
 
