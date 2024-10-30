@@ -17,6 +17,16 @@ exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_summarydatagroup_hideinreporting"
+>title="Hide in reporting"
+>abstract="Selecting this option will enable the **[!UICONTROL Hide component in reporting]** for that dimension and will prevent the component from showing in Analysis Workspace and other Customer Journey Analytics reporting tools."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 A summary data group creates an association between all dimensions in the grouping and is used to combine dimensions from summary datasets with other dimensions for reporting.
 

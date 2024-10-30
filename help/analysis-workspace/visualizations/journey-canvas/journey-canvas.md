@@ -7,11 +7,9 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 ---
 # Journey canvas overview
 
-{{release-limited-testing}}
-
 The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. It allows you to define a journey from scratch or view one from Journey Optimizer, then see how people left (fell out) or continued through (fell through) the journey. 
 
-You can [build analyses of user journeys](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) by using any combination of events, dimension items, filters, and date ranges to create journey nodes. Connect the nodes to create the journey's flow, and include multiple paths and decision points. Drag nodes on the canvas to rearrange the events and conditions of the journey. Data updates in realtime as you make changes.
+You can [build analyses of user journeys](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) by using any combination of events, dimension items, filters, and date ranges to create journey nodes. Connect the nodes to create the journey's flow, and include multiple paths and decision points. Drag nodes on the canvas to rearrange the events and conditions of the journey. Data updates in real time as you make changes. 
 
 [Nodes are connected](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) as an "eventual path," which means that visitors are counted as long as they eventually move from one node to the other, regardless of any events occurring between the 2 nodes. The time allotted for users to move along the path is determined by the container setting. 
 
@@ -27,7 +25,7 @@ Key features of the Journey canvas visualization include:
 
 * Drag-and-drop interactions for adding components to the canvas and for repositioning existing nodes.
 
-* The option to build analyses of user journeys within Journey canvas or to automatically create them based on Journey Optimizer journeys.
+* The option to build analyses of user journeys within Journey canvas or to create them automatically based on Journey Optimizer journeys.
 
 ## Potential insights
 
@@ -39,7 +37,13 @@ The most prominent insight in Journey canvas is shown as a caption at the top of
 
 This caption summarizes which of all the paths in the journey had the highest conversion rate. 
 
+When the journey contains multiple start nodes, the caption looks like this:
+
 ![Journey canvas insight caption](assets/journey-canvas-caption.png)
+
+When the journey contains a single start node, the caption looks like this: 
+
+![Journey canvas insight caption single start node](assets/journey-canvas-caption-singlestart.png)
 
 Consider the following when interpreting this caption:
 
@@ -126,7 +130,7 @@ Using Journey canvas to analyze journeys that were created in Journey Optimizer 
   
   In Journey Optimizer, you can create audiences only for pre-defined activities.
 
-* Analyze fallthrough and fallout
+* Analyze fallthrough and fallout 
 
 * Break down events with any dimension
 
@@ -170,13 +174,9 @@ This is because, unlike Journey Optimizer, Journey canvas allows you to apply mu
 
 #### Feature differences
 
-After you modify a Journey Optimizer journey in Journey canvas, the functionality might change for the following features, depending on your modifications:
+After you modify a Journey Optimizer journey in Journey canvas, The options that are available in the [!UICONTROL **Arrow settings**] drop-down field change, depending on your modifications. For more information, see [Configure settings](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-* The values shown in the [!UICONTROL **Node type**] field change. 
-
-* The options that are available in the [!UICONTROL **Arrow settings**] drop-down field change.
-
-For more information about these fields, see [Configure settings](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+The [!UICONTROL **Node type**] field is available only in Journey Optimizer. It is not available when viewing a Journey Optimizer journey in Journey canvas, regardless of whether you make modifications to the journey in Journey canvas. 
 
 #### Synchronization differences
 

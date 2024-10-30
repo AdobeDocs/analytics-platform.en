@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **October 2024** | |
+| New information about Request factors in Analysis Workspace Performance | A new [Request factors](/help/technotes/optimizing-performance.md#request-factors) section in the [Optimize Analysis Workspace performance](/help/technotes/optimizing-performance.md) article explains how requests are processed and the various factors that influence processing times. |
 | Workspace and components  | Refreshed the documentation on Analysis Workspace projects (projects, visualizations, and panels) and conponents (annotations, dimensions, (calculated) metrics, filters, date ranges, alerts, scheduled projects and audiences). | 
 | Guided analysis | Updated documentation with the availability of [Guided Analysis](/help/guided-analysis/overview.md) from within Analysis Workspace. |
 | **September 2024** | |
@@ -47,7 +48,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Forecasting statistical techniques | Added article describing the [statistical techniques used in forecasting service](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | Added information recommending Full Table Export for high cardinality dimensions | Added bullet in [Best practices for high cardinality dimensions](/help/components/dimensions/high-cardinality.md) to recommend using Full Table Export for high cardinality dimensions.  |
 | Added documentation on Intelligent Captions in mobile scorecards | [Intelligent Captions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) can help non-analysts better make sense of their data without the help of analysts.  |
-| New documentation for Adobe Product Analytics features |<ul><li>[Feature matrix](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Enhanced [retention rates](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[Enhanced Insights in Funnel](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Compare events within a single Funnel step</li></ul>|
+| New documentation for Adobe Product Analytics features |<ul><li>[Feature matrix](/help/guided-analysis/types/funnel.md)</li><li>Enhanced [Retention](/help/guided-analysis/types/retention.md)</li><li>[Enhanced Insights in Funnel](/help/guided-analysis/types/funnel.md)</li><li>Compare events within a single Funnel step</li></ul>|
 | **March 2024** | |
 | Usage information regarding the "Used in" column is available only starting in September 2023.| Clarified that usage information regarding the **Used in** column on the [projects landing page](/help/getting-started/landing.md) goes back only as far as September 2023.  |
 | Added documentation on permissions enhancement for project-only Workspace components | If you share a project with other users, those users can edit [quick filters](/help/components/filters/quick-filters.md) and other project-only components that are embedded in the shared project.|

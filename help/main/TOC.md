@@ -10,11 +10,11 @@ user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Learn about Adobe Customer Journey Analytics and how to use Analysis Workspace with data from Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
 ---
-
 # Adobe Customer Journey Analytics Guide {#using}
 
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
 + [AI Assistant for Adobe Customer Journey Analytics](../ai-assistant.md)
+
 + Release Notes {#releases}
   + [Latest release](../release-notes/latest.md)
   + [2024 releases](../release-notes/2024.md)
@@ -39,6 +39,16 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Choose your upgrade path](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
     + [Send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
     + [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
+    + [Recommended process](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+    + [Architect your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+    + [Create your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
+    + [Use your existing schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
+    + [Create a dataset](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
+    + [Create a datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
+    + [Add Platform as a service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+    + [Create a connection](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
+    + [Create a data view](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
+    + [Validate data flow](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -212,24 +222,17 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Guided analysis {#guided-analysis}
     + [Overview](../guided-analysis/overview.md)
-    + Feature matrix {#feature-matrix}
-      + [Engagement](../guided-analysis/types/engagement.md)
-    + Funnel {#funnel}
-      + [Friction view](../guided-analysis/types/friction.md)
-      + [Conversion trends view](../guided-analysis/types/conversion-trends.md)
-    + Impact {#impact}
-      + [Release view](../guided-analysis/types/release.md)
-      + [First use view](../guided-analysis/types/first-use.md)
-    + Retention {#retention}
-      + [Retention rates](../guided-analysis/types/retention-rates.md)
-    + Trends {#trends}
-      + [Usage view](../guided-analysis/types/usage.md)
-      + [Frequency view](../guided-analysis/types/frequency.md)
-    + User growth {#user-growth}
-      + [Active view](../guided-analysis/types/active.md)
-      + [Net growth view](../guided-analysis/types/net-growth.md)
-    + User stream {#streams}
-      + [Timeline](../guided-analysis/types/timeline.md)
+    + [Active growth](../guided-analysis/types/active-growth.md)
+    + [Conversion trends](../guided-analysis/types/conversion-trends.md)
+    + [Engagement](../guided-analysis/types/engagement.md)
+    + [First use impact](../guided-analysis/types/first-use-impact.md)
+    + [Frequency](../guided-analysis/types/frequency.md)
+    + [Funnel](../guided-analysis/types/funnel.md)
+    + [Net growth](../guided-analysis/types/net-growth.md)
+    + [Release impact](../guided-analysis/types/release-impact.md)
+    + [Retention](../guided-analysis/types/retention.md)
+    + [Timeline](../guided-analysis/types/timeline.md)
+    + [Trends](../guided-analysis/types/trends.md)
     + [Industry use cases](../guided-analysis/industry-use-cases.md)
     + [FAQ](../guided-analysis/faq.md)
 
@@ -288,7 +291,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Share calculated metrics](../components/calc-metrics/cm-workflow/cm-sharing.md)
       + [Manage calculated metrics](../components/calc-metrics/cm-workflow/cm-manager.md)
       + [Examples](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
-    + [Default calculated metrics](../components/calc-metrics/default-calcmetrics.md)
+    + [Calculated metrics templates](../components/calc-metrics/default-calcmetrics.md)
     + [Basic functions](../components/calc-metrics/cm-functions.md)
     + [Advanced functions](../components/calc-metrics/cm-adv-functions.md)
   + Date ranges {#cja-date-ranges}
@@ -364,9 +367,10 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
     + [Ingest and use Experience Platform audiences ](../use-cases/data-ingestion/ingest-aep-segments.md)
   + Data views {#data-views}
-    + [Data views use cases](../use-cases/data-views/data-views-usecases.md)
-    + [Use binding dimensions and metrics](../use-cases/data-views/binding-dimensions-metrics.md)
-    + [Use summary data](../use-cases/data-views/summary-data.md)
+    + [Data views use cases](/help/use-cases/data-views/data-views-usecases.md)
+    + [Use binding dimensions and metrics](/help/use-cases/data-views/binding-dimensions-metrics.md)
+    + [Use summary data](/help/use-cases/data-views/summary-data.md)
+    + [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md)
   + Data export {#data-export}
     + [Overview](../use-cases/data-export/overview.md)
     + [BI extension](../use-cases/data-export/bi-extension.md)
