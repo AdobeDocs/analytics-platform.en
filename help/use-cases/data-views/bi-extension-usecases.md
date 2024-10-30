@@ -394,45 +394,96 @@ In this use case, you want to display a table and simple bar visualization that 
 1. In the **[!UICONTROL Filters]** pane:
 
    1. Select the **[!UICONTROL daterange is (All)]** from **[!UICONTROL Filters on this visual]**.
-   1. Select **[!UICONTROL Advanced filtering]** as the **[!UICONTROL Filter type]**.
-   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `1/1/2024.` You can use the calendar icon to pick and select dates.
+   1. Select **[!UICONTROL Relative date]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is in the last]** `1` **[!UICONTROL calendar years]**.
    1. Select **[!UICONTROL Apply filter]**.
    
    You see the table updated with the applied **[!UICONTROL daterange]** filter.
 
-1. In the Visualization pane:
+1. In the **[!UICONTROL Visualization]** pane:
 
-   1. Use ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove daterange from Columns
-   1. Drag and drop Sum of purchases_revenue underneath Sum of purchases.
+   1. Use ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL daterange]** from **[!UICONTROL Columns]**.
+   1. Drag and drop **[!UICONTROL Sum of purchases_revenue]** underneath **[!UICONTROL Sum of purchases]**.
 
 1. On the Table visualizaton:
    
-   1. Select Sum of purchase_revenue to sort the product names in desceneding purchase revenue order. Your table should now look like below.
+   1. Select **[!UICONTROL Sum of purchase_revenue]** to sort the product names in descending purchase revenue order. Your table should now look like below.
 
-      ![Power BI Desktop Use Case 5 Table status](assets/uc5-pbi-table.png)
+   You should notice a discrepancy between what Customer Journey Analytics reports in the Freeform table in Analysis Workspace and what Power BI Desktop reports in this table visualization. This is due to (need some explanation here).
+   
+   ![Power BI Desktop Use Case 5 Table status](assets/uc5-pbi-table.png)
+    
+   To fix this.
+
+1. In the **[!UICONTROL Filters]** pane:
+
+   1. Select **[!UICONTROL product_name is (All)]**.
+   1. Set Filter type to Top N.
+   1. Define the filter to **[!UICONTROL Show items]** **[!UICONTROL Top]** **[!UICONTROL 10]** **[!UICONTROL By value]**.
+   1. Drag and drop **[!UICONTROL purchase_revenue]** into **[!UICONTROL By value]** **[!UICONTROL Add data fields here]**.
+   1. Select **[!UICONTROL Apply filter]**.
+
+   You see the table updated with values for purchase revenue in sync with the Freeform table visualization in Analysis Workspace.
 
 1. In the **[!UICONTROL Visualizations]** pane:
 
-   1. Select the **[!UICONTROL Line chart]** visualization.
+   1. Select the **[!UICONTROL Stacked column chart]** visualization.
 
-   A line chart visualization replaces the table while using the same data as the table.
+   A stacked column chart visualization replaces the table while using the same data as the table.
 
-   ![Power BI Desktop Use Case 2 Date range filter](assets/uc4-pbi-filter-daterange.png)
+   ![Power BI Desktop Use Case 5 Graph](assets/uc5-pbi-chart.png)
 
-1. On the Line chart visualization:
+1. On the stacked column chart visualization:
 
    1. Select ![More](/help/assets/icons/More.svg).
    1. From the context menu, select **[!UICONTROL Show as a table]**.
 
    The main view is updated to show both a line visualization and a table.
 
-   ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc4-pbi-filter-final.png)
+   ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc5-pbi-final.png)
 
-Steps
+>[!TAB Tableau Desktop]
 
->[!TAB Tableau Desktop] 
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `01/01/2024`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
 
-Steps
+      ![Tableau Desktop Filter](assets/uc4-tableau-filter.png)
+
+   1. Drag and drop **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**.
+   1. Drag and drop **[!UICONTROL Purchases]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**.
+      * The values is automatically converted to **[!UICONTROL SUM(Purchases)]**.
+   1. Drag and drop **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]** and left from **[!UICONTROL SUM(Purchases)]**.
+      * The values is automatically converted to **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. To order both charts in descending purchase revenue order, hover over the Purchase Revenue title and select the sort icon.
+   1. To limit the number of entries in the charts, select SUM(Purchase Revenue) in Rows and from the dropdown menu select Filter.
+   1. In the **[!UICONTROL Filter \[Purchase Revenue\]]** dialog select **[!UICONTROL Range of values]** and enter appropriate values. For our example: `1,000,000` - `2,000,000`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the dropdown menu in the toolbar.
+
+   Your Sheet 1 view should look like below.
+
+   ![Tableau Desktop Graph](assets/uc5-tableau-graph.png)
+
+1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
+1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Data`.
+1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1 (2)]** tab context menu to rename the sheet to `Graph`.
+1. Ensure that the **[!UICONTROL Data]** sheet is selected. In the Graph view:
+   1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table ]** (upper left top visualization) to modify the content of the two charts to a table.
+   1. To order purchase revenue in descending order, hover over Purchase Revenue in the table and select ![SortOrderDown](/help/assets/icons/SortOrderDown.svg).
+
+   Your **[!UICONTROL Data]** view should look like below.
+
+   ![Tableau Desktop Data](assets/uc5-tableau-data.png)
+
+1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
+   1. Drag and drop the **[!UICONTROL Graph]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
+   1. Drag and drop the **[!UICONTROL Data]** sheet from the **[!UICONTROL Sheets]** shelf below the **[!UICONTROL Graph]** sheet onto the **[!UICONTROL Dashboard 1]** view.
+   1. Select the **[!UICONTROL Data]** sheet in the view and modify **[!UICONTROL Entire View]** to **[!UICONTROL Fix Width]**.
+
+   Your **[!UICONTROL Dashboard 1]** view should look like below.
+
+   ![Tableau Desktop Dashboard 1](assets/uc5-tableau-dashboard.png)
 
 >[!ENDTABS]
 
