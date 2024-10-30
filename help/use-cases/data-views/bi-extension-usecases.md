@@ -137,8 +137,8 @@ In this use case, you want to display a table and simple line visualization that
 >[!TAB Power BI Desktop] 
 
 1. In the **[!UICONTROL Data]** pane:
-   1. Select the **[!UICONTROL daterangeday]** dimension.
-   1. Select the **[!UICONTROL occurrences]** metric.
+   1. Select **[!UICONTROL daterangeday]**.
+   1. Select **[!UICONTROL ∑ occurrences]**.
    
    You see a table displaying the occurrences for the current month. For better visibility, enlarge the table visualization.
 
@@ -292,8 +292,8 @@ In this use case, you want to display a table and simple line visualization that
 >[!TAB Power BI Desktop] 
 
 1. In the **[!UICONTROL Data]** pane:
-   1. Select the **[!UICONTROL daterangemonth]** dimension.
-   1. Select the **[!UICONTROL occurrences]** metric.
+   1. Select **[!UICONTROL daterangemonth]**.
+   1. Select **[!UICONTROL ∑ occurrences]**.
    
    You see a table displaying the occurrences for the current month. For better visibility, enlarge the table visualization.
 
@@ -370,7 +370,7 @@ In this use case, you want to display a table and simple line visualization that
 
 ## Single dimension ranked
 
-Synopsis of use case
+In this use case, you want to display a table and simple bar visualization that shows the purchases and purchases revenue for product names over 2023.
 
 +++ Details
 
@@ -382,6 +382,51 @@ Synopsis of use case
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop] 
+
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL daterange]**.
+   1. Select **[!UICONTROL product_name]**.
+   1. Select **[!UICONTROL ∑ purchase_revenue]**.
+   1. Select **[!UICONTROL ∑ purchases]**.
+   
+   You see an empty table displaying only the column headers for the selected element. For better visibility, enlarge the table visualization.
+
+1. In the **[!UICONTROL Filters]** pane:
+
+   1. Select the **[!UICONTROL daterange is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Advanced filtering]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `1/1/2024.` You can use the calendar icon to pick and select dates.
+   1. Select **[!UICONTROL Apply filter]**.
+   
+   You see the table updated with the applied **[!UICONTROL daterange]** filter.
+
+1. In the Visualization pane:
+
+   1. Use ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove daterange from Columns
+   1. Drag and drop Sum of purchases_revenue underneath Sum of purchases.
+
+1. On the Table visualizaton:
+   
+   1. Select Sum of purchase_revenue to sort the product names in desceneding purchase revenue order. Your table should now look like below.
+
+      ![Power BI Desktop Use Case 5 Table status](assets/uc5-pbi-table.png)
+
+1. In the **[!UICONTROL Visualizations]** pane:
+
+   1. Select the **[!UICONTROL Line chart]** visualization.
+
+   A line chart visualization replaces the table while using the same data as the table.
+
+   ![Power BI Desktop Use Case 2 Date range filter](assets/uc4-pbi-filter-daterange.png)
+
+1. On the Line chart visualization:
+
+   1. Select ![More](/help/assets/icons/More.svg).
+   1. From the context menu, select **[!UICONTROL Show as a table]**.
+
+   The main view is updated to show both a line visualization and a table.
+
+   ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc4-pbi-filter-final.png)
 
 Steps
 
