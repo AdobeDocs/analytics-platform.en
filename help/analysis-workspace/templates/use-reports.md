@@ -286,7 +286,7 @@ The following templates are available:
 | Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
 | [!UICONTROL **Call Center Dashboard**] | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md) | 
-| **POS/Offline** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
+| **POS/Offline** | View point-of-sale (POS) and offline transaction data.<p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
 | **Email/AJO** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
 | **Survey** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the [Page dimension](/help/components/dimensions/page.md)  |
 
