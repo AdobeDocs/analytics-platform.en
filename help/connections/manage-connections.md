@@ -200,37 +200,61 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 
 ## Usage
 
-The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage UI to plan your Customer Journey Analytics license renewal.
+The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage interface to plan your Customer Journey Analytics license renewal.
 
-You can select a time range (between last 6 months, year to date, or last 2 Years) and an interval (between monthly or quarterly) to monitor Customer Journey Analytics usage. The interface is divided into two sections:
+The Usage interface consists of two panels:
 
-* Ingested rows: total rows ingested/sent from event datasets across all Customer Journey Analytics Connections, including records skipped during ingestion
-* Reportable rows: total reportable rows that include all events data across all Customer Journey Analytics Connections
+* The **[!UICONTROL Key Usage Metrics]** panel: provides core and historical data reportable rows. The panel also tracks percentage changes compared to the previous month for both core and historical data rows.
+  
+  The panel displays two visualizations: 
+  
+  * **[!UICONTROL Core data reportable rows (Under 13 months)]**.
+  * **[!UICONTROL Historical data reportable rows (Over 13 months)]**.
 
-![usage-view](assets/usage-view.png)
+  You can hover over data points in the visualizations to display a popup with more detais.
 
-Select the **[!UICONTROL Usage]** tab to access the interface.
+  ![Key Usage Metrics](assets/usage-key-usage-metrics.png)
 
-### Report on usage
+* A combined panel, showing three subpanels for:
 
-1. Select a **[!UICONTROL Time range]**. You can select between **[!UICONTROL Last 6 months]**, **[!UICONTROL Year to date]**, or **[!UICONTROL Last 2 Years]**.
-1. Select an **[!UICONTROL Interval]**. You can select between **[!UICONTROL Monthly]** or **[!UICONTROL Quarterly]**.
+  +++ Ingested rows
 
-For [!UICONTROL Ingested rows]:
+  The **[!UICONTROL Ingested rows]** subpanel measures the total number of records added to the system each month, providing insight into data growth and ingestion rates. The subpanel shows details for **[!UICONTROL Total ingested rows]** and **[!UICONTROL Monthly ingested rows]**.
 
-* A panel displays the total ingested rows that include all the events data across all the connections updated on every 2nd day of a month. Within the panel: 
-  * a box displays the number of ingested rows for the last month and the change in % (indicated by ▲ or ▼) from the previous month.
-  * a line graph displays the ◼︎ [!UICONTROL Monthly ingested rows].<br/>To see a popup that displays the number of monthly ingested rows for a month, hover over any data point in the line graph.
+  ![Ingested rows](assets/usage-ingested-rows.png)
 
+  You can hover over data points in the visualizations to display a popup with more detais.
 
-For [!UICONTROL Reportable rows]:
+  +++
 
-* A panel displays total reportable rows that include all the events data across all the connections updated on every 2nd day of a month. Within the panel:
-  * a box displays the cumulative total number of reportable rows.
-  * a box displays the total number of reportable rows for the last month and the change in % (indicated by ▲ or ▼) from the previous month.
-  * a line graph displays the ◼︎ [!UICONTROL Monthly reportable rows].<br/>To see a popup that displays the number of cumulative reportable rows for a specific month, hover over any data point in the line graph.
-  * a line graph displays the ◼︎ [!UICONTROL Cumulative reportable rows].<br/>To see a popup that displays the number of monthly reportable rows for a month, hover over any data point in the line graph.
+  +++ Reportable rows
 
+  The **[!UICONTROL Reportable rows]** visualization tracks the number of rows available for reporting by subtracting skipped and deleted rows from ingested rows, serving as a key metric for billing and data usage. The subpanel shows details for **[!UICONTROL Total ingested rows]** and **[!UICONTROL Monthly ingested rows]**.
+
+  ![Reportable rows](assets/usage-reportable-rows.png)
+
+  You can hover over data points in the visualizations to display a popup with more detais.
+
+  +++
+
+  +++ Detail breakdown
+
+  You can use the **[!UICONTROL Detail breakdown]** table to view detailed metrics by connection, dataset, sandbox, and tags/
+
+  * To change the breakdown, select a combination for **[!UICONTROL View by]** and B**[!UICONTROL reakdown by]**.
+
+    | **[!UICONTROL View by]** options | **[!UICONTROL Breadown by]** options |
+    |---|---|
+    | **[!UICONTROL Connection]** | **[!UICONTROL -]** and **[!UICONTROL Dataset]** |
+    | **[!UICONTROL Dataset]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Connection]** | 
+    | **[!UICONTROL Tag]** | **[!UICONTROL Connection]** | 
+
+  ![Detail breakdown](assets/usage-detail-breakdown.png)
+
+  +++
+
+  You can define a Time range in monhts to report on. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
 
 >[!MORELIKETHIS]
 >
