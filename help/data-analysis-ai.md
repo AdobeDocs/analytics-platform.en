@@ -13,7 +13,18 @@ The Data Analysis AI Assistant is an intelligent, context-aware conversation age
 
 ## In-scope vs. out-of-scope features for the Alpha version
 
-TBD
+Features included:
+
+- Build and update visualizations
+- Line, Multi-line, Freeform, Bar, Donut, Summary number visualizations
+- Out-of-scope prompt detection
+- Clarifying questions for broad user prompts (e.g. site visits last month)
+- Multi-turn - Responds to context from prior prompts
+- Feedback
+
+Out-of-scope features:
+
+
 
 ## Feature access in the Customer Journey Analytics UI
 
