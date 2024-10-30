@@ -254,7 +254,7 @@ The Usage interface consists of two panels:
 
   +++
 
-  You can define a Time range in months to report on. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
+  You can define a **[!UICONTROL Time range]** in months to report on. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
 
 >[!MORELIKETHIS]
 >
