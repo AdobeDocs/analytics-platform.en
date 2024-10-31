@@ -72,8 +72,6 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 1. Open a Workspace project.
 
-1. 
-
 
 ## Example Data analysis prompts
 
