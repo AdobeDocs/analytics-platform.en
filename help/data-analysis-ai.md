@@ -9,7 +9,9 @@ hide: yes
 
 # Data Analysis AI Assistant in Customer Journey Analytics - Alpha
 
-The Data Analysis AI Assistant is an intelligent, context-aware conversation agent that can help you more quickly and efficiently answer questions you may have of your Analysis Workspace data in Customer Journey Analytics. The Assistant looks through all the data in a data view, including the different types of metrics and components, and translates your prompt into the right dimension, metric, and date range for this analysis. Instead of having to familiarize yourself with the data view components, and then drag and drop those components in the best combination to answer your question, you can simply type the question into the AI Assistant. 
+The Data Analysis AI Assistant is an intelligent, context-aware conversation agent that can help you more quickly and efficiently answer questions you may have of your Analysis Workspace data in Customer Journey Analytics. 
+
+The Assistant looks through all the data in a data view, including the different types of metrics and components, and translates your prompt into the right dimension, metric, and date range for this analysis. Instead of having to familiarize yourself with the data view components, and then drag and drop those components in the best combination to answer your question, you can simply type the question into the AI Assistant. 
 
 ## In-scope vs. out-of-scope features for the Alpha version
 
@@ -31,15 +33,53 @@ Out-of-scope features:
 | In-line summary or or response | The AI Assistant cannot respond in-line in the chat rail with a summary answer of a user prompt.Example out-of-scope prompts:<ul><li>*Give me a summary of the insights from my last prompt.*</li><li>*Summarize the highlights from the line visualization.*</li></ul> |
 | Clarifying questions | Clarifying questions are limited to components and dimension items. The AI Assistant cannot clarify data views, visualizations, data granularity, comparison, scope, etc.. Without clarifying questions, the Assistant defaults to what the user is most likely asking for. If it returns an unexpected visualization or data granularity, the user can then use the multi-turn/update capability to adjust the visualization and data. |
 | Workspace Actions / Capabilities | The AI Assistant cannot take actions for a user in Workspace aside from building and updating visualizations. For example, it cannot do any the following:<ul><li>Contextual action UI buttons (add to chart, new panel, new table)</li><li>Share</li><li>Export</li><li>Download</li><li>Manage user preferences</li><li>Curate</li><li>Manage data view</li><li>Analytics Dashboards app</li><li>Attribution</li></ul> |
-| Unsupported visualization types | 
+| Unsupported visualization types | <ul><li>Flow</li><li>Fallout</li><li>Cohort Table</li><li>Area, Area Stacked</li><li>Bar stacked</li><li>Bullet</li><li>Combo</li><li>Histogram</li><li>Horizontal Bar, Horizontal Bar Stacked</li><li>Key Metric Summary</li><li>Scatter</li><li>Summary Change</li><li>Text</li><li>Treemap</li><li>Venn</li></ul> | 
+| Explainability and Verifiability | Transparent description or citation for how the AI Assistant generated a response, and providing you with a way to confirm that the answer is correct. |
 
 ## Feature access in the Customer Journey Analytics UI
 
-TBD
+[Do we even need this section for the Alpha?]
+
+The following parameters govern access to the Data Analysis AI Assistant feature:
+
+* **Solution access**: The Data Analysis AI Assistant is available for Customer Journey Analytics Prime and Ultimate customers. It is not available in Adobe Analytics. 
+
+It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP and additional Experience Platform apps.
+
+* **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before your organization can use Data Analysis AI Assistant, your must agree to certain GenAI-related legal terms.
+
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Data Analysis]** permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
+   1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
+   1. Select the title of the product profile for which you want to provide access to [!UICONTROL AI Assistant: Product Knowledge].
+   1. In the specific product profile, select **[!UICONTROL Permissions]**.
+   1. Select ![Edit](/help/assets/icons/Edit.svg) to edit **[!UICONTROL Reporting Tools]**.
+   1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) to add **AI Assistant: Data Analysis** to **[!UICONTROL Included permission items]**.
+   
+      ![Add permission](assets/ai-assistant-permissions.png).
+
+   1. Select **[!UICONTROL Save]** to save the permissions.
+
+See [Access control](/help/technotes/access-control.md#access-control) for more information.
+
+## Access Data Analysis AI Assistant
+
+
+
+
+## Use Data Analysis AI Assistant
+
+1. In Customer Journey Analytics, navigate to the provisioned sandbox.
+
+1. Open a Workspace project.
+
+1. 
+
 
 ## Example Data analysis prompts
 
-Here are some examples of how the AI Assistent responds to prompts:
+Here are some examples of how the AI Assistent responds to prompts, and the expected visualizations:
+
+
 
 ## Prompting best practices
 
