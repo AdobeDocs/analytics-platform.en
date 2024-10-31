@@ -1,9 +1,10 @@
 ---
-description: An overview of how to use default reports in Analysis Workspace.
+description: An overview of how to use default templates in Analysis Workspace.
 title: Use templates
 feature: Analysis Workspace
 role: User, Admin
-exl-id: 0d43fa5e-9167-4af7-891d-e49b0249bca2
+hide: yes
+hidefromtoc: yes
 ---
 # Use templates
 
