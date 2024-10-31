@@ -1,7 +1,7 @@
 ---
 description: An overview of how to use default templates in Analysis Workspace.
 title: Use templates
-feature: Analysis Workspace
+feature: Workspace Basics
 role: User, Admin
 hide: yes
 hidefromtoc: yes
