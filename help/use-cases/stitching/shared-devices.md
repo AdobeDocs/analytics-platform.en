@@ -119,7 +119,7 @@ To understand the shared device exposure, you can think about performing the fol
 
 2. **Attribution of events to shared devices**
     
-   For the shared devices identified, determine how many events out of the total can be attributed to these devices. This attribition provides insight into the impact shared devices have on your data and the implications for analysis.
+   For the shared devices identified, determine how many events out of the total can be attributed to these devices. This attribution provides insight into the impact shared devices have on your data and the implications for analysis.
 
    ```sql
    SELECT COUNT(*) AS total_events,
