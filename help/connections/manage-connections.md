@@ -200,7 +200,15 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 
 ## Usage
 
-The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage interface to plan your Customer Journey Analytics license renewal.
+The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. If not selected, select the **[!UICONTROL Usage]** tab to access the interface.
+
+This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage interface to plan your Customer Journey Analytics license renewal.
+
+>[!NOTE]
+>
+>Data is collected, starting from July 2024 for the core, historical, and total records. Reach out to your account manager for earlier historical data.
+>
+
 
 The Usage interface consists of two panels:
 
@@ -239,7 +247,7 @@ The Usage interface consists of two panels:
 
   +++ Detail breakdown
 
-  You can use the **[!UICONTROL Detail breakdown]** table to view detailed metrics by connection, dataset, sandbox, and tags/
+  You can use the **[!UICONTROL Detail breakdown]** table to view detailed metrics by connection, dataset, sandbox, and tags. Datasets are reported using ids instead of names, as dataset names can be modified during a reporting period.
 
   * To change the breakdown, select a combination for **[!UICONTROL View by]** and B**[!UICONTROL Breakdown by]**.
 
