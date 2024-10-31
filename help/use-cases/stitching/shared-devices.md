@@ -3,8 +3,6 @@ title: Shared devices
 description: Explanation of how to handle shared devices using stitching and other techniques.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-hide: yes
-hidefromtoc: yes
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
 ---
