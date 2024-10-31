@@ -3,8 +3,6 @@ title: Shared devices
 description: Explanation of how to handle shared devices using stitching and other techniques.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-hide: yes
-hidefromtoc: yes
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
 ---
@@ -61,7 +59,7 @@ When last-auth attribution is used in stitching, Stitched IDs resolve as shown i
 
 ### Device-split 
 
-Device-split attributes anonymous activity from a shared device to the user in closest proximity to the anonymous activity. Device-split is the preferred approach for analytical use cases since device-split gives credit for both unauthenticated and authenticated activity to the closest known person. Device-split is currently used in field-based stitching.
+Device-split attributes anonymous activity from a shared device to the user in closest proximity to the anonymous activity. Device-split is currently used in field-based stitching.
 
 When device-split attribution is used in stitching, Stitched IDs resolve as shown in the table below. 
 
