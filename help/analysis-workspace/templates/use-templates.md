@@ -40,7 +40,7 @@ The following information describes how to access and use templates from the [!U
    >
    >To navigate the menu using the arrow keys, press the Forward Slash key (/), and then press the Down Arrow key. Press Enter to load the selected template.
 
-   For a list of templates that are available, see the [Available templates](#available-reports) section below.
+   For a list of templates that are available, see the [Available templates](#available-templates) section below.
 
 1. (Optional) View and use templates that contain components that are not available in your data view. (By default, the only templates shown are those that use components that are available in your data view.)
 
@@ -68,7 +68,7 @@ To customize and save a template:
 
 1. Select the template you want to view. For example, under [!UICONTROL **Most popular**], select the [!UICONTROL **Pages**] report.
 
-   The Pages template, as displayed in Analysis Workspace, shows two [visualizations](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md) ([Bar chart](/help/analyze/analysis-workspace/visualizations/bar.md) and [Summary number](/help/analyze/analysis-workspace/visualizations/summary-number-change.md)) and a [Freeform table](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md). The metric used is Occurrences.
+   The Pages template, as displayed in Analysis Workspace, shows two [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) ([Bar chart](/help/analysis-workspace/visualizations/bar.md) and [Summary number](/help/analysis-workspace/visualizations/summary-number-change.md)) and a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). The metric used is Occurrences.
 
    ![Pages template](assets/pages-report.png)
 
@@ -81,7 +81,7 @@ To customize and save a template:
 
 1. (Optional) Save the template as a project by selecting [!UICONTROL **Project**] > [!UICONTROL **Save**].
 
-   The template is saved as a new project; it does not modify the existing report. For more information about saving a report as a project, see [Save projects](/help/analyze/analysis-workspace/build-workspace-project/save-projects.md).
+   The template is saved as a new project; it does not modify the existing report. For more information about saving a report as a project, see [Save projects](/help/analysis-workspace/build-workspace-project/save-projects.md).
 
 ## Available templates
 
