@@ -425,15 +425,6 @@ The following templates are available:
 
 <!-- markdownlint-enable MD034 -->
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_template_purchase_conversion_funnel"
->title="Purchase Conversion Funnel template"
->abstract=""
-
-<!-- markdownlint-enable MD034 -->
-
 The following templates are available:
 
 | Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
