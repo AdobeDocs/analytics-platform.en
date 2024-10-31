@@ -120,7 +120,7 @@ After you create and publish an audience in Customer Journey Analytics, the audi
 
 * The audience in Platform shares the same name and description as the Customer Journey Analytics audience. The name is appended with the Customer Journey Analytics audience ID to ensure that the audience is unique.
 * Any changes made to the name or description of the audience in Customer Journey Analytics are reflected in Experience Platform.
-* If an audience is deleted in Customer Journey Analytics, the audience continues to be available in Experience Platform.
+* If an audience is deleted in Customer Journey Analytics, the audience continues to be available in Experience Platform until the profile membership of the audience expires. The profile membership expires after 420 days for one-time audiences and after 16 days for recurring audiences.
 
 ## Latency considerations {#latency}
 

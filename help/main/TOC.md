@@ -14,6 +14,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
 + [AI Assistant for Adobe Customer Journey Analytics](../ai-assistant.md)
++ [Data Analysis AI Assistent for Customer Journey Analytics](../data-analysis-ai.md)
 
 + Release Notes {#releases}
   + [Latest release](../release-notes/latest.md)
