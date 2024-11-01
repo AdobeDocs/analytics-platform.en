@@ -91,12 +91,12 @@ Depending on your organization's unique environment and requirements, these reco
    
    | Adobe Analytics feature | Implementation requirements for Customer Journey Analytics  | Additional information |
    |---------|----------|---------|
-   | Classification data | [Create a lookup dataset for each dimension containing classification data]() |  |
-   | Components and projects | [Migrate projects and components](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration) |  |
+   | Classification data | [Create a lookup dataset for each dimension containing classification data](). |  |
+   | Components and projects | [Migrate projects and components](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration). |  |
    | Activity map overlay and link tracking | N/A | Adobe is currently working on Activity Map overlay support for Customer Journey Analytics. |
-   | Marketing channels | [Create a marketing channel derived field]() |  |
-   | Data Feeds | No configuration required during implementation.<br/>[Learn about the various export options in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/export-project-overview) | While a direct replacement for Data Feeds is not yet available in Customer Journey Analytics, you can export Customer Journey Analytics reports from Analysis Workspace for use in third-party tools or to combine with outside data. |
-   | Data Warehouse | No configuration required during implementation.<br/>[Learn about Full Table Export in Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) | Customer Journey Analytics Full Table Export is the evolution of Data Warehouse reports in Adobe Analytics, with many new, often-requested features that are not available in Data Warehouse today. |
+   | Marketing channels | [Create a marketing channel derived field](). |  |
+   | Data Feeds | No configuration required during implementation.<br/>[Learn about the various export options in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/export-project-overview). | While a direct replacement for Data Feeds is not yet available in Customer Journey Analytics, you can export Customer Journey Analytics reports from Analysis Workspace for use in third-party tools or to combine with outside data. |
+   | Data Warehouse | No configuration required during implementation.<br/>[Learn about Full Table Export in Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md). | Customer Journey Analytics Full Table Export is the evolution of Data Warehouse reports in Adobe Analytics, with many new, often-requested features that are not available in Data Warehouse today. |
    | Streaming Media data |  |  |
 
 1. (Optional) Bring historical data from Adobe Analytics using the Analytics source connector.  
@@ -127,7 +127,7 @@ Depending on your organization's unique environment and requirements, these reco
 
    +++ API
 
-   1. Use the Edge Network API to send data to the desired datastream
+   1. Use the Edge Network API to send data to the desired datastream.
 
    +++
 
@@ -135,7 +135,7 @@ Depending on your organization's unique environment and requirements, these reco
 
 1. [Create a data view in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md).
 
-1. [Validate that data is flowing in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
+1. [Validate that data is flowing into Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
 
 1. Disable AppMeasurement data collection.
 
