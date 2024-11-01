@@ -71,30 +71,67 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
    ![AI Assistant icon](/help/assets/ai-asst-icon.png)
 
-1. In the **[!UICONTROL Ask about Customer Journey Analytics]** dialog at the bottom, ask your first data analysis question in the AI Assistant.
+1. In the **[!UICONTROL Ask about Customer Journey Analytics]** dialog at the bottom, ask a data analysis question in the AI Assistant.
 
-   For example, let's say you are interested in the orders your business received in July. So you could enter "Show orders in July."
+### Example 1
+
+For example, let's say you are interested in the orders your business received in July. 
+
+1. Enter "Show orders in July."
 
    ![AI prompt](/help/assets/ai-asst-prompt1.png)
 
-1. 
+1. The AI Assistant now gathers insights by looking through the data in the data view, including the metrics and components. It translates the prompt into the right dimension/s, metric/s, and data range.
 
+   As you can see, it has automatically generated a Line graph and a freeform table showing orders for July.
 
-## Example Data analysis prompts
+   ![Answer to prompt - line graph and freeform table](/help/assets/ai-asst-result.png)
 
-Here are some examples of how the AI Assistent responds to prompts, and the expected visualizations:
+### Example 2
+
+Next, you want to see how your revenue compares by region.
+
+1. In the prompt window, enter "Show revenue by region."
+
+2. The AI is smart enough to understand that by "region", you mean "customer region". It produces a bar chart that best shows revenue by region:
+
+   ![Bar chart](/help/assets/ai-asst-result2.png)
+
+### Example 3
+
+Now, let's look at revenue by product category.
+
+1. In the prompt window, enter "Show revenue by product category".
+
+2. Again, the Data Analysis AI Assistant picks the most appropriate visualization, in this case the **[!UICONTROL Donut]** visualization, to answer the question.
+
+   ![Donut](/help/assets/ai-asst-result3.png)
+
+### Example 4
+
+Finally, you want to know which SKU is the most profitable, and where you should invest marketing resources.
+
+1. In the prompt window, ask "What is the profit across SKUs from February to May."
+
+1. A simple **[!UICONTROL Bar]** chart provides the most concise answer:
+
+   ![Bar chart](/help/assets/ai-asst-result4.png)
+
+## Example data analysis prompts
+
+Here are some examples of common prompts, and which visualization the AI Assistent uses to respond to those prompts.
 
 | Example prompt | Expected visualization |
 | --- | --- |
-| Show me profits in [Month] | Line<p>Asking for a trend or metric by a certain time range will by default return a line visualization. |
+| Show me profits in [Month] | Line<p>Asking for a trend or metric within a certain time range by default returns a line visualization. |
 | Trend orders in [Month] | Line |
-| Show revenue by region  in [Month] | Bar |
+| Show revenue by region in [Month] | Bar |
 | Share of revenue by product category | Donut |
-| Orders by day of week from January to May | Bar |
-| Show orders by gender from March to June | Bar |
+| Orders by day of week, from January to May | Bar |
+| Show orders by gender, from March to June | Bar |
 | What is the profit across SKUs from February to May | Bar |
 | Revenue by store name in [Month] | Bar |
-| What were my top 10 skus by profit in [Month]? | Bar |
+| What were my top 10 SKUs by profit in [Month]? | Bar |
 | Proportion of purchases by month of year | Donut |
 | Total profit in [Month] | Summary Number<p>Asking for the "total" of a metric across a certain time range should return a Summary number visualization. |
 
@@ -105,8 +142,18 @@ TBD
 
 ## Alpha testing expectations and requested feedback
 
+After posing each question, carefully review the assistant's provided answer. It's crucial to evaluate the generated visualizations comprehensively before providing feedback.
 
+Evaluate the response: is the answer given correct? 
 
+If the Assistant responds in the chat rail: Evaluate the textual response.
+- If a visualization/chart is shown: evaluate the visualization. Is it the appropriate/expected visualization for your question? 
+- If a freeform table is shown: Evaluate the freeform table. Is the freeform table data correct? Is it breaking down data where requested? Are the applied filters those that you requested or expected? 
+- If a generic error message is given saying the question is out-of-scope, provide feedback on whether you think the out-of-scope message is appropriate given your prompt. Was your prompt actually in-scope? 
+
+For every response, give a thumbs up or thumbs down, based on the response
+
+Following the thumbs up/down selection, please make a selection for the relevant multi-select feedback boxes. If you want to provide additional feedback, add notes in the open text box.
 
 ## Questions and Contact
 
