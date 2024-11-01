@@ -148,11 +148,11 @@ Evaluate the response: is the answer given correct?
 
 If the Assistant responds in the chat rail: Evaluate the textual response.
 
-- If a visualization/chart is shown: evaluate the visualization. Is it the appropriate/expected visualization for your question? 
+* If a visualization/chart is shown: evaluate the visualization. Is it the appropriate/expected visualization for your question? 
 
-- If a freeform table is shown: Evaluate the freeform table. Is the freeform table data correct? Is it breaking down data where requested? Are the applied filters those that you requested or expected? 
+* If a freeform table is shown: Evaluate the freeform table. Is the freeform table data correct? Is it breaking down data where requested? Are the applied filters those that you requested or expected? 
 
-- If a generic error message is given saying the question is out-of-scope, provide feedback on whether you think the out-of-scope message is appropriate given your prompt. Was your prompt actually in-scope? 
+* If a generic error message is given saying the question is out-of-scope, provide feedback on whether you think the out-of-scope message is appropriate given your prompt. Was your prompt actually in-scope? 
 
 For every response, give a thumbs up or thumbs down, based on the response
 
