@@ -14,6 +14,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
 + [AI Assistant for Adobe Customer Journey Analytics](../ai-assistant.md)
++ [Data Analysis AI Assistent for Customer Journey Analytics](../data-analysis-ai.md)
 
 + Release Notes {#releases}
   + [Latest release](../release-notes/latest.md)
@@ -129,6 +130,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Hotkeys (Shortcuts)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Color palettes](../analysis-workspace/build-workspace-project/color-palettes.md)
     + [View density](../analysis-workspace/build-workspace-project/view-density.md)
+  + [Use templates](../analysis-workspace/templates/use-templates.md)
   + Visualizations {#visualizations}
     + [Overview](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
     + [Manage data sources](../analysis-workspace/visualizations/t-sync-visualization.md)
