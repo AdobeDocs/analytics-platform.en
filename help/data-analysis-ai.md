@@ -31,7 +31,7 @@ Out-of-scope features:
 | Unsupported Feature | Description |
 | --- | --- |
 | In-line summary or or response | The AI Assistant cannot respond in-line in the chat rail with a summary answer of a user prompt.Example out-of-scope prompts:<ul><li>*Give me a summary of the insights from my last prompt.*</li><li>*Summarize the highlights from the line visualization.*</li></ul> |
-| Clarifying questions | Clarifying questions are limited to components and dimension items. The AI Assistant cannot clarify data views, visualizations, data granularity, comparison, scope, etc.. Without clarifying questions, the Assistant defaults to what the user is most likely asking for. If it returns an unexpected visualization or data granularity, the user can then use the multi-turn/update capability to adjust the visualization and data. |
+| Clarifying questions | Clarifying questions are limited to components and dimension items. The AI Assistant cannot clarify data views, visualizations, data granularity, comparison, scope, etc.. Without clarifying questions, the Assistant defaults to what you are most likely asking for. If it returns an unexpected visualization or data granularity, you can then use the multi-turn/update capability to adjust the visualization and data. |
 | Workspace Actions / Capabilities | The AI Assistant cannot take actions for a user in Workspace aside from building and updating visualizations. For example, it cannot do any the following:<ul><li>Contextual action UI buttons (add to chart, new panel, new table)</li><li>Share</li><li>Export</li><li>Download</li><li>Manage user preferences</li><li>Curate</li><li>Manage data view</li><li>Analytics Dashboards app</li><li>Attribution</li></ul> |
 | Unsupported visualization types | <ul><li>Flow</li><li>Fallout</li><li>Cohort Table</li><li>Area, Area Stacked</li><li>Bar stacked</li><li>Bullet</li><li>Combo</li><li>Histogram</li><li>Horizontal Bar, Horizontal Bar Stacked</li><li>Key Metric Summary</li><li>Scatter</li><li>Summary Change</li><li>Text</li><li>Treemap</li><li>Venn</li></ul> | 
 | Explainability and Verifiability | Transparent description or citation for how the AI Assistant generated a response, and providing you with a way to confirm that the answer is correct. |
@@ -61,22 +61,40 @@ It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adob
 
 See [Access control](/help/technotes/access-control.md#access-control) for more information.
 
-## Access Data Analysis AI Assistant
+## Access and use Data Analysis AI Assistant
 
+1. Go to this link to open Workspace in the Labs IMS Org (in stage), and login with your Adobe ID.
 
+1. Click **[!UICONTROL Blank project]** in the banner at the top of the projects page to open a new blank project.
 
+1. Click the AI Assistant chat icon at the top right.
 
-## Use Data Analysis AI Assistant
+   ![AI Assistant icon](/help/assets/ai-asst-icon.png)
 
-1. In Customer Journey Analytics, navigate to the provisioned sandbox.
+1. In the **[!UICONTROL Ask about Customer Journey Analytics]** dialog at the bottom, ask your first data analysis question in the AI Assistant.
 
-1. Open a Workspace project.
+   For example, let's say you are interested in the orders your business received in July. So you could enter "Show orders in July."
+
+   ![AI prompt](/help/assets/ai-asst-prompt1.png)
 
 
 ## Example Data analysis prompts
 
 Here are some examples of how the AI Assistent responds to prompts, and the expected visualizations:
 
+| Example prompt | Expected visualization |
+| --- | --- |
+| Show me profits in [Month] | Line<p>Asking for a trend or metric by a certain time range will by default return a line visualization. |
+| Trend orders in [Month] | Line |
+| Show revenue by region  in [Month] | Bar |
+| Share of revenue by product category | Donut |
+| Orders by day of week from January to May | Bar |
+| Show orders by gender from March to June | Bar |
+| What is the profit across SKUs from February to May | Bar |
+| Revenue by store name in [Month] | Bar |
+| What were my top 10 skus by profit in [Month]? | Bar |
+| Proportion of purchases by month of year | Donut |
+| Total profit in [Month] | Summary Number<p>Asking for the "total" of a metric across a certain time range should return a Summary number visualization. |
 
 
 ## Prompting best practices
@@ -85,7 +103,7 @@ TBD
 
 ## Alpha testing expectations and requested feedback
 
-TB D
+TBD
 
 ## Questions and Contact
 
