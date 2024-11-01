@@ -17,7 +17,7 @@ hidefromtoc: yes
 
 >[!CONTEXTUALHELP]
 >id="cja_migrate_aa_to_websdk"
->title="Migrate Analytics implementation to use Web SDK"
+>title="Migrate your Analytics implementation to use the Web SDK"
 >abstract="Instead of sending data through an XDM object, you can send all your variables in AppMeasurement format through the data object. This shortcut allows you to continue using your AppMeasurement logic to send data to Platform."
 
 <!-- markdownlint-enable MD034 -->
@@ -36,7 +36,7 @@ Consider the following advantages and disadvantage of the upgrade shortcut to mi
 
 {style="table-layout:auto"}
 
-### Basic steps
+## Basic steps
 
 If you decide to take the upgrade shortcut to migrate your AppMeasurement or Analytics extension implementation to use the Web SDK, a new step is added to the dynamically generated steps for your organization in the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
 
