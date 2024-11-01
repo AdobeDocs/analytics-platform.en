@@ -25,6 +25,8 @@ The recommended steps when upgrading from Adobe Analytics to Customer Journey An
 
 After fully transitioning to Customer Journey Analytics, the Analytics source connector can be turned off and the Experience Platform Web SDK can be used exclusively. 
 
+### High-level recommended upgrade process
+
 1. **Implement the Experience Platform Web SDK**
 
    A new implementation of the Experience Platform Web SDK is the best way to collect data for Customer Journey Analytics. It provides the best foundation to get the most out of Customer Journey Analytics because it is the most performant, straightforward, and future-proof method for implementing Customer Journey Analytics. 
@@ -50,6 +52,94 @@ After fully transitioning to Customer Journey Analytics, the Analytics source co
      You can keep the Analytics source connector running until you are familiar and comfortable with the differences. <!--elaborate on what those differences are? -->
    
     The Analytics source connector as a stand-alone implementation is not a recommended long-term method for using Customer Journey Analytics. This is because of high latency, cluttered and complex schemas, reliance on Adobe Analytics nomenclature (prop, eVar, and so forth), and difficulty in eventually moving from the source connector to the recommended Web SDK implementation. 
+
+### Detailed recommended upgrade steps
+
+The following steps show the recommended process for upgrading from Adobe Analytics to Customer Journey Analytics. 
+
+Depending on your organization's unique environment and requirements, these recommended steps might not be suitable for your organization. In that case, use the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/) to dynamically generate upgrade steps that are tailored to your organization's unique circumstances. 
+
+1. [Plan your XDM schema architecture](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+
+1. [Create your desired custom schema in Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
+
+1. [Create a dataset in Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md).
+
+1. Expand the section that describes your current Adobe Analytics implementation, then complete the associated steps:
+
+   +++For Adobe Analytics implementations using AppMeasurement
+
+   1. [Create a datastream in Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md). <!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
+
+   +++
+
+   +++For Adobe Analytics implementations using the Analytics extension (tags)
+
+   1. [Create a datastream in Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md). <!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
+
+   +++
+
+   +++ For Adobe Analytics implementations using the Web SDK
+
+   No additional steps are required.
+
+   +++
+
+1. [Add Adobe Experience Platform as a service to your datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md). 
+
+1. Use the following table to identify any Adobe Analytics features that you want to continue using in Customer Journey Analytics, then use the provided information to learn how to configure those features as part of the upgrade to Customer Journey Analytics:
+   
+   | Adobe Analytics feature | Implementation requirements for Customer Journey Analytics  | Additional information |
+   |---------|----------|---------|
+   | Classification data | [Create a lookup dataset for each dimension containing classification data]() |  |
+   | Components and projects | [Migrate projects and components](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration) |  |
+   | Activity map overlay and link tracking | N/A | Adobe is currently working on Activity Map overlay support for Customer Journey Analytics. |
+   | Marketing channels | [Create a marketing channel derived field]() |  |
+   | Data Feeds | No configuration required during implementation.<br/>[Learn about the various export options in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/export-project-overview) | While a direct replacement for Data Feeds is not yet available in Customer Journey Analytics, you can export Customer Journey Analytics reports from Analysis Workspace for use in third-party tools or to combine with outside data. |
+   | Data Warehouse | No configuration required during implementation.<br/>[Learn about Full Table Export in Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) | Customer Journey Analytics Full Table Export is the evolution of Data Warehouse reports in Adobe Analytics, with many new, often-requested features that are not available in Data Warehouse today. |
+   | Streaming Media data |  |  |
+
+1. (Optional) Bring historical data from Adobe Analytics using the Analytics source connector.  
+   
+   For more information, see [Use a source connector](/help/data-ingestion/sources.md#use-a-source-connector) in [Ingest and use data using source connectors](/help/data-ingestion/sources.md).
+
+1. Use the following table to identify any Customer Journey Analytics features that you want, then use the provided information to learn how to configure those features as part of the upgrade to Customer Journey Analytics:
+   
+   | Customer Journey Analytics features you want | Implementation requirements for Customer Journey Analytics | Additional information |
+   |---------|----------|---------|
+   | Tie web data with data from other channels, such as call center data | After you create a connection (as described in a later step), [add additional datasets to your connection in Customer Journey Analytics]() |  |
+   | Integrate with RTCDP | [Enable profile in your schema and create a profile dataset for use in RTCDP]() | This must be done while creating your XDM schema. |
+   | Integrate with Adobe Journey Optimizer | [Use the personalization object in your implementation for use in Adobe Journey Optimizer]() |  |
+
+1. Expand the section that describes your desired Customer Journey Analytics implementation, then complete the associated steps:
+
+   +++Manual implementation (JS file)
+
+   1. [Add alloy.js to your site](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version%22).
+
+   +++
+
+   +++Tags
+
+   1. [Create a tag property in Adobe Experience Platform data collection](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/quick-start#create-a-property).
+
+   +++
+
+   +++ API
+
+   1. Use the Edge Network API to send data to the desired datastream
+
+   +++
+
+1. [Create a connection in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-connection.md).
+
+1. [Create a data view in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md).
+
+1. [Validate that data is flowing in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
+
+1. Disable AppMeasurement data collection.
+
+1. After you have gathered enough historical data using your new Web SDK implementation in Customer Journey Analytics, you can [disable the Analytics source connector]().  
 
 ## 2. Dynamically generate upgrade steps for your organization
 
