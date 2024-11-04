@@ -13,6 +13,8 @@ The Data Analysis AI Assistant is an intelligent, context-aware conversation age
 
 The Assistant looks through all the data in a data view, including the different types of metrics and components, and translates your prompt into the right dimension, metric, and date range for this analysis. Instead of having to familiarize yourself with the data view components, and then drag and drop those components in the best combination to answer your question, you can simply type the question into the AI Assistant. 
 
+![Data ANalysis AI Assistant](assets/cja-ai-asst-da.gif)
+
 ## In-scope vs. out-of-scope features for the Alpha version
 
 ### In-scope features
