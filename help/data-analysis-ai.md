@@ -36,7 +36,7 @@ The Assistant looks through all the data in a data view, including the different
 | **Unsupported visualization types** | <ul><li>Flow</li><li>Fallout</li><li>Cohort Table</li><li>Area, Area Stacked</li><li>Bar stacked</li><li>Bullet</li><li>Combo</li><li>Histogram</li><li>Horizontal Bar, Horizontal Bar Stacked</li><li>Key Metric Summary</li><li>Scatter</li><li>Summary Change</li><li>Text</li><li>Treemap</li><li>Venn</li></ul> | 
 | **Explainability and Verifiability** | Transparent description or citation for how the AI Assistant generated a response, and providing you with a way to confirm that the answer is correct. |
 
-## Feature access in the Customer Journey Analytics UI
+<!---## Feature access in the Customer Journey Analytics UI
 
 [Do we even need this section for the Alpha?]
 
@@ -59,7 +59,7 @@ It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adob
 
    1. Select **[!UICONTROL Save]** to save the permissions.
 
-See [Access control](/help/technotes/access-control.md#access-control) for more information.
+See [Access control](/help/technotes/access-control.md#access-control) for more information.--->
 
 ## Access and use Data Analysis AI Assistant
 
@@ -160,7 +160,7 @@ Following the thumbs up/down selection, please make a selection for the relevant
 
 ## Questions and Contact
 
-Email `taylorb@adobe.com` (PM)
-Send questions and feedback in the Alpha slack channel: #aep-cja-ai-assistant-testers ???
+* Email `taylorb@adobe.com` (PM)
+* Send questions and feedback in the Alpha slack channel: #aep-cja-ai-assistant-testers ???
 
 
