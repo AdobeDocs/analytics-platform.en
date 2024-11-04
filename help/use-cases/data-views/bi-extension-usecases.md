@@ -29,10 +29,10 @@ The following use cases are documented:
 1. [Dimension and metric transformations](#dimension-and-metric-transformations).
 1. [Visualizations and interactions](#visualizations-and-interactions).
 
-For each use case, instructions are available for the following BI tools within the **Details** section:
+The first use case focuses on how to connect BI tools using the Customer Journey Analytics BI extension. For all other use cases, instructions are available on how to accomplish similar Customer Journey Analytics visualizations in the BI tools currently supported:
 
-* Power BI Desktop (version 2.136.1478.0 64-bit (September 2024))
-* Tableau Desktop (version 2024.1.5 (20241.24.0705.0334) 64-bit)
+* Power BI Desktop. Version used is 2.137.1102.0 64-bit (October 2024).
+* Tableau Desktop Version used is 2024.1.5 (20241.24.0705.0334) 64-bit.
 
 The instructions refer to an example data view named **[!UICONTROL public.cc_data_view]**, two example dimensions (**[!UICONTROL Product Name]** and **[!UICONTROL Product Category]**) and two example metrics (**[!UICONTROL Purchases]** and **[!UICONTROL Purchase Revenue]**). When you go through the instructions, modify these example objects for your specific environment where appropriate.
 
@@ -41,7 +41,7 @@ The instructions refer to an example data view named **[!UICONTROL public.cc_dat
 
 This use case sets up the connection from the BI tool to Customer Journey Analytics and lists the available data views to test the connection successfully.
 
-+++ Details
++++ BI tools
 
 >[!BEGINTABS]
 
@@ -125,7 +125,13 @@ This use case sets up the connection from the BI tool to Customer Journey Analyt
 
 In this use case, you want to display a table and simple line visualization that shows a daily trend of occurrences from January 1, 2023 up until January 31, 2023.
 
-+++ Details
++++ Customer Journey Analytics
+
+![Customer Journey Analytics Daily Trend panel](assets/cja_daily_trend.png)
+
++++
+
++++ BI tools
 
 >[!PREREQUISITES]
 >
@@ -217,7 +223,13 @@ In this use case, you want to display a table and simple line visualization that
 
 In this use case, you want to display a table and simple line visualization that shows an hourly trend of occurrences for January 1, 2023.
 
-+++ Details
++++ Customer Journey Analytics
+
+![Customer Journey Analytics Hourly Trend visualizations](assets/cja_hourly_trend.png)
+
++++
+
++++ BI tools
 
 >[!PREREQUISITES]
 >
@@ -280,7 +292,13 @@ In this use case, you want to display a table and simple line visualization that
 
 In this use case, you want to display a table and simple line visualization that shows an monthly trend of occurrences for January 1, 2023 - January 1, 2024.
 
-+++ Details
++++ Customer Journey Analytics
+
+![Customer Journey Analytics Monthly Trend visualization](assets/cja_monthly_trend.png)
+
++++
+
++++ BI tools
 
 >[!PREREQUISITES]
 >
@@ -371,6 +389,11 @@ In this use case, you want to display a table and simple line visualization that
 ## Single dimension ranked
 
 In this use case, you want to display a table and simple bar visualization that shows the purchases and purchases revenue for product names over 2023.
+
++++ Customer Journey Analytics
+
+![Customer Journey Analytics Single dimension ranked visualization](assets/cja-single-dimension-ranked.png)
++++
 
 +++ Details
 
