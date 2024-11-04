@@ -9,15 +9,17 @@ hidefromtoc: yes
 ---
 # Upgrade from Adobe Analytics to Customer Journey Analytics
 
-Before you begin the upgrade process from Adobe Analytics to Customer Journey Analytics, first understand the recommended upgrade steps.
+When upgrading from Adobe Analytics to Customer Journey Analytics, Adobe recommends a new implementation of the Experience Platform Web SDK, in conjunction with the Analytics source connector, as described in [Recommended upgrade steps for most organizations](#recommended-upgrade-steps-for-most-organizations).
+
+Depending on several factors, such as timeline and resource constraints, the recommended upgrade steps might not be practical for your organization. In that case, use the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/) to dynamically generate upgrade steps that are tailored to your organization's unique circumstances.
+
+## Recommended upgrade steps for most organizations
 
 >[!NOTE]
 >
 >The upgrade steps described in this section are the recommended upgrade steps that any organization could use to successfully upgrade from Adobe Analytics to Customer Journey Analytics.
 >
 >However, depending on several factors, such as timeline and resource constraints, the recommended upgrade steps might not be practical for your organization. In that case, use the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/) to dynamically generate upgrade steps that are tailored to your organization's unique circumstances. 
-
-## Recommended upgrade steps for most organizations
 
 The recommended steps when upgrading from Adobe Analytics to Customer Journey Analytics is a new implementation of the Experience Platform Web SDK, which is the preferred data collection method for Customer Journey Analytics. In conjunction with the Web SDK, Adobe also recommends using the Analytics source connector in order to retain historical Adobe Analytics data and to perform side-by-side data comparison. 
 
@@ -53,9 +55,9 @@ After fully transitioning to Customer Journey Analytics, the Analytics source co
 
 ### Detailed recommended upgrade steps
 
-The following steps show the recommended process for upgrading from Adobe Analytics to Customer Journey Analytics. 
+The following steps outline the recommended process for upgrading from Adobe Analytics to Customer Journey Analytics. 
 
-Depending on your organization's unique environment and requirements, these recommended steps might not be suitable for your organization. In that case, use the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/) to dynamically generate upgrade steps that are tailored to your organization's unique circumstances. 
+Each step provides a high-level explanation of a more detailed process. Follow the link for each step and complete its associated tasks, then return to this page and continue to the next step in the process. 
 
 1. [Plan your XDM schema architecture](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
@@ -63,7 +65,7 @@ Depending on your organization's unique environment and requirements, these reco
 
    Consider the following options when creating your schema:
 
-   * If you want to integrate Customer Journey Analytics with RTCDP, you must enable profile and create a profile dataset for use in RTCDP while creating your XDM schema.
+   * If you want to integrate Customer Journey Analytics with RTCDP, you must enable the **[!UICONTROL Profile]** option on your schema, as described in [Create an XDM schema to use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md). With this option enabled, when data is ingested into datasets based on this schema, that data is merged into the Real-Time Customer Profile.
 
    * If you want to include streaming media data, you must [configure your schema to ingest and use streaming data](/help/data-ingestion/streaming.md).
 
@@ -137,6 +139,8 @@ Depending on your organization's unique environment and requirements, these reco
 
 1. Compare data from your old implementation to that from your new implementation and make sure you understand any differences and why they exist. 
 
+1. Learn about [feature support in Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). Most Adobe Analytics features are supported in Customer Journey Analytics, and many additional features are available in Customer Journey Analytics.
+
 1. Plan user onboarding. 
 
    Like in Adobe Analytics, Analysis Workspace is the main user-facing tool in Customer Journey Analytics. However, there are some key differences when using Analysis Workspace in Customer Journey Analytics that users need to be aware of.
@@ -152,8 +156,6 @@ Depending on your organization's unique environment and requirements, these reco
    With the Experience Platform Web SDK implementation, the Analytics source connector is needed only for historical Adobe Analytics data and to compare data from your original implementation with that of your new implementation.
    
    When you have enough historical data from your new implementation and you are familiar with the reporting differences in Customer Journey Analytics, you should turn off the Analytics source connector.   
-
-1. Learn about [feature support in Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). Most Adobe Analytics features are supported in Customer Journey Analytics, and many additional features are available in Customer Journey Analytics.
 
 ## Dynamically generate upgrade steps for your organization
 

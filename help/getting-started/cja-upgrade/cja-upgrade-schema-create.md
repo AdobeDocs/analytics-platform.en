@@ -56,13 +56,13 @@ To create a schema:
 
    1. Select **[!UICONTROL Finish]**.
 
-1. In the Structure tab of Example Schema:
+1. In the [!UICONTROL **Structure**] tab of your schema:
     
-   1. Select **[!UICONTROL + Add]** in [!UICONTROL Field groups].
-
-      ![Add field group](assets/add-field-group-button.png)
+   1. In the **[!UICONTROL Field groups]** section, select **[!UICONTROL + Add]**.
 
       Field groups are reusable collections of objects and attributes that allow you to easily extend your schema.
+
+      ![Add field group](assets/add-field-group-button.png)
 
    1. In the [!UICONTROL Add fields groups] dialog, select the **[!UICONTROL AEP Web SDK ExperienceEvent]** field group from the list. 
 
