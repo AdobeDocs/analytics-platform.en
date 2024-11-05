@@ -108,7 +108,7 @@ To create a schema:
 
     Select **[!UICONTROL Save]**.
 
-1. Select the root element of your schema displaying the name of the schema, then select the **[!UICONTROL Profile]** switch.
+1. (Optional) If you want to integrate Customer Journey Analytics with RTCDP, select the root element of your schema displaying the name of the schema, then select the **[!UICONTROL Profile]** switch.
 
    You are prompted to enable the schema for profile. Once enabled, when data is ingested into datasets based on this schema, that data is merged into the Real-Time Customer Profile. 
     
@@ -116,7 +116,7 @@ To create a schema:
 
    >[!IMPORTANT]
    >
-   >    Once you save a schema enabled for profile, it can no longer be disabled for profile.
+   >After you enable a schema for profile, it cannot be disabled for profile.
 
    ![Enable schema for profile](./assets/enable-for-profile.png)
 

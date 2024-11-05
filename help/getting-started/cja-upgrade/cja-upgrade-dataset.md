@@ -17,7 +17,7 @@ hidefromtoc: yes
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-After creating an XDM schema, you now have to define the construct to store and manage that data, which is done in Adobe Experience Platform through a dataset.
+A dataset is the construct that stores and manages the data that you collect into Adobe Experience Platform.
 
 To create a dataset:
 

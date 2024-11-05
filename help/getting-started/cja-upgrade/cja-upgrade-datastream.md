@@ -19,7 +19,7 @@ hidefromtoc: yes
 
 A datastream represents the server-side configuration when implementing the Adobe Experience Platform Web and Mobile SDKs. When collecting data with the Adobe Experience Platform SDKs, data is sent to the Adobe Experience Platform Edge Network. It is the datastream that determines to which services that data is forwarded.
 
-In your setup, you want the data you collect from the website to be sent to your dataset in Adobe Experience Platform.
+In your setup, you want to configure the datastream to send the collected data to your dataset in Adobe Experience Platform.
 
 To set up your datastream:
 
