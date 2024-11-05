@@ -7,7 +7,7 @@ feature: Basics
 hide: yes
 hidefromtoc: yes
 ---
-# Create lookup datasets for classifications data for use in Customer Journey Analytics
+# Create lookup datasets to classify data in Customer Journey Analytics
 
 >[!NOTE]
 > 
@@ -15,9 +15,17 @@ hidefromtoc: yes
 >
 >After you complete the steps on this page, continue following the recommended or dynamically generated upgrade steps. 
 
-Classifications data
+Similar to classifications data in Adobe Analytics, lookup datasets are the method for classifying data in Customer Journey Analytics. 
 
-Classifications data from Adobe Analytics can be imported to the Experience Platform and Customer Journey Analytics using the Analytics Classifications Source Connector. 
+When using the Analytics source connector, some standard lookup datasets are automatically applied at report time. For more information, see [Add standard lookups to your datasets](/help/connections/standard-lookups.md).
 
-Now called "Lookup Datasets". Classifications used in Analytics can be imported to the Experience Platform and Customer Journey Analytics using the Analytics Classifications Source Connector. Lookup datasets can also be uploaded to Experience Platform directly and made available in Customer Journey Analytics.
+In order to classify data with a new implementation of the Experience Platform Web SDK, you need to create a lookup dataset for each dimension that contains data that you want to classify.
+
+To create lookup datasets for use in Customer Journey Analytics:
+
+1. In AEP, create a new schema. This is a new schema that is specific for lookup datasets. You cannot use an existing schema.
+
+1. You have to create a new schema class that is for lookups. 
+
+1. Create a lookup dataset off of that. 
 
