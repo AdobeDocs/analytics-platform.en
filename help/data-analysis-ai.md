@@ -9,9 +9,9 @@ hide: yes
 
 # Data Analysis AI Assistant in Customer Journey Analytics - Alpha
 
-The Data Analysis AI Assistant is an intelligent, context-aware conversation agent that can help you more quickly and efficiently answer questions you may have of your Analysis Workspace data in Customer Journey Analytics. 
+The Data Analysis AI Assistant is a Generative AI conversation agent that can help you more quickly and efficiently answer questions you may have of your Analysis Workspace data in Customer Journey Analytics. 
 
-The Assistant looks through all the data in a data view, including the different types of metrics and components, and translates your prompt into the right dimension, metric, and date range for your analysis. Instead of having to familiarize yourself with the data view components, and then drag and drop those components in the best combination to answer your question, you can simply type the question into the AI Assistant. 
+When you ask a question in AI Assistant, the AI Assistant scans through all the components in your data view, including the different types of metrics and components, and translates your prompt into the right dimension, metric, and date range for your analysis. Instead of having to familiarize yourself with the data view components, and then drag and drop those components in the best combination to answer your question, you can simply type the question into the AI Assistant. 
 
 ![Data ANalysis AI Assistant](assets/cja-ai-asst-da.gif)
 
@@ -26,6 +26,7 @@ The Assistant looks through all the data in a data view, including the different
 | **Out-of-scope prompt detection** | If you submit a prompt that is out-of-scope, such as "export this project", the Assistant responds by letting you know that the question is out of scope. | 
 | **Clarifying questions** | If you ask a question that does not have enough context for the AI Assistant to answer, or is too generic, the AI Assistant responds with a clarifying question and/or suggested options. Examples: <p>**Components**<ul><li>Metric: *Which "revenue" metric did you mean?*</li><li>Dimension: *Which of the below "regions" do you want to focus on?*</li><li>Filter: *Which "Account" filter did you want to apply?*</li><li>Date Range: *By "last month", did you mean the last full month or the last 30 days?*</li></ul>**Dimension items**: Which "store name" did you mean? (for example, Store #5274, Store #2949, etc.) |
 | **Multi-turn** | The AI Assistant responds to a prompt with the context from the prior prompt(s), allowing users to update visualizations and ask follow-up questions.Example: <ul><li>Prompt 1: *Trend events from March.*</li><li>Prompt 2: *Show me the data from March to April instead*</li></ul> |
+| **Verifiability** | Data verifiability and correctness can be confirmed via the generated freeform table and data visualization. For example, if a user asks *Trend orders last month*, you can confirm that correct metric ("orders") and date range ("last month") were selected in the newly generated panel, data visualization, and freeform table. |
 | **Feedback** |<ul><li>Thumbs Up</li><li>Thumbs Down</li><li>Flag</li></ul> |
 
 ### Out-of-scope Alpha features 
@@ -36,7 +37,6 @@ The Assistant looks through all the data in a data view, including the different
 | **Clarifying questions** | Clarifying questions are limited to components and dimension items. The AI Assistant cannot clarify data views, visualizations, data granularity, comparison, scope, etc.. Without clarifying questions, the Assistant defaults to what you are most likely asking for. If it returns an unexpected visualization or data granularity, you can then use the multi-turn/update capability to adjust the visualization and data. |
 | **Workspace Actions / Capabilities**| The AI Assistant cannot take actions for a user in Workspace aside from building and updating visualizations. For example, it cannot do any the following:<ul><li>Contextual action UI buttons (add to chart, new panel, new table)</li><li>Share</li><li>Export</li><li>Download</li><li>Manage user preferences</li><li>Curate</li><li>Manage data view</li><li>Analytics Dashboards app</li><li>Attribution</li></ul> |
 | **Unsupported visualization types** | <ul><li>Flow</li><li>Fallout</li><li>Cohort Table</li><li>Area, Area Stacked</li><li>Bar stacked</li><li>Bullet</li><li>Combo</li><li>Histogram</li><li>Horizontal Bar, Horizontal Bar Stacked</li><li>Key Metric Summary</li><li>Scatter</li><li>Summary Change</li><li>Text</li><li>Treemap</li><li>Venn</li></ul> | 
-| **Explainability and Verifiability** | Transparent description or citation for how the AI Assistant generated a response, and providing you with a way to confirm that the answer is correct. |
 
 <!---## Feature access in the Customer Journey Analytics UI
 
@@ -71,7 +71,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 3. Click **[!UICONTROL Blank project]** in the banner at the top of the projects page to open a new blank project.
 
-4. Ensure that the selected data view for the panel is the data view that was enabled for AI Assistant use for Alpha testing (reach out to taylorb@adobe.com or in the Alpha slack channel if you are unsure)
+4. Ensure that the selected data view for the panel is the data view that was enabled for AI Assistant use for Alpha testing (reach out in the Alpha slack channel if you are unsure)
 
 5. Click the AI Assistant chat icon at the top right.
 
@@ -102,26 +102,26 @@ Next, you want to see how your revenue compares by region.
 2. The AI Assistant intelligently understands that by "region", you mean "customer region". It produces a bar chart that best shows revenue by region:
 
    ![Bar chart](/help/assets/ai-asst-result2.png)
-
+   
 ### Example 3
 
-Now, let's look at revenue by product category.
+Next, in addition to understanding revenue by region you also want to see data for profit by region. Instead of having to retype the last prompt, you can ask the AI Assistant to update the most recent visualization and freeform table. 
+
+1. In the prompt window, type *"Add profit."*
+
+2. The **[!UICONTROL Bar]** chart still provides the most concise answer, but the profit metric has been added as a column in the freeform table:
+
+   ![Bar chart](/help/assets/ai-asst-result4.png)
+
+### Example 4
+
+Finally, let's look at revenue by product category.
 
 1. In the prompt window, enter *"Proportion of revenue by product category".*
 
 2. Again, the Data Analysis AI Assistant picks the most appropriate visualization, in this case the **[!UICONTROL Donut]** visualization, to answer the question.
 
    ![Donut](/help/assets/ai-asst-result3.png)
-
-### Example 4
-
-Finally, you want to know which SKU is the most profitable, and where you should invest marketing resources.
-
-1. In the prompt window, ask *"What is the profit across SKUs from February to May."*
-
-2. A simple **[!UICONTROL Bar]** chart provides the most concise answer:
-
-   ![Bar chart](/help/assets/ai-asst-result4.png)
 
 ## Example data analysis prompts
 
@@ -174,7 +174,6 @@ Following the thumbs up/down selection, please make a selection for the relevant
 
 ## Questions and Contact
 
-* Email `taylorb@adobe.com` (PM)
 * Send questions and feedback in the Alpha slack channel: #aep-cja-ai-assistant-testers ???
 
 
