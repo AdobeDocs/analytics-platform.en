@@ -34,12 +34,25 @@ The first use case focuses on how to connect BI tools using the Customer Journey
 * Power BI Desktop. Version used is 2.137.1102.0 64-bit (October 2024).
 * Tableau Desktop Version used is 2024.1.5 (20241.24.0705.0334) 64-bit.
 
-The instructions refer to an example data view named **[!UICONTROL public.cc_data_view]**, two example dimensions (**[!UICONTROL Product Name]** and **[!UICONTROL Product Category]**) and two example metrics (**[!UICONTROL Purchases]** and **[!UICONTROL Purchase Revenue]**). When you go through the instructions, modify these example objects for your specific environment where appropriate.
-
 
 ## Connect and list data views
 
 This use case sets up the connection from the BI tool to Customer Journey Analytics and lists the available data views to test the connection successfully.
+
++++ Customer Journey Analytics
+
+The instructions refer to an example set up with the following objects:
+
+* Data view **[!UICONTROL C&C - Data View]** 🅐.
+* Dimensions **[!UICONTROL Product Name]** 🅑 and **[!UICONTROL Product Category]** 🅒.
+* Metrics **[!UICONTROL Purchase Revenue]** 🅓 and **[!UICONTROL Purchases]** 🅔.
+* Filter **[!UICONTROL Fishing Products]** 🅕.
+
+![Customer Journey Analytics Base setup](assets/cja-base.png)
+
+When you go through the instructions, replace these example objects with objects that are appropriate in your specific environment.
+
++++
 
 +++ BI tools
 
@@ -56,29 +69,33 @@ This use case sets up the connection from the BI tool to Customer Journey Analyt
 
       ![Query service credentials](assets/queryservice-credentials.png)
 
-1. Open Power BI Desktop.
-1. From the main interface, select **[!UICONTROL Get data from other sources]**.
-1. In the **[!UICONTROL Get Data]** dialog:
-   ![PowerBI PostgreSQL database](assets/powerbi-postgresql.png)
-   1. Search for and select **[!UICONTROL PostgreSQL database]**.
-   1. Select **[!UICONTROL Connect]**.
-1. In the **[!UICONTROL PostgreSQL database]** dialog:
-   ![PowerBI Desktop Server and Database settings](assets/powerbi-serverdatabase.png)
-   1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Host]** and **[!UICONTROL Port]** values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**, separated by `:` as the value for **[!UICONTROL Server]**. For example: `examplecompany.platform-query.adobe.io:80`.
-   1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Database]** value from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**. Add `?FLATTEN` to the value that you paste. For example, `prod:cja?FLATTEN`.
-   1. Select **[!UICONTROL DirectQuery]** as the [!UICONTROL Data connectivity mode].
-   1. Select **[!UICONTROL OK]**.
-1. In the **[!UICONTROL PostgreSQL database]** - **[!UICONTROL Database]** dialog:
-   ![PowerBI Desktop User and Password](assets/powerbi-userpassword.png)
-   1. Use ![Copy](/help/assets/icons/Copy.svg) to copy the **[!UICONTROL Username]** and **[!UICONTROL Password]** values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel in the **[!UICONTROL User name]** and **[!UICONTROL Password]** fields. If you are using a [non-expiring credential](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use the password of your non-expiring credential.
-   1. Ensure that the dropdown menu for **[!UICONTROL Select which level to apply these settings to]** is set to the **[!UICONTROL Server]** that you have defined earlier.
-   1. Select **[!UICONTROL Connect]**.
-1. In the **[!UICONTROL Navigator]** dialog, the data views are retrieved. This retrieval can take some time. Once retrieved:
-   ![Power BI Destkop Server Load Data](assets/powerbi-navigator-load.png)
-   1. Select **[!UICONTROL public.cc_data_view]** from the list in the left panel.
-   1. Select **[!UICONTROL Load]**.
-1. After a while, the available metrics and dimensions are displayed in the **[!UICONTROL Data]** pane.
-   ![Power BI Destkop Server Data Loaded](assets/powerbi-navigator-loaded.png)
+1. Start Power BI Desktop.
+   1. From the main interface, select **[!UICONTROL Get data from other sources]**.
+   1. In the **[!UICONTROL Get Data]** dialog:
+      ![PowerBI PostgreSQL database](assets/powerbi-postgresql.png)
+      1. Search for and select **[!UICONTROL PostgreSQL database]**.
+      1. Select **[!UICONTROL Connect]**.
+   1. In the **[!UICONTROL PostgreSQL database]** dialog:
+      ![PowerBI Desktop Server and Database settings](assets/powerbi-serverdatabase.png)
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Host]** and **[!UICONTROL Port]** values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel, separated by `:` as the value for **[!UICONTROL Server]**. For example: `examplecompany.platform-query.adobe.io:80`.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Database]** value from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel. Add `?FLATTEN` to the value that you paste. For example, `prod:cja?FLATTEN`.
+      1. Select **[!UICONTROL DirectQuery]** as the [!UICONTROL Data connectivity mode].
+      1. Select **[!UICONTROL OK]**.
+   1. In the **[!UICONTROL PostgreSQL database]** - **[!UICONTROL Database]** dialog:
+      ![PowerBI Desktop User and Password](assets/powerbi-userpassword.png)
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy the **[!UICONTROL Username]** and **[!UICONTROL Password]** values from tge Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel in the **[!UICONTROL User name]** and **[!UICONTROL Password]** fields. If you are using a [non-expiring credential](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use the password of your non-expiring credential.
+      1. Ensure that the dropdown menu for **[!UICONTROL Select which level to apply these settings to]** is set to the **[!UICONTROL Server]** that you have defined earlier.
+      1. Select **[!UICONTROL Connect]**.
+   1. In the **[!UICONTROL Navigator]** dialog, the data views are retrieved. This retrieval can take some time. Once retrieved:
+      ![Power BI Destkop Load Data](assets/powerbi-navigator-load.png)
+      1. Select **[!UICONTROL public.cc_data_view]** from the list in the left panel.
+      1. You have two options:
+         1. Select **[!UICONTROL Load]** to immediately continue and finish the setup.
+         1. Select **[!UICONTROL Transform Data]**. You see a dialog where you can optionally apply transformations as part of the configuration.
+         ![Power BI Desktop Transform Data](assets/powerbi-transform-data.png)
+            * Select **[!UICONTROL Close & Apply]**.
+   1. After a while, **[!UICONTROL public cc_data_view]** is displayed in the **[!UICONTROL Data]** pane. Select ![ChevronRight](/help/assets/icons/ChevronRight.svg) to show dimensions and metrics.
+      ![Power BI Destkop Server Data Loaded](assets/powerbi-navigator-loaded.png)
    
 
 >[!TAB Tableau Desktop] 
@@ -92,29 +109,29 @@ This use case sets up the connection from the BI tool to Customer Journey Analyt
 
       ![Query service credentials](assets/queryservice-credentials.png)
 
-1. Open Tableau.
-1. Select **[!UICONTROL PostgreSQL]** from the left rail underneath **[!UICONTROL To a Server]**. If not available, select **[!UICONTROL More...]** and select **[!UICONTROL PostgreSQL]** from the **[!UICONTROL Installed Connectors]**.
-   ![Tableau Connectors](assets/tableau-connectors.png)
-1. In the **[!UICONTROL PostgreSQL]** dialog, in the **[!UICONTROL General]** tab:
-   ![Tableau Sign In dialog](assets/tableau-signin.png)
-   1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Host]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** to the **[!UICONTROL Server]**.
-   1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Port]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** to the **[!UICONTROL Port]**.
-   1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Database]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** to the **[!UICONTROL Database]**. Add `%3FFLATTEN` to the value that you paste. For example: `prod:cja%3FFLATTEN`.  
-   1. Select **[!UICONTROL Username and Password]** from the **[!UICONTROL Authentication]** dropdown menu.
-   1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Username]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** to the **[!UICONTROL Username]**.
-   1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Password]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** to the **[!UICONTROL Password]**. If you are using a [non-expiring credential](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use the password of your non-expiring credential.
-   1. Ensure that **[!UICONTROL Require SSL]** is checked.
-   1. Select **[!UICONTROL Sign In]**.
-   
-   You see a **[!UICONTROL Progressing Request]** dialog while Tableau Desktop validates the connection.
-1. In the main window, you see in the Data Source view, in the left pane:
-   * The name of the connection, underneath **[!UICONTROL Connections]**.
-   * The name of the database, underneath **[!UICONTROL Database]**.
-   * A list of tables, underneath **[!UICONTROL Table]**.
-   ![Tableau Connected](assets/tableau-connected.png)
-   1. Drag the **[!UICONTROL cc_data_view]** entry and drop the entry on the main view that reads **[!UICONTROL Drag tables]** here.
-1. The main window now displays details of the **[!UICONTROL cc_data_view]** data view.
-   ![Tableau Connected](assets/tableau-validation.png)
+1. Start Tableau.
+   1. Select **[!UICONTROL PostgreSQL]** from the left rail underneath **[!UICONTROL To a Server]**. If not available, select **[!UICONTROL More...]** and select **[!UICONTROL PostgreSQL]** from the **[!UICONTROL Installed Connectors]**.
+      ![Tableau Connectors](assets/tableau-connectors.png)
+   1. In the **[!UICONTROL PostgreSQL]** dialog, in the **[!UICONTROL General]** tab:
+      ![Tableau Sign In dialog](assets/tableau-signin.png)
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Host]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Server]**.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Port]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Port]**.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Database]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Database]**. Add `%3FFLATTEN` to the value that you paste. For example: `prod:cja%3FFLATTEN`.  
+      1. Select **[!UICONTROL Username and Password]** from the **[!UICONTROL Authentication]** dropdown menu.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Username]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Username]**.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Password]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Password]**. If you are using a [non-expiring credential](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use the password of your non-expiring credential.
+      1. Ensure that **[!UICONTROL Require SSL]** is checked.
+      1. Select **[!UICONTROL Sign In]**.
+      
+      You see a **[!UICONTROL Progressing Request]** dialog while Tableau Desktop validates the connection.
+   1. In the main window, you see in the **[!UICONTROL Data Source]** page, in the left pane:
+      * The name of the connection, underneath **[!UICONTROL Connections]**.
+      * The name of the database, underneath **[!UICONTROL Database]**.
+      * A list of tables, underneath **[!UICONTROL Table]**.
+      ![Tableau Connected](assets/tableau-connected.png)
+      1. Drag the **[!UICONTROL cc_data_view]** entry and drop the entry on the main view that reads **[!UICONTROL Drag tables]** here.
+   1. The main window displays details of the **[!UICONTROL cc_data_view]** data view.
+      ![Tableau Connected](assets/tableau-validation.png)
       
 >[!ENDTABS]
 
@@ -123,9 +140,11 @@ This use case sets up the connection from the BI tool to Customer Journey Analyt
 
 ## Daily trend
 
-In this use case, you want to display a table and simple line visualization that shows a daily trend of occurrences from January 1, 2023 up until January 31, 2023.
+In this use case, you want to display a table and simple line visualization that shows a daily trend of occurrences (events) from January 1, 2023 up until January 31, 2023.
 
 +++ Customer Journey Analytics
+
+An example **[!UICONTROL Daily Trend]** panel for the use case:
 
 ![Customer Journey Analytics Daily Trend panel](assets/cja_daily_trend.png)
 
@@ -152,34 +171,32 @@ In this use case, you want to display a table and simple line visualization that
 
    1. Select the **[!UICONTROL daterangeday is (All)]** from **[!UICONTROL Filters on this visual]**.
    1. Select **[!UICONTROL Advanced filtering]** as the **[!UICONTROL Filter type]**.
-   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `1/2/2023.` You can use the calendar icon to pick and select dates.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023.` You can use the calendar icon to pick and select dates.
    1. Select **[!UICONTROL Apply filter]**.
    
    You see the table updated with the applied **[!UICONTROL daterangeday]** filter.
 
-1. In the **[!UICONTROL Visualizations]** pane:
+1. In the **[!UICONTROL Visualizations]** pane, select the **[!UICONTROL Line chart]** visualization.
 
-   1. Select the **[!UICONTROL Line chart]** visualization.
+   A line chart visualization replaces the table while using the same data as the table. Your Power BI Desktop should look like below.
 
-   A line chart visualization replaces the table while using the same data as the table.
-
-   ![Power BI Desktop Use Case 2 Date range filter](assets/uc2-pbi-filter-daterange.png)
+   ![Power BI Desktop Use Case 2 Date range filter](assets/uc2-pbi-daterange.png)
 
 1. On the Line chart visualization:
 
    1. Select ![More](/help/assets/icons/More.svg).
    1. From the context menu, select **[!UICONTROL Show as a table]**.
 
-   The main view is updated to show both a line visualization and a table.
+   The main view is updated to show both a line visualization and a table. Your Power BI Desktop should look like below.
 
-   ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc2-pbi-filter-final.png)
+   ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc2-pbi-final.png)
 
 >[!TAB Tableau Desktop] 
 
-1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from the **[!UICONTROL Data source]** view. In the **[!UICONTROL Sheet 1]** view:
    1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
    1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
-   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `01/02/2023`.
+   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `31/01/2023`.
 
       ![Tableau Desktop Filter](assets/uc2-tableau-filter.png)
 
@@ -189,7 +206,7 @@ In this use case, you want to display a table and simple line visualization that
       * The values is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
    1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the dropdown menu in the toolbar.
 
-      Your Sheet 1 view should look like below.
+      Your Tableau Desktop should look like below.
 
       ![Tableau Desktop Graph](assets/uc2-tableau-graph.png)
 
@@ -198,19 +215,19 @@ In this use case, you want to display a table and simple line visualization that
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1 (2)]** tab context menu to rename the sheet to `Data`.
 1. Ensure that the **[!UICONTROL Data]** sheet is selected. In the Data view:
    1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table]** (upper left top visualization) to modify the content of the Data view to a table.
-   1. Drag **[!UICONTROL DAY(Daterangeday)]** from **[!UICONTROL Columns]** to **[!UICONTROL Rows]**.
+   1. Select **[!UICONTROL Swap Rows and Columns]** from the toolbar.
    1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the dropdown menu in the toolbar.
 
-      Your **[!UICONTROL Data]** view should look like below.
+      Your Tableau Desktop should look like below.
 
       ![Tableau Desktop Data](assets/uc2-tableau-data.png)
 
-1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
+1. Select the **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
    1. Drag and drop the **[!UICONTROL Graph]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
    1. Drag and drop the **[!UICONTROL Data]** sheet from the **[!UICONTROL Sheets]** shelf below the **[!UICONTROL Graph]** sheet onto the **[!UICONTROL Dashboard 1]** view.
    1. Select the **[!UICONTROL Data]** sheet in the view and modify **[!UICONTROL Entire View]** to **[!UICONTROL Fix Width]**.
 
-      Your **[!UICONTROL Dashboard 1]** view should look like below.
+      Your Tableau Desktop should look like below.
 
       ![Tableau Desktop Dashboard 1](assets/uc2-tableau-dashboard.png)
 
@@ -221,9 +238,11 @@ In this use case, you want to display a table and simple line visualization that
 
 ## Hourly trend
 
-In this use case, you want to display a table and simple line visualization that shows an hourly trend of occurrences for January 1, 2023.
+In this use case, you want to display a table and simple line visualization that shows an hourly trend of occurrences(events) for January 1, 2023.
 
 +++ Customer Journey Analytics
+
+An example **[!UICONTROL Hourly Trend]** panel for the use case:
 
 ![Customer Journey Analytics Hourly Trend visualizations](assets/cja_hourly_trend.png)
 
@@ -257,7 +276,7 @@ In this use case, you want to display a table and simple line visualization that
       * The values is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
    1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the dropdown menu in the toolbar.
 
-      Your Sheet 1 view should look like below.
+      Your Tableau Desktop should look like below.
 
       ![Tableau Desktop Graph](assets/uc3-tableau-graph.png)
 
@@ -269,7 +288,7 @@ In this use case, you want to display a table and simple line visualization that
    1. Drag **[!UICONTROL HOUR(Daterangeday)]** from **[!UICONTROL Columns]** to **[!UICONTROL Rows]**.
    1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the dropdown menu in the toolbar.
 
-      Your **[!UICONTROL Data]** view should look like below.
+      Your Tableau Desktop should look like below.
 
       ![Tableau Desktop Data](assets/uc3-tableau-data.png)
 
@@ -290,9 +309,11 @@ In this use case, you want to display a table and simple line visualization that
 
 ## Monthly trend
 
-In this use case, you want to display a table and simple line visualization that shows an monthly trend of occurrences for January 1, 2023 - January 1, 2024.
+In this use case, you want to display a table and simple line visualization that shows an monthly trend of occurrence (events) for 2023.
 
 +++ Customer Journey Analytics
+
+An example **[!UICONTROL Monthly Trend]** panel for the use case:
 
 ![Customer Journey Analytics Monthly Trend visualization](assets/cja_monthly_trend.png)
 
@@ -322,13 +343,13 @@ In this use case, you want to display a table and simple line visualization that
    1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `1/1/2024.` You can use the calendar icon to pick and select dates.
    1. Select **[!UICONTROL Apply filter]**.
    
-   You see the table updated with the applied **[!UICONTROL daterangeday]** filter.
+   You see the table updated with the applied **[!UICONTROL daterangemonth]** filter.
 
 1. In the **[!UICONTROL Visualizations]** pane:
 
    1. Select the **[!UICONTROL Line chart]** visualization.
 
-   A line chart visualization replaces the table while using the same data as the table.
+   A line chart visualization replaces the table while using the same data as the table. Your Power BI Desktop should look like below.
 
    ![Power BI Desktop Use Case 2 Date range filter](assets/uc4-pbi-filter-daterange.png)
 
@@ -337,7 +358,7 @@ In this use case, you want to display a table and simple line visualization that
    1. Select ![More](/help/assets/icons/More.svg).
    1. From the context menu, select **[!UICONTROL Show as a table]**.
 
-   The main view is updated to show both a line visualization and a table.
+   The main view is updated to show both a line visualization and a table. Your Power BI Desktop should look like below.
 
    ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc4-pbi-filter-final.png)
 
@@ -356,7 +377,7 @@ In this use case, you want to display a table and simple line visualization that
       * The values is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
    1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the dropdown menu in the toolbar.
 
-      Your Sheet 1 view should look like below.
+      Your Tableau Desktop should look like below.
 
       ![Tableau Desktop Graph](assets/uc4-tableau-graph.png)
 
@@ -368,7 +389,7 @@ In this use case, you want to display a table and simple line visualization that
    1. Drag **[!UICONTROL MONTH(Daterangeday)]** from **[!UICONTROL Columns]** to **[!UICONTROL Rows]**.
    1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the dropdown menu in the toolbar.
 
-      Your **[!UICONTROL Data]** view should look like below.
+      Your Tableau Desktop should look like below.
 
       ![Tableau Desktop Data](assets/uc4-tableau-data.png)
 
@@ -377,7 +398,7 @@ In this use case, you want to display a table and simple line visualization that
    1. Drag and drop the **[!UICONTROL Data]** sheet from the **[!UICONTROL Sheets]** shelf below the **[!UICONTROL Graph]** sheet onto the **[!UICONTROL Dashboard 1]** view.
    1. Select the **[!UICONTROL Data]** sheet in the view and modify **[!UICONTROL Entire View]** to **[!UICONTROL Fix Width]**.
 
-      Your **[!UICONTROL Dashboard 1]** view should look like below.
+      Your Tableau Desktop should look like below.
 
       ![Tableau Desktop Dashboard 1](assets/uc4-tableau-dashboard.png)
 
@@ -391,6 +412,8 @@ In this use case, you want to display a table and simple line visualization that
 In this use case, you want to display a table and simple bar visualization that shows the purchases and purchases revenue for product names over 2023.
 
 +++ Customer Journey Analytics
+
+An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 
 ![Customer Journey Analytics Single dimension ranked visualization](assets/cja-single-dimension-ranked.png)
 +++
@@ -426,23 +449,19 @@ In this use case, you want to display a table and simple bar visualization that 
 1. In the **[!UICONTROL Visualization]** pane:
 
    1. Use ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL daterange]** from **[!UICONTROL Columns]**.
-   1. Drag and drop **[!UICONTROL Sum of purchases_revenue]** underneath **[!UICONTROL Sum of purchases]**.
+   1. Drag and drop **[!UICONTROL Sum of purchases_revenue]** underneath **[!UICONTROL Sum of purchases]** in **[!UICONTROL Columns]**.
 
 1. On the Table visualizaton:
    
-   1. Select **[!UICONTROL Sum of purchase_revenue]** to sort the product names in descending purchase revenue order. Your table should now look like below.
-
-   You should notice a discrepancy between what Customer Journey Analytics reports in the Freeform table in Analysis Workspace and what Power BI Desktop reports in this table visualization. This is due to (need some explanation here).
+   1. Select **[!UICONTROL Sum of purchase_revenue]** to sort the product names in descending purchase revenue order. Your Power BI Desktop should look like below.
    
    ![Power BI Desktop Use Case 5 Table status](assets/uc5-pbi-table.png)
-    
-   To fix this.
 
 1. In the **[!UICONTROL Filters]** pane:
 
    1. Select **[!UICONTROL product_name is (All)]**.
    1. Set Filter type to Top N.
-   1. Define the filter to **[!UICONTROL Show items]** **[!UICONTROL Top]** **[!UICONTROL 10]** **[!UICONTROL By value]**.
+   1. Define the filter to **[!UICONTROL Show items]** **[!UICONTROL Top]** `10` **[!UICONTROL By value]**.
    1. Drag and drop **[!UICONTROL purchase_revenue]** into **[!UICONTROL By value]** **[!UICONTROL Add data fields here]**.
    1. Select **[!UICONTROL Apply filter]**.
 
@@ -450,13 +469,17 @@ In this use case, you want to display a table and simple bar visualization that 
 
 1. In the **[!UICONTROL Visualizations]** pane:
 
-   1. Select the **[!UICONTROL Stacked column chart]** visualization.
+   1. Select the **[!UICONTROL Line and stacked column chart]** visualization. 
 
-   A stacked column chart visualization replaces the table while using the same data as the table.
+   A line and stacked column chart visualization replaces the table while using the same data as the table.
+
+1. Drag and drop purchases onto Line y-axis in the Visualizations pane.
+
+   The line and stacked column chart is updated. Your Power BI Desktop should look like below.
 
    ![Power BI Desktop Use Case 5 Graph](assets/uc5-pbi-chart.png)
 
-1. On the stacked column chart visualization:
+1. On the line and stacked column chart visualization:
 
    1. Select ![More](/help/assets/icons/More.svg).
    1. From the context menu, select **[!UICONTROL Show as a table]**.
@@ -470,9 +493,9 @@ In this use case, you want to display a table and simple bar visualization that 
 1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
    1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
    1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
-   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `01/01/2024`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `31/12/2024`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
 
-      ![Tableau Desktop Filter](assets/uc4-tableau-filter.png)
+      ![Tableau Desktop Filter](assets/uc5-tableau-filter.png)
 
    1. Drag and drop **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**.
    1. Drag and drop **[!UICONTROL Purchases]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**.
@@ -482,20 +505,24 @@ In this use case, you want to display a table and simple bar visualization that 
    1. To order both charts in descending purchase revenue order, hover over the Purchase Revenue title and select the sort icon.
    1. To limit the number of entries in the charts, select SUM(Purchase Revenue) in Rows and from the dropdown menu select Filter.
    1. In the **[!UICONTROL Filter \[Purchase Revenue\]]** dialog select **[!UICONTROL Range of values]** and enter appropriate values. For our example: `1,000,000` - `2,000,000`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
-   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the dropdown menu in the toolbar.
+   1. To convert the two bar charts to a dual combination chart, select **[!UICONTROL SUM(Purchases)]** in **[!UICONTROL Rows]** and from the dropdown menu, select **[!UICONTROL Dual Axis]**. The bar charts transform into a scatter plot.
+   1. To fix this
+      1. Select **[!UICONTROL SUM(Purchases)]** in the **[!UICONTROL Marks]** area and select **[!UICONTROL Line]** from the dropdown menu.
+      1. Select **[!UICONTROL SUM(Purchase Revenue)]** in the **[!UICONTROL Marks]** area and select **[!UICONTROL Bar]** from the dropdown menu.
 
-   Your Sheet 1 view should look like below.
+   Your Tableau Desktop should look like below.
 
    ![Tableau Desktop Graph](assets/uc5-tableau-graph.png)
 
 1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Data`.
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1 (2)]** tab context menu to rename the sheet to `Graph`.
-1. Ensure that the **[!UICONTROL Data]** sheet is selected. In the Graph view:
+1. Ensure that the **[!UICONTROL Data]** sheet is selected.
    1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table ]** (upper left top visualization) to modify the content of the two charts to a table.
-   1. To order purchase revenue in descending order, hover over Purchase Revenue in the table and select ![SortOrderDown](/help/assets/icons/SortOrderDown.svg).
+   1. To order purchase revenue in descending order, hover over **[!UICONTROL Purchase Revenue]** in the table and select ![SortOrderDown](/help/assets/icons/SortOrderDown.svg).
+   1. Select **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** dropdown menu.
 
-   Your **[!UICONTROL Data]** view should look like below.
+   Your Tableau Desktop should look like below.
 
    ![Tableau Desktop Data](assets/uc5-tableau-data.png)
 
@@ -515,19 +542,149 @@ In this use case, you want to display a table and simple bar visualization that 
 
 ## Multiple dimension ranked
 
-Synopsis of use case
+In this use case, you want to display a table that breaks down the purchase revenue and purchases for product names within product categories over 2023. On top of that you want to use some visualizations to illustrate both the product category distribution and product name contributions within each product category.
 
-+++ Details
++++ Customer Journey Analytics
+
+An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
+
+![Customer Journey Analytics Multiple Dimension Ranked panel](assets/cja-multipl-dimension-ranked.png)
+
++++
+
++++ BI tools
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop] 
 
-Steps
+1. To ensure the date range apply to all visualizations you will create, drag and drop daterangeday from the Data pane on to Filters on this page.
+   1. Select the **[!UICONTROL daterangeday is (All)]** from **[!UICONTROL Filters on this page]**.
+   1. Select **[!UICONTROL Relative date]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
+   1. Select **[!UICONTROL Apply filter]**.
+   
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL datarangeday]**.
+   1. Select **[!UICONTROL ∑ cm_product_name_count_distinct]**, which is the calculated metric defined in Customer Journey Anaytics.
+
+1. To modify the vertical bar chart to a Table, ensure you have the table selected and select **[!UICONTROL Matrix]** from the **[!UICONTROL Visualizations]** pane.
+   * Drag **[!UICONTROL product_name]** from **[!UICONTROL Columns]** and drop the field underneath **[!UICONTROL product_categor]**y in **[!UICONTROL Rows]** in the **[!UICONTROL Visualization]** pane.
+   
+1. To limit the number of displayed products within the table, select **[!UICONTROL product_name is (All)]** in the **[!UICONTROL Filters]** pane.
+
+   1. Select **[!UICONTROL Advanced filtering]**.
+   1. Select **[!UICONTROL Filter type]** **[!UICONTROL Top N]** **[!UICONTROL Show items]** **[!UICONTROL Top]** `15` **[!UICONTROL By Value]**.
+   1. Drag **[!UICONTROL purchases]**e from the **[!UICONTROL Data]** pane onto the **[!UICONTROL Add data fields here]**.
+   1. Select **[!UICONTROL Apply filter]**.
+
+1. To improve readability, select **[!UICONTROL View]** from the top menu, and select **[!UICONTROL Page View]** > **[!UICONTROL Actual size]** and resize the table visualization.
+
+1. To break down each category in the table, select the **[!UICONTROL +]** at the product category level. Your Power BI Desktop should look like below.
+
+   ![Power BI Desktop Multiple Dimensions Ranked matrix table](assets/uc6-powerbi-data.png)
+
+1. Select **[!UICONTROL Home]** from the top menu, and select **[!UICONTROL New visual]**. A new visual is added to your report.
+
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL product_category]**.
+   1. Select **[!UICONTROL product_name]**.
+   1. Select **[!UICONTROL purchase_revenue]**.
+
+1. To modify the visual, select the bar chart and select **[!UICONTROL Treemap]** from the **[!UICONTROL Visualizations]** pane.
+1. Ensure **[!UICONTROL product_category]** is listed underneath **[!UICONTROL Category]**, and **[!UICONTROL product_name]** is lised underneath **[!UICONTROL Details]** in the **[!UICONTROL Visualizations]** pane.
+
+   Your Power BI Desktop should like below.
+
+   ![Power BI Desktop Multiple Dimensions Ranked treemap](assets/uc6-powerbi-treemap.png)
+
+1. Select **[!UICONTROL Home]** from the top menu, and select **[!UICONTROL New visual]**. A new visual is added to your report.
+
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL product_category]**.
+   1. Select **[!UICONTROL purchase_revenue]**.
+   1. Select **[!UICONTROL purchase]**.
+
+1. In the **[!UICONTROL Visualizations]** pane:
+   1. to modify the visualization, select **[!UICONTROL Line and stacked column chart]**. 
+   1. Drag **[!UICONTROL sum_of_purchases]** from **[!UICONTROL Column y-axis]** to **[!UICONTROL Line y-axis]**.
+
+1. In the report, reshuffle the individual visualizations. 
+
+    Your Power BI Desktop should look like below.
+
+    ![Power BI Desktop Multiple Dimensions Ranked final](assets/uc6-powerbi-final.png)
+
 
 >[!TAB Tableau Desktop] 
 
-Steps
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Relative dates]**, select **[!UICONTROL Years]**, and specify **[!UICONTROL Previous year]**. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+
+      Your Tableau Desktop should look like below.
+
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc6-tableau-filter.png)
+
+   1. Drag **[!UICONTROL Product Category]** and drop next to **[!UICONTROL Columns]**.
+   1. Drag **[!UICONTROL Purchase Revenue]** and drop next to **[!UICONTROL Rows]**. The value changes to **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. Drag Purchases and drop next to **[!UICONTROL Rows]**. The value changes to **[!UICONTROL SUM(Purchases)]**.
+   1. Select **[!UICONTROL SUM(Purchases)]** and from the dropdown menu select **[!UICONTROL Dual Axis]**.
+   1. Select **[!UICONTROL SUM(Purchases)]** in **[!UICONTROL Marks]** and select **[!UICONTROL Line]** from the dropdown menu.
+   1. Select **[!UICONTROL SUM(Purchase Revenue)]** in **[!UICONTROL Marks]** and select **[!UICONTROL Bar]** from the dropdown menu.
+   1. Select **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** menu.
+   1. Select the **[!UICONTROL Purchase Revenue]** title in the chart and ensure the purchase revenue is in ascending order.
+
+      Your Tableau Desktop should look like below.
+
+      ![Tableau Desktop Multiple Dimensions Ranked Category](assets/uc6-tableau-category.png)
+
+1. Rename the current **[!UICONTROL Sheet 1]** sheet to `Category`.
+1. Select **[!UICONTROL New Worksheet]** to create a new sheet, and rename it to `Data`.
+
+   1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Relative dates]**, select **[!UICONTROL Years]**, and specify **[!UICONTROL Previous year]**. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Purchase Revenue]** from **[!UICONTROL Data]** pane to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. Drag **[!UICONTROL Purchase]** from **[!UICONTROL Data]** pane to **[!UICONTROL Columns]**, next to **[!UICONTROL Purchase Revenue]**. The value changes to **[!UICONTROL SUM(Purchases)]**.
+   1. Drag **[!UICONTROL Product Category]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Rows]**.
+   1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Rows]**, next to **[!UICONTROL Product Category]**.
+   1. To change the two horizontal bars to a table, select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
+   1. To limit the number of products, select **[!UICONTROL Purchases]** in **[!UICONTROL Measure Values]**. From the dropdown menu, select **[!UICONTROL Filter]**.
+   1. In the **[!UICONTROL Filter \[Purchases\]]** dialog, select **[!UICONTROL At least]** and enter `7000`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Select **[!UICONTROL Fit Width]** from **[!UICONTROL the]** Fit dropdown menu.
+
+      Your Tableau Desktop should look like below.
+
+      ![Tableau Desktop Multiple Dimension Ranked Data](assets/uc6-tableau-data.png)
+
+1. Select **[!UICONTROL New worksheet]** to create a new sheet and rename it to **[!UICONTROL Treemap]**.
+   1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Relative dates]**, select **[!UICONTROL Years]**, and specify **[!UICONTROL Previous year]**. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Rows]**. Thhe values changes to **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. Drag **[!UICONTROL Purchase]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Rows]**, next to **[!UICONTROL Purchase Revenue]**. The value changes to **[!UICONTROL SUM(Purchases)]**.
+   1. Drag **[!UICONTROL Product Category]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Columns]**.
+   1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Columns]**.
+   1. To change the two vertical bar charts to a treemap, select **[!UICONTROL Treemap]** from **[!UICONTROL Show Me]**.
+   1. To limit the number of products, select **[!UICONTROL Purchases]** in **[!UICONTROL Measure Values]**. From the dropdown menu, select **[!UICONTROL Filter]**.
+   1. In the **[!UICONTROL Filter \[Purchases\]]** dialog, select **[!UICONTROL At least]** and enter `7000`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
+
+      Your Tableau Desktop should look like below.
+
+      ![Tableau Desktop Multiple Dimension Ranked Data](assets/uc6-tableau-treemap.png)
+
+1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
+   1. Drag and drop the **[!UICONTROL Category]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
+   1. Drag and drop the **[!UICONTROL Treemap]** sheet from the **[!UICONTROL Sheets]** shelf below the **[!UICONTROL Category]** sheet onto the **[!UICONTROL Dashboard 1]** view.
+   1. Drag and drop the **[!UICONTROL Data]** sheet from the **[!UICONTROL Sheets]** shelf below the **[!UICONTROL Treemap]** sheet onto the **[!UICONTROL Dashboard 1]** view.
+   1. Resize each of the sheets in the view.
+
+   Your **[!UICONTROL Dashboard 1]** view should look like below.
+
+   ![Tableau Desktop Dashboard 1](assets/uc6-tableau-final.png)
 
 >[!ENDTABS]
 
@@ -536,19 +693,88 @@ Steps
 
 ## Count distinct dimension values
 
-Synopsis of use case
+In this use case, you want to get the distinct number of product names that have been reported on during January 2023.
 
-+++ Details
++++ Customer Journey Analytics
+
+To report on a distinct count of product names, you set up a calculated metric in Customer Journey Analytics, with **[!UICONTROL Title]** `Product Name (Count Distinct)` and **[!UICONTROL External Id]** `product_name_count_distinct`.
+
+![Customer Journey Analytics Product Name (Distincr Count) calculated metric](assets/cja-calc-metric-distinct-count-product-names.png)
+
+You then can use that metric in an example **[!UICONTROL Count Distinct Dimension Values]** panel for the use case:
+
+![Customer Journey Analytics Distinct Count Values](assets/cja-count-distinct-dimension-values.png)
+
++++
+
++++ BI tools
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop] 
 
-Steps
+1. To ensure the date range apply to all visualizations you will create, drag and drop daterangeday from the Data pane on to Filters on this page.
+   1. Select the **[!UICONTROL daterangeday is (All)]** from **[!UICONTROL Filters on this page]**.
+   1. Select **[!UICONTROL Relative date]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
+   1. Select **[!UICONTROL Apply filter]**.
+   
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL datarangeday]**.
+   1. Select **[!UICONTROL ∑ cm_product_name_count_distinct]**, which is the calculated metric defined in Customer Journey Anaytics.
+
+1. To modify the vertical bar chart to a Table, ensure you have the chart selected and select **[!UICONTROL Table]** from the **[!UICONTROL Visualizations]** pane.
+    
+   Your Power BI Desktop should look like below.
+
+   ![Power BI Desktop Multiple Count Distinct table](assets/uc7-powerbi-table.png)
+
+1. Select the table visualization and from the context menu, select **[!UICONTROL Copy]** > **[!UICONTROL Copy visual]**.
+1. Paste the visualization using key combination ctrl-v. The exact copy of the visualization overlaps the original one. Move it to the right in the report area.
+1. To modify the copied visualization from a table to a card, select **[!UICONTROL Card]** from **[!UICONTROL Visualizations]**.
+
+   Your Power BI Desktop should look like below.
+
+   ![Power BI Desktop Multiple Count Distinct table](assets/uc7-powerbi-final.png)
 
 >[!TAB Tableau Desktop] 
 
-Steps
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of datess]**, and select `01/01/2023` - `31/1/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Cm Product Name Count Distinct]** to **[!UICONTROL Rows]**. The value changes to **[!UICONTROL SUM(Cm Product Name Count Distinct)]**. This is the calculated metric you defined in Customer Journey Analytics.
+   1. Drag **[!UICONTROL Daterangeday]** and drop next to **[!UICONTROL Columns]**. Select **[!UICONTROL Daterangeday]** and from the dropdown menu select **[!UICONTROL Day]**.
+   1. To modify the lines visualization to a table, select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
+   1. Select **[!UICONTROL Swap Rows and Columns]** from the toolbar.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
+
+      Your Tableau Desktop should look like below.
+
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc7-tableau-data.png)
+
+1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
+1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Data`.
+1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1 (2)]** tab context menu to rename the sheet to `Card`.
+
+1. Ensure you have selected the **[!UICONTROL Card]** view.
+1. Select **[!UICONTROL DAY(Daterangeday)]** and from the dropdown menu select **[!UICONTROL Month]**. The value changes to **[!UICONTROL MONTH(Daterangeday)]**.
+1. Select **[!UICONTROL SUM(Cm Product Name Count Distinct)]** in **[!UICONTROL Marks]** and from the dropdown menu select **[!UICONTROL Format]**.
+1. To change the font size, in the **[!UICONTROL Format SUM(CM Product Name Count Distinct)]** pane, select **[!UICONTROL Font]** within **[!UICONTROL Default]** and select **[!UICONTROL 72]** for the font size.
+1. To align the number, select **[!UICONTROL Automatic]** next to **[!UICONTROL Alignment]** and set **[!UICONTROL Horizontal]** to centered.
+1. To use whole numbers, select **[!UICONTROL 123.456]** next to **[!UICONTROL Numbers]** and select **[!UICONTROL Number (Custom)]**. Set **[!UICONTROL Decimal places]** to `0`.
+
+   Your Tableau Desktop should look like below.
+
+   ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc7-tableau-card.png)
+
+1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
+   1. Drag and drop the **[!UICONTROL Card]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
+   1. Drag and drop the **[!UICONTROL Data]** sheet from the **[!UICONTROL Sheets]** shelf below the **[!UICONTROL Card]** sheet onto the **[!UICONTROL Dashboard 1]** view.
+
+   Your **[!UICONTROL Dashboard 1]** view should look like below.
+
+   ![Tableau Desktop Dashboard 1](assets/uc7-tableau-final.png)
 
 >[!ENDTABS]
 
