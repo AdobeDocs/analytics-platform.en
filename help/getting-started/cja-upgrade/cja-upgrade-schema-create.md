@@ -10,12 +10,10 @@ hidefromtoc: yes
 # Create an XDM schema to use with Customer Journey Analytics
 
 >[!NOTE]
->
->This documentation should be used after completing the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/).
 > 
->Follow the steps on this page only after you complete all previous steps that were dynamically generated for your organization. 
+>Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
 >
->After you complete the steps on this page, continue following the upgrade steps that were dynamically generated for your organization from the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
+>After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
 
 >[!IMPORTANT]
 >
@@ -56,13 +54,13 @@ To create a schema:
 
    1. Select **[!UICONTROL Finish]**.
 
-1. In the Structure tab of Example Schema:
+1. In the [!UICONTROL **Structure**] tab of your schema:
     
-   1. Select **[!UICONTROL + Add]** in [!UICONTROL Field groups].
-
-      ![Add field group](assets/add-field-group-button.png)
+   1. In the **[!UICONTROL Field groups]** section, select **[!UICONTROL + Add]**.
 
       Field groups are reusable collections of objects and attributes that allow you to easily extend your schema.
+
+      ![Add field group](assets/add-field-group-button.png)
 
    1. In the [!UICONTROL Add fields groups] dialog, select the **[!UICONTROL AEP Web SDK ExperienceEvent]** field group from the list. 
 
@@ -110,7 +108,7 @@ To create a schema:
 
     Select **[!UICONTROL Save]**.
 
-1. Select the root element of your schema displaying the name of the schema, then select the **[!UICONTROL Profile]** switch.
+1. (Optional) If you want to integrate Customer Journey Analytics with RTCDP, select the root element of your schema displaying the name of the schema, then select the **[!UICONTROL Profile]** switch.
 
    You are prompted to enable the schema for profile. Once enabled, when data is ingested into datasets based on this schema, that data is merged into the Real-Time Customer Profile. 
     
@@ -118,7 +116,7 @@ To create a schema:
 
    >[!IMPORTANT]
    >
-   >    Once you save a schema enabled for profile, it can no longer be disabled for profile.
+   >After you enable a schema for profile, it cannot be disabled for profile.
 
    ![Enable schema for profile](./assets/enable-for-profile.png)
 
@@ -142,5 +140,5 @@ To create a schema:
 
    See [Create and edit schemas in the UI](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html) for more information on adding and removing field groups and individual fields to a schema.
 
-1. Continue following the upgrade steps that were dynamically generated for your organization from the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/).
+1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/). 
 
