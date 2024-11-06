@@ -13,7 +13,7 @@ hidefromtoc: yes
 > 
 >Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
 >
->After you complete the steps on this page, continue following the recommended steps or the dynamically generated upgrade steps. 
+>After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
 
 You can use the Tags feature within Adobe Experience Platform to implement code on your site to collect data. This tag management solution lets you deploy code alongside other tagging requirements. Tags offer seamless integration with Adobe Experience Platform using the Adobe Experience Platform Web SDK extension.
 
