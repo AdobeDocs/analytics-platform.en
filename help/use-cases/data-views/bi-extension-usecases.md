@@ -548,7 +548,7 @@ In this use case, you want to display a table that breaks down the purchase reve
 
 An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
-![Customer Journey Analytics Multiple Dimension Ranked panel](assets/cja-multipl-dimension-ranked.png)
+![Customer Journey Analytics Multiple Dimension Ranked panel](assets/cja-multiple-dimension-ranked.png)
 
 +++
 
@@ -558,7 +558,7 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
 >[!TAB Power BI Desktop] 
 
-1. To ensure the date range apply to all visualizations you will create, drag and drop daterangeday from the Data pane on to Filters on this page.
+1. To ensure the date range apply to all visualizations you will create, drag and drop **[!UICONTROL daterangeday]** from the Data pane on to Filters on this page.
    1. Select the **[!UICONTROL daterangeday is (All)]** from **[!UICONTROL Filters on this page]**.
    1. Select **[!UICONTROL Relative date]** as the **[!UICONTROL Filter type]**.
    1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
@@ -713,9 +713,9 @@ You then can use that metric in an example **[!UICONTROL Count Distinct Dimensio
 
 >[!TAB Power BI Desktop] 
 
-1. To ensure the date range apply to all visualizations you will create, drag and drop daterangeday from the Data pane on to Filters on this page.
+1. To ensure the date range apply to all visualizations you will create, drag and drop **[!UICONTROL daterangeday]** from the Data pane on to Filters on this page.
    1. Select the **[!UICONTROL daterangeday is (All)]** from **[!UICONTROL Filters on this page]**.
-   1. Select **[!UICONTROL Relative date]** as the **[!UICONTROL Filter type]**.
+   1. Select **[!UICONTROL RelAdvanced filtering]** as the **[!UICONTROL Filter type]**.
    1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
    1. Select **[!UICONTROL Apply filter]**.
    
@@ -741,7 +741,7 @@ You then can use that metric in an example **[!UICONTROL Count Distinct Dimensio
 
 1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
    1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
-   1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
    1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of datess]**, and select `01/01/2023` - `31/1/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
    1. Drag **[!UICONTROL Cm Product Name Count Distinct]** to **[!UICONTROL Rows]**. The value changes to **[!UICONTROL SUM(Cm Product Name Count Distinct)]**. This is the calculated metric you defined in Customer Journey Analytics.
    1. Drag **[!UICONTROL Daterangeday]** and drop next to **[!UICONTROL Columns]**. Select **[!UICONTROL Daterangeday]** and from the dropdown menu select **[!UICONTROL Day]**.
@@ -784,19 +784,60 @@ You then can use that metric in an example **[!UICONTROL Count Distinct Dimensio
 
 ## Use date range names to filter
 
-Synopsis of use case
+In this use case you want to use a date range that you have defined in Customer Journey Analytics to filter and report on occurrences (events) during the last year.
 
-+++ Details
++++ Customer Journey Analytics
+
+To report using a date range, you set up a date range in Customer Journey Analytics, with **[!UICONTROL Title]** `Last Year 2023`.
+
+![Customer Journey Analytics Use date Range Names to filter](assets/cja-daterange.png)
+
+You then can use that date range in an example **[!UICONTROL Using Date Range Names To Filter]** panel for the use case:
+
+![Customer Journey Analytics Distinct Count Values](assets/cja-using-date-range-filter-names-to-filter.png)
+
+Note how the date range defined in the Freeform table visualization overrules the date range applied to the panel.
+
++++
+
++++ BI tools
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop] 
 
-Steps
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL daterangemonth]**.
+   1. Select **[!UICONTROL daterangeName]**.
+   1. Select **[!UICONTROL ∑ occurrences]**.
+   
+   You see a visualization displaying **[!UICONTROL Error fetching data for this visual]**.
+
+1. In the **[!UICONTROL Filters]** pane:
+
+   1. Select the **[!UICONTROL daterangeName is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Basic filtering]** as the **[!UICONTROL Filter type]**.
+   1. Underneath the **[!UICONTROL Search]** field, select **[!UICONTROL Last Year 2023]**, which is the name of your date range defined in Customer Journey Analytics.
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL daterangeName]** from **[!UICONTROL Columns]**.
+   
+   You see the table updated with the applied **[!UICONTROL daterangeName]** filter. Your Power BI Desktop shoud look like below.
+
+   ![Power BI Desktop Using Date Range Names To Filter](assets/uc8-powerbi-final.png)
 
 >[!TAB Tableau Desktop] 
 
-Steps
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag the **[!UICONTROL Daterange Name]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filter \[Daterange Name\]]** dialog ensure **[!UICONTROL Select from list]** is selected, and select **[!UICONTROL Last Year 2023]** from the list. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Daterangemonth]** entry from the **[!UICONTROL Tables]** list on to **[!UICONTROL Rows]**. Select **[!UICONTROL Daterangemonth]** and select **[!UICONTROL Month]**. The value changes to **[!UICONTROL MONTH(Daterangemonth)]**.
+   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list on to **[!UICONTROL Columns]**. The value canges to **[!UICONTROL SUM(Occurrences)]**.
+   1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
+   1. Select **[!UICONTROL Swap Rows and Columns]** from the toolbar.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
+
+      Your Tableau Desktop should look like below.
+
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc8-tableau-final.png)
 
 >[!ENDTABS]
 
@@ -806,41 +847,138 @@ Steps
 
 ## Use filter names to filter
 
-Synopsis of use case
+In this use case you want to use an existing filter for the Fishing product category that you have defined in Customer Journey Analytics to filter and report on product names and occurrences (events) during January 2023.
 
-+++ Details
++++ Customer Journey Analytics
+
+Inspect the filter that you want to use in Customer Journey Analytics.
+
+![Customer Journey Analytics Use Filter Names To Filter](assets/cja-fishing-products.png)
+
+You then can use that filter in an example **[!UICONTROL Using Date Range Names To Filter]** panel for the use case:
+
+![Customer Journey Analytics Distinct Count Values](assets/cja-using-filter-names-to-filter.png)
+
+
++++
+
++++ BI tools
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop] 
 
-Steps
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL daterange]**.
+   1. Select **[!UICONTROL filterName]**.
+   1. Select **[!UICONTROL product_name]**.
+   1. Select **[!UICONTROL ∑ occurrences]**.
+
+  You see a visualization displaying **[!UICONTROL Error fetching data for this visual]**.
+
+1. In the **[!UICONTROL Filters]** pane:
+
+   1. Select **[!UICONTROL filterName is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Basic filtering]** as the **[!UICONTROL Filter type]**.
+   1. Underneath the **[!UICONTROL Search]** field, select **[!UICONTROL Fishing Products]**, which is the name of the existing filter defined in Customer Journey Analytics.
+   1. Select **[!UICONTROL daterange is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Advanced filtering]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL filterName]** from **[!UICONTROL Columns]**.
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL daterange]** from **[!UICONTROL Columns]**.
+   
+   You see the table updated with the applied **[!UICONTROL filterName]** filter. Your Power BI Desktop shoud look like below.
+
+   ![Power BI Desktop Using Date Range Names To Filter](assets/uc9-powerbi-final.png)
+
 
 >[!TAB Tableau Desktop] 
 
-Steps
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag the **[!UICONTROL Filter Name]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filter \[Filter Name\]]** dialog ensure **[!UICONTROL Select from list]** is selected, and select **[!UICONTROL Fishing Products]** from the list. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of datess]**, and select `01/01/2023` - `1/2/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list to **[!UICONTROL Rows]**.
+   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list on to **[!UICONTROL Columns]**. The value canges to **[!UICONTROL SUM(Occurrences)]**.
+   1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
+
+      Your Tableau Desktop should look like below.
+
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc9-tableau-final.png)   
 
 >[!ENDTABS]
 
 +++
 
 
-
 ## Use dimension values to filter
 
-Synopsis of use case
+In this use case you create a new filter in Customer Journey Analytics that filters on products from the hunting product category. Then you want to use the new filter to filter and report on product names and occurrences (events) for products from the hunting category during January 2023.
 
-+++ Details
++++ Customer Journey Analytics
+
+Create a new filter with **[!UICONTROL Title]** `Hunting Products` in Customer Journey Analytics.
+
+![Customer Journey Analytics Use Dimension Values To Filter](assets/cja-hunting-products.png)
+
+You then can use that filter in an example **[!UICONTROL Using Date Range Names To Filter]** panel for the use case:
+
+![Customer Journey Analytics Distinct Count Values](assets/cja-using-dimension-values-to-filter.png)
+
++++
+
++++ BI tools
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop] 
 
-Steps
+1. Select **[!UICONTROL Home]** from the menu, then select **[!UICONTROL Refresh]** from the toolbar. You need to refresh the connection to pick up the new filter you just definied in Customer Journey Analytics.
+   
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL daterange]**.
+   1. Select **[!UICONTROL filterName]**.
+   1. Select **[!UICONTROL product_name]**.
+   1. Select **[!UICONTROL ∑ occurrences]**.
+
+  You see a visualization displaying **[!UICONTROL Error fetching data for this visual]**.
+
+1. In the **[!UICONTROL Filters]** pane:
+   1. Select **[!UICONTROL filterName is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Basic filtering]** as the **[!UICONTROL Filter type]**.
+   1. Underneath the **[!UICONTROL Search]** field, select **[!UICONTROL Hunting Products]**, which is the name of the existing filter defined in Customer Journey Analytics.
+   1. Select **[!UICONTROL daterange is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Advanced filtering]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL filterName]** from **[!UICONTROL Columns]**.
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL daterange]** from **[!UICONTROL Columns]**.
+   
+   You see the table updated with the applied **[!UICONTROL filterName]** filter. Your Power BI Desktop shoud look like below.
+
+   ![Power BI Desktop Using Date Range Names To Filter](assets/uc10-powerbi-final.png)
+
+
 
 >[!TAB Tableau Desktop] 
 
-Steps
+1. In the **[!UICONTROL Data Source]** view, underneath **[!UICONTROL Data]**, from the context menu on **[!UICONTROL cc_data_view(prod:cja%3FFLATTEN)]**, select **[!UICONTROL Refresh]**.
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag the **[!UICONTROL Filter Name]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filter \[Filter Name\]]** dialog ensure **[!UICONTROL Select from list]** is selected, and select **[!UICONTROL Hunting Products]** from the list. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of datess]**, and select `01/01/2023` - `1/2/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list to **[!UICONTROL Rows]**.
+   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list on to **[!UICONTROL Columns]**. The value canges to **[!UICONTROL SUM(Occurrences)]**.
+   1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
+
+      Your Tableau Desktop should look like below.
+
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc10-tableau-final.png)   
 
 >[!ENDTABS]
 
@@ -852,44 +990,349 @@ Steps
 
 Synopsis of use case
 
++++ Customer Journey Analytics
+
+You want to report on purchase revenue and purchases for product names during January 2023, sorted in descending purchase revenue order.
+
+An example **[!UICONTROL Sort]** panel for the use case:
+
+![Customer Journey Analytics Sort panel](assets/cja-sort.png)
+
++++
+
 +++ Details
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop] 
 
-Steps
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL daterange]**.
+   1. Select **[!UICONTROL product_namr]**.
+   1. Select **[!UICONTROL ∑ purchase_revenue]**.
+   1. Select **[!UICONTROL ∑ purchases]**.
+
+1. In the **[!UICONTROL Filters]** pane:
+   1. Select **[!UICONTROL daterange is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Advanced filtering]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
+
+1. In the Visualizations pane:
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove daterange from Columns.
+   1. Drag Sum of purchase_revenue to the bottom of Column items.
+
+1. In the report, select Sum of purchase_revenue to sort the table in descending order of purchase revenue.
+
+   Your Power BI Desktop shoud look like below.
+
+   ![Power BI Desktop Using Date Range Names To Filter](assets/uc11-powerbi-final.png)
+
+The query executed by Power BI Desktop using the BI extension is not including a `sort` statement. This implies that the sort in descending order is client based.
+
+```sql
+select "_"."product_name",
+    "_"."a0",
+    "_"."a1"
+from 
+(
+    select "rows"."product_name" as "product_name",
+        sum("rows"."purchases") as "a0",
+        sum("rows"."purchase_revenue") as "a1"
+    from 
+    (
+        select "_"."daterangeName",
+            "_"."daterange",
+            "_"."filterId",
+            "_"."filterName",
+            "_"."timestamp",
+            "_"."affiliate_name",
+            "_"."affiliate_url",
+            "_"."commerce.order.priceTotal",
+            "_"."customer_city",
+            "_"."customer_region",
+            "_"."daterangeday",
+            "_"."daterangefifteenminute",
+            "_"."daterangefiveminute",
+            "_"."daterangehour",
+            "_"."daterangeminute",
+            "_"."daterangemonth",
+            "_"."daterangequarter",
+            "_"."daterangesecond",
+            "_"."daterangethirtyminute",
+            "_"."daterangeweek",
+            "_"."daterangeyear",
+            "_"."hitdatetime",
+            "_"."page_name",
+            "_"."page_url",
+            "_"."product_category",
+            "_"."product_name",
+            "_"."product_short_review",
+            "_"."product_subCategory",
+            "_"."referrer_url",
+            "_"."search_engine",
+            "_"."search_keywords",
+            "_"."store_city",
+            "_"."store_name",
+            "_"."store_region",
+            "_"."store_type",
+            "_"."timepartdayofmonth",
+            "_"."timepartdayofweek",
+            "_"."timepartdayofyear",
+            "_"."timeparthourofday",
+            "_"."timepartminuteofhour",
+            "_"."timepartmonthofyear",
+            "_"."timepartquarterofyear",
+            "_"."timepartweekofyear",
+            "_"."cm_session_end_rate_defaultmetric",
+            "_"."cm_session_person_defaultmetric",
+            "_"."cm_session_start_rate_defaultmetric",
+            "_"."cm_timespent_person_defaultmetric",
+            "_"."cm_timespent_session_defaultmetric",
+            "_"."cm_product_name_count_distinct",
+            "_"."ad_views",
+            "_"."adobe_sessionends",
+            "_"."adobe_sessionstarts",
+            "_"."adobe_timespent",
+            "_"."exchange_buybacks",
+            "_"."exchange_cost",
+            "_"."exchange_purchases",
+            "_"."exchange_revenue",
+            "_"."occurrences",
+            "_"."page_views",
+            "_"."product_quantity",
+            "_"."product_reviews",
+            "_"."product_views",
+            "_"."purchase_revenue",
+            "_"."purchases",
+            "_"."visitors",
+            "_"."visits"
+        from "public"."cc_data_view" "_"
+        where "_"."daterange" < date '2023-02-01' and "_"."daterange" >= date '2023-01-01'
+    ) "rows"
+    group by "product_name"
+) "_"
+where not "_"."a0" is null or not "_"."a1" is null
+limit 1000001
+```
+
 
 >[!TAB Tableau Desktop] 
 
-Steps
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of datess]**, and select `01/01/2023` - `1/2/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list to **[!UICONTROL Rows]**.
+   1. Drag **[!UICONTROL Purchases]** entry from the **[!UICONTROL Tables]** list on to **[!UICONTROL Columns]**. The value canges to **[!UICONTROL SUM(Purchases)]**.
+   1. Drag **[!UICONTROL Purchase Revenue]** entry from the **[!UICONTROL Tables]** list on to **[!UICONTROL Columns]**, next to **[!UICONTROL SUM(Purchases)]**. The value canges to **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
+   1. Select the **[!UICONTROL Purchase Revenue]** column header and sort the table on this column in descending order.
+
+      Your Tableau Desktop should look like below.
+
+      ![Tableau Desktop Sort](assets/uc11-tableau-final.png)   
+
+The query executed by Tableau Desktop using the BI extension is not including a `sort` statement. This implies that the sort in descending order is client based.
+
+```sql
+SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
+  SUM("cc_data_view"."occurrences") AS "sum:occurrences:ok",
+  SUM("cc_data_view"."purchase_revenue") AS "sum:purchase_revenue:ok",
+  SUM("cc_data_view"."purchases") AS "sum:purchases:ok"
+FROM "public"."cc_data_view" "cc_data_view"
+WHERE (("cc_data_view"."daterange" >= (DATE '2023-01-01')) AND ("cc_data_view"."daterange" <= (DATE '2023-02-01')))
+GROUP BY 1
+```
 
 >[!ENDTABS]
 
 +++
-
-
 
 ## Limits
 
-Synopsis of use case
+In this use case you want to report on the top 5 occurrences of product names during 2023.
 
-+++ Details
++++ Customer Journey Analytics
+
+An example **[!UICONTROL Limit]** panel for the use case:
+
+![Customer Journey Analytics Limit panel](assets/cja-limit.png)
+
++++
+
++++ BI tools
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop] 
 
-Steps
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL daterange]**.
+   1. Select **[!UICONTROL product_name]**.
+   1. Select **[!UICONTROL ∑ occurrences]**.
+
+1. In the **[!UICONTROL Filters]** pane:
+   1. Select **[!UICONTROL daterange is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Relative date]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is in the last]** `1` **[!UICONTROL calendar years]**.
+   1. Select **[!UICONTROL Apply filter]**.
+   1. Select product_name is (All) from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Top N]** as the **[!UICONTROL Filter type]**.
+   1. Select **[!UICONTROL Show Items]** **[!UICONTROL Top]** `5` **[!UICONTROL By value]**.
+   1. Drag and drop **[!UICONTROL ∑ occurrences]** from the **[!UICONTROL Data]** pane and drop it on **[!UICONTROL Add data fields here]**.
+   1. Select **[!UICONTROL Apply filter]**.
+
+1. In the Visualization pane:
+   * Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove daterange from Columns.
+
+   Your Power BI Desktop shoud look like below.
+
+   ![Power BI Desktop Using Date Range Names To Filter](assets/uc12-powerbi-final.png)
+
+The query executed by Power BI Desktop using the BI extension is including a `limit` statement but not the one expected. The limit in the query is enforced by the explicit results return by the client.
+
+```sql
+select "_"."product_name",
+    "_"."a0"
+from 
+(
+    select "rows"."product_name" as "product_name",
+        sum("rows"."occurrences") as "a0"
+    from 
+    (
+        select "_"."daterangeName",
+            "_"."daterange",
+            "_"."filterId",
+            "_"."filterName",
+            "_"."timestamp",
+            "_"."affiliate_name",
+            "_"."affiliate_url",
+            "_"."commerce.order.priceTotal",
+            "_"."customer_city",
+            "_"."customer_region",
+            "_"."daterangeday",
+            "_"."daterangefifteenminute",
+            "_"."daterangefiveminute",
+            "_"."daterangehour",
+            "_"."daterangeminute",
+            "_"."daterangemonth",
+            "_"."daterangequarter",
+            "_"."daterangesecond",
+            "_"."daterangethirtyminute",
+            "_"."daterangeweek",
+            "_"."daterangeyear",
+            "_"."hitdatetime",
+            "_"."page_name",
+            "_"."page_url",
+            "_"."product_category",
+            "_"."product_name",
+            "_"."product_short_review",
+            "_"."product_subCategory",
+            "_"."referrer_url",
+            "_"."search_engine",
+            "_"."search_keywords",
+            "_"."store_city",
+            "_"."store_name",
+            "_"."store_region",
+            "_"."store_type",
+            "_"."timepartdayofmonth",
+            "_"."timepartdayofweek",
+            "_"."timepartdayofyear",
+            "_"."timeparthourofday",
+            "_"."timepartminuteofhour",
+            "_"."timepartmonthofyear",
+            "_"."timepartquarterofyear",
+            "_"."timepartweekofyear",
+            "_"."cm_session_end_rate_defaultmetric",
+            "_"."cm_session_person_defaultmetric",
+            "_"."cm_session_start_rate_defaultmetric",
+            "_"."cm_timespent_person_defaultmetric",
+            "_"."cm_timespent_session_defaultmetric",
+            "_"."cm_product_name_count_distinct",
+            "_"."ad_views",
+            "_"."adobe_sessionends",
+            "_"."adobe_sessionstarts",
+            "_"."adobe_timespent",
+            "_"."exchange_buybacks",
+            "_"."exchange_cost",
+            "_"."exchange_purchases",
+            "_"."exchange_revenue",
+            "_"."occurrences",
+            "_"."page_views",
+            "_"."product_quantity",
+            "_"."product_reviews",
+            "_"."product_views",
+            "_"."purchase_revenue",
+            "_"."purchases",
+            "_"."visitors",
+            "_"."visits"
+        from "public"."cc_data_view" "_"
+        where (("_"."product_name" in ('Saltwater Monofilament Line', 'Pop-Up Beach Tent', 'Instant Pop-Up Tent', 'Envelop Sleeping Bag', 'Waterproof Tackle Bag')) and "_"."daterange" < date '2024-01-01') and "_"."daterange" >= date '2023-01-01'
+    ) "rows"
+    group by "product_name"
+) "_"
+where not "_"."a0" is null
+limit 1000001
+```
 
 >[!TAB Tableau Desktop] 
 
-Steps
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Relative dates]**, select **[!UICONTROL Years]**, and select **[!UICONTROL Previous years]**. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list to **[!UICONTROL Rows]**.
+   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list on to **[!UICONTROL Columns]**. The value canges to **[!UICONTROL SUM(Occurrences)]**.
+   1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
+   1. Select Product Name in Rows. Select Filter from the dropdown menu.
+      1. In the **[!UICONTROL Filter \[Product Name\]]** dialog, select the **[!UICONTROL Top]** tab.
+      1. Select **[!UICONTROL By field:]** **[!UICONTROL Top]** `5` **[!UICONTROL by Occurences]** **[!UICONTROL Sum]**.
+      1. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+      
+         You will notice the table disappears. Selecting the top 5 product names by occurrences does not work properly using this filter.
+      1. Select the **[!UICONTROL Product Name]** in the **[!UICONTROL Filter]** shelf and from the dropdown menu select **[!UICONTROL Remove]**. The table reappears.
+   1. Select **[!UICONTROL SUM(Occurrences)]** in the **[!UICONTROL Marks]** shelf. Select **[!UICONTROL Filter]** from the dropdown menu.
+      1. In the **[!UICONTROL Filter \[Occurrences\]]** dialog, select **[!UICONTROL At least]**.
+      1. Enter `47.799` as the value. This ensures only 5 top items are shown in the table. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+
+         Your Tableau Desktop should look like below.
+
+         ![Tableau Desktop Limits](assets/uc12-tableau-final.png)   
+
+The query executed by Tableau Desktop using the BI extension upon using a Top 5 occurrences filter on Product Names is shown below.
+
+```sql
+SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
+  SUM("cc_data_view"."occurrences") AS "sum:occurrences:ok"
+FROM "public"."cc_data_view" "cc_data_view"
+  INNER JOIN (
+  SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
+    SUM("cc_data_view"."occurrences") AS "$__alias__0"
+  FROM "public"."cc_data_view" "cc_data_view"
+  GROUP BY 1
+  ORDER BY 2 DESC,
+    1 ASC
+  LIMIT 5
+) "t0" ON (CAST("cc_data_view"."product_name" AS TEXT) = "t0"."product_name")
+WHERE (("cc_data_view"."daterange" >= (TIMESTAMP '2023-01-01 00:00:00.000')) AND ("cc_data_view"."daterange" < (TIMESTAMP '2024-01-01 00:00:00.000')))
+GROUP BY 1
+```
+
+The query executed by Tableau Desktop using the BI extension when executing a Top 5 occurcences filter on Occurrences is shown below. The limit is not visible in the query and only applied at the client-level.
+
+```sql
+SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
+  SUM("cc_data_view"."occurrences") AS "sum:occurrences:ok"
+FROM "public"."cc_data_view" "cc_data_view"
+WHERE (("cc_data_view"."daterange" >= (TIMESTAMP '2023-01-01 00:00:00.000')) AND ("cc_data_view"."daterange" < (TIMESTAMP '2024-01-01 00:00:00.000')))
+GROUP BY 1
+```
 
 >[!ENDTABS]
 
 +++
-
 
 
 ## To FLATTEN or not
