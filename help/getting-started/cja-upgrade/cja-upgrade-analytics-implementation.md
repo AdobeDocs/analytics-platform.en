@@ -17,7 +17,7 @@ hidefromtoc: yes
 
 There are various ways to upgrade to Customer Journey Analytics, but not all upgrade paths are available for each type of Adobe Analytics implementation. However, the recommended upgrade path is available regardless of how Adobe Analytics is implemented in your organization.
 
-Use the information below to help you understand which upgrade paths are available to your organization. 
+Use the information below to help you understand your current Adobe Analytics implementation and which upgrade paths are available to your organization. 
 
 Contact your Adobe representative if you need more specific advice, guidance, or support.
 
