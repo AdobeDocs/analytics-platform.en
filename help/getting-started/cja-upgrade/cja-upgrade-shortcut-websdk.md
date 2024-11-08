@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 83927cf0-b3b4-42b4-9ca5-0c81c091383f
 ---
 # Upgrade shortcut: Migrate an AppMeasurement or Analytics extension implementation to use the Web SDK {#shortcut-migrate-websdk}
 
@@ -49,4 +50,3 @@ The basic steps for migrating an AppMeasurement or Analytics extension implement
 1. (Optional) Create an XDM schema for your organization as you have time.
 
 1. (Conditional) If you created an XDM schema, use datastream mapping to map all of the fields in the data object to your XDM schema.
-

@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
 ---
 # Add Platform as a service to your datastream
 
@@ -47,4 +48,4 @@ With the datastream available, you need to add Platform as a service:
 
    See [Datastreams overview](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) for more information on how to configure a datastream and how to handle sensitive data.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/). 
+1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).

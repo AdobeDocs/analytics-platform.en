@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 ---
 # Architect your schema for use with Customer Journey Analytics
 
@@ -23,5 +24,4 @@ Before you begin creating your XDM schema:
 
 1. Determine your organization's ideal schema design for Customer Journey Analytics, while taking into account any other Adobe Experience Platform applications used in your organization. 
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/). 
-
+1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).

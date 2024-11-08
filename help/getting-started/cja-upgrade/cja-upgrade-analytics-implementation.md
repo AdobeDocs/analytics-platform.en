@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 ---
 # Understand your Adobe Analytics implementation and how it affects your upgrade to Customer Journey Analytics
 
@@ -30,4 +31,3 @@ Contact your Adobe representative if you need more specific advice, guidance, or
 | Experience Platform Mobile SDK | The Experience Platform Mobile SDK is Adobe's current recommended method to implement Adobe Analytics for mobile data. The Adobe Experience Platform Edge Network allows you to send data destined to multiple products to a centralized location.<p>The Adobe Experience Platform Mobile SDK helps power Adobe's Experience Cloud solutions and services in your mobile apps. </p><p>For more information about this implementation type, see [Implement Adobe Analytics using the Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/mobile-sdk/overview)</p> | <ul><li>(Recommended) New implementation of the Experience Platform Web SDK with the Analytics Source Connector</li><li>Configure the Adobe Analytics Web SDK implementation to send data to Platform</li></ul> | 
 
 {style="table-layout:auto"}
-

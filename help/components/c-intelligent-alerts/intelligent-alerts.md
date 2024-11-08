@@ -3,6 +3,7 @@ description: Alerts allow for granular control over notifications, and integrati
 title: Alerts overview
 feature: Workspace Basics
 role: User, Admin
+exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
 ---
 # Alerts overview
 
@@ -53,4 +54,3 @@ For information about how to create alerts in Customer Journey Analytics, see [C
 You can manage existing alerts in the Alerts manager. You can perform various management tasks on alerts, such as tagging, renaming, deleting, and more.
 
 For more information about how to manage existing alerts in Customer Journey Analytics, see [Manage alerts](/help/components/c-intelligent-alerts/alert-manager.md).
-

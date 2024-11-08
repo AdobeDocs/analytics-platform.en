@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: b6de921c-4f96-40ad-bb49-873094627192
 ---
 # Use Tags to implement the Web SDK for Customer Journey Analytics
 
@@ -256,4 +257,4 @@ To get the code that references your tag:
 
    See [Environments](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?) for more information.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/). 
+1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
