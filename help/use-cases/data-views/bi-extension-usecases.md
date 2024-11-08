@@ -39,9 +39,9 @@ In use cases 2 - 12, instructions are available on how to accomplish similar Cus
 
 Use cases 13 - 15 provide more details on:
 
-- Different ways to connect to the BI tools.
-- Transformations that occur when you use a BI tools to report and analyze.
-- Visualization similarities and differences between Customer Journey Analytics and BI tools.
+* Different ways to connect to the BI tools.
+* Transformations that occur when you use a BI tools to report and analyze.
+* Visualization similarities and differences between Customer Journey Analytics and BI tools.
 
 
 ## Connect and validate
