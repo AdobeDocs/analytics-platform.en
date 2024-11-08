@@ -43,6 +43,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Recommended process](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
     + [Understand Analytics implementation](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
     + [Create lookup datasets for classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+    + [Create a marketing channel derived field](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
     + [Use tags to upgrade](/help/getting-started/cja-upgrade/cja-upgrade-websdk-tags.md)
     + [Architect your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
     + [Create your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
