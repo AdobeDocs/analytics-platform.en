@@ -10,7 +10,7 @@ exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
 ---
 # BI extension use cases
 
-This article documents how to accomplish a number of use cases using the Customer Journey Analytics BI extension. For each use case explains the Customer Journey Analytics functionality, followed by details for each of the BI tools supported:
+This article documents how to accomplish a number of use cases using the Customer Journey Analytics BI extension. Each use case explains the Customer Journey Analytics functionality, followed with details for each of the BI tools supported:
 
 * **Power BI Desktop**. The version used is 2.137.1102.0 64-bit (October 2024).
 * **Tableau Desktop**. The version used is 2024.1.5 (20241.24.0705.0334) 64-bit.
@@ -1464,21 +1464,21 @@ Date range dimensions from Customer Journey Analytics, like **[!UICONTROL Day]**
 Metrics from Customer Journey Analytics are identified by the [!UICONTROL Component ID]. The [!UICONTROL Component ID] is defined in your Customer Journey Analytics data view. For example, metric **[!UICONTROL Purchase Revenue]** in Customer Journey Analytics has a [!UICONTROL Component ID] **[!UICONTROL purchase_revenue]**, which is the name for the metric in Power BI Desktop. A **[!UICONTROL ∑]** indicates metrics. When you use a metric in any visualization, the metric is renamed to **[!UICONTROL Sum of *metric*]**.
 
 **Filters**
-Filters you have defined in Customer Journey Analytics are available as part of the **[!UICONTROL filterName]** field. When you use a **[!UICONTROL filterName]** field in Power BI Desktop, you can specify which filter to use.
+Filters that you define in Customer Journey Analytics are available as part of the **[!UICONTROL filterName]** field. When you use a **[!UICONTROL filterName]** field in Power BI Desktop, you can specify which filter to use.
 
 **Calculated metrics**
-Calculated metrics you define in Customer Journey Analytics are identified by the [!UICONTROL External ID] you have defined for the calculated metric. For example, calculated metric **[!UICONTROL Product Name (Count Distinct)]** has [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** and is shown as **[!UICONTROL cm_product_name_count_distinc]**t in Power BI Desktop.
+Calculated metrics that you define in Customer Journey Analytics are identified by the [!UICONTROL External ID] you have defined for the calculated metric. For example, calculated metric **[!UICONTROL Product Name (Count Distinct)]** has [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** and is shown as **[!UICONTROL cm_product_name_count_distinc]**t in Power BI Desktop.
 
 **Date ranges**
-Date ranges that you have defined in Customer Journey Analytics are available as part of the **[!UICONTROL daterangeName]** field. When you use a **[!UICONTROL daterangeName]** field, you can specify which date range to use.
+Date ranges that you define in Customer Journey Analytics are available as part of the **[!UICONTROL daterangeName]** field. When you use a **[!UICONTROL daterangeName]** field, you can specify which date range to use.
 
 **Custom transformations**
-Power BI Desktop provides custom transformation functionality using [Data Analysis Expressions (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). As an example, you want to execute the Single dimension ranked use case with product names in lower case. To do this:
+Power BI Desktop provides custom transformation functionality using [Data Analysis Expressions (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). As an example, you want to execute the Single dimension ranked use case with product names in lower case.
 
 1. In the report view, select the bar visualization.
 1. Select product_name in the Data pane.
 1. Select New column in the toolbar.
-1. In the formula editor define a new column named `product_name_lower`, like `product_name_lower = LOWER('public.cc_data_view[product_name])`.
+1. In the formula editor, define a new column named `product_name_lower`, like `product_name_lower = LOWER('public.cc_data_view[product_name])`.
    ![Power BI Desktop Transformation to Lower](assets/uc14-powerbi-transformation.png)
 1. Ensure you select the new product_name_lower column in the Data pane instead of the product_name column.
 1. Select Report as Table from ![More](/help/assets/icons/More.svg) in the table visualization.
@@ -1540,16 +1540,16 @@ Date range dimensions from Customer Journey Analytics, like **[!UICONTROL Day]**
 Metrics from Customer Journey Analytics are identified by the [!UICONTROL Component Name]. The [!UICONTROL Component Name] is defined in your Customer Journey Analytics data view. For example, metric **[!UICONTROL Purchase Revenue]** in Customer Journey Analytics has a [!UICONTROL Component Name] **[!UICONTROL Purchase Revenue]**, which is the name for the metric in Tableau. All metrics are identified by **[!UICONTROL #]**. When you use a metric in any visualization, the metric is renamed to **[!UICONTROL Sum(*metric*)]**.
 
 **Filters**
-Filters you have defined in Customer Journey Analytics are available as part of the **[!UICONTROL Filter Name]** field. When you use a **[!UICONTROL Filter Name]** field in Tableau, you can specify which filter to use.
+Filters that you define in Customer Journey Analytics are available as part of the **[!UICONTROL Filter Name]** field. When you use a **[!UICONTROL Filter Name]** field in Tableau, you can specify which filter to use.
 
 **Calculated metrics**
-Calculated metrics you have defined in Customer Journey Analytics are identified by the [!UICONTROL Title] you have defined for the calculated metric. For example, calculated metric **[!UICONTROL Product Name (Count Distinct)]** has [!UICONTROL Title] **[!UICONTROL Product Name (Count Distinct)]** and is shown as **[!UICONTROL Cm Product Name Count Distinct]** in Tableau.
+Calculated metrics that you define in Customer Journey Analytics are identified by the [!UICONTROL Title] you have defined for the calculated metric. For example, calculated metric **[!UICONTROL Product Name (Count Distinct)]** has [!UICONTROL Title] **[!UICONTROL Product Name (Count Distinct)]** and is shown as **[!UICONTROL Cm Product Name Count Distinct]** in Tableau.
 
 **Date ranges**
-Date ranges that you have defined in Customer Journey Analytics are available as part of the **[!UICONTROL Daterange Name]** field. When you use a **[!UICONTROL Daterange Name]** field, you can specify which date range to use.
+Date ranges that you define in Customer Journey Analytics are available as part of the **[!UICONTROL Daterange Name]** field. When you use a **[!UICONTROL Daterange Name]** field, you can specify which date range to use.
 
 **Custom transformations**
-Tableau Desktop provides custom transformation functionality using [Calculated Fields](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). As an example, you want to execute the Single dimension ranked use case with product names in lower case. To do this:
+Tableau Desktop provides custom transformation functionality using [Calculated Fields](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). As an example, you want to execute the Single dimension ranked use case with product names in lower case.
 
 1. Select **[!UICONTROL Analysis]** > **[!UICONTROL Create Calculated Field]** from the main menu.
    1. Define **[!UICONTROL Lowercase Product Name]** using the function `LOWER([Product Name])`.
