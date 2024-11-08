@@ -57,6 +57,10 @@ Repeat this process for each dimension that contains data that you want to class
 
 To create a lookup dataset for use with a schema in Customer Journey Analytics:
 
+>[!NOTE]
+>
+>The following process uses a CSV file to create the dataset. You could also use any other method available for importing data into Experience Platform, such as setting up a datastream.
+
 1. In Adobe Experience Platform, select **[!UICONTROL Workflows]** in the left rail. 
 
    ![Create custom](assets/lookup-dataset-workflows.png)
