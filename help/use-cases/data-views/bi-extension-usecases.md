@@ -1472,6 +1472,61 @@ Calculated metrics you define in Customer Journey Analytics are identified by th
 **Date ranges**
 Date ranges that you have defined in Customer Journey Analytics are available as part of the **[!UICONTROL daterangeName]** field. When you use a **[!UICONTROL daterangeName]** field, you can specify which date range to use.
 
+**Custom transformations**
+Power BI Desktop provides custom transformation functionality using [Data Analysis Expressions (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). As an example, you want to execute the Single dimension ranked use case with product names in lower case. To do this:
+
+1. In the report view, select the bar visualization.
+1. Select product_name in the Data pane.
+1. Select New column in the toolbar.
+1. In the formula editor define a new column named `product_name_lower`, like `product_name_lower = LOWER('public.cc_data_view[product_name])`.
+   ![Power BI Desktop Transformation to Lower](assets/uc14-powerbi-transformation.png)
+1. Ensure you select the new product_name_lower column in the Data pane instead of the product_name column.
+1. Select Report as Table from ![More](/help/assets/icons/More.svg) in the table visualization.
+
+   Your Power BI Desktop should look like below. 
+   ![Power BI Desktop Transformation Final](assets/uc14-powerbi-final.png)
+
+The custom transformation result in an updates to SQL queries. See the use of the `lower` function in the SQL example below:
+
+```sql
+select "_"."product_name_lower",
+    "_"."a0",
+    "_"."a1"
+from 
+(
+    select "rows"."product_name_lower" as "product_name_lower",
+        sum("rows"."purchases") as "a0",
+        sum("rows"."purchase_revenue") as "a1"
+    from 
+    (
+        select "_"."daterange" as "daterange",
+            "_"."product_name" as "product_name",
+            "_"."purchase_revenue" as "purchase_revenue",
+            "_"."purchases" as "purchases",
+            lower("_"."product_name") as "product_name_lower"
+        from 
+        (
+            select "_"."daterange",
+                "_"."product_name",
+                "_"."purchase_revenue",
+                "_"."purchases"
+            from 
+            (
+                select "daterange",
+                    "product_name",
+                    "purchase_revenue",
+                    "purchases"
+                from "public"."cc_data_view" "$Table"
+            ) "_"
+            where ("_"."daterange" < date '2024-01-01' and "_"."daterange" >= date '2023-01-01') and ("_"."product_name" in ('4G Cellular Trail Camera', '4K Wildlife Trail Camera', 'Wireless Trail Camera', '8-Person Cabin Tent', '20MP No-Glow Trail Camera', 'HD Wildlife Camera', '4-Season Mountaineering Tent', 'Trail Camera', '16MP Trail Camera with Solar Panel', '10-Person Family Tent'))
+        ) "_"
+    ) "rows"
+    group by "product_name_lower"
+) "_"
+where not "_"."a0" is null or not "_"."a1" is null
+limit 1000001
+
+```
 
 >[!TAB Tableau Desktop] 
 
@@ -1492,6 +1547,34 @@ Calculated metrics you have defined in Customer Journey Analytics are identified
 
 **Date ranges**
 Date ranges that you have defined in Customer Journey Analytics are available as part of the **[!UICONTROL Daterange Name]** field. When you use a **[!UICONTROL Daterange Name]** field, you can specify which date range to use.
+
+**Custom transformations**
+Tableau Desktop provides custom transformation functionality using [Calculated Fields](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). As an example, you want to execute the Single dimension ranked use case with product names in lower case. To do this:
+
+1. Select **[!UICONTROL Analysis]** > **[!UICONTROL Create Calculated Field]** from the main menu.
+   1. Define **[!UICONTROL Lowercase Product Name]** using the function `LOWER([Product Name])`.
+      ![Tableau Calculated Field](assets/uc14-tableau-calculated-field.png)
+   1. Select **[!UICONTROL OK]**.
+1. Select the **[!UICONTROL Data]** sheet.
+   1. Drag **[!UICONTROL Lowercase Product Name]** from **[!UICONTROL Tables]** and drop the entry in the field next to **[!UICONTROL Rows]**.
+   1. Remove **[!UICONTROL Product Name]** from **[!UICONTROL Rows]**.
+1. Select **[!UICONTROL Dashboard 1]** view.
+
+Your Tableau Desktop should look like below.
+
+![Tableau Desktop after transformation](assets/uc14-tableau-final.png)
+
+The custom transformation result in an updates to SQL queries. See the use of the `LOWER` function in the SQL example below:
+
+```sql
+SELECT LOWER(CAST(CAST("cc_data_view"."product_name" AS TEXT) AS TEXT)) AS "Calculation_1562467608097775616",
+  SUM("cc_data_view"."purchase_revenue") AS "sum:purchase_revenue:ok",
+  SUM("cc_data_view"."purchases") AS "sum:purchases:ok"
+FROM "public"."cc_data_view" "cc_data_view"
+WHERE (("cc_data_view"."daterange" >= (DATE '2023-01-01')) AND ("cc_data_view"."daterange" <= (DATE '2023-12-31')))
+GROUP BY 1
+HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM("cc_data_view"."purchase_revenue") <= 2000000.00000002))
+```
 
 >[!ENDTABS]
 
@@ -1542,7 +1625,6 @@ The following Customer Journey Analytics visualizations are in a similar experie
 | ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | [Text box](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p> | [Treemap](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#treemaps) |
 | ![Type](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | |
-
 
 >[!TAB Tableau Desktop] 
 
