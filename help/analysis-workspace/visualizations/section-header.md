@@ -3,8 +3,8 @@ title: Section header
 description: A visualization that insert a section header in your Workspace project.
 feature: Visualizations
 role: User
+exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
 ---
-
 # Section header {#section-header}
 
 <!-- markdownlint-disable MD034 -->

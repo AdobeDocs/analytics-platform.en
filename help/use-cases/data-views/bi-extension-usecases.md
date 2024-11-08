@@ -6,6 +6,7 @@ feature: Data Views
 role: User
 hide: yes
 hidefromtoc: yes
+exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
 ---
 # BI extension use cases
 
@@ -1564,5 +1565,3 @@ The following Customer Journey Analytics visualizations are in a similar experie
 >[!ENDTABS]
 
 +++
-
-

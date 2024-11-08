@@ -3,7 +3,7 @@ description: A panel that shows the next or previous dimension items for a speci
 title: Next or previous item panel
 feature: Panels
 role: User, Admin
-
+exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 ---
 # Next or previous item panel {#next-or-previous-item-panel}
 
