@@ -10,48 +10,56 @@ exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
 ---
 # BI extension use cases
 
-This article provides a number of use cases that illustrate how to use the functionality of the BI extension across different BI tools. 
+This article documents how to accomplish a number of use cases using the Customer Journey Analytics BI extension. For each use case explains the Customer Journey Analytics functionality, followed by details for each of the BI tools supported:
+
+* **Power BI Desktop**. The version used is 2.137.1102.0 64-bit (October 2024).
+* **Tableau Desktop**. The version used is 2024.1.5 (20241.24.0705.0334) 64-bit.
 
 The following use cases are documented:
 
-1. [Connect and list data views](#connect-and-list-data-views).
-1. [Daily trend](#daily-trend).
-1. [Hourly trend](#hourly-trend).
-1. [Monthly trend](#monthly-trend).
-1. [Single dimension ranked](#single-dimension-ranked).
-1. [Multiple dimension ranked](#multiple-dimension-ranked).
-1. [Count distinct dimension values](#count-distinct-dimension-values).
-1. [Use date range names to filter](#use-date-range-names-to-filter).
-1. [Use filter names to filter](#use-filter-names-to-filter).
-1. [Use dimension values to filter](#use-dimension-values-to-filter).
-1. [Sort](#sort).
-1. [Limits](#limits).
-1. [To FLATTEN or not](#to-flatten-or-not).
-1. [Transformations](#object-transformations).
-1. [Visualizations](#visualizations).
+* [Connect and list data views](#connect-and-validate)
+* [Daily trend](#daily-trend)
+* [Hourly trend](#hourly-trend)
+* [Monthly trend](#monthly-trend)
+* [Single dimension ranked](#single-dimension-ranked)
+* [Multiple dimension ranked](#multiple-dimension-ranked)
+* [Count distinct dimension values](#count-distinct-dimension-values)
+* [Use date range names to filter](#use-date-range-names-to-filter)
+* [Use filter names to filter](#use-filter-names-to-filter)
+* [Use dimension values to filter](#use-dimension-values-to-filter)
+* [Sort](#sort)
+* [Limits](#limits)
+* [To FLATTEN or not](#to-flatten-or-not)
+* [Transformations](#transformations)
+* [Visualizations](#visualizations)
 
-The first use case focuses on how to connect BI tools using the Customer Journey Analytics BI extension. For all other use cases, instructions are available on how to accomplish similar Customer Journey Analytics visualizations in the BI tools currently supported:
+The first use case focuses on how to connect BI tools using the Customer Journey Analytics BI extension. 
 
-* Power BI Desktop. The version used is 2.137.1102.0 64-bit (October 2024).
-* Tableau Desktop. The version used is 2024.1.5 (20241.24.0705.0334) 64-bit.
+In use cases 2 - 12, instructions are available on how to accomplish similar Customer Journey Analytics visualizations in the BI tools currently supported. 
+
+Use cases 13 - 15 provide more details on:
+
+- Different ways to connect to the BI tools.
+- Transformations that occur when you use a BI tools to report and analyze.
+- Visualization similarities and differences between Customer Journey Analytics and BI tools.
 
 
-## Connect and list data views
+## Connect and validate
 
-This use case sets up the connection from the BI tool to Customer Journey Analytics and lists the available data views to test the connection successfully.
+This use case sets up the connection from the BI tool to Customer Journey Analytics, lists the available data views, and selects a data view to use. 
 
 +++ Customer Journey Analytics
 
-The instructions refer to an example set up with the following objects:
+The instructions refer to an example environment with the following objects:
 
-* Data view **[!UICONTROL C&C - Data View]** 🅐.
-* Dimensions **[!UICONTROL Product Name]** 🅑 and **[!UICONTROL Product Category]** 🅒.
-* Metrics **[!UICONTROL Purchase Revenue]** 🅓 and **[!UICONTROL Purchases]** 🅔.
-* Filter **[!UICONTROL Fishing Products]** 🅕.
+* Data view: **[!UICONTROL C&C - Data View]** 🅐.
+* Dimensions: **[!UICONTROL Product Name]** 🅑 and **[!UICONTROL Product Category]** 🅒.
+* Metrics: **[!UICONTROL Purchase Revenue]** 🅓 and **[!UICONTROL Purchases]** 🅔.
+* Filter: **[!UICONTROL Fishing Products]** 🅕.
 
 ![Customer Journey Analytics Base setup](assets/cja-base.png)
 
-When you go through the instructions, replace these example objects with objects that are appropriate in your specific environment.
+When you go through the use cases, replace these example objects with objects that are appropriate for your specific environment.
 
 +++
 
@@ -80,14 +88,14 @@ When you go through the instructions, replace these example objects with objects
       ![PowerBI Desktop Server and Database settings](assets/powerbi-serverdatabase.png)
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Host]** and **[!UICONTROL Port]** values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel, separated by `:` as the value for **[!UICONTROL Server]**. For example: `examplecompany.platform-query.adobe.io:80`.
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Database]** value from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel. Add `?FLATTEN` to the value that you paste. For example, `prod:cja?FLATTEN`.
-      1. Select **[!UICONTROL DirectQuery]** as the [!UICONTROL Data connectivity mode].
+      1. Select **[!UICONTROL DirectQuery]** as the **[!UICONTROL Data connectivity mode]**.
       1. Select **[!UICONTROL OK]**.
    1. In the **[!UICONTROL PostgreSQL database]** - **[!UICONTROL Database]** dialog:
       ![PowerBI Desktop User and Password](assets/powerbi-userpassword.png)
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy the **[!UICONTROL Username]** and **[!UICONTROL Password]** values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel in the **[!UICONTROL User name]** and **[!UICONTROL Password]** fields. If you are using a [non-expiring credential](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use the password of your non-expiring credential.
       1. Ensure that the dropdown menu for **[!UICONTROL Select which level to apply these settings to]** is set to the **[!UICONTROL Server]** that you have defined earlier.
       1. Select **[!UICONTROL Connect]**.
-   1. In the **[!UICONTROL Navigator]** dialog, the data views are retrieved. This retrieval can take some time. Once retrieved:
+   1. In the **[!UICONTROL Navigator]** dialog, the data views are retrieved. This retrieval can take some time. Once retrieved, you see the following in Power BI Desktop.
       ![Power BI Destkop Load Data](assets/powerbi-navigator-load.png)
       1. Select **[!UICONTROL public.cc_data_view]** from the list in the left panel.
       1. You have two options:
@@ -95,7 +103,7 @@ When you go through the instructions, replace these example objects with objects
          1. Select **[!UICONTROL Transform Data]**. You see a dialog where you can optionally apply transformations as part of the configuration.
          ![Power BI Desktop Transform Data](assets/powerbi-transform-data.png)
             * Select **[!UICONTROL Close & Apply]**.
-   1. After a while, **[!UICONTROL public cc_data_view]** is displayed in the **[!UICONTROL Data]** pane. Select ![ChevronRight](/help/assets/icons/ChevronRight.svg) to show dimensions and metrics.
+   1. After a while, **[!UICONTROL public.cc_data_view]** is displayed in the **[!UICONTROL Data]** pane. Select ![ChevronRight](/help/assets/icons/ChevronRight.svg) to show dimensions and metrics.
       ![Power BI Destkop Server Data Loaded](assets/powerbi-navigator-loaded.png)
    
 
@@ -155,7 +163,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
 
 >[!PREREQUISITES]
 >
->Ensure you have validated a [successful connection and can list data views](#connect-and-list-data-views) for the BI tool for which you want to try out this use case. 
+>Ensure you have validated a [successful connection and can list and use data views](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
@@ -166,7 +174,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
    1. Select **[!UICONTROL daterangeday]**.
    1. Select **[!UICONTROL ∑ occurrences]**.
    
-   You see a table displaying the occurrences for the current month. For better visibility, enlarge the table visualization.
+   You see a table displaying the occurrences for the current month. For better visibility, enlarge the visualization.
 
 1. In the **[!UICONTROL Filters]** pane:
 
@@ -197,7 +205,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
 1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from the **[!UICONTROL Data source]** view. In the **[!UICONTROL Sheet 1]** view:
    1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
    1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
-   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `31/01/2023`.
+   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `01/02/2023`.
 
       ![Tableau Desktop Filter](assets/uc2-tableau-filter.png)
 
@@ -205,7 +213,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
       * Select **[!UICONTROL Day]** from the **[!UICONTROL Daterangeday]** dropdown menu, so that the value is updated to **[!UICONTROL DAY(Daterangeday)]**.
    1. Drag and drop **[!UICONTROL Occurrences]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**.
       * The values is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
-   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the dropdown menu in the toolbar.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[IUICONTROL Fit]** dropdown menu in the toolbar.
 
       Your Tableau Desktop should look like below.
 
@@ -214,10 +222,10 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
 1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Graph`.
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1 (2)]** tab context menu to rename the sheet to `Data`.
-1. Ensure that the **[!UICONTROL Data]** sheet is selected. In the Data view:
+1. Ensure that the **[!UICONTROL Data]** sheet is selected. In the **[!UICONTROL Data]** view:
    1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table]** (upper left top visualization) to modify the content of the Data view to a table.
    1. Select **[!UICONTROL Swap Rows and Columns]** from the toolbar.
-   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the dropdown menu in the toolbar.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[IUICONTROL Fit]** dropdown menu in the toolbar.
 
       Your Tableau Desktop should look like below.
 
@@ -253,14 +261,14 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 
 >[!PREREQUISITES]
 >
->Ensure you have validated a [successful connection and can list data views](#connect-and-list-data-views) for the BI tool for which you want to try out this use case. 
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop] 
 
-![Alert](/help/assets/icons/Alert.svg) Power BI does **not** understand how to handle date-time columns, so dimensions like **[!UICONTROL daterangehour]** and **[!UICONTROL daterangeminute]** are not supported.
+![AlertRed](/help/assets/icons/AlertRed.svg) Power BI does **not** understand how to handle date-time fields, so dimensions like **[!UICONTROL daterangehour]** and **[!UICONTROL daterangeminute]** are not supported.
 
 >[!TAB Tableau Desktop] 
 
@@ -275,7 +283,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
       * Select **[!UICONTROL More]** > **[!UICONTROL Hours]** from the **[!UICONTROL Daterangeday]** dropdown menu, so that the value is updated to **[!UICONTROL HOUR(Daterangeday)]**.
    1. Drag and drop **[!UICONTROL Occurrences]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**.
       * The values is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
-   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the dropdown menu in the toolbar.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[IUICONTROL Fit]** dropdown menu in the toolbar.
 
       Your Tableau Desktop should look like below.
 
@@ -284,10 +292,10 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Graph`.
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1 (2)]** tab context menu to rename the sheet to `Data`.
-1. Ensure that the **[!UICONTROL Data]** sheet is selected. In the Data view:
+1. Ensure that the **[!UICONTROL Data]** sheet is selected. In the **[!UICONTROL Data]** view:
    1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table]** (upper left top visualization) to modify the content of the Data view to a table.
    1. Drag **[!UICONTROL HOUR(Daterangeday)]** from **[!UICONTROL Columns]** to **[!UICONTROL Rows]**.
-   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the dropdown menu in the toolbar.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[IUICONTROL Fit]** dropdown menu in the toolbar.
 
       Your Tableau Desktop should look like below.
 
@@ -324,7 +332,7 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
 
 >[!PREREQUISITES]
 >
->Ensure you have validated a [successful connection and can list data views](#connect-and-list-data-views) for the BI tool for which you want to try out this use case. 
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
@@ -335,7 +343,7 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
    1. Select **[!UICONTROL daterangemonth]**.
    1. Select **[!UICONTROL ∑ occurrences]**.
    
-   You see a table displaying the occurrences for the current month. For better visibility, enlarge the table visualization.
+   You see a table displaying the occurrences for the current month. For better visibility, enlarge the visualization.
 
 1. In the **[!UICONTROL Filters]** pane:
 
@@ -376,7 +384,7 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
       * Select **[!UICONTROL MONTH]** from the **[!UICONTROL Daterangeday]** dropdown menu, so that the value is updated to **[!UICONTROL MONTH(Daterangeday)]**.
    1. Drag and drop **[!UICONTROL Occurrences]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**.
       * The values is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
-   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the dropdown menu in the toolbar.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[IUICONTROL Fit]** dropdown menu in the toolbar.
 
       Your Tableau Desktop should look like below.
 
@@ -388,7 +396,7 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
 1. Ensure that the **[!UICONTROL Data]** sheet is selected. In the Data view:
    1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table]** (upper left top visualization) to modify the content of the Data view to a table.
    1. Drag **[!UICONTROL MONTH(Daterangeday)]** from **[!UICONTROL Columns]** to **[!UICONTROL Rows]**.
-   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the dropdown menu in the toolbar.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[IUICONTROL Fit]** dropdown menu in the toolbar.
 
       Your Tableau Desktop should look like below.
 
@@ -423,7 +431,7 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 
 >[!PREREQUISITES]
 >
->Ensure you have validated a [successful connection and can list data views](#connect-and-list-data-views) for the BI tool for which you want to try out this use case. 
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
@@ -436,7 +444,7 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
    1. Select **[!UICONTROL ∑ purchase_revenue]**.
    1. Select **[!UICONTROL ∑ purchases]**.
    
-   You see an empty table displaying only the column headers for the selected element. For better visibility, enlarge the table visualization.
+   You see an empty table displaying only the column headers for the selected element. For better visibility, enlarge the visualization.
 
 1. In the **[!UICONTROL Filters]** pane:
 
@@ -461,7 +469,7 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 1. In the **[!UICONTROL Filters]** pane:
 
    1. Select **[!UICONTROL product_name is (All)]**.
-   1. Set Filter type to Top N.
+   1. Set **[!UICONTROL Filter type]** to **[!UICONTROL Top N]**.
    1. Define the filter to **[!UICONTROL Show items]** **[!UICONTROL Top]** `10` **[!UICONTROL By value]**.
    1. Drag and drop **[!UICONTROL purchase_revenue]** into **[!UICONTROL By value]** **[!UICONTROL Add data fields here]**.
    1. Select **[!UICONTROL Apply filter]**.
@@ -474,13 +482,13 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 
    A line and stacked column chart visualization replaces the table while using the same data as the table.
 
-1. Drag and drop purchases onto Line y-axis in the Visualizations pane.
+1. Drag and drop **[!UICONTROL purchases]** onto **[!UICONTROL Line y-axis]** in the **[!UICONTROL Visualizations]** pane.
 
    The line and stacked column chart is updated. Your Power BI Desktop should look like below.
 
    ![Power BI Desktop Use Case 5 Graph](assets/uc5-pbi-chart.png)
 
-1. On the line and stacked column chart visualization:
+1. On the Line and stacked column chart visualization:
 
    1. Select ![More](/help/assets/icons/More.svg).
    1. From the context menu, select **[!UICONTROL Show as a table]**.
@@ -503,8 +511,8 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
       * The values is automatically converted to **[!UICONTROL SUM(Purchases)]**.
    1. Drag and drop **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]** and left from **[!UICONTROL SUM(Purchases)]**.
       * The values is automatically converted to **[!UICONTROL SUM(Purchase Revenue)]**.
-   1. To order both charts in descending purchase revenue order, hover over the Purchase Revenue title and select the sort icon.
-   1. To limit the number of entries in the charts, select SUM(Purchase Revenue) in Rows and from the dropdown menu select Filter.
+   1. To order both charts in descending purchase revenue order, hover over the **[!UICONTROL Purchase Revenue]** title and select the sort icon.
+   1. To limit the number of entries in the charts, select **[!UICONTROL SUM(Purchase Revenue)]** in **[!UICONTROL Rows]** and from the dropdown menu select **[!UICONTROL Filter]**.
    1. In the **[!UICONTROL Filter \[Purchase Revenue\]]** dialog select **[!UICONTROL Range of values]** and enter appropriate values. For example: `1,000,000` - `2,000,000`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
    1. To convert the two bar charts to a dual combination chart, select **[!UICONTROL SUM(Purchases)]** in **[!UICONTROL Rows]** and from the dropdown menu, select **[!UICONTROL Dual Axis]**. The bar charts transform into a scatter plot.
    1. To modify the scatter plot to a bar chart:
@@ -519,7 +527,7 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Data`.
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1 (2)]** tab context menu to rename the sheet to `Graph`.
 1. Ensure that the **[!UICONTROL Data]** sheet is selected.
-   1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table ]** (upper left top visualization) to modify the content of the two charts to a table.
+   1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table]** (upper left top visualization) to modify the content of the two charts to a table.
    1. To order purchase revenue in descending order, hover over **[!UICONTROL Purchase Revenue]** in the table and select ![SortOrderDown](/help/assets/icons/SortOrderDown.svg).
    1. Select **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** dropdown menu.
 
@@ -557,22 +565,25 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
 >[!PREREQUISITES]
 >
->Ensure you have validated a [successful connection and can list data views](#connect-and-list-data-views) for the BI tool for which you want to try out this use case. 
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop] 
 
-1. To ensure the date range apply to all visualizations drag and drop **[!UICONTROL daterangeday]** from the **[!UICONTROL Data]** pane on to **[!UICONTROL Filters]** on this page.
+1. To ensure the date range apply to all visualizations, drag and drop **[!UICONTROL daterangeday]** from the **[!UICONTROL Data]** pane on to **[!UICONTROL Filters on this page]**.
    1. Select the **[!UICONTROL daterangeday is (All)]** from **[!UICONTROL Filters on this page]**.
    1. Select **[!UICONTROL Relative date]** as the **[!UICONTROL Filter type]**.
-   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is in the last]** `1` **[!UICONTROL calendar years]**.
    1. Select **[!UICONTROL Apply filter]**.
    
 1. In the **[!UICONTROL Data]** pane:
    1. Select **[!UICONTROL datarangeday]**.
-   1. Select **[!UICONTROL ∑ cm_product_name_count_distinct]**, which is the calculated metric defined in Customer Journey Analytics.
+   1. Select **[!UICONTROL product_category]**.
+   1. Select **[!UICONTROL product_name]**.
+   1. Select **[!UICONTROL ∑ purchase_revenue]**
+   1. Select **[!UICONTROL ∑ purchases]**
 
 1. To modify the vertical bar chart to a Table, ensure you have the table selected and select **[!UICONTROL Matrix]** from the **[!UICONTROL Visualizations]** pane.
    * Drag **[!UICONTROL product_name]** from **[!UICONTROL Columns]** and drop the field underneath **[!UICONTROL product_categor]**y in **[!UICONTROL Rows]** in the **[!UICONTROL Visualization]** pane.
@@ -581,12 +592,12 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
    1. Select **[!UICONTROL Advanced filtering]**.
    1. Select **[!UICONTROL Filter type]** **[!UICONTROL Top N]** **[!UICONTROL Show items]** **[!UICONTROL Top]** `15` **[!UICONTROL By Value]**.
-   1. Drag **[!UICONTROL purchases]**e from the **[!UICONTROL Data]** pane onto the **[!UICONTROL Add data fields here]**.
+   1. Drag **[!UICONTROL purchases]** from the **[!UICONTROL Data]** pane onto the **[!UICONTROL Add data fields here]**.
    1. Select **[!UICONTROL Apply filter]**.
 
 1. To improve readability, select **[!UICONTROL View]** from the top menu, and select **[!UICONTROL Page View]** > **[!UICONTROL Actual size]** and resize the table visualization.
 
-1. To break down each category in the table, select the **[!UICONTROL +]** at the product category level. Your Power BI Desktop should look like below.
+1. To break down each category in the table, select **[!UICONTROL +]** at the product category level. Your Power BI Desktop should look like below.
 
    ![Power BI Desktop Multiple Dimensions Ranked matrix table](assets/uc6-powerbi-data.png)
 
@@ -612,7 +623,7 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
    1. Select **[!UICONTROL purchase]**.
 
 1. In the **[!UICONTROL Visualizations]** pane:
-   1. to modify the visualization, select **[!UICONTROL Line and stacked column chart]**. 
+   1. To modify the visualization, select **[!UICONTROL Line and stacked column chart]**. 
    1. Drag **[!UICONTROL sum_of_purchases]** from **[!UICONTROL Column y-axis]** to **[!UICONTROL Line y-axis]**.
 
 1. In the report, reshuffle the individual visualizations. 
@@ -717,7 +728,7 @@ You then can use that metric in an example **[!UICONTROL Count Distinct Dimensio
 
 >[!PREREQUISITES]
 >
->Ensure you have validated a [successful connection and can list data views](#connect-and-list-data-views) for the BI tool for which you want to try out this use case. 
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
@@ -726,7 +737,7 @@ You then can use that metric in an example **[!UICONTROL Count Distinct Dimensio
 
 1. To ensure the date range apply to all visualizations, drag and drop **[!UICONTROL daterangeday]** from the **[!UICONTROL Data]** pane on to **[!UICONTROL Filters]** on this page.
    1. Select the **[!UICONTROL daterangeday is (All)]** from **[!UICONTROL Filters on this page]**.
-   1. Select **[!UICONTROL RelAdvanced filtering]** as the **[!UICONTROL Filter type]**.
+   1. Select **[!UICONTROL Advanced filtering]** as the **[!UICONTROL Filter type]**.
    1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
    1. Select **[!UICONTROL Apply filter]**.
    
@@ -741,7 +752,7 @@ You then can use that metric in an example **[!UICONTROL Count Distinct Dimensio
    ![Power BI Desktop Multiple Count Distinct table](assets/uc7-powerbi-table.png)
 
 1. Select the table visualization. From the context menu, select **[!UICONTROL Copy]** > **[!UICONTROL Copy visual]**.
-1. Paste the visualization using key **[!UICONTROL ctrl-v]**. The exact copy of the visualization overlaps the original one. Move it to the right in the report area.
+1. Paste the visualization using **[!UICONTROL ctrl-v]**. The exact copy of the visualization overlaps the original one. Move it to the right in the report area.
 1. To modify the copied visualization from a table to a card, select **[!UICONTROL Card]** from **[!UICONTROL Visualizations]**.
 
    Your Power BI Desktop should look like below.
@@ -815,7 +826,7 @@ Note how the date range defined in the Freeform table visualization overrules th
 
 >[!PREREQUISITES]
 >
->Ensure you have validated a [successful connection and can list data views](#connect-and-list-data-views) for the BI tool for which you want to try out this use case. 
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
@@ -881,7 +892,7 @@ You then can use that filter in an example **[!UICONTROL Using Date Range Names 
 
 >[!PREREQUISITES]
 >
->Ensure you have validated a [successful connection and can list data views](#connect-and-list-data-views) for the BI tool for which you want to try out this use case. 
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
@@ -919,7 +930,7 @@ You then can use that filter in an example **[!UICONTROL Using Date Range Names 
    1. In the **[!UICONTROL Filter \[Filter Name\]]** dialog ensure **[!UICONTROL Select from list]** is selected, and select **[!UICONTROL Fishing Products]** from the list. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
    1. Drag **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
    1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
-   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]**, and select `01/01/2023` - `1/2/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]**, and select `01/01/2023` - `01/02/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
    1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list to **[!UICONTROL Rows]**.
    1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list on to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Occurrences)]**.
    1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
@@ -944,7 +955,7 @@ Create a new filter with **[!UICONTROL Title]** `Hunting Products` in Customer J
 
 ![Customer Journey Analytics Use Dimension Values To Filter](assets/cja-hunting-products.png)
 
-You then can use that filter in an example **[!UICONTROL Using Date Range Names To Filter]** panel for the use case:
+You then can use that filter in an example **[!UICONTROL Using Dimension Values To Filter]** panel for the use case:
 
 ![Customer Journey Analytics Distinct Count Values](assets/cja-using-dimension-values-to-filter.png)
 
@@ -954,7 +965,7 @@ You then can use that filter in an example **[!UICONTROL Using Date Range Names 
 
 >[!PREREQUISITES]
 >
->Ensure you have validated a [successful connection and can list data views](#connect-and-list-data-views) for the BI tool for which you want to try out this use case. 
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
@@ -989,7 +1000,7 @@ You then can use that filter in an example **[!UICONTROL Using Date Range Names 
 
 >[!TAB Tableau Desktop] 
 
-1. In the **[!UICONTROL Data Source]** view, underneath **[!UICONTROL Data]**, from the context menu on **[!UICONTROL cc_data_view(prod:cja%3FFLATTEN)]**, select **[!UICONTROL Refresh]**.
+1. In the **[!UICONTROL Data Source]** view, underneath **[!UICONTROL Data]**, from the context menu on **[!UICONTROL cc_data_view(prod:cja%3FFLATTEN)]**, select **[!UICONTROL Refresh]**. You need to refresh the connection to pick up the new filter you just defined in Customer Journey Analytics.
 1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
    1. Drag the **[!UICONTROL Filter Name]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
    1. In the **[!UICONTROL Filter \[Filter Name\]]** dialog ensure **[!UICONTROL Select from list]** is selected, and select **[!UICONTROL Hunting Products]** from the list. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
@@ -1013,11 +1024,9 @@ You then can use that filter in an example **[!UICONTROL Using Date Range Names 
 
 ## Sort
 
-Synopsis of use case
+You want to report on purchase revenue and purchases for product names during January 2023, sorted in descending purchase revenue order.
 
 +++ Customer Journey Analytics
-
-You want to report on purchase revenue and purchases for product names during January 2023, sorted in descending purchase revenue order.
 
 An example **[!UICONTROL Sort]** panel for the use case:
 
@@ -1029,7 +1038,7 @@ An example **[!UICONTROL Sort]** panel for the use case:
 
 >[!PREREQUISITES]
 >
->Ensure you have validated a [successful connection and can list data views](#connect-and-list-data-views) for the BI tool for which you want to try out this use case. 
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
@@ -1049,15 +1058,15 @@ An example **[!UICONTROL Sort]** panel for the use case:
 
 1. In the Visualizations pane:
    1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove daterange from Columns.
-   1. Drag Sum of purchase_revenue to the bottom of Column items.
+   1. Drag **[!UICONTROL Sum of purchase_revenue]** to the bottom of **[!UICONTROL Column]** items.
 
-1. In the report, select Sum of purchase_revenue to sort the table in descending order of purchase revenue.
+1. In the report, select **[!UICONTROL Sum of purchase_revenue]** to sort the table in descending order of purchase revenue.
 
    Your Power BI Desktop should look like below.
 
    ![Power BI Desktop Using Date Range Names To Filter](assets/uc11-powerbi-final.png)
 
-The query executed by Power BI Desktop using the BI extension is not including a `sort` statement. The lack of a `sort` statement implies that the sort in descending order is client based.
+The query executed by Power BI Desktop using the BI extension is not including a `sort` statement. The lack of a `sort` statement implies that the sort is executed client side.
 
 ```sql
 select "_"."product_name",
@@ -1152,9 +1161,9 @@ limit 1000001
    1. Drag **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
    1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
    1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]**, and select `01/01/2023` - `1/2/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
-   1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list to **[!UICONTROL Rows]**.
+   1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Rows]**.
    1. Drag **[!UICONTROL Purchases]** entry from the **[!UICONTROL Tables]** list on to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Purchases)]**.
-   1. Drag **[!UICONTROL Purchase Revenue]** entry from the **[!UICONTROL Tables]** list on to **[!UICONTROL Columns]**, next to **[!UICONTROL SUM(Purchases)]**. The value changes to **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. Drag **[!UICONTROL Purchase Revenue]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**, next to **[!UICONTROL SUM(Purchases)]**. The value changes to **[!UICONTROL SUM(Purchase Revenue)]**.
    1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
    1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
    1. Select the **[!UICONTROL Purchase Revenue]** column header and sort the table on this column in descending order.
@@ -1163,7 +1172,7 @@ limit 1000001
 
       ![Tableau Desktop Sort](assets/uc11-tableau-final.png)   
 
-The query executed by Tableau Desktop using the BI extension is not including a `sort` statement. The lack of this `sort` statement implies that the sort in descending order is client based.
+The query executed by Tableau Desktop using the BI extension is not including a `sort` statement. The lack of this `sort` statement implies that the sort is executed client side.
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -1195,7 +1204,7 @@ An example **[!UICONTROL Limit]** panel for the use case:
 
 >[!PREREQUISITES]
 >
->Ensure you have validated a [successful connection and can list data views](#connect-and-list-data-views) for the BI tool for which you want to try out this use case. 
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
@@ -1212,7 +1221,7 @@ An example **[!UICONTROL Limit]** panel for the use case:
    1. Select **[!UICONTROL Relative date]** as the **[!UICONTROL Filter type]**.
    1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is in the last]** `1` **[!UICONTROL calendar years]**.
    1. Select **[!UICONTROL Apply filter]**.
-   1. Select product_name is (All) from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL product_name is (All)]** from **[!UICONTROL Filters on this visual]**.
    1. Select **[!UICONTROL Top N]** as the **[!UICONTROL Filter type]**.
    1. Select **[!UICONTROL Show Items]** **[!UICONTROL Top]** `5` **[!UICONTROL By value]**.
    1. Drag and drop **[!UICONTROL ∑ occurrences]** from the **[!UICONTROL Data]** pane and drop it on **[!UICONTROL Add data fields here]**.
@@ -1225,7 +1234,7 @@ An example **[!UICONTROL Limit]** panel for the use case:
 
    ![Power BI Desktop Using Date Range Names To Filter](assets/uc12-powerbi-final.png)
 
-The query executed by Power BI Desktop using the BI extension is including a `limit` statement but not the one expected. The explicit product name results returned by the client implicitly enforce the limit to the top 5 occurrences. 
+The query executed by Power BI Desktop using the BI extension is including a `limit` statement but not the one expected. The limit to the top 5 occurrences is enforced by Power BI Desktop using explicit product name results.
 
 ```sql
 select "_"."product_name",
@@ -1321,12 +1330,12 @@ limit 1000001
    1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list on to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Occurrences)]**.
    1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
    1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
-   1. Select Product Name in Rows. Select Filter from the dropdown menu.
+   1. Select **[!UICONTROL Product Name]** in **[!UICONTROL Rows]**. Select **[!UICONTROL Filter]** from the dropdown menu.
       1. In the **[!UICONTROL Filter \[Product Name\]]** dialog, select the **[!UICONTROL Top]** tab.
       1. Select **[!UICONTROL By field:]** **[!UICONTROL Top]** `5` **[!UICONTROL by Occurrences]** **[!UICONTROL Sum]**.
       1. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
       
-         You notice that the table disappears. Selecting the top 5 product names by occurrences does not work properly using this filter.
+         ![AlertRed](/help/assets/icons/AlertRed.svg) You notice that the table disappears. Selecting the top 5 product names by occurrences does **not** work properly using this filter.
       1. Select the **[!UICONTROL Product Name]** in the **[!UICONTROL Filter]** shelf and from the dropdown menu select **[!UICONTROL Remove]**. The table reappears.
    1. Select **[!UICONTROL SUM(Occurrences)]** in the **[!UICONTROL Marks]** shelf. Select **[!UICONTROL Filter]** from the dropdown menu.
       1. In the **[!UICONTROL Filter \[Occurrences\]]** dialog, select **[!UICONTROL At least]**.
@@ -1336,7 +1345,7 @@ limit 1000001
 
          ![Tableau Desktop Limits](assets/uc12-tableau-final.png)   
 
-The query executed by Tableau Desktop, using the BI extension, when defining a Top 5 occurrences filter on product names is shown below.
+As shown above, this query executed by Tableau Desktop, when defining a Top 5 occurrences filter on product names, fails.
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -1355,7 +1364,7 @@ WHERE (("cc_data_view"."daterange" >= (TIMESTAMP '2023-01-01 00:00:00.000')) AND
 GROUP BY 1
 ```
 
-The query executed by Tableau Desktop, using the BI extension, when defining a Top 5 filter on occurrences is shown below. The limit is not visible in the query and only applied at the client-level.
+The query executed by Tableau Desktop, when defining a Top 5 filter on occurrences, is shown below. The limit is not visible in the query and applied client side.
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -1392,12 +1401,14 @@ Customer Journey Analytics provides information on how to connect in the Experie
 
 >[!PREREQUISITES]
 >
->Ensure you have validated a [successful connection and can list data views](#connect-and-list-data-views) for the BI tool for which you want to try out this use case. See the BI tools section for what explicit `FLATTEN` parameter options are required for a proper connection.
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. See the BI tools section for what explicit `FLATTEN` parameter options are required for a proper connection.
 >
 
 >[!BEGINTABS]
 
 >[!TAB Power BI Desktop] 
+
+Power BI Desktop supports the following scenarios for the `FLATTEN` parameter.
 
 | FLATTEN parameter | Example | Supported | Remarks | 
 |---|---|:---:|---|
@@ -1406,6 +1417,8 @@ Customer Journey Analytics provides information on how to connect in the Experie
 | `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Power BI Desktop displays error: **[!UICONTROL We couldn't authenticate with the credentials provided. Please try again.]** |
 
 >[!TAB Tableau Desktop] 
+
+Tableau Desktop supports the following scenarios for the `FLATTEN` parameter.
 
 | FLATTEN parameter | Example | Supported | Remarks | 
 |---|---|:---:|---|
@@ -1434,7 +1447,7 @@ You use components like [Filters](/help/components/filters/filters-overview.md),
 
 >[!PREREQUISITES]
 >
->Ensure you have validated a [successful connection and can list data views](#connect-and-list-data-views) for the BI tool for which you want to try out this use case. 
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
@@ -1454,7 +1467,7 @@ Metrics from Customer Journey Analytics are identified by the [!UICONTROL Compon
 Filters you have defined in Customer Journey Analytics are available as part of the **[!UICONTROL filterName]** field. When you use a **[!UICONTROL filterName]** field in Power BI Desktop, you can specify which filter to use.
 
 **Calculated metrics**
-Calculated metrics you have defined in Customer Journey Analytics are identified by the [!UICONTROL External ID] you have defined for the calculated metric. For example, calculated metric **[!UICONTROL Product Name (Count Distinct)]** has [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** and is shown as **[!UICONTROL cm_product_name_count_distinc]**t in Power BI Desktop.
+Calculated metrics you define in Customer Journey Analytics are identified by the [!UICONTROL External ID] you have defined for the calculated metric. For example, calculated metric **[!UICONTROL Product Name (Count Distinct)]** has [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** and is shown as **[!UICONTROL cm_product_name_count_distinc]**t in Power BI Desktop.
 
 **Date ranges**
 Date ranges that you have defined in Customer Journey Analytics are available as part of the **[!UICONTROL daterangeName]** field. When you use a **[!UICONTROL daterangeName]** field, you can specify which date range to use.
@@ -1466,7 +1479,7 @@ The Customer Journey Analytics objects are available in the **[!UICONTROL Data]*
 
 **Dimensions**
 Dimensions from Customer Journey Analytics are identified by the [!UICONTROL Component name]. The [!UICONTROL Component name] is defined in your Customer Journey Analytics data view. For example, dimension **[!UICONTROL Product Name]** in Customer Journey Analytics has a [!UICONTROL Component name] **[!UICONTROL Product Name]**, which is the name for the dimension in Tableau. All dimension are identified by **[!UICONTROL Abc]**.
-Date range dimensions from Customer Journey Analytics, like **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]**, and more are available as **[!UICONTROL Daterangeday]**, **[!UICONTROL Daterangeweek]**, **[!UICONTROL Daterangemonth]**, and more.
+Date range dimensions from Customer Journey Analytics, like **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]**, and more are available as **[!UICONTROL Daterangeday]**, **[!UICONTROL Daterangeweek]**, **[!UICONTROL Daterangemonth]**, and more. When you use a date range dimension, you have to select an appropriate definition of date or time to apply to that date range dimension from the dropdown menu. For example, **[!UICONTROL Year]**, **[!UICONTROL Quarter]**, **[!UICONTROL Month]**, **[!UICONTROL Day]**.
 
 **Metrics**
 Metrics from Customer Journey Analytics are identified by the [!UICONTROL Component Name]. The [!UICONTROL Component Name] is defined in your Customer Journey Analytics data view. For example, metric **[!UICONTROL Purchase Revenue]** in Customer Journey Analytics has a [!UICONTROL Component Name] **[!UICONTROL Purchase Revenue]**, which is the name for the metric in Tableau. All metrics are identified by **[!UICONTROL #]**. When you use a metric in any visualization, the metric is renamed to **[!UICONTROL Sum(*metric*)]**.
