@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **November 2024** | |
+| Stitching and privacy requests | Added notice on [upcoming changes in the unstitching process](/help/stitching/faq.md#frequently-asked-questions) that are the result of privacy requests. | 
 | **October 2024** | |
 | Shared devices | Added a [use case article](/help/use-cases/stitching/shared-devices.md) that provides context on shared devices, how to handle and mitigate data from shared devices using stitching, and understand shared device exposure in your data using Query Service. |
 | New information about Request factors in Analysis Workspace Performance | A new [Request factors](/help/technotes/optimizing-performance.md#request-factors) section in the [Optimize Analysis Workspace performance](/help/technotes/optimizing-performance.md) article explains how requests are processed and the various factors that influence processing times. |
