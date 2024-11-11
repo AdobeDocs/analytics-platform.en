@@ -29,7 +29,7 @@ To define a page name data element:
 
 1. Log in to experience.adobe.com using your Adobe ID credentials.
 
-1. Go to **[!UICONTROL Data Collection]** > **[!UICONTROL Tags]**.
+1. In Adobe Experience Platform, go to **[!UICONTROL Data Collection]** > **[!UICONTROL Tags]**.
 
 1. Select your newly created tag from the list of [!UICONTROL Tag Properties] to open it.
 
@@ -65,7 +65,7 @@ To define an ECID data element:
 
 1. Log in to experience.adobe.com using your Adobe ID credentials.
 
-1. Go to **[!UICONTROL Data Collection]** > **[!UICONTROL Tags]**.
+1. In Adobe Experience Platform, go to **[!UICONTROL Data Collection]** > **[!UICONTROL Tags]**.
 
 1. Select your newly created tag from the list of [!UICONTROL Tag Properties] to open it.
 
@@ -95,7 +95,7 @@ To define an XDM object data element:
 
 1. Log in to experience.adobe.com using your Adobe ID credentials.
 
-1. Go to **[!UICONTROL Data Collection]** > **[!UICONTROL Tags]**.
+1. In Adobe Experience Platform, go to **[!UICONTROL Data Collection]** > **[!UICONTROL Tags]**.
 
 1. Select your newly created tag from the list of [!UICONTROL Tag Properties] to open it.
 
