@@ -7,11 +7,11 @@ hidefromtoc: yes
 hide: yes
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 ---
-# Data Analysis AI Assistant in Customer Journey Analytics - Alpha
+# Data visualization is now available in AI Assistant in CJA
 
-The Data Analysis AI Assistant is a Generative AI conversation agent that can help you more quickly and efficiently answer questions you may have of your Analysis Workspace data in Customer Journey Analytics. 
+The AI Assistant in Customer Journey Analytics (CJA) is a Generative AI conversation agent that can help you more quickly and efficiently answer questions you may have of your Analysis Workspace data in CJA. 
 
-When you ask a question in AI Assistant, the AI Assistant scans through all the components in your data view, including the different types of metrics and components, and translates your prompt into the right dimension, metric, and date range for your analysis. Instead of having to familiarize yourself with the data view components, and then drag and drop those components in the best combination to answer your question, you can simply type the question into the AI Assistant. 
+When you ask a Data visualization question, the AI Assistant scans through all the components in your data view, including the different types of metrics and components, and translates your prompt into the right dimension, metric, and date range for your analysis. Instead of having to familiarize yourself with the data view components, and then drag and drop those components in the best combination to answer your question, you can simply type the question into the AI Assistant. 
 
 ![Data ANalysis AI Assistant](assets/cja-ai-asst-da.gif)
 
@@ -42,20 +42,20 @@ When you ask a question in AI Assistant, the AI Assistant scans through all the 
 
 [Do we even need this section for the Alpha?]
 
-The following parameters govern access to the Data Analysis AI Assistant feature:
+The following parameters govern access to Data visualization in AI Assistant:
 
-* **Solution access**: The Data Analysis AI Assistant is available for Customer Journey Analytics Prime and Ultimate customers. It is not available in Adobe Analytics. 
+* **Solution access**: Data visualization in AI Assistant is available for Customer Journey Analytics Prime and Ultimate customers. It is not available in Adobe Analytics. 
 
 It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP and additional Experience Platform apps.
 
-* **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before your organization can use Data Analysis AI Assistant, your must agree to certain GenAI-related legal terms.
+* **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before your organization can use Data visualization in AI Assistant, your must agree to certain GenAI-related legal terms.
 
-* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Data Analysis]** permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Data visualization]** permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
    1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
    1. Select the title of the product profile for which you want to provide access to [!UICONTROL AI Assistant: Product Knowledge].
    1. In the specific product profile, select **[!UICONTROL Permissions]**.
    1. Select ![Edit](/help/assets/icons/Edit.svg) to edit **[!UICONTROL Reporting Tools]**.
-   1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) to add **AI Assistant: Data Analysis** to **[!UICONTROL Included permission items]**.
+   1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) to add **AI Assistant: Data visualization** to **[!UICONTROL Included permission items]**.
    
       ![Add permission](assets/ai-assistant-permissions.png).
 
@@ -63,7 +63,7 @@ It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adob
 
 See [Access control](/help/technotes/access-control.md#access-control) for more information.--->
 
-## Access and use Data Analysis AI Assistant
+## Access and use Data visualization in AI Assistant
 
 1. Go to [experience.adobe.com](https://experience.adobe.com/), and login with your Adobe ID.
 
@@ -77,7 +77,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
    ![AI Assistant icon](/help/assets/ai-asst-icon.png)
 
-6. In the **[!UICONTROL Ask about Customer Journey Analytics]** dialog at the bottom, ask a data analysis question in the AI Assistant.
+6. In the **[!UICONTROL Ask about Customer Journey Analytics]** dialog at the bottom, ask a Data visualization question in the AI Assistant.
 
 ### Example 1
 
@@ -119,11 +119,11 @@ Finally, let's look at revenue by product category.
 
 1. In the prompt window, enter *"Proportion of revenue by product category".*
 
-2. Again, the Data Analysis AI Assistant picks the most appropriate visualization, in this case the **[!UICONTROL Donut]** visualization, to answer the question.
+2. Again, Data visualization in AI Assistant picks the most appropriate visualization, in this case the **[!UICONTROL Donut]** visualization, to answer the question.
 
    ![Donut](/help/assets/ai-asst-result3.png)
 
-## Example data analysis prompts
+## Example Data visualization prompts
 
 Here are some examples of common prompts, and which visualization the AI Assistent uses to respond to those prompts.
 
@@ -146,7 +146,7 @@ Here are some examples of common prompts, and which visualization the AI Assiste
 
 The AI Assistant processes the context provided by each user prompt and tries to respond intelligently with the most appropriate visualization as well as components in a freeform table. However, the AI Assistant's response can vary based on the specific words and phrases used in a prompt, so slight changes in language can lead to different results. Here’s how to make the most of it: <ul><li>Be Specific: Include exact terms (like “last month’s sales in California”) to narrow down the response.</li><li>Use Clear Metrics and Filters: Adding specific metrics (like “Revenue”), dimensions (e.g. "website name"), filters (such as “iPhone users”), and date ranges (like "last three months") helps the AI Assistant focus on the right data.</li><li>Ask Direct Questions: Phrasing questions directly, like “What is the average revenue by product category this year?” makes it easier for the AI Assistant to provide clear, relevant insights.</li></ul>
 
-Please review the below table of example terms and phrases you can use in prompts with the Data Analysis AI Assistant in CJA, along with the types of responses you can expect. These examples are designed to help you get familiar with how specific words or structures can influence the AI Assistant's output, ensuring more precise and valuable insights. Please note that the AI Assistant uses Generative AI, so visualizations or selected data may vary slightly across similar prompts.
+Please review the below table of example terms and phrases you can use in prompts with Data visualization in AI Assistant, along with the types of responses you can expect. These examples are designed to help you get familiar with how specific words or structures can influence the AI Assistant's output, ensuring more precise and valuable insights. Please note that the AI Assistant uses Generative AI, so visualizations or selected data may vary slightly across similar prompts.
   
 | Desired Outcome | Example Terms and Phrases |
 | --- | --- |
