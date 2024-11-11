@@ -87,7 +87,7 @@ Stitching makes a minimum of two passes on data in a given dataset.
   
   >[!IMPORTANT]
   >
-  >The unstitching process as part of privacy request changes at the start of 2025. The current unstitching process restitches events that are subject of the privacy request using the lastest version of known identities. To reassign events to another identity might have undesirable legal consequences. To remedy these concerns, from 2025 on, the new unstitching process will update the events that are subject of the privacy request with the the persistent ID.
+  >The unstitching process, as part of privacy requests, changes at the start of 2025. The current unstitching process restitches events using the latest version of known identities. This reassignment of events to another identity might have undesirable legal consequences. To remedy these concerns, from 2025 on, the new unstitching process updates events that are subject of the privacy request with the persistent ID.
   > 
 
 
@@ -234,7 +234,7 @@ Stitching makes a minimum of two passes on data in a given dataset.
 
   >[!IMPORTANT]
   >
-  >The unstitching process as part of privacy request changes at the start of 2025. The current unstitching process restitches events that are subject of the privacy request using the lastest version of known identities. To reassign events to another identity might have undesirable legal consequences. To remedy these concerns, from 2025 on, the new unstitching process will update the events that are subject of the privacy request with the the persistent ID.
+  >The unstitching process, as part of privacy requests, changes at the start of 2025. The current unstitching process restitches events using the latest version of known identities. This reassignment of events to another identity might have undesirable legal consequences. To remedy these concerns, from 2025 on, the new unstitching process updates events that are subject of the privacy request with the persistent ID.
   > 
 
 Data beyond the lookback window is not replayed. A visitor must authenticate within a given lookback window for an unauthenticated visit and an authenticated visit to be identified together. Once a device is recognized, it is live stitched from that point forward.

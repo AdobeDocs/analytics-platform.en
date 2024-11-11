@@ -65,7 +65,10 @@ Cross-channel analysis is a use case specific to Customer Journey Analytics that
 
 Adobe handles privacy requests in accordance with local and international laws. Adobe offers the [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) to submit data access and deletion requests. The requests apply to both the original and rekeyed datasets.
 
-The unstitching process as part of privacy request changes at the start of 2025. The current unstitching process restitches events that are subject of the privacy request using the lastest version of known identities. To reassign events to another identity might have undesirable legal consequences. To remedy these concerns, from 2025 on, the new unstitching process will update the events that are subject of the privacy request with the the persistent ID.
+>[!IMPORTANT]
+>
+>The unstitching process, as part of privacy requests, changes at the start of 2025. The current unstitching process restitches events using the latest version of known identities. This reassignment of events to another identity might have undesirable legal consequences. To remedy these concerns, from 2025 on, the new unstitching process updates events that are subject of the privacy request with the persistent ID.
+> 
 
 To illustrate, imagine the following data for identities, events before stitching and after stitching.
 
@@ -91,7 +94,7 @@ To illustrate, imagine the following data for identities, events before stitchin
 
 **Current process for privacy request**
 
-When a privacy request is received for customer with CustID Bob, the rows with strikethrough entries are deleted. Other events are restitched using the identity map. For example, the first stitched id in the stitched dataset is now updated to Alex.
+When a privacy request is received for customer with CustID Bob, the rows with strikethrough entries are deleted. Other events are restitched using the identity map. For example, the first stitched id in the stitched dataset is updated to **Alex**.
 
 | Identity Map | Id | timestamp | persistent ID | persistent namespace | transient id | transient namespace |
 |:---:|---|---|---|---|---|---|
@@ -115,7 +118,7 @@ When a privacy request is received for customer with CustID Bob, the rows with s
 
 **New process for privacy request**
 
-When a privacy request is received for customer with CustID Bob, the rows with strikethrough entries are deleted. Other events are restitched using the persistent id. For example, the first stitched id in the stitched dataset is now updated to 123.
+When a privacy request is received for customer with CustID Bob, the rows with strikethrough entries are deleted. Other events are restitched using the persistent id. For example, the first stitched id in the stitched dataset is updated to **123**.
 
 | Identity Map | Id | timestamp | persistent ID | persistent namespace | transient id | transient namespace |
 |:---:|---|---|---|---|---|---|
