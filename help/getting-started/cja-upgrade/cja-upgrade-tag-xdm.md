@@ -1,13 +1,13 @@
 ---
-title: Add XDM to the Web SDK extension
-description: Learn how to add XDM to the Web SDK extension
+title: Add XDM data collection logic to your tag
+description: Learn how to add XDM data collection logic to your tag
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
 ---
-# Use tags: Add XDM to the Web SDK extension
+# Add XDM data collection logic to your tag
 
 >[!NOTE]
 > 

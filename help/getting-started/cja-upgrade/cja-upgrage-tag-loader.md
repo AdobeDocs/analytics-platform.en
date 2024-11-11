@@ -1,5 +1,5 @@
 ---
-title: Use tags to implement the loader tag for the Web SDK extension
+title: Implement the loader tag for the Web SDK extension
 description: Learn how to implement the loader tag for the Web SDK extension
 role: Admin
 solution: Customer Journey Analytics
@@ -7,7 +7,7 @@ feature: Basics
 hide: yes
 hidefromtoc: yes
 ---
-# Use tags: Implement the loader tag for the Web SDK extension
+# Implement the loader tag for the Web SDK extension
 
 >[!NOTE]
 > 

@@ -1,5 +1,5 @@
 ---
-title: Use tags to create a tag property and add the Web SDK extension
+title: Create a tag property and add the Web SDK extension
 description: Learn how to create a tag property and add the Web SDK extension
 role: Admin
 solution: Customer Journey Analytics
@@ -7,7 +7,7 @@ feature: Basics
 hide: yes
 hidefromtoc: yes
 ---
-# Use tags: Add the Web SDK extension to your tag
+# Add the Web SDK extension to your tag
 
 >[!NOTE]
 > 
