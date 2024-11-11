@@ -204,10 +204,21 @@ The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows
 
 This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage interface to plan your Customer Journey Analytics license renewal.
 
+The Usage interface uses the folowing metrics
+
+| Metric name | Description |
+|---|---|
+| Historical reportable rows | Count of rows from the start of your retention window up until the current month. |
+| Core reportable rows | Count of rows over the last 13 months. | 
+| Ingested rows | How many rows are ingested for the specific period. |
+| Reportable rows | How many rows of data do you have as part of the connection for the specific period. |
+| Cumulative rows | How many rows are ingested up until the specific month. |
+
 >[!NOTE]
 >
 >Data is collected, starting from July 2024 for the core, historical, and total records. Reach out to your account manager for earlier historical data.
 >
+
 
 
 The Usage interface consists of two panels:
@@ -217,9 +228,13 @@ The Usage interface consists of two panels:
   The panel displays two visualizations: 
   
   * **[!UICONTROL Core data reportable rows (Under 13 months)]**.
+
+    How many reportable rows do you have over the last 13 months. The summary number is the number of reportable rows for the last month (in the example August 2023 - September 2023). When you hover over any data point, the popup shows the number of reportable rows for that specific month (in the example July 2024).
+    
   * **[!UICONTROL Historical data reportable rows (Over 13 months)]**.
 
-  You can hover over data points in the visualizations to display a popup with more details.
+    How many reportable rows do you have for the months starting from your retention window up until the current month. The summary number is the total number of historical reportable rows for that period. In case the start of you retention window is September 2021, the example reports reportable rows from January 2021 - September 2024. When you hover over any data point, the popup shows the number of reportable rows for that specific month.
+
 
   ![Key Usage Metrics](assets/usage-key-usage-metrics.png)
 
