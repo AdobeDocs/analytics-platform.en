@@ -17,31 +17,38 @@ This article documents how to accomplish a number of use cases using the Custome
 
 The following use cases are documented:
 
-* [Connect and list data views](#connect-and-validate)
-* [Daily trend](#daily-trend)
-* [Hourly trend](#hourly-trend)
-* [Monthly trend](#monthly-trend)
-* [Single dimension ranked](#single-dimension-ranked)
-* [Multiple dimension ranked](#multiple-dimension-ranked)
-* [Count distinct dimension values](#count-distinct-dimension-values)
-* [Use date range names to filter](#use-date-range-names-to-filter)
-* [Use filter names to filter](#use-filter-names-to-filter)
-* [Use dimension values to filter](#use-dimension-values-to-filter)
-* [Sort](#sort)
-* [Limits](#limits)
-* [To FLATTEN or not](#to-flatten-or-not)
-* [Transformations](#transformations)
-* [Visualizations](#visualizations)
+* **Connect**
+  * [Connect and list data views](#connect-and-validate)
+  * [To FLATTEN or not](#to-flatten-or-not)
 
-The first use case focuses on how to connect BI tools using the Customer Journey Analytics BI extension. 
+* **Report and analyze**
+  * [Daily trend](#daily-trend)
+  * [Hourly trend](#hourly-trend)
+  * [Monthly trend](#monthly-trend)
+  * [Single dimension ranked](#single-dimension-ranked)
+  * [Multiple dimension ranked](#multiple-dimension-ranked)
+  * [Count distinct dimension values](#count-distinct-dimension-values)
+  * [Use date range names to filter](#use-date-range-names-to-filter)
+  * [Use filter names to filter](#use-filter-names-to-filter)
+  * [Use dimension values to filter](#use-dimension-values-to-filter)
+  * [Sort](#sort)
+  * [Limits](#limits)
 
-In use cases 2 - 12, instructions are available on how to accomplish similar Customer Journey Analytics visualizations in the BI tools currently supported. 
+* **Understand**
 
-Use cases 13 - 15 provide more details on:
+  * [Transformations](#transformations)
+  * [Visualizations](#visualizations)
+  * [Caveats](#caveats)
 
-* Different ways to connect to the BI tools.
+The **connect** use case focuses on how to connect BI tools using the Customer Journey Analytics BI extension. 
+
+The **report and analysis** use cases instruct how to accomplish similar Customer Journey Analytics visualizations in the BI tools currently supported. 
+
+The **understand** use cases provide more details on:
+
 * Transformations that occur when you use a BI tools to report and analyze.
 * Visualization similarities and differences between Customer Journey Analytics and BI tools.
+* Caveats of each of the BI tools you should be aware of.
 
 
 ## Connect and validate
@@ -142,6 +149,57 @@ When you go through the use cases, replace these example objects with objects th
    1. The main window displays details of the **[!UICONTROL cc_data_view]** data view.
       ![Tableau Connected](assets/tableau-validation.png)
       
+>[!ENDTABS]
+
++++
+
+## To FLATTEN or not
+
+In this use case, you want to understand whether you have to use an additional `FLATTEN` parameter for the database when you connect to Customer Journey Analytics using the BI extension.
+
++++ Customer Journey Analytics
+
+Customer Journey Analytics provides information on how to connect in the Experience Platform interface.
+
+1. Navigate to your Experience Platform sandbox.
+1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
+1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
+1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
+
+![Query service credentials](assets/queryservice-credentials.png)
+
+
++++ 
+
++++ BI tools
+
+>[!PREREQUISITES]
+>
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. See the BI tools section for what explicit `FLATTEN` parameter options are required for a proper connection.
+>
+
+>[!BEGINTABS]
+
+>[!TAB Power BI Desktop] 
+
+Power BI Desktop supports the following scenarios for the `FLATTEN` parameter.
+
+| FLATTEN parameter | Example | Supported | Remarks | 
+|---|---|:---:|---|
+| None | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Power BI Desktop displays error: **[!UICONTROL We couldn't authenticate with the credentials provided. Please try again.]** |
+
+>[!TAB Tableau Desktop] 
+
+Tableau Desktop supports the following scenarios for the `FLATTEN` parameter.
+
+| FLATTEN parameter | Example | Supported | Remarks | 
+|---|---|:---:|---|
+| None | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+
 >[!ENDTABS]
 
 +++
@@ -1378,60 +1436,6 @@ GROUP BY 1
 
 +++
 
-
-## To FLATTEN or not
-
-You want to understand whether you have to use an additional `FLATTEN` parameter for the database when you connect to Customer Journey Analytics using the BI extension.
-
-+++ Customer Journey Analytics
-
-Customer Journey Analytics provides information on how to connect in the Experience Platform interface.
-
-1. Navigate to your Experience Platform sandbox.
-1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
-1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
-1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
-
-![Query service credentials](assets/queryservice-credentials.png)
-
-
-+++ 
-
-+++ BI tools
-
->[!PREREQUISITES]
->
->Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. See the BI tools section for what explicit `FLATTEN` parameter options are required for a proper connection.
->
-
->[!BEGINTABS]
-
->[!TAB Power BI Desktop] 
-
-Power BI Desktop supports the following scenarios for the `FLATTEN` parameter.
-
-| FLATTEN parameter | Example | Supported | Remarks | 
-|---|---|:---:|---|
-| None | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Power BI Desktop displays error: **[!UICONTROL We couldn't authenticate with the credentials provided. Please try again.]** |
-
->[!TAB Tableau Desktop] 
-
-Tableau Desktop supports the following scenarios for the `FLATTEN` parameter.
-
-| FLATTEN parameter | Example | Supported | Remarks | 
-|---|---|:---:|---|
-| None | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-
->[!ENDTABS]
-
-+++
-
-
-
 ## Transformations
 
 You want to understand the transformations of Customer Journey Analytics objects like dimensions, metrics, filters, calculated metrics, and date ranges by the various BI tools.
@@ -1598,7 +1602,9 @@ Customer Journey Analytics has a number of visualizations. See [Visualizations](
 
 >[!TAB Power BI Desktop] 
 
-The following Customer Journey Analytics visualizations are in a similar experience available in Power BI Desktop.
+### Comparison
+
+For most Customer Journey Analytics visualizations, Power BI Desktop offers equivalent experiences. See the table below.
 
 | Icon |Customer Journey Analytics visualization | Power BI Desktop visualization |
 | :---: | --- | ---| 
@@ -1626,10 +1632,14 @@ The following Customer Journey Analytics visualizations are in a similar experie
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p> | [Treemap](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#treemaps) |
 | ![Type](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | |
 
+
+Power BI supports drill mode to explore in-depth details on certain visualizations. Drill mod
+
 >[!TAB Tableau Desktop] 
 
+### Comparison
 
-The following Customer Journey Analytics visualizations are in a similar experience available in Tableau.
+For most Customer Journey Analytics visualizations, Tableau offers equivalent experiences. See the table below.
 
 | Icon |Customer Journey Analytics visualization | Power BI Desktop visualization |
 | :---: | --- | ---| 
