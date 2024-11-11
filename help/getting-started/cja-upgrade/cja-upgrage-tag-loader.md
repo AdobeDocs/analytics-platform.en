@@ -17,6 +17,8 @@ hidefromtoc: yes
 
 You must install your tag on the website you want to track, which implies placing code in the header tag of your website's template.
 
+The following process describes how to get the code that references your tag. For supplemental information, see the [Implementation guides for tags and event forwarding](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides) in the Experience Platform documentation.
+
 To get the code that references your tag:
 
 1. Select **[!UICONTROL Environments]** in the left rail.

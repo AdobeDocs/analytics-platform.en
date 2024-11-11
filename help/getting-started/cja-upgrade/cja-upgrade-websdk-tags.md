@@ -20,9 +20,11 @@ You can use the Tags feature within Adobe Experience Platform to implement code 
 
 ## Create your tag
 
-1. In the Adobe Experience Platform UI, in the left rail, select **[!UICONTROL Tags]** within [!UICONTROL DATA COLLECTION].
+1. Log in to experience.adobe.com using your Adobe ID credentials.
 
-2. Select **[!UICONTROL New Property]**. 
+1. In Adobe Experience Platform, go to **[!UICONTROL Data Collection]** > **[!UICONTROL Tags]**.
+
+1. Select **[!UICONTROL New Property]**. 
 
     Name the tag, select **[!UICONTROL Web]** and enter a domain name. Select **[!UICONTROL Save]** to continue.
 
