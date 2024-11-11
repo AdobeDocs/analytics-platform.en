@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
 ---
 # Use your Adobe Analytics schema with Customer Journey Analytics
 

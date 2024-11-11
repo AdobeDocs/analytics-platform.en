@@ -3,8 +3,8 @@ title: Transfer assets
 description: Learn how to transfer components from one user to another
 role: Admin
 solution: Customer Journey Analytics
+exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
 ---
-
 # Transfer assets
 
 The Asset Transfer tool lets you transfer ownership of assets to other users. Assets can include components such as projects, filters, date ranges, calculated metrics, annotations, alerts and scheduled projects.

@@ -1,6 +1,7 @@
 ---
 title: Product usage overview
 description: View insights and reports on how your organization uses Customer Journey Analytics.
+exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
 ---
 # Product usage overview
 

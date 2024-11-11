@@ -1,6 +1,7 @@
 ---
 title: Product usage data settings
 description: Enable, disable, or configure product usage settings.
+exl-id: 85e2b515-78e6-41e8-9947-369b1e65e4fd
 ---
 # Product usage data settings {#product-usage-data-settings}
 

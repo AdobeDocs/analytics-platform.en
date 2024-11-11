@@ -5,8 +5,8 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: yes
 hide: yes
+exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 ---
-
 # Data Analysis AI Assistant in Customer Journey Analytics - Alpha
 
 The Data Analysis AI Assistant is a Generative AI conversation agent that can help you more quickly and efficiently answer questions you may have of your Analysis Workspace data in Customer Journey Analytics. 
@@ -175,5 +175,3 @@ Following the thumbs up/down selection, please make a selection for the relevant
 ## Questions and Contact
 
 * Send questions and feedback in the Alpha slack channel: #aep-cja-ai-assistant-testers ???
-
-
