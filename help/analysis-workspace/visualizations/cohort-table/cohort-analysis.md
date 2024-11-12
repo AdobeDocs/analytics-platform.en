@@ -51,6 +51,8 @@ Examples of what you can do with a [!UICONTROL Cohort table]:
 >
 >[!UICONTROL Cohort Analysis] does not support non-filterable metrics (including calculated metrics), non-integer metrics (such as Revenue), or Occurrences. Only metrics that can be used in filters can be used in [!UICONTROL Cohort Analysis], and they can only be incremented 1 at a time. 
 
+Cohort tables in Customer Journey Analytics support double-based (or any numeric-based) metric. For example, Purchase.Value (a double) can be used as an  Inclusion/Return Metric. In addition, all metrics that are passed into Adobe Experience Platform via the Analytics Source Connector are also doubles.
+
 ## Cohort table capabilities
 
 The following capabilities allow for fine-tuned control over the cohorts you are building:
