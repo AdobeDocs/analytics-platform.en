@@ -83,35 +83,35 @@ When you go through the use cases, replace these example objects with objects th
    1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
    1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
 
-      ![Query service credentials](assets/queryservice-credentials.png){width="100" zoomable="yes"}
+      ![Query service credentials](assets/queryservice-credentials.png){zoomable="yes"}
 
 1. Start Power BI Desktop.
    1. From the main interface, select **[!UICONTROL Get data from other sources]**.
    1. In the **[!UICONTROL Get Data]** dialog:
-      ![PowerBI PostgreSQL database](assets/powerbi-postgresql.png)
+      ![PowerBI PostgreSQL database](assets/powerbi-postgresql.png){zoomable="yes"}
       1. Search for and select **[!UICONTROL PostgreSQL database]**.
       1. Select **[!UICONTROL Connect]**.
    1. In the **[!UICONTROL PostgreSQL database]** dialog:
-      ![PowerBI Desktop Server and Database settings](assets/powerbi-serverdatabase.png)
+      ![PowerBI Desktop Server and Database settings](assets/powerbi-serverdatabase.png){zoomable="yes"}
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Host]** and **[!UICONTROL Port]** values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel, separated by `:` as the value for **[!UICONTROL Server]**. For example: `examplecompany.platform-query.adobe.io:80`.
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Database]** value from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel. Add `?FLATTEN` to the value that you paste. For example, `prod:cja?FLATTEN`.
       1. Select **[!UICONTROL DirectQuery]** as the **[!UICONTROL Data connectivity mode]**.
       1. Select **[!UICONTROL OK]**.
    1. In the **[!UICONTROL PostgreSQL database]** - **[!UICONTROL Database]** dialog:
-      ![PowerBI Desktop User and Password](assets/powerbi-userpassword.png)
+      ![PowerBI Desktop User and Password](assets/powerbi-userpassword.png){zoomable="yes"}
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy the **[!UICONTROL Username]** and **[!UICONTROL Password]** values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel in the **[!UICONTROL User name]** and **[!UICONTROL Password]** fields. If you are using a [non-expiring credential](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use the password of your non-expiring credential.
       1. Ensure that the dropdown menu for **[!UICONTROL Select which level to apply these settings to]** is set to the **[!UICONTROL Server]** that you have defined earlier.
       1. Select **[!UICONTROL Connect]**.
    1. In the **[!UICONTROL Navigator]** dialog, the data views are retrieved. This retrieval can take some time. Once retrieved, you see the following in Power BI Desktop.
-      ![Power BI Destkop Load Data](assets/powerbi-navigator-load.png)
+      ![Power BI Destkop Load Data](assets/powerbi-navigator-load.png){zoomable="yes"}
       1. Select **[!UICONTROL public.cc_data_view]** from the list in the left panel.
       1. You have two options:
          1. Select **[!UICONTROL Load]** to continue and finish the setup.
          1. Select **[!UICONTROL Transform Data]**. You see a dialog where you can optionally apply transformations as part of the configuration.
-         ![Power BI Desktop Transform Data](assets/powerbi-transform-data.png)
+         ![Power BI Desktop Transform Data](assets/powerbi-transform-data.png){zoomable="yes"}
             * Select **[!UICONTROL Close & Apply]**.
    1. After a while, **[!UICONTROL public.cc_data_view]** is displayed in the **[!UICONTROL Data]** pane. Select ![ChevronRight](/help/assets/icons/ChevronRight.svg) to show dimensions and metrics.
-      ![Power BI Destkop Server Data Loaded](assets/powerbi-navigator-loaded.png)
+      ![Power BI Destkop Server Data Loaded](assets/powerbi-navigator-loaded.png){zoomable="yes"}
    
 
 >[!TAB Tableau Desktop] 
@@ -127,9 +127,9 @@ When you go through the use cases, replace these example objects with objects th
 
 1. Start Tableau.
    1. Select **[!UICONTROL PostgreSQL]** from the left rail underneath **[!UICONTROL To a Server]**. If not available, select **[!UICONTROL More...]** and select **[!UICONTROL PostgreSQL]** from the **[!UICONTROL Installed Connectors]**.
-      ![Tableau Connectors](assets/tableau-connectors.png)
+      ![Tableau Connectors](assets/tableau-connectors.png){zoomable="yes"}
    1. In the **[!UICONTROL PostgreSQL]** dialog, in the **[!UICONTROL General]** tab:
-      ![Tableau Sign In dialog](assets/tableau-signin.png)
+      ![Tableau Sign In dialog](assets/tableau-signin.png){zoomable="yes"}
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Host]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Server]**.
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Port]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Port]**.
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Database]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Database]**. Add `%3FFLATTEN` to the value that you paste. For example: `prod:cja%3FFLATTEN`.  
@@ -144,10 +144,10 @@ When you go through the use cases, replace these example objects with objects th
       * The name of the connection, underneath **[!UICONTROL Connections]**.
       * The name of the database, underneath **[!UICONTROL Database]**.
       * A list of tables, underneath **[!UICONTROL Table]**.
-      ![Tableau Connected](assets/tableau-connected.png)
+      ![Tableau Connected](assets/tableau-connected.png){zoomable="yes"}
       1. Drag the **[!UICONTROL cc_data_view]** entry and drop the entry on the main view that reads **[!UICONTROL Drag tables]** here.
    1. The main window displays details of the **[!UICONTROL cc_data_view]** data view.
-      ![Tableau Connected](assets/tableau-validation.png)
+      ![Tableau Connected](assets/tableau-validation.png){zoomable="yes"}
       
 >[!ENDTABS]
 
@@ -166,7 +166,7 @@ Customer Journey Analytics provides information on how to connect in the Experie
 1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
 1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
 
-![Query service credentials](assets/queryservice-credentials.png)
+![Query service credentials](assets/queryservice-credentials.png){zoomable="yes"}
 
 
 +++ 
@@ -213,7 +213,7 @@ In this use case, you want to display a table and simple line visualization that
 
 An example **[!UICONTROL Daily Trend]** panel for the use case:
 
-![Customer Journey Analytics Daily Trend panel](assets/cja_daily_trend.png)
+![Customer Journey Analytics Daily Trend panel](assets/cja_daily_trend.png){zoomable="yes"}
 
 +++
 
@@ -247,7 +247,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
 
    A line chart visualization replaces the table while using the same data as the table. Your Power BI Desktop should look like below.
 
-   ![Power BI Desktop Use Case 2 Date range filter](assets/uc2-pbi-daterange.png)
+   ![Power BI Desktop Use Case 2 Date range filter](assets/uc2-pbi-daterange.png){zoomable="yes"}
 
 1. On the Line chart visualization:
 
@@ -256,7 +256,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
 
    The main view is updated to show both a line visualization and a table. Your Power BI Desktop should look like below.
 
-   ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc2-pbi-final.png)
+   ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc2-pbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop] 
 
@@ -265,7 +265,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
    1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
    1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `01/02/2023`.
 
-      ![Tableau Desktop Filter](assets/uc2-tableau-filter.png)
+      ![Tableau Desktop Filter](assets/uc2-tableau-filter.png){zoomable="yes"}
 
    1. Drag and drop **[!UICONTROL Daterangeday]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]**.
       * Select **[!UICONTROL Day]** from the **[!UICONTROL Daterangeday]** dropdown menu, so that the value is updated to **[!UICONTROL DAY(Daterangeday)]**.
@@ -275,7 +275,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Graph](assets/uc2-tableau-graph.png)
+      ![Tableau Desktop Graph](assets/uc2-tableau-graph.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Graph`.
@@ -287,7 +287,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Data](assets/uc2-tableau-data.png)
+      ![Tableau Desktop Data](assets/uc2-tableau-data.png){zoomable="yes"}
 
 1. Select the **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
    1. Drag and drop the **[!UICONTROL Graph]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
@@ -296,7 +296,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Dashboard 1](assets/uc2-tableau-dashboard.png)
+      ![Tableau Desktop Dashboard 1](assets/uc2-tableau-dashboard.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -311,7 +311,7 @@ In this use case, you want to display a table and simple line visualization that
 
 An example **[!UICONTROL Hourly Trend]** panel for the use case:
 
-![Customer Journey Analytics Hourly Trend visualizations](assets/cja_hourly_trend.png)
+![Customer Journey Analytics Hourly Trend visualizations](assets/cja_hourly_trend.png){zoomable="yes"}
 
 +++
 
@@ -335,7 +335,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
    1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
    1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `02/01/2023`.
 
-      ![Tableau Desktop Filter](assets/uc3-tableau-filter.png)
+      ![Tableau Desktop Filter](assets/uc3-tableau-filter.png){zoomable="yes"}
 
    1. Drag and drop **[!UICONTROL Daterangehour]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]**.
       * Select **[!UICONTROL More]** > **[!UICONTROL Hours]** from the **[!UICONTROL Daterangeday]** dropdown menu, so that the value is updated to **[!UICONTROL HOUR(Daterangeday)]**.
@@ -345,7 +345,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Graph](assets/uc3-tableau-graph.png)
+      ![Tableau Desktop Graph](assets/uc3-tableau-graph.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Graph`.
@@ -357,7 +357,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Data](assets/uc3-tableau-data.png)
+      ![Tableau Desktop Data](assets/uc3-tableau-data.png){zoomable="yes"}
 
 1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
    1. Drag and drop the **[!UICONTROL Graph]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
@@ -366,7 +366,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 
       Your **[!UICONTROL Dashboard 1]** view should look like below.
 
-      ![Tableau Desktop Dashboard 1](assets/uc3-tableau-dashboard.png)
+      ![Tableau Desktop Dashboard 1](assets/uc3-tableau-dashboard.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -382,7 +382,7 @@ In this use case, you want to display a table and simple line visualization that
 
 An example **[!UICONTROL Monthly Trend]** panel for the use case:
 
-![Customer Journey Analytics Monthly Trend visualization](assets/cja_monthly_trend.png)
+![Customer Journey Analytics Monthly Trend visualization](assets/cja_monthly_trend.png){zoomable="yes"}
 
 +++
 
@@ -418,7 +418,7 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
 
    A line chart visualization replaces the table while using the same data as the table. Your Power BI Desktop should look like below.
 
-   ![Power BI Desktop Use Case 2 Date range filter](assets/uc4-pbi-filter-daterange.png)
+   ![Power BI Desktop Use Case 2 Date range filter](assets/uc4-pbi-filter-daterange.png){zoomable="yes"}
 
 1. On the Line chart visualization:
 
@@ -427,7 +427,7 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
 
    The main view is updated to show both a line visualization and a table. Your Power BI Desktop should look like below.
 
-   ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc4-pbi-filter-final.png)
+   ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc4-pbi-filter-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop] 
 
@@ -436,7 +436,7 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
    1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
    1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `01/01/2024`.
 
-      ![Tableau Desktop Filter](assets/uc4-tableau-filter.png)
+      ![Tableau Desktop Filter](assets/uc4-tableau-filter.png){zoomable="yes"}
 
    1. Drag and drop **[!UICONTROL Daterangeday]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]**.
       * Select **[!UICONTROL MONTH]** from the **[!UICONTROL Daterangeday]** dropdown menu, so that the value is updated to **[!UICONTROL MONTH(Daterangeday)]**.
@@ -446,7 +446,7 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Graph](assets/uc4-tableau-graph.png)
+      ![Tableau Desktop Graph](assets/uc4-tableau-graph.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Graph`.
@@ -458,7 +458,7 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Data](assets/uc4-tableau-data.png)
+      ![Tableau Desktop Data](assets/uc4-tableau-data.png){zoomable="yes"}
 
 1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
    1. Drag and drop the **[!UICONTROL Graph]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
@@ -467,7 +467,7 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Dashboard 1](assets/uc4-tableau-dashboard.png)
+      ![Tableau Desktop Dashboard 1](assets/uc4-tableau-dashboard.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -482,7 +482,7 @@ In this use case, you want to display a table and simple bar visualization that 
 
 An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 
-![Customer Journey Analytics Single dimension ranked visualization](assets/cja-single-dimension-ranked.png)
+![Customer Journey Analytics Single dimension ranked visualization](assets/cja-single-dimension-ranked.png){zoomable="yes"}
 +++
 
 +++ BI tools
@@ -522,7 +522,7 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
    
    1. Select **[!UICONTROL Sum of purchase_revenue]** to sort the product names in descending purchase revenue order. Your Power BI Desktop should look like below.
    
-   ![Power BI Desktop Use Case 5 Table status](assets/uc5-pbi-table.png)
+   ![Power BI Desktop Use Case 5 Table status](assets/uc5-pbi-table.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Filters]** pane:
 
@@ -544,7 +544,7 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 
    The line and stacked column chart is updated. Your Power BI Desktop should look like below.
 
-   ![Power BI Desktop Use Case 5 Graph](assets/uc5-pbi-chart.png)
+   ![Power BI Desktop Use Case 5 Graph](assets/uc5-pbi-chart.png){zoomable="yes"}
 
 1. On the Line and stacked column chart visualization:
 
@@ -553,7 +553,7 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 
    The main view is updated to show both a line visualization and a table.
 
-   ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc5-pbi-final.png)
+   ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc5-pbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -562,7 +562,7 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
    1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
    1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `31/12/2024`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
 
-      ![Tableau Desktop Filter](assets/uc5-tableau-filter.png)
+      ![Tableau Desktop Filter](assets/uc5-tableau-filter.png){zoomable="yes"}
 
    1. Drag and drop **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**.
    1. Drag and drop **[!UICONTROL Purchases]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**.
@@ -579,7 +579,7 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 
    Your Tableau Desktop should look like below.
 
-   ![Tableau Desktop Graph](assets/uc5-tableau-graph.png)
+   ![Tableau Desktop Graph](assets/uc5-tableau-graph.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Data`.
@@ -591,7 +591,7 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 
    Your Tableau Desktop should look like below.
 
-   ![Tableau Desktop Data](assets/uc5-tableau-data.png)
+   ![Tableau Desktop Data](assets/uc5-tableau-data.png){zoomable="yes"}
 
 1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
    1. Drag and drop the **[!UICONTROL Graph]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
@@ -600,7 +600,7 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 
    Your **[!UICONTROL Dashboard 1]** view should look like below.
 
-   ![Tableau Desktop Dashboard 1](assets/uc5-tableau-dashboard.png)
+   ![Tableau Desktop Dashboard 1](assets/uc5-tableau-dashboard.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -615,7 +615,7 @@ In this use case, you want to display a table that breaks down the purchase reve
 
 An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
-![Customer Journey Analytics Multiple Dimension Ranked panel](assets/cja-multiple-dimension-ranked.png)
+![Customer Journey Analytics Multiple Dimension Ranked panel](assets/cja-multiple-dimension-ranked.png){zoomable="yes"}
 
 +++
 
@@ -657,7 +657,7 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
 1. To break down each category in the table, select **[!UICONTROL +]** at the product category level. Your Power BI Desktop should look like below.
 
-   ![Power BI Desktop Multiple Dimensions Ranked matrix table](assets/uc6-powerbi-data.png)
+   ![Power BI Desktop Multiple Dimensions Ranked matrix table](assets/uc6-powerbi-data.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Home]** from the top menu, and select **[!UICONTROL New visual]**. A new visual is added to your report.
 
@@ -671,7 +671,7 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
    Your Power BI Desktop should look like below.
 
-   ![Power BI Desktop Multiple Dimensions Ranked treemap](assets/uc6-powerbi-treemap.png)
+   ![Power BI Desktop Multiple Dimensions Ranked treemap](assets/uc6-powerbi-treemap.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Home]** from the top menu, and select **[!UICONTROL New visual]**. A new visual is added to your report.
 
@@ -688,7 +688,7 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
     Your Power BI Desktop should look like below.
 
-    ![Power BI Desktop Multiple Dimensions Ranked final](assets/uc6-powerbi-final.png)
+    ![Power BI Desktop Multiple Dimensions Ranked final](assets/uc6-powerbi-final.png){zoomable="yes"}
 
 
 >[!TAB Tableau Desktop] 
@@ -700,7 +700,7 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc6-tableau-filter.png)
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc6-tableau-filter.png){zoomable="yes"}
 
    1. Drag **[!UICONTROL Product Category]** and drop next to **[!UICONTROL Columns]**.
    1. Drag **[!UICONTROL Purchase Revenue]** and drop next to **[!UICONTROL Rows]**. The value changes to **[!UICONTROL SUM(Purchase Revenue)]**.
@@ -713,7 +713,7 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Multiple Dimensions Ranked Category](assets/uc6-tableau-category.png)
+      ![Tableau Desktop Multiple Dimensions Ranked Category](assets/uc6-tableau-category.png){zoomable="yes"}
 
 1. Rename the current **[!UICONTROL Sheet 1]** sheet to `Category`.
 1. Select **[!UICONTROL New Worksheet]** to create a new sheet, and rename it to `Data`.
@@ -732,7 +732,7 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Multiple Dimension Ranked Data](assets/uc6-tableau-data.png)
+      ![Tableau Desktop Multiple Dimension Ranked Data](assets/uc6-tableau-data.png){zoomable="yes"}
 
 1. Select **[!UICONTROL New worksheet]** to create a new sheet and rename it to **[!UICONTROL Treemap]**.
    1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
@@ -749,7 +749,7 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Multiple Dimension Ranked Data](assets/uc6-tableau-treemap.png)
+      ![Tableau Desktop Multiple Dimension Ranked Data](assets/uc6-tableau-treemap.png){zoomable="yes"}
 
 1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
    1. Drag and drop the **[!UICONTROL Category]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
@@ -759,7 +759,7 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
    Your **[!UICONTROL Dashboard 1]** view should look like below.
 
-   ![Tableau Desktop Dashboard 1](assets/uc6-tableau-final.png)
+   ![Tableau Desktop Dashboard 1](assets/uc6-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -774,11 +774,11 @@ You want to get the distinct number of product names that have been reported on 
 
 To report on a distinct count of product names, you set up a calculated metric in Customer Journey Analytics, with **[!UICONTROL Title]** `Product Name (Count Distinct)` and **[!UICONTROL External Id]** `product_name_count_distinct`.
 
-![Customer Journey Analytics Product Name (Distincr Count) calculated metric](assets/cja-calc-metric-distinct-count-product-names.png)
+![Customer Journey Analytics Product Name (Distincr Count) calculated metric](assets/cja-calc-metric-distinct-count-product-names.png){zoomable="yes"}
 
 You then can use that metric in an example **[!UICONTROL Count Distinct Dimension Values]** panel for the use case:
 
-![Customer Journey Analytics Distinct Count Values](assets/cja-count-distinct-dimension-values.png)
+![Customer Journey Analytics Distinct Count Values](assets/cja-count-distinct-dimension-values.png){zoomable="yes"}
 
 +++
 
@@ -807,7 +807,7 @@ You then can use that metric in an example **[!UICONTROL Count Distinct Dimensio
     
    Your Power BI Desktop should look like below.
 
-   ![Power BI Desktop Multiple Count Distinct table](assets/uc7-powerbi-table.png)
+   ![Power BI Desktop Multiple Count Distinct table](assets/uc7-powerbi-table.png){zoomable="yes"}
 
 1. Select the table visualization. From the context menu, select **[!UICONTROL Copy]** > **[!UICONTROL Copy visual]**.
 1. Paste the visualization using **[!UICONTROL ctrl-v]**. The exact copy of the visualization overlaps the original one. Move it to the right in the report area.
@@ -815,7 +815,7 @@ You then can use that metric in an example **[!UICONTROL Count Distinct Dimensio
 
    Your Power BI Desktop should look like below.
 
-   ![Power BI Desktop Multiple Count Distinct table](assets/uc7-powerbi-final.png)
+   ![Power BI Desktop Multiple Count Distinct table](assets/uc7-powerbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop] 
 
@@ -831,7 +831,7 @@ You then can use that metric in an example **[!UICONTROL Count Distinct Dimensio
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc7-tableau-data.png)
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc7-tableau-data.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Data`.
@@ -846,7 +846,7 @@ You then can use that metric in an example **[!UICONTROL Count Distinct Dimensio
 
    Your Tableau Desktop should look like below.
 
-   ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc7-tableau-card.png)
+   ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc7-tableau-card.png){zoomable="yes"}
 
 1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
    1. Drag and drop the **[!UICONTROL Card]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
@@ -854,7 +854,7 @@ You then can use that metric in an example **[!UICONTROL Count Distinct Dimensio
 
    Your **[!UICONTROL Dashboard 1]** view should look like below.
 
-   ![Tableau Desktop Dashboard 1](assets/uc7-tableau-final.png)
+   ![Tableau Desktop Dashboard 1](assets/uc7-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -870,11 +870,11 @@ You want to use a date range that you have defined in Customer Journey Analytics
 
 To report using a date range, you set up a date range in Customer Journey Analytics, with **[!UICONTROL Title]** `Last Year 2023`.
 
-![Customer Journey Analytics Use date Range Names to filter](assets/cja-daterange.png)
+![Customer Journey Analytics Use date Range Names to filter](assets/cja-daterange.png){zoomable="yes"}
 
 You then can use that date range in an example **[!UICONTROL Using Date Range Names To Filter]** panel for the use case:
 
-![Customer Journey Analytics Distinct Count Values](assets/cja-using-date-range-filter-names-to-filter.png)
+![Customer Journey Analytics Distinct Count Values](assets/cja-using-date-range-filter-names-to-filter.png){zoomable="yes"}
 
 Note how the date range defined in the Freeform table visualization overrules the date range applied to the panel.
 
@@ -907,7 +907,7 @@ Note how the date range defined in the Freeform table visualization overrules th
    
    You see the table updated with the applied **[!UICONTROL daterangeName]** filter. Your Power BI Desktop should look like below.
 
-   ![Power BI Desktop Using Date Range Names To Filter](assets/uc8-powerbi-final.png)
+   ![Power BI Desktop Using Date Range Names To Filter](assets/uc8-powerbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop] 
 
@@ -922,7 +922,7 @@ Note how the date range defined in the Freeform table visualization overrules th
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc8-tableau-final.png)
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc8-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -938,11 +938,11 @@ You want to use an existing filter for the Fishing product category, that you ha
 
 Inspect the filter that you want to use in Customer Journey Analytics.
 
-![Customer Journey Analytics Use Filter Names To Filter](assets/cja-fishing-products.png)
+![Customer Journey Analytics Use Filter Names To Filter](assets/cja-fishing-products.png){zoomable="yes"}
 
 You then can use that filter in an example **[!UICONTROL Using Date Range Names To Filter]** panel for the use case:
 
-![Customer Journey Analytics Distinct Count Values](assets/cja-using-filter-names-to-filter.png)
+![Customer Journey Analytics Distinct Count Values](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
 
 +++
 
@@ -978,7 +978,7 @@ You then can use that filter in an example **[!UICONTROL Using Date Range Names 
    
    You see the table updated with the applied **[!UICONTROL filterName]** filter. Your Power BI Desktop should look like below.
 
-   ![Power BI Desktop Using Date Range Names To Filter](assets/uc9-powerbi-final.png)
+   ![Power BI Desktop Using Date Range Names To Filter](assets/uc9-powerbi-final.png){zoomable="yes"}
 
 
 >[!TAB Tableau Desktop] 
@@ -996,7 +996,7 @@ You then can use that filter in an example **[!UICONTROL Using Date Range Names 
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc9-tableau-final.png)   
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc9-tableau-final.png){zoomable="yes"}   
 
 >[!ENDTABS]
 
@@ -1011,11 +1011,11 @@ You create a new filter in Customer Journey Analytics that filters on products f
 
 Create a new filter with **[!UICONTROL Title]** `Hunting Products` in Customer Journey Analytics.
 
-![Customer Journey Analytics Use Dimension Values To Filter](assets/cja-hunting-products.png)
+![Customer Journey Analytics Use Dimension Values To Filter](assets/cja-hunting-products.png){zoomable="yes"}
 
 You then can use that filter in an example **[!UICONTROL Using Dimension Values To Filter]** panel for the use case:
 
-![Customer Journey Analytics Distinct Count Values](assets/cja-using-dimension-values-to-filter.png)
+![Customer Journey Analytics Distinct Count Values](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
 
 +++
 
@@ -1052,7 +1052,7 @@ You then can use that filter in an example **[!UICONTROL Using Dimension Values 
    
    You see the table updated with the applied **[!UICONTROL filterName]** filter. Your Power BI Desktop should look like below.
 
-   ![Power BI Desktop Using Date Range Names To Filter](assets/uc10-powerbi-final.png)
+   ![Power BI Desktop Using Date Range Names To Filter](assets/uc10-powerbi-final.png){zoomable="yes"}
 
 
 
@@ -1072,7 +1072,7 @@ You then can use that filter in an example **[!UICONTROL Using Dimension Values 
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc10-tableau-final.png)   
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc10-tableau-final.png){zoomable="yes"}   
 
 >[!ENDTABS]
 
@@ -1088,7 +1088,7 @@ You want to report on purchase revenue and purchases for product names during Ja
 
 An example **[!UICONTROL Sort]** panel for the use case:
 
-![Customer Journey Analytics Sort panel](assets/cja-sort.png)
+![Customer Journey Analytics Sort panel](assets/cja-sort.png){zoomable="yes"}
 
 +++
 
@@ -1122,7 +1122,7 @@ An example **[!UICONTROL Sort]** panel for the use case:
 
    Your Power BI Desktop should look like below.
 
-   ![Power BI Desktop Using Date Range Names To Filter](assets/uc11-powerbi-final.png)
+   ![Power BI Desktop Using Date Range Names To Filter](assets/uc11-powerbi-final.png){zoomable="yes"}
 
 The query executed by Power BI Desktop using the BI extension is not including a `sort` statement. The lack of a `sort` statement implies that the sort is executed client side.
 
@@ -1228,7 +1228,7 @@ limit 1000001
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Sort](assets/uc11-tableau-final.png)   
+      ![Tableau Desktop Sort](assets/uc11-tableau-final.png){zoomable="yes"}   
 
 The query executed by Tableau Desktop using the BI extension is not including a `sort` statement. The lack of this `sort` statement implies that the sort is executed client side.
 
@@ -1254,7 +1254,7 @@ You want to report on the top 5 occurrences of product names during 2023.
 
 An example **[!UICONTROL Limit]** panel for the use case:
 
-![Customer Journey Analytics Limit panel](assets/cja-limit.png)
+![Customer Journey Analytics Limit panel](assets/cja-limit.png){zoomable="yes"}
 
 +++
 
@@ -1290,7 +1290,7 @@ An example **[!UICONTROL Limit]** panel for the use case:
 
    Your Power BI Desktop should look like below.
 
-   ![Power BI Desktop Using Date Range Names To Filter](assets/uc12-powerbi-final.png)
+   ![Power BI Desktop Using Date Range Names To Filter](assets/uc12-powerbi-final.png){zoomable="yes"}
 
 The query executed by Power BI Desktop using the BI extension is including a `limit` statement but not the one expected. The limit to the top 5 occurrences is enforced by Power BI Desktop using explicit product name results.
 
@@ -1401,7 +1401,7 @@ limit 1000001
 
          Your Tableau Desktop should look like below.
 
-         ![Tableau Desktop Limits](assets/uc12-tableau-final.png)   
+         ![Tableau Desktop Limits](assets/uc12-tableau-final.png){zoomable="yes"}   
 
 As shown above, this query executed by Tableau Desktop, when defining a Top 5 occurrences filter on product names, fails.
 
@@ -1483,12 +1483,12 @@ Power BI Desktop provides custom transformation functionality using [Data Analys
 1. Select product_name in the Data pane.
 1. Select New column in the toolbar.
 1. In the formula editor, define a new column named `product_name_lower`, like `product_name_lower = LOWER('public.cc_data_view[product_name])`.
-   ![Power BI Desktop Transformation to Lower](assets/uc14-powerbi-transformation.png)
+   ![Power BI Desktop Transformation to Lower](assets/uc14-powerbi-transformation.png){zoomable="yes"}
 1. Ensure you select the new product_name_lower column in the Data pane instead of the product_name column.
 1. Select Report as Table from ![More](/help/assets/icons/More.svg) in the table visualization.
 
    Your Power BI Desktop should look like below. 
-   ![Power BI Desktop Transformation Final](assets/uc14-powerbi-final.png)
+   ![Power BI Desktop Transformation Final](assets/uc14-powerbi-final.png){zoomable="yes"}
 
 The custom transformation result in an updates to SQL queries. See the use of the `lower` function in the SQL example below:
 
@@ -1557,7 +1557,7 @@ Tableau Desktop provides custom transformation functionality using [Calculated F
 
 1. Select **[!UICONTROL Analysis]** > **[!UICONTROL Create Calculated Field]** from the main menu.
    1. Define **[!UICONTROL Lowercase Product Name]** using the function `LOWER([Product Name])`.
-      ![Tableau Calculated Field](assets/uc14-tableau-calculated-field.png)
+      ![Tableau Calculated Field](assets/uc14-tableau-calculated-field.png){zoomable="yes"}
    1. Select **[!UICONTROL OK]**.
 1. Select the **[!UICONTROL Data]** sheet.
    1. Drag **[!UICONTROL Lowercase Product Name]** from **[!UICONTROL Tables]** and drop the entry in the field next to **[!UICONTROL Rows]**.
@@ -1566,7 +1566,7 @@ Tableau Desktop provides custom transformation functionality using [Calculated F
 
 Your Tableau Desktop should look like below.
 
-![Tableau Desktop after transformation](assets/uc14-tableau-final.png)
+![Tableau Desktop after transformation](assets/uc14-tableau-final.png){zoomable="yes"}
 
 The custom transformation result in an updates to SQL queries. See the use of the `LOWER` function in the SQL example below:
 
@@ -1637,11 +1637,11 @@ For most Customer Journey Analytics visualizations, Power BI Desktop offers equi
 
 Power BI supports [drill mode](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) to explore in-depth details on certain visualizations. In the example below, you analyze purchase revenue for product categories. From the context menu of a bar representing a product category, you can select **[!UICONTROL Drill down]**.
 
-![Power BI drill down](assets/uc15-powerbi-drilldown.png)
+![Power BI drill down](assets/uc15-powerbi-drilldown.png){zoomable="yes"}
 
 Drill down will update the visualization with purchase revenue for products within the selected product category.
 
-![Power BI drill up](assets/uc15-powerbi-drillup.png)
+![Power BI drill up](assets/uc15-powerbi-drillup.png){zoomable="yes"}
 
 The drill down results in the following SQL query that uses a `WHERE` clause:
 
@@ -1720,11 +1720,11 @@ For most Customer Journey Analytics visualizations, Tableau offers equivalent ex
 
 Tableau supports [drill mode](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) through [hierarchies](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm). In the example below, you create a hierarchy when you select the  Product Name field within Tables and drag it on top of Product Category. Then, fom the context menu of a bar representing a product category, you can select **[!UICONTROL + Drill down]**.
 
-![Tableau drill down](assets/uc15-tableau-drilldown.png)
+![Tableau drill down](assets/uc15-tableau-drilldown.png){zoomable="yes"}
 
 Drill down will update the visualization with purchase revenue for products within the selected product category.
 
-![Tableau drill up](assets/uc15-tableau-drillup.png)
+![Tableau drill up](assets/uc15-tableau-drillup.png){zoomable="yes"}
 
 The drill down results in the following SQL query that is using a GROUP BY clause:
 
@@ -1740,11 +1740,11 @@ GROUP BY 1,
 
 The query does **not** limit the results to the selected product category; only the visualization shows the selected product category. 
 
-![Tableau drill up](assets/uc15-tableau-drillup2.png)
+![Tableau drill up](assets/uc15-tableau-drillup2.png){zoomable="yes"}
 
 Alternatively, you can create a drill down dashboard where one visual is the result of the selection in another visual. In the example below, the **[!UICONTROL Product Categories]** visualization is used as a filter to update the **[!UICONTROL Product Names]** table. This visualization filter is client-only and does not result in an additional SQL query.
 
-![Tableau visualization filter](assets/uc15-tableau-visualizationfilter.png)
+![Tableau visualization filter](assets/uc15-tableau-visualizationfilter.png){zoomable="yes"}
 
 
 >[!ENDTABS]
