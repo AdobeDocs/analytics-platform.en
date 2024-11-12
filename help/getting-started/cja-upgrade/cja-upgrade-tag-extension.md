@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
 ---
 # Add the Web SDK extension to your tag
 
