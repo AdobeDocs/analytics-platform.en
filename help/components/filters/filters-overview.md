@@ -168,9 +168,13 @@ When creating containers within other containers, you are actually creating a fi
 2. Apply the nested filter definition to the remaining data. The nested filter definition does NOT apply to any data that the first definition discarded.
 3. Repeat until all nested container filter definitions have been calculated. The remaining data is then included in the result and used for reporting.
 
+>[!NOTE]
+>
+>When you nest a filter within a filter (for example, you drag a filter from the Components panel onto your filter definition), a container is created with a copy (not a reference) of the dragged filter definition. 
 
 <!--
 You can use nesting between containers and between conditions within a container. Here is what you can nest in each container:
+
 
 | Container | What container you can nest inside |
 | Event | Only event conditions |
