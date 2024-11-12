@@ -100,7 +100,7 @@ Each step provides a high-level explanation of a more detailed process. Follow t
 
    +++Tags
 
-   1. [Implement the loader tag on your site](/help/getting-started/cja-upgrade/cja-upgrage-tag-loader.md).
+   1. [Implement the loader tag on your site](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md).
 
    1. [Create a tag property and add the Adobe Experience Platform Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md).
 

@@ -44,7 +44,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Understand Analytics implementation](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
     + [Create lookup datasets for classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
     + [Create a marketing channel derived field](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
-    + [Implement the loader tag for the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrage-tag-loader.md)
+    + [Implement the loader tag for the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
     + [Create a tag for your property](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
     + [Add the Web SDK extension to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
     + [Add XDM data collection logic to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
