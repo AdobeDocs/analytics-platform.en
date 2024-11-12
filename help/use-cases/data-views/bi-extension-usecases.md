@@ -64,7 +64,7 @@ The instructions refer to an example environment with the following objects:
 * Metrics: **[!UICONTROL Purchase Revenue]** 🅓 and **[!UICONTROL Purchases]** 🅔.
 * Filter: **[!UICONTROL Fishing Products]** 🅕.
 
-![Customer Journey Analytics Base setup](assets/cja-base.png)
+![Customer Journey Analytics Base setup](assets/cja-base.png){zoomable="yes"}
 
 When you go through the use cases, replace these example objects with objects that are appropriate for your specific environment.
 
@@ -83,7 +83,7 @@ When you go through the use cases, replace these example objects with objects th
    1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
    1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
 
-      ![Query service credentials](assets/queryservice-credentials.png)
+      ![Query service credentials](assets/queryservice-credentials.png){width="100" zoomable="yes"}
 
 1. Start Power BI Desktop.
    1. From the main interface, select **[!UICONTROL Get data from other sources]**.
@@ -123,7 +123,7 @@ When you go through the use cases, replace these example objects with objects th
    1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
    1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
 
-      ![Query service credentials](assets/queryservice-credentials.png)
+      ![Query service credentials](assets/queryservice-credentials.png){zoomable="yes"}
 
 1. Start Tableau.
    1. Select **[!UICONTROL PostgreSQL]** from the left rail underneath **[!UICONTROL To a Server]**. If not available, select **[!UICONTROL More...]** and select **[!UICONTROL PostgreSQL]** from the **[!UICONTROL Installed Connectors]**.
