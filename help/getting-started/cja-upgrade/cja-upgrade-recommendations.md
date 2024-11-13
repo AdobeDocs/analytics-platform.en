@@ -86,7 +86,7 @@ Each step provides a high-level explanation of a more detailed process. Follow t
 
 1. (Optional) Bring historical data from Adobe Analytics using the Analytics source connector.  
    
-   For more information, see [Use a source connector](/help/data-ingestion/sources.md#use-a-source-connector) in [Ingest and use data using source connectors](/help/data-ingestion/sources.md).
+   For more information, [Use the Analytics source connector for historical data](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
 
 1. Expand the section that describes how you want to implement the Experience Platform Web SDK for your Customer Journey Analytics implementation, then complete the associated steps:
 
