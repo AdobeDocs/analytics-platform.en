@@ -73,7 +73,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 4. Ensure that the selected data view for the panel is the data view that was enabled for AI Assistant use for Alpha testing (reach out in the Alpha slack channel if you are unsure)
 
-5. Click the AI Assistant chat icon at the top right.
+5. Click the AI Assistant chat icon at the top right. Note: If you do not see the chat icon in the top right, please reach out to your Admin and have them follow [these instructions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/ai-assistant#feature-access) to enable the "AI Assistant: Product Knowledge" and "AI Assistant: Data Analysis" in Admin Console. 
 
    ![AI Assistant icon](/help/assets/ai-asst-icon.png)
 
