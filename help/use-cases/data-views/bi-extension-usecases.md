@@ -1720,7 +1720,7 @@ For most Customer Journey Analytics visualizations, Tableau offers equivalent ex
 
 ### Drill down
 
-Tableau supports [drill mode](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) through [hierarchies](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm). In the example below, you create a hierarchy when you select the  Product Name field within Tables and drag it on top of Product Category. Then, fom the context menu of a bar representing a product category, you can select **[!UICONTROL + Drill down]**.
+Tableau supports [drill mode](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) through [hierarchies](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm). In the example below, you create a hierarchy when you select the **[!UICONTROL Product Name]** field within **[!UICONTROL Tables]** and drag it on top of **[!UICONTROL Product Category]**. Then, from the context menu of a bar representing a product category, you can select **[!UICONTROL + Drill down]**.
 
 ![Tableau drill down](assets/uc15-tableau-drilldown.png){zoomable="yes"}
 
