@@ -174,4 +174,4 @@ Following the thumbs up/down selection, please make a selection for the relevant
 
 ## Questions and Contact
 
-* Send questions and feedback in the Alpha slack channel: #aep-cja-ai-assistant-testers ???
+* Send questions and feedback in the Alpha slack channel: #cja-assistant-data-alpha
