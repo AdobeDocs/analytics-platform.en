@@ -19,10 +19,6 @@ You can use the Analytics source connector to bring Adobe Analytics report suite
 
 The following steps assume that you want to [create an XDM schema when upgrading to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), because you want a streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use. 
 
-
-
-## Create the source connector
-
 With your XDM schema created, you need to create the Adobe Analytics source connector to use for historical data. 
 
 For more comprehensive, general guidelines on creating a source connector, see [Create an Adobe Analytics source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
@@ -55,9 +51,9 @@ To create an Adobe Analytics source connector to use for historical data:
 
    ![map schema fields](assets/schema-mapping.png)
 
-   1. In the **[!UICONTROL Source field]**, select the Adobe Analytics field, then, in the **[!UICONTROL Target field]**, select the XDM field that you want to map it to. 
+   1. In the **[!UICONTROL Source field]**, select an Adobe Analytics field from the Adobe Analytics ExperienceEvent Template field group. Then, in the **[!UICONTROL Target field]**, select the XDM field that you want to map it to. 
 
-   1. Repeat this process for each field that you are using to collect data in Adobe Analytics.
+   1. Repeat this process for each field in the Adobe Analytics ExperienceEvent Template field group that you are using to collect data in Adobe Analytics.
 
 1. Select **[!UICONTROL Next]** in the upper-right corner of the screen.
 
@@ -69,12 +65,14 @@ To create an Adobe Analytics source connector to use for historical data:
 
 1. Review the connection, then select **[!UICONTROL Finish]**.
 
-    ![Adobe Experience Platform window highlighting the Connect and Data type sections for review](./assets/review.png)
+   ![Adobe Experience Platform window highlighting the Connect and Data type sections for review](./assets/review.png)
 
-1. Continue with the following section, [Map Adobe Analytics variables to custom fields in your XDM schema](#datastream-mapping).
+   After the connection is created, the dataflow is automatically created to populate a dataset with the Adobe Analytics data from your report suite. The dataflow ingests up to 13 months of historical data for production sandboxes. The backfill in non-production sandboxes is limited to three months.
 
-<!-- What about this info? "After the connection is created, the dataflow is automatically created to populate a dataset with the Adobe Analytics data from your report suite. The dataflow ingests up to 13 months of historical data for production sandboxes. The backfill in non-production sandboxes is limited to three months.
+   When the initial ingestion completes, your Adobe Analytics report suite data is ready to be used by Customer Journey Analytics.
 
-When the initial ingestion completes, your Adobe Analytics report suite data is ready to be used by Customer Journey Analytics." -->
+1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+
+
 
 
