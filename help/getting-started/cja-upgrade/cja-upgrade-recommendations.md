@@ -84,9 +84,13 @@ Each step provides a high-level explanation of a more detailed process. Follow t
 
 1. (Optional) If you want to integrate Customer Journey Analytics with Adobe Journey Optimizer, use the personalization object in your implementation for use in Adobe Journey Optimizer.
 
-1. (Optional) Bring historical data from Adobe Analytics using the Analytics source connector.  
+1. (Optional) Bring historical data from Adobe Analytics using the Analytics source connector:  
    
-   For more information, [Use the Analytics source connector for historical data](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+   1. [Create a schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
+   
+   1. [Create the Analytics source connector and map Adobe Analytics fields to your custom XDM fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+   1. [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 
 1. Expand the section that describes how you want to implement the Experience Platform Web SDK for your Customer Journey Analytics implementation, then complete the associated steps:
 
