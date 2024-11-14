@@ -44,7 +44,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Understand Analytics implementation](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
     + [Create lookup datasets for classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
     + [Create a marketing channel derived field](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
-    + [Implement the loader tag for the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrage-tag-loader.md)
+    + [Implement the loader tag for the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
     + [Create a tag for your property](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
     + [Add the Web SDK extension to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
     + [Add XDM data collection logic to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
@@ -58,6 +58,9 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create a data view](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
     + [Validate data flow](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
     + [Upgrade shortcut: Migrate to Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
+    + [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+    + [Create the Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+    + [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)

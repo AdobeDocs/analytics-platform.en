@@ -8,7 +8,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 ---
-# Create an XDM schema to use with Customer Journey Analytics
+# Create an XDM schema to use with your Customer Journey Analytics Web SDK implementation
 
 >[!NOTE]
 > 
@@ -34,7 +34,7 @@ To create a schema:
 
 1. Select **[!UICONTROL Create schema]**. 
  
-1. In the Select a class step of the Create schema wizard: 
+1. In the **[!UICONTROL Select a class]** step of the Create schema wizard: 
 
    1. Select **[!UICONTROL Experience Event]**.
 
@@ -55,11 +55,11 @@ To create a schema:
 
    1. Select **[!UICONTROL Finish]**.
 
-1. In the [!UICONTROL **Structure**] tab of your schema:
-    
-   1. In the **[!UICONTROL Field groups]** section, select **[!UICONTROL + Add]**.
+1. Add all field groups that contain any fields that you want to include in your schema.
 
-      Field groups are reusable collections of objects and attributes that allow you to easily extend your schema.
+   Field groups are reusable collections of objects and attributes that allow you to easily extend your schema.
+
+   1. In the **[!UICONTROL Field groups]** section, select **[!UICONTROL + Add]**.
 
       ![Add field group](assets/add-field-group-button.png)
 
@@ -71,9 +71,21 @@ To create a schema:
 
       ![AEP Web SDK ExperienceEvent fieldgroup preview](assets/aepwebsdk-experiencevent-preview.png)
 
-      Select **[!UICONTROL Back]** to close the preview.      
+      Select **[!UICONTROL Back]** to close the preview.   
+
+   1. (Optional) Select any additional field groups that you want to include.   
 
    1. Select **[!UICONTROL Add field groups]**.
+
+1. (Optional) If you have custom fields that you want to include in your schema, create a custom field group and add the custom fields to the field group. 
+
+   1. In the **[!UICONTROL Field groups]** section, select **[!UICONTROL + Add]**.
+
+      ![Add field group](assets/add-field-group-button.png) 
+
+   1. In the [!UICONTROL Add fields groups] dialog, select **[!UICONTROL Create new field group]**.
+
+   1. Specify a display name and optional description, then select **[!UICONTROL Add field groups]**. 
 
 1. Select **[!UICONTROL +]** next to your schema name in the [!UICONTROL Structure] panel.
 
