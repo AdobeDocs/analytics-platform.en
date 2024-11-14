@@ -4,8 +4,6 @@ description: Multiple use cases that show how to use the BI extension in various
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-hide: yes
-hidefromtoc: yes
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
 ---
 # BI extension use cases
@@ -255,7 +253,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
    1. Drag and drop **[!UICONTROL Daterangeday]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]**.
       * Select **[!UICONTROL Day]** from the **[!UICONTROL Daterangeday]** dropdown menu, so that the value is updated to **[!UICONTROL DAY(Daterangeday)]**.
    1. Drag and drop **[!UICONTROL Occurrences]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**.
-      * The values is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
+      * The value is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
    1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** dropdown menu in the toolbar.
 
       Your Tableau Desktop should look like below.
@@ -325,7 +323,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
    1. Drag and drop **[!UICONTROL Daterangehour]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]**.
       * Select **[!UICONTROL More]** > **[!UICONTROL Hours]** from the **[!UICONTROL Daterangeday]** dropdown menu, so that the value is updated to **[!UICONTROL HOUR(Daterangeday)]**.
    1. Drag and drop **[!UICONTROL Occurrences]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**.
-      * The values is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
+      * The value is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
    1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** dropdown menu in the toolbar.
 
       Your Tableau Desktop should look like below.
@@ -426,7 +424,7 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
    1. Drag and drop **[!UICONTROL Daterangeday]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]**.
       * Select **[!UICONTROL MONTH]** from the **[!UICONTROL Daterangeday]** dropdown menu, so that the value is updated to **[!UICONTROL MONTH(Daterangeday)]**.
    1. Drag and drop **[!UICONTROL Occurrences]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**.
-      * The values is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
+      * The value is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
    1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** dropdown menu in the toolbar.
 
       Your Tableau Desktop should look like below.
@@ -551,9 +549,9 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 
    1. Drag and drop **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**.
    1. Drag and drop **[!UICONTROL Purchases]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**.
-      * The values is automatically converted to **[!UICONTROL SUM(Purchases)]**.
+      * The value is automatically converted to **[!UICONTROL SUM(Purchases)]**.
    1. Drag and drop **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]** and left from **[!UICONTROL SUM(Purchases)]**.
-      * The values is automatically converted to **[!UICONTROL SUM(Purchase Revenue)]**.
+      * The value is automatically converted to **[!UICONTROL SUM(Purchase Revenue)]**.
    1. To order both charts in descending purchase revenue order, hover over the **[!UICONTROL Purchase Revenue]** title and select the sort icon.
    1. To limit the number of entries in the charts, select **[!UICONTROL SUM(Purchase Revenue)]** in **[!UICONTROL Rows]** and from the dropdown menu select **[!UICONTROL Filter]**.
    1. In the **[!UICONTROL Filter \[Purchase Revenue\]]** dialog select **[!UICONTROL Range of values]** and enter appropriate values. For example: `1,000,000` - `2,000,000`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
@@ -738,8 +736,8 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
 1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
    1. Drag and drop the **[!UICONTROL Category]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
-   1. Drag and drop the **[!UICONTROL Treemap]** sheet from the **[!UICONTROL Sheets]** shelf below the **[!UICONTROL Category]** sheet onto the **[!UICONTROL Dashboard 1]** view.
-   1. Drag and drop the **[!UICONTROL Data]** sheet from the **[!UICONTROL Sheets]** shelf below the **[!UICONTROL Treemap]** sheet onto the **[!UICONTROL Dashboard 1]** view.
+   1. Drag and drop the **[!UICONTROL Treemap]** sheet from the **[!UICONTROL Sheets]** shelf underneath the **[!UICONTROL Category]** sheet on the **[!UICONTROL Dashboard 1]** view.
+   1. Drag and drop the **[!UICONTROL Data]** sheet from the **[!UICONTROL Sheets]** shelf underneath the **[!UICONTROL Treemap]** sheet on the **[!UICONTROL Dashboard 1]** view.
    1. Resize each of the sheets in the view.
 
    Your **[!UICONTROL Dashboard 1]** view should look like below.
@@ -844,7 +842,7 @@ Alternatively, you can use the count distinct functionality from Power BI.
 
 1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
    1. Drag and drop the **[!UICONTROL Card]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
-   1. Drag and drop the **[!UICONTROL Data]** sheet from the **[!UICONTROL Sheets]** shelf below the **[!UICONTROL Card]** sheet onto the **[!UICONTROL Dashboard 1]** view.
+   1. Drag and drop the **[!UICONTROL Data]** sheet from the **[!UICONTROL Sheets]** shelf underneath the **[!UICONTROL Card]** sheet on the **[!UICONTROL Dashboard 1]** view.
 
    Your **[!UICONTROL Dashboard 1]** view should look like below.
 
@@ -866,7 +864,7 @@ Alternatively, you can use the count distinct functionality from Tableau Desktop
 
 ## Use date range names to filter
 
-You want to use a date range that you have defined in Customer Journey Analytics to filter and report on occurrences (events) during the last year.
+In this use case you want to use a date range that you have defined in Customer Journey Analytics to filter and report on occurrences (events) during the last year.
 
 +++ Customer Journey Analytics
 
@@ -1539,7 +1537,7 @@ limit 1000001
 The Customer Journey Analytics objects are available in the **[!UICONTROL Data]** side bar whenever you work in a sheet. And are retrieved from the table that you have selected as part of the **[!UICONTROL Data source]** page in Tableau. For example, **[!UICONTROL cc_data_view]**. The name of the table is the same as the External ID that you have defined for your data view in Customer Journey Analytics. For example, data view with **[!UICONTROL Title]** `C&C - Data View` and **[!UICONTROL External ID]** `cc_data_view`.
 
 **Dimensions**
-Dimensions from Customer Journey Analytics are identified by the [!UICONTROL Component name]. The [!UICONTROL Component name] is defined in your Customer Journey Analytics data view. For example, dimension **[!UICONTROL Product Name]** in Customer Journey Analytics has a [!UICONTROL Component name] **[!UICONTROL Product Name]**, which is the name for the dimension in Tableau. All dimension are identified by **[!UICONTROL Abc]**.
+Dimensions from Customer Journey Analytics are identified by the [!UICONTROL Component name]. The [!UICONTROL Component name] is defined in your Customer Journey Analytics data view. For example, dimension **[!UICONTROL Product Name]** in Customer Journey Analytics has a [!UICONTROL Component name] **[!UICONTROL Product Name]**, which is the name for the dimension in Tableau. All dimensions are identified by **[!UICONTROL Abc]**.
 Date range dimensions from Customer Journey Analytics, like **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]**, and more are available as **[!UICONTROL Daterangeday]**, **[!UICONTROL Daterangeweek]**, **[!UICONTROL Daterangemonth]**, and more. When you use a date range dimension, you have to select an appropriate definition of date or time to apply to that date range dimension from the dropdown menu. For example, **[!UICONTROL Year]**, **[!UICONTROL Quarter]**, **[!UICONTROL Month]**, **[!UICONTROL Day]**.
 
 **Metrics**
@@ -1637,11 +1635,11 @@ For most Customer Journey Analytics visualizations, Power BI Desktop offers equi
 
 ### Drill down
 
-Power BI supports [drill mode](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) to explore in-depth details on certain visualizations. In the example below, you analyze purchase revenue for product categories. From the context menu of a bar representing a product category, you can select **[!UICONTROL Drill down]**.
+Power BI supports a [drill mode](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) to explore in-depth details on certain visualizations. In the example below, you analyze purchase revenue for product categories. From the context menu of a bar representing a product category, you can select **[!UICONTROL Drill down]**.
 
 ![Power BI drill down](assets/uc15-powerbi-drilldown.png){zoomable="yes"}
 
-Drill down will update the visualization with purchase revenue for products within the selected product category.
+Drill down updates the visualization with purchase revenue for products within the selected product category.
 
 ![Power BI drill up](assets/uc15-powerbi-drillup.png){zoomable="yes"}
 
@@ -1764,18 +1762,18 @@ Each of the supported BI tools has some caveats in working with the Customer Jou
 
 >[!TAB Power BI Desktop] 
 
-* Power BI Desktop Advanced date range filtering is exclusive.  For your end date you need to select one past the day you want to report on. For example **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL and before]** `1/2/2023`.
+* Power BI Desktop Advanced date range filtering is exclusive.  For your end date, you need to select one past the day you want to report on. For example **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL and before]** `1/2/2023`.
 * Power BI Desktop defaults to **[!UICONTROL Import]** when you create a connection. Please ensure you use **[!UICONTROL Direct Query]**.
-* Power BI Desktop exposes data transformations through Power Query.  Power Query primarily works with with Import type connections so a lot of transformations you apply like date or string functions will throw an error saying you need to switch to an Import type connection.  If you need to transform data at query time, you should use derived dimensions and metrics so Power BI doesn't need to do the transforms itself.
+* Power BI Desktop exposes data transformations through Power Query.  Power Query primarily works with Import type connections so a many transformations that you apply like date or string functions throw an error saying you need to switch to an Import type connection.  If you need to transform data at query time, you should use derived dimensions and metrics so Power BI doesn't need to do the transforms itself.
 * Power BI Desktop does not understand how to handle date-time type columns so the **[!UICONTROL daterange*X*]** dimensions like **[!UICONTROL daterangehour]** and **[!UICONTROL daterangeminute]** are not supported.
-* Power BI Desktop by default tries to make multiple connections using up more Query Service sessions.  You should go in to the Power BI settings for your project and disable parallel queries.
-* Power BI Desktop does all sorting and limiting client-side, and also has different semantics for top *X* filtering that includes tied values so you can not create the exact same sorting and limiting as you can do in Analysis Workspace.
+* Power BI Desktop by default tries to make multiple connections using up more Query Service sessions.  Go in to the Power BI settings for your project and disable parallel queries.
+* Power BI Desktop does all sorting and limiting client-side. Power BI Desktop also has different semantics for top *X* filtering that includes tied values. So you cannot create the same sorting and limiting as you can do in Analysis Workspace.
 * Earlier versions of the Power BI Desktop October 2024 release break PostgreSQL data sources. Ensure you use the version mentioned in this article.
 
 >[!TAB Tableau Desktop]
 
-* Tableau Desktop Range of Dates filtering is exclusive. For your end date you need to select one past the day you want to report on.
-* By default when you add a date or date-time dimension like **[!UICONTROL Daterangemonth]** to the rows of a sheet, Tableau Desktop will wrap the field in a **[!UICONTROL YEAR()]** function.  To get what you want, you need to select that dimension and from the dropdown menu select the date function you want to use.  For example change **[!UICONTROL Year]** to **[!UICONTROL Month]** when you are trying to use **[!UICONTROL Daterangemonth]**.
+* Tableau Desktop Range of Dates filtering is exclusive. For your end date, you need to select one past the day you want to report on.
+* By default, when you add a date or date-time dimension like **[!UICONTROL Daterangemonth]** to the rows of a sheet, Tableau Desktop wraps the field in a **[!UICONTROL YEAR()]** function.  To get what you want, you need to select that dimension and from the dropdown menu select the date function you want to use.  For example, change **[!UICONTROL Year]** to **[!UICONTROL Month]** when you are trying to use **[!UICONTROL Daterangemonth]**.
 * Limiting results to the Top *X* is not obvious in Tableau Desktop. You can limit the results explicitly or using a calculated-field and the **[!UICONTROL INDEX()]** function.  Adding a Top *X* filter to a dimension generates complex SQL using an inner-join that is not supported.
 
 >[!ENDTABS]
