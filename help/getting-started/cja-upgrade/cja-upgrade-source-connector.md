@@ -1,6 +1,6 @@
 ---
-title: Use the Analytics source connector for historical data
-description: Learn how to use the Analytics source connector to bring historical data into Customer Journey Analytics
+title: Create the Analytics source connector and map fields
+description: Learn how to create the Analytics source connector and map fields
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics

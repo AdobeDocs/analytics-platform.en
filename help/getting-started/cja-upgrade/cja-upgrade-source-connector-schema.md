@@ -1,6 +1,6 @@
 ---
-title: Create a schema for the Analytics source connector
-description: Learn how to create a schema for the Analytics source connector
+title: Create an XDM schema for the Analytics source connector
+description: Learn how to create an XDM schema for the Analytics source connector
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
