@@ -7,7 +7,7 @@ feature: Basics
 hide: yes
 hidefromtoc: yes
 ---
-# Create the Analytics source connector for historical data
+# Create the Analytics source connector and map fields
 
 >[!NOTE]
 > 

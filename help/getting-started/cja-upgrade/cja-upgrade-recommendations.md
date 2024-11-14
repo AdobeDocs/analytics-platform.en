@@ -88,7 +88,7 @@ Each step provides a high-level explanation of a more detailed process. Follow t
    
    1. [Create a schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
    
-   1. [Create the Analytics source connector and map Adobe Analytics fields to your custom XDM fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+   1. [Create the Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
 
    1. [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 
