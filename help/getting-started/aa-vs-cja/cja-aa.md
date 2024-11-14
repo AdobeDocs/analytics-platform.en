@@ -72,6 +72,7 @@ The following table lists features that are available in Customer Journey Analyt
 
 | Feature | Notes |
 | --- | --- |
+| **Advertising Cloud** | You can [collect historical data for AMO IDs and EF IDs for Use in Adobe Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/planning/rvars-to-evars) |
 | **Alerts** | The process of [using alerts in Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) is nearly identical to using alerts in Adobe Analytics. <p>However, due to the timing of data collection in Customer Journey Analytics, hourly alerts are not available. In Customer Journey Analytics, alerts can be configured for daily, weekly, or monthly.</p> |
 | **Analytics for Target (A4T)** | The [integration between Adobe Customer Journey Analytics and Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) provides powerful analysis and timesaving tools for your optimization program. |
 | **Audience publishing** | Supported if licensed with Adobe's Customer Data Platform or Journey Optimizer products. [Audience Publishing](/help/components/audiences/audiences-overview.md) sends audiences to Real-time Customer Profile in Experience Platform. |
@@ -121,9 +122,6 @@ The following table lists features that are available in Customer Journey Analyt
 | Feature | Notes |
 | --- | --- |
 | **Activity Map** | Support is not yet planned. |
-| **Advertising Cloud** | Support is not yet planned. |
-
-{style="table-layout:auto"}
 
 ## Will never be supported {#never}
 
