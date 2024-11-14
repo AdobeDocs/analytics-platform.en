@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 424485a3-a076-4656-83b6-733f16cc2326
 ---
 # Add the Analytics source connector dataset to the connection
 
@@ -77,4 +78,3 @@ To add the automatically created dataset to the same connection that you created
 1. Select **[!UICONTROL Add datasets]**, then select **[!UICONTROL Save]** to save the connection.
 
 1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
-

@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
 ---
 # Create an XDM schema for the Analytics source connector
 
@@ -46,4 +47,3 @@ To create the XDM schema to use with the Analytics source connector:
 1. Select **[!UICONTROL Save]** to save your schema.
 
 1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
-
