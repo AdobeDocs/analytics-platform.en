@@ -16,6 +16,30 @@ exl-id: 424485a3-a076-4656-83b6-733f16cc2326
 >
 >After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
 
+>[!NOTE]
+>
+>The information on this page assumes the following:
+>
+>* You are upgrading from Adobe Analytics to Customer Journey Analytics.
+>* You are using the Web SDK for your future Customer Journey Analytics data collection.
+>* You want to use the Analytics source connector to bring your historical Adobe analytics data into Customer Journey Analytics. 
+
+## Understand how the Analytics source connector can bring historical data into Customer Journey Analytics
+
+You can use the Analytics source connector to bring Adobe Analytics report suite data into Adobe Experience Platform. This data can then be used as historical data in Customer Journey Analytics.
+
+This process assumes that you want to [create an XDM schema when upgrading to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), because you want a streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use. 
+
+To use the Analytics source connector to bring historical data into Customer Journey Analytics, you need to: 
+
+1. [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+
+1. [Create the Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+
+1. Add the Analytics source connector dataset to the connection, as described below.
+
+## Add the Analytics source connector dataset to the connection
+
 After you [create an Analytics source connector for historical data](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md), a dataset is automatically created for the Analytics data. 
 
 You need to add this automatically created dataset to the same connection that you created for your Web SDK implementation. Doing so brings the Analytics data into the same data view in Customer Journey Analytics as your Web SDK data. 
@@ -63,7 +87,7 @@ To add the automatically created dataset to the same connection that you created
 
 1. Define the period that you want the backfill to include by entering the start and end dates or by selecting the the calendar icon ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg). 
 
-   The Analytics source connector imports up to 13 months of data (irrespective of size) for production sandboxes. The backfill in non-production sandboxes is limited to 3 months.
+   The Analytics source connector imports 13 months of data (irrespective of size) for production sandboxes. The backfill in non-production sandboxes is 3 months.
 
    >[!IMPORTANT]
    >

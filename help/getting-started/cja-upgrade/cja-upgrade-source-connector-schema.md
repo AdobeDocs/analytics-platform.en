@@ -16,6 +16,22 @@ exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
 >
 >After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
 
+## Understand how the Analytics source connector can bring historical data into Customer Journey Analytics
+
+You can use the Analytics source connector to bring Adobe Analytics report suite data into Adobe Experience Platform. This data can then be used as historical data in Customer Journey Analytics.
+
+This process assumes that you want to [create an XDM schema when upgrading to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), because you want a streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use. 
+
+To use the Analytics source connector to bring historical data into Customer Journey Analytics, you need to: 
+
+1. Create an XDM schema for the Analytics source connector, as described below.
+
+1. [Create the Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+
+1. [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+
+## Create an XDM schema for the Analytics source connector
+
 You should have already [created a new XDM schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) for your Experience Platform Web SDK implementation to use with Customer Journey Analytics. This schema should contain any field groups for fields that you plan to collect data on. 
 
 In addition to the XDM schema you already created for your Web SDK implementation, you now need to create a second XDM schema to use with the Analytics source connector to bring historical data into Customer Journey Analytics. 

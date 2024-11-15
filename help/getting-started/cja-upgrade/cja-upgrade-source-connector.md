@@ -16,13 +16,23 @@ exl-id: f96565a2-f556-4b45-b88e-984613614d2e
 >
 >After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
 
+## Understand how the Analytics source connector can bring historical data into Customer Journey Analytics
+
 You can use the Analytics source connector to bring Adobe Analytics report suite data into Adobe Experience Platform. This data can then be used as historical data in Customer Journey Analytics.
 
-The following steps assume that you want to [create an XDM schema when upgrading to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), because you want a streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use. 
+This process assumes that you want to [create an XDM schema when upgrading to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), because you want a streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use. 
 
-With your XDM schema created, you need to create the Adobe Analytics source connector to use for historical data. 
+To use the Analytics source connector to bring historical data into Customer Journey Analytics, you need to: 
 
-For more comprehensive, general guidelines on creating a source connector, see [Create an Adobe Analytics source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
+1. [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+
+1. Create the Analytics source connector and map fields, as described below.
+
+1. [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+
+## Create the Analytics source connector and map fields
+
+With your XDM schema created, you need to create the Adobe Analytics source connector to use for historical data. (For more comprehensive, general guidelines on creating a source connector, see [Create an Adobe Analytics source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).)
 
 To create an Adobe Analytics source connector to use for historical data:
 
