@@ -9,7 +9,7 @@ role: User
 
 Audiences can be managed in Customer Journey Analytics using **[!UICONTROL Components]** > **[!UICONTROL Audiences]**.
 
-## Understand how you can manage existing audicences
+## Understand audience management tasks
 
 Managing previously created audiences lets you:
 
