@@ -12,13 +12,11 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 
 >[!NOTE]
 > 
->Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
->
->After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
+>Use the information on this page when answering questions in the [Customer Journey Analytics upgrade checklist](https://gigazelle.github.io/cja-ttv/).
 
-There are various ways to upgrade to Customer Journey Analytics, but not all upgrade paths are available for each type of Adobe Analytics implementation. However, the recommended upgrade path is available regardless of how Adobe Analytics is implemented in your organization.
+There are various ways that Adobe Analytics can be implemented. When upgrading to Customer Journey Analytics, not all upgrade paths are available for all Adobe Analytics implementations. However, the recommended upgrade path is available regardless of how Adobe Analytics is implemented in your organization.
 
-Use the information below to help you understand your current Adobe Analytics implementation and which upgrade paths are available to your organization. 
+Use the information below to learn about your current Adobe Analytics implementation and which upgrade paths are available to your organization. 
 
 Contact your Adobe representative if you need more specific advice, guidance, or support.
 

@@ -61,6 +61,8 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
     + [Create the Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
     + [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+    + [Use the Analytics source connector exclusively](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)
+    + [Move from the Analytics source connector to the Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)

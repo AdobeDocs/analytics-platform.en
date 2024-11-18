@@ -16,14 +16,6 @@ exl-id: 424485a3-a076-4656-83b6-733f16cc2326
 >
 >After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
 
->[!NOTE]
->
->The information on this page assumes the following:
->
->* You are upgrading from Adobe Analytics to Customer Journey Analytics.
->* You are using the Web SDK for your future Customer Journey Analytics data collection.
->* You want to use the Analytics source connector to bring your historical Adobe analytics data into Customer Journey Analytics. 
-
 ## Understand how the Analytics source connector can bring historical data into Customer Journey Analytics
 
 You can use the Analytics source connector to bring Adobe Analytics report suite data into Adobe Experience Platform. This data can then be used as historical data in Customer Journey Analytics.
