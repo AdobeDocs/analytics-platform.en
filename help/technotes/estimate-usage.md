@@ -40,7 +40,7 @@ You may need to know how many rows of event data you currently have in [!UICONTR
 
     >[!CAUTION]
     >
-    >   This count applies to event data only, not to profile or lookup data. If you have profile and lookup data, the count will be slightly higher. However, there is currently no way to report on profile and lookup data usage in the user interface. This functionality is slated for 2023.
+    >   This count applies to event data only, not to profile or lookup data. If you have profile and lookup data, the count will be slightly higher. However, there is currently no way to report on profile and lookup data usage in the user interface.
 
 1. Once you have a sum of all event data rows, look up the "Rows of Data" entitlement in the Customer Journey Analytics contract that your company signed with Adobe. 
 
