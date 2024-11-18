@@ -6,7 +6,6 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
-exl-id: f96565a2-f556-4b45-b88e-984613614d2e
 ---
 # Use the Analytics source connector exclusively to upgrade to Customer Journey Analytics
 
