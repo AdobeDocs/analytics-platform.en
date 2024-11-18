@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 ---
 # Move from the Analytics source connector to the Web SDK for Customer Journey Analytics
 
@@ -48,11 +49,3 @@ Following is the high-level process for moving from the Analytics source connect
    1. Delete your original Analytics source connector. <!-- need to add steps somewhere about how to do this -->
 
    1. [Create a new Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
-
-
-
-
-
-
-
-
