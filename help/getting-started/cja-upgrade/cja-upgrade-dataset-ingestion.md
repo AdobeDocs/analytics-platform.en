@@ -17,7 +17,7 @@ hidefromtoc: yes
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-After you configure your Web SDK implementation, you need to verify that data is being ingested into the dataset. 
+After you configure your Web SDK implementation, you need to verify that data is being ingested into the dataset. the statuses of individual batches
 
 is  can use the Dataset activity manager in Adobe Experience Platform to see ingested and failed batches. If you see primarily ingested batches, this step is complete. If you see primarily failed batches or no batches, check your Web SDK implementation to ensure that it is correctly sending data to Adobe.
 
