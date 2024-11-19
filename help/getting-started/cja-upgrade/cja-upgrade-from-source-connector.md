@@ -28,17 +28,17 @@ Following is the high-level process for moving from the Analytics source connect
 
 1. Create a Web SDK implementation, as described in [Detailed recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps) in the article, [Upgrade from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).
 
-   After the Web SDK implementation is configured, continue with the following step.
+   After the Web SDK implementation is configured, continue with the following steps.
 
 1. Decide whether you will use the Adobe Analytics schema or an XDM schema in your Web SDK implementation. 
 
    For more information, see [Choose your schema for Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
-1. (Conditional) If you plan to use the Adobe Analytics schema, add the dataset that was automatically created by the Analytics source connector to your Customer Journey Analytics connection. 
+1. (Conditional) If you plan to use the Adobe Analytics schema with your Web SDK implementation, add the dataset that was automatically created by the Analytics source connector to your Customer Journey Analytics connection. 
 
    For more information, see [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 
-1. (Conditional) If you plan to create an XDM schema:
+1. (Conditional) If you plan to create an XDM schema to use with your Web SDK implementation:
 
    1. [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md).
 
