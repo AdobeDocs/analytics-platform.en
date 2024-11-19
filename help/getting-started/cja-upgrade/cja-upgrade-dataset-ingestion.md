@@ -17,33 +17,25 @@ hidefromtoc: yes
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-After you configure your Web SDK implementation, you need to verify that data is being ingested into the dataset. the statuses of individual batches
-
-is  can use the Dataset activity manager in Adobe Experience Platform to see ingested and failed batches. If you see primarily ingested batches, this step is complete. If you see primarily failed batches or no batches, check your Web SDK implementation to ensure that it is correctly sending data to Adobe.
+After you configure your Web SDK implementation, you need to check the statuses of individual batches to verify that data is being ingested into the dataset.
 
 1. In the Experience Platform UI, select **[!UICONTROL Monitoring]** in the left-navigation.
 
    The Monitoring dashboard displays. This dashboard lets you view the statuses of inbound data from either batch or streaming ingestion. 
+
+   <!-- insert screenshot -->
    
 1. Select **[!UICONTROL Batch end-to-end]** to view a list of batches. 
 
-   The dashboards list all batch ingestion runs, including those that are successful, failed, or still in progress. Each listing provides details of the batch, including the batch ID, the name of the target dataset, and the number of records ingested. If the target dataset is enabled for Profile, the number of ingested identity and profile records is also displayed.
+   If no batches are displayed, check your Web SDK implementation to ensure that it is correctly sending data to Adobe.
 
-1. 
+   <!-- insert screenshot -->
 
-<!-- insert screenshot -->
+1. Select the batch ID for a given dataset, then validate that **[!UICONTROL Success]** is shown in the **[!UICONTROL Status]** field.
 
-You can select on an individual Batch ID to access the Batch overview dashboard and see details for the batch, including error logs should the batch fail to ingest.
+   If **[!UICONTROL Failed]** is shown in the **[!UICONTROL Status]** field, check your Web SDK implementation to ensure that it is correctly sending data to Adobe.
 
-<!-- insert screenshot -->
-
-If you wish to delete the batch, select Delete batch near the top right of the dashboard. Deleting a batch also removes its records from the dataset that the batch was originally ingested to.
-
->[!NOTE]
->
->If the ingested data has been enabled for Profile and processed, then deleting a batch does not delete that data from the Profile store.
-
-<!-- insert screenshot -->
+   Repeat this step to verify the status of each batch.
 
 
 
