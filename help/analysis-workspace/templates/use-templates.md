@@ -706,9 +706,27 @@ The following templates are available:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-template--mobile-lifecycle-metrics-app-usage-template"
->title="Mobile app usage"
+>id="???"
+>title="Mobile app screens"
 >abstract=""
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="???"
+>title="Mobile app actions"
+>abstract=""
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--mobile-lifecycle-metrics-app-usage-template"
+>title="View the number of users, launches, and first launches on your app, as well as the average session length."
+>abstract="**This can help you** better understand how much your app is being used. <br/>**Based on what you learn, you might** do any number of things, like improve app performance so it can scale to the amount of usage."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -716,8 +734,8 @@ The following templates are available:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-journeys"
->title="Mobile app journeys"
->abstract=""
+>title="View the prominent usage patterns for your mobile app."
+>abstract="**This can help you** better understand how people are using your app. <br/>**Based on what you learn, you might** do any number of things, like improve how people can get from one screen to another to target the most common workflows."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -725,8 +743,8 @@ The following templates are available:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-key-metrics"
->title="Mobile app metrics"
->abstract=""
+>title="View some of the most common mobile app metrics."
+>abstract="**This can help you** better understand basic performance of your mobile app.<br/>**Based on what you learn, you might** do any number of things, like assess the overall health and perfomance of your app."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -734,8 +752,8 @@ The following templates are available:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-messaging"
->title="Mobile app messaging"
->abstract=""
+>title="View performance data for in-app messaging and push messaging for your app."
+>abstract="**This can help you** better understand how people are using in-app messaging capabilities, as well as how effectively push notifications are driving traffic to your app.<br/>**Based on what you learn, you might** do any number of things, like improve the in-app messaging push notification experience."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -743,8 +761,8 @@ The following templates are available:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-performance-template"
->title="Mobile app performance"
->abstract=""
+>title="View how your app is performing and where users are experiencing issues."
+>abstract="**This can help you** better understand if people using your app are encountering slowness or a degraded performance. <br/>**Based on what you learn, you might** do any number of things, like fix existing issues or improve app performance before issues occur."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -752,8 +770,8 @@ The following templates are available:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--mobile-app-retention"
->title="Mobile app retention"
->abstract=""
+>title="View which users are the most loyal users of your app and what they do within the app."
+>abstract="**This can help you** better understand how your most loyal users are using your app.<br/>**Based on what you learn, you might** do any number of things, like improve your marketing efforts for the features that your most loyal users are using."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -761,14 +779,14 @@ The following templates are available:
 
 | Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
-| [!UICONTROL **Mobile App Screens**] | View information about the mobile screens people use when accessing your site, such as screen size, screen width, and screen height. <p>**This can help you** better understand how people are experiencing your site.</p><p>**Based on what you learn, you might** do any number of things, like optimize the rendering of your site for the most common screen sizes.</p><p>This template uses the    | 
-| **Mobile App Actions** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the   |
-| **Mobile App Usage** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the   |
-| **Mobile App Journeys** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the  |
-| **Mobile App Metrics** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the  |
-| **Mobile App Messaging** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the  |
-| **Mobile App Performance** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the   |
-| **Mobile App Retention** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the   |
+| [!UICONTROL **Mobile App Screens**] | View the number of events, sessions, and people associated with each screen on the mobile app.<p>**This can help you** better understand which screens on your site are the most popular.</p><p>**Based on what you learn, you might** do any number of things, like improve content on the most popular screens.</p><p>This template uses the Events, Sessions, People, and Percent change metrics. It also uses the Page Title dimension.</p>  | 
+| **Mobile App Actions** | View the actions people are taking on your mobile app. <p>**This can help you** better understand how people are using your app and the value they're getting form it.</p><p>**Based on what you learn, you might** do any number of things, like improve develop features that compliment or improve upon those that are most popular.</p><p>This template uses the Events, Sessions, People, and Percent change metrics. |
+| **Mobile App Usage** | View the number of users, launches, and first launches on your app, as well as the average session length.<p>**This can help you** better understand how much your app is being used. </p><p>**Based on what you learn, you might** do any number of things, like improve app performance so it can scale to the amount of usage.</p><!-- This template uses the --> |
+| **Mobile App Journeys** | View the prominent usage patterns for your mobile app. <p>**This can help you** better understand how people are using your app. </p><p>**Based on what you learn, you might** do any number of things, like improve how people can get from one screen to another to target the most common workflows. </p><!-- This template uses the --> |
+| **Mobile App Metrics** | View some of the most common mobile app metrics. <p>**This can help you** better understand basic performance of your mobile app.</p><p>**Based on what you learn, you might** do any number of things, like assess the overall health and perfomance of your app.</p><!-- This template uses the --> |
+| **Mobile App Messaging** | View performance data for in-app messaging and push messaging for your app.<p>**This can help you** better understand how people are using in-app messaging capabilities, as well as how effectively push notifications are driving traffic to your app.</p><p>**Based on what you learn, you might** do any number of things, like improve the in-app messaging push notification experience.</p><!-- This template uses the --> |
+| **Mobile App Performance** | View how your app is performing and where users are experiencing issues. <p>**This can help you** better understand if people using your app are encountering slowness or a degraded performance. </p><p>**Based on what you learn, you might** do any number of things, like fix existing issues or improve app performance before issues occur.</p><!-- This template uses the -->  |
+| **Mobile App Retention** | View which users are the most loyal users of your app and what they do within the app. <p>**This can help you** better understand how your most loyal users are using your app.</p><p>**Based on what you learn, you might** do any number of things, like improve your marketing efforts for the features that your most loyal users are using.</p><!-- This template uses the --> |
 
 ### Mobile: Mobile Device Information {#mobile-devices}
 
@@ -862,8 +880,8 @@ The following templates are available:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-campaign"
->title="AJO campaigns"
->abstract=""
+>title="View essential metrics for your Journey Optimizer campaigns, including email campaigns, experimentation, in-app, SMS, and more."
+>abstract="**This can help you** better understand details such as the count of clicks and number of delivered messages, offering a comprehensive insight into your campaign's effectiveness and level of engagement.<br/>**Based on what you learn, you might** do any number of things, like adjust your campaigns based on the engagement levels of your target audience."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -871,8 +889,8 @@ The following templates are available:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-journey"
->title="AJO journeys"
->abstract=""
+>title="View essential metrics for your Journey Optimizer journeys, including email journeys, experimentation, in-app, SMS, and more."
+>abstract="**This can help you** better understand details such as the count of clicks and number of delivered messages, offering a comprehensive insight into your journey's effectiveness and level of engagement.<br/>**Based on what you learn, you might** do any number of things, like adjust your campaigns based on the engagement levels of your target audience."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -880,8 +898,8 @@ The following templates are available:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-landing-page"
->title="AJO landing pages"
->abstract=""
+>title="View user behavior, engagement patterns, conversion rates, and other key metrics."
+>abstract="**This can help you** better understand the effectiveness of your landing page. <br/>**Based on what you learn, you might** do any number of things, like optimize your landing page performance."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -889,8 +907,8 @@ The following templates are available:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-channel"
->title="AJO overview report"
->abstract=""
+>title="View a thorough summary of traffic and engagement metrics for all campaigns and journeys within your environment."
+>abstract="**This can help you** better understand the high-level effectiveness of your campaigns and journeys. <br/>**Based on what you learn, you might** do any number of things, like adjust your campaigns and journeys based on the engagement levels of your target audience."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -898,8 +916,8 @@ The following templates are available:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-subscription"
->title="AJO subscriptions"
->abstract=""
+>title="View profiles' subscriptions and unsubscriptions associated with particular lists."
+>abstract="**This can help you** better understand the effectiveness of different subscription campaigns and initiatives in driving engagement and conversions.<br/>**Based on what you learn, you might** do any number of things, like adjust your subscription campaigns based on the engagement levels of your target audience."
 
 <!-- markdownlint-enable MD034 -->
 
