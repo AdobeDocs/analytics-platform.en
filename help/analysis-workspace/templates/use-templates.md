@@ -703,23 +703,7 @@ The following templates are available:
 
 ### Mobile: Mobile App {#mobile-app} 
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
-><!-- add id -->
->title="Mobile app screens"
->abstract=""
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
-> <!-- add id -->
->title="Mobile app actions"
->abstract=""
-
-<!-- markdownlint-enable MD034 -->
+<!-- add contextual help for Mobile app screens and mobile app actions -->
 
 <!-- markdownlint-disable MD034 -->
 
