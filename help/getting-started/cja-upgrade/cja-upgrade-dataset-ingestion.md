@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
 ---
 # Monitor dataset ingestion when upgrading to Customer Journey Analytics
 
@@ -36,7 +37,3 @@ After you configure your Web SDK implementation, you need to check the statuses 
    If **[!UICONTROL Failed]** is shown in the **[!UICONTROL Status]** field, check your Web SDK implementation to ensure that it is correctly sending data to Adobe.
 
    Repeat this step to verify the status of each batch.
-
-
-
-
