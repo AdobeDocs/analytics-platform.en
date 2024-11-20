@@ -518,14 +518,14 @@ The following templates are available:
 
 | Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
-| [!UICONTROL **First vs Repeat Users**] | View a comparison of first-time visitors to repeat visitors. <p>**This can help you** better understand your site's effectiveness in retaining customer loyalty, or the rate at which you are acquiring new customers.</p><p>**Based on what you learn, you might** do any number of things, like offer incentives for future purchases to first-time visitors in order to entice them to return.</p><p>This template uses the </p> |  
-| **Person Id/Namespace** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the  </p> |
-| **Location Overview** | View an overview of visitor location in a map visualization.<p>**This can help you** better understand where visitors are located who are visiting your site. </p><p>**Based on what you learn, you might** do any number of things, like focus marketing resources in the locations where you see the most interest and opportunity.</p><p>This template uses the  </p> |
+| [!UICONTROL **First vs Repeat Users**] | View a comparison of first-time visitors to repeat visitors. <p>**This can help you** better understand your site's effectiveness in retaining customer loyalty, or the rate at which you are acquiring new customers.</p><p>**Based on what you learn, you might** do any number of things, like offer incentives for future purchases to first-time visitors in order to entice them to return.</p><!-- This template uses the --> |  
+| **Person Id/Namespace** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><!-- This template uses the --> |
+| **Location Overview** | View an overview of visitor location in a map visualization.<p>**This can help you** better understand where visitors are located who are visiting your site. </p><p>**Based on what you learn, you might** do any number of things, like focus marketing resources in the locations where you see the most interest and opportunity.</p><!-- This template uses the --> |
 | **Geo Countries** | View the country from which people visiting the site originated.<p>**This can help you** better understand what the most popular countries visitors originate from who visit your site.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these countries, or make sure that your site experience is optimal in countries that have different primary languages.</p><p>This template uses the Countries dimension. </p> |
 | **Geo US States** | View the state (in the United States) from which people visiting the site originated. This is similar to the Geo Regions template, except that it is specific to the United States.<p>**This can help you** better understand the most popular U.S. states visitors originate from who visit your site.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these states.</p><p>This template uses the US States dimension. </p> |
 | **Geo Regions** | View the geographic region from which people visiting the site originated. A region is a geographic area that is smaller than a country but larger than a city. In some countries, a region is a state, province, or prefecture. In other areas, it is a constituent country, department, or metropolitan region. <p>**This can help you** better understand the most popular regions visitors originate from who visit your site.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these regions, or make sure that your site experience is optimal in regions that have different primary languages. </p><p>This template uses the ID(variables/geocountry) and Regions dimensions. </p> |
-| **Geo Cities** | View the city from which people visiting the site originated. <p>**This can help you** better understand the most popular cities visitors originate from who visit your site.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these cities. </p><p>This template uses the Cities dimension </p> |
-| **Geo US DMA** | View the designated marketing areas (DMAs) within the United States from which people visiting the site originated.<p>**This can help you** better understand the most popular regions visitors originate from who visit your site.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in the most successful regions. </p><p>This template uses the </p> |
+| **Geo Cities** | View the city from which people visiting the site originated. <p>**This can help you** better understand the most popular cities visitors originate from who visit your site.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these cities. </p><p>This template uses the Cities dimension. </p> |
+| **Geo US DMA** | View the designated marketing areas (DMAs) within the United States from which people visiting the site originated.<p>**This can help you** better understand the most popular regions visitors originate from who visit your site.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in the most successful regions. </p><!-- This template uses the --> |
 | **Languages** | View the top languages that visitors prefer to see content in. <p>**This can help you** better understand the most frequently preferred languages of visitors.</p><p>**Based on what you learn, you might** do any number of things, like focus localization efforts or marketing efforts for the most popular languages.</p><p>This template uses the Language dimension.</p>  |
 | **Technology Overview** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the </p>  |
 | **Browsers** | View the name and version of the top browsers people use to access your site.<p>**This can help you** better understand the most common browsers that visitors use.</p><p>**Based on what you learn, you might** do any number of things, like improve site quality by testing new versions of your site using the top browsers. Doing so can maximize quality control efforts.</p><p>This template uses the Browser dimension. </p> |
@@ -835,24 +835,150 @@ The following templates are available:
 | **Mobile Device Type** | View the mobile device types that people use to access your site, such as phones and tablets.<p>**This can help you** better understand the various kinds of mobile devices that are being used to access your site.</p><p>**Based on what you learn, you might** do any number of things, like optimize your site for the types of mobile devices that are being used the most.</p><p>This template uses the Mobile Device Type dimension.</p>  |
 | **Manufacturer** |  View which manufacturers produce the mobile devices that people use to access your site, such as Apple and Samsung.<p>**This can help you** better understand which manufacturers are most popular among your user base.</p><p>**Based on what you learn, you might** do any number of things, like tailor your content delivery based on the abilities of different manufacturers to ensure a smooth user experience.</p><p>This template uses the Mobile Manufacturer dimension.</p>  |
 
-### Time Parting
+### Time Parting {#time-parting}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--minuteOfHour"
+>title="View the number of events, sessions, and people on your site, broken down by minute. For example, if you have a report with a reporting timeframe of a single day, the first minute of each hour in the day is grouped into the same dimension item."
+>abstract="**This can help you** better understand trends at a granular level.<br/>**Based on what you learn, you might** do any number of things, like optimize resources for peak times, down to the minute.<br/>This template uses the Minute of Hour dimension."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--hourOfDay"
+>title="View events, sessions, and people on your site, broken down by hour of day. For example, if you have a report spanning January 1 - January 7, the first hour of each day is grouped into the same dimension item."
+>abstract="**This can help you** better understand the the time of day when your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like assign more computing resources to your site during high-traffic hours.<br/>This template uses the Hour of Day dimension."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--am-pm"
+>title="View events, sessions, and people on your site, broken down by AM and PM. For example, if you have a report spanning January 1 - January 7, the AM hours of each day are grouped into the same dimension item."
+>abstract="***This can help you** better understand understand the the time of day when your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like assign more computing resources to your site during high-traffic hours.<br/>This template uses the AM/PM dimension."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--dayOfWeek"
+>title="View events, sessions, and people on your site, broken down by day of week. For example, if you have a report spanning the month of January, each day of the week is grouped into the same dimension item."
+>abstract="**This can help you** better understand which days of the week your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic days.<br/>This template uses the Day of Week dimension."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--dayOfMonth"
+>title="View events, sessions, and people on your site, broken down by day of month. For example, if you have a report spanning a full year, each day of the month is grouped into the same dimension item."
+>abstract="**This can help you** better understand which days of each month your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic days.<br/>This template uses the Day of Month dimension."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--dayOfYear"
+>title="View events, sessions, and people on your site, broken down by day of year. For example, if you have a report spanning multiple years, each day of the year is grouped into the same dimension item."
+>abstract="**This can help you** better understand which days of each year your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic days.<br/>This template uses the Day of Year dimension."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--weekdayWeekend"
+>title="View events, sessions, and people on your site, broken down by weekdays and weekends. For example, if you have a report spanning the month of January, weekdays and weekends are grouped into separate dimension items."
+>abstract="**This can help you** better understand the differences in site traffic for weekdays versus weekends.<br/>**Based on what you learn, you might** do any number of things, like staff your call center more heavily on the weekends, if the report indicates that weekends are busier than weekdays.<br/>This template uses the Weekday/Weekend dimension."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--weekOfYear"
+>title="View events, sessions, and people on your site, broken down by week of year. For example, if you have a report spanning multiple years, each week is grouped into the same dimension item."
+>abstract="**This can help you** better understand which weeks of the year your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic weeks, such as during the holidays.<br/>This template uses the Week of Year dimension."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--monthOfYear"
+>title="View events, sessions, and people on your site, broken down by month of year. For example, if you have a report spanning multiple years, each month is grouped into the same dimension item."
+>abstract="**This can help you** better understand which months your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic months, such as during the holidays.<br/>This template uses the Month of Year dimension."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--quarterOfYear"
+>title="View events, sessions, and people on your site, broken down by quarter of the year. For example, if you have a report spanning multiple years, each quarter is grouped into the same dimension item."
+>abstract="**This can help you** better understand which quarters your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like time the launch of products in order to boost historically low-traffic quarters.<br/>This template uses the Quarter of Year dimension."
+
+<!-- markdownlint-enable MD034 -->
 
 The following templates are available:
 
 | Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
-| [!UICONTROL **Minute of Hour**] | View the number of events, sessions, and people on your site, broken down by minute. For example, if you have a report with a reporting timeframe of a single day, the first minute of each hour in the day is grouped into the same dimension item.<p>**This can help you** better understand trends at a granular level.</p><p>**Based on what you learn, you might** do any number of things, like </p><p>This template uses the Minute of Hour dimension. | 
-| **Hour of Day** | View events, sessions, and people on your site, broken down by hour of day. For example, if you have a report spanning January 1 - January 7, the first hour of each day is grouped into the same dimension item.<p>**This can help you** better understand the the time of day when your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like assign more computing resources to your site during high-traffic hours.</p><p>This template uses the Hour of Day dimension.  |
-| **AM/PM** | View events, sessions, and people on your site, broken down by AM and PM. For example, if you have a report spanning January 1 - January 7, the AM hours of each day are grouped into the same dimension item.<p>**This can help you** better understand understand the the time of day when your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like assign more computing resources to your site during high-traffic hours.</p><p>This template uses the AM/PM dimension.  |
-| **Day of Week** |  View events, sessions, and people on your site, broken down by day of week. For example, if you have a report spanning the month of January, each day of the week is grouped into the same dimension item. <p>**This can help you** better understand which days of the week your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic days.</p><p>This template uses the Day of Week dimension.  |
-| **Day of Month** | View events, sessions, and people on your site, broken down by day of month. For example, if you have a report spanning a full year, each day of the month is grouped into the same dimension item. <p>**This can help you** better understand which days of each month your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic days.</p><p>This template uses the Day of Month dimension.  |
-| **Day of Year** | View events, sessions, and people on your site, broken down by day of year. For example, if you have a report spanning multiple years, each day of the year is grouped into the same dimension item. <p>**This can help you** better understand which days of each year your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic days.</p><p>This template uses the Day of Year dimension. |
-| **Weekday/Weekend** | View events, sessions, and people on your site, broken down by weekdays and weekends. For example, if you have a report spanning the month of January, weekdays and weekends are grouped into separate dimension items. <p>**This can help you** better understand the differences in site traffic for weekdays versus weekends.</p><p>**Based on what you learn, you might** do any number of things, like staff your call center more heavily on the weekends, if the report indicates that weekends are busier than weekdays.</p><p>This template uses the Weekday/Weekend dimension.  |
-| **Week of Year** | View events, sessions, and people on your site, broken down by week of year. For example, if you have a report spanning multiple years, each week is grouped into the same dimension item.<p>**This can help you** better understand which weeks of the year your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic weeks, such as during the holidays.</p><p>This template uses the Week of Year dimension.   |
-| **Month of Year** | View events, sessions, and people on your site, broken down by month of year. For example, if you have a report spanning multiple years, each month is grouped into the same dimension item.<p>**This can help you** better understand which months your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic months, such as during the holidays.</p><p>This template uses the Month of Year dimension.   |
-| **Quarter of Year** | View events, sessions, and people on your site, broken down by quarter of the year. For example, if you have a report spanning multiple years, each quarter is grouped into the same dimension item.<p>**This can help you** better understand which quarters your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like time the launch of products in order to boost historically low-traffic quarters.</p><p>This template uses the Quarter of Year dimension.   |
+| [!UICONTROL **Minute of Hour**] | View the number of events, sessions, and people on your site, broken down by minute. For example, if you have a report with a reporting timeframe of a single day, the first minute of each hour in the day is grouped into the same dimension item.<p>**This can help you** better understand trends at a granular level.</p><p>**Based on what you learn, you might** do any number of things, like optimize resources for peak times, down to the minute.</p><p>This template uses the Minute of Hour dimension.</p> | 
+| **Hour of Day** | View events, sessions, and people on your site, broken down by hour of day. For example, if you have a report spanning January 1 - January 7, the first hour of each day is grouped into the same dimension item.<p>**This can help you** better understand the the time of day when your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like assign more computing resources to your site during high-traffic hours.</p><p>This template uses the Hour of Day dimension.</p>  |
+| **AM/PM** | View events, sessions, and people on your site, broken down by AM and PM. For example, if you have a report spanning January 1 - January 7, the AM hours of each day are grouped into the same dimension item.<p>**This can help you** better understand understand the the time of day when your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like assign more computing resources to your site during high-traffic hours.</p><p>This template uses the AM/PM dimension.</p>  |
+| **Day of Week** |  View events, sessions, and people on your site, broken down by day of week. For example, if you have a report spanning the month of January, each day of the week is grouped into the same dimension item. <p>**This can help you** better understand which days of the week your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic days.</p><p>This template uses the Day of Week dimension.</p>  |
+| **Day of Month** | View events, sessions, and people on your site, broken down by day of month. For example, if you have a report spanning a full year, each day of the month is grouped into the same dimension item. <p>**This can help you** better understand which days of each month your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic days.</p><p>This template uses the Day of Month dimension.</p>  |
+| **Day of Year** | View events, sessions, and people on your site, broken down by day of year. For example, if you have a report spanning multiple years, each day of the year is grouped into the same dimension item. <p>**This can help you** better understand which days of each year your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic days.</p><p>This template uses the Day of Year dimension.</> |
+| **Weekday/Weekend** | View events, sessions, and people on your site, broken down by weekdays and weekends. For example, if you have a report spanning the month of January, weekdays and weekends are grouped into separate dimension items. <p>**This can help you** better understand the differences in site traffic for weekdays versus weekends.</p><p>**Based on what you learn, you might** do any number of things, like staff your call center more heavily on the weekends, if the report indicates that weekends are busier than weekdays.</p><p>This template uses the Weekday/Weekend dimension.</p>  |
+| **Week of Year** | View events, sessions, and people on your site, broken down by week of year. For example, if you have a report spanning multiple years, each week is grouped into the same dimension item.<p>**This can help you** better understand which weeks of the year your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic weeks, such as during the holidays.</p><p>This template uses the Week of Year dimension.</p>   |
+| **Month of Year** | View events, sessions, and people on your site, broken down by month of year. For example, if you have a report spanning multiple years, each month is grouped into the same dimension item.<p>**This can help you** better understand which months your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic months, such as during the holidays.</p><p>This template uses the Month of Year dimension.</p>   |
+| **Quarter of Year** | View events, sessions, and people on your site, broken down by quarter of the year. For example, if you have a report spanning multiple years, each quarter is grouped into the same dimension item.<p>**This can help you** better understand which quarters your site is most frequently and least frequently visited.</p><p>**Based on what you learn, you might** do any number of things, like time the launch of products in order to boost historically low-traffic quarters.</p><p>This template uses the Quarter of Year dimension.</p>   |
 
-### Cross-Channel
+### Cross-Channel {#cross-channel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--multiChannelOverview"
+>title="View the distribution of traffic across multiple channels."
+>abstract="**This can help you** better understand which channels are more successfully driving traffic and engagement. <br/>**Based on what you learn, you might** do any number of things, like focus marketing efforts on the the channels that are achieving the highest return on investment.<br/>This template uses the user, session, and event metrics."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--callCenterDeflection"
+>title="View how web traffic affects call center traffic."
+>abstract="**This can help you** better understand how successfully the self-service content on your website is deflecting traffic to your call center.<br/>**Based on what you learn, you might** do any number of things, like enhance self-service content in order to decrease traffic to your call center, or measure the ROI of your self-service content by calculating the amount saved through fewer support calls.<br/>This template uses the Web Sessions, Mobile App Sessions, and Web+App Cross-Channel Sessions metrics."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--webAppTemplate"
+>title="View web traffic and mobile traffic together."
+>abstract="**This can help you** better understand the distribution of web and mobile traffic to your site.<br/>**Based on what you learn, you might** do any number of things, like dedicate more resources to your mobile app experience when it reaches a certain level of traffic.<br/>This template uses the Web Sessions, Mobile App Sessions, and Web+App Cross-Channel Sessions metrics."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--onlineOffline"
+>title="View online and offline traffic together."
+>abstract="**This can help you** better understand the distribution of online and offline traffic to your site.<br/>**Based on what you learn, you might** do any number of things, like dedicate more resources to your online experience when it reaches a certain level of traffic."
+
+<!-- markdownlint-enable MD034 -->
 
 The following templates are available:
 
@@ -863,7 +989,7 @@ The following templates are available:
 | **Web+App** | View web traffic and mobile traffic together.<p>**This can help you** better understand the distribution of web and mobile traffic to your site.</p><p>**Based on what you learn, you might** do any number of things, like dedicate more resources to your mobile app experience when it reaches a certain level of traffic.</p><p>This template uses the Web Sessions, Mobile App Sessions, and Web+App Cross-Channel Sessions metrics.</p>   |
 | **Online/Offline** | View online and offline traffic together.<p>**This can help you** better understand the distribution of online and offline traffic to your site.</p><p>**Based on what you learn, you might** do any number of things, like dedicate more resources to your online experience when it reaches a certain level of traffic.</p><!-- This template uses the ... -->  |
 
-### Other Channels
+### Other Channels {#other-channels}
 
 The following templates are available:
 
