@@ -706,7 +706,7 @@ The following templates are available:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="???"
+>id=""
 >title="Mobile app screens"
 >abstract=""
 
@@ -715,7 +715,7 @@ The following templates are available:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="???"
+>id=""
 >title="Mobile app actions"
 >abstract=""
 
