@@ -81,9 +81,7 @@ To add the automatically created dataset to the same connection that you created
 
 1. In the **[!UICONTROL Dataset backfill]** section, select **[!UICONTROL Request backfill]**. 
 
-1. Define the period that you want the backfill to include by entering the start and end dates or by selecting the the calendar icon ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg). 
-
-   The Analytics source connector imports 13 months of data (irrespective of size) for production sandboxes. The backfill in non-production sandboxes is 3 months.
+1. Define the period that you want the connection backfill into Customer Journey Analytics to include by entering the start and end dates or by selecting the the calendar icon ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg). 
 
    >[!IMPORTANT]
    >
@@ -97,6 +95,8 @@ To add the automatically created dataset to the same connection that you created
 
 1. Select **[!UICONTROL Add datasets]**, then select **[!UICONTROL Save]** to save the connection.
 
-1. (Conditional) If you are using lookup datasets, you must create the lookup dataset and add it to your connection. For more information, see [Create lookup datasets to classify data in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md).
+1. (Conditional) If you are using lookup datasets, you must create the lookup dataset and add it to your connection. For more information, see [Create lookup datasets to classify data in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md). 
+
+   This is required only if you did not already do it when configuring your Web SDK implementation.
 
 1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).

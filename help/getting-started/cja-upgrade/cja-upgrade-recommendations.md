@@ -24,7 +24,7 @@ Depending on several factors, such as timeline and resource constraints, the rec
 
 The recommended process of upgrading from Adobe Analytics to Customer Journey Analytics is a new implementation of the Experience Platform Web SDK, which is the preferred data collection method for Customer Journey Analytics. In conjunction with the Web SDK, Adobe also recommends using the Analytics source connector to help with your transition to Customer Journey Analytics. Use the Analytics source connector to retain historical Adobe Analytics data and to perform side-by-side data comparison. 
 
-After fully transitioning to Customer Journey Analytics, the Analytics source connector can be turned off and the Experience Platform Web SDK can be used exclusively. 
+After you have enough historical data using the Experience Platform Web SDK and you have fully transitioned to Customer Journey Analytics, the Analytics source connector can be turned off and the Web SDK can be used exclusively. 
 
 ### High-level recommended upgrade process
 
@@ -122,25 +122,9 @@ Each step provides a high-level explanation of a more detailed process. Follow t
 
 1. [Validate that data is flowing into Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
 
-1. (Optional) Bring historical data from Adobe Analytics using the Analytics source connector: 
-
-   >[!NOTE]
-   >
-   >Use the following steps if you have not previously created an Analytics source connector. 
-   >
-   >If you are already using the Analytics source connector with Customer Journey Analytics, follow the steps in [Move from the Analytics source connector to the Web SDK for Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
-
-   1. [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md).
-   
-   1. If you don't already have an Analytics source connector, [create the Analytics source connector and map fields to your XDM schema](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
-
-      Or
-
-      If you already have an Analytics source connector, [map fields from the source connector to your XDM schema](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
-
-   1. [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
-
 1. [Migrate projects and components](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration). 
+
+   <!-- You might not want to do this, based on the schema? Ask Zach. Will it work if you have all new schema fields? What would you want to just build from scratch. Maybe everything? -->
 
 1. (Optional) If you use marketing channels in Adobe Analytics, you can [create a marketing channel derived field in Customer Journey Analytics](/help/data-views/derived-fields/derived-fields.md#marketing-channels). 
 
@@ -150,9 +134,25 @@ Each step provides a high-level explanation of a more detailed process. Follow t
    
    Use [the marketing channels function template](/help/data-views/derived-fields/derived-fields.md#marketing-channels) in derived fields to quickly create a derived field for marketing channels.
 
-1. Compare data from your old implementation to that from your new implementation and make sure you understand any differences and why they exist. 
+1. Compare data in Adobe Analytics from your old implementation to data in Customer Journey Analytics from your new implementation and make sure you understand any differences and why they exist. <!-- Expound on this. Link to somewhere? There will be a lot of differences. -->
 
-1. Learn about [feature support in Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). Most Adobe Analytics features are supported in Customer Journey Analytics, and many additional features are available in Customer Journey Analytics.
+1. (Optional) Bring historical data from Adobe Analytics using the Analytics source connector: 
+
+   >[!NOTE]
+   >
+   >Use the following steps if you have not previously created an Analytics source connector. 
+   >
+   >If you are already using the Analytics source connector with Customer Journey Analytics, follow the steps in [Move from the Analytics source connector to the Web SDK for Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
+
+   1. [Create a dataflow using the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md).
+   
+   1. If you don't already have an Analytics source connector, [create the Analytics source connector and map fields to your custom schema](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+      Or
+
+      If you already have an Analytics source connector, [map fields from the source connector to your custom schema](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
+
+   1. [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 
 1. Plan user onboarding. 
 
@@ -161,6 +161,8 @@ Each step provides a high-level explanation of a more detailed process. Follow t
    You should give your users ample time (3 - 6 months) to become familiar with the key differences of Analysis Workspace in Customer Journey Analytics.
 
    For information about some of the key differences between Adobe Analytics and Customer Journey Analytics, see [User Guide for Adobe Analytics users](/help/getting-started/aa-to-cja-user.md).
+
+1. Learn about [feature support in Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). Most Adobe Analytics features are supported in Customer Journey Analytics, and many additional features are available in Customer Journey Analytics.
 
 1. Disable AppMeasurement data collection.
 

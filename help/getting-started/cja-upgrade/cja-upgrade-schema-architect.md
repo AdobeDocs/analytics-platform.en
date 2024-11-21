@@ -26,7 +26,7 @@ The underlying architecture of Customer Journey Analytics provides for much more
 
 | Adobe Analytics data architecture | XDM schema architecture | 
 |---------|----------|
-| Individual metrics are added to the Analytics data architecture. | Create individual metrics in the data view rather than in the XDM schema. Doing so provides more flexibility in if you need to make changes at a later time. | 
+| Individual metrics are added to the Analytics data architecture.<br/>For example, in Adobe Analytics, you have a different eVar for each event.  | Create individual metrics in the data view rather than in the XDM schema. Doing so provides more flexibility in if you need to make changes at a later time.<br/>For example, in Customer Journey Analytics, you have a single event in the schema, and use create events in the data view.  | 
 | Props and eVars are required to create custom variables. | B2 | 
 | A3 | B3 | 
 
