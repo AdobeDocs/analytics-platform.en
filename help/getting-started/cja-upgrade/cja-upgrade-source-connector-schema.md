@@ -26,7 +26,9 @@ To use the Analytics source connector to bring historical data into Customer Jou
 
 1. Create an XDM schema for the Analytics source connector, as described below.
 
-1. [Create the Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+1. (Conditional) If you aren't already using the Analytics source connector to bring data into Customer Journey Analytics, you need to [create the Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+1. (Conditional) If you are already using the Analytics source connector to bring data into Customer Journey Analytics, you need to [move from the Analytics source connector to the Web SDK for Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
 
 1. [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 

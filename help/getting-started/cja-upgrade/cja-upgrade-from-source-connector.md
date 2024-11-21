@@ -30,22 +30,28 @@ Following is the high-level process for moving from the Analytics source connect
 
    After the Web SDK implementation is configured, continue with the following steps.
 
-1. Decide whether you will use the Adobe Analytics schema or an XDM schema in your Web SDK implementation. 
+1. [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md).
 
-   For more information, see [Choose your schema for Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+1. Map each Adobe Analytics dimension from your Analytics source connector to the dimension in the Web SDK schema. 
 
-1. (Conditional) If you plan to use the Adobe Analytics schema with your Web SDK implementation, add the dataset that was automatically created by the Analytics source connector to your Customer Journey Analytics connection. 
+   1. <!-- how do you get here -->
+   
+   1. In the **[!UICONTROL Map standard fields]** section, select the **[!UICONTROL Custom]** tab.
 
-   For more information, see [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
+   1. Select **[!UICONTROL Add new mapping]**. 
 
-1. (Conditional) If you plan to create an XDM schema to use with your Web SDK implementation:
+      ![map schema fields](assets/schema-mapping.png)
 
-   1. [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md).
+   1. In the **[!UICONTROL Source field]**, select an Adobe Analytics field from the Adobe Analytics ExperienceEvent Template field group. Then, in the **[!UICONTROL Target field]**, select the XDM field that you want to map it to. 
 
-   1. Add the dataset that was automatically created with your original Analytics source connector to your Customer Journey Analytics connection.
+   1. Repeat this process for each field in the Adobe Analytics ExperienceEvent Template field group that you are using to collect data in Adobe Analytics.
 
-      For more information, see [Add the dataset from your current Analytics source connector to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
+1. Add the dataset that was automatically created with your original Analytics source connector to your Customer Journey Analytics connection.
 
-   1. Delete your original Analytics source connector. <!-- need to add steps somewhere about how to do this -->
+   For more information, see [Add the dataset from your current Analytics source connector to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 
-   1. [Create a new Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+1. (Conditional) If you are using lookup datasets, you must create the lookup dataset and add it to your connection. For more information, see [Create lookup datasets to classify data in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md).
+   
+1. Delete your original Analytics source connector. <!-- need to add steps somewhere about how to do this -->
+
+1. [Create a new Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
