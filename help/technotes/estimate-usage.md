@@ -22,11 +22,7 @@ To manage your Customer Journey Analytics usage:
 
 ## Estimate connection size {#estimate-size}
 
-You may need to know how many rows of event data you currently have in [!UICONTROL Customer Journey Analytics]. To get an accurate account of your organization's event data records (data rows) usage, do the following **for each of the connections created by your organization**. 
-
->[!NOTE]
->
->Do this on the first Friday of every month, since Adobe runs your latest usage report on that day.  
+You may need to know how many rows of event data you currently have in [!UICONTROL Customer Journey Analytics]. To get an accurate account of your organization's event data records (data rows) usage, do the following **for each of the connections created by your organization**.  
 
 1. In [!UICONTROL Customer Journey Analytics], click the **[!UICONTROL Connections]** tab. 
 
