@@ -90,7 +90,7 @@ To create a lookup dataset for use with a schema in Customer Journey Analytics:
 
 1. Select **[!UICONTROL Finish]**.
 
-1.Continue with [Add the lookup dataset to your connection in Customer Journey Analytics](#add-the-lookup-dataset-to-your-connection-in-customer-journey-analytics).
+1. Continue with [Add the lookup dataset to your connection in Customer Journey Analytics](#add-the-lookup-dataset-to-your-connection-in-customer-journey-analytics).
 
 ## Add the lookup dataset to your connection in Customer Journey Analytics 
 

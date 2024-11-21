@@ -144,13 +144,13 @@ Each step provides a high-level explanation of a more detailed process. Follow t
    >
    >If you are already using the Analytics source connector with Customer Journey Analytics, follow the steps in [Move from the Analytics source connector to the Web SDK for Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
 
-   1. [Create a dataflow using the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md).
+   1. [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
    
-   1. If you don't already have an Analytics source connector, [create the Analytics source connector and map fields to your custom schema](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+   1. If you don't already have an Analytics source connector, [create the Analytics source connector and map fields to your XDM schema](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
 
       Or
 
-      If you already have an Analytics source connector, [map fields from the source connector to your custom schema](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
+      If you already have an Analytics source connector, [map fields from the source connector to your XDM schema](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
 
    1. [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 
@@ -164,9 +164,11 @@ Each step provides a high-level explanation of a more detailed process. Follow t
 
 1. Learn about [feature support in Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). Most Adobe Analytics features are supported in Customer Journey Analytics, and many additional features are available in Customer Journey Analytics.
 
-1. Disable AppMeasurement data collection.
+1. When your Web SDK implementation is complete and you are comfortable with the data that you are collecting, you can disable AppMeasurement data collection. 
 
-1. Disable the Analytics source connector.  
+   For more information, see [Disable AppMeasurement data collection](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md).
+
+1. Disable the Analytics source connector after all Analytics source connector data leaves your data retention period.  
 
    With the Experience Platform Web SDK implementation, the Analytics source connector is needed only for historical Adobe Analytics data and to compare data from your original implementation with that of your new implementation.
    

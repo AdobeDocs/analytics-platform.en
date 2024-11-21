@@ -68,6 +68,8 @@ To create an Adobe Analytics source connector to use for historical data:
 
    1. In the **[!UICONTROL Source field]**, select an Adobe Analytics field from the Adobe Analytics ExperienceEvent Template field group. Then, in the **[!UICONTROL Target field]**, select the XDM field that you want to map it to. 
 
+      Not all Adobe Analytics fields have a corresponding field in XDM due to the inherent architecture differences between AppMeasurement and XDM. 
+
    1. Repeat this process for each field in the Adobe Analytics ExperienceEvent Template field group that you are using to collect data in Adobe Analytics.
 
 1. Select **[!UICONTROL Next]** in the upper-right corner of the screen.

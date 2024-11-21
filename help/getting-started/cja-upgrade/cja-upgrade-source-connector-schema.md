@@ -38,7 +38,7 @@ To use the Analytics source connector to bring historical data into Customer Jou
 
 You should have already [created a new XDM schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) for your Experience Platform Web SDK implementation to use with Customer Journey Analytics. This schema should contain any field groups for fields that you plan to collect data on. 
 
-In addition to the XDM schema you already created for your Web SDK implementation, you now need to create a second XDM schema to use with the Analytics source connector to bring historical data into Customer Journey Analytics. 
+In addition to the XDM schema you already created for your Web SDK implementation, you now <!-- wordsmith this. They just need to add the field groups from their first schema. So none of the fields in the custom schema are ad hoc or they all belong to a field group. --> need to create a second XDM schema to use with the Analytics source connector to bring historical data into Customer Journey Analytics. 
 
 This second schema needs to contain:
 
