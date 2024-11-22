@@ -41,7 +41,7 @@ For information about how users can create a project based on a template, see [C
 
 ## Manage company templates
 
-Administrators can delete, rename, tag, and approve company templates. 
+Administrators can delete, rename, tag, and approve company templates.  
 
 To display and manage company templates:
 
