@@ -26,7 +26,11 @@ To use the Analytics source connector to bring historical data into Customer Jou
 
 1. [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. Create the Analytics source connector and map fields, as described below.
+1. If you don't already have an Analytics source connector, create the Analytics source connector and map fields to your XDM schema, as described below.
+
+   Or
+
+   If you already have an Analytics source connector, [map fields from the source connector to your XDM schema](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
 
 1. [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
@@ -63,6 +67,8 @@ To create an Adobe Analytics source connector to use for historical data:
    ![map schema fields](assets/schema-mapping.png)
 
    1. In the **[!UICONTROL Source field]**, select an Adobe Analytics field from the Adobe Analytics ExperienceEvent Template field group. Then, in the **[!UICONTROL Target field]**, select the XDM field that you want to map it to. 
+
+      Not all Adobe Analytics fields have a corresponding field in XDM due to the inherent architecture differences between AppMeasurement and XDM. 
 
    1. Repeat this process for each field in the Adobe Analytics ExperienceEvent Template field group that you are using to collect data in Adobe Analytics.
 

@@ -22,7 +22,7 @@ When using the Analytics source connector, some standard lookup datasets are aut
 
 In order to classify data in Customer Journey Analytics when using the Experience Platform Web SDK, you need to create an XDM schema and a lookup dataset for each dimension that contains data that you want to classify.
 
-## Create an XDM schema
+## Create an XDM schema to use with the lookup dataset
 
 Create a new XDM schema for each dimension that contains data that you want to classify in Customer Journey Analytics. When you create the lookup dataset in a later step, it will reference this schema. 
 
@@ -92,9 +92,9 @@ To create a lookup dataset for use with a schema in Customer Journey Analytics:
 
 1. Continue with [Add the lookup dataset to your connection in Customer Journey Analytics](#add-the-lookup-dataset-to-your-connection-in-customer-journey-analytics).
 
-## Add the lookup dataset to your connection in Customer Journey Analytics
+## Add the lookup dataset to your connection in Customer Journey Analytics 
 
-After you [create an XDM schema](#create-an-xdm-schema-for-lookup-datasets) and [create a lookup dataset](#create-a-lookup-dataset), you need to add the lookup dataset to your connection in Customer Journey Analytics.
+After you [create an XDM schema](#create-an-xdm-schema-for-lookup-datasets) and you [create a lookup dataset](#create-a-lookup-dataset), you need to add the lookup dataset to your connection in Customer Journey Analytics.
 
 Repeat this process for each dimension that contains data that you want to classify.
 
@@ -114,9 +114,9 @@ To add the lookup dataset to your connection in Customer Journey Analytics:
 
 1. Select **[!UICONTROL Add datasets]**, then select **[!UICONTROL Save]**.
 
+   <!-- is there a step right in between here where you select the dataset -->
+
 1. Using the **[!UICONTROL Key]** field and the **[!UICONTROL Matching key]** field, create a correlation between the field in your lookup dataset with that in your event or summary dataset. 
 
 1. After all lookup datasets are added to your connection in Customer Journey Analytics, continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/). 
-
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
 

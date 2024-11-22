@@ -26,7 +26,11 @@ To use the Analytics source connector to bring historical data into Customer Jou
 
 1. [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. [Create the Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+1. If you don't already have an Analytics source connector, [create the Analytics source connector and map fields to your XDM schema](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+   Or
+
+   If you already have an Analytics source connector, [map fields from the source connector to your XDM schema](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
 
 1. Add the Analytics source connector dataset to the connection, as described below.
 
@@ -77,20 +81,26 @@ To add the automatically created dataset to the same connection that you created
 
 1. In the **[!UICONTROL Dataset backfill]** section, select **[!UICONTROL Request backfill]**. 
 
-1. Define the period that you want the backfill to include by entering the start and end dates or by selecting the the calendar icon ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg). 
+1. Define the period that you want the connection backfill into Customer Journey Analytics to include by entering the start and end dates or by selecting the the calendar icon ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
 
-   The Analytics source connector imports 13 months of data (irrespective of size) for production sandboxes. The backfill in non-production sandboxes is 3 months.
+   Be explicit when specifying the dates you request for backfill. Depending on several factors, you might want to do any of the following:
+   
+   * Choose an end date that is the same date as when you first started gathering data with your Web SDK implementation. 
 
-   >[!IMPORTANT]
-   >
-   >Be explicit when specifying the dates you request for backfill. The end date should be the date when you first started gathering data with your Web SDK implementation. 
-   >
-   >Alternatively, you can choose a date shortly after the date when you first started gathering data with your Web SDK implementation, then use segments to filter out the overlapping data. 
+   * Choose an end date that is shortly after the date when you first started gathering data with your Web SDK implementation, then use data view segments to filter out the overlapping data. 
+
+   * Choose an end date that results in a greater overlap in data, then use data view segments to filter out the overlapping data.  
+   
+     **Note:** This option would result in increased costs because there would be more rows in the connection. 
 
    <!-- Include any of the following?  Make sure you're explicit as to the dates you request backfill to. You want to request it to the date that you start gathering data with your Web SDK implementation. Also possibly include segments for any overlapping date. So you could request everything and then use a segment to exclude data that you don't want. That way if you need to move up the date, then you could change the date in the filter. Downside would be that you might pay for double rows.  When they do that, they're going to see all schema fields from both their custom schema and their Analytics schema. So they'll need to be cognizant to select the right fields, and never select any Analytics fields, because they will be mapped as part of the source connector. Never select any Analytics field group fields because they'll be mapped.  -->
 
 1. Select **[!UICONTROL Queue backfill]**.
 
 1. Select **[!UICONTROL Add datasets]**, then select **[!UICONTROL Save]** to save the connection.
+
+1. (Conditional) If you are using lookup datasets, you must create the lookup dataset and add it to your connection. For more information, see [Create lookup datasets to classify data in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md). 
+
+   This is required only if you did not already do it when configuring your Web SDK implementation.
 
 1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
