@@ -16,15 +16,13 @@ Depending on several factors, such as timeline and resource constraints, the rec
 
 ## Recommended upgrade steps for most organizations
 
->[!NOTE]
->
->The upgrade steps described in this section are the recommended upgrade steps that any organization could use to successfully upgrade from Adobe Analytics to Customer Journey Analytics.
->
->However, depending on several factors, such as timeline and resource constraints, the recommended upgrade steps might not be practical for your organization. In that case, use the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/) to dynamically generate upgrade steps that are tailored to your organization's unique circumstances. 
-
 The recommended process of upgrading from Adobe Analytics to Customer Journey Analytics is a new implementation of the Experience Platform Web SDK, which is the preferred data collection method for Customer Journey Analytics. In conjunction with the Web SDK, Adobe also recommends using the Analytics source connector to help with your transition to Customer Journey Analytics. Use the Analytics source connector to retain historical Adobe Analytics data and to perform side-by-side data comparison. 
 
 After you have enough historical data using the Experience Platform Web SDK and you have fully transitioned to Customer Journey Analytics, the Analytics source connector can be turned off and the Web SDK can be used exclusively. 
+
+>[!NOTE]
+>
+>The upgrade steps described in this section are not practical for your organization, use the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/) to dynamically generate upgrade steps that are tailored to your organization's unique circumstances.
 
 ### High-level recommended upgrade process
 
@@ -164,9 +162,7 @@ Each step provides a high-level explanation of a more detailed process. Follow t
 
 1. Learn about [feature support in Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). Most Adobe Analytics features are supported in Customer Journey Analytics, and many additional features are available in Customer Journey Analytics.
 
-1. When your Web SDK implementation is complete and you are comfortable with the data that you are collecting, you can disable AppMeasurement data collection. 
-
-   For more information, see [Disable AppMeasurement data collection](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md).
+1. [Disable AppMeasurement data collection](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md) when your Web SDK implementation is complete and you are comfortable with the data that you are collecting. 
 
 1. Disable the Analytics source connector after all Analytics source connector data leaves your data retention period.  
 

@@ -94,7 +94,7 @@ To create a lookup dataset for use with a schema in Customer Journey Analytics:
 
 ## Add the lookup dataset to your connection in Customer Journey Analytics 
 
-After you [create an XDM schema](#create-an-xdm-schema-for-lookup-datasets) and [create a lookup dataset](#create-a-lookup-dataset), you need to add the lookup dataset to your connection in Customer Journey Analytics.
+After you [create an XDM schema](#create-an-xdm-schema-for-lookup-datasets) and you [create a lookup dataset](#create-a-lookup-dataset), you need to add the lookup dataset to your connection in Customer Journey Analytics.
 
 Repeat this process for each dimension that contains data that you want to classify.
 

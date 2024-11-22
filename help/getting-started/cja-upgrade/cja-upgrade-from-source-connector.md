@@ -1,6 +1,6 @@
 ---
-title: Move from the Analytics source connector to the Web SDK for Customer Journey Analytics
-description: Learn how to move to the Web SDK from the Analytics source connector when upgrading to Customer Journey Analytics
+title: Transition from the Analytics source connector to the Web SDK for Customer Journey Analytics
+description: Learn how to transition to the Web SDK from the Analytics source connector when upgrading to Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,23 +8,23 @@ hide: yes
 hidefromtoc: yes
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 ---
-# Move from the Analytics source connector to the Web SDK for Customer Journey Analytics
+# Transition from the Analytics source connector to the Web SDK for Customer Journey Analytics
 
 >[!NOTE]
 > 
 >Use the information on this page when answering questions in the [Customer Journey Analytics upgrade checklist](https://gigazelle.github.io/cja-ttv/).
 
-There are inherent disadvantages with using the Analytics source connector as your sole implementation for Customer Journey Analytics. If your organization has already upgraded to Customer Journey Analytics using only the Analytics source connector implementation, you should consider moving to a Web SDK implementation. 
+There are inherent disadvantages with using the Analytics source connector as your sole implementation for Customer Journey Analytics. 
 
-Adobe recommends using the Analytics source connector (for bringing over historical data), in conjunction with a new implementation of the Web SDK (for ongoing data collection). 
+If your organization has already upgraded to Customer Journey Analytics using only the Analytics source connector implementation, you should consider transitioning to an implementation that uses the Analytics source connector (for bringing over historical data), in conjunction with a new implementation of the Web SDK (for ongoing data collection). 
 
 ## Understand advantages and disadvantages of using the Analytics source connector exclusively
 
 For information about the advantages and disadvantages of using the Analytics source connector, see [Use the Analytics source connector exclusively to upgrade to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md).
 
-## Move from the Analytics source connector to the Web SDK
+## Transition from the Analytics source connector to the Web SDK
 
-Following is the high-level process for moving from the Analytics source connector to an implementation comprised of both the Analytics source connector and a Web SDK implementation: 
+Following is the high-level process for transitioning from exclusively using the Analytics source connector to an implementation comprised of both the Analytics source connector and a Web SDK implementation: 
 
 1. Create a Web SDK implementation, as described in [Detailed recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps) in the article, [Upgrade from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).
 

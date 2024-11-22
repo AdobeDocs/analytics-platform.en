@@ -20,13 +20,13 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 >
 >Before you begin creating your XDM schema, work with your data team and other stakeholders throughout your organization to identify your organization's ideal schema design for Customer Journey Analytics and the other Adobe Experience Platform applications you use. For more information, see [Architect your schema for use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
-Adobe recommends creating an Experience Data Model (XDM) schema when upgrading to Customer Journey Analytics. An XDM schema allows for a streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use. When changes to the schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating. 
+Adobe recommends creating a custom Experience Data Model (XDM) schema when upgrading to Customer Journey Analytics. A custom schema allows for a streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use. When changes to the schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating. 
 
 ## Create the schema
 
 The XDM schema you define represents the model of the data that you collect into Adobe Experience Platform. 
 
-To create a schema:
+To create a customschema:
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
