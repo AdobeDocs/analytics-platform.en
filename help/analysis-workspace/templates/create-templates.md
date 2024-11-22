@@ -75,4 +75,4 @@ To display and manage company templates:
 
 Like with templates that are provided by Adobe, you can access templates that people in your organization have created. 
 
-For information about how to access a company template, see [Access and run a template](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) in [Use templates](help/analysis-workspace/templates/use-templates.md).
+For information about how to access a company template, see [Access and run a template](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) in [Use templates](/help/analysis-workspace/templates/use-templates.md).
