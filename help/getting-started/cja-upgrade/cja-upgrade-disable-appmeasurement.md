@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
 ---
 # Disable AppMeasurement data collection
 
@@ -19,6 +20,4 @@ hidefromtoc: yes
 
 * **Tags:** Disable the Adobe Analytics extension
 
-* **AppMeasurment:** Replace the AppMeasurement.js library s=newobject 
-
-
+* **AppMeasurment:** Replace the AppMeasurement.js library s=newobject
