@@ -144,7 +144,9 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Hotkeys (Shortcuts)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Color palettes](../analysis-workspace/build-workspace-project/color-palettes.md)
     + [View density](../analysis-workspace/build-workspace-project/view-density.md)
-  + [Use templates](../analysis-workspace/templates/use-templates.md)
+  + Templates {#templates}
+    + [Use templates](../analysis-workspace/templates/use-templates.md)
+    + [Create and manage templates](../analysis-workspace/templates/create-templates.md)
   + Visualizations {#visualizations}
     + [Overview](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
     + [Manage data sources](../analysis-workspace/visualizations/t-sync-visualization.md)
