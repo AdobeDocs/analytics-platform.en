@@ -55,19 +55,19 @@ The following information describes how to access and use templates from the [!U
 
 1. Select the template to create a report based on the template you chose. 
 
-## Customize and save a template {#use-reports}
+## Create a project based on a template {#use-reports}
 
-A template might not fit your needs exactly, but it can get you close. In these cases, you can use the template as a starting point, then customize it to best suit your specific purposes. 
+A template might not fit your needs exactly, but it can get you close. In these cases, you can use the template as a starting point for your project, then customize it to best suit your specific purposes. 
 
 If you navigate away from a template after making changes, you are prompted to save or discard your changes. Saving changes to a template saves the template as a new project.
 
-To customize and save a template:
+To customize a template and save it as a project:
 
 1. In Adobe Analytics, select the [!UICONTROL **Workspace**] tab.
 
 1. Select the [!UICONTROL **Templates**] tab.
 
-1. Select the template you want to view. For example, under [!UICONTROL **Most popular**], select the [!UICONTROL **Pages**] report.
+1. Select the template you want to view. For example, under [!UICONTROL **Most popular**], select the [!UICONTROL **Pages**] template.
 
    The Pages template, as displayed in Analysis Workspace, shows two [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) ([Bar chart](/help/analysis-workspace/visualizations/bar.md) and [Summary number](/help/analysis-workspace/visualizations/summary-number-change.md)) and a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). The metric used is Occurrences.
 
@@ -76,7 +76,7 @@ To customize and save a template:
 1. Do any of the following:
 
    * View the template.
-   * Drag one or more segments into the Segment drop zone at the top. For example, drag the segment [!UICONTROL **Mobile Customers**] and view the results. 
+   * Drag one or more filters into the Filter drop zone at the top. For example, drag the filter [!UICONTROL **Mobile Customers**] and view the results. 
    * Change the date range by going to the calendar at the top-right.
    * Add dimension breakdowns, drag in other metrics, and generally customize the template to suit your needs.
 
