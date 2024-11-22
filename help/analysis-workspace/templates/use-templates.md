@@ -27,9 +27,17 @@ The following information describes how to access and use templates from the [!U
 
 1. In Analysis Workspace, select the [!UICONTROL **Workspace**] tab.
 
-1. Select [!UICONTROL **Templates**].
+   ![Templates tabs](assets/view-prebuilt-templates.png)
 
-   ![Reports tab](assets/view-prebuilt-reports.png)
+1. In the [!UICONTROL **Templates**] section, select either of the following tabs:
+
+   * **[!UICONTROL Adobe templates]**: Shows all templates provided by Adobe.
+
+   * **[!UICONTROL _login_company_name_ templates]**: Shows all company templates that have been created for in your organization.
+
+     Company templates can be created only by an administrator.
+
+1. Choose whether to view templates in a column view or a card view by selecting either the column view ![column view icon](assets/column-view-icon.png) or a card view ![card view icon](assets/card-view-icon.png) icon.
 
 1. In the search field, begin typing the name of the template you want to find, then select it from the list of templates. 
 
