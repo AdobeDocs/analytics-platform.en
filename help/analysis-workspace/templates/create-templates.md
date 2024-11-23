@@ -5,6 +5,7 @@ feature: Workspace Basics
 role: User, Admin
 hide: yes
 hidefromtoc: yes
+exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
 ---
 # Create and manage templates
 
