@@ -60,8 +60,6 @@ To display and manage company templates:
 
    ![Display company templates filters](assets/company-reports-filter.png)
 
-1. In the templates list, select one or more company templates.
-
 1. Click the **...** elilpsis icon next to a template to view the available options. 
 
    <!-- Update screenshot -->
@@ -74,6 +72,6 @@ To display and manage company templates:
 
 ## Access a company template
 
-Like with templates that are provided by Adobe, you can access templates that people in your organization have created. 
+Like with templates that are provided by Adobe, you can access templates that administrators in your organization have created. 
 
 For information about how to access a company template, see [Access and run a template](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) in [Use templates](/help/analysis-workspace/templates/use-templates.md).

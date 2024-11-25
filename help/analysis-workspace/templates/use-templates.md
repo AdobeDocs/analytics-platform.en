@@ -37,7 +37,7 @@ The following information describes how to access and use templates from the [!U
 
      Company templates can be created only by an administrator.
 
-1. Choose whether to view templates in a column view or a card view by selecting either the column view ![column view icon](assets/column-view-icon.png) or a card view ![card view icon](assets/card-view-icon.png) icon.
+1. Choose whether to view templates in a column view or a card view by selecting either the column view ![column view icon](assets/column-view-icon.png) or the card view ![card view icon](assets/card-view-icon.png) icon.
 
 1. In the search field, begin typing the name of the template you want to find, then select it from the list of templates. 
 
