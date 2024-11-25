@@ -134,7 +134,7 @@ Each step provides a high-level explanation of a more detailed process. Follow t
 
 1. Compare data in Adobe Analytics from your old implementation to data in Customer Journey Analytics from your new implementation and make sure you understand any differences and why they exist. <!-- Expound on this. Link to somewhere? There will be a lot of differences. -->
 
-1. (Optional) Bring historical data from Adobe Analytics using the Analytics source connector: 
+1. Bring historical data from Adobe Analytics using the Analytics source connector: 
 
    >[!NOTE]
    >

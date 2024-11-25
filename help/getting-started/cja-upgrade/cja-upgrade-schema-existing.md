@@ -16,17 +16,17 @@ exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
 
 <!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
-When upgrading to Customer Journey Analytics, Adobe recommends creating a new XDM schema to better align with the needs of your organization as you begin to use other Platform services. Alternatively, you can choose to use your existing Adobe Analytics schema.
+When upgrading to Customer Journey Analytics, Adobe recommends creating a custom Experience Data Model (XDM) schema to better align with the needs of your organization as you begin to use other Platform services. Alternatively, you can choose to use your existing Adobe Analytics schema.
 
 Consider the advantages and disadvantage of each.
 
-## Create an XDM schema tailored to your organization (Recommended)
+## Create a custom schema tailored to your organization (Recommended)
 
-Adobe recommends creating a new XDM schema when upgrading to Customer Journey Analytics.
+Adobe recommends creating a custom schema when upgrading to Customer Journey Analytics.
 
 | Advantages | Disadvantages |
 |----------|---------|
-|<ul><p>Advantages of updating to your own XDM schema include:</p><ul><li>A streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use.</li><p>When changes to the schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating.</p></ul> | <p>Disadvantages of updating to your own XDM schema include:</p><ul><li>Updating your schema is a time-consuming process that is required before you begin sending data to Platform.</li></ul> |
+|<ul><p>Advantages of updating to your own custom schema include:</p><ul><li>A streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use.</li><p>When changes to the schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating.</p></ul> | <p>Disadvantages of updating to your own custom schema include:</p><ul><li>Updating your schema is a time-consuming process that is required before you begin sending data to Platform.</li></ul> |
 
 ## Use your existing Adobe Analytics schema
 
