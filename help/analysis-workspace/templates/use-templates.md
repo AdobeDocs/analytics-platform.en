@@ -33,11 +33,11 @@ The following information describes how to access and use templates from the [!U
 
    * **[!UICONTROL Adobe templates]**: Shows all templates provided by Adobe.
 
-   * **[!UICONTROL _login_company_name_ templates]**: Shows all company templates that have been created for in your organization.
+   * **[!UICONTROL _login_company_name_ templates]**: Shows all company templates that have been created for your organization.
 
-     Company templates can be created only by an administrator.
+     Company templates can be created only by an administrator. For information about how to create a company template, see [Create and manage templates](/help/analysis-workspace/templates/create-templates.md).
 
-1. Choose whether to view templates in a column view or a card view by selecting either the column view ![column view icon](assets/column-view-icon.png) or a card view ![card view icon](assets/card-view-icon.png) icon.
+1. Choose whether to view templates in a column view or a card view by selecting either the column view ![column view icon](assets/column-view-icon.png) or the card view ![card view icon](assets/card-view-icon.png) icon.
 
 1. In the search field, begin typing the name of the template you want to find, then select it from the list of templates. 
 
@@ -71,13 +71,15 @@ If you navigate away from a template after making changes, you are prompted to s
 
 To customize a template and save it as a project:
 
-1. In Adobe Analytics, select the [!UICONTROL **Workspace**] tab.
+1. In Customer Journey Analytics, select the [!UICONTROL **Workspace**] tab.
 
 1. Select the [!UICONTROL **Templates**] tab.
 
 1. Select the template you want to view. For example, under [!UICONTROL **Most popular**], select the [!UICONTROL **Pages**] template.
 
    The Pages template, as displayed in Analysis Workspace, shows two [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) ([Bar chart](/help/analysis-workspace/visualizations/bar.md) and [Summary number](/help/analysis-workspace/visualizations/summary-number-change.md)) and a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). The metric used is Occurrences.
+
+   <!--update screenshot. The following is AA -->
 
    ![Pages template](assets/pages-report.png)
 
@@ -90,7 +92,7 @@ To customize a template and save it as a project:
 
 1. (Optional) Save the template as a project by selecting [!UICONTROL **Project**] > [!UICONTROL **Save**].
 
-   The template is saved as a new project; it does not modify the existing report. For more information about saving a report as a project, see [Save projects](/help/analysis-workspace/build-workspace-project/save-projects.md).
+   The template is saved as a new project; it does not modify the existing template. For more information about saving projects, see [Save projects](/help/analysis-workspace/build-workspace-project/save-projects.md).
 
 ## Available templates
 
