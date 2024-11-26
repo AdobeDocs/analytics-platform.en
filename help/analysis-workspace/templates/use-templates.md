@@ -33,7 +33,7 @@ The following information describes how to access and use templates from the [!U
 
    * **[!UICONTROL Adobe templates]**: Shows all templates provided by Adobe.
 
-   * **[!UICONTROL _login_company_name_ templates]**: Shows all company templates that have been created for in your organization.
+   * **[!UICONTROL _login_company_name_ templates]**: Shows all company templates that have been created for your organization.
 
      Company templates can be created only by an administrator. For information about how to create a company template, see [Create and manage templates](/help/analysis-workspace/templates/create-templates.md).
 

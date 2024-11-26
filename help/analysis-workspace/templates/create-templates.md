@@ -15,15 +15,13 @@ People in the login company can use these company templates as described in [Use
 
 ## Create a template
 
-<!-- is this only admins? -->
-
 To create a new template that can be used by people in your login company:
 
 1. In Analysis Workspace, build a project to your desired state.
 
 1. Select [!UICONTROL **Project**] > **[!UICONTROL Save as template…]**.
    
-   ![Company report](assets/company-template-save.png)
+   ![Company template](assets/company-template-save.png)
 
 1. Specify the following information in the [!UICONTROL Save as template] dialog box:
    
@@ -40,11 +38,37 @@ To create a new template that can be used by people in your login company:
 
 For information about how users can create a project based on a template, see [Create a project based on a template](/help/analysis-workspace/templates/use-templates.md#create-a-project-based-on-a-template) in [Use templates](/help/analysis-workspace/templates/use-templates.md).
 
-## Manage company templates
+## Edit or delete templates
 
-Administrators can delete, rename, tag, and approve company templates.  
+Administrators can edit or delete company templates.
 
-To display and manage company templates:
+1. In Analysis Workspace, select the [!UICONTROL **Workspace**] tab, then select **[!UICONTROL _login_company_name_ templates]**.
+
+1. If you are viewing templates in a column view ![column view icon](assets/column-view-icon.png):
+
+   1. Go to the template that you want to edit or delete, select the info icon next to the template name.
+
+      ![Company template info](assets/company-template-info.png)
+
+   1. Select **[!UICONTROL Preview]**.
+
+   1. Select the More icon, then select **[!UICONTROL Edit]** or **[!UICONTROL Delete]**.
+
+      ![Edit or delete template](assets/company-template-edit-delete.png)
+
+1. If you are viewing templates in a card view ![card view icon](assets/card-view-icon.png):
+
+   1. Locate the template that you want to edit or delete.
+
+      ![Company template card view](assets/company-template-cards.png)
+
+   1. Select the More icon, then select **[!UICONTROL Edit]** or **[!UICONTROL Delete]**.
+
+      ![Company template card edit or delete](assets/company-template-card-edit-delete.png)
+
+## Rename, tag, or approve templates
+
+Administrators can Rename, tag, and approve company templates.  
 
 1. In Analysis Workspace, select the [!UICONTROL **Workspace**] tab, then select the **[!UICONTROL Projects tab]** in the left rail.
 
@@ -56,22 +80,20 @@ To display and manage company templates:
 
    Company templates can be identified by the ![templates icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileTemplate_18_N.svg) that precedes the template name. 
 
-   <!-- Update screenshot -->
-
-   ![Display company templates filters](assets/company-reports-filter.png)
+   ![Display company templates filters](assets/company-templates-filter.png)
 
 1. Click the **...** elilpsis icon next to a template to view the available options. 
 
-   <!-- Update screenshot -->
+   ![Company template actions](assets/company-templates-actions.png)
 
-   ![Company template actions](assets/company-reports-actions.png)
+1. Select **[!UICONTROL Rename]**, **[!UICONTROL Tag]**, or **[!UICONTROL Approve]**.
 
-1. Select **[!UICONTROL Delete]**, **[!UICONTROL Rename]**, **[!UICONTROL Tag]**, or **[!UICONTROL Approve]**).
+   You can also delete a template, or you can delete a template as described in [Edit or delete templates](#edit-or-delete-templates).
 
 1. (Optional) To return to the regular view, in the filter rail, deselect **[!UICONTROL Company templates]**.
 
 ## Access a company template
 
-Like with templates that are provided by Adobe, you can access templates that administrators in your organization have created. 
+Like with templates that are provided by Adobe, users in the organization can access templates that administrators create. 
 
 For information about how to access a company template, see [Access and run a template](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) in [Use templates](/help/analysis-workspace/templates/use-templates.md).
