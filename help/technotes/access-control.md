@@ -57,6 +57,15 @@ In addition to being added as a Product administrator in the **Customer Journey 
   | [!UICONTROL Data Management] | [!UICONTROL Manage Datasets] | Access to read, create, edit, and delete datasets. Read-only access for schemas. |
   | [!UICONTROL Data Ingestion] | [!UICONTROL Manage Sources] | Access to read, create, edit, and disable sources. |
   | [!UICONTROL Identity Management] | [!UICONTROL View Identity Namespaces] | Read-only access for identity namespaces. |
+
+* If Adobe Journey Optimizer has been integrated with CJA where there are AJO Connections, then Journeys permissions must also be added in order to access Connections
+
+  | Category | Permission | Description |
+  |---|---|---|
+  | [!UICONTROL Journeys] | [!UICONTROL View Journeys Events, Data Sources and Actions] | Read-only access to AJO Events, data sources and related actions. |
+  | [!UICONTROL Data Modeling] | [!UICONTROL Manage Journeys Events, Data Sources and Actions ] | Access to read, create, edit, and delete AJO Journeys Events and related actions. |
+  | [!UICONTROL Data Management] | [!UICONTROL View Journeys] | Read-only access for AJO Journeys. |
+  | [!UICONTROL Data Management] | [!UICONTROL Manage Journeys] | Access to read, create, edit, and delete AJO Journeys. |
     
     For more information on Experience Platform permissions, see [Manage permissions for a product profile](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
