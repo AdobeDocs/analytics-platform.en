@@ -56,11 +56,15 @@ For information about how to manage existing accounts, including viewing, editin
 
    * [Snowflake](#snowflake)
 
-### AEP Data Landing Zone
+### AEP Data Landing Zone (Azure)
 
 >[!IMPORTANT]
 >
->When exporting Customer Journey Analytics reports to Adobe Experience Platform Data Landing Zone, make sure that you download the data within 7 days, then delete it from AEP Data Landing Zone. After 7 days, the data is automatically deleted from AEP Data Landing Zone.
+>Consider the following when using AEP Data Landing Zone for your export account:
+>
+> * When exporting Customer Journey Analytics reports to Adobe Experience Platform Data Landing Zone, make sure that you download the data within 7 days, then delete it from AEP Data Landing Zone. After 7 days, the data is automatically deleted from AEP Data Landing Zone.
+> * AEP Data Landing Zone uses either Azure or AWS storage. If your organization is using a login company configured to use Azure, then AEP Data Landing Zone uses Azure. If the login company is configured to use AWS, then AEP Data Landing Zone uses AWS. 
+>
 
 1. Begin creating a cloud export account in either of the following ways:
 
@@ -100,6 +104,36 @@ For information about how to manage existing accounts, including viewing, editin
         ![Enter Connection Info window showing SAS URL field](assets/blob-container-sas-uri.png)
 
    1. Select [!UICONTROL **Next**] > [!UICONTROL **Connect**].
+
+1. In Customer Journey Analytics, in the [!UICONTROL **Export account created**] dialog, select [!UICONTROL **OK**].
+
+   ![Export account dialog AEP Data Landing Zone](assets/export-account-aep.png)
+
+1. Continue with [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).
+
+### AEP Data Landing Zone (AWS)
+
+>[!IMPORTANT]
+>
+>Consider the following when using AEP Data Landing Zone for your export account:
+>
+> * When exporting Customer Journey Analytics reports to Adobe Experience Platform Data Landing Zone, make sure that you download the data within 7 days, then delete it from AEP Data Landing Zone. After 7 days, the data is automatically deleted from AEP Data Landing Zone.
+> * AEP Data Landing Zone uses either Azure or AWS storage. If your organization is using a login company configured to use Azure, then AEP Data Landing Zone uses Azure. If the login company is configured to use AWS, then AEP Data Landing Zone uses AWS. 
+>
+
+1. Begin creating a cloud export account in either of the following ways:
+
+   * From the Exports page as described above, in [Begin creating a cloud export account](#begin-creating-a-cloud-export-account)
+   
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+
+1. Select [!UICONTROL **Save**].
+
+   The [!UICONTROL **Export account created**] dialog displays.
+
+   ![Export account dialog AEP Data Landing Zone](assets/export-account-aep.png)
+
+1. Copy the contents of the [!UICONTROL **Access key id**] field, the **[!UICONTROL Secret access key]** field, and the **[!UICONTROL Session token]** field to your clipboard. You will use this information to access the data that is exported from Analysis Workspace from the AEP Data Landing Zone.
 
 1. In Customer Journey Analytics, in the [!UICONTROL **Export account created**] dialog, select [!UICONTROL **OK**].
 
