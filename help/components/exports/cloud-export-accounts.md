@@ -44,9 +44,9 @@ For information about how to manage existing accounts, including viewing, editin
 
 1. Continue with the section below that corresponds to the [!UICONTROL **Account type**] you selected.
 
-   * [AEP Data Landing Zone](#aep-data-landing-zone-azure)
+   * [AEP Data Landing Zone (Azure)](#aep-data-landing-zone-azure)
 
-   * [AEP Data Landing Zone](#aep-data-landing-zone-aws)
+   * [AEP Data Landing Zone (AWS)](#aep-data-landing-zone-aws)
 
    * [Amazon S3 Role ARN](#amazon-s3-role-arn)
 
