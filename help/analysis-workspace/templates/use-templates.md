@@ -37,7 +37,11 @@ The following information describes how to access and use templates from the [!U
 
      Company templates can be created only by an administrator. For information about how to create a company template, see [Create and manage templates](/help/analysis-workspace/templates/create-templates.md).
 
-1. Choose whether to view templates in a column view or a card view by selecting either the column view ![column view icon](assets/column-view-icon.png) or the card view ![card view icon](assets/card-view-icon.png) icon.
+1. Use either of the following options to change how you view the available templates:
+
+   * Choose whether to view templates in a column view or a card view by selecting either the column view ![column view icon](assets/column-view-icon.png) or the card view ![card view icon](assets/card-view-icon.png) icon.
+
+   * When using the card view ![card view icon](assets/card-view-icon.png), choose from the following sort orders: **[!UICONTROL Most recently used]**, **[!UICONTROL Most popular]**, **[!UICONTROL Alphabetical]**, **[!UICONTROL Categorical]**.
 
 1. In the search field, begin typing the name of the template you want to find, then select it from the list of templates. 
 
@@ -51,17 +55,23 @@ The following information describes how to access and use templates from the [!U
 
    For a list of templates that are available, see the [Available templates](#available-templates) section below.
 
-1. (Optional) View and use templates that contain components that are not available in your data view. (By default, the only templates shown are those that use components that are available in your data view.)
+1. (Optional) View and use templates that contain components that are not available in your data view. (By default, templates are shown only if they use components that are available in your data view.)
 
-   1. Select (name of filter option?) to show templates that require additional components.
+   1. Select the filter icon.
+   
+   1. Select **[!UICONTROL Not ready for use]** to show templates that require additional components.
 
-      <!-- add screenshot -->
-   
-   1. Select the template that you want to use. 
-   
-   1. If the template contains components that are not available in your data view, a message displays, indicating which components are missing. Click (button?) to go to the data view where you can automatically create them. <!--how do you do this? Walk through the process -->
+      ![Use a template that is missing components](assets/template-not-ready.png)
 
 1. Select the template to create a report based on the template you chose. 
+
+1. (Conditional) If the template contains components that are not available in your data view, the Incompatible data view dialog displays, stating that the data view is incompatible with the template and showing which components are missing.
+
+   Do either of the following:
+   
+   * Choose a different data view in the **[!UICONTROL Change data view]** drop-down menu.
+   
+   * Select **[!UICONTROL Continue anyway]** to view the template with the missing components.
 
 ## Create a project based on a template {#use-reports}
 
