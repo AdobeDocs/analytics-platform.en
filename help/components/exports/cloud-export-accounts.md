@@ -135,11 +135,19 @@ For information about how to manage existing accounts, including viewing, editin
 
    ![Export account dialog AEP Data Landing Zone](assets/export-account-aep.png)
 
-1. Copy the contents of the [!UICONTROL **Access key id**] field, the **[!UICONTROL Secret access key]** field, and the **[!UICONTROL Session token]** field to your clipboard. You will use this information to access the data that is exported from Analysis Workspace from the AEP Data Landing Zone.
+1. Copy the contents of the following fields to your clipboard (You will use this information to access the data that is exported from Analysis Workspace from the AEP Data Landing Zone):
 
-1. In Customer Journey Analytics, in the [!UICONTROL **Export account created**] dialog, select [!UICONTROL **OK**].
+   * [!UICONTROL **Access key id**]
+   
+   * **[!UICONTROL Secret access key]**
+   
+   * **[!UICONTROL Session token]**
+   
+   * **[!UICONTROL Bucket name]**
 
-   ![Export account dialog AEP Data Landing Zone](assets/export-account-aep.png)
+   * **[!UICONTROL DLZ folder]**
+
+1. Select [!UICONTROL **OK**].
 
 1. Continue with [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).
 
