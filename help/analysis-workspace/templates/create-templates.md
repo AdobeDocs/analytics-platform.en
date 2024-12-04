@@ -42,7 +42,7 @@ For information about how users can create a project based on a template, see [C
 
 Administrators can edit or delete company templates.
 
-1. In Analysis Workspace, select the [!UICONTROL **Workspace**] tab, then select **[!UICONTROL _login_company_name_ templates]**.
+1. In Analysis Workspace, select the [!UICONTROL **Workspace**] tab, then under **[!UICONTROL Templates]** in the left rail, select **[!UICONTROL _login_company_name_ templates]**.
 
 1. If you are viewing templates in a column view ![column view icon](assets/column-view-icon.png):
 
