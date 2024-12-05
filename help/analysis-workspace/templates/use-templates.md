@@ -55,7 +55,11 @@ The following information describes how to access and use templates from the [!U
 
    For a list of templates that are available, see the [Available templates](#available-templates) section below.
 
-1. (Optional) View and use templates that contain components that are not available in your data view. (By default, templates are shown only if they use components that are available in your data view.)
+1. (Optional) You can view templates that contain components that are not available in your data view. (By default, templates are shown only if they use components that are available in your data view.) 
+
+   >[!NOTE]
+   >
+   >   Before you can use these templates, an administrator must first add the required context labels for these missing components to the data view. For more information, see [Add missing components to the data view for a given template](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) in [Use templates](/help/analysis-workspace/templates/create-templates.md).
 
    1. Select the filter icon.
    
