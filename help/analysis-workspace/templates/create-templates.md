@@ -134,15 +134,15 @@ To add missing components to a template:
 
         ![Template preview page](assets/template-preview.png)
 
-1. In the **[!UICONTROL Missing components]** section, a list of components that are missing from the data view are displayed. select **[!UICONTROL Add these components to your data view]**.
+1. In the **[!UICONTROL Missing components]** section, a list of components that are missing from the data view are displayed. Select **[!UICONTROL Add these components to your data view]**.
 
    The configuration page for the data view is displayed in a new tab. 
 
-1. Select the **[!UICONTROL Components]** tab.
+1. Select the **[!UICONTROL Components]** tab for the data view.
 
    ![Data view components tab](assets/template-dataview.png)
 
-1. For each component that was listed as missing from the template, do either of the following on **[!UICONTROL Components]** tab in the data view:
+1. For each component that was listed as missing from the template, do either of the following on the **[!UICONTROL Components]** tab:
 
    * In the **[!UICONTROL Included components]** section, select a component that is already included in the data view that you want to use for the missing component. 
 
