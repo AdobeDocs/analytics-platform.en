@@ -8,7 +8,7 @@ role: User
 ---
 # An example B2B project
 
-This article explains how to set up, configure and report on profile (person) level based B2B data in Customer Journey Analytics.
+This article illustrates a use case where you want to properly report in Customer Journey Analytics on person data within the context of a typical B2B configuration. Such a configuration is part of the [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  The use case explains how to set up, configure and report on profile (person) level based B2B data in Customer Journey Analytics.
 
 ## Connection
 
