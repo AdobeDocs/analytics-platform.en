@@ -58,7 +58,7 @@ A screen reader reads text that appears on the computer screen. It also reads no
 
 [!UICONTROL Analysis Workspace] strives for WCAG 2.1 AA conformance, including requirements for color contrast. 
 
-In addition, users can set their own preferred color palette for a project under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Project color palette](help/analysis-workspace/build-workspace-project/color-palettes.md). 
+In addition, users can set their own preferred color palette for a project under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md). 
 
 ## Required validation
 
