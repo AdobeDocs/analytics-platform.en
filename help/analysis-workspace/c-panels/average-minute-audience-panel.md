@@ -14,7 +14,6 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 >title="Media average minute audience"
 >abstract="Create a panel to analyze average minute audience for specific content, or over a specific time period."
 
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -24,7 +23,7 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 >title="Media average minute audience"
 >abstract="Shows the performance of specific media content or over a custom time period.<br/><br/>**General parameters**<br/>**Calculate metric for**: Select the metric to use for the panel. Select **Specific content** to analyze average minute audience for specific content or event based on the content length. **Select Custom time period** to analyze how average minute audience changes over a custom selected period of time.<br/>**Reporting dimension**: Select to report by **Video Name** of **Content ID** dimension. Only available when you have selected Specific content as the metric.<br/>**Granularity**: Select granularity for the reporting. Only available when you have selected Custom time period as the metric.<br/>**Filter content by (optional)**: Select a specific show, season, episode, or select a custom dimension to filter the content.<br/><br/>**Advanced settings**<br/>**Table settings**: Select whether to show calculation values in the table.<br/>**Time spent metric**: Select which time spent metric you'd like to use for the specific content calculation. Only available when you have selected Specific content as the metric."
 >additional-url="/help/analysis-workspace/c-panels/average-minute-audience-panel.md#specific-content" text="Specific content"
->additional-url=""/help/analysis-workspace/c-panels/average-minute-audience-panel.md#custom-time-period" text="Custom time period"
+>additional-url="/help/analysis-workspace/c-panels/average-minute-audience-panel.md#custom-time-period" text="Custom time period"
 
 <!-- markdownlint-enable MD034 -->
 
