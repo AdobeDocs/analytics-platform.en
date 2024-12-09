@@ -227,13 +227,13 @@ The Usage interface consists of two panels:
   
   The panel displays two visualizations: 
   
-  * **[!UICONTROL Core data reportable rows (Under 13 months)]**.
+  * **[!UICONTROL Core data reportable rows]**.
 
-    How many reportable rows do you have over the last 13 months. The summary number is the number of reportable rows for the last month (in the example August 2023 - September 2023). When you hover over any data point, the popup shows the number of reportable rows for that specific month (in the example July 2024).
+    How many reportable rows do you have over the last 13 months. The summary number is the number of reportable rows for the last month (in the example November 2023 - November 2024). When you hover over any data point, the popup shows the number of reportable rows for that specific month (in the example September 2024).
     
-  * **[!UICONTROL Historical data reportable rows (Over 13 months)]**.
+  * **[!UICONTROL Historical data reportable rows]**.
 
-    How many reportable rows do you have for the months starting from your retention window up until the current month. The summary number is the total number of historical reportable rows for that period. In case the start of you retention window is September 2021, the example reports reportable rows from January 2021 - September 2024. When you hover over any data point, the popup shows the number of reportable rows for that specific month.
+    How many reportable rows do you have for the months starting from your retention window up until now, minus the last 13 months. The summary number is the total number of historical reportable rows for that period. In case the start of you retention window is September 2022, the example reports reportable rows from September 2022 - October 2023. When you hover over any data point, the popup shows the number of reportable rows for that specific month.
 
 
   ![Key Usage Metrics](assets/usage-key-usage-metrics.png)
