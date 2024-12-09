@@ -3,6 +3,7 @@ description: Examples when configuring a Journey canvas visualization
 title: Journey canvas examples
 feature: Visualizations
 role: User
+exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b
 ---
 # Journey canvas troubleshooting
 

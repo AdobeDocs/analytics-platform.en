@@ -67,7 +67,7 @@ New derived field functions (Math, Next or Previous, Summarize, Deduplicate) and
 
 >[!TAB BI extension*] 
 
-The BI extension enables SQL access to the data views that you have defined in Customer Journey Analytics. You can now use your favorite BI tool to create reporting and dashboards based on the same data views that Customer Journey Analytics users use with their Analysis Workspace projects.
+The BI extension enables SQL access to the data views that you have defined in Customer Journey Analytics. You can now use your favorite BI tool to create reporting and dashboards based on the same data views that Customer Journey Analytics users use with their Analysis Workspace projects. [Use cases](/help/use-cases/data-views/bi-extension-usecases.md) are provided.
 
 [![image](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
