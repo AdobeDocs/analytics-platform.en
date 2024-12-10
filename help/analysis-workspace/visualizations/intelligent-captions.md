@@ -18,7 +18,7 @@ Intelligent captions are geared towards:
 
 To launch auto-generated intelligent captions for a visualization, select ![Intelligent captions](/help/assets/icons/AI.svg) at the top right of the visualization. This will generate natural-language insights. 
 
-![Launch Analysis window showing the Intelligent captions for Product Views Trend. ](assets/intell-caps-1.png)
+![Launch Analysis window showing the Intelligent captions for Product Views Trend. ](assets/intelligent-captions.gif)
 
 
 Keep in mind that:
@@ -36,33 +36,19 @@ Keep in mind that:
 
 Intelligent captions are supported on the following visualizations:
 
-### Line
+* [Line](line.md) (including multi-line)
+* [Bar](bar.md)
+* [Horizontal bar](horizontal-bar.md)
+* [Area](area.md)
+* [Donut](donut.md)
+* [Fallout](fallout/fallout-flow.md)
+* [Flow](c-flow/flow.md)
 
-
-### Bar
-
-
-### Horizontal bar
-
-
-### Area
-
-
-### Multi-line
-
-
-### Donut
-
-
-### Fallout
-
-
-### Flow
-
- 
+<!--
 Here is an example of what intelligent captions could look like:
 
 ![Intelligent captions for Line visualization including Seasonality, Min, Max, Spike, and Decline.](assets/captions.png)
+-->
 
 ## Actions
 
@@ -70,11 +56,16 @@ You can perform the following actions on intelligent captions:
 
 ### Copy to clipboard {#copy}
 
-You can copy the captions to a clipboard and paste them into a PowerPoint or other tools. Select ![Copy captions to clipboard](/help/assets/icons/Copy.svg) at the top right of the captions dialog.
+You can copy the captions to a clipboard and paste them into a PowerPoint or other tools.
+
+* To copy the captions, select ![Copy captions to clipboard](/help/assets/icons/Copy.svg) at the top right of the captions dialog.
 
 ### Show all or individual intelligent captions 
 
-To show all intelligent captions, select ![Show all intelligent captions](/help/assets/icons/Maximize.svg). To show individual intelligent captions, one by one, select ![Show individiual intelligent captions](/help/assets/icons/Minimize.svg).
+You can show all or individual intelligent captions.
+
+* To show all intelligent captions, select ![Show all intelligent captions](/help/assets/icons/Maximize.svg). 
+* To show individual intelligent captions, one by one, select ![Show individiual intelligent captions](/help/assets/icons/Minimize.svg).
 
 ### Edit display {#edit}
 
