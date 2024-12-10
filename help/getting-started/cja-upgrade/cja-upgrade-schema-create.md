@@ -1,6 +1,6 @@
 ---
-title: Create a schema for Customer Journey Analytics
-description: Learn about the recommended path when upgrading from Adobe Analytics to Customer Journey Analytics
+title: Create a custom schema for Customer Journey Analytics
+description: Learn how to create a custom schema for Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 ---
-# Create an XDM schema to use with Customer Journey Analytics
+# Create a custom schema to use with your Customer Journey Analytics Web SDK implementation
 
 >[!NOTE]
 > 
@@ -18,15 +18,15 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 
 >[!IMPORTANT]
 >
->Before you begin creating your XDM schema, work with your data team and other stakeholders throughout your organization to identify your organization's ideal schema design for Customer Journey Analytics and the other Adobe Experience Platform applications you use. For more information, see [Architect your schema for use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+>Before you begin creating your custom schema, work with your data team and other stakeholders throughout your organization to identify your organization's ideal schema design for Customer Journey Analytics and the other Adobe Experience Platform applications you use. For more information, see [Architect your schema for use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
-Adobe recommends creating an Experience Data Model (XDM) schema when upgrading to Customer Journey Analytics. An XDM schema allows for a streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use. When changes to the schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating. 
+Adobe recommends creating a custom Experience Data Model (XDM) schema to use with the Web SDK when upgrading to Customer Journey Analytics. A custom schema allows for a streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use. When changes to the schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating. 
 
 ## Create the schema
 
-The XDM schema you define represents the model of the data that you collect into Adobe Experience Platform. 
+The custom schema you define for your Web SDK implementation represents the model of the data that you collect into Adobe Experience Platform. 
 
-To create a schema:
+To create a custom schema:
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
@@ -34,7 +34,7 @@ To create a schema:
 
 1. Select **[!UICONTROL Create schema]**. 
  
-1. In the Select a class step of the Create schema wizard: 
+1. In the **[!UICONTROL Select a class]** step of the Create schema wizard: 
 
    1. Select **[!UICONTROL Experience Event]**.
 
@@ -55,11 +55,11 @@ To create a schema:
 
    1. Select **[!UICONTROL Finish]**.
 
-1. In the [!UICONTROL **Structure**] tab of your schema:
-    
-   1. In the **[!UICONTROL Field groups]** section, select **[!UICONTROL + Add]**.
+1. Add all field groups that contain any fields that you want to include in your schema.
 
-      Field groups are reusable collections of objects and attributes that allow you to easily extend your schema.
+   Field groups are reusable collections of objects and attributes that allow you to easily extend your schema.
+
+   1. In the **[!UICONTROL Field groups]** section, select **[!UICONTROL + Add]**.
 
       ![Add field group](assets/add-field-group-button.png)
 
@@ -71,9 +71,21 @@ To create a schema:
 
       ![AEP Web SDK ExperienceEvent fieldgroup preview](assets/aepwebsdk-experiencevent-preview.png)
 
-      Select **[!UICONTROL Back]** to close the preview.      
+      Select **[!UICONTROL Back]** to close the preview.   
+
+   1. (Optional) Select any additional field groups that you want to include.   
 
    1. Select **[!UICONTROL Add field groups]**.
+
+1. (Optional) If you have custom fields that you want to include in your schema, create a custom field group and add the custom fields to the field group. 
+
+   1. In the **[!UICONTROL Field groups]** section, select **[!UICONTROL + Add]**.
+
+      ![Add field group](assets/add-field-group-button.png) 
+
+   1. In the [!UICONTROL Add fields groups] dialog, select **[!UICONTROL Create new field group]**.
+
+   1. Specify a display name and optional description, then select **[!UICONTROL Add field groups]**. 
 
 1. Select **[!UICONTROL +]** next to your schema name in the [!UICONTROL Structure] panel.
 

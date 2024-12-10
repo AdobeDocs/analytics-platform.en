@@ -3,6 +3,7 @@ description: How to ask data analysis questions of Customer Journey Analytics do
 title: Data Analysis AI Assistant in Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
+feature: AI Tools
 hidefromtoc: yes
 hide: yes
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
@@ -73,7 +74,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 4. Ensure that the selected data view for the panel is the data view that was enabled for AI Assistant use for Alpha testing (reach out in the Alpha slack channel if you are unsure)
 
-5. Click the AI Assistant chat icon at the top right.
+5. Click the AI Assistant chat icon at the top right. Note: If you do not see the chat icon in the top right, please reach out to your Admin and have them follow [these instructions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/ai-assistant#feature-access) to enable the "AI Assistant: Product Knowledge" and "AI Assistant: Data Analysis" in Admin Console. 
 
    ![AI Assistant icon](/help/assets/ai-asst-icon.png)
 
@@ -144,7 +145,7 @@ Here are some examples of common prompts, and which visualization the AI Assiste
 
 ## Prompting best practices
 
-The AI Assistant processes the context provided by each user prompt and tries to respond intelligently with the most appropriate visualization as well as components in a freeform table. However, the AI Assistant's response can vary based on the specific words and phrases used in a prompt, so slight changes in language can lead to different results. Here’s how to make the most of it: <ul><li>Be Specific: Include exact terms (like “last month’s sales in California”) to narrow down the response.</li><li>Use Clear Metrics and Filters: Adding specific metrics (like “Revenue”), dimensions (e.g. "website name"), filters (such as “iPhone users”), and date ranges (like "last three months") helps the AI Assistant focus on the right data.</li><li>Ask Direct Questions: Phrasing questions directly, like “What is the average revenue by product category this year?” makes it easier for the AI Assistant to provide clear, relevant insights.</li></ul>
+The AI Assistant processes the context provided by each user prompt and tries to respond intelligently with the most appropriate visualization as well as components in a freeform table. However, the AI Assistant's response can vary based on the specific words and phrases used in a prompt, so slight changes in language can lead to different results. Here's how to make the most of it: <ul><li>Be Specific: Include exact terms (like "last month's sales in California") to narrow down the response.</li><li>Use Clear Metrics and Filters: Adding specific metrics (like "Revenue"), dimensions (e.g. "website name"), filters (such as "iPhone users"), and date ranges (like "last three months") helps the AI Assistant focus on the right data.</li><li>Ask Direct Questions: Phrasing questions directly, like "What is the average revenue by product category this year?" makes it easier for the AI Assistant to provide clear, relevant insights.</li></ul>
 
 Please review the below table of example terms and phrases you can use in prompts with Data visualization in AI Assistant, along with the types of responses you can expect. These examples are designed to help you get familiar with how specific words or structures can influence the AI Assistant's output, ensuring more precise and valuable insights. Please note that the AI Assistant uses Generative AI, so visualizations or selected data may vary slightly across similar prompts.
   
@@ -174,4 +175,4 @@ Following the thumbs up/down selection, please make a selection for the relevant
 
 ## Questions and Contact
 
-* Send questions and feedback in the Alpha slack channel: #aep-cja-ai-assistant-testers ???
+* Send questions and feedback in the Alpha slack channel: #cja-assistant-data-alpha

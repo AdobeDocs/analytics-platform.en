@@ -26,7 +26,7 @@ When you want to use quick filters, please note that:
 
 ## Create
 
-Quick filters apply to panels. You can create one ore more quick filters for every panel in your Workspace project. Any user in Analysis Workspace can create quick filters. 
+Quick filters apply to panels. You can create one or more quick filters for every panel in your Workspace project. Any user in Analysis Workspace can create quick filters. 
 
 To create a quick filter:
 
