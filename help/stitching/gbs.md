@@ -4,6 +4,7 @@ description: Explanation of graph based stitching
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
+exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
 ---
 # Graph based stitching
 

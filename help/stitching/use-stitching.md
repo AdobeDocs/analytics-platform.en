@@ -4,6 +4,7 @@ description: How to use stitching
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
+exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
 ---
 # Use stitching
 
@@ -65,6 +66,3 @@ Alternatively, you can set up and use stitching through the Customer Journey Ana
 Once the data view is set up, the cross-channel analysis in Customer Journey Analytics is just like any other analysis in Customer Journey Analytics, except now the data operates across channels and devices.
 
 -->
-
-
-

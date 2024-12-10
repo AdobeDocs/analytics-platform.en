@@ -4,6 +4,7 @@ description: Explanation of field based stitching
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
+exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
 ---
 # Field based stitching
 
@@ -150,4 +151,3 @@ The following limitations apply specifically to field-based stitching:
 - The transient ID field should contain a single type of ID (IDs from a single namespace). For instance, the transient ID field should not contain a combination of login IDs and email IDs.
 - If multiple events occur with the same timestamp for the same persistent ID, but with different values in the transient ID field, stitching selects the ID based on alphabetical order. So, if persistent ID A has two events with the same timestamp and one of the events specifies Bob and the other specifies Ann, stitching selects Ann.
 - Be cautious of scenarios where the transient IDs contain placeholder values, for example `Undefined`. See the [FAQ](faq.md) for more information.
-
