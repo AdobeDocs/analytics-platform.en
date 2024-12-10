@@ -7,7 +7,7 @@ role: User
 ---
 # Intelligent captions
 
-Intelligent captions use advanced Machine Learning and Generative AI to provide valuable natural-language insights for Workspace visualizations. The initial release provides auto-generated insights for the [Line](line.md) visualization. Other visualizations follow. 
+Intelligent captions use advanced Machine Learning and Generative AI to provide valuable natural-language insights for Workspace visualizations. 
 
 Intelligent captions are geared towards:
 
