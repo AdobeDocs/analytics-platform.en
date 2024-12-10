@@ -37,7 +37,6 @@ When you create or edit a derived field, you use the derived field interface.
 ![Screenshot of the Derived field dialog](assets/derived-field-dialog.png)
 
 
-![ProgramOverview](/help/assets/icons/ProgramOverview.svg)
 
 |  | Name | Description |
 |---------|----------|--------|
@@ -182,6 +181,8 @@ This function template uses a collection of rules to identify site bounces.
 
 +++ Details
 
+{{select-package}}
+
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
 ![Screenshot of the Bounces rule builder](assets/function-template-bounces.png)
@@ -193,6 +194,8 @@ To use the template, you have to specify the correct parameters for each functio
 This function template combines two values into one.
 
 +++ Details
+
+{{select-package}}
 
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
@@ -206,6 +209,8 @@ This function template provides a readable dataset name.
 
 +++ Details
 
+{{select-package}}
+
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
 ![Screenshot of the Friendly Dataset Name rule builder](assets/function-template-friendly-dataset-name.png)
@@ -217,6 +222,8 @@ To use the template, you have to specify the correct parameters for each functio
 This function template creates a simple page name.
 
 +++ Details
+
+{{select-package}}
 
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
@@ -230,6 +237,8 @@ This function template classifies key times of the year.
 
 +++ Details
 
+{{select-package}}
+
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
 ![Screenshot of the Holiday Season rule builder](assets/function-template-holiday-season.png)
@@ -241,6 +250,8 @@ To use the template, you have to specify the correct parameters for each functio
 This function template sets custom monthly goals.
 
 +++ Details
+
+{{select-package}}
 
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
@@ -254,6 +265,8 @@ This function template converts a limited list to an array.
 
 +++ Details
 
+{{select-package}}
+
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
 ![Screenshot of the Get All Values in Delimited list rule builder](assets/function-template-get-all-values-in-delimited-list.png)
@@ -265,6 +278,8 @@ To use the template, you have to specify the correct parameters for each functio
 This function template gets the first value in a delimited list.
 
 +++ Details
+
+{{select-package}}
 
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
@@ -278,6 +293,8 @@ This function template gets the last value in a delimited list.
 
 +++ Details
 
+{{select-package}}
+
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
 ![Screenshot of the Get Last Value in Delimited List rule builder](assets/function-template-get-last-value-in-delimited-list.png)
@@ -289,6 +306,8 @@ To use the template, you have to specify the correct parameters for each functio
 This function template extracts the domain name using a regular expression.
 
 +++ Details
+
+{{select-package}}
 
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
@@ -302,6 +321,8 @@ This function template extracts query string values.
 
 +++ Details
 
+{{select-package}}
+
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
 ![Screenshot of the Get Query String Parameter rule builder](assets/function-template-get-query-string-parameter.png)
@@ -313,6 +334,8 @@ To use the template, you have to specify the correct parameters for each functio
 This function template transitions reporting from one field to another field.
 
 +++ Details
+
+{{select-package}}
 
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
@@ -326,6 +349,8 @@ This function template implements light bot identification.
 
 +++ Details
 
+{{select-package}}
+
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
 ![Screenshot of the Simple Bot Detection rule builder](assets/function-template-simple-bot-detection.png)
@@ -338,6 +363,8 @@ This function template identifies last link clicked in a session.
 
 +++ Details
 
+{{select-package}}
+
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
 ![Screenshot of the Exit Link rule builder](assets/function-template-exit-link.png)
@@ -349,6 +376,8 @@ To use the template, you have to specify the correct parameters for each functio
 This function template flags common download links.
 
 +++ Details
+
+{{select-package}}
 
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
@@ -1695,7 +1724,7 @@ Use the Summarize function for event, session or person scope based calculations
 
 <!-- TRIM -->
 
-### Trim
+### Trim {#trim}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -1817,7 +1846,7 @@ You create a  `Store Identifier` derived field. You use the [!UICONTROL TRIM] fu
 
 <!-- URL PARSE -->
 
-### URL Parse
+### URL Parse {#urlparse}
 
 <!-- markdownlint-disable MD034 -->
 

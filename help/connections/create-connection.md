@@ -189,6 +189,16 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_matchingkey"
+>title="Matching key"
+>abstract="Select how to join: based on a matching key or a matching container.<br/><br/>**[!UICONTROL Matching key]**: Select a field to join on with one of the event datasets. If this list is empty you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Matching container]**: Select a container to use to join with one of the event datasets. If this list is empty you probably haven't configured one or more containers."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 <!-- markdownlint-disable MD034 -->
 

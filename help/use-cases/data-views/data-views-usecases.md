@@ -18,6 +18,10 @@ See the [Use binding dimensions metrics](binding-dimensions-metrics.md) use case
 
 See the [Use summary data](summary-data.md) use case for more details.
 
+## BI extension use cases
+
+See the [BI extension use cases](bi-extension-usecases.md) on how to accomplish a number of use cases using the Customer Journey Analytics BI extension.
+
 ## Create a metric from a string schema field {#string}
 
 For example, when creating a data view, you could create an [!UICONTROL Orders] metric from a [!UICONTROL Page Title] schema field that is a string.

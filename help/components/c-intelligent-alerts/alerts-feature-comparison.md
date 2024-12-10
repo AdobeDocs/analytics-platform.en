@@ -3,6 +3,7 @@ description: Learn how alerts differ in Customer Journey Analytics from Adobe An
 title: Alerts feature comparison Customer Journey Analytics and Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
+exl-id: 04e819c4-9fb5-4459-9f8b-40d78385ed90
 ---
 # Alerts feature comparison
 
@@ -51,10 +52,3 @@ In Adobe Analytics, the following options are available:
 * Open a project in Analysis Workspace, then select **[!UICONTROL Components]** > **[!UICONTROL Create alert]**.
    
 * Open a project in Analysis Workspace, then use the following shortcut: **[!UICONTROL *ctrl*]** + **[!UICONTROL *shift*]** + **[!UICONTROL *a*]** (Windows) or **[!UICONTROL *cmd*]** + **[!UICONTROL *shift*]** + **[!UICONTROL *a*]** (macOS).
-
-
-
-  
-
-
-

@@ -1,6 +1,6 @@
 ---
 title: Customer Journey Analytics BI extension
-description: Learn how you can use Power BI or Tableau to access data views using the Customer Journey Analytics BI extension.
+description: Learn how you can use Power BI or Tableau Desktop to access data views using the Customer Journey Analytics BI extension.
 solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
@@ -10,7 +10,7 @@ exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
 
 {{select-package}}
 
-The [!DNL Customer Journey Analytics BI extension] enables SQL access to the [data views](./data-views.md) that you have defined in Customer Journey Analytics. Your data engineers and analysts might be more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that Customer Journey Analytics users are using when creating their Analysis Workspace projects.
+The [!DNL Customer Journey Analytics BI extension] enables SQL access to the [data views](./data-views.md) that you have defined in Customer Journey Analytics. Your data engineers and analysts might be more familiar with Power BI,  Tableau Desktop, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that Customer Journey Analytics users are using when creating their Analysis Workspace projects.
 
 Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) is the SQL interface to data available in the data lake of Experience Platform. With the [!DNL Customer Journey Analytics BI extension] enabled, the functionality of [!DNL Query Service] is extended to see your Customer Journey Analytics data views as tables or views in a [!DNL Query Service] session. As a result, business intelligence tools that use [!DNL Query Service] as their PostgresSQL interface benefit seamlessly from this extended functionality.
 
@@ -22,15 +22,28 @@ The main benefits are:
 
 ## Prerequisites
 
-To use this functionality, you must have: 
-
+To use this functionality, you can use expiring or non-expiring credentials to connect BI tools to the [!DNL Customer Journey Analytics BI extension]. The [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) provides more information on setting expiring credentials or non-expiring credentials.
+Below are additional steps to set up CJA Permissions
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
 
-* Granted access to Experience Platform and Customer Journey Analytics.
-* Granted Product admin access to Customer Journey Analytics, so you can view, edit, update, or delete connections and data views.
-* Granted access to the data views you want to access.
-* Granted access to the CJA BI extension.
-* Use expiring on non-expiring credentials to connect BI tools to the [!DNL Customer Journey Analytics BI extension]. The [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) provides more information on setting expiring credentials or non-expiring credentials.
+### Expiring credentials
+
+To use expiring credentials, you can:
+
+* Grant access to Experience Platform and Customer Journey Analytics. 
+* Grant Product admin access to Customer Journey Analytics, so you can view, edit, update, or delete connections and data views.
+
+Or you can: 
+
+* Grant access to the data views you want to access.
+* Grant access to the Customer Journey Analytics BI extension.
+
+### Non-Expiring credentials
+
+To use non-expiring credentials: 
+
+* Create non-expiring credentials in Experience Platform.
+* Grant access to the non-expiring credentials by following the steps mentioned in [Expiring Credentials](#Expiring-credentials).
 
 See [Customer Journey Access Control](../technotes/access-control.md) for more information, specifically the [Product Admin additional permissions](../technotes/access-control.md#product-admin-additional-permissions) and [Customer Journey Analytics Permissions in the Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 
@@ -81,7 +94,7 @@ See the [Query Editor UI guide](https://experienceleague.adobe.com/en/docs/exper
 
 ### BI tools
 
-Currently, the [!DNL Customer Journey Analytics BI extension] is supported and tested for Power BI and Tableau only. Other BI tools using the PSQL interface might work as well, but are not yet supported officially.
+Currently, the [!DNL Customer Journey Analytics BI extension] is supported and tested for Power BI and Tableau Desktop only. Other BI tools using the PSQL interface might work as well, but are not yet supported officially.
 
 +++ Power BI
 
@@ -126,7 +139,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
 +++
 
-+++Tableau
++++Tableau Desktop
 
 1. Look up the details of your PostgresSQL credentials in Adobe Experience Platform:
 
@@ -136,9 +149,9 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
    1. Select the ` cja` **[!UICONTROL **Database**]**.
 
-   1. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Tableau.
+   1. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Tableau Desktop.
 
-1. In Tableau:
+1. In Tableau Desktop:
 
    1. Select **[!UICONTROL **More**]** from **[!UICONTROL **To a Server**]** in the left rail.
 
@@ -173,6 +186,8 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 +++
 
 See [Connect clients to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview) for an overview of and more information on the various tools available.
+
+See [Use cases](/help/use-cases/data-views/bi-extension-usecases.md) on how to accomplish a number of use cases using the Customer Journey Analytics BI extension
 
 ## Functionality
 

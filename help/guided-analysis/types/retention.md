@@ -6,7 +6,16 @@ keywords: product analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
 ---
-# Retention analysis
+# Retention analysis {#retention}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_retention_button"
+>title="Retention"
+>abstract="Measure how many users continue to use your product."
+
+<!-- markdownlint-enable MD034 -->
 
 The ![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Retention]** analysis measures how users continue to use your product over time, which can help you understand your product market fit. The analysis counts users based on two important events:
 

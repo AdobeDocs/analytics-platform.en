@@ -71,7 +71,7 @@ Select your building blocks:
 * **[!UICONTROL Analyze]** - specify a dimension (orange)
 * **[!UICONTROL by]** - specify a metric (green)
 * **[!UICONTROL filter by]** - specify a filter (blue)
-* **[!UICONTROL on]** - specify a data range (purple).
+* **[!UICONTROL on]** - specify a date range (purple).
 
 You have to select at least one dimension and one metric for the visualization to function properly.
 
@@ -108,7 +108,7 @@ Other useful hints pop up in the [!UICONTROL Quick Insights Builder], some of th
 
     ![The Quick Insights Panel notification displayed after you select the Help icon.](assets/qibuilder4.png)
 
-* You can analyze multiple dimensions and metrics, combine or compare filters, and specify a data range:
+* You can analyze multiple dimensions and metrics, combine or compare filters, and specify a date range:
 
   ![Quick Insights Builder Result](assets/qibuilder-result.png)
 
@@ -118,7 +118,7 @@ Other useful hints pop up in the [!UICONTROL Quick Insights Builder], some of th
 
   * **[!UICONTROL filter by]**: You can add up to 2 more filters. For example, add Bookings as a filter and combine that filter with Frequent Bookers and First Time Fliers filters you compare. See ➏, ➐, and ➑.
 
-  * on: You can specify the data range. See ➒.
+  * on: You can specify the date range. See ➒.
 
 ## Known limitations
 

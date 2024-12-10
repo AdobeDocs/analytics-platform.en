@@ -6,7 +6,16 @@ keywords: product analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
 ---
-# [!UICONTROL Frequency] analysis
+# [!UICONTROL Frequency] analysis {#frequency}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_frequency_button"
+>title="Frequency"
+>abstract="View distribution of repeat user activity for specific events."
+
+<!-- markdownlint-enable MD034 -->
 
 The ![Frequency](/help/assets/icons/Histogram.svg) **[!UICONTROL Frequency]** analysis groups event data by how often events occur in your product. The vertical axis of this analysis contains buckets that represent the frequency of the event. The horizontal axis measures the number of users or sessions for each bucket.
 

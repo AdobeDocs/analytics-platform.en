@@ -6,7 +6,16 @@ keywords: product analytics
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
 ---
-# [!UICONTROL Timeline] analysis
+# [!UICONTROL Timeline] analysis {#timeline}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_timeline_button"
+>title="Timeline"
+>abstract="Observe user-level session events over time."
+
+<!-- markdownlint-enable MD034 -->
 
 The ![Timeline](/help/assets/icons/Timeline.svg) **[!UICONTROL Timeline]** analysis allows you to observe user-level session events over time to find experience patterns and tell better user stories. The left rail allows you to filter the stream by property values and segments. The right rail allows you to select from a randomized list of users that match the filter criteria. The center area shows the stream for the selected user by session, consisting of timestamp, property values, and duration. Duration is not available for the last event in a given session.
 

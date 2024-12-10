@@ -6,7 +6,16 @@ keywords: product analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
 ---
-# [!UICONTROL Release impact] analysis
+# [!UICONTROL Release impact] analysis {#release-impact}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_releaseimpact_button"
+>title="Release impact"
+>abstract="Compare performance across equal periods pre- and post-release."
+
+<!-- markdownlint-enable MD034 -->
 
 The ![Release](/help/assets/icons/Release.svg) **[!UICONTROL Release impact]** analysis shows a comparison of how key indicators performed before and after a given date. The horizontal axis of this report is a time interval, while the vertical axis measures the desired key indicators. A vertical bar in the middle of the chart represents the date that you want to compare before and after. This date typically represents a notable change to the product that you want to measure against, such as an update to the product or a campaign launch.
 

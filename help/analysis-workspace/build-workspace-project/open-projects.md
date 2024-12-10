@@ -3,6 +3,7 @@ description: Learn about the options to open projects.
 title: Open projects
 feature: Workspace Basics
 role: User
+exl-id: 5ef235e2-50d8-4202-bad7-06090102cf73
 ---
 # Open projects
 

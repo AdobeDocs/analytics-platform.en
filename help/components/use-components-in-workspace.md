@@ -114,7 +114,7 @@ Each panel includes a date range by default. There are multiple ways to update a
 
       ![Drop a date range](assets/add-date-range.gif)
 
-   * A metric or dimension in a Freeform table visualization. See [Use data ranges](/help/components/date-ranges/overview.md#use-date-ranges) for more information.
+   * A metric or dimension in a Freeform table visualization. See [Use date ranges](/help/components/date-ranges/overview.md#use-date-ranges) for more information.
 
 For more information about how to use and manage date ranges in Analysis Workspace, see [Date ranges overview](/help/components/date-ranges/overview.md).
 

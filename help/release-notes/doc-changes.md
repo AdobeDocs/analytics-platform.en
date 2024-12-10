@@ -13,7 +13,12 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **November 2024** | |
+| BI extension use cases | Documentation of several [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md) for BI tools like Power BI Desktop and Tableau Desktop. |
+| Stitching and privacy requests | Added notice on [upcoming changes in the unstitching process](/help/stitching/faq.md#frequently-asked-questions) that are the result of privacy requests. | 
 | **October 2024** | |
+| Shared devices | Added a [use case article](/help/use-cases/stitching/shared-devices.md) that provides context on shared devices, how to handle and mitigate data from shared devices using stitching, and understand shared device exposure in your data using Query Service. |
+| New information about Request factors in Analysis Workspace Performance | A new [Request factors](/help/technotes/optimizing-performance.md#request-factors) section in the [Optimize Analysis Workspace performance](/help/technotes/optimizing-performance.md) article explains how requests are processed and the various factors that influence processing times. |
 | Workspace and components  | Refreshed the documentation on Analysis Workspace projects (projects, visualizations, and panels) and conponents (annotations, dimensions, (calculated) metrics, filters, date ranges, alerts, scheduled projects and audiences). | 
 | Guided analysis | Updated documentation with the availability of [Guided Analysis](/help/guided-analysis/overview.md) from within Analysis Workspace. |
 | **September 2024** | |
@@ -107,7 +112,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **June 2023** | | 
 | Cross-channel analysis and stitching | In anticipation of the upcoming changes to enable stitching and to further clarify how cross-channel analysis can be elevated using stitching, documentation related to Cross-Channel Analytics functionality is edited to refer to [cross-channel analysis](../use-cases/cross-channel/cross-channel.md) as the Customer Journey Analytics capability and use case, and [Stitching](../stitching/overview.md) as an important functionality to accomplish this. |
 | PowerBI & Tableau access to Customer Journey Analytics data views | The Customer Journey Analytics BI extension enables SQL access to data views that you have defined in Customer Journey Analytics. [Learn more](/help/data-views/bi-extension.md)|
-| Adobe Journey Optimizer data views | Customer Journey Analytics Admins have access to some extra data views in Customer Journey Analytics, entitled "AJO Data view (Sandbox-name)". [Learn more](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channel-report/reporting-configuration). | 
+| Adobe Journey Optimizer data views | Customer Journey Analytics Admins have access to some extra data views in Customer Journey Analytics, entitled "AJO Data view (Sandbox-name)". [Learn more](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration). | 
 | Currency conversion | Updated documentation for [currency conversion](../data-views/component-settings/format.md#currency) support. | 
 | Calculated metrics updates | The following updates were made to calculated metrics documentation in order to align it with current Customer Journey Analytics functionality: <ul><li>Updated the list of [default calculated metrics](/help/components/calc-metrics/default-calcmetrics.md) available in Customer Journey Analytics</li><li>Updated screen shots and procedures in various calculated metrics articles </li></ul> |
 | **May 2023** | |

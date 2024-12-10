@@ -1,8 +1,7 @@
 ---
 title: Product usage opt-out settings
 description: Manage opt-out settings for individual users within your organization.
-hide: yes
-hidefromtoc: yes
+exl-id: 0ea24582-bab8-4a76-ac00-7c265423e8bb
 ---
 # Product usage opt-out settings {#product-usage-opt-out-settings}
 
