@@ -7,7 +7,7 @@ role: User
 ---
 # Intelligent captions
 
-Intelligent captions use advanced Machine Learning and Generative AI to provide valuable natural-language insights for Workspace visualizations. The initial release provides auto-generated insights for the [Line](line.md) visualization. Other visualizations will follow. 
+Intelligent captions use advanced Machine Learning and Generative AI to provide valuable natural-language insights for Workspace visualizations. The initial release provides auto-generated insights for the [Line](line.md) visualization. Other visualizations follow. 
 
 Intelligent captions are geared towards:
 
@@ -16,7 +16,7 @@ Intelligent captions are geared towards:
 
 ## Launch intelligent captions {#launch}
 
-To launch auto-generated intelligent captions for a visualization, select ![Intelligent captions](/help/assets/icons/AI.svg) at the top right of the visualization. This will generate natural-language insights. 
+To launch auto-generated intelligent captions for a visualization, select ![Intelligent captions](/help/assets/icons/AI.svg) at the top right of the visualization. This selection generates natural-language insights. 
 
 ![Launch Analysis window showing the Intelligent captions for Product Views Trend. ](assets/intelligent-captions.gif)
 
