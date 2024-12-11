@@ -25,7 +25,7 @@ If you would like to rename dataset ID dimension items, you can use a lookup dat
 
 +++
 
-### Replay
+## Replay
 
 +++ How far back does stitching replay visitors?
 
