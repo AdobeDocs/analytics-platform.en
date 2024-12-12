@@ -22,7 +22,7 @@ After you have enough historical data using the Experience Platform Web SDK and 
 
 >[!NOTE]
 >
->The upgrade steps described in this section are not practical for your organization, use the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/) to dynamically generate upgrade steps that are tailored to your organization's unique circumstances.
+>If the upgrade steps described in this section are not practical for your organization, use the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/) to dynamically generate upgrade steps that are tailored to your organization's unique circumstances.
 
 ### High-level recommended upgrade process
 
@@ -108,7 +108,7 @@ Each step provides a high-level explanation of a more detailed process. Follow t
 
    +++
 
-1. Validate that your Web SDK implementation is sending data to a dataset.
+1. [Validate that your Web SDK implementation is sending data to a dataset](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md).
 
 1. [Create a connection in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-connection.md).
 
@@ -128,7 +128,7 @@ Each step provides a high-level explanation of a more detailed process. Follow t
 
    Derived fields are an important aspect of the real-time reporting in Customer Journey Analytics. A derived field allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. 
    
-   One use for derived fields is to define a derived Marketing Channel field that determines the proper marketing channel based on one or more conditions (for example URL parameter, page URL, page name).
+   One use for derived fields is to define a derived Marketing Channel field that determines the proper marketing channel based on one or more conditions (for example, URL parameter, page URL, or page name).
    
    Use [the marketing channels function template](/help/data-views/derived-fields/derived-fields.md#marketing-channels) in derived fields to quickly create a derived field for marketing channels.
 
@@ -140,7 +140,7 @@ Each step provides a high-level explanation of a more detailed process. Follow t
    >
    >Use the following steps if you have not previously created an Analytics source connector. 
    >
-   >If you are already using the Analytics source connector with Customer Journey Analytics, follow the steps in [Move from the Analytics source connector to the Web SDK for Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
+   >If you are already using the Analytics source connector with Customer Journey Analytics, follow the steps in [Transition from the Analytics source connector to the Web SDK for Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
 
    1. [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
    
