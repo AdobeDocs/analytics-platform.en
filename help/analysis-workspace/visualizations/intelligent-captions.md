@@ -7,7 +7,7 @@ role: User
 ---
 # Intelligent captions
 
-Intelligent captions uses advanced Generative AI to provide key insights for the most frequently used Workspace visualizations in natural language. 
+The Intelligent captions functionality uses advanced Generative AI to provide key insights for the most frequently used Workspace visualizations in natural language. 
 
 Intelligent captions are geared towards:
 
@@ -116,7 +116,7 @@ The following parameters govern access to Intelligent captions:
 
 * **Solution access**: The Intelligent captions feature is available in Customer Journey Analytics, but not in Adobe Analytics.
 
-* **Contractual access**: If you are not able to use Intelligent captions, please contact your organization's administrator or Adobe Account Representative (Admin). Before you can use Intelligent captions in your organization, you must agree to certain Gen AI-related legal terms.
+* **Contractual access**: If you are not able to use Intelligent captions, please contact your organization's administrator or Adobe Account Representative (Admin). Before you can use Intelligent captions in your organization, you must agree to certain Generative AI related legal terms.
 
 * **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Intelligent Captions]** permission determines access. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
    1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**.
