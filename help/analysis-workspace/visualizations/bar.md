@@ -14,7 +14,7 @@ The bar visualization has a standard and stacked option.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_bar_button"
+>id="workspace_bar_button"
 >title="Bar"
 >abstract="Create a bar visualization to represent various values across one or more metrics."
 
@@ -32,7 +32,7 @@ A granularity drop-down in the visualization settings lets you change a trended 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_barstacked_button"
+>id="workspace_barstacked_button"
 >title="Bar stacked"
 >abstract="Create a bar visualization to represent various values across one or more stacked metrics."
 

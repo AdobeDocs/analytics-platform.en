@@ -10,7 +10,7 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_project_countrepeatinstances"
+>id="workspace_project_countrepeatinstances"
 >title="Count repeat instances"
 >abstract="Specifies whether repeat instances are counted in reports.<br/><br/>Note: this setting does not apply to Flow or Fallout visualizations."
 
@@ -53,7 +53,7 @@ Now that you have created a Blank Workspace project, ensure you are familiar wit
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_project_repeatinstances"
+>id="workspace_project_repeatinstances"
 >title="Count repeat instances"
 >abstract="Specifies whether repeat instances are counted in reports.<br/>Note: this setting does not apply to Flow or Fallout visualizations."
 

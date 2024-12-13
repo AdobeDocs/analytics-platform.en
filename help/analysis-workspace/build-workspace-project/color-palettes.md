@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_project_colorpalette"
+>id="workspace_project_colorpalette"
 >title="Project color palette"
 >abstract="Change the color palette used in this project."
 

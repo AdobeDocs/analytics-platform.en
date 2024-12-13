@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_scatter_button"
+>id="workspace_scatter_button"
 >title="Scatter"
 >abstract="Create a scatter visualization that shows the relationship between dimension items and up to three metrics."
 

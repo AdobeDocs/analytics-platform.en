@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_releaseimpact_button"
+>id="workspace_guidedanalysis_releaseimpact_button"
 >title="Release impact"
 >abstract="Compare performance across equal periods pre- and post-release."
 
