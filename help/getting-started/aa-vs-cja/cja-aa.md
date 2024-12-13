@@ -62,7 +62,7 @@ The following table lists features that are available in Customer Journey Analyt
 | **Reporting API access** | Full Support; Available through the [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/). |
 | **Scheduled reports/projects** | Full Support |
 | **Segments** | Full Support. Now called "Filters" - note that any existing segments in traditional Analysis Workspace are not ported to Customer Journey Analytics. |
-| **Streaming Media Collection Add-on** | Streaming media data are available using the Analytics source connector as part of the Media Concurrent Viewers panel and the Media Playback Time Spent panel in Workspace. |
+| **Streaming Media Collection** | Streaming media data are available using the Analytics source connector as part of the Media Concurrent Viewers panel and the Media Playback Time Spent panel in Workspace. |
 | **Summary-level data sources** | Full support |
 | **Virtual report suites** | Full Support. Now called [Data views](/help/data-views/create-dataview.md). |
 | **Virtual report suite component curation** | Full Support. Now part of Data views. |
