@@ -10,7 +10,7 @@ exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_sectionheader_button"
+>id="workspace_sectionheader_button"
 >title="Section header"
 >abstract="Add a section header to a panel."
 

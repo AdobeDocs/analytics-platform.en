@@ -10,7 +10,7 @@ exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_project_addnotes"
+>id="workspace_project_addnotes"
 >title="Add notes"
 >abstract="Add notes about the project version being saved. These notes will be stored with the version and accessible under the **[!UICONTROL Project]** > **[!UICONTROL Open previous version]** menu."
 

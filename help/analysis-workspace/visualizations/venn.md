@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_venn_button"
+>id="workspace_venn_button"
 >title="Venn"
 >abstract="Create a venn chart visualization to quickly compare visually two elements and the size of their overlap."
 

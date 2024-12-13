@@ -14,7 +14,7 @@ The horizontal bar visualization has a standard and stacked option.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_horizontalbar_button"
+>id="workspace_horizontalbar_button"
 >title="Horizontal bar"
 >abstract="Create a horizontal bar visualization to represent various values across one or more metrics."
 
@@ -30,7 +30,7 @@ Thie ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONT
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_horizontalbarstacked_button"
+>id="workspace_horizontalbarstacked_button"
 >title="Horizontal bar stacked"
 >abstract="Create a horizontal bar visualization to represent various values across one or more stacked metrics."
 

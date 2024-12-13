@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_text_button"
+>id="workspace_text_button"
 >title="Text"
 >abstract="Add a user-defined rich text visualization to your project."
 

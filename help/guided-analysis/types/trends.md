@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_trends_button"
+>id="workspace_guidedanalysis_trends_button"
 >title="Trends"
 >abstract="Measure user engagement over time."
 
