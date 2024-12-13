@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_treemap_button"
+>id="workspace_treemap_button"
 >title="Treemap"
 >abstract="Create a treemap visualization to show hierarchical (tree-structured) data with nested rectangles."
 

@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_blankpanel_button"
+>id="workspace_blankpanel_button"
 >title="Blank panel"
 >abstract="Show a selection of panels or visualizations that you can create to build a completely customized analysis."
 >additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Panels in Analysis Workspace"

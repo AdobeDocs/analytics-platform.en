@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_cohorttable_button"
+>id="workspace_cohorttable_button"
 >title="Cohort table"
 >abstract="Create a cohort visualization to group users based on completion of an event and analyze ongoing engagement and churn over time."
 
@@ -19,7 +19,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_cohorttable_panel"
+>id="workspace_cohorttable_panel"
 >title="Chohort table"
 >abstract="Group users based on completion of an event, then analyze their ongoing engagement and churn over time.<br/><br/>**Parameters**<br/>**Inclusion criteria**: The components used to define your initial visitor cohorts.<br/>**Return criteria**: The components used to determine if a visitor has returned."
 
