@@ -7,7 +7,7 @@ role: User
 ---
 # Intelligent captions
 
-Intelligent captions use advanced Machine Learning and Generative AI to provide valuable natural-language insights for Workspace visualizations. 
+Intelligent captions uses advanced Generative AI to provide key insights for the most frequently used Workspace visualizations in natural language. 
 
 Intelligent captions are geared towards:
 
@@ -27,7 +27,7 @@ Keep in mind that:
 
 * Captions are generated every time the underlying selected data changes in the table that powers the visualization. 
 
-* If there are multiple metrics in the table, captions are only generated for the first metric or the metric currently selected by the user.
+* If there are multiple metrics in an associated freeform table, captions are only generated for the first metric or the metric currently selected by the user. However, captions can be generated for multiple metrics for the line and area visualizations. 
 
 * If you save the project at a specific point, and re-load it later, the captions are auto-updated with new data. The same applies to scheduled projects and PDF files exported from a project.
 
@@ -39,7 +39,7 @@ Intelligent captions are supported on the following visualizations:
 * [Line](line.md) (including multi-line)
 * [Bar](bar.md)
 * [Horizontal bar](horizontal-bar.md)
-* [Area](area.md)
+* [Area](area.md) (including multiple Area lines)
 * [Donut](donut.md)
 * [Fallout](fallout/fallout-flow.md)
 * [Flow](c-flow/flow.md)
@@ -56,16 +56,16 @@ You can perform the following actions on intelligent captions:
 
 ### Copy to clipboard {#copy}
 
-You can copy the captions to a clipboard and paste them into a PowerPoint or other tools.
+You can copy the captions to a clipboard and paste them into a PowerPoint or other tools. You can copy individual captions in the one-by-one view, or you can copy all captions at once in the expanded caption view. 
 
 * To copy the captions, select ![Copy captions to clipboard](/help/assets/icons/Copy.svg) at the top right of the captions dialog.
 
 ### Show all or individual intelligent captions 
 
-You can show all or individual intelligent captions.
+You can show all captions at once in an expanded caption view, or you can show individual intelligent captions in a one-by-one view. 
 
 * To show all intelligent captions, select ![Show all intelligent captions](/help/assets/icons/Maximize.svg). 
-* To show individual intelligent captions, one by one, select ![Show individiual intelligent captions](/help/assets/icons/Minimize.svg).
+* To show individual intelligent captions, one-by-one, select ![Show individiual intelligent captions](/help/assets/icons/Minimize.svg).
 
 ### Edit display {#edit}
 
@@ -82,7 +82,7 @@ You can edit the display of captions, such as hiding or unhiding a particular ca
 
 ### Provide feedback
 
-You can provide feedback on the generated intelligent captions.
+You can provide feedback on the generated intelligent captions (feedback can only be provided in the expanded caption view).
 
 1. Select ![More actions](/help/assets/icons/More.svg) in the Intelligent captions dialog.
 
@@ -116,7 +116,7 @@ The following parameters govern access to Intelligent captions:
 
 * **Solution access**: The Intelligent captions feature is available in Customer Journey Analytics, but not in Adobe Analytics.
 
-* **Contractual access**: If you are not able to use Intelligent captions, please contact your organization's administrator or Adobe Account Representative. Before you can use Intelligent captions in your organization, you must agree to certain GenAI-related legal terms.
+* **Contractual access**: If you are not able to use Intelligent captions, please contact your organization's administrator or Adobe Account Representative (Admin). Before you can use Intelligent captions in your organization, you must agree to certain Gen AI-related legal terms.
 
 * **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Intelligent Captions]** permission determines access. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
    1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**.
