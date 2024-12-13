@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_activegrowth_button"
+>id="workspace_guidedanalysis_activegrowth_button"
 >title="Active growth"
 >abstract="Identify who is new, retained, returning, or dormant."
 

@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_shareprojects"
+>id="workspace_shareprojects"
 >title="Share projects"
 >abstract="You can share any of these project roles with other users in your organization."
 

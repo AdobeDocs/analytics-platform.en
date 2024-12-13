@@ -358,9 +358,12 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Cancel reporting requests](../reporting-activity-manager/reporting-activity-cancel-requests.md)
 
 + Stitching {#stitching}
-  + [Overview](../stitching/overview.md)
-  + [Create and manage stitched datasets](../stitching/stitching-ui.md)
-  + [Frequently Asked Questions](../stitching/faq.md)  
+  + [Overview](/help/stitching/overview.md)
+  + [Field based stitching](/help/stitching/fbs.md)
+  + [Graph based stitching](/help/stitching/gbs.md)
+  + [Use stitching](/help/stitching/use-stitching.md)
+  + [Create and manage stitched datasets](/help/stitching/stitching-ui.md)
+  + [Frequently Asked Questions](/help/stitching/faq.md)  
 
 + Adobe integrations {#integrations}
   + [Overview](/help/integrations/overview.md)

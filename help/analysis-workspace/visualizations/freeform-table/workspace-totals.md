@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_grandtotal"
+>id="workspace_freeformtable_grandtotal"
 >title="Grand Total"
 >abstract="Grand total is not supported for tables or breakdowns with static rows"
 

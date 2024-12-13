@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_funnel_button"
+>id="workspace_guidedanalysis_funnel_button"
 >title="Funnel"
 >abstract="Compare conversion rates between steps."
 
