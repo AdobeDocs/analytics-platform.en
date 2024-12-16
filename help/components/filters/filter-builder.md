@@ -19,7 +19,7 @@ exl-id: 160021f1-6942-4682-9114-d375307d9912
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filter_datapreview"
+>id="cja_components_filters_datapreview"
 >title="Data preview"
 >abstract="Compares the data of this filter with data of the data view. The preview percentage is based on the total number in the data view from the **last 90 days**.<br><br/>If the preview is not loading, your connection could still be backfilling."
 
