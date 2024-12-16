@@ -200,6 +200,46 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 
 ## Usage
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_keyusagemetrics"
+>title="Key usage metrics" 
+>abstract="Provide monthly and total data for core and historical reportable rows."
+
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_monthlyingestedrows"
+>title="Monthly ingested rows"
+>abstract="Measures the total number of records added to the system each month to provide insights into data growth and ingestion rates."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_monthlyreportablerows"
+>title="Monthly reportable rows"
+>abstract="Tracks the number of rows available for reporting. Reportable rows are the ingested rows minus the  rows that are skipped and deleted during ingestion. Reportable rows serve as a key metric for billing and data usage."
+
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_detailbreakdown"
+>title="Detail breakdown."
+>abstract="You can view detailed metrics by connection, dataset, sandbox, and tags, with the option to download a CSV file of the data."
+
+<!-- markdownlint-enable MD034 -->
+
+
+
 The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage UI to plan your Customer Journey Analytics license renewal.
 
 You can select a time range (between last 6 months, year to date, or last 2 Years) and an interval (between monthly or quarterly) to monitor Customer Journey Analytics usage. The interface is divided into two sections:

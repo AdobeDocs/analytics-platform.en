@@ -198,8 +198,6 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 
 <!-- markdownlint-enable MD034 -->
 
-
-
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -226,6 +224,16 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 >abstract="This option will transform the dataset so it can be used for person-based lookups in B2B scenarios. Once turned on, the transformation of the dataset is irreversible."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_connectionmap"
+>title="Connection map"
+>abstract="The Connection map visualizes the relationships between event, person, account and relevant lookup datasets (like opportunities, campaign members, and more)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 The new workflow lets you add an Experience Platform dataset when you create a connection. 
 
