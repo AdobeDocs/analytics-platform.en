@@ -6,7 +6,7 @@ feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
 ---
-# Session settings
+# Session settings {#session-settings}
 
 <!-- markdownlint-disable MD034 -->
 
