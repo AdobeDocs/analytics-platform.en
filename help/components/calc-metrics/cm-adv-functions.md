@@ -868,7 +868,7 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 >[!CONTEXTUALHELP]
 >id="calcmetrics_function_log_regression_coefficient"
 >title="Log Regression: Correlation coefficient"
->abstract="abstract"
+>abstract="Log regression: Y = a ln(X) + b. Returns the correlation coefficient."
 
 <!-- markdownlint-enable MD034 -->
 

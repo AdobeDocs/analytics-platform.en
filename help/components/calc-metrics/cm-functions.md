@@ -185,7 +185,7 @@ Adds all numeric values for a metric within a column (across the elements of a d
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_funcion_median"
+>id="calcmetrics_function_median"
 >title="Median"
 >abstract="Returns the median for a metric in a column. The median is the number in the middle of a set of numbers. That is, half the numbers have values that are greater than or equal to the median, and half are less than or equal to the median."
 
@@ -420,7 +420,7 @@ Sum of the columns of each row.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_funcion_square_root"
+>id="calcmetrics_function_square_root"
 >title="Square Root"
 >abstract="Returns the positive square root of a number. The square root of a number is the value of that number raised to the power of 1/2."
 
