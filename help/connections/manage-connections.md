@@ -243,7 +243,7 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_otherdatasets"
 >title="Other datasets"
->abstract="For months before September 2024, data was collected at the dataset level and is displayed as Other datasets for clarity. Starting from September 2024, data is gathered at a granular dataset level, and Other datasets will no longer appear."
+>abstract="For months before September 2024, data was collected at the dataset level and is displayed as *Other datasets* for clarity. Starting from September 2024, data is gathered at a granular dataset level, and *Other datasets* will no longer appear."
 
 <!-- markdownlint-enable MD034 -->
 
