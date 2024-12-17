@@ -238,6 +238,25 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_otherdatasets"
+>title="Other datasets"
+>abstract="For months before September 2024, data was collected at the dataset level and is displayed as Other datasets for clarity. Starting from September 2024, data is gathered at a granular dataset level, and Other datasets will no longer appear."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_unknowndatasetsorconnections"
+>title="Unknown datasets or connections"
+>abstract="Unknown datasets or connections are displayed using their IDs."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 
 The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage UI to plan your Customer Journey Analytics license renewal.
