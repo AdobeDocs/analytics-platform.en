@@ -32,7 +32,17 @@ An alternative scenario is that you have two metrics of interest and one has a h
 
 
 
-## Absolute Value 
+## Absolute Value {#absolute-value}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_absolute_value"
+>title="Absolute Value"
+>abstract="Returns the absolute value of a number. The absolute value of a number is the number with a positive value."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
@@ -43,7 +53,16 @@ An alternative scenario is that you have two metrics of interest and one has a h
 | metric | The metric for which you want to calculate the absolute value. |
 
 
-## Column Maximum
+## Column Maximum {#column-maximum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_maximum"
+>title="Column Maximum"
+>abstract="Returns the largest value in a set of dimension elements for a metric column. MAXV evaluates vertically within a single column (metric) across dimension elements."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
@@ -55,7 +74,17 @@ Returns the largest value in a set of dimension elements for a metric column. MA
 | include_zeros | Whether or not to include zero values in the calculations. | 
 
 
-## Column Minimum
+## Column Minimum {#column-minimum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_minimum"
+>title="Column Minimum"
+>abstract="Returns the smallest value in a set of dimension elements for a metric column. MINV evaluates vertically within a single column (metric) across dimension elements."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
@@ -67,7 +96,17 @@ Returns the smallest value in a set of dimension elements for a metric column. M
 | include_zeros | Whether or not to include zero values in the calculations. |
 
 
-## Column Sum
+## Column Sum {#column-sum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_column_sum"
+>title="Column Sum"
+>abstract="Adds all numeric values for a metric within a column (across the elements of a dimension)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN SUM(metric)]**
 
@@ -78,7 +117,17 @@ Adds all numeric values for a metric within a column (across the elements of a d
 | metric | Requires at least one metric but can take any number of metrics as parameters.|
 
 
-## Count
+## Count {#count}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_count"
+>title="Count"
+>abstract="Returns the number, or count, of non-zero values for a metric within a column (the number of unique elements reported within a dimension)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
@@ -89,7 +138,16 @@ Adds all numeric values for a metric within a column (across the elements of a d
 | metric| The metric you want to count.|
 
 
-## Exponent
+## Exponent {#exponent}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponent"
+>title="Exponent"
+>abstract="Returns e raised to the power of a given number. The constant e equals 2.71828182845904, the base of the natural logarithm. EXPONENT is the inverse of LN, the natural logarithm of a number."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
@@ -100,7 +158,17 @@ Adds all numeric values for a metric within a column (across the elements of a d
 | metric | The exponent applied to the base e.|
 
 
-## Mean
+## Mean {#mean}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_mean"
+>title="Mean"
+>abstract="Returns the arithmetic mean, or average, for a metric in a column"
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
@@ -112,7 +180,17 @@ Adds all numeric values for a metric within a column (across the elements of a d
 | include_zeros | Whether or not to include zero values in the calculations. |
 
 
-## Median
+## Median {#median}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_funcion_median"
+>title="Median"
+>abstract="Returns the median for a metric in a column. The median is the number in the middle of a set of numbers. That is, half the numbers have values that are greater than or equal to the median, and half are less than or equal to the median."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
@@ -124,7 +202,17 @@ Adds all numeric values for a metric within a column (across the elements of a d
 | include_zeros | Whether or not to include zero values in the calculations. |
 
 
-## Modulo
+## Modulo {#modulo}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_modulo"
+>title="Modulo"
+>abstract="Returns the remainder after dividing x by y using Euclidean division. "
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO(metric_X, metric_Y)]**
 
@@ -151,7 +239,17 @@ To ensure you always get a positive number, use
 MODULO(MODULO(x,y)+y,y)
 ```
 
-## Percentile
+## Percentile {#percentile}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_percentile"
+>title="Percentile"
+>abstract="Returns the nth percentile, which is a value between 0 and 100. When n < 0, the function uses zero. When n > 100, the function returns 100."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
@@ -165,7 +263,16 @@ MODULO(MODULO(x,y)+y,y)
 
 
 
-## Power operator
+## Power Operator {#power-operator}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_operator"
+>title="Power Operator"
+>abstract="Returns x raised to the y power."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL POWER OPERATOR(metric_X, metrix_Y)]**
 
@@ -177,7 +284,17 @@ Returns x raised to the y power.
 | metric_Y | The power you would like to raise metric_X to. |
 
 
-## Quartile
+## Quartile {#quartile}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quartile"
+>title="Quartile"
+>abstract="Returns the quartile of values for a metric. For example, quartiles can be used to find the top 25% of products driving the most revenue."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
@@ -190,7 +307,16 @@ Returns x raised to the y power.
 | include_zeros | Whether or not to include zero values in the calculations. |
 
 
-## Round
+## Round {#round}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_round"
+>title="Round"
+>abstract="Round without a *number* parameter is the same as round with a *number* parameter of 0, namely round to the nearest integer.  With a *number* parameter, ROUND returns the *number* digits to the right of the decimal.  If *number* is negative, it returns 0's to the left of the decimal."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(metric, number)]**
 
@@ -210,15 +336,32 @@ ROUND( 314.15, -1) = 310
 ROUND( 314.15, -2) = 300
 ```
 
-       
-## Row Count
+## Row Count {#row-count}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_count"
+>title="Row Count"
+>abstract="Returns the count of rows for a given column (the number of unique elements reported within a dimension). *Uniques exceeded* is counted as 1."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT()]**
 
 Returns the count of rows for a given column (the number of unique elements reported within a dimension). *Uniques exceeded* is counted as 1.
 
 
-## Row Max
+## Row Max {#row-max}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_max"
+>title="Row Max"
+>abstract="Maximum of the columns of each row."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MAX(metric, include_zeros)]**
 
@@ -229,7 +372,17 @@ Maximum of the columns of each row.
 | metric | Requires at least one metric but can take any number of metrics as parameters. |
 | include_zeros | Whether or not to include zero values in the calculations. |
 
-## Row Min
+
+## Row Min {#row-min}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_min"
+>title="Row Min"
+>abstract="Minimum of the columns of each row."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MIN(metric, include_zeros)]**
 
@@ -242,7 +395,16 @@ Minimum of the columns of each row.
 
 
 
-## Row Sum
+## Row Sum {#row-sum}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_row_sum"
+>title="Row Sum"
+>abstract="Sum of the columns of each row."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ROW SUM(metric, include_zeros)]**
 
@@ -253,7 +415,17 @@ Sum of the columns of each row.
 | metric | Requires at least one metric but can take any number of metrics as parameters. |
 
 
-## Square Root
+## Square Root {#square-root}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_funcion_square_root"
+>title="Square Root"
+>abstract="Returns the positive square root of a number. The square root of a number is the value of that number raised to the power of 1/2."
+
+<!-- markdownlint-enable MD034 -->
+
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
@@ -264,7 +436,16 @@ Sum of the columns of each row.
 | metric | The metric for which you want to calculate the square root. |
 
 
-## Standard Deviation
+## Standard Deviation {#standard-deviation}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_standard_deviation"
+>title="Standard Deviation"
+>abstract="Returns the standard deviation, or square root of the variance, based on a sample population of data."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
@@ -276,7 +457,16 @@ Sum of the columns of each row.
 | include_zeros | Whether or not to include zero values in the calculations. |
 
 
-## Variance
+## Variance {#variance}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_variance"
+>title="Variance"
+>abstract="Returns the variance based on a sample population of data."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
@@ -314,9 +504,6 @@ In the example of the following three-item column:
 | 3 |
 
 The average of this column is 2. The variance for the column is ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3) = 2/3.
-
-
-
 
 <!--
 

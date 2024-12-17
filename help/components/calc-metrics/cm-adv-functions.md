@@ -26,19 +26,36 @@ For example, if you have a Revenue metric, and then add a Page Views metric to t
 An alternative scenario is that you have two metrics of interest and one has a higher average or minimum because some of the rows are zeros.  In that case, you can opt not to check the parameter to include zeros.
 
 
-## And
+## And {#and}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_and"
+>title="And"
+>abstract="Conjunction. Not equal to zero is considered to be true and equals zero is considered to be false. The output is either a 0 (false) or 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL AND(logical_test)]**
 
-
 Conjunction. Not equal to zero is considered to be true and equals zero is considered to be false. The output is either a 0 (false) or 1 (true).
-
 
 | Argument | Description |
 |---|---|
 | logical_test| Requires at least one parameter, but can take any number of parameters. Any value or expression that can be evaluated to TRUE or FALSE |
 
-## Approximate Count Distinct
+
+## Approximate Count Distinct {#approximate_count_distinct}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_approximate_count_distinct"
+>title="Approximate Count Distinct"
+>abstract="Returns the approximated distinct count of dimension items for the selected dimension."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL APPROXIMATE COUNT DISTINCT(dimension)]**
 
@@ -56,13 +73,21 @@ A common use case for this function is when you want to get an approximate numbe
 
 
 
+## Arc Cosine {#arc-cosine}
 
-## Arc Cosine
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_arc_cosine"
+>title="Arc Cosine"
+>abstract="Returns the arccosine, or inverse of the cosine, of a metric. The arccosine is the angle whose cosine is number. The returned angle is given in radians in the range 0 (zero) to pi. If you want to convert the result from radians to degrees, multiply it by 180/PI()."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ARC COSINE(metric)]**
 
 
-[!BADGE Row]{type="Neutral"} Returns the arccosine, or inverse of the cosine, of a metric. The arccosine is the angle whose cosine is number. The returned angle is given in radians in the range 0 (zero) to pi. If you want to convert the result from radians to degrees, multiply it by 180/PI( ).
+[!BADGE Row]{type="Neutral"} Returns the arccosine, or inverse of the cosine, of a metric. The arccosine is the angle whose cosine is number. The returned angle is given in radians in the range 0 (zero) to pi. If you want to convert the result from radians to degrees, multiply it by 180/PI().
 
 
 | Argument | Description |
@@ -71,12 +96,21 @@ A common use case for this function is when you want to get an approximate numbe
 
 
 
-## Arc Sine
+## Arc Sine {#arc-sine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_arc_sine"
+>title="Arc Sine"
+>abstract="Returns the arcsine, or inverse sine, of a number. The arcsine is the angle whose sine is a number. The returned angle is given in radians in the range -pi/2 to pi/2. To express the arcsine in degrees, multiply the result by 180/PI()"
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
 
-[!BADGE Row]{type="Neutral"} Returns the arcsine, or inverse sine, of a number. The arcsine is the angle whose sine is a number. The returned angle is given in radians in the range -pi/2 to pi/2. To express the arcsine in degrees, multiply the result by 180/PI( ).
+[!BADGE Row]{type="Neutral"} Returns the arcsine, or inverse sine, of a number. The arcsine is the angle whose sine is a number. The returned angle is given in radians in the range -pi/2 to pi/2. To express the arcsine in degrees, multiply the result by 180/PI().
 
 
 | Argument | Description |
@@ -85,12 +119,21 @@ A common use case for this function is when you want to get an approximate numbe
 
 
 
-## Arc Tangent
+## Arc Tangent {#arc-tangent}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_arc_tangent"
+>title="Arc Tangent"
+>abstract="Returns the arctangent, or inverse tangent, of a number. The arctangent is the angle whose tangent is a number. The returned angle is given in radians in the range -pi/2 to pi/2. To express the arctangent in degrees, multiply the result by 180/PI()."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENT(metric)]**
 
 
-[!BADGE Row]{type="Neutral"} Returns the arctangent, or inverse tangent, of a number. The arctangent is the angle whose tangent is a number. The returned angle is given in radians in the range -pi/2 to pi/2. To express the arctangent in degrees, multiply the result by 180/PI( ).
+[!BADGE Row]{type="Neutral"} Returns the arctangent, or inverse tangent, of a number. The arctangent is the angle whose tangent is a number. The returned angle is given in radians in the range -pi/2 to pi/2. To express the arctangent in degrees, multiply the result by 180/PI().
 
 
 | Argument | Description |
@@ -99,13 +142,20 @@ A common use case for this function is when you want to get an approximate numbe
 
 
 
-## Cdf-T
+## Cdf-T {#cdf-t}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cdf_t"
+>title="Cdf-T"
+>abstract="Returns the probability that a random variable with student-t distribution with n degrees of freedom have a z-score less than col."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T(metric, number)]**
 
-
 Returns the probability that a random variable with student-t distribution with n degrees of freedom have a z-score less than col.
-
 
 | Argument | Description |
 |---|---|
@@ -123,13 +173,20 @@ CDF-T(x, ∞) ? cdf_z(x)
 ```
 
 
-## Cdf-Z
+## Cdf-Z {#cdf-z}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cdf_z"
+>title="Cdf-Z"
+>abstract="Returns the probability that a random variable with a normal distribution has a z-score less than col."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-Z(metric, number)]**
 
-
 Returns the probability that a random variable with a normal distribution has a z-score less than col.
-
 
 | Argument | Description |
 |---|---|
@@ -145,20 +202,61 @@ CDF-Z(2) ? 0.97725
 CDF-Z(-3) ? 0.0013499
 ```
 
-## Ceiling
+## Ceiling {#ceiling}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_ceiling"
+>title="Ceiling"
+>abstract="Returns the smallest integer not less than a given value. For example, if you want to avoid reporting currency decimals for revenue and a product has $569.34, use the formula CEILING(Revenue) to round revenue up to the nearest dollar, or $570."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CEILING(metric)]**
 
-
 [!BADGE Row]{type="Neutral"} Returns the smallest integer not less than a given value. For example, if you want to avoid reporting currency decimals for revenue and a product has $569.34, use the formula CEILING(Revenue) to round revenue up to the nearest dollar, or $570.
-
 
 | Argument | Description |
 |---|---|
 | metric| The metric that you want to round |
 
 
-## Confidence (Lower)
+## Confidence {#confidence}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_confidence"
+>title="Confidence"
+>abstract="Calculate the any-time-valid confidence using the WASKR method as described in [Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476)."
+
+<!-- markdownlint-enable MD034 -->
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
+
+Calculate the any-time-valid confidence using the WASKR method as described in [Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476).
+
+Confidence is a probabilistic measure of how much evidence there is that a given variant is the same as the control variant. A higher confidence indicates less evidence for the assumption that control and non-control variant have equal performance. 
+
+| Argument | Description |
+| --- | --- |
+| normalizing-container | The basis (People, Sessions, or Events) on which a test is run. |
+| success-metric | The metric or metrics that a user is comparing variants with. |
+| control | The variant that all other variants in the experiment are being compared with. Enter the name of the control variant dimension item. |
+| significance-threshold | The threshold in this function is set to a default of 95%. |
+
+
+## Confidence (Lower) {#confidence-lower}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_confidence_lower"
+>title="Confidence (Lower)"
+>abstract="Calculate the any-time-valid confidence **lower** using the WASKR method as described in [Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
 
@@ -173,7 +271,16 @@ Confidence is a probabilistic measure of how much evidence there is that a given
 | control | The variant that all other variants in the experiment are being compared with. Enter the name of the control variant dimension item. |
 | significance-threshold | The threshold in this function is set to a default of 95%. |
 
-## Confidence (Upper)
+## Confidence (Upper) {#confidence-upper}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_confidence_upper"
+>title="Confidence (Upper)"
+>abstract="Calculate the any-time-valid confidence **upper** using the WASKR method as described in [Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIDENCE(normalizing-container, success-metric, control, significance-treshold)]**
 
@@ -189,18 +296,36 @@ Confidence is a probabilistic measure of how much evidence there is that a given
 | significance-threshold | The threshold in this function is set to a default of 95%. |
 
 
-## Cosine
+## Cosine {#cosine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cosine"
+>title="Cosine"
+>abstract="Returns the cosine of the given angle. If the angle is in degrees, multiply the angle by PI()/180."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL COSINE(metric)]**
 
-[!BADGE Row]{type="Neutral"} Returns the cosine of the given angle. If the angle is in degrees, multiply the angle by PI( )/180.
+[!BADGE Row]{type="Neutral"} Returns the cosine of the given angle. If the angle is in degrees, multiply the angle by PI()/180.
 
 | Argument | Description |
 |---|---|
 | metric| The angle in radians for which you want the cosine |
 
 
-## Cube Root
+## Cube Root {#cube-root}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cube_root"
+>title="Cube Root"
+>abstract="Returns the positive cube root of a number. The cube root of a number is the value of that number raised to the power of 1/3."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CUBE ROOT(metric)]**
 
@@ -214,7 +339,16 @@ Returns the positive cube root of a number. The cube root of a number is the val
 
 
 
-## Cumulative
+## Cumulative {#cumulative}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cumulative"
+>title="Cumulative"
+>abstract="Returns the sum of the last n elements of column x. If n > 0, sum the last n elements or x. If n < 0, sum the preceding elements."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE(number, metric)]**
 
@@ -234,7 +368,16 @@ Returns the sum of the last n elements of column x. If n > 0, sum the last n ele
 | July | $400 | $1100        | $600         |
 
 
-## Cumulative (Average)
+## Cumulative (Average) {#cumulative-average}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_cumulative_average"
+>title="Cumulative (Average)"
+>abstract="Returns the average of the last n elements of column x. If n > 0, sum the last n elements or x. If n < 0, sum the preceding elements."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE AVERAGE(number, metric)]**
 
@@ -251,10 +394,18 @@ Returns the average of the last n elements of column x. If n > 0, sum the last n
 >
 
 
-## Equal
+## Equal {#equal}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_equal"
+>title="Equal"
+>abstract="Equal. The output is either a 0 (false) or 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EQUAL()]**
-
 
 Equal. The output is either a 0 (false) or 1 (true).
 
@@ -269,8 +420,16 @@ Equal. The output is either a 0 (false) or 1 (true).
 `Metric 1 = Metric 2`
 
 
+## Exponential regression: Correlation coefficient {#exponential-regression-correlation-coefficient}
 
-## Exponential regression: Correlation coefficient
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_correlation_coefficient"
+>title="Exponential Regression: Correlation coefficient"
+>abstract="Exponential regression: Y = a exp(X) + b. Returns the correlation coefficient."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
@@ -284,7 +443,16 @@ Equal. The output is either a 0 (false) or 1 (true).
 | metric_Y| A metric that you would like to correlate with metric_X |
 | include_zeros | Whether or not to include zero values in the calculations |
 
-## Exponential regression: Predicted Y
+## Exponential Regression: Predicted Y {#exponential-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_predicted_y"
+>title="Exponential Regression: Predicted Y"
+>abstract="Exponential regression: Y = a exp(X) + b. Returns Y."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
@@ -299,7 +467,16 @@ Equal. The output is either a 0 (false) or 1 (true).
 | include_zeros | Whether or not to include zero values in the calculations |
 
 
-## Exponential regression: Intercept
+## Exponential Regression: Intercept {#exponential-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_intercept"
+>title="Exponential Regression: Intercept"
+>abstract="Exponential regression: Y = a exp(X) + b. Returns b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
@@ -313,7 +490,16 @@ Equal. The output is either a 0 (false) or 1 (true).
 | include_zeros | Whether or not to include zero values in the calculations |
 
 
-## Exponential regression: Slope
+## Exponential Regression: Slope {#exponential-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_exponential_regression_slope"
+>title="Exponential Regression: Slope"
+>abstract="Exponential regression: Y = a exp(X) + b. Returns a."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
@@ -328,7 +514,16 @@ Equal. The output is either a 0 (false) or 1 (true).
 | include_zeros | Whether or not to include zero values in the calculations |
 
 
-## Floor
+## Floor {#floor}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_floor"
+>title="Floor"
+>abstract="Returns the largest integer not greater than a given value. For example, if you want to avoid reporting currency decimals for revenue and a product has $569.34, use the formula FLOOR(Revenue) to round revenue down to the nearest dollar, or $569."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR(metric_X, metric_Y, include_zeros)]**
 
@@ -339,13 +534,20 @@ Equal. The output is either a 0 (false) or 1 (true).
 | metric | The metric that you want to round. |
 
 
-## Greater Than
+## Greater Than {#greather-than}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_greater_than"
+>title="Greater Than"
+>abstract="The output is either a 0 (false) or 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN()]**
 
-
 The output is either a 0 (false) or 1 (true).
-
 
 | Argument | Description |
 |---|---|
@@ -356,13 +558,21 @@ The output is either a 0 (false) or 1 (true).
 
 `Metric 1 > Metric 2`
 
-## Greater Than or Equal
+
+## Greater Than or Equal {#greater-than-or-equal}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_greater_than_or_equal"
+>title="Greater Than or Equal"
+>abstract="Greater than or equal. The output is either a 0 (false) or 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN OR EQUAL()]**
 
-
 Greater than or equal. The output is either a 0 (false) or 1 (true).
-
 
 | Argument | Description |
 |---|---|
@@ -375,7 +585,16 @@ Greater than or equal. The output is either a 0 (false) or 1 (true).
 
 
 
-## Hyperbolic Cosine
+## Hyperbolic Cosine {#hyperbolic-cosine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_hyperbolic_cosine"
+>title="Hyperbolic Cosine"
+>abstract="Returns the hyperbolic cosine of a number."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC COSINE(metric)]**
 
@@ -389,34 +608,56 @@ Greater than or equal. The output is either a 0 (false) or 1 (true).
 
 
 
-## Hyperbolic Sine
+## Hyperbolic Sine {#hyperbolic-sine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_hyperbolic_sine"
+>title="Hyperbolic Sine"
+>abstract="Returns the hyperbolic sine of a number."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC SINE(metric)]**
 
-
 [!BADGE Row]{type="Neutral"} Returns the hyperbolic sine of a number.
-
 
 | Argument | Description |
 |---|---|
 | metric| The angle in radians for which you want to find the hyperbolic sine |
 
 
+## Hyperbolic Tangent {#hyperbolic-tangent}
 
-## Hyperbolic Tangent
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_hyperbolic_tangent"
+>title="Hyperbolic Tangent"
+>abstract="Returns the hyperbolic tangent of a number."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL HYPERBOLIC TANGENT(metric)]**
 
-
 [!BADGE Row]{type="Neutral"} Returns the hyperbolic tangent of a number.
-
 
 | Argument | Description |
 |---|---|
 | metric| The angle in radians for which you want to find the hyperbolic tangent |
 
 
-## If
+## If {#if}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_if"
+>title="If"
+>abstract="If the value of the condition parameter is non-zero (true), the result is the value of the value_if_true parameter. Otherwise, it is the value of the value_if_false parameter."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test, value_if_true, value_if_false)]**
 
@@ -431,30 +672,45 @@ Greater than or equal. The output is either a 0 (false) or 1 (true).
 | value_if_false| The value that you want to be returned if the logical_test argument evaluates to FALSE. (This argument defaults to 0 if not included.) |
 
 
-## Less Than
+## Less Than {#less-than}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_less_than"
+>title="Less Than"
+>abstract="The output is either a 0 (false) or 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN()]**
 
-
 The output is either a 0 (false) or 1 (true).
-
 
 | Argument | Description |
 |---|---|
 | metric_X | |
 | metric_Y | |
 
-
 ### Example
 
 `Metric 1 < Metric 2`
 
-## Less Than or Equal
+
+## Less Than or Equal {#less-than-or-equal}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_less_than_or_equal"
+>title="Less Than or Equal"
+>abstract="Less than or equal. The output is either a 0 (false) or 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN OR EQUAL()]**
 
 Less than or equal. The output is either a 0 (false) or 1 (true).
-
 
 | Argument | Description |
 |---|---|
@@ -467,12 +723,40 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 
 
 
-## Linear regression: Correlation coefficient
+## Lift (#lift)
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_lift"
+>title="Lift"
+>abstract="The lift of the ratio compared to the control value."
+
+<!-- markdownlint-enable MD034 -->
+
+| Argument | Description |
+| --- | --- |
+| normalizing-container | The basis (People, Sessions, or Events) on which a test is run. |
+| success-metric | The metric or metrics that a user is comparing variants with. |
+| control | The variant that all other variants in the experiment are being compared with. Enter the name of the control variant dimension item. |
+
+
+
+## Linear Regression: Correlation coefficient {#linear-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_correlation_coefficient"
+>title="Linear Regression: Correlation coefficient"
+>abstract="Linear regression: Y = a X + b.  Returns the correlation coefficient."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Table]{type="Neutral"} Linear regression: Y = a X + b.  Returns the correlation coefficient
+[!BADGE Table]{type="Neutral"} Linear regression: Y = a X + b.  Returns the correlation coefficient.
 
 
 | Argument | Description |
@@ -483,7 +767,16 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 
 
 
-## Linear regression: Intercept
+## Linear Regression: Intercept {#linear-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_intercept"
+>title="Linear Regression: Intercept"
+>abstract="Linear regression: Y = a X + b. Returns b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
@@ -499,7 +792,16 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 
 
 
-## Linear regression: Predicted Y
+## Linear Regression: Predicted Y {#linear-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_predicted_y"
+>title="Linear Regression: Predicted Y"
+>abstract="Linear regression: Y = a X + b. Returns Y."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
@@ -515,13 +817,20 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 
 
 
-## Linear regression: Slope
+## Linear Regression: Slope {#linear-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_linear_regression_slope"
+>title="Linear Regression: Slope"
+>abstract="Linear regression: Y = a X + b. Returns a."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Table]{type="Neutral"} Linear regression: Y = a X + b. Returns a.
-
 
 | Argument | Description |
 |---|---|
@@ -530,7 +839,16 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 | include_zeros | Whether or not to include zero values in the calculations |
 
 
-## Log Base 10
+## Log Base 10 {#log-base-ten}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_base_ten"
+>title="Log Base 10"
+>abstract="Returns the base-10 logarithm of a number."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LOG BASE 10(metric)]**
 
@@ -543,13 +861,20 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 | metric| The positive real number for which you want the base-10 logarithm |
 
 
-## Log regression: Correlation coefficient
+## Log Regression: Correlation coefficient {#log-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_coefficient"
+>title="Log Regression: Correlation coefficient"
+>abstract="abstract"
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Table]{type="Neutral"} Log regression: Y = a ln(X) + b. Returns the correlation coefficient.
-
 
 | Argument | Description |
 |---|---|
@@ -558,13 +883,20 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 | include_zeros | Whether or not to include zero values in the calculations |
 
 
-## Log regression: Intercept
+## Log Regression: Intercept {#log-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_intercept"
+>title="Log Regression: Intercept"
+>abstract="Log regression: Y = a ln(X) + b. Returns b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Table]{type="Neutral"} Log regression: Y = a ln(X) + b. Returns b.
-
 
 | Argument | Description |
 |---|---|
@@ -574,13 +906,20 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 
 
 
-## Log regression: Predicted Y
+## Log Regression: Predicted Y {#log-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_predicted_y"
+>title="Log Regression: Predicted Y"
+>abstract="Log regression: Y = a ln(X) + b. Returns Y."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Row]{type="Neutral"} Log regression: Y = a ln(X) + b. Returns Y.
-
 
 | Argument | Description |
 |---|---|
@@ -590,13 +929,20 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 
 
 
-## Log regression: Slope
+## Log Regression: Slope {#log-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_log_regression_slope"
+>title="Log Regression: Slope"
+>abstract="Log regression: Y = a ln(X) + b. Returns a."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Table]{type="Neutral"} Log regression: Y = a ln(X) + b. Returns a.
-
 
 | Argument | Description |
 |---|---|
@@ -606,13 +952,20 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 
 
 
-## Natural Log
+## Natural Log {#natural-log}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_natural_log"
+>title="Natural Log"
+>abstract="Returns the natural logarithm of a number. Natural logarithms are based on the constant e (2.71828182845904). LN is the inverse of the EXP function."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL NATURAL LOG(metric)]**
 
-
 Returns the natural logarithm of a number. Natural logarithms are based on the constant e (2.71828182845904). LN is the inverse of the EXP function.
-
 
 | Argument | Description |
 |---|---|
@@ -620,13 +973,20 @@ Returns the natural logarithm of a number. Natural logarithms are based on the c
 
 
 
-## Not
+## Not {#not}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_not"
+>title="Not"
+>abstract="Negation as a boolean. The output is either 0 (false) or 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL NOT(logical)]**
 
-
 Negation as a boolean. The output is either 0 (false) or 1 (true).
-
 
 | Argument | Description |
 |---|---|
@@ -634,7 +994,16 @@ Negation as a boolean. The output is either 0 (false) or 1 (true).
 
 
 
-## Not Equal
+## Not Equal {#not-equal}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_not_equal"
+>title="Not Equal"
+>abstract="Not Equal. The output is either a 0 (false) or 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL NOT EQUAL()]**
 
@@ -652,7 +1021,16 @@ Not Equal. The output is either a 0 (false) or 1 (true).
 `Metric 1 != Metric 2`
 
 
-## Or
+## Or {#or}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_or"
+>title="Or"
+>abstract="Disjunction. Not equal to zero is considered to be true and equals zero is considered to be false. The output is either a 0 (false) or 1 (true)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL OR(logical_test)]**
 
@@ -670,20 +1048,36 @@ Not Equal. The output is either a 0 (false) or 1 (true).
 >0 (zero) means False, and any other value is True.
 
 
-## Pi
+## Pi {#pi}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_pi"
+>title="Pi"
+>abstract="Returns Pi: 3.14159..."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL PI()]**
 
 Returns Pi: 3.14159...
 
 
-## Power regression: Correlation coefficient
+## Power Regression: Correlation coefficient {#power-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_correlation_coefficient"
+>title="Power Regression: Correlation coefficient"
+>abstract="Power regression: Y = b X ^ a. Returns the correlation coefficient."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Table]{type="Neutral"} Power regression: Y = b X ^ a. Returns the correlation coefficient.
-
 
 | Argument | Description |
 |---|---|
@@ -693,7 +1087,16 @@ Returns Pi: 3.14159...
 
 
 
-## Power regression: Intercept
+## Power Regression: Intercept {#power-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_intercept"
+>title="Power Regression: Intercept"
+>abstract="Power regression: Y = b X ^ a. Returns b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
@@ -708,13 +1111,20 @@ Returns Pi: 3.14159...
 | include_zeros | Whether or not to include zero values in the calculations |
 
 
-## Power regression: Predicted Y
+## Power Regression: Predicted Y {#power-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_predicted_y"
+>title="Power Regression: Predicted Y"
+>abstract="Power regression: Y = b X ^ a. Returns Y."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Row]{type="Neutral"} Power regression: Y = b X ^ a. Returns Y.
-
 
 | Argument | Description |
 |---|---|
@@ -724,13 +1134,20 @@ Returns Pi: 3.14159...
 
 
 
-## Power regression: Slope
+## Power Regression: Slope {#power-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_power_regression_slope"
+>title="Power Regression: Slope"
+>abstract="Power regression: Y = b X ^ a. Returns a."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Table]{type="Neutral"} Power regression: Y = b X ^ a. Returns a.
-
 
 | Argument | Description |
 |---|---|
@@ -740,13 +1157,20 @@ Returns Pi: 3.14159...
 
 
 
-## Quadratic regression: Correlation coefficient
+## Quadratic Regression: Correlation coefficient {#quadratic-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_correlation_coefficient"
+>title="Quadratic Regression: Correlation coefficient"
+>abstract="Quadratic regression: Y = (a + bX) ^ 2, Returns the correlation coefficient."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Table]{type="Neutral"} Quadratic regression: Y = (a + bX) ^ 2, Returns the correlation coefficient.
-
 
 | Argument | Description |
 |---|---|
@@ -754,13 +1178,20 @@ Returns Pi: 3.14159...
 | metric_Y| A metric that you would like to correlate with metric_X |
 | include_zeros | Whether or not to include zero values in the calculations |
 
-## Quadratic regression: Intercept
+## Quadratic Regression: Intercept {#quadratic-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_intercept"
+>title="Quadratic Regression: Intercept"
+>abstract="Quadratic regression: Y = (a + bX) ^ 2, Returns a."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Table]{type="Neutral"} Quadratic regression: Y = (a + bX) ^ 2, Returns a.
-
 
 | Argument | Description |
 |---|---|
@@ -769,13 +1200,20 @@ Returns Pi: 3.14159...
 | include_zeros | Whether or not to include zero values in the calculations |
 
 
-## Quadratic regression: Predicted Y
+## Quadratic Regression: Predicted Y {#quadratic-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_predicted_y"
+>title="Quadratic Regression: Predicted Y"
+>abstract="Quadratic regression: Y = (a + bX) ^ 2, Returns Y."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Row]{type="Neutral"} Quadratic regression: Y = (a + bX) ^ 2, Returns Y.
-
 
 | Argument | Description |
 |---|---|
@@ -783,13 +1221,21 @@ Returns Pi: 3.14159...
 | metric_Y| A metric that you would like to designate as the independent data |
 | include_zeros | Whether or not to include zero values in the calculations |
 
-## Quadratic regression: Slope
+
+## Quadratic Regression: Slope {#quadratic-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_quadratic_regression_slope"
+>title="Quadratic Regression: Slope"
+>abstract="Quadratic regression: Y = (a + bX) ^ 2, Returns b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Table]{type="Neutral"} Quadratic regression: Y = (a + bX) ^ 2, Returns b.
-
 
 | Argument | Description |
 |---|---|
@@ -799,13 +1245,20 @@ Returns Pi: 3.14159...
 
 
 
-## Reciprocal regression: Correlation coefficient
+## Reciprocal Regression: Correlation coefficient {#reciprocal-regression-correlation-coefficient}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_correlation_coefficient"
+>title="Reciprocal Regression: Correlation coefficient"
+>abstract="Reciprocal regression: Y = a + b X ^ -1. Returns the correlation coefficient."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Table]{type="Neutral"} Reciprocal regression: Y = a + b X ^ -1. Returns the correlation coefficient.
-
 
 | Argument | Description |
 |---|---|
@@ -814,13 +1267,20 @@ Returns Pi: 3.14159...
 | include_zeros | Whether or not to include zero values in the calculations |
 
 
-## Reciprocal regression: Intercept
+## Reciprocal Regression: Intercept {#reciprocal-regression-intercept}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_intercept"
+>title="Reciprocal Regression: Intercept"
+>abstract="Reciprocal regression: Y = a + b X ^ -1. Returns a."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Table]{type="Neutral"} Reciprocal regression: Y = a + b X ^ -1. Returns a.
-
 
 | Argument | Description |
 |---|---|
@@ -829,13 +1289,20 @@ Returns Pi: 3.14159...
 | include_zeros | Whether or not to include zero values in the calculations |
 
 
-## Reciprocal regression: Predicted Y
+## Reciprocal Regression: Predicted Y {#reciprocal-regression-predicted-y}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_predicted_y"
+>title="Reciprocal Regression: Predicted Y"
+>abstract="Reciprocal regression: Y = a + b X ^ -1. Returns Y."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Row]{type="Neutral"} Reciprocal regression: Y = a + b X ^ -1. Returns Y.
-
 
 | Argument | Description |
 |---|---|
@@ -844,13 +1311,20 @@ Returns Pi: 3.14159...
 | include_zeros | Whether or not to include zero values in the calculations |
 
 
-## Reciprocal regression: Slope
+## Reciprocal Regression: Slope {#reciprocal-regression-slope}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_reciprocal_regression_slope"
+>title="Reciproal Regression: Slope"
+>abstract="Reciprocal regression: Y = a + b X ^ -1. Returns b."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-
 [!BADGE Table]{type="Neutral"} Reciprocal regression: Y = a + b X ^ -1. Returns b.
-
 
 | Argument | Description |
 |---|---|
@@ -861,12 +1335,21 @@ Returns Pi: 3.14159...
 
 
 
-## Sine
+## Sine {#sine}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_sine"
+>title="Sine"
+>abstract="Returns the sine of the given angle. If the angle is in degrees, multiply the angle by PI()/180."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL SINE(metric)]**
 
 
-[!BADGE Row]{type="Neutral"} Returns the sine of the given angle. If the angle is in degrees, multiply the angle by PI( )/180.
+[!BADGE Row]{type="Neutral"} Returns the sine of the given angle. If the angle is in degrees, multiply the angle by PI()/180.
 
 
 | Argument | Description |
@@ -876,13 +1359,20 @@ Returns Pi: 3.14159...
 
 
 
-## T-Score
+## T-Score {#t-score}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_t_score"
+>title="T-Score"
+>abstract="The deviation from the [MEAN](cm-functions.md#mean), divided by the standard deviation. Alias for [Z-Score](#z-score)."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL T-SCORE(metric, include_zeros)]**
 
-
 The deviation from the [MEAN](cm-functions.md#mean), divided by the standard deviation. Alias for [Z-Score](#z-score).
-
 
 | Argument | Description |
 |---|---|
@@ -890,13 +1380,20 @@ The deviation from the [MEAN](cm-functions.md#mean), divided by the standard dev
 | include_zeros | Whether or not to include zero values in the calculations |
 
 
-## T-Test
+## T-Test {#t-test}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_t_test"
+>title="T-Test"
+>abstract="Performs an m-tailed t-test with t-score of x and n degrees of freedom."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL T-TEST(metric, degrees, tails)]**
 
-
 Performs an m-tailed t-test with t-score of x and n degrees of freedom.
-
 
 | Argument | Description |
 |---|---|
@@ -914,7 +1411,7 @@ The signature is T-TEST(metric, degrees, tails). Underneath, it simply calls ***
 
 The return value is the probability of seeing the test statistic x given the degrees of freedom and number of tails.
 
-**Examples:**
+### Examples
 
 1. Use the function to find outliers:
 
@@ -930,14 +1427,20 @@ The return value is the probability of seeing the test statistic x given the deg
 
 
 
+## Tangent {#tangent}
 
-## Tangent
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_tangent"
+>title="Tangent"
+>abstract="Returns the tangent of the given angle. If the angle is in degrees, multiply the angle by PI()/180."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL TANGENT(metric)]**
 
-
-Returns the tangent of the given angle. If the angle is in degrees, multiply the angle by PI( )/180.
-
+Returns the tangent of the given angle. If the angle is in degrees, multiply the angle by PI()/180.
 
 | Argument | Description |
 |---|---|
@@ -945,13 +1448,20 @@ Returns the tangent of the given angle. If the angle is in degrees, multiply the
 
 
 
-## Z-Score
+## Z-Score {#z-score}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_z_score"
+>title="Z-Score"
+>abstract="The deviation from the mean divided by the standard deviation."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL Z-SCORE(metric, include_zeros)]**
 
-
 [!BADGE Row]{type="Neutral"} The deviation from the mean divided by the standard deviation.
-
 
 | Argument | Description |
 |---|---|
@@ -972,13 +1482,20 @@ Where ***[!DNL x]*** is the raw score, ***[!DNL μ]*** is the mean of the popula
 
 
 
-## Z-Test
+## Z-Test {#z-test}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="calcmetrics_function_z_test"
+>title="Z-Test"
+>abstract="Performs an n-tailed z-test with a z-score of x."
+
+<!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL Z-TEST(metric_tails)]**
 
-
 Performs an n-tailed z-test with a z-score of x.
-
 
 | Argument | Description |
 |---|---|
@@ -988,11 +1505,6 @@ Performs an n-tailed z-test with a z-score of x.
 >[!NOTE]
 >
 >Assumes that the values are normally distributed.
-
-
-
-
-
 
 
 
