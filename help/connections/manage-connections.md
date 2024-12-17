@@ -256,7 +256,32 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_datanotavailable"
+>title="Data not available"
+>abstract="Historical data prior to September 2024 is not available due to system limitations. Metrics are collected and displayed starting from September 2024 onwards. The chart shows the last 18 months on the timeline, and future data will appear as the data becomes available."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_corereportablerows"
+>title="Core reportable rows"
+>abstract="Displays the total number of rows available for the past 13 months. For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_historicalreportablerows"
+>title="Historical reportable rows"
+>abstract="Displays the total number of rows available for the period older than 13 months. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023."
+
+<!-- markdownlint-enable MD034 -->
 
 
 The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage UI to plan your Customer Journey Analytics license renewal.
