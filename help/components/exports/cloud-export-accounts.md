@@ -84,6 +84,10 @@ For information about how to manage existing accounts, including viewing, editin
 
    * **AWS storage:**
 
+     >[!AVAILABILITY]
+     >
+     >This section applies to implementations of Experience Platform running on Amazon Web Services (AWS). Experience Platform running on AWS is currently available to a limited number of customers. To learn more about the supported Experience Platform infrastructure, see the [Experience Platform multi-cloud overview](https://experienceleague.adobe.com/en/docs/experience-platform/landing/multi-cloud).
+
      The [!UICONTROL **Account created**] dialog displays.
 
      ![Export account dialog AEP Data Landing Zone](assets/export-account-aep-aws.png)
