@@ -31,7 +31,7 @@ An alternative scenario is that you have two metrics of interest and one has a h
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_and"
+>id="functions-and"
 >title="And"
 >abstract="Conjunction. Not equal to zero is considered to be true and equals zero is considered to be false. The output is either a 0 (false) or 1 (true)."
 
@@ -51,7 +51,7 @@ Conjunction. Not equal to zero is considered to be true and equals zero is consi
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_approximate_count_distinct"
+>id="functions-count-distinct-metric"
 >title="Approximate Count Distinct"
 >abstract="Returns the approximated distinct count of dimension items for the selected dimension."
 
@@ -78,7 +78,7 @@ A common use case for this function is when you want to get an approximate numbe
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_arc_cosine"
+>id="functions-acos"
 >title="Arc Cosine"
 >abstract="Returns the arccosine, or inverse of the cosine, of a metric. The arccosine is the angle whose cosine is number. The returned angle is given in radians in the range 0 (zero) to pi. If you want to convert the result from radians to degrees, multiply it by 180/PI()."
 
@@ -101,7 +101,7 @@ A common use case for this function is when you want to get an approximate numbe
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_arc_sine"
+>id="functions-asin"
 >title="Arc Sine"
 >abstract="Returns the arcsine, or inverse sine, of a number. The arcsine is the angle whose sine is a number. The returned angle is given in radians in the range -pi/2 to pi/2. To express the arcsine in degrees, multiply the result by 180/PI()"
 
@@ -124,7 +124,7 @@ A common use case for this function is when you want to get an approximate numbe
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_arc_tangent"
+>id="functions-atan"
 >title="Arc Tangent"
 >abstract="Returns the arctangent, or inverse tangent, of a number. The arctangent is the angle whose tangent is a number. The returned angle is given in radians in the range -pi/2 to pi/2. To express the arctangent in degrees, multiply the result by 180/PI()."
 
@@ -147,7 +147,7 @@ A common use case for this function is when you want to get an approximate numbe
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cdf_t"
+>id="functions-cdf-t"
 >title="Cdf-T"
 >abstract="Returns the probability that a random variable with student-t distribution with n degrees of freedom have a z-score less than col."
 
@@ -178,7 +178,7 @@ CDF-T(x, ∞) ? cdf_z(x)
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cdf_z"
+>id="functions-cdf-z"
 >title="Cdf-Z"
 >abstract="Returns the probability that a random variable with a normal distribution has a z-score less than col."
 
@@ -207,7 +207,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_ceiling"
+>id="functions-ceil"
 >title="Ceiling"
 >abstract="Returns the smallest integer not less than a given value. For example, if you want to avoid reporting currency decimals for revenue and a product has $569.34, use the formula CEILING(Revenue) to round revenue up to the nearest dollar, or $570."
 
@@ -227,7 +227,7 @@ CDF-Z(-3) ? 0.0013499
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_confidence"
+>id="functions-waskr-confidence"
 >title="Confidence"
 >abstract="Calculate the any-time-valid confidence using the WASKR method as described in [Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476)."
 
@@ -252,7 +252,7 @@ Confidence is a probabilistic measure of how much evidence there is that a given
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_confidence_lower"
+>id="functions-waskr-confidence-interval-lower""
 >title="Confidence (Lower)"
 >abstract="Calculate the any-time-valid confidence **lower** using the WASKR method as described in [Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476)."
 
@@ -276,7 +276,7 @@ Confidence is a probabilistic measure of how much evidence there is that a given
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_confidence_upper"
+>id="functions-waskr-confidence-interval-upper""
 >title="Confidence (Upper)"
 >abstract="Calculate the any-time-valid confidence **upper** using the WASKR method as described in [Time-uniform central limit theory and asymptotic confidence sequences](https://arxiv.org/pdf/2103.06476)."
 
@@ -301,7 +301,7 @@ Confidence is a probabilistic measure of how much evidence there is that a given
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cosine"
+>id="functions-cos"
 >title="Cosine"
 >abstract="Returns the cosine of the given angle. If the angle is in degrees, multiply the angle by PI()/180."
 
@@ -321,7 +321,7 @@ Confidence is a probabilistic measure of how much evidence there is that a given
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cube_root"
+>id="functions-cube-root"
 >title="Cube Root"
 >abstract="Returns the positive cube root of a number. The cube root of a number is the value of that number raised to the power of 1/3."
 
@@ -344,7 +344,7 @@ Returns the positive cube root of a number. The cube root of a number is the val
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cumulative"
+>id="functions-cumul"
 >title="Cumulative"
 >abstract="Returns the sum of the last n elements of column x. If n > 0, sum the last n elements or x. If n < 0, sum the preceding elements."
 
@@ -373,7 +373,7 @@ Returns the sum of the last n elements of column x. If n > 0, sum the last n ele
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_cumulative_average"
+>id="functions-cumul-avg"
 >title="Cumulative (Average)"
 >abstract="Returns the average of the last n elements of column x. If n > 0, sum the last n elements or x. If n < 0, sum the preceding elements."
 
@@ -399,7 +399,7 @@ Returns the average of the last n elements of column x. If n > 0, sum the last n
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_equal"
+>id="functions-eq"
 >title="Equal"
 >abstract="Equal. The output is either a 0 (false) or 1 (true)."
 
@@ -425,7 +425,7 @@ Equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_correlation_coefficient"
+>id="functions-ls-corr-exp"
 >title="Exponential Regression: Correlation coefficient"
 >abstract="Exponential regression: Y = a exp(X) + b. Returns the correlation coefficient."
 
@@ -448,7 +448,7 @@ Equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_predicted_y"
+>id="functions-ls-pred-exp"
 >title="Exponential Regression: Predicted Y"
 >abstract="Exponential regression: Y = a exp(X) + b. Returns Y."
 
@@ -472,7 +472,7 @@ Equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_intercept"
+>id="functions-ls-intercept-exp"
 >title="Exponential Regression: Intercept"
 >abstract="Exponential regression: Y = a exp(X) + b. Returns b."
 
@@ -495,7 +495,7 @@ Equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponential_regression_slope"
+>id="functions-ls-slope-exp"
 >title="Exponential Regression: Slope"
 >abstract="Exponential regression: Y = a exp(X) + b. Returns a."
 
@@ -519,7 +519,7 @@ Equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_floor"
+>id="functions-floor"
 >title="Floor"
 >abstract="Returns the largest integer not greater than a given value. For example, if you want to avoid reporting currency decimals for revenue and a product has $569.34, use the formula FLOOR(Revenue) to round revenue down to the nearest dollar, or $569."
 
@@ -539,7 +539,7 @@ Equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_greater_than"
+>id="functions-gt"
 >title="Greater Than"
 >abstract="The output is either a 0 (false) or 1 (true)."
 
@@ -564,7 +564,7 @@ The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_greater_than_or_equal"
+>id="functions-ge"
 >title="Greater Than or Equal"
 >abstract="Greater than or equal. The output is either a 0 (false) or 1 (true)."
 
@@ -590,7 +590,7 @@ Greater than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_hyperbolic_cosine"
+>id="functions-cosh"
 >title="Hyperbolic Cosine"
 >abstract="Returns the hyperbolic cosine of a number."
 
@@ -613,7 +613,7 @@ Greater than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_hyperbolic_sine"
+>id="functions-sinh"
 >title="Hyperbolic Sine"
 >abstract="Returns the hyperbolic sine of a number."
 
@@ -633,7 +633,7 @@ Greater than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_hyperbolic_tangent"
+>id="functions-tanh"
 >title="Hyperbolic Tangent"
 >abstract="Returns the hyperbolic tangent of a number."
 
@@ -653,7 +653,7 @@ Greater than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_if"
+>id="functions-if"
 >title="If"
 >abstract="If the value of the condition parameter is non-zero (true), the result is the value of the value_if_true parameter. Otherwise, it is the value of the value_if_false parameter."
 
@@ -677,7 +677,7 @@ Greater than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_less_than"
+>id="functions-lt"
 >title="Less Than"
 >abstract="The output is either a 0 (false) or 1 (true)."
 
@@ -702,7 +702,7 @@ The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_less_than_or_equal"
+>id="functions-le"
 >title="Less Than or Equal"
 >abstract="Less than or equal. The output is either a 0 (false) or 1 (true)."
 
@@ -728,7 +728,7 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_lift"
+>id="functions-waskr-lift"
 >title="Lift"
 >abstract="The lift of the ratio compared to the control value."
 
@@ -747,7 +747,7 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_correlation_coefficient"
+>id="functions-ls-corr-linear"
 >title="Linear Regression: Correlation coefficient"
 >abstract="Linear regression: Y = a X + b.  Returns the correlation coefficient."
 
@@ -772,7 +772,7 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_intercept"
+>id="functions-ls-intercept-linear"
 >title="Linear Regression: Intercept"
 >abstract="Linear regression: Y = a X + b. Returns b."
 
@@ -797,7 +797,7 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_predicted_y"
+>id="functions-ls-pred-linear"
 >title="Linear Regression: Predicted Y"
 >abstract="Linear regression: Y = a X + b. Returns Y."
 
@@ -822,7 +822,7 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_linear_regression_slope"
+>id="functions-ls-slope-linear"
 >title="Linear Regression: Slope"
 >abstract="Linear regression: Y = a X + b. Returns a."
 
@@ -844,7 +844,7 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_base_ten"
+>id="functions-log10"
 >title="Log Base 10"
 >abstract="Returns the base-10 logarithm of a number."
 
@@ -866,7 +866,7 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_coefficient"
+>id="functions-ls-corr-log"
 >title="Log Regression: Correlation coefficient"
 >abstract="Log regression: Y = a ln(X) + b. Returns the correlation coefficient."
 
@@ -888,7 +888,7 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_intercept"
+>id="functions-ls-intercept-log"
 >title="Log Regression: Intercept"
 >abstract="Log regression: Y = a ln(X) + b. Returns b."
 
@@ -911,7 +911,7 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_predicted_y"
+>id="functions-ls-pred-log"
 >title="Log Regression: Predicted Y"
 >abstract="Log regression: Y = a ln(X) + b. Returns Y."
 
@@ -934,7 +934,7 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_log_regression_slope"
+>id="functions-ls-slope-log"
 >title="Log Regression: Slope"
 >abstract="Log regression: Y = a ln(X) + b. Returns a."
 
@@ -957,7 +957,7 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_natural_log"
+>id="functions-log"
 >title="Natural Log"
 >abstract="Returns the natural logarithm of a number. Natural logarithms are based on the constant e (2.71828182845904). LN is the inverse of the EXP function."
 
@@ -978,7 +978,7 @@ Returns the natural logarithm of a number. Natural logarithms are based on the c
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_not"
+>id="functions-not"
 >title="Not"
 >abstract="Negation as a boolean. The output is either 0 (false) or 1 (true)."
 
@@ -999,7 +999,7 @@ Negation as a boolean. The output is either 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_not_equal"
+>id="functions-ne"
 >title="Not Equal"
 >abstract="Not Equal. The output is either a 0 (false) or 1 (true)."
 
@@ -1026,7 +1026,7 @@ Not Equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_or"
+>id="functions-or"
 >title="Or"
 >abstract="Disjunction. Not equal to zero is considered to be true and equals zero is considered to be false. The output is either a 0 (false) or 1 (true)."
 
@@ -1053,7 +1053,7 @@ Not Equal. The output is either a 0 (false) or 1 (true).
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_pi"
+>id="functions-pi"
 >title="Pi"
 >abstract="Returns Pi: 3.14159..."
 
@@ -1069,7 +1069,7 @@ Returns Pi: 3.14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_correlation_coefficient"
+>id="functions-ls-corr-power"
 >title="Power Regression: Correlation coefficient"
 >abstract="Power regression: Y = b X ^ a. Returns the correlation coefficient."
 
@@ -1092,7 +1092,7 @@ Returns Pi: 3.14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_intercept"
+>id="functions-ls-intercept-power"
 >title="Power Regression: Intercept"
 >abstract="Power regression: Y = b X ^ a. Returns b."
 
@@ -1116,7 +1116,7 @@ Returns Pi: 3.14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_predicted_y"
+>id="functions-ls-pred-power"
 >title="Power Regression: Predicted Y"
 >abstract="Power regression: Y = b X ^ a. Returns Y."
 
@@ -1139,7 +1139,7 @@ Returns Pi: 3.14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_regression_slope"
+>id="functions-ls-slope-power"
 >title="Power Regression: Slope"
 >abstract="Power regression: Y = b X ^ a. Returns a."
 
@@ -1162,7 +1162,7 @@ Returns Pi: 3.14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_correlation_coefficient"
+>id="functions-ls-corr-quadratic"
 >title="Quadratic Regression: Correlation coefficient"
 >abstract="Quadratic regression: Y = (a + bX) ^ 2, Returns the correlation coefficient."
 
@@ -1183,7 +1183,7 @@ Returns Pi: 3.14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_intercept"
+>id="functions-ls-intercept-quadratic"
 >title="Quadratic Regression: Intercept"
 >abstract="Quadratic regression: Y = (a + bX) ^ 2, Returns a."
 
@@ -1205,7 +1205,7 @@ Returns Pi: 3.14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_predicted_y"
+>id="functions-ls-pred-quadratic"
 >title="Quadratic Regression: Predicted Y"
 >abstract="Quadratic regression: Y = (a + bX) ^ 2, Returns Y."
 
@@ -1227,7 +1227,7 @@ Returns Pi: 3.14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quadratic_regression_slope"
+>id="functions-ls-slope-quadratic"
 >title="Quadratic Regression: Slope"
 >abstract="Quadratic regression: Y = (a + bX) ^ 2, Returns b."
 
@@ -1250,7 +1250,7 @@ Returns Pi: 3.14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_correlation_coefficient"
+>id="functions-ls-corr-reciprocal"
 >title="Reciprocal Regression: Correlation coefficient"
 >abstract="Reciprocal regression: Y = a + b X ^ -1. Returns the correlation coefficient."
 
@@ -1272,7 +1272,7 @@ Returns Pi: 3.14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_intercept"
+>id="functions-ls-intercept-reciprocal"
 >title="Reciprocal Regression: Intercept"
 >abstract="Reciprocal regression: Y = a + b X ^ -1. Returns a."
 
@@ -1294,7 +1294,7 @@ Returns Pi: 3.14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_predicted_y"
+>id="functions-ls-pred-reciprocal"
 >title="Reciprocal Regression: Predicted Y"
 >abstract="Reciprocal regression: Y = a + b X ^ -1. Returns Y."
 
@@ -1316,7 +1316,7 @@ Returns Pi: 3.14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_reciprocal_regression_slope"
+>id="functions-ls-slope-reciprocal"
 >title="Reciproal Regression: Slope"
 >abstract="Reciprocal regression: Y = a + b X ^ -1. Returns b."
 
@@ -1340,7 +1340,7 @@ Returns Pi: 3.14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_sine"
+>id="functions-sin"
 >title="Sine"
 >abstract="Returns the sine of the given angle. If the angle is in degrees, multiply the angle by PI()/180."
 
@@ -1364,7 +1364,7 @@ Returns Pi: 3.14159...
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_t_score"
+>id="functions-t-score"
 >title="T-Score"
 >abstract="The deviation from the [MEAN](cm-functions.md#mean), divided by the standard deviation. Alias for [Z-Score](#z-score)."
 
@@ -1385,7 +1385,7 @@ The deviation from the [MEAN](cm-functions.md#mean), divided by the standard dev
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_t_test"
+>id="functions-t-test"
 >title="T-Test"
 >abstract="Performs an m-tailed t-test with t-score of x and n degrees of freedom."
 
@@ -1432,7 +1432,7 @@ The return value is the probability of seeing the test statistic x given the deg
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_tangent"
+>id="functions-tan"
 >title="Tangent"
 >abstract="Returns the tangent of the given angle. If the angle is in degrees, multiply the angle by PI()/180."
 
@@ -1453,7 +1453,7 @@ Returns the tangent of the given angle. If the angle is in degrees, multiply the
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_z_score"
+>id="functions-z-score"
 >title="Z-Score"
 >abstract="The deviation from the mean divided by the standard deviation."
 
@@ -1487,7 +1487,7 @@ Where ***[!DNL x]*** is the raw score, ***[!DNL μ]*** is the mean of the popula
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_z_test"
+>id="functions-z-test"
 >title="Z-Test"
 >abstract="Performs an n-tailed z-test with a z-score of x."
 
