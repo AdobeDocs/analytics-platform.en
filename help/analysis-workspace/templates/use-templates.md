@@ -1342,6 +1342,24 @@ The following templates are available:
 
 ### Other Channels {#other-channels}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--pointOfSale"
+>title="View point-of-sale (POS) transaction data, including revenue earned, orders made, and units sold. This template also includes visualizations that display information about top stores, top products, and top product categories, as well as online vs. offline sales."
+>abstract="**This can help you** better understand which are your top-selling products across store location and online.<br/>**Based on what you learn, you might** do any number of things, like assign more marketing resources to your highest-performing products and channels."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--survey"
+>title="View user engagement for your surveys. View the number of starts and completions, the top questions and answers, and the number of first vs. repeat participants."
+>abstract="**This can help you** better understand the engagement levels and success rate of your surveys.<br/>**Based on what you learn, you might** do any number of things, like adjust future surveys to yield better participation."
+
+<!-- markdownlint-enable MD034 -->
+
 The following templates are available:
 
 | Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
