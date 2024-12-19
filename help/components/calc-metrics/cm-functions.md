@@ -37,7 +37,7 @@ An alternative scenario is that you have two metrics of interest and one has a h
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_absolute_value"
+>id="functions-abs"
 >title="Absolute Value"
 >abstract="Returns the absolute value of a number. The absolute value of a number is the number with a positive value."
 
@@ -58,7 +58,7 @@ An alternative scenario is that you have two metrics of interest and one has a h
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_column_maximum"
+>id="functions-col-max"
 >title="Column Maximum"
 >abstract="Returns the largest value in a set of dimension elements for a metric column. MAXV evaluates vertically within a single column (metric) across dimension elements."
 
@@ -79,7 +79,7 @@ Returns the largest value in a set of dimension elements for a metric column. MA
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_column_minimum"
+>id="functions-col-min"
 >title="Column Minimum"
 >abstract="Returns the smallest value in a set of dimension elements for a metric column. MINV evaluates vertically within a single column (metric) across dimension elements."
 
@@ -101,7 +101,7 @@ Returns the smallest value in a set of dimension elements for a metric column. M
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_column_sum"
+>id="functions-col-sum"
 >title="Column Sum"
 >abstract="Adds all numeric values for a metric within a column (across the elements of a dimension)."
 
@@ -122,7 +122,7 @@ Adds all numeric values for a metric within a column (across the elements of a d
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_count"
+>id="functions-count"
 >title="Count"
 >abstract="Returns the number, or count, of non-zero values for a metric within a column (the number of unique elements reported within a dimension)."
 
@@ -143,7 +143,7 @@ Adds all numeric values for a metric within a column (across the elements of a d
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_exponent"
+>id="functions-exp"
 >title="Exponent"
 >abstract="Returns e raised to the power of a given number. The constant e equals 2.71828182845904, the base of the natural logarithm. EXPONENT is the inverse of LN, the natural logarithm of a number."
 
@@ -163,7 +163,7 @@ Adds all numeric values for a metric within a column (across the elements of a d
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_mean"
+>id="functions-mean"
 >title="Mean"
 >abstract="Returns the arithmetic mean, or average, for a metric in a column"
 
@@ -185,7 +185,7 @@ Adds all numeric values for a metric within a column (across the elements of a d
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_median"
+>id="functions-median"
 >title="Median"
 >abstract="Returns the median for a metric in a column. The median is the number in the middle of a set of numbers. That is, half the numbers have values that are greater than or equal to the median, and half are less than or equal to the median."
 
@@ -207,7 +207,7 @@ Adds all numeric values for a metric within a column (across the elements of a d
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_modulo"
+>id="functions-modulo"
 >title="Modulo"
 >abstract="Returns the remainder after dividing x by y using Euclidean division. "
 
@@ -244,7 +244,7 @@ MODULO(MODULO(x,y)+y,y)
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_percentile"
+>id="functions-percentile"
 >title="Percentile"
 >abstract="Returns the nth percentile, which is a value between 0 and 100. When n < 0, the function uses zero. When n > 100, the function returns 100."
 
@@ -268,7 +268,7 @@ MODULO(MODULO(x,y)+y,y)
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_power_operator"
+>id="functions-pow"
 >title="Power Operator"
 >abstract="Returns x raised to the y power."
 
@@ -289,7 +289,7 @@ Returns x raised to the y power.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_quartile"
+>id="functions-quartile"
 >title="Quartile"
 >abstract="Returns the quartile of values for a metric. For example, quartiles can be used to find the top 25% of products driving the most revenue."
 
@@ -312,7 +312,7 @@ Returns x raised to the y power.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_round"
+>id="functions-round"
 >title="Round"
 >abstract="Round without a *number* parameter is the same as round with a *number* parameter of 0, namely round to the nearest integer.  With a *number* parameter, ROUND returns the *number* digits to the right of the decimal.  If *number* is negative, it returns 0's to the left of the decimal."
 
@@ -341,7 +341,7 @@ ROUND( 314.15, -2) = 300
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_count"
+>id="functions-count-rows"
 >title="Row Count"
 >abstract="Returns the count of rows for a given column (the number of unique elements reported within a dimension). *Uniques exceeded* is counted as 1."
 
@@ -357,7 +357,7 @@ Returns the count of rows for a given column (the number of unique elements repo
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_max"
+>id="functions-row-max"
 >title="Row Max"
 >abstract="Maximum of the columns of each row."
 
@@ -378,7 +378,7 @@ Maximum of the columns of each row.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_min"
+>id="functions-row-min"
 >title="Row Min"
 >abstract="Minimum of the columns of each row."
 
@@ -400,7 +400,7 @@ Minimum of the columns of each row.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_row_sum"
+>id="functions-row-sum"
 >title="Row Sum"
 >abstract="Sum of the columns of each row."
 
@@ -420,7 +420,7 @@ Sum of the columns of each row.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_square_root"
+>id="functions-sqrt"
 >title="Square Root"
 >abstract="Returns the positive square root of a number. The square root of a number is the value of that number raised to the power of 1/2."
 
@@ -441,7 +441,7 @@ Sum of the columns of each row.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_standard_deviation"
+>id="functions-stdev"
 >title="Standard Deviation"
 >abstract="Returns the standard deviation, or square root of the variance, based on a sample population of data."
 
@@ -462,7 +462,7 @@ Sum of the columns of each row.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="calcmetrics_function_variance"
+>id="functions-variance"
 >title="Variance"
 >abstract="Returns the variance based on a sample population of data."
 
