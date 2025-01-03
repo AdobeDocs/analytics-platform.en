@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_retention_button"
+>id="workspace_guidedanalysis_retention_button"
 >title="Retention"
 >abstract="Measure how many users continue to use your product."
 

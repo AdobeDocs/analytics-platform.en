@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_quickinsights_button"
+>id="workspace_quickinsights_button"
 >title="Quick insights"
 >abstract="Create a panel to quickly build a freeform table and accompanying visualization to analyze and uncover insights faster."
 

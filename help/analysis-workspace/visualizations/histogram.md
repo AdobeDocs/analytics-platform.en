@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_histogram_button"
+>id="workspace_histogram_button"
 >title="Histogram"
 >abstract="Create a histogram visualization to represent the distribution of numerical data in groups of ranges."
 

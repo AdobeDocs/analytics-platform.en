@@ -54,7 +54,7 @@ The following visualization types are available in Analysis Workspace:
 
    * On the panel where you want to add the visualization, select ![AddCircle](/help/assets/icons/AddCircle.svg), then choose the icon that represents the visualization that you want to add. Hover over the icon for each visualization to see the name.
 
-   * Add a [blank panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel), then select the visualization that you want to add.
+   * Add a [blank panel](/help/analysis-workspace/c-panels/blank-panel.md), then select the visualization that you want to add.
 
    * From the context menu of an existing visualization in your Analysis Workspace project, select **[!UICONTROL Duplicate visualization]** or **[!UICONTROL Copy visualization]**.
 

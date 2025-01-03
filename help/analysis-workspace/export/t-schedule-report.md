@@ -84,7 +84,7 @@ For more information, see [Scheduled projects](/help/components/scheduled-projec
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_sendfile_password"
+>id="workspace_sendfile_password"
 >title="Password encryption"
 >abstract="The supplied password will be used to encrypt the file for the scheduled project. The security requirements for your organization require password encryption."
 

@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_fallout_button"
+>id="workspace_fallout_button"
 >title="Fallout"
 >abstract="Creates a visualization to view how people successfully proceed to desired checkpoints."
 

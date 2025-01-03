@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_line_button"
+>id="workspace_line_button"
 >title="Line"
 >abstract="Create a line visualization that shows how values change over a period of time. A line visualization can only be used when time is used as a dimension."
 

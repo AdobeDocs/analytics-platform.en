@@ -43,6 +43,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Recommended process](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
     + [Understand Analytics implementation](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
     + [Create lookup datasets for classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+    + [Monitor dataset ingestion](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
     + [Create a marketing channel derived field](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
     + [Implement the loader tag for the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
     + [Create a tag for your property](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
@@ -61,6 +62,9 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
     + [Create the Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
     + [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+    + [Use the Analytics source connector exclusively](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)
+    + [Move from the Analytics source connector to the Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
+    + [Disable AppMeasurement data collection](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -140,7 +144,9 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Hotkeys (Shortcuts)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Color palettes](../analysis-workspace/build-workspace-project/color-palettes.md)
     + [View density](../analysis-workspace/build-workspace-project/view-density.md)
-  + [Use templates](../analysis-workspace/templates/use-templates.md)
+  + Templates {#templates}
+    + [Use templates](../analysis-workspace/templates/use-templates.md)
+    + [Create and manage templates](../analysis-workspace/templates/create-templates.md)
   + Visualizations {#visualizations}
     + [Overview](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
     + [Manage data sources](../analysis-workspace/visualizations/t-sync-visualization.md)
@@ -352,9 +358,12 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Cancel reporting requests](../reporting-activity-manager/reporting-activity-cancel-requests.md)
 
 + Stitching {#stitching}
-  + [Overview](../stitching/overview.md)
-  + [Create and manage stitched datasets](../stitching/stitching-ui.md)
-  + [Frequently Asked Questions](../stitching/faq.md)  
+  + [Overview](/help/stitching/overview.md)
+  + [Field based stitching](/help/stitching/fbs.md)
+  + [Graph based stitching](/help/stitching/gbs.md)
+  + [Use stitching](/help/stitching/use-stitching.md)
+  + [Create and manage stitched datasets](/help/stitching/stitching-ui.md)
+  + [Frequently Asked Questions](/help/stitching/faq.md)  
 
 + Adobe integrations {#integrations}
   + [Overview](/help/integrations/overview.md)

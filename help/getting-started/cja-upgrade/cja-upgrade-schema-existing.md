@@ -1,6 +1,6 @@
 ---
-title: Create a schema for Customer Journey Analytics
-description: Learn about the recommended path when upgrading from Adobe Analytics to Customer Journey Analytics
+title: Choose your schema for Customer Journey Analytics
+description: Learn about the options available when choosing a schema for Customer Journey Analytics and the advantages and disadvantages of each
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,21 +8,36 @@ hide: yes
 hidefromtoc: yes
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
 ---
-# Use your Adobe Analytics schema with Customer Journey Analytics
+# Choose your schema for Customer Journey Analytics
 
 >[!NOTE]
 >
 >This documentation should be used as part of the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/).
 
-<!-- this page exists as the "Learn more" link in the info icon for the option "I am comfortable using my Adobe Analytics schema as a basis" -->
+<!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 
-The option to use an existing Adobe Analytics schema with Customer Journey Analytics is available only if your Adobe Analytics implementation is configured with the Adobe Experience Platform Web SDK. <!-- correct? Or can you do this with an AppMeasurement implementation?-->
+When upgrading to Customer Journey Analytics, Adobe recommends creating a custom Experience Data Model (XDM) schema to better align with the needs of your organization as you begin to use other Platform services. Alternatively, you can choose to use your existing Adobe Analytics schema.
 
-Consider the following advantages and disadvantage of using your Adobe Analytics schema with Customer Journey Analytics:
+Consider the advantages and disadvantage of each.
+
+## Create a custom schema tailored to your organization (Recommended)
+
+Adobe recommends creating a custom schema when upgrading to Customer Journey Analytics.
+
+| Advantages | Disadvantages |
+|----------|---------|
+|<ul><p>Advantages of updating to your own custom schema include:</p><ul><li>A streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use.</li><p>When changes to the schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating.</p></ul> | <p>Disadvantages of updating to your own custom schema include:</p><ul><li>Updating your schema is a time-consuming process that is required before you begin sending data to Platform.</li></ul> |
+
+## Use your existing Adobe Analytics schema
+
+The option to use your existing Adobe Analytics schema with Customer Journey Analytics is available only if your Adobe Analytics implementation is configured with the Adobe Experience Platform Web SDK. <!-- correct? Or can you do this with an AppMeasurement implementation?-->
 
 | Advantages | Disadvantages |
 |----------|---------|
 |<p>Advantages of using the Adobe Analytics schema include:</p><ul><li>Ease of upgrade<p>If you are already sending data to Adobe Analytics with the Adobe Experience Platform Web SDK, you can add an additional service to your datastream to send data to Adobe Experience Platform (which then can be used in your Customer Journey Analytics configuration).</p></li></ul> | <p>Disadvantages of using the Adobe Analytics schema include:</p><ul><li>While using the Adobe Analytics schema doesn't limit you in terms of how it can be used with other Platform applications, it does result in a schema that is more complex than it otherwise could be. This is because the Adobe Analytics schema contains many objects that are specific to Adobe Analytics that are unlikely to be used by your organization.<p>When changes to the schema are required, you have to sift through thousands of unused fields to find the field that requires updating.</p></li></ul> |
+
+
+
 
 <!-- Not sure about any of this: 
 
