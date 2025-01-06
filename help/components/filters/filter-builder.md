@@ -207,7 +207,7 @@ The table below explains, for each attribution model, which incoming events are 
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
 |  Repeating (default) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg)  |
 |  Instance  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg) |![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Remove](/help/assets/icons/Remove.svg) |
-|  Non-repeating instance  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg)  |
+|  Non-repeating instance  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |![Remove](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg)  |
 
 An example report on events using the three filters looks like:
 
