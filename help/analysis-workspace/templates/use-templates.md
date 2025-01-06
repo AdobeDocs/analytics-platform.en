@@ -59,7 +59,9 @@ The following information describes how to access and use templates from the [!U
 
    >[!NOTE]
    >
-   >   Before you can use these templates, an administrator must first add the required context labels for these missing components to the data view. For more information, see [Add missing components to the data view for a given template](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) in [Use templates](/help/analysis-workspace/templates/create-templates.md).
+   >Before you can use these templates, an administrator must first add the required context labels for these missing components to the data view. For more information, see [Add missing components to the data view for a given template](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) in [Use templates](/help/analysis-workspace/templates/create-templates.md).
+   >
+   >For more information about context labels, see [Component settings](/help/data-views/component-settings/overview.md).
 
    1. Select the filter icon.
    
