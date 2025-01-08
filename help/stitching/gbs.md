@@ -141,7 +141,7 @@ The following prerequisites apply specifically to graph-based stitching:
 The following limitations apply specifically to graph-based stitching:
 
 - Timestamps are not taken into account when querying for the transient id using the specified namespace. So, it is possible that a persistent ID is stitched with a transient ID from a record that has an earlier timestamp.
-- No shared device support. When multiple identities are returned, by querying the identity graph using a namespace, the first lexicographic identity is used.
+- In shared device scenarios, where the namespace in the graph contains multiple identities, the first lexicographic identity is used. If namespace limits and priorities are configured as part of the release of graph-linking rules, the last authenticated user's identity is used. See [Shared devices](/help/use-cases/stitching/shared-devices.md) for more information.
 - There is a hard limit of three months of backfilling identities into the identity graph. You would use backfilling identities in case you are not using an Experience Platform application, like Real-time Customer Data Platform, to populate the identity graph.
 - The [Identity Service guardrails](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) apply. See, for example, the following [static limits](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
   - Maximum number of identities in a graph: 50.

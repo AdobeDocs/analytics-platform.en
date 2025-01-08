@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_experimentation_button"
+>id="workspace_experimentation_button"
 >title="Experimentation"
 >abstract="Create a panel to compare different user experiences, marketing, or messaging variations. And to determine which variation is best at driving a specific outcome."
 
@@ -19,7 +19,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_experimentation_panel"
+>id="workspace_experimentation_panel"
 >title="Experimentation"
 >abstract="Compare different user experiences, marketing, or messaging variations to determine which is best at driving a specific outcome.<br/><br/>**Parameters**<br/>**Experiment**: The experiment that is analyzed.<br>**Control variant**: Control variant for the selected experiment.<br/>**Success metric**: Up to 5 standard (non-calculated) success metrics to analyze the experiment against.<br/>**Normalizing metric**: People, sessions, or events. This metric (also referred to as the counting methodology) becomes the denominator of the lift calculation. This metric also affects how the data is aggregated before the confidence calculation is applied."
 

@@ -10,12 +10,12 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_flow_button"
+>id="workspace_flow_button"
 >title="Flow"
 >abstract="Create a visualization to view the flow of people from one checkpoint to the next."
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_flow_panel"
+>id="workspace_flow_panel"
 >title="Flow"
 >abstract="Analyze the flow of visits or visitors from one touchpoint to the next.<br/><br/>**Parameters**<br/>**Starts with**: Add a dimension, dimension item, or metric to see the top occurring touchpoints after the occurrence of the selected component.<br/>**Contains**: Add a dimension or dimension item to see the top occurring touchpoints before and after the occurrence of the selected component.<br/>**Ends with**: Add a dimension, dimension item, or metric to see the top occurring touchpoints before the occurrence of the selected component.<br/>**Pathing dimension**: Add a dimension to use as your path leading to or going from your selected component."
 

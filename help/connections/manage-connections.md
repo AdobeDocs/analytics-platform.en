@@ -200,6 +200,90 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 
 ## Usage
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_keyusagemetrics"
+>title="Key usage metrics" 
+>abstract="Provide monthly and total data for core and historical reportable rows."
+
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_monthlyingestedrows"
+>title="Monthly ingested rows"
+>abstract="Measures the total number of records added to the system each month to provide insights into data growth and ingestion rates."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_monthlyreportablerows"
+>title="Monthly reportable rows"
+>abstract="Tracks the number of rows available for reporting. Reportable rows are the ingested rows minus the  rows that are skipped and deleted during ingestion. Reportable rows serve as a key metric for billing and data usage."
+
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_detailbreakdown"
+>title="Detail breakdown."
+>abstract="You can view detailed metrics by connection, dataset, sandbox, and tags, with the option to download a CSV file of the data."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_otherdatasets"
+>title="Other datasets"
+>abstract="For months before September 2024, data was collected at the dataset level and is displayed as *Other datasets* for clarity. Starting from September 2024, data is gathered at a granular dataset level, and *Other datasets* will no longer appear."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_unknowndatasetsorconnections"
+>title="Unknown datasets or connections"
+>abstract="Unknown datasets or connections are displayed using their IDs."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_datanotavailable"
+>title="Data not available"
+>abstract="Historical data prior to September 2024 is not available due to system limitations. Metrics are collected and displayed starting from September 2024 onwards. The chart shows the last 18 months on the timeline, and future data will appear as the data becomes available."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_corereportablerows"
+>title="Core reportable rows"
+>abstract="Displays the total number of rows available for the past 13 months. For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_historicalreportablerows"
+>title="Historical reportable rows"
+>abstract="Displays the total number of rows available for the period older than 13 months. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023."
+
+<!-- markdownlint-enable MD034 -->
+
+
 The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage UI to plan your Customer Journey Analytics license renewal.
 
 You can select a time range (between last 6 months, year to date, or last 2 Years) and an interval (between monthly or quarterly) to monitor Customer Journey Analytics usage. The interface is divided into two sections:

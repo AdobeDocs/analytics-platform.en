@@ -12,7 +12,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_summarynumber_button"
+>id="workspace_summarynumber_button"
 >title="Summary number"
 >abstract="Create a visualization that shows totals and subtotals."
 
@@ -39,7 +39,7 @@ As part of the visualization settings, specific Summary number options are avail
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_summarychange_button"
+>id="workspace_summarychange_button"
 >title="Summary change"
 >abstract="Create a visualization that shows the delta (change) between two numbers"
 
