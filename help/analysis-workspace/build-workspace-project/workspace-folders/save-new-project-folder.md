@@ -8,6 +8,9 @@ role: User
 ---
 # Save a New Project to a Folder
 
+<!-- Is this article still needed -->
+
+
 To save a new project to a specific folder, select the folder name in the Save project dialogue window.
 
 1. In Workspace, create a new project.

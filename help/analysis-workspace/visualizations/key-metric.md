@@ -5,13 +5,23 @@ feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
 ---
-# Key metric summary
+# Key metric summary {#key-metric-summary}
 
-The [!UICONTROL Key metric summary] visualization lets you see how an important metric is trending within a single timeframe. It also lets you compare metric performance across two timeframes. It provides the benefits of multiple visualizations combined into one visualization:
+<!-- markdownlint-disable MD034 -->
 
-* **[!UICONTROL Line]** visualizations that show how the metric is trending for the primary and comparison date ranges
+>[!CONTEXTUALHELP]
+>id="workspace_keymetricsummary_button"
+>title="Key metric summary"
+>abstract="Create a visualization that is a combination of the line, summary change, and summary number charts. Use this visualization to compare how important metrics are trending between two periods of time."
 
-* **[!UICONTROL Summary percent change]** that shows the metric increase or decrease between the primary and comparison date ranges
+<!-- markdownlint-enable MD034 -->
+
+
+The ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Key metric summary]** visualization lets you see how an important metric is trending within a single timeframe. It also lets you compare metric performance across two timeframes. It provides the benefits of multiple visualizations combined into one visualization:
+
+* **[!UICONTROL Line]** visualization shows how the metric is trending for the primary and comparison date ranges
+
+* **[!UICONTROL Summary percent change]** shows the metric increase or decrease between the primary and comparison date ranges
 
 * Current total value ([!UICONTROL **summary number**]) for the metric
 
@@ -25,15 +35,15 @@ This visualization addresses various common use cases, including:
 
 * An executive wanting to understand how new bookings changed from this quarter to last quarter.
 
-## Configure the Key metric summary
+## Use
 
-1. Drag the **[!UICONTROL Key metric summary]** visualization from the **[!UICONTROL Visualizations]** menu in the left rail into a panel.
+1. Add a ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Key metric summary]** visualization. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
-1. Configure the visualization by selecting a metric, a primary date range, and a comparison date range and a filter (if desired):
+1. Configure the visualization by selecting a **[!UICONTROL Metric]**, a **[!UICONTROL Primary date range]**, a **[!UICONTROL Comparison date range]** (optional) and a **[!UICONTROL Filter]** (optional):
 
-   ![Key metric configuration showing the options for metric, primary date range, comparison date range, and segment.](assets/key-metric-config.png)
+   ![Key metric configuration showing the options for metric, primary date range, comparison date range, and segment.](assets/key-metrics-config.png)
 
-   | Configuration setting | Definition |
+   | Option| Description |
    | --- | --- |
    | **[!UICONTROL Metric]** | Select the metric you want to examine. All metrics are supported. |
    | **[!UICONTROL Primary date range]** | The current date range for the freeform table.<p>Choose from any available date ranges in your data view.</p> <p>Choose [!UICONTROL **Panel date range**] if you want to use the same date range that is being used on the panel where the visualization is located.</p>  |
@@ -78,9 +88,9 @@ Comparison date range is set to a non-relative date range, such as 'Feb 2nd, 202
 
 When you change the panel's date range to '4 days ago', the comparison date range remains at the previous selection. -->
 
-## View the output
+The output of the key metric summary looks like:
 
-![Key metric output showing the metic, summary change, summary number, and line graphs.](assets/key-metric-output.png)
+![Key metric output showing the metic, summary change, summary number, and line graphs.](assets/key-metrics.png)
 
 Consider the following when viewing the output:
 
@@ -90,13 +100,20 @@ Consider the following when viewing the output:
 
 * From here, you can hover over the line graphs to see the statistics for individual days:
 
-![Visit statistics](assets/key-metric-output2.png)
 
-## Visualization settings
+## Configure
 
-The Key metric summary offers multiple flexible settings to enable better reporting and communication of important metrics. Settings can be accessed through the gear icon in the top right-hand corner of the visualization.  
+After building the visualization, you can edit the original configuration. 
 
-![Key metric summary settings showing Summary display type, general, and display options.](assets/key-metric-settings.png)
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Configure visualization]** at the top of the visualization.
+
+   You are taken back to the original configuration dialog. 
+
+1. Change the settings as preferred. Select **[!UICONTROL Reset]** to reset the current settings. Select **[!UICONTROL Build]** to rebuild the visualization.
+
+## Settings
+
+As part of the visualization settings, specific key metric summary settings are available.
 
 | Setting | Description |
 | --- | --- |

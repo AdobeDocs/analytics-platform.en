@@ -6,14 +6,14 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: User
 ---
-# Use Marketing channel dimensions in Adobe Experience Platform
+# Use Marketing channel dimensions
 
 If your organization uses the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) to bring report suite data into Customer Journey Analytics, you can configure a connection in Customer Journey Analytics to report on Marketing Channel dimensions.
 
 ## Prerequisites
 
 * Report suite data must already be imported into Adobe Experience Platform using the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Other sources of data are not supported, as Marketing channels rely on processing rules in an Analytics report suite.
-* Marketing channel processing rules must already be set up. See [Processing rules for Marketing Channels](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=en) in the Adobe Analytics Components guide.
+* Marketing channel processing rules must already be set up. See [Processing rules for Marketing Channels](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html) in the Adobe Analytics Components guide.
 
 ## Marketing Channel schema elements
 

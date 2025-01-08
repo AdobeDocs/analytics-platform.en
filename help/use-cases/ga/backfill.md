@@ -1,5 +1,5 @@
 ---
-title: Ingest Google Analytics historical data into Adobe Experience Platform
+title: Ingest Google Analytics historical data
 description: Explains how to use Adobe Customer Journey Analytics to ingest your Google Analytics data into Adobe Experience Platform. 
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
@@ -7,7 +7,7 @@ feature: Use Cases
 role: Admin
 ---
 
-# Ingest Google Analytics historical data into Adobe Experience Platform
+# Ingest Google Analytics historical data
 
 This page focuses on how to ingest your Google Analytics historical data into Adobe Experience Platform as a dataset, allowing you to reference that dataset in a Data View within Customer Journey Analytics. You can combine the steps on this page with [Configuring a live Google Analytics implementation](streaming.md), which generates a recurring dataset. Combine this historical dataset with your current implementation's dataset to get a seamless view of data in Customer Journey Analytics with both current and backfilled data.
 
@@ -17,7 +17,7 @@ In order to accomplish these tasks, you need the following access and permission
 
 * Access to Adobe Experience Platform
 * Access to Google Analytics (GA Standard or GA 360)
-* [Admin Access](/help/admin/cja-access-control.md) to Customer Journey Analytics
+* [Admin Access](/help/technotes/access-control.md) to Customer Journey Analytics
 
 ## Set up a BigQuery Export
 

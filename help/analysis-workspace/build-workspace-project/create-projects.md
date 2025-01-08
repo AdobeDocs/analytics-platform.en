@@ -5,85 +5,78 @@ feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 ---
-# Create projects
+# Create projects {#create-projects}
 
-[Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) in Analysis Workspace allow you to view business-critical analyses that can be shared with stakeholders inside or outside your organization. 
+<!-- markdownlint-disable MD034 -->
 
-For general information about how to get started using Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).
+>[!CONTEXTUALHELP]
+>id="workspace_project_countrepeatinstances"
+>title="Count repeat instances"
+>abstract="Specifies whether repeat instances are counted in reports.<br/><br/>Note: this setting does not apply to Flow or Fallout visualizations."
 
-The following sections describe how to create a project and start adding the key building blocks for any Analysis Workspace project: panels, visualizations, and components.
+<!-- markdownlint-enable MD034 -->
 
-## Begin creating a project
 
-1. In Adobe Analytics, select [!UICONTROL **Workspace**].
+[Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) in Analysis Workspace allow you to create and view business-critical analyses.  These analyses can be shared with stakeholders inside or outside your organization. 
 
-1. On the [!UICONTROL **Workspace**] tab, select the [!UICONTROL **Projects**] tab on the left side of the page, then select [!UICONTROL **Create project**].
+1. In Customer Journey Analytics, select **[!UICONTROL Workspace]**.
 
-1. Choose whether to create a blank project or a blank mobile scorecard
+1. Select **[!UICONTROL Projects]** in the left panel, then select **[!UICONTROL Create project]**.
 
-   * **Blank project** if you plan to share your analysis from the browser 
-   * [**Blank mobile scorecard**](/help/mobile-app/curator.md) if you plan to share your analysis from the Adobe Analytics dashboards mobile app.
+1. Select **Blank Workspace project** to create your Workspace project using a browser.
+
+   See [Blank mobile scorecard](/help/mobile-app/curator.md) for more information on how to create a Mobile scorecard project that you can share with other stakeholders using a mobile app. And see [Guided analysis](/help/guided-analysis/overview.md) for  more information on the various options available to create your guided analysis project.
 
 1. Select [!UICONTROL **Create**].
 
-1. Next, you need to add panels, visualizations, and components to your project. First, add panels to your project in Analysis Workspace, as described in [Add panels to the project](#add-panels-to-the-project). You can then add visualizations to any panels. Finally, you can add components to any panels or visualizations.
 
-## Add panels to the project {#panels}
+Now that you have created a Blank Workspace project, ensure you are familiar with the [Analysis Workspace](/help/analysis-workspace/home.md) user interface. Once you are, you can build your project. To do so:
 
-[Panels](/help/analysis-workspace/c-panels/panels.md) are the foundation to any project in Analysis Workspace. Panels are used to organize the content (visualizations and components) of a project. 
+  ![Example project](assets/example-project.png)
 
-Many of the panels provided in Analysis Workspace generate a full set of analyses based on a few user inputs. 
+* Add [panels](/help/analysis-workspace/c-panels/panels.md) to your project. For example, the **[!DNL Example Panel]** ➊.
+   
+* Add [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to your panels. For example: 
+  * **[!DNL Line Graph]** [Line](/help/analysis-workspace/visualizations/line.md) visualization ➋  
+  * **[!DNL Countries]** [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualization ➌
+* Add [components](/help/components/overview.md) to your visualizations. For example:
+  * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md) ➍
+  * **[!DNL People]** [metric](/help/components/apply-create-metrics.md) ➎ 
+  * **[!DNL Avg Order Value]** [calculated metric](/help/components/calc-metrics/calc-metr-overview.md) ➏ 
+  * **[!DNL Mobile App Sessions]** [filter](/help/components/filters/filters-overview.md) ➐
+  * **[!DNL Last Month]** [date range](/help/components/date-ranges/overview.md) ➑ 
+  * **[!DNL Example]** [annotation](/help/components/annotations/overview.md) ➒
 
-To add a panel:
 
-1. Select the [!UICONTROL **Panels**] icon in the left rail.
+## Project Info & Settings {#project-info-settings}
 
-   ![The select Panels icon and the list of available panels.](assets/build-panels.png)
+<!-- markdownlint-disable MD034 -->
 
-1. Search for the panel you want to add. When it appears in the left rail, drag it into your project.
+>[!CONTEXTUALHELP]
+>id="workspace_project_repeatinstances"
+>title="Count repeat instances"
+>abstract="Specifies whether repeat instances are counted in reports.<br/>Note: this setting does not apply to Flow or Fallout visualizations."
 
-1. Add visualizations to your panel, as described in [Add visualizations to the project](#add-visualizations-to-the-project). 
+<!-- markdownlint-enable MD034 -->
 
-   Alternatively, you can add components directly to a panel, as described in [Add components to the project](#add-components-to-the-project).
 
-## Add visualizations to the project
+Project settings provides project-level information on the currently active project.
 
-[Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) (such as a freeform table, a bar chart, or a line chart) can be used to visually bring data to life. 
+![The Project Info & Settings window.](./assets/projectinfo.png)
 
->[!TIP]
->
->Freeform tables are the most common type of visualization, and are the foundation for interactive data analysis. For more details about how to work with Freeform tables in Analysis Workspace, see [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
+Settings include:
 
-To add a visualization:
+|  Setting  | Description  |
+|---|---|
+|  Project name  | The name given to the project. You can double-click the name to edit it.  |
+|  Owner  | Project owner name  |
+|  Last modified  | Date of last modification to the project.  |
+|  Tags  |Lists any tags applied to a project for easier categorization.  |
+|  Description  | A description is useful for clarifying the purpose of a project. You can double-click the description to edit it.  |
+|  Count repeat instances  | Specify whether repeat instances are counted in reports. Note: this setting does not apply to Flow or Fallout visualizations.  |
+| Show annotations | Specify whether annotations are shown for this project or not. |
+|  [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md)  | You can change the categorical color palette used in Workspace, by choosing from out-of-the-box palettes that have been optimized for color blindness, or by specifying your custom palette. This feature affects many things in Workspace, including most visualizations.  |
+| [View Density](/help/analysis-workspace/build-workspace-project/view-density.md) | Lets you see more data on the screen by reducing the vertical padding of the left panel, freeform tables and cohort tables. |
 
-1. Select the **[!UICONTROL Visualizations]** icon in the left rail.
 
-   ![The selected Visualizations icon and the list of available visualizations.](assets/build-visualizations.png)
 
-1. Search for the visualization you want to add. When it appears in the left rail, drag it to a panel within your project. 
-
-1. Add components to the visualization, as described in [Add components to the project](#add-components-to-the-project).
-
-## Add components to the project
-
-[Components](/help/components/overview.md) make up the actual data of any project. You can add components to visualizations or to panels.
-
->[!TIP]
->
->For information about each component, select the Info icon next to a component's name in the left rail, or see the [Components overview](/help/components/overview.md).
-
-To add a component:
-
-1. Select the **[!UICONTROL Components]** icon in the left rail.
-
-   ![The selected Components icon and the list of available dimensions.](assets/build-components.png)
-
-1. Search for the component you want to add. When it appears in the left rail, drag it to a panel or visualization within your project. 
-
-1. (Optional) Share the project as described in [Save and share the project](#save-and-share-the-project).
-
-## Save and share the project
-
-As you create an analysis in Analysis Workspace, your work is [automatically saved](/help/analysis-workspace/build-workspace-project/save-projects.md). 
-
-When you finish building out the project and it's gathering actionable insights, the project is ready to be consumed by others. You can share the project with users and groups in your organization, or even with people outside your organization. For information about sharing a project, see [Share projects](/help/analysis-workspace/curate-share/share-projects.md).

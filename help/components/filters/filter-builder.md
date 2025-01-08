@@ -2,137 +2,213 @@
 description: The Filter builder provides a canvas to drag and drop Metric Dimensions, Filters, and Events to filter persons based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple or complex filters that identify person attributes and actions across visits and events.
 title: Build filters
 feature: Filters
-exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
 role: User
+exl-id: 160021f1-6942-4682-9114-d375307d9912
 ---
-# Filter builder
+# Build filters {#build-filters}
 
-The [!UICONTROL Filter builder] lets you build simple or complex filters that identify person attributes and actions across visits and events. It provides a canvas to drag and drop metric dimensions, events, or other filters in order to filter persons based on hierarchy logic, rules, and operators.
+<!-- markdownlint-disable MD034 -->
 
-For information about how to create quick filters that apply only to the project where they are created, see [Quick filters](/help/components/filters/quick-filters.md).
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_createaudience"
+>title="Create Audience"
+>abstract="Audiences can be created from a filter and shared with the Adobe Experience Platform for activation."
 
-## Access the Filter builder
+<!-- markdownlint-enable MD034 -->
 
-You can access the Filter builder in any of the following ways:
+<!-- markdownlint-disable MD034 -->
 
-* **Top navigation**: Click **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]**.
-* **[!UICONTROL Analysis Workspace]**: With a project open in Analysis Workspace, select **[!UICONTROL + Components]** > **[!UICONTROL Create filter]**.
-* **[!UICONTROL Report Builder]**: [Work with Filters in Report Builder](/help/report-builder/work-with-filters.md).
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_datapreview"
+>title="Data preview"
+>abstract="Compares the data of this filter with data of the data view. The preview percentage is based on the total number in the data view from the **last 90 days**.<br><br/>If the preview is not loading, your connection could still be backfilling."
 
-## Builder criteria overview {#section_F61C4268A5974C788629399ADE1E6E7C}
+<!-- markdownlint-enable MD034 -->
 
-You can add rule definitions and containers to define your filters. (For information about accessing the Filter builder, see [Access the Filter builder](#access-the-filter-builder).)
 
-![Filter builder showing New filter options described in this section.](assets/segment_builder_ui_2.png)
 
-| UI element | Description|
-| --- | --- |
-| **[!UICONTROL Title]** |  Name the filter |
-| **[!UICONTROL Description]** |  Provide a detailed description for the filter. |
-| **[!UICONTROL Tags]** | [Tag the filter](/help/components/filters/manage-filters.md) you are creating by picking from a list of existing tags or creating a new tag. |
-| **[!UICONTROL Definitions]** | This is where you [build and configure filters](/help/components/filters/filters-overview.md), add rules, and nest and sequence containers. |
-| **[!UICONTROL Include]** | (Top Container selector.) Lets you select the top-level [container](/help/components/filters/filters-overview.md) ( [!UICONTROL Person], [!UICONTROL Session], [!UICONTROL Event]). The default top-level container is the Event container. |
-| **[!UICONTROL Options]** | (gear) icon | <ul><li>**[!UICONTROL + Add container]**: Lets you add a new container (below the top-level container) to the filter definition.</li><li>**[!UICONTROL Exclude]**: Lets you define the filter by excluding one or more dimensions, filters, or metrics.</li></ul> |
-| **[!UICONTROL Dimensions]** | Components are dragged and dropped from the Dimensions list (orange sidebar). |
-| **[!UICONTROL Operator]** | You can compare and constrain values using selected operators. (equals, does not equal, contains, contains all of, etc.) |
-| **[!UICONTROL Value]** | The value you entered or selected for the dimension or filter or metric. |
-| **[!UICONTROL Attribution Models]** | Available for dimensions only, these models determine what values in a dimension to filter for. Dimension models are particularly useful in sequential filters.<ul><li>**[!UICONTROL Repeating]** (default): Includes instances and persisted values for the dimension.</li><li>**[!UICONTROL Instance]**: Includes instances for the dimension.</li><li>**[!UICONTROL Non-repeating instance]**: Includes unique instances (non-repeating) for the dimension. This is the model applied in Flow when repeat instances are excluded.</li></ul>For an example, see the "Attribution models" section below. |
-| **[!UICONTROL And/Or/Then]** | Assigns the [!UICONTROL AND/OR/THEN] operators between containers or rules. The THEN operator lets you [define sequential filters](/help/components/filters/filters-overview.md). |
-| **[!UICONTROL Metric]** | (Green sidebar) Metric that was dragged and dropped from the Metrics list. |
-| **[!UICONTROL X]** | (Delete) Lets you delete this part of the filter definition. |
-| **[!UICONTROL Create audience from filter]** | Creating an audience from a filter lets you share the filter with Adobe Experience Platform for activation. [Learn more...](/help/components/audiences/audiences-overview.md) |
-| **[!UICONTROL Search component]** | Searches the list of dimensions, filters, or metrics. |
-| **[!UICONTROL Dimensions]** | (List) The list of dimensions you can include in the filter. Click the header to expand. |
-| **[!UICONTROL Metrics]** | The list of metrics you can include in the filter. Click the header to expand. |
-| **[!UICONTROL Filters]** | The list of existing filters you can include in the filter. Click the header to expand. |
-| **[!UICONTROL Data View selector]** | Lets you select the report suite that this filter will be saved under. You can still utilize the filter in all data views.|
-| **[!UICONTROL Filter Preview]** | Lets you preview the key metrics to see whether you have a valid filter and how broad the filter is. Represents the breakdown of the dataset you can expect to see if you apply this filter. Shows 3 concentric circles and a list to show the number and percentage of matches for [!UICONTROL People], [!UICONTROL Sessions], and [!UICONTROL Reports Run] for a filter run against a dataset.<p>This chart is updated immediately after you create or make changes to your filter definition. |
-| **[!UICONTROL Save]** or **[!UICONTROL Cancel]** | Saves or cancels the filter. After clicking **[!UICONTROL Save]**, you are taken to the Filter Manager where you can manage the filter. |
+The **[!UICONTROL Filter builder]** dialog is used to create new or edit existing filters. The dialog is titled **[!UICONTROL New filter]** or **[!UICONTROL Edit filter]** for filters that you create or manage from the [[!UICONTROL Filters] manager](/help/components/filters/manage-filters.md).
 
-## Build a filter {#build-filters}
+>[!BEGINTABS]
 
-1. Simply drag a Dimension, Filter, or Metric Event from the left pane to the [!UICONTROL Definitions] field.
+>[!TAB Filter builder] 
 
-   ![](assets/drag_n_drop_dimension.png)
+![Filter details window showing fields and options described in the next section.](assets/filter-builder.png)
 
-1. Set the [operator](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-operators.html) from the drop-down menu.
-1. Enter or select a value for the item selected.
-1. Add additional containers if needed, using **[!UICONTROL And]**, **[!UICONTROL Or]**, or **[!UICONTROL Then]** rules.
-1. After placing the containers and setting the rules, see the results of the filter in the validation chart at the top right. The validator indicates the percentage and absolute number of page views, visits, and unique persons that match the filter you created.
-1. Under **[!UICONTROL Tags]**, [tag](/help/components/filters/filters-tag.md) the container by selecting an existing tag or creating a new one.
-1. Click **[!UICONTROL Save]** to save the filter.
+>[!TAB Create or Edit filter] 
 
-   You are taken to the [Filters manager](/help/components/filters/manage-filters.md), where you can tag, share, and manage your filter in multiple ways.
+![Filter details window showing fields and options described in the next section.](assets/create-edit-filter.png)
 
-## Add containers {#containers}
+>[!ENDTABS]
 
-You can [build a framework of containers](/help/components/filters/filters-overview.md) and then place logic rules and operators between.
+1. Specify the following details (![Required](/help/assets/icons/Required.svg) is required):
 
-1. Click **[!UICONTROL Options > Add container]**.
+   | Element | Description |
+   | --- | --- |
+   | **[!UICONTROL Data view]** | You can select the data view for the filter.  The filter you define is available as a filter in the [Settings](/help/data-views/create-dataview.md#settings-filters) tab of a data view. | 
+   | **[!UICONTROL Project-only filter]** | An info box to explain that the filter is only visible in the project where it is created and that the filter will not be added to your component list. Enable **[!UICONTROL Make this filter available to all your projects and add it to your component list]** to change that setting. This info box is only visible when you create a [quick filter](quick-filters.md) and turn the quick filter info a regular filter using **[!UICONTROL Open builder]** from the [!UICONTROL Quick filter] interface. |
+   | **[!UICONTROL Title]** ![Required](/help/assets/icons/Required.svg) | Name the filter, for example, `Last month mobile customers`. |
+   | **[!UICONTROL Description]** | Provide a description for the filter, for example, `Filter to define the mobile customers for the last month`. |
+   | **[!UICONTROL Tags]**| Organize the filter by creating or applying one or more tag. Start typing to find existing tags you can select. Or press **[!UICONTROL ENTER]** to add a new tag. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a tag. |
+   | **[!UICONTROL Definition]** ![Required](/help/assets/icons/Required.svg)| Define your filter using the [Definition builder](#definition-builder). |
+   
+   {style="table-layout:auto"}
+   
+1. To verify whether your filter definition is correct, use the constantly updated preview of the results of the filter at the top right.
+1. To create an audience from the filter and share the audience with Experience Platform, select **[!UICONTROL Create audience from filter]**. See [Create and publish audiences](/help/components/audiences/publish.md) for more information.
+1. Select:
+   * **[!UICONTROL Save]** to save the filter.
+   * **[!UICONTROL Save As]** to save a copy of the filter. 
+   * **[!UICONTROL Delete]** to delete the filter.
+   * **[!UICONTROL Cancel]** to cancel any changes you made to the filter or cancel the creation of a new filter.
 
-   A new [!UICONTROL **Event**] container opens without an [!UICONTROL **Event**] (Page View) identified.
 
-   ![](assets/new_container.png)
+## Definition builder
 
-1. Change the container type as needed.
-1. Drag a Dimension, Filter, or Event from the left pane to the container.
-1. Continue to add new containers from the top-level **[!UICONTROL Options]** > **[!UICONTROL Add container]** button at the top of the definition, or add containers from within a container to nest logic.
+You use the Definition builder to construct your filter definition. In that construction, you use components, containers, operators and logic.
 
-   **OR**
+You can configure the type and scope of your definition: 
 
-   Select one or more rules and then click **[!UICONTROL Options]** > **[!UICONTROL Add container from selection]**. This turns your selection into a separate container.
+1. To specify the type of your definition, specify whether you want the build an include or exclude definition. Select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Options]** and from the dropdown toggle **[!UICONTROL Include]** or **[!UICONTROL Exclude]**.
+1. To specify the scope of your definition, select from the **[!UICONTROL Include]** or **[!UICONTROL Exclude]** dropdown whether you want the scope of the definition to be **[!UICONTROL Event]**, **[!UICONTROL Session]** or **[!UICONTROL Person]**. 
 
-## Use date ranges {#date-ranges}
+You can always change these settings later.
 
-You can build filters that contain rolling date ranges in order to answer questions about ongoing campaigns or events.
+### Components
 
-For example, you can easily build a filter that includes "everyone who has made a purchase over the past 60 days".
+A vital part of the construction of your filter definition is using dimensions, metrics, existing filters and date ranges. All these components are available from the component panel in the Filter builder.
 
-You create a Session container and within it, add the [!UICONTROL Last 60 days] time range and the metric [!UICONTROL Orders is greater than or equal to 1], with an AND operator.
+![Start building a definition](assets/start-building-filter.gif){width=100%}
 
-Here is a video on using rolling date ranges in filters:
+To add a component:
+
+1. Drag and drop a component from the components panel onto **[!UICONTROL Drag and drop Metric(s), Filter(s), and/or Dimensions here]**. You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific components.
+1. Specify details for the component. For example, select a value from **[!UICONTROL Select value]**. Or enter a value. What and how you can specify one or more values depends on the component and the operator.
+1. Optionally modify the default operator. For example, from **[!UICONTROL equals]** to **[!UICONTROL equals any of]**. See [Operators](operators.md) for a detailed overview of the available operators.
+
+To edit a component:
+
+* Select a new operator for the component from the operator dropdown menu.
+* Select or specify a different value for the operator if appropriate. 
+* If the component type is a dimension, you can define the attribution model. See [Attribution model](#attribution-models) for more information.
+
+To delete a component:
+
+* Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) in a component.
+
+### Containers
+
+You can group multiple components in one or more containers and define logic within and between containers. Containers allow you to build complex definitions for your filter.
+
+![Add a container](assets/add-container.gif){Width=100%}
+
+* To add a container, select **[!UICONTROL Add container]** from ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Options]**.
+* To add an existing component to the container, drag and drop the component into the container.
+* To add another component to the container, drag and drop a component from the component panel into the container. Use the blue insertion line as a guide.
+* To add another component outside of the container, drag and drop a component from the component panel outside of the container, but inside the main definition container. User the blue insertion line as a guide.
+* To modify the logic between components in a container, between containers or between a container and a component, select the appropriate **[!UICONTROL And]**, **[!UICONTROL Or]**, **[!UICONTROL Then]**. When you select Then, you turn the filter into a sequential filter. See [Create sequential filter](seg-sequential-build.md) for more information.
+* To switch the container level, select ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Event]**, ![Visit](/help/assets/icons/Visit.svg) **[!UICONTROL Session]** or ![User](/help/assets/icons/User.svg) **[!UICONTROL Person]**.
+
+You can use ![Setting](/help/assets/icons/Setting.svg) in a container for the following actions:
+
+| Container action | Description |
+|---|---|
+| **[!UICONTROL Add container]** | Add a nested container to the container. |
+| **[!UICONTROL Exclude]** | Exclude the result from the container in the filter definition. A thin red left bar identifies an exclude container.  |
+| **[!UICONTROL Include]** | Include the result from the container in the filter definition. Include is the default. A thin gray left bar identifies an include container. |
+| **[!UICONTROL Name container]** | Rename the container from its default description. Type a name in the text field. If you provide no input, the default description is used. |
+| **[!UICONTROL Delete container]** | Delete the container from the definition. | 
+
+
+## Date ranges
+
+You can build filters that contain rolling date ranges. So, you are able to answer questions about ongoing campaigns or events. For example, you can build a filter that includes *everyone who has made an online purchase over the last 60 days*.
+
+![Filter using rolling date range](assets/filter-rolling-date-range.gif)
+
++++ Here is a video on using rolling date ranges in filters
 
 >[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
 
+{{videoaa}}
+
++++
+
 ## Stack filters {#stack}
 
-Stacking filters works by combining the criteria in each filter using an 'and' operator, and then applying the combined criteria. This can be done in a Workspace project directly or in Filter builder. 
+You can build a filter using filters. When you use filters in a filter, you can optimize your filter and reduce the complexity.
 
-For example, stacking a "mobile phone users" filter and a "US geography" filter would return data only for mobile phone users in the US.
+Imagine you want to filter on the combination of device type (2) and US states (50). You could either build 100 filters, each for the unique combination of device type (mobile phone versus tablet) and US state. To get the Californian tablet users, you would use one of the 100 filters:
 
-Think of these filters as building blocks or modules that you can include in a filter library, for users to use as they see fit. That way, you can dramatically reduce the number of filters needed. For example, assume you have 40 filters:
+![Simple filter for CA and tablet](assets/filter-ca-tablet-single.png)
 
-* 20 for mobile phone users in different countries (US_mobile, Germany_mobile, France_mobile, Brazil_mobile, etc.) 
-* 20 for tablet users in different countries (US_tablet, Germany_tablet, France_tablet, Brazil_tablet, etc.)
+Or, you could define 52 filters: 50 filters for the US states, one for mobile phone and one for tablet. And then stack the filters to obtain the same results. To get the Californian tablet users, you would stack two filters:
 
-By using filter stacking, you can reduce your filter count to 22 and stack them as needed. You would need to create these filters:
+![Stacked filter for CA and tablet](assets/filter-ca-tablet-stacked.png)
 
-* one filter for mobile users 
-* one filter for tablet users 
-* 20 filters for the different geographies
 
->[!NOTE]
->
->When stacking two filters, they are by default joined by an AND statement. This cannot be changed to an OR statement.
+## Attribution {#attribution}
 
-1. Go to the Filter builder.
+<!-- markdownlint-disable MD034 -->
 
-1. Provide a title and description for the filter.
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_attribution_repeating"
+>title="Repeating"
+>abstract="Includes instances and persisted values for the dimension."
 
-1. Click **[!UICONTROL Show filters]** to bring up the list of filters in the left navigation.
+<!-- markdownlint-enable MD034 -->
 
-1. Drag the filters you want to stack to the filter definition canvas.
+<!-- markdownlint-disable MD034 -->
 
-1. Select [!UICONTROL **Save**].
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_attribution_instance"
+>title="Instance"
+>abstract="Includes instances and persisted values for the dimension."
 
-## Attribution models {#attribution}
+<!-- markdownlint-enable MD034 -->
 
-![](assets/attribution-models.jpg)
+<!-- markdownlint-disable MD034 -->
 
-**Example: Event filter where eVar1 = A** 
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_attribution_nonrepeatinginstance"
+>title="Non-repeating instance"
+>abstract="Includes unique (non-repeating) instances for the dimension."
 
-|  Example  | A  | A  |  A (persisted) | B  | A  | C  |
-|---|---|---|---|---|---|---|
-|  Repeating  | X  | X  | X  | -  | X  | -  |
-|  Instance  | X  | X  | - | - | X | - |
-|  Non-repeating instance  | X | - | - | -  | X  | -  |
+<!-- markdownlint-enable MD034 -->
+
+
+
+When you use a dimension in the Filter builder, you have the options to specify the attribution model for that dimension. The attribution model you select determines whether data qualifies for the condition you have specified for the dimension component.
+
+Select ![Setting](/help/assets/icons/Setting.svg) within the dimension component and select one of the Attribution models from the popup: 
+
+| Models | Description |
+|---|---|
+| **[!UICONTROL Repeating model (default)]** | Include instance and persisted values for the dimension to determine qualification. |
+| **[!UICONTROL Instance]** | Include only instance values for the dimension to determine qualification. |
+|  **[!UICONTROL Non-repeating instance]** | Include unique instance (non-repeating) values for the dimension to determin qualification. |
+
+
+![Attribution model on dimension when building a filter](assets/filter-dimension-attribution.png)
+
+### Example
+
+As part of a filter definition you have specified the following condition: Page Name equals Women. Similar as to the example above. You repeat this filter definition using the two other attribution models. So you have three filters each with their own attribution model:
+
+* Women Page - Attribution - Repeating (default)
+* Women Page - Attribution - Instance
+* Women Page - Attribution - Non-repeating instance
+
+
+The table below explains, for each attribution model, which incoming events are qualified ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) for that condition.
+
+
+|  Women Page - Attribution - <br/>*attribution model*  | Event 1:<br/>Page Name equals<br/>Women  | Event 2:<br/>Page Name equals<br/>Men | Event 3:<br/>Page Name equals<br/>Women |  Event 4:<br/>Page Name equals<br/>Women<br/>(persisted) | Event 5:<br/>Page Name equals<br/>Checkout  |  Event 6:<br/>Page Name equals<br/>Women  | Event 7:<br/>Page Name equals<br/>Home  |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
+|  Repeating (default) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg)  |
+|  Instance  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg) |![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Remove](/help/assets/icons/Remove.svg) |
+|  Non-repeating instance  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |![Remove](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg)  |
+
+An example report on events using the three filters looks like:
+
+![Filter attribution model results](assets/filter-dimension-attribution-results.png)

@@ -7,7 +7,7 @@ role: User
 ---
 # Virtual report suites, Data views, Adobe Experience Platform sandboxes, and the Analytics source connector
 
-Adobe provides a variety of means to create virtual reporting environments and sandbox environments. It is useful to understand the similarities and differences between the following features and how these features relate to the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en):
+Adobe provides a variety of means to create virtual reporting environments and sandbox environments. It is useful to understand the similarities and differences between the following features and how these features relate to the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html):
 
 * Adobe Analytics virtual report suites
 * Customer Journey Analytics data views
@@ -15,7 +15,7 @@ Adobe provides a variety of means to create virtual reporting environments and s
 
 ## Adobe Analytics virtual report suites
 
-For more information, see: [Virtual report suites overview](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en).
+For more information, see: [Virtual report suites overview](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html).
 
 A virtual report suite:
 
@@ -23,9 +23,9 @@ A virtual report suite:
 * Can be applied to both historical and new data in a non-destructive manner.
 * Allows you to create one or many virtual views on top of an Adobe Analytics report suite for use by different business teams.
 * May be used to control access to and curate different kinds of data for different users in Adobe Analytics.
-* Provides optional [report-time processing](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en) capabilities for Adobe Analytics. In this case, a virtual report suite may be used to create a custom definition for "visit".
+* Provides optional [report-time processing](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html) capabilities for Adobe Analytics. In this case, a virtual report suite may be used to create a custom definition for "visit".
 * Is applied at report runtime, similar to segment evaluation. This is _after_ the data has been collected and stored within Adobe Analytics.
-* Is required for [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en) in Adobe Analytics.
+* Is required for [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) in Adobe Analytics.
 * Has available the same number of variables for use as a standard Analytics Report Suite (250 eVars, 250 props, 1000 events), although virtual report suite curation can limit which variables are exposed to users.
 * Supports custom calendar options.
 
@@ -38,7 +38,7 @@ A virtual report suite is not:
 
 ## Customer Journey Analytics data views
 
-For more information, see: [Data views overview](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en).
+For more information, see: [Data views overview](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html).
 
 A data view:
 
@@ -60,7 +60,7 @@ A data view does not:
 
 ## Adobe Experience Platform sandboxes
 
-For more information, see: [Sandboxes overview](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en).
+For more information, see: [Sandboxes overview](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html).
 
 An Adobe Experience Platform sandbox:
 
@@ -75,4 +75,4 @@ An Adobe Experience Platform sandbox does not:
 Note that:
 
 * Data from different sandboxes cannot be combined within Customer Journey Analytics.
-* The Analytics Source connector sends report suite data _into_ a specific sandbox. Each report suite may be configured as a source for a single sandbox. See the [Analytics source connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) for more details.
+* The Analytics Source connector sends report suite data _into_ a specific sandbox. Each report suite may be configured as a source for a single sandbox. See the [Analytics source connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) for more details.

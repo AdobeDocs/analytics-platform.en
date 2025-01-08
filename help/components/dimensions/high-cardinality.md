@@ -10,7 +10,7 @@ role: User
 
 When using a dimension that contains many unique values, the resulting report can contain too many unique dimension items to display or calculate. Results are truncated by removing dimension items deemed least important. These optimizations are done to maintain project and product performance.
 
-When you request a report with too many unique values, Analysis Workspace shows an indicator in the dimension header stating that not all dimension items are included. For example, "Rows: 1-50 of more than 22,343,156". The "more than" keyword indicates that some optimization was applied to the report to return the most important dimension items.
+When you request a report with too many unique values, Analysis Workspace shows an indicator in the dimension header stating that not all dimension items are included. For example, **[!UICONTROL Rows: 1-50 of more than 22,343,156]**. The **[!UICONTROL more than]** keyword indicates that some optimization was applied to the report to return the most important dimension items.
 
 ![Freeform table in Workspace showing the "more than" keyword to show 1-50 of more than 22,343,156](assets/high-cardinality.png)
 
@@ -33,3 +33,4 @@ The best way to accommodate high cardinality dimensions is to limit the number o
 * Use a lookup dataset dimension. Lookup dataset dimensions combine event dataset dimension items, which limit the number of unique values returned.
 * Use the [Include/exclude](/help/data-views/component-settings/include-exclude-values.md) component setting in the data view manager.
 * Shorten the request's date range. If many unique values accumulate over time, shortening the date range of the Workspace report can limit the number of unique values for servers to process.
+* Consider using [Full Table Export](/help/analysis-workspace/export/export-cloud.md) to return all rows of the table.

@@ -6,12 +6,10 @@ exl-id: f0c9387f-16a4-40c5-9bed-73b871efd22e
 ---
 # Mark calculated metrics as favorites
 
-Marking calculated metrics as favorites is another way to organize them for ease of use.
+You can mark a calculated metric as a favorite. To mark calculated metrics as favorite helps you to organize your calculated metric. All users can favor calculated metrics.
 
-1. In Customer Journey Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Calculated metrics]**. 
+To favor or unfavor a calculated metric, in the [Calculated metrics manager](/help/components/calc-metrics/cm-workflow/cm-manager.md):
 
-1. In the Calculated metrics manager, check the star next to any calculated metric that you want to mark as a favorite. It should now appear as a yellow star:
+* Select ![StarOutline](/help/assets/icons/StarOutline.svg) to favor, or select ![Star](/help/assets/icons/Star.svg) to unfavor a calculated metric.
 
-   ![Yellow star showing Visitors from Bing.](assets/favorites.png)
-
-1. You can also filter on favorites under **[!UICONTROL Filters]** > **[!UICONTROL Other Filters]** > **[!UICONTROL Favorites]**.
+You can filter your list of calculated metric by favorites. Select **[!UICONTROL Other filters]** from the ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** panel and select **[!UICONTROL Favorites]**. See [Filter the list of calculated metric](/help/components/calc-metrics/cm-workflow/cm-filter.md) for more information.

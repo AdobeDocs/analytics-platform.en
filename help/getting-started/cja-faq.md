@@ -52,14 +52,14 @@ Yes. [Stitching](../stitching/overview.md) looks at user data from both authenti
 
 +++**How does 'replay' work in stitching?**
 
-Stitching "replays" data based on unique identifiers it has learned. Replay is aiming to stitch initially unauthenticated  events from devices that have been identified in the meantime. [Learn more](../stitching/explained.md)
+Stitching "replays" data based on unique identifiers it has learned. Replay is aiming to stitch initially unauthenticated  events from devices that have been identified in the meantime. [Learn more](../stitching/overview.md)
 
 +++
 
 
 +++**How does stitching historical data (backfill) work?**
 
-When first turned on, Adobe provides a backfill of stitched data that goes back as far as the beginning of the previous month (up to 60 days.) In order to do this backfill, the transient ID must exist in the unstitched data that far back in time. [Learn more](../stitching/explained.md)
+When first turned on, Adobe provides a backfill of stitched data that goes back as far as selected by you (up to a maximum of 25 months, depending on the Customer Journey Analytics package you are entitled to). In order to do this backfill, the transient ID must exist in the unstitched data that far back in time. [Learn more](../stitching/overview.md)
 
 +++
 
@@ -130,11 +130,11 @@ No, you can use any ID, including a hash of a customer ID, which is not PII.
 
 Adobe recently changed how it processes data in Customer Journey Analytics:
 
-<ul><li>Any event data with a timestamp less than 24 hours old is streamed in.</li><li>Any event data with a timestamp more than 24 hours old (even if it's in the same batch as newer data) is considered backfill and is ingested at a lower priority.</li></ul>
+<ul><li>Event data for the 'current' day is streamed in as live data. Any data with an event time prior to 11:59:59 pm(23:59:59) on the previous day is treated as a backfill.</li><li>Any event data with a timestamp more than 24 hours old (even if it's in the same batch as newer data) is considered backfill and is ingested at a lower priority.</li></ul>
 
 ## 5. Set rolling window for [!UICONTROL Connection] data retention {#data-retention}
 
-The [**[!UICONTROL Enable rolling data window]** setting](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection) lets you define Customer Journey Analytics data retention as a rolling window in months (three months, six months, and so on). It is set at a [!UICONTROL connection] level, not at a [!UICONTROL dataset] level. Data retention is based on event dataset timestamps and applies to event datasets only. No data retention setting exists for profile or lookup datasets since there are no applicable timestamps.
+The [**[!UICONTROL Enable rolling data window]** setting](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection) lets you define Customer Journey Analytics data retention as a rolling window in months (three months, six months, and so on). It is set at a [!UICONTROL connection] level, not at a [!UICONTROL dataset] level. Data retention is based on event dataset timestamps and applies to event datasets only. No data retention setting exists for profile or lookup datasets since there are no applicable timestamps.
 
 The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost. 
 
@@ -144,7 +144,7 @@ For data deletion, you should be concerned about six types of components: sandbo
 
 | If you... | This happens... |
 | --- | --- |
-| Delete a sandbox in [!UICONTROL Adobe Experience Platform] | Deleting a sandbox stops the data flow to any [!UICONTROL Customer Journey Analytics] connections to datasets in that sandbox. Currently, [!UICONTROL Connections] in Customer Journey Analytics tied to the deleted sandbox are not automatically deleted. |
+| Delete a sandbox in [!UICONTROL Adobe Experience Platform] | Deleting a sandbox stops the data flow to any [!UICONTROL Customer Journey Analytics] connections to datasets in that sandbox. Connections, data views, metrics and dimensions related to this deleted sandbox will also be deleted. | |
 | Delete a schema in [!UICONTROL Adobe Experience Platform], but not the dataset/s associated with this schema | [!UICONTROL Adobe Experience Platform] does not allow for the deletion of [!UICONTROL schemas] that have one or more [!UICONTROL datasets] associated with them. However, an Admin with the appropriate set of rights can delete the datasets first and then delete the schema. |
 | Delete a dataset in the [!UICONTROL Adobe Experience Platform] data lake | Deleting a dataset in Adobe Experience Platform data lake stops data flow from that dataset to any Customer Journey Analytics Connections that include that dataset. Any data from that dataset is automatically deleted from the associated Customer Journey Analytics connections. |
 | Delete a dataset in [!UICONTROL Customer Journey Analytics] | Contact your Adobe Account Team to set in motion the process for deleting a dataset within a connection that has been saved. |
@@ -168,9 +168,9 @@ If you plan to ingest Adobe Analytics data through the [Adobe Analytics source c
 
 ## 8. [!UICONTROL Adobe Analytics] components
 
-+++**Can I share/publish [!UICONTROL filters] from [!DNL Customer Journey Analytics] to Experience Platform Real-Time CDP, or other Experience Cloud applications?**
++++**Can I share/publish [!UICONTROL audiences] from [!DNL Customer Journey Analytics] to Experience Platform Real-Time CDP, or other Experience Cloud applications?**
 
-Not yet, but Adobe is actively working to deliver this capability.
+You can [create and publish audiences](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish) identified in Customer Journey Analytics to Real-time Customer Profile in Adobe Experience Platform for customer targeting and personalization.
 
 +++
 
@@ -206,13 +206,13 @@ It depends on your use case, so work with your Adobe Account team. Your current 
 
 ## 9. Estimate connection size {#estimate-size}
 
-Refer to [Estimate and manage usage](/help/admin/estimate-usage.md).
+See [Estimate and manage usage](/help/technotes/estimate-usage.md).
 
 ## 10. Regarding usage overages {#overage}
 
 Usage limits are regularly monitored and enforced by Adobe. "Rows of data" means the daily average rows of data available for analysis within Customer Journey Analytics.
 
-For example, let's say your contract entitles you to one million rows of data. Suppose that on day 1 of using Customer Journey Analytics, you upload two million rows of data. On day 2, you delete 1 million rows and keep your usage at that committed maximum (that is, one million rows of data) for the remainder of your License Term. Depending on your contractual terms, you may still incur prorated over-usage fees for day 1, since you exceeded your "rows of data" license entitlement.
+For example, your contract entitles you to one million rows of data. Suppose that on day 1 of using Customer Journey Analytics, you upload two million rows of data. On day 2, you delete 1 million rows and keep your usage at that committed maximum (that is, one million rows of data) for the remainder of your License Term. Depending on your contractual terms, you may still incur prorated over-usage fees for day 1, since you exceeded your "rows of data" license entitlement.
 
 ## 11. Diagnose data discrepancies {#discrepancies}
 
@@ -231,7 +231,7 @@ Read more about the [implications of dataset and connection deletion](https://ex
 
 The Adobe Experience Cloud uses Regional Data Collection (RDC) so that interactions between your visitors and Adobe and non-Adbobe solutions occur as close to your visitors as possible. Once data is collected regionally at a Data Collection Center (DCC, also known as Edge site, part of the Platform Edge Network), it is forwarded over a secure connection to the relevant solutions based on the configuration of your datastream and/or event forwarding.
 
-![Data flow using Edge Networks](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=en)
+![Data flow using Edge Networks](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
 
 The regional data collection process uses the following steps:
 
@@ -261,5 +261,4 @@ When the data hits the regional data center, the datastream configuration determ
 Customer Journey Analytics requires datasets from Adobe Experience Platform, so your datastream / event forwarding configuration requires the Adobe Experience Platform service to route the data from the regional data center to the data center where your Adobe Experience Platform instance is located. Customer Journey Analytics and its supporting services and infrastructure are deployed at that same Adobe Experience Platform instance.
 
 
-See [Data collection overview](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=en) for more information about the process of data collection beyond the Experience Edge network and its regional data centers.
-
+See [Data collection overview](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) for more information about the process of data collection beyond the Adobe Experience Platform Edge Network and its regional data centers.

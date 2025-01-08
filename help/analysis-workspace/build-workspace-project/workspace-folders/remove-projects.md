@@ -1,18 +1,15 @@
 ---
-description: Learn how to remove projects from folders
+description: Learn how to rename projects from folders
 keywords: Analysis Workspace
 title: Remove projects from folders
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
 ---
-# Remove a Project from a Folder
+# Delete projects
 
-To remove a project from a folder, you can move the project to another location or delete the project.
+<!-- Is this article still needed -->
 
->[!NOTE]
->
->When an Admin moves a project to the Company Folder, the folder is shared with everyone even if the original shared privileges were restricted. When an Admin moves a project out of the Company Folder, the original or previous sharing privileges are respected.
 
 ## Move a project {#move-project-in-folder}
 
@@ -36,7 +33,7 @@ You can move projects from one folder to another folder that you created.
 
 ## Delete a project from a project folder {#delete-project-in-folder}
 
-When you delete a project from a folder, the project is deleted entirely.
+When you delete a project from a folder, it gets purged from the system after 180 days. During the 180 days after deletion, users can still access a deleted project via the Web interface if they have a direct URL to the project.
 
 1. From within a project folder, select the **...** ellipsis next to the project name.
 

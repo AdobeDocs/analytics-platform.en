@@ -6,7 +6,17 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 ---
-# Create a mobile scorecard
+# Create a mobile scorecard {#create-a-mobile-scorecard}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_mobilescorecard_annotations"
+>title="Annotations"
+>abstract="Annotations can be created in the components manager of inside of a workspace project."
+
+<!-- markdownlint-enable MD034 -->
+
 
 The following information instructs curators of Customer Journey Analytics data on how to configure and present dashboards for executive users. To start with, you can view the Analytics dashboards scorecard builder video:
 
@@ -129,7 +139,7 @@ Use the Summary Number visualization to highlight a large number that is importa
 
 ### [!UICONTROL Donut]
 
-Similar to a pie chart, this visualization shows data as parts of a whole. Use a donut graph when comparing percentages of a total. For example, let's say you want to see which ad platform contributed to the total number of unique persons:
+Similar to a pie chart, this visualization shows data as parts of a whole. Use a donut graph when comparing percentages of a total. For example, you want to see which ad platform contributed to the total number of unique persons:
 
 ![New movile scorecard showing a Donut visualization](assets/donut-viz.png)
 
@@ -137,15 +147,21 @@ Similar to a pie chart, this visualization shows data as parts of a whole. Use a
 
 The Line visualization represents metrics using a line in order to show how values change over a period of time. A line chart shows dimensions over time but works with any visualization. You are visualizing the product category dimension in this example.
 
-![New movile scorecard showing a Line visualization](assets/line.png)
+![New mobile scorecard showing a Line visualization](assets/line.png)
 
 ### [!UICONTROL Horizontal Bar]
 
 This visualization shows horizontal bars representing various values across one or more metrics. For example, to easily see what your top products are, use [!UICONTROL Horizontal Bar] for your preferred visualization.
 
-![New movile scorecard showing a horizontal bar](assets/horizontal.png)
+![New mobile scorecard showing a horizontal bar](assets/horizontal.png)
 
-### Remove [!UICONTROL Unspecified] dimension item
+## Name scorecards {#name}
+
+To name the scorecard, click the namespace in the upper-left of the screen and type the new name.
+
+![Naming_Scorecards](assets/new_name.png)
+
+### Remove [!UICONTROL Unspecified] dimension item {#remove-dims}
 
 If you want to remove [!UICONTROL Unspecified] dimension items from your data, do the following:
 
@@ -290,12 +306,6 @@ You can preview how the scorecard will look and function once it is published in
     * Use your computer's scroll function to simulate scrolling the phone screen with your finger.
 
     * Click and hold to simulate pressing and holding your finger on the phone screen. This is useful for interacting with the visualizations in the detailed view.
-
-## Name scorecards {#name}
-
-To name the scorecard, click the namespace in the upper-left of the screen and type the new name.
-
-![Naming_Scorecards](assets/new_name.png)
 
 ## Share scorecards {#share}
 

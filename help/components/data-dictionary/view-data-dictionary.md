@@ -1,11 +1,11 @@
 ---
 description: The Data Dictionary in Analysis Workspace allows users to catalogue and keep track of the various components in Analysis Workspace, including their intended use, which are approved, which are duplicates, and so forth.
-title: View the Data Dictionary
+title: View component information
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
 ---
-# View component information in the Data Dictionary
+# View component information
 
 The Data Dictionary allows you to view information about a component, including the component description, similar components, other components a component is frequently used with, and more.
 
@@ -13,7 +13,7 @@ To view information about a component in the Data Dictionary:
 
 1. Go to the Analysis Workspace project that contains the component that you want to view.
 
-1. Select the [!UICONTROL **Data Dictionary**] icon in the left rail of Analysis Workspace. (Alternate ways of accessing the Data Dictionary are described in "Access the Data Dictionary" in [Data Dictionary overview](/help/components/data-dictionary/data-dictionary-overview.md).)
+1. Select the [!UICONTROL **Data Dictionary**] icon in the left panel of Analysis Workspace. (Alternate ways of accessing the Data Dictionary are described in "Access the Data Dictionary" in [Data Dictionary overview](/help/components/data-dictionary/data-dictionary-overview.md).)
 
    The Data Dictionary window displays.
 

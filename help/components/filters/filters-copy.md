@@ -7,14 +7,9 @@ role: User
 ---
 # Copy filters
 
-When creating a new filter, it's sometimes easier to copy an existing filter that is close to the filter that you want to create, then modify the version you copied.
+In the [Filter manager](manage-filters.md), you can copy filters. Copying a filter is convenient when you want to create a slightly modified version of an existing filter or want to redefine a filter you do not own and you cannot edit.
 
-To copy a filter in the Filter manager:
+1. In the [Filter manager](manage-filters.md), select one or more of the filters you want to copy.
+1. From the action bar, select ![Copy](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]**.
 
-1. In Customer Journey Analytics, select the **[!UICONTROL Components]** tab, then select **[!UICONTROL Filter]**. 
-
-1. In the Filter manager, select the filter that you want to copy. 
-
-   The filter management tool bar appears.
-
-1. Select **[!UICONTROL Copy]**.
+The filters are copied and appear in the filter list with the same name as their original but with (Copy) appended to it.

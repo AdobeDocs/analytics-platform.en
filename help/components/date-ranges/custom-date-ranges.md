@@ -1,47 +1,50 @@
 ---
-description: Create custom date ranges in Analysis Workspace, and save them as Time components.
+description: Example of custom date ranges in Analysis Workspace.
 keywords: Analysis Workspace
-title: Create custom date ranges
+title: Example custom date ranges
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 role: User
 ---
-# Create custom date ranges
+# Example custom date ranges
 
-Create custom date ranges in Analysis Workspace, and save them as Time components.
+This article shows more examples of custom date ranges
 
- **[!UICONTROL Components]** > **[!UICONTROL New Date Range]**
 
-A date range applies at the panel level. To add a date range to your project, click **Panels** > *`<select panel>`*, and specify a new date range.
 
-## Date range for "two months ago"
+## Last two months ago
 
-The following custom date range shows a date range for "two months ago," with a Summary Change visualization showing directional change.
++++ Details
 
-![Date Range Builder showing Use Rolling Dates for two month ago](assets/date-range-two-months-ago.png)
+You want to define a custom date range that defines two months ago. You use one of the presets.
 
-The custom date range is displayed at the top of the [!UICONTROL Date Range] component panel in your project:
+![Last 2 months ago](assets/date-range-example-simple.png)
 
-![Date Range component panel with arrow pointing to Two Months Ago.](assets/date-range-panel-two-months-ago.png)
++++
 
-You can drag this custom date range into a column alongside a custom, monthly rolling date range using the Last Month preset for a comparison. Add a Summary Change visualization and select the totals from each column to show directional change:
 
-![Summary change showing and increase of 14.45%.](assets/date-range-two-months-table.png)
+## Rolling until the end of last week
 
-## Use a 7-day rolling date range
++++ Details
 
-A date range applies to the panel level. To add a date range to your project, click **Actions** > **Add Panel**, and specify a new date range.
+You want to define a date range that defines the period between the current day a week ago until the end of that same last week. For example, if today is Wednesday September 11, 2024. You want a date range from Wednesday September 4, 2024 until Saturday September 7, 2024. September 
 
-In the Date Range Builder, you can create a custom date range that displays in the Components panel with other date ranges.
+![Date range example](assets/date-range-example.png)
 
-For example, you can create a date range that specifies a 7-day rolling window that ends one week ago:
++++ 
 
-![Date Range Builder showing a date range that specifies a 7-day rollowing window.](assets/create_date_range.png)
+<!--
+## Example: Use a 7-day rolling date range
+
+You can create a date range that specifies a 7-day rolling window that ends one week ago:
+
+![](assets/create_date_range.png)
 
 Use *`rolling daily`*.
 
-* The Start settings would be *`current day minus 14 days`*.
+* The Start settings would be *`current day minus 6 days`*.
 
 * The End settings would be *`current day minus 7 days`*.
 
 This date range can be a component that you drag onto any freeform table.
+-->

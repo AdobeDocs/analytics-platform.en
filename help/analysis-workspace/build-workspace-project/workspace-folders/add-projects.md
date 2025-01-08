@@ -1,67 +1,51 @@
 ---
-description: Learn how to add folders in Workspace
+description: Learn how to add or move folders in Workspace
 keywords: Analysis Workspace
-title: Add Folders in Workspace
+title: Add or move folders
 feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 role: User
 ---
-# Add Projects to Folders
+# Add or move projects to folders
 
-You can add projects to a folder in the table view or from within a folder.
+You can add or move projects to a folder directly from the [Project list](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list).
 
-## From the table view {#table-view}
+## Move projects to a folder
 
-Add projects to a folder from the table view on the home page.
+>[!NOTE]
+>
+>When an administrator moves a project to the Company Folder, the folder is shared with everyone even if the existing shared privileges are restricted. When an administrator moves a project out of the Company Folder, the existing shared privileges are re-applied.
+>
 
-1. Select one or more projects that you want to add to a folder.
+To move projects to a folder from the [Project list](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list):
 
-    ![Projects table view showing three projeccts selected.](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
+1. Select ![SelectBox](/help/assets/icons/SelectBox.svg) one or more projects that you want to move to a folder.
 
-1. Select **Move to**. The Select Folder dialogue is displayed.
+1. Select ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **Move to** from the list of possible [actions](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions). The **[!UICONTROL Select Folder]** dialog is displayed.
 
-1. Select a folder name from the drop-down menu.
+1. Select a folder name from the **[!UICONTROL Folder]** drop-down menu. The dropdown lets you traverse the folder hierarchy to select a subfolder at any level.
 
-    ![The Select Folder view showing the drop down menu and available subfolders.](/help/analysis-workspace/build-workspace-project/assets/move-select-folder.png)
+    ![The Select Folder view showing the drop down menu and available subfolders.](/help/analysis-workspace/build-workspace-project/assets/add-projects.png)
 
-1. Click **Add**.
+1. Select **[!UICONTROL Move]**.
 
-    ![Click Add.](/help/analysis-workspace/build-workspace-project/assets/move-add.png)
 
     The selected projects are added to the folder.
 
-    ![The selected subfolder showing the three projects that were moved.](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
 
-    The Workspace landing page now shows the folder contains (3) projects.
+## Add projects to a folder
 
-    ![The updated Projects home page list shows the subfolder with three projects.](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
+To add projects to a folder from the [Project list](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list):
 
-## From inside a folder {#inside-folder}
+1. Select ![SelectBox](/help/assets/icons/SelectBox.svg) the folder that you want to add projects to.
 
-You can also add projects from inside a folder using the ellipses link.
+1. Select ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **Add Projects** from the list of possible [actions](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions). The **[!UICONTROL Select Folder]** dialog is displayed.
 
-1. Select and open a folder from the table view.
+1. Select one or more projects from the [!UICONTROL *Select projects to add to folder*].
 
-    ![The subfolder that doesn't contain any projects](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
+   ![The Select Folder view showing the drop down menu and available subfolders.](/help/analysis-workspace/build-workspace-project/assets/add-projects-folder.png)
 
-1. Click the **...** ellipsis icon in the top-right.
-
-    ![The ellipsis drop down menu options.](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
-
-    A drop-down menu displays the option to add projects to the folder. Additional options allow you to rename, move, or delete the folder and manage folder permissions.
-
-1. Select **Add projects** and select the project that you want to add     from the drop-down list.
-
-    ![The Add Projects list.](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
-
-    You can add multiple projects to the folder.
-
-    ![The Add Projects window showing three projects are added](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
-
-1. Click **Add** to add the projects to the folder.
-
-    ![Click Add.](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
-
+1. Select **[!UICONTROL Add]**.
 
 >[!NOTE]
 >

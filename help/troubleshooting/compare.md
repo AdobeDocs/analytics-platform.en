@@ -1,5 +1,5 @@
 ---
-title: Compare your Adobe Analytics data to Customer Journey Analytics data
+title: Compare with your Adobe Analytics data
 description: Learn how to compare your Adobe Analytics data to data in Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
@@ -7,7 +7,7 @@ exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: query service;Query service;sql syntax
 ---
-# Compare your Adobe Analytics data to Customer Journey Analytics data
+# Compare with your Adobe Analytics data
 
 As your organization adopts Customer Journey Analytics, you may notice some differences in data between Adobe Analytics and Customer Journey Analytics. This is normal and can occur for several reasons. Customer Journey Analytics is designed to allow you to improve upon some of the limitations on your data in AA. However, unexpected and unintended discrepancies can occur. This article is designed to help you diagnose and solve for those differences so that you and your team can use Customer Journey Analytics unimpeded by concerns about data integrity.
 
@@ -73,7 +73,7 @@ Total Records by timestamps should match with Occurrences, provided that no reco
    | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
    | Page_event | 53, 63 |
    
-   For more information about hit\_source see: [Data column reference](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en). For more information about page\_event see: [Page Event Lookup](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=en).
+   For more information about hit\_source see: [Data column reference](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html). For more information about page\_event see: [Page Event Lookup](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html).
    
 1. If the connector filtered rows, subtract those rows from the [!UICONTROL Occurrences] metric. The resulting number should match the number of events in the Adobe Experience Platform datasets.
 

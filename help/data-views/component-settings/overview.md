@@ -6,7 +6,26 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 ---
-# Component settings
+# Component settings {#component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_settings"
+>title="Component settings"
+>abstract="View and configure the name, description, and other settings related to a component.<br/><br/>**Parameters**<br/>**Hide component in reporting**: Checking this box will hide this component from non-admin users in reporting. Admins can still access it by selecting **[!UICONTROL Show all components]** in a Workspace project."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_contextlabels"
+>title="Context labels"
+>abstract="Removing a context label may impact specific panels or reports where the component is required."
+
+<!-- markdownlint-enable MD034 -->
+
 
 The following information describes the settings that a data view component uses.
 
@@ -18,7 +37,7 @@ The following information describes the settings that a data view component uses
 | [!UICONTROL Component Name] | Required. Lets you specify the friendly name that appears in Analysis Workspace. You can rename a component to give it a name specific to the data view. |
 | [!UICONTROL Description] | Optional, but recommended. Provides information on the component to other users. |
 | [!UICONTROL Tags] | Optional. Lets you tag the component with custom or out-of-the-box tags for easier searching/filtering in the Analysis Workspace UI. |
-| [!UICONTROL Context labels] | Optional. A drop-down list of available system-defined labels that can be applied to a component. These labels may be required to define a set of components used for reporting in Analysis Workspace projects or panels. |
+| [!UICONTROL Context labels] | Optional. A drop-down list of available system-defined labels that can be applied to a component. These labels may be required to define a set of components you can use in experimentation reporting using the [Experimentation panel](/help/analysis-workspace/c-panels/experimentation.md) in Analysis Workspace projects. See [Integrate with Journey Optimizer](/help/integrations/ajo.md#data-view) and [Target reporting](/help/integrations/at.md) for more information. |
 | [!UICONTROL Schema field name] | The name of the schema field. |
 | [!UICONTROL Dataset type] | Required. A non-editable field showing which dataset type (event, lookup, or profile) the component came from. |
 | [!UICONTROL Dataset] | A non-editable field showing which dataset that the component originated from. This field can contain multiple datasets. |

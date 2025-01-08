@@ -11,7 +11,7 @@ Generally speaking, any data governance-related settings in Customer Journey Ana
 
 ## Data Governance
 
-The integration between Adobe Customer Journey Analytics and [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) allows for labeling of sensitive Customer Journey Analytics data and enforcement of privacy policies. 
+The integration between Adobe Customer Journey Analytics and [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html) allows for labeling of sensitive Customer Journey Analytics data and enforcement of privacy policies. 
 
 Privacy labels and policies that were created on datasets consumed by Experience Platform can be surfaced in the Customer Journey Analytics data views workflow. These labels stop or warn users who create metrics and/or dimensions from sensitive fields. 
 
@@ -23,7 +23,7 @@ This integration allows you to manage compliance more easily. Data stewards in y
 
 ## GDPR
 
-Customer Journey Analytics will not subscribe to the General Data Protection Regulation (GDPR) Central Service directly and will instead inherit all dataset changes made in Experience Platform. We depend on Platform Data Lake to enforce GDPR deletion requests and notify us when they've been completed on Pipeline. We listen to Pipeline and synchronize all changes to affected batches in Customer Journey Analytics for event datasets. Profile and lookup datasets affected by GDPR deletion requests will be completely re-ingested after each delete request. We can guarantee deletion requests are executed within 7 days of a deletion event in Data Lake.
+Customer Journey Analytics will not subscribe to the General Data Protection Regulation (GDPR) Central Service directly and will instead inherit all dataset changes made in Experience Platform. Customer Journey Analytics depends on Platform Data Lake to enforce GDPR deletion requests and notify Customer Journey Analytics when requests are complete. All changes to affected batches in Customer Journey Analytics for event datasets are synchronized with Platform data. Profile and lookup datasets affected by GDPR deletion requests are fully re-ingested after each delete request. Deletion requests are typically finished within 7 days of a deletion event in Data Lake.
 
 ## CCPA
 

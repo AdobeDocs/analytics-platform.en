@@ -1,6 +1,6 @@
 ---
 title: Stitching overview
-description: Overview of stitching.
+description: Overview of stitching
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
@@ -8,118 +8,66 @@ role: Admin
 ---
 # Stitching overview
 
-Identity stitching (or simply, stitching) is a powerful feature that elevates an event dataset's suitability for cross-channel analysis. Cross-channel analysis is a main use case that Customer Journey Analytics can handle, allowing you to seamlessly combine and run reports on multiple datasets from different channels, based on a common identifier (person ID).
+>[!NOTE]
+>
+>You must have the **Select** package or higher (for [field-based stitching](fbs.md)) or **Prime** package or higher (for [graph-based stitching](gbs.md)) to use the functionality described in this section. Contact your administrator if you're unsure which Customer Journey Analytics package you have.
+
+Identity stitching (or simply, stitching) is a powerful feature that elevates an event dataset's suitability for cross-channel analysis. Cross-channel analysis is a main use case that Customer Journey Analytics can handle, allowing you to combine and run reports seamlessly on multiple datasets from different channels, based on a common identifier (person ID).
 
 When you combine datasets with similar person IDs, attribution is carried over across devices and channels. For example, a user first visits your site through an advertisement on their desktop computer. That user encounters an issue with their order, then gives your customer service team a call to help resolve it. With cross-channel analysis, you can attribute call center events to the ad that they originally clicked.
 
 Unfortunately, not all event-based datasets that are part of your connection in Customer Journey Analytics are sufficiently populated with data to support this attribution out of the box. Especially, web-based or mobile-based experience datasets often don't have an actual person ID information available on all events.
 
-Stitching allows rekeying identities within one dataset's rows, making sure the person ID (stitched ID) is available on each event. Stitching looks at user data from both authenticated and unauthenticated sessions to determine the common transient ID value that can be used as stitched ID. This rekeying allows for resolving disparate records to a single stitched ID for analysis at the person level, rather than at the device or cookie level.
+Stitching allows rekeying identities within one dataset's rows, making sure the person ID (stitched ID) is available on each event. Stitching looks at user data from both authenticated and unauthenticated sessions to determine the common transient ID (person ID) value that can be used as stitched ID. This rekeying allows for resolving disparate records to a single stitched ID for analysis at the person level, rather than at the device or cookie level.
 
-You benefit from cross-channel analysis if you combine one or more of your stitched datasets with other datasets, such as call center data, as part of defining your Customer Journey Analytics connection. This assumes that those other datasets already contain a person ID on every row, similar to the stitched ID.
-
+Customer Journey Analytics supports two types of stitching: [field-based stitching](fbs.md) and [graph-based stitching](gbs.md).
 
 ## Prerequisites
 
-{{select-package}}
-
 >[!IMPORTANT]
 >
->Failure to meet all prerequisites can result in the inability to properly conduct cross-channel analysis.
+>Failure to meet all prerequisites can result in the inability to conduct cross-channel analysis properly.
 
 Before using stitching, make sure that your organization is prepared with the following:
 
-* Import the desired data into Adobe Experience Platform:
+- Stitching includes merging authenticated and unauthenticated user data. Ensure that you comply with applicable laws and regulations, including obtaining necessary end-user permissions, before activating stitching on an event dataset. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information.
+
+- Import the desired data into Adobe Experience Platform:
   
-  * For Adobe Analytics data, see [Utilizing Adobe Analytics report suite data in Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). 
-  * For other types of data, see [Create a schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) and [Ingest data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) in the Adobe Experience Platform documentation.
+  - For Adobe Analytics data, see [Utilizing Adobe Analytics report suite data in Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). 
+  - For other types of data, see [Create a schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui) and [Ingest data](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) in the Adobe Experience Platform documentation.
 
-* The event dataset in Adobe Experience Platform to which you want to apply stitching must have two columns that help identify visitors:
-  
-  * A **persistent ID**, an identifier present on every row. For example, a visitor ID generated by an Adobe Analytics AppMeasurement library or an ECID generated by the Adobe Experience Cloud Identity Service.
-  * A **transient ID**, an identifier present on only some rows. For example, a hashed username or email address once a visitor authenticates. You can use virtually any identifier that you like. Stitching will consider this field to hold the actual person ID info. For best stitching results, a transient ID should be sent within the dataset's events at least once for each persistent ID. If you plan to include this dataset within a Customer Journey Analytics connection, it is preferable that the other datasets also have a similar common identifier.
-
-  Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema underlying the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform using the [identityMap field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#identity), you still need to add identity fields with an identity namespace, as Customer Journey Analytics stitching discussed in this section does not support the identityMap field group. When adding an identity field in the schema while also using the identityMap field group, do not set the additional identity field as a primary identity, as this will interfere with the identityMap field group used for the Real-time Customer Data Platform.
-
-* Stitching includes merging authenticated and unauthenticated user data. Ensure that you comply with applicable laws and regulations, including obtaining necessary end-user permissions, before activating stitching on an event dataset. See [Define identity fields in the UI](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#) for more information.
-
-
-## Use stitching
-
-Once your organization meets all prerequisites and understands the [limitations](#limitations), you can follow these steps to start using stitching in Customer Journey Analytics:
-
-### Request Support 
-
-1. Contact Adobe Customer Support with the following information:
-
-   * A request to enable stitching.
-   * The dataset ID for the dataset that you want to rekey.
-   * The column name of the persistent ID for the desired dataset (Identifier that appears on every row).
-   * The column name of the transient ID for desired dataset (the person identifier, which also acts as link between datasets in the context of a connection).
-   * Your preference of [replay](explained.md) frequency and lookback length. Options include a replay once a week with a 7-day lookback window, or a replay every day with a 1-day lookback window.
-   * Sandbox name.
-
-
-2. The Adobe Customer Support works with Adobe engineering to enable stitching upon receiving your request. Once enabled, a new rekeyed dataset that contains a new Stitched ID column appears in Adobe Experience Platform. Adobe Customer Support can provide the new dataset's ID.
-   
-3. When first turned on, Adobe provides a backfill of stitched data that goes back 60 days.
-   
-4. If you want to use the new stitched dataset in a cross-channel analysis, you need to add it to a [connection](../connections/overview.md) in Customer Journey Analytics together with any other needed datasets. Choose the correct person ID for each dataset.
-   
-5. [Create a data view](/help/data-views/create-dataview.md) based on the connection.
-
-<!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
-
-Once the data view is set up, you can run your Customer Journey Analytics reporting analysis across channels and devices.
-
-<!-- Uncomment once stitching UI is available (for limited testing)..
-
-### Do It Yourself
-
-|Positive|[!BADGE New Feature]{type=Positive before-title="false"}|
-
-{{release-limited-testing-section}}
-
-Alternatively, you can set up and use stitching through the Customer Journey Analytics user interface:
-
-1. Go to the [Create and manage stitched datasets](stitching-ui.md) and follow steps to rekey your dataset.
-
-2. [Create a connection](/help/connections/create-connection.md) in Customer Journey Analytics using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
-
-3. [Create a connection](/help/connections/create-connection.md) in Customer Journey Analytics using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
-   
-4. [Create a data view](/help/data-views/create-dataview.md) based on the connection.
-
-Once the data view is set up, the cross-channel analysis in Customer Journey Analytics is just like any other analysis in Customer Journey Analytics, except now the data operates across channels and devices.
-
--->
+You benefit from cross-channel analysis if you combine one or more of your stitched datasets with other datasets, such as call center data, as part of defining your Customer Journey Analytics connection. This connection configuration assumes that those other datasets already contain a person ID on every row, similar to the stitched ID.
 
 
 ## Limitations
 
 >[!IMPORTANT]
 >
->* Apply any change that you make to the global event dataset schema also to the new stitched dataset schema, otherwise it breaks the stitched dataset.
+>- No support for using `identityMap` as the persistent ID. You have to define a specific identifier in the dataset (for example, `ECID`) as the persistent ID.
 >
->* If you remove the source dataset, the stitched dataset stops processing and gets removed by the system.
+>- Apply any change that you make to the source event dataset schema also to the new stitched dataset schema, otherwise it breaks the stitched dataset.
 >
->* Data usage labels are not automatically propagated to the stitched dataset schema. If you have data usage labels applied to the source dataset schema, you need to manually apply these data usage labels to the stitched dataset schema. See [Managing data usage labels in Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html?lang=en) for more information.
+>- If you remove the source dataset, the stitched dataset stops processing and gets removed by the system.
+>
+>- Data usage labels are not automatically propagated to the stitched dataset schema. If you have data usage labels applied to the source dataset schema, you need to apply these data usage labels manually to the stitched dataset schema. See [Managing data usage labels in Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) for more information.
 
-Stitching is a groundbreaking and robust feature, but has limitations on how it can be used.
+Stitching is a groundbreaking and robust feature, but has limitations on how it can be used. 
 
-* Current rekeying capabilities are limited to one step (persistent ID to transient ID). Multiple-step rekeying (for example, persistent ID to a transient ID, then to another transient ID) is not supported.
-* Only event datasets are supported. Other datasets, such as lookup datasets, are not supported.
-* Custom ID maps used in your organization are not supported.
-* Stitching does not transform the field used for stitching in any manner. Stitching uses the value in the specified field as it exists in the unstitched dataset within data lake. The stitching process is case-sensitive. For example, if sometimes the word 'Bob' appears in the field, and sometimes the word 'BOB' appears, these ids are treated as two separate people.
-* Stitching is case-sensitive. For datasets generated through the Analytics source connector, Adobe recommends reviewing any VISTA rules or processing rules that apply to the transient ID field. This review ensures that none of these rules are introducing new forms of the same ID. For example, you should ensure that no VISTA or processing rules are introducing lowercasing to the transient ID field on only a portion of the events.
-* Stitching does not combine or concatenate fields. 
-* The transient ID field should contain a single type of ID ( IDs from a single namespace). For instance, the transient ID field should not contain a combination of login IDs and email IDs.
-* If multiple events occur with the same timestamp for the same persistent ID, but with different values in the transient ID field, stitching selects the ID based on alphabetical order. So if persistent ID A has two events with the same timestamp and one of the events specifies Bob and the other specifies Ann, stitching selects Ann.
-* If a device is shared by multiple people and the total number of transitions between users exceeds 50,000, Customer Journey Analytics stops stitching data for that device.
-* Be cautious of scenarios where the transient IDs contain placeholder values, for example 'Undefined'. See [FAQ](faq.md) for more information.
+- Only event datasets are supported. Other datasets, such as lookup datasets, are not supported.
+- Stitching does not transform the field used for stitching in any manner. Stitching uses the value in the specified field as it exists in the unstitched dataset within the data lake. 
+- The stitching process is case-sensitive. For example, if sometimes the word 'Bob' appears in the field, and sometimes the word 'BOB' appears, these ids are treated as two separate people.
 
-Do not confuse stitching with:
+Ensure you do not confuse stitching with:
 
-* The merge of two or more datasets. Stitching applies to one dataset only. Merging of datasets occurs as a result of setting up a Customer Journey Analytics connection and selecting the same Person ID across the selected datasets in the connection.
+- The merge of two or more datasets. Stitching applies to one dataset only. Merging of datasets occurs as a result of setting up a Customer Journey Analytics connection and selecting the same person ID across the selected datasets in the connection.
 
-* The join of two datasets. In Customer Journey Analytics, a join is often used for lookups or classifications in Analysis Workspace. Although stitching uses join functionality, the process itself involves more than joins.
+- The join of two datasets. In Customer Journey Analytics, a join is often used for lookups or classifications in Analysis Workspace. Although stitching uses join functionality, the process itself involves more than joins.
+
+>[!MORELIKETHIS]
+>
+>[Field based stitching](fbs.md)
+>[Graph based stitching](gbs.md)
+>[Use stitching](use-stitching.md)
+>[FAQ on stitching](faq.md)
+

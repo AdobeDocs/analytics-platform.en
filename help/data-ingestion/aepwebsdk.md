@@ -6,7 +6,7 @@ feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
 ---
-# Ingest data via the Adobe Experience Platform Web SDK
+# Ingest data via the Web SDK
 
 This quick start guide explains how you can ingest website tracking data directly into Adobe Experience Platform using the Adobe Experience Platform Web SDK and Edge Network and then use that data in Customer Journey Analytics.
 
@@ -99,11 +99,11 @@ To set up your schema:
 
    >[!NOTE]
    >
-   >If that field group is not available, look for another field group containing identity fields. Or [create a new field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) and [add new identity fields](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) (like `ecid`, `crmId`, and others you need) to the field group and select that new field group.
+   >If that field group is not available, look for another field group containing identity fields. Or [create a new field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) and [add new identity fields](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (like `ecid`, `crmId`, and others you need) to the field group and select that new field group.
 
     ![Identification Object](./assets/identification-field.png)
 
-    The identification object adds identification capabilities to your schema. In your case, you want to identify profiles visiting your site using the Experience Cloud Id and email address. There are many other attributes available to track your person's identification (for example customer id, loyalty id).
+    The identification object adds identification capabilities to your schema. In your case, you want to identify profiles visiting your site using the Experience Cloud ID and email address. There are many other attributes available to track your person's identification (for example customer id, loyalty id).
 
     Select **[!UICONTROL Apply]** to add this object to your schema.
 
@@ -129,7 +129,7 @@ To set up your schema:
 
    You are prompted to enable the schema for profile. Once enabled, when data is ingested into datasets based on this schema, that data is merged into the Real-Time Customer Profile. 
     
-   See [Enable the schema for use in Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) for more information.
+   See [Enable the schema for use in Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile) for more information.
 
    >[!IMPORTANT]
    >
@@ -227,7 +227,7 @@ To set up your datastream:
 
 Your datastream is now configured to forward the data collected from your website to your dataset in Adobe Experience Platform.
 
-See [Datastreams overview](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=en) for more information on how to configure a datastream and how to handle sensitive data.
+See [Datastreams overview](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) for more information on how to configure a datastream and how to handle sensitive data.
 
 
 
@@ -274,21 +274,7 @@ To create and configure the Adobe Experience Platform Web SDK extension:
 
 See [Configure the Adobe Experience Platform Web SDK extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html) for more information.
 
-You also want to set up the Experience Cloud ID Service extension so you can easily use of the Experience Cloud ID. The Experience Cloud ID Service identifies persons across all Adobe Experience Cloud solutions.
-
-To create and configure the Experience Cloud ID Service extension:
-
-1. Select **[!UICONTROL Extensions]** in the left rail.
-
-2. Select **[!UICONTROL Catalog]** in the top bar.
-
-3. Search for or scroll to the Experience Cloud ID Service extension, and select **[!UICONTROL Install]** to install it.
-
-   <img src="./assets/ecid-extension.png" width="35%"/>
-
-4. Leave all configurations at their default.
-
-5. Select **[!UICONTROL Save]**.
+The Web SDK includes the [!UICONTROL Adobe Experience Cloud ID Service] natively, so you do not need to add the ID service extension to your tag.
 
 #### **Data Elements**
 
@@ -452,7 +438,7 @@ To build and publish your tag:
 
     - Select **[!UICONTROL Save & Build to Development]**.
 
-    Your tag is saved and is build for your development environment. A green dot indicates a successful build of your tag on your development environment.
+    Your tag is saved and is built for your development environment. A green dot indicates a successful build of your tag on your development environment.
 
 4. You can select **[!UICONTROL ...]** to rebuild the library or move the library to a staging or production environment.
 
