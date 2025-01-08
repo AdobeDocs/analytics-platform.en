@@ -20,7 +20,7 @@ role: User
 
 >[!CONTEXTUALHELP]
 >id="workspace_cohorttable_panel"
->title="Chohort table"
+>title="Cohort table"
 >abstract="Group users based on completion of an event, then analyze their ongoing engagement and churn over time.<br/><br/>**Parameters**<br/>**Inclusion criteria**: The components used to define your initial visitor cohorts.<br/>**Return criteria**: The components used to determine if a visitor has returned."
 
 <!-- markdownlint-enable MD034 -->
