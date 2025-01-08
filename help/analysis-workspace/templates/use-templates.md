@@ -657,6 +657,24 @@ The following templates are available:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
+>id="template--bots"
+>title="View page views and trends regarding bot traffic on your site."
+>abstract="**This can help you** better understand the amount of bot traffic being filtered from your reporting, according to the bot rules you have configured.<br/>**Based on what you learn, you might** do any number of things, like continue to monitor bot activity in order to identify new patterns."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--firstvsrepeatvisitors"
+>title="View a comparison of first-time visitors to repeat visitors."
+>abstract="**This can help you** better understand your site's effectiveness in retaining customer loyalty, or the rate at which you are acquiring new customers.<br/>**Based on what you learn, you might** do any number of things, like offer incentives for future purchases to first-time visitors in order to entice them to return."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
 >id="aa-template--timeZoneRankedReport"
 >title="View the top time zones of visitors accessing your site."
 >abstract="**This can help you** better understand in which time zones your visitors live.<br/>**Based on what you learn, you might** do any number of things, like adjust site maintenance at times that will affect the fewest number of people."
@@ -895,7 +913,7 @@ The following templates are available:
 | Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
 | [!UICONTROL **First vs Repeat Users**] | View a comparison of first-time visitors to repeat visitors. <p>**This can help you** better understand your site's effectiveness in retaining customer loyalty, or the rate at which you are acquiring new customers.</p><p>**Based on what you learn, you might** do any number of things, like offer incentives for future purchases to first-time visitors in order to entice them to return.</p><!-- This template uses the --> |  
-| **Person Id/Namespace** | <p>**This can help you** better understand</p><p>**Based on what you learn, you might** do any number of things, like </p><!-- This template uses the --> |
+| **Person ID** | View individual user behavior across various channels.<p>**This can help you** better understand the complete customer journey and interactions across multiple touchpoints.</p><p>**Based on what you learn, you might** do any number of things, like personalize marketing efforts to better target user preferences.</p><!-- This template uses the --> |
 | **Geo Countries** | View the country from which people visiting the site originated.<p>**This can help you** better understand what the most popular countries visitors originate from who visit your site.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these countries, or make sure that your site experience is optimal in countries that have different primary languages.</p><p>This template uses the Countries dimension. </p> |
 | **Geo US States** | View the state (in the United States) from which people visiting the site originated. This is similar to the Geo Regions template, except that it is specific to the United States.<p>**This can help you** better understand the most popular U.S. states visitors originate from who visit your site.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these states.</p><p>This template uses the US States dimension. </p> |
 | **Geo Regions** | View the geographic region from which people visiting the site originated. A region is a geographic area that is smaller than a country but larger than a city. In some countries, a region is a state, province, or prefecture. In other areas, it is a constituent country, department, or metropolitan region. <p>**This can help you** better understand the most popular regions visitors originate from who visit your site.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these regions, or make sure that your site experience is optimal in regions that have different primary languages. </p><p>This template uses the ID(variables/geocountry) and Regions dimensions. </p> |
@@ -1111,7 +1129,23 @@ The following templates are available:
 
 ### Mobile: Mobile App {#mobile-app} 
 
-<!-- add contextual help for Mobile app screens and mobile app actions -->
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--mobileappscreens"
+>title="View the number of events, sessions, and people associated with each screen on the mobile app."
+>abstract="**This can help you** better understand which screens on your site are the most popular.<br/>**Based on what you learn, you might** do any number of things, like improve content on the most popular screens."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--mobileappactions"
+>title="View the actions people are taking on your mobile app."
+>abstract="**This can help you** better understand how people are using your app and the value they're getting form it.<br/>**Based on what you learn, you might** do any number of things, like improve develop features that compliment or improve upon those that are most popular."
+
+<!-- markdownlint-enable MD034 -->
 
 <!--CJA only-->
 
