@@ -16,7 +16,6 @@ role: User
 
 <!-- markdownlint-enable MD034 -->
 
-
 The ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Key metric summary]** visualization lets you see how an important metric is trending within a single timeframe. It also lets you compare metric performance across two timeframes. It provides the benefits of multiple visualizations combined into one visualization:
 
 * **[!UICONTROL Line]** visualization shows how the metric is trending for the primary and comparison date ranges
@@ -121,12 +120,14 @@ As part of the visualization settings, specific key metric summary settings are 
 | **[!UICONTROL Emphasize number value]** | Display summary number in prominent bold type in the center of the visualization |
 | **[!UICONTROL Legend visible]** | Show or hide the legend at the bottom of the visualization |
 | **[!UICONTROL Show annotations]** | Show or hide annotations added by an admin |
-| **[!UICONTROL Show sparklines]** | Show or hide line charts at the bottom of the chart. When hidden, the legend changes to no longer visually reference the lines |
-| **[!UICONTROL Show min and max on sparklines]** | Show or hide minimum and maximum values on primary and comparison line charts |
-| **[!UICONTROL Show comparison]** | Show or hide comparison data. When hidden, both the comparison line chart and summary change objects are hidden from view. |
+| **[!UICONTROL Hide title]** | Hide the visualization's title. |
+| **[!UICONTROL Percentages]** | Displays the visualization in a percentage instead of a number. |
+| **[!UICONTROL Show trendlines]** | Show trendlines in the visualization. |
+| **[!UICONTROL Show max and min on trendlines]** | Show or hide minimum and maximum values on primary and comparison line charts |
+| **[!UICONTROL Show comparison percentage and trendline]** | Show or hide comparison data. When hidden, both the comparison line chart and summary change objects are hidden from view. |
 | **[!UICONTROL Show total number]** | Show or hide summary number |
 | **[!UICONTROL Show raw difference]** | Show or hide raw difference between the total value of the metric in the primary date range and the secondary date range |
-| **[!UICONTROL Abbreviate value]** | Abbreviate number values to simplify communicated insights (for example, 20,000 -> 20K) |
+| **[!UICONTROL Abbreviate value]** | Select **[!UICONTROL Abbreviate value]** to abbreviate intelligently the number value. When selected, enter a number to define the amount of abbreviation. For example:<br/><table><tr><td>**Original value**</td><td>**Abbreviation**</td><td>**Result**</td></tr><tr><td>$12,011,141.25</td><td>Not selected</td><td align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to 1</td><td align="right">$12M</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to 2</td><td align="right">$12.0M</td></tr><tr><td>$12,011,141.25</td><td>Selected, set to 2</td><td align="right">$12.011M</td></tr><tr><td>$12,011,141.25</td><td>Select, set to 3</td><td align="right">$12.011M</td></tr></table> |
 
 ## Edit visualization
 
@@ -134,8 +135,14 @@ After building the visualization, you can still edit the original configuration.
 
 1. Click the pencil icon in the top-right corner of the visualization (next to the settings gear icon).
 
-   ![Visualization edit icon.s](assets/edit-icon.png)
+   ![Visualization edit icon](assets/edit-icon.png)
 
    You are now taken back to the original configuration view. 
 
 1. Change the metric, primary date range, comparison date range, or filter as preferred.
+
+>[!MORELIKETHIS]
+>
+>[Add a visualization to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Visualization settings](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Visualization context menu](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
