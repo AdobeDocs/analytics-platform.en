@@ -172,6 +172,7 @@ The following components are not supported, and Analysis Workspace prompts you t
   * Was created from a field that is part of an [array of objects](/help/use-cases/object-arrays.md) (similar to multi-value variables in Adobe Analytics)
   * Has [persistence enabled](/help/data-views/component-settings/persistence.md)
   * Is not using a [binding dimension](/help/use-cases/data-views/binding-dimensions-metrics.md)
+* Multiple dimensions that are from fields referencing different [arrays of objects](/help/use-cases/object-arrays.md). (Multiple dimensions referencing the same array of objects are allowed.)
 * More than 5 dimensions and 5 metrics per report (up to 5 dimensions and 5 metrics are supported)
 * In table columns:
   * Date ranges
