@@ -332,8 +332,8 @@ The Usage interface consists of two panels:
 
   The **[!UICONTROL Reportable rows]** visualization tracks the number of rows available for reporting by subtracting skipped and deleted rows from ingested rows, serving as a key metric for billing and data usage. The subpanel provides 
   
-  - A summary of total reportable rows up until this month.
-  - A summary of this month's total reportable rows and the change from the previous month.
+  * A summary of total reportable rows up until this month.
+  * A summary of this month's total reportable rows and the change from the previous month.
 
   ![Reportable rows](assets/usage-reportable-rows.png)
 
