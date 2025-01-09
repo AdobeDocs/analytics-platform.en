@@ -323,16 +323,16 @@ The Usage interface consists of two panels:
 
   ![Ingested rows](assets/usage-ingested-rows.png)
 
-  You can hover over data points in the visualizations to display a popup with more details.
+  You can hover over data points in the visualization to display a popup with more details.
 
   +++
 
   +++ Reportable rows
 
-  The **[!UICONTROL Reportable rows]** visualization tracks the number of rows available for reporting by subtracting skipped and deleted rows from ingested rows, serving as a key metric for billing and data usage. The subpanel provides 
+  The **[!UICONTROL Reportable rows]** visualization tracks the number of rows available for reporting by subtracting skipped and deleted rows from ingested rows, serving as a key metric for billing and data usage. The subpanel provides two summaries:
   
-  * A summary of total reportable rows up until this month.
-  * A summary of this month's total reportable rows and the change from the previous month.
+  * **[!UICONTROL Last month total]**: A summary of total reportable rows up until this month.
+  * **[!UICONTROL This month]**: A summary of this month's total reportable rows and the change from the previous month.
 
   ![Reportable rows](assets/usage-reportable-rows.png)
 

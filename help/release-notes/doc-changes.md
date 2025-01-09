@@ -14,7 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **January 2025** ||
-| Usage metrics | Updated documentation on the improved [usage](/help/connections/manage-connections.md#usage) metrics interface. |
+| Usage metrics | Updated documentation on the improved [usage metrics](/help/connections/manage-connections.md#usage) interface. |
 
 
 ## 2024
