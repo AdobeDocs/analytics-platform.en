@@ -10,13 +10,13 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_attribution_button"
+>id="workspace_attribution_button"
 >title="Attribution"
 >abstract="Quickly compare and visualize any number of attribution models using any dimension and conversion metric"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ panel"
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_attribution_panel"
+>id="workspace_attribution_panel"
 >title="Attribution panel"
 >abstract="Quickly compare and visualize any number of attribution models using any dimension and conversion metric.<br/><br/>**Parameters**<br/>**Channel**<br/>The dimension to attribute against. This dimension can be marketing channels, campaigns, or any other dimension.<br/>**Models**<br/>The model determines how credit is assigned to touchpoints.<br/>**Lookback window**<br/>This setting determines the window of data attribution that applies to each conversion."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ panel"

@@ -386,7 +386,7 @@ To build and publish your tag:
 
     - Select **[!UICONTROL Save & Build to Development]**.
 
-    Your tag is saved and is build for your development environment. A green dot indicates a successful build of your tag on your development environment.
+    Your tag is saved and is built for your development environment. A green dot indicates a successful build of your tag on your development environment.
 
 4. You can select **[!UICONTROL ...]** to rebuild the library or move the library to a staging or production environment.
 

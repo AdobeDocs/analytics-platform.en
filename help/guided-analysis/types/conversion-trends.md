@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_conversiontrends_button"
+>id="workspace_guidedanalysis_conversiontrends_button"
 >title="Conversion trends"
 >abstract="Track changes in conversion rates over time."
 

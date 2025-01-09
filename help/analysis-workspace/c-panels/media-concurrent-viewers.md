@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaconcurrentviewers_button"
+>id="workspace_mediaconcurrentviewers_button"
 >title="Media concurrent viewers"
 >abstract="Create a panel to analyze average minute audience for specific content, or over a specific time period."
 
@@ -19,7 +19,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaconcurrentviewers_panel"
+>id="workspace_mediaconcurrentviewers_panel"
 >title="Media concurrent viewers"
 >abstract="Analyze concurrent viewers over time, view peak concurrency, or break down and compare.<br/><br>**Granularity**: Select time period to view concurrent viewers by.<br/>**Panel summary numbers**:<br/>Option to show summary numbers with date or time details for each line. Maximum will show details for peak concurrency. Minimum will show details for the trough.<br/>**Series breakdown (optional)**: Break down visualization by segments, dimensions, dimension items or date ranges. View up to 10 lines at a time. Breakdowns are limited to a single level."
 
@@ -55,7 +55,7 @@ To use an **[!UICONTROL Media concurrent viewers]** panel:
 
 1. Create a **[!UICONTROL Media concurrent viewers]** panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
 
-1. Ensure you select a data view for the panel that has components configured from the Streaming Media Collection Add-on.
+1. Ensure you select a data view for the panel that has components configured from the Streaming Media Collection.
 
 1. Specify the [input](#panel-input) for the panel.
 

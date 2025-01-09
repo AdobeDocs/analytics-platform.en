@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_bullet_goalvalue"
+>id="workspace_bullet_goalvalue"
 >title="Goal value"
 >abstract="**[!UICONTROL High goal]** is the is the main goal you are aiming for. **[!UICONTROL Low goal]** and **[!UICONTROL Mid goal]** create ranges below the [!UICONTROL High goal]. Note: when the **[!UICONTROL Percentages]** option is checked, enter goals as whole numbers. For example: `20` if your goal is twenty percent."
 
@@ -19,7 +19,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_bullet_button"
+>id="workspace_bullet_button"
 >title="Bullet"
 >abstract="Create a bullet graph visualization to show how a metric compares to, or measures against, performance ranges (goals)."
 

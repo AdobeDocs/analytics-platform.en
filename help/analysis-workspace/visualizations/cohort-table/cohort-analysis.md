@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_cohorttable_button"
+>id="workspace_cohorttable_button"
 >title="Cohort table"
 >abstract="Create a cohort visualization to group users based on completion of an event and analyze ongoing engagement and churn over time."
 
@@ -19,8 +19,8 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_cohorttable_panel"
->title="Chohort table"
+>id="workspace_cohorttable_panel"
+>title="Cohort table"
 >abstract="Group users based on completion of an event, then analyze their ongoing engagement and churn over time.<br/><br/>**Parameters**<br/>**Inclusion criteria**: The components used to define your initial visitor cohorts.<br/>**Return criteria**: The components used to determine if a visitor has returned."
 
 <!-- markdownlint-enable MD034 -->
@@ -50,6 +50,8 @@ Examples of what you can do with a [!UICONTROL Cohort table]:
 >[!IMPORTANT]
 >
 >[!UICONTROL Cohort Analysis] does not support non-filterable metrics (including calculated metrics), non-integer metrics (such as Revenue), or Occurrences. Only metrics that can be used in filters can be used in [!UICONTROL Cohort Analysis], and they can only be incremented 1 at a time. 
+
+Cohort tables in Customer Journey Analytics support double-based (or any numeric-based) metric. For example, Purchase.Value (a double) can be used as an  Inclusion/Return Metric. In addition, all metrics that are passed into Adobe Experience Platform via the Analytics Source Connector are also doubles.
 
 ## Cohort table capabilities
 
