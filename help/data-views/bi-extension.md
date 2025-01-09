@@ -64,7 +64,7 @@ In Adobe Experience Platform:
 
 1. Select ![Create Query](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **Create query**]**.
 
-1. Select the `cja` **[!UICONTROL **Database**]**.
+1. Select the `cja` database for your sandbox from the list of databases in the **[!UICONTROL Database]** dropdown menu. For example `prod:cja`.
 
 1. To execute the query, type your SQL statement and select the ![Play](assets/Smock_Play_18_N.svg) button (or press `[SHIFT]` + `[ENTER]`).
 
@@ -79,7 +79,7 @@ In Adobe Experience Platform:
 
    1. Select **[!UICONTROL **Credentials**]** from the top bar.
 
-   1. Select the `cja` **[!UICONTROL **Database**]**.
+   1. Select the `cja` database for your sandbox from the list of databases in the **[!UICONTROL Database]** dropdown menu. For example `prod:cja`.
 
    1. To copy the command string, use ![Copy](assets/Smock_Copy_18_N.svg) in the **[!UICONTROL **PSQL command**]** section.
 
@@ -104,7 +104,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
    1. Select **[!UICONTROL **Credentials**]** from the top bar.
 
-   1. Select the `cja` **[!UICONTROL **Database**]**.
+   1. Select the `cja` database for your sandbox from the list of databases in the **[!UICONTROL Database]** dropdown menu. For example `prod:cja`.
 
    1. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Power BI.
 
@@ -147,7 +147,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
    1. Select **[!UICONTROL **Credentials**]** from the top bar.
 
-   1. Select the ` cja` **[!UICONTROL **Database**]**.
+   1. Select the `cja` database for your sandbox from the list of databases in the **[!UICONTROL Database]** dropdown menu. For example `prod:cja`.
 
    1. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Tableau Desktop.
 
