@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_combo_button"
+>id="workspace_combo_button"
 >title="Combo"
 >abstract="Create a combo chart visualization quickly without the need to create a freeform table first."
 

@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_frequency_button"
+>id="workspace_guidedanalysis_frequency_button"
 >title="Frequency"
 >abstract="View distribution of repeat user activity for specific events."
 

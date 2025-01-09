@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_donut_button"
+>id="workspace_donut_button"
 >title="Donut"
 >abstract="Create a donut visualization to compare percentages of a total, typically with a small number of items."
 

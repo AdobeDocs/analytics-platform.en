@@ -59,7 +59,7 @@ Conditional formatting applies formatting to upper, midpoint, and lower limits t
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
+>id="workspace_freeformtable_column_usenondefaultattributionmodel"
 >title="Use non-default attribution model"
 >abstract="Enable a non-default attribution model for the selected columns."
 
@@ -68,7 +68,7 @@ Conditional formatting applies formatting to upper, midpoint, and lower limits t
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
+>id="workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
 >title="Use non-default attribution model"
 >abstract="Non-default attribution mode are unavailable for this metric."
 

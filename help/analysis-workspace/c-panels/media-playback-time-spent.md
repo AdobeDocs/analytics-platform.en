@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaplaybacktimespent_button"
+>id="workspace_mediaplaybacktimespent_button"
 >title="Media playback time spent"
 >abstract="Create a panel to analyze video consumption over time, with various levels of granularity, and the ability to break down and compare."
 
@@ -19,7 +19,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaplaybacktimespent_panel"
+>id="workspace_mediaplaybacktimespent_panel"
 >title="Media playback time spent"
 >abstract="Analyze video consumption over time, select various granularities, breakdown and compare.<br/><br/>**Granularity**: Select time period to view concurrent viewers by.<br/>**Panel summary numbers (optional)**: Option to show summary numbers with date or time details for each line. Maximum will show details for peak playback time tpent. Minimum will show details for the trough. Sum will show details for the total sum of playback time spent.<br/>**Series breakdown (optional)**: Break down visualization by segments, dimensions, dimension items or date ranges. View up to 10 lines at a time. Breakdowns are limited to a single level.<br/>**Time format**: Option to show the time format for visualizations in either hours or minutes."
 
@@ -57,7 +57,7 @@ To use an **[!UICONTROL Media playback time spent]** panel:
 
 1. Create a **[!UICONTROL Media playback time spent]** panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
 
-1. Ensure you select a data view for the panel that has components configured from the Streaming Media Collection Add-on.
+1. Ensure you select a data view for the panel that has components configured from the Streaming Media Collection.
 
 1. Specify the [input](#panel-input) for the panel.
 

@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_button"
+>id="workspace_freeformtable_button"
 >title="Freeform table"
 >abstract="Create an empty freeform table visualization that you can build up using dimensions, segments, metrics, and date ranges. You can use the freeform table as the basis for other visualizations."
 

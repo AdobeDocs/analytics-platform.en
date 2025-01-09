@@ -200,7 +200,6 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 
 ## Usage {#connections-usage}
 
-
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]

@@ -12,7 +12,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_area_button"
+>id="workspace_area_button"
 >title="Area graph"
 >abstract="Create an area graph visualization to represent the intersection of multiple metrics."
 
@@ -28,7 +28,7 @@ The ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]** visuali
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_areastacked_button"
+>id="workspace_areastacked_button"
 >title="Area stacked"
 >abstract="Create an area graph visualization to represent the stacking of multiple metrics."
 

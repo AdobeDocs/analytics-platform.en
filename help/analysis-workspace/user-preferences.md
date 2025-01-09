@@ -37,7 +37,7 @@ General preferences apply to your Customer Journey Analytics experience in the b
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_shareonlyworkspace"
+>id="workspace_prefs_shareonlyworkspace"
 >title="Allow sharing only with Workspace users"
 >abstract="When enabled, the **[!UICONTROL Share with anyone]** option is no longer available to users when sharing an Analysis Workspace project. People who previously received access to a project through this share option can no longer access the project."
 
@@ -46,7 +46,7 @@ General preferences apply to your Customer Journey Analytics experience in the b
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_requireexperiencecloudauth"
+>id="workspace_prefs_requireexperiencecloudauth"
 >title="Require Experience Cloud authentication"
 >abstract="When enabled, people who are given access to a project from the Share with anyone option in Analysis Workspace must authenticate using their Experience Cloud credentials."
 
@@ -69,7 +69,7 @@ You can update company preferences that apply to all users and projects within y
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_categoricalpalette"
+>id="workspace_prefs_categoricalpalette"
 >title="Categorical palette"
 >abstract="Applied to many visualizations in Analysis Workspace and Guided analysis. Each color represents a distinct categorical value."
 
@@ -78,7 +78,7 @@ You can update company preferences that apply to all users and projects within y
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_divergingpalette"
+>id="workspace_prefs_divergingpalette"
 >title="Diverging palette"
 >abstract="Applied to the Cohort table in Analysis Workspace and User growth guided analysis. This palette holds a numeric meaning with two extremes and a baseline in the middle."
 
@@ -87,7 +87,7 @@ You can update company preferences that apply to all users and projects within y
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_sequentialpalette"
+>id="workspace_prefs_sequentialpalette"
 >title="Sequential palette"
 >abstract="Applied to the Frequency trends (stacked bar) guided analysis. This palette holds a numeric meaning from light to dark."
 
@@ -118,7 +118,7 @@ Some of these same preferences can also be customized for individual projects in
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_showanomalies"
+>id="workspace_prefs_showanomalies"
 >title="Show anomalies"
 >abstract="Selecting **[!UICONTROL Show anomalies]** will automatically run anomaly detection on the first metric column added to a time series Freeform table visualization."
 
@@ -127,7 +127,7 @@ Some of these same preferences can also be customized for individual projects in
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_showforecast"
+>id="workspace_prefs_showforecast"
 >title="Show forecast"
 >abstract="Selecting **[!UICONTROL Show forecast]** will automatically forecast the first metric column added to a time series Freeform table visualization."
 

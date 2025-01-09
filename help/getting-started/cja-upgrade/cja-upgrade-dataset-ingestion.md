@@ -37,3 +37,6 @@ After you configure your Web SDK implementation, you need to check the statuses 
    If **[!UICONTROL Failed]** is shown in the **[!UICONTROL Status]** field, check your Web SDK implementation to ensure that it is correctly sending data to Adobe.
 
    Repeat this step to verify the status of each batch.
+
+1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+

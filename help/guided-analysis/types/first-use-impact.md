@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_firstuseimpact_button"
+>id="workspace_guidedanalysis_firstuseimpact_button"
 >title="First use impact"
 >abstract="Measure the impact of first-time feature use on key indicators."
 

@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_netgrowth_button"
+>id="workspace_guidedanalysis_netgrowth_button"
 >title="Net growth"
 >abstract="Are you gaining or losing users?"
 
