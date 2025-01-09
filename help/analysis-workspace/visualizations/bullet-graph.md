@@ -9,12 +9,6 @@ role: User
 
 <!-- markdownlint-disable MD034 -->
 
-[!BADGE Adobe Analytics version]{type=Informative url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html"}
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_bullet_goalvalue"
 >title="Goal value"
@@ -32,6 +26,11 @@ role: User
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+[!BADGE Adobe Analytics version]{type=Informative url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html"}
+
+<!-- markdownlint-enable MD034 -->
 
 The ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** visualization shows how a metric compares to, or measures against, performance ranges (goals). 
 
