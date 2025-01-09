@@ -208,7 +208,7 @@ The Usage interface uses the folowing metrics
 
 | Metric name | Description |
 |---|---|
-| Historical reportable rows | Count of rows from the start of your retention window up until the current month. |
+| Historical reportable rows | Count of rows for the period older than 13 months. |
 | Core reportable rows | Count of rows over the last 13 months. | 
 | Ingested rows | How many rows are ingested for the specific period. |
 | Reportable rows | How many rows of data do you have as part of the connection for the specific period. |
@@ -223,17 +223,19 @@ The Usage interface uses the folowing metrics
 
 The Usage interface consists of two panels:
 
-* The **[!UICONTROL Key Usage Metrics]** panel: provides core and historical data reportable rows. The panel also tracks percentage changes compared to the previous month for both core and historical data rows.
+* The **[!UICONTROL Key usage metrics]** panel: provides core and historical data reportable rows. The panel also tracks percentage changes compared to the previous month for both core and historical data rows.
   
-  The panel displays two visualizations: 
+  The panel displays in a visualization: 
   
   * **[!UICONTROL Core data reportable rows]**.
 
-    How many reportable rows do you have over the last 13 months. The summary number is the number of reportable rows for the last month (in the example November 2023 - November 2024). When you hover over any data point, the popup shows the number of reportable rows for that specific month (in the example September 2024).
+    How many reportable rows do you have over the last 13 months. The summary number is the number of core reportable rows (for example, 741M) for the last month (for example, December 2024).
     
   * **[!UICONTROL Historical data reportable rows]**.
 
-    How many reportable rows do you have for the months starting from your retention window up until now, minus the last 13 months. The summary number is the total number of historical reportable rows for that period. In case the start of you retention window is September 2022, the example reports reportable rows from September 2022 - October 2023. When you hover over any data point, the popup shows the number of reportable rows for that specific month.
+    How many reportable rows do you have for the period older than 13 months. The summary number is the number of historical reportable rows (for example, 127M) for the last month (for example, December 2024). 
+    
+  When you hover over any stacked bar in the visualization, a popup shows the number of rows for that specific part of the bar (for example).
 
 
   ![Key Usage Metrics](assets/usage-key-usage-metrics.png)
@@ -242,7 +244,7 @@ The Usage interface consists of two panels:
 
   +++ Ingested rows
 
-  The **[!UICONTROL Ingested rows]** subpanel measures the total number of records added to the system each month, providing insight into data growth and ingestion rates. The subpanel shows details for **[!UICONTROL Total ingested rows]** and **[!UICONTROL Monthly ingested rows]**.
+  The **[!UICONTROL Ingested rows]** subpanel measures the total number of records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
 
   ![Ingested rows](assets/usage-ingested-rows.png)
 
@@ -252,7 +254,10 @@ The Usage interface consists of two panels:
 
   +++ Reportable rows
 
-  The **[!UICONTROL Reportable rows]** visualization tracks the number of rows available for reporting by subtracting skipped and deleted rows from ingested rows, serving as a key metric for billing and data usage. The subpanel shows details for **[!UICONTROL Total ingested rows]** and **[!UICONTROL Monthly ingested rows]**.
+  The **[!UICONTROL Reportable rows]** visualization tracks the number of rows available for reporting by subtracting skipped and deleted rows from ingested rows, serving as a key metric for billing and data usage. The subpanel provides 
+  
+  - A summary of total reportable rows up until this month.
+  - A summary of this month's total reportable rows and the change from the previous month.
 
   ![Reportable rows](assets/usage-reportable-rows.png)
 
@@ -262,9 +267,11 @@ The Usage interface consists of two panels:
 
   +++ Detail breakdown
 
-  You can use the **[!UICONTROL Detail breakdown]** table to view detailed metrics by connection, dataset, sandbox, and tags. Datasets are reported using ids instead of names, as dataset names can be modified during a reporting period.
+  You can use the **[!UICONTROL Detail breakdown]** table to view detailed metrics by connection, dataset, sandbox, and tags. Datasets are reported using ids instead of names, as dataset names can be modified during a reporting period. Unknown datasets or connections are reported using ids.
 
-  * To change the breakdown, select a combination for **[!UICONTROL View by]** and B**[!UICONTROL Breakdown by]**.
+  For the months before September 2024, data was collected at the dataset level and is displayed as [!UICONTROL Other datasets] for clarity. Starting from September 2024, data is gathered at a granular dataset level, and [!UICONTROL Other datasets] does no longer appear.
+
+  * To change the breakdown, select a combination for **[!UICONTROL View by]** and **[!UICONTROL Breakdown by]**.
 
     | **[!UICONTROL View by]** options | **[!UICONTROL Breakdown by]** options |
     |---|---|
