@@ -129,7 +129,7 @@ The Connections details interface provides a detailed view of the status of a co
 | [!UICONTROL Records of event data available] | The total number of event dataset rows available for reporting, **for the entire connection**. This count is independent of any calendar settings. The count changes if you select a dataset from the dataset selector or by selecting a dataset in the table. Once data is added, there is a latency of 1-2 hours to get the data to appear in reporting. |
 | [!UICONTROL Metrics] | Summarize the event, lookup, profile and summary dataset records that are added, skipped, and deleted, and the number of batches added. These metrics are based on **the dataset and date range you have selected**.<p>Select **[!UICONTROL Check detail]** to show the **[!UICONTROL Check skipped detail]** popup. The popup lists the number of skipped records and the reason for all event datasets or selected dataset.<p><img src="./assets/skipped-records.png" width="500"/><p>Select ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) popup with more information. For some skipped reasons, like [!UICONTROL Empty visitor ID], the popup displays Sample PSQL for EQS (Experience Platform for Query Service) you can use in [Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) to query for the skipped records in the dataset. Select ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy sample PSQL for EQS]** to copy the SQL. |
 | [!UICONTROL Records added] | Indicates how many rows were added in the selected time period, **for the dataset and date range you have selected**. Updated every 10 minutes. |
-| [!UICONTROL Records skipped] | Indicates how many rows were skipped in the selected time period, **for the dataset and date range you have selected**. Reasons for skipping records include: missing timestamps, missing or invalid person ID, and so forth. Updated every 10 minutes. <p>Invalid person IDs (such as `undefined`, or `00000000`, or any combination of numbers and letters in a [!UICONTROL Person ID] that appears in an event more than 1 million times in a given month) are IDs that cannot be attributed to any specific user or person. These rows cannot be ingested into the system and result in error-prone ingestion and reporting. To fix invalid person IDs, you have 3 options:<ul><li>Use [Stitching](/help/stitching/overview.md) to populate the undefined or all-zero user IDs with valid user IDs.</li><li>Blank out the user ID, which are then kipped during ingestion (preferable to invalid or all-zero user IDs).</li><li>Fix any invalid user IDs in your system before ingesting the data.</li></ul> |
+| [!UICONTROL Records skipped] | Indicates how many rows were skipped in the selected time period, **for the dataset and date range you have selected**. Reasons for skipping records include: missing timestamps, missing or invalid person ID, and so forth. Updated every 10 minutes. <p>Invalid person IDs (such as `undefined`, or `00000000`, or any combination of numbers and letters in a [!UICONTROL Person ID] that appear in an event more than 1 million times in a given month) are IDs that cannot be attributed to any specific user or person. These rows cannot be ingested into the system and result in error-prone ingestion and reporting. To fix invalid person IDs, you have 3 options:<ul><li>Use [Stitching](/help/stitching/overview.md) to populate the undefined or all-zero user IDs with valid user IDs.</li><li>Blank out the user ID, which are then kipped during ingestion (preferable to invalid or all-zero user IDs).</li><li>Fix any invalid user IDs in your system before ingesting the data.</li></ul> |
 | [!UICONTROL Records] deleted | Indicates how many rows were deleted in the selected time period, **for the dataset and date range you have selected**. Someone might have deleted a dataset in [!DNL Experience Platform], for example. Updated every 10 minutes.<p>In some scenarios, this value can also include records replaced, as with stitching or some lookup dataset updates. Consider this example:</p><ul><li>You upload one record to an XDM Individual Profile dataset, which Customer Journey Analytics is configured to ingest as profile lookup data. In the connection details, this dataset would display 1 record added.</li><li>You upload a duplicate of the original record into the same AEP dataset, which now contains two records. Customer Journey Analytics ingests the additional record from the profile lookup dataset. Seeing that it has already ingested a profile record in the connection for that person ID, Customer Journey Analytics deletes its earlier version and adds the new profile data. In the connection details, this action would represent 1 record added and 1 record deleted, because Customer Journey Analytics only retains the most recent profile lookup data for any ingested person ID.</li><li>In total, the AEP dataset contains two records that happen to be identical. Separately, the Customer Journey Analytics connection details display the status of its ingested data: 2 records added and 1 record deleted for this profile dataset. </li></ul> |
 | ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) _Search dataset name or ID_ | Dataset search field. You can search the datasets table by dataset name or [!UICONTROL Dataset ID]. |
 | [!UICONTROL Datasets table] | The datasets that are part of the connection. |
@@ -145,9 +145,9 @@ The Connections details interface provides a detailed view of the status of a co
 | Schema | The Experience Platform schema that the dataset is based on.  |
 | [!UICONTROL Import new data] | The status of importing new data for the dataset: <p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** if dataset is configured to import new data, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** if dataset is configured not to import new data import. |
 | [!UICONTROL Transform data] | The transformation status of applicable B2B lookup datasets. See [Transform datasets for B2B lookups](transform-datasets-b2b-lookups.md) for more information.<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for applicable datasets enabled for transformation, <p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** for applicable datasets not enabled for transformation, and<p>**[!UICONTROL N/A]** for all other datasets, not applicable for transformation.| 
-| [!UICONTROL Backfill data] | The status of backfill data for the dataset.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills,<p>![Status red](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of backfills processing,<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of backfills completed, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case  backfills are not configured. |
+| [!UICONTROL Backfill data] | The status of backfill data for the dataset.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills,<p>![Status red](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of processing backfills,<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of backfills completed, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case backfills are not configured. |
 | [!UICONTROL Import new data] | The status of importing new data for the dataset: <p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** if the dataset is configured to import new data, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** if the dataset is configured not to import new data. |
-| [!UICONTROL Backfill data] | The status of backfill data for the dataset.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills,<p>![Status red](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of backfills processing,<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of backfills completed, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are configured. |
+| [!UICONTROL Backfill data] | The status of backfill data for the dataset.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills,<p>![Status red](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of processing backfills,<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of backfills completed, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are configured. |
 
 >[!IMPORTANT]
 >
@@ -189,16 +189,16 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 | [!UICONTROL Records deleted] | How many records were deleted during the selected time period. |
 | [!UICONTROL Batches added] | How many data batches were added into this dataset.  |
 | [!UICONTROL Records skipped] | How many rows were skipped during ingestion in the selected time period.<p>Reasons for skipping records include: Missing timestamps, missing or invalid person ID, and so forth. Updated every 10 minutes.<p>Invalid person IDs (such as `undefined`, or `00000000`, or any combination of numbers and letters in a [!UICONTROL Person ID] that appears in an event more than 1 million times in a given month) are IDs that cannot be attributed to any specific user or person. These rows cannot be ingested into the system and result in error-prone ingestion and reporting. To fix invalid person IDs, you have 3 options:<ul><li>Use [Stitching](/help/stitching/overview.md) to populate the undefined or all-zero user IDs with valid user IDs.</li><li>Blank out the user ID, which is then skipped during ingestion (preferable to invalid or all-zero user IDs).</li><li>Fix any invalid user IDs in your system before ingesting the data.</li></ul> |
-| [!UICONTROL Last added] | When the last batch was added. |
+| [!UICONTROL Last added] | The timestamp the last batch was added. |
 | [!UICONTROL Import new data] | The status of importing new data for the dataset: <p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** if the dataset is configured to import new data, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** if the dataset is configured not to import new data.  |
-| [!UICONTROL Backfill data] | The status of backfill data for the dataset.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills,<p>![Status red](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of backfills processing,<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of backfills completed, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are configured.<p>To show a dialog with an overview of the past backfills for the dataset, select <img src="./assets/pastbackfill.svg" alt="Past backfills" width="15"/> **[!UICONTROL Past backfills]**. |
+| [!UICONTROL Backfill data] | The status of backfill data for the dataset.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills,<p>![Status red](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of processing backfills,<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of backfills completed, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are configured.<p>To show a dialog with an overview of the past backfills for the dataset, select <img src="./assets/pastbackfill.svg" alt="Past backfills" width="15"/> **[!UICONTROL Past backfills]**. |
 | [!UICONTROL Data source type] | Data source type as defined when adding the dataset to the connection. |
 | [!UICONTROL Dataset type] | Either [!UICONTROL Event], [!UICONTROL Profile], [!UICONTROL Lookup], or [!UICONTROL Summary]. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection)  |
 | [!UICONTROL Schema] | The Experience Platform schema that this dataset is based on. |
 | [!UICONTROL Dataset ID] | This dataset ID is generated in Experience Platform. |
 
 
-## Usage
+## Usage {#connections-usage}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -206,7 +206,6 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 >id="cja_connections_usage_keyusagemetrics"
 >title="Key usage metrics" 
 >abstract="Provide monthly and total data for core and historical reportable rows."
-
 <!-- markdownlint-enable MD034 -->
 
 
@@ -216,7 +215,6 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 >id="cja_connections_usage_monthlyingestedrows"
 >title="Monthly ingested rows"
 >abstract="Measures the total number of records added to the system each month to provide insights into data growth and ingestion rates."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -225,7 +223,6 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 >id="cja_connections_usage_monthlyreportablerows"
 >title="Monthly reportable rows"
 >abstract="Tracks the number of rows available for reporting. Reportable rows are the ingested rows minus the  rows that are skipped and deleted during ingestion. Reportable rows serve as a key metric for billing and data usage."
-
 <!-- markdownlint-enable MD034 -->
 
 
@@ -235,7 +232,6 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 >id="cja_connections_usage_detailbreakdown"
 >title="Detail breakdown."
 >abstract="You can view detailed metrics by connection, dataset, sandbox, and tags, with the option to download a CSV file of the data."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -243,8 +239,7 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_otherdatasets"
 >title="Other datasets"
->abstract="For months before September 2024, data was collected at the dataset level and is displayed as *Other datasets* for clarity. Starting from September 2024, data is gathered at a granular dataset level, and *Other datasets* will no longer appear."
-
+>abstract="For the months before September 2024, data was collected at the dataset level and is displayed as *Other datasets* for clarity. Starting from September 2024, data is gathered at a granular dataset level, and *Other datasets* will no longer appear."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -253,7 +248,6 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 >id="cja_connections_usage_unknowndatasetsorconnections"
 >title="Unknown datasets or connections"
 >abstract="Unknown datasets or connections are displayed using their IDs."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -262,7 +256,6 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 >id="cja_connections_usage_datanotavailable"
 >title="Data not available"
 >abstract="Historical data prior to September 2024 is not available due to system limitations. Metrics are collected and displayed starting from September 2024 onwards. The chart shows the last 18 months on the timeline, and future data will appear as the data becomes available."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -271,7 +264,6 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 >id="cja_connections_corereportablerows"
 >title="Core reportable rows"
 >abstract="Displays the total number of rows available for the past 13 months. For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -280,41 +272,94 @@ When a dataset is selected in the datasets table, a panel on the right side of t
 >id="cja_connections_historicalreportablerows"
 >title="Historical reportable rows"
 >abstract="Displays the total number of rows available for the period older than 13 months. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023."
-
 <!-- markdownlint-enable MD034 -->
 
 
-The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage UI to plan your Customer Journey Analytics license renewal.
+The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. If not selected, select the **[!UICONTROL Usage]** tab to access the interface.
 
-You can select a time range (between last 6 months, year to date, or last 2 Years) and an interval (between monthly or quarterly) to monitor Customer Journey Analytics usage. The interface is divided into two sections:
+This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage interface to plan your Customer Journey Analytics license renewal.
 
-* Ingested rows: total rows ingested/sent from event datasets across all Customer Journey Analytics Connections, including records skipped during ingestion
-* Reportable rows: total reportable rows that include all events data across all Customer Journey Analytics Connections
+The Usage interface uses the folowing metrics
 
-![usage-view](assets/usage-view.png)
+| Metric name | Description |
+|---|---|
+| Historical reportable rows | Count of rows for the period older than 13 months. |
+| Core reportable rows | Count of rows over the last 13 months. | 
+| Ingested rows | How many rows are ingested for the specific period. |
+| Reportable rows | How many rows of data do you have as part of the connection for the specific period. |
+| Cumulative rows | How many rows are ingested up until the specific month. |
 
-Select the **[!UICONTROL Usage]** tab to access the interface.
-
-### Report on usage
-
-1. Select a **[!UICONTROL Time range]**. You can select between **[!UICONTROL Last 6 months]**, **[!UICONTROL Year to date]**, or **[!UICONTROL Last 2 Years]**.
-1. Select an **[!UICONTROL Interval]**. You can select between **[!UICONTROL Monthly]** or **[!UICONTROL Quarterly]**.
-
-For [!UICONTROL Ingested rows]:
-
-* A panel displays the total ingested rows that include all the events data across all the connections updated on every 2nd day of a month. Within the panel: 
-  * a box displays the number of ingested rows for the last month and the change in % (indicated by ▲ or ▼) from the previous month.
-  * a line graph displays the ◼︎ [!UICONTROL Monthly ingested rows].<br/>To see a popup that displays the number of monthly ingested rows for a month, hover over any data point in the line graph.
+>[!NOTE]
+>
+>Data is collected, starting from July 2024 for the core, historical, and total records. Reach out to your account manager for earlier historical data.
+>
 
 
-For [!UICONTROL Reportable rows]:
 
-* A panel displays total reportable rows that include all the events data across all the connections updated on every 2nd day of a month. Within the panel:
-  * a box displays the cumulative total number of reportable rows.
-  * a box displays the total number of reportable rows for the last month and the change in % (indicated by ▲ or ▼) from the previous month.
-  * a line graph displays the ◼︎ [!UICONTROL Monthly reportable rows].<br/>To see a popup that displays the number of cumulative reportable rows for a specific month, hover over any data point in the line graph.
-  * a line graph displays the ◼︎ [!UICONTROL Cumulative reportable rows].<br/>To see a popup that displays the number of monthly reportable rows for a month, hover over any data point in the line graph.
+The Usage interface consists of two panels:
 
+* The **[!UICONTROL Key usage metrics]** panel: provides core and historical data reportable rows. The panel also tracks percentage changes compared to the previous month for both core and historical data rows.
+  
+  The panel displays in a visualization: 
+  
+  * **[!UICONTROL Core data reportable rows]**.
+
+    How many reportable rows do you have over the last 13 months. The summary number is the number of core reportable rows (for example, 741M) for the last month (for example, December 2024).
+    
+  * **[!UICONTROL Historical data reportable rows]**.
+
+    How many reportable rows do you have for the period older than 13 months. The summary number is the number of historical reportable rows (for example, 127M) for the last month (for example, December 2024). 
+    
+  When you hover over any stacked bar in the visualization, a popup shows the number of rows for that specific part of the bar (for example).
+
+
+  ![Key Usage Metrics](assets/usage-key-usage-metrics.png)
+
+* A combined panel, showing three subpanels for:
+
+  +++ Ingested rows
+
+  The **[!UICONTROL Ingested rows]** subpanel measures the total number of records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
+
+  ![Ingested rows](assets/usage-ingested-rows.png)
+
+  You can hover over data points in the visualization to display a popup with more details.
+
+  +++
+
+  +++ Reportable rows
+
+  The **[!UICONTROL Reportable rows]** visualization tracks the number of rows available for reporting by subtracting skipped and deleted rows from ingested rows, serving as a key metric for billing and data usage. The subpanel provides two summaries:
+  
+  * **[!UICONTROL Last month total]**: A summary of total reportable rows up until this month.
+  * **[!UICONTROL This month]**: A summary of this month's total reportable rows and the change from the previous month.
+
+  ![Reportable rows](assets/usage-reportable-rows.png)
+
+  You can hover over data points in the visualizations to display a popup with more details.
+
+  +++
+
+  +++ Detail breakdown
+
+  You can use the **[!UICONTROL Detail breakdown]** table to view detailed metrics by connection, dataset, sandbox, and tags. Datasets are reported using ids instead of names, as dataset names can be modified during a reporting period. Unknown datasets or connections are reported using ids.
+
+  For the months before September 2024, data was collected at the dataset level and is displayed as [!UICONTROL Other datasets] for clarity. Starting from September 2024, data is gathered at a granular dataset level, and [!UICONTROL Other datasets] does no longer appear.
+
+  * To change the breakdown, select a combination for **[!UICONTROL View by]** and **[!UICONTROL Breakdown by]**.
+
+    | **[!UICONTROL View by]** options | **[!UICONTROL Breakdown by]** options |
+    |---|---|
+    | **[!UICONTROL Connection]** | **[!UICONTROL -]** and **[!UICONTROL Dataset]** |
+    | **[!UICONTROL Dataset]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Connection]** | 
+    | **[!UICONTROL Tag]** | **[!UICONTROL Connection]** | 
+
+  ![Detail breakdown](assets/usage-detail-breakdown.png)
+
+  +++
+
+  You can define a **[!UICONTROL Time range]** in months to report on. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
 
 >[!MORELIKETHIS]
 >
