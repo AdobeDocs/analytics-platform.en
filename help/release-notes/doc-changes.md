@@ -9,6 +9,14 @@ feature: Release Notes
 
 The following updates were made to the Customer Journey Analytics documentation since its inception.
 
+## 2025
+
+| Feature | Description |
+| --- | --- |
+| **January 2025** ||
+| Usage metrics | Updated documentation on the improved [usage](/help/connections/manage-connections.md#usage) metrics interface. |
+
+
 ## 2024
 
 | Feature | Description |
