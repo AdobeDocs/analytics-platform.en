@@ -4,14 +4,11 @@ title: Bullet graph
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
+badgePremium: label="Adobe Analytics version" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="Adobe Analytics version of this article"
+
+
 ---
 # Bullet {#bullet}
-
-<!-- markdownlint-disable MD034 -->
-
-[!BADGE Adobe Analytics version]{type=Informative url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html"}
-
-<!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
@@ -31,7 +28,6 @@ role: User
 >abstract="Create a bullet graph visualization to show how a metric compares to, or measures against, performance ranges (goals)."
 
 <!-- markdownlint-enable MD034 -->
-
 
 The ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** visualization shows how a metric compares to, or measures against, performance ranges (goals). 
 
