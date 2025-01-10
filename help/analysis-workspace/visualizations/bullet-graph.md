@@ -4,7 +4,7 @@ title: Bullet graph
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-badgePremium: label="Adobe Analytics version" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="Adobe Analytics version of this article"
+badgePremium: label="↗︎ Adobe Analytics version of this article" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="Select to see the Adobe Analytics version of this article"
 
 
 ---
