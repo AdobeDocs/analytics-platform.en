@@ -10,9 +10,7 @@ exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
 ---
 # Upgrade from Adobe Analytics to Customer Journey Analytics
 
-When upgrading from Adobe Analytics to Customer Journey Analytics, Adobe recommends a new implementation of the Experience Platform Web SDK, in conjunction with the Analytics source connector, as described in [Recommended upgrade steps for most organizations](#recommended-upgrade-steps-for-most-organizations).
-
-Depending on several factors, such as timeline and resource constraints, the recommended upgrade steps might not be practical for your organization. In that case, use the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/) to dynamically generate upgrade steps that are tailored to your organization's unique circumstances.
+When upgrading from Adobe Analytics to Customer Journey Analytics, you can follow the [recommended upgrade steps](#recommended-upgrade-steps-for-most-organizations). Or you can [dynamically generate upgrade steps](#dynamically-generate-upgrade-steps-for-your-organization) for your organization's unique circumstances.
 
 ## Recommended upgrade steps for most organizations
 
