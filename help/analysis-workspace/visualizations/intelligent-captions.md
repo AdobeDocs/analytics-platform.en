@@ -62,7 +62,7 @@ You can copy the captions to a clipboard and paste them into a PowerPoint or oth
 
 ### Show all or individual intelligent captions 
 
-You can show all captions at once in an expanded caption view, or you can show individual intelligent captions in a one-by-one view. 
+You can show all intelligent captions at once in an expanded view, or you can show individual inteliigent captions in a one-by-one view. 
 
 * To show all intelligent captions, select ![Show all intelligent captions](/help/assets/icons/Maximize.svg). 
 * To show individual intelligent captions, one-by-one, select ![Show individiual intelligent captions](/help/assets/icons/Minimize.svg).
