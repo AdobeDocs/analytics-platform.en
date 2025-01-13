@@ -9,6 +9,14 @@ feature: Release Notes
 
 The following updates were made to the Customer Journey Analytics documentation since its inception.
 
+## 2025
+
+| Feature | Description |
+| --- | --- |
+| **January 2025** ||
+| Usage metrics | Updated documentation on the improved [usage metrics](/help/connections/manage-connections.md#usage) interface. |
+
+
 ## 2024
 
 | Feature | Description |
@@ -17,6 +25,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | BI extension use cases | Documentation of several [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md) for BI tools like Power BI Desktop and Tableau Desktop. |
 | Stitching and privacy requests | Added notice on [upcoming changes in the unstitching process](/help/stitching/faq.md#frequently-asked-questions) that are the result of privacy requests. | 
 | **October 2024** | |
+| Improved Usage interface | Updated the article on the improved interface to show your [usage of ingested and reportable rows across all connections](/help/connections/manage-connections.md#usage) | 
 | Shared devices | Added a [use case article](/help/use-cases/stitching/shared-devices.md) that provides context on shared devices, how to handle and mitigate data from shared devices using stitching, and understand shared device exposure in your data using Query Service. |
 | New information about Request factors in Analysis Workspace Performance | A new [Request factors](/help/technotes/optimizing-performance.md#request-factors) section in the [Optimize Analysis Workspace performance](/help/technotes/optimizing-performance.md) article explains how requests are processed and the various factors that influence processing times. |
 | Workspace and components  | Refreshed the documentation on Analysis Workspace projects (projects, visualizations, and panels) and conponents (annotations, dimensions, (calculated) metrics, filters, date ranges, alerts, scheduled projects and audiences). | 
@@ -34,7 +43,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Derived field deduplicate function | Added documentation on the derived field [deduplicate](/help/data-views/derived-fields/derived-fields.md#deduplicate) function. |
 | Updated common error messages | Made minor updates to the [common error messages](/help/analysis-workspace/workspace-faq/error-messages.md). |
 | **June 2024** | |
-| Updated product name that refers to streaming media features | Replaced instances of "Media Analytics" and "Streaming Media" with the name "Streaming Media Collection Add-on" when referring to the set of streaming media features that collect streaming media data and surface it in Analysis Workspace. <p>These updates are available throughout the Customer Journey Analytics documentation as well as the [Streaming Media Collection Add-on documentation](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).</p> |
+| Updated product name that refers to streaming media features | Replaced instances of "Media Analytics" and "Streaming Media" with the name "Streaming Media Collection Add-on" and "Streaming Media Collection" when referring to the set of streaming media features that collect streaming media data and surface it in Analysis Workspace. <p>These updates are available throughout the Customer Journey Analytics documentation as well as the [Streaming Media Collection documentation](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).</p> |
 | Graph-based stitching | Updated and restructured [stitching documentation](/help/stitching/overview.md) with the introduction of graph-based stitching. |
 | AI Assistant | Added [documentation](../ai-assistant.md) on the AI Assistant for Customer Journey Analytics. |
 | Transform datasets for B2B lookups | Added documentation on how to support [person-based lookups on B2B data](/help/connections//transform-datasets-b2b-lookups.md) (including accounts, opportunities, marketing lists and campaigns) using transformation of B2B lookup datasets.  |

@@ -16,7 +16,9 @@ exl-id: 34e5f97b-c936-4de6-acc9-5774bc908655
 
 Though it is not recommended, you can use the Analytics source connector as the sole implementation path for Customer Journey Analytics. However, because of the inherent disadvantages associated with this type of upgrade, Adobe recommends using the Analytics source connector in conjunction with a new implementation of the Experience Platform Web SDK. For more information about this recommended upgrade path, see [Recommended path when upgrading from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). 
 
-Use the following information to understand the advantages and disadvantages of using the source connector exclusively:
+Use the information in the table below to understand the advantages and disadvantages of using the source connector exclusively. 
+
+If you decide to use the Analytics source connector as the sole implementation path for Customer Journey Analytics, follow the implementation steps described in [Ingest and use data using source connectors](/help/data-ingestion/sources.md).
 
 | Advantages | Disadvantages |
 |----------|---------|
