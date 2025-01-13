@@ -3,7 +3,7 @@ description: Use the map visualization in a Workspace project.
 title: Map
 feature: Visualizations
 role: User, Admin
-badgePremium: label="Adobe Analytics version" url="https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization" tooltip="Select to see the Adobe Analytics version of this article."
+badgePremium: label="Adobe Analytics version" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization.html" tooltip="Select to see the Adobe Analytics version of this article."
 hide: yes
 hidefromtoc: yes
 ---
