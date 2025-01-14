@@ -5,7 +5,70 @@ feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
 ---
-# Intelligent captions
+# Intelligent captions {#intelligent-captions}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_area"
+>title="Intelligent captions: Area"
+>abstract="Generate insights in natural-language form to help you more easily understand and interpret data for this visualization."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_bar"
+>title="Intelligent captions: Bar"
+>abstract="Generate insights in natural-language form to help you more easily understand and interpret data for this visualization."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_donut"
+>title="Intelligent captions: Donut"
+>abstract="Generate insights in natural-language form to help you more easily understand and interpret data for this visualization."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_horizontalbar"
+>title="Intelligent captions: Horizontal Bar"
+>abstract="Generate insights in natural-language form to help you more easily understand and interpret data for this visualization."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_line"
+>title="Intelligent captions: Line"
+>abstract="Generate insights in natural-language form to help you more easily understand and interpret data for this visualization."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_fallout"
+>title="Intelligent captions: Fallout"
+>abstract="Generate insights in natural-language form to help you more easily understand and interpret data for this visualization."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_intelligentcaptions_flow"
+>title="Intelligent captions: Flow"
+>abstract="Generate insights in natural-language form to help you more easily understand and interpret data for this visualization."
+
+<!-- markdownlint-enable MD034 -->
 
 Intelligent captions use advanced Machine Learning and Generative AI to provide valuable natural-language insights for Workspace visualizations. The initial release provides auto-generated insights for the [Line](line.md) visualization. Other visualizations will follow. 
 
