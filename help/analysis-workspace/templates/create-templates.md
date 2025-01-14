@@ -185,3 +185,10 @@ To add missing components to a template:
 Like with templates that are provided by Adobe, users in the organization can access templates that administrators create. 
 
 For information about how to access a company template, see [Access and run a template](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) in [Use templates](/help/analysis-workspace/templates/use-templates.md).
+
+## Hide the Templates tab 
+
+Administrators can hide the Templates tab for all users within their organization.
+
+1. Go to **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Preferences]** > **[!UICONTROL Company]**.
+1. Select the option to **[!UICONTROL Hide Templates tab]**.
