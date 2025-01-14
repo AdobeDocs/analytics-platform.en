@@ -29,3 +29,13 @@ The following settings are available on this page:
 >id="cja_product_usage_data_retention"
 >title="Override data retention window"
 >abstract="Shorten the availability of product usage data to help reduce costs or comply with privacy guidelines."
+
+>[!CONTEXTUALHELP]
+>id="product_usage_sandbox"
+>title="Adobe Experience Platform sandbox"
+>abstract="Determines the Adobe Experience Platform sandbox that the schema and dataset is created under."
+
+>[!CONTEXTUALHELP]
+>id="product_usage_data_retention"
+>title="Override data retention window"
+>abstract="Shorten the availability of product usage data to help reduce costs or comply with privacy guidelines."

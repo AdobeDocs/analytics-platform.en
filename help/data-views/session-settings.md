@@ -11,9 +11,9 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_settings_datapreview"
+>id="dataview_settings_datapreview"
 >title="Data preview"
->abstract="Compares the data of this filter with data of the connection. The preview percentage is based on the total number in the connection from the **last 90 days**.<br><br/>If the preview is not loading, your connection could still be backfilling."
+>abstract="Compares the data of this data view with data of the connection. The preview percentage is based on the total number in the connection from the **last 90 days**.<br><br/>If the preview is not loading, your connection could still be backfilling."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -9,7 +9,7 @@ exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_productcompatibility"
+>id="components_calculatedmetrics_productcompatibility"
 >title="Product Compatibility"
 >abstract="Indicates where in Customer Journey Analytics this calculated metric can be used, such as in Analysis Workspace, Report Builder, and so forth. Some calculated metrics cannot be used with experimentation."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Use calculated metrics in experimentation" 
@@ -19,7 +19,7 @@ exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_externalid"
+>id="components_calculatedmetrics_externalid"
 >title="External Id"
 >abstract="Changing the External ID might impact how the calculated metric appears in external sources, such as business intelligence tools"
 

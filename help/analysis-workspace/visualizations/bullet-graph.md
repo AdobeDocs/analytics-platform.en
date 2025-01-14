@@ -25,6 +25,11 @@ role: User
 
 <!-- markdownlint-enable MD034 -->
 
+>[!BEGINSHADEBOX]
+
+*This article documents the Bullet visualization in **Customer Journey Analytics**. See [Bullet](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) for the **Adobe Anaytics** version of this article.*
+
+>[!ENDSHADEBOX]
 
 The ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** visualization shows how a metric compares to, or measures against, performance ranges (goals). 
 

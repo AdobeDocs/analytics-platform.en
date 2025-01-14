@@ -11,7 +11,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_settings"
+>id="dataview_component_settings"
 >title="Component settings"
 >abstract="View and configure the name, description, and other settings related to a component.<br/><br/>**Parameters**<br/>**Hide component in reporting**: Checking this box will hide this component from non-admin users in reporting. Admins can still access it by selecting **[!UICONTROL Show all components]** in a Workspace project."
 
@@ -20,7 +20,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_contextlabels"
+>id="dataview_component_contextlabels"
 >title="Context labels"
 >abstract="Removing a context label may impact specific panels or reports where the component is required."
 

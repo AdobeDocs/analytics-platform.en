@@ -30,7 +30,7 @@ To define the annotation, you use the [[!UICONTROL Date range builder]](#annotat
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_dateranges_endtime"
+>id="components_dateranges_endtime"
 >title="End time"
 >abstract="End times always include 59 seconds."
 

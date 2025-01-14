@@ -186,6 +186,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Horizontal bar (stacked)](../analysis-workspace/visualizations/horizontal-bar.md)
     + [Key metric summary](../analysis-workspace/visualizations/key-metric.md)
     + [Line](../analysis-workspace/visualizations/line.md)
+    + [Map](/help/analysis-workspace/visualizations/map.md)
     + [Scatter](../analysis-workspace/visualizations/scatterplot.md)
     + [Summary number and change](../analysis-workspace/visualizations/summary-number-change.md)
     + [Section header](/help/analysis-workspace/visualizations/section-header.md)

@@ -10,7 +10,7 @@ exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_component_datadictionary"
+>id="component_datadictionary"
 >title="Data dictionary"
 >abstract="The Data Dictionary helps both users and and administrators keep track of and better understand the components in their Analytics environment. <br/>Analytics administrators are responsible for curating information about each component the Data Dictionary to users."
 

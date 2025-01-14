@@ -9,6 +9,14 @@ feature: Release Notes
 
 The following updates were made to the Customer Journey Analytics documentation since its inception.
 
+## 2025
+
+| Feature | Description |
+| --- | --- |
+| **January 2025** ||
+| Usage metrics | Updated documentation on the improved [usage metrics](/help/connections/manage-connections.md#usage) interface. |
+
+
 ## 2024
 
 | Feature | Description |
@@ -17,6 +25,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | BI extension use cases | Documentation of several [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md) for BI tools like Power BI Desktop and Tableau Desktop. |
 | Stitching and privacy requests | Added notice on [upcoming changes in the unstitching process](/help/stitching/faq.md#frequently-asked-questions) that are the result of privacy requests. | 
 | **October 2024** | |
+| Improved Usage interface | Updated the article on the improved interface to show your [usage of ingested and reportable rows across all connections](/help/connections/manage-connections.md#usage) | 
 | Shared devices | Added a [use case article](/help/use-cases/stitching/shared-devices.md) that provides context on shared devices, how to handle and mitigate data from shared devices using stitching, and understand shared device exposure in your data using Query Service. |
 | New information about Request factors in Analysis Workspace Performance | A new [Request factors](/help/technotes/optimizing-performance.md#request-factors) section in the [Optimize Analysis Workspace performance](/help/technotes/optimizing-performance.md) article explains how requests are processed and the various factors that influence processing times. |
 | Workspace and components  | Refreshed the documentation on Analysis Workspace projects (projects, visualizations, and panels) and conponents (annotations, dimensions, (calculated) metrics, filters, date ranges, alerts, scheduled projects and audiences). | 

@@ -41,6 +41,8 @@ In some situations, it is possible that multiple people log in from the same dev
 
 The transient ID overrides the persistent ID, so shared devices are considered separate people (even if they originate from the same device).
 
+See the [Shared devices](/help/use-cases/stitching/shared-devices.md) use case for more details.
+
 +++
 
 ## Many persistent IDs
