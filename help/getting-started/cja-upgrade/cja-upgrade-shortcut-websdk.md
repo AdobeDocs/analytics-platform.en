@@ -23,6 +23,15 @@ exl-id: 83927cf0-b3b4-42b4-9ca5-0c81c091383f
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="migrate_aa_to_websdk"
+>title="Migrate your Analytics implementation to use the Web SDK"
+>abstract="Instead of sending data through an XDM object, you can send all your variables in AppMeasurement format through the data object. This shortcut allows you to continue using your AppMeasurement logic to send data to Platform."
+
+<!-- markdownlint-enable MD034 -->
+
 When upgrading to Customer Journey Analytics, Adobe [recommends a new implementation of the Experience Platform Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). However, depending on several factors, such as timeline and resource constraints, the recommended upgrade steps might not be practical for your organization. 
 
 If your Adobe Analytics implementation is AppMeasurement or the Analytics extension, an upgrade shortcut is available that allows you to migrate your Adobe Analytics implementation to use the Adobe Experience Platform Web SDK to begin sending data to Edge Network and Adobe Analytics, prior to sending it to Customer Journey Analytics. 

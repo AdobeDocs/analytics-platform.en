@@ -42,7 +42,7 @@ See [Example](#example) for an example of using an attribution model and lookbac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_nondefaultattributionmodel"
+>id="components_calculatedmetrics_nondefaultattributionmodel"
 >title="Use non-default attribution model"
 >abstract="Enable a non-default attribution model for the selected metric."
 
@@ -51,7 +51,7 @@ See [Example](#example) for an example of using an attribution model and lookbac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attributionmodel"
+>id="components_calculatedmetrics_attributionmodel"
 >title="Model"
 >abstract="Select an attribution model for the metric."
 
@@ -60,7 +60,7 @@ See [Example](#example) for an example of using an attribution model and lookbac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_lasttouch"
+>id="components_calculatedmetrics_attribution_lasttouch"
 >title="Last Touch"
 >abstract="100% of credit goes to the last dimension value seen by a visitor."
 
@@ -69,7 +69,7 @@ See [Example](#example) for an example of using an attribution model and lookbac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_firsttouch"
+>id="components_calculatedmetrics_attribution_firsttouch"
 >title="First Touch"
 >abstract="100% of credit goes to the first dimension value seen by a visitor."
 
@@ -78,7 +78,7 @@ See [Example](#example) for an example of using an attribution model and lookbac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_linear"
+>id="components_calculatedmetrics_attribution_linear"
 >title="Linear"
 >abstract="Credit is spread evenly across all dimension values."
 
@@ -87,7 +87,7 @@ See [Example](#example) for an example of using an attribution model and lookbac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_participation"
+>id="components_calculatedmetrics_attribution_participation"
 >title="Participation"
 >abstract="100% credit to every dimension value seen by a visitor.<br/>Column totals are overstated."
 
@@ -96,7 +96,7 @@ See [Example](#example) for an example of using an attribution model and lookbac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_sametouch"
+>id="components_calculatedmetrics_attribution_sametouch"
 >title="Same Touch"
 >abstract="Credit is given only to dimension values occurring on the same event as conversion."
 
@@ -105,7 +105,7 @@ See [Example](#example) for an example of using an attribution model and lookbac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_ushaped"
+>id="components_calculatedmetrics_attribution_ushaped"
 >title="U Shaped"
 >abstract="40% credit to the first dimension value, 40% to the last, 20% shared by the middle."
 
@@ -114,7 +114,7 @@ See [Example](#example) for an example of using an attribution model and lookbac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_jcurve"
+>id="components_calculatedmetrics_attribution_jcurve"
 >title="J Curve"
 >abstract="60% credit to the last dimension value, 20% to the first, 20% shared by the middle."
 
@@ -123,7 +123,7 @@ See [Example](#example) for an example of using an attribution model and lookbac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_inversej"
+>id="components_calculatedmetrics_attribution_inversej"
 >title="Inverse J"
 >abstract="60% credit to the first dimension value, 20% to the last, 20% shared by the middle."
 
@@ -132,7 +132,7 @@ See [Example](#example) for an example of using an attribution model and lookbac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_timedecay"
+>id="components_calculatedmetrics_attribution_timedecay"
 >title="Time Decay"
 >abstract="Dimension values closest in time to a conversion get the most credit."
 
@@ -141,7 +141,7 @@ See [Example](#example) for an example of using an attribution model and lookbac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_custom"
+>id="components_calculatedmetrics_attribution_custom"
 >title="Custom"
 >abstract="Define your own position based attribution weighting."
 
@@ -150,7 +150,7 @@ See [Example](#example) for an example of using an attribution model and lookbac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_algorithmic"
+>id="components_calculatedmetrics_attribution_algorithmic"
 >title="Algorithmic"
 >abstract="Credit is dynamically determined on a statistical algorithm."
 
@@ -165,7 +165,7 @@ See [Example](#example) for an example of using an attribution model and lookbac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_attribution_lookbackwindow"
+>id="components_calculatedmetrics_attribution_lookbackwindow"
 >title="Lookback window"
 >abstract="This setting determines the window of data attribution that will be applied for each conversion."
 

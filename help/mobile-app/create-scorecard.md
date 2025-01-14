@@ -11,7 +11,7 @@ solution: Customer Journey Analytics
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_mobilescorecard_annotations"
+>id="mobilescorecard_annotations"
 >title="Annotations"
 >abstract="Annotations can be created in the components manager of inside of a workspace project."
 

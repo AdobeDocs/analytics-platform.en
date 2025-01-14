@@ -62,6 +62,59 @@ role: Admin
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_recordsadded"
+>title="Records added"
+>abstract="The number of records (rows) added to a Connection during the selected time interval for the selected datasets."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_recordsskipped"
+>title="Records skipped"
+>abstract="The number of records (rows) skipped during data transfer for a Connection during the selected time interval for the selected datasets."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_recordsdeleted"
+>title="Records deleted"
+>abstract="The number of records (rows) removed from a Connection during the selected time interval for the selected datasets"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_lastadded"
+>title="Last added"
+>abstract="The timestamp of the latest batch from any dataset transferred to a Connection."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_enablerollingdatawindow"
+>title="Enable rolling data window"
+>abstract="Define data retention as a rolling window in months at a connection level."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_averagenumberofdailyuses"
+>title="Average number of daily uses"
+>abstract="Select a range for the number of expected daily events for the entire connection."
+
+<!-- markdownlint-enable MD034 -->
 
 
 The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with an assistive workflow. It provides detailed dataset selection, configuration, and review experience. And allows you to specify critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more, to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
@@ -134,7 +187,6 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 
 <!-- markdownlint-enable MD034 -->
 
-
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -161,6 +213,16 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 >abstract="Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_accountField"
+>title="Account field"
+>abstract="Select a field that represents the account ID (the unique identifier for an account)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 <!-- markdownlint-disable MD034 -->
 
@@ -229,6 +291,121 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_connectionmap"
+>title="Connection map"
+>abstract="The Connection map visualizes the relationships between event, person, account and relevant lookup datasets (like opportunities, campaign members, and more)."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_primaryID"
+>title="Primary ID"
+>abstract="Select the proper primary ID for your connection: Person for a B2C scenario. Account for a B2B scenario."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_optionalContainers"
+>title="Optional containers"
+>abstract="Select additional containers.<br/><br/>**[!UICONTROL Global account]**: enables configuration of global accounts in a connection.<br/>**[!UICONTROL Opportunity]**: enables configuration of opportunities in a connection.<br/>**[!UICONTROL Buying group]**: enables configuration of buying groups in a connection."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_personID"
+>title="Person ID"
+>abstract="Select a person ID from the available identities defined in the dataset schema in the Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_accountID"
+>title="Account ID"
+>abstract="Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_accountField"
+>title="Account field"
+>abstract="Select a field that represents the account ID (the unique identifier for an account)."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_globalAccountID"
+>title="Global account ID"
+>abstract="Select a global account ID (the unique identifier for a global account) from the available identities defined in the dataset schema in the Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_opportunityID"
+>title="Opportunity ID"
+>abstract="Select an opportunity ID (the unique identifier for an opportunity) from the available identities defined in the dataset schema in the Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_buyingGroupID"
+>title="Buying group ID"
+>abstract="Select a buying group ID (the unique identifier for a buying group) from the available identities defined in the dataset schema in the Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_matchingkey"
+>title="Matching key"
+>abstract="Select how to join: based on a matching key or a matching container.<br/><br/>**[!UICONTROL Matching key]**: Select a field to join on with one of the event datasets. If this list is empty you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Matching container]**: Select a container to use to join with one of the event datasets. If this list is empty you probably haven't configured one or more containers."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_importnewdata"
+>title="Import new data"
+>abstract="Any new batches that get added in the Experience Platform dataset will automatically be added in this connection and made available for analysis."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_datasetbackfill"
+>title="Dataset backfill"
+>abstract="This option will backfill the existing (historical) data from Experience Platform for this dataset in the connection."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_transformdataset"
+>title="Transform dataset"
+>abstract="This option will transform the dataset so it can be used for person-based lookups in B2B scenarios. Once turned on, the transformation of the dataset is irreversible."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_connectionmap"
 >title="Connection map"
 >abstract="The Connection map visualizes the relationships between event, person, account and relevant lookup datasets (like opportunities, campaign members, and more)."
 
