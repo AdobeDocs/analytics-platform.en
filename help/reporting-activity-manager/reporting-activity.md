@@ -23,6 +23,15 @@ For more information about Reporting Activity manager, including key benefits an
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="tools_reportingactivitymanager_connections"
+>title="Connections"
+>abstract="This table shows the connections for which you have rights to manage reporting activity. Information about each connection is available in each column of the table."
+
+<!-- markdownlint-enable MD034 -->
+
 
 1. In Customer Journey Analytics, go to **[!UICONTROL Tools]** > **[!UICONTROL Reporting Activity Manager]**.
 
