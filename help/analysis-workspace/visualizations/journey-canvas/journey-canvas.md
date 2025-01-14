@@ -10,7 +10,7 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="journeycanvas_button"
+>id="cja_journeycanvas_button"
 >title="Journey canvas"
 >abstract="Shows how people proceed through or fall out of a series of touchpoints. Use for journeys with multiple entry points and paths, or to analyze journeys created in Journey Optimizer.."
 
