@@ -10,7 +10,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_tools_auditlog_userid"
+>id="tools_auditlog_userid"
 >title="User ID"
 >abstract="The user ID can be found by hitting the info button on a log entry containing the desired user."
 
@@ -19,7 +19,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_tools_auditlog_componentid"
+>id="tools_auditlog_componentid"
 >title="Component ID"
 >abstract="The component ID can be found by hitting the info button on a log entry containing the desired component."
 

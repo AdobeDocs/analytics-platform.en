@@ -11,7 +11,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields"
+>id="dataview_derivedfields"
 >title="Derived fields"
 >abstract="A derived field allows you to define data manipulations on the fly, through a customizable rule builder. You can then use that derived field as a component (metric or dimension) in Workspace or even further define as a component in Data view."
 
@@ -424,7 +424,7 @@ For each supported function, find details below on:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_casewhen"
+>id="dataview_derivedfields_casewhen"
 >title="Case When"
 >abstract="This function provides the ability to apply conditionals based on defined criteria from one or more fields. Those criteria are then used to define the values in the new derived field based on the sequence of the conditions."
 
@@ -664,7 +664,7 @@ The following constraints apply and are enforced when *selecting* and *setting* 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_classify"
+>id="dataview_derivedfields_classify"
 >title="Classify"
 >abstract="This function provides the ability to define a set of values that are replaced by corresponding values by text entry."
 
@@ -809,7 +809,7 @@ The following additional functionality is available in the Classify rule interfa
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_concatenate"
+>id="dataview_derivedfields_concatenate"
 >title="Concatenate"
 >abstract="This function provides the ability to combine two or more fields, derived fields, or user-entered string values into a single field with defined delimiters"
 
@@ -896,7 +896,7 @@ You define an `Origin - Destination` derived field. You use the [!UICONTROL CONC
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_deduplicate"
+>id="dataview_derivedfields_deduplicate"
 >title="Deduplicate"
 >abstract="This function provides the ability to configure a field to only count values non-repetitively at either the session or person level. Additionally, a deduplication ID can be used to ensure that based on a given ID (such as a purchase ID), only one value is used (either the first instance or the last instance)."
 
@@ -991,7 +991,7 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_findandreplace"
+>id="dataview_derivedfields_findandreplace"
 >title="Find and replace"
 >abstract="This function provides the ability to find all values in a selected field and replace those values with a different value in a new derived field."
 
@@ -1071,7 +1071,7 @@ You define an `Email Marketing (updated)` derived field. You use the [!UICONTROL
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_lookup"
+>id="dataview_derivedfields_lookup"
 >title="Lookup"
 >abstract="This function provides the ability to use fields from a lookup dataset using a matching key between datasets."
 
@@ -1132,7 +1132,7 @@ You can quickly insert a [!UICONTROL Lookup] function in the rule builder, alrea
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_lowercase"
+>id="dataview_derivedfields_lowercase"
 >title="Lowercase"
 >abstract="This function converts the entire string text to lowercase values."
 
@@ -1193,7 +1193,7 @@ You define a `Product Names` derived field. You use the [!UICONTROL LOWERCASE] f
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_math"
+>id="dataview_derivedfields_math"
 >title="Math"
 >abstract="This function provides the ability to perform mathematical operations on a field. The function can be used to perform basic arithmetic operations, such as addition, subtraction, multiplication, and division."
 
@@ -1284,7 +1284,7 @@ Use the Math function for hit-level based calculations. Use the [Summarize](#sum
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_mergefields"
+>id="dataview_derivedfields_mergefields"
 >title="Merge Fields"
 >abstract="This function provides the ability to take values from two different fields and include their respective values in a single dimension. The rule first checks to see if the first value is set. If not, then it will use the second value and so on."
 
@@ -1360,7 +1360,7 @@ You must select the same type of fields within a Merge Fields rule. For example,
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_nextprevious"
+>id="dataview_derivedfields_nextprevious"
 >title="Next or Previous"
 >abstract="This function provides the ability to look at the next or previous value collected for a given field."
 
@@ -1442,7 +1442,7 @@ You can only select fields that belong to the Visit or Event table.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_regexreplace"
+>id="dataview_derivedfields_regexreplace"
 >title="Regex Replace"
 >abstract="This function provides the ability to extract parts of a string using regular expressions."
 
@@ -1549,7 +1549,7 @@ You can use these sequences in the [!UICONTROL Output format] any number of time
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_split"
+>id="dataview_derivedfields_split"
 >title="Split"
 >abstract="This function provides the ability to split a field into multiple fields based on a delimiter."
 
@@ -1651,7 +1651,7 @@ You create a `Second Response` derived field to take the last value  from the [!
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_summarize"
+>id="dataview_derivedfields_summarize"
 >title="Summarize"
 >abstract="This function provides the ability to aggregate values at an event, session or person level. Depending on the field type for the select field, different options will be available."
 
@@ -1729,7 +1729,7 @@ Use the Summarize function for event, session or person scope based calculations
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_trim"
+>id="dataview_derivedfields_trim"
 >title="Trim"
 >abstract="This function provides the ability to trim either whitespace or special characters from either the beginning or the end of a string. Also the ability to specify the number of characters to use for the returned value, either from the front or the end of the string."
 
@@ -1851,7 +1851,7 @@ You create a  `Store Identifier` derived field. You use the [!UICONTROL TRIM] fu
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_urlparse"
+>id="dataview_derivedfields_urlparse"
 >title="Url Parse"
 >abstract="This function provides the ability to parse out different parts of a URL including the host, path or query parameters."
 
