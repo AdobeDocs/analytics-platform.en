@@ -22,6 +22,12 @@ A datastream represents the server-side configuration when implementing the Adob
 
 In your setup, you want to configure the datastream to send the collected data to your dataset in Adobe Experience Platform.
 
+>[!NOTE]
+>
+>The following steps are required only for Adobe Analytics implementations using AppMeasurement or the Analytics extension (tags).
+>
+>If your Adobe Analytics implementation uses the Web SDK or the Web SDK Extension, the datastream already exists in your Adobe Analytics environment.
+
 To set up your datastream:
 
 1. In Adobe Experience Platform, select **[!UICONTROL Datastreams]** from [!UICONTROL DATA COLLECTION] in the left rail.

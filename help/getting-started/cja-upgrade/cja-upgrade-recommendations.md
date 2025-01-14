@@ -112,11 +112,11 @@ Each step provides a high-level explanation of a more detailed process. Follow t
 
 1. (Optional) Tie web data with data from other channels, such as call center data.
 
-   You accomplish this by adding additional datasets to your Customer Journey Analytics connection.
+   You accomplish this by adding additional datasets to your Customer Journey Analytics connection, as described in [Import call center and web data](/help/use-cases/cross-channel/call-center.md).
 
 1. [Create a data view in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md).
 
-1. [Validate that data is flowing into Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
+1. [Validate that data is flowing into the data view in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
 
 1. [Migrate projects and components](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration). 
 
