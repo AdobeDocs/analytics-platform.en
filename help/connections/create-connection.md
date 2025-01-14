@@ -181,7 +181,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_primaryID"
+>id="cja_connection_primaryid"
 >title="Primary ID"
 >abstract="Select the proper primary ID for your connection: Person for a B2C scenario. Account for a B2B scenario."
 
@@ -190,7 +190,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_optionalContainers"
+>id="cja_connection_optionalcontainers"
 >title="Optional containers"
 >abstract="Select additional containers.<br/><br/>**[!UICONTROL Global account]**: enables configuration of global accounts in a connection.<br/>**[!UICONTROL Opportunity]**: enables configuration of opportunities in a connection.<br/>**[!UICONTROL Buying group]**: enables configuration of buying groups in a connection."
 
@@ -199,7 +199,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_personID"
+>id="cja_connection_personid"
 >title="Person ID"
 >abstract="Select a person ID from the available identities defined in the dataset schema in the Experience Platform."
 
@@ -208,7 +208,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_accountID"
+>id="cja_connection_accountid"
 >title="Account ID"
 >abstract="Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform."
 
@@ -217,7 +217,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_accountField"
+>id="cja_connection_accountfield"
 >title="Account field"
 >abstract="Select a field that represents the account ID (the unique identifier for an account)."
 
@@ -227,7 +227,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_globalAccountID"
+>id="cja_connection_globalaccountid"
 >title="Global account ID"
 >abstract="Select a global account ID (the unique identifier for a global account) from the available identities defined in the dataset schema in the Experience Platform."
 
@@ -236,7 +236,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_opportunityID"
+>id="cja_connection_opportunityid"
 >title="Opportunity ID"
 >abstract="Select an opportunity ID (the unique identifier for an opportunity) from the available identities defined in the dataset schema in the Experience Platform."
 
@@ -245,7 +245,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_connection_buyingGroupID"
+>id="cja_connection_buyinggroupid"
 >title="Buying group ID"
 >abstract="Select a buying group ID (the unique identifier for a buying group) from the available identities defined in the dataset schema in the Experience Platform."
 
@@ -299,7 +299,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_primaryID"
+>id="connection_primaryid"
 >title="Primary ID"
 >abstract="Select the proper primary ID for your connection: Person for a B2C scenario. Account for a B2B scenario."
 
@@ -308,7 +308,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_optionalContainers"
+>id="connection_optionalcontainers"
 >title="Optional containers"
 >abstract="Select additional containers.<br/><br/>**[!UICONTROL Global account]**: enables configuration of global accounts in a connection.<br/>**[!UICONTROL Opportunity]**: enables configuration of opportunities in a connection.<br/>**[!UICONTROL Buying group]**: enables configuration of buying groups in a connection."
 
@@ -317,7 +317,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_personID"
+>id="connection_personid"
 >title="Person ID"
 >abstract="Select a person ID from the available identities defined in the dataset schema in the Experience Platform."
 
@@ -326,14 +326,14 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_accountID"
+>id="connection_accountid"
 >title="Account ID"
 >abstract="Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_accountField"
+>id="connection_accountfield"
 >title="Account field"
 >abstract="Select a field that represents the account ID (the unique identifier for an account)."
 
@@ -342,7 +342,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_globalAccountID"
+>id="connection_globalaccountid"
 >title="Global account ID"
 >abstract="Select a global account ID (the unique identifier for a global account) from the available identities defined in the dataset schema in the Experience Platform."
 
@@ -351,7 +351,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_opportunityID"
+>id="connection_opportunityid"
 >title="Opportunity ID"
 >abstract="Select an opportunity ID (the unique identifier for an opportunity) from the available identities defined in the dataset schema in the Experience Platform."
 
@@ -360,7 +360,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="connection_buyingGroupID"
+>id="connection_buyinggroupid"
 >title="Buying group ID"
 >abstract="Select a buying group ID (the unique identifier for a buying group) from the available identities defined in the dataset schema in the Experience Platform."
 
