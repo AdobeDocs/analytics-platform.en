@@ -28,7 +28,7 @@ role: User
 
 >[!BEGINSHADEBOX]
 
-*This article documents the Experimentation panel in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**.<br/>See [Analytics for Target panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) for information on how to analyze Adobe Target activities and experiences in ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics**.*
+*This article documents the Experimentation panel in **Customer Journey Analytics**.<br/>See [Analytics for Target panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) for information on how to analyze Adobe Target activities and experiences in **Adobe Analytics**.*
 
 >[!ENDSHADEBOX]
 

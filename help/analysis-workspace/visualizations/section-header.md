@@ -21,7 +21,7 @@ exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
 >[!BEGINSHADEBOX]
 
 
-*This article documents the Section header visualization in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**.<br/>See [Section header](...) for the ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics** version of this article.*
+*This article documents the Section header visualization in **Customer Journey Analytics**.<br/>See [Section header](...) for the **Adobe Analytics** version of this article.*
 
 >[!ENDSHADEBOX]
 

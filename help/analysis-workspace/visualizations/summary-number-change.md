@@ -21,7 +21,7 @@ role: User
 
 >[!BEGINSHADEBOX]
 
-*This article documents the Summary number and Summary change visualization in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**.<br/>See [Summary number and Summary change](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) for the ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics** version of this article.*
+*This article documents the Summary number and Summary change visualization in **Customer Journey Analytics**.<br/>See [Summary number and Summary change](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) for the **Adobe Analytics** version of this article.*
 
 >[!ENDSHADEBOX]
 

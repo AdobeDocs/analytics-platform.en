@@ -19,7 +19,7 @@ role: User
 
 >[!BEGINSHADEBOX]
 
-*This article documents the Freeform table visualization in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**.<br/>See [Freeform table](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) for the ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics** version of this article.*
+*This article documents the Freeform table visualization in **Customer Journey Analytics**.<br/>See [Freeform table](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) for the **Adobe Analytics** version of this article.*
 
 >[!ENDSHADEBOX]
 

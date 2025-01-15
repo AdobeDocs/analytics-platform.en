@@ -19,7 +19,7 @@ role: User
 
 >[!BEGINSHADEBOX]
 
-*This article documents the Scatter visualization in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**.<br/>See [Scatter](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) for the ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics** version of this article.*
+*This article documents the Scatter visualization in **Customer Journey Analytics**.<br/>See [Scatter](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) for the **Adobe Analytics** version of this article.*
 
 >[!ENDSHADEBOX]
 
