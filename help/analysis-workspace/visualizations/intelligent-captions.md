@@ -69,7 +69,7 @@ role: User
 >abstract="Generate insights in natural-language form to help you more easily understand and interpret data for this visualization."
 
 <!-- markdownlint-enable MD034 -->
-
+ 
 The Intelligent captions functionality uses advanced Generative AI to provide key insights for the most frequently used Workspace visualizations in natural language. 
 
 Intelligent captions are geared towards:
