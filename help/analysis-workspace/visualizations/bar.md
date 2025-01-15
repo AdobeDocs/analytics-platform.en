@@ -23,7 +23,7 @@ The bar visualization has a standard and stacked option.
 
 >[!BEGINSHADEBOX]
 
-*This article documents the Bar and Bar stacked visualizations in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**.<br/>See [Bar and bar stacked](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) for the ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics** version of this article.*
+*This article documents the Bar and Bar stacked visualizations in **Customer Journey Analytics**.<br/>See [Bar and bar stacked](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) for the **Adobe Analytics** version of this article.*
 
 >[!ENDSHADEBOX]
 

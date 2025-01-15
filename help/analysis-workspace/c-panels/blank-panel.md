@@ -20,7 +20,7 @@ role: User
 
 >[!BEGINSHADEBOX]
 
-*This article documents the Blank panel in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**.<br/>See [Blank panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) for the ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics** version of this article.*
+*This article documents the Blank panel in **Customer Journey Analytics**.<br/>See [Blank panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) for the **Adobe Analytics** version of this article.*
 
 >[!ENDSHADEBOX]
 
