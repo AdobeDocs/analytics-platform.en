@@ -17,6 +17,13 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+*This article documents the Combo visualization in **Customer Journey Analytics**. See [Combo](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) for the **Adobe Analytics** version of this article.*
+
+>[!ENDSHADEBOX]
+
+
 The ![Comment](/help/assets/icons/ComboChart.svg) **[!UICONTROL Combo]** visualization makes it easy to build quickly a comparison visualization without having to build a table first. You can easily view trends in your data in a line/bar combination.
 
 Use a [!UICONTROL Combo] to:

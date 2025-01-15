@@ -21,6 +21,13 @@ The bar visualization has a standard and stacked option.
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+*This article documents the Bar and Bar stacked visualizations in **Customer Journey Analytics**. See [Bar and bar stacked](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) for the **Adobe Analytics** version of this article.*
+
+>[!ENDSHADEBOX]
+
+
 The ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Bar]** visualization shows vertical bars representing various values across one or more metrics.
 
 ![Virtical bar visualization showing multiple metrics including Page Views, Visits, Entries, and Exits.](assets/bar.png)

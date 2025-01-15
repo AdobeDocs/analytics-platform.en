@@ -17,6 +17,13 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+*This article documents the Venn visualization in **Customer Journey Analytics**. See [Venn](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/venn) for the **Adobe Analytics** version of this article.*
+
+>[!ENDSHADEBOX]
+
+
 The ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** visualization lets you drag in up to 3 filters and one metric (from the Components panel) to build a Venn diagram.
 
  ![Venn visualization that includes three filters.](assets/venn.png)
