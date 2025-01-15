@@ -149,7 +149,7 @@ For more information, see [Quick filters](/help/components/filters/quick-filters
 
 +++ View a video explaining dropdown filters.
 
->[!VIDEO](https://video.tv.adobe.com/v/23877?format=jpeg)
+>[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
 
 {{videoaa}}
 
