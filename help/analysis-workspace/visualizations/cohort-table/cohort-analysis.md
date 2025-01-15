@@ -28,7 +28,7 @@ role: User
 
 >[!BEGINSHADEBOX]
 
-*This article documents the Cohort table in **Customer Journey Analytics**. See [Cohort table](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) for the **Adobe Analytics** version of this article.*
+*This article documents the Cohort table in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**.<br/>See [Cohort table](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) for the ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics** version of this article.*
 
 >[!ENDSHADEBOX]
 

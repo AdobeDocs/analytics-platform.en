@@ -23,7 +23,7 @@ The horizontal bar visualization has a standard and stacked option.
 
 >[!BEGINSHADEBOX]
 
-*This article documents the Horizontal bar and Horizontal bar stacked visualizations in **Customer Journey Analytics**. See [Horizontal bar and horizontal bar stacked](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) for the **Adobe Analytics** version of this article.*
+*This article documents the Horizontal bar and Horizontal bar stacked visualizations in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**.<br/>See [Horizontal bar and horizontal bar stacked](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) for the ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics** version of this article.*
 
 >[!ENDSHADEBOX]
 

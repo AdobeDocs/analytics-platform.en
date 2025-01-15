@@ -21,7 +21,7 @@ role: User
 
 >[!BEGINSHADEBOX]
 
-*This article documents the Area and Area stacked visualizations in **Customer Journey Analytics**. See [Area and area stacked ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) for the **Adobe Analytics** version of this article.*
+*This article documents the Area and Area stacked visualizations in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**.<br/>See [Area and area stacked ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) for the ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics** version of this article.*
 
 >[!ENDSHADEBOX]
 
