@@ -143,17 +143,21 @@ Non-filter components can also be dragged directly into the drop zone to create 
 
 For more information, see [Quick filters](/help/components/filters/quick-filters.md).
 
-![Ad hoc filters that are made public and dropped into the drop zone.](assets/adhoc-segment-filter.png)
+![Ad hoc filters that are made public and dropped into the drop zone](assets/adhoc-segment-filter.png)
 
 ### Drop-down filters
 
-+++ View a video explaining dropdown filters.
-
 >[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
 
-{{videoaa}}
+This video demonstrates the functionality using Adobe Analytics. However, the functionality is similarly available in Customer Journey Analytics. Be aware of the following differences in terminology.
 
-+++
+|Adobe Analytics | Customer Journey Aalytics |
+| --- | --- |
+| Segments | Filters |
+| Visitor | Person |
+| Visit | Session |
+| Hit | Event |
+
 
 #### Static drop-down filters
 
