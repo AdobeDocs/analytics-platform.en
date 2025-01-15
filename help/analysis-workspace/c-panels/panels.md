@@ -143,7 +143,7 @@ Non-filter components can also be dragged directly into the drop zone to create 
 
 For more information, see [Quick filters](/help/components/filters/quick-filters.md).
 
-![Ad hoc filters that are made public and dropped into the drop zone.](assets/adhoc-segment-filter.png)
+![Ad hoc filters that are made public and dropped into the drop zone](assets/adhoc-segment-filter.png)
 
 ### Drop-down filters
 
