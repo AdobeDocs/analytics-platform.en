@@ -149,6 +149,16 @@ For more information, see [Quick filters](/help/components/filters/quick-filters
 
 >[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
 
+This video demonstrates the functionality using Adobe Analytics. However, the functionality is similarly available in Customer Journey Analytics. Be aware of the following differences in terminology.
+
+|Adobe Analytics | Customer Journey Aalytics |
+| --- | --- |
+| Segments | Filters |
+| Visitor | Person |
+| Visit | Session |
+| Hit | Event |
+
+
 #### Static drop-down filters
 
 Static drop-down filters enable you to interact with the data in a controlled way. For example, you can add a drop-down filter for Mobile Device Types so that you can filter the panel by Tablet, Mobile Phone, or Desktop.
