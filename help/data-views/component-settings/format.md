@@ -11,7 +11,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_format"
+>id="dataview_component_metric_format"
 >title="Format"
 >abstract="Determine how a component is displayed when used in reports."
 
@@ -53,7 +53,7 @@ You can determine how a given metric is displayed by adjusting its format settin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_format_currencyconversion"
+>id="dataview_component_metric_format_currencyconversion"
 >title="Currency conversion"
 >abstract="Select a currency code dimension to configure and display currency in a selected currency type."
 

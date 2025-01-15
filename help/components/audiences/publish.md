@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_audiences_refreshfrequency"
+>id="components_audiences_refreshfrequency"
 >title="Refresh frequency"
 >abstract="See how often an audience's membership is reevaluated.<br/>One time audiences are evaluated only once."
 
@@ -19,7 +19,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_audiences_audiencelimit"
+>id="components_audiences_audiencelimit"
 >title="Audience limit"
 >abstract="Refreshing audiences are limited based on how often they refresh."
 
@@ -28,7 +28,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_component_audiences_refreshlookbackwindow"
+>id="component_audiences_refreshlookbackwindow"
 >title="Refresh lookback window"
 >abstract="Define the number of lookback days from today that an audience is evaluated from."
 
@@ -37,7 +37,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_component_audiences_audiencesizelimit"
+>id="component_audiences_audiencesizelimit"
 >title="Audience size limit"
 >abstract="Audiences cannot exceed a size of 20 million members."
 
@@ -46,7 +46,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_component_audiences_namespacesincluded"
+>id="component_audiences_namespacesincluded"
 >title="Namespaces included"
 >abstract="The identities in this audience are comprised of the namespaces below."
 

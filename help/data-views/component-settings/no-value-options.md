@@ -11,7 +11,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_dimension_novalueoptions"
+>id="dataview_component_dimension_novalueoptions"
 >title="No value options"
 >abstract="Configure the default behavior for when no value is present in a dimension."
 
