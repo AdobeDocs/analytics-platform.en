@@ -22,6 +22,12 @@ The following process describes how to get the code that references your tag. Fo
 
 To get the code that references your tag:
 
+1. Log in to experience.adobe.com using your Adobe ID credentials.
+
+1. In Adobe Experience Platform, go to **[!UICONTROL Data Collection]** > **[!UICONTROL Tags]**.
+
+1. On the **[!UICONTROL Tag Properties]** page, select your newly created tag from the list of properties to open it.
+
 1. Select **[!UICONTROL Environments]** in the left rail.
 
 1. From the list of environments, select the correct install (box) button.

@@ -32,13 +32,13 @@ To define a page name data element:
 
 1. In Adobe Experience Platform, go to **[!UICONTROL Data Collection]** > **[!UICONTROL Tags]**.
 
-1. Select your newly created tag from the list of [!UICONTROL Tag Properties] to open it.
+1. On the **[!UICONTROL Tag Properties]** page, select your newly created tag from the list of properties to open it.
 
 1. Select **[!UICONTROL Data Elements]** in the left rail.
 
 1. Select **[!UICONTROL Add Data Element]**.
 
-1. In the [!UICONTROL Create Data Element] dialog, specify the following information:
+1. In the **[!UICONTROL Create Data Element]** dialog, specify the following information:
 
    * **[!UICONTROL Name]**: The name of your data element. For example `Page Name`.
 
@@ -69,6 +69,18 @@ To define an ECID data element:
 1. In Adobe Experience Platform, go to **[!UICONTROL Data Collection]** > **[!UICONTROL Tags]**.
 
 1. Select your newly created tag from the list of [!UICONTROL Tag Properties] to open it.
+
+1. (Conditional) Install the Experience Cloud ID Service extension if it is not already installed:
+
+   1. Select **[!UICONTROL Extensions]** in the left rail.
+
+   1. The **[!UICONTROL Installed]** tab is selected by default. If the **[!UICONTROL Experience Cloud ID Service]** tile is listed, skip to Step 5.
+   
+   1. If the **[!UICONTROL Experience Cloud ID Service]** tile is not listed, select the **[!UICONTROL Catalog]** tab.
+
+   1. In the search field, search for **[!UICONTROL Experience Cloud ID Service]**, then select the tile when it appears
+   
+   1. Select **[!UICONTROL Install]** > **[!UICONTROL Save]**.
 
 1. Select **[!UICONTROL Data Elements]** in the left rail.
 
@@ -104,7 +116,7 @@ To define an XDM object data element:
 
 1. Select **[!UICONTROL Add Data Element]**.
 
-1. In the [!UICONTROL Create Data Element] dialog, specify the following information:
+1. In the **[!UICONTROL Create Data Element]** dialog, specify the following information:
 
    * **[!UICONTROL Name]**: The name of your data element. For example `XDM - Page View`.
 
@@ -121,7 +133,6 @@ To define an XDM object data element:
    ![Pick ECID Data Element](assets/pick-ecid-dataelement.png)
 
    ![Map ECID Data Element](assets/map-ecid.png)
-
 
 1. Map the `web > webPageDetails > name` attribute, defined in your schema, to the Page Name data element.
 
@@ -153,13 +164,13 @@ To define a rule:
 
 1. Select **[!UICONTROL Rules]** in the left rail.
 
-1. Select **[!UICONTROL Create New Rule]**.
+1. Select **[!UICONTROL Add Rule]**.
 
-1. In the [!UICONTROL Create Rule] dialog, specify the following information:
+1. In the **[!UICONTROL Create Rule]** dialog, specify the following information:
 
    * **[!UICONTROL Name]**: The name of the rule. For example `Page View`.
 
-   * **[!UICONTROL Events]**: Select **[!UICONTROL + Add]**. Then, in the [!UICONTROL Event Configuration] dialog, specify the following information. When you are finished, select **[!UICONTROL Keep Changes]**.
+   * **[!UICONTROL Events]**: Select **[!UICONTROL + Add]**. Then, in the **[!UICONTROL Event Configuration]** dialog, specify the following information. When you are finished, select **[!UICONTROL Keep Changes]**.
 
      * **[!UICONTROL Extension]**: Select **[!UICONTROL Core]** from the list.
 
@@ -171,9 +182,9 @@ To define a rule:
 
      * **[!UICONTROL Extension]**: Select **[!UICONTROL Adobe Experience Platform Web SDK]** from the list.
 
-     * **[!UICONTROL Action Type]**: Select **[!UICONTROL Send Event]** from the list.
+     * **[!UICONTROL Action Type]**: Select **[!UICONTROL Send event]** from the list.
 
-     * **[!UICONTROL Type]**: Select **[!UICONTROL web.webpagedetails.pageViews]** from the list.
+     * **[!UICONTROL Type]**: Select **[!UICONTROL Web Webpagedetails Page Views]** from the list.
 
      * **[!UICONTROL XDM data]**: Select the cylinder icon, then select **[!UICONTROL XDM - Page View]** from the list of data elements.
 
@@ -201,9 +212,9 @@ To build and publish your tag:
 
 1. Select **[!UICONTROL Publishing Flow]** from the left rail.
 
-1. Select **[!UICONTROL Select a working library]**, followed by **[!UICONTROL Add Library…]**.
+1. Select **[!UICONTROL Add Library]**.
 
-1. In the [!UICONTROL Create Library] dialog, specify the following information:
+1. In the **[!UICONTROL Create Library]** dialog, specify the following information:
 
     * **[!UICONTROL Name]**: The name of the library.
 
