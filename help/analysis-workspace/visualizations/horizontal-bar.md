@@ -21,6 +21,13 @@ The horizontal bar visualization has a standard and stacked option.
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+*This article documents the Horizontal bar and Horizontal bar stacked visualizations in **Customer Journey Analytics**. See [Horizontal bar and horizontal bar stacked](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) for the **Adobe Analytics** version of this article.*
+
+>[!ENDSHADEBOX]
+
+
 Thie ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Horizontal bar]** visualization shows horizontal bars representing various values across one or more metrics.
 
 ![Horizontal bar showing metrics including Page Views, Page Velocity, Visits, Entries, and Exits.](assets/horizontal-bar.png)

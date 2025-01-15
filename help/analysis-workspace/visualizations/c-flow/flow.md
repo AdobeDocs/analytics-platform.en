@@ -22,6 +22,12 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+*This article documents the Flow visualization in **Customer Journey Analytics**. See [Flow](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) for the **Adobe Analytics** version of this article.*
+
+>[!ENDSHADEBOX]
+
 
 The ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Flow]** visualization shows customer paths through your websites and apps.
 

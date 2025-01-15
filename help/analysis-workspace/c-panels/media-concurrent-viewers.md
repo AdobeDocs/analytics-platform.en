@@ -26,6 +26,12 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+*This article documents the Media concurrent viewers panel in **Customer Journey Analytics**. See [Media concurrent viewers panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) for the **Adobe Analytics** version of this article.*
+
+>[!ENDSHADEBOX]
+
 
 >[!NOTE]
 >
