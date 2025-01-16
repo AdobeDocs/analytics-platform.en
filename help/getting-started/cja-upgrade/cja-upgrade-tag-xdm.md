@@ -20,11 +20,21 @@ After [creating the tag and adding the Web SDK extension](/help/getting-started/
 
 ## Configure data elements
 
-Data elements are the building blocks for your data dictionary (or data map). Use data elements to collect, organize, and deliver data across marketing and ad technology. You set up data elements in your tag that read from your data layer and can be used to deliver data into Adobe Experience Platform.
+Data elements are the building blocks for your data dictionary (or data map). Use data elements to collect, organize, and deliver data across marketing and ad technology. You set up data elements in your tag that read from your data layer and can be used to deliver data into Adobe Experience Platform. (For more information about data elements, see [Data elements](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements) in the Tags Documentation.)
 
-There are different types of data elements. First, set up a data element to capture the page name persons are viewing on your site. Then, set up a data element referencing the Experience Cloud ID. Finally, define an XDM object data element.
+The following sections describe suggested data elements and other common data elements that you can configure. 
+
+There are various types of data elements. Two common data elements that you might want to configure are: one that captures the page name that persons are viewing on your site, and another that captures the Experience Cloud ID of each person who visits your site. 
+
+After you configure these two data elements, you can configure additional data elements for the specific data you want to capture.
+
+Finally, after you define all your desired data elements, you need to assign the data elements to the [schema you created](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) earlier. To do this, you define an XDM data element, which provides a representation of your XDM schema.
+
+<!-- Assigning data elements to an XDM object. All of the available XDM objects are based on the schema -->
 
 ### Page name data element
+
+A common data element that applies to most organizations is a data element that captures the page name that persons are viewing.
 
 To define a page name data element:
 
@@ -62,6 +72,8 @@ To define a page name data element:
 
 ### ECID data element
 
+A common data element that applies to most organizations is a data element that captures the Experience Cloud ID of each person who visits your site.
+
 To define an ECID data element:
 
 1. Log in to experience.adobe.com using your Adobe ID credentials.
@@ -86,7 +98,7 @@ To define an ECID data element:
 
 1. Select **[!UICONTROL Add Data Element]**.
 
-1. In the [!UICONTROL Create Data Element] dialog, specify the following information:
+1. In the **[!UICONTROL Create Data Element]** dialog, specify the following information:
 
    * **[!UICONTROL Name]**: The name of your data element. For example `ECID`.
 
@@ -98,11 +110,45 @@ To define an ECID data element:
 
 1. Select **[!UICONTROL Save]**.
 
-1. Continue with [XDM object data element](#xdm-object-data-element).
+1. Continue with [Create additional data elements](#create-additional-data-elements).
+
+### Create additional data elements 
+
+Create a data element for each type of data that you want to collect. Use the same process described in [Page name data element](#page-name-data-element) and [ECID data element](#ecid-data-element) to create each additional data element.
+
+The data elements that you create should have a correlating field in your schema. 
+
+Common data elements vary depending on industry and business requirements. Consider the following common data elements, organized by industry:
+
+**Retail data elements**
+
+* Products
+
+* Cart additions
+
+* Checkouts
+
+**Financial data elements**
+
+* Transaction ID
+
+* Transaction date
+
+* Service type
+
+**Healthcare data elements**
+
+* Provider ID
+
+* Visit date
+
+* Treatment type
+
+After you create all the data elements required for your implementation, continue with [XDM object data element](#xdm-object-data-element).
 
 ### XDM object data element
 
-Finally, you now want to map any of your specific data elements to the schema you defined earlier. You define another data element which provides a representation of your XDM schema.
+Finally, you now want to map any of your specific data elements to the [schema you created](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) earlier. To do this, define an XDM object data element that provides a representation of your XDM schema.
 
 To define an XDM object data element:
 
@@ -139,14 +185,6 @@ To define an XDM object data element:
    ![Map Page Name Data Element](assets/map-pagename.png)
 
 1. Select **[!UICONTROL Save]**.
-
-1. Repeat this process for each data element that you want to add to your site. Other common data elements include:
-
-   For example, a retail organization might need a Products variable, while a financial institution might use
-
-   * 
-
-   For more information about data elements, see [Data elements](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements) in the Tags Documentation.
 
 1. Continue with [Configure rules](#configure-rules).
 
