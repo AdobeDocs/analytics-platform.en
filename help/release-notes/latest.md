@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (January 2025)
 
-**Last update**: January 15, 2025
+**Last update**: January 16, 2025
 
 These release notes cover the release period of October 23, 2024 to January 30, 2025. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -14,6 +14,7 @@ These release notes cover the release period of October 23, 2024 to January 30, 
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Updated Connections Usage experience** | The Usage tab in Connection now provides enhanced visualizations for these types of reportable rows: core, ingested and historical data. You can also view and break down the usage data by connection, dataset, sandbox, or tag. |  | January 15, 2025 |
 | **API for migrating Adobe Analytics projects and any included components to Customer Journey Analytics**  | An API is now available for migrating your Adobe Analytics projects and included components to Customer Journey Analytics. Previously, project and component migration was available only through the user interface. [Learn more](https://adobedocs.github.io/analytics-2.0-apis/?urls.primaryName=CJA%20Migration%20APIs). Select **CJA Migration APIs** from the dropdown. |  | January 15, 2025  |
 | **Use custom templates from Customer Journey Analytics on the Reports page in Journey Optimizer** | You can now customize the new reporting interface in Adobe Journey Optimizer by creating or editing a template in Customer Journey Analytics, then saving the template to be used on the Reports page in Journey Optimizer. Previously, the new reporting interface in Adobe Journey Optimizer couldn't be customized. <p>For more information, see "Create a template" or "Edit or delete a template" in  [Create and manage templates](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates). |  | January 15, 2025 |
 | **Product usage** | See how your organization uses Customer Journey Analytics. Enabling this feature creates a dataset in Adobe Experience Platform that collects data when anyone in your organization uses Analysis Workspace. A connection and a data view are also automatically created, giving you access to dimensions like top project types, most active users, and most popular components used in projects. [Learn more](/help/tools/product-usage/usage-overview.md) | October 23, 2024 | January 22, 2025 |
@@ -27,7 +28,7 @@ These release notes cover the release period of October 23, 2024 to January 30, 
 Alerts: AN-363263; AN-364880; AN-365029; AN-365960
 Audiences: AN-362564; AN-363254; 
 Data ingestion: AN-362359; AN-362751
-Data Views: AN-362089; AN-365770; 
+Data Views: AN-362089; AN-365213; AN-365770; AN-366171
 Derived Fields: AN-359711; AN-362496
 Export Locations: AN-363999
 Full table export: AN-363055
