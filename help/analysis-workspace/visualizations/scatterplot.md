@@ -17,6 +17,13 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+*This article documents the Scatter visualization in **Customer Journey Analytics**.<br/>See [Scatter](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) for the **Adobe Analytics** version of this article.*
+
+>[!ENDSHADEBOX]
+
+
 The ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Scatter]** visualization shows the relationship between dimension items and up to three metrics. It requires three components, and supports visualizing up to four components.
 
 * The row component (typically a dimension) represents each point on the graph. Different rows show as different colored dots.

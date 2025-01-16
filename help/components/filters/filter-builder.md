@@ -10,7 +10,7 @@ exl-id: 160021f1-6942-4682-9114-d375307d9912
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_createaudience"
+>id="components_filters_createaudience"
 >title="Create Audience"
 >abstract="Audiences can be created from a filter and shared with the Adobe Experience Platform for activation."
 
@@ -19,7 +19,7 @@ exl-id: 160021f1-6942-4682-9114-d375307d9912
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_datapreview"
+>id="components_filters_datapreview"
 >title="Data preview"
 >abstract="Compares the data of this filter with data of the data view. The preview percentage is based on the total number in the data view from the **last 90 days**.<br><br/>If the preview is not loading, your connection could still be backfilling."
 
@@ -152,7 +152,7 @@ Or, you could define 52 filters: 50 filters for the US states, one for mobile ph
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_repeating"
+>id="components_filters_attribution_repeating"
 >title="Repeating"
 >abstract="Includes instances and persisted values for the dimension."
 
@@ -161,7 +161,7 @@ Or, you could define 52 filters: 50 filters for the US states, one for mobile ph
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_instance"
+>id="components_filters_attribution_instance"
 >title="Instance"
 >abstract="Includes instances and persisted values for the dimension."
 
@@ -170,7 +170,7 @@ Or, you could define 52 filters: 50 filters for the US states, one for mobile ph
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_nonrepeatinginstance"
+>id="components_filters_attribution_nonrepeatinginstance"
 >title="Non-repeating instance"
 >abstract="Includes unique (non-repeating) instances for the dimension."
 
@@ -186,7 +186,7 @@ Select ![Setting](/help/assets/icons/Setting.svg) within the dimension component
 |---|---|
 | **[!UICONTROL Repeating model (default)]** | Include instance and persisted values for the dimension to determine qualification. |
 | **[!UICONTROL Instance]** | Include only instance values for the dimension to determine qualification. |
-|  **[!UICONTROL Non-repeating instance]** | Include unique instance (non-repeating) values for the dimension to determin qualification. |
+|  **[!UICONTROL Non-repeating instance]** | Include unique instance (non-repeating) values for the dimension to determine qualification. |
 
 
 ![Attribution model on dimension when building a filter](assets/filter-dimension-attribution.png)

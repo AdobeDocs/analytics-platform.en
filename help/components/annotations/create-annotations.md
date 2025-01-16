@@ -33,7 +33,7 @@ To define the annotation, you use the [[!UICONTROL Annotation builder]](#annotat
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_annotations_details"
+>id="components_annotations_details"
 >title="Annotation details"
 >abstract="Annotations enable you to effectively communicate contextual data nuances and insights to your organization. They let you tie calendar events to specific dimensions/metrics."
 
@@ -42,7 +42,7 @@ To define the annotation, you use the [[!UICONTROL Annotation builder]](#annotat
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_annotations_scope"
+>id="components_annotations_scope"
 >title="Scope"
 >abstract="Scope allows you to customize what data will be annotated. Calculated metrics and segments will not automatically inherit annotations applied to components used in their definitions. You may add new calculated metrics to the scope section of an existing annotation. New segments require a new annotation."
 

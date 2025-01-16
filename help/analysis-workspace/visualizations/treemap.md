@@ -17,6 +17,13 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+*This article documents the Treemap visualization in **Customer Journey Analytics**.<br/>See [Treemap](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/treemap) for the **Adobe Analytics** version of this article.*
+
+>[!ENDSHADEBOX]
+
+
 Use a ![GraphTree](/help/assets/icons/GraphTree.svg) **[!UICONTROL Treemap]** visualization to display hierarchical (tree-structured) data as a set of nested rectangles.
 
 Each branch of the tree is given a rectangle, which is then tiled with smaller rectangles representing sub-branches.

@@ -17,6 +17,13 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+*This article documents the Freeform table visualization in **Customer Journey Analytics**.<br/>See [Freeform table](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) for the **Adobe Analytics** version of this article.*
+
+>[!ENDSHADEBOX]
+
+
 In Analysis Workspace, a ![Table](/help/assets/icons/Table.svg) **[!UICONTROL Freeform table]** visualization is the foundation for interactive data analysis. You can drag and drop a combination of [components](/help/components/overview.md) into rows and columns to create a custom table for your analysis. As each component is dropped, the table updates immediately so you can quickly analyze and dig deeper.
 
 ![Freeform Table showing components in rows and columns including Visits and Online Orders for multiple web pages.](assets/opening-section.png)

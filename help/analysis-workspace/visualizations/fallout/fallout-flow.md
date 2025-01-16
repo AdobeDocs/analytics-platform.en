@@ -17,6 +17,12 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+*This article documents the Fallout visualization in **Customer Journey Analytics**.<br/>See [Fallout](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) for the **Adobe Analytics** version of this article.*
+
+>[!ENDSHADEBOX]
+
 A ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]** visualization shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. 
 
 +++ View a video demonstration of the [!UICONTROL Fallout visualization].

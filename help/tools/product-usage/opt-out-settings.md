@@ -22,3 +22,8 @@ Adobe uses a combination of client-side and server-side tracking to collect prod
 >id="cja_product_usage_opt_out_settings"
 >title="Opt out users"
 >abstract="Exclude users from product usage tracking."
+
+>[!CONTEXTUALHELP]
+>id="product_usage_opt_out_settings"
+>title="Opt out users"
+>abstract="Exclude users from product usage tracking."
