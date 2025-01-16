@@ -140,6 +140,14 @@ To define an XDM object data element:
 
 1. Select **[!UICONTROL Save]**.
 
+1. Repeat this process for each data element that you want to add to your site. Other common data elements include:
+
+   For example, a retail organization might need a Products variable, while a financial institution might use
+
+   * 
+
+   For more information about data elements, see [Data elements](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements) in the Tags Documentation.
+
 1. Continue with [Configure rules](#configure-rules).
 
 ## **Configure rules**
@@ -195,6 +203,12 @@ To define a rule:
        ![Create Rule](assets/rule-pageview.png)
 
 1. Select **[!UICONTROL Save]**.
+
+1. Repeat this process for each rule that you want to add to your site.
+
+   For more information about rules, see [Rules](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules) in the Tags Documentation.
+
+1. Continue with [Build and publish your tag](#build-and-publish-your-tag).
 
 ## Build and publish your tag
 
