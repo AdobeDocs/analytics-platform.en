@@ -40,7 +40,7 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 
 >[!BEGINSHADEBOX]
 
-*There is currently no Map visualization available in **Customer Journey Analytics**.
-See [Map](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) for the Map visualization documentation in Adobe Analytics.*
+There is currently no Map visualization available in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**.
+See [Map](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) for the Map visualization documentation in ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics**.
 
 >[!ENDSHADEBOX]
