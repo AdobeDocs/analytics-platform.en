@@ -7,6 +7,14 @@ role: User
 ---
 # Area (stacked)
 
+>[!BEGINSHADEBOX]
+
+*This article documents the Area and Area stacked visualizations in **Customer Journey Analytics**.<br/>See [Area and area stacked ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) for the **Adobe Analytics** version of this article.*
+
+>[!ENDSHADEBOX]
+
+The area visualization has a standard and stacked option.
+
 ## Area {#area}
 
 <!-- markdownlint-disable MD034 -->
@@ -19,11 +27,7 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
->[!BEGINSHADEBOX]
 
-*This article documents the Area and Area stacked visualizations in **Customer Journey Analytics**.<br/>See [Area and area stacked ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) for the **Adobe Analytics** version of this article.*
-
->[!ENDSHADEBOX]
 
 
 The ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]** visualization is like a line graph, but with a colored area below the line. Add an  area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics.

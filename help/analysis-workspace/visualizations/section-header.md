@@ -17,16 +17,12 @@ exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
 <!-- markdownlint-enable MD034 -->
 
 
-<!-- uncomment when section header page in AA is available.
 >[!BEGINSHADEBOX]
 
 
-*This article documents the Section header visualization in **Customer Journey Analytics**.<br/>See [Section header](...) for the **Adobe Analytics** version of this article.*
+*This article documents the Section header visualization in **Customer Journey Analytics**.<br/>See [Section header](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/section-header) for the **Adobe Analytics** version of this article.*
 
 >[!ENDSHADEBOX]
-
--->
-
 
 To identify and articulate sections within a panel, you can insert a ![PageRule](/help/assets/icons/PageRule.svg) **[!UICONTROL Section header]** visualization anywhere within a panel.
 

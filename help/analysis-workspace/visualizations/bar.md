@@ -7,6 +7,12 @@ role: User
 ---
 # Bar (stacked)
 
+>[!BEGINSHADEBOX]
+
+*This article documents the Bar and Bar stacked visualizations in **Customer Journey Analytics**.<br/>See [Bar and bar stacked](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) for the **Adobe Analytics** version of this article.*
+
+>[!ENDSHADEBOX]
+
 The bar visualization has a standard and stacked option.
 
 ## Bar {#bar}
@@ -20,12 +26,6 @@ The bar visualization has a standard and stacked option.
 
 <!-- markdownlint-enable MD034 -->
 
-
->[!BEGINSHADEBOX]
-
-*This article documents the Bar and Bar stacked visualizations in **Customer Journey Analytics**.<br/>See [Bar and bar stacked](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) for the **Adobe Analytics** version of this article.*
-
->[!ENDSHADEBOX]
 
 
 The ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Bar]** visualization shows vertical bars representing various values across one or more metrics.

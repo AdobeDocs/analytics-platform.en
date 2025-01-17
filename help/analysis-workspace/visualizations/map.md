@@ -38,7 +38,9 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 <!-- markdownlint-enable MD034 -->
 
 
->[!NOTE]
->
->The Map visualization is not supported in Analysis Workspace for Customer Journey Analytics. For details on how to use the Map visualization in Analysis Workspace in Adobe Analytics, select **Adobe Analytics version** at the top of this article.
->
+>[!BEGINSHADEBOX]
+
+There is currently no Map visualization available in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**.
+See [Map](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) for the Map visualization documentation in ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics**.
+
+>[!ENDSHADEBOX]
