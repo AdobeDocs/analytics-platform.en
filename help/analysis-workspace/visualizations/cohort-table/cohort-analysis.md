@@ -62,7 +62,9 @@ Cohort tables in Customer Journey Analytics support double-based (or any numeric
 
 ## Cohort table capabilities
 
-The following capabilities allow for fine-tuned control over the cohorts you are building:
+The following sections describe Cohort Analysis features that allow for fine-tuned control over the cohorts you are building.
+
+For more detailed information about creating a cohort and running a [!UICONTROL Cohort Analysis] report, see [Configure a Cohort table](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
 
 ### [!UICONTROL Retention] table
 
