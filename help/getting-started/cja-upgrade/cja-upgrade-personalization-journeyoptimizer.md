@@ -1,3 +1,13 @@
+---
+title: Use the personalization object for use with Adobe Journey Optimizer
+description: Learn how to use the personalization object for use with Adobe Journey Optimizer
+role: Admin
+solution: Customer Journey Analytics
+feature: Basics
+hide: yes
+hidefromtoc: yes
+---
+# Use the personalization object for use with Adobe Journey Optimizer
 
 Questions we need to answer:
 
