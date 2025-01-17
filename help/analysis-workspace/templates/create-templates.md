@@ -9,7 +9,7 @@ exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
 
 Administrators can create templates and save them for others in their login company to use.
 
-People in the login company can use these company templates as described in [Use templates](/help/analysis-workspace/templates/use-templates.md).
+People in the login company can use these company templates as described in [Use templates](/help/analysis-workspace/templates/use-templates.md). 
 
 ## Create a template
 

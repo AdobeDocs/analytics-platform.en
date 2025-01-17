@@ -7,7 +7,7 @@ exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 ---
 # Use templates
 
-Templates (or company templates) in Analysis Workspace provide quick insights into the most common reporting scenarios. Following are some examples of questions that you can answer with templates:
+Templates (or company templates) in Analysis Workspace provide quick insights into the most common reporting scenarios. Following are some examples of questions that you can answer with templates: 
 
 * How many people visit your site 
 * How many of those visitors are unique visitors (counted only once) 
