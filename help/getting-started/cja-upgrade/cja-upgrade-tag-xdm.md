@@ -32,11 +32,15 @@ Finally, after you define all your desired data elements, you need to assign the
 
 <!-- Assigning data elements to an XDM object. All of the available XDM objects are based on the schema -->
 
-### Page name data element
+### Create suggested data elements
+
+The following sections describe how to create common data elements that apply to most organizations.
+
+#### Page name data element
 
 A common data element that applies to most organizations is a data element that captures the page name that persons are viewing.
 
-To define a page name data element:
+To create a page name data element:
 
 1. Log in to experience.adobe.com using your Adobe ID credentials.
 
@@ -70,11 +74,11 @@ To define a page name data element:
 
 1. Continue with [ECID data element](#ecid-data-element).
 
-### ECID data element
+#### ECID data element
 
 A common data element that applies to most organizations is a data element that captures the Experience Cloud ID of each person who visits your site.
 
-To define an ECID data element:
+To create an ECID data element:
 
 1. Log in to experience.adobe.com using your Adobe ID credentials.
 
@@ -144,11 +148,11 @@ Common data elements vary depending on industry and business requirements. Consi
 
 * Treatment type
 
-After you create all the data elements required for your implementation, continue with [XDM object data element](#xdm-object-data-element).
+After you create all the data elements required by your organization for your implementation, continue with [XDM object data element](#xdm-object-data-element).
 
 ### XDM object data element
 
-Finally, you now want to map any of your specific data elements to the [schema you created](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) earlier. To do this, define an XDM object data element that provides a representation of your XDM schema.
+Finally, you now want to map any data element that you created to the [schema you created](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) earlier. To do this, define an XDM object data element that provides a representation of your XDM schema.
 
 To define an XDM object data element:
 
