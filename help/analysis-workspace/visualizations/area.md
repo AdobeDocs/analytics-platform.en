@@ -13,6 +13,7 @@ role: User
 
 >[!ENDSHADEBOX]
 
+
 The area visualization has a standard and stacked option.
 
 ## Area {#area}
