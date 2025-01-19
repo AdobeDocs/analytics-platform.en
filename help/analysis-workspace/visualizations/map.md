@@ -37,7 +37,6 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 
 <!-- markdownlint-enable MD034 -->
 
-
 >[!BEGINSHADEBOX]
 
 There is currently no Map visualization available in ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) **Customer Journey Analytics**.

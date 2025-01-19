@@ -11,6 +11,7 @@ role: User
 
 *This article documents the Bar and Bar stacked visualizations in **Customer Journey Analytics**.<br/>See [Bar and bar stacked](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) for the **Adobe Analytics** version of this article.*
 
+
 >[!ENDSHADEBOX]
 
 The bar visualization has a standard and stacked option.
