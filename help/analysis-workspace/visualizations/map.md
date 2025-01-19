@@ -44,3 +44,4 @@ There is currently no Map visualization available in ![CustomerJourneyAnalytics]
 See [Map](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) for the Map visualization documentation in ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) **Adobe Analytics**.
 
 >[!ENDSHADEBOX]
+
