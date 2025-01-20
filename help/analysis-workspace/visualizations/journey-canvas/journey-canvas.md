@@ -45,7 +45,7 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 
 >[!BEGINSHADEBOX]
 
-*This article documents the Journey canvas visualization in **Customer Journey Analytics**.<br/>There is no equivalent visualization in **Adobe Analytics**.*
+_This article documents the Journey canvas visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>There is no equivalent visualization in **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 

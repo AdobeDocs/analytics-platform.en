@@ -19,7 +19,7 @@ role: User
 
 >[!BEGINSHADEBOX]
 
-*This article documents the Histogram visualization in **Customer Journey Analytics**.<br/>See [Histogram](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/histogram) for the **Adobe Analytics** version of this article.*
+_This article documents the Histogram visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Histogram](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/histogram) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
 
 >[!ENDSHADEBOX]
 

@@ -19,7 +19,7 @@ role: User
 
 >[!BEGINSHADEBOX]
 
-*This article documents the Quick insights panel in **Customer Journey Analytics**.<br/>See [Quick insights panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight) for the **Adobe Analytics** version of this article.*
+_This article documents the Quick insights panel in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_See [Quick insights panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
 
 >[!ENDSHADEBOX]
 

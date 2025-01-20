@@ -27,7 +27,7 @@ role: User
 
 >[!BEGINSHADEBOX]
 
-*This article documents the Bullet visualization in **Customer Journey Analytics**.<br/>See [Bullet](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) for the **Adobe Analytics** version of this article.*
+_This article documents the Bullet visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Bullet](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
 
 >[!ENDSHADEBOX]
 
