@@ -14,7 +14,7 @@ This article provides context on shared devices, how to handle and mitigate data
 
 A shared device is a device that is used by more than one person. Common scenarios are devices like tablets, devices used in kiosks or computer equipment shared by agents in a call center. 
 
-When two people use the same device and both do make a purchase, sample event data might look like:
+When two people use the same device and both make an authenticated purchase, sample event data might look like:
 
 |Event | Timestamp | Page name | Device ID | Email |
 |--:|---|---|---|---|
