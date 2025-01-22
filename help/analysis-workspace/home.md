@@ -17,8 +17,6 @@ Analysis Workspace allows you to build analyses quickly to gather insights and t
 
 >[!ENDSHADEBOX]
 
-
-
 ## Interface
 
 The following image and accompanying table explain the main elements in the Analysis Workspace user interface:
