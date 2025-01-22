@@ -95,7 +95,7 @@ Keep in mind that:
 * If you save the project at a specific point, and re-load it later, the captions are auto-updated with new data. The same applies to scheduled projects and PDF files exported from a project.
 
 
-## Visualizations
+## Visualizations {#visualizations}
 
 Intelligent captions are supported on the following visualizations:
 
@@ -123,7 +123,7 @@ You can copy the captions to a clipboard and paste them into a PowerPoint or oth
 
 * To copy the captions, select ![Copy captions to clipboard](/help/assets/icons/Copy.svg) at the top right of the captions dialog.
 
-### Show all or individual intelligent captions 
+### Show all or individual intelligent captions  {#show-all-or-individual}
 
 You can show all intelligent captions at once in an expanded view, or you can show individual inteliigent captions in a one-by-one view. 
 
