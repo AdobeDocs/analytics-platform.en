@@ -31,64 +31,64 @@ Navigating to this section of the interface in Customer Journey Analytics takes 
 When you enable Product usage, the following dimensions are available. If you want to change any dimension settings, create a copy of the system-owned data view and use the copied data view in Analysis Workspace.
 
 * **[!UICONTROL Action Name]**: The type of action that the user took. You can use this dimension as any desired metric by creating a copy in data view settings. Dimension items include:
-  * Add attribution
-  * Add component
-  * Add panel
-  * Add visualization
-  * Create new guided analysis
-  * Create new project
-  * Curate components
-  * Download CSV
-  * Download PDF
-  * Load guided analysis
-  * Load project
-  * New scorecard loaded
-  * Open data dictionary
-  * Open intelligent captions
-  * Project share
-  * Run Experimentation panel
-  * Save project
-  * Scorecard saved
-  * Send file
-  * Send file on schedule
-  * Share project with anyone
-  * Share project with Workspace users
+  * [!UICONTROL Add attribution]
+  * [!UICONTROL Add component]
+  * [!UICONTROL Add panel]
+  * [!UICONTROL Add visualization]
+  * [!UICONTROL Create new guided analysis]
+  * [!UICONTROL Create new project]
+  * [!UICONTROL Curate components]
+  * [!UICONTROL Download CSV]
+  * [!UICONTROL Download PDF]
+  * [!UICONTROL Load guided analysis]
+  * [!UICONTROL Load project]
+  * [!UICONTROL New scorecard loaded]
+  * [!UICONTROL Open data dictionary]
+  * [!UICONTROL Open intelligent captions]
+  * [!UICONTROL Project share]
+  * [!UICONTROL Run Experimentation panel]
+  * [!UICONTROL Save project]
+  * [!UICONTROL Scorecard saved]
+  * [!UICONTROL Send file]
+  * [!UICONTROL Send file on schedule]
+  * [!UICONTROL Share project with anyone]
+  * [!UICONTROL Share project with Workspace users]
 * **[!UICONTROL Attribution Model Used]**: The type of attribution model that the component uses. Dimension items include:
-  * Last touch
-  * First touch
-  * Linear
-  * Participation
-  * Same touch
-  * U shaped
-  * J curve
-  * Inverse J
-  * Time decay
-  * Custom
-  * Algorithmic
+  * [!UICONTROL Last touch]
+  * [!UICONTROL First touch]
+  * [!UICONTROL Linear]
+  * [!UICONTROL Participation]
+  * [!UICONTROL Same touch]
+  * [!UICONTROL U shaped]
+  * [!UICONTROL J curve]
+  * [!UICONTROL Inverse J]
+  * [!UICONTROL Time decay]
+  * [!UICONTROL Custom]
+  * [!UICONTROL Algorithmic]
 * **[!UICONTROL Component Name]**: The name of the component that was added, removed, or modified.
 * **[!UICONTROL Component Type]**: The type of component that was added, removed, or modified. Dimension items include:
-  * Dimension
-  * Metric
-  * Filter
-  * Calculated metric
-  * Date range
-  * Annotation
-  * Alert
+  * [!UICONTROL Dimension]
+  * [!UICONTROL Metric]
+  * [!UICONTROL Filter]
+  * [!UICONTROL Calculated metric]
+  * [!UICONTROL Date range]
+  * [!UICONTROL Annotation]
+  * [!UICONTROL Alert]
 * **[!UICONTROL Login User]**: The user that took the action.
 * **[!UICONTROL Panel Used]**: The panel where the component was added, removed, or modified. Dimension items include:
-  * Attribution
-  * Blank panel
-  * Experimentation
-  * Freeform
-  * Next or previous item
-  * Quick insights
-  * Trends
-  * Funnel
-  * User growth
-  * Impact
-  * User stream
-  * Retention
-  * Feature matrix
+  * [!UICONTROL Attribution]
+  * [!UICONTROL Blank panel]
+  * [!UICONTROL Experimentation]
+  * [!UICONTROL Freeform]
+  * [!UICONTROL Next or previous item]
+  * [!UICONTROL Quick insights]
+  * [!UICONTROL Trends]
+  * [!UICONTROL Funnel]
+  * [!UICONTROL User growth]
+  * [!UICONTROL Impact]
+  * [!UICONTROL User stream]
+  * [!UICONTROL Retention]
+  * [!UICONTROL Feature matrix]
 * **[!UICONTROL Project Name]**: The friendly name of the project.
 * **[!UICONTROL Project Type]**: The project type. Dimension items include:
   * `workspace-projects`
@@ -96,30 +96,30 @@ When you enable Product usage, the following dimensions are available. If you wa
   * `mobile-scorecard-builder`
 * **[!UICONTROL User ID]**: The user ID that triggered the event.
 * **[!UICONTROL Visualization Used]**: The visualization that was added, removed, or modified. Dimension items include:
-  * Freeform table
-  * Cohort table
-  * Fallout
-  * Flow
-  * Journey Canvas reportlet
-  * Area
-  * Area stacked
-  * Bar
-  * Bar stacked
-  * Bullet
-  * Combo
-  * Donut
-  * Histogram
-  * Horizontal bar
-  * Horizontal bar stacked
-  * Key metric summary
-  * Line
-  * Map
-  * Scatter
-  * Section header
-  * Summary change
-  * Summary number
-  * Text
-  * Treemap
-  * Venn
+  * [!UICONTROL Freeform table]
+  * [!UICONTROL Cohort table]
+  * [!UICONTROL Fallout]
+  * [!UICONTROL Flow]
+  * [!UICONTROL Journey Canvas reportlet]
+  * [!UICONTROL Area]
+  * [!UICONTROL Area stacked]
+  * [!UICONTROL Bar]
+  * [!UICONTROL Bar stacked]
+  * [!UICONTROL Bullet]
+  * [!UICONTROL Combo]
+  * [!UICONTROL Donut]
+  * [!UICONTROL Histogram]
+  * [!UICONTROL Horizontal bar]
+  * [!UICONTROL Horizontal bar stacked]
+  * [!UICONTROL Key metric summary]
+  * [!UICONTROL Line]
+  * [!UICONTROL Map]
+  * [!UICONTROL Scatter]
+  * [!UICONTROL Section header]
+  * [!UICONTROL Summary change]
+  * [!UICONTROL Summary number]
+  * [!UICONTROL Text]
+  * [!UICONTROL Treemap]
+  * [!UICONTROL Venn]
 
 Product usage does not track individual project components when a project is merely opened or viewed. The user action of opening a project is tracked, however.
