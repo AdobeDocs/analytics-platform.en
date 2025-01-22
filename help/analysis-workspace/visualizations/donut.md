@@ -17,6 +17,13 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+_This article documents the Donut visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Donut](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/donut) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
+
+
 Similar to a pie chart, the ![GraphDonut](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Donut]** visualization shows data as parts or filters of a whole. Use a donut visualization when comparing percentages of a total, typically with a small number of items.
 
 ![A Donut chart showing data as parts or filters of a whole.](assets/donut.png)

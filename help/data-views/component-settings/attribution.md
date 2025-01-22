@@ -11,7 +11,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_attribution"
+>id="dataview_component_metric_attribution"
 >title="Attribution"
 >abstract="Configure the default attribution model applied to a metric in reports."
 
@@ -72,7 +72,7 @@ To update a component's default attribution model:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataviews_component_attribution_attributionmodels"
+>id="dataviews_component_attribution_attributionmodels"
 >title="Model"
 >abstract="Select an attribution model for the metric."
 

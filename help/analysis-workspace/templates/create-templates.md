@@ -3,15 +3,13 @@ description: An overview of how to use default templates in Analysis Workspace.
 title: Use templates
 feature: Workspace Basics
 role: User, Admin
-hide: yes
-hidefromtoc: yes
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
 ---
 # Create and manage templates
 
 Administrators can create templates and save them for others in their login company to use.
 
-People in the login company can use these company templates as described in [Use templates](/help/analysis-workspace/templates/use-templates.md).
+People in the login company can use these company templates as described in [Use templates](/help/analysis-workspace/templates/use-templates.md). 
 
 ## Create a template
 
@@ -31,14 +29,16 @@ To create a new template that can be used by people in your login company:
    | **[!UICONTROL Description]** | Provide a short description for the template that describes its intended uses. | 
    | **[!UICONTROL Why use this template]** | Provide a short explanation to inform people in the organization about how this template could be used. This explanation displays on the template's Preview page.  | 
    | **[!UICONTROL Channels]** | Choose any applicable channels that apply to this template. You can select multiple channels: **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Cross-channel]**, **[!UICONTROL Call center]**, and **[!UICONTROL In-store]**.<p>The selections you choose determine where the template is displayed and which filters apply for users accessing it from the Organization Templates page.</p> | 
-   | **[!UICONTROL Use cases]** | Choose any use cases that apply to this template. You can select multiple use cases: **[!UICONTROL Engagement]**, **[!UICONTROL Conversion]**, **[!UICONTROL Audience]**, and **[!UICONTROL Acquisition]**. <p>The selections you choose determine where the template is displayed and which filters apply for users accessing it from the Organization Templates page.</p> | 
+   | **[!UICONTROL Use cases]** | Choose any use cases that apply to this template. You can select multiple use cases: **[!UICONTROL Engagement]**, **[!UICONTROL Conversion]**, **[!UICONTROL Audience]**, **[!UICONTROL Acquisition]**, and **[!UICONTROL Journey Optimizer]**. <p>The selections you choose determine the location of the template on the Organization Templates page. Users can navigate to the template or they can filter the list by use case. </p><p>**Note:** The **[!UICONTROL Journey Optimizer]** option is available only if Journey Optimizer data exists in the data view you are using in Customer Journey Analytics. Choosing **[!UICONTROL Journey Optimizer]** makes the template available for use in Adobe Journey Optimizer. In Journey Optimizer, a drop-down menu is available on the **[!UICONTROL Reports]** page, allowing users to select this template or the default template. For more information, see [Get started with the updated reporting experience](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) in the Journey Optimizer documentation.   | 
+   | **[!UICONTROL Journey Optimizer activity type]** | Choose the Journey Optimizer activity type to associate with this template: **[!UICONTROL Campaigns]**, **[!UICONTROL Journeys]**, **[!UICONTROL Landing pages]**, **[!UICONTROL Reports]**, or **[!UICONTROL Subscriptions]**. <p>Leave this field blank if you want this template to be associated with all activity types.</p><p>This field displays only if **[!UICONTROL Journey Optimizer]** is selected in the **[!UICONTROL Use cases]** field.</p> |
+   | **[!UICONTROL Journey Optimizer activity]** |  Choose the Journey Optimizer activity to associate with this template. <p>Leave this field blank if you want this template to be associated with all activities of the selected activity type.</p><p>This field displays only if **[!UICONTROL Journey Optimizer]** is selected in the **[!UICONTROL Use cases]** field.</p> |
    | **[!UICONTROL Tags]** | Specify any tags that you want to apply to the template. People can filter the list of templates by the tags you add. | 
 
 1. Select [!UICONTROL **Save as template**]. 
 
 For information about how users can create a project based on a template, see [Create a project based on a template](/help/analysis-workspace/templates/use-templates.md#create-a-project-based-on-a-template) in [Use templates](/help/analysis-workspace/templates/use-templates.md).
 
-## Edit or delete templates
+## Edit or delete a template
 
 Administrators can edit or delete company templates.
 
@@ -68,6 +68,25 @@ Administrators can edit or delete company templates.
 
       ![Company template card edit or delete](assets/company-template-card-edit-delete.png)
 
+1. If you are editing a template, make any desired edits, then select [!UICONTROL **Project**] > **[!UICONTROL Save as template…]**.
+   
+   ![Company template](assets/company-template-save.png)
+
+1. Specify the following information in the [!UICONTROL Save as template] dialog box:
+   
+   | Field | Description | 
+   |---------|----------|
+   | **[!UICONTROL Name]** | Provide a descriptive name for the template. | 
+   | **[!UICONTROL Description]** | Provide a short description for the template that describes its intended uses. | 
+   | **[!UICONTROL Why use this template]** | Provide a short explanation to inform people in the organization about how this template could be used. This explanation displays on the template's Preview page.  | 
+   | **[!UICONTROL Channels]** | Choose any applicable channels that apply to this template. You can select multiple channels: **[!UICONTROL Web]**, **[!UICONTROL Mobile]**, **[!UICONTROL Cross-channel]**, **[!UICONTROL Call center]**, and **[!UICONTROL In-store]**. If no channels are selected, the template is included with all channels.<p>The selections you choose determine where the template is displayed and which filters apply for users accessing it from the Organization Templates page.</p> | 
+   | **[!UICONTROL Use cases]** | Choose any use cases that apply to this template. You can select multiple use cases: **[!UICONTROL Engagement]**, **[!UICONTROL Conversion]**, **[!UICONTROL Audience]**, **[!UICONTROL Acquisition]**, and **[!UICONTROL Journey Optimizer]**. <p>The selections you choose determine the location of the template on the Organization Templates page. Users can navigate to the template or they can filter the list by use case. </p><p>**Note:** Choosing **[!UICONTROL Journey Optimizer]** also makes the template available in Adobe Journey Optimizer. In Journey Optimizer, a drop-down menu is available on the **[!UICONTROL Reports]** page that allows users to select this template or the default template. For more information, see [Get started with the updated reporting experience](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) in the Journey Optimizer documentation.   | 
+   | **[!UICONTROL Journey Optimizer activity type]** | Choose the Journey Optimizer activity type to associate with this template: **[!UICONTROL Campaigns]**, **[!UICONTROL Journeys]**, **[!UICONTROL Landing pages]**, **[!UICONTROL Reports]**, or **[!UICONTROL Subscriptions]**. <p>Leave this field blank if you want this template to be associated with all activity types.</p><p>This field displays only if **[!UICONTROL Journey Optimizer]** is selected in the **[!UICONTROL Use cases]** field.</p> |
+   | **[!UICONTROL Journey Optimizer activity]** |  Choose the Journey Optimizer activity to associate with this template. <p>Leave this field blank if you want this template to be associated with all activities of the selected activity type.</p><p>This field displays only if **[!UICONTROL Journey Optimizer]** is selected in the **[!UICONTROL Use cases]** field.</p> |
+   | **[!UICONTROL Tags]** | Specify any tags that you want to apply to the template. People can filter the list of templates by the tags you add. | 
+
+1. Select [!UICONTROL **Save as template**]. 
+
 ## Rename, tag, or approve templates
 
 Administrators can Rename, tag, and approve company templates.  
@@ -96,7 +115,7 @@ Administrators can Rename, tag, and approve company templates.
 
 ## Add missing components to the data view for a given template
 
-By default, some templates provided by Adobe won't work because they contain components that are not in your data view. 
+By default, some templates provided by Adobe can't be used because they contain components that are not in your data view. 
 
 For each missing component, a matching context label is available in your data view. You need to either add the matching context label to a component that is already in your data view, or you need to add a new component to your data view and add the context label to it. 
 
@@ -166,3 +185,10 @@ To add missing components to a template:
 Like with templates that are provided by Adobe, users in the organization can access templates that administrators create. 
 
 For information about how to access a company template, see [Access and run a template](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) in [Use templates](/help/analysis-workspace/templates/use-templates.md).
+
+## Hide the Templates tab 
+
+Administrators can hide the Templates tab for all users within their organization.
+
+1. Go to **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Preferences]** > **[!UICONTROL Company]**.
+1. Select the option to **[!UICONTROL Hide Templates tab]**.

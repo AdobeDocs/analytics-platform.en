@@ -25,7 +25,11 @@ exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 
 <!-- markdownlint-enable MD034 -->
 
+>[!BEGINSHADEBOX]
 
+_This article documents the Next or previous item panel in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_See [Next or previous item panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/next-previous) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
 
 The **[!UICONTROL Next or previous item]** panel contains a number of tables and visualizations to identify the next or previous dimension item for a specific dimension. For example, you might want to explore which pages customers went to most often after they visited the Home page.
 

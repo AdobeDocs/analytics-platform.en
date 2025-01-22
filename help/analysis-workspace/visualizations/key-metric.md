@@ -16,6 +16,14 @@ role: User
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+_This article documents the Key metric summary visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Key metric summary](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
+
+
 The ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Key metric summary]** visualization lets you see how an important metric is trending within a single timeframe. It also lets you compare metric performance across two timeframes. It provides the benefits of multiple visualizations combined into one visualization:
 
 * **[!UICONTROL Line]** visualization shows how the metric is trending for the primary and comparison date ranges

@@ -18,6 +18,13 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+_This article documents the Blank panel in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_See [Blank panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
+
+
 A **[!UICONTROL Blank panel]** shows a selection of panels (indicated by ![WebPage](/help/assets/icons/WebPage.svg)) or visualizations that you can create to build a completely customized analysis. 
 
 ## Use

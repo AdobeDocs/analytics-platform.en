@@ -18,6 +18,14 @@ role: User
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+_This article documents the Summary number and Summary change visualizations in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Summary number and Summary change](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
+
+
 Use the ![Summarize](/help/assets/icons/123.svg) **[!UICONTROL Summary number]** visualization to highlight a large number that is important in a project. This visualization behaves in the following ways, using the associated data source:
 
 * Selects the total of the column if no cell is selected.

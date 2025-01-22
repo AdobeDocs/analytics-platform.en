@@ -4,9 +4,6 @@ title: Bullet graph
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-badgePremium: label="↗︎ Adobe Analytics version" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="Select to see the Adobe Analytics version of this article."
-
-
 ---
 # Bullet {#bullet}
 
@@ -16,7 +13,6 @@ badgePremium: label="↗︎ Adobe Analytics version" url="https://experienceleag
 >id="workspace_bullet_goalvalue"
 >title="Goal value"
 >abstract="**[!UICONTROL High goal]** is the is the main goal you are aiming for. **[!UICONTROL Low goal]** and **[!UICONTROL Mid goal]** create ranges below the [!UICONTROL High goal]. Note: when the **[!UICONTROL Percentages]** option is checked, enter goals as whole numbers. For example: `20` if your goal is twenty percent."
->additional-url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" text="Bullet (Adobe Analytics)"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,6 +24,12 @@ badgePremium: label="↗︎ Adobe Analytics version" url="https://experienceleag
 >abstract="Create a bullet graph visualization to show how a metric compares to, or measures against, performance ranges (goals)."
 
 <!-- markdownlint-enable MD034 -->
+
+>[!BEGINSHADEBOX]
+
+_This article documents the Bullet visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Bullet](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
 
 The ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** visualization shows how a metric compares to, or measures against, performance ranges (goals). 
 
