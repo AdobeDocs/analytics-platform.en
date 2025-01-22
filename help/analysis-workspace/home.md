@@ -11,14 +11,13 @@ role: User
 
 Analysis Workspace allows you to build analyses quickly to gather insights and then share those insights with others. Using the drag-and-drop browser interface, you can craft your analysis, add visualizations to bring data to life, curate a dataset, and share and schedule [projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) with anyone you choose.
 
+>[!BEGINSHADEBOX]
 
-+++ View a video showing the possibilities of Analytics Workspace.
+![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis workspace](https://video.tv.adobe.com/v/26266/?quality=12){target="_blank"}
 
->[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
+>[!ENDSHADEBOX]
 
-{{videoaa}}
 
-+++
 
 ## Interface
 
