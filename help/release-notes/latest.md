@@ -28,7 +28,7 @@ These release notes cover the release period of October 23, 2024 to January 30, 
 Alerts: AN-363263; AN-364880; AN-365029; AN-365960
 Audiences: AN-362564; AN-363254; 
 Data ingestion: AN-362359; AN-362751
-Data Views: AN-362089; AN-365213; AN-365770; AN-366171
+Data Views: AN-362089; AN-365213; AN-365770; AN-366171; AN-366681
 Derived Fields: AN-359711; AN-362496
 Export Locations: AN-363999
 Full table export: AN-363055
