@@ -17,6 +17,13 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+_This article documents the Line visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Line](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/line) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
+
+
 The ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Line]** visualization represents metrics using a line to show how values change over a period of time. A line visualization can be used only when time is used as a dimension.
 
 <!--

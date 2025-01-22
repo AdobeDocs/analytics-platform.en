@@ -25,6 +25,11 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 
 <!-- markdownlint-enable MD034 -->
 
+>[!BEGINSHADEBOX]
+
+_This article documents the Media average minute audience panel in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_See [Media average minute audience panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
 
 >[!NOTE]
 >

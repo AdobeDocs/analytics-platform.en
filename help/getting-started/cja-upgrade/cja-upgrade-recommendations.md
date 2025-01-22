@@ -10,9 +10,7 @@ exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
 ---
 # Upgrade from Adobe Analytics to Customer Journey Analytics
 
-When upgrading from Adobe Analytics to Customer Journey Analytics, Adobe recommends a new implementation of the Experience Platform Web SDK, in conjunction with the Analytics source connector, as described in [Recommended upgrade steps for most organizations](#recommended-upgrade-steps-for-most-organizations).
-
-Depending on several factors, such as timeline and resource constraints, the recommended upgrade steps might not be practical for your organization. In that case, use the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/) to dynamically generate upgrade steps that are tailored to your organization's unique circumstances.
+When upgrading from Adobe Analytics to Customer Journey Analytics, you can follow the [recommended upgrade steps](#recommended-upgrade-steps-for-most-organizations). Or you can [dynamically generate upgrade steps](#dynamically-generate-upgrade-steps-for-your-organization) for your organization's unique circumstances.
 
 ## Recommended upgrade steps for most organizations
 
@@ -94,9 +92,11 @@ Each step provides a high-level explanation of a more detailed process. Follow t
 
    +++Tags
 
-   1. [Implement the loader tag on your site](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md).
-
    1. [Create a tag property and add the Adobe Experience Platform Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md).
+
+   1. [Add the Adobe Experience Platform Web SDK extension to your tag property](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+
+   1. [Implement the loader tag on your site](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md).   
 
    1. [Add XDM data collection logic to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md).
 
@@ -114,11 +114,11 @@ Each step provides a high-level explanation of a more detailed process. Follow t
 
 1. (Optional) Tie web data with data from other channels, such as call center data.
 
-   You accomplish this by adding additional datasets to your Customer Journey Analytics connection.
+   You accomplish this by adding additional datasets to your Customer Journey Analytics connection, as described in [Import call center and web data](/help/use-cases/cross-channel/call-center.md).
 
 1. [Create a data view in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md).
 
-1. [Validate that data is flowing into Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
+1. [Validate that data is flowing into the data view in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
 
 1. [Migrate projects and components](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration). 
 

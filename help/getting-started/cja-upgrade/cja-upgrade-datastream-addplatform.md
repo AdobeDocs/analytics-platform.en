@@ -20,7 +20,7 @@ exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
 
 A datastream should already exist before you complete the steps in this section. When and how the datastream was created depends on your Adobe Analytics implementation, as follows: 
 
-* If your Adobe Analytics implementation is using the Web SDK or the Web SDK Extension, the datastream was available for your Adobe Analytics environment, prior to the upgrade process.
+* If your Adobe Analytics implementation uses the Web SDK or the Web SDK Extension, the datastream was available for your Adobe Analytics environment, prior to the upgrade process.
 
 * For other Adobe Analytics implementations, creating a datastream is part of the upgrade process, as described in [Create a datastream to use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md). 
 

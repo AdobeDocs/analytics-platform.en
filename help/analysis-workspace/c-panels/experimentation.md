@@ -26,6 +26,12 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+_This article documents the Experimentation panel in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Analytics for Target panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) for information on how to analyze Adobe Target activities and experiences in_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+
+>[!ENDSHADEBOX]
+
 
 The **[!UICONTROL Experimentation]** panel lets analysts compare different user experiences, marketing, or messaging variations to determine which is best at driving a specific outcome. You can evaluate the lift and confidence of any A/B experiment from any experimentation platform: online, offline, from Adobe solutions like Target or Journey Optimizer, and even BYO (bring-your-own) data.
 

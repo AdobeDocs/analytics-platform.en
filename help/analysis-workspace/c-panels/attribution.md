@@ -23,6 +23,11 @@ role: User
 
 <!-- markdownlint-enable MD034 -->
 
+>[!BEGINSHADEBOX]
+
+_This article documents the Attribution panel in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_See [Attribution panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
 
 The **[!UICONTROL Attribution]** panel is an easy way to build an analysis comparing various attribution models. The panel provides you with a dedicated workspace to use and compare attribution models.
 

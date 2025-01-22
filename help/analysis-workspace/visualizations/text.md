@@ -17,6 +17,13 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+_This article documents the Text visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Text](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/text) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
+
+
 To add user-defined rich text to your Workspace project, you can use a ![Text](/help/assets/icons/Text.svg) **[!UICONTROL Text]** visualization or use descriptions for a visualization and panel. 
 
 ## Use

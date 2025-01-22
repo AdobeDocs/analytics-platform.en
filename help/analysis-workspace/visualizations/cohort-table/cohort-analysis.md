@@ -26,6 +26,13 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+_This article documents the Cohort table in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Cohort table](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
+
+
 A *cohort* is a group of people sharing common characteristics over a specified period. A ![TextNumbered](/help/assets/icons/TextNumbered.svg) **[!UICONTROL Cohort table]** visualization is useful, for example, when you want to learn how a cohort engages with a brand. You can easily spot changes in trends, then respond accordingly. (Explanations of [!UICONTROL Cohort Analysis] are available on the web, such as at [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
 
 After creating a cohort report, you can curate its components (specific dimensions, metrics, and filters), then share the cohort report with anyone. See [Curate and Share](/help/analysis-workspace/curate-share/curate.md).
@@ -55,7 +62,9 @@ Cohort tables in Customer Journey Analytics support double-based (or any numeric
 
 ## Cohort table capabilities
 
-The following capabilities allow for fine-tuned control over the cohorts you are building:
+The following sections describe Cohort Analysis features that allow for fine-tuned control over the cohorts you are building.
+
+For more detailed information about creating a cohort and running a [!UICONTROL Cohort Analysis] report, see [Configure a Cohort table](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
 
 ### [!UICONTROL Retention] table
 

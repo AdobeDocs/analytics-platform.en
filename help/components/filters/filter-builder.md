@@ -186,7 +186,7 @@ Select ![Setting](/help/assets/icons/Setting.svg) within the dimension component
 |---|---|
 | **[!UICONTROL Repeating model (default)]** | Include instance and persisted values for the dimension to determine qualification. |
 | **[!UICONTROL Instance]** | Include only instance values for the dimension to determine qualification. |
-|  **[!UICONTROL Non-repeating instance]** | Include unique instance (non-repeating) values for the dimension to determin qualification. |
+|  **[!UICONTROL Non-repeating instance]** | Include unique instance (non-repeating) values for the dimension to determine qualification. |
 
 
 ![Attribution model on dimension when building a filter](assets/filter-dimension-attribution.png)
