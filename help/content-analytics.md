@@ -57,7 +57,7 @@ This section describes the onboarding.
 >abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your content analytics data with.<br/>[Learn more](/help/data-views/data-views.md)"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_dataview_header"
+>id="aca_onboarding_dataview_header_alt"
 >title="Data view"
 >abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your content analytics data with<br/>."
 
