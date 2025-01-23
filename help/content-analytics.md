@@ -25,7 +25,7 @@ This is a placeholder article for upcoming Content Analytics documentation. Curr
 
 This section describes the onboarding.
 
-### Details
+### Details {#onboarding-details}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -47,7 +47,7 @@ This section describes the onboarding.
 <!-- markdownlint-enable MD034 -->
 
 
-### Data view
+### Data view {#onboarding-data-view}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -64,7 +64,7 @@ This section describes the onboarding.
 <!-- markdownlint-enable MD034 -->
 
 
-### Data collection
+### Data collection {#onboarding-data-collection}
 
 <!-- markdownlint-disable MD034 -->
 
