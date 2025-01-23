@@ -435,3 +435,4 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [View and manage usage](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
++ [Content Analytics](/help/content-analytics.md)
