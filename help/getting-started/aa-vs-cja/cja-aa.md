@@ -27,6 +27,7 @@ The following table lists features that are available in Customer Journey Analyt
 | **Forecasting** | [Forecasting](/help/analysis-workspace/c-forecast/forecasting.md) is an AI/ML capability that includes a statistical prediction for time-series-related data based on the historical data that already exists in Customer Journey Analytics. Forecasts can appear in freeform tables and line graph visualizations. |
 | **Guided analysis** | [Guided analysis](/help/guided-analysis/overview.md) enables users to self-serve high quality data and insights about the customer journey through guided workflows, built on the cross-channel data of Customer Journey Analytics. |
 | **Intelligent Captions** | [Intelligent captions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions) use advanced Machine Learning and Generative AI to provide valuable natural-language insights for Workspace visualizations. Intelligent captions are supported for the following visualizations: Line, Multi-line, Bar, Horizontal bar, Donut, Area, Flow, and Fallout. |
+| **Journey Canvas** | [Journey canvas](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) is a visualization in Analysis workspace that allows you to analyze how people proceed through or fall out of a defined journey. |
 | **Product Usage** | [Product usage]https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview() shows you how your organization uses Customer Journey Analytics. |
 | **Report-time transformations** | [Data views](/help/data-views/data-views.md) in Customer Journey Analytics allow you to further interpret data from a connection. You can alter or remove data without changing your implementation, use substrings to manipulate dimensions, create metrics from any value, or filter subevents. All of these transformations are done non-destructively. Adobe Analytics provides limited capabilities through virtual report suites and custom session length. |
 | **SQL access** | Using the Data Distiller option, Customer Journey Analytics can remove the limitations of data collected on Adobe's backend processing. You can modify your data with SQL, create values and datasets unique to your business and continue to explore. Analytics does not support any kind of SQL access to its data. |
@@ -40,6 +41,7 @@ The following table lists features that are available in Customer Journey Analyt
 | Adobe Analytics Feature | Notes on CJA support |
 | --- | --- |
 | **Anomaly detection** | Full support |
+| **Asset transfer** | Full support |
 | **Attribution IQ** | Full support |
 | **Bot detection** | [Full support](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) |
 | **Calculated metrics** | Full support. Any existing calculated metric in the traditional Analysis Workspace is not ported to Customer Journey Analytics. |
