@@ -5,8 +5,6 @@ exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
 ---
 # Product usage overview
 
-{{release-limited-testing}}
-
 Product usage provides your organization with the ability to view analytics data on how your organization uses Customer Journey Analytics. It is available for all organizations that use Customer Journey Analytics. Once enabled, the following Adobe Experience Platform components are automatically created and hooked up for you. These components are all system-owned, read-only, and cannot be edited.
 
 * A schema in Adobe Experience Platform
