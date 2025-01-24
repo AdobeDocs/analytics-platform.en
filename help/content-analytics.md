@@ -6,6 +6,7 @@ feature: Data Views
 role: Admin
 hide: yes
 hidefromtoc: yes
+exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 ---
 # Content Analytics overview
 
@@ -122,4 +123,3 @@ This section describes the onboarding.
 
 
 <!-- markdownlint-enable MD034 -->
-
