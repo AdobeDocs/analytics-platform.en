@@ -942,8 +942,6 @@ The following templates are available:
 
 ### Web: Acquisition {#web-acquisition}
 
-<!--CJA only-->
-
 <!--AA only-->
 
 <!-- markdownlint-disable MD034 -->
