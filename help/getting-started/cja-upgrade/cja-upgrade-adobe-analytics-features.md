@@ -7,7 +7,7 @@ feature: Basics
 hide: yes
 hidefromtoc: yes
 ---
-# Understand Adobe Analytics feature support when upgrading to Customer Journey Analytics
+# Understand Adobe Analytics feature support when upgrading to Customer Journey Analytics {#feature-support-upgrade}
 
 <!-- markdownlint-disable MD034 -->
 

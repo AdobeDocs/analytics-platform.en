@@ -7,7 +7,7 @@ feature: Basics
 hide: yes
 hidefromtoc: yes
 ---
-# Upgrade from a third-party analytics solution to Customer Journey Analytics
+# Upgrade from a third-party analytics solution to Customer Journey Analytics {#upgrade-from-third-party}
 
 <!-- markdownlint-disable MD034 -->
 
