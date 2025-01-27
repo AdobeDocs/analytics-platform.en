@@ -10,6 +10,15 @@ exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 ---
 # Transition from the Analytics source connector to the Web SDK for Customer Journey Analytics
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector"
+>title="Analytics source connector implementation"
+>abstract="The Analytics source connector allows you to easily get value from Customer Journey Analytics, but requires that you pay for both Adobe Analytics and Customer Journey Analytics. This guide can help you move towards an independent Web SDK implementation."
+
+<!-- markdownlint-enable MD034 -->
+
 >[!NOTE]
 > 
 >Use the information on this page when answering questions in the [Customer Journey Analytics upgrade checklist](https://gigazelle.github.io/cja-ttv/).

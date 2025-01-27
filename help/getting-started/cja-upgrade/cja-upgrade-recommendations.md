@@ -24,6 +24,15 @@ After you have enough historical data using the Experience Platform Web SDK and 
 
 ### High-level recommended upgrade process
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-historical-data"
+>title="Historical data from Adobe Analytics"
+>abstract="Bring your historical Adobe Analytics report suite data into Adobe Experience Platform and Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
+
 1. **Implement the Experience Platform Web SDK (for ongoing data collection)**
 
    A new implementation of the Experience Platform Web SDK is the best way to collect data for Customer Journey Analytics. It provides the best foundation to get the most out of Customer Journey Analytics because it is the most performant, straightforward, and future-proof method for implementing Customer Journey Analytics. 
@@ -48,7 +57,7 @@ After you have enough historical data using the Experience Platform Web SDK and 
    
      You can keep the Analytics source connector running until you are familiar and comfortable with the differences. <!--elaborate on what those differences are? -->
    
-    The Analytics source connector as a stand-alone implementation is not a recommended long-term method for using Customer Journey Analytics. This is because of high latency, cluttered and complex schemas, reliance on Adobe Analytics nomenclature (prop, eVar, and so forth), and difficulty in eventually moving from the source connector to the recommended Web SDK implementation. 
+    The Analytics source connector as a stand-alone implementation is not a recommended long-term method for using Customer Journey Analytics. This is because of high latency, cluttered and complex schemas, reliance on Adobe Analytics nomenclature (prop, eVar, and so forth), and difficulty in eventually moving from the Analytics source connector to the recommended Web SDK implementation. 
 
 ### Detailed recommended upgrade steps
 
