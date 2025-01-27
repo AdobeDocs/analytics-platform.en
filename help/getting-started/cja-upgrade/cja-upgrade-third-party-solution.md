@@ -28,7 +28,7 @@ The recommended process of upgrading from a third-party analytics solution to Cu
 
 Use the following process when moving to Customer Journey Analytics from a third-party analytics solution, such as Google Analytics: 
 
-1. 
+1. ...
 
 
 Contact your Adobe representative if you need more specific advice, guidance, or support.
