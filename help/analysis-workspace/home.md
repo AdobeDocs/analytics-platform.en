@@ -17,8 +17,6 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis workspa
 
 >[!ENDSHADEBOX]
 
-
-
 ## Interface
 
 The following image and accompanying table explain the main elements in the Analysis Workspace user interface:
