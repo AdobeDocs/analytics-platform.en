@@ -77,6 +77,12 @@ Intelligent captions are geared towards:
 * Analysts, who need narratives to share with other users. Analysts need these insights to be able to provide context to their users.
 * Business users, who want to discover high-level takeaways quickly.
 
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intellgent captions](https://video.tv.adobe.com/v/3420131/?learn=on){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 ## Launch intelligent captions {#launch}
 
 To launch auto-generated intelligent captions for a visualization, select ![Intelligent captions](/help/assets/icons/AI.svg) at the top right of the visualization. This selection generates natural-language insights. 
