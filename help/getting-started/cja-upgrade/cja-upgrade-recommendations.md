@@ -12,7 +12,7 @@ exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
 
 When upgrading from Adobe Analytics to Customer Journey Analytics, you can follow the [recommended upgrade steps](#recommended-upgrade-steps-for-most-organizations). Or you can [dynamically generate upgrade steps](#dynamically-generate-upgrade-steps-for-your-organization) for your organization's unique circumstances.
 
-## Recommended upgrade steps for most organizations
+## Recommended upgrade steps for most organizations {#upgrade-process}
 
 The recommended process of upgrading from Adobe Analytics to Customer Journey Analytics is a new implementation of the Experience Platform Web SDK, which is the preferred data collection method for Customer Journey Analytics. In conjunction with the Web SDK, Adobe also recommends using the Analytics source connector to help with your transition to Customer Journey Analytics. Use the Analytics source connector to retain historical Adobe Analytics data and to perform side-by-side data comparison. 
 
@@ -22,7 +22,16 @@ After you have enough historical data using the Experience Platform Web SDK and 
 >
 >If the upgrade steps described in this section are not practical for your organization, use the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/) to dynamically generate upgrade steps that are tailored to your organization's unique circumstances.
 
-### High-level recommended upgrade process
+### High-level recommended upgrade process {#high-level-upgade-process}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-historical-data"
+>title="Historical data from Adobe Analytics"
+>abstract="Bring your historical Adobe Analytics report suite data into Adobe Experience Platform and Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
 
 1. **Implement the Experience Platform Web SDK (for ongoing data collection)**
 
@@ -48,7 +57,7 @@ After you have enough historical data using the Experience Platform Web SDK and 
    
      You can keep the Analytics source connector running until you are familiar and comfortable with the differences. <!--elaborate on what those differences are? -->
    
-    The Analytics source connector as a stand-alone implementation is not a recommended long-term method for using Customer Journey Analytics. This is because of high latency, cluttered and complex schemas, reliance on Adobe Analytics nomenclature (prop, eVar, and so forth), and difficulty in eventually moving from the source connector to the recommended Web SDK implementation. 
+    The Analytics source connector as a stand-alone implementation is not a recommended long-term method for using Customer Journey Analytics. This is because of high latency, cluttered and complex schemas, reliance on Adobe Analytics nomenclature (prop, eVar, and so forth), and difficulty in eventually moving from the Analytics source connector to the recommended Web SDK implementation. 
 
 ### Detailed recommended upgrade steps
 
