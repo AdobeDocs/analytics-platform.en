@@ -13,7 +13,7 @@ Analysis Workspace allows you to build analyses quickly to gather insights and t
 
 >[!BEGINSHADEBOX]
 
-![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis workspace](https://video.tv.adobe.com/v/26266/?quality=12){target="_blank"}
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis workspace overview](https://video.tv.adobe.com/v/26266/?quality=12){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
