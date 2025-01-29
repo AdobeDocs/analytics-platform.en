@@ -6,7 +6,6 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
-exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 ---
 # Understand Adobe Analytics feature support when upgrading to Customer Journey Analytics {#feature-support-upgrade}
 
@@ -77,7 +76,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 > 
 >Use the information on this page when answering questions in the [Customer Journey Analytics upgrade checklist](https://gigazelle.github.io/cja-ttv/). 
 
-The following list shows only those features that are included in the [Customer Journey Analytics upgrade checklist](https://gigazelle.github.io/cja-ttv/). For a comprehensive list that shows which Adobe Analytics features are supported, partially supported, or not supported in Customer Journey Analytics, see [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md).
+The following list shows only those Adobe Analytics features that require consideration during the upgrade process to Customer Journey Analytics. For a comprehensive list that shows which Adobe Analytics features are fully supported, partially supported, or not supported in Customer Journey Analytics, see [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md).
 
 Consider which of the following Adobe Analytics features you want to continue using when you upgrade to Customer Journey Analytics:
 
@@ -89,4 +88,5 @@ Consider which of the following Adobe Analytics features you want to continue us
 | [Marketing channels](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/c-getting-started-mchannel) | Derived fields are created within a data view. <p>[Create a marketing channel derived field.](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)</p> | 
 | [Data Feeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) | First-generation data export of datasets is available through the [Experience Platform Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html) and through [Experience Platform Destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html). These options provide event/row level export of all data collected or ingested into Experience Platform Data Lake. Post-process data columns are not available because post columns are computed at query time. Export of post columns is available through reporting. | 
 | [Data Warehouse](https://experienceleague.adobe.com/en/docs/analytics/export/data-warehouse/data-warehouse) | [Customer Journey Analytics Full Table Export](/help/analysis-workspace/export/export-cloud.md) is the evolution of Data Warehouse reports in Adobe Analytics, with many new, often-requested features that are not available in Data Warehouse today. | 
-| [Streaming Media data](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview) | Streaming media data are available using the Analytics source connector as part of the Media Concurrent Viewers panel and the Media Playback Time Spent panel in Workspace. |
+| [Streaming Media data](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview) | Streaming media data are available using the Analytics source connector as part of the Media Concurrent Viewers panel and the Media Playback Time Spent panel in Workspace. | 
+
