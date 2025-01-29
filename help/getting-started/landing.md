@@ -9,13 +9,15 @@ exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 
 The landing page for Customer Journey Analytics highlights [!DNL Analysis Workspace] and features a project manager home page and a learning section to help you manage customer journey data more effectively.
 
-+++ See the video for an introduction.
 
->[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Landing page in Analysis Workspace](https://video.tv.adobe.com/v/334278/?quality=12){target=&#34;_blank&#34;} for a demo video.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 The Customer Journey Analytics landing page is comprised of the following subtabs: Projects and Learning.
 

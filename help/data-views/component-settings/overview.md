@@ -49,6 +49,12 @@ The following information describes the settings that a data view component uses
 
 {style="table-layout:auto"}
 
-Here is a video on component settings in data views:
 
->[!VIDEO](https://video.tv.adobe.com/v/333112/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Component type settings](https://video.tv.adobe.com/v/333112/?quality=12){target=&#34;_blank&#34;} for a demo video.
+
+>[!ENDSHADEBOX]
+
+

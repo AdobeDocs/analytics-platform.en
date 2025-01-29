@@ -34,7 +34,13 @@ The data structure in Universal Analytics properties is different from the data 
 
 Universal Analytics properties store each record in their data as a user's session instead of individual events. A SQL query to transform the Universal Analytics data into a format compatible with Adobe Experience Platform is required. Apply the `UNNEST` function to the `hits` field in the GA schema, and save it as a BigQuery table.
 
->[!VIDEO](https://video.tv.adobe.com/v/332634)
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [From Google Analytics to Customer Journey Analytics - BigQuery](https://video.tv.adobe.com/v/332634){target=&#34;_blank&#34;} for a demo video.
+
+>[!ENDSHADEBOX]
+
 
 ```sql
 SELECT
@@ -68,7 +74,13 @@ In Google Cloud Platform, navigate to **Export > Export to GCS**. Once the data 
 1. In Adobe Experience Platform, select **[!UICONTROL Sources]** on the left.
 1. Under the Catalog, locate **[!UICONTROL Google Cloud Storage]** option. Click **[!UICONTROL Add data]**.
 
->[!VIDEO](https://video.tv.adobe.com/v/332676)
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Import Google Analytics data into Adobe Experience Platform](https://video.tv.adobe.com/){target=&#34;_blank&#34;} for a demo video.
+
+>[!ENDSHADEBOX]
+
 
 >[!TIP]
 >

@@ -25,13 +25,15 @@ _This article documents the Fallout visualization in_ ![CustomerJourneyAnalytics
 
 A ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]** visualization shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. 
 
-+++ View a video demonstration of the [!UICONTROL Fallout visualization].
 
->[!VIDEO](https://video.tv.adobe.com/v/345883/?quality=12)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create a fallout visualization report](https://video.tv.adobe.com/v/345883/?quality=12){target=&#34;_blank&#34;} for a demo video.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 Fallout visualizations let you:
 
