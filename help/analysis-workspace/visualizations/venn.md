@@ -39,6 +39,14 @@ To normalize the Venn diagram (take the size out of it), go select ![Setting](/h
 
 -->
 
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Venn visualization](https://video.tv.adobe.com/v/335798/?quality=12){target=&#34;_blank&#34;} for a demo video.
+
+>[!ENDSHADEBOX]
+
+
 >[!MORELIKETHIS]
 >
 >[Add a visualization to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)

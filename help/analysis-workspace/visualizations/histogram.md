@@ -41,7 +41,7 @@ To create a histogram:
 
 In the example below, a histogram is used to bucket sessions for the number of persons. The histogram shows that most persons do have between 16-21 sessions for the selected date range.
 
-![](assets/histogram.png)
+![Histogram](assets/histogram.png)
 
 ## Advanced settings
 
@@ -68,9 +68,5 @@ As part of the visualization, specific histogram settings are available.
 >[Add a visualization to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualization settings](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Visualization context menu](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
->
+>[Using histograms to identify unexpected data values](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168)
 
-
-## Blog post
-
-Refer to this blog post about information on [using histograms to identify unexpected data values](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168).

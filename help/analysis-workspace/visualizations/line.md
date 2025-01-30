@@ -26,14 +26,6 @@ _This article documents the Line visualization in_ ![CustomerJourneyAnalytics](/
 
 The ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Line]** visualization represents metrics using a line to show how values change over a period of time. A line visualization can be used only when time is used as a dimension.
 
-<!--
->[!NOTE]
->
->The Line visualization soon feature [intelligent captions](/help/analysis-workspace/visualizations/intelligent-captions.md).
-
-The Line visualization represents metrics using a line to show how values change over a period of time. A line chart can be used only when time is used as a dimension.
--->
-
 ![Line visualization](assets/line-viz.png)
 
 

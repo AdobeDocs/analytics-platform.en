@@ -24,7 +24,7 @@ _This article documents the Combo visualization in_ ![CustomerJourneyAnalytics](
 >[!ENDSHADEBOX]
 
 
-The ![Comment](/help/assets/icons/ComboChart.svg) **[!UICONTROL Combo]** visualization makes it easy to build quickly a comparison visualization without having to build a table first. You can easily view trends in your data in a line/bar combination.
+The ![Combo chart](/help/assets/icons/ComboChart.svg) **[!UICONTROL Combo]** visualization makes it easy to build quickly a comparison visualization without having to build a table first. You can easily view trends in your data in a line/bar combination.
 
 Use a [!UICONTROL Combo] to:
 

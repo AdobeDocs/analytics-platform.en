@@ -24,7 +24,7 @@ _This article documents the Scatter visualization in_ ![CustomerJourneyAnalytics
 >[!ENDSHADEBOX]
 
 
-The ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Scatter]** visualization shows the relationship between dimension items and up to three metrics. It requires three components, and supports visualizing up to four components.
+The ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Scatter]** visualization shows the relationship between dimension items and up to three metrics. The visualization requires three components, and supports visualizing up to four components.
 
 * The row component (typically a dimension) represents each point on the graph. Different rows show as different colored dots.
 * The leftmost column (typically a metric) plots the position of the dot on the Y axis (vertical).
@@ -33,6 +33,14 @@ The ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Scatter]*
 * All subsequent columns in a freeform table are ignored by the scatterplot visualization.
 
 ![Scatterplot example showing multiple dimension items ](assets/scatter.png)
+
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Scatterplot visualization](https://video.tv.adobe.com/v/334459/?quality=12){target=&#34;_blank&#34;} for a demo video.
+
+>[!ENDSHADEBOX]
+
 
 >[!MORELIKETHIS]
 >
