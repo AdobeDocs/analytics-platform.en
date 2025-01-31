@@ -26,7 +26,7 @@ Analytics administrators are responsible for curating information about each com
 
 See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Data dictionary for Analyis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
 
-{{videoo}}
+{{videaa}}
 
 >[!ENDSHADEBOX]
 
