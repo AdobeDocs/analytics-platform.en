@@ -5,8 +5,6 @@ exl-id: 0ea24582-bab8-4a76-ac00-7c265423e8bb
 ---
 # Product usage opt-out settings {#product-usage-opt-out-settings}
 
-{{release-limited-testing}}
-
 The _Opt-out settings_ page allows you to exclude or re-include users within your organization from product usage tracking. It is only visible to product admins.
 
 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL Product Usage]** > **[!UICONTROL Opt-out settings]**
