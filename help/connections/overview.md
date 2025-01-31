@@ -12,9 +12,15 @@ Connections allow Customer Journey Analytics product administrators to establish
 
 We recommended restricting access to Connections management to a core management group. Configurations at the Connection level have contractual implications regarding volume allotments for data brought into Customer Journey Analytics. 
 
-Here is a video overview:
+<!-- Outdated interface 
 
->[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring connections](https://video.tv.adobe.com/v/35111/?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+
+>[!ENDSHADEBOX]
+
+-->
 
 ## Required permissions
 

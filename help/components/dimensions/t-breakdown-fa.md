@@ -45,28 +45,49 @@ This is the expected behavior when applying attribution models to breakdowns or 
 
 * If there are already attributions in the column tree, changing the attribution only impacts the one you are editing.
 
-+++ View videos illustrating dimensions and dimension breakdowns 
+>[!BEGINSHADEBOX]
 
-Dimensions in Analysis Workspace
-
->[!VIDEO](https://video.tv.adobe.com/v/23971)
-
-Dimension breakdowns
-
->[!VIDEO](https://video.tv.adobe.com/v/23969)
-
-Adding dimensions and metrics to your project in Analysis Workspace:
-
->[!VIDEO](https://video.tv.adobe.com/v/30606)
-
-Working with dimensions in a Freeform Table:
-
->[!VIDEO](https://video.tv.adobe.com/v/40179)
-
-Dimension breakdowns by position:
-
->[!VIDEO](https://video.tv.adobe.com/v/24033)
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension in Analysis Workspace](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension breakdowns](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adding dimensions and metrics](https://video.tv.adobe.com/v/30606?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Working with dimensions in a Freeform Table](https://video.tv.adobe.com/v/40179?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension breakdown by position](https://video.tv.adobe.com/v/24033){target=&#34;_blank&#34;} for a demo video.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+

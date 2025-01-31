@@ -7,6 +7,18 @@ role: User
 ---
 # Summary number and Summary change
 
+>[!BEGINSHADEBOX]
+
+_This article documents the Summary number and Summary change visualizations in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Summary number and Summary change](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Summary number and Summary change visualization](https://video.tv.adobe.com/v/335564/?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+
+>[!ENDSHADEBOX]
+
 ## Summary number {#summary-number}
 
 <!-- markdownlint-disable MD034 -->
@@ -17,14 +29,6 @@ role: User
 >abstract="Create a visualization that shows totals and subtotals."
 
 <!-- markdownlint-enable MD034 -->
-
-
->[!BEGINSHADEBOX]
-
-_This article documents the Summary number and Summary change visualizations in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Summary number and Summary change](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
-
->[!ENDSHADEBOX]
-
 
 Use the ![Summarize](/help/assets/icons/123.svg) **[!UICONTROL Summary number]** visualization to highlight a large number that is important in a project. This visualization behaves in the following ways, using the associated data source:
 

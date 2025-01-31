@@ -28,13 +28,15 @@ Similar to a pie chart, the ![GraphDonut](/help/assets/icons/GraphDonut.svg) **[
 
 ![A Donut chart showing data as parts or filters of a whole.](assets/donut.png)
 
-+++ View a video demonstration of this functionality.
 
->[!VIDEO](https://video.tv.adobe.com/v/23989/?quality=12)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Add a donut visualization](https://video.tv.adobe.com/v/334309/?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 >[!MORELIKETHIS]
 >

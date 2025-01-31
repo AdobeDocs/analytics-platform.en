@@ -8,13 +8,15 @@ exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
 
 You create sequential filters using the [!UICONTROL Then] logical operator between components, containers and components, or containers. The [!UICONTROL Then] logical operator implies that one filter condition occurs, followed by another. 
 
-+++ Here is a video demonstrating sequential segmentation.
 
->[!VIDEO](https://video.tv.adobe.com/v/25405/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sequential segmentation](https://video.tv.adobe.com/v/25405/?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
 
 A sequential filter has some [basic functionality](#basics) and additional options that you can configure to add more complexity to the sequential filter:
 

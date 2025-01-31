@@ -126,13 +126,13 @@ You can build filters that contain rolling date ranges. So, you are able to answ
 
 ![Filter using rolling date range](assets/filter-rolling-date-range.gif)
 
-+++ Here is a video on using rolling date ranges in filters
 
->[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
+>[!BEGINSHADEBOX]
 
-{{videoaa}}
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rolling date ranges in segments](https://video.tv.adobe.com/v/25403/?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Stack filters {#stack}
 

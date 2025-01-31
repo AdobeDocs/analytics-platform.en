@@ -33,9 +33,18 @@ _This article documents the Bullet visualization in_ ![CustomerJourneyAnalytics]
 
 The ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** visualization shows how a metric compares to, or measures against, performance ranges (goals). 
 
- ![](assets/bullet.png)
+ ![Bullet graph visualization](assets/bullet.png)
 
 The bullet graph features a single, primary measure (for example, current year-to-date revenue) and allows you to enter qualitative ranges performance ranges (for example, compared to a target revenue). You can specify high, medium, and low goal ranges. You can specify goal ranges in ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]**.
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bullet graph visualization](https://video.tv.adobe.com/v/23989/?quality=12/?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## Settings
 

@@ -147,16 +147,13 @@ For more information, see [Quick filters](/help/components/filters/quick-filters
 
 ### Drop-down filters
 
->[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
-This video demonstrates the functionality using Adobe Analytics. However, the functionality is similarly available in Customer Journey Analytics. Be aware of the following differences in terminology.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Drop down filters](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} for a demo video.
 
-|Adobe Analytics | Customer Journey Aalytics |
-| --- | --- |
-| Segments | Filters |
-| Visitor | Person |
-| Visit | Session |
-| Hit | Event |
+{{videoaa}}
+
+>[!ENDSHADEBOX]
 
 
 #### Static drop-down filters
