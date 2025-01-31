@@ -54,7 +54,7 @@ Playback time spent can help you understand:
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Media playback time spent](https://video.tv.adobe.com/v/338699){target=&#34;_blank&#34;} for a demo video. 
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Media playback time spent](https://video.tv.adobe.com/v/338699){target="_blank"} for a demo video. 
 
 {{videoaa}}
 

@@ -13,7 +13,7 @@ Quick filters allow you to explore data within a Workspace project quickly, with
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Quick segments in Analysis Workspace](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Quick segments in Analysis Workspace](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 

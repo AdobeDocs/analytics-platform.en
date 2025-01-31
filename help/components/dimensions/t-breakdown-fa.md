@@ -47,7 +47,7 @@ This is the expected behavior when applying attribution models to breakdowns or 
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension in Analysis Workspace](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension in Analysis Workspace](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
@@ -56,7 +56,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension in Ana
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension breakdowns](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension breakdowns](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
@@ -65,7 +65,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension breakd
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adding dimensions and metrics](https://video.tv.adobe.com/v/30606?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adding dimensions and metrics](https://video.tv.adobe.com/v/30606?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
@@ -74,7 +74,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adding dimension
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Working with dimensions in a Freeform Table](https://video.tv.adobe.com/v/40179?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Working with dimensions in a Freeform Table](https://video.tv.adobe.com/v/40179?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
@@ -83,7 +83,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Working with dim
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension breakdown by position](https://video.tv.adobe.com/v/24033){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension breakdown by position](https://video.tv.adobe.com/v/24033){target="_blank"} for a demo video.
 
 {{videoaa}}
 

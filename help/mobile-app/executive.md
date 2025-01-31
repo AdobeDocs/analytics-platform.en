@@ -13,7 +13,7 @@ The following information provides executive users with information on best prac
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Assist executives to access mobile scorecards](https://video.tv.adobe.com/v/343460/){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Assist executives to access mobile scorecards](https://video.tv.adobe.com/v/343460/){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
