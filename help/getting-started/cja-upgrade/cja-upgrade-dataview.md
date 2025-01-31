@@ -8,7 +8,16 @@ hide: yes
 hidefromtoc: yes
 exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
 ---
-# Create a data view in Customer Journey Analytics
+# Create a data view in Customer Journey Analytics {#upgrade-create-dataview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-dataview"
+>title="Create a data view in Customer Journey Analytics"
+>abstract="A data view is a container specific to Customer Journey Analytics that lets you determine how to interpret data from a connection.<br><br>While the initial creation of the data view takes a few minutes, configuring each dimension and metric with the desired component settings can take several days. Tweaking these settings apply retroactively, so your organization can refine them over time."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

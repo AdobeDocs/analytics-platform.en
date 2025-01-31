@@ -10,6 +10,24 @@ exl-id: f96565a2-f556-4b45-b88e-984613614d2e
 ---
 # Create the Analytics source connector and map fields
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-create"
+>title="Create the Analytics source connector"
+>abstract="Use the Analytics source connector to ingest report suite data for use in Customer Journey Analytics.<br><br>Creating the Analytics source connector takes just a few minutes with default settings."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-map-fields"
+>title="Create the Analytics source connector and map schema fields"
+>abstract="The source connector needs to know how to map Adobe Analytics fields to your organization's schema. Use this interface to provide the source connector with that mapping. This step is part of adding historical data to Customer Journey Analytics.<br><br>The time that this step takes heavily depends on the number of dimensions and metrics that you must map. This step isn't as hard as it is tedious and repetitive. Expect datastream mapping to take approximately a week of work to complete."
+
+<!-- markdownlint-enable MD034 -->
+
 >[!NOTE]
 > 
 >Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 

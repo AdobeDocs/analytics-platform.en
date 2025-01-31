@@ -35,29 +35,70 @@ Most organizations will eventually disable Adobe Analytics after upgrading to Cu
 
 However, Adobe recommends that you keep your Adobe Analytics environment running for a period of time after implementing Customer Journey Analytics. The following sections describe the reasons for doing so as well as the suggested timing of disabling Adobe Analytics. 
 
-## Uses of Adobe Analytics during and after the upgrade process
+## Uses of Adobe Analytics during and after an upgrade
 
 When deciding if and when your organization should disable Adobe Analytics, consider the following uses of Adobe Analytics during and after an upgrade to Customer Journey Analytics:
 
-| Use of Adobe Analytics during and after upgrade | Explanation |
+| Uses of Adobe Analytics during and after upgrade | Explanation |
 |---------|----------|
 | Perform side-by-side data comparison | Adobe recommends that you keep your Adobe Analytics environment running for a period of time after your new Customer Journey Analytics environment is running and collecting data. This is the best way to compare your Customer Journey Analytics data side-by-side with your Adobe Analytics data.<p>Don't disable Adobe Analytics until you are comfortable with the data in your Customer Journey Analytics environment.</p><p>**Note:** Adobe recommends a new implementation of the Web SDK for your Customer Journey Analytics environment, in conjunction with the Analytics source connector for historical data. [Learn more](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</p>  |
-| Retain historical data from Adobe Analytics | After you have collected enough historical data in Customer Journey Analytics with your new Web SDK implementation, you can remove the Analytics source connector entirely. Do this when you can rely solely on the historical data in you collected with the new Customer Journey Analytics Web SDK implementation.<p>**Note:** Adobe recommends a new implementation of the Web SDK for your Customer Journey Analytics environment, in conjunction with the Analytics source connector for historical data. [Learn more](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</p>   |
-| Use Data Feeds or other Adobe Analytics features | A small set of features are not yet fully available in Customer Journey Analytics. If you need access to these features, it might be necessary to use Adobe Analytics in conjunction with Customer Journey Analytics until these features are available. <p>Features not fully available in Customer Journey Analytics include Data Feeds and Contribution Analysis. For a full list of features that aren't yet available, see [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md).</p> | 
+| Retain historical data from Adobe Analytics | Adobe recommends that you keep your Adobe Analytics environment in place with the Analytics source connector for a period of time after your new Customer Journey Analytics environment is running and collecting data. This is the best way to bring historical Adobe Analytics data into Customer Journey Analytics.<p>After you have collected enough historical data in Customer Journey Analytics with your new Web SDK implementation, you can remove the Analytics source connector entirely. Do this when you can rely solely on the historical data in you collected with the new Customer Journey Analytics Web SDK implementation.</p><p>**Note:** Adobe recommends a new implementation of the Web SDK for your Customer Journey Analytics environment, in conjunction with the Analytics source connector for historical data. [Learn more](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</p>   |
+| Use Data Feeds or other Adobe Analytics features | A small set of features are not yet fully available in Customer Journey Analytics. If you need access to these features, it might be necessary to use Adobe Analytics in conjunction with Customer Journey Analytics until these features are available. <p>Features not fully available in Customer Journey Analytics include Data Feeds and Contribution Analysis. For a complete list of features that aren't yet available, see [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md).</p> | 
 
-## Timeline of disabling Adobe Analytics
+## Process and timeline of disabling Adobe Analytics {#disable-adobe-analytics}
 
-Your existing Adobe Analytics implementation is a key part of a successful upgrade to Customer Journey Analytics, as described in the section above, [Uses of Adobe Analytics during and after the upgrade process](#uses-of-adobe-analytics-during-and-after-the-upgrade-process).
+<!-- markdownlint-disable MD034 -->
 
-Consider the following upgrade milestones related to removing Adobe Analytics:
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-appmeasurement-third-pary"
+>title="Disable a third-party tag management system"
+>abstract="With the Web SDK data fully functional, work with your tag admin to remove the AppMeasurement library from your third-party tag management system.<br><br>Estimated time to perform this step depends on the ease of disabling AppMeasurement from your tag management product, as well as the release cycle that your organization employs to deploy and manage tag code."
 
-1. Stop collecting data with the Analytics source connector. 
+<!-- markdownlint-enable MD034 -->
+
+Your existing Adobe Analytics implementation is a key part of a successful upgrade to Customer Journey Analytics, as described in the section above, [Uses of Adobe Analytics during and after an upgrade](#uses-of-adobe-analytics-during-and-after-an-upgrade).
+
+When you no longer need Adobe Analytics for the purposes described in the section above, use the following information to remove Adobe Analytics:
+
+1. Stop collecting data with Adobe Analytics. 
 
    After you are satisfied with the side-by-side comparisons of your Adobe Analytics data and your Customer Journey Analytics data, you can stop collecting data with your Adobe Analytics implementation. New Adobe Analytics data will no longer flow to Customer Journey Analytics through the Analytics source connector. 
    
-   However, data that you collected from your Adobe Analytics environment prior to now is still available as historical data through the Analytics source connector.
+   However, data that you collected from your Adobe Analytics environment prior to this point is still available as historical data in Customer Journey Analytics through the Analytics source connector.
 
-1. Remove the Analytics source connector entirely. 
+   This process differs depending on the data collection method you used to implement Adobe Analytics:
+
+      +++ AppMeasurement
+
+      [Disable AppMeasurement data collection](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md). 
+
+      +++
+
+      +++ Analytics extension (Tags)
+
+      [Disable the Analytics extension in tags](). 
+
+      +++
+
+      +++ API
+
+      [Disable API data collection](). 
+
+      +++
+
+      +++ Third-party
+
+      Work with your tag admin to remove the AppMeasurement library from your third-party tag management system.
+
+      +++
+
+1. [Remove Adobe Analytics as a service from the datastream]().
+
+   With Web SDK data fully functional, work with your Platform administrator to remove Adobe Analytics as a service from the datastream.
+   
+   Before removing Adobe Analytics as a service, make sure that your Analytics users are using Customer Journey Analytics and not Adobe Analytics.
+
+1. [Remove the Analytics source connector entirely](). 
 
    After you have collected enough historical data in Customer Journey Analytics with your new Web SDK implementation, you can remove the Analytics source connector entirely. 
    

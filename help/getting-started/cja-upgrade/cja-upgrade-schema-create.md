@@ -10,6 +10,24 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 ---
 # Create a custom schema to use with your Customer Journey Analytics Web SDK implementation
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-create"
+>title="Create the desired custom schema in Adobe Experience Platform"
+>abstract="Use the Adobe Experience Platform UI to create a schema so that Adobe knows the correct format to store your data.<br><br>This step involves the actual creation of the schema agreed upon by your organization. The estimated time to create your schema in the Adobe Experience Platform interface is approximately one week, depending on the number of dimensions and metrics that need to be created."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-profile"
+>title="Enable your schema for profile"
+>abstract="Enable profile in your schema for use in Adobe Real-time CDP. This step appears because you selected the desire to integrate with Adobe Real-time CDP.<br><br>Since this step involve clicking a single box, this step only takes a few minutes."
+
+<!-- markdownlint-enable MD034 -->
+
 >[!NOTE]
 > 
 >Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 

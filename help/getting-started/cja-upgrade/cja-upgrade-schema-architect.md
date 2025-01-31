@@ -8,7 +8,16 @@ hide: yes
 hidefromtoc: yes
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 ---
-# Architect your schema for use with Customer Journey Analytics
+# Architect your schema for use with Customer Journey Analytics {#upgrade-schema-architect}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-architect"
+>title="Architect a schema"
+>abstract="Discuss within your organization the requirements of data collection, and determine how you want to build a schema for use in Adobe Experience Platform. This step appears because you want to use the recommended process of using a schema tailored to your organization. Performing this step correctly is pivotal, as a schema that all teams within your organization align on makes data ingestion significantly easier.<br><br>The estimated time to bring together all relevant parties in your organization to align upon a unified schema is 1-2 months. This time frame heavily depends on the number of teams required to coordinate, and the number of dimensions + metrics to align on."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

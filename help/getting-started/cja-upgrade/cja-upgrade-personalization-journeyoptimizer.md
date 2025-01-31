@@ -7,7 +7,16 @@ feature: Basics
 hide: yes
 hidefromtoc: yes
 ---
-# Use the personalization object for use with Adobe Journey Optimizer
+# Use the personalization object for use with Adobe Journey Optimizer {#upgrade-personalization}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-personalization"
+>title="Use the personalization object for Adobe Journey Optimizer"
+>abstract="Use the personalization object in your implementation for use in Adobe Journey Optimizer."
+
+<!-- markdownlint-enable MD034 -->
 
 The result of the personalization object ends up in a dataset. The result of experimentation. When a customer has used AA with Target, that ends up in a complete different space than when they're migrating to CJA and they're going to use CJA with Adobe Target. 
 
