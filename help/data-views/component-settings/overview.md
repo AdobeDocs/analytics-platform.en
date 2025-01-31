@@ -53,7 +53,7 @@ The following information describes the settings that a data view component uses
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Component type settings](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Component type settings](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 

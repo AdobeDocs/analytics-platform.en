@@ -23,7 +23,7 @@ The following information instructs curators of Customer Journey Analytics data 
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Createa mobile scorecard](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Createa mobile scorecard](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
@@ -205,7 +205,7 @@ Custom detail slides allow you to be even more targeted about what information y
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Custom detail views](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Custom detail views](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
@@ -250,7 +250,7 @@ Watch the video to learn more about creating data stories in mobile scorecard pr
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Data stories for a Mobile scorecard project](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Data stories for a Mobile scorecard project](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
