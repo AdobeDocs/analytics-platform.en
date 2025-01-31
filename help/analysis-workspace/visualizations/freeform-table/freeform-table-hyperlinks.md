@@ -20,7 +20,7 @@ This functionality is particularly useful when creating hyperlinks for the follo
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create hyperlinks in a freeform table](https://video.tv.adobe.com/v/3430411/?learn=on){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create hyperlinks in a freeform table](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
 
 >[!ENDSHADEBOX]
 

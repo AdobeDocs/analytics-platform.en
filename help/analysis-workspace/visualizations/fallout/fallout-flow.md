@@ -28,7 +28,7 @@ A ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fal
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create a fallout visualization report](https://video.tv.adobe.com/v/345883/?quality=12){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create a fallout visualization report](https://video.tv.adobe.com/v/345883/?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
 
 {{videoaa}}
 

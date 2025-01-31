@@ -84,7 +84,7 @@ Repeat the steps above for the international version of your calculated metric.
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Use a filtered calculated metric as an implementationless metric](https://video.tv.adobe.com/){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Use a filtered calculated metric as an implementationless metric](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
 
 {{videoaa}}
 

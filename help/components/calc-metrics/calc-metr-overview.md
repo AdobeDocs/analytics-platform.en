@@ -13,7 +13,7 @@ Calculated metric are custom metrics that you can create from existing metrics. 
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introduction to calculated metrics](https://video.tv.adobe.com/v/31787/?learn=on){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introduction to calculated metrics](https://video.tv.adobe.com/v/31787/?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
 
 >[!ENDSHADEBOX]
 

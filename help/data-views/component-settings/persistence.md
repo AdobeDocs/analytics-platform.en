@@ -96,7 +96,7 @@ See [Using binding dimensions and metrics in Customer Journey Analytics](../../u
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Binding dimensions](https://video.tv.adobe.com/v/342694/?quality=12){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Binding dimensions](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
 
 >[!ENDSHADEBOX]
 

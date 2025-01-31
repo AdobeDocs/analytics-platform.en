@@ -82,7 +82,7 @@ To create a calculated metric for a single project:
 [Calculated Metrics: Implementation-less metrics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
 
 
->[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12&learn=on)
 
 +++
 
