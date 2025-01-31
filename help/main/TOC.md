@@ -65,6 +65,8 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Use the Analytics source connector exclusively](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)
     + [Move from the Analytics source connector to the Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
     + [Disable AppMeasurement data collection](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
+    + [Upgrade from a third-party analytics solution](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
+    + [Adobe Analytics feature support when upgrading](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)

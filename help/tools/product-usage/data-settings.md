@@ -5,8 +5,6 @@ exl-id: 85e2b515-78e6-41e8-9947-369b1e65e4fd
 ---
 # Product usage data settings {#product-usage-data-settings}
 
-{{release-limited-testing}}
-
 The _Data settings_ page handles your product usage configuration. You can use this page to enable or disable product usage for your organization. You can also configure which Adobe Experience Platform sandbox that the dataset is created under, and override the data retention window if desired. It is only visible to product admins.
 
 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL Product Usage]** > **[!UICONTROL Data settings]**

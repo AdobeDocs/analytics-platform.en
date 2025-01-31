@@ -8,7 +8,7 @@ role: User
 ---
 # Customer Journey Analytics feature support
 
-The following tables list which features are unique to Customer Journey Analytics, and which Adobe Analytics are supported, partially supported or not supported in Customer Journey Analytics. These lists will change over time as features are added to Customer Journey Analytics.
+The following tables list which features are unique to Customer Journey Analytics, and which Adobe Analytics features are supported, partially supported, or not supported in Customer Journey Analytics. These lists will change over time as features are added to Customer Journey Analytics.
 
 ## Features unique to Adobe Customer Journey Analytics {#cja-not-aa}
 
