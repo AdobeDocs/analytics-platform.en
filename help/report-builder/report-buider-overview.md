@@ -40,7 +40,7 @@ Report Builder for Customer Journey Analytics is available for Excel on the foll
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Buider for Customer Journey Analytics](https://video.tv.adobe.com/){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Buider for Customer Journey Analytics](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
 
 >[!ENDSHADEBOX]
 

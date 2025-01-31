@@ -36,7 +36,7 @@ Custom detail slides allow you to be even more targeted about what information y
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Custom detail views](https://video.tv.adobe.com/){target=&#34;_blank&#34;} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Custom detail views](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video.
 
 >[!ENDSHADEBOX]
 

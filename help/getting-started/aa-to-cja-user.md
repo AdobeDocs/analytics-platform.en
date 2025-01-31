@@ -34,7 +34,7 @@ Customer data in the Experience Platform is stored as datasets, which consist of
 
 Your Customer Journey Analytics Admin establishes [connections](/help/connections/create-connection.md) to datasets in Experience Platform. They then build [data views](/help/data-views/data-views.md) using those connections. Data views are conceptually similar to virtual report suites, and are the basis of reporting in Customer Journey Analytics. Since Experience Platform sources all data for reporting, report suites no longer exist as a container for data.
 
-A connection lets your Analytics Admin integrate datasets from Adobe Experience Platform into Customer Journey Analytics, included in the following video
+A connection lets your Analytics Admin integrate datasets from Adobe Experience Platform into Customer Journey Analytics.
 
 
 <!-- Outdated UI
@@ -87,7 +87,7 @@ Calculated metrics are similarly named between Adobe Analytics and Customer Jour
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Moving calculated metrics from Adobe Analytics to Customer Journey Analytics](https://video.tv.adobe.com/v){target=&#34;_blank&#34;} for a demo video on how to move calculated metrics.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Moving calculated metrics from Adobe Analytics to Customer Journey Analytics](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target=&#34;_blank&#34;} for a demo video on how to move calculated metrics.
 
 >[!ENDSHADEBOX]
 
