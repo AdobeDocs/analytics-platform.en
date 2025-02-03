@@ -83,6 +83,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intelligent capt
 
 >[!ENDSHADEBOX]
 
+
 ## Launch intelligent captions {#launch}
 
 To launch auto-generated intelligent captions for a visualization, select ![Intelligent captions](/help/assets/icons/AI.svg) at the top right of the visualization. This selection generates natural-language insights. 
