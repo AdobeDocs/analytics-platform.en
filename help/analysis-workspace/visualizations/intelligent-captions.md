@@ -79,7 +79,7 @@ Intelligent captions are geared towards:
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intellgent captions](https://video.tv.adobe.com/v/3420131/?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intelligent captions](https://video.tv.adobe.com/v/3420131/?quality=12&learn=on){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
