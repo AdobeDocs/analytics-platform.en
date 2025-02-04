@@ -24,9 +24,12 @@ This transformation is only available for datasets with data for B2B lookup sche
 
 To enable transformation for such a dataset:
 
-![Enable transform dataset](assets/transform-dataset.gif)
+![Enable transform dataset](/help/connections/assets/transform.gif)
 
-* Ensure you select the proper identifier for **[!UICONTROL Key]** and **[!UICONTROL Matching key]**, for example `personKey.sourceKey`.
+* Verify for each dataset the suggested values for **[!UICONTROL Key]** and **[!UICONTROL Matching key]**. If you change the values from the suggested values, you will see a warning asking you to continue. You must be sure that:
+
+  * The value you select for **Key** is based on the Person ID data type.
+  * The value you select for **Matching Key** is defined as the primary identity field for the event dataset.
 
 * Select the options for importing new data and dataset backfill. 
 
@@ -37,7 +40,7 @@ To enable transformation for such a dataset:
   
   >[!IMPORTANT]
   >
-  >Once turned on, and when the connection is saved, the transformation is irreversible. You cannot modify the transformation setting for a dataset once a connection is saved, other than by removing and adding the dataset once more to the connection. 
+  >Once turned on, and when the connection is saved, the transformation is irreversible. You cannot modify the Key, Matching key and Transform dataset configuration. You can only remove, add and then reconfigure the dataset. 
 
 To enable transformation for one or more datasets that are already part of an existing connection:
 
