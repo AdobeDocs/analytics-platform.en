@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_netgrowth_button"
+>id="workspace_guidedanalysis_netgrowth_button"
 >title="Net growth"
 >abstract="Are you gaining or losing users?"
 
@@ -35,7 +35,7 @@ Similar to the [Active](active-growth.md) analysis, users are defined as the fol
 >
 >Repeat users are not factored into this calculation, as they do not represent any gain or loss of users.
 
->[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421664/?quality=12&learn=on)
 
 
 ## Use cases

@@ -11,7 +11,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_deduplication"
+>id="dataview_component_metric_deduplication"
 >title="Metric deduplication"
 >abstract="Configure a metric to only count values that occur non-repetitively."
 

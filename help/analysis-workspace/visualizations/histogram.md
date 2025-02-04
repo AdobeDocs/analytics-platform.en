@@ -10,11 +10,18 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_histogram_button"
+>id="workspace_histogram_button"
 >title="Histogram"
 >abstract="Create a histogram visualization to represent the distribution of numerical data in groups of ranges."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+_This article documents the Histogram visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Histogram](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/histogram) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
 
 
 The ![Histogram](/help/assets/icons/Histogram.svg) **[!UICONTROL Histogram]** visualization is similar to a [!UICONTROL Bar] visualization, but it groups numbers into ranges (buckets). Analytics automates the "bucketing" of numbers into ranges, but you can change the settings in [Advanced Settings](#advanced-settings).
@@ -34,7 +41,7 @@ To create a histogram:
 
 In the example below, a histogram is used to bucket sessions for the number of persons. The histogram shows that most persons do have between 16-21 sessions for the selected date range.
 
-![](assets/histogram.png)
+![Histogram](assets/histogram.png)
 
 ## Advanced settings
 
@@ -61,9 +68,5 @@ As part of the visualization, specific histogram settings are available.
 >[Add a visualization to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualization settings](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
 >[Visualization context menu](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
->
+>[Using histograms to identify unexpected data values](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168)
 
-
-## Blog post
-
-Refer to this blog post about information on [using histograms to identify unexpected data values](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168).

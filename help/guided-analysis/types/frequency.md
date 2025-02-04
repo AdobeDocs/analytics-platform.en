@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_frequency_button"
+>id="workspace_guidedanalysis_frequency_button"
 >title="Frequency"
 >abstract="View distribution of repeat user activity for specific events."
 
@@ -19,7 +19,7 @@ role: User
 
 The ![Frequency](/help/assets/icons/Histogram.svg) **[!UICONTROL Frequency]** analysis groups event data by how often events occur in your product. The vertical axis of this analysis contains buckets that represent the frequency of the event. The horizontal axis measures the number of users or sessions for each bucket.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428089/?quality=12&learn=on)
 
 ## Use cases
 

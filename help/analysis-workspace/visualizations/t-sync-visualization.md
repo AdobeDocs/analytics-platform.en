@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_lockselection"
+>id="workspace_freeformtable_lockselection"
 >title="Lock selection"
 >abstract="Enable this setting to lock the visualization to the selected positions or the selected items in the data source."
 
@@ -20,7 +20,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_lockselection_showtable"
+>id="workspace_freeformtable_lockselection_showtable"
 >title="Show table"
 >abstract="Selecting **[!UICONTROL Show table]** will generate a new datasource for your current visualization, separate from the original data source."
 

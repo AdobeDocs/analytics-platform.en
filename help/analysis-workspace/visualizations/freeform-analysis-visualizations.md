@@ -54,7 +54,7 @@ The following visualization types are available in Analysis Workspace:
 
    * On the panel where you want to add the visualization, select ![AddCircle](/help/assets/icons/AddCircle.svg), then choose the icon that represents the visualization that you want to add. Hover over the icon for each visualization to see the name.
 
-   * Add a [blank panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel), then select the visualization that you want to add.
+   * Add a [blank panel](/help/analysis-workspace/c-panels/blank-panel.md), then select the visualization that you want to add.
 
    * From the context menu of an existing visualization in your Analysis Workspace project, select **[!UICONTROL Duplicate visualization]** or **[!UICONTROL Copy visualization]**.
 
@@ -120,8 +120,6 @@ Which visualization settings are available depends on the visualization. The tab
 | **[!UICONTROL Show min]** | Show the minimal value in the visualization. |
 | **[!UICONTROL Show max]** | Show the maximal value in the visualization. |
 | **[!UICONTROL Show trendline]** | Show a trendline in the visualization. When selected, you can select the type of trendline from the dropdown menu. | 
-
-
 
 You can customize the settings for all visualizations that you create. For more information, see [User preferences](/help/analysis-workspace/user-preferences.md).
 

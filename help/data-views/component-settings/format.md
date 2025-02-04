@@ -11,21 +11,11 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_format"
+>id="dataview_component_metric_format"
 >title="Format"
 >abstract="Determine how a component is displayed when used in reports."
 
 <!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_format_currencyconversion"
->title="Currency conversion"
->abstract="Select a currency code dimension to configure and display currency in a selected currency type."
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 Format lets you determine how a given metric is displayed when used in reports.
@@ -58,7 +48,16 @@ You can determine how a given metric is displayed by adjusting its format settin
 
    {style="table-layout:auto"}
 
-## Use currency conversion
+## Use currency conversion {#use-currency-conversion}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="dataview_component_metric_format_currencyconversion"
+>title="Currency conversion"
+>abstract="Select a currency code dimension to configure and display currency in a selected currency type."
+
+<!-- markdownlint-enable MD034 -->
 
 Currency conversion in Customer Journey Analytics can be extremely valuable for businesses that operate internationally. By removing the complexities of manual currency conversion, currency conversion in Customer Journey Analytics brings uniformity and clarity to financial data. Currency conversion keeps track of daily historical exchange rates and maintains those daily rates for a period of 4 years. 
 

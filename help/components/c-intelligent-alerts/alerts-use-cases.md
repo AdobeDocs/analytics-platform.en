@@ -3,6 +3,7 @@ description: Use cases for alerts.
 title: Alerts use cases
 feature: Workspace Basics
 role: User, Admin
+exl-id: 3aa5e38e-fa19-40aa-a537-d4da529e1bc7
 ---
 # Alert use cases
 

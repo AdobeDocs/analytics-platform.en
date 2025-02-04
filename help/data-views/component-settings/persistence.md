@@ -12,9 +12,9 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_dimension_persistence"
+>id="dataview_component_dimension_persistence"
 >title="Persistence"
->abstract="Configure the default allocation model applied to a dimension. Allocation applies before filters in reporting."
+>abstract="Configure the default allocation model applied to a dimension. Allocation applies before filters in reporting. See for more information [allocation settings](/help/data-views/component-settings/persistence.md#allocation-settings), [expiration settings](/help/data-views/component-settings/persistence.md#expiration-settings), [binding dimension](/help/data-views/component-settings/persistence.md#binding-dimension) and [binding metrics](/help/data-views/component-settings/persistence.md#binding-metric)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -93,7 +93,13 @@ A drop-down list that lets you bind the persistence of a dimension value to dime
 
 See [Using binding dimensions and metrics in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) for examples around how to effectively use binding dimensions.
 
->[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Binding dimensions](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 
 ## [!UICONTROL Binding Metric]
 

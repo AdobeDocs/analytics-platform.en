@@ -10,12 +10,13 @@ exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 Quick filters allow you to explore data within a Workspace project quickly, without the need to create a filter in the [Filter Builder](/help/components/filters/create-filters.md). 
 
 
-+++ The following video demonstrates how to use quick filters.
 
->[!VIDEO](https://video.tv.adobe.com/v/341466/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Quick segments in Analysis Workspace](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"} for a demo video.
 
-+++
+>[!ENDSHADEBOX]
+
 
 When you want to use quick filters, please note that:
 
@@ -26,7 +27,7 @@ When you want to use quick filters, please note that:
 
 ## Create
 
-Quick filters apply to panels. You can create one ore more quick filters for every panel in your Workspace project. Any user in Analysis Workspace can create quick filters. 
+Quick filters apply to panels. You can create one or more quick filters for every panel in your Workspace project. Any user in Analysis Workspace can create quick filters. 
 
 To create a quick filter:
 

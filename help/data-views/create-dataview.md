@@ -10,11 +10,13 @@ role: Admin
 
 Creating a data view involves either creating metrics and dimensions from schema elements or using standard components. Most schema elements can be either a dimension or a metric depending on your business's requirements. Once you drag a schema element into a data view, options appear on the right where you can adjust how the dimension or metric operates in Customer Journey Analytics.
 
-+++ View a video to illustrate Data views in Customer Journey Analytics
 
->[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
-+++
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create or edit a data view](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 
 To create or edit a data view:
 
@@ -23,16 +25,6 @@ To create or edit a data view:
 
 
 ## Configure {#configure}
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_dataview_externalid"
->title="External ID"
->abstract="Changing the External ID may impact how the data view name appears in external sources, such as business intelligence tools."
-
-<!-- markdownlint-enable MD034 -->
-
 
 To configure a new or existing data view:
 
@@ -43,7 +35,16 @@ To configure a new or existing data view:
 1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
    
 
-### Settings
+### Settings {#settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="dataview_externalid"
+>title="External ID"
+>abstract="Changing the External ID may impact how the data view name appears in external sources, such as business intelligence tools."
+
+<!-- markdownlint-enable MD034 -->
 
 Provides overarching settings for the data view.
 
@@ -58,12 +59,10 @@ Provides overarching settings for the data view.
 
 ### Compatibility {#compatibility}
 
-{{release-limited-testing-section}}
-
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_dataviewsinadobejourneyoptimizer"
+>id="dataview_dataviewsinadobejourneyoptimizer"
 >title="Data views in Journey Optimizer"
 >abstract="Customer Journey Analytics needs to use a connection and data view that are compatible with Adobe Journey Optimizer. By default, a connection and data view are automatically created for this purpose.<br/>Alternatively, you can enable this option to make this the default data view that is used in Adobe Journey Optimizer reporting. When enabled, all the necessary components required for Journey Optimizer are added to this data view, and all the necessary Journey Optimizer datasets are added to the connection associated with this data view."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Which components and datasets are added." 
@@ -77,7 +76,7 @@ This section is visible only for administrators who are provisioned with Journey
 
 | Setting | Description |
 | --- | --- |
-| [!UICONTROL **Set as default data view in Adobe Journey Optimizer**] | This configuration option standardizes reporting across Journey Optimizer and Customer Journey Analytics. It also allows you to perform advanced analysis of your Adobe Journey Optimizer data in Customer Journey Analytics (by selecting ![Open](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **Analyze in CJA**] while in Journey Optimizer).<p>To perform this type of analysis, Journey Optimizer needs access to a Customer Journey Analytics data view.<p>Enable this option to make this the default data view that is used in Journey Optimizer reporting for your sandbox.</p><p>This configuration option automatically:</p><ul><li>Configures all the required Journey Optimizer datasets in the associated connection in Customer Journey Analytics for use with Journey Optimizer.</li><li>Creates a set of Journey Optimizer metrics and dimension in the data view (including derived fields and calculated metrics). Context labels are automatically set on all of these metrics and dimensions.</li></ul><p><p>Consider the following when enabling this option: <ul><li>You can change the default data view at a later time, but doing so could alter your Journey Optimizer reporting data. If you choose to disable this option after it is enabled, you will be prompted to select a new default data view.</li><li>If you already made manual customizations to the the datasets, dimensions, or metrics in the Customer Journey Analytics data view, your manual customizations remain intact when enabling this configuration option. This option makes additional customizations that further standardize reporting across Journey Optimizer and Customer Journey Analytics. You can also make manual customizations after enabling this option.</li></ul>See [Integrate Adobe Journey Optimizer with Adobe Customer Journey Analytics](/help/integrations/ajo.md) for more information. |
+| [!UICONTROL **Set as default data view in Adobe Journey Optimizer**] | This configuration option standardizes reporting across Journey Optimizer and Customer Journey Analytics. It also allows you to perform advanced analysis of your Adobe Journey Optimizer data in Customer Journey Analytics (by selecting ![Open](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **Analyze in CJA**] while in Journey Optimizer).<p>To perform this type of analysis, Journey Optimizer needs access to a Customer Journey Analytics data view.<p>Enable this option to make this the default data view that is used in Journey Optimizer reporting for your sandbox.</p><p>This configuration option automatically:</p><ul><li>Configures all the required Journey Optimizer datasets in the associated connection in Customer Journey Analytics for use with Journey Optimizer.</li><li>Creates a set of Journey Optimizer metrics and dimension in the data view (including derived fields and calculated metrics). Context labels are automatically set on all of these metrics and dimensions.</li></ul><p><p>Consider the following when enabling this option: <ul><li>You can change the default data view at a later time, but doing so could alter your Journey Optimizer reporting data. If you choose to disable this option after it is enabled, you will be prompted to select a new default data view.</li><li>If you already made manual customizations to the the datasets, dimensions, or metrics in the Customer Journey Analytics data view, your manual customizations remain intact when enabling this configuration option. This option makes additional customizations that further standardize reporting across Journey Optimizer and Customer Journey Analytics. You can also make manual customizations after enabling this option.</li><li>When this option is selected, the connection associated with the data view cannot be deleted.</li></ul>See [Integrate Adobe Journey Optimizer with Adobe Customer Journey Analytics](/help/integrations/ajo.md) for more information. |
 
 {style="table-layout:auto"}
 

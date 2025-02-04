@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_activegrowth_button"
+>id="workspace_guidedanalysis_activegrowth_button"
 >title="Active growth"
 >abstract="Identify who is new, retained, returning, or dormant."
 
@@ -28,7 +28,7 @@ The ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Active grow
 All active users (new + repeat + return) appear as a shade of teal above the horizontal axis, while all dormant users appear in orange below the horizontal axis.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421667/?quality=12&learn=on)
 
 ## Use cases
 

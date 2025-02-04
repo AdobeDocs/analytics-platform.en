@@ -9,13 +9,15 @@ role: User
 
 [!UICONTROL Column settings] let you configure column formatting, some of which can be conditional.
 
-+++ View a video demonstration of this functionality.
 
->[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Row and column settings in a Freeform table](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 To access [!UICONTROL Column settings], select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the column heading.
 
@@ -59,7 +61,7 @@ Conditional formatting applies formatting to upper, midpoint, and lower limits t
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
+>id="workspace_freeformtable_column_usenondefaultattributionmodel"
 >title="Use non-default attribution model"
 >abstract="Enable a non-default attribution model for the selected columns."
 
@@ -68,7 +70,7 @@ Conditional formatting applies formatting to upper, midpoint, and lower limits t
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
+>id="workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
 >title="Use non-default attribution model"
 >abstract="Non-default attribution mode are unavailable for this metric."
 

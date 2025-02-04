@@ -10,14 +10,23 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_combo_button"
+>id="workspace_combo_button"
 >title="Combo"
 >abstract="Create a combo chart visualization quickly without the need to create a freeform table first."
 
 <!-- markdownlint-enable MD034 -->
 
 
-The ![Comment](/help/assets/icons/ComboChart.svg) **[!UICONTROL Combo]** visualization makes it easy to build quickly a comparison visualization without having to build a table first. You can easily view trends in your data in a line/bar combination.
+>[!BEGINSHADEBOX]
+
+_This article documents the Combo visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
+
+_See [Combo](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
+
+
+The ![Combo chart](/help/assets/icons/ComboChart.svg) **[!UICONTROL Combo]** visualization makes it easy to build quickly a comparison visualization without having to build a table first. You can easily view trends in your data in a line/bar combination.
 
 Use a [!UICONTROL Combo] to:
 

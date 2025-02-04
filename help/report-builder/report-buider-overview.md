@@ -37,11 +37,12 @@ Report Builder for Customer Journey Analytics is available for Excel on the foll
 
 ## Overview video
 
->[!VIDEO](https://video.tv.adobe.com/v/337569/?quality=12&learn=on)
 
- >[!NOTE]
- >
- >This documentation is for Report Builder for Customer Journey Analytics. For information about Report Builder for Analytics on Windows, see [Report Builder for Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html).
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Buider for Customer Journey Analytics](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
 
  You can download Report Builder for Customer Journey Analytics from the
  [Microsoft Store](https://www.microsoft.com/en-us/store/apps/windows).

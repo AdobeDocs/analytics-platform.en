@@ -11,7 +11,7 @@ exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_timeline_button"
+>id="workspace_guidedanalysis_timeline_button"
 >title="Timeline"
 >abstract="Observe user-level session events over time."
 
@@ -28,7 +28,7 @@ The ![Timeline](/help/assets/icons/Timeline.svg) **[!UICONTROL Timeline]** analy
 >* **Admins**: *The PersonID property is required for this analysis. Please add Person ID to the data view.*
 >* **Non-admins**: *The PersonID property is required for this analysis. Please work with your Customer Journey Analytics administrator to add Person ID to the data view.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3427810/?quality=12&learn=on)
 
 
 

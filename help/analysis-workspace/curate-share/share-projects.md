@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_shareprojects"
+>id="workspace_shareprojects"
 >title="Share projects"
 >abstract="You can share any of these project roles with other users in your organization."
 
@@ -34,13 +34,15 @@ You can share an Analysis Workspace project with the following types of people:
 
 Any [curation](curate.md) you apply prior to sharing is reflected when recipients open the project. 
 
-+++ View a video showing how to use project sharing.
 
->[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Project sharing in Analysis Workspace](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Share with Customer Journey Analytics users and groups in your organization {#Add}
 
@@ -147,9 +149,13 @@ You can grant [read-only access](/help/analysis-workspace/curate-share/view-only
 >
 >* The [!UICONTROL Share with anyone] feature is blocked for both Healthcare Shield and Privacy & Security Shield licenses.
 
-The following video demonstration and accompanying documentation describe the options associated with sharing a link with anyone:
 
->[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Share with anyone](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 
 To share an Analysis Workspace project with anyone:
 
@@ -165,7 +171,7 @@ To share an Analysis Workspace project with anyone:
 
    Selecting this option creates a link to the project that can be shared with anyone. You can disable access to the project at any time by disabling this option.
 
-   The owner of the project is also the owner of this link. Link ownership can be transferred to another user only when project ownership is transferred, as described in [Transfer user assets or set account expirations](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html) in the Analytics Admin guide.
+   The owner of the project is also the owner of this link. Link ownership can be transferred to another user only when project ownership is transferred, as described in [Transfer user assets](/help/tools/asset-transfer/transfer-assets.md) in the Analytics Admin guide.
 
 1. Choose whether to enable the following security option (this option can be controlled by your Customer Journey Analytics administrator): 
 
@@ -197,9 +203,16 @@ When someone shares a project with you by sharing a link (either from the [Share
 
 ## Share embedded components
 
-Here is a video on the topic:
+You can share the embedded components that are part of your project.
 
->[!VIDEO](https://video.tv.adobe.com/v/24713/?quality=12)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Share embedded components in Analysis Workspace](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"} for a demo video.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## FAQs {#FAQs}
 

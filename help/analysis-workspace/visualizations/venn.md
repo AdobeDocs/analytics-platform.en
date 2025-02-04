@@ -10,11 +10,18 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_venn_button"
+>id="workspace_venn_button"
 >title="Venn"
 >abstract="Create a venn chart visualization to quickly compare visually two elements and the size of their overlap."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+_This article documents the Venn visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Venn](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/venn) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
 
 
 The ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** visualization lets you drag in up to 3 filters and one metric (from the Components panel) to build a Venn diagram.
@@ -31,6 +38,14 @@ To normalize the Venn diagram (take the size out of it), go select ![Setting](/h
 ![Visualization Settings option for Visualization type: Venn diagram.](assets/normalization.png)
 
 -->
+
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Venn visualization](https://video.tv.adobe.com/v/335798/?quality=12&learn=on){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 
 >[!MORELIKETHIS]
 >

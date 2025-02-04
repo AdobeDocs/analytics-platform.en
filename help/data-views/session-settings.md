@@ -6,7 +6,19 @@ feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
 ---
-# Session settings
+# Session settings {#session-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="dataview_settings_datapreview"
+>title="Data preview"
+>abstract="Compares the data of this data view with data of the connection. The preview percentage is based on the total number in the connection from the **last 90 days**.<br><br/>If the preview is not loading, your connection could still be backfilling."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-enable MD034 -->
+
 
 In Customer Journey Analytics, you can define a session in any way to match how persons interact with your digital experiences. You configure session settings within a data view.
 

@@ -10,24 +10,33 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_donut_button"
+>id="workspace_donut_button"
 >title="Donut"
 >abstract="Create a donut visualization to compare percentages of a total, typically with a small number of items."
 
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+_This article documents the Donut visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Donut](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/donut) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
+
+
 Similar to a pie chart, the ![GraphDonut](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Donut]** visualization shows data as parts or filters of a whole. Use a donut visualization when comparing percentages of a total, typically with a small number of items.
 
 ![A Donut chart showing data as parts or filters of a whole.](assets/donut.png)
 
-+++ View a video demonstration of this functionality.
 
->[!VIDEO](https://video.tv.adobe.com/v/23989/?quality=12)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Add a donut visualization](https://video.tv.adobe.com/v/334309/?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 >[!MORELIKETHIS]
 >

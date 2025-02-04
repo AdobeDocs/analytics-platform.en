@@ -1,6 +1,6 @@
 ---
 title: Customer Journey Analytics BI extension
-description: Learn how you can use Power BI or Tableau to access data views using the Customer Journey Analytics BI extension.
+description: Learn how you can use Power BI or Tableau Desktop to access data views using the Customer Journey Analytics BI extension.
 solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
@@ -10,7 +10,7 @@ exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
 
 {{select-package}}
 
-The [!DNL Customer Journey Analytics BI extension] enables SQL access to the [data views](./data-views.md) that you have defined in Customer Journey Analytics. Your data engineers and analysts might be more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that Customer Journey Analytics users are using when creating their Analysis Workspace projects.
+The [!DNL Customer Journey Analytics BI extension] enables SQL access to the [data views](./data-views.md) that you have defined in Customer Journey Analytics. Your data engineers and analysts might be more familiar with Power BI,  Tableau Desktop, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that Customer Journey Analytics users are using when creating their Analysis Workspace projects.
 
 Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) is the SQL interface to data available in the data lake of Experience Platform. With the [!DNL Customer Journey Analytics BI extension] enabled, the functionality of [!DNL Query Service] is extended to see your Customer Journey Analytics data views as tables or views in a [!DNL Query Service] session. As a result, business intelligence tools that use [!DNL Query Service] as their PostgresSQL interface benefit seamlessly from this extended functionality.
 
@@ -64,7 +64,7 @@ In Adobe Experience Platform:
 
 1. Select ![Create Query](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **Create query**]**.
 
-1. Select the `cja` **[!UICONTROL **Database**]**.
+1. Select the `cja` database for your sandbox from the list of databases in the **[!UICONTROL Database]** dropdown menu. For example `prod:cja`.
 
 1. To execute the query, type your SQL statement and select the ![Play](assets/Smock_Play_18_N.svg) button (or press `[SHIFT]` + `[ENTER]`).
 
@@ -79,7 +79,7 @@ In Adobe Experience Platform:
 
    1. Select **[!UICONTROL **Credentials**]** from the top bar.
 
-   1. Select the `cja` **[!UICONTROL **Database**]**.
+   1. Select the `cja` database for your sandbox from the list of databases in the **[!UICONTROL Database]** dropdown menu. For example `prod:cja`.
 
    1. To copy the command string, use ![Copy](assets/Smock_Copy_18_N.svg) in the **[!UICONTROL **PSQL command**]** section.
 
@@ -94,7 +94,7 @@ See the [Query Editor UI guide](https://experienceleague.adobe.com/en/docs/exper
 
 ### BI tools
 
-Currently, the [!DNL Customer Journey Analytics BI extension] is supported and tested for Power BI and Tableau only. Other BI tools using the PSQL interface might work as well, but are not yet supported officially.
+Currently, the [!DNL Customer Journey Analytics BI extension] is supported and tested for Power BI and Tableau Desktop only. Other BI tools using the PSQL interface might work as well, but are not yet supported officially.
 
 +++ Power BI
 
@@ -104,7 +104,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
    1. Select **[!UICONTROL **Credentials**]** from the top bar.
 
-   1. Select the `cja` **[!UICONTROL **Database**]**.
+   1. Select the `cja` database for your sandbox from the list of databases in the **[!UICONTROL Database]** dropdown menu. For example `prod:cja`.
 
    1. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Power BI.
 
@@ -139,7 +139,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
 +++
 
-+++Tableau
++++Tableau Desktop
 
 1. Look up the details of your PostgresSQL credentials in Adobe Experience Platform:
 
@@ -147,11 +147,11 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
    1. Select **[!UICONTROL **Credentials**]** from the top bar.
 
-   1. Select the ` cja` **[!UICONTROL **Database**]**.
+   1. Select the `cja` database for your sandbox from the list of databases in the **[!UICONTROL Database]** dropdown menu. For example `prod:cja`.
 
-   1. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Tableau.
+   1. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Tableau Desktop.
 
-1. In Tableau:
+1. In Tableau Desktop:
 
    1. Select **[!UICONTROL **More**]** from **[!UICONTROL **To a Server**]** in the left rail.
 
@@ -186,6 +186,8 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 +++
 
 See [Connect clients to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview) for an overview of and more information on the various tools available.
+
+See [Use cases](/help/use-cases/data-views/bi-extension-usecases.md) on how to accomplish a number of use cases using the Customer Journey Analytics BI extension
 
 ## Functionality
 

@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_experimentation_button"
+>id="workspace_experimentation_button"
 >title="Experimentation"
 >abstract="Create a panel to compare different user experiences, marketing, or messaging variations. And to determine which variation is best at driving a specific outcome."
 
@@ -19,12 +19,18 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_experimentation_panel"
+>id="workspace_experimentation_panel"
 >title="Experimentation"
 >abstract="Compare different user experiences, marketing, or messaging variations to determine which is best at driving a specific outcome.<br/><br/>**Parameters**<br/>**Experiment**: The experiment that is analyzed.<br>**Control variant**: Control variant for the selected experiment.<br/>**Success metric**: Up to 5 standard (non-calculated) success metrics to analyze the experiment against.<br/>**Normalizing metric**: People, sessions, or events. This metric (also referred to as the counting methodology) becomes the denominator of the lift calculation. This metric also affects how the data is aggregated before the confidence calculation is applied."
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+_This article documents the Experimentation panel in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Analytics for Target panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) for information on how to analyze Adobe Target activities and experiences in_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+
+>[!ENDSHADEBOX]
 
 
 The **[!UICONTROL Experimentation]** panel lets analysts compare different user experiences, marketing, or messaging variations to determine which is best at driving a specific outcome. You can evaluate the lift and confidence of any A/B experiment from any experimentation platform: online, offline, from Adobe solutions like Target or Journey Optimizer, and even BYO (bring-your-own) data.

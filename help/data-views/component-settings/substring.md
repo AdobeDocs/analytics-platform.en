@@ -11,7 +11,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_dimension_substring"
+>id="dataview_component_dimension_substring"
 >title="Substring"
 >abstract="Extract parts of a string using rules or regular expressions."
 

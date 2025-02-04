@@ -11,7 +11,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_firstuseimpact_button"
+>id="workspace_guidedanalysis_firstuseimpact_button"
 >title="First use impact"
 >abstract="Measure the impact of first-time feature use on key indicators."
 
@@ -20,7 +20,7 @@ role: User
 The ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL First use impact]** analysis shows a comparison of how key indicators performed before and after a user uses a product feature for the first time. The horizontal axis of this report is a relative time interval before and after the event, while the vertical axis measures the desired key indicators. A vertical bar in the middle of the chart represents day 0 for when a feature is first used by a given user. Because users do not always adopt features on the same day and your rollouts can potentially happen over several days, day 0 can mean something different for each individual user.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421661/?quality=12&learn=on)
 
 
 ## Use cases

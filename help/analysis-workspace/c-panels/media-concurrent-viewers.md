@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaconcurrentviewers_button"
+>id="workspace_mediaconcurrentviewers_button"
 >title="Media concurrent viewers"
 >abstract="Create a panel to analyze average minute audience for specific content, or over a specific time period."
 
@@ -19,12 +19,18 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaconcurrentviewers_panel"
+>id="workspace_mediaconcurrentviewers_panel"
 >title="Media concurrent viewers"
 >abstract="Analyze concurrent viewers over time, view peak concurrency, or break down and compare.<br/><br>**Granularity**: Select time period to view concurrent viewers by.<br/>**Panel summary numbers**:<br/>Option to show summary numbers with date or time details for each line. Maximum will show details for peak concurrency. Minimum will show details for the trough.<br/>**Series breakdown (optional)**: Break down visualization by segments, dimensions, dimension items or date ranges. View up to 10 lines at a time. Breakdowns are limited to a single level."
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+_This article documents the Media concurrent viewers panel in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_See [Media concurrent viewers panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
 
 
 >[!NOTE]
@@ -41,13 +47,13 @@ You can analyze concurrent viewers to understand where peak concurrency occurred
 In Analysis Workspace, the Concurrent viewers metric is the number of unique persons viewing your media streams at a specific point in time, regardless of the number of sessions.
 
 
-+++ View a video demonstration of this functionality.
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/330177/?quality=12)
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Media concurrent viewers panel](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} for a demo video. 
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
 
 ## Use
 
@@ -55,7 +61,7 @@ To use an **[!UICONTROL Media concurrent viewers]** panel:
 
 1. Create a **[!UICONTROL Media concurrent viewers]** panel. For information about how to create a panel, see [Create a panel](panels.md#create-a-panel).  
 
-1. Ensure you select a data view for the panel that has components configured from the Streaming Media Collection Add-on.
+1. Ensure you select a data view for the panel that has components configured from the Streaming Media Collection.
 
 1. Specify the [input](#panel-input) for the panel.
 

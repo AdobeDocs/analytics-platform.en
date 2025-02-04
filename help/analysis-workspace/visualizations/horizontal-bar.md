@@ -7,6 +7,12 @@ role: User
 ---
 # Horizontal bar (stacked)
 
+>[!BEGINSHADEBOX]
+
+_This article documents the Horizontal bar and Horizontal bar stacked visualizations in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Horizontal bar and horizontal bar stacked](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
+
 The horizontal bar visualization has a standard and stacked option.
 
 ## Horizontal bar {#horizontal-bar}
@@ -14,7 +20,7 @@ The horizontal bar visualization has a standard and stacked option.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_horizontalbar_button"
+>id="workspace_horizontalbar_button"
 >title="Horizontal bar"
 >abstract="Create a horizontal bar visualization to represent various values across one or more metrics."
 
@@ -30,7 +36,7 @@ Thie ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONT
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_horizontalbarstacked_button"
+>id="workspace_horizontalbarstacked_button"
 >title="Horizontal bar stacked"
 >abstract="Create a horizontal bar visualization to represent various values across one or more stacked metrics."
 
