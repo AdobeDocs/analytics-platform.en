@@ -6,6 +6,7 @@ feature: Data Views
 role: Admin
 hide: yes
 hidefromtoc: yes
+exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 ---
 # Configure Content Analytics
 
@@ -20,4 +21,3 @@ To configure Content Analytics for your organization, you can either:
 
 * use the Content Analytics [guided configuration](guided.md). The configuration wizard guides you through all steps required to setup the prerequisites for an automatic configuration of Content Analytics.
 * follow a [manual process](manual.md) to configure Content Analytics.
-

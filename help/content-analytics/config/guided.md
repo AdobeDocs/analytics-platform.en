@@ -6,6 +6,7 @@ feature: Data Views
 role: Admin
 hide: yes
 hidefromtoc: yes
+exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 ---
 # Content Analytics guided configuration
 
@@ -266,5 +267,3 @@ When you have created or edited a configuration, the following actions are avail
       1. If the Web SDK is not configured for the Tags property, a new Web SDK configuration is created to send only Content Analytics events.
       1. If the Web SDK is configured for this Tag property, no changes are made to the existing Web SDK configuration.
 * **[!UICONTROL Save]**: Changes made to an implemented configuration are saved and the implementation is updated.
-
-
