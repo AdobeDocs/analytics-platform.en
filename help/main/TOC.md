@@ -234,6 +234,14 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Administration requirements](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
++ Content Analytics {#content-analytics}
+  + [Overview](/help/content-analytics/content-analytics.md)
+  + Configuration {#configuration}
+    + [Overview](/help/content-analytics/config/configuration.md)
+    + [Guided configuration](/help/content-analytics/config/guided.md)
+    + [Manual configuration](/help/content-analytics/config/manual.md)
+
+
 + Analytics dashboards {#cja-dashboards}
   + [Overview](../mobile-app/home.md)
   + [Curator tasks](../mobile-app/curator.md)
