@@ -10,6 +10,17 @@ exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
 ---
 # Create a marketing channel derived field for Customer Journey Analytics
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-marketing-channel"
+>title="Create a marketin channel derived field"
+>abstract="Derived fields are created within a data view.
+>
+>Using a default marketing channel setup only takes a few minutes; creating a highly customized marketing channel setup might take several hours."
+
+<!-- markdownlint-enable MD034 -->
+
 >[!NOTE]
 > 
 >Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
