@@ -1,0 +1,270 @@
+---
+title: Content Analytics guided configuration
+description: How to configure Content Analytics using an onboarding guided configuration
+solution: Customer Journey Analytics
+feature: Data Views
+role: Admin
+hide: yes
+hidefromtoc: yes
+---
+# Content Analytics guided configuration
+
+>[!WARNING]
+>
+>This article is a preliminary unofficial draft version of a forthcoming final version and is part of the Content Analytics documentation. All content is subject to change and no legal obligations whatsoever can be derived from the current version of this article.  
+>
+
+{#release-limited-testing}
+
+The guided configuration helps you to configure Content Analytics quickly and easily. The guided configuration uses a wizard to set up the requirements to configure Content Analytics automatically for your organization. In the **[!UICONTROL Configuration]** screen, you can either create a new configuration or edit an existing configuration.
+
+To access the Content Analytics configuration
+
+* Select **[!UICONTROL Data Management]** > **[!UICONTROL Content Analytics]** from the main menu in Customer Journey Analytics.
+
+In the Content Analytics Configuration screen, you see a table of existing Content Analytics configurations. 
+
+![Content Analytics configurations](../assets/aca-configuration-table.png)
+For each configuration, the following details are available:
+
+| Column | Description |
+|---|---|
+| **[!UICONTROL Name]** | The name of the configuration. |
+| **[!UICONTROL Created by]** | The technical account that created the configuration. |
+| **[!UICONTROL Created on]** | The timestamp when the configuration was created. |
+| **[!UICONTROL Modified on]** | The timestamp when the configuration was last modified. |
+| **[!UICONTROL Sandbox]** | The sandbox within the organization in which Content Analytics is (planned to be) configured and implemented. |
+| **[!UICONTROL Status]** | The status of the configuration. The status can be:<br/>![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Draft]**: The configuration is Saved for later, and not deployed.<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Failed]**: The configuration has failed. You need to edit the configuration and make the necessary changes.<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Complete]**: the configuration has been completed and implemented successfully. |
+
+You can use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to customize the table. Select which columns to display in the **[!UICONTROL Customize table]** dialog and select **[!UICONTROL Apply]** to apply the changes.
+
+From the Content Analytics **[!UICONTROL Configuration]** screen, you can create a new configuration or edit an existing configuration. 
+
+To create a new configuration:
+
+* Select **[!UICONTROL Create configuration]**. This action opens the guided configuration wizard.
+
+To edit an existing configuration:
+
+* Select ![More](/help/assets/icons/More.svg) and then ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** for an existing Content Analytics configuration. This action opens the guided configuration wizard.
+
+## Guided configuration wizard
+
+The guided configuration wizard consists of four sections ([Details](#details), [Data view](#data-view), [Experience capture & definition](#experience-capture-and-definition), and [Data collection](#data-collection)), each prompting you for details that are required to set up properly and configure Content Analytics. Complete each section before moving to the next section, as some settings in a section might depend on configuration values in earlier sections.
+
+### Details {#onboarding-details}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_details_button"
+>title="Details"
+>abstract="Provide a name for the connection. In the **[!UICONTROL Data view]**, **[!UICONTROL Experience capture and definition]**, and **[!UICONTROL Data collection]** sections you provide more details to ensure that Content Analytics can be configured correctly."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_details_name_header"
+>title="Details"
+>abstract="This guide will set up the requirements needed to configure Content Analytics. Please provide a name for this configuration"    
+
+<!-- markdownlint-enable MD034 -->
+
+Each configuration requires a unique name. For example, `Example Content Analytics configuration`. 
+
+![Content Analytics configuration details](../assets/aca-configuration-details.png)
+
+
+### Data view {#onboarding-data-view}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="ac_onboarding_dataview_button"
+>title="Data view"
+>abstract="For the configuration of Content Analytics you need to select an existing data view. So, you can merge your content analytics data with other data."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_header"
+>title="Data view"
+>abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your content analytics data with.<br/>[Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views){target=\"_blank\"}" 
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_header_alt"
+>title="Data view"
+>abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your content analytics data with.<br/>"
+
+<!-- markdownlint-enable MD034 -->
+
+Your configuration requires the selection of a [Data view](/help/data-views/data-views.md).
+
+![Content Analytics configuration of a Data view](../assets/aca-configuration-dataview.png)
+
+To select a Data view:
+
+1. Use ![Data](/help/assets/icons/Data.svg) **[!UICONTROL Select Data view]**. You see a **[!UICONTROL Data view]** dialog, where you can select a Data view for your configuration. 
+   
+   If you create a new configuration, the list only shows Data views that are associated with sandboxes that do not have an active configuration.
+   If you edit an existing configuration, the list only shows Data views available within the sandbox already associated with the existing configuration.
+
+   * To filter the list of available Data views, select ![Show filters](/help/assets/icons/Filter.svg). You can filter the list on Connection, Owner and Sandbox.<br/>Use ![Hide](/help/assets/icons/Filter.svg) **[!UICONTROL Hide filters]** to hide the filter pane.
+   * To define which columns to show in the table, select ![Column Settings](/help/assets/icons/ColumnSetting.svg). Select which columns to display in the **[!UICONTROL Customize table]** dialog and select **[!UICONTROL Apply]** to apply the changes.
+1. Select **[!UICONTROL Save]** to confirm the selected Data view. Select **[!UICONTROL Cancel]** to cancel.
+
+A Data view is tied to a Customer Journey Analytics [Connection](/help/connections/overview.md). And a Connection is based on a sandbox within your organization. Once you save the configuration, **[!UICONTROL Sandbox]** is auto populated with the proper name of the sandbox, based on the selected Data view.
+
+
+### Experience capture and definition 
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_experiences_button"
+>title="Experience capture and definition"
+>abstract="You can select to include Experiences in the data you collect with Content Analytics. When selected, you have to define one or more combinations of a regex and query parameters to define for which URLs you want to include experiences."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_experiences_header"
+>title="Experience capture and definition"
+>abstract="Collect Experiences in Content Analytics"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_experiences_url_header"
+>title="Experience capture and definition"
+>abstract="Specify urls which the parameters below apply to"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_experiences_edit_button"
+>title="Experience capture and definition"
+>abstract="You can edit the settings in the Adobe Content Analytics extension in the Tag property, associated with the selected configuration."
+
+
+
+<!-- markdownlint-enable MD034 -->
+
+In this section, you can select to include Experiences in the data you collect with Content Analytics. An experience is all text on a web page that is reproducible using the URL used by the initial user visiting that web page. When selected, you have to define for which URLs you want to include experiences.
+
+To include Experiences in a new or not implemented configuration:
+
+![Content Analytics configuration Experience capture and definition](../assets/aca-configuration-experience.png)
+
+1. Enable **[!UICONTROL Include experiences]**.
+1. Specify the parameters that determine how content is rendered on your website. The parameters are zero or more combinations of a **[!UICONTROL Domain regular expression]** and **[!UICONTROL Query parameters]**.
+   1. Enter a **[!UICONTROL Domain regular expression]**, for example `(?!.*\b(store|help|admin)\b)`.
+   1. Specify a comma separated list of **[!UICONTROL Query parameters,]** for example `outdoors, patio, kitchen`.
+   1. Select **[!UICONTROL Remove]** if you want to remove a combination.
+   1. Select **[!UICONTROL Add another]** if you want to add another combination.
+
+To edit existing or include new Experiences in an implemented configuration:
+
+![Content Analytics configuration Experience capture and definition](../assets/aca-configuration-experience-edit.png)
+
+* Select ![Edit](/help/assets/icons/Edit.svg) Edit to edit the parameters in the Adobe Content Analytics extension in the Tag property, associated with the selected configuration.
+
+
+### Data collection {#onboarding-data-collection}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_button"
+>title="Data collection"
+>abstract="Define which Tag property you want to use, or create a new one. And define the pages and assets that you want to include or exclude, using regular expressions."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_tag_header"
+>title="Data collection"
+>abstract="Provide a Tag property"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_pages_excluded_boldheader"
+>title="Data collection"
+>abstract="**Pages to include / exclude**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_pages_excluded_header"
+>title="Data collection"
+>abstract="Indicate which pages should be **included** or **excluded** when collecting data for Content Analytics"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_assets_excluded_boldheader"
+>title="Data collection"
+>abstract="**Assets to include / exclude**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_assets_excluded_header"
+>title="Data collection"
+>abstract="Indicate which assets should be **included** or **excluded** when collecting data for Content Analytics"
+
+<!-- markdownlint-enable MD034 -->
+
+#### New configuration
+
+In a new configuration, you need to define which Tag property you want to use, or create a new Tag property. And you need to define the pages and assets you want to include or exclude, using regular expressions.
+
+* To use an existing Tag property:
+
+    ![Content Analytics Data Collection Existing Tag](../assets/aca-configuration-datacollection-existingtag.png)
+
+    * Select **[!UICONTROL Existing]**.
+    * Select an existing property from the **[!UICONTROL Tag property]** dropdown menu.
+
+* To create a new Tag property:
+
+    ![Content Analytics Data Collection New Tag](../assets/aca-configuration-datacollection-newtag.png)
+
+    1. Select **[!UICONTROL Create new]**.
+    2. Specify a **[!UICONTROL Tag name]**, for example `ACA Test`.
+    3. Specify one or more **[!UICONTROL Domains]**, for example, `example.com`. 
+
+    * To add more domains, select **[!UICONTROL Add another]**.
+    * To remove a domain, select ![CrossSize75](/help/assets/icons/CrossSize75.svg).
+
+* If you have selected to include experiences, indicate which pages should be included or excluded when collecting data for Content Analytics.
+
+  * Specify a regular expression for **[!UICONTROL Experience]**. For example: `(?!.*\b(store|help|admin)\b)`.
+
+* Indicate which assets should be included or excluded when collecting data for Content Analytics.
+
+  * Specify a regular expression for **[!UICONTROL Asset]**. For example: `(?!.*\b(store|help|admin)\b)`.
+
+
+#### Existing configuration
+
+For an existing configuration, you cannot edit the Tag property. You can, however, edit the pages and assets to include or exclude.
+
+* To edit which pages should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Experience]**.
+
+* To edit which assets should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Asset]**.
+
+### Summary
+
+Once you have provided all necessary details, you see a **[!UICONTROL You're almost ready to implement _configuration name_ for Content Analytics]** summary. 
+
+For existing implemented configurations, you see a **[!UICONTROL You have implemented _configuration name_ for Content Analytics]** summary.
+
+![Content Analytics Configuration Summary](../assets/aca-configuration-summary.png)
+
+### Actions
+
+When you have created or edited a configuration, the following actions are available.
+
+* **[!UICONTROL Discard]**: All changes made as part of creating a new configuration or editing an existing configuration are discarded.
+* **[!UICONTROL Save for later]**: Changes made to a new configuration or an existing, not yet implemented configuration are saved. You can revisit the configuration at a later stage to make further changes, or implement the configuration.
+* **[!UICONTROL Implement]**: Changes made to a new configuration or existing, not yet implemented configuration are saved and implemented. The implementation consists of:
+  * **[!UICONTROL Adobe Experience Platform]** configuration:
+    1. The creation of schemas to model Content Analytics events, asset attributes, and (if configured) experience attributes.
+    1. The creation of datasets to collect Content Analytics events, asset attributes and (if configured) experience attributes.
+  * **[!UICONTROL Content Analytics]** configuration: 
+    * Setup of a featurization assembler process based on the configuration.
+  * **[!UICONTROL Customer Journey Analytics]** configuration:
+    1. The selected Data view is updated to include Content Analytics dimension and metrics.
+    1. The Connection tied to the selected Data view is modified to include Content Analytics event and attribute datasets.
+    1. Content Analytics reporting templates are added to Workspace.
+  * **[!UICONTROL Data collection]** configuration:
+      1. The new or existing Tag property is configured to support Content Analytics data collection. This configuration implies the inclusion of the Adobe Content Analytics extension for Tags.
+      1. A datastream is created for Content Analytics events.
+      1. The Adobe Content Analytics extension is configured to ensure that Content Analytics events are sent to the datastream for Content Analytics. 
+      1. If the Web SDK is not configured for the Tags property, a new Web SDK configuration is created to send only Content Analytics events.
+      1. If the Web SDK is configured for this Tag property, no changes are made to the existing Web SDK configuration.
+* **[!UICONTROL Save]**: Changes made to an implemented configuration are saved and the implementation is updated.
+
+
