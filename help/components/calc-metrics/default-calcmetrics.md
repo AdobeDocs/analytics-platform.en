@@ -17,14 +17,14 @@ Customer Journey Analytics provides the following calculated metrics templates t
 | **[!UICONTROL Time Spent Per Session]** | The average amount of time a person spent per Session on any given dimension item.<p>This calculated metric is automatically added to Workspace when you include the [!UICONTROL Time Spent (seconds)] [standard component](/help/data-views/component-reference.md) in your [data view](/help/data-views/create-dataview.md). The filter Exclude Last Event of Session is applied to the Sessions metric. The filter excludes the last event of each session in a dataset. This exclusion can help you analyze user behavior leading up to an event or action, such as a purchase or form submission, while excluding the final action itself.</p>Summary: **(** ![Event](/help/assets/icons/Event.svg) **Time Spent (seconds)** ![Divide](/help/assets/icons/Divide.svg) ![Segmentation](/help/assets/icons/Segmentation.svg) **Exclude Last Event of Session(** ![Event](/help/assets/icons/Event.svg) **Sessions ) )** |
 | **[!UICONTROL Session End Rate]** | The percent that any dimension item occurred on the last event of a session. <p>This calculated metric is automatically added to Workspace when you include the [!UICONTROL Session Ends] [standard component](/help/data-views/component-reference.md) in your [data view](/help/data-views/create-dataview.md).</p>Summary: **(** ![Event](/help/assets/icons/Event.svg) **Session Ends** ![Divide](/help/assets/icons/Divide.svg) ![Event](/help/assets/icons/Event.svg) **Sessions** **)** |
 | **[!UICONTROL Web Sessions]** | The number of sessions that occurred on the website. |
-| **[!UICONTROL Survey completion rate]** | The rate at which people who started the survey completed it.  |
-| **[!UICONTROL Multi-channel session rate]** | The ratio of sessions that occurred, which included both web traffic and mobile traffic, compared to those that included only a single channel.  |
+| **[!UICONTROL Survey completion rate]** | The rate at which people completed a survey after starting it.  |
+| **[!UICONTROL Multi-channel session rate]** | The ratio of sessions that occurred that included both web traffic and mobile traffic, compared to those that included only a single channel.  |
 | **[!UICONTROL Multi-channel person rate]** |  |
 | **[!UICONTROL Mobile App Sessions]** | The number of sessions that occurred on the mobile app. |
-| **[!UICONTROL Web+App Cross-Channel Sessions]** | The number of sessions that occured, which included both web traffic and mobile traffic. |
-| **[!UICONTROL Cost of Calls]** | The total cost for all call center calls<p>Summary: Call length</p>  |
-| **[!UICONTROL Avg Call Duration]** | The average duration of calls to the call center.<p>Summary: </p>  |
-| **[!UICONTROL Avg Cost per Call]** | The average cost of calls to the call center.  |
-| **[!UICONTROL Avg Call Survey Score]** |  |
+| **[!UICONTROL Web+App Cross-Channel Sessions]** | The number of sessions that occured that included both web traffic and mobile traffic. |
+| **[!UICONTROL Cost of Calls]** | The total cost for all call center calls.<p>Summary: Call length</p>  |
+| **[!UICONTROL Avg Call Duration]** | The average duration of calls made to the call center.<p>Summary: </p>  |
+| **[!UICONTROL Avg Cost per Call]** | The average cost of calls made to the call center.  |
+| **[!UICONTROL Avg Call Survey Score]** | The average survey score regarding calls made to the call center. |
 
 {style="table-layout:auto"}
