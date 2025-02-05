@@ -241,7 +241,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Guided configuration](/help/content-analytics/config/guided.md)
     + [Manual configuration](/help/content-analytics/config/manual.md)
 
-
 + Analytics dashboards {#cja-dashboards}
   + [Overview](../mobile-app/home.md)
   + [Curator tasks](../mobile-app/curator.md)
@@ -445,4 +444,3 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [View and manage usage](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
-+ [Content Analytics](/help/content-analytics.md)
