@@ -39,12 +39,6 @@ To access the Components panel, select ![Curate](/help/assets/icons/Curate.svg) 
 See [Create a project](/help/analysis-workspace/home.md) for information on how to use components in a project.
 
 
-+++ View a video showing the possibilities of components:
-
->[!VIDEO](https://video.tv.adobe.com/v/23979) 
-
-+++
-
 ## Manage components {#actions}
 
 You can quickly create a new component using the **[!UICONTROL Components]** menu in Analysis Workspace. See the [Analysis Workspace menu](/help/analysis-workspace/home.md#menu) for more details.

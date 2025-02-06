@@ -125,11 +125,13 @@ The connection creation and edit workflow experience brings all the dataset and 
 * You can edit datasets, for example to request another backfill.
 * You can import existing data per dataset.
 
-+++ Video to illustrate the create and edit a connection experience
 
->[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
-+++
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create and edit a connection](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 
 ## Prerequisites
 

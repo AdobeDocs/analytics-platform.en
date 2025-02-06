@@ -92,7 +92,6 @@ When you enable Product usage, the following dimensions are available. If you wa
   * `workspace-projects`
   * `guided-analysis`
   * `mobile-scorecard-builder`
-* **[!UICONTROL User ID]**: The user ID that triggered the event.
 * **[!UICONTROL Visualization Used]**: The visualization that was added, removed, or modified. Dimension items include:
   * [!UICONTROL Freeform table]
   * [!UICONTROL Cohort table]

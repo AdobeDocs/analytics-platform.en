@@ -33,6 +33,13 @@ Each branch of the tree is given a rectangle, which is then tiled with smaller r
 With a treemap, you can see patterns that would be difficult to spot in other ways. Using the color and size of the dimensions you can discover how dimensions are correlated and if a certain dimension is particularly relevant. A second advantage of treemaps is that, by construction, treemaps make efficient use of space.
 
 
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Treemap visualization](https://video.tv.adobe.com/v/334458/?quality=12&learn=on){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
+
 >[!MORELIKETHIS]
 >
 >[Add a visualization to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)

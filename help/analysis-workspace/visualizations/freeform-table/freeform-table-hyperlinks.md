@@ -11,19 +11,19 @@ You can create hyperlinks for dimension items to make them clickable within a fr
 
 This functionality is particularly useful when creating hyperlinks for the following types of dimension items:
 
-* Dimension items that have URL values (for example, a Page URL dimension)
+* Dimension items that have URL values (for example, a Page URL dimension).
 
-* Dimension items that contain breakdowns that have URL values (for example, a Page Name dimension that has a breakdown of a Page URL dimension)
+* Dimension items that contain breakdowns that have URL values (for example, a Page Name dimension that has a breakdown of a Page URL dimension).
 
-* Dimension items or breakdowns that have values that are part of a URL (for example, a Page Name dimension that is part of a URL)
+* Dimension items or breakdowns that have values that are part of a URL (for example, a Page Name dimension that is part of a URL).
 
-+++ View a video demonstration of this functionality.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430411/?learn=on)
+>[!BEGINSHADEBOX]
 
-{{videoaa}}
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create hyperlinks in a freeform table](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target="_blank"} for a demo video.
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Create hyperlinks
 

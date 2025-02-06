@@ -9,11 +9,13 @@ role: User
 
 Calculated metric are custom metrics that you can create from existing metrics. Calculated metrics offer a flexible way of to  build, manage, and curate custom metrics that enable you to analyze your data without having to change your implementation.
 
-+++ See this video for an introduction on how to use calculated metric.
 
->[!VIDEO](https://video.tv.adobe.com/v/31787/?learn=on)
 
-+++
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introduction to calculated metrics](https://video.tv.adobe.com/v/31787/?quality=12&learn=on){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
 
 A typical workflow for calculated metrics consists of these tasks
 

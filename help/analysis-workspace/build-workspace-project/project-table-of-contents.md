@@ -10,11 +10,12 @@ exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
 
 You can view a table of contents for a project in Analysis Workspace, which allows you to move quickly between any panels and visualizations that exist in the project. The table of contents is especially useful when viewing larger projects that contain many panels and visualizations.
 
-+++ View a video demonstration of this functionality.
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/26990/?learn=on)
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create a table of contents](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} for a demo video.
 
-+++
+>[!ENDSHADEBOX]
+
 
 >[!TIP]
 >
