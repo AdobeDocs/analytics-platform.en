@@ -8,7 +8,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
 ---
-# Create a custom schema for the Analytics source connector
+# Create a custom schema for the Analytics source connector {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 

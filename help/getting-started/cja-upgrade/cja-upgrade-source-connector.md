@@ -8,7 +8,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
 ---
-# Create the Analytics source connector and map fields
+# Create the Analytics source connector and map fields {#create-source-connector}
 
 <!-- markdownlint-disable MD034 -->
 

@@ -25,7 +25,11 @@ exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 >
 >After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
 
-Adobe recommends creating an Experience Data Model (XDM) schema when upgrading to Customer Journey Analytics. An XDM schema allows for a streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use. When changes to the schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating.  
+Adobe recommends creating a custom Experience Data Model (XDM) schema to use with the Web SDK when upgrading from Adobe Analytics to Customer Journey Analytics. Alternatively, you could use the default Adobe Analytics schema, which uses the Adobe Analytics ExperienceEvent field group.  
+
+A custom XDM schema allows for a streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use. Unlike the default Adobe Analytics schema that uses the Adobe Analytics ExperienceEvent field group, when changes to a custom XDM schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating.
+
+For more information about these schema options, see [Choose your schema for Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
 Review the following sections as you begin architecting your XDM schema.
 
