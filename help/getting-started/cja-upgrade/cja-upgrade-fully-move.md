@@ -76,13 +76,13 @@ When you no longer need Adobe Analytics for the purposes described in the sectio
 
       +++ Analytics extension (Tags)
 
-      [Disable the Analytics extension in tags](). 
+      Disable the Analytics extension in tags. 
 
       +++
 
       +++ API
 
-      [Disable API data collection](). 
+      Disable API data collection. 
 
       +++
 
@@ -92,13 +92,13 @@ When you no longer need Adobe Analytics for the purposes described in the sectio
 
       +++
 
-1. [Remove Adobe Analytics as a service from the datastream]().
+1. Remove Adobe Analytics as a service from the datastream.
 
    With Web SDK data fully functional, work with your Platform administrator to remove Adobe Analytics as a service from the datastream.
    
    Before removing Adobe Analytics as a service, make sure that your Analytics users are using Customer Journey Analytics and not Adobe Analytics.
 
-1. [Remove the Analytics source connector entirely](). 
+1. Remove the Analytics source connector entirely. 
 
    After you have collected enough historical data in Customer Journey Analytics with your new Web SDK implementation, you can remove the Analytics source connector entirely. 
    
