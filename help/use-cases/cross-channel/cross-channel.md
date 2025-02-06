@@ -6,16 +6,14 @@ solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
 role: User
 ---
-# Cross-channel analysis
+# Cross-channel analysis {#cross-channel}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-additional-datasets"
 >title="Add additional datasets to your connection"
->abstract="Once you have added data to a dataset in Adobe Experience Platform, you can add that dataset to your connection in Customer Journey Analytics. Make sure that when adding data from other channels that they adhere to the schema that your organization uses.
->
->Each dataset that you add requires a tremendous amount of work, particularly around ensuring that the unique identifier exists for every event and ensuring that the overarching data structure conforms to your organization's custom schema. Establishing this workflow can take coordination across many teams within your organization spread across several months."
+>abstract="Once you have added data to a dataset in Adobe Experience Platform, you can add that dataset to your connection in Customer Journey Analytics. Make sure that when adding data from other channels that they adhere to the schema that your organization uses.<br><br>Each dataset that you add requires a tremendous amount of work, particularly around ensuring that the unique identifier exists for every event and ensuring that the overarching data structure conforms to your organization's custom schema. Establishing this workflow can take coordination across many teams within your organization spread across several months."
 
 <!-- markdownlint-enable MD034 -->
 

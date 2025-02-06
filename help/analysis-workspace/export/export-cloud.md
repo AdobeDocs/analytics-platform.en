@@ -6,16 +6,14 @@ feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
 ---
-# Export Customer Journey Analytics reports to the cloud
+# Export Customer Journey Analytics reports to the cloud {#full-table-export}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-full-table-export"
 >title="Create full table exports similar to Data Warehouse"
->abstract="Full table exports are available as soon as you see data in Analysis Workspace. You can create or schedule full table exports as needs permit.
->
->Creating full table exports takes only a few minutes to complete if you already know what data to include in the export."
+>abstract="Full table exports are available as soon as you see data in Analysis Workspace. You can create or schedule full table exports as needs permit.<br><br>Creating full table exports takes only a few minutes to complete if you already know what data to include in the export."
 
 <!-- markdownlint-enable MD034 -->
 
