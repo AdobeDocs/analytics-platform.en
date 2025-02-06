@@ -8,7 +8,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
 ---
-# Create a marketing channel derived field for Customer Journey Analytics {create-marketing-channel-derived-field}
+# Create a marketing channel derived field for Customer Journey Analytics {#create-marketing-channel-derived-field}
 
 <!-- markdownlint-disable MD034 -->
 
