@@ -86,7 +86,7 @@ Each configuration requires a unique name. For example, `Example Content Analyti
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Data view"
->abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your content analytics data with.<br/>[Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views){target=\"_blank\"}" 
+>abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your content analytics data with." 
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
