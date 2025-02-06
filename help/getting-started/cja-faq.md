@@ -128,7 +128,7 @@ No, you can use any ID, including a hash of a customer ID, which is not PII.
 >
 >There is no fixed data size in Customer Journey Analytics and thus Adobe cannot commit to a standard ingestion time. Adobe is actively working to reduce these latencies through new updates and ingestion optimization.
 
-* Live data or events: Processed and ingested within 90 minutes, once data is available in Adobe Experience Platform. (Batch size > 50 million rows: longer than 90 mins.) If stitching is enabled, ingestion may take up to 3.25 hours. See [guardrails](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails) for more details.
+* Live data or events: Processed and ingested within 90 minutes, once data is available in Adobe Experience Platform. (Batch size > 50 million rows: longer than 90 mins.) If stitching is enabled, ingestion may take up to 4 hours. See [guardrails](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails) for more details.
 * Small backfills: within seven days
 * Large backfills: within 30 days
 
