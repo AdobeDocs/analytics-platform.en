@@ -2,8 +2,8 @@
 title: Content Analytics overview
 description: An overview of Content Analytics
 solution: Customer Journey Analytics
-feature: Data Views
-role: Admin
+feature: Content Analytics
+role: Admin, User
 hide: yes
 hidefromtoc: yes
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
