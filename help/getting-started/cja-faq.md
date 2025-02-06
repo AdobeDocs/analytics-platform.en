@@ -116,7 +116,8 @@ No, you can use any ID, including a hash of a customer ID, which is not PII.
 
 +++**What are the limits for ingesting past or future dates/timestamps into Customer Journey Analytics event datasets?**
 
-<ul><li>Regarding past dates/timestamps: Event data up to ten years old.</li><li>Regarding future dates/timestamps: Event data (predictive) up to one month in the future.</li></ul>
+* Regarding past dates/timestamps: Event data up to ten years old.
+* Regarding future dates/timestamps: Event data (predictive) up to one month in the future.
 
 +++
 
@@ -124,13 +125,17 @@ No, you can use any ID, including a hash of a customer ID, which is not PII.
 ## 4. Latency considerations {#latency}
 
 >[!NOTE]
+>
 >There is no fixed data size in Customer Journey Analytics and thus Adobe cannot commit to a standard ingestion time. Adobe is actively working to reduce these latencies through new updates and ingestion optimization.
 
-<ul><li>Live data or events: Processed and ingested within 90 minutes, once data is available in Adobe Experience Platform. (Batch size > 50 million rows: longer than 90 mins.)</li><li>Small backfills: within seven days<li>Large backfills: within 30 days</li></ul>
+* Live data or events: Processed and ingested within 90 minutes, once data is available in Adobe Experience Platform. (Batch size > 50 million rows: longer than 90 mins.) If stitching is enabled, ingestion may take up to 3.25 hours. See [guardrails](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails) for more details.
+* Small backfills: within seven days
+* Large backfills: within 30 days
 
 Adobe recently changed how it processes data in Customer Journey Analytics:
 
-<ul><li>Event data for the 'current' day is streamed in as live data. Any data with an event time prior to 11:59:59 pm(23:59:59) on the previous day is treated as a backfill.</li><li>Any event data with a timestamp more than 24 hours old (even if it's in the same batch as newer data) is considered backfill and is ingested at a lower priority.</li></ul>
+* Event data for the 'current' day is streamed in as live data. Any data with an event time prior to 11:59:59 pm(23:59:59) on the previous day is treated as a backfill.
+* Any event data with a timestamp more than 24 hours old (even if it's in the same batch as newer data) is considered backfill and is ingested at a lower priority.
 
 ## 5. Set rolling window for [!UICONTROL Connection] data retention {#data-retention}
 

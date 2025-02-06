@@ -47,8 +47,6 @@ The ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]** visuali
 <!-- markdownlint-enable MD034 -->
 
 
-
-
 The ![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg) **[!UICONTROL Area stacked]** visualization is like an Area, but each series begins at the top of the previous series.
 
 ![Area stacked showing each series at the top of the previous series.](assets/area-stacked.png)

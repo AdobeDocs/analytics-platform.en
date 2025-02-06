@@ -20,7 +20,13 @@ solution: Customer Journey Analytics
 
 The following information instructs curators of Customer Journey Analytics data on how to configure and present dashboards for executive users. To start with, you can view the Analytics dashboards scorecard builder video:
 
->[!VIDEO](https://video.tv.adobe.com/v/343458)
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Createa mobile scorecard](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 
 >[!NOTE]
 >
@@ -196,7 +202,14 @@ Each dimension added to the tile will show up in a drop-down list in the detaile
 
 Custom detail slides allow you to be even more targeted about what information you share with your audience.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410002)
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Custom detail views](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} for a demo video.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
 
 You can modify the layout for each detail slide and add text to better explain what the end user may see in the data. You can also change the chart type using the drop-down menu.
 
@@ -234,7 +247,15 @@ For example, if you focus on web traffic, your most important metric may be visi
 
 Watch the video to learn more about creating data stories in mobile scorecard projects in Analysis Workspace.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Data stories for a Mobile scorecard project](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} for a demo video.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 **To create a data story** {#data-story-create}
 

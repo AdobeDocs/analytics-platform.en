@@ -81,10 +81,12 @@ Repeat the steps above for the international version of your calculated metric.
    ![Workspace Freeform table visualization showing German vs. International total people](assets/workspace-german-vs-international-totals-percentage.png)
 
 
-+++ Here is a video illustrating how to use a filtered calculated metric as an implementionless metric.
 
->[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Use a filtered calculated metric as an implementationless metric](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+

@@ -8,9 +8,14 @@ solution: Customer Journey Analytics
 ---
 # Executive user quick start guide
 
-The following information provides executive users with information on best practices for using and viewing Analytics dashboards. Here is a video demonstrating this information:
+The following information provides executive users with information on best practices for using and viewing Analytics dashboards.
 
->[!VIDEO](https://video.tv.adobe.com/v/343460/)
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Assist executives to access mobile scorecards](https://video.tv.adobe.com/v/343460/){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
 
 This guide is intended to help executive users read and interpret scorecards on Analytics dashboards. The app allows executive users to view a broad rendering of important summary data quickly and easily on their own mobile devices.
 

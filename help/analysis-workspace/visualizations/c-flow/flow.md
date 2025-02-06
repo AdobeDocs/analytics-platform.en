@@ -35,15 +35,17 @@ With the visualization you can:
 
 * Visualize the customer journey through your website or application.
 * Analyze where customers go before and after specified checkpoints, such as entry, a specific dimension, or exit.
-* Create filters by designating a specific point in a chosen path
+* Create filters by designating a specific point in a chosen path.
 
-+++ View a video demonstration of the Flow visualization.
 
->[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create a flow visualization](https://video.tv.adobe.com/v/346063/?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Inter-dimensional flows
 
