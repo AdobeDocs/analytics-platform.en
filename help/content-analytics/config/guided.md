@@ -113,7 +113,7 @@ To select a Data view:
 A Data view is tied to a Customer Journey Analytics [Connection](/help/connections/overview.md). And a Connection is based on a sandbox within your organization. Once you save the configuration, **[!UICONTROL Sandbox]** is auto populated with the proper name of the sandbox, based on the selected Data view.
 
 
-### Experience capture and definition 
+### Experience capture and definition {#onboarding-experiences} 
 
 <!-- markdownlint-disable MD034 -->
 
@@ -197,12 +197,12 @@ To edit existing or include new Experiences in an implemented configuration:
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
->title="Data collectionn"
+>title="Data collection"
 >abstract="You can edit the settings for pages in the Adobe Content Analytics extension in the Tag property, associated with the selected configuration."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
->title="Data collectionn"
+>title="Data collection"
 >abstract="You can edit the settings for assets in the Adobe Content Analytics extension in the Tag property, associated with the selected configuration."
 
 <!-- markdownlint-enable MD034 -->
