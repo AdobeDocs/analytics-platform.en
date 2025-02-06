@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 ---
 # Evaluate how long you need Adobe Analytics after upgrading to Customer Journey Analytics {#evaluate-aa-needs}
 
@@ -102,5 +103,4 @@ When you no longer need Adobe Analytics for the purposes described in the sectio
 
    After you have collected enough historical data in Customer Journey Analytics with your new Web SDK implementation, you can remove the Analytics source connector entirely. 
    
-   Do this when you no longer need the historical data from your Adobe Analytics environment through the Analytics source connector, and you can rely solely on the historical data you collected with the new Web SDK implementation. 
-
+   Do this when you no longer need the historical data from your Adobe Analytics environment through the Analytics source connector, and you can rely solely on the historical data you collected with the new Web SDK implementation.
