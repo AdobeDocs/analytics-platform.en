@@ -8,7 +8,16 @@ hide: yes
 hidefromtoc: yes
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
 ---
-# Create a custom schema for the Analytics source connector
+# Create a custom schema for the Analytics source connector {#create-custom-schema}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-create-schema"
+>title="Create a schema for the Analytics source connector"
+>abstract="This schema is a combination of the Adobe Analytics ExperienceEvent field group with all field groups that make up your organization's custom schema. It allows you to map the fields used by the Analytics source connector to your organization's schema, and is only used for historical data.<br><br>While technical in nature, creating this schema can be completed in hours, possibly faster if you know exactly which field groups make up your organization's custom schema."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

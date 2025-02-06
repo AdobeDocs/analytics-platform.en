@@ -8,7 +8,16 @@ hide: yes
 hidefromtoc: yes
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 ---
-# Create lookup datasets to classify data in Customer Journey Analytics
+# Create lookup datasets to classify data in Customer Journey Analytics {#upgrade-lookup-dataset}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-lookup-dataset-create"
+>title="Create a lookup dataset for each dimension containing classification data"
+>abstract="Similar to classifications data in Adobe Analytics, lookup datasets are the method for classifying data in Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

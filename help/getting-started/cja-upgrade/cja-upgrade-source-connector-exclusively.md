@@ -8,7 +8,16 @@ hide: yes
 hidefromtoc: yes
 exl-id: 34e5f97b-c936-4de6-acc9-5774bc908655
 ---
-# Use the Analytics source connector exclusively to upgrade to Customer Journey Analytics
+# Use the Analytics source connector exclusively to upgrade to Customer Journey Analytics {#use-source-connector-exclusively}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-exclusively"
+>title="Solely use the Analytics source connector"
+>abstract="(Not recommended) You cannot integrate with other Adobe Experience Platform services or move off of Adobe Analytics with the Analytics source connector. Tying data from other sources likely requires stitching. Meet all of these requirements in the questionnaire to select this option."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

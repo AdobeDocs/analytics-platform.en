@@ -8,7 +8,16 @@ hide: yes
 hidefromtoc: yes
 exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
 ---
-# Add the Web SDK extension to your tag
+# Add the Web SDK extension to your tag {#upgrade-tag-extension}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-extension"
+>title="Add the Platform Web SDK extension to your tag property"
+>abstract="Add the Adobe Experience Platform Web SDK extension to your tag property. Adding the Web SDK extension to your tag property is streamlined, taking only a few minutes to complete."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

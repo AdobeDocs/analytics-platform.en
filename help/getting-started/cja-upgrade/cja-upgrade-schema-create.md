@@ -8,7 +8,34 @@ hide: yes
 hidefromtoc: yes
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 ---
-# Create a custom schema to use with your Customer Journey Analytics Web SDK implementation
+# Create a custom schema to use with your Customer Journey Analytics Web SDK implementation {#create-custom-schema}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-create"
+>title="Create the desired custom schema in Adobe Experience Platform"
+>abstract="Use the Adobe Experience Platform UI to create a schema so that Adobe knows the correct format to store your data.<br><br>This step involves the actual creation of the schema agreed upon by your organization. The estimated time to create your schema in the Adobe Experience Platform interface is approximately one week, depending on the number of dimensions and metrics that need to be created."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-create-default-aa"
+>title="Create a schema using the Adobe Analytics ExperienceEvent field group"
+>abstract="Use the 'Adobe Analytics ExperienceEvent' field group to create a schema in Adobe Experience Platform containing all fields used by Adobe Analytics.<br><br>Creating a schema based on the Adobe Analytics ExperienceEvent field group is simple, taking only a few minutes to complete."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-profile"
+>title="Enable your schema for profile"
+>abstract="Enable profile in your schema for use in Adobe Real-time CDP. This step appears because you selected the desire to integrate with Adobe Real-time CDP.<br><br>Since this step involve clicking a single box, this step only takes a few minutes."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -20,7 +47,13 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 >
 >Before you begin creating your custom schema, work with your data team and other stakeholders throughout your organization to identify your organization's ideal schema design for Customer Journey Analytics and the other Adobe Experience Platform applications you use. For more information, see [Architect your schema for use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
-Adobe recommends creating a custom Experience Data Model (XDM) schema to use with the Web SDK when upgrading to Customer Journey Analytics. A custom schema allows for a streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use. When changes to the schema are required, you don't have to sift through thousands of unused fields to find the field that requires updating. 
+The following sections describes how to create a schema that can be used with Customer Journey Analytics. The following schema options are available:
+
+* **Custom XDM schema:** (Recommended) Allows for a streamlined schema that is tailored to the needs of your organization and the specific Platform applications that you use. Any required future changes are straightforward.
+
+* **Adobe Analytics schema that uses the Adobe Analytics ExperienceEvent field group:** Requires the addition of thousands of unneeded fields. Any required future changes are more difficult. 
+
+For more information about these schema options, see [Choose your schema for Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
 ## Create the schema
 
@@ -74,6 +107,10 @@ To create a custom schema:
       Select **[!UICONTROL Back]** to close the preview.   
 
    1. (Optional) Select any additional field groups that you want to include.   
+
+      If you chose to use the default Adobe Analytics schema rather than creating a custom XDM schema, you can add the Adobe Analytics ExperienceEvent field group now. However, Adobe recommends creating a custom XDM schema rather than adding this field group.
+
+      For more information about these schema options, see [Choose your schema for Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
    1. Select **[!UICONTROL Add field groups]**.
 

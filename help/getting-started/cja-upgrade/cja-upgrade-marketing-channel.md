@@ -8,7 +8,16 @@ hide: yes
 hidefromtoc: yes
 exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
 ---
-# Create a marketing channel derived field for Customer Journey Analytics
+# Create a marketing channel derived field for Customer Journey Analytics {#create-marketing-channel-derived-field}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-marketing-channel"
+>title="Create a marketin channel derived field"
+>abstract="Derived fields are created within a data view.<br><br>Using a default marketing channel setup only takes a few minutes; creating a highly customized marketing channel setup might take several hours."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

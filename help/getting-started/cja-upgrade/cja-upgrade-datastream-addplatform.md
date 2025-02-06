@@ -8,7 +8,16 @@ hide: yes
 hidefromtoc: yes
 exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
 ---
-# Add Platform as a service to your datastream
+# Add Platform as a service to your datastream {#upgrade-addplatform-datastream}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-addplatform-datastream"
+>title="Add Adobe Experience Platform as a service to the datastream"
+>abstract="A datastream needs one or more services to send data to. Set up Adobe Experience Platform as a service in your datastream.<br><br>Adding services to a datastream is a simple process, taking only a few minutes to complete."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
