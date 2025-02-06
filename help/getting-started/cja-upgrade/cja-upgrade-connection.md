@@ -8,7 +8,16 @@ hide: yes
 hidefromtoc: yes
 exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
 ---
-# Create and configure a connection to use with Customer Journey Analytics
+# Create and configure a connection to use with Customer Journey Analytics {#upgrade-create-connection}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-connection"
+>title="Create a connection in Customer Journey Analytics"
+>abstract="A connection allows you to translate data from Adobe Experience Platform into a format optimized for Customer Journey Analytics reporting. Creating a connection in Customer Journey Analytics is straightforward, taking only a few minutes to complete."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

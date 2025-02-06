@@ -8,7 +8,25 @@ hide: yes
 hidefromtoc: yes
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
 ---
-# Choose your schema for Customer Journey Analytics
+# Choose your schema for Customer Journey Analytics {#choose-schema}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-tailored"
+>title="Use a custom schema"
+>abstract="(Recommended) Customizing your schema allows your organization to track only what you need and avoid the overhead tied to messy and unneeded fields. This option includes field groups added by the Web SDK and field groups custom to your organization."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-default"
+>title="Use the default schema"
+>abstract="(Not recommended) The Adobe Analytics schema contains more than a thousand fields, which can lead to cluttered and complex schema. Your organization would be forced to continue adhering to the concept of props and eVars, which is a legacy concept not used in Customer Journey Analytics. Integrating with other Adobe Experience Platform services is more difficult."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 >

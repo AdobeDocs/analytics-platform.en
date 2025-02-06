@@ -8,7 +8,16 @@ hide: yes
 hidefromtoc: yes
 exl-id: 156df830-541d-4c92-9c49-98f346e040a7
 ---
-# Create a tag for your property
+# Create a tag for your property {#upgrade-tag-property}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-property"
+>title="Create a tag property in Adobe Experience Platform Data Collection"
+>abstract="Using Tags is the typical standard for data collection. Create a tag in the Adobe Experience Platform interface so that you can update data collection variables at any time.<br><br>The creation of a tag property can be completed in several clicks, taking only a few minutes."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

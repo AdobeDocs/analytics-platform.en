@@ -8,7 +8,16 @@ hide: yes
 hidefromtoc: yes
 exl-id: f76d098d-d223-40e4-be81-d28e7581396b
 ---
-# Create a datastream to use with Customer Journey Analytics
+# Create a datastream to use with Customer Journey Analytics {#upgrade-create-datastream}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-datastream-create"
+>title="Create a datastream in Adobe Experience Platform"
+>abstract="A datastream is an intermediary location that passes your data along to all configured services. Create this location in Adobe Experience Platform.<br><br>The initial creation of a datastream in the Platform interface takes only a few minutes."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

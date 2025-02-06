@@ -8,7 +8,16 @@ hide: yes
 hidefromtoc: yes
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
 ---
-# Add the Analytics source connector dataset to the connection
+# Add the Analytics source connector dataset to the connection {#upgrade-source-connector-dataset}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-dataset"
+>title="Add the Analytics source connector dataset to your connection"
+>abstract="Now that historical data from your Analytics report suite is in Adobe Experience Platform, add that dataset to your existing connection that you created when initially configuring Customer Journey Analytics. Once this step is complete, historical data in Customer Journey Analytics is available.<br><br>Adding a dataset to a connection in Customer Journey Analytics is straightforward, taking only a few minutes to complete."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

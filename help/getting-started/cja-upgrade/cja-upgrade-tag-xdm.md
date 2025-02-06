@@ -8,7 +8,16 @@ hide: yes
 hidefromtoc: yes
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
 ---
-# Add XDM data collection logic to your tag
+# Add XDM data collection logic to your tag {#upgrade-tag-xdm}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-xdm"
+>title="Add XDM data collection logic to your tag"
+>abstract="With the loader tag installed on your site, you can add rules and data elements to populate an XDM object to send to Adobe. Adobe recommends maintaining a solution design document to track how your tags are configured.<br><br>This step is a lot of work, as it involves setting up all Analytics logic for your property. Expect to dedicate a month or longer to establish the correct tag rules, test them, and deploy them on your site."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

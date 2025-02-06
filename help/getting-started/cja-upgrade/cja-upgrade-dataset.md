@@ -8,7 +8,16 @@ hide: yes
 hidefromtoc: yes
 exl-id: d686dcdd-08d5-4e8f-8f0d-76c8c7b0427f
 ---
-# Create a dataset to use with Customer Journey Analytics
+# Create a dataset to use with Customer Journey Analytics {#upgrade-create-dataset}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-dataset-create"
+>title="Create a dataset in Adobe Experience Platform"
+>abstract="A dataset is a location where collected data resides. Create this location in Adobe Experience Platform.<br><br>Creating a dataset with a schema in mind takes only a few minutes."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
