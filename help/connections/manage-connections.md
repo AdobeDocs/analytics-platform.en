@@ -46,6 +46,8 @@ The following columns or icons are available in the table.
 | [!UICONTROL Date created] | The timestamp when the connection was created. |
 | [!UICONTROL Last modified] | The timestamp when the connection is last updated. |
 | [!UICONTROL Backfill data] | The status for backfill data across datasets.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills across datasets,<p>![Status orange](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of processing backfills across datasets,<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of completed backfills for datasets, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are defined for the datasets in the connection. |
+| [!UICONTROL Integrations] | Shows the Platform applications that are enabled with the connection. |
+| [!UICONTROL Use in CJA] | Shows whether the connection has been enabled for use with Customer Journey Analytics. |
 
 To configure which columns to display select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), which shows the **Customize table** dialog allowing you turn columns on or off in the table.
 
@@ -109,6 +111,30 @@ Alternatively, you can:
 
 See [Create or edit a data view](/help/data-views/create-dataview.md) for more information.
 
+### Use a connection in Customer Journey Analytics
+
+>[!IMPORTANT]
+>Rows of data within the connection that are being leveraged within CJA. If they want to make any changes in the connection or the data view (create something custom or change attribution--something that requires CJA), then you'll get charged. We lock down the connection so they can't do anything, and then
+>
+
+You can unlock Customer Journey Analytics reporting capabilities for your Adobe Journey Optimizer data. This provides in-depth reporting that is not available by default in Journey Optimizer.
+
+To enable this functionality, you must allow the Journey Optimizer connection to be used in Customer Journey Analytics.
+
+To enable a connection to be used in Customer Journey Analytics:
+
+1. When editing a connection, select **[!UICONTROL Use in CJA]**.
+
+   <!-- add screenshot -->
+
+1. Select **[!UICONTROL Continue]** > **[!UICONTROL Confirm]**. <!-- double-check these dialog button names -->
+
+
+
+To make Customer Journey Analytics reporting capabilities available in Adobe Journey Optimizer, you can enable a connection to be used with Customer Journey Analytics. This makes 
+
+, as described in [Analyze in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) in the Journey Optimizer documentation. 
+
 ### Connection details {#connection-detail}
 
 To go to the details for a connection, select a connection name in the connections table.
@@ -162,6 +188,7 @@ When no dataset is selected in the datasets table, a panel on the right side of 
 | ![Refresh](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) [!UICONTROL Refresh] |To refresh the connection and allow recently added records to be reflected, select ![Refresh](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL Refresh]**.  |
 | ![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Delete]** | [Delete](#delete-a-connection) this connection.  |
 | ![Add data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create data view]** | [Create a data view](#create-a-data-view) based on this connection. See [Data views](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) for more information.|
+| **[!UICONTROL Use in CJA]** | Use this connection in Customer Journey Analytics.|
 | [!UICONTROL Connection name] | The friendly name of the connection. |
 | [!UICONTROL Connection description] | A more detailed description that describes the purpose of this connection. |
 | [!UICONTROL Sandbox] | The [Experience Platform sandbox](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) from which this connection draws its dataset/s. This sandbox was selected when you first created the connection. It cannot be changed. |
