@@ -24,9 +24,7 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
 >title="Create a schema using the Adobe Analytics ExperienceEvent field group"
->abstract="Use the 'Adobe Analytics ExperienceEvent' field group to create a schema in Adobe Experience Platform containing all fields used by Adobe Analytics.
->
->Creating a schema based on the Adobe Analytics ExperienceEvent field group is simple, taking only a few minutes to complete."
+>abstract="Use the 'Adobe Analytics ExperienceEvent' field group to create a schema in Adobe Experience Platform containing all fields used by Adobe Analytics.<br><br>Creating a schema based on the Adobe Analytics ExperienceEvent field group is simple, taking only a few minutes to complete."
 
 <!-- markdownlint-enable MD034 -->
 

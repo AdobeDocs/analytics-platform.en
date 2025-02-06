@@ -8,16 +8,14 @@ hide: yes
 hidefromtoc: yes
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
 ---
-# Monitor dataset ingestion when upgrading to Customer Journey Analytics
+# Monitor dataset ingestion when upgrading to Customer Journey Analytics {#monitor-ingestion}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-validate"
 >title="Validate data in the dataset"
->abstract="Now that you have configured your Web SDK implementation, you can use the Dataset activity manager to see ingested and failed batches. If you see primarily ingested batches, this step is complete. If you see primarily failed batches or no batches, check your Web SDK implementation to ensure that it is correctly sending data to Adobe.
->
->If everything was done correctly and flawlessly, this step can be done in less than a day. If there are multiple data collection issues, troubleshooting them can take notably longer."
+>abstract="Now that you have configured your Web SDK implementation, you can use the Dataset activity manager to see ingested and failed batches. If you see primarily ingested batches, this step is complete. If you see primarily failed batches or no batches, check your Web SDK implementation to ensure that it is correctly sending data to Adobe.<br><br>If everything was done correctly and flawlessly, this step can be done in less than a day. If there are multiple data collection issues, troubleshooting them can take notably longer."
 
 <!-- markdownlint-enable MD034 -->
 

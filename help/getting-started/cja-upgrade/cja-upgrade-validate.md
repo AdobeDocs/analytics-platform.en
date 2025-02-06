@@ -15,9 +15,7 @@ exl-id: c0513e4c-51fb-4b4c-8450-8e6bf7dda4e7
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-validate"
 >title="Validate that data is flowing"
->abstract="Use the connection details to validate whether data is flowing into Customer Journey Analytics.
->
->If everything was done correctly and flawlessly, this step can be done in less than a day. If there are multiple data collection issues, troubleshooting them can take notably longer."
+>abstract="Use the connection details to validate whether data is flowing into Customer Journey Analytics.<br><br>If everything was done correctly and flawlessly, this step can be done in less than a day. If there are multiple data collection issues, troubleshooting them can take notably longer."
 
 <!-- markdownlint-enable MD034 -->
 
