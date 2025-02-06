@@ -2,7 +2,7 @@
 title: Content Analytics guided configuration
 description: How to configure Content Analytics using an onboarding guided configuration
 solution: Customer Journey Analytics
-feature: Data Views
+feature: Content Analytics
 role: Admin
 hide: yes
 hidefromtoc: yes
@@ -194,6 +194,16 @@ To edit existing or include new Experiences in an implemented configuration:
 >id="aca_onboarding_datacollection_assets_excluded_header"
 >title="Data collection"
 >abstract="Indicate which assets should be **included** or **excluded** when collecting data for Content Analytics"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_experiences_edit_button"
+>title="Data collectionn"
+>abstract="You can edit the settings for pages in the Adobe Content Analytics extension in the Tag property, associated with the selected configuration."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_assets_edit_button"
+>title="Data collectionn"
+>abstract="You can edit the settings for assets in the Adobe Content Analytics extension in the Tag property, associated with the selected configuration."
 
 <!-- markdownlint-enable MD034 -->
 

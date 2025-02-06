@@ -2,7 +2,7 @@
 title: Configure Content Analytics
 description: An overview of how to configure Content Analytics
 solution: Customer Journey Analytics
-feature: Data Views
+feature: Content Analytics
 role: Admin
 hide: yes
 hidefromtoc: yes
