@@ -111,23 +111,29 @@ Alternatively, you can:
 
 See [Create or edit a data view](/help/data-views/create-dataview.md) for more information.
 
-### Use a connection in Customer Journey Analytics
+### Configure a Journey Optimizer connection to use Customer Journey Analytics reporting / Unlock Customer Journey Analytics reporting in a Journey Optimzer connection
 
 >[!IMPORTANT]
->Rows of data within the connection that are being leveraged within CJA. If they want to make any changes in the connection or the data view (create something custom or change attribution--something that requires CJA), then you'll get charged. We lock down the connection so they can't do anything, and then
+>When you enable a Journey Optimizer connection for use with Customer Journey Analytics as described in this section, you incur Customer Journey Analytics costs for each row of data in the connection. Select the **[!UICONTROL Use in CJA]** option on the connection only if you are comfortable with these additional costs. 
 >
 
-You can unlock Customer Journey Analytics reporting capabilities for your Adobe Journey Optimizer data. This provides in-depth reporting that is not available by default in Journey Optimizer.
+<!-- If they want to make any changes in the connection or the data view (create something custom or change attribution--something that requires CJA), then you'll get charged. We lock down the connection so they can't do anything, and then -->
+
+You can unlock Customer Journey Analytics reporting capabilities for your Adobe Journey Optimizer data. This allows you to perform in-depth analysis using Journey Optimizer data within Customer Journey Analytics. 
 
 To enable this functionality, you must allow the Journey Optimizer connection to be used in Customer Journey Analytics.
 
-To enable a connection to be used in Customer Journey Analytics:
+To enable a Journey Optimizer connection to be used in Customer Journey Analytics:
 
-1. When editing a connection, select **[!UICONTROL Use in CJA]**.
+1. When editing a Journey Optimizer connection, select **[!UICONTROL Use in CJA]**.
+
+   The following **[!UICONTROL Use this connection in Customer Journey Analytics]** dialog displays:
 
    <!-- add screenshot -->
 
-1. Select **[!UICONTROL Continue]** > **[!UICONTROL Confirm]**. <!-- double-check these dialog button names -->
+1. After you understand the costs associated with enabling this connection in Customer Journey Analytics, enable the option, **[!UICONTROL Use this connection in Customer Journey Analytics and incur associated costs]**.
+
+1. Select **[!UICONTROL Use connection]**. <!-- double-check these dialog button names -->
 
 
 
