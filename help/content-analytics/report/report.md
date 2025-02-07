@@ -6,6 +6,7 @@ feature: Content Analytics
 role: User
 hide: yes
 hidefromtoc: yes
+exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 ---
 # Content Analytics reporting overview
 
