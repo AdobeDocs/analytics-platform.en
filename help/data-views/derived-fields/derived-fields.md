@@ -1564,7 +1564,7 @@ Splits a value from a field into a new derived field.
 
 | Input Data Type | Input | Included Operators | Limit | Output |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></ul><ul><li>[!UICONTROL Method]:</li><ul><li>From the left</li><li>From the right</li><li>Convert to array</li></ul></li><li>For Delimiter:<ul><li>String</li></ul><li>For Index:<ul><li>Numeric</li></ul></li> | <p>N/A</p> | <p>5 functions per derived field</p> | <p>New derived field</p> |
+| <ul><li>String</li><li>Numeric</li></ul> | <ul><li>[!UICONTROL Field]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></ul><ul><li>[!UICONTROL Method]:</li><ul><li>From the left</li><li>From the right</li><li>Convert to array</li></ul></li><li>For Delimiter:<ul><li>String</li></ul><li>For Index:<ul><li>Numeric</li></ul></li> | <p>N/A</p> | <p>2 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
@@ -1960,7 +1960,7 @@ The following limitations apply to the Derived field functionality in general:
 | <p>Merge Fields</p> | <ul><li>2 Merge Fields functions per derived field</li></ul> |
 | <p>Next or Previous</p> | <ul><li>3 Next or Previous functions per derived field</li></ul> |
 | <p>Regex Replace</p> | <ul><li>1 Regex Replace function per derived field</li></ul> |
-| <p>Split</p> | <ul><li>5 Split functions per derived field</li></ul> |
+| <p>Split</p> | <ul><li>2 Split functions per derived field</li></ul> |
 | <p>Summarize</p> | <ul><li>3 Summarize functions per derived field</li></ul> |
 | <p>Trim</p> | <ul><li>1 Trim function per derived field</li></ul> |
 | <p>URL Parse</p> | <ul><li>5 URL Parse functions per derived field</li></ul> |
