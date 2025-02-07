@@ -18,3 +18,8 @@ exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 {#release-limited-testing}
 
 *And now for something completely different...*
+
+>[!MORELIKETHIS]
+>
+>[Guided configuration of Content Analytics](guided.md)
+>
