@@ -33,7 +33,7 @@ The lookback window for rekeying depends on your desired frequency of data repla
 
 +++
 
-## Shared devies
+## Shared devices
 
 +++ How are shared devices handled?
 
