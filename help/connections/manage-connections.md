@@ -111,7 +111,7 @@ Alternatively, you can:
 
 See [Create or edit a data view](/help/data-views/create-dataview.md) for more information.
 
-### Configure a Journey Optimizer connection to use Customer Journey Analytics reporting / Unlock Customer Journey Analytics reporting in a Journey Optimzer connection
+### Use a Journey Optimizer connection in Customer Journey Analytics {#use-connection-in-cja}
 
 >[!IMPORTANT]
 >When you enable a Journey Optimizer connection for use with Customer Journey Analytics as described in this section, you incur Customer Journey Analytics costs for each row of data in the connection. Select the **[!UICONTROL Use in CJA]** option on the connection only if you are comfortable with these additional costs. 
@@ -119,11 +119,17 @@ See [Create or edit a data view](/help/data-views/create-dataview.md) for more i
 
 <!-- If they want to make any changes in the connection or the data view (create something custom or change attribution--something that requires CJA), then you'll get charged. We lock down the connection so they can't do anything, and then -->
 
-You can unlock Customer Journey Analytics reporting capabilities for your Adobe Journey Optimizer data. This allows you to perform in-depth analysis using Journey Optimizer data within Customer Journey Analytics. 
+You can use a Journey Optimizer connection in Customer Journey Analytics to bring the following additional value to your connection:
 
-To enable this functionality, you must allow the Journey Optimizer connection to be used in Customer Journey Analytics.
+* Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics
 
-To enable a Journey Optimizer connection to be used in Customer Journey Analytics:
+  For more information, see [Analyze in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) in the Journey Optimizer documentation. 
+
+* Edit the Journey Optimizer connection and associated data views 
+
+  For more information about editing options, see [Edit a connection](#edit-a-connection).
+
+To enable this functionality, you must allow the Journey Optimizer connection to be used in Customer Journey Analytics:
 
 1. When editing a Journey Optimizer connection, select **[!UICONTROL Use in CJA]**.
 
@@ -134,12 +140,6 @@ To enable a Journey Optimizer connection to be used in Customer Journey Analytic
 1. After you understand the costs associated with enabling this connection in Customer Journey Analytics, enable the option, **[!UICONTROL Use this connection in Customer Journey Analytics and incur associated costs]**.
 
 1. Select **[!UICONTROL Use connection]**. <!-- double-check these dialog button names -->
-
-
-
-To make Customer Journey Analytics reporting capabilities available in Adobe Journey Optimizer, you can enable a connection to be used with Customer Journey Analytics. This makes 
-
-, as described in [Analyze in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) in the Journey Optimizer documentation. 
 
 ### Connection details {#connection-detail}
 
@@ -194,7 +194,7 @@ When no dataset is selected in the datasets table, a panel on the right side of 
 | ![Refresh](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) [!UICONTROL Refresh] |To refresh the connection and allow recently added records to be reflected, select ![Refresh](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL Refresh]**.  |
 | ![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Delete]** | [Delete](#delete-a-connection) this connection.  |
 | ![Add data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create data view]** | [Create a data view](#create-a-data-view) based on this connection. See [Data views](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) for more information.|
-| **[!UICONTROL Use in CJA]** | Use this connection in Customer Journey Analytics.|
+| **[!UICONTROL Use in CJA]** | Use a Journey Optimizer connection in Customer Journey Analytics to bring additional value to your Journey Optimizer connection. For more information, see [Use a Journey Optimizer connection in Customer Journey Analytics](#use-a-journey-optimizer-connection-in-customer-journey-analytics).|
 | [!UICONTROL Connection name] | The friendly name of the connection. |
 | [!UICONTROL Connection description] | A more detailed description that describes the purpose of this connection. |
 | [!UICONTROL Sandbox] | The [Experience Platform sandbox](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) from which this connection draws its dataset/s. This sandbox was selected when you first created the connection. It cannot be changed. |
