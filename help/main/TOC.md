@@ -406,6 +406,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Use binding dimensions and metrics](/help/use-cases/data-views/binding-dimensions-metrics.md)
     + [Use summary data](/help/use-cases/data-views/summary-data.md)
     + [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md)
+    + [BI extension use cases (Looker)](/help/use-cases/data-views/bi-extension-usecases-looker.md)
   + Data export {#data-export}
     + [Overview](../use-cases/data-export/overview.md)
     + [BI extension](../use-cases/data-export/bi-extension.md)
