@@ -277,3 +277,9 @@ When you have created or edited a configuration, the following actions are avail
       1. If the Web SDK is not configured for the Tags property, a new Web SDK configuration is created to send only Content Analytics events.
       1. If the Web SDK is configured for this Tag property, no changes are made to the existing Web SDK configuration.
 * **[!UICONTROL Save]**: Changes made to an implemented configuration are saved and the implementation is updated.
+* **[!UICONTROL Exit]**. Exits the guided configuration. All changes made to an implemented configuration are discarded.
+
+>[!MORELIKETHIS]
+>
+>[Manual configuration of Content Analytics](manual.md)
+>

@@ -237,6 +237,8 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Content Analytics {#content-analytics}
   + [Overview](/help/content-analytics/content-analytics.md)
+  + Report {#report}
+    + [Overview](/help/content-analytics/report/report.md)
   + Configuration {#configuration}
     + [Overview](/help/content-analytics/config/configuration.md)
     + [Guided configuration](/help/content-analytics/config/guided.md)
