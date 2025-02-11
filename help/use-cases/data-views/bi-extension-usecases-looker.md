@@ -230,7 +230,7 @@ Tableau Desktop supports the following scenarios for the `FLATTEN` parameter. Se
          1. Name your project in **[!UICONTROL Create a new LookML Project for this model]**. For `example: example_looker_project`.
          1. Select **[!UICONTROL Next]**.
       1. In **[!UICONTROL ➋ Select Tables]**:
-         1. Select **[!UICONTROL public]** and then ensure your Customer Journey Analytics data view is selected. For example: ![Checkmark](/help/assets/icons/Checkmark.svg) **[!UICONTROL cc_data_view]**.
+         1. Select **[!UICONTROL public]** and then ensure your Customer Journey Analytics data view is selected. For example: ![SelectBox](/help/assets/icons/SelectBox.svg) **[!UICONTROL cc_data_view]**.
          1. Select **[!UICONTROL Next]**.
       1. In **[!UICONTROL ➌ Select Primary Keys]**:
          1. Select **[!UICONTROL Next]**.
@@ -238,7 +238,7 @@ Tableau Desktop supports the following scenarios for the `FLATTEN` parameter. Se
          1. Ensure you select your view. For example: **[!UICONTROL cc_data_view.view]**. 
          1. Select **[!UICONTROL Next]**.
       1. In **[!UICONTROL ➎ Enter Model Name]**:
-         1. Name your model. For example: `example_looker_mode`l.
+         1. Name your model. For example: `example_looker_model`.
       1. Select **[!UICONTROL Complete and Explore Data]**.
    
    You are redirected to the **[!UICONTROL Explore]** interface of Looker, ready to explore the data.
@@ -252,8 +252,8 @@ Looker supports the following scenarios for the `FLATTEN` parameter. See [Flatte
 | FLATTEN parameter | Example | Supported | Remarks | 
 |---|---|:---:|---|
 | None | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Recommended option to use!** | 
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Looker displays error: **[!UICONTROL We couldn't authenticate with the credentials provided. Please try again.]** |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Recommended option to use**. Note, `%3FFLATTEN` is URL-encoded version of `?FLATTEN`. |
 
 ### More information
 
