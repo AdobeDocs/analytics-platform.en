@@ -14,6 +14,7 @@ This article documents how to accomplish a number of use cases using the Custome
 
 * **Power BI Desktop**. The version used is 2.137.1102.0 64-bit (October 2024).
 * **Tableau Desktop**. The version used is 2024.1.5 (20241.24.0705.0334) 64-bit.
+* **Looker**. Online version 25.0.23, available through [looker.com](https://looker.com){target="_blank"}
 
 The following use cases are documented:
 
@@ -202,7 +203,7 @@ Tableau Desktop supports the following scenarios for the `FLATTEN` parameter. Se
    1. Select **[!UICONTROL Add Connection]**.
    1. In the **[!UICONTROL Connect your database to Looker screen]**.
 
-      ![Looker Connect to database](assets/looker-connect.png)
+      ![Looker Connect to database](assets/looker-connect.png){zoomable="yes"}
 
       1. Enter a **[!UICONTROL Name]** for your connection, for example `Example Looker Connection`.
       1. Ensure **[!UICONTROL All Projects]** is selected as the **[!UICONTROL Connection Scope]**.
@@ -364,7 +365,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
 1. In the **[!UICONTROL Add Filter]** dialog:
    1. Select **[!UICONTROL ‣ Cc Data View]**
    1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
-      ![Looker filter](assets/uc2-looker-filter.png)
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. From the **[!UICONTROL Cc Data View]** section in the left rail, 
    1. Select **[!UICONTROL ‣ Daterange Date]**, then **[!UICONTROL Date]** from the list of **[!UICONTROL DIMENSIONS]**.
@@ -374,7 +375,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
 
 You should see a visualization and table similar as shown below.
 
-![Looker result daily trend](assets/uc2-looker-result.png)
+![Looker result daily trend](assets/uc2-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -454,7 +455,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 1. In the **[!UICONTROL Add Filter]** dialog:
    1. Select **[!UICONTROL ‣ Cc Data View]**
    1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
-      ![Looker filter](assets/uc2-looker-filter.png)
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/01/02]**.
 1. From the **[!UICONTROL Cc Data View]** section in the left rail, 
    1. Select **[!UICONTROL ‣ Daterangehour Date]**, then **[!UICONTROL Time]** from the list of **[!UICONTROL DIMENSIONS]**.
@@ -464,7 +465,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 
 You should see a visualization and table similar as shown below.
 
-![Looker result daily trend](assets/uc3-looker-result.png)
+![Looker result daily trend](assets/uc3-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -573,7 +574,7 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
 1. In the **[!UICONTROL Add Filter]** dialog:
    1. Select **[!UICONTROL ‣ Cc Data View]**
    1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
-      ![Looker filter](assets/uc2-looker-filter.png)
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
 1. From the left **[!UICONTROL Cc Data View]** rail, 
    1. Select **[!UICONTROL ‣ Daterangemonth Date]**, then **[!UICONTROL Month]** from the list of **[!UICONTROL DIMENSIONS]**.
@@ -583,7 +584,7 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
 
 You should see a visualization and table similar as shown below.
 
-![Looker result daily trend](assets/uc4-looker-result.png)
+![Looker result daily trend](assets/uc4-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -725,7 +726,7 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 1. In the **[!UICONTROL Add Filter]** dialog:
    1. Select **[!UICONTROL ‣ Cc Data View]**
    1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
-      ![Looker filter](assets/uc2-looker-filter.png)
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
 1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail, select **[!UICONTROL Product Name]**.
 1. From the **[!UICONTROL ‣ Custom Fields]** section in the left rail:
@@ -736,7 +737,7 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
       1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Purchase Revenue`.
       1. Select the **[!UICONTROL Field details]** tab.
       1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** dropdown menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
-         ![Looker custom metric field](assets/uc5-looker-customfield.png)
+         ![Looker custom metric field](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. Select **[!UICONTROL Save]**.
    1. Select **[!UICONTROL Custom Measure]** once more from the **[!UICONTROL + Add]** dropdown menu. In the **[!UICONTROL Create custom]** measure dialog:
       1. Select **[!UICONTROL Purchases]** from the **[!UICONTROL Field to measure]** dropdown menu.
@@ -756,12 +757,12 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
    1. Scroll down to see **[!UICONTROL Purchases]** and change the **[!UICONTROL Type]** to **[!UICONTROL Line]**.
    1. Select the **[!UICONTROL Y]** tab.
    1. Drag **[!UICONTROL Purchases]** from the **[!UICONTROL Left 1 ]** container to where it reads **[!UICONTROL *Drag series here to create a new left axis*]**. This action creates a **[!UICONTROL Left 2]** container.
-      ![Looker visualization configuration](assets/uc5-looker-visualization.png)
+      ![Looker visualization configuration](assets/uc5-looker-visualization.png){zoomable="yes"}
    1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) next to **[!UICONTROL Edit]** to hide the popup dialog
 
 You should see a visualization and table similar as shown below.
 
-![Looker result daily trend](assets/uc5-looker-result.png)
+![Looker result daily trend](assets/uc5-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -930,7 +931,7 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 1. In the **[!UICONTROL Add Filter]** dialog:
    1. Select **[!UICONTROL ‣ Cc Data View]**
    1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
-      ![Looker filter](assets/uc2-looker-filter.png)
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
 1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail: 
    1. Select **[!UICONTROL Product Category]**.
@@ -943,7 +944,7 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
       1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Sum of Purchase Revenue`.
       1. Select the **[!UICONTROL Field details]** tab.
       1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** dropdown menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
-         ![Looker custom metric field](assets/uc5-looker-customfield.png)
+         ![Looker custom metric field](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. Select **[!UICONTROL Save]**.
    1. Select **[!UICONTROL Custom Measure]** once more from the **[!UICONTROL + Add]** dropdown menu. In the **[!UICONTROL Create custom]** measure dialog:
       1. Select **[!UICONTROL Purchases]** from the **[!UICONTROL Field to measure]** dropdown menu.
@@ -962,14 +963,14 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
    1. Scroll down and select **[!UICONTROL Edit Chart Config]**.
    1. Modify the JSON in **[!UICONTROL Chart Config (Override)]** like in the screenshot below, and then select **[!UICONTROL Preview]**.
       
-      ![Looker vsualization config](assets/uc6-looker-visualization.png)
+      ![Looker vsualization config](assets/uc6-looker-visualization.png){zoomable="yes"}
 
    1. Select **[!UICONTROL Apply]**.
    1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) next to **[!UICONTROL Edit]** to hide the popup dialog
 
 You should see a visualization and table similar as shown below.
 
-![Looker result daily trend](assets/uc6-looker-result.png)
+![Looker result daily trend](assets/uc6-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1091,18 +1092,18 @@ Alternatively, you can use the count distinct functionality from Tableau Desktop
 1. In the **[!UICONTROL Add Filter]** dialog:
    1. Select **[!UICONTROL ‣ Cc Data View]**
    1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
-      ![Looker filter](assets/uc2-looker-filter.png)
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail: 
    1. Select **[!UICONTROL Daterange Date]**, then **[!UICONTROL Date]**.
    1. Select **[!UICONTROL Aggregate ‣ Count Distinct]** from the **⋮ More** context menu on **[!UICONTROL Product Name]**.
-      ![Looker Product Name Context menu](assets/uc7-looker-count-distinct.png)
+      ![Looker Product Name Context menu](assets/uc7-looker-count-distinct.png){zoomable="yes"}
 1. Select **[!UICONTROL Run]**.
 1. Select **[!UICONTROL ‣ Visualization]** and select 6︎⃣ from the toolbar to display a Single value visualization.
 
 You should see a visualization and table similar as shown below.
 
-![Looker count distinct](assets/uc7-looker-result.png)
+![Looker count distinct](assets/uc7-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1187,7 +1188,7 @@ Note how the date range defined in the Freeform table visualization overrules th
 
 You should see a visualization and table similar as shown below.
 
-![Looker count distinct](assets/uc8-looker-result.png)
+![Looker count distinct](assets/uc8-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1270,7 +1271,7 @@ You then can use that filter in an example **[!UICONTROL Using Date Range Names 
 1. In the **[!UICONTROL Add Filter]** dialog:
    1. Select **[!UICONTROL ‣ Cc Data View]**
    1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
-      ![Looker filter](assets/uc2-looker-filter.png)
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]** to add another filter.
 1. In the **[!UICONTROL Add Filter]** dialog:
@@ -1286,7 +1287,7 @@ You then can use that filter in an example **[!UICONTROL Using Date Range Names 
 
 You should see a visualization and table similar as shown below.
 
-![Looker count distinct](assets/uc9-looker-result.png)
+![Looker count distinct](assets/uc9-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1372,7 +1373,7 @@ You then can use that filter in an example **[!UICONTROL Using Dimension Values 
 1. In the **[!UICONTROL Add Filter]** dialog:
    1. Select **[!UICONTROL ‣ Cc Data View]**
    1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
-      ![Looker filter](assets/uc2-looker-filter.png)
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]** to add another filter.
 1. In the **[!UICONTROL Add Filter]** dialog:
@@ -1387,7 +1388,7 @@ You then can use that filter in an example **[!UICONTROL Using Dimension Values 
 
 You should see a similar table as shown below.
 
-![Looker count distinct](assets/uc10-looker-result.png)
+![Looker count distinct](assets/uc10-looker-result.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1565,7 +1566,7 @@ GROUP BY 1
 1. In the **[!UICONTROL Add Filter]** dialog:
    1. Select **[!UICONTROL ‣ Cc Data View]**
    1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
-      ![Looker filter](assets/uc2-looker-filter.png)
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail, select **[!UICONTROL Product Name]**.
 1. From the **[!UICONTROL ‣ Custom Fields]** section in the left rail:
@@ -1576,7 +1577,7 @@ GROUP BY 1
       1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Sum of Purchase Revenue`.
       1. Select the **[!UICONTROL Field details]** tab.
       1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** dropdown menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
-         ![Looker custom metric field](assets/uc5-looker-customfield.png)
+         ![Looker custom metric field](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. Select **[!UICONTROL Save]**.
 1. Ensure you select **[!UICONTROL ↓]** (**[!UICONTROL Descending, Sort Order: 1]**) on the **[!UICONTROL Purchase Revenue]** column.
 1. Select **[!UICONTROL Run]**.
@@ -1584,7 +1585,7 @@ GROUP BY 1
 
 You should see a visualization and table similar as shown below.
 
-![Looker count distinct](assets/uc11-looker-result.png)
+![Looker count distinct](assets/uc11-looker-result.png){zoomable="yes"}
 
 
 The query generated by Looker using the BI extension is including `ORDER BY`, which implies that the sort is executed through Looker and the BI extension.
@@ -1803,7 +1804,7 @@ GROUP BY 1
 1. In the **[!UICONTROL Add Filter]** dialog:
    1. Select **[!UICONTROL ‣ Cc Data View]**
    1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
-      ![Looker filter](assets/uc2-looker-filter.png)
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
 1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
 1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail: 
    1. Select **[!UICONTROL Product Name]**.
@@ -1815,7 +1816,7 @@ GROUP BY 1
 
 You should see a visualization and table similar as shown below.
 
-![Looker count distinct](assets/uc12-looker-result.png)
+![Looker count distinct](assets/uc12-looker-result.png){zoomable="yes"}
 
 The query generated by Looker using the BI extension is including `FETCH NEXT 5 ROWS ONLY`, which implies that the limit is executed through Looker and the BI extension.
 
@@ -2008,13 +2009,13 @@ Looker provides custom transformation functionality using custom field builders,
 1. From the **[!UICONTROL ‣ Custom Fields]** section in the left rail:
    1. Select **[!UICONTROL Custom Dimension]** from the **[!UICONTROL + Add]** dropdown menu. 
    1. Enter `lower(${cc_data_view.product_name})` in the **[!UICONTROL Expression]** text area. You are assisted with the correct syntax when you start to type `Product Name`.
-      ![Looker transformation example](assets/uc14-looker-transformation.png)
+      ![Looker transformation example](assets/uc14-looker-transformation.png){zoomable="yes"}
    1. Enter `product name` as the **[!UICONTROL Name]**.
    1. Select **[!UICONTROL Save]**.
 
 You should see a similar table as shown below.
 
-![Looker transformation result](assets/uc14-looker-result.png)
+![Looker transformation result](assets/uc14-looker-result.png){zoomable="yes"}
 
 
 The custom transformation result in an updates to SQL queries. See the use of the `LOWER` function in the SQL example below:
