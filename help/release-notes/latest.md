@@ -14,7 +14,7 @@ These release notes cover the release period of January 24, 2025 to March 18, 20
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **BI Extension - Looker support** | The Customer Journey Analytics BI extension now supports [Looker](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases). [Looker](https://cloud.google.com/looker?hl=en) is a business intelligence platform that provides a data exploration and dashboarding interface for users, an IDE for data modelers, and rich embedding and API features for developers. |   |   |
+| **BI Extension - Looker support** | The Customer Journey Analytics BI extension now [supports Looker](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases). [Looker](https://cloud.google.com/looker?hl=en) is a business intelligence platform that provides a data exploration and dashboarding interface for users, an IDE for data modelers, and rich embedding and API features for developers. |   |  January 24, 2025 |
 
 ## Fixes in Customer Journey Analytics
 
