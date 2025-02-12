@@ -27,6 +27,24 @@ hidefromtoc: yes
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-integrate-rtcdp"
+>title="Integrate with Real-time CDP"
+>abstract="Combine profile data from multiple sources to generate audiences and segments based on user traits."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-integrate-ajo"
+>title="Integrate with Journey Optimizer"
+>abstract="Deliver connected, contextual, and personalized experiences to customers."
+
+<!-- markdownlint-enable MD034 -->
+
 >[!NOTE]
 > 
 >Use the information on this page when answering questions in the [Customer Journey Analytics upgrade checklist](https://gigazelle.github.io/cja-ttv/). 
