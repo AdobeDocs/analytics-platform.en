@@ -21,11 +21,11 @@ This is a placeholder article for upcoming Content Analytics documentation. Curr
 
 {#release-limited-testing}
 
-Content Analytics helps marketers to understand how content impacts the key performance indicators that a business has defined. On top of the traditional micro-level based functionalities to test pieces of content (for example, A/B tests), Content Analytics provides insights how content is driving impact at a macro level. For example, do customers respond better to a specific tone of voice, a specific color pallet, or specific themes?
+Content Analytics helps marketers to understand how content impacts the key performance indicators that a business has defined. On top of the behavioral data, Content Analytics collects data how content is consumed and how content drives impact. For example, do customers respond better to a specific tone of voice, a specific color pallet, or specific themes? This information, together with specifically designed reporting workflows and templates, can help you to perform even better analysis and gain deeper insights on customer journey data in Customer Journey Analytics. 
 
 Content Analytics uses an AI and machine learning based **featurization service** to break content down into components and attributes. By creating a structured metadata profile on all your content, you can analyze what content and what attributes of that content drives business results. 
 
-In addition to the creation of this structured metadata profile, Content Analytics provides an **identity service** that identifies assets and experiences using a single identifier. The identity service understands whether an asset, for example, has been resized, cropped, or saved to a different file format. The service assigns all variations of that asset to the same single identifier. As a result, the identity service allows you to aggregate the performance of an asset based on its various forms and placements.
+In addition to the creation of this structured metadata profile, Content Analytics provides an **identity service** that identifies assets and experiences using a single identifier. The identity service can recognize when the exact same asset appears in more than one place. When that happens the two instances of assets will be treated as the same, allowing for a more holistic view of content usage and consumption.
 
 ## Value
 
@@ -53,9 +53,7 @@ Content Analytics uses web image view data collected in event datasets in Experi
 ![Content Analytics - How it works](assets/how-it-works.png)
 
 
-1. The detection part of the featurization service is triggered upon any new snapshot of data arriving at a Content Analytics enabled event dataset. 
-1. The featurization detection service determines which data in that snapshot is relevant for content analytics and revisits the experience and assets of these web image views. 
-1. Upon the revisit, specific content analytics data is collected through a proper configuration of the Experience Platform Web SDK and Experience Platform Edge Network. And then the data is sent to a dedicated content analytics dataset and relevant lookup datasets. 
+1. When a user visits a site, the Experience Plarform Web SDK, configured for Content Analytics, records interactions with content.
 1. The featurization assembler service and identity service process the revisited data. 
 1. The results of these services (components, attributes, and identities) are used to update the relevant specific content analytics datasets in Experience Platform.
 1. The content analytics data, together with behavioral data and other lookup datasets, can then be used in a Customer Journey Analytics configuration (Connection, Data view and Workspace). That configuration provides the foundation to the unique macro-level insights on your content.

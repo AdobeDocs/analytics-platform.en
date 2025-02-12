@@ -216,7 +216,7 @@ Tableau Desktop supports the following scenarios for the `FLATTEN` parameter. Se
       1. Select **[!UICONTROL Expand all]** at **[!UICONTROL Optional Settings]**.
       1. Set **[!UICONTROL Max connections]** per node to `5`.
       1. Ensure **[!UICONTROL SSL]** is enabled.
-      1. Select **[!UICONTROL Test]** to test the connection. You should see a banner appear at the top of the screen with a message like **[!UICONTROL Success, can connect JDBC string: jdbc:postgresql://examplecompany.platform-query-stage.adobe.io:80/prod:cja?FLATTEN?tcpKeepAlive=true&ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory&sslmode=prefer]**.
+      1. Select **[!UICONTROL Test]** to test the connection. You should see a banner appear at the top of the screen with a message like **[!UICONTROL Success, can connect JDBC ....]**.
       1. Select **[!UICONTROL Connect]** to establish and save the connection.
    1. You see the new connection in the **[!UICONTROL Connections]** interface.
    1. Select **←** from **[!UICONTROL Admin]** to go to main navigation in the left rail.
