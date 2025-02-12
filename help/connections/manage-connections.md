@@ -46,7 +46,7 @@ The following columns or icons are available in the table.
 | [!UICONTROL Date created] | The timestamp when the connection was created. |
 | [!UICONTROL Last modified] | The timestamp when the connection is last updated. |
 | [!UICONTROL Backfill data] | The status for backfill data across datasets.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills across datasets,<p>![Status orange](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of processing backfills across datasets,<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of completed backfills for datasets, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are defined for the datasets in the connection. |
-| [!UICONTROL Integrations] | Shows the Platform applications that are enabled with the connection. |
+| [!UICONTROL Integrations] | Shows the Platform applications that are enabled with the connection.  |
 | [!UICONTROL Use in CJA] | Shows whether the connection has been enabled for use with Customer Journey Analytics. |
 
 To configure which columns to display select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), which shows the **Customize table** dialog allowing you turn columns on or off in the table.
@@ -135,9 +135,7 @@ To enable this functionality, you must allow the Journey Optimizer connection to
 
    <!-- add screenshot -->
 
-1. After you understand the costs associated with enabling this connection in Customer Journey Analytics, enable the option, **[!UICONTROL Use this connection in Customer Journey Analytics and incur associated costs]**.
-
-1. Select **[!UICONTROL Use connection]**. <!-- double-check these dialog button names -->
+1. After you understand the costs associated with enabling this connection in Customer Journey Analytics, select **[!UICONTROL Use connection]**. <!-- double-check these dialog button names -->
 
 #### Remove the connection from Customer Journey Analytics
 
