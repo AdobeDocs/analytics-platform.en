@@ -250,7 +250,7 @@ For an existing configuration, you cannot edit the Tag property. You can, howeve
 
 * To edit which assets should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Asset]**.
 
-### Summary
+### Summary {#summary}
 
 Once you have provided all necessary details, a summary provides details on the artefacts that are created or modified.
 
@@ -260,7 +260,7 @@ Once you have provided all necessary details, a summary provides details on the 
 
 ![Content Analytics Configuration Summary](../assets/aca-configuration-summary.png)
 
-### Actions
+### Actions {#actions}
 
 <!-- markdownlint-disable MD034 -->
 
