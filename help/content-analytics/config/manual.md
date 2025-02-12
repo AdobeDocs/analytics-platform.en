@@ -15,7 +15,7 @@ exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 >This article is a preliminary unofficial draft version of a forthcoming final version and is part of the Content Analytics documentation. All content is subject to change and no legal obligations whatsoever can be derived from the current version of this article.  
 >
 
-{#release-limited-testing}
+{{release-limited-testing}}
 
 *And now for something completely different...*
 

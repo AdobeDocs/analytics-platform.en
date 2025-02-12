@@ -15,7 +15,8 @@ exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 >This article is a preliminary unofficial draft version of a forthcoming final version and is part of the Content Analytics documentation. All content is subject to change and no legal obligations whatsoever can be derived from the current version of this article.  
 >
 
-{#release-limited-testing}
+{{release-limited-testing}}
+
 
 To configure Content Analytics for your organization, you can either:
 
