@@ -29,7 +29,24 @@ The [!UICONTROL List] interface is the default interface for Connections. If not
 
 ![list view](assets/list-view.png)
 
-The [!UICONTROL List] interface shows a table of all connections available. You can quickly search for a connection using the Search ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
+The [!UICONTROL List] interface shows a table of all connections available. 
+
+### Search for a connection
+
+You can quickly search for a connection using the Search ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
+
+### Apply a filter to the list of connections
+
+To apply a filter to the list of connections, select the filter icon, then select from the following filter options:
+
+| Filter option | Description | 
+|---------|----------|
+| **[!UICONTROL Datasets]** | Only connections that are associated with the datasets you select are displayed. |
+| **[!UICONTROL Owner]** | Only connections owned by the people you select are displayed. |
+| **[!UICONTROL Sandbox]** | Only connections available in the sandboxes you select are displayed. |
+| **[!UICONTROL Use in CJA]** | Select **[!UICONTROL On]** to show only connections that are enabled for use with Customer Journey Analytics. Select **[!UICONTROL Off]** to show only connections that are not yet enabled for use with Customer Journey Analytics. |
+
+### Available columns
 
 The following columns or icons are available in the table.
 
@@ -46,7 +63,7 @@ The following columns or icons are available in the table.
 | [!UICONTROL Date created] | The timestamp when the connection was created. |
 | [!UICONTROL Last modified] | The timestamp when the connection is last updated. |
 | [!UICONTROL Backfill data] | The status for backfill data across datasets.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills across datasets,<p>![Status orange](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of processing backfills across datasets,<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of completed backfills for datasets, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are defined for the datasets in the connection. |
-| [!UICONTROL Integrations] | Shows the Platform applications that are enabled with the connection.  |
+| [!UICONTROL Integrations] | Shows any Experience Platform applications that are enabled with the connection.  |
 | [!UICONTROL Use in CJA] | Shows whether the connection has been enabled for use with Customer Journey Analytics. |
 
 To configure which columns to display select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), which shows the **Customize table** dialog allowing you turn columns on or off in the table.
@@ -119,17 +136,27 @@ See [Create or edit a data view](/help/data-views/create-dataview.md) for more i
 
 You can use a Journey Optimizer connection in Customer Journey Analytics to bring the following additional value to your connection:
 
-* Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics
+* Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics.
 
   For more information, see [Analyze in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) in the Journey Optimizer documentation. 
 
-* Edit the Journey Optimizer connection and associated data views 
+* Edit the Journey Optimizer connection and associated data views.
 
   For more information about editing options, see [Edit a connection](#edit-a-connection).
 
 To enable this functionality, you must allow the Journey Optimizer connection to be used in Customer Journey Analytics:
 
-1. When editing a Journey Optimizer connection, select **[!UICONTROL Use in CJA]**.
+1. Locate the Journey Optimizer connection that you want to use with Customer Journey Analytics. 
+
+   1. Select the Filter icon on the **[!UICONTROL Connections]** tab.
+
+   1. In the **[!UICONTROL Use in CJA]** section, select **[!UICONTROL Off]**.
+
+      This displays all connections that are not currently configured for use in Customer Journey Analytics.
+
+   1. Select the Journey Optimizer connection that you want to use in Customer Journey Analytics. 
+
+1. In the Journey Optimizer connection, select **[!UICONTROL Use in CJA]**.
 
    The following **[!UICONTROL Use this connection in Customer Journey Analytics]** dialog displays:
 
