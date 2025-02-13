@@ -136,7 +136,7 @@ See [Create or edit a data view](/help/data-views/create-dataview.md) for more i
 
 You can use a Journey Optimizer connection in Customer Journey Analytics to bring the following additional value to your connection:
 
-* Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics.
+* Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics (by using the **[!UICONTROL Analyze in CJA]** option within Journey Optimizer).
 
   For more information, see [Analyze in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) in the Journey Optimizer documentation. 
 
@@ -144,7 +144,9 @@ You can use a Journey Optimizer connection in Customer Journey Analytics to brin
 
   For more information about editing options, see [Edit a connection](#edit-a-connection).
 
-To enable this functionality, you must allow the Journey Optimizer connection to be used in Customer Journey Analytics:
+To enable this functionality, your organization needs access to Customer Journey Analytics. If you don't have access, contact your Adobe sales representative. 
+
+After you have access to Customer Journey Analytics, you must allow the Journey Optimizer connection to be used in Customer Journey Analytics:
 
 1. Locate the Journey Optimizer connection that you want to use with Customer Journey Analytics. 
 
@@ -162,7 +164,9 @@ To enable this functionality, you must allow the Journey Optimizer connection to
 
    <!-- add screenshot -->
 
-1. After you understand the costs associated with enabling this connection in Customer Journey Analytics, select **[!UICONTROL Use connection]**. <!-- double-check these dialog button names -->
+1. After you understand the costs associated with enabling this connection in Customer Journey Analytics, enable the toggle, **[!UICONTROL Use connection in CJA]**.
+
+1. Select **[!UICONTROL Use connection]**. <!-- double-check these dialog button names -->
 
 #### Remove the connection from Customer Journey Analytics
 
@@ -181,6 +185,8 @@ To remove the connection from Customer Journey Analytics:
    The following **[!UICONTROL Remove this connection from Customer Journey Analytics]** dialog displays:
 
    <!-- add screenshot -->
+
+1. Disable the option, **[!UICONTROL Remove connection from CJA]**.
 
 1. Select **[!UICONTROL Remove connection]**.
 
