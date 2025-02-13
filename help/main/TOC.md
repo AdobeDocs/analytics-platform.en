@@ -67,6 +67,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Disable AppMeasurement data collection](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
     + [Upgrade from a third-party analytics solution](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
     + [Adobe Analytics feature support when upgrading](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
+    + [Adobe Analytics during and after an upgrade](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -233,6 +234,15 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Limitations](../analysis-workspace/workspace-faq/aw-limitations.md)
     + [Administration requirements](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility](../analysis-workspace/workspace-faq/aw-accessibility.md)
+
++ Content Analytics {#content-analytics}
+  + [Overview](/help/content-analytics/content-analytics.md)
+  + Report {#report}
+    + [Overview](/help/content-analytics/report/report.md)
+  + Configuration {#configuration}
+    + [Overview](/help/content-analytics/config/configuration.md)
+    + [Guided configuration](/help/content-analytics/config/guided.md)
+    + [Manual configuration](/help/content-analytics/config/manual.md)
 
 + Analytics dashboards {#cja-dashboards}
   + [Overview](../mobile-app/home.md)
@@ -437,4 +447,3 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [View and manage usage](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
-+ [Content Analytics](/help/content-analytics.md)

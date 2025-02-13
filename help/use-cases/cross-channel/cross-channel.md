@@ -6,7 +6,16 @@ solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
 role: User
 ---
-# Cross-channel analysis
+# Cross-channel analysis {#cross-channel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-additional-datasets"
+>title="Add additional datasets to your connection"
+>abstract="Once you have added data to a dataset in Adobe Experience Platform, you can add that dataset to your connection in Customer Journey Analytics. Make sure that when adding data from other channels that they adhere to the schema that your organization uses.<br><br>Each dataset that you add requires a tremendous amount of work, particularly around ensuring that the unique identifier exists for every event and ensuring that the overarching data structure conforms to your organization's custom schema. Establishing this workflow can take coordination across many teams within your organization spread across several months."
+
+<!-- markdownlint-enable MD034 -->
 
 Cross-channel analysis enables a single consolidated view of customer behavior across various channels by unifying data from various web, mobile, and offline properties. For example, you can use this consolidated view to analyze customer interactions across desktop and mobile to understand customer behavior and extract insights to optimize digital customer experiences. You can also analyze customer interactions across channels, including digital and offline channels such as support interactions and in-store purchases to better understand and optimize the customer journey.
 
