@@ -25,18 +25,18 @@ Using the AI Assistant to answer data-centric questions in Analysis Workspace ca
 | **Build and update visualizations** | Generates a freeform table and associated visualization (such as a line, bar, donut, and so forth).<p>Example: *What is the profit across SKUs from February to May?* |
 | **Supported visualization types** | <ul><li>Line</li><li>Multi-line</li><li>Freeform table</li><li>Bar</li><li>Donut</li><li>Summary number</li></ul> |
 | **Out-of-scope prompt detection** | If you submit a prompt that is out of scope, such as "export this project," the Assistant responds by letting you know that the question is out of scope. | 
-| **Clarifying questions** | If you ask a question that does not have enough context for the AI Assistant to answer, or is too generic, the AI Assistant responds with a clarifying question or suggested options. Examples: <p>**Components**<ul><li>Metric: *Which "revenue" metric did you mean?*</li><li>Dimension: *Which of the below "regions" do you want to focus on?*</li><li>Filter: *Which "Account" filter did you want to apply?*</li><li>Date Range: *By "last month", did you mean the last full month or the last 30 days?*</li></ul>**Dimension items**: Which "store name" did you mean? (for example, Store #5274, Store #2949, etc.) |
+| **Clarifying questions** | If you ask a question that does not have enough context for the AI Assistant to answer, or is too generic, the AI Assistant responds with a clarifying question or suggested options. Examples: <p>**Components**<ul><li>Metric: *Which "revenue" metric did you mean?*</li><li>Dimension: *Which of the below "regions" do you want to focus on?*</li><li>Filter: *Which "Account" filter did you want to apply?*</li><li>Date Range: *By "last month," did you mean the last full month or the last 30 days?*</li></ul>**Dimension items**: Which "store name" did you mean? (For example, Store #5274, Store #2949, and so forth.) |
 | **Multi-turn** | The AI Assistant responds to a prompt with the context from any prior prompts, allowing users to update visualizations and ask follow-up questions. Example: <ul><li>Prompt 1: *Trend events from March.*</li><li>Prompt 2: *Show me the data from March to April instead*</li></ul> |
-| **Verifiability** | Data verifiability and correctness can be confirmed via the generated freeform table and data visualization. For example, if a user asks *Trend orders last month*, you can confirm that correct metric ("orders") and date range ("last month") were selected in the newly generated panel, data visualization, and freeform table. |
+| **Verifiability** | Data verifiability and correctness can be confirmed via the generated freeform table and data visualization. For example, if a user asks *Trend orders last month*, you can confirm that the correct metric ("orders") and date range ("last month") were selected in the newly generated panel, data visualization, and freeform table. |
 | **Feedback** |<ul><li>Thumbs up</li><li>Thumbs down</li><li>Flag</li></ul> |
 
 ### Out-of-scope Alpha features 
 
 | Unsupported feature | Description |
 | --- | --- |
-| **In-line summary or or response** | The AI Assistant cannot respond in-line in the chat rail with a summary answer of a user prompt. Example out-of-scope prompts:<ul><li>*Give me a summary of the insights from my last prompt.*</li><li>*Summarize the highlights from the line visualization.*</li></ul> |
-| **Clarifying questions** | Clarifying questions are limited to components and dimension items. The AI Assistant cannot clarify things such as data views, visualizations, data granularity, comparison, and scope. When clarifying questions cannot be used, the Assistant defaults to what you are most likely asking for. If it returns an unexpected visualization or data granularity, you can then use the multi-turn/update capability to adjust the visualization and data. |
-| **Workspace actions / Capabilities**| The AI Assistant cannot take actions for a user in Workspace aside from building and updating visualizations. For example, it cannot do any the following:<ul><li>Contextual action UI buttons (add to chart, new panel, new table)</li><li>Share</li><li>Export</li><li>Download</li><li>Manage user preferences</li><li>Curate</li><li>Manage data view</li><li>Analytics Dashboards app</li><li>Attribution</li></ul> |
+| **In-line summary or response** | The AI Assistant cannot respond in-line in the chat rail with a summary answer of a user prompt. Example out-of-scope prompts:<ul><li>*Give me a summary of the insights from my last prompt.*</li><li>*Summarize the highlights from the line visualization.*</li></ul> |
+| **Clarifying questions** | Clarifying questions are limited to components and dimension items. The AI Assistant cannot clarify things such as data views, visualizations, data granularity, comparison, and scope. When clarifying questions cannot be used, the Assistant defaults to what you are most likely asking for. If it returns an unexpected visualization or data granularity, you can then use the multi-turn / update capability to adjust the visualization and data. |
+| **Workspace actions / Capabilities**| The AI Assistant cannot take actions for a user in Workspace aside from building and updating visualizations. For example, it cannot do any of the following:<ul><li>Contextual action UI buttons (add to chart, new panel, new table)</li><li>Share</li><li>Export</li><li>Download</li><li>Manage user preferences</li><li>Curate</li><li>Manage data view</li><li>Analytics Dashboards app</li><li>Attribution</li></ul> |
 | **Unsupported visualization types** | <ul><li>Flow</li><li>Fallout</li><li>Cohort Table</li><li>Area, Area Stacked</li><li>Bar Stacked</li><li>Bullet</li><li>Combo</li><li>Histogram</li><li>Horizontal Bar, Horizontal Bar Stacked</li><li>Key Metric Summary</li><li>Scatter</li><li>Summary Change</li><li>Text</li><li>Treemap</li><li>Venn</li></ul> | 
 
 <!---## Feature access in the Customer Journey Analytics UI
@@ -74,7 +74,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 4. Ensure that the selected data view for the panel is the same data view that was enabled for use with the AI Assistant for Alpha testing. 
 
-   If you are unsure, contact the Alpha slack channel.
+   If you are unsure, contact the Alpha Slack channel.
 
 5. Select the AI Assistant chat icon at the top-right area of the page. 
 
@@ -112,13 +112,13 @@ Next, you want to see how your revenue compares by region.
 
 **Prompt:** In the prompt window, enter *"Show revenue by region."*
 
-**Response:** The AI Assistant intelligently understands that by "region", you mean "customer region". It produces a bar chart that best shows revenue by region:
+**Response:** The AI Assistant intelligently understands that by "region," you mean "customer region." It produces a bar chart that best shows revenue by region:
 
    ![Bar chart](/help/assets/ai-asst-result2.png)
    
 ### Example 3
 
-Next, in addition to understanding revenue by region you also want to see data for profit by region. Instead of having to repeating the previous prompt, you can ask the AI Assistant to update the most recent visualization and freeform table. 
+Next, in addition to understanding revenue by region you also want to see data for profit by region. Instead of repeating the previous prompt, you can ask the AI Assistant to update the most recent visualization and freeform table. 
 
 **Prompt:** In the prompt window, type *"Add profit."*
 
@@ -130,7 +130,7 @@ Next, in addition to understanding revenue by region you also want to see data f
 
 Finally, let's look at the revenue by product category.
 
-**Prompt:** In the prompt window, enter *"Proportion of revenue by product category".*
+**Prompt:** In the prompt window, enter *"Proportion of revenue by product category."*
 
 **Response:** Again, data visualization in AI Assistant picks the most appropriate visualization, in this case the **[!UICONTROL Donut]** visualization, to answer the question.
 
@@ -167,9 +167,9 @@ To achieve the best results, consider the following guidelines:
 
 * Use clear metrics and filters: Adding specific metrics (such as "Revenue"), dimensions (such as "website name"), filters (such as "iPhone users"), and date ranges (such as "last three months") helps the AI Assistant focus on the right data.
 
-* Ask direct questions: Phrasing questions directly makes it easier for the AI Assistant to provide clear, relevant insights. Following is an example of a asking a direct question in a prompt: "What is the average revenue by product category this year?" 
+* Ask direct questions: Phrasing questions directly makes it easier for the AI Assistant to provide clear, relevant insights. Following is an example of asking a direct question in a prompt: "What is the average revenue by product category this year?" 
 
-Review the following table of example terms and phrases you can use in prompts with data visualization in AI Assistant, along with the types of responses you can expect. 
+Review the following table of example terms and phrases that you can use in prompts with data visualization in AI Assistant, along with the types of responses you can expect. 
 
 These examples are designed to help you get familiar with how specific words or structures can influence the AI Assistant's output, ensuring more precise and valuable insights. The AI Assistant uses generative AI, so visualizations or selected data may vary slightly across similar prompts.
   
@@ -193,7 +193,7 @@ Consider the following when evaluating a response from the AI Assistant:
 
 * Freeform table: Evaluate the freeform table. Is the freeform table data correct? Is it breaking down data where requested? Are the applied filters those that you requested or expected? 
 
-* Error Message / Out-of-Scope: If a generic error message is given stating the question is out of scope, provide feedback on whether you think the out-of-scope message is appropriate given your prompt. Was your prompt actually in scope? 
+* Error Message / Out-of-Scope: If a generic error message is given stating the question is out of scope, provide feedback on whether you think the out-of-scope message is appropriate, given your prompt. Was your prompt actually in scope? 
 
 **For every response, give a thumbs up or thumbs down, based on the response.**
 
@@ -201,4 +201,4 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 
 ## Questions and Contact
 
-* Send questions and feedback in the Alpha slack channel: #cja-assistant-data-alpha
+* Send questions and feedback in the Alpha Slack channel: #cja-assistant-data-alpha
