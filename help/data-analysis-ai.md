@@ -8,11 +8,11 @@ hidefromtoc: yes
 hide: yes
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 ---
-# Data visualization is now available in AI Assistant in CJA
+# Visualize data with the AI Assistant in Customer Journey Analytics
 
-The AI Assistant in Customer Journey Analytics (CJA) is a Generative AI conversation agent that can help you more quickly and efficiently answer questions you may have of your Analysis Workspace data in CJA. 
+The AI Assistant in Customer Journey Analytics is a generative AI conversation agent that can help you more quickly and efficiently answer questions about your data in Analysis Workspace. 
 
-When you ask a Data visualization question, the AI Assistant scans through all the components in your data view, including the different types of metrics and components, and translates your prompt into the right dimension, metric, and date range for your analysis. Instead of having to familiarize yourself with the data view components, and then drag and drop those components in the best combination to answer your question, you can simply type the question into the AI Assistant. 
+When you ask a data visualization question, the AI Assistant scans through all the components in your data view, including the different types of metrics and components, and translates your prompt into the right dimension, metric, and date range for your analysis. Instead of having to familiarize yourself with the data view components, and then drag and drop those components in the best combination to answer your question, you can simply type the question into the AI Assistant. 
 
 ![Data ANalysis AI Assistant](assets/cja-ai-asst-da.gif)
 
