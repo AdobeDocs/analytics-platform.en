@@ -278,7 +278,7 @@ Looker supports the following scenarios for the `FLATTEN` parameter. See [Flatte
    * sqlalchemy: pip `install sqlalchemy`.
 
 1. Start Jupyter Notebook from your virtual environment: `jupyter notebook`.
-1. Create a new notebook, or download the attached notebook.
+1. Create a new notebook, or download [this sample notebook](assets/BI-Extension.ipynb.zip).
 1. In your first cell, enter and execute:
    
    ```
@@ -378,7 +378,7 @@ Jupyter Notebook supports the following scenarios for the `FLATTEN` parameter. S
       ![Query service credentials](assets/queryservice-credentials.png){zoomable="yes"}
 
 1. Start RStudio.
-1. Create a new R Markdown file, or download the attached R markdown file.
+1. Create a new R Markdown file, or download [this example R markdown file](assets/BI-Extension.Rmd.zip).
 1. In your first chunk, enter the following statements between ` ```{r} ` and ` ``` `. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the values required for the various parameters, like `host`, `dbname`, and `user`. For example:
    
    ```R
