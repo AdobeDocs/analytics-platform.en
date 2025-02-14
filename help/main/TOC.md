@@ -13,8 +13,6 @@ breadcrumb-title: Customer Journey Analytics Guide
 # Adobe Customer Journey Analytics Guide {#using}
 
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
-+ [AI Assistant for Adobe Customer Journey Analytics](../ai-assistant.md)
-+ [Data Analysis AI Assistent for Customer Journey Analytics](../data-analysis-ai.md)
 
 + Release Notes {#releases}
   + [Latest release](../release-notes/latest.md)
@@ -33,6 +31,8 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Landing page (old)](../getting-started/cja-landing-old.md)
   + [Frequently asked questions](../getting-started/cja-faq.md)
   + [Compare Customer Journey Analytics to BI solutions](../getting-started/cja-vs-bi.md)
+  + [AI Assistant for Adobe Customer Journey Analytics](../ai-assistant.md)
+  + [Data Analysis AI Assistent for Customer Journey Analytics](../data-analysis-ai.md)
 
 + Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
   + Upgrade to Customer Journey Analytics {#upgrade-to-cja}
