@@ -13,6 +13,7 @@ This article documents how to accomplish a number of use cases using the Custome
 * **Power BI Desktop**. The version used is 2.137.1102.0 64-bit (October 2024).
 * **Tableau Desktop**. The version used is 2024.1.5 (20241.24.0705.0334) 64-bit.
 * **Looker**. Online version 25.0.23, available through [looker.com](https://looker.com){target="_blank"}
+* **Jupyter Notebook**. The version used is 7.3.2
 
 The following use cases are documented:
 
@@ -257,7 +258,200 @@ Looker supports the following scenarios for the `FLATTEN` parameter. See [Flatte
 
 * [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
 * [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
-         
+
+
+>[!TAB Jupyter Notebook]
+
+1. Access the required credentials and parameters from the Experience Platform Query Service UI.
+
+   1. Navigate to your Experience Platform sandbox.
+   1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
+   1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
+   1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
+
+      ![Query service credentials](assets/queryservice-credentials.png){zoomable="yes"}
+
+1. Ensure you have set up a dedicated Python virtual environment for running your Jupyter Notebook environment.
+1. Ensure you have installed the required libraries in your virtual environment:
+   * ipython-sql: `pip install ipython-sql`.
+   * psycopg2-binary: `pip install psycopg-binary`.
+   * sqlalchemy: pip `install sqlalchemy`.
+
+1. Start Jupyter Notebook from your virtual environment: `jupyter notebook`.
+1. Create a new notebook, or download [this sample notebook](assets/BI-Extension.ipynb.zip).
+1. In your first cell, enter and execute:
+   
+   ```
+   %config SqlMagic.style = '_DEPRECATED_DEFAULT'
+   ```
+
+1. In a new cell, enter the config parameters for your connection. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the values required for the config parameters. For example:
+
+   ```
+   import ipywidgets as widgets
+   from IPython.display import display
+
+   config_host = widgets.Text(description='Host:', value='example.platform-query-stage.adobe.io',
+                           layout=widgets.Layout(width="600px"))
+   display(config_host)
+   config_port = widgets.IntText(description='Port:', value=80,
+                              layout=widgets.Layout(width="200px"))
+   display(config_port)
+   config_db = widgets.Text(description='Database:', value='prod:cja',
+                         layout=widgets.Layout(width="300px"))
+   display(config_db)
+   config_username = widgets.Text(description='Username:', value='EC582F955C8A79F70A49420E@AdobeOrg',
+                               layout=widgets.Layout(width="600px"))
+   display(config_username)
+   config_password = widgets.Password(description='Password:', value='***',
+                                   layout=widgets.Layout(width="600px"))
+   display(config_password)
+   ```
+
+1. Execute the cell.
+1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the password from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Password]** field in Jupyter Notebook.
+
+   ![Jupter Notebook Config Step 1](assets/jupyter-config-step1.png)
+
+1. In a new cell, enter the statements to load the SQL extension, the required library and connect with Customer Journey Analytics.
+
+   ```python
+   %load_ext sql
+   from sqlalchemy import create_engine
+   %sql postgresql://{config_username.value}:{config_password.value}@{config_host.value}:{config_port.value}/{config_db.value}?sslmode=require
+   ```
+
+   Execute the shell. You should see no output but the cell should execute without any warning.
+
+   ![Jupyer Notebook Config Step 4](assets/jupyter-config-step2.png)
+
+1. In a new call, enter the statements to get a list of available data views based on the connection.
+
+   ```python
+   %%sql
+   SELECT n.nspname as "Schema",
+      c.relname as "Name",
+      CASE c.relkind WHEN 'r' THEN 'table' WHEN 'v' THEN 'view' WHEN 'm' THEN 'materialized view' WHEN 'i' THEN 'index' WHEN 'S' THEN 'sequence' WHEN 's' THEN 'special' WHEN 't' THEN 'TOAST table' WHEN 'f' THEN 'foreign table' WHEN 'p' THEN 'partitioned table' WHEN 'I' THEN 'partitioned index' END as "Type",
+      pg_catalog.pg_get_userbyid(c.relowner) as "Owner"
+   FROM pg_catalog.pg_class c
+   LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+   WHERE c.relkind IN ('v','')
+      AND n.nspname <> 'pg_catalog'
+      AND n.nspname !~ '^pg_toast'
+      AND n.nspname <> 'information_schema'
+      AND pg_catalog.pg_table_is_visible(c.oid)
+      AND c.relname NOT LIKE '%test%'
+      AND c.relname NOT LIKE '%ajo%'
+   ORDER BY 1,2;
+   ```
+
+   Execute the shell. You should see output simular to the screenshot below.
+
+   ![Jupyter Notebook Config Step 5](assets/jupyter-config-step3.png)
+
+   You should see the **[!UICONTROL cc_data_view]** in the list of data views.
+
+### To FLATTEN or not
+
+Jupyter Notebook supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
+
+| FLATTEN parameter | Example | Supported | Remarks | 
+|---|---|:---:|---|
+| None | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | | 
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Recommended option to use**. Note, `%3FFLATTEN` is URL-encoded version of `?FLATTEN`. |
+
+### More information
+
+* [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
+* [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+
+>[!TAB RStudio]
+
+1. Access the required credentials and parameters from the Experience Platform Query Service UI.
+
+   1. Navigate to your Experience Platform sandbox.
+   1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
+   1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
+   1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
+
+      ![Query service credentials](assets/queryservice-credentials.png){zoomable="yes"}
+
+1. Start RStudio.
+1. Create a new R Markdown file, or download [this example R markdown file](assets/BI-Extension.Rmd.zip).
+1. In your first chunk, enter the following statements between ` ```{r} ` and ` ``` `. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the values required for the various parameters, like `host`, `dbname`, and `user`. For example:
+   
+   ```R
+   library(rstudioapi)
+   library(DBI)
+   library(dplyr)
+   library(tidyr)
+   library(RPostgres)
+   library(ggplot2)
+
+   host <- rstudioapi::showPrompt(title = "Host", message = "Host", default = "orangestagingco.platform-query-stage.adobe.io")
+   dbname <- rstudioapi::showPrompt(title = "Database", message = "Database", default = "prod:cja?FLATTEN")
+   user <- rstudioapi::showPrompt(title = "Username", message = "Username", default = "EC582F955C8A79F70A49420E@AdobeOrg")
+   password <- rstudioapi::askForPassword(prompt = "Password")
+   ```
+
+1. Run the chunk. You are prompted for **[!UICONTROL Host]**, **[!UICONTROL Database]**, and **[!UICONTROL User]**. Simply accept the values you have provided as part of the previous step. 
+1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the password from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Password]** dialog prompt in RStudio.
+
+   ![RStudio config step 1](assets/rstudio-config-step1.png)
+
+1. Create a new chunk and enter the following statements between ` ``` {r} ` and ` ``` `.
+
+   ```R
+   con <- dbConnect(
+      RPostgres::Postgres(),
+      host = host,
+      port = 80,
+      dbname = dbname,
+      user = user,
+      password = password,
+      sslmode = 'require'
+   )
+   ```
+
+1. Run the chunk. You should see no output if the connection is successful.
+
+
+1. Create a new chunk and enter the following statements between ` ``` {r} ` and ` ``` `.
+
+   ```R
+   views <- dbListTables(con)
+   print(views)
+   ```
+
+1. Run the chunk. You should see `character(0)` as the only output.
+
+
+1. Create a new chunk and enter the following statements between ` ``` {r} ` and ` ``` `.
+
+   ```R
+   glimpse(dv)
+   ```
+
+1. Run the chunk. You should see output simular to the screenshot below.
+
+   ![RStudio config step 2](assets/rstudio-config-step2.png)
+
+### To FLATTEN or not
+
+RStudio supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
+
+| FLATTEN parameter | Example | Supported | Remarks | 
+|---|---|:---:|---|
+| None | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |  **Recommended option to use**. | 
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | |
+
+### More information
+
+* [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
+* [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+
 >[!ENDTABS]
 
 +++
@@ -375,6 +569,54 @@ You should see a visualization and table similar as shown below.
 
 ![Looker result daily trend](assets/uc2-looker-result.png){zoomable="yes"}
 
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangeday AS Date, COUNT(*) AS Events \
+             FROM cc_data_view \
+             WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+             GROUP BY 1 \
+             ORDER BY Date ASC
+   df = data.DataFrame()
+   df = df.groupby('Date', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Date', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc2-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   ## Daily Events
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01") %>%
+      group_by(daterangeday) %>%
+      count() %>%
+      arrange(daterangeday, .by_group = FALSE)
+   ggplot(df, aes(x = daterangeday, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Date")
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc2-rstudio-results.png)
+
 >[!ENDTABS]
 
 +++
@@ -464,6 +706,54 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 You should see a visualization and table similar as shown below.
 
 ![Looker result daily trend](assets/uc3-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangehour AS Hour, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-01-02' \
+               GROUP BY 1 \
+                ORDER BY Hour ASC
+   df = data.DataFrame()
+   df = df.groupby('Hour', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Hour', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc3-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   ## Hourly Events
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-01-02") %>%
+      group_by(daterangehour) %>%
+      count() %>%
+      arrange(daterangehour, .by_group = FALSE)
+   ggplot(df, aes(x = daterangehour, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Hour")
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc3-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -583,6 +873,54 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
 You should see a visualization and table similar as shown below.
 
 ![Looker result daily trend](assets/uc4-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangemonth AS Month, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1 \
+               ORDER BY Month ASC
+   df = data.DataFrame()
+   df = df.groupby('Month', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Month', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc4-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   ## Hourly Events
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-01-02") %>%
+      group_by(daterangehour) %>%
+      count() %>%
+      arrange(daterangehour, .by_group = FALSE)
+   ggplot(df, aes(x = daterangehour, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Hour")
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc4-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -761,6 +1099,57 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 You should see a visualization and table similar as shown below.
 
 ![Looker result daily trend](assets/uc5-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1 \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby('Product Name', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.barplot(x='Purchase Revenue', y='Product Name', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc5-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   library(tidyr)
+
+   ## Single dimension ranked
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
+      group_by(product_name) %>%
+      summarise(purchase_revenue = sum(purchase_revenue), purchases = sum(purchases)) %>%
+      arrange(product_name, .by_group = FALSE)
+   dfV <- df %>%
+      head(5)
+   ggplot(dfV, aes(x = purchase_revenue, y = product_name)) +
+      geom_col(position = "dodge") +
+      geom_text(aes(label = purchase_revenue), vjust = -0.5)
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc5-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -970,6 +1359,52 @@ You should see a visualization and table similar as shown below.
 
 ![Looker result daily trend](assets/uc6-looker-result.png){zoomable="yes"}
 
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_category AS `Product Category`, product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1, 2 \
+               ORDER BY `Purchase Revenue` DESC \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby(['Product Category', 'Product Name'], as_index=False).sum()
+   plt.figure(figsize=(8, 8))
+   sns.scatterplot(x='Product Category', y='Product Name', size='Purchase Revenue', sizes=(10, 200), hue='Purchases', palette='husl', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc6-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   ## Multiple dimensions ranked
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
+      group_by(product_category, product_name) %>%
+      summarise(purchase_revenue = sum(purchase_revenue), purchases = sum(purchases), .groups = "keep") %>%
+      arrange(desc(purchase_revenue), .by_group = FALSE)
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc6-rstudio-results.png)
+
+
 >[!ENDTABS]
 
 +++
@@ -1103,6 +1538,40 @@ You should see a visualization and table similar as shown below.
 
 ![Looker count distinct](assets/uc7-looker-result.png){zoomable="yes"}
 
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   data = %sql SELECT COUNT(DISTINCT(product_name)) AS `Product Name` \
+      FROM cc_data_view \
+      WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01';
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc7-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   ## Count Distinct
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01") %>%
+      summarise(product_name_count_distinct = n_distinct(product_name))
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc7-rstudio-results.png)
+
+
 >[!ENDTABS]
 
 +++
@@ -1187,6 +1656,73 @@ Note how the date range defined in the Freeform table visualization overrules th
 You should see a visualization and table similar as shown below.
 
 ![Looker count distinct](assets/uc8-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   data = %sql SELECT daterangeName FROM cc_data_view;
+   style = {'description_width': 'initial'}
+   daterange_name = widgets.Dropdown(
+      options=[d for d, in data],
+      description='Date Range Name:',
+      style=style
+   )
+   display(daterange_name)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc8-jupyter-input.png)
+
+1. Select **[!UICONTROL Fishing Products]** from the dropdown menu.
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangemonth AS Month, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterangeName = '{daterange_name.value}' \
+               GROUP BY 1 \
+               ORDER BY Month ASC
+   df = data.DataFrame()
+   df = df.groupby('Month', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Month', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc8-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use the appropriate date range name. For example, `Last Year 2023`.
+
+   ```R
+   ## Monthly Events for Last Year
+   df <- dv %>%
+      filter(daterangeName == "Last Year 2023") %>%
+      group_by(daterangemonth) %>%
+      count() %>%
+      arrange(daterangemonth, .by_group = FALSE)
+   ggplot(df, aes(x = daterangemonth, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Hour")
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc8-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -1287,6 +1823,72 @@ You should see a visualization and table similar as shown below.
 
 ![Looker count distinct](assets/uc9-looker-result.png){zoomable="yes"}
 
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   data = %sql SELECT filterName FROM cc_data_view;
+   style = {'description_width': 'initial'}
+   filter_name = widgets.Dropdown(
+      options=[d for d, in data],
+      description='Filter Name:',
+      style=style
+   )
+   display(filter_name)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc9-jupyter-input.png)
+
+1. Select **[!UICONTROL Fishing Products]** from the dropdown menu.
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+                  AND filterName = '{filter_name.value}' \
+               GROUP BY 1 \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby('Product Name', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.barplot(x='Events', y='Product Name', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc9-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use the appropriate filter name. For example, `Fishing Products`.
+
+   ```R
+   ## Dimension filtered by name
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01" & filterName == "Fishing Products") %>%
+      group_by(product_name) %>%
+      count() %>%
+      arrange(desc(n), .by_group = FALSE)
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc9-rstudio-results.png)
+
+
 >[!ENDTABS]
 
 +++
@@ -1294,7 +1896,8 @@ You should see a visualization and table similar as shown below.
 
 ## Use dimension values to filter
 
-You create a new filter in Customer Journey Analytics that filters on products from the hunting product category. Then you want to use the new filter to report on product names and occurrences (events) for products from the hunting category during January 2023.
+You use the dynamic **[!UICONTROL Hunting]** value for **[!UICONTROL Product Category]** to filter products from the hunting category. Alternatively, for those BI tools that do not support the dynamic retrieval of product category values, you create a new filter in Customer Journey Analytics that filters on products from the hunting product category. 
+Then you want to use the new filter to report on product names and occurrences (events) for products from the hunting category during January 2023.
 
 +++ Customer Journey Analytics
 
@@ -1323,7 +1926,7 @@ You then can use that filter in an example **[!UICONTROL Using Dimension Values 
    
 1. In the **[!UICONTROL Data]** pane:
    1. Select **[!UICONTROL daterange]**.
-   1. Select **[!UICONTROL filterName]**.
+   1. Select **[!UICONTROL product_category]**.
    1. Select **[!UICONTROL product_name]**.
    1. Select **[!UICONTROL ∑ occurrences]**.
 
@@ -1332,20 +1935,22 @@ You then can use that filter in an example **[!UICONTROL Using Dimension Values 
 1. In the **[!UICONTROL Filters]** pane:
    1. Select **[!UICONTROL filterName is (All)]** from **[!UICONTROL Filters on this visual]**.
    1. Select **[!UICONTROL Basic filtering]** as the **[!UICONTROL Filter type]**.
-   1. Underneath the **[!UICONTROL Search]** field, select **[!UICONTROL Hunting Products]**, which is the name of the existing filter defined in Customer Journey Analytics.
    1. Select **[!UICONTROL daterange is (All)]** from **[!UICONTROL Filters on this visual]**.
    1. Select **[!UICONTROL Advanced filtering]** as the **[!UICONTROL Filter type]**.
    1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
+   1. Select **[!UICONTROL Basic filter]** as the **[!UICONTROL Filter type]** for **[!UICONTROL product_category]**, and select **[!UICONTROL Hunting]** from the list of possible values. 
    1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL filterName]** from **[!UICONTROL Columns]**.
    1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL daterange]** from **[!UICONTROL Columns]**.
    
-   You see the table updated with the applied **[!UICONTROL filterName]** filter. Your Power BI Desktop should look like below.
+   You see the table updated with the applied **[!UICONTROL product_category]** filter. Your Power BI Desktop should look like below.
 
    ![Power BI Desktop Using Date Range Names To Filter](assets/uc10-powerbi-final.png){zoomable="yes"}
 
 
 
 >[!TAB Tableau Desktop] 
+
+![AlertRed](/help/assets/icons/AlertRed.svg) Tableau Desktop does not support fetching the dynamic list of product categories from Customer Journey Analytics. Instead, this use case uses the newly created filter for **[!UICONTROL Hunting Products]** and use the filter name critetia.
 
 1. In the **[!UICONTROL Data Source]** view, underneath **[!UICONTROL Data]**, from the context menu on **[!UICONTROL cc_data_view(prod:cja%3FFLATTEN)]**, select **[!UICONTROL Refresh]**. You need to refresh the connection to pick up the new filter you just defined in Customer Journey Analytics.
 1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
@@ -1378,15 +1983,75 @@ You then can use that filter in an example **[!UICONTROL Using Dimension Values 
    1. Select **[!UICONTROL ‣ Cc Data View]**
    1. From the list of fields, select **[!UICONTROL ‣ Product Category]**.
 1. Ensure **[!UICONTROL is]** as the selection for the filter.
-1. Select **[!UICONTROL Hunting Products]** from the list of possible values.
-1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail: 
-   1. Select **[!UICONTROL Product Name]**.
-   1. Select **[!UICONTROL Count]** underneath **[!UICONTROL MEASURES]** in the left rail (at the bottom).
-1. Select **[!UICONTROL Run]**.
 
-You should see a similar table as shown below.
+![AlertRed](/help/assets/icons/AlertRed.svg) Lookes does not show the list of possible values for **[!UICONTROL Product Category]**.
 
 ![Looker count distinct](assets/uc10-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   data = %sql SELECT DISTINCT product_category FROM cc_data_view WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01';
+   style = {'description_width': 'initial'}
+   category_filter = widgets.Dropdown(
+      options=[d for d, in data],
+      description='Product Category:',
+      style=style
+   )
+   display(category_filter)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc10-jupyter-input.png)
+
+1. Select **[!UICONTROL Hunting]** from the dropdown menu.
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+               AND product_category = '{category_filter.value}' \
+               GROUP BY 1 \
+               ORDER BY Events DESC \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby('Product Name', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.barplot(x='Events', y='Product Name', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc10-jupyter-results.png)
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use an appropriate category. For examplee, `Hunting`.
+
+   ```R
+   ## Dimension 1 Filtered by Dimension 2 value
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01" & product_category == "Hunting") %>%
+      group_by(product_name) %>%
+      count() %>%
+      arrange(desc(n), .by_group = FALSE)
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc10-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -1595,13 +2260,70 @@ SELECT
     COALESCE(SUM(CAST(( cc_data_view."purchase_revenue"  ) AS DOUBLE PRECISION)), 0) AS "purchase_revenue"
 FROM
     "public"."cc_data_view" AS "cc_data_view"
-WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2023-01-31')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2023-02-01'))))
+WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2024-01-31')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2023-02-01'))))
 GROUP BY
     1
 ORDER BY
     2 DESC
 FETCH NEXT 500 ROWS ONLY
 
+```
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   data = %sql SELECT product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+               GROUP BY 1 \
+               ORDER BY `Purchase Revenue` DESC \
+               LIMIT 5;
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc11-jupyter-results.png)
+
+The query is excuted by the BI extension as defined in Jupyter Notebook.
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   ## Dimension 1 Sorted
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01") %>%
+      group_by(product_name) %>%
+      summarise(purchase_revenue = sum(purchase_revenue), purchases = sum(purchases), .groups = "keep") %>%
+      arrange(desc(purchase_revenue), .by_group = FALSE)
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc11-rstudio-results.png)
+
+The query generated by RStudio using the BI extension is including `ORDER BY`, which implies that the order is applied through RStudio and the BI extension.
+
+```sql
+SELECT
+  "product_name",
+  SUM("purchase_revenue") AS "purchase_revenue",
+  SUM("purchases") AS "purchases"
+FROM (
+  SELECT "cc_data_view".*
+  FROM "cc_data_view"
+  WHERE ("daterange" >= '2023-01-01' AND "daterange" < '2023-02-01')
+) AS "q01"
+GROUP BY "product_name"
+ORDER BY "purchase_revenue" DESC
+LIMIT 1000
 ```
 
 >[!ENDTABS]
@@ -1833,6 +2555,60 @@ ORDER BY
 FETCH NEXT 5 ROWS ONLY
 ```
 
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+               GROUP BY 1 \
+               ORDER BY `Events` DESC \
+               LIMIT 5;
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc12-jupyter-results.png)
+
+The query is excuted by the BI extension as defined in Jupyter Notebook.
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   ## Dimension 1 Limited
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
+      group_by(product_name) %>%
+      count() %>%
+      arrange(desc(n), .by_group = FALSE) %>%
+      head(5)
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc12-rstudio-results.png)
+
+The query generated by RStudio using the BI extension is including `LIMIT 5`, which implies that the limit is applied through RStudio and the BI extension.
+
+```sql
+SELECT "product_name", COUNT(*) AS "n"
+FROM (
+  SELECT "cc_data_view".*
+  FROM "cc_data_view"
+  WHERE ("daterange" >= '2023-01-01' AND "daterange" < '2024-01-01')
+) AS "q01"
+GROUP BY "product_name"
+ORDER BY "n" DESC
+LIMIT 5
+```
+
 >[!ENDTABS]
 
 +++
@@ -1983,7 +2759,7 @@ HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM(
 
 >[!TAB Looker]
 
-The Customer Journey Analytics objects are available c in the **[!UICONTROL Explore]** interface. And are retrieved as part of setting up your connection, project, and model in Looker. For example, **[!UICONTROL cc_data_view]**. The name of the view is the same as the External ID that you have defined for your data view in Customer Journey Analytics. For example, data view with **[!UICONTROL Title]** `C&C - Data View` and **[!UICONTROL External ID]** `cc_data_view`.
+The Customer Journey Analytics objects are available in the **[!UICONTROL Explore]** interface. And are retrieved as part of setting up your connection, project, and model in Looker. For example, **[!UICONTROL cc_data_view]**. The name of the view is the same as the External ID that you have defined for your data view in Customer Journey Analytics. For example, data view with **[!UICONTROL Title]** `C&C - Data View` and **[!UICONTROL External ID]** `cc_data_view`.
 
 **Dimensions**
 Dimensions from Customer Journey Analytics are listed as **[!UICONTROL DIMENSION]** in the **[!UICONTROL Cc Data View]** left rail. The dimension is defined in your Customer Journey Analytics data view. For example, dimension **[!UICONTROL Product Name]** in Customer Journey Analytics has a **[!UICONTROL DIMENSION]** **[!UICONTROL Product Name]**, which is the name for the dimension in Looker. 
@@ -2030,6 +2806,66 @@ GROUP BY
 ORDER BY
     2 DESC
 FETCH NEXT 500 ROWS ONLY
+```
+
+>[!TAB Jupyter Notebook]
+
+The Customer Journey Analytics objects (dimensions, metrics, filters, calculated metrics, and date ranges) are available as part of the embedded SQL queries you construct. See earlier examples.
+
+**Custom transformations**
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   data = %sql SELECT LOWER(product_category) AS `Product Category`, COUNT(*) AS EVENTS \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1 \
+               ORDER BY `Events` DESC \
+               LIMIT 5;
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc13-jupyter-results.png)
+
+The query is excuted by the BI extension as defined in Jupyter Notebook.
+
+>[!TAB RStudio]
+
+The Customer Journey Analytics components (dimensions, metrics, filters, calculated metrics, and date ranges) are available as similar named objects in the R language. Refer to the components using the component  See earlier examples.
+
+**Custom transformations**
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange <= "2024-01-01") %>%
+      mutate(d2=lower(product_category)) %>%
+      group_by(d2) %>%
+      count() %>%
+      arrange(d2, .by_group = FALSE)
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc13-rstudio-results.png)
+
+The query generated by RStudio using the BI extension is including `lower`, which implies that the custom transformation is executed by RStudio and the BI extension.
+
+```sql
+SELECT "d2", COUNT(*) AS "n"
+FROM (
+  SELECT "cc_data_view".*, lower("product_category") AS "d2"
+  FROM "cc_data_view"
+  WHERE ("daterange" >= '2023-01-01' AND "daterange" <= '2024-01-01')
+) AS "q01"
+GROUP BY "d2"
+ORDER BY "d2"
+LIMIT 1000
 ```
 
 >[!ENDTABS]
@@ -2231,7 +3067,19 @@ For most Customer Journey Analytics visualizations, Looker offers equivalent exp
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | [Treemap](https://cloud.google.com/looker/docs/treemap) |
 | ![Type](/help/assets/icons/TwoDots.svg) | [Venn Diagram](/help/analysis-workspace/visualizations/venn.md)| [Venn Diagram](https://cloud.google.com/looker/docs/venn) |
 
+>[!TAB Jupyter Notebook]
+
+Comparing the visualization capabilities of **matplotlib.pyplot**, the state-based interface to matplotlib, is beyond the purpose of this article. See examples above for inspiration and the [matplotlib.pyplot](https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html) documentation.
+
+
+>[!TAB RStudio]
+
+Comparing the visualization capabilities of **ggplot2**, the data visualization package in R, is beyond the purpose of this article. See examples above for inspiration and the [ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html) documentation.
+
 >[!ENDTABS]
+
+
+
 
 +++
 
@@ -2267,6 +3115,15 @@ Each of the supported BI tools has some caveats in working with the Customer Jou
 * Looker's user-experience on date or date-time fields like **[!UICONTROL Daterange Date]** or **[!UICONTROL Daterangeday Date]** is confusing. 
 * Looker's date range is exclusive instead of inclusive.  The **[!UICONTROL until (before)]** is in gray so you may miss that aspect.  For your end day, you need to select one past the day you want to report on.
 * Looker doesn't automatically treat your metrics as metrics.  When you select a metric, by default Looker tries to treat the metric as a dimension in the query.  To treat a metrics as a metric, you need to create a custom field as illustrated above. As a shortcut you can select **[!UICONTROL ⋮]**, select **[!UICONTROL Aggregate]**, and then select **[!UICONTROL Sum]**. 
+
+>[!TAB Jupyter Notebook]
+
+* The main caveat for Jupyter Notebook is that the tool does not a drag-and-drop user interface like other BI tools. You can create good visuals, but you have to write code to accomplish this.  
+
+>[!TAB RStudio]
+
+* R dplyr works with a flat schema so the **[!UICONTROL FLATTEN]** option is required.
+* The main caveat for RStudio is that the tool does not a drag-and-drop user interface like other BI tools. You can create good visuals, but you have to write code to accomplish this.  
 
 >[!ENDTABS]
 
