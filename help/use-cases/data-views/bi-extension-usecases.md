@@ -13,7 +13,8 @@ This article documents how to accomplish a number of use cases using the Custome
 * **Power BI Desktop**. The version used is 2.137.1102.0 64-bit (October 2024).
 * **Tableau Desktop**. The version used is 2024.1.5 (20241.24.0705.0334) 64-bit.
 * **Looker**. Online version 25.0.23, available through [looker.com](https://looker.com){target="_blank"}
-* **Jupyter Notebook**. The version used is 7.3.2
+* **Jupyter Notebook**. The version used is 7.3.2.
+* **RStudio**. The version used is 2024.12.0, build 467.
 
 The following use cases are documented:
 
