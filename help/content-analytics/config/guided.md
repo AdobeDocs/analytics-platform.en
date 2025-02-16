@@ -267,7 +267,7 @@ Once you have provided all necessary details, a summary provides details on the 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning"
 >title="Onboarding implementation warning"
->abstract="This will configure Content Analytics based partially on the input you provided in this workflow. Several other settings are chosen automatically based on what is generally useful for Content Analytics. You are encouraged to review the settings of each artifact to confirm they meet your requirements and guidelines. <br/>Note that no data will be collected until the Tags library associated with this configuration is published manually.<br/>Also note that in order to derive attributes of images and text, Adobe will retrieve these attributes using the url captured at the time of the users visit per the data collection settings you have implemented."
+>abstract="This will configure Content Analytics based partially on the input you provided in this workflow. Several other settings are chosen automatically based on what is generally useful for Content Analytics. You are encouraged to review the settings of each artifact to confirm they meet your requirements and guidelines. <br/><br/>Note that no data will be collected until the Tags library associated with this configuration is published manually.<br/><br/>Also note that in order to derive attributes of images and text, Adobe will retrieve these attributes using the url captured at the time of the users visit per the data collection settings you have implemented."
 
 <!-- markdownlint-enable MD034 -->
 
