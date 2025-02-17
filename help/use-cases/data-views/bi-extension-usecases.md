@@ -312,7 +312,7 @@ Looker supports the following scenarios for the `FLATTEN` parameter. See [Flatte
 1. Execute the cell.
 1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the password from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Password]** field in Jupyter Notebook.
 
-   ![Jupter Notebook Config Step 1](assets/jupyter-config-step1.png)
+   ![Jupter Notebook Config Step 1](assets/jupyter-config-step1.png){zoomable="yes"}
 
 1. In a new cell, enter the statements to load the SQL extension, the required library and connect with Customer Journey Analytics.
 
@@ -324,7 +324,7 @@ Looker supports the following scenarios for the `FLATTEN` parameter. See [Flatte
 
    Execute the shell. You should see no output but the cell should execute without any warning.
 
-   ![Jupyer Notebook Config Step 4](assets/jupyter-config-step2.png)
+   ![Jupyer Notebook Config Step 4](assets/jupyter-config-step2.png){zoomable="yes"}
 
 1. In a new call, enter the statements to get a list of available data views based on the connection.
 
@@ -348,7 +348,7 @@ Looker supports the following scenarios for the `FLATTEN` parameter. See [Flatte
 
    Execute the shell. You should see output simular to the screenshot below.
 
-   ![Jupyter Notebook Config Step 5](assets/jupyter-config-step3.png)
+   ![Jupyter Notebook Config Step 5](assets/jupyter-config-step3.png){zoomable="yes"}
 
    You should see the **[!UICONTROL cc_data_view]** in the list of data views.
 
@@ -399,7 +399,7 @@ Jupyter Notebook supports the following scenarios for the `FLATTEN` parameter. S
 1. Run the chunk. You are prompted for **[!UICONTROL Host]**, **[!UICONTROL Database]**, and **[!UICONTROL User]**. Simply accept the values you have provided as part of the previous step. 
 1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the password from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Password]** dialog prompt in RStudio.
 
-   ![RStudio config step 1](assets/rstudio-config-step1.png)
+   ![RStudio config step 1](assets/rstudio-config-step1.png){zoomable="yes"}
 
 1. Create a new chunk and enter the following statements between ` ``` {r} ` and ` ``` `.
 
@@ -436,7 +436,7 @@ Jupyter Notebook supports the following scenarios for the `FLATTEN` parameter. S
 
 1. Run the chunk. You should see output simular to the screenshot below.
 
-   ![RStudio config step 2](assets/rstudio-config-step2.png)
+   ![RStudio config step 2](assets/rstudio-config-step2.png){zoomable="yes"}
 
 ### To FLATTEN or not
 
@@ -593,7 +593,7 @@ You should see a visualization and table similar as shown below.
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc2-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc2-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -616,7 +616,7 @@ You should see a visualization and table similar as shown below.
 
 1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RStudio Results](assets/uc2-rstudio-results.png)
+   ![RStudio Results](assets/uc2-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -731,7 +731,7 @@ You should see a visualization and table similar as shown below.
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc3-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc3-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -754,7 +754,7 @@ You should see a visualization and table similar as shown below.
 
 1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RStudio Results](assets/uc3-rstudio-results.png)
+   ![RStudio Results](assets/uc3-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -898,7 +898,7 @@ You should see a visualization and table similar as shown below.
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc4-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc4-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -921,7 +921,7 @@ You should see a visualization and table similar as shown below.
 
 1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RStudio Results](assets/uc4-rstudio-results.png)
+   ![RStudio Results](assets/uc4-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1124,7 +1124,7 @@ You should see a visualization and table similar as shown below.
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc5-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc5-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1150,7 +1150,7 @@ You should see a visualization and table similar as shown below.
 
 1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RStudio Results](assets/uc5-rstudio-results.png)
+   ![RStudio Results](assets/uc5-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1384,7 +1384,7 @@ You should see a visualization and table similar as shown below.
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc6-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc6-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1403,7 +1403,7 @@ You should see a visualization and table similar as shown below.
 
 1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RStudio Results](assets/uc6-rstudio-results.png)
+   ![RStudio Results](assets/uc6-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -1553,7 +1553,7 @@ You should see a visualization and table similar as shown below.
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc7-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc7-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1570,7 +1570,7 @@ You should see a visualization and table similar as shown below.
 
 1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RStudio Results](assets/uc7-rstudio-results.png)
+   ![RStudio Results](assets/uc7-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -1676,7 +1676,7 @@ You should see a visualization and table similar as shown below.
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc8-jupyter-input.png)
+   ![Jupyter Notebook Results](assets/uc8-jupyter-input.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Fishing Products]** from the dropdown menu.
 
@@ -1700,7 +1700,7 @@ You should see a visualization and table similar as shown below.
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc8-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc8-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1723,7 +1723,7 @@ You should see a visualization and table similar as shown below.
 
 1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RStudio Results](assets/uc8-rstudio-results.png)
+   ![RStudio Results](assets/uc8-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1843,7 +1843,7 @@ You should see a visualization and table similar as shown below.
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc9-jupyter-input.png)
+   ![Jupyter Notebook Results](assets/uc9-jupyter-input.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Fishing Products]** from the dropdown menu.
 
@@ -1868,7 +1868,7 @@ You should see a visualization and table similar as shown below.
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc9-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc9-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1887,7 +1887,7 @@ You should see a visualization and table similar as shown below.
 
 1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RStudio Results](assets/uc9-rstudio-results.png)
+   ![RStudio Results](assets/uc9-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -2007,7 +2007,7 @@ You then can use that filter in an example **[!UICONTROL Using Dimension Values 
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc10-jupyter-input.png)
+   ![Jupyter Notebook Results](assets/uc10-jupyter-input.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Hunting]** from the dropdown menu.
 
@@ -2033,7 +2033,7 @@ You then can use that filter in an example **[!UICONTROL Using Dimension Values 
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc10-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc10-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -2052,7 +2052,7 @@ You then can use that filter in an example **[!UICONTROL Using Dimension Values 
 
 1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RStudio Results](assets/uc10-rstudio-results.png)
+   ![RStudio Results](assets/uc10-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -2287,7 +2287,7 @@ FETCH NEXT 500 ROWS ONLY
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc11-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc11-jupyter-results.png){zoomable="yes"}
 
 The query is excuted by the BI extension as defined in Jupyter Notebook.
 
@@ -2308,7 +2308,7 @@ The query is excuted by the BI extension as defined in Jupyter Notebook.
 
 1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RStudio Results](assets/uc11-rstudio-results.png)
+   ![RStudio Results](assets/uc11-rstudio-results.png){zoomable="yes"}
 
 The query generated by RStudio using the BI extension is including `ORDER BY`, which implies that the order is applied through RStudio and the BI extension.
 
@@ -2573,7 +2573,7 @@ FETCH NEXT 5 ROWS ONLY
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc12-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc12-jupyter-results.png){zoomable="yes"}
 
 The query is excuted by the BI extension as defined in Jupyter Notebook.
 
@@ -2594,7 +2594,7 @@ The query is excuted by the BI extension as defined in Jupyter Notebook.
 
 1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RStudio Results](assets/uc12-rstudio-results.png)
+   ![RStudio Results](assets/uc12-rstudio-results.png){zoomable="yes"}
 
 The query generated by RStudio using the BI extension is including `LIMIT 5`, which implies that the limit is applied through RStudio and the BI extension.
 
@@ -2829,7 +2829,7 @@ The Customer Journey Analytics objects (dimensions, metrics, filters, calculated
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc13-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc13-jupyter-results.png){zoomable="yes"}
 
 The query is excuted by the BI extension as defined in Jupyter Notebook.
 
@@ -2853,7 +2853,7 @@ The Customer Journey Analytics components (dimensions, metrics, filters, calcula
 
 1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RStudio Results](assets/uc13-rstudio-results.png)
+   ![RStudio Results](assets/uc13-rstudio-results.png){zoomable="yes"}
 
 The query generated by RStudio using the BI extension is including `lower`, which implies that the custom transformation is executed by RStudio and the BI extension.
 
