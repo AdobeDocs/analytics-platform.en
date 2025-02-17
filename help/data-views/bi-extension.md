@@ -135,7 +135,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
    All dimensions and metrics associated with one or more selected tables appear in the right pane, ready to be used in your visualizations.
 
-   See [Connect Power BI to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi) for more information.
+   See [Connect Power BI to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi) for more information. See also [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md) for a detailed example.
 
 +++
 
@@ -181,13 +181,88 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
    You can now work with the data from the data view tables to build your reports and visualizations.
 
-   See [Connect Tableau to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau) for more information.
+   See [Connect Tableau to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau) for more information. See also [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md) for a detailed example.
+
++++
+
++++ Looker
+
+1. Look up the details of your PostgresSQL credentials in Adobe Experience Platform:
+
+   1. Select **[!UICONTROL **Queries**]** from the left rail (under **[!UICONTROL **DATA MANAGEMENT**]**).
+
+   1. Select **[!UICONTROL **Credentials**]** from the top bar.
+
+   1. Select the `cja` database for your sandbox from the list of databases in the **[!UICONTROL Database]** dropdown menu. For example `prod:cja`.
+
+   1. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Looker.
+
+1. In Looker:
+
+   1. Select **[!UICONTROL Admin]** from the left rail.
+   1. Select **[!UICONTROL Connections]**.
+   1. Select **[!UICONTROL Add Connection]**.
+   1. In the **[!UICONTROL Connect your database to Looker]** screen, paste the appropriate values when you set up your new connection. Ensure you select **[!UICONTROL PostgreSQL 9.5+]** as the dialect.
+   1. Select **[!UICONTROL Test]** to test your connection.
+   1. When successful, select **[!UICONTROL Update]** to save your connection.
+
+   You can now work with the data from the data view tables to build your reports and visualizations.
+
+   See [Connect Looker to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/looker) for more information. See also [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md) for a detailed example.
+
++++
+
++++ Jupyter Noteboook
+
+1. Look up the details of your PostgresSQL credentials in Adobe Experience Platform:
+
+   1. Select **[!UICONTROL **Queries**]** from the left rail (under **[!UICONTROL **DATA MANAGEMENT**]**).
+
+   1. Select **[!UICONTROL **Credentials**]** from the top bar.
+
+   1. Select the `cja` database for your sandbox from the list of databases in the **[!UICONTROL Database]** dropdown menu. For example `prod:cja`.
+
+   1. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Jupyter Notebook.
+
+1. In Jupyter Notebook: 
+
+   1. Ensure you use the required libraries.
+   1. Use the appropriate values when setting up and executing the connection.
+   1. Test your connection by executing a relevant query.
+
+   When successful, you can work with the data to build your reports and visualizations.
+
+   See [Connect Jupyter Notebook to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/jupyter-notebook) for more information. See also [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md) for a detailed example.
+
++++
+
++++ RStudio
+
+1. Look up the details of your PostgresSQL credentials in Adobe Experience Platform:
+
+   1. Select **[!UICONTROL **Queries**]** from the left rail (under **[!UICONTROL **DATA MANAGEMENT**]**).
+
+   1. Select **[!UICONTROL **Credentials**]** from the top bar.
+
+   1. Select the `cja` database for your sandbox from the list of databases in the **[!UICONTROL Database]** dropdown menu. For example `prod:cja`.
+
+   1. Use ![Copy](assets/Smock_Copy_18_N.svg) to copy each of the Postgres credentials parameters ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Database], [!UICONTROL Username], and others) when needed in Jupyter Notebook.
+
+1. In RStudio:
+
+   1. Ensure you use the required libraries.
+   1. Use the appropriate values when setting up and executing the connection.
+   1. Test your connection by executing a relevant query.
+
+   When successful, you can work with the data to build your reports and visualizations.
+
+   See [Connect RStudio to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/rstudio) for more information. See also [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md) for a detailed example (that is using the RPostgres package instead).
 
 +++
 
 See [Connect clients to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview) for an overview of and more information on the various tools available.
 
-See [Use cases](/help/use-cases/data-views/bi-extension-usecases.md) on how to accomplish a number of use cases using the Customer Journey Analytics BI extension
+See [Use cases](/help/use-cases/data-views/bi-extension-usecases.md) on how to accomplish a number of use cases using the Customer Journey Analytics BI extension.
 
 ## Functionality
 
