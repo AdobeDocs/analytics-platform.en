@@ -94,7 +94,7 @@ See the [Query Editor UI guide](https://experienceleague.adobe.com/en/docs/exper
 
 ### BI tools
 
-Currently, the [!DNL Customer Journey Analytics BI extension] is supported and tested for Power BI and Tableau Desktop only. Other BI tools using the PSQL interface might work as well, but are not yet supported officially.
+Currently, the [!DNL Customer Journey Analytics BI extension] is supported and tested for the tools listed below. Other BI tools using the PSQL interface might work as well, but are not yet supported officially.
 
 +++ Power BI
 
