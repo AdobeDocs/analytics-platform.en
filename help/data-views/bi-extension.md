@@ -135,7 +135,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
    All dimensions and metrics associated with one or more selected tables appear in the right pane, ready to be used in your visualizations.
 
-   See [Connect Power BI to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi) for more information.
+   See [Connect Power BI to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi) for more information. See also [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md) for a detailed example.
 
 +++
 
@@ -181,7 +181,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
    You can now work with the data from the data view tables to build your reports and visualizations.
 
-   See [Connect Tableau to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau) for more information.
+   See [Connect Tableau to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau) for more information. See also [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md) for a detailed example.
 
 +++
 
@@ -208,7 +208,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
    You can now work with the data from the data view tables to build your reports and visualizations.
 
-   See [Connect Looker to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/looker) for more information.
+   See [Connect Looker to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/looker) for more information. See also [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md) for a detailed example.
 
 +++
 
@@ -226,7 +226,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
 1. In Jupyter Notebook: 
 
-   1. Ensure you use the appropriate libraries.
+   1. Ensure you use the required libraries.
    1. Use the appropriate values when setting up and executing the connection.
    1. Test your connection by executing a relevant query.
 
@@ -250,6 +250,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
 1. In RStudio:
 
+   1. Ensure you use the required libraries.
    1. Use the appropriate values when setting up and executing the connection.
    1. Test your connection by executing a relevant query.
 
@@ -261,7 +262,7 @@ Currently, the [!DNL Customer Journey Analytics BI extension] is supported and t
 
 See [Connect clients to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview) for an overview of and more information on the various tools available.
 
-See [Use cases](/help/use-cases/data-views/bi-extension-usecases.md) on how to accomplish a number of use cases using the Customer Journey Analytics BI extension
+See [Use cases](/help/use-cases/data-views/bi-extension-usecases.md) on how to accomplish a number of use cases using the Customer Journey Analytics BI extension.
 
 ## Functionality
 
