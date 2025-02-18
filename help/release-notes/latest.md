@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (February 2025)
 
-**Last update**: February 13, 2025
+**Last update**: February 18, 2025
 
 These release notes cover the release period of January 24, 2025 to March 18, 2025. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -14,16 +14,19 @@ These release notes cover the release period of January 24, 2025 to March 18, 20
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **BI Extension - Looker support** | The Customer Journey Analytics BI extension now [supports Looker](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases), Jupyter Notebook and R Studio.  |   |  January 24, 2025 |
+| **BI Extension - Looker support** | The Customer Journey Analytics BI extension now [supports Looker, Jupyter Notebook and R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases).  |   |  January 24, 2025 |
 
 ## Fixes in Customer Journey Analytics
 
 **Audiences**: AN-365687; AN-366674
+**Data Ingestion**: AN-368376
+**Data Views**: AN-368443
 **Derived Fields**: AN-368441
+**Guided Analysis**: AN-367697
 **Journey Canvas**: AN-367890
 **Mobile App**: AN-367137
 **Power BI extension**: AN-367643
-**Workspace**: AN-352828; AN-359248
+**Workspace**: AN-352828; AN-359248; AN-368583
 
 
 ## Important notices for Customer Journey Analytics Administrators
