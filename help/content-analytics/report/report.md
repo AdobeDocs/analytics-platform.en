@@ -10,6 +10,13 @@ exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 ---
 # Content Analytics reporting overview
 
+>[!WARNING]
+>
+>This article is a preliminary unofficial draft version of a forthcoming final version and is part of the Content Analytics documentation. All content is subject to change and no legal obligations whatsoever can be derived from the current version of this article.  
+>
+
+{{release-limited-testing}}
+
 Reporting on Content Analytics is done within Analysis Workspace. A specific Workspace [template](#template) is available, so you can immediately access a pre-populated Workspace project with relevant content insights.
 
 To start reporting on Content Analytics from scratch:

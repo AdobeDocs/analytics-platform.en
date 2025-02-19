@@ -15,9 +15,14 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 >This article is a preliminary unofficial draft version of a forthcoming final version and is part of the Content Analytics documentation. All content is subject to change and no legal obligations whatsoever can be derived from the current version of this article.  
 >
 
-{#release-limited-testing}
+{{release-limited-testing}}
 
-The guided configuration helps you to configure Content Analytics quickly and easily. The guided configuration uses a wizard to set up the requirements to configure Content Analytics automatically for your organization. In the **[!UICONTROL Configuration]** screen, you can either create a new configuration or edit an existing configuration.
+The guided configuration helps you to configure Content Analytics quickly and easily. The guided configuration uses a wizard to set up the requirements to configure Content Analytics automatically for your organization. In the **[!UICONTROL Configuration]** screen, you can either create a new configuration or edit an existing configuration. 
+
+>[!IMPORTANT]
+>
+>You can only have one Content Analytics configuration per sandbox in your organization.
+
 
 To access the Content Analytics configuration
 
@@ -141,7 +146,9 @@ A Data view is tied to a Customer Journey Analytics [Connection](/help/connectio
 
 <!-- markdownlint-enable MD034 -->
 
-In this section, you can select to include Experiences in the data you collect with Content Analytics. An experience is all text on a web page that is reproducible using the URL used by the initial user visiting that web page. When selected, you have to define for which URLs you want to include experiences.
+In this section, you can select to include Experiences in the data you collect with Content Analytics.  An experience is all text on a web page that is reproducible using the URL used by the initial user visiting that web page. 
+
+By default, **[!UICONTROL Include experiences]** is turned off. When selected, you have to define for which URLs you want to include experiences.
 
 To include Experiences in a new or not implemented configuration:
 
@@ -151,8 +158,8 @@ To include Experiences in a new or not implemented configuration:
 1. Specify the parameters that determine how content is rendered on your website. The parameters are zero or more combinations of a **[!UICONTROL Domain regular expression]** and **[!UICONTROL Query parameters]**.
    1. Enter a **[!UICONTROL Domain regular expression]**, for example `(?!.*\b(store|help|admin)\b)`.
    1. Specify a comma separated list of **[!UICONTROL Query parameters,]** for example `outdoors, patio, kitchen`.
-   1. Select **[!UICONTROL Remove]** if you want to remove a combination.
-   1. Select **[!UICONTROL Add another]** if you want to add another combination.
+1. Select **[!UICONTROL Remove]** if you want to remove a combination of domain regular expression and query parameters.
+1. Select **[!UICONTROL Add another]** if you want to add another combination of a regular expression and query parameters..
 
 To edit existing or include new Experiences in an implemented configuration:
 
@@ -224,10 +231,7 @@ In a new configuration, you need to define which Tag property you want to use, o
 
     1. Select **[!UICONTROL Create new]**.
     2. Specify a **[!UICONTROL Tag name]**, for example `ACA Test`.
-    3. Specify one or more **[!UICONTROL Domains]**, for example, `example.com`. 
-
-    * To add more domains, select **[!UICONTROL Add another]**.
-    * To remove a domain, select ![CrossSize75](/help/assets/icons/CrossSize75.svg).
+    3. Specify **[!UICONTROL Domains]**, for example, `example.com`. 
 
 * If you have selected to include experiences, indicate which pages should be included or excluded when collecting data for Content Analytics.
 
@@ -246,15 +250,27 @@ For an existing configuration, you cannot edit the Tag property. You can, howeve
 
 * To edit which assets should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Asset]**.
 
-### Summary
+### Summary {#summary}
 
-Once you have provided all necessary details, you see a **[!UICONTROL You're almost ready to implement _configuration name_ for Content Analytics]** summary. 
+Once you have provided all necessary details, a summary provides details on the artefacts that are created or modified.
 
-For existing implemented configurations, you see a **[!UICONTROL You have implemented _configuration name_ for Content Analytics]** summary.
+* You see a **[!UICONTROL You're almost ready to implement _configuration name_ for Content Analytics]** summary when you implement a new configuration. 
+
+* For existing implemented configurations, you see a **[!UICONTROL You have implemented _configuration name_ for Content Analytics]** summary.
 
 ![Content Analytics Configuration Summary](../assets/aca-configuration-summary.png)
 
-### Actions
+### Actions {#actions}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_implementation_warning"
+>title="Onboarding implementation warning"
+>abstract="This will configure Content Analytics based partially on the input you provided in this workflow. Several other settings are chosen automatically based on what is generally useful for Content Analytics. You are encouraged to review the settings of each artifact to confirm they meet your requirements and guidelines. <br/><br/>Note that no data will be collected until the Tags library associated with this configuration is published manually.<br/><br/>Also note that in order to derive attributes of images and text, Adobe will retrieve these attributes using the url captured at the time of the users visit per the data collection settings you have implemented."
+
+<!-- markdownlint-enable MD034 -->
+
 
 When you have created or edited a configuration, the following actions are available.
 
