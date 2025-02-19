@@ -61,7 +61,7 @@ The basic steps for migrating an AppMeasurement or Analytics extension implement
 1. (Conditional) If you created an XDM schema, use datastream mapping to map all of the fields in the data object to your XDM schema.
 
 
-What is this? 
+The following is if your AA implementation is already on the Web SDK...
 
 Configure the Adobe Analytics Web SDK implementation to send data to Platform
 

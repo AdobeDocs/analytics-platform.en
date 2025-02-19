@@ -7,7 +7,7 @@ feature: Basics
 hide: yes
 hidefromtoc: yes
 ---
-# Upgrade alternative: Send your data layer to Customer Journey Analytics {#data-collection-appmeasurement}
+# Upgrade alternative: Send your data layer to Customer Journey Analytics {#data-collection-data-layer}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -21,6 +21,8 @@ hidefromtoc: yes
 >[!NOTE]
 > 
 >Use the information on this page when answering questions in the [Customer Journey Analytics upgrade checklist](https://gigazelle.github.io/cja-ttv/). 
+
+When upgrading to Customer Journey Analytics, Adobe [recommends a new implementation of the Experience Platform Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). However, depending on several factors, such as timeline and resource constraints, the recommended upgrade steps might not be practical for your organization. 
 
 You can send your entire data layer to Customer Journey Analytics instead of collecting data with the XDM object. However, this alternative introduces additional complexity over time.
 
