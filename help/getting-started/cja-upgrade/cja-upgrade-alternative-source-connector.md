@@ -8,7 +8,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 34e5f97b-c936-4de6-acc9-5774bc908655
 ---
-# Use the Analytics source connector exclusively to upgrade to Customer Journey Analytics {#use-source-connector-exclusively}
+# Upgrade alternative: Use the Analytics source connector exclusively to upgrade to Customer Journey Analytics {#use-source-connector-exclusively}
 
 <!-- markdownlint-disable MD034 -->
 

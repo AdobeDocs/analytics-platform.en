@@ -8,7 +8,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 83927cf0-b3b4-42b4-9ca5-0c81c091383f
 ---
-# Upgrade shortcut: Migrate an AppMeasurement or Analytics extension implementation to use the Web SDK {#shortcut-migrate-websdk}
+# Upgrade alternative: Migrate an AppMeasurement or Analytics extension implementation to use the Web SDK {#shortcut-migrate-websdk}
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ exl-id: 83927cf0-b3b4-42b4-9ca5-0c81c091383f
 >[!CONTEXTUALHELP]
 >id="cja_migrate_aa_to_websdk"
 >title="Migrate your Analytics implementation to use the Web SDK"
->abstract="Instead of sending data through an XDM object, you can send all your variables in AppMeasurement format through the data object. This shortcut allows you to continue using your AppMeasurement logic to send data to Platform."
+>abstract="Instead of sending data through an XDM object, you can send all your variables in AppMeasurement format through the data object. This shortcut allows you to continue using your AppMeasurement logic to send data to Platform." 
 
 <!-- markdownlint-enable MD034 -->
 
@@ -34,11 +34,11 @@ exl-id: 83927cf0-b3b4-42b4-9ca5-0c81c091383f
 
 When upgrading to Customer Journey Analytics, Adobe [recommends a new implementation of the Experience Platform Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). However, depending on several factors, such as timeline and resource constraints, the recommended upgrade steps might not be practical for your organization. 
 
-If your Adobe Analytics implementation is AppMeasurement or the Analytics extension, an upgrade shortcut is available that allows you to migrate your Adobe Analytics implementation to use the Adobe Experience Platform Web SDK to begin sending data to Edge Network and Adobe Analytics, prior to sending it to Customer Journey Analytics. 
+If your Adobe Analytics implementation is AppMeasurement or the Analytics extension, an alternative upgrade method is available that allows you to migrate your Adobe Analytics implementation to use the Adobe Experience Platform Web SDK to begin sending data to Edge Network and Adobe Analytics, prior to sending it to Customer Journey Analytics. 
 
 ## Advantages and disadvantages
 
-Consider the following advantages and disadvantage of the upgrade shortcut to migrate your AppMeasurement or Analytics extension implementation to use the Web SDK:
+Consider the following advantages and disadvantage of this alternative upgrade method of migrating your AppMeasurement or Analytics extension implementation to use the Web SDK:
 
 | Advantages | Disadvantages |
 |----------|---------|
@@ -48,7 +48,7 @@ Consider the following advantages and disadvantage of the upgrade shortcut to mi
 
 ## Basic steps
 
-If you decide to take the upgrade shortcut to migrate your AppMeasurement or Analytics extension implementation to use the Web SDK, a new step is added to the dynamically generated steps for your organization in the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
+If you decide to use this upgrade alternative of migrating your AppMeasurement or Analytics extension implementation to use the Web SDK, a new step is added to the dynamically generated steps for your organization in the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
 
 The basic steps for migrating an AppMeasurement or Analytics extension implementation to use the Web SDK are:
 
