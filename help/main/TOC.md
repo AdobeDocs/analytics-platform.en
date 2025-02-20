@@ -58,7 +58,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create a connection](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
     + [Create a data view](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
     + [Validate data flow](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
-    + [Upgrade alternative: Migrate to Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-alternative-migrate-websdk.md)
     + [Upgrade alternative: AppMeasurement data collection](/help/getting-started/cja-upgrade/cja-upgrade-alternative-app-measurement.md)
     + [Upgrade alternative: Send data layer](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)
     + [Upgrade alternative: Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)
