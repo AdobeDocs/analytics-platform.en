@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (February 2025)
 
-**Last update**: February 19, 2025
+**Last update**: February 20, 2025
 
 These release notes cover the release period of January 24, 2025 to March 18, 2025. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -14,7 +14,9 @@ These release notes cover the release period of January 24, 2025 to March 18, 20
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **BI Extension - Looker support** | The Customer Journey Analytics BI extension now  supports [Looker, Jupyter Notebook and R Studio](/help/data-views/bi-extension.md). The [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md) are updated to reflect the additional tools supported.  |   |  January 24, 2025 |
+| **BI Extension - expanded support** | The Customer Journey Analytics BI extension now [supports Looker, Jupyter Notebook and R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases).  |   |  January 24, 2025 |
+| **Media Collection: Adobe Source Connector updates for new Media Reporting XDM** | The Analytics Source Connector will automatically map streaming media data in Adobe Analytics to the same fields used by the Web SDK. Previously, data was mapped to both the old and new locations, but only the new location will be used in the future. [Learn more](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | January 30, 2025 |
+
 
 ## Fixes in Customer Journey Analytics
 
