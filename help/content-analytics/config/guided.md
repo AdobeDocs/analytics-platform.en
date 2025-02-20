@@ -142,13 +142,16 @@ A Data view is tied to a Customer Journey Analytics [Connection](/help/connectio
 >title="Experience capture and definition"
 >abstract="You can edit the settings in the Adobe Content Analytics extension in the Tag property, associated with the selected configuration."
 
-
-
 <!-- markdownlint-enable MD034 -->
 
 In this section, you can select to include Experiences in the data you collect with Content Analytics.  An experience is all text on a web page that is reproducible using the URL used by the initial user visiting that web page. 
 
 By default, **[!UICONTROL Include experiences]** is turned off. When selected, you have to define for which URLs you want to include experiences.
+
+You should only consider to include experiences when the following is applicable:
+
+* The content on the site is drive by a URL only.
+* The pages on the site must be reproducible using the page URL.
 
 To include Experiences in a new or not implemented configuration:
 
@@ -280,6 +283,7 @@ When you have created or edited a configuration, the following actions are avail
   * **[!UICONTROL Adobe Experience Platform]** configuration:
     1. The creation of schemas to model Content Analytics events, asset attributes, and (if configured) experience attributes.
     1. The creation of datasets to collect Content Analytics events, asset attributes and (if configured) experience attributes.
+    1. The creation of a dataflow that uses the featurization service to generate and update content attributes from Content Analytics events.
   * **[!UICONTROL Content Analytics]** configuration: 
     * Setup of a featurization assembler process based on the configuration.
   * **[!UICONTROL Customer Journey Analytics]** configuration:
