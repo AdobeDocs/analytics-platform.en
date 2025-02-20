@@ -30,6 +30,13 @@ Guided Analysis is now available directly from within Analysis Workspace, enabli
 
 [![image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 
+
+>[!TAB Intelligent captions v2] 
+
+Intelligent captions are now supported, with additional interface improvements, for [Line](/help/analysis-workspace/visualizations/line.md) (including multi-line), [Bar](/help/analysis-workspace/visualizations/bar.md), [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md), [Area](/help/analysis-workspace/visualizations/area.md) (including multiple Area lines), [Donut](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) visualizations.
+
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
 >[!TAB Alerts] 
 
 Alerts allow you to be notified based on changed percentages or specific data points. You can preview how often an alert will trigger, send alerts by email or SMS, create stacked alerts, and more.
@@ -67,7 +74,7 @@ New derived field functions (Math, Next or Previous, Summarize, Deduplicate) and
 
 >[!TAB BI extension*] 
 
-The BI extension enables SQL access to the data views that you have defined in Customer Journey Analytics. You can now use your favorite BI tool to create reporting and dashboards based on the same data views that Customer Journey Analytics users use with their Analysis Workspace projects. [Use cases](/help/use-cases/data-views/bi-extension-usecases.md) are provided.
+The BI extension enables SQL access to the data views that you have defined in Customer Journey Analytics. You can now use your favorite BI tool (Power BI Desktop, Tableau Desktop, Looker, Juyter Notebook, and RStudio) to create reporting and dashboards based on the same data views that Customer Journey Analytics users use with their Analysis Workspace projects. [Use cases](/help/use-cases/data-views/bi-extension-usecases.md) are provided.
 
 [![image](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
