@@ -8,7 +8,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
 ---
-# Disable AppMeasurement data collection {#disable-appmeasurement}
+# Disable Adobe Analytics {#disable-appmeasurement}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -25,7 +25,7 @@ exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
 >
 >After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
 
-<!-- need to work on this -->
+Before disabling Adobe Analytics, review the information in [Evaluate when to disable Adobe Analytics after upgrading to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md).
 
 * **Tags:** Disable the Adobe Analytics extension
 
