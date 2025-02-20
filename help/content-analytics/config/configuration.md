@@ -18,12 +18,11 @@ exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 {{release-limited-testing}}
 
 
-To configure Content Analytics for your organization, you can either:
+To configure Content Analytics for your organization, you use the Content Analytics [guided configuration](guided.md). The configuration wizard guides you through all steps required to setup the prerequisites for an automatic configuration of Content Analytics.
 
-* use the Content Analytics [guided configuration](guided.md). The configuration wizard guides you through all steps required to setup the prerequisites for an automatic configuration of Content Analytics.
-* follow a [manual process](manual.md) to configure Content Analytics.
+## Prerequisites
 
-Before you configure Content Analytics, ensure you the following requirements are met:
+Before you configure Content Analytics, ensure you the following prerequisites are met:
 
 * You have allow-listed the User Agent and IP address for the featurization service that is used in Content Analytics. The User Agent string is `AdobeFeaturization/1.0`.
 * You have a Customer Journey Analytics Product Administrator role, with the additional permissions to manage connections and to manage data collections. The required Experience Platform permissions are:

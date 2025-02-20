@@ -283,7 +283,7 @@ When you have created or edited a configuration, the following actions are avail
   * **[!UICONTROL Adobe Experience Platform]** configuration:
     1. The creation of schemas to model Content Analytics events, asset attributes, and (if configured) experience attributes.
     1. The creation of datasets to collect Content Analytics events, asset attributes and (if configured) experience attributes.
-    1. The creation of a dataflow that uses the featurization service to generate and update content attributes based on Content Analytics events.
+    1. The creation of a dataflow that uses the featurization service to generate and update content attributes from Content Analytics events.
   * **[!UICONTROL Content Analytics]** configuration: 
     * Setup of a featurization assembler process based on the configuration.
   * **[!UICONTROL Customer Journey Analytics]** configuration:
