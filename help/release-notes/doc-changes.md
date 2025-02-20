@@ -13,10 +13,17 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **February 2025** |  |
+| Media Collection: Adobe Source Connector updates for new Media Reporting XDM | The Analytics Source Connector automatically [maps streaming media data in Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en) to the same fields used by the Web SDK. Previously, data was mapped to both the old and new locations, but only the new location will be used in the future. |
+| BI Extension - expanded support |  The Customer Journey Analytics BI extension now supports [Looker, Jupyter Notebook and R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en). |
 | **January 2025** ||
+| Updated Connections Usage experience  |  The [Usage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections?lang=en#connections-usage) tab in Connection now provides enhanced visualizations for these types of reportable rows: core, ingested and historical data. You can also view and break down the usage data by connection, dataset, sandbox, or tag. |
 | Usage metrics | Updated documentation on the improved [usage metrics](/help/connections/manage-connections.md#usage) interface. |
 | Product usage | [Product usage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) shows you how your organization uses Customer Journey Analytics. |
 | Guided analysis | Updated documentation with the availability of [Guided Analysis](/help/guided-analysis/overview.md) from within Guided Analysis. |
+| Documentation on using custom templates from Customer Journey Analytics on the Reports page in Journey Optimizer | You can now customize the new reporting interface in Adobe Journey Optimizer by [creating or editing a template in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=en), then saving the template to be used on the Reports page in Journey Optimizer. Previously, the new reporting interface in Adobe Journey Optimizer couldn't be customized. |
+| Templates in Analysis Workspace | [Prebuilt templates](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates) and [company templates](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates) are now available in Customer Journey Analytics. |
+| Intelligent Captions v2 | [Intelligent captions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=en) are now supported for the following visualizations: Multi-line, Bar, Horizontal bar, Donut, Area, Flow, and Fallout. You can select to show all intelligent captions at once in an expanded view, or you can show individual intelligent captions in a one-by-one view. |
 
 ## 2024
 
