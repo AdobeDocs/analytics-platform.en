@@ -14,7 +14,7 @@ These release notes cover the release period of January 24, 2025 to March 18, 20
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **BI Extension - Looker support** | The Customer Journey Analytics BI extension now [supports Looker, Jupyter Notebook and R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases).  |   |  January 24, 2025 |
+| **BI Extension - Looker support** | The Customer Journey Analytics BI extension now  supports [Looker, Jupyter Notebook and R Studio](/help/data-views/bi-extension.md). The [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md) are updated to reflect the additional tools supported.  |   |  January 24, 2025 |
 
 ## Fixes in Customer Journey Analytics
 
