@@ -14,7 +14,7 @@ hidefromtoc: yes
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-layer"
 >title="Send data layer to Adobe"
->abstract="Instead of sending data through an XDM object, you can send your entire data layer to Adobe through the data object.<br><br>This alternative upgrade method is mutually exclusive to using AppMeasurement logic, because both methods accomplish the same task."
+>abstract="Instead of sending data through an XDM object, you can send your entire data layer to Adobe through the data object.<br><br>This option saves implementation time by allowing you to map your data layer to XDM, rather than populating an XDM object from scratch. However, this mapping is a large amount of work because there will be a significant amount of data that Adobe can't readily interpret. This option also introduces additional complexity over time because any field you add to your data later in the future must be mapped to XDM in the datastream."
 
 <!-- markdownlint-enable MD034 -->
 
