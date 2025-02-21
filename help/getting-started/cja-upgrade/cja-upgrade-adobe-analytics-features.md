@@ -73,6 +73,15 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-component-migration"
+>title="Migrate projects and components"
+>abstract="Bring Adobe Analytics projects and their associated components to Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
+
 >[!NOTE]
 > 
 >Use the information on this page when answering questions in the [Customer Journey Analytics upgrade checklist](https://gigazelle.github.io/cja-ttv/). 

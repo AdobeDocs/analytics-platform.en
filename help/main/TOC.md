@@ -46,15 +46,18 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Architect your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [Create your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
       + [Use your existing schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
-    + [Create a datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
-    + [Add Platform as a service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
-    + [Create a dataset](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
-    + [Create lookup datasets for classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
-    + [Monitor dataset ingestion](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-    + [Create a tag for your property](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
-    + [Add the Web SDK extension to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
-    + [Implement the loader tag for the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
-    + [Add XDM data collection logic to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
+    + Create a datastream
+      + [Create a datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
+      + [Add Platform as a service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+    + Create datasets {#create-datasets}
+      + [Create a dataset](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
+      + [Create lookup datasets for classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+      + [Monitor dataset ingestion](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
+    + Create tags {#create-tags}
+      + [Create a tag for your property](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
+      + [Add the Web SDK extension to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+      + [Implement the loader tag for the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
+      + [Add XDM data collection logic to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
     + [Create a connection](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
     + [Create a data view](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
     + [Create a marketing channel derived field](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
@@ -75,6 +78,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + Additional information {#additional-information}
       + [Understand Analytics implementation](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [Adobe Analytics feature support when upgrading](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
+      + [Customer Journey Analytics features](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)

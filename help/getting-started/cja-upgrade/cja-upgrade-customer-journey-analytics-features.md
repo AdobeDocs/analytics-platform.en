@@ -30,6 +30,15 @@ hidefromtoc: yes
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
+>id="cja-upgrade-stitch-customer-care"
+>title="Contact Adobe Customer Care to generate a stitched dataset"
+>abstract="If you have a field that contains an identifier that exists in multiple datasets but is not the primary identifier, you can use that to generate a new dataset with a consistent identifier."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-rtcdp"
 >title="Integrate with Real-time CDP"
 >abstract="Combine profile data from multiple sources to generate audiences and segments based on user traits."
