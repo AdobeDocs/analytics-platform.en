@@ -97,7 +97,7 @@ To create a calculated metric for a single project:
 
    * [!UICONTROL **Multiply**]: Creates a new column that multiplies the values of the two selected columns.
 
-   * [!UICONTROL **Percent change**]: Creates a new column that shows the percent changeof the two selected columns.
+   * [!UICONTROL **Percent change**]: Creates a new column that shows the percent change between the two selected columns.
 
 [Calculated Metrics: Implementation-less metrics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
 
