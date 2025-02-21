@@ -37,11 +37,11 @@ You can see whether a metric is approved ![Approved icon](https://spectrum.adobe
 
 ## Compare metrics with different attribution models
 
-If you'd like to quickly and easily compare one attribution model to anothe for a metric, select **[!UICONTROL Compare attribution models]** from the context menu for a metric.
+To quickly compare one attribution model to another for a metric, select **[!UICONTROL Compare attribution models]** from the context menu for a metric.
 
 ![Workspace panel highlighting Compare attribution models](assets/compare-attribution.png)
 
-This shortcut lets you quickly and easily compare attribution models.
+This shortcut lets you compare one attribution model to another without dragging in a metric and configuring it twice.
 
 ## Create calculated metrics
 
