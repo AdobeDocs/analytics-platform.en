@@ -98,6 +98,11 @@ Each configuration requires a unique name. For example, `Example Content Analyti
 >title="Data view"
 >abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your content analytics data with.<br/>"
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_change"
+>title="Select Data view"
+>abstract="The selection of a new data view will result in an update to that data view to include Content Analytics metrics and dimensions. If necessary, the associated connection is also updated to include Content Analytics datasets. The connection and data view that are currently configured for Content Analytics are not modified."
+
 <!-- markdownlint-enable MD034 -->
 
 Your configuration requires the selection of a [Data view](/help/data-views/data-views.md).
@@ -270,7 +275,7 @@ Once you have provided all necessary details, a summary provides details on the 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning"
 >title="Onboarding implementation warning"
->abstract="This will configure Content Analytics based partially on the input you provided in this workflow. Several other settings are chosen automatically based on what is generally useful for Content Analytics. You are encouraged to review the settings of each artifact to confirm they meet your requirements and guidelines. <br/><br/>Note that no data will be collected until the Tags library associated with this configuration is published manually.<br/><br/>Also note that in order to derive attributes of images and text, Adobe will retrieve these attributes using the url captured at the time of the users visit per the data collection settings you have implemented."
+>abstract="If you select **[!UICONTROL Implement]**, you will configure Content Analytics based on the input you have provided in this workflow. Several settings are chosen by default based on what is generally useful for Content Analytics, but you (as the data controller) must review the settings of each artefact to confirm the settings are implemented in accordance with your privacy policy, contractual rights and obligations, and consent requirements under applicable law.<br/><br/>Note that no data will be collected until the Tags library associated with this configuration is published manually.<br/><br/>In order to derive attributes of images and text, Adobe will retrieve the attributes using:<ol><li>The URL captured at the time of the users site visit, per the data collection settings you have configured, and</li><li>The URL where the image is hosted.</li></ol>You must not tag images that are hosted on third-party sites."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -279,27 +284,25 @@ When you have created or edited a configuration, the following actions are avail
 
 * **[!UICONTROL Discard]**: All changes made as part of creating a new configuration or editing an existing configuration are discarded.
 * **[!UICONTROL Save for later]**: Changes made to a new configuration or an existing, not yet implemented configuration are saved. You can revisit the configuration at a later stage to make further changes, or implement the configuration.
-* **[!UICONTROL Implement]**: Changes made to a new configuration or existing, not yet implemented configuration are saved and implemented. The implementation consists of:
+* **[!UICONTROL Implement]**: Settings for or changes made to a new configuration or existing, not yet implemented configuration are saved and implemented. The implementation consists of:
   * **[!UICONTROL Adobe Experience Platform]** configuration:
-    1. The creation of schemas to model Content Analytics events, asset attributes, and (if configured) experience attributes.
-    1. The creation of datasets to collect Content Analytics events, asset attributes and (if configured) experience attributes.
-    1. The creation of a dataflow that uses the featurization service to generate and update content attributes from Content Analytics events.
-  * **[!UICONTROL Content Analytics]** configuration: 
-    * Setup of a featurization assembler process based on the configuration.
-  * **[!UICONTROL Customer Journey Analytics]** configuration:
-    1. The selected Data view is updated to include Content Analytics dimension and metrics.
-    1. The Connection tied to the selected Data view is modified to include Content Analytics event and attribute datasets.
-    1. Content Analytics reporting templates are added to Workspace.
+    * The creation of schemas to model Content Analytics events, asset attributes, and (if configured) experience attributes.
+    * The creation of datasets to collect Content Analytics events, asset attributes and (if configured) experience attributes.
+    * The creation of a dataflow that uses the featurization service to generate and update content attributes from Content Analytics events.
   * **[!UICONTROL Data collection]** configuration:
-      1. The new or existing Tag property is configured to support Content Analytics data collection. This configuration implies the inclusion of the Adobe Content Analytics extension for Tags.
-      1. A datastream is created for Content Analytics events.
-      1. The Adobe Content Analytics extension is configured to ensure that Content Analytics events are sent to the datastream for Content Analytics. 
-      1. If the Web SDK is not configured for the Tags property, a new Web SDK configuration is created to send only Content Analytics events.
-      1. If the Web SDK is configured for this Tag property, no changes are made to the existing Web SDK configuration.
+    * The new or existing Tag property is configured to support Content Analytics data collection. This configuration implies the inclusion of the Adobe Content Analytics extension for Tags.
+    * A datastream is created for Content Analytics events.
+    * The Adobe Content Analytics extension is configured to ensure that Content Analytics events are sent to the datastream for Content Analytics. 
+    * If the Web SDK is not configured for the Tags property, a new Web SDK configuration is created to send only Content Analytics events.
+    * If the Web SDK is configured for this Tag property, no changes are made to the existing Web SDK configuration.
+  * **[!UICONTROL Customer Journey Analytics]** configuration:
+    * The selected Data view is updated to include Content Analytics dimension and metrics.
+    * The Connection tied to the selected Data view is modified to include Content Analytics event and attribute datasets.
+    * A Content Analytics reporting template is added to Workspace. 
 * **[!UICONTROL Save]**: Changes made to an implemented configuration are saved and the implementation is updated.
 * **[!UICONTROL Exit]**. Exits the guided configuration. All changes made to an implemented configuration are discarded.
 
 >[!MORELIKETHIS]
 >
->[Manual configuration of Content Analytics](manual.md)
+>[Manual configuration](manual.md)
 >

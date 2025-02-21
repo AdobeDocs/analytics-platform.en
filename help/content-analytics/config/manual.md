@@ -21,5 +21,5 @@ exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 
 >[!MORELIKETHIS]
 >
->[Guided configuration of Content Analytics](guided.md)
+>[Guided configuration](guided.md)
 >
