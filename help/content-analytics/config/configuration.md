@@ -20,6 +20,8 @@ exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 
 To configure Content Analytics for your organization, you use the Content Analytics [guided configuration](guided.md). The configuration wizard guides you through all steps required to setup the prerequisites for an automatic configuration of Content Analytics.
 
+After a successful implementation you can make some changes using the guided configuration wizard. However, [manual changes](manual.md) might be required on top of that.
+
 ## Prerequisites
 
 Before you configure Content Analytics, ensure you the following prerequisites are met:
@@ -50,6 +52,8 @@ Before you configure Content Analytics, ensure you the following prerequisites a
 >
 >[!MORELIKETHIS]
 >
+>* [Guided configuration](guided.md)
+>* [Manual configuration](manual.md)
 >* [Access control](/help/technotes/access-control.md)
 >
 
