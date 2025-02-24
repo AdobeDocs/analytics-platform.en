@@ -31,7 +31,7 @@ To explore the interaction between screens and event types (like add to cart, pu
 
   ![A flow showing the Page dimension dragged to the white space at the end.](assets/flowapp-add.png)
 
-The flow visualization below shows the result of adding the **[!UICONTROL  Event Types]** dimension. The visualization provides insights to how mobile app users move through various screens in the app before adding products to a cart, close the application, are presented an offer, and more.
+The flow visualization below shows the result of adding the **[!UICONTROL Event Types]** dimension. The visualization provides insights to how mobile app users move through various screens in the app before adding products to a cart, close the application, are presented an offer, and more.
 
 ![A fLow showing the Page dimension results at the top of the list.](assets/flowapp-result.png)
 
