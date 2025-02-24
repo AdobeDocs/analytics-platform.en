@@ -57,7 +57,7 @@ For information about how to access the calculated metrics builder, see [Create 
 
 ### Create calculated metrics for a single project
 
-You can create quick calculated metrics that are available only for the project where they were created.
+You can quickly create a calculate metric that is available only for the project where it was created.
 
 To create a calculated metric for a single project:
 
@@ -97,7 +97,7 @@ To create a calculated metric for a single project:
 
    * [!UICONTROL **Multiply**]: Creates a new column that multiplies the values of the two selected columns.
 
-   * [!UICONTROL **Percent change**]: Creates a new column that shows the percent changeof the two selected columns.
+   * [!UICONTROL **Percent change**]: Creates a new column that shows the percent change between the two selected columns.
 
 [Calculated Metrics: Implementation-less metrics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
 

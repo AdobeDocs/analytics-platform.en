@@ -97,7 +97,7 @@ The following [context menu](../freeform-analysis-visualizations.md#context-menu
 | **[!UICONTROL Download items as CSV (*dimension name*)]** | Immediately download the dimension items (to a maximum of 50,000) of the visualization to your local device. A maximum of 50,000 dimension items for the selected dimension. |
 | **[!UICONTROL Copy visualization]** | Copy the visualization, so that you can insert the visualization to another place within the project, or into a completely different project. |
 | **[!UICONTROL Download data CSV]** | Immediately download the displayed data of the visualization to your local device. |
-|**[!UICONTROL  Export full table...]** | Export the full table to a designated cloud locations. See [Exports Customer Journey Analytics reports to the cloud](../../export/export-cloud.md) |
+|**[!UICONTROL Export full table...]** | Export the full table to a designated cloud locations. See [Exports Customer Journey Analytics reports to the cloud](../../export/export-cloud.md) |
 | **[!UICONTROL Duplicate visualization]** | Make an exact duplicate of the visualization. |
 | **[!UICONTROL Edit description]** | Add (or edit) a text description for the visualization. See [Text](../text.md). |
 | **[!UICONTROL Get visualization link]** | Copy and share a link directly to the visualization. A Share link dialog displays the link. Select Copy to copy the link to your clipboard. |
