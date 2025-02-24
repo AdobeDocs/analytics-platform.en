@@ -29,7 +29,7 @@ If your organization has already upgraded to Customer Journey Analytics using on
 
 ## Understand advantages and disadvantages of using the Analytics source connector exclusively
 
-For information about the advantages and disadvantages of using the Analytics source connector, see [Use the Analytics source connector exclusively to upgrade to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md).
+For information about the advantages and disadvantages of using the Analytics source connector, see [Use the Analytics source connector exclusively to upgrade to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md).
 
 ## Transition from the Analytics source connector to the Web SDK
 
