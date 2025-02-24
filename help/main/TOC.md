@@ -25,7 +25,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Feature release strategy](../release-notes/releases.md)
   + [Documentation updates](../release-notes/doc-changes.md)
 
-+ Getting Started {#cja-overview}
++ Get started {#cja-overview}
   + [Customer Journey Analytics overview](../getting-started/cja-overview.md)
   + [Quick start guide](../getting-started/cja-getting-started.md)
   + [Landing page](../getting-started/landing.md)
@@ -91,7 +91,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
 
-+ Data Ingestion {#cja-data-ingestion}
++ Data ingestion {#cja-data-ingestion}
   + [Data ingestion overview](../data-ingestion/data-ingestion.md)
   + Ingest and use quick start guides{#ingest-use-guides}
     + [Adobe Analytics](../data-ingestion/analytics.md)
@@ -115,7 +115,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
   + [Session settings](../data-views/session-settings.md)
-  + Component Settings {#component-settings}
+  + Component settings {#component-settings}
     + [Component settings overview](../data-views/component-settings/overview.md)
     + [Attribution](../data-views/component-settings/attribution.md)
     + [Behavior](../data-views/component-settings/behavior.md)
@@ -174,7 +174,7 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Dynamic and static items](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
       + [Filter and sort tables](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
       + [Workspace totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
-    + Cohort Table {#cohort-table}
+    + Cohort table {#cohort-table}
       + [Overview](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
       + [Configure](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
       + [Use cases](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
@@ -218,7 +218,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Media playback time spent](../analysis-workspace/c-panels/media-playback-time-spent.md)
     + [Next or previous item](../analysis-workspace/c-panels/next-previous.md)
     + [Quick insights](../analysis-workspace/c-panels/quickinsight.md)
-  + Curate, Share and Schedule projects {#curate-share}
+  + Curate, share and schedule projects {#curate-share}
     + [Overview](../analysis-workspace/curate-share/send-schedule-files.md)
     + [Curate projects](../analysis-workspace/curate-share/curate.md)
     + [Share projects](../analysis-workspace/curate-share/share-projects.md)
