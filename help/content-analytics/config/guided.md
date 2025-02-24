@@ -98,6 +98,11 @@ Each configuration requires a unique name. For example, `Example Content Analyti
 >title="Data view"
 >abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your content analytics data with.<br/>"
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_change_dialog"
+>title="New Data view"
+>abstract="The selection of a new data view will result in an update to that data view to include Content Analytics metrics and dimensions. If necessary, the associated connection is also updated to include Content Analytics datasets. The connection and data view that are currently configured for Content Analytics are not modified."
+
 <!-- markdownlint-enable MD034 -->
 
 Your configuration requires the selection of a [Data view](/help/data-views/data-views.md).
@@ -133,22 +138,25 @@ A Data view is tied to a Customer Journey Analytics [Connection](/help/connectio
 >abstract="Collect Experiences in Content Analytics"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_experiences_url_header"
+>id="aca_onboarding_experiences_parameters_header"
 >title="Experience capture and definition"
->abstract="Specify urls which the parameters below apply to"
+>abstract="Specify the parameters that determin how content is rendered on your website."
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_experiences_edit_button"
+>id="aca_onboarding_experiencecapture_edit_button"
 >title="Experience capture and definition"
 >abstract="You can edit the settings in the Adobe Content Analytics extension in the Tag property, associated with the selected configuration."
-
-
 
 <!-- markdownlint-enable MD034 -->
 
 In this section, you can select to include Experiences in the data you collect with Content Analytics.  An experience is all text on a web page that is reproducible using the URL used by the initial user visiting that web page. 
 
 By default, **[!UICONTROL Include experiences]** is turned off. When selected, you have to define for which URLs you want to include experiences.
+
+You should only consider to include experiences when the following is applicable:
+
+* The content on the site is drive by a URL only.
+* The pages on the site must be reproducible using the page URL.
 
 To include Experiences in a new or not implemented configuration:
 
@@ -180,7 +188,7 @@ To edit existing or include new Experiences in an implemented configuration:
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
 >title="Data collection"
->abstract="Provide a Tag property"
+>abstract="**Provide a Tag property**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_boldheader"
@@ -214,7 +222,7 @@ To edit existing or include new Experiences in an implemented configuration:
 
 <!-- markdownlint-enable MD034 -->
 
-#### New configuration
+#### New configuration {#new-configuration}
 
 In a new configuration, you need to define which Tag property you want to use, or create a new Tag property. And you need to define the pages and assets you want to include or exclude, using regular expressions.
 
@@ -242,7 +250,7 @@ In a new configuration, you need to define which Tag property you want to use, o
   * Specify a regular expression for **[!UICONTROL Asset]**. For example: `(?!.*\b(store|help|admin)\b)`.
 
 
-#### Existing configuration
+#### Existing configuration {#existing-configuration}
 
 For an existing configuration, you cannot edit the Tag property. You can, however, edit the pages and assets to include or exclude.
 
@@ -265,37 +273,40 @@ Once you have provided all necessary details, a summary provides details on the 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_implementation_warning"
->title="Onboarding implementation warning"
->abstract="This will configure Content Analytics based partially on the input you provided in this workflow. Several other settings are chosen automatically based on what is generally useful for Content Analytics. You are encouraged to review the settings of each artifact to confirm they meet your requirements and guidelines. <br/><br/>Note that no data will be collected until the Tags library associated with this configuration is published manually.<br/><br/>Also note that in order to derive attributes of images and text, Adobe will retrieve these attributes using the url captured at the time of the users visit per the data collection settings you have implemented."
+>id="aca_onboarding_implementation_warning_dialog"
+>title="Confirmation of implementation"
+>abstract="If you select **[!UICONTROL Implement]**, you will configure Content Analytics based on the input you have provided in this workflow. Several settings are chosen by default based on what is generally useful for Content Analytics, but you (as the data controller) must review the settings of each artefact to confirm the settings are implemented in accordance with your privacy policy, contractual rights and obligations, and consent requirements under applicable law.<br/><br/>Note that no data will be collected until the Tags library associated with this configuration is published manually.<br/><br/>In order to derive attributes of images and text, Adobe will retrieve the attributes using:<ol><li>The URL captured at the time of the users site visit, per the data collection settings you have configured, and</li><li>The URL where the image is hosted.</li></ol>You must not tag images that are hosted on third-party sites."
 
 <!-- markdownlint-enable MD034 -->
-
 
 When you have created or edited a configuration, the following actions are available.
 
 * **[!UICONTROL Discard]**: All changes made as part of creating a new configuration or editing an existing configuration are discarded.
 * **[!UICONTROL Save for later]**: Changes made to a new configuration or an existing, not yet implemented configuration are saved. You can revisit the configuration at a later stage to make further changes, or implement the configuration.
-* **[!UICONTROL Implement]**: Changes made to a new configuration or existing, not yet implemented configuration are saved and implemented. The implementation consists of:
+* **[!UICONTROL Implement]**: Settings for or changes made to a new configuration or existing, not yet implemented configuration are saved and implemented. The implementation consists of:
   * **[!UICONTROL Adobe Experience Platform]** configuration:
-    1. The creation of schemas to model Content Analytics events, asset attributes, and (if configured) experience attributes.
-    1. The creation of datasets to collect Content Analytics events, asset attributes and (if configured) experience attributes.
-  * **[!UICONTROL Content Analytics]** configuration: 
-    * Setup of a featurization assembler process based on the configuration.
-  * **[!UICONTROL Customer Journey Analytics]** configuration:
-    1. The selected Data view is updated to include Content Analytics dimension and metrics.
-    1. The Connection tied to the selected Data view is modified to include Content Analytics event and attribute datasets.
-    1. Content Analytics reporting templates are added to Workspace.
+    * The creation of schemas to model Content Analytics events, asset attributes, and (if configured) experience attributes.
+    * The creation of datasets to collect Content Analytics events, asset attributes and (if configured) experience attributes.
+    * The creation of a dataflow that uses the featurization service to generate and update content attributes from Content Analytics events.
   * **[!UICONTROL Data collection]** configuration:
-      1. The new or existing Tag property is configured to support Content Analytics data collection. This configuration implies the inclusion of the Adobe Content Analytics extension for Tags.
-      1. A datastream is created for Content Analytics events.
-      1. The Adobe Content Analytics extension is configured to ensure that Content Analytics events are sent to the datastream for Content Analytics. 
-      1. If the Web SDK is not configured for the Tags property, a new Web SDK configuration is created to send only Content Analytics events.
-      1. If the Web SDK is configured for this Tag property, no changes are made to the existing Web SDK configuration.
+    * The new or existing Tag property is configured to support Content Analytics data collection. This configuration implies the inclusion of the Adobe Content Analytics extension for Tags.
+    * A datastream is created for Content Analytics events.
+    * The Adobe Content Analytics extension is configured to ensure that Content Analytics events are sent to the datastream for Content Analytics. 
+    * If the Web SDK is not configured for the Tags property, a new Web SDK configuration is created to send only Content Analytics events.
+    * If the Web SDK is configured for this Tag property, no changes are made to the existing Web SDK configuration.
+  * **[!UICONTROL Customer Journey Analytics]** configuration:
+    * The selected Data view is updated to include Content Analytics dimension and metrics.
+    * The Connection tied to the selected Data view is modified to include Content Analytics event and attribute datasets.
+    * A Content Analytics reporting template is added to Workspace. 
 * **[!UICONTROL Save]**: Changes made to an implemented configuration are saved and the implementation is updated.
 * **[!UICONTROL Exit]**. Exits the guided configuration. All changes made to an implemented configuration are discarded.
 
+
+## Publish {#publish}
+
+To activate your Content Analytics configuration you need to [manually](manual.md) publish the Tag property that is created after you selected **[!UICONTROL Implement]**, as part of the guided configuration wizard.
+
 >[!MORELIKETHIS]
 >
->[Manual configuration of Content Analytics](manual.md)
+>[Manual configuration](manual.md)
 >
