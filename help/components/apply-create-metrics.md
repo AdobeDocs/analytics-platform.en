@@ -57,7 +57,7 @@ For information about how to access the calculated metrics builder, see [Create 
 
 ### Create calculated metrics for a single project
 
-You can create quick calculated metrics that are available only for the project where they were created.
+You can quickly create a calculate metric that is available only for the project where it was created.
 
 To create a calculated metric for a single project:
 
