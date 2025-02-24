@@ -31,6 +31,15 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
+>id="cja-upgrade-activity-map-support"
+>title="Activity map overlay support is not yet available"
+>abstract="Activity Map overlay support is not yet available in Customer Journey Analytics. It is planned to be available in the future."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
 >id="cja-upgrade-classification"
 >title="Classification data"
 >abstract="Group or categorize data as separate dimensions."
