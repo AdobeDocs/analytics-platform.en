@@ -279,7 +279,6 @@ Once you have provided all necessary details, a summary provides details on the 
 
 <!-- markdownlint-enable MD034 -->
 
-
 When you have created or edited a configuration, the following actions are available.
 
 * **[!UICONTROL Discard]**: All changes made as part of creating a new configuration or editing an existing configuration are discarded.
