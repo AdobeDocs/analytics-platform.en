@@ -25,6 +25,23 @@ exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 
 <!-- markdownlint-enable MD034 -->
 
+Customer Journey Analytics provides a canvas to drag and drop dimensions, metrics, filters, and functions to create custom metrics based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple or complex calculated metrics.
+
+## Begin building a calculated metric
+
+You can use the calculated metric builder to create or edit calculated metrics. When created in this way, calculated metrics are available in the component list and can then be used in projects throughout your organization. Alternatively, you can quickly create a calculated metric that is available only for the project where it was created, as described in [Create calculated metrics for a single project](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) in [Metrics](/help/components/apply-create-metrics.md).
+
+Access the calculated metric builder to begin creating a calculated metric that is available in the component list. 
+
+1. Access the calculated metric builder in any of the follows ways:
+
+   * In Analysis Workspace, open a project, then select **[!UICONTROL Components]** > **[!UICONTROL Create metric]**.
+   * In Analysis Workspace, open a project, then select the **Plus** icon next to the [!UICONTROL **Metrics**] section in the left rail.
+   * In [!DNL Customer Journey Analytics], go to **[!UICONTROL Components]** > **[!UICONTROL Calculated metrics]**, then select **[!UICONTROL + Add]** at the top of the Calculated metrics page.
+
+1. Continue with [Areas of the calculated metric builder](#areas-of-the-calculated-metrics-builder).
+
+## Areas of the calculated metrics builder
 
 The **[!UICONTROL Calculated metric builder]** dialog is used to create new or edit existing calculated metrics. The dialog is titled **[!UICONTROL New calculated metric]** or **[!UICONTROL Edit calculated metric]** for metrics that you create or manage from the [[!UICONTROL Calculated metrics] manager](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
