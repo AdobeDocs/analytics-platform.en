@@ -51,7 +51,7 @@ Conditional formatting applies formatting to upper, midpoint, and lower limits t
 
 | Conditional formatting options | Description |
 | --- | --- |
-|**[!UICONTROL  Use percent limits]** | Change the limit range to be based on percentages rather than absolute values. The percentage limit range works for metrics that are solely percentage based (like Bounce Rate) and for metrics that have a count and a percentage (like Page Views). |
+|**[!UICONTROL Use percent limits]** | Change the limit range to be based on percentages rather than absolute values. The percentage limit range works for metrics that are solely percentage based (like Bounce Rate) and for metrics that have a count and a percentage (like Page Views). |
 | **[!UICONTROL Auto-generated]**| Automatically calculate upper/mid/lower limits based on the data. The upper limit is the largest value in this column. The lower limit is the lowest, and the midpoint is the average of the upper and lower limits. |
 | **[!UICONTROL Custom]** | Manually assign **[!UICONTROL Upper limit]**, **[!UICONTROL Midpoint]** and **[!UICONTROL Lower limit]**. Limits provide the flexibility to determine when a column value becomes good, average, or poor. |
 | **[!UICONTROL Conditional formatting palette]** | Apply a preconfigured color set to cells. Depending on which of the four available color schemes you select, different colors are assigned to high values, midpoint values, and low values. <br> Replacing a dimension in the table resets the conditional formatting limits. Replacing a metric recalculates the limits for that column (where a metric is on the X axis and a dimension is on the Y axis). |
