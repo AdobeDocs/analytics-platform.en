@@ -46,7 +46,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Architect your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [Create your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
       + [Use your existing schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
-    + Create a datastream
+    + Create a datastream {#create-datastream}
       + [Create a datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
       + [Add Platform as a service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
     + Create datasets {#create-datasets}
@@ -68,8 +68,8 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
     + [Evaluate when to disable Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
     + [Disable Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
-    + Alternative upgrade methods
-      + [Use AppMeasurement data collection](/help/getting-started/cja-upgrade/cja-upgrade-alternative-app-measurement.md)
+    + Alternative upgrade methods {#alternative-upgrade-methods}
+      + [Use AppMeasurement data collection](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)
       + [Send data layer](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)
       + [Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)
     + Other upgrade scenarios {#other-upgrade-scenarios}
