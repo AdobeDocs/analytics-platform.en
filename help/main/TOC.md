@@ -25,15 +25,18 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Feature release strategy](../release-notes/releases.md)
   + [Documentation updates](../release-notes/doc-changes.md)
 
-+ Getting Started {#cja-overview}
-  + [Overview](../getting-started/cja-overview.md)
-  + [B2B edition](/help/getting-started/cja-b2b-edition.md)
-  + [Quick start guide](../getting-started/cja-getting-started.md)
-  + [Landing page](../getting-started/landing.md)
-  + [Frequently asked questions](../getting-started/cja-faq.md)
-  + [Compare to BI solutions](../getting-started/cja-vs-bi.md)
-  + [AI Assistant](../ai-assistant.md)
-  + [Data Analysis AI Assistent for Customer Journey Analytics](../data-analysis-ai.md)
++ Get Started {#cja-overview}
+  + Customer Journey Analytics {#cja-b2c-overview}
+    + [Overview](../getting-started/cja-overview.md)
+    + [Quick start guide](../getting-started/cja-getting-started.md)
+    + [Landing page](../getting-started/landing.md)
+    + [Frequently asked questions](../getting-started/cja-faq.md)
+    + [Compare to BI solutions](../getting-started/cja-vs-bi.md)
+    + [AI Assistant](../ai-assistant.md)
+    + [Data Analysis AI Assistent for Customer Journey Analytics](../data-analysis-ai.md)
+  + Customer Journey Analytics B2B Edition (#cja-b2b)
+    + [Overview](/help/getting-started/cja-b2b-edition.md)
+    + 
 
 + Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
   + Upgrade to Customer Journey Analytics {#upgrade-to-cja}
