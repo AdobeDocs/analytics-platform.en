@@ -16,9 +16,8 @@ When comparing audience membership counts between Real-time CDP and Customer Jou
 
 Real-time CDP and Customer Journey Analytics do not share the same definition of a person today. Real-time CDP relies entirely on the information in the [Identity Graph](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html) to build a merged profile.
 
-Customer Journey Analytics can be configured to use [Stitching](../stitching/overview.md) which extracts identifiers from datasets in the data lake and applies custom logic to link them together.
+Customer Journey Analytics can be configured to use [Stitching](../stitching/overview.md). If you use [Field based stitching](/help/stitching/fbs.md) as the stitching mechanism, you specify an identifier from a dataset in the data lake to stitch the data in that dataset with the purpose to elevate the dataset with improved merged profiles. If you use [Graph based stitching](/help/stitching/gbs.md) as the stitching mechanism, a similar process is using the identity graph, based on a specified identity namespace.
 
-In the future, Customer Journey Analytics will be able to use Identity Graph.
 
 ## Differences in dataset configuration 
 
