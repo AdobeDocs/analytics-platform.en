@@ -194,3 +194,17 @@ Use the following information to choose the visualization that best meets your n
 | **Adobe Journey Optimizer journeys** | Yes</br>Open journeys from Journey Optimizer for deeper analysis and customization | No |  No |
 
 {style="table-layout:auto"}
+
+## Upgrade checklist note {#upgrade-note}
+
+>[!NOTE]
+> 
+>Use the information on this page when answering questions in the [Customer Journey Analytics upgrade checklist](https://gigazelle.github.io/cja-ttv/).
+
+## Upgrade checklist note subsequent step {#upgrade-note-step}
+
+>[!NOTE]
+> 
+>Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
+>
+>After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
