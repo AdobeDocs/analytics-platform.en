@@ -31,6 +31,15 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
+>id="cja-upgrade-activity-map-support"
+>title="Activity map overlay support is not yet available"
+>abstract="Activity Map overlay support is not yet available in Customer Journey Analytics. It is planned to be available in the future."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
 >id="cja-upgrade-classification"
 >title="Classification data"
 >abstract="Group or categorize data as separate dimensions."
@@ -70,6 +79,15 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 >id="cja-upgrade-streaming-media"
 >title="Streaming Media data"
 >abstract="An add-on to Adobe Analytics that specializes in data collection of media, such as audio, video, or streamed content."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-component-migration"
+>title="Migrate projects and components"
+>abstract="Bring Adobe Analytics projects and their associated components to Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -84,7 +84,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
    * **[!UICONTROL AI Assistant: Data Analysis]**
    
-   For additional details, administrators can see [these instructions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/ai-assistant#feature-access). 
+   For additional details, administrators can see [these instructions](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access). 
 
    ![AI Assistant icon](/help/assets/ai-asst-icon.png)
 

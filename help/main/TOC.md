@@ -16,6 +16,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Release Notes {#releases}
   + [Latest release](../release-notes/latest.md)
+  + [2025 releases](../release-notes/2025.md)
   + [2024 releases](../release-notes/2024.md)
   + [2023 releases](../release-notes/2023.md)
   + [2022 releases](../release-notes/2022.md)
@@ -40,34 +41,44 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Choose your upgrade path](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
     + [Send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
     + [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
-    + [Recommended process](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
-    + [Understand Analytics implementation](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
-    + [Create lookup datasets for classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
-    + [Monitor dataset ingestion](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-    + [Create a marketing channel derived field](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
-    + [Implement the loader tag for the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
-    + [Create a tag for your property](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
-    + [Add the Web SDK extension to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
-    + [Add XDM data collection logic to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
-    + [Architect your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
-    + [Create your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
-    + [Use your existing schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
-    + [Create a dataset](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
-    + [Create a datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
-    + [Add Platform as a service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+    + [Recommended upgrade process](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+    + Architect and create a schema {#schema}
+      + [Architect your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+      + [Create your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
+      + [Use your existing schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
+    + Create a datastream {#create-datastream}
+      + [Create a datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
+      + [Add Platform as a service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+    + Create datasets {#create-datasets}
+      + [Create a dataset](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
+      + [Create lookup datasets for classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+      + [Monitor dataset ingestion](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
+    + Create tags {#create-tags}
+      + [Create a tag for your property](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
+      + [Add the Web SDK extension to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+      + [Implement the loader tag for the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
+      + [Add XDM data collection logic to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
     + [Create a connection](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
     + [Create a data view](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
+    + [Create a marketing channel derived field](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
     + [Validate data flow](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
-    + [Upgrade shortcut: Migrate to Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
-    + [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
-    + [Create the Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
-    + [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
-    + [Use the Analytics source connector exclusively](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)
-    + [Move from the Analytics source connector to the Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
-    + [Disable AppMeasurement data collection](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
-    + [Upgrade from a third-party analytics solution](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
-    + [Adobe Analytics feature support when upgrading](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
-    + [Adobe Analytics during and after an upgrade](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+    + Retain historical data with the Analytics source connector {#historical-data-source-connector}
+      + [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+      + [Create the Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+      + [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+    + [Evaluate when to disable Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+    + [Disable Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
+    + Alternative upgrade methods {#alternative-upgrade-methods}
+      + [Use AppMeasurement data collection](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)
+      + [Send data layer](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)
+      + [Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)
+    + Other upgrade scenarios {#other-upgrade-scenarios}
+      + [Move from the Analytics source connector to the Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
+      + [Upgrade from a non-Adobe Analytics solution](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
+    + Additional information {#additional-information}
+      + [Understand Analytics implementation](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
+      + [Adobe Analytics feature support when upgrading](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
+      + [Customer Journey Analytics features](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -80,7 +91,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
 
-+ Data Ingestion {#cja-data-ingestion}
++ Data ingestion {#cja-data-ingestion}
   + [Data ingestion overview](../data-ingestion/data-ingestion.md)
   + Ingest and use quick start guides{#ingest-use-guides}
     + [Adobe Analytics](../data-ingestion/analytics.md)
@@ -104,7 +115,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
   + [Session settings](../data-views/session-settings.md)
-  + Component Settings {#component-settings}
+  + Component settings {#component-settings}
     + [Component settings overview](../data-views/component-settings/overview.md)
     + [Attribution](../data-views/component-settings/attribution.md)
     + [Behavior](../data-views/component-settings/behavior.md)
@@ -163,7 +174,7 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Dynamic and static items](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
       + [Filter and sort tables](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
       + [Workspace totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
-    + Cohort Table {#cohort-table}
+    + Cohort table {#cohort-table}
       + [Overview](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
       + [Configure](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
       + [Use cases](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
@@ -207,7 +218,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Media playback time spent](../analysis-workspace/c-panels/media-playback-time-spent.md)
     + [Next or previous item](../analysis-workspace/c-panels/next-previous.md)
     + [Quick insights](../analysis-workspace/c-panels/quickinsight.md)
-  + Curate, Share and Schedule projects {#curate-share}
+  + Curate, share and schedule projects {#curate-share}
     + [Overview](../analysis-workspace/curate-share/send-schedule-files.md)
     + [Curate projects](../analysis-workspace/curate-share/curate.md)
     + [Share projects](../analysis-workspace/curate-share/share-projects.md)
