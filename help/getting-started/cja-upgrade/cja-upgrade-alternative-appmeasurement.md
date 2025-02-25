@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
 ---
 # Upgrade alternative: Use AppMeasurement data collection with the Experience Platform Web SDK and Customer Journey Analytics {#data-collection-appmeasurement}
 
@@ -67,4 +68,3 @@ The basic steps for migrating an Adobe Analytics implementation (either AppMeasu
    1. Use datastream mapping to map all of the fields in the data object to your XDM schema.
 
       For more information, see [Mapping](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Data Prep for Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) in the Experience Platform documentation.
-

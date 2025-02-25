@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
 ---
 # Upgrade alternative: Send your data layer to Customer Journey Analytics {#data-collection-data-layer}
 
@@ -65,6 +66,3 @@ The basic steps for sending your entire data layer to Customer Journey Analytics
 1. Map every data layer element to the desired XDM field. 
 
    Any data layer elements that are not mapped to an XDM field are permanently dropped, since Adobe does not know where or how to store that data.
-
-
-
