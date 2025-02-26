@@ -179,13 +179,24 @@ Select the linked section titles for more information and context about the avai
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
->title="Default table metric"
->abstract="Select the default container to use for Flow visualizations. If the selected data view does not contain the selected default container, the Flow visualization will automatically switch to another primary container."
+>title="Default container"
+>abstract="Select the default container to use for [!UICONTROL Flow] visualizations. If the selected data view does not contain the selected default container, the [!UICONTROL Flow] visualization will automatically switch to another primary container."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
->title="Default table metric"
->abstract="Select the default container to use for Fallout visualizations. If the selected data view does not contain the selected default container, the Fallout visualization will automatically switch to another primary container."
+>title="Default container"
+>abstract="Select the default container to use for [!UICONTROL Fallout] visualizations. If the selected data view does not contain the selected default container, the [!UICONTROL Fallout] visualization will automatically switch to another primary container."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaulthistogramcountingmethod"
+>title="Default counting method"
+>abstract="Select the default counting method to use for [!UICONTROL Histogram] visualizations. If the selected data view does not contain the selected default counting method, the [!UICONTROL Histogram] visualization will automatically switch to another primary counting method."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultjourneycanvascontainer"
+>title="Default container"
+>abstract="Select the default container to use for [!UICONTROL Journey canvas] visualizations. If the selected data view does not contain the selected default container, the [!UICONTROL Journey canvas] visualization will automatically switch to another primary container."
+
 
 You can update visualization preferences for all new prjects that you create in Analysis Workspace. For information about how to access these preferences, see [Update preferences](#update-preferences). 
 
