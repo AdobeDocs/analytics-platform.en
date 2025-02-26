@@ -78,7 +78,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-streaming-media"
 >title="Streaming Media data"
->abstract="An add-on to Adobe Analytics that specializes in data collection of media, such as audio, video, or streamed content."
+>abstract="An add-on to Adobe Analytics and Customer Journey Analytics that specializes in data collection of media, such as audio, video, or streamed content."
 
 <!-- markdownlint-enable MD034 -->
 
