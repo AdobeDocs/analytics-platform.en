@@ -86,7 +86,6 @@ From Data Ingestion to direct SQL access, several components of the Experience P
 
 ## Videos
 
-
 >[!BEGINSHADEBOX]
 
 See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Work with data in Customer Journey Analytics](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} for a introduction video omn how to work with data in Customer Journey Analytics.
@@ -99,4 +98,8 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architecture and
 
 >[!ENDSHADEBOX]
 
-  
+* [Adobe Customer Journey Analytics Crash Course for Analysts](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261)
+
+* [Optimizing Your Mindset and Adobe Customer Journey Analytics Workflow: Team Models for Organizations of All Sizes](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456)
+
+* [Building Organizational Readiness: A People-First Guide to Scaling Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273)
