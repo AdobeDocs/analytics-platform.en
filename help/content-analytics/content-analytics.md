@@ -56,7 +56,7 @@ Content Analytics uses web image view data collected in event datasets in Experi
 
 >[!NOTE]
 >
->Content Analytics leverages AI/ML As a results, results (like the featurization of experiences and assets) may be inaccurate.
+>Content Analytics leverages AI/ML. The results (for the featurization of experiences and assets) may be inaccurate.
 >
 
 
