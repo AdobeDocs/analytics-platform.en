@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: b807099d-a61d-48f9-9fec-94ecc6b76213
 ---
 # Set up Streaming Media Collection for Customer Journey Analytics {#streaming-media-setup}
 
@@ -88,5 +89,3 @@ As you create the schema, dataset, datastream, connection, and data view as part
   For more information about the required fields, see [Create a data view in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md) in the Streaming Media Collection Guide.
 
   For information about creating the data view, see [Create a data view in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md).
-
-
