@@ -67,15 +67,6 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-upgrade-data-feeds-step"
->title="Use export features similar to Data Feeds"
->abstract="An exact replacement for Data Feeds is not yet available in Customer Journey Analytics. However, similar functionality can be achieved with capabilities such as full table export, Platform dataset export, BI tool integration, and the reporting API."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
 >id="cja-upgrade-data-warehouse"
 >title="Data Warehouse"
 >abstract="Export processed data from Adobe Analytics in spreadsheet format."
