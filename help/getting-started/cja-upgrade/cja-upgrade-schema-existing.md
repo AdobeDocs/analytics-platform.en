@@ -28,9 +28,7 @@ exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
->
->This documentation should be used as part of the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 <!-- this page exists as the "Learn more" link in the info icons for the options "I am comfortable using my Adobe Analytics schema as a basis" and "I want to use a schema tailored to my organization" -->
 

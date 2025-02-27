@@ -36,6 +36,8 @@ hidefromtoc: yes
 
 <!-- markdownlint-enable MD034 -->
 
+{{upgrade-note}}
+
 The recommended process of upgrading from Adobe Analytics to Customer Journey Analytics is a new implementation of the Experience Platform Web SDK, which is the preferred data collection method for Customer Journey Analytics.
 
 There are three supported ways to use Adobe Experience Platform Web SDK:

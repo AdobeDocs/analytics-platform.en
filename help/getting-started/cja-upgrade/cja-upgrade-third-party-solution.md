@@ -19,9 +19,7 @@ exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Use the information on this page when answering questions in the [Customer Journey Analytics upgrade checklist](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 The recommended process of upgrading from an analytics solution other than Adobe Analytics to Customer Journey Analytics is a new implementation of the Experience Platform Web SDK, which is the preferred data collection method for Customer Journey Analytics. In conjunction with the Web SDK, Adobe also recommends ingesting historical data from the third-party analytics solution into Adobe Experience Platform. 
 

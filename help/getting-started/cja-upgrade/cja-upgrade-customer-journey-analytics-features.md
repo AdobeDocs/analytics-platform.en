@@ -73,9 +73,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Use the information on this page when answering questions in the [Customer Journey Analytics upgrade checklist](https://gigazelle.github.io/cja-ttv/). 
+{{upgrade-note}} 
 
 The following list shows only those Customer Journey Analytics features that require consideration during the upgrade process. For a comprehensive list that shows which Adobe Analytics features are fully supported, partially supported, or not supported in Customer Journey Analytics, see [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md).
 
