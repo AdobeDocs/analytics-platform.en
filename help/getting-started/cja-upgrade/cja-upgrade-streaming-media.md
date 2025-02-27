@@ -21,6 +21,38 @@ exl-id: b807099d-a61d-48f9-9fec-94ecc6b76213
 
 {{upgrade-note-step}}
 
+Like in Adobe Analytics, the Streaming Media Collection can be used to collect streaming media data for use in Customer Journey Analytics. If you use the Streaming Media Collection with Adobe Analytics, you should include it in your upgrade plans to Customer Journey Analytics.
+
+As you go through the steps to upgrade from Adobe Analytics to Customer Journey Analytics, make the following selections to account for Streaming Media Collection data:
+
+* When creating the schema for Customer Journey Analytics, include the `MediaAnalytics Interaction Details` field group.
+
+  For more information about adding this field group, see [Set up the schema in Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge#set-up-the-schema-in-adobe-experience-platform) in the Streaming Media Collection Guide.
+
+  For information about creating the schema, see [Create a custom schema to use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
+
+* When configuring the datastream for Customer Journey Analytics, enable Media Analytics. 
+
+  For more information about enabling this option, see [Configure a datastream in Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge#configure-a-datastream-in-adobe-experience-platform) in the Streaming Media Collection Guide.
+
+  For information about creating the datastream, see [Create a datastream to use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md).
+
+  >[!NOTE]
+  >
+  >If your Adobe Analytics implementation is already using the Experience Platform Web SDK, this step is not be necessary. 
+
+* When creating a data view for Customer Journey Analytics, include the required schema fields for the Streaming Media Collection.
+
+  Make sure you map these schema fieldds to the correct values in the XDM object.
+
+  For more information about the required fields, see [Create a data view in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md) in the Streaming Media Collection Guide.
+
+  For information about creating the data view, see [Create a data view in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md).
+
+<!--
+
+------------------
+
 The steps for implementing the Streaming Media Collection in Customer Journey Analytics differ depending on your current Streaming Media Collection implementation in Adobe Analytics. 
 
 Streaming Media Collection can be implemented in Adobe Analytics in either of the following ways:
@@ -77,3 +109,5 @@ As you create the schema, dataset, datastream, connection, and data view as part
   For more information about the required fields, see [Create a data view in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md) in the Streaming Media Collection Guide.
 
   For information about creating the data view, see [Create a data view in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md).
+
+  -->
