@@ -23,7 +23,7 @@ The following manual configuration actions are available:
 
 ## Publish
 
-To activate a Content Analytics configuration, you need to publish the associated Tag property.
+To activate a Content Analytics configuration, you need to [publish](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} the associated Tag property. Only when you publish your Content Analytics Tag property, Content Analytics data is collected for the domains, experience and assets that you have configured 
 
 
 ## Modify 
@@ -31,4 +31,5 @@ To activate a Content Analytics configuration, you need to publish the associate
 >[!MORELIKETHIS]
 >
 >[Guided configuration](guided.md)
+>[Data collection Tags publishing overview](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)
 >
