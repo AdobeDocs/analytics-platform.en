@@ -27,19 +27,7 @@ Streaming Media Collection can be implemented in Adobe Analytics in either of th
 
 * [Edge Network implementations for the Streaming Media Collection](#edge-network-implementations)
 
-  +++ View infographic
-
-  ![Streaming Media on Edge implementation](assets/streaming-media-edge.png)
-
-  +++
-
 * [Adobe Analytics-only implementations for the Streaming Media Collection](#adobe-analytics-only-implementations)
-
-  +++ View infographic
-
-  ![Analytics-only implementation](assets/analytics-implementation.png)
-
-  +++
 
 For more information about the differences between these implementation methods, see [Implement the Streaming Media Collection](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/overview) in the Streaming Media Collection Guide.
 
