@@ -17,10 +17,26 @@ exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 
 {{release-limited-testing}}
 
+The configuration of Content Analytics consists of the following steps:
 
-To configure Content Analytics for your organization, you use the Content Analytics [guided configuration](guided.md). The configuration wizard guides you through all steps required to setup the prerequisites for an automatic configuration of Content Analytics.
+![Configuration of Content Analytics](../assets/aca-configuration.svg)
 
-After a successful implementation you can make some changes using the guided configuration wizard. However, [manual changes](manual.md) might be required on top of that.
+1. Use the Content Analytics [guided configuration](guided.md) wizard to guide you through all steps required to setup the prerequisites for a configuration of Content Analytics. You can save your configurations and return later.
+1. Once you are comfortable with the configuration values, you can implement the configuration. This implementation step creates all required artefacts, based on what you have configured in the wizard. The following artefacts are created, updated or selected:
+   * Custom Journey Analytics
+     * A [data view](/help/data-views/data-views.md) is selected.
+     * A [connection](/help/connections/overview.md) is automatically derived from the selected data view.
+   * Experience Platform
+     * The sandbox is selected, derived from the connection. The necessary workflows and services are enabled on the sandbox.
+     * Content Analytics schemas are created or selected on the sandbox.
+     * Content Analytics datasets are created or selected on the sandbox.
+   * Data Collection
+     * A datastream is created and an Experience Platform service is configured within the datastream to stream data to the Content Analytics experience event dataset.
+     * A Tag property is created with the Adobe Content Analytics extension configured for the correct sandbox, datastream and other configuration options from the configuration wizard.
+1. Only when you manually publish the Tag property, Content Analytics is effectively deployed and activated.
+1. You can only make some limited changes to an implemented configuration using the [guided configuration](guided.md) wizard. For example, change the [data view](/help/data-views/data-views.md).
+1. You can make other changes to an implemented configuration through the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the associated Tag property.
+1. Only when you manually re-publish the Tag property, the configuration modifications from step 4 and 5 are effectively deployed and activated.
 
 ## Prerequisites
 

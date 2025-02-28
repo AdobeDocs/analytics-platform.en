@@ -53,3 +53,9 @@ To open the preview with the following details:
 ## Template
 
 Details about templates ...
+
+
+>[!MORELIKETHIS]
+>
+>[Content Analytics components](components.md)
+>
