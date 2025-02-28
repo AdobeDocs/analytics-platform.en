@@ -21,7 +21,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="workspace_cohorttable_panel"
 >title="Cohort table"
->abstract="Group users based on completion of an event, then analyze their ongoing engagement and churn over time.<br/><br/>**Parameters**<br/>**Inclusion criteria**: The components used to define your initial visitor cohorts.<br/>**Return criteria**: The components used to determine if a visitor has returned."
+>abstract="Group users based on completion of an event, then analyze their ongoing engagement and churn over time. Specify additional settings like granularity, type of cohort analysis, and whether or not to use rolling calculation. You can set advanced options to build a latency table or a custom dimension cohort based on a selected dimension."
 
 <!-- markdownlint-enable MD034 -->
 
