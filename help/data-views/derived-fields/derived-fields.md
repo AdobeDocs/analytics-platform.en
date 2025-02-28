@@ -1988,8 +1988,9 @@ As an example, the Classify rule below uses 3 operators.
 
 Support for lookup and profile fields in Derived Fields enables you to transform data based on event lookups and profile attributes. This can be especially helpful in B2B scenarios with account-level data in lookup or profile datasets. Additionally, this support is useful to manipulate data in common fields from lookup data (like campaign info and offer type), or from profile data (like member tier and account type).
 
-See for more background information on Derived Fields:
+>[!MORELIKETHIS]
+>
+>- [Blog: Making the Most of Your Data: A Framework for Using Derived Fields in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+>- [Blog: Derived Fields Use Cases for Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [Blog: Adobe Customer Journey Analytics Derived Fields Enhancements](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 
-- [Making the Most of Your Data: A Framework for Using Derived Fields in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
-
-- [Derived Fields Use Cases for Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
