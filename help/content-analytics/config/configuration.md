@@ -22,14 +22,14 @@ The configuration of Content Analytics consists of the following steps:
 ![Configuration of Content Analytics](../assets/aca-configuration.svg)
 
 1. Use the Content Analytics [guided configuration](guided.md) wizard to guide you through all steps required to setup the prerequisites for a configuration of Content Analytics. You can save your configurations and return later.
-1. Once you are comfortable with the configuration values, you can implement the configuration. This implementation step creates all required artefacts, based on what you have configured in the wizard. The following artefacts are created, updated or selected:
+1. Once you are comfortable with the configuration values, you can implement the configuration. This implementation creates all required artefacts, based on what you have configured in the wizard. The following artefacts are created, updated or selected:
    * Custom Journey Analytics
      * A [data view](/help/data-views/data-views.md) is selected.
-     * A [connection](/help/connections/overview.md) is automatically derived from the selected data view.
+     * A [connection](/help/connections/overview.md) is selected, automatically derived from the selected data view.
    * Experience Platform
-     * The sandbox is selected, derived from the connection. The necessary workflows and services are enabled on the sandbox.
-     * Content Analytics schemas are created or selected on the sandbox.
-     * Content Analytics datasets are created or selected on the sandbox.
+     * The sandbox is selected, automatically derived from the connection. The necessary workflows and services are enabled on the sandbox.
+     * Content Analytics schemas are selected on the sandbox. If not available, the necessary schemas are created.
+     * Content Analytics datasets selected on the sandbox. If not available, the necessary datasets are created.
    * Data Collection
      * A datastream is created and an Experience Platform service is configured within the datastream to stream data to the Content Analytics experience event dataset.
      * A Tag property is created with the Adobe Content Analytics extension configured for the correct sandbox, datastream and other configuration options from the configuration wizard.
