@@ -15,7 +15,7 @@ exl-id: b807099d-a61d-48f9-9fec-94ecc6b76213
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-media-edge"
 >title="Set up and implement Media Edge"
->abstract="You can configure the Adobe Streaming Media Collection to use Experience Platform Edge to make data available in Customer Journey Analytics."
+>abstract="If you plan to use the Streaming Media Collection with Customer Journey Analytics, you need to make specific selections at certain steps in the upgrade process. For example, you need to add the MediaAnalytics Interactions Details field group to your schema, enable Media Analytics in the datastream, and more."
 
 <!-- markdownlint-enable MD034 -->
 
