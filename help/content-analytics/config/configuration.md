@@ -17,39 +17,57 @@ exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 
 {{release-limited-testing}}
 
+The configuration of Content Analytics consists of the following steps:
 
-To configure Content Analytics for your organization, you use the Content Analytics [guided configuration](guided.md). The configuration wizard guides you through all steps required to setup the prerequisites for an automatic configuration of Content Analytics.
+![Configuration of Content Analytics](../assets/aca-configuration.svg)
 
-After a successful implementation you can make some changes using the guided configuration wizard. However, [manual changes](manual.md) might be required on top of that.
+1. Use the Content Analytics [guided configuration](guided.md) wizard to guide you through all steps required to setup the prerequisites for a configuration of Content Analytics. You can save your configurations and return later.
+1. Once you are comfortable with the configuration values, you can implement the configuration. This implementation creates all required artefacts, based on what you have configured in the wizard. The following artefacts are created, updated or selected:
+   * Custom Journey Analytics
+     * A [data view](/help/data-views/data-views.md) is selected.
+     * A [connection](/help/connections/overview.md) is selected, automatically derived from the selected data view.
+   * Experience Platform
+     * The sandbox is selected, automatically derived from the connection. The necessary workflows and services are enabled on the sandbox.
+     * Content Analytics schemas are selected on the sandbox. If not available, the necessary schemas are created.
+     * Content Analytics datasets selected on the sandbox. If not available, the necessary datasets are created.
+   * Data Collection
+     * A datastream is created and an Experience Platform service is configured within the datastream to stream data to the Content Analytics experience event dataset.
+     * A Tag property is created with the Adobe Content Analytics extension configured for the correct sandbox, datastream and other configuration options from the configuration wizard.
+1. Only when you manually publish the Tag property, Content Analytics is effectively deployed and activated.
+1. You can only make some limited changes to an implemented configuration using the [guided configuration](guided.md) wizard. For example, change the [data view](/help/data-views/data-views.md).
+1. You can make other changes to an implemented configuration through the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the associated Tag property.
+1. Only when you manually re-publish the Tag property, the configuration modifications from step 4 and 5 are effectively deployed and activated.
 
-## Prerequisites
 
 Before you configure Content Analytics, ensure you the following prerequisites are met:
 
-* You have allow-listed the User Agent and IP address for the featurization service that is used in Content Analytics. The User Agent string is `AdobeFeaturization/1.0`.
-* You have a Customer Journey Analytics Product Administrator role, with the additional permissions to manage connections and to manage data collections. The required Experience Platform permissions are:
-  
-  | Category | Permission | Description |
-  |---|---|---|
-  | [!UICONTROL Data Collection] | View Datastreams | Read-only access to datastreams. |
-  | [!UICONTROL Data Collection] | Manage Datastreams | Acces to read, create, edit and delete datastreams. |
-  | [!UICONTROL Data Modeling] | [!UICONTROL View Schemas] | Read-only access to schemas and related resources. |
-  | [!UICONTROL Data Modeling] | [!UICONTROL Manage Schemas] | Access to read, create, edit, and delete schemas and related resources. |
-  | [!UICONTROL Data Management] | [!UICONTROL View Datasets] | Read-only access for datasets and schemas. |
-  | [!UICONTROL Data Management] | [!UICONTROL Manage Datasets] | Access to read, create, edit, and delete datasets. Read-only access for schemas. |
-  | [!UICONTROL Data Ingestion] | [!UICONTROL Manage Sources] | Access to read, create, edit, and disable sources. |
-  | [!UICONTROL Identity Management] | [!UICONTROL View Identity Namespaces] | Read-only access for identity namespaces. |
 
-* You have carefully considered the following important configuration options:
-
-  * You site is suited for experience reporting? Proper eperience reporting is only possible when the following conditions are met:
-    * The site content is driven by URLs only.
-    * The pages on your site are reproducible using the page URL, and you understand what optional URL parameters drive experiences.
-  * You have a clear understanding for which pages you want to capture content engagement analysis and insights.
-  * You have a clear understanding for which (type of) assets you want to capture content engagement analysis and insights.
-
-    
+>[!PREREQUISITES]
 >
+>* You have allow-listed the User Agent and IP address for the featurization service that is used in Content Analytics. The User Agent string is `AdobeFeaturization/1.0`.
+>* You have a Customer Journey Analytics Product Administrator role, with the additional permissions to manage connections and to manage data collections. The required Experience Platform permissions are:
+>  
+>   | Category | Permission | Description |
+>   |---|---|---|
+>   | [!UICONTROL Data Collection] | View Datastreams | Read-only access to datastreams. |
+>   | [!UICONTROL Data Collection] | Manage Datastreams | Acces to read, create, edit and delete datastreams. |
+>   | [!UICONTROL Data Modeling] | [!UICONTROL View Schemas] | Read-only access to schemas and related resources. |
+>   | [!UICONTROL Data Modeling] | [!UICONTROL Manage Schemas] | Access to read, create, edit, and delete schemas and related resources. |
+>   | [!UICONTROL Data Management] | [!UICONTROL View Datasets] | Read-only access for datasets and schemas. |
+>   | [!UICONTROL Data Management] | [!UICONTROL Manage Datasets] | Access to read, create, edit, and delete datasets. Read-only access for schemas. |
+>   | [!UICONTROL Data Ingestion] | [!UICONTROL Manage Sources] | Access to read, create, edit, and disable sources. |
+>   | [!UICONTROL Identity Management] | [!UICONTROL View Identity Namespaces] | Read-only access for identity namespaces. |
+>
+>* You have carefully considered the following important configuration options:
+>
+>   * You site is suited for experience reporting? Proper eperience reporting is only possible when the following conditions are met:
+>   * The site content is driven by URLs only.
+>   * The pages on your site are reproducible using the page URL, and you understand what optional URL parameters drive experiences.
+>* You have a clear understanding for which pages you want to capture content engagement analysis and insights.
+>* You have a clear understanding for which (type of) assets you want to capture content engagement analysis and insights.
+>
+
+
 >[!MORELIKETHIS]
 >
 >* [Guided configuration](guided.md)
