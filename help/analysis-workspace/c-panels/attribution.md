@@ -18,7 +18,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_panel"
 >title="Attribution panel"
->abstract="Quickly compare and visualize any number of attribution models for a success metric. Select channel (dimension), the models to include and the lookback window.
+>abstract="Quickly compare and visualize any number of attribution models for a success metric. Select the channel (dimension), the models to include and the lookback window." 
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ panel"
 
 <!-- markdownlint-enable MD034 -->
