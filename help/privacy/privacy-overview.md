@@ -30,3 +30,7 @@ Customer Journey Analytics will not subscribe to the General Data Protection Reg
 The California Consumer Privacy Act (CCPA) enhances privacy rights and consumer protection for residents of California, United States. This Act became effective on January 1, 2020.
 The CCPA provides new data privacy rights to California residents, such as the right to access and delete their personal data, to know whether their personal data is sold or disclosed (and to whom), and to refuse the sale of their personal data.
 In accordance with the CCPA, the Privacy Service supports requests to opt out from the selling of personal data.
+
+>[!MORELIKETHIS]
+>
+>* [Blog: How to Maintain Effective Governance In Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4)

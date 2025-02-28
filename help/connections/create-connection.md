@@ -176,7 +176,6 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
     | **[!UICONTROL Backfill data]** | You can request to backfill the data in a dataset. For example, you can request to backfill the last 7 days worth of data. Configure the dataset correctly and test your connection. If everything looks good, you can backfill all the remaining data with ease.<p>In addition, you can enable the import of new data by dataset.  |
     | **[!UICONTROL Backfill status]** | This status indicates whether any backfill data is processing. |
 
-    {style="table-layout:auto"}
 
 ## Add and configure datasets {#add-dataset}
 
@@ -495,7 +494,9 @@ There are different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile]
 | **[!UICONTROL Profile]** | Data that is applied to your persons, users, or customers in the [!UICONTROL Event] data. For example, allows you to upload CRM data about your customers. | N/A | Any built-in or custom schema that is based on the "XDM Individual Profile" class. | You can pick which Person ID you want to include. Each dataset (except summary datasets), defined in [!DNL Experience Platform], has its own set of one or more Person IDs defined. For example, Cookie ID, Stitched ID, User ID, Tracking Code, and so on.<br>![Person ID](assets/person-id.png)**Note**: If you create a connection that includes datasets with different IDs, the reporting reflects that. To merge datasets, you need to use the same Person ID. |
 | **Summary** | Time-series data that is not tied to an individual Person ID. Summary data represents aggregated data at a different level of aggregation, for example campaigns. You can use this data in Customer Journey Analytics to support various use cases. See [Summary data](/help/data-views/summary-data.md) for more information. | Automatically set to the default timestamp field from event-based summary metrics schemas in Experience Platform. Only hourly or daily granularity is supported. | Any built-in or custom schema that is based on the "XDM Summary Metrics" class. | N/A |
 
-{style="table-layout:auto"}
+>[!MORELIKETHIS]
+>
+>Blog: [How to Leverage Event, Lookup, and Profile Datasets in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ## Use numeric fields as lookup keys and lookup values {#numeric}
 
